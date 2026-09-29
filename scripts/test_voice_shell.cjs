@@ -2612,12 +2612,19 @@ async function main() {
   await runCmd(page, 'clear');
   const p1 = await runCmdAwait('plot heatmap by thinker');
   const s1 = await plotSpec();
-  record('P1 the first plot loads the panel, then reports the finished, VERIFIED result -- not the loading line',
-    p1.ok && /^plot heatmap by thinker/.test(p1.spoken || '') && p1.verify && p1.verify.ok === true && !!p1.interim && s1 && s1.plot === 'heatmap',
-    (p1.interim || '(no interim)') + ' => ' + p1.spoken);
+  // The model half is installed silently when the Sociogram loads, so `plot`
+  // usually finishes at once; if it was still loading, the result is the
+  // FINISHED one either way (interim shown for the record only).
+  record('P1 plot reports the finished, VERIFIED result -- never just a loading line',
+    p1.ok && /^plot heatmap by thinker/.test(p1.spoken || '') && p1.verify && p1.verify.ok === true && s1 && s1.plot === 'heatmap',
+    (p1.interim || '(finished at once)') + ' => ' + p1.spoken);
   record('P1a the result carries the computed numbers the chart is drawn from',
     !!(p1.plot && p1.plot.edges > 0 && p1.plot.top.length > 0 && /\d+ edges; most: /.test(p1.spoken || '')), JSON.stringify(p1.plot && { edges: p1.plot.edges, top: p1.plot.top.slice(0, 2) }));
-  const pDrawn = await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); return !!(el && el.querySelector('.main-svg'));");
+  let pDrawn = false;
+  for (let i = 0; i < 60 && !pDrawn; i++) {   // Plotly (cdnjs) loads on first show
+    pDrawn = await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); return !!(el && el.querySelector('.main-svg'));");
+    if (!pDrawn) { await sleep(250); }
+  }
   record('P1b the chart is actually drawn, and the Plots button shows it is open', pDrawn && (await plotBtnOn()), 'svg ' + pDrawn);
   const p2 = await runCmdAwait('plot edges signal strength strong high');
   const s2 = await plotSpec();
@@ -2652,6 +2659,60 @@ async function main() {
   const p9 = await runCmd(page, 'undo');
   record('P8 plot off hides it and unlights the button; undo brings it back', p8.ok && hidden && btnOff && (await plotSpec()) !== null && /undid \(plot\)/.test(p9.spoken || ''),
     p8.spoken + ' | ' + p9.spoken);
+  await runCmdAwait('plot off');
+
+
+  // ---- Phase Q: facet cuts and cutting from the chart (steps 2+3, 2026-09-29) ----
+  // WHY: `find levin` cuts to 2 nodes (title match), so a user cut was tiny even
+  // when composition worked. A facet cut uses the model's own attribution --
+  // the SAME rule the charts draw with -- and the chart is a place to cut from.
+  // Rows fail if the facet cut is no larger than the title match, if a chart
+  // cell and the cut it produces disagree about how many edges they mean, if a
+  // bad facet disturbs the standing cut, or if a chart click escapes undo.
+  process.stdout.write('\nPhase Q -- facet cuts, and cutting from the chart\n');
+  await runCmd(page, 'clear');
+  const q0 = await runCmd(page, 'find levin');
+  const q1 = await runCmd(page, 'find thinker:levin');
+  record('Q1 thinker:levin is the model\'s Levin, far more than the title match', q1.ok && nOf(q1) > 5 * Math.max(1, nOf(q0)) && q1.verify && q1.verify.ok,
+    nOf(q0) + ' -> ' + nOf(q1) + ' | ' + q1.spoken);
+  record('Q1a the drawn graph is the facet cut (read off the DOM)', (await drawnN()) === nOf(q1), 'drawn ' + (await drawnN()) + ' vs said ' + nOf(q1));
+  const q2 = await runCmd(page, 'within strength:strong');
+  record('Q2 facets compose: within strength:strong narrows the Levin cut', q2.ok && nOf(q2) > 0 && nOf(q2) < nOf(q1), q2.spoken);
+  const q3 = await runCmd(page, 'find thinker:banana');
+  const q3cut = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('Q3 a facet the model cannot answer is refused by name, and the standing cut is untouched',
+    !q3.ok && /no thinker called "banana"/.test(q3.spoken || '') && /Nothing changed/.test(q3.spoken || '') && (await drawnN()) === nOf(q2),
+    q3.spoken + ' | drawn ' + (await drawnN()));
+  await runCmdAwait('plot heatmap by thinker corpus all edges all nodes all strength');
+  await page.eval(IFRAME_DOC + "w.C2A2Plot.set({from:'', to:''}); return true;");
+  const qCell = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Friston');");
+  const q4 = await runCmd(page, 'find between levin and friston');
+  const q4e = /Levin-Friston edges: (\d+) edges/.exec(q4.spoken || '');
+  record('Q4 ONE RULE, TWO VIEWS: the heatmap cell and the between-cut count the same edges',
+    q4.ok && q4e && +q4e[1] === qCell && qCell > 0, 'cell ' + qCell + ' | ' + q4.spoken);
+  await runCmdAwait('plot page');
+  const q5 = await runCmdAwait('plot');
+  record('Q5 the plot follows a facet cut the shell enforces (not only the tab\'s own search)',
+    q5.plot && q5.plot.edges > 0 && /between levin and friston/.test(await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent;")),
+    (q5.plot && q5.plot.edges) + ' | ' + (await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent.slice(0,90);")));
+  await runCmd(page, 'clear');
+  const clickCmd = function (x, y, ev) {
+    return page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); el.emit('plotly_click', { points: [{ x: " + JSON.stringify(x) + ", y: " + JSON.stringify(y) + " }], event: " + JSON.stringify(ev || {}) + " }); return true;");
+  };
+  await clickCmd('Friston', 'Levin');
+  const qc = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  const qcBar = await page.eval("return document.getElementById('ccl-result').textContent;");
+  record('Q6 clicking a heatmap cell cuts the graph to that pair, through the journal',
+    !!(qc && qc.dim === 'cut' && qc.after && /between levin and friston/.test(qc.after.query || '')) && /nodes shown/.test(qcBar), qcBar.slice(0, 140));
+  await clickCmd('Hoffman', 'Hoffman', { shiftKey: true });
+  const qs = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('Q7 shift-click ADDS the clicked cell to the standing cut', !!(qs && qs.after && /also thinker:hoffman/.test(qs.after.query || '')), qs && qs.after && qs.after.query);
+  const qu = await runCmd(page, 'undo');
+  const qa = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('Q8 undo takes back one chart click, not the whole cut', /undid \(cut\)/.test(qu.spoken || '') && !!(qa && qa.after && /^between levin and friston$/.test(qa.after.query || '')),
+    qu.spoken + ' | ' + (qa && qa.after && qa.after.query));
+  await runCmd(page, 'clear');
+  await runCmdAwait('plot reset');
   await runCmdAwait('plot off');
 
   await activateTab(page, 'metabolism/metabolism_view.html'); await sleep(4000);

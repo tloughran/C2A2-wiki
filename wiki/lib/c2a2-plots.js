@@ -1,5 +1,10 @@
 (function(){
-  if (window.C2A2Plot && window.C2A2Plot.panel) { window.C2A2Plot.panel.style.display='flex'; window.C2A2Plot.refresh(); return; }
+  // Installed by the explorer shell as soon as the Sociogram loads (hidden, and
+  // without Plotly, which loads on first show): the shell's facet cuts
+  // (thinker:, between A and B, kind:, strength:, month:) are answered HERE, by
+  // the same attribution rule the charts draw with, so a row of the heatmap
+  // and a cut on the graph are one set, never two approximations of it.
+  if (window.C2A2Plot && window.C2A2Plot.panel) { return; }
   if (typeof LINKS === 'undefined' || typeof edgePassesCuts !== 'function') return;
   var O=["levin","friston","hoffman","kastrup","mcgilchrist","hawkins","wolfram","carroll","arkanihamed","fredrickson","stump","rohr","wright","loughran","macintyre"];
   var TN=["Levin","Friston","Hoffman","Kastrup","McGilchrist","Hawkins","Wolfram","Carroll","Arkani-Hamed","Fredrickson","Stump","Rohr","Wright","Loughran","MacIntyre"];
@@ -24,8 +29,14 @@
     if(k==='signal' && spec.strengths.indexOf(e.strength||'Unlabeled')<0) return false;
     return true;
   }
+  // WHICH CUT: in the explorer the shell's cut is the single truth (a compound
+  // or facet cut clears the tab's own SEARCH_CUT and is enforced shell-side),
+  // so once the shell has spoken (setCut) its word is final, null included.
+  // Standalone, the tab's own SEARCH_CUT is all there is.
+  var shellCut=null, shellSpoke=false;
+  function curCut(){ if(shellSpoke) return shellCut; return (typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT&&SEARCH_CUT.ids)?{ids:SEARCH_CUT.ids,query:SEARCH_CUT.query}:null; }
   function edges(){
-    var out=[], cutIds=(spec.scope==='page'&&typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT&&SEARCH_CUT.ids)?new Set(SEARCH_CUT.ids):null;
+    var cc=curCut(), out=[], cutIds=(spec.scope==='page'&&cc)?new Set(cc.ids):null;
     var src, live=null;
     if(spec.scope==='page'){ src=activeLinks; live=new Set(activeNodes.map(function(n){return n.id;})); } else src=LINKS;
     for(var q=0;q<src.length;q++){ var e=src[q], s=e.source, t=e.target;
@@ -42,21 +53,27 @@
     return k;
   }
   function labels(){ return spec.axis==='group' ? GROUPS : TN; }
+  // ONE EDGE, ONE COUNT PER CELL. An edge whose two ends are each attributed to
+  // both Levin and Friston used to add 2 to the Levin-Friston cell (once as
+  // L->F, once as F->L). Each edge now counts once per unordered pair, so a cell
+  // equals the number of edges a `between a and b` cut selects (2026-09-29).
   function matrix(E){ var L=labels().length, M=[], n=0; for(var i=0;i<L;i++){ M.push(new Array(L).fill(0)); }
     E.forEach(function(e){ var a=keysOf(e.source,e,'s'), b=keysOf(e.target,e,'t'); if(a.length&&b.length) n++;
-      a.forEach(function(i){ b.forEach(function(j){ M[i][j]++; if(i!==j) M[j][i]++; }); }); });
+      var seen={}; a.forEach(function(i){ b.forEach(function(j){ var lo=Math.min(i,j), hi=Math.max(i,j), k=lo+','+hi; if(seen[k]) return; seen[k]=1;
+        M[lo][hi]++; if(lo!==hi) M[hi][lo]++; }); }); });
     return {M:M,n:n}; }
 
   var SUN=[[0,'#3b0f70'],[0.25,'#8c2981'],[0.5,'#de4968'],[0.75,'#fe9f6d'],[1,'#fcfdbf']];
   var FONT={size:9,color:'#ccc'};
   function base(){ return {paper_bgcolor:'#11131a',plot_bgcolor:'#11131a',font:FONT,margin:{l:90,r:10,t:10,b:90}}; }
   var PLOTS={
-    lego:function(E){ var r=matrix(E), L=labels(), x=[],y=[],z=[],I=[],J=[],K=[],c=[],mx=1,w=0.42,v=0;
+    lego:function(E){ var r=matrix(E), L=labels(), x=[],y=[],z=[],I=[],J=[],K=[],c=[],mx=1,w=0.42,v=0,cells=[];
       var F=[[0,1,2],[0,2,3],[4,5,6],[4,6,7],[0,1,5],[0,5,4],[1,2,6],[1,6,5],[2,3,7],[2,7,6],[3,0,4],[3,4,7]];
       r.M.forEach(function(row){ row.forEach(function(h){ if(h>mx) mx=h; }); });
       for(var i=0;i<L.length;i++) for(var j=0;j<L.length;j++){ var h=r.M[i][j]; if(!h) continue;
         [[i-w,j-w,0],[i+w,j-w,0],[i+w,j+w,0],[i-w,j+w,0],[i-w,j-w,h],[i+w,j-w,h],[i+w,j+w,h],[i-w,j+w,h]].forEach(function(p){ x.push(p[0]);y.push(p[1]);z.push(p[2]);c.push(h); });
-        F.forEach(function(f){ I.push(v+f[0]);J.push(v+f[1]);K.push(v+f[2]); }); v+=8; }
+        F.forEach(function(f){ I.push(v+f[0]);J.push(v+f[1]);K.push(v+f[2]); }); v+=8; cells.push([i,j]); }
+      legoCells=cells;
       var tk={tickvals:L.map(function(_,k){return k;}),ticktext:L,title:'',tickfont:FONT,gridcolor:'#333'};
       var lay=base(); lay.margin={l:0,r:0,t:0,b:0}; lay.scene={xaxis:tk,yaxis:tk,zaxis:{title:'edges',tickfont:FONT,gridcolor:'#333'},aspectratio:{x:1,y:1,z:0.55},camera:{eye:{x:1.5,y:-1.25,z:1.05}}};
       return {n:r.n, data:[{type:'mesh3d',x:x,y:y,z:z,i:I,j:J,k:K,intensity:c,colorscale:SUN,cmin:0,cmax:mx,flatshading:true,showscale:false,lighting:{ambient:0.6,diffuse:0.6},hovertemplate:'%{intensity} edges<extra></extra>'}], layout:lay}; },
@@ -86,8 +103,78 @@
   };
   var PLOT_NAMES={lego:'Lego (3D)',heatmap:'Heatmap',totals:'Totals (bars)',timeline:'Timeline (monthly)',strength:'Signal strength mix',sankey:'Flows (Sankey)'};
 
+  // ---- FACETS: the shell's cut terms answered from the graph model ----------
+  // f = {facet:'thinker'|'group'|'kind'|'strength'|'month'|'since'|'until'|'pair', value | a,b}
+  // (parsed by CommandLine.parseFacet in the shell). Returns {ids, edges?, label}
+  // or {error}. Node facets select nodes; edge facets (kind, strength, pair)
+  // select the ENDPOINTS of the matching edges and say how many edges that was.
+  function nodeOf(x){ return (typeof x==='object')?x:NODES[x]; }
+  function resolveThinker(v){ v=String(v||'').toLowerCase().replace(/[^a-z]/g,''); var i=O.indexOf(v); if(i<0) i=TN.map(function(t){return t.toLowerCase().replace(/[^a-z]/g,'');}).indexOf(v); return i; }
+  function resolveGroup(v){ v=String(v||'').toLowerCase(); var g=GROUPS.filter(function(x){ var l=x.toLowerCase(); return l===v||l.split('/').pop()===v; }); return g.length?g:null; }
+  function resolveKind(v){ v=String(v||'').toLowerCase().replace(/s$/,''); var k=KINDS.filter(function(x){ var l=x.toLowerCase(), b=l.replace(/^layer:/,''); return l===v||b===v; }); return k.length?k:null; }
+  function resolveStr(v){ v=String(v||'').toLowerCase(); var k=STRS.filter(function(x){ return x.toLowerCase()===v; }); return k.length?k[0]:null; }
+  function sideKeys(v){ // a side of a pair: a thinker first, else a group
+    var ti=resolveThinker(v.replace(/^thinker:/,'')); if(!/^group:/.test(v) && ti>=0) return {axis:'thinker',i:ti,label:TN[ti]};
+    var g=resolveGroup(v.replace(/^group:/,'')); if(g) return {axis:'group',i:GROUPS.indexOf(g[0]),label:g[0]};
+    return null; }
+  function sideHas(n,e,side,k){ if(k.axis==='group') return (n.group||'-')===GROUPS[k.i];
+    var ks=thN(n).slice(); if(e && e.type==='signal' && side==='s' && e.home){ thOf(String(e.home)).forEach(function(i){ if(ks.indexOf(i)<0) ks.push(i); }); } return ks.indexOf(k.i)>=0; }
+  function facetOne(f){
+    var ids=[], seen={}, ne=0; function add(n){ if(n&&n.id&&!seen[n.id]){ seen[n.id]=1; ids.push(n.id); } }
+    if(f.facet==='thinker'){ var ti=resolveThinker(f.value); if(ti<0) return {error:'no thinker called "'+f.value+'" (thinkers: '+O.join(', ')+')'};
+      NODES.forEach(function(n){ if(thN(n).indexOf(ti)>=0) add(n); }); return {ids:ids,label:TN[ti]}; }
+    if(f.facet==='group'){ var g=resolveGroup(f.value); if(!g) return {error:'no node group called "'+f.value+'"'};
+      NODES.forEach(function(n){ if(g.indexOf(n.group||'-')>=0) add(n); }); return {ids:ids,label:g.join(', ')}; }
+    if(f.facet==='month'||f.facet==='since'||f.facet==='until'){ var m=String(f.value||'');
+      if(!/^\d{4}-\d{2}$/.test(m)) return {error:f.facet+':'+m+' needs a month like 2026-08'};
+      NODES.forEach(function(n){ var d=(n.date||'').slice(0,7); if(!d) return; if(f.facet==='month'?d===m:(f.facet==='since'?d>=m:d<=m)) add(n); });
+      return {ids:ids,label:f.facet+' '+m}; }
+    var test=null, label='';
+    if(f.facet==='kind'){ var ks=resolveKind(f.value); if(!ks) return {error:'no edge kind called "'+f.value+'" (kinds: '+KINDS.join(', ')+')'};
+      test=function(e){ return ks.indexOf(ekind(e))>=0; }; label=ks.join(', ')+' edges'; }
+    else if(f.facet==='strength'){ var st=resolveStr(f.value); if(!st) return {error:'no signal strength called "'+f.value+'" (strengths: '+STRS.join(', ')+')'};
+      test=function(e){ return e.type==='signal' && (e.strength||'Unlabeled')===st; }; label=st+' signals'; }
+    else if(f.facet==='pair'){ var A=sideKeys(String(f.a||'').toLowerCase()), B=sideKeys(String(f.b||'').toLowerCase());
+      if(!A||!B) return {error:'between needs two thinkers or node groups ("'+(A?f.b:f.a)+'" is neither)'};
+      test=function(e,s,t){ return (sideHas(s,e,'s',A)&&sideHas(t,e,'t',B))||(sideHas(s,e,'s',B)&&sideHas(t,e,'t',A)); };
+      label=(A.i===B.i&&A.axis===B.axis)?('within '+A.label):(A.label+'-'+B.label+' edges'); }
+    else return {error:'unknown facet "'+f.facet+'"'};
+    for(var q=0;q<LINKS.length;q++){ var e=LINKS[q], s=nodeOf(e.source), t=nodeOf(e.target); if(!s||!t) continue; if(test(e,s,t)){ ne++; add(s); add(t); } }
+    return {ids:ids,edges:ne,label:label};
+  }
+  // A '+' conjunction (thinker:levin+month:2026-08) is ONE term: the AND of its facets.
+  function facetIds(fs){ fs=[].concat(fs); var acc=null, parts=[], edgesN=null;
+    for(var i=0;i<fs.length;i++){ var r=facetOne(fs[i]); if(r.error) return r; parts.push(r.label); if(r.edges!=null) edgesN=r.edges;
+      if(acc===null) acc=r.ids; else { var h={}; r.ids.forEach(function(x){ h[x]=1; }); acc=acc.filter(function(x){ return h[x]; }); } }
+    return {ids:acc||[], edges:(fs.length===1?edgesN:null), label:parts.join(' & ')}; }
+
+  // ---- CLICKS: the chart is a place to cut from, through the shell's one road --
+  // plain click = find, shift = also (add), alt/option = except (remove),
+  // ctrl/cmd = within (keep only the overlap). The command runs in the shell
+  // (parent.CCLRun), so it is journaled, undoable, spoken, and the graph and
+  // this chart both follow it. Standalone there is no shell: say so, do nothing.
+  var pickHook=null, legoCells=[];
+  function tokOf(label){ if(spec.axis==='group') return 'group:'+label; var i=TN.indexOf(label); return 'thinker:'+(i>=0?O[i]:String(label).toLowerCase()); }
+  function sideOf(label){ if(spec.axis==='group') return 'group:'+label; var i=TN.indexOf(label); return i>=0?O[i]:String(label).toLowerCase(); }
+  function pairTerm(a,b){ return a===b?tokOf(a):('between '+sideOf(a)+' and '+sideOf(b)); }
+  function termFor(ev){ var pt=ev&&ev.points&&ev.points[0]; if(!pt) return null; var P=spec.plot;
+    if(P==='heatmap') return pairTerm(pt.y,pt.x);
+    if(P==='totals') return tokOf(pt.x);
+    if(P==='strength') return tokOf(pt.x)+'+strength:'+String(pt.data&&pt.data.name||'').toLowerCase();
+    if(P==='timeline') return tokOf(pt.data&&pt.data.name)+'+month:'+pt.x;
+    if(P==='sankey'){ if(pt.source&&pt.target) return pairTerm(pt.source.label,pt.target.label); if(pt.label) return tokOf(pt.label); return null; }
+    if(P==='lego'){ var c=legoCells[Math.floor((pt.pointNumber!=null?pt.pointNumber:(pt.i!=null?pt.i:-8))/8)]; if(!c) return null; var L=labels(); return pairTerm(L[c[0]],L[c[1]]); }
+    return null; }
+  function onClick(ev){ var term=termFor(ev); if(!term) return; var me=(ev&&ev.event)||{};
+    var verb=me.shiftKey?'also':(me.altKey?'except':((me.ctrlKey||me.metaKey)?'within':'find'));
+    var cmd=verb+' '+term;
+    if(pickHook){ try{ pickHook(cmd); }catch(_){} return; }
+    var sh=null; try{ if(window.parent!==window && typeof window.parent.CCLRun==='function') sh=window.parent.CCLRun; }catch(_){}
+    if(!sh){ $('cp-s').textContent='(cutting from the chart needs the explorer: '+cmd+')'; return; }
+    sh(cmd); }
+
   var panel=document.createElement('div');
-  panel.style.cssText='position:fixed;right:16px;bottom:16px;width:640px;height:560px;z-index:2147483000;background:#11131a;border:1px solid #3a3f4b;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.6);font:12px system-ui,sans-serif;color:#ddd;display:flex;flex-direction:column;overflow:visible';
+  panel.style.cssText='position:fixed;right:16px;bottom:16px;width:640px;height:560px;z-index:2147483000;background:#11131a;border:1px solid #3a3f4b;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.6);font:12px system-ui,sans-serif;color:#ddd;display:none;flex-direction:column;overflow:visible';
   function sel(id,opts){ return '<select id="'+id+'" style="background:#1b1e27;color:#ddd;border:1px solid #3a3f4b;border-radius:4px">'+opts.map(function(o){return '<option value="'+o[0]+'">'+o[1]+'</option>';}).join('')+'</select>'; }
   function multi(id,title,vals){ return '<details style="position:relative"><summary style="cursor:pointer">'+title+' <span id="'+id+'-n"></span></summary><div id="'+id+'" style="position:absolute;z-index:3;background:#1b1e27;border:1px solid #3a3f4b;padding:6px;max-height:260px;overflow:auto;white-space:nowrap">'+
     '<a href="#" data-all="1" style="color:#fe9f6d">all</a> · <a href="#" data-none="1" style="color:#fe9f6d">none</a><br>'+vals.map(function(v){return '<label><input type="checkbox" value="'+v+'" checked> '+v+'</label><br>';}).join('')+'</div></details>'; }
@@ -150,10 +237,11 @@
   function refresh(){ last=''; tick(); }
   function draw(){ syncUI(); var E=edges(), out=PLOTS[spec.plot](E);
     Plotly.react($('cp-p'),out.data,out.layout,{displaylogo:false,responsive:true});
-    var cut=(spec.scope==='page'&&typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT)?('cut "'+SEARCH_CUT.query+'" ('+spec.cut+') · '):'';
+    var el=$('cp-p'); if(!el._c2a2Click && el.on){ el.on('plotly_click',onClick); el._c2a2Click=true; }
+    var cc=curCut(), cut=(spec.scope==='page'&&cc)?('cut "'+cc.query+'" ('+spec.cut+') · '):'';
     var tw=[]; if(spec.scope==='page'&&typeof dateThreshold!=='undefined'&&dateThreshold) tw.push('page since '+dateThreshold); if(spec.from||spec.to) tw.push('edges '+(spec.from||'start')+' to '+(spec.to||'now')); var tws=tw.length?tw.join(', ')+' · ':'';
-    $('cp-s').textContent=cut+tws+(spec.scope==='page'?activeNodes.length+' nodes in view · ':'whole corpus · ')+out.n.toLocaleString()+(spec.plot==='strength'?' signals':spec.plot==='timeline'?' edges':' edges between '+(spec.axis==='group'?'groups':'thinkers'))+' · '+new Date().toLocaleTimeString(); }
-  function sig(){ return JSON.stringify(spec)+'|'+(spec.scope==='page'?[activeNodes.length,(typeof _lastEdgePass!=='undefined'?_lastEdgePass:''),(typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT?SEARCH_CUT.query+':'+SEARCH_CUT.ids.length:''),(typeof dateThreshold!=='undefined'?dateThreshold:'')].join('|'):''); }
+    $('cp-s').textContent=cut+tws+(spec.scope==='page'?activeNodes.length+' nodes in view · ':'whole corpus · ')+out.n.toLocaleString()+(spec.plot==='strength'?' signals':spec.plot==='timeline'?' edges':' edges between '+(spec.axis==='group'?'groups':'thinkers'))+' · click to cut the graph (shift add, alt remove, ctrl overlap) · '+new Date().toLocaleTimeString(); }
+  function sig(){ return JSON.stringify(spec)+'|'+(spec.scope==='page'?[activeNodes.length,(typeof _lastEdgePass!=='undefined'?_lastEdgePass:''),(function(){ var cc=curCut(); return cc?cc.query+':'+cc.ids.length:''; })(),(typeof dateThreshold!=='undefined'?dateThreshold:'')].join('|'):''); }
   function tick(){ if(panel.style.display==='none'||!window.Plotly) return; var s=sig(); if(s===last) return; last=s; try{ draw(); }catch(err){ $('cp-s').textContent='plot error: '+err.message; } }
 
   window.C2A2Plot={ panel:panel, refresh:refresh, plots:Object.keys(PLOTS), kinds:KINDS, groups:GROUPS, strengths:STRS, months:MONTHS,
@@ -167,7 +255,24 @@
       for(var i=0;i<L.length;i++) for(var j=i;j<L.length;j++){ if(r.M[i][j]) cells.push({a:L[i],b:L[j],n:r.M[i][j]}); }
       cells.sort(function(x,y){ return y.n-x.n; });
       return {edges:E.length, attributed:r.n, axis:spec.axis, top:cells.slice(0,k)}; },
-    set:function(p){ Object.keys(p||{}).forEach(function(k){ if(k in spec) spec[k]=p[k]; }); panel.style.display='flex'; refresh(); return this.get(); } };
-  if (window.Plotly) { tick(); setInterval(tick,1000); }
-  else { var sc=document.createElement('script'); sc.src='https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.34.0/plotly.min.js'; sc.onload=function(){ tick(); setInterval(tick,1000); }; sc.onerror=function(){ $('cp-s').textContent='Could not load Plotly from cdnjs.'; }; document.head.appendChild(sc); }
+    set:function(p){ Object.keys(p||{}).forEach(function(k){ if(k in spec) spec[k]=p[k]; }); show(); return this.get(); },
+    show:show, chartState:function(){ return plotlyState; },
+    setCut:function(c){ shellSpoke=true; var nc=(c&&c.ids&&c.ids.length)?{ids:c.ids.slice(),query:c.query||''}:null;
+      if(JSON.stringify(nc&&[nc.query,nc.ids.length])!==JSON.stringify(shellCut&&[shellCut.query,shellCut.ids.length])){ shellCut=nc; } },
+    thinkers:O.slice(), thinkerNames:TN.slice(),
+    facetIds:facetIds, onPick:function(f){ pickHook=f; },
+    // One cell of the current chart's matrix, by axis label (tests and answers).
+    count:function(a,b){ var L=labels(), i=L.indexOf(a), j=L.indexOf(b); if(i<0||j<0) return null; return matrix(edges()).M[i][j]; } };
+  var plotlyState=window.Plotly?'ready':'none';
+  function ensurePlotly(){
+    if(plotlyState==='ready'){ return; }
+    if(window.Plotly){ plotlyState='ready'; tick(); setInterval(tick,1000); return; }
+    if(plotlyState==='loading'||plotlyState==='failed') return;
+    plotlyState='loading'; $('cp-s').textContent='loading the chart library...';
+    var sc=document.createElement('script'); sc.src='https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.34.0/plotly.min.js';
+    sc.onload=function(){ plotlyState='ready'; tick(); setInterval(tick,1000); };
+    sc.onerror=function(){ plotlyState='failed'; $('cp-s').textContent='Could not load Plotly from cdnjs.'; };
+    document.head.appendChild(sc); }
+  function show(){ panel.style.display='flex'; ensurePlotly(); refresh(); }
+  if (window.Plotly) { plotlyState='ready'; setInterval(tick,1000); }
 })();

@@ -39,6 +39,17 @@
 // output is bounded per call. Default stays the cheap model because the ranking
 // callers (Community Explorer, c2a2-search.js) send no model; answer-writing
 // callers ask for model:"answer".
+//
+// v17 (2026-09-29): plan memory. action=plan_recall returns up to 3 VERIFIED
+// CCL plans for similar requests on the same tab; action=plan_store records a
+// plan whose every step passed the shell's read-back check. Payload rides as
+// JSON in `user` (the client's callBroker sends a fixed field set, copied
+// inline into four pages -- adding fields there would make those copies drift).
+// Stored: a scrubbed, normalized request + the command list. NEVER stored: the
+// model's prose answer, the raw device id (only a salted hash), anything
+// matching an email / link / long number. No model call, so no metering beyond
+// the IP backstop and a per-device daily store cap. Schema:
+// supabase/migrations/20260929120000_plan_memory.sql
 // ============================================================================
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
@@ -115,6 +126,25 @@ const RT_MAX_OUTPUT_TOKENS = 1500;
 // Default validity is ~10 minutes; a short window means a token that leaks out of
 // a browser cannot be hoarded and redeemed later.
 const RT_TOKEN_TTL_SECONDS = 120;
+
+// ---- plan memory (v17) ----
+const PLAN_STORE_DAILY_CAP = 40;     // verified plans one device may store per day
+const PLAN_MAX_COMMANDS    = 12;
+const PLAN_CMD_MAX_CHARS   = 160;
+const PLAN_REQ_MAX_CHARS   = 300;
+// Scrub, then normalize. The SAME function the engine exports as
+// CommandLine.normRequest (wiki/lib/c2a2-commandline.js) -- keep them identical;
+// scripts/test_voice_ccl.cjs pins the engine copy against these exact cases.
+function normRequest(s: string): string {
+  return String(s || "").toLowerCase()
+    .replace(/[^\s@]+@[^\s@]+\.[^\s@]+/g, " email ")
+    .replace(/\b(?:https?:\/\/|www\.)\S+/g, " link ")
+    .replace(/\b(\d{4})-(\d{2})(?:-(\d{2}))?\b/g, (m) => m.replace(/-/g, "\u0001"))   // keep dates
+    .replace(/\d(?:[\s().-]?\d){6,}/g, " number ")                                    // 7+ digits
+    .replace(/\u0001/g, "-")
+    .replace(/[^a-z0-9:~+\-' ]+/g, " ")
+    .replace(/\s+/g, " ").trim().slice(0, PLAN_REQ_MAX_CHARS);
+}
 
 const ALLOWED_ORIGINS = new Set([
   "https://tloughran.github.io",   // public deployed wiki
@@ -668,6 +698,39 @@ Deno.serve(async (req) => {
       rtRemaining,
       maxOutputTokens: RT_MAX_OUTPUT_TOKENS,
     }, origin);
+  }
+
+  // ----------------------------------------------------------------------
+  // Actions: plan_recall / plan_store — the planner's memory of verified plans
+  // ----------------------------------------------------------------------
+  if (body.action === "plan_recall" || body.action === "plan_store") {
+    let p: { request?: unknown; tab?: unknown; commands?: unknown; model?: unknown };
+    try { p = JSON.parse(typeof body.user === "string" ? body.user : "{}"); } catch { return json(400, { error: "bad_json" }, origin); }
+    const norm = normRequest(String(p.request ?? ""));
+    const tab = String(p.tab ?? "").replace(/[^a-z0-9_./-]/gi, "").slice(0, 60);
+    if (!norm || !tab) return json(400, { error: "bad_plan_request" }, origin);
+
+    if (body.action === "plan_recall") {
+      const { data, error } = await sb.rpc("plan_recall", { p_norm: norm, p_tab: tab, p_k: 3 });
+      if (error) return json(500, { error: "db_error", where: "plan_recall" }, origin);
+      const plans = (data ?? []).map((r: { request_norm: string; commands: unknown; devices: number; uses: number; sim: number }) => ({
+        request: r.request_norm, commands: r.commands, devices: r.devices, uses: r.uses, sim: Math.round(r.sim * 100) / 100,
+      }));
+      return json(200, { norm, plans }, origin);
+    }
+
+    const cmds = Array.isArray(p.commands)
+      ? p.commands.map((c) => String(c ?? "").replace(/\s+/g, " ").trim().slice(0, PLAN_CMD_MAX_CHARS)).filter(Boolean)
+      : [];
+    if (!cmds.length || cmds.length > PLAN_MAX_COMMANDS) return json(400, { error: "bad_plan_commands" }, origin);
+    const deviceHash = await sha256Hex(`plan-memory|${deviceId}`);
+    const { data, error } = await sb.rpc("plan_store", {
+      p_device_hash: deviceHash, p_norm: norm, p_tab: tab, p_commands: cmds,
+      p_model: typeof p.model === "string" ? p.model.slice(0, 80) : null, p_daily_cap: PLAN_STORE_DAILY_CAP,
+    });
+    if (error) return json(500, { error: "db_error", where: "plan_store" }, origin);
+    if (data === -1) return json(429, { error: "plan_store_limited" }, origin);
+    return json(200, { ok: true, norm, devices: data }, origin);
   }
 
   return json(400, { error: "unknown_action" }, origin);

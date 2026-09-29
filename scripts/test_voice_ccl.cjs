@@ -1260,6 +1260,84 @@ acheck('plot: a command that finishes LATER (the panel loads first) is judged on
   assert.strictEqual(res.failed.length, 1, 'the unmet plot survives whatever the model then writes');
 });
 
+
+// ---- FACET TERMS (step 2, 2026-09-29) --------------------------------------
+check('facet: an ordinary search is NOT a facet -- titles, Summa coordinates and prose pass through untouched', function () {
+  ['levin', 'I.Q18.A1', 'note: this', 'free energy', 'levin also friston'].forEach(function (t) {
+    assert.strictEqual(CCL.parseFacet(t), null, t + ' must stay a search');
+  });
+});
+check('facet: the model\'s own structure is nameable -- thinker, group, kind, strength, months, pair', function () {
+  assert.deepStrictEqual(CCL.parseFacet('thinker:levin').facets, [{ facet: 'thinker', value: 'levin' }]);
+  assert.deepStrictEqual(CCL.parseFacet('between levin and friston').facets, [{ facet: 'pair', a: 'levin', b: 'friston' }]);
+  assert.deepStrictEqual(CCL.parseFacet('pair:levin~group:synthesis').facets, [{ facet: 'pair', a: 'levin', b: 'group:synthesis' }]);
+  assert.deepStrictEqual(CCL.parseFacet('since:2026-08').facets, [{ facet: 'since', value: '2026-08' }]);
+});
+check('facet: "+" is AND inside ONE term, so a chart click composes with also/except/within as a single step', function () {
+  const f = CCL.parseFacet('thinker:levin+strength:strong');
+  assert.deepStrictEqual(f.facets.map(function (x) { return x.facet; }), ['thinker', 'strength']);
+  // and the cut expression still sees it as one term
+  assert.strictEqual(CCL.parseCutExpr('between levin and friston also thinker:hoffman+month:2026-08').length, 2);
+});
+check('facet: a malformed facet is an ERROR with a reason, never silently an empty search', function () {
+  assert.ok(/needs a month/.test(CCL.parseFacet('month:august').error));
+  assert.ok(/needs a value/.test(CCL.parseFacet('kind:').error));
+  assert.ok(/not a facet/.test(CCL.parseFacet('thinker:levin+banana:x').error));
+  assert.ok(/two sides/.test(CCL.parseFacet('pair:levin').error));
+});
+check('facet: the planner is told to cut by thinker:, not by a title search', function () {
+  assert.ok(/`thinker:levin` \(every node the model attributes to Levin/.test(CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', results: [] }).system));
+});
+
+
+// ---- PLAN MEMORY (step 4, 2026-09-29) --------------------------------------
+check('memory: a request is scrubbed before it is kept -- emails, links, phone numbers go; months stay', function () {
+  assert.strictEqual(CCL.normRequest('Since 2026-08, call 574-631-1234 or tom@nd.edu; see https://x.org/a?b=1'),
+    'since 2026-08 call number or email see link');
+  assert.strictEqual(CCL.normRequest('find thinker:levin+strength:strong'), 'find thinker:levin+strength:strong', 'facet syntax survives');
+  assert.ok(CCL.normRequest('x'.repeat(900)).length <= 300);
+});
+check('memory: the broker and the engine normalize IDENTICALLY (else exact-match replay silently never fires)', function () {
+  const chain = function (src, start) {
+    const i = src.indexOf(start); assert.ok(i >= 0, 'normRequest not found');
+    const body = src.slice(i, src.indexOf('}', src.indexOf('.slice(0,', i)));
+    return body.split('\n').filter(function (l) { return /^\s*\.replace\(/.test(l); }).map(function (l) { return l.trim(); });
+  };
+  const broker = fs.readFileSync(path.join(ROOT, '.private/supabase/functions/cc-broker/index.ts'), 'utf8');
+  const engine = fs.readFileSync(path.join(ROOT, 'wiki/lib/c2a2-commandline.js'), 'utf8');
+  const b = chain(broker, 'function normRequest(s: string)'), e = chain(engine, 'function normRequest(s)');
+  assert.ok(b.length >= 6);
+  assert.deepStrictEqual(e, b);
+});
+check('memory: only a run with NO failed or flagged step in its final round is remembered', function () {
+  const good = { ok: true, failed: [], trace: [{ round: 1, cmd: 'find levin', ok: true, problems: [], spoken: '' }, { round: 2, cmd: 'also friston', ok: true, problems: [], spoken: '' }] };
+  assert.deepStrictEqual(CCL.storablePlan(good), ['find levin', 'also friston'], 'the whole sequence that led to the verified state');
+  const flagged = { ok: true, failed: [{}], trace: good.trace };
+  assert.strictEqual(CCL.storablePlan(flagged), null);
+  assert.strictEqual(CCL.storablePlan({ ok: true, failed: [], trace: [{ round: 1, cmd: 'except x', ok: true, problems: ['removed nothing'], spoken: '' }] }), null);
+  assert.strictEqual(CCL.storablePlan({ ok: true, failed: [], trace: [] }), null, 'an answer with no commands teaches nothing about CCL');
+  assert.deepStrictEqual(CCL.storablePlan({ ok: true, failed: [], trace: [{ round: 1, cmd: 'read', ok: false, problems: [], spoken: 'not run (not allowed from the planner)' }, good.trace[0]] }), ['find levin'], 'refused commands are not part of the plan');
+});
+check('memory: a plan replays WITHOUT the model only if two devices verified it, the words match, and it is not a question', function () {
+  const rec = { plans: [{ request: 'keep levin add friston', commands: ['find thinker:levin', 'also thinker:friston'], devices: 2 }] };
+  assert.deepStrictEqual(CCL.replayPlan('Keep Levin, add Friston', rec).commands, ['find thinker:levin', 'also thinker:friston']);
+  assert.strictEqual(CCL.replayPlan('keep levin add friston', { plans: [Object.assign({}, rec.plans[0], { devices: 1 })] }), null, 'one visitor cannot teach it alone');
+  assert.strictEqual(CCL.replayPlan('keep levin and add friston', rec), null, 'similar is an example, not a replay');
+  assert.strictEqual(CCL.replayPlan('how does levin add to friston?', { plans: [Object.assign({}, rec.plans[0], { request: 'how does levin add to friston' })] }), null, 'a question needs an answer, so it goes to the model');
+  assert.strictEqual(CCL.replayPlan('keep levin add friston', { plans: [Object.assign({}, rec.plans[0], { commands: ['read'] })] }), null, 'a stored plan cannot smuggle in a verb the planner may not use');
+});
+check('memory: remembered plans reach the planner as examples, marked as examples', function () {
+  const ex = CCL.planExamplesText({ plans: [{ request: 'keep levin add friston', commands: ['find thinker:levin', 'also thinker:friston'] }] });
+  assert.ok(/VERIFIED PLANS FROM EARLIER SESSIONS/.test(ex) && /plan for THIS request/.test(ex));
+  assert.ok(/buildPlanPrompt/.test('buildPlanPrompt') && /EX-MARK/.test(CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', examples: 'EX-MARK', results: [] }).user));
+  assert.strictEqual(CCL.planExamplesText({ plans: [] }), '');
+});
+acheck('memory: the examples reach EVERY planner round', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  await CCL.runPlan('x', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '', examples: 'EXMARK' });
+  assert.ok(m.seen.length === 2 && m.seen.every(function (p) { return /EXMARK/.test(p.user); }));
+});
+
 // ---- report -----------------------------------------------------------------
 
 (async function () {

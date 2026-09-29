@@ -2865,8 +2865,8 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=3116c9af5e"></script>
-<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=fbbc58197c">
+<script src="lib/c2a2-commandline.js?v=d00839994f"></script>
+<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=79690c1ad5">
 <script>
 /* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
    panel reads the page's own graph state (LINKS, activeNodes, cuts). Only the
@@ -2882,8 +2882,19 @@ var VoiceGuide = (function() {
       return (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') ? w : null;
     } catch (e) { return null; }
   }
-  /* a tab (re)load discards any panel, so the button's lit state must go too */
-  document.getElementById('content-frame').addEventListener('load', function () { b.classList.remove('on'); });
+  /* a tab (re)load discards any panel, so the button's lit state must go too --
+     and on a graph tab the model half is installed at once (hidden, ~17 KB,
+     no Plotly), so facet cuts (thinker:, between A and B...) work from the
+     first command without waiting for anyone to open a chart. */
+  document.getElementById('content-frame').addEventListener('load', function () {
+    b.classList.remove('on');
+    var w = tabWin();
+    if (w && !w.C2A2Plot) {
+      var sc = w.document.createElement('script');
+      sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
+      w.document.head.appendChild(sc);
+    }
+  });
   /* The button is a mouth of the one road: it runs `plot` / `plot off`, so a
      click is journaled, undoable and reported exactly like a typed or spoken
      command (step 1, 2026-09-29). */
@@ -3404,6 +3415,8 @@ var VoiceGuide = (function() {
     var d = ifDoc(), w = ifWin();
     if (!d || !w) { return null; }
     ensureCutStyle(d);
+    // The plot follows the SHELL's cut (compound and facet cuts included).
+    var PM = plotModel(); if (PM && PM.setCut) { PM.setCut(cutIds ? { ids: cutIds, query: cutQuery } : null); }
     var allow = null, i;
     if (cutIds) { allow = Object.create(null); for (i = 0; i < cutIds.length; i++) { allow[cutIds[i]] = true; } }
     var cs = d.querySelectorAll('.node-circle'), kept = 0;
@@ -3464,10 +3477,31 @@ var VoiceGuide = (function() {
   // engine splits and composes it, the tab answers each term. With more than
   // one term the tab has lit only its LAST term, so its own lighting is reset
   // and the shell's cut (hide + frame) is the single truth on screen.
+  // FACET TERMS (step 2, 2026-09-29): `thinker:levin`, `between levin and
+  // friston`, `kind:signal`... are answered by the graph MODEL (C2A2Plot, the
+  // same attribution rule the charts draw with), not by the tab's text search.
+  // A facet the model cannot answer is a named problem, never an empty cut
+  // passed off as a result. The tab's own lighting only ever shows ONE text
+  // term, so any facet or compound expression clears it and the shell's cut
+  // is the single truth on screen.
   function evalCutExpr(api, expr) {
-    var terms = CL.parseCutExpr(expr);
-    var res = CL.composeCut(terms, function (t) { var r = api.c2a2Find(t); return (r && r.ids) ? r.ids : []; });
-    if (terms.length > 1) { try { api.c2a2Clear(); } catch (e) { /* the cut still holds */ } }
+    var terms = CL.parseCutExpr(expr), notes = [], facetUsed = false;
+    var res = CL.composeCut(terms, function (t) {
+      var fx = CL.parseFacet(t);
+      if (!fx) { var r = api.c2a2Find(t); return (r && r.ids) ? r.ids : []; }
+      facetUsed = true;
+      if (fx.error) { notes.push(fx.error); return []; }
+      var P = plotModel();
+      if (!P) { notes.push('"' + t + '": the graph model is still loading -- try again in a moment'); return []; }
+      var fr = P.facetIds(fx.facets);
+      if (fr.error) { notes.push(fr.error); return []; }
+      if (fr.edges != null) { notes.push('~' + fr.label + ': ' + fr.edges + ' edges, ' + fr.ids.length + ' nodes at their ends'); }
+      return fr.ids;
+    });
+    if (terms.length > 1 || facetUsed) { try { api.c2a2Clear(); } catch (e) { /* the cut still holds */ } }
+    // '~' marks a NOTE (what an edge facet counted), not a problem
+    res.notes = notes.filter(function (n) { return n.charAt(0) === '~'; }).map(function (n) { return n.slice(1); });
+    res.problems = notes.filter(function (n) { return n.charAt(0) !== '~'; });
     return res;
   }
   // VERIFY AFTER THE ACTION: read what the page actually draws back off the
@@ -5144,8 +5178,16 @@ var VoiceGuide = (function() {
       var ev = null;
       try { ev = evalCutExpr(api, expr); } catch (e) { return show('find failed here: ' + (e && e.message || e), 'err'); }
       var rids = ev.ids.slice();
-      var stepProbs = CL.cutStepProblems(ev.steps);
+      var stepProbs = (ev.problems || []).concat(CL.cutStepProblems(ev.steps));
+      var facetNote = (ev.notes && ev.notes.length) ? ('  |  ' + ev.notes.join('; ')) : '';
       var trail = CL.describeCutSteps(ev.steps);
+      // A facet the model could not answer (a misspelt thinker, a bad month) is
+      // a refusal, not an empty result: the standing cut is left exactly as it was.
+      if (!rids.length && ev.problems && ev.problems.length) {
+        var rf = show('find "' + expr + '"  |  ' + ev.problems.join('; ') + '. Nothing changed.', 'err');
+        rf.verify = { ok: false, problems: ev.problems.slice() };
+        return rf;
+      }
       if (!rids.length) {
         writeCut(null);
         journal.record(TAB, { dim: 'cut', before: before, after: null });
@@ -5156,21 +5198,31 @@ var VoiceGuide = (function() {
       }
       var rval = { ids: rids, query: expr };
       // Enforce without a second round trip: the ids are already in hand.
-      cutIds = rids.slice(); cutQuery = expr; setSearch(ev.steps.length > 1 ? expr : cutQuery); applyCut();
+      cutIds = rids.slice(); cutQuery = expr; setSearch(ev.steps.length > 1 ? expr : cutQuery);
+      // SAY WHAT IS DRAWN. A facet selects from the whole model, so some of its
+      // nodes may be hidden by the view's own filters; the count spoken is the
+      // count on screen, and the gap is named rather than rounded away.
+      var drawnN = applyCut();
+      var hiddenN = (typeof drawnN === 'number' && drawnN < rids.length) ? (rids.length - drawnN) : 0;
       [120, 400, RESETTLE_MS, 1800].forEach(function (ms) { setTimeout(function () { if (cutIds) { applyCut(); } }, ms); });
       journal.record(TAB, { dim: 'cut', before: before, after: rval });
       var vr = verifyCutNow();
       var probs = stepProbs.concat(vr.problems || []);
-      var res = show('find "' + expr + '"  |  ' + rids.length + ' nodes shown' + (trail ? '  (' + trail + ')' : '') + frameSuffix() +
+      var res = show('find "' + expr + '"  |  ' + (rids.length - hiddenN) + ' nodes shown' +
+                     (hiddenN ? ' (' + rids.length + ' in the cut; ' + hiddenN + ' hidden by the current filters)' : '') +
+                     (trail ? '  (' + trail + ')' : '') + facetNote + frameSuffix() +
                      (probs.length ? '  |  CHECK: ' + probs.join('; ') : ''), 'ok');
       res.verify = { ok: !probs.length, problems: probs };
-      res.shown = rids.length;
+      res.shown = rids.length - hiddenN;
       return res;
     }
     // Composition needs the tab to answer ONE term at a time; the scrape road
     // can only read the whole page's lighting. Say so rather than fake it.
     if (p.action === 'compose' || CL.parseCutExpr(p.text || '').length > 1) {
       return show('combining searches (also / except / within) is not available on this view yet -- it needs the tab\'s find contract', 'err');
+    }
+    if (p.action === 'find' && CL.parseFacet(p.text || '')) {
+      return show('cuts by thinker, pair, kind, strength or month need the graph model -- they work on the Sociogram', 'err');
     }
     if (p.action === 'clear') {
       writeCut(null);
@@ -5307,6 +5359,8 @@ var VoiceGuide = (function() {
     catch (e) { return null; }
   }
   function plotApi() { var w = plotTabWin(); return (w && w.C2A2Plot && w.C2A2Plot.panel) ? w.C2A2Plot : null; }
+  // The model half of the plots script (facets, attribution) -- same object.
+  function plotModel() { var P = plotApi(); return (P && P.facetIds) ? P : null; }
   function plotDims(P) { return { plots: P.plots, kinds: P.kinds, groups: P.groups, strengths: P.strengths, months: P.months }; }
   function readPlot() { var P = plotApi(); return (P && P.visible && P.visible()) ? P.get() : null; }
   function syncPlotBtn() { var pb = document.getElementById('btn-plots'); if (pb) { pb.classList.toggle('on', !!readPlot()); } }
@@ -5330,8 +5384,8 @@ var VoiceGuide = (function() {
       var t0 = Date.now();
       (function wait() {
         var p2 = plotApi();
-        if (p2 && w.Plotly) { p2.subscribe(onPlotHand); return resolve(p2); }
-        if (Date.now() - t0 > 20000) { return reject(new Error(p2 ? 'the charting library (Plotly) did not load' : 'the plots panel did not start')); }
+        if (p2) { p2.subscribe(onPlotHand); return resolve(p2); }
+        if (Date.now() - t0 > 20000) { return reject(new Error('the plots panel did not start')); }
         setTimeout(wait, 100);
       })();
     });
@@ -5371,6 +5425,8 @@ var VoiceGuide = (function() {
       }).join(', ')) : '; none to count');
     }
     if (!v.ok) { line += '  |  CHECK: ' + v.problems.join('; '); }
+    var cs = P.chartState ? P.chartState() : 'ready';
+    if (cs === 'failed') { line += '  |  the chart library could not load, so the numbers above are all there is to see'; }
     var res = show(line, v.ok ? 'ok' : 'err');
     res.verify = v;
     if (sm) { res.plot = sm; }
@@ -6146,18 +6202,56 @@ var VoiceGuide = (function() {
       });
     });
   }
-  window.C2A2Plan = function (request) {
+  // PLAN MEMORY (step 4, 2026-09-29): verified plans are remembered by the
+  // broker (scrubbed request + commands, never the prose answer) and recalled
+  // as examples; see CommandLine.storablePlan / replayPlan. Memory is a help,
+  // never a dependency: a failed recall or store changes nothing else.
+  function planRecall(request) {
+    if (!window.C2A2Search) { return Promise.resolve(null); }
+    return window.C2A2Search.callBroker({ action: 'plan_recall', user: JSON.stringify({ request: request, tab: pageFile() }), timeoutMs: 4000 })
+      .catch(function () { return null; });
+  }
+  function planStore(request, commands, model) {
+    if (!window.C2A2Search || !commands || !commands.length) { return; }
+    window.C2A2Search.callBroker({ action: 'plan_store', user: JSON.stringify({ request: request, tab: pageFile(), commands: commands, model: model || '' }), timeoutMs: 6000 })
+      .catch(function () { /* memory is best-effort */ });
+  }
+  window.C2A2PlanMemory = { recall: planRecall, store: planStore };
+  window.C2A2Plan = function (request, recalled) {
     if (!window.CommandLine || typeof window.CommandLine.runPlan !== 'function') { return Promise.reject(new Error('planner not loaded')); }
     if (!window.C2A2Search) { return Promise.reject(new Error('answer service not loaded')); }
-    return Promise.all([getVerbs(), pageKnowledge(), grounding(request)]).then(function (v) {
+    return Promise.all([getVerbs(), pageKnowledge(), grounding(request), recalled !== undefined ? Promise.resolve(recalled) : planRecall(request)]).then(function (v) {
       return window.CommandLine.runPlan(request, {
-        verbs: v[0], knowledge: v[1].text, grounding: v[2].text,
+        verbs: v[0], knowledge: v[1].text, grounding: v[2].text, examples: window.CommandLine.planExamplesText(v[3]),
         state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
         run: function (cmd) { var r = window.CCLRun(cmd); return (r && r.pending) ? r.pending : r; },
         ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user, timeoutMs: 60000 }); }
-      }).then(function (res) { res.sources = v[2].sources; return res; });
+      }).then(function (res) {
+        res.sources = v[2].sources;
+        res.remembered = (v[3] && v[3].plans) ? v[3].plans.length : 0;
+        var keep = window.CommandLine.storablePlan(res);
+        if (keep) { planStore(request, keep, res.model); res.stored = true; }
+        return res;
+      });
     });
   };
+  // Replay a remembered plan with NO model call: each step runs through CCLRun
+  // (waiting for any that finish later) and is read back like any command. Any
+  // step that fails or is flagged sends the request on to the planner instead.
+  function replayRemembered(rp) {
+    var trace = [];
+    return rp.commands.reduce(function (pr, cmd) {
+      return pr.then(function (stop) {
+        if (stop) { return true; }
+        var r0 = window.CCLRun ? window.CCLRun(cmd) : null;
+        return Promise.resolve(r0 && r0.pending ? r0.pending : r0).then(function (r) {
+          var bad = !r || r.ok === false || (r.verify && r.verify.ok === false);
+          trace.push({ cmd: cmd, spoken: (r && r.spoken) || '(no result)', ok: !bad });
+          return bad;
+        });
+      });
+    }, Promise.resolve(false)).then(function (stopped) { return { ok: !stopped, trace: trace }; });
+  }
   function planMeta(res) {
     var h = '';
     if (res.trace && res.trace.length) {
@@ -6167,7 +6261,9 @@ var VoiceGuide = (function() {
       h += '<br><span style="color:#C45B5B">Not as asked: ' + res.failed.map(function (t) { return esc(t.cmd + ': ' + (t.problems.join('; ') || t.spoken)); }).join(' | ') + '</span>';
     }
     if (res.sources && res.sources.length) { h += (h ? '<br>' : '') + 'Grounded in: ' + res.sources.map(esc).join(', '); }
-    return h + '<br>planned and answered' + (res.model ? ' (' + esc(res.model) + ', ' + res.calls + ' call' + (res.calls === 1 ? '' : 's') + ')' : '');
+    if (res.remembered) { h += (h ? '<br>' : '') + 'Helped by ' + res.remembered + ' verified plan' + (res.remembered === 1 ? '' : 's') + ' from earlier sessions.'; }
+    return h + '<br>planned and answered' + (res.model ? ' (' + esc(res.model) + ', ' + res.calls + ' call' + (res.calls === 1 ? '' : 's') + ')' : '') +
+      '<br><span style="opacity:.7">Requests are kept without anything that identifies you (emails, links and long numbers removed) so verified plans can help the next person. Answers are not kept.</span>';
   }
 
   var seq = 0;
@@ -6184,10 +6280,26 @@ var VoiceGuide = (function() {
         if (intro && INTRO_RE.test(q)) { if (my === seq) { render(intro, false, ''); } return; }
         if (my !== seq) { return; }
         render('Working it out…', true, '');
-        return window.C2A2Plan(q).then(function (res) {
+        return planRecall(q).then(function (rec) {
+          if (my !== seq) { return; }
+          var rp = window.CommandLine.replayPlan(q, rec);
+          if (!rp) { return rec; }
+          return replayRemembered(rp).then(function (rr) {
+            if (my !== seq) { return 'done'; }
+            if (!rr.ok) { render('A remembered plan did not hold here (' + esc(rr.trace[rr.trace.length - 1].cmd) + '); planning afresh…', true, ''); return rec; }
+            render(rr.trace.map(function (t) { return t.spoken; }).join('\n'), false,
+                   'Steps: ' + rr.trace.map(function (t) { return esc(t.cmd); }).join(' &rarr; ') +
+                   '<br>ran a plan verified on ' + rp.devices + ' devices &middot; no model call');
+            planStore(q, rp.commands, 'replay');
+            return 'done';
+          });
+        }).then(function (rec) {
+          if (rec === 'done' || my !== seq) { return; }
+          return window.C2A2Plan(q, rec || null).then(function (res) {
           if (my !== seq) { return; }
           if (!res.ok) { render('The planner could not be read (' + res.error + '). Nothing further was changed.', false, planMeta(res)); return; }
           render(res.answer || '(no answer came back)', false, planMeta(res));
+          });
         });
       }).catch(function (e) {
         if (my !== seq) { return; }

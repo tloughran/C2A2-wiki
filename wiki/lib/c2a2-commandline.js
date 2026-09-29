@@ -1021,6 +1021,7 @@
       'Rules:',
       '- commands run in order, max ' + PLAN_MAX_COMMANDS + '. Names lowercase. One verb per string. Never use: ' + Array.from(PLAN_DENY).join(', ') + '.',
       '- A text cut is an expression: `find X`, then `also Y` (add: the UNION of both, never an overlap), `except Z` (remove), `within W` (keep only the overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
+      '- A cut term may be a FACET of the model instead of a search word (Sociogram): `thinker:levin` (every node the model attributes to Levin -- use this, not `find levin`, which only matches titles), `group:synthesis`, `kind:signal`, `strength:strong`, `month:2026-08`, `since:2026-08`, `until:2026-07`, `between levin and friston` (the ends of edges joining the two). `+` joins facets in ONE term: `find thinker:levin+strength:strong`. Facets compose with also/except/within like any term.',
       '- Group filters: `only`, `show`, `hide`, `all`. `what` reads the view. `summarize` returns the open article text to you.',
       '- `plot` draws the edges of the current view (Sociogram) as a chart, in ONE command with order-free words: a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` (whole corpus) or `page` (follow the view and its cut), `inside`/`touching` (edges inside the cut, or touching it), `since <month>`, `until <month>`, and lists after `edges` (signal, wikilink, mention, reference...), `nodes` (groups), `strength` (strong, high, moderate, speculative). Example: `plot heatmap by thinker edges signal strength strong high since august`. `plot off` hides it. Its result reports the edge count and the top pairs -- use those numbers, they are computed.',
       '- If results say a step failed or did nothing (CHECK / verify problems / matched nothing), either correct it with new commands or say so in the answer. Never claim a view you were not shown.',
@@ -1034,6 +1035,7 @@
     parts.push('VERIFIED STATE (before this round): ' + (o.state || '(unknown)'));
     if (o.knowledge) { parts.push('KNOWLEDGE:\n' + o.knowledge); }
     if (o.grounding) { parts.push(o.grounding); }
+    if (o.examples) { parts.push(o.examples); }
     parts.push('CCL VERBS:\n' + (o.verbs || ''));
     if (o.results && o.results.length) {
       parts.push('RESULTS OF YOUR COMMANDS SO FAR (round ' + o.round + '):\n' + o.results.map(function (r, i) {
@@ -1219,7 +1221,7 @@
     let results = [], model = '', answer = '', calls = 0;
     for (let round = 1; round <= maxRounds; round++) {
       const lastRound = round === maxRounds;
-      const prompt = buildPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, verbs: deps.verbs,
+      const prompt = buildPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
                                        results: results, round: round - 1, lastRound: lastRound && round > 1 });
       const reply = await deps.ask(prompt);
       calls++;
@@ -1245,6 +1247,94 @@
     const lastRoundNo = trace.length ? trace[trace.length - 1].round : 0;
     const failed = trace.filter(function (t) { return t.round === lastRoundNo && (!t.ok || t.problems.length); });
     return { ok: true, answer: answer, trace: trace, calls: calls, model: model, failed: failed };
+  }
+
+  // ---- PLAN MEMORY (step 4, 2026-09-29): learn from verified runs ----------
+  // The broker keeps (scrubbed request, tab, command list) for every planner run
+  // whose every step passed the shell's read-back check -- visitors' included,
+  // by Tom's decision -- and never the model's prose. Recall hands the planner up
+  // to three similar verified plans as EXAMPLES. A remembered plan REPLAYS with
+  // no model call only when it is a view request (not a question), its request
+  // matches exactly after normalizing, and it has verified on at least
+  // PLAN_REPLAY_DEVICES distinct devices -- so one visitor cannot teach it alone.
+  const PLAN_REPLAY_DEVICES = 2;
+  const PLAN_REQ_MAX_CHARS = 300;
+  // IDENTICAL to the broker's normRequest (.private/supabase/functions/cc-broker/
+  // index.ts); scripts/test_voice_ccl.cjs compares the two chains line by line.
+  function normRequest(s) {
+    return String(s || "").toLowerCase()
+      .replace(/[^\s@]+@[^\s@]+\.[^\s@]+/g, " email ")
+      .replace(/\b(?:https?:\/\/|www\.)\S+/g, " link ")
+      .replace(/\b(\d{4})-(\d{2})(?:-(\d{2}))?\b/g, (m) => m.replace(/-/g, "\u0001"))   // keep dates
+      .replace(/\d(?:[\s().-]?\d){6,}/g, " number ")                                    // 7+ digits
+      .replace(/\u0001/g, "-")
+      .replace(/[^a-z0-9:~+\-' ]+/g, " ")
+      .replace(/\s+/g, " ").trim().slice(0, PLAN_REQ_MAX_CHARS);
+  }
+  // Which runs may be remembered: the planner answered, commands ran, and
+  // NOTHING in the final round failed or was flagged. Returns the full ordered
+  // command list (earlier rounds included: the verified end state is where the
+  // whole sequence led) or null.
+  function storablePlan(res) {
+    if (!res || !res.ok || !Array.isArray(res.trace) || !res.trace.length) { return null; }
+    if (res.failed && res.failed.length) { return null; }
+    const ran = res.trace.filter(function (t) { return !/^not run/.test(t.spoken || ''); });
+    if (!ran.length || ran.length > 12) { return null; }
+    const last = ran[ran.length - 1].round;
+    if (ran.some(function (t) { return t.round === last && (!t.ok || (t.problems && t.problems.length)); })) { return null; }
+    return ran.map(function (t) { return t.cmd; });
+  }
+  const PLAN_QUESTION_RE = /\?|^\s*(what|which|who|whom|why|how|when|where|is|are|does|do|did|can|could|should|would|will|tell|explain|describe|compare|summari[sz]e)\b/i;
+  // A remembered plan that may run with NO model call, or null.
+  function replayPlan(request, recall) {
+    if (!recall || !Array.isArray(recall.plans) || PLAN_QUESTION_RE.test(String(request || ''))) { return null; }
+    const norm = normRequest(request);
+    const hit = recall.plans.filter(function (p) { return p && p.request === norm && (p.devices || 0) >= PLAN_REPLAY_DEVICES; })[0];
+    if (!hit || !Array.isArray(hit.commands) || !hit.commands.length) { return null; }
+    // Replayed commands obey the planner's own limits.
+    const cmds = hit.commands.map(function (c) { return String(c || '').replace(/\s+/g, ' ').trim(); }).filter(Boolean);
+    if (cmds.some(function (c) { return PLAN_DENY.has(c.split(' ')[0].toLowerCase()); })) { return null; }
+    return { commands: cmds, devices: hit.devices };
+  }
+  function planExamplesText(recall) {
+    const plans = (recall && Array.isArray(recall.plans)) ? recall.plans.slice(0, 3) : [];
+    if (!plans.length) { return ''; }
+    return 'VERIFIED PLANS FROM EARLIER SESSIONS (similar requests on this view; every step passed the read-back check. Examples of CCL use only -- the view now may differ, so plan for THIS request):\n' +
+      plans.map(function (p) { return '- "' + p.request + '" -> ' + (p.commands || []).join(' ; '); }).join('\n');
+  }
+
+  // ---- FACET TERMS (step 2, 2026-09-29): cut by the model's own structure ----
+  // A cut term may name a FACET instead of text to search for:
+  //   thinker:levin  group:synthesis  kind:signal  strength:strong
+  //   month:2026-08  since:2026-08  until:2026-07
+  //   between levin and friston  (or pair:levin~friston; a side may be group:x)
+  // and '+' joins facets inside ONE term (thinker:levin+strength:strong = AND),
+  // so a term composes with also/except/within exactly like a search does.
+  // Returns null when the term is not a facet -- then it is an ordinary search,
+  // untouched -- or {facets:[...]} / {error}. Evaluated in the tab by the SAME
+  // attribution rule its charts draw with (C2A2Plot.facetIds).
+  const FACET_KEYS = { thinker: 'thinker', t: 'thinker', group: 'group', g: 'group', kind: 'kind', edge: 'kind', edges: 'kind',
+    strength: 'strength', month: 'month', since: 'since', from: 'since', until: 'until', to: 'until', pair: 'pair' };
+  function parseFacet(text) {
+    const s = String(text || '').trim().toLowerCase();
+    const btw = /^between\s+(\S+(?:\s+\S+)?)\s+and\s+(\S+(?:\s+\S+)?)$/.exec(s);
+    if (btw) { return { facets: [{ facet: 'pair', a: btw[1].trim(), b: btw[2].trim() }] }; }
+    if (!/^[a-z]+:/.test(s) || /\s/.test(s)) { return null; }
+    const parts = s.split('+'), facets = [];
+    for (const part of parts) {
+      const m = /^([a-z]+):(.*)$/.exec(part);
+      if (!m || !FACET_KEYS[m[1]]) { return facets.length ? { error: '"' + part + '" is not a facet (use thinker:, group:, kind:, strength:, month:, since:, until:, pair:)' } : null; }
+      const key = FACET_KEYS[m[1]], val = m[2].trim();
+      if (!val) { return { error: key + ': needs a value' }; }
+      if ((key === 'month' || key === 'since' || key === 'until') && !/^\d{4}-\d{2}$/.test(val)) { return { error: key + ':' + val + ' needs a month like 2026-08' }; }
+      if (key === 'pair') {
+        const ab = val.split('~');
+        if (ab.length !== 2 || !ab[0] || !ab[1]) { return { error: 'pair: needs two sides, like pair:levin~friston' }; }
+        facets.push({ facet: 'pair', a: ab[0], b: ab[1] }); continue;
+      }
+      facets.push({ facet: key, value: val });
+    }
+    return { facets: facets };
   }
 
   // ---- PLOT (step 1 of the 2026-09-28 plan: plots join the shell's state) ----
@@ -1393,6 +1483,11 @@
     VERSION: VERSION,
     compileGrammar: compileGrammar,
     parsePlotSpec: parsePlotSpec,
+    parseFacet: parseFacet,
+    normRequest: normRequest,
+    storablePlan: storablePlan,
+    replayPlan: replayPlan,
+    planExamplesText: planExamplesText,
     verifyPlot: verifyPlot,
     describePlot: describePlot,
     PLOT_DEFAULTS: PLOT_DEFAULTS,
