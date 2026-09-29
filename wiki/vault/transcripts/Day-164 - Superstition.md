@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-164 - Superstition - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-18T22:33:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-28T16:26:34"
+last_qc_outcome: "rewrote"
 tags: [summa, day/164, pars/II-II, q/92–93]
 ---
 
@@ -24,7 +24,7 @@ tags: [summa, day/164, pars/II-II, q/92–93]
 
 Austin Habash's Day 164 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.92–93.
 
-> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Theologia → Theologiae; Habish → Habash; sukunda sukund → Secunda Secundae.
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Theologia → Theologiae; Habish → Habash; sukunda sukund → Secunda Secundae; QC 2026-09-28: stray "day" after "Secunda Secundae" at [00:35] removed (residue of the raw ASR "sukund day" = Secundae; the closing at [06:17] reads "Secunda Secundae" with no "day").
 
 ## Transcript
 
@@ -34,7 +34,7 @@ Theologiae in a way simple and insightful for anyone to understand. The Summa in
 
 Summa Day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 164. So let's get started.
 
-We're covering today questions 92 and 93 of the Secunda Secundae day. That is vices [00:35] opposed to religion beginning with superstition i.e by way of excess and of
+We're covering today questions 92 and 93 of the Secunda Secundae. That is vices [00:35] opposed to religion beginning with superstition i.e by way of excess and of
 
 superstition consisting in undue worship of the true god. The translation that I always use in these podcasts is the one generously provided to me by a maria
 

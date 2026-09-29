@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-056 - The Order of Demons - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-19T16:24:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-28T00:27:05"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/056, pars/I]
 ---
@@ -26,7 +26,7 @@ tags: [summa, day/056, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 56 of 308.
 > Summa reference: *Prima Pars, Q.109 + Q.110*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. QC sweep 2026-06-10 additional fixes: suir -> Summa; Aquinas ass -> Aquinas's; Su podcast -> Summa podcast; covering to -> covering today; a Maria press / a Maria Pressa -> Ave Maria Press / Ave Maria Press's; aquinin -> Aquinas; the pelet -> the prelate. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. QC sweep 2026-06-10 additional fixes: suir -> Summa; Aquinas ass -> Aquinas's; Su podcast -> Summa podcast; covering to -> covering today; a Maria press / a Maria Pressa -> Ave Maria Press / Ave Maria Press's; aquinin -> Aquinas; the pelet -> the prelate. QC sweep 2026-09-28 additional fixes: we corpor orial matter -> whether corporeal matter; aqu qu -> Aquinas; Dr Thomas mlin Dr John Brungard -> Dr. Thomas McLaughlin, Dr. John Brungardt; soall -> so-called. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
@@ -60,7 +60,7 @@ tags: [summa, day/056, pars/I]
 
 [00:05:51] are only open to God himself directly
 
-[00:05:55] and anything else indirectly Article 2 we corpor orial matter obeys the mere will of an angel can raw potential for material existence what we call matter what Heisenberg our Quantum physicist we've been quoting along the way took to be energy does this absolute bottom of all material things which doesn't even exist actually but only potentially obey the will of angels St Thomas says that only God from whom matter and its form
+[00:05:55] and anything else indirectly Article 2 whether corporeal matter obeys the mere will of an angel can raw potential for material existence what we call matter what Heisenberg our Quantum physicist we've been quoting along the way took to be energy does this absolute bottom of all material things which doesn't even exist actually but only potentially obey the will of angels St Thomas says that only God from whom matter and its form
 
 [00:06:26] have come from can inform material immediately just by the whim of his will but for Angels or ourselves if for example we wanted to split water into something else into its constitutive elements we will have to do so by affecting physically the water itself we can't change it immediately from the will St Thomas explains this by giving us an analogy about a cook he says there is nothing to prevent some natural
 
@@ -72,9 +72,9 @@ tags: [summa, day/056, pars/I]
 
 [00:08:21] and it is in this way especially that angels can move physical things but it does also seem that according to the
 
-[00:08:28] first article of this question Aquinas is saying that Angels also play a part in that natural motion as well but I will refer The Listener to the work of Dr Thomas mlin Dr John Brungard to study
+[00:08:28] first article of this question Aquinas is saying that Angels also play a part in that natural motion as well but I will refer The Listener to the work of Dr. Thomas McLaughlin, Dr. John Brungardt, to study
 
-[00:08:41] more on that article four whether angels can work miracles St Thomas's response here is kind of comical he uses the example of a rock which has a natural motion or tendency down towards the center of the earth he writes a miracle properly soall is when something is done outside the order of nature but it is not enough for a miracle if something is done outside the order of any particular nature for otherwise anyone would perform a miracle by throwing a stone
+[00:08:41] more on that article four whether angels can work miracles St Thomas's response here is kind of comical he uses the example of a rock which has a natural motion or tendency down towards the center of the earth he writes a miracle properly so-called is when something is done outside the order of nature but it is not enough for a miracle if something is done outside the order of any particular nature for otherwise anyone would perform a miracle by throwing a stone
 
 [00:09:11] upwards as such a thing is outside the order of the Stone's nature so for a miracle is required that it be against the order of the whole created nature but God Alone can do this because whatever an angel or any other creature does by its own power is according to the order of created nature and thus it is not a miracle hence God Alone can work miracles at the same time both men and angels can be said to work miracles by asking God to affect them or by being
 

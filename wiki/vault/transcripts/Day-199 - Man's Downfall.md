@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-199 - Man's Downfall - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/199, pars/II, q/162, q/163]
-last_qc_at: "2026-09-19T12:23:22"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-28T20:26:12"
+last_qc_outcome: "pass"
 ---
 
 # Day 199 — Man's Downfall

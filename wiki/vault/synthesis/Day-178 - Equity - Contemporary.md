@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-42 the mercy-over-sacrifice rule generalized into a test on the use of a text — adjudication relocated from the semantics of the rule to the effects of the reading; epikeia as a decision procedure rather than a sentiment. Its Evidence line flags a standing tension with Wright's critical realism, carried explicitly in the Bridges section rather than averaged)"
 evidence_strength_summary: "Hemispheric account of letter-vs-intent is empirical/interpretive (McGilchrist); laws-as-higher-level-stories is formal (Carroll); nested-self piety is formal-analogical (Levin); spirit-over-letter is theological (Wright, Rohr)."
 tags: [synthesis, day/178, theme/equity, theme/letter-and-intent, q/120, q/121]
-last_qc_at: "2026-09-19T04:29:09"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-28T18:18:16"
+last_qc_outcome: "pass"
 ---
 
 # Day 178 — Equity (Contemporary)

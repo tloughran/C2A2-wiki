@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-058 - The Assault of Demons - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-19T16:24:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-28T00:27:59"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/058, pars/I]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/058, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 58 of 308.
 > Summa reference: *Prima Pars, Q.113 + Q.114*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Summa near podcast -> Summa in a Year podcast; Aquinas assumma -> Aquinas's Summa; will'll -> we'll; a Maria press -> Ave Maria Press; the a Maria press's site -> the Ave Maria Press site; Su 10 -> Summa 10; foras -> for as. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Summa near podcast -> Summa in a Year podcast; Aquinas assumma -> Aquinas's Summa; will'll -> we'll; a Maria press -> Ave Maria Press; the a Maria press's site -> the Ave Maria Press site; Su 10 -> Summa 10; foras -> for as. QC sweep 2026-09-28: aana -> Aquinas; this day 58 -> is day 58. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 58 so let's get started we're covering today questions 113 and 114 of the Prima pars that is of the guardianship of the good angels and of
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 58 so let's get started we're covering today questions 113 and 114 of the Prima pars that is of the guardianship of the good angels and of
 
 [00:00:36] the assault of the Demons the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from the Ave Maria Press site by typing in the code
 
@@ -40,7 +40,7 @@ tags: [summa, day/058, pars/I]
 
 [00:01:25] of that Axiom that the variable is regulated by the invariable from our very own on thinking and willing that Although our conclusions can be more or less correct or variable the fundamental principles on which those conclusions are based such as the principle of non-contradiction the principle of sufficient reason which we discussed in episode 41 are not variable and do not have the possibility of being incorrect nor changing same goes for our willing that although we may be variable or vary
 
-[00:01:55] in our particular choices we do not choose our invariable in or goal which we pursue unfailingly and certainly and all of our particular choices and that is happiness in this way aana says it is fitting that the variable destructible fallible man be governed by those already invariably confirmed in Grace who are indestructible namely the angels and his words it is moreover manifest that as regards things to be done human
+[00:01:55] in our particular choices we do not choose our invariable in or goal which we pursue unfailingly and certainly and all of our particular choices and that is happiness in this way Aquinas says it is fitting that the variable destructible fallible man be governed by those already invariably confirmed in Grace who are indestructible namely the angels and his words it is moreover manifest that as regards things to be done human
 
 [00:02:25] knowledge and affection can vary and fail from good in many ways and so it was necessary that Angels should be deputed for the guardianship of men in order to regulate them and move them to
 

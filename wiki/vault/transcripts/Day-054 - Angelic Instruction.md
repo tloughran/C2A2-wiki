@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-054 - Angelic Instruction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-19T16:24:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-28T00:27:05"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/054, pars/I]
 ---
@@ -26,7 +26,7 @@ tags: [summa, day/054, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 54 of 308.
 > Summa reference: *Prima Pars, Q.105 + Q.106*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bWarner Heisenberg\b -> Werner Heisenberg; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bWarner Heisenberg\b -> Werner Heisenberg; \baanus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-09-28 additional fixes: a Maria press / a Maria Pressa -> Ave Maria Press / Ave Maria Press's; imp passive -> in passive; Turley writing -> truly writing; aqu / aqu showed / aquana -> Aquinas; a Quan's example -> Aquinas's example; a quantis response -> Aquinas's response; the beic Vision / the bepic vision -> the beatific vision; IR ly -> immediately; Dr Thomas mlin -> Dr. Thomas McLaughlin. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
@@ -34,23 +34,23 @@ tags: [summa, day/054, pars/I]
 
 [00:00:06] founder of think Catholic and you're listening to the Summa iner podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 54 so let's get started today we're covering questions 105 and 106 of the Prima pars that is of the change of creatures by God and how one
 
-[00:00:37] creature moves another the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria Pressa site by typing in the code Summa
+[00:00:37] creature moves another the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa
 
 [00:00:55] 10 and so here we go article one whether God can move the m matter immediately to the form what do these terms mean again matter is that fundamental bottom of all material things which does not exist actually but only potentially it is raw potential existence what Nobel Prize winner in physics Werner Heisenberg took to be energy which can then come into actual existence when affected by some agent so again all actually existing material things are made out of matter
 
-[00:01:27] and have some particular form matter is the potential of which the form is what is making that raw potential to exist in some actual thing this article is asking can God affect matter in such a way as to make it actually exist and under some particular form immediately and the answer is yes as St Thomas explains whatever is imp passive potentiality can be reduced to act by the act of power which extends over that potentiality therefore since the divine power extends
+[00:01:27] and have some particular form matter is the potential of which the form is what is making that raw potential to exist in some actual thing this article is asking can God affect matter in such a way as to make it actually exist and under some particular form immediately and the answer is yes as St Thomas explains whatever is in passive potentiality can be reduced to act by the act of power which extends over that potentiality therefore since the divine power extends
 
 [00:01:59] Over Matter as produced by God it can be reduced to act by the divine power and this is what is meant by matter being move to a form for a form is nothing else but the act of matter in other words just as we can take hydrogen and oxygen and combine them to make water where these earlier Parts hydrogen and oxygen now exist under a new form water with new potentials new properties so to
 
 [00:02:29] can God affect raw matter in such a way that it immediately takes on some form
 
-[00:02:36] Article 2 whether God can move a body immediately can God push the chair without any intervening help or without any intermediary cause St Thomas answers Turley writing it is erroneous to say that God cannot himself produce all the determinant effects which are produced by any created cause in other words anything we can do save evil and sin or any other imperfect or contradictory thing God can also do if I can push the chair and an angel can push the chair
+[00:02:36] Article 2 whether God can move a body immediately can God push the chair without any intervening help or without any intermediary cause St Thomas answers, truly writing, it is erroneous to say that God cannot himself produce all the determinant effects which are produced by any created cause in other words anything we can do save evil and sin or any other imperfect or contradictory thing God can also do if I can push the chair and an angel can push the chair
 
-[00:03:06] without having a body and so too can God Aquinas will then say more on what we term natural motion and natural place which are fascinating topics beyond our intended purpose of this series which is to convey the gist of St Thomas but I would refer The Listener to the works of Dr Thomas mlin on both of those topics especially as they bear on our temporary
+[00:03:06] without having a body and so too can God Aquinas will then say more on what we term natural motion and natural place which are fascinating topics beyond our intended purpose of this series which is to convey the gist of St Thomas but I would refer The Listener to the works of Dr. Thomas McLaughlin on both of those topics especially as they bear on our temporary
 
-[00:03:30] understanding of gravity article three whether God moves the created intellect immediately a quantis response God so moves the created intellect in as much as he gives it the intellectual power whether natural or super added and impresses on the created intellect the intelligible species and maintains and preserves both power and species in existence so breaking that down Aquinas is saying first that God is the cause of our abil to understand as our creator as
+[00:03:30] understanding of gravity article three whether God moves the created intellect immediately Aquinas's response: God so moves the created intellect in as much as he gives it the intellectual power whether natural or super added and impresses on the created intellect the intelligible species and maintains and preserves both power and species in existence so breaking that down Aquinas is saying first that God is the cause of our abil to understand as our creator as
 
-[00:04:02] well as our ability to understand him in The beic Vision by a super added Grace if we end up in heaven second he is also the cause of the things we understand by being the cause of their Essence which was in his mind before he created the world and it is the likeness of that Essence specifically which informs our mind when we understand a thing and if that process sounds unfamiliar I check out episodes 41 1 and 7 and then finally God moves the created intellect by
+[00:04:02] well as our ability to understand him in the beatific vision by a super-added grace if we end up in heaven second he is also the cause of the things we understand by being the cause of their Essence which was in his mind before he created the world and it is the likeness of that Essence specifically which informs our mind when we understand a thing and if that process sounds unfamiliar I check out episodes 41 1 and 7 and then finally God moves the created intellect by
 
 [00:04:33] preserving itself and everything else included in this process of understanding in existence in these ways both immediately and immediately God can be said to move man's intellect Article 4 whether God can move the created will as it is written in the letter to the Philippians chapter 2 my beloved as you have always obeyed so now not only as in my presence but much more in my absence work out your own salvation with fear and trembling for God is at work in you
 
@@ -64,7 +64,7 @@ tags: [summa, day/054, pars/I]
 
 [00:06:55] natural inclination Article 5 whether God works in every agent in a word from Aquinas God not only gives things their form but he also preserves them in existence and applies them to act and is more over the end of every action as we said in episode two when I move my hand towards a Monday morning coffee my hand could not move without God I could not move my hand without God I would not exist without God I would not see the
 
-[00:07:25] coffee as good without God and I would not want the coffee or have have it as my end without God God encompasses us as aqu showed in question two of the Summa and so to answer this article whether God works in every agent yes he does and most intimately as St Augustine wrote in his autobiography late have I loved thee Oh Beauty so ancient and so new late have I loved thee for behold thou wer
+[00:07:25] coffee as good without God and I would not want the coffee or have have it as my end without God God encompasses us as Aquinas showed in question two of the Summa and so to answer this article whether God works in every agent yes he does and most intimately as St Augustine wrote in his autobiography late have I loved thee Oh Beauty so ancient and so new late have I loved thee for behold thou wer
 
 [00:07:53] within me and I outside article six whether God can do anything outside the established order of nature this question could be asking whether God can do anything outside of the order he has established or his Providence or it may be asking can God do anything outside the order of the natural as by affecting the miraculous in regards to the former the response is no according to Aquinas God cannot do anything against this order for if he did so he would act
 
@@ -78,7 +78,7 @@ tags: [summa, day/054, pars/I]
 
 [00:09:55] Things article 8 whether one Miracle is greater than another this question is likely the result of the following words from Jesus Christ he says truly truly I say to you he who believes in me will also do the works that I do and greater Works than these will he do because I go to the father St Thomas tells us a thing is called a miracle by comparison with the power of nature which it surpasses so the more the power of nature is surpassed the greater the miracle then it gives us a hierarchy of miraculous works the first
 
-[00:10:27] or highest kind of Miracle are those go above the nature of a thing entirely like the glorified human body after the resurrection that's a Quan's example the second or slightly lesser Miracle would be a work like healing the blind or raising the dead since sight and life are not above the nature of a thing but in this case are regained in a supernatural way lastly or the bottom level Miracles are those things which surpass the natural order of things only in regard to the manner or mode in which
+[00:10:27] or highest kind of Miracle are those go above the nature of a thing entirely like the glorified human body after the resurrection that's Aquinas's example the second or slightly lesser Miracle would be a work like healing the blind or raising the dead since sight and life are not above the nature of a thing but in this case are regained in a supernatural way lastly or the bottom level Miracles are those things which surpass the natural order of things only in regard to the manner or mode in which
 
 [00:10:57] they come to be like a supernaturally fast recovery from some ailment and then referring to the verse from Jesus Aquinas doesn't give us an interpretation of it in this article but he does give us one in a separate work on the Gospel of John there he writes we could say that in a certain sense our Lord does more things and greater things through his Apostles than by himself among the Miracles done by Christ the greatest was when a sick person was healed by touching The Fringe of His Garment but as we read in Acts
 
@@ -86,7 +86,7 @@ tags: [summa, day/054, pars/I]
 
 [00:11:47] another article one whether one Angel enlightens another if you will remember from episode 26 Angels since they cannot be distinguished materially they have no body must be distinct by by species each angel must be its very own species and these species not being distinguished by different material have to them be distinguished in some spiritual Way by a difference imperfection of their spiritual faculties namely intellect and will which points naturally to a hierarchy within the Angelic realm a
 
-[00:12:20] hierarchy built upon the basis of intellectual capacity which leads us then to the question of this article if it is true that Angels must receive their knowledge IR ly from God that was episode 28 and there is a hierarchy of natures among the Angels the question is does God give knowledge to the angels through or down that hierarchy from the more Superior angels to the Lesser and aquana says that they do it is also very fitting that God would work in this way since as we discussed in the last
+[00:12:20] hierarchy built upon the basis of intellectual capacity which leads us then to the question of this article if it is true that Angels must receive their knowledge immediately from God that was episode 28 and there is a hierarchy of natures among the Angels the question is does God give knowledge to the angels through or down that hierarchy from the more Superior angels to the Lesser and Aquinas says that they do it is also very fitting that God would work in this way since as we discussed in the last
 
 [00:12:50] episode the use of intermediaries is a more perfect display of dignity or authority of God is the supreme ruler of the universe St Thomas writes an angel does not Enlighten another by giving him the light of nature Grace Or Glory but by strengthening his natural light and by manifesting to him the truth so a higher Angel which can understand something more simply and penetratingly by being a better kind of thing a better angel can then affect a lower angel in
 
@@ -96,7 +96,7 @@ tags: [summa, day/054, pars/I]
 
 [00:14:14] which is an inclination to the known good and second the object of the will or the good thing which moves it to will or to choose in regards to the first an angel cannot affect the inclination of another Angel's will which is to goodness in general because that inclination has been given by God and then in regard to the second an angel cannot affect another's will in a way that it has to choose the object proposed to it because all intelligent things are free to will or not to will a
 
-[00:14:45] thing that is not goodness itself which is God via the bepic vision but an angel can affect another Angel's will by proposing some other created good to it intellectually which which the angel can then will or not will this is what
+[00:14:45] thing that is not goodness itself which is God via the beatific vision but an angel can affect another Angel's will by proposing some other created good to it intellectually which which the angel can then will or not will this is what
 
 [00:15:02] Aquinas means by persuasion article 3 whether an inferior angel can Enlighten a superior Angel St Thomas answers in the negative and argues this way the inferior Angels never Enlighten the superior but are always enlightened by them the reason is because as above explained one order is under another as cause is under cause and hence as cause is ordered to cause so is order to order order so among men even though there is order whether in the family or in the
 

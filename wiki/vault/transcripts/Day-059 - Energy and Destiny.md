@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-059 - Energy and Destiny - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-19T16:24:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-28T00:27:59"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/059, pars/I]
 ---
@@ -26,13 +26,13 @@ tags: [summa, day/059, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 59 of 308.
 > Summa reference: *Prima Pars, Q.115 + Q.116*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Aquinas of Summa -> Aquinas's Summa; Summa near podcast -> Summa in a Year podcast; a Maria press -> Ave Maria Press; a Maria presses site -> Ave Maria Press's site. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. QC sweep 2026-06-10: Aquinas of Summa -> Aquinas's Summa; Summa near podcast -> Summa in a Year podcast; a Maria press -> Ave Maria Press; a Maria presses site -> Ave Maria Press's site. QC sweep 2026-09-28: get already -> get started; day principia / hither to I not been able -> the Principia / hitherto I have not been able; Dr Ed phaser -> Dr. Ed Feser; Dr Thomas mlin -> Dr. Thomas McLaughlin. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 59 so let's get already we're covering today questions 115 and 116 of the Prima pars that is of the action of the corporeal creature and on
+[00:00:06] founder of think Catholic and you're listening to the Summa year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith is day 59 so let's get started we're covering today questions 115 and 116 of the Prima pars that is of the action of the corporeal creature and on
 
 [00:00:37] fate the translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press the five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code
 
@@ -40,13 +40,13 @@ tags: [summa, day/059, pars/I]
 
 [00:01:25] it's not the falling stone that causes the glass to tip over instead that the falling stone is just an occasion for some other Transcendent thing to knock over the glass and although this sounds quite unbelievable for any sane person to hold I would like to quote Sir Isaac Newton who in his Exposition on gravity not only could not identify its cause but attributed the cause of moving things of gravitating things not to the things themselves but to some subtle spirit so this is from Newton and his
 
-[00:01:57] work day principia he said but hither to I not been able to discover the cause of those properties of gravity from phenomena so he takes a guess and here is that guess he continues and now we might add something concerning a certain most subtle Spirit which pervades and lies hid in all gross bodies by the force and attraction of which Spirit the particles of bodies mutually attract one another at near distances so for Newton
+[00:01:57] work, the Principia, he said, hitherto I have not been able to discover the cause of those properties of gravity from phenomena so he takes a guess and here is that guess he continues and now we might add something concerning a certain most subtle Spirit which pervades and lies hid in all gross bodies by the force and attraction of which Spirit the particles of bodies mutually attract one another at near distances so for Newton
 
-[00:02:27] it is a subtle spirit causing things to gravitate towards one another not something on or in the things themselves which can seem like something leaning in the direction of occasionalism or pantheism as Dr Ed phaser writes if physical objects themselves don't really do anything then there's no point in trying to study what they do or how they do it if physical objects do nothing and Only God acts then it would follow that physical things don't have any existence
+[00:02:27] it is a subtle spirit causing things to gravitate towards one another not something on or in the things themselves which can seem like something leaning in the direction of occasionalism or pantheism as Dr. Ed Feser writes if physical objects themselves don't really do anything then there's no point in trying to study what they do or how they do it if physical objects do nothing and Only God acts then it would follow that physical things don't have any existence
 
 [00:02:59] distinct from God's existence occasionalism would collapse into pantheism so in our current question what Aquinas is trying to prove is that things actually act themselves on other things that it is actually fire that heats that it is the stone which pushes the glass beverage off the table now all of this Probably sounds pretty straightforward but it can get surprisingly complicated so before diving into the details of the article
 
-[00:03:31] I'd like to translate Aquinas's terms here into a 21st century scientific context so that they are easier for us living in the 21st century to grasp and I owe a lot of what I'm about to say to the very impressive work of Dr Thomas mlin so let us continue with the stone for example held in my hand above the ground science says that it has a kind of gravitational potential energy all that means for our intensive purposes is that the stone has the potential to fall
+[00:03:31] I'd like to translate Aquinas's terms here into a 21st century scientific context so that they are easier for us living in the 21st century to grasp and I owe a lot of what I'm about to say to the very impressive work of Dr. Thomas McLaughlin so let us continue with the stone for example held in my hand above the ground science says that it has a kind of gravitational potential energy all that means for our intensive purposes is that the stone has the potential to fall
 
 [00:04:04] towards the Earth but it doesn't actually have that energy of motion what we call kinetic energy until I let it go and it begins falling so in this scenario we can identify three things first the stone second gravitational potential energy and third the possible future future kinetic energy the energy of motion now in Aquinas's terms those
 

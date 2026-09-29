@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-148 - Judgement - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/148, pars/2, q/60-61]
-last_qc_at: "2026-09-18T20:20:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-28T16:17:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 148 — Judgement
@@ -81,7 +81,7 @@ last_qc_outcome: "pass"
 ## Notes
 
 - Commutative (arithmetical, one-to-one) vs distributive (proportional, whole-to-part) justice (a.1–2) — the central distinction of the treatise. Distributive justice is explicitly proportional: more goes to those with a “more prominent position in the community.”
-- “Interpret doubt for the best” (a.4): the asymmetry argument — since any judgment under uncertainty may err, it is better to err toward the charitable reading. A normative prior on social inference; ripe for the active-inference and positivity-resonance hooks.
+- “Interpret doubt for the best” (a.4): the asymmetry argument — since any judgment under uncertainty may err, it is better to err toward the charitable reading.
 - Judgment from suspicion (a.3): suspicion arises from one’s own vice projected outward, from wanting the other guilty, or from experience of signs. Inference about persons is biased by the perceiver’s own state — perspective-limitation made concrete.
 - Distributive justice as whole-to-part ordering (a.1): “the order of the whole towards the parts.” The part–whole architecture again — common goods flow to parts in proportion to their relation to the whole.
 - Retaliation must account for harm to dignity / office and to the common good, not just the bare act (a.4) — justice tracks relational position, not only the physical exchange.
