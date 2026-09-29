@@ -5,17 +5,39 @@
   // the same attribution rule the charts draw with, so a row of the heatmap
   // and a cut on the graph are one set, never two approximations of it.
   if (window.C2A2Plot && window.C2A2Plot.panel) { return; }
-  if (typeof LINKS === 'undefined' || typeof edgePassesCuts !== 'function') return;
+  // THE SOURCE (step 5, 2026-09-29): everything below reads the graph through
+  // this one object, never through a page's globals. The Sociogram's globals
+  // are one source; any tab can offer another as window.c2a2PlotSource():
+  //   { nodes: [{id, group, date}], links: [{source, target (node objects),
+  //     type, layer?, strength?, sig_date?, home?}],
+  //     active?() -> {nodes, links} (the view; absent = the view IS the corpus),
+  //     passes?(e), searchCut?() -> {ids, query}, since?() -> 'YYYY-MM-DD',
+  //     stamp?() -> anything that changes when the view does,
+  //     cuts?: false (the tab cannot be cut from the chart -- clicks say so) }
+  // Attribution to thinkers is by slug in the node id (traditions/<slug>/...)
+  // or group 'traditions/<slug>' -- one rule for every source.
+  function sociogramSource(){ return { kind:'sociogram', nodes:NODES, links:LINKS,
+    active:function(){ return {nodes:activeNodes, links:activeLinks}; },
+    passes:function(e){ return edgePassesCuts(e); },
+    searchCut:function(){ return (typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT&&SEARCH_CUT.ids)?{ids:SEARCH_CUT.ids,query:SEARCH_CUT.query}:null; },
+    since:function(){ return (typeof dateThreshold!=='undefined'&&dateThreshold)||''; },
+    stamp:function(){ return typeof _lastEdgePass!=='undefined'?_lastEdgePass:''; } }; }
+  var SRC = (typeof LINKS !== 'undefined' && typeof edgePassesCuts === 'function') ? sociogramSource()
+          : (typeof window.c2a2PlotSource === 'function' ? window.c2a2PlotSource() : null);
+  if (!SRC || !Array.isArray(SRC.nodes) || !Array.isArray(SRC.links)) return;
+  var SN = SRC.nodes, SL = SRC.links;
+  function act(){ return SRC.active ? SRC.active() : null; }
+  function sinceOf(){ return SRC.since ? (SRC.since() || '') : ''; }
   var O=["levin","friston","hoffman","kastrup","mcgilchrist","hawkins","wolfram","carroll","arkanihamed","fredrickson","stump","rohr","wright","loughran","macintyre"];
   var TN=["Levin","Friston","Hoffman","Kastrup","McGilchrist","Hawkins","Wolfram","Carroll","Arkani-Hamed","Fredrickson","Stump","Rohr","Wright","Loughran","MacIntyre"];
   var P=O.map(function(t){return new RegExp('(?<![a-z])('+(t==='arkanihamed'?'arkanihamed|arkani-hamed|arkani_hamed':t)+')(?![a-z])');});
   function thOf(str){ var k=[]; str=(str||'').toLowerCase(); P.forEach(function(p,i){ if(p.test(str)) k.push(i); }); return k; }
   function thN(n){ if(n._th) return n._th; var k=thOf(n.id); var g=n.group||''; O.forEach(function(t,i){ if(g==='traditions/'+t && k.indexOf(i)<0) k.push(i); }); n._th=k; return k; }
   function ekind(e){ return e.layer ? ('layer:'+e.layer) : (e.type||'reference'); }
-  var GROUPS=Object.keys(NODES.reduce(function(a,n){ a[n.group||'-']=1; return a; },{})).sort();
-  var KINDS=Object.keys(LINKS.reduce(function(a,e){ a[ekind(e)]=1; return a; },{})).sort();
+  var GROUPS=Object.keys(SN.reduce(function(a,n){ a[n.group||'-']=1; return a; },{})).sort();
+  var KINDS=Object.keys(SL.reduce(function(a,e){ a[ekind(e)]=1; return a; },{})).sort();
   var STRS=['Strong','High','Moderate','Speculative','Unlabeled'];
-  var MONTHS=Object.keys(NODES.reduce(function(a,n){ if(n.date) a[n.date.slice(0,7)]=1; return a; },{})).sort();
+  var MONTHS=Object.keys(SN.reduce(function(a,n){ if(n.date) a[n.date.slice(0,7)]=1; return a; },{})).sort();
 
   // THE SPEC: everything the panel shows is a function of this object. set() is the hook voice/CCL will use.
   var spec={plot:'lego', axis:'thinker', scope:'page', cut:'touching',
@@ -34,14 +56,15 @@
   // so once the shell has spoken (setCut) its word is final, null included.
   // Standalone, the tab's own SEARCH_CUT is all there is.
   var shellCut=null, shellSpoke=false;
-  function curCut(){ if(shellSpoke) return shellCut; return (typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT&&SEARCH_CUT.ids)?{ids:SEARCH_CUT.ids,query:SEARCH_CUT.query}:null; }
+  function curCut(){ if(shellSpoke) return shellCut; return SRC.searchCut ? SRC.searchCut() : null; }
   function edges(){
     var cc=curCut(), out=[], cutIds=(spec.scope==='page'&&cc)?new Set(cc.ids):null;
     var src, live=null;
-    if(spec.scope==='page'){ src=activeLinks; live=new Set(activeNodes.map(function(n){return n.id;})); } else src=LINKS;
+    var A=spec.scope==='page'?act():null;
+    if(A){ src=A.links; live=new Set(A.nodes.map(function(n){return n.id;})); } else src=SL;
     for(var q=0;q<src.length;q++){ var e=src[q], s=e.source, t=e.target;
-      if(typeof s!=='object') s=NODES[s]; if(typeof t!=='object') t=NODES[t]; if(!s||!t) continue; if(e.source!==s||e.target!==t) e={__proto__:e,source:s,target:t};
-      if(live){ if(!edgePassesCuts(e)||!live.has(s.id)||!live.has(t.id)) continue; }
+      if(typeof s!=='object') s=SN[s]; if(typeof t!=='object') t=SN[t]; if(!s||!t) continue; if(e.source!==s||e.target!==t) e={__proto__:e,source:s,target:t};
+      if(live){ if((SRC.passes&&!SRC.passes(e))||!live.has(s.id)||!live.has(t.id)) continue; }
       if(!nodeOk(s)||!nodeOk(t)||!edgeOk(e)||!timeOk(e)) continue;
       if(cutIds){ var hs=cutIds.has(s.id),ht=cutIds.has(t.id); if(spec.cut==='inside'?!(hs&&ht):!(hs||ht)) continue; }
       out.push(e); }
@@ -88,7 +111,7 @@
       var ms=Object.keys(months).sort();
       var data=Object.keys(by).map(function(k){ return {type:'scatter',mode:'lines',stackgroup:'one',name:L[k],x:ms,y:ms.map(function(m){return by[k][m]||0;})}; });
       var lay=base(); lay.showlegend=true; lay.legend={font:FONT}; lay.margin={l:50,r:10,t:10,b:40};
-      var since=(spec.scope==='page'&&typeof dateThreshold!=='undefined'&&dateThreshold)?dateThreshold.slice(0,7):'';
+      var since=(spec.scope==='page'&&sinceOf())?sinceOf().slice(0,7):'';
       if(since&&ms.length) lay.shapes=[{type:'rect',xref:'x',yref:'paper',x0:ms[0],x1:since,y0:0,y1:1,fillcolor:'rgba(0,0,0,0.45)',line:{width:0}}];
       return {n:E.length, data:data, layout:lay}; },
     strength:function(E){ var L=labels(), S={}; STRS.forEach(function(s){ S[s]=new Array(L.length).fill(0); }); var n=0;
@@ -108,7 +131,7 @@
   // (parsed by CommandLine.parseFacet in the shell). Returns {ids, edges?, label}
   // or {error}. Node facets select nodes; edge facets (kind, strength, pair)
   // select the ENDPOINTS of the matching edges and say how many edges that was.
-  function nodeOf(x){ return (typeof x==='object')?x:NODES[x]; }
+  function nodeOf(x){ return (typeof x==='object')?x:SN[x]; }
   function resolveThinker(v){ v=String(v||'').toLowerCase().replace(/[^a-z]/g,''); var i=O.indexOf(v); if(i<0) i=TN.map(function(t){return t.toLowerCase().replace(/[^a-z]/g,'');}).indexOf(v); return i; }
   function resolveGroup(v){ v=String(v||'').toLowerCase(); var g=GROUPS.filter(function(x){ var l=x.toLowerCase(); return l===v||l.split('/').pop()===v; }); return g.length?g:null; }
   function resolveKind(v){ v=String(v||'').toLowerCase().replace(/s$/,''); var k=KINDS.filter(function(x){ var l=x.toLowerCase(), b=l.replace(/^layer:/,''); return l===v||b===v; }); return k.length?k:null; }
@@ -122,12 +145,12 @@
   function facetOne(f){
     var ids=[], seen={}, ne=0; function add(n){ if(n&&n.id&&!seen[n.id]){ seen[n.id]=1; ids.push(n.id); } }
     if(f.facet==='thinker'){ var ti=resolveThinker(f.value); if(ti<0) return {error:'no thinker called "'+f.value+'" (thinkers: '+O.join(', ')+')'};
-      NODES.forEach(function(n){ if(thN(n).indexOf(ti)>=0) add(n); }); return {ids:ids,label:TN[ti]}; }
+      SN.forEach(function(n){ if(thN(n).indexOf(ti)>=0) add(n); }); return {ids:ids,label:TN[ti]}; }
     if(f.facet==='group'){ var g=resolveGroup(f.value); if(!g) return {error:'no node group called "'+f.value+'"'};
-      NODES.forEach(function(n){ if(g.indexOf(n.group||'-')>=0) add(n); }); return {ids:ids,label:g.join(', ')}; }
+      SN.forEach(function(n){ if(g.indexOf(n.group||'-')>=0) add(n); }); return {ids:ids,label:g.join(', ')}; }
     if(f.facet==='month'||f.facet==='since'||f.facet==='until'){ var m=String(f.value||'');
       if(!/^\d{4}-\d{2}$/.test(m)) return {error:f.facet+':'+m+' needs a month like 2026-08'};
-      NODES.forEach(function(n){ var d=(n.date||'').slice(0,7); if(!d) return; if(f.facet==='month'?d===m:(f.facet==='since'?d>=m:d<=m)) add(n); });
+      SN.forEach(function(n){ var d=(n.date||'').slice(0,7); if(!d) return; if(f.facet==='month'?d===m:(f.facet==='since'?d>=m:d<=m)) add(n); });
       return {ids:ids,label:f.facet+' '+m}; }
     var test=null, label='';
     if(f.facet==='kind'){ var ks=resolveKind(f.value); if(!ks) return {error:'no edge kind called "'+f.value+'" (kinds: '+KINDS.join(', ')+')'};
@@ -139,7 +162,7 @@
       test=function(e,s,t){ return (sideHas(s,e,'s',A)&&sideHas(t,e,'t',B))||(sideHas(s,e,'s',B)&&sideHas(t,e,'t',A)); };
       label=(A.i===B.i&&A.axis===B.axis)?('within '+A.label):(A.label+'-'+B.label+' edges'); }
     else return {error:'unknown facet "'+f.facet+'"'};
-    for(var q=0;q<LINKS.length;q++){ var e=LINKS[q], s=nodeOf(e.source), t=nodeOf(e.target); if(!s||!t) continue; if(test(e,s,t)){ ne++; add(s); add(t); } }
+    for(var q=0;q<SL.length;q++){ var e=SL[q], s=nodeOf(e.source), t=nodeOf(e.target); if(!s||!t) continue; if(test(e,s,t)){ ne++; add(s); add(t); } }
     return {ids:ids,edges:ne,label:label};
   }
   // A '+' conjunction (thinker:levin+month:2026-08) is ONE term: the AND of its facets.
@@ -169,6 +192,7 @@
     var verb=me.shiftKey?'also':(me.altKey?'except':((me.ctrlKey||me.metaKey)?'within':'find'));
     var cmd=verb+' '+term;
     if(pickHook){ try{ pickHook(cmd); }catch(_){} return; }
+    if(SRC.cuts===false){ $('cp-s').textContent='This view cannot be cut from the chart yet ('+cmd+' works on the Sociogram).'; return; }
     var sh=null; try{ if(window.parent!==window && typeof window.parent.CCLRun==='function') sh=window.parent.CCLRun; }catch(_){}
     if(!sh){ $('cp-s').textContent='(cutting from the chart needs the explorer: '+cmd+')'; return; }
     sh(cmd); }
@@ -239,9 +263,9 @@
     Plotly.react($('cp-p'),out.data,out.layout,{displaylogo:false,responsive:true});
     var el=$('cp-p'); if(!el._c2a2Click && el.on){ el.on('plotly_click',onClick); el._c2a2Click=true; }
     var cc=curCut(), cut=(spec.scope==='page'&&cc)?('cut "'+cc.query+'" ('+spec.cut+') · '):'';
-    var tw=[]; if(spec.scope==='page'&&typeof dateThreshold!=='undefined'&&dateThreshold) tw.push('page since '+dateThreshold); if(spec.from||spec.to) tw.push('edges '+(spec.from||'start')+' to '+(spec.to||'now')); var tws=tw.length?tw.join(', ')+' · ':'';
-    $('cp-s').textContent=cut+tws+(spec.scope==='page'?activeNodes.length+' nodes in view · ':'whole corpus · ')+out.n.toLocaleString()+(spec.plot==='strength'?' signals':spec.plot==='timeline'?' edges':' edges between '+(spec.axis==='group'?'groups':'thinkers'))+' · click to cut the graph (shift add, alt remove, ctrl overlap) · '+new Date().toLocaleTimeString(); }
-  function sig(){ return JSON.stringify(spec)+'|'+(spec.scope==='page'?[activeNodes.length,(typeof _lastEdgePass!=='undefined'?_lastEdgePass:''),(function(){ var cc=curCut(); return cc?cc.query+':'+cc.ids.length:''; })(),(typeof dateThreshold!=='undefined'?dateThreshold:'')].join('|'):''); }
+    var tw=[]; if(spec.scope==='page'&&sinceOf()) tw.push('page since '+sinceOf()); if(spec.from||spec.to) tw.push('edges '+(spec.from||'start')+' to '+(spec.to||'now')); var tws=tw.length?tw.join(', ')+' · ':'';
+    $('cp-s').textContent=cut+tws+((spec.scope==='page'&&act())?act().nodes.length+' nodes in view · ':'whole corpus · ')+out.n.toLocaleString()+(spec.plot==='strength'?' signals':spec.plot==='timeline'?' edges':' edges between '+(spec.axis==='group'?'groups':'thinkers'))+' · click to cut the graph (shift add, alt remove, ctrl overlap) · '+new Date().toLocaleTimeString(); }
+  function sig(){ return JSON.stringify(spec)+'|'+(spec.scope==='page'?[(act()?act().nodes.length:SN.length),(SRC.stamp?SRC.stamp():''),(function(){ var cc=curCut(); return cc?cc.query+':'+cc.ids.length:''; })(),sinceOf()].join('|'):''); }
   function tick(){ if(panel.style.display==='none'||!window.Plotly) return; var s=sig(); if(s===last) return; last=s; try{ draw(); }catch(err){ $('cp-s').textContent='plot error: '+err.message; } }
 
   window.C2A2Plot={ panel:panel, refresh:refresh, plots:Object.keys(PLOTS), kinds:KINDS, groups:GROUPS, strengths:STRS, months:MONTHS,
@@ -256,7 +280,7 @@
       cells.sort(function(x,y){ return y.n-x.n; });
       return {edges:E.length, attributed:r.n, axis:spec.axis, top:cells.slice(0,k)}; },
     set:function(p){ Object.keys(p||{}).forEach(function(k){ if(k in spec) spec[k]=p[k]; }); show(); return this.get(); },
-    show:show, chartState:function(){ return plotlyState; },
+    show:show, chartState:function(){ return plotlyState; }, source:SRC.kind||'tab',
     setCut:function(c){ shellSpoke=true; var nc=(c&&c.ids&&c.ids.length)?{ids:c.ids.slice(),query:c.query||''}:null;
       if(JSON.stringify(nc&&[nc.query,nc.ids.length])!==JSON.stringify(shellCut&&[shellCut.query,shellCut.ids.length])){ shellCut=nc; } },
     thinkers:O.slice(), thinkerNames:TN.slice(),

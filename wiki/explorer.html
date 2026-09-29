@@ -2866,7 +2866,7 @@ var VoiceGuide = (function() {
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
 <script src="lib/c2a2-commandline.js?v=d00839994f"></script>
-<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=79690c1ad5">
+<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=6da3888f61">
 <script>
 /* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
    panel reads the page's own graph state (LINKS, activeNodes, cuts). Only the
@@ -2879,7 +2879,8 @@ var VoiceGuide = (function() {
     var f = document.getElementById('content-frame');
     try {
       var w = f.contentWindow;
-      return (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') ? w : null;
+      if (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') { return w; }
+      return (typeof w.c2a2PlotSource === 'function') ? w : null;   /* any tab that offers a plot source (step 5) */
     } catch (e) { return null; }
   }
   /* a tab (re)load discards any panel, so the button's lit state must go too --
@@ -2901,7 +2902,7 @@ var VoiceGuide = (function() {
   b.addEventListener('click', function () {
     var w = tabWin();
     if (!w) {
-      b.textContent = 'Plots: Sociogram only';
+      b.textContent = 'Plots: nothing to plot on this view';
       setTimeout(function () { b.textContent = 'Plots'; }, 2200);
       return;
     }
@@ -5355,8 +5356,11 @@ var VoiceGuide = (function() {
   // result carries `pending`, which the planner and the guide wait for.
   function plotTabWin() {
     var w = ifWin();
-    try { return (w && w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') ? w : null; }
-    catch (e) { return null; }
+    try {
+      if (!w) { return null; }
+      if (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') { return w; }
+      return (typeof w.c2a2PlotSource === 'function') ? w : null;   // step 5: any tab offering a plot source
+    } catch (e) { return null; }
   }
   function plotApi() { var w = plotTabWin(); return (w && w.C2A2Plot && w.C2A2Plot.panel) ? w.C2A2Plot : null; }
   // The model half of the plots script (facets, attribution) -- same object.
@@ -5375,7 +5379,7 @@ var VoiceGuide = (function() {
     if (P) { P.subscribe(onPlotHand); return Promise.resolve(P); }
     if (plotLoading) { return plotLoading; }
     var w = plotTabWin();
-    if (!w) { return Promise.reject(new Error('only the Sociogram has a graph to plot')); }
+    if (!w) { return Promise.reject(new Error('this view offers nothing to plot')); }
     plotLoading = new Promise(function (resolve, reject) {
       var sc = w.document.createElement('script');
       sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
@@ -5434,7 +5438,7 @@ var VoiceGuide = (function() {
   }
   function execPlot(p) {
     var tabKey = TAB;
-    if (!plotTabWin()) { return show('plot: only the Sociogram has a graph to plot. Say "go sociogram" first.', 'err'); }
+    if (!plotTabWin()) { return show('plot: this view offers nothing to plot. The Sociogram and the Narrative Connectome do.', 'err'); }
     var P = plotApi();
     if (P) { P.subscribe(onPlotHand); return applyPlot(P, p, tabKey); }
     if (/^\s*(off|close|hide)\s*$/i.test(p.text || '')) { return show('plot off (it was not open)', 'ok'); }

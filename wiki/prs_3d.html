@@ -1881,6 +1881,37 @@ buildZAxis();
 buildTraditionFilters();
 prsBuildDisciplineFilters();
 prsBuildYearFilters();
+
+// ── PLOT SOURCE (2026-09-29) ── for the explorer shell's Plots panel
+// (wiki/lib/c2a2-plots.js reads this; it never reaches into the page itself).
+// Data only: one hub per thinker; every PRS triplet linked to its thinker and
+// dated by the triplet; every cross-connection and finding linked between each
+// pair of programs it names. Cross-connections carry a year and no month, so
+// they stay UNDATED rather than being given an invented one. This view cannot
+// be cut from a chart yet (no find contract), so `cuts: false` -- clicks say so.
+window.c2a2PlotSource = function () {
+  var slug = function (p) { return String(p || '').toLowerCase().replace(/\s+agent\s*$/, '').replace(/[^a-z]/g, ''); };
+  var nodes = [], links = [], hub = {};
+  function hubOf(s) {
+    if (!hub[s]) { hub[s] = { id: 'traditions/' + s, group: 'traditions/' + s, date: '' }; nodes.push(hub[s]); }
+    return hub[s];
+  }
+  PRS_TRIPLETS.forEach(function (t) {
+    var d = String(t.date || t.first_seen || '').slice(0, 10);
+    var n = { id: 'traditions/' + t.thinker + '/' + t.id, group: 'prs/' + String(t.confidence || 'unlabeled').toLowerCase(), date: d };
+    nodes.push(n);
+    links.push({ source: n, target: hubOf(t.thinker), type: 'prs', sig_date: d });
+  });
+  function pairs(list, type, date) {
+    var ps = String(list || '').split(',').map(slug).filter(Boolean);
+    for (var i = 0; i < ps.length; i++) {
+      for (var j = i + 1; j < ps.length; j++) { links.push({ source: hubOf(ps[i]), target: hubOf(ps[j]), type: type, sig_date: date || '' }); }
+    }
+  }
+  CROSS_CONNECTIONS.forEach(function (c) { pairs(c.programs, 'cross', ''); });
+  FINDINGS.forEach(function (f) { pairs(f.programs, 'finding', String(f.date || '').slice(0, 10)); });
+  return { kind: 'connectome', nodes: nodes, links: links, cuts: false };
+};
 </script>
 </body>
 </html>

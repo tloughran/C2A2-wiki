@@ -2715,6 +2715,35 @@ async function main() {
   await runCmdAwait('plot reset');
   await runCmdAwait('plot off');
 
+
+  // ---- Phase R: plots on a second tab -- the Narrative Connectome (step 5) --
+  // WHY: the plots engine used to read the Sociogram's globals directly, so it
+  // could exist on one tab only. Now a tab offers window.c2a2PlotSource() and
+  // the engine reads only that. Rows fail if the Connectome's plot is not built
+  // from its OWN data (a count is checked against the page's FINDINGS array,
+  // computed independently here), or if a click pretends to cut a view that
+  // cannot be cut.
+  process.stdout.write('\nPhase R -- plots on the Narrative Connectome\n');
+  await activateTab(page, 'prs_3d.html'); await sleep(6000);
+  let r0 = false;
+  for (let i = 0; i < 40 && !r0; i++) { r0 = await page.eval(IFRAME_DOC + "return !!(w.C2A2Plot && w.C2A2Plot.source === 'connectome');"); if (!r0) { await sleep(250); } }
+  record('R0 the Connectome offers a plot source, and the shell installs the model when the tab loads', r0, String(r0));
+  const r1 = await runCmdAwait('plot heatmap by thinker corpus all edges');
+  record('R1 plot works on a second tab, from that tab\'s own data', r1.ok && r1.plot && r1.plot.edges > 900 && r1.verify && r1.verify.ok, r1.spoken);
+  const findPairs = await page.eval(IFRAME_DOC + "var n = 0; w.eval('FINDINGS').forEach(function (f) { var k = String(f.programs || '').split(',').filter(function (x) { return x.trim(); }).length; n += k * (k - 1) / 2; }); return n;");
+  const r2 = await runCmdAwait('plot edges finding');
+  record('R2 the count it speaks is the page\'s own: finding edges == pairs named in FINDINGS', r2.ok && r2.plot && r2.plot.edges === findPairs && findPairs > 0,
+    'plot ' + (r2.plot && r2.plot.edges) + ' vs page ' + findPairs);
+  const rTop = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  let rDrawn = false;
+  for (let i = 0; i < 60 && !rDrawn; i++) { rDrawn = await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); return !!(el && el.querySelector('.main-svg'));"); if (!rDrawn) { await sleep(250); } }
+  await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); el.emit('plotly_click', { points: [{ x: 'Friston', y: 'Levin' }], event: {} }); return true;");
+  const rMsg = await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent;");
+  const rTop2 = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('R3 a click on a view that cannot be cut SAYS so, and changes nothing', rDrawn && /cannot be cut from the chart yet/.test(rMsg) && JSON.stringify(rTop) === JSON.stringify(rTop2), rMsg.slice(0, 120));
+  await runCmdAwait('plot all edges');
+  await runCmdAwait('plot off');
+
   await activateTab(page, 'metabolism/metabolism_view.html'); await sleep(4000);
   const bareOff = await runCmd(page, 'levin');
   record('X9b on a view without find, a bare string is still an unknown command', /Unknown command/.test(bareOff.spoken || ''), bareOff.spoken);

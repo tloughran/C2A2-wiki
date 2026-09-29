@@ -1714,7 +1714,8 @@
         "redo",
         "reset",
         "restore",
-        "spin"
+        "spin",
+        "plot"
       ],
       "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. The FILTER dimension is declared too (see `filters`), so this tab cuts data by voice on all three of its axes. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
       "knobs": [
@@ -1854,6 +1855,11 @@
         "_label_note": "222 OF THE 453 NARRATIVES HAVE NO LABEL AT ALL -- the field is present and empty in the source data, and the page's own info panel opens with a blank <h3> for them. Without the fallback the guide skipped every one: it said \"231 narratives here\" over a tab drawing 453, and half the artifact was unreachable by voice because of a gap in the data rather than anything about the tab. The fallback is the narrative's PROBLEM, clipped: it is always present, it is what the node actually is, and it is the one string a user could plausibly say back (\"open positive geometry\"). Clipping can make two narratives share a handle; matchItems then names both and asks, which is the right failure. Fixing the underlying data is a job for the generator, not for the guide -- but the guide must not pretend the unnamed ones are not there."
       },
       "dim_coverage": [
+        {
+          "dim": "plot",
+          "match": "#cp-plot, #cp-axis, #cp-scope, #cp-cut, #cp-from, #cp-to, #cp-kinds input, #cp-groups input, #cp-str input, #cp-kinds a, #cp-groups a, #cp-str a, #cp-x",
+          "note": "the plots panel, installed by the shell because this page offers window.c2a2PlotSource (step 5, 2026-09-29): every control writes C2A2Plot spec, which `plot` reads and writes"
+        },
         {
           "dim": "selection",
           "match": "#info-panel .close-btn",
