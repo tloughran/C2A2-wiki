@@ -1048,6 +1048,33 @@
     return { system: system, user: parts.join('\n\n') };
   }
 
+  // A PROMPT THAT FITS (2026-09-29). The broker refuses a request over its
+  // limit (413), and a refused request is worse than a trimmed one. Grounding
+  // for one named pair is already ~17 KB. So: never send more than `max`
+  // characters of system+user. Trim in a fixed order -- the text returned by
+  // earlier commands, then the tail of the grounding, then page knowledge --
+  // and record every trim in `trimmed`, which the caller shows. null means it
+  // could not be made to fit at all.
+  const PLAN_PROMPT_MAX = 56000;   // chars; the broker allows 64 KB for the answer model, leaving room for JSON escaping
+  function fitPlanPrompt(o, max, trimmed) {
+    const size = function (p) { return p.system.length + p.user.length; };
+    const note = function (t) { if (trimmed.indexOf(t) < 0) { trimmed.push(t); } };
+    let p = buildPlanPrompt(o);
+    if (size(p) <= max) { return p; }
+    if (o.results && o.results.some(function (r) { return r.text && r.text.length > 1500; })) {
+      o = Object.assign({}, o, { results: o.results.map(function (r) { return r.text ? Object.assign({}, r, { text: r.text.slice(0, 1500) + ' [...]' }) : r; }) });
+      note('text returned by commands'); p = buildPlanPrompt(o);
+      if (size(p) <= max) { return p; }
+    }
+    [['grounding', 'grounding'], ['knowledge', 'page knowledge']].forEach(function (kv) {
+      if (size(p) <= max || !o[kv[0]]) { return; }
+      const full = o[kv[0]], keep = Math.max(0, full.length - (size(p) - max) - 200);
+      o = Object.assign({}, o); o[kv[0]] = full.slice(0, keep) + '\n[' + kv[1].toUpperCase() + ' TRIMMED TO FIT: ' + keep + ' of ' + full.length + ' characters]';
+      note(kv[1] + ' (' + keep + ' of ' + full.length + ' characters kept)'); p = buildPlanPrompt(o);
+    });
+    return size(p) <= max ? p : null;
+  }
+
   // The model's reply -> {ok, goal, commands, dropped, answer} or {ok:false, error}.
   // Tolerates code fences and prose around the object; nothing else.
   function parsePlan(text) {
@@ -1217,12 +1244,13 @@
   // returned as `failed`, so the caller shows them whatever the model writes.
   async function runPlan(request, deps) {
     const maxRounds = deps.maxRounds || 3;
-    const trace = [];
+    const trace = [], trimmed = [];
     let results = [], model = '', answer = '', calls = 0;
     for (let round = 1; round <= maxRounds; round++) {
       const lastRound = round === maxRounds;
-      const prompt = buildPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
-                                       results: results, round: round - 1, lastRound: lastRound && round > 1 });
+      const prompt = fitPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
+                                     results: results, round: round - 1, lastRound: lastRound && round > 1 }, deps.maxPromptChars || PLAN_PROMPT_MAX, trimmed);
+      if (!prompt) { return { ok: false, error: 'the request is too large to send even after trimming', trace: trace, calls: calls, model: model, failed: [], trimmed: trimmed }; }
       const reply = await deps.ask(prompt);
       calls++;
       if (reply && reply.model) { model = reply.model; }
@@ -1246,7 +1274,7 @@
     }
     const lastRoundNo = trace.length ? trace[trace.length - 1].round : 0;
     const failed = trace.filter(function (t) { return t.round === lastRoundNo && (!t.ok || t.problems.length); });
-    return { ok: true, answer: answer, trace: trace, calls: calls, model: model, failed: failed };
+    return { ok: true, answer: answer, trace: trace, calls: calls, model: model, failed: failed, trimmed: trimmed };
   }
 
   // ---- PLAN MEMORY (step 4, 2026-09-29): learn from verified runs ----------
@@ -1488,6 +1516,7 @@
     storablePlan: storablePlan,
     replayPlan: replayPlan,
     planExamplesText: planExamplesText,
+    fitPlanPrompt: fitPlanPrompt,
     verifyPlot: verifyPlot,
     describePlot: describePlot,
     PLOT_DEFAULTS: PLOT_DEFAULTS,

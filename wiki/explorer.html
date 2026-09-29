@@ -2865,7 +2865,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=d00839994f"></script>
+<script src="lib/c2a2-commandline.js?v=d5c894cb61"></script>
 <link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=931d9e6360">
 <script>
 /* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
@@ -6265,6 +6265,7 @@ var VoiceGuide = (function() {
       h += '<br><span style="color:#C45B5B">Not as asked: ' + res.failed.map(function (t) { return esc(t.cmd + ': ' + (t.problems.join('; ') || t.spoken)); }).join(' | ') + '</span>';
     }
     if (res.sources && res.sources.length) { h += (h ? '<br>' : '') + 'Grounded in: ' + res.sources.map(esc).join(', '); }
+    if (res.trimmed && res.trimmed.length) { h += (h ? '<br>' : '') + '<span style="color:#C08B3E">Trimmed to fit the request limit: ' + res.trimmed.map(esc).join('; ') + '</span>'; }
     if (res.remembered) { h += (h ? '<br>' : '') + 'Helped by ' + res.remembered + ' verified plan' + (res.remembered === 1 ? '' : 's') + ' from earlier sessions.'; }
     return h + '<br>planned and answered' + (res.model ? ' (' + esc(res.model) + ', ' + res.calls + ' call' + (res.calls === 1 ? '' : 's') + ')' : '') +
       '<br><span style="opacity:.7">Requests are kept without anything that identifies you (emails, links and long numbers removed) so verified plans can help the next person. Answers are not kept.</span>';

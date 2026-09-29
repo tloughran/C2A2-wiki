@@ -1338,6 +1338,28 @@ acheck('memory: the examples reach EVERY planner round', async function () {
   assert.ok(m.seen.length === 2 && m.seen.every(function (p) { return /EXMARK/.test(p.user); }));
 });
 
+
+// ---- PROMPT BUDGET (2026-09-29): a refused request is worse than a trimmed one ----
+acheck('budget: an oversized planner request is trimmed to fit, grounding tail first, and the trim is REPORTED', async function () {
+  const m = fakeModel([{ goal: 'g', commands: [], answer: 'A.' }]);
+  const big = 'G'.repeat(90000);
+  const res = await CCL.runPlan('levin and friston', { state: function () { return 'S'; }, run: function () { return {}; }, ask: m.ask,
+    verbs: 'v', knowledge: 'K'.repeat(3000), grounding: big });
+  const sent = m.seen[0].system.length + m.seen[0].user.length;
+  assert.ok(sent <= 56000, 'sent ' + sent + ' chars');
+  assert.ok(/GROUNDING TRIMMED TO FIT/.test(m.seen[0].user), 'the model is told it saw only part');
+  assert.ok(res.trimmed.some(function (t) { return /^grounding \(\d+ of 90000/.test(t); }), JSON.stringify(res.trimmed));
+  assert.ok(/K{3000}/.test(m.seen[0].user), 'page knowledge is kept while trimming grounding suffices');
+});
+check('budget: a prompt that fits is sent untouched', function () {
+  const tr = [];
+  const p = CCL.fitPlanPrompt({ request: 'r', state: 's', verbs: '', grounding: 'GROUND', results: [] }, 56000, tr);
+  assert.ok(/GROUND/.test(p.user) && tr.length === 0);
+});
+check('budget: what cannot be made to fit returns null (the caller says so), never a silent over-limit send', function () {
+  assert.strictEqual(CCL.fitPlanPrompt({ request: 'x'.repeat(70000), state: 's', verbs: '', results: [] }, 56000, []), null);
+});
+
 // ---- report -----------------------------------------------------------------
 
 (async function () {

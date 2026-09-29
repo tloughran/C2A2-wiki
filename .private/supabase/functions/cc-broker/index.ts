@@ -82,6 +82,13 @@ const DEVICE_DAILY_LIMIT     = 50;                    // free-pool asks per devi
 const GLOBAL_DAILY_CENTS_CAP = 500;                   // circuit-breaker: $5/day → ~$150/mo ceiling — research-tier (was 40)
 const IP_DAILY_CAP           = 500;                   // backstop against device-UUID cycling — scaled with DEVICE_DAILY_LIMIT (was 100)
 const MAX_BODY_BYTES         = 32 * 1024;             // 32 KB — ranking payloads (60 candidates × ~410B) routinely hit ~25 KB; cost is bounded by GLOBAL_DAILY_CENTS_CAP, not payload size
+// v17b (2026-09-29): grounded planner calls (model "answer") carry a bridge-
+// essay excerpt + PRS + signals + page knowledge + verified state -- ~27 KB in
+// round 1 for "Levin and Friston" before page knowledge, so the 32 KB ranking
+// cap refused them (413). The answer model alone gets 64 KB on `enrich`;
+// every other action and model keeps 32 KB. Cost stays metered per call (max
+// of table and OpenRouter's usage.cost): 64 KB ~ 16k tokens -> ~3c in + <=1.5c out.
+const MAX_ANSWER_BODY_BYTES  = 64 * 1024;
 
 // web_enrich tunables — separate budget so web search caps don't starve dataset enrichment
 const WEB_DEVICE_DAILY_LIMIT     = 20;    // web_enrich asks per device per day
@@ -361,7 +368,7 @@ Deno.serve(async (req) => {
 
   // Body size guard before parsing
   const contentLength = parseInt(req.headers.get("content-length") ?? "0", 10);
-  if (contentLength > MAX_BODY_BYTES) {
+  if (contentLength > MAX_ANSWER_BODY_BYTES) {   // the tighter per-action limits follow below
     return json(413, { error: "payload_too_large" }, origin);
   }
 
@@ -385,6 +392,11 @@ Deno.serve(async (req) => {
     Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
     { auth: { persistSession: false } },
   );
+
+  // Only `enrich` with the answer model may send up to 64 KB (checked there).
+  if (contentLength > MAX_BODY_BYTES && body.action !== "enrich" && body.action !== undefined) {
+    return json(413, { error: "payload_too_large" }, origin);
+  }
 
   // ---- IP backstop (runs for every action) ----
   const ip       = clientIp(req);
@@ -415,11 +427,12 @@ Deno.serve(async (req) => {
     if (typeof body.system !== "string" || typeof body.user !== "string") {
       return json(400, { error: "bad_prompt" }, origin);
     }
-    if (body.system.length + body.user.length > MAX_BODY_BYTES) {
-      return json(413, { error: "prompt_too_large" }, origin);
-    }
     const rm = resolveModel(body.model);
     if ("error" in rm) return json(400, { error: rm.error, allowed: [...Object.keys(MODEL_ALIASES), ...Object.keys(MODEL_PRICES)] }, origin);
+    const promptCap = rm.model === ANSWER_MODEL ? MAX_ANSWER_BODY_BYTES : MAX_BODY_BYTES;
+    if (body.system.length + body.user.length > promptCap) {
+      return json(413, { error: "prompt_too_large", limit: promptCap }, origin);
+    }
 
     // Read today's usage
     const { data: usage, error: useErr } = await sb.rpc("get_usage", { p_device_id: deviceId });
