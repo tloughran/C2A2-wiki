@@ -2275,10 +2275,19 @@ async function main() {
     "window.VoiceGuide.speech.arm(dest.stream);" +
     "var p = [c.resume()]; if (window.audioCtx) { p.push(window.audioCtx.resume()); }" +
     "return Promise.all(p).then(function () { return true; });");
-  await sleep(400);
-  const wRms = await page.eval("return window.VoiceGuide.speech.rms();");
+  // WAIT FOR THE AUDIO GRAPH TO GO LIVE, THEN MEASURE. A fixed 400ms sleep was
+  // a race: on a loaded page the analyser still reads silence for ~1s after
+  // arm() (the 09-28 run read 0 at W2/W3 and 0.99 at W3b, same stream). Poll up
+  // to 3s; a meter that never goes live still fails, and the latency is
+  // reported so a slowdown stays visible.
+  let wRms = null, wLiveMs = 0;
+  for (; wLiveMs <= 3000; wLiveMs += 100) {
+    wRms = await page.eval("return window.VoiceGuide.speech.rms();");
+    if (typeof wRms === 'number' && wRms > 0.012) { break; }
+    await sleep(100);
+  }
   record('W2 armed on a real stream, the meter reads a real number',
-    typeof wRms === 'number' && wRms > 0.012, String(wRms));
+    typeof wRms === 'number' && wRms > 0.012, String(wRms) + ' after ~' + wLiveMs + 'ms');
 
   await page.eval("window.VoiceGuide.speech.start(); return true;");
   await sleep(300);
@@ -2582,9 +2591,74 @@ async function main() {
   record('Y6 with nothing cut, within/except refuse plainly instead of cutting to empty', !y7.ok && /no search cut is standing/.test(y7.spoken || ''), y7.spoken);
   await runCmd(page, 'clear');
 
+
+  // ---- Phase P: plots join the shell's state (step 1, 2026-09-29) ---------
+  // WHY: the plot panel kept its own settings where nothing else could see
+  // them -- not undo, not `what`, not the voice guide, not the planner. Each
+  // row fails if a plot command changes the picture without the journal
+  // knowing, if a misunderstood word changes anything at all, if the panel
+  // holds something other than what was asked, or if a hand change on the
+  // panel escapes undo. Needs Plotly from cdnjs (the Mac run has network).
+  process.stdout.write('\nPhase P -- plots through the one road\n');
+  const runCmdAwait = function (cmd) {
+    return page.eval(
+      "var r0 = window.CCLRun(" + JSON.stringify(cmd) + ");" +
+      "return Promise.resolve(r0 && r0.pending ? r0.pending : r0).then(function (r) {" +
+      "  return { spoken: (r && r.spoken) || null, ok: !!(r && r.ok), verify: (r && r.verify) || null, plot: (r && r.plot) || null," +
+      "           interim: (r0 && r0.pending) ? r0.spoken : null }; });");
+  };
+  const plotSpec = async function () { return await page.eval(IFRAME_DOC + "return (w.C2A2Plot && w.C2A2Plot.visible()) ? w.C2A2Plot.get() : null;"); };
+  const plotBtnOn = async function () { return await page.eval("var b = document.getElementById('btn-plots'); return !!(b && b.classList.contains('on'));"); };
+  await runCmd(page, 'clear');
+  const p1 = await runCmdAwait('plot heatmap by thinker');
+  const s1 = await plotSpec();
+  record('P1 the first plot loads the panel, then reports the finished, VERIFIED result -- not the loading line',
+    p1.ok && /^plot heatmap by thinker/.test(p1.spoken || '') && p1.verify && p1.verify.ok === true && !!p1.interim && s1 && s1.plot === 'heatmap',
+    (p1.interim || '(no interim)') + ' => ' + p1.spoken);
+  record('P1a the result carries the computed numbers the chart is drawn from',
+    !!(p1.plot && p1.plot.edges > 0 && p1.plot.top.length > 0 && /\d+ edges; most: /.test(p1.spoken || '')), JSON.stringify(p1.plot && { edges: p1.plot.edges, top: p1.plot.top.slice(0, 2) }));
+  const pDrawn = await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); return !!(el && el.querySelector('.main-svg'));");
+  record('P1b the chart is actually drawn, and the Plots button shows it is open', pDrawn && (await plotBtnOn()), 'svg ' + pDrawn);
+  const p2 = await runCmdAwait('plot edges signal strength strong high');
+  const s2 = await plotSpec();
+  record('P2 a narrowing lands in the panel exactly as asked, and the count falls',
+    p2.ok && s2 && JSON.stringify(s2.kinds) === '["signal"]' && s2.strengths.slice().sort().join() === 'High,Strong' && s2.plot === 'heatmap' &&
+    p2.plot && p1.plot && p2.plot.edges < p1.plot.edges,
+    (p1.plot && p1.plot.edges) + ' -> ' + (p2.plot && p2.plot.edges) + ' | ' + p2.spoken);
+  const p3 = await runCmdAwait('plot sankey banana');
+  const s3 = await plotSpec();
+  record('P3 one word not understood: refused by name, and NOTHING changed', !p3.ok && /banana/.test(p3.spoken || '') && /Nothing changed/.test(p3.spoken || '') &&
+    JSON.stringify(s3) === JSON.stringify(s2), p3.spoken);
+  const p4 = await runCmd(page, 'undo');
+  const s4 = await plotSpec();
+  record('P4 undo restores the whole prior plot, lists included', /undid \(plot\)/.test(p4.spoken || '') && s4 && s4.kinds.length === s1.kinds.length && s4.strengths.length === s1.strengths.length,
+    p4.spoken + ' | kinds ' + (s4 && s4.kinds.length));
+  const p5 = await runCmd(page, 'what');
+  record('P5 `what` names the open plot', /plot: heatmap by thinker/.test(p5.spoken || ''), (p5.spoken || '').slice(-160));
+  await page.eval(IFRAME_DOC + "var sel = d.getElementById('cp-plot'); sel.value = 'totals'; sel.dispatchEvent(new Event('change')); return true;");
+  const jTop = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  const p6 = await runCmd(page, 'undo');
+  const s6 = await plotSpec();
+  record('P6 a HAND change on the panel is journaled, and undo reverses it', !!(jTop && jTop.dim === 'plot' && jTop.after && jTop.after.plot === 'totals') && s6 && s6.plot === 'heatmap',
+    JSON.stringify(jTop && { dim: jTop.dim, after: jTop.after && jTop.after.plot }) + ' | ' + p6.spoken);
+  await runCmd(page, 'find levin');
+  const p7 = await runCmdAwait('plot');
+  record('P7 the plot follows the search cut: fewer edges, none of them zero', p7.ok && p7.plot && p1.plot && p7.plot.edges > 0 && p7.plot.edges < p1.plot.edges,
+    (p1.plot && p1.plot.edges) + ' -> ' + (p7.plot && p7.plot.edges));
+  await runCmd(page, 'clear');
+  const p8 = await runCmdAwait('plot off');
+  const hidden = (await plotSpec()) === null;
+  const btnOff = !(await plotBtnOn());
+  const p9 = await runCmd(page, 'undo');
+  record('P8 plot off hides it and unlights the button; undo brings it back', p8.ok && hidden && btnOff && (await plotSpec()) !== null && /undid \(plot\)/.test(p9.spoken || ''),
+    p8.spoken + ' | ' + p9.spoken);
+  await runCmdAwait('plot off');
+
   await activateTab(page, 'metabolism/metabolism_view.html'); await sleep(4000);
   const bareOff = await runCmd(page, 'levin');
   record('X9b on a view without find, a bare string is still an unknown command', /Unknown command/.test(bareOff.spoken || ''), bareOff.spoken);
+  const pOff = await runCmd(page, 'plot heatmap');
+  record('P9 where there is no graph, plot is refused plainly', !pOff.ok && /Not available on this view/.test(pOff.spoken || ''), pOff.spoken);
 
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });

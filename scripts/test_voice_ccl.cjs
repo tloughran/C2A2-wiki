@@ -569,7 +569,7 @@ check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', f
     summarize: 'summarize',
     show: 'show levin', hide: 'hide levin', only: 'only levin',
     all: 'all', none: 'none', open: 'open ' + DEST.nodes[0].id.replace(/\.md$/, ''), close: 'close',
-    find: 'find x', also: 'also y', except: 'except z', within: 'within w', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',
+    find: 'find x', also: 'also y', except: 'except z', within: 'within w', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit', plot: 'plot heatmap',
     undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore', what: 'what', where: 'where', help: 'help',
   };
   for (const verb of CCL.SOCIOGRAM_CAPS) {
@@ -1171,6 +1171,93 @@ acheck('loop: grounding reaches EVERY round, not only the first', async function
 check('index: the committed grounding.json is current with its sources', function () {
   const r = require('child_process').spawnSync('python3', [path.join(ROOT, 'scripts/build_grounding_index.py'), '--check'], { encoding: 'utf8' });
   assert.strictEqual(r.status, 0, (r.stderr || r.stdout).trim());
+});
+
+
+// ---- PLOT (step 1, 2026-09-29): plots join the shell's state --------------
+// The live panel's own lists, as C2A2Plot exposes them (shape of 2026-09-28).
+const PDIMS = {
+  plots: ['lego', 'heatmap', 'totals', 'timeline', 'strength', 'sankey'],
+  kinds: ['layer:flow', 'layer:projected', 'layer:substrate', 'mention', 'reference', 'signal', 'wikilink'],
+  groups: ['agents', 'architecture', 'inbox', 'master', 'synthesis', 'traditions/friston', 'traditions/levin'],
+  strengths: ['Strong', 'High', 'Moderate', 'Speculative', 'Unlabeled'],
+  months: ['2025-08', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09']
+};
+check('plot: a spoken request becomes one exact patch -- type, axis, lists and time in any order', function () {
+  const r = CCL.parsePlotSpec('heatmap by thinker edges signal strength strong high since august', PDIMS);
+  assert.strictEqual(r.ok, true, JSON.stringify(r));
+  assert.deepStrictEqual(r.patch, { plot: 'heatmap', axis: 'thinker', kinds: ['signal'], strengths: ['Strong', 'High'], from: '2026-08' });
+  const r2 = CCL.parsePlotSpec('since 2026-06 until 2026-07 corpus timeline by group', PDIMS);
+  assert.deepStrictEqual(r2.patch, { from: '2026-06', to: '2026-07', scope: 'corpus', plot: 'timeline', axis: 'group' });
+});
+check('plot: a month named without a year means the most recent one the DATA holds, not the calendar', function () {
+  // "since august" in Sept 2026 over data reaching back to 2025-08 must mean 2026-08.
+  assert.strictEqual(CCL.parsePlotSpec('since august', PDIMS).patch.from, '2026-08');
+  const none = CCL.parsePlotSpec('since march', PDIMS);
+  assert.strictEqual(none.ok, false, 'a month the data does not hold is said, never guessed');
+  assert.ok(/no march/.test(none.problems.join(' ')));
+});
+check('plot: ONE word not understood and NOTHING changes -- a half-applied plot is one nobody asked for', function () {
+  const r = CCL.parsePlotSpec('heatmap by thinker banana', PDIMS);
+  assert.strictEqual(r.ok, false);
+  assert.deepStrictEqual(r.problems, ['banana'], 'the problem names the word, so the listener can repair it');
+  const bad = CCL.parsePlotSpec('lego edges frobnicate', PDIMS);
+  assert.strictEqual(bad.ok, false);
+  assert.ok(/frobnicate/.test(bad.problems[0]));
+  assert.strictEqual(CCL.parsePlotSpec('by colour', PDIMS).ok, false, 'an axis the panel lacks is refused, not defaulted');
+  assert.strictEqual(CCL.parsePlotSpec('since 2026-08 until 2026-06', PDIMS).ok, false, 'a backwards window is refused');
+});
+check('plot: edge kinds resolve by plain name -- "flow" is the layer, "signals" the kind', function () {
+  assert.deepStrictEqual(CCL.parsePlotSpec('edges flow signals', PDIMS).patch.kinds, ['layer:flow', 'signal']);
+  assert.deepStrictEqual(CCL.parsePlotSpec('nodes levin friston', PDIMS).patch.groups, ['traditions/levin', 'traditions/friston']);
+  assert.deepStrictEqual(CCL.parsePlotSpec('all edges', PDIMS).patch.kinds, PDIMS.kinds, '"all edges" restores the full list');
+});
+check('plot: "plot strength" alone is the strength-mix PLOT, not an empty strength filter', function () {
+  assert.deepStrictEqual(CCL.parsePlotSpec('strength', PDIMS).patch, { plot: 'strength' });
+  assert.deepStrictEqual(CCL.parsePlotSpec('signals', PDIMS).patch, { plot: 'strength' });
+});
+check('plot: off / reset / bare are distinct -- hide, defaults, and "open as it was"', function () {
+  assert.strictEqual(CCL.parsePlotSpec('off', PDIMS).off, true);
+  const rs = CCL.parsePlotSpec('reset', PDIMS);
+  assert.strictEqual(rs.reset, true);
+  assert.strictEqual(rs.patch.kinds.length, PDIMS.kinds.length);
+  assert.strictEqual(rs.patch.plot, 'lego');
+  const bare = CCL.parsePlotSpec('', PDIMS);
+  assert.strictEqual(bare.ok, true); assert.deepStrictEqual(bare.patch, {}, 'bare plot changes nothing, only opens');
+});
+check('plot: verify compares what the PANEL HOLDS with what was asked -- lists as sets', function () {
+  const got = { plot: 'heatmap', axis: 'thinker', kinds: ['wikilink', 'signal'] };
+  assert.strictEqual(CCL.verifyPlot({ plot: 'heatmap', kinds: ['signal', 'wikilink'] }, got).ok, true, 'order of a list is not a difference');
+  const v = CCL.verifyPlot({ plot: 'sankey', kinds: ['signal'] }, got);
+  assert.strictEqual(v.ok, false);
+  assert.strictEqual(v.problems.length, 2, 'every field that did not hold is named');
+  assert.strictEqual(CCL.verifyPlot({ plot: 'lego' }, null).ok, false, 'a panel that does not answer is a failure, not a pass');
+});
+check('plot: the description names only what is narrowed, so it can be spoken', function () {
+  const d = CCL.describePlot({ plot: 'heatmap', axis: 'thinker', scope: 'page', cut: 'inside', kinds: ['signal'], groups: PDIMS.groups.slice(),
+    strengths: ['Strong', 'High'], from: '2026-08', to: '' }, PDIMS);
+  assert.strictEqual(d, 'heatmap by thinker | this view (inside the cut) | edges: signal | signals: Strong, High | 2026-08 to now');
+  assert.strictEqual(CCL.describePlot(null, PDIMS), 'plots closed');
+});
+check('plot: the verb plans on the Sociogram and is refused, plainly, where there is no graph to plot', function () {
+  const p = CCL.plan(CCL.parse('plot heatmap by thinker', grammar), { caps: CCL.SOCIOGRAM_CAPS });
+  assert.deepStrictEqual([p.ok, p.kind, p.text], [true, 'plot', 'heatmap by thinker']);
+  assert.strictEqual(CCL.plan(CCL.parse('chart timeline', grammar), { caps: CCL.SOCIOGRAM_CAPS }).kind, 'plot', '"chart" is the same verb');
+  assert.strictEqual(CCL.plan(CCL.parse('plot', grammar), { caps: CCL.SOCIOGRAM_CAPS }).text, '', 'bare plot is allowed');
+  assert.strictEqual(CCL.plan(CCL.parse('plot heatmap', grammar), { caps: CCL.SHELL_CAPS }).error, 'unsupported_here');
+});
+check('plot: the planner is taught the plot grammar and told its numbers are computed', function () {
+  const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', results: [] });
+  assert.ok(/`plot` draws the edges/.test(pr.system));
+  assert.ok(/top pairs -- use those numbers, they are computed/.test(pr.system));
+});
+acheck('plot: a command that finishes LATER (the panel loads first) is judged on its final, verified result', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['plot heatmap'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  const res = await CCL.runPlan('plot it', { state: function () { return 'S'; }, verbs: '', knowledge: '', ask: m.ask,
+    run: function () { return { ok: true, spoken: 'opening plots...', pending: Promise.resolve({ ok: false, spoken: 'plot heatmap', verify: { ok: false, problems: ['plot: asked "heatmap", panel holds "lego"'] } }) }; } });
+  assert.strictEqual(res.trace[0].spoken, 'plot heatmap', 'the interim "opening" line is not what the model is told');
+  assert.deepStrictEqual(res.trace[0].problems, ['plot: asked "heatmap", panel holds "lego"']);
+  assert.strictEqual(res.failed.length, 1, 'the unmet plot survives whatever the model then writes');
 });
 
 // ---- report -----------------------------------------------------------------

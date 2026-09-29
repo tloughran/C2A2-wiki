@@ -650,6 +650,7 @@
     'show', 'hide', 'only', 'all', 'none',
     'open', 'close',
     'find', 'also', 'except', 'within', 'clear', 'focus',
+    'plot',
     'fit', 'zoom', 'pan',
     'pick', 'next', 'previous',
     'read', 'stop', 'summarize',
@@ -781,6 +782,10 @@
         return { ok: true, kind: 'highlight', action: 'compose', verb: op.verb, op: CUT_OPS[op.verb], text: op.args[0], journal: { dim: 'highlight' } };
       case 'clear':
         return { ok: true, kind: 'highlight', action: 'clear', journal: { dim: 'highlight' } };
+      // The words are resolved in the SHELL against the live panel's own lists
+      // (parsePlotSpec needs its dims); plan() only routes.
+      case 'plot':
+        return { ok: true, kind: 'plot', text: op.args[0] || '', journal: { dim: 'plot' } };
       case 'focus': {
         const res = resolveTerms(op.args, ctx.roster);
         if (res.ambiguous) { return res.ambiguous; }
@@ -1017,6 +1022,7 @@
       '- commands run in order, max ' + PLAN_MAX_COMMANDS + '. Names lowercase. One verb per string. Never use: ' + Array.from(PLAN_DENY).join(', ') + '.',
       '- A text cut is an expression: `find X`, then `also Y` (add: the UNION of both, never an overlap), `except Z` (remove), `within W` (keep only the overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
       '- Group filters: `only`, `show`, `hide`, `all`. `what` reads the view. `summarize` returns the open article text to you.',
+      '- `plot` draws the edges of the current view (Sociogram) as a chart, in ONE command with order-free words: a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` (whole corpus) or `page` (follow the view and its cut), `inside`/`touching` (edges inside the cut, or touching it), `since <month>`, `until <month>`, and lists after `edges` (signal, wikilink, mention, reference...), `nodes` (groups), `strength` (strong, high, moderate, speculative). Example: `plot heatmap by thinker edges signal strength strong high since august`. `plot off` hides it. Its result reports the edge count and the top pairs -- use those numbers, they are computed.',
       '- If results say a step failed or did nothing (CHECK / verify problems / matched nothing), either correct it with new commands or say so in the answer. Never claim a view you were not shown.',
       '- When the view already serves the goal, or the request is only a question, return "commands": [] and write the answer.',
       '- GROUNDING, when given, is the C2A2 model\'s own material (bridge essays, PRS triplets, Level-2 signals), retrieved by code. Build the answer on it first. Name what you drew on in plain words ("the Friston-Levin bridge essay", "Levin\'s PRS-03"). State COMPUTED FACTS exactly as given. Do not add connections the grounding does not contain; if it does not answer the question, say so plainly.',
@@ -1225,7 +1231,10 @@
       results = [];
       for (const cmd of plan.commands) {
         let r;
-        try { r = deps.run(cmd) || {}; } catch (e) { r = { ok: false, spoken: 'error: ' + ((e && e.message) || e) }; }
+        // A command may finish later (`plot` loads its panel first): its result
+        // carries `pending`, and the verified outcome is what the model sees.
+        try { r = (await deps.run(cmd)) || {}; if (r.pending) { r = (await r.pending) || r; } }
+        catch (e) { r = { ok: false, spoken: 'error: ' + ((e && e.message) || e) }; }
         const problems = (r.verify && !r.verify.ok) ? (r.verify.problems || []) : [];
         const row = { round: round, cmd: cmd, ok: r.ok !== false, spoken: r.spoken || '', problems: problems };
         // `summarize` hands back TEXT; without it the model answers "I was not given the article".
@@ -1238,9 +1247,155 @@
     return { ok: true, answer: answer, trace: trace, calls: calls, model: model, failed: failed };
   }
 
+  // ---- PLOT (step 1 of the 2026-09-28 plan: plots join the shell's state) ----
+  //
+  // `plot <words>` -> a PATCH to the plots panel's spec (lib/c2a2-plots.js,
+  // C2A2Plot.get/set). Words are order-free: a plot type, `by thinker|group`,
+  // `corpus|page`, `inside|touching`, `from|since <month>`, `to|until <month>`,
+  // and lists after `edges` / `nodes` / `strength` (or key=a,b). `all <list>`
+  // restores a list; `plot off` hides the panel; `plot reset` = defaults.
+  // Every word must be understood or NOTHING changes: a half-applied plot is a
+  // plot nobody asked for. `dims` = what the live panel offers:
+  // {plots, kinds, groups, strengths, months}. Pure -- tested in node.
+  const PLOT_TYPE_WORDS = {
+    lego: ['lego', '3d', 'towers'], heatmap: ['heatmap', 'heat map', 'matrix', 'grid'],
+    totals: ['totals', 'total', 'bars', 'bar', 'bar chart', 'ranking'],
+    timeline: ['timeline', 'over time', 'monthly', 'trend'],
+    strength: ['strength mix', 'strengths mix', 'mix'],
+    sankey: ['sankey', 'flows', 'flow']
+  };
+  const PLOT_LIST_KEYS = { edges: 'kinds', edge: 'kinds', kinds: 'kinds', kind: 'kinds', nodes: 'groups', node: 'groups',
+    groups: 'groups', strength: 'strengths', strengths: 'strengths', signals: 'strengths' };
+  const MONTH_NAMES = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+  const PLOT_FILLER = new Set(['a', 'an', 'the', 'of', 'me', 'show', 'please', 'plot', 'chart', 'with', 'and', 'in', 'as', 'for', 'only', 'on']);
+  const PLOT_DEFAULTS = { plot: 'lego', axis: 'thinker', scope: 'page', cut: 'touching', from: '', to: '' };
+
+  function plotMonth(words, i, months) {
+    const w = words[i] || '';
+    const m = /^(\d{4})-(\d{2})(?:-\d{2})?$/.exec(w);
+    if (m) { return { v: m[1] + '-' + m[2], used: 1 }; }
+    const mi = w.length >= 3 ? MONTH_NAMES.findIndex(function (n) { return n.indexOf(w) === 0; }) : -1;
+    if (mi < 0) { return null; }
+    const mm = String(mi + 1).padStart(2, '0');
+    if (/^\d{4}$/.test(words[i + 1] || '')) { return { v: words[i + 1] + '-' + mm, used: 2 }; }
+    // No year given: the most recent month of that name the data holds.
+    const hit = (months || []).filter(function (x) { return x.slice(5) === mm; }).sort().pop();
+    return hit ? { v: hit, used: 1 } : { v: null, used: 1, why: w + ' (the data holds no ' + MONTH_NAMES[mi] + ')' };
+  }
+  function plotResolveList(term, pool, exactOnly) {
+    const t = low(term);
+    const ts = t.replace(/s$/, '');
+    if (!t) { return null; }
+    const exact = pool.filter(function (p) {
+      const l = low(p), b = l.replace(/^layer:/, '');
+      return l === t || l === ts || b === t || b === ts || leaf(l) === t || leaf(l) === ts;
+    });
+    if (exact.length || exactOnly) { return exact.length ? exact : null; }
+    const part = pool.filter(function (p) { return ts.length >= 3 && low(p).indexOf(ts) !== -1; });
+    return part.length ? part : null;
+  }
+  function parsePlotSpec(text, dims) {
+    dims = dims || {};
+    let s = ' ' + low(text).replace(/[=,;]/g, ' ').replace(/\s+/g, ' ') + ' ';
+    const problems = [], patch = {};
+    if (/^\s*(off|close|hide)\s*$/.test(s)) { return { ok: true, off: true, patch: {}, problems: [] }; }
+    if (/^\s*reset\s*$/.test(s)) {
+      return { ok: true, reset: true, problems: [], patch: Object.assign({}, PLOT_DEFAULTS, {
+        kinds: (dims.kinds || []).slice(), groups: (dims.groups || []).slice(), strengths: (dims.strengths || []).slice() }) };
+    }
+    // multi-word phrases collapse to one token before the scan
+    const phrases = [['whole corpus', 'corpus'], ['this view', 'page'], ['node groups', 'group'], ['node group', 'group']];
+    Object.keys(PLOT_TYPE_WORDS).forEach(function (k) {
+      PLOT_TYPE_WORDS[k].forEach(function (w) { if (w.indexOf(' ') > 0) { phrases.push([w, '@type:' + k]); } });
+    });
+    phrases.sort(function (a, b) { return b[0].length - a[0].length; })
+      .forEach(function (p) { s = s.split(' ' + p[0] + ' ').join(' ' + p[1] + ' '); });
+    const words = s.trim() ? s.trim().split(' ') : [];
+    const typeOf = {};
+    Object.keys(PLOT_TYPE_WORDS).forEach(function (k) { PLOT_TYPE_WORDS[k].forEach(function (w) { typeOf[w] = k; }); });
+    let listKey = null;
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i];
+      if (w.indexOf('@type:') === 0) { patch.plot = w.slice(6); listKey = null; continue; }
+      // Inside a list, a word that EXACTLY names one of its items stays in it:
+      // "edges flow signals" means the flow layer and the signal
+      // kind -- not the Sankey plot, and not a switch to the strengths list.
+      const inList = listKey ? plotResolveList(w, dims[listKey] || [], true) : null;
+      if (inList) { inList.forEach(function (h) { if (patch[listKey].indexOf(h) < 0) { patch[listKey].push(h); } }); continue; }
+      if (typeOf[w]) { patch.plot = typeOf[w]; listKey = null; continue; }
+      if (w === 'by') {
+        const a = words[++i] || '';
+        if (/^(thinker|thinkers|tradition|traditions)$/.test(a)) { patch.axis = 'thinker'; }
+        else if (/^(group|groups)$/.test(a)) { patch.axis = 'group'; }
+        else { problems.push('by ' + (a || '?') + ' (say "by thinker" or "by group")'); }
+        listKey = null; continue;
+      }
+      if (w === 'corpus' || w === 'everything') { patch.scope = 'corpus'; listKey = null; continue; }
+      if (w === 'page' || w === 'view') { patch.scope = 'page'; listKey = null; continue; }
+      if (w === 'inside' || w === 'touching') { patch.cut = w; listKey = null; continue; }
+      if (w === 'from' || w === 'since' || w === 'to' || w === 'until') {
+        const r = plotMonth(words, i + 1, dims.months);
+        if (!r) { problems.push(w + ' ' + (words[i + 1] || '?') + ' (a month: 2026-08 or "august")'); i++; continue; }
+        i += r.used;
+        if (!r.v) { problems.push(r.why); continue; }
+        patch[(w === 'from' || w === 'since') ? 'from' : 'to'] = r.v; listKey = null; continue;
+      }
+      if (w === 'all' && PLOT_LIST_KEYS[words[i + 1]]) {
+        const k = PLOT_LIST_KEYS[words[++i]]; patch[k] = (dims[k] || []).slice(); listKey = null; continue;
+      }
+      if (PLOT_LIST_KEYS[w]) { listKey = PLOT_LIST_KEYS[w]; if (!patch[listKey]) { patch[listKey] = []; } continue; }
+      if (listKey) {
+        const hit = plotResolveList(w, dims[listKey] || []);
+        if (hit) { hit.forEach(function (h) { if (patch[listKey].indexOf(h) < 0) { patch[listKey].push(h); } }); continue; }
+        if (PLOT_FILLER.has(w)) { continue; }
+        problems.push(w + ' (not one of the ' + listKey + ' here)'); continue;
+      }
+      if (PLOT_FILLER.has(w)) { continue; }
+      problems.push(w);
+    }
+    // "plot strength" / "plot signals" with nothing after = the strength-mix plot
+    if (patch.strengths && !patch.strengths.length && !patch.plot) { delete patch.strengths; patch.plot = 'strength'; }
+    ['kinds', 'groups', 'strengths'].forEach(function (k) {
+      if (patch[k] && !patch[k].length) { problems.push(k + ' named but none given'); }
+    });
+    if (patch.from && patch.to && patch.from > patch.to) { problems.push('from ' + patch.from + ' is after to ' + patch.to); }
+    if (patch.plot && dims.plots && dims.plots.indexOf(patch.plot) < 0) { problems.push(patch.plot + ' is not a plot this panel draws'); }
+    return problems.length ? { ok: false, problems: problems, patch: patch } : { ok: true, patch: patch, problems: [] };
+  }
+  // Read-back check: did the panel HOLD what was asked? Lists compare as sets.
+  function verifyPlot(patch, got) {
+    if (!got) { return { ok: false, problems: ['the plots panel did not answer'] }; }
+    const problems = [];
+    Object.keys(patch || {}).forEach(function (k) {
+      const a = patch[k], b = got[k];
+      const same = Array.isArray(a)
+        ? (Array.isArray(b) && a.length === b.length && a.every(function (x) { return b.indexOf(x) >= 0; }))
+        : a === b;
+      if (!same) { problems.push(k + ': asked ' + JSON.stringify(a) + ', panel holds ' + JSON.stringify(b)); }
+    });
+    return { ok: !problems.length, problems: problems };
+  }
+  // One line a listener can follow; a list is named only when it is narrowed.
+  function describePlot(spec, dims) {
+    if (!spec) { return 'plots closed'; }
+    dims = dims || {};
+    const parts = [spec.plot + ' by ' + spec.axis,
+      spec.scope === 'corpus' ? 'whole corpus' : ('this view' + (spec.cut === 'inside' ? ' (inside the cut)' : ''))];
+    [['kinds', 'edges'], ['groups', 'nodes'], ['strengths', 'signals']].forEach(function (kv) {
+      const v = spec[kv[0]] || [], all = dims[kv[0]] || [];
+      if (all.length && v.length < all.length) { parts.push(kv[1] + ': ' + (v.length <= 4 ? v.join(', ') : v.length + ' of ' + all.length)); }
+    });
+    if (spec.from || spec.to) { parts.push((spec.from || 'start') + ' to ' + (spec.to || 'now')); }
+    return parts.join(' | ');
+  }
+
   return {
     VERSION: VERSION,
     compileGrammar: compileGrammar,
+    parsePlotSpec: parsePlotSpec,
+    verifyPlot: verifyPlot,
+    describePlot: describePlot,
+    PLOT_DEFAULTS: PLOT_DEFAULTS,
     parse: parse,
     normalize: normalize,
     resolveGroups: resolveGroups,

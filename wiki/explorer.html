@@ -2567,7 +2567,11 @@ var VoiceGuide = (function() {
           } else if (/^where\b/i.test(cmd)) {
             pending = Promise.resolve(whereAmI());
           } else if (typeof window.CCLRun === 'function') {
-            var r = window.CCLRun(cmd);
+            // A command may finish LATER (`plot` loads its panel first): its
+            // result carries `pending`, and the guide is told the final outcome.
+            var r0 = window.CCLRun(cmd);
+            pending = Promise.resolve((r0 && r0.pending) ? r0.pending : r0).then(function (r) {
+            r = r || { ok: false, spoken: '(no result)' };
             // Pass the RENDER through as data. `ok` only means the command
             // executed -- a filter that matched nothing is not an error, so a
             // model keying off `ok` alone would confirm success over an empty
@@ -2594,7 +2598,8 @@ var VoiceGuide = (function() {
               out.text = r.text;
               out.instruction = 'Summarize THIS TEXT in about 50 words and SPEAK the summary yourself, in your own voice. Do not read it out, do not hand it to the page reader, do not quote it at length.';
             }
-            pending = Promise.resolve(out);
+            return out;
+            });
           } else {
             pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
           }
@@ -2860,8 +2865,8 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=c140ad95db"></script>
-<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=3223385ff5">
+<script src="lib/c2a2-commandline.js?v=3116c9af5e"></script>
+<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=fbbc58197c">
 <script>
 /* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
    panel reads the page's own graph state (LINKS, activeNodes, cuts). Only the
@@ -2879,6 +2884,9 @@ var VoiceGuide = (function() {
   }
   /* a tab (re)load discards any panel, so the button's lit state must go too */
   document.getElementById('content-frame').addEventListener('load', function () { b.classList.remove('on'); });
+  /* The button is a mouth of the one road: it runs `plot` / `plot off`, so a
+     click is journaled, undoable and reported exactly like a typed or spoken
+     command (step 1, 2026-09-29). */
   b.addEventListener('click', function () {
     var w = tabWin();
     if (!w) {
@@ -2886,18 +2894,9 @@ var VoiceGuide = (function() {
       setTimeout(function () { b.textContent = 'Plots'; }, 2200);
       return;
     }
-    var P = w.C2A2Plot;
-    if (P && P.panel) {
-      var show = P.panel.style.display === 'none';
-      P.panel.style.display = show ? 'flex' : 'none';
-      if (show) P.refresh();
-      b.classList.toggle('on', show);
-      return;
-    }
-    var sc = w.document.createElement('script');
-    sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
-    w.document.head.appendChild(sc);
-    b.classList.add('on');
+    if (typeof window.CCLRun !== 'function') { return; }
+    var P = w.C2A2Plot, open = !!(P && P.panel && P.visible && P.visible());
+    window.CCLRun(open ? 'plot off' : 'plot');
   });
 })();
 </script>
@@ -4880,6 +4879,7 @@ var VoiceGuide = (function() {
   // ---- dim read/write (absolute-vector journal + write-returns-read) ----
   function readDim(dim) {
     var w = ifWin(), d = ifDoc();
+    if (dim === 'plot') { return readPlot(); }
     try {
       if (dim === 'filters') {
         var df = declaredFilterRead();
@@ -4919,6 +4919,7 @@ var VoiceGuide = (function() {
       return;
     }
     if (dim === 'cut') { writeCut(value); return; }
+    if (dim === 'plot') { writePlot(value); return; }
     if (dim === 'filters') {
       if (filtersSpec()) { declaredFilterWrite(value); return; }
       var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI();
@@ -5104,6 +5105,7 @@ var VoiceGuide = (function() {
         case 'playback':  return execPlayback(p);
         case 'family':    return execFamily(p);
         case 'knob':      return execKnob(p);
+        case 'plot':      return execPlot(p);
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
         case 'read':      return execRead(p);
@@ -5287,6 +5289,102 @@ var VoiceGuide = (function() {
     // the voice tool output can carry them as data the model must relay. A
     // spoken confirmation should never be able to outrun the render.
     if (n) { res.shown = n.shown; res.total = n.total; }
+    return res;
+  }
+  // ---- PLOT (step 1 of the 2026-09-28 plan: plots join the shell's state) ----
+  // `plot <words>` writes the plots panel's spec through the same road as every
+  // other command: parsed against the LIVE panel's own lists
+  // (CL.parsePlotSpec), read back (CL.verifyPlot), journaled as dim 'plot' so
+  // `undo` restores the whole prior spec, and reported with the numbers the
+  // chart is drawn from (C2A2Plot.summary) so an answer can quote them. Hand
+  // changes on the panel arrive through C2A2Plot.subscribe and are journaled
+  // too. The panel lives inside the tab document (it reads the graph's own
+  // state) and loads on first use, so a first `plot` finishes LATER: its
+  // result carries `pending`, which the planner and the guide wait for.
+  function plotTabWin() {
+    var w = ifWin();
+    try { return (w && w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') ? w : null; }
+    catch (e) { return null; }
+  }
+  function plotApi() { var w = plotTabWin(); return (w && w.C2A2Plot && w.C2A2Plot.panel) ? w.C2A2Plot : null; }
+  function plotDims(P) { return { plots: P.plots, kinds: P.kinds, groups: P.groups, strengths: P.strengths, months: P.months }; }
+  function readPlot() { var P = plotApi(); return (P && P.visible && P.visible()) ? P.get() : null; }
+  function syncPlotBtn() { var pb = document.getElementById('btn-plots'); if (pb) { pb.classList.toggle('on', !!readPlot()); } }
+  function onPlotHand(before, after) {
+    var am = activeManifest();
+    journal.record(am ? am.key : TAB, { dim: 'plot', before: before, after: after });
+    syncPlotBtn();
+  }
+  var plotLoading = null;
+  function loadPlots() {
+    var P = plotApi();
+    if (P) { P.subscribe(onPlotHand); return Promise.resolve(P); }
+    if (plotLoading) { return plotLoading; }
+    var w = plotTabWin();
+    if (!w) { return Promise.reject(new Error('only the Sociogram has a graph to plot')); }
+    plotLoading = new Promise(function (resolve, reject) {
+      var sc = w.document.createElement('script');
+      sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
+      sc.onerror = function () { reject(new Error('the plots panel could not be loaded')); };
+      w.document.head.appendChild(sc);
+      var t0 = Date.now();
+      (function wait() {
+        var p2 = plotApi();
+        if (p2 && w.Plotly) { p2.subscribe(onPlotHand); return resolve(p2); }
+        if (Date.now() - t0 > 20000) { return reject(new Error(p2 ? 'the charting library (Plotly) did not load' : 'the plots panel did not start')); }
+        setTimeout(wait, 100);
+      })();
+    });
+    plotLoading.then(function () { plotLoading = null; }, function () { plotLoading = null; });
+    return plotLoading;
+  }
+  function writePlot(value) {
+    var P = plotApi();
+    if (!value) { if (P) { P.hide(); } syncPlotBtn(); return; }
+    if (P) { P.set(value); syncPlotBtn(); return; }
+    loadPlots().then(function (p2) { p2.set(value); syncPlotBtn(); }, function () { /* no graph here: nothing to restore */ });
+  }
+  function applyPlot(P, p, tabKey) {
+    var dims = plotDims(P);
+    var ps = CL.parsePlotSpec(p.text, dims);
+    if (!ps.ok) {
+      return show('plot: did not understand ' + ps.problems.join('; ') + '. Nothing changed. Plots: ' + dims.plots.join(', ') +
+                  '; add by thinker|group, since/until <month>, corpus, inside, or edges/nodes/strength <names>.', 'err');
+    }
+    var before = readPlot();
+    if (ps.off) {
+      P.hide(); syncPlotBtn();
+      if (before) { journal.record(tabKey, { dim: 'plot', before: before, after: null }); }
+      return show(before ? 'plot off' : 'plot off (it was not open)', 'ok');
+    }
+    P.set(ps.patch);                       // opens the panel and redraws
+    var got = P.get();
+    var v = CL.verifyPlot(ps.patch, got);
+    if (JSON.stringify(before) !== JSON.stringify(got)) { journal.record(tabKey, { dim: 'plot', before: before, after: got }); }
+    syncPlotBtn();
+    var sm = null;
+    try { sm = P.summary(5); } catch (e) { sm = null; }
+    var line = 'plot ' + CL.describePlot(got, dims);
+    if (sm) {
+      line += '  |  ' + sm.edges.toLocaleString() + ' edges' + (sm.top.length ? ('; most: ' + sm.top.map(function (c) {
+        return (c.a === c.b ? ('within ' + c.a) : (c.a + '-' + c.b)) + ' ' + c.n.toLocaleString();
+      }).join(', ')) : '; none to count');
+    }
+    if (!v.ok) { line += '  |  CHECK: ' + v.problems.join('; '); }
+    var res = show(line, v.ok ? 'ok' : 'err');
+    res.verify = v;
+    if (sm) { res.plot = sm; }
+    return res;
+  }
+  function execPlot(p) {
+    var tabKey = TAB;
+    if (!plotTabWin()) { return show('plot: only the Sociogram has a graph to plot. Say "go sociogram" first.', 'err'); }
+    var P = plotApi();
+    if (P) { P.subscribe(onPlotHand); return applyPlot(P, p, tabKey); }
+    if (/^\s*(off|close|hide)\s*$/i.test(p.text || '')) { return show('plot off (it was not open)', 'ok'); }
+    var res = show('plot: opening the plots panel...', 'ok');
+    res.pending = loadPlots().then(function (p2) { return applyPlot(p2, p, tabKey); },
+                                   function (e) { return show('plot: ' + e.message + '. Nothing changed.', 'err'); });
     return res;
   }
   // T1 knob set (fan-out, inc 4). Write-returns-read: re-read after writing so
@@ -5627,7 +5725,7 @@ var VoiceGuide = (function() {
     writeDim('filters', bootFilters); return show(p.action + ' -> boot filters' + frameSuffix(), 'ok');   // reset/restore (v1: filters only)
   }
   function execRead(p) {
-    if (p.action === 'help') { return show('plain text = find (search this view). verbs: only/show/hide/all/none, open/close, find/clear/focus, fit, go/back, undo/redo, what. Up/Down arrows recall commands.', 'ok'); }
+    if (p.action === 'help') { return show('plain text = find (search this view). verbs: only/show/hide/all/none, open/close, find/also/except/within/clear/focus, plot <type> [by thinker|group] [since <month>] [edges|nodes|strength <names>] | plot off, fit, go/back, undo/redo, what. Up/Down arrows recall commands.', 'ok'); }
     // SUMMARIZE HANDS BACK THE WORDS. Everything else here returns a description
     // of the view; this returns the text itself, because summarising is the one
     // thing the model is better at than any code we could write -- and it could
@@ -5690,6 +5788,9 @@ var VoiceGuide = (function() {
     var vNote = activeViewName();
     if (vNote) { itemNote = '  |  ' + vNote + ' view' + itemNote; }
     var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';
+    // An open plot is part of what the user is looking at.
+    var plotNow = readPlot(), plotP = plotApi();
+    if (plotNow && plotP) { cutNote += '  |  plot: ' + CL.describePlot(plotNow, plotDims(plotP)); }
     // BOTH, on a tab with declared axes. The graph's either/or was fine while
     // filters and items were alternatives; here they are the same view seen two
     // ways, and dropping the count to make room for thirty-four group names
@@ -6052,7 +6153,7 @@ var VoiceGuide = (function() {
       return window.CommandLine.runPlan(request, {
         verbs: v[0], knowledge: v[1].text, grounding: v[2].text,
         state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
-        run: function (cmd) { return window.CCLRun(cmd); },
+        run: function (cmd) { var r = window.CCLRun(cmd); return (r && r.pending) ? r.pending : r; },
         ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user, timeoutMs: 60000 }); }
       }).then(function (res) { res.sources = v[2].sources; return res; });
     });
@@ -6100,6 +6201,9 @@ var VoiceGuide = (function() {
       var rr = null;
       try { rr = window.CCLRun ? window.CCLRun(cmd) : null; } catch (e) { rr = null; }
       render((rr && rr.spoken) || '(no result)', false, 'ran directly on this page &middot; no model call');
+      if (rr && rr.pending) {
+        rr.pending.then(function (fin) { if (my === seq && fin) { render(fin.spoken || '(no result)', false, 'ran directly on this page &middot; no model call'); } });
+      }
       return;
     }
   }

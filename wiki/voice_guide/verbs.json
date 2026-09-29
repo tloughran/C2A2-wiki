@@ -41,6 +41,12 @@
       "kind": "value",
       "dynamic": true,
       "fingerprint": "semantic"
+    },
+    "plot": {
+      "kind": "value",
+      "nullable": true,
+      "fingerprint": "semantic",
+      "_note": "The plots panel's spec (lib/c2a2-plots.js C2A2Plot.get/set): {plot, axis, scope, cut, kinds[], groups[], strengths[], from, to}. null = panel hidden. ABSOLUTE, like cut: undo writes the whole prior spec back."
     }
   },
   "_filler_note": "Words a person says that the grammar does not need. Spoken English puts the noun back in ('pick first section', 'pick first card') and uses a copula ('what is this'); every one of those used to return too_many_args -- a hard error one redundant word away from a command that already worked, which is what made the first tab's items feel unreachable in Tom's 2026-07-26 review. The rescue is deliberately NARROW: it fires ONLY after a parse has already failed on arity, and NEVER on `text` or `many` verbs, so a search string (`find levin`), a tab name (`go community explorer`) or a group list (`only levin friston`) can never be silently eaten. Generic item nouns only -- no word here may also be a real group, tradition or tab name, which is why `community` is absent and `section`/`card` are safe.",
@@ -51,6 +57,7 @@
     { "say": "open", "means": "pick", "when_arg_in": ["first", "last", "random"] },
     { "say": "highlight", "means": "find" },
     { "say": "search", "means": "find" },
+    { "say": "chart", "means": "plot" },
     { "say": "quiet", "means": "stop" },
     { "say": "silence", "means": "stop" },
     { "say": "continue", "means": "next" },
@@ -194,6 +201,15 @@
       "kind": "value",
       "inverse": "clear",
       "mode": "focus"
+    },
+    {
+      "verb": "plot",
+      "dim": "plot",
+      "op": "set",
+      "args": "text-opt",
+      "kind": "value",
+      "inverse": "@journal",
+      "_note": "Order-free words -> a patch on the plots panel spec; parsed by parsePlotSpec against the live panel's own lists. Every word must be understood or nothing changes. `plot` alone opens the panel as it was; `plot off` hides it; `plot reset` restores the defaults."
     },
     {
       "verb": "set",

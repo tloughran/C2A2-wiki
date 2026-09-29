@@ -26,6 +26,7 @@
         "within",
         "clear",
         "focus",
+        "plot",
         "fit",
         "zoom",
         "pan",
@@ -75,6 +76,11 @@
           "dim": "camera",
           "match": "#btn-fit-all",
           "note": "fit"
+        },
+        {
+          "dim": "plot",
+          "match": "#cp-plot, #cp-axis, #cp-scope, #cp-cut, #cp-from, #cp-to, #cp-kinds input, #cp-groups input, #cp-str input, #cp-kinds a, #cp-groups a, #cp-str a, #cp-x",
+          "note": "the plots panel (lib/c2a2-plots.js, injected by the shell's Plots button or `plot`): every control writes C2A2Plot spec, which `plot` reads and writes; the x hides it (`plot off`)"
         },
         {
           "dim": "edges",

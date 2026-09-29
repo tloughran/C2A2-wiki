@@ -103,13 +103,19 @@
     '<div id="cp-s" style="padding:4px 10px;color:#9aa"></div><div id="cp-p" style="flex:1;min-height:0"></div>';
   document.body.appendChild(panel);
   function $(id){ return panel.querySelector('#'+id); }
-  $('cp-x').onclick=function(){ panel.style.display='none'; };
+  $('cp-x').onclick=function(){ var before=JSON.parse(JSON.stringify(spec)); panel.style.display='none'; subs.forEach(function(f){ try{ f(before,null); }catch(_){} }); };
   var MAP={'cp-kinds':'kinds','cp-groups':'groups','cp-str':'strengths'};
   function syncUI(){ $('cp-plot').value=spec.plot; $('cp-axis').value=spec.axis; $('cp-scope').value=spec.scope; $('cp-cut').value=spec.cut; $('cp-from').value=spec.from; $('cp-to').value=spec.to;
     Object.keys(MAP).forEach(function(id){ var arr=spec[MAP[id]], boxes=$(id).querySelectorAll('input'); boxes.forEach(function(b){ b.checked=arr.indexOf(b.value)>=0; }); $(id+'-n').textContent='('+arr.length+'/'+boxes.length+')'; }); }
-  ['cp-plot','cp-axis','cp-scope','cp-cut','cp-from','cp-to'].forEach(function(id){ $(id).onchange=function(e){ spec[id.slice(3)]=e.target.value; refresh(); }; });
+  // A hand change on the panel is a change of state like any command: subscribers
+  // (the shell) journal it, so `undo` and `what` see it. set() does NOT notify --
+  // its caller journals, and notifying too would record the same change twice.
+  var subs=[];
+  function userChange(fn){ var before=JSON.parse(JSON.stringify(spec)); fn(); refresh(); var after=JSON.parse(JSON.stringify(spec));
+    if(JSON.stringify(before)!==JSON.stringify(after)) subs.forEach(function(f){ try{ f(before,after); }catch(_){} }); }
+  ['cp-plot','cp-axis','cp-scope','cp-cut','cp-from','cp-to'].forEach(function(id){ $(id).onchange=function(e){ userChange(function(){ spec[id.slice(3)]=e.target.value; }); }; });
   Object.keys(MAP).forEach(function(id){ var box=$(id);
-    box.onchange=function(){ spec[MAP[id]]=[].slice.call(box.querySelectorAll('input:checked')).map(function(b){return b.value;}); refresh(); };
+    box.onchange=function(){ userChange(function(){ spec[MAP[id]]=[].slice.call(box.querySelectorAll('input:checked')).map(function(b){return b.value;}); }); };
     box.onclick=function(ev){ var a=ev.target; if(a.tagName!=='A') return; ev.preventDefault(); box.querySelectorAll('input').forEach(function(b){ b.checked=!!a.dataset.all; }); box.onchange(); }; });
   (function(){ var h=$('cp-h'),sx,sy,ox,oy; h.onmousedown=function(e){ if(e.target.tagName==='BUTTON') return; sx=e.clientX;sy=e.clientY; var r=panel.getBoundingClientRect(); ox=r.left;oy=r.top;
     document.onmousemove=function(ev){ panel.style.left=(ox+ev.clientX-sx)+'px'; panel.style.top=(oy+ev.clientY-sy)+'px'; panel.style.right='auto'; panel.style.bottom='auto'; };
@@ -152,6 +158,15 @@
 
   window.C2A2Plot={ panel:panel, refresh:refresh, plots:Object.keys(PLOTS), kinds:KINDS, groups:GROUPS, strengths:STRS, months:MONTHS,
     get:function(){ return JSON.parse(JSON.stringify(spec)); },
+    visible:function(){ return panel.style.display!=='none'; },
+    hide:function(){ panel.style.display='none'; },
+    subscribe:function(f){ if(typeof f==='function' && subs.indexOf(f)<0) subs.push(f); },
+    // THE NUMBERS BEHIND THE PICTURE, computed from the same edges() the chart
+    // draws, so a spoken answer quotes what is on screen rather than a guess.
+    summary:function(k){ k=k||5; var E=edges(), r=matrix(E), L=labels(), cells=[];
+      for(var i=0;i<L.length;i++) for(var j=i;j<L.length;j++){ if(r.M[i][j]) cells.push({a:L[i],b:L[j],n:r.M[i][j]}); }
+      cells.sort(function(x,y){ return y.n-x.n; });
+      return {edges:E.length, attributed:r.n, axis:spec.axis, top:cells.slice(0,k)}; },
     set:function(p){ Object.keys(p||{}).forEach(function(k){ if(k in spec) spec[k]=p[k]; }); panel.style.display='flex'; refresh(); return this.get(); } };
   if (window.Plotly) { tick(); setInterval(tick,1000); }
   else { var sc=document.createElement('script'); sc.src='https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.34.0/plotly.min.js'; sc.onload=function(){ tick(); setInterval(tick,1000); }; sc.onerror=function(){ $('cp-s').textContent='Could not load Plotly from cdnjs.'; }; document.head.appendChild(sc); }
