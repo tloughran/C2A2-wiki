@@ -1252,9 +1252,12 @@
   async function runPlan(request, deps) {
     const maxRounds = deps.maxRounds || 3;
     const trace = [], trimmed = [];
-    let results = [], model = '', answer = '', calls = 0, assumed = '', ask = '';
+    let results = [], model = '', answer = '', calls = 0, assumed = '', ask = '', notRun = [];
     for (let round = 1; round <= maxRounds; round++) {
       const lastRound = round === maxRounds;
+      // A caller that gave up on this run (the voice tool's deadline) sets cancelled(); a late
+      // planner must not keep changing the view after the user was told it failed.
+      if (deps.cancelled && deps.cancelled()) { return { ok: false, error: 'cancelled: the caller stopped waiting', trace: trace, calls: calls, model: model, failed: [], not_run: notRun }; }
       const prompt = fitPlanPrompt({ request: request, hint: deps.hint, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
                                      results: results, round: round - 1, lastRound: lastRound && round > 1 }, deps.maxPromptChars || PLAN_PROMPT_MAX, trimmed);
       if (!prompt) { return { ok: false, error: 'the request is too large to send even after trimming', trace: trace, calls: calls, model: model, failed: [], trimmed: trimmed }; }
@@ -1267,9 +1270,13 @@
       if (plan.assumed) { assumed = plan.assumed; }
       if (plan.ask) { ask = plan.ask; }
       for (const d of plan.dropped) { trace.push({ round: round, cmd: d, ok: false, spoken: 'not run (not allowed from the planner)', problems: [] }); }
+      // D4: the last round may only answer. Commands it asked for are NOT run, and must be
+      // reported, or the model's prose can say they happened.
+      if (lastRound && plan.commands.length) { notRun = plan.commands.slice(); }
       if (!plan.commands.length || lastRound) { answer = plan.answer; break; }
       results = [];
       for (const cmd of plan.commands) {
+        if (deps.cancelled && deps.cancelled()) { return { ok: false, error: 'cancelled: the caller stopped waiting', trace: trace, calls: calls, model: model, failed: [], not_run: notRun }; }
         let r;
         // A command may finish later (`plot` loads its panel first): its result
         // carries `pending`, and the verified outcome is what the model sees.
@@ -1284,7 +1291,7 @@
     }
     const lastRoundNo = trace.length ? trace[trace.length - 1].round : 0;
     const failed = trace.filter(function (t) { return t.round === lastRoundNo && (!t.ok || t.problems.length); });
-    return { ok: true, answer: answer, assumed: assumed, ask: ask, trace: trace, calls: calls, model: model, failed: failed, trimmed: trimmed };
+    return { ok: true, answer: answer, assumed: assumed, ask: ask, trace: trace, calls: calls, model: model, failed: failed, not_run: notRun, trimmed: trimmed };
   }
 
   // ---- PLAN MEMORY (step 4, 2026-09-29): learn from verified runs ----------

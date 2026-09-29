@@ -1539,6 +1539,7 @@ var VoiceGuide = (function() {
   // connection does stay open -- worth saying plainly rather than implying the
   // session costs nothing while paused.
   var IDLE_MS = 30000;
+  var PLAN_DEADLINE_MS = 45000;   // D2: overall limit on one plan_and_run tool call
   var idleTimer = null;
   function clearIdle() { if (idleTimer) { clearTimeout(idleTimer); idleTimer = null; } }
   // WHAT IS BEING MEASURED IS DEAD AIR, not time since the last packet.
@@ -2046,7 +2047,7 @@ var VoiceGuide = (function() {
       "THE READER HOLDS BACK PROVENANCE. These files open with maintainer, last-updated and source lines, and often a format template; none of that is read aloud. If the result says metadata was held back, mention it in a few words ONCE -- 'there is some source metadata if you want it' -- and only read it if the user asks, which is `read details`. Never read it unprompted.",
       "READING IS A HANDOVER, AND THE READER IS A DIFFERENT VOICE ON PURPOSE. On a successful `read`, say ONE short handover line and nothing more -- \'Here it is.\' or \'Reading it to you.\' -- then be silent until the user speaks again. No word count, no offer, no summary. The page begins reading the moment you stop, in its own voice: that difference is deliberate, so the user can always hear whether they are being TALKED TO or READ TO. If they remark on it, say plainly that the page is reading it back, not you.",
       "YOU CAN DRAW PLOTS. On the Sociogram the Plots panel charts the edges of what is in view: run_command `plot <words>` -- a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` or `page`, `since <month>`, and `edges` / `nodes` / `strength` lists -- or `plot off`. 'Chart', 'graph', 'heatmap', 'lego', 'picture of the connections' all mean `plot`; never say the page is already a plot, and never claim a plot is showing unless `what` reports a plot line. The plot follows the current cut, so to plot one thinker cut first. Its result carries computed edge counts and top pairs: quote those, do not estimate. Clicking a chart cell or bar cuts the graph to it.",
-      "WHEN A COMMAND DOES NOT WORK OR IS UNKNOWN, DO NOT APOLOGISE AND STOP: call plan_and_run with the user's own words. It reads generously ('every Summa node Levin is connected to', 'all Levin', 'linked to') and may return how_i_read_it and question_for_user -- SAY the reading in one sentence, then ASK the question aloud and wait. A cut can also take `neighbors:<term>` (every node linked to the term's nodes), `thinker:<name>` and `group:<name>`; use plan_and_run when the request needs them.",
+      "WHEN A COMMAND DOES NOT WORK OR IS UNKNOWN, DO NOT APOLOGISE AND STOP: call plan_and_run with the user's own words. It reads generously ('every Summa node Levin is connected to', 'all Levin', 'linked to') and may return how_i_read_it and question_for_user -- SAY the reading in one sentence, then ASK the question aloud and wait. A cut can also take `neighbors:<term>` (every node linked to the term's nodes), `thinker:<name>` and `group:<name>`; use plan_and_run when the request needs them. BEFORE A TOOL RESULT COMES BACK say only that you are working on it (\'one moment\') -- never describe what has changed, in which tab or plot, or that it is done; a claim about the view comes only from the result (did, answer, steps, verified_state) and only about what that result says.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
       "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'reset the whole view' -> all; 'what am I seeing?' -> what. SEVERAL STEPS OR A QUESTION ABOUT HOW THINGS CONNECT -> plan_and_run with the request in the user's words, e.g. 'keep Levin, add Friston, drop the Summa', 'how do Kastrup and Hoffman connect?'. Speak its answer; if it reports not_as_asked, say which steps did not work."
     ].join("\n");
@@ -2531,6 +2532,7 @@ var VoiceGuide = (function() {
         var args = {};
         try { args = JSON.parse(m.arguments || '{}'); } catch (e) {}
         dbg('TOOL call: ' + m.name + ' ' + JSON.stringify(args));
+        holdIdle();   // D1: a tool in flight is not dead air; the planner is silent for 15-60 s
         if (_test.capture) _test.capture.tools.push(m.name);
         var pending;
         if (m.name === 'run_command') {
@@ -2606,8 +2608,16 @@ var VoiceGuide = (function() {
             pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
           }
         } else if (m.name === 'plan_and_run') {
+          var _ctl = { cancelled: false };
+          var _deadline = new Promise(function (resolve) {
+            setTimeout(function () {
+              _ctl.cancelled = true;
+              resolve({ ok: false, error: 'the planner did not finish within ' + (PLAN_DEADLINE_MS / 1000) + ' s and was stopped',
+                        warning: 'NOT DONE. Say plainly that it did not finish. Do NOT say any change was made; run the command what and report only what it returns.' });
+            }, PLAN_DEADLINE_MS);
+          });
           pending = (typeof window.C2A2Plan === 'function')
-            ? window.C2A2Plan(String(args.request || '')).then(function (res) {
+            ? Promise.race([_deadline, window.C2A2Plan(String(args.request || ''), undefined, '', _ctl).then(function (res) {
                 var o = { ok: !!res.ok, answer: res.answer || '', steps: (res.trace || []).map(function (t) { return t.cmd + ' -> ' + t.spoken; }) };
                 if (res.assumed) { o.how_i_read_it = res.assumed; }
                 if (res.ask) { o.question_for_user = res.ask; o.note = 'SAY how you read the request, then ASK the question aloud and wait for the answer.'; }
@@ -2616,8 +2626,12 @@ var VoiceGuide = (function() {
                   o.not_as_asked = res.failed.map(function (t) { return t.cmd + ': ' + (t.problems.join('; ') || t.spoken); });
                   o.warning = 'SOME STEPS DID NOT COME OUT AS ASKED. Say so plainly.';
                 }
+                if (res.not_run && res.not_run.length) {
+                  o.not_run = res.not_run;
+                  o.warning = (o.warning ? o.warning + ' ' : '') + 'THE PLANNER ASKED FOR THESE STEPS BUT THEY WERE NEVER RUN: ' + res.not_run.join(' | ') + '. Do NOT say they happened; the answer text may describe them.';
+                }
                 return o;
-              }, function (e) { return { ok: false, error: (e && e.message) || String(e) }; })
+              }, function (e) { return { ok: false, error: (e && e.message) || String(e) }; })])
             : Promise.resolve({ ok: false, error: 'planner not loaded' });
         } else {
           pending = Promise.resolve({ ok: false, error: 'unknown tool: ' + m.name });
@@ -2633,6 +2647,7 @@ var VoiceGuide = (function() {
             dbg('sent function_call_output');
           } catch (e) { dbg('output send ERROR: ' + e); }
           requestResponseCreate();   // deferred until any in-flight response finishes
+          setTimeout(function () { if (!responseActive) { armIdle(); } }, 4000);   // D1: no response followed; count dead air again
         });
         break;
       }
@@ -2869,7 +2884,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=6b171ecd65"></script>
+<script src="lib/c2a2-commandline.js?v=a72bb0edb9"></script>
 <link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=06cd124b75">
 <script>
 /* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
@@ -6241,11 +6256,12 @@ var VoiceGuide = (function() {
       .catch(function () { /* memory is best-effort */ });
   }
   window.C2A2PlanMemory = { recall: planRecall, store: planStore };
-  window.C2A2Plan = function (request, recalled, hint) {
+  window.C2A2Plan = function (request, recalled, hint, ctl) {
     if (!window.CommandLine || typeof window.CommandLine.runPlan !== 'function') { return Promise.reject(new Error('planner not loaded')); }
     if (!window.C2A2Search) { return Promise.reject(new Error('answer service not loaded')); }
     return Promise.all([getVerbs(), pageKnowledge(), grounding(request), recalled !== undefined ? Promise.resolve(recalled) : planRecall(request)]).then(function (v) {
       return window.CommandLine.runPlan(request, {
+        cancelled: function () { return !!(ctl && ctl.cancelled); },
         hint: hint || '', verbs: v[0], knowledge: v[1].text, grounding: v[2].text, examples: window.CommandLine.planExamplesText(v[3]),
         state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
         run: function (cmd) { var r = window.CCLRun(cmd); return (r && r.pending) ? r.pending : r; },

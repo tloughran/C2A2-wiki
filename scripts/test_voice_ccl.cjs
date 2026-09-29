@@ -1435,6 +1435,43 @@ check('framing: Hold skips it, and nothing floors a reveal any more', function (
   assert.ok(/chk-hold-forces/.test(html));
 });
 
+// WHY (Requirement D4): on the last round the planner may only answer, and its commands were thrown away
+// silently while ok:true and its prose ("done in the lego plot") went out. Unrun steps must be reported.
+acheck('runPlan reports the commands a last round asked for but never ran', async function () {
+  const m = fakeModel([
+    { goal: 'g', commands: ['find levin'], answer: '' },
+    { goal: 'g', commands: ['find friston'], answer: 'Done: Friston is lit too.' }
+  ]);
+  const ran = [];
+  const res = await CCL.runPlan('x', { maxRounds: 2, state: function () { return 'S'; }, run: function (c) { ran.push(c); return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(ran, ['find levin'], 'the last round must not run commands');
+  assert.deepStrictEqual(res.not_run, ['find friston']);
+});
+acheck('runPlan not_run is empty when the last round only answers', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin'], answer: '' }, { goal: 'g', commands: [], answer: 'ok' }]);
+  const res = await CCL.runPlan('x', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(res.not_run, []);
+});
+// WHY (D2): after the voice tool gives up it tells the user "not done"; a late planner must not then change the view.
+acheck('runPlan stops running commands once the caller cancels', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin', 'find friston'], answer: '' }]);
+  const ran = [];
+  const res = await CCL.runPlan('x', { state: function () { return 'S'; }, cancelled: function () { return ran.length >= 1; }, run: function (c) { ran.push(c); return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(ran, ['find levin']);
+  assert.strictEqual(res.ok, false);
+  assert.ok(/cancelled/.test(res.error));
+});
+// WHY (D1, D2, D3, D4 in the voice tool): Tom's complex asks timed out with the mic muted mid-tool and the guide
+// claimed changes that were never made. These are the code-level guards; the live retest is his.
+check('voice tool: idle clock held during a tool, plan deadline, not_run surfaced, no claims before a result', function () {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  assert.ok(/dbg\('TOOL call: '[^\n]*\n\s*holdIdle\(\);/.test(html), 'a tool call in flight must hold the idle clock');
+  assert.ok(/PLAN_DEADLINE_MS\s*=\s*\d+/.test(html) && /Promise\.race\(\[_deadline/.test(html), 'plan_and_run needs an overall deadline');
+  assert.ok(/_ctl\.cancelled = true/.test(html), 'the deadline must cancel the run');
+  assert.ok(/res\.not_run/.test(html) && /NEVER RUN/.test(html), 'unrun planner steps must reach the guide as a warning');
+  assert.ok(/BEFORE A TOOL RESULT COMES BACK/.test(html), 'the guide must be told not to claim outcomes before a result');
+});
+
 (async function () {
   for (const [name, fn] of asyncChecks) {
     try { await fn(); passed++; }
