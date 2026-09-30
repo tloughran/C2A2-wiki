@@ -16,7 +16,7 @@ evidence_strength_summary: "Both the disclosure half and the minister half rest 
 mind_first_reframe: "Confession is reframed as externalizing a hidden deviation into a shared field where it becomes jointly correctable (Friston), within a relationship that enables truthfulness (McGilchrist), and the minister as a nested agent through whom a larger authority looses it (Friston PRS-06)."
 central_theme_thread: "The motif is the move from private limitation to shared correction: a perspective-limited agent harbors a deviation it cannot fully see or repair alone and voices it to one who perceives more — the project's claim that limited perspectives need guidance from those who perceive more of the whole, enacted in miniature."
 tags: [synthesis, day/261, theme/disclosure-into-a-shared-field]
-last_qc_at: "2026-09-19T00:24:32"
+last_qc_at: "2026-09-29T02:20:11"
 last_qc_outcome: "pass"
 ---
 

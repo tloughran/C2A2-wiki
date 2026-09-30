@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-068 - Counsel and Consent - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/068, pars/I-II, q/14, q/15]
-last_qc_at: "2026-09-13T14:31:18"
+last_qc_at: "2026-09-29T04:26:19"
 last_qc_outcome: "pass"
 ---
 # Day 68 — Counsel and Consent

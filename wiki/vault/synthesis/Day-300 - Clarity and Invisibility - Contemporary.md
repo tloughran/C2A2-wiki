@@ -17,8 +17,8 @@ length_ratio_to_target: 0.96
 mind_first_reframe: "Clarity is the body made transparent to the soul's state — inner glory rendered as outward brightness, with visibility itself answering to the will; the perfected perspective has no gap between what it is and what it shows."
 central_theme_thread: "The whole project's destination, stated at the level of appearance: loving unity is the mutual transparency of perspectives — each viewpoint fully legible to the others in love — while the damned are the closed perspective, restored to full feeling yet shut against the whole."
 tags: [synthesis, day/300, theme/clarity-as-the-body-made-transparent-to-the-soul]
-last_qc_at: "2026-09-20T10:36:32"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-29T06:18:31"
+last_qc_outcome: "pass"
 ---
 
 # Day 300 — Clarity and Invisibility (Contemporary Parallel)

@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-070 - Morality - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/070, pars/I-II, q/18, q/19]
-last_qc_at: "2026-09-12T14:26:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-29T00:26:17"
+last_qc_outcome: "rewrote"
 ---
 # Day 70 — Morality
 
@@ -63,7 +63,7 @@ Today's episode covers Prima Secundae Q.18 (the good and evil of human acts in g
 
 **a.5 — Whether the will is evil when it is at variance with erring reason.** Yes. To inquire whether the will is evil at variance with erring reason is the same as asking whether an erring conscience binds. It does. *Absolutely speaking, every will at variance with reason, whether right or erring, is always evil.*
 
-**a.6 — Whether the will is good when it abides by erring reason.** Depends on the kind of ignorance. If intentional or caused by disordered passion or vice, the erring conscience does not excuse. If through no fault of one's own (the man taking what he sincerely thought was his own billfold), then *that error of reason or conscience excuses the will that abides by that erring reason from being evil*. Paul's pre-conversion persecution of the church (1 Tim 1:13) is the scriptural exemplar.
+**a.6 — Whether the will is good when it abides by erring reason.** Depends on the kind of ignorance. If intentional or caused by disordered passion or vice, the erring conscience does not excuse. If through no fault of one's own (the man taking what he sincerely thought was his own billfold), then *that error of reason or conscience excuses the will that abides by that erring reason from being evil*. As an example from Scripture, this seems to be the kind of ignorance St. Paul claimed for himself when he persecuted the church before his conversion: *I received mercy because I had acted ignorantly in unbelief* (1 Tim 1:12-13).
 
 **a.7 — Whether the goodness of the will as regards the means depends on the intention of the end.** Yes — when the end *causes* the willing of the means. But ends *external to* the action (other goods one hopes to obtain) added afterward do not retroactively determine the goodness of the prior act. *Intention that follows the act of the will is added to a preceding act of the will, and then the goodness of the previous act of the will does not depend on the subsequent intention except in so far as that act is repeated with the subsequent intention.*
 
