@@ -15820,3 +15820,58 @@ REVISE-488:
   Consistency: closes MONITOR-547 (this file supersedes it). Member of the independence-accounting defect
     class carried under the 2026-08-25 SYSTEMIC-RISK-FLAG with ASSUMPTION-1176 and PRESUMPTION-859 — not
     independently re-verified this run.
+
+
+REVISE-489:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1095 | DISPOSITION-1010 | Urgency: High
+  Evidence: 15a NO-SUPPORT-FOUND (Weak): SAA Code of Ethics - permits restriction only when written, justified and transparent (cuts against an unwritten default); 15b CHALLENGED (Strong): Schwartz & Cook 2002, "Archives, Records, and Power", Archival Science 2 (search-result level); Khorramrouz & Levy 2025, arXiv:2510.27087 (fetched abstract) - LLM refusal/omission is patterned, not neutral
+  What is at risk: Fidelity of McGilchrist and Wolfram tradition records (and any tradition addressing death, mental health or the soul); PRS triplet coverage; later readers reading the omission as the thinker's silence.
+  Recommended action (for Tom): (1) Tom writes an explicit sensitive-content policy for the archive (what may be restricted, why, and how it is marked). (2) Any in-run omission is logged as a visible placeholder ("[restricted: topic, reason, date]") and flagged for review, never silently dropped. (3) Back-check fef2bbcb: restore or explicitly restrict the two omitted McGilchrist/Wolfram passages.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-490:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1096 | DISPOSITION-1011 | Urgency: High
+  Evidence: 15a PARTIALLY-SUPPORTED (Weak): Google SRE book ch. 6 (fetched) - white-box monitoring is essential but always paired with black-box/external checks; 15b CHALLENGED (Strong): Wilkinson 2016, SRE book ch. 10 (fetched) - inside monitoring "does not provide a full picture"; NRC common-cause failure guidance ML23205A190 (search-result level)
+  What is at risk: Morning system health, OpenStory refresh, chat scrape and any bash-based health report; the scheduler-health check (ASSUMPTION-1703).
+  Recommended action (for Tom): (1) Add one out-of-band watchdog on a different surface (e.g. a cloud-side task or Mac-side launchd script) that checks sandbox free disk and the age of the last health report, and alarms on absence. (2) Health reports write a first-line "partial: <what could not be measured>" marker. (3) Link to OPEN-257/-259.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-491:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1097 | DISPOSITION-1012 | Urgency: Medium
+  Evidence: 15a NO-SUPPORT-FOUND (Weak): Lehman 1980, Proc. IEEE (via summary) - only fixed-specification programs stay valid without change; 15b CHALLENGED (Strong): Patsakis, Argyropoulos & Alepis 2026, "Configuration, Not Conscience", arXiv:2609.31575 (fetched by 15b; existence independently verified by 15c via web search) - prompts carry measurable maintenance debt
+  What is at risk: All scheduled tasks with embedded dates, paths, counts or commands (69303f72, 751601c0, ef5ab364, 2cb24457, 984c5e89 and others); divergent per-run workarounds (ASSUMPTION-1706). Note: this task file itself names the wiki root as ".../Wiki" (capital W).
+  Recommended action (for Tom): (1) A scheduled monthly prompt review (Tom, or an agent that drafts diffs for Tom to approve). (2) Let runs append a "PROMPT-STALE: <line> -> <observed>" note to a single file that the review reads, since agents may not edit prompts. (3) Move volatile facts (paths, counts, known states) out of prompts into one referenced config file.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-492:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1098 | DISPOSITION-1013 | Urgency: Medium
+  Evidence: 15a PARTIALLY-SUPPORTED (Moderate): Driffield & Smith 2007, Medical Decision Making 27(2) (abstract fetched) - watchful waiting is optimal in an intermediate region; GRADE gap frameworks; 15b CHALLENGED (Moderate): Tversky & Shafir 1992, "Choice under Conflict", Psychological Science 3(6) (fetched) - conflict drives deferral; Cochrane "insufficient evidence" rates
+  What is at risk: The whole 15c/15d disposition layer; challenged premises carried as "watched" (e.g. 1088/1089 held at MONITOR on 09-29).
+  Recommended action (for Tom): (1) Every MONITOR record carries a reason code (thin search / contested / awaiting human ruling / awaiting in-house data) and an explicit exit threshold. (2) A cycle cap: after N (suggest 3) 15d cycles without new evidence, 15d must propose INCORPORATE or REVISE. (3) Report the MONITOR share per run; flag any run above ~70% MONITOR.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-493:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1088 | DISPOSITION-1014 | Urgency: High
+  Evidence: Primary source fetched in the 09-29 second 15b pass: Ramprasad & Wallace 2024, arXiv:2411.16638 - automatic factuality metrics largely track surface features. DISPOSITION-1006's hold condition ("read the primary sources") is met.
+  What is at risk: QC runs that mark pass on mechanical/structural checks and are read as semantic soundness (Summa QC, wiki QC).
+  Recommended action (for Tom): Pair mechanical QC passes with a sampled semantic spot-check (e.g. 1 in 10 items read for meaning), and label passes as "structural pass" in QC output.
+  Consistency: Closes MONITOR-622 (superseded). Member of the 2026-09-29 inherited-pass-status SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-494:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1089 | DISPOSITION-1015 | Urgency: High
+  Evidence: Wright 1988 fetched; Stelmakh et al. arXiv:2011.15083 fetched as a boundary case (no herding when reviewers form a view before seeing prior dispositions). DISPOSITION-1007's hold condition is met; the boundary case supplies the remedy.
+  What is at risk: Any run that inherits prior dispositions or pass status (15d re-checks, QC re-review, 14a/14b reconciliations).
+  Recommended action (for Tom): Blind-first review: the reviewing run forms its own judgment before reading the prior disposition, on at least a sampled subset; log disagreements.
+  Consistency: Closes MONITOR-623 (superseded). Member of the 2026-09-29 inherited-pass-status SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED

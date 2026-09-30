@@ -3470,3 +3470,26 @@ OPEN-258:
     intentional? Should a daily job alarm when other daily jobs miss their slot?
   Needs: **Tom**.
   Status: OPEN
+
+## 2026-09-29 — raised by the 14a/14b end-of-day pass
+
+OPEN-259:
+  Raised: 2026-09-29 by 14a (ASSUMPTION-1707) and 14b (PRESUMPTION-1096)
+  Question: Both human-input channels were down all day: the Gmail connector is invalidated (second day)
+    and the Chrome extension was unreachable, with the built-in browser not signed in. Pending proposals
+    cannot move and walk notes cannot arrive, yet every downstream task ran and reported normally. Should a
+    daily job alarm when no human input has arrived through any channel for N days, and who re-authorizes
+    the connectors?
+  Needs: **Tom** (reauthorize Gmail; sign in a browser profile for the scrape).
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a, 14b]
+    Original item: OPEN-259
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-257 (update 2026-09-29): Confirmed again tonight. A cloud run of this same task wrote
+  `changelog/2026-09-30_changes.md` at 03:31 UTC (local 09-29 evening), dated by UTC, with no session_info;
+  this local pass fired ~11 minutes later. The evening sync also ran on both surfaces (~18:39 cloud, ~18:45
+  local), and the lit pipeline ran two concurrent instances (ASSUMPTION-1699).

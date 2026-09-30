@@ -23912,7 +23912,7 @@ ITEM: ASSUMPTION-1682 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09
   Claim to test: A finding counts as a proper null hypothesis when the same instrument could observe either outcome.
   Literature lane: falsifiability; severe testing; null-hypothesis design
 
-ITEM: ASSUMPTION-1684 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+ITEM: ASSUMPTION-1684 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29] [RE-DISPOSITIONED-15c: 2026-09-30 → MONITOR-618 (refreshed) (DISPOSITION-1016)]
   PROVENANCE:
     Origin: 14a
     Chain: [14a]
@@ -23960,7 +23960,7 @@ ITEM: ASSUMPTION-1693 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09
   Claim to test: A small, non-preregistered study warrants a "Speculative" confidence grade.
   Literature lane: preregistration and replicability; small-sample effect inflation
 
-ITEM: PRESUMPTION-1088 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+ITEM: PRESUMPTION-1088 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29] [RE-DISPOSITIONED-15c: 2026-09-30 → REVISE-493 (DISPOSITION-1014)]
   PROVENANCE:
     Origin: 14b
     Chain: [14b]
@@ -23972,7 +23972,7 @@ ITEM: PRESUMPTION-1088 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-0
   Claim to test: Surface-structural checks are a valid proxy for semantic review of interpretive prose.
   Literature lane: proxy-measure validity; automated vs human content QA
 
-ITEM: PRESUMPTION-1089 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+ITEM: PRESUMPTION-1089 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29] [RE-DISPOSITIONED-15c: 2026-09-30 → REVISE-494 (DISPOSITION-1015)]
   PROVENANCE:
     Origin: 14b
     Chain: [14b]
@@ -24088,3 +24088,140 @@ conflicting records (Rule 7: not averaged). It appended this note, two supplemen
 of the duplicate: ~272k subagent tokens (15a ~96k, 15b ~176k), far over the 4k/30k guideline. Candidate item
 for 14a/14b: the pipeline has no run lock or "already-running" check. No backup taken by this pass (shell
 unavailable: disk full); edits were append-only.
+
+## 2026-09-29 — 14a / 14b end-of-day intake (local; 27 sessions above ae4d384c)
+
+ITEM: ASSUMPTION-1700 [QUEUED] [SEARCHED-15a: 2026-09-30] [SEARCHED-15b: 2026-09-30] [DISPOSITIONED-15c: 2026-09-30]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak) | 15c: DISPOSITION-1008 MONITOR → MONITOR-629
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1700
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2cb24457 and f8e46eda.
+    Current status: UNTESTED
+  Claim to test: Research traditions are better individuated by programme (team output included) than by named author.
+  Literature lane: history/philosophy of science: Lakatos research programmes; author vs school attribution; bibliometric unit of analysis
+
+ITEM: ASSUMPTION-1702 [QUEUED] [SEARCHED-15a: 2026-09-30] [SEARCHED-15b: 2026-09-30] [DISPOSITIONED-15c: 2026-09-30]
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Moderate) | 15c: DISPOSITION-1009 INCORPORATE → PREMISE-221
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1702
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from fef2bbcb task text.
+    Current status: UNTESTED
+  Claim to test: A frozen artifact and a quiet upstream are indistinguishable without a standing rebuild/heartbeat.
+  Literature lane: liveness monitoring; dead-man's switch; absence-of-signal detection
+
+ITEM: PRESUMPTION-1095 [QUEUED] [SEARCHED-15a: 2026-09-30] [SEARCHED-15b: 2026-09-30] [DISPOSITIONED-15c: 2026-09-30]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | 15c: DISPOSITION-1010 REVISE → REVISE-489
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1095
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from fef2bbcb.
+    Current status: UNTESTED
+  Claim to test: Unwritten, model-default omission of sensitive content from a research archive is compatible with archival fidelity.
+  Literature lane: archival ethics; selective curation bias; LLM refusal/omission effects on summarization
+
+ITEM: PRESUMPTION-1096 [QUEUED] [SEARCHED-15a: 2026-09-30] [SEARCHED-15b: 2026-09-30] [DISPOSITIONED-15c: 2026-09-30]
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong) | 15c: DISPOSITION-1011 REVISE → REVISE-490
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1096
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 7886254b, b5f437f2, 6f1262b0.
+    Current status: UNTESTED
+  Claim to test: Monitors co-located with the monitored system give adequate coverage.
+  Literature lane: common-mode failure; independent monitoring; SRE observability
+
+ITEM: PRESUMPTION-1097 [QUEUED] [SEARCHED-15a: 2026-09-30] [SEARCHED-15b: 2026-09-30] [DISPOSITIONED-15c: 2026-09-30]
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Strong) | 15c: DISPOSITION-1012 REVISE → REVISE-491
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1097
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 7+ scheduled tasks.
+    Current status: UNTESTED
+  Claim to test: Static task prompts remain valid without scheduled review.
+  Literature lane: configuration drift; software rot; runbook maintenance
+
+ITEM: PRESUMPTION-1098 [QUEUED] [SEARCHED-15a: 2026-09-30] [SEARCHED-15b: 2026-09-30] [DISPOSITIONED-15c: 2026-09-30]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | 15c: DISPOSITION-1013 REVISE → REVISE-492
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1098
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 61461c72 dispositions.
+    Current status: UNTESTED
+  Claim to test: A 'monitor' disposition class is informative rather than a default sink.
+  Literature lane: decision triage under uncertainty; default effects; evidence-review grading (GRADE 'insufficient')
+
+ITEM: ASSUMPTION-1698 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-30 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-630); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1698
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 205e97cc.
+    Current status: UNTESTED
+  Claim to test (in-house): Does the keep-warm ping keep the broker usable, and who tracks the free-tier exit condition?
+
+ITEM: ASSUMPTION-1699 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-30 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-631); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1699
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 61461c72.
+    Current status: UNTESTED
+  Claim to test (in-house): Add a run lock/already-running check to the lit pipeline; recover or re-run AGAINST for 1692/1693.
+
+ITEM: ASSUMPTION-1703 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-30 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-632); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1703
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 69303f72, 77969643.
+    Current status: UNTESTED
+  Claim to test (in-house): Which surface runs each task, and what watches the cloud-side tasks? (OPEN-257)
+
+ITEM: ASSUMPTION-1707 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-30 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-633); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1707
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from f8e46eda, 6f1262b0, fef2bbcb.
+    Current status: UNTESTED
+  Claim to test (in-house): Reauthorize Gmail and sign in a browser for the scrape; add a human-input liveness alarm (OPEN-259).
+
+## 2026-09-30 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** The 6 literature-lane items from the 09-29 14a/14b intake (ASSUMPTION-1700, 1702; PRESUMPTION-1095..1098), searched FOR (15a) and AGAINST (15b) by two context-separated subagents, then dispositioned. 4 [IN-HOUSE] items (ASSUMPTION-1698, 1699, 1703, 1707) routed to monitor_queue.md as MONITOR-630..633 per precedent.
+**Dispositions:** DISPOSITION-1008..1013 — 1 INCORPORATE (1702 → PREMISE-221), 1 MONITOR (1700 → MONITOR-629, exit = Tom's OPEN-187 ruling), 4 REVISE (1095, 1096, 1097, 1098 → REVISE-489..492).
+**Re-dispositions (per 09-29 deeper-pass recommendation):** PRESUMPTION-1088 → REVISE-493, PRESUMPTION-1089 → REVISE-494 (DISPOSITION-1014/1015; MONITOR-622/623 closed); ASSUMPTION-1684 held at MONITOR-618 with an explicit exit condition bound to REVISE-493 (DISPOSITION-1016).
+**Running totals:** PREMISE 221 | MONITOR 633 | REVISE 494 | DISPOSITION 1016.
+**Depth caveat (fail loud):** about 3 searches per item per side, at most one full fetch each; many sources are search-result or background-knowledge level and are labelled so. 15b notes two author names recalled rather than verified (Villas Boas 2013 in 1098; Tan/Wagner/Treude 2023 in 1097). 15c independently verified arXiv:2609.31575 (Patsakis et al. 2026), the key source for 1097.
+**Independence:** 15a and 15b ran in separate contexts but on the same model family (cf. REVISE-488). Subagent cost: ~137k (15a) + ~140k (15b) tokens — over the 4k/30k guideline, as in prior runs.
+**SYSTEMIC-RISK (15b, High):** self-referential verification across 1095, 1096, 1097, 1098, 1702.
+**Environment (fail loud):** the sandbox home disk was at 100% during this run (first register write attempt failed cleanly with no partial writes; re-run from the outputs mount). Same condition as PRESUMPTION-1096.
+**Run lock:** none exists (ASSUMPTION-1699). This run checked register mtimes before starting and saw no concurrent instance.
+**Backlog:** the 153-item bare [QUEUED] lane (mostly 15d re-triggers, oldest 2026-07) was not touched, per standing scope (DEFECT-I still open). Backups: `*.bak.20260930-pre-15pipeline` for the five registers.

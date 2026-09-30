@@ -6394,3 +6394,56 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-29.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-30
+
+**Nothing was due and nothing changed state. One carried open item cleared upstream: PROP-2026-09-02-002's dated condition was met by yesterday's McGilchrist filing. Gmail is still unauthenticated for a second consecutive pipeline run, so no review decisions can come in.**
+
+  Items checked: 0. WATCH-003 is on a weekly cadence (last checked 09-29), and the off-cadence trigger did not fire: `review/archive/` is still at **20** files, latest `2026-09-24_decisions.md`, and `find -newer` returns nothing.
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, 14 checks; recommendation unchanged: one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` has **1** file and **0 new** (WATCH-001 tombstone, already tagged). Channel 2/3 grep: a vault-wide search for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, excluding `deferred/` and `agents/`, found **zero files**.
+
+**Tooling:** the sandbox shell is working again this run, so yesterday's gap is closed. `approved/` was recounted directly: **449**, which matches the ledger.
+
+**Findings (changes since 09-29 only):**
+1. **PROP-2026-09-02-002's dated condition is met.** The 09-29 `PROCESSED_LOG.md` Phase 2 logs PROP-2026-09-29-002 (McGilchrist, UnHerd Live "AI versus the human soul", full transcript) as "Closes watch card PROP-2026-09-02-002." This item comes off the "dated conditions unheld" list. PROP-2026-09-22-003 is still due after 10-03.
+2. **Gmail is still unauthenticated** (09-29 Phase 0 and Phase 4, the second consecutive run). No decision email can be processed. `pending/` now holds **8** cards, and the Fredrickson card has been queued for 6 days.
+3. The 09-29 pipeline also hit the sandbox-disk-full failure and ran through Desktop Commander. It is recorded upstream, so it is not this agent's item.
+
+**Resolution routing:** nothing was routed. This summary is the only write.
+
+**Open for Tom (all other carried items unchanged from 09-29):** reconnect Gmail (blocks every decision); INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033 (still OPEN per the ledger); handle the leak-shaped triplet half of PROP-2026-09-28-001; split the run log (**25th** recommendation, file ~6,400 lines).
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1. Next check: WATCH-003, 2026-10-06.
+
+---
+
+*Run completed 2026-09-30.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-30
+
+**No item due; nothing resolved. WATCH-003 not due (next on-cadence 2026-10-06); off-cadence trigger checked and not fired.**
+
+  Items checked: **0 due** (WATCH-003 last checked 2026-09-29, count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` present), 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still 20 files, latest `2026-09-24_decisions.md`; no new decision file, so no later disposition on PROP-2026-07-19-001 can exist. Not counted as a check.
+
+**Notes:** Shell was available this run (device_bash). `pending/` holds 8 cards (3 new dated 09-29); `approved/` 449 (unchanged). Carried open items for Tom are unchanged from the 09-29 summary (Gmail re-auth, INTEGRITY FLAG ruling, PROP-2026-08-14-033, PROP-2026-09-02-002 now 6 days overdue, run-log split recommendation).
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-09-30.*

@@ -23921,3 +23921,83 @@ PRESUMPTION-1094:
 *Surfaced by the second 14b run of 2026-09-28, after 14a and against its output. **8 items (1087–1094).** Types: structural 2 · epistemic 2 · methodological 2 · normative 1 · scaling 1. Risk: High 3 · Medium 4 · Low 1 · Critical 0. Checked against PRESUMPTION-1069–1086. Absorbed rather than filed: "holding indefinitely is safe" (= 1077/OPEN-253); "Tom reads escalations asynchronously" (= 1079; lit pipeline REVISE-486/487 now names it too).*
 
 ---
+
+PRESUMPTION-1095:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Normative: an agent's own content-safety defaults are presumed to coincide with the archive's fidelity norms. The wiki daily run chose, unprompted, to keep sensitive material out of PRS triplets (McGilchrist on possession and a chatbot suicide; Wolfram on his wife's death). No task text or decision states an editorial policy for sensitive content, so the archive's coverage is shaped by a policy nobody wrote or reviewed.
+  Evidence it was operative: fef2bbcb: omission decided in-run, reported in the closing message, not flagged for review.
+  Why it was unstated: too foundational to notice (model defaults are invisible to the designer)
+  Type: normative
+  Related decisions: —
+  Testability: testable via literature
+  Risk if wrong: Medium — tradition records become systematically thinner exactly where a thinker addresses death, mental health or the soul, which is central for McGilchrist and Wolfram.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1095
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an in-run editorial choice with no policy behind it.
+    Current status: UNTESTED
+
+PRESUMPTION-1096:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Methodological: a health check can run in the environment it checks. Morning system health, OpenStory refresh and the chat scrape are all bash-based; when the sandbox disk was full they could not measure uptime, disk or processes, and could not rotate their own reports (6 instead of 3). The monitor shares a common-mode failure with what it monitors, so its worst day is the day it reports least.
+  Evidence it was operative: 7886254b, b5f437f2, 6f1262b0 all failed on "No space left on device"; the health report was saved partial.
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: PRESUMPTION-846; ASSUMPTION-1704
+  Testability: testable via literature
+  Risk if wrong: High — the conditions most in need of detection are the ones that silence the detector.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1096
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three independent same-cause failures in monitoring tasks.
+    Current status: UNTESTED
+
+PRESUMPTION-1097:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Methodological: a scheduled task's prompt stays true once written. Today's runs executed against a scheduler "Known state" from 2026-08-05, a "Day 308 (~2026-06-26)" target, a BOSCO "X of 30,529" framing that is complete, a nonexistent `~/Documents/Projects` path, a stale `qc_sweep.py --max 6` command, and two task files with wrong wiki roots. Each run re-discovers and works around the same staleness; none updates the prompt.
+  Evidence it was operative: 69303f72, 751601c0, ef5ab364, 8564483e/d16baa9a/48302c52/aed02a89, 2cb24457, 984c5e89.
+  Why it was unstated: oversight (prompts are edited only by Tom; agents are told not to modify system files)
+  Type: methodological
+  Related decisions: OPEN-251; ASSUMPTION-1688, -1705
+  Testability: testable via literature
+  Risk if wrong: Medium — per-run workarounds diverge (see ASSUMPTION-1706) and the cost recurs daily.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1097
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the same staleness pattern across 7+ tasks.
+    Current status: UNTESTED
+
+PRESUMPTION-1098:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Epistemic: a disposition category is informative when it absorbs every outcome. The 09-29 15c run dispositioned 7 of 7 items MONITOR (running MONITOR 628 vs PREMISE 220, REVISE 488), while the concurrent deeper pass found moderate challenges to 1684, 1088 and 1089 that lean REVISE. The conversation treats MONITOR as a neutral holding state; it may instead be the default sink when evidence is thin or searches are shallow.
+  Evidence it was operative: 61461c72; for_lit_search.md 09-29 run note and supplement.
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: DISPOSITION-1001..1007; SYSTEMIC-RISK flag 2026-09-29
+  Testability: testable via literature
+  Risk if wrong: Medium — a sink category hides challenged premises as "watched".
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1098
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the disposition distribution and the deeper pass disagreeing.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-09-29, after 14a and against its output. **4 items (1095–1098).** Types: normative 1 · methodological 2 · epistemic 1 · structural 0 · scaling 0. Risk: High 1 · Medium 3. Absorbed rather than filed: tradition-as-author vs team (= PRESUMPTION-921 / OPEN-187, recurrence in ASSUMPTION-1700); concurrent runs as redundancy (= PRESUMPTION-771, recurrence in 1699); walk-notes absence read as no walk (= PRESUMPTION-048, recurrence in 1707); counts carried forward (= PRESUMPTION-1083). Same-model readers again (= 1086/1092).*
+
+---

@@ -24785,3 +24785,46 @@ MONITOR-628 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-29) — no 15a/15b search 
   In-house measure owed: Was the 09-24 pause of ~30 local jobs intentional? Who re-enabled them, and when? (OPEN-258)
   PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
   Cadence: Weekly | Next 15d check: 2026-10-06
+
+
+MONITOR-629 — NEW (2026-09-30)
+  Item: ASSUMPTION-1700
+  Disposition date: 2026-09-30 | Source: DISPOSITION-1008 | Priority: Medium | Reason code: AWAITING HUMAN RULING
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak)
+  What would change the disposition: EXIT CONDITION (explicit, per PRESUMPTION-1098): Tom rules on OPEN-187 (does team/programme output count as the thinker's tradition?). A ruling for programme -> INCORPORATE with the endorsement caveat (label team output as programme, not author, voice); a ruling for author-only -> REVISE the Hawkins-agent precedent. Max 2 further 15d cycles before escalating to revision_flags as an unruled governance item.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-07
+
+MONITOR-618 — REFRESHED (2026-09-30) by DISPOSITION-1016 (ASSUMPTION-1684) | Reason code: CONTESTED
+  EXIT CONDITION: resolves with REVISE-493 - if the sampled semantic spot-check is adopted, INCORPORATE the conditional form (carry-forward allowed with verified no-change + periodic full review); if not adopted within 2 cycles, REVISE bound to REVISE-493.
+
+MONITOR-622 — CLOSED (2026-09-30) → REVISE-493 (DISPOSITION-1014, PRESUMPTION-1088)
+MONITOR-623 — CLOSED (2026-09-30) → REVISE-494 (DISPOSITION-1015, PRESUMPTION-1089)
+
+MONITOR-630 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-30) — no 15a/15b search owed
+  Item: ASSUMPTION-1698
+  Disposition date: 2026-09-30 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..29 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Does the keep-warm ping keep the broker usable, and who tracks the free-tier exit condition?
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-07
+
+MONITOR-631 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-30) — no 15a/15b search owed
+  Item: ASSUMPTION-1699
+  Disposition date: 2026-09-30 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..29 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Add a run lock/already-running check to the lit pipeline; recover or re-run AGAINST for 1692/1693.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-07
+
+MONITOR-632 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-30) — no 15a/15b search owed
+  Item: ASSUMPTION-1703
+  Disposition date: 2026-09-30 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..29 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Which surface runs each task, and what watches the cloud-side tasks? (OPEN-257)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-07
+
+MONITOR-633 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-30) — no 15a/15b search owed
+  Item: ASSUMPTION-1707
+  Disposition date: 2026-09-30 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..29 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Reauthorize Gmail and sign in a browser for the scrape; add a human-input liveness alarm (OPEN-259).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-07

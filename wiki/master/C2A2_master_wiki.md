@@ -1077,3 +1077,17 @@ supply goals or meaning, one from hemispheric phenomenology and one from computa
 Review page: 8 proposals, opened in browser. Review Log 498 cards / 134 dates / 16 responses, address-clean.
 Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 6 (no WARN). Network unchanged: 956
 PRS / 140 CROSS / 94 FINDING. Pending 8; oldest (Fredrickson) 5 days queued.
+
+### 2026-09-30 — Daily Run
+Sandbox shell worked for most steps; `/sessions` is still 100% full, so Phase 5.6 (needs a temp dir) ran through
+Desktop Commander on the Mac. Gmail connector still invalidated (third consecutive run): no decision emails
+checked, no digest draft. Ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Wednesday
+specialist deposited McGilchrist PROP-2026-09-30-001 (Levin conversation #2, Platonic space) and -002 (Think Spiral,
+classical liberalism); no Kastrup specialist card. Orchestrator added **PROP-2026-09-30-003** (Carroll, Mindscape 369,
+Gregg Caruso on living well without free will, 2026-09-28; full transcript read). It is the explicit companion to
+Mindscape 354 (List): Carroll concedes anti-retributivism to a hard incompatibilist and locates the rest of the
+dispute in vocabulary. Candidate bridge to Stump on forgiveness and moral formation.
+
+Review page: 10 proposals, opened in browser. Review Log 501 cards / 135 dates / 16 responses, address-clean.
+Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 7 (no WARN). Network unchanged: 956
+PRS / 140 CROSS / 94 FINDING. Pending 10; oldest (Fredrickson PROP-2026-09-24-001) 6 days queued.

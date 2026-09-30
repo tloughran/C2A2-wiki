@@ -49356,3 +49356,230 @@ PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Item type: PRESUMP
   15a return: NO-SUPPORT-FOUND (Weak) — Literature-lane: anchoring / path dependence in sequential review; error propagation in audit trails. File: lit_search_results/for/PRESUMPTION-1089_for.md
   15b return: CHALLENGED (Moderate). File: lit_search_results/against/PRESUMPTION-1089_against.md
   DISPOSITION-1007: MONITOR (priority High) → MONITOR-623
+
+
+## 2026-09-30 — 15a / 15b returns and 15c dispositions (scheduled task `c2a2-lit-search-pipeline`)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1700
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Lakatos 1970/78 (programme as unit of appraisal; search-result level); Wuchty, Jones & Uzzi 2007, Science 316 (team production dominance)
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1700_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from 2cb24457 and f8e46eda. → 15a: searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1700
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: PARTIALLY-CHALLENGED | Strength: Weak
+  Key source: Cronin 2001, "Hyperauthorship", JASIST 52(7) (search-result level); SEP "Imre Lakatos" critiques on programme individuation
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1700_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from 2cb24457 and f8e46eda. → 15b: searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1702
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: SUPPORTED | Strength: Strong
+  Key source: Google SRE book ch. 6 (fetched); heartbeat/dead-man's-switch practice (OneUptime 2026, fetched); Chandra & Toueg 1996 (background)
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1702_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from fef2bbcb task text. → 15a: searched for supporting literature | Current status: SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1702
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Wilkinson 2016, SRE book ch. 10 "Practical Alerting" (fetched) - practice distinguishes the cases by probing the upstream directly; a rebuild on the same stale input still looks fresh
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1702_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from fef2bbcb task text. → 15b: searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1095
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: NO-SUPPORT-FOUND | Strength: Weak
+  Key source: SAA Code of Ethics - permits restriction only when written, justified and transparent (cuts against an unwritten default)
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1095_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from fef2bbcb. → 15a: searched for supporting literature | Current status: NO-SUPPORT-FOUND
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1095
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Strong
+  Key source: Schwartz & Cook 2002, "Archives, Records, and Power", Archival Science 2 (search-result level); Khorramrouz & Levy 2025, arXiv:2510.27087 (fetched abstract) - LLM refusal/omission is patterned, not neutral
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1095_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from fef2bbcb. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1096
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Google SRE book ch. 6 (fetched) - white-box monitoring is essential but always paired with black-box/external checks
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1096_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 7886254b, b5f437f2, 6f1262b0. → 15a: searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1096
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Strong
+  Key source: Wilkinson 2016, SRE book ch. 10 (fetched) - inside monitoring "does not provide a full picture"; NRC common-cause failure guidance ML23205A190 (search-result level)
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1096_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 7886254b, b5f437f2, 6f1262b0. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1097
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: NO-SUPPORT-FOUND | Strength: Weak
+  Key source: Lehman 1980, Proc. IEEE (via summary) - only fixed-specification programs stay valid without change
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1097_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred across 7+ scheduled tasks. → 15a: searched for supporting literature | Current status: NO-SUPPORT-FOUND
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1097
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Strong
+  Key source: Patsakis, Argyropoulos & Alepis 2026, "Configuration, Not Conscience", arXiv:2609.31575 (fetched by 15b; existence independently verified by 15c via web search) - prompts carry measurable maintenance debt
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1097_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred across 7+ scheduled tasks. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1098
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Driffield & Smith 2007, Medical Decision Making 27(2) (abstract fetched) - watchful waiting is optimal in an intermediate region; GRADE gap frameworks
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1098_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 61461c72 dispositions. → 15a: searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1098
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Moderate
+  Key source: Tversky & Shafir 1992, "Choice under Conflict", Psychological Science 3(6) (fetched) - conflict drives deferral; Cochrane "insufficient evidence" rates
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1098_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 61461c72 dispositions. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+## 15c — dispositions, 2026-09-30
+
+DISPOSITION-1008:
+  Date: 2026-09-30
+  Item: ASSUMPTION-1700
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Both sides are analogical: Lakatos makes the programme the unit of appraisal but contrasts it with the single theory, not the single author; the challenge (programme individuation is contested; hyperauthorship dilutes endorsement) is weak and practical.
+  Disposition: MONITOR → MONITOR-629
+  Reasoning: A stated assumption resting on analogy, with the real decision a governance ruling (OPEN-187) that literature cannot make. Not held for thin evidence: held because the exit is a human ruling.
+  What would change the disposition: EXIT CONDITION (explicit, per PRESUMPTION-1098): Tom rules on OPEN-187 (does team/programme output count as the thinker's tradition?). A ruling for programme -> INCORPORATE with the endorsement caveat (label team output as programme, not author, voice); a ruling for author-only -> REVISE the Hawkins-agent precedent. Max 2 further 15d cycles before escalating to revision_flags as an unruled governance item.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1009:
+  Date: 2026-09-30
+  Item: ASSUMPTION-1702
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong support that the two states are indistinguishable from the artifact alone; the moderate challenge does not dispute that, it narrows the remedy: a standing rebuild is not sufficient unless the liveness signal comes from the upstream itself.
+  Disposition: INCORPORATE → PREMISE-221
+  Reasoning: Strong support plus a challenge that refines rather than refutes (heuristic: strong + refining challenge -> INCORPORATE with caveat). Consistent with and extends PREMISE-220 (unchanged reading cannot distinguish stable from frozen), PREMISE-086 (alarm on age; monitor-of-monitor) and PREMISE-053 (scheduling necessary, not sufficient). No contradiction found.
+  Validated premise statement: A frozen derived artifact and a genuinely quiet upstream cannot be distinguished from the artifact alone; a standing liveness signal is required. CAVEAT (from 15b): a scheduled rebuild that reads the same possibly-stale input does not supply that signal - the signal must originate at or probe the upstream (source-side heartbeat, last-event timestamp, or direct collection check), and the same rule applies to human-input channels (OPEN-259).
+  Confidence: Moderate
+  Applicable to: Wiki daily run Phase 5.6 (PRS signal staleness), OpenStory/connectome freshness readers, human-input channels (chat scrape, Gmail intake). Extends PREMISE-220, PREMISE-086, PREMISE-053.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+DISPOSITION-1010:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1095
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support; even the nearest supportive source (SAA ethics) requires omissions to be written and justified. Strong challenge: model-default omissions are patterned and concentrate on death, grief and mental health.
+  Disposition: REVISE → REVISE-489
+  Reasoning: Presumption + strong challenge + no support -> REVISE/High per heuristic. The designers did not know the archive had a content policy at all.
+  What is at risk: Fidelity of McGilchrist and Wolfram tradition records (and any tradition addressing death, mental health or the soul); PRS triplet coverage; later readers reading the omission as the thinker's silence.
+  Recommended action: (1) Tom writes an explicit sensitive-content policy for the archive (what may be restricted, why, and how it is marked). (2) Any in-run omission is logged as a visible placeholder ("[restricted: topic, reason, date]") and flagged for review, never silently dropped. (3) Back-check fef2bbcb: restore or explicitly restrict the two omitted McGilchrist/Wolfram passages.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1011:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1096
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Support is only for co-located monitoring as one half of a pair; nothing supports it alone. Strong challenge from SRE and common-cause-failure practice, and the failure has already been realized (three monitors silenced by the same full disk; recurred during this run - the sandbox home disk was at 100%).
+  Disposition: REVISE → REVISE-490
+  Reasoning: Presumption + strong challenge + realized failure -> REVISE/High. PREMISE-086 already requires an independent monitor-of-monitor; this item shows that condition is unmet in practice.
+  What is at risk: Morning system health, OpenStory refresh, chat scrape and any bash-based health report; the scheduler-health check (ASSUMPTION-1703).
+  Recommended action: (1) Add one out-of-band watchdog on a different surface (e.g. a cloud-side task or Mac-side launchd script) that checks sandbox free disk and the age of the last health report, and alarms on absence. (2) Health reports write a first-line "partial: <what could not be measured>" marker. (3) Link to OPEN-257/-259.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1012:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1097
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support; Lehman's laws predict exactly this decay for prompts embedding paths, dates and counts. Strong challenge including a direct 2026 study of system prompts as configuration with maintenance debt.
+  Disposition: REVISE → REVISE-491
+  Reasoning: Presumption + strong challenge -> REVISE. Urgency Medium rather than High: the cost is recurring and divergent, but each run currently works around it.
+  What is at risk: All scheduled tasks with embedded dates, paths, counts or commands (69303f72, 751601c0, ef5ab364, 2cb24457, 984c5e89 and others); divergent per-run workarounds (ASSUMPTION-1706). Note: this task file itself names the wiki root as ".../Wiki" (capital W).
+  Recommended action: (1) A scheduled monthly prompt review (Tom, or an agent that drafts diffs for Tom to approve). (2) Let runs append a "PROMPT-STALE: <line> -> <observed>" note to a single file that the review reads, since agents may not edit prompts. (3) Move volatile facts (paths, counts, known states) out of prompts into one referenced config file.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1013:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1098
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Both sides converge: a MONITOR class is informative only with explicit exit thresholds, reason codes and scheduled re-review, and conflict/thin evidence reliably drives deferral. The register (MONITOR 628 vs PREMISE 220 before this run) and the 7-of-7 run are consistent with the sink pattern.
+  Disposition: REVISE → REVISE-492
+  Reasoning: Presumption + moderate challenge, and 15a's own caveats state the conditions under which the presumption fails, which are the conditions currently in force. REVISE/Medium: the fix is procedural and this run already applies part of it (reason codes and explicit exit conditions on new MONITOR records; 1088/1089 re-dispositioned).
+  What is at risk: The whole 15c/15d disposition layer; challenged premises carried as "watched" (e.g. 1088/1089 held at MONITOR on 09-29).
+  Recommended action: (1) Every MONITOR record carries a reason code (thin search / contested / awaiting human ruling / awaiting in-house data) and an explicit exit threshold. (2) A cycle cap: after N (suggest 3) 15d cycles without new evidence, 15d must propose INCORPORATE or REVISE. (3) Report the MONITOR share per run; flag any run above ~70% MONITOR.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+### 15c re-dispositions, 2026-09-30 (09-29 deeper-pass recommendation; evidence already on file)
+
+DISPOSITION-1014 (RE-DISPOSITION of DISPOSITION-1006 / MONITOR-622):
+  Date: 2026-09-30
+  Item: PRESUMPTION-1088
+  15a result (second pass): PARTIALLY-SUPPORTED (Weak) | 15b result (second pass): CHALLENGED (Moderate)
+  Evidence basis: Primary source fetched in the 09-29 second 15b pass: Ramprasad & Wallace 2024, arXiv:2411.16638 - automatic factuality metrics largely track surface features. DISPOSITION-1006's hold condition ("read the primary sources") is met.
+  Disposition: REVISE → REVISE-493
+  What is at risk: QC runs that mark pass on mechanical/structural checks and are read as semantic soundness (Summa QC, wiki QC).
+  Recommended action: Pair mechanical QC passes with a sampled semantic spot-check (e.g. 1 in 10 items read for meaning), and label passes as "structural pass" in QC output.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15a, 15b (second pass) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1015 (RE-DISPOSITION of DISPOSITION-1007 / MONITOR-623):
+  Date: 2026-09-30
+  Item: PRESUMPTION-1089
+  15a result (second pass): NO-SUPPORT-FOUND (Weak) | 15b result (second pass): CHALLENGED (Moderate)
+  Evidence basis: Wright 1988 fetched; Stelmakh et al. arXiv:2011.15083 fetched as a boundary case (no herding when reviewers form a view before seeing prior dispositions). DISPOSITION-1007's hold condition is met; the boundary case supplies the remedy.
+  Disposition: REVISE → REVISE-494
+  What is at risk: Any run that inherits prior dispositions or pass status (15d re-checks, QC re-review, 14a/14b reconciliations).
+  Recommended action: Blind-first review: the reviewing run forms its own judgment before reading the prior disposition, on at least a sampled subset; log disagreements.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15a, 15b (second pass) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1016 (RE-DISPOSITION of DISPOSITION-1002 / MONITOR-618):
+  Date: 2026-09-30
+  Item: ASSUMPTION-1684
+  15a result (second pass): PARTIALLY-SUPPORTED (Moderate) | 15b result (second pass): CHALLENGED (Moderate)
+  Evidence basis: Second pass: 15a PCAOB AS 2201 B29 (fetched) permits carrying a prior pass forward only with verified no-change AND a periodic fresh full review; 15b CHALLENGED/Moderate. Stated assumption, contested at moderate strength both ways.
+  Disposition: MONITOR → MONITOR-618 (refreshed)
+  What would change the disposition: EXIT CONDITION: resolves with REVISE-493 - if the sampled semantic spot-check is adopted, INCORPORATE the conditional form (carry-forward allowed with verified no-change + periodic full review); if not adopted within 2 cycles, REVISE bound to REVISE-493.
+  Priority: High
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15a, 15b (second pass) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+In-house lane (no DISPOSITION numbers minted; precedent 2026-09-22..29): ASSUMPTION-1698 → MONITOR-630, ASSUMPTION-1699 → MONITOR-631, ASSUMPTION-1703 → MONITOR-632, ASSUMPTION-1707 → MONITOR-633.
+
+SYSTEMIC-RISK-FLAG (15b, 2026-09-30, High): self-referential verification — PRESUMPTION-1096, ASSUMPTION-1702, PRESUMPTION-1097, PRESUMPTION-1098, PRESUMPTION-1095. File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-30_self-referential-verification.md. 15c concurs: four of the five are REVISE this run; 1702 is INCORPORATED only in its upstream-probe form.
+
+Running totals after this run: PREMISE-221 | MONITOR-633 (MONITOR-622, -623 closed to REVISE) | REVISE-494 | DISPOSITION-1016.
+This run's distribution (6 new literature items): 1 INCORPORATE, 1 MONITOR, 4 REVISE.

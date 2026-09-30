@@ -1961,3 +1961,33 @@ Negatives: Hoffman, Friston, Arkani-Hamed and Kastrup had nothing new in the win
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 8 (oldest Fredrickson PROP-2026-09-24-001,
 5 days).
+
+## 2026-09-30 — C2A2 daily run (Wed, McGilchrist + Kastrup specialist day)
+
+**Phase 0.** Gmail connector invalidated ("needs to reconnect it from connector settings"). No decision emails
+checked. **Needs Tom to reconnect Gmail** — third consecutive run.
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, **OPEN=1** (Wright
+PROP-2026-08-14-033, unchanged). Naive filename scan again flagged ~330 phantom files (known trap; ledger is
+authoritative). **0 files ingested.**
+
+**Phase 2: 1 proposal written.** McGilchrist covered by specialist (PROP-2026-09-30-001, -002). Searched Kastrup,
+Levin, Friston, Carroll, Stump, Fredrickson, Arkani-Hamed, Hoffman, Wolfram.
+- PROP-2026-09-30-003, Carroll, Mindscape 369 "Gregg Caruso on Living Well Without Free Will" (2026-09-28).
+  Full transcript read. 3 candidates; the criminal-case and incarceration-history material is not mined.
+Rejected: Arkani-Hamed "Positive Singularities and Volumes in Scattering Amplitudes" (arXiv 2608.15606) is a thesis
+by E. Mazzucchelli, not by Arkani-Hamed. Levin Thoughtforms Life episodes with Vyshedskiy (09-12) and
+Bohorquez/Serruya (09-02): guest-led, description/chapter list only, no transcript retrieved, so not from Levin in
+substance. Wolfram 09-28 pure-math essay already carded 09-29. Kastrup, Friston, Stump, Fredrickson, Hoffman,
+Hawkins: nothing new in the window.
+
+**Phase 3.** `review/2026-09-30_review.html` (106,368 bytes, 10 proposals), opened via `open`.
+**Phase 4.** Skipped: Gmail unavailable.
+**Phase 5.** `review/2026-09-26_review.html` moved to `review/_superseded/`. 09-28, 09-29, 09-30 retained.
+**Phase 5.5.** OK: 6,813,190 bytes; cards 501, dates 135, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** Sandbox attempt failed (`mktemp: No space left on device`); re-run on the Mac: OK, 1611 signals,
+87 pairs, span to 2026-09-23, stale_days 7, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 10 (oldest Fredrickson PROP-2026-09-24-001,
+6 days).

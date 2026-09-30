@@ -1520,3 +1520,10 @@ and no run made an architectural decision; they applied existing rules (the held
 policy, REVISE-483). `DECISION-083` (2026-08-27) still stands. The pass raised OPEN-257 (execution
 surfaces) and OPEN-258 (the 09-24 scheduler pause), and partially answered OPEN-256. See
 `changelog/2026-09-28_changes.md` (second-pass section).
+
+## Index note — 2026-09-29 (14a pass, local)
+
+**No DECISION minted.** 27 transcripts (all scheduled tasks; no designer speech) were read. No run made an
+architectural decision. OPEN-187 was again settled by precedent (ASSUMPTION-1700). Raised OPEN-259
+(human-input channels down); updated OPEN-257. `DECISION-083` still stands. See
+`changelog/2026-09-29_changes.md` (local-pass section).

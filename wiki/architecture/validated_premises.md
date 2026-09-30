@@ -7991,3 +7991,18 @@ PREMISE-220:
     (ASSUMPTION-1662). Extends PREMISE-086 and PREMISE-100.
   Re-check due: 2026-12-24 (Quarterly)
   Status: ACTIVE
+
+
+PREMISE-221:
+  Date validated: 2026-09-30
+  Source item: ASSUMPTION-1702 (DISPOSITION-1009)
+  Statement: A frozen derived artifact and a genuinely quiet upstream cannot be distinguished from the artifact alone; a standing liveness signal is required. CAVEAT (from 15b): a scheduled rebuild that reads the same possibly-stale input does not supply that signal - the signal must originate at or probe the upstream (source-side heartbeat, last-event timestamp, or direct collection check), and the same rule applies to human-input channels (OPEN-259).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Google SRE book ch. 6 (fetched); heartbeat/dead-man's-switch practice (OneUptime 2026, fetched); Chandra & Toueg 1996 (background)
+  Challenges noted: 15b (Moderate): Wilkinson 2016, SRE book ch. 10 "Practical Alerting" (fetched) - practice distinguishes the cases by probing the upstream directly; a rebuild on the same stale input still looks fresh — adopted as the caveat.
+  Confidence: Moderate
+  Applicable to: Wiki daily run Phase 5.6 (PRS signal staleness), OpenStory/connectome freshness readers, human-input channels (chat scrape, Gmail intake). Extends PREMISE-220, PREMISE-086, PREMISE-053.
+  Re-check due: 2026-12-30
+  Status: ACTIVE
+  Consistency: no contradiction with PREMISE-053, -086, -220; extends all three.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
