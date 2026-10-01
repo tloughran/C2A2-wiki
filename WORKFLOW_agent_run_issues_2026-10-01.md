@@ -54,7 +54,11 @@ Then, with Claude in a local session: resolve the conflict and do the local HTTP
   schema. A cloud session with the Supabase connector can do this as a reviewed migration.
   The `ND sociogram security review` Routine created today is a natural owner.
 
-### 0.3 Live dashboard refresh is stuck on an approval prompt
+### 0.3 DONE 2026-10-01 20:54Z: Live dashboard refresh was stuck on an approval prompt
+- Root cause: the prompt updated a Cowork artifact on the Mac (`mcp__remote-devices__*`), which cloud runs cannot reach,
+  so each run fell back to publishing a new page and waited for approval. The prompt now reads and republishes
+  one fixed claude.ai artifact (`UJxiePX1rbekwncDySfvw7`) in place, with no Mac link. The stuck session is archived.
+  Watch: the first unattended run (Fri 07:00 ET) may still pause on publish approval.
 - [R] Waiting since 11:18Z on an `Artifact` publish approval. The content was already delivered
   to you. Approve or deny it in the app to release the run.
 
