@@ -16,7 +16,10 @@ re-checked, **[I]** inference.
 
 ## Phase 0: today, on the Mac (about 20 min). Stops the bleeding.
 
-### 0.1 Local `main` has diverged from GitHub; two days of output are unpublished
+### 0.1 DONE 2026-10-01 17:14Z: local `main` had diverged from GitHub; two days of output were unpublished
+- Resolved by merging `origin/main` (heartbeat-only commits) instead of rebasing, then pushing `2be638ab`
+  after a local HTTP review. The 09-30 cause was confirmed: `Your local changes to the following files
+  would be overwritten`, meaning `wiki/vault/` Day files changed on disk mid-rebase. The writer is unidentified.
 - [V] origin/main has no `C2A2 daily run` commit after 09-29 and no `Summa vault sync` after 09-29.
 - [R] Scheduler health: daily-run step "committed 2026-10-01 09:45Z" (locally). `commit_daily_run.sh`
   never pushes, by design.
@@ -39,7 +42,11 @@ ls -la sync_vault.FAILED
 Then, with Claude in a local session: resolve the conflict and do the local HTTP review
 (per the no-blind-push rule). Push only after sign-off. Tonight's sync depends on this.
 
-### 0.2 Security: Supabase API-key functions callable by anonymous users
+### 0.2 Security: Supabase API-key functions callable by anonymous users (CONFIRMED; migration drafted, awaiting approval)
+- [V] 9 `SECURITY DEFINER` functions are executable by `PUBLIC` (so `anon` too): `get_byo_key`, `store_byo_key`,
+  `get_usage`, `get_web_usage`, `get_rt_usage`, `increment_usage`, `increment_web_usage`, `increment_rt_usage`, `ip_hit`.
+- [V] The only caller is `cc-broker`, using the service-role key. `plan_recall`/`plan_store` already
+  carry the target grants (`postgres` + `service_role` only). The fix revokes `PUBLIC`/`anon`/`authenticated`.
 - [R] 9 `SECURITY DEFINER` functions are exposed to `anon`/`authenticated` over REST, including
   **`get_byo_key` and `store_byo_key`**. Leaked-password protection is off. 7 tables have
   Row-Level Security on but no policies (default-deny, so probably safe; confirm).
@@ -77,6 +84,8 @@ Then, with Claude in a local session: resolve the conflict and do the local HTTP
   so 5 rows are unaccounted for. Run `bash scripts/check_voice_shell.sh --force`.
 - [R] `com.tomloughran.openstory.ui` launchd agent exits 127 (command not found); likely the
   OpenStory folder move [I].
+- [V] Leftover `stash@{0}: autostash` on the Mac holds 12 files of unrestored work (`metabolism_data.json`,
+  `metabolism_view.html`, `start_here.html`, `voice_guide/manifests.json`, ...). Inspect it; do not drop it blind.
 - [R] Sociogram: 23 KSGA references still in `wiki_narration.html`; regen via `regen_sociogram.sh`.
 
 ## Phase 3: decisions only you can make (batch them in one sitting)
