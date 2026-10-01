@@ -1991,3 +1991,27 @@ Hawkins: nothing new in the window.
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 10 (oldest Fredrickson PROP-2026-09-24-001,
 6 days).
+
+## 2026-10-01 — C2A2 daily run (Thu, Stump + Fredrickson specialist day)
+
+**Phase 0.** Gmail connector working again. `[C2A2-review-decision]` newer_than:3d: none. Unread search returned
+5 old threads, all already processed (09-23 thread 1a0ceeda8b2ac226 archived in 2026-09-24_decisions.md and in
+decision_emails.json); marked the 09-23 message read. No moves.
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+
+**Phase 2: 0 proposals.** Fredrickson covered by specialist (PROP-2026-10-01-001); no Stump specialist card.
+Searched Stump, Levin, Friston, Kastrup, Hoffman, Wolfram, Carroll, Arkani-Hamed, Hawkins. All hits already carded
+(Levin bioRxiv 09-03 pair, Levin "beyond excitable cells" 04-20, Friston artificial reasoning, Wolfram 09-28 essay,
+Arkani-Hamed Jul/Aug papers). Mindscape October AMA not yet posted (newest AMA 09-14).
+
+**Phase 3.** `review/2026-10-01_review.html` (115,722 bytes, 12 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-3299379318155793219).
+**Phase 5.** Nothing older than 3 days (09-28..10-01 retained).
+**Phase 5.5.** OK: 6,819,392 bytes; cards 502, dates 136, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 8, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 12 (oldest Fredrickson PROP-2026-09-24-001,
+7 days).

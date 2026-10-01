@@ -3493,3 +3493,24 @@ OPEN-257 (update 2026-09-29): Confirmed again tonight. A cloud run of this same 
   `changelog/2026-09-30_changes.md` at 03:31 UTC (local 09-29 evening), dated by UTC, with no session_info;
   this local pass fired ~11 minutes later. The evening sync also ran on both surfaces (~18:39 cloud, ~18:45
   local), and the lit pipeline ran two concurrent instances (ASSUMPTION-1699).
+
+## 2026-09-30 — raised by the 14a/14b end-of-day pass
+
+OPEN-260:
+  Raised: 2026-09-30 by 14b (PRESUMPTION-1099) from 14a (ASSUMPTION-1713, -1714, -1720)
+  Question: Thirty-two tasks are cloud-migrated, yet some still run locally (summa-2026-daily-batch,
+    c282-wiki-agent-daily-run). The Mac watchdog cannot see cloud runs, and about ten weekly agents have been
+    silent since about 09-20 with no alarm. For each scheduled task, which surface is authoritative? Should the
+    non-authoritative copy be disabled? And where should a single run record live that every monitor reads?
+  Needs: **Tom** (surface choice per task); then an in-house registry reconciliation.
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14a, 14b]
+    Original item: OPEN-260
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-09-30): Day 3 without either human-input channel. Gmail is still unauthorised and
+  there has been no walk chat since 09-23. PRESUMPTION-1101 adds the downstream cost: holds and escalations
+  addressed to Tom keep accumulating.

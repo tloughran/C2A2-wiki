@@ -24225,3 +24225,160 @@ ITEM: ASSUMPTION-1707 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-30 — empirical
 **Environment (fail loud):** the sandbox home disk was at 100% during this run (first register write attempt failed cleanly with no partial writes; re-run from the outputs mount). Same condition as PRESUMPTION-1096.
 **Run lock:** none exists (ASSUMPTION-1699). This run checked register mtimes before starting and saw no concurrent instance.
 **Backlog:** the 153-item bare [QUEUED] lane (mostly 15d re-triggers, oldest 2026-07) was not touched, per standing scope (DEFECT-I still open). Backups: `*.bak.20260930-pre-15pipeline` for the five registers.
+
+## 2026-09-30 — 14a / 14b end-of-day intake (local; 26 sessions above 43bc38cf)
+
+ITEM: PRESUMPTION-1099 [QUEUED] [SEARCHED-15a: 2026-10-01] [SEARCHED-15b: 2026-10-01] [DISPOSITIONED-15c: 2026-10-01 -> MONITOR-634]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1099
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 09-30 sessions.
+    Current status: UNTESTED
+  Claim to test: Monitoring a system split across execution environments needs a shared run record; per-environment health checks give false negatives.
+  Literature lane: distributed-systems observability; heartbeat/liveness in multi-scheduler systems; split-brain monitoring
+
+ITEM: PRESUMPTION-1100 [QUEUED] [SEARCHED-15a: 2026-10-01] [SEARCHED-15b: 2026-10-01] [DISPOSITIONED-15c: 2026-10-01 -> MONITOR-635]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1100
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 09-30 sessions.
+    Current status: UNTESTED
+  Claim to test: Status records that conflate attempt outcome with system state produce misleading health signals.
+  Literature lane: event sourcing vs state snapshots; monitoring semantics (attempt vs state); data provenance in operational dashboards
+
+ITEM: PRESUMPTION-1101 [QUEUED] [SEARCHED-15a: 2026-10-01] [SEARCHED-15b: 2026-10-01] [DISPOSITIONED-15c: 2026-10-01 -> MONITOR-636]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1101
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 09-30 sessions.
+    Current status: UNTESTED
+  Claim to test: Escalation-to-human designs need a policy for reviewer absence (expiry, default action, or batching); otherwise queues grow without bound.
+  Literature lane: human-in-the-loop automation; alert fatigue; escalation policies and default-on-timeout
+
+ITEM: PRESUMPTION-1102 [QUEUED] [SEARCHED-15a: 2026-10-01] [SEARCHED-15b: 2026-10-01] [DISPOSITIONED-15c: 2026-10-01 -> MONITOR-637]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1102
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 09-30 sessions.
+    Current status: UNTESTED
+  Claim to test: Polling schedules sized for active work should back off when the work completes (adaptive scheduling).
+  Literature lane: adaptive polling/backoff; job scheduling cost of idle runs; log noise and signal-to-noise in ops
+
+ITEM: ASSUMPTION-1709 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-638); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1709
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from f3e2863e, 4a833468, 9ce24613, c2274f26, bda0bca3, f22684b7, 63cf8e82.
+    Current status: UNTESTED
+  Claim to test (in-house): Add a standing-exception state to the QC flag so a held item is skipped until its files change.
+
+ITEM: ASSUMPTION-1710 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-639); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1710
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from f3e2863e, 9ce24613, 8926f9ff, f22684b7, 552bdcbd, 82cf36c9, f2e2f235, 6802962f.
+    Current status: UNTESTED
+  Claim to test (in-house): Patch the five named prompts; the substitution each run makes is evidence the correct form is known.
+
+ITEM: ASSUMPTION-1711 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-640); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1711
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 4a833468, b521813e, c2274f26, 9e53c0d9, 63cf8e82, f22684b7.
+    Current status: UNTESTED
+  Claim to test (in-house): Count reviewer triggers in the registry; normalise QC-log timestamps to one zone.
+
+ITEM: ASSUMPTION-1712 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-641); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1712
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 6a990b69, cc9cfabf.
+    Current status: UNTESTED
+  Claim to test (in-house): Separate 'last attempt' from 'feed state' in REFRESH_STATUS.md (append, with timestamp).
+
+ITEM: ASSUMPTION-1713 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-642); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1713
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 6802962f, cc9cfabf.
+    Current status: UNTESTED
+  Claim to test (in-house): Reconcile the cloud and local registries; the openstory.ui respawn count grew ~8,300 in a day.
+
+ITEM: ASSUMPTION-1714 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-643); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1714
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2109190b, c08b7992, 6802962f, bb98b1f8.
+    Current status: UNTESTED
+  Claim to test (in-house): Have the status report cite run timestamps, not presence at report time.
+
+ITEM: ASSUMPTION-1716 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-644); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1716
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from f00c7c1f, 496689c2, c9190a8c, c08b7992.
+    Current status: UNTESTED
+  Claim to test (in-house): One count source (ls inbox/proposals/pending) referenced by all tasks.
+
+ITEM: ASSUMPTION-1718 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-645); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1718
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 55721977, c9190a8c, f00c7c1f.
+    Current status: UNTESTED
+  Claim to test (in-house): Read-before-write in the scrape; OPEN-259 liveness alarm.
+
+ITEM: ASSUMPTION-1720 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-01 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-646); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1720
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2109190b, c08b7992, cc9cfabf, c9190a8c.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the stalled weeklies are among the 32 cloud-migrated tasks.
+
+## 2026-10-01 — second, concurrent 15a/15b/15c instance: CONFLICT, results NOT applied (fail loud)
+
+Two instances of `c2a2-lit-search-pipeline` ran on the same 09-30 intake at the same time (no run lock; ASSUMPTION-1699 / MONITOR-631). The other instance committed first, at 00:38:27. It dispositioned PRESUMPTION-1099..1102 as MONITOR-634..637 (DISPOSITION-1017..1020) and routed the in-house items to MONITOR-638..646. This instance searched the same four items independently and reached REVISE on all four. It wrote **nothing** to the registers, to avoid blending or overwriting the committed run (rule: surface conflicts, don't average them).
+- **Root of the disagreement:** orientation, not evidence. The other run tested the queue's "Claim to test" lines, which state the critique or remedy. This run tested the presumption as stated in presumptions.md. Both runs found that the presumptions do not hold. The other run then held its remedy-claims at MONITOR because the evidence was indirect.
+- **Data loss:** the other run overwrote this run's eight 15a/15b result files in lit_search_results/for|against (same filenames, written at 00:38:27). This run's file `against/SYSTEMIC-RISK-FLAG_2026-10-01_silence-read-as-health.md` survives. Its counterpart from the other run is `SYSTEMIC-RISK-FLAG_2026-10-01_added-state-unmonitored.md`.
+- **Repair made:** the other run's tag edit stripped the item IDs from the 9 in-house header lines (ASSUMPTION-1709..1720 became bare " [NO-LIT-OWED ...]" lines). The `ITEM: ASSUMPTION-NNNN [QUEUED] [IN-HOUSE]` prefixes have been restored, and its tags and MONITOR numbers kept. Nothing else from the other run was changed.
+- **For Tom:** the side-by-side comparison and this run's proposed (unapplied) dispositions, REVISE-495..497 and a REVISE-486 corroboration, are in `wiki/review/2026-10-01_lit-pipeline_concurrent-run_conflict.md`. Backups from before both writes: `*.bak.20261001-pre-15pipeline`.

@@ -32896,3 +32896,225 @@ ASSUMPTION-1708:
 *Extracted by the 14a run of 2026-09-29 (local; fired ~2026-09-30T03:42Z). **11 items (1698–1708).** Coverage: no designer speech. 27 sessions above ae4d384c (the 09-28 second pass) were read by three reader subagents. Verified at source: PRS 956; DISPOSITION-1005..1007 in monitor_queue.md; the three 09-29 pending proposals; the chat-summary FAIL text; this pass's `df`. Other figures are reader-reported. `.bak` taken in the sandbox before this append.*
 
 ---
+
+## 2026-09-30 — 14a end-of-day pass (local; 26 sessions above 43bc38cf)
+
+ASSUMPTION-1709:
+  Date identified: 2026-09-30
+  Statement: Summa Day 076 is a standing hold Tom owns. About six sweep and reviewer runs re-flagged it with the same figures (1,715 vs 2,773 words, ratio 0.618, 38% gap against a ±25% limit). Runs stated "it is the standing hold you own" and "I didn't escalate it again". 4a833468 proposed a "standing exception" flag so it stops returning "as an empty run every 4 hours".
+  Context: f3e2863e, 4a833468, 9ce24613, c2274f26, bda0bca3, f22684b7, 63cf8e82.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: methodological
+  Related decisions: ASSUMPTION-1706
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1709
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1710:
+  Date identified: 2026-09-30
+  Statement: Stale task prompts were again worked around in place rather than corrected. Instances: the task-file command `qc_sweep.py --max 6` exits 120 and runs substitute `report --max 6` (3, 6, 8, 9, 13 of the batch); wiki root given as `Documents/Claude/RC Karpathy Wiki Project/` or `Wiki` instead of `Projects/.../wiki` (552bdcbd, 82cf36c9); Summa batch prompt says "308 episodes" against 307 actual; the scheduler watchdog's "Known state" dates from 2026-08-05; Summa memory-file path is unreachable in every run.
+  Context: f3e2863e, 9ce24613, 8926f9ff, f22684b7, 552bdcbd, 82cf36c9, f2e2f235, 6802962f.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: methodological
+  Related decisions: PRESUMPTION-1097 (REVISE-491); ASSUMPTION-1705
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1710
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1711:
+  Date identified: 2026-09-30
+  Statement: Summa reviewer runs read their contracts to different depths and log differently. Stated: "I read only the reviewer and escalation sections of `QC.md`" (4a833468); "I relied on the 08:17 check" (c2274f26, no QC-log line); 9e53c0d9 read Summa.md, QC.md and bridges in full. Reviewer triggers fired a minute apart (02:16 and 02:18, 63cf8e82: "Two reviewer triggers may be firing at once"), and QC-log rows mix host-local and UTC-style times, so rows are out of order.
+  Context: 4a833468, b521813e, c2274f26, 9e53c0d9, 63cf8e82, f22684b7.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: methodological
+  Related decisions: PRESUMPTION-771; OPEN-257
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1711
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1712:
+  Date identified: 2026-09-30
+  Statement: OpenStory telemetry refresh, on failure, overwrote the file's only line (a 10:15Z PASS with current feeds) with a FAIL line, as the task requires. Stated: "I didn't capture the exact time of this run, so the line has the date only." The run itself flagged that this may trigger the morning alert though the feeds are current.
+  Context: 6a990b69, cc9cfabf.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: architectural
+  Related decisions: ASSUMPTION-1704
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1712
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1713:
+  Date identified: 2026-09-30
+  Statement: Scheduler health: 29 OK / 34 WARN / 3 FAIL (41 registry tasks, 16 launchd agents). FAILs: openstory.ui exit 127 (runs 21,606, up from 13,267 a day earlier); prs-connectome-publish page built 09-25 vs template 09-29; voice-shell-check RED since 09-28 (12 of 371 rows failed). 32 tasks are cloud-migrated, so the Mac-side watchdog "can no longer confirm that they fire". run_stall FAIL a second day.
+  Context: 6802962f, cc9cfabf.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: architectural
+  Related decisions: ASSUMPTION-1698, -1704; OPEN-257
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1713
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1714:
+  Date identified: 2026-09-30
+  Statement: Morning project status stated that today's scheduler health check and Supabase keep-warm "didn't fire", while "nightly … jobs all ran on time". Both ran today (6802962f reported its block; bb98b1f8: ping returned 1 row, "the 7-day inactivity clock is reset"). Absence at check time was read as non-execution.
+  Context: 2109190b, c08b7992, 6802962f, bb98b1f8.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: epistemic
+  Related decisions: ASSUMPTION-1698
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1714
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1715:
+  Date identified: 2026-09-30
+  Statement: Fallback to the Mac shell was assumed available. Desktop Commander was "declined automatically because no one was around to approve it" in d9fe8602, 6a990b69, cc9cfabf, 8926f9ff and 2109190b, yet worked in f00c7c1f. Sandbox disk was 100% full in most runs, while 552bdcbd, 63cf8e82 and this pass had working bash (this pass: 38% used). d9fe8602 declined to review with file tools because that "would have left nothing recorded in the QC state".
+  Context: d9fe8602, 6a990b69, cc9cfabf, 8926f9ff, 2109190b, f00c7c1f.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: architectural
+  Related decisions: ASSUMPTION-1704; PRESUMPTION-1096 (REVISE-490)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1715
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1716:
+  Date identified: 2026-09-30
+  Statement: Counts carried between tasks disagree on the same day: pending proposals 10 (f00c7c1f), "Eight" (496689c2), 11 (c9190a8c, c08b7992); Gmail failure "3rd consecutive run" (f00c7c1f) vs "two pipeline runs in a row" (496689c2). Master wiki status stops at 09-26 and says 1 card pending, so footer counts "may be out of date" (c9190a8c).
+  Context: f00c7c1f, 496689c2, c9190a8c, c08b7992.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: empirical
+  Related decisions: PRESUMPTION-1083
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1716
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1717:
+  Date identified: 2026-09-30
+  Statement: McGilchrist agent fell back to "the task's 'significant work not yet captured' rule" because nothing new appeared in 30 days. PROP-2026-09-30-001 (Levin–McGilchrist #2) was filed at Speculative confidence with title, length, date and topic from search results only (the video page could not be opened). Seven candidates were rejected, mostly misdated search listings.
+  Context: 552bdcbd.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: epistemic
+  Related decisions: OPEN-187
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1717
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1718:
+  Date identified: 2026-09-30
+  Statement: No human input for another day. No daily-walk chat since 2026-09-23. Gmail still unauthorised, so walk notes cannot arrive (c9190a8c: "Walk notes found: NO"). The chat scrape "replaced a file that already had the same name, and I hadn't read that file first. Any earlier version from today is gone", and left four of yesterday's chats unread.
+  Context: 55721977, c9190a8c, f00c7c1f.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: architectural
+  Related decisions: OPEN-259; ASSUMPTION-1707
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1718
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1719:
+  Date identified: 2026-09-30
+  Statement: The lit pipeline dispositioned 1 INCORPORATE, 1 MONITOR, 4 REVISE (DISPOSITION-1008..1016; PREMISE 221, MONITOR 633, REVISE 494), unlike 09-29's 7 of 7 MONITOR. It checked register mtimes before starting in place of a run lock. Depth stated: ~3 searches per item per side; ~277k subagent tokens.
+  Context: 82cf36c9.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: methodological
+  Related decisions: ASSUMPTION-1699; PRESUMPTION-1098 (REVISE-492)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1719
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+ASSUMPTION-1720:
+  Date identified: 2026-09-30
+  Statement: Weekly infrastructure has stalled. About ten weekly agents have not run since about 2026-09-20, including the Claude Projects backup, wiki janitor and Levin-Friston agent (2109190b, c08b7992). Wiki-janitor findings still date from run #30 on Sep 20 (cc9cfabf). Master wiki status stops at 09-26. By contrast the BOSCO archive completed: 30,529 emails, none failed, heartbeat switched off.
+  Context: 2109190b, c08b7992, cc9cfabf, c9190a8c.
+  Source: first-hand (session transcripts via two reader subagents)
+  Type: architectural
+  Related decisions: OPEN-257; ASSUMPTION-1713
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1720
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; quoted text is the source run’s own wording.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-09-30 (local). **12 items (1709–1720).** Coverage: no designer speech. 26 sessions above 43bc38cf (the 09-29 local pass) read by two reader subagents (limit 12 messages each). Verified at source: PRS 956; three 09-30 pending proposals on disk; this pass's `df`. Other figures are reader-reported. `.bak` taken before this append.*
+
+---

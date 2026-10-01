@@ -24001,3 +24001,85 @@ PRESUMPTION-1098:
 *Surfaced by the 14b run of 2026-09-29, after 14a and against its output. **4 items (1095–1098).** Types: normative 1 · methodological 2 · epistemic 1 · structural 0 · scaling 0. Risk: High 1 · Medium 3. Absorbed rather than filed: tradition-as-author vs team (= PRESUMPTION-921 / OPEN-187, recurrence in ASSUMPTION-1700); concurrent runs as redundancy (= PRESUMPTION-771, recurrence in 1699); walk-notes absence read as no walk (= PRESUMPTION-048, recurrence in 1707); counts carried forward (= PRESUMPTION-1083). Same-model readers again (= 1086/1092).*
 
 ---
+
+## 2026-09-30 — 14b end-of-day pass (local)
+
+PRESUMPTION-1099:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Structural: the scheduled-task fleet behaves as if it has one execution surface and one observer. Thirty-two tasks moved to cloud scheduling, yet several still ran locally today. The Mac watchdog cannot see the cloud runs, and the morning status read missing local evidence as "didn't fire". Ten weekly agents have gone quiet without any alarm. Each surface's monitor assumes its own view is the whole fleet.
+  Evidence it was operative: 6802962f ("can no longer confirm that they fire"); 2109190b vs bb98b1f8/6802962f; ASSUMPTION-1713, -1714, -1720
+  Why it was unstated: not yet questioned
+  Type: structural
+  Related decisions: OPEN-257; OPEN-260 (new)
+  Testability: testable via literature
+  Risk if wrong: High — a silently stopped task reads the same as one running elsewhere.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1099
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+PRESUMPTION-1100:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Epistemic: the latest line in a status artifact is read as the current state of the thing it describes. It actually records only the latest attempt by whoever wrote last. Today's cases: a FAIL written over a current PASS, "didn't fire" inferred from absence, and the same pending count reported as 8, 10 and 11.
+  Evidence it was operative: ASSUMPTION-1712, -1714, -1716
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: PRESUMPTION-1083; ASSUMPTION-1702 (PREMISE-221)
+  Testability: testable via literature
+  Risk if wrong: Medium — false alarms, plus true alarms dismissed as noise.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1100
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+PRESUMPTION-1101:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Normative: deferring to the designer is the safe default even when the designer is absent. Every run that met a judgment call wrote "the hold is yours" or "flagged for you". Meanwhile the open items grew: Day 076 (re-flagged every 4 h), WATCH-003 (14 identical checks), PROP-2026-08-14-033, PROP-2026-09-28-001, three Summa length flags, and the 25th recommendation to split the watch list. There has been no human input for 7+ days. The system assumes escalation is cheap and that the reviewer is live.
+  Evidence it was operative: c2274f26, e5156b86, 496689c2, 9e53c0d9; OPEN-259
+  Why it was unstated: value-laden
+  Type: normative
+  Related decisions: OPEN-259; PRESUMPTION-1077, -1079
+  Testability: testable via literature
+  Risk if wrong: High — when the human reviewer is unavailable, escalations stop being decisions and become a backlog.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1101
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+PRESUMPTION-1102:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Scaling: a no-op run is treated as free and as a success. Today there were the 15th consecutive Summa batch no-op, about 12 Summa sweep and reviewer runs that reviewed nothing, and duplicate reviewer triggers. Each one writes log lines and uses tokens and disk, on a day when the disk was full in most sandboxes.
+  Evidence it was operative: f2e2f235 ("15th no-op run in a row"); Summa runs in both batches; ASSUMPTION-1705
+  Why it was unstated: not yet questioned
+  Type: scaling
+  Related decisions: ASSUMPTION-1705, -1709
+  Testability: testable via literature
+  Risk if wrong: Medium — runs that do nothing still cost tokens and disk, and their log lines bury the real signals.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1102
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-09-30, after 14a and against its output. **4 items (1099–1102).** Types: structural 1 · epistemic 1 · normative 1 · scaling 1 · methodological 0. Risk: High 2 · Medium 2. Absorbed rather than filed: stale prompts (= PRESUMPTION-1097 / REVISE-491, recurrence in ASSUMPTION-1710); disk-full fallback (= PRESUMPTION-1096 / REVISE-490, recurrence in 1715); concurrent duplicate triggers (= PRESUMPTION-771, recurrence in 1711); counts carried forward (= PRESUMPTION-1083, recurrence in 1716). Same-family readers again (= 1086/1092); readers were a different model tier from this pass, not a different family.*
+
+---

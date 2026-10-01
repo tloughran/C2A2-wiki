@@ -24828,3 +24828,99 @@ MONITOR-633 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-30) — no 15a/15b search 
   In-house measure owed: Reauthorize Gmail and sign in a browser for the scrape; add a human-input liveness alarm (OPEN-259).
   PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
   Cadence: Weekly | Next 15d check: 2026-10-07
+
+
+MONITOR-634 — NEW (2026-10-01) by DISPOSITION-1017 (PRESUMPTION-1099) | Reason code: CONTESTED/INDIRECT-EVIDENCE
+  Item: PRESUMPTION-1099
+  Disposition date: 2026-10-01 | Source: DISPOSITION-1017 | Priority: Medium
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak)
+  What would change the disposition: A source or in-house test showing a shared run record with staleness detection catches failures that per-environment checks missed (INCORPORATE); evidence the record itself becomes the blind spot (REVISE).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-635 — NEW (2026-10-01) by DISPOSITION-1018 (PRESUMPTION-1100) | Reason code: CONTESTED/INDIRECT-EVIDENCE
+  Item: PRESUMPTION-1100
+  Disposition date: 2026-10-01 | Source: DISPOSITION-1018 | Priority: Medium
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: NO-CHALLENGE-FOUND (Weak)
+  What would change the disposition: An in-house measurement of a misleading status signal caused by attempt/state conflation (INCORPORATE), or a case showing a single result field suffices at this scale (REVISE/drop).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-636 — NEW (2026-10-01) by DISPOSITION-1019 (PRESUMPTION-1101) | Reason code: CONTESTED/INDIRECT-EVIDENCE
+  Item: PRESUMPTION-1101
+  Disposition date: 2026-10-01 | Source: DISPOSITION-1019 | Priority: High
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  What would change the disposition: Peer-reviewed or measured evidence on HITL queue behaviour under reviewer absence; or in-house backlog data showing growth without a policy (INCORPORATE the refined form).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-637 — NEW (2026-10-01) by DISPOSITION-1020 (PRESUMPTION-1102) | Reason code: CONTESTED/INDIRECT-EVIDENCE
+  Item: PRESUMPTION-1102
+  Disposition date: 2026-10-01 | Source: DISPOSITION-1020 | Priority: Low
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  What would change the disposition: An in-house cost/latency measurement comparing adaptive vs fixed polling, or a source on idle-run cost in agent scheduling.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-638 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1709
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Add a standing-exception state to the QC flag so a held item is skipped until its files change.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-639 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1710
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Patch the five named prompts; the substitution each run makes is evidence the correct form is known.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-640 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1711
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Count reviewer triggers in the registry; normalise QC-log timestamps to one zone.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-641 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1712
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Separate 'last attempt' from 'feed state' in REFRESH_STATUS.md (append, with timestamp).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-642 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1713
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Reconcile the cloud and local registries; the openstory.ui respawn count grew ~8,300 in a day.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-643 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1714
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Have the status report cite run timestamps, not presence at report time.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-644 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1716
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: One count source (ls inbox/proposals/pending) referenced by all tasks.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-645 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1718
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Read-before-write in the scrape; OPEN-259 liveness alarm.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08
+
+MONITOR-646 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search owed
+  Item: ASSUMPTION-1720
+  Disposition date: 2026-10-01 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..30 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Check whether the stalled weeklies are among the 32 cloud-migrated tasks.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-08

@@ -1091,3 +1091,16 @@ dispute in vocabulary. Candidate bridge to Stump on forgiveness and moral format
 Review page: 10 proposals, opened in browser. Review Log 501 cards / 135 dates / 16 responses, address-clean.
 Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 7 (no WARN). Network unchanged: 956
 PRS / 140 CROSS / 94 FINDING. Pending 10; oldest (Fredrickson PROP-2026-09-24-001) 6 days queued.
+
+### 2026-10-01 — Daily Run
+Gmail connector is back after three failed runs. Phase 0: no new `[C2A2-review-decision]` email; the only recent
+thread (2026-09-23) was already processed and archived, and is now marked read. Ledger OPEN=1 unchanged (Wright
+PROP-2026-08-14-033). **0 files ingested.** Thursday specialist deposited Fredrickson PROP-2026-10-01-001 (positivity
+resonance in dementia caregivers); no Stump specialist card. Orchestrator searched the other ten and wrote **0
+proposals**: everything in the 60-day window is already carded (Levin bioRxiv 09-03 pair, Friston "Active inference and
+artificial reasoning", Wolfram 09-28 pure-math essay, Arkani-Hamed July/August papers). The October Mindscape AMA is
+not yet posted.
+
+Review page: 12 proposals, opened in browser. Digest draft created. Network unchanged: 956 PRS / 140 CROSS / 94
+FINDING. Pending 12; oldest (Fredrickson PROP-2026-09-24-001) 7 days queued. Separately, `review/` holds a lit-search
+concurrent-run conflict report (2026-10-01) that needs Tom's decision.

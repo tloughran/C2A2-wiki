@@ -1,1 +1,1 @@
-2026-09-29T10:15Z  PASS  telemetry=2026-09-29/33 agents  node_edges=2026-09-29  | DB age 0h
+2026-09-30 (later run; time not captured)  FAIL  step 1 (freshness guard) — sandbox bash: "useradd: /etc/passwd.18120: No space left on device"; Desktop Commander fallback declined (no approver in scheduled run)  | prior run 2026-09-30T10:15Z PASS telemetry=2026-09-30/33 agents node_edges=2026-09-30 — feeds still current as of that run

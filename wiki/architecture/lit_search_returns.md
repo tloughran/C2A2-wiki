@@ -49583,3 +49583,145 @@ SYSTEMIC-RISK-FLAG (15b, 2026-09-30, High): self-referential verification — PR
 
 Running totals after this run: PREMISE-221 | MONITOR-633 (MONITOR-622, -623 closed to REVISE) | REVISE-494 | DISPOSITION-1016.
 This run's distribution (6 new literature items): 1 INCORPORATE, 1 MONITOR, 4 REVISE.
+
+
+## 2026-10-01 — 15a/15b/15c run (4 literature-lane items, PRESUMPTION-1099..1102; 9 in-house items routed)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1099
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Beyer, Jones, Petoff, Murphy (eds.), 2016. Site Reliability Engineering, ch. 6 "Monitoring Distributed Systems". https://sre.google/sre-book/monitoring-distributed-systems/
+  Summary: Black-box/end-to-end monitoring and failure-detector theory support that a per-component view is unreliable and an independent shared signal is needed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1099_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1099
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Irin (DEV Community), n.d. "A Dead Man's Switch for Your Monitoring Stack". https://dev.to/irinobservability/a-dead-mans-switch-for-your-monitoring-stack-2335
+  Summary: No source says per-environment checks are sufficient or a shared record is harmful.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1099_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1017:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1099
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Moderate indirect support (failure-detector theory, SRE black-box monitoring) against only a weak, partly corroborating challenge. Support is extrapolated, not direct; domain transfer to scheduled agent tasks untested.
+  Disposition: MONITOR → MONITOR-634
+  Reasoning: MONITOR rather than INCORPORATE: neither search found a source stating the claim for split-scheduler agent systems, and this is a PRESUMPTION (designers unaware). Challenge adds a refinement: the shared record needs freshness/TTL semantics and an external dead-man check.
+  What would change the disposition: A source or in-house test showing a shared run record with staleness detection catches failures that per-environment checks missed (INCORPORATE); evidence the record itself becomes the blind spot (REVISE).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1100
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Fowler, 2005. "Focusing on Events" (Event Narrative). https://martinfowler.com/eaaDev/EventNarrative.html
+  Summary: Event-sourcing literature supports separating immutable attempt/event records from derived current state; SRE guidance supports separating symptom from cause.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1100_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1100
+  Search direction: AGAINST (challenging)
+  Result: NO-CHALLENGE-FOUND
+  Strength: Weak
+  Key source: Velprove, n.d. "API Health Check Patterns: What /healthz Should Return". https://medium.com/@velprove/api-health-check-patterns-what-healthz-should-return-4d3ade722eb1
+  Summary: Evidence found reinforces the presumption: merging distinct signals destroys signal-to-action mapping.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1100_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: NO-CHALLENGE-FOUND
+
+DISPOSITION-1018:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1100
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: NO-CHALLENGE-FOUND | 15b strength: Weak
+  Net assessment: Weak-moderate analogical support; no challenge found, only a minimality caveat. Failure mode is not directly evidenced.
+  Disposition: MONITOR → MONITOR-635
+  Reasoning: MONITOR: absence of challenge reflects thin literature, not strength; support is by design-pattern analogy. Literature-gap rule favours MONITOR over premature INCORPORATE.
+  What would change the disposition: An in-house measurement of a misleading status signal caused by attempt/state conflation (INCORPORATE), or a case showing a single result field suffices at this scale (REVISE/drop).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1101
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: TianPan.co, 2026-05-17. "When No One Answers the Escalation: Human-in-the-Loop Is a Staffing Problem". https://tianpan.co/blog/2026/05/17/when-no-one-answers-the-escalation
+  Summary: Practitioner literature states directly that escalation designs need timeout, default-action and batching policies.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1101_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1101
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: TianPan.co, 2026-05-17. "When No One Answers the Escalation". https://tianpan.co/blog/2026/05/17/when-no-one-answers-the-escalation
+  Summary: The "needs a policy" part holds.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1101_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1019:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1101
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Moderate support for needing a reviewer-absence policy; moderate challenge to which remedies are acceptable (default-on-timeout is hazardous). Evidence is practitioner-grade only.
+  Disposition: MONITOR → MONITOR-636
+  Reasoning: MONITOR: contested on remedy rather than on need. Candidate refined statement: "escalation designs need a reviewer-absence policy; prefer tiered fallback and upstream bounding to default-on-timeout." Single-owner, multi-day absence is outside the sources' domain. Relevant to the open human-ruling backlog (e.g. OPEN-187).
+  What would change the disposition: Peer-reviewed or measured evidence on HITL queue behaviour under reviewer absence; or in-house backlog data showing growth without a policy (INCORPORATE the refined form).
+  Monitoring cadence: Weekly | Priority: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1102
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Brooker, 2015. "Exponential Backoff and Jitter". AWS Architecture Blog. https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/
+  Summary: Backoff is well established for retries/contention and noise reduction is well documented.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1102_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1102
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Susumun, n.d. "Exponential Backoff vs. Fixed-Interval Retries: When Growing Wait Times Actually Help". https://dev.to/susumun/exponential-backoff-vs-fixed-interval-retries-when-growing-wait-times-actually-help-1dj
+  Summary: Challenge is about transfer, not refutation.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1102_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1020:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1102
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Weak-moderate analogical support (retry backoff, noise reduction) against a moderate transfer challenge (single-scheduler fixed intervals; latency and missed-event risk).
+  Disposition: MONITOR → MONITOR-637
+  Reasoning: MONITOR: backoff literature concerns retries and contention, not idle polling after completion; both sides are indirect. The reset-on-new-work condition is the key unevidenced risk.
+  What would change the disposition: An in-house cost/latency measurement comparing adaptive vs fixed polling, or a source on idle-run cost in agent scheduling.
+  Monitoring cadence: Weekly | Priority: Low
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+SYSTEMIC-RISK-FLAG (15b, 2026-10-01, Weak): added unmonitored state — PRESUMPTION-1099, -1100, -1102. File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-01_added-state-unmonitored.md
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1709 → MONITOR-638, ASSUMPTION-1710 → MONITOR-639, ASSUMPTION-1711 → MONITOR-640, ASSUMPTION-1712 → MONITOR-641, ASSUMPTION-1713 → MONITOR-642, ASSUMPTION-1714 → MONITOR-643, ASSUMPTION-1716 → MONITOR-644, ASSUMPTION-1718 → MONITOR-645, ASSUMPTION-1720 → MONITOR-646
+
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-646 | REVISE-494 (unchanged) | DISPOSITION-1020.
+This run's distribution (4 new literature items): 0 INCORPORATE, 4 MONITOR, 0 REVISE.
