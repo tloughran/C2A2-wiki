@@ -42,7 +42,7 @@ ls -la sync_vault.FAILED
 Then, with Claude in a local session: resolve the conflict and do the local HTTP review
 (per the no-blind-push rule). Push only after sign-off. Tonight's sync depends on this.
 
-### 0.2 Security: Supabase API-key functions callable by anonymous users (CONFIRMED; migration drafted, awaiting approval)
+### 0.2 Security: Supabase API-key functions callable by anonymous users (DONE 2026-10-01 17:19Z: migration `lock_broker_functions_to_service_role` applied and verified)
 - [V] 9 `SECURITY DEFINER` functions are executable by `PUBLIC` (so `anon` too): `get_byo_key`, `store_byo_key`,
   `get_usage`, `get_web_usage`, `get_rt_usage`, `increment_usage`, `increment_web_usage`, `increment_rt_usage`, `ip_hit`.
 - [V] The only caller is `cc-broker`, using the service-role key. `plan_recall`/`plan_store` already
