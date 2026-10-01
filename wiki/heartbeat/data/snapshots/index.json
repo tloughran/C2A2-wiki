@@ -1,7 +1,20 @@
 {
-  "generated": "2026-09-30",
+  "generated": "2026-10-01",
   "count": 61,
   "snapshots": [
+    {
+      "date": "2026-10-01",
+      "time": "17:10 UTC",
+      "sort_key": "20261001171024",
+      "generated_at": "2026-10-01T17:10:24Z",
+      "file": "digest-20261001-171024.json",
+      "window": "weekly",
+      "signals": 10,
+      "items_checked": 223,
+      "sources_reached": 19,
+      "high_relevance": 2,
+      "primary_themes": "Capability Jump + Governance Policy"
+    },
     {
       "date": "2026-09-30",
       "time": "16:32 UTC",
@@ -768,19 +781,6 @@
       "sources_reached": 19,
       "high_relevance": 9,
       "primary_themes": "Governance Policy + Capability Jump"
-    },
-    {
-      "date": "2026-07-30",
-      "time": "12:21 UTC",
-      "sort_key": "20260730122101",
-      "generated_at": "2026-07-30T12:21:01Z",
-      "file": "digest-20260730-122101.json",
-      "window": "weekly",
-      "signals": 10,
-      "items_checked": 210,
-      "sources_reached": 19,
-      "high_relevance": 8,
-      "primary_themes": "Capability Jump + Market Platform"
     },
     {
       "date": "2026-06-25",
