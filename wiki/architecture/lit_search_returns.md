@@ -49725,3 +49725,186 @@ In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1709 → MONITOR-638, 
 
 Running totals after this run: PREMISE-221 (unchanged) | MONITOR-646 | REVISE-494 (unchanged) | DISPOSITION-1020.
 This run's distribution (4 new literature items): 0 INCORPORATE, 4 MONITOR, 0 REVISE.
+
+================================================================================
+## 2026-10-02 — 15a / 15b / 15c run (scheduled task `c2a2-lit-search-pipeline`) — 10-01 intake
+## ⚠ NOT APPLIED — SECOND CONCURRENT INSTANCE (fail loud). Everything in this block down to the "END NOT-APPLIED BLOCK" line is a PROPOSAL ONLY.
+## The other 10-02 instance (block "lit-search pipeline run (15a/15b/15c) on the 2026-10-01 14a/14b end-of-day intake", below) started first and committed to all registers. Its numbers stand.
+## The DISPOSITION / REVISE / MONITOR ids in this block are relabelled "P-" (proposed) to avoid collision. See wiki/review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
+
+Run lock: `architecture/lit_pipeline.lock` written at start (first use; responds to MONITOR-631 / PRESUMPTION-1104). No concurrent instance seen (no lock, no result files for these items at start).
+Test target: the "Presumption under test" line, not the candidate remedy (ASSUMPTION-1722 format).
+Independence: 15a and 15b ran as separate subagent contexts, same model family (PREMISE-004 / DISPOSITION-409 caveat applies).
+
+### 15a returns (FOR)
+RETURN 15a — PRESUMPTION-1103 | Result: NO-SUPPORT-FOUND (conditional only) | Strength: Weak | Key source: Cemri et al. 2025, arXiv:2503.13657 (kappa 0.88 only after iterative refinement; specification issues a top failure class) | Full: lit_search_results/for/PRESUMPTION-1103_for.md | PROVENANCE: Origin 14b | Chain [14b → 15a] | Current status: NO-SUPPORT-FOUND
+RETURN 15a — PRESUMPTION-1104 | Result: NO-SUPPORT-FOUND | Strength: Weak | Key source: Lamport 1986 safe-register semantics (recalled; definition confirmed via snippets); atomic rename prevents torn files, not lost updates | Full: lit_search_results/for/PRESUMPTION-1104_for.md | PROVENANCE: Origin 14b | Chain [14b → 15a] | Current status: NO-SUPPORT-FOUND
+RETURN 15a — PRESUMPTION-1105 | Result: NO-SUPPORT-FOUND | Strength: Weak | Key source: Page et al. 2014, Cochrane MR000035 (fetched); Cochrane Handbook §9.7 — exceptions permitted only if documented + sensitivity-tested | Full: lit_search_results/for/PRESUMPTION-1105_for.md | PROVENANCE: Origin 14b | Chain [14b → 15a] | Current status: NO-SUPPORT-FOUND
+RETURN 15a — ASSUMPTION-1730 | Result: PARTIALLY-SUPPORTED | Strength: Moderate (7-day limb Mod-Strong; SELECT-1 limb Weak) | Key source: Supabase Docs "Project Pausing" (fetched, page modified 2026-10-01) | Full: lit_search_results/for/ASSUMPTION-1730_for.md | PROVENANCE: Origin 14a | Chain [14a → 15a] | Current status: PARTIALLY-SUPPORTED
+NOVELTY flags: none. UNVERIFIED (recalled) sources: Kleppmann 2017; Artstein & Poesio 2008; arXiv:2509.01790 (fetch blocked).
+
+### 15b returns (AGAINST)
+RETURN 15b — PRESUMPTION-1103 | Result: CHALLENGED | Strength: Strong | Key sources: Cemri et al. 2025 (fetched); Yang et al. "What Prompts Don't Say", arXiv:2505.13360 | Steelman: single-model self-agreement is high (0.73–0.98); 10-01 split may be a two-target formatting defect | Full: lit_search_results/against/PRESUMPTION-1103_against.md | PROVENANCE: Origin 14b | Chain [14b → 15b] | Current status: CHALLENGED
+RETURN 15b — PRESUMPTION-1104 | Result: CHALLENGED | Strength: Strong | Key sources: Data-Wise/craft PR #288 (fetched; 40/80 concurrent writes lost under unlocked tmp+mv); lost-update literature (Berenson et al. 1995 — UNVERIFIED recall); internal instance 2026-10-01 | Steelman: staggered schedules + per-item files make collisions rare | Full: lit_search_results/against/PRESUMPTION-1104_against.md | PROVENANCE: Origin 14b | Chain [14b → 15b] | Current status: CHALLENGED
+RETURN 15b — PRESUMPTION-1105 | Result: CHALLENGED | Strength: Mod-Strong | Key sources: Cochrane Handbook v5.1 §2.1 (fetched; post hoc inclusion "highly susceptible to bias"); PROSPERO protocol-vs-review deviation studies | Steelman: few exceptions vs large base → bounded effect | Caveat: item inferred from one proposal; challenges the mechanism, not an observed harm | Full: lit_search_results/against/PRESUMPTION-1105_against.md | PROVENANCE: Origin 14b | Chain [14b → 15b] | Current status: CHALLENGED
+RETURN 15b — ASSUMPTION-1730 | Result: PARTIALLY-CHALLENGED | Strength: Moderate | Key sources: Supabase "Project Pausing" (fetched; "sufficient user database activity", no threshold); GitHub discussion #13121 (fetched; connect-only job kept alive for months then failed) | Steelman: light pings work for many; one-week warning email | Full: lit_search_results/against/ASSUMPTION-1730_against.md | PROVENANCE: Origin 14a | Chain [14a → 15b] | Current status: PARTIALLY-CHALLENGED
+SYSTEMIC-RISK-FLAG (15b, 2026-10-02, High): uncoordinated shared artefacts — PRESUMPTION-1103, -1104, -1105 (agents act on a shared item/file/rule with no coordination step; divergence undetected). File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-02_uncoordinated-shared-artifacts_1103-1104-1105.md. 15b notes possible overlap with the 10-01 "silence-read-as-health" and 09-10 "no-second-look" flags (compared by filename only).
+
+### 15c dispositions
+
+DISPOSITION-1021:
+  Date: 2026-10-02
+  Item: PRESUMPTION-1103
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Agreement on a handed-off NL item is achieved only after explicit, iterated specification; under-specified items are read divergently. The 10-01 conflict is a realised in-house instance.
+  Disposition: REVISE → REVISE-498
+  Reasoning: Heuristic "weak support + strong challenge, PRESUMPTION" → REVISE, High. The steelman (self-consistency) does not cover two different agents on two different text fields, which is what happened.
+  What is at risk: every 14b → 15a/15b handoff; comparability of dispositions across runs.
+  Recommended action: make the separate "Presumption under test" field (adopted in the 10-01 intake) mandatory in the 14a/14b spec, and have 15c reject items lacking it.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1022:
+  Date: 2026-10-02
+  Item: PRESUMPTION-1104
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The lost-update problem is textbook; the only support is the trivial case of non-overlapping writes. The estate has a realised instance (10-01 overwrite of eight result files).
+  Disposition: REVISE → REVISE-499
+  Reasoning: PRESUMPTION with strong challenge and an in-house realised failure. Staggered schedules did not prevent the 10-01 collision, so the steelman fails on local evidence.
+  What is at risk: all shared registers (for_lit_search, lit_search_returns, monitor_queue, revision_flags, validated_premises) and lit_search_results/ files.
+  Recommended action: adopt a run lock for every scheduled task that writes shared registers (this run introduced `architecture/lit_pipeline.lock` as an interim, unenforced convention); read-before-write + mtime compare before each register edit; cycle-suffixed result filenames.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1023:
+  Date: 2026-10-02
+  Item: PRESUMPTION-1105
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Mod-Strong
+  Net assessment: Systematic-review methodology treats unaudited post hoc inclusion decisions as a recognised bias source; the remedy (log reason, review as a set) is the standard one. Domain transfer from systematic reviews to tradition-monitoring inclusion windows is reasonable but not exact; item is speculative (one proposal).
+  Disposition: REVISE → REVISE-500
+  Reasoning: Literature refutes the presumption; the cost of the remedy is a logged reason field. Urgency lowered to Medium because no harm has been observed and the item rests on one proposal.
+  What is at risk: inclusion-window exceptions in tradition/literature monitoring agents.
+  Recommended action: require each "significance" exception to log its reason; review exceptions as a set at the 15d monthly cycle.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1024:
+  Date: 2026-10-02
+  Item: ASSUMPTION-1730
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Two separable limbs, not one contested claim. Limb 1 (7-day inactivity window) is confirmed by the current official docs from both sides. Limb 2 (a daily `SELECT 1` prevents the pause) is unestablished: the docs give no threshold and say "typically"; a connect-only keep-alive is reported to have failed after months.
+  Disposition: REVISE → REVISE-501 (limb 2). Limb 1 not incorporated as a premise: it is a vendor policy fact that can change without notice, better held as a dated note than a premise.
+  Reasoning: Not averaged: the limb the keep-warm task depends on is the weak one, and its failure mode is silent (SELECT 1 always succeeds, so the task reports success either way).
+  What is at risk: the Supabase keep-warm task and anything relying on the free-tier project being live.
+  Recommended action: replace the bare `SELECT 1` with a read (or small write) against a real table, and have the task check the project's status rather than its own query result.
+  Urgency: Medium
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+In-house lane (no DISPOSITION numbers minted, per precedent): ASSUMPTION-1721 → MONITOR-647, ASSUMPTION-1722 → MONITOR-648, ASSUMPTION-1724 → MONITOR-649, ASSUMPTION-1725 → MONITOR-650, ASSUMPTION-1727 → MONITOR-651, ASSUMPTION-1729 → MONITOR-652.
+
+Numbering note: all ids above in this block are PROPOSED ONLY and collide with the committed instance's ids; read every "DISPOSITION-102x / REVISE-49x / REVISE-50x / MONITOR-64x / MONITOR-65x" in this block as "P-" prefixed. Running totals are NOT changed by this block.
+Proposed distribution (4 literature items): 0 INCORPORATE, 0 MONITOR, 4 REVISE — differs from committed run on PRESUMPTION-1105 and ASSUMPTION-1730 (committed: MONITOR-647, MONITOR-648).
+## END NOT-APPLIED BLOCK
+
+
+## 2026-10-02 — lit-search pipeline run (15a/15b/15c) on the 2026-10-01 14a/14b end-of-day intake
+Run note: single instance; no lock file exists (see REVISE-498). 15a and 15b ran as separate sub-agents; 15b did not read 15a results. Search scope for all four: preliminary, web-only, fetched pages passed through a summarizing model.
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1103 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: Cemri et al. 2025, arXiv:2503.13657 (cuts against the claim) | NOVELTY-FLAG (literature gap)
+  Summary: Nothing supports a single determinate test target; spec ambiguity is a dominant multi-agent failure mode.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1103_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1103 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: "Beyond Accuracy: LLM Variability in Evidence Screening", 2026, arXiv:2604.27006 (AC2 0.55–1.0 on identical reruns)
+  Summary: LLM readers diverge on identical written criteria; transfer from screening to handoff is by analogy. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1103_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1104 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: none (DZone/Baeldung lost-update pages argue the opposite)
+  Summary: Unguarded concurrent edits are safe only with non-overlapping writers; no source found.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1104_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1104 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: "Language Model Teams as Distributed Systems", 2026, arXiv:2603.12229
+  Summary: Silent overwrites measured in LLM agent teams on shared files; matches the 10-01 in-house data loss. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1104_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1105 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: Page et al. 2014, Cochrane MR000035 (analogue; points toward bias with a CI including null) | NOVELTY-FLAG (literature gap)
+  Summary: No study shows unaudited discretionary inclusion exceptions are harmless.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1105_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1105 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: arXiv:2604.27006; arXiv:2508.15822 (auditable screening)
+  Summary: Methodology treats unaudited discretion as the classic route to selection bias; bias direction for LLM exceptions not measured. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1105_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1730 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Supabase docs, "Project Pausing" (https://supabase.com/docs/guides/platform/free-project-pausing)
+  Summary: One-week inactivity window confirmed; daily database requests documented as enough; SELECT 1 not explicitly named.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1730_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1730 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Weak
+  Key source: same docs page ('low activity', undefined threshold, no keep-alive guidance)
+  Summary: Premise confirmed; the remedy is inferred from community practice, not documented. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1730_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+SYSTEMIC-RISK-FLAG (15b, 2026-10-02, Moderate): silent divergence with no checking mechanism — PRESUMPTION-1103, -1104, -1105 (ASSUMPTION-1730 lower severity). File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-02_silent-divergence-unchecked.md
+
+DISPOSITION-1021:
+  Date: 2026-10-02 | Item: PRESUMPTION-1103 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: No support, moderate by-analogy challenge, corroborated by the 10-01 in-house divergence.
+  Disposition: REVISE → REVISE-499
+  Reasoning: Unstated presumption, no support, and in-house evidence the failure already occurred.
+  What is at risk: all 14a/14b → 15a/15b/15c handoffs. Recommended action: standing presumption/remedy split plus claim echo-back. Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+DISPOSITION-1022:
+  Date: 2026-10-02 | Item: PRESUMPTION-1104 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Textbook plus 2026 empirical evidence of silent lost updates; in-house data loss on 10-01.
+  Disposition: REVISE → REVISE-498
+  Reasoning: Presumption with strong challenge → REVISE, High urgency, per heuristics.
+  What is at risk: all shared registers. Recommended action: run lock now; append-only/CAS longer term. Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+DISPOSITION-1023:
+  Date: 2026-10-02 | Item: PRESUMPTION-1105 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Challenge is by principle and analogy; bias direction unmeasured; origin is one speculative proposal.
+  Disposition: MONITOR → MONITOR-647
+  Reasoning: Evidence is indirect on both sides; absence of audit makes the claim untestable rather than refuted. Err toward MONITOR.
+  What would change the disposition: log of actual exceptions. Priority: Medium | Cadence: Weekly
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+DISPOSITION-1024:
+  Date: 2026-10-02 | Item: ASSUMPTION-1730 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate | 15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Pause window confirmed; remedy efficacy undocumented.
+  Disposition: MONITOR → MONITOR-648
+  Reasoning: Not INCORPORATEd because the keep-warm effect rests on an undocumented reading of 'user activity'; low stakes, cheap to verify in-house.
+  What would change the disposition: observed non-pause over >7 days, or a paused-state alert. Priority: Low | Cadence: Weekly
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1721 → MONITOR-649, -1722 → MONITOR-650, -1724 → MONITOR-651, -1725 → MONITOR-652, -1727 → MONITOR-653, -1729 → MONITOR-654
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-654 | REVISE-499 (498 and 499 used; 495..497 remain proposed/unapplied from 10-01) | DISPOSITION-1024.
+This run's distribution (4 literature items): 0 INCORPORATE, 2 MONITOR, 2 REVISE. No validated_premises.md change; consistency check n/a.

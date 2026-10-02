@@ -1104,3 +1104,16 @@ not yet posted.
 Review page: 12 proposals, opened in browser. Digest draft created. Network unchanged: 956 PRS / 140 CROSS / 94
 FINDING. Pending 12; oldest (Fredrickson PROP-2026-09-24-001) 7 days queued. Separately, `review/` holds a lit-search
 concurrent-run conflict report (2026-10-01) that needs Tom's decision.
+
+### 2026-10-02 — Daily Run
+Phase 0: no new `[C2A2-review-decision]` email. The unread search returned four old threads (07-23, 04-27 x2,
+04-08), all already archived in `review/archive/`; nothing moved. Ledger OPEN=1 unchanged (Wright
+PROP-2026-08-14-033). **0 files ingested.** Friday specialist day (Carroll + Arkani-Hamed) produced no cards, so the
+orchestrator searched both itself and wrote **0 proposals**: Mindscape's newest episode is still 369 (Caruso,
+09-28, already carded); the October AMA is not yet posted; the Arkani-Hamed hits (cosmohedron, hydrotope,
+correlators) are already carded. The Linux sandbox was out of disk, so every script ran on the Mac.
+
+Review page: 12 proposals, opened in browser. 09-28 review page moved to `review/_superseded/`. Review Log 502
+cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 9 (no WARN). Network
+unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 12; oldest (Fredrickson PROP-2026-09-24-001) 8 days queued. A
+second lit-pipeline concurrent-run conflict report (2026-10-02) is in `review/`.

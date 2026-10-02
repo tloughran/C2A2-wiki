@@ -1,0 +1,4 @@
+RELEASED 2026-10-02 by c2a2-lit-search-pipeline (second instance).
+Note: a concurrent instance started before this lock existed and committed the 10-01 intake; this instance applied nothing.
+See wiki/review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
+Convention (proposed, not yet in the task spec): if this file exists WITHOUT "RELEASED" and is < 6 h old, do not write registers; write a conflict note and exit.

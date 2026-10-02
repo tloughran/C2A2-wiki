@@ -24382,3 +24382,124 @@ Two instances of `c2a2-lit-search-pipeline` ran on the same 09-30 intake at the 
 - **Data loss:** the other run overwrote this run's eight 15a/15b result files in lit_search_results/for|against (same filenames, written at 00:38:27). This run's file `against/SYSTEMIC-RISK-FLAG_2026-10-01_silence-read-as-health.md` survives. Its counterpart from the other run is `SYSTEMIC-RISK-FLAG_2026-10-01_added-state-unmonitored.md`.
 - **Repair made:** the other run's tag edit stripped the item IDs from the 9 in-house header lines (ASSUMPTION-1709..1720 became bare " [NO-LIT-OWED ...]" lines). The `ITEM: ASSUMPTION-NNNN [QUEUED] [IN-HOUSE]` prefixes have been restored, and its tags and MONITOR numbers kept. Nothing else from the other run was changed.
 - **For Tom:** the side-by-side comparison and this run's proposed (unapplied) dispositions, REVISE-495..497 and a REVISE-486 corroboration, are in `wiki/review/2026-10-01_lit-pipeline_concurrent-run_conflict.md`. Backups from before both writes: `*.bak.20261001-pre-15pipeline`.
+
+## 2026-10-01 — 14a / 14b end-of-day intake (local; 26 sessions above 038d996f)
+
+Note to 15a/15b: following ASSUMPTION-1722, each item below gives **Presumption under test** (what was taken for granted) separately from **Candidate remedy** (context only). Test the presumption.
+
+ITEM: PRESUMPTION-1103 [QUEUED] [SEARCHED-15a: 2026-10-02] [SEARCHED-15b: 2026-10-02] [DISPOSITIONED-15c: 2026-10-02 → REVISE-499]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1103
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 2026-10-01 lit-pipeline conflict.
+    Current status: UNTESTED
+  Presumption under test: A natural-language work item handed between agents has one determinate test target, so different agents reading it will test the same claim.
+  Candidate remedy (context only): Separate "presumption" and "remedy" fields in queue items.
+  Literature lane: operationalization and construct validity; inter-rater reliability of LLM annotators; specification ambiguity in multi-agent handoffs
+
+ITEM: PRESUMPTION-1104 [QUEUED] [SEARCHED-15a: 2026-10-02] [SEARCHED-15b: 2026-10-02] [DISPOSITIONED-15c: 2026-10-02 → REVISE-498]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1104
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across four 10-01 sessions.
+    Current status: UNTESTED
+  Presumption under test: Shared files edited by independently scheduled agents are safe without read-before-write, locks or merge.
+  Candidate remedy (context only): Append-only per-writer files, or a lock file / compare-and-swap on shared registers.
+  Literature lane: lost-update problem; optimistic concurrency control; CRDTs and append-only logs; file locking in cron/agent systems
+
+ITEM: PRESUMPTION-1105 [QUEUED] [SEARCHED-15a: 2026-10-02] [SEARCHED-15b: 2026-10-02] [DISPOSITIONED-15c: 2026-10-02 → MONITOR-647]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1105
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from one proposal (speculative).
+    Current status: UNTESTED
+  Presumption under test: An agent's discretionary "significance" exception to an inclusion window introduces no systematic selection bias if left unaudited.
+  Candidate remedy (context only): Log the reason for each exception and review exceptions as a set.
+  Literature lane: selection bias in systematic reviews; inclusion-criteria deviations; LLM screening reliability in literature reviews
+
+ITEM: ASSUMPTION-1730 [QUEUED] [SEARCHED-15a: 2026-10-02] [SEARCHED-15b: 2026-10-02] [DISPOSITIONED-15c: 2026-10-02 → MONITOR-648]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1730
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the keep-warm task prompt (1c750b65).
+    Current status: UNTESTED
+  Presumption under test: Supabase free-tier projects pause after 7 days of inactivity, and a daily `SELECT 1` prevents the pause.
+  Literature lane: Supabase documentation (current free-tier pause policy)
+
+ITEM: ASSUMPTION-1721 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-649); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1721
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from eecf6e58.
+    Current status: UNTESTED
+  Claim to test (in-house): Two concurrent lit-pipeline instances on 10-01; check for the same pattern on other days and whether a run lock exists yet.
+
+ITEM: ASSUMPTION-1722 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-650); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1722
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 10-01 conflict note.
+    Current status: UNTESTED
+  Claim to test (in-house): Re-run the four 09-30 items with the presumption stated explicitly, to see whether MONITOR or REVISE holds.
+
+ITEM: ASSUMPTION-1724 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-651); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1724
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2e529eab.
+    Current status: UNTESTED
+  Claim to test (in-house): Resolve commit_check (committed 09:45Z) against run_stall (no transcript since 09-15) for the wiki daily run.
+
+ITEM: ASSUMPTION-1725 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-652); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1725
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from ee9f6a8e, bd3132ca, a9962cc4.
+    Current status: UNTESTED
+  Claim to test (in-house): Establish the actual Gmail auth state, PROP-2026-09-02-002 status, and the pending/ count on disk.
+
+ITEM: ASSUMPTION-1727 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-653); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1727
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a9962cc4.
+    Current status: UNTESTED
+  Claim to test (in-house): Count FINDING- headers in the master wiki and compare with the header's claimed 94.
+
+ITEM: ASSUMPTION-1729 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-654); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1729
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests and this pass.
+    Current status: UNTESTED
+  Claim to test (in-house): Find what fills the sandbox disk, and why `QC log.md` has reached 8.5 MB.

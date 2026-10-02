@@ -15875,3 +15875,23 @@ REVISE-494:
   Consistency: Closes MONITOR-623 (superseded). Member of the 2026-09-29 inherited-pass-status SYSTEMIC-RISK-FLAG.
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+
+REVISE-498:
+  Date: 2026-10-02 | Source item: PRESUMPTION-1104 | DISPOSITION-1022 | Urgency: High
+  Evidence: 15b Strong: arXiv:2603.12229 (LLM agent teams silently overwrite shared files; decentralized median 19 test failures vs 4 preassigned, p<0.001) plus the textbook lost-update problem. 15a found nothing supporting unguarded writes. In-house corroboration: the 2026-10-01 concurrent lit-pipeline run overwrote eight result files.
+  What is at risk: Every shared register (for_lit_search.md, lit_search_returns.md, monitor_queue.md, revision_flags.md, validated_premises.md, results folders) written by independently scheduled agents.
+  Recommended action (for Tom): A run lock (lock file with timeout) for the lit pipeline now; longer term, append-only per-writer files merged by a single owner, or compare-and-swap (mtime/version check) before write.
+  Numbering note: REVISE-495..497 were proposed but left unapplied in wiki/review/2026-10-01_lit-pipeline_concurrent-run_conflict.md; this entry uses 498+ to avoid collision.
+  Consistency: Member of the 2026-10-02 silent-divergence-unchecked SYSTEMIC-RISK-FLAG; related to ASSUMPTION-1699 / MONITOR-631.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-499:
+  Date: 2026-10-02 | Source item: PRESUMPTION-1103 | DISPOSITION-1021 | Urgency: Medium
+  Evidence: 15b Moderate: arXiv:2604.27006 (different LLMs and reruns of one LLM disagree on identical written criteria; Gwet AC2 0.55–1.0); arXiv:2503.13657 (specification ambiguity ~42% and misalignment ~37% of multi-agent failures). 15a found no support. In-house corroboration: on 2026-10-01 two runs tested different claims from the same queue items.
+  What is at risk: Every queue handoff from 14a/14b to 15a/15b/15c, since item text is read by independent agents.
+  Recommended action (for Tom): Keep the 'Presumption under test' vs 'Candidate remedy' split as standing format; require each searcher to echo back the claim it tested, and have 15c check the echoes match before dispositioning.
+  Consistency: Member of the 2026-10-02 silent-divergence-unchecked SYSTEMIC-RISK-FLAG; builds on ASSUMPTION-1722.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED

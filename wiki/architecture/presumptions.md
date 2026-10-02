@@ -24083,3 +24083,69 @@ PRESUMPTION-1102:
 *Surfaced by the 14b run of 2026-09-30, after 14a and against its output. **4 items (1099–1102).** Types: structural 1 · epistemic 1 · normative 1 · scaling 1 · methodological 0. Risk: High 2 · Medium 2. Absorbed rather than filed: stale prompts (= PRESUMPTION-1097 / REVISE-491, recurrence in ASSUMPTION-1710); disk-full fallback (= PRESUMPTION-1096 / REVISE-490, recurrence in 1715); concurrent duplicate triggers (= PRESUMPTION-771, recurrence in 1711); counts carried forward (= PRESUMPTION-1083, recurrence in 1716). Same-family readers again (= 1086/1092); readers were a different model tier from this pass, not a different family.*
 
 ---
+
+## 2026-10-01 — 14b end-of-day intake (local)
+
+PRESUMPTION-1103:
+  Date surfaced: 2026-10-01
+  Statement: [inferred] A queue item written in prose was presumed to have one determinate test target. 14a/14b wrote each "Claim to test" line as a remedy (for example, "needs a shared run record"), while the registry entry states a presumption. Nothing marks which of the two downstream agents should test. Two runs read the same items and reached opposite dispositions: MONITOR on the remedy, REVISE on the presumption. Is a disposition meaningful if it depends on which reading an agent happens to pick?
+  Evidence it was operative: ASSUMPTION-1722; for_lit_search.md 2026-10-01 conflict note; the 09-30 queue lines for PRESUMPTION-1099..1102.
+  Why it was unstated: too foundational to notice (the queue format has been stable for months)
+  Type: methodological
+  Related decisions: ASSUMPTION-1721, -1722; MONITOR-634..637
+  Testability: testable via literature
+  Risk if wrong: High — every lit-pipeline disposition since the format began may encode an arbitrary choice of target, not the evidence.
+  Confidence: high (direct evidence of divergence on the same items)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1103
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the conflict note. Self-referential: 14a/14b's own output format is the subject.
+    Current status: UNTESTED
+
+PRESUMPTION-1104:
+  Date surfaced: 2026-10-01
+  Statement: [inferred] Shared files were presumed to have a single writer at any one time, so writes are plain overwrites or appends with no read-before-write, lock or merge. In one day: the lit pipeline overwrote a concurrent run's result files; the chat scrape overwrote a same-day file it had not read; the cloud and local 14a/14b passes and the cloud and local sync runs both wrote to the same dated files. Each collision was caught only because the later writer happened to look.
+  Evidence it was operative: ASSUMPTION-1721, -1728; 500ca0e4 ("updated an existing file").
+  Why it was unstated: obvious to participants when every task ran on one machine on its own slot
+  Type: structural
+  Related decisions: PRESUMPTION-162, -771 (narrower forms); OPEN-260
+  Testability: testable via literature
+  Risk if wrong: High — silent data loss in the registers that the whole self-awareness pipeline reads.
+  Confidence: high
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1104
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across four sessions; widens PRESUMPTION-771 (duplicate triggers) and -162 (one-way mirror) to a write-semantics claim.
+    Current status: UNTESTED
+
+PRESUMPTION-1105:
+  Date surfaced: 2026-10-01
+  Statement: [inferred] A tradition agent was presumed to be able to judge what counts as "significant work not yet captured", and so when to step outside its 30-day window, without that judgment being logged for review. The proposal records the exception but not why this item qualified when others did not.
+  Evidence it was operative: ASSUMPTION-1723 (a 31 Dec 2025 abstract admitted under the exception).
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1723
+  Testability: testable via literature
+  Risk if wrong: Medium — selective exceptions can bias which work enters a tradition, and nothing would show it.
+  Confidence: speculative (one instance)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1105
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a single proposal; flagged speculative.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-01, after 14a and against its output. **3 items (1103–1105).** Types: structural 1 · epistemic 1 · methodological 1 · normative 0 · scaling 0. Risk: High 2 · Medium 1. Absorbed rather than filed: conflicting liveness signals with no precedence rule (= PRESUMPTION-1099/1100, recurrence in ASSUMPTION-1724); state disagreement across tasks and a stale master header (= PRESUMPTION-1083, recurrence in 1725/1727); disk-full fallback (= PRESUMPTION-1096 / REVISE-490, recurrence in 1729); escalations addressed to an absent reviewer (= PRESUMPTION-1101); a full intake pass on a day with no designer speech (= PRESUMPTION-1102, self-referential). The reader was again a same-family model (= 1086/1092).*
+
+---

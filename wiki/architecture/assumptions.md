@@ -33118,3 +33118,179 @@ ASSUMPTION-1720:
 *Extracted by the 14a run of 2026-09-30 (local). **12 items (1709–1720).** Coverage: no designer speech. 26 sessions above 43bc38cf (the 09-29 local pass) read by two reader subagents (limit 12 messages each). Verified at source: PRS 956; three 09-30 pending proposals on disk; this pass's `df`. Other figures are reader-reported. `.bak` taken before this append.*
 
 ---
+
+## 2026-10-01 — 14a end-of-day intake (local; 26 sessions above 038d996f)
+
+ASSUMPTION-1721:
+  Date identified: 2026-10-01
+  Statement: [stated] The missing run lock has now caused a real failure. Two instances of `c2a2-lit-search-pipeline` ran on the same 09-30 intake. The first committed MONITOR-634..637. The second reached REVISE on all four items, applied nothing, and recorded that the other run overwrote 8 of its result files and stripped item IDs from 9 queue headers. Quote: the "missing run lock (ASSUMPTION-1699) actually causing a failure"; "two honest runs can disagree like this again".
+  Context: eecf6e58; review/2026-10-01_lit-pipeline_concurrent-run_conflict.md; for_lit_search.md 2026-10-01 conflict note.
+  Type: architectural
+  Related decisions: ASSUMPTION-1699; MONITOR-631; PRESUMPTION-771
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1721
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of eecf6e58 and checked against the conflict note in for_lit_search.md.
+    Current status: UNTESTED
+
+ASSUMPTION-1722:
+  Date identified: 2026-10-01
+  Statement: [stated] The two lit-pipeline runs tested different claims. The queue's "Claim to test" lines (written by 14a/14b) state the remedy. The presumptions.md entries state the presumption. One run tested the remedy and held at MONITOR; the other tested the presumption and found REVISE. Quote (for_lit_search.md): "Root of the disagreement: orientation, not evidence."
+  Context: eecf6e58; for_lit_search.md 2026-10-01 conflict note.
+  Type: methodological
+  Related decisions: ASSUMPTION-1721; PRESUMPTION-1099..1102
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1722
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the conflict note. Self-referential: the ambiguous "Claim to test" lines are this agent pair's own output (see PRESUMPTION-1103).
+    Current status: UNTESTED
+
+ASSUMPTION-1723:
+  Date identified: 2026-10-01
+  Statement: [stated] The Stump/Fredrickson tradition agent admitted a 31 Dec 2025 abstract under its "significant work not yet captured" exception, outside the 30-day window. It filed PROP-2026-10-01-001 (Fredrickson) as Medium/Speculative because it is "Abstract only", with "Small effects" and "Direction unknown". Stump: "no qualifying new material". The run also corrected a wiki path in its task file that is missing `Projects/`.
+  Context: e4ed40e4; inbox/proposals/pending/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md (verified on disk).
+  Type: methodological
+  Related decisions: PRESUMPTION-1097 / REVISE-491 (stale prompts, recurrence)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1723
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of e4ed40e4; proposal file verified by name.
+    Current status: UNTESTED
+
+ASSUMPTION-1724:
+  Date identified: 2026-10-01
+  Statement: [stated] The scheduler health check found two liveness signals that disagree about the same task. `commit_check` says the daily run committed at 09:45Z; `run_stall` says there has been no transcript since 09-15. Quote: "I can't tell from these files which one is right." It also states that, after 32 tasks moved to the cloud, the "Mac registry can no longer tell whether it fires". Tally: 27 OK / 34 WARN / 5 FAIL (09-30: 29 / 34 / 3).
+  Context: 2e529eab.
+  Type: architectural
+  Related decisions: OPEN-260; PRESUMPTION-1099, -1100
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1724
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 2e529eab.
+    Current status: UNTESTED
+
+ASSUMPTION-1725:
+  Date identified: 2026-10-01
+  Statement: [stated] Tasks disagree on shared state on the same day. (a) Gmail: the deferred action monitor reports Gmail unauthenticated for 3 runs, while the wiki daily run reports Gmail reachable again (0 files ingested). (b) PROP-2026-09-02-002: one 09-30 summary calls it "6 days overdue", but PROCESSED_LOG shows it closed on 09-29. (c) Pending proposals: 11 (deferred monitor) vs 12 (wiki daily run and walk handoff). Quote (deferred monitor): "One line from you, ruling on the INTEGRITY FLAG, closes it."
+  Context: ee9f6a8e, bd3132ca, a9962cc4.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1716; PRESUMPTION-1083 (recurrence); OPEN-259
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1725
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from three reader digests and set side by side; nothing re-verified at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1726:
+  Date identified: 2026-10-01
+  Statement: [stated] Separating attempt outcome from state, by design. The OpenStory telemetry refresh was blocked (disk full). It wrote a FAIL line that keeps the last PASS details (10:15Z, 33 agents) "so `morning-system-health` will flag it without suggesting the feeds have been stale for long".
+  Context: fc50febf.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1712; PRESUMPTION-1100
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1726
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of fc50febf. First observed task-level fix for the 1712 pattern.
+    Current status: UNTESTED
+
+ASSUMPTION-1727:
+  Date identified: 2026-10-01
+  Statement: [stated] The master wiki header is stale and over-counts. It says "Last updated 2026-09-25" and claims 94 findings, but the file ends at FINDING-079. Findings 036–079 have no status field, so active-finding counts (26) omit them. The execution queue is unchanged since 13 May.
+  Context: a9962cc4; daily_sync/cowork_to_chat/2026-10-01 addendum.
+  Type: epistemic
+  Related decisions: PRESUMPTION-1083 (recurrence). Self-referential: METRICS-2026-09-30 carried "Findings: 94 [reported]".
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1727
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of a9962cc4 and the evening sync addendum.
+    Current status: UNTESTED
+
+ASSUMPTION-1728:
+  Date identified: 2026-10-01
+  Statement: [stated] Same-day files are written by more than one surface. The morning chat scrape wrote today's chat summary without reading it first; Write reported "updated an existing file", so a cloud copy may have been overwritten (recurrence of 1718). The evening cowork-to-chat run found a cloud summary already written without transcript access, left it unchanged, and appended a local addendum. The cloud 14a/14b pass likewise wrote a RUN_INCOMPLETE changelog for today, which this pass appends to.
+  Context: 500ca0e4, a268fca1; changelog/2026-10-01_changes.md.
+  Type: architectural
+  Related decisions: ASSUMPTION-1718; OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1728
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests and the files on disk.
+    Current status: UNTESTED
+
+ASSUMPTION-1729:
+  Date identified: 2026-10-01
+  Statement: [stated] The sandbox disk is full while the Mac disk is at 60% (243ccaa3). That blocked or degraded the telemetry refresh, the evening Summa QC sweeps and reviewers, the scheduler-health shell, the walk handoff, the chat scrape and this pass. Unattended Desktop Commander fallback was auto-declined again. `vault/_index/QC log.md` is reported at 8.5 MB.
+  Context: 243ccaa3, fc50febf, 2e529eab, a268fca1; this pass (`useradd: ... No space left on device`).
+  Type: architectural
+  Related decisions: PRESUMPTION-1096 / REVISE-490 (recurrence); ASSUMPTION-1715
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1729
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; this pass's own bash failure observed first-hand.
+    Current status: UNTESTED
+
+ASSUMPTION-1730:
+  Date identified: 2026-10-01
+  Statement: [stated] The Supabase keep-warm task states its own rationale: free-tier projects pause after 7 days of inactivity, "which would break the Pathway-00 broker". Today's ping returned `keep_warm_ping = 1`.
+  Context: 1c750b65 (task-file text, authored by Tom; not live speech).
+  Type: empirical
+  Related decisions: none recorded
+  Testability: testable empirically (vendor documentation)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1730
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the task prompt as quoted in a reader digest of 1c750b65.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-01 (local). **10 items (1721–1730).** Coverage: no designer speech. One Sonnet reader subagent read 11 C2A2 sessions above 038d996f (the 09-30 local pass), last 10 messages each. The other 15 sessions in that range are Summa runs; they were not read, and their outcome is taken from the evening sync addendum. Verified at source: the Fredrickson proposal file exists; the conflict note in for_lit_search.md. No `.bak` taken: the sandbox shell was unavailable (disk full), so this append was made with an exact-match edit.*
+
+---

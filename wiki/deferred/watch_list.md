@@ -6501,3 +6501,56 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-01.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-02
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 not due until 2026-10-06; off-cadence trigger checked and not fired.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom** — one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (WATCH-001 tombstone, already tagged `[TRACKED-16]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still **20** files, latest `2026-09-24_decisions.md`. No later disposition on PROP-2026-07-19-001 can exist. Not counted as a check.
+
+**Findings (changes since 10-01 only):** `pending/` now holds **12** cards (up from 11; one new, `2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md`). No new decision file, consistent with Gmail still being unauthenticated upstream (not re-verified this run). PROP-2026-09-22-003's dated condition falls due after **10-03** — tomorrow's run should check it.
+
+**Tooling (fail-loud):** the sandbox shell failed this run ("No space left on device" on user creation). All checks were done with file tools (Glob/Grep) instead; folder counts above are from Glob listings, not `find`. `approved/` was not recounted. Leak-shape screen on the new Fredrickson card (grep for "Not yet established" / "have not read" / "Do not ingest above"): no matches; cumulative count stays at 19.
+
+**Resolution routing:** nothing routed. This summary is the only write.
+
+**Open for Tom (unchanged):** reconnect Gmail; INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; split the run log (**27th** recommendation — file is now ~771 KB, over the 256 KB single-read limit of the file tools).
+
+**Agent 16 Status:** Operational (degraded: no shell). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-02.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-02
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06 and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (the WATCH-001 tombstone, already tagged `[TRACKED-16: 2026-05-05]`, status superseded). 0 new.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Not counted as a check.
+
+**Environment note:** run used the lowercase `wiki/` path (the prompt's `Wiki/` capitalisation does not match the folder on disk). `device_bash` failed twice in this run's workspace, so the cloud shell and file tools were used instead. This was read-only apart from this summary.
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-02.*

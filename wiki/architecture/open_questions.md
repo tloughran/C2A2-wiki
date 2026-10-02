@@ -3514,3 +3514,26 @@ OPEN-260:
 OPEN-259 (update 2026-09-30): Day 3 without either human-input channel. Gmail is still unauthorised and
   there has been no walk chat since 09-23. PRESUMPTION-1101 adds the downstream cost: holds and escalations
   addressed to Tom keep accumulating.
+
+## 2026-10-01 — raised by the 14a/14b end-of-day pass
+
+OPEN-261:
+  Raised: 2026-10-01 by 14b (PRESUMPTION-1103, -1104) from 14a (ASSUMPTION-1721, -1722)
+  Question: Two lit-pipeline runs dispositioned PRESUMPTION-1099..1102 differently: MONITOR-634..637 were committed;
+    REVISE-495..497 were proposed but not applied. Which set stands? Should a queue item's test target always be the
+    presumption, with the remedy kept as context? (14a/14b adopted that split for the 10-01 items on a trial basis.)
+    And what stops two writers clobbering the same register again?
+  Needs: **Tom** (ruling on the conflict; see review/2026-10-01_lit-pipeline_concurrent-run_conflict.md); then an
+    in-house run lock.
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14a, 14b]
+    Original item: OPEN-261
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-10-01): Day 4. Signals now disagree: the wiki daily run reports Gmail reachable, while the
+  deferred monitor reports it unauthenticated (ASSUMPTION-1725). There has still been no walk chat since 09-23.
+OPEN-260 (update 2026-10-01): The cloud 14a/14b and sync runs fired again and wrote to the same dated files as the
+  local runs (ASSUMPTION-1728).

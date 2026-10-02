@@ -24924,3 +24924,60 @@ MONITOR-646 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-01) — no 15a/15b search 
   In-house measure owed: Check whether the stalled weeklies are among the 32 cloud-migrated tasks.
   PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
   Cadence: Weekly | Next 15d check: 2026-10-08
+
+
+MONITOR-647 (2026-10-02) — DISPOSITION-1023
+  Item: PRESUMPTION-1105
+  Reason code: CONTESTED-BY-PRINCIPLE (15a none; 15b moderate, by principle plus LLM-instability evidence; origin is one speculative proposal)
+  What would change the disposition: A log of actual 'significance' exceptions over a few cycles (count, direction, reason); evidence of bias direction → REVISE; a clean audit → INCORPORATE.
+  Priority: Medium | Cadence: Weekly | Next 15d check: 2026-10-09
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: MONITORING
+
+MONITOR-648 (2026-10-02) — DISPOSITION-1024
+  Item: ASSUMPTION-1730
+  Reason code: AWAITING IN-HOUSE DATA (7-day window confirmed by docs; SELECT 1 counting as activity undocumented)
+  What would change the disposition: Evidence the keep-warm SELECT 1 actually prevents the pause (project not paused after >7 days of keep-warm runs, or Supabase support/docs statement) → INCORPORATE; a pause despite keep-warm → REVISE. Add an alert on paused state.
+  Priority: Low | Cadence: Weekly | Next 15d check: 2026-10-09
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: MONITORING
+
+MONITOR-649 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search owed
+  Item: ASSUMPTION-1721
+  Disposition date: 2026-10-02 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..10-01 [NO-LIT-OWED] items) | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Check other days for concurrent lit-pipeline instances and whether a run lock exists. (Note: this 10-02 run found no lock file in architecture/.)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-09
+
+MONITOR-650 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search owed
+  Item: ASSUMPTION-1722
+  Disposition date: 2026-10-02 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Re-run the four 09-30 items with the presumption stated explicitly (partly done 2026-10-01 in the concurrent-run conflict file).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-09
+
+MONITOR-651 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search owed
+  Item: ASSUMPTION-1724
+  Disposition date: 2026-10-02 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Resolve commit_check (committed 09:45Z) against run_stall (no transcript since 09-15) for the wiki daily run.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-09
+
+MONITOR-652 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search owed
+  Item: ASSUMPTION-1725
+  Disposition date: 2026-10-02 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Establish the actual Gmail auth state, PROP-2026-09-02-002 status, and pending/ count on disk.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-09
+
+MONITOR-653 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search owed
+  Item: ASSUMPTION-1727
+  Disposition date: 2026-10-02 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Count FINDING- headers in the master wiki and compare with the header's claimed 94.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-09
+
+MONITOR-654 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search owed
+  Item: ASSUMPTION-1729
+  Disposition date: 2026-10-02 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Find what fills the sandbox disk, and why `QC log.md` has reached 8.5 MB.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-09

@@ -2015,3 +2015,25 @@ Arkani-Hamed Jul/Aug papers). Mindscape October AMA not yet posted (newest AMA 0
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 12 (oldest Fredrickson PROP-2026-09-24-001,
 7 days).
+
+## 2026-10-02 — C2A2 daily run (Fri, Carroll + Arkani-Hamed specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: 4 old threads (07-23, 04-27 x2, 04-08), all already
+archived in review/archive/. No moves; left unread (not processed this run).
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+
+**Phase 2: 0 proposals.** No specialist cards today. Searched Carroll (Mindscape newest = 369 Caruso, carded 09-30;
+October AMA not yet posted), Arkani-Hamed (cosmohedron, hydrotope, correlators all carded), Levin, Friston, Kastrup:
+nothing new. arXiv author page fetch rate-limited (HTTP 429).
+
+**Phase 3.** `review/2026-10-02_review.html` (115,722 bytes, 12 proposals), opened via Desktop Commander `open`.
+**Phase 5.** `review/2026-09-28_review.html` moved to `review/_superseded/`. 09-29..10-02 retained.
+**Phase 5.5.** OK: 6,819,392 bytes; cards 502, dates 136, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 9, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+Note: Linux sandbox bash failed (No space left on device); all scripts run on the Mac via Desktop Commander.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 12 (oldest Fredrickson PROP-2026-09-24-001,
+8 days).
