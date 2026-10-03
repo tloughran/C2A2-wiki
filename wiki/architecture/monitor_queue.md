@@ -24981,3 +24981,72 @@ MONITOR-654 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-02) — no 15a/15b search 
   In-house measure owed: Find what fills the sandbox disk, and why `QC log.md` has reached 8.5 MB.
   PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
   Cadence: Weekly | Next 15d check: 2026-10-09
+
+MONITOR-655 — NEW (2026-10-03, DISPOSITION-1025)
+  Item: ASSUMPTION-1733 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c | Reason code: CONTESTED / UNMEASURED
+  15a: PARTIALLY-SUPPORTED (Weak–Moderate) | 15b: PARTIALLY-CHALLENGED (Weak–Moderate)
+  Net assessment: Same docs page read by both sides; the question is undocumented, not refuted. Duplicates ASSUMPTION-1730 limb 2 (MONITOR-648 committed; REVISE-501 proposed/unapplied from the 10-02 second instance).
+  What would change the disposition: observed project state over >7 days with the bare SELECT 1 only (in-house), or a Supabase statement on what counts as activity. Priority: Medium | Cadence: Weekly
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1733_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1733_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: MONITORING
+  Next 15d check: 2026-10-10
+
+MONITOR-656 — NEW (2026-10-03, DISPOSITION-1026)
+  Item: ASSUMPTION-1739 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c | Reason code: CONTESTED / UNMEASURED
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Both sides agree web search is an unreliable fresh-arXiv source; they disagree only on magnitude ('days' may understate it). The operative caveat holds; the number is unmeasured.
+  What would change the disposition: an in-house measurement: arXiv listing date vs first web-search hit for a sample of tradition-author postings. Priority: Low | Cadence: Monthly
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1739_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1739_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: MONITORING
+  Next 15d check: 2026-11-03
+
+MONITOR-657 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: ASSUMPTION-1731 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Find why two lit-pipeline instances start (duplicate registry entry, cloud + local copies, or timeout retry); check whether either instance reads lit_pipeline.lock.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-658 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: ASSUMPTION-1732 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: For the 32 cloud-moved tasks, establish from cloud-side evidence whether each fired; update the stale 2026-08-05 'Known state' line.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-659 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: ASSUMPTION-1735 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: For each of (a)-(e), establish the true state on disk or in the service, and which writer was wrong.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-660 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: ASSUMPTION-1737 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Identify what fills the 9.8 GB sandbox volume and whether it is reclaimable between runs (overlaps MONITOR-654).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-661 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: ASSUMPTION-1738 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Grep every scheduled task file for wiki-root paths; list each that does not resolve, the Wiki/wiki case included.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-662 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: ASSUMPTION-1741 (ASSUMPTION (stated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Tabulate subagent token use per run against the 30k budget for the last 14 runs of the lit pipeline and 14a/14b.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-663 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search owed
+  Item: PRESUMPTION-1108 (PRESUMPTION (unstated))
+  Disposition date: 2026-10-03 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Check whether date-named files mix UTC (cloud) and US Eastern (local) days; stamp a timezone in dated filenames or headers.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-10

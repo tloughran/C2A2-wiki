@@ -6554,3 +6554,35 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-02.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-03
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (the WATCH-001 tombstone, already tagged `[TRACKED-16: 2026-05-05]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Grep for `2026-07-19-001` / `beatitudes-week-two` matches only `2026-08-27_decisions.md` (the re-filing APPROVE), as before. Not counted as a check.
+
+**Census (shell `ls`):** `pending/` 12 (unchanged since 10-02; newest is still `2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md`), `approved/` 449, `denied/` 1, `needs_review/` 1.
+
+**PROP-2026-09-22-003 (Hoffman, Hopewell talk):** the talk is today (2026-10-03). Its condition is "after 10-03", so it cannot be checked meaningfully until **10-04 or later**. It is still **unheld**: no Channel 3/4 tracker exists, and Agent 16 has not opened a watch on its own authority (that is the ruling Tom was asked for). The proposal is already approved (`approved/2026-09-22_hoffman_hopewell-interface-we-call-reality.md`).
+
+**Housekeeping (fail-loud):** the log has **two** `RUN SUMMARY — 2026-10-02` blocks, from two separate runs. Left as is, since only Tom deletes run records. Split the run log (**28th** recommendation; file ~793 KB).
+
+**Resolution routing:** nothing routed. This summary is the only write.
+
+**Open for Tom (unchanged):** reconnect Gmail (not re-verified this run); INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; decide whether PROP-2026-09-22-003's post-talk check becomes a Channel 3 watch.
+
+**Agent 16 Status:** Operational (shell available). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-03.*

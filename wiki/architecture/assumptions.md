@@ -33294,3 +33294,226 @@ ASSUMPTION-1730:
 *Extracted by the 14a run of 2026-10-01 (local). **10 items (1721–1730).** Coverage: no designer speech. One Sonnet reader subagent read 11 C2A2 sessions above 038d996f (the 09-30 local pass), last 10 messages each. The other 15 sessions in that range are Summa runs; they were not read, and their outcome is taken from the evening sync addendum. Verified at source: the Fredrickson proposal file exists; the conflict note in for_lit_search.md. No `.bak` taken: the sandbox shell was unavailable (disk full), so this append was made with an exact-match edit.*
 
 ---
+
+## 2026-10-02 — 14a end-of-day intake (local; 28 sessions above fafe0f10)
+
+ASSUMPTION-1731:
+  Date identified: 2026-10-02
+  Statement: [stated] The lit pipeline ran as two concurrent instances for the second day running. The second instance created `architecture/lit_pipeline.lock` but noted "the task instructions don't tell [the other copy] to check", applied nothing, and released the lock. It proposed: "exit if `lit_pipeline.lock` exists and is under 6 hours old". Its cause hypotheses: "a duplicate schedule, a cloud copy alongside the local one, or a retry after a timeout."
+  Context: 0dda1a36; lock file read on disk by this pass (body says RELEASED; convention "proposed, not yet in the task spec").
+  Type: architectural
+  Related decisions: OPEN-261; ASSUMPTION-1721; PRESUMPTION-1104 / REVISE-498
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1731
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 0dda1a36; lock file contents verified at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1732:
+  Date identified: 2026-10-02
+  Statement: [stated] Scheduler health reports 29 OK / 34 WARN / 3 FAIL (10-01: 27/34/5). FAILs: `openstory.ui` exit 127; `prs-connectome-publish` built 09-25 but the template changed 09-29; `voice-shell-check` 12 of 371 rows failing since 09-28. 32 tasks are "moved to a cloud scheduled task", so the Mac registry cannot tell whether they fire. On the run-stall FAIL it cautions: it "may come from the move to the cloud, not a stalled run … treat that as unconfirmed." The task file's "Known state (as of 2026-08-05: 78 OK / 4 WARN / 0 FAIL)" is stale.
+  Context: 130b4915.
+  Type: architectural
+  Related decisions: PRESUMPTION-1099 (recurrence); ASSUMPTION-1724
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1732
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 130b4915 (the script's verdicts as reported; not re-run).
+    Current status: UNTESTED
+
+ASSUMPTION-1733:
+  Date identified: 2026-10-02
+  Statement: [stated] Rationale drift on keep-warm. The task rationale is "Supabase free-tier projects pause after 7 days with no DB activity … A first-failure surface is more useful than silent retries" (ping OK today). The lit pipeline now states the counter-claim: "A daily `SELECT 1` always succeeds, so the task reports success even if Supabase doesn't count it." Its proposed fix is to query a real table and check project status.
+  Context: 322480f4 (task text); 0dda1a36 (counter-claim, while dispositioning ASSUMPTION-1730 → MONITOR-648).
+  Type: empirical
+  Related decisions: ASSUMPTION-1730 / MONITOR-648
+  Testability: testable via literature (vendor documentation) and empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1733
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from two sessions that give different reasons about the same task; tagged rationale drift.
+    Current status: UNTESTED
+
+ASSUMPTION-1734:
+  Date identified: 2026-10-02
+  Statement: [stated] The walk handoff hypothesises: "The 8 AM run may be creating proposals without updating the master page". The master wiki was last updated 09-26, and 11 proposals have landed since. On the 94-vs-079 findings gap it hypothesises: "the 94 may include FLAG and FPD items, or the two files have drifted apart." The wiki daily run's footer still prints "94 findings".
+  Context: 23b657d8; 62089753; 4d269b8f (added as items 7–8 "For Morning Discussion").
+  Type: empirical
+  Related decisions: ASSUMPTION-1727 / MONITOR-653 (recurrence)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1734
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests of three sessions.
+    Current status: UNTESTED
+
+ASSUMPTION-1735:
+  Date identified: 2026-10-02
+  Statement: [stated] Shared-state contradictions between tasks on the same day:
+    (a) OpenStory telemetry is FAIL in `REFRESH_STATUS.md` (6dd58a77 overwrote the PASS line), but PASS at 10:15Z per system health (a31386de).
+    (b) Morning project status says scheduler health "last ran yesterday"; 130b4915 ran today.
+    (c) Morning project status says overnight runs "all fired on time"; the watchdog reports run-stall FAIL and 32 tasks it cannot see.
+    (d) Gmail is used as connected (62089753) but treated as disconnected (1056c6fb).
+    (e) The evening sync appended to a `2026-10-02_cowork_summary.md` that an earlier cloud run had already written.
+  Context: 6dd58a77, a31386de, 2531f470, 130b4915, 62089753, 1056c6fb, 4d269b8f.
+  Type: architectural
+  Related decisions: ASSUMPTION-1725, -1728; PRESUMPTION-1104 (recurrence)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1735
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated from reader digests; each half of each contradiction is a stated claim in a different session.
+    Current status: UNTESTED
+
+ASSUMPTION-1736:
+  Date identified: 2026-10-02
+  Statement: [stated] Telemetry refresh: the Desktop Commander fallback "needed your approval, and since nobody was there to give it, it was declined." Feeds are said to be "still current" on the strength of the earlier 10:15Z PASS (33 agents), not a fresh check. The FAIL line's timestamp is written as `T??:??Z`.
+  Context: 6dd58a77.
+  Type: architectural
+  Related decisions: ASSUMPTION-1726; PRESUMPTION-1096 / REVISE-490
+  Testability: framework commitment (whether unattended runs may hold that permission is a designer ruling)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1736
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 6dd58a77.
+    Current status: UNTESTED
+
+ASSUMPTION-1737:
+  Date identified: 2026-10-02
+  Statement: [stated] Sandbox disk full again. It degraded or blocked at least 10 of the 12 C2A2 sessions read (e.g. `useradd: /etc/passwd.17066: No space left on device`). The wiki daily run notes the Mac has 164 GB free and ran its scripts there. This pass observed `/sessions` at 100% with 4.9 MB free. Writes to the mounted wiki still succeeded.
+  Context: 6dd58a77, a780527f, 322480f4, 23b657d8, a31386de, 62089753, 9815cc97, others; this pass (`df`).
+  Type: architectural
+  Related decisions: ASSUMPTION-1729 / MONITOR-654 (recurrence); PRESUMPTION-1096
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1737
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; this pass's own df observed first-hand.
+    Current status: UNTESTED
+
+ASSUMPTION-1738:
+  Date identified: 2026-10-02
+  Statement: [stated] Path drift across task files:
+    - The Carroll/Arkani-Hamed task file gives the wiki root as `~/Documents/Claude/RC Karpathy Wiki Project/wiki/`, "missing the `Projects/` folder."
+    - The chat scrape task says `Wiki/` but wrote to `wiki/`.
+    - Morning project status: "Documents Projects folder doesn't exist where this task looks for it."
+    - This pass's own task prompt also gives `…/Wiki` (capital W). The connected folder is `wiki`.
+  Context: 9815cc97, a780527f, 2531f470; this pass.
+  Type: architectural
+  Related decisions: ASSUMPTION-1723 (recurrence); REVISE-491
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1738
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests; own task prompt checked against the mounted folder name.
+    Current status: UNTESTED
+
+ASSUMPTION-1739:
+  Date identified: 2026-10-02
+  Statement: [stated] Carroll/Arkani-Hamed agent caveat: "Web search doesn't index brand-new arXiv postings well, so a paper of his from the last few days could have been missed." Two arXiv pages could not be opened. Authorship was confirmed from the PDF and search results. Result: 0 proposals.
+  Context: 9815cc97.
+  Type: epistemic
+  Related decisions: PRESUMPTION-1105 (window judgement)
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1739
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 9815cc97.
+    Current status: UNTESTED
+
+ASSUMPTION-1740:
+  Date identified: 2026-10-02
+  Statement: [stated] Chat scrape found no walk conversation for today or yesterday, and wrote a summary from two unrelated chats instead (CE3/JPII finance; de Nicola conference). It did not open a third ("AI security review for site"). Its Write reported "updated" rather than "created", so a same-day file may have been replaced. The evening sync sent nothing to Chat: "No C2A2 build session today."
+  Context: a780527f, 4d269b8f.
+  Type: methodological
+  Related decisions: OPEN-259 (day 5); PRESUMPTION-1063 (recurrence)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1740
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests.
+    Current status: UNTESTED
+
+ASSUMPTION-1741:
+  Date identified: 2026-10-02
+  Statement: [stated] The lit pipeline's subagents used about 114k and 129k tokens against a 30k budget, "as on every previous run". A backlog of about 153 queue items is untouched. This pass's reader used about 74k.
+  Context: 0dda1a36; this pass.
+  Type: methodological
+  Related decisions: designer Rule 6 (token budgets)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1741
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest; own usage taken from the subagent report.
+    Current status: UNTESTED
+
+ASSUMPTION-1742:
+  Date identified: 2026-10-02
+  Statement: [stated] Standing technical debt, restated today:
+    - The deferred monitor's log is about 771 KB, too large to read in one go. This is "the 27th time it's recommended splitting it".
+    - The execution queue holds 11 open items from March–May, none marked done (23b657d8).
+    - Four old decision emails re-match the "unread" search daily and are left unread (62089753).
+    - `COMMIT_ME_2026-09-07.sh` and `cell_dates.json` are still uncommitted at 25 days (a31386de).
+  Context: 1056c6fb, 23b657d8, 62089753, a31386de.
+  Type: architectural
+  Related decisions: PRESUMPTION-1101 (escalations to an absent reviewer)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1742
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated from reader digests.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-02 (local). **12 items (1731–1742).** Coverage: no designer speech visible. One Sonnet reader read the 12 C2A2 sessions above fafe0f10 (the 10-01 local pass). It used the last 12 messages of each, or 25 for the walk handoff and the evening sync. Ten of the twelve showed no opening turn within that window. The 16 Summa sessions in the range were not read. Verified at source: `lit_pipeline.lock` contents; REVISE-498/499 present in revision_flags.md; sandbox `df`. Everything else is reader-reported. `.bak.20261002-pre-14eod` taken.*
+
+---

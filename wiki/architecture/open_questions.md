@@ -3537,3 +3537,21 @@ OPEN-259 (update 2026-10-01): Day 4. Signals now disagree: the wiki daily run re
   deferred monitor reports it unauthenticated (ASSUMPTION-1725). There has still been no walk chat since 09-23.
 OPEN-260 (update 2026-10-01): The cloud 14a/14b and sync runs fired again and wrote to the same dated files as the
   local runs (ASSUMPTION-1728).
+
+## 2026-10-02 — raised by the 14a/14b end-of-day pass
+
+OPEN-262:
+  Raised: 2026-10-02 by 14a (ASSUMPTION-1736, -1737)
+  Question: Unattended runs that hit the full sandbox disk try a Desktop Commander fallback. The fallback needs approval, and it is auto-declined when no one is present. Should scheduled tasks be granted that permission, or should the fallback be removed from their specs so they fail loud at once? As things stand, the fallback exists only when Tom is at the machine.
+  Needs: **Tom** (permission ruling)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-262
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-261 (update 2026-10-02): Second day of concurrent lit-pipeline runs. The second instance created `lit_pipeline.lock`, applied nothing, and released it. The lock-check rule is written only in the lock file's body, not in the task spec (ASSUMPTION-1731, PRESUMPTION-1106). DISPOSITION-1021–1024 duplicate real IDs. See review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
+OPEN-260 (update 2026-10-02): The cloud runs stamp UTC. `changelog/2026-10-03_changes.md` existed before the local 10-02 pass ran (PRESUMPTION-1108). The question now includes which day a dated file describes.
+OPEN-259 (update 2026-10-02): Day 5 without designer input. No walk chat; the chat scrape substituted unrelated chats (ASSUMPTION-1740). Gmail state is still contradictory between tasks (ASSUMPTION-1735(d)).

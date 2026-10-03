@@ -2037,3 +2037,21 @@ Note: Linux sandbox bash failed (No space left on device); all scripts run on th
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 12 (oldest Fredrickson PROP-2026-09-24-001,
 8 days).
+
+## 2026-10-03 — C2A2 daily run (Sat, Wolfram specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: same 4 old threads (07-23, 04-27 x2, 04-08), all already
+archived. No moves; left unread.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Wolfram covered by specialist (PROP-2026-10-03-001). Searched Carroll (no October episode
+indexed yet), Levin, Kastrup, Friston: nothing new.
+**Phase 3.** `review/2026-10-03_review.html` (121,877 bytes, 13 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-7938169242878624079).
+**Phase 5.** `review/2026-09-29_review.html` moved to `review/_superseded/`. 09-30..10-03 retained.
+**Phase 5.5.** OK: 6,823,734 bytes; cards 503, dates 137, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 10, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 13 (oldest Fredrickson PROP-2026-09-24-001,
+9 days).

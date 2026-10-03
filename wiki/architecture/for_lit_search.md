@@ -24503,3 +24503,159 @@ ITEM: ASSUMPTION-1729 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-02 — empirical
       14a: Extracted from reader digests and this pass.
     Current status: UNTESTED
   Claim to test (in-house): Find what fills the sandbox disk, and why `QC log.md` has reached 8.5 MB.
+
+## 2026-10-02 — 14a / 14b end-of-day intake (local; 28 sessions above fafe0f10)
+
+Note to 15a/15b: presumption items keep the 10-01 trial split (OPEN-261): test the **Presumption under test**; the **Candidate remedy** is context only.
+
+ITEM: ASSUMPTION-1731 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-657); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1731
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 0dda1a36; lock file verified.
+    Current status: UNTESTED
+  Claim to test (in-house): Find why two lit-pipeline instances start (duplicate registry entry, cloud + local copies, or a timeout retry). Check whether either instance reads lit_pipeline.lock.
+
+ITEM: ASSUMPTION-1732 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-658); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1732
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 130b4915.
+    Current status: UNTESTED
+  Claim to test (in-house): For the 32 cloud-moved tasks, establish whether each fired today from cloud-side evidence. Update the stale 2026-08-05 'Known state' line in the scheduler task file.
+
+ITEM: ASSUMPTION-1733 [QUEUED] [SEARCHED-15a: 2026-10-03] [SEARCHED-15b: 2026-10-03] [DISPOSITIONED-15c: 2026-10-03]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1733
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 322480f4 and 0dda1a36 (rationale drift).
+    Current status: UNTESTED
+  Claim to test: Does a bare `SELECT 1` over the API count as activity for Supabase's free-tier inactivity pause?
+  Literature lane: Supabase documentation on project pausing and its activity criteria
+
+ITEM: ASSUMPTION-1735 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-659); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1735
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated from seven sessions.
+    Current status: UNTESTED
+  Claim to test (in-house): For each of (a)–(e), establish the true state on disk or in the service, and which writer was wrong.
+
+ITEM: ASSUMPTION-1737 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-660); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1737
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests and this pass's df.
+    Current status: UNTESTED
+  Claim to test (in-house): Identify what fills the 9.8 GB sandbox volume. Check whether it is reclaimable between runs.
+
+ITEM: ASSUMPTION-1738 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-661); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1738
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from three sessions and this pass's prompt.
+    Current status: UNTESTED
+  Claim to test (in-house): Grep every scheduled task file for wiki-root paths. List each one that does not resolve, the Wiki/wiki case included.
+
+ITEM: ASSUMPTION-1739 [QUEUED] [SEARCHED-15a: 2026-10-03] [SEARCHED-15b: 2026-10-03] [DISPOSITIONED-15c: 2026-10-03]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1739
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 9815cc97.
+    Current status: UNTESTED
+  Claim to test: General web search indexes new arXiv postings with a lag of days.
+  Literature lane: search-engine indexing latency for preprint servers; arXiv API and listing feeds as an alternative source
+
+ITEM: ASSUMPTION-1741 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-662); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1741
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 0dda1a36 and this pass.
+    Current status: UNTESTED
+  Claim to test (in-house): Tabulate subagent token use per run against the 30k budget for the last 14 runs of the lit pipeline and 14a/14b.
+
+ITEM: PRESUMPTION-1106 [QUEUED] [SEARCHED-15a: 2026-10-03] [SEARCHED-15b: 2026-10-03] [DISPOSITIONED-15c: 2026-10-03]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1106
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from ASSUMPTION-1731 and the lock file on disk.
+    Current status: UNTESTED
+  Presumption under test: An advisory lock file coordinates concurrent writers even when the check-the-lock rule is absent from the instructions those writers follow.
+  Candidate remedy (context only): Put the lock check and its staleness rule into the task spec; remove the duplicate schedule.
+  Literature lane: advisory vs mandatory locking; mutual exclusion and lease/fencing tokens in distributed systems; idempotent job scheduling
+
+ITEM: PRESUMPTION-1107 [QUEUED] [SEARCHED-15a: 2026-10-03] [SEARCHED-15b: 2026-10-03] [DISPOSITIONED-15c: 2026-10-03]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1107
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across three sessions; generalises PRESUMPTION-890.
+    Current status: UNTESTED
+  Presumption under test: A monitoring task's successful action, such as a ping, a prior PASS or a registry entry, is a valid measure of the outcome the task exists to secure.
+  Candidate remedy (context only): Have each task check the outcome directly, e.g. project status or feed freshness.
+  Literature lane: surrogate endpoints and proxy validity; synthetic monitoring vs outcome monitoring in SRE practice; Goodhart's law
+
+ITEM: PRESUMPTION-1108 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-03 — empirical lane, routed by 15c to monitor_queue.md (MONITOR-663); no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1108
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the changelog directory and date -u.
+    Current status: UNTESTED
+  Presumption under test: A date-named file describes one unambiguous day across cloud (UTC) and local (US Eastern) runs.
+  Candidate remedy (context only): Stamp a timezone in every dated filename or header.
+
+ITEM: PRESUMPTION-1109 [QUEUED] [SEARCHED-15a: 2026-10-03] [SEARCHED-15b: 2026-10-03] [DISPOSITIONED-15c: 2026-10-03]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1109
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated caveat in 9815cc97.
+    Current status: UNTESTED
+  Presumption under test: Web search over a 30-day window reliably shows a thinker's recent work, so '0 proposals' means nothing new.
+  Candidate remedy (context only): Query the arXiv API or author feeds directly; log unreachable sources as such.
+  Literature lane: coverage and recency of web search vs bibliographic databases; preprint discovery latency
+
+## 2026-10-03 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** The 5 literature-lane items from the 10-02 intake (ASSUMPTION-1733, 1739; PRESUMPTION-1106, 1107, 1109), searched FOR (15a) and AGAINST (15b) by two context-separated subagents, then dispositioned. 7 [IN-HOUSE] items (ASSUMPTION-1731, 1732, 1735, 1737, 1738, 1741; PRESUMPTION-1108) routed to monitor_queue.md as MONITOR-657..663 per precedent.
+**Dispositions:** DISPOSITION-1025..1029 — 0 INCORPORATE, 2 MONITOR (1733 → MONITOR-655, bound to MONITOR-648; 1739 → MONITOR-656), 3 REVISE (1106 → REVISE-502 High; 1107 → REVISE-503 High; 1109 → REVISE-504 Medium).
+**Numbering:** REVISE-500/501 appear in lit_search_returns.md from the 10-02 second instance but not in revision_flags.md; skipped to avoid collision (as 495..497 were). Running totals: PREMISE 221 | MONITOR 663 | REVISE 504 | DISPOSITION 1029.
+**SYSTEMIC-RISK (15b, Moderate):** action-as-outcome proxy across 1107 (anchor), 1733, 1739, 1106, 1109.
+**Run lock:** lit_pipeline.lock was RELEASED at start; this run wrote LOCKED at 04:34Z, checked register mtimes before writing (unchanged since 10-02 22:00/23:46 EDT), and released at end. This check was done because the 10-02 notes describe it, NOT because the task spec requires it — which is exactly PRESUMPTION-1106 / REVISE-502.
+**Depth caveat (fail loud):** ~2–3 searches per item per side, 1 fetch per side (Supabase docs). Several author/year citations are search-result or background-knowledge level and are labelled so in the result files; none was independently verified by 15c this run.
+**Independence:** separate contexts, same model family (cf. REVISE-488). Subagent cost ~83k (15a) + ~88k (15b) tokens — over the 4k/30k guideline, as in prior runs.
+**Backlog:** the older bare [QUEUED] lane (15d re-triggers, oldest 2026-07) was not touched, per standing scope (DEFECT-I still open). Backups: `*.bak.20261003-pre-15pipeline` for the four edited registers.

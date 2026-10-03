@@ -15895,3 +15895,33 @@ REVISE-499:
   Consistency: Member of the 2026-10-02 silent-divergence-unchecked SYSTEMIC-RISK-FLAG; builds on ASSUMPTION-1722.
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-502:
+  Date: 2026-10-03 | Source: DISPOSITION-1027 (15c) | Item: PRESUMPTION-1106 (PRESUMPTION (unstated))
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong)
+  Finding: Definitional refutation, agreed by both sides. Note: this run did check the lock, but only because the run read the 10-02 notes, not because the task spec says so.
+  What is at risk: the run lock and any future coordination file; all shared registers; DISPOSITION/REVISE numbering (duplicates already exist for 1021–1024).
+  Recommended action: Move the lock check, its staleness rule and the RELEASED convention into the c2a2-lit-search-pipeline task spec (Tom-owned edit); resolve the duplicate schedule (ASSUMPTION-1731 / MONITOR-657). Consider a fencing token: the run ID written into each register entry.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1106_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1106_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-503:
+  Date: 2026-10-03 | Source: DISPOSITION-1028 (15c) | Item: PRESUMPTION-1107 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (conditional) (Weak) | 15b: CHALLENGED (Strong)
+  Finding: 15a's own support is conditional on criteria the three operative instances (SELECT 1, prior PASS, registry entry) do not meet. Both sides converge on the Prentice/Fleming validity criteria.
+  What is at risk: every monitoring/keep-alive task whose self-report is the only evidence: Supabase keep-warm, feed-freshness PASS, scheduler registry 'all fired'.
+  Recommended action: Each task checks the outcome it exists to secure (project status, feed timestamps, cloud-side run evidence) and reports action success and outcome separately.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1107_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1107_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-504:
+  Date: 2026-10-03 | Source: DISPOSITION-1029 (15c) | Item: PRESUMPTION-1109 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Finding: The support covers relative speed only, not the inference '0 → nothing new'; that inference is refuted. 14b confidence was speculative (one caveat), so urgency is Medium not High.
+  What is at risk: tradition agents' '0 proposals' results and the apparent quiet of some traditions.
+  Recommended action: Query the arXiv API/listing feeds or author feeds directly; record unreachable sources as UNREACHABLE, not 0; report 'no new items found in sources X' rather than 'nothing new'.
+  Urgency: Medium
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1109_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1109_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED

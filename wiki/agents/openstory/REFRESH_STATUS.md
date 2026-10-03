@@ -1,1 +1,1 @@
-2026-10-01  FAIL  step 1 (environment) — sandbox bash: "useradd: /etc/passwd: No space left on device"; Desktop Commander fallback declined (no approver on scheduled run). Feeds NOT refreshed by this run; last good run: 2026-10-01T10:15Z PASS telemetry=2026-10-01/33 agents node_edges=2026-10-01 | DB age 1h
+2026-10-02T??:??Z  FAIL  step1 (env) — sandbox bash: "useradd: /etc/passwd: No space left on device"; Desktop Commander fallback declined (unattended run) | feeds NOT re-checked this run; last PASS 2026-10-02T10:15Z telemetry=2026-10-02/33 agents node_edges=2026-10-02

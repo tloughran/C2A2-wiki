@@ -24149,3 +24149,98 @@ PRESUMPTION-1105:
 *Surfaced by the 14b run of 2026-10-01, after 14a and against its output. **3 items (1103–1105).** Types: structural 1 · epistemic 1 · methodological 1 · normative 0 · scaling 0. Risk: High 2 · Medium 1. Absorbed rather than filed: conflicting liveness signals with no precedence rule (= PRESUMPTION-1099/1100, recurrence in ASSUMPTION-1724); state disagreement across tasks and a stale master header (= PRESUMPTION-1083, recurrence in 1725/1727); disk-full fallback (= PRESUMPTION-1096 / REVISE-490, recurrence in 1729); escalations addressed to an absent reviewer (= PRESUMPTION-1101); a full intake pass on a day with no designer speech (= PRESUMPTION-1102, self-referential). The reader was again a same-family model (= 1086/1092).*
 
 ---
+
+## 2026-10-02 — 14b end-of-day intake (local; after 14a, against ASSUMPTION-1731–1742)
+
+PRESUMPTION-1106:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] The 10-02 lock attempt presumed that a lock file coordinates writers by existing. An advisory lock only binds writers that check it, and the rule for checking was written in the lock file's own body, not in the task spec that both instances read. Both instances come from the same prompt. If they were coordinated at all, it would have to be through that prompt. Was the lock presumed to be a protocol when it is only a note?
+  Evidence it was operative: ASSUMPTION-1731. The second instance created the lock after the first had started, applied nothing, and marked the lock RELEASED. The convention is "proposed, not yet in the task spec". The same instance proposes a 6-hour staleness rule with no owner who would add it.
+  Why it was unstated: obvious to participants
+  Type: structural
+  Related decisions: OPEN-261; PRESUMPTION-1104 / REVISE-498; ASSUMPTION-1721
+  Testability: testable via literature
+  Risk if wrong: High — the next concurrent run will again produce two dispositions and duplicate IDs (DISPOSITION-1021–1024 already duplicate), and the lock file will give a false sense that the problem is handled.
+  Confidence: high (two consecutive days; lock contents read at source)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1106
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from ASSUMPTION-1731 and the lock file on disk; narrows PRESUMPTION-1104 (no lock) to the lock that now exists.
+    Current status: UNTESTED
+
+PRESUMPTION-1107:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] Tasks report the success of the action they took as if it were the outcome the action was meant to secure. A `SELECT 1` succeeding is read as "project kept warm". An earlier PASS is read as "feeds still current". A registry entry is read as "all fired on time". Was it presumed that an action's return code measures its effect?
+  Evidence it was operative: ASSUMPTION-1733 (keep-warm counter-claim), -1736 ("still current" from the 10:15Z PASS), -1735(c) ("all fired on time" while run-stall is FAIL).
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: PRESUMPTION-890 (liveness as proxy for work), which this widens from the scheduler to the tasks' own self-reports; ASSUMPTION-1730
+  Testability: testable via literature and empirically
+  Risk if wrong: Medium — a paused Supabase project would break the Pathway-00 broker, and the keep-warm task would still be reporting OK.
+  Confidence: high (three independent instances today)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1107
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across three sessions; generalises PRESUMPTION-890.
+    Current status: UNTESTED
+
+PRESUMPTION-1108:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] The pipeline treats "today" as one well-defined unit and keys its files by date. The cloud runs stamp UTC. At this pass (03:43 UTC 10-03, local evening 10-02), `changelog/2026-10-03_changes.md` already existed, and this pass appends to a 10-02 file written by a cloud run. Which day does a dated file describe, and whose day is it?
+  Evidence it was operative: changelog files for 10-02 and 10-03 both exist from cloud runs before the local 10-02 pass. The 10-01 cloud entry noted "a different day boundary than the user's may apply". The evening sync appended to a cloud-written `2026-10-02_cowork_summary.md` (ASSUMPTION-1735(e)).
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions: OPEN-260; ASSUMPTION-1728; PRESUMPTION-1099
+  Testability: testable in-house
+  Risk if wrong: Medium — sessions near midnight can be counted twice or not at all. Metrics are keyed to the wrong day. A reader of `2026-10-03_changes.md` is told nothing ran, when that day has not yet happened locally.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1108
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the changelog directory and `date -u` at this pass.
+    Current status: UNTESTED
+
+PRESUMPTION-1109:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] Tradition agents presume that web search over a 30-day window shows a thinker's recent work. The agent names an indexing lag for new arXiv postings, but no one measures that lag. So "0 proposals" cannot tell "nothing new" apart from "not yet indexed".
+  Evidence it was operative: ASSUMPTION-1739. Two arXiv pages were unreachable, and the result was still recorded as 0.
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: PRESUMPTION-1105 (window exceptions)
+  Testability: testable empirically
+  Risk if wrong: Medium — the newest work arrives late or never, and "quiet" traditions may be artefacts of the instrument.
+  Confidence: speculative (one stated caveat)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1109
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated caveat in 9815cc97.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-02, after 14a and against its output. **4 items (1106–1109).** Types: structural 2 · epistemic 1 · methodological 1 · normative 0 · scaling 0. Risk: High 1 · Medium 3.*
+
+*Absorbed rather than filed:*
+- *The watchdog cannot see 32 cloud tasks (= PRESUMPTION-1099; recurrence in ASSUMPTION-1732).*
+- *Two writers on status and summary files (= 1104; recurrence in 1735).*
+- *Substituting unrelated chats for a missing walk (= 1063; recurrence in 1740).*
+- *Disk-full fallback, and Desktop Commander auto-declined (= 1096 / REVISE-490; recurrence in 1736 and 1737).*
+- *Debt items re-recommended daily to an absent reviewer (= 1101; recurrence in 1742).*
+- *A full intake pass on a fifth day with no designer speech (= 1102, self-referential).*
+- *The reader was again a same-family model (= 1086/1092).*
+
+---
