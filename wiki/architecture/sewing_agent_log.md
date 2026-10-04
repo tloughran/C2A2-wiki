@@ -1504,3 +1504,61 @@ Rather than write a guessed or partial connectivity count into `architecture/met
 - Nothing here needs urgent action beyond a restart before next Sunday's run; the vault itself is untouched and no worse off than last week.
 
 *Logged by Sewing Agent (aborted run) on 2026-09-27.*
+
+
+---
+
+## Run: 2026-10-04
+
+**Time of run:** 2026-10-04 (Sunday, scheduled task `C2a2 sewing agent weekly`)
+**Agent:** Sewing Agent v0. Orphan integration and agentic call injection.
+**Shell note:** `device_bash` failed twice at the start of this run, as it did on 2026-09-27. Desktop Commander's local shell worked, so the full census ran normally. No CSV row exists for 2026-09-27; the 09-20 to 10-04 delta is two weeks, not one.
+
+### Connectivity (pre-run census, as logged to CSV)
+
+| Orphans | Sparse | Connected | Total |
+|---|---|---|---|
+| 4,613 | 758 | 90 | 5,461 |
+
+Post-run census: 4,597 / 773 / 91 / 5,461. Of the orphans, `architecture/` holds 3,532, `inbox/` 837 and `heartbeat/` 103.
+
+### Pages processed (all `inbox/proposals/pending/`, backlinks before to after)
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `2026-09-24_fredrickson_gpt-measures-spirituality-from-text` | 0 | 2 | Fredrickson, Loughran, Stump, McGilchrist |
+| `2026-09-27_rohr_an-influential-teacher-therese-of-lisieux` | 0 | 1 | Rohr, Wright, Stump, Fredrickson, Loughran |
+| `2026-09-27_rohr_myth-of-redemptive-violence` | 0 | 2 | Rohr, Stump, Wright, Friston |
+| `2026-09-27_wright_ascension-political-theology` | 0 | 2 | Wright, Rohr, Stump, McGilchrist |
+| `2026-09-28_levin_machines-all-the-way-up-final-version` | 0 | 1 | Levin, Friston, Wolfram |
+| `2026-09-29_hawkins_tbp-two-year-report` | 0 | 2 | Hawkins, Friston, Levin, Hoffman, Loughran |
+| `2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript` | 0 | 2 | McGilchrist, Fredrickson, Wolfram, Stump, Rohr, Levin, Loughran |
+| `2026-09-29_wolfram_future-pure-math-age-of-ai` | 0 | 1 | Wolfram, McGilchrist, Loughran, Hawkins, Arkani-Hamed |
+| `2026-09-30_carroll_mindscape-369-caruso-free-will` | 0 | 1 | Carroll, Stump, Friston, Rohr, Loughran |
+| `2026-09-30_mcgilchrist_levin-conversation-2-platonic-space` | 0 | 2 | McGilchrist, Levin, Stump, Kastrup, Wolfram, Loughran |
+
+**Agentic calls injected: 48** (Loughran 8, Stump 7, McGilchrist 5, Rohr 4, Wright 3, Friston 4, Levin 3, Fredrickson 3, Wolfram 3, Hawkins 2, and one each to Hoffman, Kastrup, Carroll, Arkani-Hamed).
+
+### Bridge notes (13 sections appended to 12 existing files; none created)
+
+`fredrickson_loughran`, `fredrickson_mcgilchrist` (pages 1 and 7), `wright_rohr` (two sections: pages 3+4 and page 2), `rohr_stump`, `stump_wright`, `friston_levin`, `friston_hawkins`, `hawkins_levin`, `mcgilchrist_wolfram` (pages 7+8), `carroll_stump`, `levin_mcgilchrist`, `mcgilchrist_stump`. Each carries a `**Wikilinks (sewing, 2026-10-04):**` line, which is what moved the ten pages out of the orphan set.
+
+### Worth Tom's attention
+
+**1. Six pending cards remain orphaned and unprocessed** (batch cap of 10): `2026-09-30_mcgilchrist_think-spiral-classical-liberalism`, `2026-10-01_fredrickson_bipr-dementia-caregivers-conflict`, `2026-10-03_wolfram_history-qa-sept23-ai-expectations`, `2026-10-04_rohr_gods-resting-place-francis-nature-sacrament`, `2026-10-04_rohr_therese-way-of-love-weekly-summary`, `2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth`. The Think Spiral card (Klein and McGilchrist) carries a live tension with MacIntyre's critique of liberalism that bears on the ISME paper.
+
+**2. The pending queue is draining again, slowly.** There were 16 cards pending on 2026-10-04, against 20 on 2026-09-20.
+
+**3. A convergence worth the master agent's eye.** Rohr (redemptive violence) and Wright (Ascension) landed independently in the same week on empire/violence against an already-present divine reign, and Rohr's Thérèse card pulls against Wright's Philippians 2:12 on effort and grace. Both are now in `wright_rohr_bridge.md`.
+
+**4. Provenance cautions that the calls repeat.** The Levin final-version card and the McGilchrist/Levin conversation card were both built without primary text (metadata only), and the Wright Ascension card rests on a Substack cross-post. The calls say to hold confidence at Speculative until the transcripts are read.
+
+**5. Collateral backlink movement.** 22 files changed backlink count: the 10 processed pages plus 12 bridge files that gained links from the new calls. This is expected, and unlike last cycle's duplicate-stem effect.
+
+**6. Standing flags, unchanged.** The orphan metric is still dominated by `architecture/` (about 77%) and `inbox/`, so the count carries little information about the curated vault. Token budget (Rule 6) is exceeded again, as on every run.
+
+### Verification (fail-loud)
+
+Each of the 10 pages was checked after writing: original content is a prefix of the new content, exactly one `## Agentic Calls` heading and one `Sewing Agent on 2026-10-04` stamp. Each of the 13 bridge appends was checked the same way. CSV row appended once after asserting no existing 2026-10-04 row. Nothing deleted or overwritten. Nothing committed to git.
+
+*Logged by Sewing Agent on 2026-10-04.*

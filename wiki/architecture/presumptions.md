@@ -24244,3 +24244,117 @@ PRESUMPTION-1109:
 - *The reader was again a same-family model (= 1086/1092).*
 
 ---
+
+## 2026-10-03 — 14b end-of-day intake (local; after 14a, against ASSUMPTION-1743–1753)
+
+PRESUMPTION-1110:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] Duplicate firing has so far been treated as a lit-pipeline problem, to be fixed with that pipeline's lock. Today the Wolfram agent found a proposal stamped in its own start minute, read it as prior work, and reported "0 proposals". That suggests duplicate or overlapping firing is a property of the scheduler that reaches any task. No task carries a run identity that would let it tell "an earlier run did this" apart from "a twin of me is doing this now". Was it presumed that each scheduled task fires exactly once?
+  Evidence it was operative: ASSUMPTION-1744 (PROP-2026-10-03-001 at 03:03, run reports 0); ASSUMPTION-1731/1743 (lit pipeline); ASSUMPTION-1749 (two separate 10-02 summaries in the deferred log); the cloud and local twins of this very task (PRESUMPTION-1108).
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: PRESUMPTION-1106 / REVISE-502 (the lock fixes one task only); OPEN-261
+  Testability: testable via literature and in-house
+  Risk if wrong: High — duplicate proposals, duplicate IDs, and headline counts ("0 proposals") that hide work done by a twin.
+  Confidence: medium (one direct instance outside the lit pipeline, plus circumstantial ones)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1110
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from ASSUMPTION-1744 together with 1731/1743/1749; widens PRESUMPTION-1106 from one task to the scheduler.
+    Current status: UNTESTED
+
+PRESUMPTION-1111:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] The pipeline counts designer input only when a chat's title follows the walk-chat convention. "Day 6 without designer input" may be an artefact of that title filter rather than an absence of input. Today a same-day chat on the Vatican AI note, Magisterium AI and Levin & Dennett, which the sync itself judged to "read like walk dictation", was excluded on its title alone. The morning scrape ran before the chat existed. Was it presumed that title is a reliable signal of whether a chat carries designer intent?
+  Evidence it was operative: ASSUMPTION-1752. OPEN-259 has counted consecutive days "without designer input" since 09-28 on the basis of these filters.
+  Why it was unstated: obvious to participants (a convention inherited from earlier runs)
+  Type: epistemic
+  Related decisions: OPEN-259; PRESUMPTION-1063 (the opposite failure: unrelated chats substituted). This item sits between the two: the filter cannot be both inclusive and safe without a signal other than the title.
+  Testability: testable in-house (Tom confirms); literature lane on selection bias from metadata filters
+  Risk if wrong: High — the self-awareness pipeline's main input, designer speech, is being dropped, and metrics such as "days without designer input" mislead.
+  Confidence: medium (one instance; content description is suggestive, not confirmed)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1111
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the evening-sync transcript (read directly) and the morning-scrape timing.
+    Current status: UNTESTED
+
+PRESUMPTION-1112:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] Tradition agents treat the model's parametric memory as admissible evidence for a novelty judgment. The Wolfram run rejected a new ebook as a reissue "from memory" without comparing texts. Was it presumed that recall of a thinker's prior work is reliable enough to reject candidate items unseen?
+  Evidence it was operative: ASSUMPTION-1744.
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: PRESUMPTION-1109 / REVISE-504 (another route by which '0 proposals' can be an instrument artefact)
+  Testability: testable via literature (LLM factual recall and confabulation on bibliographic detail)
+  Risk if wrong: Medium — genuinely new material is silently dropped, and the drop leaves no reviewable trace.
+  Confidence: speculative (one instance)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1112
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated rationale in 244b8d96.
+    Current status: UNTESTED
+
+PRESUMPTION-1113:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] A single PASS/FAIL status line is presumed to mean one thing. The telemetry writer used it to mean "this run failed". Its reader, morning system health, takes it to mean "the feeds are stale or fresh". The same field cannot carry both, so a run failure over good data and a run success over stale data look alike. Was it presumed that run status and data status coincide?
+  Evidence it was operative: ASSUMPTION-1746 (PASS overwritten by FAIL while feeds were current; system health says "refreshed this morning").
+  Why it was unstated: obvious to participants
+  Type: structural
+  Related decisions: PRESUMPTION-1107 / REVISE-503 (the mirror case: action success read as outcome); PRESUMPTION-1104 (two writers)
+  Testability: testable via literature (observability practice: run health vs data freshness signals)
+  Risk if wrong: Medium — false alarms and missed staleness in the morning health report.
+  Confidence: high (instance and reader both visible today)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1113
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the writer's stated reason and the reader's contrary summary.
+    Current status: UNTESTED
+
+PRESUMPTION-1114:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] 14a/14b presume that the local session list is the complete record of the day's runs. Two health tasks now suspect that tasks moved to the cloud leave no local transcript, and that the transcript store stopped updating after 09-15. If so, this pass's coverage ("25 sessions above a29fbcdf") omits every cloud-run task, and the reader cannot see what it cannot see. The cloud twin of this task wrote "RUN_INCOMPLETE" for 10-03 because it lacked session_info, while this local twin has it but may lack the cloud transcripts. Is either twin seeing the whole day?
+  Evidence it was operative: ASSUMPTION-1745 (32 tasks "moved to cloud"; "transcript store stopped updating after 09-15"); ASSUMPTION-1743 (evening sync reports a second lit-pipeline copy that does not appear locally); the 10-03 cloud changelog entry.
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: PRESUMPTION-1099 (the watchdog cannot see cloud tasks), which this extends to the self-awareness pipeline itself; OPEN-260
+  Testability: testable in-house
+  Risk if wrong: High — the self-audit's coverage statements overstate what was audited.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1114
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 1743/1745 and this pass's own coverage method (self-referential).
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-03, after 14a and against its output. **5 items (1110–1114).** Types: structural 2 · epistemic 2 · methodological 1 · normative 0 · scaling 0. Risk: High 3 · Medium 2.*
+
+*Absorbed rather than filed:*
+- *Action success reported as outcome, keep-warm (= 1107 / REVISE-503; recurrence in 1747).*
+- *Deferring to an absent reviewer, the deferred monitor's "your decision" (= 1101; recurrence in 1749).*
+- *Disk-full fallback auto-declined (= 1096 / REVISE-490; recurrence in 1751).*
+- *Advisory lock checked only by note-reading (= 1106 / REVISE-502; recurrence in 1743).*
+- *A full intake pass on a sixth day with no Cowork designer speech (= 1102, self-referential).*
+- *The reader was again a same-family model (= 1086/1092).*
+
+---

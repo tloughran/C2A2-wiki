@@ -50022,3 +50022,98 @@ SYSTEMIC-RISK-FLAG (15b, 2026-10-03, Moderate): action-as-outcome proxy — each
 In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1731 → MONITOR-657, ASSUMPTION-1732 → MONITOR-658, ASSUMPTION-1735 → MONITOR-659, ASSUMPTION-1737 → MONITOR-660, ASSUMPTION-1738 → MONITOR-661, ASSUMPTION-1741 → MONITOR-662, PRESUMPTION-1108 → MONITOR-663
 Running totals after this run: PREMISE-221 (unchanged) | MONITOR-663 | REVISE-504 (495..497 and 500..501 remain proposed/unapplied from the 10-01/10-02 conflict runs; skipped to avoid collision) | DISPOSITION-1029.
 This run's distribution (5 literature items): 0 INCORPORATE, 2 MONITOR, 3 REVISE. No validated_premises.md change; consistency check n/a.
+
+
+## 2026-10-04 — c2a2-lit-search-pipeline (15a/15b/15c) RUN RETURNS
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1110 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Google Cloud, 'About Cloud Scheduler' [fetched]
+  Summary: Schedulers promise at-least-once delivery and call duplicates rare; exactly-once per slot exists only where a per-slot dedup check is built in.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1110_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1110 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Google Cloud Scheduler overview [search-result; fetch returned no content]
+  Summary: At-least-once firing; cron double-runs/skips at DST changes; same-day output may be partial or another process's, so it does not prove an earlier run finished. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1110_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1030:
+  Date: 2026-10-04 | Item: PRESUMPTION-1110 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Both sides read the same vendor contract: at-least-once, not exactly-once. 15a's 'support' is only that duplicates are rare. In-house, duplicates are already observed (09-29, 10-01, possibly 10-03 — MONITOR-657, ASSUMPTION-1743).
+  Disposition: REVISE → REVISE-505
+  Reasoning: PRESUMPTION, weak support vs strong challenge, with realised in-house instances → REVISE, High. Companion to REVISE-502 (advisory lock): the lock fixes mutual exclusion; this item fixes the inference 'output exists ⇒ my earlier run did it'.
+  What is at risk: any task that skips or merges work on finding same-day output (lit pipeline, 14a/14b intake, tradition agents' proposal files — ASSUMPTION-1744).
+  Recommended action: Write a run ID into every output and register entry; a task treats existing output as its own only if the run ID matches a completed-run record; enforce one registration per task.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1111 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Mateen et al. 2013, Clinical Epidemiology [search-result]
+  Summary: Title-only screening missed no finally-included studies in one review, so titles work as a first pass; nothing supports titles as the sole filter, nor auto-generated chat titles.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1111_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1111 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Galke et al. 2017, arXiv:1705.05311 [search-result]
+  Summary: Titles reach >90% of full-text accuracy on 3 of 4 datasets, but chat titles are auto-generated from the first exchange and frozen; later designer input is invisible and the excluded set is never checked. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1111_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+DISPOSITION-1031:
+  Date: 2026-10-04 | Item: PRESUMPTION-1111 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both sides agree titles are a good first-pass signal for author-chosen titles; neither found support for a title as the *sole* gate, and the chat-title mechanism (first exchange only) is a plausible bias source. The false-negative rate is unmeasured, not shown high.
+  Disposition: MONITOR → MONITOR-664
+  Reasoning: Evidence indirect on both sides; no missed designer input has been observed. A cheap in-house test settles it. Parallels PRESUMPTION-1105 → MONITOR-647 (unaudited inclusion filter).
+  What would change the disposition: a recall sample — content-scan ~50 title-excluded chats for designer input. Any material miss rate → REVISE; near-zero → INCORPORATE as a first-pass heuristic only. Priority: High | Cadence: Weekly
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1112 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None–Weak
+  Key source: Mallen et al. 2023, ACL ('When Not to Trust Language Models') [search-result]
+  Summary: Parametric recall is reasonable only for very prominent entities; citation studies (Walters & Wilder 2023 [background-knowledge]: 18% fabricated, 24% of real ones with substantive errors) rule out memory alone as grounds for rejection.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1112_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1112 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Agrawal et al. 2024, Findings of EACL, arXiv:2305.18248 [fetched; abstract and introduction]
+  Summary: LLMs fabricate or corrupt bibliographic details at material rates, worst for less-cited authors; duplicate detection in practice compares texts. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1112_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1032:
+  Date: 2026-10-04 | Item: PRESUMPTION-1112 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None–Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Both sides converge: unaided LLM bibliographic recall is not reliable enough to reject an item, least of all for the less-prominent authors many traditions track.
+  Disposition: REVISE → REVISE-506
+  Reasoning: PRESUMPTION, no support, strong challenge → REVISE. Urgency Medium rather than High (as with REVISE-504): one observed rejection (244b8d96), not yet shown wrong, and the loss is recoverable if the rejected item is logged.
+  What is at risk: tradition agents' reissue/duplicate rejections; silent loss of new work misread as old.
+  Recommended action: Reject as a reissue only after comparing texts (or DOI/arXiv ID/abstract); otherwise record UNVERIFIED-DUPLICATE with the candidate link for Tom's review.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1113 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: 'Your Service Is Healthy, but Its Data Isn't', Cloud Native Now [search-result]
+  Summary: Some systems roll freshness into one health status, but always with more than two states, or with freshness checked separately from run success (as dbt does).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1113_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1113 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: dbt source freshness [search-result]; SRE Workbook ch. 2 [background-knowledge]
+  Summary: Practice treats run success and data freshness as separate signals; with one bit, stale data passes or a FAIL doesn't say which part failed. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1113_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1033:
+  Date: 2026-10-04 | Item: PRESUMPTION-1113 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: 15a's own support is for multi-state or separated designs, i.e. against a single binary field. In-house conflict already realised (commit_check OK vs run_stall FAIL for one run; 9af31b28 vs 37049609; ASSUMPTION-1745/1746).
+  Disposition: REVISE → REVISE-507
+  Reasoning: PRESUMPTION, weak support that points the other way, strong challenge, realised in-house → REVISE, High. Same remedy family as REVISE-503 (report action and outcome separately).
+  What is at risk: scheduler health rows, morning system-health/project-status 'last ran' lines, every PASS/FAIL that downstream agents read as 'fresh'.
+  Recommended action: Split each status into run_status (PASS/FAIL/SKIPPED/NO-OP) and data_freshness (timestamp of newest datum + age threshold); never derive one from the other.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+SYSTEMIC-RISK-FLAG (15b, 2026-10-04, Moderate, trending High): surface signal as verdict — a cheap signal (output exists, title, recall, one status bit) used as the final word to skip, exclude or reject, so errors leave no trace. Items: PRESUMPTION-1110, -1111, -1112, -1113. Linked to 10-03 action-as-outcome-proxy, 10-01 silence-read-as-health, 09-29 inherited-pass-status. File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-04_surface-signal-as-verdict.md
+15c note on the flag: four consecutive daily flags now describe one pattern (a proxy accepted without checking the thing it stands for). 15c recommends Tom treat REVISE-503/505/506/507 as one design change, not four.
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1743 → MONITOR-665, ASSUMPTION-1744 → MONITOR-666, ASSUMPTION-1745 → MONITOR-667, ASSUMPTION-1746 → MONITOR-668, ASSUMPTION-1750 → MONITOR-669, ASSUMPTION-1752 → MONITOR-670, PRESUMPTION-1114 → MONITOR-671
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-671 | REVISE-507 (495..497 and 500..501 remain proposed/unapplied) | DISPOSITION-1033.
+This run's distribution (4 literature items): 0 INCORPORATE, 1 MONITOR, 3 REVISE. No validated_premises.md change; consistency check n/a.

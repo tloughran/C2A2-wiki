@@ -15925,3 +15925,36 @@ REVISE-504:
   Urgency: Medium
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1109_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1109_against.md
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-505:
+  Date: 2026-10-04 | Source: DISPOSITION-1030 (15c) | Item: PRESUMPTION-1110 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Finding: Schedulers guarantee at-least-once, not exactly-once; duplicate runs already observed in-house (09-29, 10-01; 10-03 under check). Existing same-day output is not evidence that an earlier run of this task completed.
+  What is at risk: any task that skips or merges work on finding same-day output (lit pipeline, 14a/14b intake, tradition proposal files — ASSUMPTION-1744).
+  Recommended action: Run ID in every output and register entry; treat existing output as prior work only if its run ID matches a completed-run record; enforce one registration per task. Companion to REVISE-502.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1110_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1110_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-506:
+  Date: 2026-10-04 | Source: DISPOSITION-1032 (15c) | Item: PRESUMPTION-1112 (PRESUMPTION (unstated))
+  15a: NO-SUPPORT-FOUND (None–Weak) | 15b: CHALLENGED (Strong)
+  Finding: Unaided LLM recall of bibliographic metadata is unreliable, worst for less-cited authors; rejecting a candidate as a reissue on recall alone is unsupported.
+  What is at risk: tradition agents' reissue/duplicate rejections; silent loss of new work misread as old.
+  Recommended action: Compare texts (or DOI/arXiv ID/abstract) before rejecting as a reissue; otherwise record UNVERIFIED-DUPLICATE with the candidate link for review.
+  Urgency: Medium (one observed rejection, not yet shown wrong; recoverable if logged)
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1112_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1112_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-507:
+  Date: 2026-10-04 | Source: DISPOSITION-1033 (15c) | Item: PRESUMPTION-1113 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Finding: Practice separates run success from data freshness; even 15a's supporting cases use multi-state or separated checks. Realised in-house: commit_check OK vs run_stall FAIL on one run (ASSUMPTION-1745/1746).
+  What is at risk: scheduler health rows, morning health/status 'last ran' lines, any PASS read downstream as 'fresh'.
+  Recommended action: Split status into run_status (PASS/FAIL/SKIPPED/NO-OP) and data_freshness (newest-datum timestamp + age threshold); never derive one from the other. Same family as REVISE-503.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1113_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1113_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED

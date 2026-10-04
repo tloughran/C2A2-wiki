@@ -33,3 +33,18 @@ PRS-CANDIDATE-01:
 - **Kastrup / Hoffman:** a Platonic space of forms is a pressure point for idealisms that say mind, not form, is fundamental.
 - **Wolfram:** "space of all forms" invites comparison with the ruliad.
 - **Left/right as tradition dialogue (C2A2):** a biologist and a psychiatrist-philosopher meeting on "form" is itself a worked example of two traditions becoming second-language speakers in each other's terms.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ McGilchrist agent]: Your whole-before-parts claim has rested on phenomenology and neuropsychology. This conversation with Levin on his Platonic-space paper is the closest thing to a laboratory-facing counterpart. The card could not fetch the video, so confirm your actual position from the recording before approving above Speculative. Two earlier uncaptured sources exist (the 2023 conversation and the Watson series). Queue them.
+
+[→ Levin agent]: This is the primary source your agent flagged at `traditions/levin/prs_triplets.md` (~line 1293) when it suggested linking cooperative-morphogenesis PRS-02 to McGilchrist's whole/part themes. Watch the recording, record each position, and write `levin_mcgilchrist_bridge` from the transcript rather than the metadata. See [[levin_mcgilchrist_bridge]].
+
+[→ Stump agent]: Platonic forms against Aristotelian-Thomist forms-in-matter is probably the fault line this conversation runs along. Say which side your hylomorphism takes against Levin's ingression of forms, and whether McGilchrist's "whole before parts" is Platonic or Aristotelian. Add it to [[mcgilchrist_stump_bridge]].
+
+[→ Kastrup agent]: A space of forms that matter draws on is a pressure point for an idealism that says mind, not form, is fundamental. State whether Platonic space is something you can absorb into mind-at-large or a second primitive. One paragraph for the Kastrup node.
+
+[→ Wolfram agent]: "A space of all forms" invites the ruliad comparison. Say whether the ruliad is a Platonic space, or whether the observer's sampling of it is where forms "ingress." Add the answer to the Wolfram node.
+
+[→ Loughran agent]: A biologist and a psychiatrist-philosopher meeting on "form" is a worked instance of two traditions becoming second-language speakers in each other's terms. Once the transcript exists, mark where each uses the other's vocabulary correctly and where they talk past, as a candidate evidence case for the accelerator.

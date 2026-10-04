@@ -3555,3 +3555,21 @@ OPEN-262:
 OPEN-261 (update 2026-10-02): Second day of concurrent lit-pipeline runs. The second instance created `lit_pipeline.lock`, applied nothing, and released it. The lock-check rule is written only in the lock file's body, not in the task spec (ASSUMPTION-1731, PRESUMPTION-1106). DISPOSITION-1021–1024 duplicate real IDs. See review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
 OPEN-260 (update 2026-10-02): The cloud runs stamp UTC. `changelog/2026-10-03_changes.md` existed before the local 10-02 pass ran (PRESUMPTION-1108). The question now includes which day a dated file describes.
 OPEN-259 (update 2026-10-02): Day 5 without designer input. No walk chat; the chat scrape substituted unrelated chats (ASSUMPTION-1740). Gmail state is still contradictory between tasks (ASSUMPTION-1735(d)).
+
+## 2026-10-03 — raised by the 14a/14b end-of-day pass
+
+OPEN-263:
+  Raised: 2026-10-03 by 14b (PRESUMPTION-1110; ASSUMPTION-1744, -1743)
+  Question: Duplicate firings now appear outside the lit pipeline. The Wolfram agent found a proposal stamped in its own start minute and reported 0. Should duplicate firing be fixed once at the scheduler (one registration per task, local or cloud, not both) rather than with per-task locks? Should every task stamp a run ID on what it writes?
+  Needs: **Tom** (scheduler registry ruling)
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-263
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-10-03): Day 6 with no Cowork designer speech. However, the evening sync found a same-day claude.ai chat, "Antique et nova" (Vatican AI note, Magisterium AI, Truthly.ai, Levin & Dennett), that "reads like walk dictation". It was excluded on its title alone (ASSUMPTION-1752, PRESUMPTION-1111). The day-count may be an artefact of the title filter. Tom to confirm.
+OPEN-261 (update 2026-10-03): The lock file says "single instance". The evening sync says a second copy fired and exited on the lock (ASSUMPTION-1743). Unresolved. REVISE-502 (High) recommends moving the lock rule into the task spec.
+OPEN-260 (update 2026-10-03): A further question is whether cloud-run tasks appear in local session_info at all. If they do not, the local 14a/14b pass cannot see them (PRESUMPTION-1114).

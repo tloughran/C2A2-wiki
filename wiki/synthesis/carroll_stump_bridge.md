@@ -42,3 +42,18 @@ What makes this worth a bridge rather than a footnote is that **both positions a
 **Open question the wiki cannot yet answer:** Is Stump's argument against causal closure an argument, or an appeal to the intuition that a closed base leaves higher levels idle? Dupré's "wholly incredible" is a report of incredulity, and she cites it approvingly rather than reconstructing it. Carroll's position survives the incredulity easily; what it would not survive is a case where a higher-level configuration makes a difference that no microphysical description captures — and the wiki does not have one. Whether such a case is even possible under poetic naturalism's own definitions is the thing to settle, and it should be settled before the disagreement is scored either way.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-17_stump_natural-law-metaphysics-creator-antireductionism]]
+
+---
+
+## Rejecting retribution from opposite metaphysics
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-30_carroll_mindscape-369-caruso-free-will.md` (0 backlinks).
+
+**Why it sits here:** Carroll's Mindscape 369 with Caruso (PROP-2026-09-30-003).
+
+**Synthesis claim.** Carroll and Caruso agree that basic desert fails and that forward-looking moral formation replaces it; Caruso adds that skepticism can foster agape. Stump reaches forgiveness and formation from libertarian-leaning agency and Thomistic love. The practice converges while the metaphysics diverges, which makes the case a clean test of whether practical agreement across traditions requires shared grounds.
+
+**Open question the wiki cannot yet answer:** Which parts of Stump's account of forgiveness survive if the agent is a compatibilist or a hard incompatibilist, and which require the libertarian-leaning premise?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-30_carroll_mindscape-369-caruso-free-will]]

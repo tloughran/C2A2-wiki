@@ -211,3 +211,33 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Open question the wiki cannot yet answer:** Is the individual/corporate split a disagreement about Paul, or a disagreement about which questions a first-century text can be asked? Rohr is not doing exegesis and does not claim to be; Wright is. If the two are answering different questions, the "tension" recorded in three cards is a category difference and should be filed as one — which is itself a finding about how this network's cross-tradition flags are generated, since three separate retrieving agents each read it as a substantive conflict.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]], [[2026-09-20_rohr_preacher-of-love-temple-dignity]]
+
+---
+
+## Two oracles, one week, one structure
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_rohr_myth-of-redemptive-violence.md`, `inbox/proposals/pending/2026-09-27_wright_ascension-political-theology.md` (0 backlinks).
+
+**Why it sits here:** Rohr's "The Myth of Redemptive Violence" and Wright's Ascension segment (ANTWA ep. 2703, via Bird's Substack), both filed 2026-09-27, both pending and unlinked.
+
+**Synthesis claim.** Each unmasks a totalizing system by naming a rival reality that is already present, not by opposing it: Rohr's inclusion against exclusion as violence's foundation, Wright's enthroned Christ against the state's claim to the seat. They agree on the structure and differ on the carrier. Rohr locates the alternative in a practice, Wright in an office. One is a pattern of behavior; the other a standing authority.
+
+**Open question the wiki cannot yet answer:** Can a practice without an office, or an office without a practice, resist nationalism, or does each need the other, and where does the wiki record the oracle that says which?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_myth-of-redemptive-violence]] [[2026-09-27_wright_ascension-political-theology]]
+
+---
+
+## Where effort drops out
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux.md` (0 backlinks).
+
+**Why it sits here:** Rohr's "An Influential Teacher" (PROP-2026-09-27-003): Thérèse's staircase and "God does all the rest."
+
+**Synthesis claim.** Wright's Philippians 2:12 reading keeps active participation load-bearing in salvation; Rohr's formative source makes desire the only human contribution. This is a real divergence, not a difference of emphasis, and it is the project's central "salvation in fear and trembling" theme seen from its two ground-truth oracles. Do not average them. The unresolved item is whether "desire" in Thérèse is the participation Paul requires.
+
+**Open question the wiki cannot yet answer:** Is there a reading of Philippians 2:12 on which "God does all the rest" and "work out your own salvation" describe the same event at two levels, and has either oracle said so?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_an-influential-teacher-therese-of-lisieux]]

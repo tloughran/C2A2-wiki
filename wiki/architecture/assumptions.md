@@ -33517,3 +33517,211 @@ ASSUMPTION-1742:
 *Extracted by the 14a run of 2026-10-02 (local). **12 items (1731–1742).** Coverage: no designer speech visible. One Sonnet reader read the 12 C2A2 sessions above fafe0f10 (the 10-01 local pass). It used the last 12 messages of each, or 25 for the walk handoff and the evening sync. Ten of the twelve showed no opening turn within that window. The 16 Summa sessions in the range were not read. Verified at source: `lit_pipeline.lock` contents; REVISE-498/499 present in revision_flags.md; sandbox `df`. Everything else is reader-reported. `.bak.20261002-pre-14eod` taken.*
 
 ---
+
+## 2026-10-03 — 14a end-of-day intake (local; 25 sessions above a29fbcdf)
+
+ASSUMPTION-1743:
+  Date identified: 2026-10-03
+  Statement: [stated] Two accounts of today's lit pipeline disagree. The lock file says: "RELEASED 2026-10-03 by c2a2-lit-search-pipeline (scheduled run, single instance). Applied: DISPOSITION-1025..1029, MONITOR-655..663, REVISE-502..504." The evening sync says the pipeline "fired twice for the third day running, but the lock held. The second copy saw the lock file and exited without writing anything." Only one local lit-pipeline session (dff1b6eb) is in today's window. REVISE-502 records that this run checked the lock "only because the run read the 10-02 notes, not because the task spec says so".
+  Context: dff1b6eb, c0dd1094; lock file and REVISE-502 read at source by this pass.
+  Type: architectural
+  Related decisions: OPEN-261; ASSUMPTION-1731; PRESUMPTION-1106 / REVISE-502
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1743
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening-sync transcript (read directly) and the lock file and revision_flags.md (read at source); session count from list_sessions.
+    Current status: UNTESTED
+
+ASSUMPTION-1744:
+  Date identified: 2026-10-03
+  Statement: [stated] The Wolfram agent reported 0 proposals written, yet PROP-2026-10-03-001 exists, stamped 03:03, the same minute the run started. Stated rationales in the run: it skipped an Aug 4 personal memorial post because "earlier runs have not mined personal content". It rejected a Wolfram Media ebook as a reissue of his March 2021 essay on the basis of "memory", and says it did not compare the texts. It skipped the cross-tradition sweep because there was no new proposal of its own.
+  Context: 244b8d96 (reader digest). The proposal file `inbox/proposals/pending/2026-10-03_wolfram_history-qa-sept23-ai-expectations.md` was confirmed present by this pass.
+  Type: architectural
+  Related decisions: ASSUMPTION-1731 (duplicate firing, lit pipeline); PRESUMPTION-1109
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1744
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 244b8d96; proposal file existence verified at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1745:
+  Date identified: 2026-10-03
+  Statement: [stated] Two health tasks offer competing causes for the daily-run FAIL.
+    - Scheduler health (29 OK / 34 WARN / 3 FAIL, unchanged from 10-02) says the run_stall FAIL "probably comes from the daily run moving to the cloud ... treat it as unconfirmed". The same report has commit_check OK and run_stall FAIL for the same daily run. Its list of 32 tasks "moved to cloud" includes the scheduler-health task itself. `openstory.ui` exit-127 runs rose to 21,638 (13,303 the day before).
+    - Morning system health says "the check itself is probably broken, or the transcript store stopped updating after 09-15" (failing 5 days running).
+  Context: 75db868e, 37049609 (reader digests).
+  Type: empirical
+  Related decisions: ASSUMPTION-1732; PRESUMPTION-1099
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1745
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader digests of 75db868e and 37049609.
+    Current status: UNTESTED
+
+ASSUMPTION-1746:
+  Date identified: 2026-10-03
+  Statement: [stated] Shared status was rewritten in ways that contradict other tasks.
+    - The OpenStory telemetry refresh failed on the full disk. It overwrote the earlier 10:15Z PASS line with a FAIL "so `morning-system-health` will show this run failed", while noting the feeds were still current (33 agents).
+    - Morning system health says the feeds were "refreshed this morning".
+    - Morning project status says scheduler health and keep-warm "last ran yesterday morning", though both ran on 10-03 (75db868e, 98a115b9).
+  Context: 9af31b28, 37049609, 07f54692 (reader digests).
+  Type: architectural
+  Related decisions: PRESUMPTION-1104, -1083; ASSUMPTION-1735
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1746
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated from three reader digests.
+    Current status: UNTESTED
+
+ASSUMPTION-1747:
+  Date identified: 2026-10-03
+  Statement: [stated] Keep-warm returned `keep_warm_ping = 1` from `SELECT 1`. Its spec says to report errors verbatim and not retry. The check is unchanged on the day REVISE-503 (High) recommended that each task "check the outcome it exists to secure".
+  Context: 98a115b9 (task prompt present in transcript); REVISE-503 read at source.
+  Type: empirical
+  Related decisions: ASSUMPTION-1730, -1733; PRESUMPTION-1107 / REVISE-503
+  Testability: testable empirically (already queued as ASSUMPTION-1733)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1747
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 98a115b9; recorded as a recurrence and not re-queued.
+    Current status: UNTESTED
+
+ASSUMPTION-1748:
+  Date identified: 2026-10-03
+  Statement: [stated] The wiki daily run states: "Phase 6: commit deferred to scripts/commit_daily_run.sh (05:45, Mac-side). No git run by this task." Its footer reports 956 triplets, 140 connections, 94 findings, 1611 signals across 87 pairs, and 503 review cards. Proposals pending: 13 (oldest PROP-2026-09-24-001, 9 days); ledger 449/418/29 with OPEN=1 (PROP-2026-08-14-033). No Gmail or calendar connector loaded, and the email was left as a draft.
+  Context: d16a9f84 (reader digest).
+  Type: architectural
+  Related decisions: ASSUMPTION-1727, -1734 (findings count 94 vs 79)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1748
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of d16a9f84.
+    Current status: UNTESTED
+
+ASSUMPTION-1749:
+  Date identified: 2026-10-03
+  Statement: [stated] The deferred monitor did not open a watch for PROP-2026-09-22-003 (Hoffman) because "whether to is your decision". Nothing was due. WATCH-003 is at 14 checks and stale (due 10-06). The log has grown to about 793 KB (771 KB on 10-02) and holds two separate 10-02 summaries. Items waiting on Tom: the INTEGRITY FLAG ruling, PROP-2026-08-14-033, and the triplet half of PROP-2026-09-28-001.
+  Context: a3807485 (reader digest).
+  Type: methodological
+  Related decisions: PRESUMPTION-1101; ASSUMPTION-1742
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1749
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of a3807485.
+    Current status: UNTESTED
+
+ASSUMPTION-1750:
+  Date identified: 2026-10-03
+  Statement: [stated] The lit pipeline skipped REVISE-500 and -501 because they appear in the returns file but "were never applied to `revision_flags.md`". Its systemic finding: "each check confirms its own action ... rather than the outcome". Its search agents used about 83k and 88k tokens against the 4k/30k budget. Searches ran 2–3 per item, 15c did not verify citations, and about 150 queued items were left untouched.
+  Context: dff1b6eb (reader digest); REVISE-502..504 present in revision_flags.md (verified).
+  Type: methodological
+  Related decisions: ASSUMPTION-1741; REVISE-503
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1750
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of dff1b6eb; REVISE IDs verified at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1751:
+  Date identified: 2026-10-03
+  Statement: [stated] The sandbox disk is still full. At least 7 of 11 C2A2 runs today report "No space left on device" (morning project status, keep-warm, scheduler health, telemetry, system health, chat scrape, evening sync), and so did this pass (`useradd: /etc/passwd.14793: No space left on device`). The Desktop Commander fallback was again "declined automatically since no one was there to approve it". System health reports swap about 93% full (10.5 of 11.3 GB).
+  Context: 07f54692, 98a115b9, 75db868e, 9af31b28, 37049609, bf13032e, c0dd1094; this pass's bash failure was seen first-hand.
+  Type: architectural
+  Related decisions: ASSUMPTION-1729, -1737; OPEN-262; PRESUMPTION-1096 / REVISE-490
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1751
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated from transcripts and reader digests; recorded as a recurrence and not re-queued.
+    Current status: UNTESTED
+
+ASSUMPTION-1752:
+  Date identified: 2026-10-03
+  Statement: [stated] The morning chat scrape found no walk chat ("the newest chat ... 'CE3 project finance questions' ... Oct 1"). That evening the cowork-to-chat sync found a chat from today, "Antique et nova", covering the Vatican AI note, Magisterium AI, Truthly.ai, and Levin & Dennett. The sync said it "reads like walk dictation, but it isn't titled as a walk chat". It did not post there, citing earlier runs' practice of "not posting into chats that aren't clearly the walk chat". Its recommendation: "naming walk chats consistently would let future runs deliver." It also reports "No hands-on Cowork session" today.
+  Context: bf13032e, c0dd1094 (both read directly by this pass).
+  Type: methodological
+  Related decisions: OPEN-259; ASSUMPTION-1740; PRESUMPTION-1063
+  Testability: testable in-house (Tom can confirm)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1752
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from two transcripts read directly.
+    Current status: UNTESTED
+
+ASSUMPTION-1753:
+  Date identified: 2026-10-03
+  Statement: [stated] Morning project status reports the BOSCO index at 30,529 of 30,529 and 33 of 38 tasks enabled. The BOSCO heartbeat has been off since June 12. OpenStory status was not checked because the Mac terminal request was auto-declined.
+  Context: 07f54692 (reader digest).
+  Type: empirical
+  Related decisions: OPEN-262
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1753
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from a reader digest of 07f54692.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-03 (local). **11 items (1743–1753).***
+
+*Coverage:*
+- *No designer speech in Cowork (day 6). A chat that may be designer dictation exists in claude.ai (ASSUMPTION-1752) but was not read.*
+- *Of the 25 sessions above a29fbcdf (the 10-02 local pass), 11 are C2A2 and 14 are Summa (2 still running). The Summa sessions were not read.*
+- *Two C2A2 transcripts (chat scrape, evening sync) were read directly, last 6 messages each.*
+- *One Sonnet reader read the other nine, last 12 messages each. It reports that most windows held only the final message, so earlier live turns cannot be ruled out.*
+
+*Verified at source: lock-file contents, REVISE-502..504, MONITOR-660..663, and the existence of the PROP-2026-10-03-001 file. Everything else is reader-reported.*
+
+*No `.bak` was taken because the sandbox shell was unavailable (disk full). This append was made with an exact-match edit.*
+
+---

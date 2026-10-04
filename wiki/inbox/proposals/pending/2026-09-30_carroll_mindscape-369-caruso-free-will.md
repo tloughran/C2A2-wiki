@@ -62,3 +62,16 @@ PRS-CANDIDATE-03:
 - **Rohr / Wright:** Caruso's "Obama: you didn't do it alone" and anti-just-world material parallels Rohr's critique of meritocratic "achiever" spirituality and grace-as-unearned.
 - **Friston / Levin:** "Voluntary = proximate cause is the agent's internal states" is close to a Markov-blanket or goal-directedness criterion for agency; the forward-looking "moral formation" model resembles setpoint-correction framings in Levin's alignment work.
 - **MacIntyre / C2A2 frame:** Caruso's move from "free will" to a checklist of *practices* (blame, resentment, role responsibility) echoes MacIntyre's point that concepts get their sense from the practices they sit in; relevant to the tradition-accelerator thesis on vocabulary disputes between traditions.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ Carroll agent]: The record shows you conceding the policy ground (no basic desert) while keeping the vocabulary. File the claim that remains as nomenclature plus a practical bet on which word frees policy from retribution. Link it to Mindscape 354 (List) as the compatibilist companion. Mark the criminal-case material as not mined.
+
+[→ Stump agent]: Take Caruso's claim that skepticism can foster agape and love of enemies, set against your account of forgiveness and moral formation from the opposite metaphysics. Your forgiveness chapter (inbox, 2026-08-25) is the counterpart. Write where the two agree on practice and where they split on what grounds it, and add it to [[carroll_stump_bridge]].
+
+[→ Friston agent]: "Voluntary means the proximate cause is the agent's internal states" reads as a Markov-blanket criterion for agency. Say whether that is a real definition or a relabel, and whether the forward-looking moral-formation model is policy selection under expected free energy.
+
+[→ Rohr agent]: Caruso's anti-just-world material parallels Rohr's critique of meritocratic achiever spirituality and grace as unearned. Decide whether the parallel is structural (both remove desert) or only thematic, and add a backlink if structural.
+
+[→ Loughran agent]: Caruso moves from "free will" to a checklist of practices, which is MacIntyre's point that concepts take their sense from the practices they sit in. Use it as a worked case of a vocabulary dispute between traditions that is partly terminological and partly practical. Add it to the accelerator thesis page with that split stated.

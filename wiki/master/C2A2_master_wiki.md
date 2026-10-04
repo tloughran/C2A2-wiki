@@ -1127,3 +1127,14 @@ Carroll, Levin, Kastrup, Friston: nothing new beyond what is carded, so **0 orch
 Review page: 13 proposals, opened in browser. 09-29 review page moved to `review/_superseded/`. Review Log 503
 cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 10 (no WARN). Network
 unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 13; oldest (Fredrickson PROP-2026-09-24-001) 9 days queued.
+
+### 2026-10-04 — Daily Run
+Phase 0: no new `[C2A2-review-decision]` email; the same four old threads (07-23, 04-27 x2, 04-08) are already
+archived; nothing moved. Ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Sunday: Rohr
+and Wright cards already present (PROP-2026-10-04-001..003). Orchestrator searched Carroll (newest Mindscape still
+369, carded), Levin, Kastrup, Friston, McGilchrist, Hoffman, Stump: nothing new beyond what is carded, so
+**0 orchestrator proposals**. arXiv author-page fetch rate-limited (HTTP 429).
+
+Review page: 16 proposals, opened in browser. 09-30 review page moved to `review/_superseded/`. Review Log 506
+cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 11 (no WARN). Network
+unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 16; oldest (Fredrickson PROP-2026-09-24-001) 10 days queued.

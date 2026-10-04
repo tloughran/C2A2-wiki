@@ -6586,3 +6586,33 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-03.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-04
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (`2026-04-21_carroll_singer-mindscape-351.md`, already tagged `[TRACKED-16]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Grep for `2026-07-19-001` / `beatitudes-week-two` matches only `2026-08-27_decisions.md`, as before. Not counted as a check.
+
+**Census (file-tool glob):** `pending/` **13** (+1 since 10-03: `2026-10-03_wolfram_history-qa-sept23-ai-expectations.md`), `needs_review/` 1. `approved/`/`denied/` not recounted this run.
+
+**PROP-2026-09-22-003 (Hoffman, Hopewell talk):** the talk date (10-03) has passed, so its post-talk condition is now checkable for the first time. It remains **unheld** — no watch exists and Agent 16 has not opened one on its own authority. If Tom wants it checked, a one-line Channel 3 WATCH-REQUEST is all that is needed.
+
+**Environment / fail-loud:** sandbox shell failed (`No space left on device`), so this run used file tools only; read-only apart from this summary. Watch list is ~777 KB — split the run log (**29th** recommendation).
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; decide whether PROP-2026-09-22-003 becomes a Channel 3 watch; Gmail reconnection not re-verified.
+
+**Agent 16 Status:** Operational (file tools only). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-04.*

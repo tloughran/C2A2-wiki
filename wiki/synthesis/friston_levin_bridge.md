@@ -156,3 +156,18 @@ The Thought Economics interview restates bioelectric "cognitive glue" in Levin's
 **Open question the wiki cannot yet answer:** Is the halo inference about the target, or a thermodynamic consequence of the target's presence? The abstract does not distinguish them and the distinction is the whole question: a chemical gradient produces tracking without anything being inferred. Active inference needs the collective's state to depend on the target in a way that is *modelled* rather than merely caused — which would show up as tracking that persists briefly when the target is removed, or that anticipates rather than follows. Neither is reported. Until the full text is read, this is a blanket-shaped result and not yet a blanket.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-12_levin_bacterial-collectives-decodable-patterns]]
+
+---
+
+## A blanket one level below the cell
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-28_levin_machines-all-the-way-up-final-version.md` (0 backlinks).
+
+**Why it sits here:** The final version of Levin and Watson's "Machines all the way up" (PROP-2026-09-28-001), whose reported sub-cellular cognition section is unread.
+
+**Synthesis claim.** If the continuum claim is extended below the single cell, it hands the Friston side a test it has lacked: whether Markov-blanket partitioning discriminates at every scale or only where the analyst chose the partition. The sub-cellular case is the one least likely to have been chosen to fit, so it is the strongest available test of the scale-invariance claim.
+
+**Open question the wiki cannot yet answer:** Does a blanket drawn at the sub-cellular level partition the system in a way an intervention can confirm, and if the section turns out to restate the preprint, which other source supplies the test?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-28_levin_machines-all-the-way-up-final-version]]

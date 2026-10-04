@@ -136,3 +136,18 @@ The second card sharpens this into a decidable question. Rohr grounds human dign
 **Open question the wiki cannot yet answer:** If dignity is a causal power of a composite — the body, the people, the church — vested in the configuration rather than in the constituents, what happens to the dignity of a constituent that leaves the composite? Rohr's three properties say the dignity is indestructible; a distributive account says it is inherited. Those are in tension and neither card notices. Stump's own extension of the dyad argument to "peoples and the church" in *What Are We?* is where the answer would have to come from.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]], [[2026-09-20_rohr_preacher-of-love-temple-dignity]]
+
+---
+
+## Exclusion as the failure of corporate substance
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_rohr_myth-of-redemptive-violence.md` (0 backlinks).
+
+**Why it sits here:** Rohr's claim that exclusion, not any single violent act, is violence's foundation (PROP-2026-09-27-002).
+
+**Synthesis claim.** If Stump's Church is a united something and not an aggregate, a group defined by its excluded other is by that definition an aggregate held together by what it expels. Rohr's mechanism then says violence is what such a group does to preserve a unity it does not have. On that reading inclusion is not a moral addition to a group; it is what makes a group a substance at all.
+
+**Open question the wiki cannot yet answer:** Does the Thomistic account of corporate substance entail that exclusion-defined groups are not genuine unities, and if so what does it say about the identity of a group that defines itself over against an enemy?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_myth-of-redemptive-violence]]

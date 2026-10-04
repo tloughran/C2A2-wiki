@@ -106,3 +106,18 @@ The disanalogy is equally specific and should be recorded with it. VOCUS2 salien
 **Outstanding gap:** the magnitudes were never extracted — the video was not transcribed, and "sparser without sacrificing accuracy" is a direction, not a number. The chapters are timestamped and `SalienceSM` is documented, so this is a cheap fix and should be made before the result is cited as evidence anywhere.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-15_hawkins_visual-saliency-sparser-models]]
+
+---
+
+## Surprise that restructures the hypothesis space
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-29_hawkins_tbp-two-year-report.md` (0 backlinks).
+
+**Why it sits here:** The Thousand Brains Project two-year report (PROP-2026-09-29-001): burst sampling and compositional models in Monty.
+
+**Synthesis claim.** Burst sampling fires on poorly predicted input and adds hypotheses, so prediction failure drives structure learning and not only belief updating. That is the part of active inference that is usually asserted and rarely built. If the burst trigger can be written as a free-energy threshold, Monty is a working structure-learning system under that principle; if it cannot, the two frameworks differ on what surprise is for.
+
+**Open question the wiki cannot yet answer:** Is Monty's burst trigger expressible as a free-energy or expected-free-energy threshold, and does the compositional hierarchy have a counterpart in hierarchical generative models that predicts its convergence advantage?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-29_hawkins_tbp-two-year-report]]
