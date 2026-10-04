@@ -1,14 +1,14 @@
 {
   "_meta": {
-    "generated": "2026-10-04T05:03:08.632016-04:00",
+    "generated": "2026-10-04T05:52:50.334074-04:00",
     "source": "openstory-db",
     "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-    "db_mtime": "2026-10-04T04:34:07.445848",
+    "db_mtime": "2026-10-04T05:40:28.570758",
     "lanes": 33,
     "total_runs": 4308,
     "t_min": "2026-03-30T19:09:19.612Z",
     "t_max": "2026-10-04T08:24:41.873Z",
-    "t_max_event": "2026-10-04T08:24:58.087Z",
+    "t_max_event": "2026-10-04T09:40:36.766Z",
     "note": "Prototype. Token data summed from event payloads in open-story.db (both pre/post 2026-04-07 token_usage paths). Thinking: the PRIMARY metric is 'thinking steps (count)' = number of message.assistant.thinking blocks, captured CONTINUOUSLY (every lane from its first run). Two other thinking figures appear in the tooltip but are NOT good headline metrics: 'chars retained' = plaintext length, which is STRIPPED (signature-only, empty) for the majority of agent runs, so it measures text-retention not reasoning; 'audit-tok' = system.thinking_tokens estimated_tokens_delta, audit-emitted and present only on a few June days. All bucketed by session start like every other metric. Yield = wikilinks/files added per day PLUS PRS-triplet yield (first-seen and articulated series) from wiki/ git history and the WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'. Cross-tradition signals/day (yield_signals) are counted from the dated Interactions Level-2 signal stream.",
     "signal_source": {
       "status": "ok",
@@ -47973,14 +47973,14 @@
         {
           "sid": "8e3e582b-df30-4a88-bff9-eea05c7be466",
           "t": "2026-10-04T07:38:51.606Z",
-          "dur_min": 0.2,
-          "events": 22,
+          "dur_min": 121.8,
+          "events": 47,
           "in": 22,
           "out": 2620,
           "cache_read": 973153,
           "cache_creation": 150103,
           "total": 1125898,
-          "thinking_tokens": 231,
+          "thinking_tokens": 1250,
           "thinking_chars": 0,
           "thinking_blocks": 3
         }
@@ -63157,6 +63157,18 @@
       "signals": 0,
       "synthesis_essays": 0,
       "synthesis_words": 0
+    },
+    {
+      "date": "2026-10-04",
+      "links_added": 32,
+      "links_removed": 0,
+      "files_added": 19,
+      "commits": 1,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 1933
     }
   ]
 }
