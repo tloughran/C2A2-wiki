@@ -215,7 +215,7 @@ read it there, don't paste a bare two-arg call.
 ## Wiki Janitor (weekly polish-and-surface pass)
 
 **Script:** `scripts/janitor.py`
-**Schedule:** Sunday 05:45 local (`c2a2-wiki-janitor-weekly` scheduled task)
+**Schedule:** Sunday 06:45 local, launchd `com.c2a2.janitor-weekly` on the Mac (moved off the cloud routine 2026-10-05 under the three-tier rule; log `~/Library/Logs/c2a2-janitor-weekly.log`)
 **Outputs:** `janitor/findings.md` and `janitor/state.json` (outside `wiki/` so Obsidian doesn't see them)
 
 ### What it does
