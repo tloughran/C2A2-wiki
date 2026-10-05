@@ -27,7 +27,8 @@
 # the one carve-out is the heartbeat's data-only refresh behind a CI gate. Daily
 # run output is wiki content -- HTML and prose -- which is exactly the class that
 # rule exists to protect. Committing converts an unbounded working-tree pile into
-# a reviewable commit; pushing stays a human act.
+# a reviewable commit. Pushing is a separate step with its own gate:
+# push_daily_run.sh, added 2026-10-05 after two days of commits sat unpushed.
 #
 # Exit codes:
 #   0 = committed, or nothing to commit (clean no-op)
@@ -370,6 +371,6 @@ if ! git -C "$REPO" commit -q -m "$subject"; then
 fi
 head=$(git -C "$REPO" rev-parse --short HEAD)
 log "committed $head: $count path(s)"
-log "NOT pushed, by design -- a human reviews wiki content before it reaches GitHub"
+log "NOT pushed here, by design -- push_daily_run.sh runs next and decides, behind its own gate"
 log "=== commit_daily_run done ==="
 exit 0

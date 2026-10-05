@@ -1,8 +1,10 @@
 #!/bin/bash
 # launchd wrapper for the daily scheduler work: one action, then three assertions.
 #
-#   commit_daily_run.sh         -- commit what the sandboxed run could not. THE ONLY
-#                                  STEP HERE THAT WRITES. Never pushes.
+#   commit_daily_run.sh         -- commit what the sandboxed run could not. Never pushes.
+#   push_daily_run.sh           -- publish those commits to GitHub behind a gate
+#                                  (Tom's decision, 2026-10-05). The only step here
+#                                  that reaches outside the Mac.
 #
 #   check_scheduled_commits.py  -- did the run's output get committed?  (the aftermath)
 #   check_daily_run_stall.py    -- did the run finish at all, and if not, which tool
@@ -50,10 +52,23 @@ cd "$REPO" || { echo "$(date '+%F %T') ERROR repo-not-found: $REPO"; exit 1; }
 # rather than failing on a thing the sandbox is structurally unable to do; and if
 # this step refuses, that check fails right afterwards and says so.
 #
-# It commits. It never pushes -- wiki content reaches GitHub only past a human.
+# It commits. It never pushes -- the next step decides that.
 bash scripts/commit_daily_run.sh
 RC_DAILY=$?
 echo "$(date '+%F %T') commit_daily_run exit=$RC_DAILY"
+
+# Publishes the daily-run commits, behind push_daily_run.sh's gate. On 2026-09-30
+# and 10-01 the commits above sat unpushed and nothing noticed; Tom chose
+# auto-push behind a check over an overdue alert (2026-10-05). Skipped when the
+# commit step refused, since a refused commit means the tree is not trusted today.
+RC_PUSH=0
+if [ "$RC_DAILY" -eq 0 ]; then
+  bash scripts/push_daily_run.sh
+  RC_PUSH=$?
+  echo "$(date '+%F %T') push_daily_run exit=$RC_PUSH"
+else
+  echo "$(date '+%F %T') push_daily_run skipped (commit step refused)"
+fi
 
 python3 scripts/check_scheduled_commits.py --status-file scheduler/commit_check.md
 RC_COMMIT=$?
@@ -79,6 +94,7 @@ echo "$(date '+%F %T') check_scheduler_health exit=$RC_HEALTH"
 # are the ones that name the cause. Skipping them on the first failure would
 # suppress the diagnosis precisely when it is needed.
 [ "$RC_DAILY" -ne 0 ] && exit "$RC_DAILY"
+[ "$RC_PUSH" -ne 0 ] && exit "$RC_PUSH"
 [ "$RC_COMMIT" -ne 0 ] && exit "$RC_COMMIT"
 [ "$RC_STALL" -ne 0 ] && exit "$RC_STALL"
 exit "$RC_HEALTH"

@@ -309,6 +309,26 @@ def main():
         expect("artifact five days stale",
                mod.verdict_artifact(spec, NOW_UTC)[0], mod.FAIL)
 
+        # 2026-09-30/10-01, verbatim: the daily run committed on the Mac both days
+        # and every local check said OK, while GitHub sat two days behind. The
+        # daily_push row reads the newest daily-run commit ON ORIGIN, so that state
+        # must go red -- and a fresh push must not.
+        push_row = next(a for a in mod.ARTIFACTS
+                        if a["path"] == "scheduler/daily_push.json")
+        push_file = Path(tmp) / "daily_push.json"
+        for label, origin_at, want in (
+                ("GitHub two days behind a fresh local commit",
+                 iso(NOW_UTC - timedelta(days=2)), mod.FAIL),
+                ("no daily-run commit on GitHub at all", None, mod.FAIL),
+                ("daily-run commit pushed this morning",
+                 iso(NOW_UTC - timedelta(hours=5)), mod.OK)):
+            push_file.write_text(json.dumps({
+                "checked_at": iso(NOW_UTC), "verdict": "REFUSED",
+                "origin_daily_run_at": origin_at}))
+            expect(f"daily_push: {label}",
+                   mod.verdict_artifact(dict(push_row, path=str(push_file)),
+                                        NOW_UTC)[0], want)
+
         # An artifact with no self-recorded date cannot be checked at all, and
         # must say so rather than falling back to an mtime that git does not keep.
         spec = artifact_file(tmp, {"_meta": {"lanes": 33}})

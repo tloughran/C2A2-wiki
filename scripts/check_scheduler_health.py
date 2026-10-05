@@ -137,6 +137,24 @@ ARTIFACTS = [
             "gui/$(id -u)/com.c2a2.voice-shell-check`."
         ),
     },
+    {
+        # The question nothing asked on 2026-09-30/10-01: the daily run committed on
+        # the Mac both days, every local check said OK, and GitHub stayed two days
+        # behind. This date is read from origin/main itself (the newest "C2A2 daily
+        # run" commit there), so a local commit that never left the Mac cannot
+        # satisfy it. 30h = one daily cycle plus slack for a late run.
+        "owner": "push_daily_run.sh (com.c2a2.scheduled-commit-check)",
+        "path": "scheduler/daily_push.json",
+        "field": "origin_daily_run_at",
+        "max_age_hours": 30,
+        "failure_means": (
+            "the newest daily-run commit ON GITHUB is that old. Read the `verdict` and "
+            "`detail` in scheduler/daily_push.json: REFUSED names the gate that held "
+            "the push (a foreign commit ahead of origin, a path outside the allowlist, "
+            "broken inline JS, a merge conflict). If the file itself is old, the push "
+            "step did not run -- the commit step refused first; see commit_check.md."
+        ),
+    },
 ]
 
 # Lag assertions. An age limit is the WRONG QUESTION for an artifact whose
