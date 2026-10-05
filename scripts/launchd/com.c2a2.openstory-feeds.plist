@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.c2a2.openstory-feeds</string>
+
+    <!-- Rebuilds the two OpenStory agent feeds (agents_tab.html telemetry and
+         agent_node_edges.json) from the live db. Replaces the cloud routine
+         "openstory agents telemetry refresh", which cannot finish: its extractors
+         copy the 7.5 GB db and the sandbox disk is about 9.6 GB (ENOSPC on 10-01
+         and 10-03). Plan item 1.2. Bash, not python3, as ProgramArguments: macOS
+         grants ~/Documents access per executable, and /bin/bash holds it. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/refresh_openstory_feeds.sh</string>
+    </array>
+
+    <!-- Daily 06:05 local, the old routine's slot: after metabolism-regen (05:00),
+         voice-shell-check (05:35) and the 05:45 commit step. The commit step names
+         these outputs as post-run producers and commits them the next morning. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>5</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/tomloughran/Library/Logs/c2a2-openstory-feeds.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/tomloughran/Library/Logs/c2a2-openstory-feeds.log</string>
+</dict>
+</plist>
