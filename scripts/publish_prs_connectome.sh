@@ -40,6 +40,7 @@ VALIDATOR="wiki/c2a2-prs-3d/scripts/validate_prs_3d.py"
 EXTRACT="wiki/c2a2-prs-3d/scripts/extract_prs_data.py"
 CARRY="wiki/c2a2-prs-3d/prs_pub_years.json"
 TPL="wiki/c2a2-prs-3d/template_prs_3d.html"
+YIELD="wiki/architecture/metrics/prs_yield_detail.csv"   # sole source of first_seen
 DEPLOY_BRANCH="main"
 QUIET_MINUTES=20      # a source touched more recently than this may still be mid-write
 LOCKDIR="/tmp/publish_prs_connectome.lock"
@@ -75,10 +76,27 @@ for f in "$ART" "$REGEN" "$VALIDATOR" "$EXTRACT" "$CARRY" "$TPL"; do
 done
 
 # --- Gate 2: IS THERE WORK? The logic gate the clock only polls. -------------
-# Newest source mtime vs the artifact's. Sources = the vault triplet files, the
-# cross/coil/findings inputs, the curated pub-year map, the template, and the
-# generator itself (a generator change is work even when the vault is quiet).
-art_m=$(stat -f %m "$ART")
+# Newest source mtime vs WHEN THE ARTIFACT WAS BUILT. Sources = the vault triplet
+# files, the cross/coil/findings inputs, the first_seen yield metric, the curated
+# pub-year map, the template, and the generator itself (a generator change is work
+# even when the vault is quiet).
+#
+# NOT the artifact's filesystem mtime (learned 2026-10-05). mtime records when the
+# file was last WRITTEN, which is not when it was last BUILT: any git operation
+# that rewrites the working tree resets it. The nightly summa-vault-sync runs
+# `git pull --rebase --autostash origin main` at 22:00, so this happens routinely.
+# It had wedged this gate shut since 2026-09-25: commit f924753c wrote $ART and
+# $TPL in the same operation, giving them identical mtimes, and `newest -le art_m`
+# is true on a tie -- a permanent no-op, because nothing touches the template
+# without also touching the artifact.
+#
+# The artifact carries its own build stamp, which only a regen changes. Use that.
+build_ts=$(grep -oE 'var PRS_BUILD_TS = "[^"]+"' "$ART" | head -1 | sed 's/.*"\(.*\)"/\1/')
+[ -n "$build_ts" ] || fail \
+  "cannot read PRS_BUILD_TS from $ART. The artifact is not generator-produced, or the stamp was renamed; refusing to guess at freshness from mtime."
+art_m=$(date -j -f "%Y-%m-%dT%H:%M:%S" "$build_ts" "+%s" 2>/dev/null) || fail \
+  "PRS_BUILD_TS in $ART is not parseable as %Y-%m-%dT%H:%M:%S: '$build_ts'"
+log "artifact built $build_ts (from PRS_BUILD_TS, not mtime)"
 newest=0; newest_f=""
 while IFS= read -r f; do
   m=$(stat -f %m "$f")
@@ -86,13 +104,17 @@ while IFS= read -r f; do
 done < <(
   ls wiki/traditions/*/prs_triplets.md wiki/master/prs_triplets.md 2>/dev/null
   ls wiki/master/cross_program_index.md wiki/flags/pattern_detector_findings.md 2>/dev/null
+  ls "$YIELD" 2>/dev/null
   echo "$CARRY"; echo "$TPL"
   echo "wiki/c2a2-prs-3d/scripts/generate_prs_3d.py"; echo "$EXTRACT"
 )
-if [ "$newest" -le "$art_m" ]; then
-  done_ok "no source newer than $ART (newest: $newest_f). Nothing to regenerate."
+# Strictly-older means no work. A TIE counts as work, deliberately: a tie is what
+# wedged this gate shut for 10 days, and the cost of being wrong in this direction
+# is one wasted regen that the byte-identical check below then declines to commit.
+if [ "$newest" -lt "$art_m" ]; then
+  done_ok "no source newer than $ART's build stamp $build_ts (newest: $newest_f). Nothing to regenerate."
 fi
-log "work found: $newest_f is newer than $ART"
+log "work found: $newest_f is newer than $ART (built $build_ts)"
 
 # --- Gate 3: quiet period. The daily thinker agents write ~02:11; a source -----
 # touched in the last $QUIET_MINUTES may still be half-written, and half a
