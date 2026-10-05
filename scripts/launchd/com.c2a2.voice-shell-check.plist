@@ -24,18 +24,24 @@
   </array>
 
   <!--
-    05:20 local. After the daily run (04:30, done ~04:41, so its wiki/ writes
-    have cleared the 20-minute quiet period) and before the 05:45 commit-check
-    agent, whose check_scheduler_health.py reads the verdict this writes, so
-    the 06:00 morning report carries today's suite result, not yesterday's.
-    Shares the slot with nothing (openstory telemetry 06:05, metabolism 05:50).
+    05:35 local. Was 05:20, which wedged the job: com.c2a2.metabolism-regen runs
+    at 05:00 and finishes writing wiki/metabolism/metabolism_view.html -- a tested
+    surface -- around 05:04, so at 05:20 that file was 16m old, inside the
+    20-minute quiet period, and the gate deferred deterministically every day
+    from 2026-09-29 to 2026-10-05. 05:35 is past 05:23, when the 05:04 write
+    clears the quiet period, and still before the 05:45 commit-check agent, whose
+    check_scheduler_health.py reads the verdict this writes, so the 06:00 morning
+    report carries today's suite result, not yesterday's. Not later than 05:35:
+    the last real run took 3m45s, so a 05:40 start would finish ~05:44, too tight
+    against 05:45. Shares the slot with nothing (metabolism publish 05:50,
+    openstory telemetry 06:05).
   -->
   <key>StartCalendarInterval</key>
   <dict>
     <key>Hour</key>
     <integer>5</integer>
     <key>Minute</key>
-    <integer>20</integer>
+    <integer>35</integer>
   </dict>
 
   <key>WorkingDirectory</key>
