@@ -112,6 +112,34 @@ This does **not** relax the standing gates, which exist for blast radius rather 
 
 ---
 
+## CONSTITUTIONAL RULE: Where Scheduled Work Runs (three tiers)
+
+**The Cowork sandbox is a small scratch disk that fills up.** `device_bash` runs inside it,
+so when it is full every `device_bash` call fails with a reasonless "failed in the device
+workspace" -- 11 of 11 calls across five routines on 2026-10-04, a normal Sunday with the
+Mac online. Desktop Commander runs natively on the Mac and succeeded 27 of 27 times the same
+morning. A routine that retried `device_bash` instead of switching (janitor and sewing,
+2026-09-27) did nothing at all. Therefore every scheduled job is placed in one of three tiers:
+
+1. **Pure script -> launchd on the Mac, no model.** If the job runs a script and checks its
+   result, it is a launchd agent with a `/bin/bash` wrapper (the `~/Documents` TCC grant),
+   its plist versioned in `scripts/launchd/`. Examples: commit/push, metabolism regen, the
+   OpenStory feeds, scheduler health.
+2. **Needs judgment -> cloud routine, with two rules in its prompt:** shell commands go
+   through **Desktop Commander only, never `device_bash`**; and **nothing large is copied
+   into the sandbox** (a Mac-side script reads big data and hands back a summary). If Desktop
+   Commander fails twice, the routine stops and reports `MAC SHELL UNAVAILABLE`.
+3. **Duplicate or finished -> disabled.** Disable, do not delete, so re-enabling is one call.
+
+**Before building any Tier 1 job, check what is already installed:** `ls ~/Library/LaunchAgents`.
+On 2026-10-05 a feeds runner was built that already existed as an unversioned plist. Every
+installed agent's plist belongs in `scripts/launchd/`, so the repo is the inventory.
+
+**Rationale:** agreed with Tom 2026-10-05, after a week in which the cloud copies of the
+metabolism and telemetry jobs died on a full sandbox while Mac copies of the same work passed.
+
+---
+
 ## Wiki Narration Visualization
 
 **Working URL (local):** `file:///Users/tomloughran/Documents/Claude/Projects/RC%20Karpathy%20Wiki%20Project/wiki/wiki_narration.html`
