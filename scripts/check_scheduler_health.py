@@ -187,8 +187,12 @@ LAG_ARTIFACTS = [
         "grace_hours": 48,
         "failure_means": (
             "new PRS triplets are in the vault but not on the live page. The job "
-            "may be firing and no-opping, so read the GATE DECISION in "
-            "~/Library/Logs/c2a2-prs-connectome-publish.log, not merely that it ran"
+            "may be firing and no-opping, so read its Gate 2 decision in "
+            "~/Library/Logs/c2a2-prs-connectome-publish.log, not merely that it "
+            "ran. The publisher logs one of two lines there: \"work found: "
+            "<source> is newer than wiki/prs_3d.html (built <stamp>)\" or \"no "
+            "source newer than wiki/prs_3d.html's build stamp <stamp> (newest: "
+            "<source>). Nothing to regenerate.\""
         ),
     },
 ]
