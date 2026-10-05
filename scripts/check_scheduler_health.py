@@ -174,6 +174,11 @@ LAG_ARTIFACTS = [
             "wiki/c2a2-prs-3d/template_prs_3d.html",
             "wiki/c2a2-prs-3d/scripts/generate_prs_3d.py",
             "wiki/c2a2-prs-3d/scripts/extract_prs_data.py",
+            # Added 2026-10-05 with the matching entry in the publisher's gate.
+            # It is the sole source of first_seen and had never been watched by
+            # either side, so the 89 triplets added 2026-09-24 reached the live
+            # page with an empty first_seen and nothing called it out.
+            "wiki/architecture/metrics/prs_yield_detail.csv",
         ],
         # The daily run writes the vault ~05:45; the publisher polls 04:30, so
         # morning work legitimately waits ~23h for the next fire. 48h passes that
