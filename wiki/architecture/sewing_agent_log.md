@@ -1562,3 +1562,12 @@ Post-run census: 4,597 / 773 / 91 / 5,461. Of the orphans, `architecture/` holds
 Each of the 10 pages was checked after writing: original content is a prefix of the new content, exactly one `## Agentic Calls` heading and one `Sewing Agent on 2026-10-04` stamp. Each of the 13 bridge appends was checked the same way. CSV row appended once after asserting no existing 2026-10-04 row. Nothing deleted or overwritten. Nothing committed to git.
 
 *Logged by Sewing Agent on 2026-10-04.*
+
+
+---
+
+## Run: 2026-10-04 (second firing) — NO-OP, run already complete
+
+A second scheduled firing of `c2a2-sewing-agent-weekly` arrived on 2026-10-04 after the run above had finished. It did nothing beyond this note: the CSV already has a 2026-10-04 row, and repeating the run would have added a duplicate row and a second batch of calls on the same day. Its shell was also unusable (sandbox bash: "No space left on device"; Desktop Commander declined because no one was present to approve it), so it could not have produced a trustworthy census anyway. Worth checking why the task fired twice today.
+
+*Logged by Sewing Agent (duplicate firing) on 2026-10-04.*

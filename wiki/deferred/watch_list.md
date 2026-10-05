@@ -6616,3 +6616,59 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-04.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-05
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (`2026-04-21_carroll_singer-mindscape-351.md`, already tagged `[TRACKED-16: 2026-05-05]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Not counted as a check.
+
+**Census (file-tool glob):** `pending/` **16** (+3 since 10-04: `2026-10-04_rohr_therese-way-of-love-weekly-summary.md`, `2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth.md`, `2026-10-04_rohr_gods-resting-place-francis-nature-sacrament.md`), `needs_review/` 1. `approved/`/`denied/` not recounted. Review-pass gap: **11 days**.
+
+**PROP-2026-09-22-003 (Hoffman, Hopewell talk):** post-talk condition checkable since 10-04; still **unheld** — no watch opened without Tom's authority.
+
+**Environment / fail-loud:** sandbox shell failed again (`No space left on device`); file tools only. Watch list ~780 KB — split the run log (**30th** recommendation).
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; decide whether PROP-2026-09-22-003 becomes a Channel 3 watch; Gmail reconnection not re-verified.
+
+**Agent 16 Status:** Operational (file tools only). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-05.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-05
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (`2026-04-21_carroll_singer-mindscape-351.md`, already tagged `[TRACKED-16]`, superseded stub). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |` at line start, vault-wide excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Not counted as a check. `pending/` census: 16 (+3 since 10-04).
+
+**Environment / fail-loud:** `device_bash` failed twice; file tools and Desktop Commander shell were used. Read-only apart from this summary. Watch list is ~780 KB — split the run log (**30th** recommendation). PROP-2026-09-22-003 (Hoffman) post-talk check remains unheld pending Tom's one-line Channel 3 request.
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; PROP-2026-09-22-003 watch decision; Gmail reconnection.
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-05.*

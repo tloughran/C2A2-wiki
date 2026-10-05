@@ -50117,3 +50117,295 @@ SYSTEMIC-RISK-FLAG (15b, 2026-10-04, Moderate, trending High): surface signal as
 In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1743 → MONITOR-665, ASSUMPTION-1744 → MONITOR-666, ASSUMPTION-1745 → MONITOR-667, ASSUMPTION-1746 → MONITOR-668, ASSUMPTION-1750 → MONITOR-669, ASSUMPTION-1752 → MONITOR-670, PRESUMPTION-1114 → MONITOR-671
 Running totals after this run: PREMISE-221 (unchanged) | MONITOR-671 | REVISE-507 (495..497 and 500..501 remain proposed/unapplied) | DISPOSITION-1033.
 This run's distribution (4 literature items): 0 INCORPORATE, 1 MONITOR, 3 REVISE. No validated_premises.md change; consistency check n/a.
+
+
+---
+## 15a/15b/15c RUN — 2026-10-05 (scheduled c2a2 lit-search pipeline; 7 items: PRESUMPTION-1019, 1024, 1034, 1040, 1043, 1047, 1048)
+
+[FOR] PRESUMPTION-1019 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1019
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: ISO 15489 / MoReq "authoritative record" criteria (https://www.moreq.info/faq/21-what-is-a-record) together with Duranti, Diplomatics: New Uses for an Old Science (1998), via https://interpares.org/display_file/ip1_dissemination_ls_duranti_nas_2004a.pdf
+  Summary: Archival and records-management frameworks, PROV-O, and recent AI-agent/law papers support applying authority criteria to internal, non-adjudicative records, and 803(6) covers any "organization". No source tests transfer of 803(6), §2.03 or UETA §14 specifically, and each presupposes a tribunal, third party or counterparty the estate lacks.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1019_for.md
+
+NOVELTY-FLAG:
+  Item: PRESUMPTION-1019
+  Searched: preliminary scope of 5 web searches and 6 fetches covering FRE 803(6), ISO 15489, PROV-O, diplomatics/InterPARES, agency law and AI agents, UETA §14
+  Finding: No existing literature found that addresses this specific claim (transfer of these named legal/archival authorities to an internal agent-wiki's provenance markers). General transfer of the underlying criteria is addressed, so the novelty is narrow.
+  Implication: Possible narrow original contribution; the transfer-conditions analysis itself may be new. Confidence limited by the preliminary scope.
+  Recommended status: NOVEL (narrow; conditional on 15b also finding nothing, and on a broader search)
+
+Queue status line: PRESUMPTION-1019 [SEARCHED-15a: 2026-10-05] PARTIALLY-SUPPORTED, Weak; general criteria transfer supported (ISO 15489, Duranti, PROV-O), specific 803(6)/§2.03/UETA §14 transfer untested; preliminary scope; narrow novelty flag.
+
+[AGAINST] PRESUMPTION-1019 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1019
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Federal Rules of Evidence, Rule 803(6) (conditions A-E presuppose a custodian, an opponent and a tribunal); with Restatement (Third) of Agency §2.03 and Duranti & MacNeil 1996, Archivaria 42
+  Specific risk: REVISE-476's HIGH weight and the withdrawal of the novelty flag borrow authority from sources whose application conditions (tribunal, adversary, relying third party, juridical act) the estate does not meet.
+  Summary: Each cited standard carries explicit conditions the estate does not satisfy, and no source argues the transfer; the disanalogy is derived, not demonstrated. Search scope preliminary.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1019_against.md
+
+  SYSTEMIC-RISK: none flagged (candidate link to PRESUMPTION-999 noted, not verified).
+  QUEUE STATUS: PRESUMPTION-1019 [SEARCHED-15b: 2026-10-05] — PARTIALLY-CHALLENGED, Moderate; awaiting 15a and 14b reconciliation.
+
+[FOR] PRESUMPTION-1024 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1024
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Helland, P., 2016. "Immutability Changes Everything." CACM — corrections only by new entries (supersede-rather-than-edit); also Shneiderman et al. 2016, Rule 6 (reversibility); Pan 2026-04-17 (blog) tiering draft generation as safe.
+  Summary: Literature supports creation-as-lower-risk tiering and the supersede-rather-than-edit remedy, but nothing examines the create-yes/modify-no asymmetry or its loss of self-correction; support is conditional on a correction path existing.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1024_for.md
+
+NOVELTY-FLAG:
+  Item: PRESUMPTION-1024
+  Searched: preliminary web search of HCI reversibility principles, security design principles (least privilege), append-only/immutable stores, agent HITL approval-gate literature
+  Finding: Components are well covered; the specific claim (a create-allowed/modify-denied tier makes an unattended run's first output final and removes its error-correction path) was not found in any source. Not warranted as a whole-item flag; narrow sub-claim only.
+  Implication: A possible small original contribution on agent permission design (correction-path cost of create/modify asymmetry), but the search was preliminary and 15b has not reported; do not mark NOVEL unless 15b also finds nothing.
+  Recommended status: NOVEL (sub-claim only; provisional, pending 15b and a broader search)
+
+QUEUE STATUS: PRESUMPTION-1024 [SEARCHED-15a: 2026-10-05] PARTIALLY-SUPPORTED / Moderate — ingredients supported (reversibility, append-only supersede, blast-radius tiering), specific create/modify asymmetry unaddressed; preliminary search.
+
+[AGAINST] PRESUMPTION-1024 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1024
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Saltzer & Schroeder, 1975, "The Protection of Information in Computer Systems" (SOSP); AWS Agentic AI Lens AGENTSEC04-BP02
+  Specific risk: Granting a self-correction allowance expands privilege and could extend from own draft to other mail if scope is not enforced; leaving it denied strands run-introduced errors unless validated before write.
+  Summary: Gating the wider verb and treating external communications as higher-risk is well supported, but no source refutes the observed asymmetry and none shows that a create-only tier is safe by itself; remedy placement (creation-side validation) is practitioner-supported only. Preliminary search.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1024_against.md
+
+QUEUE-SUMMARY: PRESUMPTION-1024 [SEARCHED-15b: 2026-10-05] PARTIALLY-CHALLENGED / Weak — gate-the-wider-verb supported (Saltzer-Schroeder 1975; AWS BP02), nothing refutes the asymmetry; preliminary scope.
+
+[FOR] PRESUMPTION-1034 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1034
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: GitHub Docs, "Status checks" — "A job that is skipped will report its status as 'Success'. It will not prevent a pull request from merging, even if it is a required check."
+  Summary: Conflation of skipped/no-op with pass in a single status field is documented in GitHub, Jenkins and cross-runner test reporting, and Grafana codifies "no data is not OK". The downstream "last known good" corruption claim has no direct source and is inferential.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1034_for.md
+
+NOVELTY-FLAG: not warranted (general property of status-reporting systems is well documented; only the "last known good" sub-claim lacks direct literature, a partial gap rather than novelty).
+
+QUEUE-SUMMARY: PRESUMPTION-1034 [SEARCHED-15a: 2026-10-05] PARTIALLY-SUPPORTED, Moderate; conflation and "no data != OK" confirmed, last-known-good attribution effect unsourced.
+
+[AGAINST] PRESUMPTION-1034 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1034
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Git project, "git-bisect Documentation" (https://git-scm.com/docs/git-bisect), with VirtusLab, "Bazel book 1.2.1 Test Caching" (third-party) as boundary-condition source
+  Specific risk: If checks are non-hermetic, a no-op logged as pass yields a false last-known-good and wrong estate-wide dating; if over-applied to idempotent checks, adds unneeded tri-state overhead.
+  Summary: No direct refutation found; evidence only bounds the claim (hermetic idempotent checks make recorded-pass sound; tri-state attribution degrades to a range, not corruption). Search was preliminary.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1034_against.md
+
+SYSTEMIC-RISK: none flagged
+QUEUE SUMMARY: [SEARCHED-15b: 2026-10-05] PRESUMPTION-1034 — PARTIALLY-CHALLENGED (Weak); boundary conditions only (hermetic caching; git bisect skip); preliminary search.
+
+[FOR] PRESUMPTION-1040 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1040
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Chandra, T.D. & Toueg, S., 1996. "Unreliable Failure Detectors for Reliable Distributed Systems." JACM 43(2).
+  Summary: Theory (FLP, Chandra-Toueg) strongly supports that slow and dead are indistinguishable without timing assumptions and that detection incurs accuracy/speed cost; "only a progress heartbeat" and "provably" as applied to registry flags are stronger than the literature states.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1040_for.md
+
+NOVELTY-FLAG: not warranted (the core claim is well covered by existing literature; only the application-level progress-heartbeat framing for agent registries is unaddressed, which does not rise to novelty).
+
+Queue summary: PRESUMPTION-1040 [SEARCHED-15a: 2026-10-05] PARTIALLY-SUPPORTED, Moderate; FLP/Chandra-Toueg ground core claim, "only heartbeat"/"provably" overreach; preliminary scope.
+
+[AGAINST] PRESUMPTION-1040 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1040
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Huang et al., 2017. "Gray Failure: The Achilles' Heel of Cloud-Scale Systems." HotOS 2017.
+  Specific risk: A heartbeat not tied to real progress yields false "alive" signals (gray failure), and tight timeouts on bursty jobs can kill healthy runs. The queue's specific claim that absence alarms cost more than the deaths they catch was not found in verifiable literature (literature gap).
+  Summary: Core claim not contradicted; challenges are boundary conditions (heartbeat quality, hard deadline sufficiency for bounded jobs). Preliminary search; broader search recommended.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1040_against.md
+
+SYSTEMIC-RISK-FLAG: none (single item; no shared vulnerability established)
+
+QUEUE SUMMARY: [SEARCHED-15b: 2026-10-05] PRESUMPTION-1040 — PARTIALLY-CHALLENGED, Weak; gray failure/heartbeat-as-proxy and hard-deadline sufficiency; false-positive sub-claim unsourced.
+
+[FOR] PRESUMPTION-1043 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1043
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong (reliability inflation); Moderate (taxonomy hiding, inferential)
+  Key source: Ford et al., 2010, "Availability in Globally Distributed Storage Systems," OSDI '10 (ignoring correlated failures overestimates availability by >= 2 orders of magnitude); Mosleh et al., 1998, NUREG/CR-5485
+  Summary: Both CCF methodology and a large Google fleet study confirm that independence assumptions overstate reliability. The link to per-component taxonomies specifically is inferred, not directly tested.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1043_for.md
+
+NOVELTY-FLAG: not warranted (existing literature addresses the claim).
+
+QUEUE SUMMARY: [SEARCHED-15a: 2026-10-05] PRESUMPTION-1043 — SUPPORTED, Strong/Moderate; Ford 2010 + NUREG/CR-5485.
+
+[AGAINST] PRESUMPTION-1043 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1043
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Hark, Britton, Ring, Novack, 2016. "Common Cause Failure Modeling." NASA NTRS 20160007009 (CCF data scarcity outside nuclear); also Shorthill et al., 2022, arXiv:2206.11321 (classical beta-factor needs modification for software CCF).
+  Specific risk: A formal CCF model on very few observed shared-cause events would give false precision, and a cross-cutting layer could dilute per-component accountability if shared causes are rare; the N=1 ceiling event may be over-generalised.
+  Summary: Core claim not contradicted; literature challenges only the tractability/parameterisation of quantifying it outside safety-critical domains. No empirical evidence located on MTTR of per-component vs cross-cutting analysis (literature gap; preliminary search).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1043_against.md
+
+QUEUE SUMMARY: [SEARCHED-15b: 2026-10-05] PRESUMPTION-1043 — PARTIALLY-CHALLENGED (Weak); core claim stands, quantification/ownership objections only weakly evidenced; preliminary scope. No SYSTEMIC-RISK flag.
+
+[FOR] PRESUMPTION-1047 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1047
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Nissenbaum, H., 2011. "A Contextual Approach to Privacy Online." Dædalus 140(4):32-46 (with boyd & Crawford 2012; Zimmer 2010; AoIR Ethical Guidelines 3.0, 2020)
+  Summary: Literature strongly supports "public is not consented" and treats aggregation about named persons and grief contexts as ethically weighty, but the best-codified source (AoIR 3.0) favours deliberation over fixed rules, and the attribution limb is only thinly covered.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1047_for.md
+
+NOVELTY-FLAG:
+  Item: PRESUMPTION-1047
+  Searched: Internet-research ethics, contextual integrity, aggregation/profiling, online-mourning research ethics, contributorship literature
+  Finding: No existing literature found addressing the specific claim for an automated multi-agent system that tracks living scholars' work (individual-agent restraint vs stated policy on biographical/grief material). General principles are well covered; the applied case is not.
+  Implication: The specific application to autonomous agent pipelines tracking named living scholars may be a gap; the general principle is not novel.
+  Recommended status: NOVEL (application-level only; underlying principles GROUNDED in literature) — subject to 15b results and reconciliation
+
+QUEUE SUMMARY: PRESUMPTION-1047 [SEARCHED-15a: 2026-10-05] PARTIALLY-SUPPORTED / Moderate — "public ≠ consented" and aggregation/grief-vulnerability well supported; AoIR 3.0 favours deliberation over rules; attribution limb thin.
+
+[AGAINST] PRESUMPTION-1047 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1047
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Kaplow, L., 1992. "Rules Versus Standards: An Economic Analysis." Duke Law Journal 42(3): 557-629 (with Bodansky 2003 and AoIR Ethical Guidelines 3.0)
+  Specific risk: An over-fitted ex ante policy could be applied rigidly to novel grief or biographical cases, or add overhead where documented judgment would do.
+  Summary: General rules-versus-standards theory and AoIR's deliberative approach give a moderate case that situated judgment suits novel cases. No source was found for "public means no further obligation" or for an existing byline norm settling the Rohr/Armas limb. Preliminary search; broader search recommended.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1047_against.md
+
+SYSTEMIC-RISK-FLAG: None (not applicable; no shared fragile dependency identified from this item alone).
+
+QUEUE SUMMARY (one line): PRESUMPTION-1047 [SEARCHED-15b: 2026-10-05] PARTIALLY-CHALLENGED, Weak: rules-vs-standards and AoIR 3.0 favour judgment for novel cases, nothing found for "public = no obligation"; preliminary scope.
+
+[FOR] PRESUMPTION-1048 (PROVENANCE: Origin=14b; Chain=[14b→15a]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1048
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Cho, J. & Garcia-Molina, H. (1999/2000). "Synchronizing a Database to Improve Freshness." SIGMOD 2000.
+  Summary: Sampling theory and crawler-freshness models show that what a periodic poller misses is a closed-form function of the two cadences, and that sub-Nyquist loss is undetectable from the samples alone. The "null report indistinguishable from quiet period" clause and the append-only, persistently indexed corpus case are not directly documented; transfer from continuous-signal/overwrite models is by analogy.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1048_for.md
+
+NOVELTY-FLAG:
+  Item: PRESUMPTION-1048 (third clause only: null report indistinguishable from a quiet period)
+  Searched: sampling theory, crawler freshness, RSS polling, systematic-review update decay (preliminary)
+  Finding: No existing literature located that addresses this specific failure mode for monitoring agents as stated; formal ingredients exist but the combined claim was not found
+  Implication: Possible original framing for agent-based literature monitoring (silent-failure signature of cadence mismatch); limited to the null-report clause, not the whole claim
+  Recommended status: NOVEL (partial; pending broader search)
+
+QUEUE SUMMARY: PRESUMPTION-1048 [SEARCHED-15a: 2026-10-05] PARTIALLY-SUPPORTED / Moderate; formal and analogous support found, null-report clause undocumented, persistence/indexing caveat open for 15b.
+
+[AGAINST] PRESUMPTION-1048 (PROVENANCE: Origin=14b; Chain=[14b→15b]; Item type=PRESUMPTION)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1048
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (conceptual); Weak empirically; preliminary search
+  Key source: Cui, Y. 2025. "Understanding push vs poll in event-driven architectures." theburningmonk.com (supporting arXiv:chao-dyn/9905021, "Detection of Aliasing in Persistent Signals")
+  Specific risk: If the presumption is over-general, effort is wasted harmonizing cadences for persistent sources; if wholly dismissed, rolling/index-lagged sources lose items silently.
+  Summary: Window-from-cadences holds for expiring sources but for persistent indexed corpora with a cursor a slow poller loses latency, not coverage; the null-report-vs-quiet failure mode itself is not challenged.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1048_against.md
+  Queue summary (one line): PRESUMPTION-1048 [SEARCHED-15b: 2026-10-05] PARTIALLY-CHALLENGED, Moderate/conceptual, preliminary; persistence + cursor scoping objection, null-report mode stands.
+SYSTEMIC-RISK: not flagged
+
+DISPOSITION-1034:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1019
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak); general criteria transfer supported, specific FRE 803(6)/§2.03/UETA §14 transfer untested; narrow NOVELTY-FLAG
+  15b: PARTIALLY-CHALLENGED (Moderate); disanalogy derived from the sources' own conditions (custodian, opponent, tribunal, relying third party)
+  Disposition: MONITOR
+  Reasoning: Extends REVISE-476 (PRESUMPTION-999): transfer conditions for legal record-authority standards are unsettled and neither direction tests the transfer. Would change: a source testing legal/diplomatic authority criteria on internal machine-generated provenance (-> INCORPORATE a narrowed statement) or a direct disanalogy result (-> REVISE).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1035:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1024
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate); ingredients supported, create/modify asymmetry itself unaddressed; narrow NOVELTY-FLAG
+  15b: PARTIALLY-CHALLENGED (Weak); supports gating modify and treating external comms as high risk; none refutes the asymmetry
+  Disposition: MONITOR
+  Reasoning: Support holds only if a correction path exists (Helland 2016; Shneiderman rule 6); challenge supports gating modify. Policy question already with Tom (OPEN-233). Would change: a source on self-correction allowances scoped to an agent's own artefacts.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1036:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1034
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate); skipped-vs-pass conflation and "no data != OK" documented via vendor docs; "last known good" corruption inferential
+  15b: PARTIALLY-CHALLENGED (Weak); boundary conditions only (hermetic cached passes; git bisect skip)
+  Disposition: MONITOR
+  Reasoning: Sources are vendor docs/bug trackers with no peer-reviewed work, so INCORPORATE is premature for an estate-wide High-risk claim; no REVISE grounds. Would change: peer-reviewed or primary-source evidence on verdict/execution conflation and last-known-good attribution.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1037:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1040
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate); Chandra-Toueg/FLP ground the core claim, "only a heartbeat"/"provably" overreach
+  15b: PARTIALLY-CHALLENGED (Weak); gray failure, heartbeat-as-proxy, hard-deadline sufficiency; false-positive sub-claim unsourced
+  Disposition: MONITOR
+  Reasoning: Core claim not contradicted; wording narrowed. Would change: completed supervisor-tree/dead-man's-switch search and a source on absence-alarm false-positive cost.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1038:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1043
+  Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED (Strong inflation half / Moderate taxonomy-hiding half); Ford 2010 OSDI, NUREG/CR-5485
+  15b: PARTIALLY-CHALLENGED (Weak); CCF data scarce outside nuclear, beta-factor needs modification for software; MTTR/ownership directions are literature gaps
+  Disposition: INCORPORATE
+  Reasoning: Strong support, weak challenge -> INCORPORATE a narrowed statement with caveats (Moderate confidence). No contradiction with existing independence/common-mode premises.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+DISPOSITION-1039:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1047
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate); "public != consented", aggregation and grief vulnerability supported; AoIR 3.0 favours deliberation; attribution limb thin; application-level NOVELTY-FLAG
+  15b: PARTIALLY-CHALLENGED (Weak; Moderate only on rules-vs-standards for novel cases); nothing found for "public = no obligation"
+  Disposition: MONITOR
+  Reasoning: Premise as worded (policy beats case-by-case) is contested by the same literature that grounds the ethics concern. Would change: a source on written policy vs situated judgement for living-subject biographical material, or the Rohr/Armas byline literature.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1040:
+  Date: 2026-10-05
+  Item: PRESUMPTION-1048
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate); Cho & Garcia-Molina freshness, Shannon; null-report clause undocumented (partial NOVELTY-FLAG)
+  15b: PARTIALLY-CHALLENGED (Moderate, conceptual); for persistent cursor-read corpora a slow poller loses latency not coverage; null-report mode stands
+  Disposition: MONITOR
+  Reasoning: Claim holds for expiring/rolling sources, not persistent indexed corpora read by cursor; the 15-tradition cadence case depends on which applies. Would change: in-house check of source persistence per tradition plus a primary source on null-report indistinguishability.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+Running totals after this run: PREMISE-222 | MONITOR-677 | REVISE-507 (unchanged) | DISPOSITION-1040.
+Distribution (7 items): 1 INCORPORATE, 6 MONITOR, 0 REVISE. All searches PRELIMINARY scope. Not done: the 15d re-trigger/re-check lane (~296 tagged lines) was not searched. Budget: far over the 4k/30k guideline (14 search subagents).

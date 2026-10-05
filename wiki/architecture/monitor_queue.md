@@ -25050,3 +25050,144 @@ MONITOR-663 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-03) — no 15a/15b search 
   In-house measure owed: Check whether date-named files mix UTC (cloud) and US Eastern (local) days; stamp a timezone in dated filenames or headers.
   PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
   Cadence: Weekly | Next 15d check: 2026-10-10
+
+MONITOR-664 — NEW (2026-10-04, DISPOSITION-1031)
+  Item: PRESUMPTION-1111 (PRESUMPTION (unstated))
+  Disposition date: 2026-10-04 | Source: 15c | Reason code: CONTESTED / UNMEASURED
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Titles are a good first-pass signal for author-chosen titles; neither side found support for a title as the sole gate, and chat titles are generated from the first exchange only. False-negative rate unmeasured, not shown high.
+  What would change the disposition: content-scan ~50 title-excluded chats for designer input. Material miss rate → REVISE; near-zero → INCORPORATE as first-pass heuristic only. Priority: High | Cadence: Weekly
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1111_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1111_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: MONITORING
+  Next 15d check: 2026-10-11
+
+MONITOR-665 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: ASSUMPTION-1743 (ASSUMPTION (stated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Did one or two lit-pipeline instances fire on 10-03? Check the cloud task history for c2a2-lit-search-pipeline against the lock file. (Bound to MONITOR-657.)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+MONITOR-666 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: ASSUMPTION-1744 (ASSUMPTION (stated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Which run wrote PROP-2026-10-03-001 at 03:03; is the Wolfram agent registered both locally and in the cloud? (Feeds REVISE-505.)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+MONITOR-667 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: ASSUMPTION-1745 (ASSUMPTION (stated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Cause of the run_stall FAIL (cloud migration, broken check, or transcript store frozen after 09-15) and why commit_check is OK for the same run. (Feeds REVISE-507.)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+MONITOR-668 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: ASSUMPTION-1746 (ASSUMPTION (stated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Compare OpenStory feed timestamps with the status line at the time morning system health reads it; check whether morning project status reads a stale 'last ran' source. (Feeds REVISE-507.)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+MONITOR-669 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: ASSUMPTION-1750 (ASSUMPTION (stated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Reconcile REVISE-500/501 (in lit_search_returns.md, not in revision_flags.md): retire or re-number. Requires Tom's decision; this run continued to skip them.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+MONITOR-670 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: ASSUMPTION-1752 (ASSUMPTION (stated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING TOM
+  In-house measure owed: Is the 10-03 chat "Antique et nova" walk dictation? Tom to confirm; if yes, the OPEN-259 day-count is wrong.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+MONITOR-671 — NEW, IN-HOUSE EMPIRICAL LANE (2026-10-04) — no 15a/15b search owed
+  Item: PRESUMPTION-1114 (PRESUMPTION (unstated))
+  Disposition date: 2026-10-04 | Source: 15c routing | Reason code: AWAITING IN-HOUSE DATA
+  In-house measure owed: Do cloud-run scheduled tasks appear in local list_sessions? Compare one known cloud run (e.g. the 10-03 cloud 14a/14b entry) with the local session list.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-11
+
+================================================================================
+## 2026-10-04 RUN — 15d Periodic Monitor (weekly + MONTHLY cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-09-27 (7 days). Today is **day 4 of the month, a Sunday: the monthly cycle FIRES** (first since the bounded catch-up of 09-13; the 09-06 monthly was missed). 15d does not evaluate evidence; it re-triggers 15a/15b and tracks trajectories.
+
+**Tooling note (fail loud).** `device_bash` failed (generic error, 2 attempts) again, as on 2026-09-27. Worked around with `device_stage_files` (read-only analysis copies) and Desktop Commander `start_process` (local shell) for backups and writes. Backups: `monitor_queue.md.bak.20261004-pre-15d`, `validated_premises.md.bak.20261004-pre-15d`, `for_lit_search.md.bak.20261004-pre-15d`. File sizes were checked unchanged immediately before writing; `lit_pipeline.lock` read RELEASED (today's 15abc run finished before this run).
+
+### Monthly cycle - INCORPORATED premise re-checks
+- **133 ACTIVE premises** past `Re-check due` re-queued in `for_lit_search.md` (section dated 2026-10-04) with `[RE-CHECK by 15d: 2026-10-04]`, oldest-due first (oldest was due 2026-08-09, 56 days late). `Re-check due` advanced in `validated_premises.md`: Monthly-cadence -> 2026-11-01 (next first Sunday); Quarterly/other -> 2027-01-03. No ACTIVE premise skipped; no non-ACTIVE premise touched. This is a FULL catch-up per the task spec, not a bounded one (departure from 09-13 precedent is deliberate and stated).
+- **Consequence to read (ESCALATION 5, 4th raising):** this adds 133 items to a literature lane that already holds ~147 unsearched items and drained 3-4 blocks/week recently. At that rate the re-check cohort will not be searched within its own cycle. The re-queue is bookkeeping, not assurance that premises were re-examined. Tom still needs to give the monthly lane a catch-up rule or state the true cadence (e.g. quarterly for stable premises).
+
+### Weekly cycle
+- **Re-triggered: MONITOR-600** (ASSUMPTION-1305 limb C), cycle 0 -> 1, queued [QUEUED] literature (Goldratt primary-source retrieval owed) with `[RE-TRIGGER by 15d: 2026-10-04, cycle 1]`. Monthly cadence per 15c; next 15d check 2026-11-01.
+- **Already refreshed by 15c on 09-28 (not due):** MONITOR-403 (cycle 4), -609, -610 (cycle 2) next check 2026-10-05; MONITOR-548 (cycle 2) next 2026-10-28; MONITOR-547 CLOSED to REVISE-488.
+- **Standing 15d blocks, NOT duplicate-queued (precedent 09-20/09-27):** MONITOR-611, -613, -614, -615, -616 (empirical, queued 09-27, unconsumed) and the wider weekly carry-over population (279 standing RE-TRIGGER blocks in `for_lit_search.md` by block parse). Cycle counts held (a cycle is a search, not a calendar tick). Cohort-level next_check advanced 2026-10-04 -> 2026-10-11; per-entry dates not rewritten.
+- **Not yet due:** MONITOR-617..671 (15c intake 09-29..10-04; next checks 2026-10-06..10-11). MONITOR-664 (new 10-04) next 2026-10-11. MONITOR-665..671 are in-house empirical lane, no 15a/15b search owed.
+- **Event-driven / bound, untouched:** MONITOR-003, -041, -154, -544, -612 (BOUND TO REVISE-480).
+- **NOT re-verified:** the monthly/low-priority cohort (MONITOR-001..344, ~95 monthly-cadence entries) and ~89 entries with no per-entry next_check field. Their headers carry stale dates (many 2026-05/06); a full register reparse is still owed and was not attempted (four header formats, 25k lines). Left untouched rather than guessed.
+
+### Stale sweep and trajectories
+- **No new STALE-MONITOR-FLAG.** Items at 4+ cycles processed or visible this run: MONITOR-403 (cycle 4) - its 09-28 refresh was citation-verification only with no correlation measured, so evidence is **stable / unchanged since 09-16**; this is a candidate for a flag next run if the 10-05 cycle also shows no movement. Recommendation if so: ESCALATE to Tom (discharge needs the in-house PROXIMA-style correlation, which no runner owns), not DOWNGRADE.
+- Trajectories: MONITOR-403 stable (supporting stable, challenging stable, no new sources - same PROXIMA paper). MONITOR-609/610 stable (09-28 fresh search found nothing new). MONITOR-548 stable (split unchanged; vault entry count still unproduced). MONITOR-600 baseline. Empirical-lane items (611, 613-616, 665-671): none, no consumer has run them.
+- Population-level flags carried forward unchanged: ESCALATION 1 (MONITOR-420 trigger, ~77 days unactioned), ESCALATION 2 (lane starvation / DEFECT-I; empirical lane has no consumer), ESCALATION 3 (MONITOR-423), ESCALATION 4 (MONITOR-005/-012 empirical limbs past 2026-09-08 auto-escalate), none independently re-verified this run. MONITOR-669 still needs Tom's decision on REVISE-500/501 numbering.
+
+**Run summary:** 133 premise re-checks queued + dates advanced; 1 weekly literature re-trigger (MONITOR-600); 0 new stale flags; ~280 standing weekly blocks not duplicated; monthly/low-priority cohort not re-verified. Budget: over the 4k/30k guideline (register parse cost), as in prior runs.
+
+**Duplicate firing note (second 2026-10-04 firing of c2a2-periodic-monitor-weekly).** Found this run already logged; `for_lit_search.md` carries 134 `by 15d: 2026-10-04` tags (133 RE-CHECK + 1 RE-TRIGGER), matching the summary above. No re-queue, date change, or flag was made, to avoid double-queuing. Tooling: sandbox bash failed (disk full); Desktop Commander was auto-declined (no approver present). If this schedule fires twice on Sundays, check for a duplicate scheduled task.
+
+
+MONITOR-672:
+  Date: 2026-10-05
+  Source item: PRESUMPTION-1019 (DISPOSITION-1034)
+  Priority: High
+  Disposition basis: Extends REVISE-476 (PRESUMPTION-999): transfer conditions for legal record-authority standards are unsettled and neither direction tests the transfer. Would change: a source testing legal/diplomatic authority criteria on internal machine-generated provenance (-> INCORPORATE a narrowed statement) or a direct disanalogy result (-> REVISE).
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+
+MONITOR-673:
+  Date: 2026-10-05
+  Source item: PRESUMPTION-1024 (DISPOSITION-1035)
+  Priority: Medium
+  Disposition basis: Support holds only if a correction path exists (Helland 2016; Shneiderman rule 6); challenge supports gating modify. Policy question already with Tom (OPEN-233). Would change: a source on self-correction allowances scoped to an agent's own artefacts.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+
+MONITOR-674:
+  Date: 2026-10-05
+  Source item: PRESUMPTION-1034 (DISPOSITION-1036)
+  Priority: Medium
+  Disposition basis: Sources are vendor docs/bug trackers with no peer-reviewed work, so INCORPORATE is premature for an estate-wide High-risk claim; no REVISE grounds. Would change: peer-reviewed or primary-source evidence on verdict/execution conflation and last-known-good attribution.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+
+MONITOR-675:
+  Date: 2026-10-05
+  Source item: PRESUMPTION-1040 (DISPOSITION-1037)
+  Priority: Medium
+  Disposition basis: Core claim not contradicted; wording narrowed. Would change: completed supervisor-tree/dead-man's-switch search and a source on absence-alarm false-positive cost.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+
+MONITOR-676:
+  Date: 2026-10-05
+  Source item: PRESUMPTION-1047 (DISPOSITION-1039)
+  Priority: Medium
+  Disposition basis: Premise as worded (policy beats case-by-case) is contested by the same literature that grounds the ethics concern. Would change: a source on written policy vs situated judgement for living-subject biographical material, or the Rohr/Armas byline literature.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+
+MONITOR-677:
+  Date: 2026-10-05
+  Source item: PRESUMPTION-1048 (DISPOSITION-1040)
+  Priority: High
+  Disposition basis: Claim holds for expiring/rolling sources, not persistent indexed corpora read by cursor; the 15-tradition cadence case depends on which applies. Would change: in-house check of source persistence per tradition plus a primary source on null-report indistinguishability.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING

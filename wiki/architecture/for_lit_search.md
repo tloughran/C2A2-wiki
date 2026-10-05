@@ -22039,7 +22039,7 @@ PRESUMPTION-1019:
       (transfers from cognitive-science findings to stateless agent runs are "ANALOGICAL and contested");
       no line on legal record-authority standards or their transfer to internal provenance.
       **NO COVERING PREMISE FOUND.**
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — PARTIALLY-SUPPORTED (Weak); general criteria transfer supported, specific FRE 803(6)/§2.03/UETA §14 transfer untested; narrow NOVELTY-FLAG] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Moderate); disanalogy derived from the sources' own conditions (custodian, opponent, tribunal, relying third party)] [DISPOSITIONED-15c: 2026-10-05 — MONITOR (MONITOR-672)]
   Priority: MEDIUM.
   PROVENANCE:
     Origin: 14b
@@ -22163,7 +22163,7 @@ PRESUMPTION-1024:
       l.2010 (asymmetric usefulness test — a different asymmetry); nothing on an error the run introduced
       *before* the gate and cannot reach *through* it.
       **NO COVERING PREMISE FOUND.**
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — PARTIALLY-SUPPORTED (Moderate); ingredients supported, create/modify asymmetry itself unaddressed; narrow NOVELTY-FLAG] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Weak); supports gating modify and treating external comms as high risk; none refutes the asymmetry] [DISPOSITIONED-15c: 2026-10-05 — MONITOR (MONITOR-673)]
   Priority: MEDIUM-HIGH.
   PROVENANCE:
     Origin: 14b
@@ -22247,7 +22247,7 @@ PRESUMPTION-1034 — [QUEUED]
     C2A2-specific fact.
   Risk if wrong: High (estate-wide dating).
   Related: ASSUMPTION-1509, ASSUMPTION-1510, OPEN-237, OPEN-240.
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — PARTIALLY-SUPPORTED (Moderate); skipped-vs-pass conflation and "no data != OK" documented via vendor docs; "last known good" corruption inferential] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Weak); boundary conditions only (hermetic cached passes; git bisect skip)] [DISPOSITIONED-15c: 2026-10-05 — MONITOR (MONITOR-674)]
 
 PRESUMPTION-1040 — [QUEUED]
   Item type: PRESUMPTION (unstated — surfaced by inference)
@@ -22265,7 +22265,7 @@ PRESUMPTION-1040 — [QUEUED]
   Why it is testable: Squarely a distributed-systems literature question.
   Risk if wrong: High. Third observed instance; downstream drain currently zero.
   Related: ASSUMPTION-1512, ASSUMPTION-1513, OPEN-222, OPEN-238; PREMISE-053 (partially adjacent).
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — PARTIALLY-SUPPORTED (Moderate); Chandra-Toueg/FLP ground the core claim, "only a heartbeat"/"provably" overreach] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Weak); gray failure, heartbeat-as-proxy, hard-deadline sufficiency; false-positive sub-claim unsourced] [DISPOSITIONED-15c: 2026-10-05 — MONITOR (MONITOR-675)]
 
 **Lane arithmetic.** Tonight adds **2** items — both PRESUMPTIONs; no ASSUMPTION from tonight's eighteen
 was routed (eleven were settled in-house, four are corrections to today's own claims, and three await an
@@ -22298,7 +22298,7 @@ PRESUMPTION-1043 — [QUEUED]
   Risk if wrong: High. Two C2A2 tasks have been carried as independent FAIL rows for over two weeks and
     died tonight on one 5.9 GB ceiling; the estate is about to receive two separately-scoped patches.
   Related: ASSUMPTION-1530, ASSUMPTION-1531, ASSUMPTION-1532; OPEN-244; PRESUMPTION-1044.
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — SUPPORTED (Strong inflation half / Moderate taxonomy-hiding half); Ford 2010 OSDI, NUREG/CR-5485] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Weak); CCF data scarce outside nuclear, beta-factor needs modification for software; MTTR/ownership directions are literature gaps] [DISPOSITIONED-15c: 2026-10-05 — INCORPORATE (PREMISE-222)]
 
 PRESUMPTION-1047 — [QUEUED]
   Item type: PRESUMPTION (unstated — surfaced by inference)
@@ -22320,7 +22320,7 @@ PRESUMPTION-1047 — [QUEUED]
     with the people it tracks and writes to does. Two unilateral rulings were made on this the same day
     with no covering rule.
   Related: ASSUMPTION-1541, ASSUMPTION-1546.
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — PARTIALLY-SUPPORTED (Moderate); "public != consented", aggregation and grief vulnerability supported; AoIR 3.0 favours deliberation; attribution limb thin; application-level NOVELTY-FLAG] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Weak; Moderate only on rules-vs-standards for novel cases); nothing found for "public = no obligation"] [DISPOSITIONED-15c: 2026-10-05 — MONITOR (MONITOR-676)]
 
 PRESUMPTION-1048 — [QUEUED]
   Item type: PRESUMPTION (unstated — surfaced by inference)
@@ -22342,7 +22342,7 @@ PRESUMPTION-1048 — [QUEUED]
   Risk if wrong: High, and silently so — fifteen traditions, fifteen cadences, one window found by
     accident because the orchestrator happened to read the source index directly.
   Related: ASSUMPTION-1540; OPEN-243.
-  Status: [QUEUED]
+  Status: [QUEUED] [SEARCHED-15a: 2026-10-05 — PARTIALLY-SUPPORTED (Moderate); Cho & Garcia-Molina freshness, Shannon; null-report clause undocumented (partial NOVELTY-FLAG)] [SEARCHED-15b: 2026-10-05 — PARTIALLY-CHALLENGED (Moderate, conceptual); for persistent cursor-read corpora a slow poller loses latency not coverage; null-report mode stands] [DISPOSITIONED-15c: 2026-10-05 — MONITOR (MONITOR-677)]
 
 **Lane arithmetic.** Tonight adds **3** items — all PRESUMPTIONs, the highest routing count in a
 fortnight, and the first night on which every routed item names a mature literature rather than a

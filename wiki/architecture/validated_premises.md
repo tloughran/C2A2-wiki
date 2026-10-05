@@ -8006,3 +8006,18 @@ PREMISE-221:
   Status: ACTIVE
   Consistency: no contradiction with PREMISE-053, -086, -220; extends all three.
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+
+PREMISE-222:
+  Date validated: 2026-10-05
+  Source item: PRESUMPTION-1043
+  Statement: A failure taxonomy organised per component does not by itself reveal causes shared across components, and treating components as independent inflates reliability estimates; shared-cause (common-cause) analysis is needed alongside per-component rows. Scope: the inflation half is strongly supported; that per-component taxonomies systematically hide shared causes rests on inference. Formal CCF parameter models are not endorsed for C2A2 (data scarcity).
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Ford et al. 2010 (OSDI '10; ignoring correlated failures overestimates availability by >= 2 orders of magnitude); NUREG/CR-5485 (Mosleh et al. 1998)
+  Challenges noted: 15b (Weak): Hark et al. 2016 NASA NTRS 20160007009 (CCF data scarce outside nuclear); Shorthill et al. 2022 arXiv:2206.11321 (beta-factor needs modification for software); MTTR and per-team ownership directions unsearched (literature gap)
+  Confidence: Moderate
+  Applicable to: failure/FAIL-row reporting in the estate; the 5.9 GB ceiling incident (OPEN-244); patch scoping
+  Re-check due: 2027-01-05
+  Status: ACTIVE
+  Consistency: no contradiction found with existing independence/common-mode premises (redundancy-requires-independence premise; PREMISE-110 common-mode guard); extends them.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
