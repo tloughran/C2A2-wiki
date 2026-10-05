@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-006 - Does God Change - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-18T04:25:58"
+last_qc_at: "2026-10-04T08:17:12"
 last_qc_outcome: "pass"
 tags: [summa, day/006, pars/I]
 ---

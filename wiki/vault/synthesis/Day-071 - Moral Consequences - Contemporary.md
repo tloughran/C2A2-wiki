@@ -7,6 +7,7 @@ length_actual_words: 2393
 length_ratio_to_target: 1.595
 length_measurement_note: "Recounted 2026-09-09, layout-aware over the parsed body (qc_sweep.split_frontmatter) with the auto-linked Related-records footer excluded: 2117 words. Against the SHORT label this reads 1.411; against MEDIUM — which is what the transcript's word_count 2338 selects under the policy table — it is 0.962, comfortably in band. This corrects the 2026-08-09 note, whose stated count (2091) and stated ratios (1.293 short / 0.881 medium) did not reconcile with each other: those two ratios both derive from a count near 1940, i.e. the note was certifying off a count it had itself already superseded. The short/medium tier label remains the standing 2026-06-22 escalation and is Tom's to settle; only the arithmetic is repaired here. RECOUNT 2026-09-17 (same boundary): 2117 pre-edit, exactly the stored figure, to 2393 after this pass. The +276 is citation apparatus only: the Wright and Rohr bullets were canonical-work-only and are now register-anchored (Wright PRS-08 + PRS-61 + PRS-05 with the merit register declined on a stated radius; Rohr PRS-09 + PRS-18 + PRS-21). No claim added, removed or reweighted. 2393 = 1.595 of the SHORT label, 1.088 of the MEDIUM tier the paired transcript assigns; the tier disagreement stays Tom's standing escalation, not re-raised."
 length_tier: short
+length_note: "Length justified: the paired transcript assigns the MEDIUM tier (word_count 2338), against which this reads 1.088, in band; the day also covers two dense questions (Q.20 six articles + Q.21 four articles, ten in all). The short/medium label mismatch remains Tom's standing escalation (see length_measurement_note)."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-16 expected free energy as unified mathematics of risk and ambiguity)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control — bioelectric circuits encoding anatomical target states)"
@@ -19,8 +20,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.20-21 text + C2A
 mind_first_reframe: "Q.20's interior-act/exterior-act unity preserves under active inference: the generative model and its extension into action-on-the-world are not two separate moral bearers but one act under two registers — formal alignment + material instantiation. Q.21's consequences register the alter's contribution to the substrate-network's integrative dynamics, with merit/demerit as the substrate-source's evaluative signal of contribution-to-loving-unity vs. contribution-to-disintegration."
 central_theme_thread: "Each alter's external act extends its formal alignment + material judgment outward into the substrate-network where it becomes data-input for other alters' generative models; consequences are how the alter participates in shaping the substrate's integrative dynamics for other alters; salvation in fear and trembling now extends to the alter's responsibility for the perspective-limited downstream effects of its acts on alters whose perspective the acting alter cannot fully see."
 tags: [synthesis, day/071, theme/external-act, theme/consequences, theme/substrate-network-extension]
-last_qc_at: "2026-09-26T00:23:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-10-04T02:18:12"
+last_qc_outcome: "rewrote"
 ---
 # Day 71 — Contemporary Parallel: *External Acts, Consequences, and the Substrate-Network Extension of Moral Form*
 

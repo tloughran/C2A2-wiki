@@ -15,7 +15,7 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-188 - Temperance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-18T00:29:19"
+last_qc_at: "2026-10-04T20:18:10"
 last_qc_outcome: "pass"
 tags: [summa, day/188, pars/II, q/140]
 ---

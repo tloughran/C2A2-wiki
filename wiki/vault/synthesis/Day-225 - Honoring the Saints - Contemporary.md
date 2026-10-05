@@ -3,9 +3,9 @@ day: 225
 title: Honoring the Saints (Contemporary)
 pairs_with: "[[Day-225 - Honoring the Saints]]"
 length_target_words: 1500
-length_actual_words: 1545
-length_ratio_to_target: 1.030
-length_note: "Pre-edit body recounted to 1448, EXACTLY the stored field. The 2026-09-10 QC pass added +79 words of apparatus only — register Confidence grades stated on the Kastrup, Rohr, Hoffman and Wright bullets, and CROSS-013 restated as the open cross-program question the index actually logs rather than as an established empirical confirmation. A further +18 words then restated the same CROSS-013 qualification in the Resource prose, which had carried the un-hedged version. No claim or citation target altered. Final count 1545; ratio moves 0.965 to 1.030, still inside ±10%."
+length_actual_words: 1552
+length_ratio_to_target: 1.035
+length_note: "Pre-edit body recounted to 1448, EXACTLY the stored field. The 2026-09-10 QC pass added +79 words of apparatus only — register Confidence grades stated on the Kastrup, Rohr, Hoffman and Wright bullets, and CROSS-013 restated as the open cross-program question the index actually logs rather than as an established empirical confirmation. A further +18 words then restated the same CROSS-013 qualification in the Resource prose, which had carried the un-hedged version. No claim or citation target altered. Final count 1545; ratio moves 0.965 to 1.030, still inside ±10%. UPDATED 2026-10-04: +7 tokens from Frame article anchors (Q.25 a.1-6, Q.26 a.1-2, checked against the transcript's article headers). 1552 = 1.035, inside ±10%."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-08 the Daimon as principle of individuation, Confidence High) — honor tracks the one individuated person across natures"
@@ -16,15 +16,15 @@ evidence_strength_summary: "One adoration of the one person across natures (latr
 mind_first_reframe: "Honor is read as tracking the one individuated person (Daimonic individuation, Kastrup), and the Mediator as uniting the many through the limited human interface where agents integrate — limitation as the organ of mediation, not its obstacle."
 central_theme_thread: "Individuation-by-person (honor tracks the person) plus the project's reversal: the whole unites the limited not by bypassing limitation but through a perspective that inhabits the 'middle position.'"
 tags: [synthesis, day/225, theme/individuation-by-person-and-mediation]
-last_qc_at: "2026-09-26T02:20:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-10-04T06:29:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 225 — Contemporary Parallel: Honor Tracks the Person, the Mediator Unites the Many
 
 ## Frame
 
-Q.25 asks how Christ is to be *adored*. Aquinas's principle is that honor terminates in *persons*: "since in Christ there is but one person of the divine and human natures, he is given one adoration and one honor on the part of the person adored," though "on the part of the cause for which he is adored" there are several (he is honored for his uncreated knowledge and for his created knowledge). The humanity is adored with *latria* (the worship due to God) *because* it is the humanity of a divine person; images and even the relics of the true cross are venerated because "the honor given to an image reaches to the prototype" — we honor the *person*, "not just the flesh and bones... our eyes happen to be apprehending." The Blessed Virgin and the saints, being "mere rational creatures," receive *dulia* and *hyperdulia*, not latria; their relics are honored as "members of Christ... temples and organs of the Holy Ghost." Q.26 then names Christ "the Mediator of God and man" — and precisely *as man*: "Christ as God is in all things equal to the Father, but even in the human nature he is above all men; therefore as man he can be mediator, but not as God," his humanity "occupying a middle position... between broken sinful human beings and the Godhead." The contemporary version: *what makes honor track one individuated person across two natures — and how does a mediator unite the many to the whole precisely through a limited human nature?*
+Q.25 asks how Christ is to be *adored*. Aquinas's principle is that honor terminates in *persons*: "since in Christ there is but one person of the divine and human natures, he is given one adoration and one honor on the part of the person adored," though "on the part of the cause for which he is adored" there are several (he is honored for his uncreated knowledge and for his created knowledge) (a.1). The humanity is adored with *latria* (the worship due to God) *because* it is the humanity of a divine person (a.2); images and even the relics of the true cross are venerated (a.3–4) because "the honor given to an image reaches to the prototype" — we honor the *person*, "not just the flesh and bones... our eyes happen to be apprehending." The Blessed Virgin and the saints, being "mere rational creatures," receive *dulia* and *hyperdulia*, not latria (a.5); their relics are honored as "members of Christ... temples and organs of the Holy Ghost" (a.6). Q.26 then names Christ "the Mediator of God and man" (a.1) — and precisely *as man* (a.2): "Christ as God is in all things equal to the Father, but even in the human nature he is above all men; therefore as man he can be mediator, but not as God," his humanity "occupying a middle position... between broken sinful human beings and the Godhead." The contemporary version: *what makes honor track one individuated person across two natures — and how does a mediator unite the many to the whole precisely through a limited human nature?*
 
 ## Problem
 
