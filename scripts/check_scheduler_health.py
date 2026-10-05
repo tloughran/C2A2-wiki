@@ -508,7 +508,28 @@ def previous_fires(expression, now_local, count, horizon_days=45):
 OK, WARN, FAIL = "OK", "WARN", "FAIL"
 
 
-def verdict_task(task, now_local):
+ROUTINE_HEALTH_FILE = "scheduler/routine_health.md"
+ROUTINE_HEALTH_MAX_AGE_HOURS = 26
+
+
+def routine_health_fresh(now_utc, repo=REPO):
+    """True when check_routine_health.py has written a block in the last 26h.
+
+    That file is where moved-to-cloud tasks are now judged (by their run records).
+    Only while it is fresh may this script stop warning about them -- otherwise a
+    dead cloud watcher would make 32 tasks silently OK again, the 09-24..09-27
+    failure in a new coat.
+    """
+    try:
+        lines = open(os.path.join(repo, ROUTINE_HEALTH_FILE)).read().split("\n")
+        stamp = [l for l in lines if l.strip()][-1].split()[0]
+        written = datetime.strptime(stamp, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc)
+    except (OSError, IndexError, ValueError):
+        return False
+    return (now_utc - written).total_seconds() <= ROUTINE_HEALTH_MAX_AGE_HOURS * 3600
+
+
+def verdict_task(task, now_local, cloud_watched=False):
     """Did this registry task fire when its cron said it should?"""
     tid = task.get("id", "<no id>")
 
@@ -517,6 +538,9 @@ def verdict_task(task, now_local):
     # line called all 31 "OK: disabled", so none was watched. Moved is not off:
     # say so, and say where the truth now lives.
     mig = task.get("migratedToRemote")
+    if mig and cloud_watched:
+        return OK, (f"{tid}: runs as cloud routine {mig.get('triggerId', '?')}; judged from "
+                    f"its run record in {ROUTINE_HEALTH_FILE}")
     if mig:
         return WARN, (f"{tid}: moved to a cloud scheduled task "
                       f"({mig.get('triggerId', '?')}, {task.get('migratedToRemoteAt', '?')[:10]}); "
@@ -939,8 +963,9 @@ def main():
     if not registry_paths:
         print(f"FAIL  no registry matched {REGISTRY_GLOB}", file=sys.stderr)
         return 2
+    cloud_watched = routine_health_fresh(now_utc)
     for _, task in sorted(tasks.items()):
-        results.append(verdict_task(task, now_local))
+        results.append(verdict_task(task, now_local, cloud_watched))
 
     labels, plist_problems = launchd_labels()
     if not labels and not plist_problems:

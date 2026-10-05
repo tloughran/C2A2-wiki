@@ -357,6 +357,28 @@ Support/Claude/` and scheduled tasks only mount `~/Documents`. Same constraint t
 `check_scheduled_commits.py` behind a launchd agent. **Only `launchctl kickstart` tests
 the real path** — a Terminal shell has its own TCC grant and proves nothing.
 
+### Cloud routines: `check_routine_health.py` (added 2026-10-05, plan item 1.4)
+
+~32 tasks moved to cloud Routines 09-16..09-28, and nothing on the Mac can see a cloud
+run. The Routines service can: each routine's record holds its schedule and last run
+(status, fired_at). The 07:00 `scheduler-health-check` routine fetches that listing
+with its Routines connector, copies the saved result to `scheduler/routines_snapshot.json`
+(never retyped), runs `scripts/check_routine_health.py` on it, and reports
+`scheduler/routine_health.md`. FAIL: last run FAILED, never fired, or two scheduled fires
+missed. WARN: a run PENDING/RUNNING over 2h (the dashboard waiting six hours on an
+approval, 10-05). `America/Indianapolis` is a legacy zone alias; the script maps it, since
+some tz databases omit it.
+
+Two Mac-side checks now defer to it: `check_daily_run_stall.py` no longer fails a task that
+runs in the cloud (its transcript is not on the Mac -- that FAIL fired every day 09-20..10-05),
+and `check_scheduler_health.py` downgrades its 32 "moved to cloud" WARNs to OK **only while
+`routine_health.md` is under 26h old**. If the cloud watcher dies, the WARNs come back.
+
+```bash
+python3 scripts/test_check_routine_health.py
+python3 scripts/check_routine_health.py --snapshot scheduler/routines_snapshot.json
+```
+
 ### Three deliberate tolerances (do not "fix" these)
 
 - **One missed fire passes; two fail.** One miss is a laptop asleep at 04:30. A report

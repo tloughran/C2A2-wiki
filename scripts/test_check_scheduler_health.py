@@ -171,6 +171,23 @@ def main():
                                  migratedToRemote={"triggerId": "trig_x"},
                                  migratedToRemoteAt="2026-09-24T18:35:05Z"), NOW_LOCAL)[0],
            mod.WARN)
+    # Once check_routine_health.py is writing routine_health.md, a moved task IS
+    # watched -- 32 standing WARNs a morning would bury the real ones. Only then.
+    expect("a moved task is OK while the cloud watcher is fresh",
+           mod.verdict_task(task(enabled=False, migratedToRemote={"triggerId": "trig_x"}),
+                            NOW_LOCAL, cloud_watched=True)[0],
+           mod.OK)
+    with tempfile.TemporaryDirectory() as rh:
+        os.makedirs(os.path.join(rh, "scheduler"))
+        rh_file = os.path.join(rh, mod.ROUTINE_HEALTH_FILE)
+        expect("no routine_health.md: cloud watcher NOT fresh",
+               mod.routine_health_fresh(NOW_UTC, repo=rh), False)
+        for hours, want in ((5, True), (30, False)):
+            open(rh_file, "w").write(
+                (NOW_UTC - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%MZ")
+                + "  cloud routines: 43 checked\n")
+            expect(f"routine_health.md {hours}h old: fresh={want}",
+                   mod.routine_health_fresh(NOW_UTC, repo=rh), want)
     expect("one-time task that already fired warns, does not fail",
            mod.verdict_task({"id": "t", "enabled": True,
                              "lastRunAt": iso(NOW_UTC - timedelta(days=90))},
