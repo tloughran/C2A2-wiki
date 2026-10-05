@@ -171,6 +171,23 @@ def main():
                                  migratedToRemote={"triggerId": "trig_x"},
                                  migratedToRemoteAt="2026-09-24T18:35:05Z"), NOW_LOCAL)[0],
            mod.WARN)
+    # Once check_routine_health.py is writing routine_health.md, a moved task IS
+    # watched -- 32 standing WARNs a morning would bury the real ones. Only then.
+    expect("a moved task is OK while the cloud watcher is fresh",
+           mod.verdict_task(task(enabled=False, migratedToRemote={"triggerId": "trig_x"}),
+                            NOW_LOCAL, cloud_watched=True)[0],
+           mod.OK)
+    with tempfile.TemporaryDirectory() as rh:
+        os.makedirs(os.path.join(rh, "scheduler"))
+        rh_file = os.path.join(rh, mod.ROUTINE_HEALTH_FILE)
+        expect("no routine_health.md: cloud watcher NOT fresh",
+               mod.routine_health_fresh(NOW_UTC, repo=rh), False)
+        for hours, want in ((5, True), (30, False)):
+            open(rh_file, "w").write(
+                (NOW_UTC - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%MZ")
+                + "  cloud routines: 43 checked\n")
+            expect(f"routine_health.md {hours}h old: fresh={want}",
+                   mod.routine_health_fresh(NOW_UTC, repo=rh), want)
     expect("one-time task that already fired warns, does not fail",
            mod.verdict_task({"id": "t", "enabled": True,
                              "lastRunAt": iso(NOW_UTC - timedelta(days=90))},
@@ -308,6 +325,26 @@ def main():
             NOW_UTC - timedelta(days=5))}})
         expect("artifact five days stale",
                mod.verdict_artifact(spec, NOW_UTC)[0], mod.FAIL)
+
+        # 2026-09-30/10-01, verbatim: the daily run committed on the Mac both days
+        # and every local check said OK, while GitHub sat two days behind. The
+        # daily_push row reads the newest daily-run commit ON ORIGIN, so that state
+        # must go red -- and a fresh push must not.
+        push_row = next(a for a in mod.ARTIFACTS
+                        if a["path"] == "scheduler/daily_push.json")
+        push_file = Path(tmp) / "daily_push.json"
+        for label, origin_at, want in (
+                ("GitHub two days behind a fresh local commit",
+                 iso(NOW_UTC - timedelta(days=2)), mod.FAIL),
+                ("no daily-run commit on GitHub at all", None, mod.FAIL),
+                ("daily-run commit pushed this morning",
+                 iso(NOW_UTC - timedelta(hours=5)), mod.OK)):
+            push_file.write_text(json.dumps({
+                "checked_at": iso(NOW_UTC), "verdict": "REFUSED",
+                "origin_daily_run_at": origin_at}))
+            expect(f"daily_push: {label}",
+                   mod.verdict_artifact(dict(push_row, path=str(push_file)),
+                                        NOW_UTC)[0], want)
 
         # An artifact with no self-recorded date cannot be checked at all, and
         # must say so rather than falling back to an mtime that git does not keep.

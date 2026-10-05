@@ -35,6 +35,8 @@
 
 **EXCEPTION — automated data-only heartbeat refresh (added 2026-06-26).** The `heartbeat-refresh` GitHub Actions cron MAY commit and push without human sign-off, but ONLY when both hold: (a) it changes **data files exclusively** — `wiki/heartbeat/data/digest.json`, `wiki/heartbeat/data/snapshots/**`, `wiki/heartbeat/data/sources_roster.json` — never code, HTML, or CSS; and (b) the **CI gate passes** (the jsdom roster test `wiki/heartbeat/test/roster.test.js` + `node --check` on the JS + the pipeline's seed/size/`signals>0` guards). A failing gate fails the job, so nothing is pushed. This carve-out honors the rule's intent: the rule exists because an unreviewed **code/HTML** push broke rendering; auto-publishing only **validated data** behind a green gate is low blast-radius. Any change to the heartbeat's code/HTML/CSS still requires the full human local review above.
 
+**EXCEPTION — daily-run output, auto-pushed behind a gate (added 2026-10-05, Tom's decision).** `scripts/push_daily_run.sh` (run by the 05:45 `com.c2a2.scheduled-commit-check` agent, right after `commit_daily_run.sh`) MAY push to `main` without human sign-off, but ONLY when every gate passes: (a) **every** commit ahead of origin carries the `C2A2 daily run` subject — anything else ahead (Tom's own work, a vault-sync commit that failed to push) refuses the whole push; (b) the outgoing diff stays inside `commit_daily_run.sh`'s path allowlist; (c) the personal address is absent from the outgoing diff; (d) every changed `.html` file's inline `<script>` blocks pass `node --check` and every changed `.json` parses. It levels with GitHub by **merge, never rebase**, and never force-pushes. Rationale: on 2026-09-30/10-01 two days of committed output sat unpushed, the nightly vault sync failed rebasing across the gap, and no watchdog noticed; Tom chose auto-push behind a check over an overdue alert. Gate (d) is aimed at this rule's original failure — an unreviewed page that no longer renders. **This covers daily-run output only.** Code, CSS, templates, and every other HTML change still require the full human local review above. Tests: `bash scripts/test_push_daily_run.sh` (28 assertions; each refusal asserts the fake origin did not move).
+
 ---
 
 ## CONSTITUTIONAL RULE: Iframe-Loaded Tabs Must Not Ship Bare Asset Includes
@@ -244,7 +246,7 @@ bash scripts/test_voice_faq.sh                           # 19 assertions on the 
 
 **Script:** `scripts/commit_daily_run.sh` (+ `scripts/test_commit_daily_run.sh`, 41 assertions)
 **Runs:** 05:45 daily, first step of the `com.c2a2.scheduled-commit-check` launchd agent
-**Commits. Never pushes.**
+**Commits. Never pushes** — pushing is the next step, `scripts/push_daily_run.sh`, behind its own gate (see the no-blind-push rule's second exception, added 2026-10-05).
 
 `c282-wiki-agent-daily-run` completes its whole job and then reports, verbatim:
 
@@ -261,11 +263,15 @@ It replicates Phase 6 of the run's own SKILL.md — same pathspec, same
 `check_scheduled_commits.py` greps for — and adds guards a sandboxed model cannot enforce
 on itself.
 
-### Why it does not push
-CLAUDE.md's standing rule is that nothing reaches GitHub unreviewed; the lone carve-out is
-the heartbeat's data-only refresh behind a CI gate. Daily-run output is wiki **content**,
-the exact class that rule protects. Committing turns an unbounded working-tree pile into a
-reviewable commit. Pushing stays a human act.
+### Why the commit step itself does not push
+Committing and publishing are kept as separate steps with separate gates. Until 2026-10-05
+pushing was a human act; on 09-30 and 10-01 nobody did it, two days of output sat on the
+Mac, and the 22:00 vault sync then failed rebasing across the gap. Tom chose auto-push
+behind a check: `push_daily_run.sh` runs right after this script (skipped if this one
+refused) and publishes only daily-run commits that pass its gate. It records the newest
+daily-run commit **on GitHub** in `scheduler/daily_push.json`, and
+`check_scheduler_health.py` goes red when that is over 30h old — read from origin, so a
+commit that never left the Mac cannot satisfy it.
 
 ### It refuses (exit 1, tree untouched) when
 - the repo is mid-merge/rebase/cherry-pick, or a `.git` lock is present
@@ -308,6 +314,7 @@ built on purpose.
 ```bash
 bash scripts/commit_daily_run.sh --dry-run
 bash scripts/test_commit_daily_run.sh
+bash scripts/test_push_daily_run.sh
 ```
 
 ---
@@ -349,6 +356,28 @@ It cannot live inside the 07:00 task: the registry is under `~/Library/Applicati
 Support/Claude/` and scheduled tasks only mount `~/Documents`. Same constraint that put
 `check_scheduled_commits.py` behind a launchd agent. **Only `launchctl kickstart` tests
 the real path** — a Terminal shell has its own TCC grant and proves nothing.
+
+### Cloud routines: `check_routine_health.py` (added 2026-10-05, plan item 1.4)
+
+~32 tasks moved to cloud Routines 09-16..09-28, and nothing on the Mac can see a cloud
+run. The Routines service can: each routine's record holds its schedule and last run
+(status, fired_at). The 07:00 `scheduler-health-check` routine fetches that listing
+with its Routines connector, copies the saved result to `scheduler/routines_snapshot.json`
+(never retyped), runs `scripts/check_routine_health.py` on it, and reports
+`scheduler/routine_health.md`. FAIL: last run FAILED, never fired, or two scheduled fires
+missed. WARN: a run PENDING/RUNNING over 2h (the dashboard waiting six hours on an
+approval, 10-05). `America/Indianapolis` is a legacy zone alias; the script maps it, since
+some tz databases omit it.
+
+Two Mac-side checks now defer to it: `check_daily_run_stall.py` no longer fails a task that
+runs in the cloud (its transcript is not on the Mac -- that FAIL fired every day 09-20..10-05),
+and `check_scheduler_health.py` downgrades its 32 "moved to cloud" WARNs to OK **only while
+`routine_health.md` is under 26h old**. If the cloud watcher dies, the WARNs come back.
+
+```bash
+python3 scripts/test_check_routine_health.py
+python3 scripts/check_routine_health.py --snapshot scheduler/routines_snapshot.json
+```
 
 ### Three deliberate tolerances (do not "fix" these)
 
