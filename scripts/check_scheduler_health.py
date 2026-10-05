@@ -138,9 +138,9 @@ ARTIFACTS = [
         ),
     },
     {
-        # The agents tab's telemetry was frozen 06-08..06-26 and again from 10-03,
-        # while the job that builds it reported runs. The feed dates itself.
-        "owner": "com.c2a2.openstory-feeds",
+        # The agents tab's telemetry was frozen 06-08..06-26 while the job that builds
+        # it reported runs. The feed dates itself.
+        "owner": "com.loughran.openstory-feeds-refresh",
         "path": "wiki/agents/openstory/agent_telemetry.json",
         "field": "_meta.generated",
         "max_age_hours": 26,
@@ -148,7 +148,7 @@ ARTIFACTS = [
             "the agents tab is showing telemetry that old. The last line of "
             "wiki/agents/openstory/REFRESH_STATUS.md names the failing step (a stale "
             "OpenStory db, an extractor error, a feed that failed validation); "
-            "~/Library/Logs/c2a2-openstory-feeds.log has the full output."
+            "~/Library/Logs/openstory-feeds-refresh.log has the full output."
         ),
     },
     {
