@@ -17,15 +17,15 @@ evidence_strength_summary: "Sin-as-defection and restoration-as-re-coherence are
 mind_first_reframe: "Public penance is the collective agent visibly re-admitting a member whose generative model had defected from the shared field — reincorporation modeled as bioelectric re-coherence (Levin) achieved through mutual remodeling (Friston PRS-06)."
 central_theme_thread: "The penitent's perspective had narrowed to the self; the solemn rite re-includes that perspective in the whole through the guidance of those who perceive more of it — the institutional shape of 'working out salvation in fear and trembling.'"
 tags: [synthesis, day/271, theme/defection-and-reincorporation]
-last_qc_at: "2026-09-22T08:29:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-30T14:17:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 271 — Public Penance (Contemporary)
 
 ## Frame
 
-Aquinas (Suppl. Q.27-28) ends the treatise on indulgences by asking *whom* they avail (Q.27), then opens the solemn, public rite of penance (Q.28) — the visible discipline by which a gravely sinning member is reincorporated into the body of the Church. The medieval question is juridical and ecclesial: who has standing to receive the surplus merit of the communion of saints, and what public act re-binds the one who had cut himself off? The contemporary version of the same question, read under mind/conscious-realist monism, is this: when a member defects from a cooperative whole, what *mechanism* restores it to coherent participation — and is that restoration something the member can accomplish alone, or only through the whole acting upon the part?
+Aquinas (Suppl. Q.27-28) ends the treatise on indulgences by asking *whom* they avail (Q.27), then opens the solemn, public rite of penance (Q.28) — the visible discipline by which a gravely sinning member is reincorporated into the body of the Church. The medieval question is juridical and ecclesial: who has standing to receive the surplus merit of the communion of saints, and what public act re-binds the one who had cut himself off? Two articles carry the weight: Suppl. Q.27 a.1, where one in mortal sin is a "dead member" who receives no inflow from the living members of the one mystical body; and Q.28 a.2, where solemn penance is not repeated — because frequency breeds contempt, because it signifies the once-only expulsion from paradise, and because it professes continual repentance. The contemporary version of the same question, read under mind/conscious-realist monism, is this: when a member defects from a cooperative whole, what *mechanism* restores it to coherent participation — and is that restoration something the member can accomplish alone, or only through the whole acting upon the part?
 
 ## Problem
 

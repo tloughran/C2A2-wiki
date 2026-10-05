@@ -6394,3 +6394,225 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-29.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-30
+
+**Nothing was due and nothing changed state. One carried open item cleared upstream: PROP-2026-09-02-002's dated condition was met by yesterday's McGilchrist filing. Gmail is still unauthenticated for a second consecutive pipeline run, so no review decisions can come in.**
+
+  Items checked: 0. WATCH-003 is on a weekly cadence (last checked 09-29), and the off-cadence trigger did not fire: `review/archive/` is still at **20** files, latest `2026-09-24_decisions.md`, and `find -newer` returns nothing.
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, 14 checks; recommendation unchanged: one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` has **1** file and **0 new** (WATCH-001 tombstone, already tagged). Channel 2/3 grep: a vault-wide search for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, excluding `deferred/` and `agents/`, found **zero files**.
+
+**Tooling:** the sandbox shell is working again this run, so yesterday's gap is closed. `approved/` was recounted directly: **449**, which matches the ledger.
+
+**Findings (changes since 09-29 only):**
+1. **PROP-2026-09-02-002's dated condition is met.** The 09-29 `PROCESSED_LOG.md` Phase 2 logs PROP-2026-09-29-002 (McGilchrist, UnHerd Live "AI versus the human soul", full transcript) as "Closes watch card PROP-2026-09-02-002." This item comes off the "dated conditions unheld" list. PROP-2026-09-22-003 is still due after 10-03.
+2. **Gmail is still unauthenticated** (09-29 Phase 0 and Phase 4, the second consecutive run). No decision email can be processed. `pending/` now holds **8** cards, and the Fredrickson card has been queued for 6 days.
+3. The 09-29 pipeline also hit the sandbox-disk-full failure and ran through Desktop Commander. It is recorded upstream, so it is not this agent's item.
+
+**Resolution routing:** nothing was routed. This summary is the only write.
+
+**Open for Tom (all other carried items unchanged from 09-29):** reconnect Gmail (blocks every decision); INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033 (still OPEN per the ledger); handle the leak-shaped triplet half of PROP-2026-09-28-001; split the run log (**25th** recommendation, file ~6,400 lines).
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1. Next check: WATCH-003, 2026-10-06.
+
+---
+
+*Run completed 2026-09-30.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-30
+
+**No item due; nothing resolved. WATCH-003 not due (next on-cadence 2026-10-06); off-cadence trigger checked and not fired.**
+
+  Items checked: **0 due** (WATCH-003 last checked 2026-09-29, count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` present), 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still 20 files, latest `2026-09-24_decisions.md`; no new decision file, so no later disposition on PROP-2026-07-19-001 can exist. Not counted as a check.
+
+**Notes:** Shell was available this run (device_bash). `pending/` holds 8 cards (3 new dated 09-29); `approved/` 449 (unchanged). Carried open items for Tom are unchanged from the 09-29 summary (Gmail re-auth, INTEGRITY FLAG ruling, PROP-2026-08-14-033, PROP-2026-09-02-002 now 6 days overdue, run-log split recommendation).
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-09-30.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-01
+
+**No item due; nothing resolved. WATCH-003 not due (next on-cadence 2026-10-06); off-cadence trigger checked and not fired.**
+
+  Items checked: **0 due** (WATCH-003 last checked 2026-09-29, count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` present), 0 new. Channel 2/3 channel greps not re-run this run (unchanged since 09-30).
+
+**Off-cadence trigger:** `review/archive/` still 20 files, latest `2026-09-24_decisions.md`; only `2026-08-27_decisions.md` mentions PROP-2026-07-19-001/beatitudes-week-two (already known). No later disposition exists. Not counted as a check.
+
+**Notes:** `pending/` holds 11 cards (up from 8 on 09-30). Carried open items for Tom unchanged (Gmail re-auth, INTEGRITY FLAG ruling, PROP-2026-08-14-033, run-log split recommendation).
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-01.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-01
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire. Gmail is now unauthenticated for a third consecutive pipeline run.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (the WATCH-001 tombstone, already tagged `[TRACKED-16: 2026-05-05]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, vault-wide, excluding `deferred/` and `agents/`) found zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. `find -newer watch_list.md` returns nothing. Not counted as a check.
+
+**Findings (changes since 09-30 only):**
+1. **Correction to the second 09-30 summary.** That entry said PROP-2026-09-02-002 was "now 6 days overdue." This is wrong. The first 09-30 summary was right: the 09-29 `PROCESSED_LOG.md` (line 1948) records PROP-2026-09-29-002 as "Closes watch card PROP-2026-09-02-002." That condition is met and comes off the open list. Two summaries dated 09-30 exist, so the task appears to have run twice that day and the two runs disagree. The later one is superseded on this point.
+2. **Gmail is still unauthenticated.** The 09-30 Phase 0 log says "third consecutive run." Phase 4 was skipped and 0 files were ingested. `pending/` has grown to **11** cards (3 new dated 09-30). `approved/` is unchanged at 449.
+3. **Leak-shape screen on the new 09-29/09-30 cards:** a grep for "Not yet established" / "have not read" / "Do not ingest above" matched none of them. The cumulative count stays at 19.
+4. PROP-2026-09-22-003's dated condition falls due after **10-03**.
+
+**Resolution routing:** nothing routed. This summary is the only write.
+
+**Open for Tom (otherwise unchanged):** reconnect Gmail, which blocks every decision. Make the INTEGRITY FLAG ruling, which closes WATCH-003. Rule on PROP-2026-08-14-033. Handle the triplet half of PROP-2026-09-28-001. Split the run log (**26th** recommendation, file ~6,480 lines).
+
+**Agent 16 Status:** Operational (sandbox shell available). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-01.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-02
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 not due until 2026-10-06; off-cadence trigger checked and not fired.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom** — one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (WATCH-001 tombstone, already tagged `[TRACKED-16]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still **20** files, latest `2026-09-24_decisions.md`. No later disposition on PROP-2026-07-19-001 can exist. Not counted as a check.
+
+**Findings (changes since 10-01 only):** `pending/` now holds **12** cards (up from 11; one new, `2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md`). No new decision file, consistent with Gmail still being unauthenticated upstream (not re-verified this run). PROP-2026-09-22-003's dated condition falls due after **10-03** — tomorrow's run should check it.
+
+**Tooling (fail-loud):** the sandbox shell failed this run ("No space left on device" on user creation). All checks were done with file tools (Glob/Grep) instead; folder counts above are from Glob listings, not `find`. `approved/` was not recounted. Leak-shape screen on the new Fredrickson card (grep for "Not yet established" / "have not read" / "Do not ingest above"): no matches; cumulative count stays at 19.
+
+**Resolution routing:** nothing routed. This summary is the only write.
+
+**Open for Tom (unchanged):** reconnect Gmail; INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; split the run log (**27th** recommendation — file is now ~771 KB, over the 256 KB single-read limit of the file tools).
+
+**Agent 16 Status:** Operational (degraded: no shell). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-02.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-02
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06 and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (the WATCH-001 tombstone, already tagged `[TRACKED-16: 2026-05-05]`, status superseded). 0 new.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Not counted as a check.
+
+**Environment note:** run used the lowercase `wiki/` path (the prompt's `Wiki/` capitalisation does not match the folder on disk). `device_bash` failed twice in this run's workspace, so the cloud shell and file tools were used instead. This was read-only apart from this summary.
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-02.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-03
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (the WATCH-001 tombstone, already tagged `[TRACKED-16: 2026-05-05]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Grep for `2026-07-19-001` / `beatitudes-week-two` matches only `2026-08-27_decisions.md` (the re-filing APPROVE), as before. Not counted as a check.
+
+**Census (shell `ls`):** `pending/` 12 (unchanged since 10-02; newest is still `2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md`), `approved/` 449, `denied/` 1, `needs_review/` 1.
+
+**PROP-2026-09-22-003 (Hoffman, Hopewell talk):** the talk is today (2026-10-03). Its condition is "after 10-03", so it cannot be checked meaningfully until **10-04 or later**. It is still **unheld**: no Channel 3/4 tracker exists, and Agent 16 has not opened a watch on its own authority (that is the ruling Tom was asked for). The proposal is already approved (`approved/2026-09-22_hoffman_hopewell-interface-we-call-reality.md`).
+
+**Housekeeping (fail-loud):** the log has **two** `RUN SUMMARY — 2026-10-02` blocks, from two separate runs. Left as is, since only Tom deletes run records. Split the run log (**28th** recommendation; file ~793 KB).
+
+**Resolution routing:** nothing routed. This summary is the only write.
+
+**Open for Tom (unchanged):** reconnect Gmail (not re-verified this run); INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; decide whether PROP-2026-09-22-003's post-talk check becomes a Channel 3 watch.
+
+**Agent 16 Status:** Operational (shell available). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-03.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-04
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 is not due until 2026-10-06, and its off-cadence trigger did not fire.**
+
+  Items checked: 0 due (WATCH-003 last checked 2026-09-29; count stays **14**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**, one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-06** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (`2026-04-21_carroll_singer-mindscape-351.md`, already tagged `[TRACKED-16]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |` at line start, vault-wide, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence trigger:** `review/archive/` still has **20** files, latest `2026-09-24_decisions.md`. Grep for `2026-07-19-001` / `beatitudes-week-two` matches only `2026-08-27_decisions.md`, as before. Not counted as a check.
+
+**Census (file-tool glob):** `pending/` **13** (+1 since 10-03: `2026-10-03_wolfram_history-qa-sept23-ai-expectations.md`), `needs_review/` 1. `approved/`/`denied/` not recounted this run.
+
+**PROP-2026-09-22-003 (Hoffman, Hopewell talk):** the talk date (10-03) has passed, so its post-talk condition is now checkable for the first time. It remains **unheld** — no watch exists and Agent 16 has not opened one on its own authority. If Tom wants it checked, a one-line Channel 3 WATCH-REQUEST is all that is needed.
+
+**Environment / fail-loud:** sandbox shell failed (`No space left on device`), so this run used file tools only; read-only apart from this summary. Watch list is ~777 KB — split the run log (**29th** recommendation).
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; decide whether PROP-2026-09-22-003 becomes a Channel 3 watch; Gmail reconnection not re-verified.
+
+**Agent 16 Status:** Operational (file tools only). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-04.*

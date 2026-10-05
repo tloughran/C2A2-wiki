@@ -1961,3 +1961,118 @@ Negatives: Hoffman, Friston, Arkani-Hamed and Kastrup had nothing new in the win
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 8 (oldest Fredrickson PROP-2026-09-24-001,
 5 days).
+
+## 2026-09-30 — C2A2 daily run (Wed, McGilchrist + Kastrup specialist day)
+
+**Phase 0.** Gmail connector invalidated ("needs to reconnect it from connector settings"). No decision emails
+checked. **Needs Tom to reconnect Gmail** — third consecutive run.
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, **OPEN=1** (Wright
+PROP-2026-08-14-033, unchanged). Naive filename scan again flagged ~330 phantom files (known trap; ledger is
+authoritative). **0 files ingested.**
+
+**Phase 2: 1 proposal written.** McGilchrist covered by specialist (PROP-2026-09-30-001, -002). Searched Kastrup,
+Levin, Friston, Carroll, Stump, Fredrickson, Arkani-Hamed, Hoffman, Wolfram.
+- PROP-2026-09-30-003, Carroll, Mindscape 369 "Gregg Caruso on Living Well Without Free Will" (2026-09-28).
+  Full transcript read. 3 candidates; the criminal-case and incarceration-history material is not mined.
+Rejected: Arkani-Hamed "Positive Singularities and Volumes in Scattering Amplitudes" (arXiv 2608.15606) is a thesis
+by E. Mazzucchelli, not by Arkani-Hamed. Levin Thoughtforms Life episodes with Vyshedskiy (09-12) and
+Bohorquez/Serruya (09-02): guest-led, description/chapter list only, no transcript retrieved, so not from Levin in
+substance. Wolfram 09-28 pure-math essay already carded 09-29. Kastrup, Friston, Stump, Fredrickson, Hoffman,
+Hawkins: nothing new in the window.
+
+**Phase 3.** `review/2026-09-30_review.html` (106,368 bytes, 10 proposals), opened via `open`.
+**Phase 4.** Skipped: Gmail unavailable.
+**Phase 5.** `review/2026-09-26_review.html` moved to `review/_superseded/`. 09-28, 09-29, 09-30 retained.
+**Phase 5.5.** OK: 6,813,190 bytes; cards 501, dates 135, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** Sandbox attempt failed (`mktemp: No space left on device`); re-run on the Mac: OK, 1611 signals,
+87 pairs, span to 2026-09-23, stale_days 7, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 10 (oldest Fredrickson PROP-2026-09-24-001,
+6 days).
+
+## 2026-10-01 — C2A2 daily run (Thu, Stump + Fredrickson specialist day)
+
+**Phase 0.** Gmail connector working again. `[C2A2-review-decision]` newer_than:3d: none. Unread search returned
+5 old threads, all already processed (09-23 thread 1a0ceeda8b2ac226 archived in 2026-09-24_decisions.md and in
+decision_emails.json); marked the 09-23 message read. No moves.
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+
+**Phase 2: 0 proposals.** Fredrickson covered by specialist (PROP-2026-10-01-001); no Stump specialist card.
+Searched Stump, Levin, Friston, Kastrup, Hoffman, Wolfram, Carroll, Arkani-Hamed, Hawkins. All hits already carded
+(Levin bioRxiv 09-03 pair, Levin "beyond excitable cells" 04-20, Friston artificial reasoning, Wolfram 09-28 essay,
+Arkani-Hamed Jul/Aug papers). Mindscape October AMA not yet posted (newest AMA 09-14).
+
+**Phase 3.** `review/2026-10-01_review.html` (115,722 bytes, 12 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-3299379318155793219).
+**Phase 5.** Nothing older than 3 days (09-28..10-01 retained).
+**Phase 5.5.** OK: 6,819,392 bytes; cards 502, dates 136, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 8, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 12 (oldest Fredrickson PROP-2026-09-24-001,
+7 days).
+
+## 2026-10-02 — C2A2 daily run (Fri, Carroll + Arkani-Hamed specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: 4 old threads (07-23, 04-27 x2, 04-08), all already
+archived in review/archive/. No moves; left unread (not processed this run).
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+
+**Phase 2: 0 proposals.** No specialist cards today. Searched Carroll (Mindscape newest = 369 Caruso, carded 09-30;
+October AMA not yet posted), Arkani-Hamed (cosmohedron, hydrotope, correlators all carded), Levin, Friston, Kastrup:
+nothing new. arXiv author page fetch rate-limited (HTTP 429).
+
+**Phase 3.** `review/2026-10-02_review.html` (115,722 bytes, 12 proposals), opened via Desktop Commander `open`.
+**Phase 5.** `review/2026-09-28_review.html` moved to `review/_superseded/`. 09-29..10-02 retained.
+**Phase 5.5.** OK: 6,819,392 bytes; cards 502, dates 136, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 9, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+Note: Linux sandbox bash failed (No space left on device); all scripts run on the Mac via Desktop Commander.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 12 (oldest Fredrickson PROP-2026-09-24-001,
+8 days).
+
+## 2026-10-03 — C2A2 daily run (Sat, Wolfram specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: same 4 old threads (07-23, 04-27 x2, 04-08), all already
+archived. No moves; left unread.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Wolfram covered by specialist (PROP-2026-10-03-001). Searched Carroll (no October episode
+indexed yet), Levin, Kastrup, Friston: nothing new.
+**Phase 3.** `review/2026-10-03_review.html` (121,877 bytes, 13 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-7938169242878624079).
+**Phase 5.** `review/2026-09-29_review.html` moved to `review/_superseded/`. 09-30..10-03 retained.
+**Phase 5.5.** OK: 6,823,734 bytes; cards 503, dates 137, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 10, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 13 (oldest Fredrickson PROP-2026-09-24-001,
+9 days).
+
+## 2026-10-04 — C2A2 daily run (Sun, no orchestrator-schedule specialist; Rohr/Wright cards present)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: same 4 old threads (07-23, 04-27 x2, 04-08), all already
+archived. No moves; left unread.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Rohr (PROP-2026-10-04-001, -003) and Wright (PROP-2026-10-04-002) already carded today.
+Searched Carroll (podcast page: newest still 369 Caruso, carded), Levin, Kastrup, Friston, McGilchrist, Hoffman,
+Stump: nothing new (Stump 11-13 Gordon lecture and Hoffman 11-13 IONS talk are future events). arXiv author page
+fetch rate-limited (HTTP 429).
+**Phase 3.** `review/2026-10-04_review.html` (139,633 bytes, 16 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-251230370952003541).
+**Phase 5.** `review/2026-09-30_review.html` moved to `review/_superseded/`. 10-01..10-04 retained.
+**Phase 5.5.** OK: 6,840,888 bytes; cards 506, dates 138, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 11, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+Note: Linux sandbox bash failed (useradd: No space left on device); all scripts run on the Mac via Desktop Commander.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 16 (oldest Fredrickson PROP-2026-09-24-001,
+10 days).

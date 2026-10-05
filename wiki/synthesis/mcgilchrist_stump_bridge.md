@@ -64,3 +64,18 @@ If the transcendentals are real-in-being (Stump) but disclosed-only-through-righ
 **The reason to hold this loosely.** The proposal's evidence base is the title, venue, and role — the address itself is a nine-minute artifact nobody in the network has transcribed. Everything above is a claim about what the *combination of positions* implies, not about what McGilchrist said. It should be treated as a hypothesis to check against the transcript, and the Loughran agent has been told not to build architecture on it until then.
 
 **Open question the wiki cannot yet answer.** If right-hemisphere attention is the formative target, what would count as evidence that a graduate has it? McGilchrist's program is rich in diagnosis of its absence and thin on positive criteria for its presence. Stump's maturity criterion has the same shape — clear about what it is not, underdetermined about how to recognize it. Two traditions sharing a blind spot in the same place is itself a finding.
+
+---
+
+## Forms in a space or forms in matter
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space.md` (0 backlinks).
+
+**Why it sits here:** The same Levin and McGilchrist conversation (PROP-2026-09-30-001).
+
+**Synthesis claim.** A Platonic space of forms against Aristotelian-Thomist forms-in-matter is probably where this conversation runs, and McGilchrist's "whole before parts" might sit on either side of it. Stump's hylomorphism would take the position that forms are not available apart from the matter they inform, which is exactly what Levin's ingression framing does not assume.
+
+**Open question the wiki cannot yet answer:** Is McGilchrist's priority of the whole a Platonic claim about a space of forms or a hylomorphic claim about wholes that exist only in their parts, and can the recording settle it?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-30_mcgilchrist_levin-conversation-2-platonic-space]]

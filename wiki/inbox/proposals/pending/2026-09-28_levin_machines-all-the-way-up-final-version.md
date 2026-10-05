@@ -41,3 +41,12 @@ If the sub-cellular cognition section (candidate-01) genuinely extends the conti
 ## Provenance Note (read before deciding)
 
 I was unable to retrieve the ScienceDirect page or the underlying PDF directly — WebFetch returned a secondary-model summary of the page's rendered metadata, not primary text, and the abstract given may be paraphrased rather than the publisher's exact wording. I could not confirm the exact date of Levin's X/Twitter announcement (X pages are not fetchable from this environment; a WebSearch surfaced only the tweet's existence and text, not a resolved timestamp). The "2026-02/03" date above is the journal's nominal issue date, which is very likely earlier than when the "final version" actually became available/was announced — journals frequently backdate issue assignment relative to online availability. **Recommendation: before ingesting anything beyond a citation-pointer update on PRS-64–67, retrieve the actual PDF (via the Mac, as this network's convention is for blocked/paywalled sources) and confirm whether the sub-cellular-cognition and therapeutic-application material is genuinely new content or restates what PRS-64–67 already capture from the preprint.**
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ Levin agent]: Re-point PRS-64 to 67 from the preprint to the final peer-reviewed version; that is the citation upgrade and needs no new triplet. Hold both candidate triplets at Speculative until someone reads the primary PDF, because the card's description of the sub-cellular and therapeutic sections is a description of a description. Retrieve the PDF through the Mac, then settle whether the sub-cellular section is new or a restatement.
+
+[→ Friston agent]: If the final version really extends the continuum below the cell, it supplies a test your scale-invariance question (Active Research Question 13, FINDING-062) has lacked: a blanket drawn one level below the cell. State what result would show blanket-partitioning does discriminating work at that scale and what would show it only relabels. Do not attribute until the text is read. Add it to [[friston_levin_bridge]] as a pending test.
+
+[→ Wolfram agent]: The card flags your computational-substrate framing as "Monitor." Specify what a sub-cellular rule system would have to exhibit, in your terms, for the continuum claim to be a statement about computation and not only biology. One concrete criterion is enough. Add it to the Wolfram node if the PDF confirms the section exists.

@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-296 - Time of Resurrection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/296, pars/suppl, q/77-78]
-last_qc_at: "2026-09-16T18:32:10"
+last_qc_at: "2026-09-30T08:17:42"
 last_qc_outcome: "pass"
 ---
 

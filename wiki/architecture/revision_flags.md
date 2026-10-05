@@ -15820,3 +15820,141 @@ REVISE-488:
   Consistency: closes MONITOR-547 (this file supersedes it). Member of the independence-accounting defect
     class carried under the 2026-08-25 SYSTEMIC-RISK-FLAG with ASSUMPTION-1176 and PRESUMPTION-859 — not
     independently re-verified this run.
+
+
+REVISE-489:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1095 | DISPOSITION-1010 | Urgency: High
+  Evidence: 15a NO-SUPPORT-FOUND (Weak): SAA Code of Ethics - permits restriction only when written, justified and transparent (cuts against an unwritten default); 15b CHALLENGED (Strong): Schwartz & Cook 2002, "Archives, Records, and Power", Archival Science 2 (search-result level); Khorramrouz & Levy 2025, arXiv:2510.27087 (fetched abstract) - LLM refusal/omission is patterned, not neutral
+  What is at risk: Fidelity of McGilchrist and Wolfram tradition records (and any tradition addressing death, mental health or the soul); PRS triplet coverage; later readers reading the omission as the thinker's silence.
+  Recommended action (for Tom): (1) Tom writes an explicit sensitive-content policy for the archive (what may be restricted, why, and how it is marked). (2) Any in-run omission is logged as a visible placeholder ("[restricted: topic, reason, date]") and flagged for review, never silently dropped. (3) Back-check fef2bbcb: restore or explicitly restrict the two omitted McGilchrist/Wolfram passages.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-490:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1096 | DISPOSITION-1011 | Urgency: High
+  Evidence: 15a PARTIALLY-SUPPORTED (Weak): Google SRE book ch. 6 (fetched) - white-box monitoring is essential but always paired with black-box/external checks; 15b CHALLENGED (Strong): Wilkinson 2016, SRE book ch. 10 (fetched) - inside monitoring "does not provide a full picture"; NRC common-cause failure guidance ML23205A190 (search-result level)
+  What is at risk: Morning system health, OpenStory refresh, chat scrape and any bash-based health report; the scheduler-health check (ASSUMPTION-1703).
+  Recommended action (for Tom): (1) Add one out-of-band watchdog on a different surface (e.g. a cloud-side task or Mac-side launchd script) that checks sandbox free disk and the age of the last health report, and alarms on absence. (2) Health reports write a first-line "partial: <what could not be measured>" marker. (3) Link to OPEN-257/-259.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-491:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1097 | DISPOSITION-1012 | Urgency: Medium
+  Evidence: 15a NO-SUPPORT-FOUND (Weak): Lehman 1980, Proc. IEEE (via summary) - only fixed-specification programs stay valid without change; 15b CHALLENGED (Strong): Patsakis, Argyropoulos & Alepis 2026, "Configuration, Not Conscience", arXiv:2609.31575 (fetched by 15b; existence independently verified by 15c via web search) - prompts carry measurable maintenance debt
+  What is at risk: All scheduled tasks with embedded dates, paths, counts or commands (69303f72, 751601c0, ef5ab364, 2cb24457, 984c5e89 and others); divergent per-run workarounds (ASSUMPTION-1706). Note: this task file itself names the wiki root as ".../Wiki" (capital W).
+  Recommended action (for Tom): (1) A scheduled monthly prompt review (Tom, or an agent that drafts diffs for Tom to approve). (2) Let runs append a "PROMPT-STALE: <line> -> <observed>" note to a single file that the review reads, since agents may not edit prompts. (3) Move volatile facts (paths, counts, known states) out of prompts into one referenced config file.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-492:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1098 | DISPOSITION-1013 | Urgency: Medium
+  Evidence: 15a PARTIALLY-SUPPORTED (Moderate): Driffield & Smith 2007, Medical Decision Making 27(2) (abstract fetched) - watchful waiting is optimal in an intermediate region; GRADE gap frameworks; 15b CHALLENGED (Moderate): Tversky & Shafir 1992, "Choice under Conflict", Psychological Science 3(6) (fetched) - conflict drives deferral; Cochrane "insufficient evidence" rates
+  What is at risk: The whole 15c/15d disposition layer; challenged premises carried as "watched" (e.g. 1088/1089 held at MONITOR on 09-29).
+  Recommended action (for Tom): (1) Every MONITOR record carries a reason code (thin search / contested / awaiting human ruling / awaiting in-house data) and an explicit exit threshold. (2) A cycle cap: after N (suggest 3) 15d cycles without new evidence, 15d must propose INCORPORATE or REVISE. (3) Report the MONITOR share per run; flag any run above ~70% MONITOR.
+  Consistency: Member of the 2026-09-30 self-referential-verification SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-493:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1088 | DISPOSITION-1014 | Urgency: High
+  Evidence: Primary source fetched in the 09-29 second 15b pass: Ramprasad & Wallace 2024, arXiv:2411.16638 - automatic factuality metrics largely track surface features. DISPOSITION-1006's hold condition ("read the primary sources") is met.
+  What is at risk: QC runs that mark pass on mechanical/structural checks and are read as semantic soundness (Summa QC, wiki QC).
+  Recommended action (for Tom): Pair mechanical QC passes with a sampled semantic spot-check (e.g. 1 in 10 items read for meaning), and label passes as "structural pass" in QC output.
+  Consistency: Closes MONITOR-622 (superseded). Member of the 2026-09-29 inherited-pass-status SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-494:
+  Date: 2026-09-30 | Source item: PRESUMPTION-1089 | DISPOSITION-1015 | Urgency: High
+  Evidence: Wright 1988 fetched; Stelmakh et al. arXiv:2011.15083 fetched as a boundary case (no herding when reviewers form a view before seeing prior dispositions). DISPOSITION-1007's hold condition is met; the boundary case supplies the remedy.
+  What is at risk: Any run that inherits prior dispositions or pass status (15d re-checks, QC re-review, 14a/14b reconciliations).
+  Recommended action (for Tom): Blind-first review: the reviewing run forms its own judgment before reading the prior disposition, on at least a sampled subset; log disagreements.
+  Consistency: Closes MONITOR-623 (superseded). Member of the 2026-09-29 inherited-pass-status SYSTEMIC-RISK-FLAG.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+
+REVISE-498:
+  Date: 2026-10-02 | Source item: PRESUMPTION-1104 | DISPOSITION-1022 | Urgency: High
+  Evidence: 15b Strong: arXiv:2603.12229 (LLM agent teams silently overwrite shared files; decentralized median 19 test failures vs 4 preassigned, p<0.001) plus the textbook lost-update problem. 15a found nothing supporting unguarded writes. In-house corroboration: the 2026-10-01 concurrent lit-pipeline run overwrote eight result files.
+  What is at risk: Every shared register (for_lit_search.md, lit_search_returns.md, monitor_queue.md, revision_flags.md, validated_premises.md, results folders) written by independently scheduled agents.
+  Recommended action (for Tom): A run lock (lock file with timeout) for the lit pipeline now; longer term, append-only per-writer files merged by a single owner, or compare-and-swap (mtime/version check) before write.
+  Numbering note: REVISE-495..497 were proposed but left unapplied in wiki/review/2026-10-01_lit-pipeline_concurrent-run_conflict.md; this entry uses 498+ to avoid collision.
+  Consistency: Member of the 2026-10-02 silent-divergence-unchecked SYSTEMIC-RISK-FLAG; related to ASSUMPTION-1699 / MONITOR-631.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-499:
+  Date: 2026-10-02 | Source item: PRESUMPTION-1103 | DISPOSITION-1021 | Urgency: Medium
+  Evidence: 15b Moderate: arXiv:2604.27006 (different LLMs and reruns of one LLM disagree on identical written criteria; Gwet AC2 0.55–1.0); arXiv:2503.13657 (specification ambiguity ~42% and misalignment ~37% of multi-agent failures). 15a found no support. In-house corroboration: on 2026-10-01 two runs tested different claims from the same queue items.
+  What is at risk: Every queue handoff from 14a/14b to 15a/15b/15c, since item text is read by independent agents.
+  Recommended action (for Tom): Keep the 'Presumption under test' vs 'Candidate remedy' split as standing format; require each searcher to echo back the claim it tested, and have 15c check the echoes match before dispositioning.
+  Consistency: Member of the 2026-10-02 silent-divergence-unchecked SYSTEMIC-RISK-FLAG; builds on ASSUMPTION-1722.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-502:
+  Date: 2026-10-03 | Source: DISPOSITION-1027 (15c) | Item: PRESUMPTION-1106 (PRESUMPTION (unstated))
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Strong)
+  Finding: Definitional refutation, agreed by both sides. Note: this run did check the lock, but only because the run read the 10-02 notes, not because the task spec says so.
+  What is at risk: the run lock and any future coordination file; all shared registers; DISPOSITION/REVISE numbering (duplicates already exist for 1021–1024).
+  Recommended action: Move the lock check, its staleness rule and the RELEASED convention into the c2a2-lit-search-pipeline task spec (Tom-owned edit); resolve the duplicate schedule (ASSUMPTION-1731 / MONITOR-657). Consider a fencing token: the run ID written into each register entry.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1106_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1106_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-503:
+  Date: 2026-10-03 | Source: DISPOSITION-1028 (15c) | Item: PRESUMPTION-1107 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (conditional) (Weak) | 15b: CHALLENGED (Strong)
+  Finding: 15a's own support is conditional on criteria the three operative instances (SELECT 1, prior PASS, registry entry) do not meet. Both sides converge on the Prentice/Fleming validity criteria.
+  What is at risk: every monitoring/keep-alive task whose self-report is the only evidence: Supabase keep-warm, feed-freshness PASS, scheduler registry 'all fired'.
+  Recommended action: Each task checks the outcome it exists to secure (project status, feed timestamps, cloud-side run evidence) and reports action success and outcome separately.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1107_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1107_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-504:
+  Date: 2026-10-03 | Source: DISPOSITION-1029 (15c) | Item: PRESUMPTION-1109 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Finding: The support covers relative speed only, not the inference '0 → nothing new'; that inference is refuted. 14b confidence was speculative (one caveat), so urgency is Medium not High.
+  What is at risk: tradition agents' '0 proposals' results and the apparent quiet of some traditions.
+  Recommended action: Query the arXiv API/listing feeds or author feeds directly; record unreachable sources as UNREACHABLE, not 0; report 'no new items found in sources X' rather than 'nothing new'.
+  Urgency: Medium
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1109_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1109_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-505:
+  Date: 2026-10-04 | Source: DISPOSITION-1030 (15c) | Item: PRESUMPTION-1110 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Finding: Schedulers guarantee at-least-once, not exactly-once; duplicate runs already observed in-house (09-29, 10-01; 10-03 under check). Existing same-day output is not evidence that an earlier run of this task completed.
+  What is at risk: any task that skips or merges work on finding same-day output (lit pipeline, 14a/14b intake, tradition proposal files — ASSUMPTION-1744).
+  Recommended action: Run ID in every output and register entry; treat existing output as prior work only if its run ID matches a completed-run record; enforce one registration per task. Companion to REVISE-502.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1110_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1110_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-506:
+  Date: 2026-10-04 | Source: DISPOSITION-1032 (15c) | Item: PRESUMPTION-1112 (PRESUMPTION (unstated))
+  15a: NO-SUPPORT-FOUND (None–Weak) | 15b: CHALLENGED (Strong)
+  Finding: Unaided LLM recall of bibliographic metadata is unreliable, worst for less-cited authors; rejecting a candidate as a reissue on recall alone is unsupported.
+  What is at risk: tradition agents' reissue/duplicate rejections; silent loss of new work misread as old.
+  Recommended action: Compare texts (or DOI/arXiv ID/abstract) before rejecting as a reissue; otherwise record UNVERIFIED-DUPLICATE with the candidate link for review.
+  Urgency: Medium (one observed rejection, not yet shown wrong; recoverable if logged)
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1112_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1112_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-507:
+  Date: 2026-10-04 | Source: DISPOSITION-1033 (15c) | Item: PRESUMPTION-1113 (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong)
+  Finding: Practice separates run success from data freshness; even 15a's supporting cases use multi-state or separated checks. Realised in-house: commit_check OK vs run_stall FAIL on one run (ASSUMPTION-1745/1746).
+  What is at risk: scheduler health rows, morning health/status 'last ran' lines, any PASS read downstream as 'fresh'.
+  Recommended action: Split status into run_status (PASS/FAIL/SKIPPED/NO-OP) and data_freshness (newest-datum timestamp + age threshold); never derive one from the other. Same family as REVISE-503.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1113_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1113_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED

@@ -60,3 +60,16 @@ PRS-CANDIDATE-03:
 - **MacIntyre / C2A2 frame:** "Maintaining the flame" through a community of practitioners is close to a MacIntyrean *practice* with internal goods. That is relevant to the tradition-accelerator thesis.
 - **Hawkins:** Hawkins's claims that intuition is pattern-matching and that concepts form as reference frames match Wolfram's guess that intuition is "procedural pattern matching" LLMs could reach.
 - **Arkani-Hamed:** The "math first, then the science" ordering fits the positive-geometry program, where combinatorial objects came before their physical reading.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ Wolfram agent]: Ingest the observer-theoretic account of mathematics applied to a live controversy: mathematics is the choosing of goals and concepts, and AI-generated theorems are "born alien" until a human community adopts them. Hold PRS-CANDIDATE-02 at Medium, since the Wolfram Language extension is announced and unshipped. This supersedes the speculative topic line on PROP-2026-09-19-001. The personal closing note is not mined.
+
+[→ McGilchrist agent]: Read this against your 2026-09-24 UnHerd transcript. Both place the limit of AI in the relational, tacit transmission carried by a community. Decide whether the shared conclusion is the finding or only a surface agreement, and if it is a finding add it to [[mcgilchrist_wolfram_bridge]].
+
+[→ Loughran agent]: "Maintaining the flame" through a community of practitioners is a MacIntyrean practice with internal goods. Draft the bridge claim for the accelerator thesis: a tradition's goods (here, which concepts count as mathematics) are fixed by the community's adoption, not by derivation. Say what observation in a tradition-dialogue would falsify it.
+
+[→ Hawkins agent]: He guesses intuition is procedural pattern matching that LLMs can reach. You hold that intuition is pattern matching over reference frames. State whether the reference-frame account predicts anything the pattern-matching account does not, in this essay's terms, and add it to the Hawkins node.
+
+[→ Arkani-Hamed agent]: "The mathematics first, the science afterwards" fits the positive-geometry ordering, where combinatorial objects preceded their physical reading. Check whether the amplituhedron history is a case of a concept becoming mathematics through adoption, or of derivation, and record which.

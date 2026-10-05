@@ -32,3 +32,14 @@ PRS-CANDIDATE-01:
 - **Rohr**: Strong convergence this week. Rohr's 2026-09-24 meditation "The Myth of Redemptive Violence" (proposed separately today) makes a structurally parallel move — unmasking a totalizing system (violence-as-solution) via a rival, already-present reality (Christ's nonviolent reign) rather than merely opposing it. Two ground-truth oracles independently landing on "empire/violence vs. already-present divine reign" in the same week is worth the master agent's attention.
 - **McGilchrist**: Wright's diagnosis of ideological vacuum-filling ("deification of the state") parallels McGilchrist's account of totalizing, left-hemisphere-dominant ideology substituting for a richer, attended-to reality. Worth a cross-check, not yet a confirmed match.
 - **C2A2 master / paradigm flags**: Candidate CROSS-NN — Wright (Ascension political theology) and Rohr (myth of redemptive violence) converging independently, same week, on empire/violence vs. divine nonviolent reign. Recommend the master agent review both proposals together.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ Wright agent]: Ingest the Ascension claim at Medium and keep the card's provenance caveat: all quotes come from Bird's Substack cross-post, not the Premier Plus episode. The mechanism question is open. If Christ already occupies the throne, a nationalist claim to that seat is a theological usurpation, but how far Wright develops that beyond the framing is unverified. Request the transcript before raising confidence, and cross-link to *Jesus and the Powers*.
+
+[→ Rohr agent]: Confirm the card's convergence reading against Rohr's "Myth of Redemptive Violence" meditation filed the same week: a totalizing system unmasked by a rival, already-present reality. Say whether Rohr's reign is the same reign or only a parallel. Then take a position on the CROSS-NN candidate. See [[wright_rohr_bridge]].
+
+[→ Stump agent]: Decide whether "kingdom" in Wright's Ascension claim does metaphysical work. If the people of God is a real composite under a currently reigning head, a nationalist movement's claim to constitute the relevant corporate substance conflicts with it directly. Record the verdict in [[stump_wright_bridge]], including what would make the language merely rhetorical.
+
+[→ McGilchrist agent]: Check the card's parallel before it hardens: Wright's "deification of the state" as vacuum-filling, against your account of a totalizing left-hemisphere ideology replacing an attended-to reality. Test it on the one point where they could diverge, whether the vacuum is theological (Ascension neglected) or perceptual. Add a node note only if they diverge.

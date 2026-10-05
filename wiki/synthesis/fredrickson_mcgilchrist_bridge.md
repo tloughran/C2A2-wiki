@@ -23,3 +23,18 @@
 **Open question the wiki cannot yet answer:** Does the wellbeing cost of unemployment survive when income is replaced and work is not? That is the counterfactual the essay implicitly denies, and the answer decides whether "leisure" was ever the live alternative.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-02_mcgilchrist_can-you-still-be-human]]
+
+---
+
+## A categorizer that predicts what it cannot apprehend
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-24_fredrickson_gpt-measures-spirituality-from-text.md`, `inbox/proposals/pending/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript.md` (0 backlinks).
+
+**Why it sits here:** The Fredrickson card (GPT-4 scoring spirituality) and the McGilchrist UnHerd transcript (AI as simulacrum of relationship) both bear on one question: what a language model can and cannot register about interior life. Both thinkers are above 0.55 on both pages.
+
+**Synthesis claim.** If McGilchrist is right that a left-hemisphere-style system categorizes explicit markers without apprehending the whole, the Fredrickson result shows how far categorization alone predicts behavior and mental health. The finding that GPT-4 scores predict outcomes beyond self-report makes the categorizer's reach larger than McGilchrist's claim permits, or shows that the markers carry more of the whole than he assumes. Either way his claim becomes a measurable boundary instead of an intuition.
+
+**Open question the wiki cannot yet answer:** If explicit religious and spiritual vocabulary is stripped from the essays, do GPT-4 spirituality scores keep their incremental validity for meaning in life and depression, and if they do, what is being read?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-24_fredrickson_gpt-measures-spirituality-from-text]] [[2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript]]

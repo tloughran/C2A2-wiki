@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-05, Confidence Medium: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift. Grades on these four lines and on Friston PRS-04 were added 2026-09-17 from the register; the records were cited ungraded)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-09-25T22:23:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-10-04T06:17:13"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 182 — Magnanimity (Contemporary)
@@ -42,7 +42,7 @@ Aiming high is praised and feared in the same breath, because our paradigm of "a
 
 **McGilchrist** distinguishes the two largenesses. In his key, true magnanimity belongs to the right hemisphere's reverent openness to the great — the capacity to be drawn out of oneself by something worthy — whereas grandiosity is the left hemisphere's grasp at status and the explicit token. The great-souled person, on this reading, is *less* self-occupied than average, not more: their attention is on the great good, not on their own standing relative to it.
 
-**Stump** enters as Thomistic interlocutor with real weight here. In Tom's PRS-form record of her work (PRS-09, virtue as cooperative causality), Aquinas's virtues are not stable traits but powers of the soul transformed toward their ends, ultimately by grace. Magnanimity on this account is not self-generated confidence but a capacity *enlarged* — which sets up the theological reframe directly.
+**Stump** enters here. In Tom's PRS-form record of her work (PRS-09, virtue as cooperative causality), Aquinas's virtues are not stable traits but powers of the soul transformed toward their ends, ultimately by grace. Magnanimity on this account is not self-generated confidence but a capacity *enlarged* — which sets up the theological reframe directly.
 
 **Wright** grounds the enlargement. In the Pauline corpus the truly great calling is *vocation*: the self stretched toward great things because *called* to them, with the honor that follows referred to the One who gives both the gift and the call. Greatness, on this reading, is not self-assertion but commission — which is why Paul can speak of laboring "more than all of them" in the same breath as "yet not I." **Rohr** gives the contemplative form: the True Self is great-souled precisely because it is anchored in union rather than ego; its largeness is received, not manufactured, and therefore needs no defense and seeks no honor for itself.
 

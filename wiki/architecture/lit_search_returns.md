@@ -49356,3 +49356,764 @@ PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Item type: PRESUMP
   15a return: NO-SUPPORT-FOUND (Weak) — Literature-lane: anchoring / path dependence in sequential review; error propagation in audit trails. File: lit_search_results/for/PRESUMPTION-1089_for.md
   15b return: CHALLENGED (Moderate). File: lit_search_results/against/PRESUMPTION-1089_against.md
   DISPOSITION-1007: MONITOR (priority High) → MONITOR-623
+
+
+## 2026-09-30 — 15a / 15b returns and 15c dispositions (scheduled task `c2a2-lit-search-pipeline`)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1700
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Lakatos 1970/78 (programme as unit of appraisal; search-result level); Wuchty, Jones & Uzzi 2007, Science 316 (team production dominance)
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1700_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from 2cb24457 and f8e46eda. → 15a: searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1700
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: PARTIALLY-CHALLENGED | Strength: Weak
+  Key source: Cronin 2001, "Hyperauthorship", JASIST 52(7) (search-result level); SEP "Imre Lakatos" critiques on programme individuation
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1700_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from 2cb24457 and f8e46eda. → 15b: searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1702
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: SUPPORTED | Strength: Strong
+  Key source: Google SRE book ch. 6 (fetched); heartbeat/dead-man's-switch practice (OneUptime 2026, fetched); Chandra & Toueg 1996 (background)
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1702_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from fef2bbcb task text. → 15a: searched for supporting literature | Current status: SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1702
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Wilkinson 2016, SRE book ch. 10 "Practical Alerting" (fetched) - practice distinguishes the cases by probing the upstream directly; a rebuild on the same stale input still looks fresh
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1702_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Item type: ASSUMPTION (stated) | Transform: 14a: Extracted from fef2bbcb task text. → 15b: searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1095
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: NO-SUPPORT-FOUND | Strength: Weak
+  Key source: SAA Code of Ethics - permits restriction only when written, justified and transparent (cuts against an unwritten default)
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1095_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from fef2bbcb. → 15a: searched for supporting literature | Current status: NO-SUPPORT-FOUND
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1095
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Strong
+  Key source: Schwartz & Cook 2002, "Archives, Records, and Power", Archival Science 2 (search-result level); Khorramrouz & Levy 2025, arXiv:2510.27087 (fetched abstract) - LLM refusal/omission is patterned, not neutral
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1095_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from fef2bbcb. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1096
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Google SRE book ch. 6 (fetched) - white-box monitoring is essential but always paired with black-box/external checks
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1096_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 7886254b, b5f437f2, 6f1262b0. → 15a: searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1096
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Strong
+  Key source: Wilkinson 2016, SRE book ch. 10 (fetched) - inside monitoring "does not provide a full picture"; NRC common-cause failure guidance ML23205A190 (search-result level)
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1096_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 7886254b, b5f437f2, 6f1262b0. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1097
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: NO-SUPPORT-FOUND | Strength: Weak
+  Key source: Lehman 1980, Proc. IEEE (via summary) - only fixed-specification programs stay valid without change
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1097_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred across 7+ scheduled tasks. → 15a: searched for supporting literature | Current status: NO-SUPPORT-FOUND
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1097
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Strong
+  Key source: Patsakis, Argyropoulos & Alepis 2026, "Configuration, Not Conscience", arXiv:2609.31575 (fetched by 15b; existence independently verified by 15c via web search) - prompts carry measurable maintenance debt
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1097_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred across 7+ scheduled tasks. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1098
+  Search direction: FOR (confirmatory) — Agent 15a
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Driffield & Smith 2007, Medical Decision Making 27(2) (abstract fetched) - watchful waiting is optimal in an intermediate region; GRADE gap frameworks
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1098_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 61461c72 dispositions. → 15a: searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1098
+  Search direction: AGAINST (disconfirmatory) — Agent 15b
+  Result: CHALLENGED | Strength: Moderate
+  Key source: Tversky & Shafir 1992, "Choice under Conflict", Psychological Science 3(6) (fetched) - conflict drives deferral; Cochrane "insufficient evidence" rates
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1098_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: 14b: Inferred from 61461c72 dispositions. → 15b: searched for challenging literature | Current status: CHALLENGED
+
+## 15c — dispositions, 2026-09-30
+
+DISPOSITION-1008:
+  Date: 2026-09-30
+  Item: ASSUMPTION-1700
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Both sides are analogical: Lakatos makes the programme the unit of appraisal but contrasts it with the single theory, not the single author; the challenge (programme individuation is contested; hyperauthorship dilutes endorsement) is weak and practical.
+  Disposition: MONITOR → MONITOR-629
+  Reasoning: A stated assumption resting on analogy, with the real decision a governance ruling (OPEN-187) that literature cannot make. Not held for thin evidence: held because the exit is a human ruling.
+  What would change the disposition: EXIT CONDITION (explicit, per PRESUMPTION-1098): Tom rules on OPEN-187 (does team/programme output count as the thinker's tradition?). A ruling for programme -> INCORPORATE with the endorsement caveat (label team output as programme, not author, voice); a ruling for author-only -> REVISE the Hawkins-agent precedent. Max 2 further 15d cycles before escalating to revision_flags as an unruled governance item.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1009:
+  Date: 2026-09-30
+  Item: ASSUMPTION-1702
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong support that the two states are indistinguishable from the artifact alone; the moderate challenge does not dispute that, it narrows the remedy: a standing rebuild is not sufficient unless the liveness signal comes from the upstream itself.
+  Disposition: INCORPORATE → PREMISE-221
+  Reasoning: Strong support plus a challenge that refines rather than refutes (heuristic: strong + refining challenge -> INCORPORATE with caveat). Consistent with and extends PREMISE-220 (unchanged reading cannot distinguish stable from frozen), PREMISE-086 (alarm on age; monitor-of-monitor) and PREMISE-053 (scheduling necessary, not sufficient). No contradiction found.
+  Validated premise statement: A frozen derived artifact and a genuinely quiet upstream cannot be distinguished from the artifact alone; a standing liveness signal is required. CAVEAT (from 15b): a scheduled rebuild that reads the same possibly-stale input does not supply that signal - the signal must originate at or probe the upstream (source-side heartbeat, last-event timestamp, or direct collection check), and the same rule applies to human-input channels (OPEN-259).
+  Confidence: Moderate
+  Applicable to: Wiki daily run Phase 5.6 (PRS signal staleness), OpenStory/connectome freshness readers, human-input channels (chat scrape, Gmail intake). Extends PREMISE-220, PREMISE-086, PREMISE-053.
+  Re-check cadence: Quarterly (15d)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+DISPOSITION-1010:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1095
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support; even the nearest supportive source (SAA ethics) requires omissions to be written and justified. Strong challenge: model-default omissions are patterned and concentrate on death, grief and mental health.
+  Disposition: REVISE → REVISE-489
+  Reasoning: Presumption + strong challenge + no support -> REVISE/High per heuristic. The designers did not know the archive had a content policy at all.
+  What is at risk: Fidelity of McGilchrist and Wolfram tradition records (and any tradition addressing death, mental health or the soul); PRS triplet coverage; later readers reading the omission as the thinker's silence.
+  Recommended action: (1) Tom writes an explicit sensitive-content policy for the archive (what may be restricted, why, and how it is marked). (2) Any in-run omission is logged as a visible placeholder ("[restricted: topic, reason, date]") and flagged for review, never silently dropped. (3) Back-check fef2bbcb: restore or explicitly restrict the two omitted McGilchrist/Wolfram passages.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1011:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1096
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Support is only for co-located monitoring as one half of a pair; nothing supports it alone. Strong challenge from SRE and common-cause-failure practice, and the failure has already been realized (three monitors silenced by the same full disk; recurred during this run - the sandbox home disk was at 100%).
+  Disposition: REVISE → REVISE-490
+  Reasoning: Presumption + strong challenge + realized failure -> REVISE/High. PREMISE-086 already requires an independent monitor-of-monitor; this item shows that condition is unmet in practice.
+  What is at risk: Morning system health, OpenStory refresh, chat scrape and any bash-based health report; the scheduler-health check (ASSUMPTION-1703).
+  Recommended action: (1) Add one out-of-band watchdog on a different surface (e.g. a cloud-side task or Mac-side launchd script) that checks sandbox free disk and the age of the last health report, and alarms on absence. (2) Health reports write a first-line "partial: <what could not be measured>" marker. (3) Link to OPEN-257/-259.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1012:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1097
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: No support; Lehman's laws predict exactly this decay for prompts embedding paths, dates and counts. Strong challenge including a direct 2026 study of system prompts as configuration with maintenance debt.
+  Disposition: REVISE → REVISE-491
+  Reasoning: Presumption + strong challenge -> REVISE. Urgency Medium rather than High: the cost is recurring and divergent, but each run currently works around it.
+  What is at risk: All scheduled tasks with embedded dates, paths, counts or commands (69303f72, 751601c0, ef5ab364, 2cb24457, 984c5e89 and others); divergent per-run workarounds (ASSUMPTION-1706). Note: this task file itself names the wiki root as ".../Wiki" (capital W).
+  Recommended action: (1) A scheduled monthly prompt review (Tom, or an agent that drafts diffs for Tom to approve). (2) Let runs append a "PROMPT-STALE: <line> -> <observed>" note to a single file that the review reads, since agents may not edit prompts. (3) Move volatile facts (paths, counts, known states) out of prompts into one referenced config file.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1013:
+  Date: 2026-09-30
+  Item: PRESUMPTION-1098
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Moderate
+  Net assessment: Both sides converge: a MONITOR class is informative only with explicit exit thresholds, reason codes and scheduled re-review, and conflict/thin evidence reliably drives deferral. The register (MONITOR 628 vs PREMISE 220 before this run) and the 7-of-7 run are consistent with the sink pattern.
+  Disposition: REVISE → REVISE-492
+  Reasoning: Presumption + moderate challenge, and 15a's own caveats state the conditions under which the presumption fails, which are the conditions currently in force. REVISE/Medium: the fix is procedural and this run already applies part of it (reason codes and explicit exit conditions on new MONITOR records; 1088/1089 re-dispositioned).
+  What is at risk: The whole 15c/15d disposition layer; challenged premises carried as "watched" (e.g. 1088/1089 held at MONITOR on 09-29).
+  Recommended action: (1) Every MONITOR record carries a reason code (thin search / contested / awaiting human ruling / awaiting in-house data) and an explicit exit threshold. (2) A cycle cap: after N (suggest 3) 15d cycles without new evidence, 15d must propose INCORPORATE or REVISE. (3) Report the MONITOR share per run; flag any run above ~70% MONITOR.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+### 15c re-dispositions, 2026-09-30 (09-29 deeper-pass recommendation; evidence already on file)
+
+DISPOSITION-1014 (RE-DISPOSITION of DISPOSITION-1006 / MONITOR-622):
+  Date: 2026-09-30
+  Item: PRESUMPTION-1088
+  15a result (second pass): PARTIALLY-SUPPORTED (Weak) | 15b result (second pass): CHALLENGED (Moderate)
+  Evidence basis: Primary source fetched in the 09-29 second 15b pass: Ramprasad & Wallace 2024, arXiv:2411.16638 - automatic factuality metrics largely track surface features. DISPOSITION-1006's hold condition ("read the primary sources") is met.
+  Disposition: REVISE → REVISE-493
+  What is at risk: QC runs that mark pass on mechanical/structural checks and are read as semantic soundness (Summa QC, wiki QC).
+  Recommended action: Pair mechanical QC passes with a sampled semantic spot-check (e.g. 1 in 10 items read for meaning), and label passes as "structural pass" in QC output.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15a, 15b (second pass) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1015 (RE-DISPOSITION of DISPOSITION-1007 / MONITOR-623):
+  Date: 2026-09-30
+  Item: PRESUMPTION-1089
+  15a result (second pass): NO-SUPPORT-FOUND (Weak) | 15b result (second pass): CHALLENGED (Moderate)
+  Evidence basis: Wright 1988 fetched; Stelmakh et al. arXiv:2011.15083 fetched as a boundary case (no herding when reviewers form a view before seeing prior dispositions). DISPOSITION-1007's hold condition is met; the boundary case supplies the remedy.
+  Disposition: REVISE → REVISE-494
+  What is at risk: Any run that inherits prior dispositions or pass status (15d re-checks, QC re-review, 14a/14b reconciliations).
+  Recommended action: Blind-first review: the reviewing run forms its own judgment before reading the prior disposition, on at least a sampled subset; log disagreements.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15a, 15b (second pass) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1016 (RE-DISPOSITION of DISPOSITION-1002 / MONITOR-618):
+  Date: 2026-09-30
+  Item: ASSUMPTION-1684
+  15a result (second pass): PARTIALLY-SUPPORTED (Moderate) | 15b result (second pass): CHALLENGED (Moderate)
+  Evidence basis: Second pass: 15a PCAOB AS 2201 B29 (fetched) permits carrying a prior pass forward only with verified no-change AND a periodic fresh full review; 15b CHALLENGED/Moderate. Stated assumption, contested at moderate strength both ways.
+  Disposition: MONITOR → MONITOR-618 (refreshed)
+  What would change the disposition: EXIT CONDITION: resolves with REVISE-493 - if the sampled semantic spot-check is adopted, INCORPORATE the conditional form (carry-forward allowed with verified no-change + periodic full review); if not adopted within 2 cycles, REVISE bound to REVISE-493.
+  Priority: High
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15a, 15b (second pass) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+In-house lane (no DISPOSITION numbers minted; precedent 2026-09-22..29): ASSUMPTION-1698 → MONITOR-630, ASSUMPTION-1699 → MONITOR-631, ASSUMPTION-1703 → MONITOR-632, ASSUMPTION-1707 → MONITOR-633.
+
+SYSTEMIC-RISK-FLAG (15b, 2026-09-30, High): self-referential verification — PRESUMPTION-1096, ASSUMPTION-1702, PRESUMPTION-1097, PRESUMPTION-1098, PRESUMPTION-1095. File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-30_self-referential-verification.md. 15c concurs: four of the five are REVISE this run; 1702 is INCORPORATED only in its upstream-probe form.
+
+Running totals after this run: PREMISE-221 | MONITOR-633 (MONITOR-622, -623 closed to REVISE) | REVISE-494 | DISPOSITION-1016.
+This run's distribution (6 new literature items): 1 INCORPORATE, 1 MONITOR, 4 REVISE.
+
+
+## 2026-10-01 — 15a/15b/15c run (4 literature-lane items, PRESUMPTION-1099..1102; 9 in-house items routed)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1099
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Beyer, Jones, Petoff, Murphy (eds.), 2016. Site Reliability Engineering, ch. 6 "Monitoring Distributed Systems". https://sre.google/sre-book/monitoring-distributed-systems/
+  Summary: Black-box/end-to-end monitoring and failure-detector theory support that a per-component view is unreliable and an independent shared signal is needed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1099_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1099
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Irin (DEV Community), n.d. "A Dead Man's Switch for Your Monitoring Stack". https://dev.to/irinobservability/a-dead-mans-switch-for-your-monitoring-stack-2335
+  Summary: No source says per-environment checks are sufficient or a shared record is harmful.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1099_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1017:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1099
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Moderate indirect support (failure-detector theory, SRE black-box monitoring) against only a weak, partly corroborating challenge. Support is extrapolated, not direct; domain transfer to scheduled agent tasks untested.
+  Disposition: MONITOR → MONITOR-634
+  Reasoning: MONITOR rather than INCORPORATE: neither search found a source stating the claim for split-scheduler agent systems, and this is a PRESUMPTION (designers unaware). Challenge adds a refinement: the shared record needs freshness/TTL semantics and an external dead-man check.
+  What would change the disposition: A source or in-house test showing a shared run record with staleness detection catches failures that per-environment checks missed (INCORPORATE); evidence the record itself becomes the blind spot (REVISE).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1100
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Fowler, 2005. "Focusing on Events" (Event Narrative). https://martinfowler.com/eaaDev/EventNarrative.html
+  Summary: Event-sourcing literature supports separating immutable attempt/event records from derived current state; SRE guidance supports separating symptom from cause.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1100_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1100
+  Search direction: AGAINST (challenging)
+  Result: NO-CHALLENGE-FOUND
+  Strength: Weak
+  Key source: Velprove, n.d. "API Health Check Patterns: What /healthz Should Return". https://medium.com/@velprove/api-health-check-patterns-what-healthz-should-return-4d3ade722eb1
+  Summary: Evidence found reinforces the presumption: merging distinct signals destroys signal-to-action mapping.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1100_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: NO-CHALLENGE-FOUND
+
+DISPOSITION-1018:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1100
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: NO-CHALLENGE-FOUND | 15b strength: Weak
+  Net assessment: Weak-moderate analogical support; no challenge found, only a minimality caveat. Failure mode is not directly evidenced.
+  Disposition: MONITOR → MONITOR-635
+  Reasoning: MONITOR: absence of challenge reflects thin literature, not strength; support is by design-pattern analogy. Literature-gap rule favours MONITOR over premature INCORPORATE.
+  What would change the disposition: An in-house measurement of a misleading status signal caused by attempt/state conflation (INCORPORATE), or a case showing a single result field suffices at this scale (REVISE/drop).
+  Monitoring cadence: Weekly | Priority: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1101
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: TianPan.co, 2026-05-17. "When No One Answers the Escalation: Human-in-the-Loop Is a Staffing Problem". https://tianpan.co/blog/2026/05/17/when-no-one-answers-the-escalation
+  Summary: Practitioner literature states directly that escalation designs need timeout, default-action and batching policies.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1101_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1101
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: TianPan.co, 2026-05-17. "When No One Answers the Escalation". https://tianpan.co/blog/2026/05/17/when-no-one-answers-the-escalation
+  Summary: The "needs a policy" part holds.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1101_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1019:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1101
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Moderate support for needing a reviewer-absence policy; moderate challenge to which remedies are acceptable (default-on-timeout is hazardous). Evidence is practitioner-grade only.
+  Disposition: MONITOR → MONITOR-636
+  Reasoning: MONITOR: contested on remedy rather than on need. Candidate refined statement: "escalation designs need a reviewer-absence policy; prefer tiered fallback and upstream bounding to default-on-timeout." Single-owner, multi-day absence is outside the sources' domain. Relevant to the open human-ruling backlog (e.g. OPEN-187).
+  What would change the disposition: Peer-reviewed or measured evidence on HITL queue behaviour under reviewer absence; or in-house backlog data showing growth without a policy (INCORPORATE the refined form).
+  Monitoring cadence: Weekly | Priority: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1102
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-Moderate
+  Key source: Brooker, 2015. "Exponential Backoff and Jitter". AWS Architecture Blog. https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/
+  Summary: Backoff is well established for retries/contention and noise reduction is well documented.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1102_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1102
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Susumun, n.d. "Exponential Backoff vs. Fixed-Interval Retries: When Growing Wait Times Actually Help". https://dev.to/susumun/exponential-backoff-vs-fixed-interval-retries-when-growing-wait-times-actually-help-1dj
+  Summary: Challenge is about transfer, not refutation.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1102_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1020:
+  Date: 2026-10-01
+  Item: PRESUMPTION-1102
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak-Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Weak-moderate analogical support (retry backoff, noise reduction) against a moderate transfer challenge (single-scheduler fixed intervals; latency and missed-event risk).
+  Disposition: MONITOR → MONITOR-637
+  Reasoning: MONITOR: backoff literature concerns retries and contention, not idle polling after completion; both sides are indirect. The reset-on-new-work condition is the key unevidenced risk.
+  What would change the disposition: An in-house cost/latency measurement comparing adaptive vs fixed polling, or a source on idle-run cost in agent scheduling.
+  Monitoring cadence: Weekly | Priority: Low
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+SYSTEMIC-RISK-FLAG (15b, 2026-10-01, Weak): added unmonitored state — PRESUMPTION-1099, -1100, -1102. File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-01_added-state-unmonitored.md
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1709 → MONITOR-638, ASSUMPTION-1710 → MONITOR-639, ASSUMPTION-1711 → MONITOR-640, ASSUMPTION-1712 → MONITOR-641, ASSUMPTION-1713 → MONITOR-642, ASSUMPTION-1714 → MONITOR-643, ASSUMPTION-1716 → MONITOR-644, ASSUMPTION-1718 → MONITOR-645, ASSUMPTION-1720 → MONITOR-646
+
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-646 | REVISE-494 (unchanged) | DISPOSITION-1020.
+This run's distribution (4 new literature items): 0 INCORPORATE, 4 MONITOR, 0 REVISE.
+
+================================================================================
+## 2026-10-02 — 15a / 15b / 15c run (scheduled task `c2a2-lit-search-pipeline`) — 10-01 intake
+## ⚠ NOT APPLIED — SECOND CONCURRENT INSTANCE (fail loud). Everything in this block down to the "END NOT-APPLIED BLOCK" line is a PROPOSAL ONLY.
+## The other 10-02 instance (block "lit-search pipeline run (15a/15b/15c) on the 2026-10-01 14a/14b end-of-day intake", below) started first and committed to all registers. Its numbers stand.
+## The DISPOSITION / REVISE / MONITOR ids in this block are relabelled "P-" (proposed) to avoid collision. See wiki/review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
+
+Run lock: `architecture/lit_pipeline.lock` written at start (first use; responds to MONITOR-631 / PRESUMPTION-1104). No concurrent instance seen (no lock, no result files for these items at start).
+Test target: the "Presumption under test" line, not the candidate remedy (ASSUMPTION-1722 format).
+Independence: 15a and 15b ran as separate subagent contexts, same model family (PREMISE-004 / DISPOSITION-409 caveat applies).
+
+### 15a returns (FOR)
+RETURN 15a — PRESUMPTION-1103 | Result: NO-SUPPORT-FOUND (conditional only) | Strength: Weak | Key source: Cemri et al. 2025, arXiv:2503.13657 (kappa 0.88 only after iterative refinement; specification issues a top failure class) | Full: lit_search_results/for/PRESUMPTION-1103_for.md | PROVENANCE: Origin 14b | Chain [14b → 15a] | Current status: NO-SUPPORT-FOUND
+RETURN 15a — PRESUMPTION-1104 | Result: NO-SUPPORT-FOUND | Strength: Weak | Key source: Lamport 1986 safe-register semantics (recalled; definition confirmed via snippets); atomic rename prevents torn files, not lost updates | Full: lit_search_results/for/PRESUMPTION-1104_for.md | PROVENANCE: Origin 14b | Chain [14b → 15a] | Current status: NO-SUPPORT-FOUND
+RETURN 15a — PRESUMPTION-1105 | Result: NO-SUPPORT-FOUND | Strength: Weak | Key source: Page et al. 2014, Cochrane MR000035 (fetched); Cochrane Handbook §9.7 — exceptions permitted only if documented + sensitivity-tested | Full: lit_search_results/for/PRESUMPTION-1105_for.md | PROVENANCE: Origin 14b | Chain [14b → 15a] | Current status: NO-SUPPORT-FOUND
+RETURN 15a — ASSUMPTION-1730 | Result: PARTIALLY-SUPPORTED | Strength: Moderate (7-day limb Mod-Strong; SELECT-1 limb Weak) | Key source: Supabase Docs "Project Pausing" (fetched, page modified 2026-10-01) | Full: lit_search_results/for/ASSUMPTION-1730_for.md | PROVENANCE: Origin 14a | Chain [14a → 15a] | Current status: PARTIALLY-SUPPORTED
+NOVELTY flags: none. UNVERIFIED (recalled) sources: Kleppmann 2017; Artstein & Poesio 2008; arXiv:2509.01790 (fetch blocked).
+
+### 15b returns (AGAINST)
+RETURN 15b — PRESUMPTION-1103 | Result: CHALLENGED | Strength: Strong | Key sources: Cemri et al. 2025 (fetched); Yang et al. "What Prompts Don't Say", arXiv:2505.13360 | Steelman: single-model self-agreement is high (0.73–0.98); 10-01 split may be a two-target formatting defect | Full: lit_search_results/against/PRESUMPTION-1103_against.md | PROVENANCE: Origin 14b | Chain [14b → 15b] | Current status: CHALLENGED
+RETURN 15b — PRESUMPTION-1104 | Result: CHALLENGED | Strength: Strong | Key sources: Data-Wise/craft PR #288 (fetched; 40/80 concurrent writes lost under unlocked tmp+mv); lost-update literature (Berenson et al. 1995 — UNVERIFIED recall); internal instance 2026-10-01 | Steelman: staggered schedules + per-item files make collisions rare | Full: lit_search_results/against/PRESUMPTION-1104_against.md | PROVENANCE: Origin 14b | Chain [14b → 15b] | Current status: CHALLENGED
+RETURN 15b — PRESUMPTION-1105 | Result: CHALLENGED | Strength: Mod-Strong | Key sources: Cochrane Handbook v5.1 §2.1 (fetched; post hoc inclusion "highly susceptible to bias"); PROSPERO protocol-vs-review deviation studies | Steelman: few exceptions vs large base → bounded effect | Caveat: item inferred from one proposal; challenges the mechanism, not an observed harm | Full: lit_search_results/against/PRESUMPTION-1105_against.md | PROVENANCE: Origin 14b | Chain [14b → 15b] | Current status: CHALLENGED
+RETURN 15b — ASSUMPTION-1730 | Result: PARTIALLY-CHALLENGED | Strength: Moderate | Key sources: Supabase "Project Pausing" (fetched; "sufficient user database activity", no threshold); GitHub discussion #13121 (fetched; connect-only job kept alive for months then failed) | Steelman: light pings work for many; one-week warning email | Full: lit_search_results/against/ASSUMPTION-1730_against.md | PROVENANCE: Origin 14a | Chain [14a → 15b] | Current status: PARTIALLY-CHALLENGED
+SYSTEMIC-RISK-FLAG (15b, 2026-10-02, High): uncoordinated shared artefacts — PRESUMPTION-1103, -1104, -1105 (agents act on a shared item/file/rule with no coordination step; divergence undetected). File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-02_uncoordinated-shared-artifacts_1103-1104-1105.md. 15b notes possible overlap with the 10-01 "silence-read-as-health" and 09-10 "no-second-look" flags (compared by filename only).
+
+### 15c dispositions
+
+DISPOSITION-1021:
+  Date: 2026-10-02
+  Item: PRESUMPTION-1103
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Agreement on a handed-off NL item is achieved only after explicit, iterated specification; under-specified items are read divergently. The 10-01 conflict is a realised in-house instance.
+  Disposition: REVISE → REVISE-498
+  Reasoning: Heuristic "weak support + strong challenge, PRESUMPTION" → REVISE, High. The steelman (self-consistency) does not cover two different agents on two different text fields, which is what happened.
+  What is at risk: every 14b → 15a/15b handoff; comparability of dispositions across runs.
+  Recommended action: make the separate "Presumption under test" field (adopted in the 10-01 intake) mandatory in the 14a/14b spec, and have 15c reject items lacking it.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1022:
+  Date: 2026-10-02
+  Item: PRESUMPTION-1104
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The lost-update problem is textbook; the only support is the trivial case of non-overlapping writes. The estate has a realised instance (10-01 overwrite of eight result files).
+  Disposition: REVISE → REVISE-499
+  Reasoning: PRESUMPTION with strong challenge and an in-house realised failure. Staggered schedules did not prevent the 10-01 collision, so the steelman fails on local evidence.
+  What is at risk: all shared registers (for_lit_search, lit_search_returns, monitor_queue, revision_flags, validated_premises) and lit_search_results/ files.
+  Recommended action: adopt a run lock for every scheduled task that writes shared registers (this run introduced `architecture/lit_pipeline.lock` as an interim, unenforced convention); read-before-write + mtime compare before each register edit; cycle-suffixed result filenames.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1023:
+  Date: 2026-10-02
+  Item: PRESUMPTION-1105
+  Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: Weak
+  15b result: CHALLENGED | 15b strength: Mod-Strong
+  Net assessment: Systematic-review methodology treats unaudited post hoc inclusion decisions as a recognised bias source; the remedy (log reason, review as a set) is the standard one. Domain transfer from systematic reviews to tradition-monitoring inclusion windows is reasonable but not exact; item is speculative (one proposal).
+  Disposition: REVISE → REVISE-500
+  Reasoning: Literature refutes the presumption; the cost of the remedy is a logged reason field. Urgency lowered to Medium because no harm has been observed and the item rests on one proposal.
+  What is at risk: inclusion-window exceptions in tradition/literature monitoring agents.
+  Recommended action: require each "significance" exception to log its reason; review exceptions as a set at the 15d monthly cycle.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1024:
+  Date: 2026-10-02
+  Item: ASSUMPTION-1730
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Two separable limbs, not one contested claim. Limb 1 (7-day inactivity window) is confirmed by the current official docs from both sides. Limb 2 (a daily `SELECT 1` prevents the pause) is unestablished: the docs give no threshold and say "typically"; a connect-only keep-alive is reported to have failed after months.
+  Disposition: REVISE → REVISE-501 (limb 2). Limb 1 not incorporated as a premise: it is a vendor policy fact that can change without notice, better held as a dated note than a premise.
+  Reasoning: Not averaged: the limb the keep-warm task depends on is the weak one, and its failure mode is silent (SELECT 1 always succeeds, so the task reports success either way).
+  What is at risk: the Supabase keep-warm task and anything relying on the free-tier project being live.
+  Recommended action: replace the bare `SELECT 1` with a read (or small write) against a real table, and have the task check the project's status rather than its own query result.
+  Urgency: Medium
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+In-house lane (no DISPOSITION numbers minted, per precedent): ASSUMPTION-1721 → MONITOR-647, ASSUMPTION-1722 → MONITOR-648, ASSUMPTION-1724 → MONITOR-649, ASSUMPTION-1725 → MONITOR-650, ASSUMPTION-1727 → MONITOR-651, ASSUMPTION-1729 → MONITOR-652.
+
+Numbering note: all ids above in this block are PROPOSED ONLY and collide with the committed instance's ids; read every "DISPOSITION-102x / REVISE-49x / REVISE-50x / MONITOR-64x / MONITOR-65x" in this block as "P-" prefixed. Running totals are NOT changed by this block.
+Proposed distribution (4 literature items): 0 INCORPORATE, 0 MONITOR, 4 REVISE — differs from committed run on PRESUMPTION-1105 and ASSUMPTION-1730 (committed: MONITOR-647, MONITOR-648).
+## END NOT-APPLIED BLOCK
+
+
+## 2026-10-02 — lit-search pipeline run (15a/15b/15c) on the 2026-10-01 14a/14b end-of-day intake
+Run note: single instance; no lock file exists (see REVISE-498). 15a and 15b ran as separate sub-agents; 15b did not read 15a results. Search scope for all four: preliminary, web-only, fetched pages passed through a summarizing model.
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1103 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: Cemri et al. 2025, arXiv:2503.13657 (cuts against the claim) | NOVELTY-FLAG (literature gap)
+  Summary: Nothing supports a single determinate test target; spec ambiguity is a dominant multi-agent failure mode.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1103_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1103 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: "Beyond Accuracy: LLM Variability in Evidence Screening", 2026, arXiv:2604.27006 (AC2 0.55–1.0 on identical reruns)
+  Summary: LLM readers diverge on identical written criteria; transfer from screening to handoff is by analogy. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1103_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1104 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: none (DZone/Baeldung lost-update pages argue the opposite)
+  Summary: Unguarded concurrent edits are safe only with non-overlapping writers; no source found.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1104_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1104 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: "Language Model Teams as Distributed Systems", 2026, arXiv:2603.12229
+  Summary: Silent overwrites measured in LLM agent teams on shared files; matches the 10-01 in-house data loss. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1104_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1105 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: Page et al. 2014, Cochrane MR000035 (analogue; points toward bias with a CI including null) | NOVELTY-FLAG (literature gap)
+  Summary: No study shows unaudited discretionary inclusion exceptions are harmless.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1105_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1105 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: arXiv:2604.27006; arXiv:2508.15822 (auditable screening)
+  Summary: Methodology treats unaudited discretion as the classic route to selection bias; bias direction for LLM exceptions not measured. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1105_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1730 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Supabase docs, "Project Pausing" (https://supabase.com/docs/guides/platform/free-project-pausing)
+  Summary: One-week inactivity window confirmed; daily database requests documented as enough; SELECT 1 not explicitly named.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1730_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1730 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Weak
+  Key source: same docs page ('low activity', undefined threshold, no keep-alive guidance)
+  Summary: Premise confirmed; the remedy is inferred from community practice, not documented. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1730_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+SYSTEMIC-RISK-FLAG (15b, 2026-10-02, Moderate): silent divergence with no checking mechanism — PRESUMPTION-1103, -1104, -1105 (ASSUMPTION-1730 lower severity). File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-02_silent-divergence-unchecked.md
+
+DISPOSITION-1021:
+  Date: 2026-10-02 | Item: PRESUMPTION-1103 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: No support, moderate by-analogy challenge, corroborated by the 10-01 in-house divergence.
+  Disposition: REVISE → REVISE-499
+  Reasoning: Unstated presumption, no support, and in-house evidence the failure already occurred.
+  What is at risk: all 14a/14b → 15a/15b/15c handoffs. Recommended action: standing presumption/remedy split plus claim echo-back. Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+DISPOSITION-1022:
+  Date: 2026-10-02 | Item: PRESUMPTION-1104 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Textbook plus 2026 empirical evidence of silent lost updates; in-house data loss on 10-01.
+  Disposition: REVISE → REVISE-498
+  Reasoning: Presumption with strong challenge → REVISE, High urgency, per heuristics.
+  What is at risk: all shared registers. Recommended action: run lock now; append-only/CAS longer term. Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+DISPOSITION-1023:
+  Date: 2026-10-02 | Item: PRESUMPTION-1105 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Challenge is by principle and analogy; bias direction unmeasured; origin is one speculative proposal.
+  Disposition: MONITOR → MONITOR-647
+  Reasoning: Evidence is indirect on both sides; absence of audit makes the claim untestable rather than refuted. Err toward MONITOR.
+  What would change the disposition: log of actual exceptions. Priority: Medium | Cadence: Weekly
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+DISPOSITION-1024:
+  Date: 2026-10-02 | Item: ASSUMPTION-1730 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate | 15b result: PARTIALLY-CHALLENGED | 15b strength: Weak
+  Net assessment: Pause window confirmed; remedy efficacy undocumented.
+  Disposition: MONITOR → MONITOR-648
+  Reasoning: Not INCORPORATEd because the keep-warm effect rests on an undocumented reading of 'user activity'; low stakes, cheap to verify in-house.
+  What would change the disposition: observed non-pause over >7 days, or a paused-state alert. Priority: Low | Cadence: Weekly
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1721 → MONITOR-649, -1722 → MONITOR-650, -1724 → MONITOR-651, -1725 → MONITOR-652, -1727 → MONITOR-653, -1729 → MONITOR-654
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-654 | REVISE-499 (498 and 499 used; 495..497 remain proposed/unapplied from 10-01) | DISPOSITION-1024.
+This run's distribution (4 literature items): 0 INCORPORATE, 2 MONITOR, 2 REVISE. No validated_premises.md change; consistency check n/a.
+
+
+## 2026-10-03 — c2a2-lit-search-pipeline (15a/15b/15c) RUN RETURNS
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1733 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak–Moderate
+  Key source: Supabase docs, 'Project Pausing' [fetched]
+  Summary: Docs count 'user database activity' and API calls; community keep-alives report trivial queries work; nothing official says a bare SELECT 1 counts. Docs baseline is 'a few requests each day'.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1733_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1733 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Weak–Moderate
+  Key source: Supabase docs, 'Project Pausing' [fetched]
+  Summary: Docs say only 'sufficient user database activity', 'typically a few user requests each day'; whether one daily SELECT 1 counts is undocumented. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1733_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+DISPOSITION-1025:
+  Date: 2026-10-03 | Item: ASSUMPTION-1733 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak–Moderate | 15b result: PARTIALLY-CHALLENGED | 15b strength: Weak–Moderate
+  Net assessment: Same docs page read by both sides; the question is undocumented, not refuted. Duplicates ASSUMPTION-1730 limb 2 (MONITOR-648 committed; REVISE-501 proposed/unapplied from the 10-02 second instance).
+  Disposition: MONITOR → MONITOR-655
+  Reasoning: Evidence indirect on both sides; vendor docs silent. Not REVISE because no observed failure; not INCORPORATE because the keep-warm effect is unverified. Bound to MONITOR-648 so the pair closes together.
+  What would change the disposition: observed project state over >7 days with the bare SELECT 1 only (in-house), or a Supabase statement on what counts as activity. Priority: Medium | Cadence: Weekly
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1739 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: arXiv 'Availability of submissions'; Moed et al. 2016 [search-result]
+  Summary: arXiv release schedule adds 0–3 days; no study measures arXiv→web-search lag; arXiv API/RSS confirmed as low-latency alternative.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1739_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1739 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Martín-Martín et al. 2018, arXiv:1806.04435 [search-result]
+  Summary: Lag is engine-dependent; Google Scholar can take weeks–months; indexed ≠ ranked for a name query. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1739_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+DISPOSITION-1026:
+  Date: 2026-10-03 | Item: ASSUMPTION-1739 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both sides agree web search is an unreliable fresh-arXiv source; they disagree only on magnitude ('days' may understate it). The operative caveat holds; the number is unmeasured.
+  Disposition: MONITOR → MONITOR-656
+  Reasoning: The challenge strengthens rather than refutes the caveat's practical point. Held at MONITOR because the lag is unmeasured, and the remedy (arXiv API/listing feeds) is handled under PRESUMPTION-1109 → REVISE-504.
+  What would change the disposition: an in-house measurement: arXiv listing date vs first web-search hit for a sample of tradition-author postings. Priority: Low | Cadence: Monthly
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1106 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None
+  Key source: flock(2) man pages; Kleppmann 2016 on fencing tokens
+  Summary: Every source defines advisory locks as binding only processes that check them; theory predicts the opposite of the presumption.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1106_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1106 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: flock(2) man page [search-result]; Kleppmann [background-knowledge]
+  Summary: By definition an advisory lock only binds processes that check it; for a writer whose spec omits the check, the lock does nothing. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1106_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1027:
+  Date: 2026-10-03 | Item: PRESUMPTION-1106 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Definitional refutation, agreed by both sides. Note: this run did check the lock, but only because the run read the 10-02 notes, not because the task spec says so.
+  Disposition: REVISE → REVISE-502
+  Reasoning: PRESUMPTION with strong challenge and no support → REVISE, High urgency, per heuristics.
+  What is at risk: the run lock and any future coordination file; all shared registers; DISPOSITION/REVISE numbering (duplicates already exist for 1021–1024).
+  Recommended action: Move the lock check, its staleness rule and the RELEASED convention into the c2a2-lit-search-pipeline task spec (Tom-owned edit); resolve the duplicate schedule (ASSUMPTION-1731 / MONITOR-657). Consider a fencing token: the run ID written into each register entry.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1107 | Search direction: FOR | Result: PARTIALLY-SUPPORTED (conditional) | Strength: Weak
+  Key source: Google SRE book ch. 6; Prentice 1989
+  Summary: A proxy is valid only when it is the causal mechanism, an end-to-end probe of the real path, or a validated surrogate; prior PASS or registry entry get no support.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1107_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED (conditional)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1107 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Fleming & DeMets 1996, Ann Intern Med [search-result]
+  Summary: Surrogates are valid only if they reliably predict the outcome, and this 'frequently fails'; Goodhart's law and SRE practice agree. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1107_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1028:
+  Date: 2026-10-03 | Item: PRESUMPTION-1107 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED (conditional) | 15a strength: Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: 15a's own support is conditional on criteria the three operative instances (SELECT 1, prior PASS, registry entry) do not meet. Both sides converge on the Prentice/Fleming validity criteria.
+  Disposition: REVISE → REVISE-503
+  Reasoning: PRESUMPTION, weak conditional support vs strong challenge → REVISE. Generalises PRESUMPTION-890; anchor of today's SYSTEMIC-RISK flag.
+  What is at risk: every monitoring/keep-alive task whose self-report is the only evidence: Supabase keep-warm, feed-freshness PASS, scheduler registry 'all fired'.
+  Recommended action: Each task checks the outcome it exists to secure (project status, feed timestamps, cloud-side run evidence) and reports action success and outcome separately.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1109 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Moed et al. 2016; Gusenbauer & Haddaway 2020
+  Summary: Web search picks up new work faster than curated databases; nothing supports reading '0 proposals' as 'nothing new'.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1109_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1109 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Gusenbauer 2022, Scientometrics [search-result]
+  Summary: Search tools miss a share of registered papers and index new work weeks late; '0 proposals' cannot be read as 'nothing new'. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1109_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1029:
+  Date: 2026-10-03 | Item: PRESUMPTION-1109 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The support covers relative speed only, not the inference '0 → nothing new'; that inference is refuted. 14b confidence was speculative (one caveat), so urgency is Medium not High.
+  Disposition: REVISE → REVISE-504
+  Reasoning: PRESUMPTION with strong challenge → REVISE; urgency lowered to Medium because no missed paper has been observed.
+  What is at risk: tradition agents' '0 proposals' results and the apparent quiet of some traditions.
+  Recommended action: Query the arXiv API/listing feeds or author feeds directly; record unreachable sources as UNREACHABLE, not 0; report 'no new items found in sources X' rather than 'nothing new'.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+SYSTEMIC-RISK-FLAG (15b, 2026-10-03, Moderate): action-as-outcome proxy — each check confirms its own action (ping, search, lock file), not the outcome; failures stay silent. Items: PRESUMPTION-1107 (anchor), ASSUMPTION-1733, -1739, PRESUMPTION-1106, -1109 (and PRESUMPTION-890). File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-03_action-as-outcome-proxy.md
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1731 → MONITOR-657, ASSUMPTION-1732 → MONITOR-658, ASSUMPTION-1735 → MONITOR-659, ASSUMPTION-1737 → MONITOR-660, ASSUMPTION-1738 → MONITOR-661, ASSUMPTION-1741 → MONITOR-662, PRESUMPTION-1108 → MONITOR-663
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-663 | REVISE-504 (495..497 and 500..501 remain proposed/unapplied from the 10-01/10-02 conflict runs; skipped to avoid collision) | DISPOSITION-1029.
+This run's distribution (5 literature items): 0 INCORPORATE, 2 MONITOR, 3 REVISE. No validated_premises.md change; consistency check n/a.
+
+
+## 2026-10-04 — c2a2-lit-search-pipeline (15a/15b/15c) RUN RETURNS
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1110 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Google Cloud, 'About Cloud Scheduler' [fetched]
+  Summary: Schedulers promise at-least-once delivery and call duplicates rare; exactly-once per slot exists only where a per-slot dedup check is built in.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1110_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1110 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Google Cloud Scheduler overview [search-result; fetch returned no content]
+  Summary: At-least-once firing; cron double-runs/skips at DST changes; same-day output may be partial or another process's, so it does not prove an earlier run finished. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1110_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1030:
+  Date: 2026-10-04 | Item: PRESUMPTION-1110 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Both sides read the same vendor contract: at-least-once, not exactly-once. 15a's 'support' is only that duplicates are rare. In-house, duplicates are already observed (09-29, 10-01, possibly 10-03 — MONITOR-657, ASSUMPTION-1743).
+  Disposition: REVISE → REVISE-505
+  Reasoning: PRESUMPTION, weak support vs strong challenge, with realised in-house instances → REVISE, High. Companion to REVISE-502 (advisory lock): the lock fixes mutual exclusion; this item fixes the inference 'output exists ⇒ my earlier run did it'.
+  What is at risk: any task that skips or merges work on finding same-day output (lit pipeline, 14a/14b intake, tradition agents' proposal files — ASSUMPTION-1744).
+  Recommended action: Write a run ID into every output and register entry; a task treats existing output as its own only if the run ID matches a completed-run record; enforce one registration per task.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1111 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Mateen et al. 2013, Clinical Epidemiology [search-result]
+  Summary: Title-only screening missed no finally-included studies in one review, so titles work as a first pass; nothing supports titles as the sole filter, nor auto-generated chat titles.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1111_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1111 | Search direction: AGAINST | Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Galke et al. 2017, arXiv:1705.05311 [search-result]
+  Summary: Titles reach >90% of full-text accuracy on 3 of 4 datasets, but chat titles are auto-generated from the first exchange and frozen; later designer input is invisible and the excluded set is never checked. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1111_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+DISPOSITION-1031:
+  Date: 2026-10-04 | Item: PRESUMPTION-1111 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Both sides agree titles are a good first-pass signal for author-chosen titles; neither found support for a title as the *sole* gate, and the chat-title mechanism (first exchange only) is a plausible bias source. The false-negative rate is unmeasured, not shown high.
+  Disposition: MONITOR → MONITOR-664
+  Reasoning: Evidence indirect on both sides; no missed designer input has been observed. A cheap in-house test settles it. Parallels PRESUMPTION-1105 → MONITOR-647 (unaudited inclusion filter).
+  What would change the disposition: a recall sample — content-scan ~50 title-excluded chats for designer input. Any material miss rate → REVISE; near-zero → INCORPORATE as a first-pass heuristic only. Priority: High | Cadence: Weekly
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1112 | Search direction: FOR | Result: NO-SUPPORT-FOUND | Strength: None–Weak
+  Key source: Mallen et al. 2023, ACL ('When Not to Trust Language Models') [search-result]
+  Summary: Parametric recall is reasonable only for very prominent entities; citation studies (Walters & Wilder 2023 [background-knowledge]: 18% fabricated, 24% of real ones with substantive errors) rule out memory alone as grounds for rejection.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1112_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: NO-SUPPORT-FOUND
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1112 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Agrawal et al. 2024, Findings of EACL, arXiv:2305.18248 [fetched; abstract and introduction]
+  Summary: LLMs fabricate or corrupt bibliographic details at material rates, worst for less-cited authors; duplicate detection in practice compares texts. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1112_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1032:
+  Date: 2026-10-04 | Item: PRESUMPTION-1112 | Item type: PRESUMPTION (unstated)
+  15a result: NO-SUPPORT-FOUND | 15a strength: None–Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Both sides converge: unaided LLM bibliographic recall is not reliable enough to reject an item, least of all for the less-prominent authors many traditions track.
+  Disposition: REVISE → REVISE-506
+  Reasoning: PRESUMPTION, no support, strong challenge → REVISE. Urgency Medium rather than High (as with REVISE-504): one observed rejection (244b8d96), not yet shown wrong, and the loss is recoverable if the rejected item is logged.
+  What is at risk: tradition agents' reissue/duplicate rejections; silent loss of new work misread as old.
+  Recommended action: Reject as a reissue only after comparing texts (or DOI/arXiv ID/abstract); otherwise record UNVERIFIED-DUPLICATE with the candidate link for Tom's review.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1113 | Search direction: FOR | Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: 'Your Service Is Healthy, but Its Data Isn't', Cloud Native Now [search-result]
+  Summary: Some systems roll freshness into one health status, but always with more than two states, or with freshness checked separately from run success (as dbt does).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1113_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Transform at this step: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1113 | Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: dbt source freshness [search-result]; SRE Workbook ch. 2 [background-knowledge]
+  Summary: Practice treats run success and data freshness as separate signals; with one bit, stale data passes or a FAIL doesn't say which part failed. STEELMAN in result file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1113_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Transform at this step: Searched for challenging literature | Current status: CHALLENGED
+DISPOSITION-1033:
+  Date: 2026-10-04 | Item: PRESUMPTION-1113 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Weak | 15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: 15a's own support is for multi-state or separated designs, i.e. against a single binary field. In-house conflict already realised (commit_check OK vs run_stall FAIL for one run; 9af31b28 vs 37049609; ASSUMPTION-1745/1746).
+  Disposition: REVISE → REVISE-507
+  Reasoning: PRESUMPTION, weak support that points the other way, strong challenge, realised in-house → REVISE, High. Same remedy family as REVISE-503 (report action and outcome separately).
+  What is at risk: scheduler health rows, morning system-health/project-status 'last ran' lines, every PASS/FAIL that downstream agents read as 'fresh'.
+  Recommended action: Split each status into run_status (PASS/FAIL/SKIPPED/NO-OP) and data_freshness (timestamp of newest datum + age threshold); never derive one from the other.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+SYSTEMIC-RISK-FLAG (15b, 2026-10-04, Moderate, trending High): surface signal as verdict — a cheap signal (output exists, title, recall, one status bit) used as the final word to skip, exclude or reject, so errors leave no trace. Items: PRESUMPTION-1110, -1111, -1112, -1113. Linked to 10-03 action-as-outcome-proxy, 10-01 silence-read-as-health, 09-29 inherited-pass-status. File: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-04_surface-signal-as-verdict.md
+15c note on the flag: four consecutive daily flags now describe one pattern (a proxy accepted without checking the thing it stands for). 15c recommends Tom treat REVISE-503/505/506/507 as one design change, not four.
+
+In-house lane (no DISPOSITION numbers minted): ASSUMPTION-1743 → MONITOR-665, ASSUMPTION-1744 → MONITOR-666, ASSUMPTION-1745 → MONITOR-667, ASSUMPTION-1746 → MONITOR-668, ASSUMPTION-1750 → MONITOR-669, ASSUMPTION-1752 → MONITOR-670, PRESUMPTION-1114 → MONITOR-671
+Running totals after this run: PREMISE-221 (unchanged) | MONITOR-671 | REVISE-507 (495..497 and 500..501 remain proposed/unapplied) | DISPOSITION-1033.
+This run's distribution (4 literature items): 0 INCORPORATE, 1 MONITOR, 3 REVISE. No validated_premises.md change; consistency check n/a.

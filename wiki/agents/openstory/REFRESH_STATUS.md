@@ -1,1 +1,1 @@
-2026-09-28T10:15Z  FAIL  step2b extract_agent_node_refs.py — non-zero exit (see stderr above) | DB age 0h
+2026-10-03 (later run; exact time unavailable)  FAIL  step 1 (no shell) — sandbox bash: "useradd: /etc/passwd: No space left on device"; Mac-shell fallback auto-declined (unattended run) | feeds untouched; last PASS 2026-10-03T10:15Z telemetry=2026-10-03/33 agents node_edges=2026-10-03 still current

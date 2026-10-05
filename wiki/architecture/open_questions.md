@@ -3470,3 +3470,106 @@ OPEN-258:
     intentional? Should a daily job alarm when other daily jobs miss their slot?
   Needs: **Tom**.
   Status: OPEN
+
+## 2026-09-29 — raised by the 14a/14b end-of-day pass
+
+OPEN-259:
+  Raised: 2026-09-29 by 14a (ASSUMPTION-1707) and 14b (PRESUMPTION-1096)
+  Question: Both human-input channels were down all day: the Gmail connector is invalidated (second day)
+    and the Chrome extension was unreachable, with the built-in browser not signed in. Pending proposals
+    cannot move and walk notes cannot arrive, yet every downstream task ran and reported normally. Should a
+    daily job alarm when no human input has arrived through any channel for N days, and who re-authorizes
+    the connectors?
+  Needs: **Tom** (reauthorize Gmail; sign in a browser profile for the scrape).
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a, 14b]
+    Original item: OPEN-259
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-257 (update 2026-09-29): Confirmed again tonight. A cloud run of this same task wrote
+  `changelog/2026-09-30_changes.md` at 03:31 UTC (local 09-29 evening), dated by UTC, with no session_info;
+  this local pass fired ~11 minutes later. The evening sync also ran on both surfaces (~18:39 cloud, ~18:45
+  local), and the lit pipeline ran two concurrent instances (ASSUMPTION-1699).
+
+## 2026-09-30 — raised by the 14a/14b end-of-day pass
+
+OPEN-260:
+  Raised: 2026-09-30 by 14b (PRESUMPTION-1099) from 14a (ASSUMPTION-1713, -1714, -1720)
+  Question: Thirty-two tasks are cloud-migrated, yet some still run locally (summa-2026-daily-batch,
+    c282-wiki-agent-daily-run). The Mac watchdog cannot see cloud runs, and about ten weekly agents have been
+    silent since about 09-20 with no alarm. For each scheduled task, which surface is authoritative? Should the
+    non-authoritative copy be disabled? And where should a single run record live that every monitor reads?
+  Needs: **Tom** (surface choice per task); then an in-house registry reconciliation.
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14a, 14b]
+    Original item: OPEN-260
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-09-30): Day 3 without either human-input channel. Gmail is still unauthorised and
+  there has been no walk chat since 09-23. PRESUMPTION-1101 adds the downstream cost: holds and escalations
+  addressed to Tom keep accumulating.
+
+## 2026-10-01 — raised by the 14a/14b end-of-day pass
+
+OPEN-261:
+  Raised: 2026-10-01 by 14b (PRESUMPTION-1103, -1104) from 14a (ASSUMPTION-1721, -1722)
+  Question: Two lit-pipeline runs dispositioned PRESUMPTION-1099..1102 differently: MONITOR-634..637 were committed;
+    REVISE-495..497 were proposed but not applied. Which set stands? Should a queue item's test target always be the
+    presumption, with the remedy kept as context? (14a/14b adopted that split for the 10-01 items on a trial basis.)
+    And what stops two writers clobbering the same register again?
+  Needs: **Tom** (ruling on the conflict; see review/2026-10-01_lit-pipeline_concurrent-run_conflict.md); then an
+    in-house run lock.
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14a, 14b]
+    Original item: OPEN-261
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-10-01): Day 4. Signals now disagree: the wiki daily run reports Gmail reachable, while the
+  deferred monitor reports it unauthenticated (ASSUMPTION-1725). There has still been no walk chat since 09-23.
+OPEN-260 (update 2026-10-01): The cloud 14a/14b and sync runs fired again and wrote to the same dated files as the
+  local runs (ASSUMPTION-1728).
+
+## 2026-10-02 — raised by the 14a/14b end-of-day pass
+
+OPEN-262:
+  Raised: 2026-10-02 by 14a (ASSUMPTION-1736, -1737)
+  Question: Unattended runs that hit the full sandbox disk try a Desktop Commander fallback. The fallback needs approval, and it is auto-declined when no one is present. Should scheduled tasks be granted that permission, or should the fallback be removed from their specs so they fail loud at once? As things stand, the fallback exists only when Tom is at the machine.
+  Needs: **Tom** (permission ruling)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-262
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-261 (update 2026-10-02): Second day of concurrent lit-pipeline runs. The second instance created `lit_pipeline.lock`, applied nothing, and released it. The lock-check rule is written only in the lock file's body, not in the task spec (ASSUMPTION-1731, PRESUMPTION-1106). DISPOSITION-1021–1024 duplicate real IDs. See review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
+OPEN-260 (update 2026-10-02): The cloud runs stamp UTC. `changelog/2026-10-03_changes.md` existed before the local 10-02 pass ran (PRESUMPTION-1108). The question now includes which day a dated file describes.
+OPEN-259 (update 2026-10-02): Day 5 without designer input. No walk chat; the chat scrape substituted unrelated chats (ASSUMPTION-1740). Gmail state is still contradictory between tasks (ASSUMPTION-1735(d)).
+
+## 2026-10-03 — raised by the 14a/14b end-of-day pass
+
+OPEN-263:
+  Raised: 2026-10-03 by 14b (PRESUMPTION-1110; ASSUMPTION-1744, -1743)
+  Question: Duplicate firings now appear outside the lit pipeline. The Wolfram agent found a proposal stamped in its own start minute and reported 0. Should duplicate firing be fixed once at the scheduler (one registration per task, local or cloud, not both) rather than with per-task locks? Should every task stamp a run ID on what it writes?
+  Needs: **Tom** (scheduler registry ruling)
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-263
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-10-03): Day 6 with no Cowork designer speech. However, the evening sync found a same-day claude.ai chat, "Antique et nova" (Vatican AI note, Magisterium AI, Truthly.ai, Levin & Dennett), that "reads like walk dictation". It was excluded on its title alone (ASSUMPTION-1752, PRESUMPTION-1111). The day-count may be an artefact of the title filter. Tom to confirm.
+OPEN-261 (update 2026-10-03): The lock file says "single instance". The evening sync says a second copy fired and exited on the lock (ASSUMPTION-1743). Unresolved. REVISE-502 (High) recommends moving the lock rule into the task spec.
+OPEN-260 (update 2026-10-03): A further question is whether cloud-run tasks appear in local session_info at all. If they do not, the local 14a/14b pass cannot see them (PRESUMPTION-1114).

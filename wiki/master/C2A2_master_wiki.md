@@ -1077,3 +1077,64 @@ supply goals or meaning, one from hemispheric phenomenology and one from computa
 Review page: 8 proposals, opened in browser. Review Log 498 cards / 134 dates / 16 responses, address-clean.
 Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 6 (no WARN). Network unchanged: 956
 PRS / 140 CROSS / 94 FINDING. Pending 8; oldest (Fredrickson) 5 days queued.
+
+### 2026-09-30 — Daily Run
+Sandbox shell worked for most steps; `/sessions` is still 100% full, so Phase 5.6 (needs a temp dir) ran through
+Desktop Commander on the Mac. Gmail connector still invalidated (third consecutive run): no decision emails
+checked, no digest draft. Ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Wednesday
+specialist deposited McGilchrist PROP-2026-09-30-001 (Levin conversation #2, Platonic space) and -002 (Think Spiral,
+classical liberalism); no Kastrup specialist card. Orchestrator added **PROP-2026-09-30-003** (Carroll, Mindscape 369,
+Gregg Caruso on living well without free will, 2026-09-28; full transcript read). It is the explicit companion to
+Mindscape 354 (List): Carroll concedes anti-retributivism to a hard incompatibilist and locates the rest of the
+dispute in vocabulary. Candidate bridge to Stump on forgiveness and moral formation.
+
+Review page: 10 proposals, opened in browser. Review Log 501 cards / 135 dates / 16 responses, address-clean.
+Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 7 (no WARN). Network unchanged: 956
+PRS / 140 CROSS / 94 FINDING. Pending 10; oldest (Fredrickson PROP-2026-09-24-001) 6 days queued.
+
+### 2026-10-01 — Daily Run
+Gmail connector is back after three failed runs. Phase 0: no new `[C2A2-review-decision]` email; the only recent
+thread (2026-09-23) was already processed and archived, and is now marked read. Ledger OPEN=1 unchanged (Wright
+PROP-2026-08-14-033). **0 files ingested.** Thursday specialist deposited Fredrickson PROP-2026-10-01-001 (positivity
+resonance in dementia caregivers); no Stump specialist card. Orchestrator searched the other ten and wrote **0
+proposals**: everything in the 60-day window is already carded (Levin bioRxiv 09-03 pair, Friston "Active inference and
+artificial reasoning", Wolfram 09-28 pure-math essay, Arkani-Hamed July/August papers). The October Mindscape AMA is
+not yet posted.
+
+Review page: 12 proposals, opened in browser. Digest draft created. Network unchanged: 956 PRS / 140 CROSS / 94
+FINDING. Pending 12; oldest (Fredrickson PROP-2026-09-24-001) 7 days queued. Separately, `review/` holds a lit-search
+concurrent-run conflict report (2026-10-01) that needs Tom's decision.
+
+### 2026-10-02 — Daily Run
+Phase 0: no new `[C2A2-review-decision]` email. The unread search returned four old threads (07-23, 04-27 x2,
+04-08), all already archived in `review/archive/`; nothing moved. Ledger OPEN=1 unchanged (Wright
+PROP-2026-08-14-033). **0 files ingested.** Friday specialist day (Carroll + Arkani-Hamed) produced no cards, so the
+orchestrator searched both itself and wrote **0 proposals**: Mindscape's newest episode is still 369 (Caruso,
+09-28, already carded); the October AMA is not yet posted; the Arkani-Hamed hits (cosmohedron, hydrotope,
+correlators) are already carded. The Linux sandbox was out of disk, so every script ran on the Mac.
+
+Review page: 12 proposals, opened in browser. 09-28 review page moved to `review/_superseded/`. Review Log 502
+cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 9 (no WARN). Network
+unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 12; oldest (Fredrickson PROP-2026-09-24-001) 8 days queued. A
+second lit-pipeline concurrent-run conflict report (2026-10-02) is in `review/`.
+
+### 2026-10-03 — Daily Run
+Phase 0: no new `[C2A2-review-decision]` email; the same four old threads (07-23, 04-27 x2, 04-08) are already
+archived; nothing moved. Ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Saturday
+specialist (Wolfram) wrote PROP-2026-10-03-001 (History of Science & Technology Q&A, 09-23). Orchestrator searched
+Carroll, Levin, Kastrup, Friston: nothing new beyond what is carded, so **0 orchestrator proposals**.
+
+Review page: 13 proposals, opened in browser. 09-29 review page moved to `review/_superseded/`. Review Log 503
+cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 10 (no WARN). Network
+unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 13; oldest (Fredrickson PROP-2026-09-24-001) 9 days queued.
+
+### 2026-10-04 — Daily Run
+Phase 0: no new `[C2A2-review-decision]` email; the same four old threads (07-23, 04-27 x2, 04-08) are already
+archived; nothing moved. Ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Sunday: Rohr
+and Wright cards already present (PROP-2026-10-04-001..003). Orchestrator searched Carroll (newest Mindscape still
+369, carded), Levin, Kastrup, Friston, McGilchrist, Hoffman, Stump: nothing new beyond what is carded, so
+**0 orchestrator proposals**. arXiv author-page fetch rate-limited (HTTP 429).
+
+Review page: 16 proposals, opened in browser. 09-30 review page moved to `review/_superseded/`. Review Log 506
+cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 11 (no WARN). Network
+unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 16; oldest (Fredrickson PROP-2026-09-24-001) 10 days queued.

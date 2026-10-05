@@ -3,10 +3,10 @@ day: 186
 title: Patience & Perseverance (Contemporary)
 pairs_with: "[[Day-186 - Patience and Perseverance]]"
 length_target_words: 1500
-length_actual_words: 1650
-length_ratio_to_target: 1.100
+length_actual_words: 1781
+length_ratio_to_target: 1.187
 length_tier: short
-length_note: "RESTATED 2026-08-24 (the prior note asserted 0.87x, which this file is no longer at). Body-only recount after the bridge-anchoring pass: 1586 words, ratio 1.057 of short target — INSIDE +/-10pct, so no justification is required and none is claimed. Full coverage of Q.136-137 including the a.4 gift-of-perseverance keystone. QC 2026-09-18: apparatus only (Friston PRS-34 anchored for temporal depth with scope stated, PRS-04 retained as premise; one re-date clause on the Stump declination); recount 1650 body-only, 1.100, at the ±10% edge by reviewer apparatus, boundary = H1 through the line before the auto-linked footer, frontmatter excluded, regex letters-and-apostrophes (the 08-24 figure used a wider boundary; the difference is convention-scale)."
+length_note: "REVIEWER PASS 2026-10-04: added the missing Rohr Bridges bullet (PRS-02, PRS-29, both already in frontmatter); body-only recount 1781, ratio 1.187, outside the +/-10pct band and inside 25pct, informational; the growth is one bridge bullet of apparatus, not argument. PRIOR NOTE: RESTATED 2026-08-24 (the prior note asserted 0.87x, which this file is no longer at). Body-only recount after the bridge-anchoring pass: 1586 words, ratio 1.057 of short target — INSIDE +/-10pct, so no justification is required and none is claimed. Full coverage of Q.136-137 including the a.4 gift-of-perseverance keystone. QC 2026-09-18: apparatus only (Friston PRS-34 anchored for temporal depth with scope stated, PRS-04 retained as premise; one re-date clause on the Stump declination); recount 1650 body-only, 1.100, at the ±10% edge by reviewer apparatus, boundary = H1 through the line before the auto-linked footer, frontmatter excluded, regex letters-and-apostrophes (the 08-24 figure used a wider boundary; the difference is convention-scale)."
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md (PRS-05 broadened attention — marked Implicit in that register) + traditions/fredrickson/prs_triplets.md (PRS-27 canonical map of the broaden-and-build / positivity-resonance program)"
   - "traditions/friston/prs_triplets.md (PRS-34 planning as the demarcation criterion for agents — temporal depth, High, anchored at QC 2026-09-18; PRS-04 organism as active modeler and PRS-06 multi-agent coherence, both Medium/Implicit, the general premise)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Broaden-and-build = empirical (high); active inferen
 mind_first_reframe: "Patience and perseverance are one self-regulatory competence viewed along two axes — holding a far-horizon goal-prior above the narrowing pull of sorrow (affect) and across the decay of delay (time)."
 central_theme_thread: "Perseverance is the name for working out salvation in fear and trembling under temporal scarcity — a limited perspective computing toward loving unity across time it cannot compress, aware of its need for guidance from one who perceives more of the whole."
 tags: [synthesis, day/186, theme/persistence-under-time]
-last_qc_at: "2026-09-26T14:19:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-10-04T18:17:49"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 186 — Patience & Perseverance (Contemporary Parallel)
@@ -61,6 +61,7 @@ This article is one of the cleanest places the project's central claim surfaces 
 - **Attention as ontological act ↔ keeping the whole in view** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* the patient agent attends to the living whole rather than the fragmenting immediate. Evidence: **empirical/phenomenological, medium**.
 - **Fortitude-in-suffering** — *PRS-18 in `traditions/stump/prs_triplets.md`* (defeated suffering still merits mourning: suffering is defeated *through union*, and the mourned loss stays genuinely real rather than being explained away; Confidence High), with the virtue-architecture half at *PRS-09* in the same file (virtue as cooperative causality — the virtues perfect the soul's natural powers under grace; Confidence Medium). *Why:* PRS-18 is what makes "suffering as a site of union" a citable claim rather than a gesture, and it keeps the day honest that the union does not cancel the sorrow patience is exercised against. *Anchor withheld, radius named:* Aquinas's own **ranking** — patience as annexed to fortitude rather than cardinal — has no home in this register; the search covered every Stump triplet (re-tested at 38 records, QC 2026-09-18: still none) and the ranking claim is carried here on the *Summa*'s own text, not on the wiki. Evidence: **theological/philosophical**.
 - **Inaugurated eschatology ↔ "unto the end in Christ"** — *PRS-03 in `traditions/wright/prs_triplets.md`* (inaugurated eschatology: the present is neither mere repetition nor blank slate but the space between the decisive insight and its full elaboration; Confidence High) with *PRS-02* in the same file (faithful improvisation: extending a tradition into circumstances its founders never anticipated, neither rigid repetition nor unfaithful innovation; Confidence High). *Why:* salvation as being held in the covenant people across the not-yet is PRS-03's temporal frame; "perseverance as faithful improvisation" is PRS-02 by name, so this bullet's two halves have two distinct homes rather than one. Evidence: **theological**.
+- **Order-disorder-reorder ↔ staying inside the disorder** — *PRS-02 in `traditions/rohr/prs_triplets.md`* (the disorder necessary for growth: received order must pass through disorder to a tested, deeper reorder; Confidence High, sourced to *Falling Upward*), with *PRS-29* in the same file (how agency is sustained when no path to a preferred outcome is visible; love as a high-precision prior; Confidence **Speculative**). *Why:* PRS-02 carries the body's claim that perseverance is remaining in the disorder long enough to be reordered; PRS-29 poses perseverance's question in the register's own terms but is Speculative, so it frames the day rather than warranting an answer. *Anchoring note (reviewer pass 2026-10-04):* body named Rohr without a Bridges entry although the frontmatter cited both ids; bullet added, no grade moved. Evidence: **contemplative-theological; PRS-02 High, PRS-29 Speculative**.
 
 ## Where this leaves us
 

@@ -92,3 +92,18 @@ If the church is a real corporate substance whose members retain their distinct 
 **Open question the wiki cannot yet answer:** Does Stump's union-as-shared-attention have a corporate form at all? If union is strictly dyadic, "enlargement" of a people cannot be cashed in her terms and the bridge is thinner than the vocabulary suggests.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-06_wright_human-nature-as-vocation-not-good-or-evil]] · [[2026-09-06_wright_third-race-not-supersession-but-enlargement]]
+
+---
+
+## Does "kingdom" do metaphysical work?
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_wright_ascension-political-theology.md` (0 backlinks).
+
+**Why it sits here:** Wright's Ascension claim that Christ's sovereignty is already actual (PROP-2026-09-27-001, via Bird's Substack).
+
+**Synthesis claim.** If the people of God is a real composite under a currently reigning head, a nationalist movement's claim to constitute the relevant corporate substance is a rival claim to the same ontological slot, not a political opinion. That is a stronger reading than Wright's rhetoric requires and a testable one for Stump: it predicts what corporate substance should say about a nation claiming divine election.
+
+**Open question the wiki cannot yet answer:** Is the people of God one corporate substance or several, and can a nation be a corporate substance in the same sense without usurping the head?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_wright_ascension-political-theology]]

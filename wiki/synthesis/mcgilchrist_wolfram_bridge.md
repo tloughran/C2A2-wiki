@@ -22,3 +22,18 @@
 **Synthesis claim.** The proposal's payload is a locator, not content, and the honest bridge claim is therefore about *evidence status* rather than about the seam. Until now, a Medium-confidence claim (does computation exhaust reality) had no path to High and no path to falsification — a defect that was becoming permanent. It now has both, and the cost of closing it is 79 minutes of someone's attention. **No claim in either tradition may be upgraded on the strength of the locator alone.** The one substantive datum available without watching is the frame divergence: Wolfram's index calls it a *debate*; Ralston's copy calls it "less a debate than an encounter." Same three hours, same day, incompatible genre claims, each aimed at its own audience.
 
 **Open question the wiki cannot yet answer.** The one that matters — whether Wolfram states the computation-exhausts-reality claim in his own words — is answerable only by watching. But the frame divergence raises a second question C2A2 is unusually placed to care about: **is host framing a measurable signal of how a tradition wishes to be seen relative to a rival?** If it is, it is cheap to collect and the accelerator should be collecting it as a separate field rather than inheriting whichever frame the wiki met first. That is PRS-CANDIDATE-02, marked Speculative, and it is the more interesting of the two candidates precisely because it is about the interaction rather than about the content.
+
+---
+
+## The same limit on AI from opposite metaphysics
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript.md`, `inbox/proposals/pending/2026-09-29_wolfram_future-pure-math-age-of-ai.md` (0 backlinks).
+
+**Why it sits here:** McGilchrist's UnHerd transcript (PROP-2026-09-29-002) and Wolfram's "What's the Future for Pure Math Research in the Age of AI?" (PROP-2026-09-29-003), filed the same week.
+
+**Synthesis claim.** Each says AI cannot supply the human community's goals and meanings, one from hemispheric phenomenology, the other from computational irreducibility and observer theory. McGilchrist locates the limit in embodiment and relation; Wolfram locates it in goals set from outside the system. The agreement is on where the line falls, not on why, and each metaphysics predicts a different thing about what would move it.
+
+**Open question the wiki cannot yet answer:** What observation would shift each limit, a machine with a body for McGilchrist or a machine that sets goals the community adopts for Wolfram, and would the same observation do for both?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript]] [[2026-09-29_wolfram_future-pure-math-age-of-ai]]

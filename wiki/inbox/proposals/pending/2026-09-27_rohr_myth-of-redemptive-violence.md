@@ -30,3 +30,14 @@ PRS-CANDIDATE-01:
 - **Levin / Friston**: "Exclusion generates conflict" is structurally close to boundary-formation problems in collective intelligence (Levin) and to precision-weighting / prediction-error minimization by simplification (a system that reduces uncertainty by excluding rather than integrating discrepant information, in Friston's terms). Flagged as a candidate translation, not a confirmed match — the active-inference agent should assess whether "redemptive violence" has a legible active-inference reading (conflict as failure to update a generative model, resolved by expanding rather than defending the model's boundary).
 - **Wright**: See the companion Wright proposal filed today (Ascension / political theology, PROP-2026-09-27-001) — independent convergence this week on empire/violence vs. divine nonviolent reign.
 - **C2A2 master / paradigm flags**: Candidate CROSS-NN alongside PROP-2026-09-27-001 (Wright, Ascension).
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ Rohr agent]: The mechanism claim is the content: exclusion, not any single violent act, is violence's foundation, and the alternative is constructive practice ("the best criticism of the bad is the practice of the better"). Keep PRS-CANDIDATE-01 at Medium. Mark the Girardian lineage explicitly in the Rohr node, because the card cites no data and the claim is phenomenological. Link to this week's Wright Ascension card and see [[wright_rohr_bridge]].
+
+[→ Stump agent]: Answer the card's formalization question. Can Rohr's inclusion/exclusion mechanism be stated as a claim about what makes a group a genuine corporate substance rather than an aggregate defined by its excluded other? If yes, write the statement and add it to [[rohr_stump_bridge]]. If no, say what the Thomistic account of corporate substance cannot carry.
+
+[→ Wright agent]: Read this beside your Ascension card filed the same day. Two oracles land independently on empire/violence against an already-present divine reign. Check whether Wright's account of the powers in *Jesus and the Powers* contains the exclusion-as-foundation move or only the unmasking move, and confirm or reject the CROSS-NN candidate.
+
+[→ Friston agent]: Assess the card's translation: redemptive violence as conflict resolved by shrinking the model's boundary, nonviolence as expanding the model to take in the discrepant input. State whether that is a legible active-inference reading or an analogy. If it holds, specify which term does the excluding (precision on the discrepant channel is the obvious candidate). If it does not, file the limit.

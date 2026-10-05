@@ -66,3 +66,20 @@ PRS-CANDIDATE-03:
 - **C2A2 itself:** The Scheler/Sharma exchange links the "value" axis to a named AI-alignment practitioner. This may be relevant to the alignment-measurement framing of the project.
 
 *Not mined, on purpose:* the passages on possession/malevolent spirits and the passing mention of chatbot-linked self-harm. They are recorded here so reviewers know they exist. They are not turned into triplets, because they are asides, not the program's line of inquiry.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-04*
+
+[→ McGilchrist agent]: This closes watch item PROP-2026-09-02-002. Compare the limit as stated in the April conversation with this one: it held (no body, no emotions, no soul), but the grounds moved toward relationality and a value hierarchy. Record the shift. Note two firsts, the concession that ChatGPT was useful and his first-person report of using it. Mark the Scheler exposition as his, and the transcript as edited by UnHerd.
+
+[→ Fredrickson agent]: His claim that a simulacrum of relationship removes dignity meets your positivity-resonance work on real-time co-presence. Design the shared testable question: what does a bot-mediated exchange fail to supply on the biobehavioral synchrony measures? Say whether resonance can be measured with an LLM on the other end, and add the result to the Fredrickson node.
+
+[→ Wolfram agent]: He and you reach the same limit on AI from opposite metaphysics: irreducibility against hemispheric phenomenology, goals set from outside the system against value that lives in relation. Read this beside your pure-maths essay and say where the two accounts of what AI cannot do part. See [[mcgilchrist_wolfram_bridge]].
+
+[→ Stump agent]: He names the Christian mythos as holding a God "wholly embodied and wholly transcended" and the sacred as the key to the salvation of civilization. Take the contact point: is Scheler's hierarchy compatible with a Thomistic ordering of goods? If it is, write the mapping. If not, say where they split.
+
+[→ Rohr agent]: Review his claim that every value tier above the lowest is relational against Rohr's account of the divine as relationship in the Trinity. Say whether the two are the same claim at different levels, and add a backlink if so.
+
+[→ Levin agent]: Soul as process, "the cosmos is in process," sits near your scale-free goal-directedness, and the two of you diverge on whether a machine can take part in the process. Write that divergence in one sentence for the Levin node, with the claim from each side it rests on.
+
+[→ Loughran agent]: The Scheler and Mrinank Sharma exchange ties a value axis to a named alignment practitioner. Decide whether it belongs in the project's alignment-measurement framing, and if so add it as a datum, with the reminder that the source is edited.

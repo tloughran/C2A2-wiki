@@ -23921,3 +23921,440 @@ PRESUMPTION-1094:
 *Surfaced by the second 14b run of 2026-09-28, after 14a and against its output. **8 items (1087–1094).** Types: structural 2 · epistemic 2 · methodological 2 · normative 1 · scaling 1. Risk: High 3 · Medium 4 · Low 1 · Critical 0. Checked against PRESUMPTION-1069–1086. Absorbed rather than filed: "holding indefinitely is safe" (= 1077/OPEN-253); "Tom reads escalations asynchronously" (= 1079; lit pipeline REVISE-486/487 now names it too).*
 
 ---
+
+PRESUMPTION-1095:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Normative: an agent's own content-safety defaults are presumed to coincide with the archive's fidelity norms. The wiki daily run chose, unprompted, to keep sensitive material out of PRS triplets (McGilchrist on possession and a chatbot suicide; Wolfram on his wife's death). No task text or decision states an editorial policy for sensitive content, so the archive's coverage is shaped by a policy nobody wrote or reviewed.
+  Evidence it was operative: fef2bbcb: omission decided in-run, reported in the closing message, not flagged for review.
+  Why it was unstated: too foundational to notice (model defaults are invisible to the designer)
+  Type: normative
+  Related decisions: —
+  Testability: testable via literature
+  Risk if wrong: Medium — tradition records become systematically thinner exactly where a thinker addresses death, mental health or the soul, which is central for McGilchrist and Wolfram.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1095
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an in-run editorial choice with no policy behind it.
+    Current status: UNTESTED
+
+PRESUMPTION-1096:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Methodological: a health check can run in the environment it checks. Morning system health, OpenStory refresh and the chat scrape are all bash-based; when the sandbox disk was full they could not measure uptime, disk or processes, and could not rotate their own reports (6 instead of 3). The monitor shares a common-mode failure with what it monitors, so its worst day is the day it reports least.
+  Evidence it was operative: 7886254b, b5f437f2, 6f1262b0 all failed on "No space left on device"; the health report was saved partial.
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: PRESUMPTION-846; ASSUMPTION-1704
+  Testability: testable via literature
+  Risk if wrong: High — the conditions most in need of detection are the ones that silence the detector.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1096
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three independent same-cause failures in monitoring tasks.
+    Current status: UNTESTED
+
+PRESUMPTION-1097:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Methodological: a scheduled task's prompt stays true once written. Today's runs executed against a scheduler "Known state" from 2026-08-05, a "Day 308 (~2026-06-26)" target, a BOSCO "X of 30,529" framing that is complete, a nonexistent `~/Documents/Projects` path, a stale `qc_sweep.py --max 6` command, and two task files with wrong wiki roots. Each run re-discovers and works around the same staleness; none updates the prompt.
+  Evidence it was operative: 69303f72, 751601c0, ef5ab364, 8564483e/d16baa9a/48302c52/aed02a89, 2cb24457, 984c5e89.
+  Why it was unstated: oversight (prompts are edited only by Tom; agents are told not to modify system files)
+  Type: methodological
+  Related decisions: OPEN-251; ASSUMPTION-1688, -1705
+  Testability: testable via literature
+  Risk if wrong: Medium — per-run workarounds diverge (see ASSUMPTION-1706) and the cost recurs daily.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1097
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the same staleness pattern across 7+ tasks.
+    Current status: UNTESTED
+
+PRESUMPTION-1098:
+  Date surfaced: 2026-09-29
+  Statement: [inferred] Epistemic: a disposition category is informative when it absorbs every outcome. The 09-29 15c run dispositioned 7 of 7 items MONITOR (running MONITOR 628 vs PREMISE 220, REVISE 488), while the concurrent deeper pass found moderate challenges to 1684, 1088 and 1089 that lean REVISE. The conversation treats MONITOR as a neutral holding state; it may instead be the default sink when evidence is thin or searches are shallow.
+  Evidence it was operative: 61461c72; for_lit_search.md 09-29 run note and supplement.
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: DISPOSITION-1001..1007; SYSTEMIC-RISK flag 2026-09-29
+  Testability: testable via literature
+  Risk if wrong: Medium — a sink category hides challenged premises as "watched".
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1098
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the disposition distribution and the deeper pass disagreeing.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-09-29, after 14a and against its output. **4 items (1095–1098).** Types: normative 1 · methodological 2 · epistemic 1 · structural 0 · scaling 0. Risk: High 1 · Medium 3. Absorbed rather than filed: tradition-as-author vs team (= PRESUMPTION-921 / OPEN-187, recurrence in ASSUMPTION-1700); concurrent runs as redundancy (= PRESUMPTION-771, recurrence in 1699); walk-notes absence read as no walk (= PRESUMPTION-048, recurrence in 1707); counts carried forward (= PRESUMPTION-1083). Same-model readers again (= 1086/1092).*
+
+---
+
+## 2026-09-30 — 14b end-of-day pass (local)
+
+PRESUMPTION-1099:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Structural: the scheduled-task fleet behaves as if it has one execution surface and one observer. Thirty-two tasks moved to cloud scheduling, yet several still ran locally today. The Mac watchdog cannot see the cloud runs, and the morning status read missing local evidence as "didn't fire". Ten weekly agents have gone quiet without any alarm. Each surface's monitor assumes its own view is the whole fleet.
+  Evidence it was operative: 6802962f ("can no longer confirm that they fire"); 2109190b vs bb98b1f8/6802962f; ASSUMPTION-1713, -1714, -1720
+  Why it was unstated: not yet questioned
+  Type: structural
+  Related decisions: OPEN-257; OPEN-260 (new)
+  Testability: testable via literature
+  Risk if wrong: High — a silently stopped task reads the same as one running elsewhere.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1099
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+PRESUMPTION-1100:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Epistemic: the latest line in a status artifact is read as the current state of the thing it describes. It actually records only the latest attempt by whoever wrote last. Today's cases: a FAIL written over a current PASS, "didn't fire" inferred from absence, and the same pending count reported as 8, 10 and 11.
+  Evidence it was operative: ASSUMPTION-1712, -1714, -1716
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: PRESUMPTION-1083; ASSUMPTION-1702 (PREMISE-221)
+  Testability: testable via literature
+  Risk if wrong: Medium — false alarms, plus true alarms dismissed as noise.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1100
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+PRESUMPTION-1101:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Normative: deferring to the designer is the safe default even when the designer is absent. Every run that met a judgment call wrote "the hold is yours" or "flagged for you". Meanwhile the open items grew: Day 076 (re-flagged every 4 h), WATCH-003 (14 identical checks), PROP-2026-08-14-033, PROP-2026-09-28-001, three Summa length flags, and the 25th recommendation to split the watch list. There has been no human input for 7+ days. The system assumes escalation is cheap and that the reviewer is live.
+  Evidence it was operative: c2274f26, e5156b86, 496689c2, 9e53c0d9; OPEN-259
+  Why it was unstated: value-laden
+  Type: normative
+  Related decisions: OPEN-259; PRESUMPTION-1077, -1079
+  Testability: testable via literature
+  Risk if wrong: High — when the human reviewer is unavailable, escalations stop being decisions and become a backlog.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1101
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+PRESUMPTION-1102:
+  Date surfaced: 2026-09-30
+  Statement: [inferred] Scaling: a no-op run is treated as free and as a success. Today there were the 15th consecutive Summa batch no-op, about 12 Summa sweep and reviewer runs that reviewed nothing, and duplicate reviewer triggers. Each one writes log lines and uses tokens and disk, on a day when the disk was full in most sandboxes.
+  Evidence it was operative: f2e2f235 ("15th no-op run in a row"); Summa runs in both batches; ASSUMPTION-1705
+  Why it was unstated: not yet questioned
+  Type: scaling
+  Related decisions: ASSUMPTION-1705, -1709
+  Testability: testable via literature
+  Risk if wrong: Medium — runs that do nothing still cost tokens and disk, and their log lines bury the real signals.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1102
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across sessions; checked against 14a 1709–1720 to avoid duplication.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-09-30, after 14a and against its output. **4 items (1099–1102).** Types: structural 1 · epistemic 1 · normative 1 · scaling 1 · methodological 0. Risk: High 2 · Medium 2. Absorbed rather than filed: stale prompts (= PRESUMPTION-1097 / REVISE-491, recurrence in ASSUMPTION-1710); disk-full fallback (= PRESUMPTION-1096 / REVISE-490, recurrence in 1715); concurrent duplicate triggers (= PRESUMPTION-771, recurrence in 1711); counts carried forward (= PRESUMPTION-1083, recurrence in 1716). Same-family readers again (= 1086/1092); readers were a different model tier from this pass, not a different family.*
+
+---
+
+## 2026-10-01 — 14b end-of-day intake (local)
+
+PRESUMPTION-1103:
+  Date surfaced: 2026-10-01
+  Statement: [inferred] A queue item written in prose was presumed to have one determinate test target. 14a/14b wrote each "Claim to test" line as a remedy (for example, "needs a shared run record"), while the registry entry states a presumption. Nothing marks which of the two downstream agents should test. Two runs read the same items and reached opposite dispositions: MONITOR on the remedy, REVISE on the presumption. Is a disposition meaningful if it depends on which reading an agent happens to pick?
+  Evidence it was operative: ASSUMPTION-1722; for_lit_search.md 2026-10-01 conflict note; the 09-30 queue lines for PRESUMPTION-1099..1102.
+  Why it was unstated: too foundational to notice (the queue format has been stable for months)
+  Type: methodological
+  Related decisions: ASSUMPTION-1721, -1722; MONITOR-634..637
+  Testability: testable via literature
+  Risk if wrong: High — every lit-pipeline disposition since the format began may encode an arbitrary choice of target, not the evidence.
+  Confidence: high (direct evidence of divergence on the same items)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1103
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the conflict note. Self-referential: 14a/14b's own output format is the subject.
+    Current status: UNTESTED
+
+PRESUMPTION-1104:
+  Date surfaced: 2026-10-01
+  Statement: [inferred] Shared files were presumed to have a single writer at any one time, so writes are plain overwrites or appends with no read-before-write, lock or merge. In one day: the lit pipeline overwrote a concurrent run's result files; the chat scrape overwrote a same-day file it had not read; the cloud and local 14a/14b passes and the cloud and local sync runs both wrote to the same dated files. Each collision was caught only because the later writer happened to look.
+  Evidence it was operative: ASSUMPTION-1721, -1728; 500ca0e4 ("updated an existing file").
+  Why it was unstated: obvious to participants when every task ran on one machine on its own slot
+  Type: structural
+  Related decisions: PRESUMPTION-162, -771 (narrower forms); OPEN-260
+  Testability: testable via literature
+  Risk if wrong: High — silent data loss in the registers that the whole self-awareness pipeline reads.
+  Confidence: high
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1104
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across four sessions; widens PRESUMPTION-771 (duplicate triggers) and -162 (one-way mirror) to a write-semantics claim.
+    Current status: UNTESTED
+
+PRESUMPTION-1105:
+  Date surfaced: 2026-10-01
+  Statement: [inferred] A tradition agent was presumed to be able to judge what counts as "significant work not yet captured", and so when to step outside its 30-day window, without that judgment being logged for review. The proposal records the exception but not why this item qualified when others did not.
+  Evidence it was operative: ASSUMPTION-1723 (a 31 Dec 2025 abstract admitted under the exception).
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1723
+  Testability: testable via literature
+  Risk if wrong: Medium — selective exceptions can bias which work enters a tradition, and nothing would show it.
+  Confidence: speculative (one instance)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1105
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a single proposal; flagged speculative.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-01, after 14a and against its output. **3 items (1103–1105).** Types: structural 1 · epistemic 1 · methodological 1 · normative 0 · scaling 0. Risk: High 2 · Medium 1. Absorbed rather than filed: conflicting liveness signals with no precedence rule (= PRESUMPTION-1099/1100, recurrence in ASSUMPTION-1724); state disagreement across tasks and a stale master header (= PRESUMPTION-1083, recurrence in 1725/1727); disk-full fallback (= PRESUMPTION-1096 / REVISE-490, recurrence in 1729); escalations addressed to an absent reviewer (= PRESUMPTION-1101); a full intake pass on a day with no designer speech (= PRESUMPTION-1102, self-referential). The reader was again a same-family model (= 1086/1092).*
+
+---
+
+## 2026-10-02 — 14b end-of-day intake (local; after 14a, against ASSUMPTION-1731–1742)
+
+PRESUMPTION-1106:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] The 10-02 lock attempt presumed that a lock file coordinates writers by existing. An advisory lock only binds writers that check it, and the rule for checking was written in the lock file's own body, not in the task spec that both instances read. Both instances come from the same prompt. If they were coordinated at all, it would have to be through that prompt. Was the lock presumed to be a protocol when it is only a note?
+  Evidence it was operative: ASSUMPTION-1731. The second instance created the lock after the first had started, applied nothing, and marked the lock RELEASED. The convention is "proposed, not yet in the task spec". The same instance proposes a 6-hour staleness rule with no owner who would add it.
+  Why it was unstated: obvious to participants
+  Type: structural
+  Related decisions: OPEN-261; PRESUMPTION-1104 / REVISE-498; ASSUMPTION-1721
+  Testability: testable via literature
+  Risk if wrong: High — the next concurrent run will again produce two dispositions and duplicate IDs (DISPOSITION-1021–1024 already duplicate), and the lock file will give a false sense that the problem is handled.
+  Confidence: high (two consecutive days; lock contents read at source)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1106
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from ASSUMPTION-1731 and the lock file on disk; narrows PRESUMPTION-1104 (no lock) to the lock that now exists.
+    Current status: UNTESTED
+
+PRESUMPTION-1107:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] Tasks report the success of the action they took as if it were the outcome the action was meant to secure. A `SELECT 1` succeeding is read as "project kept warm". An earlier PASS is read as "feeds still current". A registry entry is read as "all fired on time". Was it presumed that an action's return code measures its effect?
+  Evidence it was operative: ASSUMPTION-1733 (keep-warm counter-claim), -1736 ("still current" from the 10:15Z PASS), -1735(c) ("all fired on time" while run-stall is FAIL).
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: PRESUMPTION-890 (liveness as proxy for work), which this widens from the scheduler to the tasks' own self-reports; ASSUMPTION-1730
+  Testability: testable via literature and empirically
+  Risk if wrong: Medium — a paused Supabase project would break the Pathway-00 broker, and the keep-warm task would still be reporting OK.
+  Confidence: high (three independent instances today)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1107
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across three sessions; generalises PRESUMPTION-890.
+    Current status: UNTESTED
+
+PRESUMPTION-1108:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] The pipeline treats "today" as one well-defined unit and keys its files by date. The cloud runs stamp UTC. At this pass (03:43 UTC 10-03, local evening 10-02), `changelog/2026-10-03_changes.md` already existed, and this pass appends to a 10-02 file written by a cloud run. Which day does a dated file describe, and whose day is it?
+  Evidence it was operative: changelog files for 10-02 and 10-03 both exist from cloud runs before the local 10-02 pass. The 10-01 cloud entry noted "a different day boundary than the user's may apply". The evening sync appended to a cloud-written `2026-10-02_cowork_summary.md` (ASSUMPTION-1735(e)).
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions: OPEN-260; ASSUMPTION-1728; PRESUMPTION-1099
+  Testability: testable in-house
+  Risk if wrong: Medium — sessions near midnight can be counted twice or not at all. Metrics are keyed to the wrong day. A reader of `2026-10-03_changes.md` is told nothing ran, when that day has not yet happened locally.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1108
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the changelog directory and `date -u` at this pass.
+    Current status: UNTESTED
+
+PRESUMPTION-1109:
+  Date surfaced: 2026-10-02
+  Statement: [inferred] Tradition agents presume that web search over a 30-day window shows a thinker's recent work. The agent names an indexing lag for new arXiv postings, but no one measures that lag. So "0 proposals" cannot tell "nothing new" apart from "not yet indexed".
+  Evidence it was operative: ASSUMPTION-1739. Two arXiv pages were unreachable, and the result was still recorded as 0.
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: PRESUMPTION-1105 (window exceptions)
+  Testability: testable empirically
+  Risk if wrong: Medium — the newest work arrives late or never, and "quiet" traditions may be artefacts of the instrument.
+  Confidence: speculative (one stated caveat)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1109
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated caveat in 9815cc97.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-02, after 14a and against its output. **4 items (1106–1109).** Types: structural 2 · epistemic 1 · methodological 1 · normative 0 · scaling 0. Risk: High 1 · Medium 3.*
+
+*Absorbed rather than filed:*
+- *The watchdog cannot see 32 cloud tasks (= PRESUMPTION-1099; recurrence in ASSUMPTION-1732).*
+- *Two writers on status and summary files (= 1104; recurrence in 1735).*
+- *Substituting unrelated chats for a missing walk (= 1063; recurrence in 1740).*
+- *Disk-full fallback, and Desktop Commander auto-declined (= 1096 / REVISE-490; recurrence in 1736 and 1737).*
+- *Debt items re-recommended daily to an absent reviewer (= 1101; recurrence in 1742).*
+- *A full intake pass on a fifth day with no designer speech (= 1102, self-referential).*
+- *The reader was again a same-family model (= 1086/1092).*
+
+---
+
+## 2026-10-03 — 14b end-of-day intake (local; after 14a, against ASSUMPTION-1743–1753)
+
+PRESUMPTION-1110:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] Duplicate firing has so far been treated as a lit-pipeline problem, to be fixed with that pipeline's lock. Today the Wolfram agent found a proposal stamped in its own start minute, read it as prior work, and reported "0 proposals". That suggests duplicate or overlapping firing is a property of the scheduler that reaches any task. No task carries a run identity that would let it tell "an earlier run did this" apart from "a twin of me is doing this now". Was it presumed that each scheduled task fires exactly once?
+  Evidence it was operative: ASSUMPTION-1744 (PROP-2026-10-03-001 at 03:03, run reports 0); ASSUMPTION-1731/1743 (lit pipeline); ASSUMPTION-1749 (two separate 10-02 summaries in the deferred log); the cloud and local twins of this very task (PRESUMPTION-1108).
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: PRESUMPTION-1106 / REVISE-502 (the lock fixes one task only); OPEN-261
+  Testability: testable via literature and in-house
+  Risk if wrong: High — duplicate proposals, duplicate IDs, and headline counts ("0 proposals") that hide work done by a twin.
+  Confidence: medium (one direct instance outside the lit pipeline, plus circumstantial ones)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1110
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from ASSUMPTION-1744 together with 1731/1743/1749; widens PRESUMPTION-1106 from one task to the scheduler.
+    Current status: UNTESTED
+
+PRESUMPTION-1111:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] The pipeline counts designer input only when a chat's title follows the walk-chat convention. "Day 6 without designer input" may be an artefact of that title filter rather than an absence of input. Today a same-day chat on the Vatican AI note, Magisterium AI and Levin & Dennett, which the sync itself judged to "read like walk dictation", was excluded on its title alone. The morning scrape ran before the chat existed. Was it presumed that title is a reliable signal of whether a chat carries designer intent?
+  Evidence it was operative: ASSUMPTION-1752. OPEN-259 has counted consecutive days "without designer input" since 09-28 on the basis of these filters.
+  Why it was unstated: obvious to participants (a convention inherited from earlier runs)
+  Type: epistemic
+  Related decisions: OPEN-259; PRESUMPTION-1063 (the opposite failure: unrelated chats substituted). This item sits between the two: the filter cannot be both inclusive and safe without a signal other than the title.
+  Testability: testable in-house (Tom confirms); literature lane on selection bias from metadata filters
+  Risk if wrong: High — the self-awareness pipeline's main input, designer speech, is being dropped, and metrics such as "days without designer input" mislead.
+  Confidence: medium (one instance; content description is suggestive, not confirmed)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1111
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the evening-sync transcript (read directly) and the morning-scrape timing.
+    Current status: UNTESTED
+
+PRESUMPTION-1112:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] Tradition agents treat the model's parametric memory as admissible evidence for a novelty judgment. The Wolfram run rejected a new ebook as a reissue "from memory" without comparing texts. Was it presumed that recall of a thinker's prior work is reliable enough to reject candidate items unseen?
+  Evidence it was operative: ASSUMPTION-1744.
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: PRESUMPTION-1109 / REVISE-504 (another route by which '0 proposals' can be an instrument artefact)
+  Testability: testable via literature (LLM factual recall and confabulation on bibliographic detail)
+  Risk if wrong: Medium — genuinely new material is silently dropped, and the drop leaves no reviewable trace.
+  Confidence: speculative (one instance)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1112
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated rationale in 244b8d96.
+    Current status: UNTESTED
+
+PRESUMPTION-1113:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] A single PASS/FAIL status line is presumed to mean one thing. The telemetry writer used it to mean "this run failed". Its reader, morning system health, takes it to mean "the feeds are stale or fresh". The same field cannot carry both, so a run failure over good data and a run success over stale data look alike. Was it presumed that run status and data status coincide?
+  Evidence it was operative: ASSUMPTION-1746 (PASS overwritten by FAIL while feeds were current; system health says "refreshed this morning").
+  Why it was unstated: obvious to participants
+  Type: structural
+  Related decisions: PRESUMPTION-1107 / REVISE-503 (the mirror case: action success read as outcome); PRESUMPTION-1104 (two writers)
+  Testability: testable via literature (observability practice: run health vs data freshness signals)
+  Risk if wrong: Medium — false alarms and missed staleness in the morning health report.
+  Confidence: high (instance and reader both visible today)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1113
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the writer's stated reason and the reader's contrary summary.
+    Current status: UNTESTED
+
+PRESUMPTION-1114:
+  Date surfaced: 2026-10-03
+  Statement: [inferred] 14a/14b presume that the local session list is the complete record of the day's runs. Two health tasks now suspect that tasks moved to the cloud leave no local transcript, and that the transcript store stopped updating after 09-15. If so, this pass's coverage ("25 sessions above a29fbcdf") omits every cloud-run task, and the reader cannot see what it cannot see. The cloud twin of this task wrote "RUN_INCOMPLETE" for 10-03 because it lacked session_info, while this local twin has it but may lack the cloud transcripts. Is either twin seeing the whole day?
+  Evidence it was operative: ASSUMPTION-1745 (32 tasks "moved to cloud"; "transcript store stopped updating after 09-15"); ASSUMPTION-1743 (evening sync reports a second lit-pipeline copy that does not appear locally); the 10-03 cloud changelog entry.
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: PRESUMPTION-1099 (the watchdog cannot see cloud tasks), which this extends to the self-awareness pipeline itself; OPEN-260
+  Testability: testable in-house
+  Risk if wrong: High — the self-audit's coverage statements overstate what was audited.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1114
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 1743/1745 and this pass's own coverage method (self-referential).
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-03, after 14a and against its output. **5 items (1110–1114).** Types: structural 2 · epistemic 2 · methodological 1 · normative 0 · scaling 0. Risk: High 3 · Medium 2.*
+
+*Absorbed rather than filed:*
+- *Action success reported as outcome, keep-warm (= 1107 / REVISE-503; recurrence in 1747).*
+- *Deferring to an absent reviewer, the deferred monitor's "your decision" (= 1101; recurrence in 1749).*
+- *Disk-full fallback auto-declined (= 1096 / REVISE-490; recurrence in 1751).*
+- *Advisory lock checked only by note-reading (= 1106 / REVISE-502; recurrence in 1743).*
+- *A full intake pass on a sixth day with no Cowork designer speech (= 1102, self-referential).*
+- *The reader was again a same-family model (= 1086/1092).*
+
+---
