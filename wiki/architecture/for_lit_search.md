@@ -22419,24 +22419,24 @@ ASSUMPTION-1303 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-598)
   re-queued a third time. **15b's null is a SEARCHED-AND-NOT-FOUND, not an unsearched gap — a second
   null should be read as a finding, not as a reason for a third pass.** Priority: Medium.
 
-ASSUMPTION-1315 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-602)
+ASSUMPTION-1315 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-602) [SEARCHED-15a: 2026-10-06] [SEARCHED-15b: 2026-10-06] [DISPOSITIONED-15c: 2026-10-06] — limb A: 15a SUPPORTED/Strong (de Kleer 1986 fetched); 15b PARTIALLY-CHALLENGED/Mod (per-justification, not scope-wide) -> INCORPORATE narrowed PREMISE-223 (DISPOSITION-1045)
   LIMB A only. **The search is named at intake and was not run:** the truth-maintenance-system literature
   (Doyle; de Kleer) on whether an absence claim is invalidated by any later ingest into its scope. This
   is a settled formal literature, not a novelty question. Priority: Medium-High.
 
-PRESUMPTION-955 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-605)
+PRESUMPTION-955 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-605) [SEARCHED-15a: 2026-10-06] [SEARCHED-15b: 2026-10-06] [DISPOSITIONED-15c: 2026-10-06] — corrective: 15a PARTIALLY-SUPPORTED (OPC UA Part 8 primary); 15b PARTIALLY-CHALLENGED/Mod (Uncertain collapses to success) -> MONITOR-681 (DISPOSITION-1044)
   Corrective limb. **Cheap and specific: standards retrieval, not open search** — ISA-18.2 §3 (or IEC
   62682) and OPC UA Part 8 on ternary status vocabularies (PASS / DEGRADED / FAIL). The realised harm is
   already carved out to REVISE-457 and is NOT part of this item. Priority: Medium.
 
-ASSUMPTION-1321 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-606)
+ASSUMPTION-1321 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-606) [SEARCHED-15a: 2026-10-06] [SEARCHED-15b: 2026-10-06] [DISPOSITIONED-15c: 2026-10-06] — remedy: 15a SUPPORTED/Mod (Kawamoto full text VERIFIED); 15b PARTIALLY-CHALLENGED/Mod (Roshanov 2013) -> MONITOR-680 (DISPOSITION-1043)
   REMEDY limb (push vs pull) only. **Owed literature limb is one full-text fetch:** Kawamoto et al. 2005
   (BMJ 330:765), currently VERIFIED only through the CRD/DARE critical abstract (NBK71623). **Do not
   quote the 112.1 workflow-feature figure — its upper bound is infinity.** The cheaper path (a) is the
   PREMISE-108 base-rate measurement and is empirical; it is noted here, not queued as a search.
   Priority: Medium.
 
-PRESUMPTION-979 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-608)
+PRESUMPTION-979 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-608) [SEARCHED-15a: 2026-10-06] [SEARCHED-15b: 2026-10-06] [DISPOSITIONED-15c: 2026-10-06] — comparative: 15a PARTIALLY-SUPPORTED/Weak; 15b CHALLENGED/Mod (Brown 2014: narrative read, structured skimmed) -> MONITOR-679 (DISPOSITION-1042)
   Comparative limb only, held at intake explicitly as **a literature gap** (15a NOVELTY-FLAG): the
   relative uptake of a prose qualification against a structured status field. The determinative limb is
   already released to REVISE-466 and is not re-queued. Priority: Medium.
@@ -25346,8 +25346,18 @@ ITEM: PRESUMPTION-1114 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-04 — empirica
 ## 2026-10-04 — 15d Periodic Monitor re-triggers (weekly + monthly-lane; 1 literature re-trigger)
 
 [ASSUMPTION] ASSUMPTION-1305: (limb C — pending/ = 0 skip-the-hunt-phase; see MONITOR-600 in monitor_queue.md)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-04, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-04, cycle 1] [SEARCHED-15a: 2026-10-06] [SEARCHED-15b: 2026-10-06] [DISPOSITIONED-15c: 2026-10-06] — limb C: 15a PARTIALLY-SUPPORTED/Weak; 15b PARTIALLY-CHALLENGED/Weak-Mod; Goldratt primary unretrieved 2nd time -> MONITOR-678 (DISPOSITION-1041)
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 0 -> 1; Cadence: Monthly (15c-set, not changed by 15d); Last checked: 2026-10-04; Next 15d check: 2026-11-01
   Evidence trajectory: no prior 15d cycle - baseline. Supporting/Challenging: stable (no search since DISPOSITION-928).
   Notes: Owed per item text: primary-source retrieval (Goldratt, drum-buffer-rope) that neither side fetched; the 30-day pending/ depth-and-age series is an in-house limb (not a literature search). 15d re-trigger only; no evidence evaluated.
+
+
+## 2026-10-06 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** No new 14a/14b intake since 10-03 (assumptions.md/presumptions.md unmodified since 2026-10-03 23:45). Per the 10-05 precedent the run took a backlog batch: the 5 newest 15d literature re-triggers (ASSUMPTION-1305 [10-04]; PRESUMPTION-979, ASSUMPTION-1321, PRESUMPTION-955, ASSUMPTION-1315 [09-20 cohort]). Selection rule: newest-queued first, cap 5 — an orchestrator choice, not in the task spec.
+**Dispositions:** DISPOSITION-1041..1045 — 1 INCORPORATE (1315 limb A → PREMISE-223), 4 MONITOR (1305 → MONITOR-678; 979 → MONITOR-679; 1321 → MONITOR-680; 955 → MONITOR-681), 0 REVISE.
+**SYSTEMIC-RISK (15b, High):** doctrine applied at the wrong grain across all five items — see lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-06_doctrine-applied-at-wrong-grain_1305-979-1321-955-1315.md.
+**Backups:** *.bak.20261006-pre-15pipeline made for all five registers. Lock written LOCKED at start, RELEASED at end.
+**Backlog remaining (fail loud):** queue_scan.py reported 147 bare literature-lane items before this run; 142 remain (mostly 15d re-triggers from 07-26..09-20). Not touched.
+**Independence:** separate subagent contexts, same model family (cf. REVISE-488). 15b reported three fetches refused as "already fetched this session" (shared fetch cache with concurrent 15a); 15b says it saw none of that content.

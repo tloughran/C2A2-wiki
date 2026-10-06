@@ -25191,3 +25191,43 @@ MONITOR-677:
   Disposition basis: Claim holds for expiring/rolling sources, not persistent indexed corpora read by cursor; the 15-tradition cadence case depends on which applies. Would change: in-house check of source persistence per tradition plus a primary source on null-report indistinguishability.
   Monitoring cadence: Weekly (default)
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+MONITOR-678:
+  Date: 2026-10-06
+  Source item: ASSUMPTION-1305 (limb C — skip-the-hunt when pending/ = 0) | Source disposition: DISPOSITION-1041
+  Item type: ASSUMPTION (stated)
+  Cycle: 1 (15d re-trigger); Cadence: Weekly; Priority: Low
+  What is held here: Prior: MONITOR-600. Literature lane CLOSED after a second Goldratt-primary null. Both directions agree the doctrinal trigger is the constraint buffer, not intake emptiness.
+  What would change the disposition: (a) in-house 30-day pending/ depth-and-age series; (b) count of skip days on which review was idle (rule fired in the starve case); (c) a perishable-source loss on any skip day.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+MONITOR-679:
+  Date: 2026-10-06
+  Source item: PRESUMPTION-979 (comparative limb — prose vs status-field uptake) | Source disposition: DISPOSITION-1042
+  Item type: PRESUMPTION (unstated)
+  Cycle: 1 (15d re-trigger); Cadence: Weekly; Priority: High
+  What is held here: Prior: MONITOR-608. External evidence (Brown 2014, n=10) suggests structured sections are the LESS-read channel; this bears on REVISE-466's remedy and should be seen before any move-qualifications-to-status-rows change.
+  What would change the disposition: (a)/(b) from MONITOR-608 (REVISE-466 actions 2 and 3) with denominators; if both near zero, close as mis-specified and route to PRESUMPTION-962 (forcing functions).
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+MONITOR-680:
+  Date: 2026-10-06
+  Source item: ASSUMPTION-1321 (remedy limb — push vs pull) | Source disposition: DISPOSITION-1043
+  Item type: ASSUMPTION (stated)
+  Cycle: 1 (15d re-trigger); Cadence: Weekly; Priority: Medium
+  What is held here: Prior: MONITOR-606. Owed literature limb (c) DISCHARGED: Kawamoto 2005 full text verified (75% vs 0%; no ORs quoted). Counter-evidence: Roshanov 2013 (in-interface OR 0.37; developer-evaluated OR 4.35), Van de Velde 2018 (adherence not outcomes).
+  What would change the disposition: PREMISE-108 base-rate measurement (empirical); if supportive, INCORPORATE narrowed: "automatic delivery beats on-demand for adherence, not outcomes, subject to PREMISE-173 selectivity-first and not embedded in the working interface".
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+MONITOR-681:
+  Date: 2026-10-06
+  Source item: PRESUMPTION-955 (corrective limb — ternary status vocabulary) | Source disposition: DISPOSITION-1044
+  Item type: PRESUMPTION (unstated)
+  Cycle: 1 (15d re-trigger); Cadence: Weekly; Priority: Medium
+  What is held here: Prior: MONITOR-605. OPC UA Part 8 verified at source by both sides. Refinement carried: a third state is safe only with a typed sub-code and consumers that do not test "not FAIL" (OPC A.4.3 maps Uncertain to success). Cross-ref REVISE-457.
+  What would change the disposition: (a) ISA-18.2 / IEC 62682 text (paywalled); (b) in-house consumer audit of every reader of the status field (MONITOR-605 (b)).
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING

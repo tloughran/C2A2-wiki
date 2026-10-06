@@ -1,1 +1,2 @@
-2026-10-04  FAIL  step 1 (freshness guard) — run environment unavailable: sandbox bash "useradd: /etc/passwd: No space left on device"; Mac-shell fallback auto-declined (no approver). Feeds NOT refreshed this run; last PASS 2026-10-04T10:15Z telemetry=2026-10-04/33 agents node_edges=2026-10-04
+2026-10-05T10:15Z  PASS  telemetry=2026-10-05/33 agents  node_edges=2026-10-05  | DB age 1h
+2026-10-05T20:26Z  PASS  telemetry=2026-10-05/33 agents  node_edges=2026-10-05/28 agents  | DB age 1h (launchd, on the Mac)

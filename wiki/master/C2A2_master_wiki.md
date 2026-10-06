@@ -1149,3 +1149,14 @@ Orchestrator searched Levin, Carroll (no episode 370 indexed), Kastrup: nothing 
 Review page: 17 proposals, opened in browser. 10-01 review page moved to `review/_superseded/`. Review Log 507
 cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 12 (no WARN). Network
 unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 17; oldest (Fredrickson PROP-2026-09-24-001) 11 days queued.
+
+### 2026-10-06 — Daily Run
+Phase 0: no new `[C2A2-review-decision]` email; the same four old threads (07-23, 04-27 x2, 04-08) are already
+archived; nothing moved. Ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Tuesday
+specialist (Hawkins) wrote PROP-2026-10-06-001..003 (Rome Focus Week proposals and final presentations; Attention in
+Monty hackathon prototype); no Hoffman card today. Orchestrator searched Hoffman: only an upcoming 2026-10-16 talk and
+the already-carded IONS "spacetime headset" event, so **0 orchestrator proposals**.
+
+Review page: 20 proposals, opened in browser. 10-02 review page moved to `review/_superseded/`. Review Log 510
+cards, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 13 (no WARN). Network
+unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending 20; oldest (Fredrickson PROP-2026-09-24-001) 12 days queued.

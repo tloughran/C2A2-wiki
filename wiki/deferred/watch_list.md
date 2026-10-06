@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-09-29
-  Check count: 14
+  Last checked: 2026-10-06
+  Check count: 15
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -57,6 +57,7 @@ WATCH-003:
     - 2026-09-25 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 13; next on-cadence check remains 2026-09-29): **`review/archive/` is no longer unchanged.** A **20th** decision file exists, `2026-09-24_decisions.md` — the first disposition recorded since 2026-09-10, a **14-day** gap. This is precisely the event this check method waits on. Source: Gmail `[C2A2-review-decision] 2026-09-23` (thread 1a0ceeda8b2ac226) — **35 decisions, all APPROVE**, disposing the entire backlog in one pass. Content grep of the new file for `2026-07-19-001` and `beatitudes-week-two`: **zero matches.** Grep across all of `review/archive/` and `inbox/` for `2026-07-19-001` / `2026-07-19-003` / `beatitudes-week-two` / `who-is-this-god`: matches remain confined to the 08-27 APPROVEs of the two re-filings, the approved and staged copies of those re-filings, and the ingest lines in `PROCESSED_LOG.md`. The original file has still not reappeared in any proposals/ subfolder. Folder census: `pending/` **1** (the 09-24 Fredrickson card, filed after `review/2026-09-24_review.html` was generated), `approved/` **449**, `denied/` 1, `needs_review/` 1, `review/archive/` **20**. Condition NOT met. **Thirteen checks, thirteen identical answers.**
       **One collateral finding, bearing on open items rather than on this condition:** the 35-card batch included all seven cards this agent has flagged as leak-shaped (cumulative count 18) and both cards carrying unheld dated verification conditions (PROP-2026-09-02-002, PROP-2026-09-22-003) — all APPROVE, en bloc, with no separate ruling on the LEAKAGE FLAG's three options recorded anywhere in the decision file or in `master/incoming_dispatches.md`. This is not a finding about WATCH-003's own condition, and Agent 16 does not treat it as resolving the LEAKAGE FLAG; it is recorded because the 2026-09-24 deadline this agent has been escalating since 09-20 passed without a distinguishable ruling, and Tom should know that plainly rather than infer it from a census.
     - 2026-09-29: On-cadence check; count now **14**. `review/archive/` unchanged at **20** files, latest still `2026-09-24_decisions.md` — no decision file written since the 09-24 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` for `2026-07-19-001` / `2026-07-19-003` / `beatitudes-week-two` / `who-is-this-god`: only matches remain lines 26 and 43 of `2026-08-27_decisions.md` (APPROVEs of the re-filings PROP-2026-08-12-041 and PROP-2026-08-14-033). Vault-wide filename search for both original slugs returns only the four re-filing copies (two in `approved/`, two in the `inbox/` staging mirror). The original file has not reappeared in any proposals/ subfolder. Folder census: `pending/` **5**, `denied/` 1, `needs_review/` 1 (`approved/` 449 per the 09-28 ledger line; not recounted this run — see summary). Condition NOT met. **Fourteen checks, fourteen identical answers.** Review-pass gap: **5 days**; the next pass is additionally blocked on Gmail re-authentication (09-28 `PROCESSED_LOG.md`, Phase 0). Nothing new to say about this item's own condition.
+    - 2026-10-06: On-cadence check; count now **15**. `review/archive/` unchanged at **20** files, latest still `2026-09-24_decisions.md` — no decision file written since the 09-24 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` for `2026-07-19-001` / `2026-07-19-003` / `beatitudes-week-two` / `who-is-this-god`: only file matching is `2026-08-27_decisions.md` (APPROVEs of the re-filings). Vault-wide `find` for both original slugs returns only the four re-filing copies (two in `approved/`, two in the `inbox/` staging mirror). Original file has not reappeared in any proposals/ subfolder. Folder census (shell, recounted): `pending/` **17**, `approved/` 449, `denied/` 1, `needs_review/` 1. Condition NOT met. **Fifteen checks, fifteen identical answers.** Review-pass gap: **12 days**.
 
   [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
 
@@ -6672,3 +6673,29 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-05.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-06
+
+**WATCH-003 checked on cadence: condition NOT met. Nothing resolved, nothing added.**
+
+  Items checked: 1 (WATCH-003, count 14 → **15**)
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom** — one retroactive INTEGRITY FLAG line closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003, **2026-10-13** (or earlier if a new file appears in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` holds 1 file (`2026-04-21_carroll_singer-mindscape-351.md`, already `[TRACKED-16: 2026-05-05]`). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |` at line start, vault-wide excluding `deferred/` and `agents/`): zero files.
+
+**Census (shell):** `pending/` **17** (+1 since 10-05: `2026-10-05_friston_inferential-planning-frontal-cortex.md`), `approved/` 449, `denied/` 1, `needs_review/` 1, `review/archive/` 20. Review-pass gap: **12 days**.
+
+**Environment:** sandbox shell worked this run (disk 61% used; the 10-04/10-05 `No space left` condition has cleared). Watch list ~800 KB — split the run log (**31st** recommendation). Backup of pre-edit file taken in sandbox only.
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; decide whether PROP-2026-09-22-003 (Hoffman, post-talk check, checkable since 10-04) becomes a Channel 3 watch; Gmail reconnection not re-verified.
+
+**Agent 16 Status:** Operational. 1 due, 1 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1.
+
+---
+
+*Run completed 2026-10-06.*

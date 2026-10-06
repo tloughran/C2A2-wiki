@@ -2095,3 +2095,21 @@ Note: Linux sandbox bash failed again (useradd: No space left on device); all sc
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 17 (oldest Fredrickson PROP-2026-09-24-001,
 11 days).
+
+## 2026-10-06 — C2A2 daily run (Tue, Hawkins + Hoffman specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: same 4 old threads (07-23, 04-27 x2, 04-08), all already
+archived. No moves; left unread.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, OPEN=1 (Wright
+PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Hawkins covered by specialist (PROP-2026-10-06-001..003). No Hoffman specialist card;
+orchestrator searched Hoffman: nothing new (upcoming 10-16 talk only).
+**Phase 3.** `review/2026-10-06_review.html` (177,610 bytes, 20 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-2118080111511490830).
+**Phase 5.** `review/2026-10-02_review.html` moved to `review/_superseded/`. 10-03..10-06 retained.
+**Phase 5.5.** OK: 6,907,043 bytes; cards 510, dates 140, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 13, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 20 (oldest Fredrickson PROP-2026-09-24-001,
+12 days).

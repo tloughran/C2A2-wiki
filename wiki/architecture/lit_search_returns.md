@@ -50409,3 +50409,186 @@ DISPOSITION-1040:
 
 Running totals after this run: PREMISE-222 | MONITOR-677 | REVISE-507 (unchanged) | DISPOSITION-1040.
 Distribution (7 items): 1 INCORPORATE, 6 MONITOR, 0 REVISE. All searches PRELIMINARY scope. Not done: the 15d re-trigger/re-check lane (~296 tagged lines) was not searched. Budget: far over the 4k/30k guideline (14 search subagents).
+
+
+## 2026-10-06 — c2a2-lit-search-pipeline run (empty-queue status report; null run)
+
+PROVENANCE: Origin: scheduled task c2a2-lit-search-pipeline | Chain: [queue scan only; no 15a/15b/15c transform] | Transform at this step: Queue inventory | Current status: NULL-RUN
+
+**Status:** No items processed. Zero [QUEUED] items lack [SEARCHED-15a]/[SEARCHED-15b] tags among new-intake (14a/14b) items. No partial-search items; no searched-but-undispositioned items (6 multi-line 2026-09-10 items scanned as partial were confirmed DISPOSITIONED-15c). No 14a/14b intake dated 2026-10-06 present at run time.
+
+**Not processed (15d-owned lane, same as 2026-10-05 run):** ~130 RE-TRIGGER lines (overdue from 2026-07-05..2026-08-02 plus 1 dated 2026-10-04) and ~158 RE-CHECK lines (2026-10-04). These are tagged [QUEUED] but carry no new claim; 15d owns cadence. Carry-forward backlog persists; recommend verifying 15d disposition path for the July-dated cohort.
+
+Success criteria: no items in searched-but-undispositioned state; provenance chains unchanged. No files other than this note modified.
+
+## 15a/15b/15c RUN — 2026-10-06 (scheduled c2a2 lit-search pipeline; 15d re-trigger backlog, 5 items: ASSUMPTION-1305, PRESUMPTION-979, ASSUMPTION-1321, PRESUMPTION-955, ASSUMPTION-1315)
+
+[FOR] ASSUMPTION-1305 (limb C) (PROVENANCE: Origin=14a; Chain=[14a→15a→15c→15d→15a re-trigger]; Item type=ASSUMPTION (stated))
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1305 (limb C)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Martin, "Drum-Buffer-Rope System," MAAW [fetched, secondary]; Goldratt & Fox 1986 [bibliographic only]
+  Summary: DBR's rope (release at the constraint's pace) supports withholding new cards while review is congested. Goldratt primary NOT retrieved (second pass). DBR puts the buffer in front of the constraint, so limb C holds only if pending/ is a release point, not the buffer.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1305_retrigger-2026-10-06_for.md
+
+[AGAINST] ASSUMPTION-1305 (limb C) (PROVENANCE: Origin=14a; Chain=[14a→15b→15c→15d→15b re-trigger]; Item type=ASSUMPTION (stated))
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1305 (limb C)
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-to-Moderate
+  Key source: Spearman, Woodruff & Hopp 1990, IJPR 28:879 [fetched, abstract]; DBR descriptions [search-result]
+  Summary: DBR and CONWIP key release to the constraint buffer, never to intake-queue emptiness; with 85 triplets awaiting review both would have withheld release, which weakens 15b's prior "starving the constraint" counter. Remaining challenge: wrong trigger signal (fires when review is idle too) and unpriced perishable sources.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1305_retrigger-2026-10-06_against.md
+
+[FOR] PRESUMPTION-979 (comparative limb) (PROVENANCE: Origin=14b; Chain=[14b→15a→15c→15d→15a re-trigger]; Item type=PRESUMPTION (unstated))
+RETURN-TO-14b:
+  Original item: PRESUMPTION-979 (comparative limb)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Brown et al. 2014, Appl Clin Inform 5:430 [fetched, abstract]; Sistrom & Honeyman-Buck 2005, AJR 185:804 [search-result]
+  Summary: Analogous clinical studies only: with content constant, format made no difference to transfer (Sistrom); readers attended more to narrative than structured data (Brown). Neither tests a prose qualification against a status flag. NOVELTY-FLAG narrowed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-979_retrigger-2026-10-06_for.md
+
+[AGAINST] PRESUMPTION-979 (comparative limb) (PROVENANCE: Origin=14b; Chain=[14b→15b→15c→15d→15b re-trigger]; Item type=PRESUMPTION (unstated))
+RETURN-TO-14b:
+  Original item: PRESUMPTION-979 (comparative limb)
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED (equal-rate presumption; direction reversed)
+  Strength: Moderate
+  Key source: Brown, Marquard et al. 2014, Appl Clin Inform 5(2):430 [fetched abstract via Europe PMC]
+  Summary: Eye-tracking (n=10): attention went to the narrative Impression/Plan; structured sections were skimmed; 9% of handoff content came from outside the narrative. Rates are not equal, and structured fields were the less-read channel. Clinician, small-n, cross-domain.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-979_retrigger-2026-10-06_against.md
+
+[FOR] ASSUMPTION-1321 (remedy limb, push vs pull) (PROVENANCE: Origin=14a; Chain=[14a→15a→15c→15d→15a re-trigger]; Item type=ASSUMPTION (stated))
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1321 (remedy limb, push vs pull)
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Kawamoto, Houlihan, Balas & Lobach 2005, BMJ 330:765 [fetched, full text]
+  Summary: Full text confirms 30/32 (94%) four-feature systems improved practice vs 18/39 (46%), and a direct push-vs-pull figure: 75% success with automatic provision vs 0% when clinicians had to seek advice (rate difference 75%, 37–84%). No odds ratios quoted; 112.1 not used. The time/location feature alone is not significant (CI crosses 0); only in the multivariate model.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1321_retrigger-2026-10-06_for.md
+
+[AGAINST] ASSUMPTION-1321 (remedy limb, push vs pull) (PROVENANCE: Origin=14a; Chain=[14a→15b→15c→15d→15b re-trigger]; Item type=ASSUMPTION (stated))
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1321 (remedy limb, push vs pull)
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Roshanov et al. 2013, BMJ 346:f657 [fetched abstract]; Van de Velde et al. 2018 [fetched abstract]
+  Summary: Not a failed replication: Van de Velde finds automatic beats on-demand for adherence (supports push) but little/no effect on patient outcomes; Roshanov finds advice embedded in the charting/order-entry interface LESS likely effective (OR 0.37, 0.17–0.80) and developer-evaluated systems show more benefit (OR 4.35). Push may raise citation without improving application.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1321_retrigger-2026-10-06_against.md
+
+[FOR] PRESUMPTION-955 (corrective limb) (PROVENANCE: Origin=14b; Chain=[14b→15a→15c→15d→15a re-trigger]; Item type=PRESUMPTION (unstated))
+RETURN-TO-14b:
+  Original item: PRESUMPTION-955 (corrective limb)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (vocabulary) / Weak ("dissolves the priority")
+  Key source: OPC 10000-8 (OPC UA Part 8) v1.05.07 §A.4.3.3 [fetched, primary]; Stauffer 2016, exida, quoting ANSI/ISA-18.2-2016 [fetched, secondary]
+  Summary: OPC UA verified at source: quality is a StatusCode on the value with Good/Uncertain/Bad severity. ISA-18.2's alarm vs alert classes support a narrow alarm tier plus an informing tier. ISA/IEC standard text, convert-to-indication requirement and value-NULL-on-Bad remain unconfirmed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-955_retrigger-2026-10-06_for.md
+
+[AGAINST] PRESUMPTION-955 (corrective limb) (PROVENANCE: Origin=14b; Chain=[14b→15b→15c→15d→15b re-trigger]; Item type=PRESUMPTION (unstated))
+RETURN-TO-14b:
+  Original item: PRESUMPTION-955 (corrective limb)
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: OPC UA Part 8 (IEC 62541-8) v1.05.07 Annex A.4.3 / Table A.7 [fetched at source]
+  Summary: OPC's own normative bridge treats Uncertain like Good as a successful operation and maps only Bad to error; the stale case (Uncertain_LastUsableValue) sits in the middle state most likely to be collapsed. OPC's middle state works only because it carries a typed sub-code; a bare DEGRADED token lacks one and will be read as PASS by any "not FAIL" consumer. ISA/IEC not retrieved.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-955_retrigger-2026-10-06_against.md
+
+[FOR] ASSUMPTION-1315 (limb A) (PROVENANCE: Origin=14a; Chain=[14a→15a→15c→15d→15a re-trigger]; Item type=ASSUMPTION (stated))
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1315 (limb A)
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong (principle) / Moderate (scope)
+  Key source: de Kleer 1986, "An Assumption-based TMS," Artificial Intelligence 28:127–162 [fetched]; Doyle 1979, AI 12:231–272 [search-result]
+  Summary: A belief justified by an outlist (the TMS form of an absence claim) holds only while every outlist node is OUT, so an ingest that brings one IN invalidates it. de Kleer: "Only assertions directly affected ... should be retracted"; finding them is the costly part. Backs dependency-scoped invalidation, not global re-opening.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1315_retrigger-2026-10-06_for.md
+
+[AGAINST] ASSUMPTION-1315 (limb A) (PROVENANCE: Origin=14a; Chain=[14a→15b→15c→15d→15b re-trigger]; Item type=ASSUMPTION (stated))
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1315 (limb A)
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Babaian & Schmolze, "Efficient Open World Reasoning for Planning," arXiv cs/0601032 [fetched]; Etzioni, Golden & Weld 1997 [search-result]; Doyle 1979 [background-knowledge]
+  Summary: Formal literature retracts only when a recorded justification changes, not whenever anything enters scope; a new object turns "none" into "none except possibly the new one". The run's scope-wide rule is right in kind but too coarse (147-item hand-check backlog on large nights). Base ATMS needs an extension to express absence claims.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1315_retrigger-2026-10-06_against.md
+
+NOVELTY-FLAG (narrowed):
+  Item: PRESUMPTION-979 (comparative limb)
+  Searched: clinical-informatics free-text vs structured reports; eye-tracking of note sections (2-3 searches, 1 fetch per side)
+  Finding: Analogous comparisons exist; no study of a prose QUALIFICATION vs a discrete STATUS FIELD in one operational report, none separating human skimmers from agent retrieval.
+  Implication: Gap narrower than the cycle-0 flag; only the in-house measurement (MONITOR-608 (a)/(b)) can answer the specific question.
+  Recommended status: NOVEL (narrowed scope only)
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-10-06
+  Affected items: ASSUMPTION-1305, PRESUMPTION-979, ASSUMPTION-1321, PRESUMPTION-955, ASSUMPTION-1315
+  Common vulnerability: each applies a sound outside doctrine at a coarser grain than the doctrine uses — queue emptiness instead of the constraint buffer (1305); format instead of function (979); delivery instead of a forcing step (1321); a bare third token instead of severity + sub-code (955); scope-wide instead of per-justification invalidation (1315).
+  Risk level: High
+  Recommendation: each item should name the signal its source doctrine acts on and show the estate's rule uses the same one; the in-house tests already named in each MONITOR entry should now decide these items, not more literature.
+  Full flag: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-06_doctrine-applied-at-wrong-grain_1305-979-1321-955-1315.md
+
+## 15c — dispositions, 2026-10-06
+
+DISPOSITION-1041:
+  Date: 2026-10-06
+  Item: ASSUMPTION-1305 (limb C)
+  Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Weak); Goldratt primary NOT retrieved, second null
+  15b: PARTIALLY-CHALLENGED (Weak-to-Moderate); trigger-signal and perishability, not the act of skipping
+  Disposition: MONITOR -> MONITOR-678
+  Reasoning: Both sides converge: DBR/CONWIP would have withheld release on the day in question, but they key release to the constraint buffer, not to pending/ = 0. Goldratt primary has now come back unretrieved twice; per the 15d note on ASSUMPTION-1303, a second null is a finding, not a reason for a third pass. Would change: the in-house 30-day pending/ depth-and-age series, and whether the skip rule fires on review-idle days.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1042:
+  Date: 2026-10-06
+  Item: PRESUMPTION-979 (comparative limb)
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak, analogical); NOVELTY-FLAG narrowed
+  15b: CHALLENGED (Moderate); Brown 2014: narrative read, structured sections skimmed
+  Disposition: MONITOR -> MONITOR-679
+  Reasoning: The equal-rate presumption is weakly-to-moderately contradicted, in the direction opposite to the remedy implied by REVISE-466 (moving qualifications into status rows could put them in the least-read part). Evidence is n=10, clinicians, cross-domain, so not REVISE-grade on its own; priority raised Medium -> High because it bears on an open REVISE. Would change: REVISE-466 actions (2)/(3) act-on rates with denominators.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1043:
+  Date: 2026-10-06
+  Item: ASSUMPTION-1321 (remedy limb)
+  Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Moderate); Kawamoto 2005 full text VERIFIED, push 75% vs pull 0%
+  15b: PARTIALLY-CHALLENGED (Moderate); Roshanov 2013 in-interface OR 0.37; Van de Velde 2018 adherence-not-outcomes
+  Disposition: MONITOR -> MONITOR-680
+  Reasoning: The owed literature limb (MONITOR-606 (c)) is discharged: Kawamoto is verified at primary source and strengthens FOR. But the challenge is not outweighed for this estate: 2003-era human clinicians -> LLM agents is a weak transfer, Roshanov counts against in-interface embedding, and PREMISE-121/173 still sequence selectivity first. A narrowed premise ("automatic delivery beats on-demand for adherence, not outcomes") is ready if the in-house PREMISE-108 base-rate measurement supports it. No further literature pass owed.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1044:
+  Date: 2026-10-06
+  Item: PRESUMPTION-955 (corrective limb)
+  Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate vocabulary / Weak priority claim); OPC UA Part 8 primary
+  15b: PARTIALLY-CHALLENGED (Moderate); OPC A.4.3 maps Uncertain to success at the bridge
+  Disposition: MONITOR -> MONITOR-681
+  Reasoning: Both sides read the same primary source (OPC UA Part 8) and agree a ternary vocabulary is standard; 15b shows it is safe only with a typed sub-code and consumers that do not test "not FAIL". This refines, rather than refutes, the corrective; realised harm stays with REVISE-457. Would change: ISA-18.2/IEC 62682 text (paywalled, still unretrieved) or the in-house consumer audit (MONITOR-605 (b)).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1045:
+  Date: 2026-10-06
+  Item: ASSUMPTION-1315 (limb A)
+  Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong principle / Moderate scope); de Kleer 1986 fetched
+  15b: PARTIALLY-CHALLENGED (Moderate); challenge is to the coarse "any ingest into scope" wording only
+  Disposition: INCORPORATE -> PREMISE-223
+  Reasoning: Strong support plus a challenge that narrows rather than contradicts: both directions converge on per-justification invalidation with scoped exceptions. INCORPORATE the narrowed statement at Moderate confidence (Doyle not fetched; base ATMS needs extension for absence claims). Consistency: compatible with PREMISE-174 (TMS/withdrawal-by-supersession); no contradiction found.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+Running totals after this run: PREMISE-223 | MONITOR-681 | REVISE-507 (unchanged) | DISPOSITION-1045.
+Distribution (5 items): 1 INCORPORATE, 4 MONITOR, 0 REVISE. All searches PRELIMINARY scope (~2-4 searches, 1-2 fetches per item per side). Not done: 142 bare literature-lane backlog items. Budget: over the 4k/30k guideline (2 subagents, ~270k tokens).
