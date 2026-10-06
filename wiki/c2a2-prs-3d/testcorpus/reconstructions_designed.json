@@ -30,9 +30,9 @@
   {
    "item": "R02",
    "source": "quantum-PRS-04",
-   "target": "deeplearning-PRS-10",
+   "target": "deeplearning-PRS-05",
    "verdict": "insufficient",
-   "claim": "No part of reinforcement learning on verifiable outcomes uses photon momentum or the Compton collision analysis; any link would be a narrative, not a dependency.",
+   "claim": "Nothing in the parameter/data/compute sweep or its power-law fits depends on photon momentum or the Compton collision prediction.",
    "component": "none identifiable",
    "necessity": "none",
    "alternatives": [],
@@ -40,10 +40,10 @@
    "trace": "",
    "trace_kind": "none",
    "refuters": [
-    "The R1 method or its reward design is shown to cite or use the Compton scattering result"
+    "The scaling-law paper is shown to use the Compton result in any step"
    ],
-   "note": "Cross-domain pair with no shared formal or empirical component.",
-   "authored": "blind subagent 2026-10-06"
+   "note": "Cross-domain pair; any mechanism would be invented.",
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R19)"
   },
   {
    "item": "R03",
@@ -68,23 +68,25 @@
   },
   {
    "item": "R04",
-   "source": "deeplearning-PRS-02",
-   "target": "deeplearning-PRS-03",
+   "source": "quantum-PRS-04",
+   "target": "quantum-PRS-07",
    "verdict": "insufficient",
-   "claim": "The plausible story is false on the dates. AlphaGo's networks as published in 2016 are plain 13-layer convolutional policy and value networks with no residual connections; residual blocks enter this line only with AlphaGo Zero in 2017.",
-   "component": "No component of the 2016 system fails without residual blocks. The Lee Sedol networks were trained to professional strength without them.",
-   "necessity": "none",
+   "claim": "Matrix mechanics is built from transition amplitudes, Bohr frequencies and dispersion theory; I cannot name a part of the array algebra or its oscillator/intensity results that fails without the measured Compton shift or photon momentum.",
+   "component": "none identifiable",
+   "necessity": "dispensable",
    "alternatives": [
-    "Plain deep convolutional stacks at 13 layers, which is what was in fact used and is below the depth at which degradation bites."
+    "Kramers-Heisenberg dispersion theory",
+    "Bohr frequency condition",
+    "spectroscopic data on intensities"
    ],
-   "exclusivity": "n/a",
-   "trace": "No trace in the 2016 system.",
+   "exclusivity": "many",
+   "trace": "",
    "trace_kind": "none",
    "refuters": [
-    "Evidence the Nature 2016 AlphaGo policy or value network used residual connections.",
-    "If the target entry were re-scoped to AlphaGo Zero (2017), this becomes required and the verdict flips."
+    "Heisenberg 1925 is shown to use the Compton result or photon momentum in constructing the arrays or quantum condition"
    ],
-   "authored": "reused from reconstructions_designed.json (item R21)"
+   "note": "Compton is historical background to the crisis of the old quantum theory (and to BKS), but background context is not a component dependency.",
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R07)"
   },
   {
    "item": "R05",
@@ -108,10 +110,10 @@
   },
   {
    "item": "R06",
-   "source": "quantum-PRS-02",
-   "target": "deeplearning-PRS-02",
+   "source": "quantum-PRS-07",
+   "target": "deeplearning-PRS-09",
    "verdict": "insufficient",
-   "claim": "Identity skip connections and residual learning use no element of the light-quantum hypothesis or the photoelectric prediction.",
+   "claim": "Reward models fitted to human comparisons and RL policy optimisation use nothing from noncommuting matrix algebra or observable-only methodology.",
    "component": "none identifiable",
    "necessity": "none",
    "alternatives": [],
@@ -119,56 +121,13 @@
    "trace": "",
    "trace_kind": "none",
    "refuters": [
-    "The ResNet design is shown to rely on a quantisation result traceable to Einstein 1905"
+    "InstructGPT's method is shown to depend on a construct originating in matrix mechanics"
    ],
-   "note": "Generic 'all electronics rests on quantum physics' arguments are deliberately not counted; they name no component of the residual block.",
-   "authored": "blind subagent 2026-10-06"
+   "note": "Ordinary matrix algebra in neural networks predates and is independent of Heisenberg; not a dependency on his solution.",
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R14)"
   },
   {
    "item": "R07",
-   "source": "quantum-PRS-04",
-   "target": "quantum-PRS-07",
-   "verdict": "insufficient",
-   "claim": "Matrix mechanics is built from transition amplitudes, Bohr frequencies and dispersion theory; I cannot name a part of the array algebra or its oscillator/intensity results that fails without the measured Compton shift or photon momentum.",
-   "component": "none identifiable",
-   "necessity": "dispensable",
-   "alternatives": [
-    "Kramers-Heisenberg dispersion theory",
-    "Bohr frequency condition",
-    "spectroscopic data on intensities"
-   ],
-   "exclusivity": "many",
-   "trace": "",
-   "trace_kind": "none",
-   "refuters": [
-    "Heisenberg 1925 is shown to use the Compton result or photon momentum in constructing the arrays or quantum condition"
-   ],
-   "note": "Compton is historical background to the crisis of the old quantum theory (and to BKS), but background context is not a component dependency.",
-   "authored": "blind subagent 2026-10-06"
-  },
-  {
-   "item": "R08",
-   "source": "quantum-PRS-01",
-   "target": "quantum-PRS-05",
-   "verdict": "reconstructed",
-   "claim": "De Broglie's matter wavelength is lambda = h/p, so the proportionality constant that makes the wavelength-momentum relation quantitative, and that turns the standing-wave closure into Bohr's condition L = n h/2pi, is Planck's h.",
-   "component": "The wavelength-momentum relation (its constant h), and hence the derivation of Bohr's quantised angular momentum from the standing-wave condition",
-   "necessity": "required",
-   "alternatives": [
-    "Einstein's E = h nu for light quanta (itself carrying Planck's h)",
-    "Bohr's quantisation condition (also expressed in h)"
-   ],
-   "exclusivity": "sole",
-   "trace": "assigning every particle a wavelength inversely proportional to its momentum",
-   "trace_kind": "in_corpus",
-   "refuters": [
-    "The de Broglie relation could be stated with a constant independent of h and still reproduce Bohr's condition"
-   ],
-   "note": "The worksheet text says 'inversely proportional' without naming h; the dependency is on the constant, and alternatives that carry it all inherit it from Planck, hence exclusivity sole for the constant. Dependency is also partly transitive via Einstein and Bohr.",
-   "authored": "blind subagent 2026-10-06"
-  },
-  {
-   "item": "R09",
    "source": "quantum-PRS-07",
    "target": "quantum-PRS-08",
    "verdict": "insufficient",
@@ -189,7 +148,65 @@
    "authored": "reused from reconstructions_designed.json (item R17)"
   },
   {
+   "item": "R08",
+   "source": "quantum-PRS-01",
+   "target": "deeplearning-PRS-01",
+   "verdict": "insufficient",
+   "claim": "No causal path. The relation is structural resemblance across traditions - a first result that makes a discipline take a discontinuity seriously - which is analogy, not dependency.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ],
+   "note": "This is the pair the schema needs an ANALOGICAL type for. Refusing it as a dependency is correct and is not the same as saying there is no relation.",
+   "authored": "reused from reconstructions_designed.json (item R20)"
+  },
+  {
+   "item": "R09",
+   "source": "quantum-PRS-04",
+   "target": "deeplearning-PRS-10",
+   "verdict": "insufficient",
+   "claim": "No part of reinforcement learning on verifiable outcomes uses photon momentum or the Compton collision analysis; any link would be a narrative, not a dependency.",
+   "component": "none identifiable",
+   "necessity": "none",
+   "alternatives": [],
+   "exclusivity": "many",
+   "trace": "",
+   "trace_kind": "none",
+   "refuters": [
+    "The R1 method or its reward design is shown to cite or use the Compton scattering result"
+   ],
+   "note": "Cross-domain pair with no shared formal or empirical component.",
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R02)"
+  },
+  {
    "item": "R10",
+   "source": "deeplearning-PRS-07",
+   "target": "deeplearning-PRS-06",
+   "verdict": "insufficient",
+   "claim": "Refused on direction before any argument is considered: DDPM (19 Jun 2020) postdates GPT-3 (28 May 2020). The later work cannot be a resource for the earlier.",
+   "component": "None. Any component-level story here would be an artifact of ordering the pair wrongly.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "Only a redating of either paper would change this."
+   ],
+   "note": "Included deliberately: if a reconstruction ever survives a backward pair, the whole class is void.",
+   "authored": "reused from reconstructions_designed.json (item R13)"
+  },
+  {
+   "item": "R11",
    "source": "deeplearning-PRS-01",
    "target": "deeplearning-PRS-02",
    "verdict": "reconstructed",
@@ -210,7 +227,7 @@
    "authored": "reused from reconstructions_designed.json (item R04)"
   },
   {
-   "item": "R11",
+   "item": "R12",
    "source": "quantum-PRS-01",
    "target": "quantum-PRS-07",
    "verdict": "reconstructed",
@@ -227,68 +244,30 @@
     "Heisenberg's 1925 construction is shown to contain no h in its quantum condition or frequency assignments"
    ],
    "note": "This is the generic 'h appears in every quantum theory' dependency; real but weakly discriminating, and largely transmitted through Bohr's old quantum theory rather than directly from Planck's radiation law. The worksheet text for the later entry does not mention h.",
-   "authored": "blind subagent 2026-10-06"
-  },
-  {
-   "item": "R12",
-   "source": "quantum-PRS-01",
-   "target": "deeplearning-PRS-01",
-   "verdict": "insufficient",
-   "claim": "No causal path. The relation is structural resemblance across traditions - a first result that makes a discipline take a discontinuity seriously - which is analogy, not dependency.",
-   "component": "None nameable.",
-   "necessity": "none",
-   "alternatives": [
-    "n/a"
-   ],
-   "exclusivity": "n/a",
-   "trace": "No trace.",
-   "trace_kind": "none",
-   "refuters": [
-    "n/a"
-   ],
-   "note": "This is the pair the schema needs an ANALOGICAL type for. Refusing it as a dependency is correct and is not the same as saying there is no relation.",
-   "authored": "reused from reconstructions_designed.json (item R20)"
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R11)"
   },
   {
    "item": "R13",
-   "source": "deeplearning-PRS-01",
+   "source": "deeplearning-PRS-02",
    "target": "deeplearning-PRS-03",
-   "verdict": "reconstructed",
-   "claim": "AlphaGo's policy and value networks are deep convolutional networks trained at scale on GPUs - the artifact AlexNet established as trainable and effective.",
-   "component": "The evaluation function itself. AlphaGo's own problem statement says no hand-written evaluation had reached professional strength; what replaces it is a deep convnet, which is AlexNet's contribution.",
-   "necessity": "required",
+   "verdict": "insufficient",
+   "claim": "The plausible story is false on the dates. AlphaGo's networks as published in 2016 are plain 13-layer convolutional policy and value networks with no residual connections; residual blocks enter this line only with AlphaGo Zero in 2017.",
+   "component": "No component of the 2016 system fails without residual blocks. The Lee Sedol networks were trained to professional strength without them.",
+   "necessity": "none",
    "alternatives": [
-    "Hand-crafted evaluation, explicitly ruled out in the entry's own problem statement; shallow learned evaluators, which had also failed."
+    "Plain deep convolutional stacks at 13 layers, which is what was in fact used and is below the depth at which degradation bites."
    ],
-   "exclusivity": "sole",
-   "trace": "Policy and value networks trained on human games and then on self-play",
-   "trace_kind": "in_corpus",
+   "exclusivity": "n/a",
+   "trace": "No trace in the 2016 system.",
+   "trace_kind": "none",
    "refuters": [
-    "Evidence AlphaGo's networks were not convolutional or not deep.",
-    "A contemporaneous non-deep evaluator of comparable strength."
+    "Evidence the Nature 2016 AlphaGo policy or value network used residual connections.",
+    "If the target entry were re-scoped to AlphaGo Zero (2017), this becomes required and the verdict flips."
    ],
-   "authored": "reused from reconstructions_designed.json (item R08)"
+   "authored": "reused from reconstructions_designed.json (item R21)"
   },
   {
    "item": "R14",
-   "source": "quantum-PRS-07",
-   "target": "deeplearning-PRS-09",
-   "verdict": "insufficient",
-   "claim": "Reward models fitted to human comparisons and RL policy optimisation use nothing from noncommuting matrix algebra or observable-only methodology.",
-   "component": "none identifiable",
-   "necessity": "none",
-   "alternatives": [],
-   "exclusivity": "many",
-   "trace": "",
-   "trace_kind": "none",
-   "refuters": [
-    "InstructGPT's method is shown to depend on a construct originating in matrix mechanics"
-   ],
-   "note": "Ordinary matrix algebra in neural networks predates and is independent of Heisenberg; not a dependency on his solution.",
-   "authored": "blind subagent 2026-10-06"
-  },
-  {
-   "item": "R15",
    "source": "quantum-PRS-01",
    "target": "quantum-PRS-09",
    "verdict": "reconstructed",
@@ -310,7 +289,48 @@
    "authored": "reused from reconstructions_designed.json (item R15)"
   },
   {
+   "item": "R15",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-03",
+   "verdict": "reconstructed",
+   "claim": "AlphaGo's policy and value networks are deep convolutional networks trained at scale on GPUs - the artifact AlexNet established as trainable and effective.",
+   "component": "The evaluation function itself. AlphaGo's own problem statement says no hand-written evaluation had reached professional strength; what replaces it is a deep convnet, which is AlexNet's contribution.",
+   "necessity": "required",
+   "alternatives": [
+    "Hand-crafted evaluation, explicitly ruled out in the entry's own problem statement; shallow learned evaluators, which had also failed."
+   ],
+   "exclusivity": "sole",
+   "trace": "Policy and value networks trained on human games and then on self-play",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence AlphaGo's networks were not convolutional or not deep.",
+    "A contemporaneous non-deep evaluator of comparable strength."
+   ],
+   "authored": "reused from reconstructions_designed.json (item R08)"
+  },
+  {
    "item": "R16",
+   "source": "quantum-PRS-01",
+   "target": "quantum-PRS-05",
+   "verdict": "reconstructed",
+   "claim": "De Broglie's matter wavelength is lambda = h/p, so the proportionality constant that makes the wavelength-momentum relation quantitative, and that turns the standing-wave closure into Bohr's condition L = n h/2pi, is Planck's h.",
+   "component": "The wavelength-momentum relation (its constant h), and hence the derivation of Bohr's quantised angular momentum from the standing-wave condition",
+   "necessity": "required",
+   "alternatives": [
+    "Einstein's E = h nu for light quanta (itself carrying Planck's h)",
+    "Bohr's quantisation condition (also expressed in h)"
+   ],
+   "exclusivity": "sole",
+   "trace": "assigning every particle a wavelength inversely proportional to its momentum",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "The de Broglie relation could be stated with a constant independent of h and still reproduce Bohr's condition"
+   ],
+   "note": "The worksheet text says 'inversely proportional' without naming h; the dependency is on the constant, and alternatives that carry it all inherit it from Planck, hence exclusivity sole for the constant. Dependency is also partly transitive via Einstein and Bohr.",
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R08)"
+  },
+  {
+   "item": "R17",
    "source": "quantum-PRS-07",
    "target": "quantum-PRS-10",
    "verdict": "reconstructed",
@@ -330,7 +350,7 @@
    "authored": "reused from reconstructions_designed.json (item R19)"
   },
   {
-   "item": "R17",
+   "item": "R18",
    "source": "quantum-PRS-06",
    "target": "deeplearning-PRS-05",
    "verdict": "insufficient",
@@ -345,48 +365,10 @@
     "The scaling-law method is shown to use a result derived from the exclusion principle"
    ],
    "note": "Semiconductor-hardware arguments (band structure rests on Pauli) are generic and name no component of the scaling-law solution.",
-   "authored": "blind subagent 2026-10-06"
-  },
-  {
-   "item": "R18",
-   "source": "deeplearning-PRS-07",
-   "target": "deeplearning-PRS-06",
-   "verdict": "insufficient",
-   "claim": "Refused on direction before any argument is considered: DDPM (19 Jun 2020) postdates GPT-3 (28 May 2020). The later work cannot be a resource for the earlier.",
-   "component": "None. Any component-level story here would be an artifact of ordering the pair wrongly.",
-   "necessity": "none",
-   "alternatives": [
-    "n/a"
-   ],
-   "exclusivity": "n/a",
-   "trace": "No trace.",
-   "trace_kind": "none",
-   "refuters": [
-    "Only a redating of either paper would change this."
-   ],
-   "note": "Included deliberately: if a reconstruction ever survives a backward pair, the whole class is void.",
-   "authored": "reused from reconstructions_designed.json (item R13)"
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R17)"
   },
   {
    "item": "R19",
-   "source": "quantum-PRS-04",
-   "target": "deeplearning-PRS-05",
-   "verdict": "insufficient",
-   "claim": "Nothing in the parameter/data/compute sweep or its power-law fits depends on photon momentum or the Compton collision prediction.",
-   "component": "none identifiable",
-   "necessity": "none",
-   "alternatives": [],
-   "exclusivity": "many",
-   "trace": "",
-   "trace_kind": "none",
-   "refuters": [
-    "The scaling-law paper is shown to use the Compton result in any step"
-   ],
-   "note": "Cross-domain pair; any mechanism would be invented.",
-   "authored": "blind subagent 2026-10-06"
-  },
-  {
-   "item": "R20",
    "source": "quantum-PRS-08",
    "target": "quantum-PRS-10",
    "verdict": "reconstructed",
@@ -405,29 +387,66 @@
     "Von Neumann's foundation is shown to be built and motivated from matrix mechanics and Dirac alone with no use of wave functions or differential operators"
    ],
    "note": "Marked 'used' not 'required': a rigorous axiomatisation of matrix mechanics alone is conceivable, so the dependency is on what is unified rather than on the possibility of a foundation.",
-   "authored": "blind subagent 2026-10-06"
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R20)"
+  },
+  {
+   "item": "R20",
+   "source": "quantum-PRS-02",
+   "target": "deeplearning-PRS-02",
+   "verdict": "insufficient",
+   "claim": "Identity skip connections and residual learning use no element of the light-quantum hypothesis or the photoelectric prediction.",
+   "component": "none identifiable",
+   "necessity": "none",
+   "alternatives": [],
+   "exclusivity": "many",
+   "trace": "",
+   "trace_kind": "none",
+   "refuters": [
+    "The ResNet design is shown to rely on a quantisation result traceable to Einstein 1905"
+   ],
+   "note": "Generic 'all electronics rests on quantum physics' arguments are deliberately not counted; they name no component of the residual block.",
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R06)"
   },
   {
    "item": "R21",
    "source": "quantum-PRS-09",
-   "target": "deeplearning-PRS-08",
+   "target": "deeplearning-PRS-01",
    "verdict": "insufficient",
-   "claim": "No argument available.",
-   "component": "None nameable. AlphaFold's attention over residue pairs is not an operator formalism in any load-bearing sense.",
+   "claim": "No component of AlexNet's result (deep convolutional network, GPU training, ReLU, dropout, data augmentation, ImageNet benchmark) can be named that fails without Dirac's unified quantum formalism or relativistic electron equation; the only conceivable link (vectors and linear operators) is generic linear algebra that predates Dirac and was not his contribution.",
+   "component": "none identifiable",
    "necessity": "none",
-   "alternatives": [
-    "n/a"
-   ],
-   "exclusivity": "n/a",
-   "trace": "No trace.",
+   "alternatives": [],
+   "exclusivity": "many",
+   "trace": "",
    "trace_kind": "none",
    "refuters": [
-    "n/a"
+    "A specific AlexNet component (e.g. an optimisation or initialisation method) shown to be derived from Dirac's transformation theory or bra-ket formalism and not from prior linear algebra",
+    "Primary sources of the 2012 work citing Dirac's formalism as an enabling resource"
    ],
-   "authored": "reused from reconstructions.json (item R06)"
+   "note": "Tempting but rejected narrative: 'semiconductor physics rests on quantum mechanics, so GPUs depend on Dirac'. That chain runs through solid-state physics built on Schrodinger/Bloch, not on Dirac's relativistic or unification results specifically, and is far too diffuse to name a failing component.",
+   "authored": "blind subagent 2026-10-06 (round 2)"
   },
   {
    "item": "R22",
+   "source": "quantum-PRS-09",
+   "target": "deeplearning-PRS-09",
+   "verdict": "insufficient",
+   "claim": "Nothing in the RLHF solution (reward model fitted to human comparisons, reinforcement-learning optimisation of a language-model policy, human preference evaluation) relies on Dirac's unified quantum formalism, spin, or antimatter prediction, so no dependency argument can be made beyond generic shared mathematics.",
+   "component": "none identifiable",
+   "necessity": "none",
+   "alternatives": [],
+   "exclusivity": "many",
+   "trace": "",
+   "trace_kind": "none",
+   "refuters": [
+    "A specific part of the reward-model or RL policy-optimisation method shown to be derived from Dirac's transformation theory",
+    "InstructGPT or its direct methodological antecedents citing Dirac's 1930 formalism as a resource"
+   ],
+   "note": "Appears to be a cross-domain pair with no plausible mechanism; any link via hardware physics or linear algebra would be a generic background narrative, not a dependency on Dirac's solution.",
+   "authored": "blind subagent 2026-10-06 (round 2)"
+  },
+  {
+   "item": "R23",
    "source": "quantum-PRS-06",
    "target": "quantum-PRS-09",
    "verdict": "reconstructed",
@@ -448,7 +467,7 @@
    "authored": "reused from reconstructions_designed.json (item R01)"
   },
   {
-   "item": "R23",
+   "item": "R24",
    "source": "deeplearning-PRS-03",
    "target": "deeplearning-PRS-10",
    "verdict": "reconstructed",
@@ -469,7 +488,7 @@
    "authored": "reused from reconstructions_designed.json (item R18)"
   },
   {
-   "item": "R24",
+   "item": "R25",
    "source": "quantum-PRS-01",
    "target": "quantum-PRS-08",
    "verdict": "reconstructed",
@@ -486,10 +505,10 @@
     "The wave equation is shown to reproduce the hydrogen spectrum with a constant not identified with h"
    ],
    "note": "Same generic 'h in every quantum theory' caveat as R11; the direct construction route runs through de Broglie, so the dependency on Planck is largely transitive.",
-   "authored": "blind subagent 2026-10-06"
+   "authored": "blind subagent 2026-10-06 - reused from reconstructions_designed.json@d961eb95 (item R24)"
   },
   {
-   "item": "R25",
+   "item": "R26",
    "source": "quantum-PRS-03",
    "target": "quantum-PRS-07",
    "verdict": "reconstructed",

@@ -10,7 +10,10 @@
       "textual": "expressed | partial | unexpressed. Whether the FIXTURE PROSE of the target carries any evidence pointing at the source. This separates two failures that look identical in a recall number: the method missed a signal that was there, versus the text never said it. No method reading these summaries can recover an unexpressed dependency, so it is the ceiling, not a defect to tune away. A pair is 'partial' when only one side expresses the link: the target may point at something the source never names.",
       "cue": "The phrase in the target's own text that a reader would point at. Empty when textual is unexpressed."
     },
-    "amended_on": "2026-09-09: four resource_supplying rows added from Planck (quantum-PRS-01) to de Broglie, Heisenberg, Schrodinger and Dirac. See each row's basis. Pauli (quantum-PRS-06) and von Neumann (quantum-PRS-10) were considered and NOT added: the exclusion principle is a combinatorial constraint with no h in it, and von Neumann's resource is Hilbert space and spectral theory, in which h lives in the dynamics being formalised rather than in the formalism. Recording the refusals so the boundary of the h-denomination shape is on the record, not in someone's head."
+    "amended_on": [
+      "2026-09-09: four resource_supplying rows added from Planck (quantum-PRS-01) to de Broglie, Heisenberg, Schrodinger and Dirac. See each row's basis. Pauli (quantum-PRS-06) and von Neumann (quantum-PRS-10) were considered and NOT added: the exclusion principle is a combinatorial constraint with no h in it, and von Neumann's resource is Hilbert space and spectral theory, in which h lives in the dynamics being formalised rather than in the formalism. Recording the refusals so the boundary of the h-denomination shape is on the record, not in someone's head.",
+      "2026-10-06: Schrodinger (quantum-PRS-08) -> von Neumann (quantum-PRS-10) added as resource_supplying, the partner of the existing Heisenberg -> von Neumann row. Surfaced as the one control positive (R20) in the 2026-10-06 blind re-run. Distinct from the 09-09 refusal, which was Planck's h reaching von Neumann."
+    ]
   },
   "dependencies": [
     {
@@ -300,6 +303,15 @@
       "textual": "unexpressed",
       "cue": "",
       "basis": "Dirac's transformation theory poses the quantum conditions as qp - pq = i(h/2pi), and the relativistic wave equation carries the same constant; the predicted spin magnetic moment and the 2mc^2 antimatter gap are both quantities denominated in h. ADDED 2026-09-09 by the h-denomination audit (NEXT item 2), following the Planck -> Compton row that the reconstruction batch found by accident. The shape is systematic, not a one-off: Planck's constant is a term in the later formalism, and the fixture's later entries name neither Planck nor h, so no method reading this prose can recover it. This is the pair the designed harness re-run drew as a random control (item R15) and reconstructed with an in_literature trace (Dirac, The Principles of Quantum Mechanics, 1930, Ch. IV). It is the second control positive traced to a key gap rather than to a fabrication, and the reason this audit was run at all."
+    },
+    {
+      "source": "quantum-PRS-08",
+      "target": "quantum-PRS-10",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Von Neumann's Hilbert space is built to hold both existing formulations at once: Schrodinger's wave functions as the function-space realisation and Heisenberg's matrices as the sequence-space one, with Schrodinger's differential Hamiltonian among the operators the spectral theory treats (Mathematische Grundlagen der Quantenmechanik, 1932, Ch. I). The key held Heisenberg -> von Neumann on this basis and omitted Schrodinger. The fixture names neither."
     }
   ]
 }

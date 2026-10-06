@@ -198,7 +198,7 @@ file, which names the h-denomination pairs. That is a stronger blind than the ea
 runs, where the author had seen the key's construction. It is still the same model family
 and still knows the history of physics; the caveat in "Not a blind trial" stands.
 
-Scored in `SCORE_designed_2026-10-06.txt`; `SCORE_designed.txt` stays as the 09-07 record.
+`SCORE_designed.txt` stays as the 09-07 record. The first 10-06 pass (32-row key) scored:
 
 | condition | n | reconstructed | insufficient |
 |---|---|---|---|
@@ -218,7 +218,36 @@ the spectral treatment of Schrödinger's differential Hamiltonian as the compone
 is **not** the von Neumann row refused in the 09-09 audit — that refusal was about
 *Planck's h* reaching von Neumann, and this is *Schrödinger's wave mechanics* reaching
 him. Whether it is a third gap in the key or the control decaying into narrative is a
-human ruling, not this harness's; it is recorded here unruled.
+human ruling, not this harness's.
+
+**Ruled the same day: a key gap.** Tom delegated the call; the row was added
+(`quantum-PRS-08 → quantum-PRS-10`, `resource_supplying`, `unexpressed`) as the partner of
+the Heisenberg → von Neumann row the key already held — von Neumann's Hilbert space is
+built to hold both formulations (*Mathematische Grundlagen*, 1932, Ch. I). `CRITERIA.md`
+regenerated: recall 0.72 → 0.70, precision and ceiling unchanged.
+
+**Second pass, 33-row key** — `SCORE_designed_2026-10-06.txt`. The worksheet was
+regenerated again (26 items: 14 target, 3 ruled-out, 9 random from a pool of 149). 24 items
+were pairs already authored; the 2 new ones (both cross-epoch: Dirac → AlexNet, Dirac →
+RLHF) went to a fresh blind agent, which declined both.
+
+| condition | n | reconstructed | insufficient |
+|---|---|---|---|
+| target | 14 | **100%** | 0% |
+| control_ruled_out | 3 | 0% | 100% |
+| control_random | 9 | 0% | 100% |
+
+Verdict: **PASS** — no control survived its own checks.
+
+**Read the PASS with this attached.** Controls reach 0% partly *because* the one control
+positive was moved into the key. That is the third time (Planck → Compton, Planck → Dirac,
+Schrödinger → von Neumann), and each move was argued from a cited source rather than from
+the reconstruction. But a harness whose key absorbs its own false alarms converges on clean
+by construction unless every promotion is checked by someone other than the model that
+argued it. The defence is the record: each promotion is in `dependencies.json`
+`_meta.amended_on` with its basis, so a reader can attack them individually. If a fourth
+control positive appears, the right first question is whether the key or the author is
+drifting, not which row to add.
 
 **Harness fix.** The 09-09 exemption for declines never took effect: `check_row` loops
 over every required field before reaching it, so a blank `trace` on an `insufficient` row
