@@ -165,7 +165,13 @@ VERDICTS = ("reconstructed", "insufficient")
 def check_row(r, by_id):
     """Mechanical checks. Returns (ok, problems)."""
     bad = []
+    # A decline names no component, so it has no trace and nothing to substitute for
+    # it. The 09-09 exemption below never took effect while this loop still demanded
+    # both: honest declines passed only when their author typed filler into them.
+    declined = r.get("verdict") == "insufficient" and r.get("trace_kind") == "none"
     for f in NEEDED:
+        if declined and f in ("trace", "alternatives"):
+            continue
         if r.get(f) in (None, "", []):
             bad.append("missing %s" % f)
     if r.get("necessity") not in NECESSITY:

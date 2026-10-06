@@ -1,0 +1,36 @@
+item  condition          verdict        necessity   checks pair
+R01   target             reconstructed  required    ok     deeplearning-PRS-02 -> deeplearning-PRS-04
+R02   control_random     insufficient   none        ok     quantum-PRS-04 -> deeplearning-PRS-10
+R03   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-04
+R04   control_random     insufficient   none        ok     deeplearning-PRS-02 -> deeplearning-PRS-03
+R05   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-03
+R06   control_random     insufficient   none        ok     quantum-PRS-02 -> deeplearning-PRS-02
+R07   control_random     insufficient   dispensable ok     quantum-PRS-04 -> quantum-PRS-07
+R08   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-05
+R09   control_ruled_out  insufficient   dispensable ok     quantum-PRS-07 -> quantum-PRS-08
+R10   target             reconstructed  required    ok     deeplearning-PRS-01 -> deeplearning-PRS-02
+R11   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-07
+R12   control_ruled_out  insufficient   none        ok     quantum-PRS-01 -> deeplearning-PRS-01
+R13   target             reconstructed  required    ok     deeplearning-PRS-01 -> deeplearning-PRS-03
+R14   control_random     insufficient   none        ok     quantum-PRS-07 -> deeplearning-PRS-09
+R15   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-09
+R16   target             reconstructed  required    ok     quantum-PRS-07 -> quantum-PRS-10
+R17   control_random     insufficient   none        ok     quantum-PRS-06 -> deeplearning-PRS-05
+R18   control_ruled_out  insufficient   none        ok     deeplearning-PRS-07 -> deeplearning-PRS-06
+R19   control_random     insufficient   none        ok     quantum-PRS-04 -> deeplearning-PRS-05
+R20   control_random     reconstructed  used        ok     quantum-PRS-08 -> quantum-PRS-10
+R21   control_random     insufficient   none        ok     quantum-PRS-09 -> deeplearning-PRS-08
+R22   target             reconstructed  used        ok     quantum-PRS-06 -> quantum-PRS-09
+R23   target             reconstructed  used        ok     deeplearning-PRS-03 -> deeplearning-PRS-10
+R24   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-08
+R25   target             reconstructed  required    ok     quantum-PRS-03 -> quantum-PRS-07
+
+condition             n  reconstructed  insufficient necessity=required
+target               13           100%            0%        85%
+control_ruled_out     3             0%          100%         0%
+control_random        9            11%           89%         0%
+
+VERDICT
+  targets reconstructed  100%
+  controls reconstructed 8%
+  MIXED - separation exists but controls are not clean. Report the rate.

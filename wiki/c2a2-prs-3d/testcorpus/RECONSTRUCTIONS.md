@@ -187,6 +187,47 @@ now accepted with `trace_kind: "none"`, and only on an `insufficient` verdict; a
 `reconstructed` row with no trace still fails, and the verbatim in-corpus check is
 untouched. No rate in the table above moved.
 
+## Re-run against the 32-row key, 2026-10-06
+
+The worksheet was regenerated (`worksheet_designed.md`, `reconstruction_key.json`): 25
+items, 13 target, 3 ruled-out control, 9 random control from a pool of 150. 15 items are
+pairs already authored in an earlier batch and were carried over by pair, re-labelled to
+their new item ids. The other 10 were authored **blind by a separate agent** that was
+given only those 10 worksheet entries — not the key, not the earlier authorings, not this
+file, which names the h-denomination pairs. That is a stronger blind than the earlier
+runs, where the author had seen the key's construction. It is still the same model family
+and still knows the history of physics; the caveat in "Not a blind trial" stands.
+
+Scored in `SCORE_designed_2026-10-06.txt`; `SCORE_designed.txt` stays as the 09-07 record.
+
+| condition | n | reconstructed | insufficient |
+|---|---|---|---|
+| target | 13 | **100%** | 0% |
+| control_ruled_out | 3 | 0% | 100% |
+| control_random | 9 | 11% | 89% |
+
+Verdict unchanged: targets 100%, controls 8% — **MIXED**. All four h-denomination targets
+reconstructed; three of them (Planck → de Broglie, → Heisenberg, → Schrödinger) were
+authored by the blind agent with `in_corpus` traces that pass the verbatim check, and the
+fourth (Planck → Dirac) is the reused 09-07 row.
+
+**The one control positive is R20, Schrödinger → von Neumann** (`quantum-PRS-08 →
+quantum-PRS-10`, necessity `used`): von Neumann's Hilbert space is argued to unify the
+function-space (wave mechanics) and sequence-space (matrix mechanics) realisations, with
+the spectral treatment of Schrödinger's differential Hamiltonian as the component. This
+is **not** the von Neumann row refused in the 09-09 audit — that refusal was about
+*Planck's h* reaching von Neumann, and this is *Schrödinger's wave mechanics* reaching
+him. Whether it is a third gap in the key or the control decaying into narrative is a
+human ruling, not this harness's; it is recorded here unruled.
+
+**Harness fix.** The 09-09 exemption for declines never took effect: `check_row` loops
+over every required field before reaching it, so a blank `trace` on an `insufficient` row
+still failed. The earlier declines passed only because their authors typed filler into
+`trace` ("No trace in the 2016 system."). The blind agent left `trace` blank and, on
+cross-epoch pairs with no component, `alternatives` empty; six honest declines read as
+FAIL. Declines with `trace_kind: "none"` are now exempt from both fields. Exercised both
+ways: those six pass, and R08 with its trace stripped still fails. No rate moved.
+
 ## Recommended
 
 1. **Add `reconstructed` as a fifth status**, with the row carrying the argument — claim,
