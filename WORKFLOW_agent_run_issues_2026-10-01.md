@@ -76,6 +76,27 @@ Then, with Claude in a local session: resolve the conflict and do the local HTTP
 | 1.6 | Pages deploy check cannot fetch | [R] All 3 WebFetch calls returned `PROVENANCE_REQUIRED` unattended; an older note says Pages is "wedged" | Use the GitHub Actions API (Pages runs **are** green through 09-30 [V]) or pre-approve the domain. The "wedged" diagnosis looks stale [I] |
 | 1.7 | Duplicate firings | [R] The daily run fired twice on 10-01; the repeat re-stamped run-start, which skews the 45-min authorship hold. Mh inbox double-fired on 09-30 and is now disabled (reason unknown) | Make the run-start stamp write-once per day; check for a duplicate Routine or a Mac and cloud overlap |
 
+### Phase 1 progress (2026-10-05)
+
+| # | Status | What was done |
+|---|---|---|
+| 1.1 | **Root cause found; mitigated** | Not contention: the Cowork sandbox disk fills up, and `device_bash` runs inside it (11/11 calls failed on 10-04, a normal Sunday; Desktop Commander 27/27). CLAUDE.md gains the constitutional **three-tier rule** (#12): pure scripts run under launchd on the Mac; judgment routines use Desktop Commander only and copy nothing large into the sandbox; duplicates are disabled. The janitor moved to launchd (`com.c2a2.janitor-weekly`, Sunday 06:45; test run exit 0, 491 findings / 17 auto-fixes) and its cloud routine is disabled. The other nine shell-using routines got the Tier 2 block at the top of their prompts (verified 23:49–23:57Z). Upstream bug (sandbox fills, `device_bash` gives no reason) still worth reporting to Anthropic. |
+| 1.2 | **Done** | The existing Mac job `com.loughran.openstory-feeds-refresh` (06:15) already produced the feeds; its plist is now versioned (#11). A duplicate added in #10 was removed. Cloud telemetry routine disabled. New health row on `agent_telemetry.json`. |
+| 1.3 | **Done, no code** | `com.c2a2.metabolism-regen` (05:00, Mac) already rebuilt the data (generated 10-05 05:03); plist versioned (#12). Cloud metabolism routine disabled. |
+| 1.4 | **Done; first live run 10-06 07:00** | `check_routine_health.py` judges the Routines listing (FAIL: failed run / never fired / two missed fires; WARN: run pending >2h). The 07:00 health routine fetches the listing and runs it (prompt applied by Tom). Run-stall no longer fails cloud tasks; the 32 "moved to cloud" WARNs clear only while `routine_health.md` is <26h old (#9). |
+| 1.5 | **Done; first live run 10-06 05:45** | Tom chose auto-push behind a gate: `push_daily_run.sh` pushes only daily-run commits that pass scope, address, inline-JS and JSON checks; merge, never rebase. Health row on the newest daily-run commit **on origin** (30h). Recorded as the no-blind-push rule's second exception (#9). |
+| 1.6 | Open | Pages deploy check still cannot fetch unattended; its prompt now carries the Tier 2 block. Fix direction unchanged: read deploy status from the GitHub Actions API. |
+| 1.7 | Open | Duplicate firings (daily run 10-01, Mh inbox 09-30). |
+
+Also done on 10-05, outside the table:
+- Live dashboard: sends its phone alert **before** the publish step, so a pending approval no longer delays it (10-05's alert arrived ~8h late).
+- Disabled as redundant: "Supabase c2a2 keep warm" (the GitHub Action pings every 3 days) and "Summa 2026 daily batch" (307/307 done, 16 no-op runs).
+- Summa QC sweep prompt fixed: `qc_sweep.py report --max 6` (Phase 4 item).
+- `com.c2a2.voice-shell-check.plist` repaired: `--` inside XML comments made it unparseable to `plistlib` (#10).
+- Lesson recorded in the rule: check `~/Library/LaunchAgents` before building a Mac job; every installed plist belongs in `scripts/launchd/`. Still unversioned: `com.c2a2.verify-lock-fix`.
+
+**Check on 10-06:** the 05:45 auto-push reached GitHub; the 07:00 report carries a "Cloud routines" line and `scheduler/routine_health.md` was written; the dashboard alert arrived ~07:03.
+
 ## Phase 2: rebuild stale C2A2 artifacts (after Phase 1, so they stay fresh)
 
 - [R] **Agent telemetry / Agents tab**: not refreshed 10-01 (needs 1.2).
