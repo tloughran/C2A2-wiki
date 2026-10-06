@@ -33,7 +33,14 @@ DATA="$OUTDIR/prs_data_test.json"
 
 echo "=== PRS test-corpus regen — $(date '+%Y-%m-%d %H:%M:%S') ==="
 
-python3 "$S/extract_prs_data.py" "$FIX/vault" --thinker-map "$FIX/thinker_map.json" --out "$DATA"
+CANDS="$OUTDIR/prs_link_candidates.json"
+LINKS="$OUTDIR/prs_links_tiered.json"
+python3 "$S/prs_link_criteria.py" --vault "$FIX/vault" --json "$CANDS" --no-eval
+python3 "$S/build_tiered_links.py" --candidates "$CANDS" --gold "$FIX/dependencies.json" \
+  --reconstructions "$FIX/reconstructions_designed.json" --out "$LINKS"
+
+python3 "$S/extract_prs_data.py" "$FIX/vault" --thinker-map "$FIX/thinker_map.json" \
+  --links "$LINKS" --out "$DATA"
 
 for arm in tau90:90 linear:linear; do
   name="${arm%%:*}"; tau="${arm##*:}"
