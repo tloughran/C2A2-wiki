@@ -1,0 +1,5 @@
+{
+  "colors": { "quantum": "#5A9E6B", "deeplearning": "#B0B0B8" },
+  "display": { "quantum": "Quantum Mechanics", "deeplearning": "Deep Learning" },
+  "disc": { "quantum": "Foundational Physics", "deeplearning": "Machine Learning" }
+}
