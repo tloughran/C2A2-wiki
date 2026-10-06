@@ -16,7 +16,7 @@ evidence_strength_summary: "Body perfectly formed and animated in the first inst
 mind_first_reframe: "Comprehensor-from-the-first-instant is read as one mind beholding the whole while inhabiting the most limited, just-conceived body — dissociation-without-fragmentation (Kastrup) — with form present as an organizing attractor from the start, correcting Aquinas's Aristotelian embryology."
 central_theme_thread: "The wayfarer-and-comprehensor keystone (Day 220) at its sharpest: whole-vision and most-limited embodiment given together from instant one, with meritorious free choice as limited agency computing toward the good under grace."
 tags: [synthesis, day/229, theme/comprehensor-from-the-first-instant]
-last_qc_at: "2026-09-26T18:19:38"
+last_qc_at: "2026-10-05T04:17:46"
 last_qc_outcome: "pass"
 ---
 

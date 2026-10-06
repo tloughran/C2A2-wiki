@@ -17,7 +17,7 @@ evidence_strength_summary: "Capital grace as a head's influx into its members ~ 
 mind_first_reframe: "Capital grace — the influx by which the Head communicates its fullness to the members — is read as a coupling-and-nesting picture: love as a measurable resonance that knits limited perspectives into one higher-order body, the whole's fullness flowing into its parts and incorporating them rather than a juridical transfer of merit."
 central_theme_thread: "The grace of headship is the loving-unity computation made visible: a whole, fuller perspective pouring its fullness into limited members and binding them into one body united with God — exactly the telos toward which each limited agent computes, here flowing from the Head who already contains the whole."
 tags: [synthesis, day/216, theme/capital-grace-fullness-to-members]
-last_qc_at: "2026-09-26T12:34:16"
+last_qc_at: "2026-10-04T22:17:23"
 last_qc_outcome: "pass"
 ---
 
