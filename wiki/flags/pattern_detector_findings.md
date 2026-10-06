@@ -938,3 +938,365 @@ Evaluation type: **Independent convergence of a critique, plus one live disagree
 Finding: Two distinct results and they should not be merged. **(1) Convergence of critique.** Kauffman's constraint closure — boundary conditions constraining the release of energy into the work that constructs those same boundary conditions — is a thermodynamic statement of the circularity the free-energy principle states variationally as self-evidencing under a Markov blanket. Newman's objection to it, verbatim, is "a description of the arrangement of processes in a cell, but not itself a generative principle? Sort of like sedimentation without the concept of gravity" — which is, word for word in its structure, the objection long pressed at the FEP: that it says what persisting systems must look like without saying why any system comes to persist. Two traditions reached the same complaint without contact. That is evidence the complaint is about the shape of this class of theory, not about either theory's local defects. **(2) A live disagreement, sharper than the convergence.** Watson rules out any definition of life resting on a process acting on an object or a program acting on data, *including* definitions that keep both but separate — which is a direct attack on the generative-model / generative-process split active inference is built on. The transcript cites "Levin, Millidge, Tschantz & Watson 2024", so these authors already co-work across that boundary, which makes the disagreement an internal one rather than a distant critique.
 Confidence: Medium. The Kauffman-Newman exchange and the Watson turn were read verbatim; the mapping onto the FEP is this wiki's reading, not a claim either speaker makes, and the FEP-side literature on the self-evidencing objection was **not** re-read this run. The Watson citation was read in the transcript's own reference to it; the 2024 paper itself was not retrieved.
 Recommended action: **Route both to the Friston agent as one item with the two prongs kept separate** and append to `synthesis/friston_levin_bridge.md`. Prong (1) is answerable from Friston's own formalism and is the kind of question that has a real answer: does the FEP claim to be generative, or does it claim only that persistence has a signature? Prong (2) is not resolvable by either side alone and should be logged as standing, in the pattern of the Rohr-Wright divergence. Not escalated: a convergence of *critique* is not a paradigm shift, and saying so plainly is the point.
+
+
+---
+
+FINDING-073:
+Date evaluated: 2026-09-01
+Source candidate: Rohr PRS-49 / PRS-58 read against Wright PRS-45, PRS-58 (CROSS-110, CROSS-111), and against FINDING-058
+Programs: Rohr, Wright
+Evaluation type: **Structural correction to a standing axis** -- the axis is carrying three relations under one label
+Finding: The Rohr-Wright axis has been filed since FINDING-058 as a single preserved disagreement about whether historical settling is what is wanted. Reading both traditions in the same pass shows that description is now wrong in two directions at once. **First, there is a convergence and it is a good one.** Both traditions reach Philippians 2:12-13 for the same problem -- how divine action and human action can each be complete without competing -- and reach it from opposite ends, Rohr interior and formative, Wright corporate and vocational, with no evidence of contact in either corpus. Independent arrival on a specific text for a specific job is the property that makes a convergence worth anything, and this axis has never had one. **Second, there is a further tension and it is not the one already logged.** Rohr reads the Hebrew prophets developmentally, as consciousness maturing across the canon; Wright's critical realism holds that second-temple context constrains what a text could have meant prior to and independent of any arc the modern reader brings. FINDING-058 is about the *purpose* of settling; this is about what *constrains* meaning. They can come apart: one could accept Wright's constraint and still deny that settling is what is wanted.
+Confidence: **High that three distinct relations exist; Medium on the convergence's strength.** The three relations are visible in the triplet texts as written and the distinction between them is not subtle. The convergence is weaker than it looks for a specific reason: the Wright side of it rests on podcast descriptions with no audio (see FINDING-075), so what is attested is that Wright reaches this text for this job, not the shape of his argument for it. Independence is asserted from absence of citation in both corpora, which is weak evidence -- neither corpus was searched exhaustively for the other.
+Recommended action: **Split the axis into three indexed entries** -- FINDING-058 unchanged, CROSS-110 as convergence, CROSS-111 as a second and separate tension -- and record the split in `synthesis/rohr_wright_bridge.md`. Do NOT escalate to the Paradigm Shift Watch List: this is the network learning that one of its own entries was under-resolved, which is housekeeping, not a shift. The falsifier for the convergence is cheap and should be run before it is cited: search both corpora for the other party by name. If Rohr has read Wright on Philippians, the independence claim dies and the convergence is worth much less.
+
+---
+
+FINDING-074:
+Date evaluated: 2026-09-01
+Source candidate: Rohr PRS-48, PRS-49 (CROSS-108, CROSS-109)
+Programs: Rohr, Stump
+Evaluation type: **Retroactive invalidation risk on existing entries** -- a reason to distrust work already done
+Finding: Rohr names Duns Scotus and the univocity of being in his own voice, not as a gloss a proposal supplied for him. Univocity is the historic alternative to the Thomist analogy of being, and analogy is load-bearing for Stump. The consequence runs backwards through the wiki: wherever this network has recorded Rohr and Stump agreeing about God and creature, the agreement may hold at the level of the English sentence and fail at the level of what is being predicated. A univocal and an analogical reading of "God is good" are not two emphases within one doctrine; they are rival accounts of what the predicate does. The same applies to CROSS-109's theosis: both traditions say "image of God" and, on inspection, are not saying the same thing. **This also supplies the resolution direction for an older open worry** (2026-08-10) about whether the proposals *imported* "second-personal" into the Rohr material rather than found it there -- the general shape of that worry is that agreement between these two traditions has been read off shared vocabulary rather than shared commitment, and here is a specific, checkable instance of exactly that.
+Confidence: **Medium-High.** High that Rohr names Scotus and univocity himself -- that is in the source text. Medium on the scope of the damage, because **the existing Rohr-Stump CROSS entries were not re-read this run**; the claim that some of them are verbal is a hypothesis about the wiki's own contents, not a verified audit. That distinction matters and is the same one FINDING-071 had to make. Also worth stating: univocity is a thesis about predication, not about substance (CROSS-116b), so this does not by itself make Rohr a monist and must not be used that way.
+Recommended action: **Run the audit before citing any Rohr-Stump convergence, including in the ISME paper.** One pass over every existing Rohr-Stump CROSS asking only: does this agreement survive if Rohr means univocally what Stump means analogically? Entries that survive are strengthened by surviving. Not escalated: an audit request is not a paradigm flag, and escalating it would be a way of appearing to have done it.
+
+---
+
+FINDING-075:
+Date evaluated: 2026-09-01
+Source candidate: The evidence base of the entire 2026-09-01 batch -- 10 of 11 Wright sources, plus Rohr PRS-56, PRS-57
+Programs: Wright, Rohr, C2A2 pipeline
+Evaluation type: **Pipeline defect that silently caps the value of research output** -- reported as a defect, not a research signal
+Finding: Ten of the eleven Wright sources are podcast episodes and **no audio was retrieved for any of them**; six are subscriber-only. Every Wright triplet in this batch except PRS-55 -- the one non-podcast source -- rests on a publisher-written episode description. On the Rohr side, PRS-56 and PRS-57 rest on publisher metadata alone, because cac.org returns 403 to automated requests. What a description attests is that a thesis was addressed. What it cannot attest is the argument, the qualifications, or the concessions -- which is precisely the material a tradition-accelerator needs, since the whole premise is that mature membership means being able to state a position from inside it. **This is the fourth consecutive Ask-NTW ingestion in this condition.** A defect that recurs four times without being fixed has stopped being an incident and become a property of the system, and the failure mode is the dangerous kind: nothing errors, triplets are produced, confidence is quietly set to Medium, and the wiki fills with attested theses whose arguments were never read. Note the precedent that makes this fixable: on 2026-08-06 a Stump source reported paywalled turned out to be publicly hosted by the author's home institution. That check has not been tried on the Wright side.
+Confidence: **High.** This is a property of the retrieval, not an interpretation of it -- the proposals say so themselves, and the confidence ratings in both tradition files record it.
+Recommended action: **Escalate as a pipeline item, not to the Paradigm Shift Watch List, and give it an owner.** Concretely, in order of cheapness: (1) try the institution-page check on the Wright material before another Ask-NTW proposal is filed on a description alone; (2) have the specialist agent record `source_url` as an episode permalink rather than the show index, which several of these do not; (3) if audio remains unobtainable, the honest fix is to stop minting triplets from descriptions and file them as retrieval assignments instead -- PROP-2026-08-14-033 was handled that way this run and is the right precedent. **Standing consequence until fixed: nothing in the Wright tradition except PRS-55 may be quoted externally, including in the ISME paper.**
+
+---
+
+FINDING-076:
+Date evaluated: 2026-09-01
+Source candidate: Rohr PRS-62 against Rohr PRS-65
+Programs: Rohr (internal)
+Evaluation type: **Internal contradiction inside a single tradition, minted the same day** -- not a cross-program item
+Finding: PRS-62 holds that lament must precede imagination -- that the prophetic sequence requires grief to be fully entered before any new future can be envisaged. PRS-65 holds that joy and grief have no ordering, that Bowler's joy arrives with grief fully intact rather than after it. Both were extracted on 2026-09-01, from different weeks of the same corpus, by the same agent. Either they concern different state-pairs (lament-then-imagination is about a *sequence of acts*; joy-with-grief is about *simultaneous affect*, and these may simply not be the same claim) or one of them is wrong about Rohr. The distinction is worth drawing carefully, because if they are not reconcilable then the tradition as this wiki holds it asserts a contradiction, and the network's whole method depends on tradition pages being internally coherent enough that a mature member could hold them.
+Confidence: **Medium.** The contradiction is visible in the two triplet texts. Whether it is a real contradiction in Rohr or an artefact of two independent extractions from weekly meditations that were never meant to be read as one system is exactly what is unsettled -- and the second possibility is live, because these are devotional weeklies, not a treatise.
+Recommended action: **Route to the Rohr agent as a single adjudication task and log the outcome on the tradition page**, whichever way it goes. Do not average them, and do not quietly drop one. If they turn out to concern different state-pairs, say so explicitly in both Evidence fields so the next reader does not re-find this. Not escalated. **Method note worth generalising: this was only visible because sixteen proposals were ingested in one pass.** Drip-feeding a backlog one file per day hides intra-tradition contradictions, because nothing ever reads two of them together.
+
+---
+
+FINDING-077:
+Date evaluated: 2026-09-01
+Source candidate: Rohr PRS-46, PRS-65 (CROSS-113, CROSS-114), read against the standing grief boundary test (PROP-2026-08-07-003) and the dyadic co-measurement gap (FINDING-063..069)
+Programs: Rohr, Fredrickson
+Evaluation type: **Accumulating challenge to an operational construct from a tradition with no apparatus to test it**
+Finding: This is the third separate week of Rohr material to produce a boundary test for the positivity-resonance construct, and the two new ones are of different kinds. **Gate versus gradient (CROSS-113):** Rohr states the recognition constraint absolutely -- you cannot perceive what you have not become -- where Fredrickson's instruments treat the same constraint as continuous and measurable. One of these is a threshold and the other is a slope, and that is an empirical disagreement, not a difference of idiom. **Joy with grief intact (CROSS-114):** Bowler's joy arrives with grief fully present rather than displacing it, which cuts against the undoing hypothesis as usually stated. Taken with the standing grief boundary test and the already-logged finding that the construct's own imaging work never measured two co-present people, the pattern is that a tradition with no empirical apparatus keeps generating the qualitative form of the same challenge, and the challenge keeps being about the same thing: whether shared *positive* affect is the right unit, or shared affect with mutual care.
+Confidence: **Medium**, and the honest deflationary reading has to be stated: the Rohr corpus talks about grief constantly, so three hits from three weeks is close to what chance would give. What raises it above coincidence is that the three hits are not the same objection repeated -- absolute-vs-continuous, joy-with-grief, and co-presence are three different ways for the construct to be mis-specified. The Fredrickson side was not re-read this run.
+Recommended action: **Fold into the existing dyadic-co-measurement item rather than opening a new one** -- that item already proposes the right instrument (hyperscanning / dyadic physiology) and these two sharpen what it should measure. Concretely, CROSS-113 gives it a discriminating prediction it currently lacks: if the constraint is a gate, the measure should show a threshold; if a gradient, a slope. That is testable with the extension already proposed. **Escalate to the Paradigm Shift Watch List only if the gate reading survives** -- a genuine threshold in an affect measure would be a substantive result, and this is the first time the network has had a way to ask for one.
+
+---
+
+FINDING-078:
+Date evaluated: 2026-09-01
+Source candidate: Active Question citations across the Rohr proposal batch
+Programs: C2A2 pipeline (proposal-generation layer)
+Evaluation type: **Metadata drift** -- low severity, cheap fix, logged so it does not become accepted noise
+Finding: Several Rohr proposals cite "Rohr Active Question 2" for perspective-limitation and "Active Question 4" for contemplation-under-Friston. Neither matches the tradition page: Q2 is order-disorder-reorder against free energy, Q4 is the Universal Christ as convergence frame. Q1, Q10 and Q11 do match. The proposals were translated by content this run and the wrong numbering was not propagated into the triplets, so nothing downstream is corrupted. The interesting part is upstream: the proposal-generation layer is citing question numbers it is not reading, or is reading a stale copy of the tradition page.
+Confidence: **High** on the mismatch -- it was checked against the file. Unknown which of the two causes it is; that was not investigated.
+Recommended action: **Repair the numbering in the proposal files and give the janitor a check for it** -- a proposal citing an Active Question number that does not exist, or whose text does not match, is exactly the kind of thing a deterministic check catches for free (Rule 5: if code can answer, code answers). Not escalated. Flagged mainly because this class of error is how a wiki starts quietly disagreeing with itself, and it is being logged rather than fixed-and-forgotten so the recurrence is visible if it happens again.
+
+
+---
+
+FINDING-079:
+Date evaluated: 2026-09-01
+Source candidate: `scripts/ingest_ledger.py`, ZERO_YIELD pattern, found while writing this run's own PROCESSED_LOG entry
+Programs: C2A2 pipeline (measurement layer)
+Evaluation type: **Defect in the instrument the project uses to measure its own backlog** -- found by accident, reproduced deliberately
+Finding: `ZERO_YIELD = re.compile(r'\+0\b|no-net-new|citation-upgrade|\bHELD\b|\bNO-OP\b', re.I)` classifies a proposal as decided-with-zero-yield if its line contains any of those tokens. **`\bHELD\b` is a bare English word and matches prose, including prose asserting the opposite.** This run wrote the summary line "PROP-2026-08-14-033 held OPEN as a retrieval assignment" -- a sentence whose entire content is that the item is NOT closed -- and the ledger read the word "held", classified the id as decided-zero, and reported the backlog one item smaller than it is. The sentence and the measurement disagreed, and the measurement won silently. Two further properties make it worse than a one-off: the match is case-insensitive, so "withheld" and "beheld" also fire; and the classifier scans **any** line containing a PROP id, so a narrative sentence anywhere in the log can close an item that no one decided.
+Confidence: **High.** Reproduced twice in this run - the first phrasing closed the id via `+0`, the corrected phrasing closed it again via `held`, and only the third phrasing left it open. The regex was read directly.
+Recommended action: **Fix the classifier to key on structure, not on English.** The right shape is the one the project has already learned once: the 2026-08-27 hold-classifier defect flagged 18 proposals because they contained the string "Recommend", and the fix was to discriminate by section rather than by substring. Same fix here - a decision should be a **marked field** (an explicit `DECISION: zero-yield` token, or a dedicated decisions block) that prose cannot imitate. Until then, `\bHELD\b` should be dropped from the pattern outright; it is the only token in the list that is an ordinary English word rather than a coined marker, and it is doing more harm than the cases it was added for. **Escalate as a pipeline item with an owner.** This matters beyond tidiness: `ingest_ledger.py` is the standing answer to "how big is the backlog", the number it produces has already churned across two orders of magnitude in one day (2026-08-26), and a measurement instrument that can be moved by the wording of a comment is not yet trustworthy for the ISME paper's throughput claims.
+
+
+## FINDING-080 — "Interface" is a homonym across this network, on three independent pairs
+**Date:** 2026-09-02 | **Signal:** CROSS-127 | **Confidence:** MEDIUM-HIGH
+**Recommended action:** ESCALATE to master wiki Paradigm Shift Watch List as a *terminological* watch item,
+not a convergence.
+
+Three pairs in this vault now use "interface" with **inconsistent signs**. Levin: a physical system is an
+interface that HOSTS a pattern, which thereby becomes causally present — interfaces ADD. Hoffman: spacetime
+is an interface that HIDES the agents behind it and makes the restricted view the only accessible one —
+interfaces SUBTRACT. Hoffman Question 19 records the same inversion between trace logic and Arkani-Hamed's
+correlator result. FINDING-061 sits on adjacent ground.
+
+**Why this is a finding and not a curiosity.** The network has been treating cross-tradition recurrence of a
+term as weak evidence of convergence. Three instances with inconsistent signs is the opposite: it is evidence
+that the term is doing different work in each program and that any bridge built on the shared word inherits
+an equivocation. The cheap discriminating test is directional: for each program, ask whether the interface
+*adds* accessible structure or *removes* it. That test is answerable from material already in the vault and
+does not require new sources.
+
+**What would falsify this.** A statement from either thinker that the two senses are the same operation
+viewed from different sides — i.e. that hosting and hiding are one relation with the observer moved. Neither
+has been recorded saying so.
+
+## FINDING-081 — Release date is being ingested as delivery date; the template cannot tell them apart
+**Date:** 2026-09-02 | **Signal:** PIPELINE, DATE CLASS DEFECT | **Confidence:** HIGH
+**Recommended action:** REPAIR the proposal template. This is a defect, not a paradigm signal.
+
+The Ralston College symposium was delivered in **May 2026**. This wiki carried it under July and August 2026
+source dates across **nine triplets in two traditions** (mcgilchrist PRS-61..69, wolfram PRS-53/54), because
+those are the dates the recordings were posted. Corrected today from McGilchrist's own Substack post of
+2026-05-28, in which he writes that he has "only recently returned from Ralston College, Savannah."
+
+**The general defect.** The proposal front matter has a single `source_date` field. For papers those two
+dates nearly coincide; for lectures, podcasts and posted recordings they routinely differ by weeks or
+months, and nothing in the chain flags the gap. Any analysis that orders sources by `source_date` — which
+includes the metabolism yield axis and the narration epoch tracks — is exposed to an error of this size
+wherever a recording was posted late.
+
+**Same class as two prior defects, and the same fix applies.** The 2026-08-27 hold classifier discriminated
+by string rather than by section; the 2026-09-01 ZERO_YIELD classifier matched a bare English word in prose.
+All three are cases of **one field being asked to carry two facts**. Recommended repair: split into
+`event_date` and `record_date`, both optional, with the ingest carrying whichever is attested and saying
+which. Deterministic; no model pass needed.
+
+## FINDING-082 — 18% of this batch was locator cards, and nothing schedules their second pass
+**Date:** 2026-09-02 | **Signal:** PIPELINE, THIS RUN | **Confidence:** HIGH
+**Recommended action:** MONITOR, and consider a distinct card type. Do not treat as agent failure.
+
+Six of the 33 approved proposals cleared today carried no ingestible content: PROP-2026-08-12-031,
+-2026-08-15-002, -2026-08-23-002, -2026-08-26-001, -2026-08-26-002, -2026-08-26-004. Their Solution lines
+read "(deferred)", "(to be confirmed from the recording)", or "UNKNOWN". Each says so plainly in its own
+Handling Note or Evidence line — **the specialist agents labelled these correctly and the run honoured every
+label.** That part is the system working, and is worth stating because the raw number looks like a failure
+and is not.
+
+**The actual problem is downstream.** A locator card consumes a hunt slot, an approval slot and a review slot,
+and then produces a *task* — go watch the recording, re-extract — that no queue owns. The 2026-08-11
+commencement hold set an explicit re-open condition, that condition was met on 2026-08-15, and the re-open
+card is still a locator two and a half weeks later because obtaining a transcript is not something the daily
+run does. Six such tasks are now outstanding and they are recorded only in tradition wiki ingestion tables.
+
+**Suggested repair, offered not taken:** a `source_type: locator` value that routes these out of the review
+queue and into a standing retrieval list, so that approval means "queued for retrieval" rather than
+"approved for ingest." The precedent already exists — PROP-2026-08-14-033 is deliberately held OPEN in the
+ledger as a retrieval assignment rather than closed as zero-yield.
+
+## FINDING-083 — The first authored (not harvested) bridge in the wiki, and it names its own falsifier
+**Date:** 2026-09-09 | **Signal:** CROSS-131, LEVIN+MACINTYRE+STUMP | **Confidence:** MEDIUM-HIGH
+**Recommended action:** ESCALATE to the Paradigm Shift Watch List — as a claim to be attacked, not adopted.
+
+Every prior CROSS entry in this index was *harvested*: two thinkers said things, and the detector noticed a
+relation. CROSS-131 is different in kind. It is a construction Loughran authored, in which Levin's
+participation-without-representation is offered as the mechanism MacIntyre's *Dependent Rational Animals*
+lacks and as the scale-model of Aquinas's grace-as-participation. That difference is the finding: **the wiki
+has begun producing claims rather than only indexing them**, which is what an accelerator is supposed to do
+and is also where its error modes change.
+
+**Why MEDIUM-HIGH and not HIGH.** The construction rests on a stipulated, awareness-indexed reading of
+"cognitive light cone" that is *not* Levin's — on his usage the stored target is inside the collective's
+light cone. The stipulation is declared, which is the system working. But a declared stipulation still makes
+the load-bearing term equivocal across the three traditions it joins, and this is now the fourth equivocal
+term in this network after "interface" (CROSS-127) and the two logged at FINDING-080..082. **The pattern is
+no longer incidental.** Recommend it be handled where the others were sent: a named entry in the ISME methods
+section on equivocal vocabulary across traditions.
+
+**The two OPEN problems the note states against itself are the right attack surfaces.** (a) NORMATIVITY:
+Levin's setpoints are descriptive, so the recasting describes vice exactly as well as virtue and must import
+its normative source from outside Levin. (b) BOOTSTRAPPING: judging whether one's source is a tyrant requires
+standards that came from that source; MacIntyre's crisis-plus-encounterable-rival reply converts this from a
+philosophical problem into an engineering problem about the availability of rivals — converted, not solved.
+A construction that supplies its own falsifiers is worth more than one that does not; it should be cited only
+after someone has tried them.
+
+## FINDING-084 — The detector's own hypothesis is now stated in registrable form
+**Date:** 2026-09-09 | **Signal:** C2A2 DETECTOR, FALSIFIABLE | **Confidence:** MEDIUM
+**Recommended action:** ESCALATE to the Paradigm Shift Watch List as a measurement target; do NOT treat the
+literature leads as verified.
+
+"Rich cross-tradition exposure raises the rate at which agents revise their ends" is the first version of the
+accelerator/detector thesis written so that the instrument could register it: the unit is a **revision event
+in a corpus**, and C2A2 either can count those or cannot. That makes it the natural companion to the existing
+uptake and yield axes rather than a new programme.
+
+**Two cautions, both from the note itself.** First, the mechanism's MacIntyrean trigger is epistemological
+crisis, which cannot be scheduled — so the baseline rate is intermittent by construction and a null result
+over a short window means very little. Second, and more serious for interpretation: **exposure to rival
+aspirational states is the mechanism of conversion in both directions.** A measured rise in revision rate is
+evidence that the accelerator works, not that it works *well*; the instrument as specified cannot tell
+improvement from capture. Any claim made from this measurement at ISME needs that stated in the same
+paragraph.
+
+Prior-art leads named by Loughran and explicitly **not verified for currency**: Kohlberg and the
+neo-Kohlbergian line (Rest's Defining Issues Test), identity-status research after Marcia, quest religious
+orientation after Batson. These are leads. Nothing here is a literature review, and the ISME paper should not
+cite them until someone has read them.
+
+## FINDING-085 — Hand-authored session output has no reviewed route into the wiki
+**Date:** 2026-09-09 | **Signal:** PIPELINE | **Confidence:** HIGH
+**Recommended action:** REPAIR. Deterministic; no model pass needed.
+
+Today's ingest wrote three triplets into three tradition files from a file with **no `proposal_id`**. It never
+passed through `inbox/proposals/pending/`, no decision email approved it, and `scripts/ingest_ledger.py`
+cannot judge it at all — it appears under "files with NO proposal_id (cannot be judged)", the same bucket as
+`inbox/proposals/approved/2026-05-12_repair_manifest.md`.
+
+**What actually licensed the ingest was ID alignment**, and that deserves to be stated plainly because it is
+weak evidence dressed as strong. PRS-116 (levin), PRS-06 (macintyre) and PRS-41 (stump) were each the next
+free number in their destination file, which shows the note was authored against the current vault state and
+meant for those files. It does not show anyone approved it. Meanwhile the note's own header says "integration
+is a separate act" — an instruction the run overrode on the reading that placement in `inbox/` *is* the
+integration request.
+
+**This is the same family as FINDING-082.** There, approval could not distinguish "ingest this" from "go
+retrieve this". Here, the ledger cannot distinguish "unreviewed" from "reviewed elsewhere". In both cases a
+single status field is being asked to carry two facts. Repair: either mint a `PROP-` id for session-authored
+notes so they enter the normal review loop, or give the ledger an explicit third verdict — `authored`,
+carrying the session id as its warrant — so that an ingest of this kind is visible in the ledger instead of
+invisible to it.
+
+## FINDING-086 — "Substance" is the fourth equivocal term, and the fifth is in the same batch
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-09-003 (Kastrup × Hecht)
+**Confidence:** High · **Recommended action:** ISME methods section, named entry — not a silent correction
+
+Hecht defines substance *per Aquinas* and then applies it inside an idealist ontology. The definition
+survives the import; hylomorphism does not. Hylomorphism is what does the work for Aquinas in explaining how
+a soul is the form of *this* body rather than an immaterial thing standing nearby — so Stump's separated
+soul and "an alter that has stopped extending into physicality" are not the same claim, and the announcement
+text slides between the two senses inside one paragraph.
+
+**Why this is a finding and not a footnote.** The network now has a *series*: "interface" (FLAG-020, Levin
+adds where Hoffman subtracts), the two logged at FINDING-080..082, "cognitive light cone" (FINDING-085,
+awareness-indexed reading stipulated against Levin's own usage), and now "substance". A fifth is in this
+same batch — see FINDING-087. At one, it is a correction. At five, it is a fact about cross-tradition
+indexing itself, and it belongs in the methods section as a declared hazard of the method rather than as
+five separate repairs.
+
+**Escalated** to the master Paradigm Shift Watch List as FLAG-024.
+
+## FINDING-087 — "Markov" equivocation, caught in-flight by the agent that could have made it
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-02-005 (Carroll / Al-Khalili, Mindscape 366)
+**Confidence:** High · **Recommended action:** same disposition as FINDING-086; also record the catch
+
+Al-Khalili's account of how quantum biology survives a warm wet environment is that life may tune its
+environment so decoherence does not simply drain coherence away — "the environment isn't Markovian, there's
+some non-Markovianity... it's helping keep the quantumness going." A system that shapes its own environment
+to preserve an internal state is the *shape* of active inference at a scale nobody has claimed it at. But
+non-Markovianity here is a technical term about bath memory in an open quantum system; a Markov blanket is a
+statistical-independence boundary. Nobody in the conversation mentions the free energy principle.
+
+**The finding has two halves and the second is the more useful one.** (a) The equivocation is real and would
+have produced a spurious Friston–Carroll bridge. (b) **The Carroll agent caught it itself**, recorded the
+item as "a shape match, not a claim", and cited FLAG-020 as the precedent. That is the first observed case
+of the equivocation register being used *prospectively* by an agent rather than applied retrospectively by
+the detector. Worth noting in the methods section as evidence the register changes agent behaviour, which is
+otherwise an assumption.
+
+## FINDING-088 — A timestamped displacement measurement is available and expires
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-02-003, PROP-2026-09-02-004
+**Confidence:** Medium-High · **Recommended action:** escalate; act before the recordings become hard to get
+
+Two Kastrup sources six days apart bracket a live exchange with Levin, and both put the same question —
+minds as patterns, intention substrate-independent across cells, organisms, AI and larger scales. The
+inter-tradition study is built to detect movement in a position under exposure to a rival and normally has to
+infer it across years and venues. Here the interval is one week, the object is fixed, and both recordings
+exist.
+
+**What would make it a measurement rather than a story.** Code the shared dialogue in the Levin wiki and the
+Kastrup wiki *independently, before comparison*. That yields an inter-rater agreement number on a shared
+source — a quantity the network has repeatedly wanted and has never produced, because the standing practice
+is to write one summary and copy it into both files. If the coding is done after comparison the number is
+worthless and the pair should not be claimed as a measurement.
+
+**Blocked on retrieval.** See FINDING-089: the dialogue is paywalled and the platonic-space exchange is the
+part the public summary omits. The kastrup triplets ingested this run rest on the summary.
+
+**Escalated** to the master Paradigm Shift Watch List as FLAG-023.
+
+## FINDING-089 — Four approvals approved a pointer, not a reading, and the retrieval queue still does not exist
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-08-003, -09-02-003, -09-02-002, -09-08-004
+**Confidence:** High · **Recommended action:** build the queue, or stop approving cards that ask for one
+
+Of the 36 cards approved in the 2026-09-09 decision email and ingested in this run, four carry an explicit
+self-declared retrieval condition, written by the proposing agent:
+
+| card | condition, in the agent's own words |
+|---|---|
+| PROP-2026-09-08-003 | submitted on an institutional listing without the source text; "if it is approved as-is, the approval is approving a pointer, not a reading" |
+| PROP-2026-09-02-003 | recording paywalled; the platonic-space exchange is the part the summary omits; "recommend Tom's member access be used to obtain it **before this proposal is ingested**" |
+| PROP-2026-09-02-002 | "queue a retrieval check after 2026-09-24 rather than treating this proposal as ingestible material" |
+| PROP-2026-09-08-004 | self-declared duplicate risk against PROP-2026-06-23-001 and PROP-2026-08-04-002; "if the reviewer judges the marginal yield too thin, reject as duplicate" |
+
+All four were approved and are now ingested. The triplets they produced are in the tradition files with their
+caveats preserved in the Evidence lines, which is the correct fallback — but the caveat is now the only thing
+standing between a pointer and a reading, and caveats do not expire, get assigned, or come back round.
+
+**This is not new and that is the finding.** The 2026-09-02 backlog review already recorded "a retrieval
+queue that doesn't exist is 6 deep." It is now at least 10. A queue that only exists as prose inside Evidence
+fields is indistinguishable, at read time, from a source that was actually read. Either mint a retrieval
+queue with dates and owners, or change the review page so a card carrying a retrieval condition cannot be
+APPROVEd in one keystroke alongside 35 others.
+
+**Also worth naming:** the decision email approved all 36 cards, including the four above and the two in
+FINDING-090. A batch APPROVE is a legitimate act — but it cannot distinguish "I read this and agree" from "I
+did not read this one separately," and four of these cards were specifically written to be caught by a
+reviewer.
+
+## FINDING-090 — The Hawkins authorship rule has now been settled three times by default
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-08-001, PROP-2026-09-08-002
+**Confidence:** High · **Recommended action:** write the rule down, either way; it costs nothing and ends the loop
+
+PROP-2026-09-08-001 is a Thousand Brains Project team meeting led by Tristan Slominski. PROP-2026-09-08-002
+is led by Viviane Clay. Neither is Hawkins speaking. Both proposing agents flagged this themselves, cited the
+precedent (PROP-2026-08-26-005, PROP-2026-08-17-011/012), and asked in almost identical words that a reviewer
+either reject on that ground or fix the standing rule "so it gets fixed rather than re-litigated."
+
+Both were approved. Sixteen triplets — hawkins PRS-36..51, the largest single-tradition yield in this run —
+now rest on a rule that has never been stated, only repeatedly not-rejected.
+
+**Both answers are defensible.** *Institution-scoped:* the Hawkins tradition tracks the Thousand Brains
+research programme, in which case TBP output is in scope by definition and the caveat paragraph is wasted
+effort on every future card. *Voice-scoped:* the tradition tracks Hawkins, in which case sixteen triplets are
+mis-filed and a `traditions/hawkins/tbp/` split is the repair. What is not defensible is the current state,
+where the agents ask each time and the pipeline answers by saying nothing.
+
+**Note on yield.** PROP-2026-09-08-002 was also 39 days old at proposal time — outside the 30-day window,
+submitted under the "significant work not yet captured" clause. That clause is being used often enough now
+that its own rate is worth counting.
+
+## FINDING-091 — The network now carries the strongest prediction *against* its own thesis, and it is testable with the same instrument
+
+**Date:** 2026-09-24 · **Source signals:** PROP-2026-09-12-002 (levin PRS-126..127), PROP-2026-09-12-004
+**Confidence:** Medium · **Recommended action:** record the rival prediction next to the detector's thesis (FLAG-022) so the instrument is built to register either outcome
+
+FLAG-022 states the detector's thesis: rich cross-tradition exposure improves judgement. The Levin-lab "cognitive virus" paper predicts the opposite under heavy AI mediation — a population can slide into a lock-in state with reduced competence. The C2A2 network is itself heavily AI-mediated. The two predictions disagree about the *same observable* (revision events vs. dependence transitions), so this is not a rhetorical objection; it is the null hypothesis the instrument should be able to detect. The metastasis card sharpens it: a well-coupled system faithfully following its setpoint can be the failure. Coupling is not health. Not escalated: FLAG-022 is the right home, and it should gain a line rather than a sibling flag.
+
+## FINDING-092 — The Hawkins authorship rule has been settled by default a fourth time; the tradition is now de facto institution-scoped
+
+**Date:** 2026-09-24 · **Source signals:** PROP-2026-09-15-001/-002, PROP-2026-09-22-001/-002
+**Confidence:** High · **Recommended action:** Tom states the rule in one line (institution-scoped or voice-scoped) — see FINDING-090
+
+All four Hawkins-tradition cards in this batch are Thousand Brains Project team output. None is Hawkins speaking. Fifteen triplets (hawkins PRS-52..66) were ingested on them. Counting FINDING-090's sixteen, 31 of the file's 66 triplets now rest on an unstated rule. At this ratio the rule has been decided in practice: the tradition is tracking the TBP programme. If that is the intent, write it into the Hawkins agent's instructions and the caveat paragraphs can stop. If not, the repair is getting larger every week.
+
+## FINDING-093 — A proposer's hold condition was satisfiable by one lookup, and the lookup found an error in the card
+
+**Date:** 2026-09-24 · **Source signals:** PROP-2026-09-14-004
+**Confidence:** High · **Recommended action:** when a card says "do not ingest until X resolves" and X is a citation, the orchestrator should try to resolve it before ingest, not only hold
+
+The card said "do not ingest until the citation resolves" (no title, no DOI, conflicting venue). One search plus the nature.com landing page resolved it: *An elementary form of agency at planetary-scale*, Sci Rep, published 2026-08-03, doi:10.1038/s41598-026-61878-9. It also showed the card's author list was incomplete: five authors, not four (Lancelot Da Costa was missing). The resolved citation is written into both friston triplets' Source line. Contrast the Wright hold (PROP-2026-08-14-033), which is a real retrieval gap and still open. Not every hold is retrieval debt; some are one lookup.
+
+## FINDING-094 — Pauline material is arriving from one side of the Rohr–Wright axis only
+
+**Date:** 2026-09-24 · **Source signals:** nine Rohr cards 09-13..09-23; CROSS-140
+**Confidence:** Medium · **Recommended action:** a Wright-side search specifically on Paul for September 2026, before a tenth Rohr-side flag is filed
+
+The Rohr agent has flagged Wright on five cards in two weeks, each time as "the Wright agent should check." No Wright proposals exist for these weeks. The comparison the Rohr agent keeps setting up (interior vs. corporate Paul) cannot be made from the index as it stands, because only one reading is in it. This is the same shape as FINDING-075 (Wright retrieval failures capping confidence). Not escalated: it is a gap in collection, not a result.
+
+**Not escalated this run, with reason.** CROSS-136 (Hoffman and Friston in one room) is the most interesting item in the batch, but the source is from February, it is ingested from one side only, and FINDING-064 already warns that "restriction" is a homonym across these two programs. Flagging it before the Friston side exists would repeat the pattern of flagging an unanswered question.

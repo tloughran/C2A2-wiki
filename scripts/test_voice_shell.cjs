@@ -38,7 +38,9 @@ const os = require('os');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+// Override with CHROME=<path> (a Linux sandbox, a different Chrome build); the
+// Mac default stays the Mac default so the scheduled run needs no environment.
+const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 
 const argv = process.argv.slice(2);
 function arg(name, dflt) {
@@ -303,6 +305,7 @@ function runCmd(page, cmd) {
     // inView is the CAMERA count -- the only field a claim about visibility may
     // rest on. Carried separately from `shown` precisely because they disagree.
     "         inView: (r && typeof r.inView === 'number') ? r.inView : null," +
+    "         verify: (r && r.verify) || null," +
     "         total: (r && typeof r.total === 'number') ? r.total : null, bar: el ? el.textContent : null, cls: el ? el.className : null };"
   );
 }
@@ -800,7 +803,7 @@ async function main() {
   };
   const edgesBefore = await edgesOf(page);
   await row(page, 'A12 hide edges mention -> a family the filters dim cannot name', 'hide edges mention',
-    { ok: true, spoken: /edges: wikilink, reference/ });
+    { ok: true, spoken: /edges: signal, wikilink, reference/ });
   await sleep(400);
   const edgesAfter = await edgesOf(page);
   record('A12a hiding an edge type actually removes edges',
@@ -1226,7 +1229,9 @@ async function main() {
 
   // ---- Phase G: a page reached by an IN-PAGE LINK, and the way back ---------
   //
-  // Start Here's "See all 15 framings" postMessages the shell to swap the frame
+  // Start Here's "What's it doing?" door (was "See all 15 framings" until the
+  // 2026-08-12 de-numbering; the harness expected the old text until 09-17 and
+  // the whole phase failed downstream) postMessages the shell to swap the frame
   // while the Start Here chapter button stays lit. Nothing in the shell watched
   // the frame, so: the guide could not see the new page, would not believe the
   // user who said they had opened it, and `read` read the OLD document's cursor
@@ -1243,9 +1248,9 @@ async function main() {
   // AFTER tabs and sub-views, so one can never shadow a real destination.
   const whatLinks = await runCmd(page, 'what');
   record('G0a what lists the page\'s links -- a link nobody mentions does not exist to a voice user',
-    /\d+ links: "See all 15 framings"/.test(whatLinks.spoken || ''), whatLinks.spoken);
-  await row(page, 'G0b go <link text> follows it', 'go see all 15 framings',
-    { ok: true, spoken: /go See all 15 framings/ });
+    /\d+ links: .*What's it doing\? Fifteen answers/.test(whatLinks.spoken || ''), whatLinks.spoken);
+  await row(page, 'G0b go <link text> follows it', 'go fifteen structures',
+    { ok: true, spoken: /go What's it doing\? Fifteen answers/ });
   await sleep(3000);
   await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
   // The two kinds that are NAMED but never followed. Silently omitting them
@@ -1262,19 +1267,23 @@ async function main() {
   const linkText = await page.eval(
     IFRAME_DOC + "var a = d.querySelector('a[data-target=\"fifteen\"]');" +
     "if (!a) { return '(link missing)'; } a.click(); return a.textContent.replace(/\\s+/g,' ').trim();");
-  record('G1 the framings link is where the user says it is', /15 framings/.test(linkText), 'clicked: ' + linkText);
+  record('G1 the framings link is where the user says it is', /Fifteen structures, fifteen functions/.test(linkText), 'clicked: ' + linkText);
   await sleep(3000);
   // The whole point: identity now follows the FRAME, so a page with no tab
   // button of its own still resolves to its own manifest.
   await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
+  // G2-G5d are pinned to the page AS WRITTEN (title, first two headings, section
+  // count: 17 since 2303e8a, 2026-08-24). A content edit there moves these rows,
+  // and that is the intended cost: the claim under test is that the guide walks
+  // THIS document, so a stale expectation must fail rather than match anything.
   await row(page, 'G2 what -> names the page it is ACTUALLY on, not the lit chapter', 'what',
-    { ok: true, spoken: /view: What Is C2A2\?/ });
+    { ok: true, spoken: /view: What's it doing\?/ });
   const gWhat = await runCmd(page, 'what');
   record('G2a and it drops a row position that belongs to a different document',
     !/left to right/.test(gWhat.spoken || ''), gWhat.spoken);
   await row(page, 'G3 pick first -> walks THIS page, numbered by its own headings', 'pick first',
-    { ok: true, spoken: /1\.Fulfillment.*\|\s*1 of 16 sections/ });
-  await row(page, 'G4 next', 'next', { ok: true, spoken: /2 of 16 sections/ });
+    { ok: true, spoken: /1\.A Forum Where Communities.*\|\s*1 of 17 sections/ });
+  await row(page, 'G4 next', 'next', { ok: true, spoken: /2 of 17 sections/ });
   const gRead = await runCmd(page, 'read');
   record('G5 read reads THIS document, not the previous one',
     /reading 2\.Accelerator/.test(gRead.spoken || ''), gRead.spoken);
@@ -1292,7 +1301,7 @@ async function main() {
   // is exactly how this shipped, so the perception verbs are now held here.
   const vgWhere = await page.eval("return window.VGWhere();");
   record('G5b where_am_i names the page the user is on, not the lit chapter',
-    !!vgWhere && vgWhere.tab === 'what_is_c2a2' && /What Is C2A2/.test(vgWhere.title || ''),
+    !!vgWhere && vgWhere.tab === 'what_is_c2a2' && /What's it doing/.test(vgWhere.title || ''),
     JSON.stringify(vgWhere));
   record('G5c and it never falls back to a chapter id while a frame document exists',
     !!vgWhere && vgWhere.tab !== 'intro' && !/Start here/i.test(vgWhere.title || ''),
@@ -1301,7 +1310,7 @@ async function main() {
   // expected. What must NOT happen is it identifying itself as somewhere else.
   const vgDesc = await page.eval("return window.VGDescribe().then(function (d) { return d; });");
   record('G5d describe_view carries the right identity even when the tab cannot answer',
-    !!vgDesc && vgDesc.tab === 'what_is_c2a2' && /What Is C2A2/.test(vgDesc.title || ''),
+    !!vgDesc && vgDesc.tab === 'what_is_c2a2' && /What's it doing/.test(vgDesc.title || ''),
     JSON.stringify(vgDesc));
 
   // The way back. setFrame uses location.replace on purpose, so there was no
@@ -1342,7 +1351,10 @@ async function main() {
   await activateTab(page, 'agents_tab.html');
   await sleep(6000);
   await assertManifest(page, 'agents_tab', 'agents_tab.html');
-  await auditTab(page, 'agents_tab', 10, 1);
+  // 9, not 10, since 2026-09-17: the narration strip's #btn-mute was removed with
+  // the tab's Web Speech narration (one voice -- the guide -- speaks for every
+  // tab). The count is exact on purpose; lower it only when a control is gone.
+  await auditTab(page, 'agents_tab', 9, 1);
   await row(page, 'H1 what -> names the sub-view it booted into', 'what',
     { ok: true, spoken: /schedule view/ });
   await row(page, 'H2 go explorer -> a sub-view on a tab that never had one', 'go explorer',
@@ -2263,10 +2275,19 @@ async function main() {
     "window.VoiceGuide.speech.arm(dest.stream);" +
     "var p = [c.resume()]; if (window.audioCtx) { p.push(window.audioCtx.resume()); }" +
     "return Promise.all(p).then(function () { return true; });");
-  await sleep(400);
-  const wRms = await page.eval("return window.VoiceGuide.speech.rms();");
+  // WAIT FOR THE AUDIO GRAPH TO GO LIVE, THEN MEASURE. A fixed 400ms sleep was
+  // a race: on a loaded page the analyser still reads silence for ~1s after
+  // arm() (the 09-28 run read 0 at W2/W3 and 0.99 at W3b, same stream). Poll up
+  // to 3s; a meter that never goes live still fails, and the latency is
+  // reported so a slowdown stays visible.
+  let wRms = null, wLiveMs = 0;
+  for (; wLiveMs <= 3000; wLiveMs += 100) {
+    wRms = await page.eval("return window.VoiceGuide.speech.rms();");
+    if (typeof wRms === 'number' && wRms > 0.012) { break; }
+    await sleep(100);
+  }
   record('W2 armed on a real stream, the meter reads a real number',
-    typeof wRms === 'number' && wRms > 0.012, String(wRms));
+    typeof wRms === 'number' && wRms > 0.012, String(wRms) + ' after ~' + wLiveMs + 'ms');
 
   await page.eval("window.VoiceGuide.speech.start(); return true;");
   await sleep(300);
@@ -2436,6 +2457,313 @@ async function main() {
   record('I1 the Resume control exists, starts hidden, and is inert with no session',
     idleUi === 'ok', 'vg-resume: ' + idleUi);
 
+  // ---- Phase X: ONE `find`, every tab ---------------------------------------
+  //
+  // The search-and-dialogue decision of 2026-09-16: every tab's own search box
+  // is an ALIAS of CCL `find` -- one code path, journaled, undoable, reported by
+  // `what`, reachable by voice -- and a bare string typed in the bar is a search.
+  // Three claims per tab, each asserted against the page and the bar:
+  //   X<n>a  `find <x>` in the bar reports a count and journals a cut
+  //   X<n>b  the tab's own box, embedded, produces the IDENTICAL journal entry
+  //          (the alias posts {source:'c2a2-tab', type:'find'} and the shell runs
+  //          the same `find`)
+  //   X<n>c  `undo` restores; `what` names the cut while it is live
+  //
+  // A tab that has not implemented the contract yet is PENDING, not skipped:
+  // its rows record FAIL with the word pending, so the suite is red until the
+  // tab lands (Rule 12: "completed" is a lie if anything was skipped silently).
+  // The Sociogram is the one tab whose `find` predates the contract; its rows
+  // run on the scrape road and must stay green through the transition.
+  process.stdout.write('\nPhase X -- one find, every tab\n');
+  // 2026-09-22 (Tom): ONE visible search, the Sociogram kind, in row 1 of the shell.
+  // The CCL strip is retired as a surface -- if it ever shows again, a visitor has
+  // two search boxes, which is the exact confusion this change removed.
+  const findEcho = await page.eval("var a=document.getElementById('ask-input'), b=document.getElementById('ccl-bar'); return JSON.stringify({ph: a ? a.placeholder : null, row1: !!(a && a.closest('#row1')), stripShown: !!(b && b.getBoundingClientRect().height > 0)});");
+  const fe = JSON.parse(findEcho || '{}');
+  record('X0 one search box, in row 1, that says it searches AND answers; the old strip is gone', fe.row1 && /search/i.test(fe.ph || '') && /ask/i.test(fe.ph || '') && !fe.stripShown, findEcho);
+  const findHelp = await runCmd(page, 'help');
+  record('X0a help says plain text is a search', /plain text = find/.test(findHelp.spoken || ''), findHelp.spoken);
+
+  const FIND_TABS = [
+    // src, needle, contract expected today?
+    ['wiki_narration.html',  'levin',   true],    // Sociogram: contract since tab 1 (2026-09-18)
+    ['community_explorer.html', 'civic', true],
+    ['prs_3d.html',          'levin',   true],
+    ['agents_tab.html',      'summa',   true],
+    ['rc_document_explorer.html', 'levin', true],
+    ['physics_explorer.html', 'newton', true],
+    ['rc_sandbox_notebook.html', 'levin', true],
+    ['heartbeat/index.html', 'agent',   true],
+  ];
+  for (const [src, needle, needsContract] of FIND_TABS) {
+    const key = src.replace(/\.html$|\/index\.html$/, '').replace(/^.*\//, '');
+    // Education tabs live behind a chapter button; the accelerator tabs behind
+    // another. Click the chapter first when the tab button is not on screen.
+    let act = await activateTab(page, src);
+    if (/no such tab button/.test(act)) {
+      await page.eval("var b=document.getElementById('chap-education'); if (b) { b.click(); } return 1;");
+      await sleep(800);
+      act = await activateTab(page, src);
+    }
+    await sleep(src === 'wiki_narration.html' ? 9000 : 5000);
+    const has = await page.eval(IFRAME_DOC +
+      "return { find: !!(w && typeof w.c2a2Find==='function'), clear: !!(w && typeof w.c2a2Clear==='function'), read: !!(w && typeof w.c2a2ReadCut==='function') };");
+    const contract = has.find && has.clear && has.read;
+    if (needsContract && !contract) {
+      record('X ' + key + ' -- pending: tab does not expose c2a2Find/c2a2Clear/c2a2ReadCut yet', false, JSON.stringify(has));
+      continue;
+    }
+    const before = await runCmd(page, 'clear');
+    const found = await runCmd(page, 'find ' + needle);
+    record('X ' + key + ' a: find ' + needle + ' -> a count, on the ' + (contract ? 'contract' : 'scrape') + ' road',
+      found.ok && /\d+ /.test(found.spoken || ''), found.spoken);
+    const j1 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
+    record('X ' + key + ' a2: the cut is journaled with its query', /"query":"/.test(j1 || '') && new RegExp(needle).test(j1 || ''), j1 ? j1.slice(0, 160) : 'no CCLJournalTop');
+    const whatCut = await runCmd(page, 'what');
+    record('X ' + key + ' c: what names the cut', new RegExp('cut to \\d+ .*' + needle).test(whatCut.spoken || ''), whatCut.spoken);
+    const undone = await runCmd(page, 'undo');
+    record('X ' + key + ' c2: undo restores the cut', undone.ok && /undid \(cut\)/.test(undone.spoken || ''), undone.spoken);
+    if (contract) {
+      // The alias: the tab's own box, embedded, must produce the SAME journal entry.
+      await runCmd(page, 'clear');
+      // Drive the tab's OWN box, not a hand-made postMessage: the shell accepts
+      // the alias only from the window it is showing (e.source), and a message
+      // posted from a page.eval has no such source -- so a faked one is rejected,
+      // correctly, and would fail this row for the wrong reason (run 8, 09-18).
+      const aliased = await page.eval(IFRAME_DOC +
+        "var box = d.getElementById('search-input') || d.getElementById('exp-search') || d.getElementById('prs-search-box') || d.getElementById('toc-filter') || d.getElementById('concept-search') || d.getElementById('q') || d.getElementById('signal-search');" +
+        "if (!box) { return 'no box'; } box.value = " + JSON.stringify(needle) + ";" +
+        "if (typeof w.runSearch === 'function') { w.runSearch(); return 'runSearch'; }" +
+        "box.dispatchEvent(new w.KeyboardEvent('keydown', {key:'Enter', bubbles:true})); box.dispatchEvent(new w.Event('input', {bubbles:true})); return 'events';");
+      await sleep(1200);
+      const j2 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
+      record('X ' + key + ' b: the tab\'s own box is an alias -- identical journal entry', j1 === j2, (j1 || '').slice(0, 100) + ' vs ' + (j2 || '').slice(0, 100));
+      await runCmd(page, 'clear');
+    }
+  }
+  // Bare string -> find, on a tab with `find` (the Sociogram is up last only if
+  // its row ran; make it explicit).
+  await activateTab(page, 'wiki_narration.html'); await sleep(9000);
+  const bare = await runCmd(page, 'levin');
+  // The scrape road says `find levin`; the contract road says `find "levin"`.
+  // Both begin with the command that actually ran, which is the claim.
+  record('X9 a bare string in the bar runs as find, and says so', bare.ok && /^find "?levin"?/.test(bare.spoken || ''), bare.spoken);
+  const shotX = await page.screenshot(path.join(SHOTS, 'X-bare-find.png'));
+  await runCmd(page, 'clear');
+  const bareNo = await runCmd(page, 'xyzzy-no-such-verb');
+  record('X9a a bare string that matches nothing is a visible find, not a refusal', /^find "?xyzzy-no-such-verb"?/.test(bareNo.spoken || ''), bareNo.spoken);
+  // FOUND BY THIS ROW, 2026-09-17: on the scrape road a search that matches
+  // NOTHING reads back as "5102 nodes shown" -- the Sociogram's runSearch dims
+  // nothing when nothing matched, and deriveLitIds reads "nothing dimmed" as
+  // "everything lit". The bar then reports the opposite of what happened. The
+  // contract road cannot make this mistake (ids come from the tab's answer), so
+  // this row is PENDING on tab 1 rather than patched on the scrape road.
+  record('X9a2 a no-match search says nothing matched (pending: Sociogram contract, tab 1)',
+    /nothing matched/.test(bareNo.spoken || ''), bareNo.spoken);
+  // ---- Phase Y: composable cuts + verify-after-action (2026-09-22) ---------
+  // WHY: Tom's 15-minute test -- the guide "cannot retain one cut on data and
+  // add or subtract another, nor notice that it failed". Each row fails if a
+  // second search REPLACES the first, if a no-op step passes silently, or if
+  // the count spoken disagrees with what the page actually draws.
+  process.stdout.write('\nPhase Y -- composable cuts, verified\n');
+  const undone_ok = function (r) { return !!(r && r.ok && /undid \(cut\)/.test(r.spoken || '')); };
+  const nOf = function (r) { const m = /\|\s+(\d+) nodes shown/.exec((r && r.spoken) || ''); return m ? +m[1] : -1; };
+  const drawnN = async function () { return await page.eval(IFRAME_DOC + "var n=0, cs=d.querySelectorAll('.node-circle'); for (var i=0;i<cs.length;i++){ if(!cs[i].classList.contains('ccl-cut')) n++; } return n;"); };
+  await runCmd(page, 'clear');
+  const y1 = await runCmd(page, 'find levin');
+  const y2 = await runCmd(page, 'also friston');
+  record('Y1 also ADDS to the standing cut instead of replacing it', nOf(y2) > nOf(y1) && nOf(y1) > 0 && /levin also friston/.test(y2.spoken || ''), nOf(y1) + ' -> ' + nOf(y2) + ' | ' + y2.spoken);
+  record('Y1a the spoken count is what the page draws (read off the DOM)', (await drawnN()) === nOf(y2), 'drawn ' + (await drawnN()) + ' vs said ' + nOf(y2));
+  const y3 = await runCmd(page, 'except levin');
+  record('Y2 except SUBTRACTS from the standing cut', nOf(y3) > 0 && nOf(y3) < nOf(y2) && !/CHECK/.test(y3.spoken || ''), y3.spoken);
+  const y4 = await runCmd(page, 'undo');
+  const j4 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
+  record('Y3 undo steps back one composition, not to nothing', undone_ok(y4) && (await drawnN()) === nOf(y2), 'drawn ' + (await drawnN()) + ' | ' + (j4 || '').slice(0, 120));
+  const y5 = await runCmd(page, 'except xyzzy-nothing');
+  record('Y4 a step that did nothing is SAID, with the reason', /CHECK: .*"xyzzy-nothing" matched nothing/.test(y5.spoken || '') && y5.verify && y5.verify.ok === false, y5.spoken);
+  await runCmd(page, 'undo');
+  const y6 = await runCmd(page, 'hide levin');
+  const w6 = await runCmd(page, 'what');
+  record('Y5 hiding a group KEEPS the search cut and says so', /kept/.test(y6.spoken || '') && /cut to \d+/.test(w6.spoken || ''), y6.spoken + ' || ' + w6.spoken);
+  await runCmd(page, 'all');
+  await runCmd(page, 'clear');
+  const y7 = await runCmd(page, 'within friston');
+  record('Y6 with nothing cut, within/except refuse plainly instead of cutting to empty', !y7.ok && /no search cut is standing/.test(y7.spoken || ''), y7.spoken);
+  await runCmd(page, 'clear');
+
+
+  // ---- Phase P: plots join the shell's state (step 1, 2026-09-29) ---------
+  // WHY: the plot panel kept its own settings where nothing else could see
+  // them -- not undo, not `what`, not the voice guide, not the planner. Each
+  // row fails if a plot command changes the picture without the journal
+  // knowing, if a misunderstood word changes anything at all, if the panel
+  // holds something other than what was asked, or if a hand change on the
+  // panel escapes undo. Needs Plotly from cdnjs (the Mac run has network).
+  process.stdout.write('\nPhase P -- plots through the one road\n');
+  const runCmdAwait = function (cmd) {
+    return page.eval(
+      "var r0 = window.CCLRun(" + JSON.stringify(cmd) + ");" +
+      "return Promise.resolve(r0 && r0.pending ? r0.pending : r0).then(function (r) {" +
+      "  return { spoken: (r && r.spoken) || null, ok: !!(r && r.ok), verify: (r && r.verify) || null, plot: (r && r.plot) || null," +
+      "           interim: (r0 && r0.pending) ? r0.spoken : null }; });");
+  };
+  const plotSpec = async function () { return await page.eval(IFRAME_DOC + "return (w.C2A2Plot && w.C2A2Plot.visible()) ? w.C2A2Plot.get() : null;"); };
+  const plotBtnOn = async function () { return await page.eval("var b = document.getElementById('btn-plots'); return !!(b && b.classList.contains('on'));"); };
+  await runCmd(page, 'clear');
+  const p1 = await runCmdAwait('plot heatmap by thinker');
+  const s1 = await plotSpec();
+  // The model half is installed silently when the Sociogram loads, so `plot`
+  // usually finishes at once; if it was still loading, the result is the
+  // FINISHED one either way (interim shown for the record only).
+  record('P1 plot reports the finished, VERIFIED result -- never just a loading line',
+    p1.ok && /^plot heatmap by thinker/.test(p1.spoken || '') && p1.verify && p1.verify.ok === true && s1 && s1.plot === 'heatmap',
+    (p1.interim || '(finished at once)') + ' => ' + p1.spoken);
+  record('P1a the result carries the computed numbers the chart is drawn from',
+    !!(p1.plot && p1.plot.edges > 0 && p1.plot.top.length > 0 && /\d+ edges; most: /.test(p1.spoken || '')), JSON.stringify(p1.plot && { edges: p1.plot.edges, top: p1.plot.top.slice(0, 2) }));
+  let pDrawn = false;
+  for (let i = 0; i < 60 && !pDrawn; i++) {   // Plotly (cdnjs) loads on first show
+    pDrawn = await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); return !!(el && el.querySelector('.main-svg'));");
+    if (!pDrawn) { await sleep(250); }
+  }
+  record('P1b the chart is actually drawn, and the Plots button shows it is open', pDrawn && (await plotBtnOn()), 'svg ' + pDrawn);
+  const p2 = await runCmdAwait('plot edges signal strength strong high');
+  const s2 = await plotSpec();
+  record('P2 a narrowing lands in the panel exactly as asked, and the count falls',
+    p2.ok && s2 && JSON.stringify(s2.kinds) === '["signal"]' && s2.strengths.slice().sort().join() === 'High,Strong' && s2.plot === 'heatmap' &&
+    p2.plot && p1.plot && p2.plot.edges < p1.plot.edges,
+    (p1.plot && p1.plot.edges) + ' -> ' + (p2.plot && p2.plot.edges) + ' | ' + p2.spoken);
+  const p3 = await runCmdAwait('plot sankey banana');
+  const s3 = await plotSpec();
+  record('P3 one word not understood: refused by name, and NOTHING changed', !p3.ok && /banana/.test(p3.spoken || '') && /Nothing changed/.test(p3.spoken || '') &&
+    JSON.stringify(s3) === JSON.stringify(s2), p3.spoken);
+  const p4 = await runCmd(page, 'undo');
+  const s4 = await plotSpec();
+  record('P4 undo restores the whole prior plot, lists included', /undid \(plot\)/.test(p4.spoken || '') && s4 && s4.kinds.length === s1.kinds.length && s4.strengths.length === s1.strengths.length,
+    p4.spoken + ' | kinds ' + (s4 && s4.kinds.length));
+  const p5 = await runCmd(page, 'what');
+  record('P5 `what` names the open plot', /plot: heatmap by thinker/.test(p5.spoken || ''), (p5.spoken || '').slice(-160));
+  await page.eval(IFRAME_DOC + "var sel = d.getElementById('cp-plot'); sel.value = 'totals'; sel.dispatchEvent(new Event('change')); return true;");
+  const jTop = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  const p6 = await runCmd(page, 'undo');
+  const s6 = await plotSpec();
+  record('P6 a HAND change on the panel is journaled, and undo reverses it', !!(jTop && jTop.dim === 'plot' && jTop.after && jTop.after.plot === 'totals') && s6 && s6.plot === 'heatmap',
+    JSON.stringify(jTop && { dim: jTop.dim, after: jTop.after && jTop.after.plot }) + ' | ' + p6.spoken);
+  await runCmd(page, 'find levin');
+  const p7 = await runCmdAwait('plot');
+  record('P7 the plot follows the search cut: fewer edges, none of them zero', p7.ok && p7.plot && p1.plot && p7.plot.edges > 0 && p7.plot.edges < p1.plot.edges,
+    (p1.plot && p1.plot.edges) + ' -> ' + (p7.plot && p7.plot.edges));
+  await runCmd(page, 'clear');
+  const p8 = await runCmdAwait('plot off');
+  const hidden = (await plotSpec()) === null;
+  const btnOff = !(await plotBtnOn());
+  const p9 = await runCmd(page, 'undo');
+  record('P8 plot off hides it and unlights the button; undo brings it back', p8.ok && hidden && btnOff && (await plotSpec()) !== null && /undid \(plot\)/.test(p9.spoken || ''),
+    p8.spoken + ' | ' + p9.spoken);
+  await runCmdAwait('plot off');
+
+
+  // ---- Phase Q: facet cuts and cutting from the chart (steps 2+3, 2026-09-29) ----
+  // WHY: `find levin` cuts to 2 nodes (title match), so a user cut was tiny even
+  // when composition worked. A facet cut uses the model's own attribution --
+  // the SAME rule the charts draw with -- and the chart is a place to cut from.
+  // Rows fail if the facet cut is no larger than the title match, if a chart
+  // cell and the cut it produces disagree about how many edges they mean, if a
+  // bad facet disturbs the standing cut, or if a chart click escapes undo.
+  process.stdout.write('\nPhase Q -- facet cuts, and cutting from the chart\n');
+  await runCmd(page, 'clear');
+  const q0 = await runCmd(page, 'find levin');
+  const q1 = await runCmd(page, 'find thinker:levin');
+  record('Q1 thinker:levin is the model\'s Levin, far more than the title match', q1.ok && nOf(q1) > 5 * Math.max(1, nOf(q0)) && q1.verify && q1.verify.ok,
+    nOf(q0) + ' -> ' + nOf(q1) + ' | ' + q1.spoken);
+  record('Q1a the drawn graph is the facet cut (read off the DOM)', (await drawnN()) === nOf(q1), 'drawn ' + (await drawnN()) + ' vs said ' + nOf(q1));
+  const q2 = await runCmd(page, 'within strength:strong');
+  record('Q2 facets compose: within strength:strong narrows the Levin cut', q2.ok && nOf(q2) > 0 && nOf(q2) < nOf(q1), q2.spoken);
+  const q3 = await runCmd(page, 'find thinker:banana');
+  const q3cut = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('Q3 a facet the model cannot answer is refused by name, and the standing cut is untouched',
+    !q3.ok && /no thinker called "banana"/.test(q3.spoken || '') && /Nothing changed/.test(q3.spoken || '') && (await drawnN()) === nOf(q2),
+    q3.spoken + ' | drawn ' + (await drawnN()));
+  await runCmdAwait('plot heatmap by thinker corpus all edges all nodes all strength');
+  await page.eval(IFRAME_DOC + "w.C2A2Plot.set({from:'', to:''}); return true;");
+  const qCell = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Friston');");
+  const q4 = await runCmd(page, 'find between levin and friston');
+  const q4e = /Levin-Friston edges: (\d+) edges/.exec(q4.spoken || '');
+  record('Q4 ONE RULE, TWO VIEWS: the heatmap cell and the between-cut count the same edges',
+    q4.ok && q4e && +q4e[1] === qCell && qCell > 0, 'cell ' + qCell + ' | ' + q4.spoken);
+  await runCmdAwait('plot page');
+  const q5 = await runCmdAwait('plot');
+  record('Q5 the plot follows a facet cut the shell enforces (not only the tab\'s own search)',
+    q5.plot && q5.plot.edges > 0 && /between levin and friston/.test(await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent;")),
+    (q5.plot && q5.plot.edges) + ' | ' + (await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent.slice(0,90);")));
+  await runCmd(page, 'clear');
+  // WHY: Tom, 2026-09-29 -- the Lego plot "did not follow check-box cuts, repeatedly". Unticking Levin hides only
+  // Levin's own 2 group nodes; the thinker axis counts by NAME, so ~166 Levin-named files kept the towers up.
+  // A ticked-off tradition must leave the thinker axis, and the plot must redraw without waiting on the poll.
+  await page.eval(IFRAME_DOC + "w.C2A2Plot.set({from:'', to:''}); return true;");
+  const lvBefore = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Levin');");
+  await page.eval(IFRAME_DOC + "var c = [].slice.call(d.querySelectorAll('input[type=checkbox]')).filter(function (x) { return (x.id || x.name || x.getAttribute('data-group') || x.value) === 'traditions/levin'; })[0]; if (c && c.checked) { c.click(); } return !!c;");
+  let lvOff = null, frOff = null;
+  for (let i = 0; i < 20; i++) { await sleep(250); lvOff = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Levin');"); if (lvOff === 0) { break; } }
+  frOff = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Friston','Friston');");
+  await page.eval(IFRAME_DOC + "var c = [].slice.call(d.querySelectorAll('input[type=checkbox]')).filter(function (x) { return (x.id || x.name || x.getAttribute('data-group') || x.value) === 'traditions/levin'; })[0]; if (c && !c.checked) { c.click(); } return !!c;");
+  await sleep(1500);
+  const lvBack = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Levin');");
+  record('Q5b the plot follows a tradition checkbox: unticked Levin leaves the thinker axis, others stay, ticking back restores',
+    lvBefore > 0 && lvOff === 0 && frOff > 0 && lvBack === lvBefore, 'before ' + lvBefore + ' | off ' + lvOff + ' | friston ' + frOff + ' | back ' + lvBack);
+  const clickCmd = function (x, y, ev) {
+    return page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); el.emit('plotly_click', { points: [{ x: " + JSON.stringify(x) + ", y: " + JSON.stringify(y) + " }], event: " + JSON.stringify(ev || {}) + " }); return true;");
+  };
+  await clickCmd('Friston', 'Levin');
+  const qc = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  const qcBar = await page.eval("return document.getElementById('ccl-result').textContent;");
+  record('Q6 clicking a heatmap cell cuts the graph to that pair, through the journal',
+    !!(qc && qc.dim === 'cut' && qc.after && /between levin and friston/.test(qc.after.query || '')) && /nodes shown/.test(qcBar), qcBar.slice(0, 140));
+  await clickCmd('Hoffman', 'Hoffman', { shiftKey: true });
+  const qs = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('Q7 shift-click ADDS the clicked cell to the standing cut', !!(qs && qs.after && /also thinker:hoffman/.test(qs.after.query || '')), qs && qs.after && qs.after.query);
+  const qu = await runCmd(page, 'undo');
+  const qa = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('Q8 undo takes back one chart click, not the whole cut', /undid \(cut\)/.test(qu.spoken || '') && !!(qa && qa.after && /^between levin and friston$/.test(qa.after.query || '')),
+    qu.spoken + ' | ' + (qa && qa.after && qa.after.query));
+  await runCmd(page, 'clear');
+  await runCmdAwait('plot reset');
+  await runCmdAwait('plot off');
+
+
+  // ---- Phase R: plots on a second tab -- the Narrative Connectome (step 5) --
+  // WHY: the plots engine used to read the Sociogram's globals directly, so it
+  // could exist on one tab only. Now a tab offers window.c2a2PlotSource() and
+  // the engine reads only that. Rows fail if the Connectome's plot is not built
+  // from its OWN data (a count is checked against the page's FINDINGS array,
+  // computed independently here), or if a click pretends to cut a view that
+  // cannot be cut.
+  process.stdout.write('\nPhase R -- plots on the Narrative Connectome\n');
+  await activateTab(page, 'prs_3d.html'); await sleep(6000);
+  let r0 = false;
+  for (let i = 0; i < 40 && !r0; i++) { r0 = await page.eval(IFRAME_DOC + "return !!(w.C2A2Plot && w.C2A2Plot.source === 'connectome');"); if (!r0) { await sleep(250); } }
+  record('R0 the Connectome offers a plot source, and the shell installs the model when the tab loads', r0, String(r0));
+  const r1 = await runCmdAwait('plot heatmap by thinker corpus all edges');
+  record('R1 plot works on a second tab, from that tab\'s own data', r1.ok && r1.plot && r1.plot.edges > 900 && r1.verify && r1.verify.ok, r1.spoken);
+  const findPairs = await page.eval(IFRAME_DOC + "var n = 0; w.eval('FINDINGS').forEach(function (f) { var k = String(f.programs || '').split(',').filter(function (x) { return x.trim(); }).length; n += k * (k - 1) / 2; }); return n;");
+  const r2 = await runCmdAwait('plot edges finding');
+  record('R2 the count it speaks is the page\'s own: finding edges == pairs named in FINDINGS', r2.ok && r2.plot && r2.plot.edges === findPairs && findPairs > 0,
+    'plot ' + (r2.plot && r2.plot.edges) + ' vs page ' + findPairs);
+  const rTop = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  let rDrawn = false;
+  for (let i = 0; i < 60 && !rDrawn; i++) { rDrawn = await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); return !!(el && el.querySelector('.main-svg'));"); if (!rDrawn) { await sleep(250); } }
+  await page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); el.emit('plotly_click', { points: [{ x: 'Friston', y: 'Levin' }], event: {} }); return true;");
+  const rMsg = await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent;");
+  const rTop2 = await page.eval("return window.CCLJournalTop ? window.CCLJournalTop() : null;");
+  record('R3 a click on a view that cannot be cut SAYS so, and changes nothing', rDrawn && /cannot be cut from the chart yet/.test(rMsg) && JSON.stringify(rTop) === JSON.stringify(rTop2), rMsg.slice(0, 120));
+  await runCmdAwait('plot all edges');
+  await runCmdAwait('plot off');
+
+  await activateTab(page, 'metabolism/metabolism_view.html'); await sleep(4000);
+  const bareOff = await runCmd(page, 'levin');
+  record('X9b on a view without find, a bare string is still an unknown command', /Unknown command/.test(bareOff.spoken || ''), bareOff.spoken);
+  const pOff = await runCmd(page, 'plot heatmap');
+  record('P9 where there is no graph, plot is refused plainly', !pOff.ok && /Not available on this view/.test(pOff.spoken || ''), pOff.spoken);
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -2443,7 +2771,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH, shotJ, shotL].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH, shotJ, shotL, shotX].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');

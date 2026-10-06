@@ -1,0 +1,136 @@
+{
+  "seed": false,
+  "generated": "2026-09-15",
+  "generated_at": "2026-09-15T15:18:53Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 204,
+    "high_relevance": 1,
+    "primary_themes": "Governance Policy + Capability Jump"
+  },
+  "signals": [
+    {
+      "title": "Machine Unlearning for Speech Question Answering in Large Audio-Language Models",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.13195",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Large Audio-Language Models (LALMs) have recently shown strong capabilities in speech understanding and question answering (QA), but they also inherit privacy risks from large-scale training data, including the unintended memorization of sensitive information. In this work, we study machine unlearning for speech QA in LALMs, a setting that is more challenging than prior work on text-based Large Language Models (LLMs) or Automatic Speech Recognition (ASR) due to the tight coupling between acoustic perception and factual knowledge.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:49.996785+00:00"
+    },
+    {
+      "title": "Sam Altman calls for pacing AI development but promises rapid progress will continue",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue/",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Sam Altman is doubling down on slowing AI development. OpenAI now runs safety checks before major training runs, and according to The Information, the company has been talking with Anthropic and Google for months about joint self-regulation.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 14 Sep 2026 09:39:59 +0000",
+      "first_seen_at": "2026-09-15T15:18:51.593115+00:00"
+    },
+    {
+      "title": "After warning AI is too dangerous, Bill Gates bets a billion on its upside",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/after-warning-ai-is-too-dangerous-bill-gates-bets-a-billion-on-its-upside/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "The Gates Foundation is investing at least a billion dollars over two years to make AI tools more widely available in health, education, and agriculture. Bill Gates warns that more than 90 percent of the training data behind early language models came from English sources, and that speech recognition fails 60 percent of the time in Yoruba.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 15 Sep 2026 14:26:48 +0000",
+      "first_seen_at": "2026-09-15T15:18:51.574379+00:00"
+    },
+    {
+      "title": "ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13737",
+      "relevance": 1,
+      "tags": [],
+      "summary": "As large language models (LLMs) are increasingly deployed, the generation of harmful content has become a critical safety concern. Existing safeguards operate at the input, output, or streaming-generation stages, while early-risk methods that rely on surface tokens or output logits may suffer from weak initial signals, and internals-based detectors using dense representations may retain highly entangled and redundant safety-irrelevant information.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.254002+00:00"
+    },
+    {
+      "title": "PolicyMem: Geometric Policy Memory for LLM Governance",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13734",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "As large language models (LLMs) are increasingly deployed in real-world high-stakes applications, effective governance has become essential. Existing safeguards largely follow two paradigms: learning-based guards provide strong semantic discrimination but couple policy behavior to trained models and taxonomies, while programmable frameworks offer flexible control but require substantial manual prompt and workflow engineering.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.251959+00:00"
+    },
+    {
+      "title": "The University of Melbourne WMT 2026 CreoleMT Submission: A Domain-Balanced Approach to Low-Resource Pacific Creole Machine Translation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13615",
+      "relevance": 1,
+      "tags": [],
+      "summary": "For our submission to the WMT26 Creole Language Translation Shared Task, we focus on machine translation (MT) models for Pacific creoles: Tok Pisin, Bislama, and Solomon Pijin, with particular attention to broad domain performance. After pre-training on a large collection of domain-imbalanced data, we continue fine-tuning on a diverse mix of domain-balanced data.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.241523+00:00"
+    },
+    {
+      "title": "Toward Complete Hospital Discharge Summarization with Abstract Meaning Representation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13581",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Discharge summaries are lengthy medical documents that summarize a hospital in-patient visit. Automatically generating them can reduce documentation burden and return clinician time to patient care.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.235337+00:00"
+    },
+    {
+      "title": "A Hybrid Hierarchical 1D-CNN-BiLSTM Framework for Extractive Summarization of Biomedical and Clinical Text",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13481",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Large language models have made abstractive summarization remarkably fluent, but generated summaries can hallucinate facts, posing serious risks in biomedical and clinical domains. We address this by removing generation from the pipeline and framing summarization as extractive sentence selection.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.226725+00:00"
+    },
+    {
+      "title": "Hindsight Bias in Clinical Temporal Reasoning: How Future Data Exposure Affects Large Language Model Judgment",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13454",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Clinical decisions are prospective, but clinical language models are often evaluated on retrospective records that reveal the final diagnosis, treatment response, and outcome. Such evaluations may reward the use of future information rather than reasoning under the uncertainty present at the decision point.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.224786+00:00"
+    },
+    {
+      "title": "RFCLLM: Evaluating LLMs' Reasoning Ability of Network Protocol State Machines",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.13389",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Mapping textual specifications into formal representations is essential for ensuring the correctness of protocol designs and implementations. LLM-generated mappings, used for networking security or testing, are assumed to capture a perfect understanding of the specification, which may not hold in practice.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Tue, 15 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-15T15:18:50.218719+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

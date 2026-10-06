@@ -1,0 +1,138 @@
+{
+  "seed": false,
+  "generated": "2026-09-02",
+  "generated_at": "2026-09-02T14:46:29Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 231,
+    "high_relevance": 12,
+    "primary_themes": "Capability Jump + Governance Policy"
+  },
+  "signals": [
+    {
+      "title": "LLM-as-a-Demographic: Whom Sociodemographic Prompting Helps, and Whom It Hurts",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.00222",
+      "relevance": 3,
+      "tags": [],
+      "summary": "Large language models (LLMs) are increasingly used as judges for subjective tasks, where annotators disagree and the relevant question is not only how accurate a judge is, but whose judgments it reproduces. Sociodemographic prompting conditions the judge on an annotator's demographic profile to align its judgments with the corresponding group's.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.725514+00:00"
+    },
+    {
+      "title": "Orchestration is the new challenge for CX in the age of AI agents",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/orchestration/orchestration-is-the-new-challenge-for-cx-in-the-age-of-ai-agents",
+      "relevance": 3,
+      "tags": [
+        "capability_jump",
+        "market_platform"
+      ],
+      "summary": "Presented by Tata Communications Enterprises are deploying AI agents, voice AI, and automation across messaging, voice, and digital channels faster than the architecture meant to support it. Most of that deployment has involved attaching conversational AI to legacy systems never built for it, says Gaurav Anand, global head of the Customer Interaction Suite at Tata Communications.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 26 Aug 2026 14:30:00 GMT",
+      "first_seen_at": "2026-09-02T14:46:26.518931+00:00"
+    },
+    {
+      "title": "When agents act on their own, governance has to live in the data layer",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/security/when-agents-act-on-their-own-governance-has-to-live-in-the-data-layer",
+      "relevance": 3,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Presented by EDB As enterprises give AI agents more autonomy — the ability to plan, decide, and act across systems without a human approving each step — a hard question moves to the center of every architecture review: When an agent tries to complete an action that it was never authorized to do, what actually stops it? These are your agents, running on your models, touching your data in your infrastructure — and the responsibility for what they do sits with you.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Thu, 27 Aug 2026 12:01:00 GMT",
+      "first_seen_at": "2026-09-02T14:46:26.516073+00:00"
+    },
+    {
+      "title": "Enterprise AI's real risk isn't autonomous agents. It's the complexity between them.",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Presented by Gravitee Agent complexity is the insidious shadow lurking inside enterprises right now that needs a light shone on it. That’s because enterprises don't deploy a single agent and watch it run, they deploy fleets, each one calling APIs, calling other agents, reaching into applications that were never built with a machine decision-maker in mind.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Thu, 27 Aug 2026 14:01:00 GMT",
+      "first_seen_at": "2026-09-02T14:46:26.513114+00:00"
+    },
+    {
+      "title": "Medical Causal Hypothesis Verification with Large Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.00063",
+      "relevance": 2,
+      "tags": [],
+      "summary": "The growing use of large language models (LLMs) for search and information retrieval underscores the need to evaluate their reliability in high-stakes domains such as healthcare. Although LLMs can effectively answer questions about diseases, symptoms, and treatments, their ability to accurately assess causal relationships and ground their conclusions in verified scientific evidence remains unclear.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.696253+00:00"
+    },
+    {
+      "title": "Elite-Weighted Supervised Fine-tuning for Goal-Directed Molecular Optimization",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.00189",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Goal-directed optimization is essential for steering molecular generators to propose candidates with desired properties. However, it is often implemented with policy-gradient reinforcement learning, which requires a generation-trajectory log-probability whose form depends on the model architecture and generation procedure.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.436658+00:00"
+    },
+    {
+      "title": "Safin-1: Safety from Within through Memory-Native State Evolution",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.00092",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Long-horizon complex tasks require foundation models to accumulate information, maintain internal states, and adapt over extended interactions. Safety should be an intrinsic property of the model itself, rather than a behavioral constraint relying solely on external safeguards or post-hoc alignment such as supervised fine-tuning.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.424112+00:00"
+    },
+    {
+      "title": "REAL-Q: E2E LLM Quantization via Dynamic Gradient Descent",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.00049",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Post-training quantization (PTQ) is essential for deploying large language models (LLMs) under strict resource constraints. State-of-the-art PTQ methods quantize each layer with a single closed-form second-order solver: to remain analytically tractable, they heavily approximate the global loss (dropping cross-channel coupling, pooling output rows into groups), and they then freeze the resulting Hessian across the entire layer, with no way to refresh it as the loss landscape shifts column by column--a phenomenon we call information misalignment.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.384470+00:00"
+    },
+    {
+      "title": "AI Should Not Only Be Helpful. It Should Be Contingent. Artificial Intimacy, Sycophancy, and the Future of Social Learning",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.00211",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Conversational artificial intelligence is increasingly embedded in everyday social environments, where it functions as both an informational tool and a source of interpersonal feedback. This perspective introduces contingency, i.e., the degree to which system responses vary with user behavior and its interpersonal consequences, as a central construct for evaluating AI systems.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.098025+00:00"
+    },
+    {
+      "title": "Different representation learning objectives recover distinct latent structures from the same psychometric data",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.00100",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Psychometric questionnaires contain rich item-level information, yet it remains unclear whether different representation learning objectives recover the same latent organization. We investigated this question using 757 matched teacher-child pairs from the baseline assessment of the Cyprus ProW preschool trial.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 02 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-02T14:46:24.073712+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

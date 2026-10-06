@@ -163,3 +163,81 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Open question the wiki cannot yet answer:** Is Rohr's universalising of the Christ event ("what is happening in all of us") licensed by Colossians 1:17–20 and Romans 8:9 as Wright reads them, or is it an over-read? This is decidable by exegesis and the network has the tradition to decide it — but has not, and has instead been quietly filing the two as compatible mystical and historical registers of one claim.
 
 **Wikilinks (sewing, 2026-08-30):** [[2026-08-28_wright_ask-ntw-aug27-spirit-as-sign-new-creation]] · [[2026-08-28_rohr_realigned-true-self-sin-as-separateness]] · [[2026-08-30_rohr_descending-religion-jesus-christ-distinction]]
+
+
+---
+
+## Who is united, and how: boundary and interior work
+*Sewing Agent, 2026-09-06*
+
+**Orphaned pages at the intersection (0 backlinks each before this run):** `2026-09-06_wright_third-race-not-supersession-but-enlargement` (Rohr 0.55) and `2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites` (Wright 0.5).
+
+**Why they sit here:** Same-day proposals from the two traditions, each flagged by its author as a paradigm-bridge candidate pairing with the other. Wright: the new-creation people is Israel with its boundary enlarged, not superseded; unity is located in the boundary, not the substance. Rohr: the contradictions of a broken-and-whole world are resolved *inside* single agents who carry them.
+
+**Synthesis claim:** These are the corporate and interior halves of one account of the Summa 2026 central theme. Unity at scale is a widened membership condition on an existing people (Wright); the work that makes widening possible is done in the interior of perspective-limited agents (Rohr). Neither alone says how a widened boundary is *sustained*; together they say it is sustained by the contradiction-carrying of its members.
+
+**Open question the wiki cannot yet answer:** Do they actually agree? The network has recorded three near-duplicate Rohr flags on the theme and one Wright flag, and never asked whether Wright's ecclesial newness is compatible with Rohr's claim that the vocation is met "sometimes with no faith at all," outside any people.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-06_wright_third-race-not-supersession-but-enlargement]] · [[2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites]]
+
+
+---
+
+## Two readings of Paul, filed in the same week
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-13_rohr_paul-knew-christ-within-panentheism.md` (0 backlinks).
+
+**Why it sits here:** An accident of the retrieval calendar produced something the wiki rarely gets: both traditions working the same primary texts in the same seven days, with no contact between them. Rohr reads Galatians 1:16 as the load-bearing preposition — revelation *in* Paul, not *to* him — and builds an interior, cosmic Christ from it. Wright's captured material from 2026-09-06 reads Paul's "in Christ" as corporate, covenantal and public: incorporation into a people, not an interior state.
+
+**Synthesis claim:** The same preposition is carrying both readings, and that is the finding. "In Christ" for Wright names membership in a body; "Christ in me" for Rohr names an interior presence, and Rohr moves between the two as though they were one claim (he asserts "the one universal body of Christ" in the same passage that makes interiority the criterion). **The question the wiki should put is not which reading is right but whether Rohr's interior Christ can support the corporate claim he also makes, or whether it individualizes a claim whose original grammar was collective.** If it individualizes it, then the Universal-Christ frame is doing less ecclesiological work than the Rohr material assumes, and more psychological work.
+
+**Open question the wiki cannot yet answer:** Does Rohr's criterion — 2 Corinthians 13:5, is Christ in you — admit a *corporate* answer? A body can be said to be in Christ; it is much less clear that a body can be asked whether Christ is in it, and the test as Rohr states it is addressed to an individual conscience. Neither tradition's register in this wiki says whether the criterion scales, and until one does, the C2A2 mapping of Rohr onto collective agency is resting on an unexamined transfer.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_paul-knew-christ-within-panentheism]]
+
+
+---
+
+## Week 37 consolidated: three Wright-facing questions, one answer required
+*Sewing Agent, 2026-09-20*
+
+**Orphaned pages at the intersection:** `inbox/proposals/pending/2026-09-20_rohr_pauls-transforming-vision-weekly-summary.md` and `inbox/proposals/pending/2026-09-20_rohr_preacher-of-love-temple-dignity.md` (PROP-2026-09-20-003 and -002, 0 backlinks each). Both cards independently ask the master agent to consolidate rather than open three separate Wright inquiries; this note is that consolidation.
+
+**Why they sit here:** CAC's Week 37 ran entirely on Paul, and produced three distinct requests for a Wright ruling. (1) **Works of the law.** Rohr reads law as diagnostic — an instrument of self-knowledge with no power to earn divine regard. Wright reads works of the law as boundary markers of covenant membership. One is psychological, one is social. (2) **The temple.** Rohr puts individual weight on "you are the very temple of God" and builds a dignity argument on it; Wright's Paul uses temple language corporately first. (3) **Pentecost.** Rohr glosses Acts 2's many tongues as particularity-preserving universality; Wright's Acts 2 is bound to Israel's restoration narrative.
+
+**Synthesis claim.** The three are one question wearing three hats, and answering them separately will produce an incoherent Rohr-Wright interface. The question is **whether Rohr's Paul is doing individual-interior work that Wright's Paul does corporately** — and in all three cases Rohr takes a term Wright reads as describing a people and applies it to a person. That is a single interpretive decision with three visible consequences, not three coincidences. Note what follows if Wright wins all three: Rohr's dignity argument does not collapse, but it changes shape — dignity would inhere in the covenant community and distribute to members, which relocates the argument into Stump's hylomorphic territory (see `synthesis/rohr_stump_bridge.md`, same date) and makes the "indestructible by any evaluation" property a claim about the community's persistence rather than the individual's.
+
+**Open question the wiki cannot yet answer:** Is the individual/corporate split a disagreement about Paul, or a disagreement about which questions a first-century text can be asked? Rohr is not doing exegesis and does not claim to be; Wright is. If the two are answering different questions, the "tension" recorded in three cards is a category difference and should be filed as one — which is itself a finding about how this network's cross-tradition flags are generated, since three separate retrieving agents each read it as a substantive conflict.
+
+**Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]], [[2026-09-20_rohr_preacher-of-love-temple-dignity]]
+
+---
+
+## Two oracles, one week, one structure
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_rohr_myth-of-redemptive-violence.md`, `inbox/proposals/pending/2026-09-27_wright_ascension-political-theology.md` (0 backlinks).
+
+**Why it sits here:** Rohr's "The Myth of Redemptive Violence" and Wright's Ascension segment (ANTWA ep. 2703, via Bird's Substack), both filed 2026-09-27, both pending and unlinked.
+
+**Synthesis claim.** Each unmasks a totalizing system by naming a rival reality that is already present, not by opposing it: Rohr's inclusion against exclusion as violence's foundation, Wright's enthroned Christ against the state's claim to the seat. They agree on the structure and differ on the carrier. Rohr locates the alternative in a practice, Wright in an office. One is a pattern of behavior; the other a standing authority.
+
+**Open question the wiki cannot yet answer:** Can a practice without an office, or an office without a practice, resist nationalism, or does each need the other, and where does the wiki record the oracle that says which?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_myth-of-redemptive-violence]] [[2026-09-27_wright_ascension-political-theology]]
+
+---
+
+## Where effort drops out
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux.md` (0 backlinks).
+
+**Why it sits here:** Rohr's "An Influential Teacher" (PROP-2026-09-27-003): Thérèse's staircase and "God does all the rest."
+
+**Synthesis claim.** Wright's Philippians 2:12 reading keeps active participation load-bearing in salvation; Rohr's formative source makes desire the only human contribution. This is a real divergence, not a difference of emphasis, and it is the project's central "salvation in fear and trembling" theme seen from its two ground-truth oracles. Do not average them. The unresolved item is whether "desire" in Thérèse is the participation Paul requires.
+
+**Open question the wiki cannot yet answer:** Is there a reading of Philippians 2:12 on which "God does all the rest" and "work out your own salvation" describe the same event at two levels, and has either oracle said so?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_an-influential-teacher-therese-of-lisieux]]

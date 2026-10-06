@@ -3,21 +3,22 @@ day: 304
 title: Vision of the Damned (Contemporary)
 pairs_with: "[[Day-304 - Vision of the Damned]]"
 length_target_words: 1500
-length_actual_words: 1098
-length_ratio_to_target: 0.73
+length_actual_words: 1240
+length_ratio_to_target: 0.827
 length_tier: short
-length_note: "Body 1098 words vs ~1500 tier guideline (-27%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
+length_note: "Body 1240 words vs ~1500 tier guideline (-17%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. Note corrected 2026-09-09: it previously read '1098 words (-27%)', a superseded count that no longer matched the length_actual_words field beside it. This run's recount confirmed 1215 exact pre-edit; the Stump PRS-18 badge repair then added 4 words (1215 -> 1219, ratio 0.810 -> 0.813). QC 2026-09-16: recount 1219 exact pre-edit (boundary: all body words between the frontmatter block and end of file, headers included, regex letters and apostrophes); Rohr PRS-07 unpadded to the register's own PRS-7 in body, Bridges and sources with a one-clause note in the bullet, apparatus only, 1219 -> 1240, ratio 0.827. QC 2026-09-22: recount 1240 EXACT against the stored field; no prose touched. The opening figure of this note had been left at 1219 by the 09-16 edit while that edit's own tail recorded 1240 — the stale-headline shape, corrected here to 1240 (-17%). Same shape and same remedy as Day 293 on 2026-09-22."
 karpathy_wiki_sources:
-  - "traditions/rohr/prs_triplets.md (PRS-05 limitation-becomes-gift; PRS-07 relation as basal, salvation as conversion into the relational pattern)"
+  - "traditions/rohr/prs_triplets.md (PRS-05 limitation-becomes-gift; PRS-7 relation as basal, salvation as conversion into the relational pattern; written PRS-7 in the register, unpadded at QC 2026-09-16 from PRS-07)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation; PRS-26 continuity in universal consciousness)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 isolation/disconnection; PRS-14 conducive conditions for resonance)"
-  - "master/cross_program_index.md (CROSS-005 love/union as fundamental)"
+  - "traditions/stump/prs_triplets.md (PRS-18 defeated suffering still merits mourning)"
+  - "master/cross_program_index.md (CROSS-005 love/union as fundamental; the mourning thesis extended to superseded traditions)"
 evidence_strength_summary: "Degrees-of-beatitude-by-charity read as differentiation-by-formed-love is philosophical/theological; the divergence from Aquinas on the saints' relation to the damned is theological (Rohr/Wright, Medium-High as readings, the universalist conclusion itself speculative); no empirical claims load-bearing here."
 mind_first_reframe: "Degrees of glory are read as the persistence of individuation into the end-state — each perspective fulfilled as itself by the precise charity that formed it — while the saints' relation to the damned is the seam where the synthesis diverges from Aquinas toward inclusion, since the loss of any perspective diminishes the whole rather than sweetening it."
 central_theme_thread: "Q.93 vindicates the theme — individuation is the very texture of beatitude, not its enemy; Q.94 is its hardest test, and because loving unity is the telos that contains every limited perspective, the synthesis parts company with Aquinas's rejoicing-in-punishment, holding the inclusive wager in fear and trembling."
 tags: [synthesis, day/304, theme/individuation-persists-in-glory]
-last_qc_at: "2026-08-15T06:29:54"
+last_qc_at: "2026-09-30T08:17:40"
 last_qc_outcome: "pass"
 ---
 
@@ -37,13 +38,13 @@ The shared inquiry-problem is **whether differentiation survives perfection** �
 
 On the first problem the resource is the network's convergent treatment of individuation. Tom's PRS-form record of Kastrup's work (PRS-02 in the Kastrup-tradition wiki) makes individuation real even within a single underlying mind; the open question of continuity (PRS-26) presses on whether a perspective's distinctness endures. Read with Aquinas's "mansions," this says: the formed character of a perspective — what it has loved, the charity that shaped it — is not erased at the end but *constitutes* the standpoint from which the whole is enjoyed. Differentiation by formed love is exactly the project's individuation-by-perspective. Fredrickson's program (PRS-01 isolation/disconnection; PRS-14 the conditions for positivity resonance) supplies the affective register: connection is graded, built, and real, never generic.
 
-On the second problem the leading resource is contemplative-theological. Tom's PRS-form record of Rohr's work (PRS-07 in the Rohr-tradition wiki) makes relation ontologically basal — "salvation is conversion into the relational pattern, not an individual escape; *how do I get to heaven* is a question of the ego, not of the Trinity." And PRS-05 reframes limitation itself: the wound becomes the gift; the order is disorder-reorder, not disorder-discard. Wright's salvation-as-incorporation (PRS-05) and inaugurated eschatology (PRS-03) pull in the same direction: the end is a people coming home, a new creation, not a stadium where the saved watch the lost.
+On the second problem the leading resource is contemplative-theological. Tom's PRS-form record of Rohr's work (PRS-7 in the Rohr-tradition wiki) makes relation ontologically basal — "salvation is conversion into the relational pattern, not an individual escape; *how do I get to heaven* is a question of the ego, not of the Trinity." And PRS-05 reframes limitation itself: the wound becomes the gift; the order is disorder-reorder, not disorder-discard. Wright's salvation-as-incorporation (PRS-05) and inaugurated eschatology (PRS-03) pull in the same direction: the end is a people coming home, a new creation, not a stadium where the saved watch the lost.
 
 ## Solution (proposed, speculative) — and where it differs from Aquinas
 
 The contemporary parallel affirms Q.93 nearly intact: **perfection is differentiated.** The "light of glory admits of degrees" is, in the project's terms, the persistence of individuation into the end-state — every perspective fulfilled *as itself*, by the precise charity that formed it. This is firm as a structural claim and consonant with the whole paradigm (CROSS-005, love/union as the convergent fundamental).
 
-On Q.94 the synthesis marks its divergence plainly, because the central theme requires it. The project's claim is that loving unity is the telos toward which every limited perspective computes, and that the whole *contains* every limited perspective. A heaven whose joy is *augmented by the visible torment of the excluded*, and in which pity is ruled out as contrary to justice, is in tension with that telos. Where Aquinas, reasoning from a retributive frame and an early-career text (Austin flags the Sentences-vs-mature-ST shift), concludes that the blessed rejoice even indirectly in punishment, the synthesis follows Rohr and Wright instead: if relation is basal and salvation is incorporation, then the loss of any perspective is a diminishment of the whole, not a contrast that sweetens it. Stump's network signal that even a rationally superseded tradition "merits mourning" (logged in the cross-program index) is the same intuition in the epistemic register — nothing genuinely a perspective is gladly discarded.
+On Q.94 the synthesis marks its divergence plainly, because the central theme requires it. The project's claim is that loving unity is the telos toward which every limited perspective computes, and that the whole *contains* every limited perspective. A heaven whose joy is *augmented by the visible torment of the excluded*, and in which pity is ruled out as contrary to justice, is in tension with that telos. Where Aquinas, reasoning from a retributive frame and an early-career text (Austin flags the Sentences-vs-mature-ST shift), concludes that the blessed rejoice even indirectly in punishment, the synthesis follows Rohr and Wright instead: if relation is basal and salvation is incorporation, then the loss of any perspective is a diminishment of the whole, not a contrast that sweetens it. PRS-18 in the Stump-tradition wiki carries the same intuition in a register that is squarely hers: *defeated* suffering still merits mourning, and the defeat of a loss does not erase its loss-character, so an ethics of mourning completes a theodicy rather than being made redundant by it (Confidence High; the record's source is Stump's *The Image of God: The Problem of Evil and the Problem of Mourning*, cited in the record itself). The cross-program index extends that record to the network's own case — if a tradition is rationally superseded in inter-tradition exchange, it still merits mourning. Nothing that is genuinely a perspective is gladly discarded.
 
 Honesty about evidence: this is theology against theology, not data against dogma. Aquinas's reading has the weight of the tradition; the universalist-leaning alternative (Rohr's Universal Christ, Wright's restraint about the mechanics of final judgment) is a serious minority reading, and the further claim that *no* perspective is finally lost is speculative — held, in the project's idiom, "in fear and trembling," not asserted as known. What the synthesis does claim firmly is the narrower point: the *direction* of the central theme is toward inclusion, so the rejoicing-in-punishment article is the right place to register reframe rather than agreement.
 
@@ -54,9 +55,10 @@ Q.93 is the theme's quiet vindication: individuation is not the enemy of beatitu
 ## Bridges
 
 - **PRS-02 + PRS-26 in the Kastrup-tradition wiki** — *individuation real and possibly persistent* (philosophical/speculative). Underwrites "mansions" as differentiated standpoints, not ranks.
-- **PRS-05 + PRS-07 in the Rohr-tradition wiki** — *limitation-as-gift; relation as basal, salvation as conversion not escape* (theological, Medium). The lead resource for the divergence on Q.94.
+- **PRS-05 + PRS-7 in the Rohr-tradition wiki** — *limitation-as-gift; relation as basal, salvation as conversion not escape* (theological, Medium; the second id is written PRS-7 in the register, unpadded, so an exact-string check must not read it as missing). The lead resource for the divergence on Q.94.
 - **PRS-03 + PRS-05 in the Wright-tradition wiki** — *inaugurated eschatology; salvation as incorporation* (theological, High). The end as a people coming home, not a spectator's contrast.
 - **PRS-01 + PRS-14 in the Fredrickson-tradition wiki / CROSS-005** — *graded, built connection; love as fundamental* (empirical/speculative). The affective grain of differentiated glory.
+- **PRS-18 in the Stump-tradition wiki** — *defeated suffering still merits mourning* (theological/philosophical, Confidence High). The refusal to let a loss be explained away is the epistemic form of the refusal to let the lost sweeten the joy of the saved.
 
 ## Where this leaves us
 

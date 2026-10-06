@@ -341,4 +341,68 @@ PRS-38:
   Confidence: High
   Evidence: Verbatim: "In philosophy, taxonomy was (and still is) one of the weapons enforcing orthodoxy in the profession. Often enough when there was some topic that seemed interesting, it was dismissed with condescending authority by the question, 'Yes, but is it philosophy?'" and "a gate-keeping that impoverished the discipline." **Register caveat:** this is autobiographical testimony about a discipline, not a study of it. It is one philosopher's account of her own field over sixty years, and it is offered as such. It should not be cited as evidence about rates or prevalence.
 
-*Total PRS triplets: 35*
+
+PRS-39:
+  Problem: Forgiveness is standardly credited with removing a wrongdoer's guilt and thereby restoring both his inner condition and his relationships to their pre-wrongdoing state. Can the act of forgiving actually do this?
+  Resource: Stump's distinction (developed at length in *Atonement*) between guilt as an objective standing incurred by the wrongdoer and the relational rupture that wrongdoing produces — two things that come apart, and only one of which is in the victim's power to alter.
+  Solution: On the abstract's report, Stump argues that forgiveness alone cannot remove guilt or effect restoration, so the standard account misdescribes what the forgiver is doing. The positive account of where the good lies is stated in the chapter, which was not retrieved.
+  Date Added: 2026-09-02
+  Source: The Good of Forgiveness (OUP chapter); PROP-2026-08-25-050
+  Confidence: Medium
+  Evidence: Publisher abstract, verbatim: "it is commonly thought that forgiveness of a wrongdoer removes the wrongdoer's guilt. With guilt removed, the wrongdoer is then restored to the same status he had before his wrongdoing... This chapter argues that forgiveness alone can do neither of these things and that the good of forgiveness has to be sought elsewhere." METADATA-ONLY: the chapter is paywalled (OUP) and was not retrieved. Authorship ("Eleonore Stump"), pagination (351–375), container (*The Virtue of Forgiveness*, OUP New York) and publication date (2026-07-07) verified via the Crossref record for DOI 10.1093/9780197752470.003.0018.
+
+PRS-40:
+  Problem: Forgiveness is also promoted as therapy for the forgiver — it is said to bring peace by removing wrath, resentment and the desire for vengeance. Is the peace a *product* of forgiving?
+  Resource: The same abstract's second target: the psychological-benefit rationale for forgiveness.
+  Solution: Stump denies that forgiveness alone produces this peace. The likely direction of her argument — that the disturbing attitudes are removed by something else (on her *Atonement* framework, by the healing of the forgiver's own relation to the good), and that forgiveness follows rather than causes that removal — is INFERENCE from her prior work and is not stated in the abstract.
+  Date Added: 2026-09-02
+  Source: The Good of Forgiveness (OUP chapter); PROP-2026-08-25-050
+  Confidence: Speculative
+  Evidence: Abstract states the target and the denial ("forgiveness brings peace to the person who forgives, because it removes... wrath, resentment, desire for vengeance, and so on... forgiveness alone can do neither of these things"). It does not state Stump's replacement account. Nothing should be attributed to her here beyond the denial without reading the chapter.
+
+PRS-41:
+  Problem: A disposition of openness to direction from a source outside the agent's cognitive reach is structurally identical for a good master and a manipulator; nothing in the mechanism distinguishes docility from susceptibility.
+  Resource: Aquinas's own guards — the gifts are inseparable from charity (I-II q.68 a.5), docilitas is a part of prudence (II-II q.49 a.3), and God moves the will as will rather than by necessity (I-II q.10 a.4) — together with the reflexive criterion: a source that failed the test would be the wrong answer, and we are responsible for what we worship.
+  Solution: Openness is never a virtue simpliciter. It is a virtue only under a discrimination condition administered by the recipient, which makes the moment of ratification constitutive of the relation rather than external to it.
+  Date Added: 2026-09-08
+  Source: Loughran–Claude session 2026-09-08 (Potts paper-response run); inbox/2026-09-08_levin_virtue-as-external-setpoint.md
+  Confidence: Medium
+  Evidence: The three Aquinas citations are Stump's own textual territory and are load-bearing; the framing of them as a discrimination condition is Loughran's. OPEN — the criterion is retrospective: it is available to one who already holds the right answer, so it does not by itself defeat the bootstrapping objection.
+
+PRS-42:
+  Problem: The wiki's most load-bearing theology–science bridge (CROSS-008) attributes to Stump a claim about *final* causality grounding Levin's biology. PRS-37 already showed she draws a narrower parallel. What positive metaphysical claim about biology does she actually make in her own voice, and with what evidence?
+  Resource: Stump's argument that contemporary anti-reductionism in philosophy of biology and chemistry (Dupré's "causal completeness at one particular level is wholly incredible"; Hendry's holistic symmetry-breaking as "downwards causation"; Bird's and Lowe's causal powers vested in substances in virtue of their properties) is "adopting a neo-Aristotelian metaphysics of a Thomistic sort," in which form is among the constituents of a thing and "a causal chain can be initiated by any substance at any level of organization."
+  Solution: The Stump→biology bridge, stated at the strength she licenses, is **formal causation and level-specific causal power**, not teleology: "causal power is associated with things at any level of organization in consequence of the configuration or form of those things." Her cases are protein folding (function depends on three-dimensional structure; large proteins need chaperonins, so even "omniscient knowledge of the properties of the elementary particles" may not predict the fold), enantiomer toxicity, and molecular structure (ethanol vs methoxymethane). This is a Levin-compatible claim about multi-scale causal autonomy. It is not a claim about goal-directedness. Recommend CROSS-008 be restated as *form/levels* rather than *final causality*, and the final-causality reading be filed as the agent's extension.
+  Date Added: 2026-09-24
+  Source: Natural Law, Metaphysics, and the Creator; PROP-2026-09-17-001
+  Confidence: High
+  Evidence: Section 3 ("Reductionism") and Section 6 ("The moral of the story"), verbatim quotations above; pp. 8–10, 13–14 of the Atlantika PDF. Footnote 25: "Aquinas would agree, and Aquinas's account of the relation of matter and form in material objects helps explain Garfinkel's point. A biological system has a form as well as material components." Note that every scientific case is borrowed from the philosophy-of-science literature (Garfinkel, Kitcher, Dupré, Hendry, Richards 1991); she cites no primary biology after 2005 and no morphogenesis or bioelectric work.
+
+PRS-43:
+  Problem: How can rival worldviews with incompatible foundations be rationally compared at all? Stump names the difficulty herself: holding SSP and Aquinas in one view "can induce vertigo," and "people who are very much in the grip of SSP" and committed Thomists each regard the other as "no longer a live option." This is the C2A2 problem, and MacIntyre's.
+  Resource: Stump's method in this paper — bracket the foundational disagreement ("without addressing the question of the existence of God"), select "one somewhat smaller metaphysical issue" (reductionism) on which independent developments in the sciences bear, and compare the worldviews by a **fit criterion**: which one the independently-arrived-at result is "more at home" in. She is explicit that the criterion is not entailment: "I am not claiming that it is incompatible with theism. The point is only that there is something awkward or forced or otherwise implausible about reductionism in a theistic worldview." Van Inwagen's God-decrees-particles providence is her exhibit of the mismatched pairing (theism plus reductionism).
+  Solution: A worked example of inter-tradition adjudication that is weaker than MacIntyre's epistemological-crisis test but operational: a tradition gains comparative credit when a development neither tradition produced sits more naturally inside it. Stump concedes the result "certainly does not decide the issue" and that "it is possible to reject reductionism and accept atheism." For C2A2 this is a candidate *scoring rule* for tradition comparison — accommodation-of-independent-results — that does not require either side to grant the other's foundations. Directly relevant to the ISME paper: an analytic Thomist practising a MacIntyrean comparison without citing MacIntyre.
+  Date Added: 2026-09-24
+  Source: Natural Law, Metaphysics, and the Creator; PROP-2026-09-17-001
+  Confidence: High that this is her method (Sections 2 and 7 say so in as many words); Medium for the MacIntyre mapping, which is the agent's, not hers. MacIntyre is not cited.
+  Evidence: Section 2 ("Double vision"): "Nonetheless, even in the face of this great divide, I want to see what can be done by way of an evaluative comparison; and I want to do so without addressing the question of the existence of God." Section 7: "with respect to this one issue the Thomistic worldview is more veridical and more worthy of acceptance than SSP is. By itself, of course, this conclusion certainly does not decide the issue."
+
+PRS-44:
+  Problem: Open question 4 — does hylomorphic psychology map onto computational models of cognition (active inference, HTM)? A standing objection is that neural events precede reported mental acts (the Libet-style result), which seems to make the person's act an after-effect of sub-personal processing.
+  Resource: Stump's face-recognition case ("Max" recognizing his daughter), run through blindsight, visual agnosia, and Capgras syndrome as dissociations that each remove a different part of the whole act, and her claim that on the anti-reductionist view "the causal power is not vested in any of the parts of the neural system alone. Rather, it emerges from the configuration of the person as a whole, and it can be exercised only by the person."
+  Solution: Neural precedence does not undermine top-down causation; it is what the view predicts: "Until the system is functioning as a whole, the causal power of the whole cannot be exercised." The person's act is the exercise of a level-specific causal power, and the sub-personal cascade is its material condition, not its rival. Paired with her claim that the will is free in the strong sense ("nothing, not even the intellect, acts on the will with efficient causation") and that compatibilism is "an unnecessary concession" once reductionism is dropped. This is the shape a hylomorphic reading of a hierarchical predictive model would have to take: the model's levels are real bearers of causal power, and the top level's act is not identical with the lower levels' dynamics.
+  Date Added: 2026-09-24
+  Source: Natural Law, Metaphysics, and the Creator; PROP-2026-09-17-001
+  Confidence: Medium — the neuroscience example is illustrative, not argued; she cites no predictive-processing literature, and "not even the intellect acts on the will with efficient causation" is asserted here with a back-reference to *Aquinas* (2003), not defended.
+  Evidence: Section 4 ("An example drawn from neuroscience"), pp. 10–11; Section 1 on the will, p. 6 and footnote 21; Section 6 on compatibilism, p. 14.
+
+PRS-45:
+  Problem: CROSS-005 (beatitudo ↔ positivity resonance) has been a structural analogy. Does Stump herself ever assert that a love-bonded pair is a single causal whole — the ontological claim that would make Fredrickson's dyadic unit of analysis a hylomorphic composite rather than two coupled individuals?
+  Resource: Stump's use of Hobson's autism research: dyadic joint attention as "the most direct sharing of attention" (Reddy), autism as "a disruption in the system of child-in-relation-to-others," and Hobson's claim that this system "not only exists, but also takes charge of the intellectual growth of the infant... a psychological system that is greater and more powerful than the sum of its parts." Her conclusion: "even a human pair bonded in love, as a mother and child are, can be a sort of whole, with causal power vested in their bondedness."
+  Solution: Yes, and hedged. Stump treats the caregiver–infant dyad as a system with causal power not reducible to either member, and explicitly names the bond ("bonded in love") as the seat of that power. This is the 2018 seed of PRS-14's "united somethings-or-others" and the closest thing in her corpus to a metaphysical underwriting of Fredrickson's claim that co-experienced affect, not individual affect, is the unit that builds resources. The increment over PRS-14: here the argument runs from reductionism-in-general to the dyad, so the dyad's causal unity is one instance of a metaphysics that also covers molecules — not a special claim about persons.
+  Date Added: 2026-09-24
+  Source: Natural Law, Metaphysics, and the Creator; PROP-2026-09-17-001
+  Confidence: Medium — "can be a sort of whole" is her wording, and the developmental-psychology sources are 2004–2005 (Hobson, Reddy, Leekam, Franco); the mirror-neuron consensus she reports (Gallese et al. 2004) has since been contested and she does not update it in the 2025 reprint.
+  Evidence: Section 5 ("The case of autism"), pp. 11–13; Section 6 closing sentence, p. 14, verbatim above.
+
+*Total PRS triplets: 42*

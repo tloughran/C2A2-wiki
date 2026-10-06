@@ -15,7 +15,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-288 - Adulterous Consequences - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-10T14:28:40"
+last_qc_at: "2026-09-16T22:28:58"
 last_qc_outcome: "pass"
 tags: [summa, day/288, pars/suppl, q/61-62]
 ---

@@ -35,6 +35,7 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 9. Is there a population for whom connection-based interventions work less well because the machinery that converts a socially salient moment into a regulated bodily response has already degraded? (Direct operational consequence of PRS-33 for C2A2 deployment.)
 10. **Boundary test (standing, from the master agent 2026-08-07):** does co-experienced grief — Rohr's witnessed grief, community gathering around a suffering person "even when there are no words" — exhibit the behavioral and physiological markers of positivity resonance minus the valence? If it does, the construct's definition has to move from *positive shared affect* to *shared affect with mutual care*. PRS-38 specifies what the test would cost to run.
 11. Is the operative variable in this tradition's brain-level results positive valence, or social affective salience of either valence? The dynamic AIS result spans pleasant and unpleasant conditions alike (PRS-36); only the static coherence result is positive-specific. The tradition currently asserts the stronger of the two readings.
+12. **Is emotional attunement net-costly or net-restorative, and what determines the sign?** A working psychiatrist (Anthony Weiss) reports that listening to emotional content is energetically exhausting, notes that therapeutic sessions are bounded for exactly that reason, and asks whether the same cost applies to AI agents doing it continuously. This program treats positive social connection as a **restorative** biophysiological process with measurable markers. The clinical observation and the positivity-resonance literature appear to disagree, and this tradition holds the markers that would settle it. Neither program has posed the question alone. *(added 2026-09-02, dispatched from PROP-2026-08-14-002; bridge note at `synthesis/fredrickson_levin_bridge.md`)*
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -153,3 +154,10 @@ Ingested 3 approved triplet(s): PRS-33, PRS-34, PRS-35. Two companion neuroimagi
 **Honest limits.** Full text was not available to this agent — everything in PRS-39 rests on the abstract as quoted in the July card, so "good fit" and "most consistent" are the authors' characterisations with no fit indices, loadings, or effect sizes behind them in the vault. N = 274 undergraduates, one 10-minute laboratory first-acquaintance conversation. The tradition should not describe the measurement model as validated for community or inter-tradition settings; it is validated for a fast-friends dyad.
 
 **Question advanced:** Active Research Question 6, annotated rather than closed — the instrument exists, the transfer to field conditions does not.
+
+## Ingestion Log — 2026-09-02
+Processed 1 source file(s); minted PRS-40 - PRS-42.
+
+| Source file | Proposal | PRS range | Note |
+|---|---|---|---|
+| `2026-08-13_fredrickson_keep-social-trial-registration.md` | PROP-2026-08-13-001 | PRS-40 - PRS-42 | A registered trial is the first non-correlational, non-short-horizon evidence this tradition has for its flourishing claims, which is why all three are ingested and why PRS-42 (funding and framing) is ingested with them at Speculative rather than dropped. A trial registration is a promise, not a result; nothing here should be read as an outcome. |

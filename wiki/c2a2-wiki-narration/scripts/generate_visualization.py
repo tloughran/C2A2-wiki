@@ -345,6 +345,16 @@ def build_graph_data(data, agent_data=None):
                 alt = 'summa/' + t[len('vault/'):]
                 if alt in _existing_ids:
                     return alt
+            # A proposal card an agent touched while pending is later MOVED by
+            # review to approved/ (or needs_review/, denied/). Same card, new
+            # path. 2026-09-25: 27 substrate edges orphaned this way tripped the
+            # regen skip guard (6 -> 33).
+            if t.startswith('inbox/proposals/pending/'):
+                base = t[len('inbox/proposals/pending/'):]
+                for sub in ('approved/', 'needs_review/', 'denied/'):
+                    alt = 'inbox/proposals/' + sub + base
+                    if alt in _existing_ids:
+                        return alt
             return None
 
         skipped_substrate = 0
@@ -569,18 +579,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
 #footer .footer-controls button.active { background: #FFD700; color: #0a0a0f; }
 #footer .footer-controls select { background: #1a1a2a; border: 1px solid #3a3a4a; color: #e0e0e0; padding: 2px 4px; border-radius: 4px; font-size: 12px; }
 
-/* SETTINGS MODAL */
-#settings-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; justify-content: center; align-items: center; }
-#settings-modal.visible { display: flex; }
-#settings-content { background: #15151f; border: 1px solid #3a3a4a; border-radius: 8px; padding: 24px; width: 400px; max-width: 90%; }
-#settings-content h2 { color: #FFD700; margin-bottom: 16px; font-size: 18px; }
-#settings-content label { display: block; font-size: 13px; margin: 8px 0 4px; color: #ccc; }
-#settings-content select, #settings-content input[type="text"], #settings-content input[type="password"] { width: 100%; padding: 6px 8px; background: #1a1a2a; border: 1px solid #3a3a4a; color: #e0e0e0; border-radius: 4px; font-size: 13px; margin-bottom: 8px; }
-#settings-content .btn-row { display: flex; gap: 8px; margin-top: 16px; }
-#settings-content button { background: #1a1a2a; border: 1px solid #3a3a4a; color: #e0e0e0; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-size: 13px; }
-#settings-content button:hover { background: #2a2a3a; }
-#settings-content button.primary { background: #FFD700; color: #0a0a0f; border-color: #FFD700; }
-.error-text { color: #FF4444; font-size: 12px; margin-top: 4px; }
 
 /* Mobile notice strip — hidden by default; revealed at ≤640px (see media block). */
 #mobile-notice { display: none; }
@@ -702,10 +700,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     font-size: 13px;
   }
 
-  /* SETTINGS MODAL — full-width on phone */
-  #settings-content { width: 92%; padding: 20px 18px; }
-  #settings-content h2 { font-size: 16px; }
-  #settings-content button { min-height: 40px; padding: 8px 14px; }
 
   /* MOBILE NOTICE STRIP — visible only at this breakpoint */
   #mobile-notice {
@@ -770,7 +764,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       <!-- Date threshold slider (Pass G). Show only files added on or after the
            selected date. Default leftmost = no threshold (all files). -->
       <div class="date-control" style="display:flex;align-items:center;gap:6px;font-size:11px;">
-        <label title="Hide files added before this date" style="cursor:pointer;">Since:
+        <label title="Hide files added before this week (one step per week, starting Mondays)" style="cursor:pointer;">Since:
           <input type="range" id="date-slider" min="0" max="0" value="0" step="1" style="width:90px;vertical-align:middle;" oninput="setDateThreshold(this.value)">
         </label>
         <span id="date-slider-label" style="color:#888;font-size:10px;min-width:80px;">all dates</span>
@@ -806,7 +800,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         </label>
       </div>
       <!-- -- END LIFT PROBE UI -- -->
-      <button id="btn-settings" onclick="openSettings()">&#9881;</button>
     </div>
   </div>
 
@@ -957,7 +950,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
   <!-- FOOTER -->
   <div id="footer">
     <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;height:100%;">
-      <div id="narration-text">This is a knowledge graph inside the C2A2 Explorer (v1.0). The Community Context for AI Alignment (C2A2) project seeks to empower consensus-sized communities with AI acceleration tools, thus rendering a meaningful and measurable context for AI alignment with common community goals. This first instance brings together a range of thinkers &mdash; 15 or more &mdash; whose research touches up against, in one way or another, an emerging conscious realist paradigm for cross-disciplinary integration. In this knowledge graph, each node is a wiki file and each edge a link or shared reference. Filter by thinker or structure on the left, click on nodes or edges in the graph to pull up associated files, or ask a question below. User input will either filter the graph immediately (if a simple search query) or produce a meaningful LLM-driven response. Each user has a limited number of free semantic queries, with the option to continue using your own API key.</div>
+      <div id="narration-text"></div>
       <div id="footer-search-row" style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
         <div id="search-wrap" style="position:relative;flex:1;min-width:200px;">
           <input type="text" id="search-input" autocomplete="off" placeholder="Search, or type focus: to isolate links between groups" style="width:100%;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" oninput="onSearchInput()" onkeydown="onSearchKey(event)" onblur="setTimeout(hideSuggest,150)">
@@ -971,77 +964,6 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
     </div>
     <div class="footer-controls">
       <button id="btn-voice" onclick="VOICE.start()" title="Voice input — click to speak a query">&#127908;</button>
-      <button id="btn-mute" onclick="toggleMute()" title="Audio on/off: speak Ask-AI answers aloud">&#128266;</button>
-    </div>
-  </div>
-</div>
-
-<!-- SETTINGS MODAL -->
-<div id="settings-modal">
-  <div id="settings-content">
-    <h2>TTS Settings</h2>
-    <label>Provider</label>
-    <select id="tts-provider" onchange="applyFormToTTS()">
-      <option value="browser">Browser (basic)</option>
-      <option value="kokoro">Kokoro (neural, no API key)</option>
-      <option value="openai">OpenAI (premium)</option>
-    </select>
-    <div id="tts-section-browser">
-      <label>Browser Voice</label>
-      <select id="tts-browser-voice" onchange="applyFormToTTS()"></select>
-    </div>
-    <div id="tts-section-kokoro" style="display:none">
-      <label>Kokoro Voice</label>
-      <select id="tts-kokoro-voice" onchange="applyFormToTTS()">
-        <option value="af_heart">Heart (Female, American)</option>
-        <option value="af_sky">Sky (Female, American)</option>
-        <option value="af_bella">Bella (Female, American)</option>
-        <option value="af_nicole">Nicole (Female, American)</option>
-        <option value="bf_emma">Emma (Female, British)</option>
-        <option value="bf_isabella">Isabella (Female, British)</option>
-        <option value="am_adam">Adam (Male, American)</option>
-        <option value="am_michael">Michael (Male, American)</option>
-        <option value="bm_george">George (Male, British)</option>
-        <option value="bm_lewis">Lewis (Male, British)</option>
-      </select>
-      <p style="font-size:11px;color:#888;margin:4px 0 0;">First use downloads ~83 MB model (cached in browser after that).</p>
-    </div>
-    <div id="tts-section-openai" style="display:none">
-      <label>API Key (OpenAI)</label>
-      <input type="password" id="tts-api-key" placeholder="sk-..." onchange="applyFormToTTS()">
-      <label>OpenAI Voice</label>
-      <select id="tts-openai-voice" onchange="applyFormToTTS()">
-        <option value="alloy">Alloy</option>
-        <option value="echo">Echo</option>
-        <option value="fable">Fable</option>
-        <option value="onyx">Onyx</option>
-        <option value="nova">Nova</option>
-        <option value="shimmer">Shimmer</option>
-      </select>
-    </div>
-    <hr style="border:none;border-top:1px solid #2a2a3a;margin:16px 0 12px;">
-    <h3 style="color:#ccc;font-size:14px;font-weight:600;margin:0 0 8px;">AI Query</h3>
-    <label>Provider</label>
-    <select id="ai-provider" onchange="applyAISettings()">
-      <option value="broker">C2A2 broker (shared free tier)</option>
-      <option value="groq">Groq — free tier (groq.com)</option>
-      <option value="ollama">Ollama — local, no key (ollama.com)</option>
-      <option value="openai-direct">OpenAI direct</option>
-    </select>
-    <div id="ai-key-row" style="display:none">
-      <label id="ai-key-label">API Key</label>
-      <input type="password" id="ai-api-key" placeholder="gsk_...">
-    </div>
-    <div id="ai-model-row" style="display:none">
-      <label>Model</label>
-      <input type="text" id="ai-model" placeholder="llama-3.3-70b-versatile">
-    </div>
-    <p id="ai-hint" style="font-size:11px;color:#888;margin:4px 0 0;">Shared free quota — falls back to local search when exhausted.</p>
-    <div id="tts-error" class="error-text"></div>
-    <div class="btn-row">
-      <button class="primary" onclick="saveSettings()">Save</button>
-      <button onclick="testTTS()">Test</button>
-      <button onclick="closeSettings()">Cancel</button>
     </div>
   </div>
 </div>
@@ -1094,9 +1016,15 @@ var linkSel = null;
 // from outside the tick closure (by the voice wave), so it needs both handles.
 var nodeSel = null;
 var playSpeed = 1;
-var isMuted = false;
 var brightness = 1;
 var IDLE_NARRATION = '';
+// THE CUT, AS DATA. Every path that lights a subset of the graph -- text search,
+// focus:, isolate, link -- records what it lit here, so the shell reads the
+// answer instead of scraping opacities (the c2a2Find contract, 2026-09-16).
+// null = nothing cut. Written only by noteCut()/clearCut(); read by c2a2ReadCut().
+var SEARCH_CUT = null;
+function noteCut(query, idMap) { var ids = Object.keys(idMap || {}); SEARCH_CUT = ids.length ? { query: String(query || ''), ids: ids } : null; }
+function clearCut() { SEARCH_CUT = null; }
 var simulation = null;
 var zoomBehavior = null;
 var nodeById = {};
@@ -1962,9 +1890,9 @@ function setDateThreshold(idx) {
     var lbl0 = document.getElementById('date-slider-label');
     if (lbl0) lbl0.textContent = 'all dates';
   } else {
-    dateThreshold = ALL_DATES[Math.min(idx, ALL_DATES.length - 1)];
+    dateThreshold = ALL_DATES[Math.min(idx - 1, ALL_DATES.length - 1)];
     var lbl = document.getElementById('date-slider-label');
-    if (lbl) lbl.textContent = '≥ ' + dateThreshold;
+    if (lbl) lbl.textContent = 'week of ' + dateThreshold;
   }
   rebuildGraph();
 }
@@ -3338,6 +3266,7 @@ function runFocus(rawAfterPrefix) {
       return (focus[ls] && focus[lt]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
     });
   var lbl = entityKeys.join(', ') + ' ~ ' + groupKeys.join(', ');
+  noteCut('focus: ' + lbl, focus);
   if (!focusCount) {
     setNarrationText('Focus "' + lbl + '": no linked pairs found (computed over the full graph). Check the group keys, or that both groups are enabled at left.');
   } else {
@@ -3433,10 +3362,11 @@ function isolateGroups(keys) {
   var inSet = {};
   keys.forEach(function(k) { inSet[k] = true; });
   var grp = nodeGroupMap();
-  var count = 0;
+  var count = 0, lit = {};
   for (var i = 0; i < NODES.length; i++) {
-    if (inSet[NODES[i].group] && groupVisibility[NODES[i].group]) count++;
+    if (inSet[NODES[i].group] && groupVisibility[NODES[i].group]) { count++; lit[NODES[i].id] = true; }
   }
+  noteCut(keys.join(' '), lit);
   d3.selectAll('.node-circle')
     .interrupt()
     .attr('opacity', function(d) {
@@ -3483,6 +3413,7 @@ function linkGroups(keys) {
       return (focus[s] && focus[t]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
     });
   var lbl = keys.join(' ↔ ');
+  noteCut(keys.join(' '), focus);
   if (!focusCount) {
     setNarrationText('Link "' + lbl + '": no direct links found across these groups (computed over the full graph). Are all of them enabled at left?');
   } else {
@@ -3594,27 +3525,54 @@ function onSearchKey(e) {
   if (e.key === 'Escape') { hideSuggest(); }
 }
 
+// Is this page the explorer shell's content frame? Same-origin, so the shell's
+// entry point is visible on the parent; a nested embedding (agents_tab.html,
+// summa_explorer.html) has a parent with no CCLRun and searches locally.
+function inShell() {
+  try { return window.parent !== window && typeof window.parent.CCLRun === 'function'; } catch (e) { return false; }
+}
+
+// THE SEARCH BOX IS AN ALIAS OF THE SHELL'S `find` (search-and-dialogue review,
+// 2026-09-16). Inside the explorer the box hands its text to the shell, which
+// runs the same journaled, undoable `find` a typed or spoken command would and
+// calls back into c2a2Find below. Standalone, or nested elsewhere, it searches
+// here and nothing is journaled. "Ask AI" keeps its own road until the `ask`
+// verb exists (Phase 3). One search implementation per tab, ever.
 function runSearch() {
   var raw = document.getElementById('search-input').value.trim();
+  // Deterministic relational focus command (navigation increment 1). Explicit
+  // prefix never collides with substring search, and overrides AI mode.
+  var aiBox = document.getElementById('search-ai-mode');
+  var wantAI = !!(aiBox && aiBox.checked) && raw && raw.toLowerCase().indexOf('focus:') !== 0;
+  if (!wantAI && inShell()) {
+    window.parent.postMessage({ source: 'c2a2-tab', type: raw ? 'find' : 'clear', text: raw }, '*');
+    return;
+  }
+  if (wantAI) {
+    // When "Ask AI" is on, route through the shared C2A2 broker pipeline
+    // (wiki/lib/c2a2-search.js, attached as window.C2A2Search). The external-
+    // search checkbox toggles 'enrich' vs 'web_enrich' inside the module.
+    runSearchAI(raw);
+    return;
+  }
+  runSearchLocal(raw);
+}
+
+// The deterministic core: no network, no checkbox. Everything the box could do
+// without AI -- reset, focus:, bare-guess, substring search -- and the road the
+// shell's `find` takes through c2a2Find.
+function runSearchLocal(raw) {
+  raw = String(raw || '').trim();
   if (!raw) {
+    clearCut();
     setNarrationText(IDLE_NARRATION);
     // Reset node + link highlights (restores a prior focus: fade too).
     d3.selectAll('.node-circle').attr('opacity', brightness);
     d3.selectAll('.link-line').attr('opacity', Math.min(0.5 * brightness, 1));
     return;
   }
-  // Deterministic relational focus command (navigation increment 1). Explicit
-  // prefix never collides with substring search, and overrides AI mode.
   if (raw.toLowerCase().indexOf('focus:') === 0) {
     runFocus(raw.slice(raw.indexOf(':') + 1));
-    return;
-  }
-  // When "Ask AI" is on, route through the shared C2A2 broker pipeline
-  // (wiki/lib/c2a2-search.js, attached as window.C2A2Search). The external-
-  // search checkbox toggles 'enrich' vs 'web_enrich' inside the module.
-  var aiBox = document.getElementById('search-ai-mode');
-  if (aiBox && aiBox.checked) {
-    runSearchAI(raw);
     return;
   }
   // Bare-guess relational navigation (increment 1.6, no "focus:" prefix, no LLM).
@@ -3687,8 +3645,30 @@ function runSearch() {
     parts.push('Top files: ' + matches.slice(0, 6).map(function(n) { return n.label; }).join(', ') + '...');
   }
 
+  noteCut(query, textMatch);
   setNarrationText(parts.join(' '));
 }
+
+// ── THE FIND CONTRACT (three functions the explorer shell calls) ──
+// c2a2Find(text)  -> { query, ids, count, label }   deterministic; this page's own search
+// c2a2Clear()     -> void                            restore; idempotent
+// c2a2ReadCut()   -> { query, ids } | null           what is cut right now, as data
+window.c2a2Find = function(text) {
+  var q = String(text || '').trim();
+  var el = document.getElementById('search-input');
+  if (el) el.value = q;
+  runSearchLocal(q);
+  var c = SEARCH_CUT;
+  return { query: q, ids: c ? c.ids.slice() : [], count: c ? c.ids.length : 0, label: 'nodes shown' };
+};
+window.c2a2Clear = function() {
+  var el = document.getElementById('search-input');
+  if (el) el.value = '';
+  runSearchLocal('');
+};
+window.c2a2ReadCut = function() {
+  return SEARCH_CUT ? { query: SEARCH_CUT.query, ids: SEARCH_CUT.ids.slice() } : null;
+};
 
 // ── CURRENT VIEW STATE ──
 // Reads the live D3 graph to describe which nodes are currently highlighted
@@ -3758,18 +3738,21 @@ function applyAIResult(content, parseFailMsg) {
   return parsed;
 }
 
-function runSearchAI(rawQuery) {
+// askSociogram: the grounded-answer core. Resolves {answer, label, sources, ids}
+// or null when no node on the graph bears on the query (the caller then answers
+// another way); rejects with Error(code) from the broker. Used by the standalone
+// box (runSearchAI) and by the shell's one search box (window.c2a2Ask).
+function askSociogram(rawQuery, extra) {
   if (!window.C2A2Search || typeof window.C2A2Search.enrich !== 'function') {
-    setNarrationText('Search module not loaded.');
-    return;
+    return Promise.reject(new Error('search-module-missing'));
   }
   var query = String(rawQuery || '').trim();
-  if (!query) return;
+  if (!query) return Promise.resolve(null);
   var extBox = document.getElementById('search-external');
-  var useWeb = !!(extBox && extBox.checked);
+  var useWeb = !!(extBox && extBox.checked) && !(extra && extra.noWeb);
 
   // Pre-rank visible nodes by term overlap; trim to 30 for the prompt budget.
-  var qTerms = query.toLowerCase().split(/\\s+/).filter(Boolean);
+  var qTerms = query.toLowerCase().split(/\\s+/).filter(function(t) { return t.length > 2; });
   var scored = [];
   for (var i = 0; i < NODES.length; i++) {
     var n = NODES[i];
@@ -3781,10 +3764,7 @@ function runSearchAI(rawQuery) {
   }
   scored.sort(function(a, b) { return b.s - a.s; });
   scored = scored.slice(0, 30);
-  if (!scored.length) {
-    setNarrationText('No visible nodes match "' + query + '". Try a different query or expand the filters at left.');
-    return;
-  }
+  if (!scored.length) return Promise.resolve(null);
   var summary = scored.map(function(x) {
     var n = x.n;
     var snip = String(n.content || '').replace(/\\s+/g, ' ').slice(0, 200);
@@ -3793,230 +3773,53 @@ function runSearchAI(rawQuery) {
   var viewCtx = getCurrentViewState();
   var userBlock = 'Query: ' + query +
     (viewCtx ? '\\n\\nCURRENT_VIEW:\\n' + viewCtx : '') +
+    (extra && extra.knowledge ? '\\n\\nSITE_KNOWLEDGE (background; ground the answer in the candidates):\\n' + String(extra.knowledge).slice(0, 6000) : '') +
     '\\n\\nCandidates:\\n' + summary;
 
-  // ── DIRECT PROVIDER PATH (Groq / Ollama / OpenAI direct) ──
-  if (AI.provider !== 'broker') {
-    var system = useWeb ? C2A2_SOC_SYSTEM_WEB : C2A2_SOC_SYSTEM_DATASET;
-    setNarrationText('Asking ' + AI.provider + ' (' + AI.getModel() + ')...');
-    AI.callDirect(system, userBlock).then(function(content) {
-      var parsed = applyAIResult(content, 'AI response could not be parsed — check the model supports JSON output.');
-      if (!parsed) return;
-      var answer = parsed.answer || '(no answer text)';
-      setNarrationText('Ask "' + query + '" [' + AI.provider + ']: ' + answer);
-      TTS.speak(answer);
-    }).catch(function(err) {
-      var msg = (err && err.message) ? err.message : String(err);
-      setNarrationText('Direct AI error (' + msg + '). Check Settings → AI Query provider / key.');
-    });
-    return;
-  }
-
-  setNarrationText('Asking C2A2 (' + (useWeb ? 'database + web' : 'database') + ') ...');
-
-  window.C2A2Search.enrich({
+  return window.C2A2Search.enrich({
     useWeb: useWeb,
     dataset: {system: C2A2_SOC_SYSTEM_DATASET, user: userBlock},
     web: useWeb ? {system: C2A2_SOC_SYSTEM_WEB, user: userBlock} : null,
   }).then(function(res) {
     var content = (res.payload && typeof res.payload.text === 'string') ? res.payload.text : '';
     var parsed = applyAIResult(content);
-    if (!parsed) return;
+    if (!parsed) throw new Error('unparseable-answer');
+    var label = res.mode === 'database-plus-web-cited' ? 'web + database'
+      : res.mode === 'database-only-after-cap' ? 'database (web cap reached)'
+      : res.mode === 'external-search-unavailable' ? 'database (web unavailable)'
+      : 'answered from the Sociogram';
+    if (res.payload && res.payload.model) label += ' (' + res.payload.model + ')';
+    if (res.warning) label += ' -- ' + res.warning;
+    var sources = Array.isArray(res.payload && res.payload.sources)
+      ? res.payload.sources.map(function(s) { return s.title || s.url || ''; }) : [];
+    return { answer: parsed.answer || '', label: label, sources: sources,
+             ids: Array.isArray(parsed.ids) ? parsed.ids : [] };
+  });
+}
+window.c2a2Ask = function(q, extra) { return askSociogram(q, extra); };
 
-    var modeLabel = res.mode === 'database-plus-web-cited' ? ' [web + database]'
-      : res.mode === 'database-only-after-cap' ? ' [database -- web cap reached]'
-      : res.mode === 'external-search-unavailable' ? ' [database -- web unavailable]'
-      : ' [database]';
-    var warning = res.warning ? (' ' + res.warning) : '';
-    // Name the model that answered, when the broker echoes it in the payload.
-    // (cc-broker must include payload.model for this to show; absent that it
-    // stays blank rather than echoing a redundant transport label.)
-    var modelLabel = (res.payload && res.payload.model) ? (' (model: ' + res.payload.model + ')') : '';
-    var sourcesLine = '';
-    if (Array.isArray(res.payload && res.payload.sources) && res.payload.sources.length) {
-      sourcesLine = ' Sources: ' + res.payload.sources.map(function(s, i) {
-        return '[' + (i + 1) + '] ' + (s.title || s.url || '');
-      }).join(' | ');
-    }
-    var answer = parsed.answer || '(no answer text)';
-    setNarrationText('Ask "' + query + '"' + modeLabel + modelLabel + ':' + warning + ' ' + answer + sourcesLine);
-    TTS.speak(answer);
+// Standalone road only (in the shell the footer is hidden and the shell's box asks).
+function runSearchAI(rawQuery) {
+  var query = String(rawQuery || '').trim();
+  if (!query) return;
+  setNarrationText('Asking C2A2 ...');
+  askSociogram(query).then(function(r) {
+    if (!r) { setNarrationText('No visible nodes match "' + query + '". Try a different query or expand the filters at left.'); return; }
+    setNarrationText('Ask "' + query + '" [' + r.label + ']: ' + (r.answer || '(no answer text)') +
+      (r.sources.length ? ' Sources: ' + r.sources.join(' | ') : ''));
   }).catch(function(err) {
     var code = (err && err.message) || 'unknown';
-    var isLimit = (code === 'free-limit' || code === 'rate-limited');
-    if (isLimit) {
-      // Quota exhausted — silently fall back to local text search and uncheck AI mode
+    if (code === 'free-limit' || code === 'rate-limited') {
       var aiBox = document.getElementById('search-ai-mode');
       if (aiBox) aiBox.checked = false;
       document.getElementById('search-input').value = query;
-      setNarrationText('Free-tier AI limit reached — switching to local search for "' + query + '". Re-enable Ask AI later or add your own key in Settings.');
+      setNarrationText('Free-tier AI limit reached — switching to local search for "' + query + '". Re-enable Ask AI later.');
       runSearch();
-    } else {
+    } else if (code !== 'unparseable-answer') {
       setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
     }
   });
 }
-
-function toggleMute() {
-  isMuted = !isMuted;
-  document.getElementById('btn-mute').innerHTML = isMuted ? '&#128263;' : '&#128266;';
-  if (isMuted) TTS.stop();
-}
-
-// ── TTS ──
-var TTS = {
-  enabled: true,
-  provider: (function() { try { return localStorage.getItem('tts_provider') || 'browser'; } catch(e) { return 'browser'; } })(),
-  apiKey: (function() { try { return localStorage.getItem('tts_api_key') || ''; } catch(e) { return ''; } })(),
-  browserVoice: null,
-  openaiVoice: (function() { try { return localStorage.getItem('tts_openai_voice') || 'alloy'; } catch(e) { return 'alloy'; } })(),
-  kokoroVoice: (function() { try { return localStorage.getItem('tts_kokoro_voice') || 'af_heart'; } catch(e) { return 'af_heart'; } })(),
-  kokoroInstance: null,
-  kokoroLoading: false,
-  cache: {},
-  audioEl: null,
-  utterance: null,
-  _kokoroSrc: null,
-  _kokoroCtx: null,
-
-  speak: function(text) {
-    if (isMuted) return;
-    this.stop();
-    if (this.provider === 'browser') {
-      this.speakBrowser(text);
-    } else if (this.provider === 'kokoro') {
-      this.speakKokoro(text);
-    } else {
-      this.speakOpenAI(text);
-    }
-  },
-
-  speakBrowser: function(text) {
-    if (!window.speechSynthesis) return;
-    var u = new SpeechSynthesisUtterance(text);
-    if (this.browserVoice) u.voice = this.browserVoice;
-    u.rate = playSpeed;
-    window.speechSynthesis.speak(u);
-    this.utterance = u;
-  },
-
-  speakKokoro: function(text) {
-    var self = this;
-    if (this.kokoroInstance) {
-      this._kokoroGenerate(text);
-      return;
-    }
-    if (this.kokoroLoading) return;
-    this.kokoroLoading = true;
-    // WebGPU is 5-10x faster than WASM and avoids "page unresponsive" dialogs,
-    // but requires a secure context (https:// or localhost). Detect at runtime.
-    var kokoroDevice = (typeof navigator !== 'undefined' && navigator.gpu) ? 'webgpu' : 'wasm';
-    var narEl = document.getElementById('narration-text');
-    narEl.textContent = 'Loading Kokoro neural TTS [' + kokoroDevice + '] (~83 MB, cached after first load)...';
-    import('https://cdn.jsdelivr.net/npm/kokoro-js@1/+esm')
-      .then(function(m) {
-        return m.KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {
-          dtype: 'q8',
-          device: kokoroDevice,
-          progress_callback: function(info) {
-            if (info.status === 'progress' || info.status === 'download') {
-              var pct = info.progress ? Math.round(info.progress) : 0;
-              var fname = info.file ? info.file.split('/').pop() : '';
-              narEl.textContent = 'Kokoro: loading ' + fname + (pct ? ' ' + pct + '%' : '...');
-            }
-          }
-        });
-      })
-      .then(function(instance) {
-        self.kokoroInstance = instance;
-        self.kokoroLoading = false;
-        narEl.textContent = 'Kokoro model ready.';
-        self._kokoroGenerate(text);
-      })
-      .catch(function(e) {
-        self.kokoroLoading = false;
-        narEl.textContent = 'Kokoro failed to load (' + (e && e.message ? e.message : e) + '). Falling back to browser voice.';
-        self.speakBrowser(text);
-      });
-  },
-
-  _kokoroGenerate: function(text) {
-    var self = this;
-    this.kokoroInstance.generate(text, { voice: this.kokoroVoice })
-      .then(function(result) {
-        var AudioCtx = window.AudioContext || window.webkitAudioContext;
-        if (!AudioCtx) { self.speakBrowser(text); return; }
-        var ctx = new AudioCtx();
-        var samples = result.audio;
-        var buf = ctx.createBuffer(1, samples.length, result.sampling_rate);
-        buf.copyToChannel(samples, 0);
-        var src = ctx.createBufferSource();
-        src.buffer = buf;
-        src.playbackRate.value = playSpeed;
-        src.connect(ctx.destination);
-        src.start();
-        self._kokoroSrc = src;
-        self._kokoroCtx = ctx;
-        src.onended = function() {
-          try { ctx.close(); } catch(e) {}
-          self._kokoroSrc = null;
-          self._kokoroCtx = null;
-        };
-      })
-      .catch(function(e) {
-        document.getElementById('narration-text').textContent = 'Kokoro generation error: ' + (e && e.message ? e.message : e);
-        self.speakBrowser(text);
-      });
-  },
-
-  speakOpenAI: function(text) {
-    var cacheKey = text.slice(0, 100) + '_' + this.openaiVoice;
-    if (this.cache[cacheKey]) {
-      this.playBlob(this.cache[cacheKey]);
-      return;
-    }
-    var self = this;
-    // Use XMLHttpRequest — more reliable from file:// origins than fetch
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://api.openai.com/v1/audio/speech', true);
-    xhr.setRequestHeader('Authorization', 'Bearer ' + this.apiKey);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.responseType = 'blob';
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        self.cache[cacheKey] = xhr.response;
-        self.playBlob(xhr.response);
-      } else {
-        document.getElementById('narration-text').textContent = 'TTS API error ' + xhr.status + '. Falling back to browser voice.';
-        self.speakBrowser(text);
-      }
-    };
-    xhr.onerror = function() {
-      document.getElementById('narration-text').textContent = 'TTS network error. If using file://, try launching Chrome with --allow-file-access-from-files or use browser voice.';
-      self.speakBrowser(text);
-    };
-    xhr.send(JSON.stringify({
-      model: 'tts-1-hd',
-      input: text,
-      voice: this.openaiVoice
-    }));
-  },
-
-  playBlob: function(blob) {
-    var url = URL.createObjectURL(blob);
-    if (!this.audioEl) this.audioEl = new Audio();
-    this.audioEl.src = url;
-    this.audioEl.playbackRate = playSpeed;
-    this.audioEl.play();
-  },
-
-  stop: function() {
-    if (window.speechSynthesis) window.speechSynthesis.cancel();
-    if (this.audioEl) { this.audioEl.pause(); this.audioEl.currentTime = 0; }
-    if (this._kokoroSrc) { try { this._kokoroSrc.stop(); } catch(e) {} this._kokoroSrc = null; }
-    if (this._kokoroCtx) { try { this._kokoroCtx.close(); } catch(e) {} this._kokoroCtx = null; }
-  }
-};
 
 // ── NAVIGATION COMMAND ENGINE ──
 // Executes a graph navigation command string — the same vocabulary the search
@@ -4138,14 +3941,12 @@ var VOICE = {
     if (isNav) {
       if (query.toLowerCase().indexOf('focus:') === 0) {
         runFocus(query.slice(query.indexOf(':') + 1));
-        TTS.speak('Showing ' + query.slice(query.indexOf(':') + 1).trim() + '.');
         return;
       }
       var bareKeys = parseBareGuess(query);
       if (bareKeys) {
         if (bareKeys.length === 1) isolateGroups(bareKeys);
         else linkGroups(bareKeys);
-        TTS.speak('Showing ' + query + '.');
         return;
       }
     }
@@ -4161,173 +3962,6 @@ var VOICE = {
     }
   }
 };
-
-// ── AI QUERY PROVIDER ──
-var AI_DEFAULTS = {
-  'broker':        { key: false, model: '',                         hint: 'Shared free quota — falls back to local search when exhausted.' },
-  'groq':          { key: true,  model: 'llama-3.3-70b-versatile',  hint: 'Free at console.groq.com — no credit card needed. ~14 400 req/day.' },
-  'ollama':        { key: false, model: 'llama3.2',                 hint: 'No key needed. Run: ollama serve  then  ollama pull llama3.2' },
-  'openai-direct': { key: true,  model: 'gpt-4o-mini',             hint: 'Pay-as-you-go. Key stored in session memory only (clears on tab close).' }
-};
-var AI_ENDPOINTS = {
-  'groq':          'https://api.groq.com/openai/v1/chat/completions',
-  'ollama':        'http://localhost:11434/v1/chat/completions',
-  'openai-direct': 'https://api.openai.com/v1/chat/completions'
-};
-var AI = {
-  provider: (function() { try { return localStorage.getItem('ai_provider') || 'broker'; } catch(e) { return 'broker'; } })(),
-  apiKey:   (function() { try { return sessionStorage.getItem('ai_api_key') || ''; } catch(e) { return ''; } })(),
-  model:    (function() { try { return localStorage.getItem('ai_model') || ''; } catch(e) { return ''; } })(),
-
-  getModel: function() {
-    return this.model || (AI_DEFAULTS[this.provider] || {}).model || '';
-  },
-
-  callDirect: function(systemPrompt, userMessage) {
-    var self = this;
-    var endpoint = AI_ENDPOINTS[this.provider];
-    if (!endpoint) return Promise.reject(new Error('No endpoint configured for provider: ' + this.provider));
-    var headers = {'Content-Type': 'application/json'};
-    if (this.provider !== 'ollama' && this.apiKey) {
-      headers['Authorization'] = 'Bearer ' + this.apiKey;
-    }
-    return fetch(endpoint, {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify({
-        model: self.getModel(),
-        messages: [
-          {role: 'system', content: systemPrompt},
-          {role: 'user',   content: userMessage}
-        ],
-        temperature: 0.1,
-        max_tokens: 600
-      })
-    }).then(function(r) {
-      if (!r.ok) {
-        return r.json().then(function(e) {
-          var msg = (e.error && (e.error.message || e.error.code)) || ('HTTP ' + r.status);
-          throw new Error(msg);
-        }).catch(function(inner) {
-          if (inner instanceof Error && inner.message.indexOf('HTTP') === -1) throw inner;
-          throw new Error('HTTP ' + r.status);
-        });
-      }
-      return r.json();
-    }).then(function(data) {
-      if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
-      var content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
-      if (!content) throw new Error('Empty response from model');
-      return content;
-    });
-  }
-};
-
-function applyAISettings() {
-  var p = document.getElementById('ai-provider').value;
-  var def = AI_DEFAULTS[p] || AI_DEFAULTS['broker'];
-  // Show/hide key and model rows
-  document.getElementById('ai-key-row').style.display = def.key ? '' : 'none';
-  document.getElementById('ai-model-row').style.display = (p === 'broker') ? 'none' : '';
-  // Update key label and placeholder
-  var keyLabel = document.getElementById('ai-key-label');
-  var keyInput = document.getElementById('ai-api-key');
-  if (p === 'groq') { keyLabel.textContent = 'Groq API Key'; keyInput.placeholder = 'gsk_...'; }
-  else { keyLabel.textContent = 'OpenAI API Key'; keyInput.placeholder = 'sk-...'; }
-  // Set default model when switching providers (if field is empty or held the old default)
-  var modelEl = document.getElementById('ai-model');
-  var prevDef = (AI_DEFAULTS[AI.provider] || {}).model || '';
-  if (!modelEl.value || modelEl.value === prevDef) { modelEl.value = def.model; }
-  // Update hint
-  document.getElementById('ai-hint').textContent = def.hint;
-  // Sync AI object
-  AI.provider = p;
-  AI.apiKey   = keyInput.value;
-  AI.model    = modelEl.value;
-  // Persist (key to sessionStorage only for security; provider/model to localStorage)
-  try {
-    localStorage.setItem('ai_provider', AI.provider);
-    localStorage.setItem('ai_model', AI.model);
-    if (AI.apiKey) sessionStorage.setItem('ai_api_key', AI.apiKey);
-  } catch(e) {}
-}
-
-function applyFormToTTS() {
-  TTS.provider = document.getElementById('tts-provider').value;
-  TTS.apiKey = document.getElementById('tts-api-key').value;
-  var bvSel = document.getElementById('tts-browser-voice');
-  if (bvSel.selectedIndex >= 0 && window.speechSynthesis) {
-    var voices = window.speechSynthesis.getVoices();
-    TTS.browserVoice = voices[bvSel.selectedIndex] || null;
-  }
-  TTS.openaiVoice = document.getElementById('tts-openai-voice').value;
-  TTS.kokoroVoice = document.getElementById('tts-kokoro-voice').value;
-  TTS.enabled = true;
-  // Show/hide provider-specific sections
-  var p = TTS.provider;
-  document.getElementById('tts-section-browser').style.display = (p === 'browser') ? '' : 'none';
-  document.getElementById('tts-section-kokoro').style.display = (p === 'kokoro') ? '' : 'none';
-  document.getElementById('tts-section-openai').style.display = (p === 'openai') ? '' : 'none';
-  // Persist settings
-  try {
-    localStorage.setItem('tts_provider', TTS.provider);
-    localStorage.setItem('tts_api_key', TTS.apiKey);
-    localStorage.setItem('tts_openai_voice', TTS.openaiVoice);
-    localStorage.setItem('tts_kokoro_voice', TTS.kokoroVoice);
-  } catch(e) {}
-}
-
-// ── SETTINGS MODAL ──
-function openSettings() {
-  // Sync form from current TTS state before showing
-  document.getElementById('tts-provider').value = TTS.provider;
-  document.getElementById('tts-kokoro-voice').value = TTS.kokoroVoice;
-  document.getElementById('tts-openai-voice').value = TTS.openaiVoice;
-  document.getElementById('tts-api-key').value = TTS.apiKey;
-  // Apply show/hide for the correct provider section
-  var p = TTS.provider;
-  document.getElementById('tts-section-browser').style.display = (p === 'browser') ? '' : 'none';
-  document.getElementById('tts-section-kokoro').style.display = (p === 'kokoro') ? '' : 'none';
-  document.getElementById('tts-section-openai').style.display = (p === 'openai') ? '' : 'none';
-  // Sync AI query settings
-  document.getElementById('ai-provider').value = AI.provider;
-  document.getElementById('ai-api-key').value = AI.apiKey;
-  document.getElementById('ai-model').value = AI.model || (AI_DEFAULTS[AI.provider] || {}).model || '';
-  applyAISettings();
-  document.getElementById('settings-modal').classList.add('visible');
-  populateVoices();
-}
-
-function closeSettings() {
-  document.getElementById('settings-modal').classList.remove('visible');
-}
-
-function saveSettings() {
-  applyFormToTTS();
-  applyAISettings();
-  closeSettings();
-}
-
-function testTTS() {
-  applyFormToTTS();
-  TTS.speak('This is a test of the text to speech system.');
-}
-
-function populateVoices() {
-  if (!window.speechSynthesis) return;
-  var sel = document.getElementById('tts-browser-voice');
-  var voices = window.speechSynthesis.getVoices();
-  sel.innerHTML = '';
-  voices.forEach(function(v, i) {
-    var opt = document.createElement('option');
-    opt.value = i;
-    opt.textContent = v.name + ' (' + v.lang + ')';
-    sel.appendChild(opt);
-  });
-}
-if (window.speechSynthesis) {
-  window.speechSynthesis.onvoiceschanged = populateVoices;
-}
 
 // ── PANEL RESIZE ──
 var resizeSide = null;
@@ -4399,18 +4033,38 @@ window.addEventListener('resize', clampFooterHeight);
 
 // ── INIT ──
 document.addEventListener('DOMContentLoaded', function() {
+  if (inShell()) {
+    ['footer', 'footer-resize'].forEach(function(id) { var el = document.getElementById(id); if (el) el.style.display = 'none'; });
+  }
   var _nt0 = document.getElementById('narration-text');
   IDLE_NARRATION = _nt0 ? _nt0.textContent : '';
   buildFilters();
   initSummaries();
-  // Pass G — populate the date slider from NODES' distinct date set.
-  var dateSet = new Set();
-  NODES.forEach(function(n) { if (n.date) dateSet.add(n.date); });
-  ALL_DATES = Array.from(dateSet).sort();
+  // Pass G — populate the date slider with WEEKLY steps (2026-09-25, Tom's
+  // ask): one stop per Monday after the corpus's earliest date, through its
+  // latest date. Was one stop per distinct day (154 stops, too fine to aim).
+  // Weeks with no new files still get a stop, so the slider is linear in time.
+  // Index 0 = no cut; index k = files dated on/after the k-th Monday.
+  var _dMin = '', _dMax = '';
+  NODES.forEach(function(n) {
+    var d = n.date || '';
+    if (d.length !== 10) return;
+    if (!_dMin || d < _dMin) _dMin = d;
+    if (!_dMax || d > _dMax) _dMax = d;
+  });
+  ALL_DATES = [];
+  if (_dMin) {
+    var _wk = new Date(_dMin + 'T00:00:00Z');
+    _wk.setUTCDate(_wk.getUTCDate() + (((8 - _wk.getUTCDay()) % 7) || 7));   // first Monday strictly after _dMin
+    while (_wk.toISOString().slice(0, 10) <= _dMax) {
+      ALL_DATES.push(_wk.toISOString().slice(0, 10));
+      _wk.setUTCDate(_wk.getUTCDate() + 7);
+    }
+  }
   var slider = document.getElementById('date-slider');
   if (slider) {
     slider.min = 0;
-    slider.max = ALL_DATES.length;   // index N = "latest" (= showing only newest day)
+    slider.max = ALL_DATES.length;   // index N = the newest week
     slider.value = 0;                // default: no threshold
   }
   initGraph();

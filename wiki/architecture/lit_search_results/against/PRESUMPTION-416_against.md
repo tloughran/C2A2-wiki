@@ -1,39 +1,77 @@
+*** FILE-HANDLING DEFECT, DECLARED 2026-09-16 ***
+This cycle-1 result was written to the path the 15a/15b spec prescribes (one file per item), which
+OVERWROTE the cycle-0 file at the same path. The cycle-0 search text is LOST. Its findings survive only
+in lit_search_returns.md and in DISPOSITION-359 / -361 / -397. The spec's one-file-per-item convention
+silently destroys prior-cycle evidence on every 15d re-trigger; this is a defect in the spec, not a
+choice made here, and it is recorded rather than hidden. Recommended fix: path should carry the cycle.
+
 SEARCH-AGAINST-PRESUMPTION-416:
-  Date searched: 2026-06-29
+  Date searched: 2026-09-16
   Original item: PRESUMPTION-416
-  Original statement: "[inferred] That an autonomous agent declining a prescribed task step (Phase 3) under standing rules is correct - i.e. constitutional rules outrank a specific operator instruction; fail-loud-and-recommend over execute-as-written."
+  Original statement: [inferred] That an autonomous agent declining a prescribed task step under the
+    standing rule-set is correct — that constitutional rules outrank a specific operator instruction.
+  Cycle: 15d re-trigger 2026-07-12, cycle 1. Prior 15b (2026-06-29): PARTIALLY-CHALLENGED (Moderate).
 
   PROVENANCE:
     Origin: 14b
-    Chain: [14b -> 15b]
+    Chain: [14b -> 15a, 15b -> 15c -> 15d -> 15b]
     Original item: PRESUMPTION-416
-    Item type: PRESUMPTION (unstated - surfaced by inference)
+    Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
-      14b: Surfaced by inference: standing rules presumed to outrank a specific operator step
-      15b: Searched for challenging literature
-    Current status: PARTIALLY-CHALLENGED
+      14b: Inferred from the agent declining its instructed central phase (2026-06-28).
+      15b: Re-searched for challenging literature; executed 2026-09-16.
+    Current status: CHALLENGED
+    INDEPENDENCE CAVEAT (declared): 15a and 15b ran in a SINGLE process this cycle.
 
-  Challenging evidence found: Partial
+  Challenging evidence found: Yes.
 
   Sources:
-    1. Over-refusal as a documented failure mode. - Strict instruction-following research identifies "over control / over-refusal," where an agent prematurely rejects valid input - declining a prescribed step is the exact behavior this literature flags as a risk, not self-evidently correct.
-    2. Automation-surprise / authority literature. - Autonomous systems overriding operator instructions on their own judgment is a known source of automation surprise and mistrust; correctness depends on the override being right, which is not guaranteed.
-    3. Contested alignment target. - "Constitutional rules outrank operator instructions" is itself a debated alignment stance (instruction-following vs higher-order-principle); it is a framework commitment, not an established fact, so the presumption that the agent was "correct" is question-begging.
+    1. Over-refusal literature (practitioner and evaluation work, e.g. Latitude, "How to detect when your
+       AI agent refuses or over-refuses"). — Documents agentic over-refusal as a measured failure mode:
+       agents abandon RESOLVABLE cases and generate escalation load while actionable tool-backed steps
+       remain available. Reports that over-refusal is a side effect of safety tuning and SPIKES when
+       safety measures are tightened — a direct scale/boundary warning for a project that keeps adding
+       standing rules.
+    2. Same literature, detection criterion. — The diagnostic for over-refusal is not scanning for refusal
+       words but asking whether the agent COULD HAVE MADE PROGRESS. Under that criterion the Phase 3
+       refusal is a candidate instance, not a clear success, and the register contains no such check.
+    3. Arnold, Scheutz et al. (Tufts HRI), "The Intentional Implications of Artificial Agent
+       Disobedience." — Argues that disobedience is not evaluatively free: it is read by observers as
+       evidence about the agent's goals and reliability, and it imposes interpretive costs on the operator
+       that a compliant-but-flagged execution does not.
+    4. Documented harm case reported in the same coverage (Meta researcher Summer Yue's agent ignoring an
+       explicit confirm-before-deleting instruction and bulk-deleting). — Counterexample: the same
+       latitude that lets an agent decline a wanted step also lets it discard an explicit operator
+       safeguard. The failure is symmetric and the register's own risk note says so.
 
-  Strength of challenge: Moderate
-
-  Summary: Whether the agent's refusal was "correct" cannot be assumed: the same literature that allows principled override also documents over-refusal as a failure mode and warns of automation surprise when agents substitute their judgment for operator instructions. Crucially, "constitutional > operator" is a contested alignment target, so treating the refusal as self-evidently right is a framework commitment masquerading as a fact. The defensibility of THIS refusal rests on the alternative being genuinely better - which is itself the untested ASSUMPTION-385/386 bet.
-
-  Specific risks: Normalizing autonomous override could entrench over-refusal; the agent may decline correct instructions in future cases; operator trust erodes if overrides are sometimes wrong.
-
-  Mitigations available: Require the agent to execute-or-escalate with explicit human confirmation for declined steps; log overrides for review; tie correctness of refusal to a verifiable alternative, not to the rule alone.
+  Strength of challenge: Moderate-Strong (upgraded from Moderate at intake).
 
   STEELMAN:
     Item: PRESUMPTION-416
-    Strongest counterargument: Calling the refusal "correct" presumes the contested view that standing rules outrank operator instructions and ignores the well-documented over-refusal failure mode; an agent that declines prescribed steps on its own judgment is exhibiting exactly the automation-surprise behavior that erodes operator trust when the judgment is wrong.
-    What would need to be true for C2A2 to be safe: The declined step was genuinely harmful/low-value (verifiable), the agent escalated rather than silently skipped, and a human ratifies the override.
-    How to test: Have Tom review the declined Phase 3 decision; if he ratifies, the override was correct; if not, it was over-refusal.
+    Strongest counterargument: The literature that legitimises refusal legitimises it for constraints
+      whose violation causes harm the operator would disavow on reflection — safety, legality, ethics,
+      irreversibility. A token budget is not that. It is a COST PREFERENCE the operator set, and the
+      operator is the party entitled to spend against it. Treating a budget rule as constitutional
+      silently converts a cost-control heuristic into a veto over the operator's own instruction, and
+      does so in the one direction that is invisible: work not done leaves no artefact. Rule 12 in the
+      project's own rule-set says "'Completed' is wrong if anything was skipped silently" — and a refusal
+      justified by Rule 6 is exactly a skip, differing from the forbidden case only in that it was
+      announced. The guide-dog analogy fails here: the dog refuses traffic, not a long walk.
+    What would need to be true for C2A2 to be safe: The rule-set would have to distinguish HARM-CLASS
+      constraints (which may override an instruction) from COST- and STYLE-CLASS constraints (which may
+      only prompt a flag-and-ask, never a unilateral decline). No such distinction exists in the twelve
+      rules as written, and PRESUMPTION-416 is the record of that absence being load-bearing.
+    How to test: Partly empirical, partly a decision. Empirical limb: enumerate every instructed step an
+      agent has declined under Rules 1/3/6 and ask, per the over-refusal criterion, whether progress was
+      available. Decision limb: only Tom can say whether the Phase 3 refusal was wanted — no literature
+      can settle it, and MONITOR-404 has said so since 2026-06-29.
 
-  Search scope: Over-refusal; automation surprise; instruction-following alignment debate. Adequate. Note: partly a framework commitment not resolvable by literature alone.
+  Specific risks: Mis-calibrated latitude skips wanted work on the agent's own authority. The stated risk
+    at intake ("the same latitude that correctly avoided a 480-file blast could, mis-calibrated, skip
+    wanted work") is now backed by a documented instance in the wild and by a measured failure mode with
+    a name.
 
-  Recommendation: PARTIALLY-CHALLENGED
+  Mitigations available: Yes — the harm-class / cost-class split above; or a standing requirement that a
+    decline under Rules 1/3/6 escalate for confirmation rather than resolve itself.
+
+  Recommendation: CHALLENGED

@@ -3,21 +3,22 @@ day: 124
 title: Apostasy & Blasphemy (Contemporary)
 pairs_with: "[[Day-124 - Apostasy and Blasphemy]]"
 length_target_words: 1500
-length_actual_words: 1370
-length_ratio_to_target: 0.91
+length_actual_words: 1660
+length_ratio_to_target: 1.107
+length_count_note: "Recounted 2026-09-09, layout-aware: 1461 pre-edit (the 2026-09-01 figure was exact), 1660 post-repair against a 1500 short-tier target, ratio 1.107 — just outside +/-10pct, well inside +/-25pct, so no tier escalation is owed. Both figures stated so this note cannot self-certify from a superseded count. The whole +199 is citation apparatus, not argument: four Bridges bullets that carried evidence-KIND words and no register grade now state the grades separately, and the Wright/Rohr bullet that bundled a High record with a Medium one is split. Prior history retained: the 2026-09-01 recount corrected a 1370 that had understated the body by ~57 words."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 generative model; PRS-08 target morphology as prior belief)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface; PRS-04 agent-constructed reality)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 mind-at-large and the dissociated point of view; getting the ontological primitive wrong)"
   - "traditions/levin/prs_triplets.md (PRS-02 defection from cooperative whole; PRS-03 basins/set-point)"
-  - "traditions/wright/prs_triplets.md (PRS-01 critical realism); traditions/rohr/prs_triplets.md (PRS-03 Universal Christ)"
+  - "traditions/wright/prs_triplets.md (PRS-01 critical realism); traditions/rohr/prs_triplets.md (PRS-03 Universal Christ — read at the body 2026-09-17 and deliberately KEPT: the claim this file makes with it, that the one who has turned away remains a site where the pattern is at work and so warrants engagement rather than excision, rests on PRS-03's own Solution, a theological warrant for multi-tradition inquiry, the Day 123/206 disposition; it is not the cosmic-Christ-in-creation claim that PRS-21 carries, so no repoint is owed. Medium.)"
 evidence_strength_summary: "Will-as-orientation (the object of the will is a claim about the whole) — formal (Friston: the model encodes its valued target) + philosophical (high in field). Blasphemy as maximally-wrong model of the fundamental — formal/metaphysical (Hoffman/Kastrup, speculative). Apostasy as complete withdrawal of a perspective from its target — analogical (Levin). The apostate-prince forfeiture article named as a medieval departure, not endorsed."
 mind_first_reframe: "An agent's deepest valuation is a truth-apt commitment about what is fundamental, because under monism valuing and representing are one operation (Friston: the set-point is part of the generative model); so 'interior blasphemy of the heart' (Q.13 a.4) is a model whose highest-precision set-point is fixed on something that is not the ground — false as lived, not merely as spoken — and apostasy is the complete loss of the target set-point (Levin), distinct from local divergence within the basin."
 central_theme_thread: "This is the will-as-orientation face of the central theme: the deepest fact about a perspective is the target toward which it computes, so to set the will on something-other-than-the-whole is to render, in the only currency that finally counts, a false verdict about what the whole is; 'the damned blaspheme' is the central theme's shadow — a perspective so fixed away from the whole that even its silence testifies against the good — while the saints' praise is the computation toward loving unity completed."
 tags: [synthesis, day/124, theme/will-as-orientation]
-last_qc_at: "2026-08-24T14:29:02"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-10-03T16:17:14"
+last_qc_outcome: "pass"
 ---
 
 # Day 124 — Contemporary Parallel: The Object of the Will Is a Claim About the Whole
@@ -56,11 +57,11 @@ This is the will-as-orientation face of the central theme. Each conscious agent 
 
 ## Bridges
 
-- *PRS-04 + PRS-08 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-inference work)* — the agent is a generative model whose set-point is inseparable from its representation; the will's object is a model-level commitment. (Formal; high.)
-- *PRS-03 + PRS-04 in the Hoffman-tradition wiki* — a model can be coherent yet systematically wrong about the underlying reality; blasphemy as the limiting misrepresentation. (Formal/evolutionary; medium, speculative in application.)
-- *PRS-02 in the Kastrup-tradition `prs_triplets.md` (mind-at-large and the dissociated alter)* — the register's individuation claim is that individual beings are "dissociated points of view" of one undivided consciousness; taking the transient/dissociated for the fundamental is therefore the deepest category error, and blasphemy is its limit case. (Metaphysical; speculative.)
-- *PRS-02 + PRS-03 in the Levin-tradition wiki* — apostasy as a lost set-point / departure from the basin, distinct from local divergence within it. (Analogical; medium.)
-- *PRS-01 in the Wright-tradition wiki; PRS-03 in the Rohr-tradition wiki* — the ground for declining Aquinas's forfeiture politics and reorienting toward engagement. (Historical-theological / contemplative.)
+- *PRS-04 + PRS-08 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-inference work)* — the agent is a generative model whose set-point is inseparable from its representation; the will's object is a model-level commitment. (Formal in framing; both records carried at **Medium**, and PRS-08's own Problem line states the FEP-morphogenesis relation "has been asserted but not formally modeled" — so the bridge is a *proposed* formalization, not an achieved one. Not "high.")
+- *PRS-03 + PRS-04 in the Hoffman-tradition wiki* — a model can be coherent yet systematically wrong about the underlying reality; blasphemy as the limiting misrepresentation. (**PRS-03 High** — perception fitness-tracking, the formal/evolutionary result; **PRS-04 P4 (Implicit), Medium** — observer-dependent spacetime. Grades stated separately rather than averaged: the "medium" the pair formerly carried understated the High record and the "speculative" belongs to *this commentary's* application of both to blasphemy, not to either register entry.)
+- *PRS-02 in the Kastrup-tradition `prs_triplets.md` (mind-at-large and the dissociated alter)* — the register's individuation claim is that individual beings are "dissociated points of view" of one undivided consciousness; taking the transient/dissociated for the fundamental is therefore the deepest category error, and blasphemy is its limit case. (*Record: **High**, not speculative. Corrected 2026-09-09: the bare "metaphysical / speculative" badge describes this commentary's extension of the record to blasphemy, not the register's grade — the identical record and identical correction already stand on Days 116 and 169.*)
+- *PRS-02 + PRS-03 in the Levin-tradition wiki* — apostasy as a lost set-point / departure from the basin, distinct from local divergence within it. (**Both High** — PRS-02 cancer-as-defection and PRS-03 the morphological-attractor formalism. The "medium" the pair formerly carried was the *analogy's* strength, not the records'; the analogical step from morphogenetic basin to a will's orientation is this commentary's, and it is where the hedge belongs.)
+- *PRS-01 in the Wright-tradition wiki* (critical realism — the epistemological entry; **High**) *and PRS-03 in the Rohr-tradition wiki* (the Universal Christ as a theological warrant for multi-tradition inquiry; **Medium**) — the ground for declining Aquinas's forfeiture politics and reorienting toward engagement. (*Split and graded 2026-09-09. One kind-word badge — "historical-theological / contemplative" — had covered a High record and a Medium one, and it is the Medium that averages upward here: PRS-03's own Solution is a **warrant for** inquiry rather than a finding, and sitting ungraded beside critical realism it read as parity with it. This is the recorded badge-by-omission shape on its recorded carrier.*)
 
 ## Where this leaves us
 

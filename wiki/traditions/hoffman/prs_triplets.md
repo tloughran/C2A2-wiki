@@ -162,6 +162,7 @@ PRS-27:
   Confidence: Medium
   Evidence: Episode released 2026-06-26, "Did evolution never give us the ability to see reality as it actually is?"; Tyson, Nice, O'Reilly and Hoffman "explore what neuroscience, evolutionary game theory, and consciousness suggest about the nature of reality itself."
 
+
 *Total PRS triplets: 16*
 PRS-16:
   Label: P16 (PROP-2026-04-28-001) — Stevens' Handbook of Experimental Psychology, ITP chapter (FBT + IOS, theorem-grade)
@@ -383,5 +384,113 @@ PRS-39:
   Evidence: "It marked the first collaboration to emerge from the Trace Institute Collaboration Program" (Traces of the Other event page, traceinstitute.org).
 
 ---
-*Total PRS triplets: 39*
+
+PRS-40:
+  Problem: Anomalous aerial phenomena are conventionally analysed as objects with trajectories in spacetime, which forces every explanation into either the extraterrestrial-craft frame or the misperception frame. Neither accommodates reports of behaviour that violates spacetime constraints.
+  Resource: The Interface Theory of Perception plus the conscious-agents/trace framework — spacetime as an evolved data structure ("headset") rather than the substrate of what exists.
+  Solution: Reframe the phenomenon as a rendering problem rather than a physics problem. If the observed spacetime properties are interface artefacts, then apparent violations are evidence about the limits of the headset, not about exotic propulsion. This converts an unfalsifiable object-hunt into a question about the structure of the observer.
+  Date Added: 2026-09-02
+  Source: Four thinkers on UFOs and consciousness (panel); PROP-2026-08-26-006
+  Confidence: Medium
+  Evidence: Hoffman's segment argues spacetime is only a perceptual headset and that UAP may be operating from a deeper level of reality outside the interface. NOTE ON RETRIEVAL: the episode title, guest list, and YouTube ID were confirmed across two independent search results, but the full transcript was not retrieved, and the format is ambiguous — this may be a curated multi-guest special assembled from separately recorded segments rather than a live four-way conversation. Reported release date differs by source (2026-07-24 vs 2026-07-30). Treat the framing above as reliable and any quoted specifics as unverified until the recording is checked directly. INGEST NOTE 2026-09-02: the full transcript was NOT retrieved and the format is ambiguous (possibly a curated multi-guest special assembled from separately recorded segments rather than a live four-way conversation); reported release date differs by source. The interface-theory framing is reliable; any quoted specifics remain unverified until the recording is checked directly.
+
+PRS-41:
+  Problem: Each of Hoffman's arguments against fundamental spacetime — the physics results on locality breakdown, the evolutionary Fitness-Beats-Truth theorem, and the trace logic on conscious agents — is individually resistible, because each rests on assumptions a critic can decline.
+  Resource: A long-form essay assembling all three into one argument, framed around the "spacetime headset" metaphor: spacetime as a virtual-reality interface worn by the observer rather than a container the observer sits inside.
+  Solution: A convergence argument. Three independent programs, with different methods and different failure modes, arriving at the same negative conclusion about spacetime is evidence of a kind that no one of them supplies alone. The essay is the public-facing statement of that structure.
+  Date Added: 2026-09-10
+  Source: Consciousness And Its Spacetime Headset; PROP-2026-09-08-003
+  Confidence: Medium
+  Evidence: The Trace Institute publications page describes the essay as "Hoffman's long-form essay arguing that spacetime is a headset, not fundamental, and that physics, evolution, and the trace logic on conscious agents all point past it." **The essay text itself was not retrieved** — no direct link or PDF is exposed on the publications page, and the reconstruction of the argument above rests entirely on that one-sentence institutional description plus what this wiki already holds about the three component arguments. A reviewer should treat the triplet as a placeholder until the text is in hand.
+
+PRS-42:
+  Problem: The Interface Theory of Perception is routinely misread as the claim that nothing is real, which makes the position look self-refuting and lets critics dismiss it without engaging the formalism.
+  Resource: The "headset" framing, which supplies a disanalogy the older "desktop icon" metaphor lacks: a headset is worn, it is not the world, and taking it off is coherent — whereas an icon invites the objection that a desktop is still made of pixels on a real screen.
+  Solution: A metaphor that carries the modal claim — spacetime is how the observer is equipped, not what there is — while leaving the underlying conscious-agent dynamics available to be described in its own terms.
+  Date Added: 2026-09-10
+  Source: Consciousness And Its Spacetime Headset; PROP-2026-09-08-003
+  Confidence: Speculative
+  Evidence: The title and the institutional gloss are all that support this. The distinction drawn here between "headset" and "icon" is this agent's reading, not a claim quoted from Hoffman — flagged so a reviewer can strike it. Note also that the Essentia Foundation ran an interview under the title "Spacetime is just a headset," so the phrase is one Hoffman uses in interviews as well; whether the essay does the work attributed here is unverified.
+
+PRS-43:
+  Problem: Conscious realism posits a network of conscious agents underlying spacetime, but offers no procedure by which an embedded observer could ever encounter an agent that its own interface does not render.
+  Resource: The proposal, advanced with Gallimore, that DMT temporarily transforms the perceptual interface rather than distorting its contents — and so may make normally unrendered conscious agents perceivable.
+  Solution: A candidate empirical entry point to the conscious-agent layer, and a reframing of psychedelic phenomenology from hallucination (contents wrong) to interface substitution (renderer changed). This converts a metaphysical thesis into something with an experimental adjacency, even if not yet an experiment.
+  Date Added: 2026-09-10
+  Source: Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus; PROP-2026-09-08-004
+  Confidence: Medium
+  Evidence: The Trace Institute's media page states the framing question directly: "Could DMT temporarily transform the human perceptual interface, making conscious agents that are normally invisible to us perceivable?" The event video was not watched and no transcript was retrieved; the reframing from "contents wrong" to "renderer changed" is this agent's gloss on the Institute's sentence, not a quotation, and should be struck if a reviewer finds it overreaches.
+
+PRS-44:
+  Problem: An institute organized around a mathematical framework risks having its most public claim — about psychedelics — received as the whole program, collapsing a formal research agenda into a cultural one.
+  Resource: The Institute's own staging of the work: a moderated public event, a press release framed as "Mathematical Modeling of the Human Psychedelic Experience," and press coverage headlined "Turning the Psychedelic Experience into a Math Problem."
+  Solution: A deliberate discipline-first framing, in which the psychedelic material enters as an application of the trace logic rather than as an independent claim. Tracking whether this framing holds — in the press, and in what the audience takes away — is a measurable question about how a young research program controls its own reception.
+  Date Added: 2026-09-10
+  Source: Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus; PROP-2026-09-08-004
+  Confidence: Speculative
+  Evidence: The three artifacts named (event page, press release title, Nautilus headline) are listed on traceinstitute.org/media. The inference that the framing is deliberate is this agent's, not a stated Institute position. Included because C2A2 is itself a research program managing its own public reception, so how another program does it is instrumentally relevant — a reviewer who thinks that is out of scope for a tradition wiki should say so.
+PRS-45:
+  Problem: Conscious agent theory needs a logic of observation that is not classical Boolean logic, or it inherits the observer-independent ontology it set out to replace.
+  Resource: A non-Boolean propositional logic on probability measures ("Lebesgue logic") in which entailment is normalized restriction.
+  Solution: Bayes' rule appears as the meet (logical "and") within that structure, grounding Bayesian inference in a logic of probabilities rather than treating it as an update rule imposed from outside.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: High
+  Evidence: Episode insight card: "Hoffman and collaborators found a non-Boolean propositional logic on probability measures (Lebesgue logic) where entailment is normalized restriction. Bayes' rule appears as the meet (and) in that logical structure." Chapter 5, "A Logic for Probability and Bayesian Inference" (18:26).
+
+PRS-46:
+  Problem: How one observer is related to another when neither is embedded in spacetime.
+  Resource: A trace logic on Markov chains — chain A entails chain B when B is the trace of A onto a subset of A's states; non-Boolean but locally Boolean.
+  Solution: The trace logic maps homomorphically onto the stationary-probability (Lebesgue) logic, so observation-as-restriction and inference-as-Bayes are two faces of one algebraic structure; Markov chains can then be read as conscious observers.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: High
+  Evidence: Insight card: "a trace logic on Markov chains: one Markov chain entails another if it's the trace onto a subset of states. This trace logic is non-Boolean but locally Boolean, and maps to stationary probability logic via a homomorphism." Chapters 6 ("Trace Logic on Markov Chains," 22:38) and 7 ("Markov Chains as Conscious Observers," 28:36).
+
+PRS-47:
+  Problem: Whether interface theory and active inference are rival accounts or one account in two vocabularies.
+  Resource: Friston's reading of Markov partitions/blankets — a separable subset behaves *as if* inferring the rest of the system, via free-energy gradient flow; perception and action are self-evidencing that minimizes surprisal.
+  Solution: The two frameworks are put side by side directly, with the trace operation (restriction onto a subset of states) and the Markov blanket (statistical separation of a subset from the rest) identified as candidate descriptions of the same partition. The episode frames this as convergence, closing on a "joint manifesto."
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: Medium
+  Evidence: Insight card on Markov blankets and self-evidencing; chapter 12, "Relating Interface Theory and Active Inference" (56:01); chapter 13, "Free Energy as Gradient Flow of Surprise" (1:02:20); closing timestamp "(2:40:01) - Closing Thoughts: Joint Manifesto." Whether the identification is exact or merely structural is not settled in the episode — flagged as the open question.
+
+PRS-48:
+  Problem: Deriving spacetime, rather than assuming it, from observer dynamics.
+  Resource: Traces over Markov chains as the generative substrate; positive geometries embedded in Markov polytopes; data-compression parsimony arguments drawn from simplifications in scattering amplitudes.
+  Solution: Claimed route from trace structure to time dilation and distance, then to bootstrapping Minkowski and curved spacetime, with CPT symmetry appearing as dual projections; quantum mechanics claimed to arise from Markov harmonics.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: Speculative
+  Evidence: Chapters 9 ("From Traces to Time Dilation and Distance," 41:24), 10 ("Bootstrapping Minkowski and Curved Spacetime," 50:59), 11 ("CPT Symmetry and Dual Projections," 54:47), 14 ("Embedding Positive Geometries in Markov Polytopes," 1:08:38), 18 ("Quantum Mechanics from Markov Harmonics," 1:44:49). These are presentation claims in a long-form conversation; the derivations are not verifiable from the episode metadata and should be checked against the Trace Chain Theorem preprint before being relied on.
+
+PRS-49:
+  Problem: The standing charge that conscious realism is unfalsifiable.
+  Resource: A 17-minute segment on falsifiability, principles, and testable proofs, followed by discussion of AI/AGI as a proof of principle and trace logic as a basis for modular AI composition with non-unique bounds.
+  Solution: Hoffman offers construction of working systems — spacetime physics recovered from the formalism, and modular AI composed under trace logic — as the falsification surface, rather than a single decisive experiment.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: Medium
+  Evidence: Chapters 15 ("Falsifiability, Principles and Testable Proofs," 1:14:50, 17 min), 16 ("AI, AGI and Proofs of Principle," 1:31:53), 17 ("Trace Logic for Modular AI Composition," 1:36:55); timestamp "(1:41:30) - Non-Unique Bounds in AI Design Using Trace Logic."
+
+PRS-50:
+  Problem: A newly incorporated research institute pursuing a heterodox program must build a constituency that is not already inside academic physics or cognitive science, since those audiences are where the program's resistance is concentrated.
+  Resource: A general-audience public event series, with the second instance staged at a regional community venue and framed as an introduction to both the person and the institution's mission.
+  Solution: Public outreach adopted as an explicit institutional channel alongside preprints and collaborations — consistent with the Institute's published intention to produce "original films and explainers."
+  Date Added: 2026-09-24
+  Source: Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ); PROP-2026-09-22-003
+  Confidence: Speculative
+  Evidence: Events page, 3 October 2026 listing; Media page, "Forthcoming original films and explainers produced by the Institute."
+
+PRS-51:
+  Problem: The program's public framing has cycled through metaphors — desktop icons, then the spacetime headset — each of which invites a different objection.
+  Resource: The event title "The Interface We Call Reality," which names the interface directly rather than through a device metaphor.
+  Solution: A third framing that drops the prosthesis analogy altogether; worth checking against the headset framing recorded in PROP-2026-09-08-003 once the talk is delivered.
+  Date Added: 2026-09-24
+  Source: Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ); PROP-2026-09-22-003
+  Confidence: Speculative
+  Evidence: Event title and description as published on the Events page.
+
+*Total PRS triplets: 51*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

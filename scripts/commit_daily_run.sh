@@ -27,7 +27,8 @@
 # the one carve-out is the heartbeat's data-only refresh behind a CI gate. Daily
 # run output is wiki content -- HTML and prose -- which is exactly the class that
 # rule exists to protect. Committing converts an unbounded working-tree pile into
-# a reviewable commit; pushing stays a human act.
+# a reviewable commit. Pushing is a separate step with its own gate:
+# push_daily_run.sh, added 2026-10-05 after two days of commits sat unpushed.
 #
 # Exit codes:
 #   0 = committed, or nothing to commit (clean no-op)
@@ -90,6 +91,18 @@ POST_RUN_PRODUCERS=(
   "wiki/agents_tab.html"
 )
 
+# Never the run's output, whatever the clock says. On 2026-09-05 the authorship
+# window above swept 34 files and a 13.7 MB workbook from wiki/inbox/rc_sandbox/
+# into "C2A2 daily run" -- they were a day old, so they LOOKED like run output.
+# These are human working threads under wiki/inbox/; the run's own inbox writes
+# are loose files (PROCESSED_LOG.md, ingested items) and wiki/inbox/proposals/,
+# which is why this is a named list and NOT "any inbox subdirectory" -- that
+# broader rule was tried first and would have held the proposals. Workbooks are
+# binaries nobody should commit by automation. Both classes are held and
+# reported like any other foreign path, never staged. Add a thread here when
+# you open one.
+NEVER_RUN_OUTPUT_RE='(^wiki/inbox/(rc_sandbox|rc_tome)/|\.xlsx$)'
+
 # Repo-relative. Same status-file shape as scheduler/commit_check.md and
 # scheduler/run_stall.md: one appended dated line per run, so a held path is still
 # legible tomorrow when the launchd log has scrolled. gitignored like the rest of
@@ -147,10 +160,11 @@ branch=$(git -C "$REPO" symbolic-ref --short HEAD 2>/dev/null)
 # Without this, a dirty tree from any source would get committed under a
 # "C2A2 daily run" message, which is a lie in the log and hides the real author.
 if [ "$SKIP_RUN_CHECK" -eq 0 ]; then
-  age=$(REGISTRY_GLOB="$REGISTRY_GLOB" TASK_ID="$TASK_ID" python3 - <<'PY'
+  age=$(REGISTRY_GLOB="$REGISTRY_GLOB" TASK_ID="$TASK_ID" REPO="$REPO" python3 - <<'PY'
 import glob, json, os, sys
 from datetime import datetime, timezone
 newest = None
+migrated = False
 for path in glob.glob(os.environ["REGISTRY_GLOB"]):
     try:
         tasks = json.load(open(path)).get("scheduledTasks", [])
@@ -159,9 +173,19 @@ for path in glob.glob(os.environ["REGISTRY_GLOB"]):
     for task in tasks:
         if task.get("id") != os.environ["TASK_ID"]:
             continue
+        migrated = migrated or bool(task.get("migratedToRemote"))
         stamp = task.get("lastRunAt")
         if stamp and (newest is None or stamp > newest):
             newest = stamp
+# Moved to a cloud scheduled task (2026-09-24): the local lastRunAt is frozen.
+# The cloud run's first act writes scheduler/run_stamps/<id>.json; trust that.
+if migrated:
+    newest = None
+    try:
+        newest = json.load(open(os.path.join(os.environ["REPO"], "scheduler", "run_stamps",
+                                             os.environ["TASK_ID"] + ".json")))["started_at"]
+    except (OSError, ValueError, KeyError, TypeError):
+        print("NOSTAMP"); sys.exit(0)
 if newest is None:
     print("NONE"); sys.exit(0)
 ran = datetime.fromisoformat(newest.replace("Z", "+00:00"))
@@ -169,6 +193,7 @@ print(f"{(datetime.now(timezone.utc) - ran).total_seconds() / 3600:.1f} {ran.tim
 PY
 ) || fail "could not read the task registry"
   [ "$age" = "NONE" ] && fail "$TASK_ID is not in any registry -- cannot confirm a run"
+  [ "$age" = "NOSTAMP" ] && fail "$TASK_ID moved to a cloud scheduled task and wrote no run stamp (scheduler/run_stamps/$TASK_ID.json) -- cannot confirm a run"
   # The block prints "<hours> <epoch>"; the authorship guard below needs the epoch.
   RUN_START_EPOCH="${age##* }"
   age="${age%% *}"
@@ -257,6 +282,19 @@ $escaped"
 # correct, on a tree nobody built on purpose.
 mkdir -p "$REPO/$(dirname "$HELD_STATUS_FILE")"
 held_line="$(ts)  OK    nothing held; every staged path is the run's own output"
+foreign=$(git -C "$REPO" diff --cached --name-only | grep -E "$NEVER_RUN_OUTPUT_RE" || true)
+if [ -n "$foreign" ]; then
+  foreign_n=$(printf '%s\n' "$foreign" | grep -c .)
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    git -C "$REPO" restore --staged -- "$f" 2>/dev/null || true
+  done <<EOF
+$foreign
+EOF
+  log "HELD $foreign_n path(s) the run never writes (human inbox thread or .xlsx) -- left in the working tree:"
+  printf '%s\n' "$foreign" | sed 's/^/  /'
+  held_line="$(ts)  HELD  $foreign_n path(s) never run output (inbox thread / .xlsx):$(printf ' %s' $foreign)"
+fi
 if [ -n "$RUN_START_EPOCH" ]; then
   cutoff=$(( RUN_START_EPOCH + RUN_WRITE_WINDOW_SECONDS ))
   held=""
@@ -282,13 +320,13 @@ EOF
     held_n=$(printf '%s\n' "$held" | grep -c . )
     log "HELD $held_n path(s) written after the run's $(( RUN_WRITE_WINDOW_SECONDS / 60 ))-minute window -- not this run's output, left in the working tree:$held"
     log "     commit them yourself, or re-run once their author is done"
-    held_line="$(ts)  HELD  $held_n path(s) not written by the run:$held_names"
+    held_line="$(ts)  HELD  $held_n path(s) not written by the run:$held_names${foreign:+ ; plus $foreign_n never-run-output path(s)}"
   else
     log "authorship check clean: every staged path predates run+$(( RUN_WRITE_WINDOW_SECONDS / 60 ))m or is a named producer"
   fi
 else
   log "GUARD SKIPPED: --skip-run-check leaves no run timestamp; staged-path authorship NOT verified"
-  held_line="$(ts)  SKIP  --skip-run-check: staged-path authorship not verified"
+  held_line="$(ts)  SKIP  --skip-run-check: staged-path authorship not verified${foreign:+ ; $foreign_n never-run-output path(s) held}"
 fi
 [ "$DRY_RUN" -eq 0 ] && printf '%s\n' "$held_line" >> "$REPO/$HELD_STATUS_FILE"
 
@@ -333,6 +371,6 @@ if ! git -C "$REPO" commit -q -m "$subject"; then
 fi
 head=$(git -C "$REPO" rev-parse --short HEAD)
 log "committed $head: $count path(s)"
-log "NOT pushed, by design -- a human reviews wiki content before it reaches GitHub"
+log "NOT pushed here, by design -- push_daily_run.sh runs next and decides, behind its own gate"
 log "=== commit_daily_run done ==="
 exit 0

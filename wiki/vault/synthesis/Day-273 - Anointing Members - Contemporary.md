@@ -3,21 +3,21 @@ day: 273
 title: Anointing Members (Contemporary)
 pairs_with: "[[Day-273 - Anointing Members]]"
 length_target_words: 1500
-length_actual_words: 1068
-length_ratio_to_target: 0.71
-length_note: "Short tier — the practical questions on Extreme Unction's minister and anointed members (Q.31–32) are brief; the interface-theoretic engagement is fully developed without padding."
+length_actual_words: 1089
+length_ratio_to_target: 0.726
+length_note: "Short tier — the practical questions on Extreme Unction's minister and anointed members (Q.31–32) are brief; the interface-theoretic engagement is fully developed without padding. RECOUNTED 2026-09-09 after a badge repair (Rohr PRS-04 graded Medium in the bridge bullet and the evidence summary): body-only 1089 words, ratio 0.726. Pre-edit figures were 1068 / 0.712, both verified exact against a recount before the edit, so this note cannot self-certify from a superseded number."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception — the senses as an adaptive, species-specific interface, not a truth-mirror)"
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents navigating anatomical morphospace — the body as a distributed map of form)"
   - "traditions/friston/prs_triplets.md (PRS-05 distributed cognition across scales; the senses as the body's prediction-error boundary)"
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology; the body as a site of knowing)"
-evidence_strength_summary: "The senses-as-interface claim is formal-and-empirical, carried by Hoffman PRS-03 (Confidence High); Friston PRS-05 corroborates it but is (Implicit)/Medium and does not independently establish it; the body-as-anatomical-map is empirical-in-domain (Levin PRS-08); the conferral of grace through the anointed senses and the choice of minister are theological/canonical."
+evidence_strength_summary: "The senses-as-interface claim is formal-and-empirical, carried by Hoffman PRS-03 (Confidence High); Friston PRS-05 corroborates it but is (Implicit)/Medium and does not independently establish it; the body-as-anatomical-map is empirical-in-domain (Levin PRS-08, Confidence High); the body-as-site-of-knowing is Rohr PRS-04 at Confidence Medium, a corroborating record rather than a load-bearing one; the conferral of grace through the anointed senses and the choice of minister are theological/canonical."
 mind_first_reframe: "Anointing the senses is treating the body's interface points — the very loci where a limited perspective is constructed — as the sites where grace re-enters; the senses are where sin came in (the interface admitted distortion) and so where repair is applied."
 central_theme_thread: "The senses literally are the limitation that individuates a perspective; anointing them marks the limited interface as the place that must be re-consecrated toward the whole."
 tags: [synthesis, day/273, theme/the-senses-as-interface]
-last_qc_at: "2026-08-18T22:32:02"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-30T16:17:21"
+last_qc_outcome: "pass"
 ---
 
 # Day 273 — Anointing Members (Contemporary)
@@ -34,7 +34,7 @@ The shared inquiry-problem is **the status of the senses as the boundary of a pe
 
 The emerging paradigm answers the problem decisively, and in Aquinas's favor on the substantive point. Tom's PRS-form record of Hoffman's program, PRS-03 (the Interface Theory of Perception), carries a mathematical proof that natural selection drives *truth-tracking* perception to extinction: perception evolved to track fitness payoffs, not objective reality, so the senses are an adaptive interface — a species-specific desktop — rather than a mirror of the world. The senses are exactly the apparatus that constructs a limited perspective; they are the limitation, rendered as biology.
 
-the Levin-tradition wiki's PRS-08 adds the bodily map: cells are cognitive agents navigating an "anatomical morphospace," so the body is a distributed information-bearing structure, not undifferentiated tissue — there *are* privileged loci, organs that carry distinct functional meaning. the Friston-tradition wiki's PRS-05 supplies the scaling principle: cognition is distributed across scales, and the sense organs are the body's prediction-error boundary, the surface where the internal model meets the world and updates. And the Rohr-tradition wiki's PRS-04 (embodied love as epistemology; the body as a site of knowing) refuses to spiritualize this away — knowing is bodily, so the gates of bodily knowing are theologically serious places.
+The Levin-tradition wiki's PRS-08 adds the bodily map: cells are cognitive agents navigating an "anatomical morphospace," so the body is a distributed information-bearing structure, not undifferentiated tissue — there *are* privileged loci, organs that carry distinct functional meaning. The Friston-tradition wiki's PRS-05 supplies the scaling principle: cognition is distributed across scales, and the sense organs are the body's prediction-error boundary, the surface where the internal model meets the world and updates. And the Rohr-tradition wiki's PRS-04 (embodied love as epistemology; the body as a site of knowing) refuses to spiritualize this away — knowing is bodily, so the gates of bodily knowing are theologically serious places.
 
 Put together: the senses are the interface (Hoffman) at the boundary of a form-bearing body (Levin) where the agent's model meets the world (Friston), and that boundary is a genuine site of knowing and therefore of grace (Rohr).
 
@@ -53,7 +53,7 @@ This is one of the most literal appearances of the project's central claim in th
 - **Hoffman PRS-03** (formal + empirical): the Interface Theory of Perception — the senses as an adaptive, species-specific interface rather than a truth-mirror. Why this pairing: it gives Aquinas's "sin enters through the senses" a rigorous reading as distortion admitted at the constructed boundary of a perspective.
 - **Levin PRS-08** (empirical, in-domain): the body as anatomical morphospace navigated by cognitive cells — privileged, meaning-bearing loci rather than uniform tissue. Why: it grounds the choice of *specific members* for anointing.
 - **Friston PRS-05** (formal, but marked (Implicit) at Confidence Medium — a reconstruction of the scale-agnostic reading of the free-energy principle, not a demonstrated result; it corroborates the Hoffman bridge rather than independently establishing it): distributed cognition across scales; the senses as the prediction-error boundary where model meets world. Why: it specifies the senses as the update-surface that repair would target.
-- **Rohr PRS-04** (theological): embodied love as epistemology; the body as a site of knowing. Why: it keeps the anointing from being spiritualized into mere symbol — bodily gates of knowing are real places of grace.
+- **Rohr PRS-04** (theological; Confidence **Medium** in the register — a Franciscan-incarnational reconstruction, so it corroborates the three entries above rather than adding independent weight): embodied love as epistemology; the body as a site of knowing. Why: it keeps the anointing from being spiritualized into mere symbol — bodily gates of knowing are real places of grace.
 
 ## Where this leaves us
 

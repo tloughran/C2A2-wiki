@@ -216,6 +216,16 @@ def check(spec, tasks, quiet, now=None):
     if task is None:
         return say(False, f"{tid}: not in any registry — deleted, or the registry moved")
 
+    # Moved to a cloud routine (2026-09-24). Its transcript is in the cloud, not under
+    # SESSIONS_GLOB, so the "newest transcript" test below can only ever fail -- it
+    # did, every day from 09-20 to 10-05, which is a false alarm the morning report
+    # learned to ignore. A cloud run that stalls shows as PENDING/RUNNING in its run
+    # record; check_routine_health.py judges that (scheduler/routine_health.md).
+    if task.get("migratedToRemote"):
+        return say(True, f"{tid}: runs as a cloud routine -- its transcript is not on this "
+                         f"Mac; a stalled run is judged from its run record in "
+                         f"scheduler/routine_health.md")
+
     if not task.get("enabled", False):
         return say(True, f"{tid}: disabled in the registry")
 

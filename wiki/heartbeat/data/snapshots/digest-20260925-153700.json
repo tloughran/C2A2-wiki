@@ -1,0 +1,202 @@
+{
+  "seed": false,
+  "generated": "2026-09-25",
+  "generated_at": "2026-09-25T15:37:00Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 219,
+    "high_relevance": 2,
+    "primary_themes": "Governance Policy + Capability Jump"
+  },
+  "signals": [
+    {
+      "title": "SGA: Uncertainty Quantification for Multi-Step Forecasting in Time Series Foundation Models",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.28582",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "The recent emergence of Time Series Foundation Models (TSFMs) has significantly advanced multi-step forecasting performance, enabling accurate predictions over extended future horizons. However, existing TSFMs often suffer from significantly inherent uncertainty, which typically manifests as derived forecast branches emerging at each time step and spreading to subsequent steps; different forecast branches often exhibit varying forecasting performance, thereby undermining the credibility of TSFM forecasts.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.468216+00:00",
+      "long_summary": "Recent developments in Time Series Foundation Models (TSFMs) have improved multi-step forecasting, enhancing the ability to make accurate predictions over longer time frames. Despite these advancements, TSFMs face challenges related to inherent uncertainty that affects their reliability. This uncertainty appears as various forecast branches at each step of the prediction process, each with differing performance levels. Such variability in the forecasts can lead to a lack of confidence in the accuracy of TSFM predictions. Understanding and addressing these uncertainties is crucial for improving the efficacy of TSFMs. This is particularly important for our community as we strive to grasp AI's evolving methodologies and the potential impact of uncertainty on predictive accuracy in applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Leakage-Safe Machine Learning for Hydrogen Embrittlement Detection in 316L Stainless Steel: A Region-Held-Out Evaluation of Texture and Deep Features in SEM Micrographs",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.28567",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Scanning electron microscopy (SEM) is routinely used to characterize the microstructural changes caused by hydrogen embrittlement (HE) in structural steels. Machine learning can automate this characterization, but models are often evaluated using image-level splits.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.460177+00:00",
+      "long_summary": "The paper discusses the use of scanning electron microscopy (SEM) to analyze microstructural changes in structural steels caused by hydrogen embrittlement (HE). It highlights the potential for machine learning to automate this analytical process. However, it points out that many existing machine learning models are typically evaluated using image-level splits, which may not be optimal for assessing the effectiveness of these models. This matter is significant for a community engaged in AI education, as it underscores the need for refined methodologies in applying machine learning to critical material science challenges.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Reasoning Instructions Can Break Answer Decoding in Vision--Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.29278",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Chain-of-thought (CoT) instructions can distort multiple-choice VLM evaluation when a scorer appends a reasoning cue but reads answer-label logits before the model generates any rationale. We call this CoT-prefix scoring.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.773795+00:00",
+      "long_summary": "Chain-of-thought (CoT) instructions can interfere with the evaluation process of vision-language models (VLMs) when a scorer uses reasoning cues but examines answer-label probabilities before the model produces any rationale for its choice. This issue, referred to as CoT-prefix scoring, highlights a significant concern about how reasoning instructions can lead to misleading assessments in model performance. Understanding this phenomenon is crucial because it points out the complexities involved in evaluating AI models and ensuring their outputs accurately reflect their capabilities. For the community, remaining informed about such developments is essential for critically engaging with AI advancements and their implications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Post-Training Leaves Behavioral Shadows on Unrelated Decisions",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.29233",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "We find that language models can transfer capabilities through task-unrelated text. Post-training typically improves language models using task-specific data.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.767770+00:00",
+      "long_summary": "Research indicates that language models have the ability to transfer capabilities through text that is not directly related to specific tasks. Typically, language models see enhancement in their performance when trained on task-specific data, but this study reveals that improvements can also occur via unrelated text following their training. This finding is significant as it underscores the flexibility and adaptability of language models, which may have broader implications for how they are utilized and improved in various applications. Understanding these dynamics is essential for a community staying informed about AI, as it highlights the complexities of model training and the potential for novel capabilities to emerge from unexpected sources.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Predicting Emerging Topics from Outliers: A Prospective Study of Weak Signals in Embedding Space",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.29183",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Some documents that embedding-based topic models initially classify as noise later become founding members of emerging topics. At publication time, however, they appear as scattered points in embedding space and are difficult to distinguish from ordinary noise without the benefit of hindsight.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.763579+00:00",
+      "long_summary": "Some documents that embedding-based topic models classify as noise can later emerge as key elements of new topics. At the time of their classification, these documents are dispersed within embedding space and resemble ordinary noise, making it challenging to identify their potential significance without hindsight. This matters for a community keeping up with AI because understanding the dynamics of topic emergence can enhance our ability to forecast and navigate trends in information and discourse.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Tag-Aware Structured Text Translation: Towards a Systematic Understanding",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.29131",
+      "relevance": 1,
+      "tags": [
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Internet texts are replete with format tags that carry structural, semantic, and functional meaning. Current large language model (LLM)-based translation systems struggle to balance translation fluency with tag fidelity when processing tagged text.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.759192+00:00",
+      "long_summary": "Current large language model (LLM)-based translation systems face challenges in translating internet texts that contain format tags, which hold structural, semantic, and functional significance. These systems often find it difficult to maintain a balance between achieving fluency in translation while preserving the integrity of the tags that provide essential meaning and context within the text. This research highlights the need for a systematic understanding of how to improve translations of tagged text. This matters for a community keeping up with AI as it emphasizes the ongoing challenges in enhancing language models for practical applications, particularly in contexts where format and structure are crucial for accurate communication.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "ELF-REG: Scaling Continuous Diffusion Language Models to Reasoning Tasks",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.29102",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Fully continuous diffusion language models (dLMs) denoise continuous representations without intermediate discretization, then decode all response tokens in parallel at the final step. Their performance on challenging reasoning tasks remains less established than that of autoregressive (AR) LLMs and masked dLMs.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.757341+00:00",
+      "long_summary": "The new abstract on ELF-REG discusses fully continuous diffusion language models (dLMs), which have the ability to denoise continuous representations without relying on intermediate discretization. These models decode all response tokens simultaneously at the final stage. However, their effectiveness in challenging reasoning tasks is not as well established compared to autoregressive (AR) language models and masked dLMs. This development is significant for a community engaged in AI, as it highlights the ongoing assessment of different model architectures in addressing complex reasoning tasks, which is crucial for understanding advancements in AI capabilities.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Polite but Misaligned: Evaluating LLM Politeness Judgments Against Human Pragmatic Norms",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.29001",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Despite strong performance on standard benchmarks, it remains unclear whether large language models (LLMs) evaluate social pragmatics in ways that align with human judgments. We evaluate LLM politeness judgments using two English-language datasets with complementary annotation formats: continuous human ratings and three-way categorical labels.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.751667+00:00",
+      "long_summary": "This study investigates whether large language models (LLMs) assess politeness in a manner consistent with human evaluations of social pragmatics, despite their strong performance on standard benchmarks. The researchers evaluate LLM politeness judgments by utilizing two English-language datasets that feature different annotation formats, including continuous human ratings and three-way categorical labels. This inquiry is crucial for understanding the limitations of AI in social contexts, particularly as LLMs are increasingly integrated into applications requiring nuanced human interactions. For a community focused on AI, recognizing these discrepancies in evaluation is essential for developing more empathetic and socially aware AI systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Persuaded, Not Informed: Incentive-Misaligned Witnesses Defeat In-Context Grounding",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.28854",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Language-model agents increasingly answer questions over customer-relationship management (CRM) records, such as whether to qualify a sales lead. We identify a failure mode not addressed by a stronger model: when the context contains an assertion by a party with an incentive toward optimism - here the sales representative, a witness recorded in the CRM - the model treats the assertion as evidence and clears deals the company's own records deem unacceptable.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.749469+00:00",
+      "long_summary": "Language-model agents used in customer-relationship management (CRM) contexts may struggle when interpreting information with bias. Specifically, if the data includes an assertion from a party incentivized to be optimistic, like a sales representative, the model may improperly weigh this assertion as valid evidence. Consequently, these models may clear deals that the company itself has determined are unacceptable based on its own records. This highlights a critical failure not addressed simply by enhancing model strength, emphasizing the need for caution when interpreting data influenced by vested interests. Understanding this dynamic is essential for communities engaged in AI, as it underscores the importance of aligning AI decision-making processes with unbiased and accurate data to enhance reliability in business contexts.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "An Explainable DistilBERT-BiLSTM-Attention Framework for Binary and Multi-Class Hate Speech Detection",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.28703",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Hate speech on social media poses serious risks to social harmony, mental well-being, and public safety, making its timely and accurate detection essential for content moderation systems. Most existing studies focus on binary classification, evaluated their frameworks on a single dataset, and provide limited insight into how decisions are made, which limits their real-world applicability.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 25 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-25T15:36:54.738121+00:00",
+      "long_summary": "Hate speech on social media presents significant risks to social harmony, mental well-being, and public safety, necessitating prompt and precise detection for content moderation systems. Current research predominantly emphasizes binary classification of hate speech, often assessing their frameworks on a singular dataset while offering scant explanation of their decision-making processes. This lack of transparency and diversity in evaluation hinders the practical application of these studies in real-world settings, highlighting the need for more sophisticated approaches. Understanding these limitations is crucial for developing more effective and explainable models in the fight against hate speech. This matters for the community as it underscores the importance of creating reliable tools that can adapt to varied contexts, enhancing overall digital safety and well-being.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-25",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}

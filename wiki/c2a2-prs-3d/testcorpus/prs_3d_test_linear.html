@@ -337,6 +337,12 @@ body {
 }
 
 #disc-labels { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; }
+.prs-filter-count {
+  margin-left: auto;
+  font-size: 10px;
+  color: #6f6f80;
+  font-variant-numeric: tabular-nums;
+}
 .disc-label {
   position: absolute;
   color: #888;
@@ -362,7 +368,8 @@ body {
   <div class="prs-help-row">
     <button id="prs-help-btn" onclick="prsToggleHelp(event)" aria-label="How filters work" title="How filters work">?</button>
   </div>
-  <div id="prs-count" style="font-size:12px;color:#9a9aa8;margin:2px 0 10px">Showing … triplets</div>
+  <div id="prs-count" style="font-size:12px;color:#9a9aa8;margin:2px 0 2px">Showing … triplets</div>
+  <div id="prs-build-stamp" style="font-size:10px;color:#6f6f80;margin:0 0 10px;line-height:1.4"></div>
   <h3>Traditions</h3>
   <div class="prs-filter-item">
     <input type="checkbox" id="prs-chk-all" checked onchange="prsToggleAll(this.checked)">
@@ -435,9 +442,9 @@ body {
     <button id="btn-labels" onclick="toggleLabels()" class="active">Labels</button>
     <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Bright</span>
     <input type="range" id="prs-brightness" min="0.6" max="2.5" step="0.05" value="1.35" style="vertical-align:middle;width:80px" oninput="setBrightness(this.value)">
-    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Year &#8805;</span>
-    <input type="range" id="prs-year-slider" min="0" max="0" value="0" step="1" style="vertical-align:middle;width:90px" oninput="setYearThreshold(this.value)">
-    <span id="prs-year-slider-label" style="font-size:11px;color:#9a9a9a">all years</span>
+    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Date &#8805;</span>
+    <input type="range" id="prs-month-slider" min="0" max="0" value="0" step="1" style="vertical-align:middle;width:140px" oninput="setMonthThreshold(this.value)">
+    <span id="prs-month-slider-label" style="font-size:11px;color:#9a9a9a;font-variant-numeric:tabular-nums">all dates</span>
     <!-- Threads/Disciplines top buttons removed: superseded by left-panel Edges and Disciplines sections -->
   </div>
 </div>
@@ -450,7 +457,7 @@ body {
 <div id="legend"></div>
 
 <div id="tooltip"></div>
-<div id="prs-title-pop" class="prs-pop" style="display:none;top:54px;left:24px"><h4>Narrative (PRS) Connectome</h4><p>Each <b>node</b> is an agentic PRS narrative &#8212; a small model (problem &#8594; resource &#8594; solution). <b>Edges</b> wire narratives together: shared threads within a tradition; across traditions, the <b>coils</b> (association fibers). Read it as the emergence of rival <b>master sciences</b>. Axes: angle = discipline, height = year.</p></div><button id="prs-legend-help-btn" class="prs-pop-btn" title="Legend key" style="position:absolute;display:none;z-index:401" onclick="prsTogglePop('prs-legend-pop', event)">?</button>
+<div id="prs-title-pop" class="prs-pop" style="display:none;top:54px;left:24px"><h4>Narrative (PRS) Connectome</h4><p>Each <b>node</b> is an agentic PRS narrative &#8212; a small model (problem &#8594; resource &#8594; solution). <b>Edges</b> wire narratives together: shared threads within a tradition; across traditions, the <b>coils</b> (association fibers). Read it as the emergence of rival <b>master sciences</b>. Axes: angle = discipline, height = date (day precision, log-on-age, &#964;=90d).</p></div><button id="prs-legend-help-btn" class="prs-pop-btn" title="Legend key" style="position:absolute;display:none;z-index:401" onclick="prsTogglePop('prs-legend-pop', event)">?</button>
 <div id="prs-legend-pop" class="prs-pop" style="display:none;bottom:54px;left:24px"><h4>Legend key</h4><p><b>Problem / Resource / Solution</b> &#8212; the three node shapes of one narrative.</p><p><b>Synergistic coil</b> (teal) &#8212; a cross-tradition bridge: a shared resource linking programs, placed at its discovery year.</p><p><b>Cross-tradition link</b> (gold) &#8212; a finding-driven connection between traditions.</p><p><b>Convergence hub</b> (gold glow) &#8212; a resource shared across &#8805;2 traditions; a candidate master-science seed.</p><p><b>Generative coil</b> (orange &#8594;) &#8212; one narrative's solution feeding another's resource: the directed spiral.</p></div>
 
 <div id="disc-labels"></div>
@@ -470,6 +477,7 @@ var CROSS_CONNECTIONS = [{"id": "CROSS-001", "question": "An unfittable anomaly 
 var FINDINGS = [{"id": "FINDING-001", "date": "2026-09-01", "programs": "Quantum Agent, Deeplearning Agent", "type": "Structural homology - cascade shape", "finding": "Both traditions show the same five-stage shape - anomaly, expedient device, decisive demonstration, unifying formalism, foundations - but quantum mechanics takes 32 years from Planck to von Neumann while deep learning takes 13 from AlexNet to DeepSeek R1."}, {"id": "FINDING-002", "date": "2026-09-01", "programs": "Quantum Agent, Deeplearning Agent", "type": "Structural analogy - compression of the interval", "finding": "The 1924-1926 cluster (de Broglie, Pauli, Heisenberg, Schrodinger) and the 2020 cluster (scaling laws, GPT-3, DDPM) are both moments where several independent lines land within months of each other."}];
 var COILS = [{"id": "COIL-001", "cross_id": "CROSS-001", "label": "An unfittable anomaly forces adoption of a device the field believes is wrong - Planck 1900 quantising the oscillator, AlexNet 2012 winning with a deep net", "nature": "Structural analogy - opening move of a cascade", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "In both the device is initially defended as expedient rather than true", "forward": false, "programs_predating_coil": ["quantum", "deeplearning"]}, {"id": "COIL-002", "cross_id": "CROSS-002", "label": "The expedient device is promoted to a real principle you can predict with - Einstein 1905 making the quantum physical, Kaplan 2020 making scale a law", "nature": "Structural homology - fitting device becomes ontological commitment", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "", "forward": false, "programs_predating_coil": ["quantum", "deeplearning"]}, {"id": "COIL-003", "cross_id": "CROSS-003", "label": "A single public demonstration converts the remaining skeptics - Compton 1922 measuring photon momentum, AlphaGo 2016 beating Lee Sedol", "nature": "Structural analogy - the decisive demonstration", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "", "forward": false, "programs_predating_coil": ["quantum", "deeplearning"]}, {"id": "COIL-004", "cross_id": "CROSS-004", "label": "A patchwork of postulates is replaced by one calculus everything is then written in - Heisenberg 1925 and Schrodinger 1926, the Transformer 2017", "nature": "Deep structural homology - the unifying formalism", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "The strongest of the six; both produce a substrate the whole later field builds on", "forward": false, "programs_predating_coil": ["quantum", "deeplearning"]}, {"id": "COIL-005", "cross_id": "CROSS-005", "label": "A symmetry argument carries a mechanism into a domain it was not built for - de Broglie 1924 extending waves to matter, diffusion 2020 extending denoising to generation", "nature": "Structural analogy - mechanism transfer by symmetry", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "", "forward": false, "programs_predating_coil": ["quantum", "deeplearning"]}, {"id": "COIL-006", "cross_id": "CROSS-006", "label": "The founding period closes when the field acquires foundations it can reason about in advance - von Neumann 1932 axiomatising, scaling laws and RLHF making capability and behaviour designable", "nature": "Explanatory bridge - closure of a founding period", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "", "forward": false, "programs_predating_coil": ["quantum", "deeplearning"]}];
 var GENERATIVE = [];
+var PRS_BUILD_TS = "2026-10-06T00:36:16";
 
 // ── Z-AXIS: temporal placement (must be before camera state) ──
 // Day-precision placement on a SINGLE ordinal scale. yearToZ and dateToZ must
@@ -562,7 +570,7 @@ var showCoils = true;
 var coilLines = [];
 var showGenerative = true;
 var generativeLines = [];
-var yearThreshold = null;
+var monthThreshold = null;
 // (showDiscs removed — discipline visibility now lives entirely in prsDiscState, set by left-panel checkboxes.)
 // Per-item filter state — populated by buildDisciplineFilters / buildYearFilters
 var prsDiscState = {};   // discipline name -> bool
@@ -576,7 +584,22 @@ var isMouseDown = false;
 var mouseDownPos = { x: 0, y: 0 };
 var cameraTheta = Math.PI * 0.25;
 var cameraPhi = Math.PI * 0.35;
-var cameraRadius = 50;
+// LOAD PROFILE (2026-09-03). The old default of 50 framed ~95% of node centres and
+// read as a wall of nodes -- you could not see that the thing has a shape. One wheel
+// notch is |deltaY| 100 * 0.05 = 5 units (see onWheel), so two steps back is 60,
+// measured to put 100% of node centres inside the frame at 1500x940.
+var PRS_ZOOM_STEP = 5;
+var PRS_LOAD_RADIUS = 50 + 2 * PRS_ZOOM_STEP;
+// Slow orbit: 2.4 deg/sec -> one revolution in 2.5 minutes. Integrated against
+// ELAPSED TIME, not per frame -- a per-frame constant makes the rate a function of
+// the viewer's hardware (measured 2.6fps under headless swiftshader vs 60fps on a
+// real GPU: same constant, a 23x difference in speed). dt is clamped so a
+// backgrounded tab does not resume with a jump.
+// It exists to show the structure, so it yields the moment the viewer takes over.
+var PRS_ORBIT_DEG_PER_SEC = 2.4;
+var autoOrbit = true;
+var orbitLastT = null;
+var cameraRadius = PRS_LOAD_RADIUS;
 var cameraTarget = new THREE.Vector3(0, zHeight / 2, 0);
 var lastMouse = { x: 0, y: 0 };
 
@@ -689,14 +712,20 @@ function init() {
   buildPRSNodes();
   buildThreads();
   buildLegend();
-  var _ys = document.getElementById('prs-year-slider'); if (_ys) { _ys.min = minYear; _ys.max = maxYear; _ys.value = minYear; }
+  var _ms = document.getElementById('prs-month-slider');
+  if (_ms) { _ms.min = monthIndexOfOrd(minOrd); _ms.max = monthIndexOfOrd(maxOrd); _ms.value = _ms.min; setMonthThreshold(_ms.value); }
   var _b = document.getElementById('prs-brightness'); if (_b) setBrightness(_b.value);
   var _lg = document.getElementById('legend'); var _lb = document.getElementById('prs-legend-help-btn');
   if (_lg && _lb) { _lb.style.left = (_lg.offsetLeft + 4) + 'px'; _lb.style.top = (_lg.offsetTop - 22) + 'px'; _lb.style.display = 'block'; }
+  updatePrsCount();  // the counter shipped as 'Showing … triplets' because nothing called this on load
+  var _bs = document.getElementById('prs-build-stamp');
+  if (_bs) { _bs.textContent = 'Built ' + (typeof PRS_BUILD_TS !== 'undefined' ? PRS_BUILD_TS.replace('T', ' ').slice(0, 16) : '?')
+    + ' \u00b7 ' + Object.keys(THINKER_DISPLAY).length + ' traditions \u00b7 '
+    + monthLabel(monthIndexOfOrd(minOrd)) + ' \u2013 ' + monthLabel(monthIndexOfOrd(maxOrd)); }
+
   buildCrossConnectionLines();
   buildCoilLines();
   buildGenerativeChains();
-  updatePrsCount();   // else the readout sits on its placeholder until the first filter toggle
 
   // Events
   renderer.domElement.addEventListener('mousedown', onMouseDown);
@@ -1036,11 +1065,31 @@ function setBrightness(v) {
   if (cc) cc.style.filter = 'brightness(' + v + ')';
 }
 
-function setYearThreshold(v) {
-  v = parseInt(v, 10);
-  yearThreshold = v;
-  var lbl = document.getElementById('prs-year-slider-label');
-  if (lbl) lbl.textContent = (v <= minYear) ? 'all years' : ('≥ ' + v);
+// -- TIME THRESHOLD, MONTH RESOLUTION (2026-09-03) --
+// The slider was year-step over pub_year. 560 of 785 triplets share pub_year 2026,
+// so every position from 2020 up was the same picture. Month index over `date`
+// gives ~600 distinct steps across the corpus and matches dateToZ's own field.
+var MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function monthIndexOfOrd(o) {
+  var d = new Date(o * 86400000);
+  return d.getUTCFullYear() * 12 + d.getUTCMonth();
+}
+function ordOfMonthIndex(mi) {
+  return Date.UTC(Math.floor(mi / 12), mi % 12, 1) / 86400000;
+}
+function monthLabel(mi) {
+  return MONTH_NAMES[mi % 12] + ' ' + Math.floor(mi / 12);
+}
+function setMonthThreshold(v) {
+  var mi = parseInt(v, 10);
+  var lo = monthIndexOfOrd(minOrd), hi = monthIndexOfOrd(maxOrd);
+  monthThreshold = (mi <= lo) ? null : ordOfMonthIndex(mi);
+  var lbl = document.getElementById('prs-month-slider-label');
+  if (lbl) {
+    lbl.textContent = (mi <= lo)
+      ? ('all dates (' + monthLabel(lo) + ' \u2192 ' + monthLabel(hi) + ')')
+      : (monthLabel(mi) + ' \u2192 ' + monthLabel(hi));
+  }
   applyPRSFilters();
 }
 
@@ -1065,6 +1114,9 @@ var prsFilterState = {}; // thinker -> boolean
 function buildTraditionFilters() {
   var container = document.getElementById('prs-tradition-filters');
   var html = '';
+  // Per-tradition triplet counts, derived from the shipped data — never a literal.
+  var tCount = {};
+  PRS_TRIPLETS.forEach(function(t) { tCount[t.thinker] = (tCount[t.thinker] || 0) + 1; });
   var sortedThinkers = Object.keys(THINKER_DISPLAY).sort(function(a, b) {
     return THINKER_DISPLAY[a].localeCompare(THINKER_DISPLAY[b]);
   });
@@ -1074,6 +1126,7 @@ function buildTraditionFilters() {
     html += '<input type="checkbox" id="prs-chk-' + t + '" checked onchange="prsToggleThinker(\'' + t + '\', this.checked)">';
     html += '<span class="prs-filter-dot" style="background:' + THINKER_COLORS[t] + '"></span>';
     html += '<span class="prs-filter-label">' + THINKER_DISPLAY[t] + '</span>';
+    html += '<span class="prs-filter-count">' + (tCount[t] || 0) + '</span>';
     html += '</div>';
   });
   container.innerHTML = html;
@@ -1108,11 +1161,15 @@ function prsNodeVisible(mesh) {
     if (disc && prsDiscState[disc] === false) return false;
   }
   var triplet = mesh.userData.triplet;
-  if (triplet && triplet.pub_year) {
-    var dec = Math.floor(triplet.pub_year / 10) * 10;
+  // Time cut keys on `date` — the SAME field dateToZ places the node by. Keying the
+  // decade buckets on pub_year while the axis used `date` meant the two disagreed
+  // wherever a curated pub_year and its date year differ (2026-09-03).
+  var _ord = triplet ? dateOrd(triplet.date) : null;
+  if (_ord !== null) {
+    var dec = Math.floor(new Date(_ord * 86400000).getUTCFullYear() / 10) * 10;
     if (prsYearState[dec] === false) return false;
   }
-  if (yearThreshold && triplet && triplet.pub_year && triplet.pub_year < yearThreshold) return false;
+  if (monthThreshold !== null && _ord !== null && _ord < monthThreshold) return false;
   return true;
 }
 
@@ -1268,15 +1325,15 @@ function buildLegend() {
   html += '<div class="legend-item"><span style="color:#5DC0AB;font-size:14px">&#11206;</span> Solution</div>';
   html += '<h4 style="margin-top:10px">Connections</h4>';
   html += '<div class="legend-item"><span style="color:#3FE0D0;font-size:15px">&#10026;</span> Synergistic coil (' + (typeof COILS !== 'undefined' ? COILS.length : 0) + ')</div>';
-  html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#8722;</span> Cross-tradition link</div>';
+  html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#8722;</span> Cross-tradition link (' + (typeof CROSS_CONNECTIONS !== 'undefined' ? CROSS_CONNECTIONS.length : 0) + ')</div>';
   var nConv = 0; for (var k in resourceTraditions) { if (Object.keys(resourceTraditions[k]).length >= 2) nConv++; }
   html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#9673;</span> Convergence hub &#8212; resource shared across &#8805;2 traditions (' + nConv + ')</div>';
   html += '<div class="legend-item"><span style="color:#F09A3C;font-size:15px">&#8594;</span> Generative coil &#8212; a solution feeding a downstream resource (' + (typeof GENERATIVE !== 'undefined' ? GENERATIVE.length : 0) + ')</div>';
+  html += '<div class="legend-item" style="color:#6f6f80;font-size:10px;margin-top:6px">Pattern-detector findings: ' + (typeof FINDINGS !== 'undefined' ? FINDINGS.length : 0) + '</div>';
   legendEl.innerHTML = html;
 }
 
 // ── SEARCH ──
-var prsSearchTimer = null;
 function prsSearch(query) {
   var resultsEl = document.getElementById('prs-search-results');
   var clearBtn = document.getElementById('prs-search-clear');
@@ -1294,17 +1351,6 @@ function prsSearch(query) {
   }
   clearBtn.style.display = 'inline-block';
 
-  // Check for API key — if available and query is 4+ chars, do semantic search
-  var apiKey = '';
-  try { apiKey = localStorage.getItem('tts_api_key') || ''; } catch(e) {}
-  if (apiKey && query.length >= 4) {
-    // Debounce semantic search
-    if (prsSearchTimer) clearTimeout(prsSearchTimer);
-    prsSearchTimer = setTimeout(function() { prsSemanticSearch(query, apiKey); }, 600);
-    return;
-  }
-
-  // Fallback: text matching
   prsTextSearch(query);
 }
 
@@ -1329,58 +1375,6 @@ function prsTextSearch(query) {
     }
   });
   prsShowSearchResults(hits, query);
-}
-
-function prsSemanticSearch(query, apiKey) {
-  var resultsEl = document.getElementById('prs-search-results');
-  resultsEl.innerHTML = '<div style="color:#888;font-style:italic">Searching...</div>';
-
-  // Build compact PRS summary for the LLM
-  var prsText = PRS_TRIPLETS.map(function(t) {
-    return t.id + ': ' + t.label + ' | P: ' + t.problem.slice(0, 120) + ' | R: ' + t.resource.slice(0, 120) + ' | S: ' + t.solution.slice(0, 120);
-  }).join('\n');
-
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://api.openai.com/v1/chat/completions', true);
-  xhr.setRequestHeader('Authorization', 'Bearer ' + apiKey);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.timeout = 15000;
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      try {
-        var resp = JSON.parse(xhr.responseText);
-        var content = resp.choices[0].message.content;
-        // Parse out PRS IDs from the response
-        var matchedIds = content.match(/[a-z]+-PRS-\d+/gi) || [];
-        var hits = [];
-        matchedIds.forEach(function(id) {
-          var t = PRS_TRIPLETS.find(function(p) { return p.id.toLowerCase() === id.toLowerCase(); });
-          if (t && hits.indexOf(t) < 0) hits.push(t);
-        });
-        if (hits.length === 0) {
-          // Fallback to text search
-          prsTextSearch(query);
-        } else {
-          prsShowSearchResults(hits, query);
-        }
-      } catch(e) {
-        prsTextSearch(query);
-      }
-    } else {
-      prsTextSearch(query);
-    }
-  };
-  xhr.onerror = function() { prsTextSearch(query); };
-  xhr.ontimeout = function() { prsTextSearch(query); };
-  xhr.send(JSON.stringify({
-    model: 'gpt-4o-mini',
-    messages: [
-      { role: 'system', content: 'You are a search assistant. Given PRS triplets (Problem-Resource-Solution) from research traditions, return the IDs of triplets most relevant to the user query. Return ONLY a comma-separated list of IDs (e.g. levin-PRS-01, friston-PRS-03). No explanation.' },
-      { role: 'user', content: 'Query: ' + query + '\n\nPRS Triplets:\n' + prsText }
-    ],
-    max_tokens: 200,
-    temperature: 0.1
-  }));
 }
 
 function prsShowSearchResults(hits, query) {
@@ -1514,13 +1508,15 @@ function updateCameraPosition() {
 function resetCamera() {
   cameraTheta = Math.PI * 0.25;
   cameraPhi = Math.PI * 0.35;
-  cameraRadius = 50;
+  cameraRadius = PRS_LOAD_RADIUS;
   cameraTarget.set(0, zHeight / 2, 0);
+  autoOrbit = true;   // Reset View restores the load profile, orbit included
   updateCameraPosition();
 }
 
 // ── EVENTS ──
 function onMouseDown(e) {
+  autoOrbit = false;   // the viewer is driving now
   isMouseDown = true;
   mouseDownPos = { x: e.clientX, y: e.clientY };
   lastMouse = { x: e.clientX, y: e.clientY };
@@ -1619,6 +1615,7 @@ function onDoubleClick(e) {
 }
 
 function onWheel(e) {
+  autoOrbit = false;   // the viewer is driving now
   cameraRadius = Math.max(15, Math.min(120, cameraRadius + e.deltaY * 0.05));
   updateCameraPosition();
   e.preventDefault();
@@ -1866,6 +1863,16 @@ function updateYearLabels() {
 function animate() {
   requestAnimationFrame(animate);
 
+  // Slow orbit of the CAMERA about the z-axis, so the whole connectome turns.
+  var nowT = (typeof performance !== 'undefined' ? performance.now() : Date.now());
+  if (autoOrbit) {
+    if (orbitLastT === null) orbitLastT = nowT;
+    var dt = Math.min((nowT - orbitLastT) / 1000, 0.25);   // clamp: backgrounded tab
+    cameraTheta += PRS_ORBIT_DEG_PER_SEC * Math.PI / 180 * dt;
+    updateCameraPosition();
+  }
+  orbitLastT = nowT;
+
   // Slow rotation of nodes for visual interest
   meshes.forEach(function(m) {
     if (m.userData.type === 'prs') {
@@ -1890,6 +1897,37 @@ buildZAxis();
 buildTraditionFilters();
 prsBuildDisciplineFilters();
 prsBuildYearFilters();
+
+// ── PLOT SOURCE (2026-09-29) ── for the explorer shell's Plots panel
+// (wiki/lib/c2a2-plots.js reads this; it never reaches into the page itself).
+// Data only: one hub per thinker; every PRS triplet linked to its thinker and
+// dated by the triplet; every cross-connection and finding linked between each
+// pair of programs it names. Cross-connections carry a year and no month, so
+// they stay UNDATED rather than being given an invented one. This view cannot
+// be cut from a chart yet (no find contract), so `cuts: false` -- clicks say so.
+window.c2a2PlotSource = function () {
+  var slug = function (p) { return String(p || '').toLowerCase().replace(/\s+agent\s*$/, '').replace(/[^a-z]/g, ''); };
+  var nodes = [], links = [], hub = {};
+  function hubOf(s) {
+    if (!hub[s]) { hub[s] = { id: 'traditions/' + s, group: 'traditions/' + s, date: '' }; nodes.push(hub[s]); }
+    return hub[s];
+  }
+  PRS_TRIPLETS.forEach(function (t) {
+    var d = String(t.date || t.first_seen || '').slice(0, 10);
+    var n = { id: 'traditions/' + t.thinker + '/' + t.id, group: 'prs/' + String(t.confidence || 'unlabeled').toLowerCase(), date: d };
+    nodes.push(n);
+    links.push({ source: n, target: hubOf(t.thinker), type: 'prs', sig_date: d });
+  });
+  function pairs(list, type, date) {
+    var ps = String(list || '').split(',').map(slug).filter(Boolean);
+    for (var i = 0; i < ps.length; i++) {
+      for (var j = i + 1; j < ps.length; j++) { links.push({ source: hubOf(ps[i]), target: hubOf(ps[j]), type: type, sig_date: date || '' }); }
+    }
+  }
+  CROSS_CONNECTIONS.forEach(function (c) { pairs(c.programs, 'cross', ''); });
+  FINDINGS.forEach(function (f) { pairs(f.programs, 'finding', String(f.date || '').slice(0, 10)); });
+  return { kind: 'connectome', nodes: nodes, links: links, cuts: false };
+};
 </script>
 </body>
 </html>

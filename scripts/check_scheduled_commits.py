@@ -116,6 +116,23 @@ def last_commit_at(pattern):
     return parse_iso(stamp).astimezone(timezone.utc) if stamp else None
 
 
+# A task the desktop app has MOVED to a cloud scheduled task (2026-09-24, "via
+# sweep") keeps a frozen, disabled local entry: its lastRunAt never moves again.
+# The cloud run writes its own start time here as its first act, and that stamp
+# is what the Mac trusts from then on. Without it, nothing on the Mac can confirm
+# a run -- which is a FAIL, not a pass.
+STAMP_DIR = os.path.join(REPO, "scheduler", "run_stamps")
+
+
+def remote_stamp(tid):
+    """started_at the cloud run wrote for itself, as UTC datetime, or None."""
+    try:
+        with open(os.path.join(STAMP_DIR, tid + ".json")) as fh:
+            return parse_iso(json.load(fh)["started_at"]).astimezone(timezone.utc)
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+
+
 def check(spec, tasks, quiet):
     """Return (ok, one_line_verdict). The line is what the morning report reads."""
     tid = spec["task_id"]
@@ -131,13 +148,21 @@ def check(spec, tasks, quiet):
     if task is None:
         return say(False, f"{tid}: not in any registry — deleted, or the registry moved")
 
-    if not task.get("enabled", False):
-        return say(True, f"{tid}: disabled in the registry")
-
-    if not task.get("lastRunAt"):
+    if task.get("migratedToRemote"):
+        ran = remote_stamp(tid)
+        if ran is None:
+            return say(False, f"{tid}: moved to a cloud scheduled task "
+                              f"({task.get('migratedToRemoteAt', '?')}) and no run stamp "
+                              f"at scheduler/run_stamps/{tid}.json -- the Mac cannot confirm any run")
+    elif not task.get("enabled", False):
+        # Was OK until 2026-09-27. Three mornings of "OK ... disabled" hid a run
+        # whose output was never committed. A task listed here is one whose work
+        # must land; switched off, it lands nothing.
+        return say(False, f"{tid}: disabled in the registry -- its output is not being produced or committed")
+    elif not task.get("lastRunAt"):
         return say(False, f"{tid}: enabled but has never run")
-
-    ran = parse_iso(task["lastRunAt"]).astimezone(timezone.utc)
+    else:
+        ran = parse_iso(task["lastRunAt"]).astimezone(timezone.utc)
     now = datetime.now(timezone.utc)
     deadline = ran + timedelta(hours=spec["grace_hours"])
 

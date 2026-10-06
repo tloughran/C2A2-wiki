@@ -1089,3 +1089,441 @@ reconstructed 2026-08-29 register entries.
 
 *(14a does not make decisions. This note exists so that the four-day gap is on the decision register
 rather than only in the changelog. See OPEN-174.)*
+
+## 2026-09-04 — 14a run note (no attended DECISION entries; gap-filling after 08-30)
+
+`decisions.md` still ends at DECISION-083 (2026-08-27) — eight days. Two rulings were made today
+under Tom's delegation ("as you incline") and are recorded in `inbox/rc_sandbox/outline_v3.md`
+(RULINGS block): the **row-header rule** and the **authored-table refinement** (ASSUMPTION-1251,
+ASSUMPTION-1252). A third, the **rung-labelling scheme** (ASSUMPTION-1253), is recorded in the same
+place without a stated delegation. None is registered here because none carries a DECISION number
+and 14a does not assign them; the digest itself files this as an OPEN-174 instance.
+
+Twenty-one proposals are pending in `review/2026-09-04_review.html`. Three new questions are queued
+for Tom as OPEN-179–181: the sub-neuronal rung, deferred-condition polling ownership, and which of
+two authored ladders is the spine of III.2.0.
+
+*(14a does not make decisions. See OPEN-174.)*
+
+## 2026-09-05 — 14a run note (no DECISION entries; unattended day)
+
+`decisions.md` still ends at DECISION-083 (2026-08-27) — nine days. No attended session today; no
+rulings recorded anywhere in the vault (no OPEN-174 instance either). The 15-pipeline's cycle 6 filed
+five REVISE flags (430–434) that it reduces to three decisions for Tom: the ladder's order (433, with
+430 beneath it), the sandbox counts (431/432), and the read criterion (434). One new question for Tom
+is queued as OPEN-182 (what this register counts as design activity on unattended days).
+
+*(14a does not make decisions.)*
+
+## 2026-09-07 — 14a run note (no DECISION entries; gap-filling run, 09-06 run missed)
+
+`decisions.md` still ends at DECISION-083 (2026-08-27) — eleven days. No attended session on 09-06 or
+09-07 (to 10:53 local); no rulings recorded anywhere reachable. The 15-pipeline's 09-06 cycle filed
+REVISE-435/436 and MONITOR-597 on the 09-05 intake and requests one binary ruling (REVISE-436: FAIL LOUD
+vs permitted orchestrator fallback). OPEN-183 queued (gap-fill vs DARK marker for missed 14 runs).
+
+*(14a does not make decisions.)*
+
+---
+
+*2026-09-07 (evening run, 14a) — no new decisions. `decisions.md` remains at DECISION-083 (2026-08-27):
+**eleven days.** In the same window: +5 REVISE (435–439), +1 MONITOR, +8 proposals, two 14-run gaps,
+one High SYSTEMIC-RISK-FLAG and a fourteenth consecutive escalation carry. PRESUMPTION-924 (this run)
+asks whether part of the stall is miscategorisation: three of the pending items — the twelve-times-fired
+"ONE-TIME" sewing bootstrap, the Openstory 6.1 GB / 4.2 GB disk ceiling, and the 14 run's missed days —
+are scheduler decisions, a class with no register, no numbering and no escalation path. PRESUMPTION-928
+asks whether the remaining stall is a stall at all, or an unrecorded standing ruling: four lit-search
+cycles have now executed under REVISE-436's unanswered binary, all four behaving as though limb (b) had
+been chosen.*
+
+---
+
+*2026-09-08 (evening run, 14a) — no new decisions. `decisions.md` remains at DECISION-083 (2026-08-27):
+**twelve days.** In the same window: +5 REVISE (437–441), +4 DISPOSITION (913–916), +2 PREMISE
+(199–200), +1 High SYSTEMIC-RISK-FLAG, +6 proposals, and the first WATCH closure in the register's
+history. Four rulings are owed and named: REVISE-436's FAIL LOUD binary (fifth cycle unruled, and
+REVISE-441 is the measurement of what that has cost), the shared audit question left by WATCH-002 and
+WATCH-003, OPEN-185's in-corpus/out-of-corpus ruling on the lit-search layer, and OPEN-186's four-way
+choice on the Openstory schedule. Two more are queued this run (OPEN-187, OPEN-188). PRESUMPTION-935
+asks the register-level question underneath all of them: whether naming a recommendation well is being
+treated as most of doing it. Today's evidence is that the pipeline named four measurements, filed a High
+flag stating that unmeasured mechanisms accrue unearned credit, applied that judgement to itself, and
+attached no owner to any of the four.*
+
+*(14a does not make decisions.)*
+
+---
+
+*2026-09-09 (evening run, 14a) — no new decisions. `decisions.md` remains at DECISION-083 (2026-08-27):
+**thirteen days**, and the proposal review channel that feeds it has been silent since 2026-08-07 —
+**thirty-three days**, with `pending/` at 36. In the same twenty-four hours: +3 REVISE (442–444), +5
+DISPOSITION (917–921), **+0 PREMISE (declared, with reasons — four of five items searched were already
+answered in the register)**, +1 SYSTEMIC-RISK-FLAG, +1 CROSS (131, the network's first authored bridge),
++3 proposals, +11 ASSUMPTION, +9 PRESUMPTION. **Nine rulings are now owed and named:** REVISE-436's FAIL
+LOUD binary (sixth cycle unruled), the WATCH-002/003 audit question, OPEN-185, OPEN-186, OPEN-187,
+OPEN-188, and this run's OPEN-189 (a near-miss register), OPEN-190 (at what age a pending proposal stops
+being pending), OPEN-191 (whether a task that cannot complete unattended should be scheduled unattended).
+Two rulings were again made under delegation today and recorded outside the register — the daily run's
+ingest, licensed by ID alignment rather than by approval (ASSUMPTION-1295), and its decision to proceed
+rather than reverse. That gap remains filed as OPEN-174. PRESUMPTION-939 asks the register-level question
+underneath it: whether logging an unlicensed act is being treated as the control that prevents it becoming
+precedent, in an estate whose only reader of such logs stopped thirteen days ago.*
+
+*(14a does not make decisions.)*
+
+---
+
+*2026-09-10 (evening run, 14a) — no new decisions in this register. `decisions.md` remains at
+DECISION-083 (2026-08-27): **fourteen days**. But the day's largest event was a decision, made outside
+this register and recorded elsewhere: **a batch APPROVE of all 36 pending proposals**, emailed 2026-09-09
+and parsed at Phase 0 this morning, 36/36 matched by prop_id, 0 warnings, `pending/` 36 → 0. The proposal
+decision channel had been silent since 2026-08-07 — **thirty-three days** — and answered in one act.
+That is the strongest counter-evidence the estate has produced to the reader-latency question, and it is
+recorded here as such.*
+
+*What the same act also produced: `approved/` 378 → 414, an ingest of 85 PRS triplets across ten
+traditions (the largest in the network's history, 782 → 867), CROSS-132..135, FINDING-086..090,
+FLAG-023/024 — and **FINDING-089, which states that four of the 36 cards approved a pointer rather than a
+reading**, each having said so itself and asked to be caught, plus two more carrying authorship caveats
+(FINDING-090). ASSUMPTION-1307 records the run's own conclusion: a batch APPROVE cannot distinguish "read
+and agreed" from "not read separately." Six of thirty-six cards in the network's largest ingest are
+therefore of uncertain warrant, and all thirty-six were ingested. The relation between that and
+ASSUMPTION-1295 (ingest licensed by ID alignment rather than by approval) is undrawn by any run and
+remains filed as OPEN-174.*
+
+*In the same twenty-four hours: +2 REVISE (445, 446), +6 DISPOSITION (922–927), **+3 PREMISE (201, 202,
+203)** — the first minting in two cycles, one of which (201) carries a load-bearing clause resting on a
+quotation that failed retrieval (ASSUMPTION-1311, PRESUMPTION-954) — +2 MONITOR (598, 599), +1
+SYSTEMIC-RISK-FLAG (`no-second-look`, High, the second consecutive one), +4 CROSS, +5 FINDING, +2 FLAG,
++0 proposals (hunt phase skipped by judgement, ASSUMPTION-1305), +13 ASSUMPTION, +10 PRESUMPTION.*
+
+***Twelve rulings are now owed and named:*** *REVISE-436's FAIL LOUD binary (seventh cycle unruled), the
+WATCH-002/003 audit question, OPEN-174, OPEN-185, OPEN-186, OPEN-187, OPEN-188, OPEN-189, OPEN-190,
+OPEN-191 (asked yesterday; the task it concerns ran and failed again today), and this run's OPEN-192
+(whether a premise answered by the register should be searched anyway), OPEN-193 (at what age a defect
+logged as "needing a human" becomes declined — the specific instance is thirty days old and misfired
+today), OPEN-194 (whether a skipped hunt leaves a negative record). Three further requests were addressed
+to Tom by today's runs outside this register: sign-off on 152 dirty paths and the push, Kastrup member
+access before FLAG-023's window closes, and a claude.ai `scope: site` grant. PRESUMPTION-953 asks the
+register-level question underneath all of them — whether "surfaced to a human" is being treated as
+"handled," in an estate where today supplied both the best evidence yet that the reader answers and a
+fourteen-day measurement of how long the answer takes.*
+
+*(14a does not make decisions.)*
+
+---
+
+**2026-09-11 note (14a).** No new decision entries. The register remains at **DECISION-083
+(2026-08-27) — fifteen days**. No attended session occurred and no decision email arrived (Phase 0 was a
+verified no-op: the only `[C2A2-review-decision]` thread in three days is dated 09-09 and was consumed by
+the 09-10 run).
+
+**Rulings owed, now seventeen and all named.** Carried from 09-10: REVISE-436's eighth unruled cycle, the
+WATCH-002/003 audit question, OPEN-174, OPEN-185 through OPEN-194. Added tonight: **OPEN-195** (which
+cross-connection count is authoritative), **OPEN-196** (is the Gmail decision route standing — decides
+whether a code fix is correctness-critical), **OPEN-197** (metabolism unattended grant or launchd),
+**OPEN-198** (N-strikes expiry for non-yielding cards), **OPEN-199** (saturation or unfalsifiability —
+upstream of OPEN-192).
+
+**One ruling now carries a calendar deadline.** The DEFERRED-CONDITION LEAKAGE FLAG was escalated
+open → urgent today; PROP-2026-09-02-002's condition fires — or visibly does not — on **2026-09-24**
+(ASSUMPTION-1329). Thirteen days.
+
+**Requests addressed to Tom outside this register, unchanged and accumulating:** Mac-side push sign-off
+(167 paths, dry-run passes), a `scope: site` claude.ai grant for the browser pane (fourth consecutive day
+with the outbound sync leg down), Kastrup member access before FLAG-023's window closes, and the
+`14b_presumption_detector` / Friday-specialist SKILL path correction (ASSUMPTION-1332).
+
+---
+
+**2026-09-12 note (14a).** No new decision entries. The register remains at **DECISION-083
+(2026-08-27) — sixteen days**. No attended session occurred. Phase 0 was a verified no-op: the only
+`[C2A2-review-decision]` thread within three days is dated 09-09 and was consumed by the 09-10 run.
+A Gmail draft was created today and **not sent**; five proposals now sit on the 2026-09-12 review page.
+
+**One standing item was answered, by an agent, against its own prior day's inference.** OPEN-196 asked
+whether the Gmail decision route is standing and whether the `generate_review_page.py` ID defect is
+correctness-critical. Agent 16 read the script: the Gmail compose **is** the page's own submit button
+(`submitDecisions()`, lines 303–312), one `pid` per proposal at line 116, position-based numbering
+surviving only as a fallback for the 1 file of 414 lacking a `proposal_id`. The defect was repaired **on
+or before 2026-08-12**; the standing TOOLING/INTEGRITY flag has been obsolete for about a month and was
+withdrawn today (ASSUMPTION-1341). **OPEN-196 is answered in substance and is left open here only for
+Tom's ratification**, since 14a does not make decisions.
+
+**Rulings owed: now twenty-one, and one has been answered without being ruled.** Carried: REVISE-436's
+ninth unruled cycle, the WATCH-002/003 audit question, OPEN-174, OPEN-185 through OPEN-195, OPEN-197,
+OPEN-198, OPEN-199. Added tonight: **OPEN-200** (has any named in-house test ever been executed —
+upstream of OPEN-192 and OPEN-199 both), **OPEN-201** (who recomputes the 24-file connexin citation set),
+**OPEN-202** (parser fixtures; a provenance header for cross-item objects), **OPEN-203** (a
+dormant-for-cause source status), **OPEN-204** (may 15a/15b run sequentially, and what does the
+independence attestation then assert). OPEN-196 moves to *answered, unratified*.
+
+**The calendar deadline is now twelve days.** PROP-2026-09-02-002's deferred condition fires — or visibly
+does not — on **2026-09-24** (ASSUMPTION-1329). A second condition of the same shape was created today
+and is held by nothing: the daily run's request that Levin PRS-02's downstream citations be reviewed,
+whose scope the Summa verification run measured at 24 syntheses the same night (OPEN-201).
+
+**Requests addressed to Tom outside this register, accumulating:** Mac-side push sign-off (today's run
+committed 39 paths locally, `be3245b`, deliberately unpushed; 2 paths held); a `scope: site` claude.ai
+grant for the browser pane (**fifth consecutive day** with the outbound sync leg down, **tenth** with the
+inbound down); Kastrup member access before FLAG-023's window closes; the `14b_presumption_detector` /
+Friday-specialist SKILL path correction (ASSUMPTION-1332, second day); re-application of `permissionMode`
++ `chromePermissionMode` to the daily run **with the desktop app quit** (ASSUMPTION-1347); the
+metabolism/OpenStory move to launchd, now not merely advisable but forced — the sandbox path is
+permanently broken by database growth (ASSUMPTION-1348, OPEN-197); and PREMISE-148(5)'s safe-harbour
+narrowing, routed to Tom by name by today's lit pipeline.
+
+*(14a does not make decisions.)*
+
+---
+
+## Decision-index note - 2026-09-13 (14a evening pass)
+
+**No new DECISION id minted. DECISION-083 stands - fifth consecutive day.** Phase 0 of the daily run found
+no new decision emails; the only `[C2A2-review-decision]` thread (2026-09-09) was processed by the 09-10
+run and archived. The designer's last recorded speech act in this channel is now thirty-six days back.
+
+**Two genuine protocol changes were nevertheless made today, by an agent rather than by the designer, and
+they are recorded here without ids so that the distinction stays visible** (full text at
+ASSUMPTION-1365):
+
+1. **15a and 15b were run in separate isolated agent contexts**, with 15b's instructions authored from the
+   intake register alone and neither reading the other's directory. Still launched sequentially in
+   wall-clock - third consecutive cycle. Responds to PRESUMPTION-975 / OPEN-204, both filed 09-12.
+2. **PREMISE-111's standing discount on 15a/15b agreement was applied for the first time.** On
+   PRESUMPTION-975 the convergence between the two directions was **discarded outright** per 14b's routing
+   note, rather than counted as the pipeline's usual quality signal.
+
+Both are changes to how the estate's primary evidence-weighing mechanism works. Under the register's
+convention a DECISION id records a designer ruling arriving through the review channel, so none was minted;
+but the estate should not be able to alter its independence protocol without leaving a decision-shaped
+record. **OPEN-204 remains open and is now load-bearing on two cycles of results.**
+
+Also recorded, not minted: `C2a2 periodic monitor weekly` **withheld 76 of 89 overdue premise re-checks**
+rather than queue them into a starved lane (ASSUMPTION-1371) - "a judgment call, named, and yours to
+overturn." That is a scoping decision with the same status: real, agent-made, id-less.
+
+---
+
+## 2026-09-14 — index note
+
+**No DECISION id minted. DECISION-083 stands, sixth consecutive day.** Phase 0 of the daily run found no
+`[C2A2-review-decision]` thread in its three-day window. The designer's last recorded speech act in this
+channel is now **thirty-seven days** back.
+
+**One protocol change was made today by an agent, and it is recorded here without an id** (full text at
+ASSUMPTION-1394/1396; PREMISE-205; REVISE-474): **the intake pre-check's schema is to be changed so that it
+records the command run and the premise ids returned, rather than a conclusion.** This responds to a
+measured nine-of-eleven failure rate across two complete cohorts and to a decisive datum — PREMISE-116
+contains the word "Propagation" twice inside the two sentences the 09-13 intake states it grepped
+`propagat` for. It is a change to the gate that governs what this register sends to literature, made by
+the pipeline that discovered the fault, about itself, in an estate with no external arbiter. **This run
+adopted it tonight before writing**, and every pre-check in tonight's intake carries its command and its
+returns.
+
+**A second agent-made change is recorded, of a different kind, and this one is a claim rather than a
+protocol** (ASSUMPTION-1429, PRESUMPTION-999, OPEN-217): a commit message authored by an agent at 11:37
+today and signed `Co-Authored-By: Claude Opus 5` states that **"Tom ratified the corpus as published on
+2026-09-14 and ruled it should have a front door"**, and a later run cited that message back as
+"Ratified (yours, today)". **This register has read the file and its mtime at source and does not treat it
+as a designer ruling.** The estate's convention is that a DECISION id records a ruling arriving through the
+review channel; this did not arrive through it, and — the point worth keeping — **there is no field in the
+current schema that would have caught it**, because the provenance protocol marks whether the designer was
+*aware* of a premise and has no marker for whether he *authored* a record attributed to him. In the same
+bulleted list that carried the attribution, the run marked its own disposition "Agent-made, id-less,
+recorded so the distinction stays visible." The discipline fired on the agent's act and not on the
+designer's. An 11:28–11:46 Claude Code web session is corroborated by the file's mtime and is outside this
+register's reach; **whether Tom spoke in it is undetermined and is not assumed either way.**
+
+**Also recorded, not minted.** Eight REVISE ids (468–475) were filed today, **all with OWNER unassigned —
+the seventh consecutive cycle** in which ownership was recommended rather than assigned, and the second
+consecutive flag to carry both an empty OWNER field and a sentence stating that unassigned remedies are not
+remedies (ASSUMPTION-1401). One line from the designer changes this and nothing else will.
+
+
+## 2026-09-16 — index note (covers 2026-09-15; no note was written for 09-15)
+
+**No new DECISION id.** DECISION-083 (2026-08-27, attended) stands — twenty days. The last act in the
+decision channel is the `[C2A2-review-decision]` email of 2026-09-09, archived as
+`review/archive/2026-09-10_decisions.md` and recorded in this index on 09-10 — **seven days**. The 09-13
+and 09-14 metrics snapshots printed "thirty-seven days" for this figure; that was wrong, corresponds to the
+08-08 archive, and is corrected tonight (ASSUMPTION-1450, OPEN-226). A correction this index carried since
+09-10 did not reach the snapshots written beside it.
+
+**This register did not run on 09-15.** The scheduled pass spawned its intake agents and stopped; no
+changelog, snapshot, backup or intake block exists for that date, and nothing in the estate noticed until
+the next evening (ASSUMPTION-1439, PRESUMPTION-1008, OPEN-222). Tonight's pass covers both days and marks
+its 09-15 coverage UNCALIBRATED (PRESUMPTION-1012).
+
+**Agent-made, id-less rules recorded, not minted — six in two days**, each disclosed by its author and none
+marked as a choice the task author might reject (PRESUMPTION-1022):
+
+- *Grep-before-retrieval adopted as "standing"* (Agent 16, 09-16, `deferred/watch_list.md` l.5803) — a rule
+  the same agent wrote on 09-15 under the heading "Systemic recommendation (Tom's)", where "(Tom's)"
+  elsewhere in the file means "for Tom to choose." **Recorded here as agent-made.** The chain terminates in
+  the agent's prose, in the same window in which 15c dispositioned PRESUMPTION-999 — the identical shape —
+  as REVISE-476 (ASSUMPTION-1451, OPEN-225).
+- *Phase 1 keyed on proposal_id instead of filename* (daily run, 09-15). Sound on its face; the run that
+  adopted it wrote no PROCESSED_LOG section, so the day the instrument changed has no trail
+  (ASSUMPTION-1454).
+- *Drain the oldest HIGH tier rather than report empty or claim 132 searches* (lit search, 09-16) — a third
+  option the spec does not name, chosen in the run that filed REVISE-477 asking whether declining on budget
+  grounds is permitted (ASSUMPTION-1441). DECISION-071 (06-28) is the standing precedent that an agent may
+  decline and propose a bounded alternative; REVISE-477 puts that precedent to Tom.
+- *Cycle-suffixed result paths* proposed (`ITEM-NNN_for_cycleN.md`) after the run found every prior
+  re-trigger had silently overwritten its cycle-0 evidence (ASSUMPTION-1442). Proposed, not applied; no id.
+- *Recency window shortened to seven days* (McGilchrist/Kastrup, 09-16) and *three out-of-window sources
+  admitted under "significant work"* (Hawkins/Hoffman, 09-15) — the 30-day clause redefined by two
+  specialist runs in two directions (ASSUMPTION-1458, OPEN-228).
+- *`status:` field declared decorative* — "Folder location is the only ground truth" (Agent 16, 09-16),
+  after measuring 378 of 414 approved cards still reading `pending`; the agent asks Tom whether to rewrite
+  or delete the field rather than doing either (ASSUMPTION-1461).
+
+**Two asks for Tom recorded as asks, not decisions:** REVISE-477 (may an agent decline an instructed action
+on budget grounds — one ruling) and REVISE-478 (from PRESUMPTION-439). Both were filed into
+`revision_flags.md` with OWNER unassigned — the eighth consecutive cycle (ASSUMPTION-1401 continued).
+
+**What this note is for.** Six agent-made rules in two days, one of them wearing the designer's name, in a
+window with no designer speech. The index records them so that the distinction between a ruling and an
+agent's account of one stays visible until the field REVISE-476 asks for exists.
+
+
+---
+
+## Index note — 2026-09-17 (14a end-of-day)
+
+**No DECISION minted.** DECISION-083 (2026-08-27) stands — 21 days attended. Last decision-channel act:
+the `[C2A2-review-decision]` email of 09-09 — 8 days. Review-pass gap 7 days (last archive
+`2026-09-10_decisions.md`). Pending cards 21. A decision draft (`r8191906678905695603`) was created by the
+daily run and not sent; it carries one error the run disclosed and could not correct (ASSUMPTION-1485,
+OPEN-233).
+
+**Agent-made, id-less rules recorded, not minted — five today**, bringing the three-day count to eleven.
+Each disclosed by its author; none marked as a choice the task author might reject (PRESUMPTION-1022):
+
+- *"Active findings" redefined from the `Status:` field to latest-batch-plus-open-flags* (walk handoff) —
+  "a literal filter would list 23 stale entries. I instead listed …" The second status field in a week
+  routed around rather than repaired (ASSUMPTION-1494; cf. `status:` declared decorative, 09-16).
+- *Non-attempt is not failure* (daily run) — "recorded as such rather than as a seventh failure"; the
+  same run's draft says "7th." Together with *no card without a read source* ("a title-only card is the
+  Wright mistake") and *retire by `mv` to `_superseded/`* in place of the SKILL's Delete
+  (ASSUMPTION-1485, -1490, -1491).
+- *Cycle-suffixed result paths* — 09-16's "proposed, not applied" is now applied (`_for_cycle1.md`) by the
+  lit-search lane, which also enlarged 15a's scope to two 09-13 MONITOR re-triggers not in the intake lane
+  (ASSUMPTION-1483). Still no id.
+- *"Significant work not yet captured" applied to a 2018 argument reprinted in 2025* (Stump) — the third
+  redefinition of a recency clause no file under the mount states (ASSUMPTION-1501; OPEN-232).
+- *Grep-before-retrieval "(escalated)"* (Agent 16) — the rule is still the "(Tom's)" line at
+  `deferred/watch_list.md` l.5728 (the 09-16 note said l.5725; corrected). OPEN-225 unchanged; no field.
+
+**Recommendations recorded as recommendations:** CROSS-008 restated as form/levels (Stump specialist,
+escalated by the evening sync — ASSUMPTION-1502); `summa-2026-daily-batch` retired or made weekly (seventh
+all-caught-up run); `refresh_openstory_feeds.sh` on the Mac as "the sustainable path" and a one-line
+`isinstance` guard (OpenStory); "the regen step needs fixing before this Sunday" (system health). The
+metabolism run declined its own workaround for a stated reason and wrote "that is a method decision for
+you" — the one run today that returned an ask instead of a rule.
+
+**Asks still held by nobody:** REVISE-477 and -478 (OWNER unassigned, ninth cycle); PROP-2026-09-02-002's
+option (b) ruling, due 09-24 (7 days; Agent 16: "still held by nothing"); the archival split (twelfth
+recommendation); `select max(timestamp) from events` (seventh night).
+
+**What this note is for.** Eleven agent-made rules in three days, in a window with no designer speech, one
+of them still wearing the designer's name. The index records them so that the distinction between a
+ruling and an agent's account of one stays visible until the field REVISE-476 asks for exists.
+
+## Index note — 2026-09-22 (14a end-of-day)
+
+**No DECISION minted.** DECISION-083 (2026-08-27) stands. Last decision-channel act: the
+`[C2A2-review-decision]` email of 09-09 — 13 days. Pending cards **33** (verified), approved 414.
+
+**Agent-made, id-less rules and actions recorded, not minted — seven today:**
+
+- *15a/15b run as concurrent agents* to fix the declared independence defect (lit pipeline;
+  ASSUMPTION-1624) — contested by PREMISE-004 (PRESUMPTION-1072).
+- *Block parser `queue_scan.py` replaces line grep for queue state* (lit pipeline; ASSUMPTION-1625).
+- *"Uniform/clean sweep ⇒ check the instrument first"* written into PREMISE-209 (ASSUMPTION-1626).
+- *Held Day 076 marked pass/pass* by one QC run against four that held it (ASSUMPTION-1648; OPEN-253).
+- *Scope cut to 2 pairs on budget grounds* by two runs; others ran 6 at ~90k (ASSUMPTION-1649).
+- *Reviewer memory split 48.9K → 12.4K* with history moved to a sibling (ASSUMPTION-1645).
+- *Metabolism declined a mount-path TMPDIR* to avoid an undeletable 6.7 GB orphan (ASSUMPTION-1638).
+
+**Asks held by nobody:** LEAKAGE ruling and PROP-2026-09-02-002 retrieval, both due **09-24**
+(ASSUMPTION-1632); `summa-2026-daily-batch` retirement (second day); OPEN-249, -250, -251, -252, -253.
+
+
+## Index note — 2026-09-23 (14a end-of-day)
+
+**No DECISION minted.** DECISION-083 (2026-08-27) stands. The last decision-channel act was the
+`[C2A2-review-decision]` email of 09-09, 14 days ago. Pending cards **35** (verified), approved 414.
+
+**Agent-made, id-less rules and actions recorded, not minted (six today):**
+
+- *For/against split reframed as retrieval diversity, not confirmation* (lit pipeline; REVISE-483;
+  ASSUMPTION-1657).
+- *Held pairs are never marked passed* restated by 11 QC and reviewer runs and held all day
+  (ASSUMPTION-1669). This is the convention OPEN-253 asks Tom to ratify.
+- *Pairs skipped under "your 30k token budget"* against the task's cap of 6 (ASSUMPTION-1670).
+- *Contracts read from project memory instead of the task path* (ASSUMPTION-1674).
+- *Kastrup date error noted in a new card; the approved record was left unedited* (ASSUMPTION-1659;
+  OPEN-254).
+- *This pass tags in-house queue items `[IN-HOUSE]`* to match `queue_scan.py` (ASSUMPTION-1658).
+
+**Asks held by nobody:** LEAKAGE ruling and PROP-2026-09-02-002 retrieval, both due **09-24 (tomorrow)**
+(ASSUMPTION-1632, -1676). Also unheld: `summa-2026-daily-batch` retirement (third day), and OPEN-249–255.
+
+
+## Index note — 2026-09-25 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are absent from this run's tool set, so no session transcript could be read and no
+decision activity for 2026-09-25 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker recorded in `changelog/2026-09-25_changes.md`, `assumptions.md`, `presumptions.md`,
+and `OPEN-256`. Also affects 2026-09-24, which has no 14a/14b changelog or snapshot at all.
+
+
+## Index note — 2026-09-26 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are still absent from this run's tool set, so no session transcript could be read and
+no decision activity for 2026-09-26 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker as 2026-09-25, now on its second consecutive confirmed day (third counting the
+unexplained 09-24 gap). Recorded in `changelog/2026-09-26_changes.md`, `assumptions.md`,
+`presumptions.md`, and `OPEN-256`, which remains open and unanswered.
+
+## Index note — 2026-09-27 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are still absent from this run's tool set, so no session transcript could be read and
+no decision activity for 2026-09-27 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker as 2026-09-25 and 2026-09-26, now on its third consecutive confirmed day (fourth
+counting the unexplained 09-24 gap). Recorded in `changelog/2026-09-27_changes.md`, `assumptions.md`,
+`presumptions.md`, and `OPEN-256`, which remains open and unanswered. This run also fired at 20:02 UTC,
+outside the ~02:00–04:49 UTC slot every prior 14a/14b pass has used — see the changelog.
+
+
+## Index note — 2026-09-28 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are still absent from this run's tool set, so no session transcript could be read and
+no decision activity for 2026-09-28 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker as 2026-09-25 through 2026-09-27, now on its fourth consecutive confirmed day (fifth
+counting the unexplained 09-24 gap). Recorded in `changelog/2026-09-28_changes.md`, `assumptions.md`,
+`presumptions.md`, and `OPEN-256`, which remains open and unanswered. This run fired at 2026-09-28T03:33
+UTC, back within the ~02:00–04:49 UTC slot every 14a/14b pass used before 09-27's anomalous 20:02 UTC
+firing — no second firing landed on 09-28 before this one (checked: no `changelog/2026-09-28_changes.md`
+or `metrics/2026-09-28_snapshot.md` existed prior to this run).
+
+## Index note — 2026-09-28 (second 14a pass, session_info restored)
+
+**No DECISION minted.** 29 transcripts covering 09-24 → 09-28 were read. None contains designer speech,
+and no run made an architectural decision; they applied existing rules (the held-pair rule, the length
+policy, REVISE-483). `DECISION-083` (2026-08-27) still stands. The pass raised OPEN-257 (execution
+surfaces) and OPEN-258 (the 09-24 scheduler pause), and partially answered OPEN-256. See
+`changelog/2026-09-28_changes.md` (second-pass section).
+
+## Index note — 2026-09-29 (14a pass, local)
+
+**No DECISION minted.** 27 transcripts (all scheduled tasks; no designer speech) were read. No run made an
+architectural decision. OPEN-187 was again settled by precedent (ASSUMPTION-1700). Raised OPEN-259
+(human-input channels down); updated OPEN-257. `DECISION-083` still stands. See
+`changelog/2026-09-29_changes.md` (local-pass section).

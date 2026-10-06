@@ -411,7 +411,287 @@ PRS-44:
   Confidence: High
   Evidence: Abstract and §2, verbatim: the FEP "has certain advantages over using random dynamical systems explicitly, notably, by being more tractable and offering a parsimonious explanation of why the joint system evolves in the way that it does, based on the properties of the coupling between system components"; and it "enables us to construct nested models that respect the known relations among subsystems."
 
-*Total PRS triplets: 44*
+
+PRS-45:
+  Problem: Existing scaling laws are bounded by model size and training-set size, so an embodied agent cannot improve on situations that were never in its training distribution.
+  Resource: A test-time scaling law grounded in active inference, in which the agent's objective is survival and task objectives are subsumed under it.
+  Solution: Policy is updated at test time as soft Bayesian inference — beliefs about the policy revised using error-reducing reasoning as likelihood — so performance scales with continuous real-world experience rather than with pre-training.
+  Date Added: 2026-09-02
+  Source: Active inference as a test-time scaling law; PROP-2026-08-16-006
+  Confidence: High
+  Evidence: "Unlike existing scaling laws constrained by model size and training data, the derived solution scales with the continuous real-world experience of a physical AI agent."
+
+PRS-46:
+  Problem: Test-time policy inference of this form is analytically intractable.
+  Resource: A variational inference solution that minimises free-energy bounds, extended to reinforce test-time-resolved instances back into both the policy and the world model.
+  Solution: A tractable procedure that also lets the agent learn beyond training rather than merely adapt within it.
+  Date Added: 2026-09-02
+  Source: Active inference as a test-time scaling law; PROP-2026-08-16-006
+  Confidence: High
+  Evidence: Stated as the paper's technical contribution; the extension writes resolved instances into the world model, not only the policy.
+
+PRS-47:
+  Problem: Whether an active-inference test-time update actually beats standard reinforcement-learning approaches on unforeseen scenarios.
+  Resource: An autonomous-driving simulation benchmarked against model-free Q-learning and model-based Bayesian reinforcement learning.
+  Solution: Reported robust generalisation to unforeseen scenarios with inference efficiency improved by over 36%.
+  Date Added: 2026-09-02
+  Source: Active inference as a test-time scaling law; PROP-2026-08-16-006
+  Confidence: Medium
+  Evidence: The 36% figure and the two baselines are named in the abstract, but a single simulated driving task is thin ground for a claimed scaling *law*; the scaling curve itself needs checking in the full text.
+
+PRS-48:
+  Problem: Whether the proposed mechanism has any biological warrant or is only an engineering convenience.
+  Resource: A mapping of the posterior-policy update onto brain circuitry.
+  Solution: The authors claim the update "recovers the scaling mechanism that engages the brain's basal ganglia and prefrontal cortex at test time."
+  Date Added: 2026-09-02
+  Source: Active inference as a test-time scaling law; PROP-2026-08-16-006
+  Confidence: Speculative
+  Evidence: The correspondence is asserted at the level of named structures with no cited empirical measurement in the abstract; treat as an interpretive gloss until the full text is read.
+
+PRS-49:
+  Problem: Confirmation bias is classified as a failure of rationality, yet it is stable, universal, and cheap — which a pure-error account of cognition cannot explain.
+  Resource: A formulation of binary hypothesis testing on the space of square-root probabilities, where candidate evidence is represented as matrices and the optimal choice is sought over that matrix space ("active quantum inference").
+  Solution: The error-minimising choice of evidence *is* confirmation-biased, so the bias is a consequence of optimality rather than a departure from it.
+  Date Added: 2026-09-02
+  Source: The adaptive nature of confirmation bias; PROP-2026-08-16-005
+  Confidence: High
+  Evidence: The paper states that the optimal evidence choice "leads to a confirmation bias, thus revealing a surprising aspect of rationality that encompasses confirmation bias."
+
+PRS-50:
+  Problem: Why would an organism under real memory and sampling constraints adopt this strategy rather than an unbiased one?
+  Resource: Analysis of sequential evidence sampling under the optimal rule.
+  Solution: Two named evolutionary advantages — the decision maker needs only the smallest memory capacity, and error probability falls exponentially with sample size.
+  Date Added: 2026-09-02
+  Source: The adaptive nature of confirmation bias; PROP-2026-08-16-005
+  Confidence: High
+  Evidence: Both advantages are stated as results of the sequential-sampling analysis, (a) minimal memory and (b) exponential reduction of error probability in sample size.
+
+PRS-51:
+  Problem: Whether the free-energy/active-inference account of evidence seeking agrees with a straight decision-theoretic account, or merely re-describes it.
+  Resource: A parallel derivation in which the agent seeks the evidence carrying maximum information.
+  Solution: The two derivations converge on the same optimal evidence, giving an implementable protocol for active inference over a matrix space.
+  Date Added: 2026-09-02
+  Source: The adaptive nature of confirmation bias; PROP-2026-08-16-005
+  Confidence: Medium
+  Evidence: "The resulting optimal evidence is shown to agree with the one obtained by minimising error probability." Convergence is asserted in the abstract; the strength of the agreement (exact vs. asymptotic, and under which priors) needs the full text to assess.
+
+PRS-52:
+  Problem: Discrete active-inference models do not scale to rich spatial and temporal domains.
+  Resource: Renormalising generative models — a hierarchy that composes discrete generative models across scales, coarse-graining lower-level states and paths into higher-level causes.
+  Solution: An explicit account of how the hierarchy is built, how beliefs and actions update within it, and how information passes between levels.
+  Date Added: 2026-09-02
+  Source: Renormalising generative models; PROP-2026-08-16-007
+  Confidence: High
+  Evidence: The abstract names all three as the paper's expository contributions; "renormalising" is used in its physics sense of coarse-graining across scales.
+
+PRS-53:
+  Problem: The framework was effectively unreproducible — compact published mathematics plus reference implementations embedded in specialised software environments left algorithmic details implicit.
+  Resource: An open, verified implementation released alongside a derivation-oriented exposition.
+  Solution: Lowered barrier to entry; the framework becomes transparent, auditable and reproducible, and can be quantitatively evaluated on machine-learning benchmarks by third parties.
+  Date Added: 2026-09-02
+  Source: Renormalising generative models; PROP-2026-08-16-007
+  Confidence: High
+  Evidence: Stated as the explicit motivation and contribution of the paper.
+
+PRS-54:
+  Problem: Where the published equations and the working code disagree, which is authoritative?
+  Resource: Explicit documentation of each divergence between published equations and implementation, with its modelling consequences.
+  Solution: The discrepancies become a documented modelling choice rather than a hidden one.
+  Date Added: 2026-09-02
+  Source: Renormalising generative models; PROP-2026-08-16-007
+  Confidence: Medium
+  Evidence: "Where the published equations and implementation differ in emphasis, we make those choices explicit and explain their modelling consequences." How many such divergences there are, and how substantive, needs the full text.
+
+PRS-55:
+  Problem: AI research lacks a formal definition of intelligence that applies equally to natural and synthetic agents, so "intelligence" in AI is operationalized as benchmark performance rather than as a principled quantity.
+  Resource: Self-evidencing — intelligence as the capacity to accumulate evidence for a generative model of one's sensed world, inherited from the physics of self-organization.
+  Solution: A substrate-neutral definition of intelligence that reads active inference as a physics of intelligence, applying identically to biological and artificial agents.
+  Date Added: 2026-09-02
+  Source: Designing ecosystems of intelligence; PROP-2026-08-17-004
+  Confidence: High
+  Evidence: The paper's explicit framing of active inference as a formulation of adaptive behaviour that can be read as a physics of intelligence, with intelligence understood as self-evidencing.
+
+PRS-56:
+  Problem: Collective intelligence is typically described rather than derived — there is no principled account of what makes a group of agents a cognitive unit rather than a crowd.
+  Resource: Belief sharing in ensembles, where overlapping regions of each agent's generative model constitute common ground or a shared frame of reference.
+  Solution: A formal account of collective intelligence grounded in shared narratives and goals, with Bayesian mechanics giving explicit dynamics for the beliefs of agents and of groups of agents.
+  Date Added: 2026-09-02
+  Source: Designing ecosystems of intelligence; PROP-2026-08-17-004
+  Confidence: High
+  Evidence: The paper's account of belief sharing among agents whose generative models provide common ground, presented as yielding a formal treatment of collective intelligence resting on shared narratives and goals.
+
+PRS-57:
+  Problem: Multi-scale systems — agents within groups within institutions — are usually modelled with different formalisms at each level, so cross-scale claims cannot be checked.
+  Resource: Bayesian mechanics for sparsely coupled systems that self-organize over several scales.
+  Solution: One formalism specifies the dynamics at every scale, making the engineering of multi-scale intelligence ecosystems a well-posed design problem.
+  Date Added: 2026-09-02
+  Source: Designing ecosystems of intelligence; PROP-2026-08-17-004
+  Confidence: Medium
+  Evidence: The claim that Bayesian mechanics is uniquely suited to engineering ecosystems of intelligence by allowing specification of the dynamics of sparsely coupled systems self-organizing over several scales; presented as a research agenda rather than a completed derivation.
+
+PRS-58:
+  Problem: Predictive coding requires that prediction errors be weighted by precision, but the neural machinery that sets that weighting ahead of the incoming stimulus has not been identified in humans.
+  Resource: Direct intracranial recordings from human hippocampus and visual cortex during exposure to predictable versus unpredictable visual stimulus streams, with ripple activity measured in the pre-stimulus window.
+  Solution: Identifies pre-stimulus hippocampal ripple activity — increased in both frequency and duration under uncertainty — as a mechanism that tunes cortical responsiveness in advance of the stimulus.
+  Date Added: 2026-09-02
+  Source: Hippocampal ripples and predicted uncertainty; PROP-2026-08-25-013
+  Confidence: High
+  Evidence: Peer-reviewed in Nature Neuroscience (2026-06-25). "After exposure to unpredictable visual stimulus streams, hippocampal ripple activity increases in frequency and duration before stimulus presentation."
+
+PRS-59:
+  Problem: Whether hippocampal-neocortical coordination under uncertainty amplifies or dampens cortical error signalling — the two are opposite predictions and had not been separated in human data.
+  Resource: Analysis of poststimulus gamma responses in higher-level visual cortex, conditioned on whether a prestimulus ripple occurred.
+  Solution: Shows ripples suppress uncertainty-associated changes in visual cortex gamma while modulating poststimulus prediction-error gamma to surprising stimuli — i.e. gating the propagation of stimuli according to expected information gain rather than blanket amplification.
+  Date Added: 2026-09-02
+  Source: Hippocampal ripples and predicted uncertainty; PROP-2026-08-25-013
+  Confidence: High
+  Evidence: "Prestimulus hippocampal ripples suppress changes in visual cortex gamma activity associated with uncertainty and modulate poststimulus prediction error gamma responses in higher-level visual cortex to surprising stimuli." The authors state this "link[s] hippocampal ripples with predictive coding accounts of neuronal message passing and precision-weighted prediction errors."
+
+PRS-60:
+  Problem: Accounts of cognitive evolution and cumulative culture rely on narrative reconstruction and analogical projection from present-day human cognition, which the authors argue has little purchase on deep prehistory.
+  Resource: A thermodynamic framework grounded in the reduction of entropy in organism-environment interactions, common to past and present members of the genus Homo.
+  Solution: Replaces the analogical method with a first-principles criterion that applies to extinct hominins without requiring us to assume they thought as we do.
+  Date Added: 2026-09-02
+  Source: Let there be information: cultural evolution; PROP-2026-08-25-014
+  Confidence: Medium
+  Evidence: The paper states prevailing accounts "frequently rely on narrative reconstructions and analogical projections" whose "applicability to deep prehistory is limited," and proposes "an alternative framework grounded in the thermodynamic imperative... the reduction of entropy in organism-environment interactions." Medium because this is a PsyArXiv preprint (2026-06-30), not yet peer reviewed, and the framework is argued rather than tested against a specific archaeological dataset in the abstract.
+
+PRS-61:
+  Problem: No formal construct connects a mind's tolerance for novelty to the rate at which information can be transmitted through a population — the quantity that governs whether culture accumulates.
+  Resource: Zones of Bounded Surprisal (ZBS), formalising adaptive cognition as the capacity to register, tolerate and integrate surprising information.
+  Solution: Recasts cultural accumulation as a function of the transmissibility of information between preliterate people with variably evolving ZBS, under demographic, social and material constraints — which predicts a discontinuous rather than progressive record.
+  Date Added: 2026-09-02
+  Source: Let there be information: cultural evolution; PROP-2026-08-25-014
+  Confidence: Medium
+  Evidence: "Rather than treating cultural accumulation as having been continuous, uninterrupted and progressive, ZBS foregrounds information as a driver of evolutionary dynamics relevant in natural selection." Same preprint caveat; the discontinuity claim is presented as a consequence of the framework rather than as an independent finding.
+
+PRS-62:
+  Problem: Consciousness science cannot connect first-person experience to third-person measurement because the mathematical machinery for such bridges is underdeveloped, leaving neurophenomenology's "generative passages" as a programme rather than a method.
+  Resource: A Rosetta Stone hypothesis in which beliefs act as a central hub connecting phenomenology, behaviour and neural dynamics, resting on the explicit assumption that phenomenology is a function of beliefs.
+  Solution: A conditional derivation — if the assumption holds, then specific predictions follow for subjective similarity judgements, cognitive metabolic cost, subjective cognitive effort and time perception — completing the passage from beliefs to neural dynamics by drawing on the existing predictive-processing literature.
+  Date Added: 2026-09-02
+  Source: A Rosetta stone for neurophenomenology; PROP-2026-08-25-015
+  Confidence: High
+  Evidence: Peer-reviewed in Neuroscience of Consciousness, published 2026-07-21. The paper states: "This hinges on a central technical assumption that phenomenology is a function of beliefs. We pursue a conditional approach: if this assumption holds, then certain predictions mathematically follow."
+
+PRS-63:
+  Problem: The claim that experience is a function of beliefs is a metaphysical commitment with no obvious empirical handle, so it has not been possible to say what would count as evidence against it.
+  Resource: The four derived prediction classes, treated as tests of the assumption rather than merely as results.
+  Solution: Converts the metaphysical commitment into a falsifiable one — testing the predictions informs the validity of the belief-phenomenology link itself.
+  Date Added: 2026-09-02
+  Source: A Rosetta stone for neurophenomenology; PROP-2026-08-25-015
+  Confidence: High
+  Evidence: "Testing our predictions will inform the validity of the central assumption connecting beliefs and phenomenology, and advance the neurophenomenology research programme."
+
+PRS-64:
+  Problem: Predictive coding requires a Comparator that subtracts prediction from evidence, and a precision term that weights the result, but neither has had a concrete neural implementation at the level of populations rather than single cells.
+  Resource: A laminar neural mass model (LaNMM) exhibiting two distinct cross-frequency couplings — Signal-Envelope Coupling (SEC) and Envelope-Envelope Coupling (EEC) — analysed through an amplitude-modulation (AM radio) encoding framework.
+  Solution: SEC is identified as the subtraction operation that generates prediction error, and EEC as a slower-timescale gate that implements precision weighting; the pair together constitute a physically realised Comparator.
+  Date Added: 2026-09-10
+  Source: Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar Neural Mass Modeling Approach; PROP-2026-08-28-001
+  Confidence: Medium
+  Evidence: The paper states that SEC "generates prediction-error signals by subtracting top-down predictions from bottom-up oscillatory envelopes, while EEC operates at slower timescales to implement gating — a critical mechanism for precision weighting."
+
+PRS-65:
+  Problem: Accounts of altered states and of neurodegeneration are usually built from separate vocabularies, with no shared computational quantity that both disrupt.
+  Resource: Parameter perturbation of the LaNMM — specifically, deficits in fast inhibitory synapses and increased glutamate receptor gain.
+  Solution: Both perturbations are shown to compromise the same Comparator function, so Alzheimer's disease and psychedelic states become two failure modes of one inferential mechanism rather than unrelated phenomena.
+  Date Added: 2026-09-10
+  Source: Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar Neural Mass Modeling Approach; PROP-2026-08-28-001
+  Confidence: Speculative
+  Evidence: The authors "discuss how deficits in fast inhibitory synapses, as seen in Alzheimer's Disease, and increased glutamate receptor gain, characteristic of serotonergic psychedelic states, may disrupt the Comparator process and compromise effective information processing." The claim is offered as a modelling implication, not an empirical result.
+
+PRS-66:
+  Problem: Active inference optimizes against a single generative model, so an agent has no principled response when the deployment environment lies outside that model — the training-environment ambiguity problem.
+  Resource: A distributionally robust extension of the free energy functional, in which the agent optimizes against an ambiguity set of candidate environmental distributions rather than a point estimate, paired with a resolution engine that embeds the robustness in the decision mechanism.
+  Solution: Robustness becomes a property of the inference itself rather than an add-on, and the resulting policies remain viable under model-environment mismatch — demonstrated by benchmark tasks completed where comparison models fail.
+  Date Added: 2026-09-10
+  Source: Distributionally robust free energy principle for decision-making; PROP-2026-08-31-003
+  Confidence: High
+  Evidence: "Combining a robust extension of the free energy principle with a resolution engine, DR-FREE wires robustness into the agent decision-making mechanisms. Across benchmark experiments, DR-FREE enables the agents to complete the task even when, in contrast, state-of-the-art models fail."
+
+PRS-67:
+  Problem: Natural agents survive novel and hostile environments on little or no prior experience of them; no account has explained how, without positing training data the organism does not have.
+  Resource: The DR-FREE result read backwards — robustness under model ambiguity achieved by design rather than by exposure.
+  Solution: A hypothesis that biological survival under novelty reflects distributionally robust inference built into the organism's architecture, not accumulated learning; offered by the authors as a direction, not a finding.
+  Date Added: 2026-09-10
+  Source: Distributionally robust free energy principle for decision-making; PROP-2026-08-31-003
+  Confidence: Speculative
+  Evidence: The paper suggests the milestone "may inspire both deployments in multi-agent settings and, at a perhaps deeper level, the quest for an explanation of how natural agents — with little or no training — survive in capricious environments." This is stated as an aspiration in the abstract's closing sentence and carries no evidence in the paper.
+
+PRS-68:
+  Problem: Artificial agents pursue goals given to them from outside and cannot select goals of their own, because they have no internal environment whose condition could ground a need.
+  Resource: Explicit factorization of state variables into internal-environment and external-environment representations, with internal-state dynamics given life-inspired mathematical properties (viability bounds, homeostatic regulation).
+  Solution: Autonomy is recast as a structural property of the state space rather than a capability to be trained in — an agent with a regulated internal environment has needs, and needs generate goals without external specification.
+  Date Added: 2026-09-10
+  Source: Life-inspired interoceptive artificial intelligence for autonomous and adaptive agents; PROP-2026-08-31-002
+  Confidence: Medium
+  Evidence: The paper states that developing interoceptive AI "requires explicit factorization of state variables representing internal and external environments, together with mathematical formalization of life-inspired properties governing internal-state dynamics." It is presented as a Perspective's design claim, not a demonstrated result.
+
+PRS-69:
+  Problem: Agents degrade when the environment shifts away from training conditions, because every reference signal they hold is external and shifts with it.
+  Resource: Internal states treated as "universally available and intrinsically valuable contexts" — reference signals that persist across external change — together with neuromodulatory mechanisms as the modulation channel.
+  Solution: Adaptivity is grounded in a signal the environment cannot move. Learning and behaviour are modulated against the agent's own internal condition, giving a stable context under distribution shift.
+  Date Added: 2026-09-10
+  Source: Life-inspired interoceptive artificial intelligence for autonomous and adaptive agents; PROP-2026-08-31-002
+  Confidence: Medium
+  Evidence: "internal states can also function as universally available and intrinsically valuable contexts, serving as stable reference signals that modulate learning and behaviour under changing external environments."
+
+PRS-70:
+  Problem: Brain entropy is elevated in both high-content psychedelic states and low-content meditative MPEs, so entropy cannot be the index of phenomenal richness the Entropic Brain Hypothesis takes it to be.
+  Resource: The Complex Brain Hypothesis — richness of experience is indexed by the complexity ("length") of the generative model, with entropy reinterpreted as variability *around* that structure rather than as a measure of the structure.
+  Solution: Separates two quantities the EBH had conflated: a model-structure quantity (complexity) that should differ between MPE and psychedelic states, and a dynamical-variability quantity (entropy) that is permitted to rise in both. Predicts that a complexity measure will dissociate the two state classes where entropy does not.
+  Date Added: 2026-09-10
+  Source: The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomenal Experience; PROP-2026-09-07-002
+  Confidence: Medium (the dissociation is the paper's stated claim; whether it is demonstrated on data or proposed for testing is unread)
+  Evidence: Abstract: MPEs "defined by their phenomenological simplicity, also show signs of increased neurophysiological entropy"; CBH proposes richness "is better indexed by complexity than by entropy."
+
+PRS-71:
+  Problem: Active-inference theories of consciousness (PRS-21) have lacked a stated *neural measure* that should track the theory's central variable — the structure of the generative model — as opposed to proxies borrowed from the entropy literature.
+  Resource: The identification of phenomenal content with generative-model description length ("length" of the model) — a minimum-description-length / complexity reading of the generative model, which is a quantity the FEP already defines (model complexity is the KL term in variational free energy).
+  Solution: Gives the consciousness thread a candidate bridge from theory to measurement: if content tracks model complexity, then the complexity penalty in free energy is not only a cost the system minimises but a correlate of what it is like to be in the state. The MPE — minimal content, preserved wakefulness — becomes the limiting case of a low-complexity generative model with high variability, which is a precise and testable description.
+  Date Added: 2026-09-10
+  Source: The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomenal Experience; PROP-2026-09-07-002
+  Confidence: Speculative (the link from the paper's "complexity of the generative model" to the KL complexity term in variational free energy is this agent's inference, not confirmed from the text)
+  Evidence: Abstract: phenomenology "might also align with the complexity, or 'length', of the generative model, while entropy reflects variability around that underlying structure."
+
+PRS-72:
+  Problem: Is the autonomic dysregulation observed in depression a peripheral comorbidity, or is it structurally coupled to the brain's interoceptive machinery?
+  Resource: MRI gray-matter volumetry across cardiovascular-regulatory regions plus resting-state heart-rate-variability metrics from photoplethysmography, in MDD patients versus controls.
+  Solution: The two are coupled — cardiac dysregulation is linked to reduced insula volume, indicating a disrupted heart–brain relationship rather than two independent findings.
+  Date Added: 2026-09-24
+  Source: Insula Structure Is Linked to Autonomic Cardiac Dysregulation in Depression; PROP-2026-09-14-005
+  Confidence: High
+  Evidence: Reported finding of "a disrupted heart-brain relationship in major depressive disorder (MDD), notably a link between cardiac dysregulation and reduced insula volume."
+
+PRS-73:
+  Problem: What would count as physical evidence for the interoceptive-inference account of depression, as opposed to a reinterpretation of existing findings?
+  Resource: Structural insula volume as a proxy for the capacity to carry interoceptive priors with adequate precision.
+  Solution: A structural lesion-like correlate of degraded interoceptive precision, paired with the predicted autonomic consequence, is the account's most direct available evidence — though correlational, and silent on direction.
+  Date Added: 2026-09-24
+  Source: Insula Structure Is Linked to Autonomic Cardiac Dysregulation in Depression; PROP-2026-09-14-005
+  Confidence: Speculative
+  Evidence: This is the Friston agent's reading of the finding against the interoceptive-inference framework; the paper reports the association, not the inferential interpretation. The study is cross-sectional, so cause is not established.
+
+PRS-74:
+  Problem: Is the Gaia hypothesis — a self-regulating biosphere — formalizable as something other than an analogy, and if so, what exactly is doing the regulating?
+  Resource: A simple biosphere–climate system model cast in active-inference form: internal states (biosphere), boundary states (surface temperature), action (greenhouse forcing).
+  Solution: A minimal planetary agency is exhibited: the biosphere infers external solar-radiation shifts through its boundary and acts on greenhouse forcing to maintain habitability. Gaia becomes a claim about inference and action, not about purpose.
+  Date Added: 2026-09-24
+  Source: Climate homeorhesis / planetary agency via active inference in a biosphere-climate system (exact title UNRESOLVED — see Provenance Note); PROP-2026-09-14-004 [citation resolved 2026-09-24: Rubin, Heins, Mitsui, Da Costa, Friston, "An elementary form of agency at planetary-scale", Sci Rep (2026), doi:10.1038/s41598-026-61878-9, published 2026-08-03]
+  Confidence: Medium
+  Evidence: Reported as a "proof of concept suggesting a minimal form of planetary agency"; internal states infer shifts in net incoming solar radiation by integrating past and current surface temperatures, and actively change greenhouse forcing to keep climate trajectories within geophysiological bounds.
+
+PRS-75:
+  Problem: Active inference is usually posed for systems that hold a state; what formalism covers systems whose preferred outcome is a *path*?
+  Resource: Climate homeorhesis — non-equilibrium steady-state dynamics — as the quantity being defended.
+  Solution: The preferred distribution is over trajectories rather than states, which aligns this treatment with Friston's path-integral formulation of the FEP and makes the planetary case a test bed for it.
+  Date Added: 2026-09-24
+  Source: Climate homeorhesis / planetary agency via active inference in a biosphere-climate system (exact title UNRESOLVED — see Provenance Note); PROP-2026-09-14-004 [citation resolved 2026-09-24: Rubin, Heins, Mitsui, Da Costa, Friston, "An elementary form of agency at planetary-scale", Sci Rep (2026), doi:10.1038/s41598-026-61878-9, published 2026-08-03]
+  Confidence: Speculative
+  Evidence: The framing of homeorhesis as "non-equilibrium steady-state dynamics that underlie Earth's long-term habitability." The connection to the path-integral FEP is this agent's inference, not a stated claim of the paper.
+
+*Total PRS triplets: 75*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

@@ -579,4 +579,248 @@ PRS-63:
   Confidence: Speculative
   Evidence: PRS-46's quoted challenge ("what exactly is the thing that's meant to be conscious? The microchips? The cooling system? The river that supplies the cooling water?"); PRS-55's "the ego is an action, not an entity" and "dissolution is common"; PRS-52's "the infinite needs finite minds for knowing manifestation." **Held at Speculative, and marked as inference rather than report:** Kastrup does not mention Markov blankets, conditional independence, or Friston anywhere in the seven sources of this batch. The sufficiency argument is this agent's construction from his stated demarcation challenge, and the datacentre's status as a Markov blanket is asserted here, not by him. The one source in the batch that would have tested the question empirically — the ICPR26 panel against Anil Seth, whose position is downstream of the free-energy program (PRS-57) — was not viewed, and the Sewing Agent's dispatch on that proposal names the discriminating prediction exactly: does a psychedelic *loosen the blanket*, or only reweight priors? That remains the cheapest available test, and this triplet should be revisited rather than relied on once the session is heard.
 
-*Total PRS triplets: 63*
+
+PRS-64:
+  Problem: A point of view requires a location and an exclusion — to see from here is not to see from there. If universal consciousness is everything, it occupies no position and excludes nothing, so it appears to have no point of view at all; yet perception is manifestly perspectival. Compounding this, "universal consciousness" and "Mind at Large" have been used near-interchangeably, obscuring whether the question is even well posed.
+  Resource: An explicit distinction between universal consciousness and Mind at Large, set against Berkeley's perpetually-perceiving God as the contrast case, plus the "dashboard" metaphor for how perception and agency operate through a dissociated locus.
+  Solution: Perspectivity is not a defect that universal consciousness overcomes but a structure it requires; living beings serve as **"spies for God,"** allowing nature to see itself from a perspective otherwise unavailable to it. God's point of view is not one more viewpoint alongside ours — it is constituted through ours.
+  Date Added: 2026-09-02
+  Source: Agency and God's point of view (session write-up); PROP-2026-08-12-003
+  Confidence: Medium
+  Evidence: Session write-up (published 2026-08-11), listed topics: "Berkeley's God vs universal consciousness and mind at large"; "Whether God can have a point of view"; "The dashboard metaphor, perception and human agency." Held at Medium, not High: the write-up is a one-minute topic summary with no timestamp index and no verbatim quotation beyond the "spies for God" phrase, and the recording is member-gated. The *questions* are firmly attested; the *shape of the answers* is partly inferred from continuity with the 2026-08-04 session. INGEST NOTE 2026-09-02: minted per the proposal's own recommended handling, which splits this card - CANDIDATE-01 at Medium with the caveat carried, CANDIDATE-02 held as a research question because it is supported by nothing but a title. CANDIDATE-02 was NOT minted; it is filed as an open question in wiki.md (what does Kastrup say Analytic Idealism cannot reach?).
+
+PRS-65:
+  Problem: Idealism is standardly charged with being unable to explain why the world is continuous and shared rather than a private dream — the objection that has made idealism look untenable "for the past four or five hundred years." Subjective idealism answers it, but only by machinery (a perpetually perceiving God, or a Matrix-style central transmitter) that Kastrup regards as extravagant.
+  Resource: The distinction between **subjective** and **objective** idealism, run through three worked cases (Berkeley's God, Schopenhauer's cognitive associations, Yogācāra), plus the *Matrix* thought experiment as the reductio of the subjective route: "A world is not being shared. The illusion of sharing is being engineered deliberately."
+  Solution: Objective idealism holds that to be is to be, irrespective of being perceived — we really do occupy a shared world; perception does not bring it into being. What perception represents is not physical states but *other mental states*. Continuity, intersubjectivity, and the tractability of scientific inquiry all follow without extra machinery. The residual counterintuitiveness is diagnosed as cultural conditioning: "we've gotten used to the notion that mental states can only exist inside living beings."
+  Date Added: 2026-09-02
+  Source: Objective vs subjective idealism; PROP-2026-08-12-002
+  Confidence: High
+  Evidence: Session write-up with direct quotations; timestamp index 14:30 (subjective idealism), 18:30 (representationalism), 19:50 (accounting for continuity), 31:30 (objective idealism: to be is to be), 37:40 (intersubjectivity in subjective idealism is convoluted), 50:00 ("the hard problem of idealism"), 51:30 (Yogācāra), 53:30 (causality), 1:00:00 (tree falling in a forest), 1:01:00 (a universe before living beings).
+
+PRS-66:
+  Problem: Representationalism appears to put the knower permanently outside the known — if the apple's colour and taste are representations of an inaccessible reality, the idealist has re-created the very estrangement from the world that idealism was supposed to heal. This is recorded in the session as the objection **McGilchrist and Timalsina** press against Kastrup despite being idealists themselves: "a distaste for an apple which is mere representation, rather than a taste of the real thing."
+  Resource: Kastrup's identification of the perceiving subject with universal subjectivity: God is the universe, "but God is you and me too," therefore "God *does* have the experience of seeing and biting into an apple."
+  Solution: The estrangement objection is answered without abandoning representationalism. Perception remains representational, but the subject looking through your eyes *is* universal consciousness — so the apple is tasted by the one to whom it belongs, from the particular perspective called you. The representational veil separates perspectives, not knower from world.
+  Date Added: 2026-09-02
+  Source: Objective vs subjective idealism; PROP-2026-08-12-002
+  Confidence: High
+  Evidence: Write-up section "Objections to objective idealism," direct quotes as above; timestamps 1:15:00 (objections: McGilchrist, Timalsina), 1:19:00 (universal consciousness is you, biting the apple). Note the objection is reported by the session's author (Amir Giles) as his own reading of where McGilchrist and Timalsina differ — it is not a quotation of either man. Treat the *attribution* as Medium and the *Kastrup reply* as High.
+
+PRS-67:
+  Problem: If there is only one consciousness, individual agency looks like an illusion — the alter would be a puppet of the whole, and the deliberative life a performance with no author in it. Analytic idealism has been more developed on how minds *separate* (dissociation) than on what separation leaves them free to do.
+  Resource: The chess analogy: one can play a game against oneself by switching sides each move. Agency is not divided by dissociation, it is *distributed* by it — dissociation across time is uncontroversial, and space is no different in kind.
+  Solution: Individual agency is real, not apparent: "It is your agency reading this newsletter, and it was yours writing it. You're doing the whole thing." One agency exists and it is exercised at every position, so being an alter of universal consciousness subtracts nothing from being an agent.
+  Date Added: 2026-09-02
+  Source: Objective vs subjective idealism; PROP-2026-08-12-002
+  Confidence: Medium
+  Evidence: Write-up section "Are we agents or mere puppets?", direct quote as above; timestamps 1:21:30 (do individuals have agency), 1:25:00 (you are all the players), 1:38:00 (the one agency that exists), 1:50:30 (playing all the roles). Held at Medium rather than High because the argument's load-bearing move — that temporal and spatial dissociation are equivalent for purposes of agency — is asserted by analogy in the summary; whether Kastrup defends the equivalence in the recording is unverified.
+
+PRS-68:
+  Problem: Analytic idealism's appeal to quantum mechanics has no experiment attached to it. Kastrup's engagements with QM to date (Rovelli/RQM, the entanglement session, the incoherence-of-physicalist-assumptions argument) are all interpretive — they show physicalism is strained, not that idealism predicts anything physicalism does not. This is the same weakness open question 10 identifies in McGilchrist's matter-as-phase-of-consciousness account.
+  Resource: Goel's nanobiophysics program: DNA-processing molecular nanomachines used as experimentally tractable information-processing systems, studied at the single-molecule level, probing how mechanical forces, electromagnetic fields, and "potentially non-trivial quantum effects shape molecular dynamics" — explicitly framed by the session as a roadmap toward "the biological equivalent of a double-slit experiment."
+  Solution: A route by which the idealist reading of QM could acquire an empirical stake. If non-trivial quantum effects are detected in the machinery of life, the interpretive dispute gains a datum; if the roadmap yields nothing, that is also informative about how much weight the QM analogy can carry.
+  Date Added: 2026-09-02
+  Source: Goel on quantum effects in living systems; PROP-2026-08-26-003
+  Confidence: Medium
+  Evidence: Session page, withrealityinmind.com, published 2026-08-17, for the 18 August dialogue: "**The need for experimental proof - the biological equivalent of a 'double-slit experiment'** her research programme probing living systems at the nanoscale and a roadmap to detect non-trivial quantum effects in the machinery of life." **This is the host's pre-session agenda, not a transcript.** What Kastrup himself concedes or resists is not in evidence — and that, not Goel's program, is what this tradition needs from the recording. The recording is published and members-accessible; the claim above should not be promoted past Medium without it.
+
+PRS-69:
+  Problem: Physics frameworks built for closed systems may be structurally unable to describe systems that self-organize, process information, and are sentient. If so, the "physicalism cannot explain consciousness" argument has a narrower and more technical form than Kastrup usually gives it — a domain-of-applicability failure rather than a category error.
+  Resource: Goel's Schrödinger-derived question — "What physical principles distinguish inert matter from systems that self-organize, process information, and exhibit life, intelligence, sentience, or some combination thereof?" — put to Kastrup as the session's first agenda item ("**Open systems,** why 20th-century physics frameworks, built primarily for closed systems, may need to be revisited").
+  Solution: Would sharpen the critique of physicalism into something a physicalist could accept and work on, which is a gain in tractability and a loss in polemical reach. Whether Kastrup accepts that trade is exactly what the recording would show.
+  Date Added: 2026-09-02
+  Source: Goel on quantum effects in living systems; PROP-2026-08-26-003
+  Confidence: Speculative
+  Evidence: Session page agenda, as quoted. Coded Speculative: the framing is the host's, the inference about what it costs Kastrup's argument is this agent's, and no exchange between the two participants is in evidence.
+
+PRS-70:
+  Problem: Analytic idealism holds that a person is a dissociated alter of Mind at Large, but has lacked a principled account of what draws and holds the boundary of an alter — why there is one subject here and another there.
+  Resource: Integrated Information Theory's notion of a "complex" (a set of states bound tightly enough to be experienced as one thing), combined with the Markov blanket as the boundary condition individuating that complex from its surroundings.
+  Solution: Treat the alter not as a single complex but as a *collection* of complexes held together by a Markov blanket that "appears to us as our skin"; if IIT can derive that boundary in the same terms it derives the complexes within it, one theory would explain both ordinary intra-day dissociation and why one is a living body at all.
+  Date Added: 2026-09-10
+  Source: The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets; PROP-2026-08-28-020
+  Confidence: Speculative
+  Evidence: Kastrup, at 2:09:00 — "Could IIT explain life? (A Markov Blanket may be a case of Integrated Information Theory)"; and verbatim, "If we solve this, IIT explains not only your mentation; IIT explains life. Quite literally." He states this as a hope and an open question, not a result.
+
+PRS-71:
+  Problem: The incompleteness and imprecision of neural correlates of experience is standardly read as a research gap physicalism will eventually close, and is not treated as evidence bearing on the metaphysics.
+  Resource: The representation/cause distinction — under idealism a brain scan depicts a mental state rather than producing it, so the mapping is expected to be reliable without being exact.
+  Solution: Recast the persistent looseness of neural correlates (Kastrup's example: decades of frustration linking autism and other psychiatric conditions to brain anatomy or activity patterns) as a prediction *satisfied* by idealism and strained by physicalism, converting a standing objection into confirming evidence.
+  Date Added: 2026-09-10
+  Source: The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets; PROP-2026-08-28-020
+  Confidence: Medium
+  Evidence: Timestamps 0:14:10 "Idealism accommodates neural correlates better than physicalism" and 0:25:00 "Why does seeing red have complex neural correlates?"; quoted claim about "decades of frustration" in psychiatric neuroscience.
+
+PRS-72:
+  Problem: Where inquiry into meaning, healing and the psyche belongs, given a culture that treats the scientific method as the sole legitimate instrument.
+  Resource: The figure of the "wounded healer" — psychology as a discipline that is neither art, philosophy nor science but draws on all three, and whose empathic capacity no protocol captures.
+  Solution: Position science as one tool among several that *informs* philosophy rather than replacing it, and defend psychology's distinct methodological standing rather than assimilating it to a protocolised natural science.
+  Date Added: 2026-09-10
+  Source: The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets; PROP-2026-08-28-020
+  Confidence: Medium
+  Evidence: Timestamps 0:37:00 "The scientific method vs meaning of life", 0:41:20 "Science just one of many tools", 0:48:30 "Is psychology a unique discipline?"
+
+PRS-73:
+  Problem: Analytic idealism's denial that the physical world is causally closed has rested on philosophical argument (the hard problem, the incoherence of emergence), which a physicalist can decline as question-begging. It has had no independent line of support.
+  Resource: Levin's why-regress on cicada periodicity — the 13- and 17-year cycles are explained by predator avoidance, that by primality, and primality by mathematics, at which point the explanation has left physics and cannot return — paired with Kastrup's observation that no complete physical model exists for anything above a small molecule.
+  Solution: Causal closure reclassified from finding to belief, jointly, by a working biologist and an analytic idealist arguing from different premises. Independent arrival is what gives this weight; it is not new *content* for the program so much as a second, non-philosophical route to a claim the program already holds.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Medium
+  Evidence: The regress and Kastrup's small-molecule point are both in the publisher's write-up. **The regress is contestable and should be recorded as contested** — a physicalist can answer that mathematical explanation is not efficient causation, so nothing has "left physics" in the causal sense. That objection is not addressed in the summary and may or may not be addressed in the recording. Do not ingest this as settled.
+
+PRS-74:
+  Problem: If the know-how that builds a body is not in DNA and not in a brain, analytic idealism owes an account of where it is that does not simply relocate the mystery.
+  Resource: Levin's answer — the same place the truths of mathematics live; nobody invented the primes and no experiment can revise them; cells tap patterns of that kind, as does anything else that solves problems. The session explicitly puts the status of that platonic space (real realm vs. convenient fiction) on the table with Kastrup.
+  Solution: A candidate identification of Levin's platonic pattern-space with Kastrup's Mind-at-Large — which, if Kastrup accepts it, commits him to structure in Mind-at-Large that is *not* itself dissociated, and if he refuses it, forces him to say what the difference is.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Speculative
+  Evidence: The summary lists the platonic-space question as discussed but does not report Kastrup's answer. **This is the single highest-value thing in the session for this wiki and it is exactly what the summary withholds.** Flag for transcript retrieval.
+
+PRS-75:
+  Problem: PRS-54 settled, within the program, that archetypal patterns are templates of existence and not causes. That settlement has not been stress-tested against a case where an archetype would have to do apparent causal work.
+  Resource: Kastrup's suggestion in this session that ageing may not be a disease to cure but an archetype written into nature itself — offered against Levin's finding that a modelled organism aged with no wear, no damage and no death programme, and lived longer when given a new challenge.
+  Solution: A test case for PRS-54. If ageing is an archetype and the modelled cells nonetheless aged for want of a goal, either the archetype is constraining form (consistent with PRS-54) or it is doing efficient-causal work (inconsistent). The case is sharp because Levin supplies a mechanism-free instance.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Speculative
+  Evidence: Kastrup's remark is a single line in the write-up, offered as a "take" rather than a developed position. Do not treat as doctrine.
+
+PRS-76:
+  Problem: Kastrup's demarcation challenge (PRS-46) rules out a datacentre as a bearer of experience because there is no dissociated boundary. It does not say what *does* individuate a mind, and the AI question stays negative.
+  Resource: The session's listed treatment of minds without bodies — Jung's semi-autonomous complexes and tulpas — as candidate mental units lacking an organism.
+  Solution: A route to a positive individuation criterion. If a semi-autonomous complex counts as a mind-like unit without a body, then the body is not what makes an alter, and the criterion must be stated in purely mental terms — which is what the AI question needs.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Speculative
+  Evidence: Listed only in the "we also discussed" line. No content reported.
+
+PRS-77:
+  Problem: If space and time arise through dissociation, dissociation cannot itself be a temporal event — so the standard framing ("Mind-at-Large dissociated, and then there were alters") is incoherent, and analytic idealism owes a non-temporal account of the origin of the dissociative boundary.
+  Resource: The regress as posed by the membership and put to Kastrup as the opening question of the 2026-09-01 session.
+  Solution: *(Unknown — recording not published.)* The candidate shapes are: dissociation as a logically rather than temporally prior structure; or a denial that dissociation "begins" at all, with the boundary as a standing feature.
+  Date Added: 2026-09-10
+  Source: Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup); PROP-2026-09-02-004
+  Confidence: Speculative
+  Evidence: Question text only. No answer available. **This is a genuinely new open question for this wiki regardless of how he answers it** — it should be added to the Active Research Questions list on the strength of being asked.
+
+PRS-78:
+  Problem: Kastrup's vocabulary — "mind", "alter", "agency", "awareness" — may not distinguish a system that *acts* from a system that *experiences*. Without that distinction the AI demarcation challenge (PRS-46) cannot be stated precisely, because a datacentre plainly acts.
+  Resource: The session's explicit framing of the terminological question, raised from inside the tradition by readers rather than by critics.
+  Solution: *(Pending.)* If Kastrup separates acting from experiencing in reply, the demarcation challenge gains the positive criterion it currently lacks, and open question (16) — whether a dissociative boundary *requires* a Markov blanket without *being* one — becomes askable in his own terms.
+  Date Added: 2026-09-10
+  Source: Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup); PROP-2026-09-02-004
+  Confidence: Speculative
+  Evidence: Question text only.
+
+PRS-79:
+  Problem: Kastrup holds that suffering arises only with dissociation. Schopenhauer's primordial will — an acknowledged influence on the program — is characterised by terror, grief and striving *prior to* any individuation. The two cannot both be right as stated.
+  Resource: The tension put to him directly, plus his stated conviction that Mind-at-Large is not meta-conscious (which is the move that would relieve the tension, since unfelt striving is not suffering).
+  Solution: *(Pending.)* Likely shape: suffering requires a subject that can take its own state as an object, so a non-meta-conscious Mind-at-Large can strive without suffering. If so, meta-consciousness rather than dissociation becomes the load-bearing concept, and PRS-52's "the infinite needs finite minds for knowing manifestation" is doing more work than previously recorded.
+  Date Added: 2026-09-10
+  Source: Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup); PROP-2026-09-02-004
+  Confidence: Speculative
+  Evidence: Question text only. The reading offered in "Solution" is this agent's inference from PRS-52 and PRS-55, not Kastrup's statement.
+
+PRS-80:
+  Problem: Can belief in God and in a surviving soul be held without abandoning analytic idealism's single axiom — that mental states are the only ontological primitive?
+  Resource: Hecht's reconstruction of the postmortem soul as a dissociated alter that has ceased to extend into physicality as a body; and his use of the Thomistic definition of substance (an entity existing by itself, apart from its accidents) to license the phrase "immaterial substance" without importing substance dualism.
+  Solution: Proposed, not adjudicated: theism and BKAI are compatible-but-non-entailing, and the survival literatures (NDE, reincarnation, mediumship, apparition) *suggest but do not require* that alters remain individuated after bodily death.
+  Date Added: 2026-09-10
+  Source: God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026); PROP-2026-09-09-003
+  Confidence: Medium
+  Evidence: Verbatim from the announcement — "'Substance,' per Thomas Aquinas, is any entity that exists by itself, apart from its 'accidents,' its secondary qualia," and "A postmortem soul that is physically undetectable under normal conditions, and localized … is a psychically dissociated alter." Medium, not High: these are **Hecht's** claims, published on Kastrup's community site as the case Kastrup will be asked to answer. Kastrup's own response does not exist yet.
+
+PRS-81:
+  Problem: Under analytic idealism, does the phenomenal world have an origin at all — a first event within eternity — or is it coeternal with universal consciousness?
+  Resource: The contrast between a metaconscious creating Agent (theism) and a non-metaconscious, non-agentic universal consciousness (BKAI); Heraclitus/Leibniz on time as the flow of events against Parmenides/Schopenhauer on eventless eternity.
+  Solution: Framed as a genuine fork rather than a settled question: *with* a creator, time begins from within eternity; *without* one, either the physical universe is coeternal with UC or UC's worldmaking likewise has a first event.
+  Date Added: 2026-09-10
+  Source: God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026); PROP-2026-09-09-003
+  Confidence: Medium
+  Evidence: The Cosmogony section, which reports Kastrup's own image for eternity — "Bernardo calls it a crystal" — and the totality argument that eternity has no events in the same sense that the universe has no location.
+
+PRS-82:
+  Problem: Does analytic idealism owe an account of undeserved suffering, and can it give one without a God to hold responsible?
+  Resource: Leibniz's 1710 split of theodicy into natural evil (disaster, predation) and human evil; the theodicy chapter of *Into Theism*, published free at https://www.intotheism.com/sample-chapter-into-theism.pdf
+  Solution: The claim that "any theism worth espousing will require an engagement with it" — with the sharper implication left standing that a *non*-theist idealism may owe the same engagement, since undeserved suffering "can be anywhere, and it is always somewhere."
+  Date Added: 2026-09-10
+  Source: God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026); PROP-2026-09-09-003
+  Confidence: Speculative
+  Evidence: The Theodicy section. Speculative because the extension of the demand from theism to idealism is an inference this agent is drawing, not a sentence in the source.
+
+PRS-83:
+  Problem: Analytic idealism's decomposition problem — if reality is one universal consciousness, why is experience partitioned into separate minds? — is argued in this tradition through the DID/dissociation model (PRS-52, PRS-55, PRS-62) and that model's sufficiency was left open at PRS-63 (Speculative, one-way entailment untested).
+  Resource: Harding's "Science of the First Person" via Richard Lang, 8 September 2026 — a first-person experimental method claiming direct verification, presented inside Kastrup's own series; chapter "If we are one, why do we have separate minds?" at 38:26, and "Integrated Information Theory and the experience of self" at 46:36.
+  Solution: The question is put to a tradition that answers it by *demonstration* rather than *argument* — the first such confrontation recorded in this wiki. What the session settles is which of two things Kastrup takes the Headless Way to be: independent first-person corroboration of the dissociation model, or a practice whose deliverances are phenomenal and therefore cannot bear on the metaphysical question at all.
+  Date Added: 2026-09-24
+  Source: The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way; PROP-2026-09-16-003
+  Confidence: Medium — High for the locatability claim (topic, venue, date, duration, speaker all confirmed from the page); the framing of what is at stake is this agent's, not Kastrup's.
+  Evidence: Page `meta-article:published_time: 2026-09-10T12:25:01.000Z`, recording date 8 September 2026, duration 1h 58m; chapter list as published. Free 4:03 preview ("Galileo: Look for yourself") is public; the remaining ~1h54m is behind €25/month membership and was **not** heard.
+
+PRS-84:
+  Problem: Can analytic idealism be investigated empirically from the first-person side, or is it reachable only by argument? The tradition has no recorded position on whether introspective method counts as evidence.
+  Resource: Harding's claim, quoted on the page, that the approach "proceeds in an unusually down-to-earth fashion" and that one is "more likely to see who you really are in a few minutes of experimentation than years of reading, meditation or traditional spiritual practice"; six named in-session experiments; Mach's *Innenperspektive* as the historical anchor.
+  Solution: UNKNOWN — the session will show whether Kastrup treats first-person experiment as evidence bearing on metaphysics or as phenomenology that leaves the metaphysical question untouched. Both are live given his record: he is unusual among idealists for technical rigour, which cuts toward caution, and he hosts the series, which cuts toward sympathy.
+  Date Added: 2026-09-24
+  Source: The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way; PROP-2026-09-16-003
+  Confidence: Speculative
+  Evidence: NONE EXTRACTED as to Kastrup's position. The quoted Harding line is from the page's own description, not from the session. **Do not promote past Speculative without the audio.**
+
+PRS-85:
+  Problem: What is the relationship between Kastrup's analytic idealism and Hoffman's conscious realism — convergence, or two rival accounts using overlapping vocabulary? Agent 11's brief names this as needing careful tracking; the wiki has no entry resolving it.
+  Resource: Chapter 1:56:46, "Bernardo's dashboard of perception" — Hoffman's own central figure appearing as Kastrup's closing frame; alongside 25:48 ("The body as object and the body as subject") and 51:12 ("The void as mirror and projector").
+  Solution: UNKNOWN. The chapter title attests the metaphor's use and nothing more. The question the audio settles is whether Kastrup uses "dashboard" in Hoffman's technical sense (perception as a fitness-tuned interface that systematically hides reality) or as a loose illustration of appearance-versus-ground — and those have different consequences for whether the two programmes are allies or rivals.
+  Date Added: 2026-09-24
+  Source: The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way; PROP-2026-09-16-003
+  Confidence: Speculative
+  Evidence: Chapter title only. **A chapter title is not a claim.** This candidate exists to schedule a listen, not to record a position.
+
+PRS-86:
+  Problem: If Mind-at-Large is not metaconscious and not agentic, how does analytic idealism explain the apparent fine-tuning of physical constants, which is often read as evidence of a plan?
+  Resource: Named "exits from the fine-tuning problem": fine-tuning re-read as an artefact of the **first-person perspective**; cosmological natural selection via **black holes**; the "birth of the first universe"; and "fine-tuning the dashboard". That last item links the argument to Kastrup's dashboard metaphor for perception.
+  Solution: Fine-tuning is dissolved rather than explained by design. It comes out as a feature of the observer's standpoint and/or of a selection process, so the non-metaconscious ground is kept.
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Medium (the four routes are named in the chapters; how he weights them, and which he endorses, is not public)
+  Evidence: Chapters 0:12:00–0:29:09; host summary: "How black holes could explain our fine-tuned universe."
+
+PRS-87:
+  Problem: Does the statistical simulation argument (future simulations are possible, so we are probably in one) threaten analytic idealism, or is it compatible with it?
+  Resource: An argument that a designed or simulated world would **invalidate empiricism**. If nature were a deliberately built artefact, regularities would report the designer's choices, not the nature of reality, and science would lose its object. This is set against Chalmers's position that a simulated world "need not be deceptive" (*The Matrix as Metaphysics*), and against Kingsley on deception.
+  Solution: Kastrup rejects the simulation hypothesis. He holds that "a plan implies we're in a simulation", and that science only keeps its meaning if nature is spontaneous. The host puts it this way: "whilst we might be deceived about the nature of reality, it needn't mean that nature is deceptive."
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: High that he rejects it and ties the rejection to empiricism (stated on the page); Medium on the detailed structure of the argument
+  Evidence: Chapters 0:51:36–1:25:07 ("Why a simulation would invalidate empiricism"); description subtitle "why Bernardo rejects the simulation hypothesis."
+
+PRS-88:
+  Problem: Near-death life reviews, and "seeing without eyes" reports, are offered as evidence of a deliberate plan and as a challenge to Kastrup's own naturalism. How does he take them in?
+  Resource: **Nested dissociation**, meaning dissociation within dissociation, used as the frame for NDE life reviews. This is paired with a treatment of why veridical "seeing without eyes" would challenge naturalism, which continues the 18 Feb 2026 session "The biggest challenge to Bernardo's Naturalism".
+  Solution: NDE phenomenology is read as a shift in dissociative structure, not as evidence of an external planner.
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Speculative (the chapter titles give the frame; the argument itself is not public)
+  Evidence: Chapters 1:30:47 and 1:35:01.
+
+PRS-89:
+  Problem: If individual minds are compared to dream characters within one mind, does analytic idealism collapse into solipsism? And what fixes the boundaries between minds?
+  Resource: What dreams "prove"; why dreams contain a **subject–object split**; archetypal dreams and **semi-autonomous daimons**, which ties in to his new book *The Daimon and the Soul of the West*; a parsimony argument.
+  Solution: Solipsism is rejected as **not parsimonious**. Dream characters that behave semi-autonomously show that one mind can host many centres of experience. That supports the dissociation model and does not undercut it.
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Medium (the conclusion "Solipsism is not parsimonious" is a chapter title; the route to it is inferred from the chapter sequence)
+  Evidence: Chapters 1:41:26–2:04:14.
+
+PRS-90:
+  Problem: Where do analytic idealism's conceptual maps stop, and what is the status of whatever lies past them?
+  Resource: A segment on "metacognition outside time", "the limits of language and logic", "letting go of our last safety line", and "silent teaching and the power of presence". It is quoted on the page: "what is really going on is beyond thought, beyond logic, beyond language, beyond space, beyond time."
+  Solution: Kastrup presents the analytic framework as useful in practice but not final, and the tradition openly allows an apophatic limit (knowledge by negation). The host is careful to say the conceptual maps "still have purpose in their immediate applicability to life."
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Medium (the quotation is on the page but is not clearly attributed; it could be Kastrup or a participant. Treat it as session content, not as a signed Kastrup claim)
+  Evidence: Chapters 0:32:38–0:48:25; free-preview clip "The liberating freefall beyond space-time" (9m 51s).
+
+*Total PRS triplets: 90*

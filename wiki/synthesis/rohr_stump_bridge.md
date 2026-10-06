@@ -102,3 +102,52 @@ The genuinely exposed entry is **2026-07-26**, and not for the reason given: it 
 **Open question the wiki cannot yet answer:** Is Aquinas on mortification actually re-ordering rather than suppressive? The Monk Kidd proposal asserts the contrast — Aquinas standardly read as suppressive, Rohr as integrative — and the wiki has taken it on trust. If the standard reading of Aquinas is wrong, the convergence is much stronger than either tradition has claimed; if it is right, Rohr's integrative move is a real departure and should not be filed as agreement.
 
 **Wikilinks (sewing, 2026-08-30):** [[2026-08-28_rohr_realigned-true-self-sin-as-separateness]] · [[2026-08-30_rohr_true-seed-within-soulmaking-as-integration]]
+
+
+---
+
+## Faith as trust versus faith as assent; solidarity in suffering
+*Sewing Agent, 2026-09-06*
+
+**Orphaned pages at the intersection (0 backlinks each before this run):** `2026-09-06_rohr_faith-and-doubt-correlative` (Stump 0.7) and `2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites` (Stump 0.6).
+
+**Why they sit here:** The faith proposal defines faith as trust that reality is coherent and on our side, with a person as its object, and calls doubt correlative rather than contradictory. That is Stump's second-personal knowing (PRS-07) rather than Aquinas's assent (II-II Q.1-7), and the proposal names the register mismatch in the bridges file (PRS-05 cited in error). The cruciform proposal has the Divine Mind transform suffering by identifying with the human predicament, which is Stump's divine-solidarity territory.
+
+**Synthesis claim:** Rohr and Stump share a *person-first* epistemology of faith: what is known is a person, and propositional doubt is compatible with it. But they part on whether this is a departure from Aquinas (Rohr says yes, explicitly) or a reading of him (Stump says it is Aquinas correctly read). The convergence is on the content; the disagreement is on the pedigree, and the wiki should not let a shared conclusion hide a real dispute about the tradition.
+
+**Open question the wiki cannot yet answer:** Is Rohr's "vote for coherence and benevolence" a form of second-personal knowing at all, or is it a propositional trust claim about the universe with a person substituted as object after the fact? If the latter, PRS-07 is the wrong target too.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-06_rohr_faith-and-doubt-correlative]] · [[2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites]]
+
+
+---
+
+## Insufficiency and fullness as one movement
+*Sewing Agent, 2026-09-20*
+
+**Orphaned pages at the intersection:** `inbox/proposals/pending/2026-09-20_rohr_pauls-transforming-vision-weekly-summary.md` and `inbox/proposals/pending/2026-09-20_rohr_preacher-of-love-temple-dignity.md` (PROP-2026-09-20-003 and -002, 0 backlinks each).
+
+**Why they sit here:** Rohr's account of what law does is that recognizing one's own insufficiency and encountering God's fullness are *one movement rather than two* — not failure followed by rescue. Stump's second-person account holds that knowledge of self and knowledge of the other are not separable stages of one act. The resemblance is close enough that the wiki will be tempted to file it as convergence.
+
+**Synthesis claim.** They are not the same claim and the difference is worth keeping. Stump's is **epistemic**: a mode of knowing that cannot be decomposed into propositional components without loss. Rohr's is about the **temporal structure of a single act**: two things that look sequential are one. One could be true without the other — a second-person mode of knowing could still unfold in stages, and a non-sequential act need not be second-personal. What makes the pair productive is that each supplies what the other lacks: Stump has the metaphysics of why the composite act is not reducible to its parts (form, level-specific causal power, the whole as the bearer), and Rohr has a concrete phenomenological case of it in a domain Stump writes about but does not describe from the inside.
+
+The second card sharpens this into a decidable question. Rohr grounds human dignity in indwelling — inherent, universal, indestructible by any evaluation — and PROP-2026-09-20-002 flags that if Wright's **corporate** reading of Paul's temple language is correct, the dignity inheres in a composite and distributes to its constituents. That is a hylomorphic structure, and Stump's machinery is the network's only equipment for distinguishing it from dignity inhering in each person independently. The distinction is not decorative: on the distributive reading, a person's dignity depends on membership in a whole and the whole's persistence conditions become the person's; on the independent reading it does not.
+
+**Open question the wiki cannot yet answer:** If dignity is a causal power of a composite — the body, the people, the church — vested in the configuration rather than in the constituents, what happens to the dignity of a constituent that leaves the composite? Rohr's three properties say the dignity is indestructible; a distributive account says it is inherited. Those are in tension and neither card notices. Stump's own extension of the dyad argument to "peoples and the church" in *What Are We?* is where the answer would have to come from.
+
+**Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]], [[2026-09-20_rohr_preacher-of-love-temple-dignity]]
+
+---
+
+## Exclusion as the failure of corporate substance
+*Sewing Agent, 2026-10-04*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-27_rohr_myth-of-redemptive-violence.md` (0 backlinks).
+
+**Why it sits here:** Rohr's claim that exclusion, not any single violent act, is violence's foundation (PROP-2026-09-27-002).
+
+**Synthesis claim.** If Stump's Church is a united something and not an aggregate, a group defined by its excluded other is by that definition an aggregate held together by what it expels. Rohr's mechanism then says violence is what such a group does to preserve a unity it does not have. On that reading inclusion is not a moral addition to a group; it is what makes a group a substance at all.
+
+**Open question the wiki cannot yet answer:** Does the Thomistic account of corporate substance entail that exclusion-defined groups are not genuine unities, and if so what does it say about the identity of a group that defines itself over against an enemy?
+
+**Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_myth-of-redemptive-violence]]

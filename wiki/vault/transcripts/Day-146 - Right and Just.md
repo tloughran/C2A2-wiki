@@ -6,7 +6,7 @@ title: Right and Just
 summa_ref: II-II Q.56 + Q.57
 duration_seconds: 772
 word_count: 2104
-raw_asr_word_count: 2104
+raw_asr_word_count: 2092
 length_tier: medium
 segment_count: 312
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-146 - Right and Just - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/146, pars/2, q/56-57]
-last_qc_at: "2026-08-06T20:27:17"
+last_qc_at: "2026-09-17T06:50:52"
 last_qc_outcome: "pass"
 ---
 

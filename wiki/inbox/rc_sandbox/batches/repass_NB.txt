@@ -1,0 +1,579 @@
+[r29c9] row30 seq7 19w current_node=III.2.N about=-
+find reference to biologist who makes room for empirical lamarckian evolution by appeal to natures that unfold through experience
+
+[r129c7] row130 seq5 18w current_node=III.2.N about=Harari
+the entire body: nervous system, brain, etc is the calculator; the answer comes as emotion (fear or courage...)
+
+[r165c3] row166 seq1 35w current_node=III.2.X about=-
+evolution is one way that love probes being to explore ways to order it...thought, praxis and culture are other ways; evolution prepares the way for the thoughtful praxis of intelligent and loving creatures it produces...
+
+[r165c4] row166 seq2 17w current_node=III.2.X about=-
+creation of artificial intelligence is perhaps yet another phase...computation, rather than thought, or perhaps better, computational thinking...
+
+[r188c5] row189 seq3 12w current_node=III.2.N about=-
+analogy w/ ML: credit assignment function...little stupid neurons, don't generalize well, savants...
+
+[r188c6] row189 seq4 21w current_node=III.2.X about=-
+no imagine reinforcing AI functions with what we learn from human behavior. Enhancing AI by importing human capabilities. (look up ENDOR)
+
+[r188c7] row189 seq5 7w current_node=III.2.X about=-
+TL: vice versa, also: enhance human beings
+
+[r188c8] row189 seq6 37w current_node=III.2.X about=-
+going further: what happened if the neurons were people? a society, a company...culture comes from human AI...reinforce the good, disincentivize the bad...culture connects people...is this a crazy idea? Kraft/Tenbaum...look at how people make decisions, learn from them
+
+[r188c9] row189 seq7 61w current_node=III.2.X about=-
+people make decisions in credit assignment analogues, that make the community smarter...// how can you select for culture as well as individuals? there is one way: thompson sampling. combines evidence in a way best for the individual and for the group. Selecting on either indiv or group beneifts the other.."an amazing alignment of interests and utilities"...addresses role of culture in evolution.
+
+[r206c5] row207 seq3 157w current_node=III.2.X about=Dennett;Dawkins
+information connects with our choices across a broad spectrum of mechanisms. At the molecular level, interaction with information over millions of years has shaped the structure and function of our DNA through natural selection, and at much higher frequencies with CRISPR and epigenetics (perhaps even heritable epigentics); at a cellular level we respond to information through our immune system. Over the past 150 years or so, all these molecular and biological mechanisms of information capture have been modeled and intentionally applied by human beings to achieve more efficient and stable outcomes. At a social level, information connects to our choices through direct and indirect, linguistic and nonlinguistic interaction with peers, and through direct and indirect interaction with culture. At the social level, just as with molecular and cellular biology, these patterns of information interaction, which Richard Dawkings has called memes, also admit of natural selection and intelligent design, as Daniel Dennett has described in an illuminating account.
+
+[r209c3] row210 seq1 38w current_node=III.2.X about=-
+self-assembly of monolayers...required for productive change in structure across scales (molecular-to-larger-devices) // gold island link https://photos.app.goo.gl/LeNEpM6UWxp5txVu8 // octane thiol on just the island https://photos.app.goo.gl/cNH9bJJDF4nAPx3TA // close-up of 8-thiols ordered... https://photos.app.goo.gl/6LALSZkRqoh5xD8e6 ) 4 images in self-assembly collage slide https://photos.app.goo.gl/w2N1Vkds6myHDWfw6
+
+[r209c10] row210 seq7 119w current_node=III.2.X about=-
+https://photos.app.goo.gl/ZRcjKaWHDPxx74rX8 The first three are images I took on an STM; the last, a pretty cool set of patterns, this time made not by putting molecules of the right configuration on a flat surface (as in the octane thiol on gold images, 1-3), but by ordering up DNA, basically, a gene for a pattern, or rather for a repeating pattern, that forms (just like protein from the corresponding amino acids) through automatic folding. Imagine now the DNA for a community of the right sort, so that it automatically fosters other communities (even with different starting points) and generates the right sort of information exchange between them. The meme of “intellectual honesty” is part of that connection pattern : )
+
+[r216c4] row217 seq2 29w current_node=III.2.N about=Carroll
+nice example of a 32 neuron system that distinguishes between itself (internal stimuli) and external stimuli... TL: implication: getting it on the spectrum of consciousness, where we also sit...
+
+[r217c4] row218 seq2 85w current_node=III.2.X about=-
+So in our thinking, we are computing, processing information. We are forming relationships (writing reflective information = getting to know, understand, experience, enjoy the world), with some degree of efficiency and stability, and those relationships help us process information more efficiently and stably (optimally, in networks--HIFNRCs--that share results of computation, rather than generate heat and endless cycles of reinventing the wheel, that is, of processing over and over without social storage.) We are computing better (judged, chosen and upheld), more stable outcomes, ever more efficiently.
+
+[r217c6] row218 seq4 83w current_node=III.2.X about=-
+Together, we form one large computational system, now assembled not only biologically, and socially, but in digitally; now not only in components that evolved through natural selection (genes, society, language/memes), but in with designed components (AI.) We are parts of one large computation, held together as a whole in the way that our own minds are held together as a whole around a single subprocess (the keeping in proper function, inccluding proper relationships with other properfly functioning components) of a much larger whole.
+
+[r218c3] row219 seq1 76w current_node=III.2.X about=-
+Let's try a name for this cluster of CU, HIFNRCs (including, again, a computatble model for TGR), and Cs-as-CRIN model of consiousness: let's call that cluster the human computational model (HCM). The HCM asserts that 1) the universe is computable (CU); 2) that our most treasured and humane features (TGR) of the universe are computable (HIFNRCs); and 3) our ordinary life and thought, embedded in the whole of nature, is where that computing is being done.
+
+[r220c4] row221 seq2 17w current_node=III.2.N about=Hawkins
+reference frames in neocortex; multiple models of everything we experience...these models compete in a prediction network...they vote...
+
+[r220c5] row221 seq3 24w current_node=III.2.N about=Hawkins
+relatively uniform neocortex vs "old brain" with diverse parts that evolved over time...some old brain structures (grid cell structure) is carried through into neocortex...
+
+[r220c6] row221 seq4 105w current_node=III.2.N about=Hawkins
+neurons have thousands of synapses (connections: 5 - 30,000 per nueron...10-20 active at the same time, creates dendritic spike...travels to soma, cell body, changes voltage but not enough to fire the cell....most of those synapses are recognizing connections, making predictions, getting ready to fire...gaining speed if called on to actually fire...inhibitory neurons are very fast...first fire beats its neighbors...(TL: competition in the prediction context...time-based prediction engines are essential to intelligence...point neurons model it only poorly...real neurons form new synapses in clusters of 10-20 or so...that's the patterning unit...10-20 is optimal to noise and error at this scale, and biology supports this number...we actually use it...
+
+[r220c9] row221 seq5 34w current_node=III.2.N about=Hawkins
+can't achieve much AI without new forms of neural networks...need this time-based prediction engine...//can't just scale up today's convolutional neural networks to get close to human AI...that's the wrong path; there's an alternative path...
+
+[r220c10] row221 seq6 39w current_node=III.2.N about=Hawkins
+new direction: start with "sparse representation": eg, 2% of neurons engaged, say, 10K neurons... (there are 150K or so)...sparse population codes have beutiful mathematical properties....robustness....so introduce sparseness into CNNs...sparse representations are hard to fool, contra adversarial neural network attacks...
+
+[r220c11] row221 seq7 34w current_node=III.2.N about=Hawkins
+next, incorporate 1000 brains theory (not a new idea) but do it the way the brain does it, the way the brain votes...lots of simple models that talk to one another in certain ways...
+
+[r220c12] row221 seq8 44w current_node=III.2.N about=Hawkins
+synaptogenesis IS learning...forming new synapses...but it takes 1 hr to grow one,,,so how instant learning? silent synapses, they seem to do nothing...very quick memories convert silent synapses to active ones...but long term memory forms new synapses, which takes time...(hence come back time after time...)
+
+[r220c13] row221 seq9 46w current_node=III.2.N about=Hawkins
+AI in 20 years, on this new 1000 brain model...we passed the step function a couple of years ago...listen to this video again // isn't the key idea, that every column of cells in the neocortex forms its own representation of everything...parallel procssing with voting ...
+
+[r220c14] row221 seq10 54w current_node=III.2.N about=Hawkins
+want intelligent machines of all different levels of capability...start by defining what makes something intelligent, and apply those principles to all kinds of problems...AI needs to have some concept of movement, of processing through time...so some sort of embodiment is necessary...each component of the system needs to know where it is at every time...
+
+[r220c17] row221 seq13 19w current_node=III.2.N about=Hawkins
+why do we fear death? programmed genetically; and sadness at lost of ones we know... old brain, programmed things.
+
+[r221c4] row222 seq2 20w current_node=III.2.N about=Hawkins
+1M neurons, 15-20B neurons, 1000s of connections between neighbors, 1500 cm2, 2.5mm thick, 50-100T synapses containing all K we have...
+
+[r221c5] row222 seq3 7w current_node=III.2.N about=Hawkins
+difft areas of NC do different things...but
+
+[r221c6] row222 seq4 17w current_node=III.2.N about=Hawkins
+sparse, distributed representations are the brain's equivalent to the bit iin a computer...it is a fundamental unit.
+
+[r222c5] row223 seq3 34w current_node=III.2.N about=-
+brain connections, both structural and functional... 2 quadrillion smaller units than a single brain, 1mm cube, 50k nerve cells, B synapses per cube... 2K TB of data to write connections in a single mm3
+
+[r222c6] row223 seq4 15w current_node=III.2.N about=-
+more digital information to map the brain that exists en toto in th world today
+
+[r231c8] row232 seq4 29w current_node=III.2.N about=Carroll
+nice example of a 32 neuron system that distinguishes between itself (internal stimuli) and external stimuli... TL: implication: getting it on the spectrum of consciousness, where we also sit...
+
+[r235c4] row236 seq2 54w current_node=III.2.X about=Wolfram
+steps to the end point are irreducibly part of the path to an outcome in computations...that's why history is so important. The details about us are what is important about us...there is no abstract difference between us and other things...the difference is in the details...there is no bright line between intelligence and mere computation...
+
+[r235c5] row236 seq3 19w current_node=III.2.X about=Wolfram
+diffrerence between a rock and a trillion souls...is in the history, not in the complexity or anything else observable...
+
+[r247c7] row248 seq5 74w current_node=III.2.N about=-
+Iterative calculations on the initial existence matrix according to the laws of nature neurons acquire sensory input over time, a set of observations with an existence state expressed as a probability assigned to each (in qbits), and transfer these across synapses with certain mylenation and other properties that amount to an accumulated, multi-sensory calculation on basic input (the neuronal calculation, Neuronal sensation) This need not be represented by matrix multiplication: it is matrix population.
+
+[r247c8] row248 seq6 53w current_node=III.2.N about=-
+these neuronal calculations are summed into a meaningful interpretation (perhaps through more than one cycle with feedback loops, etc) inside each of say 1000 1mm^2 columns, the "thousand brains" of TBT, (___# of neurons/column unit):  this is at the neocortical column, the "Brains" of the 1000 Brains theory. This is the Brain's interpretation.
+
+[r248c7] row249 seq2 135w current_node=III.2.N about=-
+each sensation matrix interacts with (is multiplied by) a preference matrix, which is a set of possible states of affairs and a preference state expressed as a probability assigned to each. That preference state value may be just a future existence probability that we (at some level) experience as inclination. The application of this preference matrix (via multiplication, subconsciously at this level and at consious levels at the next stage) is perhaps the wratcheting forward of the world toward states of affairs that most stably express the shared loving consciousness of reality (which is the telos of creation, sometimes expressed as "all things united in Christ".) This may happen at the columnal level, an intepretation assigned to events as better or worse in various respects. Fight or flight is a primative response, presuming "don't eat".
+
+[r249c3] row250 seq1 21w current_node=III.2.X about=-
+starting again a third time, with AI reflections both with respect to informing and guiding, which cut across the stimulus/reponse distinction
+
+[r249c5] row250 seq2 51w current_node=III.2.X about=-
+As life emerges on the spectrum of consciousness in the next stages of this process, including human life, it is important to see that we are all already artificial intelligence; nature is an artiface, on this model. We are are calculators expressed in carbon: other calculators are expressed in silicon. Consciousness
+
+[r249c6] row250 seq3 110w current_node=III.2.X about=-
+At every stage after the promulgation of the initial existence and operation matrixes, what exists (expressed as existing in space-time in the existence matrix) co-calculates with the designer, just as AI that we create is how we do calculations, even as it calculates, co-calculating with us in that sense. (Viewed another way, this co-calculation is co-creation.) So when what we call AI calculates, it co-creates just as we do, providing a new set of information expressed in the existence matrix. AI, happily and typically, is than we are, and in many ways can provide information that we lack and need to further calculate an optimized community of conscious, loving beings.
+
+[r250c3] row251 seq1 21w current_node=III.2.X about=-
+starting again a third time, with AI reflections both with respect to informing and guiding, which cut across the stimulus/reponse distinction
+
+[r251c8] row252 seq4 38w current_node=III.2.X about=-
+AI can be woven in at a (really crudely) hardware, sofware, and cloud/network/machine learning levels, analogous to neuronal, columnal, and personal levels. AI can also be of service across every level, if the necessary interfaces can be constructed.
+
+[r253c7] row254 seq5 33w current_node=III.2.X about=-
+This consistent computational analysis, cast as matrix multiplication (as is done in physics) is the unifying theme running throughout these layers, understood also in light of a computational account of truth and goodness.
+
+[r255c4] row256 seq2 39w current_node=III.2.N about=-
+electrical, chemical, motor signals turned into (transduced to) action potentials, which operate at the same potential (-55 mV steady, up to +40 in a _____ event, recovering past steady to -70mV, and then a slow rise back to -55mV.
+
+[r255c5] row256 seq3 45w current_node=III.2.N about=-
+12 cranial nerves in Central Nervous System (vs Peripheral), I. Olfactory; II. Ophthalmic; III. Oculomotor; IV. Trochlear; V. Trigeminal; VI. Abducens; VII. Facial; VIII. Acoustic; IX. Glossopharyngeal; X. Vagus; XI. Accessory; XII. Hypoglossal “O, O, O, To Touch And Feel A Girl’s Vagina, Ah Heaven!”
+
+[r255c6] row256 seq4 37w current_node=III.2.N about=-
+Action potentials are translated either electrically or chemically across synapses in neurons. Some of those neurons are mylenated, allowing for faster transfer by jumping from junction to junction electrically, in effect a faster pathway grown from exeprience.
+
+[r255c7] row256 seq5 59w current_node=III.2.X about=-
+The key takeaway here is that the particles that emerge in S-T self-assemble through natural selection into celular clusters, including neurons and neuronal clsusters, that retain and grow the structure needed to calculate the development and sustained interaction of still larger clusters, which information is tested and refined in natural selection and amplified in time through living system reproduction.
+
+[r255c8] row256 seq6 54w current_node=III.2.N about=-
+In the human brain, in stacks of 150K or so neurons and (roughly equal numbered) glia (glue) supporting cells of perhaps dozens of types, each stack 1mm^2 x 2.5 - 3 mm high (varying with location), meaningful intepretation is produced in fairly scattered clusters, each operating independently like a little brain ("1000 brain theory")
+
+[r267c5] row268 seq3 8w current_node=III.2.N about=-
+brain split studies suggest separate persons, conjoined twins
+
+[r267c6] row268 seq4 16w current_node=III.2.N about=-
+also, interpreter effect, where one side, cut off from information moving the other side, interprets action
+
+[r286c4] row287 seq2 110w current_node=III.2.X about=-
+...if all that, then we should be able to give an account of what information processing is like at every level, including emergent (created) conscousness, and also of original consciousness. Original consiousness must model, too, and drive change through that model, from an intial set of conceived conditions through a selected set of laws (at every stage expressed as code, as matrix model applied to existence input) to a fruitful set of outcomes, from which participatory and co-creative consciousness emerges, builds what it needs (socially, technologically, eventually computationally, biologically) to be able to drive the computation of how to spread shared, loving consciousness everywhere and every way it can go
+
+[r288c9] row289 seq3 107w current_node=III.2.N about=-
+add to this line of thought, reflection on the fact that brains already in fact can be wired to control the same shared body, the new arm controlled in part by the paraplegic and in part by her fuller functioning assistant, until the control of the two gets enough success for the assistant to back out. // in experimental, nontherapeutic cases, 3 monkeys brains can share control of a mouse/hand (each with 1 axis of freedom), so multiple brains can share one control, one sense of ownership, belonging of one single body part...// coming soon, brains controlling things very far away, or multiple brains...no limits apparent, here...
+
+[r289c7] row290 seq5 64w current_node=III.2.N about=Chollet;Fridman
+objectness, agents, goal-directed behavior, language...all these are human priors (not an exhaustive list) AF: How hard is it to encode those priors? Maybe you need to build a universe? FC: need stable basis to encode via evolutionary pressure...millions of years...dna is low bandwidth (rephrases AF), so a long time is rquired to encode this innate K (most of which is shared with great apes)
+
+[r290c4] row291 seq2 32w current_node=III.2.N about=Hinton
+what a thought is, is an activity pattern in neurons (biological or otherwise); in a recurrent neural network, the thought (check this) is the state of the last layer of artificial neurons...
+
+[r295c4] row296 seq1 9w current_node=III.2.X about=-
+computation experienced across emergent spectrum of shared (created) consciousness
+
+[r295c5] row296 seq2 10w current_node=III.2.N about=-
+biology emerges as self-assembling, self-replicating (implying self-energizing, like a business)
+
+[r295c7] row296 seq4 5w current_node=III.2.N about=Hawkins
+1000 Brain Theory of intelligence
+
+[r295c8] row296 seq5 5w current_node=III.2.N about=-
+at neuronal stack unit level
+
+[r295c9] row296 seq6 3w current_node=III.2.N about=-
+resolving stacks (voting)
+
+[r307c7] row308 seq5 37w current_node=III.2.N about=Anil Seth
+interoception--nonconscious tracking of bodily states of various sorts--is aligned, presumably causally?, with perception (eg, a that a fake hand is my hand, if flashing red in alignment with my heart rate, of which I am not conscious.
+
+[r308c3] row309 seq1 27w current_node=III.2.N about=-
+// back propagation, the ML paradigm, is NOT how error correction happens in the brain, at least not with the best-known and highly intense visual sensory system
+
+[r308c4] row309 seq2 50w current_node=III.2.N about=-
+the brain operates on Predictive Processing, where expecations for the next perception are sent up to neurons much nearer to the source of visual stimuli...these predictions are compared there, and error adjument signals are sent back to the amygdala for processing...what this "fear center" primarily responds to is missed predications
+
+[r308c5] row309 seq3 51w current_node=III.2.N about=-
+"Note that because of the predictions the amygdala is finding out about a possible threat over a half second earlier than in a body using only the forward network. That half second has been the difference between life and death over our entire evolutionary history." John Light, neurotheorist, in quora: https://www.quora.com/Neuroscience-How-does-backpropagation-work-in-the-brain
+
+[r308c7] row309 seq4 26w current_node=III.2.N about=-
+...."The predictive path might be considered “back propagation” relative to the forward direction, but it is nothing like back propagation in current ML." also from Light
+
+[r309c7] row310 seq5 27w current_node=III.2.X about=-
+priors across the disciplines: isn't feeding the operation matrix-laws of nature with the first existence matrix-original conditions at big bang?...isn't that a first step in a computation
+
+[r314c4] row315 seq2 37w current_node=III.2.N about=Hawkins
+grid cells in hippocampus were grabbed and reused throughout the neocortex...evolved for spacial navigation, but uptaken in the neocortex (enlarged from the single grid cell model, and repeated many times, but now for objects, not just location...
+
+[r314c6] row315 seq4 13w current_node=III.2.N about=Hawkins
+neocortex got big rapidly like anything that changes in evolution rapidly: by replication
+
+[r314c7] row315 seq5 34w current_node=III.2.N about=Hawkins
+1000 models doing visual, 1000s for auditory, for language, etc, each column modeling its inputs, some building models of models....each unit votes (not clear...each unit knows what the object is, recognizes it...must be predictive???--TL)
+
+[r314c9] row315 seq7 73w current_node=III.2.N about=Hawkins
+but our brain learns anything, using the same basic algorithm, all at the same time (car, family, house, music, ...) key intelligence Q: what is its model like, and how can we enrich it? We can enrich our own...grid cells are a very general purpose (GP) reference frame...a way of locating and assigning knowledge to a thing...need a RF to store structure (cart coords are an example; grid cells are another GP RF.
+
+[r314c10] row315 seq8 65w current_node=III.2.N about=Hawkins
+very little assigned RF is in CNN these days; most models are learned...does it even use a RF? not easy to tell w/ AI, but brains have RFs...cant be smart w/o a GP RF. So there are different types of RFs, and they can be anchored to different things (like setting zero in different places, in cartesian coords, vs first row of a chess board...
+
+[r314c11] row315 seq9 74w current_node=III.2.N about=Hawkins
+egocentric v object-centric reference frames in human brains HBs, where vs what, and these can be independently damaged to different effect...intelligence dimensions: reference frame types, GP types or less so, capacity (#s of each type), complexity of each...a mouse has neocortex (all mammals do) and learns like we do, but with very limited capacity...computing same way...universal Turing machine, gp computer, can solve any problem w/ enough memory and time. other computers much less GP
+
+[r314c13] row315 seq11 80w current_node=III.2.N about=Hawkins
+so humans have abstract refernce frames...how does that bear on our measure of intellligence? JH: the point is, our brain in fact uses RFs...that's what is in there, that's how it works. So abstract learning must use RFs in some way.// K is information assigned to a RF, with corresponding ability to navigate through this information, these facts, to achieve certain results...high level K is org of concepts in RF, and being able to navigate it to get things done.
+
+[r325c3] row326 seq1 23w current_node=III.2.X about=-
+// need some short summaries (sketch of key findings and questions, state of discussion) of Cs, QG, Cos, Chem, EB, NS, SP, AI,
+
+[r325c4] row326 seq2 7w current_node=III.2.X about=-
+need some kind of map with interlinkages
+
+[r325c5] row326 seq3 1w current_node=X.1 about=-
+CS
+
+[r325c6] row326 seq4 1w current_node=X.1 about=-
+QG
+
+[r328c4] row329 seq2 43w current_node=III.2.N about=Godel
+brain stores a different kind of information (Godelian information), not Shannon information, but through some kind of energy dissipation storage that is not digitial purely in that same way (coverered quickly during Q&A around 1:11 ... the brain is not a turning machine...
+
+[r328c5] row329 seq3 72w current_node=III.2.N about=Nicolelis
+Brain Nets.. overcome limitation of single body for brain activity...; overcome limitation of single brain to solve problems...multiple brains at once can syncronize efforts, the others unknown to each one ... // the basic unit of intelligence is a many-neuron system, not one or even a few, but many, distributed ... can do brain to brain interface, can exchange bits of information, but we'll need a digital/analogue hybrid to model brain intelligence
+
+[r328c8] row329 seq5 40w current_node=III.2.N about=Nicolelis
+aside: generally all (?) physical and psych diseases, not rightly disgingushed according to him, are hypersincronous diseases, like defib of the heart ... success with defib chip in spine to disrupt parkinsons successfully...1:23 or so...catch seisures early; works in parkinsons...
+
+[r337c4] row338 seq2 56w current_node=III.2.N about=Dennett
+dennett seems right, on consciousness not being some absolute state, a fixed line, but rather a dynamic of interplay among competing models assembled throughout (he might have said) columns in the neocortex (relating in turn with the old brain, re/ location (cerebellum?) and fear (amygdala?), though he does not discuss (in 2014) the dominance of prediction
+
+[r341c12] row342 seq10 28w current_node=III.2.N about=-
+...including the energy limits of our 30W processors, our brains, which rather than create or give rise to consiousness instead express the limitations of our particular conscious perspective.
+
+[r353c4] row354 seq2 32w current_node=III.2.N about=-
+// transcraneal magnetic stimuation of temporal lobe seems to produce experiences of being in the presence of a loving being, for everyone alike.. https://www.youtube.com/watch?v=NbyRrFUncAw (different cut of same interview): the "God spot"
+
+[r354c4] row355 seq2 24w current_node=III.2.N about=-
+roughly 1/3 of neocortex is involved in vision//but camera theory of vision is not right//we construct all these objects, motions, and colors...created in 100ms//
+
+[r357c5] row358 seq1 48w current_node=III.2.N about=Hoffman
+DH; touch a magnet of a certain type to brain region V4 to remove color; section MT to remove smooth motion: these are two of hundreds of correlation between brain activity and Cs. But no causal relationships, beyond correlation, are even published...wrong way to connect Cs to brains...
+
+[r367c3] row368 seq1 93w current_node=III.2.N about=-
+// the Default Mode Network of the brain, highly active when specific task activation is low, responsible for our sense of selves, others, social interaction, and narrative comprehension, shows parallel activitation when the same story is told to different people in different languages. There seems some underlying brain commonality to narrative management (Honey, Christopher J.; Thompson, Christopher R.; Lerner, Yulia; Hasson, Uri (2012-10-31). "Not lost in translation: neural responses shared across languages". The Journal of Neuroscience. 32 (44): 15277–15283. doi:10.1523/JNEUROSCI.1800-12.2012. ISSN 1529-2401. PMC 3525075. PMID 23115166.) See also DMN article in wikipedia: https://en.wikipedia.org/wiki/Default_mode_network
+
+[r367c4] row368 seq2 94w current_node=III.2.N about=-
+Das Default Mode Network (DMN) des Gehirns, das bei geringer Aufgabenbeanspruchung hochaktiv ist und für unser Selbst- und Fremdempfinden, soziale Interaktion und das Verständnis von Erzählungen verantwortlich ist, zeigt parallele Aktivierung, wenn dieselbe Geschichte verschiedenen Personen in verschiedenen Sprachen erzählt wird. Es scheint eine zugrundeliegende neuronale Gemeinsamkeit beim Erzählen von Geschichten zu geben (Honey, Christopher J.; Thompson, Christopher R.; Lerner, Yulia; Hasson, Uri (31.10.2012). „Not lost in translation: neural responses shared across languages“. The Journal of Neuroscience. 32 (44): 15277–15283. doi:10.1523/JNEUROSCI.1800-12.2012. ISSN 1529-2401. PMC 3525075. PMID 23115166.). Siehe auch den Wikipedia-Artikel zum DMN: https://en.wikipedia.org/wiki/Default_mode_network
+
+[r371c5] row372 seq3 302w current_node=III.2.X about=-
+? perhaps the metaphysics of our limited perspective, our drive toward models as efficient processing modes, our percolation into consideration (existence), our continuation as contributors to the calculation of a created harmony and unity--of Christ, the beginning (timeless creative purpose) and end (ultimate created effect) of this limited-perspective, i.e. created calculation--perhaps our participation in this calculation advances through efficiency in the face of finitude, of limitedness, which amounts to advancing through fitness, through evolution. So beholding a finite subset of possibilities amounts to adopting a limited perpective, which plays out (advances, calculates) in Space-Time (S-T), amounting to the processing of the whole through the part (the finite, the limited perspective), with a two-fold implication of required efficiency: 1) as models (subsuming, processing the many under the few or under one), which is our individual and collective (cellularized) experience of this limitedness, this drive toward efficiency at the cognitive level (following laws of logic/mathematics, the laws of nature (confines of our limited perspective, expressed as cellular consciousness); and 2) as fitness, which is this same drive toward efficiency expressed in the collective limited consciousness of nature (this limited, cellularizable (parallel processed) perspective of fundament ...[TRUNCATED]
+
+[r371c8] row372 seq4 75w current_node=III.2.X about=-
+Somehow the key ideas here are of fundamental consciousness, of creation as adoption of limited perspective, of parallel processing through cellularization (expressed at multiple levels, notably in brains and in societies), of efficiency (expressed as fitness, at least both at biological levels as survival and at psychological/conscious levels as models, which is actually at conscious levels at every level, but not perceived as conscious at every cellular instance (here, too, achieving efficiency through specialization/level creation).
+
+[r372c4] row373 seq2 93w current_node=III.2.X about=-
+to live is to calculate; created life is calculation under (adoption of) a limited perspective and therefore in time; that computation is rendered more efficient through cellularization (parallelization); error correctiion is one aspect of efficiency that seems also to be achieved through parallelization and sparseness strategies. So our cells are alive, our individual members of a society are alive, our communities are alive, our memes may be alive, our language, our models...unless we distinguish between consiousness and what consciousness thinks about/is aware of...but on an FC model, no such distinction seems ultimate, fundamental.
+
+[r373c6] row374 seq4 26w current_node=III.2.X about=-
+2. We can extend that social information-processing paradigm across all areas of inquiry, notably, quantum physics, neuroscience and consciousness studies, on a limited-perspective fundamental consciousness model.
+
+[r379c9] row380 seq7 28w current_node=III.2.N about=-
+p. 10: split brain studies, even theological differences can exist between hemispheres, once the cortical collostrum is cut. (who can be saved? "tough questions for a future neurotheology.")
+
+[r385c8] row386 seq6 56w current_node=III.2.N about=Graziano
+on embodied cognition movement: anti-modeling, anti-computation in appearance. MG: this is a diverse, vast literature, some of it interesting and valid, so MG embraces much of that literature, but not magicalist features of it...so the brain doesn't necessarily build explicit models, some are hidden and implicit, some fit the embodied cognition description, esp re/ motor capabilities
+
+[r386c5] row387 seq3 55w current_node=III.2.N about=Koch
+Side note: 69 of 86 B neurons in our brain are in the cerebellum (not the cortex): primarily about motor skills; no loss of Cs if damaged or missing. Cs seems to depend on cortex (but also brain stem) esp the posterior hot zone (agency, desires seem there.) What about neuroplaticity; it's all cortex? ...
+
+[r386c6] row387 seq4 17w current_node=III.2.N about=Koch
+there is now a presence/absense of conscousness tool (zap and zip, with magnetic pulses, looking for echoes...)
+
+[r388c4] row389 seq2 110w current_node=III.2.N about=Koch;Crick
+Almost all neuroscience left out what it is to be the owner of a brain, experiences, feeling like something. heart of M/B problem. Searching for NCCs, now standard in the field, inaugurated by Koch and Crick. What NCs are jointly sufficient for (eg) hearing CK's voice...what are the essential causal actors...in new book, the Feeling of Life Itself, they go beyond the search for NCCs, to an analysis of the cerebral cortex (that gives rise to Cs) Can turn on mom's face, or mom's voice, or ... close 1:1 correspondence between particular experiences and specific regions of the brain (NCCs): can turn these on and off by stimulus of NCCs.
+
+[r390c4] row391 seq2 16w current_node=III.2.N about=-
+there are 1M visual sensory inputs from the eyes, 1M from the body, 30K from auditory
+
+[r390c5] row391 seq3 29w current_node=III.2.N about=Hawkins
+PM: 5 papers on sequences, then sensory motor sequences, then cortical columns based on grid cells from hypocampus can do that trick, all this mapped onto layers in cortex.
+
+[r390c6] row391 seq4 130w current_node=III.2.N about=Hawkins
+JH: several million fibers in from senses, constantly changing (either world moves, or we move),brain builds predicitve model of the world, looking for sequence, mostly because we move; sensory motor model addresses this problem using grid cells. Neocortex has cells representing locations relative to other things (eg features on the door...); this location signal is the big deal. How could neurons know where the body is? Look at grid cells in the entorhino comples in the hypocampus represent location of body relative to room; nature hacked this; cortex uses grid cells for location processing of everything relative to everything. Grid cells complexes are clever, evolved over a long time. (See rat moving around room image in paper.) Same in neocortex, if finger moves around the typwriter...cortext took the navigation algorithm.
+
+[r390c9] row391 seq5 66w current_node=III.2.N about=Hawkins
+1 must be grid cells. 2 every column can learn complete models. 3. Need displacement cells: no evidence yet, but proposed, predicted, needed: deduced (how?) marcus lewis from neumenta came up with this solution: 1mm^2 x 2mm high x 100,000 neurons per column, 10K per layer (6 or more). #s tested against theory and observation, both. Maybe 1/10th of cells are related to the displacement(?) cell.
+
+[r393c12] row394 seq4 170w current_node=III.2.X about=-
+so the argument that takes has its foundation information processing on the information is awareness paradigm, must turn to information as considered throughout the sciences. This will require an investigation of physics, neuroscience, computer science, at least. Since those disciplines do not proceed without connection to one another, and other candidate relevant disciplines, it’s likely then if we can find an account of information that works in the social, at the physical, at the Nuro cellular, as well as cognitive neural levels. That account of information is likely to be useful for every other candidate to made of inquiry, since None of these areas of inquiry can proceed far without reference to the others. Are useful model in this regard is cannonballs chain together in a ring. Each of these cannonballs is a heavy lift by itself, but it gets all the heavier if you try to pull it too far, which requires moving the others. Together, they must be moved, or not at all, or at least not far.
+
+[r393c14] row394 seq5 33w current_node=III.2.X about=-
+so the argument that’s emerging in my thinking is that this information as awareness paradigm helps us progress not just for social information processing, but in physics, neuroscience, and artificial intelligence as well.
+
+[r399c3] row400 seq1 103w current_node=III.2.X about=Hawkins
+January 31, 2020.The subtitle of Jeff Hawkins book, on intelligence, Makes reference to a new theory of brain intelligence. The question I want to explore is as he also pointed the way toward a broader theory of social intelligence. So let me try to say what his theory is about how the brain works, and what intelligence is. Let me then try to point to some analogues at the social level, And sketch a level of human intelligence which is fully social. It’s worth asking, whether that same extension goes further still, pointing toward a theory of global intelligence, or perhaps created intelligence.
+
+[r399c4] row400 seq2 337w current_node=III.2.N about=Hawkins
+On Hawkins theory, intelligence is model based prediction. But models, in the brain, are different than the generally more simple mathematical/computational models that we know in Science. Models in the brain or more like memories, which is to say, Stored patterns which are very complex, hierarchically ordered, auto associative (that is, the whole of the model or memory can be called by a simple reference to the part), and have remarkable Fidelity across change of media, the way intervals In music can be preserved across changes of key. (Hopkins has a particular name for this feature of Cortical memory, which I should look up And use.) processing in the brain is something like throwing forward a very full model of the world As a predicted pattern, one characterized by all those preceding features, toward a modest amount of sensory input, which in turn generates a revised predicted pattern, The important thing to note here is that this predicted pattern is not a calculation from the previous sensory input; it’s way too complicated it happens way too fast for that. It’s more like a shift, triggered by a small amount of century input, the way entire function might be transformed by changing a single coordinate and operational matrix.To take a simple example, an entire function can be reflected from an upper right quadrant to a lower left quadrant by multiplying through by -1, So t ...[TRUNCATED]
+
+[r399c7] row400 seq3 67w current_node=III.2.N about=Hawkins
+For Hawkins, this kind of calculation is not the sort of thing which our current computer models do. There is no calculation on a detailed series of inputs; instead, there is a hole, which adjusts to expected series of inputs. We would have neither the energy, nor the time, to make the predictions we actually make, Unless these very different kind of pattern-rich, predictive calculations were performed.
+
+[r399c8] row400 seq4 133w current_node=III.2.N about=Hawkins
+remarkably, these predictive model calculations are not performed primarily by the brain as a whole, but rather, by thousands Of complete calculators working in parallel, not on separate parts of a problem being running parallel, but I am the whole prediction. Only once these many whole predictions are made, does the brain operate as a whole in reconciling them. To use the language Hawking’s users, there is something like a vote. It says if everybody is working the problem at the same time, and telling everybody else about it, in a big community of calculators. Once these messages are passed from one calculator, literally, from one neuro- cortical column, about which more must be said soon, To all the others, a single vote is made or rather at least, a single experience results.
+
+[r399c10] row400 seq5 221w current_node=III.2.N about=Hawkins
+Let’s focus for a minute on just one of these calculators. The calculating unit is a roughly 1 mm² by typically less than 3 mm high stack n of neurons which are interconnected with one another in remarkably complex ways, but in ways which themselves admit of higher ordered patterns, patterns which are different in ways that amount to six recognizable layers throughout each of these columns. This six layered columnation is repeated throughout the entire cortex, which, to put it simply, is where intelligence resides.To borrow one of Hawkins many excellent analogies, consider a business card, somewhere between two and 3 mm thick, with the sharpest of points visible to the eye made by a pencil, something roughly the size of a period. imagine that business card extending out in each direction until the hole is something like the size of a dinner napkin, and those periods multiply into the tens of thousands. Imagine each of these periods as an independent calculator, with amazingly complex connections throughout the entire six leveled stack of intern 10,000 neurons, each of which connected thousand of times to other neurons in other stacks throughout the entire surface area of this dinner napkin, which is our cerebral cortex. The number of connections made in a single human brain in this way numbers into the trillions.
+
+[r399c12] row400 seq6 198w current_node=III.2.N about=-
+A remarkable feature about our brains, already suggested by the simplicity of the analogy just given, is that, for the most part, all of the stacks are the same. Moreover, all of their connections to one another are roughly the same. And so, also roughly the same, are all of the connections which link these to our sense organs. There are intern millions of such connections between calculators and century input in the brain: 1 million for a visual system alone; another million for all of our physical senses, amir 30,000 for auditory system, and many others, from a set of sensors which we in common language number is five, but in fact or more like a dozen. Think, for example, of the way we both here and keep our balance with our years. These are two systems, which we failed to distinguish in our ordinary listing of fights. Without running through all the details, the sort of distinguish ability applies to other senses too, and so we have a roughly a dozen such systems of input, each using tens of thousands or hundreds of thousands of connections from the senses to each of our calculating cortical columns.
+
+[r399c14] row400 seq7 180w current_node=III.2.N about=-
+just at this point, having introduced almost no distinctions in the physical arrangement between the sensory connections and the cortical columns, I have perhaps introduced too much symmetry. After all, our optical nerves bring senses from our eyes through the visual visual system which resides in the back of the brain, and proceeds upward through a hierarchy in different sections of the visual system. And so on for our auditory system, And taste, and sensory motor connections, etc.: each of these functions is located, famously, in different portions of the brain. Moreover, there are in fact two of almost all of these sets of functions, one in each of two hemispheres of the brain, With a relatively smaller number of connections from one hemisphere to the other, running together in the corpus callosum. a region small enough to be snipped by a surgeon, As sometimes is done to Prevent electrical storms from moving from one hemisphere to another In patients who experience quite severe seizures. and so the symmetry is broken in the brain, in quite a variety of ways.
+
+[r399c16] row400 seq8 119w current_node=III.2.N about=-
+and yet this breaking of symmetry masks a deeper, underlying symmetry. For a turns out that for the most part, each of the calculated columns on a dinner napkin are the same. They are distinguished primarily by which particular sense organs connect up to each of them, and in what concentration. But it is quite possible to take any of them, and connect them up very differently than they have been connected, in effect rewiring the century inputs to these calculating columns so that those regions primarily responsible for processing each type of sensory input change with the rewiring. This has been done often in experiment on animals, and accidentally through brain damage of various types in human beings.
+
+[r399c17] row400 seq9 216w current_node=III.2.N about=Hawkins
+The remarkable claim that Hawkins makes is that all of our senses produce from various sources information patterns which run across connections, sensory connections, which are fundamentally the same type of connections across all of the centers, merely carrying different patterns, but seating into these calculating cortical columns which are also all the same, all over the brain. Moreover, calculations based on these Sensory inputs, once they work their way up those cortical columns which are directly connected with the given type of sensory input, our intern shared throughout the brain, quite widely, though not at all with perfect symmetry. and so throughout the brain, many or all of these cortical columns are connected to the sensory input, either directly, or in some more highly processed way, from all of the senses. And so A very large number of independent though interconnected calculators are creating models with input from all of the senses, and creating, each of them individually, a model of the world. These models are intern shared back At a high-level across this network of calculators, with some large differences in the way this is done within and between our two hemispheres, so that in effect many opinions about what’s going to happen next or available to each of the calculators nearly at once.
+
+[r399c19] row400 seq10 172w current_node=III.2.N about=Hawkins
+This model of the brain as a whole neocortical network of independent calculators, Hawkins calls the thousand brain theory. from the account I’ve given it so far, he might well wonder why it’s not called the 10,000 or more brain theory, since there are many more than 1000 independent calculators. The answer to that question lies and yet another feature of brain operation, which is called sparseness. It turns out that we have enormous redundancy in the brain, and that very little of it is used for anything at any time. this relative dormancy peppered through with relatively distant activity turns out to be important for stability, for error correction, and for other features that fall out of the mathematics of sparseness. We need not go any furtherWith the concept of sparseness than that. So it turns out that at any one time, it’s roughly On the order of I thousand independent calculators, not tens or hundreds or thousands of thousands, that are Constructing and comparing independent models of the whole world.
+
+[r399c21] row400 seq11 216w current_node=III.2.X about=-
+let’s consider this dinner napkin sized network of calculators, only sparsely operative at any one moment, and let’s wrap this whole network of calculators with all of the support functions and needs, like oxygen to catalyze the distribution of energy throughout the system, and a complex maintenance of a chemical equilibrium to support the many biological machines that do things like keep Things like viruses from Jumping in and disrupting the ordinary operation of the system. call this whole system of supported parallel holistic calculation, a brain. Will take a little deeper still, but we might pause and wonder already. We might notice, that it is in a very strange way rather like a community of calculators, of computers, of model creators, of perceivers. One might wander a bit further, and ask whether this whole network is a network of intelligent entities. And if they are intelligent, we might ask whether they are conscious. Is our brain or community of conscious entities? But here, we’ve gone very much too far, beyond What are crude model of the brain will support. So let’s make it a little less crude, and then ask the same series of questions again, in an attempt to understand what the brain is, what intelligence is, and indeed what and who we are.
+
+[r399c23] row400 seq12 197w current_node=III.2.X about=-
+It turns out that in the account given so far, we have not yet provided enough input for our network of independent calculators. We have indeed wired them with a great deal of sensory input, recognizing specialization of connection with the senses, but also The commonality of input across the sensors, the flexibility regarding specialization with respect to kind of input (Alfred called neuroplasticity), and also the extreme degree of output sharing both within each of the layers and between the layers within each cortical column, in between cortical columns, so that in the end, whether directly or indirectly, all or nearly all of our columnated calculators receive input Of one kind or another from all of our senses. And yet our senses or not the only source of input that a human being processes. if we were to follow along and build a picture of you and intelligence on the same model, we would need to systematically identify the source of input to the system, and then, at least on a very simple model of the thousand brain theory sketched so far, simply distribute, either directly or after processing, the results from each source of input.
+
+[r399c25] row400 seq13 136w current_node=III.2.N about=-
+We might suppose that in someway, we have already done this in the model we’ve constructed, since we more or less waived our hands at sensory input and all the levels of hierarchical calculation, all the processing that takes place with that sensory input. Here we could just take a shortcut, to look ahead, a shortcut we will later have to undo. thanks for a moment that we were on a hike, traveling in the woods along the ridge of a very high canyon wall. To see ahead, we might leave the woods for the wall, look across the section that we can’t yet walk, and get some idea of where we’re going, before reentering the woods and taking a different path toward that next phase in our destinations. So let’s take such a shortcut now.
+
+[r400c3] row401 seq1 274w current_node=III.2.X about=-
+... Suppose we thought, for a moment, that every higher-level thought that ever enters our head is constructed from sensory experience. A lot of philosophers have entertained this model, but philosophers know who these figures are and the rest of us probably don’t much care. but let’s be like them, for a moment, and suppose that all of our thoughts, our perception not only of the green and the grass or the beauty of the grass, not only of our feet on the grass, but of our very souls, imagine all such thoughts are constructed out of century experience. To use the model as described just above, imagine All of what we might consider our higher ideas are Outputs of complex higher level processes, and that these ideas are shared across the brain quite widely and complex ways, within layers of each cortical column, between layers within each, and between cortical columns, distributed quite widely throughout the brain, so that all the calculators in her brain all have got, for example, a sense of personal identity, a sense of me, or you. if that were so, it wouldn’t seem so far-fetched to imagine our brains as communities not only of calculators, but intelligent calculators, and perhaps even conscious calculators. For here we wonder what it would be to have and process a sense of self, but not to be conscious. But let’s put that wonder back in the box for a moment Wander away from thi ...[TRUNCATED]
+
+[r400c5] row401 seq2 338w current_node=III.2.X about=-
+Back now to intelligence. So far we’ve sketched quite lightly a view of what intelligence is, as model based prediction, and we’ve given an account Of what the brain is and how it works on which there is a very simple kind of symmetry at work. That really simple model, certainly Fails if you bore down very far Into the details, but perhaps It is quite useful and quite right as a higher level model. if that’s the case, then we will need to deliver some Plausibility regarding the big ideas that connect together in that model of intelligence and of the brain. I’ve already suggested that the brain, and indeed intelligence, are both community phenomenon We can understand them as a network of multiple model based prediction engines that take into account everything, not only the input from the senses, but also everything we call ideas, To assemble all models of the world and to predict constantly what comes next, not only at the level of what we will see here taste touch smell etc. but also of what your next be said, we are next to go, How next to feel, What it will next be like to experience what is about to transpire. Purposes here, hope is here, fear, love, meaning. Were there were a network of Computers which predicted at this level, we could no longer tell them, perhaps,From conscious agents, or from persons. Really? Could we be a network of persons? But that from a social point ...[TRUNCATED]
+
+[r400c8] row401 seq3 78w current_node=III.2.N about=-
+So is it all possible that all of our ideas are processed by a whole network of relatively similar prediction engines that receives their input first from the senses and then from one another as they process the input from the senses? A closer look at what we might call the world of ideas and their relationship to the input of our senses, Is needed, and it must begin with a little bit closer look at the brain.
+
+[r401c7] row402 seq2 77w current_node=III.2.X about=-
+here I should note that I am not working backwards from some findings and physics that the universe can be represented as a hologram. I am rather working up from neuroscience,, plus a simple knowledge of what a hologram is. It’s a good analogy at this point. Whether it’s more than a Temporarily useful analogy, and instead plays an essential role In our best fundamental model of the universe, is a question to be taken up later.
+
+[r401c12] row402 seq4 58w current_node=III.2.X about=-
+next steps: grid cells, pattern recognition on the model of grad cells, and pattern recognition all the way up through sensation, contemplation. Good boy good boy. let’s keep also in the back of mind whether societies produce ideas in the same way, well it was a different sort of information sharing, short cut as social clues and language.
+
+[r402c3] row403 seq1 121w current_node=III.2.N about=-
+The notion that all our ideas are processed in the brain using the very same circuitry as used to process what we perceive through our senses is in someways a sensible claim, in another way is not. On one hand, where else and how else might our ideas be processed, other than in the brain, and using the circuitry that the brain has? On the other hand, ideas are not things that we see, nor is there an evident since organ for them, nor connections between such an organ and the neo cortex Or any other part of the brain. So somehow, ideas seem different. And indeed, when we look at the details, we see That in some ways they are.
+
+[r402c4] row403 seq2 334w current_node=III.2.N about=-
+turns out that a lot of creatures with brains do not have a neocortex, yet they sense the world quite well. The simplest I’m nervous systems seem to have evolved on the order of 1 billion years ago, or 10 of the ninth, Whereas the neo cortex is peculiar to mammals Who have only been around for a few tens of millions of years. That’s 10 to the seventh. The difference is 10 to the 2, or about a factor of 100. So for a very long evolutionary time, brains were processing input for the sensors using elements of their brains which are also in some ways, with some differences but not radically many, parts of our own brains as well. The neo cortex evolves much later, and our human brains are distinguished primarily by the sheer size of our neo cortex, rather than by any particular functioning of its elements. Our sensory input is not only connected to this older part of our brain, though it is, the so-called old brain (though it to has evolved and interacts with the neocortex in subtle and many not yet understood ways.) We will return to the question of how and why our sensory input is connected in the human neo cortex, in addition to those parts of the brain with which alone our lizard cousins must make their way through the world. We mammals have a much larger and more complicated system. But before we go to explore those complications and Peer more carefully into the neo cortex, let ...[TRUNCATED]
+
+[r402c7] row403 seq3 201w current_node=III.2.N about=-
+it turns out that essential piece of the processing circuitry in the old brain, ours included, Is it kind of location processing that takes place in A series of complementary navigation cells, (technically place cells, Grid cells, position cells, and border cells.). These clever systems work on a mathematics that enables tracking movement relative to certain other locations, either to fixed locations, or to other relative locations. Adrift at sea, I may have a little idea where I am absolutely, but be able to tell when a wave is turning my small vessel upside down. That’s an example of location tracking Relative to a relative location. Olympic divers on the other hand, not only know which way is up, but roughly how much time he or she has before contacting the surface of the water. That is location Relative to a fixed location. The clever mathematics embodied in These location cells enable these calculations, and not just for human sailors and divers, but for reptiles as well. These functions, and the cells That embody these functions, Reside in the old brain, and more specifically in the hippocampus and other regions of both the older and newer brain. (double check and footnote.)
+
+[r402c9] row403 seq4 98w current_node=III.2.N about=-
+If our suspicions are right that relatively rapid evolutionary processes borrow from and trade on existing Structures to incrementally improve existing functions, We might expect to find grid cells in the new brain as well. And indeed these have been discovered in the neo cortex. Grid cells here also are fed by sensory input, through the same series of connectors (the same connectome) that runs sensory information first to the Grid cells in the hippocampus, and then to our friends the columnated cortical calculators scattered throughout the neo cortex. our question will be, what are they doing there?
+
+[r402c10] row403 seq5 247w current_node=III.2.N about=-
+it turns out that the neo cortex has a very complicated memory system that both serves and is served by the older brain. At the sensory level, we cannot only sense that something has happened, but that we reacted to it in a certain way, with a certain result. Armed with such patterns, we might be getting to predict that matters will fall out similarly, all things being equal, in the future. And when our senses tell us that all things are not equal, we have a basis for predicting change in the future. Our sense of the past, including the patterns we discern in the past, our our means for seeing into the future, for making predictions. These memories become for us models for interpreting new sensory input and making new kinds of predictions. And all of that pattern recognition, taking place in the memory that is the neo cortex, Relies on and deploys the grid cells that are present, with some modification but chiefly very much more complicated interconnections, in the layers of our collimated cortical calculators. These memories and predictions outstrip the capabilities demonstrated by our cousins with nearly lizard brains. But rats and dogs and generally all mammals have neocortex capable of performing such computations and generating such predictions.Throw a ball three times for your dog, and then hold your hands behind your back, and watch Him predict. Watch him strain to get i ...[TRUNCATED]
+
+[r402c12] row403 seq6 151w current_node=III.2.N about=-
+We would be right to notice that our dogs predictions are not exactly in the realm of ideas. He has no idea of play. he can play, but he cannot tease. He can be teased, but he won’t really get it. so we have not yet come far enough on our journey toward understanding what ideas are and how they might be processed, but neither have we finished exploring even the fundamentals of the complexity of our neo cortex. For while all the basic cortical functions are present in our mammalian cousins, what a striking is how much less of it is present in their brains than ours. Whales are an exception to this rule of thumb, but no exception when we plot The ratio of cortical mass to body mass. for our size, we have a great deal more to calculate with than any other mammals, including our primate cousins.
+
+[r405c4] row406 seq2 11w current_node=III.2.N about=Friston
+the brain minimizes free energy, mathematical flip side of maximizing predictions
+
+[r415c4] row416 seq2 62w current_node=III.2.N about=-
+neurolink: symbiotic relationship with AI; communication person-to-person without speaking; 1M-1B x speedup of data flow (from 100kpbs (max) to 100B or 100T exchange rates. But what's the brain's processing rate? Too much data that can't be processed isn't helping much. Perhaps assigning to grid computing becomes the new act, the new motor function: the brain picks up on how to do that...
+
+[r439c4] row440 seq2 42w current_node=III.2.N about=-
+another good blindsight primer: https://www.youtube.com/watch?v=pZBwLNYzgO4   blindsight bypasses v1, allowing limited and specific visual processing without cortical sight, w/o v1 involvement. These remaining limited visual processing capabilities vary from patient to patient. (Shape recognition is one. Object recognition is another; facial/bodily expressions another.
+
+[r451c4] row452 seq2 96w current_node=III.2.N about=-
+dendrites fan out in seach of patterns; they spike when a cluster of synapses in a small (say 40 micron) area are all excited in some same window...thus dendrites are pattern recognizers...(where each of roughly 20 synapses (which turns out to be a mathematically optimal number) is uniquely connected to a different axon from some different neuron, almost always 1:1, so that you can model these as bits (on/off) in spite of the fairly wide stochastic distribution of chemical flow across synapses; that flow basically only gets you (never say never) a 0 or a 1.
+
+[r451c6] row452 seq3 86w current_node=III.2.N about=-
+most dendrites are excitory, signal-seaching in function; about 20% (very important) seem to be negative, inhibitory in function, with maybe 20 or so different functions performed; these seem to be the logic, the gatekeepers of signal (only fire under this condition, when these other conditions are met...)  inhibitory cells (like basket cells) tend to be connected to many pyrimidal cells (with the pyramid conjoining dendridic trunks to axons...), and their connections tend not be learned, but just present and maximally push a stop signal to neighbors...
+
+[r451c8] row452 seq4 73w current_node=III.2.N about=-
+neurons are connected in clusters, many to many, where each axon connects to a single dendrite, but with lots of close neighbors from cluster 1 to close neighbors to cluster 2, so that patterns embodied in neuron distribution are passed as information across biological neural networks...90% of what the neuron does is predictive; most of these predictions are silent; they don't leave the neuron. (Prediction: this isn't part of what's about to happen....(TL))
+
+[r451c9] row452 seq5 53w current_node=III.2.N about=-
+There is backward spiking, forward down the axon, but backward up the dendrites (back action potential), which likely follows back along the route of the most recent forward dendridic spikes...(at least in terrns of efficacy on the synapses...)...hebbian learning gets back to condition synapses in dendridic sections via this back action potential propogation...
+
+[r451c10] row452 seq6 16w current_node=III.2.N about=-
+...error / unpredicted input is what stirs neuronal activity maximally; much less activity around predicted input...
+
+[r451c11] row452 seq7 68w current_node=III.2.N about=-
+multistage predictive neuron: distant dendridic signals, correlating with promimate (near pyramid) dendridic spikes, passing through local inhibitory cells, producing axonal (somatic) spiking...all sitting inside a network of neighboring, shared (basked) inhibitory cellss...this is a much more complex picture than the standard input/output model of neurons...// frequency coding (there's another name) is a big deal in some cells (such as grid cells) but less so generally in cortical neurons...
+
+[r468c5] row469 seq3 108w current_node=III.2.N about=Hawkins;McFadden
+Wondering whether EM field (from syncronous neuronal firings) peforms a potential integrating function, capturing and resolving "votes" from "1000 Brain" cortical columns operating near-syncrhonously, and shaping in return the neuronal responses associated with our sense of agency/free will. This isn't obviously implausible. McF thinks it is deterministic. His is a physicalist account of consciousness, just a different one. Not obviously not an IIT theory, which is perhaps why Christof Koch's name may be associated with the theory (perhaps as an influencer)? Take the smallest causal set, which may be the whole CEMI field, and that might cause awareness (or be awareness?). Not sure these are NCCs, but EMCCs....
+
+[r486c17] row487 seq10 87w current_node=III.2.X about=Hawkins
+Moveover, we might actually be part of the life of that higher perspective, as if the set of all human perpectives were at once perceived as a human life. We can't perceive all that at once, but we can perceive all of a great deal at once, and all that might itself be the sum of other individually apprehending agents (as our brain might be, of the "1000 brains", 10^3ish cortical columns that are interlinked and yet separately calculating multiple aspects of our own whole perceptual field.
+
+[r494c12] row495 seq5 79w current_node=III.2.X about=Hawkins
+The observer problem in QM reveals? the same computational dynamism, the same production of new conscious states through computation, as takes place perhaps in all perception (1000 brain voting), as well as at conversion (or not: voting) when mature members interact in a full-information-exchange (full: stability-producing) of world views. Its voting, all the way down; what's changing is the size of the state matrix under consideration. It's all computation--that's how we vote--all the way along the hierarchy of consideration.
+
+[r500c4] row501 seq2 36w current_node=III.2.N about=Levin
+Gap junctions as unifying erasors of information about which direction information came from; this is how cells merge into a single self. Cooperation emerges inevitably; competition is impossible, since you are now (post-gap-junction-opening) a larger self.
+
+[r500c5] row501 seq3 36w current_node=III.2.N about=Levin
+Cancer screws that up, and turns multiple united cells into smaller ones; metasticism is the resulting uncoordinated, now plural functioning. So these gap junctions create a unified purpose, even a unified mind, a self, from many.
+
+[r500c6] row501 seq4 56w current_node=III.2.N about=Levin;Carroll
+(Maybe you could convince CA cells to rejoin the collective as a treatment strategy? ML) SC: this is the borg collective from Startrek. // These gap junctions are examples of, or perhaps drivers of (TL), a programmable, ultra-genetic formative principle in organisms. These external electrical environments are like the software that sits inside the genetic hardware.
+
+[r500c7] row501 seq5 139w current_node=III.2.N about=Levin
+ML: computer science and biology are not really different fields; we all study information processing. // Workin on the option space of all possible agents. A compiler for biological morphology. (Go back and relisten, get the book...)  Plasticity of cells is enormous (eyes on tails of tadpoles, which can see fine.) Blows up a lot of normal vocabulary (life vs machine distinction, robot, designed, evolved, robot, program, machine, all operate on no longer good categories. Now on a continuum whose middles we can now fill in. // Ethics implicaitons here: what we owe to different agents with different cognitive capacities (brain organoids...) could make a human/fly/machine. Human? What are preferences, how would they carry over to hybrid devices. // TL: need an ethics that makes sense of preferences, identifies how they ought to matter to us, when and why.
+
+[r506c5] row507 seq3 55w current_node=III.2.N about=Solms
+Affect--pleasure, displeasure--is essential in maintaining homeostatis, when systems get out of functional order and work must be done to restore. A cognitive predication can guide restoration, but sometimes our need to restore happens in new environments where no cognative analogue is available...here, raw affect drives us back to homeostatis, which is how we have survived.
+
+[r507c4] row508 seq2 177w current_node=III.2.N about=Hawkins;Mountcastle
+So, get all these numbers right. NC = ~150k cortical columns, each the size of a small grain of rice, each containing 100k neurons of dozens of different types (neurons, and what else?). Columns are columnated largely by connections that they have; they are otherwise hard to differentiate, although of the more than 2 dozen broader functional areas of the NC, there are a few distributed different kinds of neurons in some of them. Still, on the whole the Mountcastle (and now Hawkins/Numenta) hypothesis is that every column operates on roughly the same algoritm, and that distinctions are a function primarily of the wiring of the connectome. Each column a total of 0.5B interconnections (intra, or inter-across columns?), and a few kilometers of axon/dendrite wiring (and synapses, 1:1 with interconnections, so .5 B?), all in a 2mm thick dinner napkin-sized, roughly uniform in appearance but for folds, separated as to function by wiring patterns but not so much by any other structural differentiation, comprising 100 such minicolumns per square millimeter of NC area, i.e., per cortical column.
+
+[r509c4] row510 seq2 30w current_node=III.2.N about=Hawkins
+The entire brain predicts; JH has an account of what prediction looks like neurologically, and it ties back nicely (in theory) with  MWMBNBM constant justification theory...come back to this here
+
+[r509c5] row510 seq3 92w current_node=III.2.N about=Hawkins
+The brain's (NC) universal predictive role is based on a dynamic reference frame algorithm that seems rooted in the entorhinal cortex and the hippocampus, said to be a finger-sized midbrain mirrored structure near the base of each hemisphere.  Now we know that this algorythm taps place cells and grid cells. (Define each.) These support intentional motion, and prediction, which are 2 sides of the same coin, and which together form models of our world. Now add place cells for abstract concepts and grid cells (mathematics, logic) interconnecting them, and abstract models arise.
+
+[r509c6] row510 seq4 144w current_node=III.2.N about=Hawkins
+JH introduces it as a fundamental principle of neuroscience that thought is brain activity (get his exact phrasing right, and put it here: ____________). On a pCRm worldview, this seems to go both ways: brain activity is thought, also. Everything is. Brain activity is the way we model the activity of thought under limited perspective; it is how under our limited perspective we make our way forward in interacting with other limited perspectives, all the while preserving and maximizing the efficacy of the relations with other pespectives that we encounter under our own interacting limited pespective. The logical relations describing these perspectival interactions are modeled by us as brain activity, and at many other interactive levels of analogy. The causal relationships studied in neuroscience and every other science are part of the constraints that need to be satisfied by pCRm or any other worldview
+
+[r509c9] row510 seq6 256w current_node=III.2.N about=Hawkins
+Attempt to summarize the 1000 brains theory (1st 1/3 of JH's book): brains build models of the world through movement, driving interaction; those models are used to generate predictions that are tested against subsequent input. (Importantly, the priming of neurons--residing in the 80? 90%/ of neurons whose functionalty had not otherwise been understood as involved in processing of input--lowers the threshold for confirmatory signaling. This seems, on the face of it, to predict what Mistakes Were Made BNBM authors describe at the brain's constant preoccupation with justifying what it already expects to happen. Find out how close a connection this predictive mechanism described in 1000B is to this self-justifying preoccupation described in MWMBNBM.) Brains build multiple models using their 150k independend model constructors--note that in 1000B JH does NOT DISCUSS THE IMPORTANT ROLE OF SPARSENESS or quantify how many (or did I miss it) of these C columns are typically involved. Where is spareseness: in the number of columns activiated, or in the number of neurons per column involved, or both? Over what kinds of activities might these ratios vary?) So these identifications of 1) a common NC algorithm (Mountcastle?); 2) across multiple models simultaneously processing in multiple independent NCC units; 3) utilizing reference frames inherited and modified from the old brain (ERC and ...[TRUNCATED]
+
+[r511c4] row512 seq2 46w current_node=III.2.X about=Howard Bloom
+The pattern:  five elements, something like 1) conformity police; 2) diversity generators; 3) stern internal judges; 4) resource shifters (to him who has, more; has not, even what he has will be taken); 5) contest fora. Works in physics, in biology, in sociology, across history. (Hegelianesque).
+
+[r513c4] row514 seq2 40w current_node=III.2.N about=-
+computer science and cognitive learning science are engaged in a dialogue, help us discover the same mechanisms that evolution found,, finding fundamental principles of intelligence.  Dopamine updates our predictions,, an instance of temporal difference learning in the brain, for example.
+
+[r517c7] row518 seq2 98w current_node=III.2.X about=Perez
+"In the beginning of our universe, everything was bound together and then in a single big bang, everything was instantly unbound. The initial conditions are unknown to current physics. The universe subsequently evolved into particles that were distinct (i.e. fermions). In addition, messengers (i.e. bosons) would bind them together but preserve their distinction." /(TL comment: considered as unbound...abstracted from boundedness by love...from the unbounded and rebinding perspective...how love gets built.../ "...a primitive kind of modularity has always existed. The first principle of modularity: There is something that binds and something to be bound. Binding creates identity and interaction."
+
+[r517c10] row518 seq3 103w current_node=III.2.X about=Perez
+"The third principle of modularity: A medium with fluid characteristics drive experimentation and thus innovation." // "The fourth principle of modularity: Competitive forces leads to destruction that then leads to new composite creations." // "...the effect of like charges repelling is essential for the richness of interaction in the universe. Not everything binds together, there exist constraints that prevent binding. Heavier elements are restricted to the combinations that are possible in quantum mechanics. The fifth principle of modularity: Binding is selective and drives the fitness of a context." // "The sixth principle of modularity: Composite components leads to richer interactions and greater possibilities."
+
+[r517c13] row518 seq4 87w current_node=III.2.X about=Perez
+"The seventh principle of modularity: Intrinsic adaptivity leads to utility that leads to ubiquity." // "The eight principle of Modularity: Adaptive components reduce entropy by learning the regularities of the environment."// "There are 20 of these amino acids with the average length of a protein being 200 amino acids in length. Thus, these proteins can be interpreted as a language with 20²⁰⁰ (i.e. 1.6x10²⁶⁰) different combinations. The age of the universe in nanoseconds is 4.34x10²⁶... The ninth principle of Modularity: Evolution requires only what is adjacently possible."
+
+[r517c15] row518 seq5 98w current_node=III.2.X about=Perez
+"The two other kinds of biomolecules that are found in life these are lipids and nucleic acid. Fatty lipids that form the membranes of cells. This is an extension of the first principle. There is always something that encapsulates and insulates an entity from its environment. The instructions for creating proteins (chains of amino acids) are encoded in nucleic acid in the form of DNA. Evolution discovers a mechanism to code an instruction set that transcends the lifespan of each individual life form. The tenth principle of Modularity: Robust error resistant encoding preserves learning across component life spans.."
+
+[r517c17] row518 seq6 85w current_node=III.2.X about=Perez
+"The more complex the system, the more likely that a wrench in the machinery renders the entire machinery inoperable. Complex life is unlikely without DNA encoding." ..."At every level of evolutionary complexity, there is a medium for interaction, a boundary that mediates interaction and a mechanism that preserves identity. These three capabilities lead to a generative system that I label as Generative Modularity." // "The eleventh principle of Modularity: Novel learning is gained by the symbiosis of complex behavior that is learned under different contexts."
+
+[r517c19] row518 seq7 25w current_node=III.2.X about=Perez
+"The twelfth principle of modularity: Innovation is contextual; complex or simple solutions are driven by what is possible and not what is simple or optimal."
+
+[r517c20] row518 seq8 20w current_node=III.2.X about=Perez
+The thirteenth principle of modularity: Organisms that are ubiquitous are those with predictive behavior that are compatible with their environment.
+
+[r517c21] row518 seq9 22w current_node=III.2.X about=Perez
+Natures’ computation is intrinsically massively parallel. The fourteenth principle of modularity: Dynamic behavior is enabled by decoupling behavior from its physical configuration.
+
+[r523c4] row524 seq2 56w current_node=III.2.X about=-
+Jeans are at the foundation, somehow; or rather, all kind of unifications, in someways the very opposite of entropy, or at the foundation, from the Big Bang, from Fundamental particles to fermions to atoms and ions to molecules to self replicating molecules (genes) All nested inside complex super organisms, to intelligence, to ideas (that is, Memes),
+
+[r528c3] row529 seq1 22w current_node=III.2.N about=-
+biologically, a model is a mylenated subset of yor connectome. It is a rapid-transfer pre-arrangement of information flow (is all this right?)
+
+[r533c5] row534 seq3 408w current_node=III.2.N about=Hawkins
+What then do you say about what seems to us like the external world; it certainly is external to our body, things happen to us that we do not plan, that we cannot control, or rather, some of the things that happen to us we can't control, and can instill order in the world of our own making; other order in the world we simply experience has not coming to us from our old making and not obviously from any other agents on making. But why suppose that we have a good grasp on what conscious agents there are? We have some preliminary indication that we do not have a good grasp on what conscious agents there are. If we've got 150,000 candidate cortical columns at work on the very same set of input, but interconnected differently with one another in various subsets, each of which produces a whole account of what it is we perceive which is then reconciled through voting, all this Jeff Hawkins, then there seems to be some measure of consciousness, some kind of awareness of what things actually are, such as it's a cup, no, it's a vase, no, etc. Each of those complete accounts would seem to require a kind of awareness that seems to be something like consciousness. That there may be more than one conscious entity in our own experience seems verified by the simple act of the Cossom ectomy, which can produce to hemispheric conscious agents were before there was only one. Why don't suppose that ...[TRUNCATED]
+
+[r554c12] row555 seq6 71w current_node=III.2.X about=-
+s i p in my larger sense is any transformation from one information state to another that (roughly) involves multiple conscious agents. (On pCRm, that's all information processing.) This will include processing information about other people (SIP narrow), with other people (group deliberation, for example), and from other people (processing any information in a cultural context, where information from others is stored as culture; results of information transformation are themselves information.)
+
+[r560c4] row561 seq2 14w current_node=III.2.N about=William Miller
+Every cell is intelligent and aware, and comes together to make up collective intelligence
+
+[r560c6] row561 seq3 28w current_node=III.2.N about=William Miller
+We are a super organism made up of over 100 trillion cells. Every single cell is its own actual problem-solving individual, that is, each cell is "self referential"
+
+[r581c6] row582 seq4 84w current_node=III.2.N about=Pope Francis
+"messages the mind alone cannot communicate": in light of the findings of neuroscience, such a space is evident. We cannot notice that we notice everything...some things we just notice without thinking about them, we process the information without awareness; we don't stop and look, though perhaps some of it we might. (Else, it gets processed, but not consciously, perhaps not even possibly consciously. Which of us are aware of our kidneys and livers filtering our blood supply? Or the operation of our immune system?
+
+[r589c3] row590 seq1 459w current_node=III.2.N about=-
+I, Tom, a conscious agent, can calculate things. It seems like I can calculate those things consciously. I can solve a maze, consciously, by eliminating possibilities and holding them in memory. Now if you were to cut my corpus callosum (or remove it, not sure.) I would have too consciousnesses, instead of one. Or perhaps I would not be, and those two would be. Either way, both of them seem to be conscious. It's not clear how they were conscious before… If they were, we had no insight into that. but it certainly isn't a huge sleep to think of both hemispheres as conscious agents. They calculate, and they calculate differently. They have a full set of wants, perceptions, actions. At least they both do, the moment you set them free by separating them from one another.(This is freedom in at least some sense; each seems to have a measure of control over its own actions now.) (now suppose that the roughly 500 neocortical columns that are calculating the world and presenting multiple pictures of it for resolution into the one story that will be adopted for each hemisphere, for the same relationship to the hemispheres as the hemispheres due to the whole brain. If that's the case, it's hard not to call the hemispheres, conscious, though you might deny the self consciousness. They would not be, in fact, selves, when they are working together, but elements of a single unit. But that sing ...[TRUNCATED]
+
+[r589c4] row590 seq2 167w current_node=III.2.N about=-
+Here's another line of reasoning toward the same consciousness – everywhere, conclusion. What exactly does consciousness do, and why would it involve over and above cognition? Interestingly, enough, either the two hemispheres are always conscious, or they just become conscious when separated. But that operation, that popping into being of a pair of consciousnesses, would seem to have no evolutionary history: it's just not how we evolved, coming together, from two separate hemispheres, half – headed human beings, interacting, perhaps meeting and reproducing. We know of no such history. How then, does consciousness evolve at the hemispheric level, or if it's never been there prior to the first corpus callostomy , what's the evolutionary pressure for it to come into being at that level? But if there's pressure for her to come to be at that level, why does that same pressure apply and one level lower, at the 1000 active, 100,000 standing ready neocortical columns, which each calculate a whole picture of the world, but separately?
+
+[r589c8] row590 seq6 247w current_node=III.2.N about=Levin;Friston
+This analysis of consciousness has an advantage of harmonizing well with the analysis of selfhood that Lemann and others argue is identifiable, differentiable, and manipulable in the physical world, although I should now say, the world we are conscious of as a physical world. That last reframing Seems tautologous, perhaps, but it's not. Referring to the physical world is different than referring to the physical world of which we are conscious. The first reference suggest something independent of our minds, Salmon; the second reference doesn't at all. Among the things we learned from our model of the physical world, and so far as it has illumine for us, the model of our brain and its relationship to other parts of the world of which we are conscious, is that our brains reach out and create the elements. We are conscious of this is Kristin's active inference, his minimization of free energy, has first and in love and have written together. and this, of course, the law of universal present preservation of state, is very much like the preservation of action, sometimes called the principle of least action, but perhaps better called the principle of constant action, or preservation of action. What the relationship is between free energyin Kristin's sense, and action, the difference difference between between kinetic and potential energy in mechanics, as an open question at least for  ...[TRUNCATED]
+
+[r590c6] row591 seq4 89w current_node=III.2.N about=Deacon
+Introduced Terrance Deacon (get away from overreliance on computational metaphor for brains; look at a thought process, "microgenesis", differentiating, not activating something already implated. (TL: writing to learn"; TD is more liie thinking to learn; words are at the end of the process. This is not reasoning in the formal (TL deductive) sense; look at how regions developed historically. Neurons don't change their strategy when they bcome mature; they're doing the same thing at all levels". Look at our thoughts right now: each process is a micro-embryology, a microgenesis.
+
+[r590c7] row591 seq5 57w current_node=III.2.N about=Deacon;Levin
+TD picks up on Levin's "biologizing cognition": memory is compression; decrompression is creative, where voltage patterns store and are the active interface of information stored, across which creative thought operates toward goals in an open, creative process (my words on TD's storylinme.) Contrasts ML's "cognition all the way down" with his own "biologizing all the way up"
+
+[r590c8] row591 seq6 102w current_node=III.2.N about=Deacon;Sheldrake
+TD vs Rupert Sheldrakek's "preformationism", all map present in the field. No: through a series of differentiation, you get maps which come into play in some order, and each of those maps--precise as each may be--is a goal, for the sake of which some subset of the whole, acting as itself a whole, finds means from available resources to build some same end product. But this network of maps, of proximate-end-goal building requirements, has itself emerged as part of a set of answers to a dynamic and teleodynamic process. (TL: My phrasing of TK-ML interchange points of agreement, some of their terms.)
+
+[r593c4] row594 seq2 13w current_node=III.2.N about=Levin
+All cognitive agents are collective intelligences, because we are all made of parts
+
+[r595c4] row596 seq2 68w current_node=III.2.X about=-
+"By showcasing work in diverse, currently disconnected fields, we hope to sketch the outline of a new multidisciplinary approach for comprehending cognition, arguably the most fascinating and hard-to-fathom evolved function on this planet. Doing so has the potential to shed light on problems in a wide variety of research domains, including microbiology, immunology, zoology, biophysics, botany, developmental biology, neurobiology/science, regenerative medicine, computational biology, artificial life and synthetic bioengineering."
+
+[r595c5] row596 seq3 105w current_node=III.2.X about=-
+"Understanding behaviour in all its forms will require a dramatic shift in perspective. The result, however, should be a potentially productive cross-fertilization of the life sciences and the cognitive sciences that could help to solve major problems in both domains, which currently barely reference one another. Indeed, some of the most powerful advances in science have been unifications—discovering the invariant core that underlies phenomena that were previously thought to be distinct. Taking seriously modern evolutionary and cell biology arguably now requires recognition that the information-processing dynamics of ‘simpler’ forms of life are part of a continuum with human cognition. The commonalities are mechanistic, not metaphorical."
+
+[r595c7] row596 seq4 123w current_node=III.2.N about=-
+"Connections among all 302 neurons of the tiny nematode Caenorhabditis elegans have been mapped, a stunning technical achievement from a half-century of detailed experimental effort, but we still don’t know how the wiring diagram generates behaviour in a living worm [9]. Developing the tools so that we can understand how brains generate decision-making behaviour in real time is the mission of the US Brain Initiative and its international partners [10], but we need more than tools. We need a diversity of new models, as well as theories that apply not only to familiar ‘standard’ model species but to the entire option space of cognitive agents, which includes aneural organisms, somatic organs and novel bioengineered synthetic forms. Most of all, we need new theory"
+
+[r595c9] row596 seq5 124w current_node=III.2.N about=-
+Cellular common good (TL): "It turns out that potassium ion channels do the same thing in biofilms of B. subtilis that they do in neurons: long-distance / communication across large numbers of cells [2]. In this case, / nutrient-deprived cells in the interior of the bacterial community send bioelectrical distress signals to the cells on the periphery to stop feeding and growing, which allows nutrients / at the periphery to diffuse to the interior. Süel’s team found that collective oscillations formed between periods of peripheral growth and stasis, driven by a metabolic co-dependence that resolves an intrinsic conflict of interest between cells growing on the periphery, which also provide protection for the / community, and cells in the interior, which benefit from that protection but may die [15]
+
+[r595c11] row596 seq6 56w current_node=III.2.N about=-
+these biofilm bacterial colonies form smaller (fewer requirements in colony size) under stress; they syncronize feeding between external and interior bacterium ("cells"); this syncronization is accomplished through potassium waves akin to similar behavior in neurons, suggesting "future research into ‘the evolutionary link between the two phenomena’, electrical signalling in bacterial biofilms and information-processing in mammalian brains"
+
+[r595c12] row596 seq7 33w current_node=III.2.N about=-
+light-responsive phase changes enable encoding of persistent memories in these biofilms, including emprinting of a university logo, suggesting "‘a parallel between neurons and bacteria’ in the way changes / in membrane potential encode memory."
+
+[r595c13] row596 seq8 29w current_node=III.2.N about=-
+could be harnessed for biocomputing: ": ‘Overall, our / work is likely to inspire new membrane potential-based / approaches in synthetic biology and provide a bacterial paradigm for memory-capable biological systems’"
+
+[r595c18] row596 seq11 183w current_node=III.2.X about=Aristotle
+What do we mean by ‘cognition’? The short answer is we don’t know because we can’t agree, and unambiguous, biologically grounded proposals are effectively non-existent. Cognition—and where it is found in the natural world—has been an inexhaustably meaty bone of contention since (in ‘western’ culture) Aristotle (384–322 BCE), for whom animals marked a singular transition [35], and (in ‘eastern’ culture) the Rig Veda (1700–1000 BCE) and associated texts, many of which admitted cognition in plants [36]. Not so long ago, it was suggested that an adequate definition would be possible when we have sufficient data [37], but this is not how it has worked out. The data available even 20 years ago ‘almost inhibited meaning’ [38]. Today the data are oceanic and meaning seems impossible without machine learning to detect relevant patterns. Defining cognition can even seem unnecessary, leaving its articulation a matter of scientific progress [39,40]. However, we do not have that luxury in this case. We cannot claim that basal cognition is a worthy research pursuit if we fail to provide at least a provisional working definition of the critical construct.
+
+[r595c20] row596 seq12 65w current_node=III.2.X about=-
+Cognition comprises the sensory and other information-processing mechanisms an organism has for becoming familiar with, valuing, and interacting productively with features of its environment [exploring, exploiting, evading] in order to meet existential needs, the most basic of which are survival/persistence, growth/ thriving, and reproduction.  [21, p. 416] Should we replace this as "...(in order to) explore, discover identify and obtain goals achievable individually and collectively"?
+
+[r595c21] row596 seq13 84w current_node=III.2.X about=-
+"A fairly straightforward entailment of this approach is that cognition is a function necessary for any autonomous biological system’s survival, wellbeing and reproduction, which is an uncomfortable proposition for many. We say that whether one wishes to concede cognition to prokaryotes (for example) remains a matter of personal choice. This is not the issue before us. The issue before us is whether proceeding as though this were the case, in a biologically realistic fashion,is productive. The answer to that question, we believe, is yes."
+
+[r595c23] row596 seq14 59w current_node=III.2.N about=-
+For example, bacteria produce molecules (autoinducers) that they secrete into the environment. When a threshold density of these molecules is reached, which requires large numbers of other bacteria doing the same thing, the population as a whole coordinate metabolically costly changes in genetic expression that would be unproductive in just a few individuals, a phenomenon called quorum sensing [44]
+
+[r595c24] row596 seq15 81w current_node=III.2.X about=Damasio
+Basal cognition, like uncaveated cognition, importantly involves learning, including via epigenetic and genetic embedding in the course of evolutionary change, what neuroscientist Antonio Damasio elegantly calls ‘holding know-how in dispositions’ [46]. How is "holding know-how in dispositions" any different than storing advantageous information in habits AKA virtue? Do cells have virtue? Do they have beneficial habits, habits conducive to their ends, habits whose conducivity may lie outside their own range of experience, but depend rather on the know-how of the group?
+
+[r595c25] row596 seq16 42w current_node=III.2.N about=-
+The cognitive lens approach suggests that given evolution—not simply conceptual utility—it makes sense that information-dependent developmental processes in multicellular organisms (e.g. embryogenesis; tissue growth, maintenance and repair; regeneration; immunity) might share fitness-enhancing processes derived from the cognitive endowments of their unicellular ancestors.
+
+[r596c3] row597 seq1 52w current_node=III.2.N about=McGilchrist;Wolfram
+Question, while listening to the master and his emissary. The general question is, is there a relationship between the two hemispheres, and their differences, on the one hand, and the two requirements for observer status, and their differences, on the other. The first from me in McGilchrist; the second, from Stephen Wolfram.
+
+[r596c4] row597 seq2 349w current_node=III.2.X about=Hoffman;Wolfram
+There are two requirements, or rather, features, of observers, which together (according to Stephen Wolfram) generate relativistic and quantum perspectives on the world: the first, that there is limited computational speed; the second, that there is a sense of enduring in time. The first of these, limited computational speed, seems to bear somehow on the right hemispheres attention to particulars. There's a limit to how many particulars you can attend to. If you wanna overcome that limit, you have to build a model, which is what the left brain does. Such models require energy to create, but then provide efficiency, when deployed. And in order to have a number of things that are not present at the same time to fall under the same model (concepts are treated as models, here), there must be some underlying sameness that unites the experience of separate instances; that is, there must be endurance through time. This raises a question or two: is there a relationship between the complementarity between our hemispheres, and the complementarity between quantum and relativistic physics? And if there's a relationship, what's the direction of causation: does the physics produce the hemispheres; or do the hemispheres produce the physics; or does some additional cause, such as the interaction of conscious agents on Hoffman view, produce both? Or is causation just an artifact of left-brain,  ...[TRUNCATED]
+
+[r597c3] row598 seq1 12w current_node=III.2.N about=McGilchrist
+McGilchrist, "musical instruments are present to the right hemisphere as living things."
+
+[r609c5] row610 seq2 277w current_node=III.2.X about=-
+Taking Shettleworth as the jumping-off point, we offer the following working definition: Cognition comprises the sensory and other information-processing mechanisms an organism has for becoming familiar with, valuing, and interacting productively with features of its environment [exploring, exploiting, evading] in order to meet existential needs, the most basic of which are survival/persistence, growth/ thriving, and reproduction. [21, p. 416] This phyletically neutral definition specifies the adaptive value of cognition for an organism and has the additional virtue of differentiating cognition from metabolic functions, such as respiration, which arguably also employ mechanisms for acquiring, processing and acting on information to meet existential goals but does not involve familiarization, valuing, exploring, exploiting and evading [21]. Information remains uncharacterized but can be explicated in the biological context, as follows: A state of affairs is information for an organism if it triggers a change in physiology or behaviour relative to that state of affairs. Whatever state of affairs induces a change in physiology or interactive potential in an organism is information for that organism. (adapted from [43, pp. 17, 21]) This definition allows for regulatory stochasticity in the absence of a detectable change in environmental conditions. A fairly straightforward entailme ...[TRUNCATED]
+
+[r609c9] row610 seq3 201w current_node=III.2.X about=-
+A major implication of basal cognition is not only the plausibility but also the usefulness of viewing other problems in biology through a ‘cognitive lens’, that is, ‘a strategy using well-established concepts from cognitive and computer science’ in a non-metaphorical sense ‘to complement mechanistic investigation in biology’ [53]. Needless to say, informatic terminology has been used productively in biology for the past half-century. Until now, however, it has been on the general understanding that this terminology implies nothing about cognitive processes. The cognitive lens approach suggests that given evolution—not simply conceptual utility—it makes sense that information-dependent developmental processes in multicellular organisms (e.g. embryogenesis; tissue growth, maintenance and repair; regeneration; immunity) might share fitness-enhancing processes derived from the cognitive endowments of their unicellular ancestors. As a field, then, basal cognition has the potential to bring into productive contact heretofore disparate sectors of the life sciences in order to develop the conceptual and theoretical tools necessary for answering outstanding fundamental questions in a variety of areas of biology, not simply the cognitive sciences. For example, if the tools of cognitive science can be extended to apply to unconventional embodiments, novel applications (e.g. training or m ...[TRUNCATED]
+
+[r609c13] row610 seq4 189w current_node=III.2.X about=-
+Cognition comprises the sensory and other information-processing mechanisms an organism has for becoming familiar with, valuing, and interacting productively with features of its environment [exploring, exploiting, evading] in order to meet existential needs, the most basic of which are survival/persistence, growth/ thriving, and reproduction. ... Information remains uncharacterized but can be explicated in the biological context, as follows: A state of affairs is information for an organism if it triggers a change in physiology or behaviour relative to that state of affairs. Whatever state of affairs induces a change in physiology or interactive potential in an organism is information for that organism. ... A fairly straightforward entailment of this approach is that cognition is a function necessary for any autonomous biological system’s survival, wellbeing and reproduction, which is an uncomfortable proposition for many. We say that whether one wishes to concede cognition to prokaryotes (for example) remains a matter of personal choice. This is not the issue before us. The issue before us is whether proceeding as though this were the case, in a biologically realistic fashion, is productive. The answer to that question, we believe, is yes. ...
+
+[r609c16] row610 seq5 95w current_node=III.2.X about=-
+"A major implication of basal cognition is not only the plausibility but also the usefulness of viewing other problems in biology through a ‘cognitive lens’, that is, ‘a strategy using well-established concepts from cognitive and computer science’ in a non-metaphorical sense ‘to complement mechanistic investigation in biology’... As a field, then, basal cognition has the potential to bring into productive contact heretofore disparate sectors of the life sciences in order to develop the conceptual and theoretical tools necessary for answering outstanding fundamental questions in a variety of areas of biology, not simply the cognitive sciences."
+
+[r612c4] row613 seq1 222w current_node=III.2.N about=Levin
+Free agency is growing. Evolution is moving us toward a street fight, toward increasing levels of inherited competency, which is decreasing levels of crystallized instruction transfer. Get here, the way you want: that's what evolves, that's what's on the increase, that's what every complex system moves toward, as it evolves. This is a loss of information, somehow. All of the information is in the phenotype, not the genotype, or rather, it's in the entire environment of genotype plus environment, that's where the information is. But the only information that's passed on is what's inherited, in the genome. So a great deal of the information is lost, and all the more, to the extent that there are a greater degrees of freedom, of agency, of competency, in the evolved phenotype set. That's why Michael Levin says that evolution is an intelligence ratchet. It's ratcheting up intelligence, that is, agency, competency, cognition. So it's not passing on more and more information; it's passing on less and less, in someway. Then the next generation takes what's hardwired, takes the tools in which the competency, the agency, consists(like I ever reach neocortex) and it uses those tools to act on less than that less information, to get more and more of the desired output, to get closer and closer to one's goals. That's how evolution works.
+
+[r614c5] row615 seq2 137w current_node=III.2.X about=McGilchrist
+R:L brain health must be brought to the question of social IP, social LB analysis, we might think, but also RB apprehension, wholistic grasp, to which LB analysis must be added and returned to RB grasp of a new and richer whole. Social Information Processing begins and ends with RB grasp of a not-processed, even if a once-processed, whole. Analysis assists, guides full apprehension, full grasp, right relationship. But analysis, LB activity, is itself guided by initial context and by suitability of returned context: I see and trust this person; I work through an analysis of their actions; I realize that I am now better informed and more fully trust, or no longer, or (correctively) am judging and should rethink (re-analyze.) Do such interplays beyond initial R-L-R cycles provide helpful analysis of brain activity? Of human rationality?
+

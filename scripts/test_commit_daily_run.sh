@@ -69,6 +69,25 @@ head_count() { git -C "$FIX/repo" rev-list --count HEAD; }
 
 echo "cases that MUST refuse (exit 1, nothing committed):"
 
+# 2026-09-27: the task moved to a cloud scheduled task; the local entry is frozen
+# and disabled. With no stamp there is no evidence of a run -> refuse.
+new_fixture
+cat > "$REG/scheduled-tasks.json" <<JSON
+{"scheduledTasks":[{"id":"c282-wiki-agent-daily-run","enabled":false,"lastRunAt":"2026-09-24T08:36:56.958Z","migratedToRemote":{"triggerId":"x"}}]}
+JSON
+run_output wiki/cloud.md
+out=$(run); rc=$?
+expect_rc "moved to cloud, no run stamp" 1 $rc "$out"
+case "$out" in *"no run stamp"*) ok "names the missing stamp";; *) bad "names the missing stamp" "$out";; esac
+[ "$(head_count)" = "1" ] && ok "nothing committed without a stamp" || bad "nothing committed without a stamp" "$(head_count)"
+# With the stamp the cloud run wrote, its output commits and the frozen lastRunAt is ignored.
+mkdir -p "$FIX/repo/scheduler/run_stamps"
+printf '{"started_at":"%s"}\n' "$stamp" > "$FIX/repo/scheduler/run_stamps/c282-wiki-agent-daily-run.json"
+out=$(run); rc=$?
+expect_rc "moved to cloud, stamp present" 0 $rc "$out"
+[ "$(head_count)" = "2" ] && ok "cloud run output committed on its stamp" || bad "cloud run output committed on its stamp" "$(head_count)"
+
+
 new_fixture
 run_output wiki/new.md
 touch "$FIX/repo/.git/MERGE_HEAD"

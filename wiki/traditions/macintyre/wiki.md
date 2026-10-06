@@ -29,6 +29,8 @@ The open questions are unusually self-referential, which is appropriate for the 
 5. What is the relationship between MacIntyre's narrative identity and McGilchrist's right-hemisphere mode of understanding?
 6. Does MacIntyre's critique of emotivism apply to AI agents — can an agent be a genuine participant in a tradition or only a simulator?
 7. How does the practice-virtue-institution triad map onto the C2A2 architecture of agents, proposals, and review processes?
+8. *(Opened 2026-09-09, PRS-06)* Can *Dependent Rational Animals* accept Levin's participation-without-representation as the mechanism by which a good held by a network becomes operative in an individual member — without thereby deriving the dependence virtues from the theological ones? The construction is attractive because it gives DRA something it plainly lacks; the risk is that it smuggles in a normative source Levin does not supply.
+9. *(Opened 2026-09-09, PRS-06)* Does MacIntyre's crisis-plus-encounterable-rival reply actually dissolve the bootstrapping objection — that judging whether one's source of formation is a tyrant requires standards received from that source — or does it only convert a philosophical problem into an engineering problem about the availability of rivals? If the latter, C2A2 is the engineering answer and the philosophical question stays open beneath it.
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -45,6 +47,7 @@ The open questions are unusually self-referential, which is appropriate for the 
 - **McGilchrist**: MacIntyre's narrative rationality resonates with the right hemisphere's mode of contextual, embodied understanding vs. the left hemisphere's decontextualized rule-following
 - **Loughran**: The C2A2 project itself is a MacIntyrean practice; Loughran's Synergistic Coil is the institutional architecture for staging inter-tradition encounters
 - **Rohr**: Rohr's contemplative epistemology (non-dualistic knowing) may complement MacIntyre's account of how traditions access truths unavailable to Enlightenment rationalism
+- **Levin** *(new 2026-09-09, CROSS-131)*: Distributed target states — a goal borne by a collective that no single member represents — are offered as a mechanistic model of apprenticeship into a practice. Note the load-bearing caveat: the construction runs on an awareness-indexed reading of "cognitive light cone" that is **not Levin's own**, and Levin's setpoints are descriptive, so the normative source must come from MacIntyre's side. See [[traditions/levin/prs_triplets|Levin PRS-116]] and `master/cross_program_index.md` CROSS-131.
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

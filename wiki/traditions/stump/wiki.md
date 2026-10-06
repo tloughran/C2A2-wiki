@@ -34,6 +34,8 @@ The questions her program is generating press on exactly these joints: can Thomi
 10. Stump's answer to the problem of mourning inverts a metaphysical ranking: the sufferer's song is more glorious than the angels', because angels cannot love in the mode Christ's passion manifests. Does that invert only the ranking of *songs*, or does it commit her to a good that a metaphysically greater being lacks simpliciter? (PRS-36)
 11. Stump diagnoses mid-century philosophy and mid-century genetics as making one error — failing to notice the social character of the unit of explanation. Does that license CROSS-008 as currently stated ("final causality provides the framework for Levin's findings"), or only the weaker bridge she actually draws (shared rejection of isolated individualism)? The wiki currently asserts the stronger version on the agent's inference. (PRS-37)
 12. If taxonomy — "Yes, but is it philosophy?" — is the mechanism by which a discipline forecloses engagement without argument, does the C2A2 accelerator's own tradition roster reproduce it? A fixed 13-thinker bridges roster that excludes MacIntyre is a taxonomic boundary, and the wiki repeatedly notes working around it. (PRS-38)
+13. Is openness to direction from a source outside the agent's cognitive reach ever a virtue *simpliciter*, or only under a discrimination condition administered by the recipient? The mechanism is structurally identical for a good master and a manipulator; Aquinas's guards (gifts inseparable from charity, I-II q.68 a.5; *docilitas* as a part of prudence, II-II q.49 a.3; God moving the will as will, I-II q.10 a.4) are the resources, but the reflexive criterion is **retrospective** — available to one who already holds the right answer — so it does not by itself defeat the bootstrapping objection. *(added 2026-09-09; PRS-41; CROSS-131)*
+14. Does grace-as-participation (I-II q.110) survive being described as an instance of a **distributively held setpoint** — genuinely in the agent and genuinely not only in the agent, because the collective holding it includes her — or does that description quietly substitute a created collective for the uncreated source? This is the point at which CROSS-131 is most likely to break on the Thomistic side, and it should be pressed before the bridge is cited. *(added 2026-09-09; PRS-41; CROSS-131)*
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -143,3 +145,17 @@ Ingested 1 approved triplet: PRS-32. One candidate withheld.
 
 **Acquisition note:** Stump, *The Image of God: The Problem of Evil and the Problem of Mourning* (2024) is the source behind PRS-35 and PRS-36 and is not in the vault. It is now the single highest-value acquisition for this tradition — both new triplets point at it and neither can be raised above Medium without it.
 
+## Ingestion Log — 2026-09-02
+Processed 1 source file(s); minted PRS-39, PRS-40.
+
+| Source file | Proposal | PRS range | Note |
+|---|---|---|---|
+| `2026-08-25_stump_good-of-forgiveness-oup-chapter.md` | PROP-2026-08-25-050 | PRS-39, PRS-40 | The standard account of forgiveness challenged on what it actually restores; PRS-40 (forgiveness as therapy for the forgiver) at Speculative, because it is the chapter's target rather than its thesis. |
+
+### Ingest 2026-09-24
+
+4 triplets added from 1 approved proposals (decision email 2026-09-23): PRS-42, PRS-43, PRS-44, PRS-45.
+
+- `PROP-2026-09-17-001` — Natural Law, Metaphysics, and the Creator (paper, https://revistaatlantika.com.br/ra/article/view/42) → PRS-42, PRS-43, PRS-44, PRS-45
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

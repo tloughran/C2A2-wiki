@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-184 - Magnificence - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/184, pars/II-II, q/134-135]
-last_qc_at: "2026-08-25T08:23:08"
+last_qc_at: "2026-10-04T16:16:56"
 last_qc_outcome: "pass"
 ---
 
@@ -25,6 +25,8 @@ last_qc_outcome: "pass"
 > Typo cleanup (QC sweep 2026-06-12): Ambria Press → Ave Maria Press; sumatan → Summa 10 (the discount code, as rendered on other days); magnanmity → magnanimity (2×); "equality modifying the rassable appetite" → "a quality modifying the irascible appetite" (ASR mishearing); irassable → irascible (3×). Verified against raw ASR refetched 2026-06-12.
 
 Day 184 covers magnificence — the virtue of doing great works that involve great expenditure, fittingly — and its opposed defect, meanness or stinginess (parvificence). NB: the locus is Q.134-135, as the frontmatter records. Habash misspeaks the numbers as "questions 132 and 133" in this episode (preserved verbatim below); he acknowledges the inverted broadcast order in the *following* episode (Day 185), where he notes that Q.132-133 should have come first.
+
+## Transcript
 
 [00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast where we study St. Thomas Aquinas's Summa
 

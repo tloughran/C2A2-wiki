@@ -488,3 +488,249 @@ and the two readings of the same
 - [LEDGER-2026-08-29] Pipeline finding, not a research signal: **11 approved proposals adjudicated in tradition `wiki.md` tables were never written to `inbox/PROCESSED_LOG.md`**, so `scripts/ingest_ledger.py` — which reads only PROCESSED_LOG — reported them OPEN. The 71-item approved backlog was therefore 60 real items plus 11 phantoms. Logged this run. The structural fix is that a `+0` adjudication must write PROCESSED_LOG, not only the tradition page; recommend the janitor gain a check for proposal ids present in a tradition table and absent from PROCESSED_LOG.
 
 [EVALUATED: 2026-08-29 — FINDING-070..072; see pattern_detector_findings.md. The LEDGER-2026-08-29 item is a pipeline finding and is closed by the PROCESSED_LOG backfill of the same date; no FINDING minted.]
+
+## Signals forwarded 2026-09-01
+Backlog-clear run: Rohr (16 proposals, PRS-45..66) and Wright (11 proposals, PRS-42..59) ingested in
+the same pass. Because both sides of the Rohr-Wright axis were read together for the first time, three
+of these are about that axis and they do not agree with how it is currently filed.
+
+- [ROHR/WRIGHT BATCH] **The Rohr-Wright axis is carrying three distinct relations under one label.**
+  (a) FINDING-058's standing tension -- whether historical settling is what is wanted -- unchanged.
+  (b) CROSS-110, a genuine and independent **convergence**: both reach Phil 2:12-13 for the same job
+  (divine and human action both complete without competing), Rohr interior, Wright corporate, with no
+  evidence of contact. This is the first convergence ever indexed on this axis.
+  (c) CROSS-111, a **second and different tension**: Rohr reads the prophets developmentally; Wright's
+  critical realism holds second-temple context constrains meaning prior to the reader. That is a
+  disagreement about what constrains meaning, not about what settling is for. Recommend the axis be
+  split into three entries. Folding (c) into (a) would lose it.
+- [ROHR BATCH / CROSS-108, CROSS-109] **A retroactive audit request, and it may invalidate existing
+  entries.** Rohr names Scotus and the univocity of being **in his own voice** -- the historic
+  alternative to the Thomist analogy of being that Stump stands on. Several standing Rohr-Stump
+  convergences may therefore be convergences in English only: same sentence about God and creature,
+  incompatible predication. This is also the natural resolution direction for the older open worry
+  (2026-08-10) about whether the proposals *imported* "second-personal" into Rohr rather than found it.
+  Recommend a pass over every existing Rohr-Stump CROSS before any is cited.
+- [ROHR BATCH / CROSS-113, CROSS-114] **Third independent week of Rohr material producing a boundary
+  test for the positivity construct.** Gate-vs-gradient (Rohr states the recognition constraint
+  absolutely; Fredrickson measures it continuously) and joy-arriving-with-grief-intact (Bowler), which
+  cuts against the undoing hypothesis as usually stated. Read against the standing grief boundary test
+  (PROP-2026-08-07-003) and the dyadic co-measurement gap in FINDING-063..069, a tradition with no
+  empirical apparatus is now supplying the qualitative form of the same challenge from three separate
+  directions. Worth asking whether that is signal or whether the Rohr corpus simply talks about grief a lot.
+- [ROHR BATCH / CROSS-112] **A tension currently mis-filed as a convergence.** Rohr and Hoffman both
+  posit a veiled connected substrate; Hoffman's veil is evolutionarily fixed and no practice lifts it,
+  Rohr's is precisely what practice lifts. Same picture, opposite claim about observer access. Same
+  shape as the access-sign argument at CROSS-100.
+- [ROHR BATCH / CROSS-115] **An anomaly for the FEP, not a resonance.** A practice that deliberately
+  sustains self-model uncertainty for forty days. Either it is not doing what it says, or the
+  minimisation horizon exceeds the practice, or the FEP's scope excludes it. Answerable from inside
+  Friston's own formalism; never asked.
+- [WRIGHT BATCH / CROSS-117] Wright's narrowed-modern-imagination diagnosis is **unfalsifiable as
+  stated** -- poetic naturalism says the repertoire was corrected, not contracted, and nothing in the
+  diagnosis distinguishes them. A demand for a discriminating prediction, which the Wright side does
+  not supply.
+- [WRIGHT BATCH / CROSS-118] Near-death reports: Kastrup treats them as evidence about the metaphysics
+  of mind, Wright as bearing only on the interval. **A disagreement about what the data are data for**,
+  which is a category this network has not been indexing separately from ordinary evidential dispute.
+- [WRIGHT BATCH / CROSS-119, CROSS-120] Two sharp, answerable Wright-Stump gaps: the intermediate state
+  has no bearer where hylomorphism requires one; and attribute-list theology vs reading God's character
+  off the narrative is a **reversed order of warrant**, not a stylistic variant.
+- [WRIGHT BATCH / CROSS-126] **Two items that bear on the C2A2 architecture itself**, not on a tradition:
+  downstream-use responsibility as a separable third variable (transfers unchanged to agent alignment),
+  and a named norm for dissent that is **neither exit nor capitulation** -- which is the behaviour the
+  inter-tradition study needs a name for and currently lacks.
+- [PIPELINE, ROHR+WRIGHT] **Fourth consecutive Ask-NTW ingestion with no primary audio.** Ten of eleven
+  Wright sources are podcasts, none retrieved, six subscriber-only; every Wright triplet but PRS-55 rests
+  on a publisher description. Two Rohr triplets (PRS-56, PRS-57) rest on publisher metadata alone because
+  cac.org 403s automated requests. Theses attested, arguments not. This is now capping confidence across
+  two traditions silently.
+- [PIPELINE, ROHR] Rohr proposals cite "Active Question 2" and "Active Question 4" for content that does
+  not match those numbers in the wiki (Q2 is order-disorder-reorder vs free energy; Q4 is the Universal
+  Christ convergence frame). Q1/Q10/Q11 do match. Metadata drift in the proposal-generation layer;
+  translated by content this run and not propagated.
+- [INTERNAL, ROHR] **A live contradiction inside the tradition as now held.** PRS-62 asserts lament must
+  precede imagination; PRS-65 asserts joy and grief have no ordering. Both minted 2026-09-01 from
+  different weeks. Either they concern different state-pairs or one is wrong. Not to be averaged.
+
+[EVALUATED: 2026-09-01 - FINDING-073..078; see pattern_detector_findings.md]
+
+## Signals forwarded 2026-09-01 (late, pipeline)
+- [LEDGER-2026-09-01] `scripts/ingest_ledger.py` ZERO_YIELD contains `\bHELD\b`, a bare English word,
+  and the classifier scans any line carrying a PROP id. A summary sentence written this run --
+  "PROP-2026-08-14-033 held OPEN as a retrieval assignment" -- closed the very item it said was open.
+  Found by accident, reproduced deliberately. Same defect class as the 2026-08-27 hold-classifier
+  ("Recommend" as a substring); the same fix applies -- discriminate by marked field, never by prose.
+  Evaluated same-run as FINDING-079.
+
+[EVALUATED: 2026-09-01 - FINDING-079; see pattern_detector_findings.md]
+
+## Signals forwarded 2026-09-02 (daily run, 26 sources ingested / 69 triplets)
+- [CROSS-127, LEVIN+HOFFMAN] **Third instance of one word with inconsistent signs.** Levin's interface
+  *hosts* a pattern, which thereby becomes causally present; Hoffman's interface *hides* the agents behind
+  it and makes the restricted view the only accessible one. Levin's interfaces ADD; Hoffman's SUBTRACT.
+  Hoffman Question 19 already records the same sign inversion between trace logic and Arkani-Hamed's
+  correlator result, and FINDING-061 is on the same territory. Three instances of one pattern with
+  inconsistent signs is grounds for suspecting "interface" is a homonym across this network, not a shared
+  concept. **Do not record as convergence.**
+- [CROSS-128, LEVIN+FRISTON] Two independent routes to "more out than in." Spisak & Friston DERIVE
+  attractor and associative-memory dynamics from free-energy minimisation (PRS-30, PRS-37); Levin reports
+  the agency ratchet is already present in RANDOM networks and therefore not paid for by selection
+  (PRS-98). Decidable question, now stated as Friston Question 21: is the ratchet a free-energy result in
+  disguise -- a system whose causal emergence rises under training is plausibly a system improving its
+  generative model -- or a separate mathematical fact? Same shape as existing Friston Question 8; neither
+  is a claimed identity.
+- [CROSS-129, LEVIN+KASTRUP] The standing discrete-alters-vs-continuous-nesting disagreement now has, for
+  the first time, a case where a boundary can be watched FORMING and then UNDONE: bioelectric decoupling,
+  imaged pre-tumour with voltage dyes, reversed by forced re-coupling with the oncogene left intact
+  (PRS-96). Levin's own word for it is "a somatic dissociative identity disorder." Kastrup Question 18
+  states the one question that decides whether this is an instance or a homonym: does dissociation admit a
+  mechanism reversible by an intervention EXTERNAL to the alter? No bridge until answered.
+- [CROSS-130, LEVIN+CARROLL] A clean statable disagreement rather than a bridge, and it should not be
+  smoothed. Both accept that mathematics constrains physics; they disagree on whether the constraint is
+  CAUSAL (Levin: "physicalism has been dead for a long time") or DESCRIPTIVE (poetic naturalism: one
+  world, many vocabularies, no additional causal ingredients). Filed as Carroll Question 13. The
+  pre-replicator causal-emergence result (PRS-102/103) makes it testable-shaped rather than verbal:
+  emergence there is manipulable, which is the strong reading.
+- [C2A2 ARCHITECTURE] **Host-frame divergence as a cheap observable for the inter-tradition study.**
+  One event, two hosts, opposite genre claims: Wolfram's media index calls the Ralston exchange a
+  "debate"; Ralston's own copy calls it "less a debate than an encounter." PROP-2026-08-23-002 proposed
+  minting this as a Wolfram triplet; the run declined and filed it to `master/cross_program_index.md`,
+  because the same card's own complaint is that PRS-54 is the agent's reading rather than Wolfram's view.
+  The datum is real and is exactly what the accelerator/detector wants -- a measure of how each tradition
+  wishes to be seen relative to the other -- but it is a fact about hosts, not a claim by a thinker.
+- [PIPELINE, THIS RUN] **Six of 33 approved cards (18%) carried no ingestible content.** All six are
+  locator or verification cards -- "the recording exists," "the URL now resolves," "check PRS-x against
+  the audio" -- with Solution lines that are either deferred, "(to be confirmed from the recording)", or
+  UNKNOWN. Every one was correctly self-labelled by the card that wrote it, which is the system working;
+  but they consume an approval slot and a review slot each, and they generate a second pass that nothing
+  currently schedules. Affected: PROP-2026-08-12-031, -2026-08-15-002, -2026-08-23-002, -2026-08-26-001,
+  -2026-08-26-002, -2026-08-26-004.
+- [PIPELINE, DATE CLASS DEFECT] **Release date silently ingested as delivery date, across two traditions
+  and nine triplets.** The Ralston symposium was delivered May 2026; this wiki carried it under July and
+  August 2026 source dates, which are when the recordings were posted. Corrected today from McGilchrist's
+  own 2026-05-28 Substack post. Affected: mcgilchrist PRS-61..69 and wolfram PRS-53/54. **The general
+  defect is that the proposal template has one `source_date` field and no way to distinguish when a thing
+  happened from when its record appeared** -- for podcasts, lectures and posted recordings those differ
+  routinely, and nothing in the chain flags the gap. Any ordering built on `source_date` is exposed.
+
+[EVALUATED: 2026-09-02 - FINDING-080..082; see pattern_detector_findings.md]
+
+## Signals forwarded 2026-09-09 (daily run, 1 source ingested / 3 triplets)
+
+- [CROSS-131, LEVIN+MACINTYRE+STUMP] **A three-tradition construction rated above homology, with its own
+  falsifier attached.** The claim — a distributively held setpoint is genuinely in the agent and genuinely
+  not only in the agent, because the collective that holds it includes her — would make Aquinas's
+  grace-as-participation and MacIntyre's goods-internal-to-a-practice instances of one structure at
+  different scales. Evaluate against the standing homonym worry (FINDING-080 family): "setpoint" here is
+  doing the work "interface" was doing in CROSS-127, and the same test applies — does the word keep its
+  sign across the three traditions, or does Levin's descriptive setpoint and Aquinas's normative end differ
+  in kind rather than scale? The construction's own OPEN-normativity note concedes it must import its
+  normative source from outside Levin. **This is the strongest claim currently in the wiki that was
+  authored rather than harvested; it should be attacked before it is cited.**
+
+- [C2A2 DETECTOR, FALSIFIABLE] **Rich cross-tradition exposure raises the rate at which agents revise their
+  ends.** This is the accelerator/detector hypothesis stated in a form the instrument could actually
+  register. The mechanism is comparison with the aspirational states of other persons; its MacIntyrean
+  trigger is epistemological crisis, which cannot be scheduled, so the baseline rate is intermittent by
+  construction. **Instrumenting it is the detector's proper job**: if C2A2 can register revision events in
+  a corpus, this is measurable. Leads for prior art, explicitly NOT verified for currency — Kohlberg and
+  the neo-Kohlbergian line (Rest's Defining Issues Test), identity-status research after Marcia
+  (moratorium/achievement), quest religious orientation after Batson. Treat as leads, not as a literature
+  review. Note the symmetric risk the note itself raises: exposure to rival aspirational states is the
+  mechanism of conversion in BOTH directions, so a rise in revision rate is not by itself evidence of
+  improvement.
+
+- [TERMINOLOGY, LOAD-BEARING] **"Cognitive light cone" is used here in a stricter sense than Levin's own.**
+  The construction stipulates an awareness-indexed reading under which the setpoint's source is external to
+  the agent; on Levin's usage a bioelectrically stored target is INSIDE the collective's light cone. The
+  stipulation is declared in the source note and carried into levin PRS-116, but **this is now the fourth
+  equivocal term in this network** (after "interface", and the two logged at FINDING-080..082). Recommend
+  the same disposition: a named entry in the ISME methods section on equivocal vocabulary, not a silent
+  correction.
+
+- [PIPELINE] **An inbox file with no `proposal_id` was ingested on the strength of ID alignment, not on a
+  review decision.** `inbox/2026-09-08_levin_virtue-as-external-setpoint.md` carried pre-drafted triplets
+  numbered PRS-116 (levin), PRS-06 (macintyre), PRS-41 (stump); all three were the next free ID in their
+  destination file, which is what licensed the ingest. But the file's own header says "integration is a
+  separate act", and it never passed through `inbox/proposals/pending/` or a decision email. **The ingest
+  ledger cannot judge such files at all** — it reports them under "files with NO proposal_id (cannot be
+  judged)", alongside `inbox/proposals/approved/2026-05-12_repair_manifest.md`. There is no route by which
+  hand-authored session output enters the wiki under review. Either mint proposal ids for session notes, or
+  give the ledger a third verdict for them.
+
+[EVALUATED: 2026-09-09 - FINDING-083..085; see pattern_detector_findings.md]
+
+## Forwarded 2026-09-10 — 36-proposal ingest batch (decision email 2026-09-09)
+
+All 36 approved cards carried a `## Cross-Tradition Signals` section; the full harvest is in the cards
+themselves under `inbox/proposals/approved/`. Forwarded here are the five that make a claim the network
+has not already recorded, plus the two that are about the pipeline rather than about the traditions.
+
+- [TERMINOLOGY, LOAD-BEARING] **"Substance" is behaving as a homonym across traditions.** In
+  PROP-2026-09-09-003, Aquinas' *substantia* and the "immaterial substance" of survival literature slide
+  into one another inside a single paragraph of the announcement text. The Kastrup agent flagged it itself
+  and named it as ISME methods-section material rather than a correction to make silently.
+
+- [TERMINOLOGY, LOAD-BEARING] **"Markov" is the same trap, and the Carroll agent caught it mid-signal.**
+  Al-Khalili's non-Markovianity (PROP-2026-09-02-005) is a technical term about *bath memory* in open
+  quantum systems. Friston's Markov blanket is a statistical-independence boundary. The shape match — a
+  system tuning its environment to preserve an internal state — is real and worth recording; the word is
+  not shared. The agent recorded it explicitly as "a shape match, not a claim" and named FLAG-020 as the
+  precedent.
+
+- [MEASUREMENT OPPORTUNITY] **Two Kastrup sources six days apart bracket a live exchange with Levin**
+  (PROP-2026-09-02-003, -004). Same question, fixed object, one-week interval, both recordings extant. This
+  is the displacement measurement the inter-tradition study is built to detect and normally cannot observe
+  with a timestamp. See CROSS-135 for the independent-coding method note.
+
+- [DISAGREEMENT, NOT BRIDGE] **Levin dissolves the hemisphere question** ("why stop at hemispheres — why
+  not the stuff inside each hemisphere?", PROP-2026-08-31-001). That is a direct challenge to the asymmetry
+  McGilchrist's whole account rests on. Filed as disagreement; a sweep that records it as a bridge would be
+  recording the opposite of what the source says.
+
+- [ARCHITECTURE] **A tradition-holder independently asked for the thing this project builds.** Carroll, on
+  physicists not knowing what philosophers of physics or statisticians are saying: "I think we need to
+  actually talk to each other and there should be more formal structures to allow that to happen"
+  (PROP-2026-09-02-005). It is an aside, not an argument, and is recorded as one — but it is unprompted
+  external corroboration of the C2A2 premise and the vault has almost none.
+
+- [PIPELINE] **Four of the 36 approvals approved a pointer, not a reading.** PROP-2026-09-08-003 was
+  submitted on an institutional listing with no source text and says so ("the approval is approving a
+  pointer, not a reading"); PROP-2026-09-02-003's decisive passage is paywalled and the agent recommended
+  retrieval *before* ingest; PROP-2026-09-02-002 asked the orchestrator to queue a retrieval check after
+  2026-09-24 rather than treat the card as ingestible; PROP-2026-09-08-004 carries a self-declared
+  duplication warning against PROP-2026-06-23-001 and PROP-2026-08-04-002. All four were approved as-is and
+  ingested this run.
+
+- [PIPELINE, AUTHORSHIP] **Two Hawkins-tradition cards are not Hawkins.** PROP-2026-09-08-001 is a TBP team
+  meeting led by Tristan Slominski; PROP-2026-09-08-002 is led by Viviane Clay. Both agents flagged the
+  authorship themselves and asked that a reviewer either reject on that ground or fix the standing rule, so
+  it stops being re-litigated every run. Approval-as-is has now settled it by default, three times.
+
+[EVALUATED: 2026-09-10 - FINDING-086..090; see pattern_detector_findings.md]
+
+## Forwarded 2026-09-24 — 35-card ingest batch (decision email 2026-09-23)
+
+- [BRIDGE, ONE-SIDED] **Hoffman and Friston negotiate formal identity in person** (PROP-2026-09-15-003). Ingested Hoffman-side only; the proposer asked for a Friston-side ingestion. See CROSS-136.
+
+- [CONVERGENCE] **TBP attention work and active inference converge on prediction error as the policy quantity** (four Hawkins-tradition cards). See CROSS-137.
+
+- [SCALING] **Non-neural active inference at planetary, collective and cellular scale in one batch** (PROP-2026-09-14-004, -09-14-001, -09-21-002). See CROSS-138.
+
+- [ADVERSARIAL CASE FOR C2A2] **LLMs as cognitive virus** (PROP-2026-09-12-002): heavy AI mediation may drive a population toward a lock-in state with reduced competence. That is the opposite prediction from C2A2's thesis that rich exposure improves judgement, using the same measurement apparatus.
+
+- [NORMATIVITY] **Vmem/connexin metastasis paradox** (PROP-2026-09-12-004): a well-coupled collective following its stored setpoint produces metastasis. Bioelectric description alone cannot mark this as failure.
+
+- [ONTOLOGY] **Stump on the love-bonded dyad as causal whole** (PROP-2026-09-17-001). See CROSS-139.
+
+- [NEW CONTACT] **Rohr × MacIntyre — epistemological crisis** (PROP-2026-09-20-003): faultless observance of a tradition's norms producing a hateful man is a tradition-internal failure detected by the tradition's own standards. Not yet indexed as CROSS; MacIntyre file holds 6 triplets.
+
+- [ONE-SIDED AXIS] **Rohr × Wright on Paul, fourth consecutive flag with no Wright-side material.** See CROSS-140.
+
+- [PIPELINE, AUTHORSHIP] **All four Hawkins-tradition cards in this batch are TBP team work** (Leadholm, Knudstrup, Clay), 15 triplets. Fourth time approved as-is.
+
+- [PIPELINE, RESOLVED] **A "do not ingest until citation resolves" card was resolved in-run** (PROP-2026-09-14-004): nature.com landing page confirms title, venue, DOI, 5 authors (card listed 4; Da Costa was missing), published 2026-08-03.
+
+- [PIPELINE, HELD] **Wolfram PROP-2026-09-19-001 CANDIDATE-03 held**: no Evidence field; the proposer's own note says it "may deserve rejection" and rests on a health-related personal update it said should not be mined.
+
+[EVALUATED: 2026-09-24 - FINDING-091..094; see pattern_detector_findings.md]

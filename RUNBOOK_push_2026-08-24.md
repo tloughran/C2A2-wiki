@@ -176,7 +176,7 @@ renders convergences the network has flagged as possibly English-only. Do not pu
 ```sh
 bash scripts/refresh_review_log.sh
 bash scripts/regen_prs_connectome.sh
-bash scripts/regen_summa_sociogram.sh --summa    # --summa is NOT optional
+bash wiki/c2a2-wiki-narration/regen_sociogram.sh   # supported wrapper; takes no args
 bash scripts/regen_level2_signals.sh
 ```
 

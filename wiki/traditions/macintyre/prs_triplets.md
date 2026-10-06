@@ -61,3 +61,13 @@ PRS-05:
   Date Added: 2026-04-29
   Source: Whose Justice? Which Rationality?, Chapter 19; Three Rival Versions, Chapter 5
   Confidence: High
+
+PRS-06:
+  Label: P6 — Apprenticeship as participation without representation
+  Problem: Dependent Rational Animals grounds the virtues of acknowledged dependence in human animality but does not say how a good held by a network of giving and receiving becomes operative in an individual member.
+  Resource: Distributed target states (Levin) — a goal borne by a collective that no single member represents, tracked by coupling rather than representation.
+  Solution: Apprenticeship modelled as participation without representation: the novice pursues goods internal to a practice that she cannot yet recognize, directed toward them by a master who holds them. Gives DRA the mechanism it lacks without deriving the dependence virtues from the theological ones.
+  Date Added: 2026-09-08
+  Source: Loughran–Claude session 2026-09-08 (Potts paper-response run); inbox/2026-09-08_levin_virtue-as-external-setpoint.md
+  Confidence: Medium
+  Evidence: The mechanism is imported from Levin, not found in MacIntyre. OPEN — bootstrapping: judging whether one's source is a tyrant requires standards that came from the source. MacIntyre's own reply (epistemological crisis plus an encounterable rival with superior resources) converts this from a philosophical problem into an engineering problem about the availability of rivals, which is what C2A2 is for. Converted, not solved.

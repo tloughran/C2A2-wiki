@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.c2a2.voice-shell-check</string>
+
+  <!--
+    The CCL shell suite (scripts/test_voice_shell.cjs) as a gated daily job, so a
+    red suite is seen the day it goes red. It ran red and unread from 2026-08-12
+    to 2026-09-17. Has to be launchd, not a scheduled task: it drives a real
+    Chrome over CDP, which the task sandbox cannot do.
+
+    /bin/bash + wrapper, never node directly: TCC grants ~/Documents per
+    executable and only the bash road is known to work under launchd (see
+    check_scheduled_commits.sh). The wrapper gates on "a tested surface is newer
+    than the last verdict" and holds a mkdir lock, so an idle fire costs nothing.
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/check_voice_shell.sh</string>
+  </array>
+
+  <!--
+    05:35 local. Was 05:20, which wedged the job: com.c2a2.metabolism-regen runs
+    at 05:00 and finishes writing wiki/metabolism/metabolism_view.html - a tested
+    surface - around 05:04, so at 05:20 that file was 16m old, inside the
+    20-minute quiet period, and the gate deferred deterministically every day
+    from 2026-09-29 to 2026-10-05. 05:35 is past 05:23, when the 05:04 write
+    clears the quiet period, and still before the 05:45 commit-check agent, whose
+    check_scheduler_health.py reads the verdict this writes, so the 06:00 morning
+    report carries today's suite result, not yesterday's. Not later than 05:35:
+    the last real run took 3m45s, so a 05:40 start would finish ~05:44, too tight
+    against 05:45. Shares the slot with nothing (metabolism publish 05:50,
+    openstory telemetry 06:05).
+  -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>5</integer>
+    <key>Minute</key>
+    <integer>35</integer>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-voice-shell-check.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-voice-shell-check.log</string>
+</dict>
+</plist>

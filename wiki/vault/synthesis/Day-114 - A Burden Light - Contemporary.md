@@ -4,23 +4,23 @@ title: A Burden Light (Contemporary)
 pairs_with: "[[Day-114 - A Burden Light]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1906
-length_ratio_to_target: 1.271
-length_note: "Over target: two questions (Q.106-107) at the pivot of the law treatise, and the entry is a central-theme keystone (new law as imported prior-update) doing substantive linkage across five traditions plus Wright/Rohr."
+length_actual_words: 2009
+length_ratio_to_target: 1.339
+length_note: "Over target: two questions (Q.106-107) at the pivot of the law treatise, and the entry is a central-theme keystone (new law as imported prior-update) doing substantive linkage across five traditions plus Wright/Rohr. RECOUNTED 2026-09-16 by QC sweep: the declared 1906 understated the body by 103 words, the standing arithmetic-staleness pattern. Counting boundary used, stated so the next pass can reproduce or refute it: the constitution's regex over everything after the frontmatter block, with the trailing auto-linked related-records footer excluded along with the bare separator line that introduces it. That gives 2009 and a true ratio of 1.339 against the short-tier 1500 target. ESCALATED rather than trimmed: 1.339 is outside the constitution's plus-or-minus-25-percent band, which the Step-4 rule reads as a possible tier misclassification. The paired transcript's cleaned word_count is 968, which is short-tier by the table, so the tier field is arithmetically correct and the overrun is substantive; but that transcript sits in the 106-115 fabricated-transcript band, so its word_count is not trustworthy evidence about tier either way. Tom's call."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (PRS-04 morphogenetic field; pattern as cause)"
-  - "wiki/traditions/kastrup/wiki.md (PRS-02 analytic idealism; mind as ontological primitive)"
-  - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory)"
-  - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model priors; grace as imported prior)"
-  - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; intrinsic-motivation dynamics)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; bioelectric circuits encode anatomical target states, Confidence High. Repointed 2026-09-07 from PRS-04, whose record is substrate-independent cognition, not pattern-as-cause. Re-homed 2026-09-16 from wiki.md, which carries only a derived summary table of PRS-01 through 08; the register entry is in prs_triplets.md and was verified there this run, gloss exact)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 analytic idealism; inverted ontology, consciousness primary and matter its expression, Confidence High. Repointed 2026-09-07 from PRS-02, whose record is individuation by dissociation. Re-homed 2026-09-16 from wiki.md for the same reason; verified in prs_triplets.md this run, gloss exact)"
+  - "wiki/traditions/hoffman/wiki.md -- claimed as FLAG-02, but no FLAG-02 exists; the wiki's only two paradigm flags are FLAG-001 and FLAG-002 in master/paradigm_flags.md, neither on interface theory. Hoffman's interface theory itself is real and carried elsewhere in this vault under PRS-ids; this specific citation is unanchored. (Found and corrected 2026-09-24 by QC sweep.)"
+  - "wiki/traditions/friston/wiki.md -- claimed as FLAG-05, but no FLAG-05 exists (same defect as above). The grace-as-imported-prior claim is this commentary's own extension, unanchored in the wiki. (Found and corrected 2026-09-24 by QC sweep.)"
+  - "wiki/traditions/fredrickson/wiki.md -- claimed as FLAG-11, but no FLAG-11 exists (same defect); the finding itself is real elsewhere in Fredrickson's register under PRS-ids, but this specific citation is unanchored. (Found and corrected 2026-09-24 by QC sweep.)"
   - "wiki/master/cross_program_index.md (searched 2026-08-30: no CROSS entry records intrinsic vs. extrinsic motivation; the claim rests on self-determination theory and the wider motivation literature, not on a register node)"
   - "Wright, Paul and the Faithfulness of God (indwelling Spirit; new-creation theology)"
   - "Rohr, The Universal Christ (Christ as eternal pattern; sacramental ontology)"
 mind_first_reframe: "The new law is not text but indwelling pattern — the imported, recalibrating prior-update that rewrites the agent's generative model so the loving-unity end becomes the spontaneous, intrinsic prior rather than an externally enforced constraint."
 central_theme_thread: "The agent cannot bootstrap from perspective-limited resources into charity; the new law is the import of priors from outside the agent that makes loving-unity intrinsically motivating, dissolving the interior/exterior dichotomy under mind-monism."
 evidence_strength_summary: "Empirical: self-determination theory on intrinsic motivation, broaden-and-build, developmental moral psychology. Theological: Pauline pneumatology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Trinitarian pneumatology."
-last_qc_at: "2026-08-30T14:30:17"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-10-03T20:17:49"
+last_qc_outcome: "pass"
 tags: [synthesis, day/114, theme/new-law-as-Spirit, theme/intrinsic-motivation]
 ---
 
@@ -40,15 +40,15 @@ This is the central problem the entire law-and-grace treatise has been building 
 
 ## Resource: form-as-person, intrinsic motivation, indwelling Spirit, sacramental ontology
 
-**Levin's morphogenetic-field work** (PRS-04): the field is not merely a pattern *describing* the organism's development; it is causally responsible *in* the development. There is no separation between the pattern and the system actualizing it. This is the structural analog Aquinas needs: the new law is not a code *external* to the agent; it is the indwelling principle *in* the agent that orients its development.
+**Levin's morphogenetic-control work** (PRS-01 in the Levin-tradition wiki: bioelectric circuits encode anatomical target states; Confidence High): the field is not merely a pattern *describing* the organism's development; it is causally responsible *in* the development. There is no separation between the pattern and the system actualizing it. This is the structural analog Aquinas needs: the new law is not a code *external* to the agent; it is the indwelling principle *in* the agent that orients its development.
 
-**Kastrup's analytic idealism** (PRS-02): if mind is ontologically primitive, then *persons* (rather than codes) are the fundamental locus of normative orientation. The Spirit indwelling the agent is *not* a strange exception to a code-governed universe; it is the *default* mode of normative reality on a mind-monist account — mind operates through mind, person operates through person.
+**Kastrup's analytic idealism** (PRS-01 in the Kastrup-tradition wiki, the inverted-ontology record; Confidence High): if mind is ontologically primitive, then *persons* (rather than codes) are the fundamental locus of normative orientation. The Spirit indwelling the agent is *not* a strange exception to a code-governed universe; it is the *default* mode of normative reality on a mind-monist account — mind operates through mind, person operates through person.
 
-**Hoffman's interface theory** (FLAG-02): an agent's interface includes not only world-representations but *value-representations* and *agent-representations*. The indwelling Spirit, on a Hoffman-shaped reading, is the *update to the agent's value-interface* — not a strange addition to a value-neutral cognitive architecture, but a recalibration of the value-tracking signals the agent already has.
+**Hoffman's interface theory** (no wiki record at this citation -- FLAG-02 does not exist; the interface theory itself is real and carried elsewhere in this vault under PRS-ids, but this specific citation is unanchored): an agent's interface includes not only world-representations but *value-representations* and *agent-representations*. The indwelling Spirit, on a Hoffman-shaped reading, is the *update to the agent's value-interface* — not a strange addition to a value-neutral cognitive architecture, but a recalibration of the value-tracking signals the agent already has.
 
-**Friston's active inference** (FLAG-05): the agent's behavior follows from its generative-model priors. Q.106 a.1's "the new law is in the first place a law that is inscribed on our hearts" is precisely the prior-update: the agent's generative model is rewritten so that the love-of-God-and-neighbor is the *spontaneous* prior, not a constraint applied to a different default. Q.107 a.1's "law of love" vs "law of fear" is the difference between an agent whose priors already love the right things (the new-law condition) versus an agent whose priors love wrong things and must be coerced by punishment-threat (the old-law motivational floor).
+**Friston's active inference** (no wiki record -- FLAG-05 does not exist; this commentary's own extension, unanchored): the agent's behavior follows from its generative-model priors. Q.106 a.1's "the new law is in the first place a law that is inscribed on our hearts" is precisely the prior-update: the agent's generative model is rewritten so that the love-of-God-and-neighbor is the *spontaneous* prior, not a constraint applied to a different default. Q.107 a.1's "law of love" vs "law of fear" is the difference between an agent whose priors already love the right things (the new-law condition) versus an agent whose priors love wrong things and must be coerced by punishment-threat (the old-law motivational floor).
 
-**Fredrickson's broaden-and-build** (FLAG-11): intrinsic motivation produces broaden-and-build dynamics; extrinsic motivation under threat produces narrow-and-defend dynamics. Q.107 a.4's "the new law is a yoke that is easy" is the empirical claim: the agent who loves does not experience the same action as burdensome that the agent who fears does. Modern self-determination theory (Deci, Ryan) has empirically established this across domains.
+**Fredrickson's broaden-and-build** (no wiki record at this citation -- FLAG-11 does not exist; the finding itself is real elsewhere in Fredrickson's register, but this specific id is unanchored): intrinsic motivation produces broaden-and-build dynamics; extrinsic motivation under threat produces narrow-and-defend dynamics. Q.107 a.4's "the new law is a yoke that is easy" is the empirical claim: the agent who loves does not experience the same action as burdensome that the agent who fears does. Modern self-determination theory (Deci, Ryan) has empirically established this across domains.
 
 **Intrinsic vs. extrinsic motivation** (self-determination theory — Deci and Ryan — and the wider motivation literature; no C2A2 wiki node, `wiki/master/cross_program_index.md` searched 2026-08-30): multiple research literatures converge on the finding that intrinsic motivation is more durable, more flexible, more generative, more cooperative, and more resistant to perturbation than extrinsic motivation. The medieval phrase is "law of love"; the contemporary phrase is "intrinsic motivation"; the underlying claim is the same.
 
@@ -102,11 +102,11 @@ Rohr's reading attaches: the agent's perspective limitation is *not* the ultimat
 
 ## Bridges
 
-- **PRS-04 in the Levin-tradition wiki (morphogenetic field; pattern as cause)**: the indwelling Spirit as the pattern-in-the-agent. *Empirical / metaphysical*.
-- **PRS-02 (Kastrup analytic idealism)**: mind-monism makes person-as-locus-of-normativity default rather than exotic. *Metaphysical argument*.
-- **FLAG-02 (Hoffman interface theory)**: indwelling Spirit as recalibration of the value-interface. *Formal / interpretive*.
-- **FLAG-05 (Friston active inference)**: new law as imported prior-update. *Empirical/formal*.
-- **FLAG-11 (Fredrickson broaden-and-build)**: love-driven engagement broadens; fear-driven compliance narrows. *Empirical*.
+- **PRS-01 in the Levin-tradition wiki (morphogenetic control; bioelectric target states as cause of form, Confidence High)**: the indwelling Spirit as the pattern-in-the-agent. *Empirical at the bioelectric level; the transfer to the new law is the commentary's own analogy, speculative.*
+- **PRS-01 in the Kastrup-tradition wiki (inverted ontology; mind as primitive, Confidence High)**: mind-monism makes person-as-locus-of-normativity default rather than exotic. *Metaphysical argument; the step from mind-as-primitive to person-as-locus is the commentary's extension, not a recorded claim.*
+- **Hoffman, interface theory -- UNANCHORED AT THIS ID**: cited as FLAG-02 through 2026-09-24, but no FLAG-02 exists (only FLAG-001/FLAG-002 do, neither on this topic); indwelling Spirit as recalibration of the value-interface. *Formal/interpretive (the underlying theory is real elsewhere in Hoffman's register; this specific citation is not).*
+- **Friston, active inference -- UNANCHORED**: cited as FLAG-05 through 2026-09-24, but no FLAG-05 exists; new law as imported prior-update is this commentary's own extension. *Empirical/formal claim, but uncited.*
+- **Fredrickson, broaden-and-build -- UNANCHORED AT THIS ID**: cited as FLAG-11 through 2026-09-24, but no FLAG-11 exists; love-driven engagement broadens, fear-driven compliance narrows. *Empirical (the underlying finding is real elsewhere in Fredrickson's register; this specific citation is not).*
 - **Intrinsic vs. extrinsic motivation (self-determination theory, Deci and Ryan; no C2A2 wiki node — `wiki/master/cross_program_index.md` searched 2026-08-30)**: intrinsic motivation is empirically more durable, flexible, and generative. *Cross-disciplinary empirical*.
 - **Wright, *Paul and the Faithfulness of God***: Pauline pneumatology of indwelling Spirit. *Exegetical/theological*.
 - **Rohr, *The Universal Christ* and *Immortal Diamond***: cosmic-Christ as pattern, true-self as pattern-within-the-whole. *Contemplative-theological*.

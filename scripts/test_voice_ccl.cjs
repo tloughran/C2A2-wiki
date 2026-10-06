@@ -569,7 +569,7 @@ check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', f
     summarize: 'summarize',
     show: 'show levin', hide: 'hide levin', only: 'only levin',
     all: 'all', none: 'none', open: 'open ' + DEST.nodes[0].id.replace(/\.md$/, ''), close: 'close',
-    find: 'find x', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',
+    find: 'find x', also: 'also y', except: 'except z', within: 'within w', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit', plot: 'plot heatmap',
     undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore', what: 'what', where: 'where', help: 'help',
   };
   for (const verb of CCL.SOCIOGRAM_CAPS) {
@@ -966,11 +966,521 @@ check('guess: the plan carries the assumption up to the speaker', function () {
   assert.strictEqual(p.guesses[0].term, 'su');
 });
 
+// ---- composable cuts + verify (2026-09-22, Tom: "cannot retain one cut on
+// data and add or subtract another, nor notice that it failed") -------------
+// WHY these rows matter: before this, every `find` REPLACED the last, so the
+// only way to say "keep X, add Y" was to lose X. Each row below fails if the
+// cut stops composing, or if a step that did nothing can pass in silence.
+const IDX = { levin: ['a', 'b', 'c'], friston: ['c', 'd'], summa: ['b', 'x'], nothing: [] };
+const fakeFind = function (t) { return IDX[t] || []; };
+check('cut: "X also Y except Z" is union then difference, left to right', function () {
+  const terms = CCL.parseCutExpr('levin also friston except summa');
+  assert.deepStrictEqual(terms.map(function (t) { return t.op; }), ['set', 'union', 'diff']);
+  const r = CCL.composeCut(terms, fakeFind);
+  assert.deepStrictEqual(r.ids.sort(), ['a', 'c', 'd']);
+});
+check('cut: "within" intersects -- narrowing never adds', function () {
+  const r = CCL.composeCut(CCL.parseCutExpr('levin within friston'), fakeFind);
+  assert.deepStrictEqual(r.ids, ['c']);
+});
+check('cut: a plain search is ONE term, unchanged from before', function () {
+  const terms = CCL.parseCutExpr('free energy principle');
+  assert.strictEqual(terms.length, 1);
+  assert.strictEqual(terms[0].text, 'free energy principle');
+});
+check('cut: a step that changed nothing is REPORTED, not passed over', function () {
+  const r = CCL.composeCut(CCL.parseCutExpr('friston except summa also nothing'), fakeFind);
+  const probs = CCL.cutStepProblems(r.steps);
+  assert.ok(probs.some(function (p) { return /except "summa" removed nothing/.test(p); }), probs.join(' | '));
+  assert.ok(probs.some(function (p) { return /"nothing" matched nothing/.test(p); }), probs.join(' | '));
+});
+check('cut: a composition where every step acted reports no problems', function () {
+  const r = CCL.composeCut(CCL.parseCutExpr('levin also friston except summa'), fakeFind);
+  assert.deepStrictEqual(CCL.cutStepProblems(r.steps), []);
+});
+check('plan: also/except/within are relative verbs routed to the shell as compose', function () {
+  const p = planCmd('except summa');
+  assert.strictEqual(p.ok, true);
+  assert.strictEqual(p.action, 'compose');
+  assert.strictEqual(p.op, 'diff');
+  assert.strictEqual(p.text, 'summa');
+});
+check('verify: drawn == intended passes; an extra or a missing node fails loudly', function () {
+  assert.strictEqual(CCL.verifyDrawn(['a', 'b'], ['a', 'b'], ['a', 'b', 'c']).ok, true);
+  const v = CCL.verifyDrawn(['a', 'b'], ['a', 'c'], ['a', 'b', 'c']);
+  assert.strictEqual(v.ok, false);
+  assert.strictEqual(v.extra, 1);
+  assert.strictEqual(v.missing, 1);
+  // a node the page never rendered is not "missing" -- it was never drawable
+  assert.strictEqual(CCL.verifyDrawn(['a', 'z'], ['a'], ['a', 'b']).ok, true);
+});
+check('verify: a filter read-back that disagrees with what was written is named', function () {
+  assert.strictEqual(CCL.verifyFilters({ levin: true, friston: false }, { levin: true, friston: false }).ok, true);
+  const v = CCL.verifyFilters({ levin: true }, { levin: false });
+  assert.strictEqual(v.ok, false);
+  assert.ok(/levin should be on but is off/.test(v.problems[0]));
+  assert.strictEqual(CCL.verifyFilters({ levin: true }, null).ok, false);
+});
+
+// ---- planner (item 4) ---------------------------------------------------------
+// WHY: Tom's 15-minute test (2026-09-22) -- the guide "cannot retain one cut and
+// add or subtract another, nor notice that it failed". These rows fail if the
+// router lets a question run as a command, if a free search starts costing a
+// model call, if verify problems stop reaching the model, or if a failure the
+// model does not fix can vanish from what the user is shown.
+check('route: a question that starts with a verb goes to the planner, not run as that verb', function () {
+  assert.strictEqual(CCL.routeRequest('show me how levin connects to friston', grammar).route, 'plan');
+  assert.strictEqual(CCL.routeRequest('How does Levin connect to Friston?', grammar).route, 'plan');
+  assert.strictEqual(CCL.routeRequest('keep levin and add friston', grammar).route, 'plan');
+  assert.strictEqual(CCL.routeRequest('only levin then hide agents', grammar).route, 'plan');
+});
+check('route: one command and a short bare search stay direct (free, no model call)', function () {
+  assert.strictEqual(CCL.routeRequest('only levin friston', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('levin', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('bioelectric memory', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('what', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('also friston', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('   ', grammar).route, 'empty');
+});
+check('parsePlan: fenced JSON is read; read/spin are refused; the list is capped', function () {
+  const p = CCL.parsePlan('Sure:\n```json\n{"goal":"g","commands":["find levin","read","spin left","also friston","a","b","c","d","e"],"answer":""}\n```');
+  assert.strictEqual(p.ok, true);
+  assert.deepStrictEqual(p.commands, ['find levin', 'also friston', 'a', 'b', 'c', 'd']);
+  assert.deepStrictEqual(p.dropped, ['read', 'spin left', 'e']);
+  assert.strictEqual(CCL.parsePlan('I think you should find levin').ok, false);
+  assert.strictEqual(CCL.parsePlan('{"commands": [').ok, false);
+});
+check('prompt: the cut grammar is taught (a new find REPLACES; also ADDS)', function () {
+  const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: CCL.verbLines(VERBS), results: [] });
+  assert.ok(/new `find` REPLACES/.test(pr.system));
+  assert.ok(/`also Y` \(add: the UNION/.test(pr.system), 'also must be taught as a union -- the 09-24 eval answer called it an overlap');
+  assert.ok(/\nalso \(/.test(pr.user), 'verb list must carry also/except/within from verbs.json');
+});
+
+const asyncChecks = [];
+function acheck(name, fn) { asyncChecks.push([name, fn]); }
+function fakeModel(replies) {
+  const seen = [];
+  return { seen: seen, ask: function (p) { seen.push(p); const r = replies[Math.min(seen.length - 1, replies.length - 1)]; return Promise.resolve({ text: JSON.stringify(r), model: 'fake' }); } };
+}
+acheck('loop: a verify problem reaches the model, its correction runs, and a fixed run reports no failure', async function () {
+  const m = fakeModel([
+    { goal: 'levin plus friston', commands: ['find levin', 'find friston'], answer: '' },
+    { goal: 'levin plus friston', commands: ['find levin', 'also friston'], answer: '' },
+    { goal: 'x', commands: [], answer: 'Levin and Friston are both lit.' }
+  ]);
+  const ran = [];
+  const run = function (c) {
+    ran.push(c);
+    if (c === 'find friston') { return { ok: true, spoken: 'find friston: 2', verify: { ok: false, problems: ['levin cut was replaced'] } }; }
+    return { ok: true, spoken: c + ': ok', verify: { ok: true, problems: [] } };
+  };
+  const res = await CCL.runPlan('keep levin, add friston', { state: function () { return 'S'; }, run: run, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(ran, ['find levin', 'find friston', 'find levin', 'also friston']);
+  assert.ok(/VERIFY PROBLEMS: levin cut was replaced/.test(m.seen[1].user));
+  assert.strictEqual(res.calls, 3);
+  assert.strictEqual(res.failed.length, 0);
+  assert.strictEqual(res.answer, 'Levin and Friston are both lit.');
+});
+acheck('loop: an unfixed failure is returned as `failed` whatever the model claims; the last round never runs commands', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['except summa'], answer: 'Done, summa removed.' }]);
+  const ran = [];
+  const run = function (c) { ran.push(c); return { ok: true, spoken: c, verify: { ok: false, problems: ['removed nothing'] } }; };
+  const res = await CCL.runPlan('drop summa', { state: function () { return 'S'; }, run: run, ask: m.ask, verbs: '', knowledge: '' });
+  assert.strictEqual(res.calls, 3);
+  assert.deepStrictEqual(ran, ['except summa', 'except summa']);
+  assert.strictEqual(res.failed.length, 1);
+  assert.ok(/LAST round/.test(m.seen[2].user));
+});
+acheck('loop: text a command returns (summarize) reaches the model in the next round', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['summarize'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  const run = function () { return { ok: true, spoken: 'summarizing', text: 'BIOELECTRIC-BODY-TEXT' }; };
+  await CCL.runPlan('what does this article say?', { state: function () { return 'S'; }, run: run, ask: m.ask, verbs: '', knowledge: '' });
+  assert.ok(/TEXT RETURNED:\n\s*BIOELECTRIC-BODY-TEXT/.test(m.seen[1].user), 'the article text must be in the round-2 prompt');
+});
+acheck('loop: a plain question costs one call and runs nothing', async function () {
+  const m = fakeModel([{ goal: '', commands: [], answer: 'A.' }]);
+  const res = await CCL.runPlan('what is a bridge essay?', { state: function () { return 'S'; }, run: function () { throw new Error('ran'); }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.strictEqual(res.calls, 1);
+  assert.strictEqual(res.trace.length, 0);
+  assert.strictEqual(res.answer, 'A.');
+});
+
+// ---- grounding (2026-09-24) ---------------------------------------------------
+// WHY: Tom's standing requirement -- answers "richly informed by our model, not
+// general knowledge". The 09-24 live eval reached neither the Friston-Levin
+// bridge essay nor the signals; these rows fail if retrieval stops handing the
+// model its own material, or starts inventing it.
+const GIDX = {
+  traditions: {
+    levin: { name: 'Levin', full: 'Michael Levin', aliases: ['levin', 'michael levin'], prs: [
+      { id: 'PRS-01', label: 'Morphogenetic control', p: 'body-plan repair', r: 'bioelectric circuits', s: 'regenerative medicine', c: 'High' },
+      { id: 'PRS-03', label: 'Attractor formalism', p: 'no language for morphological attractors', r: 'free energy frameworks', s: 'goal-seeking as free energy minimization', c: 'High' },
+      { id: 'PRS-09', label: 'Cancer', p: 'cancer as defection', r: 'bioelectric coherence', s: 'field therapeutics', c: 'Medium' } ] },
+    friston: { name: 'Friston', full: 'Karl Friston', aliases: ['friston', 'karl friston'], prs: [
+      { id: 'PRS-01', label: 'FEP', p: 'order without vitalism', r: 'variational inference', s: 'free energy principle', c: 'High' } ] },
+    kastrup: { name: 'Kastrup', full: 'Bernardo Kastrup', aliases: ['kastrup', 'bernardo kastrup'], prs: [] }
+  },
+  bridges: { 'friston|levin': 'synthesis/friston_levin_bridge.md' },
+  signals: [
+    { a: 'friston', b: 'levin', d: '2026-05-01', st: 'Moderate', w: 2, t: 'SIG-MOD', n: '' },
+    { a: 'friston', b: 'levin', d: '2026-06-01', st: 'Strong', w: 3, t: 'SIG-STRONG', n: '' },
+    { a: 'kastrup', b: 'levin', d: '2026-07-01', st: 'Speculative', w: 1, t: 'SIG-KL', n: '' } ]
+};
+const BRIDGE = '# Friston x Levin\n- `traditions/levin/prs_triplets.md` PRS-09 (cited by the essay)\nBRIDGE-BODY';
+check('grounding: a named pair pulls its bridge essay, its own signals (strongest first) and exact counts', function () {
+  const g = CCL.buildGrounding('How does Levin connect to Friston?', GIDX, { 'synthesis/friston_levin_bridge.md': BRIDGE });
+  assert.deepStrictEqual(g.entities, ['levin', 'friston']);
+  assert.ok(/BRIDGE-BODY/.test(g.text), 'the bridge essay text must reach the model');
+  assert.ok(g.text.indexOf('SIG-STRONG') < g.text.indexOf('SIG-MOD'), 'strongest signal first');
+  assert.ok(!/SIG-KL/.test(g.text), 'a Kastrup-Levin signal is not evidence about Friston-Levin');
+  assert.ok(/signals between Friston and Levin: 2 \(/.test(g.text), 'computed count is exact');
+  assert.ok(g.sources.indexOf('synthesis/friston_levin_bridge.md') >= 0);
+});
+check('grounding: a PRS triplet the bridge essay cites outranks term matches', function () {
+  const g = CCL.buildGrounding('How does Levin connect to Friston on free energy?', GIDX, { 'synthesis/friston_levin_bridge.md': BRIDGE });
+  const lev = g.text.slice(g.text.indexOf('PRS TRIPLETS -- Levin'));
+  assert.ok(lev.indexOf('PRS-09') < lev.indexOf('PRS-03'), 'essay-cited PRS-09 first');
+  assert.ok(lev.indexOf('PRS-03') < lev.indexOf('PRS-01'), 'then the free-energy term match');
+});
+check('grounding: nothing named -> nothing retrieved, and the prompt says so (no surmise)', function () {
+  const g = CCL.buildGrounding('what is a bridge essay?', GIDX, {});
+  assert.deepStrictEqual(g.entities, []);
+  assert.ok(/retrieved nothing/.test(g.text));
+  assert.ok(/did not load/.test(CCL.buildGrounding('levin', null, {}).text), 'a missing index is said, not hidden');
+});
+check('grounding: a missing bridge is reported as missing, not silently skipped; a pair with no essay says none exists', function () {
+  assert.ok(/could not be fetched/.test(CCL.buildGrounding('levin and friston', GIDX, {}).text));
+  assert.ok(/Kastrup and Levin: none exists|Levin and Kastrup: none exists/.test(CCL.buildGrounding('levin and kastrup', GIDX, {}).text));
+});
+check('grounding: word boundaries -- "levinson" is not Levin; possessives are', function () {
+  assert.deepStrictEqual(CCL.groundEntities('the levinson study', GIDX).entities, []);
+  assert.deepStrictEqual(CCL.groundEntities("Friston's view of Levin's work", GIDX).entities, ['friston', 'levin']);
+});
+check('prompt: grounding is carried and the no-surmise rule is taught', function () {
+  const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', grounding: 'GROUNDING-MARK', results: [] });
+  assert.ok(/GROUNDING-MARK/.test(pr.user));
+  assert.ok(/Do not add connections the grounding does not contain/.test(pr.system));
+});
+acheck('loop: grounding reaches EVERY round, not only the first', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  await CCL.runPlan('levin?', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '', grounding: 'GMARK' });
+  assert.strictEqual(m.seen.length, 2);
+  assert.ok(m.seen.every(function (p) { return /GMARK/.test(p.user); }));
+});
+check('index: the committed grounding.json is current with its sources', function () {
+  const r = require('child_process').spawnSync('python3', [path.join(ROOT, 'scripts/build_grounding_index.py'), '--check'], { encoding: 'utf8' });
+  assert.strictEqual(r.status, 0, (r.stderr || r.stdout).trim());
+});
+
+
+// ---- PLOT (step 1, 2026-09-29): plots join the shell's state --------------
+// The live panel's own lists, as C2A2Plot exposes them (shape of 2026-09-28).
+const PDIMS = {
+  plots: ['lego', 'heatmap', 'totals', 'timeline', 'strength', 'sankey'],
+  kinds: ['layer:flow', 'layer:projected', 'layer:substrate', 'mention', 'reference', 'signal', 'wikilink'],
+  groups: ['agents', 'architecture', 'inbox', 'master', 'synthesis', 'traditions/friston', 'traditions/levin'],
+  strengths: ['Strong', 'High', 'Moderate', 'Speculative', 'Unlabeled'],
+  months: ['2025-08', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09']
+};
+check('plot: a spoken request becomes one exact patch -- type, axis, lists and time in any order', function () {
+  const r = CCL.parsePlotSpec('heatmap by thinker edges signal strength strong high since august', PDIMS);
+  assert.strictEqual(r.ok, true, JSON.stringify(r));
+  assert.deepStrictEqual(r.patch, { plot: 'heatmap', axis: 'thinker', kinds: ['signal'], strengths: ['Strong', 'High'], from: '2026-08' });
+  const r2 = CCL.parsePlotSpec('since 2026-06 until 2026-07 corpus timeline by group', PDIMS);
+  assert.deepStrictEqual(r2.patch, { from: '2026-06', to: '2026-07', scope: 'corpus', plot: 'timeline', axis: 'group' });
+});
+check('plot: a month named without a year means the most recent one the DATA holds, not the calendar', function () {
+  // "since august" in Sept 2026 over data reaching back to 2025-08 must mean 2026-08.
+  assert.strictEqual(CCL.parsePlotSpec('since august', PDIMS).patch.from, '2026-08');
+  const none = CCL.parsePlotSpec('since march', PDIMS);
+  assert.strictEqual(none.ok, false, 'a month the data does not hold is said, never guessed');
+  assert.ok(/no march/.test(none.problems.join(' ')));
+});
+check('plot: ONE word not understood and NOTHING changes -- a half-applied plot is one nobody asked for', function () {
+  const r = CCL.parsePlotSpec('heatmap by thinker banana', PDIMS);
+  assert.strictEqual(r.ok, false);
+  assert.deepStrictEqual(r.problems, ['banana'], 'the problem names the word, so the listener can repair it');
+  const bad = CCL.parsePlotSpec('lego edges frobnicate', PDIMS);
+  assert.strictEqual(bad.ok, false);
+  assert.ok(/frobnicate/.test(bad.problems[0]));
+  assert.strictEqual(CCL.parsePlotSpec('by colour', PDIMS).ok, false, 'an axis the panel lacks is refused, not defaulted');
+  assert.strictEqual(CCL.parsePlotSpec('since 2026-08 until 2026-06', PDIMS).ok, false, 'a backwards window is refused');
+});
+check('plot: edge kinds resolve by plain name -- "flow" is the layer, "signals" the kind', function () {
+  assert.deepStrictEqual(CCL.parsePlotSpec('edges flow signals', PDIMS).patch.kinds, ['layer:flow', 'signal']);
+  assert.deepStrictEqual(CCL.parsePlotSpec('nodes levin friston', PDIMS).patch.groups, ['traditions/levin', 'traditions/friston']);
+  assert.deepStrictEqual(CCL.parsePlotSpec('all edges', PDIMS).patch.kinds, PDIMS.kinds, '"all edges" restores the full list');
+});
+check('plot: "plot strength" alone is the strength-mix PLOT, not an empty strength filter', function () {
+  assert.deepStrictEqual(CCL.parsePlotSpec('strength', PDIMS).patch, { plot: 'strength' });
+  assert.deepStrictEqual(CCL.parsePlotSpec('signals', PDIMS).patch, { plot: 'strength' });
+});
+check('plot: off / reset / bare are distinct -- hide, defaults, and "open as it was"', function () {
+  assert.strictEqual(CCL.parsePlotSpec('off', PDIMS).off, true);
+  const rs = CCL.parsePlotSpec('reset', PDIMS);
+  assert.strictEqual(rs.reset, true);
+  assert.strictEqual(rs.patch.kinds.length, PDIMS.kinds.length);
+  assert.strictEqual(rs.patch.plot, 'lego');
+  const bare = CCL.parsePlotSpec('', PDIMS);
+  assert.strictEqual(bare.ok, true); assert.deepStrictEqual(bare.patch, {}, 'bare plot changes nothing, only opens');
+});
+check('plot: verify compares what the PANEL HOLDS with what was asked -- lists as sets', function () {
+  const got = { plot: 'heatmap', axis: 'thinker', kinds: ['wikilink', 'signal'] };
+  assert.strictEqual(CCL.verifyPlot({ plot: 'heatmap', kinds: ['signal', 'wikilink'] }, got).ok, true, 'order of a list is not a difference');
+  const v = CCL.verifyPlot({ plot: 'sankey', kinds: ['signal'] }, got);
+  assert.strictEqual(v.ok, false);
+  assert.strictEqual(v.problems.length, 2, 'every field that did not hold is named');
+  assert.strictEqual(CCL.verifyPlot({ plot: 'lego' }, null).ok, false, 'a panel that does not answer is a failure, not a pass');
+});
+check('plot: the description names only what is narrowed, so it can be spoken', function () {
+  const d = CCL.describePlot({ plot: 'heatmap', axis: 'thinker', scope: 'page', cut: 'inside', kinds: ['signal'], groups: PDIMS.groups.slice(),
+    strengths: ['Strong', 'High'], from: '2026-08', to: '' }, PDIMS);
+  assert.strictEqual(d, 'heatmap by thinker | this view (inside the cut) | edges: signal | signals: Strong, High | 2026-08 to now');
+  assert.strictEqual(CCL.describePlot(null, PDIMS), 'plots closed');
+});
+check('plot: the verb plans on the Sociogram and is refused, plainly, where there is no graph to plot', function () {
+  const p = CCL.plan(CCL.parse('plot heatmap by thinker', grammar), { caps: CCL.SOCIOGRAM_CAPS });
+  assert.deepStrictEqual([p.ok, p.kind, p.text], [true, 'plot', 'heatmap by thinker']);
+  assert.strictEqual(CCL.plan(CCL.parse('chart timeline', grammar), { caps: CCL.SOCIOGRAM_CAPS }).kind, 'plot', '"chart" is the same verb');
+  assert.strictEqual(CCL.plan(CCL.parse('plot', grammar), { caps: CCL.SOCIOGRAM_CAPS }).text, '', 'bare plot is allowed');
+  assert.strictEqual(CCL.plan(CCL.parse('plot heatmap', grammar), { caps: CCL.SHELL_CAPS }).error, 'unsupported_here');
+});
+check('plot: the planner is taught the plot grammar and told its numbers are computed', function () {
+  const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', results: [] });
+  assert.ok(/`plot` draws the edges/.test(pr.system));
+  assert.ok(/top pairs -- use those numbers, they are computed/.test(pr.system));
+});
+acheck('plot: a command that finishes LATER (the panel loads first) is judged on its final, verified result', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['plot heatmap'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  const res = await CCL.runPlan('plot it', { state: function () { return 'S'; }, verbs: '', knowledge: '', ask: m.ask,
+    run: function () { return { ok: true, spoken: 'opening plots...', pending: Promise.resolve({ ok: false, spoken: 'plot heatmap', verify: { ok: false, problems: ['plot: asked "heatmap", panel holds "lego"'] } }) }; } });
+  assert.strictEqual(res.trace[0].spoken, 'plot heatmap', 'the interim "opening" line is not what the model is told');
+  assert.deepStrictEqual(res.trace[0].problems, ['plot: asked "heatmap", panel holds "lego"']);
+  assert.strictEqual(res.failed.length, 1, 'the unmet plot survives whatever the model then writes');
+});
+
+
+// ---- FACET TERMS (step 2, 2026-09-29) --------------------------------------
+check('facet: an ordinary search is NOT a facet -- titles, Summa coordinates and prose pass through untouched', function () {
+  ['levin', 'I.Q18.A1', 'note: this', 'free energy', 'levin also friston'].forEach(function (t) {
+    assert.strictEqual(CCL.parseFacet(t), null, t + ' must stay a search');
+  });
+});
+check('facet: the model\'s own structure is nameable -- thinker, group, kind, strength, months, pair', function () {
+  assert.deepStrictEqual(CCL.parseFacet('thinker:levin').facets, [{ facet: 'thinker', value: 'levin' }]);
+  assert.deepStrictEqual(CCL.parseFacet('between levin and friston').facets, [{ facet: 'pair', a: 'levin', b: 'friston' }]);
+  assert.deepStrictEqual(CCL.parseFacet('pair:levin~group:synthesis').facets, [{ facet: 'pair', a: 'levin', b: 'group:synthesis' }]);
+  assert.deepStrictEqual(CCL.parseFacet('since:2026-08').facets, [{ facet: 'since', value: '2026-08' }]);
+});
+check('facet: "+" is AND inside ONE term, so a chart click composes with also/except/within as a single step', function () {
+  const f = CCL.parseFacet('thinker:levin+strength:strong');
+  assert.deepStrictEqual(f.facets.map(function (x) { return x.facet; }), ['thinker', 'strength']);
+  // and the cut expression still sees it as one term
+  assert.strictEqual(CCL.parseCutExpr('between levin and friston also thinker:hoffman+month:2026-08').length, 2);
+});
+check('facet: a malformed facet is an ERROR with a reason, never silently an empty search', function () {
+  assert.ok(/needs a month/.test(CCL.parseFacet('month:august').error));
+  assert.ok(/needs a value/.test(CCL.parseFacet('kind:').error));
+  assert.ok(/not a facet/.test(CCL.parseFacet('thinker:levin+banana:x').error));
+  assert.ok(/two sides/.test(CCL.parseFacet('pair:levin').error));
+});
+check('facet: the planner is told to cut by thinker:, not by a title search', function () {
+  assert.ok(/`thinker:levin` \(every node the model attributes to Levin/.test(CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', results: [] }).system));
+});
+
+
+// ---- PLAN MEMORY (step 4, 2026-09-29) --------------------------------------
+check('memory: a request is scrubbed before it is kept -- emails, links, phone numbers go; months stay', function () {
+  assert.strictEqual(CCL.normRequest('Since 2026-08, call 574-631-1234 or tom@nd.edu; see https://x.org/a?b=1'),
+    'since 2026-08 call number or email see link');
+  assert.strictEqual(CCL.normRequest('find thinker:levin+strength:strong'), 'find thinker:levin+strength:strong', 'facet syntax survives');
+  assert.ok(CCL.normRequest('x'.repeat(900)).length <= 300);
+});
+check('memory: the broker and the engine normalize IDENTICALLY (else exact-match replay silently never fires)', function () {
+  const chain = function (src, start) {
+    const i = src.indexOf(start); assert.ok(i >= 0, 'normRequest not found');
+    const body = src.slice(i, src.indexOf('}', src.indexOf('.slice(0,', i)));
+    return body.split('\n').filter(function (l) { return /^\s*\.replace\(/.test(l); }).map(function (l) { return l.trim(); });
+  };
+  const broker = fs.readFileSync(path.join(ROOT, '.private/supabase/functions/cc-broker/index.ts'), 'utf8');
+  const engine = fs.readFileSync(path.join(ROOT, 'wiki/lib/c2a2-commandline.js'), 'utf8');
+  const b = chain(broker, 'function normRequest(s: string)'), e = chain(engine, 'function normRequest(s)');
+  assert.ok(b.length >= 6);
+  assert.deepStrictEqual(e, b);
+});
+check('memory: only a run with NO failed or flagged step in its final round is remembered', function () {
+  const good = { ok: true, failed: [], trace: [{ round: 1, cmd: 'find levin', ok: true, problems: [], spoken: '' }, { round: 2, cmd: 'also friston', ok: true, problems: [], spoken: '' }] };
+  assert.deepStrictEqual(CCL.storablePlan(good), ['find levin', 'also friston'], 'the whole sequence that led to the verified state');
+  const flagged = { ok: true, failed: [{}], trace: good.trace };
+  assert.strictEqual(CCL.storablePlan(flagged), null);
+  assert.strictEqual(CCL.storablePlan({ ok: true, failed: [], trace: [{ round: 1, cmd: 'except x', ok: true, problems: ['removed nothing'], spoken: '' }] }), null);
+  assert.strictEqual(CCL.storablePlan({ ok: true, failed: [], trace: [] }), null, 'an answer with no commands teaches nothing about CCL');
+  assert.deepStrictEqual(CCL.storablePlan({ ok: true, failed: [], trace: [{ round: 1, cmd: 'read', ok: false, problems: [], spoken: 'not run (not allowed from the planner)' }, good.trace[0]] }), ['find levin'], 'refused commands are not part of the plan');
+});
+check('memory: a plan replays WITHOUT the model only if two devices verified it, the words match, and it is not a question', function () {
+  const rec = { plans: [{ request: 'keep levin add friston', commands: ['find thinker:levin', 'also thinker:friston'], devices: 2 }] };
+  assert.deepStrictEqual(CCL.replayPlan('Keep Levin, add Friston', rec).commands, ['find thinker:levin', 'also thinker:friston']);
+  assert.strictEqual(CCL.replayPlan('keep levin add friston', { plans: [Object.assign({}, rec.plans[0], { devices: 1 })] }), null, 'one visitor cannot teach it alone');
+  assert.strictEqual(CCL.replayPlan('keep levin and add friston', rec), null, 'similar is an example, not a replay');
+  assert.strictEqual(CCL.replayPlan('how does levin add to friston?', { plans: [Object.assign({}, rec.plans[0], { request: 'how does levin add to friston' })] }), null, 'a question needs an answer, so it goes to the model');
+  assert.strictEqual(CCL.replayPlan('keep levin add friston', { plans: [Object.assign({}, rec.plans[0], { commands: ['read'] })] }), null, 'a stored plan cannot smuggle in a verb the planner may not use');
+});
+check('memory: remembered plans reach the planner as examples, marked as examples', function () {
+  const ex = CCL.planExamplesText({ plans: [{ request: 'keep levin add friston', commands: ['find thinker:levin', 'also thinker:friston'] }] });
+  assert.ok(/VERIFIED PLANS FROM EARLIER SESSIONS/.test(ex) && /plan for THIS request/.test(ex));
+  assert.ok(/buildPlanPrompt/.test('buildPlanPrompt') && /EX-MARK/.test(CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', examples: 'EX-MARK', results: [] }).user));
+  assert.strictEqual(CCL.planExamplesText({ plans: [] }), '');
+});
+acheck('memory: the examples reach EVERY planner round', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  await CCL.runPlan('x', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '', examples: 'EXMARK' });
+  assert.ok(m.seen.length === 2 && m.seen.every(function (p) { return /EXMARK/.test(p.user); }));
+});
+
+
+// ---- PROMPT BUDGET (2026-09-29): a refused request is worse than a trimmed one ----
+acheck('budget: an oversized planner request is trimmed to fit, grounding tail first, and the trim is REPORTED', async function () {
+  const m = fakeModel([{ goal: 'g', commands: [], answer: 'A.' }]);
+  const big = 'G'.repeat(90000);
+  const res = await CCL.runPlan('levin and friston', { state: function () { return 'S'; }, run: function () { return {}; }, ask: m.ask,
+    verbs: 'v', knowledge: 'K'.repeat(3000), grounding: big });
+  const sent = m.seen[0].system.length + m.seen[0].user.length;
+  assert.ok(sent <= 56000, 'sent ' + sent + ' chars');
+  assert.ok(/GROUNDING TRIMMED TO FIT/.test(m.seen[0].user), 'the model is told it saw only part');
+  assert.ok(res.trimmed.some(function (t) { return /^grounding \(\d+ of 90000/.test(t); }), JSON.stringify(res.trimmed));
+  assert.ok(/K{3000}/.test(m.seen[0].user), 'page knowledge is kept while trimming grounding suffices');
+});
+check('budget: a prompt that fits is sent untouched', function () {
+  const tr = [];
+  const p = CCL.fitPlanPrompt({ request: 'r', state: 's', verbs: '', grounding: 'GROUND', results: [] }, 56000, tr);
+  assert.ok(/GROUND/.test(p.user) && tr.length === 0);
+});
+check('budget: what cannot be made to fit returns null (the caller says so), never a silent over-limit send', function () {
+  assert.strictEqual(CCL.fitPlanPrompt({ request: 'x'.repeat(70000), state: 's', verbs: '', results: [] }, 56000, []), null);
+});
+
 // ---- report -----------------------------------------------------------------
 
-if (failures.length) {
-  console.error('FAIL: ' + failures.length + ' failed, ' + passed + ' passed\n');
-  for (const f of failures) { console.error('  x ' + f); }
-  process.exit(1);
-}
-console.log('ok: ' + passed + ' passed');
+
+// ---- 2026-09-29 (review of Tom's recording): neighbours, questions, guide knows plots ----
+// WHY: "every Summa node Levin is connected to" is a NEIGHBOURS question. `also` gave a union (788)
+// and `within` an intersection (0); nothing could say "linked to". If `neighbors:` stops composing
+// like a term, that question has no expression again and the guide can only apologise.
+check('neighbors: is recognised, nested, and is not a facet or a plain search', function () {
+  assert.strictEqual(CCL.parseNeighbors('neighbors:thinker:levin'), 'thinker:levin');
+  assert.strictEqual(CCL.parseNeighbors('Neighbours: levin'), 'levin');
+  assert.strictEqual(CCL.parseNeighbors('neighbors:between levin and friston'), 'between levin and friston');
+  assert.strictEqual(CCL.parseNeighbors('thinker:levin'), null);
+  assert.strictEqual(CCL.parseNeighbors('neighbors of levin'), null, 'plain words stay a search');
+  assert.strictEqual(CCL.parseFacet('neighbors:thinker:levin'), null, 'the facet parser must leave it to the neighbour road');
+});
+check('neighbors: composes -- Summa nodes linked to Levin = neighbors:X within group:summa', function () {
+  const edges = [['l1', 's1'], ['l1', 's2'], ['l2', 'f1'], ['l2', 'l1'], ['s3', 'f1']];
+  const sets = { 'thinker:levin': ['l1', 'l2'], 'group:summa': ['s1', 's2', 's3'] };
+  const find = function (t) {
+    const inner = CCL.parseNeighbors(t);
+    if (inner !== null) {
+      const seed = new Set(find(inner)), out = [];
+      edges.forEach(function (e) { if (seed.has(e[0]) && out.indexOf(e[1]) < 0) { out.push(e[1]); } if (seed.has(e[1]) && out.indexOf(e[0]) < 0) { out.push(e[0]); } });
+      return out;
+    }
+    return sets[t] || [];
+  };
+  const r = CCL.composeCut(CCL.parseCutExpr('neighbors:thinker:levin within group:summa'), find);
+  assert.deepStrictEqual(r.ids.sort(), ['s1', 's2']);
+  const u = CCL.composeCut(CCL.parseCutExpr('thinker:levin also neighbors:thinker:levin'), find);
+  assert.deepStrictEqual(u.ids.sort(), ['f1', 'l1', 'l2', 's1', 's2']);
+});
+// WHY: Tom wants a data scientist's control: a vague request should be ACTED on with its reading stated,
+// and the alternative offered as a question -- not refused, and not asked about first.
+check('planner reply keeps "assumed" and "ask"; empty when absent', function () {
+  const p = CCL.parsePlan(JSON.stringify({ goal: 'g', commands: ['find thinker:levin'], answer: '', assumed: 'all Levin = every Levin node', ask: 'Did you mean only edges inside Levin?' }));
+  assert.strictEqual(p.assumed, 'all Levin = every Levin node');
+  assert.strictEqual(p.ask, 'Did you mean only edges inside Levin?');
+  const q = CCL.parsePlan('{"goal":"g","commands":[],"answer":"a"}');
+  assert.strictEqual(q.ask, ''); assert.strictEqual(q.assumed, '');
+});
+acheck('a question raised in round 1 survives to the result and the plan is NOT remembered', async function () {
+  const m = fakeModel([
+    { goal: 'levin', commands: ['find thinker:levin'], answer: '', assumed: 'all Levin = Levin nodes', ask: 'Include edges out of Levin?' },
+    { goal: 'x', commands: [], answer: 'Showing Levin.' }
+  ]);
+  const res = await CCL.runPlan('show all levin', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c, verify: { ok: true, problems: [] } }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.strictEqual(res.ask, 'Include edges out of Levin?');
+  assert.strictEqual(res.assumed, 'all Levin = Levin nodes');
+  assert.strictEqual(CCL.storablePlan(res), null, 'an unconfirmed reading must not be taught to the next visitor');
+  const plain = await CCL.runPlan('show levin', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c, verify: { ok: true, problems: [] } }; }, ask: fakeModel([{ goal: 'l', commands: ['find thinker:levin'], answer: '' }, { goal: 'l', commands: [], answer: 'ok' }]).ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(CCL.storablePlan(plain), ['find thinker:levin'], 'a run with no question is still remembered');
+});
+acheck('the planner is told to read generously, knows neighbors:, and gets the failed-input hint', async function () {
+  const m = fakeModel([{ goal: 'x', commands: [], answer: 'a' }]);
+  await CCL.runPlan('linked to levin', { hint: 'HINTMARK the engine could not act on it', state: function () { return 'S'; }, run: function () { return { ok: true, spoken: '' }; }, ask: m.ask, verbs: '', knowledge: '' });
+  const sys = m.seen[0].system, usr = m.seen[0].user;
+  assert.ok(/READ GENEROUSLY/.test(sys) && /neighbors:/.test(sys) && /"ask"/.test(sys));
+  assert.ok(/NOTE: HINTMARK/.test(usr));
+});
+// WHY: the guide answered "the Sociogram is already a 3D plot" because nothing told it plots exist.
+check('the voice guide is told plots exist, and the knowledge file documents Plots and Hold', function () {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  assert.ok(/YOU CAN DRAW PLOTS/.test(html) && /never say the page is already a plot/.test(html));
+  assert.ok(/WHEN A COMMAND DOES NOT WORK OR IS UNKNOWN/.test(html) && /question_for_user/.test(html));
+  const k = fs.readFileSync(path.join(ROOT, 'wiki/voice_guide/knowledge/sociogram.graph.default.md'), 'utf8');
+  assert.ok(/\*\*Plots\*\*/.test(k) && /Hold[^.]*leave my view alone/.test(k));
+});
+check('framing: Hold skips it, and nothing floors a reveal any more', function () {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  assert.ok(/if \(holdOn\(\)\) \{ return null; \}/.test(html), 'Hold ticked must leave the view alone');
+  assert.ok(!/MIN_SCALE/.test(html.replace(/\/\/[^\n]*/g, '')), 'a floor would bring back the two-dots view');
+  assert.ok(/chk-hold-forces/.test(html));
+});
+
+// WHY (Requirement D4): on the last round the planner may only answer, and its commands were thrown away
+// silently while ok:true and its prose ("done in the lego plot") went out. Unrun steps must be reported.
+acheck('runPlan reports the commands a last round asked for but never ran', async function () {
+  const m = fakeModel([
+    { goal: 'g', commands: ['find levin'], answer: '' },
+    { goal: 'g', commands: ['find friston'], answer: 'Done: Friston is lit too.' }
+  ]);
+  const ran = [];
+  const res = await CCL.runPlan('x', { maxRounds: 2, state: function () { return 'S'; }, run: function (c) { ran.push(c); return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(ran, ['find levin'], 'the last round must not run commands');
+  assert.deepStrictEqual(res.not_run, ['find friston']);
+});
+acheck('runPlan not_run is empty when the last round only answers', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin'], answer: '' }, { goal: 'g', commands: [], answer: 'ok' }]);
+  const res = await CCL.runPlan('x', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(res.not_run, []);
+});
+// WHY (D2): after the voice tool gives up it tells the user "not done"; a late planner must not then change the view.
+acheck('runPlan stops running commands once the caller cancels', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin', 'find friston'], answer: '' }]);
+  const ran = [];
+  const res = await CCL.runPlan('x', { state: function () { return 'S'; }, cancelled: function () { return ran.length >= 1; }, run: function (c) { ran.push(c); return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(ran, ['find levin']);
+  assert.strictEqual(res.ok, false);
+  assert.ok(/cancelled/.test(res.error));
+});
+// WHY (D1, D2, D3, D4 in the voice tool): Tom's complex asks timed out with the mic muted mid-tool and the guide
+// claimed changes that were never made. These are the code-level guards; the live retest is his.
+check('voice tool: idle clock held during a tool, plan deadline, not_run surfaced, no claims before a result', function () {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  assert.ok(/dbg\('TOOL call: '[^\n]*\n\s*holdIdle\(\);/.test(html), 'a tool call in flight must hold the idle clock');
+  assert.ok(/PLAN_DEADLINE_MS\s*=\s*\d+/.test(html) && /Promise\.race\(\[_deadline/.test(html), 'plan_and_run needs an overall deadline');
+  assert.ok(/_ctl\.cancelled = true/.test(html), 'the deadline must cancel the run');
+  assert.ok(/res\.not_run/.test(html) && /NEVER RUN/.test(html), 'unrun planner steps must reach the guide as a warning');
+  assert.ok(/BEFORE A TOOL RESULT COMES BACK/.test(html), 'the guide must be told not to claim outcomes before a result');
+});
+
+(async function () {
+  for (const [name, fn] of asyncChecks) {
+    try { await fn(); passed++; }
+    catch (e) { failures.push(name + ' -- ' + (e && e.message ? e.message : e)); }
+  }
+  if (failures.length) {
+    console.error('FAIL: ' + failures.length + ' failed, ' + passed + ' passed\n');
+    for (const f of failures) { console.error('  x ' + f); }
+    process.exit(1);
+  }
+  console.log('ok: ' + passed + ' passed');
+})();

@@ -976,7 +976,8 @@ The "binding many agents into one larger agent" problem is a direct touchpoint w
 ### Iain McGilchrist (PROP-2026-06-03-001)
 - **AI consciousness (strong C2A2 signal):** Direct relevance to the network's standing question of whether AI agents can be mature members of a tradition. McGilchrist's structural "no" is the sharpest counter-pole to Levin's openness and is the natural foil to **[[11_kastrup_agent]]** (Kastrup likewise argues AI only *images* consciousness — a convergence worth flagging: McGilchrist and Kastrup arrive at the same negative verdict on AI consciousness from different routes, participatory-realist vs. analytic-idealist).
 - **Stump / Thomistic (watch):** "Soul" framed theologically invites contact with **[[07_stump_agent]]** on hylomorphic form and the rational soul.
-- **UNVERIFIED LEAD — flag, do not yet ingest:** McGilchrist posted a late-May Substack apology for having referred to Stephen Wolfram as "Stephen Tristram," implying a recent McGilchrist↔Wolfram engagement somewhere. A direct 2026 McGilchrist–Wolfram dialogue could NOT be confirmed (the Ralston "Unlocking Consciousness with Wolfram" podcast is from 2024 and is unrelated). If such a dialogue exists it would be a top-priority cross-tradition capture connecting **[[10_wolfram_agent]]** (rulial/computational) to McGilchrist's hemispheric frame — recommend the orchestrator or Wolfram agent run a targeted confirmation search before any capture.
+- **CONFIRMED 2026-09-02 — lead retired.** The McGilchrist↔Wolfram engagement implied by McGilchrist's late-May Substack apology is the **Ralston College symposium "AI and the Battle for the Soul," delivered May 2026**, at which the two were in recorded conversation. The recording is public: https://www.youtube.com/watch?v=N0STggIKDPA, released 2026-07-28, listed on Wolfram's own media index. Locator supplied by PROP-2026-08-23-002. **What is confirmed is the record's existence and identity, not anything Wolfram said** — the YouTube page returned empty to automated retrieval and no transcript or caption file was obtained. [[10_wolfram_agent]] PRS-53 (Medium) and PRS-54 (Speculative) are held at those levels *solely* because their source was promotional copy; both are now re-evidenceable against a primary record and neither should be cited for anything Wolfram said until someone watches it.
+- **Host-frame divergence on a single co-hosted encounter — recorded here as data about the hosts, not as a claim about the exchange (2026-09-02).** Wolfram's media index calls this event a **"debate"** ("Is Everything a Mechanism? ... Debate The Nature of Reality"); Ralston College's own copy calls it **"less a debate than an encounter."** Same recording, same day, opposite genre claims. PROP-2026-08-23-002 proposed minting this as a Wolfram triplet; **the daily run declined**, because the same proposal's own complaint is that PRS-54 is the agent's reading rather than Wolfram's view, and minting a second agent-inference triplet into that tradition would repeat the defect it names. It is filed here instead, where it belongs: it is a cheap, observable measure of how each tradition wishes to be seen relative to the other, and it is exactly the kind of interaction-protocol datum the C2A2 inter-tradition study wants. Routed to the pattern detector.
 
 ### Barbara Fredrickson (PROP-2026-06-04-001)
 The "tiny engines that drive human flourishing" framing reinforces the existing Fredrickson <-> Stump bridge (love/positivity resonance as ontological coupling alongside Thomistic union/beatitudo) and the Fredrickson <-> Kastrup flourishing axis. The five-breakthrough arc, as a thinker's self-periodization of a research program, is itself a C2A2 methodological artifact — an instance of a tradition articulating its own maturation track record (MacIntyre criterion). Worth flagging to Master/C2A2 as a model for how each tradition wiki might eventually present an author-sanctioned developmental spine.
@@ -1602,3 +1603,234 @@ Four signals, one of them reflexive and the highest-value of the run.
 **CROSS-107 — Levin x Friston x Watson (process/object dualism).** Watson rules out any definition of life resting on a process acting on an object, or a program acting on data, *including* definitions that name both but keep them separate — a direct attack on the generative-model / generative-process split active inference is built on. The transcript separately cites "Levin, Millidge, Tschantz & Watson 2024", so these authors already co-work across that boundary. Recorded as a live disagreement, not smoothed.
 
 **Boundary note, deliberately not claimed.** Two thirds of the transcript was not read; Adami, Baluska, Calvo, Dodig-Crnkovic, Fields, Gilbert, Lane, McShea, Shapiro, Sloman, Sole, Stepney and Witkowski all have turns that were not retrieved. This entry is a floor, not a ceiling.
+
+## Ingest 2026-09-01
+
+Backlog-clear run: the two largest un-ingested blocks in the approved queue, Rohr (16 proposals)
+and Wright (11), taken together in one pass. Nineteen new cross-program items, CROSS-108..CROSS-126.
+Because both traditions were read in the same run, the Rohr-Wright axis is indexed from both sides
+for the first time -- and it did not come back looking the way the network had it filed.
+
+### Richard Rohr (16 proposals; PRS-45..PRS-66)
+
+**CROSS-108 -- Rohr x Stump (univocity).** Rohr names Duns Scotus and the univocity of being
+**in his own voice**, not as a scholarly gloss supplied by a proposal. Univocity is the historic
+alternative to the Thomist analogy of being, which is Stump's ground. Consequence, and it is not
+small: several standing Rohr-Stump convergences may be convergences **in English only** -- the two
+traditions can use the same sentence about God and creature and mean incompatible things by the
+predication. Recommend an audit of every existing Rohr-Stump CROSS before any is cited. Source: rohr PRS-48.
+
+**CROSS-109 -- Rohr x Stump (theosis).** Rohr endorses theosis as "true, objective sharing... in our
+divine nature". Both traditions say "image of God"; on inspection they are not saying the same thing.
+Same audit as CROSS-108, different doctrine. Source: rohr PRS-49.
+
+**CROSS-110 -- Rohr x Wright (Phil 2:12-13). The strongest genuine convergence of the run.**
+Both traditions reach the same text for the same job -- how divine action and human action can both
+be complete without competing -- and arrive from opposite directions, Rohr interior and formative,
+Wright corporate and vocational, with **no evidence of contact between them**. This is the first
+independent convergence on this axis; until now the axis carried only the standing tension.
+Source: rohr PRS-49 (with wright PRS-45/PRS-58 on the other side).
+
+**CROSS-111 -- Rohr x Wright (the prophets). A second, distinct tension.** Rohr reads the Hebrew
+prophets developmentally -- as consciousness maturing across the canon. Wright's critical realism
+holds that second-temple context constrains what a text could have meant prior to and independent of
+any developmental arc the modern reader supplies. Rohr is not the party who can settle whether his
+reading is a modern overlay. **This is not the same disagreement as FINDING-058** (which is about
+whether settling is what is wanted); it is about what constrains meaning. Do not fold the two.
+Source: rohr PRS-58.
+
+**CROSS-112 -- Rohr x Hoffman. A tension wearing the costume of a convergence.** Both posit a veiled
+connected substrate behind ordinary perception. But Hoffman's veil is **evolutionarily fixed** -- fitness
+payoffs select for an interface that hides the truth, and no practice lifts it -- while Rohr's veil is
+precisely what contemplative practice lifts. Same picture, opposite claim about whether the observer
+can get behind it. Note the family resemblance to the access-sign argument at CROSS-100: same
+arithmetic, opposite sign of epistemic access. Source: rohr PRS-45.
+
+**CROSS-113 -- Rohr x Fredrickson (gate vs gradient).** Rohr states the recognition constraint
+**absolutely** -- you cannot see what you have not become; Fredrickson has the measurements and treats
+the same constraint as continuous. One of these is a gate and the other is a gradient, and the
+disagreement is empirically live rather than terminological. Source: rohr PRS-46.
+
+**CROSS-114 -- Rohr x Fredrickson (joy with grief intact).** Bowler's joy arrives **with grief fully
+present**, which cuts against the undoing hypothesis as usually stated. Read together with the standing
+grief boundary test (PROP-2026-08-07-003) and the dyadic co-measurement gap, this is the third separate
+week in which the Rohr material has produced a qualitative form of the same challenge to the positivity
+construct. Source: rohr PRS-65.
+
+**CROSS-115 -- Rohr x Friston. Route as anomaly, not convergence.** A practice that **deliberately
+sustains self-model uncertainty for forty days** is, on its face, the opposite of what a
+free-energy-minimising system should do. Either the practice is not doing what it says, or the
+minimisation is over a longer horizon than the practice, or the FEP's scope excludes it. All three are
+answerable from inside Friston's formalism; none has been asked. Source: rohr PRS-51.
+
+**CROSS-116 -- Rohr x Kastrup. Two-part, and the second part is a correction.** (a) Rohr's part/whole
+structure fits the dissociated-alter account well, **except** that Rohr's separation is real-and-provisional
+where Kastrup's is illusory -- a difference about the ontological status of the boundary, not its shape.
+(b) Univocity (CROSS-108) is a thesis about **predication**, not about substance, and must not be read as
+Rohr conceding monism. Sources: rohr PRS-55, PRS-48.
+
+### N.T. Wright (11 proposals; PRS-42..PRS-59)
+
+**CROSS-117 -- Wright x Carroll.** Wright's narrowed-modern-imagination diagnosis is, as stated,
+**unfalsifiable**: poetic naturalism holds that the repertoire was *corrected*, not *contracted*, and
+nothing in the diagnosis distinguishes the two. Recorded as a demand for a discriminating prediction,
+which the Wright side does not currently supply. Source: wright PRS-42.
+
+**CROSS-118 -- Wright x Kastrup.** Near-death reports as evidence about the metaphysics of mind
+(Kastrup) versus as bearing only on the interval between death and resurrection (Wright). The
+disagreement is not about the data but about **what the data are data for** -- a category the network
+has not been indexing separately from ordinary evidential disagreement. Source: wright PRS-51.
+
+**CROSS-119 -- Wright x Stump (the bearer problem).** Wright's intermediate state has **no bearer**;
+Stump's hylomorphism requires one. Neither tradition has reached across, and the gap is sharp enough
+to be answerable. Source: wright PRS-50.
+
+**CROSS-120 -- Wright x Stump (order of warrant).** Attribute-list theology versus reading God's
+character off the narrative. This is a **reversed order of warrant**, not a softer variant of the same
+method, and filing it as stylistic difference would lose the disagreement. Source: wright PRS-48.
+
+**CROSS-121 -- Wright x Rohr (access vs adjudication). Carries a warning.** Wright's love-as-knowledge
+in *Loving to Know* sits one step from Rohr's hermeneutic of effects (PRS-42 on that side) and
+**must not be read as conceding it**. Wright's claim is about what love gives *access* to; Rohr's is
+about what *adjudicates* between rival readings. Access is not adjudication. Source: wright PRS-54.
+
+**CROSS-122 -- Wright x McGilchrist.** Two independent routes to the same thesis -- that the mode of
+attention determines what shows up. Wright arrives via Enlightenment epistemology and its narrowing of
+admissible evidence; McGilchrist via hemispheric asymmetry. Independent arrival, which is the property
+that makes a convergence worth anything. Sources: wright PRS-54, PRS-56.
+
+**CROSS-123 -- Wright x Friston.** Parables as **deliberate prediction-error generators**, and
+visitation-as-recognition-failure as what happens under mis-specified priors. A mechanism offer from
+Friston's side to a literary-historical claim on Wright's; testable in principle, untested.
+Sources: wright PRS-44, PRS-42.
+
+**CROSS-124 -- Wright x Levin.** Faith as a genuinely **collective-level property** -- not the sum of
+the members' individual states. That is the same multi-scale-competency move Levin makes about
+biological individuality, arrived at from second-temple ecclesiology. Source: wright PRS-45.
+
+**CROSS-125 -- Wright x Fredrickson.** Broaden-and-build as the empirical form of non-rivalrous love.
+Weaker than CROSS-113/114 -- this is a parallel, not a disagreement -- and logged at that strength.
+Source: wright PRS-58.
+
+**CROSS-126 -- Wright x Loughran (C2A2 architecture).** Two items that transfer directly to the
+accelerator's own design: (a) downstream-use responsibility as a **separable third variable**, distinct
+from intent and from outcome, which transfers unchanged to agent alignment; and (b) a named norm for
+dissent that is **neither exit nor capitulation** -- which is exactly the behaviour the inter-tradition
+study needs a name for and currently lacks. Sources: wright PRS-59, PRS-57.
+
+### Evidence-base note carried at the index level, not buried in the tradition files
+Ten of the eleven Wright sources are podcast episodes and **no audio was retrieved for any of them**;
+six are subscriber-only. Every Wright triplet in this run except PRS-55 rests on a publisher-written
+description. On the Rohr side, PRS-56 and PRS-57 rest on publisher metadata alone because cac.org
+returns 403 to automated requests. **Theses are attested; arguments, qualifications and concessions are
+not.** Nothing above may be cited externally on this evidence. See FINDING-075.
+
+
+## Ingest 2026-09-02 — CROSS-127 .. CROSS-130
+
+**CROSS-127 — Levin × Hoffman: "interface" is a homonym, on a third pair.** Levin's interface *hosts* a
+pattern, which thereby becomes causally present; Hoffman's interface *hides* the agents behind it and
+makes the restricted view the only accessible one. Levin's interfaces ADD; Hoffman's SUBTRACT. Hoffman
+Question 19 already records the same inversion between trace logic and Arkani-Hamed's correlator result;
+FINDING-061 sits on adjacent ground. **Recorded as a terminological warning, not a convergence** —
+see FINDING-080, escalated to the Paradigm Shift Watch List as FLAG-020. Discriminating test is cheap and
+vault-internal: for each program, ask whether the interface adds accessible structure or removes it.
+
+**CROSS-128 — Levin × Friston: two independent routes to "more out than in."** Spisak & Friston *derive*
+attractor and associative-memory dynamics from free-energy minimisation (friston PRS-30, PRS-37); Levin
+reports the agency ratchet is already present in **random** networks and therefore not paid for by
+selection (levin PRS-98). Stated as friston Active Research Question 21: is the ratchet a free-energy
+result in disguise — a system whose causal emergence rises under training is plausibly a system improving
+its generative model — or a separate mathematical fact? Same shape as existing friston Question 8. **Not
+a claimed identity.**
+
+**CROSS-129 — Levin × Kastrup: the first reversible dissociative boundary.** The discrete-alters versus
+continuous-nesting disagreement (kastrup PRS-14, PRS-42, reopened at PRS-55) has until now had no case
+where a boundary could be watched forming and then undone. Levin's bioelectric decoupling is one: imaged
+pre-tumour with voltage dyes, reversed by forced re-coupling, with the oncogene left intact and expressed
+(levin PRS-96). Levin's own word for it is "a somatic dissociative identity disorder." **The deciding
+question is stated at kastrup Active Research Question 18** — does dissociation admit a mechanism
+reversible by an intervention *external to the alter*? If yes, this is an instance and the disagreement
+narrows sharply; if no, the two are homonyms. **No bridge is recorded until that is answered.**
+
+**CROSS-130 — Levin × Carroll: a clean statable disagreement, deliberately not smoothed.** Both accept
+that mathematics constrains physics; they disagree on the modality. Levin: "physicalism has been dead for
+a long time," and non-physical mathematical facts causally constrain physical outcomes. Carroll's poetic
+naturalism: one world describable in many vocabularies, none of which introduces additional causal
+ingredients. Filed as carroll Active Research Question 13. The Pigozzi–Levin pre-replicator result
+(levin PRS-102/103) makes it testable-shaped rather than verbal, because causal emergence there is
+**manipulable** — the strong reading of emergence, and the natural target for a deflationary account.
+
+**CROSS-131 — Levin × MacIntyre × Stump: the distributively-held setpoint.** A three-tradition
+construction, not a two-tradition bridge, and the claim is deliberately stated at its strongest so it can
+be attacked. Claim: *a distributively held setpoint is genuinely in the agent and genuinely not only in
+the agent, because the collective that holds it includes her.* If that holds, Aquinas's
+grace-as-participation (I-II q.110) and MacIntyre's goods-internal-to-a-practice are instances at
+different scales of one structure — Levin's participation without representation, in which no single cell
+represents the morphology the collective pursues — and the input/output complementarity (grace received,
+love authored) does not need the temporal/eternal move to dissolve.
+
+**Load-bearing stipulation, or the whole thing reads as a misuse of Levin's term.** The construction runs
+on an *awareness-indexed* reading of "cognitive light cone" under which the source of the goal is external
+to the agent. That is not Levin's usage: on his own account a bioelectrically stored target is INSIDE the
+collective's light cone. The stipulation is what generates the theological structure, and it is Loughran's,
+not Levin's.
+
+**Where it is exposed.** (a) NORMATIVITY — Levin's setpoints are descriptive; an induced two-headed target
+is a stored goal and cancer is reversion to a smaller light cone, so the recasting describes vice exactly
+as well as virtue and must import its normative source from outside Levin, or it is a theory of habit in
+virtue's clothing. (b) BOOTSTRAPPING — judging whether one's source is a tyrant requires standards that
+came from the source; MacIntyre's reply (crisis plus an encounterable rival with superior resources)
+converts this into an engineering problem about the availability of rivals, which is what C2A2 is for.
+Converted, not solved.
+
+Triplets: levin PRS-116, macintyre PRS-06, stump PRS-41. Source: Loughran–Claude session 2026-09-08
+(Potts paper-response run), `inbox/2026-09-08_levin_virtue-as-external-setpoint.md`.
+
+**CROSS-132 — Rohr × Wright: the same question from opposite ends, and the network has still not recorded whether they agree.** Both sides of this pairing asked for it independently in the same run, which is why it is being opened rather than left as a signal. Wright's *enlargement-not-supersession* (PRS-60..66, PROP-2026-09-06-001) is a claim about **who** is united: a corporate entity keeps its identity while its membership condition widens — the boundary moves, the people persists. Rohr's *state-versus-path* (PROP-2026-08-30-003) is a claim about **how** a perspective-limited agent moves toward that union: Christ names the state, Jesus names the path, and the giving-away is performed by the limited agent from inside the limitation rather than by erasing it.
+
+**Why it is a bridge and not a resonance.** The Summa 2026 central theme needs both halves and currently has neither in a form that can be attacked. If perspective-limitation individuates agents and loving unity is the telos, then an account in which the limitation is dissolved cannot reach the telos — there is no agent left to arrive. Wright supplies the ecclesial form of the constraint (enlarge the boundary, do not dissolve the people); Rohr supplies the interior form (the limited agent gives itself away without ceasing to be limited). Together they state the theme's anthropology twice, from historical exegesis and from contemplative practice, with no shared vocabulary and no shared method.
+
+**Where it is exposed.** The two ground the transformative moment differently — Wright in resurrection and new creation, Rohr in cross and descent (PROP-2026-09-08-031). That is not a difference of emphasis that can be smoothed; it is a disagreement about which event does the work, and a real bridge essay has to say whether the accounts are complementary or rivals. Second exposure: Rohr's universalising gloss on *en Christo* (PROP-2026-08-28-061) reads the Christ event as "an announcement of what is happening in all of us, too." Whether Wright's participatory-but-covenantal exegesis licenses that move is exactly the disagreement worth staging rather than smoothing, and the Wright register does not obviously permit it.
+
+Triplets: wright PRS-60, PRS-61 (and the state/path Rohr material at rohr PRS-71..73). Sources: PROP-2026-09-06-001, PROP-2026-08-30-003, PROP-2026-09-08-031, PROP-2026-08-28-061.
+
+**CROSS-133 — Rohr × Stump: divine solidarity in suffering, and faith as second-person knowing.** Two contacts, one axis, both flagged by the Rohr agent in the same week and both landing on Stump's principal subject matter.
+
+(a) *Solidarity.* Rohr's "God is always on the side of suffering wherever it is found" (PROP-2026-09-08-031) is *Wandering in Darkness* in homiletic register: the problem of suffering is answered by second-person knowledge of persons rather than by a defence. Rohr's pain/suffering split — the perturbation versus the resistance to it — gives the claim an operational edge Stump's account does not have. The hard case is shared: Rohr's formula has to hold for oppressors too, and Stump's account of the goodness of forgiveness has to reach the same place.
+
+(b) *Faith.* Rohr's faith-as-relation-to-a-person rather than assent-to-a-proposition (PROP-2026-09-06-004) is the strongest Rohr–Stump contact this month. **The correct Stump target is PRS-07.** The synthesis bridges file names PRS-05 for this and that is an error; it is recorded here rather than repointed, because repointing a live id from inside a daily run is how a wrong target becomes a confirmed one.
+
+**Standing caution, carried from the Rohr agent's own briefs:** do not anchor Rohr material on stump PRS-04. It is a documented low-range catch-all and would absorb these without discriminating. The virtue/vice/habit/grace tract (stump PRS-09, 22, 23, 24, 29) is the place to check.
+
+Triplets: rohr PRS-74..79 (this run), stump PRS-07 (existing). Sources: PROP-2026-09-08-031, PROP-2026-09-06-004.
+
+**CROSS-134 — Kastrup × Stump: an idealist theodicy built on a half-imported Aquinas.** Jamey Hecht, in dialogue with Kastrup (PROP-2026-09-09-003), defines substance *per Aquinas* and then applies it inside an idealist ontology to the problem of evil. This is the most direct Kastrup–Stump contact in the corpus, and the synthesis-bridge corpus is thinnest exactly here.
+
+**The bridge starts at the defect, not at the agreement.** The Thomistic move is partial: Hecht takes Aquinas' definition of substance and drops hylomorphism — which is precisely what does the work for Aquinas in explaining how a soul is the form of *this* body rather than an immaterial thing standing nearby. Stump's separated soul is therefore **not** the same claim as "an alter that has stopped extending into physicality," and an essay that opens by noting the two agree has already lost the thread.
+
+Secondary contacts on the same theodicy axis, both captured 2026-09-08: **Rohr** (undeserved suffering; the pain-versus-suffering distinction) and **Wright** (theodicy of a renewed rather than a discarded creation). See CROSS-132 and CROSS-133 — the three sit on one axis and this run is the first time all three have been in the vault in the same week.
+
+Triplets: kastrup PRS-80..82. Source: PROP-2026-09-09-003. Terminology exposure logged as FINDING-086.
+
+**CROSS-135 — Kastrup × Levin: a timestamped pair, and a measurement the study almost never gets.** Two Kastrup sources six days apart (PROP-2026-09-02-003, the third Levin dialogue; PROP-2026-09-02-004, a members' Q&A) put the same question — minds as patterns, intention substrate-independent across cells, organisms and AI — to the same person on either side of a live exchange with the rival tradition.
+
+**Why this is instrumentation and not just content.** The inter-tradition study wants to detect movement in a position under exposure to a rival, and normally has to infer it across years and venues. Here the interval is one week, the object is fixed, and both recordings exist. If Kastrup's members' answer differs from what he conceded in the dialogue, that is a measured displacement with a timestamp. **Method note, and it is the whole value of the pair:** the two wikis should code the shared dialogue *independently before comparison*, so the network gets an inter-rater agreement number out of it rather than one summary copied into two files.
+
+**Blocked, and this is the honest state.** The dialogue recording is paywalled and the platonic-space exchange is the part the public summary omits. The Kastrup triplets ingested this run rest on the summary, not on the recording. Logged as retrieval debt in FINDING-089.
+
+Triplets: kastrup PRS-70..79 (this run), levin PRS-117..123 (this run). Sources: PROP-2026-09-02-003, PROP-2026-09-02-004.
+
+---
+
+## Added 2026-09-24 — 35-card ingest (decision email 2026-09-23)
+
+**CROSS-136 — Hoffman × Friston: the two principals in one room, and the bridge is anchored from one side only.** The Mind-Body Solution colloquium (PROP-2026-09-15-003, recorded 2026-02-04) has Hoffman and Friston working out, live, whether Hoffman's trace logic on Markov chains (entailment = B is A's trace onto a subset of states; a Lebesgue logic in which Bayes' rule is the logical meet) and Friston's Markov-blanket free-energy flow describe the same structure. This is not an inferred resonance; it is a tradition-interaction event of the kind C2A2 exists to detect. **Asymmetry, stated:** it was ingested on the Hoffman side only (hoffman PRS-45..49). The proposing agent asked for a parallel Friston-side ingestion so the bridge is anchored from both ends; none exists. The restriction-homonym warning in FINDING-064 and the "interface" homonym in FLAG-020 both apply here and should be checked before this is read as agreement. Triplets: hoffman PRS-45..49. Source: PROP-2026-09-15-003.
+
+**CROSS-137 — Hawkins (TBP) × Friston: two programs' top-priority theory now points at one quantity.** Four Thousand Brains Project cards in one week (PROP-2026-09-15-001/-002, PROP-2026-09-22-001/-002) move attention to the project's highest open-theory priority and frame policy selection by prediction error — "stay on object until recognized," salience as choosing where to look to cut the samples needed for recognition. In Friston's vocabulary that is expected free energy selecting a policy, with epistemic value driving sampling. Two programs arriving at the same quantity from opposite starting points (sensorimotor engineering vs. variational physics). **Caveat carried from the cards:** all four are TBP team output (Leadholm, Knudstrup, Clay), not Hawkins speaking — see FINDING-092. Triplets: hawkins PRS-52..66. Sources: the four PROP ids above.
+
+**CROSS-138 — Levin × Friston: active inference without neurons, three scales in one batch.** (a) Planetary: Rubin, Heins, Mitsui, Da Costa & Friston, *Sci Rep* 2026 (doi:10.1038/s41598-026-61878-9) model a biosphere that appears to infer solar forcing and acts on greenhouse/albedo parameters to keep a climate *trajectory* in bounds; inference fails on a lifeless or decoupled planet (friston PRS-74..75, PROP-2026-09-14-004). (b) Cellular: Levin's Cell Trainer wraps an external closed control loop around a cell population, holding a voltage reporter below a setpoint (levin PRS-137..140, PROP-2026-09-21-002). (c) Collective: miRNA–bioelectric regionalization as a cell collective defending a joint electrical/transcriptional state (levin PRS-135..136, PROP-2026-09-14-001). **What this licenses and what it does not:** it strengthens the substrate-independence claim both programs share; it does not show any of these systems *minimizes a variational free energy* — (b) is an engineered controller around cells, not cells doing inference, and the card says so. Also relevant to CROSS/FLAG work on trajectory-based rather than state-based alignment. Sources as listed.
+
+**CROSS-139 — Stump × Fredrickson: the first primary-text Stump passage asserting a love-bonded dyad is a causal whole.** "Natural Law, Metaphysics, and the Creator" (a 2018 paper reprinted 2025; read end to end by the proposing agent) uses Hobson's autism research to treat the caregiver–infant dyad as a system with causal power not reducible to either member, and names the bond as its seat. CROSS-005 (beatitudo ↔ positivity resonance) has been structural analogy; this is Stump herself making the ontological claim that would make Fredrickson's dyadic unit a hylomorphic composite. **Hedged in the source, hedged here.** Triplet: stump PRS-45 (with PRS-42..44 from the same paper). Source: PROP-2026-09-17-001.
+
+**CROSS-140 — Rohr × Wright × Stump: Paul read in opposite directions, the same week, and a corporate-vs-individual question underneath.** Nine Rohr cards in two weeks are on Paul (PROP-2026-09-13-001, -09-19-002/-003, -09-20-001/-002/-003), and the Rohr agent flagged Wright on five of them. Rohr's Paul is interior and participatory ("Christ within before Christ without"); Wright's is corporate, covenantal and public. Beck's grace-as-deletion-of-a-worth-ranking and the temple-dignity reading raise a question neither tradition file has recorded an answer to: does dignity inhere in each member, or in a composite that distributes it — which is Stump's composite-substance territory (PRS-14, and PRS-45 above). Extends CROSS-132/133 rather than replacing them. Triplets: rohr PRS-84..97. **No Wright-side ingestion exists for these weeks**; this is the fourth consecutive Wright-facing flag from Rohr with nothing on the other side.

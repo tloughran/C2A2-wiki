@@ -88,6 +88,8 @@ MISSED_FIRES_ALLOWED = 2
 # itself could not run), 78 (EX_CONFIG, the macl-xattr trap) -- is still a FAIL.
 VERDICT_EXITS = {
     "com.c2a2.scheduled-commit-check": {"1"},
+    # 3 = the CCL shell suite is RED (a verdict about the shell, not about the job).
+    "com.c2a2.voice-shell-check": {"3"},
 }
 
 ARTIFACTS = [
@@ -109,12 +111,121 @@ ARTIFACTS = [
         "field": "_meta.t_max_event",
         "max_age_hours": 48,
         "failure_means": (
-            "the newest OpenStory EVENT in the snapshot is that old, so the source "
-            "has stopped producing. Check the H-Drive mount and the ingest agents; "
-            "regenerating the artifact cannot move this date"
+            "the newest OpenStory EVENT IN THE SNAPSHOT is that old. That has TWO "
+            "causes and this row cannot tell them apart: the source stopped, or the "
+            "snapshot did. Disambiguate before chasing the H-Drive -- if the row "
+            "above is also red the FILE is stale and this date is just its frozen "
+            "window. The test is one line against the live db: "
+            "sqlite3 open-story.db 'select max(timestamp) from events'"
         ),
         "note": "48h chosen from 3150 sessions: p99.9 inter-session gap is 39.9h, and "
                 "the only two gaps over 48h since 2026-05-07 were both real outages",
+    },
+    {
+        # `checked_at` is stamped on EVERY fire, no-ops included, so this row asks
+        # only "is the job alive". Whether the suite is RED is the marker row
+        # voice_shell.FAILED below -- a gated job that correctly no-ops on a quiet
+        # tree must not read as stale here (the prs_3d lesson, LAG_ARTIFACTS).
+        "owner": "com.c2a2.voice-shell-check",
+        "path": "scheduler/voice_shell.json",
+        "field": "checked_at",
+        "max_age_hours": 25,
+        "failure_means": (
+            "the daily CCL shell check did not fire, or died before writing its state. "
+            "It is a launchd agent (needs real Chrome), so look at "
+            "~/Library/Logs/c2a2-voice-shell-check.log, then `launchctl print "
+            "gui/$(id -u)/com.c2a2.voice-shell-check`."
+        ),
+    },
+    {
+        # The agents tab's telemetry was frozen 06-08..06-26 while the job that builds
+        # it reported runs. The feed dates itself.
+        "owner": "com.loughran.openstory-feeds-refresh",
+        "path": "wiki/agents/openstory/agent_telemetry.json",
+        "field": "_meta.generated",
+        "max_age_hours": 26,
+        "failure_means": (
+            "the agents tab is showing telemetry that old. The last line of "
+            "wiki/agents/openstory/REFRESH_STATUS.md names the failing step (a stale "
+            "OpenStory db, an extractor error, a feed that failed validation); "
+            "~/Library/Logs/openstory-feeds-refresh.log has the full output."
+        ),
+    },
+    {
+        # The question nothing asked on 2026-09-30/10-01: the daily run committed on
+        # the Mac both days, every local check said OK, and GitHub stayed two days
+        # behind. This date is read from origin/main itself (the newest "C2A2 daily
+        # run" commit there), so a local commit that never left the Mac cannot
+        # satisfy it. 30h = one daily cycle plus slack for a late run.
+        "owner": "push_daily_run.sh (com.c2a2.scheduled-commit-check)",
+        "path": "scheduler/daily_push.json",
+        "field": "origin_daily_run_at",
+        "max_age_hours": 30,
+        "failure_means": (
+            "the newest daily-run commit ON GITHUB is that old. Read the `verdict` and "
+            "`detail` in scheduler/daily_push.json: REFUSED names the gate that held "
+            "the push (a foreign commit ahead of origin, a path outside the allowlist, "
+            "broken inline JS, a merge conflict). If the file itself is old, the push "
+            "step did not run -- the commit step refused first; see commit_check.md."
+        ),
+    },
+]
+
+# Lag assertions. An age limit is the WRONG QUESTION for an artifact whose
+# producer deliberately does nothing when there is no work. wiki/prs_3d.html is
+# republished only when a vault source is newer than it, so from 2026-09-03 to
+# 2026-09-09 it sat six days old while every part of the chain was healthy: the
+# daily poll fired, read its gate, and correctly no-opped on a quiet vault. A
+# max_age_hours row would have screamed FAIL through all six of those days, and
+# a row that cries wolf is not read.
+#
+# So the question is LAG, not age: is the artifact behind its own inputs? That
+# is the same comparison the publisher's gate makes, which is the point -- this
+# row asks whether the publisher DID WHAT ITS GATE TOLD IT TO.
+#
+# stamp_regex reads the date the PRODUCER wrote into the page (the build stamp a
+# viewer can see), never the file's mtime. The SOURCES are compared by mtime,
+# deliberately, and that is a considered exception to this file's never-an-mtime
+# rule: that rule protects the artifact's own production date, which is still
+# self-recorded here. Mirroring the gate's own clock is what stops checker and
+# publisher disagreeing for reasons that are not defects. A fresh clone restamps
+# every source and turns this row red -- loud, and in the safe direction, on a
+# tree nobody built on purpose.
+LAG_ARTIFACTS = [
+    {
+        "owner": "com.c2a2.prs-connectome-publish",
+        "path": "wiki/prs_3d.html",
+        "stamp_regex": r'PRS_BUILD_TS\s*=\s*"([^"]+)"',
+        # The publisher's own gate list, verbatim. If one moves, move both.
+        "sources": [
+            "wiki/traditions/*/prs_triplets.md",
+            "wiki/master/prs_triplets.md",
+            "wiki/master/cross_program_index.md",
+            "wiki/flags/pattern_detector_findings.md",
+            "wiki/c2a2-prs-3d/prs_pub_years.json",
+            "wiki/c2a2-prs-3d/template_prs_3d.html",
+            "wiki/c2a2-prs-3d/scripts/generate_prs_3d.py",
+            "wiki/c2a2-prs-3d/scripts/extract_prs_data.py",
+            # Added 2026-10-05 with the matching entry in the publisher's gate.
+            # It is the sole source of first_seen and had never been watched by
+            # either side, so the 89 triplets added 2026-09-24 reached the live
+            # page with an empty first_seen and nothing called it out.
+            "wiki/architecture/metrics/prs_yield_detail.csv",
+        ],
+        # The daily run writes the vault ~05:45; the publisher polls 04:30, so
+        # morning work legitimately waits ~23h for the next fire. 48h passes that
+        # plus ONE missed fire (a laptop asleep at 04:30) and fails on two --
+        # MISSED_FIRES_ALLOWED's tolerance applied to the output, not the trigger.
+        "grace_hours": 48,
+        "failure_means": (
+            "new PRS triplets are in the vault but not on the live page. The job "
+            "may be firing and no-opping, so read its Gate 2 decision in "
+            "~/Library/Logs/c2a2-prs-connectome-publish.log, not merely that it "
+            "ran. The publisher logs one of two lines there: \"work found: "
+            "<source> is newer than wiki/prs_3d.html (built <stamp>)\" or \"no "
+            "source newer than wiki/prs_3d.html's build stamp <stamp> (newest: "
+            "<source>). Nothing to regenerate.\""
+        ),
     },
 ]
 
@@ -236,7 +347,38 @@ def verdict_git_debris(git_dir, now_local, min_age_hours=GIT_DEBRIS_MIN_AGE_HOUR
 #
 # The timestamp is read from the line the writer stamps into the file, never
 # from the mtime -- same rule as the artifact checks.
+# Tasks that MUST carry an unattended permission mode.
+#
+# An unattended scheduled run has nobody to answer a permission prompt, so it holds
+# until the permission stream closes. c282-wiki-agent-daily-run stalled on eight
+# separate days in the 30 to 2026-09-03 -- 08-04 (13.7h), 08-06, 08-09, 08-27 (4.4h),
+# 08-28, 08-30, 08-31, 09-03 -- each time on a DIFFERENT tool: WebSearch, TaskUpdate,
+# mcp__workspace__bash, Desktop_Commander write_file and start_process, an MCP
+# update_draft. Its approvedPermissions list held five Gmail tools and not one of
+# them. Worst observed hold: 5.1 days. An allowlist chases tools one at a time and
+# never converges, so the task carries permissionMode instead.
+#
+# This check exists because the registry is written by the Claude desktop app from
+# its own in-memory state. The setting was applied by hand on 2026-09-03 while the
+# app was running; if the app ever rewrites the file from a state that predates that
+# edit, the field vanishes silently and the stalls resume with no other symptom.
+UNATTENDED_PERMISSION_TASKS = [
+    {
+        "id": "c282-wiki-agent-daily-run",
+        "note": "set 2026-09-03 after 8 stalls in 30 days on 8 different tools; "
+                "the daily run commits its work BEFORE it hangs, so a stall costs "
+                "the slot and every step that waits on the run to finish, not data",
+    },
+]
+
 FAILURE_MARKERS = [
+    {
+        "owner": "com.c2a2.voice-shell-check",
+        "path": "voice_shell.FAILED",
+        "note": "written by check_voice_shell.sh when test_voice_shell.cjs ends RED (or dies "
+                "without a summary); removed on the next GREEN run. The suite was red and "
+                "unread 2026-08-12..09-17 because nothing scheduled ran it.",
+    },
     {
         "owner": "com.tloughran.summa-vault-sync",
         "path": "sync_vault.FAILED",
@@ -389,10 +531,44 @@ def previous_fires(expression, now_local, count, horizon_days=45):
 OK, WARN, FAIL = "OK", "WARN", "FAIL"
 
 
-def verdict_task(task, now_local):
+ROUTINE_HEALTH_FILE = "scheduler/routine_health.md"
+ROUTINE_HEALTH_MAX_AGE_HOURS = 26
+
+
+def routine_health_fresh(now_utc, repo=REPO):
+    """True when check_routine_health.py has written a block in the last 26h.
+
+    That file is where moved-to-cloud tasks are now judged (by their run records).
+    Only while it is fresh may this script stop warning about them -- otherwise a
+    dead cloud watcher would make 32 tasks silently OK again, the 09-24..09-27
+    failure in a new coat.
+    """
+    try:
+        lines = open(os.path.join(repo, ROUTINE_HEALTH_FILE)).read().split("\n")
+        stamp = [l for l in lines if l.strip()][-1].split()[0]
+        written = datetime.strptime(stamp, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc)
+    except (OSError, IndexError, ValueError):
+        return False
+    return (now_utc - written).total_seconds() <= ROUTINE_HEALTH_MAX_AGE_HOURS * 3600
+
+
+def verdict_task(task, now_local, cloud_watched=False):
     """Did this registry task fire when its cron said it should?"""
     tid = task.get("id", "<no id>")
 
+    # 2026-09-24 the desktop app moved 31 tasks to cloud scheduled tasks ("via
+    # sweep"), leaving each a frozen, disabled local entry. For three days this
+    # line called all 31 "OK: disabled", so none was watched. Moved is not off:
+    # say so, and say where the truth now lives.
+    mig = task.get("migratedToRemote")
+    if mig and cloud_watched:
+        return OK, (f"{tid}: runs as cloud routine {mig.get('triggerId', '?')}; judged from "
+                    f"its run record in {ROUTINE_HEALTH_FILE}")
+    if mig:
+        return WARN, (f"{tid}: moved to a cloud scheduled task "
+                      f"({mig.get('triggerId', '?')}, {task.get('migratedToRemoteAt', '?')[:10]}); "
+                      f"the Mac registry can no longer tell whether it fires -- check it there, "
+                      f"or by the artifact it produces")
     if not task.get("enabled", False):
         return OK, f"{tid}: disabled"
 
@@ -481,6 +657,48 @@ def not_yet_due(context, now_local):
     return True, min(upcoming) if upcoming else None
 
 
+def plist_logs(job):
+    """The log paths a job declares in its own plist."""
+    paths = []
+    for key in ("StandardOutPath", "StandardErrorPath"):
+        value = job.get(key)
+        if value:
+            paths.append(os.path.expanduser(value))
+    return paths
+
+
+def newest_log_write(context):
+    """(path, mtime) of the most recent non-empty log this job owns, else (None, None).
+
+    2026-09-03: `runs = 0` was reported for com.tloughran.summa-weekly-review,
+    com.c2a2.metabolism-publish and com.tomloughran.openstory-version-check, and all
+    three had logs showing clean fires on 08-16, 08-23, 08-30 and 08-31. launchd's
+    counter is NOT a run record for a calendar job that completed and was unloaded
+    from memory. Three of the six FAIL lines on that morning's panel were false, and
+    the one real FAIL -- the H-Drive unmounted, stopping OpenStory ingest -- sat
+    unactioned for seven days behind them.
+
+    The lesson is narrower than "the counter is wrong": this function exists so the
+    checker never again ASSERTS the absence of an artifact it did not try to open.
+    An empty log is not evidence of a run -- launchd creates the file when it
+    bootstraps the job, before anything writes to it -- so size 0 does not count.
+    """
+    newest = (None, None)
+    for path in context.get("logs") or []:
+        try:
+            stat = os.stat(path)
+        except OSError:
+            continue
+        if stat.st_size == 0:
+            continue
+        # Naive local, matching installed_plist's mtime and what previous_fires
+        # returns -- this module compares those two directly (see not_yet_due).
+        when = datetime.fromtimestamp(stat.st_mtime)
+        if newest[1] is None or when > newest[1]:
+            newest = (path, when)
+    return newest
+
+
 def parse_launchctl(label, returncode, text, context=None, now_local=None):
     """Turn `launchctl print` output into a verdict.
 
@@ -511,9 +729,32 @@ def parse_launchctl(label, returncode, text, context=None, now_local=None):
                 f"{context['reloaded_at']:%Y-%m-%d} and no scheduled fire has come "
                 f"round since{when} — not yet proven, not yet broken"
             )
+        # Before calling it never-fired, open the log. See newest_log_write.
+        log_path, log_at = newest_log_write(context)
+        if log_at is not None:
+            now = now_local or datetime.now().astimezone()
+            missed = None
+            for cron in context.get("crons") or []:
+                try:
+                    last_due = previous_fires(cron, now, 1)[0]
+                except (ValueError, IndexError):
+                    continue
+                if last_due > log_at and (missed is None or last_due > missed):
+                    missed = last_due
+            if missed is not None:
+                return WARN, (
+                    f"{label}: runs = 0, but {os.path.basename(log_path)} was written "
+                    f"{log_at:%Y-%m-%d %H:%M}, so it HAS fired — the fire due "
+                    f"{missed:%Y-%m-%d %H:%M} left no write. Read the log, not the counter."
+                )
+            return OK, (
+                f"{label}: runs = 0, but {os.path.basename(log_path)} was written "
+                f"{log_at:%Y-%m-%d %H:%M} — it fired and finished; launchd's counter "
+                f"does not survive the unload"
+            )
         return FAIL, (
-            f"{label}: loaded but has NEVER fired (runs = 0), and at least one "
-            f"scheduled fire has passed. No log exists to read, because it never started."
+            f"{label}: loaded but has NEVER fired (runs = 0), at least one scheduled "
+            f"fire has passed, and its log is absent or empty. It never started."
         )
 
     # A KeepAlive daemon that is up right now has usually exited nonzero at some
@@ -566,12 +807,90 @@ def verdict_artifact(spec, now_utc, repo=REPO):
                 f"({age_hours:.0f}h ago)")
 
 
+def verdict_artifact_lag(spec, now_utc, repo=REPO):
+    """Is the artifact BEHIND ITS INPUTS? (Not: is the artifact old?)
+
+    A producer that no-ops on a quiet source is working correctly, and an age
+    limit cannot tell that apart from one that has died. Lag can.
+    """
+    owner, rel = spec["owner"], spec["path"]
+    path = rel if os.path.isabs(rel) else os.path.join(repo, rel)
+
+    if not os.path.exists(path):
+        return FAIL, f"{owner}: artifact {rel} does not exist"
+
+    try:
+        with open(path, encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+    except OSError as exc:
+        return FAIL, f"{owner}: cannot read {rel}: {exc}"
+
+    match = re.search(spec["stamp_regex"], text)
+    if not match:
+        return FAIL, (f"{owner}: {rel} carries no build stamp matching "
+                      f"{spec['stamp_regex']} -- it does not date itself")
+    try:
+        built = parse_iso(match.group(1)).astimezone(timezone.utc)
+    except ValueError:
+        return FAIL, (f"{owner}: {rel} build stamp is not a timestamp: "
+                      f"{match.group(1)!r}")
+
+    newest, newest_rel = None, None
+    for pattern in spec["sources"]:
+        for src in glob.glob(os.path.join(repo, pattern)):
+            mtime = datetime.fromtimestamp(os.path.getmtime(src), timezone.utc)
+            if newest is None or mtime > newest:
+                newest, newest_rel = mtime, os.path.relpath(src, repo)
+
+    # A source list that matches nothing would make this row pass forever while
+    # asserting nothing at all -- the exact blindness this file exists to end.
+    if newest is None:
+        return FAIL, (f"{owner}: none of the {len(spec['sources'])} source pattern(s) "
+                      f"for {rel} matched a file -- this row is asserting nothing")
+
+    lag_hours = (newest - built).total_seconds() / 3600
+    if lag_hours <= 0:
+        return OK, (f"{owner}: {rel} built {built:%Y-%m-%d %H:%M}Z, current with its "
+                    f"newest source ({newest_rel}, {newest:%Y-%m-%d %H:%M}Z)")
+    if lag_hours > spec["grace_hours"]:
+        means = spec.get("failure_means", "the artifact is behind its sources")
+        return FAIL, (f"{owner}: {rel} was built {built:%Y-%m-%d %H:%M}Z but "
+                      f"{newest_rel} changed {newest:%Y-%m-%d %H:%M}Z, "
+                      f"{lag_hours / 24:.1f} days later -- {means}")
+    return OK, (f"{owner}: {rel} is {lag_hours:.0f}h behind {newest_rel}, within the "
+                f"{spec['grace_hours']}h publish cycle")
+
+
 # -------------------------------------------------------------------------- inputs
 
 
 def parse_iso(stamp):
     """Registry and artifact stamps are ISO-8601, with or without a trailing Z."""
     return datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+
+
+def verdict_unattended_permissions(spec, tasks):
+    """Is this task still set to run without waiting on a permission prompt?
+
+    Split from the registry loop so it can be driven in a test with a dict of
+    tasks and no real registry on disk.
+    """
+    task = tasks.get(spec["id"])
+    if task is None:
+        return FAIL, (
+            f"{spec['id']}: not in any registry — it cannot carry a permission mode "
+            f"because the task is gone. {spec['note']}"
+        )
+    mode = task.get("permissionMode")
+    if not mode:
+        return FAIL, (
+            f"{spec['id']}: permissionMode is absent, so an unattended run will HANG "
+            f"on the first prompt for an unapproved tool. Re-apply it "
+            f"(permissionMode + chromePermissionMode) with the Claude desktop app "
+            f"quit, or the app will write the field back out from memory. "
+            f"{spec['note']}"
+        )
+    return OK, f"{spec['id']}: permissionMode = {mode} — an unattended prompt cannot hang it"
 
 
 def load_registry_tasks():
@@ -632,7 +951,8 @@ def launchd_labels():
             problems.append((FAIL, f"{os.path.basename(path)}: plist has no Label key"))
             continue
         labels.append((label, {"crons": plist_schedule(job),
-                               "reloaded_at": installed_plist(label)}))
+                               "reloaded_at": installed_plist(label),
+                               "logs": plist_logs(job)}))
     return labels, problems
 
 
@@ -666,8 +986,9 @@ def main():
     if not registry_paths:
         print(f"FAIL  no registry matched {REGISTRY_GLOB}", file=sys.stderr)
         return 2
+    cloud_watched = routine_health_fresh(now_utc)
     for _, task in sorted(tasks.items()):
-        results.append(verdict_task(task, now_local))
+        results.append(verdict_task(task, now_local, cloud_watched))
 
     labels, plist_problems = launchd_labels()
     if not labels and not plist_problems:
@@ -680,6 +1001,12 @@ def main():
 
     for spec in ARTIFACTS:
         results.append(verdict_artifact(spec, now_utc))
+
+    for spec in LAG_ARTIFACTS:
+        results.append(verdict_artifact_lag(spec, now_utc))
+
+    for spec in UNATTENDED_PERMISSION_TASKS:
+        results.append(verdict_unattended_permissions(spec, tasks))
 
     results.append(verdict_git_debris(git_common_dir(REPO), now_local))
 
@@ -695,6 +1022,8 @@ def main():
     summary = (
         f"{len(tasks)} registry task(s) across {len(registry_paths)} file(s), "
         f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s), "
+        f"{len(LAG_ARTIFACTS)} lag assertion(s), "
+        f"{len(UNATTENDED_PERMISSION_TASKS)} permission-mode check(s), "
         f"1 git-debris check, {len(FAILURE_MARKERS)} failure marker(s): "
         f"{counts[OK]} OK, {counts[WARN]} WARN, {counts[FAIL]} FAIL"
     )

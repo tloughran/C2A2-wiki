@@ -1,0 +1,131 @@
+{
+  "seed": false,
+  "generated": "2026-09-13",
+  "generated_at": "2026-09-13T14:43:50Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 148,
+    "high_relevance": 0,
+    "primary_themes": "Misuse Security + Capability Jump"
+  },
+  "signals": [
+    {
+      "title": "Proactive cyber defense for governments and enterprises",
+      "source": "Google AI Blog",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "relevance": 1,
+      "tags": [
+        "misuse_security"
+      ],
+      "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Wed, 02 Sep 2026 15:40:00 +0000",
+      "first_seen_at": "2026-09-13T14:43:46.038319+00:00"
+    },
+    {
+      "title": "AI models' written reasoning steps correspond to distinct internal patterns, a new study finds",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-models-written-reasoning-steps-correspond-to-distinct-internal-patterns-a-new-study-finds/",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Reasoning steps like calculation, formula retrieval, and deduction are clearly separable in a model's internal states, especially in the middle layers. That matters for AI safety, because models process more than their visible chain of thought reveals.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Sat, 12 Sep 2026 13:39:43 +0000",
+      "first_seen_at": "2026-09-13T14:43:48.190721+00:00"
+    },
+    {
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Wed, 09 Sep 2026 17:00:00 GMT",
+      "first_seen_at": "2026-09-13T14:43:45.644128+00:00"
+    },
+    {
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 GMT",
+      "first_seen_at": "2026-09-13T14:43:45.620125+00:00"
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvbma6x5xu2i",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Am reminded once again that email is a non-Newtonian fluid. .",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "11 Sep 2026 22:24 +0000",
+      "first_seen_at": "2026-09-13T14:43:49.892450+00:00"
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvblpjfeik2v",
+      "relevance": 0,
+      "tags": [],
+      "summary": "On the next Mystery AI Hype Theater 3000 livestream, @alexhanna.bsky.social and I will being talking with Keoni Mahelona of Te Hiku Media about language technology and big tech saviorism. Tune in for what should be an amazing discussion & note the unusual day: Tuesday Sept 15, noon Pacific https://twitch.tv/dair_institute",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "11 Sep 2026 22:15 +0000",
+      "first_seen_at": "2026-09-13T14:43:49.890610+00:00"
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvbkgdjaok25",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Want an example of successful pushback on \"AI\" (surveillance) ed tech? This story is uplifting and amazing.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "11 Sep 2026 21:52 +0000",
+      "first_seen_at": "2026-09-13T14:43:49.888384+00:00"
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvblq7ury22v",
+      "relevance": 0,
+      "tags": [],
+      "summary": "For those in Aotearoa New Zealand, that’s Wed Sept 16, 7am. [contains quote post or other embedded content]",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "11 Sep 2026 22:15 +0000",
+      "first_seen_at": "2026-09-13T14:43:49.886413+00:00"
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvejcejxs32n",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Can we make \"1000s of lesswrong posts\" a meme like \"30-50 feral hogs\" or \"large boulder the size of a small boulder\"?",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "13 Sep 2026 02:10 +0000",
+      "first_seen_at": "2026-09-13T14:43:49.883842+00:00"
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvefr6chzd2y",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Straight talk time: Doomerism is BORING. It's the same fantasties rehashed over and over again, just louder each time.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "13 Sep 2026 01:06 +0000",
+      "first_seen_at": "2026-09-13T14:43:49.881738+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

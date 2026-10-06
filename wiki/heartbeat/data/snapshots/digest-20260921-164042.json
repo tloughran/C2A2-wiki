@@ -1,0 +1,195 @@
+{
+  "seed": false,
+  "generated": "2026-09-21",
+  "generated_at": "2026-09-21T16:40:42Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 223,
+    "high_relevance": 4,
+    "primary_themes": "Capability Jump + Governance Policy"
+  },
+  "signals": [
+    {
+      "title": "From Generation to Detection: Exploration of Discourse Driven Scenario based LLM Generated Fake News",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.20838",
+      "relevance": 2,
+      "tags": [],
+      "summary": "In this study, we examine how modern LLMs generate and detect fake news under controlled settings across four manipulation scenarios. These are open-ended generation, rewriting, manipulation prompts and attribute based prompts grounded in the journalistic discourse framework.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:27.192975+00:00",
+      "long_summary": "This study investigates the generation and detection of fake news using modern large language models (LLMs) within controlled environments. It explores four specific manipulation scenarios which include open-ended generation, rewriting, manipulation prompts, and attribute-based prompts, all grounded in a framework related to journalistic discourse. Understanding these dynamics is crucial as it highlights both the potential and challenges posed by LLMs in creating misinformation, helping our community remain vigilant against the implications of AI in news generation and consumption.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "When AI Reviews Train AI Reviewers: Scientific-Judgment Collapse and Mitigation",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.20942",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Large language models (LLMs) increasingly participate in scientific evaluation, both as automated reviewers and as assistants to human reviewers. As model-generated reviews enter public data and future training corpora, AI peer review can become recursive: later reviewers learn from judgments produced by earlier models.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:27.071343+00:00",
+      "long_summary": "Large language models (LLMs) are now playing significant roles in scientific evaluation, serving both as automated reviewers and as support for human reviewers. This development raises concerns about a potential recursive cycle in AI peer review, where subsequent models are trained using judgments made by earlier ones. As model-generated reviews are incorporated into public datasets and future training materials, there is a risk of \"scientific-judgment collapse,\" where the quality and diversity of evaluations may diminish over time. The implications of this recursive learning process highlight the need for monitoring and mitigating biases in AI-generated assessments. Understanding these dynamics is crucial for our community as it helps us acknowledge the evolving landscape of scientific judgment influenced by AI tools, ensuring that we remain vigilant about the integrity of the evaluation process in our research endeavors.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Ability-Residual Decoupled Modeling for Affective Cognitive Diagnosis",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.21214",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Cognitive diagnosis infers students' concept mastery from response logs. However, students' responses are not determined by mastery alone: non-cognitive factors such as emotion, engagement, and fatigue can also affect performance.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:26.990323+00:00",
+      "long_summary": "Cognitive diagnosis aims to assess students' mastery of concepts based on their response logs. However, these responses are influenced not only by their actual mastery but also by various non-cognitive factors, including emotions, engagement levels, and fatigue. Understanding these influences is crucial for a more accurate assessment of students' knowledge and learning processes. This matters for our community keeping up with AI as it highlights the importance of integrating non-cognitive factors into educational AI systems to enhance diagnostic accuracy and support for students.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "AI-GRACE: A Use-Case Operationalization Framework for Agentic AI: From Organizational Objectives and Obligations to Deployment Capabilities and Architecture",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.21192",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Organizations deploying agentic artificial intelligence must determine more than whether a model is trustworthy; they must establish what to validate, control, and observe for a use case to deliver its intended outcome while meeting applicable obligations. This paper proposes AI-GRACE (Agentic Intelligence-Governance, Risk, Assurance, Controls, and Evidence) as a use-case operationalization framework connecting organizational governance with technical implementation.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:26.985659+00:00",
+      "long_summary": "Organizations implementing agentic artificial intelligence need to address various aspects beyond simply assessing model trustworthiness. They must define validation, control, and observational requirements for specific use cases to ensure they achieve desired results while adhering to relevant obligations. To facilitate this process, the paper introduces AI-GRACE, a framework that links organizational governance with technical deployment. AI-GRACE focuses on governance, risk management, assurance, controls, and the evidence necessary for effective operationalization of agentic AI in line with organizational objectives. Understanding such frameworks is essential for communities keen on staying informed about how AI deployment aligns with broad governance and ethical standards.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvsvprxqku2o",
+      "relevance": 1,
+      "tags": [],
+      "summary": "I have been yelling since 2021 about how using synthetic text extruding machines for information access is a TERRIBLE IDEA. And yet and yet and yet: they are marketing so heavily that way that people keep falling for it.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "18 Sep 2026 19:29 +0000",
+      "first_seen_at": "2026-09-21T16:40:41.626899+00:00",
+      "long_summary": "The source expresses strong concern regarding the use of synthetic text generators for accessing information, labeled by the author as a \"terrible idea.\" Despite these warnings since 2021, the marketing of such technology continues vigorously, leading to a trend where people increasingly rely on these tools. This highlights an ongoing disconnect between the author's cautions and public acceptance, indicating a need for critical examination of the implications of synthetic text generation. Staying informed about these critiques is essential for the community to navigate the evolving landscape of AI responsibly.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvvicy5tnj2e",
+      "relevance": 1,
+      "tags": [],
+      "summary": "And every day there is more Fresh AI Hell. What's worse than polluting the information ecosystem with synthetic text dressed up to look like news?",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "19 Sep 2026 20:07 +0000",
+      "first_seen_at": "2026-09-21T16:40:41.624118+00:00",
+      "long_summary": "Every day, there are increasing concerns about the impact of AI-generated content on the information ecosystem, particularly in how synthetic text mimics legitimate news. This raises critical questions about the integrity and reliability of information presented to the public. The growing prevalence of such content can lead to confusion and mistrust among audiences, as distinguishing between authentic news and AI-generated misinformation becomes increasingly challenging. Understanding these developments is crucial for communities seeking to navigate the evolving landscape of AI and its implications on information dissemination. This matters for a community keeping up with AI as it highlights the importance of media literacy in an era where distinguishing fact from synthetic narratives is vital.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "$\\mu^2$-Bench: A Multilingual Machine Unlearning Benchmark",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.20945",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Undesired information such as harmful content and private data propagates through Multilingual Large Language Models (LLMs) via direct training and indirect cross-linguistic spread. Multilingual Machine Unlearning (MMU) aims to remove such information, yet its evaluation remains underexplored, leaving unclear whether unlearning truly eliminates target knowledge across all languages.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:27.215593+00:00",
+      "long_summary": "The $\\mu^2$-Bench introduces a benchmark for evaluating Multilingual Machine Unlearning (MMU) in addressing the challenges posed by harmful or private information in Multilingual Large Language Models (LLMs). This work highlights the need for effective methods to remove undesirable knowledge from these models, which can spread through direct training and across different languages. However, the evaluation of MMU has not been thoroughly investigated, raising questions about whether the process of unlearning is effective in eliminating specific unwanted information across all languages. \n\nUnderstanding and improving MMU is crucial for developing responsible AI systems that handle sensitive information appropriately, which is important for the community as it seeks to advance ethical AI practices.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Generative Artificial Intelligence Chatbots for Motivational Interviewing: A Scoping Review From System Design to Intervention Outcomes",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.20902",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Motivational interviewing (MI) is a collaborative approach to elicit autonomous motivation for health behavior change. Generative AI (GenAI) offers new ways to deliver MI via conversational systems, but evidence on their design, assessment, and translation into interventions remains fragmented.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:27.213703+00:00",
+      "long_summary": "Generative AI (GenAI) presents innovative opportunities for delivering motivational interviewing (MI), a cooperative method aimed at fostering autonomous motivation for health behavior change. However, the current evidence regarding the design, evaluation, and application of these conversational systems in interventions is still incomplete and scattered. This highlights a need for a more cohesive understanding and approach to integrating GenAI into motivational interviewing practices. Keeping abreast of these developments matters for the community as it underscores the potential for technology to enhance health interventions and the importance of systematic study in ensuring effective implementation.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "MME-Safety: A Fine-grained Benchmark for Safety Evaluation of MLLMs",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.20850",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "While Multimodal Large Language Models (MLLMs) show remarkable advancements, their cross-modal capabilities introduce complex vulnerabilities that easily bypass unimodal filters. Existing benchmarks lack fine-grained intent-related annotations and rely on unidimensional metrics, hindering comprehensive robustness evaluation.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:27.211514+00:00",
+      "long_summary": "MME-Safety proposes a new benchmark aimed at evaluating the safety of Multimodal Large Language Models (MLLMs). These models demonstrate significant advancements but also exhibit complex vulnerabilities due to their cross-modal capabilities, which can undermine unimodal filters. Current benchmarks are criticized for lacking fine-grained, intent-related annotations and for relying on simplistic, unidimensional metrics, thus limiting thorough assessments of robustness in MLLMs. This initiative is crucial as it highlights the need for more sophisticated safety evaluations in AI, helping the community to better understand and manage the risks associated with these advanced models.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Rewarding Efficient Reasoning Improves Abstention on Underspecified Tasks in Reasoning Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.20846",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "While modern large reasoning models (LRMs) excel at providing correct answers in many tasks, we provide additional evidence for the observation that they often struggle with a critical capability: knowing when to abstain from answering. We analyze this gap by comparing LRM behavior to results from a human study, revealing that human reasoning effort on unanswerable tasks is upper-bounded by answerable tasks, whereas LRMs waste computational resources by generating longer Chains of Thought (CoTs) on unanswerable than on answerable prompts.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 21 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-21T16:40:27.205426+00:00",
+      "long_summary": "Modern large reasoning models (LRMs) typically excel at answering various tasks, but they face challenges in recognizing when to abstain from providing an answer. Research highlighted in this source indicates that while human reasoning effort on unanswerable tasks is generally limited by their performance on answerable tasks, LRMs tend to consume unnecessary computational resources by producing lengthier Chains of Thought (CoTs) for unanswerable prompts compared to those that are answerable. This suggests a notable difference in the reasoning strategies employed by humans versus LRMs regarding task appropriateness and efficiency. Understanding these differences is crucial for improving the efficiency and effectiveness of AI reasoning systems. This matters for a community keeping up with AI as it highlights an important area of improvement in model behavior that can lead to more intelligent and resource-efficient AI systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-21",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}

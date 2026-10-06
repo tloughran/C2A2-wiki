@@ -146,3 +146,9 @@ cp "$WORK/meta.json" "$META"
 
 echo "[level2] OK — $OUT_WIKI updated. Baseline: $(cat "$META" | tr -d '\n ')"
 echo "[level2] wiki/metabolism reads this file; run scripts/metabolism_monitor.py --regen-only to refresh the yield axis."
+# The planner's grounding index reads signals_grown.json (just promoted), the PRS
+# triplets and the bridge essays. Rebuilt here so it never lags them. A failure
+# is a loud WARN, not a failure of this (already promoted) Level-2 build;
+# scripts/test_voice_ccl.cjs asserts --check, so a stale index still goes red.
+echo "[level2] grounding index ..."
+python3 "$(dirname "$0")/build_grounding_index.py" || echo "[level2] WARN: build_grounding_index.py failed; wiki/voice_guide/grounding.json NOT refreshed" >&2

@@ -3,9 +3,10 @@ day: 77
 title: Delightful Sorrow (Contemporary)
 pairs_with: "[[Day-077 - Delightful Sorrow]]"
 length_target_words: 1500
-length_actual_words: 1571
-length_ratio_to_target: 1.047
+length_actual_words: 1769
+length_ratio_to_target: 1.179
 length_tier: short
+length_note: "ADDED 2026-09-13 (reviewer pass); the file had carried none. Pre-edit honest body-only recount (YAML and auto-link footer excluded) gave 1594 against a stored FIELD of 1571 — a 23-word understatement at 1.4%, which is heading-convention noise rather than the one-directional defect seen elsewhere in this cohort, and the only field in the six that was very nearly honest. This pass added ~175 words, all apparatus: the missing criterion-(b) supersession term at section (b2), retiring Aquinas's *per accidens* routing of delightful sorrow while preserving his conclusion. Post-edit 1769, ratio 1.179 — outside the +/-10% short-tier band and inside +/-25%, so this note exists to justify the band crossing rather than to escalate it. Justified on ground (a) of the QC policy: Q.32 and Q.33 are two questions taken together, and Q.32 a.4 is a keystone the day is built on. Tier is correct — the transcript's cleaned body is 1392 words, under the 2000-word short boundary. Not trimmed and not escalated."
 mind_first_reframe: "Under predictive-processing accounts (Friston), valence is prediction-error gain over a generative model that always contains counterfactuals, so sorrow and delight co-arise within a single inference; under Kastrup's idealism, grief is alter-loosening that admits more of mind-at-large — the same loosening admits both the loss and the wider field of which the loss is part."
 central_theme_thread: "Q.32 a.4's delightful sorrow is the affective signature of an agent whose generative model holds both the present privation and the larger good in which it is contained; the path from the loss-only agent to the loss-plus-larger-good agent is the perspective-widening — through contemplation, friendship, positivity resonance — that the project tracks as the computational work of loving unity."
 karpathy_wiki_sources:
@@ -19,7 +20,7 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (is love/positivity resonance/union a fundamental category? — Fredrickson, Stump, Kastrup)"
 evidence_strength_summary: "Q.32 a.4's claim that sorrow is the accidental cause of pleasure is empirically well-grounded — bittersweet emotional research (Frijda, Larsen) confirms mixed valence; Q.32 a.5 on praise/honor maps onto Fredrickson's high-quality listening evidence (PRS-08, high confidence); Q.33 a.3 on pleasure hindering reason is empirically supported (attentional narrowing). Theological move on universal participation in being is speculative-but-coherent."
 tags: [synthesis, day/077, theme/delightful-sorrow, theme/mixed-valence]
-last_qc_at: "2026-08-29T10:26:20"
+last_qc_at: "2026-09-28T02:24:24"
 last_qc_outcome: "pass"
 ---
 
@@ -55,6 +56,8 @@ Under conscious-realist monism the problem deepens. If the agent is individuated
 
 **(b) Where it reframes.** Two reframes. First, Aquinas locates the co-arising of pleasure-in-sorrow in the *adjacency* of goods to evils (the friend now lost was a good; that good is "still there" in memory). The contemporary reframe is mathematical: the co-arising is in the *generative model itself* — every prediction error is a comparison against a counterfactual, so every registered loss simultaneously instantiates the lost good as model-state. This is a stronger claim than adjacency. Second, Aquinas treats wonder (Q.32 a.8) as a "kind of desire for knowledge" linked to hope; the contemporary frame reads it as *epistemic value* in expected free energy, with formal expression. Wright/Rohr add the eschatological structure that Aquinas leaves more theologically constrained.
 
+**(b2) Where it supersedes.** One thing here is retired rather than relocated: the *per accidens* routing itself. Aquinas can only hold delight and sorrow together by making sorrow the **accidental** cause of pleasure (Q.32 a.4) — accidental because pleasure and sorrow are contraries in one appetitive power and cannot, per se, be co-present in the same respect. That containment device does not survive. On the predictive-processing account the co-arising is *per se*: a prediction error is constituted by the comparison against the counterfactual, so registering the loss and instantiating the lost good are not two events of which one incidentally occasions the other, but one operation described twice. Which means Aquinas's conclusion is preserved by a mechanism that removes his reason for calling it accidental — the mixed-valence findings (Larsen & McGraw) retire the same-respect exclusion as a psychological claim and leave it standing only as a logical distinction with nothing left to do. *Empirical on the mixed-valence half; the per-se reading of the generative model is formally suggestive, not settled.*
+
 **(c) Where evidence is firm vs. speculative.** The mixed-valence empirics are *strong*: bittersweet emotion has been documented in psychology since Larsen & McGraw (2011), and predictive-processing models of valence are increasingly robust (Joffily & Coricelli 2013; Solms 2021). The Fredrickson/West weak-tie findings (PRS-09, PRS-10) are *strong* and recent. McGilchrist's precision/attention bridge is *formally suggestive* but not yet a settled empirical claim. The Kastrup/idealist reading of grief as alter-loosening is *speculative metaphysics* — internally coherent, theologically congruent with the Wright/Rohr eschatology, but not falsifiable in current frameworks.
 
 ## The central-theme thread
@@ -63,7 +66,7 @@ The central claim — that conscious agents are individuated by perspective-limi
 
 ## Bridges
 
-- **Friston PRS-06 (multi-agent coherence)** — collective active inference frames *shared* mourning (Q.32 a.5, Q.32 a.6) as alignment of generative models around a shared model-state; *empirical, growing literature*.
+- **Friston PRS-06 (multi-agent coherence)** — collective active inference frames *shared* mourning (Q.32 a.5, Q.32 a.6) as alignment of generative models around a shared model-state; *empirical, growing literature* — though PRS-06 itself is an Implicit-source, Medium-confidence record, so the grade describes the multi-agent active-inference literature, not this entry.
 - **Fredrickson PRS-08, PRS-09, PRS-10** — high-quality listening (Q.32 a.5 praise/honor) and weak-tie connection as the empirical mechanism for Aquinas's "pleasure from being-known"; *empirical, high confidence*.
 - **PRS-05 in the McGilchrist-tradition wiki (attention as ontological act)** — Q.33 a.3 (pleasure hinders reason) as affective gain on precision-weighting; the entry's claim that the *mode* of attention shapes what kind of world is disclosed is the general form of which the pleasure-narrowing is one case; *formally suggestive*.
 - **PRS-02 + PRS-07 in the Kastrup-tradition wiki (dissociated alters; the dissociative boundary as clinically variable)** — grief as alter-loosening admits more of mind-at-large. PRS-02 supplies the individuation claim; PRS-07 is the entry that treats the boundary itself as something that can be disturbed and shifted, which is what "loosening" requires; *speculative metaphysical*, theologically congruent.

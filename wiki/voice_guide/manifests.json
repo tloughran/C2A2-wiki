@@ -21,8 +21,12 @@
         "open",
         "close",
         "find",
+        "also",
+        "except",
+        "within",
         "clear",
         "focus",
+        "plot",
         "fit",
         "zoom",
         "pan",
@@ -74,8 +78,13 @@
           "note": "fit"
         },
         {
+          "dim": "plot",
+          "match": "#cp-plot, #cp-axis, #cp-scope, #cp-cut, #cp-from, #cp-to, #cp-kinds input, #cp-groups input, #cp-str input, #cp-kinds a, #cp-groups a, #cp-str a, #cp-x",
+          "note": "the plots panel (lib/c2a2-plots.js, injected by the shell's Plots button or `plot`): every control writes C2A2Plot spec, which `plot` reads and writes; the x hides it (`plot off`)"
+        },
+        {
           "dim": "edges",
-          "match": "#chk-all-edges, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
+          "match": "#chk-all-edges, #chk-edge-signal, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
           "note": "edge-type family; show/hide/only/all/none edges <type>"
         },
         {
@@ -95,20 +104,12 @@
           "reason": "continuous fields; excluded from the semantic tier by design (redesign section 14.4) -- not journaled, not fingerprinted"
         },
         {
-          "match": "#btn-settings, #btn-edge-help, #btn-edges-help, #btn-tags-help, [onclick*='toggleEdgeHelp'], [onclick*='toggleEdgesHelp'], [onclick*='toggleTagsHelp']",
-          "reason": "help popovers and the settings gear: chrome, no view state"
+          "match": "#btn-edge-help, #btn-edges-help, #btn-tags-help, [onclick*='toggleEdgeHelp'], [onclick*='toggleEdgesHelp'], [onclick*='toggleTagsHelp']",
+          "reason": "help popovers: chrome, no view state"
         },
         {
-          "match": "#settings-modal button, #settings-content button, #settings-modal select, #settings-modal input, [onclick*='closeSettings']",
-          "reason": "settings dialog -- API keys, TTS voice and model choice; outside the view-state surface and never spoken by a guest"
-        },
-        {
-          "match": "#tts-provider, #tts-browser-voice, #tts-kokoro-voice, #tts-api-key, #tts-openai-voice, #ai-provider, #ai-api-key, #ai-model",
-          "reason": "same settings dialog, reached directly (they carry ids)"
-        },
-        {
-          "match": "#btn-voice, #btn-mute",
-          "reason": "the voice control surface's own chrome -- a session cannot be started or muted by voice"
+          "match": "#btn-voice",
+          "reason": "the voice-input control's own chrome -- a listening session cannot be started by voice"
         },
         {
           "match": "#search-ai-mode",
@@ -117,6 +118,10 @@
         {
           "match": ".popout-btn, [onclick*='popoutPage'], button.close[onclick*='window.close']",
           "reason": "opens/closes a separate window -- navigation chrome, not view state"
+        },
+        {
+          "match": "#lift-var, #lift-parallax, #lift-period, #lift-cues",
+          "reason": "the DEPTH probe (Z-lift, 2026-08-24): a selector, two continuous sliders and a cue toggle that exist to answer an open question about what the depth axis should encode. The markup marks them 'temporary; delete with the LiftProbe block' and they default to off, so the default view is unchanged. Not settled view state; excluded rather than deferred because a probe is not a north-star gap. Remove this entry with the block."
         }
       ],
       "controls_deferred": [
@@ -206,6 +211,17 @@
           "state": "showEdgeType",
           "label": "Edge types",
           "values": [
+            {
+              "v": "signal",
+              "aka": [
+                "signal",
+                "signals",
+                "asserted",
+                "level-2",
+                "level 2",
+                "cross-tradition signal"
+              ]
+            },
             {
               "v": "wikilink",
               "aka": [
@@ -1229,8 +1245,8 @@
           "next": "agent map increment 2"
         },
         {
-          "match": "#btn-skip, #btn-mute",
-          "reason": "the narration strip's own voice controls; a second speaker inside a tab, which needs the one-reader question answered before it is wired",
+          "match": "#btn-skip",
+          "reason": "the narration strip's skip control -- steps the silent narrate walk to the next agent; the strip no longer speaks (one voice: the guide, 2026-09-16), so this is a playback control over the canvas timeline, same family as the transport above",
           "next": "agent map increment 2"
         },
         {
@@ -1698,7 +1714,8 @@
         "redo",
         "reset",
         "restore",
-        "spin"
+        "spin",
+        "plot"
       ],
       "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. The FILTER dimension is declared too (see `filters`), so this tab cuts data by voice on all three of its axes. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
       "knobs": [
@@ -1839,6 +1856,11 @@
       },
       "dim_coverage": [
         {
+          "dim": "plot",
+          "match": "#cp-plot, #cp-axis, #cp-scope, #cp-cut, #cp-from, #cp-to, #cp-kinds input, #cp-groups input, #cp-str input, #cp-kinds a, #cp-groups a, #cp-str a, #cp-x",
+          "note": "the plots panel, installed by the shell because this page offers window.c2a2PlotSource (step 5, 2026-09-29): every control writes C2A2Plot spec, which `plot` reads and writes"
+        },
+        {
           "dim": "selection",
           "match": "#info-panel .close-btn",
           "note": "close -- the narrative panel. Named by the items spec, so the audit counts it there."
@@ -1862,6 +1884,10 @@
         {
           "match": "#prs-year-slider",
           "reason": "continuous field, the same exclusion the Sociogram's #date-slider carries. The DISCRETE year filter beside it (the per-decade checkboxes) is the reachable form of the same idea and is deferred, not excluded"
+        },
+        {
+          "match": "#prs-month-slider",
+          "reason": "continuous field (month threshold over `date`, 2026-09-03) -- the same exclusion #prs-year-slider carries, one row up."
         },
         {
           "match": "#prs-help-btn, .prs-help-close, .prs-pop-btn",
@@ -1979,8 +2005,8 @@
             0.1,
             2.6704
           ],
-          "_idle_note": "This view drifts on its own at load until the first drag or wheel. Declaring the flag lets the shell see a turning view it did not start, so `spin off` and `stop` act on what the user is actually watching instead of on our own timer.",
-          "idle": "autoSpin"
+          "_idle_note": "This view drifts on its own at load until the first drag or wheel. Declaring the flag lets the shell see a turning view it did not start, so `spin off` and `stop` act on what the user is actually watching instead of on our own timer. The flag is prs_3d's `autoOrbit` (8c1ab37, 2026-09-03); it was declared here as `autoSpin`, a name the page never had, so `fit`/`spin off`/`stop` quieted nothing -- the three L rows that stayed red.",
+          "idle": "autoOrbit"
         },
         "pan": {
           "camera": "camera",

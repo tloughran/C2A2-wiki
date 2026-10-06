@@ -15,6 +15,9 @@ concrete response to Alasdair MacIntyre's Gifford-Lectures vision of a universit
 traditions of enquiry are made answerable to one another. The **accelerator** half brings
 traditions into contact; the **detector** half instruments what happens when they meet.
 
+## Short introduction (give this, as written, when asked for a general introduction)
+The C2A2 Explorer is the working window onto the Community Context for AI Alignment (C2A2) project, which seeks to empower consensus-sized communities with AI acceleration tools, thus rendering a meaningful and measurable context for AI alignment with common community goals. This first instance brings together a range of thinkers -- 15 or more -- whose research touches up against, in one way or another, an emerging conscious realist paradigm for cross-disciplinary integration. In the Sociogram, the knowledge graph, each node is a wiki file and each edge a link or shared reference: filter by thinker or structure on the left, and click nodes or edges to pull up associated files. On any page, type into the search box at the top: pressing Enter lights up matches on the page and produces a meaningful LLM-driven answer. Each user has a limited number of free semantic questions; when they run out, the search box still lights up matches on the page.
+
 ## The thinker traditions
 Levin, Friston, Hoffman, Kastrup, McGilchrist, Hawkins, Wolfram, Carroll, Arkani-Hamed,
 Fredrickson, Stump, Rohr, Wright, Loughran.
@@ -34,6 +37,9 @@ spacetime is fundamental, and the role of attention in constructing reality.
 - **Community Explorer** -- graph of curated real-world communities.
 - **Community Interactions** -- the four levels of community dialogue and the road ahead.
 - **Education tools** -- RC Document Explorer, Physics Explorer, TRV Commentary, AI Heartbeat.
+
+## Bridge essays (what they are, and who wrote them)
+A bridge essay is a synthesis note on one pair of thinker-traditions -- for example the Friston-Levin bridge -- kept in `synthesis/<a>_<b>_bridge.md`, one file per pair (67 pairs so far). Each is written by the Sewing Agent, the weekly agent that looks for pages sitting where two traditions meet. It anchors on an inbox proposal that touched both traditions and on the relevant PRS triplets from each side, then states a synthesis claim about why the two meet and what open question the meeting raises. Many of the triplets it cites were seeded from Tom Loughran's Resurrecting Civility pilot, but the essays themselves are agent-written, not Tom's own statement of the connections. Treat them as the system's working synthesis, open to correction.
 
 ## Must not claim (global)
 - Any node/edge/community **count or total** as a current fact. Counts are volatile -> the bus, or

@@ -1,0 +1,141 @@
+{
+  "seed": false,
+  "generated": "2026-09-11",
+  "generated_at": "2026-09-11T14:40:27Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 223,
+    "high_relevance": 6,
+    "primary_themes": "Governance Policy + Capability Jump"
+  },
+  "signals": [
+    {
+      "title": "From Repetition to Recognition: Inductive Discovery of Disinformation Narratives",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.11128",
+      "relevance": 2,
+      "tags": [
+        "market_platform"
+      ],
+      "summary": "In disinformation datasets, narratives are often understood as recurring interpretive patterns that group texts under narrative labels. Recent work formalized narrative mining as inductively inferring narrative labels from corpora, but its evaluation stays tied to predefined taxonomies, a closed-world setting that cannot capture narratives absent from the reference labels.",
+      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.687926+00:00"
+    },
+    {
+      "title": "When More Is Not Better: Component Anti-Synergy in a P300 Speller",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.10961",
+      "relevance": 2,
+      "tags": [],
+      "summary": "P300 brain-computer interface (BCI) spellers can provide hands-free communication for people with severe motor impairments. Modern pipelines combine multiple individually promising components, often assuming that 'more-is-better'.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.266514+00:00"
+    },
+    {
+      "title": "PRAGMA: Evaluating Personalized Guidance with Memory Alignment in Lifelong Conversations",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.09664",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Large language models (LLMs) are increasingly deployed as personalized assistants that interact with users over extended periods of time. As conversations grow longer, relying on full interaction histories becomes increasingly inefficient and unreliable: long contexts introduce substantial computational overhead, making it difficult for models to consistently identify and utilize the most relevant information for the current request.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.111840+00:00"
+    },
+    {
+      "title": "Black-Box Red Teaming of Agentic AI: A Taxonomy-Driven Framework for Automated Risk Discovery",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.09647",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Agentic systems are rapidly moving to production, where they read untrusted inputs, call tools with real permissions, and act autonomously, expanding the security surface beyond chat-only models. Yet standard evaluations remain single-turn and fail to capture multi-step agent vulnerabilities.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.107797+00:00"
+    },
+    {
+      "title": "Seven Sources of Physical AI Capability Formation",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.09627",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Capabilities relevant to Physical AI can arise from materially different formation histories, yet existing taxonomies organized by morphology, architecture, learning algorithm, task, or domain do not directly answer what gives rise to a capability. We define a capability-formation source as a factor materially contributing to capability formation, distinct from components or construction steps.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.103807+00:00"
+    },
+    {
+      "title": "Multi-Agent Agentic Graph Learning via Structural Signatures",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.09565",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Agentic graph learning (AGL) has recently achieved promising results on graph reasoning tasks, where an agent powered by a large language model (LLM) sequentially samples the graph as evidence to support its final prediction. Existing methods either employ a single agent or orchestrate multiple role-based agents to reason and learn over the entire graph, but both essentially rely on a shared reasoning policy across different graph regions, which can be suboptimal for graphs with heterogeneous structural and semantic patterns.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.095929+00:00"
+    },
+    {
+      "title": "Former Deepmind PR staffer says the lab once banned public discussion of AI extinction risk",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/former-deepmind-pr-staffer-says-the-lab-once-banned-public-discussion-of-ai-extinction-risk/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "A former Google DeepMind spokesperson says talk of AI-driven human extinction was \"external communication about the possibility of human extinction was not permitted, by anyone, at any level of the organization.\" Internally, the team knew AI alignment was not solved, according to Vishal Maini. The article Former Deepmind PR staffer says the lab once banned public discussion of AI extinction risk appeared first on The Decoder .",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Thu, 10 Sep 2026 16:31:02 +0000",
+      "first_seen_at": "2026-09-11T14:40:20.846558+00:00"
+    },
+    {
+      "title": "Rebalancing Token Importance in Language Models with TF-IDF Weighted Cross-Entropy Loss",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.11029",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Large language models are typically trained under uniform token weighting, which allows frequent and low-information tokens to dominate learning and can increase the tendency to memorize surface-level text spans. To address this, we present an information-weighted cross-entropy loss that rescales token-level contributions using TF-IDF statistics, emphasizing semantically informative tokens while down-weighting ubiquitous ones.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.680022+00:00"
+    },
+    {
+      "title": "K/V-Cache Interventions Dissociate Representation Alignment from Persona Expression in Decoder-Only Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.11020",
+      "relevance": 1,
+      "tags": [],
+      "summary": "We study K/V-cache interventions -- transplanting a target-conditioned K/V trajectory into a source-persona generation -- as a structured surface for persona control in decoder-only language models. Across 13 intervention configurations applied to Llama-3.1-8B for a fixed source-to-target persona pair, we report two consistent dissociations between representation-level alignment and behavioral expression, plus a common failure under position perturbations.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.678137+00:00"
+    },
+    {
+      "title": "Robust Multimodal Sentiment Analysis with Incomplete Modalities via Semantic-aware Completeness based Reconstruction",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.10950",
+      "relevance": 1,
+      "tags": [
+        "misuse_security"
+      ],
+      "summary": "Recent multimodal sentiment analysis studies increasingly adopt text-centric fusion approaches to exploit the rich sentiment information inherent in the textual modality. However, these approaches often suffer from performance degradation during inference due to partially missing or noisy data in real-world scenarios, especially when sentiment-related cues are missing.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Fri, 11 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-11T14:40:19.672257+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

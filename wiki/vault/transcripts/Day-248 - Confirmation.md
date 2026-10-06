@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-248 - Confirmation - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-10T16:21:11"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-08T10:31:24"
+last_qc_outcome: "pass"
 tags: [summa, day/248, pars/3, q/72]
 ---
 

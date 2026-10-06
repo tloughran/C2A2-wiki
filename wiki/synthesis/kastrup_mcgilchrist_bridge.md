@@ -91,3 +91,19 @@ Harpur's objection to the cockpit metaphor is, in effect, an objection to the **
 **Synthesis claim.** The label dispute is decidable and the test is specific: does McGilchrist's 'phase' admit a plurality of independently conscious loci? If it does, Kastrup's combination-problem objection applies with full force and the disagreement is substantive. If matter is a phase of *one* consciousness, McGilchrist is an idealist using the word 'panpsychist' loosely and the dispute is terminological. Nothing else needs to be settled to settle this. On representation, the three positions are close enough to compare directly and should be held as one bridge object rather than three tradition-local entries.
 
 **Open question the wiki cannot yet answer.** Can McGilchrist's hemisphere framework describe *its own* metaphysics? The panpsychist claim is a decontextualized general proposition about the nature of matter — on his own typology, a left-hemisphere product. Whether the framework can state its ontology without self-indicting is an internal question the tradition has not faced, and it recurs in `synthesis/mcgilchrist_stump_bridge.md` in the form of firm assent to what exceeds comprehension.
+
+
+---
+
+## Three registers on the AI question
+*Sewing Agent, 2026-09-06*
+
+**Orphaned page at the intersection (0 backlinks before this run):** `2026-09-02_mcgilchrist_can-you-still-be-human` (McGilchrist 0.9, Kastrup 0.6).
+
+**Why it sits here:** McGilchrist's signed Substack essay argues the AI catastrophe at the level of institutions and devices, with a dated (hedged) two-year prediction. Kastrup's PRS-46 (what in a datacentre would be conscious?) and PRS-58 (alignment lives in the training regime) are the metaphysical and engineering registers on the same object.
+
+**Synthesis claim:** The two traditions do not disagree about AI; they answer *different questions* about it, and the essay makes that visible for the first time from McGilchrist's own hand rather than an interview summary. Political (what it does to persons), metaphysical (whether it can be a subject), engineering (where alignment lives): three independent registers on one object is the structure the inter-tradition study wants, and it should be recorded as such rather than as agreement.
+
+**Open question the wiki cannot yet answer:** Does McGilchrist's political case depend on his cognitive case at all? If the essay's exhibits stand without the hemispheric frame, then open question 20 resolves toward "institutions" and the tradition's metaphysics becomes optional for its diagnosis, which the tradition may not want.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-02_mcgilchrist_can-you-still-be-human]]

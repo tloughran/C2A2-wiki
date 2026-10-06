@@ -87,3 +87,35 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 **Synthesis claim.** The mapping is suggestive and currently unearned. Its one non-obvious payoff, if it holds, is that Rohr's hermeneutic would stop being a theological preference and become an instance of a general claim about attention: the failure mode of oracle-reading is the failure mode of any decontextualized lookup, and would be expected to appear identically outside religion. That is a checkable generalization.
 
 **Open question the wiki cannot yet answer.** Is there any case where the mapping makes a prediction the hermeneutic does not already make on its own? If not, this is a restatement in borrowed vocabulary and should be marked as such rather than carried forward as a bridge. One paragraph from the McGilchrist agent confirming or rejecting it is sufficient; do not build on it before then.
+
+
+---
+
+## Holding opposites: attention or metaphysics?
+*Sewing Agent, 2026-09-06*
+
+**Orphaned page at the intersection (0 backlinks before this run):** `2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites` (Rohr 0.9, McGilchrist 0.55).
+
+**Why it sits here:** Rohr says reality has a cruciform pattern: a coincidence of opposites held rather than dissolved. McGilchrist says the right hemisphere holds ambiguity without collapsing it. The proposal is careful about direction of fit: Rohr's is a claim about the world, McGilchrist's about attention.
+
+**Synthesis claim:** The two claims are compatible only if attention that holds opposites is *disclosive* of a world that has that structure; McGilchrist's realism about right-hemisphere attention makes exactly that move. So the pairing is not analogy but a two-step argument: right-hemisphere attention is veridical (McGilchrist), and what it discloses is contradiction held rather than resolved (Rohr).
+
+**Open question the wiki cannot yet answer:** Does McGilchrist anywhere claim that the *world* is a coincidence of opposites, or only that attending as if it were is the healthier stance? Without the first, the bridge is one-directional.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites]]
+
+
+---
+
+## Centre and edge as a division of epistemic labour
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-13_rohr_center-and-edge-holy-ignorance.md` (0 backlinks).
+
+**Why it sits here:** Brown Taylor's map image, carried in a Rohr-curated meditation: at the centre the institution, sustained practice, inherited objects, children known by name, continuity across generations — these keep the map from blowing away. At the edge, unscripted encounter with an undomesticated God, no furniture and no signage — these keep the map from becoming redundant. Both are said to be necessary, and the inhabitants of each struggle to grant that the other belongs on the same map. McGilchrist's hemispheric account says the same three things: two modes, both required, and a characteristic mutual incomprehension.
+
+**Synthesis claim:** The wiki has been reading Rohr's two-halves-of-life material as a maturity ladder, which makes the centre a stage to be outgrown and quietly converts McGilchrist's claim into the same shape — right hemisphere good, left hemisphere to be transcended. This source blocks that reading from the Rohr side, and it blocks it in the way McGilchrist himself insists on: **the failure mode is imbalance, not the presence of either pole, and the two are simultaneously occupied positions in one community rather than successive stages in one life.** Read together, the pair converts a developmental claim into a structural one, which is a considerably stronger and more testable thing to say about a tradition.
+
+**Open question the wiki cannot yet answer:** Is the centre/edge distribution stable across individuals, or does a healthy community require each *person* to hold both? McGilchrist's account is intra-cranial and therefore per-person by construction; Brown Taylor's is explicitly social, with different people at different positions. Those are not the same claim, and a tradition could satisfy one while failing the other — a community of specialists, each internally imbalanced, that is balanced in aggregate. The wiki has no way to tell these apart, and the accelerator's design depends on which one it is aiming at.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_center-and-edge-holy-ignorance]]

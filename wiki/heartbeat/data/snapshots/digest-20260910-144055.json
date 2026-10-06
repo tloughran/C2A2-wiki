@@ -1,0 +1,137 @@
+{
+  "seed": false,
+  "generated": "2026-09-10",
+  "generated_at": "2026-09-10T14:40:55Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 204,
+    "high_relevance": 1,
+    "primary_themes": "Capability Jump + Governance Policy"
+  },
+  "signals": [
+    {
+      "title": "Agents Trust Tools Too Much: Measuring Reliance on Unreliable Tools",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.05587",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Existing evaluations of tool-using agents primarily measure whether an agent can successfully complete diverse tasks with tools. These evaluations generally assume that tools return reliable information.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.248648+00:00"
+    },
+    {
+      "title": "GPT-6 Astra gives mathematicians a breather, and OpenAI says that's by design",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/gpt-6-astra-gives-mathematicians-a-breather-and-openai-says-thats-by-design/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "OpenAI's GPT-6 Astra tops the ErdosBench for open math problems, even though chief scientist Jakub Pachocki says math was deliberately not a priority. Instead, OpenAI is pouring resources into recursive self-improvement and alignment research.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Thu, 10 Sep 2026 13:45:32 +0000",
+      "first_seen_at": "2026-09-10T14:40:52.029523+00:00"
+    },
+    {
+      "title": "CARRE: Counterfactual Action Retrieval and Reason Evaluation for Explainable Churn Prescription",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09766",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Churn models typically identify high-risk customers but do not specify which feasible retention action should be considered or why that action is appropriate. We present CARRE (Counterfactual Action Retrieval and Reason Evaluation), a three-stage framework that combines retrieval-augmented candidate generation, cost-aware counterfactual scoring, and large language model (LLM) reasoning.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.515274+00:00"
+    },
+    {
+      "title": "SocialRL: Refining LLMs' Social Intelligence through Multi-turn Reinforcement Learning and Reward Design",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09764",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Social intelligence enables agents to read social context, infer intent, and adapt over sustained dialogue. As language models become autonomous collaborators, it is central to building effective and trustworthy human-AI interaction.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.513099+00:00"
+    },
+    {
+      "title": "StreamAlign: Streaming Text-Aligned Speech Tokenization",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09719",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Text-aligned speech tokenization methods have emerged to better align speech tokens with LLM token spaces, enabling more effective utilization of pretrained LLMs. However, they rely on offline automatic speech recognition (ASR), leading to two key limitations: (i) the need for complete utterances before tokenization, precluding real-time streaming, and (ii) vocabulary mismatch between ASR and LLMs, which reduces acoustic granularity from the subword to the word level.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.510964+00:00"
+    },
+    {
+      "title": "X2-NativeCursor: Native-Token Text Progress Tracking for Incremental-Text Streaming Codec TTS",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09677",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Incremental-text streaming text-to-speech (TTS) needs online text progress tracking for synchronized highlighting, interruption handling, and dialogue-history updates. Input text arrives before it is spoken, so text arrival alone cannot indicate speech progress.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.500955+00:00"
+    },
+    {
+      "title": "TEFM: Token-Efficient Faithful Modeling for Structured Data",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09552",
+      "relevance": 1,
+      "tags": [],
+      "summary": "In this paper, we solve two fundamental obstacles in applying LLMs to critical domains: token efficiency and faithfulness. To address both constraints jointly, we present TEFM (Token-Efficient Faithful Modeling), a framework designed for structured data analysis in critical domains.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.488278+00:00"
+    },
+    {
+      "title": "The Mutations of Machine Speech",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09496",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Algorithmic outputs now populate the digital environments through which contemporary life is organized. The role of law in facilitating and constituting (rather than merely responding to) these processes is gaining increasing traction across scholarly accounts.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.486121+00:00"
+    },
+    {
+      "title": "Edu-QuRating: Multi-Dimensional Educational Data Curation with Distilled Pairwise Judgements",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09425",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Educational data filters have become a practical way to improve language-model pre-training, but most filters treat educational value as a single scalar property. This may be too broad for some applications, especially if the data set already features a high density of educational material.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.483449+00:00"
+    },
+    {
+      "title": "Benchmarking Hybrid Deep Research Across Database Querying and Web Search",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.09410",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "While autonomous agents have made significant strides in \"deep research\" by iteratively navigating the open web to synthesize information, real-world problem-solving is rarely confined to a single environment. Complex analytical tasks inherently require agents to weave together evidence from both ambiguous unstructured text (e.g., the open web) and highly precise structured data (e.g., relational databases).",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Thu, 10 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-10T14:40:50.481329+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

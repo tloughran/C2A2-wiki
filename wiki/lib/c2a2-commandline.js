@@ -609,6 +609,9 @@
         undoOf(tab).push(e);
         return { dim: e.dim, value: e.after };
       },
+      // Read-only: the newest entry, for a harness that must assert the SAME
+      // journal entry arrived by two roads. Never mutates either stack.
+      peek: function (tab) { const u = undoOf(tab); return u.length ? { dim: u[u.length - 1].dim, before: u[u.length - 1].before, after: u[u.length - 1].after } : null; },
       canUndo: function (tab) { return undoOf(tab).length > 0; },
       canRedo: function (tab) { return redoOf(tab).length > 0; },
       depth: function (tab) { return undoOf(tab).length; },
@@ -646,7 +649,8 @@
     'go', 'back',
     'show', 'hide', 'only', 'all', 'none',
     'open', 'close',
-    'find', 'clear', 'focus',
+    'find', 'also', 'except', 'within', 'clear', 'focus',
+    'plot',
     'fit', 'zoom', 'pan',
     'pick', 'next', 'previous',
     'read', 'stop', 'summarize',
@@ -772,8 +776,16 @@
 
       case 'find':
         return { ok: true, kind: 'highlight', action: 'find', text: op.args[0], journal: { dim: 'highlight' } };
+      // Relative to the cut already standing: the shell joins the current
+      // expression with this connective and re-evaluates the whole thing.
+      case 'also': case 'except': case 'within':
+        return { ok: true, kind: 'highlight', action: 'compose', verb: op.verb, op: CUT_OPS[op.verb], text: op.args[0], journal: { dim: 'highlight' } };
       case 'clear':
         return { ok: true, kind: 'highlight', action: 'clear', journal: { dim: 'highlight' } };
+      // The words are resolved in the SHELL against the live panel's own lists
+      // (parsePlotSpec needs its dims); plan() only routes.
+      case 'plot':
+        return { ok: true, kind: 'plot', text: op.args[0] || '', journal: { dim: 'plot' } };
       case 'focus': {
         const res = resolveTerms(op.args, ctx.roster);
         if (res.ambiguous) { return res.ambiguous; }
@@ -868,9 +880,677 @@
     }
   }
 
+  // ---- COMPOSABLE CUTS (2026-09-22) ----------------------------------------
+  //
+  // Tom, after fifteen minutes with the guide: it "cannot retain one cut on data
+  // and add or subtract another, nor notice that it failed". The first half was
+  // the GRAMMAR: `show/hide/only` compose over groups, but every `find` replaced
+  // the last, so "keep X, add Y, drop Z" had no correct expression at all. A cut
+  // is now an EXPRESSION -- `X also Y except Z within W`, read left to right as
+  // union / difference / intersection -- and the expression string is what the
+  // journal stores as the cut's query. Undo and replay re-evaluate it through
+  // the tab, so the tab still owns what each term matches.
+  //
+  // The connectives are whole words between spaces. A search that genuinely
+  // contains "also", "except" or "within" as a word is therefore read as a
+  // composition; that trade is accepted and named here rather than hidden.
+  const CUT_OPS = { also: 'union', except: 'diff', within: 'intersect' };
+  const CUT_SPLIT = /\s+(also|except|within)\s+/i;
+  function parseCutExpr(text) {
+    const s = String(text || '').trim();
+    if (!s) { return []; }
+    const parts = s.split(CUT_SPLIT);
+    const terms = [{ op: 'set', text: parts[0].trim() }];
+    for (let i = 1; i + 1 < parts.length; i += 2) {
+      terms.push({ op: CUT_OPS[parts[i].toLowerCase()], text: parts[i + 1].trim() });
+    }
+    return terms.filter(function (t) { return t.text; });
+  }
+  // `find(text) -> id[]` is the tab's own deterministic search. Each step
+  // records what it CHANGED, because a step that changed nothing is the most
+  // common silent failure ("except summa" when nothing under that name was in
+  // the cut) and the user must hear about it.
+  function composeCut(terms, find) {
+    let acc = null;
+    const steps = [];
+    for (const t of terms) {
+      const ids = (find(t.text) || []).slice();
+      const has = new Set(ids);
+      const before = acc ? acc.length : 0;
+      if (acc === null || t.op === 'set') { acc = ids.slice(); }
+      else if (t.op === 'union') { const cur = new Set(acc); for (const id of ids) { if (!cur.has(id)) { acc.push(id); cur.add(id); } } }
+      else if (t.op === 'diff') { acc = acc.filter(function (id) { return !has.has(id); }); }
+      else if (t.op === 'intersect') { acc = acc.filter(function (id) { return has.has(id); }); }
+      steps.push({ op: t.op, text: t.text, matched: ids.length, before: before, after: acc.length });
+    }
+    return { ids: acc || [], steps: steps };
+  }
+  // Plain-language problems with a composition, one per step that did not do
+  // what its connective promises. Empty list = every step had an effect.
+  function cutStepProblems(steps) {
+    const out = [];
+    for (let i = 0; i < steps.length; i++) {
+      const st = steps[i];
+      if (!st.matched) { out.push('"' + st.text + '" matched nothing'); continue; }
+      if (i === 0) { continue; }
+      if (st.op === 'union' && st.after === st.before) { out.push('also "' + st.text + '" added nothing new (all ' + st.matched + ' were already in)'); }
+      if (st.op === 'diff' && st.after === st.before) { out.push('except "' + st.text + '" removed nothing (none of its ' + st.matched + ' were in the cut)'); }
+      if (st.op === 'intersect' && st.after === 0) { out.push('within "' + st.text + '" left nothing (no overlap)'); }
+    }
+    return out;
+  }
+  function describeCutSteps(steps) {
+    if (steps.length < 2) { return ''; }
+    return steps.map(function (st, i) {
+      if (i === 0) { return '"' + st.text + '" ' + st.after; }
+      const sign = st.op === 'union' ? '+' : (st.op === 'diff' ? '-' : 'within ');
+      return sign + '"' + st.text + '" -> ' + st.after;
+    }).join('; ');
+  }
+  // VERIFY AFTER THE ACTION: compare what the page DRAWS with what was meant.
+  // `domIds` is every id the page has an element for, so a node the tab never
+  // rendered (filtered out upstream) is not counted as missing.
+  function verifyDrawn(intended, drawn, domIds) {
+    const want = new Set(intended), dom = new Set(domIds), got = new Set(drawn);
+    let extra = 0, missing = 0;
+    for (const id of got) { if (!want.has(id)) { extra++; } }
+    for (const id of want) { if (dom.has(id) && !got.has(id)) { missing++; } }
+    const problems = [];
+    if (extra) { problems.push(extra + ' node(s) drawn that the cut excludes'); }
+    if (missing) { problems.push(missing + ' node(s) in the cut not drawn'); }
+    return { ok: !problems.length, extra: extra, missing: missing, problems: problems };
+  }
+  // Same question for a filter write: does the page's own state, read back,
+  // equal the state we wrote? Lists the keys that disagree.
+  function verifyFilters(target, after) {
+    const problems = [];
+    if (!after) { return { ok: false, problems: ['the view reported no filter state after the change'] }; }
+    for (const k of Object.keys(target || {})) {
+      if (!!target[k] !== !!after[k]) { problems.push(k + ' should be ' + (target[k] ? 'on' : 'off') + ' but is ' + (after[k] ? 'on' : 'off')); }
+    }
+    return { ok: !problems.length, problems: problems };
+  }
+
+  // ---- planner (item 4, approved 2026-09-22) ------------------------------
+  // A strong text model plans CCL steps; CODE runs them, reads the view back,
+  // and hands the verified results to the model for one correction pass and
+  // the final answer. The model never touches the page; it only writes
+  // command strings and prose (Rule 5: routing, running, checking are code).
+
+  // ROUTER. Deterministic. `direct` = run as one CCL command (a bare short
+  // string becomes `find` inside the shell's run, as before). `plan` = send to
+  // the planner. Question marks, question words, sequencing words and long
+  // entries are plans even when the first word happens to be a verb: "show me
+  // how levin connects to friston" parses as `show`, and running it would try
+  // to light groups named "me", "how"... -- the stubborn-child failure.
+  const PLAN_START_RE = /^(how|why|what|which|who|whom|whose|when|where|does|do|did|is|are|was|were|can|could|should|would|will|compare|contrast|explain|describe|tell|list|give|walk|help me|i want|i'd like|let's|lets|please)\b/i;
+  const PLAN_SEQ_RE = /\b(then|keep|but|and also|after that|as well as|instead)\b|[;?]/i;
+  const DIRECT_BARE = new Set(['what', 'where', 'help', 'undo', 'redo', 'reset', 'restore', 'all', 'none', 'clear', 'fit', 'stop', 'back']);
+  function routeRequest(text, grammar) {
+    const s = String(text || '').trim();
+    if (!s) { return { route: 'empty' }; }
+    const words = s.split(/\s+/);
+    if (words.length === 1 && DIRECT_BARE.has(words[0].toLowerCase())) { return { route: 'direct', why: 'single verb' }; }
+    if (PLAN_START_RE.test(s)) { return { route: 'plan', why: 'question or request' }; }
+    if (PLAN_SEQ_RE.test(s)) { return { route: 'plan', why: 'several steps' }; }
+    // A verb followed by how/why/whether is a question wearing a verb.
+    if (/\b(how|why|whether)\b/i.test(words.slice(1).join(' '))) { return { route: 'plan', why: 'question after a verb' }; }
+    const p = parse(s, grammar);
+    if (p.ok) { return { route: 'direct', why: 'one command' }; }
+    if (p.error === 'unknown_verb' && words.length <= 4) { return { route: 'direct', why: 'short search' }; }
+    return { route: 'plan', why: p.error || 'not one command' };
+  }
+
+  // Verbs the planner may NOT emit: they start something that keeps running
+  // after the answer (speech, a turntable) and would fight the voice guide.
+  const PLAN_DENY = new Set(['read', 'spin']);
+  const PLAN_MAX_COMMANDS = 6;
+  const PLAN_TEXT_MAX = 6000;   // chars of summarize text passed back per command
+
+  function verbLines(verbsJson) {
+    const list = (verbsJson && verbsJson.verbs) || [];
+    return list.map(function (v) { return v.verb + ' (' + v.dim + '/' + v.op + ', args: ' + v.args + ')'; }).join('\n');
+  }
+
+  function buildPlanPrompt(o) {
+    const system = [
+      'You operate the C2A2 Explorer, a website of interlinked research traditions, through its command language (CCL).',
+      'You never see the page. You see: the request, the VERIFIED STATE (read back from the page by code), page knowledge, and the results of commands you asked for.',
+      'Reply with ONE JSON object and nothing else:',
+      '{"goal": "<what the view should show when done>", "commands": ["<one CCL command per string>"], "answer": "<text, or empty>", "assumed": "<how you read the request, or empty>", "ask": "<one clarifying question, or empty>"}',
+      'Rules:',
+      '- READ GENEROUSLY. The user is often a researcher who wants control of the data but does not know the command words. Map their words onto the verbs, facets and plots below even when the wording is unfamiliar ("all Levin" -> `thinker:levin`; "connected to" / "linked to" / "next to" -> `neighbors:`; "chart", "graph", "picture of" -> `plot`). Act on the most likely reading.',
+      '- When you act on a reading that could reasonably have meant something else, say the reading in "assumed" in one plain sentence ("I took \'all Levin\' to mean every Levin node plus every edge from Levin to anything else") and put the alternative as ONE short question in "ask" ("If you meant only edges inside Levin, say so and I will redraw"). Do not ask when there is only one sensible reading. Never ask instead of acting when a reasonable action exists.',
+      '- When the request cannot be expressed with these verbs at all, do not invent a command: return "commands": [], say plainly in "answer" what is not possible and why, and put the nearest thing you CAN do in "ask" as a question.',
+      '- commands run in order, max ' + PLAN_MAX_COMMANDS + '. Names lowercase. One verb per string. Never use: ' + Array.from(PLAN_DENY).join(', ') + '.',
+      '- A text cut is an expression: `find X`, then `also Y` (add: the UNION of both, never an overlap), `except Z` (remove), `within W` (keep only the overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
+      '- A cut term may be a FACET of the model instead of a search word (Sociogram): `thinker:levin` (every node the model attributes to Levin -- use this, not `find levin`, which only matches titles), `group:synthesis`, `kind:signal`, `strength:strong`, `month:2026-08`, `since:2026-08`, `until:2026-07`, `between levin and friston` (the ends of edges joining the two). `+` joins facets in ONE term: `find thinker:levin+strength:strong`. Facets compose with also/except/within like any term.',
+      '- NEIGHBOURS: `neighbors:<term>` = every node with an edge to any node the inner term selects (one hop, any edge kind). The inner term is a search word or a facet: `neighbors:thinker:levin`. "Every Levin node and everything Levin links to" = `find thinker:levin` then `also neighbors:thinker:levin`. "The Summa nodes Levin connects to" = `find neighbors:thinker:levin within group:summa`.',
+      '- A word the grammar does not know is not an error to report: look for the nearest verb or facet first. `find` alone matches only titles and ids, so for a person or tradition prefer `thinker:<name>`.',
+      '- Group filters: `only`, `show`, `hide`, `all`. `what` reads the view. `summarize` returns the open article text to you.',
+      '- `plot` draws the edges of the current view (Sociogram) as a chart, in ONE command with order-free words: a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` (whole corpus) or `page` (follow the view and its cut), `inside`/`touching` (edges inside the cut, or touching it), `since <month>`, `until <month>`, and lists after `edges` (signal, wikilink, mention, reference...), `nodes` (groups), `strength` (strong, high, moderate, speculative). Example: `plot heatmap by thinker edges signal strength strong high since august`. `plot off` hides it. Its result reports the edge count and the top pairs -- use those numbers, they are computed.',
+      '- If results say a step failed or did nothing (CHECK / verify problems / matched nothing), either correct it with new commands or say so in the answer. Never claim a view you were not shown.',
+      '- When the view already serves the goal, or the request is only a question, return "commands": [] and write the answer.',
+      '- GROUNDING, when given, is the C2A2 model\'s own material (bridge essays, PRS triplets, Level-2 signals), retrieved by code. Build the answer on it first. Name what you drew on in plain words ("the Friston-Levin bridge essay", "Levin\'s PRS-03"). State COMPUTED FACTS exactly as given. Do not add connections the grounding does not contain; if it does not answer the question, say so plainly.',
+      '- For a question the grounding answers, you may add view commands that let the user SEE what you describe (for a pair: `find a`, then `also b`); otherwise return "commands": [] and answer in this round.',
+      '- The answer: plain, warm, precise prose for a thoughtful non-specialist, at most about 150 words, spoken aloud as written. Use only the verified state, command results, grounding and knowledge given. Say plainly when they do not answer the question. Do not state counts as current facts unless a result or COMPUTED FACTS in this exchange gave them.'
+    ].join('\n');
+    const parts = [];
+    parts.push('REQUEST: ' + o.request);
+    if (o.hint) { parts.push('NOTE: ' + o.hint); }
+    parts.push('VERIFIED STATE (before this round): ' + (o.state || '(unknown)'));
+    if (o.knowledge) { parts.push('KNOWLEDGE:\n' + o.knowledge); }
+    if (o.grounding) { parts.push(o.grounding); }
+    if (o.examples) { parts.push(o.examples); }
+    parts.push('CCL VERBS:\n' + (o.verbs || ''));
+    if (o.results && o.results.length) {
+      parts.push('RESULTS OF YOUR COMMANDS SO FAR (round ' + o.round + '):\n' + o.results.map(function (r, i) {
+        return (i + 1) + '. ' + r.cmd + ' -> ' + (r.ok ? '' : 'FAILED: ') + (r.spoken || '') +
+          (r.problems && r.problems.length ? '  VERIFY PROBLEMS: ' + r.problems.join('; ') : '') +
+          (r.text ? '\n   TEXT RETURNED:\n' + r.text : '');
+      }).join('\n'));
+      parts.push(o.lastRound ? 'This is the LAST round: return "commands": [] and the answer.' : 'Correct with new commands only if something failed or the goal is not met; otherwise return "commands": [] and the answer.');
+    }
+    return { system: system, user: parts.join('\n\n') };
+  }
+
+  // A PROMPT THAT FITS (2026-09-29). The broker refuses a request over its
+  // limit (413), and a refused request is worse than a trimmed one. Grounding
+  // for one named pair is already ~17 KB. So: never send more than `max`
+  // characters of system+user. Trim in a fixed order -- the text returned by
+  // earlier commands, then the tail of the grounding, then page knowledge --
+  // and record every trim in `trimmed`, which the caller shows. null means it
+  // could not be made to fit at all.
+  const PLAN_PROMPT_MAX = 56000;   // chars; the broker allows 64 KB for the answer model, leaving room for JSON escaping
+  function fitPlanPrompt(o, max, trimmed) {
+    const size = function (p) { return p.system.length + p.user.length; };
+    const note = function (t) { if (trimmed.indexOf(t) < 0) { trimmed.push(t); } };
+    let p = buildPlanPrompt(o);
+    if (size(p) <= max) { return p; }
+    if (o.results && o.results.some(function (r) { return r.text && r.text.length > 1500; })) {
+      o = Object.assign({}, o, { results: o.results.map(function (r) { return r.text ? Object.assign({}, r, { text: r.text.slice(0, 1500) + ' [...]' }) : r; }) });
+      note('text returned by commands'); p = buildPlanPrompt(o);
+      if (size(p) <= max) { return p; }
+    }
+    [['grounding', 'grounding'], ['knowledge', 'page knowledge']].forEach(function (kv) {
+      if (size(p) <= max || !o[kv[0]]) { return; }
+      const full = o[kv[0]], keep = Math.max(0, full.length - (size(p) - max) - 200);
+      o = Object.assign({}, o); o[kv[0]] = full.slice(0, keep) + '\n[' + kv[1].toUpperCase() + ' TRIMMED TO FIT: ' + keep + ' of ' + full.length + ' characters]';
+      note(kv[1] + ' (' + keep + ' of ' + full.length + ' characters kept)'); p = buildPlanPrompt(o);
+    });
+    return size(p) <= max ? p : null;
+  }
+
+  // The model's reply -> {ok, goal, commands, dropped, answer} or {ok:false, error}.
+  // Tolerates code fences and prose around the object; nothing else.
+  function parsePlan(text) {
+    const s = String(text || '');
+    const a = s.indexOf('{'), b = s.lastIndexOf('}');
+    if (a < 0 || b <= a) { return { ok: false, error: 'no JSON object in the planner reply' }; }
+    let o;
+    try { o = JSON.parse(s.slice(a, b + 1)); } catch (e) { return { ok: false, error: 'planner reply is not valid JSON' }; }
+    const raw = Array.isArray(o.commands) ? o.commands : [];
+    const commands = [], dropped = [];
+    for (const c of raw) {
+      const cmd = String(c || '').replace(/\s+/g, ' ').trim();
+      if (!cmd) { continue; }
+      const v = cmd.split(' ')[0].toLowerCase();
+      if (PLAN_DENY.has(v) || commands.length >= PLAN_MAX_COMMANDS) { dropped.push(cmd); continue; }
+      commands.push(cmd);
+    }
+    return { ok: true, goal: String(o.goal || ''), commands: commands, dropped: dropped, answer: String(o.answer || '').trim(),
+             assumed: String(o.assumed || '').trim(), ask: String(o.ask || '').trim() };
+  }
+
+  // GROUNDING (grounding increment, 2026-09-24). Deterministic retrieval from
+  // the model's own structure -- wiki/voice_guide/grounding.json, built by
+  // scripts/build_grounding_index.py -- handed to the planner up front, so the
+  // answer rests on bridge essays, PRS triplets and Level-2 signals instead of
+  // general knowledge. Code picks; the model only writes (Rule 5).
+  const GROUND_STOP = new Set(('a an the and or of to in on for with by from at as is are was were be been does do did how why what which who whom when where ' +
+    'that this these those it its into about between connect connects connected connection link links relate relates related relation ' +
+    'me my i you your we our us tell show explain describe compare contrast say says said think thinks their them they his her there ' +
+    'can could should would will please give walk help also then keep but not no than more most much very both each other any some').split(' '));
+  const STRENGTH_RANK = { strong: 3, high: 3, moderate: 2, speculative: 1, unlabeled: 0 };
+  const GROUND_BRIDGE_MAX = 6000, GROUND_BRIDGES = 3, GROUND_SIGNALS = 8, GROUND_ENTITIES = 3;
+
+  function escRe(t) { return String(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  // Traditions named in the request, in order of first mention, max 3.
+  function groundEntities(request, index) {
+    const s = ' ' + String(request || '').toLowerCase().replace(/[’']s\b/g, '') + ' ';
+    const hits = [];
+    const trads = (index && index.traditions) || {};
+    for (const slug of Object.keys(trads)) {
+      let at = -1;
+      for (const al of trads[slug].aliases || [slug]) {
+        const m = new RegExp('[^a-z]' + escRe(al) + '[^a-z]').exec(s);
+        if (m && (at < 0 || m.index < at)) { at = m.index; }
+      }
+      if (at >= 0) { hits.push([at, slug]); }
+    }
+    hits.sort(function (x, y) { return x[0] - y[0]; });
+    const entities = hits.slice(0, GROUND_ENTITIES).map(function (h) { return h[1]; });
+    const pairs = [], bridges = [];
+    for (let i = 0; i < entities.length; i++) {
+      for (let j = i + 1; j < entities.length; j++) {
+        const key = [entities[i], entities[j]].sort().join('|');
+        pairs.push(key);
+        if (index.bridges && index.bridges[key] && bridges.length < GROUND_BRIDGES) { bridges.push(index.bridges[key]); }
+      }
+    }
+    return { entities: entities, pairs: pairs, bridges: bridges };
+  }
+  function queryTerms(request, index, entities) {
+    const drop = new Set();
+    for (const e of entities) { for (const al of index.traditions[e].aliases) { al.split(/[^a-z]+/).forEach(function (w) { drop.add(w); }); } }
+    return String(request || '').toLowerCase().split(/[^a-z]+/).filter(function (w) { return w.length > 2 && !GROUND_STOP.has(w) && !drop.has(w); })
+      .map(function (w) { return w.replace(/(ies|es|s)$/, ''); });
+  }
+  function signalRank(x) { return (STRENGTH_RANK[String(x.st || '').toLowerCase()] || 0) * 10 + (Number(x.w) || 0); }
+  function strengthTally(list) {
+    const t = {};
+    for (const x of list) { const k = x.st || 'Unlabeled'; t[k] = (t[k] || 0) + 1; }
+    return Object.keys(t).sort(function (a, b) { return t[b] - t[a]; }).map(function (k) { return k + ' ' + t[k]; }).join(', ');
+  }
+  function dateRange(list) {
+    const d = list.map(function (x) { return x.d; }).filter(Boolean).sort();
+    return d.length ? d[0] + ' to ' + d[d.length - 1] : 'undated';
+  }
+  // PRS ids a bridge essay cites for a tradition: lines naming traditions/<slug>/.
+  function citedPrs(bridgeTexts, slug) {
+    const ids = new Set();
+    for (const t of bridgeTexts || []) {
+      for (const line of String(t).split('\n')) {
+        if (line.indexOf('traditions/' + slug + '/') < 0) { continue; }
+        (line.match(/PRS-\d+[a-z]?/g) || []).forEach(function (id) { ids.add(id); });
+      }
+    }
+    return ids;
+  }
+
+  // -> {entities, sources:[file], facts:[string], text}. bridgeTexts: {path: text}.
+  function buildGrounding(request, index, bridgeTexts) {
+    bridgeTexts = bridgeTexts || {};
+    if (!index || !index.traditions) {
+      return { entities: [], sources: [], facts: [], text: 'GROUNDING: the grounding index did not load; nothing was retrieved from the C2A2 model. Say so if the question needs it.' };
+    }
+    const g = groundEntities(request, index);
+    if (!g.entities.length) {
+      return { entities: [], sources: [], facts: [], text: 'GROUNDING: no tradition was named in the request, so code retrieved nothing from the C2A2 model beyond the site knowledge. If the question needs the model\'s material, say that plainly and suggest naming a thinker.' };
+    }
+    const T = index.traditions, name = function (s) { return T[s].name; };
+    const out = [], facts = [], sources = [];
+    const terms = queryTerms(request, index, g.entities);
+    // Signals.
+    const sig = index.signals || [];
+    if (g.pairs.length) {
+      for (const key of g.pairs) {
+        const ab = key.split('|');
+        const list = sig.filter(function (x) { return x.a === ab[0] && x.b === ab[1]; });
+        facts.push('Level-2 signals between ' + name(ab[0]) + ' and ' + name(ab[1]) + ': ' + list.length +
+          (list.length ? ' (' + strengthTally(list) + '; ' + dateRange(list) + ')' : ''));
+        facts.push('Bridge essay for ' + name(ab[0]) + ' and ' + name(ab[1]) + ': ' + (index.bridges[key] ? index.bridges[key] : 'none exists'));
+      }
+    } else {
+      const e = g.entities[0], partners = {};
+      for (const x of sig) { if (x.a === e || x.b === e) { const o = x.a === e ? x.b : x.a; partners[o] = (partners[o] || 0) + 1; } }
+      const top = Object.keys(partners).sort(function (p, q) { return partners[q] - partners[p]; }).slice(0, 5);
+      facts.push('Level-2 signals involving ' + name(e) + ': ' + Object.values(partners).reduce(function (a, b) { return a + b; }, 0) +
+        (top.length ? '; most with ' + top.map(function (o) { return name(o) + ' (' + partners[o] + ')'; }).join(', ') : ''));
+      const bl = Object.keys(index.bridges).filter(function (k) { return k.split('|').indexOf(e) >= 0; });
+      facts.push('Bridge essays involving ' + name(e) + ': ' + bl.length);
+    }
+    for (const e of g.entities) { facts.push('PRS triplets for ' + name(e) + ': ' + T[e].prs.length + ' (traditions/' + e + '/prs_triplets.md)'); }
+    out.push('GROUNDING -- retrieved by code from the C2A2 model itself. Cite the files you use.');
+    out.push('COMPUTED FACTS (exact; state them as given):\n' + facts.map(function (f) { return '- ' + f; }).join('\n'));
+    // Bridge essays.
+    const btexts = [];
+    for (const path of g.bridges) {
+      const t = bridgeTexts[path];
+      if (!t) { out.push('BRIDGE ESSAY ' + path + ': could not be fetched.'); continue; }
+      btexts.push(t); sources.push(path);
+      out.push('BRIDGE ESSAY ' + path + (t.length > GROUND_BRIDGE_MAX ? ' (first ' + GROUND_BRIDGE_MAX + ' of ' + t.length + ' chars)' : '') + ':\n' + t.slice(0, GROUND_BRIDGE_MAX));
+    }
+    // Signals text.
+    for (const key of g.pairs) {
+      const ab = key.split('|');
+      const list = sig.filter(function (x) { return x.a === ab[0] && x.b === ab[1]; })
+        .sort(function (x, y) { return signalRank(y) - signalRank(x) || (y.d > x.d ? 1 : y.d < x.d ? -1 : 0); }).slice(0, GROUND_SIGNALS);
+      if (!list.length) { continue; }
+      sources.push('../prototypes/signals_grown.json');
+      out.push('LEVEL-2 SIGNALS ' + name(ab[0]) + ' x ' + name(ab[1]) + ' (strongest ' + list.length + '):\n' + list.map(function (x) {
+        return '- ' + (x.d || 'undated') + ' [' + (x.st || 'Unlabeled') + '] ' + x.t + (x.n ? ' (' + x.n + ')' : '');
+      }).join('\n'));
+    }
+    // PRS triplets, ranked: cited by a fetched bridge essay, then query-term overlap, then mentions of the other entity.
+    const per = g.entities.length === 1 ? 8 : 5;
+    for (const e of g.entities) {
+      const cited = citedPrs(btexts, e);
+      const others = g.entities.filter(function (o) { return o !== e; }).map(name).map(function (n) { return n.toLowerCase(); });
+      const scored = T[e].prs.map(function (x, i) {
+        const hay = (x.label + ' ' + x.p + ' ' + x.r + ' ' + x.s).toLowerCase();
+        let sc = cited.has(x.id) ? 100 : 0;
+        for (const w of terms) { if (hay.indexOf(w) >= 0) { sc += 3; } }
+        for (const o of others) { if (hay.indexOf(o) >= 0) { sc += 5; } }
+        return { x: x, sc: sc, i: i };
+      }).sort(function (p, q) { return q.sc - p.sc || p.i - q.i; }).slice(0, per);
+      sources.push('traditions/' + e + '/prs_triplets.md');
+      out.push('PRS TRIPLETS -- ' + name(e) + ' (traditions/' + e + '/prs_triplets.md; ' + scored.length + ' of ' + T[e].prs.length +
+        (scored[0] && scored[0].sc ? ', most relevant first' : ', no term match -- first in file') + '):\n' + scored.map(function (o) {
+        const x = o.x;
+        return '- ' + x.id + (x.label ? ' ' + x.label : '') + ' | Problem: ' + x.p + ' | Resource: ' + x.r + ' | Solution: ' + x.s + (x.c ? ' (' + x.c + ')' : '');
+      }).join('\n'));
+    }
+    return { entities: g.entities, sources: Array.from(new Set(sources)), facts: facts, text: out.join('\n\n') };
+  }
+
+  // THE LOOP. deps: state() -> string; run(cmd) -> {ok, spoken, verify?};
+  // ask({system,user}) -> Promise<{text, model?}>; verbs, knowledge strings.
+  // Round 1 plans; later rounds see every result and either correct or answer.
+  // The last round may only answer. Failures of the final executed round are
+  // returned as `failed`, so the caller shows them whatever the model writes.
+  async function runPlan(request, deps) {
+    const maxRounds = deps.maxRounds || 3;
+    const trace = [], trimmed = [];
+    let results = [], model = '', answer = '', calls = 0, assumed = '', ask = '', notRun = [];
+    for (let round = 1; round <= maxRounds; round++) {
+      const lastRound = round === maxRounds;
+      // A caller that gave up on this run (the voice tool's deadline) sets cancelled(); a late
+      // planner must not keep changing the view after the user was told it failed.
+      if (deps.cancelled && deps.cancelled()) { return { ok: false, error: 'cancelled: the caller stopped waiting', trace: trace, calls: calls, model: model, failed: [], not_run: notRun }; }
+      const prompt = fitPlanPrompt({ request: request, hint: deps.hint, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
+                                     results: results, round: round - 1, lastRound: lastRound && round > 1 }, deps.maxPromptChars || PLAN_PROMPT_MAX, trimmed);
+      if (!prompt) { return { ok: false, error: 'the request is too large to send even after trimming', trace: trace, calls: calls, model: model, failed: [], trimmed: trimmed }; }
+      const reply = await deps.ask(prompt);
+      calls++;
+      if (reply && reply.model) { model = reply.model; }
+      const plan = parsePlan(reply && reply.text);
+      if (!plan.ok) { return { ok: false, error: plan.error, trace: trace, calls: calls, model: model, failed: [] }; }
+      // The latest round's reading and question win: the last round saw the results.
+      if (plan.assumed) { assumed = plan.assumed; }
+      if (plan.ask) { ask = plan.ask; }
+      for (const d of plan.dropped) { trace.push({ round: round, cmd: d, ok: false, spoken: 'not run (not allowed from the planner)', problems: [] }); }
+      // D4: the last round may only answer. Commands it asked for are NOT run, and must be
+      // reported, or the model's prose can say they happened.
+      if (lastRound && plan.commands.length) { notRun = plan.commands.slice(); }
+      if (!plan.commands.length || lastRound) { answer = plan.answer; break; }
+      results = [];
+      for (const cmd of plan.commands) {
+        if (deps.cancelled && deps.cancelled()) { return { ok: false, error: 'cancelled: the caller stopped waiting', trace: trace, calls: calls, model: model, failed: [], not_run: notRun }; }
+        let r;
+        // A command may finish later (`plot` loads its panel first): its result
+        // carries `pending`, and the verified outcome is what the model sees.
+        try { r = (await deps.run(cmd)) || {}; if (r.pending) { r = (await r.pending) || r; } }
+        catch (e) { r = { ok: false, spoken: 'error: ' + ((e && e.message) || e) }; }
+        const problems = (r.verify && !r.verify.ok) ? (r.verify.problems || []) : [];
+        const row = { round: round, cmd: cmd, ok: r.ok !== false, spoken: r.spoken || '', problems: problems };
+        // `summarize` hands back TEXT; without it the model answers "I was not given the article".
+        if (typeof r.text === 'string' && r.text) { row.text = r.text.slice(0, PLAN_TEXT_MAX); }
+        trace.push(row); results.push(row);
+      }
+    }
+    const lastRoundNo = trace.length ? trace[trace.length - 1].round : 0;
+    const failed = trace.filter(function (t) { return t.round === lastRoundNo && (!t.ok || t.problems.length); });
+    return { ok: true, answer: answer, assumed: assumed, ask: ask, trace: trace, calls: calls, model: model, failed: failed, not_run: notRun, trimmed: trimmed };
+  }
+
+  // ---- PLAN MEMORY (step 4, 2026-09-29): learn from verified runs ----------
+  // The broker keeps (scrubbed request, tab, command list) for every planner run
+  // whose every step passed the shell's read-back check -- visitors' included,
+  // by Tom's decision -- and never the model's prose. Recall hands the planner up
+  // to three similar verified plans as EXAMPLES. A remembered plan REPLAYS with
+  // no model call only when it is a view request (not a question), its request
+  // matches exactly after normalizing, and it has verified on at least
+  // PLAN_REPLAY_DEVICES distinct devices -- so one visitor cannot teach it alone.
+  const PLAN_REPLAY_DEVICES = 2;
+  const PLAN_REQ_MAX_CHARS = 300;
+  // IDENTICAL to the broker's normRequest (.private/supabase/functions/cc-broker/
+  // index.ts); scripts/test_voice_ccl.cjs compares the two chains line by line.
+  function normRequest(s) {
+    return String(s || "").toLowerCase()
+      .replace(/[^\s@]+@[^\s@]+\.[^\s@]+/g, " email ")
+      .replace(/\b(?:https?:\/\/|www\.)\S+/g, " link ")
+      .replace(/\b(\d{4})-(\d{2})(?:-(\d{2}))?\b/g, (m) => m.replace(/-/g, "\u0001"))   // keep dates
+      .replace(/\d(?:[\s().-]?\d){6,}/g, " number ")                                    // 7+ digits
+      .replace(/\u0001/g, "-")
+      .replace(/[^a-z0-9:~+\-' ]+/g, " ")
+      .replace(/\s+/g, " ").trim().slice(0, PLAN_REQ_MAX_CHARS);
+  }
+  // Which runs may be remembered: the planner answered, commands ran, and
+  // NOTHING in the final round failed or was flagged. Returns the full ordered
+  // command list (earlier rounds included: the verified end state is where the
+  // whole sequence led) or null.
+  function storablePlan(res) {
+    if (!res || !res.ok || !Array.isArray(res.trace) || !res.trace.length) { return null; }
+    if (res.failed && res.failed.length) { return null; }
+    // A run that ended in a question rested on an unconfirmed reading: do not teach it.
+    if (res.ask) { return null; }
+    const ran = res.trace.filter(function (t) { return !/^not run/.test(t.spoken || ''); });
+    if (!ran.length || ran.length > 12) { return null; }
+    const last = ran[ran.length - 1].round;
+    if (ran.some(function (t) { return t.round === last && (!t.ok || (t.problems && t.problems.length)); })) { return null; }
+    return ran.map(function (t) { return t.cmd; });
+  }
+  const PLAN_QUESTION_RE = /\?|^\s*(what|which|who|whom|why|how|when|where|is|are|does|do|did|can|could|should|would|will|tell|explain|describe|compare|summari[sz]e)\b/i;
+  // A remembered plan that may run with NO model call, or null.
+  function replayPlan(request, recall) {
+    if (!recall || !Array.isArray(recall.plans) || PLAN_QUESTION_RE.test(String(request || ''))) { return null; }
+    const norm = normRequest(request);
+    const hit = recall.plans.filter(function (p) { return p && p.request === norm && (p.devices || 0) >= PLAN_REPLAY_DEVICES; })[0];
+    if (!hit || !Array.isArray(hit.commands) || !hit.commands.length) { return null; }
+    // Replayed commands obey the planner's own limits.
+    const cmds = hit.commands.map(function (c) { return String(c || '').replace(/\s+/g, ' ').trim(); }).filter(Boolean);
+    if (cmds.some(function (c) { return PLAN_DENY.has(c.split(' ')[0].toLowerCase()); })) { return null; }
+    return { commands: cmds, devices: hit.devices };
+  }
+  function planExamplesText(recall) {
+    const plans = (recall && Array.isArray(recall.plans)) ? recall.plans.slice(0, 3) : [];
+    if (!plans.length) { return ''; }
+    return 'VERIFIED PLANS FROM EARLIER SESSIONS (similar requests on this view; every step passed the read-back check. Examples of CCL use only -- the view now may differ, so plan for THIS request):\n' +
+      plans.map(function (p) { return '- "' + p.request + '" -> ' + (p.commands || []).join(' ; '); }).join('\n');
+  }
+
+  // ---- FACET TERMS (step 2, 2026-09-29): cut by the model's own structure ----
+  // A cut term may name a FACET instead of text to search for:
+  //   thinker:levin  group:synthesis  kind:signal  strength:strong
+  //   month:2026-08  since:2026-08  until:2026-07
+  //   between levin and friston  (or pair:levin~friston; a side may be group:x)
+  // and '+' joins facets inside ONE term (thinker:levin+strength:strong = AND),
+  // so a term composes with also/except/within exactly like a search does.
+  // Returns null when the term is not a facet -- then it is an ordinary search,
+  // untouched -- or {facets:[...]} / {error}. Evaluated in the tab by the SAME
+  // attribution rule its charts draw with (C2A2Plot.facetIds).
+  const FACET_KEYS = { thinker: 'thinker', t: 'thinker', group: 'group', g: 'group', kind: 'kind', edge: 'kind', edges: 'kind',
+    strength: 'strength', month: 'month', since: 'since', from: 'since', until: 'until', to: 'until', pair: 'pair' };
+  // NEIGHBOURS (2026-09-29): `neighbors:<term>` = every node with an edge to any
+  // node the inner term selects (one hop, any edge kind; a seed node appears only
+  // if another seed node is linked to it). The inner term is anything a cut term
+  // can be -- a search word, a facet, `between a and b`. It composes like any
+  // term: `neighbors:thinker:levin within group:summa` = the Summa nodes Levin's
+  // nodes link to. Returns the inner term text, or null when this is not one.
+  const NEIGHBOR_RE = /^neighbou?rs?\s*:\s*(.+)$/i;
+  function parseNeighbors(text) {
+    const m = NEIGHBOR_RE.exec(String(text || '').trim());
+    return m ? m[1].trim() : null;
+  }
+  function parseFacet(text) {
+    const s = String(text || '').trim().toLowerCase();
+    const btw = /^between\s+(\S+(?:\s+\S+)?)\s+and\s+(\S+(?:\s+\S+)?)$/.exec(s);
+    if (btw) { return { facets: [{ facet: 'pair', a: btw[1].trim(), b: btw[2].trim() }] }; }
+    if (!/^[a-z]+:/.test(s) || /\s/.test(s)) { return null; }
+    const parts = s.split('+'), facets = [];
+    for (const part of parts) {
+      const m = /^([a-z]+):(.*)$/.exec(part);
+      if (!m || !FACET_KEYS[m[1]]) { return facets.length ? { error: '"' + part + '" is not a facet (use thinker:, group:, kind:, strength:, month:, since:, until:, pair:)' } : null; }
+      const key = FACET_KEYS[m[1]], val = m[2].trim();
+      if (!val) { return { error: key + ': needs a value' }; }
+      if ((key === 'month' || key === 'since' || key === 'until') && !/^\d{4}-\d{2}$/.test(val)) { return { error: key + ':' + val + ' needs a month like 2026-08' }; }
+      if (key === 'pair') {
+        const ab = val.split('~');
+        if (ab.length !== 2 || !ab[0] || !ab[1]) { return { error: 'pair: needs two sides, like pair:levin~friston' }; }
+        facets.push({ facet: 'pair', a: ab[0], b: ab[1] }); continue;
+      }
+      facets.push({ facet: key, value: val });
+    }
+    return { facets: facets };
+  }
+
+  // ---- PLOT (step 1 of the 2026-09-28 plan: plots join the shell's state) ----
+  //
+  // `plot <words>` -> a PATCH to the plots panel's spec (lib/c2a2-plots.js,
+  // C2A2Plot.get/set). Words are order-free: a plot type, `by thinker|group`,
+  // `corpus|page`, `inside|touching`, `from|since <month>`, `to|until <month>`,
+  // and lists after `edges` / `nodes` / `strength` (or key=a,b). `all <list>`
+  // restores a list; `plot off` hides the panel; `plot reset` = defaults.
+  // Every word must be understood or NOTHING changes: a half-applied plot is a
+  // plot nobody asked for. `dims` = what the live panel offers:
+  // {plots, kinds, groups, strengths, months}. Pure -- tested in node.
+  const PLOT_TYPE_WORDS = {
+    lego: ['lego', '3d', 'towers'], heatmap: ['heatmap', 'heat map', 'matrix', 'grid'],
+    totals: ['totals', 'total', 'bars', 'bar', 'bar chart', 'ranking'],
+    timeline: ['timeline', 'over time', 'monthly', 'trend'],
+    strength: ['strength mix', 'strengths mix', 'mix'],
+    sankey: ['sankey', 'flows', 'flow']
+  };
+  const PLOT_LIST_KEYS = { edges: 'kinds', edge: 'kinds', kinds: 'kinds', kind: 'kinds', nodes: 'groups', node: 'groups',
+    groups: 'groups', strength: 'strengths', strengths: 'strengths', signals: 'strengths' };
+  const MONTH_NAMES = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+  const PLOT_FILLER = new Set(['a', 'an', 'the', 'of', 'me', 'show', 'please', 'plot', 'chart', 'with', 'and', 'in', 'as', 'for', 'only', 'on']);
+  const PLOT_DEFAULTS = { plot: 'lego', axis: 'thinker', scope: 'page', cut: 'touching', from: '', to: '' };
+
+  function plotMonth(words, i, months) {
+    const w = words[i] || '';
+    const m = /^(\d{4})-(\d{2})(?:-\d{2})?$/.exec(w);
+    if (m) { return { v: m[1] + '-' + m[2], used: 1 }; }
+    const mi = w.length >= 3 ? MONTH_NAMES.findIndex(function (n) { return n.indexOf(w) === 0; }) : -1;
+    if (mi < 0) { return null; }
+    const mm = String(mi + 1).padStart(2, '0');
+    if (/^\d{4}$/.test(words[i + 1] || '')) { return { v: words[i + 1] + '-' + mm, used: 2 }; }
+    // No year given: the most recent month of that name the data holds.
+    const hit = (months || []).filter(function (x) { return x.slice(5) === mm; }).sort().pop();
+    return hit ? { v: hit, used: 1 } : { v: null, used: 1, why: w + ' (the data holds no ' + MONTH_NAMES[mi] + ')' };
+  }
+  function plotResolveList(term, pool, exactOnly) {
+    const t = low(term);
+    const ts = t.replace(/s$/, '');
+    if (!t) { return null; }
+    const exact = pool.filter(function (p) {
+      const l = low(p), b = l.replace(/^layer:/, '');
+      return l === t || l === ts || b === t || b === ts || leaf(l) === t || leaf(l) === ts;
+    });
+    if (exact.length || exactOnly) { return exact.length ? exact : null; }
+    const part = pool.filter(function (p) { return ts.length >= 3 && low(p).indexOf(ts) !== -1; });
+    return part.length ? part : null;
+  }
+  function parsePlotSpec(text, dims) {
+    dims = dims || {};
+    let s = ' ' + low(text).replace(/[=,;]/g, ' ').replace(/\s+/g, ' ') + ' ';
+    const problems = [], patch = {};
+    if (/^\s*(off|close|hide)\s*$/.test(s)) { return { ok: true, off: true, patch: {}, problems: [] }; }
+    if (/^\s*reset\s*$/.test(s)) {
+      return { ok: true, reset: true, problems: [], patch: Object.assign({}, PLOT_DEFAULTS, {
+        kinds: (dims.kinds || []).slice(), groups: (dims.groups || []).slice(), strengths: (dims.strengths || []).slice() }) };
+    }
+    // multi-word phrases collapse to one token before the scan
+    const phrases = [['whole corpus', 'corpus'], ['this view', 'page'], ['node groups', 'group'], ['node group', 'group']];
+    Object.keys(PLOT_TYPE_WORDS).forEach(function (k) {
+      PLOT_TYPE_WORDS[k].forEach(function (w) { if (w.indexOf(' ') > 0) { phrases.push([w, '@type:' + k]); } });
+    });
+    phrases.sort(function (a, b) { return b[0].length - a[0].length; })
+      .forEach(function (p) { s = s.split(' ' + p[0] + ' ').join(' ' + p[1] + ' '); });
+    const words = s.trim() ? s.trim().split(' ') : [];
+    const typeOf = {};
+    Object.keys(PLOT_TYPE_WORDS).forEach(function (k) { PLOT_TYPE_WORDS[k].forEach(function (w) { typeOf[w] = k; }); });
+    let listKey = null;
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i];
+      if (w.indexOf('@type:') === 0) { patch.plot = w.slice(6); listKey = null; continue; }
+      // Inside a list, a word that EXACTLY names one of its items stays in it:
+      // "edges flow signals" means the flow layer and the signal
+      // kind -- not the Sankey plot, and not a switch to the strengths list.
+      const inList = listKey ? plotResolveList(w, dims[listKey] || [], true) : null;
+      if (inList) { inList.forEach(function (h) { if (patch[listKey].indexOf(h) < 0) { patch[listKey].push(h); } }); continue; }
+      if (typeOf[w]) { patch.plot = typeOf[w]; listKey = null; continue; }
+      if (w === 'by') {
+        const a = words[++i] || '';
+        if (/^(thinker|thinkers|tradition|traditions)$/.test(a)) { patch.axis = 'thinker'; }
+        else if (/^(group|groups)$/.test(a)) { patch.axis = 'group'; }
+        else { problems.push('by ' + (a || '?') + ' (say "by thinker" or "by group")'); }
+        listKey = null; continue;
+      }
+      if (w === 'corpus' || w === 'everything') { patch.scope = 'corpus'; listKey = null; continue; }
+      if (w === 'page' || w === 'view') { patch.scope = 'page'; listKey = null; continue; }
+      if (w === 'inside' || w === 'touching') { patch.cut = w; listKey = null; continue; }
+      if (w === 'from' || w === 'since' || w === 'to' || w === 'until') {
+        const r = plotMonth(words, i + 1, dims.months);
+        if (!r) { problems.push(w + ' ' + (words[i + 1] || '?') + ' (a month: 2026-08 or "august")'); i++; continue; }
+        i += r.used;
+        if (!r.v) { problems.push(r.why); continue; }
+        patch[(w === 'from' || w === 'since') ? 'from' : 'to'] = r.v; listKey = null; continue;
+      }
+      if (w === 'all' && PLOT_LIST_KEYS[words[i + 1]]) {
+        const k = PLOT_LIST_KEYS[words[++i]]; patch[k] = (dims[k] || []).slice(); listKey = null; continue;
+      }
+      if (PLOT_LIST_KEYS[w]) { listKey = PLOT_LIST_KEYS[w]; if (!patch[listKey]) { patch[listKey] = []; } continue; }
+      if (listKey) {
+        const hit = plotResolveList(w, dims[listKey] || []);
+        if (hit) { hit.forEach(function (h) { if (patch[listKey].indexOf(h) < 0) { patch[listKey].push(h); } }); continue; }
+        if (PLOT_FILLER.has(w)) { continue; }
+        problems.push(w + ' (not one of the ' + listKey + ' here)'); continue;
+      }
+      if (PLOT_FILLER.has(w)) { continue; }
+      problems.push(w);
+    }
+    // "plot strength" / "plot signals" with nothing after = the strength-mix plot
+    if (patch.strengths && !patch.strengths.length && !patch.plot) { delete patch.strengths; patch.plot = 'strength'; }
+    ['kinds', 'groups', 'strengths'].forEach(function (k) {
+      if (patch[k] && !patch[k].length) { problems.push(k + ' named but none given'); }
+    });
+    if (patch.from && patch.to && patch.from > patch.to) { problems.push('from ' + patch.from + ' is after to ' + patch.to); }
+    if (patch.plot && dims.plots && dims.plots.indexOf(patch.plot) < 0) { problems.push(patch.plot + ' is not a plot this panel draws'); }
+    return problems.length ? { ok: false, problems: problems, patch: patch } : { ok: true, patch: patch, problems: [] };
+  }
+  // Read-back check: did the panel HOLD what was asked? Lists compare as sets.
+  function verifyPlot(patch, got) {
+    if (!got) { return { ok: false, problems: ['the plots panel did not answer'] }; }
+    const problems = [];
+    Object.keys(patch || {}).forEach(function (k) {
+      const a = patch[k], b = got[k];
+      const same = Array.isArray(a)
+        ? (Array.isArray(b) && a.length === b.length && a.every(function (x) { return b.indexOf(x) >= 0; }))
+        : a === b;
+      if (!same) { problems.push(k + ': asked ' + JSON.stringify(a) + ', panel holds ' + JSON.stringify(b)); }
+    });
+    return { ok: !problems.length, problems: problems };
+  }
+  // One line a listener can follow; a list is named only when it is narrowed.
+  function describePlot(spec, dims) {
+    if (!spec) { return 'plots closed'; }
+    dims = dims || {};
+    const parts = [spec.plot + ' by ' + spec.axis,
+      spec.scope === 'corpus' ? 'whole corpus' : ('this view' + (spec.cut === 'inside' ? ' (inside the cut)' : ''))];
+    [['kinds', 'edges'], ['groups', 'nodes'], ['strengths', 'signals']].forEach(function (kv) {
+      const v = spec[kv[0]] || [], all = dims[kv[0]] || [];
+      if (all.length && v.length < all.length) { parts.push(kv[1] + ': ' + (v.length <= 4 ? v.join(', ') : v.length + ' of ' + all.length)); }
+    });
+    if (spec.from || spec.to) { parts.push((spec.from || 'start') + ' to ' + (spec.to || 'now')); }
+    return parts.join(' | ');
+  }
+
   return {
     VERSION: VERSION,
     compileGrammar: compileGrammar,
+    parsePlotSpec: parsePlotSpec,
+    parseFacet: parseFacet,
+    parseNeighbors: parseNeighbors,
+    normRequest: normRequest,
+    storablePlan: storablePlan,
+    replayPlan: replayPlan,
+    planExamplesText: planExamplesText,
+    fitPlanPrompt: fitPlanPrompt,
+    verifyPlot: verifyPlot,
+    describePlot: describePlot,
+    PLOT_DEFAULTS: PLOT_DEFAULTS,
     parse: parse,
     normalize: normalize,
     resolveGroups: resolveGroups,
@@ -884,6 +1564,19 @@
     auditGestures: auditGestures,
     createJournal: createJournal,
     plan: plan,
+    parseCutExpr: parseCutExpr,
+    composeCut: composeCut,
+    cutStepProblems: cutStepProblems,
+    describeCutSteps: describeCutSteps,
+    verifyDrawn: verifyDrawn,
+    verifyFilters: verifyFilters,
+    routeRequest: routeRequest,
+    verbLines: verbLines,
+    buildPlanPrompt: buildPlanPrompt,
+    parsePlan: parsePlan,
+    runPlan: runPlan,
+    groundEntities: groundEntities,
+    buildGrounding: buildGrounding,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,
     SHELL_CAPS: SHELL_CAPS,
   };

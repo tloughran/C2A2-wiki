@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-034 - Formless Matter - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-06T12:26:01"
+last_qc_at: "2026-09-26T12:34:12"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/034, pars/I]
@@ -26,7 +26,7 @@ tags: [summa, day/034, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 34 of 308.
 > Summa reference: *Prima Pars, Q.65 + Q.66*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSu year\b -> Summa in a Year; \bSuma\b -> Summa; \bWarner Heisenberg\b -> Werner Heisenberg; \baqu(in)?us\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSu year\b -> Summa in a Year; \bSuma\b -> Summa; \bWarner Heisenberg\b -> Werner Heisenberg; \baqu(in)?us\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \bquanus\b -> Aquinas; \btheologia\b -> Theologiae. Section headers and Notes were added by the structural pass (see render_pass); prose is preserved verbatim from the original auto-render and paragraph breaks remain heuristic (sparse terminal punctuation — the fidelity-check content-audit sentence sampler cannot run on this file; article coverage and length sanity are unaffected and pass).
 
 ## Transcript
 

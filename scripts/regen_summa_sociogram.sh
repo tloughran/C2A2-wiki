@@ -4,6 +4,12 @@
 # Pattern mirrors regen_prs_connectome.sh: reindex -> extract(--summa) ->
 # generate -> validate -> overwrite ONLY on PASS. No git (publish is manual).
 # Usage: regen_summa_sociogram.sh <RCK_REPO_ROOT> <SUMMA_VAULT_ROOT>
+#
+# ON THE MAC, USE wiki/c2a2-wiki-narration/regen_sociogram.sh INSTEAD. That is the
+# supported wrapper: it hardcodes the Mac paths and carries the substrate-skip delta
+# guard, which this script does NOT have. This script exists only because the
+# summa-2026-daily-batch scheduled task runs in a sandbox whose mount paths are not
+# the Mac's, so it needs the two roots passed in as arguments.
 set -uo pipefail
 
 RCK="${1:?need RCK repo root}"
@@ -18,12 +24,17 @@ SCRIPTS="$(dirname "$EXTRACT")"
 echo "scripts dir: $SCRIPTS"
 
 # 1) Reindex the Summa article index (summa_index.json + index_summary.md) in place.
-if [ -f "$SUMMA/refs/build_index.py" ]; then
-  echo "reindexing Summa article index ..."
-  python3 "$SUMMA/refs/build_index.py" --vault "$SUMMA" || { echo "FAIL: build_index"; exit 1; }
-else
-  echo "WARN: $SUMMA/refs/build_index.py not found — skipping article reindex"
+# A missing build_index.py means SUMMA is not the vault root. Warning and carrying
+# on hides that until step 5 dies with the opaque "0 Summa nodes"; fail here instead,
+# naming the likely cause (the root is the /vault level, one deeper than the project).
+if [ ! -f "$SUMMA/refs/build_index.py" ]; then
+  echo "FAIL: $SUMMA/refs/build_index.py not found — SUMMA is not the Summa vault root."
+  echo "      The vault root is the level containing refs/, build_index.py and"
+  echo "      summa_index.json. Did you mean $SUMMA/vault ?"
+  exit 1
 fi
+echo "reindexing Summa article index ..."
+python3 "$SUMMA/refs/build_index.py" --vault "$SUMMA" || { echo "FAIL: build_index"; exit 1; }
 
 # Count current Summa synthesis nodes in the live file (for the delta).
 OLD=$(grep -o "Contemporary commentary on Summa Question" "$TARGET" 2>/dev/null | wc -l | tr -d ' ')
@@ -34,9 +45,19 @@ python3 "$SCRIPTS/extract_vault_data.py" "$WIKI" --summa "$SUMMA" > /tmp/summa_v
   || { echo "FAIL: extract"; exit 1; }
 
 # 3) Generate to a TEMP file (never clobber the live file before validation).
+# The third positional is the agent-activity layer. Omitting it builds with
+# agent_data: false — dropping every actor node and its substrate edges — and
+# leaves substrate_skipped unset, so the delta guard has nothing to read.
+AGENTS="$WIKI/agents/openstory/agent_node_edges.json"
 echo "generating ..."
-python3 "$SCRIPTS/generate_visualization.py" /tmp/summa_vault_data.json /tmp/wiki_narration.new.html \
-  || { echo "FAIL: generate"; exit 1; }
+if [ -f "$AGENTS" ]; then
+  python3 "$SCRIPTS/generate_visualization.py" /tmp/summa_vault_data.json /tmp/wiki_narration.new.html "$AGENTS" \
+    || { echo "FAIL: generate"; exit 1; }
+else
+  echo "WARN: $AGENTS missing — building WITHOUT the agent-activity layer"
+  python3 "$SCRIPTS/generate_visualization.py" /tmp/summa_vault_data.json /tmp/wiki_narration.new.html \
+    || { echo "FAIL: generate"; exit 1; }
+fi
 
 # 4) Validate.
 echo "validating ..."

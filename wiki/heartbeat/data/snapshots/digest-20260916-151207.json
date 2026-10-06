@@ -1,0 +1,142 @@
+{
+  "seed": false,
+  "generated": "2026-09-16",
+  "generated_at": "2026-09-16T15:12:07Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 228,
+    "high_relevance": 5,
+    "primary_themes": "Capability Jump + Misuse Security"
+  },
+  "signals": [
+    {
+      "title": "Artificial intelligence and biosecurity: capabilities, threat pathways, and defense-in-depth governance",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.16213",
+      "relevance": 3,
+      "tags": [
+        "capability_jump",
+        "misuse_security",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Artificial intelligence is reshaping biological research across an increasingly connected digital-to-physical workflow. General-purpose large language models can retrieve and integrate scientific information, support experimental planning, and computational analysis; biological foundation models can predict, optimize, and generate proteins, genes, and genome-scale sequences; agentic systems can coordinate multistep research tasks; automated laboratories can partially close the design-build-test-learn cycle.",
+      "implication": "Reassess role boundaries and human override for community deployments. Prioritize provenance checks and misinformation/abuse response protocols. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.233426+00:00"
+    },
+    {
+      "title": "Spurious Tool Use: When RL Agents Learn the Wrong Reason to Act",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.16268",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Large language model (LLM) agents increasingly interleave natural language reasoning with external tools such as web search and code execution. These tool-use policies are often optimized via reinforcement learning (RL), which can amplify spurious correlations in the training data.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.544861+00:00"
+    },
+    {
+      "title": "NepKANUN: A RAG-Based Nepali Legal Assistant",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.15999",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Accessing legal information in Nepal is difficult due to complex terminology, limited resources, and misinformation. We introduce an AI-powered legal assistant that is tailored for Nepali legal texts and is built on a fine-tuned large language model.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.517719+00:00"
+    },
+    {
+      "title": "Pseudo-Label Augmentation for Affect Sensing in Small Collaborative Groups",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.16077",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Physiological affect sensing in naturalistic group interaction is often limited by sparse labels rather than sensor data: wearable devices produce many time windows, while self-reports are collected only a few times per session. Using GroupAffect-4, a four-person collaborative dataset with wearable physiology, eye tracking, Big Five personality, and post-task VAD labels, we study pseudo-label augmentation for affect sensing under sparse supervision.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.356502+00:00"
+    },
+    {
+      "title": "Toward Governance-Aware Autonomous GIS: A Narrative Review of Ethical and Privacy Risks in LLM-Enabled GeoAI",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.16232",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Geospatial artificial intelligence (GeoAI) powered by large language models (LLMs) is expanding the capacity to query, generate, and interpret spatial information through natural-language interfaces and agentic autonomous GIS workflows. This capability creates governance challenges that general AI ethics discussions do not fully capture, including passive location inference from mobility traces, spatially structured bias amplification driven by spatial autocorrelation and scale effects, hallucinated spatial facts, and uncertainty compounding across multimodal geospatial inputs.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.238171+00:00"
+    },
+    {
+      "title": "After warning AI is too dangerous, Bill Gates bets a billion on its upside",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/after-warning-ai-is-too-dangerous-bill-gates-bets-a-billion-on-its-upside/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "The Gates Foundation is investing at least a billion dollars over two years to make AI tools more widely available in health, education, and agriculture. Bill Gates warns that more than 90 percent of the training data behind early language models came from English sources, and that speech recognition fails 60 percent of the time in Yoruba.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 15 Sep 2026 14:26:48 +0000",
+      "first_seen_at": "2026-09-16T15:11:57.964864+00:00"
+    },
+    {
+      "title": "AI labs have a data trust problem that their policies haven't solved",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/ai-labs-have-a-data-trust-problem-that-their-policies-havent-solved/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "OpenAI and Anthropic tell corporate customers their data won't be used for training. But when Anthropic said it would store usage logs from its flagship model Fable for 30 days, Palantir, Nvidia, and Booz Allen Hamilton pulled back from using it for sensitive work.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 15 Sep 2026 17:52:05 +0000",
+      "first_seen_at": "2026-09-16T15:11:57.962763+00:00"
+    },
+    {
+      "title": "RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.16095",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "misuse_security"
+      ],
+      "summary": "Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm for improving the quality of generated contents of Large Language Models (LLMs) by grounding responses in external knowledge, thus reducing hallucinations and factual errors. However, recent studies have highlighted a critical vulnerability: adversaries can exploit the retrieval process to extract personally identifiable information (PII) from the underlying corpus.",
+      "implication": "Reassess role boundaries and human override for community deployments. Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.542648+00:00"
+    },
+    {
+      "title": "Efficient Multimodal Generative Recommendation with Latent Narrative Reasoning",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.16070",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Generative recommendation reformulates item prediction as semantic identifier generation, yet episodic content introduces a fundamentally different setting where the target is determined by narrative evolution rather than user preference. This task requires models to understand multimodal storyline progression while addressing the efficiency challenges caused by redundant visual contexts and costly explicit reasoning generation.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.535626+00:00"
+    },
+    {
+      "title": "State of Thought Enables Endogenous Reasoning",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.16055",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Test-time compute has emerged as a major approach to improving the capabilities of Large Language Models (LLMs). However, existing test-time reasoning paradigms rely heavily on externally imposed control, either through fixed reasoning programs or through costly expansion in constrained search spaces, limiting both generalization and efficiency.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Wed, 16 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-16T15:11:56.531114+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

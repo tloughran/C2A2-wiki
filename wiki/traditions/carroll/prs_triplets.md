@@ -613,4 +613,221 @@ PRS-67:
   Confidence: Speculative
   Evidence: Linda Tullberg's submitted question in the July 2026 AMA, as recorded in PROP-2026-07-24-001's Cross-Tradition Signals section: Carroll is asked for his view on Hoffman's "Trace" mathematics (Markov-chain based, aiming to derive SR and GR en route to a theory of consciousness). **Carroll's answer was not captured** — the proposal records the question and its significance but no audio or transcript of the response, and the same gap is why PRS-61 carries `(ANSWER DIRECTION UNRECORDED)`. Do not cite this as Carroll's assessment of Trace. Filed because the item is a PRS-shaped problem inside Carroll's own programme that the 2026-08-09 ingestion missed: it appeared only in the proposal's cross-tradition section, never as a `PRS-CANDIDATE-`, so it was never eligible for promotion. Pairs with the pending Hoffman Trace proposals (PROP-2026-07-21).
 
-*Total PRS triplets: 67*
+
+PRS-68:
+  Problem: The Turing test settles only input-output indistinguishability, so it cannot decide whether an LLM has rediscovered human cognitive mechanisms or found a different route to human-sounding output. Behavioural anomaly-counting (the strawberry-R case) does not settle it either, in the other direction.
+  Resource: The "cognitive cousin" criterion — test the system against specific effects from cognitive science whose *underlying mechanism* is already understood, rather than tabulating surface similarities and dissimilarities.
+  Solution: Replace the behavioural test with a mechanism-matched one: an LLM counts as a cognitive cousin to the degree it reproduces effects whose human explanation is known, so that a shared effect licenses an inference to a shared mechanism.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Sripada, verbatim: "counting and tabulating at the level of behavioral outputs is probably not gonna get us very far. We need to look mechanistically, and we need to think about which are the mechanisms that we actually care about that are core processing principles for the human mind-brain." Carroll frames the two options explicitly at 0:15:48 — rediscovered mechanisms versus "a wholly new way of sounding human ... an alien kind of intelligence."
+
+PRS-69:
+  Problem: If LLMs are human-like, is that convergence a designed-in resemblance, or does it fall out of something more basic?
+  Resource: Prediction as, in Sripada's phrase, "the mother of all training signals" — the claim that dual-process structure and other cognitive principles previously thought innately specified or evolutionarily contingent are instead *downstream of* prediction, in humans as well as in machines.
+  Solution: A common-cause account of the convergence: both systems are prediction machines, so similar representations, procedural techniques, and modes of inferential organization emerge in both without either copying the other.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Sripada at 0:18:15: "a lot of cognitive principles that we thought were innately specified or due to some sort of contingent evolutionary trajectory, they actually are emergent ... they are downstream of prediction ... at the level of basic core cognitive principles, the LLMs and humans, they identify similar representations, similar procedural techniques."
+
+PRS-70:
+  Problem: What specific empirical findings would count as evidence for mechanism-sharing, as opposed to anecdote?
+  Resource: Three families of pre-registered-by-history cognitive effects, documented in humans decades before LLMs existed: (a) psycholinguistic parsing costs — center-embedding degradation ("A man that a woman that a child knows loves ran"), garden-path sentences ("The horse raced past the barn fell"), similarity-based interference; (b) serial-list memory — primacy, recency, lost-in-the-middle, contiguity, forward temporal asymmetry; (c) visual search — pop-out in disjunctive search versus serial, set-size-proportional search time in conjunctive search.
+  Solution: All three families reproduce in LLMs (visual search in vision-language models), and because the human mechanisms behind them are independently known — incremental parsing that commits early and must backtrack; compositional coding versus feature binding — the shared effects support shared mechanisms rather than coincidence.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Sripada enumerates each effect and states "LLMs exhibit all these effects," then: "The fact that you're seeing these non-obvious patterns of similarities in LLMs and people, especially where we know some of the mechanisms that happened in these effects in cognitive science, they point to similar mechanisms being operative in the LLMs and people."
+
+PRS-71:
+  Problem: Anomalies such as an LLM's inability to count the letter R in "strawberry" have been treated (by Carroll among others) as strong disconfirming evidence for human-like cognition.
+  Resource: A sensory-primitive account of the anomaly: tokens are the model's sensory interface, so sub-token structure is not normally available to it — letter-level manipulation was never a candidate "core processing principle" to begin with.
+  Solution: Reclassify such anomalies as expected consequences of a different sensory channel rather than as evidence against mechanism-sharing, and restrict the evidential weight of behavioural anomalies to principles that cognitive science independently regards as core.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: Medium
+  Evidence: Sripada: "their contact with the 'world' is exclusively textual via these tokens, which essentially serve as kind of sensory primitives ... there's a very natural explanation for why they can't count the number of Rs in strawberry." Marked Medium rather than High because the account is offered as an explanation and not tested against a control in the episode.
+
+PRS-72:
+  Problem: Where does Carroll himself now stand, given that he had publicly used the anomaly evidence to argue LLMs are not thinking as humans do?
+  Resource: Carroll's own stated Bayesian discipline, applied to himself on the record, plus his separation of cognition from consciousness ("Cognition is easier to understand than consciousness").
+  Solution: Carroll revises his credence toward the cognitive-cousin position while explicitly bounding what that does and does not license — not consciousness, not moral agency, but a step in that direction that should be established first.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Carroll, monologue: "this is one of those podcasts that has shifted my credences in important ways ... one should always be a good Bayesian." And, bounding it: "It's not the same as saying that LLMs are conscious or responsible moral agents or anything like that, but this is something we should establish in that direction."
+
+PRS-73:
+  Problem: Science education transmits results but not the practice that produces them, leaving the public without a working model of how scientific claims get made, revised, or abandoned.
+  Resource: Firestein's ignorance/failure pedagogy (Columbia "Ignorance" course; *Ignorance*, *Failure*, *It Could Be Otherwise*), plus Carroll's product-vs-process framing and the art-class/piano-lesson analogy.
+  Solution: Teach the *structure of what is not yet known* as the primary curricular object — organize instruction around live open questions and productive failures rather than around a settled fact inventory.
+  Date Added: 2026-09-02
+  Source: Mindscape 364 — Stuart Firestein on ignorance and failure; PROP-2026-08-23-001
+  Confidence: High
+  Evidence: Carroll, opening monologue: "we sort of teach the product of science and not the process of science… you're given facts. 'F equals MA…' And then you're tested on your knowledge of the facts."
+
+PRS-74:
+  Problem: If ignorance is what drives science, what stops "we don't know" from collapsing into relativism where any hypothesis is as good as any other?
+  Resource: The known-unknowns / unknown-unknowns distinction, applied as a map of the frontier rather than a confession of emptiness.
+  Solution: Ignorance is *structured* — a large body of secure knowledge defines a bounded, navigable space of live possibilities. Carroll's gloss: "Some things don't go, but a lot of things go."
+  Date Added: 2026-09-02
+  Source: Mindscape 364 — Stuart Firestein on ignorance and failure; PROP-2026-08-23-001
+  Confidence: High
+  Evidence: Carroll: "that structured ignorance that we're trying to uncover the facts hidden amongst is what science is all about… It's not like, 'Oh, we don't know anything, anything could happen.'"
+
+PRS-75:
+  Problem: Working scientists are trained inside one discipline's methods and often cannot articulate, or examine, the assumptions that method rests on.
+  Resource: Firestein's own route — a bench neuroscientist (olfaction) who went to Cambridge HPS as a visiting scholar, and who hosted philosopher of science Ann-Sophie Barwich as a four-year postdoc in his lab.
+  Solution: Embed history-and-philosophy-of-science practitioners inside working laboratories, as ordinary lab members rather than external commentators, so that assumption-examination becomes part of the research process.
+  Date Added: 2026-09-02
+  Source: Mindscape 364 — Stuart Firestein on ignorance and failure; PROP-2026-08-23-001
+  Confidence: Medium
+  Evidence: Firestein describes the HPS turn and the Barwich postdoc; Carroll: "it's a credit to you that as a working biologist, neuroscientist, you were welcoming philosophers into your lab."
+
+PRS-76:
+  Problem: How can an observation establish that a given dark, massive object is a black hole in the technical sense — an object with an event horizon — rather than merely something very massive and very dark?
+  Resource: Ringdown spectroscopy and horizon-scale precision measurement, treated as an empirical test of a theoretical concept rather than as a parameter fit within an assumed model.
+  Solution: Reframe "is it a black hole?" as a testable question about deviations from the Einstein prediction near the horizon, so that the concept itself, not just its parameters, is exposed to data.
+  Date Added: 2026-09-02
+  Source: Mindscape 365 — Vitor Cardoso on what makes black holes special; PROP-2026-08-25-030
+  Confidence: High
+  Evidence: Cardoso: "Just this question, how do we test the concept of a black hole, in itself requires a lot of effort... How can we know that we're looking at a black hole other than just saying, 'Oh, it looks very massive and it looks dark?'" (transcript, approx. 0:06:11 and 0:06:33).
+
+PRS-77:
+  Problem: Quantum gravity makes no sharp, falsifiable prediction about what observers should see near a black hole, which leaves the field without an empirical handle on its most fundamental open problem.
+  Resource: The singularity as the diagnostic pressure point — the place where general relativity is known to break down — combined with the argument that whatever resolves singularities should also perturb the near-horizon region.
+  Solution: Direct observational search toward the horizon for departures from Einstein's predictions, on the reasoning that horizon-scale physics is where a singularity-resolving theory would first become visible.
+  Date Added: 2026-09-02
+  Source: Mindscape 365 — Vitor Cardoso on what makes black holes special; PROP-2026-08-25-030
+  Confidence: Medium
+  Evidence: Cardoso: "the most serious problem we face in gravitational physics... is the existence of gravitational singularities... it's a natural expectation that if there's a theory of quantum gravity that's gonna... do away with singularities... it's gonna do something to the region close to the horizon. In fact... there are issues in doing quantum mechanics around the horizon" (transcript, approx. 0:49:13).
+
+PRS-78:
+  Problem: Theoretical physics currently lacks the data-driven discipline that historically forced conceptual revision, risking a field that refines models nothing can contradict.
+  Resource: The stance that physics is and should remain "driven by data and by observations," with increasing measurement precision as the mechanism that generates anomalies.
+  Solution: Treat rising precision in gravitational-wave data as the expected source of the next inconsistency with the paradigm, and hold modelling in reserve until such an inconsistency arrives.
+  Date Added: 2026-09-02
+  Source: Mindscape 365 — Vitor Cardoso on what makes black holes special; PROP-2026-08-25-030
+  Confidence: Medium
+  Evidence: Cardoso: "physics used to be, and I want to think it still is, driven by data and by observations. And so hopefully as precision in data gathering increases, we're gonna find something that's really not consistent with the paradigm. And that's when you and I need to sit down and think how can we model this in a better way" (transcript, approx. 0:48:20).
+
+PRS-79:
+  Problem: Whether living organisms are in some sense fighting the second law of thermodynamics — a framing common in popular and some scientific writing, and one that would make life anomalous with respect to physics.
+  Resource: The free-energy accounting: low-entropy photons arrive from the sun, the organism uses them to maintain structure, organisation and metabolism far from equilibrium, and radiates a much larger number of high-entropy thermal photons.
+  Solution: The framing is exactly backwards. Life does not struggle against the second law; it is a mechanism that **takes advantage** of it, and the entropy books balance in the ordinary direction with room to spare. No new physics is required and life is not anomalous.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: High
+  Evidence: Carroll, in his own voice and unprompted: "my personal reaction is no, that's exactly backwards. Life is taking advantage of the second law of thermodynamics. It's using that free energy from the sun to maintain its equil... Not its equilibrium, its structure, its organization, its metabolism, and so forth." Al-Khalili agrees and supplies the photon accounting. High because it is Carroll's own stated position, verbatim, on a question he raised himself.
+
+PRS-80:
+  Problem: Having deflated "life fights entropy," the symmetric temptation is to inflate in the other direction — to say life exists *in order that* the universe increase its entropy, a maximum-entropy-production teleology that has real currency in origin-of-life and complexity work.
+  Resource: The observation that the second law fixes a direction but not a rate: "There's no law that says it increases as fast as possible."
+  Solution: The strong reading is declined rather than refuted. Carroll states he does not know whether it is true, gives the rate objection as the reason for doubt, and says the question is unfinished. **The Solution is a withheld endorsement, and that is the content** — a tradition-holder refusing a teleological gloss that his own deflationary move had made rhetorically available.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: High
+  Evidence: "sometimes people wanna say in that spirit, life is a way for the universe to increase entropy, right?... I don't know if that's true or not. I mean, I kind of have a feeling like the entropy is gonna increase anyway. There's no law that says it increases as fast as possible. You got to think harder about what life is doing." Al-Khalili adds an independent objection from scale: if life is rare, the universe would be "relying on this tiny planet in this outer suburbs of some galaxy to help it increase its entropy," which "seems a bit wacky." High as a record of Carroll's stated position; the *underlying question* is explicitly open, and this triplet records the refusal, not an answer.
+
+PRS-81:
+  Problem: Where quantum irreversibility comes from, given that Schrödinger evolution is time-symmetric and measurement is not — and whether decoherence or entanglement is the operation that supplies the arrow.
+  Resource: Decoherence defined as entanglement with an environment, plus the observation that entanglement with a *single* qubit is straightforwardly reversible.
+  Solution: Neither entanglement nor decoherence is irreversible in itself. The arrow is statistical-mechanical: "Once you entangle with enough things, you effectively in practice lose the ability to reverse it." Quantum irreversibility is therefore the same kind of fact as classical thermodynamic irreversibility, not an additional one — which is what poetic naturalism requires if the quantum arrow is not to be a second, independent ingredient.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: High
+  Evidence: Al-Khalili poses it directly — "would you say that entanglement of a system with something else is itself an irreversible process?" Carroll: "If you just want to entangle with one qubit, you can easily reverse that... So I think it's exactly thermodynamics or stat mech at work. Once you entangle with enough things, you effectively in practice lose the ability to reverse it." Earlier in the same exchange: "I like to just define decoherence as entanglement with an environment. And once you agree on what the environment is, which is a tricky thing, I admit, but that is what counts as decoherence for me."
+
+PRS-82:
+  Problem: Whether time's directionality is derived or primitive. The standard programme, which Carroll has spent two books on, derives the arrow from time-symmetric fundamental laws plus a low-entropy past hypothesis.
+  Resource: Al-Khalili's contrary position, stated in Carroll's own venue with Carroll present: irreversibility is the more fundamental fact, and time-symmetric laws are an artefact of idealisation.
+  Solution: **No solution — this is a recorded, unresolved disagreement between the tradition-holder and a guest whose competence he affirms.** Al-Khalili: "my view... is that it's the other way around, that time's direction, directionality, irreversibility is more fundamental. And symmetric equations and symmetric laws of physics, I think are just idealizations that aren't giving us the whole picture." Carroll flags it for the audience as a controversy, says "we'll come back to it later," and does not litigate it in the read portion.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: Medium
+  Evidence: Quotations above, verbatim. **Medium, and the reason is a coverage gap, not a source problem: the final third of the transcript was not read, and Carroll said he would return to this.** He may answer it there. Anyone using this triplet should read the closing section first. It is filed rather than withheld because the *existence* of an aired, unresolved disagreement with a competent interlocutor is itself the datum this project collects, and it is attested in the portion that was read.
+
+PRS-83:
+  Problem: Poetic naturalism asserts that higher-level descriptions are real without being fundamental, but the position has been stated mostly in prose and defended conversationally; it has never been given a sustained technical exposition with the mathematics on the page.
+  Resource: A book-length treatment of complexity and emergence in the trilogy's declared format — real equations, high-school-algebra prerequisite, "established knowledge rather than speculation."
+  Solution: Would convert the tradition's central philosophical commitment into an examinable technical claim, at which point rival traditions can engage the machinery rather than the slogan.
+  Date Added: 2026-09-10
+  Source: The Biggest Ideas in the Universe 3: Complexity and Emergence; PROP-2026-09-04-001
+  Confidence: Speculative
+  Evidence: Publisher description: the volume "explores the extraordinary physics which governs complex systems." Trilogy method from Carroll's own site: "This is the real stuff -- equations and all." **No text of Volume 3 was read.**
+
+PRS-84:
+  Problem: Active Question 12 in this wiki asks whether higher-level causal structure is real or bookkeeping when it is manipulable — sharpened by Pigozzi & Levin's report that causal emergence in a pre-replicator medium responds to intervention. Carroll's deflationary account of emergence is the natural opposing position but has no worked statement to test against.
+  Resource: Carroll's own extended account of emergence, if the book delivers criteria rather than description.
+  Solution: Would supply the opposing term the Levin × Carroll tension currently lacks, letting the disagreement be adjudicated rather than merely noted.
+  Date Added: 2026-09-10
+  Source: The Biggest Ideas in the Universe 3: Complexity and Emergence; PROP-2026-09-04-001
+  Confidence: Speculative
+  Evidence: Publisher description names "its profound metaphysical implications." Whether Carroll offers a *criterion* for when a coarse-grained variable earns its keep — the standard set at PRS-53 and partially met by the derived urban-scaling exponent at Active Question 9 — is exactly what the text must be checked for. **Unverified.**
+
+PRS-85:
+  Problem: Carroll's public case for emergence has been made in venues (podcast, lecture, trade book without equations) that rival traditions can dismiss as popularization rather than physics.
+  Resource: The trilogy's stated bridge function — "between popular-science treatments of modern physics and true expert knowledge."
+  Solution: Would remove the popularization objection as an argumentative move against the poetic-naturalist account of emergence, since the account would then exist in a form that carries its own derivations.
+  Date Added: 2026-09-10
+  Source: The Biggest Ideas in the Universe 3: Complexity and Emergence; PROP-2026-09-04-001
+  Confidence: Speculative
+  Evidence: Trilogy framing on Carroll's site. This candidate is about the *epistemic standing* of the tradition's exposition, not about a physical result; it should be dropped if the book turns out to be lighter on mathematics than Volumes 1 and 2. **Unverified.**
+
+PRS-86:
+  Problem: Whether an individual leader is a genuine causal node in history or a label placed on the outcome of structural forces. Diamond's own earlier program (geography, domesticable species, disease ecology) is the strongest available case for the structural reading, which makes his turn to leadership a test of his own framework rather than an extension of it.
+  Resource: A comparative case set spanning four institution types — states, corporations, religions, sports teams — chosen so that the leadership variable can be examined where the structural constraints differ sharply.
+  Solution: (to be confirmed from the transcript) a conditional answer — leaders matter under specifiable circumstances rather than always or never — which converts "do leaders matter?" from a yes/no dispute into a question about which conditions license the higher-level causal description.
+  Date Added: 2026-09-24
+  Source: 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape); PROP-2026-09-11-001
+  Confidence: Speculative
+  Evidence: Episode description: the conversation covers "when presidents and generals, but also CEOs and religious leaders, and sports leaders like coaches, matter, how much they matter, and how much is luck versus design." The conditional structure is in the framing; the content of the conditions is not.
+
+PRS-87:
+  Problem: Poetic naturalism licenses higher-level descriptions that "earn their keep," but the criterion has been operationalized in this wiki only where a quantitative handle exists — urban scaling with a derived exponent (PRS-63), causal emergence with an intervention (Active Question 12). History supplies neither: no derivable exponent, no rerunnable counterfactual.
+  Resource: The luck-versus-design distinction as applied to leadership outcomes — separating a leader who produced an effect from a leader who was present when an effect occurred.
+  Solution: (to be confirmed) a non-quantitative criterion for when a higher-level causal attribution is doing work, of the form "the attribution earns its keep when the outcome is sensitive to the individual's counterfactual absence" — which, if Carroll accepts it, extends the earns-its-keep test into a domain with no intervention and no fitted parameter.
+  Date Added: 2026-09-24
+  Source: 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape); PROP-2026-09-11-001
+  Confidence: Speculative
+  Evidence: The luck/design axis is named in the episode description. Whether Carroll takes it as a criterion, or treats it as a historian's heuristic he would not generalize, is exactly what the transcript would settle. **This is the single highest-value check in this card.**
+
+PRS-88:
+  Problem: Carroll's captured position treats the Core Theory as complete and everything above it as supervenient description. A domain in which reduction is not merely impractical but not even a coherent aspiration tests whether "supervenient but real" is a substantive claim or a placeholder.
+  Resource: Human history as a limiting case — the coarse-graining is many orders of magnitude removed from the substrate, and the number of realizations is one.
+  Solution: (to be confirmed) a statement from Carroll of what poetic naturalism commits him to about historical causation, and whether the single-realization problem is a difficulty for the position or is answered by it.
+  Date Added: 2026-09-24
+  Source: 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape); PROP-2026-09-11-001
+  Confidence: Speculative
+  Evidence: Inferred from Carroll's captured commitments plus the episode's subject matter; no statement of his is verified. Flagged explicitly so this is not promoted on the strength of the inference.
+
+PRS-89:
+  Problem: Fully non-indexical conditioning (FNC) refuses the assumption that you are a typical observer — but then traditional anthropic arguments for a multiverse appear to lose their force, and naive observer-counting produces the presumptuous philosopher problem, an infinite preference for infinitely large universes.
+  Resource: A saturation rule, in a paper in progress with Isaac Wilkins: update priors on the probability that a universe contains *at least one* observer like you, not on how many such observers it contains. Paired with ordinary Bayesian priors over the theories themselves.
+  Solution: Anthropic reasoning survives FNC without the presumptuous conclusion. A larger universe is still preferred over a tiny one, because it has a higher probability of producing at least one observer like you; but the preference saturates, so an infinite universe gains no unbounded advantage. Fine-tuning arguments then do their work through the *priors* on theories — a theory that simply stipulates a small cosmological constant carries a low prior, while a multiverse with a scanned constant carries no fine-tuning penalty at all.
+  Date Added: 2026-09-24
+  Source: AMA | September 2026 (Mindscape Ask Me Anything); PROP-2026-09-15-004
+  Confidence: High
+  Evidence: Verbatim — "we don't update your priors by how many observers are like you. We update our priors by the probability there would be at least one observer like you in this universe," attributed to "the paper that Isaac Wilkins and I are working on ourselves," and explicitly contrasted with "the presumptuous philosopher problem." Transcript at 0:26:32.
+
+PRS-90:
+  Problem: If space, locality, particles and the classical world are to *emerge* from a bare quantum state vector evolving in Hilbert space under a Hamiltonian, does the choice of how to factorize Hilbert space quietly presuppose the classical structure it is meant to produce?
+  Resource: The bare-bones formulation (state vector + Hilbert space + Hamiltonian, nothing else) together with a search over all factorizations, each tested for whether it yields a recognizable emergent classical description.
+  Solution: No classical structure is assumed in the factorization itself — the circularity charge is answered. But the assumption is not eliminated, only moved: something must be assumed about "the appropriateness of the form of the Hamiltonian," since on Carroll's own estimate most Hamiltonians yield no classical description at all. The criterion that picks out classicality-permitting Hamiltonians is named as an open problem.
+  Date Added: 2026-09-24
+  Source: AMA | September 2026 (Mindscape Ask Me Anything); PROP-2026-09-15-004
+  Confidence: High
+  Evidence: Verbatim — "no features of classical structure are assumed in choosing how Hilbert space is divided," followed by "there's some assumption about the appropriateness of the form of the Hamiltonian. There has to be the possibility of a classical world emerging before you go looking for what classical world does emerge. And we're still trying to figure out what is the best way of pinpointing what that criterion actually says." Transcript at 0:47:23.
+
+PRS-91:
+  Problem: Carroll Active Question 3 / 9 / 12 — when does a higher-level description earn its keep? Applied here to the humanities, whose vocabulary (empathy, imagination, humanity) is the hardest case for a deflationary emergence story.
+  Resource: Alexander's claim, from *Signals Across Vast Distances*, that humanistic study produces imaginative extension to other persons, and that democratic functioning depends on that capacity.
+  Solution: Not determined. The card records that the episode is the right genre to put the question to Carroll in the humanities register; it does not claim he answers it.
+  Date Added: 2026-09-24
+  Source: 368 | Elizabeth Alexander on Why Democracy Needs Imagination; PROP-2026-09-22-004
+  Confidence: Speculative
+  Evidence: None heard. Episode page, date 2026-09-21, category Literature, and the published blurb ("how literature and other humanistic studies can help us build empathy ... why that task is crucial to a flourishing democratic society"). No transcript retrieved.
+
+*Total PRS triplets: 91*

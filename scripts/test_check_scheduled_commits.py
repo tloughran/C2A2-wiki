@@ -78,9 +78,19 @@ def main():
     expect("still inside the grace window",
            run({"t": {"enabled": True, "lastRunAt": iso(fresh)}}, None),
            True)
-    expect("disabled is not a failure",
+    # 2026-09-27: "disabled" used to pass, and hid three days of uncommitted output.
+    expect("disabled is a failure (a listed task that is off lands nothing)",
            run({"t": {"enabled": False, "lastRunAt": iso(stale)}}, None),
-           True)
+           False)
+    # Moved to the cloud: the local entry is frozen and disabled; the stamp decides.
+    mig = {"enabled": False, "lastRunAt": iso(now - timedelta(days=3)), "migratedToRemote": {"triggerId": "x"}}
+    mod.remote_stamp = lambda tid: None
+    expect("moved to cloud, no stamp -> cannot confirm a run -> FAIL", run({"t": mig}, None), False)
+    mod.remote_stamp = lambda tid: stale
+    expect("moved to cloud, stamp ran and nothing committed -> FAIL", run({"t": mig}, stale - timedelta(days=1)), False)
+    expect("moved to cloud, stamp ran and it committed -> OK", run({"t": mig}, stale + timedelta(minutes=30)), True)
+    mod.remote_stamp = lambda tid: fresh
+    expect("moved to cloud, stamp inside grace -> OK", run({"t": mig}, None), True)
 
     if FAILURES:
         print(f"\n{len(FAILURES)} case(s) wrong:")

@@ -1,0 +1,135 @@
+{
+  "seed": false,
+  "generated": "2026-09-04",
+  "generated_at": "2026-09-04T14:36:07Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 225,
+    "high_relevance": 4,
+    "primary_themes": "Capability Jump + Market Platform"
+  },
+  "signals": [
+    {
+      "title": "BharatGather: A Culturally-Informed Benchmark Dataset for Misinformation and Fake News Detection in Indian Public Events",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.02895",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Large-scale public events, such as religious festivals, political rallies, and cultural gatherings, are increasingly vulnerable to the rapid dissemination of misinformation, posing substantial risks to public safety and social cohesion. While automated fake news detection has seen significant methodological progress, existing benchmarks frequently fail to capture the socio-cultural nuances and event-specific dynamics characteristic of the Indian context.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.277214+00:00"
+    },
+    {
+      "title": "The Attention Triangle in Audio-Video Models",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.03586",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Audio-video diffusion models rely on cross-modal attention to coordinate text, sound, and visual content, yet this same mechanism can introduce subtle and systematic semantic leakage. We study these models by probing and analyzing the ``attention triangle,'' comprising the three cross-attention edges connecting the text, audio, and video streams, and examine how semantic information is routed across modalities during generation.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.140193+00:00"
+    },
+    {
+      "title": "A Prompt-Engineering Approach to Develop Scalable, Flexible, and Real-Time Hybrid Micro-Level Personalization in a General Purpose AI Teaching Assistant",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2609.03402",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Artificial intelligence (AI) teaching assistants powered by large language models (LLMs) offer scalable educational support but often provide limited personalization. This study presents a prompt-engineering-based framework for personalizing general-purpose LLM/RAG-based AI teaching assistants such as Jill Watson across academic disciplines and courses.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.104956+00:00"
+    },
+    {
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "relevance": 2,
+      "tags": [
+        "market_platform"
+      ],
+      "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 28 Aug 2026 02:00:00 GMT",
+      "first_seen_at": "2026-09-04T14:35:56.724140+00:00"
+    },
+    {
+      "title": "SWIM: Student Writing Simulation via Proficiency-Conditioned Generation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.03215",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Writing proficiency manifests in how students develop content, organize ideas, choose words, and use language. Despite growing interest in LLM-based student simulation, whether LLMs can reproduce such multidimensional variation in extended writing remains largely unexplored.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.313918+00:00"
+    },
+    {
+      "title": "MemoryLACE: Memory Lifecycle-Aware Consolidation and Evidence Retrieval",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.03201",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Long-term LLM agents must preserve information across interactions while distinguishing repeated evidence, historical states, updates, and unresolved contradictions. Existing textual memory systems retrieve semantically relevant memories efficiently but often leave these relationships implicit, whereas richer structured approaches model them through global graphs, hierarchical abstractions, or reflection at greater complexity.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.309602+00:00"
+    },
+    {
+      "title": "Jina-OCR-v1: Efficient Document Parsing with Speculative Decoding and Dense Verifiable Rewards",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.03181",
+      "relevance": 1,
+      "tags": [],
+      "summary": "We present Jina-OCR-v1, an end-to-end document parsing model built to serve on low-budget GPUs. It combines the compressed-vision encoder and the 3B mixture-of-experts decoder of DeepSeek-OCR, which activates about 570M parameters per token, with a FastMTP speculative decoding head that shares a single draft block recursively across K=3 prediction steps.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.307629+00:00"
+    },
+    {
+      "title": "No country for old linguists: LLM-brain alignment underdetermines neural computation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.03160",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Nastase et al. (2026) argue that large language models (LLMs) may illuminate language processing because both rely on distributed, context-sensitive representations shaped by statistical learning.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.305795+00:00"
+    },
+    {
+      "title": "Unifying Conformal Language Tasks with In-Context Ensembles",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.03005",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Many NLP tasks, such as summarization and extractive question answering, reduce to retrieving relevant content from documents under two constraints: coverage, retaining enough pertinent information to achieve some goal, and conciseness, removing as much irrelevant information as possible. Conformal prediction methods have been used to guarantee coverage, and must be optimized for conciseness through design of a score function.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.299523+00:00"
+    },
+    {
+      "title": "Language-encoded network topology enables large language models to reason about complex networks",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.03229",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Networks describe systems in biology and beyond, from protein interactions and social relationships to power grids and citation records. Reasoning about such systems requires understanding their structure: which elements are central, which connections bridge separate communities, and how it changes when elements are removed.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 04 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-04T14:35:58.227902+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

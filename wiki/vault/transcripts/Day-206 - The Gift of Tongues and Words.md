@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-206 - The Gift of Tongues and Words - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/206, pars/II, q/176 q/177]
-last_qc_at: "2026-07-28T16:23:00"
+last_qc_at: "2026-09-08T04:25:48"
 last_qc_outcome: "pass"
 ---
 

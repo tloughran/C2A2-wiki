@@ -1,0 +1,189 @@
+{
+  "seed": false,
+  "generated": "2026-09-20",
+  "generated_at": "2026-09-20T14:22:47Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 148,
+    "high_relevance": 0,
+    "primary_themes": "Misuse Security + Governance Policy"
+  },
+  "signals": [
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvvicy5tnj2e",
+      "relevance": 1,
+      "tags": [],
+      "summary": "And every day there is more Fresh AI Hell. What's worse than polluting the information ecosystem with synthetic text dressed up to look like news?",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "19 Sep 2026 20:07 +0000",
+      "first_seen_at": "2026-09-20T14:22:46.870191+00:00",
+      "long_summary": "Every day, the situation surrounding artificial intelligence worsens, as concerns grow about the impact of synthetic text masquerading as legitimate news on the information ecosystem. This notion highlights the challenges posed by the proliferation of AI-generated content, which can distort public perception and undermine trust in information sources. As synthetic text becomes more prevalent, it raises important questions about the integrity and reliability of news, creating potential pitfalls for both individuals and communities that rely on accurate information. Understanding these developments is crucial for a community aiming to stay informed and critically evaluate the information landscape shaped by AI technologies.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvsvprxqku2o",
+      "relevance": 1,
+      "tags": [],
+      "summary": "I have been yelling since 2021 about how using synthetic text extruding machines for information access is a TERRIBLE IDEA. And yet and yet and yet: they are marketing so heavily that way that people keep falling for it.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "18 Sep 2026 19:29 +0000",
+      "first_seen_at": "2026-09-20T14:22:46.873724+00:00",
+      "long_summary": "Emily M. Bender expresses strong disapproval of using synthetic text generators for accessing information, describing it as a terrible idea. Despite her warnings since 2021, she notes that these machines are heavily marketed, leading people to continue to be misled by them. This matter underscores the importance of critical evaluation and awareness in the community about the implications of relying on artificial intelligence for information, as misleading practices can have significant consequences.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Proactive cyber defense for governments and enterprises",
+      "source": "Google AI Blog",
+      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "relevance": 1,
+      "tags": [
+        "misuse_security"
+      ],
+      "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Wed, 02 Sep 2026 15:40:00 +0000",
+      "first_seen_at": "2026-09-20T14:22:39.033666+00:00",
+      "long_summary": "The Fairwind Program is a limited access initiative designed for governments and trusted partners to utilize Google's cyber defense tools. This program emphasizes proactive measures to enhance cybersecurity capabilities, aiming to strengthen defenses against potential cyber threats. Such initiatives indicate a growing recognition of the importance of collaborative efforts in safeguarding sensitive information and infrastructure. Understanding these developments is crucial for a community engaged in AI, as they highlight the ongoing advancements in cybersecurity that leverage AI technologies.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Wed, 09 Sep 2026 17:00:00 GMT",
+      "first_seen_at": "2026-09-20T14:22:38.113441+00:00",
+      "long_summary": "Paul Christiano has joined the OpenAI Foundation Board and its Safety and Security Committee, where he brings expertise in AI alignment, safety, and standards. This addition highlights the emphasis on governance within AI organizations and the importance of having knowledgeable individuals to guide safety protocols and ethical standards in the development of artificial intelligence. Understanding these governance changes is crucial for a community looking to stay informed about responsible AI practices.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 GMT",
+      "first_seen_at": "2026-09-20T14:22:38.032374+00:00",
+      "long_summary": "Perplexity utilizes GPT-6 Astra for a variety of tasks, including writing communications, changing software, and monitoring production systems. This new approach allows them to check in significantly less often compared to earlier models. Such advancements in AI capabilities indicate a trend toward more autonomous and efficient operations in various fields. Staying informed about these developments is crucial for the community to understand the evolving landscape of AI and its implications for productivity and workflow innovation.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/fyxer",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 14 Sep 2026 12:00:00 GMT",
+      "first_seen_at": "2026-09-20T14:22:38.024709+00:00",
+      "long_summary": "Fyxer has developed an AI executive assistant that organizes inboxes and drafts emails tailored to individual users' voices. The company utilizes OpenAI models, incorporating fine-tuning and memory, while also leveraging real user feedback to improve its service. This approach aims to create a more personalized and trustworthy experience for users, allowing them to manage their communications more effectively. Understanding Fyxer's innovations is significant for a community engaged in AI, as it exemplifies how tailored AI solutions can enhance productivity and foster user trust in technology.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Our framework for reporting model misalignment",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "relevance": 1,
+      "tags": [],
+      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Wed, 16 Sep 2026 17:00:00 GMT",
+      "first_seen_at": "2026-09-20T14:22:38.012851+00:00",
+      "long_summary": "OpenAI has introduced a framework aimed at tracking, investigating, and disclosing instances of model misalignment, which refers to situations where AI behavior deviates from expected norms. Alongside this framework, OpenAI has also published six reports detailing specific instances of unexpected or concerning behavior exhibited by their models. This initiative highlights the importance of transparency in AI development and guides the community in understanding potential pitfalls in AI behavior. Understanding such frameworks is crucial for a community that seeks to stay informed and responsible in the evolving landscape of AI.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvsh5jkwxf2z",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Also available as video on PeerTube: https://peertube.dair-institute.org/w/b8fH3fp2fr3Dpki11tsWfb [contains quote post or other embedded content]",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "18 Sep 2026 15:08 +0000",
+      "first_seen_at": "2026-09-20T14:22:46.886244+00:00",
+      "long_summary": "The provided source text contains a link to a video on PeerTube, but it does not elaborate on its content or context. Thus, the summary emphasizes that this link might present valuable insights or discussions related to AI, depending on the video's focus. The relevance of this mention lies in highlighting the importance of diverse platforms for accessing AI-related educational materials, allowing the community to stay informed on developments in the field.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvsvtjwlyk26",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Everyone is running around talking about fictional \"existential risk\" of \"rogue AI\" systems this week. It's never the \"AI\" doing something though, it's people using janky software in ill-advised ways.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "18 Sep 2026 19:31 +0000",
+      "first_seen_at": "2026-09-20T14:22:46.882445+00:00",
+      "long_summary": "Recent discussions have centered on the fictional concept of \"existential risk\" posed by \"rogue AI\" systems. The focus often overlooks that the real issue lies not in the AI itself, but in the behavior of people misusing flawed software. This highlights the importance of responsible AI usage and understanding the limitations and potential pitfalls of technology. It matters for our community to stay informed about the nuances of AI risks and the human factors involved, as this awareness can enhance our approach to ethical AI deployment.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mvsgzngmrc2s",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Mystery AI Hype Theater 3000, Episode 85: https://www.buzzsprout.com/2126417/episodes/19817583-manifesting-the-end-of-tech-bro-manifestos-2026-09-08 … in which @alexhanna.bsky.social and I sift through the ramblings of billionaires who understand neither the world we live in nor the tech they’re selling.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "18 Sep 2026 15:06 +0000",
+      "first_seen_at": "2026-09-20T14:22:46.876868+00:00",
+      "long_summary": "In Episode 85 of \"Mystery AI Hype Theater 3000,\" Emily M. Bender and Alex Hanna discuss the often misguided perspectives of billionaires on technology and its societal implications. They analyze the disconnect between these individuals and the realities of both the world and the technologies they promote. This conversation highlights the deep-seated misunderstandings that can arise in tech discourse, particularly from influential voices within the industry. Engaging with such critical discussions is important for the community, as it fosters a more nuanced understanding of AI's development and the various viewpoints shaping its trajectory.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-09-20",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}

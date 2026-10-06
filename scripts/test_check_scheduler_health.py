@@ -53,6 +53,9 @@ def iso(dt):
 # 2026-08-04 is a Tuesday; 15:00 local. The Sunday before it is 08-02.
 NOW_LOCAL = datetime(2026, 8, 4, 15, 0, tzinfo=timezone(timedelta(hours=-4)))
 NOW_UTC = NOW_LOCAL.astimezone(timezone.utc)
+# The Sunday-20:00 fire immediately before NOW_LOCAL. Used as the mtime of a log
+# that proves a runs = 0 job did fire.
+LOGGED = datetime(2026, 8, 2, 20, 0, tzinfo=timezone(timedelta(hours=-4)))
 
 
 RUNS_ZERO = ("\tstate = not running\n\truns = 0\n"
@@ -162,6 +165,29 @@ def main():
            mod.verdict_task(task(enabled=False, lastRunAt=iso(
                NOW_UTC - timedelta(days=900))), NOW_LOCAL)[0],
            mod.OK)
+    # 2026-09-27: 31 tasks moved to the cloud read as "OK: disabled" for three days.
+    expect("a task moved to the cloud is not silently OK",
+           mod.verdict_task(task(enabled=False, lastRunAt=iso(NOW_UTC - timedelta(days=3)),
+                                 migratedToRemote={"triggerId": "trig_x"},
+                                 migratedToRemoteAt="2026-09-24T18:35:05Z"), NOW_LOCAL)[0],
+           mod.WARN)
+    # Once check_routine_health.py is writing routine_health.md, a moved task IS
+    # watched -- 32 standing WARNs a morning would bury the real ones. Only then.
+    expect("a moved task is OK while the cloud watcher is fresh",
+           mod.verdict_task(task(enabled=False, migratedToRemote={"triggerId": "trig_x"}),
+                            NOW_LOCAL, cloud_watched=True)[0],
+           mod.OK)
+    with tempfile.TemporaryDirectory() as rh:
+        os.makedirs(os.path.join(rh, "scheduler"))
+        rh_file = os.path.join(rh, mod.ROUTINE_HEALTH_FILE)
+        expect("no routine_health.md: cloud watcher NOT fresh",
+               mod.routine_health_fresh(NOW_UTC, repo=rh), False)
+        for hours, want in ((5, True), (30, False)):
+            open(rh_file, "w").write(
+                (NOW_UTC - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%MZ")
+                + "  cloud routines: 43 checked\n")
+            expect(f"routine_health.md {hours}h old: fresh={want}",
+                   mod.routine_health_fresh(NOW_UTC, repo=rh), want)
     expect("one-time task that already fired warns, does not fail",
            mod.verdict_task({"id": "t", "enabled": True,
                              "lastRunAt": iso(NOW_UTC - timedelta(days=90))},
@@ -197,6 +223,61 @@ def main():
                                context={"crons": [], "reloaded_at": datetime(2026, 8, 3)},
                                now_local=NOW_LOCAL)[0],
            mod.FAIL)
+    # The 2026-09-03 defect, and its falsifier. Three agents carried a never-fired
+    # FAIL while their logs held clean fires; the checker asserted "no log exists"
+    # without opening one. These four cases pin the fix in BOTH directions -- a
+    # patch that simply stopped failing on runs = 0 would pass the first two and
+    # fail these last two.
+    with tempfile.TemporaryDirectory() as tmp:
+        wrote = os.path.join(tmp, "ran.log")
+        with open(wrote, "w") as fh:
+            fh.write("2026-08-30 20:00:01 generate_weekly_review exit=0\n")
+        os.utime(wrote, (LOGGED.timestamp(), LOGGED.timestamp()))
+        empty = os.path.join(tmp, "empty.log")
+        open(empty, "w").close()
+        os.utime(empty, (LOGGED.timestamp(), LOGGED.timestamp()))
+
+        # MUST FAIL: log path declared, but launchd only ever created the file.
+        # An empty log is not evidence of a run.
+        expect("runs = 0 with an EMPTY log is still never-fired",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * 0"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [empty]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.FAIL)
+        # MUST FAIL: the declared log is not on disk at all.
+        expect("runs = 0 with a missing log is still never-fired",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * 0"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [os.path.join(tmp, "nope.log")]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.FAIL)
+
+        print("\nthe runs = 0 log evidence (2026-09-03 false-FAIL fix):")
+        # MUST PASS: com.tloughran.summa-weekly-review's shape. Sunday 20:00,
+        # loaded 07-13, log written on the 08-02 fire -- the most recent one before
+        # NOW_LOCAL. The counter says 0; the log says it ran.
+        expect("runs = 0 but the log was written on the last fire is OK",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * 0"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [wrote]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.OK)
+        # MUST WARN, not pass: same log, but on a DAILY schedule the 08-03 20:00
+        # fire came round after that write and left nothing. Proof of life is not
+        # proof of the latest run.
+        expect("runs = 0, log present but a later fire left no write, warns",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * *"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [wrote]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.WARN)
+
+    print("\nlaunchd agents that MUST fail (continued):")
     # An assertion-agent's UNLISTED exit codes are still faults: 78 is the
     # macl-xattr trap, 2 is the check itself failing to run.
     label = next(iter(mod.VERDICT_EXITS))
@@ -245,6 +326,26 @@ def main():
         expect("artifact five days stale",
                mod.verdict_artifact(spec, NOW_UTC)[0], mod.FAIL)
 
+        # 2026-09-30/10-01, verbatim: the daily run committed on the Mac both days
+        # and every local check said OK, while GitHub sat two days behind. The
+        # daily_push row reads the newest daily-run commit ON ORIGIN, so that state
+        # must go red -- and a fresh push must not.
+        push_row = next(a for a in mod.ARTIFACTS
+                        if a["path"] == "scheduler/daily_push.json")
+        push_file = Path(tmp) / "daily_push.json"
+        for label, origin_at, want in (
+                ("GitHub two days behind a fresh local commit",
+                 iso(NOW_UTC - timedelta(days=2)), mod.FAIL),
+                ("no daily-run commit on GitHub at all", None, mod.FAIL),
+                ("daily-run commit pushed this morning",
+                 iso(NOW_UTC - timedelta(hours=5)), mod.OK)):
+            push_file.write_text(json.dumps({
+                "checked_at": iso(NOW_UTC), "verdict": "REFUSED",
+                "origin_daily_run_at": origin_at}))
+            expect(f"daily_push: {label}",
+                   mod.verdict_artifact(dict(push_row, path=str(push_file)),
+                                        NOW_UTC)[0], want)
+
         # An artifact with no self-recorded date cannot be checked at all, and
         # must say so rather than falling back to an mtime that git does not keep.
         spec = artifact_file(tmp, {"_meta": {"lanes": 33}})
@@ -286,6 +387,90 @@ def main():
             NOW_UTC - timedelta(hours=8))}})
         expect("artifact generated this morning",
                mod.verdict_artifact(spec, NOW_UTC)[0], mod.OK)
+
+    # ---------------------------------------------------------------- lag rows
+    # The lag row exists because an AGE row asks the wrong question of a
+    # publisher that deliberately no-ops on a quiet source. The case that
+    # matters most below is "quiet vault": a six-day-old artifact that is
+    # CORRECT, which a max_age_hours row would have called FAIL for six
+    # consecutive days. If that case ever goes red, the row has regressed into
+    # the age check it was written to replace.
+    print("\nlag rows:")
+    with tempfile.TemporaryDirectory() as tmp:
+        repo = Path(tmp)
+        (repo / "wiki" / "traditions" / "levin").mkdir(parents=True)
+        art = repo / "wiki" / "prs_3d.html"
+        src = repo / "wiki" / "traditions" / "levin" / "prs_triplets.md"
+
+        def local_stamp(dt):
+            """The generator writes a naive LOCAL timestamp; mirror that."""
+            return dt.astimezone().replace(tzinfo=None).isoformat(timespec="seconds")
+
+        def build(built_at, source_at, body=None):
+            stamp = local_stamp(built_at)
+            art.write_text(body if body is not None
+                           else 'const PRS_BUILD_TS = "%s";' % stamp)
+            src.write_text("PRS-01: ...")
+            os.utime(src, (source_at.timestamp(), source_at.timestamp()))
+            return {"owner": "pub", "path": "wiki/prs_3d.html",
+                    "stamp_regex": r'PRS_BUILD_TS\s*=\s*"([^"]+)"',
+                    "sources": ["wiki/traditions/*/prs_triplets.md"],
+                    "grace_hours": 48}
+
+        spec = build(NOW_UTC - timedelta(days=5), NOW_UTC - timedelta(days=2))
+        code, line = mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))
+        expect("source 3 days newer than the build is a FAIL", code, mod.FAIL)
+        expect("the FAIL names the source that moved",
+               "prs_triplets.md" in line, True)
+
+        spec = build(NOW_UTC - timedelta(hours=30), NOW_UTC - timedelta(hours=10))
+        expect("20h behind is inside one publish cycle",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.OK)
+
+        # THE case: quiet vault. Artifact six days old, sources older still.
+        spec = build(NOW_UTC - timedelta(days=6), NOW_UTC - timedelta(days=10))
+        code, line = mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))
+        expect("a six-day-old artifact on a QUIET vault is OK", code, mod.OK)
+        expect("the OK line says it is current, not that it is fresh",
+               "current with its newest source" in line, True)
+
+        spec = build(NOW_UTC - timedelta(days=5), NOW_UTC - timedelta(days=2))
+        spec["failure_means"] = "not on the live page"
+        expect("failure_means reaches the lag line",
+               "not on the live page" in
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[1], True)
+
+        spec = build(NOW_UTC - timedelta(days=1), NOW_UTC - timedelta(days=2),
+                     body="<html>no stamp here</html>")
+        expect("an artifact with no build stamp cannot be checked",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+        spec = build(NOW_UTC - timedelta(days=1), NOW_UTC - timedelta(days=2),
+                     body='const PRS_BUILD_TS = "last Tuesday";')
+        expect("a build stamp that is not a timestamp",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+        # A source list matching nothing would pass forever while asserting
+        # nothing -- the blindness the whole file exists to end.
+        spec = build(NOW_UTC - timedelta(days=1), NOW_UTC - timedelta(days=2))
+        spec["sources"] = ["wiki/nothing/*/matches.md"]
+        expect("source patterns matching no file must FAIL, not pass",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+        art.unlink()
+        spec = {"owner": "pub", "path": "wiki/prs_3d.html",
+                "stamp_regex": r'PRS_BUILD_TS\s*=\s*"([^"]+)"',
+                "sources": ["wiki/traditions/*/prs_triplets.md"],
+                "grace_hours": 48}
+        expect("a missing artifact is a FAIL",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+    # Every shipped LAG_ARTIFACTS row must name real source patterns in the real
+    # repo. A typo in a glob is silent otherwise: the row goes green forever.
+    for row in mod.LAG_ARTIFACTS:
+        code, line = mod.verdict_artifact_lag(row, NOW_UTC)
+        expect(f"LIVE: {row['path']} lag row is asserting something",
+               "asserting nothing" in line, False)
 
     # Git debris. The previous accumulation (535 stranded tmp_obj files, 07-31..08-13)
     # could not be pinned on any job because nothing reported it and the evidence was
@@ -394,6 +579,43 @@ def main():
     # The shipped roster must actually point at something a producer writes.
     expect("sync_vault.FAILED is on the shipped marker roster",
            any(s["path"] == "sync_vault.FAILED" for s in mod.FAILURE_MARKERS), True)
+
+    # The unattended permission mode. Nothing else in this script notices a task
+    # that hangs on a prompt: the run commits its work BEFORE it blocks, so
+    # lastRunAt looks healthy and the artifact checks stay green while the agent
+    # holds its slot for hours. The absent field is the only symptom.
+    print("\nunattended permission mode:")
+    SPEC = {"id": "t", "note": "n"}
+    expect("permissionMode set reads OK",
+           mod.verdict_unattended_permissions(
+               SPEC, {"t": {"id": "t", "permissionMode": "bypassPermissions"}})[0],
+           mod.OK)
+    expect("permissionMode absent FAILs",
+           mod.verdict_unattended_permissions(SPEC, {"t": {"id": "t"}})[0],
+           mod.FAIL)
+    expect("permissionMode present but empty FAILs",
+           mod.verdict_unattended_permissions(
+               SPEC, {"t": {"id": "t", "permissionMode": ""}})[0],
+           mod.FAIL)
+    # approvedPermissions is NOT a substitute. c282 carried five of them (all Gmail)
+    # and still hung on eight other tools. A check that accepted the list would have
+    # read green through every one of those stalls.
+    expect("approvedPermissions alone does NOT satisfy it",
+           mod.verdict_unattended_permissions(
+               SPEC, {"t": {"id": "t", "approvedPermissions": [
+                   {"toolName": "mcp__x__create_draft"}]}})[0],
+           mod.FAIL)
+    expect("task missing from the registry FAILs",
+           mod.verdict_unattended_permissions(SPEC, {})[0],
+           mod.FAIL)
+    # And the one that actually protects the machine: run the real specs against the
+    # real registry. This is what turns red if the desktop app rewrites the file from
+    # a state predating the 2026-09-03 hand edit.
+    live_tasks, _ = mod.load_registry_tasks()
+    for spec in mod.UNATTENDED_PERMISSION_TASKS:
+        expect(f"LIVE: {spec['id']} still carries a permission mode",
+               mod.verdict_unattended_permissions(spec, live_tasks)[0],
+               mod.OK)
 
     print("\nthe live roster must be reachable (a check that sees nothing passes "
           "everything):")

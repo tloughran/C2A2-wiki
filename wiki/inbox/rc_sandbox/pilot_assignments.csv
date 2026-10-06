@@ -1,0 +1,121 @@
+cell_id,sheet_row,seq_in_row,words,stratum,weight,node,voice,about,confidence,work_order,reason
+r1c26,2,4,4,A_frag<=5,17.5,X.1,apparatus,,high,0,sheet bookkeeping label
+r3c26,4,24,1,A_frag<=5,17.5,X.1,apparatus,,high,0,"bare number, word-count total"
+r5c9,6,7,1,A_frag<=5,17.5,X.1,apparatus,,high,0,bare number
+r5c15,6,13,1,A_frag<=5,17.5,X.1,apparatus,,high,0,bare number
+r6c25,7,23,5,A_frag<=5,17.5,X.1,apparatus,,high,0,row-range subtotal label
+r20c3,21,1,20,B_6-20,21.92,I.2.3,Loughran,,low,0,analogy: traditions unify like EM+weak at high energy
+r29c9,30,7,19,B_6-20,21.92,III.2.3,Loughran,,med,1,to-do: find biologist allowing empirical Lamarckian evolution
+r30c6,31,4,2,A_frag<=5,17.5,Z,Loughran,,low,0,"bare name, referent unresolved"
+r44c9,45,3,54,C_21-60,24.82,I.4.2,Loughran,,med,0,names rhetoric as the craft of loving well in communication
+r46c18,47,5,5,A_frag<=5,17.5,X.1,apparatus,,high,0,table header from an embedded data table
+r46c19,47,6,2,A_frag<=5,17.5,X.1,apparatus,,high,0,"table header, 2016 electorate data"
+r50c3,51,1,10,B_6-20,21.92,III.3,Loughran,,med,0,"competing notions of happiness, practical reason"
+r52c4,53,2,5,A_frag<=5,17.5,I.3.2,Loughran,,med,1,"measurement design: pretest/posttest, rate this book"
+r52c5,53,3,6,B_6-20,21.92,I.3.1,Loughran,,low,0,backward design of a text/narrative as instrument
+r54c5,55,1,2,A_frag<=5,17.5,X.2,Loughran,,high,0,in-sheet label heading the next cell
+r54c7,55,3,67,D_61-200,23.7,I.3.2,Loughran,MacIntyre,high,0,explicit RUBRIC for mastery of the tradition-encounter account
+r56c5,57,1,2,A_frag<=5,17.5,X.2,Loughran,,high,0,in-sheet label heading the next cell
+r62c4,63,1,3,A_frag<=5,17.5,Z,Loughran,,low,0,"fragment, referent unresolved"
+r84c6,85,4,78,D_61-200,23.7,III.1,Loughran,,high,0,is every person one instance of consciousness; layered Cs
+r85c4,86,2,202,E_>200,6.59,I.1,Smedley Butler,,med,0,QUOTED war-is-a-racket passage; empire diagnosis
+r94c4,95,2,11,B_6-20,21.92,III.2.6,Loughran,,med,1,to-do: examples of competing US history narratives
+r94c6,95,4,13,B_6-20,21.92,III.2.6,Loughran,,low,1,to-do: blend PoP narrative with alternative US narratives
+r108c4,109,2,27,C_21-60,24.82,II.4,Bernard Williams,Williams,high,0,"cited: Morality (1972) p.xi, style and intent"
+r122c6,123,1,1,A_frag<=5,17.5,Z,Loughran,,low,0,two-word fragment
+r124c6,125,1,6,B_6-20,21.92,I.4.1,Loughran,,low,0,"information flow conditions: savvy, resources, safety"
+r130c4,131,1,8,B_6-20,21.92,III.2.5,Loughran,,med,0,organisms are algorithms; algorithms hack organisms
+r151c3,152,1,22,C_21-60,24.82,III.4,Loughran,,med,1,to-do: healing as expression of love in illness
+r156c6,157,3,5,A_frag<=5,17.5,III.4,Loughran,,med,0,incarnation of love
+r171c3,172,1,12,B_6-20,21.92,II.4,Loughran,Rohr,high,0,source pointer: Rohr on reading scripture
+r172c4,173,2,400,E_>200,6.59,III.2.8,Rohr,Rohr,high,0,QUOTED 400w Rohr text on reading scripture
+r178c4,179,2,15,B_6-20,21.92,III.2.10,Loughran,,med,0,value and prices set by mature members negotiating
+r186c5,187,3,57,C_21-60,24.82,III.2.9,Loughran,Pentland,high,0,AP=Pentland; millisecond-scale computational social science
+r186c8,187,6,43,C_21-60,24.82,III.2.9,Loughran,Pentland,high,0,connections predict behavior 300pct better than demographics
+r193c8,194,5,168,D_61-200,23.7,III.1.1,Loughran+Chopra,Chopra,med,0,Loughran framing around quoted Chopra QM-spirituality claims
+r197c3,198,1,9,B_6-20,21.92,I.4.3,Loughran,,low,1,to-do: family ties as case study in community
+r207c8,208,5,278,E_>200,6.59,I.3.1,Loughran,,med,1,Amash case: how reliability information propagates in a caucus
+r215c11,216,8,45,C_21-60,24.82,III.1,Loughran,,high,0,"we are actually computing what is true, good and right"
+r224c7,225,5,21,C_21-60,24.82,I.4.2,Loughran,,med,0,success story as rhetorical remedy
+r231c12,232,7,37,C_21-60,24.82,III.2.4,Loughran,Hawkins,high,0,thousand-brains paradigm answers the no-paradigm objection
+r232c6,233,4,62,D_61-200,23.7,III.2.5,Irving+Askell,Irving;Askell,high,0,QUOTED OpenAI/distill safety-needs-social-scientists intro
+r239c6,240,4,5,A_frag<=5,17.5,Z,Loughran,,low,0,"reference marker, unresolved"
+r241c7,242,5,18,B_6-20,21.92,I.1,Loughran,,high,0,"diagnosis: erosion of checks, incivility, politicization"
+r246c6,247,3,1,A_frag<=5,17.5,X.1,apparatus,,high,0,single stray character
+r248c11,249,5,93,D_61-200,23.7,III.2.9,Loughran,,med,0,iterated preference resolution through politics and market
+r249c3,250,1,21,C_21-60,24.82,I.4.1,Loughran,,med,0,third pass adding AI reflection to inform and guide
+r251c5,252,2,61,D_61-200,23.7,III.2,Loughran,,high,0,AUTHORED STRUCTURE: layers and which sciences contribute
+r253c7,254,5,33,C_21-60,24.82,III.1,Loughran,,high,0,matrix-multiplication account unifying the layers
+r253c10,254,8,70,D_61-200,23.7,III.3,Loughran,,high,0,rationale for intervening in nature; natural law as operation matrices
+r254c5,255,3,62,D_61-200,23.7,III.2.1,Loughran,,high,0,quantum reconstruction from three informational postulates
+r256c5,257,3,1,A_frag<=5,17.5,II.4,Loughran,,high,0,bare source URL
+r258c3,259,1,18,B_6-20,21.92,I.3.1,Loughran,,med,0,what must be shown to demonstrate a whole system of thought
+r258c4,259,2,18,B_6-20,21.92,I.3.2,Loughran,,high,0,"criterion 1: coherence lite, no internal inconsistency"
+r265c4,266,2,4,A_frag<=5,17.5,Z,Loughran,,low,0,place-name fragment
+r270c14,271,11,48,C_21-60,24.82,III.2.5,Loughran,,high,0,chess to Go: shrinking human advantage over AI
+r279c4,280,2,1,A_frag<=5,17.5,II.4,Loughran,,high,0,"bare source URL, informed voters study"
+r281c3,282,1,11,B_6-20,21.92,III.2.9,Loughran,,med,0,"people feel better informed with the internet, 2014 study"
+r288c4,289,2,657,E_>200,6.59,III.1.1,Loughran,,high,0,zero mind-independent worlds vs Everett; long argument
+r289c3,290,1,25,C_21-60,24.82,III.2.5,Loughran,Chollet,high,0,Chollet definition of intelligence
+r313c5,314,3,119,D_61-200,23.7,III.2.1,Chiribella et al,Chiribella,high,0,QUOTED purification postulate passage
+r314c12,315,10,34,C_21-60,24.82,III.2.5,Loughran,,med,0,"method, capacity, learning as three dimensions of intelligence"
+r318c14,319,9,130,D_61-200,23.7,I.2.3,Loughran,MacIntyre;Tim Urban,med,0,bias as motion; ties to missing real incommensurability
+r319c4,320,2,16,B_6-20,21.92,III.2.9,Loughran,Schelling,high,0,Schelling weak-preference account of urban sorting
+r320c5,321,3,37,C_21-60,24.82,III.2,Loughran,,high,0,AUTHORED STRUCTURE: theology to cosmology to neuro to sociology to AI
+r321c3,322,1,42,C_21-60,24.82,III.1,Loughran,,high,1,dialectical line for primacy of consciousness; needs a name
+r329c4,330,2,41,C_21-60,24.82,III.2.8,Loughran,,high,0,creation as God freely entertaining a limited perspective
+r333c4,334,2,20,B_6-20,21.92,III.2.1,Loughran,,high,0,"critical history of Bohr, Pauli, Heisenberg on QM"
+r334c14,335,7,72,D_61-200,23.7,III.2.8,Loughran,,high,0,"united in single Consciousness; bind on earth, in Christ"
+r342c5,343,3,20,B_6-20,21.92,III.1.1,Loughran,,med,0,can mathematical analysis account for consciousness
+r357c5,358,1,48,C_21-60,24.82,III.2.4,Loughran,Hoffman,high,0,DH=Hoffman; correlation without causation in Cs-brain studies
+r366c3,367,1,1031,E_>200,6.59,III.1.3,Loughran,,med,0,theory-laden facts via Higgs reconstruction at CMS/ATLAS
+r373c3,374,1,19,B_6-20,21.92,I.4.3,Loughran,Moes;Ballentine,med,0,teachers as professional inviters into rich community
+r375c3,376,1,266,E_>200,6.59,I.4.2,Loughran,,med,0,invitation; meaning of an act emerges as consensus
+r379c7,380,5,29,C_21-60,24.82,II.4,Science 2005,,med,0,"cited: top 125 open questions, Science special issue"
+r380c7,381,3,45,C_21-60,24.82,III.2.8,Loughran,Dennett,high,0,Dennett on communal dimensions of religion without myth
+r381c5,382,3,58,C_21-60,24.82,III.1.2,Loughran,Hoffman,high,0,interface theory of perception follows from FBT
+r386c7,387,5,32,C_21-60,24.82,III.2.4,Loughran,,med,0,"reported IIT line: causal power in hardware, not software"
+r388c14,389,9,54,C_21-60,24.82,III.2.4,Loughran,,high,0,zap-and-zip; GNW as dominant zeitgeist
+r392c7,393,5,256,E_>200,6.59,III.1,Loughran,Hoffman,high,0,information as exclusion of possibility; conscious realism
+r392c17,393,11,156,D_61-200,23.7,III.2.8,Loughran,,high,0,"theological: limited perspective, seeing dimly, in Christ"
+r392c20,393,13,266,E_>200,6.59,III.2.8,Loughran,Kuhn,med,0,paradigm shifts driven by thirst for holistic explanation
+r394c5,395,2,13,B_6-20,21.92,III.3,Loughran,,med,0,telos emerging from love-centric fundamental consciousness
+r395c15,396,7,143,D_61-200,23.7,III.1,Loughran,Hoffman,high,0,observer role follows from LPCR; conscious realism premise
+r404c12,405,6,173,D_61-200,23.7,III.3,Loughran,Bloom,med,0,Bloom on passions in education; limits of the approved
+r416c3,417,1,17,B_6-20,21.92,II.4,Loughran,Julian of Norwich;Rohr,high,0,"source pointers, Julian and Rohr"
+r421c4,422,2,248,E_>200,6.59,I.4,Loughran,MacIntyre,high,0,describes the accelerator: high-information-flow rich communities
+r422c8,423,5,48,C_21-60,24.82,I.3.3,Loughran,,high,0,a right to full information provenance for public claims
+r426c12,427,5,243,E_>200,6.59,III.1,Loughran,Tegmark,high,0,"every possibility actual on pCR, en route to integrated whole"
+r439c3,440,1,128,D_61-200,23.7,III.2.4,Loughran,Humphrey,high,0,blindsight; Cs function is social mind-reading
+r444c13,445,7,235,E_>200,6.59,III.2.8,UNKNOWN-testimony,,low,0,first-person ex-evangelical testimony; not Loughran voice
+r455c5,456,3,39,C_21-60,24.82,III.2.9,Loughran,MacIntyre;Charles Taylor,med,0,AM and CT humanism against reductionist naturalism
+r456c17,457,7,175,D_61-200,23.7,I.3.2,Loughran,,high,0,QUANTITATIVE MODEL of inter-tradition information transfer
+r457c5,458,3,37,C_21-60,24.82,III.2.1,Loughran,,high,0,Boltzmann coarse-graining and the subjectivity of entropy
+r469c19,470,17,5,A_frag<=5,17.5,X.2,Loughran,,med,0,"numbered list item, people/places"
+r469c23,470,21,3,A_frag<=5,17.5,X.2,Loughran,,med,0,"numbered list item, people/places"
+r469c24,470,22,6,B_6-20,21.92,X.2,Loughran,,med,0,"numbered list item, people/places"
+r471c4,472,2,93,D_61-200,23.7,III.1,Loughran,Hoffman,high,0,DH two presumptions; is multiple agency a third
+r474c3,475,1,57,C_21-60,24.82,I.1,Loughran,,low,1,meta: fresh overview of the RC project and where to start
+r494c4,495,2,70,D_61-200,23.7,III.1.1,Loughran,,med,0,what is real on DWP vs pCRm intuitions
+r495c8,496,5,214,E_>200,6.59,III.2.7,Godel,Godel;Russell,high,0,QUOTED Godel on axioms justified as in physics
+r496c12,497,9,91,D_61-200,23.7,III.2.3,Loughran,Plomin,med,0,heritability vs unexplained 40pct; TL marks own comment
+r499c3,500,1,16,B_6-20,21.92,III.2.10,Loughran,,med,0,GameStop/Robinhood event pointer
+r499c6,500,4,239,E_>200,6.59,III.2.10,Loughran,,med,0,capitalism infused with social responsibility via social business
+r502c13,503,5,247,E_>200,6.59,I.2,Loughran,MacIntyre;Sneed,high,0,master science argument; M's algorithm; PoP as exception
+r506c6,507,4,190,D_61-200,23.7,III.1,Loughran,Eric Weinstein,high,0,enjoy/calculate duality; created being as abstractable element
+r511c5,512,3,37,C_21-60,24.82,III.2.7,Loughran,Plato,med,0,critique of a reading of Plato as Spartan/Pythagorean
+r517c20,518,8,20,B_6-20,21.92,III.2.3,Loughran,,med,0,"thirteenth principle of modularity, predictive organisms"
+r519c20,520,8,139,D_61-200,23.7,III.3,Loughran,,high,0,"full justification, time- and person-indexed"
+r522c5,523,3,98,D_61-200,23.7,III.2.8,Loughran,,med,0,skeleton case for reform of the Church
+r522c9,523,7,124,D_61-200,23.7,I.2,Loughran,MacIntyre;Aquinas,high,1,the new Summa project named; write the paper
+r530c4,531,2,60,C_21-60,24.82,III.3,Loughran,MacIntyre;Singer,high,1,Singer on absence of justification for special human dignity
+r533c5,534,3,408,E_>200,6.59,III.1,Loughran,,high,0,"external world, conscious agents, 150k cortical columns"
+r560c3,561,1,15,B_6-20,21.92,II.4,Loughran,W P Miller,med,0,"source pointer, cellular world"
+r567c3,568,1,79,D_61-200,23.7,I.5,MacIntyre,MacIntyre,high,0,QUOTED AV2:277 - no a priori guarantee against relativism
+r585c3,586,1,188,D_61-200,23.7,I.4.3,Loughran,,med,0,"PoP reform: service, apostolic activity, outward connection"
+r592c3,593,1,9,B_6-20,21.92,II.4,Loughran,Kastrup,high,0,"BK=Kastrup; source pointer, physics points to mind"
+r595c18,596,11,183,D_61-200,23.7,III.2.3,paper-authors,Aristotle,high,0,QUOTED: what do we mean by cognition
+r608c11,609,5,4,A_frag<=5,17.5,Z,Loughran,,low,1,"bare work-order, no topical content"
+r609c5,610,2,277,E_>200,6.59,III.2.3,paper-authors,Shettleworth,high,0,QUOTED working definition of cognition
+r613c4,614,1,106,D_61-200,23.7,III.2.3,Loughran,Levin;McGilchrist;Wolfram;Spivak,high,0,"mathematical forms found, not derived; ties Levin to Wolfram"
+r615c6,616,3,254,E_>200,6.59,III.1,Loughran,,high,0,a model of the whole conscious of the whole it models

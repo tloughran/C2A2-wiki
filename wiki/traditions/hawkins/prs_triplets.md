@@ -365,7 +365,286 @@ PRS-35:
   Evidence: Reported presence of "testable predictions and discussion of connections to experimental findings at anatomical, neurophysiological, and behavioral levels" in v2. Held at Speculative because neither the section nor any individual prediction has been read by this agent — only its existence is reported. **Do not ingest this candidate on report alone; read the section first.**
 
 ---
-*Total PRS triplets: 35*
+PRS-36:
+  Problem: The thousand-brains program has lacked an external, unsaturated benchmark that tests skill *acquisition* rather than accumulated skill, so claims about its advantage over deep learning have had no shared yardstick.
+  Resource: ARC-AGI-3, an interactive benchmark scoring efficiency of adaptation to unseen environments across four components — exploration, modeling, goal-setting, planning/execution — with no language or pre-training permitted.
+  Solution: The team adopts ARC-AGI-3 as a candidate prototyping environment and maps Monty's current capabilities onto its four required components, making the program's remaining gap explicit and measurable.
+  Date Added: 2026-09-10
+  Source: 07/2026 - ARC-AGI 3 Review and What Monty Would Need to Solve it; PROP-2026-09-01-001
+  Confidence: High
+  Evidence: Session segments "ARC-AGI-3 Tests These Four Core Components," "How Does Monty Do on the Skills Required to Solve ARC-AGI-3?" (39:06) and "Is ARC-AGI 3 a Good Benchmark for Monty?" (1:18:50).
+
+PRS-37:
+  Problem: Monty models concrete 3D objects through sensorimotor exploration, but ARC-AGI-3 requires reasoning about abstract objects — what a key does, what counts as winning — inside a concrete 2D grid.
+  Resource: The claim, internal to the thousand brains theory, that the same cortical algorithm over reference frames should apply to abstract as well as physical spaces.
+  Solution: The team treats ARC-AGI-3 as a forcing function for the concrete-to-abstract transfer, and scopes prototyping around causality, dynamic compositionality, and forgetting mechanisms rather than around the benchmark score itself.
+  Date Added: 2026-09-10
+  Source: 07/2026 - ARC-AGI 3 Review and What Monty Would Need to Solve it; PROP-2026-09-01-001
+  Confidence: Medium
+  Evidence: Segments "Discussion: 2D vs 3D Modeling" (58:11), "What's Missing in Monty to Solve ARC-AGI-3" (1:04:35), "Dynamic Compositionality & Forgetting Mechanisms" (1:38:44); forum reply by W_Foxalike (2026-08-28) naming the concrete-to-abstract leap as the theory's untested step.
+
+PRS-38:
+  Problem: A sensorimotor system that only recognizes objects cannot set its own goals; ARC-AGI-3 scores goal inference and curiosity-driven exploration.
+  Resource: Learned reference-frame models used for planning, plus a discussion of goals, rewards, and curiosity as drivers of exploration policy.
+  Solution: Proposes using Monty's learned models directly for planning and goal inference, i.e. treating the object model as a substrate for action selection rather than only for classification.
+  Date Added: 2026-09-10
+  Source: 07/2026 - ARC-AGI 3 Review and What Monty Would Need to Solve it; PROP-2026-09-01-001
+  Confidence: Medium
+  Evidence: Segments "Using Learned Models for Planning & Goal Inference" (43:54) and "Goals, Rewards & Curiosity" (1:28:58).
+
+PRS-39:
+  Problem: If a cortical column builds a reference frame for a new object or place, how is that frame anchored fast enough to be useful on first encounter?
+  Resource: A 2024 result on one-shot entorhinal maps: visual landmarks influence grid-cell properties within a single exposure, and a fixed landmark-to-grid-cell mapping predicts grid activity for a held-out landmark combination.
+  Solution: Supports the position that anchoring is a learned landmark-to-frame function rather than a slow accumulation, so a thousand-brains system can initialize a frame from one sensory glimpse.
+  Date Added: 2026-09-10
+  Source: 07/2026 - Deep Dive into Grid Cell Literature; PROP-2026-09-01-002
+  Confidence: High
+  Evidence: Segments at 3:12 and 4:46 ("Landmarks Influence Grid Cell Properties Within a Single Exposure") and 9:57 (held-out landmark combination prediction).
+
+PRS-40:
+  Problem: Monty has been designed as though one environment maps to one reference frame, which cannot accommodate the observed behavior of biological grid cells.
+  Resource: Evidence on spontaneous remapping, the merging of grid maps when barriers are removed, and rapid switching between room-based and object-based frames.
+  Solution: Multiple reference frames can coexist for the same environment, selected by behavioral state or task — a design constraint the team takes on directly for Monty.
+  Date Added: 2026-09-10
+  Source: 07/2026 - Deep Dive into Grid Cell Literature; PROP-2026-09-01-002
+  Confidence: High
+  Evidence: Segment at 42:52, "There Can Be Multiple Reference Frames For the Same Environment, Depending on the Behavioral State or Task Due to Spontaneous Remapping"; papers on merged environments (28:40) and global representations of connected environments (35:07).
+
+PRS-41:
+  Problem: A single-scale learning module cannot represent both a local surface feature and an entire environment.
+  Resource: Grid-cell modules operating at different spatial scales, mapping local features and whole environments independently.
+  Solution: Monty will have learning modules at different scales, making scale an explicit architectural axis rather than an implicit consequence of sensor resolution.
+  Date Added: 2026-09-10
+  Source: 07/2026 - Deep Dive into Grid Cell Literature; PROP-2026-09-01-002
+  Confidence: High
+  Evidence: Segments "Grid Cell Modules at Different Scales" (13:09) and "Monty Will Have Learning Modules at Different Scales" (50:34).
+
+PRS-42:
+  Problem: If landmarks distort the grid metric when they change, path integration should degrade — but behavior does not degrade correspondingly.
+  Resource: Findings that landmark change distorts grid space while downstream fast plasticity permits quick behavioral adaptation, and that grid cells track movement accurately across reference-frame switches.
+  Solution: Separates the frame's metric fidelity from behavioral competence: a distorted frame plus fast downstream correction is sufficient, which relaxes the precision requirement on any implemented frame.
+  Date Added: 2026-09-10
+  Source: 07/2026 - Deep Dive into Grid Cell Literature; PROP-2026-09-01-002
+  Confidence: Medium
+  Evidence: Segments at 17:13 and 54:25.
+
+PRS-43:
+  Problem: Monty's claims for rotation-invariant recognition and rapid continual learning had been established only in simulation, where sensor noise and pose error are absent or modeled.
+  Resource: A dual-agent physical rig — stereo camera as distant agent, time-of-flight depth sensor on a 6-DOF arm as surface agent — running Monty on a small physically captured object dataset.
+  Solution: A proof-of-concept demonstrating that the sensorimotor recognition pipeline transfers to hardware, with rotation-invariance and continual-learning experiments run on the distant agent.
+  Date Added: 2026-09-10
+  Source: 2026/07 - Robotic Object Recognition for Thousand Brains Systems; PROP-2026-09-01-003
+  Confidence: Medium
+  Evidence: Segments "Distant Agent Results (Rotation Invariance Experiment)" (22:24) and "(Continual Learning Experiment)" (24:44); "Surface Agent Results (The Hardware Reality)" (28:18).
+
+PRS-44:
+  Problem: The thousand brains theory requires an agent to convert an abstract model-driven goal ("sense this part of the object next") into physical movement — a step simulation supplies for free.
+  Resource: A sensorimotor flowchart translating Monty's abstract goal states into robot arm motion, plus filtering for time-of-flight scattering artifacts.
+  Solution: Identifies goal-to-motion translation and depth-sensor scattering as the two concrete engineering barriers between the theory and embodied operation, rather than the recognition algorithm itself.
+  Date Added: 2026-09-10
+  Source: 2026/07 - Robotic Object Recognition for Thousand Brains Systems; PROP-2026-09-01-003
+  Confidence: Medium
+  Evidence: Segments "Translating Abstract Goals to Robot Motion" (12:16) and "Challenges Faced: Time of Flight Sensor Scattering" (29:08).
+
+PRS-45:
+  Problem: The theory treats touch as a first-class sensory modality building reference frames on object surfaces, but no tactile hardware exists at the coverage and resolution the theory assumes.
+  Resource: Forum follow-up discussion (Alex, Danzig, August 2026) on Hall-effect sensor arrays with 2mm magnets on flexible PCB, giving roughly 3-4mm resolution at low cost, against the limits of GelSight-style optical tactile sensing.
+  Solution: Names a plausible near-term path to whole-surface tactile skin, and identifies handling the resulting data stream as the open problem — which is precisely a learning-module question in this framework.
+  Date Added: 2026-09-10
+  Source: 2026/07 - Robotic Object Recognition for Thousand Brains Systems; PROP-2026-09-01-003
+  Confidence: Speculative
+  Evidence: Forum posts of 2026-08-06, 2026-08-28 and 2026-08-30 in the thread; Q&A segment "Tactile Sensors Discussion" (39:38).
+
+PRS-46:
+  Problem: The Thousand Brains Theory claims cortical columns use grid-cell-like reference frames, but the theory has needed independent neuroscience showing that hippocampal-formation spatial machinery is in fact generic across cortex rather than special to navigation.
+  Resource: FENS 2026 results reported to the team, including the finding that place cells are found throughout the neocortex, and that a fixed number of grid-like modules emerges regardless of the spatial scale being represented.
+  Solution: External empirical support for treating reference frames as the cortex-wide organizing principle, and a scale-invariance constraint on how many modules a column-level reference frame needs — a number the theory can now try to predict rather than assume.
+  Date Added: 2026-09-10
+  Source: 07/2026 - FENS Conference Recap; PROP-2026-09-08-001
+  Confidence: Medium
+  Evidence: Chapter markers on the main video: 2:12 "Fixed Number of Grid-like Modules Emerge Regardless of Scale"; 44:19 "Place Cells Are Found Everywhere throughout the Neocortex". The forum post's own summary names these as the reported findings. The video was not transcribed; the substance here rests on the official post text and chapter titles, not on quoted speech, and the underlying FENS papers are not named in the post.
+
+PRS-47:
+  Problem: Monty currently treats sensor movement as exploration policy, without a principled account of what makes one location worth moving to next — the attention/saliency problem the team has been circling since the 2026/06 visual-saliency session.
+  Resource: A FENS theory presented as "spatial salience as motor readiness," together with superior-colliculus cylindrical modules defining an egocentric action-spatial map.
+  Solution: Saliency reframed as a motor quantity rather than a visual one: what is salient is what the system is prepared to act on. If adopted, this makes Monty's next-move policy a readout of readiness in an egocentric map, and gives the egocentric/allocentric split raised in the open-theory-questions session a concrete neural locus.
+  Date Added: 2026-09-10
+  Source: 07/2026 - FENS Conference Recap; PROP-2026-09-08-001
+  Confidence: Speculative
+  Evidence: Chapter markers 29:44 (superior colliculus cylindrical modules / egocentric action-spatial map) and 33:09 ("Spatial Salience as Motor Readiness"). The forum summary names the theory but the post does not state that the team adopted it; the "Does this Apply to Monty?" discussion at 1:37:32 is where that would be settled, and was not transcribed. The reframing in the Solution above is this agent's reading, not a quoted TBP claim — flagged so a reviewer can strike it.
+
+PRS-48:
+  Problem: A reference frame that is merely a coordinate system does no work; the theory needs a mechanism by which location codes actively correct errors and complete partial patterns.
+  Resource: The Vector-HaSH model, in which interactions between grid cells and place cells support error correction, pattern completion, movement-based prediction, and sequence memory.
+  Solution: A named, published computational candidate for the grid/place interaction inside a learning module — one that delivers four capabilities Monty needs (error correction, pattern completion, movement-based prediction, sequence memory) from a single mechanism rather than four bolted-on ones.
+  Date Added: 2026-09-10
+  Source: 07/2026 - FENS Conference Recap; PROP-2026-09-08-001
+  Confidence: Medium
+  Evidence: The forum post's summary paragraph names Vector-HaSH and lists exactly those four capabilities; chapter marker 49:30 gives it 48 minutes of the meeting, the largest single block. A community reply from user Falco (2026-08-20) corrects the presentation on a detail — that grid-to-place connections are fixed random while the return connections are fixed Hebbian-learned — citing a talk by S. Chandra. That correction stands uncontested in the thread, so the team's in-video account of the connectivity should be treated as provisional.
+
+PRS-49:
+  Problem: A research program's health is claimed to be measurable by the questions it generates, but questions normally have to be reconstructed from papers by an outside reader, which contaminates the measurement with the reader's own framing.
+  Resource: The Thousand Brains Project's public, self-maintained open-theory-questions board (Excalidraw, read-only link published in the forum post), partitioned into five named categories and walked through on video.
+  Solution: A first-party question inventory for one C2A2 tradition, at a granularity (roughly thirty named problems) that can be tracked over time. Successive versions of this board give a measured rather than estimated answer to whether the program's question set is growing, shrinking, or being resolved.
+  Date Added: 2026-09-10
+  Source: 2026/07 - Open-Ended Discussion on Open Theory Questions; PROP-2026-09-08-002
+  Confidence: High
+  Evidence: The post links the board directly (link.excalidraw.com/readonly/9iANwzrO9EdPxJpCE5LS) and states the five high-level categories verbatim: "attention/segmentation/input sharing, scale & deformations, unsupervised learning, model representations, and goals and actions." Chapter markers enumerate the individual questions. High confidence applies to the existence and structure of the inventory; the board contents were not opened and the video was not transcribed.
+
+PRS-50:
+  Problem: Monty builds object models by sensing points, but the theory has no account of what region of input a single learning module should be attending to — whether an attentional area is a point, a patch, or something with structure.
+  Resource: The session's attention block, which asks "What Is Attention?", "Is Attention Egocentric when Model-Free and Allocentric when Model-Based?", and "What Is the Shape of an Attentional Area?"
+  Solution: No solution — the value is the sharpening. The egocentric/allocentric split proposes that attention changes coordinate systems depending on whether a model is already engaged, which converts a vague question into a testable dichotomy. This continues the attentional-area thread from PROP-2026-08-26-005.
+  Date Added: 2026-09-10
+  Source: 2026/07 - Open-Ended Discussion on Open Theory Questions; PROP-2026-09-08-002
+  Confidence: Medium
+  Evidence: Chapter markers 3:02, 8:48, 13:56. The post does not report a conclusion, and the session is explicitly framed as open-ended, so the dichotomy is a live hypothesis rather than a team position.
+
+PRS-51:
+  Problem: Thousand-brains systems learn by sensorimotor exploration of concrete objects, which leaves no obvious route to abstract concepts that have no surface to touch.
+  Resource: The unsupervised-learning and model-representation blocks: "How Do We Learn Abstract Models?", "Is There a Connection between the Canonical Views and the Abstract Models?", "Communicating Displacements Instead of Locations."
+  Solution: The proposal that displacements — the vector from one location to another in a reference frame — rather than absolute locations are the transferable currency between columns, which if true is the mechanism by which a concrete reference frame could carry abstract content.
+  Date Added: 2026-09-10
+  Source: 2026/07 - Open-Ended Discussion on Open Theory Questions; PROP-2026-09-08-002
+  Confidence: Speculative
+  Evidence: Chapter markers 1:15:12, 1:16:30, 1:17:19. These are listed under "Nice to Have," which is the team's own signal that they are not being worked on. The link drawn here between displacement-communication and abstraction is this agent's reading, not a claim in the source.
+
+PRS-52:
+  Problem: A sensorimotor system with no notion of an attended region has no principled way to decide where one compositional object ends and its parts begin — a logo on a mug is simultaneously "a logo," "a mug," and "a mug with a logo."
+  Resource: Attention modeled as a constraint-*area* — a spatial region, structurally different from a target pose and different again from a salience map — that multiple learning modules can each contribute to and refine.
+  Solution: Attention up-scales or down-scales candidate target poses according to whether they fall inside the attended region, giving segmentation a model-based influence without requiring a pre-committed object boundary.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: High
+  Evidence: Chapter markers state "Attention Is a Constraint-Area, a Different Structure than Target Poses" (1:08), "Salience Is Different Than Attention" (2:30), "Multiple Learning Modules Can Each Define Their Own Locations to Refine the Attentional Area" (25:57), and "Attention Upscales and Downscales Target Poses Based on If the Target Pose Falls within the Region" (35:28).
+
+PRS-53:
+  Problem: Model-free segmentation (flood-fill, salience) is fast but object-blind; model-based recognition is object-aware but expensive and presupposes what is to be recognized. Neither alone segments a novel compositional scene.
+  Resource: A hybrid pipeline in which model-free algorithms propose regions of interest from salience maps, while model-based policies supply the initial seed location without requiring sensor movement; Gestalt grouping principles are canvassed as candidate grouping priors.
+  Solution: Early empirical results on the TBP compositional dataset comparing several segmentation algorithms live in-meeting, establishing a concrete baseline for the hybrid approach.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: Medium
+  Evidence: Post states Knudstrup "presented some early results on using model-free segmentation algorithms on our compositional dataset"; chapters "Live Demo: Comparing Different Algorithms" (6:33), "Gestalt Psychology Principles and Other Ideas on How to Group Things Together as One" (19:04), "Initial Seed Location Can Be Defined Without Moving Sensors in Model-Based Policies" (22:35). Results were described as early; no published numbers.
+
+PRS-54:
+  Problem: What should make a location *interesting* enough to attend to, in a system with no external reward signal?
+  Resource: Prediction error repurposed as a curiosity signal driving attentional allocation.
+  Solution: Proposed — unexplained sensory input pulls attention, which is also how a narrowing attentional region would be triggered when a model fails to account for what is sensed.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: Speculative
+  Evidence: Chapters "What Makes Something Interesting" (44:01) and "Prediction Error as a Curiosity Signal" (49:49). Post notes "discussion around the difficulty of how model-based signals might influence attention, particularly when unexpected sensory input occurs" — i.e. the mechanism was flagged as unresolved, not settled.
+
+PRS-55:
+  Problem: If attentional regions can themselves bias which movements happen, the target pose may be a redundant intermediate representation.
+  Resource: The "radical idea" that target poses could be dropped entirely, tested against the neuroanatomical constraint of corticospinal monosynaptic connections.
+  Solution: No resolution reached; the neuroanatomical question ("what are the corticospinal monosynaptic neurons doing if there is no target pose?") is posed as the discriminating test.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: Speculative
+  Evidence: Chapters "A Radical Idea: Are Target Poses Still Needed?" (51:59) and "Question and Discussion - What are the Corticospinal Monosynaptic Neurons Doing if There Is No Target Pose?" (1:04:23). This is an open brainstorm; TBP explicitly does not human-correct transcripts for brainstorming videos because the ideas "could be incorrect or rapidly outdated."
+
+PRS-56:
+  Problem: A sensorimotor learner that samples an object without guidance stores far more points than it needs, and needs many movements before it can recognize anything.
+  Resource: A model-free visual-saliency exploration policy (`SalienceSM`, built on VOCUS2) that steers the sensor toward salient regions.
+  Solution: Models learned under the saliency policy are measurably sparser at no cost in accuracy, and inference requires fewer movements to reach recognition.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Visual Saliency for Efficient Learning and Exploration; PROP-2026-09-15-002
+  Confidence: High
+  Evidence: Announcement states the policy "allows for learning models with greater sparsity without sacrificing accuracy" and "makes inference more efficient, allowing for recognition with fewer movements." Chapters: "Goal: Sparser Models" (5:07), "Results in Learning Models with Extra Sparsity" (20:12), "Inference Ability" (23:56). Documented at docs.thousandbrains.org/docs/salience-sm. Magnitudes were not extracted — the video was not transcribed.
+
+PRS-57:
+  Problem: Model-based policies cannot guide a sensor until a learning module has enough evidence to form a hypothesis — a bootstrap gap at the start of every encounter with a new object.
+  Resource: A model-free saliency policy operating at the sensory-module level, upstream of any learned model.
+  Solution: The saliency policy runs in tandem with model-based policies, with the stated goal of having sensory modules "quickly gather relevant information to bring the learning modules in as soon as possible" — model-free perception buys time for model-based perception.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Visual Saliency for Efficient Learning and Exploration; PROP-2026-09-15-002
+  Confidence: High
+  Evidence: Announcement states the model-free saliency policy "can work in tandem with model-based policies, with the goal of having the sensory modules quickly gather relevant information to bring the learning modules in as soon as possible."
+
+PRS-58:
+  Problem: Whether saliency-driven movement and burst sampling are redundant or complementary mechanisms for efficient evidence-gathering.
+  Resource: Burst sampling, contributed to Monty by community/team member Ramy Mounir.
+  Solution: Reported as synergistic with the saliency policy rather than overlapping — the two compose.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Visual Saliency for Efficient Learning and Exploration; PROP-2026-09-15-002
+  Confidence: Medium
+  Evidence: Announcement states the new policy "has some nice synergies with the burst sampling that was recently added to Monty by @rmounir." The nature of the synergy is asserted, not quantified, in the post.
+
+PRS-59:
+  Problem: Monty attends to discrete sensed points, but biological attention selects extended regions of space — and the theory has no account of what fixes an attentional area's shape or extent.
+  Resource: The proposal that attentional areas are defined by a *set of cortical columns*, considered against the rival proposal that they are initially amorphous and then narrowed to a location.
+  Solution: Two competing, distinguishable structural hypotheses about the substrate of an attended region, either of which would make "attention area" a derived rather than stipulated quantity.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: Medium
+  Evidence: Video chapters at 23:42 ("Are Attentional Areas Defined by a Set of Cortical Columns?") and 34:37 ("Are Attentional Areas Amorphous Followed by Narrowing Down Location?").
+
+PRS-60:
+  Problem: Model-free policies must be specified before a model exists, so they cannot be justified by reference to what the model predicts — a bootstrapping problem at the base of the sensorimotor loop.
+  Resource: Prediction error, taken at both short and long timescales, proposed as the single general framing from which model-free policies could be derived.
+  Solution: A candidate unification in which the same quantity that drives model-based hypothesis testing also grounds the pre-model policies, removing the need for a separate hand-specified policy vocabulary.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: Speculative
+  Evidence: Session description: "There are high-level questions about how model-free policies are defined in the first place, and whether prediction error (both in the long and short term) could be used as a general framing."
+
+PRS-61:
+  Problem: Monty leaves objects before recognizing them, which degrades object recognition.
+  Resource: A "stay on object until recognized" policy, combined with gating of sensory input to attended regions.
+  Solution: Attention reframed as an operational recognition aid rather than a phenomenological add-on — a policy whose success is measured directly in recognition accuracy.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: High
+  Evidence: Chapter at 40:03, "'Stay on Object until Recognized' Policies"; described in the session summary as a way "to help with object recognition."
+
+PRS-62:
+  Problem: Voting across columns requires that the voting columns share a location reference, but columns anchor their grid cells independently.
+  Resource: The session's treatment of voting and grid-cell anchoring together (1:20:05), and the question of whether modeling with multiple columns rather than one makes attention *easier* rather than harder (52:29).
+  Solution: An argument that the multi-column case may be the tractable one — that shared anchoring is what supplies the reference an attentional region needs, rather than an extra cost to be paid.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: Medium
+  Evidence: Chapter structure at 52:29 and 1:20:05.
+
+PRS-63:
+  Problem: A research program's claim to progress is unfalsifiable if its goals are restated after the fact.
+  Resource: A published quarterly review that scores the prior quarter against pre-stated open theory questions and records an unmet item explicitly — top-down connections / parent-to-child orientation "Not Started, Remains on the List for Next Quarter."
+  Solution: The program supplies its own progress ledger, with failures carried forward under their original names rather than absorbed into the next quarter's framing.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Video chapter at 3:23; Q3 priorities list re-enters the same item at 11:43 ("Adding Top-Down Connections into Monty").
+
+PRS-64:
+  Problem: Compositional objects — objects made of other objects — were a standing gap in Monty's modeling capability.
+  Resource: Compositional modeling fixes, a new compositional-object and sticker dataset integrated into the benchmark suite, and hypothesis-channel combination.
+  Solution: Compositional modeling reported as "working well," with Q3 committing to V1 of compositionality-benefits figures — i.e., a quantitative claim about *what compositionality buys*, not only that it runs.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Chapters at 2:49, 3:00, 3:09, 3:30; Q3 priority at 11:23.
+
+PRS-65:
+  Problem: Attention had been an open theory question without a scheduled home in the roadmap.
+  Resource: Q3 open-theory priorities naming attention first, with three research items attached: model-free segmentation for focus-until-recognized, model-based policies and attention for compositionality, and symmetry representations with child-parent relative orientations.
+  Solution: Attention is promoted from brainstorm topic to scheduled research with defined deliverables — converting the 2026/06 sessions' open questions into dated commitments.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Chapters at 9:55, 10:15, 10:57, 11:15, 10:50.
+
+PRS-66:
+  Problem: An open research program that is hard to enter cannot recruit the outside contributors its progress depends on.
+  Resource: Documentation brought current, future-work sections rewritten with beginner-friendly tasks explicitly labeled, `tbp.teleop` and `lazyconfigs` published, a new Developer Advocate hired, and 180 PRs merged across 17 repositories.
+  Solution: Onramp construction treated as a first-class quarterly deliverable alongside theory — the program's reproduction mechanism made an explicit object of planning.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Chapters at 5:47, 6:30, 8:20, 8:34, 9:01, 9:09, 9:32.
+
+*Total PRS triplets: 66*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

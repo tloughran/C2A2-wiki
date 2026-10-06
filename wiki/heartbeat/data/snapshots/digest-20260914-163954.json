@@ -1,0 +1,140 @@
+{
+  "seed": false,
+  "generated": "2026-09-14",
+  "generated_at": "2026-09-14T16:39:54Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 200,
+    "high_relevance": 3,
+    "primary_themes": "Capability Jump + Market Platform"
+  },
+  "signals": [
+    {
+      "title": "ORQA: An Occupation-Realistic Question and Answer Framework for LLM Professional Knowledge",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12366",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "We present ORQA, a method for testing occupation-level knowledge in large language models. Prior methods either map abstract LLM skills to occupations via task definitions or utilize expert knowledge which is difficult to obtain at scale and expensive.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.713455+00:00"
+    },
+    {
+      "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12191",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "market_platform"
+      ],
+      "summary": "Comparing and selecting task-oriented LLM agents increasingly relies on a low-cost offline evaluation gate: persona-driven LLM user-simulators converse with each candidate, an LLM-as-a-judge scores the transcripts, and the higher-scoring agent is promoted. We introduce GAUGE, a reusable offline protocol that measures whether this gate's ranking matches a grounded verifiable reward across 25 agents from six providers on the $\\tau^2$-bench and SimulatorArena benchmarks, separating two kinds of evaluation validity that release practices conflate: ranking validity and construct validity.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.687941+00:00"
+    },
+    {
+      "title": "Toward Reliable Railway-Bogie Response Prediction Using Multifidelity TDNN and Physics-Informed Residual Learning",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2609.12018",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Railway engineers need simulation models that predict vehicle responses across operating scenarios that cannot be tested exhaustively. Agreement with representative measurements provides essential evidence, but calibration at a limited set of conditions does not guarantee accuracy elsewhere.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.402802+00:00"
+    },
+    {
+      "title": "Sam Altman calls for pacing AI development but promises rapid progress will continue",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/sam-altman-calls-for-pacing-ai-development-but-promises-rapid-progress-will-continue/",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Sam Altman is doubling down on slowing AI development. OpenAI now runs safety checks before major training runs, and according to The Information, the company has been talking with Anthropic and Google for months about joint self-regulation.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 14 Sep 2026 09:39:59 +0000",
+      "first_seen_at": "2026-09-14T16:39:50.170894+00:00"
+    },
+    {
+      "title": "Representation-based Masked Diffusion Model",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12382",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Masked Diffusion Models (MDMs) have emerged as a compelling paradigm for language modeling, offering the capability for efficient parallel text generation. However, existing parallel sampling methods typically update multiple masked tokens independently and ignore the complex mutual dependencies among the masked tokens.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.716483+00:00"
+    },
+    {
+      "title": "CueMem: Cue-Guided Context Reconstruction for Long-Term Conversational Memory",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12354",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Long-term conversational agents must answer user queries by recalling information from extended dialogue histories, yet directly using the full history is costly and often unreliable, while compressed memory units may lose fine-grained evidence needed for question answering. Motivated by the reconstructive view of autobiographical memory, we propose CueMem, a cue-guided framework that treats extracted memory records as retrieval cues rather than self-contained evidence and reconstructs query-relevant dialogue context from their source turns.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.711037+00:00"
+    },
+    {
+      "title": "HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12260",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Large language models (LLMs) can generate biomedical hypotheses, but it remains unclear whether they truly reason from scientific evidence or simply produce convincing-sounding ideas. To study this, we combine three major biological databases: the Kyoto Encyclopedia of Genes and Genomes (KEGG), Rhea, and UniProt, into a unified biochemical knowledge graph and construct a benchmark of 550 paths connecting enzyme sources to rare disease endpoints, yielding 13,200 hypotheses from six LLMs under four conditions varying the biological information each model receives: source enzyme only, full biological path, or source and disease endpoint only.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.697216+00:00"
+    },
+    {
+      "title": "The Cost of Compression: A Rate-Distortion Limit on Factual Hallucination",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12111",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Factual hallucination in closed-book question answering is often treated as a coverage problem: a model fails because the relevant fact is absent from its internal memory. This view misses a second source of error.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.678404+00:00"
+    },
+    {
+      "title": "What Counts as a Mistake? Annotating Recitation Events in Quran Memorization Transcripts",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.12085",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Checking Quran recitation from an ASR transcript requires distinguishing unresolved mistakes from repetitions, repairs, opening formulas and accepted spelling differences. We report a completed human annotation of 100 production recording cases: 348 scored units and 162 localized events across ten combined labels.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.673651+00:00"
+    },
+    {
+      "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2609.11955",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Large language models are increasingly used for automated fact checking, but end-to-end prompting often entangles evidence retrieval, reasoning, and uncertainty estimation, making failures difficult to diagnose and confidence difficult to trust. We present R2VC, a modular retrieve, reason, verify, calibrate architecture for evidence-grounded fact checking with citations and abstention.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 14 Sep 2026 00:00:00 -0400",
+      "first_seen_at": "2026-09-14T16:39:48.670924+00:00"
+    }
+  ],
+  "schema_ver": 1
+}

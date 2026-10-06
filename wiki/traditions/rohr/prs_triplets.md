@@ -1,5 +1,5 @@
 # Richard Rohr — PRS Triplets
-*Maintained by the Richard Rohr Agent | Last updated: 2026-04-29*
+*Maintained by the Richard Rohr Agent | Last updated: 2026-09-01*
 *Source: Resurrecting Civility RC Pilot — Falling Upward, The Universal Christ, Everything Belongs*
 
 ## Format
@@ -415,4 +415,540 @@ PRS-44:
   Confidence: Speculative
   Evidence: Tuesday (Lewis). **The operationalization is the proposal's inference, not Lewis's stated claim, and is flagged as such.** Lewis describes what love does; the move to "therefore this is the diagnostic test for whether a reading is loving" is ours. Same guest-voice caveat as PRS-43.
 
-*Total PRS triplets: 44*
+---
+PRS-45:
+  Problem: Claims to unitive or mystical perception are the standing methodological weakness of contemplative traditions as network inputs. Defined by doctrine the category becomes sectarian; defined by experience-report it becomes unfalsifiable; defined by practice it collapses into technique. PRS-01 asserts that non-dual knowing is a distinct epistemic mode, but supplies no marker by which a third party could tell whether two traditions are describing the same state, or whether anyone is in it at all.
+  Resource: Rohr's single diagnostic - perceived connectivity of all things, offered as a change in the seeing rather than in the seen ("they look out from a different pair of eyes") - held together with the edge condition he volunteers as the same claim's failure clause: Francis "pushes all of our seeing to the absolute edge by always including those whom other systems might too easily exclude," and a mysticism that loses that position "might be mini-mysticism, or even church mysticism, but it is never Franciscan mysticism."
+  Solution: Define the mystical state by its perceptual signature rather than by content, practice, or affect - and then check the signature behaviourally. If the claimed perception is of the connected core of reality, then systematic exclusion of any part of reality's population is evidence against the claim, and exclusion is observable by third parties. This is the first item in the Rohr corpus that makes a contemplative claim engageable by the network's perception-side programs rather than merely admirable, and it supplies the falsifier from inside the tradition rather than as an external demand.
+  Date Added: 2026-09-01
+  Source: Grace and Connectivity (CAC Daily Meditations, Week 32 opening); PROP-2026-08-09-002
+  Confidence: High
+  Evidence: Verbatim: mysticism is "only available to those who go beyond the surface and exterior, those who experience the inner *grace and connectivity* of all things"; and "I emphasize connectivity because that unteachable gift is what I always see in true mystics." **Rohr states the edge condition as a definitional boundary; reading a definition as a third-person test is this batch's move, not his.** **Standing tension, not to be averaged:** Hoffman's interface theory posits the same shape - a hidden connected substrate behind a veiling surface - but holds the veil to be evolutionarily fixed and fitness-serving, hence not liftable by insight. Rohr claims some do lift it. That is a substantive disagreement about whether the interface is penetrable, and it should be logged as a tension rather than filed as the convergence it superficially resembles.
+
+PRS-46:
+  Problem: If the divine pattern is genuinely present in all matter (PRS-03), why is it so unevenly perceived, and what does the sacred/profane partition actually track? A second and sharper version: Rohr claims true mystics "seldom if ever bring bad news" and that "all mystics are positive people - or they are not mystics." As stated that is either a substantive finding about reality or a selection effect in which the tradition counts as mystics only those who report good news, and nothing in the corpus distinguishes the two.
+  Resource: Three moves that all relocate the variable from the world to the observer. (a) The desecration reframe: "There are not sacred and profane things, places, and moments. There are only sacred and *desecrated* things, places, and moments - and it is we alone who desecrate them by our willful blindness and lack of reverence." (b) The mutuality principle: "a real equivalence and mutuality between the one who sees and what can be seen," a "symbiosis between the mind and heart of the seer - and to what they will then pay attention," with Francis able to grant other beings "mutuality, subjectivity, 'personhood,' and dignity" only because he had first accepted his own. (c) The recognition constraint: only love already present internally can recognise love externally, so the mystic's characteristic labour is the handing over of inner negativity and fear.
+  Solution: Nothing needs to be made sacred; what varies is whether a perceiver desecrates it, and the perceiver's capacity is itself downstream of what they have granted themselves. This makes the tradition's claim falsifiable in principle at the level of observer states rather than object properties, and it names a short list of testable observer variables ("our own lack of fascination, humility, curiosity, awe, and willingness to be allured forward") rather than appealing generally to grace. It also supplies the honest reading of the positivity claim: original blessing is a prior the lineage carries and transmits, not a conclusion it reaches. That explains the "seldom if ever" uniformity without positing a finding, and leaves open the interesting question - whether the prior is well calibrated.
+  Date Added: 2026-09-01
+  Source: The Infinite in the Finite (CAC Daily Meditations, Week 32 Monday) and Remaining in Love (Week 32 Friday) and Grace and Connectivity (Week 32 opening); PROP-2026-08-12-040; PROP-2026-08-16-003; PROP-2026-08-09-002
+  Confidence: Medium
+  Evidence: All three passages are Rohr's own voice, the first two adapted from *Eager to Love* (Franciscan Media, 2024 ed.), 6-8 and 8-9. **The defect is recorded rather than laundered:** "all mystics are positive people - or they are not mystics" is unfalsifiable as written, because the second clause definitionally excludes every negative case. It is carried here only because the underlying recognition mechanism is testable even though Rohr's formulation of it is not. **The deflation of original blessing from finding to prior is this batch's reading, and the tradition itself would not put it this way.** **Standing tension, not to be averaged:** Rohr states the recognition constraint as an absolute gate (below threshold, nothing is perceived); Fredrickson's upward-spiral work states something adjacent as a gradient (below threshold, less is perceived), and she holds the measurements. Gate and gradient are not two wordings of one claim.
+
+PRS-47:
+  Problem: The tradition asserts a distinct epistemic mode (PRS-01, PRS-04) and an operational pathway (PRS-09), but "contemplative practice" enters the corpus as a category, not a procedure. Without a description of what the non-dual knower actually does, specific enough to be compared with the network's empirical accounts of attention, the claim can be admired and not assessed.
+  Resource: Two named attentional parameters from Dan Riley's Franciscan Lectio, licensed by Bonaventure - (a) enter the activity of knowing while the object is still "dark or unclear or veiled or obscured," and (b) "open the focal point of our gaze" rather than fix it - together with Rohr's own anti-abstraction guardrail: "Abstract ideology will not get us very far, and much common religion is ideology more than any real encounter with Presence," so one should "start with anecdotal experience and then build from there."
+  Solution: Specify non-dual knowing as a policy over attention rather than a faculty: suspend the demand for resolution before engagement, hold a wide rather than a point focus, and generalise upward from the concrete instead of downward from the formulation. The mode is then characterised partly by what it declines to produce - "wonder ... instead of dualism or certainty" - which is a stated output condition rather than a mood. It also converts the rejection of top-down religion from a complaint into a predicted failure mode, and treats contemporary rejection of it as diagnostic rather than pathological.
+  Date Added: 2026-09-01
+  Source: Sacred Reading: A Pathway to Connectivity (CAC Daily Meditations, Week 32 Wednesday) and The Infinite in the Finite (Week 32 Monday); PROP-2026-08-16-002; PROP-2026-08-12-040
+  Confidence: Medium
+  Evidence: Riley, *Franciscan Lectio* (Paraclete Press, 2022), 51-54, as excerpted; the guardrail is Rohr's own voice. **Guest-voice caveat, and a heavy one:** the Wednesday meditation carries no Rohr reflection paragraph at all - it is Clare, then Riley, with editorial framing only, so this is Riley's reading of Clare under Rohr's curation, two removes from Rohr arguing, and Riley marks his central claim as belief ("I believe"), not exegesis. **Network defect exposed, and worth more than the triplet:** the two parameters are separable and the network has been conflating them. Parameter (a) is consistent with the working guess that contemplation is precision reduction; parameter (b) is about the breadth of the generative model's attentional field, which is a different quantity. Rohr wiki Active Question 4 has treated them as one, and the answer changes what a test would measure.
+
+PRS-48:
+  Problem: PRS-03 holds the Universal Christ as the tradition's anchor claim, but the corpus has carried it as a Christological and devotional thesis. Without an ontological premise it reads as pious re-description - a way of regarding things rather than a claim about being - and it cannot be assessed against the network's monisms or against its Thomists.
+  Resource: John Duns Scotus and the doctrine of **univocity of being** - that being can be spoken of in one voice across God, self and world - named by Rohr directly and in his own voice, with the Latin term supplied, glossed as creation being "one giant symphony of mutual sympathy," and terminating in Augustine's "the one Christ, loving himself."
+  Solution: Ground the Universal Christ in a fourteenth-century ontological thesis with an independent argumentative history, so the claim becomes precise: *the same sense of "is" applies across creator and creature*. This is exactly the premise that distinguishes Rohr's position from analogical Thomism, and it identifies where the network's Thomist wing must disagree if it disagrees at all. It also converts several existing Rohr-Stump agreements into things that have to be re-audited rather than assumed.
+  Date Added: 2026-09-01
+  Source: Remaining in Love (CAC Daily Meditations, Week 32 Friday); PROP-2026-08-16-003
+  Confidence: High
+  Evidence: Rohr names Scotus and univocity directly, in his own voice, in a meditation that carries a substantial Rohr reflection rather than curated extracts; adapted from *Eager to Love* (Franciscan Media, 2024), 8-9. A grep of `traditions/rohr/` on 2026-08-16 returned no prior occurrence of "univocity" or "Scotus" anywhere in the tradition, so this is a gap being filled and not a restatement. **Standing tension, not to be averaged, and the sharpest the network has surfaced:** univocity is the historic Scotist alternative to Thomist analogy, and the disagreement is not verbal. If the Rohr tradition is committed to univocity, the network holds two incompatible answers to how being is predicated of God and creatures, and the existing Rohr-Stump convergences may be convergences in English only. **A second caution travels with it:** univocity reads like a monist "one substance spoken of in one voice" and is not - it is a thesis about *predication*, and Scotus was not a monist. Any promotion of this to Kastrup, Levin, or Hoffman must carry the predication/substance distinction or the network will have manufactured a convergence.
+
+PRS-49:
+  Problem: PRS-41 established perspective-limitation and mutual emptiness as the *static* structural condition that makes love possible. It does not say how the movement toward union runs, and the movement is where the trouble is: if the agent generates it, the telos is an achievement and grace is decorative; if it is imposed, the agent's individuation is idle. A related complaint sits behind Active Question 1 - the tradition's epistemology has been recorded as a stance rather than as a statable structure, so it is not known whether it survives being written down.
+  Resource: Three statements of one shape. (a) Clare's mirror, read by Rohr as Western *theosis*: the divine "image" is objectively given at conception and "likeness" develops subjectively over time, with a single operator - "all we can really do is polish our own mirror to reflect the gift of this Godself more perfectly." (b) Rohr's Philippians 2:12-13 formulation, that "such a victory is a total gift from God, and yet we must also want it very much," with the identity claim "what we seek is what we are. In fact, that is what makes me seek it!" (c) Sweeney's proposal that reaching prayer originates from "that human place inside us where God resides" and functions as connective tissue rather than as a request.
+  Solution: An internal-target model with a stated invariant and a stated update rule: a fixed given that is already constitutive of the seeker, plus a fidelity-improving operation the seeker performs. Effort and gift are then not two contributions to be apportioned, because the wanting is itself the operation of the gift - which is what PRS-41 needed and did not have. This is also the first thing in the corpus with the shape a formalization would require, so Active Question 1 can now ask whether the model survives being written down rather than whether Rohr has one.
+  Date Added: 2026-09-01
+  Source: Saint Clare of Assisi: Reflecting the Image of God (CAC Daily Meditations, Week 32 Tuesday); Remaining in Love (Week 32 Friday); The Mysticism of Francis and Clare: Weekly Summary (Week 32 Practice); PROP-2026-08-14-031; PROP-2026-08-16-003; PROP-2026-08-16-004
+  Confidence: Medium
+  Evidence: (a) and (b) are Rohr's own voice on fully retrieved pages. (c) is Sweeney, *Experiencing God* (Monkfish, 2026), 53-55, under curation, and Sweeney hedges it himself ("It may be that..."); the accompanying Hasidic gloss from Pinchas of Koretz is doing rhetorical rather than argumentative work. **Two weak points, named:** the identity claim "what we seek is what we are" is asserted without argument, and whether it escapes the gift/effort dilemma or merely restates it as a paradox is not settled by the passage. **Standing tension, not to be averaged:** Rohr endorses *theosis* as "a true, objective sharing and growing in our divine nature," and concedes the language "would have seemed presumptuous or even heretical to many (as it may even seem today)." Stump's *The Image of God* (2022) uses the same phrase in a Thomistic register where union is the highest good but the creature does not share into the divine nature. One phrase, two measurably different claims; the shared wording must not be allowed to imply a shared position. A further caution against an easy Friston reading: polishing a mirror toward a fixed prior looks like prediction-error minimization, but Rohr's target is a person, not a distribution, and nothing in the meditation is about inference.
+
+PRS-50:
+  Problem: Active Question 10 asks whether the divine "need" of PRS-41 is a genuine structural claim or anthropomorphic accommodation, and whether it can be held alongside classical divine simplicity. As posed, the question is stuck: "God has needs" invites the anthropomorphism objection immediately, so the position cannot be adjudicated on its merits.
+  Resource: Ilia Delio's two-operation analysis of Franciscan incarnational mysticism, selected and endorsed by Rohr: "Love gives itself away - this is God's poverty. Love turns toward the other so it can give itself to the other - this is God's humility," with *kenosis* read as "the descent of the Word" rather than as a temporary posture, and with the deflationary reading explicitly foreclosed ("It is how God expresses [Godself] in concrete reality"; "The humility of God is not an abstract concept").
+  Solution: Reformulate the disputed claim from "God has needs" to "God's mode of being is self-donative." The reformulation does not obviously require divine lack, and so does not obviously break simplicity. What changes is not that the question is answered but that it now has a candidate formulation precise enough to be adjudicated - which is the increment over PRS-41, where the claim rested on reading Ex 20:5 and 34:14 as structural rather than accommodating.
+  Date Added: 2026-09-01
+  Source: Incarnation: The Humility of God (CAC Daily Meditations, Week 32 Thursday); PROP-2026-08-14-032
+  Confidence: Medium
+  Evidence: Delio, *The Humility of God: A Franciscan Perspective* (2005), 19-20 and 25, as reprinted. **Guest-voice caveat, and the strongest in this batch:** this issue carries no Rohr reflection paragraph. The body is two long Delio extracts with Rohr's editorial framing sentences only, so Rohr's contribution is selection and endorsement, not authored argument. Record this as *what Rohr commends*; the argued version has to be found in Rohr's own voice before PRS-41 can be strengthened on its basis. **Standing tension, not to be averaged:** the passage strains against divine simplicity and impassibility, which the Thomist wing holds, and Stump's own open question about whether the problem of mourning applies to God is the mirror image of this one approached from the analytic side. Both traditions are pushing on the same joint from opposite directions and neither has conceded.
+
+PRS-51:
+  Problem: Active Question 2 asks how non-dual awareness relates to the Summa 2026 thesis that perspective-limitation individuates conscious agents. The two look incompatible on the obvious reading: if non-duality dissolves the distinction between knower and known, then the individuating limitation is what contemplation exists to destroy, and the thesis loses its telos.
+  Resource: The La Verna episode as reported by Sweeney - Francis, during a forty-day retreat and overheard by Brother Leo, repeating one question and nothing else: who are you, God, and who am I. Sweeney treats the continuing uncertainty as the point rather than as a stage to be passed, against a piety in which sanctity means the existential questions have been settled.
+  Solution: The practice does not dissolve the two-term structure into undifferentiated unity; it *holds* it. The question keeps both poles in play across a sustained period rather than collapsing them, which makes non-duality in this tradition compatible with retained individuation rather than opposed to it. That is what the Summa 2026 thesis needs, and what a dissolution reading of non-duality would deny. The tradition has had the thesis and has had contemplative practice as a category; this is the first practice whose *content* is the thesis.
+  Date Added: 2026-09-01
+  Source: The Mysticism of Francis and Clare: Weekly Summary (CAC Daily Meditations, Week 32 Practice); PROP-2026-08-16-004
+  Confidence: Medium
+  Evidence: Sweeney, *Experiencing God* (Monkfish, 2026), 53-55, as excerpted; the prayer is reported as repeated "and nothing else." **Guest-voice caveat:** there is no Rohr reflection in this issue at all - the substance is Sweeney's under Rohr's curation. **The weak point, named:** whether the practice *holds* rather than *dissolves* the two terms is this batch's reading of a reported hagiographic episode, and Sweeney does not frame it in those terms. **Standing tension, not to be averaged - route it as an anomaly, not a convergence:** under active inference an agent should act to reduce uncertainty about its self-model, and this practice deliberately sustains it for forty days. That runs against the obvious answer to Active Question 4, and it pulls in the opposite direction from PRS-47's first parameter; the two cases should be considered together, because a framework that accommodates both has said something, and one that accommodates either alone has not.
+
+PRS-52:
+  Problem: If perspective-limitation is what individuates conscious agents, an individuated agent appears to have no non-arbitrary reference point: every standard it could appeal to is either internal, and so its own limitation restated, or external, and so not its own. PRS-03 gives the cosmic side of the Universal Christ structure and the corpus has nothing on its first-person side.
+  Resource: Rohr's formulation of the true self as an absolute reference point that is *both* utterly within the person *and* utterly beyond them at the same time, with Catherine of Genoa and Colossians 1:27 as the tradition's own witnesses; and his operative distinction, which is not between self and no-self but between two things that both feel like self.
+  Solution: The reference point need not be either wholly internal or wholly external. Indexed-but-not-exhausted is a coherent third option, and it is precisely what makes a limited agent's convergence toward unity non-arbitrary rather than imposed. This supplies the first-person half of the structure PRS-03 has carried only cosmically, and it is the closest the corpus comes to engaging the Summa 2026 central theme directly rather than by analogy.
+  Date Added: 2026-09-01
+  Source: Discovering God Within (CAC Daily Meditations, Week 34 opening); PROP-2026-08-23-005
+  Confidence: High
+  Evidence: Adapted from *Immortal Diamond* (Jossey-Bass, 2013), 1-5. Rohr states the both/and structure directly and treats the balance as the thing most religion fails to achieve - he is aware it is the hard part, not asserting it casually. **Provenance, logged so that later citation cannot inflate it:** Rohr notes in the source's own reference note that the true self / false self vocabulary comes from the paediatrician and psychiatrist D. W. Winnicott (1896-1971) by way of Thomas Merton, not from the Christian mystical tradition directly. Any cross-tradition citation of the pair should be dated to twentieth-century developmental psychology, not to Bonaventure or the Cappadocians. **Standing tension, not to be averaged:** a locus that is genuinely the agent's own and genuinely not bounded by the agent is also what Kastrup's dissociated-alter account needs, and the structural fit is close. Rohr is not an idealist and must not be cited as one; the convergence is structural, not doctrinal, and collapsing it would misrepresent both.
+
+PRS-53:
+  Problem: Contemplative claims are routinely dismissed on the ground that introspective reports cannot distinguish genuine insight from ego-serving construction. The tradition has had no answer to this that was not itself a first-person report.
+  Resource: Rohr's own concession that the confusion is structural rather than culpable - both the true and the false self are experienced from the inside as one's own selfhood, so "going inside" is necessary but not sufficient - paired with his requirement that inner authority be balanced against the outer authority of Scripture and tradition, and one's own experience validated against others', or the result is fantasy rather than reality.
+  Solution: The contemplative claim is not purely first-person by design. The tradition's own method is triangulation across three channels - inner report, textual tradition, and other practitioners' experience - which is the shape of an intersubjective validation protocol rather than a private one. This is Rohr supplying his own falsification condition, which is rare in this corpus and is what makes the material citable rather than merely quotable. It is also the internal counterpart to PRS-45's external check: PRS-45 gives a third party a test, this gives the practitioner one.
+  Date Added: 2026-09-01
+  Source: Discovering God Within (CAC Daily Meditations, Week 34 opening); PROP-2026-08-23-005
+  Confidence: High
+  Evidence: Both halves are stated in the source in Rohr's own voice, and the validation requirement is stated as what keeps the practitioner grounded in reality rather than fantasy. Relevant to the open Rohr-Stump independence check: validating one's experience against another's is Franciscan practice here and Stumpian second-person epistemology there, and the note in the 2026-08-10 log stands - the live question is whether the network's proposals have been importing Stump's category into Rohr's material rather than finding it there.
+
+PRS-54:
+  Problem: PRS-15 through PRS-17 record the egoic self as the obstacle - what the agent must let go of to participate in the loving-unity telos. Read alone that is an invitation to self-hatred, and it makes the goal psychologically implausible: contemplative and ascetic traditions routinely treat the ego as an enemy to be defeated. A separate problem sits alongside it: PRS-02's order-disorder-reorder and the two-halves frame are widely read as a stage theory keyed to age, which would make the tradition's central developmental claim trivially checkable and trivially false.
+  Resource: The "launching pad" model - the false self as a set of temporary costumes (body image, job, education, clothes, money, success) that are "quite good and necessary as far as it goes. It just does not go far enough" - together with a direct counter-instance pair: "Some spiritually precocious young people see through the false self rather early, while some old men and old women are still dressing it up."
+  Solution: Relocate the defect from the *content* of the false self to its *timing*, and then detach the timing from chronology. Nothing about the small self needs to be destroyed or repented of; it needs to be outgrown, and Rohr says false selves "usually die in exposure to greater light" rather than by being attacked - which dissolves the self-hatred failure mode without weakening the critique PRS-15 to PRS-17 record. And because the crossing is not age-locked, the two-halves scheme is a claim about a *condition* (separation from the Whole) rather than a life stage, which is both the stronger reading and the one that survives the obvious disconfirmation.
+  Date Added: 2026-09-01
+  Source: Releasing Our False Self (CAC Daily Meditations, Week 34 Tuesday); PROP-2026-08-25-051
+  Confidence: High
+  Evidence: Full text retrieved from the published CAC page. Verbatim: "our false self is quite good and necessary as far as it goes. It just does not go far enough, and it often poses and substitutes for the real thing. That is its only problem, and that is why we call it 'false.'" And: "Discovering the true self is not just a matter of chronological age." The accompanying redefinition of sin as "the result of being separate from the Whole" - a condition rather than an act - is also verbatim, and sits as a live disagreement with Stump's *Atonement*, where guilt and shame are distinct and shame tracks a defect in the person. **Rohr asserts the two counter-instances rather than evidencing them; no distributional support is offered.**
+
+PRS-55:
+  Problem: If the true self is genuinely more than the false self, then releasing the false self should be experienced as a loss, and reports from contemplatives that it is not are routinely dismissed as consolation. The tradition has had no way to distinguish a real finding here from a pious one.
+  Resource: Rohr's part/whole account of attachment - defence of the parts is a function of not being connected to the Whole - and the prediction he draws from it: "it will feel precisely as if we have lost nothing."
+  Solution: The prediction is that felt loss at the terminus is zero rather than merely compensated, because the motive for protection is removed rather than overridden. Rohr is explicit that this is compatible with real suffering during the transition ("almost always entails some suffering"), so the claim is about the terminus and not the passage - and that distinction is what makes it checkable against first-person report rather than immunised by it. It is a genuinely falsifiable prediction, which is rare in this corpus, and it says the reorganisation is not a trade.
+  Date Added: 2026-09-01
+  Source: Releasing Our False Self (CAC Daily Meditations, Week 34 Tuesday); PROP-2026-08-25-051
+  Confidence: High
+  Evidence: Verbatim: "When we are able to move beyond our false self ... it will feel precisely as if we have lost nothing. While this 'moving beyond' almost always entails some suffering, it ultimately feels like freedom and liberation. When we are connected to the Whole, it lessens our need to protect or defend the mere parts. We no longer need to compare and compete." **Standing tension, not to be averaged:** Kastrup's dissociated-alter account gives an explicit metaphysics for exactly this part/whole picture, and "separate from the Whole" is dissociation in devotional register - but the two differ on whether the separation is illusory (Kastrup) or real but provisional (Rohr), and that is not a difference of emphasis. Levin's developmental boundaries, which individuate a system early and must be renegotiated for it to participate in a larger one, are the closer structural analogue and are worth a direct comparison rather than an analogy.
+
+PRS-56:
+  Problem: PRS-23 to PRS-25 record the Enneagram as a typology of perspective-limitations - nine characteristic ways an agent fails or succeeds in moving toward loving unity. Two things are missing. The typology is not connected to the true/false self material, which the corpus treats as a separate strand; and it is stated as a taxonomy of persons, which leaves no way to say anything about the environment those persons are in.
+  Resource: Rohr's "Type Three culture" - a society whose default organising principle is image, achievement and approval - together with the developmental mechanism he gives for Threes, that children learn love is earned through performance rather than given freely, producing over-identification with the presentable self at the expense of authenticity.
+  Solution: Reframe what is usually treated as personal pathology as environmental fit. In a Type Three culture the Three's strategy is rewarded and therefore invisible *as* a strategy, which predicts that the characteristic cost - loss of contact with the non-presentable self - will be both widely distributed and systematically under-reported. That is a claim about prevalence, and prevalence is checkable. It also matters for the C2A2 community-formation strand: if a culture can carry a characteristic compensation, community design has to account for which strategy the environment rewards, not only which individuals are present.
+  Date Added: 2026-09-01
+  Source: Type 3: Achieving Reality with Josh Radnor (Everything Belongs, CAC podcast); PROP-2026-08-25-052
+  Confidence: Speculative
+  Evidence: Publisher episode description, verbatim: "We live, as Fr. Richard puts it, in 'a Type Three culture' - a culture obsessed with image, achievement, and approval." **METADATA-ONLY, and the confidence rating is set by this and not by the claim's plausibility.** The audio (5697 s) and the CAC transcript were NOT retrieved; cac.org returns HTTP 403 to automated requests. Existence, title, date (2026-07-02) and duration were independently confirmed via the Apple Podcasts episode record and the show's Megaphone RSS feed. **The bridge to the true/false self framework is NOT claimed here.** The proposal's reading - that the Enneagram type is the specific shape the false self takes, so the typology is a taxonomy of construction strategies rather than of persons, which is why a culture can have one - is inference from *Immortal Diamond* and the proposal itself states it must not be attributed to this episode without listening. It is recorded as an open question rather than ingested as a claim.
+
+PRS-57:
+  Problem: Heightened sensitivity to what is wrong is the precondition of the prophetic perception PRS-58 to PRS-61 describe. It is also the precondition of burnout and self-absorption, which remove exactly the people most attuned to the injustice. What distinguishes the two outcomes? PRS-38 established that action is itself a mode of contemplation, but named no failure mode for the sensitivity that action requires.
+  Resource: Rohr's directional instruction to Enneagram Type Fours - that they turn their suffering *outward*, in solidarity with others, rather than inward into identity - alongside his naming of the Four's gift as the capacity to see beyond conformity.
+  Solution: Make the *direction of attention*, not the intensity of feeling, the discriminating variable. The same sensitivity yields solidarity or paralysis depending on whether the suffering is treated as material for identity or as a point of contact with others' suffering. This is a mechanism claim with a directional consequence - interventions targeting direction should outperform interventions targeting affect regulation - and it gives the tradition a *use* for suffering that is neither redemptive-by-itself nor merely to be endured, which is the term the Stump comparison has lacked on the Rohr side.
+  Date Added: 2026-09-01
+  Source: Type 4: Alchemists of Authenticity with Dorcas Cheng-Tozun (Everything Belongs, CAC podcast); PROP-2026-08-25-053
+  Confidence: Speculative
+  Evidence: Publisher episode description, verbatim: "Fr. Richard Rohr offers wisdom on the Four's gift of seeing beyond conformity and invites Type Fours to turn their suffering outward in solidarity with others." **METADATA-ONLY.** The audio (5703 s) and the CAC transcript were NOT retrieved (HTTP 403); existence, title, date (2026-08-07) and duration confirmed via Apple Podcasts and the Megaphone feed. **The mechanism reading above is a reconstruction of a one-sentence publisher gloss and should be checked against the audio before it is relied on.** The episode's sustainability material (Cheng-Tozun on burnout among highly sensitive activists) is deliberately not ingested: the description states that sustainable practices are offered but not what they are, and a triplet whose Solution is "unknown in detail" states no increment.
+
+PRS-58:
+  Problem: Claims that contemplative development reorganizes perception are usually unfalsifiable, because the evidence is first-person and undated. PRS-02 asserts that order-disorder-reorder describes intellectual development, and PRS-54 detaches that development from age - but neither supplies evidence that is external to the developing agent's own report.
+  Resource: Rohr's reading of the prophetic corpus as a longitudinal record. The prophets begin in judgmentalism, anger, and a superiority complex, and that stance collapses over the course of their own writings into something more patient and forgiving - with the prophet defined functionally as one who "sees reality in its fullness and dimension, rather than in dualities like totally right or totally wrong."
+  Solution: Treat canonical prophetic books as a naturally-occurring longitudinal corpus, and treat the reorganization as a measurable reduction in binary sorting *in the text itself*, independent of the author's self-report. Non-dual perception becomes the prophet's cognitive achievement rather than a mystical bonus, and the tradition acquires its first developmental claim that could be checked by somebody who does not share it. This is the closest Rohr comes to an empirical claim about cognition, and it is a text-metric task with a defined outcome variable.
+  Date Added: 2026-09-01
+  Source: Naming Our Idolatry (CAC Daily Meditations, Week 33 opening); PROP-2026-08-23-003
+  Confidence: Medium
+  Evidence: Adapted from Rohr, *The Tears of Things* (Convergent, 2025), xviii-xx. Rohr states the shift explicitly and locates it within the prophets' own writings rather than in later commentary, so the claim is in principle checkable against the text; the vault does not currently hold the corpus. **Standing tension, not to be averaged:** Rohr reads the prophetic corpus developmentally, as a single author's arc. Wright's exile-and-restoration frame holds that the announced alternative future is covenantal and concrete rather than a moral posture, and that second-temple context constrains what the corpus can be doing. This must not be ingested downstream as settled exegesis: either the developmental reading survives that context or it is a modern moral-psychology overlay on a corpus doing something else, and the Rohr tradition is not the one that can decide it.
+
+PRS-59:
+  Problem: "Idolatry" has no operational definition outside a confessional frame, so it cannot enter cross-tradition analysis at all - which is a loss, because it is the sin the prophetic material actually names. PRS-6 gives the adjacent claim from the knower's side (non-dual cognition decouples identity from the correctness of current beliefs); it says nothing about the status assigned to the object of commitment.
+  Resource: Rohr's definition - the habit of making things "God" that are not absolute, infinite, or objectively good - which is stated in terms of absoluteness and revisability rather than in terms of statues or rival deities.
+  Solution: Read idolatry as a precision-weighting error: assigning unrevisable, effectively infinite-precision status to a model that is in fact contingent. The prophetic corrective is then a *precision-reduction* operation rather than a moral scolding, which is a form the Friston register can receive and the confessional vocabulary cannot be.
+  Date Added: 2026-09-01
+  Source: Naming Our Idolatry (CAC Daily Meditations, Week 33 opening); PROP-2026-08-23-003
+  Confidence: Speculative
+  Evidence: Rohr's own wording licenses the mapping, but **the mapping is the proposal's construction and not Rohr's, and must not be cited as if it were his.** The load-bearing question is one only the Friston side can answer: whether a prior held at unbounded precision is formally distinguishable from one held at merely high precision, because Rohr's distinction between the absolute and the non-absolute depends on that being a difference in kind rather than degree. If it is only degree, this triplet weakens to a metaphor.
+
+PRS-60:
+  Problem: The C2A2 accelerator asks what happens when agents are richly informed about one another's perspectives, and assumes that better information about another tradition lowers the cost of taking its perspective. It has no articulated failure mode for the case where a tradition supplies its own members with pre-ascribed virtue.
+  Resource: Rohr's claim that for the untransformed self, religion is the most dangerous temptation of all, because an ego validated by religion has all bases covered - granted advance permission to demean and defraud under a covering of ascribed virtue.
+  Solution: Name a structural failure mode: a tradition can *raise* rather than lower the cost of perspective-taking, by making the member's current stance non-negotiable in advance. Any protocol that interacts traditions needs a check for this, and the check cannot be supplied by the tradition being checked. Note what kind of evidence this is - self-critical material supplied by a contemplative tradition about contemplative traditions - which makes it more citable in the C2A2 context, not less.
+  Date Added: 2026-09-01
+  Source: Naming Our Idolatry (CAC Daily Meditations, Week 33 opening); PROP-2026-08-23-003
+  Confidence: High
+  Evidence: Stated directly and at length in the source, and it is the thesis of *The Tears of Things* (Convergent, 2025) as a whole. To be evaluated alongside PRS-63, which names the complementary failure mode; the two are complements and should not be collapsed into one, because a tradition can exhibit either without the other.
+
+PRS-61:
+  Problem: The contemplative traditions describe prophecy in vocation language, which has no purchase on the network's process accounts of agency. PRS-58 supplies the perceptual half of Rohr's account of the prophet; it says nothing about what the prophet *produces*.
+  Resource: McLaren's characterisation of prophets as custodians of a society's best hopes who, on observing harmful behaviour, warn by picturing the future that behaviour leads to; and Ward-Lev's three-part decomposition of the prophetic role, whose third term is the moral imagination to articulate an alternative future.
+  Solution: Read the prophetic act as counterfactual rollout under a generative model - simulate the trajectory the current policy implies, simulate a reachable alternative, broadcast both. This is prediction, not fortune-telling, and Rohr's own "truth-tellers, not fortune-tellers" line independently licenses the reading. It is the most functionally specified description the Rohr corpus has produced, and it arrives from a tradition that had not previously handed the network one.
+  Date Added: 2026-09-01
+  Source: The Hebrew Prophets: Weekly Summary (CAC Daily Meditations, Week 33); PROP-2026-08-23-004
+  Confidence: Medium
+  Evidence: Both McLaren and Ward-Lev state the future-articulation function explicitly; **the computational vocabulary is the proposal's, the function described is theirs, and both are guest voices under Rohr's curation rather than Rohr arguing.** Do not anchor this to a Friston identifier from memory - the Friston register's identifier space has known conflicts, and the correct procedure is to read `master/C2A2_prs_triplets.md` for the current planning-as-inference bullet, then either record a convergence against it or state in writing that no current identifier carries the counterfactual-rollout claim.
+
+PRS-62:
+  Problem: Accounts of moral change usually treat grief as a consequence of recognising harm, not as an enabling condition for envisioning alternatives. If the ordering is the other way round, then every intervention that tries to move people to a better arrangement without first letting them mourn the present one is mis-sequenced.
+  Resource: Abby Norman's ordering claim, carried as the week's practice - that the first step of every invitation to a new way is to lament the way things are now - illustrated by Ezekiel's symbolic public actions and by a contemporary Oakland housing case.
+  Solution: Treat lament as an ordering constraint rather than a mood: representational commitment to the current arrangement must be released before an alternative can be constructed. This yields a falsifiable sequence claim, and it gives PRS-32's non-dual grief a functional role it did not have - grief is not only how moral information is metabolised without blame-partitioning, it is what clears the ground for PRS-61's alternative rollout.
+  Date Added: 2026-09-01
+  Source: The Hebrew Prophets: Weekly Summary (CAC Daily Meditations, Week 33 Practice); PROP-2026-08-23-004
+  Confidence: Speculative
+  Evidence: Norman, *You Can Talk to God Like That* (Broadleaf, 2021), 116 and 121, as excerpted. **Guest voice, and the evidence is thin by the source's own admission: two illustrations are not a test, and the claim is offered as a hypothesis worth checking rather than as an established finding.** **Standing tension, not to be averaged:** the ordering runs against a naive broaden-and-build reading in which positive affect does the broadening, and Fredrickson holds the data that could settle whether negative-affect processing is a precondition for the broadened repertoire or whether her measurements put the two in the opposite order. **Internal tension, also to be held open:** PRS-65 has joy arriving with grief fully intact and asserts no ordering between them; this triplet asserts a strict ordering between grief and imagination. Either they are about different pairs of states or one of them is wrong, and the corpus does not currently say which.
+
+PRS-63:
+  Problem: Both the tradition and the accelerator use reduced friction as an implicit success signal - a peaceful community is taken to be a reconciled one, and a tradition that is not fighting is taken to be healthy. If that proxy is wrong, then the interventions that most raise short-run conflict will be systematically discarded, including the correct ones.
+  Resource: Two claims from the same corpus that point the same way. Rich Villodas on peacemaking versus peacekeeping - "Peacemakers don't avoid conflict; in fact, sometimes peacemaking *creates* it. We see this with Jesus" - and Barbara Holmes on the prophet's social cost, that prophets are difficult to have around, ask for trouble, and have no politically correct bone, held against Rohr's own claim that prophets nonetheless work in community.
+  Solution: Decouple the target variable (a just settlement, an articulate dissent) from the proxy usually measured (absence of visible friction), and predict that genuine peacemaking will often *raise* short-run conflict. As a design constraint on the accelerator: a tradition that cannot tolerate its own dissenters loses exactly the signal the accelerator is built to elicit, and a rise in friction is therefore ambiguous evidence rather than bad news. This is a directional prediction and so is checkable.
+  Date Added: 2026-09-01
+  Source: The Beatitudes: Week Two: Weekly Summary (CAC Daily Meditations, Week 28) and The Hebrew Prophets: Weekly Summary (Week 33); PROP-2026-08-12-041; PROP-2026-08-23-004
+  Confidence: Medium
+  Evidence: Villodas verbatim from the Week 28 Wednesday entry; Holmes from the Week 33 summary. **Both are guest teachers, not Rohr - tradition-adjacent rather than Rohr's own voice - and the synthesis of the two into one claim is this batch's.** Complementary to PRS-60 and to be evaluated with it: PRS-60 names a tradition that pre-validates its member's stance, this one a tradition that expels the member who is correct and unwelcome. Both destroy the signal the accelerator is built to detect, by opposite routes.
+
+PRS-64:
+  Problem: The Beatitudes read as commands are either trivially unachievable or morally perverse - one cannot be commanded to mourn - and the tradition has had no account of what kind of thing they are. Behind that sits a larger gap: the Rohr corpus records the descent mechanism and the non-dual frame but is thin on how the tradition proposes to *measure* whether a person is in fact living in the kingdom.
+  Resource: A genre reclassification in Rohr's own voice - "The Beatitudes are paradoxical 'commandments.' They don't tell Christians what to do; they tell them what they will be like if they are living in the kingdom" - together with Jim Forest's eleven-question examination of conscience derived from the Orthodox use of the Beatitudes in preparing for confession, and Forest's objection that "spirituality" has come to suggest being "lifted above the world."
+  Solution: Converting an unfulfillable imperative set into a diagnostic set is what makes an instrument possible at all: if the Beatitudes describe rather than prescribe, possessing the traits is evidence of the state and failing to is diagnostic information rather than moral failure. Forest's instrument then operationalizes the descriptions as self-report items, and does so in a form that structurally blocks the escapist reading - every item names a specific other person ("What enemies do I love? For which enemies am I praying?", "Whose threatened life am I trying to safeguard?"). A diagnostic theory plus a self-administered instrument is exactly the shape of artifact the C2A2 measurement work needs from the contemplative traditions and had not received.
+  Date Added: 2026-09-01
+  Source: The Beatitudes: Week Two: Weekly Summary (CAC Daily Meditations, Week 28); PROP-2026-08-12-041
+  Confidence: High
+  Evidence: Reclassification verbatim from the Sunday entry, attributed to Rohr. Instrument and both objections retrieved verbatim from the Week Twenty-Eight Practice, citing Forest, *The Ladder of the Beatitudes* (Orbis, 1999), 69 and 142. **Guest-voice caveat on the instrument half:** the eleven questions are Forest's, under Rohr's curation; the reclassification that licenses them is Rohr's own. Forest's "Christian spirituality has nothing to do with losing contact with those who suffer" is close to Stump's second-person account of presence in the face of another's suffering, and both resist theorising suffering from a distance.
+
+PRS-65:
+  Problem: PRS-34 to PRS-37 give the tradition its account of descent - the mechanism of transition through suffering - and say nothing about the affective state on the far side, so the two-halves frame describes a passage with no described terminus. Worse, the standard affective model makes the terminus incoherent: joy and grief compete for one channel, so the bereaved either recover and become capable of joy or do not and remain incapable. Both the phenomenology of long grief and the pastoral evidence contradict this, and the tradition had no alternative model to offer.
+  Resource: Kate Bowler's paired assertion, offered as a promise she would "hang my life on" - that the grief will never be cured, *and* that joy comes anyway - with her explicit rejection of the Kierkegaardian position that remembered joy becomes the engine of present hurt; her characterisation of joy as "a kind of transcendence" that lifts one out of reality momentarily and "gives us back to ourselves, anew"; and Rohr's own claim that "to live joyfully in the midst of misunderstanding and persecution points beyond our smaller 'kingdoms' to the larger kingdom of God."
+  Solution: Three things, and they are one claim rather than three - the corpus asked whether they were, and this is the adjudication. (a) Joy and grief occupy separate channels, so joy is not a signal that grief has resolved and its arrival carries no implication about the grief's status; this dissolves the pastoral bind in which the sufferer reads their own joy as disloyalty without requiring that grief be shortened, and makes the two states independently measurable rather than a single scalar. (b) Adversity is therefore the discriminating condition: under favourable conditions joy is uninformative, and affect that does not track local adversity is the behavioural signature of an enlarged frame. (c) Joy is a *realignment event* of the same category as Rohr's descent-realignment, arriving from the opposite affective direction - both are transient encounters that leave the self repositioned - which unifies the tradition's two apparently opposed halves under one mechanism rather than leaving them as a paradox to be admired.
+  Date Added: 2026-09-01
+  Source: Job and the Mystery of Suffering: Weekly Summary (CAC Daily Meditations, Week 31 Practice) and The Beatitudes: Week Two: Weekly Summary (Week 28); PROP-2026-08-09-001; PROP-2026-08-12-041
+  Confidence: High
+  Evidence: Kate Bowler, *Joyful, Anyway* (Convergent Books, 2026), 5-6 and 9, quoted as the Week 31 practice; Bowler's own framing - that "reasonable people would be too reluctant to guarantee" the promise - marks it as a claim held despite its unlicensed appearance, not a platitude. The Week 28 line is Rohr's own. **The unification of Bowler's joy with Rohr's realignment language is this batch's inference; Rohr does not make the identification himself.** **Standing tension, not to be averaged:** this cuts against the simplest reading of broaden-and-build, whose undoing hypothesis treats positive affect as what dissolves lingering negative affect. Bowler asserts joy arriving with the grief fully intact and never undone. Either the undoing effect is narrower than the construct implies - applying to acute physiological arousal but not to grief - or what Bowler calls joy is a different state from the positive affect Fredrickson measures. Both readings are informative, and neither is a convergence. A second and independent disagreement sits alongside it: Rohr has the enlarged frame *producing* the joy, where broaden-and-build has positive emotion widening the frame. The causal arrow runs opposite ways.
+
+PRS-66:
+  Problem: The Rohr corpus is heavily weighted toward individual transformation - non-dual mind, two halves of life, Universal Christ - and holds almost nothing on how a community that carries those commitments should be *structured*. PRS-30 and PRS-39 establish that grace and the standing to believe propagate strictly person-to-person; neither says what organizational form sustains that propagation, or what happens to it when the form changes.
+  Resource: Rohr's structural claim about the pre-institutional church - "During Paul's lifetime, the Christian church was not yet an institution or a centrally organized set of common practices and beliefs. It was *a living organism* that communicated the gospel primarily through relationships" - McLaren's extension that Christianity "has been most vital when it has been energized by movements of self-organizing - or perhaps we should say 'Spirit-organizing' - cells," and Rohr's five-part normative specification for a future church: flatter, more inclusive, less "churchy," less patriarchal, and more concerned with fulfilling its mission statement than with reciting its philosophy statement.
+  Solution: Relationship density, not doctrinal specification, is the load-bearing transmission mechanism. Fidelity is preserved by the network's connectivity rather than by its rule set, which predicts that formalizing the rule set is a *symptom* of the network having thinned rather than a remedy for it - and it predicts the fourth-century centralization Rohr names as the inflection point at which the church stopped being countercultural and non-imperial. The same mechanism explains what the Franciscan lineage transmits: the cosmic vision is held as lifestyle rather than as doctrine, arrived at by way of a particular attachment to a particular person, so "most of them did not formulate it in theological words or academic concepts as much as in *lifestyles*." The five-part specification then gives the tradition a falsifiable self-description, and its last term - mission execution over statement recitation - is close to an auditable criterion.
+  Date Added: 2026-09-01
+  Source: The Way of the Early Church: Weekly Summary (CAC Daily Meditations, Week 24) and Grace and Connectivity (Week 32 opening); PROP-2026-08-12-042; PROP-2026-08-09-002
+  Confidence: High
+  Evidence: The "living organism" claim and the five-part specification are verbatim from Rohr's Monday and Friday entries; the lineage-transmission material is Rohr's own in the Week 32 opener. **Guest-voice caveat:** the decentralization-to-vitality correlation is McLaren's, offered historically rather than demonstrated. **A fourth candidate from this week was not ingested:** Stephanie Spellers's "homing device" - an asserted innate human responsiveness to communities driven by self-giving love, held to operate whether or not the observer is religious - is a guest voice asserting a universal human feature with no evidence offered, and the work it does is already carried by PRS-30 and PRS-39. This week is also the closest thing in the Rohr corpus to a design brief for the C2A2 community model itself, and should be read against `architecture/swarm-contract.md` rather than only filed as tradition content.
+
+PRS-67:
+  Problem: The true self / false self distinction is usually stated descriptively (two things that both feel like self) without an account of what *produces* the false one, which leaves it unfalsifiable and purely exhortatory.
+  Resource: A generative mechanism — thought itself as the constructor of the separate self — paired with Merton's "point of nothingness," an inner locus explicitly characterised as inaccessible to both cognition ("the fantasies of our own mind") and volition ("the brutalities of our own will").
+  Solution: Reframes contemplative practice as suspension of a specific self-modelling operation rather than as improved introspection, which makes the claim answerable to cognitive accounts of self-construction instead of only to spiritual authority.
+  Date Added: 2026-09-10
+  Source: The Glory of God in Us; PROP-2026-08-28-060
+  Confidence: Medium
+  Evidence: "Thinking creates the separate self, the ego self, the insecure self. The God-given contemplative mind, on the other hand, recognizes the God self, the Christ self, the true self of abundance and deep inner security."
+
+PRS-68:
+  Problem: Claims about a universal inner ground are hard to distinguish from claims about a rare achieved state available to mystics.
+  Resource: Merton's dual specification that the point of nothingness "is in everybody" AND that "I have no program for this seeing. It is only given" — universality of possession decoupled from availability of access.
+  Solution: Separates the ontological claim (everyone has it) from the epistemic claim (almost nobody sees it), so failure to experience it is not evidence against it — but at the cost of the claim's testability, which is worth naming rather than hiding.
+  Date Added: 2026-09-10
+  Source: The Glory of God in Us; PROP-2026-08-28-060
+  Confidence: Speculative
+  Evidence: "It is in everybody, and if we could see it we would see these billions of points of light coming together in the face and blaze of a sun that would make all the darkness and cruelty of life vanish completely.... I have no program for this seeing. It is only given. But the gate of heaven is everywhere."
+
+PRS-69:
+  Problem: A moral account of sin as transgression makes the remedy juridical (forgiveness of acts) and leaves unexplained why guilt-focused repentance so often fails to change the underlying condition.
+  Resource: Sin redefined functionally as a *relational state* — "the result of being separate from the Whole" — with addictive substitution as its predicted downstream signature.
+  Solution: Relocates the remedy from absolution of acts to restoration of connection, and yields a testable-ish prediction: interventions that reduce felt separateness should reduce compulsive filling behaviour more than interventions that increase guilt over acts.
+  Date Added: 2026-09-10
+  Source: Realigned with the True Self; PROP-2026-08-28-061
+  Confidence: Medium
+  Evidence: "The false self is characterized by separateness. Jewish and Christian traditions call this state of disconnectedness 'sin.' When we're separated from our deepest being, we are in a state of sin or alienation. When we are disconnected from our true self in God, we look for various false and addictive ways to fill our emptiness."
+
+PRS-70:
+  Problem: Contemplative traditions that valorise the true self risk pathologising ordinary ego development, which makes their advice useless or harmful to people who have not yet built a functioning self.
+  Resource: An explicitly developmental concession — the false self is a necessary construction ("We have to create a false self to get started"), assembled from "culture, education, class, race, friends, gender, clothes, and money," whose defect is temporal (it stays too long) rather than moral.
+  Solution: Converts the true/false self teaching from a binary into a staged account with a timing failure mode, which is what makes it compatible with developmental psychology rather than opposed to it.
+  Date Added: 2026-09-10
+  Source: Realigned with the True Self; PROP-2026-08-28-061
+  Confidence: Medium
+  Evidence: "It seems that we have to leave the garden. We have to create a false self to get started; the trouble is that we take it far too seriously."
+
+PRS-71:
+  Problem: Claims of transformation are usually stated as achieved states, which are falsified the moment the claimant behaves badly, so the tradition either overclaims or retreats into unfalsifiability.
+  Resource: An asymmetry between behavioural stability (explicitly denied) and epistemic irreversibility (claimed) — you do not stay in the true self, but having seen the big picture you cannot be satisfied by the small one.
+  Solution: Gives the tradition an honest success criterion — dissatisfaction with the smaller frame rather than continuous residence in the larger — which is closer to something a longitudinal measure could actually track.
+  Date Added: 2026-09-10
+  Source: Realigned with the True Self; PROP-2026-08-28-061
+  Confidence: Speculative
+  Evidence: "That doesn't mean we stay in the true self twenty-four hours a day. Life is three steps forward and two steps backward. Yet once we know the big picture, we will never be satisfied with the little picture."
+
+PRS-72:
+  Problem: The Universal Christ frame asserts that Christ is the eternal pattern present in all matter, but leaves unspecified what work the particular first-century human does within that frame — the cosmic claim threatens to make the historical Jesus decorative.
+  Resource: Rohr's formulation that Christ represents the resurrected state and Jesus represents the crucified/resurrecting path of getting there, together with his insistence on "a Jesus-kind-of Christ" — a God going to the mat with humanity rather than only presenting a cosmic vision.
+  Solution: The two names pick out endpoint and trajectory in one system. The particular is not an instance of the universal but the *route* into it, which is why the cross rather than the resurrection became the central symbol.
+  Date Added: 2026-09-10
+  Source: Following in Jesus's Footsteps; PROP-2026-08-30-003
+  Confidence: High
+  Evidence: Stated directly in the meditation and sourced to *The Universal Christ* (Convergent, 2021), 216-217. PRS-CANDIDATE-B: Label: descending-religion-as-diagnostic
+
+PRS-73:
+  Problem: Contemplative literature on the ego reads easily as a moral condemnation of ordinary functioning selfhood, which puts it in apparent conflict with any account (Thomistic included) on which the natural powers are good and their disorder is privative.
+  Resource: Rohr's Tuesday statement that the false self is good and necessary as far as it goes, and that its failure mode is falling short and posing as the real thing.
+  Solution: The false self is a *scope* failure and a *substitution* failure, not a moral one. This lines the frame up with a privative account of disorder — the false self is not a rival good but a partial one mistaken for the whole.
+  Date Added: 2026-09-10
+  Source: True Self and False Self: Weekly Summary; PROP-2026-08-30-002
+  Confidence: High
+  Evidence: The Tuesday entry states the point directly and in Rohr's own voice; it is a restatement of *Immortal Diamond*'s position, not a new move, but this is the compact citable form. PRS-CANDIDATE-B: Label: persona-as-type-error
+
+PRS-74:
+  Problem: The true-self / false-self distinction is standardly read subtractively — the false self is removed and the true self is what remains. That reading makes the contemplative path look like loss, and gives no account of what happens to the ego structures that are pared away.
+  Resource: Sue Monk Kidd's "spiritual whittling," presented in Rohr's Daily Meditations frame: the shavings are gathered and integrated rather than discarded, and the result is described as a *new wholeness* not a recovered original.
+  Solution: The false self is reclassified from waste product to material. Transformation is a re-ordering of existing structure, not its deletion — which makes the true self an achieved integration rather than an excavated substrate.
+  Date Added: 2026-09-10
+  Source: The True Seed Within; PROP-2026-08-30-001
+  Confidence: Medium
+  Evidence: The whittling passage states explicitly that the shavings are not discarded and that transformation happens by gathering and integrating them; the sequel sentence names the endpoint as a new wholeness. PRS-CANDIDATE-B: Label: contemplative-crisis-as-non-optional
+
+PRS-75:
+  Problem: The Universal-Christ claim that Christ is present in all matter is a claim about extension; it does not say what structure that presence has, so it cannot be tested against any other account of the structure of reality.
+  Resource: Rohr's statement that the cross is a statement that reality has a cruciform pattern: a coincidence of opposites (Bonaventure, Alan of Lille, Cusa) that is held rather than resolved, and that is simultaneously broken and whole.
+  Solution: The cosmic Christ is given a definite structural content, contradiction-holding, which can be compared with other structural accounts (complementarity, hemispheric integration, opposed priors) instead of remaining a bare universality claim.
+  Date Added: 2026-09-10
+  Source: Full of Suffering, Full of Love; PROP-2026-09-06-003
+  Confidence: High
+  Evidence: Stated directly and sourced to *The Universal Christ*, 147-148. PRS-CANDIDATE-B: Label: contradiction-resolved-in-the-agent
+
+PRS-76:
+  Problem: If faith is assent to propositions, doubt is faith's contradictory, and any honest uncertainty counts as loss of faith.
+  Resource: Rohr's redefinition of faith as trust that reality is coherent, purposeful, benevolent and going somewhere good, with a person rather than a doctrine as its object.
+  Solution: Faith and doubt become correlative rather than contradictory: doubt is uncertainty about propositions, faith is trust in a direction, and the two can rise together.
+  Date Added: 2026-09-10
+  Source: The Dance of Faith and Doubt; PROP-2026-09-06-004
+  Confidence: High
+  Evidence: Stated directly; sourced to *Falling Upward* 70-71 and *The Naked Now* 117. PRS-CANDIDATE-B: Label: certainty-as-first-half-survival-strategy
+
+PRS-77:
+  Problem: Contemplative and theological accounts of suffering routinely collapse pain and suffering into one category, which makes "redemptive suffering" sound like an endorsement of harm and leaves no way to say which part of an affliction is optional.
+  Resource: A two-term decomposition — pain as the given discomfort, suffering as the added layer produced by resistance, denial, and the judgment that the pain is unjust — with the corollary that pain is unavoidable for humans while suffering is usually not.
+  Solution: Relocates the transformative work from the affliction to the response, so that spiritual practice targets the resistance rather than seeking or valorizing the pain. Gives a testable pastoral criterion: if a practice does not reduce resistance, it is not doing the work Rohr claims for it.
+  Date Added: 2026-09-10
+  Source: Standing in Solidarity; PROP-2026-09-08-031
+  Confidence: High
+  Evidence: Rohr writes that pain is physical discomfort but suffering "comes from our resistance, denial, and sense of injustice or wrongness about that pain," and adds that pain is the rent we pay for being human while suffering is usually optional.
+
+PRS-78:
+  Problem: If God is impassible — outside suffering, observing it — then solidarity with the suffering is a human imitation of something God does not do, and the cross is a transaction rather than a disclosure.
+  Resource: The "crucified God" read as revealing that God is on the side of suffering wherever it is found, including on both sides of any war and among oppressors as well as victims.
+  Solution: Converts solidarity from imitation into participation: the disciple does not perform solidarity alongside a detached God but is taken into an act God is already performing. Rohr is explicit that this reading pleases very few people, which functions as a falsifier — a version of the claim that comforted every party would not be this one.
+  Date Added: 2026-09-10
+  Source: Standing in Solidarity; PROP-2026-09-08-031
+  Confidence: High
+  Evidence: Rohr's conditional — if God is participating in human suffering rather than passively tolerating and observing it, that changes everything — placed against his claim that the cross was voluntary acceptance of undeserved suffering as total solidarity with the world's pain.
+
+PRS-79:
+  Problem: Religious traditions have no clean way to distinguish membership from transformation, so belonging can be mistaken for change indefinitely.
+  Resource: The belonging-system / transformational-system contrast, anchored to a behavioural test — whether one accepts the invitation to solidarity with the world's pain, freely, and not in order to earn love.
+  Solution: Makes the distinction diagnosable rather than rhetorical, and decouples the acceptance from merit: Rohr insists the invitation is optional (yes, no, or maybe are all live) and that God's love is not contingent on the answer. Solidarity is then motivated by love returned rather than by fear of exclusion.
+  Date Added: 2026-09-10
+  Source: Standing in Solidarity; PROP-2026-09-08-031
+  Confidence: Medium
+  Evidence: Rohr's claim that we are either baptized into Christ's death and resurrection or Christianity is largely a mere belonging system rather than a transformational one that will change the world, alongside his insistence that none of this is done to make God love us.
+
+PRS-80:
+  Label: centre-and-edge-as-a-required-pair
+  Problem: Rohr's developmental account reads the move past certainty as growth, which implies the people who stay at the centre are simply behind, and gives no account of what the centre is *for*.
+  Resource: Brown Taylor's centre/edge map — the centre keeping the map from blowing away, the edge keeping it from becoming redundant — presented as two biblically necessary positions on one map rather than two stages of one life.
+  Solution: Certainty-holding and mystery-seeking are complementary functions distributed across a community: the centre supplies persistence and transmission, the edge supplies contact with what the map does not yet cover, and a tradition with only one of them either drifts or ossifies.
+  Date Added: 2026-09-24
+  Source: The Center and the Edge; PROP-2026-09-13-002
+  Confidence: High
+  Evidence: Stated directly in the quoted passage, including the claim that both belong on the same map and that each keeps the other from a named failure mode.
+
+PRS-81:
+  Label: vocation-survives-the-loss-of-office
+  Problem: If a calling is constituted by an institutional role, leaving the role should terminate the calling — yet the contemplative tradition keeps producing figures whose work continues outside the institution.
+  Resource: Brown Taylor's relocation of vocation from function to identity ("not what I did but who I was"), with the vocation to love God and neighbour named as exercisable anywhere, with anyone.
+  Solution: Vocation is an identity-level property rather than a role-level one, so departure from the institution is continuity rather than loss; nothing prior is wasted, and the institution becomes one venue for the calling rather than its condition.
+  Date Added: 2026-09-24
+  Source: The Center and the Edge; PROP-2026-09-13-002
+  Confidence: Medium
+  Evidence: The closing paragraph, stated in the first person about her own case; the generalization to a rule is the proposal's inference, not hers.
+
+PRS-82:
+  Label: non-hostility-not-belief-as-the-membership-condition
+  Problem: Rohr's inclusivism ("Christ is in everything") is asserted cosmologically, so it has no criterion: it cannot say who counts as inside without making the question vacuous.
+  Resource: Willse's reading of Mark 9:39-40 — the disciples' exclusion of an outsider whose ancestry and motives they distrust is overruled, and the stated test is "whoever is not against us is for us."
+  Solution: The boundary condition is orientation rather than assent: doubt is not disqualifying and belief is not required, but hostility of hand and heart is what falls outside. This gives the inclusivist claim a criterion that can actually exclude something, which cosmological inclusivism alone cannot.
+  Date Added: 2026-09-24
+  Source: Faith with Doubt: Weekly Summary (CAC Daily Meditations, Week 36, 2026-09-06 to 2026-09-12); PROP-2026-09-13-003
+  Confidence: Medium
+  Evidence: Directly argued from the Mark text in the Week 36 practice; the generalization from one pericope to a standing criterion is Willse's move, and rests on that single passage.
+
+PRS-83:
+  Label: parabolic-under-specification-as-pedagogy
+  Problem: The obscurity of Jesus's teaching is usually explained as concealment from outsiders or as accommodation to hearers, both of which make the difficulty incidental to the content.
+  Resource: Willse's claim that the parables' resistance to interpretation is deliberate and pedagogical — refusing to supply the answer forces the hearer to reason to principles rather than receive them from authority.
+  Solution: Difficulty is a feature of the transmission, not a defect in it: understanding that has been worked out is a different and more durable state than understanding that has been told, so under-specification is the method by which the second is produced.
+  Date Added: 2026-09-24
+  Source: Faith with Doubt: Weekly Summary (CAC Daily Meditations, Week 36, 2026-09-06 to 2026-09-12); PROP-2026-09-13-003
+  Confidence: Speculative
+  Evidence: Offered as the author's own reading ("I think this is another, more subtle form"), without argument against the concealment reading; flagged Speculative on that ground.
+
+PRS-84:
+  Label: panentheism-not-pantheism-as-the-universal-christ-metaphysic
+  Problem: The Universal-Christ claim ("Christ is everything and in everything") is read either as pantheism, which collapses the God/world distinction, or as pious metaphor, which empties it; the tradition has lacked an explicit statement of which it is.
+  Resource: Rohr's own self-classification as panentheist rather than pantheist — God lies within all things but also transcends them — asserted as the position of Jesus and Paul, with Colossians 3:11 as the text.
+  Solution: The Universal Christ is a real metaphysical claim with a transcendence clause, so immanence-only readings (whether idealist or naturalizing) misstate it; cross-tradition mappings must preserve the transcendence term or record that they are dropping it.
+  Date Added: 2026-09-24
+  Source: Paul Knew Christ Within; PROP-2026-09-13-001
+  Confidence: High
+  Evidence: Stated in Rohr's own words in the closing paragraph, with the pantheist misreading anticipated by name.
+
+PRS-85:
+  Label: revelation-in-before-revelation-to
+  Problem: If divine self-disclosure is modelled as testimony delivered to an observer, it is unclear why anyone who receives the same testimony fails to recognize it.
+  Resource: Rohr's reading of the Galatians 1:16 preposition, paired with 2 Corinthians 13:5 as a criterion, and the claim that God must reveal God's self *in* a subject before revealing God's self *to* that subject.
+  Solution: Recognition is gated by prior interior participation rather than by evidential access: the capacity to perceive the pattern is itself constituted by the pattern's presence in the perceiver, which explains non-recognition without appeal to bad will.
+  Date Added: 2026-09-24
+  Source: Paul Knew Christ Within; PROP-2026-09-13-001
+  Confidence: Medium
+  Evidence: The Galatians and 2 Corinthians paragraphs; the "in you / to you" line is stated as a general principle, not as exegesis of a single verse.
+
+PRS-86:
+  Label: interiority-required-literacy
+  Problem: Rohr's developmental claims are usually psychological; he has not accounted for why an interior Christianity arrives historically when it does.
+  Resource: The claim that Paul's interior register was unusual in an extroverted and literal culture, and that it took widespread literacy and the printed word in the sixteenth century to move believers toward interiority — "both for good and for ill."
+  Solution: Contemplative interiority is treated as partly media-conditioned rather than purely graced or purely developmental, which makes it a historically contingent capacity with identifiable enabling technology.
+  Date Added: 2026-09-24
+  Source: Paul Knew Christ Within; PROP-2026-09-13-001
+  Confidence: Speculative
+  Evidence: Asserted as opinion ("in my opinion") in one paragraph, without historical argument; flagged Speculative on that ground.
+
+PRS-87:
+  Problem: Active Question 1 / Question 6 — the tradition asserts that contradictions can be held without premature resolution, but has not said what the *operation* is, so it cannot be tested or ported to cross-program use.
+  Resource: The "language of the cross" as template (Rohr's phrase: Paul's "philosopher's stone") — a named, repeatable operation applied to a paired opposition, plus an explicit list of eight such pairs Rohr says Paul works with.
+  Solution: Non-dual reading is recast from a disposition into a three-part procedure (paired terms → template applied → new order disclosed). This makes Question 6 answerable: one can now ask whether the procedure transfers to a pair of *research programs* rather than a pair of theological terms.
+  Date Added: 2026-09-24
+  Source: A Man Who Lived and Loved Paradox; PROP-2026-09-19-002
+  Confidence: Medium
+  Evidence: "The 'language of the cross' (1 Corinthians 1:18) became Paul's 'philosopher's stone,' his own template by which to evaluate and critique the meaning of reality. It allowed him to break through what seemed like order and logic to discover a new order, which he called 'the hidden wisdom of God' (1 Corinthians 2:7)."
+
+PRS-88:
+  Problem: Active Question 1 — whether formalizing the non-dual epistemology distorts it. Prior discussion has been about whether a model exists at all, not about what would break.
+  Resource: Rohr's stated precondition that the interpreter must have already partly reconciled the opposition within themselves before the reading is available.
+  Solution: Identifies the specific component that resists formalization — not the template (part ii, which is statable) but the reader-state precondition (part iii). This sharpens Question 1 from "can it be formalized?" to "can a criterion whose satisfaction conditions live in the interpreter be formalized?", which is a question the network can actually work on.
+  Date Added: 2026-09-24
+  Source: A Man Who Lived and Loved Paradox; PROP-2026-09-19-002
+  Confidence: Medium
+  Evidence: "If one has not consciously struggled, and partly reconciled, these patterns inside of oneself, I think it is almost impossible to understand Paul." And: "It could never be arrived at by mere study or intelligence, but only by surrender to communion, which he called faith."
+
+PRS-89:
+  Problem: Whether Rohr's developmental/transformational frame treats disorder as noise to be minimized or as the working material.
+  Resource: Rohr's claim that neither Jesus nor Paul is "especially concerned about order, niceness, or social control," and that transformation uses "the very disorder of people's lives."
+  Solution: Records disorder as *load-bearing* rather than residual in Rohr's order–disorder–reorder frame. Bears on Active Question 2 (the Friston comparison): a free-energy reading makes surprise something the system works to reduce, whereas Rohr here makes the disorder the means. Whether that is a genuine disagreement or a level-of-description difference is not settled by this source and should not be recorded as settled.
+  Date Added: 2026-09-24
+  Source: A Man Who Lived and Loved Paradox; PROP-2026-09-19-002
+  Confidence: Medium
+  Evidence: "They are concerned about transformation of persons and history and about using the very disorder of people's lives to bring them to God."
+
+PRS-90:
+  Problem: Active Question 7 — whether second-personal relation scales from dyad to community without changing kind.
+  Resource: The power-with / power-over distinction applied to the New Testament household codes, with mutual submission (Eph 5:21) read as governing the member-specific instructions that follow.
+  Solution: Supplies a test case where the same relation is claimed at two scales, and names what would have to hold for the scaling to work — that each member retains agency and "the right to hear and act for themselves," rather than being represented by a head. Does not settle Question 7; makes it concrete.
+  Date Added: 2026-09-24
+  Source: Changing the Paradigm of Power-Over; PROP-2026-09-19-003
+  Confidence: Medium
+  Evidence: "Mutual submission was a radical shift from the Roman household codes that demanded strict hierarchy, with only one—the father—having ultimate authority. Ephesians 5 disrupts this by speaking to *every* member of the household." (Armas, quoted by Rohr; interior quotation from Barr, *The Making of Biblical Womanhood*, 34.)
+
+PRS-91:
+  Problem: Active Question 9 — whether the effects-of-the-reading criterion can be constrained by anything textual once adjudication has moved off philology.
+  Resource: A reading that holds 1 Cor 7:4 and 1 Cor 11:5–10 together without harmonizing them, conceding the verse that runs against its own direction.
+  Solution: Weak evidence that the criterion is not unconstrained in practice: the reading declines an available harmonization and records the counter-text. Whether that is a structural check or a stylistic virtue is exactly what Question 9 asks, and this source does not answer it.
+  Date Added: 2026-09-24
+  Source: Changing the Paradigm of Power-Over; PROP-2026-09-19-003
+  Confidence: Speculative
+  Evidence: "And yet, in 1 Corinthians 11:5–10, it seems Paul is upholding gendered practices by instructing women to cover their heads while praying, grounding his reasoning in creation order."
+
+PRS-92:
+  Label: law-as-diagnostic-not-acquisitive
+  Problem: If a norm cannot alter how one is regarded by the ground of one's being, what work is the norm doing? The available answers — it earns favour, or it is arbitrary residue — are both unsatisfying, and the first is the one Rohr reads Paul as demolishing.
+  Resource: Rohr's reframing in the Week Thirty-Seven Practice: the purpose of spiritual law is to sharpen awareness of who one really is and who God is (Things Hidden, 85-88).
+  Solution: Law functions as a measuring instrument rather than a currency. Its output is accurate self-assessment, and the recognition of insufficiency and the encounter with fullness are a single movement rather than a sequence of failure followed by rescue. On this reading, error is not waste but signal — Rohr's claim that God "uses our mistakes in our favour" becomes a statement about information rather than about leniency.
+  Date Added: 2026-09-24
+  Source: Paul's Transforming Vision: Weekly Summary (CAC Daily Meditations, Week 37, 2026-09-13 to 2026-09-19); PROP-2026-09-20-003
+  Confidence: Medium
+  Evidence: Rohr states the purpose claim directly and anchors it in Paul's self-description as a faultless Pharisee whose observance did not prevent violence. Medium rather than High because the "uses mistakes" step is asserted rather than argued.
+
+PRS-93:
+  Label: paradox-pedagogy-and-the-limitation-clause
+  Problem: How should a tradition read a founding figure who is both genuinely liberating and demonstrably bounded by his own setting, without either flattening him into a hero or discarding him as compromised?
+  Resource: Two of the week's moves taken together — Rohr on Paul teaching through contrast and overcome contradiction rather than through resolved propositions, and Kat Armas on Paul as shaped by revelation and limitation at once.
+  Solution: The limitation is not noise to be filtered out of the revelation; reading the two together is the interpretive method the material itself calls for. Taking one pole of a Pauline contrast as simply good and the other as simply bad is named as the characteristic misreading, and the same error applied to Paul's own person produces the revolutionary/enforcer dichotomy that Armas rejects.
+  Date Added: 2026-09-24
+  Source: Paul's Transforming Vision: Weekly Summary (CAC Daily Meditations, Week 37, 2026-09-13 to 2026-09-19); PROP-2026-09-20-003
+  Confidence: Speculative
+  Evidence: Both claims are in the summary, but joining them into a single interpretive principle is this proposal's synthesis, not the source's. Flagged Speculative on that ground.
+
+PRS-94:
+  Label: incongruity-as-perfection
+  Problem: On what grounds can a gift given to an unworthy recipient be called a better gift rather than a wasted one? The ancient gift economy had a coherent answer (it cannot), and contemporary accounts of grace usually assume the reversal without arguing for it.
+  Resource: Beck's reconstruction of the ancient merited-gift norm, against which Paul's unmerited gift reads as deliberate inversion rather than as the obvious default (The Book of Love, 210-213).
+  Solution: The incongruity between gift and recipient is the gift's perfecting feature, because a gift conditioned on worth is a transaction within a ranking system, while a gift indifferent to worth is what abolishes the ranking system. Grace is not generosity within the economy; it is the suspension of the economy.
+  Date Added: 2026-09-24
+  Source: A Preacher of Grace; PROP-2026-09-20-001
+  Confidence: High
+  Evidence: Beck states the reversal explicitly and dates it to Paul ("grace was once merited; today it is unmerited"), and grounds it in Paul's own provocative framing of the gift as given to enemies.
+
+PRS-95:
+  Label: grace-as-social-leveling
+  Problem: What makes a maximally heterogeneous assembly cohere without a shared rank ordering, a shared ethnicity, or a shared class interest? Ordinary accounts of group formation require at least one of these.
+  Resource: Beck's reading of the Pauline ekklesia as an assembly whose membership function has had the worth-ranking term deleted, so that no honour hierarchy is available inside it.
+  Solution: Removing the ranking function is not merely permissive but constitutive: the diversity of the early assemblies is a consequence of grace-as-incongruous, not an accident tolerated by it. Unconditional reception, once received, becomes a transitive obligation ("welcome each other as Christ has welcomed you"), which supplies the maintenance rule the group needs to persist.
+  Date Added: 2026-09-24
+  Source: A Preacher of Grace; PROP-2026-09-20-001
+  Confidence: Medium
+  Evidence: Beck's claim that grace "became a tool of social leveling, creating capacities for egalitarian and democratic forms of social life," tied to the observed class and ethnic composition of the Pauline churches. The causal direction (grace enabling diversity rather than diversity being rationalized by grace) is Beck's argument, not a demonstrated result, hence Medium.
+
+PRS-96:
+  Label: indwelling-as-dignity-ground
+  Problem: Any dignity grounded in an attribute (rationality, capacity, contribution, status) is revocable by re-evaluating that attribute, and is therefore exactly as secure as the evaluator is benign. What grounding survives a hostile evaluator?
+  Resource: Paul's indwelling formula read as a dignity-conferring proposition — "you are the very temple of God" — which Rohr reports as scholarship's candidate for Paul's supreme and organizing idea.
+  Solution: Grounding dignity in indwelling rather than in any attribute makes it inherent, universal and indestructible by evaluation, because no evaluative predicate is in the grounding chain at all. Rohr treats this as the causal explanation of Paul's uptake speed: it answered a felt condition (social shame) that no additional deity could have answered.
+  Date Added: 2026-09-24
+  Source: A Preacher of Love; PROP-2026-09-20-002
+  Confidence: Medium
+  Evidence: Rohr states the three properties explicitly and names the historical conditions (Asia Minor slavery, women as property, absence of a human-rights concept) that make the uptake claim non-trivial. The historical causal claim is Rohr's reading rather than a demonstrated result, hence Medium rather than High.
+
+PRS-97:
+  Label: pentecost-many-tongues-one-content
+  Problem: How can a universal message be genuinely universal without erasing the particularity of its hearers? Universality usually purchases its scope by abstracting away from the local.
+  Resource: Rohr's reading of Acts 2:1-11, where the hearers receive in their own individual languages rather than in a single restored common tongue.
+  Solution: Universality is realized as simultaneous reception in many particular idioms, not as translation into one. The particularity of the receiver is preserved as a feature of the delivery, which is why Rohr can call the love "totally democratic" without calling it uniform.
+  Date Added: 2026-09-24
+  Source: A Preacher of Love; PROP-2026-09-20-002
+  Confidence: Speculative
+  Evidence: The text supports the many-tongues reading; the inference that this constitutes a general model of particularity-preserving universality is an extension Rohr gestures at rather than argues. Flagged Speculative deliberately — it is attractive to the Summa project and should therefore be held at arm's length until Wright's exegesis is consulted.
+
+PRS-98:
+  Problem: Christians across nearly all traditions fail to receive Jesus's explicit teaching of nonviolence, and the Sermon on the Mount remains his least-quoted major teaching — a failure of reception that ordinary exhortation and exegesis have not repaired.
+  Resource: The contemplative stance as a *prerequisite cognitive mode*: nondual attention capable of holding "the burden of evil and the weight of glory" simultaneously, as against the calculative and dualistic mind.
+  Solution: Reframes the failure as cognitive rather than moral or hermeneutic. The teaching is not resisted because it is unclear or too demanding, but because the dominant mode of mind is structurally incapable of inhabiting a participatory mystery. Moral formation therefore runs through contemplative practice, not through argument.
+  Date Added: 2026-09-24
+  Source: Nonviolent Resistance; PROP-2026-09-21-001
+  Confidence: High
+  Evidence: "I've come to believe that understanding Jesus's nonviolent teaching is almost impossible apart from a contemplative stance. The calculative and dualistic mind is incapable of living inside of the participatory mystery of our life in this world and in God."
+
+PRS-99:
+  Problem: Nonviolence is routinely collapsed into absolute pacifism and thereby dismissed as impractical, while "military solutions are accepted routinely as a matter of necessity."
+  Resource: The category of nonviolent resistance, or "gentle firmness" — a third term between passivity and force, which preserves legitimate self-defense while demanding "creative and constant firmness in opposition to evil."
+  Solution: Dissolves the pacifism/necessity dilemma by denying that its two horns exhaust the space, and relocates the cost: rather than asking who else must die, the gospel directs the demand inward ("First of all, it's you!" — dying to self, Luke 9:24), so that resistance is financed by the resister's own willingness to carry a share of the world's sin and pain.
+  Date Added: 2026-09-24
+  Source: Nonviolent Resistance; PROP-2026-09-21-001
+  Confidence: High
+  Evidence: "It does not imply absolute pacifism or deny the right to legitimate self-defense, but it requires creative and constant firmness in opposition to evil."
+
+PRS-100:
+  Problem: National and religious identity have fused ("the flag is often right there by the tabernacle"), making the boundaries of the political community the effective boundaries of moral concern.
+  Resource: Isaiah 40:17 — all nations as "less than nothing and emptiness" before God — read together with the claim that "boundaries are not engraved in the earth."
+  Solution: Grounds a universality of first allegiance that is not cosmopolitan sentiment but a consequence of the doctrine of God: because God is God of all the earth, contemplative prayer terminates in bearing the burden of, and resisting the violence of, the whole world rather than one's own country.
+  Date Added: 2026-09-24
+  Source: Nonviolent Resistance; PROP-2026-09-21-001
+  Confidence: Medium
+  Evidence: "Because God is the God of all the earth, our first allegiance is to that universality—beyond nations and boundaries."
+
+PRS-101:
+  Problem: Individuals who oppose injustice still feel helpless against large systemic evils; the result looks like apathy.
+  Resource: The distinction between the individual ego and the "corporate ego" (collective self-protection that is more disguised, protected, and denied), plus a diagnosis of psychic numbing as paralysis, not bad will.
+  Solution: Systemic evil is met only by collective ("corporate") good — the gospel lived institutionally and socially, not just individually. Contemplative practice that does not issue in collective servanthood has failed its own test.
+  Date Added: 2026-09-24
+  Source: Corporate Violence Met by Corporate Good; PROP-2026-09-23-002
+  Confidence: Medium (stated directly; adapted from a 2002 text)
+  Evidence: "corporate evil can only be opposed by corporate good"; the German bishops' appeasement of Hitler used as the case of an institution protecting itself instead of living the gospel.
+
+PRS-102:
+  Problem: Why does Christian culture tolerate, and sometimes sanctify, violence?
+  Resource: Critique of retributive (penal) atonement theory; Walter Wink's "myth of redemptive violence" (named as what "some call" it); Pauline "powers and principalities" (Eph 3:9–10, 6:12).
+  Solution: A retributive notion of God's justice legitimates "good and necessary violence all the way down." Dropping it removes the theological cover for violence and restores a redemptive alternative to history.
+  Date Added: 2026-09-24
+  Source: Corporate Violence Met by Corporate Good; PROP-2026-09-23-002
+  Confidence: Medium (restatement of an established Rohr position from *The Universal Christ*)
+  Evidence: Second adapted passage, *The Universal Christ* pp. 140–142.
+
+*Total PRS triplets: 102*

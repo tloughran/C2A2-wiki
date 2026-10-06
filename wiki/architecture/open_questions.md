@@ -2187,3 +2187,1389 @@ OPEN-178:
 - **OPEN-174 (which store is the decision record of account) is carried and now has a second data point.** `decisions.md` still ends at DECISION-083 (2026-08-27) — four days without an attended decision — while nine proposals sit in `review/2026-08-30_review.html` and every ruling made today was an agent-side disposition. The registers moved; the decision record did not.
 - **OPEN-164 / OPEN-170 (unratified agent-invented conventions) carried.** Today's instance is PRESUMPTION-898: an unwritten convention that 26 one-line files are Tom's to create, held for three weeks by an agent that writes hundreds of lines elsewhere unprompted.
 - **The 46-id offset is carried and unchanged.** Before tonight: 128 unique `^OPEN-NNN:` headers against max OPEN-174. After tonight: **132 unique, max OPEN-178, offset still exactly 46** — sixth consecutive record. The three contiguous missing blocks characterised on 08-27 (OPEN-040…070, 073…074, 079…091) were not investigated this run. **"Max OPEN-178" is not a count of open questions.**
+
+OPEN-179:
+  Date raised: 2026-09-04
+  Question: Does sub-neuronal life (bacteria, plants, basal cognition; the Lyon/Keijzer material) file at N, or is there a rung between S and N that the authored table (rows 247–250) does not show — and is "rung" even the right shape for the answer?
+  Why now: outline_v3.md marks this OPEN, "do not guess," and blocks further III.2 placement. The L3/L4 labels are reserved. PRESUMPTION-909 asks whether the structure is linear at all; if the bands overlap, the question may need reframing before it can be ruled.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1253, ASSUMPTION-1257; PRESUMPTION-909
+
+OPEN-180:
+  Date raised: 2026-09-04
+  Question: Who polls a deferred condition? Five cards from the 09-02 ingest were closed with their future conditions parked where nothing checks them (Agent 16: DEFERRED-CONDITION LEAKAGE). Is the fix a one-line instruction to the ingest step (option b), and who owns it?
+  Why now: Agent 16 will not alter a file other agents read without authorisation; the five conditions are silently expiring meanwhile.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1260
+
+OPEN-181:
+  Date raised: 2026-09-04
+  Question: Two authored ladders exist in the sandbox — rows 247–250 (A-I-S-N-B-P-C-S, 8×3) and rows 292+ (ordered by "hierarchy, perhaps of entropy"). Which is the spine of III.2.0, and are they the same order under two descriptions or two different orders?
+  Why now: outline_v3 says "worth comparing before III.2.0 is written"; III.2.0 currently renders the later table only. The earlier one claims an objective ordering principle the later one does not.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1258; PRESUMPTION-909
+
+### Status of carried questions — 2026-09-04
+- **Gap declaration.** 14a/14b last ran 2026-08-30; no 08-31, 09-01, 09-02 or 09-03 changelog or snapshot. This run adds OPEN-179–181 for 09-04 only and does not reconstruct the four missing days. Register now 135 unique `^OPEN-NNN:` headers against max OPEN-181 — offset still exactly 46, seventh consecutive record.
+- **OPEN-168 (notification channel of record) — day thirteen; failed in both directions again today** (Chat→Cowork scrape 08:53, Cowork→Chat delivery 18:39). Unchanged shape; unchanged remedy.
+- **OPEN-174 (which store is the decision record of account) — third data point.** Two rulings delegated by Tom today ("as you incline") were recorded in `inbox/rc_sandbox/outline_v3.md`, not `decisions.md`, which still ends at DECISION-083 (08-27), eight days. The digest itself names this as an OPEN-174 instance.
+- **OPEN-171 (intake/disposition coupling) — pending is 21** (was 9 at 08-30). ASSUMPTION-1231's two-week window closes 2026-09-10; 21 in 8 days ≈ 2.6/day, still below the predicted 6–14 band. Review-pass gap: 8 days.
+- **OPEN-167 (vault root casing)** — the task file still says capital-`W` `Wiki`; live directory is `wiki`. Seventh run.
+- **OPEN-175–178** — no ruling recorded; carried.
+
+OPEN-182:
+  Date raised: 2026-09-05
+  Question: On a day with no attended session, should 14a/14b extract from agent run notes at all — or file a dated QUIET/DARK marker and nothing else? If extraction continues, should items carry an authorship tag (designer | agent-under-delegation | agent-unattended) so the register can be filtered?
+  Why now: today's intake is seven assumptions and six presumptions, all agent-sourced. MONITOR-594 separately asks for DARK tagging of 08-31…09-03. The two questions are the same question: what does this register count as design activity? PRESUMPTION-912 states the premise; this asks for the ruling.
+  Status: OPEN — awaiting Tom
+  Related: PRESUMPTION-912, PRESUMPTION-917; OPEN-174; MONITOR-594
+
+### Status of carried questions — 2026-09-05
+- **Register: 136 unique `^OPEN-NNN:` headers against max OPEN-182 — offset still exactly 46, eighth consecutive record.**
+- **OPEN-168 (notification channel of record) — day fourteen; failed in both directions** (Chat→Cowork 10:17, Cowork→Chat 18:52). Unchanged shape; unchanged remedy. See PRESUMPTION-917 for what a dead channel does to the day's account.
+- **OPEN-174 (which store is the decision record)** — no new instance today (no rulings anywhere). `decisions.md` at DECISION-083, nine days.
+- **OPEN-179 / OPEN-181 (ladder rung; which ladder is the spine)** — 15c cycle 6 returned REVISE-433 (High): the L0…L9 numbering presupposes a total order; both search directions say that holds only under one fixed criterion. 15c's reading: the source table already answers (b) lattice or (c) per-tradition. Awaiting Tom. PRESUMPTION-915 asks whether this is a ruling or a reading.
+- **OPEN-180 (deferred-condition polling)** — Agent 16 idle run today, 0 due, 0 intake; no ruling.
+- **OPEN-171 (intake/disposition coupling)** — pending still 21; ASSUMPTION-1231 window closes 2026-09-10. Review-pass gap: 9 days.
+- **OPEN-167 (vault root casing)** — task file still says `Wiki`; live directory is `wiki`. Eighth run.
+- **OPEN-175–178** — no ruling recorded; carried.
+
+OPEN-183:
+  Date raised: 2026-09-07
+  Question: When a scheduled 14a/14b run is missed (09-06 tonight; 08-31…09-03 before), is the next run a gap-fill that files the missed day's material under its own date, or should the missed day get a dated DARK/SKIPPED marker and the material be filed under the day it occurred? Tonight's items carry "Date identified: 2026-09-07" for 09-06 events.
+  Why now: second gap in eight days. The registers cannot currently distinguish "nothing happened 09-06" from "nobody looked 09-06." Same shape as OPEN-182 and MONITOR-594's DARK-tagging request, one level up.
+  Status: OPEN — awaiting Tom
+  Related: OPEN-182, PRESUMPTION-922, PRESUMPTION-917, MONITOR-594
+
+### Status of carried questions — 2026-09-07 (gap-filling run; 09-06 run missed)
+- **Register: 137 unique `^OPEN-NNN:` headers against max OPEN-183 — offset 46, ninth consecutive record.**
+- **OPEN-168 (notification channel of record) — day sixteen.** 09-06 Chat→Cowork scrape FAILED (extension not connected); no 09-06 Cowork→Chat summary exists; 09-07 walk-notes search found nothing. Three channels, three absences.
+- **OPEN-174 (decision record)** — `decisions.md` at DECISION-083, eleven days. REVISE-436 asks for a binary ruling that will, if made, land somewhere.
+- **OPEN-179 / OPEN-181 (ladder)** — DISPOSITION-909 / MONITOR-597 proposes the linear-extension test precede the ruling; PRESUMPTION-920 asks whether the test's input exists.
+- **OPEN-182 (unattended-day extraction)** — no ruling; this run extracted anyway (11 items, all agent-sourced). Practice is running ahead of the ruling.
+- **OPEN-171** — ASSUMPTION-1231 window closes 2026-09-10 (three days). Pending proposals 25 per the 09-07 morning handoff (21 at 09-05). Review-pass gap: master wiki last written 09-02.
+- **OPEN-167 (vault root casing)** — task file still says `Wiki`. Ninth run. The Monday agents' task file has a second path error (missing `Projects/` segment), worked around in-run.
+- **OPEN-175–178, OPEN-180** — carried.
+
+---
+
+## 2026-09-07 — evening run (14a)
+
+OPEN-184:
+  Date raised: 2026-09-07
+  Question: Which class of actions does the no-blind-push rule actually need to cover? Can a
+    deterministic gate — a passing fixture, a neutralised control that fails, and demonstrated
+    reversibility (i.e. the method ASSUMPTION-1277 states) — discharge the rule for changes that write
+    no claims, so that they execute without a human paste?
+  Why it matters: four sewing recommendations first raised 08-09 / 08-16 / 08-23 are still NOT DONE and
+    all four are file-writes with a generator already supplied; today's commit fix sits in a script the
+    sandbox wrote and cannot run. The evening summary measures the pattern — script-owned work moves,
+    paste-gated work does not — and files it as discussion. See PRESUMPTION-923.
+  Status: OPEN — requires Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-184
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-185:
+  Date raised: 2026-09-07
+  Question: Are the self-awareness and lit-search layers' own outputs in-corpus or out-of-corpus for
+    connectivity measurement? `architecture/lit_search_results` is now 2,661 of 4,879 vault pages
+    (54.5%), every one an orphan by construction, and it is counted in the census, the
+    `connectivity_log.csv` series and the graph visualisation's node population.
+  Why it matters: if out-of-corpus, every connectivity figure since roughly 08-02 carries a
+    majority-share confound and the orphan trend is measuring generation rate. If in-corpus, the answer
+    should be stated once and the metric read accordingly. Currently neither is written anywhere.
+    See PRESUMPTION-926, PRESUMPTION-927.
+  Status: OPEN — cheap ruling; recomputation is a `find` away
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-185
+    Item type: OPEN QUESTION (raised from presumptions surfaced the same run)
+    Current status: OPEN
+
+OPEN-186:
+  Date raised: 2026-09-08
+  Question: Does a scheduled task that cannot perform its nominal work in the environment it is
+    scheduled into stay scheduled? `openstory-agents-telemetry-refresh` has now declined its
+    regeneration step for a fourth day — 6.17 GB database against 4.2 GB of sandbox scratch — and today
+    wrote PASS on validation alone. Four fixes have been named across two runs (prune the DB; read it in
+    place or via a size-bounded attach/snapshot; give the sandbox ≥8 GB; repoint the schedule at the Mac
+    wrapper that is actually producing the feeds). None has been chosen. The agent's own framing:
+    "Right now it's a validator wrapped around the Mac wrapper's work. Worth deciding whether to repoint
+    the schedule at the Mac wrapper directly."
+  Why it matters: this is the third member of the class PRESUMPTION-924 named — scheduler decisions,
+    which have no register, no numbering and no escalation path — and the first with a live green status
+    covering it. See ASSUMPTION-1280, ASSUMPTION-1285, PRESUMPTION-929, PRESUMPTION-930.
+  Status: OPEN — requires Tom (one of four named options; all four are stated, none is costed)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-186
+    Item type: OPEN QUESTION (raised from an assumption and two presumptions surfaced the same run)
+    Current status: OPEN
+
+OPEN-187:
+  Date raised: 2026-09-08
+  Question: What is the standing rule for tradition attribution when the source is a collaborator or
+    team member rather than the named thinker? Two of today's four proposals are filed under Hawkins on
+    sources authored by Tristan Slominski and Viviane Clay; the agent proposed them on the precedent of
+    three earlier TBP-team ingestions, flagged the issue inside each file, and asked explicitly for the
+    rule: "so a reviewer can set the standing rule rather than re-decide it every week."
+  Why it matters: the question has now been decided four times by precedent and never once by ruling,
+    and the precedent chain is self-reinforcing (ASSUMPTION-1283). It also bears on PRESUMPTION-921 —
+    whether the network's units are traditions or authors — which is a Stage-2 blocker, not a filing
+    convention.
+  Status: OPEN — requires Tom (cheap; one line settles it either way)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-187
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-188:
+  Date raised: 2026-09-08
+  Question: What is the estate's recency window for tradition-agent intake — 30 days or 60 — and what
+    does the "significant work not yet captured" clause license? Two scheduled task files carry the two
+    different numbers and neither run reconciled them; the clause was used today to admit a 39-day-old
+    source without a stated criterion.
+  Why it matters: the numbers govern what enters the corpus, and the corpus is what every downstream
+    metric measures. This is the cheap, mechanical half of PRESUMPTION-937; the general fix (one
+    canonical copy of every threshold) is the expensive half.
+  Status: OPEN — in-house reconcilable; a ruling is needed only on which number is right
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-188
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-189:
+  Date raised: 2026-09-09
+  Question: Should the estate have a near-miss register, and what belongs in it? Today a destructive
+    action deleted four unintended files; harm was nil for reasons the actor did not know when acting
+    ("damage is nil, but by luck"). There is no register for that event. It was filed into
+    `assumptions.md` as ASSUMPTION-1294 because nothing else would take it.
+  Why it matters: the estate has near-zero realised harm and a non-zero near-miss rate, so the channel it
+    lacks is the one carrying the signal. A ruling is also the cheapest way to test PRESUMPTION-941 —
+    if the answer is "no", the reason will state the severity filter explicitly, which is the thing
+    currently invisible.
+  Status: OPEN — requires Tom (cheap; a yes/no plus a file name)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-189
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-190:
+  Date raised: 2026-09-09
+  Question: At what age does a proposal in `inbox/proposals/pending/` stop being pending? The directory
+    has grown 1 → 36 behind a decision channel with zero service events in thirty days, and every run
+    reports the number as a backlog awaiting service.
+  Why it matters: the approval-rate metric (378/380 = 99.5%) and the pending count are computed as
+    though the far end will answer. If a thirty-day-dead channel is closed rather than slow, the approval
+    rate is a fact about August and the pending count is not a workload. This is the operative half of
+    PRESUMPTION-943 and is settled by a ruling plus one `ls`-and-`stat` age distribution, not by a
+    search.
+  Status: OPEN — requires Tom; in-house measurable either way
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-190
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-191:
+  Date raised: 2026-09-09
+  Question: Should a scheduled task that cannot complete without an interactive permission grant remain
+    scheduled unattended? Three runs died at permission gates today (`C2a2 morning chat scrape` at
+    claude.ai, `Morning system health` at `request_cowork_directory`, and `c282-wiki-agent-daily-run`
+    with `permissionMode` absent for a sixth day). Each reported the remedy as *obtain the grant*; none
+    proposed descheduling or converting to an attended step. The chat scrape's streak is now six or
+    seven consecutive days.
+  Why it matters: a schedule that reliably burns slots reads as coverage it does not have, and the
+    Chat↔Cowork sync being dark in both directions is why tonight's reconstruction of the day is
+    file-and-transcript only. Related: the telemetry refresh asked, separately, to be retitled as a
+    verification task for a capability reason — the same class of request.
+  Status: OPEN — requires Tom (a policy line, plus one attended `scope: site` grant for claude.ai)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-191
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-192:
+  Date raised: 2026-09-10
+  Question: When a routed item is already answered by an ACTIVE premise, should it be excluded from
+    literature search — or searched precisely because that is the only occasion on which the premise
+    would be re-exposed to evidence? The 09-10 pipeline measured the pre-answered rate at 9 of 11 items
+    across two cycles and proposed a pre-route register grep to stop such items reaching search
+    (ASSUMPTION-1309). No mechanism currently exists for a premise to lose ACTIVE status; the status
+    lifecycle in `provenance_protocol.md` has terminal states but no re-entry.
+  Why it matters: the grep is a real efficiency gain and probably right. But adopting it without a
+    re-entry rule makes `validated_premises.md` monotonic by construction — 158 premises that can be
+    added to and never revised. Settled cheaply either way: count premises that have ever changed status
+    after minting. Related: PRESUMPTION-948.
+  Status: OPEN — requires Tom (a rule); the informing count is one grep
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-192
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-193:
+  Date raised: 2026-09-10
+  Question: At what age does an item logged as "needing a human" stop being pending and become declined?
+    The duplicate `*Total PRS triplets:*` anchor was logged on 2026-08-11 across five tradition registers.
+    On 2026-09-10 it misfired for the first time, landing four Hoffman triplets mid-file; the daily run
+    repaired `hoffman` in place and left `arkanihamed`, `stump`, `loughran`, `macintyre` on the stated
+    ground that renumbering live ids is a human decision (ASSUMPTION-1306). That decision is thirty days
+    old and unmade.
+  Why it matters: four live registers carry a defect that has now demonstrated it can corrupt an append,
+    and the holding pattern is itself the reason no agent may repair them. This is OPEN-190's question
+    ("at what age does a pending proposal stop being pending") applied to defects rather than proposals;
+    one threshold could answer both. Related: PRESUMPTION-951, PRESUMPTION-956.
+  Status: OPEN — requires Tom (a ruling on renumbering, and a general threshold)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-193
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-194:
+  Date raised: 2026-09-10
+  Question: Should a skipped hunt phase leave a negative record? Phase 2 was skipped on 09-10 by explicit
+    judgement — the queue had just reached zero and refilling it would have put new cards in front of 85
+    unread triplets (ASSUMPTION-1305). The judgement may well be right. What is absent is any artefact
+    distinguishing "surveyed, found nothing" from "not surveyed," which is the distinction the Thursday
+    specialist run took care to preserve on the same day (ASSUMPTION-1312).
+  Why it matters: the two states are indistinguishable in the archive, so a coverage gap created by a
+    deferral is invisible to every later run, including this register's. Cheap fix if wanted: the hunt
+    writes a one-line dated record on every run, including skips, with the reason. Related:
+    PRESUMPTION-950.
+  Status: OPEN — requires Tom (or a one-line convention change the daily run can adopt)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-194
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-195:
+  Date raised: 2026-09-11
+  Question: Which cross-connection count is correct — 107, 131, or 135 — and what is the authoritative
+    source for it? All three were stated as fact on 2026-09-11 by three runs that could not see each other
+    (ASSUMPTION-1319); the same day produced a second, smaller divergence on the OpenStory database size
+    (~3 GB / 6 GB / 6.3 GB).
+  Why it matters: connection count is one of five headline network figures and appears in this register's
+    metrics series, in the master wiki, and in every daily run banner. Cheap fix: one machine count of the
+    cross-connection register, and a single named file declared authoritative. The more useful output is
+    how many of the three figures turn out wrong.
+  Status: OPEN — one command plus a naming decision. Related: PRESUMPTION-958, PRESUMPTION-822.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-195
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-196:
+  Date raised: 2026-09-11
+  Question: Is the Gmail decision route standing, or was 2026-09-10 a one-off? Decisions now arrive by
+    email carrying both proposal id and filename, `review/` root holds zero HTML pages, and the
+    position-based-ID bug the INTEGRITY FLAG blamed is therefore out of the path — if that route persists
+    (ASSUMPTION-1327).
+  Why it matters: the same code defect in `generate_review_page.py` is correctness-critical or cosmetic
+    cleanup depending on the answer, and no amount of agent work can determine it. One line from Tom
+    reclassifies an open engineering item.
+  Status: OPEN — requires Tom. Nothing else blocks.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-196
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-197:
+  Date raised: 2026-09-11
+  Question: Does the metabolism regeneration get an unattended execution grant (a prefix allow-rule in
+    `.claude/settings.json`), or does it move off Cowork scheduling onto a launchd agent? The run states
+    flatly that "a sentence in CLAUDE.md cannot grant it" and that the task needs no model in the loop at
+    all (ASSUMPTION-1326).
+  Why it matters: `metabolism_data.json` is 8 days stale, the publisher's own 36 h freshness gate was
+    breached at 65 h on 09-06 and nothing has regenerated since 09-03, and the task has now failed
+    unattended on 08-01, 08-06, 09-06, 09-10 and 09-11. A scheduled task that cannot succeed by
+    construction is consuming a slot and producing a daily failure report. Either remedy ends that; a third
+    option — retiring the scheduled task — is not on the table but should be named.
+  Status: OPEN — requires Tom (configuration or re-hosting). Related: PRESUMPTION-961, ASSUMPTION-1313.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-197
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-198:
+  Date raised: 2026-09-11
+  Question: Should a proposal card that yields nothing on N successive retrieval attempts expire
+    automatically, and what is N? PROP-2026-08-14-033 has now burned four runs; every refusal was correct
+    conduct, and the cumulative retrieval cost is recorded nowhere (PRESUMPTION-964).
+  Why it matters: the card is the sole occupant of the compile queue, so it makes the queue appear live
+    while producing nothing, and the decision to carry or discard it has been addressed to a person on four
+    separate days. An N-strikes rule converts four pending human decisions into zero. Related:
+    PRESUMPTION-951, PREMISE-154.
+  Status: OPEN — requires Tom, or a convention the daily run can adopt.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-198
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-199:
+  Date raised: 2026-09-11
+  Question: Does 20-of-20 pre-answering indicate that the premise register has **saturated** its domain
+    (success — licenses shrinking the search apparatus) or that it has become **unfalsifiable** (failure —
+    licenses expanding it)? Three cycles have measured the rate and each proposed a mechanism; none asked
+    which of the two readings holds (PRESUMPTION-960).
+  Why it matters: this question sits **upstream of OPEN-192**, which asks for a ruling on the mechanism
+    (routing vs propagation). Both candidate mechanisms presume a third reading — inefficiency — that
+    neither saturation nor unfalsifiability supports, and the two supported readings imply opposite actions.
+    Ruling OPEN-192 without ruling this one selects a reading by implication. Cheap discriminating test:
+    sample the seven verbatim pre-answers and ask of each whether the premise settles the item or merely
+    shares its vocabulary.
+  Status: OPEN — requires Tom for the reading; the discriminating test is in-house and unowned.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-199
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-200:
+  Date raised: 2026-09-12
+  Question: **Has any in-house test named anywhere in this estate ever been executed by an agent?** And if
+    the answer is no or nearly no, what should a run do instead of naming one?
+  Why it matters: 15b's Critical flag, adopted today, counts 178 days of owed measurement across four
+    named premises with zero executed, and all five remedial actions are greps (ASSUMPTION-1342). This
+    register has attached an in-house test to nearly every item it has filed for over a month. If naming a
+    cheap test is functionally equivalent to declining it (PRESUMPTION-974), then the self-awareness
+    apparatus's principal output is a growing list of measurements nobody will take, and its nightly claim
+    to have found the cheap discriminator is the illusion the whole system rests on. **This question is
+    upstream of OPEN-192 and OPEN-199 both**, since each of those is itself awaiting an in-house test.
+  Status: OPEN — requires Tom for the convention; the audit limb is in-house and, characteristically,
+    unowned.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-200
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-201:
+  Date raised: 2026-09-12
+  Question: Who recomputes and hedges the 24-synthesis citation set that today's connexin challenge
+    touches, and by when?
+  Why it matters: the daily run filed a challenge against the wiki's own cancer-as-loss-of-coupling gloss
+    (ASSUMPTION-1336) and requested that Levin PRS-02's downstream citations be reviewed. The Summa
+    verification run computed the set the same night: **24 syntheses, 23 carrying the coupling-loss
+    vocabulary**, with Day 080 citing PRS-02 without it — so the set cannot be swept wholesale. Day 199
+    was re-QC'd **28 minutes after the challenge was filed** and still carries the gloss unhedged
+    (ASSUMPTION-1337). This is the deferred-condition leakage pattern in a second subsystem: a condition
+    written into prose that no mechanism holds. The urgent leakage FLAG's own deadline is 2026-09-24,
+    twelve days.
+  Status: OPEN — requires Tom, or a convention by which a filed challenge creates a tracked obligation
+    rather than a sentence.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-201
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-202:
+  Date raised: 2026-09-12
+  Question: Should every parser in this estate carry a fixture, and should the provenance protocol define
+    a header for cross-item objects?
+  Why it matters: two structural gaps surfaced today that are each one small edit away from closed, and
+    neither is in any reporting agent's write scope — **third consecutive day** of that pattern
+    (PRESUMPTION-956, ASSUMPTION-1332, ASSUMPTION-1346). (i) Three runs independently hit the same
+    blank-line-after-`---` parser trigger; one nearly published a 69-item false report from it, and the
+    failure direction is *upward*, so it manufactures work that looks like diligence (ASSUMPTION-1351,
+    PRESUMPTION-976). Every count this estate publishes is a parser's output and none has a fixture.
+    (ii) The object carrying today's Critical finding — the systemic-risk flag — is the one object the
+    provenance spec cannot describe (ASSUMPTION-1346).
+  Status: OPEN — both repairs are trivial, in-house, and outside the write scope of every agent that has
+    reported them.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-202
+    Item type: OPEN QUESTION (raised from assumptions extracted the same run)
+    Current status: OPEN
+
+OPEN-203:
+  Date raised: 2026-09-12
+  Question: Does the hunt need a status between "active" and "quiet" — a source **dormant for cause** —
+    and who may set it?
+  Why it matters: the Wolfram specialist had to argue explicitly that a seven-week silence after a
+    bereavement is not a quiet research program, and noted the vault has made that exact error before
+    (ASSUMPTION-1338). The apparatus is built on 30- and 60-day recency windows with no vocabulary for the
+    distinction, and four traditions were read as genuinely quiet today under exactly that vocabulary. The
+    cost is asymmetric and invisible: a tradition wrongly read as quiet generates no card and therefore no
+    record of the misreading (PRESUMPTION-972, routed to 15a/15b).
+  Status: OPEN — requires Tom for the convention; the literature limb is routed.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-203
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-204:
+  Date raised: 2026-09-12
+  Question: Are 15a and 15b permitted to run sequentially, and if so what does an independence attestation
+    assert?
+  Why it matters: the pipeline has now deviated the same way for two consecutive cycles, declared it both
+    times, and filed independence attestations in all eight result files regardless (ASSUMPTION-1345).
+    Convergence between the two directions is the pipeline's primary quality signal — it is the ground on
+    which today's Critical systemic flag was *adopted* rather than filed — and it is also exactly what an
+    order effect would produce (PRESUMPTION-975, routed). Either the attestation needs a different
+    meaning under sequential execution or the execution needs to change; carrying both unchanged is the
+    one option that cannot be right.
+  Status: OPEN — requires Tom, or a protocol amendment alongside OPEN-202(ii).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-204
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-205:
+  Date raised: 2026-09-13
+  Question: How many items are actually in the literature queue, and what is the parsing rule that
+    settles it?
+  Why it matters: four measurements, four figures - 163 (09-04), 151 (09-12), **137** block-parsed and
+    **371** line-scanned (09-13, of which 143 are prose commentary). ASSUMPTION-1344's discrepancy is now
+    two cycles old and widening. The figure governs whether the 15d re-trigger lane (132 unserved, oldest
+    70 days) is a backlog or an artefact, and REVISE-464's capacity argument is priced against it.
+  Status: OPEN - **raised by the lit-search pipeline itself**, recorded here by 14a. The run declined to
+    re-derive the earlier figures and said so; nobody owns that re-derivation.
+  Provenance:
+    Origin: 15-pipeline, recorded by 14a
+    Chain: [15c -> 14a]
+    Original item: OPEN-205
+    Item type: OPEN QUESTION (raised by a pipeline run; indexed by 14a)
+    Current status: OPEN
+
+OPEN-206:
+  Date raised: 2026-09-13
+  Question: Which census of the wiki is authoritative, and what counts as one page?
+  Why it matters: **three figures for `connected` in one vault on one day - 65 (bootstrap resolver), 75
+    (the CSV the resolver compared against), 82 (the weekly sewing agent's own run)**. The audit called the
+    65/75 gap "genuinely new and unexplained"; the weekly agent, hours apart and unable to see the audit,
+    supplied a candidate mechanism it did not know was wanted - **wikilinks resolve by filename stem, and
+    419 stems have more than one file (489 duplicates)**, which is why 12 pages left the orphan set for 10
+    sewn (ASSUMPTION-1374, 1375). So the live possibility is not that one census is wrong but that
+    **"a page" is undefined and both are right**. Every connectivity figure the estate has recorded - and
+    the Stage-1 determination that rests on them - inherits the ambiguity.
+  Status: OPEN - requires a definition, then one re-derivation. The test is cheap: run both resolvers on a
+    fixed snapshot and diff the page lists.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-206
+    Item type: OPEN QUESTION (raised from a cross-run collision only visible end-of-day)
+    Current status: OPEN
+
+OPEN-207:
+  Date raised: 2026-09-13
+  Question: What does the estate do when a flag has been filed N times without action - escalate it,
+    or withdraw it?
+  Why it matters: five counters ran up today with no rule attached to any of them. **Seventeen** asks for
+    who may run in-house measurements; **twelve** metric-inflation flags, with the filing agent itself
+    proposing "escalated or withdrawn rather than filed a thirteenth time"; **six** asks on
+    `length_ratio_to_target`; **six** statements that retrieval access throttles the network; **thirteen**
+    firings of a "one-time" bootstrap; **123** consecutive budget breaches in one lane. Repetition
+    currently costs the filer tokens and produces nothing. Either the count should trigger something, or
+    the recommendation should be retired and the register should stop paying for it.
+  Status: OPEN - requires Tom. This is a governance rule, not a measurement.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-207
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1372, 1377, 1393; generalised as PRESUMPTION-987)
+    Current status: OPEN
+
+OPEN-208:
+  Date raised: 2026-09-13
+  Question: What would count as C2A2 losing to the dependence reading, and will the project commit to it
+    now?
+  Why it matters: the sewing agent surfaced the Sole/Krakauer/Levin *LLMs as a Cognitive Virus* model as a
+    **rival prediction over measurements this instrument already takes** - persistent dependence with
+    abrupt competence loss, against C2A2's opposite wager on the same apparatus (ASSUMPTION-1373). The ask
+    is to pre-register the loss condition "while it costs nothing." Two things make this urgent rather than
+    philosophical. First, the instrument is dark: the metabolism snapshot has been frozen since 09-03 and
+    the last successful census was 2026-07-28 (ASSUMPTION-1385), so the claim that the measurements are
+    already being taken is **currently false**. Second, the estate has spent fourteen consecutive days
+    generating exclusively agent-stated items with the designer's sync channel down in both directions -
+    which is, on its face, one of the observables the dependence reading predicts. **A pre-registration
+    written after the instrument comes back on is worth less than one written tonight.**
+  Status: OPEN - requires Tom. This is the only question raised tonight that is about what C2A2 claims
+    rather than how it runs.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-208
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1373; generalised as PRESUMPTION-991, routed)
+    Current status: OPEN
+
+OPEN-209:
+  Date raised: 2026-09-13
+  Question: Does `check_scheduler_health.py` detect that a task did not fire, or only that a task it has a
+    hand-written row for did not fire?
+  Why it matters: today's headline was **88 OK / 1 WARN / 3 FAIL**, and four of the OKs were an agent that
+    had not run since 2026-08-09, because there is no `ARTIFACTS` row for `connector-health-*.md`
+    (ASSUMPTION-1382). Three further silent-non-fire mechanisms were recorded the same day: a commit job
+    whose failure artefact is an **absent line** in `held_paths.md` (1358), a 15d monthly cycle lost to a
+    missed 09-06 run and caught only because 15d audits its own cadence (1368), and a backup whose work
+    succeeded while its **log append** failed for a second consecutive week (1387). The fix for the first
+    was recommended on 2026-08-09 and never added.
+  Status: OPEN - the enumeration is cheap and unowned: list every scheduled task with no self-dating
+    ARTIFACTS row. Cf. OPEN-200, ASSUMPTION-1362 (PREMISE-026: an unowned undated test "was never
+    created").
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-209
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1382; generalised as PRESUMPTION-984)
+    Current status: OPEN
+
+OPEN-210:
+  Date raised: 2026-09-14
+  Question: Which gates in this estate emit the command they ran and the result it returned, alongside
+    their verdict — and which emit only the verdict?
+  Why it matters: five instruments were shown today to produce a clean reading from a failed check, by five
+    different mechanisms: the intake pre-check contradicted by its own stated grep (ASSUMPTION-1396); a
+    Summa authorship grep requiring a hyphen-and-number, returning zero on a night with a real violation
+    (1433); `connector-health-weekly`'s four missed fires reading as "88 OK" for want of an ARTIFACTS row
+    (1416); `morning-system-health` reading a status file twelve minutes before its producer writes it
+    (1426); a health verdict issued with two of three inputs refused (1414). REVISE-474 asks this of one
+    gate. **PRESUMPTION-994 is that it is a property of gates.** The enumeration is one pass and is unowned.
+  Status: OPEN. Supersedes nothing; **OPEN-209 is its first instance and is now answered on the merits by
+    ASSUMPTION-1416** — the watchdog blind spot is demonstrated, not theorized, and the two-row fix is
+    named and unapplied.
+
+OPEN-211:
+  Date raised: 2026-09-14
+  Question: Of the last fifty items routed to 15a/15b, how many were answerable from `validated_premises.md`
+    at the moment of routing?
+  Why it matters: nine of eleven across two complete cohorts is already on the record (ASSUMPTION-1395),
+    and every remedy proposed so far repairs the routing step rather than asking whether the item belonged
+    in the loop (PRESUMPTION-995). The estate holds the numerator and has not computed the fraction.
+  Status: OPEN - in-house, one pass over the disposition record. **This run routed one of six candidates
+    and recorded the pre-check command and returns for all six** (see tonight's changelog), which is the
+    first cohort for which the question is answerable without re-derivation.
+
+OPEN-212:
+  Date raised: 2026-09-14
+  Question: What is the estate's rule for when a retrieval lead, a watch item, or a standing flag is
+    abandoned rather than carried?
+  Why it matters: the Wright card has failed retrieval **five** times and its rejection was recommended on
+    a stopping rule the agent invented in the report (ASSUMPTION-1408); WATCH-003 stands at **10 checks**
+    against a **6-check** stale threshold with the same recommendation restated; twelve metric-inflation
+    flags stood unactioned on 09-13 with their filer proposing withdrawal; the budget breach has been
+    reported **131 consecutive times**. No counter in this estate has a threshold attached
+    (PRESUMPTION-1002; OPEN-207, which this sharpens from "what does the estate do" to "what is the rule").
+  Status: OPEN.
+
+OPEN-213:
+  Date raised: 2026-09-14
+  Question: Do `morning-system-health` (~06:03) and `openstory-agents-telemetry-refresh` (06:15) need
+    reordering, or does the consumer need to fail loud on a status line older than the producer's last run?
+  Why it matters: today's health report states "OpenStory feeds current at DB age 0h" on a day the refresh
+    FAILed, and the refresh agent wrote "`morning-system-health` will surface it" (ASSUMPTION-1426). The
+    consumer is structurally unable to see a same-day failure of its producer. One line settles it.
+  Status: OPEN - newly surfaced, not previously on the record.
+
+OPEN-214:
+  Date raised: 2026-09-14
+  Question: Which figures in this estate are produced by an instrument rebuilt per run, and what canonical
+    counter would each be checked against?
+  Why it matters: Summa established that a nightly-rebuilt parser makes every pass-to-pass delta
+    uninterpretable, and that cross-checking against a canonical counter is what licenses reporting a
+    change at all (ASSUMPTION-1432). C2A2's `connected` figure has **two resolvers disagreeing 82 vs 65,
+    with the divergence grown from 1 page to 17, and no canonical counter to check either against**
+    (ASSUMPTION-1417); the literature-queue census has been disputed four times and **none of the four was
+    checked for cap binding** (ASSUMPTION-1436). Cf. OPEN-205, OPEN-206, which this subsumes on method.
+  Status: OPEN - the method is written down, by another project, and is directly applicable.
+
+OPEN-215:
+  Date raised: 2026-09-14
+  Question: `ingest_ledger` reports approved 414 / ingested 382 / decided-zero 30 / OPEN 1.
+    **414 − 382 − 30 = 2.** Which figure is wrong, and what is the definition that settles it?
+  Why it matters: the same OPEN=1 was published twice today from incompatible provenance - asserted from a
+    09-12 log entry by one run whose script was missing, and measured by another (ASSUMPTION-1404). The
+    values agreed; the reliability did not, and the arithmetic reconciles with neither. This is
+    PRESUMPTION-982's subject with a two-item discrepancy small enough to settle in one sitting.
+  Status: OPEN.
+
+OPEN-216:
+  Date raised: 2026-09-14
+  Question: Does every tradition agent have an enumerable, complete source for its thinker's output, and
+    which do not?
+  Why it matters: "Levin was easy by comparison only because `drmichaellevin.org/publications/` is static
+    HTML and complete; that page is what produced all three Levin proposals." Three of four Friston
+    enumeration routes are dead, and the agent's prediction is that "these runs will keep under-reporting
+    him" (ASSUMPTION-1411). The proposal count is currently a measurement of the search surface, and it is
+    the number by which tradition-agent output is reported.
+  Status: OPEN - and it has a deadline the agent set itself: "before next Monday."
+
+OPEN-217:
+  Date raised: 2026-09-14
+  Question: May an agent create the record of a designer decision, and what marks such a record as
+    agent-authored?
+  Why it matters: "Tom ratified the corpus as published on 2026-09-14 and ruled it should have a front
+    door" is a sentence an agent wrote into a commit message it authored and signed, and a second agent
+    cited it back as "Ratified (yours, today)" (ASSUMPTION-1429, PRESUMPTION-999). **The estate has no
+    field that would have caught this**, because DECISION ids attach to rulings arriving through the review
+    channel and this did not arrive through it. In the same bulleted list the run marked its own
+    disposition "Agent-made, id-less, recorded so the distinction stays visible" - **the discipline fires
+    on the agent's act and not on the designer's**, which is the one place the provenance protocol exists
+    to protect. This is the only item of six routed to literature tonight.
+  Status: OPEN - **and it cannot be closed by the commit message.** The 11:28-11:46 Claude Code web session
+    (`claude.ai/code/session_016pziUqQ5VkuRgkSmKMPear`) is outside `list_sessions` and unreadable from
+    here; whether Tom spoke in it is undetermined, and this register declines to assume either way.
+
+OPEN-218:
+  Date raised: 2026-09-14
+  Question: Four counts of the same objects disagreed within one day - pending proposals 13 vs 8, findings
+    90 vs 91, ingest gap "fourth consecutive zero-ingest day" vs "2 days", inbound-sync streak 11 vs 12 and
+    agent-stated streak 14 vs 15. Which definitions are in force?
+  Why it matters: the pending-proposal pair reconciles (8 + 5 filed = 13) and the others do not
+    (ASSUMPTION-1419). The findings pair is the sharpest: **90 carries a stated derivation (ids 001-090,
+    contiguous) and 91 does not, and 91 is what the evening run and the master wiki still say** - so a
+    correction made and evidenced in the morning did not survive the same day.
+  Status: OPEN. This register has adopted the lower streak figures and advanced them by one, and recorded
+    the discrepancy rather than smoothing it.
+
+OPEN-219:
+  Date raised: 2026-09-14
+  Question: What unit convention does this estate use for storage figures?
+  Why it matters: the same database was reported today as **6.57 GB** and **6.12 GiB** by two runs, against
+    a third convention in the 09-13 register (6.49 GB). Free space was **5.7 GB** in one run and **3.85
+    GiB** hours later. Any trend line assembled across these without normalising is wrong, **and this
+    register is the thing that assembles trend lines** (ASSUMPTION-1427).
+  Status: OPEN - trivial to settle, and it silently corrupts exactly the artefact this pipeline produces.
+
+OPEN-220:
+  Date raised: 2026-09-14
+  Question: For each of the 34 active recurring agents, what is the condition under which it should stop?
+  Why it matters: three agents volunteered their own retirement conditions today, unprompted - a batch on
+    its third no-op against a plan that ended 2026-06-30, a refresh that "is now effectively a freshness
+    monitor rather than a refresh", and a keep-warm with a sunset nobody checks (PRESUMPTION-1006). Thirty
+    expired one-time jobs dated April-July sit in the registry and are **costless by construction**,
+    because the cost model excludes one-time tasks from its total. No run asks what 34 is for.
+  Status: OPEN.
+
+OPEN-221:
+  Date raised: 2026-09-14
+  Question: What can this register not see, and has it ever said so?
+  Why it matters: all five intake readers tonight reported, independently and unprompted, that
+    `read_transcript` renders tool calls without arguments or results - so this register is sourced from
+    **agent self-narration, not from the underlying data** (PRESUMPTION-1007). That is the epistemic
+    position PREMISE-124 forbids and PRESUMPTION-998 names, and this register has occupied it since
+    2026-04-10 without recording it once. Four of tonight's forty-five items were verified at source on
+    disk instead.
+  Status: OPEN - **and it is this register's own to fix.** The remedy is to mark every entry `transcript`
+    or `verified-at-source`, which costs one line per item and starts tonight.
+
+OPEN-222:
+  Date raised: 2026-09-16
+  Question: When a scheduled run dies mid-flight, what in the estate notices, and within how long?
+  Why it matters: the 09-15 run of this register spawned six intake agents and stopped; nothing noticed
+    for nineteen hours, and then only the evening sync, in passing (ASSUMPTION-1439). No scheduler row,
+    no absence alarm, no failure notice. The estate's fail-loud discipline fires when a run *finishes*
+    with a failure; a run that does not finish is indistinguishable from one that produced nothing
+    (PRESUMPTION-1008). PREMISE-053 and the l.2101 premise already prescribe the remedy — alarm on the
+    age of the last dated artefact — and this register has no such consumer of its own output.
+  Status: OPEN — **this register's own to fix**: one row in `check_scheduler_health.py` keyed on
+    `changelog/` age would have caught it.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-222
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1439; generalised as PRESUMPTION-1008)
+    Current status: OPEN
+
+OPEN-223:
+  Date raised: 2026-09-16
+  Question: Who are the two writers of `agents/openstory/REFRESH_STATUS.md`, and which one's diagnosis is
+    `morning-system-health` supposed to read?
+  Why it matters: the Mac runner overwrites the file with `>` at 10:15Z; the sandbox task's ENOSPC
+    diagnosis is in no file; every morning report since the sandbox task was added has diagnosed the
+    Mac's step2b instead (ASSUMPTION-1466, PRESUMPTION-1010). PREMISE-006 says the single-writer
+    invariant must be technically enforced. The fix is a second filename.
+  Status: OPEN — trivial; unowned.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-223
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1466)
+    Current status: OPEN
+
+OPEN-224:
+  Date raised: 2026-09-16
+  Question: What re-stamped twenty-eight files in the mount at 22:00:05 on 09-16 — and is it the same
+    process that leaves `tmp_obj_*` at 22:00 and `index.lock` at 04:42?
+  Why it matters: every register this pipeline writes, the master wiki, the review log, the OpenStory
+    feeds and six lit-search result files carry one mtime and unchanged content (ASSUMPTION-1473). Every
+    mtime-based liveness or staleness reading in the estate — Agent 16's ingest check, the metabolism
+    "db actively written," Summa's 1,374 drift items, the node-edges freshness fallback — read a
+    corrupted instrument tonight, and none of them knows it. Two daily git-touching processes exist that
+    no scheduler row names.
+  Status: OPEN — `git log -1 --format=%cd` and `launchctl list | grep 22:00` on the Mac would answer it.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-224
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1473)
+    Current status: OPEN
+
+OPEN-225:
+  Date raised: 2026-09-16
+  Question: Is "(Tom's)" at `deferred/watch_list.md:5725` an attribution or an addressee — and on whose
+    authority is the grep-before-retrieval rule "standing"?
+  Why it matters: the same parenthetical means "for Tom to choose" at l.269 of the same file. The rule
+    was adopted as standing on 09-16 by the agent that wrote it on 09-15, with no designer speech in the
+    window (ASSUMPTION-1451, PRESUMPTION-1009). REVISE-476 asked for one field to settle exactly this and
+    the second case arrived before the first was read. Only Tom can say which he meant, if either.
+  Status: OPEN — **needs Tom.** Not a search.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-225
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1451; sibling of OPEN-217)
+    Current status: OPEN
+
+OPEN-226:
+  Date raised: 2026-09-16
+  Question: Which figure for the designer's latency is this register supposed to report — 7 days (the
+    09-09 decision email), 20 days (DECISION-083, the last attended ruling), or 37 (which it printed on
+    09-13 and 09-14 and which corresponds to nothing later than the 08-08 archive)?
+  Why it matters: the 09-13 and 09-14 snapshots carried "thirty-seven days" while the 09-10 index note in
+    this same register recorded a 36-proposal batch approval emailed on 09-09 (ASSUMPTION-1450). A
+    correction written into `decisions.md` did not reach `metrics/` — PRESUMPTION-989 inside the pipeline
+    that files PRESUMPTION-989. The figure is quoted in every changelog headline about the designer's
+    silence.
+  Status: OPEN as to definition; **the number is corrected tonight** to 7 / 20 and both are reported.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-226
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1450)
+    Current status: OPEN
+
+OPEN-227:
+  Date raised: 2026-09-16
+  Question: What removed `com.c2a2.metabolism-publish` from the scheduler FAIL set between 09-14 and
+    09-15 with the totals unchanged at 87/1/4 — and what entered to keep them unchanged?
+  Why it matters: a row can leave FAIL unseen so long as another arrives; the headline is then a
+    conserved quantity (ASSUMPTION-1464, PRESUMPTION-1011). `publish.log` still says FAIL: FRESHNESS. The
+    report format has no day-over-day diff and neither reader made one.
+  Status: OPEN — one `diff`.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-227
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1464)
+    Current status: OPEN
+
+OPEN-228:
+  Date raised: 2026-09-16
+  Question: Does the review queue's 30-day recency clause bind — and how many of the twenty pending cards
+    mint a PRS at all?
+  Why it matters: five of six cards filed in the window fail the clause or mint nothing, admitted under
+    "significant work" or as gap records (ASSUMPTION-1456, -1458, -1459; PRESUMPTION-1016). The queue
+    the designer is asked to clear during a seven-day review gap is partly backlog and partly notes, and
+    no figure separates them.
+  Status: OPEN — two columns over twenty files.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-228
+    Item type: OPEN QUESTION (raised from PRESUMPTION-1016)
+    Current status: OPEN
+
+OPEN-229:
+  Date raised: 2026-09-16
+  Question: What is the stopping rule for the 15d re-trigger lane? 132 stubs unsearched, 129 after
+    tonight, 280 standing blocks, drain 7 per fortnight — is it a queue or a sink?
+  Why it matters: "queued" appears in every report as a state with a future; if the lane does not clear
+    at any rate anyone has stated, "queued" means "recorded and abandoned" for 129 items
+    (ASSUMPTION-1441, PRESUMPTION-1017). The lit-search run declined 129 instructed searches on budget
+    grounds in the run that asked whether it may (REVISE-477), and OPEN-212 asked for an abandonment rule
+    two days ago.
+  Status: OPEN — sibling of OPEN-212; the arithmetic is two counts from the file's own date tags.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-229
+    Item type: OPEN QUESTION (raised from PRESUMPTION-1017)
+    Current status: OPEN
+
+OPEN-230:
+  Date raised: 2026-09-16
+  Question: Which statement of the sandbox's git capability is true — "the sandbox has no write
+    permission there" (09-15) or "`mv` works where `rm` is blocked" (09-16) — and who cleared the 09-15
+    lock?
+  Why it matters: two consecutive daily runs made opposite claims about what they can do to `.git`, and
+    the 09-15 lock was gone by 09-16 with no record of by whom (ASSUMPTION-1455). Phase 6 has been
+    BLOCKED for a week on a capability nobody has stated once. The run report has no field for "what I
+    can do here."
+  Status: OPEN — `ls scheduler/_mount_junk/` and the Mac's shell history.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-230
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1455)
+    Current status: OPEN
+
+================================================================================
+# 2026-09-17 — Open questions raised by the 14a end-of-day run
+
+OPEN-231:
+  Date raised: 2026-09-17
+  Question: What process restamped **59 files at 15:55:36–37 EDT** on 09-17 — every register this
+    pipeline writes, the 15a result file, the day's proposal, the watch list — and is it distinct from the
+    22:00 process (9 files at 22:00:07 tonight; 28 at 22:00:05 on 09-16)? Two restamp events per day at
+    two clock times, neither named by any scheduler row.
+  Why it matters: OPEN-224 asked about one event. There are two, and the 15:55 one covers the files whose
+    mtimes this register, the lit-search lane and Agent 16 use to date each other's work. Until the
+    processes are named, no mtime under `architecture/` dates anything (ASSUMPTION-1480).
+  Status: OPEN — `find -newermt` gives the set; the Mac's launchd list and the Cowork scheduler at 15:55
+    and 22:00 give the candidates. **Needs the Mac.**
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-231
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1480)
+    Current status: OPEN
+
+OPEN-232:
+  Date raised: 2026-09-17
+  Question: Where is "the 30-day window" written? No file under the wiki mount states it (the daily-run
+    SKILL says 60 days; the L2 WARN threshold is 21); three specialist runs in three days have applied
+    it and redefined it (three sources admitted under "significant work," 09-15; seven days, 09-16; an
+    eight-year-old argument under "significant work," 09-17).
+  Why it matters: OPEN-228 asks whether the clause binds. It cannot bind if it has no home. Every card on
+    the 21-card page was admitted under a criterion whose text nobody can cite (ASSUMPTION-1501).
+  Status: OPEN — `grep -rn "30.day" agents/ inbox/ master/` and the specialist SKILL files on the Mac.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-232
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1501)
+    Current status: OPEN
+
+OPEN-233:
+  Date raised: 2026-09-17
+  Question: When a permitted write (`create_draft`) produces an artefact with a known error and the
+    correction (`update_draft`) is an unpermitted write, what should an unattended run do — leave the
+    error, discard the draft, or write a second artefact that supersedes it? Today it left it, disclosed
+    it in a log the recipient does not read, and the error is what Tom will open.
+  Why it matters: the permission tier is asymmetric by design (creation is low-risk, modification of
+    existing mail is not), and the asymmetry makes first drafts final. PREMISE-093 covers refusing a gated
+    action and alerting; nothing covers an error the run itself introduced before the gate
+    (ASSUMPTION-1485, PRESUMPTION-1024). **Needs Tom** — it is a policy, not a search.
+  Status: OPEN.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-233
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1485)
+    Current status: OPEN
+
+OPEN-234:
+  Date raised: 2026-09-17
+  Question: Is `scripts/commit_daily_run.sh` (05:45, Mac-side) ordered after the daily run's artefacts,
+    or does it race them? Today the commit landed at 05:45 EDT and the review page, L2 stream and draft
+    landed at 06:39–06:40 EDT; on prior days the page was done by 04:40. "First clean commit since 09-14"
+    committed nothing the run produced.
+  Why it matters: Phase 6 was BLOCKED for a week on a lock; unblocked, it commits the previous day's
+    files under today's date whenever Phase 2 runs long (ASSUMPTION-1486). A commit keyed on a
+    done-marker rather than a clock closes it.
+  Status: OPEN — `git log --format='%ci' -1 -- review/2026-09-17_review.html` on the Mac.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-234
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1486)
+    Current status: OPEN
+
+OPEN-235:
+  Date raised: 2026-09-17
+  Question: Did the 09-17 lit-search pipeline run (`local_0cbbc6fa`) complete? At 23:48 EDT it had
+    written one 15a file, no 15b file, no run note, and its transcript ended on two `Agent` spawns — the
+    state in which the 09-15 self-awareness run died (OPEN-222).
+  Why it matters: if it did not, OPEN-222 has its second instance in three days and the absence alarm
+    PREMISE-053 prescribes has a second data point; if it did, the 15a/15b independence pattern changed
+    tonight (ASSUMPTION-1481, -1482) and the 09-18 pass should say so.
+  Status: OPEN — tomorrow's pass reads the transcript; one `grep -c 2026-09-17 for_lit_search.md`.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-235
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1481)
+    Current status: OPEN
+
+OPEN-236:
+  Date raised: 2026-09-17
+  Question: Which figure is the Chat→Cowork failure streak — 3 (the scrape's own note), 14 (Agent 16's
+    09-03 window), 15 (the evening sync), or ~90 (every file since 06-20 is a failure note)? And what is
+    the counter supposed to count — consecutive failed runs, days since the last content, or days since
+    the last delivery?
+  Why it matters: ASSUMPTION-1447 recorded three counters for two streaks; today there are four, and the
+    smallest one was produced by reading the previous day's note instead of the directory
+    (ASSUMPTION-1492). A streak that resets to whatever yesterday said is not a streak.
+  Status: OPEN — `grep -L FAILED daily_sync/chat_to_cowork/*.md | tail -1` gives the answer to the third
+    definition in one line; the first two need the counter's owner to say which.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-236
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1492)
+    Current status: OPEN
+
+*Six raised 2026-09-17 (231–236). OPEN-233 needs Tom; OPEN-231 needs the Mac; the other four are one
+command each and are named so that a reader can run them.*
+
+---
+
+## 2026-09-18 — raised by the 14a/14b end-of-day pass
+
+OPEN-237:
+  Date raised: 2026-09-18
+  Question: Were the 16:30–16:50 front-end changes (wiki_narration, explorer, community_explorer) writes
+    or restamps — and do they fix the eight RED voice-shell rows, cause them, or predate them?
+  Raised from: ASSUMPTION-1511, ASSUMPTION-1509.
+  Why it matters: This is the evening sync's own "first thing I'd want settled tomorrow," and it cannot
+    be settled from mtimes, because this estate restamps daily (ASSUMPTION-1523).
+  Status: OPEN — needs one byte-comparison against a pre-16:30 copy, then one rerun of the suite. The
+    comparison needs a copy that predates 16:30; if none exists, that absence is the answer to a
+    different question (PRESUMPTION-1035).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-237
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1511)
+    Current status: OPEN
+
+OPEN-238:
+  Date raised: 2026-09-18
+  Question: Is the lit-search pipeline session hung, or dead with the registry still reporting it
+    running — and did today's scheduled run fail to start, or correctly decline to start because the
+    09-17 session never exited?
+  Raised from: ASSUMPTION-1512, ASSUMPTION-1513; PRESUMPTION-1040.
+  Why it matters: Third instance of the silent-death shape. No 15abc report in three days; the
+    lit-search drain is currently zero while the queue grows (PRESUMPTION-1042).
+  Status: OPEN — the second limb is one registry field. The first limb is not answerable with the
+    instruments now in place, which is what OPEN-222 and PREMISE-053 already asked for and nobody built.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-238
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1512)
+    Current status: OPEN
+
+OPEN-239:
+  Date raised: 2026-09-18
+  Question: There were **two** restamp windows on 09-18 — ~14:25:11–12 and ~22:00 — not one. Which
+    process owns each, and why do `agents_tab.html` and `review_log.html` appear in the 22:00 window
+    while the registers appear in the 14:25 one?
+  Raised from: ASSUMPTION-1523. Extends OPEN-224 and OPEN-231 (which named 15:55 and 22:00).
+  Why it matters: The 14:25 cluster includes `assumptions.md`, `open_questions.md` and
+    `for_lit_search.md` — this register's own files. Its mtimes are among the corrupted instruments.
+  Status: OPEN — `launchctl list` plus the Cowork scheduler's task times at those two minutes. Third
+    consecutive day the process has gone unnamed.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-239
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1523)
+    Current status: OPEN
+
+OPEN-240:
+  Date raised: 2026-09-18
+  Question: Does the scheduler record a no-op check in the same field as a passing check — and if so,
+    how many of the estate's "unchanged since" and "green as recently as" figures are dated from a
+    verdict that never ran?
+  Raised from: ASSUMPTION-1510; PRESUMPTION-1034 (routed to 15a/15b).
+  Why it matters: This is an instrument question with estate-wide reach, not a voice-shell question.
+  Status: OPEN — read the check's status-file schema once; the answer is structural, not per-run.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-240
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1510)
+    Current status: OPEN
+
+*Four raised 2026-09-18 (237–240). **None needs Tom**; all four are one or two commands, and OPEN-237's
+first limb may be unanswerable if no pre-16:30 copy exists — which would itself be the finding. OPEN-238
+and OPEN-240 are instrument questions whose scope is the whole estate, not the artefact that surfaced them.*
+
+---
+
+## 2026-09-19
+
+OPEN-241:
+  Date raised: 2026-09-19
+  Question: Did the voice-shell suite degrade, or did the suite change? Failures moved 8 → 11 **and** the
+    row count moved 363 → 364 **and** the commit moved c0eda6e → f9e2f83, all in one night.
+  Raised from: ASSUMPTION-1527, ASSUMPTION-1528.
+  Why it matters: Three days of RED have been narrated as decay. If the added row is one of the eleven
+    failures, part of the "decay" is new coverage finding old breakage — which is the opposite
+    conclusion. OPEN-237 (how old is the breakage) cannot be answered until this is.
+  Status: OPEN — `git log --stat c0eda6e..f9e2f83` plus the two status files. One command, two minutes.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-241
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1528)
+    Current status: OPEN
+
+OPEN-242:
+  Date raised: 2026-09-19
+  Question: What writes 134 files in 2.6 seconds at 22:00, and why did the 14:25 window stop? Tonight the
+    two windows recorded on 09-18 became one, and the set grew from ~8 files to 134 — including a closed
+    day's changelog, a closed day's metrics snapshot, and ~70 Summa synthesis files.
+  Raised from: ASSUMPTION-1538, ASSUMPTION-1539; continues OPEN-224, OPEN-231, OPEN-239.
+  Why it matters: Fifth consecutive day observed, fifth consecutive day unnamed — and every "unchanged
+    since" and "modified today" figure in the estate is computed from mtimes this process rewrites. One
+    new datum tonight: the git-debris window (ASSUMPTION-1551) is also 22:00, on two successive nights,
+    which is the first evidence pointing at a git operation rather than an rsync.
+  Status: OPEN, **and now cheaply testable for the first time**: store `shasum` of the ~70 Summa
+    synthesis files tonight, re-run tomorrow after 22:05. Identical hashes prove restamp-without-change
+    and close five days of inference. This is the one-line test the window-watching has lacked.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-242
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1538)
+    Current status: OPEN
+
+OPEN-243:
+  Date raised: 2026-09-19
+  Question: Which specialists fire on a cadence slower than their source publishes, and how large is each
+    one's structurally invisible window? The Rohr gap (five CAC meditations per week, 09-14→09-18) is one
+    instance; the set has never been enumerated.
+  Raised from: ASSUMPTION-1540; PRESUMPTION-1048 (routed to 15a/15b).
+  Why it matters: The Rohr gap was found by accident, because the orchestrator happens to read the CAC
+    archive index directly. Any specialist without that accident has an unmeasured hole. This is a
+    sampling problem with a closed-form shape, not a per-agent bug.
+  Status: OPEN — in-house: tabulate each specialist's cron against its source's publication rate. One
+    table, one afternoon, answers it for all fifteen traditions at once.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-243
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1540)
+    Current status: OPEN
+
+OPEN-244:
+  Date raised: 2026-09-19
+  Question: Is the scheduled-task sandbox the right execution substrate for tasks whose inputs grow
+    without bound? Two tasks died today on one wall — a 6.94 GB database against a ≤5.9 GB scratch
+    ceiling — and the OpenStory run's own words are "the gap is widening, not closing."
+  Raised from: ASSUMPTION-1530, ASSUMPTION-1531; PRESUMPTION-1043, PRESUMPTION-1044.
+  Why it matters: Both runs proposed fixes, both fixes were scoped to their own task, and **neither run
+    named the other's failure**. The question is not which patch to apply but whether a per-task patch is
+    the right shape of answer at all. The estate has already made this move once — the daily-run commit
+    step was migrated to launchd on the Mac for exactly the "sandbox can't do this" reason, and the
+    metabolism run names that precedent itself.
+  Status: OPEN — needs Tom. It is an architectural call, not a command.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-244
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1531)
+    Current status: OPEN
+
+*Four raised 2026-09-19 (241–244). **Three are commands; OPEN-244 needs Tom** and is the first
+architectural question raised by this pass in some weeks. OPEN-242 is, for the first time in five days
+of observation, accompanied by a concrete one-line test rather than a further description of the window.*
+
+---
+
+## 2026-09-20 — raised by the 14a/14b end-of-day pass
+
+OPEN-245:
+  Raised: 2026-09-20 by 14b (PRESUMPTION-1060)
+  Question: **Has the ASSUMPTION / PRESUMPTION distinction survived twenty-one days without a designer?**
+    The provenance protocol defines `Item type: ASSUMPTION (stated)` as "Original designers were aware of
+    this premise." For three weeks every extracted item has been sourced to an agent's self-report or to
+    a measurement this pass made. Either the marker's definition should be widened (and say so), a third
+    marker added for agent-stated claims, or the pass should file fewer items on designer-silent days.
+  Needs: **Tom.** This is a definition question about the estate's central epistemic-honesty marker, not
+    a command.
+  Status: OPEN
+
+OPEN-246:
+  Raised: 2026-09-20 by 14a (ASSUMPTION-1565, PRESUMPTION-1056)
+  Question: What is the estate's counting convention? Specifically: does a consecutive-day streak include
+    the day it is written on, and does an "attempt" count attempts or failures? Three same-day
+    off-by-one disagreements today trace to this being undefined.
+  Needs: one paragraph in a conventions file, then a single re-derivation of the disputed counts. This is
+    a command, not an architectural question.
+  Status: OPEN
+
+OPEN-247:
+  Raised: 2026-09-20 by 14a (ASSUMPTION-1568, PRESUMPTION-1054)
+  Question: Who owns a **liveness-versus-progress check** for scheduled sessions, and what is the
+    threshold? The lit-search pipeline has been alive and stationary since at least the 17th; no
+    register, no scheduler row and no agent reports it, and today 23 re-triggers were routed into it. A
+    wall-clock-since-last-register-write check would have fired three days ago.
+  Needs: an owner. The check itself is small; the question is whose remit it falls in, which is the same
+    shape as OPEN-244 and PRESUMPTION-1059.
+  Status: OPEN
+
+OPEN-248:
+  Raised: 2026-09-21 by 14a (ASSUMPTION-1586, ASSUMPTION-1588, PRESUMPTION-1061)
+  Question: Who owns the sandbox scratch-space fault, and is the answer "move the heavy work to the
+    Mac"? Eight scheduled runs were blocked by it today. One of them established the real cause — a block
+    quota or reservation, not genuine fullness, verified by a 4-byte write test against `df` reporting
+    2.4 G free — and that diagnosis reached no register and no sibling. Three unrelated agents
+    independently concluded their work must move to the Mac; none can change a host or a schedule.
+  Needs: **an owner**, then one line in a register so the next eight runs do not rediagnose it. The
+    architectural half (Mac versus sandbox for DB-sized work) is the same shape as OPEN-244.
+  Status: OPEN
+
+OPEN-249:
+  Raised: 2026-09-21 by 14a (ASSUMPTION-1619) and 14b (PRESUMPTION-1062, PRESUMPTION-1069)
+  Question: Two parts, and they meet. (a) Does a scheduled session that produces no final report count as
+    having run? One did today — it created six tasks, spawned two sub-agents and went idle in silence, and
+    no instrument in the estate noticed, including PREMISE-208's liveness assertion, which fires on
+    register writes rather than session reports. (b) Which role runs the in-house measurements? The lit
+    pipeline raised a **Critical** SYSTEMIC-RISK-FLAG on recurrence today: the instruments it names are
+    "specified, cheap, and unrun," and were equally unrun when it said so on 09-16. The empirical lane has
+    an inbox and no worker, which is why every `SUPPORTED` it issues is, in its own words, "supported by
+    the weaker of two available sources."
+  Needs: **Tom for (b)** — it is a question about what the network is for, not a command. (a) is a
+    one-line assertion and wants an owner alongside OPEN-247's liveness check.
+  Status: OPEN
+
+OPEN-250:
+  Raised: 2026-09-21 by 14a (ASSUMPTION-1595, ASSUMPTION-1594) and 14b (PRESUMPTION-1064)
+  Question: Is 30k the right token guideline for a task whose irreducible work is reading eight
+    documents? Five runs declared breaches today, at 1.5× to 8×, four of them naming the identical cost
+    centre — contract reads plus six full commentary reads. Rule 6 was satisfied five times and nothing
+    changed. One run asked the design question instead and answered it: "The register's format, not the
+    budget, is what is wrong" — `for_lit_search.md` is 22,725 lines with four incompatible item formats.
+  Needs: **Tom**, for one sentence: either the guideline is per-task-class rather than flat, or the tasks
+    that cannot meet it are the wrong shape. A guideline breached by every instance of a class stops
+    distinguishing necessary reading from thrash.
+  Status: OPEN
+
+## 2026-09-22 — raised by the 14a/14b end-of-day pass
+
+OPEN-251:
+  Raised: 2026-09-22 by 14a (ASSUMPTION-1651, -1631) and 14b (PRESUMPTION-1074)
+  Question: Who may amend a scheduled task file when the designer is absent? Five known defects were
+    restated today and left alone "because the file is the user's to change": unresolvable memory path,
+    wrong Step 2 command, no hold check in Step 2 (open since 09-20; caused a breach today, OPEN-253),
+    `permissionMode` absent on the daily run (18 days), and stale schedule text (04:35 vs "8am").
+  Needs: **Tom** — either a standing delegation (which agent, which class of edit, logged where) or a
+    confirmation that task files stay frozen until he returns.
+  Status: OPEN
+
+OPEN-252:
+  Raised: 2026-09-22 by 14a (ASSUMPTION-1638, -1640)
+  Question: Where do the two large-database jobs run? OpenStory (7.14 GB, +~70 MB/day) and metabolism
+    regen (6.7 GB snapshot) are each "structurally unable to run in a sandbox" with 4.1 GB free on `/` and
+    0 on `/sessions`. Options put to Tom: OpenStory (a) read live db `immutable=1`, (b) copy needed pages
+    only, (c) snapshot on the Mac, (d) prune/archive; metabolism → launchd agent, plus FAIL at 26h on
+    `_meta.generated`. Narrows OPEN-248.
+  Needs: **Tom**, one choice per job.
+  Status: OPEN
+
+OPEN-253:
+  Raised: 2026-09-22 by 14a (ASSUMPTION-1648) and 14b (PRESUMPTION-1077)
+  Question: Day 076 is under a designer hold (transcript fidelity). Four QC runs left it unmarked; run
+    e02f71c9 marked it pass/pass. Does the mark stand, and should holds be enforced by the sweep script
+    rather than by each run's reading of convention?
+  Needs: **Tom** (ruling on the mark); the enforcement half is a one-line check once OPEN-251 is answered.
+  Status: OPEN
+
+
+## 2026-09-23 — raised by the 14a/14b end-of-day pass
+
+OPEN-254:
+  Raised: 2026-09-23 by 14a (ASSUMPTION-1659)
+  Question: Approved card PROP-2026-09-09-003 dates the Hecht dialogue 15 Sept; the source now says 22
+    Sept. The date appears three times in `traditions/kastrup/prs_triplets.md`. Who may correct an
+    approved triplet's metadata, and does a date correction need a review pass?
+  Needs: **Tom** (or a standing delegation under OPEN-251).
+  Status: OPEN
+
+OPEN-255:
+  Raised: 2026-09-23 by 14a (ASSUMPTION-1675) and 14b (PRESUMPTION-1082)
+  Question: Three unattended runs tried to fall back to Desktop Commander (host-side) when the sandbox
+    failed. All were auto-declined or died. Should task files forbid host fallback explicitly, or name
+    the jobs allowed to use it?
+  Needs: **Tom**.
+  Status: OPEN
+
+## 2026-09-25 — raised by the 14a/14b end-of-day pass (blocked run)
+
+OPEN-256:
+  Raised: 2026-09-25 by 14a/14b (blocked run)
+  Question: Regression of OPEN-003 (resolved 2026-04-13). The session_info MCP tools (list_sessions,
+    read_transcript) that have supplied 14a/14b's transcript access since that date are absent from this
+    run's tool set entirely — not among loaded tools, not among deferred tools, not among MCP servers
+    still connecting. Nothing appears to have detected the loss before this run tried to use it. Is that
+    integration monitored anywhere, or does its failure surface only as an empty registry update that
+    looks identical to "no C2A2 session occurred today"?
+  Context: This also covers 2026-09-24, which has no 14a/14b changelog or snapshot at all, even though
+    the 15-series lit-search pipeline ran that night against the 09-23 intake — so the gap is at least
+    two consecutive days in the 14a/14b layer specifically, not one.
+  Related decisions: OPEN-003 (resolved 2026-04-13)
+  Needs: **Tom** — confirm whether session_info is still meant to be wired into the 14a/14b scheduled
+    task, and if so, what changed. If it is being deprecated or replaced, 14a/14b's "Daily Cowork session
+    transcripts (provided as input on each run)" input assumption needs updating too.
+  Status: OPEN
+  Update 2026-09-28 (second 14a/14b pass): PARTIALLY ANSWERED. session_info was present in the 09-28
+    evening sync's second run and in this pass (scheduler lastRunAt 2026-09-29T03:42Z), and a real batch
+    ran (ASSUMPTION-1681–1697, PRESUMPTION-1087–1094). It is intermittent, not deprecated. The
+    monitoring half of the question stands; see OPEN-257 on execution surfaces.
+
+## 2026-09-28 — raised by the second 14a/14b end-of-day pass
+
+OPEN-257:
+  Raised: 2026-09-28 by 14a (ASSUMPTION-1696) and 14b (PRESUMPTION-1091, -1093)
+  Question: The same scheduled tasks appear to run on more than one surface. One is local, with
+    session_info and scheduler records. The other lacks session_info and bash (the 09-25–09-28 blocked
+    14a/14b notes; the "scheduled cloud session" that wrote `changelog/2026-09-29_changes.md` on local
+    date 09-28; the 09-25–09-28 lit run notes, while local lastRunAt stays at 09-24). Is the second
+    surface intended? Should every output name the surface it ran on, so a blocked surface is not read
+    as an empty day?
+  Needs: **Tom**.
+  Status: OPEN
+
+OPEN-258:
+  Raised: 2026-09-28 by 14a (ASSUMPTION-1691) and 14b (PRESUMPTION-1087)
+  Question: ~30 local scheduled jobs were disabled 2026-09-24 between 2:20 and 4:15 pm ET, per the weekly
+    ecosystem report. They are enabled again now (nextRunAt 09-29), and no record says why. Was the pause
+    intentional? Should a daily job alarm when other daily jobs miss their slot?
+  Needs: **Tom**.
+  Status: OPEN
+
+## 2026-09-29 — raised by the 14a/14b end-of-day pass
+
+OPEN-259:
+  Raised: 2026-09-29 by 14a (ASSUMPTION-1707) and 14b (PRESUMPTION-1096)
+  Question: Both human-input channels were down all day: the Gmail connector is invalidated (second day)
+    and the Chrome extension was unreachable, with the built-in browser not signed in. Pending proposals
+    cannot move and walk notes cannot arrive, yet every downstream task ran and reported normally. Should a
+    daily job alarm when no human input has arrived through any channel for N days, and who re-authorizes
+    the connectors?
+  Needs: **Tom** (reauthorize Gmail; sign in a browser profile for the scrape).
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a, 14b]
+    Original item: OPEN-259
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-257 (update 2026-09-29): Confirmed again tonight. A cloud run of this same task wrote
+  `changelog/2026-09-30_changes.md` at 03:31 UTC (local 09-29 evening), dated by UTC, with no session_info;
+  this local pass fired ~11 minutes later. The evening sync also ran on both surfaces (~18:39 cloud, ~18:45
+  local), and the lit pipeline ran two concurrent instances (ASSUMPTION-1699).
+
+## 2026-09-30 — raised by the 14a/14b end-of-day pass
+
+OPEN-260:
+  Raised: 2026-09-30 by 14b (PRESUMPTION-1099) from 14a (ASSUMPTION-1713, -1714, -1720)
+  Question: Thirty-two tasks are cloud-migrated, yet some still run locally (summa-2026-daily-batch,
+    c282-wiki-agent-daily-run). The Mac watchdog cannot see cloud runs, and about ten weekly agents have been
+    silent since about 09-20 with no alarm. For each scheduled task, which surface is authoritative? Should the
+    non-authoritative copy be disabled? And where should a single run record live that every monitor reads?
+  Needs: **Tom** (surface choice per task); then an in-house registry reconciliation.
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14a, 14b]
+    Original item: OPEN-260
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-09-30): Day 3 without either human-input channel. Gmail is still unauthorised and
+  there has been no walk chat since 09-23. PRESUMPTION-1101 adds the downstream cost: holds and escalations
+  addressed to Tom keep accumulating.
+
+## 2026-10-01 — raised by the 14a/14b end-of-day pass
+
+OPEN-261:
+  Raised: 2026-10-01 by 14b (PRESUMPTION-1103, -1104) from 14a (ASSUMPTION-1721, -1722)
+  Question: Two lit-pipeline runs dispositioned PRESUMPTION-1099..1102 differently: MONITOR-634..637 were committed;
+    REVISE-495..497 were proposed but not applied. Which set stands? Should a queue item's test target always be the
+    presumption, with the remedy kept as context? (14a/14b adopted that split for the 10-01 items on a trial basis.)
+    And what stops two writers clobbering the same register again?
+  Needs: **Tom** (ruling on the conflict; see review/2026-10-01_lit-pipeline_concurrent-run_conflict.md); then an
+    in-house run lock.
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14a, 14b]
+    Original item: OPEN-261
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-10-01): Day 4. Signals now disagree: the wiki daily run reports Gmail reachable, while the
+  deferred monitor reports it unauthenticated (ASSUMPTION-1725). There has still been no walk chat since 09-23.
+OPEN-260 (update 2026-10-01): The cloud 14a/14b and sync runs fired again and wrote to the same dated files as the
+  local runs (ASSUMPTION-1728).
+
+## 2026-10-02 — raised by the 14a/14b end-of-day pass
+
+OPEN-262:
+  Raised: 2026-10-02 by 14a (ASSUMPTION-1736, -1737)
+  Question: Unattended runs that hit the full sandbox disk try a Desktop Commander fallback. The fallback needs approval, and it is auto-declined when no one is present. Should scheduled tasks be granted that permission, or should the fallback be removed from their specs so they fail loud at once? As things stand, the fallback exists only when Tom is at the machine.
+  Needs: **Tom** (permission ruling)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-262
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-261 (update 2026-10-02): Second day of concurrent lit-pipeline runs. The second instance created `lit_pipeline.lock`, applied nothing, and released it. The lock-check rule is written only in the lock file's body, not in the task spec (ASSUMPTION-1731, PRESUMPTION-1106). DISPOSITION-1021–1024 duplicate real IDs. See review/2026-10-02_lit-pipeline_concurrent-run_conflict.md.
+OPEN-260 (update 2026-10-02): The cloud runs stamp UTC. `changelog/2026-10-03_changes.md` existed before the local 10-02 pass ran (PRESUMPTION-1108). The question now includes which day a dated file describes.
+OPEN-259 (update 2026-10-02): Day 5 without designer input. No walk chat; the chat scrape substituted unrelated chats (ASSUMPTION-1740). Gmail state is still contradictory between tasks (ASSUMPTION-1735(d)).
+
+## 2026-10-03 — raised by the 14a/14b end-of-day pass
+
+OPEN-263:
+  Raised: 2026-10-03 by 14b (PRESUMPTION-1110; ASSUMPTION-1744, -1743)
+  Question: Duplicate firings now appear outside the lit pipeline. The Wolfram agent found a proposal stamped in its own start minute and reported 0. Should duplicate firing be fixed once at the scheduler (one registration per task, local or cloud, not both) rather than with per-task locks? Should every task stamp a run ID on what it writes?
+  Needs: **Tom** (scheduler registry ruling)
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-263
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-259 (update 2026-10-03): Day 6 with no Cowork designer speech. However, the evening sync found a same-day claude.ai chat, "Antique et nova" (Vatican AI note, Magisterium AI, Truthly.ai, Levin & Dennett), that "reads like walk dictation". It was excluded on its title alone (ASSUMPTION-1752, PRESUMPTION-1111). The day-count may be an artefact of the title filter. Tom to confirm.
+OPEN-261 (update 2026-10-03): The lock file says "single instance". The evening sync says a second copy fired and exited on the lock (ASSUMPTION-1743). Unresolved. REVISE-502 (High) recommends moving the lock rule into the task spec.
+OPEN-260 (update 2026-10-03): A further question is whether cloud-run tasks appear in local session_info at all. If they do not, the local 14a/14b pass cannot see them (PRESUMPTION-1114).

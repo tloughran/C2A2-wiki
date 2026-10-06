@@ -129,3 +129,26 @@ Forwarded to the Loughran agent and the master node as an architectural challeng
 
 ---
 *Source: Resurrecting Civility — Document Explorer HTML (RC Pilot) | Processed: 2026-04-05; TBP heterarchy explainer + BBC Radio 4 "The Artificial Human" | Processed: 2026-08-09; verification + reciprocal-dispatch pass | 2026-08-10*
+
+### Ingest 2026-09-10
+
+16 triplets added from 5 approved proposals (decision email 2026-09-09): PRS-36, PRS-37, PRS-38, PRS-39, PRS-40, PRS-41, PRS-42, PRS-43, PRS-44, PRS-45, PRS-46, PRS-47, PRS-48, PRS-49, PRS-50, PRS-51.
+
+- `PROP-2026-09-01-001` — 07/2026 - ARC-AGI 3 Review and What Monty Would Need to Solve it (talk, https://forum.thousandbrains.org/t/07-2026-arc-agi-3-review-and-what-monty-would-need-to-solve-it/1181) → PRS-36, PRS-37, PRS-38
+- `PROP-2026-09-01-002` — 07/2026 - Deep Dive into Grid Cell Literature (talk, https://forum.thousandbrains.org/t/07-2026-deep-dive-into-grid-cell-literature/1178) → PRS-39, PRS-40, PRS-41, PRS-42
+- `PROP-2026-09-01-003` — 2026/07 - Robotic Object Recognition for Thousand Brains Systems (talk, https://forum.thousandbrains.org/t/2026-07-robotic-object-recognition-for-thousand-brains-systems/1173) → PRS-43, PRS-44, PRS-45
+- `PROP-2026-09-08-001` — 07/2026 - FENS Conference Recap (talk, https://forum.thousandbrains.org/t/07-2026-fens-conference-recap/1174) → PRS-46, PRS-47, PRS-48
+- `PROP-2026-09-08-002` — 2026/07 - Open-Ended Discussion on Open Theory Questions (talk, https://forum.thousandbrains.org/t/2026-07-open-ended-discussion-on-open-theory-questions/1171) → PRS-49, PRS-50, PRS-51
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+15 triplets added from 4 approved proposals (decision email 2026-09-23): PRS-52, PRS-53, PRS-54, PRS-55, PRS-56, PRS-57, PRS-58, PRS-59, PRS-60, PRS-61, PRS-62, PRS-63, PRS-64, PRS-65, PRS-66.
+
+- `PROP-2026-09-15-001` — 2026/06 - Attention and Model-Free Segmentation (talk, https://forum.thousandbrains.org/t/2026-06-attention-and-model-free-segmentation/1170) → PRS-52, PRS-53, PRS-54, PRS-55
+- `PROP-2026-09-15-002` — 2026/06 - Visual Saliency for Efficient Learning and Exploration (talk, https://forum.thousandbrains.org/t/2026-06-visual-saliency-for-efficient-learning-and-exploration/1162) → PRS-56, PRS-57, PRS-58
+- `PROP-2026-09-22-001` — 2026/06 - Attentional Regions, Policies, and Prediction Error (talk, https://forum.thousandbrains.org/t/2026-06-attentional-regions-policies-and-prediction-error/1155) → PRS-59, PRS-60, PRS-61, PRS-62
+- `PROP-2026-09-22-002` — 2026/07 - Q3 Roadmap and Q2 Review (talk, https://forum.thousandbrains.org/t/2026-07-q3-roadmap-and-q2-review/1159) → PRS-63, PRS-64, PRS-65, PRS-66
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

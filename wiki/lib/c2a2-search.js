@@ -56,7 +56,8 @@
   const callBroker = async (opts) => {
     const action = (opts && opts.action) || 'enrich';
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+    // A caller that asks a slow model (the planner, broker alias "answer") passes its own ceiling.
+    const timer = setTimeout(() => controller.abort(), (opts && opts.timeoutMs) || REQUEST_TIMEOUT_MS);
     try {
       const resp = await fetch(BROKER_URL, {
         method: 'POST',

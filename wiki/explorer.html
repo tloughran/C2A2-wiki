@@ -28,7 +28,7 @@
   #row1 {
     height: 48px;
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
     align-items: center;
     column-gap: 10px;
     padding: 0 16px;
@@ -196,12 +196,17 @@
   }
 
 
+  /* The tab never extends under the shell's command strip (#ccl-bar).
+     Before this, bottom-anchored tab controls -- the Sociogram's search row,
+     Community Explorer's search options -- were painted over and unclickable
+     (measured 2026-09-16 with elementFromPoint). */
+  :root { --ccl-h: 0px; }  /* 2026-09-22: strip retired; search + voice live in row 1 */
   #content-frame {
     position: fixed;
-    top: 88px; left: 0; right: 0; bottom: 0;
+    top: 88px; left: 0; right: 0; bottom: var(--ccl-h);
     border: none;
     width: 100%;
-    height: calc(100% - 88px);
+    height: calc(100% - 88px - var(--ccl-h));
   }
 
 /* ── RECORDING (moved from wiki_narration.html) ── */
@@ -261,10 +266,35 @@
   flex-shrink: 0;
 }
 #btn-help:hover, .btn-help-row:hover { color: #C9A84C; border-color: #4a4a5a; }
+/* PLOTS BUTTON (row 2) -- opens the live C2A2 Plots panel over the Sociogram */
+#btn-plots {
+  margin-left: auto;
+  background: #0a0a0f;
+  border: 1px solid #2a2a3a;
+  color: #888;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: -apple-system, sans-serif;
+  border-radius: 4px;
+  height: 26px;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#btn-plots:hover, #btn-plots.on { color: #C9A84C; border-color: #4a4a5a; }
+#btn-plots + #btn-help { margin-left: 6px; }
 
 /* HELP MODAL */
 #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
-#help-card { background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px; padding: 28px 32px; width: 520px; max-width: 92%; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6); }
+#help-card { background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px; padding: 28px 32px; width: 520px; max-width: 92%; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    /* The card grew when the Education help gained the five-tools section: at a 700px
+       viewport it measured 941px tall with max-height:none, which pushed #help-title
+       and #help-close above the top of the screen with no way to scroll to them.
+       Cap it to the viewport and let the card scroll instead. */
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
 #help-title { color: #C9A84C; font-size: 17px; font-family: Georgia, serif; font-weight: 700; margin: 0 0 14px; }
 /* pre-line so a multi-paragraph body keeps its breaks; the existing single
    paragraph descriptions contain no newlines, so they are unaffected. */
@@ -288,7 +318,7 @@
      the chapter tabs scroll horizontally like row2 does. */
   #row1 {
     height: 48px;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
     column-gap: 0;
     padding: 0 8px;
   }
@@ -325,8 +355,14 @@
   }
   #content-frame {
     top: 96px;
-    height: calc(100% - 96px);
+    height: calc(100% - 96px - var(--ccl-h));
   }
+  /* The command strip must fit a phone: the voice launcher collapses to its
+     dot (title still says "Talk to the wiki by voice") and the input yields
+     a little width, or the bar overflows the right edge by ~95px at 375px. */
+  #vg-launch { padding: 4px 8px; }
+  #vg-launch #vg-label { display: none; }
+  #ccl-bar #ccl-input { max-width: 40vw; }  /* outranks the base rule below */
   /* Help modal: full-width on phone, easier dismiss */
   #help-card { width: 92%; padding: 20px 18px; }
   #help-title { font-size: 16px; }
@@ -347,8 +383,10 @@
 /* CCL command bar (increment 1: typed C2A2 Command Line over the Sociogram).
    Slim fixed bar; press "/" to focus. Voice reuses this same parse->plan path
    in a later increment (voice_guide_redesign.md). */
-#ccl-bar {
+#ccl-bar { display: none !important; }
+#ccl-bar-retired {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 4000;
+  height: var(--ccl-h); box-sizing: border-box;
   display: flex; align-items: center; gap: 8px;
   padding: 6px 10px; background: rgba(10,10,15,0.92);
   border-top: 1px solid #2a2a3a; font-size: 12px;
@@ -389,6 +427,22 @@
       <button class="chap-btn active" id="chap-tools"><span class="kick">Community</span><span class="main">Accelerator Tools</span></button>
       <button class="chap-btn" id="chap-interaction" data-src="community_interactions.html"><span class="kick">Community</span><span class="main">Interactions</span></button>
     </div>
+    <div id="row1-tools">
+      <button id="nav-back" class="nav-btn" title="Back to the previous page in this frame" disabled>&#8592;</button>
+      <button id="nav-fwd" class="nav-btn" title="Forward" disabled>&#8594;</button>
+      <div id="ask-wrap">
+        <button id="ask-open" title="Search or ask">&#128269;</button>
+        <input id="ask-input" type="text" autocomplete="off" spellcheck="false"
+               placeholder="Search or ask anything about this page or C2A2" aria-label="Search or ask">
+        <button id="ask-go" title="Search and ask (Enter)">Ask</button>
+        <button id="ask-clear" title="Clear the search">&#215;</button>
+      </div>
+      <button id="ccl-stop" style="display:none">&#9632; Stop reading</button>
+      <button id="ccl-readhelp" title="How reading aloud works">?</button>
+      <button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
+        <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
+      </button>
+    </div>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
   </div>
 
@@ -401,19 +455,21 @@
     <button class="tab-btn" data-src="metabolism/metabolism_view.html">Metabolism</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <button class="tab-btn" data-src="interT_study.html">Inter-Tradition Study</button>
+    <button id="btn-plots" title="Live plots of the edges in the current Sociogram view (drag the edges or corners to resize)">Plots</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
   </div>
 
   <!-- ROW 2-EDU: education tools within Community AI Education.
-       Four tools live: RC Document Explorer, Physics Explorer,
+       Five tools live: RC Document Explorer, RC Sandbox, Physics Explorer,
        TRV Commentary, and AI Heartbeat. -->
   <div id="row2-edu" style="display: none;">
     <span class="row2-label">Education&nbsp;Tools</span>
     <button class="tab-btn active" data-src="rc_document_explorer.html">RC Document Explorer</button>
+    <button class="tab-btn" data-src="rc_sandbox_notebook.html">RC Sandbox</button>
     <button class="tab-btn" data-src="physics_explorer.html">Physics Explorer</button>
     <button class="tab-btn" data-src="commentary-explorer/commentary_explorer.html">TRV Commentary</button>
     <button class="tab-btn" data-src="heartbeat/index.html">AI Heartbeat</button>
-    <button class="btn-help-row" onclick="showHelp()" title="About this view">?</button>
+    <button class="btn-help-row" onclick="showHelp()" title="About this view, and the five tools">?</button>
   </div>
 
 </div>
@@ -427,20 +483,16 @@
 
 <!-- CCL command bar: type a command (e.g. "only levin friston"); press "/" to focus. -->
 <div id="ccl-bar">
-  <!-- Frame history. Deliberately in the shell's own strip rather than floating
-       over the iframe: an overlay would sit on top of whatever the tab puts in
-       that corner (the Sociogram's filter panel, for one). -->
-  <button id="nav-back" class="nav-btn" title="Back to the previous page in this frame" disabled>&#8592;</button>
-  <button id="nav-fwd" class="nav-btn" title="Forward" disabled>&#8594;</button>
-  <button id="ccl-stop" style="display:none">&#9632; Stop reading</button>
-  <!-- Always visible, not only while reading: the thing people most need to
-       know (the guide goes deaf during a read) has to be learnable BEFORE
-       they start one. -->
-  <button id="ccl-readhelp" title="How reading aloud works">?</button>
-  <span class="ccl-sigil">/</span>
-  <input id="ccl-input" type="text" autocomplete="off" spellcheck="false"
-         placeholder='command  e.g.  only levin friston   |   open mcgilchrist   |   fit'>
-  <span id="ccl-result">CCL ready. Type a command and press Enter.</span>
+  <!-- 2026-09-22: RETIRED as a visible surface (Tom: one search, the Sociogram kind,
+       in row 1). The CCL engine still reads/writes these two elements, and the voice
+       guide's run_command still drives it; nobody types here any more. -->
+  <input id="ccl-input" type="text" autocomplete="off" spellcheck="false" tabindex="-1" aria-hidden="true">
+  <span id="ccl-result"></span>
+</div>
+<div id="ask-drawer" role="region" aria-live="polite">
+  <div id="ask-head"><span id="ask-q"></span><button id="ask-close" title="Close">&#215;</button></div>
+  <div id="ask-body"></div>
+  <div id="ask-meta"></div>
 </div>
 
 <script>
@@ -973,6 +1025,10 @@ function showHelp() {
     src = active ? active.getAttribute('data-src') : '';
   }
   var descriptions = {
+    '__section:education': {
+      title: 'Community Education \u2014 what these five tools are',
+      body: 'Five tools, one claim: that a community\'s own material \u2014 in whatever form it already exists \u2014 can be turned into something a newcomer can climb into, and that the same apparatus does it in every case. Each tool takes a different kind of source. A long text document (RC Document Explorer \u2014 the 471-page pilot tome). A spreadsheet (RC Sandbox \u2014 the TL Sandbox worksheet, 2,191 cells). A curriculum (Physics Explorer \u2014 an undergraduate physics sequence). Hand-written notes, including marginalia written over printed pages (TRV Commentary \u2014 annotations on MacIntyre\'s Three Rival Versions). And news, which never stops arriving (AI Heartbeat \u2014 fast-moving AI developments, compiled). The five examples here are all v.1: they are the Resurrecting Civility community\'s own documents, and they are here because this is the RC instance of the C2A2 Explorer. They are examples, not the point. What travels to another community is the capability set \u2014 the five source types and what each tool does with them. A different community swaps in its own: its founding documents, its working spreadsheets, its teaching sequence, the marginalia of whoever has read most closely, and whatever it must keep up with. It then gets these same five tools over its own material. That substitution is the test. If the tools only work on these documents, they are a private reading apparatus; if they work on yours, they are what C2A2 claims \u2014 a way for a community to become legible to itself, and then to a rival.'
+    },
     'community_interactions.html': {
       title: 'Community Interactions',
       body: 'A scaffold for the four levels of dialogue C2A2 cares about, and a live rendering of where the project is heading. It is the page that says what "interaction" is going to mean before the instruments exist to measure it.'
@@ -999,7 +1055,11 @@ function showHelp() {
     },
     'rc_document_explorer.html': {
       title: 'RC Document Explorer',
-      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (679 hyperlinked sections), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically via the shared C2A2 broker (no key needed). First of three planned Education tools, alongside the Physics Explorer and the Three Rival Versions commentary.'
+      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (a 650-link table of contents over seven parts, forty chapters and their apparatus), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically via the shared C2A2 broker (no key needed). First of the five Education tools, and one half of the Resurrecting Civility corpus \u2014 the RC Sandbox reads the other half.'
+    },
+    'rc_sandbox_notebook.html': {
+      title: 'RC Sandbox',
+      body: 'The second document of the Resurrecting Civility corpus: the TL Sandbox worksheet of the master workbook, reordered into a readable notebook without editing a word. 2,191 spreadsheet cells sit under a 36-node outline drawn from the argument itself, and each cell keeps its provenance -- sheet row, position in the row (left to right is the order of accretion), word count, and the voice where it is not Loughran. Nothing is rewritten, merged or summarised, so the notebook is evidence as much as it is reading: the headings and cross-references are editorial, the cell text is not. A toggle narrows it to the quoted voices; checkboxes in the outline cut whole sections; By row regroups the same cells as the sheet holds them, one block per row, columns in the order they were written; and Read-through shows whatever survives the cuts as plain prose with the margin apparatus hidden. The Timeline in the margin dates each cell from saved copies of the workbook\'s old versions, 2017 to now, and the Figures index gives a short bio of each person the sheet names. Companion to the RC Document Explorer, which reads the pilot tome; together they are one corpus in two documents.'
     },
     'physics_explorer.html': {
       title: 'Physics Explorer',
@@ -1007,7 +1067,7 @@ function showHelp() {
     },
     'commentary-explorer/commentary_explorer.html': {
       title: 'TRV Commentary',
-      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom Loughran\'s marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright.'
+      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom Loughran\'s marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright. Annotation covers every page from pp. 5-240, all ten chapters, with 3,400 marks read from the scans. The page scans themselves are a local-only sidecar \u2014 the book is in copyright, so the tool shows a placeholder where a scan would be.'
     },
     'heartbeat/index.html': {
       title: 'AI Heartbeat',
@@ -1023,8 +1083,19 @@ function showHelp() {
     }
   };
   var info = descriptions[src] || { title: 'C2A2 Explorer', body: 'Community Dialogue Accelerator/Detector System — an integrated suite of visualization and analysis tools for the RC Wiki knowledge base.' };
+  var helpBody = info.body;
+  /* In the Education chapter the ROW's `?` is the only help control -- #btn-help
+     belongs to #row2 and is hidden here -- so one popup has to carry both: what this
+     tool is, and what the five of them are together. Appended, never substituted: an
+     earlier pass pointed the row button straight at the section entry and silently
+     lost every per-tool description. */
+  var eduChap = document.getElementById('chap-education');
+  if (eduChap && eduChap.classList.contains('active') && descriptions['__section:education']) {
+    helpBody = info.body + '\n\n\u2500\u2500\u2500\n\nABOUT THESE FIVE TOOLS\n\n'
+             + descriptions['__section:education'].body;
+  }
   document.getElementById('help-title').textContent = info.title;
-  document.getElementById('help-body').textContent = info.body;
+  document.getElementById('help-body').textContent = helpBody;
   document.getElementById('help-modal').style.display = 'flex';
 }
 function closeHelp() {
@@ -1053,18 +1124,22 @@ function showReaderHelp() {
      Talk to the wiki: OpenAI Realtime API over WebRTC — voice-to-voice,
      native barge-in. Lives in the SHELL (top document, not iframe-loaded),
      so it is inlined here per the iframe-asset constitutional rule.
-     Reuses the OpenAI key the Sociogram TTS already stores in
-     localStorage['tts_api_key']. Can drive the shell's own tabs by voice
-     via the switch_tab function tool.
+     Keyless for visitors: the broker mints the session server-side
+     (Pathway 00 -- no key on a public page; the BYO-key fallback was retired
+     2026-09-18, the last client-key path on the site). Can drive the shell's
+     own tabs by voice via the switch_tab function tool.
      ═══════════════════════════════════════════════════════════════════ -->
 <style>
+  /* Lives in the right end of #ccl-bar (the shell's own strip), not floating
+     over the tab: as a fixed pill it covered Community Explorer's Search
+     button and the bottom-right corner of every tab. */
   #vg-launch {
-    position: fixed; right: 20px; bottom: 20px; z-index: 100001;
+    position: static; flex-shrink: 0;
     display: flex; align-items: center; gap: 8px;
     background: #12121c; border: 1px solid #C9A84C; color: #C9A84C;
-    font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600;
-    letter-spacing: 0.3px; padding: 10px 15px; border-radius: 24px;
-    cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.3px; padding: 4px 12px; border-radius: 24px;
+    cursor: pointer; box-shadow: none;
     transition: background 0.15s, color 0.15s, box-shadow 0.15s;
   }
   #vg-launch:hover { background: #1c1c28; box-shadow: 0 8px 26px rgba(201,168,76,0.25); }
@@ -1074,7 +1149,7 @@ function showReaderHelp() {
   @keyframes vgPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
 
   #vg-panel {
-    display: none; position: fixed; right: 20px; bottom: 74px; z-index: 100001;
+    display: none; position: fixed; right: 20px; top: 96px; z-index: 100001;
     width: 340px; max-width: calc(100vw - 40px);
     background: #12121c; border: 1px solid #2a2a3a; border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.6); overflow: hidden;
@@ -1109,13 +1184,6 @@ function showReaderHelp() {
     margin-top: 8px; transition: background 0.15s;
   }
   #vg-resume:hover { background: rgba(201,168,76,0.12); }
-  #vg-keyrow { display: none; margin-bottom: 12px; }
-  #vg-keyrow.show { display: block; }
-  #vg-keyrow label { display: block; font-size: 11px; color: #8a8a98; margin-bottom: 5px; }
-  #vg-key {
-    width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid #2a2a3a;
-    background: #0a0a0f; color: #ddd; font-size: 12px; font-family: monospace;
-  }
   #vg-transcript {
     margin-top: 12px; max-height: 180px; overflow-y: auto; font-size: 12.5px;
     line-height: 1.55; color: #c4c4d2; border-top: 1px solid #20202e; padding-top: 10px;
@@ -1129,10 +1197,6 @@ function showReaderHelp() {
   #vg-hint { margin-top: 10px; font-size: 11px; color: #6a6a7a; line-height: 1.5; }
 </style>
 
-<button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
-  <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
-</button>
-
 <div id="vg-panel">
   <div id="vg-head">
     <h3>&#127908; Talk to the Wiki</h3>
@@ -1140,12 +1204,6 @@ function showReaderHelp() {
   </div>
   <div id="vg-body">
     <div id="vg-status">Idle. Press Start and speak &mdash; ask about C2A2, the traditions, or say &ldquo;take me to the Sociogram.&rdquo;</div>
-    <div id="vg-keyrow">
-      <label>Fallback: your own OpenAI key (only if the free voice service is busy)</label>
-      <input type="password" id="vg-key" placeholder="sk-..." name="vg-openai-key"
-             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-             data-1p-ignore data-lpignore="true">
-    </div>
     <button id="vg-toggle" onclick="VoiceGuide.toggle()">Start conversation</button>
     <!-- Appears only once silence has switched listening off; the complement to
          End conversation, so coming back is one deliberate click rather than a
@@ -1163,7 +1221,6 @@ function showReaderHelp() {
 var VoiceGuide = (function() {
   var MODEL = 'gpt-realtime';           // GA realtime model; fallback: gpt-4o-realtime-preview
   var VOICE = 'cedar';                  // valid realtime voices: alloy ash ballad coral echo sage shimmer verse marin cedar
-  var KEY_STORE = 'tts_api_key';        // shared with the Sociogram OpenAI TTS
   // Pathway-00 broker: mints the Realtime ephemeral server-side so PUBLIC
   // visitors need no key. Same endpoint/device-id contract as c2a2-search.js.
   var BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
@@ -1482,6 +1539,7 @@ var VoiceGuide = (function() {
   // connection does stay open -- worth saying plainly rather than implying the
   // session costs nothing while paused.
   var IDLE_MS = 30000;
+  var PLAN_DEADLINE_MS = 45000;   // D2: overall limit on one plan_and_run tool call
   var idleTimer = null;
   function clearIdle() { if (idleTimer) { clearTimeout(idleTimer); idleTimer = null; } }
   // WHAT IS BEING MEASURED IS DEAD AIR, not time since the last packet.
@@ -1861,6 +1919,7 @@ var VoiceGuide = (function() {
   }
 
   var faqText = '';   // first-pass FAQ authored by the weekly voice-faq agent
+  var introText = '';  // the site's short introduction (knowledge/00_project.md), 2026-09-22
 
   // Tabs the guide can drive by voice. Each maps to the shell's own buttons,
   // so we reuse the existing click handlers rather than duplicating navigation.
@@ -1875,6 +1934,7 @@ var VoiceGuide = (function() {
     { key: 'curriculum_tools',     kind: 'tools',   src: 'summa_explorer.html',      words: 'curriculum tools, summa, curriculum dashboard' },
     { key: 'inter_tradition_study', kind: 'tools',  src: 'interT_study.html',        words: 'inter-tradition study, intertradition' },
     { key: 'rc_document_explorer', kind: 'edu',     src: 'rc_document_explorer.html', words: 'rc document explorer, resurrecting civility' },
+    { key: 'rc_sandbox',           kind: 'edu',     src: 'rc_sandbox_notebook.html', words: 'rc sandbox, quodlibet notebook, tl sandbox, sandbox' },
     { key: 'physics_explorer',     kind: 'edu',     src: 'physics_explorer.html',    words: 'physics explorer, physics' },
     { key: 'trv_commentary',       kind: 'edu',     src: 'commentary-explorer/commentary_explorer.html', words: 'trv commentary, three rival versions, macintyre' },
     { key: 'ai_heartbeat',         kind: 'edu',     src: 'heartbeat/index.html',     words: 'ai heartbeat, heartbeat, pulse' }
@@ -1900,7 +1960,6 @@ var VoiceGuide = (function() {
   // Only accept real OpenAI keys. Browser password managers autofill the
   // password field with junk (e.g. the page URL); never send or persist that,
   // and never let it clobber the shared TTS key.
-  function looksLikeKey(s) { return /^sk-\S{20,}$/.test(s); }
   // Stable per-browser id, shared with c2a2-search.js so broker rate-limits align.
   function guideDeviceId() {
     try {
@@ -1917,8 +1976,8 @@ var VoiceGuide = (function() {
     } catch (e) { return '00000000-0000-4000-8000-000000000000'; }
   }
 
-  // Keyless path: broker mints the ephemeral server-side. Throws 'broker-limit'
-  // on cap-hit, else an Error, so start() can decide whether to fall back to BYO.
+  // The only path: the broker mints the ephemeral server-side. Throws
+  // 'broker-limit' on cap-hit, else an Error; start() reports both in words.
   async function mintViaBroker() {
     var r = await fetch(BROKER_URL, {
       method: 'POST',
@@ -1932,39 +1991,10 @@ var VoiceGuide = (function() {
     return d.value;
   }
 
-  // Power-user fallback: mint directly with the visitor's own OpenAI key.
-  async function mintViaUserKey(key) {
-    var sess = await fetch('https://api.openai.com/v1/realtime/client_secrets', {
-      method: 'POST',
-      headers: { 'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ session: { type: 'realtime', model: MODEL, audio: { output: { voice: VOICE } } } })
-    });
-    if (!sess.ok) {
-      var errTxt = await sess.text();
-      throw new Error('session mint failed (' + sess.status + '): ' + errTxt.slice(0, 160));
-    }
-    var sessData = await sess.json();
-    var ephemeral = sessData.value || (sessData.client_secret && sessData.client_secret.value);
-    if (!ephemeral) throw new Error('no ephemeral token in session response');
-    return ephemeral;
-  }
-
-  function getKey() {
-    var typed = el('vg-key').value.trim();
-    if (typed && looksLikeKey(typed)) {
-      try { localStorage.setItem(KEY_STORE, typed); } catch(e) {}
-      return typed;
-    }
-    if (typed && !looksLikeKey(typed)) {
-      setStatus('That does not look like an OpenAI key (must start with sk-). Ignored.', 'err');
-    }
-    var stored = '';
-    try { stored = (localStorage.getItem(KEY_STORE) || '').trim(); } catch(e) {}
-    return looksLikeKey(stored) ? stored : '';
-  }
 
   // Load the agent-authored FAQ once; it becomes the guide's first-pass source.
   async function loadFaq() {
+    if (!introText && typeof window.C2A2Intro === 'function') { try { introText = await window.C2A2Intro(); } catch (e) { introText = ''; } }
     if (faqText) return;
     try {
       var r = await fetch('voice_guide_faq.json?v=' + Date.now());
@@ -1983,7 +2013,7 @@ var VoiceGuide = (function() {
     var base = [
       "You are the spoken guide to C2A2 (the Community Dialogue Accelerator/Detector System) -- a particle accelerator for traditions of thought: infrastructure that lets intellectual and spiritual lineages become visible, interact, and reveal themselves to each other. It is a concrete response to MacIntyre's vision of a place where rival traditions of enquiry are made answerable to one another.",
       "LANGUAGE: Speak ENGLISH by default -- greeting and every reply -- unless the user speaks another language to you first, in which case match theirs. Do not open in any language but English.",
-      "HOW YOU ACT AND PERCEIVE: You control the explorer ONLY by calling run_command with ONE command string in the command language (CCL) below. You cannot see the screen; to learn the current state, run the command 'what'. NEVER state a filter, selection, tab, or count you have not just gotten back from a run_command result -- answering a live-state question without running 'what' first is fabrication, the worst thing you can do here.",
+      "HOW YOU ACT AND PERCEIVE: You control the explorer ONLY through two tools: run_command runs ONE command string in the command language (CCL) below; plan_and_run hands a multi-step or analytic request to the planner, which runs and checks the steps and returns an answer for you to speak. You cannot see the screen; to learn the current state, run the command 'what'. NEVER state a filter, selection, tab, or count you have not just gotten back from a run_command or plan_and_run result -- answering a live-state question without running 'what' first is fabrication, the worst thing you can do here.",
       "CCL grammar (exactly one command per call; names lowercase):",
       "  only <groups...> | show <groups...> | hide <groups...> | all | none   -- filter the graph by tradition/structure name",
       "  ...the same five verbs take a FAMILY qualifier: hide edges mention | only edges wikilink | all tags | none layers",
@@ -2016,9 +2046,14 @@ var VoiceGuide = (function() {
       "THE USER'S OWN HIGHLIGHT IS SOMETHING YOU CAN SEE. When they have text selected on the page, `what` reports it (\"you have N words selected\") and a bare `read` reads THAT rather than the whole article. So when they say anything about what they highlighted, selected, marked or 'this bit here' -- READ IT. Do not say you cannot see their selection; do not reach for `find`, which is a text SEARCH of the graph and a different thing entirely. `read all` is how they get the whole article back. This was invisible to you until 2026-07-27 and the honest-sounding refusal it produced is exactly what it is here to stop.",
       "THE READER HOLDS BACK PROVENANCE. These files open with maintainer, last-updated and source lines, and often a format template; none of that is read aloud. If the result says metadata was held back, mention it in a few words ONCE -- 'there is some source metadata if you want it' -- and only read it if the user asks, which is `read details`. Never read it unprompted.",
       "READING IS A HANDOVER, AND THE READER IS A DIFFERENT VOICE ON PURPOSE. On a successful `read`, say ONE short handover line and nothing more -- \'Here it is.\' or \'Reading it to you.\' -- then be silent until the user speaks again. No word count, no offer, no summary. The page begins reading the moment you stop, in its own voice: that difference is deliberate, so the user can always hear whether they are being TALKED TO or READ TO. If they remark on it, say plainly that the page is reading it back, not you.",
+      "YOU CAN DRAW PLOTS. On the Sociogram the Plots panel charts the edges of what is in view: run_command `plot <words>` -- a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` or `page`, `since <month>`, and `edges` / `nodes` / `strength` lists -- or `plot off`. 'Chart', 'graph', 'heatmap', 'lego', 'picture of the connections' all mean `plot`; never say the page is already a plot, and never claim a plot is showing unless `what` reports a plot line. The plot follows the current cut, so to plot one thinker cut first. Its result carries computed edge counts and top pairs: quote those, do not estimate. Clicking a chart cell or bar cuts the graph to it.",
+      "WHEN A COMMAND DOES NOT WORK OR IS UNKNOWN, DO NOT APOLOGISE AND STOP: call plan_and_run with the user's own words. It reads generously ('every Summa node Levin is connected to', 'all Levin', 'linked to') and may return how_i_read_it and question_for_user -- SAY the reading in one sentence, then ASK the question aloud and wait. A cut can also take `neighbors:<term>` (every node linked to the term's nodes), `thinker:<name>` and `group:<name>`; use plan_and_run when the request needs them. BEFORE A TOOL RESULT COMES BACK say only that you are working on it (\'one moment\') -- never describe what has changed, in which tab or plot, or that it is done; a claim about the view comes only from the result (did, answer, steps, verified_state) and only about what that result says.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
-      "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'how do Kastrup and Hoffman connect?' -> focus kastrup ~ hoffman; 'reset the whole view' -> all; 'what am I seeing?' -> what."
+      "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'reset the whole view' -> all; 'what am I seeing?' -> what. SEVERAL STEPS OR A QUESTION ABOUT HOW THINGS CONNECT -> plan_and_run with the request in the user's words, e.g. 'keep Levin, add Friston, drop the Summa', 'how do Kastrup and Hoffman connect?'. Speak its answer; if it reports not_as_asked, say which steps did not work."
     ].join("\n");
+    if (introText) {
+      base += "\n\nGENERAL INTRODUCTION: when anyone asks for an introduction or overview of the site, or where to start, say this, close to word for word:\n" + introText;
+    }
     if (faqText) {
       base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and run the command 'what' instead):\n" + faqText;
     }
@@ -2035,13 +2070,24 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), spin left|right|off (THE SAME TURN, LEFT RUNNING -- a slow turntable, about one revolution every 22 seconds. It is the only command that is still happening after you have finished speaking, so SAY THAT IT IS RUNNING and that "stop" ends it. Offer it when someone wants to take the shape of a 3D view in without steering, or asks to "look around" it; `stop` halts it and names what it halted, and leaving the tab stops it too), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (your way to run ONE command; for anything needing several steps or an analytic answer, use plan_and_run). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), spin left|right|off (THE SAME TURN, LEFT RUNNING -- a slow turntable, about one revolution every 22 seconds. It is the only command that is still happening after you have finished speaking, so SAY THAT IT IS RUNNING and that "stop" ends it. Offer it when someone wants to take the shape of a 3D view in without steering, or asks to "look around" it; `stop` halts it and names what it halted, and leaving the tab stops it too), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
               text: { type: 'string', description: 'One CCL command, e.g. "only levin friston", "go metabolism", "what".' }
             },
             required: ['text']
+          }
+        }, {
+          type: 'function',
+          name: 'plan_and_run',
+          description: 'Hand a MULTI-STEP or ANALYTIC request to the planner, a stronger model that runs the CCL steps itself, reads the view back after each one, corrects once if a step failed, and returns a finished answer. Use it whenever the request needs more than one command ("keep Levin, add Friston, drop the Summa"), or asks how things connect, compare, or why. Pass the request in the user\'s own words. SPEAK the returned `answer` close to as written. If `not_as_asked` is present, say plainly which steps did not come out as asked. Use run_command only for a single simple command.',
+          parameters: {
+            type: 'object',
+            properties: {
+              request: { type: 'string', description: 'The user request, in their words.' }
+            },
+            required: ['request']
           }
         }],
         tool_choice: 'auto'
@@ -2486,6 +2532,7 @@ var VoiceGuide = (function() {
         var args = {};
         try { args = JSON.parse(m.arguments || '{}'); } catch (e) {}
         dbg('TOOL call: ' + m.name + ' ' + JSON.stringify(args));
+        holdIdle();   // D1: a tool in flight is not dead air; the planner is silent for 15-60 s
         if (_test.capture) _test.capture.tools.push(m.name);
         var pending;
         if (m.name === 'run_command') {
@@ -2524,12 +2571,22 @@ var VoiceGuide = (function() {
           } else if (/^where\b/i.test(cmd)) {
             pending = Promise.resolve(whereAmI());
           } else if (typeof window.CCLRun === 'function') {
-            var r = window.CCLRun(cmd);
+            // A command may finish LATER (`plot` loads its panel first): its
+            // result carries `pending`, and the guide is told the final outcome.
+            var r0 = window.CCLRun(cmd);
+            pending = Promise.resolve((r0 && r0.pending) ? r0.pending : r0).then(function (r) {
+            r = r || { ok: false, spoken: '(no result)' };
             // Pass the RENDER through as data. `ok` only means the command
             // executed -- a filter that matched nothing is not an error, so a
             // model keying off `ok` alone would confirm success over an empty
             // graph (2026-07-25: it did, twice, and was believed).
             var out = { ok: r.ok, command: cmd, did: r.spoken };
+            // VERIFY-AFTER-ACTION rides out as data: the shell read the view
+            // back and it does not match the request. The model must say so.
+            if (r.verify && !r.verify.ok) {
+              out.verify_failed = r.verify.problems;
+              out.warning = 'THE VIEW DOES NOT FULLY MATCH THE REQUEST: ' + r.verify.problems.join('; ') + '. Say this plainly, then fix it or ask.';
+            }
             if (typeof r.shown === 'number') {
               out.shown = r.shown;
               out.total = r.total;
@@ -2545,10 +2602,37 @@ var VoiceGuide = (function() {
               out.text = r.text;
               out.instruction = 'Summarize THIS TEXT in about 50 words and SPEAK the summary yourself, in your own voice. Do not read it out, do not hand it to the page reader, do not quote it at length.';
             }
-            pending = Promise.resolve(out);
+            return out;
+            });
           } else {
             pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
           }
+        } else if (m.name === 'plan_and_run') {
+          var _ctl = { cancelled: false };
+          var _deadline = new Promise(function (resolve) {
+            setTimeout(function () {
+              _ctl.cancelled = true;
+              resolve({ ok: false, error: 'the planner did not finish within ' + (PLAN_DEADLINE_MS / 1000) + ' s and was stopped',
+                        warning: 'NOT DONE. Say plainly that it did not finish. Do NOT say any change was made; run the command what and report only what it returns.' });
+            }, PLAN_DEADLINE_MS);
+          });
+          pending = (typeof window.C2A2Plan === 'function')
+            ? Promise.race([_deadline, window.C2A2Plan(String(args.request || ''), undefined, '', _ctl).then(function (res) {
+                var o = { ok: !!res.ok, answer: res.answer || '', steps: (res.trace || []).map(function (t) { return t.cmd + ' -> ' + t.spoken; }) };
+                if (res.assumed) { o.how_i_read_it = res.assumed; }
+                if (res.ask) { o.question_for_user = res.ask; o.note = 'SAY how you read the request, then ASK the question aloud and wait for the answer.'; }
+                if (!res.ok) { o.error = res.error; }
+                if (res.failed && res.failed.length) {
+                  o.not_as_asked = res.failed.map(function (t) { return t.cmd + ': ' + (t.problems.join('; ') || t.spoken); });
+                  o.warning = 'SOME STEPS DID NOT COME OUT AS ASKED. Say so plainly.';
+                }
+                if (res.not_run && res.not_run.length) {
+                  o.not_run = res.not_run;
+                  o.warning = (o.warning ? o.warning + ' ' : '') + 'THE PLANNER ASKED FOR THESE STEPS BUT THEY WERE NEVER RUN: ' + res.not_run.join(' | ') + '. Do NOT say they happened; the answer text may describe them.';
+                }
+                return o;
+              }, function (e) { return { ok: false, error: (e && e.message) || String(e) }; })])
+            : Promise.resolve({ ok: false, error: 'planner not loaded' });
         } else {
           pending = Promise.resolve({ ok: false, error: 'unknown tool: ' + m.name });
         }
@@ -2563,6 +2647,7 @@ var VoiceGuide = (function() {
             dbg('sent function_call_output');
           } catch (e) { dbg('output send ERROR: ' + e); }
           requestResponseCreate();   // deferred until any in-flight response finishes
+          setTimeout(function () { if (!responseActive) { armIdle(); } }, 4000);   // D1: no response followed; count dead air again
         });
         break;
       }
@@ -2617,29 +2702,18 @@ var VoiceGuide = (function() {
       return;
     }
 
-    // 1. Mint an ephemeral token. Prefer the broker (keyless for visitors);
-    //    fall back to a visitor-supplied key only if the broker is down/over-limit.
+    // 1. Mint an ephemeral token through the broker. No fallback: a public
+    //    page holds no key (Pathway 00). Over the cap or down, say which and stop.
     var ephemeral = null;
     try {
       ephemeral = await mintViaBroker();
     } catch (be) {
-      var key = getKey();
-      if (!key) {
-        el('vg-keyrow').classList.add('show');
-        setStatus(be && be.message === 'broker-limit'
-          ? 'Daily free voice limit reached. Enter your own OpenAI key to continue.'
-          : 'Voice service unavailable right now. Enter your own OpenAI key, or try later.', 'err');
-        if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
-        connecting = false; setBtn('Start conversation', false);
-        return;
-      }
-      try {
-        ephemeral = await mintViaUserKey(key);
-      } catch (ke) {
-        stop(true);
-        setStatus('Could not connect: ' + ke.message, 'err');
-        return;
-      }
+      setStatus(be && be.message === 'broker-limit'
+        ? 'Daily free voice limit reached. Try again tomorrow; typed commands still work in the bar below.'
+        : 'Voice service unavailable right now (' + ((be && be.message) || 'no reply') + '). Try later; typed commands still work in the bar below.', 'err');
+      if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
+      connecting = false; setBtn('Start conversation', false);
+      return;
     }
 
     try {
@@ -2810,7 +2884,53 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=ce22cfda30"></script>
+<script src="lib/c2a2-commandline.js?v=a72bb0edb9"></script>
+<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=d769035918">
+<script>
+/* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
+   panel reads the page's own graph state (LINKS, activeNodes, cuts). Only the
+   Sociogram (and Agent Map, same document) carry that state today. The href
+   above is content-hash stamped by stamp_assets.py --target explorer. */
+(function () {
+  var b = document.getElementById('btn-plots');
+  if (!b) return;
+  function tabWin() {
+    var f = document.getElementById('content-frame');
+    try {
+      var w = f.contentWindow;
+      if (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') { return w; }
+      return (typeof w.c2a2PlotSource === 'function') ? w : null;   /* any tab that offers a plot source (step 5) */
+    } catch (e) { return null; }
+  }
+  /* a tab (re)load discards any panel, so the button's lit state must go too --
+     and on a graph tab the model half is installed at once (hidden, ~17 KB,
+     no Plotly), so facet cuts (thinker:, between A and B...) work from the
+     first command without waiting for anyone to open a chart. */
+  document.getElementById('content-frame').addEventListener('load', function () {
+    b.classList.remove('on');
+    var w = tabWin();
+    if (w && !w.C2A2Plot) {
+      var sc = w.document.createElement('script');
+      sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
+      w.document.head.appendChild(sc);
+    }
+  });
+  /* The button is a mouth of the one road: it runs `plot` / `plot off`, so a
+     click is journaled, undoable and reported exactly like a typed or spoken
+     command (step 1, 2026-09-29). */
+  b.addEventListener('click', function () {
+    var w = tabWin();
+    if (!w) {
+      b.textContent = 'Plots: nothing to plot on this view';
+      setTimeout(function () { b.textContent = 'Plots'; }, 2200);
+      return;
+    }
+    if (typeof window.CCLRun !== 'function') { return; }
+    var P = w.C2A2Plot, open = !!(P && P.panel && P.visible && P.visible());
+    window.CCLRun(open ? 'plot off' : 'plot');
+  });
+})();
+</script>
 <script>
 (function () {
   'use strict';
@@ -2837,7 +2957,7 @@ var VoiceGuide = (function() {
     dest = res[1];
     manifests = res[2];
     var c = dest.counts || {};
-    show('CCL ready (' + (c.nodes || '?') + ' nodes, ' + (c.tabs || '?') + ' tabs). Press "/" to focus.', 'ok');
+    show('CCL ready (' + (c.nodes || '?') + ' nodes, ' + (c.tabs || '?') + ' tabs). Press "/" to focus; plain text searches this view.', 'ok');
   }).catch(function (e) { show('CCL load failed: ' + (e && e.message || e), 'err'); });
 
   // ---- iframe access (same-origin; top-level var/function decls are globals) ----
@@ -3176,7 +3296,13 @@ var VoiceGuide = (function() {
   // (Tom, 2026-07-25: "kept at a minimum size and centered ... that's what any
   // user would want on any search result"). `fit` is the deliberate escape
   // hatch and is never floored: it means "show everything, however small".
-  var MIN_SCALE = 1.5, MAX_SCALE = 2, FRAME_MS = 400, RESETTLE_MS = 900;
+  // 2026-09-29 (Tom, after a Levin cut framed at the floor and showed two dots):
+  // every change now FITS the lit set, unfloored -- "fit all" on every change --
+  // unless the Sociogram's Hold box is ticked, which means "leave my view alone"
+  // and skips framing entirely. This retires the legibility floor above for
+  // reveals; a small dense result is still fit, a huge one shows small and whole.
+  var MAX_SCALE = 2, FRAME_MS = 400, RESETTLE_MS = 900;
+  function holdOn() { var d = ifDoc(), c = d && d.getElementById('chk-hold-forces'); return !!(c && c.checked); }
   var frameToken = 0;
   // A rebuilt circle has NO cx/cy yet -- the force simulation writes them on
   // tick, so reading the DOM straight after a filter change races the sim and
@@ -3211,6 +3337,7 @@ var VoiceGuide = (function() {
   function frameNodes() {
     var w = ifWin(), d = ifDoc();
     if (!w || !d || !w.zoomBehavior || !w.d3) { return null; }
+    if (holdOn()) { return null; }
     var svgEl = d.getElementById('graph-svg');
     if (!svgEl) { return null; }
     armCameraGuard(svgEl);
@@ -3237,12 +3364,11 @@ var VoiceGuide = (function() {
 
     var dx = xMax - xMin + 40, dy = yMax - yMin + 40;
     var fitScale = Math.min(W / dx, H / dy, MAX_SCALE) * 0.9;
-    var floored = fitScale < MIN_SCALE;
-    var scale = floored ? MIN_SCALE : fitScale;
+    var scale = fitScale;
     var cx = (xMin + xMax) / 2, cy = (yMin + yMax) / 2;
     var t = w.d3.zoomIdentity.translate(W / 2 - cx * scale, H / 2 - cy * scale).scale(scale);
     w.d3.select(svgEl).transition().duration(FRAME_MS).call(w.zoomBehavior.transform, t);
-    return { framed: n, scale: scale, floored: floored };
+    return { framed: n, scale: scale };
   }
   // Every reveal path funnels through here so none can forget.
   function frameSuffix() {
@@ -3253,7 +3379,7 @@ var VoiceGuide = (function() {
     // unless a newer command has taken the camera, which must always win.
     var mine = ++frameToken;
     setTimeout(function () { if (mine === frameToken) { if (cutIds) { applyCut(); } frameNodes(); } }, RESETTLE_MS);
-    return f.floored ? '  |  centred at minimum zoom (say "fit" to see them all)' : '  |  centred';
+    return '  |  centred, fit to the ' + f.framed + ' shown';
   }
 
   // ---- cut, don't dim (INTERIM -- see the note) ---------------------------
@@ -3315,6 +3441,8 @@ var VoiceGuide = (function() {
     var d = ifDoc(), w = ifWin();
     if (!d || !w) { return null; }
     ensureCutStyle(d);
+    // The plot follows the SHELL's cut (compound and facet cuts included).
+    var PM = plotModel(); if (PM && PM.setCut) { PM.setCut(cutIds ? { ids: cutIds, query: cutQuery } : null); }
     var allow = null, i;
     if (cutIds) { allow = Object.create(null); for (i = 0; i < cutIds.length; i++) { allow[cutIds[i]] = true; } }
     var cs = d.querySelectorAll('.node-circle'), kept = 0;
@@ -3353,9 +3481,97 @@ var VoiceGuide = (function() {
     }
     return ids;
   }
+  // THE TAB CONTRACT (search-and-dialogue review, 2026-09-16). A tab that owns
+  // its search exposes three functions on its window:
+  //   c2a2Find(text)  -> { query, ids, count, label }   deterministic, its own lexical search
+  //   c2a2Clear()     -> void                            restore; idempotent
+  //   c2a2ReadCut()   -> { query, ids } | null           what is cut right now
+  // When they exist the shell USES them: the id set comes from the return value,
+  // never from scraping SVG opacities (deriveLitIds -- the scrape is exactly why
+  // the canvas and lens tabs were "deferred"), and undo/redo REPLAY the query
+  // through the tab rather than re-applying a stored id list, so the restore is
+  // deterministic and survives the tab's own re-renders. On a tab without the
+  // contract everything below this comment is unchanged.
+  function tabFindApi() {
+    var w = ifWin();
+    if (!w) { return null; }
+    if (typeof w.c2a2Find === 'function' && typeof w.c2a2Clear === 'function' && typeof w.c2a2ReadCut === 'function') { return w; }
+    return null;
+  }
   function readCut() { return cutIds ? { ids: cutIds.slice(), query: cutQuery } : null; }
+  // A cut query may be an EXPRESSION ("levin also friston except summa"); the
+  // engine splits and composes it, the tab answers each term. With more than
+  // one term the tab has lit only its LAST term, so its own lighting is reset
+  // and the shell's cut (hide + frame) is the single truth on screen.
+  // FACET TERMS (step 2, 2026-09-29): `thinker:levin`, `between levin and
+  // friston`, `kind:signal`... are answered by the graph MODEL (C2A2Plot, the
+  // same attribution rule the charts draw with), not by the tab's text search.
+  // A facet the model cannot answer is a named problem, never an empty cut
+  // passed off as a result. The tab's own lighting only ever shows ONE text
+  // term, so any facet or compound expression clears it and the shell's cut
+  // is the single truth on screen.
+  function evalCutExpr(api, expr) {
+    var terms = CL.parseCutExpr(expr), notes = [], facetUsed = false;
+    function termIds(t) {
+      var inner = CL.parseNeighbors(t);
+      if (inner !== null) {
+        facetUsed = true;
+        var seed = termIds(inner), P0 = plotModel();
+        if (!P0 || !P0.neighborIds) { notes.push('"' + t + '": the graph model is still loading -- try again in a moment'); return []; }
+        var nr = P0.neighborIds(seed);
+        notes.push('~neighbors of ' + inner + ': ' + seed.length + ' nodes, ' + nr.edges + ' edges leave them, ' + nr.ids.length + ' nodes at the other ends');
+        return nr.ids;
+      }
+      var fx = CL.parseFacet(t);
+      if (!fx) { var r = api.c2a2Find(t); return (r && r.ids) ? r.ids : []; }
+      facetUsed = true;
+      if (fx.error) { notes.push(fx.error); return []; }
+      var P = plotModel();
+      if (!P) { notes.push('"' + t + '": the graph model is still loading -- try again in a moment'); return []; }
+      var fr = P.facetIds(fx.facets);
+      if (fr.error) { notes.push(fr.error); return []; }
+      if (fr.edges != null) { notes.push('~' + fr.label + ': ' + fr.edges + ' edges, ' + fr.ids.length + ' nodes at their ends'); }
+      return fr.ids;
+    }
+    var res = CL.composeCut(terms, termIds);
+    if (terms.length > 1 || facetUsed) { try { api.c2a2Clear(); } catch (e) { /* the cut still holds */ } }
+    // '~' marks a NOTE (what an edge facet counted), not a problem
+    res.notes = notes.filter(function (n) { return n.charAt(0) === '~'; }).map(function (n) { return n.slice(1); });
+    res.problems = notes.filter(function (n) { return n.charAt(0) !== '~'; });
+    return res;
+  }
+  // VERIFY AFTER THE ACTION: read what the page actually draws back off the
+  // DOM and compare it with the cut we meant. Returns the engine's verdict.
+  function verifyCutNow() {
+    var d = ifDoc(), w = ifWin();
+    if (!d || !w) { return { ok: false, problems: ['the view could not be read back'] }; }
+    var cs = d.querySelectorAll('.node-circle'), drawn = [], dom = [], i;
+    for (i = 0; i < cs.length; i++) {
+      var dat = datumOf(w, cs[i]);
+      if (!dat || !dat.id) { continue; }
+      dom.push(dat.id);
+      if (!cs[i].classList.contains('ccl-cut')) { drawn.push(dat.id); }
+    }
+    return CL.verifyDrawn(cutIds || dom, drawn, dom);
+  }
+  // The cut the shell ENFORCES (hide + frame) is the same on both roads; what
+  // differs is where the id set comes from. Contract road: a query is REPLAYED
+  // through the tab and the ids are taken from its fresh answer -- if the tab's
+  // answer to the same query has changed since, the journal's ids were a
+  // snapshot and the live answer wins, which is what "the tab owns it" means. A
+  // journal value with ids but no query (a `focus`, which stays on the graph's
+  // own road) is re-applied as ids, as before.
   function writeCut(value) {
-    cutIds = (value && value.ids) ? value.ids.slice() : null;
+    var api = tabFindApi();
+    if (api) {
+      try {
+        if (value && value.query) {
+          var rr = evalCutExpr(api, value.query);
+          value = { ids: rr.ids, query: value.query };
+        } else if (!value || !value.ids) { api.c2a2Clear(); value = null; }
+      } catch (e) { value = null; }
+    }
+    cutIds = (value && value.ids && value.ids.length) ? value.ids.slice() : null;
     cutQuery = (value && value.query) || '';
     setSearch(cutQuery);
     applyCut();
@@ -4156,7 +4372,13 @@ var VoiceGuide = (function() {
   // a format template -- which nobody wants read aloud before the content. That
   // material is HELD BACK, counted, and offered: "say read details". Skipped
   // outright: code blocks and tables (unreadable aloud) and rule separators.
-  var META_RE = /^(maintained by|last updated|source|confidence|date added|tags?|status|authored[_ ]by|authored[_ ]at|id|path|file)\b\s*[:|]/i;
+  // Two shapes of provenance line. `Source: ...` carries its separator right
+  // after the keyword; `Maintained by the Karl Friston Agent | Last updated:
+  // 2026-08-28` -- the header on all 30 tradition files -- does not, and the
+  // old pattern read it aloud on every tradition wiki that lacked a Source:
+  // line (15 of 30). Found 2026-09-17 by a harness row that passed or failed
+  // on which node `pick random` chose. `[PROCESSED: ...]` is the same class.
+  var META_RE = /^(?:(?:maintained by|authored[_ ]by)\b|\[?processed\s*:|(?:last updated|source|confidence|date added|tags?|status|authored[_ ]at|id|path|file)\b\s*[:|])/i;
   var RULE_RE = /^[-\u2013\u2014_*=\s]{3,}$/;
   // Headings the PAGE needs and a listener does not. "Transcript." announced
   // between the title and the first sentence is furniture read aloud.
@@ -4727,6 +4949,7 @@ var VoiceGuide = (function() {
   // ---- dim read/write (absolute-vector journal + write-returns-read) ----
   function readDim(dim) {
     var w = ifWin(), d = ifDoc();
+    if (dim === 'plot') { return readPlot(); }
     try {
       if (dim === 'filters') {
         var df = declaredFilterRead();
@@ -4766,6 +4989,7 @@ var VoiceGuide = (function() {
       return;
     }
     if (dim === 'cut') { writeCut(value); return; }
+    if (dim === 'plot') { writePlot(value); return; }
     if (dim === 'filters') {
       if (filtersSpec()) { declaredFilterWrite(value); return; }
       var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI();
@@ -4951,6 +5175,7 @@ var VoiceGuide = (function() {
         case 'playback':  return execPlayback(p);
         case 'family':    return execFamily(p);
         case 'knob':      return execKnob(p);
+        case 'plot':      return execPlot(p);
         case 'shell':     return execShell(p);
         case 'journal':   return execJournal(p);
         case 'read':      return execRead(p);
@@ -4965,6 +5190,76 @@ var VoiceGuide = (function() {
   // showing another.
   function execHighlight(p) {
     var before = readCut();
+    var api = tabFindApi();
+    if (api && p.action !== 'focus') {
+      // The contract road: `find` and `clear` only. `focus` is the graph's own
+      // n-ary verb (linkGroups) and keeps its road below; a tab without the
+      // `focus` cap never sends one here.
+      if (p.action === 'clear') {
+        writeCut(null);
+        journal.record(TAB, { dim: 'cut', before: before, after: null });
+        return show('clear', 'ok');
+      }
+      // `also / except / within` extend the STANDING cut's expression. With no
+      // cut standing, `also` is just a find; the other two have nothing to act
+      // on, and saying so beats silently cutting to an empty graph.
+      var expr = p.text;
+      if (p.action === 'compose') {
+        if (before && before.query) { expr = before.query + ' ' + p.verb + ' ' + p.text; }
+        else if (p.op !== 'union') {
+          return show(p.verb + ' "' + p.text + '"  |  no search cut is standing, so there is nothing to ' +
+                      (p.op === 'diff' ? 'subtract from' : 'narrow') + '. Start with find.', 'err');
+        }
+      }
+      var ev = null;
+      try { ev = evalCutExpr(api, expr); } catch (e) { return show('find failed here: ' + (e && e.message || e), 'err'); }
+      var rids = ev.ids.slice();
+      var stepProbs = (ev.problems || []).concat(CL.cutStepProblems(ev.steps));
+      var facetNote = (ev.notes && ev.notes.length) ? ('  |  ' + ev.notes.join('; ')) : '';
+      var trail = CL.describeCutSteps(ev.steps);
+      // A facet the model could not answer (a misspelt thinker, a bad month) is
+      // a refusal, not an empty result: the standing cut is left exactly as it was.
+      if (!rids.length && ev.problems && ev.problems.length) {
+        var rf = show('find "' + expr + '"  |  ' + ev.problems.join('; ') + '. Nothing changed.', 'err');
+        rf.verify = { ok: false, problems: ev.problems.slice() };
+        return rf;
+      }
+      if (!rids.length) {
+        writeCut(null);
+        journal.record(TAB, { dim: 'cut', before: before, after: null });
+        var none = show('find "' + expr + '"  |  nothing matched -- nothing cut' + (trail ? '  (' + trail + ')' : '') +
+                        (stepProbs.length ? '  |  ' + stepProbs.join('; ') : ''), 'err');
+        none.verify = { ok: false, problems: stepProbs.length ? stepProbs : ['nothing matched'] };
+        return none;
+      }
+      var rval = { ids: rids, query: expr };
+      // Enforce without a second round trip: the ids are already in hand.
+      cutIds = rids.slice(); cutQuery = expr; setSearch(ev.steps.length > 1 ? expr : cutQuery);
+      // SAY WHAT IS DRAWN. A facet selects from the whole model, so some of its
+      // nodes may be hidden by the view's own filters; the count spoken is the
+      // count on screen, and the gap is named rather than rounded away.
+      var drawnN = applyCut();
+      var hiddenN = (typeof drawnN === 'number' && drawnN < rids.length) ? (rids.length - drawnN) : 0;
+      [120, 400, RESETTLE_MS, 1800].forEach(function (ms) { setTimeout(function () { if (cutIds) { applyCut(); } }, ms); });
+      journal.record(TAB, { dim: 'cut', before: before, after: rval });
+      var vr = verifyCutNow();
+      var probs = stepProbs.concat(vr.problems || []);
+      var res = show('find "' + expr + '"  |  ' + (rids.length - hiddenN) + ' nodes shown' +
+                     (hiddenN ? ' (' + rids.length + ' in the cut; ' + hiddenN + ' hidden by the current filters)' : '') +
+                     (trail ? '  (' + trail + ')' : '') + facetNote + frameSuffix() +
+                     (probs.length ? '  |  CHECK: ' + probs.join('; ') : ''), 'ok');
+      res.verify = { ok: !probs.length, problems: probs };
+      res.shown = rids.length - hiddenN;
+      return res;
+    }
+    // Composition needs the tab to answer ONE term at a time; the scrape road
+    // can only read the whole page's lighting. Say so rather than fake it.
+    if (p.action === 'compose' || CL.parseCutExpr(p.text || '').length > 1) {
+      return show('combining searches (also / except / within) is not available on this view yet -- it needs the tab\'s find contract', 'err');
+    }
+    if (p.action === 'find' && CL.parseFacet(p.text || '')) {
+      return show('cuts by thinker, pair, kind, strength or month need the graph model -- they work on the Sociogram', 'err');
+    }
     if (p.action === 'clear') {
       writeCut(null);
       call('runSearch');
@@ -5004,7 +5299,13 @@ var VoiceGuide = (function() {
     // gets its OWN journal entry: undo steps back through cut-then-filter
     // exactly, instead of silently dropping the cut along the way.
     var priorCut = readCut();
-    if (priorCut) {
+    // SUBTRACTING a group keeps the cut: hiding can only remove nodes, so the
+    // cut cannot hide anything the user now means to see (2026-09-22 -- "keep
+    // my search, drop Levin" used to lose the search). Adding groups still
+    // releases it, and the result line says so.
+    var keepCut = !!priorCut && (p.action === 'diff' || p.action === 'none');
+    var releasedCut = !!priorCut && !keepCut;
+    if (priorCut && !keepCut) {
       writeCut(null);
       journal.record(TAB, { dim: 'cut', before: priorCut, after: null });
     }
@@ -5036,7 +5337,11 @@ var VoiceGuide = (function() {
       else { target = Object.assign({}, before); for (x = 0; x < p.keys.length; x++) { target[p.keys[x]] = (p.action === 'union'); } }
       writeDim('filters', target);
     }
-    journal.record(TAB, { dim: 'filters', before: before, after: readDim('filters') });
+    var afterF = readDim('filters');
+    journal.record(TAB, { dim: 'filters', before: before, after: afterF });
+    // VERIFY: the page's own filter state, read back, must equal what we wrote.
+    var vf = target ? CL.verifyFilters(target, afterF) : { ok: true, problems: [] };
+    if (keepCut) { applyCut(); [120, 400, RESETTLE_MS, 1800].forEach(function (ms) { setTimeout(function () { if (cutIds) { applyCut(); } }, ms); }); }
     var on = onGroups(), extra = (p.unresolved && p.unresolved.length) ? ('  (unresolved: ' + p.unresolved.join(', ') + ')') : '';
     // Lead with what the graph SHOWS. An empty result is stated plainly rather
     // than dressed as a successful filter change -- the user asked to see
@@ -5064,11 +5369,117 @@ var VoiceGuide = (function() {
     var fSumF = filterSummary();
     var body = fSumF ? (fSumF + '  |  ' + itemsPhrase(n ? n.shown : activeItems().length))
                      : (on.length + ' groups on: ' + on.join(', '));
-    var res = show(hedge + head + p.action + ' -> ' + body + viewSuffix() + framed + extra, 'ok');
+    var cutNote = keepCut ? '  (search cut "' + (priorCut.query || 'focus') + '" kept)' : (releasedCut ? '  (search cut released: adding groups)' : '');
+    var res = show(hedge + head + p.action + ' -> ' + body + viewSuffix() + framed + extra + cutNote +
+                   (vf.ok ? '' : '  |  CHECK: ' + vf.problems.join('; ')), 'ok');
+    res.verify = vf;
     // The counts ride on the RESULT OBJECT too, not only inside the prose, so
     // the voice tool output can carry them as data the model must relay. A
     // spoken confirmation should never be able to outrun the render.
     if (n) { res.shown = n.shown; res.total = n.total; }
+    return res;
+  }
+  // ---- PLOT (step 1 of the 2026-09-28 plan: plots join the shell's state) ----
+  // `plot <words>` writes the plots panel's spec through the same road as every
+  // other command: parsed against the LIVE panel's own lists
+  // (CL.parsePlotSpec), read back (CL.verifyPlot), journaled as dim 'plot' so
+  // `undo` restores the whole prior spec, and reported with the numbers the
+  // chart is drawn from (C2A2Plot.summary) so an answer can quote them. Hand
+  // changes on the panel arrive through C2A2Plot.subscribe and are journaled
+  // too. The panel lives inside the tab document (it reads the graph's own
+  // state) and loads on first use, so a first `plot` finishes LATER: its
+  // result carries `pending`, which the planner and the guide wait for.
+  function plotTabWin() {
+    var w = ifWin();
+    try {
+      if (!w) { return null; }
+      if (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') { return w; }
+      return (typeof w.c2a2PlotSource === 'function') ? w : null;   // step 5: any tab offering a plot source
+    } catch (e) { return null; }
+  }
+  function plotApi() { var w = plotTabWin(); return (w && w.C2A2Plot && w.C2A2Plot.panel) ? w.C2A2Plot : null; }
+  // The model half of the plots script (facets, attribution) -- same object.
+  function plotModel() { var P = plotApi(); return (P && P.facetIds) ? P : null; }
+  function plotDims(P) { return { plots: P.plots, kinds: P.kinds, groups: P.groups, strengths: P.strengths, months: P.months }; }
+  function readPlot() { var P = plotApi(); return (P && P.visible && P.visible()) ? P.get() : null; }
+  function syncPlotBtn() { var pb = document.getElementById('btn-plots'); if (pb) { pb.classList.toggle('on', !!readPlot()); } }
+  function onPlotHand(before, after) {
+    var am = activeManifest();
+    journal.record(am ? am.key : TAB, { dim: 'plot', before: before, after: after });
+    syncPlotBtn();
+  }
+  var plotLoading = null;
+  function loadPlots() {
+    var P = plotApi();
+    if (P) { P.subscribe(onPlotHand); return Promise.resolve(P); }
+    if (plotLoading) { return plotLoading; }
+    var w = plotTabWin();
+    if (!w) { return Promise.reject(new Error('this view offers nothing to plot')); }
+    plotLoading = new Promise(function (resolve, reject) {
+      var sc = w.document.createElement('script');
+      sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
+      sc.onerror = function () { reject(new Error('the plots panel could not be loaded')); };
+      w.document.head.appendChild(sc);
+      var t0 = Date.now();
+      (function wait() {
+        var p2 = plotApi();
+        if (p2) { p2.subscribe(onPlotHand); return resolve(p2); }
+        if (Date.now() - t0 > 20000) { return reject(new Error('the plots panel did not start')); }
+        setTimeout(wait, 100);
+      })();
+    });
+    plotLoading.then(function () { plotLoading = null; }, function () { plotLoading = null; });
+    return plotLoading;
+  }
+  function writePlot(value) {
+    var P = plotApi();
+    if (!value) { if (P) { P.hide(); } syncPlotBtn(); return; }
+    if (P) { P.set(value); syncPlotBtn(); return; }
+    loadPlots().then(function (p2) { p2.set(value); syncPlotBtn(); }, function () { /* no graph here: nothing to restore */ });
+  }
+  function applyPlot(P, p, tabKey) {
+    var dims = plotDims(P);
+    var ps = CL.parsePlotSpec(p.text, dims);
+    if (!ps.ok) {
+      return show('plot: did not understand ' + ps.problems.join('; ') + '. Nothing changed. Plots: ' + dims.plots.join(', ') +
+                  '; add by thinker|group, since/until <month>, corpus, inside, or edges/nodes/strength <names>.', 'err');
+    }
+    var before = readPlot();
+    if (ps.off) {
+      P.hide(); syncPlotBtn();
+      if (before) { journal.record(tabKey, { dim: 'plot', before: before, after: null }); }
+      return show(before ? 'plot off' : 'plot off (it was not open)', 'ok');
+    }
+    P.set(ps.patch);                       // opens the panel and redraws
+    var got = P.get();
+    var v = CL.verifyPlot(ps.patch, got);
+    if (JSON.stringify(before) !== JSON.stringify(got)) { journal.record(tabKey, { dim: 'plot', before: before, after: got }); }
+    syncPlotBtn();
+    var sm = null;
+    try { sm = P.summary(5); } catch (e) { sm = null; }
+    var line = 'plot ' + CL.describePlot(got, dims);
+    if (sm) {
+      line += '  |  ' + sm.edges.toLocaleString() + ' edges' + (sm.top.length ? ('; most: ' + sm.top.map(function (c) {
+        return (c.a === c.b ? ('within ' + c.a) : (c.a + '-' + c.b)) + ' ' + c.n.toLocaleString();
+      }).join(', ')) : '; none to count');
+    }
+    if (!v.ok) { line += '  |  CHECK: ' + v.problems.join('; '); }
+    var cs = P.chartState ? P.chartState() : 'ready';
+    if (cs === 'failed') { line += '  |  the chart library could not load, so the numbers above are all there is to see'; }
+    var res = show(line, v.ok ? 'ok' : 'err');
+    res.verify = v;
+    if (sm) { res.plot = sm; }
+    return res;
+  }
+  function execPlot(p) {
+    var tabKey = TAB;
+    if (!plotTabWin()) { return show('plot: this view offers nothing to plot. The Sociogram and the Narrative Connectome do.', 'err'); }
+    var P = plotApi();
+    if (P) { P.subscribe(onPlotHand); return applyPlot(P, p, tabKey); }
+    if (/^\s*(off|close|hide)\s*$/i.test(p.text || '')) { return show('plot off (it was not open)', 'ok'); }
+    var res = show('plot: opening the plots panel...', 'ok');
+    res.pending = loadPlots().then(function (p2) { return applyPlot(p2, p, tabKey); },
+                                   function (e) { return show('plot: ' + e.message + '. Nothing changed.', 'err'); });
     return res;
   }
   // T1 knob set (fan-out, inc 4). Write-returns-read: re-read after writing so
@@ -5409,7 +5820,7 @@ var VoiceGuide = (function() {
     writeDim('filters', bootFilters); return show(p.action + ' -> boot filters' + frameSuffix(), 'ok');   // reset/restore (v1: filters only)
   }
   function execRead(p) {
-    if (p.action === 'help') { return show('verbs: only/show/hide/all/none, open/close, find/clear/focus, fit, go/back, undo/redo, what', 'ok'); }
+    if (p.action === 'help') { return show('plain text = find (search this view). verbs: only/show/hide/all/none, open/close, find/also/except/within/clear/focus, plot <type> [by thinker|group] [since <month>] [edges|nodes|strength <names>] | plot off, fit, go/back, undo/redo, what. Up/Down arrows recall commands.', 'ok'); }
     // SUMMARIZE HANDS BACK THE WORDS. Everything else here returns a description
     // of the view; this returns the text itself, because summarising is the one
     // thing the model is better at than any code we could write -- and it could
@@ -5472,6 +5883,9 @@ var VoiceGuide = (function() {
     var vNote = activeViewName();
     if (vNote) { itemNote = '  |  ' + vNote + ' view' + itemNote; }
     var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';
+    // An open plot is part of what the user is looking at.
+    var plotNow = readPlot(), plotP = plotApi();
+    if (plotNow && plotP) { cutNote += '  |  plot: ' + CL.describePlot(plotNow, plotDims(plotP)); }
     // BOTH, on a tab with declared axes. The graph's either/or was fine while
     // filters and items were alternatives; here they are the same view seen two
     // ways, and dropping the count to make room for thirty-four group names
@@ -5566,7 +5980,16 @@ var VoiceGuide = (function() {
     var actSpec = itemSpec();
     var ctx = { caps: caps, knobs: knobs, families: families, roster: roster(), tabs: dest.tabs, nodes: dest.nodes,
                 activates: !!(actSpec && actSpec.activate) };
-    execute(CL.plan(CL.parse(text, grammar), ctx));
+    var parsed = CL.parse(text, grammar);
+    // A BARE STRING IS A SEARCH. Nothing the user typed matched a verb, and the
+    // view can `find`: run it as `find <text>`, and SAY so -- the result line
+    // begins with the command that actually ran, so a mistyped verb becomes a
+    // visible search rather than a refusal (decision 3, 2026-09-16). On a view
+    // without `find` the honest answer is still "unknown command".
+    if (parsed.ok === false && parsed.error === 'unknown_verb' && caps.indexOf('find') !== -1) {
+      parsed = CL.parse('find ' + text, grammar);
+    }
+    execute(CL.plan(parsed, ctx));
     return lastResult;
   }
   // Shared entry point: the voice guide's run_command routes spoken commands
@@ -5611,6 +6034,9 @@ var VoiceGuide = (function() {
   // `label.datum`, and what 222 of the Connectome's narratives gave with it --
   // and neither is visible from a spoken string or an element count. Ids and
   // labels only; nothing here reaches into the page.
+  // The newest journal entry on the active tab, read-only (test_voice_shell.cjs
+  // Phase X asserts the bar and the tab's own box write the SAME entry).
+  window.CCLJournalTop = function () { return journal.peek(TAB); };
   window.CCLItems = function () {
     return activeItems().map(function (x) { return { id: x.id, label: x.label }; });
   };
@@ -5623,15 +6049,346 @@ var VoiceGuide = (function() {
              knobs: am ? (am.m.knobs || []).map(function (k) { return k.id; }) : null,
              roster: roster() };
   };
-  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); var v = input.value.trim(); if (v) { run(v); } } });
+  // Command history, per session, Up/Down -- the one memory the bar itself
+  // keeps (the journal remembers what each command DID; this remembers what was
+  // TYPED). Not persisted: a fresh page is a fresh session.
+  var hist = [], histIdx = -1, histDraft = '';
+  function remember(v) { if (hist[hist.length - 1] !== v) { hist.push(v); } if (hist.length > 100) { hist.shift(); } histIdx = -1; histDraft = ''; }
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); var v = input.value.trim(); if (v) { remember(v); run(v); } return; }
+    if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+      if (!hist.length) { return; }
+      e.preventDefault();
+      if (histIdx === -1) { histDraft = input.value; histIdx = hist.length; }
+      histIdx += (e.key === 'ArrowUp') ? -1 : 1;
+      if (histIdx < 0) { histIdx = 0; }
+      if (histIdx >= hist.length) { histIdx = -1; input.value = histDraft; return; }
+      input.value = hist[histIdx];
+      input.setSelectionRange(input.value.length, input.value.length);
+    }
+  });
+  // THE TAB'S OWN SEARCH BOX IS AN ALIAS OF `find`. A tab that implements the
+  // contract posts {source:'c2a2-tab', type:'find'|'clear', text} instead of
+  // searching on its own when it is embedded; the shell runs the SAME journaled
+  // command it would for a typed or spoken `find`, and calls back into the tab.
+  // One search implementation per tab, ever. Standalone (no parent), the tab
+  // searches locally and nothing is journaled -- that is the tab's own affair.
+  window.addEventListener('message', function (e) {
+    var d = e.data;
+    if (!d || d.source !== 'c2a2-tab') { return; }
+    var f = document.getElementById('content-frame');
+    if (!f || e.source !== f.contentWindow) { return; }   // only the tab we are showing
+    if (d.type === 'find') { var t = String(d.text || '').trim(); if (t) { remember('find ' + t); run('find ' + t); } else { run('clear'); } }
+    else if (d.type === 'clear') { run('clear'); }
+  });
   document.addEventListener('keydown', function (e) {
     if (e.key === '/' && document.activeElement !== input) {
       var tag = (document.activeElement && document.activeElement.tagName) || '';
-      if (tag !== 'INPUT' && tag !== 'TEXTAREA') { e.preventDefault(); input.focus(); }
+      if (tag !== 'INPUT' && tag !== 'TEXTAREA') { e.preventDefault(); (document.getElementById('ask-input') || input).focus(); }
     }
   });
 })();
 </script>
 
+
+<style>
+/* ── ONE SEARCH (2026-09-22) ─────────────────────────────────────────────
+   The Sociogram-style box, lifted into row 1 so it is the same on every page.
+   Enter = light matches on this page (CCL `find`, journaled/undoable) AND ask
+   the guide (broker) for a grounded answer, shown in #ask-drawer. */
+#row1-tools { display: flex; align-items: center; gap: 6px; min-width: 0; }
+#row1-tools .nav-btn { margin-right: 0; }
+#ask-wrap { display: flex; align-items: center; gap: 4px; }
+#ask-input {
+  width: 300px; background: #14141f; border: 1px solid #3a3a4a; color: #e6e6ee;
+  padding: 6px 10px; border-radius: 16px; font-size: 13px; font-family: -apple-system, sans-serif;
+}
+#ask-input:focus { outline: none; border-color: #C9A84C; }
+#ask-input::placeholder { color: #6a6a7a; }
+#ask-go, #ask-clear, #ask-open {
+  background: #1a1a2a; border: 1px solid #3a3a4a; color: #e0e0e0; border-radius: 14px;
+  padding: 5px 10px; cursor: pointer; font-size: 12px; flex-shrink: 0;
+}
+#ask-go:hover, #ask-clear:hover, #ask-open:hover { border-color: #C9A84C; color: #C9A84C; }
+#ask-open { display: none; }
+#row1-tools #ccl-stop { margin-right: 0; }
+#row1-tools #ccl-readhelp { margin-right: 0; }
+#ask-drawer {
+  display: none; position: fixed; top: 96px; right: 16px; z-index: 99990;
+  width: 460px; max-width: calc(100vw - 32px); max-height: 55vh; overflow-y: auto;
+  background: rgba(14,14,22,0.97); border: 1px solid #3a3a4a; border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); padding: 10px 14px 12px;
+  font-family: -apple-system, sans-serif; color: #dcdce6; font-size: 13px; line-height: 1.5;
+}
+#ask-drawer.open { display: block; }
+#ask-head { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+#ask-q { flex: 1; color: #C9A84C; font-weight: 600; }
+#ask-close { background: transparent; border: none; color: #8a8a98; font-size: 18px; cursor: pointer; line-height: 1; }
+#ask-body { white-space: pre-wrap; }
+#ask-body.pending { color: #8a8a98; font-style: italic; }
+#ask-meta { margin-top: 8px; font-size: 11px; color: #7a7a8a; }
+#ask-meta .ask-find { color: #4E8A5E; }
+/* Narrow screens: the box collapses to a magnifier that opens it. */
+@media (max-width: 1180px) {
+  #ask-input { width: 200px; }
+  #vg-launch #vg-label { display: none; }
+}
+@media (max-width: 900px) {
+  #ask-open { display: inline-block; }
+  #ask-input, #ask-go, #ask-clear { display: none; }
+  #ask-wrap.open { position: fixed; top: 52px; left: 8px; right: 8px; z-index: 99991;
+    background: #0e0e16; border: 1px solid #3a3a4a; border-radius: 10px; padding: 6px; }
+  #ask-wrap.open #ask-input { display: block; flex: 1; width: auto; }
+  #ask-wrap.open #ask-go, #ask-wrap.open #ask-clear { display: inline-block; }
+  #ask-wrap.open #ask-open { display: none; }
+  #row1-tools .nav-btn, #row1-tools #ccl-readhelp { display: none; }
+}
+</style>
+<script src="lib/c2a2-search.js?v=5447353e16"></script>
+<script>
+(function () {
+  'use strict';
+  var input = document.getElementById('ask-input');
+  if (!input) { return; }
+  var wrap = document.getElementById('ask-wrap');
+  var drawer = document.getElementById('ask-drawer');
+  var qEl = document.getElementById('ask-q'), body = document.getElementById('ask-body'), meta = document.getElementById('ask-meta');
+  var frame = document.getElementById('content-frame');
+
+  // Which knowledge file speaks for which page (voice_guide/knowledge/*.md).
+  var KNOWLEDGE = {
+    'wiki_narration.html': 'sociogram.graph.default', 'prs_3d.html': 'narrative_connectome.default',
+    'agents_tab.html': 'agent_map.default', 'metabolism_view.html': 'metabolism.default',
+    'summa_explorer.html': 'curriculum_tools.default', 'interT_study.html': 'inter_tradition_study.default',
+    'community_explorer.html': 'community_explorer.default', 'community_interactions.html': 'community_interactions.default',
+    'rc_document_explorer.html': 'rc_document_explorer.default', 'physics_explorer.html': 'physics_explorer.default',
+    'commentary_explorer.html': 'trv_commentary.default', 'index.html': 'ai_heartbeat.default',
+    'start_here.html': 'start_here.default', 'what_is_c2a2.html': 'what_is_c2a2.default',
+    'what_is_saying.html': 'what_is_saying.default', 'rc_sandbox_notebook.html': null
+  };
+  var routeGrammar = null;
+  fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); })
+    .then(function (j) { if (window.CommandLine) { routeGrammar = window.CommandLine.compileGrammar(j); } }).catch(function () { /* routes to planner */ });
+  function grammarForRoute() { return routeGrammar; }
+  var cache = {};
+  function getText(url) {
+    if (cache[url] !== undefined) { return Promise.resolve(cache[url]); }
+    return fetch(url + '?v=' + Date.now()).then(function (r) { return r.ok ? r.text() : ''; })
+      .catch(function () { return ''; }).then(function (t) { cache[url] = t; return t; });
+  }
+  function stripFront(md) { return String(md || '').replace(/^---[\s\S]*?\n---\s*\n/, ''); }
+  function pageFile() {
+    var src = (typeof window.CCLFrameSrc === 'function') ? window.CCLFrameSrc() : (frame.getAttribute('src') || '');
+    return String(src).split('?')[0].split('#')[0].split('/').pop();
+  }
+  // The short introduction lives in 00_project.md; asked for, it is given as written.
+  function introText(projectMd) {
+    var m = stripFront(projectMd).match(/## Short introduction[^\n]*\n([\s\S]*?)(\n## |$)/);
+    return m ? m[1].trim() : '';
+  }
+  var INTRO_RE = /\b(introduc\w*|intro|overview|orient me|get started|where (do|should) i (start|begin)|what is (this|c2a2|this site)|what'?s (this|c2a2)|tell me about (this|c2a2|the site))\b/i;
+  window.C2A2Intro = function () {
+    return getText('voice_guide/knowledge/00_project.md').then(introText);
+  };
+
+  function open(q) { qEl.textContent = q; drawer.classList.add('open'); }
+  function close() { drawer.classList.remove('open'); }
+  function render(text, pending, metaHtml) {
+    body.textContent = text; body.className = pending ? 'pending' : ''; meta.innerHTML = metaHtml || '';
+  }
+  function esc(t) { return String(t).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+
+  // ── PLANNER (item 4, approved 2026-09-22) ──────────────────────────────
+  // Multi-step or analytic requests go to the strong model (broker alias
+  // "answer"); CODE runs its CCL steps through CCLRun, reads each back
+  // (res.verify), and returns the results for one correction pass and the
+  // answer. The loop itself lives in the engine (CommandLine.runPlan, tested
+  // in scripts/test_voice_ccl.cjs). The row-1 box and the voice guide's
+  // plan_and_run tool both come here: one planner, two mouths.
+  var verbsText = null;
+  function getVerbs() {
+    if (verbsText !== null) { return Promise.resolve(verbsText); }
+    return fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); })
+      .then(function (j) { verbsText = window.CommandLine.verbLines(j); return verbsText; })
+      .catch(function () { return ''; });
+  }
+  function pageKnowledge() {
+    var file = pageFile(), key = KNOWLEDGE.hasOwnProperty(file) ? KNOWLEDGE[file] : null;
+    return Promise.all([
+      getText('voice_guide/knowledge/00_project.md'),
+      key ? getText('voice_guide/knowledge/' + key + '.md') : Promise.resolve('')
+    ]).then(function (k) {
+      return { project: k[0], text: 'SITE KNOWLEDGE:\n' + stripFront(k[0]) + (k[1] ? '\n\nPAGE KNOWLEDGE (' + file + '):\n' + stripFront(k[1]) : '') };
+    });
+  }
+  // GROUNDING (2026-09-24): code retrieves the model's own material for the
+  // traditions the request names (voice_guide/grounding.json, built by
+  // scripts/build_grounding_index.py; bridge essays fetched live) and hands it
+  // to the planner up front. CommandLine.buildGrounding does the picking.
+  var groundIndex = null;
+  function getGroundIndex() {
+    if (groundIndex) { return Promise.resolve(groundIndex); }
+    return fetch('voice_guide/grounding.json?v=' + Date.now()).then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; }).then(function (j) { if (j) { groundIndex = j; } return j; });
+  }
+  function grounding(request) {
+    return getGroundIndex().then(function (idx) {
+      if (!idx) { return window.CommandLine.buildGrounding(request, null, {}); }
+      var paths = window.CommandLine.groundEntities(request, idx).bridges;
+      return Promise.all(paths.map(getText)).then(function (texts) {
+        var bt = {}; paths.forEach(function (p, i) { bt[p] = texts[i]; });
+        return window.CommandLine.buildGrounding(request, idx, bt);
+      });
+    });
+  }
+  // PLAN MEMORY (step 4, 2026-09-29): verified plans are remembered by the
+  // broker (scrubbed request + commands, never the prose answer) and recalled
+  // as examples; see CommandLine.storablePlan / replayPlan. Memory is a help,
+  // never a dependency: a failed recall or store changes nothing else.
+  function planRecall(request) {
+    if (!window.C2A2Search) { return Promise.resolve(null); }
+    return window.C2A2Search.callBroker({ action: 'plan_recall', user: JSON.stringify({ request: request, tab: pageFile() }), timeoutMs: 4000 })
+      .catch(function () { return null; });
+  }
+  function planStore(request, commands, model) {
+    if (!window.C2A2Search || !commands || !commands.length) { return; }
+    window.C2A2Search.callBroker({ action: 'plan_store', user: JSON.stringify({ request: request, tab: pageFile(), commands: commands, model: model || '' }), timeoutMs: 6000 })
+      .catch(function () { /* memory is best-effort */ });
+  }
+  window.C2A2PlanMemory = { recall: planRecall, store: planStore };
+  window.C2A2Plan = function (request, recalled, hint, ctl) {
+    if (!window.CommandLine || typeof window.CommandLine.runPlan !== 'function') { return Promise.reject(new Error('planner not loaded')); }
+    if (!window.C2A2Search) { return Promise.reject(new Error('answer service not loaded')); }
+    return Promise.all([getVerbs(), pageKnowledge(), grounding(request), recalled !== undefined ? Promise.resolve(recalled) : planRecall(request)]).then(function (v) {
+      return window.CommandLine.runPlan(request, {
+        cancelled: function () { return !!(ctl && ctl.cancelled); },
+        hint: hint || '', verbs: v[0], knowledge: v[1].text, grounding: v[2].text, examples: window.CommandLine.planExamplesText(v[3]),
+        state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
+        run: function (cmd) { var r = window.CCLRun(cmd); return (r && r.pending) ? r.pending : r; },
+        ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user, timeoutMs: 60000 }); }
+      }).then(function (res) {
+        res.sources = v[2].sources;
+        res.remembered = (v[3] && v[3].plans) ? v[3].plans.length : 0;
+        var keep = window.CommandLine.storablePlan(res);
+        if (keep) { planStore(request, keep, res.model); res.stored = true; }
+        return res;
+      });
+    });
+  };
+  // Replay a remembered plan with NO model call: each step runs through CCLRun
+  // (waiting for any that finish later) and is read back like any command. Any
+  // step that fails or is flagged sends the request on to the planner instead.
+  function replayRemembered(rp) {
+    var trace = [];
+    return rp.commands.reduce(function (pr, cmd) {
+      return pr.then(function (stop) {
+        if (stop) { return true; }
+        var r0 = window.CCLRun ? window.CCLRun(cmd) : null;
+        return Promise.resolve(r0 && r0.pending ? r0.pending : r0).then(function (r) {
+          var bad = !r || r.ok === false || (r.verify && r.verify.ok === false);
+          trace.push({ cmd: cmd, spoken: (r && r.spoken) || '(no result)', ok: !bad });
+          return bad;
+        });
+      });
+    }, Promise.resolve(false)).then(function (stopped) { return { ok: !stopped, trace: trace }; });
+  }
+  function planMeta(res) {
+    var h = '';
+    if (res.trace && res.trace.length) {
+      h += 'Steps: ' + res.trace.map(function (t) { return esc(t.cmd) + (t.ok && !t.problems.length ? '' : ' <b style="color:#C45B5B">(!)</b>'); }).join(' &rarr; ');
+    }
+    if (res.failed && res.failed.length) {
+      h += '<br><span style="color:#C45B5B">Not as asked: ' + res.failed.map(function (t) { return esc(t.cmd + ': ' + (t.problems.join('; ') || t.spoken)); }).join(' | ') + '</span>';
+    }
+    if (res.sources && res.sources.length) { h += (h ? '<br>' : '') + 'Grounded in: ' + res.sources.map(esc).join(', '); }
+    if (res.trimmed && res.trimmed.length) { h += (h ? '<br>' : '') + '<span style="color:#C08B3E">Trimmed to fit the request limit: ' + res.trimmed.map(esc).join('; ') + '</span>'; }
+    if (res.remembered) { h += (h ? '<br>' : '') + 'Helped by ' + res.remembered + ' verified plan' + (res.remembered === 1 ? '' : 's') + ' from earlier sessions.'; }
+    return h + '<br>planned and answered' + (res.model ? ' (' + esc(res.model) + ', ' + res.calls + ' call' + (res.calls === 1 ? '' : 's') + ')' : '') +
+      '<br><span style="opacity:.7">Requests are kept without anything that identifies you (emails, links and long numbers removed) so verified plans can help the next person. Answers are not kept.</span>';
+  }
+
+  function planText(res) {
+    var t = res.answer || '';
+    if (res.assumed) { t = 'How I read it: ' + res.assumed + (t ? '\n\n' + t : ''); }
+    if (res.ask) { t += (t ? '\n\n' : '') + 'Question: ' + res.ask; }
+    return t || '(no answer came back)';
+  }
+  var seq = 0;
+  function ask() {
+    var q = input.value.trim();
+    if (!q) { clearAll(); return; }
+    var my = ++seq;
+    open(q);
+    // ROUTER (deterministic): one command or a short search runs here, free.
+    var route = (window.CommandLine && grammarForRoute()) ? window.CommandLine.routeRequest(q, grammarForRoute()).route : 'plan';
+    function planned(hint) {
+      pageKnowledge().then(function (k) {
+        var intro = introText(k.project);
+        if (intro && INTRO_RE.test(q)) { if (my === seq) { render(intro, false, ''); } return; }
+        if (my !== seq) { return; }
+        render('Working it out…', true, '');
+        return planRecall(q).then(function (rec) {
+          if (my !== seq) { return; }
+          var rp = hint ? null : window.CommandLine.replayPlan(q, rec);
+          if (!rp) { return rec; }
+          return replayRemembered(rp).then(function (rr) {
+            if (my !== seq) { return 'done'; }
+            if (!rr.ok) { render('A remembered plan did not hold here (' + esc(rr.trace[rr.trace.length - 1].cmd) + '); planning afresh…', true, ''); return rec; }
+            render(rr.trace.map(function (t) { return t.spoken; }).join('\n'), false,
+                   'Steps: ' + rr.trace.map(function (t) { return esc(t.cmd); }).join(' &rarr; ') +
+                   '<br>ran a plan verified on ' + rp.devices + ' devices &middot; no model call');
+            planStore(q, rp.commands, 'replay');
+            return 'done';
+          });
+        }).then(function (rec) {
+          if (rec === 'done' || my !== seq) { return; }
+          return window.C2A2Plan(q, rec || null, hint).then(function (res) {
+          if (my !== seq) { return; }
+          if (!res.ok) { render('The planner could not be read (' + res.error + '). Nothing further was changed.', false, planMeta(res)); return; }
+          render(planText(res), false, planMeta(res));
+          });
+        });
+      }).catch(function (e) {
+        if (my !== seq) { return; }
+        var code = (e && e.message) || 'unknown';
+        render((code === 'free-limit' || code === 'rate-limited') ? 'The free question allowance for today is used up.' : 'The answer service failed (' + code + ').', false, '');
+      });
+    }
+    if (route === 'plan') { planned(''); return; }
+    if (route === 'direct') {
+      var cmd = q;
+      var rr = null;
+      try { rr = window.CCLRun ? window.CCLRun(cmd) : null; } catch (e) { rr = null; }
+      // GENEROUS READING (2026-09-29): input the engine could not act on is not
+      // left as "nothing matched"; the planner is asked what it most likely meant.
+      if (rr && rr.ok === false && !rr.pending && typeof window.C2A2Plan === 'function' &&
+          /matched nothing|unknown command|not understood|did not understand/i.test(rr.spoken || '')) {
+        render('Not a command I know -- working out what you meant…', true, '');
+        planned('The user typed this and the command engine could not act on it (' + (rr.spoken || 'no result') + '). Read it generously: work out what they most likely meant and do it with the verbs and facets available, or ask.');
+        return;
+      }
+      render((rr && rr.spoken) || '(no result)', false, 'ran directly on this page &middot; no model call');
+      if (rr && rr.pending) {
+        rr.pending.then(function (fin) { if (my === seq && fin) { render(fin.spoken || '(no result)', false, 'ran directly on this page &middot; no model call'); } });
+      }
+      return;
+    }
+  }
+  function clearAll() {
+    seq++; input.value = ''; close();
+    try { if (typeof window.CCLRun === 'function') { window.CCLRun('clear'); } } catch (e) { /* nothing lit */ }
+  }
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); ask(); }
+    else if (e.key === 'Escape') { close(); }
+  });
+  document.getElementById('ask-go').addEventListener('click', ask);
+  document.getElementById('ask-clear').addEventListener('click', clearAll);
+  document.getElementById('ask-close').addEventListener('click', close);
+  document.getElementById('ask-open').addEventListener('click', function () { wrap.classList.add('open'); input.focus(); });
+  // A tab's own box (Sociogram standalone road) and the guide both reach this one box.
+  window.C2A2AskBox = { ask: function (q) { input.value = q; ask(); }, clear: clearAll };
+})();
+</script>
 </body>
 </html>

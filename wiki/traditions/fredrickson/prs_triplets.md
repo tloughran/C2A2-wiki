@@ -372,4 +372,32 @@ PRS-39:
   Evidence: "A confirmatory factor analysis demonstrated good fit with all three indicators loading significantly on a single latent factor, and the resulting factor score showed the most consistent associations with prosocial tendencies and positive mental health relative to single indicators" (JSPR 42(10), 2025). Limits, load-bearing: this is the abstract's reported record, not the full text. No fit indices, factor loadings, or effect sizes were available to this agent, so "good fit" and "most consistent" are the source's own characterisations and are not independently checked; "most consistent" is a statement about consistency of association, not about magnitude. The sample is N = 274 undergraduates in a single 10-minute laboratory first-acquaintance paradigm, so transfer to community or inter-tradition settings is an assumption, not a finding. **Provenance correction:** PRS-23 names the journal "Journal of Personal and Social Relationships"; the correct title is the *Journal of Social and Personal Relationships*. PRS-23 is left unedited per this file's no-retro-edit practice and the correction is recorded here.
 
 ---
-*Total PRS triplets: 39*
+
+PRS-40:
+  Problem: The tradition's flourishing claims rest almost entirely on correlational and cross-sectional evidence plus short-horizon lab inductions. Whether a positivity-resonance-derived intervention actually changes social behavior in the field, over a multi-year horizon, in a population selected for isolation rather than convenience, has not been tested in the captured record.
+  Resource: A registered, invitation-enrolled RCT (NCT07005817) running 2025-05-19 to an estimated November 2027 primary completion, testing a tailored behavioral intervention for social connectedness in young adults, delivered with peer-created testimonial messages through simulated social media.
+  Solution: Converts the intervention claim from an inference the existing data license into a pre-specified prospective test with a fixed endpoint — the design form the wiki flagged as missing when it recorded PRS-34 as "an inference the data license but do not test."
+  Date Added: 2026-09-02
+  Source: KEEP Social trial registration; PROP-2026-08-13-001
+  Confidence: Medium
+  Evidence: Registry record NCT07005817, official title *Ameliorating Social Isolation: Identifying Factors That Impede or Facilitate Health-related Social Behavior Change*; sponsor University of North Carolina, Chapel Hill; status enrolling by invitation; start 2025-05-19; estimated primary completion November 2027. Medium rather than High solely because of the verification caveat above — the design is asserted on second-hand rendering of the registry record, not on the record read directly.
+
+PRS-41:
+  Problem: The tradition's entire mechanism runs through what it calls real-time sensory connection — face-to-face co-presence supplying the shared affect, caring nonverbal synchrony, and biological synchrony that jointly constitute positivity resonance. Mediated channels lack most of that, so a social-media-delivered intervention should on the theory's own terms have little purchase.
+  Resource: The trial's delivery mechanism — peer-created testimonial messages presented via *simulated* social media, used not to produce resonance directly but to change offline social behavior.
+  Solution: Reframes the mediated channel as a motivational route to in-person connection rather than a substitute for it, which makes the design a test of whether the theory's causal chain can be entered from outside the face-to-face requirement. Either result is informative: success shows the resonance mechanism is reachable indirectly; failure sharpens the sensory-connection requirement into a genuine constraint rather than a stipulation.
+  Date Added: 2026-09-02
+  Source: KEEP Social trial registration; PROP-2026-08-13-001
+  Confidence: Medium
+  Evidence: PEP Lab research page, "Current Research — Social Media Interventions to Improve Well-being": "a series of randomized controlled trials that tailor its behavioral intervention to improve social connectedness for young adults by adding peer-created testimonial messages, presented via simulated social media." Same page states the sensory-connection requirement: moments of positivity resonance "emerge in circumstances in which real-time sensory connection (e.g., face-to-face interaction) is combined with perceived safety."
+
+PRS-42:
+  Problem: The wiki records the tradition's normative claims about flourishing communities as grounded in wellbeing science, but the funding and framing of the work have not been captured, and they bear on what the tradition is being asked to deliver.
+  Resource: The National Cancer Institute's $3.25M award to Lazard and Fredrickson, situating loneliness reduction in young adults as a *cancer-prevention-adjacent public-health* problem, with Fredrickson holding UNC Lineberger Comprehensive Cancer Center membership.
+  Solution: Locates the tradition's current empirical center of gravity in health-behavior change under public-health funding, rather than in the affective-science questions the wiki's PRS record is mostly built from — a shift worth noting because it predicts which questions get answered next.
+  Date Added: 2026-09-02
+  Source: KEEP Social trial registration; PROP-2026-08-13-001
+  Confidence: Speculative
+  Evidence: UNC Research (2023-09-12), "Social media health intervention wins $3.25M in NCI funding," linked from the PEP Lab research page; UNC Lineberger directory listing for Fredrickson. Marked Speculative because this is a claim about the tradition's institutional direction inferred from funding, not a claim the sources make.
+
+*Total PRS triplets: 42*

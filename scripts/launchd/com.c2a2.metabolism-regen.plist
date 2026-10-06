@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.c2a2.metabolism-regen</string>
+
+    <!-- Rebuilds wiki/metabolism/metabolism_data.json from the live OpenStory db.
+         Replaces the sandboxed metabolism-regen-daily task, which cannot finish:
+         the 3GB db snapshot exceeds sandbox disk and its per-call time limit.
+         Exit 3 = regen succeeded but ingest is stale (>48h) - a verdict, not a crash. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/env</string>
+        <string>python3</string>
+        <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/metabolism_monitor.py</string>
+        <string>--regen-only</string>
+    </array>
+
+    <!-- Daily 05:00 local: before voice-shell-check (05:20) and the 05:45 health check,
+         and well before Sunday 06:30 metabolism-publish. Touches no git. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>5</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/tomloughran/Library/Logs/c2a2-metabolism-regen.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/tomloughran/Library/Logs/c2a2-metabolism-regen.log</string>
+</dict>
+</plist>

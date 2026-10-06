@@ -149,6 +149,17 @@ def main():
 
         print("cases that MUST pass:")
 
+        # 2026-09-20..10-05: the daily run moved to a cloud routine, its transcript
+        # left this Mac, and this check failed every morning on a run that had
+        # completed. Moved is judged elsewhere (check_routine_health.py), so it
+        # must not read as a stall here -- and the line must say where to look.
+        moved = {"enabled": True, "lastRunAt": iso(ran), "filePath": SKILL,
+                 "migratedToRemote": {"triggerId": "trig_x"}}
+        ok, line = run({"t": moved}, empty, now)
+        expect("moved to a cloud routine is not a stall", ok, True)
+        expect("moved verdict points at routine_health.md",
+               "routine_health.md" in line, True)
+
         done = tmp / "done"
         write_transcript(done, iso(ran),
                          [tool_use("Bash", iso(ran + timedelta(minutes=3))),

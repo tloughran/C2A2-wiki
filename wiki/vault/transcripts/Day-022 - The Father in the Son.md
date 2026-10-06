@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-022 - The Father in the Son - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-11T17:28:49"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-04T16:20:11"
+last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/022, pars/I, q/41, q/42, theme/trinity, theme/notional-acts, theme/equality, theme/mutual-indwelling]
 ---
