@@ -151,6 +151,42 @@ must satisfy, not material it is built from).
   regenerated into the repo. That is good evidence of fidelity for the quoted phrases
   specifically, and not a guarantee about unquoted prose.
 
+## The designed re-run, 2026-09-07 — and why its numbers are now provisional
+
+Batch 1's control pool deviated from the harness as written: it sampled forward pairs
+absent from the answer key, rather than pairs the criteria had actually rejected. The
+harness was re-run as designed over 21 items (9 target, 3 ruled-out control, 9 random
+control), 12 reconstructions reused and 9 newly authored, scored in
+`SCORE_designed.txt`:
+
+| condition | n | reconstructed | insufficient |
+|---|---|---|---|
+| target | 9 | **100%** | 0% |
+| control_ruled_out | 3 | 0% | 100% |
+| control_random | 9 | 11% | 89% |
+
+Verdict: targets 100%, controls 8% — **MIXED**, separation real but controls not clean.
+
+The single control positive is item **R15, Planck → Dirac**, argued from an
+`in_literature` trace (Dirac, *Principles*, 1930, Ch. IV: the quantum conditions are posed
+as qp − pq = i(h/2π)). That is the *second* control positive to turn out to be a gap in
+the answer key rather than a fabrication, and it is what set off the h-denomination audit.
+
+**Both consequences have to be stated together.** The audit added four rows to the key, so
+the numbers above were computed against a key that no longer exists. `build_sample` draws
+its targets from `attested` rows the corpus cannot express, and all four additions are
+exactly that, so the target set grows from 9 to 13 and the random pool shrinks. The
+worksheet must be regenerated and the four new items authored before this table is quoted
+again. It is left standing, with this warning attached, because deleting a measurement
+because its key improved is how a project loses the record of why it improved.
+
+A second fix shipped alongside: `check_row` demanded a `trace` and a `trace_kind` of every
+row, so all ten honest `insufficient` rows — complete in every other field — were printed
+as failing their checks. A verdict of `insufficient` has no trace by construction. It is
+now accepted with `trace_kind: "none"`, and only on an `insufficient` verdict; a
+`reconstructed` row with no trace still fails, and the verbatim in-corpus check is
+untouched. No rate in the table above moved.
+
 ## Recommended
 
 1. **Add `reconstructed` as a fifth status**, with the row carrying the argument — claim,

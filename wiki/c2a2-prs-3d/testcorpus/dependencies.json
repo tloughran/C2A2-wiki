@@ -9,7 +9,8 @@
       "status": "attested | plausible | ruled_out | unexamined. Per the epistemics ruling: NOT a confidence score, because a score averages evidence and absence into one number. attested means the published record shows the link. ruled_out means the record contradicts it - a finding, drawn differently, never deleted.",
       "textual": "expressed | partial | unexpressed. Whether the FIXTURE PROSE of the target carries any evidence pointing at the source. This separates two failures that look identical in a recall number: the method missed a signal that was there, versus the text never said it. No method reading these summaries can recover an unexpressed dependency, so it is the ceiling, not a defect to tune away. A pair is 'partial' when only one side expresses the link: the target may point at something the source never names.",
       "cue": "The phrase in the target's own text that a reader would point at. Empty when textual is unexpressed."
-    }
+    },
+    "amended_on": "2026-09-09: four resource_supplying rows added from Planck (quantum-PRS-01) to de Broglie, Heisenberg, Schrodinger and Dirac. See each row's basis. Pauli (quantum-PRS-06) and von Neumann (quantum-PRS-10) were considered and NOT added: the exclusion principle is a combinatorial constraint with no h in it, and von Neumann's resource is Hilbert space and spectral theory, in which h lives in the dynamics being formalised rather than in the formalism. Recording the refusals so the boundary of the h-denomination shape is on the record, not in someone's head."
   },
   "dependencies": [
     {
@@ -263,6 +264,42 @@
       "textual": "unexpressed",
       "cue": "",
       "basis": "Planck's constant is a term in the predicted Compton shift, h/(m_e c)(1 - cos theta); remove h and the collision calculation predicts no specific wavelength shift and cannot be compared with the measurement. ADDED 2026-09-07: this row was MISSING and was found by the reconstruction batch, which drew the pair as a random control. The key already held Einstein -> Compton (the light-quantum ontology) and had silently treated that as the whole of Compton's inheritance. Two distinct components, two distinct dependencies. Recorded as unexpressed: the fixture's Compton entry names neither Planck nor h."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-05",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Planck's constant is the numerator of the de Broglie relation, lambda = h/p. It is what converts a momentum into a length, so without it there is no wavelength to assign and the standing-wave closure condition on Bohr's orbit yields no quantisation at all. The fixture's de Broglie entry states the proportionality ('a wavelength inversely proportional to its momentum') and suppresses its constant of proportionality, which is precisely the component inherited. ADDED 2026-09-09 by the h-denomination audit (NEXT item 2), following the Planck -> Compton row that the reconstruction batch found by accident. The shape is systematic, not a one-off: Planck's constant is a term in the later formalism, and the fixture's later entries name neither Planck nor h, so no method reading this prose can recover it. Distinct from the Einstein -> de Broglie row already in the key, which supplies the wave-particle symmetry rather than the scale."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-07",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "The canonical commutation relation qp - pq = i(h/2pi) is the formal core of matrix mechanics, and h is its scale. Set h to zero and the arrays commute, the algebra collapses to classical kinematics, and the uncertainty relations the entry credits to the theory do not follow. The fixture's Heisenberg entry describes the noncommutation qualitatively and never names the quantity that sizes it. ADDED 2026-09-09 by the h-denomination audit (NEXT item 2), following the Planck -> Compton row that the reconstruction batch found by accident. The shape is systematic, not a one-off: Planck's constant is a term in the later formalism, and the fixture's later entries name neither Planck nor h, so no method reading this prose can recover it. Distinct from the Bohr -> Heisenberg problem_setting row, which supplies the failure Heisenberg was answering, not the constant he was answering it with."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-08",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Planck's constant appears in the wave equation itself; the eigenvalues that reproduce the hydrogen spectrum are denominated in it, and at h = 0 the equation has no discrete spectrum to produce. NOTE ON THE CRITERIA: this pair was ALREADY proposed by prs_link_criteria.py in the inherited tier and scored as a false positive, but on the term 'continuous' - the right pair for the wrong reason. Adding the row converts one FP to a TP without crediting the criterion that found it; the C2 evidence for this pair remains bad evidence. ADDED 2026-09-09 by the h-denomination audit (NEXT item 2), following the Planck -> Compton row that the reconstruction batch found by accident. The shape is systematic, not a one-off: Planck's constant is a term in the later formalism, and the fixture's later entries name neither Planck nor h, so no method reading this prose can recover it. Distinct from the de Broglie -> Schrodinger row, which supplies the wave to be given an equation, not the constant in it."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-09",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Dirac's transformation theory poses the quantum conditions as qp - pq = i(h/2pi), and the relativistic wave equation carries the same constant; the predicted spin magnetic moment and the 2mc^2 antimatter gap are both quantities denominated in h. ADDED 2026-09-09 by the h-denomination audit (NEXT item 2), following the Planck -> Compton row that the reconstruction batch found by accident. The shape is systematic, not a one-off: Planck's constant is a term in the later formalism, and the fixture's later entries name neither Planck nor h, so no method reading this prose can recover it. This is the pair the designed harness re-run drew as a random control (item R15) and reconstructed with an in_literature trace (Dirac, The Principles of Quantum Mechanics, 1930, Ch. IV). It is the second control positive traced to a key gap rather than to a fabrication, and the reason this audit was run at all."
     }
   ]
 }

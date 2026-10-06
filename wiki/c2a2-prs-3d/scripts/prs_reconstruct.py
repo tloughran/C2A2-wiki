@@ -183,8 +183,14 @@ def check_row(r, by_id):
     elif r.get("trace_kind") == "in_literature":
         if not r.get("trace_locator"):
             bad.append("in_literature trace needs a trace_locator")
+    elif r.get("trace_kind") == "none" and r.get("verdict") == "insufficient":
+        # A decline has no trace by construction. Demanding one made every honest
+        # `insufficient` row read as malformed, which is the opposite of the point.
+        # `reconstructed` with trace_kind "none" still fails here, as it must.
+        pass
     else:
-        bad.append("trace_kind must be in_corpus or in_literature")
+        bad.append("trace_kind must be in_corpus or in_literature "
+                   "(or none, on an insufficient verdict)")
     return (not bad), bad
 
 

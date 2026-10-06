@@ -1,0 +1,42 @@
+item  condition          verdict        necessity   checks pair
+R01   target             reconstructed  used        ok     quantum-PRS-06 -> quantum-PRS-09
+R02   control_random     insufficient   none        FAIL   quantum-PRS-10 -> deeplearning-PRS-10
+        ! trace_kind must be in_corpus or in_literature
+R03   target             reconstructed  required    ok     deeplearning-PRS-02 -> deeplearning-PRS-04
+R04   target             reconstructed  required    ok     deeplearning-PRS-01 -> deeplearning-PRS-02
+R05   control_random     insufficient   none        FAIL   quantum-PRS-08 -> deeplearning-PRS-08
+        ! trace_kind must be in_corpus or in_literature
+R06   control_random     insufficient   none        FAIL   quantum-PRS-04 -> deeplearning-PRS-07
+        ! trace_kind must be in_corpus or in_literature
+R07   control_random     insufficient   none        FAIL   quantum-PRS-04 -> deeplearning-PRS-02
+        ! trace_kind must be in_corpus or in_literature
+R08   target             reconstructed  required    ok     deeplearning-PRS-01 -> deeplearning-PRS-03
+R09   control_random     insufficient   none        FAIL   quantum-PRS-07 -> deeplearning-PRS-05
+        ! trace_kind must be in_corpus or in_literature
+R10   control_random     insufficient   none        FAIL   quantum-PRS-04 -> deeplearning-PRS-09
+        ! trace_kind must be in_corpus or in_literature
+R11   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-04
+R12   target             reconstructed  required    ok     quantum-PRS-03 -> quantum-PRS-07
+R13   control_ruled_out  insufficient   none        FAIL   deeplearning-PRS-07 -> deeplearning-PRS-06
+        ! trace_kind must be in_corpus or in_literature
+R14   target             reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-03
+R15   control_random     reconstructed  required    ok     quantum-PRS-01 -> quantum-PRS-09
+R16   control_random     insufficient   none        FAIL   quantum-PRS-09 -> deeplearning-PRS-05
+        ! trace_kind must be in_corpus or in_literature
+R17   control_ruled_out  insufficient   dispensable ok     quantum-PRS-07 -> quantum-PRS-08
+R18   target             reconstructed  used        ok     deeplearning-PRS-03 -> deeplearning-PRS-10
+R19   target             reconstructed  required    ok     quantum-PRS-07 -> quantum-PRS-10
+R20   control_ruled_out  insufficient   none        FAIL   quantum-PRS-01 -> deeplearning-PRS-01
+        ! trace_kind must be in_corpus or in_literature
+R21   control_random     insufficient   none        FAIL   deeplearning-PRS-02 -> deeplearning-PRS-03
+        ! trace_kind must be in_corpus or in_literature
+
+condition             n  reconstructed  insufficient necessity=required
+target                9           100%            0%        78%
+control_ruled_out     3             0%          100%         0%
+control_random        9            11%           89%        11%
+
+VERDICT
+  targets reconstructed  100%
+  controls reconstructed 8%
+  MIXED - separation exists but controls are not clean. Report the rate.
