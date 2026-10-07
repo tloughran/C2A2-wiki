@@ -20,7 +20,7 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (is love/positivity resonance/union a fundamental category? — Fredrickson, Stump, Kastrup)"
 evidence_strength_summary: "Q.32 a.4's claim that sorrow is the accidental cause of pleasure is empirically well-grounded — bittersweet emotional research (Frijda, Larsen) confirms mixed valence; Q.32 a.5 on praise/honor maps onto Fredrickson's high-quality listening evidence (PRS-08, high confidence); Q.33 a.3 on pleasure hindering reason is empirically supported (attentional narrowing). Theological move on universal participation in being is speculative-but-coherent."
 tags: [synthesis, day/077, theme/delightful-sorrow, theme/mixed-valence]
-last_qc_at: "2026-09-28T02:24:24"
+last_qc_at: "2026-10-06T04:18:33"
 last_qc_outcome: "pass"
 ---
 

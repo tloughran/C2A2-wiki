@@ -85,7 +85,7 @@ karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-05 union as final cause of permitted suffering; PRS-11 Franciscan second-person knowledge); *Wandering in Darkness*"
 evidence_strength_summary: "Active-inference and broaden-and-build are empirically robust; intolerance-of-uncertainty as the diagnostic core of clinical anxiety is empirically supported; hemispheric account is clinically grounded; the conscious-realist-monist reframe of appetite as policy-machinery is metaphysically speculative; Wright's inaugurated eschatology and Rohr's contemplative integration are theologically attested."
 tags: [synthesis, day/081, theme/hope, theme/despair, theme/irascible-passions, theme/policy-precision]
-last_qc_at: "2026-09-28T04:22:03"
+last_qc_at: "2026-10-06T04:26:15"
 last_qc_outcome: "pass"
 
 ---

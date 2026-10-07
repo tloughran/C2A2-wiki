@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-137 - Schism - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/137, pars/2, q/38-39]
-last_qc_at: "2026-09-11T12:22:50"
+last_qc_at: "2026-10-06T18:18:14"
 last_qc_outcome: "pass"
 ---
 

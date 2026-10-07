@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-103 - Capital Vice - Contemporary]]"
 tags: [summa, day/103, pars/I-II, q/84-85]
 fidelity_checked: true
-last_qc_at: "2026-09-28T12:24:00"
+last_qc_at: "2026-10-06T14:27:04"
 last_qc_outcome: "pass"
 ---
 # Day 103 — Capital Vice
