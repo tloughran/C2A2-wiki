@@ -148,3 +148,10 @@ Per the sewing agent's call on PROP-2026-08-16-001, recorded here as instructed:
 - `PROP-2026-09-08-032` — Will God Burn up the Earth? Which Anglican Church is right for me, and does Genesis 1 leave room for the \"gap theory\"? (podcast, https://www.premierunbelievable.com/shows/ask-nt-wright-anything) → PRS-64, PRS-65, PRS-66
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+4 triplets added from 2 approved proposals (decision email 2026-10-06): PRS-67, PRS-68, PRS-69, PRS-70.
+
+- `PROP-2026-09-27-001` — Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel" (bonus segment: "Making the Ascension Great Again") (podcast, https://michaelfbird.substack.com/p/the-ending-of-marks-gospel-and-the) → PRS-67
+- `PROP-2026-10-04-002` — Is the Rapture really biblical? Apostles, prophets and sacraments (podcast, https://feeds.megaphone.fm/NSR7466770103#06ca2eda-bb13-11f1-9d55-77c7db007db3) → PRS-68, PRS-69, PRS-70

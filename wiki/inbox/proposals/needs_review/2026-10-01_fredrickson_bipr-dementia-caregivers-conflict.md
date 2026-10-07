@@ -36,3 +36,9 @@ PRS-CANDIDATE-02:
 - **C2A2 core, flag strongly:** this is the closest existing evidence that positivity resonance can be coded *within* a disagreement conversation. Inter-tradition dialogue is structurally a conflict conversation between unequal-capacity partners: a novice in one tradition talking with a mature member. BIPR on conflict talk is a candidate instrument for the "detector" half of the accelerator-detector system.
 - **Stump:** this connects to her dyad-as-causal-whole argument (Natural Law, Metaphysics, and the Creator; PRS on Hobson's mother–infant system) and to *The Image of God*'s treatment of mourning a loved one who is still present but diminished. Dementia caregiving is that case in the flesh. Here the relationship, not either individual, is what predicts the caregiver's state.
 - **McGilchrist:** synchrony and mutual warmth with a partner whose analytic and cognitive capacities are failing points to a register of connection that does not depend on those capacities.
+
+
+## Tom's CHANGE instruction (decision email 2026-10-06, processed 2026-10-07)
+
+This sentence from the CT Signals is false:
+"Inter-tradition dialogue is structurally a conflict conversation between unequal-capacity partners: a novice in one tradition talking with a mature member." This is what education looks like, intra-tradition; intertradition dialogue can happen at any level, but only the mature-to-mature member exchanges have evidentiary relevance regarding what is true and/or good for either of them. (There are other levels of dialogue, such as novice-mature member interetradition dialogue, which may evidence how welcoming a given tradition is to new members, etc.)

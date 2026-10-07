@@ -623,4 +623,40 @@ PRS-66:
   Confidence: Speculative
   Evidence: Publisher's episode description only.
 
-*Total PRS triplets: 66*
+PRS-67:
+  Problem: If "the kingdom of God" names a present, already-inaugurated reality (Wright's core claim), what stops that claim from being annexed by state power or nationalist movements claiming to speak for God or the nation — the failure mode critics point to as "Christian nationalism"?
+  Resource: Ascension theology — Christ's present, bodily enthronement "at the right hand" — read as a live political claim rather than merely an afterlife or ceremonial doctrine.
+  Solution: Wright proposes that a robustly Ascension-shaped Christology functions as a structural check on political idolatry: if Christ, not the state or a movement, already occupies the throne, no earthly authority can claim that seat without committing a theological usurpation — making the observance of the Ascension itself an act of political resistance.
+  Date Added: 2026-10-07
+  Source: Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel" (bonus segment: "Making the Ascension Great Again"); PROP-2026-09-27-001
+  Confidence: Medium (programmatic claim, consistent with the thesis of *Jesus and the Powers*; grounded in direct quotes via Bird's cross-post rather than the full episode audio, so I cannot confirm how far Wright develops the argument's mechanics beyond this framing)
+  Evidence: Direct quotes via Bird's Substack ("Lord of heaven and earth"; "authoritarian leaders, Christian nationalism, and the deification of the state"; "the most radical political act of Christian worship").
+
+PRS-68:
+  Problem: Does Christian hope aim at escape from the material world or at its transformation, and what does 1 Thess 4 actually support?
+  Resource: Wright's re-reading of 1 Thess 4 as royal-arrival ("parousia") imagery: the welcoming party goes out to meet the coming king and escorts him back, rather than leaving with him.
+  Solution: The text describes Christ's return to rescue, rule, and reign over a renewed creation, not the removal of believers from the earth. Eschatology is about earth being renewed, not abandoned.
+  Date Added: 2026-10-07
+  Source: Is the Rapture really biblical? Apostles, prophets and sacraments; PROP-2026-10-04-002
+  Confidence: High (a long-standing Wright position, restated here)
+  Evidence: Show notes ("rescue, rule, reign"; 1 Thess 4 "often misunderstood"). The parousia-as-civic-greeting detail comes from Wright's published work (*Surprised by Hope* ch. 8), not from verified episode content.
+
+PRS-69:
+  Problem: What are sacraments ontologically: memorial ordinances, or something that does real work?
+  Resource: Wright's heaven-and-earth overlap framework applied to baptism and communion.
+  Solution: Sacraments are anticipatory places where heaven and earth come together now, enacted previews of new creation. That makes the ordinance/sacrament debate secondary to what the practices point toward.
+  Date Added: 2026-10-07
+  Source: Is the Rapture really biblical? Apostles, prophets and sacraments; PROP-2026-10-04-002
+  Confidence: Medium
+  Evidence: Show notes ("these practices point towards the biblical hope of heaven and earth coming together"). Wright's exact wording in the episode is not verified.
+
+PRS-70:
+  Problem: How can charismatic or prophetic authority be recognized without becoming authoritarian?
+  Resource: Wright's caution on present-day "apostles and prophets."
+  Solution: Authority claims are tested against the cruciform, servant pattern of the kingdom. Speculative pending the episode content.
+  Date Added: 2026-10-07
+  Source: Is the Rapture really biblical? Apostles, prophets and sacraments; PROP-2026-10-04-002
+  Confidence: Speculative
+  Evidence: One line in the show notes only.
+
+*Total PRS triplets: 70*

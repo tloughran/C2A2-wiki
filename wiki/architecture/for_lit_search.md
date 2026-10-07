@@ -21534,7 +21534,7 @@ PRESUMPTION-888 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-565)
   -level evidence only. What is owed is the same literature read at more than snippet level.
   Priority: Medium.
 
-ASSUMPTION-508 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-575)
+ASSUMPTION-508 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-575) [SEARCHED-15a: 2026-10-07] [SEARCHED-15b: 2026-10-07] [DISPOSITIONED-15c: 2026-10-07 → PREMISE-224]
   **Explicitly owed, not merely eligible:** its intake disposition records MONITOR-at-HIGH "for
   procedural, not evidential" reasons and flags a dedicated 15b search as owed *next run*. That run is
   this one. 15c's own note says the item would very likely mint on a proper pairing. Priority: High.
@@ -22389,21 +22389,21 @@ it here:** MONITOR-600 moves to the monthly lane, next check **2026-10-04**. Cad
 --------------------------------------------------------------------------------
 ### Literature-bearing (8) — the only items this run adds to the search backlog
 
-PRESUMPTION-896 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-585)
+PRESUMPTION-896 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-585) [SEARCHED-15a: 2026-10-07] [SEARCHED-15b: 2026-10-07] [DISPOSITIONED-15c: 2026-10-07 → MONITOR-682]
   **Deliberately under-searched at 2 queries per direction under the reserved-budget protocol, and it is
   MONITOR partly for that reason.** Owed on full budget: the remediation-rate literature (what fraction
   of filed software defects are ever fixed) and a replication check on the moral-licensing source, which
   is one on-point paper from a distant domain (board directors) in a literature with known replication
   problems. Priority: Medium.
 
-PRESUMPTION-897 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-586)
+PRESUMPTION-897 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-586) [SEARCHED-15a: 2026-10-07] [SEARCHED-15b: 2026-10-07] [DISPOSITIONED-15c: 2026-10-07 → REVISE-508]
   **Named by its own intake as the first item to draw if a run has spare budget, and still undrawn.**
   Also 2-query under-searched. Owed: wiki navigability at scale; IR index bloat; retrieval quality as a
   function of corpus size. 15b found NO peer-reviewed source at all last pass, only trade material — the
   adverse reading currently rests on the estate's own series rather than on published work. Priority:
   Medium (intake rule: RAISE TO HIGH if the connected fraction falls below 15%; last reading ~16%).
 
-ASSUMPTION-1244 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-589)
+ASSUMPTION-1244 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-589) [SEARCHED-15a: 2026-10-07] [SEARCHED-15b: 2026-10-07] [DISPOSITIONED-15c: 2026-10-07 → MONITOR-683]
   **The only surviving novelty flag of four nominated in the 2026-08-30 intake, and the highest-value
   literature item in this cohort.** Both directions returned empty on whether contemplative-tradition
   stage frameworks encode normative ascent the way psychometric ones do; two contexts searching opposite
@@ -22411,7 +22411,7 @@ ASSUMPTION-1244 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-589)
   the Cross, Teresa's mansions, the Cloud author). **15c's note that this may be better routed to Agent
   19 than to 15a/15b is carried forward and not decided by 15d.** Priority: High.
 
-ASSUMPTION-1303 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-598)
+ASSUMPTION-1303 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-598) [SEARCHED-15a: 2026-10-07] [SEARCHED-15b: 2026-10-07] [DISPOSITIONED-15c: 2026-10-07 → REVISE-509]
   *Derived question from 15b's DECLARED LITERATURE GAP; the source item itself went INCORPORATE as
   PREMISE-201, limb-split.* Owed and narrow: any before/after measurement of alert-precision improvement in a channel following a
   threshold amendment. 15b searched for this and did not find it; a second null from a second budget is
@@ -25361,3 +25361,14 @@ ITEM: PRESUMPTION-1114 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-04 — empirica
 **Backups:** *.bak.20261006-pre-15pipeline made for all five registers. Lock written LOCKED at start, RELEASED at end.
 **Backlog remaining (fail loud):** queue_scan.py reported 147 bare literature-lane items before this run; 142 remain (mostly 15d re-triggers from 07-26..09-20). Not touched.
 **Independence:** separate subagent contexts, same model family (cf. REVISE-488). 15b reported three fetches refused as "already fetched this session" (shared fetch cache with concurrent 15a); 15b says it saw none of that content.
+
+
+
+## 2026-10-07 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** No new 14a/14b intake: the 2026-10-07 14a/14b run was RUN_INCOMPLETE (changelog/2026-10-07_changes.md; eighth consecutive cloud-twin incomplete run); assumptions.md/presumptions.md unmodified since 2026-10-03 23:45. Per the 10-05/10-06 precedent the run took a backlog batch of 5 from the 15d re-trigger cohort: the four 09-20 literature items (PRESUMPTION-896, PRESUMPTION-897, ASSUMPTION-1244, ASSUMPTION-1303) plus ASSUMPTION-508 from 09-13 (chosen over other 09-13 items because its intake explicitly owed a dedicated 15b pass at High priority). Orchestrator choice, not in the task spec.
+**Dispositions:** DISPOSITION-1046..1050 — 1 INCORPORATE (508 → PREMISE-224), 2 MONITOR (896 → MONITOR-682; 1244 → MONITOR-683), 2 REVISE (897 → REVISE-508; 1303 → REVISE-509).
+**SYSTEMIC-RISK (15b, High):** "deposit without drain" across 896, 897, 1303, 508 — see lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-07_deposit-without-drain.md.
+**Backups:** *.bak.20261007-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
+**Backlog remaining (fail loud):** 142 bare literature-lane items before this run; 137 remain. Not touched.
+**Independence:** separate subagent contexts, same model family (cf. REVISE-488). 15b saw one-line cycle-0 15a verdicts in monitor_queue.md (by instruction); neither read the other's files this run.

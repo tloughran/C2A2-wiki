@@ -2113,3 +2113,45 @@ orchestrator searched Hoffman: nothing new (upcoming 10-16 talk only).
 
 **Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 20 (oldest Fredrickson PROP-2026-09-24-001,
 12 days).
+
+## 2026-10-07 — C2A2 daily run (Wed, McGilchrist + Kastrup specialist day): the 20-decision batch
+
+**Phase 0: one decision email, 19 APPROVE + 1 CHANGE.** `[C2A2-review-decision] 2026-10-06` (thread 1a1127d179da3f14).
+All 20 resolved by `proposal_id` to exactly one file; no fallback, no no-ops. Archive `review/archive/2026-10-07_decisions.md`.
+Email appended to `provenance/decision_emails.json` (17 emails). `review/2026-10-06_review.html` retired to `review/_superseded/`.
+Mark-as-read **succeeded** this run. PROP-2026-10-01-001 (Fredrickson BIPR) -> `needs_review/` with Tom's CHANGE note appended.
+
+**Phase 1: 19 files ingested, 39 triplets, 9 traditions.** Ledger after: approved total=468 ingested=437 decided-zero=29 OPEN=1.
+
+| tradition | added | new ids | total |
+|---|---|---|---|
+| carroll | 3 | PRS-92..94 | 94 |
+| fredrickson | 2 | PRS-43..44 | 44 |
+| friston | 3 | PRS-76..78 | 78 |
+| hawkins | 10 | PRS-67..76 | 76 |
+| levin | 2 | PRS-141..142 | 142 |
+| mcgilchrist | 5 | PRS-81..85 | 85 |
+| rohr | 6 | PRS-103..108 | 108 |
+| wolfram | 4 | PRS-66..69 | 69 |
+| wright | 4 | PRS-67..70 | 70 |
+
+Same deterministic transform as 09-24 (candidate blocks verbatim; `P/R/S` bullet form mapped to Problem/Resource/Solution;
+`Date Added: 2026-10-07`; `Source: <title>; <proposal_id>`; insert before the last `*Total PRS triplets:*` line). Post-check:
+no duplicate ids; closing total = max id in every touched file. `### Ingest 2026-10-07` sections added to all nine `wiki.md`;
+open/solved question lists not re-adjudicated (standing note).
+**Ingested at the cards' own confidence, named:** levin PRS-141..142 (Solutions read "not yet established"; landing-page
+summary only), mcgilchrist PRS-84 (metadata only), wright PRS-68..70 (show notes only). **Not done:** the Levin card's
+instruction to re-point PRS-64..67 to the published version (edits cited Source lines; left for the Levin agent or a human).
+**Count note:** network grep and provenance both read 998. The last recorded figure was 956, so 998 - 39 = 959: three
+triplets arrived outside the daily run between 09-24 and today. Not chased.
+Master / Pattern Detector: CROSS-141..146; 9 signals forwarded; FINDING-095..098; none escalated.
+
+**Phase 2: 0 proposals.** Kastrup covered by specialist (PROP-2026-10-07-001). McGilchrist searched: nothing new in window.
+**Phase 3.** `review/2026-10-07_review.html` (14,043 bytes, 1 proposal), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r1119743085231419340).
+**Phase 5.** `review/2026-10-03_review.html` moved to `review/_superseded/`. 10-04, 10-05, 10-07 retained.
+**Phase 5.5.** OK: 6,985,984 bytes; triplets 998; cards 511, dates 141, responses 17; 19 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1683 signals (+72), 90 pairs, span to 2026-10-06, stale_days 1, no WARN; qc_trace.csv promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network: 998 PRS / 146 CROSS / 98 FINDING.** Pending = 1 (Kastrup PROP-2026-10-07-001). needs_review +1 (PROP-2026-10-01-001).

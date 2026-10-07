@@ -221,3 +221,12 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-23-002` — Corporate Violence Met by Corporate Good (blog, https://cac.org/daily-meditations/corporate-violence-met-by-corporate-good/) → PRS-101, PRS-102
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+6 triplets added from 4 approved proposals (decision email 2026-10-06): PRS-103, PRS-104, PRS-105, PRS-106, PRS-107, PRS-108.
+
+- `PROP-2026-09-27-003` — An Influential Teacher (blog, https://cac.org/daily-meditations/an-influential-teacher/) → PRS-103
+- `PROP-2026-09-27-002` — The Myth of Redemptive Violence (blog, https://cac.org/daily-meditations/the-myth-of-redemptive-violence/) → PRS-104
+- `PROP-2026-10-04-003` — God's Resting Place (blog, https://cac.org/daily-meditations/gods-resting-place/) → PRS-105, PRS-106
+- `PROP-2026-10-04-001` — Thérèse of Lisieux: The Way of Love: Weekly Summary (blog, https://cac.org/daily-meditations/therese-of-lisieux-the-way-of-love-weekly-summary/) → PRS-107, PRS-108

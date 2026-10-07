@@ -183,3 +183,10 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-19-001` — Personal Update & AMA [September 18, 2026] (talk, https://www.youtube.com/watch?v=zF5enEPkoNA) → PRS-64, PRS-65
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+4 triplets added from 2 approved proposals (decision email 2026-10-06): PRS-66, PRS-67, PRS-68, PRS-69.
+
+- `PROP-2026-09-29-003` — What's the Future for Pure Math Research in the Age of AI? (blog, https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/) → PRS-66, PRS-67, PRS-68
+- `PROP-2026-10-03-001` — History of Science & Technology Q&A (September 23, 2026) (talk, https://www.youtube.com/watch?v=eYeOCXRkbSQ) → PRS-69

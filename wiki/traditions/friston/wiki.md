@@ -215,3 +215,9 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-14-004` — Climate homeorhesis / planetary agency via active inference in a biosphere-climate system (exact title UNRESOLVED — see Provenance Note) (paper, UNRESOLVED) → PRS-74, PRS-75
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+3 triplets added from 1 approved proposals (decision email 2026-10-06): PRS-76, PRS-77, PRS-78.
+
+- `PROP-2026-10-05-001` — Inferential planning in the frontal cortex (paper, https://www.biorxiv.org/content/10.1101/2025.11.26.690672.full.pdf) → PRS-76, PRS-77, PRS-78

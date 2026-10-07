@@ -8046,3 +8046,28 @@ PREMISE-223:
   Status: ACTIVE
   Consistency: compatible with PREMISE-174 (TMS belief, withdrawal by supersession); no contradiction found.
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+
+PREMISE-224:
+  Date validated: 2026-10-07
+  Source item: ASSUMPTION-508 (via 15d re-trigger of MONITOR-575) | DISPOSITION-1050
+  Statement: (1) A source known only by title/venue is admitted at Speculative grade with a
+    verify-before-ingest flag — neither fabricated into content nor silently excluded. (2) The flag must
+    carry a discharge path: an owner, an age, and a re-open condition; a flag whose re-open condition has
+    been met but which is not discharged within one cadence cycle is reported as a FAIL, not left standing.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: JMIR Mental Health 2025 e80371 [fetched by 15a] — 19.9% of GPT-4o citations
+    fabricated, ~28% for low-visibility topics; Simkin & Roychowdhury 2003 [search-result] — ~20% of
+    citers read the original.
+  Challenges noted: 15b (Weak-Moderate) — Hopewell 2007 Cochrane [search-result] (exclusion biases; not
+    applicable, 508 admits rather than excludes); Redi et al. 2019 WWW [fetched intro] — 350k+ standing
+    {citation needed} flags: flags accumulate without a drain. Adopted as clause (2).
+  Confidence: High on (1); Moderate on (2)
+  Applicable to: McGilchrist-002 and any title/venue-only ingest; Speculative-grade flags estate-wide.
+    Open in-house: McGilchrist-002 re-open condition met 2026-08-15, no discharge found (53 days); possible
+    duplicate ingest as PRS-47 / PROP-2026-06-24-002 — UNVERIFIED, needs checking.
+  Re-check due: 2027-01-05 (Quarterly; via 15d)
+  Status: ACTIVE
+  Consistency: specialises PREMISE-049 (verify-before-trust; quarantine-with-revisit); no contradiction found.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-508_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-508_retrigger-2026-10-07_against.md

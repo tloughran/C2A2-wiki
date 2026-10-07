@@ -691,7 +691,34 @@ PRS-75:
   Confidence: Speculative
   Evidence: The framing of homeorhesis as "non-equilibrium steady-state dynamics that underlie Earth's long-term habitability." The connection to the path-integral FEP is this agent's inference, not a stated claim of the paper.
 
-*Total PRS triplets: 75*
+PRS-76:
+  Problem: Frontal cortex represents every element of a planned sequence simultaneously, in separable neural subspaces ("activity slots"), which contradicts classical serial and competitive-queuing accounts of planning. Why would the brain use this format?
+  Resource: A hierarchical active-inference generative model whose upper level contains one copy of state/action beliefs per time step, updated by variational message passing (belief-propagation style).
+  Solution: Simultaneous slot coding falls out of inferring a plan: for past, present and anticipated states to pass messages to each other in parallel, each must be represented at the same time. The format is a precondition of inference, not an added queuing mechanism.
+  Date Added: 2026-10-07
+  Source: Inferential planning in the frontal cortex; PROP-2026-10-05-001
+  Confidence: High
+  Evidence: Abstract (bioRxiv, read directly) states the model reproduces "the simultaneous activation of multiple plan elements, the emergence of (almost) orthogonal 'memory' subspaces, and their reuse across forward and backward sequence tasks." The Cell Reports discussion section, as summarised by a secondary news source (ebiotrade.com, Chinese-language), states the "necessary precondition" argument explicitly.
+
+PRS-77:
+  Problem: Planning, sequence working memory and motor preparation are usually modelled by separate mechanisms.
+  Resource: The same inferential-planning model applied across three task families, with subspace analysis (PCA, principal angles, participation ratio) matched to published primate recordings.
+  Solution: One inference process accounts for all three; planning and working memory are "two sides of the same coin."
+  Date Added: 2026-10-07
+  Source: Inferential planning in the frontal cortex; PROP-2026-10-05-001
+  Confidence: Medium
+  Evidence: Abstract claims the framework "unifies previously disparate findings on planning, working memory, and motor preparation." Medium because the fit is to previously published data, not new recordings, and execution of the plan was not simulated (a limitation the authors state, per the secondary summary).
+
+PRS-78:
+  Problem: Under uncertainty about sequence length or direction, how should plan representations evolve before the ambiguity resolves?
+  Resource: Simulations of variable-length forward vs. backward recall and a late direction cue.
+  Solution: The model predicts fast commitment to the first element in forward recall, held-off commitment in backward recall until all targets are seen, and balanced forward/backward hypotheses until the cue arrives. These are testable predictions about active-inference dynamics.
+  Date Added: 2026-10-07
+  Source: Inferential planning in the frontal cortex; PROP-2026-10-05-001
+  Confidence: Speculative
+  Evidence: Prediction-level only; drawn from the secondary summary of the results section. Primary full text not read in this pass.
+
+*Total PRS triplets: 78*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

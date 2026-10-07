@@ -753,7 +753,52 @@ PRS-80:
   Confidence: High (as a procedural instruction; it asserts nothing about content)
   Evidence: This page resolved cleanly on 2026-09-16 with full metadata; the "Recent Posts" sidebar lists the Ralston series as current site content.
 
-*Total PRS triplets: 80*
+PRS-81:
+  Problem: If AI can do well much of what people thought was their distinctive intellectual work, does that correct the left-hemisphere imbalance by pushing people back onto embodied, right-hemisphere ways of knowing, or make it worse?
+  Resource: The hemisphere hypothesis, used as a prediction: the left hemisphere's "mentality" will be *incubated* by AI rather than recede. Together with the Heideggerian presence (right) vs. re-presentation (left) distinction.
+  Solution: AI mainly strengthens re-presentation — our model of reality, which "AI will consolidate and flesh out" — so the imbalance deepens, unless the shock "wakes us up to what we're about to lose." Only the second route is a possible correction, and it depends on embodied practice (working with the hands, meeting "the recalcitrance of the real world").
+  Date Added: 2026-10-07
+  Source: Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversation with Freddie Sayers); PROP-2026-09-29-002
+  Confidence: Medium
+  Evidence: Sayers asks directly whether AI might correct the imbalance; McGilchrist answers "I don't think it will… I think it will be incubated by AI," then names the waking-up route as the only way it could.
+
+PRS-82:
+  Problem: The utopian case for AI says it will free people from "soul-destroying" repetitive work so they can develop themselves. Is that true?
+  Resource: A principle he says has "grown in importance in my philosophy": nothing creative comes into being without resistance. He adds a double reading of "bond" (a fetter, and a tie of kinship, nature and God).
+  Solution: Taking away friction also takes away the conditions for growth. Work we dismiss as dull may carry meaning, and unemployment brings misery and loss of meaning. So the offer of liberation is a Faustian bargain: "it comes offering freedom, and I think it brings tyranny."
+  Date Added: 2026-10-07
+  Source: Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversation with Freddie Sayers); PROP-2026-09-29-002
+  Confidence: Medium
+  Evidence: Explicit answer to Sayers's utopian-liberation question; the resistance principle and the two senses of "bond" are both stated in the transcript.
+
+PRS-83:
+  Problem: Why can't AI ethics be handled with utility and harm-avoidance alone? What does the current framing leave out?
+  Resource: Max Scheler's hierarchy of values: sinnliche Werte (pleasure, utility) → Lebenswerte (magnanimity, courage, fidelity) → geistige Werte (spiritual/intellectual) → das Heilige (the Holy). He adds his own point that only the lowest tier is self-centred, while every tier above it is relational.
+  Solution: Reductive materialism has inverted the pyramid, so that the good, true, beautiful and sacred "only actually cash out when they have utility." An ethics that works inside utility can't reach the relational values, so it will miss what matters.
+  Date Added: 2026-10-07
+  Source: Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversation with Freddie Sayers); PROP-2026-09-29-002
+  Confidence: Medium-High (for this being McGilchrist's stated position; the Scheler exposition is his)
+  Evidence: Extended passage near the close. It includes the report that Mrinank Sharma, who left Anthropic, wrote to him that "what really matters to me is what you have to say about value."
+
+PRS-84:
+  Problem: McGilchrist's claim that wholes/forms are ontologically prior to parts has lacked a laboratory-facing counterpart; it rests on phenomenology, neuropsychology and philosophy
+  Resource: Levin's "Platonic space" paper, discussed directly with McGilchrist — the proposal that morphogenetic and cognitive systems draw on a space of forms not reducible to their physical parts
+  Solution: A shared frame in which McGilchrist's "whole before parts" and Levin's "forms ingressing into matter" are tested against each other in dialogue, giving McGilchrist's metaphysics a candidate empirical research program
+  Date Added: 2026-10-07
+  Source: Conversation of Michael Levin with Iain McGilchrist #2; PROP-2026-09-30-001
+  Confidence: Speculative (content not verified from transcript this run)
+  Evidence: Search metadata describes the conversation as "on the topic of Michael Levin's recent paper on the Platonic Space"; the specific positions each takes must be confirmed from the recording
+
+PRS-85:
+  Problem: McGilchrist diagnoses a left-hemisphere takeover of modern culture but rarely commits to which institutional or political arrangements would counter it
+  Resource: The "think spiral" model of right→left→right hemispheric iteration, applied by Klein and McGilchrist to social order
+  Solution: Classical liberalism is proposed as the arrangement that best keeps the "master" (right hemisphere) in charge, because it relies on emergent order and inner restraint (conscience, propriety) over top-down design
+  Date Added: 2026-10-07
+  Source: Think Spiral: The Divided Brain and Classical Liberalism; PROP-2026-09-30-002
+  Confidence: Medium (peer-reviewed and co-authored; the political conclusion's attribution to McGilchrist vs. Klein is uncertain)
+  Evidence: Abstract/summary: the paper "elaborate[s] why McGilchrist's concerns might lead us to look to classical liberalism as the best way to avoid the traps of the left hemisphere, to invigorate the health of the right hemisphere, and to cope with modernity"
+
+*Total PRS triplets: 85*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

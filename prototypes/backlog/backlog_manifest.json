@@ -1,5 +1,13 @@
 [
  {
+  "card": "PROP-2026-09-30-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2020",
+  "title": "Think Spiral: The Divided Brain and Classical Liberalism",
+  "file": "inbox/proposals/approved/2026-09-30_mcgilchrist_think-spiral-classical-liberalism.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-11-001",
   "tradition": "stump",
   "source_date": "2022",
@@ -69,6 +77,14 @@
   "source_date": "2024-10-20",
   "title": "What Emergence Can Possibly Mean",
   "file": "inbox/proposals/approved/2026-04-13_carroll_what-emergence-can-possibly-mean.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-24-001",
+  "tradition": "fredrickson",
+  "source_date": "2024-12-12",
+  "title": "Can an Algorithm Tell How Spiritual You Are? Using Generative Pretrained Transformers for ",
+  "file": "inbox/proposals/approved/2026-09-24_fredrickson_gpt-measures-spirituality-from-text.md",
   "processed": false
  },
  {
@@ -205,6 +221,14 @@
   "source_date": "2025-02-12",
   "title": "As One and Many: Relating Individual and Emergent Group-Level Generative Models in Active ",
   "file": "inbox/proposals/approved/2026-06-22_friston_as-one-and-many.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-30-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2025-03-04",
+  "title": "Conversation of Michael Levin with Iain McGilchrist #2",
+  "file": "inbox/proposals/approved/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space.md",
   "processed": false
  },
  {
@@ -645,6 +669,14 @@
   "source_date": "2026-02",
   "title": "Multi-Scale Longevity: Defeating Aging from Cells to Embodied Human Minds, and the Future ",
   "file": "inbox/proposals/approved/2026-07-06_levin_multi-scale-longevity.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-28-001",
+  "tradition": "levin",
+  "source_date": "2026-02",
+  "title": "Machines all the way up and cognition all the way down: Updating the machine metaphor in b",
+  "file": "inbox/proposals/approved/2026-09-28_levin_machines-all-the-way-up-final-version.md",
   "processed": false
  },
  {
@@ -2608,6 +2640,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-05-001",
+  "tradition": "friston",
+  "source_date": "2026-08",
+  "title": "Inferential planning in the frontal cortex",
+  "file": "inbox/proposals/approved/2026-10-05_friston_inferential-planning-frontal-cortex.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-02-001",
   "tradition": "rohr",
   "source_date": "2026-08-01",
@@ -3072,6 +3112,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-06-001",
+  "tradition": "hawkins",
+  "source_date": "2026-09",
+  "title": "08/2026 - Project Proposals for the Rome Focus Week",
+  "file": "inbox/proposals/approved/2026-10-06_hawkins_rome-focus-week-proposals.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-02-004",
   "tradition": "kastrup",
   "source_date": "2026-09-01",
@@ -3288,11 +3336,35 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-03-001",
+  "tradition": "wolfram",
+  "source_date": "2026-09-23",
+  "title": "History of Science & Technology Q&A (September 23, 2026)",
+  "file": "inbox/proposals/approved/2026-10-03_wolfram_history-qa-sept23-ai-expectations.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-23-002",
   "tradition": "rohr",
   "source_date": "2026-09-23",
   "title": "Corporate Violence Met by Corporate Good",
   "file": "inbox/proposals/approved/2026-09-23_rohr_corporate-violence-corporate-good.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-27-002",
+  "tradition": "rohr",
+  "source_date": "2026-09-24",
+  "title": "The Myth of Redemptive Violence",
+  "file": "inbox/proposals/approved/2026-09-27_rohr_myth-of-redemptive-violence.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-29-001",
+  "tradition": "hawkins",
+  "source_date": "2026-09-24",
+  "title": "Two Years of the Thousand Brains Project: What We Accomplished and Where We Are Today",
+  "file": "inbox/proposals/approved/2026-09-29_hawkins_tbp-two-year-report.md",
   "processed": false
  },
  {
@@ -3304,11 +3376,91 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-29-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-09-24",
+  "title": "Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversatio",
+  "file": "inbox/proposals/approved/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-27-001",
+  "tradition": "wright",
+  "source_date": "2026-09-25",
+  "title": "Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mar",
+  "file": "inbox/proposals/approved/2026-09-27_wright_ascension-political-theology.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-27-003",
+  "tradition": "rohr",
+  "source_date": "2026-09-27",
+  "title": "An Influential Teacher",
+  "file": "inbox/proposals/approved/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-29-003",
+  "tradition": "wolfram",
+  "source_date": "2026-09-28",
+  "title": "What's the Future for Pure Math Research in the Age of AI?",
+  "file": "inbox/proposals/approved/2026-09-29_wolfram_future-pure-math-age-of-ai.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-30-003",
+  "tradition": "carroll",
+  "source_date": "2026-09-28",
+  "title": "369 | Gregg Caruso on Living Well Without Free Will",
+  "file": "inbox/proposals/approved/2026-09-30_carroll_mindscape-369-caruso-free-will.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-04-002",
+  "tradition": "wright",
+  "source_date": "2026-09-28",
+  "title": "Is the Rapture really biblical? Apostles, prophets and sacraments",
+  "file": "inbox/proposals/approved/2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-06-003",
+  "tradition": "hawkins",
+  "source_date": "2026-09-29",
+  "title": "2026/08 - Rome Focus Week Final Presentations",
+  "file": "inbox/proposals/approved/2026-10-06_hawkins_rome-focus-week-final-presentations.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-04-001",
+  "tradition": "rohr",
+  "source_date": "2026-10-03",
+  "title": "Th\u00e9r\u00e8se of Lisieux: The Way of Love: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-22-003",
   "tradition": "hoffman",
   "source_date": "2026-10-03",
   "title": "Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ)",
   "file": "inbox/proposals/approved/2026-09-22_hoffman_hopewell-interface-we-call-reality.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-04-003",
+  "tradition": "rohr",
+  "source_date": "2026-10-04",
+  "title": "God's Resting Place",
+  "file": "inbox/proposals/approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-06-002",
+  "tradition": "hawkins",
+  "source_date": "2026-10-05",
+  "title": "08/2026 - Attention in Monty (a Hackathon Prototype)",
+  "file": "inbox/proposals/approved/2026-10-06_hawkins_attention-in-monty-hackathon-prototype.md",
   "processed": false
  }
 ]

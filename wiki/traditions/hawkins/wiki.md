@@ -152,3 +152,12 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-22-002` — 2026/07 - Q3 Roadmap and Q2 Review (talk, https://forum.thousandbrains.org/t/2026-07-q3-roadmap-and-q2-review/1159) → PRS-63, PRS-64, PRS-65, PRS-66
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+10 triplets added from 4 approved proposals (decision email 2026-10-06): PRS-67, PRS-68, PRS-69, PRS-70, PRS-71, PRS-72, PRS-73, PRS-74, PRS-75, PRS-76.
+
+- `PROP-2026-09-29-001` — Two Years of the Thousand Brains Project: What We Accomplished and Where We Are Today (paper, https://thousandbrains.org/wp-content/uploads/2026/09/TBP_2Year_Report.pdf) → PRS-67, PRS-68, PRS-69
+- `PROP-2026-10-06-002` — 08/2026 - Attention in Monty (a Hackathon Prototype) (talk, https://forum.thousandbrains.org/t/08-2026-attention-in-monty-a-hackathon-prototype/1219) → PRS-70, PRS-71
+- `PROP-2026-10-06-003` — 2026/08 - Rome Focus Week Final Presentations (talk, https://www.youtube.com/watch?v=QsTJY-83EUg (discussion: https://forum.thousandbrains.org/t/2026-08-rome-focus-week-final-presentations/1215)) → PRS-72, PRS-73
+- `PROP-2026-10-06-001` — 08/2026 - Project Proposals for the Rome Focus Week (talk, https://thousandbrains.org/learn/videos-and-podcasts/) → PRS-74, PRS-75, PRS-76

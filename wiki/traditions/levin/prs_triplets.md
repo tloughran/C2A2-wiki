@@ -1271,7 +1271,25 @@ PRS-140:
   Confidence: Speculative
   Evidence: The authors are explicit that this is not settled: additional defining features of sensitization "were not tested or quantified," the anticipation results after trains 1 and 2 point in *opposite* directions and require "additional interpretation," and simpler explanations such as membrane damage accumulation have yet to be ruled out. Treat as an open experimental question, not a finding.
 
-*Total PRS triplets: 140*
+PRS-141:
+  Problem: Does the "cognition all the way down" continuum extend below the level of the whole cell — i.e., is there a principled sub-cellular case for the same competency-continuum claim PRS-64–67 make at the cell-to-tissue scale?
+  Resource: A "fully developed section on bioelectric patterning and sub-cellular cognition" reported in the final published version, not present (or not prominent) in the preprint the wiki already ingested.
+  Solution: Not yet established from primary text — flagged as a scope-expansion claim pending verification.
+  Date Added: 2026-10-07
+  Source: Machines all the way up and cognition all the way down: Updating the machine metaphor in biology; PROP-2026-09-28-001
+  Confidence: Speculative
+  Evidence: WebFetch's rendering of the ScienceDirect metadata page names this section; the primary PDF has not been read, so the claim's content and strength are unverified. Do not ingest above Speculative without the full text.
+
+PRS-142:
+  Problem: Does the cognition-continuum framework (PRS-64–67) cash out in concrete, translatable therapeutic strategies, or does it remain an interpretive/descriptive claim about existing biology?
+  Resource: An "expanded discussion of therapeutic applications and future research directions" reported in the final published version.
+  Solution: Not yet established from primary text.
+  Date Added: 2026-10-07
+  Source: Machines all the way up and cognition all the way down: Updating the machine metaphor in biology; PROP-2026-09-28-001
+  Confidence: Speculative
+  Evidence: Same secondary-summary caveat as PRS-CANDIDATE-01 — the ScienceDirect page itself was not read directly (see Provenance Note); this is a description of a description.
+
+*Total PRS triplets: 142*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

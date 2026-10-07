@@ -25231,3 +25231,36 @@ MONITOR-681:
   What would change the disposition: (a) ISA-18.2 / IEC 62682 text (paywalled); (b) in-house consumer audit of every reader of the status field (MONITOR-605 (b)).
   Monitoring cadence: Weekly (default)
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+
+## Intake 2026-10-07 — from Agent 15c (re-trigger cycle 1; MONITOR-682..683)
+
+MONITOR-682:
+  Source item: PRESUMPTION-896 (DISPOSITION-1046; supersedes MONITOR-585) | Item type: PRESUMPTION (unstated)
+  Statement watched: Filing a defect discharges the obligation to fix it.
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Why monitored: literature limb discharged — both directions now discount moral licensing (Kuper & Bott 2019,
+    bias-corrected d≈0) and agree filed defects are acted on at ~1/3 rates with long lags (search-result level).
+    The disposition now turns on in-house data only.
+  What would change the disposition: closure-capacity number (ASSUMPTION-1248) / filed→fixed ratio and age.
+    Open set > capacity, or no filing-triggered remediation stage → REVISE without further search.
+  Priority: Medium | Cadence: Weekly | Cycle: 1 | Next 15d check: 2026-10-11
+  Routing note for 15d: re-queue as [QUEUED-EMPIRICAL], not literature. Member of SYSTEMIC-RISK 2026-10-07 (deposit without drain).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-896_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-896_retrigger-2026-10-07_against.md
+
+MONITOR-683:
+  Source item: ASSUMPTION-1244 (DISPOSITION-1048; supersedes MONITOR-589) | Item type: ASSUMPTION (stated)
+  Statement watched: A maturity model (Pathway 35) is an ascending frame by construction.
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak), NOVELTY narrowed | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Why monitored: NOVELTY retained (no comparative contemplative-vs-psychometric scholarship). Contemplative
+    schemes rank stages yet are non-monotonic (descent as engine; movement between rooms — Teresa primary).
+    Ascent = default, not entailment. Correction: Rohr's falling is the entry to the ascent frame, not a
+    counterexample to it.
+  What would change the disposition: Agent 19 reading of critical editions (John of the Cross, Teresa, Cloud);
+    a reader test on a bare "Stage: N" line; a "revisit test" on Pathway 35. → INCORPORATE narrowed premise or
+    REVISE the labelling.
+  Priority: High | Cadence: Weekly | Cycle: 1 | Next 15d check: 2026-10-11
+  Routing note for 15d: route to Agent 19 (tradition wiki), not 15a/15b, unless Agent 19 declines.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1244_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1244_retrigger-2026-10-07_against.md

@@ -597,7 +597,43 @@ PRS-65:
   Confidence: Speculative
   Evidence: Count comes from the source description. **Neither project quality nor "alignment" has been assessed**, and a raw count is not evidence of research value — it is the denominator one would need before asking about value.
 
-*Total PRS triplets: 65*
+PRS-66:
+  Problem: If AI and automated computation can generate unlimited new theorems, what makes something *mathematics* as opposed to raw output?
+  Resource: The ruliad plus observer theory: human mathematics is a sampling of pockets of computational reducibility that finite minds can put into narratives. This parallels how fluid mechanics sits above molecular dynamics.
+  Solution: Mathematics is defined by which questions are asked and which concepts are chosen, not by derivation as such. Theorems produced ruliologically, or chosen by an AI at random, are "born alien" until they connect to shared human concepts. Setting goals therefore has to come "from outside the system," from us.
+  Date Added: 2026-10-07
+  Source: What's the Future for Pure Math Research in the Age of AI?; PROP-2026-09-29-003
+  Confidence: High (as Wolfram's stated position)
+  Evidence: Sections "What Is Math Anyway?", "The Goals of Math", "The Aesthetics of Math."
+
+PRS-67:
+  Problem: Autoformalization (having AI turn human-level math into proof-assistant code) can yield a verified proof of the wrong statement. The AI finds a "squirrely" reading it can prove, and the low-level formal output is too verbose for a human to catch this.
+  Resource: A planned extension of Wolfram Language to pure-math constructs, meant as a high-level, human-readable computational notation.
+  Solution: Make the formal target something humans can read and check. The workflow is AI → Wolfram Language representation → human review → compute or prove. This makes pure math "broadly computational," and papers could carry an executable version of every statement.
+  Date Added: 2026-10-07
+  Source: What's the Future for Pure Math Research in the Age of AI?; PROP-2026-09-29-003
+  Confidence: Medium (announced as "in the middle of a large effort"; not yet shipped)
+  Evidence: Sections "The Power and Challenge of Formalization" and "A New High-Level Language for Pure Mathematics."
+
+PRS-68:
+  Problem: Why is pure mathematics worth doing when its applications are unknown, and does pure math "converge" mysteriously on the natural sciences?
+  Resource: The ruliad's many slices of computational reducibility, each of which in effect defines its own possible science.
+  Solution: Reverse the usual story. Pure math supplies ways of thinking, and science is then built with them ("the science is developed because the pure math exists"). No successful piece of pure math is fundamentally useless, since each one marks a pocket of reducibility that is raw material for some science, possibly an alien one.
+  Date Added: 2026-10-07
+  Source: What's the Future for Pure Math Research in the Age of AI?; PROP-2026-09-29-003
+  Confidence: Medium-High
+  Evidence: Section "Why Do Pure Math Anyway?"
+
+PRS-69:
+  Problem: Why did even a computation-first thinker fail to predict deep-learning success, and what does that imply about forecasting AI capability?
+  Resource: Wolfram's retrospective on neural nets (1982-83 exploration; 2011-12 and 2022 surprises) plus his stated plan to apply more ruliological study to AI before commenting
+  Solution: No resolution; an explicit deferral to future "science" on AI. Marks a pending research stance, not an advance.
+  Date Added: 2026-10-07
+  Source: History of Science & Technology Q&A (September 23, 2026); PROP-2026-10-03-001
+  Confidence: Speculative
+  Evidence: Transcript: "Nobody expected what happened with image identification in 2011, 2012. Nobody expected what happened with ChatGPT in 2022"; "a lot that's more marketing than reality"; wants "to do a little bit more science before I say more."
+
+*Total PRS triplets: 69*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

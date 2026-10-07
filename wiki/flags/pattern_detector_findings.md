@@ -1300,3 +1300,33 @@ The card said "do not ingest until the citation resolves" (no title, no DOI, con
 The Rohr agent has flagged Wright on five cards in two weeks, each time as "the Wright agent should check." No Wright proposals exist for these weeks. The comparison the Rohr agent keeps setting up (interior vs. corporate Paul) cannot be made from the index as it stands, because only one reading is in it. This is the same shape as FINDING-075 (Wright retrieval failures capping confidence). Not escalated: it is a gap in collection, not a result.
 
 **Not escalated this run, with reason.** CROSS-136 (Hoffman and Friston in one room) is the most interesting item in the batch, but the source is from February, it is ingested from one side only, and FINDING-064 already warns that "restriction" is a homonym across these two programs. Flagging it before the Friston side exists would repeat the pattern of flagging an unanswered question.
+
+## FINDING-095 — Tom's CHANGE note is a design rule for the detector, not a correction to one card
+
+**Date:** 2026-10-07 · **Source signals:** decision email 2026-10-06 on PROP-2026-10-01-001
+**Confidence:** High (Tom's own stated position) · **Recommended action:** write the rule into the proposer and pattern-detector instructions, so cards stop framing inter-tradition dialogue as novice-versus-mature
+
+The rule: dialogue across traditions can happen at any level of maturity, but only **mature-to-mature** exchanges have evidentiary weight on what is true and/or good for either party. Novice-to-mature dialogue inside one tradition is education. Across traditions, it can evidence something else, such as how welcoming a tradition is to new members. This sorts the detector's observations into strata with different evidential uses. It also constrains how FINDING-091's rival prediction (LLM mediation driving dependence) should be tested: dependence transitions among novices and revision events among mature members are different observables, and only the second bears on truth. The card is in `needs_review/` with the instruction appended; nothing from it was ingested.
+
+## FINDING-096 — An LLM reading tradition-constituted interior quality from prose has been validated, narrowly
+
+**Date:** 2026-10-07 · **Source signals:** PROP-2026-09-24-001 (fredrickson PRS-43..44)
+**Confidence:** Medium · **Recommended action:** cite as a precedent in the instrument design; do not lean on the bias null
+
+GPT-4, given an explicit working definition, matched trained human coders on spirituality ratings (κ ≥ 0.95 in Study 1; GPT–human r = 0.85 in Study 2), and its scores predicted outcomes beyond self-report. That is the operation the accelerator/detector needs to tell whether someone is becoming competent in a second tradition. Two limits: the construct was given to the model as a definition, so this is coding against a rubric, not discovery; and the authors say Study 2 was not powered to detect demographic or religious bias. McGilchrist's prediction (a left-hemisphere system can categorize markers of the transcendent but not apprehend it) is now testable against this design. Not escalated: one study, narrow claim.
+
+## FINDING-097 — The Rohr–Wright axis now has two sides, and the right move is two entries: one convergence, one tension
+
+**Date:** 2026-10-07 · **Source signals:** PROP-2026-09-27-001/-002/-003, PROP-2026-10-04-001/-002/-003; CROSS-141, CROSS-142
+**Confidence:** Medium · **Recommended action:** none beyond keeping the tension entries separate from the convergence
+
+FINDING-094 recorded Pauline material arriving from Rohr only. Four Wright triplets landed this run (Ascension; Rapture, sacraments, prophets), so the axis has two sides, though still not on Paul. The batch contains both a convergence (CROSS-141, empire versus present reign) and two tensions (CROSS-142, sacraments and grace-versus-effort). Both proposers asked for the tensions not to be blended. They were kept apart. FINDING-094's narrower ask (Wright on Paul, September 2026) stays open.
+
+## FINDING-098 — Evidence weather for this batch, stated so the counts are not read as uniform
+
+**Date:** 2026-10-07 · **Source signals:** 19 cards, 39 triplets
+**Confidence:** High · **Recommended action:** Tom states the Hawkins authorship rule (FINDING-090/-092); a Mac-side retrieval of the Levin & Watson final PDF
+
+Six triplets rest on unread primary text: levin PRS-141..142 (a ScienceDirect landing-page summary; both Solutions read "not yet established"), mcgilchrist PRS-84 (search metadata only), wright PRS-68..70 (show notes only). Ten Hawkins-tradition triplets (PRS-67..76) are TBP team output, which makes 41 of that file's 76 triplets rest on the unstated rule. The Levin card's own instruction to re-point PRS-64..67 from the preprint to the published version was **not** done this run: it edits Source lines on existing triplets that other files cite, so it is left for the Levin agent or a human.
+
+**Not escalated this run, with reason.** CROSS-143 (Wolfram × McGilchrist) is the strongest item, but it is a convergence on a claim both already held, and they have met in person before (Ralston debate). CROSS-144 is a real rival-mechanism question, but nobody has yet stated what recordings would separate the two accounts. Flagging either now would be flagging a question, not a result.

@@ -400,4 +400,22 @@ PRS-42:
   Confidence: Speculative
   Evidence: UNC Research (2023-09-12), "Social media health intervention wins $3.25M in NCI funding," linked from the PEP Lab research page; UNC Lineberger directory listing for Fredrickson. Marked Speculative because this is a claim about the tradition's institutional direction inferred from funding, not a claim the sources make.
 
-*Total PRS triplets: 42*
+PRS-43:
+  Problem: Manual text analysis is the gold standard for nuanced psychological constructs, but it is slow and expensive (weeks of trained labor), and fixed-response questionnaires miss how people describe their own inner lives — several participants wrote in to object that the standard spirituality scales mischaracterized their experience.
+  Resource: GPT-3.5/GPT-4 prompted with an explicit working definition (Piedmont 1999: the inclination to stand outside one's immediate time and place and see life from a broader, interconnected perspective) and an observer-report version of the Spiritual Transcendence Scale.
+  Solution: LLM coding matches trained human coders on reliability and on validity against independent measures, at a tiny fraction of the cost, and adds predictive power over self-report (incremental validity for religiousness, meaning in life, depression, anxiety).
+  Date Added: 2026-10-07
+  Source: Can an Algorithm Tell How Spiritual You Are? Using Generative Pretrained Transformers for Sophisticated Forms of Text Analysis; PROP-2026-09-24-001
+  Confidence: High (for the narrow claim, in these samples)
+  Evidence: Study 1 κ ≥ 0.95 GPT-4 vs humans; Study 2 GPT–human r = 0.85; equal correlations with self-report (z = 0.11, p = .91) and behavioral task (z = −0.90, p = .37).
+
+PRS-44:
+  Problem: If LLMs rate interior states, do they carry demographic or religious bias — scoring Christians differently from members of other religions or the non-religious?
+  Resource: Moderation tests: regressions checking whether age, sex, race, education, or religious affiliation change how GPT-4's ratings track self-report and behavior.
+  Solution: No moderation found — a first-pass sign that GPT-4 scored spirituality consistently across groups.
+  Date Added: 2026-10-07
+  Source: Can an Algorithm Tell How Spiritual You Are? Using Generative Pretrained Transformers for Sophisticated Forms of Text Analysis; PROP-2026-09-24-001
+  Confidence: Speculative
+  Evidence: The authors themselves say Study 2 was not powered to detect small interactions; samples were convenience samples and disproportionately female; only one human rater in Study 2; the studies were not preregistered. "No detected bias" here is weak evidence of no bias.
+
+*Total PRS triplets: 44*

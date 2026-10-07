@@ -15958,3 +15958,26 @@ REVISE-507:
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1113_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1113_against.md
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+
+REVISE-508:
+  Date: 2026-10-07 | Source: DISPOSITION-1047 (15c) | Item: PRESUMPTION-897 (PRESUMPTION (unstated)); supersedes MONITOR-586
+  15a: PARTIALLY-SUPPORTED (Weak, retrieval-only) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Finding: No source in either direction supports "no threshold exists". Orphan pages are causally under-viewed (Arora, West & Gerlach 2024, ICWSM); Wikipedia treats ~15% orphans as a problem, the vault last read ~84%. Dense retrieval can lose precision as the index grows (Reimers & Gurevych 2021); datastore scaling helps only with a good retriever (Shao 2024).
+  What is at risk: navigation and retrieval quality of the vault; growth that is 97% orphans.
+  Recommended action: Define a growth threshold and a probe — a fixed set of probe questions run against the vault at each size snapshot, plus the connected-fraction series; throttle or link-remediate if probe quality drops or connected fraction <15%. Instrument before throttling.
+  Urgency: Medium (raise to High if connected fraction <15%; ~84% orphan figure is carried from cycle 0, not re-measured)
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-897_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-897_retrigger-2026-10-07_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-509:
+  Date: 2026-10-07 | Source: DISPOSITION-1049 (15c) | Item: ASSUMPTION-1303 (derived restoration question; supersedes MONITOR-598) (ASSUMPTION (stated))
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong)
+  Finding: Improving alert precision restores little attention to an abandoned channel: provider overrides stayed ~84% after precision work (Baysari 2021 review, via 15a); in one ICU, ~70% fewer alarms coincided with 60-s response falling 60%→12% (Kunadu, CHEST 2017 — abstract via news report, primary unretrieved, single site). Trust is lost faster than rebuilt (Lee & Moray 1992).
+  What is at risk: the plan for the 418-hit gate, which assumes threshold amendment brings a reader back; PREMISE-201 clause (3) read as sufficient.
+  Recommended action: Do not ship the gate amendment as the remedy on its own. Pair it with a read/act-rate log (not alert volume) before and after; if the reader is a persistent habit-carrying agent/human and read-rate does not recover, re-site the signal to a different channel. If the reader is a fresh agent each run, record that — hysteresis may not apply.
+  Urgency: Medium
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1303_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1303_retrigger-2026-10-07_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED

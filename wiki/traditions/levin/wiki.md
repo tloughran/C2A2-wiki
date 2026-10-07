@@ -217,3 +217,9 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-21-002` — A platform for automated training of mammalian cell physiology (paper, https://www.biorxiv.org/content/10.64898/2026.08.13.744473v1) → PRS-137, PRS-138, PRS-139, PRS-140
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+2 triplets added from 1 approved proposals (decision email 2026-10-06): PRS-141, PRS-142.
+
+- `PROP-2026-09-28-001` — Machines all the way up and cognition all the way down: Updating the machine metaphor in biology (paper, https://www.sciencedirect.com/science/article/pii/S1084952126000029) → PRS-141, PRS-142

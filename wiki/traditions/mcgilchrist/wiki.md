@@ -217,3 +217,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
 - McGilchrist source capture (PROP-2026-09-16-002): members' Q&A 2026-08-27 recorded as a source only; quarterly cadence per card (next expected late November 2026). Re-open if a recording or transcript surfaces.
+
+### Ingest 2026-10-07
+
+5 triplets added from 3 approved proposals (decision email 2026-10-06): PRS-81, PRS-82, PRS-83, PRS-84, PRS-85.
+
+- `PROP-2026-09-29-002` — Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversation with Freddie Sayers) (talk, https://unherd.com/2026/09/iain-mcgilchrist-ai-versus-the-human-soul/) → PRS-81, PRS-82, PRS-83
+- `PROP-2026-09-30-001` — Conversation of Michael Levin with Iain McGilchrist #2 (talk, https://www.youtube.com/watch?v=MLsB0d1SfVY) → PRS-84
+- `PROP-2026-09-30-002` — Think Spiral: The Divided Brain and Classical Liberalism (paper, https://link.springer.com/article/10.1007/s12115-020-00550-y) → PRS-85

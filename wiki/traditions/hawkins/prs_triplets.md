@@ -644,7 +644,97 @@ PRS-66:
   Confidence: High
   Evidence: Chapters at 5:47, 6:30, 8:20, 8:34, 9:01, 9:09, 9:32.
 
-*Total PRS triplets: 66*
+PRS-67:
+  Problem: The original Monty assumed exactly one object in the world per episode, which cannot capture the nested, compositional structure of real scenes (room → table → mug → logo).
+  Resource: A hierarchy of learning modules (lower-level LMs model child objects, higher-level LMs store child-object IDs at locations in their own reference frames), plus burst sampling, a 2D sensor module, saliency/inhibition-of-return saccades, and model-free attention regions.
+  Solution: Monty learns compositional models (e.g., TBP logo on a sphere or cube). These give faster inference, a higher rate of confident correct convergence, and lower pose error than monolithic models. The same learned 2D logo model is reused across differently curved host surfaces without relearning.
+  Date Added: 2026-10-07
+  Source: Two Years of the Thousand Brains Project: What We Accomplished and Where We Are Today; PROP-2026-09-29-001
+  Confidence: High (internal benchmarks with figures; not yet independently replicated or tested at scale)
+  Evidence: Report §3.6 and Fig. 7b: "compositional models provide faster inference that is more likely to converge to a confident classification"; 2D LM supports lower pose error.
+
+PRS-68:
+  Problem: A sensorimotor system that samples hypotheses only at the start of an experimenter-defined episode cannot cope when the object under its sensor changes as it moves.
+  Resource: Burst sampling: when incoming sensation is poorly predicted, a learning module "bursts," initializing new hypotheses from the current input, while stale hypotheses are eliminated.
+  Solution: The hypothesis space grows and shrinks dynamically. This enables unsupervised inference across object transitions and also improves single-object benchmarks under noise at maintained computational efficiency.
+  Date Added: 2026-10-07
+  Source: Two Years of the Thousand Brains Project: What We Accomplished and Where We Are Today; PROP-2026-09-29-001
+  Confidence: High
+  Evidence: Report §3.2 and Fig. 3 (evidence traces bursting as Monty moves off and back onto the logo); PR #783.
+
+PRS-69:
+  Problem: How to know whether the theory is converging, i.e. whether the remaining gaps are bounded or open-ended.
+  Resource: Two years of brainstorming (five focus weeks, weekly meetings of up to 4 hours) and a capabilities/theory map, organized into three milestones: (1) unsupervised compositional models at scale, (2) object behaviors, (3) causal interaction and goal decomposition.
+  Solution: The team claims it has now "laid out and discussed all the major remaining problems." Solutions are not all settled, but the problem space is mapped. Object behaviors is named as the next major research effort.
+  Date Added: 2026-10-07
+  Source: Two Years of the Thousand Brains Project: What We Accomplished and Where We Are Today; PROP-2026-09-29-001
+  Confidence: Medium (a self-assessment by the program, not an external test)
+  Evidence: Report §4 ("Previously, there were large uncovered areas in the theory, but now, we feel like we have laid out and discussed all the major remaining problems") and §7.1.
+
+PRS-70:
+  Problem: Monty's learning modules can receive input from anywhere in the sensory field, so recognition of a specific object or sub-object is not protected from distraction or premature movement.
+  Resource: A prototype attention system combining bottom-up salience with top-down learning-module signals, using 3D voxel attentional regions with excitatory and inhibitory signaling.
+  Solution: Sensory input and movement are held on a target object or part until it is recognized, with hard or soft filtering as the control choice. Inhibition of return and interruption by unexpected stimuli are named as design questions.
+  Date Added: 2026-10-07
+  Source: 08/2026 - Attention in Monty (a Hackathon Prototype); PROP-2026-10-06-002
+  Confidence: Medium
+  Evidence: Forum summary: "integrates bottom-up salience with top-down signals from learning modules... constrain movement and sensory input to a specific object or sub-object until it has been recognized."
+
+PRS-71:
+  Problem: It is unsettled whether attention should be implemented as a filter on input only or as a controller of sensorimotor movement.
+  Resource: The hard-versus-soft motor filtering distinction in the prototype.
+  Solution: The prototype keeps both options open. Which is correct is left as a testable design question, not claimed as resolved.
+  Date Added: 2026-10-07
+  Source: 08/2026 - Attention in Monty (a Hackathon Prototype); PROP-2026-10-06-002
+  Confidence: Speculative
+  Evidence: Forum summary lists "hard versus soft filtering approaches for motor control" as a technical element, without results.
+
+PRS-72:
+  Problem: Monty's per-object models could not be combined into wholes or split into reusable parts, so object identity could not persist as models were revised (wiki Q8: re-binding when a lower model changes).
+  Resource: Object merging and splitting in Monty (Team Janus), with a web GUI for inspecting models, tested by sensorimotor exploration and model ablations.
+  Solution: Models can be merged when two are found to be the same object and split into reusable parts. This is a mechanism candidate for compositional reuse and for re-binding, not yet shown to resolve Q8.
+  Date Added: 2026-10-07
+  Source: 2026/08 - Rome Focus Week Final Presentations; PROP-2026-10-06-003
+  Confidence: Medium
+  Evidence: Forum summary: "object merging and splitting abilities in Monty... web-based GUI visualization tool... sensorimotor exploration and model ablations for experimental validation."
+
+PRS-73:
+  Problem: Monty could not be evaluated on abstract, interactive reasoning benchmarks, so claims about sensorimotor-first reasoning stayed untested.
+  Resource: ARC-AGI-3 integration via a game-engine API, an ARC-AGI simulator, and a sensor module for environment changes (Team Mighty Mouse).
+  Solution: A test bed for compositional learning of game maps and sprites. No performance numbers were reported in what was readable.
+  Date Added: 2026-10-07
+  Source: 2026/08 - Rome Focus Week Final Presentations; PROP-2026-10-06-003
+  Confidence: Speculative
+  Evidence: Forum summary: "ARC-AGI-3 integration with a game engine API... learning compositional game maps and sprites."
+
+PRS-74:
+  Problem: The July ARC-AGI-3 review identified what Monty would need to tackle abstract, interactive reasoning tasks, but Monty had no connection to the benchmark, so the gap could not be measured.
+  Resource: An ARC-AGI-3 integration built by one Rome Focus Week team.
+  Solution: Monty can now be run against ARC-AGI-3, turning a theoretical gap analysis into an empirical test bed for sensorimotor-first reasoning.
+  Date Added: 2026-10-07
+  Source: 08/2026 - Project Proposals for the Rome Focus Week; PROP-2026-10-06-001
+  Confidence: Medium
+  Evidence: TBP summary reports "an ARC-AGI-3 integration" as one of three focus-week results. No scores reported in what was readable.
+
+PRS-75:
+  Problem: Monty's attention infrastructure (the DefaultAttentionSystem: VoxelGrid, weight decay/merge, GoalFilter, WeightPooler) was functionally a no-op because nothing generated attention regions.
+  Resource: A new attention-system prototype built during the focus week, alongside the docs' framing of attention as gating votes and inputs ("covert" attention via top-down feedback and lateral competition).
+  Solution: A first working prototype of region-based attention in Monty, closing the gap between the attention theory sessions (June-July 2026) and running code.
+  Date Added: 2026-10-07
+  Source: 08/2026 - Project Proposals for the Rome Focus Week; PROP-2026-10-06-001
+  Confidence: Speculative
+  Evidence: TBP summary: "a brand-new attention system prototype in Monty"; GitHub PR #1199 description notes the prior implementation was a no-op pending a generator of AttentionRegions. Whether the prototype is that generator is not confirmed.
+
+PRS-76:
+  Problem: Compositional objects require models that can be combined into wholes or decomposed into reusable parts, and Monty's per-object reference-frame models had no mechanism for either.
+  Resource: New methods to merge object models or split them into reusable parts.
+  Solution: A step toward the program's first milestone (unsupervised compositional models at scale) by making object models recombinable.
+  Date Added: 2026-10-07
+  Source: 08/2026 - Project Proposals for the Rome Focus Week; PROP-2026-10-06-001
+  Confidence: Speculative
+  Evidence: TBP summary: "new ways to merge object models or split them into reusable parts." Method details not readable.
+
+*Total PRS triplets: 76*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

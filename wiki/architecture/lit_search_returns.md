@@ -50592,3 +50592,65 @@ DISPOSITION-1045:
 
 Running totals after this run: PREMISE-223 | MONITOR-681 | REVISE-507 (unchanged) | DISPOSITION-1045.
 Distribution (5 items): 1 INCORPORATE, 4 MONITOR, 0 REVISE. All searches PRELIMINARY scope (~2-4 searches, 1-2 fetches per item per side). Not done: 142 bare literature-lane backlog items. Budget: over the 4k/30k guideline (2 subagents, ~270k tokens).
+
+
+## 15a/15b/15c RUN — 2026-10-07 (scheduled c2a2 lit-search pipeline; 15d re-trigger backlog, 5 items: PRESUMPTION-896, PRESUMPTION-897, ASSUMPTION-1244, ASSUMPTION-1303, ASSUMPTION-508)
+
+No new 14a/14b intake (2026-10-07 14a/14b RUN_INCOMPLETE). Batch rule: newest 15d re-triggers first (09-20 cohort, 4 items) + ASSUMPTION-508 (explicitly owed a 15b pass). Scope PRELIMINARY: ~2-5 searches, 1-2 fetches per item per side.
+
+### 15a returns
+- PRESUMPTION-896: PARTIALLY-SUPPORTED (Moderate that filed defects often go unfixed; Weak on licensing). Kuper & Bott 2019 Meta-Psychology [fetched] bias-corrected licensing d≈-0.05..0.18; Blanken et al. 2014 [search-result] 3 failed replications; Coverity usage study [search-result] median 36.7% actionable, median 96 days. NOVELTY: no.
+- PRESUMPTION-897: PARTIALLY-SUPPORTED (Weak; retrieval only). Shao et al. 2024 NeurIPS [fetched] datastore scaling, no saturation; Arora, West & Gerlach 2024 ICWSM [fetched] orphans "de facto invisible"; Reimers & Gurevych 2021 [search-result]. NOVELTY: no.
+- ASSUMPTION-1244: PARTIALLY-SUPPORTED (Moderate default-ascent; Weak "by construction"). Grech, Melita Theologica [fetched]; Teresa, Interior Castle [search-result]; Underhill [abstract]. NOVELTY: yes, narrowed (no comparative contemplative-vs-psychometric scholarship found). Recommends Agent 19.
+- ASSUMPTION-1303: PARTIALLY-SUPPORTED (Weak-Moderate). Baysari et al. 2021 JAMIA [fetched] small, role-dependent restoration (acks 11.8→13.7%; pharmacist overrides 95→84%, provider flat ~84%); Wolfe & Van Wert 2010 [fetched] lab criterion recovers. Not a clean null. NOVELTY: no.
+- ASSUMPTION-508: SUPPORTED (Strong, unchanged). JMIR Ment Health 2025 e80371 [fetched] 19.9% fabricated citations, ~28% low-visibility topics; Simkin & Roychowdhury 2003 [search-result]. NOVELTY: no.
+  PROVENANCE (all): Transform: literature search FOR (re-trigger cycle 1) | Results: wiki/architecture/lit_search_results/for/<ID>_retrigger-2026-10-07_for.md
+
+### 15b returns
+- PRESUMPTION-896: PARTIALLY-CHALLENGED (Moderate). Remediation-rate data (Coverity study, Guo & Engler 2009) [search-result]; Kuper & Bott [fetched abstract] — 15b withdrew its own cycle-0 reliance on licensing. STEELMAN: filing is where most defects stop moving.
+- PRESUMPTION-897: PARTIALLY-CHALLENGED (Moderate; now peer-reviewed). Reimers & Gurevych 2021 ACL [fetched abstract]; Arora et al. 2024 ICWSM [fetched abstract]; Cuconasu et al. 2024 [search-result] caveat. STEELMAN: the vault accumulates exactly what degrades retrieval/navigation, with no crossing detector.
+- ASSUMPTION-1244: PARTIALLY-CHALLENGED (Weak-Moderate). Teresa, Interior Castle [fetched primary, keyword-searched]: "wander at will… lowest to highest", yet rooms ranked. Rohr's sources house the ascent frame, descent as entry. STEELMAN: rooms to move between are not a score.
+- ASSUMPTION-1303: CHALLENGED (Moderate-Strong). Kunadu et al., CHEST 2017 [news report of abstract; primary NOT retrieved] alarms -70%, 60-s response 60%→12%; Lee & Moray 1992, Breznitz 1984 [search-result]. STEELMAN: a channel nobody reads cannot announce it has become precise.
+- ASSUMPTION-508: PARTIALLY-CHALLENGED (Weak-Moderate; first dedicated 15b pass). Hopewell 2007 [search-result]; Redi et al. 2019 WWW [fetched intro]. In-house (not literature): re-open condition met 2026-08-15, no discharge record found (53 days); possible duplicate ingest as PRS-47 / PROP-2026-06-24-002 — UNVERIFIED. STEELMAN: fail-loud without a discharge path converts "not fabricated" into "not known" indefinitely.
+- SYSTEMIC-RISK (High): "deposit without drain" — 896, 897, 508, 1303. wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-07_deposit-without-drain.md
+  PROVENANCE (all): Transform: literature search AGAINST (re-trigger cycle 1) | Results: wiki/architecture/lit_search_results/against/<ID>_retrigger-2026-10-07_against.md
+
+## 15c — dispositions, 2026-10-07
+
+DISPOSITION-1046:
+  Date: 2026-10-07 | Item: PRESUMPTION-896 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Disposition: MONITOR -> MONITOR-682
+  Reasoning: Both directions converge: the moral-licensing mechanism is now discounted by both (bias-corrected effect ~0), and the remaining question is descriptive — filed defects are acted on at roughly one-third rates with long lags. That makes "filing discharges" a staged-pipeline question, not a literature one. The literature limb is discharged; the decisive evidence is the in-house closure-capacity number (MONITOR-585 tripwire, ASSUMPTION-1248). Coverity figures are search-result level only. Not REVISE: no in-house remediation-stage audit yet. No further literature pass owed.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1047:
+  Date: 2026-10-07 | Item: PRESUMPTION-897 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak, retrieval-only) | 15b: PARTIALLY-CHALLENGED (Moderate, peer-reviewed)
+  Disposition: REVISE -> REVISE-508
+  Reasoning: The strong limb ("no threshold exists at which growth would be throttled") found no support in either direction across two passes; the adverse reading now has a peer-reviewed anchor both sides cite (Arora et al. 2024: orphans are causally under-viewed; Wikipedia treats ~15% as a problem, vault last read ~84%). 15a's support (Shao 2024) holds only for retrieval with a good retriever and says nothing about link navigation. PRESUMPTION + weak support + moderate, convergent challenge → REVISE at Medium urgency. Recommendation is modest (instrument, not throttle).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1048:
+  Date: 2026-10-07 | Item: ASSUMPTION-1244 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak), NOVELTY narrowed | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  Disposition: MONITOR -> MONITOR-683 (HIGH)
+  Reasoning: Convergent on the contemplative limb: classical schemes RANK stages (ascent is the reading) but are non-monotonic — descent/night is the engine (15a) and the soul may move between rooms (15b, Teresa primary). This matches cycle 0: ascent is the default, not entailed. Correction to MONITOR-589: Rohr's falling is the entry to the ascent frame, not a counterexample to it (15b). NOVELTY retained (no comparative scholarship) → MONITOR at HIGH per heuristic. A narrowed premise is ready once Agent 19 reads critical editions; Cloud of Unknowing still effectively unsearched.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1049:
+  Date: 2026-10-07 | Item: ASSUMPTION-1303 (derived restoration question, MONITOR-598) | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b: CHALLENGED (Moderate-Strong)
+  Disposition: REVISE -> REVISE-509
+  Reasoning: Not a second null. Both sides' evidence points the same way: precision improvement restores little attention (15a's own Baysari table: provider overrides flat at ~84%) and in one ICU response time worsened after a ~70% alarm cut (Kunadu 2017, abstract via news report — primary unretrieved, single site, no baseline; caveated). Weak support + moderate-strong challenge → REVISE, scoped to the plan for the 418-hit gate, not to PREMISE-201 as a whole. Transfer caveat: if the gate's reader is a fresh agent each run, conditioning may not carry over — that is the in-house test. No third literature pass (per 15d's own rule).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1050:
+  Date: 2026-10-07 | Item: ASSUMPTION-508 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate) — first dedicated 15b pass, pair now complete
+  Disposition: INCORPORATE -> PREMISE-224
+  Reasoning: Strong support + weak challenge → INCORPORATE with caveats. 15b's challenge targets the DRAIN (flag never discharged), not the admit-at-Speculative rule; adopted as clause (2). Consistency: specialises PREMISE-049 (unverified leads not treated as true; quarantine-with-revisit) — no contradiction; clause (2) is 049's "hold-queue durability" caveat made operational. In-house: the 508 flag itself is 53 days undischarged and a possible duplicate (PRS-47) is UNVERIFIED — reported, not resolved.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+Running totals after this run: PREMISE-224 | MONITOR-683 | REVISE-509 | DISPOSITION-1050.
+Distribution (5 items): 1 INCORPORATE, 2 MONITOR, 2 REVISE. Not done: 137 bare literature-lane backlog items. Budget: over the 4k/30k guideline (2 subagents, ~340k tokens) — surfaced per Rule 6.

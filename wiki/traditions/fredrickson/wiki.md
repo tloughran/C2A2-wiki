@@ -161,3 +161,9 @@ Processed 1 source file(s); minted PRS-40 - PRS-42.
 | Source file | Proposal | PRS range | Note |
 |---|---|---|---|
 | `2026-08-13_fredrickson_keep-social-trial-registration.md` | PROP-2026-08-13-001 | PRS-40 - PRS-42 | A registered trial is the first non-correlational, non-short-horizon evidence this tradition has for its flourishing claims, which is why all three are ingested and why PRS-42 (funding and framing) is ingested with them at Speculative rather than dropped. A trial registration is a promise, not a result; nothing here should be read as an outcome. |
+
+### Ingest 2026-10-07
+
+2 triplets added from 1 approved proposals (decision email 2026-10-06): PRS-43, PRS-44.
+
+- `PROP-2026-09-24-001` — Can an Algorithm Tell How Spiritual You Are? Using Generative Pretrained Transformers for Sophisticated Forms of Text Analysis (paper, https://pmc.ncbi.nlm.nih.gov/articles/PMC12592590/) → PRS-43, PRS-44

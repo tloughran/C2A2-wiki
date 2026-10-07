@@ -951,4 +951,58 @@ PRS-102:
   Confidence: Medium (restatement of an established Rohr position from *The Universal Christ*)
   Evidence: Second adapted passage, *The Universal Christ* pp. 140–142.
 
-*Total PRS triplets: 102*
+PRS-103:
+  Problem: How does a theology of unconditional, already-given divine love (central to Rohr's Universal Christ program) get grounded against a strong, culturally dominant counter-tradition of merit, effort, and legalistic self-improvement (which Rohr names, via Thérèse's context, as Jansenism)?
+  Resource: Thérèse of Lisieux's "little way" and her staircase parable, read by Rohr as a lived enactment of grace-preceding-effort.
+  Solution: Rohr treats Thérèse's small-scale, desire-and-surrender spirituality as a decisive counter-example to perfectionist theology — not argued but personally, biographically decisive for him ("This changes everything!").
+  Date Added: 2026-10-07
+  Source: An Influential Teacher; PROP-2026-09-27-003
+  Confidence: Speculative (autobiographical/formational material rather than a new doctrinal claim; its value is genealogical)
+  Evidence: Direct quotes from the meditation ("Jesus does not demand great actions from us but simply surrender and gratitude"; "All God needs is our desire, then God does all the rest").
+
+PRS-104:
+  Problem: What generates cycles of violence in human systems, and what actually breaks them — as opposed to merely defeating the current "bad guys" and awaiting the next rival?
+  Resource: A structural reading of holiness-as-exclusion vs. holiness-as-inclusion, applied to Jesus's reframing of purity/holiness codes in the Gospels.
+  Solution: Rohr claims exclusion itself (not any particular violent act) is violence's "solid foundation," and that Jesus resolves rather than merely opposes violence by building an alternative, inclusive social pattern instead of destroying the excluding one — "overcoming evil without becoming evil."
+  Date Added: 2026-10-07
+  Source: The Myth of Redemptive Violence; PROP-2026-09-27-002
+  Confidence: Medium
+  Evidence: Direct quotes/paraphrase from the meditation text ("separation or exclusion... lay the solid foundation for violence"; "the best criticism of the bad is the practice of the better"). The meditation makes a theological/phenomenological claim, not an empirical one — no external data is cited.
+
+PRS-105:
+  Problem: Where is divine presence primarily encountered: in constructed ritual, or in creation as such?
+  Resource: Bonaventure's *vestigia Dei* plus Francis's "Canticle" read as nature mysticism; creation as "a continuous sacrament."
+  Solution: Creation is the primary sacrament. Ecclesial ritual is secondary and points toward it, and becomes self-referential when cut off from it.
+  Date Added: 2026-10-07
+  Source: God's Resting Place; PROP-2026-10-04-003
+  Confidence: Medium
+  Evidence: Direct statements in the meditation ("primary cathedral"; "continuous sacrament"; the best rituals "can only point" to Reality).
+
+PRS-106:
+  Problem: Under what conditions does deep self-transformation (the false-self to true-self shift) actually occur?
+  Resource: Rohr's 15-year Men's Rites of Passage observation: breakthroughs clustered in extended silence in nature or in "raw and earthy" ritual.
+  Solution: Transformation is made easier when verbal and social control is suspended and the self meets a reality it cannot manage.
+  Date Added: 2026-10-07
+  Source: God's Resting Place; PROP-2026-10-04-003
+  Confidence: Speculative (anecdotal, self-reported by the teacher; no systematic data)
+  Evidence: The final paragraph of the meditation.
+
+PRS-107:
+  Problem: How can a finite, imperfect agent participate in divine love without a perfectionist self-project?
+  Resource: Thérèse's "little way" read through Rohr's descending-religion frame; "unborn divinity" in each face.
+  Solution: Maturity is conscious love enacted in small, limited acts; limitation is the site of participation, not an obstacle to it.
+  Date Added: 2026-10-07
+  Source: Thérèse of Lisieux: The Way of Love: Weekly Summary; PROP-2026-10-04-001
+  Confidence: Medium
+  Evidence: Weekly summary quotations ("doing it wrong"; "radicality and divinity of our simplicity"; "unborn divinity").
+
+PRS-108:
+  Problem: What is the relation of contemplative love to power and violence?
+  Resource: Dorothy Day's contrast of the little way with the show of force (Thursday).
+  Solution: Love practiced in smallness is a non-violent counter-power, consistent with approved "power with, not power over" proposals.
+  Date Added: 2026-10-07
+  Source: Thérèse of Lisieux: The Way of Love: Weekly Summary; PROP-2026-10-04-001
+  Confidence: Speculative
+  Evidence: Thursday recap only; needs the full meditation text.
+
+*Total PRS triplets: 108*

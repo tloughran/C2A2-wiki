@@ -192,3 +192,9 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-22-004` — 368 | Elizabeth Alexander on Why Democracy Needs Imagination (podcast, https://preposterousuniverse.com/podcast/2026/09/21/368-elizabeth-alexander-on-why-democracy-needs-imagination/) → PRS-91
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-07
+
+3 triplets added from 1 approved proposals (decision email 2026-10-06): PRS-92, PRS-93, PRS-94.
+
+- `PROP-2026-09-30-003` — 369 | Gregg Caruso on Living Well Without Free Will (podcast, https://preposterousuniverse.com/podcast/2026/09/28/369-gregg-caruso-on-living-well-without-free-will/) → PRS-92, PRS-93, PRS-94

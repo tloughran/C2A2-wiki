@@ -734,3 +734,25 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [PIPELINE, HELD] **Wolfram PROP-2026-09-19-001 CANDIDATE-03 held**: no Evidence field; the proposer's own note says it "may deserve rejection" and rests on a health-related personal update it said should not be mined.
 
 [EVALUATED: 2026-09-24 - FINDING-091..094; see pattern_detector_findings.md]
+
+## Forwarded 2026-10-07 — 19-card ingest batch (decision email 2026-10-06)
+
+- [CONVERGENCE] **Rohr × Wright on empire/violence vs. a present nonviolent reign** (PROP-2026-09-27-001/-002). See CROSS-141.
+
+- [TENSION, NOT BLENDED] **Rohr × Wright on sacraments, and on grace vs. effort** (PROP-2026-10-04-002/-003, -09-27-003). See CROSS-142.
+
+- [CONVERGENCE] **Wolfram × McGilchrist: AI output needs a human community to become meaning** (PROP-2026-09-29-002/-003). See CROSS-143.
+
+- [RIVAL MECHANISM] **Friston-group inferential planning vs. Thousand Brains sequence memory; burst sampling as surprise-driven structure learning** (PROP-2026-10-05-001, -09-29-001). See CROSS-144.
+
+- [INSTRUMENT] **GPT-4 rates spirituality from prose at human-coder reliability** (PROP-2026-09-24-001, Fredrickson lab). First validated case of an LLM reading a tradition-constituted interior quality out of ordinary text, which is the operation the detector needs. The bias null is underpowered.
+
+- [METHOD RULE FROM TOM] **CHANGE on PROP-2026-10-01-001:** inter-tradition dialogue can happen at any level, but only mature-to-mature exchanges carry evidence about what is true or good for either party. Novice-to-mature dialogue is education (intra-tradition), or, across traditions, evidence of how hospitable a tradition is to newcomers. The card's framing of inter-tradition dialogue as structurally novice-vs-mature was marked false.
+
+- [ONE-SIDED] **Levin × McGilchrist Platonic-space conversation #2** (CROSS-145) and **Carroll × Stump on retribution** (CROSS-146): each indexed from one tradition only.
+
+- [PIPELINE, EVIDENCE] **Six of 39 triplets rest on unread primary sources**: levin PRS-141..142 (landing-page summary; Solution "not yet established"), mcgilchrist PRS-84 (metadata only), wright PRS-68..70 (show notes only). Ingested at the cards' own confidence under the blanket approval.
+
+- [PIPELINE, AUTHORSHIP] **Ten more Hawkins-tradition triplets are TBP team output** (PRS-67..76). Fifth time approved as-is.
+
+[EVALUATED: 2026-10-07 - FINDING-095..098; see pattern_detector_findings.md]

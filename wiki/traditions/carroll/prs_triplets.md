@@ -830,4 +830,31 @@ PRS-91:
   Confidence: Speculative
   Evidence: None heard. Episode page, date 2026-09-21, category Literature, and the published blurb ("how literature and other humanistic studies can help us build empathy ... why that task is crucial to a flourishing democratic society"). No transcript retrieved.
 
-*Total PRS triplets: 91*
+PRS-92:
+  Problem: Does the truth or falsity of determinism (including quantum indeterminacy) decide whether humans have free will?
+  Resource: Carroll's separation of the two questions, which Caruso independently endorses: agents control indeterministic events no more than determined ones (the "Lucretian swerve" fails).
+  Solution: Treat determinism as a physics question and free will as a question about agents; an argument that "keeps talking about determinism" is a sign of an unsophisticated free-will discussion. Both compatibilists and hard incompatibilists can agree on this and move on.
+  Date Added: 2026-10-07
+  Source: 369 | Gregg Caruso on Living Well Without Free Will; PROP-2026-09-30-003
+  Confidence: High
+  Evidence: Carroll's intro (0:01:11) and exchange at 0:11:55-0:15:15; Caruso: "I'm officially agnostic about the truth of determinism."
+
+PRS-93:
+  Problem: If free-will skeptics and compatibilists agree that people make choices and that retributive "just deserts" should be rejected, what is left of their disagreement?
+  Resource: Caruso's forward-looking account of responsibility (moral formation, safety, reconciliation; the public-health quarantine model) set against Carroll's compatibilism.
+  Solution: Carroll: rejecting desert and retributivism is itself compatible with compatibilism; what remains is largely what to *call* reason-responsive choice. Caruso: the term "free will" carries desert baggage in ordinary language and should be replaced with "autonomy" or "degrees of control." The live disagreement is terminological plus a practical bet on which vocabulary best frees policy from retribution.
+  Date Added: 2026-10-07
+  Source: 369 | Gregg Caruso on Living Well Without Free Will; PROP-2026-09-30-003
+  Confidence: High (both state it directly)
+  Evidence: 0:54:46-0:57:37; 1:03:03-1:05:31; 1:11:06 ("some terminological differences aside, there's not a lot of room between where we're coming from").
+
+PRS-94:
+  Problem: How can deliberation be real if the future is fixed (or fixed-in-probability) by physical law?
+  Resource: Epistemic openness: no agent knows its own future, so choice remains necessary; fatalism (outcomes happen regardless of causes) is distinguished from causal determination (outcomes happen *because of* deliberation).
+  Solution: Choices are causally efficacious links in the chain, not bypassed by it. Given "all of my macroscopic knowledge, I could choose different possibilities," so the conditions for what Carroll calls free will exist at the emergent level of description.
+  Date Added: 2026-10-07
+  Source: 369 | Gregg Caruso on Living Well Without Free Will; PROP-2026-09-30-003
+  Confidence: Medium-High (Carroll states the view; this episode is not a full defense of it)
+  Evidence: 0:34:15-0:35:59 (fatalism vs. skepticism); Carroll at 1:11:06 on reasons and macroscopic knowledge.
+
+*Total PRS triplets: 94*
