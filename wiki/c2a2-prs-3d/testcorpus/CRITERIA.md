@@ -13,7 +13,7 @@ Every number below is printed by the script; none is typed by hand.
 ## The problem this replaces
 
 The connectome scored candidate generative coils with Jaccard overlap on significant
-tokens. Measured against a hand-labelled answer key of 29 attested dependencies across
+tokens. Measured against a hand-labelled answer key of 30 attested dependencies across
 the two paradigm cases, that scorer finds **zero** of them. Not a few. Zero.
 
 This is not a threshold that needs lowering. Bag-of-words overlap measures *shared
@@ -56,19 +56,19 @@ corpus: 20 entries, 380 ordered pairs, 120 shareable distinctive terms of 638 vo
 rejected: {'no_qualifying_evidence': 349}
 
                                                  found   gold     tp   prec recall
-TIER 'named' (C1 fired)                             10     29     10  1.00   0.34
+TIER 'named' (C1 fired)                             10     30     10  1.00   0.33
   ...textually expressed                            10     16     10  1.00   0.62
-ANY attested link                                   31     29     21  0.68   0.72
+ANY attested link                                   31     30     21  0.68   0.70
   ...on pairs both entries express (the ceiling)    31     16     16  0.52   1.00
   ...on pairs only one side expresses               31      3      1  0.03   0.33
-  ...on pairs the corpus never expresses            31     10      4  0.13   0.40
-GENERATIVE only (resource_supplying)                18     23      9  0.50   0.39
+  ...on pairs the corpus never expresses            31     11      4  0.13   0.36
+GENERATIVE only (resource_supplying)                18     24      9  0.50   0.38
   ...of those, textually expressed                  18     12      8  0.44   0.67
-BASELINE lexical Jaccard, any attested link          0     29      0  0.00   0.00
+BASELINE lexical Jaccard, any attested link          0     30      0  0.00   0.00
 BASELINE lexical Jaccard, on the ceiling set         0     16      0  0.00   0.00
 
 
-NOT RECOVERABLE from these summaries (13) - one side silent (3) or the corpus silent (10):
+NOT RECOVERABLE from these summaries (14) - one side silent (3) or the corpus silent (11):
   deeplearning-PRS-03      -> deeplearning-PRS-10      [one side silent]
   quantum-PRS-01           -> quantum-PRS-03           [one side silent]
   quantum-PRS-06           -> quantum-PRS-09           [one side silent]
@@ -82,6 +82,7 @@ NOT RECOVERABLE from these summaries (13) - one side silent (3) or the corpus si
   quantum-PRS-01           -> quantum-PRS-09           [corpus silent]
   quantum-PRS-03           -> quantum-PRS-07           [corpus silent]
   quantum-PRS-07           -> quantum-PRS-10           [corpus silent]
+  quantum-PRS-08           -> quantum-PRS-10           [corpus silent]
 
 RULED OUT by the record, and whether the criteria proposed them anyway:
   deeplearning-PRS-07      -> deeplearning-PRS-06      not proposed
@@ -130,13 +131,13 @@ von Neumann were considered and refused, and those refusals are recorded in the 
 
 What moved, and what did not:
 
-| | 25-row key | 29-row key |
-|---|---|---|
-| ANY attested link, precision | 0.65 | **0.68** |
-| ANY attested link, recall | 0.80 | **0.72** |
-| ceiling set (both entries express), precision / recall | 0.52 / 1.00 | **0.52 / 1.00** |
-| `named` tier, precision | 1.00 | **1.00** |
-| corpus-silent pairs in the key | 6 | **10** |
+| | 25-row key | 29-row key | 30-row key (10-06) |
+|---|---|---|---|
+| ANY attested link, precision | 0.65 | 0.68 | **0.68** |
+| ANY attested link, recall | 0.80 | 0.72 | **0.70** |
+| ceiling set (both entries express), precision / recall | 0.52 / 1.00 | 0.52 / 1.00 | **0.52 / 1.00** |
+| `named` tier, precision | 1.00 | 1.00 | **1.00** |
+| corpus-silent pairs in the key | 6 | 10 | **11** |
 
 **The ceiling result is unchanged**, because every added row is corpus-silent and so falls
 outside that set. Precision rose by one pair: Planck → Schrödinger was already in the
@@ -145,6 +146,13 @@ wrong reason, since C2 fired on the term `continuous` rather than on anything to
 h. Recall fell, which is the honest direction: the key now names four dependencies that no
 method reading these summaries can recover, and a recall number that does *not* fall when
 unrecoverable rows are added is measuring the key rather than the corpus.
+
+**Amended 2026-10-06.** One more row, Schrödinger → von Neumann (`resource_supplying`,
+`unexpressed`), the partner of the Heisenberg → von Neumann row the key already held. It
+surfaced as the single control positive in the blind reconstruction re-run (see
+`RECONSTRUCTIONS.md`), the third control positive traced to a gap in the key. It is
+corpus-silent, so precision and the ceiling result are untouched and recall falls by one
+row's worth, 0.72 → 0.70.
 
 ---
 

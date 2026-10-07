@@ -1,156 +1,191 @@
 {
  "_meta": {
   "seed": 20260901,
-  "random_pool_size": 153,
+  "random_pool_size": 149,
   "warning": "Conditions. Do not read before authoring."
  },
  "key": {
   "R01": {
-   "pair": [
-    "quantum-PRS-06",
-    "quantum-PRS-09"
-   ],
-   "condition": "target"
-  },
-  "R02": {
-   "pair": [
-    "quantum-PRS-10",
-    "deeplearning-PRS-10"
-   ],
-   "condition": "control_random"
-  },
-  "R03": {
    "pair": [
     "deeplearning-PRS-02",
     "deeplearning-PRS-04"
    ],
    "condition": "target"
   },
-  "R04": {
-   "pair": [
-    "deeplearning-PRS-01",
-    "deeplearning-PRS-02"
-   ],
-   "condition": "target"
-  },
-  "R05": {
-   "pair": [
-    "quantum-PRS-08",
-    "deeplearning-PRS-08"
-   ],
-   "condition": "control_random"
-  },
-  "R06": {
+  "R02": {
    "pair": [
     "quantum-PRS-04",
-    "deeplearning-PRS-07"
-   ],
-   "condition": "control_random"
-  },
-  "R07": {
-   "pair": [
-    "quantum-PRS-04",
-    "deeplearning-PRS-02"
-   ],
-   "condition": "control_random"
-  },
-  "R08": {
-   "pair": [
-    "deeplearning-PRS-01",
-    "deeplearning-PRS-03"
-   ],
-   "condition": "target"
-  },
-  "R09": {
-   "pair": [
-    "quantum-PRS-07",
     "deeplearning-PRS-05"
    ],
    "condition": "control_random"
   },
-  "R10": {
-   "pair": [
-    "quantum-PRS-04",
-    "deeplearning-PRS-09"
-   ],
-   "condition": "control_random"
-  },
-  "R11": {
+  "R03": {
    "pair": [
     "quantum-PRS-01",
     "quantum-PRS-04"
    ],
    "condition": "target"
   },
-  "R12": {
+  "R04": {
    "pair": [
-    "quantum-PRS-03",
+    "quantum-PRS-04",
     "quantum-PRS-07"
    ],
-   "condition": "target"
+   "condition": "control_random"
   },
-  "R13": {
-   "pair": [
-    "deeplearning-PRS-07",
-    "deeplearning-PRS-06"
-   ],
-   "condition": "control_ruled_out"
-  },
-  "R14": {
+  "R05": {
    "pair": [
     "quantum-PRS-01",
     "quantum-PRS-03"
    ],
    "condition": "target"
   },
-  "R15": {
+  "R06": {
    "pair": [
-    "quantum-PRS-01",
-    "quantum-PRS-09"
+    "quantum-PRS-07",
+    "deeplearning-PRS-09"
    ],
    "condition": "control_random"
   },
-  "R16": {
-   "pair": [
-    "quantum-PRS-09",
-    "deeplearning-PRS-05"
-   ],
-   "condition": "control_random"
-  },
-  "R17": {
+  "R07": {
    "pair": [
     "quantum-PRS-07",
     "quantum-PRS-08"
    ],
    "condition": "control_ruled_out"
   },
-  "R18": {
-   "pair": [
-    "deeplearning-PRS-03",
-    "deeplearning-PRS-10"
-   ],
-   "condition": "target"
-  },
-  "R19": {
-   "pair": [
-    "quantum-PRS-07",
-    "quantum-PRS-10"
-   ],
-   "condition": "target"
-  },
-  "R20": {
+  "R08": {
    "pair": [
     "quantum-PRS-01",
     "deeplearning-PRS-01"
    ],
    "condition": "control_ruled_out"
   },
-  "R21": {
+  "R09": {
+   "pair": [
+    "quantum-PRS-04",
+    "deeplearning-PRS-10"
+   ],
+   "condition": "control_random"
+  },
+  "R10": {
+   "pair": [
+    "deeplearning-PRS-07",
+    "deeplearning-PRS-06"
+   ],
+   "condition": "control_ruled_out"
+  },
+  "R11": {
+   "pair": [
+    "deeplearning-PRS-01",
+    "deeplearning-PRS-02"
+   ],
+   "condition": "target"
+  },
+  "R12": {
+   "pair": [
+    "quantum-PRS-01",
+    "quantum-PRS-07"
+   ],
+   "condition": "target"
+  },
+  "R13": {
    "pair": [
     "deeplearning-PRS-02",
     "deeplearning-PRS-03"
    ],
    "condition": "control_random"
+  },
+  "R14": {
+   "pair": [
+    "quantum-PRS-01",
+    "quantum-PRS-09"
+   ],
+   "condition": "target"
+  },
+  "R15": {
+   "pair": [
+    "deeplearning-PRS-01",
+    "deeplearning-PRS-03"
+   ],
+   "condition": "target"
+  },
+  "R16": {
+   "pair": [
+    "quantum-PRS-01",
+    "quantum-PRS-05"
+   ],
+   "condition": "target"
+  },
+  "R17": {
+   "pair": [
+    "quantum-PRS-07",
+    "quantum-PRS-10"
+   ],
+   "condition": "target"
+  },
+  "R18": {
+   "pair": [
+    "quantum-PRS-06",
+    "deeplearning-PRS-05"
+   ],
+   "condition": "control_random"
+  },
+  "R19": {
+   "pair": [
+    "quantum-PRS-08",
+    "quantum-PRS-10"
+   ],
+   "condition": "target"
+  },
+  "R20": {
+   "pair": [
+    "quantum-PRS-02",
+    "deeplearning-PRS-02"
+   ],
+   "condition": "control_random"
+  },
+  "R21": {
+   "pair": [
+    "quantum-PRS-09",
+    "deeplearning-PRS-01"
+   ],
+   "condition": "control_random"
+  },
+  "R22": {
+   "pair": [
+    "quantum-PRS-09",
+    "deeplearning-PRS-09"
+   ],
+   "condition": "control_random"
+  },
+  "R23": {
+   "pair": [
+    "quantum-PRS-06",
+    "quantum-PRS-09"
+   ],
+   "condition": "target"
+  },
+  "R24": {
+   "pair": [
+    "deeplearning-PRS-03",
+    "deeplearning-PRS-10"
+   ],
+   "condition": "target"
+  },
+  "R25": {
+   "pair": [
+    "quantum-PRS-01",
+    "quantum-PRS-08"
+   ],
+   "condition": "target"
+  },
+  "R26": {
+   "pair": [
+    "quantum-PRS-03",
+    "quantum-PRS-07"
+   ],
+   "condition": "target"
   }
  }
 }
