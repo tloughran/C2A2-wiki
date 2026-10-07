@@ -86,6 +86,18 @@ function prsToggleCoils(checked) {
 }
 
 // == DIRECTED GENERATIVE COILS (a solution feeding another tradition's resource) ==
+// Tier styles, used only when a link carries `tier` (build_tiered_links.py).
+//   named          solid, bright: the target's text names the source
+//   inherited      dashed: a distinctive term carried over -- a lead, not a claim
+//   reconstructed  violet, short dash: argued, not accepted
+//   ruled_out      grey, struck through: disproved, kept because that is a finding
+var GEN_TIER_STYLE = {
+  named:         { color: 0xF09A3C, opacity: 0.95, dash: null,   label: 'named — the later text names the earlier' },
+  inherited:     { color: 0xF09A3C, opacity: 0.6,  dash: [3, 2], label: 'inherited — a distinctive term carried over (a lead)' },
+  reconstructed: { color: 0xB48CFF, opacity: 0.85, dash: [1, 1], label: 'reconstructed — argued, not accepted' },
+  ruled_out:     { color: 0x8A8A96, opacity: 0.7,  dash: [2, 2], label: 'ruled out — disproved, kept on purpose' }
+};
+var GEN_TIER_ORDER = ['named', 'inherited', 'reconstructed', 'ruled_out'];
 function buildGenerativeChains() {
   var solNode = {}, resNode = {};
   meshes.forEach(function(m) {
@@ -97,11 +109,35 @@ function buildGenerativeChains() {
   GENERATIVE.forEach(function(gc) {
     var s = solNode[gc.source], r = resNode[gc.target];
     if (!s || !r) return;
-    var geo = new THREE.BufferGeometry().setFromPoints([s.position.clone(), r.position.clone()]);
-    var c1 = new THREE.Color(0x6A3A12), c2 = new THREE.Color(0xF09A3C);  // dim source -> bright target = direction
-    geo.setAttribute('color', new THREE.Float32BufferAttribute([c1.r, c1.g, c1.b, c2.r, c2.g, c2.b], 3));
-    var mat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.5 });
-    var line = new THREE.Line(geo, mat);
+    var p1 = s.position.clone(), p2 = r.position.clone();
+    var line;
+    if (gc.tier && GEN_TIER_STYLE[gc.tier]) {
+      // Tiered links (fixture build): the tier is the claim, so it is drawn, not scored.
+      var st = GEN_TIER_STYLE[gc.tier], pts = [p1, p2], geo;
+      if (gc.tier === 'ruled_out') {
+        // Struck through, never deleted: a short bar across the midpoint.
+        var mid = p1.clone().add(p2).multiplyScalar(0.5);
+        var dir = p2.clone().sub(p1);
+        var perp = dir.clone().cross(new THREE.Vector3(0, 1, 0));
+        if (perp.lengthSq() < 1e-6) perp = dir.clone().cross(new THREE.Vector3(1, 0, 0));
+        perp.normalize().multiplyScalar(Math.max(2, dir.length() * 0.06));
+        pts = [p1, p2, mid.clone().sub(perp), mid.clone().add(perp)];
+        geo = new THREE.BufferGeometry().setFromPoints(pts);
+      } else {
+        geo = new THREE.BufferGeometry().setFromPoints(pts);
+      }
+      var mat = st.dash
+        ? new THREE.LineDashedMaterial({ color: st.color, dashSize: st.dash[0], gapSize: st.dash[1], transparent: true, opacity: st.opacity })
+        : new THREE.LineBasicMaterial({ color: st.color, transparent: true, opacity: st.opacity });
+      line = (gc.tier === 'ruled_out') ? new THREE.LineSegments(geo, mat) : new THREE.Line(geo, mat);
+      if (st.dash) line.computeLineDistances();
+    } else {
+      var geo = new THREE.BufferGeometry().setFromPoints([p1, p2]);
+      var c1 = new THREE.Color(0x6A3A12), c2 = new THREE.Color(0xF09A3C);  // dim source -> bright target = direction
+      geo.setAttribute('color', new THREE.Float32BufferAttribute([c1.r, c1.g, c1.b, c2.r, c2.g, c2.b], 3));
+      var mat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.5 });
+      line = new THREE.Line(geo, mat);
+    }
     line.userData = { type: 'generative', chain: gc, mesh1: s, mesh2: r };
     scene.add(line);
     generativeLines.push(line);
@@ -110,6 +146,22 @@ function buildGenerativeChains() {
 
 function prsToggleGenerative(checked) {
   showGenerative = checked;
+  applyPRSFilters();
+}
+
+// One click instead of two unchecks: hide threads and coils, keep the generative layer.
+// A second click restores both.
+function prsIsolateGenerative() {
+  var e = document.getElementById('prs-chk-edges');
+  var c = document.getElementById('prs-chk-coils');
+  var g = document.getElementById('prs-chk-generative');
+  var isolated = showGenerative && !showThreads && !showCoils;
+  if (e) e.checked = isolated;
+  if (c) c.checked = isolated;
+  if (g) g.checked = true;
+  showThreads = isolated; showCoils = isolated; showGenerative = true;
+  var b = document.getElementById('prs-btn-isolate');
+  if (b) b.textContent = isolated ? 'Generative only' : 'Show all layers';
   applyPRSFilters();
 }
 
@@ -188,6 +240,15 @@ NEW_LEGEND = r"""function buildLegend() {
   var nConv = 0; for (var k in resourceTraditions) { if (Object.keys(resourceTraditions[k]).length >= 2) nConv++; }
   html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#9673;</span> Convergence hub &#8212; resource shared across &#8805;2 traditions (' + nConv + ')</div>';
   html += '<div class="legend-item"><span style="color:#F09A3C;font-size:15px">&#8594;</span> Generative coil &#8212; a solution feeding a downstream resource (' + (typeof GENERATIVE !== 'undefined' ? GENERATIVE.length : 0) + ')</div>';
+  var tierN = {}, anyTier = false;
+  (typeof GENERATIVE !== 'undefined' ? GENERATIVE : []).forEach(function(g) { if (g.tier) { tierN[g.tier] = (tierN[g.tier] || 0) + 1; anyTier = true; } });
+  if (anyTier) {
+    GEN_TIER_ORDER.forEach(function(t) {
+      var st = GEN_TIER_STYLE[t], hex = '#' + ('000000' + st.color.toString(16)).slice(-6);
+      var bar = st.dash ? 'border-top:2px dashed ' + hex : 'border-top:2px solid ' + hex;
+      html += '<div class="legend-item" style="padding-left:14px"><span style="display:inline-block;width:18px;vertical-align:middle;' + bar + (t === 'ruled_out' ? ';text-decoration:line-through' : '') + '"></span> ' + st.label + ' (' + (tierN[t] || 0) + ')</div>';
+    });
+  }
   html += '<div class="legend-item" style="color:#6f6f80;font-size:10px;margin-top:6px">Pattern-detector findings: ' + (typeof FINDINGS !== 'undefined' ? FINDINGS.length : 0) + '</div>';
   legendEl.innerHTML = html;
 }"""
@@ -205,6 +266,9 @@ COIL_CHECKBOX = """  <div class="prs-filter-item">
     <input type="checkbox" id="prs-chk-generative" checked onchange="prsToggleGenerative(this.checked)">
     <span class="prs-filter-dot" style="background:#F09A3C"></span>
     <span class="prs-filter-label" style="font-weight:600">Generative</span>
+  </div>
+  <div class="prs-filter-item">
+    <button id="prs-btn-isolate" onclick="prsIsolateGenerative()" style="font-size:10px;padding:2px 8px;background:#2a2a3e;color:#F09A3C;border:1px solid #F09A3C;border-radius:3px;cursor:pointer">Generative only</button>
   </div>
 """
 
@@ -277,6 +341,11 @@ function narrativeHTML(triplet, thinker) {
 function edgeLabelHTML(d) {
   var txt = 'PRS thread', col = '#888';
   if (d.type === 'coil' && d.coil) { col = '#3FE0D0'; txt = 'Synergistic coil &#8212; ' + (d.coil.nature || '') + (d.coil.year ? ' &#183; ' + d.coil.year : ''); }
+  else if (d.type === 'generative' && d.chain && d.chain.tier && GEN_TIER_STYLE[d.chain.tier]) {
+    var gst = GEN_TIER_STYLE[d.chain.tier];
+    col = '#' + ('000000' + gst.color.toString(16)).slice(-6);
+    txt = 'Generative coil &#8212; ' + gst.label + (d.chain.basis ? '<div style="color:#9a9aae;margin-top:4px">' + d.chain.basis + '</div>' : '');
+  }
   else if (d.type === 'generative') { col = '#F09A3C'; txt = 'Generative coil &#8212; solution &#8594; resource'; }
   else if (d.type === 'cross' && d.finding) { col = '#C9A84C'; txt = 'Cross-tradition link &#8212; ' + (d.finding.type || ''); }
   return '<div style="font-size:11px;color:' + col + ';border-bottom:1px solid #2a2a3e;padding-bottom:6px;margin-bottom:8px">' + txt + '</div>';

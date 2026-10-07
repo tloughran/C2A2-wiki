@@ -510,6 +510,11 @@ def main():
                     help="Emit generative coils that run backwards or level in time, "
                          "tagged with their direction, instead of dropping them. For "
                          "inspection; the renderer's legend claims a forward arrow.")
+    ap.add_argument("--links", default="",
+                    help="Tiered link list from build_tiered_links.py. Replaces the lexical "
+                         "GENERATIVE layer with links carrying a `tier` (named / inherited / "
+                         "reconstructed / ruled_out). Fixture only for now: the live corpus "
+                         "has no answer key and its dates are mostly filing dates.")
     ap.add_argument("--write-pubmap", action="store_true",
                     help="Persist merged pub_year map into <vault>/master/prs_pub_years.json")
     args = ap.parse_args()
@@ -533,6 +538,22 @@ def main():
     coils = derive_coils(cross, triplets)
     generative, gen_stats = gen_chains(triplets, min_shared=3, min_jaccard=0.15,
                                        keep_backward=args.keep_backward)
+    if args.links:
+        ids = {t["id"] for t in triplets}
+        generative = json.load(open(args.links, encoding="utf-8"))
+        unknown = [l for l in generative if l["source"] not in ids or l["target"] not in ids]
+        if unknown:
+            raise SystemExit("FAIL: %d tiered links name triplets not in this vault, e.g. %s -> %s"
+                             % (len(unknown), unknown[0]["source"], unknown[0]["target"]))
+        by_id = {t["id"]: t for t in triplets}
+        for l in generative:
+            a, b = by_id[l["source"]], by_id[l["target"]]
+            l["direction"], l["direction_basis"] = gen_direction(a, b)
+            l.update({"thinker_source": a["thinker"], "thinker_target": b["thinker"],
+                      "same_tradition": a["thinker"] == b["thinker"],
+                      "pub_year_source": a.get("pub_year"), "pub_year_target": b.get("pub_year")})
+        print("links: replaced lexical GENERATIVE with %d tiered links from %s"
+              % (len(generative), args.links))
     if cross_dups:
         fallbacks.append("CROSS dup headers (kept newer em-dash form): " + ", ".join("CROSS-" + d for d in cross_dups))
 
@@ -585,10 +606,23 @@ def main():
     # weak edge, it is the opposite of the claim its legend makes -- so the count of
     # what was rejected is reported next to what survived, never just the survivors.
     print("--- generative coil direction (solution must precede resource) ---")
+    if args.links:
+        # The lexical counts below describe the layer that was REPLACED. The tiered
+        # layer is not filtered on direction -- a ruled-out link keeps its own order --
+        # so state its directions outright instead of letting "kept (forward)" claim it.
+        tiers = {}
+        for g in generative:
+            k = (g.get("tier", "?"), g["direction"])
+            tiers[k] = tiers.get(k, 0) + 1
+        print("  TIERED LAYER from --links (%d links); lexical counts below are the replaced layer"
+              % len(generative))
+        for k in sorted(tiers):
+            print("    %-14s %-9s %d" % (k[0], k[1], tiers[k]))
     print("  candidates over threshold %d" % s["generative_candidates"])
-    print("  kept (forward)            %d  (%d within-tradition, %d across)"
-          % (s["generative"], s["generative_within_tradition"],
-             s["generative"] - s["generative_within_tradition"]))
+    if not args.links:
+        print("  kept (forward)            %d  (%d within-tradition, %d across)"
+              % (s["generative"], s["generative_within_tradition"],
+                 s["generative"] - s["generative_within_tradition"]))
     print("  rejected (backward)       %d" % s["generative_backward_rejected"])
     print("  rejected (same date)      %d" % s["generative_same_date_rejected"])
     print("  collapsed (duplicate prose to the same target) %d"
