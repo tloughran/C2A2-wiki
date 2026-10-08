@@ -59,7 +59,7 @@ const METABOLISM_SRC = 'metabolism/metabolism_view.html';
 // toggle, the left page's close, Reset View -- and the point of pinning the
 // number is that a new control cannot join that list without reddening the gate.
 // Raise it only together with the manifest entry that explains the new one.
-const PRS_DEFERRED = 5;
+const PRS_DEFERRED = 6;
 
 // ---------------------------------------------------------------- tiny CDP ---
 

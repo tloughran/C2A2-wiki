@@ -1906,6 +1906,11 @@
           "next": "connectome increment 2 -- a `toggle` bind kind, which several flat tabs will want"
         },
         {
+          "match": "#prs-btn-isolate",
+          "reason": "bool drawn as one button, toggles its own label; a shortcut over three already-covered checkboxes",
+          "next": "connectome increment 2 -- a toggle bind kind"
+        },
+        {
           "match": "#prs-left-page .close-btn",
           "reason": "the LEFT page, which only an edge click opens (showEdgeInfo puts the source narrative there and the target on the right). `close` covers the right panel only, exactly the asymmetry the Sociogram's dismissLeftPage deferral names",
           "next": "connectome increment 2, with edge selection"
