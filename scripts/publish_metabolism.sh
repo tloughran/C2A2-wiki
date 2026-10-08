@@ -28,7 +28,8 @@ REPO="/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project"
 HTML="wiki/metabolism/metabolism_view.html"
 JSON="wiki/metabolism/metabolism_data.json"
 VALIDATOR="wiki/c2a2-wiki-narration/scripts/validate_html.py"
-MAX_AGE_HOURS=36          # files older than this = stale = refuse to publish
+MAX_AGE_HOURS=36          # data generated longer ago than this = stale = refuse
+                          # to publish. Measured from _meta.generated, NOT mtime.
 LOG="$REPO/metabolism-monitor/publish.log"
 
 ts() { date "+%Y-%m-%dT%H:%M:%S%z"; }
@@ -45,13 +46,56 @@ log "=== publish_metabolism start ==="
 [ -f "$JSON" ] || fail "missing $JSON"
 
 # --- 1. Freshness: refuse to publish a stale regen (sandbox run may have failed) ---
-now=$(date +%s)
-json_mtime=$(stat -f %m "$JSON")              # BSD stat (macOS)
-age_h=$(( (now - json_mtime) / 3600 ))
-if [ "$age_h" -gt "$MAX_AGE_HOURS" ]; then
-  fail "FRESHNESS: $JSON is ${age_h}h old (> ${MAX_AGE_HOURS}h). Sandbox regen likely did not run."
+#
+# Read the date the GENERATOR wrote into the file (_meta.generated), never the
+# file's mtime. This used to be `stat -f %m "$JSON"`, and that failed in the
+# DANGEROUS direction: the 22:00 summa-vault-sync rebase rewrites working-tree
+# files, which resets their mtimes, so a file whose data had been stale for days
+# looked minutes old and sailed through this gate. The connectome bug had the
+# same root cause (git not preserving mtimes) but failed safe -- it refused to
+# publish fresh work. This one would have published stale data believing it
+# fresh. Same remedy as there: compare against the artifact's own build stamp.
+#
+# _meta.generated is the field check_scheduler_health.py already reads for this
+# artifact (see its ARTIFACTS table), so the checker and the publisher now agree
+# on what "fresh" means.
+#
+# A missing or unparseable stamp is a FAIL, not a fallback to mtime: an
+# unstamped file is exactly the case this gate cannot judge, and silently
+# reverting to mtime would reinstate the bug on the one file that needs the gate
+# most.
+# The 2>&1 belongs on THIS line, before the heredoc body. Written after the PY
+# terminator it parses as a separate null command, which swallows python's exit
+# status and makes the `if !` always false -- i.e. a missing stamp would pass
+# the gate silently, the exact failure this block exists to prevent.
+if ! age_h=$(python3 - "$JSON" 2>&1 <<'PY'
+import json, sys
+from datetime import datetime, timezone
+
+try:
+    meta = (json.load(open(sys.argv[1])) or {}).get("_meta") or {}
+except (OSError, ValueError) as exc:
+    sys.exit(f"cannot read JSON: {exc}")
+
+stamp = meta.get("generated")
+if stamp is None:
+    sys.exit("_meta.generated is absent -- the file does not date itself")
+try:
+    generated = datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+except ValueError:
+    sys.exit(f"_meta.generated is not an ISO-8601 timestamp: {stamp!r}")
+if generated.tzinfo is None:
+    generated = generated.astimezone()
+
+print(int((datetime.now(timezone.utc) - generated).total_seconds() // 3600))
+PY
+); then
+  fail "FRESHNESS: cannot read a build stamp from $JSON: $age_h. Refusing to fall back to mtime -- the rebase resets mtimes, so that check would read a stale file as fresh. Fix the generator to stamp _meta.generated."
 fi
-log "freshness OK: data is ${age_h}h old"
+if [ "$age_h" -gt "$MAX_AGE_HOURS" ]; then
+  fail "FRESHNESS: $JSON was generated ${age_h}h ago (> ${MAX_AGE_HOURS}h) per its own _meta.generated. Sandbox regen likely did not run."
+fi
+log "freshness OK: data was generated ${age_h}h ago (per _meta.generated)"
 
 # --- 2. Nothing to publish? Exit clean. ---
 if git diff --quiet HEAD -- "$HTML" "$JSON"; then
