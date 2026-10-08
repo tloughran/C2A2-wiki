@@ -21508,28 +21508,28 @@ PRESUMPTION-863 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-549)
   cap-adjustment authority as a design obligation rather than by MAPE-K analogy. The arithmetic limb
   is settled (PREMISE-106) and is NOT re-queued. Priority: High.
 
-PRESUMPTION-867 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-551)
+PRESUMPTION-867 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-551) [SEARCHED-15a: 2026-10-08] [SEARCHED-15b: 2026-10-08] [DISPOSITIONED-15c: 2026-10-08 → REVISE-510 (DISPOSITION-1051)]
   Conjunct 2 only. Named and unsearched: Manheim & Garrabrant on Goodhart formalisations; Vaughan on
   normalization of deviance; measurement gaming; Inozemtseva & Holmes (2014) as a proxy-metric case.
   Support -> INCORPORATE clause 2 with caveats; challenge -> REVISE at HIGH urgency. Priority: High.
 
-PRESUMPTION-865 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-552)
+PRESUMPTION-865 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-552) [SEARCHED-15a: 2026-10-08] [SEARCHED-15b: 2026-10-08] [DISPOSITIONED-15c: 2026-10-08 → REVISE-511 (DISPOSITION-1052)]
   The RECOVERABILITY limb, which 15a reached only preliminarily: sampling bias and
   inverse-probability weighting; systematic-review database-coverage bias; file-drawer at the level of
   what was never searched. Centre on 15a's own unaddressed sub-claim. Priority: High.
 
-PRESUMPTION-876 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-553)
+PRESUMPTION-876 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-553) [SEARCHED-15a: 2026-10-08] [SEARCHED-15b: 2026-10-08] [DISPOSITIONED-15c: 2026-10-08 → REVISE-512 (DISPOSITION-1053)]
   **Carries an unarbitrated 15a/15b disagreement and is the highest-value literature item in this
   cohort for that reason:** 15a reached the bitemporal/temporal-database literature and read it as
   supportive; 15b predicted it would be decisive against. Also owed: alarm auto-clear, re-arm,
   flapping, heartbeat/liveness timeout. The searcher must arbitrate, not average. Priority: High.
 
-ASSUMPTION-1211 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-554)
+ASSUMPTION-1211 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-554) [SEARCHED-15a: 2026-10-08] [SEARCHED-15b: 2026-10-08] [DISPOSITIONED-15c: 2026-10-08 → MONITOR-684 (DISPOSITION-1054)]
   **Cheapest item in the cohort: one full-text fetch.** arXiv:2604.18880 was cited at intake but never
   read past snippet level, and its field-level finding decides the disposition. Paired empirical limb
   (three-account discriminator) is noted but not queued as a search. Priority: High.
 
-PRESUMPTION-888 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-565)
+PRESUMPTION-888 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-565) [SEARCHED-15a: 2026-10-08] [SEARCHED-15b: 2026-10-08] [DISPOSITIONED-15c: 2026-10-08 → REVISE-513 (DISPOSITION-1055)]
   15a returned NO-SUPPORT-FOUND with Strong support for the negation (streetlight effect), on snippet
   -level evidence only. What is owed is the same literature read at more than snippet level.
   Priority: Medium.
@@ -25372,3 +25372,16 @@ ITEM: PRESUMPTION-1114 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-04 — empirica
 **Backups:** *.bak.20261007-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
 **Backlog remaining (fail loud):** 142 bare literature-lane items before this run; 137 remain. Not touched.
 **Independence:** separate subagent contexts, same model family (cf. REVISE-488). 15b saw one-line cycle-0 15a verdicts in monitor_queue.md (by instruction); neither read the other's files this run.
+
+
+## 2026-10-08 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** No new 14a/14b intake (assumptions.md/presumptions.md unmodified since 2026-10-03 23:45; changelog/2026-10-08_changes.md is a RUN_INCOMPLETE cloud stub). Per the 10-05..10-07 precedent, a backlog batch of 5: the five newest bare items, all from the 09-13 15d re-trigger cohort (PRESUMPTION-888, ASSUMPTION-1211, PRESUMPTION-876, PRESUMPTION-865, PRESUMPTION-867). Orchestrator choice, not in the task spec.
+**Dispositions:** DISPOSITION-1051..1055 — 0 INCORPORATE, 1 MONITOR (1211 → MONITOR-684, Medium), 4 REVISE (867 → REVISE-510 High; 865 → REVISE-511 High; 876 → REVISE-512 High; 888 → REVISE-513 Medium).
+**Arbitration (876):** the cycle-0 bitemporal disagreement is resolved — both directions now reject the presumption as stated; their split on which half bitemporal supports is judged largely terminological (DISPOSITION-1053).
+**Citation correction (1211):** per 15b's full-PDF read, the "token-space" sentence attributed to arXiv:2604.18880 at cycle 0 is not in the paper; both cycle-0 readings over-read one snippet. 15c did not independently read the PDF.
+**Orphan file found:** lit_search_results/for/ASSUMPTION-1211_for_cycle1.md (09-17) was never registered; now cited in 1211's provenance. ASSUMPTION-508_for_cycle1.md (same date) is also unregistered; superseded by the 10-07 pass, left as is.
+**SYSTEMIC-RISK (15b, High):** no negative state in the status vocabulary (867, 865, 876, 888) — lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-08_no-negative-state-in-status-vocabulary.md. 15c reads REVISE-510..513 as one design change: add explicit negative states (failed-but-reported, superseded/stale, never-sampled, unassessed).
+**Backups:** *.bak.20261008-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
+**Backlog remaining (fail loud):** 137 bare literature-lane items before this run; 132 remain. Not touched.
+**Independence:** separate subagent contexts, same model family (cf. REVISE-488). 15b saw one-line cycle-0 15a verdicts in monitor_queue.md; neither read the other's 10-08 files. Fetch refusals: 15a's arXiv:2604.18880 PDF returned no content (abstract only); 15b's Jensen & Snodgrass TKDE PDF empty.

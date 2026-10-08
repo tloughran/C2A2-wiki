@@ -10,6 +10,8 @@ searched_on: 2026-10-01
 status: pending
 ---
 
+> [TRACKED-16: 2026-10-08] CHANGE disposition recorded 2026-10-07. Tracked by Agent 16 as WATCH-004. Status: AWAITING-REVISION — Tom's instruction (appended below) requires the Fredrickson agent or Tom to correct the Cross-Tradition Signals sentence on inter-tradition dialogue; Agent 16 does not edit content. Checked weekly; on correction, re-queued to pending/.
+
 ## Summary
 Wells, Shdo, Yee, Heath, Fredrickson & Levenson (*Innovation in Aging* 9, Suppl. 2, igaf122.290; doi:10.1093/geroni/igaf122.290). This is a peer-reviewed GSA symposium abstract, not a full paper. In 185 caregiver–person-with-dementia pairs, the team videotaped an unrehearsed 10-minute conversation about **an area of conflict**. Coders scored the conversation with the Behavioral Indicators of Positivity Resonance (BIPR): dyad-level positive affect, mutual warmth, and synchrony. Higher BIPR went with better caregiver mental health: emotional well-being r(181) = .19, p = .008; depression r(179) = −.17, p = .025; anxiety r(180) = −.15, p = .045. The associations held after controlling for caregiver age and sex and for the patient's dementia severity, cognitive impairment, and neuropsychiatric behavior (β = .18, −.15, −.15; p = .012, .039, .044).
 

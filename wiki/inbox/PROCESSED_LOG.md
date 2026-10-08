@@ -2155,3 +2155,17 @@ Master / Pattern Detector: CROSS-141..146; 9 signals forwarded; FINDING-095..098
 **Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
 
 **Network: 998 PRS / 146 CROSS / 98 FINDING.** Pending = 1 (Kastrup PROP-2026-10-07-001). needs_review +1 (PROP-2026-10-01-001).
+
+## 2026-10-08 — C2A2 daily run (Thu, Stump + Fredrickson specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: 10-06 thread (processed 10-07) plus the 4 old archived threads. No moves.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=468 ingested=437 decided-zero=29, OPEN=1 (Wright PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Fredrickson covered by specialist (PROP-2026-10-08-001..002). Stump searched: only hit already captured.
+**Phase 3.** `review/2026-10-08_review.html` (30,829 bytes, 3 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-5864899722923296269).
+**Phase 5.** `review/2026-10-04_review.html` moved to `review/_superseded/`. 10-05, 10-07, 10-08 retained.
+**Phase 5.5.** OK: 6,997,379 bytes; triplets 998; cards 513, dates 142, responses 17; 19 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1683 signals (+0), 90 pairs, span to 2026-10-06, stale_days 2, no WARN; qc_trace.csv not promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 998 PRS / 146 CROSS / 98 FINDING.** Pending = 3.

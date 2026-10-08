@@ -15981,3 +15981,47 @@ REVISE-509:
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1303_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1303_retrigger-2026-10-07_against.md
   Status: AWAITING TOM
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-510:
+  Date: 2026-10-08 | Source: DISPOSITION-1051 (15c) | Item: PRESUMPTION-867, conjunct 2 (supersedes MONITOR-551) (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Weak, conditional) | 15b: CHALLENGED (Moderate)
+  Finding: Booking a run that faithfully reports total failure as "completed/successful" corrupts the aggregate health metric even with no one gaming it (Manheim & Garrabrant 2018, full text; Inozemtseva & Holmes 2014). The only supported form keeps COMPLETED and SUCCESSFUL as separate fields (GitHub checks API: status vs conclusion).
+  What is at risk: every run-success tally in the estate (RUN_INCOMPLETE runs, null runs, conflict-exit runs) and any health metric built on it.
+  Recommended action: Split run status into two fields — completion (did it finish and report?) and outcome (did it do its job?). Count fail-loud runs as completed, never as successful. Then compute the 49-day success rate both ways (MONITOR-551's in-house test) to size the past distortion.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-867_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-867_retrigger-2026-10-08_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-511:
+  Date: 2026-10-08 | Source: DISPOSITION-1052 (15c) | Item: PRESUMPTION-865, recoverability limb (supersedes MONITOR-552) (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Moderate, conditional) | 15b: CHALLENGED (Moderate-Strong)
+  Finding: Coverage lost to an adaptive collection policy is recoverable only if each channel's selection odds were logged and nonzero, or the skipped channels can still be searched later (Hadad et al. PNAS 2021). A stratum never collected cannot be reweighted back (positivity; PMC8492528). Counter-evidence: Cochrane-level coverage changes are small and non-directional (Hartling 2015).
+  What is at risk: the live collection-narrowing decision (closed loop with PRESUMPTION-875); "low cost" holds only while the conditions above hold.
+  Recommended action: Before narrowing further, (1) log which channels were dropped, when, and at what sampling rate; (2) keep a small nonzero sampling rate on dropped channels rather than zero; (3) keep dropped channels re-searchable. Or run the back-fill experiment MONITOR-552 named.
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-865_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-865_retrigger-2026-10-08_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-512:
+  Date: 2026-10-08 | Source: DISPOSITION-1053 (15c) | Item: PRESUMPTION-876 (supersedes MONITOR-553) (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Moderate/None by limb) | 15b: CHALLENGED (Strong/Moderate by limb)
+  Finding: A dated verdict in an append-only register cannot be read as current without a mechanism. The bitemporal literature (Fowler; Torp, Jensen & Snodgrass) makes "current" depend on a closed or open validity interval, closed by appending a later entry. That works only when every change gets written. For health verdicts whose invalidating event nobody observes, SRE practice uses leases: alerts expire unless re-sent (Prometheus, fetched). The 15a/15b split on which half bitemporal supports is recorded in DISPOSITION-1053 as largely terminological.
+  What is at risk: any reader (agent or human) that takes the latest dated verdict as present state; extends PREMISE-087 (bitemporal encoding). Operative fix already authorised under PREMISE-087/126/181.
+  Recommended action: Give each verdict entry (a) a valid-until or superseded-by field, written by the entry that replaces it, and (b) a lease: verdicts not re-asserted within N days render as STALE, not current. Then measure the register's stale-exposure rate (15b cycle-0 test).
+  Urgency: High
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-876_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-876_retrigger-2026-10-08_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+REVISE-513:
+  Date: 2026-10-08 | Source: DISPOSITION-1055 (15c) | Item: PRESUMPTION-888 (supersedes MONITOR-565) (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Moderate, conditional only) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Finding: No source supports "material has value because an existing consumer reads it." Archival appraisal theory rejects use as a measure of value even when users are external (Duranti 1994; Beaven 1999). Both directions agree use becomes circular when the only consumer is the assessing system's own instrument (Harnad 2008), which PREMISE-124 already holds.
+  What is at risk: any pruning, ranking or "unused = low value" judgement that reads consumption by C2A2's own instruments as evidence of worth.
+  Recommended action: Run MONITOR-565's discriminating test: take material the current instrument does not read and check whether any register marks it UNASSESSED. If none does, add an UNASSESSED status, and stop treating "not read" as "low value".
+  Urgency: Medium
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-888_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-888_retrigger-2026-10-08_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED

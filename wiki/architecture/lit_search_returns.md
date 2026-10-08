@@ -50654,3 +50654,65 @@ DISPOSITION-1050:
 
 Running totals after this run: PREMISE-224 | MONITOR-683 | REVISE-509 | DISPOSITION-1050.
 Distribution (5 items): 1 INCORPORATE, 2 MONITOR, 2 REVISE. Not done: 137 bare literature-lane backlog items. Budget: over the 4k/30k guideline (2 subagents, ~340k tokens) — surfaced per Rule 6.
+
+## 15a/15b/15c RUN — 2026-10-08 (scheduled c2a2 lit-search pipeline; 15d re-trigger backlog, 5 items: PRESUMPTION-888, ASSUMPTION-1211, PRESUMPTION-876, PRESUMPTION-865, PRESUMPTION-867)
+
+No new 14a/14b intake (assumptions.md/presumptions.md unmodified since 2026-10-03 23:45; 10-08 14a/14b cloud run RUN_INCOMPLETE). Batch rule (10-05..10-07 precedent): newest bare 15d re-triggers first, cap 5 — the 09-13 cohort's five newest. Scope PRELIMINARY: ~3 searches, ≤2 fetches per item per side (15a 14 searches/11 fetch attempts; 15b 12 searches/8 fetch attempts).
+Found at start: an UNREGISTERED 15a cycle-1 file, for/ASSUMPTION-1211_for_cycle1.md (dated 2026-09-17; never tagged in the queue). 15a this run read and re-verified it; it is now registered as part of 1211's provenance. (Also unregistered from the same date: for/ASSUMPTION-508_for_cycle1.md — superseded by the 10-07 pass; not acted on.)
+
+### 15a returns (FOR)
+- PRESUMPTION-867: PARTIALLY-SUPPORTED (Weak) for a conditional form only; NO-SUPPORT-FOUND as stated. A failure-reporting run may be booked COMPLETED, never SUCCESSFUL (GitHub checks API keeps status and conclusion separate [search-result]). Inozemtseva & Holmes 2014 [fetched, full text] and Manheim & Garrabrant [fetched, abstract] lean against. Cycle-0 NOVELTY withdrawn.
+- PRESUMPTION-865: PARTIALLY-SUPPORTED (Moderate, conditional). Recoverable only if selection propensities were logged and nonzero, or skipped channels remain searchable later. Hadad et al. PNAS 2021 [fetched, abstract]; Hartling et al. Cochrane 2015 [fetched, abstract]. NOVELTY: partial.
+- PRESUMPTION-876: PARTIALLY-SUPPORTED (Moderate) on append-only correction; NO-SUPPORT-FOUND on staleness. Fowler "Bitemporal History" [fetched, full text]; Prometheus Alerts API [fetched, full text] (firing alerts expire unless re-sent). Cycle-0 SUPPORTED downgraded. NOVELTY: no.
+- ASSUMPTION-1211: SUPPORTED (Strong) general mechanism / PARTIALLY (Moderate) adjacency / NO-SUPPORT exclusivity. arXiv:2604.18880 [fetched, abstract only — PDF fetch returned no content]; orphan cycle-1 file's reading "survives" against the abstract. NOVELTY: partial.
+- PRESUMPTION-888: PARTIALLY-SUPPORTED (Moderate) for the conditional; NO-SUPPORT-FOUND as stated. Greene 1998 Archivaria [fetched, abstract] (external-consumer half); Harnad 2008 [fetched, full text] (circularity half). No single source states the conditional. NOVELTY: partial.
+  PROVENANCE (all): Transform: literature search FOR (re-trigger cycle 1) | Results: wiki/architecture/lit_search_results/for/<ID>_retrigger-2026-10-08_for.md
+
+### 15b returns (AGAINST)
+- PRESUMPTION-867: CHALLENGED (Moderate). Manheim & Garrabrant 2018 arXiv:1803.04585 [fetched, full text] — metric manipulation corrupts a metric with no optimiser; Inozemtseva & Holmes 2014, Vaughan 1996 [search-result]. STEELMAN: booking honest failures as successes grows the success column with failures, faster the better fail-loud works.
+- PRESUMPTION-865: CHALLENGED (Moderate-Strong). PMC8492528 (2021) [fetched]: a never-collected stratum cannot be recovered by reweighting (positivity); Konno & Pullin 2020 [search-result]; counter-evidence reported (Cochrane changes small, non-directional). STEELMAN: the policy that dropped a stratum is the one part that cannot know to go back.
+- PRESUMPTION-876: CHALLENGED (Strong on retraction, Moderate on staleness). Torp, Jensen & Snodgrass "Effective Timestamping" [fetched]. STEELMAN: "until changed" works only if someone reports the change; nobody reports when a health verdict stops being true. SRE alarm sources trade-level only; auto-clear/re-arm/flapping not reached.
+- ASSUMPTION-1211: PARTIALLY-CHALLENGED (Weak). arXiv:2604.18880 [fetched, full PDF]: closed-book field-level study; compares none of adjacency/similarity/propagation. The "token-space" sentence cycle-0 15b quoted from it does NOT appear in the PDF (likely a search-engine summary); 15a's "derived from a real reference by altering fields" reading also overstates it. Cycle-0 challenge withdrawn. STEELMAN: one case of five where adjacency and similarity cannot be told apart.
+- PRESUMPTION-888: PARTIALLY-CHALLENGED (Moderate). Duranti 1994, Beaven 1999 [fetched]: archival theory rejects use as a value measure even for external users; Maddi et al. 2023 [search-result]. Clause 2 of the conditional stands, clause 1 fails; the conditional originated in cycle-0 15b's text (not independent). STEELMAN: outside readers have their own streetlights.
+- SYSTEMIC-RISK (High): "no negative state in the status vocabulary" — 867, 865, 876, 888. wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-08_no-negative-state-in-status-vocabulary.md
+  PROVENANCE (all): Transform: literature search AGAINST (re-trigger cycle 1) | Results: wiki/architecture/lit_search_results/against/<ID>_retrigger-2026-10-08_against.md
+
+## 15c — dispositions, 2026-10-08
+
+DISPOSITION-1051:
+  Date: 2026-10-08 | Item: PRESUMPTION-867 (conjunct 2) | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak, conditional) | 15b: CHALLENGED (Moderate)
+  Disposition: REVISE -> REVISE-510
+  Reasoning: Convergent. 15a's only support is for a narrower claim than the presumption — a failure-reporting run may count as COMPLETED, not SUCCESSFUL — and 15b shows the unnarrowed booking corrupts the aggregate without any optimiser (Manheim & Garrabrant, full text). MONITOR-551 pre-registered "challenge → REVISE, HIGH". PRESUMPTION + weak support + moderate challenge → REVISE High. The in-house test (49-day success rate with/without failure-reporting runs) still decides magnitude, not direction.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1052:
+  Date: 2026-10-08 | Item: PRESUMPTION-865 (recoverability limb) | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate, conditional) | 15b: CHALLENGED (Moderate-Strong)
+  Disposition: REVISE -> REVISE-511
+  Reasoning: Both directions converge on the same condition: adaptive-coverage loss is recoverable only if selection propensities were logged and nonzero, or the skipped channels can still be searched. Neither condition is known to hold in C2A2, and a never-collected stratum cannot be reweighted back (positivity). MONITOR-552 pre-registered "not recoverable → REVISE, HIGH"; the narrowing is live and irreversible. REVISE High; the recommendation is to make the conditions true, not to abandon narrowing.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1053:
+  Date: 2026-10-08 | Item: PRESUMPTION-876 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate retraction-free correction; None staleness) | 15b: CHALLENGED (Strong retraction; Moderate staleness)
+  Disposition: REVISE -> REVISE-512
+  Arbitration (per PREMISE-161, recorded not averaged): both directions now agree the presumption as stated ("without a staleness OR retraction mechanism") fails, but they read the bitemporal literature onto OPPOSITE halves — 15a: bitemporal supports append-only correction and is against staleness-free currency; 15b: bitemporal supports persistence-until-changed (no TTL) and makes retraction constitutive. 15c reading: the disagreement is largely terminological. Both describe correction by APPENDING a row that closes the prior entry's validity/transaction interval — "no destructive retraction" (15a) and "retraction by interval-closing" (15b) are the same operation. Both also agree that persistence-until-changed presupposes that every invalidating change is written, which fails for health verdicts whose invalidating event is unobserved; there the SRE lease/heartbeat pattern (Prometheus, fetched) requires expiry. Net: the register needs (a) an explicit validity interval / superseded-by on each verdict and (b) a lease or staleness rule for verdicts no process re-asserts. PRESUMPTION + strong challenge → REVISE High. Consistent with PREMISE-087 (bitemporal encoding), which it extends; the operative fix already proceeds under PREMISE-087/126/181.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1054:
+  Date: 2026-10-08 | Item: ASSUMPTION-1211 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong) general / PARTIALLY (Moderate) adjacency / NO-SUPPORT exclusivity | 15b: PARTIALLY-CHALLENGED (Weak)
+  Disposition: MONITOR -> MONITOR-684 (Medium; supersedes MONITOR-554)
+  Reasoning: MONITOR-554's INCORPORATE trigger was "arXiv:2604.18880 fetched in full and its field-level finding survives reading." 15b fetched the full PDF; 15a obtained only the abstract. On 15b's full-text reading the paper does not address record-to-record confusion at all, the cycle-0 "token-space" quote is not in it, and the "derived by altering fields" gloss overstates it — both cycle-0 directions over-read one snippet in opposite directions. 15c has not itself read the PDF; 15b's full-text read outranks 15a's abstract read on this point. The trigger therefore fails, but so does the cycle-0 challenge. The general mechanism now rests on the other, snippet-level sources (arXiv:2605.27700; memory conjunction errors) — not enough to mint. Priority drops High → Medium: the literature limb on 2604.18880 is discharged; the decider is the in-house three-account discriminator. No further literature pass owed on this paper.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a (orphan cycle-1 file 2026-09-17, registered 2026-10-08), 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1055:
+  Date: 2026-10-08 | Item: PRESUMPTION-888 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate, conditional only; NO-SUPPORT as stated) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Disposition: REVISE -> REVISE-513
+  Reasoning: Neither direction supports the presumption as stated (value routed only through a consumer). On the cycle-0 15c conditional, both support clause 2 (circular when the only consumer is the assessing system's own instrument — Harnad full text; 15b concedes it), while 15b's full-text archival sources (Duranti, Beaven) reject clause 1 (use by external readers as a legitimate proxy). So MONITOR-565's INCORPORATE trigger (independent confirmation of the conditional) fails, and the conditional was not independent anyway (it came from cycle-0 15b's text). Clause 2 adds nothing new: PREMISE-124 already holds it for self-measurement — no new premise minted, no contradiction. PRESUMPTION + no support as stated + moderate challenge → REVISE, Medium urgency.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+Running totals after this run: PREMISE-224 | MONITOR-684 | REVISE-513 | DISPOSITION-1055.
+Distribution (5 items): 0 INCORPORATE, 1 MONITOR, 4 REVISE. SYSTEMIC-RISK (15b, High) concurs with the 10-07 "deposit without drain" flag: registers lack negative states. Not done: 132 bare literature-lane backlog items. Budget: 2 subagents ~366k tokens — over the 4k/30k guideline, surfaced per Rule 6.

@@ -25264,3 +25264,14 @@ MONITOR-683:
   Routing note for 15d: route to Agent 19 (tradition wiki), not 15a/15b, unless Agent 19 declines.
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1244_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1244_retrigger-2026-10-07_against.md
+
+MONITOR-684:
+  Source item: ASSUMPTION-1211 (DISPOSITION-1054; supersedes MONITOR-554) | Item type: ASSUMPTION (stated)
+  Statement watched: "The trap is durable because the writer assembles a plausible gloss from two real neighbouring fields" — the EXCLUSIVITY and causal specific (structural adjacency vs token-space similarity vs propagation). The general recombination mechanism is not in dispute.
+  15a: SUPPORTED (Strong) general / PARTIALLY (Moderate) adjacency / NO-SUPPORT exclusivity (abstract-level read of arXiv:2604.18880; orphan 09-17 cycle-1 file registered) | 15b: PARTIALLY-CHALLENGED (Weak) (full-PDF read)
+  Why monitored: arXiv:2604.18880, read in full by 15b, does not address record-to-record confusion; the cycle-0 "token-space" quote is not in it; both cycle-0 readings over-read one snippet. The INCORPORATE trigger in MONITOR-554 therefore failed; so did the cycle-0 challenge. 15c has not read the PDF itself.
+  What would change the disposition: the in-house three-account discriminator (adjacency vs similarity vs propagation) across the five-member series → INCORPORATE narrowed form (exclusivity excluded) or REVISE. No further literature pass owed on 2604.18880.
+  Priority: Medium (was High) | Cadence: Weekly | Cycle: 1 | Next 15d check: 2026-10-15
+  Routing note for 15d: in-house limb; do not re-queue for 15a/15b unless new mechanistic literature appears.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a (orphan cycle-1, 2026-09-17), 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1211_for_cycle1.md ; wiki/architecture/lit_search_results/for/ASSUMPTION-1211_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1211_retrigger-2026-10-08_against.md
