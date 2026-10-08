@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-37: the path of descent as the transition mechanism, and modernity's manufactured ascent as a substitute for it. PRS-34 ADDED to this file 2026-09-02, Conf High: theodicy relocated from explanation to REALIGNMENT — the demand on a response to suffering is that it reposition the sufferer, not that it explain — which is the register's own statement of why endurance under an unendable duress is a coherent act rather than a resigned one. PRS-52/53/54/55 ADDED 2026-09-01 to the register and installed here 2026-09-02: they state the true-self/false-self material the prior revision said the register did not restate, and PRS-55, Conf High, converts 'dying before you die' into a falsifiable prediction about the terminus)"
 evidence_strength_summary: "Resilience and undo-effect are empirical (Fredrickson); long-horizon attractor vs immediate gradient is formal (Friston); courage-as-standing is empirical/interpretive (McGilchrist); resurrection-grounded endurance is theological (Wright, Rohr)."
 tags: [synthesis, day/179, theme/fortitude, theme/long-horizon-attractor, q/122, q/123]
-last_qc_at: "2026-09-28T18:18:16"
+last_qc_at: "2026-10-06T22:18:03"
 last_qc_outcome: "pass"
 ---
 

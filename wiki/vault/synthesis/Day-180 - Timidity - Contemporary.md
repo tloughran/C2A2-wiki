@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "Wright canonical: resurrection makes martyrdom rational (The Resurrection of the Son of God; Surprised by Hope). NOTE: declination re-tested a THIRD time 2026-09-11 against traditions/wright/prs_triplets.md, now at 68 entries (41 -> 59 -> 68) — still no triplet treating martyrdom, witness-unto-death, or the fear of the Lord. The nine entries added since the 59-entry test were read individually rather than only grepped, because an absence declination is exactly the shape a keyword scan fails open on: PRS-60 through PRS-66 run on pneumatology and new creation, the Church's present vocation, the good/evil predicate on human nature, supersession, the 2 Peter 3 fire imagery, the Genesis gap theory, and how a theologian adjudicates his own communion's internal traditions. None is on-topic. The declination now holds against a register that has grown 66 per cent since it was first stated. Cited canonically and the gap stated."
 evidence_strength_summary: "Threat-precision and repertoire-narrowing are formal/empirical (Friston, Fredrickson); the martyrdom limit case rests on a theological premise (Wright, Rohr) the formalism alone cannot supply."
 tags: [synthesis, day/180, theme/martyrdom, theme/threat-precision, q/124, q/125]
-last_qc_at: "2026-09-28T18:18:16"
+last_qc_at: "2026-10-06T22:18:03"
 last_qc_outcome: "pass"
 ---
 

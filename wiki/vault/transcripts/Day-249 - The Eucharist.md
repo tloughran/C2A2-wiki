@@ -15,7 +15,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-249 - The Eucharist - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-29T04:18:23"
+last_qc_at: "2026-10-07T16:18:05"
 last_qc_outcome: "pass"
 tags: [summa, day/249, pars/3, q/73]
 ---

@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-238 - Burial and Descent - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/238, pars/III, q/51 q/52]
-last_qc_at: "2026-09-29T00:16:52"
+last_qc_at: "2026-10-07T12:17:37"
 last_qc_outcome: "pass"
 ---
 

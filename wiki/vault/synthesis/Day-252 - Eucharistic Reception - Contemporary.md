@@ -18,7 +18,7 @@ evidence_strength_summary: "Same-signal-different-update is formal in kind, but 
 mind_first_reframe: "The one offered whole produces divergent effects because reception is governed by the receiver's disposition — its generative prior (Friston) and participatory uptake (Kastrup) — not by any variation in the offering."
 central_theme_thread: "The same whole is offered entire to every perspective yet assimilated only to the measure of each finite disposition, so growing in charity is the lifelong revision of the prior toward the loving-unity attractor."
 tags: [synthesis, day/252, theme/one-whole-received-by-readiness]
-last_qc_at: "2026-09-29T02:20:10"
+last_qc_at: "2026-10-07T16:18:05"
 last_qc_outcome: "pass"
 ---
 
