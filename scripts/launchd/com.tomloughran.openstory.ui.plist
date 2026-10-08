@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
+  [DISABLED 2026-09-24 — retired. The dev server has been down since 2026-09-24;
+  the production UI on port 3002 has been up throughout, so nothing was lost.
+  Nothing depends on 5173: the justfile explicitly handles its absence, and the
+  backend merely allows that origin in CORS. It crash-loops on an esbuild
+  dep-optimiser target error that was not worth fixing for a dev-only surface.
+  The plist and the ui directory are kept deliberately, so that re-enabling is a
+  bootstrap away. Re-enable only if you want the Vite dev dashboard on 5173 back,
+  and expect to fix the esbuild target first.
+
+  STATE as of 2026-10-08: still bootstrapped in launchd and still crash-looping
+  (runs = 534, last exit code = 1, KeepAlive true). Retirement is decided but not
+  yet enacted; the bootout is a separate, deliberate step.
+
+  NOTE: check_scheduler_health.py cannot read this comment. It takes its launchd
+  roster from every *.plist in scripts/launchd/ and has no retired-plist
+  mechanism, so it reports this agent on whatever launchctl says. While it is
+  loaded and up it reads OK despite the crash loop (runs is nonzero and state is
+  running, so the nonzero exit is treated as a KeepAlive restart); once it is
+  booted out it will read FAIL as "not loaded in launchd (plist is in the repo
+  but not installed)". See the commit message for what a mechanism would need.]
+
   com.tomloughran.openstory.ui — OpenStory Vite dashboard (http://localhost:5173),
   separately supervised. Runs the C2A2-wiki repo's scripts/openstory-ui.sh in the
   foreground. Optional:
