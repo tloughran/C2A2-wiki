@@ -16,7 +16,7 @@ fetch_path: bash youtube-transcript-api (direct)
 synthesis: "[[Day-144 - Gifted Counsel - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/144, pars/2, q/52-53]
-last_qc_at: "2026-09-22T12:31:57"
+last_qc_at: "2026-10-08T16:17:58"
 last_qc_outcome: "pass"
 ---
 
