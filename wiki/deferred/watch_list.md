@@ -6780,3 +6780,56 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-08.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-10-09
+
+**Nothing due, nothing resolved, nothing added. WATCH-003 and WATCH-004 next due 2026-10-13; no off-cadence trigger fired.**
+
+  Items checked: 0 due (WATCH-003 count stays **16**; WATCH-004 count stays **1**)
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003, WATCH-004)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**)
+  New items added: 0
+  Next scheduled checks: WATCH-003 and WATCH-004, **2026-10-13** (or earlier if a new file appears in `review/archive/` or a revised PROP-2026-10-01-001 appears in `pending/`)
+
+**Intake (Step 2):** `needs_review/` holds 2 files, both already `[TRACKED-16]` (Carroll/Singer stub 2026-05-05; Fredrickson 2026-10-08). 0 new. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |`, excluding `deferred/` and `agents/`): zero files.
+
+**Off-cadence triggers:** `review/archive/` still **21** files, latest `2026-10-07_decisions.md`; no revised copy of PROP-2026-10-01-001 in `pending/`; the flagged sentence is still present in the `needs_review/` Fredrickson file. Not counted as checks.
+
+**Census (shell):** `pending/` 3, `approved/` 468, `denied/` 1, `needs_review/` 2, `review/archive/` 21.
+
+**Environment:** shell worked. Watch list ~800 KB, split the run log (**34th** recommendation).
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); WATCH-004 awaits a Fredrickson-agent or Tom edit of the flagged CT Signals sentence.
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-09.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-09
+
+**Quiet run. No intake, no checks due, no early triggers fired.**
+
+  Items checked: 0 on-cadence (WATCH-003 and WATCH-004 both next due **2026-10-13**). Early-trigger conditions tested and NOT met: no new file in `review/archive/` (still **21**, latest `2026-10-07_decisions.md`; `find -newer watch_list.md` empty); no copy of PROP-2026-10-01-001 in `pending/`; flagged sentence still present in `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` (file unchanged since the 10-08 tag). Check counts unchanged (WATCH-003: 16, WATCH-004: 1).
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003, WATCH-004)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**). WATCH-004 below threshold.
+  New items added: 0
+  Next scheduled checks: WATCH-003 and WATCH-004, **2026-10-13** (or earlier on a new `review/archive/` file or a revised PROP-2026-10-01-001 in `pending/`)
+
+**Intake (Step 2):** `needs_review/` holds 2 files, both already `[TRACKED-16]`. Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |`, vault-wide excl. `deferred/`, `agents/`): only `inbox/proposals/README.md` lines 97/107 — format template, not an item.
+
+**Census (shell):** `pending/` **3** (1 Kastrup 10-07, 2 Fredrickson 10-08 — none is a revision of PROP-2026-10-01-001), `approved/` 468, `denied/` 1, `needs_review/` 2, `review/archive/` 21.
+
+**Environment:** shell worked. Watch list ~810 KB — split the run log (**34th** recommendation).
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); rule on PROP-2026-08-14-033; triplet half of PROP-2026-09-28-001; whether PROP-2026-09-22-003 (Hoffman) becomes a Channel 3 watch; Gmail reconnection not re-verified; WATCH-004 needs the Fredrickson agent or Tom to correct the flagged CT Signals sentence.
+
+**Agent 16 Status:** Operational. 0 due, 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-09.*

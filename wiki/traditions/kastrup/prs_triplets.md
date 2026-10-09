@@ -823,4 +823,22 @@ PRS-90:
   Confidence: Medium (the quotation is on the page but is not clearly attributed; it could be Kastrup or a participant. Treat it as session content, not as a signed Kastrup claim)
   Evidence: Chapters 0:32:38–0:48:25; free-preview clip "The liberating freefall beyond space-time" (9m 51s).
 
-*Total PRS triplets: 90*
+PRS-91:
+  Problem: Why is humanity building AI at a pace and cost that market incentives alone do not seem to explain?
+  Resource: Kastrup's archetype theory applied to technology: AI development as the acting-out of an archetypal urge in collective mind, not primarily a product of greed
+  Solution: Treat the AI drive as a psychological/archetypal phenomenon to be understood (and integrated) rather than only regulated as an economic one
+  Date Added: 2026-10-09
+  Source: AI as Archetypal Urge — Bernardo Kastrup on the risks, rewards and future of Artificial Intelligence; PROP-2026-10-07-001
+  Confidence: Speculative
+  Evidence: Session page: "he spoke about how AI development is motivated by an Archetypal Urge, not greed." Session content itself not verified (members-only).
+
+PRS-92:
+  Problem: If AI will be highly intelligent but, on analytic idealism, not conscious, what follows for its risks?
+  Resource: Kastrup's intelligence/consciousness split plus his claim that AI lacks the *coherence* of a dissociated alter
+  Solution: Danger comes from misuse and incoherent capability, not from an AI with its own will; a "robotic tyranny" is unlikely
+  Date Added: 2026-10-09
+  Source: AI as Archetypal Urge — Bernardo Kastrup on the risks, rewards and future of Artificial Intelligence; PROP-2026-10-07-001
+  Confidence: Medium (stated in the prior session; the 27 Sept update is unverified)
+  Evidence: Session page summary of the earlier "Robots will be tools, not tyrants" recording.
+
+*Total PRS triplets: 92*

@@ -1330,3 +1330,19 @@ FINDING-094 recorded Pauline material arriving from Rohr only. Four Wright tripl
 Six triplets rest on unread primary text: levin PRS-141..142 (a ScienceDirect landing-page summary; both Solutions read "not yet established"), mcgilchrist PRS-84 (search metadata only), wright PRS-68..70 (show notes only). Ten Hawkins-tradition triplets (PRS-67..76) are TBP team output, which makes 41 of that file's 76 triplets rest on the unstated rule. The Levin card's own instruction to re-point PRS-64..67 from the preprint to the published version was **not** done this run: it edits Source lines on existing triplets that other files cite, so it is left for the Levin agent or a human.
 
 **Not escalated this run, with reason.** CROSS-143 (Wolfram × McGilchrist) is the strongest item, but it is a convergence on a claim both already held, and they have met in person before (Ralston debate). CROSS-144 is a real rival-mechanism question, but nobody has yet stated what recordings would separate the two accounts. Flagging either now would be flagging a question, not a result.
+
+## FINDING-099 — First evidence that a tradition-level variable modulates positivity resonance
+
+**Date:** 2026-10-09 · **Source signals:** PROP-2026-10-08-001; CROSS-148
+**Confidence:** Medium · **Recommended action:** keep as a design input for C2A2 encounter formats; no escalation
+
+Until now the wiki treated positivity resonance as a culture-free capacity, with relational mobility only a theoretical slot in Fredrickson's conducive-conditions framework. Zhou et al. (2024) supply the first cross-cultural evidence: strong-tie resonance is lower where perceived relational mobility is lower, and the effect is partly mediated by it. The weak-tie null suggests encounters between strangers may be the culturally more even channel. That is the relevant level for first contact between traditions. Limits: cross-sectional, two cultural clusters, abstract-only verification, and a null result (weak ties) is weaker evidence than a found effect. It says nothing about mature-to-mature evidential dialogue (Tom's rule, PROP-2026-10-01-001), only about the affective channel such dialogue travels on.
+
+## FINDING-100 — Evidence weather for this batch
+
+**Date:** 2026-10-09 · **Source signals:** 3 cards, 5 triplets
+**Confidence:** High · **Recommended action:** retrieve a transcript or public clip of the 27 Sept Kastrup session before citing PRS-91
+
+kastrup PRS-91 (Speculative) and PRS-92 (Medium) rest on a public session page; the session itself is members-only, so the 27 Sept content is unverified. fredrickson PRS-45..46 were verified from the abstract only; PRS-47 from the open-access full text, with the authors' own caveats carried into the Evidence line. Both Fredrickson papers are 2023-2024 work entered under the "not yet captured" clause.
+
+**Not escalated this run, with reason.** CROSS-147 is a tension between collaborators with one side unverified. CROSS-148 is the strongest item but rests on a single correlational paper; FINDING-099 records it without promoting it to the Watch List.

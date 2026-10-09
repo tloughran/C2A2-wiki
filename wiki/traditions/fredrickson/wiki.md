@@ -167,3 +167,12 @@ Processed 1 source file(s); minted PRS-40 - PRS-42.
 2 triplets added from 1 approved proposals (decision email 2026-10-06): PRS-43, PRS-44.
 
 - `PROP-2026-09-24-001` — Can an Algorithm Tell How Spiritual You Are? Using Generative Pretrained Transformers for Sophisticated Forms of Text Analysis (paper, https://pmc.ncbi.nlm.nih.gov/articles/PMC12592590/) → PRS-43, PRS-44
+
+### Ingest 2026-10-09
+
+3 triplets added from 2 approved proposal(s) (decision email 2026-10-08): PRS-45, PRS-46, PRS-47.
+
+- `PROP-2026-10-08-001` — Do People From Different Cultures Vary in How Much Positive Emotions Resonate in Day-to-Day Social Interactions? Examining the Role of Relational Mobility (paper, https://doi.org/10.1177/00220221241235926) → PRS-45, PRS-46
+- `PROP-2026-10-08-002` — Does Shared Positivity Make Life More Meaningful? Perceived Positivity Resonance is Uniquely Associated with Perceived Meaning in Life (paper, https://pmc.ncbi.nlm.nih.gov/articles/PMC10329988/) → PRS-47
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

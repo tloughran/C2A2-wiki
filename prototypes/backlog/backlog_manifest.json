@@ -16,11 +16,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-08-002",
+  "tradition": "fredrickson",
+  "source_date": "2023",
+  "title": "Does Shared Positivity Make Life More Meaningful? Perceived Positivity Resonance is Unique",
+  "file": "inbox/proposals/approved/2026-10-08_fredrickson_shared-positivity-meaning-in-life.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-17-004",
   "tradition": "friston",
   "source_date": "2024",
   "title": "Designing Ecosystems of Intelligence from First Principles",
   "file": "inbox/proposals/approved/2026-08-17_friston_designing-ecosystems-of-intelligence.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-08-001",
+  "tradition": "fredrickson",
+  "source_date": "2024",
+  "title": "Do People From Different Cultures Vary in How Much Positive Emotions Resonate in Day-to-Da",
+  "file": "inbox/proposals/approved/2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility.md",
   "processed": false
  },
  {
@@ -3397,6 +3413,14 @@
   "source_date": "2026-09-27",
   "title": "An Influential Teacher",
   "file": "inbox/proposals/approved/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-07-001",
+  "tradition": "kastrup",
+  "source_date": "2026-09-27",
+  "title": "AI as Archetypal Urge \u2014 Bernardo Kastrup on the risks, rewards and future of Artificial In",
+  "file": "inbox/proposals/approved/2026-10-07_kastrup_ai-as-archetypal-urge.md",
   "processed": false
  },
  {

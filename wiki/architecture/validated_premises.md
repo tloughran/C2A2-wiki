@@ -8071,3 +8071,57 @@ PREMISE-224:
   Consistency: specialises PREMISE-049 (verify-before-trust; quarantine-with-revisit); no contradiction found.
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-508_retrigger-2026-10-07_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-508_retrigger-2026-10-07_against.md
+
+# ==== 2026-10-09 15c intake — PREMISE-225 ====
+
+PREMISE-225:
+  Date validated: 2026-10-09
+  Source item: ASSUMPTION-1153 (via 15d re-trigger of MONITOR-542) | DISPOSITION-1059
+  Statement: A FALSE DETECTION AND A WRONG CORRECTION ARE DIFFERENT ERRORS WITH DIFFERENT LOSSES. A
+    detector's rate of retracted findings is not, by itself, an anomaly. Three clauses.
+    (1) A correctly tuned detector runs at a POSITIVE false-alarm rate by design. In inspection games
+    the inspector fixes α > 0 and then minimises non-detection. Cost-sensitive thresholds raise the
+    false-alarm rate whenever misses are costed higher, as PREMISE-181 costs them. Without a stated α
+    or cost ratio, no retraction count can be called high or low.
+    (2) A false detection is an EFFICIENCY cost ONLY BECAUSE further procedures ordinarily catch it
+    before anyone acts on it (PCAOB AS 2315 ¶.12–.13: incorrect rejection = efficiency, incorrect
+    acceptance = effectiveness). Acting on an unconfirmed detection turns an efficiency loss into an
+    effectiveness loss. The architectural object is therefore the CONFIRMING PROCEDURE between
+    detection and corrective action, not the detector's error rate.
+    (3) The retraction rate is logged as the realised α and monitored for drift, not for occurrence.
+    NOT INCORPORATED (load-bearing):
+      - ASSUMPTION-1153's framing that four same-day retractions are an anomaly needing
+        architectural explanation. The literature points the other way.
+      - Any numeric loss ratio. 15b's "≥10×" is a proposal. C2A2's own ratio is unstated and is owed
+        under REVISE-363.
+      - Transfer of AS 2315's "ordinarily" (a human auditor with mandated further procedures) to
+        agent pipelines, except by analogy.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence:
+    - PCAOB AS 2315 Audit Sampling ¶.12–.13 [fetched, full text, by 15a only].
+    - Avenhaus, von Stengel & Zamir, "Inspection Games", Handbook of Game Theory Vol. III
+      [search-result, both directions; chapter not read].
+    - Cost-sensitive Bayes thresholds: arXiv:2606.01340 Thm C.1; Horvitz ROC note [search-result].
+    - Neyman-Pearson lemma [textbook background, not fetched].
+  Challenges noted: 15b CHALLENGED the item's FRAMING (Moderate) and supports the asymmetry. That
+    challenge is adopted as the exclusion above. No source challenges the asymmetric structure.
+  Independence disclosure (PREMISE-120): 15a and 15b converged on AS 2315 through a shared fetch layer
+    (SYSTEMIC-RISK-FLAG 2026-10-09). 15b's copy was search-result snippets. Treat this as ONE reading
+    of the standard.
+  Confidence: Moderate
+  Applicable to:
+    - REVISE-363. Supplies its mechanism: a mandated confirming procedure before any corrective edit.
+      It does NOT discharge REVISE-363, which still owes a stated cost ratio and Tom's decision.
+    - Every instrument whose finding can trigger a corrective edit, e.g. fidelity checks and the
+      recount/parser instruments of 2026-08-18.
+    - Retraction logging.
+  Open in-house test (15b): over 30 days, count instrument findings, retractions, and corrective actions
+    taken on findings later retracted. Retractions with ZERO wrong corrective actions means the regime is
+    working. ANY wrong corrective action means the gate is missing, whatever the retraction count.
+  Re-check due: 2027-01-09 (Quarterly; via 15d)
+  Status: ACTIVE
+  Consistency: checked against REVISE-363, PREMISE-181, PREMISE-201(2), PREMISE-120 and PREMISE-124.
+    No contradiction. It extends REVISE-363 and is predicted by PREMISE-181.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (supersedes MONITOR-542)
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1153_retrigger-2026-10-09_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1153_retrigger-2026-10-09_against.md
+

@@ -756,3 +756,15 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [PIPELINE, AUTHORSHIP] **Ten more Hawkins-tradition triplets are TBP team output** (PRS-67..76). Fifth time approved as-is.
 
 [EVALUATED: 2026-10-07 - FINDING-095..098; see pattern_detector_findings.md]
+
+### Signals forwarded 2026-10-09 (Master Agent, from PROP-2026-10-07-001, PROP-2026-10-08-001/-002)
+
+- [TENSION] **Kastrup × McGilchrist on the AI drive** (CROSS-147): archetypal urge vs. left-hemisphere capture. Kastrup side Speculative (members-only session).
+
+- [BRIDGE, C2A2 METHOD] **Resonance capacity varies by tradition** (CROSS-148): relational mobility partly explains lower strong-tie resonance in East Asian samples; no gap for weak ties. Bears directly on how inter-tradition encounters are designed. Read with Tom's mature-to-mature rule (PROP-2026-10-01-001 CHANGE): this result is about everyday resonance, not about evidential dialogue.
+
+- [ONE-SIDED] **Fredrickson × Stump on meaning through shared presence** (CROSS-149).
+
+- [PIPELINE, RECENCY] **Both Fredrickson cards are 2023-2024 papers** proposed under the "significant work not yet captured" clause, not the 60-day window. Approved as-is.
+
+[EVALUATED: 2026-10-09 - FINDING-099..100; see pattern_detector_findings.md]

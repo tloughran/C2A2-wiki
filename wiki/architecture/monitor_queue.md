@@ -25275,3 +25275,100 @@ MONITOR-684:
   Routing note for 15d: in-house limb; do not re-queue for 15a/15b unless new mechanistic literature appears.
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a (orphan cycle-1, 2026-09-17), 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1211_for_cycle1.md ; wiki/architecture/lit_search_results/for/ASSUMPTION-1211_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1211_retrigger-2026-10-08_against.md
+
+# ==== 2026-10-09 15c intake — MONITOR-685..686 ====
+
+MONITOR-685:
+  Source item: ASSUMPTION-1164 (DISPOSITION-1057; supersedes MONITOR-546) | Item type: ASSUMPTION (stated)
+  Statement watched: "A research program is defined by the questions it generates rather than the facts
+    it has banked." It is read as external defence of the PRS Problem slot.
+  15a: NO-SUPPORT-FOUND on the empirical limb. This is the second null. It is preliminary and
+    access-limited: no WoS, Scopus or Dimensions query, no journal full text, and the Boguslav fetch
+    failed. NOVELTY is kept as "Yes, qualified".
+  15b: PARTIALLY-CHALLENGED (Moderate; search-result only).
+    - Laudan's machinery counts generated, unsolved problems AGAINST a tradition.
+    - Bird 2007 is a live rival account.
+    - Ignorance statements are ubiquitous (Boguslav; unread by either direction), so a raw count does
+      not discriminate.
+    - The individuation objection is still not located at primary level.
+    - 15b holds that the non-exclusive form is unchallenged.
+  Why monitored: neither pre-registered MONITOR-546 trigger fully fired. The re-search ran but is still
+    degraded, so the result is NOT a declared negative. No one has made the restatement.
+  Empirical-limb status (record exactly): "preliminary negative, access-limited, UNCALIBRATED
+    (PREMISE-124)".
+  INTERIM CONSTRAINT (carried from MONITOR-546, in force): the "externally corroborated" label is not to
+    be relied on downstream. The accurate label is "philosophical warrant contested-but-substantial;
+    empirical warrant not located; search access-limited."
+  What would change the disposition:
+    -> INCORPORATE: 14a or Tom adopts a NON-EXCLUSIVE, SIGNIFICANCE-WEIGHTED restatement: "question-
+       generation, weighted by significance and scored on discharge as well as generation, is one marker
+       of programme health alongside knowledge accumulation". Neither direction challenges that form.
+       15c may then incorporate it without another literature pass.
+    -> REVISE (PRS Problem-slot valuation): run 15b's in-house test. Across traditions, compare
+       Problem-slot COUNT with the rate at which Problem slots are later RESOLVED. If count does not
+       predict resolution, count is not a health signal, and any volume-scored Problem slot is flagged
+       for Tom.
+    -> Literature: NO further 15a/15b re-trigger at search-engine reach. Two passes have hit the same
+       ceiling, and a third would be the byte-identical refiling PREMISE-183(2) forbids. Re-open only if
+       a pipeline gains database or full-text access (Scientometrics, Research Policy, WoS/Scopus), or
+       if Boguslav/Hunter is actually read.
+  Priority: Medium (was High). This is NOT because the evidence strengthened. The literature limb is
+    exhausted at this pipeline's reach, and the deciders are now in-house.
+  Cadence: Fortnightly (per MONITOR-546: "fortnightly thereafter" once the re-search has run) | Cycle: 1 | Next 15d check: 2026-10-23
+  TERMINATING CONDITION: expires 2026-12-09. If by then neither the restatement decision nor the
+    count-versus-resolution test has occurred, this entry is NOT re-filed. It escalates to a REVISE flag
+    naming the PRS Problem-slot valuation rule as the item for Tom (PREMISE-183(1)-(2)).
+  Routing note for 15d: in-house and design-decision limbs only. Do not re-queue for 15a/15b.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1164_retrigger-2026-10-09_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1164_retrigger-2026-10-09_against.md
+
+MONITOR-686:
+  Source item: PRESUMPTION-539 (DISPOSITION-1060; supersedes MONITOR-477) | Item type: PRESUMPTION (unstated)
+  Statement watched: the disposition rule, not the refuted presumption. MONITOR-477 said "Keep
+    producing diagnosis; value it by ACTUATION, not volume". The presumption ("more self-diagnostic
+    output is self-evidently good") stays refuted in both directions and is held by PREMISE-105.
+  15a: SUPPORTED (Moderate). Sources:
+    - Choi, Hecht & Tayler 2012/2013, surrogation [search-result; titles and pages inconsistent across
+      listings, so VERIFY before citing].
+    - Internal-audit recommendation-implementation rate as the standard KPI for a findings-producing
+      function [grey literature, search-result; SIGMA fetch failed]. This KPI carries its own known
+      surrogation risk.
+  15b: PARTIALLY-CHALLENGED (Moderate) against the PER-FINDING measuring rule. Sources:
+    - PECARN near-miss reports, BMJ Open 2015 [full text; author list not verified]: value is
+      realised by aggregate analysis.
+    - Sieberichs & Kluge 2022 [abstract]: value lies in latent-condition content.
+    - Measurement reactivity [search-result].
+    - Surrogation boundary conditions (single incentivised measure) not clearly met.
+  Recorded disagreement (not averaged): 15a holds that value is actuation per finding. 15b holds that
+    value is aggregate consumption of the corpus. 15c reads the two rules as applying to different
+    objects, and both are run below.
+  INTERIM CONSTRAINT: a near-zero per-finding actuation ratio must NOT, on its own, be grounds to
+    suppress or throttle self-diagnostic output. The SYSTEMIC-RISK pass and the 13 pattern detector
+    draw on that corpus.
+  What would change the disposition (two-level in-house test, one query each):
+    (i) Per-finding: of REVISE flags and premises that name an executor or "applicable to" component,
+        what share produced a spec or config change within 60 days?
+    (ii) Aggregate: how many system changes in the last 60 days cite TWO OR MORE self-diagnostic
+        findings jointly? Is a named aggregate consumer (13 pattern detector / 15b SYSTEMIC-RISK pass)
+        demonstrably reading the corpus on a schedule?
+    -> Both near zero: surrogation confirmed. REVISE, HIGH, filed as an instance under REVISE-245.
+    -> (ii) materially above zero while (i) is low: INCORPORATE the narrowed premise "self-diagnosis is
+       valued by scheduled aggregate consumption, not by volume and not by per-finding actuation alone".
+    -> (i) high: close as refuted. The propagation edge exists, and REVISE-245 is informed.
+    -> REVISE-245 wired: MONITOR-477's original trigger fires. Re-evaluate under it.
+  Literature: discharged, both directions now cited. No further 15a/15b re-trigger.
+  Priority: Medium (subordinate to PREMISE-105, PREMISE-123, REVISE-245 HIGH)
+  Cadence: Weekly (15d checks only whether test (i) or (ii) has been run) | Cycle: 1 | Next 15d check: 2026-10-16
+  TERMINATING CONDITION: expires 2026-12-09. If by then neither test has run, this entry is NOT re-filed.
+    It closes INTO REVISE-245 as a recorded instance of stalled actuation, with the count of weeks
+    unrun stated (PREMISE-183(2)).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-539_retrigger-2026-10-09_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-539_retrigger-2026-10-09_against.md
+
+# ==== 2026-10-09 15c — status notes for existing entries (append-only; entries above not edited) ====
+MONITOR-549: [CLOSED-15c 2026-10-09 → INCORPORATE no mint, covered by PREMISE-119 (DISPOSITION-1056). The pre-registered "CLOSES WITH NO MINT" branch fired. The 2026-10-24 expiry clause is discharged by the re-search. The routing gap is held by REVISE-364. The in-house λ/μ trace is owed under PREMISE-119's sequencing clause.]
+MONITOR-546: [SUPERSEDED by MONITOR-685, 2026-10-09 (DISPOSITION-1057)]
+MONITOR-543: [SUPERSEDED by REVISE-514, 2026-10-09 (DISPOSITION-1058)]
+MONITOR-542: [SUPERSEDED by PREMISE-225, 2026-10-09 (DISPOSITION-1059)]
+MONITOR-477: [SUPERSEDED by MONITOR-686, 2026-10-09 (DISPOSITION-1060)]
+

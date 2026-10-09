@@ -50716,3 +50716,120 @@ DISPOSITION-1055:
 
 Running totals after this run: PREMISE-224 | MONITOR-684 | REVISE-513 | DISPOSITION-1055.
 Distribution (5 items): 0 INCORPORATE, 1 MONITOR, 4 REVISE. SYSTEMIC-RISK (15b, High) concurs with the 10-07 "deposit without drain" flag: registers lack negative states. Not done: 132 bare literature-lane backlog items. Budget: 2 subagents ~366k tokens — over the 4k/30k guideline, surfaced per Rule 6.
+
+## 15a/15b/15c RUN — 2026-10-09 (scheduled c2a2 lit-search pipeline; 15d re-trigger backlog, 5 items: PRESUMPTION-863, ASSUMPTION-1164, PRESUMPTION-844, ASSUMPTION-1153, PRESUMPTION-539)
+
+No new 14a/14b intake (assumptions.md/presumptions.md unmodified since 2026-10-03 23:45; changelog/2026-10-09_changes.md is RUN_INCOMPLETE). Batch rule (10-05..10-08 precedent): newest bare 15d re-triggers first, cap 5 — the last two 09-13 items, the two 08-30 items, and the newest 08-02 item (tie broken by queue position). Scope PRELIMINARY (15a 15 searches / 6 fetch attempts / 3 failures; 15b 15 searches / 10 fetch attempts / 5 failures).
+
+### 15a returns (FOR)
+- PRESUMPTION-863: PARTIALLY-SUPPORTED (Weak-Moderate, authority limb). Weyns & Andersson 2013 SESoS [fetched, full text] quoting Maier 1998 "policy triage" (Maier secondhand); Kanban "make policies explicit", Duenyas/Hopp/Spearman 1993 CONWIP card-count [search-result]. No source joins them for a work-queue cap; likely folds into PREMISE-119. NOVELTY: partial.
+- ASSUMPTION-1164: NO-SUPPORT-FOUND (empirical limb; preliminary, UNCALIBRATED null — WoS/Scopus/journal full text not reachable). Boguslav/Hunter 2021, 2023 "ignorance statements" [search-result; fetch failed, reCAPTCHA]; field-growth forecasting uses citation features, not question counts [search-result]. NOVELTY: yes, qualified.
+- PRESUMPTION-844: PARTIALLY-SUPPORTED (Moderate). di Biase et al. 2019 PeerJ CS [fetched, full text]: decomposed PRs → fewer false positives (p=0.03), no difference in defects found/time/understanding; Cisco/SmartBear 200–400 LOC [search-result, industry]; Bacchelli & Bird 2013 [search-result]. Literature is change-set size, not queue-page layout. NOVELTY: partial (narrowed).
+- ASSUMPTION-1153: PARTIALLY-SUPPORTED (Moderate-Strong for asymmetry). PCAOB AS 2315 ¶.12–.13 [fetched, full text]: incorrect acceptance = effectiveness failure; incorrect rejection = efficiency cost, ordinarily caught by further procedures. Inspection games, cost-sensitive Bayes thresholds [search-result]. Neyman-Pearson point unverified background. NOVELTY: no.
+- PRESUMPTION-539: SUPPORTED (Moderate). Choi, Hecht & Tayler 2012/2013 surrogation [search-result; bibliographic details inconsistent across listings — verify]; internal-audit recommendation-implementation-rate KPI (SIGMA/OECD [fetch failed]; CGCS, UK councils [search-result]). NOVELTY: no.
+  PROVENANCE (all): Origin: 14a/14b per item | Chain: [… → 15c → 15d → 15a (re-trigger cycle 1)] | Transform: literature search FOR | Results: wiki/architecture/lit_search_results/for/<ID>_retrigger-2026-10-09_for.md
+
+### 15b returns (AGAINST)
+- PRESUMPTION-863: PARTIALLY-CHALLENGED (Weak-Moderate). First real 15b pass (cycle 0 was a declared non-search). CONWIP (Spearman/Hopp) [fetched, Wikipedia]; Arcaini et al. 2017 ACM TAAS, interfering decentralised MAPE-K [fetched, abstract]; Hopp & Roof 1998 [search-result]. STEELMAN: a fixed within-run cap is how mature admission control avoids oscillation; the gap is a slower outer loop with a named owner — PREMISE-119.
+- ASSUMPTION-1164: PARTIALLY-CHALLENGED (Moderate). Laudan 1977 (secondary) [search-result]: unsolved problems count AGAINST a tradition; Bird 2007 Noûs [search-result]; individuation objection still not found in a primary source (Mellor 1981 PDF empty). STEELMAN: almost every paper generates questions, so question count cannot separate progressive from degenerating programmes.
+- PRESUMPTION-844: PARTIALLY-CHALLENGED (Moderate vs NOVELTY; Weak-Moderate vs the container claim). di Biase 2019 [search-result; fetch refused as already-fetched]; Sharma & Murano 2020 First Monday [fetched, abstract]: no scroll/pagination winner; Kemerer & Paulk 2009 [search-result]. STEELMAN: the robust variable is volume per sitting; vary cards-per-session, not pagination.
+- ASSUMPTION-1153: CHALLENGED (Moderate). Avenhaus/von Stengel/Zamir 1995 [search-result; fetch blocked]; PCAOB AS 2315 [search-result; fetch refused as already-fetched]; cost-sensitive thresholds [search-result]. Supplies the missing asymmetric loss. STEELMAN: a well-tuned inspector chooses a positive false-alarm rate; four retractions caught before action is that regime working.
+- PRESUMPTION-539: PARTIALLY-CHALLENGED (Moderate). PECARN near-miss, BMJ Open 2015 [fetched, full text]; Sieberichs & Kluge 2022 [fetched, abstract]; measurement reactivity [search-result]. Challenges the per-finding actuation-ratio test, not the conclusion. STEELMAN: reporting systems earn value in aggregate; a near-zero per-finding action ratio is normal for a working system.
+- SYSTEMIC-RISK (High): "shared retrieval convergence" — 15a/15b independence enforced at the read channel but not the retrieval channel; 3 of 15b's fetches refused as "already fetched" seconds after 15a's (1164, 844, 1153). wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-09_shared-retrieval-convergence.md
+  PROVENANCE (all): Origin: 14a/14b per item | Chain: [… → 15c → 15d → 15b (re-trigger cycle 1)] | Transform: literature search AGAINST | Results: wiki/architecture/lit_search_results/against/<ID>_retrigger-2026-10-09_against.md
+
+## 15c — dispositions, 2026-10-09
+
+Batch: 15d re-trigger backlog, cycle 1. Five items. Every result file is graded PRELIMINARY by its author. 15a and 15b ran at the same time, on one shared fetch layer, and both are the same model family (REVISE-350). Where they agree, this run counts the agreement as one reading, not two. Each disposition below rests on named sources, not on concordance.
+
+DISPOSITION-1056:
+  Date: 2026-10-09 | Item: PRESUMPTION-863 (authority limb only) | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak-to-Moderate) | 15b: PARTIALLY-CHALLENGED (Weak-to-Moderate). This is 15b's first executed pass; cycle 0 was a declared non-search.
+  Disposition: INCORPORATE (no mint; covered by PREMISE-119) — MONITOR-549's pre-registered "CLOSES WITH NO MINT" branch. [Label normalised by orchestrator from 15c's draft "CLOSED -> folds into PREMISE-119" to the house form used at DISPOSITION LIMB-SPLITs, e.g. "INCORPORATE (no mint; covered by PREMISE-070)"; substance unchanged.]
+  Reasoning: MONITOR-549 pre-registered three branches. Here is how each one went.
+    INCORPORATE: not met. The branch needed a source that makes cap-adjustment authority a design obligation, plus the in-house trace. 15a's best source is Maier 1998 "policy triage", and 15a only saw it quoted secondhand inside Weyns & Andersson 2013 (fetched, full text). It is a general systems-of-systems principle and does not address a work-queue cap. The Kanban and CONWIP material that treats the cap as a parameter is search-result or practitioner level. 15b located no such source. The trace was not run.
+    REVISE: not met. That branch is conditioned on the trace, and the trace was not run.
+    CLOSES WITH NO MINT: met. Both directions resolve the limb into PREMISE-119's "assign an owner" sequencing requirement, and they get there by different sources. 15a reasons from authority placement as an architect's choice. 15b reasons from CONWIP: the fixed card count is the control mechanism (Wikipedia, fetched). It adds autoscaling, where oscillation and flapping are the main failure of caps that adjust too readily (search-result only), and Arcaini et al. 2017, where decentralised MAPE-K loops interfere with each other (abstract fetched). 15b's two-timescale reading is the substantive gain this cycle: a cap that stays constant within a run is correct, and what is missing is a slower outer loop that someone owns, with a trigger and a hysteresis band.
+  Caveat on the convergence: MONITOR-549 itself named "closes with no mint" as the likeliest outcome, and both agents read that text. Some of the convergence may be the queue text being echoed back. That is why it is graded on the sources (no fetch overlap reported for this item), not on the agreement.
+  Recorded disagreement: 15a reads the Kanban and CONWIP material as support for "the cap is a parameter, not a constant". 15b reads the same lineage as "constancy within a run is the design". These are compatible on different timescales and are recorded as a difference of emphasis, not averaged.
+  Where the residue lives: the agent-to-owner routing gap is already held by REVISE-364 (discovery and authority are independent; C2A2 has escalation and no brake). Owner assignment and the λ/μ measurement are owed under PREMISE-119's sequencing clause. That clause has no propagation edge (PREMISE-123), so closing here does not by itself make the trace happen.
+  Recommended for Tom: annotate PREMISE-119 with the two-timescale refinement. Not applied here, because editing an ACTIVE premise needs his sign-off. Wording: "fixed per-run cap (inner loop); owned outer loop with an explicit statistical trigger (e.g. backlog monotone for N runs, or λ/μ > 1 over a window) and a hysteresis band; adjustment authority not distributed to the agents that observe backlog."
+  MONITOR-549's 2026-10-24 expiry clause is discharged by today's re-search and does not escalate.
+  Consistency: no contradiction with PREMISE-119. There is a surface tension with its exclusion of a flat per-day cap, but the failure mode it documents ("raised on first bind") is ad hoc adjustment with no outer loop or hysteresis, and that is the same flapping 15b describes. Also consistent with PREMISE-106 (arithmetic, not re-searched).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED, no mint (covered by PREMISE-119; routing gap held by REVISE-364)
+
+DISPOSITION-1057:
+  Date: 2026-10-09 | Item: ASSUMPTION-1164 | Item type: ASSUMPTION (stated)
+  15a: NO-SUPPORT-FOUND (empirical limb; second null, preliminary) | 15b: PARTIALLY-CHALLENGED (Moderate; search-result level throughout, nothing fetched)
+  Disposition: MONITOR -> MONITOR-685 (Medium; supersedes MONITOR-546)
+  Reasoning: How MONITOR-546's triggers went.
+    Trigger (1), a second null from an undegraded search, which would become a declared negative: only partly met. The re-search ran on a fresh budget, but it is still degraded. There was no WoS, Scopus or Dimensions query. Scientometrics and Research Policy full text are still unread. The one decision-relevant source, Boguslav/Hunter on ignorance statements (PMC8508177), was read by neither direction: 15a hit a reCAPTCHA and 15b's fetch was refused as already fetched (SYSTEMIC-RISK). The empirical limb is therefore recorded as a "preliminary negative, access-limited, UNCALIBRATED (PREMISE-124)". It is not a declared negative.
+    Trigger (2), a non-exclusive restatement: not met. Nobody has made it. Making it is a design act for 14a or Tom, not a literature result.
+    The pre-registered path is therefore MONITOR.
+  What changed: 15b's Laudan reading (secondary summaries, search-result level) is that generated, unsolved problems count AGAINST a tradition, so the claim partly inverts the account it cites. And if Boguslav's ubiquity finding holds (search-result only), raw question count would score every tradition as healthy. Together these mean that even the non-exclusive restatement needs significance weighting and a score for discharge as well as generation, before it can be incorporated.
+  Recorded disagreement on NOVELTY: 15a keeps it (Yes, qualified: measurable but not validated as a predictor). 15b says Boguslav weakens it. Both readings rest on a source neither read.
+  Why the routing changes: per PREMISE-183(2), a third literature pass at the same reach would be a byte-identical refiling. Routing moves to the in-house test and the restatement decision. The priority drop from High to Medium reflects that the literature limb is exhausted at this pipeline's reach. It does not reflect stronger evidence. The interim constraint stays in force: the "externally corroborated" label is not to be relied on.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+DISPOSITION-1058:
+  Date: 2026-10-09 | Item: PRESUMPTION-844 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate; NOVELTY narrowed) | 15b: PARTIALLY-CHALLENGED (Moderate vs NOVELTY; Weak-Moderate vs the container mechanism)
+  Disposition: REVISE -> REVISE-514 (Medium; supersedes MONITOR-543)
+  Reasoning: MONITOR-543 limb (a), the code-review change-set-size literature, is now reached, and it exists, as cycle 0 predicted.
+    The main source is di Biase et al. 2019, PeerJ CS. 15a read it in full. 15b had only the search result because its fetch was refused (SYSTEMIC-RISK), so on this source today counts as ONE reading. On 15a's reading, decomposition produced fewer false positives (p=0.03). It made no difference to defects found, review time or understanding.
+    Corroborating material: Rigby et al. 2014 and Baum et al. 2019 (both cited inside di Biase, not read directly), Cisco/SmartBear (industry, search-result), and Kemerer & Paulk 2009 (search-result, primary not read).
+    Both directions agree that what is supported is amount per sitting, or review rate. The page container is not supported. 15b's HCI sources (Sharma & Murano 2020, abstract fetched; usability.gov, search-result) give a near-null prior for paginated versus scrolling.
+  Recorded disagreement: 15a narrows NOVELTY to "the container for a queue of independent decisions". 15b withdraws it as worded. Neither found support for the container as such. Under REVISE-514 the residual claim survives as a control arm, not as a priority driver.
+  Why REVISE: the presumption itself ("only depth matters; the artifact is neutral") stays refuted, and PRESUMPTION plus challenge leans REVISE. The specific fault is in the instrument that MONITOR-543 (and 15c at intake) endorsed. A pagination-only split-test leaves 54 judgements per sitting, so it is likely to return a null, and that null would be misread as clearing the artifact.
+  Consistency: the substantive premise is already held by PREMISE-121 (reviewer per-item cost rises with exposure; value-weighted triage) and PREMISE-050 (small scoped batches, with size tuned to gate cost). There is no contradiction and no new premise. REVISE-364 coupling: Tom is the reviewer and the bottleneck in both 844 and 845.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+DISPOSITION-1059:
+  Date: 2026-10-09 | Item: ASSUMPTION-1153 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate-to-Strong for the asymmetric-error structure; NO-SUPPORT for the "anomaly" framing) | 15b: CHALLENGED (Moderate, on the "anomaly" framing; supports the asymmetry)
+  Disposition: INCORPORATE -> PREMISE-225 (narrowed and reframed; the item's own framing is NOT incorporated)
+  Reasoning: For the first time in three runs, both directions reached MONITOR-542 limb (b): Neyman-Pearson, inspection games and audit sampling.
+    They agree on substance. A well-tuned inspector runs at a false-alarm rate α > 0 by design. Costing misses higher, as PREMISE-181 does, predicts MORE retractions. PCAOB AS 2315 ¶.12–.13 prices incorrect rejection as an EFFICIENCY cost that further procedures ordinarily correct, and incorrect acceptance as an EFFECTIVENESS failure.
+    That supplies the loss STRUCTURE that MONITOR-542 said no part of the system states. It also refutes the item's framing that four same-day retractions are an anomaly needing architectural explanation. Retractions caught before action are the regime working. The architectural object is the confirming procedure between detection and corrective action, which is the shape REVISE-363 asked for.
+  Evidence grade: AS 2315 was read in full by 15a only. 15b's fetch was refused (SYSTEMIC-RISK) and it worked from snippets of the standard's text that match 15a's quotation, so this is one reading. Inspection games and cost-sensitive thresholds are search-result level in both directions. The Neyman-Pearson characterisation is textbook background. The INCORPORATE is justified because the claim is long-established decision theory, which does not depend on today's retrieval. It is NOT justified by the 15a/15b concordance. Confidence is Moderate, not High.
+  NOT incorporated:
+    - C2A2's own cost ratio (limb (a)). It is still unstated and is owed under REVISE-363, which stays open and awaiting Tom.
+    - 15b's suggested "≥10×", which is a proposal, not evidence.
+    - Any claim that AS 2315's "ordinarily" transfers to agent pipelines other than by analogy.
+  Consistency: checked against REVISE-363 (supplies its mechanism, does not discharge it), PREMISE-181 (consistent: predicts the retraction rate), PREMISE-201 clause (2) (asymmetric loss sustains low-precision gates: consistent), PREMISE-120 (shared-channel disclosure, applied above) and PREMISE-124 (the retraction rate must carry a stated α or be UNCALIBRATED: consistent). No contradiction found.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+DISPOSITION-1060:
+  Date: 2026-10-09 | Item: PRESUMPTION-539 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED (Moderate; cycle-0 "Strong" not upgraded) | 15b: PARTIALLY-CHALLENGED (Moderate; first cycle with citations)
+  Disposition: MONITOR -> MONITOR-686 (Medium; supersedes MONITOR-477; subordinate to PREMISE-105, PREMISE-123, REVISE-245)
+  Reasoning: Neither direction supports the presumption ("more self-diagnostic output is self-evidently good"), so it stays refuted. That was already the cycle-0 state and is already held by PREMISE-105 (an artifact-volume count is a Goodhart proxy). MONITOR-477's pre-registered trigger, a propagation path under REVISE-245, has not occurred. The new evidence instead disputes MONITOR-477's measuring rule.
+  Recorded disagreement on the measuring rule:
+    15a: value self-diagnosis by actuation per finding. Basis: the internal-audit recommendation-implementation-rate KPI (grey literature, search-result; SIGMA fetch failed) and the Choi/Hecht/Tayler surrogation work (search-result; bibliographic details inconsistent across listings, so verify before citing).
+    15b: value it by aggregate consumption of the corpus. Basis: the PECARN near-miss reports, BMJ Open 2015 (full text; author list not verified), and Sieberichs & Kluge 2022 (abstract). In working reporting systems most individual reports are never acted on. 15b also argues that surrogation's documented conditions (a single incentivised measure) are not clearly met here.
+    15c reading: the two rules apply to different objects. Per-finding implementation fits findings that name an executor (REVISE flags, premises with an "applicable to"). Corpus-level value fits observational self-diagnosis. MONITOR-686 runs both rather than averaging them.
+  15b's specific risk is adopted as an interim constraint: a near-zero per-finding ratio must NOT be read alone as grounds to suppress the self-diagnostic corpus, because SYSTEMIC-RISK detection draws on that corpus.
+  The literature limb is discharged; no further 15a/15b re-trigger. Escalating per PREMISE-183(2): the in-house test changes and a terminating condition is attached.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+
+### SYSTEMIC-RISK (15b, High): shared retrieval convergence — 15c response
+
+Does it reduce confidence in today's convergent verdicts? Yes, in a specific and bounded way.
+
+Crude source-overlap count from today's ten files. This is the flag's recommendation 1, done by hand. It is not a URL-level log, which does not exist.
+  - 1153: AS 2315 and the Avenhaus/von Stengel/Zamir chapter appear in both directions. AS 2315 was read once (15a). HIGH overlap.
+  - 844: di Biase 2019, Rigby 2014 and Cisco/SmartBear appear in both. di Biase was read once (15a). HIGH overlap.
+  - 1164: Boguslav appears in both and was read by NEITHER. Otherwise the directions diverge (education / scientometric-forecasting versus Laudan / Bird). MODERATE overlap.
+  - 539: Choi/Hecht/Tayler appears in both; the rest diverges (audit KPI versus safety reporting). LOW-MODERATE overlap.
+  - 863: the Hopp/Spearman CONWIP lineage appears in both, but as different papers. No fetch overlap was reported. LOW overlap.
+
+Consequences applied above:
+  (i) On 1153 and 844, agreement on the shared source is counted as ONE reading. 15b's grade on those sources is search-result level.
+  (ii) The PREMISE-225 INCORPORATE stands on the textbook status of the decision theory and on 15a's single full-text read. That is why confidence is Moderate and the item's framing is excluded.
+  (iii) The REVISE-514 change relies mainly on PREMISE-121/050, which are already held, and on 15b's independently fetched HCI source. It does not rely on di Biase's details.
+  (iv) The 1164 and 539 MONITOR dispositions do not depend on any shared source.
+
+The flag is an instance of PREMISE-120: a second check must record what it shares with the first — code path, corpus, model, execution context — and today's 15a/15b share all of them except the read channel. It adds a new mechanism to REVISE-350 and MONITOR-547: coupling at the fetch layer, which makes access to sources order-dependent. 15c recommends attaching it to REVISE-350 as evidence, not minting a duplicate flag. Recommendations 2 and 3 (separate fetch caches or sessions; per-direction required venue lists when a queue block names a single owed body) are routed to Tom with REVISE-350.
+
+Running totals after this run: PREMISE-225 | MONITOR-686 | REVISE-514 | DISPOSITION-1060.
+Distribution (5 items): 1 INCORPORATE minted (PREMISE-225), 2 MONITOR (MONITOR-685, MONITOR-686), 1 REVISE (REVISE-514), 1 INCORPORATE no-mint (PRESUMPTION-863, covered by PREMISE-119). Superseded: MONITOR-542, MONITOR-543, MONITOR-546, MONITOR-477; MONITOR-549 closed. Literature re-triggers retired: all five. Every remaining limb is in-house or a design decision for Tom.

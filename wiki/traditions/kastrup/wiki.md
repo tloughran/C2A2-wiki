@@ -173,3 +173,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-23-001` — The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis (talk, https://www.withrealityinmind.com/not-a-simulation/) → PRS-86, PRS-87, PRS-88, PRS-89, PRS-90
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-09
+
+2 triplets added from 1 approved proposal(s) (decision email 2026-10-08): PRS-91, PRS-92.
+
+- `PROP-2026-10-07-001` — AI as Archetypal Urge — Bernardo Kastrup on the risks, rewards and future of Artificial Intelligence (talk, https://www.withrealityinmind.com/ai-as-archetype/) → PRS-91, PRS-92
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

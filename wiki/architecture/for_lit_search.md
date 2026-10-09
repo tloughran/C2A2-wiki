@@ -14868,7 +14868,7 @@ PRESUMPTION-628 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [
   Notes: First 15d weekly re-trigger for MONITOR-476 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
 
 [PRESUMPTION] PRESUMPTION-539: (see MONITOR-477 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1] [SEARCHED-15a: 2026-10-09 (cycle 1)] [SEARCHED-15b: 2026-10-09 (cycle 1)] [DISPOSITIONED-15c: 2026-10-09 → MONITOR (MONITOR-686; DISPOSITION-1060)]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
   Priority: Medium
@@ -19169,14 +19169,14 @@ PRESUMPTION-762 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-30, cycle 1] (MON
 --------------------------------------------------------------------------------
 ### Literature-bearing (2) — the only two items this run adds to the search backlog
 
-ASSUMPTION-1153 [QUEUED] [RE-TRIGGER by 15d: 2026-08-30, cycle 1] (MONITOR-542)
+ASSUMPTION-1153 [QUEUED] [RE-TRIGGER by 15d: 2026-08-30, cycle 1] (MONITOR-542) [SEARCHED-15a: 2026-10-09 (cycle 1)] [SEARCHED-15b: 2026-10-09 (cycle 1)] [DISPOSITIONED-15c: 2026-10-09 → INCORPORATE (PREMISE-225; DISPOSITION-1059)]
   **Both 15a and 15b reported the same body as UNREACHED for a second consecutive run, and 15b names it
   the highest-value uncovered literature available to this pipeline:** formal statistical decision
   theory — Neyman-Pearson thresholds, inspection games, audit sampling. Second limb is not a search: a
   stated ASYMMETRIC LOSS FUNCTION separating detection-direction from correction-direction error, which
   no part of this system states anywhere. Priority: High.
 
-PRESUMPTION-844 [QUEUED] [RE-TRIGGER by 15d: 2026-08-30, cycle 1] (MONITOR-543)
+PRESUMPTION-844 [QUEUED] [RE-TRIGGER by 15d: 2026-08-30, cycle 1] (MONITOR-543) [SEARCHED-15a: 2026-10-09 (cycle 1)] [SEARCHED-15b: 2026-10-09 (cycle 1)] [DISPOSITIONED-15c: 2026-10-09 → REVISE (REVISE-514; DISPOSITION-1058)]
   Code-review change-set-size / review-effectiveness literature, explicitly unsearched at intake and the
   reason the NOVELTY flag may not survive. Paired limb, endorsed by both 15b and 15c over further
   citation-hunting: a within-system SPLIT-TEST of paginated versus single-page review artifacts.
@@ -21496,13 +21496,13 @@ this distinction is the operative one: literature-routed items are being served 
 --------------------------------------------------------------------------------
 ### Literature-bearing (8) — the only items this run adds to the search backlog
 
-ASSUMPTION-1164 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-546)
+ASSUMPTION-1164 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-546) [SEARCHED-15a: 2026-10-09 (cycle 1)] [SEARCHED-15b: 2026-10-09 (cycle 1)] [DISPOSITIONED-15c: 2026-10-09 → MONITOR (MONITOR-685; DISPOSITION-1057)]
   Venues named UNREACHED by both directions at intake: targeted scientometrics databases,
   Scientometrics and Research Policy full text, the question-asking education-research literature
   (15a); the individuation-of-problems counting problem (15b). A second null from an under-budgeted
   search is not the same as a null. Priority: High.
 
-PRESUMPTION-863 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-549)
+PRESUMPTION-863 [QUEUED] [RE-TRIGGER by 15d: 2026-09-13, cycle 1] (MONITOR-549) [SEARCHED-15a: 2026-10-09 (cycle 1)] [SEARCHED-15b: 2026-10-09 (cycle 1)] [DISPOSITIONED-15c: 2026-10-09 → INCORPORATE, no mint (covered by PREMISE-119; DISPOSITION-1056)]
   AUTHORITY limb only, on fresh budget: control-theoretic software adaptation, autoscaling,
   decentralised decision rights, Kanban/CONWIP admission policy. Sought: a source locating
   cap-adjustment authority as a design obligation rather than by MAPE-K analogy. The arithmetic limb
@@ -25385,3 +25385,15 @@ ITEM: PRESUMPTION-1114 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-04 — empirica
 **Backups:** *.bak.20261008-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
 **Backlog remaining (fail loud):** 137 bare literature-lane items before this run; 132 remain. Not touched.
 **Independence:** separate subagent contexts, same model family (cf. REVISE-488). 15b saw one-line cycle-0 15a verdicts in monitor_queue.md; neither read the other's 10-08 files. Fetch refusals: 15a's arXiv:2604.18880 PDF returned no content (abstract only); 15b's Jensen & Snodgrass TKDE PDF empty.
+
+
+## 2026-10-09 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** No new 14a/14b intake (assumptions.md/presumptions.md unmodified since 2026-10-03 23:45; changelog/2026-10-09_changes.md is a RUN_INCOMPLETE cloud stub). Per the 10-05..10-08 precedent, a backlog batch of 5 newest bare items: PRESUMPTION-863, ASSUMPTION-1164 (09-13 cohort, now exhausted), PRESUMPTION-844, ASSUMPTION-1153 (08-30), PRESUMPTION-539 (08-02; tie broken by queue position). Orchestrator choice, not in the task spec.
+**Dispositions:** DISPOSITION-1056..1060 — 2 INCORPORATE (1153 → PREMISE-225, Moderate; 863 → no mint, covered by PREMISE-119), 2 MONITOR (1164 → MONITOR-685; 539 → MONITOR-686), 1 REVISE (844 → REVISE-514, Medium). MONITOR-542/543/546/477 superseded; MONITOR-549 closed (status notes appended, entries not edited).
+**Label normalisation (863):** 15c drafted "CLOSED → folds into PREMISE-119"; orchestrator relabelled to the house form "INCORPORATE (no mint; covered by PREMISE-…)" so the disposition stays within the spec's INCORPORATE/MONITOR/REVISE vocabulary. Substance unchanged.
+**Proposed, NOT applied (needs Tom):** PREMISE-119 two-timescale annotation (fixed in-run cap; owned outer loop with trigger + hysteresis) — text in DISPOSITION-1056. REVISE-350 evidence annotation appended to revision_flags.md after REVISE-514.
+**SYSTEMIC-RISK (15b, High):** shared retrieval convergence — 15a/15b concurrent on one fetch cache; 3 of 15b's fetches refused as "already fetched" seconds after 15a's (1164, 844, 1153). 15c counted agreement on shared sources as one reading (hence PREMISE-225 at Moderate). lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-09_shared-retrieval-convergence.md (PROVENANCE block appended by orchestrator — 15b omitted it).
+**Backups:** *.bak.20261009-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
+**Backlog remaining (fail loud):** 132 bare literature-lane items before this run; 127 remain (120 from 2026-07, 7 from 2026-08). Not touched.
+**Independence:** separate subagent contexts, same model family (cf. REVISE-488/REVISE-350); neither read the other's 10-09 files. Fetch failures: 15a 3/6, 15b 5/10. Most evidence is search-result level; several cited works (Maier 1998, Neyman-Pearson framing, Choi/Hecht/Tayler bibliographic details) are unverified.

@@ -16025,3 +16025,58 @@ REVISE-513:
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-888_retrigger-2026-10-08_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-888_retrigger-2026-10-08_against.md
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+# ==== 2026-10-09 15c intake — REVISE-514 ====
+
+REVISE-514:
+  Date: 2026-10-09 | Source: DISPOSITION-1058 (15c) | Item: PRESUMPTION-844 (supersedes MONITOR-543) (PRESUMPTION (unstated))
+  15a: PARTIALLY-SUPPORTED (Moderate; NOVELTY narrowed to the container for a queue of decisions) | 15b: PARTIALLY-CHALLENGED (Moderate vs NOVELTY; Weak-Moderate vs the container mechanism)
+  What: the split-test that MONITOR-543 and 15c endorsed at intake (paginated versus single-page review
+    artifact), and the NOVELTY priority bump attached to the item.
+  Why:
+    - The code-review change-size and decomposition literature exists. The controlled experiment is di
+      Biase et al. 2019, PeerJ CS 5:e193, read in full by 15a only; 15b's fetch was refused under
+      SYSTEMIC-RISK, so this is one reading. Decomposition gave fewer false positives (p=0.03) and no
+      change in defects found, review time or understanding. Supporting it: Rigby et al. 2014 and Baum
+      et al. 2019 (cited within di Biase), Kemerer & Paulk 2009 (search-result) and Cisco/SmartBear
+      (industry, search-result).
+    - Both directions agree the supported variable is AMOUNT PER SITTING (review rate), not the page
+      container. HCI comparisons of pagination versus scrolling are null-ish: Sharma & Murano 2020,
+      First Monday (abstract fetched); usability.gov guidelines (search-result).
+    - A pagination-only test leaves 54 judgements per sitting. It is likely to return a null, and that
+      null would be misread as clearing the artifact.
+    - The "only depth matters" presumption stays refuted. The substantive premise is already held by
+      PREMISE-121 and PREMISE-050, so there is no new mint.
+  What is at risk: the remedy for the human review bottleneck, both the 54-card / 677 KB review page and
+    the queue awaiting Tom (coupled to REVISE-364 and PREMISE-119). The risk is that a mis-specified test
+    exonerates the artifact.
+  Recommended action (for Tom):
+    (a) Redesign the split-test so its PRIMARY ARM varies cards per sitting (e.g. 10 vs 54) and a
+        pagination-only arm serves as CONTROL. The control is expected to show no difference; it also
+        tests 15a's residual container-novelty claim.
+    (b) Outcomes: cards dispositioned within 72 h, and later-reversed dispositions. Reversals are di
+        Biase's sensitive outcome. Throughput alone may show nothing.
+    (c) Record page load time for the 677 KB artifact. It is the only container-level mechanism with
+        any support.
+    (d) Withdraw the NOVELTY priority bump.
+    (e) Do not quote the "400 LOC" figure. It now traces to Cisco/SmartBear industry data with
+        methodology unreported, and Kemerer & Paulk 2009 has not been read.
+  Urgency: Medium
+  Recorded disagreement: 15a retains a residual NOVELTY for the container of a queue of independent
+    decisions. 15b withdraws NOVELTY as worded. Arm (a)'s control resolves this empirically and is not
+    averaged here.
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-844_retrigger-2026-10-09_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-844_retrigger-2026-10-09_against.md
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform: Net evaluation and disposition | Current status: REVISION-FLAGGED
+
+[ANNOTATION proposed for REVISE-350 (evidence, not a new flag), 2026-10-09:]
+  SYSTEMIC-RISK-FLAG_2026-10-09_shared-retrieval-convergence (15b, High) adds a mechanism one layer below
+  the same-model-family correlation: coupling at the FETCH layer. 15a and 15b ran concurrently and shared
+  a fetch cache. Three of 15b's fetches were refused as "already fetched" seconds after 15a's, so access
+  to sources is order-dependent, and the two directions converged on the same decision-relevant source
+  for 1153, 844 and 1164. This is an instance of PREMISE-120: shared code path, corpus, model and
+  execution context, with only the read channel separated.
+  Recommendations for Tom:
+    - Separate fetch caches or sessions per direction.
+    - Per-direction required venue lists when a queue block names a single owed literature.
+    - A per-item URL log so that 15c can compute source overlap before counting agreement.

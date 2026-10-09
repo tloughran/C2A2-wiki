@@ -1,2 +1,2 @@
-RELEASED 2026-10-08T04:44:23Z by c2a2-lit-search-pipeline (scheduled run 2026-10-08, single instance). Applied: DISPOSITION-1051..1055, MONITOR-684, REVISE-510..513.
+RELEASED 2026-10-09T04:47:38Z by c2a2-lit-search-pipeline (scheduled run 2026-10-09, single instance). Applied: DISPOSITION-1056..1060, PREMISE-225, MONITOR-685..686, REVISE-514.
 Convention (proposed, not yet in the task spec): if this file exists WITHOUT "RELEASED" and is < 6 h old, do not write registers; write a conflict note and exit.

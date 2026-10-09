@@ -2169,3 +2169,48 @@ Master / Pattern Detector: CROSS-141..146; 9 signals forwarded; FINDING-095..098
 **Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
 
 **Network unchanged: 998 PRS / 146 CROSS / 98 FINDING.** Pending = 3.
+
+
+## 2026-10-09 — C2A2 daily run (Fri, Carroll + Arkani-Hamed specialist day)
+
+**Phase 0: one decision email, 3 APPROVE.** `[C2A2-review-decision] 2026-10-08` (thread 1a11bfe8dfa6163e). All 3 resolved by
+`proposal_id` to exactly one file; no fallback, no no-ops. Archive `review/archive/2026-10-09_decisions.md`. Email appended to
+`provenance/decision_emails.json` (18 emails). `review/2026-10-08_review.html` retired to `review/_superseded/`. Mark-as-read succeeded.
+The 4 old unread threads (04-08, 04-27 x2, 07-23) were already processed in earlier runs; left alone.
+
+**Phase 1: 3 files ingested, 5 triplets, 2 traditions.** Ledger after: approved total=471 ingested=440 decided-zero=29 OPEN=1.
+
+| File | Processed By | Date | Triplets Extracted | Notes |
+|------|-------------|------|-------------------|-------|
+| `2026-10-07_kastrup_ai-as-archetypal-urge.md` | Kastrup Agent + Master Agent + Pattern Detector | 2026-10-09 | 2 (PRS-91..92) | PROP-2026-10-07-001. Members-only session; PRS-91 Speculative, PRS-92 Medium. CROSS-147. |
+| `2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility.md` | Fredrickson Agent + Master Agent + Pattern Detector | 2026-10-09 | 2 (PRS-45..46) | PROP-2026-10-08-001. 2024 paper, abstract-verified. CROSS-148; FINDING-099. |
+| `2026-10-08_fredrickson_shared-positivity-meaning-in-life.md` | Fredrickson Agent + Master Agent | 2026-10-09 | 1 (PRS-47) | PROP-2026-10-08-002. 2023 paper, full text. CROSS-149. |
+
+Same deterministic transform as 10-07 (candidate fields verbatim; `Date Added: 2026-10-09`; `Source: <title>; <proposal_id>`; insert
+before the last `*Total PRS triplets:*` line). Post-check: no duplicate ids; closing total = max id (kastrup 92, fredrickson 47).
+`### Ingest 2026-10-09` sections added to both `wiki.md`; open/solved lists not re-adjudicated (standing note).
+Master / Pattern Detector: CROSS-147..149; 4 signals forwarded; FINDING-099..100; none escalated.
+
+**Phase 2: 0 proposals.** Carroll covered by specialist (PROP-2026-10-09-001). Arkani-Hamed searched: all 2026 items on his CV
+(dated 2026-09-10) already captured; a June 2026 AI-assisted paper reported second-hand on a blog is outside the 60-day window. Not proposed.
+**Phase 3.** `review/2026-10-09_review.html` (16,424 bytes, 1 proposal), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-5952143207394561974).
+**Phase 5.** `review/2026-10-05_review.html` moved to `review/_superseded/`. 10-07, 10-09 retained.
+**Phase 5.5.** OK: 7,013,321 bytes; triplets 1003; cards 514, dates 143, responses 18; 20 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1693 signals (+10), 90 pairs, span to 2026-10-08, stale_days 1, no WARN; qc_trace.csv promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network: 1003 PRS / 149 CROSS / 100 FINDING.** Pending = 1 (Carroll PROP-2026-10-09-001).
+
+## 2026-10-09 — C2A2 daily run (Fri, Carroll + Arkani-Hamed specialist day)
+
+**Phase 0.** `[C2A2-review-decision] 2026-10-08` (thread 1a11bfe8dfa6163e): 3 APPROVE (Kastrup PROP-2026-10-07-001; Fredrickson PROP-2026-10-08-001/-002). Archive `review/archive/2026-10-09_decisions.md`; email in `provenance/decision_emails.json`.
+**Phase 1.** 3 files ingested, 5 triplets (kastrup PRS-91..92; fredrickson PRS-45..47). Ledger: approved=471 ingested=440 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, unchanged). CROSS-147..149; FINDING-099..100; none escalated. (Ingest was done by an earlier attempt at 04:37 today; verified here, not repeated.)
+**Phase 2: 0 proposals.** Carroll covered by specialist (PROP-2026-10-09-001). Arkani-Hamed searched: nothing new in window.
+**Phase 3.** `review/2026-10-09_review.html` (16,424 bytes, 1 proposal), opened via Desktop Commander `open`.
+**Phase 5.** Nothing older than 3 days to retire (10-07, 10-09 only).
+**Phase 5.5.** OK: 7,013,321 bytes; triplets 1003; cards 514, dates 143, responses 18; 20 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1693 signals, 90 pairs, span to 2026-10-08, stale_days 1, no WARN; qc_trace.csv not promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network: 1003 PRS / 149 CROSS / 100 FINDING.** Pending = 1.

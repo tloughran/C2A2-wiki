@@ -418,4 +418,31 @@ PRS-44:
   Confidence: Speculative
   Evidence: The authors themselves say Study 2 was not powered to detect small interactions; samples were convenience samples and disproportionately female; only one human rater in Study 2; the studies were not preregistered. "No detected bias" here is weak evidence of no bias.
 
-*Total PRS triplets: 44*
+PRS-45:
+  Problem: Positivity resonance theory was built almost entirely on US samples; it was unknown whether resonance levels are a human constant or vary by culture.
+  Resource: Two-study cross-cultural comparison (N = 5,711) of everyday positivity resonance with strong vs. weak ties, East Asian vs. European American participants, with perceived relational mobility as a candidate mediator.
+  Solution: Resonance with strong ties is lower in East Asian samples, and lower relational mobility partly mediates the difference. This makes relational mobility an empirically supported collective-level conducive condition, not just a theoretical slot in the framework.
+  Date Added: 2026-10-09
+  Source: Do People From Different Cultures Vary in How Much Positive Emotions Resonate in Day-to-Day Social Interactions? Examining the Role of Relational Mobility; PROP-2026-10-08-001
+  Confidence: High (for the reported difference and partial mediation; causal direction not established by a cross-sectional design)
+  Evidence: Abstract: "compared with European American participants, East Asian participants showed lower levels of positivity resonance with strong social ties. Such differences were in part explained by lower levels of perceived relational mobility."
+
+PRS-46:
+  Problem: Do the culture effects on resonance apply equally to close relationships and to encounters with strangers?
+  Resource: The strong-tie vs. weak-tie contrast within the same cross-cultural samples.
+  Solution: The cultural gap appears for strong ties only, not weak ties. Read alongside West & Fredrickson's weak-tie work, this suggests stranger encounters may be a culturally more even channel for resonance than close relationships.
+  Date Added: 2026-10-09
+  Source: Do People From Different Cultures Vary in How Much Positive Emotions Resonate in Day-to-Day Social Interactions? Examining the Role of Relational Mobility; PROP-2026-10-08-001
+  Confidence: Medium (it is a null difference for weak ties; the absence of an effect is weaker evidence than its presence)
+  Evidence: Abstract: "Comparable effects were not present for weak social ties."
+
+PRS-47:
+  Problem: Does shared positive affect, beyond individual pleasant feeling, contribute to a sense that life is meaningful, and through what route?
+  Resource: Positivity resonance (perceived, trait and episode level) paired with day-level longitudinal designs, social-resources mediators, and a 35-day randomized induction (mindfulness vs. social connectedness vs. control).
+  Solution: Resonance predicts later meaning (not the reverse) in daily data, and the link is mediated by social resources; partial evidence of specificity to resonance over pleasantness.
+  Date Added: 2026-10-09
+  Source: Does Shared Positivity Make Life More Meaningful? Perceived Positivity Resonance is Uniquely Associated with Perceived Meaning in Life; PROP-2026-10-08-002
+  Confidence: Medium
+  Evidence: Studies 1-3 show between- and within-person links and temporal precedence; Study 4 experimental mediation path p = .073 (marginal); mediation in Study 2 lost significance after emotion controls.
+
+*Total PRS triplets: 47*
