@@ -119,3 +119,18 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 **Open question the wiki cannot yet answer:** Is the centre/edge distribution stable across individuals, or does a healthy community require each *person* to hold both? McGilchrist's account is intra-cranial and therefore per-person by construction; Brown Taylor's is explicitly social, with different people at different positions. Those are not the same claim, and a tradition could satisfy one while failing the other — a community of specialists, each internally imbalanced, that is balanced in aggregate. The wiki has no way to tell these apart, and the accelerator's design depends on which one it is aiming at.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_center-and-edge-holy-ignorance]]
+
+---
+
+## Kinship seen, not inferred
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin.md` (0 backlinks).
+
+**Why it sits here:** Rohr's weekly summary of the Francis series: creation as kin, contemplation issuing in vulnerability.
+
+**Synthesis claim.** The Franciscan kinship claim is a claim about a way of attending before it is a claim about biology. McGilchrist gives the mode (right-hemisphere presencing); Boff's genetics supplies only a later confirmation. The order matters: the attention comes first.
+
+**Open question the wiki cannot yet answer:** Does a mode of attention that reveals kinship have any test that does not already assume the kinship it reveals?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin]]

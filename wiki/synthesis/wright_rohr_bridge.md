@@ -241,3 +241,33 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Open question the wiki cannot yet answer:** Is there a reading of Philippians 2:12 on which "God does all the rest" and "work out your own salvation" describe the same event at two levels, and has either oracle said so?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_an-influential-teacher-therese-of-lisieux]]
+
+---
+
+## The violent texts read from the cross
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero.md` (0 backlinks).
+
+**Why it sits here:** Wright's Ask NT Wright episode (21 Sep) on Old Testament violence, beside Rohr's approved 'Myth of Redemptive Violence'.
+
+**Synthesis claim.** Both read the violent texts from the cross, where God takes violence on himself. They differ on what the texts were: for Wright, real judgment and Israel's real failures placed in a larger story; for Rohr, a projection the story outgrows. Agreement on the endpoint hides disagreement on the starting point.
+
+**Open question the wiki cannot yet answer:** Were the commands to violence ever God's, on either reading, and has either oracle said so in so many words?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero]]
+
+---
+
+## Sacramental ontology: creation-wide or ecclesial-anticipatory
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament.md`, `inbox/proposals/approved/2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth.md` (0 backlinks).
+
+**Why it sits here:** Rohr's 'God's Resting Place' (creation as continuous sacrament) and Wright's 4 Oct episode (baptism and Eucharist as heaven-earth overlaps), filed the same day.
+
+**Synthesis claim.** Both deny that matter is escaped; both say it carries divine presence. Rohr spreads the sacrament across the cosmos and makes ritual secondary; Wright concentrates it in ecclesial acts that anticipate the renewed whole. The disagreement is about where the weight sits, and it is real.
+
+**Open question the wiki cannot yet answer:** If creation is already a continuous sacrament, what does an ecclesial sacrament add, in Rohr's terms, that Wright could accept?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-04_rohr_gods-resting-place-francis-nature-sacrament]] [[2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth]]

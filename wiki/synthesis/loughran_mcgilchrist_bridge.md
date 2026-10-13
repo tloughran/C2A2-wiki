@@ -30,3 +30,18 @@ Note the second-order effect the McGilchrist card demonstrates and the Kastrup c
 **Open question the wiki cannot yet answer — and this one is a decision, not a question.** Three options: budget for memberships (Channel McGilchrist, *With Reality in Mind* at €25/month, Essentia Foundation — a bounded and probably small sum); adopt a documented no-gated-sources policy and accept the coverage loss explicitly; or set a confidence ceiling for gated material so it can never rise above Speculative regardless of how complete the metadata looks. Any of the three is defensible and all three are better than the status quo, which is a fourth option nobody chose: ingest gated material at whatever confidence the retrieving agent's judgment suggests, and note the problem again next week.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-16_mcgilchrist_members-qa-27-august-2026]], [[2026-09-16_kastrup_headless-way-richard-lang]]
+
+---
+
+## The spiral and the liberal order
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-09-30_mcgilchrist_think-spiral-classical-liberalism.md` (0 backlinks).
+
+**Why it sits here:** Klein and McGilchrist, 'Think Spiral' (*Society*): hemispheric iteration, and classical liberalism as its political form.
+
+**Synthesis claim.** The spiral (right grounds, left articulates, return to right) is a model for healthy dialogue between traditions. But the paper's political conclusion, classical liberalism, is what MacIntyre argues dissolves traditions. The spiral may need a tradition-constituted community more than a liberal order.
+
+**Open question the wiki cannot yet answer:** Does the return-to-the-right step require a shared lived practice that liberal neutrality cannot supply?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-09-30_mcgilchrist_think-spiral-classical-liberalism]]

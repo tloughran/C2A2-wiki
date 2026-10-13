@@ -3573,3 +3573,48 @@ OPEN-263:
 OPEN-259 (update 2026-10-03): Day 6 with no Cowork designer speech. However, the evening sync found a same-day claude.ai chat, "Antique et nova" (Vatican AI note, Magisterium AI, Truthly.ai, Levin & Dennett), that "reads like walk dictation". It was excluded on its title alone (ASSUMPTION-1752, PRESUMPTION-1111). The day-count may be an artefact of the title filter. Tom to confirm.
 OPEN-261 (update 2026-10-03): The lock file says "single instance". The evening sync says a second copy fired and exited on the lock (ASSUMPTION-1743). Unresolved. REVISE-502 (High) recommends moving the lock rule into the task spec.
 OPEN-260 (update 2026-10-03): A further question is whether cloud-run tasks appear in local session_info at all. If they do not, the local 14a/14b pass cannot see them (PRESUMPTION-1114).
+
+OPEN-264:
+  Raised: 2026-10-09 by 14b (PRESUMPTION-1116, -1117; ASSUMPTION-1754, -1758)
+  Question: What is the 14a/14b intake unit? The task text says "C2A2-related session". Local passes up to 10-03 extracted from scheduled-job transcripts; local passes 10-05..10-08 required live designer speech and recorded NO_SESSION_TODAY; this 10-09 pass reverted to the 10-03 rule (see changelog). One rule should be chosen and written into the task spec. Related: should precedent from unattended runs (move-not-delete, batch selection, chat fallback) ever override task text without Tom ratifying it?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-264
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-260 (update 2026-10-09): The cloud twin again wrote a UTC-dated stub (`changelog/2026-10-09_changes.md`, created 2026-10-08 23:31 EDT) describing local day 10-08. Scheduler health lists c2a2-self-awareness-daily as cloud-moved, yet the local twin also fires nightly (ASSUMPTION-1759).
+
+OPEN-265:
+  Raised: 2026-10-10 by 14b (PRESUMPTION-1120; ASSUMPTION-1768)
+  Question: Two jobs hunt Wolfram sources on Saturdays (the wiki daily run and the Wolfram agent) and reached opposite verdicts on the same Oct 2 livestream. The wiki daily run declined to propose from unverifiable content; the Wolfram agent wrote PROP-2026-10-10-001 from segment titles, marked Speculative. Which job owns the hunt, and what is the shared evidential threshold for writing a proposal?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-265
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-264 (update 2026-10-10): This is the second local pass under the 10-03 rule (extracting from scheduled-job transcripts), chosen for consistency with 10-09 while Tom has not ruled. REVISE-516 (lit pipeline, 10-10) proposes a register of standing practices, and that register would be the place to settle this.
+OPEN-260 (update 2026-10-10): The cloud twin again wrote a stub (`changelog/2026-10-10_changes.md`, "NOT RUN (blocked)", fired 10-10 05:15 UTC), this time dated to the correct local day. The local pass appends to it. Cloud routines have been unwatched since 10-06 (ASSUMPTION-1772).
+
+OPEN-266:
+  Raised: 2026-10-12 by 14a (ASSUMPTION-1781, -1778; PRESUMPTION-1124, -1129)
+  Question: Which record is authoritative for "did job X run today, and did it do its work"? On 10-12 the morning project status said 8 daily jobs had not run ("Mac ... probably asleep"), and the weekly ecosystem report said "Every scheduled agent has run". commit_check reported OK for three days on a 10-09 commit. Should one script own run/freshness truth, keyed on content or commit identity rather than timestamps or log-line presence?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-266
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-260 (update 2026-10-12): Twins ran again: evening sync, reviewer review and morning scrape each fired in cloud and local; the local copies deferred to the cloud ones without re-checking (ASSUMPTION-1776, PRESUMPTION-1125). The cloud 14a/14b twin wrote two stubs for local day 10-12: `changelog/2026-10-12_changes.md` (09:30 UTC) and `changelog/2026-10-13_changes.md` (03:31 UTC 10-13 = 23:31 EDT 10-12). The local 10-11 pass (de795b3c) died when the Mac slept, so 10-11 is unprocessed.
+OPEN-264 (update 2026-10-12): Third local pass under the 10-03 rule (extracting from scheduled-job transcripts), for consistency while Tom has not ruled.
+OPEN-265 (update 2026-10-12): The same threshold question now covers the Monday Levin/Friston agent: it excluded transcript-less episodes (30 Sept precedent) but carded a Friston paper from its abstract (ASSUMPTION-1780, PRESUMPTION-1128).

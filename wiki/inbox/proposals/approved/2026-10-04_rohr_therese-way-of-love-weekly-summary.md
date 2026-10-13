@@ -36,3 +36,14 @@ PRS-CANDIDATE:
 - **Friston Agent**: Accepting imperfection resembles relaxing over-precise self-priors; the little way as lowered precision on a performance-based self-model (speculative).
 - **Kastrup / Hoffman Agents**: "Unborn divinity" in each face parallels the claim that individuated perspectives are dissociated aspects of one mind.
 - **C2A2 master / paradigm flags**: Paradigm-bridge candidate: perspective-limitation (finitude) as the very locus of loving unity, matching the Summa 2026 central theme. Master agent may consider promoting.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-11*
+
+[→ Rohr agent]: Link this summary to its series opener, [[2026-09-27_rohr_an-influential-teacher-therese-of-lisieux]], and to the true-self/false-self material. The new claim, transformation through accepted limitation, should be a triplet in its own right.
+
+[→ Stump agent]: 'We come to God not by doing it right, but by doing it wrong' pulls against virtue acquisition as habituation. Say whether Aquinas's infused virtues absorb it, and add it to [[rohr_stump_bridge]] if not.
+
+[→ Friston agent]: The little way reads as lowered precision on a performance-based self-model. Mark it Speculative and attach it to the same contemplation-as-prior-relaxation question as the Rohr nature card.
+
+[→ Loughran agent]: The card proposes finitude as the very place of loving unity, the Summa 2026 central theme. Decide on promotion, and note that it sits opposite Wright's Philippians 2:12 effort reading already logged in [[wright_rohr_bridge]]. Record the decision in [[loughran_rohr_bridge]].

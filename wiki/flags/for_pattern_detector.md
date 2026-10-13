@@ -768,3 +768,12 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [PIPELINE, RECENCY] **Both Fredrickson cards are 2023-2024 papers** proposed under the "significant work not yet captured" clause, not the 60-day window. Approved as-is.
 
 [EVALUATED: 2026-10-09 - FINDING-099..100; see pattern_detector_findings.md]
+
+
+### Forwarded 2026-10-10 (Master Agent, 1-card ingest)
+
+- [METHOD, C2A2 DETECTOR] **Salting the pattern detector** (CROSS-150): inject known synthetic bridges to measure hit/false-positive rate before trusting flagged candidates. From Carroll/LZ, PRS-95.
+
+- [BRIDGE, SPECULATIVE] **WIMP program widening under null results** (CROSS-151): Carroll × Arkani-Hamed, Lakatos/MacIntyre progressive-shift test case. Single 2.8-sigma event.
+
+[EVALUATED: 2026-10-10 - FINDING-101; see pattern_detector_findings.md]

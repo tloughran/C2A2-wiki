@@ -2214,3 +2214,76 @@ Master / Pattern Detector: CROSS-147..149; 4 signals forwarded; FINDING-099..100
 **Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
 
 **Network: 1003 PRS / 149 CROSS / 100 FINDING.** Pending = 1.
+
+## 2026-10-10 — C2A2 daily run (Sat, Wolfram specialist day)
+
+**Phase 0: one decision email, 1 APPROVE.** `[C2A2-review-decision] 2026-10-09` (thread 1a120edcea71fa5d). PROP-2026-10-09-001 resolved by
+`proposal_id` to exactly one file; no fallback, no no-ops. Archive `review/archive/2026-10-10_decisions.md`. Email appended to
+`provenance/decision_emails.json` (19 emails). `review/2026-10-09_review.html` retired to `review/_superseded/`. Mark-as-read succeeded.
+
+**Phase 1: 1 file ingested, 3 triplets, 1 tradition.** Ledger after: approved total=472 ingested=441 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, unchanged).
+
+| File | Processed By | Date | Triplets Extracted | Notes |
+|------|-------------|------|-------------------|-------|
+| `2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint.md` | Carroll Agent + Master Agent + Pattern Detector | 2026-10-10 | 3 (PRS-95..97) | PROP-2026-10-09-001. PRS-95 High, PRS-96..97 Medium. CROSS-150..151; FINDING-101. |
+
+Same deterministic transform as 10-09 (script-parsed candidate fields; `Date Added: 2026-10-10`; `Source: <title>; <proposal_id>`; insert before the
+last `*Total PRS triplets:*` line). Post-check: no duplicate ids; closing total = max id (carroll 97). `### Ingest 2026-10-10` added to carroll `wiki.md`.
+Master / Pattern Detector: CROSS-150 (salting as detector calibration), CROSS-151 (WIMP program widening, Speculative); FINDING-101; none escalated.
+
+**Phase 2: 0 proposals.** No Wolfram specialist card in pending/. Orchestrator searched Wolfram: one uncaptured item, the
+Future of Science and Technology Q&A (October 2, 2026) livestream; its page is JS-rendered, no transcript PDF at the usual
+content.wolfram.com path, no indexed summary. Content unverifiable, so not proposed. Recheck next Saturday. Live CEOing Ep 992-995 are product design reviews; out of scope.
+**Phase 3.** Skipped: no pending proposals.
+**Phase 4.** Gmail status draft created (r5891849565082207139).
+**Phase 5.** Nothing older than 3 days to retire (10-07 only).
+**Phase 5.5.** OK: 7,025,580 bytes; triplets 1006; cards 515, dates 144, responses 19; 21 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1695 signals (+2), 90 pairs, span to 2026-10-09, stale_days 1, no WARN; qc_trace.csv promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 0.
+
+## 2026-10-11 — C2A2 daily run (Sun, no orchestrator-schedule specialist; Rohr/Wright cards present)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: 10-09 thread (already processed 10-10) plus the 4 old archived threads. No moves.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=472 ingested=441 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Rohr (PROP-2026-10-11-001/-002) and Wright (-003/-004) carded by specialist; Wolfram carded 10-10 (PROP-2026-10-10-001, written after the 10-10 run). Searched Levin, Friston, Kastrup, McGilchrist, Carroll, Hoffman, Hawkins, Arkani-Hamed, Stump, Fredrickson: nothing new in window (Hoffman 10-16 talk is future).
+**Phase 3.** `review/2026-10-11_review.html` (34,951 bytes, 5 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r8348438514889786783).
+**Phase 5.** `review/2026-10-07_review.html` moved to `review/_superseded/`.
+**Phase 5.5.** OK: 7,042,856 bytes; triplets 1006; cards 519, dates 145, responses 19; 21 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1695 signals (+0), 90 pairs, span to 2026-10-09, stale_days 2, no WARN; qc_trace.csv not promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 5.
+
+## 2026-10-12 — C2A2 daily run (Mon, Levin + Friston specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: only the 4 old archived threads (04-08, 04-27 x2, 07-23). No decision yet on the 10-11 page. No moves.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=472 ingested=441 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Levin (PROP-2026-10-12-001) and Friston (-002) carded by specialist. Searched Carroll, McGilchrist, Kastrup, Hoffman, Arkani-Hamed, Hawkins, Stump, Fredrickson: nothing new in window (Hoffman Pari Center talk 10-16 is future). Wolfram carded 10-10; Rohr/Wright carded 10-11.
+**Phase 3.** `review/2026-10-12_review.html` (57,226 bytes, 7 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r-2123283459675609748).
+**Phase 5.** Only `review/2026-10-11_review.html` remained before today's page; nothing past the 3-day window.
+**Phase 5.5.** OK: 7,083,096 bytes; triplets 1006; cards 521, dates 146, responses 19; 21 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1695 signals (+0), 90 pairs, span to 2026-10-09, stale_days 3, no WARN; qc_trace.csv not promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 7.
+
+## 2026-10-13 — C2A2 daily run (Tue, Hawkins + Hoffman specialist day)
+
+**Phase 0.** `[C2A2-review-decision]` unread/newer_than:2d: only the 4 old archived threads (04-08, 04-27 x2, 07-23). No decision yet on the 10-11/10-12 pages. No moves.
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=472 ingested=441 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, unchanged). **0 files ingested.**
+**Phase 2: 0 proposals.** Hoffman (PROP-2026-10-13-001) and Hawkins (-002) carded by specialist. Searched McGilchrist, Kastrup, Carroll, Arkani-Hamed, Stump, Fredrickson: nothing new in window. Levin/Friston carded 10-12, Wolfram 10-10, Rohr/Wright 10-11.
+**Phase 3.** `review/2026-10-13_review.html` (75,112 bytes, 9 proposals), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r4082179420968330368).
+**Phase 5.** No review page past the 3-day window (10-11, 10-12 retained).
+**Phase 5.5.** OK: 7,094,893 bytes; triplets 1006; cards 523, dates 147, responses 19; 21 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1695 signals (+0), 90 pairs, span to 2026-10-09, stale_days 4, no WARN; qc_trace.csv not promoted.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 9.
+
+## 2026-10-13 — second C2A2 run (cloud scheduled, re-fire)
+Phase 0: no decision emails. Phase 1: ledger unchanged (0 ingested). Phase 2: skipped, searches already done earlier today. Phase 3/4: review page + draft from earlier run retained, no duplicate. Phase 5.5 OK address-clean; 5.6 OK 1695 signals, stale_days 4. Pending = 9. Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.

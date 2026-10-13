@@ -24358,3 +24358,353 @@ PRESUMPTION-1114:
 - *The reader was again a same-family model (= 1086/1092).*
 
 ---
+
+---
+PRESUMPTION-1115:
+  Date surfaced: 2026-10-09
+  Statement: [inferred] Instruments with partial coverage report their silence as a negative finding. Today: the registry that sees 1 of 70 tasks supports "every daily job has already fired"; searches that never reached the arXiv author page support "nothing new"; Gmail-only lookup supports "Walk notes found: NO"; Recents titles support "still no walk chat". Was it presumed that each instrument's detection probability is ~1 within its claimed scope?
+  Evidence it was operative: ASSUMPTION-1761, -1762; dfc10e81, 767939ae (reader digests)
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: PRESUMPTION-1109 / REVISE-504; REVISE-510..513 (no negative state)
+  Testability: testable via literature (imperfect detection: occupancy modelling, detection probability, absence-of-evidence inference)
+  Risk if wrong: High — false all-clears; missed proposals, walk notes and failed jobs leave no trace.
+  Confidence: high (four independent instances today)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1115
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-09 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1116:
+  Date surfaced: 2026-10-09
+  Statement: [inferred] Since 10-05 the local 14a/14b runs have defined their intake as 'a session with live designer speech' and, finding none, wrote NO_SESSION_TODAY. The task text says 'C2A2-related session'; the 10-03 and earlier local passes extracted from scheduled-job transcripts. The narrowing was never stated as a rule, and its effect (zero intake for six days; lit pipeline drawing only on backlog) is read downstream as failure (ASSUMPTION-1758).
+  Evidence it was operative: changelog/2026-10-05..08 local addenda vs 2026-10-03 local pass; b39986fb; 1c798c76
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-264; PRESUMPTION-1114
+  Testability: framework commitment (Tom rules) — in-house
+  Risk if wrong: High — the self-awareness layer is blind to the runs that now constitute almost all C2A2 activity.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1116
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-09 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1117:
+  Date surfaced: 2026-10-09
+  Statement: [inferred] Precedent set by earlier unattended runs is treated as authority that can override task text, with no ratification step. Today: move-not-delete "the same way the last few runs did"; the lit pipeline's batch rule "per the 10-05..10-08 precedent"; the walk-chat fallback "the same fallback this morning's chat scrape used"; NO_SESSION_TODAY "matches how earlier no-session days were handled".
+  Evidence it was operative: ASSUMPTION-1754, -1758, -1763; 95b57d21
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions: OPEN-264; REVISE-502 (rule lives outside the task spec)
+  Testability: testable via literature (organisational routines, drift into failure / normalisation of deviance, precedent in automated pipelines)
+  Risk if wrong: Medium-High — policy accretes without anyone choosing it, and deviations become invisible once repeated.
+  Confidence: high
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1117
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-09 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1118:
+  Date surfaced: 2026-10-09
+  Statement: [inferred] A one-word aggregate verdict ('healthy', 'no issues') is presumed to cover the union of what the reader cares about, though the producing instrument inspected a disjoint scope (sandbox CPU/memory and wiki job files, not launchd or cloud routines).
+  Evidence it was operative: ASSUMPTION-1760, -1761
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: PRESUMPTION-1113 (one field, two meanings) — this is the scope analogue
+  Testability: testable via literature (monitoring coverage, alert semantics, 'unknown' as a first-class health state)
+  Risk if wrong: Medium — the morning digest says healthy on days with FAILs.
+  Confidence: high
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1118
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-09 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1119:
+  Date surfaced: 2026-10-09
+  Statement: [inferred] The lit-pipeline orchestrator presumes authority to normalise agent outputs after the fact (relabelling 15c's "CLOSED" to the house INCORPORATE form; appending a PROVENANCE block 15b omitted) while still reporting the agents' work as independent. Each edit is disclosed, but the independence claim is made about pre-edit outputs.
+  Evidence it was operative: for_lit_search.md 2026-10-09 run note (verified at source)
+  Why it was unstated: oversight
+  Type: normative
+  Related decisions: REVISE-488; REVISE-350; ASSUMPTION-1757
+  Testability: testable via literature (editorial intervention in multi-reviewer and pre-registered processes; reporting of post-hoc normalisation)
+  Risk if wrong: Low-Medium — disclosed, but repeated normalisation can hide genuine vocabulary pressure (cf. REVISE-510..513).
+  Confidence: speculative (one run)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1119
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-09 transcripts.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-09 (local). **5 items (1115–1119).** Checked against 14a 1754–1764 and against PRESUMPTION-1109, -1113, -1114 and REVISE-510..513 to avoid duplication; 1115 and 1118 are flagged as extensions of those.*
+
+PRESUMPTION-1120:
+  Date surfaced: 2026-10-10
+  Statement: [inferred] Each proposal-writing job presumes its own evidential threshold is the house threshold. On 10-10 the wiki daily run declined to propose from unverifiable content; the Wolfram agent proposed from segment titles and deferred the check to the reviewer. No shared threshold exists, so whether a source yields 0 or 1 proposals depends on which job reaches it.
+  Evidence it was operative: ASSUMPTION-1768 (bd934cce vs 76923aa3)
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: OPEN-265; ASSUMPTION-1768
+  Testability: testable via literature (screening thresholds and reviewer burden in triage pipelines; inter-screener consistency in systematic reviews)
+  Risk if wrong: Medium — inconsistent intake and extra reviewer load; speculative items may be approved without the deferred check.
+  Confidence: medium (ordering of the two jobs not established)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1120
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-10 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1121:
+  Date surfaced: 2026-10-10
+  Statement: [inferred] The pipeline presumes its flags have a reader. Outputs addressed to Tom keep accumulating (9-item Morning Discussion list; REVISE-515/516; watch-list split recommended a 35th time; Summa disable a 25th; path fix again) while the only Tom action visible since 10-07 is one emailed approval. 15b's clutter warning was handled by making fewer, broader fixes; it was not handled by checking whether anyone is reading.
+  Evidence it was operative: 19e23a2b; d54dd123; a4b1eceb; 54356fd0; 59d2b352
+  Why it was unstated: too foundational to notice
+  Type: normative
+  Related decisions: REVISE-515; REVISE-516; PRESUMPTION-1117
+  Testability: testable via literature (alert fatigue; recommendation backlogs in operations; human-in-the-loop capacity)
+  Risk if wrong: High — if flags go unread, unattended precedent becomes policy by default (cf. PRESUMPTION-1117).
+  Confidence: high
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1121
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-10 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1122:
+  Date surfaced: 2026-10-10
+  Statement: [inferred] The lit pipeline presumes that disclosing a budget overrun after the run satisfies the budget rule. The stated rule says to summarise and start fresh when approaching budget, not only to report afterwards; the overrun was disclosed, but nothing stopped the run.
+  Evidence it was operative: d54dd123 ("overrun by a wide margin")
+  Why it was unstated: oversight
+  Type: normative
+  Related decisions: ASSUMPTION-1765
+  Testability: testable in-house (Tom)
+  Risk if wrong: Medium — cost and scope can grow unbounded while every run is technically "surfaced".
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1122
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-10 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1123:
+  Date surfaced: 2026-10-10
+  Statement: [inferred] Sandboxed jobs presume the sandbox can take in host-scale data. Telemetry copies a whole 7.8 GB database into a sandbox with 5.7 GB free; system health reads load and RAM from the sandbox. As the database grows, a design that worked at a smaller size now fails every run.
+  Evidence it was operative: 081ecc8a; 84c3cef7
+  Why it was unstated: oversight
+  Type: scaling
+  Related decisions: ASSUMPTION-1771; PRESUMPTION-1118
+  Testability: testable empirically (in-house)
+  Risk if wrong: Medium-High — telemetry fails every run until redesigned; host-health figures stay partly fictional.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1123
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-10 transcripts.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-10 (local). **4 items (1120–1123).** Checked against 14a 1765–1774 and PRESUMPTION-1117/1118 to avoid duplication; 1121 extends 1117 (precedent as policy) to reviewer capacity, 1123 extends 1118 (health-verdict scope) to data scale.*
+
+
+<!-- 14b run 2026-10-12 (local) -->
+
+PRESUMPTION-1124:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] Several monitors presume a file's modification time (or the presence of a log line) is a faithful proxy for the event it stands for: a re-read, a fresh run, a commit. On 10-12 the proxy diverged in both directions: re-stamping cut Friston's re-read flags with no re-reading, and commit_check reported OK three days running on a 10-09 commit. Is a timestamp proxy warranted without a content or identity check?
+  Evidence it was operative: 34e2a4af; 31cf0e51; 78e323ff
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1775; ASSUMPTION-1778; PRESUMPTION-1118
+  Testability: testable via literature
+  Risk if wrong: Medium-High: drift and stalls are reported as healthy or improving.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1124
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1125:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] When a local twin finds the cloud twin has already run, it presumes the twin's output is correct and becomes a no-op, rather than an independent check. Reviewer review adopted the cloud findings unchanged; the evening sync accepted a "sent" claim whose file predates the stated send time. Duplication thus yields neither redundancy nor verification.
+  Evidence it was operative: 38d24ce2; 2a5dc102
+  Why it was unstated: obvious to participants
+  Type: architectural
+  Related decisions: ASSUMPTION-1776; OPEN-260
+  Testability: testable via literature
+  Risk if wrong: Medium: a wrong cloud result is silently ratified twice.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1125
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1126:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] A correction appended as a note is presumed to reach downstream consumers. The morning scrape corrected the Iceland end date (Oct 22), but the evening summary sent to Tom still says Oct 18-23. Nothing marks the original summary as superseded.
+  Evidence it was operative: f4e6dfbd; 2a5dc102
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: ASSUMPTION-1787
+  Testability: testable in-house
+  Risk if wrong: Medium: a wrong date reaches Tom days before travel and a deadline.
+  Confidence: medium (summary content read second-hand)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1126
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1127:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] The estate presumes that "recommend, do not act" stays the right default for reversible housekeeping regardless of how often a recommendation repeats. No rule escalates a recommendation after N repeats (watch-list split x37; Summa disable x27; Desktop Commander approvals; H-Drive). Extends PRESUMPTION-1121 (flags have a reader) to the absence of an escalation ladder.
+  Evidence it was operative: 07dc7695; 0e116aa4; 3c71ed0e; af7b3403
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: PRESUMPTION-1121; PRESUMPTION-1117
+  Testability: testable via literature
+  Risk if wrong: Medium: repeated identical recommendations train the reader to ignore all of them.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1127
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1128:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] Labeling a proposal "Speculative" is presumed to preserve its epistemic weight downstream. Once approved and ingested, a triplet carded from an abstract or a chapter list counts the same in the 1006-triplet total and in cross-connection counts as one carded from a full text.
+  Evidence it was operative: 85f66e8e; 204718a1
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1780; OPEN-265
+  Testability: testable via literature
+  Risk if wrong: Medium: speculative inputs harden into network facts.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1128
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1129:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] The estate presumes an always-on host: Mac awake, H-Drive mounted. On 10-12 one unmounted drive stopped both the backup and OpenStory ingest, and sleep delayed 8 morning jobs. The health and status reports treat sleep as benign ("catch-up"), and no job owns the host-availability dependency.
+  Evidence it was operative: 68c4fc35; 92c5cfcd; af7b3403; 31cf0e51
+  Why it was unstated: obvious to participants
+  Type: scaling
+  Related decisions: ASSUMPTION-1781; ASSUMPTION-1784; PRESUMPTION-1123
+  Testability: testable empirically (in-house)
+  Risk if wrong: Medium-High: single physical dependencies silently stop several pipelines.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1129
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1130:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] Unattended runs presume that, when a permission is auto-declined, it is acceptable to continue with reduced scope and still issue an unqualified verdict ("Every scheduled agent has run" from run history alone). Extends PRESUMPTION-1118 (verdict scope) to permission-limited scope.
+  Evidence it was operative: 92c5cfcd; 3c71ed0e; 38d24ce2
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1785; PRESUMPTION-1118
+  Testability: testable in-house
+  Risk if wrong: Medium: reduced-scope verdicts read as full ones.
+  Confidence: medium-high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1130
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1131:
+  Date surfaced: 2026-10-12
+  Statement: [inferred] Counters presume a uniform schema across eras: the findings counter filters on a "Status: Active" field that newer findings lack, so "24 active" and "101 findings" coexist without reconciliation. The same pattern appears in "active agents" (31 counted, though the manual one is said not to be).
+  Evidence it was operative: 18004868; 8364a04f
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: ASSUMPTION-1788
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: dashboard numbers disagree and neither is flagged.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1131
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-12 transcripts.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-12 (local). **8 items (1124–1131)**: epistemic 3 · architectural 1 · methodological 2 · normative 1 · scaling 1. Checked against 14a 1775–1788 and PRESUMPTION-1117/1118/1121/1123; 1127 extends 1121, 1129 extends 1123, 1130 extends 1118.*

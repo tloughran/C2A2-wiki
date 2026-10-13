@@ -25372,3 +25372,88 @@ MONITOR-543: [SUPERSEDED by REVISE-514, 2026-10-09 (DISPOSITION-1058)]
 MONITOR-542: [SUPERSEDED by PREMISE-225, 2026-10-09 (DISPOSITION-1059)]
 MONITOR-477: [SUPERSEDED by MONITOR-686, 2026-10-09 (DISPOSITION-1060)]
 
+
+MONITOR-687:
+  Date: 2026-10-11 | Source: DISPOSITION-1066 (15c) | Item: ASSUMPTION-1766 (ASSUMPTION (stated))
+  Contest: 'fewer, broader corrective rules reduce clutter' (15a, weak on mechanism) vs 'broad rules blur compliance; specific fitted items work' (15b, moderate).
+  Watch for: whether agents interpret REVISE-515/516 and PREMISE-226/227 consistently across runs. Two runs applying the same premise differently = evidence for 15b; route to REVISE.
+  Priority: Medium | Cadence: Monthly | Next 15d check: 2026-11-11
+  TERMINATING CONDITION: expires 2027-01-11; if no divergent interpretation is observed by then, close as 'no harm observed' (not as validated).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1766 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1766_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1766_against.md
+
+
+## 2026-10-11 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-10-04 (7 days). Day 11, so the **monthly cycle does not fire** (next first Sunday: 2026-11-01). `lit_pipeline.lock` read RELEASED (today's 15abc run, 05:19Z). Sandbox bash worked this run. Backups: `*.md.bak.20261011-pre-15d` for monitor_queue, for_lit_search, validated_premises. validated_premises.md was not modified.
+
+### Weekly cycle — 57 overdue items re-queued (section dated 2026-10-11 in for_lit_search.md)
+Every entry processed was confirmed overdue by direct read of its `Next 15d check` (10-05..10-11). All now: Last checked 2026-10-11, Next 15d check **2026-10-18**. Cycle increments as stated per block (new entries 0 -> 1; MONITOR-403 4 -> 5; -609/-610 2 -> 3; -682/-683 1 -> 2).
+- **Literature [QUEUED] (9):** MONITOR-609, -610, -617, -618, -621, -634, -635, -636, -637.
+- **Empirical [QUEUED-EMPIRICAL] (44):** MONITOR-403, -619, -620, -624, -625, -626, -627, -628, -630, -631, -632, -633, -638, -639, -640, -641, -642, -643, -644, -645, -646, -647, -648, -649, -650, -651, -652, -653, -654, -655, -657, -658, -659, -660, -661, -662, -663, -664, -665, -666, -667, -668, -671, -682. Includes MONITOR-403 (owed limb is the in-house correlation; a third literature pass on PROXIMA would be the byte-identical refiling PREMISE-183(2) forbids) and MONITOR-682 per its routing note.
+- **Routed to Agent 19 (1):** MONITOR-683, per routing note.
+- **Awaiting Tom (3):** MONITOR-629 (OPEN-187 ruling), -669 (REVISE-500/501 numbering), -670 (dictation confirmation). Queued with tag so they are not lost; no search can discharge them.
+
+### Not processed (and why)
+- **Not yet due:** MONITOR-656 (11-03), -672..677 and -678..681 (intake 10-05/06, weekly, no next_check field; first due 10-12/13 — next run), -684 (10-15), -685 (10-23), -686 (10-16), -687 (11-11), -548 (10-28), -600 (11-01).
+- **Standing unconsumed 15d blocks NOT duplicated:** MONITOR-611, -613..616 and the wider weekly carry-over population (~280 RE-TRIGGER blocks). Cycle counts held; cohort-level next_check 2026-10-11 -> **2026-10-18**; per-entry dates not rewritten (precedent 09-20..10-04).
+- **Monthly / low-priority cohort (MONITOR-001..344):** headers still carry next_check 2026-10-04; that cohort is processed on monthly runs only. **Not re-verified; full register reparse still owed** (carried from 09-27 and 10-04). Next monthly fire 2026-11-01.
+- **Event-driven / bound:** MONITOR-003, -041, -154, -544, -612 untouched.
+
+### STALE-MONITOR-FLAG
+```
+STALE-MONITOR-FLAG:
+  Item: PRESUMPTION-414 (MONITOR-403)
+  Cycles completed: 5 (this re-trigger)
+  Last disposition: MONITOR since 2026-08 (refreshed unchanged 09-16, 09-28)
+  Evidence trajectory: stable
+  Recommendation: ESCALATE to Tom
+  Reasoning: Last two cycles produced citation re-verification only; the discharging test (connectivity deltas vs PROXIMA-scored synthesis output) is in-house and no runner owns it. Literature passes cannot move it.
+```
+Watch list (not flagged): MONITOR-609, -610 at cycle 3 with stable evidence; -610 needs Tom regardless (OPEN-208). If the next cycle shows no movement, both reach the 4-cycle threshold.
+
+### Trajectories (this run)
+- 403: supporting stable / challenging stable / no new sources. 609, 610: stable, 09-28 search found nothing on-point. 682, 683: stable since 10-07; owed limbs non-literature.
+- 9 new literature items: baseline (no prior 15d cycle).
+- 44 empirical-lane items: **none** — no consumer has run any in-house test since intake. One observation, not an evaluation: a `lit_pipeline.lock` with LOCKED/RELEASED convention now exists, which bears on MONITOR-631, -649, -657, -665 (run-lock / duplicate-instance items) — for 15c to assess.
+- Population-level ESCALATIONS 1-5 carried forward unchanged and not independently re-verified. ESCALATION 2 (empirical lane has no consumer) grows: 44 of today's 57 re-queues are empirical.
+
+**Run summary:** 57 re-queued (9 literature, 44 empirical, 1 Agent-19, 3 awaiting Tom); 0 premise re-checks (monthly not due); 1 STALE-MONITOR-FLAG (MONITOR-403, ESCALATE); monthly/low-priority cohort not re-verified. Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+
+# ==== 2026-10-12 15c intake — MONITOR-688 (15d re-trigger backlog of 2026-10-11) ====
+
+MONITOR-688:
+  Date: 2026-10-12 | Source: DISPOSITION-1070 (15c) | Supersedes: MONITOR-610
+  Source item: PRESUMPTION-991 (core presumption only; load-bearing clauses remain with REVISE-472) | Item type: PRESUMPTION (unstated)
+  Statement watched: some observable exists which, if seen, C2A2 would accept as evidence against its own wager.
+  15a: PARTIALLY-SUPPORTED (Moderate for the norm). Cogitate Consortium 2025 Nature 642:133 [abstract]: rival programmes pre-registered defeat observables and the results bit. NOVELTY narrowed to the reflexive case (programme = instrument). Cogitate's remedy was to separate measurers from proponents.
+  15b: PARTIALLY-CHALLENGED (Moderate vs the REMEDY FORM; None vs the core). St Quinton & Trafimow 2025 Front Psychol 16:1633990 [full text]: a pre-registered prediction without its auxiliaries can be rescued after a miss; the weakest auxiliary here is the instrument itself. Lakatos [secondary]: loss conditions should be comparative against a rival.
+  In-house check by 15c (2026-10-12): wiki/metabolism/metabolism_data.json mtime 2026-10-08 05:03:56 -0400; _meta.generated 2026-10-08T05:03:27-04:00; total_runs 4423; t_max 2026-10-08; signal_source latest 2026-10-06. CONFIRMED regenerated once on 10-08 after the 09-03 freeze. NOT regenerated in the 4 days since; whether it is on a standing schedule is UNVERIFIED. Census: no Metabolism-monitor-weekly output newer than 2026-07-28 found (filename/grep check, not exhaustive). Steps (2) and (3): no artefact.
+  Why monitored: the core norm is unchallenged in both directions, and the owed limb has partly moved (snapshot regenerated once). Steps (2)-(3) have not been started, so there is nothing to INCORPORATE or REVISE yet.
+  What would change the disposition (exit conditions, explicit):
+    -> INCORPORATE (no further literature): a dated loss-condition entry exists over a series that has been produced in at least 3 of the last 4 weeks. It must carry: one competence quantity with denominator and counting authority (PREMISE-101/114); value and duration stated before looking (PREMISE-078); AND an AUXILIARY BLOCK (15b): instrument liveness (series produced in >=N of last M weeks), a sensitivity statement (smallest change the series can register, per PREMISE-230), and the rule that an instrument failure inside the window counts as INCONCLUSIVE, not a pass. A comparative criterion against a named rival (Lakatos) is recommended, not required.
+    -> REVISE (into REVISE-472, no new flag): the snapshot is not regenerated again by 2026-10-26, or the census is still stale then. The presumption would then be undischargeable by design, not just delayed.
+    -> Not a route: further 15a/15b literature passes. Literature is discharged for the norm, and the NOVELTY residue cannot be closed by search. Do not re-queue for 15a/15b.
+  TERMINATING CONDITION: expires 2026-11-09. If no loss-condition entry exists by then, this entry is NOT re-filed. It closes into REVISE-472 with the weeks unrun stated (PREMISE-183(2)); per PREMISE-229, waiting on Tom is not by itself a reason to keep it open.
+  Priority: High | Cadence: Weekly (15d checks only the in-house artefacts: metabolism _meta.generated, census date, loss-condition entry) | Cycle: 4 (cycles 0-3 under MONITOR-610) | Next 15d check: 2026-10-19
+  Routing note for 15d: [QUEUED-EMPIRICAL], not literature. Needs Tom regardless (OPEN-208). Member of SYSTEMIC-RISK 2026-10-12 (silence read as evidence).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 3) → 15c] | Original item: PRESUMPTION-991 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-991_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-991_retrigger-2026-10-12_against.md
+
+# ==== 2026-10-12 15c — status notes for existing entries (append-only; entries above not edited) ====
+MONITOR-610: [SUPERSEDED by MONITOR-688, 2026-10-12 (DISPOSITION-1070)]
+MONITOR-636: [CLOSED-15c 2026-10-12 → INCORPORATE, PREMISE-229 (DISPOSITION-1071). Pre-registered INCORPORATE branch met in narrowed form: peer-reviewed analogue (Sinsky 2024) plus in-house record count (REVISE-480..517: 0 recorded decisions). The "grows without bound" clause was NOT incorporated.]
+MONITOR-609: [CLOSED-15c 2026-10-12 → REVISE, attached to REVISE-469 (DISPOSITION-1072). Comparative limb folded into the REVISE-469 stratification, with a privilege stratum added; no separate flag minted.]
+MONITOR-617: [CLOSED-15c 2026-10-12 → INCORPORATE, PREMISE-230 (DISPOSITION-1073). Pre-registered branch fired: restated as necessary-not-sufficient with a data-based sensitivity requirement.]
+MONITOR-618: [CLOSED-15c 2026-10-12 → REVISE, attached to REVISE-493 (DISPOSITION-1074). Pre-registered REVISE branch taken one cycle early; reason in DISPOSITION-1074.]
+
+MONITOR-689:
+  Date: 2026-10-13 | Source item: PRESUMPTION-1127 (DISPOSITION-1079) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: Repeated non-actionable alerts degrade response (established). Open: which policy (escalation, delay/triage, suppression, auto-remediation) reduces fatigue WITHOUT losing faults caught.
+  What would change the disposition: INCORPORATE a specific policy if a source or in-house test scores it on faults caught (not alert count) and shows no new silent-failure class. REVISE if a C2A2 suppression/auto-remediation is found to have hidden a real fault.
+  Monitoring cadence: Weekly | Priority: High (the AWAITING-TOM backlog noted in PREMISE-229 is itself an alert-fatigue surface)
+  Related: MONITOR-687 (ASSUMPTION-1766, 'fewer AND specific'); PREMISE-229, -230, -231
+  Next 15d check: 2026-10-20
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1127 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1127_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1127_against.md

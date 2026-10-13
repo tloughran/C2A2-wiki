@@ -37,3 +37,18 @@ Both properties matter. The material is direct: it is a mature participant stati
 **Synthesis claim.** Rival programs placed in one room around a shared question is the event the accelerator exists to detect, and here it happened without the accelerator. Record it as a first-class finding independent of the proposal's disposition — and record the uncomfortable corollary honestly: the field is already doing some of this convening on its own, which raises the bar for what C2A2 has to add beyond co-location. The plausible answers are *durability* (a conference ends; a vault does not), *symmetry* (a roster is curated by one organizer's paradigm, as Hoffman's absence shows), and *evidence* (nobody is measuring what happened in that room). If the accelerator cannot demonstrate at least one of those, MC0001 is a competitor rather than a corroboration.
 
 **Open question the wiki cannot yet answer.** What did the convening actually produce? Nobody knows, including the participants, because no instrument was pointed at it. That is the gap C2A2 claims to fill, and MC0001 is the natural test case — the same three thinkers, one interaction observed by nobody and one staged and measured. Whether the wiki can retroactively measure anything about the first is the open question, and the honest answer today is probably not, because the talks were not even retrieved.
+
+---
+
+## Who certifies a result when AI does the producing
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing.md` (0 backlinks).
+
+**Why it sits here:** Wolfram's livestream segment on the future of journals (title only so far) and C2A2's own proposal-review-approve pipeline.
+
+**Synthesis claim.** Wolfram's practice puts the check inside the artifact (runnable code), while C2A2 puts it in a review step outside the claim. These are two different answers to one question, and C2A2 has not said which it is building toward for cross-tradition claims.
+
+**Open question the wiki cannot yet answer:** What would a self-verifying cross-tradition claim look like, when the claim is interpretive and has no code to re-run?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing]]

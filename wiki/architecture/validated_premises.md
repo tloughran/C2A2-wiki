@@ -8125,3 +8125,149 @@ PREMISE-225:
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (supersedes MONITOR-542)
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1153_retrigger-2026-10-09_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1153_retrigger-2026-10-09_against.md
 
+
+PREMISE-226:
+  Date validated: 2026-10-10
+  Source item: ASSUMPTION-1757 (DISPOSITION-1061)
+  Statement: When two reviewers' agreement may share a cause, count it by dependence, not by headcount. Agreement counts as one reading only when the reviewers share retrieval AND interpretation (same model/context and the same fetched text, or the error guarded against is a bad source copy). Otherwise it counts as more than one and fewer than two (effective n ≈ 2/(1+ρ)). 15c records which of these applies and why, along with the overlap evidence.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Clemen 1987 Mgmt Sci [abstract]; Clemen & Winkler 1985 / Morrison & Schmittlein 1991 [search-result]; Cochrane Handbook Ch. 23 double counting [search-result]. Refinement from 15b: Buscemi et al. 2006 [abstract]; McCoy & Prelec 2024 [abstract]; Palley & Soll 2019 [search-result]
+  Challenges noted: A full collapse to one reading is over-conservative unless the overlap is total. The 2/(1+ρ) form is a textbook reading and was not verified verbatim.
+  Confidence: Moderate
+  Applicable to: 15c weighting of convergent verdicts; SYSTEMIC-RISK shared-retrieval responses; PREMISE-120; REVISE-350
+  Re-check due: 2027-01-10
+  Status: ACTIVE
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1757 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+PREMISE-227:
+  Date validated: 2026-10-10
+  Source item: PRESUMPTION-1119 (DISPOSITION-1065)
+  Statement: An orchestrator may make format-only normalisations of independent agents' outputs (vocabulary mapping, layout) if the raw outputs are preserved and each change is logged. Content added on an agent's behalf (provenance, verdicts, sources) must be attributed to the orchestrator, not to the agent. Claims of independence or agreement refer to the raw outputs.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Willroth & Atherton 2024 AMPPS [abstract]; Cochrane Handbook v5.1 §7.6.5 [15b full text]; W3C PROV-DM [search-result]; COPE 2020 survey [full text]; Maelstrom harmonisation guidelines (Fortier et al. 2017) [search-result]
+  Challenges noted: Harmonisation is standard and does not by itself void independence (15b). The item rests on a single run, and no source addresses AI-reviewer orchestration.
+  Confidence: Moderate
+  Applicable to: Lit-pipeline orchestrator; any multi-agent output merge; REVISE-488; REVISE-350
+  Re-check due: 2027-01-10
+  Status: ACTIVE
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1119 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+
+PREMISE-228:
+  Date validated: 2026-10-11
+  Source item: ASSUMPTION-1769 (DISPOSITION-1067)
+  Statement: A pattern detector's confidence labels may be called calibrated only against seeded known-answer items, and only for the seeded distribution. Seeds must be authored independently of the detector (not by the same model and prompt), be mixed in difficulty including ambiguous near-misses, and be indistinguishable in form from real items. Results are reported as 'calibrated on seeded set (n, date)', never as general accuracy. Without seeding, labels are UNCALIBRATED (per PREMISE-124).
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Mills 1972 error seeding [snippet]; Hettiachchi et al. arXiv 2105.09457 [full text, partial]; synthetic anomaly-injection practice [snippet]
+  Challenges noted: Checco, Bates & Demartini 2019 (gold items detectable) [abstract]; Ovadia et al. 2019 (calibration fails under shift) [abstract]; TREC 2011 RMIT run [snippet]. Folded in as conditions.
+  Confidence: Moderate
+  Applicable to: FINDING-101; Agent 13 cross-tradition detector; PREMISE-124; PREMISE-150
+  Re-check due: 2027-01-11
+  Status: ACTIVE
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1769 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1769_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1769_against.md
+
+PREMISE-229:
+  Date validated: 2026-10-12
+  Source item: PRESUMPTION-1101 (DISPOSITION-1071; supersedes MONITOR-636)
+  Statement: Deferring to a human reviewer is not a safe default unless the design says what happens when that reviewer is absent or over capacity. Reviewer silence is not a decision and must not be recorded as "held pending decision" indefinitely. Any escalate-to-human path must declare: (a) how escalation behaves when no human input has arrived for a stated period; (b) a harm measure that counts escalations raised, decided and ABANDONED (escalated, never decided, no longer re-flagged), not queue depth alone; (c) that no expiry rule turns silence into a decision for items above a stated stakes level. SCOPE GUARD: this premise does NOT assert that an unattended queue "grows without bound" (15b: with abandonment, queues self-limit and the loss is silent), and it does NOT choose the lever. Upstream capacity-aware admission (15b) and downstream expiry/default/batching (15a) are both open; a returning reviewer facing a large batch is the high-load condition linked to automation bias, so batch size on return is part of the design question.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Sinsky et al. 2024 JAMA Netw Open 7(1):e2351635 [structured abstract] (49.1% of physicians lacked inbox coverage on vacation; displaced work); Obermiller et al. 2025 JAMA Netw Open research letter [snippet]; Alves et al. 2024 TMLR learning-to-defer under workload constraints, FiFAR absence rate [snippet/abstract excerpts]; cycle-0 practitioner sources (SRE book ch. 6, AWS, Cloudflare). In-house (15c, 2026-10-12): REVISE-480..517 minted 2026-09-21..10-11 (38 flags); all 21 entries in that range with a Status line read AWAITING TOM; no RESOLVED/ADOPTED/RATIFIED/CLOSED note found for any of them. Caveat: rulings made outside the registers would not show; this counts recorded decisions, not Tom's activity.
+  Challenges noted: Lykouris & Weng arXiv:2402.12237 [abstract] (review delay is endogenous to admission; the control belongs upstream); M/M/1+M reneging results arXiv:1903.06870 [search-result; 15b's inference] (silent loss, not unbounded depth); Parasuraman & Manzey 2010 Hum Factors [abstract summaries] and Skitka et al. 1999 [figures second-hand] ("reviewer present" is not itself safe). Folded in as the scope guard. No source measures an agent-to-human escalation queue directly; all support is analogical.
+  Confidence: Moderate
+  Applicable to: every "the hold is yours" / AWAITING TOM path; revision_flags.md intake; MONITOR entries that "need Tom" (e.g. MONITOR-688/OPEN-208, MONITOR-629, -669, -670); REVISE-516 (uptake line), REVISE-517 (deferred check = NOT-DONE); OPEN-259; PREMISE-183 (a filed flag is a live obligation).
+  Re-check due: 2026-11-01 (Monthly; via 15d)
+  Status: ACTIVE
+  Consistency: checked against PREMISE-183, PREMISE-165 (wait-and-escalate on absence), PREMISE-100, REVISE-516, REVISE-517. No contradiction. It generalises PREMISE-165's "escalate on absence" to the case where the escalation target is itself absent.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: PRESUMPTION-1101 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (supersedes MONITOR-636)
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1101_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1101_retrigger-2026-10-12_against.md
+
+PREMISE-230:
+  Date validated: 2026-10-12
+  Source item: ASSUMPTION-1682 (DISPOSITION-1073; supersedes MONITOR-617) — restated form
+  Statement: "The same instrument could observe either outcome" is NECESSARY for a finding to count as a proper null, but NOT SUFFICIENT. A null (no difference / nothing found / no change) counts as evidence for absence only if (1) the smallest effect that matters was stated before looking, and (2) the observation is shown to discriminate the outcomes at that size: a positive control, an interval inside pre-set equivalence bounds, or a Bayes factor away from 1. A bare power claim is the weakest form and is often undefined for one-off estate observations; it does not satisfy (2) on its own. A null that lacks (1) or (2) is recorded as INCONCLUSIVE, not NULL. A null from a procedure not designed to probe a mechanism is not evidence about that mechanism.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: ICH E10 / FDA Guidance 2001, §1.5 "Assay Sensitivity" [read in full by 15a] ("whether the trial could have shown such a difference if there had been one is critical"); Dienes 2014 Front Psychol 5:781 [abstract; cited by BOTH 15a and 15b, counted once per PREMISE-226]; cycle 0: Lakens, Scheel & Isager 2018; Mayo 2018.
+  Challenges noted: 15b challenges the ORIGINAL sufficiency reading and the earlier proposed "power clause" remedy, not this restatement. ASA/ISA 330 ¶16 [full text] (absence of detected misstatement is not evidence that controls work) and equivalence/SESOI summaries [search-result] are folded in as clauses (1), (2) and the last sentence. Transfer from clinical trials to wiki findings is by principle, not domain.
+  Confidence: High for the necessary-not-sufficient clause; Moderate for the operationalisation in one-off estate findings.
+  Applicable to: FINDING-091 and any FINDING labelled null; PRS-count findings; REVISE-515 (coverage on negatives — this premise adds sensitivity); PREMISE-078, PREMISE-124; 2026-10-12 SYSTEMIC-RISK (silence read as evidence).
+  Re-check due: 2027-01-12 (Quarterly; via 15d)
+  Status: ACTIVE
+  Consistency: checked against PREMISE-078 (register-then-look necessary, not sufficient), PREMISE-100 (liveness is not correctness), PREMISE-124 (UNCALIBRATED without external baseline), PREMISE-136 (declared scope; a wide interval honestly reported is admissible), REVISE-515. No contradiction; same necessary-not-sufficient shape as PREMISE-078.
+  Not applied (recommendation only): FINDING-091's rationale should be relabelled to cite this premise, or marked INCONCLUSIVE if it lacks (1)/(2). Owner: 14a/registers, not 15c.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: ASSUMPTION-1682 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition (restated per MONITOR-617's pre-registered INCORPORATE branch) | Current status: INCORPORATED (supersedes MONITOR-617)
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1682_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1682_retrigger-2026-10-12_against.md
+
+PREMISE-231:
+  Date validated: 2026-10-13
+  Source item: ASSUMPTION-1778 (DISPOSITION-1075)
+  Statement: EXISTENCE IS NOT FRESHNESS, AND FRESHNESS IS NOT CORRECTNESS. A check that a record exists cannot detect a stale record; a freshness/heartbeat check cannot detect a fresh-but-wrong record (gray failure). Each health check must state which rung it witnesses (exists / fresh / correct), and a liveness signal is accepted only if it is periodically checked against an observation of the target state.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Huang et al. 2017 HotOS 'Gray Failure' [15a summary; 15b full text]; Skorikov 2021 SREcon (data freshness) [summary]; Chandra & Toueg 1996; dead-man-switch / Watchdog alert runbooks [practitioner]
+  Challenges noted: Huang et al. 2018 Panorama (heartbeat detectors caught 1/15 gray failures in 300 s) [abstract/snippet]; heartbeat is itself a proxy (SYSTEMIC-RISK 2026-10-13)
+  Confidence: Moderate
+  Applicable to: health checks across the estate; the false-alarm inbox check (ASSUMPTION-1779); daily_sync and metabolism monitors; PREMISE-208, -221
+  Re-check due: 2026-11-13 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-100, -159, -200, -208, -221. No contradiction; makes the ladder explicit.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1778 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1778_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1778_against.md
+
+PREMISE-232:
+  Date validated: 2026-10-13
+  Source item: PRESUMPTION-1124 (DISPOSITION-1076)
+  Statement: A PROXY NEEDS A NAMED TARGET AND A STANDING AGREEMENT SAMPLE. Any indicator used in place of the state it stands for (timestamp, heartbeat, record count, alert count, abstract) must name the target-state observation that would show it is wrong, and that agreement must be re-sampled periodically; a one-time validation does not carry forward once the proxy is optimised against or the mechanism changes.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Fleming & DeMets 1996 Ann Intern Med; Echt et al. 1991 (CAST); Manheim & Garrabrant 2018 (Goodhart variants) [summaries]
+  Challenges noted: Prasad et al. 2015 (52% of surrogate–survival correlations weak) [abstract]; 15b steelman: validation is mechanism-bound and decays
+  Confidence: Moderate
+  Applicable to: every remedy named in today's SYSTEMIC-RISK flag; PREMISE-231, -233; REVISE-493 carry-forward conditions; PREMISE-124
+  Re-check due: 2026-11-13 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-124 (external baseline), PREMISE-230. No contradiction; generalises PREMISE-124 from self-measurement to any proxy.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1124 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1124_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1124_against.md
+
+PREMISE-233:
+  Date validated: 2026-10-13
+  Source item: ASSUMPTION-1780 (DISPOSITION-1077)
+  Statement: ABSTRACT-TIER CARDS ARE TRIAGE, NOT RECORD. A card or proposal built from an abstract alone may be used to decide what to read, but must be labelled ABSTRACT-TIER and may not be cited as stating the work's claims, strength of evidence or hedges until checked against full text.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Pitkin 1999 JAMA; Boutron et al. 2010 JAMA; Cochrane MR000005 (Toma 2006 lineage); Thelwall 2026 arXiv:2605.27392 [full text, 15a]
+  Challenges noted: Abstracts are adequate for screening (one comparison: 100% recall) [snippet, 15b]; evidence mostly biomedical; Thelwall 2026 finds less overstatement in humanities/social science; talk outlines not searched
+  Confidence: Moderate
+  Applicable to: carding pipeline; paper-response skill; research-suggestion agents; PREMISE-188
+  Re-check due: 2026-11-13 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-188 (qualifier travels with claim). No contradiction.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1780 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1780_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1780_against.md
+
+PREMISE-234:
+  Date validated: 2026-10-13
+  Source item: PRESUMPTION-1125 (DISPOSITION-1078)
+  Statement: DEFERENCE DEGRADES REDUNDANCY; IT DOES NOT ZERO IT. A second checker that can see the first checker's verdict adds less than an independent check but usually more than none. A re-check by the same model and prompt, or one reading the first agent's output, is counted as one vote, not two.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Cymek & Manzey 2022 [abstract, both searchers; counted once]; Knight & Leveson 1986; IEC 61508 beta-factor model [summaries]
+  Challenges noted: Strong form ('erases') contradicted by Cymek & Manzey 2022; Cymek, Jahn & Manzey parallel-monitoring study found no significant gain in one setup; LLM-agent replication unverified
+  Confidence: Moderate
+  Applicable to: 15a/15b independence; any two-agent check; 'second opinion' passes by the same model; PREMISE-125, -166, -222
+  Re-check due: 2026-11-13 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-125, -166, -222 and the generator-agreement premise. No contradiction.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1125 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1125_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1125_against.md
+
+PREMISE-235:
+  Date validated: 2026-10-13
+  Source item: PRESUMPTION-1128 (DISPOSITION-1080)
+  Statement: HEDGES ARE LOST AT SUMMARISING STEPS, NOT BY CITATION AS SUCH. Each step that compresses a claim (abstract, summary, aggregation, index entry) must carry the claim's uncertainty label as a field, not as prose; an explicit structured label is the form most likely to survive.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Greenberg 2009 BMJ; Horn 2001 BioScience; Jergas & Baethge 2015; Sumner et al. 2014 BMJ [summaries]; Thelwall 2026 [full text]
+  Challenges noted: Sumner et al. 2016 (caveats survived into news, no uptake loss) [abstract]; Greenberg is one network; Small, Boyack & Klavans 2019 (citing sentences hedge newer claims more)
+  Confidence: Moderate
+  Applicable to: registers, returns summaries, index/narration tracks, paper-response outputs; PREMISE-188
+  Re-check due: 2026-11-13 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-188. No contradiction; corroborates and narrows it. Proposed (not applied): merge into PREMISE-188.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1128 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1128_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1128_against.md

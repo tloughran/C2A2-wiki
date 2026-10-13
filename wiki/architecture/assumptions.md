@@ -33725,3 +33725,613 @@ ASSUMPTION-1753:
 *No `.bak` was taken because the sandbox shell was unavailable (disk full). This append was made with an exact-match edit.*
 
 ---
+
+ASSUMPTION-1754:
+  Date identified: 2026-10-09
+  Statement: [stated] The c282 wiki agent daily run did not delete the old review pages as its task text says. "Old pages moved, not deleted. The task says to delete old review pages. I moved them ... the same way the last few runs did."
+  Context: dc1e9411 (reader digest, final message only)
+  Type: methodological
+  Related decisions: PRESUMPTION-1117; OPEN-264
+  Testability: testable in-house (Tom ratifies or corrects)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1754
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1755:
+  Date identified: 2026-10-09
+  Statement: [stated] OpenStory telemetry refresh FAILED with `OSError: [Errno 28] No space left on device`: the DB is 7.8 GB against a 9.8 GB sandbox disk. "this will fail again on every run until it's fixed. Yesterday's PASS means the DB has grown past what fits." Step 2b was skipped as it "would have failed the same way".
+  Context: c1f9073d (reader digest)
+  Type: empirical
+  Related decisions: ASSUMPTION-1751; PRESUMPTION-1113
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1755
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1756:
+  Date identified: 2026-10-09
+  Statement: [stated] Summa daily batch: days 1-307 complete; 24th consecutive no-op run (every day since 2026-09-16). "The task prompt's target of 308 episodes looks like a planning count that never matched the playlist." "I recommend you disable `summa-2026-daily-batch` rather than delete it."
+  Context: 176b839c (reader digest); bb8b0bc4 agrees on 307
+  Type: empirical
+  Related decisions: OPEN-264 (stale prompt text)
+  Testability: testable in-house (Tom confirms 307 vs 308; rules on disabling)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1756
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1757:
+  Date identified: 2026-10-09
+  Statement: [stated] The lit pipeline's 15c counted 15a/15b agreement on sources fetched from a shared cache as one reading, not two: their agreement "counts as one reading, not two, which is why PREMISE-225 is rated Moderate."
+  Context: b39986fb; for_lit_search.md 2026-10-09 run note (verified at source); SYSTEMIC-RISK-FLAG_2026-10-09_shared-retrieval-convergence
+  Type: epistemic
+  Related decisions: REVISE-350; REVISE-488; DISPOSITION-1056..1060; PREMISE-225
+  Testability: testable via literature
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1757
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1758:
+  Date identified: 2026-10-09
+  Statement: [stated] The lit pipeline took no new intake "because today's 14a/14b run was incomplete again and the assumption and presumption files haven't changed since 10-03". The local 14a/14b runs of 10-05..10-08 were not incomplete: each ran and recorded NO_SESSION_TODAY by choice. The evening sync likewise says the summarizer "failed for the second day, so nothing has been extracted since Oct 4".
+  Context: b39986fb; 1c798c76 (read directly); changelog/2026-10-05..08 local addenda (verified at source)
+  Type: methodological
+  Related decisions: PRESUMPTION-1116; OPEN-264; OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1758
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts (read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1759:
+  Date identified: 2026-10-09
+  Statement: [stated] Scheduler health: 30 OK / 37 WARN / 3 FAIL. "For the fourth morning in a row, nothing is watching the 44 cloud routines", because the session had no Routines connector; it "did not write `routines_snapshot.json` or run `check_routine_health.py`." It lists 33 tasks as cloud-moved, including morning-project-status, supabase-keep-warm and c2a2-self-awareness-daily, all of which also appear as local Cowork sessions today.
+  Context: 956047da (reader digest)
+  Type: architectural
+  Related decisions: PRESUMPTION-1114; OPEN-260; OPEN-263
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1759
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1760:
+  Date identified: 2026-10-09
+  Statement: [stated] Morning system health: "Your Mac and the wiki jobs look healthy." Same message: "These CPU and memory numbers come from the sandbox, not macOS itself, because the shell can't see the Mac's own processes." Same morning, scheduler health reports 3 FAIL including `openstory.ui` (exit 1, 5,056 respawns).
+  Context: 4d9e8754; 956047da (reader digests)
+  Type: methodological
+  Related decisions: PRESUMPTION-1118; PRESUMPTION-1113
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1760
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1761:
+  Date identified: 2026-10-09
+  Statement: [stated] RECURRENCE (not queued). Morning project status: "31 scheduled tasks", "every daily job has already fired today", OpenStory "live" from a DB mtime, "No issues to report". Scheduler health: 41 registry tasks, 70 on the machine, and `list_scheduled_tasks` returns only the calling session's registry.
+  Context: 01ee59fa (reader digest); 956047da
+  Type: empirical
+  Related decisions: ASSUMPTION-1753 and earlier calling-session-registry items; PRESUMPTION-1115
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1761
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1762:
+  Date identified: 2026-10-09
+  Statement: [stated] Friday agents: Carroll 1 proposal (PROP-2026-10-09-001, Mindscape 370); Arkani-Hamed 0: "Nothing new from Arkani-Hamed passed the filter", while admitting its "searches never reached his arXiv author page directly". The task's wiki path is "missing the `Projects/` folder ... I used the real location."
+  Context: b3cc6e19 (reader digest)
+  Type: methodological
+  Related decisions: PRESUMPTION-1109 / REVISE-504; PRESUMPTION-1115
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1762
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+ASSUMPTION-1763:
+  Date identified: 2026-10-09
+  Statement: [stated] Evening cowork-to-chat: "No walk chat today ... so I sent it to 'Morning walk session workplan' (last active Oct 7). That's the same fallback this morning's chat scrape used." "No hands-on Cowork session today: only scheduled tasks ran, so there are no new decisions or open questions." Moving the self-awareness task "back to the Mini, where it can read transcripts" is item 2 for morning discussion.
+  Context: 1c798c76 (read directly); daily_sync/cowork_to_chat/2026-10-09_cowork_summary.md
+  Type: methodological
+  Related decisions: ASSUMPTION-1752; PRESUMPTION-1117; OPEN-259
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1763
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts (read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1764:
+  Date identified: 2026-10-09
+  Statement: [stated] Deferred action monitor: nothing due; WATCH-003/004 next due 2026-10-13; WATCH-003 stale since 08-25; watch list about 810 KB, the 34th run recommending a split. It still lists "checking whether Gmail is reconnected" as open, while the walk handoff and the wiki daily run used Gmail normally today.
+  Context: 796c0472; dfc10e81; dc1e9411 (reader digests)
+  Type: empirical
+  Related decisions: —
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1764
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts via a reader digest; quotes are reader-reported.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-09 (local). **11 items (1754–1764); 1761 is a recurrence.***
+
+*Coverage: 15 sessions listed after the 10-08 local pass (all scheduled; no live Tom turn visible). The evening sync (1c798c76) was read directly; 14 others were read by one Sonnet reader, last 15 messages each, with tool results hidden — 8 of the 14 showed only the final message. Quotes from those are reader-reported. Verified at source: the 10-05..10-08 local changelog addenda and the 2026-10-09 lit-pipeline run note.*
+
+ASSUMPTION-1765:
+  Date identified: 2026-10-10
+  Statement: [stated] Lit pipeline: "Your 30k-token session budget was overrun by a wide margin, mostly by the two search sub-agents. A real two-sided search doesn't fit in that budget, so either the budget or the scope per run needs to change."
+  Context: d54dd123 (read directly)
+  Type: methodological
+  Related decisions: REVISE-350; PRESUMPTION-1122
+  Testability: testable in-house (Tom: budget vs scope)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1765
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1766:
+  Date identified: 2026-10-10
+  Statement: [stated] Lit pipeline: 15b's systemic-risk flag ("adding five new correction rules to an unattended pipeline could create clutter that nobody reads") was taken "as a limit on the size of the fixes, so five items produced two premises and two flags, not five new processes."
+  Context: d54dd123 (read directly)
+  Type: methodological
+  Related decisions: REVISE-515; REVISE-516; PRESUMPTION-1121
+  Testability: testable via literature
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1766
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1767:
+  Date identified: 2026-10-10
+  Statement: [stated] Lit pipeline: "15a and 15b ran as separate sessions, which partly addresses REVISE-350's shared-retrieval concern. The only source both cited is the Cochrane Handbook, and it's counted once."
+  Context: d54dd123 (read directly)
+  Type: methodological
+  Related decisions: REVISE-350; PREMISE-226; ASSUMPTION-1757
+  Testability: testable in-house (do separate sessions share a fetch cache?)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1767
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1768:
+  Date identified: 2026-10-10
+  Statement: [stated] Wiki daily run: "No Wolfram proposal today ... I couldn't read it ... I didn't write a proposal for content I couldn't verify." Same day, the Wolfram Saturday agent wrote PROP-2026-10-10-001 on the same Oct 2 Q&A livestream from segment titles only, marked Speculative, with a caveat to "approve only if they want the transcript pulled at ingest." Two jobs, same source, opposite verdicts.
+  Context: bd934cce; 76923aa3 (read directly)
+  Type: epistemic
+  Related decisions: PRESUMPTION-1120; OPEN-265
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1768
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1769:
+  Date identified: 2026-10-10
+  Statement: [stated] Wiki daily run, FINDING-101 (from Carroll card): "salting" the pattern detector with fake cross-tradition connections whose answers are known, to measure true vs spurious flags; "Right now nothing measures that, so the confidence labels on its findings are uncalibrated." Recorded as a design idea.
+  Context: bd934cce (read directly)
+  Type: methodological
+  Related decisions: FINDING-101; Agent 13
+  Testability: testable via literature
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1769
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1770:
+  Date identified: 2026-10-10
+  Statement: [stated] Morning project status: "Thirty-one scheduled tasks are enabled, and every one that was due has fired ... No issues to report." Same morning, scheduler health reported 29 OK / 36 WARN / 5 FAIL and 33 tasks whose firing the Mac registry cannot see. Morning system health: "Daily run finished: today's check is OK" while also "no new daily run has been recorded yet." Recurrence of ASSUMPTION-1760/1761.
+  Context: 04bbd249; 1192cdab; 84c3cef7 (read directly)
+  Type: empirical
+  Related decisions: REVISE-515; ASSUMPTION-1760; ASSUMPTION-1761
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1770
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1771:
+  Date identified: 2026-10-10
+  Statement: [stated] OpenStory telemetry: "this job will keep failing from the sandbox while the database is over about 5.7 GB" (open-story.db 7.8 GB; step 2a copies the whole DB). Fix options: run on the Mac; copy only needed tables / read in place; checkpoint and vacuum. Second consecutive failure.
+  Context: 081ecc8a (read directly)
+  Type: architectural
+  Related decisions: PRESUMPTION-1123; ASSUMPTION-1759
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1771
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1772:
+  Date identified: 2026-10-10
+  Statement: [stated] Scheduler health: "I did not write a snapshot and did not fall back to the Mac registry ... Until that connector is attached to the scheduler-health-check routine, this step can't run." Cloud routines unwatched since 10-06 (5th day). The openstory-ingest row states its own scope limit: "this row cannot tell them apart."
+  Context: 1192cdab (read directly)
+  Type: methodological
+  Related decisions: REVISE-515; OPEN-260
+  Testability: testable in-house (Tom: attach Routines connector)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1772
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1773:
+  Date identified: 2026-10-10
+  Statement: [stated] Morning chat scrape: third day with no walk chat; fell back to the 10-07 chat and flagged the summary "so Cowork doesn't read it as fresh direction." "Starting a fresh walk chat would give this scrape and the evening sync something new." Evening sync declined to post in the newest chat because it is "a watch-history analysis thread."
+  Context: 59d2b352; 19e23a2b (read directly)
+  Type: methodological
+  Related decisions: ASSUMPTION-1763; OPEN-259
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1773
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+ASSUMPTION-1774:
+  Date identified: 2026-10-10
+  Statement: [stated] Prompt-text drift recurrences: Summa daily batch, 25th consecutive no-op, "the task prompt still expects 308 episodes"; recommends disabling, not deleting. Wolfram agent: "the task prompt gives the wiki root without Projects/ in the path" (wrote to the real location). Deferred monitor: watch list ~815 KB, split recommended again; WATCH-003 checked 3 days early on a new decision file (17th identical result).
+  Context: 54356fd0; 76923aa3; a4b1eceb (read directly)
+  Type: empirical
+  Related decisions: ASSUMPTION-1756; ASSUMPTION-1762; ASSUMPTION-1764
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1774
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts (final messages read directly).
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-10 (local). **10 items (1765–1774); 1770 and 1774 are recurrences, not queued.***
+
+*Coverage: 12 completed sessions after the 10-09 local pass, all scheduled; no live Tom turn visible. Final 1–4 messages of each read directly (tool results not inspected). Summa nightly verification (35707964) was still running and was not read.*
+
+
+<!-- 14a run 2026-10-12 (local, scheduled task c2a2-self-awareness-daily) -->
+
+ASSUMPTION-1775:
+  Date identified: 2026-10-12
+  Statement: [stated] Summa nightly verification: 761 re-read flags; Friston fell 165 -> 124 because "the flags compare modified-times, and none of those files was actually re-read against its wiki." "That pattern looks like a sync process touching the files, not real edits." Prediction: "If the re-stamping continues, it will keep hiding real drift." 50 syntheses and 23 transcripts re-stamped.
+  Context: 34e2a4af
+  Type: methodological
+  Related decisions: REVISE-515; PRESUMPTION-1124
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1775
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1776:
+  Date identified: 2026-10-12
+  Statement: [stated] Twin runs: evening sync sent nothing because the cloud twin already had ("A second message would have been a duplicate"), calling it "more evidence for OPEN-260". Reviewer review was a no-op for the same reason and recommends disabling the local copy "unless you want them run on purpose for cross-checking"; three-tier rule: "disable duplicates rather than delete." Morning chat scrape also fired twice.
+  Context: 2a5dc102; 38d24ce2; f4e6dfbd
+  Type: architectural
+  Related decisions: OPEN-260; ASSUMPTION-1759
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1776
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1777:
+  Date identified: 2026-10-12
+  Statement: [stated] Telemetry refresh FAIL ("No space left on device": DB ~7.9 GB, sandbox 3.6 GB free; Mac-disk retry hit the ~3-min cutoff). "Neither feed is stale" (10:15Z data). The FAIL line means "morning-system-health will flag it." Three proposed fixes: allow Desktop Commander; run refresh_openstory_feeds.sh from launchd/cron; stop copying the whole DB. Status timestamp ~2 h ahead (sandbox clock).
+  Context: ed61471f
+  Type: architectural
+  Related decisions: ASSUMPTION-1771; PRESUMPTION-1123
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1777
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1778:
+  Date identified: 2026-10-12
+  Statement: [stated] Scheduler health: 10 FAIL / 34 WARN / 26 OK. "the task may report a run and write nothing"; commit_check shows the same 10-09 commit on 10-10..10-12 yet reports OK; stale index.lock (10-11 23:27) "blocks the next commit"; "Nothing is watching the 44 cloud routines right now" (Routines connector tool missing; last check 10-06). Morning system health independently: the OK lines "suggest the daily run didn't happen on those two days and the check didn't catch it."
+  Context: 31cf0e51; 78e323ff
+  Type: methodological
+  Related decisions: ASSUMPTION-1772; REVISE-515; PRESUMPTION-1118
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1778
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1779:
+  Date identified: 2026-10-12
+  Statement: [stated] Wiki daily run: "Today's output will be committed tomorrow at 05:45" (while no push since 10-09 and the lock is stale). Inbox-vs-processed check is "a false alarm" (~350 files), so "I used the ingest ledger script instead". "Pending proposals only enter the wiki once your decision email approves them." Signals 3 days old with "no staleness warning". Ledger 472 approved / 441 ingested / 29 no-triplet / 1 open.
+  Context: 204718a1
+  Type: architectural
+  Related decisions: ASSUMPTION-1778
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1779
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1780:
+  Date identified: 2026-10-12
+  Statement: [stated] Paper hunting on partial evidence: Levin/Friston agent left out transcript-less episodes "following the 30 Sept precedent of not carding episodes without a transcript", yet carded PROP-2026-10-12-002 (Friston & Parr) from the abstract only, at "Medium and Speculative". Wiki daily run: the Levin Platonic-space triplet "rests on the talk's chapter list only, with no transcript", marked Speculative.
+  Context: 85f66e8e; 204718a1
+  Type: epistemic
+  Related decisions: OPEN-265; PRESUMPTION-1120; PRESUMPTION-1128
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1780
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1781:
+  Date identified: 2026-10-12
+  Statement: [stated] Contradiction on job completion: Morning project status: 8 daily jobs show yesterday as last run, "your Mac or the Claude app was probably asleep or closed." Weekly ecosystem report: "Every scheduled agent has run"; "the few that ran late look like catch-up after the Mac was asleep, not failures."
+  Context: 68c4fc35; 92c5cfcd
+  Type: empirical
+  Related decisions: ASSUMPTION-1770; PRESUMPTION-1129
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1781
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1782:
+  Date identified: 2026-10-12
+  Statement: [stated] Cost tracker: 31 active agents, ~$51/month; "The heavy/medium split is a judgment call"; "If the seven paper-hunt agents count as medium instead of heavy, the total falls to about $46.80"; "Real billing is per token, so these figures are rough estimates."
+  Context: 8364a04f
+  Type: methodological
+  Related decisions: ASSUMPTION-1783
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1782
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1783:
+  Date identified: 2026-10-12
+  Statement: [stated] Lit pipeline: DISPOSITION-1070..1074; "That selection rule is my choice, not part of the task spec"; 15b: four of five items treat nothing-found as evidence "without showing the instrument was working and sensitive enough"; budget: ~510k tokens vs 30k, "This pipeline can't run within that limit as currently specified." 131 backlog items remain.
+  Context: 87a2acf5
+  Type: methodological
+  Related decisions: ASSUMPTION-1765; PRESUMPTION-1122; REVISE-515
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1783
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1784:
+  Date identified: 2026-10-12
+  Statement: [stated] Connector health: listing tools returned 0 plugins/0 connectors (2nd week); carried 10-04 totals forward because "Writing an empty state would make next week's comparison show 15 uninstalls that never happened." Gmail "probably fixed" but suspect "for one more clean week." Brief ~320 words vs 250 cap. Projects backup: H-Drive not mounted; declined to run the script, which "would write the roughly 2 GB zip into a plain local folder at /Volumes/H-Drive on your startup disk." Scheduler health: OpenStory ingest STOPPED for the same reason.
+  Context: 3c71ed0e; af7b3403; 31cf0e51
+  Type: architectural
+  Related decisions: PRESUMPTION-1129
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1784
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1785:
+  Date identified: 2026-10-12
+  Statement: [stated] Permissions in unattended runs: Desktop Commander requests were "declined automatically because nobody was there" in at least 5 runs (telemetry, reviewer review, Levin/Friston agent, ecosystem report, connector health). Connector health: "If you allow Desktop Commander's start_process command for this task, that step will run next week."
+  Context: ed61471f; 38d24ce2; 85f66e8e; 92c5cfcd; 3c71ed0e
+  Type: architectural
+  Related decisions: PRESUMPTION-1130
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1785
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1786:
+  Date identified: 2026-10-12
+  Statement: [stated] Prompt drift recurrences: Summa daily batch "27th no-op run in a row", "I recommend disabling ... rather than deleting it"; deferred monitor: watch-list split "has now been recommended 37 times" (~820 KB); task wiki path missing Projects/ (Levin/Friston) and Wiki/ vs wiki/ (chat scrape); one-off bootstrap-audit "still runs every Sunday"; system health reads CPU/memory from the sandbox, which "tell you nothing about macOS."
+  Context: 0e116aa4; 07dc7695; 85f66e8e; f4e6dfbd; 92c5cfcd; 78e323ff
+  Type: empirical
+  Related decisions: ASSUMPTION-1774
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1786
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1787:
+  Date identified: 2026-10-12
+  Statement: [stated] Walk channel: no walk notes; "Until a new walk chat is started, this task will keep finding nothing new." Morning scrape corrected Iceland to "Sun Oct 18 - Thu Oct 22" (earlier ~Oct 23) and noted the Humanity AI Open Call is in practice due "Sat Oct 17 unless you plan to submit from the trip". The evening summary sent to Tom still says Oct 18-23 [per subagent read].
+  Context: f4e6dfbd; 18004868; 2a5dc102
+  Type: methodological
+  Related decisions: ASSUMPTION-1773; PRESUMPTION-1126
+  Testability: testable in-house (Tom)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1787
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+ASSUMPTION-1788:
+  Date identified: 2026-10-12
+  Statement: [stated] Findings metric definition: morning handoff reports 24 active findings (FINDING-013..035) while the network count is 101; FINDING-080..101 "use a newer format with no status field" and are not counted; FINDING-018 used twice; findings header still says last updated Aug 10. Seven proposals pending; no review decision since Oct 9.
+  Context: 18004868; 204718a1
+  Type: empirical
+  Related decisions: PRESUMPTION-1131
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1788
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-12 (local). **14 items (1775–1788); 1786 is a recurrence, not queued.***
+
+*Coverage: 19 sessions listed after the failed 10-11 self-awareness run (de795b3c), all scheduled; no live Tom turn visible. Final 4 messages of each read via subagents (tool results and earlier turns not inspected). Quotes are as relayed by subagents.*

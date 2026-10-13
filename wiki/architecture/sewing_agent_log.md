@@ -1571,3 +1571,67 @@ Each of the 10 pages was checked after writing: original content is a prefix of 
 A second scheduled firing of `c2a2-sewing-agent-weekly` arrived on 2026-10-04 after the run above had finished. It did nothing beyond this note: the CSV already has a 2026-10-04 row, and repeating the run would have added a duplicate row and a second batch of calls on the same day. Its shell was also unusable (sandbox bash: "No space left on device"; Desktop Commander declined because no one was present to approve it), so it could not have produced a trustworthy census anyway. Worth checking why the task fired twice today.
 
 *Logged by Sewing Agent (duplicate firing) on 2026-10-04.*
+
+---
+
+## Run: 2026-10-11 (Sunday, scheduled)
+
+**Shell:** sandbox bash worked this week (it was full on 10-04's second firing). Census uses the same resolver as recent runs: a wikilink resolves by filename stem, case-insensitive, credited to every file with that stem, self-links excluded.
+
+### Connectivity snapshot (pre-run census; this is the CSV row)
+
+`2026-10-11,4754,782,96,5632`: orphan 4,754, sparse 782, connected 96, total 5,632 (+171 pages since 10-04). Post-run: 4,736 / 798 / 98.
+
+### Pages processed (backlinks before → after)
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `pending/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing` | 0 | 1 | Wolfram, Loughran, Hoffman |
+| `pending/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin` | 0 | 2 | Rohr, Levin, McGilchrist, Fredrickson, Stump |
+| `pending/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness` | 0 | 1 | Rohr, Friston, Levin, Stump, Kastrup |
+| `pending/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension` | 0 | 1 | Wright, Stump, Rohr, Loughran |
+| `pending/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero` | 0 | 1 | Wright, Rohr, Stump |
+| `approved/2026-09-30_mcgilchrist_think-spiral-classical-liberalism` | 0 | 1 | McGilchrist, Loughran, Stump, Fredrickson |
+| `approved/2026-10-03_wolfram_history-qa-sept23-ai-expectations` | 0 | **0** | Wolfram, Hawkins |
+| `approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament` | 0 | 1 | Rohr, Wright, Stump, Friston, McGilchrist |
+| `approved/2026-10-04_rohr_therese-way-of-love-weekly-summary` | 0 | 1 | Rohr, Stump, Friston, Loughran |
+| `approved/2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth` | 0 | 1 | Wright, Rohr, Stump, Kastrup |
+
+Selection: all 5 pending cards (protocol priority "never promoted"), then 5 of the 6 carry-overs flagged on 10-04. The sixth, `2026-10-01_fredrickson_bipr-dementia-caregivers-conflict`, now sits in `needs_review/` and was left for review. The one sparse page in `traditions/` already had an Agentic Calls section, so it was skipped.
+
+**Agentic calls injected: 39.** Stump 9, Rohr 8, Wright 4, Loughran 4, Friston 3, McGilchrist 3, Wolfram 2, Levin 2, Fredrickson 2, Kastrup 2, and one each to Hoffman and Hawkins. None to Carroll or Arkani-Hamed: nothing in this batch scored for them.
+
+### Bridge notes (8 sections appended to 7 existing files; none created)
+
+`loughran_wolfram`, `mcgilchrist_rohr`, `friston_rohr`, `stump_wright`, `wright_rohr` (two sections: OT violence; sacramental ontology covering the two 10-04 cards), `loughran_mcgilchrist`, `loughran_rohr`. Each carries a `**Wikilinks (sewing, 2026-10-11):**` line.
+
+### Worth Tom's attention
+
+**1. The Think Spiral card is finally processed.** This is the Klein and McGilchrist paper that defends classical liberalism, flagged on 10-04 for its clash with MacIntyre's critique of liberalism (relevant to the ISME paper). The bridge note asks whether the spiral's "return to the right hemisphere" step needs a shared lived practice that liberal neutrality cannot supply.
+
+**2. One processed page is still an orphan.** The Wolfram AI-expectations card only qualified Wolfram strongly, so it got no bridge, and its calls link outward only. Left as is rather than inventing a bridge.
+
+**3. A backlog of 8 recent approved cards with 0 backlinks rolls to next week:** Carroll 370 (dark-matter hint, 10-09), Fredrickson x2 (10-08), Kastrup "AI as archetypal urge" (10-07), Hawkins x3 (Rome focus week, Monty hackathon, 10-06), Friston inferential planning (10-05). Also 2 older ones from 09-23 (Rohr, Kastrup).
+
+**4. A concurrent bootstrap audit ran this morning** (`architecture/sewing_agent_bootstrap_2026-10-11.md`, 04:56). It executed this run's scratch script `/tmp/sew/census.py` by mistake and then overwrote its own wrong output; it says no other file was affected. Its census uses a different resolver (first match only), giving 4,735 / 727 / 73 / 5,535, so the two series are not comparable row for row. It also notes this resolver does not skip `node_modules`. Two jobs now census the same graph on the same morning with different rules. Worth deciding which one owns the number.
+
+**5. Duplicate stems moved 5 extra `inbox/` copies** of approved cards along with the cards themselves. Same known effect as 09-13; the janitor census recommended then is still undone.
+
+**6. Provenance cautions repeated in the calls.** Both Wright pending cards and the Wolfram livestream card rest on episode descriptions or segment titles, with no transcript. The calls hold them at Speculative/Medium until someone listens.
+
+**7. Standing flags, unchanged.** Orphan count is still dominated by `architecture/` and `inbox/`. The token budget in Rule 6 is exceeded again, as on every run.
+
+### Verification (fail-loud)
+
+Each of the 10 pages was asserted after writing: original content is a prefix of the new file, exactly one `## Agentic Calls` heading, exactly one `Sewing Agent on 2026-10-11` stamp. Each of the 8 bridge appends was asserted prefix-preserving. CSV row appended once, after asserting no 2026-10-11 row existed. Post-run census was diffed against pre-run: 24 files changed, all accounted for (10 pages, 5 duplicate-stem copies, 9 bridge or synthesis files that gained links from the calls). Nothing deleted or overwritten. No HTML, JS or CSS touched. Nothing committed. Note that the daily-run commit script will *hold* these edits (modified after run-start) rather than commit them under a daily-run subject.
+
+*Logged by Sewing Agent on 2026-10-11.*
+
+
+---
+
+## Bootstrap audit duplicate firing (cloud, 2026-10-11 13:42 UTC)
+
+Trigger trig_017Sh44YWEf69ay8WeTWhUfp fired again (scheduled 08:09, delivered 13:42). The 2026-10-11 census, CSV row and bootstrap report already existed from earlier today, so this firing re-ran nothing and modified no vault page. Recommendation from sewing_agent_bootstrap_2026-10-11.md stands: disable this one-time task (it duplicates the weekly sewing agent).
+
+*Logged by Sewing Agent, 2026-10-11 13:4x UTC.*

@@ -107,3 +107,18 @@ If the church is a real corporate substance whose members retain their distinct 
 **Open question the wiki cannot yet answer:** Is the people of God one corporate substance or several, and can a nation be a corporate substance in the same sense without usurping the head?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-27_wright_ascension-political-theology]]
+
+---
+
+## Covenant faithfulness against infused justice
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md` (0 backlinks).
+
+**Why it sits here:** Wright's Ask NT Wright episode (5 Oct): the righteousness of God as covenant faithfulness; creeds under Scripture.
+
+**Synthesis claim.** Wright's righteousness is God's fidelity to a promise; Aquinas's justification is a change wrought in the person. They can be one event only if covenant membership is itself a real (infused) change. Wright's own 'Scripture over system' ordering resists that move.
+
+**Open question the wiki cannot yet answer:** Does Wright ever allow that membership in the covenant family changes the member's nature, and does Stump need him to?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension]]

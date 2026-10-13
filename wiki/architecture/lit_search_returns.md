@@ -50833,3 +50833,359 @@ The flag is an instance of PREMISE-120: a second check must record what it share
 
 Running totals after this run: PREMISE-225 | MONITOR-686 | REVISE-514 | DISPOSITION-1060.
 Distribution (5 items): 1 INCORPORATE minted (PREMISE-225), 2 MONITOR (MONITOR-685, MONITOR-686), 1 REVISE (REVISE-514), 1 INCORPORATE no-mint (PRESUMPTION-863, covered by PREMISE-119). Superseded: MONITOR-542, MONITOR-543, MONITOR-546, MONITOR-477; MONITOR-549 closed. Literature re-triggers retired: all five. Every remaining limb is in-house or a design decision for Tom.
+
+
+## 15a/15b/15c RUN — 2026-10-10 (scheduled c2a2 lit-search pipeline; NEW 14a/14b intake of 2026-10-09, 5 items: ASSUMPTION-1757, PRESUMPTION-1115, PRESUMPTION-1117, PRESUMPTION-1118, PRESUMPTION-1119)
+
+### 15a returns (2026-10-10)
+- ASSUMPTION-1757: SUPPORTED (Moderate). Decision analysis and meta-analysis rules agree that evidence drawn from a shared source must not be counted twice, so discounting is right. Collapsing to exactly one reading is only correct when the overlap is total; where 15a and 15b interpret the same documents independently, a partial discount fits better. Key sources: Clemen 1987, Management Science 33(3) [fetched, abstract]; Clemen & Winkler 1985 with Morrison & Schmittlein 1991, Operations Research [search-result]; Cochrane Handbook Ch. 23 on double counting [search-result]. NOVELTY: no. File: lit_search_results/for/ASSUMPTION-1757_for.md
+- PRESUMPTION-1115: SUPPORTED (Strong). MacKenzie et al. 2002 states it directly: "Nondetection ... does not imply that the species is absent unless the probability of detection is 1". Wintle et al. and Garrard et al. show how much survey effort is needed before absence can be claimed, and document that applied assessments routinely skip this. A minimal coverage statement would give units reached (k of N), effort spent, and either a detection probability or "UNKNOWN beyond scope". Key sources: MacKenzie et al. 2002, Ecology 83(8) [fetched, abstract]; Wintle et al. 2005, J. Wildlife Management, and 2012, Diversity and Distributions [search-result]; Garrard et al. 2008 [search-result]; PRISMA-S 2021 [search-result]. NOVELTY: no. File: lit_search_results/for/PRESUMPTION-1115_for.md
+- PRESUMPTION-1117: SUPPORTED (Moderate). Safety science strongly supports the diagnosis: repeated deviations that cause no visible harm become the accepted norm and pull practice away from written procedure. Support for a specific ratification step is weaker and comes only from practitioner change-control (deviation approval) material. Key sources: Vaughan 1996, normalization of deviance [search-result]; Snook 2000, practical drift [search-result; fetch failed]; Rasmussen 1997, Safety Science [search-result]; Dekker 2011 [search-result]; Feldman & Pentland 2003, Administrative Science Quarterly [search-result]. NOVELTY: partial (nothing found on unattended AI pipelines treating earlier run logs as authority). File: lit_search_results/for/PRESUMPTION-1117_for.md
+- PRESUMPTION-1118: SUPPORTED (Moderate). Widely used monitoring systems already treat UNKNOWN and "no data" as separate states, and the Kubernetes docs say a single summary value "cannot capture the full picture". Three-valued logic gives the rule that an overall OK requires every in-scope component to be observed OK. Support for labelling each verdict with its inspected scope is only indirect. Key sources: Kubernetes Pod Conditions docs [fetched, partial]; Nagios/Monitoring Plugins UNKNOWN exit code 3 [search-result]; Grafana missing-data docs [search-result]; Kleene three-valued logic [search-result]. NOVELTY: partial. File: lit_search_results/for/PRESUMPTION-1118_for.md
+- PRESUMPTION-1119: SUPPORTED (Moderate). Open-science work holds that undisclosed changes to a pre-specified process mislead readers and should be itemised. Reliability practice reports independent agreement before reconciliation separately from the consensus result, and W3C PROV can record each normalisation as an attributed revision. No source covered an orchestrator editing AI reviewers' outputs. Key sources: Willroth & Atherton 2024, AMPPS 7(1) [fetched, abstract]; Cochrane Handbook v5.1 §7.6.5 and team-coding inter-rater reliability reports [search-result]; W3C PROV-DM/PROV-O [search-result]. NOVELTY: partial. File: lit_search_results/for/PRESUMPTION-1119_for.md
+Totals (15a): 15 searches / 5 fetch attempts / 1 fetch failure (Princeton UP page for Snook timed out, not retried). 15a self-reported weak spots: effective-N formula N/(1+(N−1)ρ) is a textbook reading of Clemen & Winkler, not a verified quote; the Kubernetes "Unknown" claim rests on search results only; authorship of the preregistration audit cited as Claesen et al. unverified.
+
+### 15b returns (2026-10-10)
+- ASSUMPTION-1757: PARTIALLY-CHALLENGED (Moderate). The literature on correlated judges models partial dependence rather than collapsing two judges to one: two raters with correlation ρ count as about 2/(1+ρ) readings, which is 1 only when ρ = 1. In systematic reviews, two people extracting from the same text cut errors by about 22%. Boundary condition: counting them as one reading is right only when the reviewers share both retrieval and interpretation (same model and similar prompts), or when the error being guarded against is a bad source copy. Key sources: Buscemi et al. 2006, J Clin Epidemiol [fetched, abstract]; McCoy & Prelec 2024, Mgmt Sci [fetched, abstract]; Palley & Soll 2019, Mgmt Sci [search-result]; design-effect literature (StatCan Survey Methodology 2020) [search-result]. File: lit_search_results/against/ASSUMPTION-1757_against.md
+- PRESUMPTION-1115: PARTIALLY-CHALLENGED (Weak-Moderate). Absence of evidence is evidence of absence, weighted by how likely the search was to detect the thing (Bayesian work). So silence inside an instrument's declared scope is a legitimate negative when the check is deterministic. Formal imperfect-detection correction (from ecology occupancy models) is contested even in ecology and is unstable with sparse data. Boundary condition: software gaps are mostly "the instrument didn't look", not "it might have missed it", so the fix may only need a scope list rather than a probability model. Key sources: Hsu, Horng, Griffiths & Chater 2017, Cognitive Science [fetched, abstract]; Welsh, Lindenmayer & Donnelly 2013, PLoS ONE [search-result]; rebuttal Guillera-Arroita et al. 2014 [search-result, supports the item]. File: lit_search_results/against/PRESUMPTION-1115_against.md
+- PRESUMPTION-1117: PARTIALLY-CHALLENGED (Moderate). Resilience engineering finds that deviations from procedure come before safe outcomes as often as unsafe ones. Pressure to comply increases failures to adapt, and added review steps tend to pile up into "safety clutter" and surface compliance. Dekker's remedy is to monitor and understand the gap between procedure and practice, not to add a ratification gate. Boundary condition: the same source describes normalisation of deviance, where unattended agents copy their own earlier choices without outcome feedback. That is exactly the drift case the item worries about. Key sources: Dekker 2003, Applied Ergonomics [fetched, full text]; Rae, Provan, Weber & Dekker 2018, Policy & Practice in H&S [fetched, abstract-level summary]; Hollnagel, Wears & Braithwaite 2015 Safety-II white paper [search-result]; Leveson 2020 critique of Safety-II [search-result]. File: lit_search_results/against/PRESUMPTION-1117_against.md
+- PRESUMPTION-1118: PARTIALLY-CHALLENGED (Weak-Moderate). Readers anchor on the headline verdict and satisfice, so scope and uncertainty notes appended to it are often ignored. A standing UNKNOWN for every uninspected component would be non-actionable noise of the kind that teaches readers to skip the whole field. Boundary condition: in Nagios, UNKNOWN already means the check itself failed. A separate, non-alerting NOT-INSPECTED state, or scope written into the verdict token (e.g. "HEALTHY[3/10]"), avoids that clash. The reader studies used human subjects, and transfer to agent readers is untested. Key sources: Kale, Kay & Hullman 2020, arXiv:2007.14516 [fetched, full text]; Nagios-devel thread [fetched, original post only; the developer's reply is search-result only]; alert-fatigue practitioner material [search-result, low authority]. File: lit_search_results/against/PRESUMPTION-1118_against.md
+- PRESUMPTION-1119: PARTIALLY-CHALLENGED (Moderate against "normalisation is inherently biasing"; Weak against "it must be reported"). Harmonising independent outputs into a shared vocabulary is standard practice: retrospective data harmonisation, consensus in systematic reviews, and editors editing reviewer reports (39% of COPE respondents say it is acceptable, and more say "sometimes" or "depends"). None of these treat it as voiding independence. Boundary condition: this holds only for format-only changes, with raw outputs kept and changes recorded. An orchestrator-written PROVENANCE block is closer to a substantive claim made on the agent's behalf than to copyediting. Key sources: COPE 2020 survey [fetched, full text]; Cochrane Handbook v5.1 §7.6.5 [fetched, full text]; Fortier et al. 2017 Maelstrom guidelines, IJE [search-result]; Fidler & Hoekstra editor survey [search-result]. File: lit_search_results/against/PRESUMPTION-1119_against.md
+SYSTEMIC-RISK (High; 15b): affects ASSUMPTION-1757, PRESUMPTION-1115, -1117, -1118, -1119. Each implied correction is a yes/no rule plus extra process; the literature prefers graded, documented handling (raw output + a record of each transformation and its scope). Added process tends to accumulate and be ignored ("safety clutter", alert fatigue, surface compliance), especially when no human reads it; adding five corrections at once to an unattended pipeline is itself a clutter risk. Full flag in PRESUMPTION-1117_against.md.
+Totals (15b): 16 search calls (1 cut off and retried) / 10 fetch attempts / 1 failure (PMC4411262, reCAPTCHA) + 1 partial (Nagios thread).
+
+## 15c — dispositions, 2026-10-10
+
+DISPOSITION-1061:
+  Date: 2026-10-10
+  Item: ASSUMPTION-1757
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Moderate
+  Net assessment: Both directions agree that agreement drawn from a shared source must be discounted. They also agree that collapsing to exactly one reading is the limiting case (ρ = 1), not the general rule: the correction should be graded by how much the two readers share (retrieval, model, prompt, interpretation).
+  Disposition: INCORPORATE (refined premise)
+  Reasoning: The two directions converge with different sources (15a: Clemen, Cochrane double-counting; 15b: Buscemi, McCoy & Prelec, Palley & Soll), so source overlap is low. That convergence on the refinement is stronger than either result alone. The 2026-10-09 practice of counting shared-source agreement as one reading stays correct for those cases: there 15b's sources were search-result grade and 15a and 15b shared model, session and cache, so ρ was close to 1. The refinement does not change PREMISE-225.
+  Validated premise statement: When two reviewers' agreement may share a cause, count it by dependence, not by headcount. Agreement counts as one reading only when the reviewers share retrieval AND interpretation (same model/context and the same fetched text, or the error guarded against is a bad source copy). Otherwise it counts as more than one and fewer than two (effective n ≈ 2/(1+ρ)). 15c records which of these applies and why, along with the overlap evidence.
+  Confidence: Moderate
+  Applicable to: 15c weighting of convergent 15a/15b verdicts; SYSTEMIC-RISK shared-retrieval responses; PREMISE-120; REVISE-350 (a per-item URL log is what lets 15c estimate overlap)
+  Re-check cadence: Quarterly
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1757 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1757_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1757_against.md
+
+DISPOSITION-1062:
+  Date: 2026-10-10
+  Item: PRESUMPTION-1115
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: SUPPORTED
+  15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Weak-Moderate
+  Net assessment: The presumption that each instrument's detection probability is about 1 within its claimed scope is contradicted by a canonical literature, and 15b concedes the core point: silence is a valid negative only inside the scope the instrument actually inspected. 15b's challenge is about the remedy, not the critique: occupancy-style probability models are contested and overkill. A scope statement (k of N reached, plus what was not reached) is enough for deterministic software checks.
+  Disposition: REVISE
+  Reasoning: This is a presumption (unstated) with Strong evidence against it and live consequences: four false all-clears on 2026-10-09 alone. The heuristic says REVISE with High urgency. 15b's boundary condition sets the form of the fix, and the SYSTEMIC-RISK (clutter) flag argues for the smallest fix that works. It generalises REVISE-504 (arXiv '0 proposals'), which becomes one instance.
+  What is at risk: Every 'nothing new / none found / all fired / NO' result the estate reports: tradition-agent proposal counts, scheduler health (the registry sees 1 of 70 tasks), walk-note and walk-chat detection, morning digest.
+  Recommended action: Any negative result must state its coverage in the same line: units reached / units claimed (e.g. 'no new items in 3/5 sources; arXiv author page UNREACHED'). Anything outside coverage is reported as NOT-INSPECTED, never folded into the negative. No probability modelling is needed. Make this one shared output rule, not a per-agent patch. REVISE-504 and REVISE-510 become instances of it.
+  Urgency: High
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1115 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1115_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1115_against.md
+
+DISPOSITION-1063:
+  Date: 2026-10-10
+  Item: PRESUMPTION-1117
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Moderate
+  Net assessment: The diagnosis is agreed: unattended runs that copy their own earlier choices without outcome feedback are the normalisation-of-deviance case, and 15b's resilience literature names that as the exception to 'adaptation is healthy'. The remedy is disputed. 15b's evidence (Dekker 2003, full text; Rae et al. 2018) is that per-instance ratification gates pile up into clutter, and that the better tool is making the gap between procedure and practice visible and reviewing it.
+  Disposition: REVISE
+  Reasoning: The presumption is operative today: the batch rule, the lock convention, move-not-delete and the walk-chat fallback all live outside task text. Both sides agree that unattended copying without feedback is the dangerous case. What tipped it to REVISE rather than MONITOR is that this is a structural presumption the designers were unaware of, with four live instances. The recommended action follows 15b's form (visibility plus batch review), not a per-run gate. REVISE-502 is one instance (the lock convention).
+  What is at risk: Task-spec authority across all scheduled tasks; OPEN-264; REVISE-502; any rule justified as 'per precedent'.
+  Recommended action: Keep one STANDING-PRACTICES register. Any run that acts on precedent rather than task text cites the entry (or adds one, marked UNRATIFIED). Tom ratifies, rejects or folds entries into task text in a single periodic batch review. Entries are never treated as authority merely because they recur. No per-run approval gate.
+  Urgency: Medium
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1117 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1117_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1117_against.md
+
+DISPOSITION-1064:
+  Date: 2026-10-10
+  Item: PRESUMPTION-1118
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Weak-Moderate
+  Net assessment: Both sides agree that a bare 'healthy' over a disjoint scope is wrong. 15b shows that the fix's form matters: notes appended to the verdict get ignored, and Nagios-style UNKNOWN already means 'the check failed'. Scope belongs in the verdict token itself, and uninspected components need a separate, non-alerting NOT-INSPECTED state.
+  Disposition: REVISE (attached to REVISE-515; no separate flag minted)
+  Reasoning: This is the verdict-level analogue of PRESUMPTION-1115 (same mechanism: silence beyond scope read as OK). Under the SYSTEMIC-RISK clutter flag, 15c attaches it to the same flag rather than minting a parallel one. It is consistent with the PREMISE on gap-honest visualisation (do not show data that do not exist) and with REVISE-510 (completion vs outcome).
+  What is at risk: Morning digest and system-health verdicts (the digest says 'healthy' on days with FAILs).
+  Recommended action: Under REVISE-515, write health verdicts as scoped tokens (e.g. 'HEALTHY[sandbox, wiki-jobs]; NOT-INSPECTED[launchd, cloud routines]'), keeping UNKNOWN for checks that ran and failed to return.
+  Urgency: Medium (inherits REVISE-515)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1118 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1118_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1118_against.md
+
+DISPOSITION-1065:
+  Date: 2026-10-10
+  Item: PRESUMPTION-1119
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: SUPPORTED
+  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED
+  15b strength: Moderate vs "inherently biasing"; Weak vs "must be reported"
+  Net assessment: The two directions converge on a boundary rather than a contest. Harmonising vocabulary is standard and does not void independence (15b: COPE, Cochrane §7.6.5, Maelstrom), provided raw outputs are kept and changes recorded (15a: Willroth & Atherton; W3C PROV). Content the orchestrator adds on an agent's behalf (e.g. a PROVENANCE block the agent omitted) is a substantive claim, not copyediting.
+  Disposition: INCORPORATE
+  Reasoning: The two sides do not contradict each other: 15b's challenge is explicitly limited to format-only changes, and 15a's support covers exactly the reporting requirement. Source overlap: Cochrane Handbook §7.6.5 appears on both sides (15b fetched it; 15a has it at search-result grade), so that shared source counts once under PREMISE-226. Confidence is Moderate because the item is speculative (one run) and no source covers AI-reviewer orchestration.
+  Validated premise statement: An orchestrator may make format-only normalisations of independent agents' outputs (vocabulary mapping, layout) if the raw outputs are preserved and each change is logged. Content added on an agent's behalf (provenance, verdicts, sources) must be attributed to the orchestrator, not to the agent. Claims of independence or agreement refer to the raw outputs.
+  Confidence: Moderate
+  Applicable to: The lit-pipeline orchestrator and any multi-agent run that merges agent outputs; 15c reporting; REVISE-488; REVISE-350
+  Re-check cadence: Quarterly
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1119 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1119_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1119_against.md
+
+### SYSTEMIC-RISK (15b, High): corrective-process clutter — 15c response
+15c accepts the flag as a constraint on the form of the remedies, not as grounds to drop them. Applied here:
+  (i) PRESUMPTION-1115 and PRESUMPTION-1118 share ONE flag (REVISE-515) with a single output rule. Scope tokens replace probability models.
+  (ii) PRESUMPTION-1117's remedy is a register plus a periodic batch review, explicitly not a per-run gate.
+  (iii) The two INCORPORATEs are graded rules (PREMISE-226: weight by dependence; PREMISE-227: format vs. content), not new mandatory steps.
+Net new process from five items: two flags and two premises. Shared-retrieval check (cf. 2026-10-09 flag): this run ran 15a and 15b as separate subagent sessions with separate contexts (partial mitigation of REVISE-350 rec. 2; same model, same web tools). The only cited source shared across directions is Cochrane Handbook §7.6.5 (1119), which is counted once. The paired effective-N formula on 1757 appears in both, but from different primary sources.
+
+### Orchestrator notes (per PREMISE-227, applied to this run)
+- The 15a/15b summary returns above are pasted VERBATIM from the agents' final messages, except for three changes: the "Totals" lines are re-prefixed with "(15a)" or "(15b)"; 15a's three self-reported weak spots are condensed into one sentence; and the bullet layout of 15b's SYSTEMIC-RISK flag is collapsed into prose. Result files are unedited.
+- Batch rule: the task text says to process newly queued items, so the five bare literature-lane items from the 2026-10-09 14a/14b intake were taken. This rule comes from the task text, not precedent (cf. PRESUMPTION-1117). The 127 older bare items (the 07/08 15d re-trigger cohorts) remain the backlog. Scope PRELIMINARY (~3 searches/item/side).
+- assumptions.md/presumptions.md Status lines were not edited (owned by 14a/14b; not in this task's spec).
+
+Running totals after this run: PREMISE-227 | MONITOR-686 | REVISE-516 | DISPOSITION-1065.
+Distribution (5 items): 2 INCORPORATE (PREMISE-226 ← ASSUMPTION-1757; PREMISE-227 ← PRESUMPTION-1119), 3 REVISE (REVISE-515 ← PRESUMPTION-1115 + PRESUMPTION-1118 attached; REVISE-516 ← PRESUMPTION-1117), 0 MONITOR.
+
+
+## 15a/15b/15c RUN — 2026-10-11 (scheduled c2a2 lit-search pipeline; NEW 14a/14b intake of 2026-10-10, 4 literature items: ASSUMPTION-1766, ASSUMPTION-1769, PRESUMPTION-1120, PRESUMPTION-1121)
+
+### 15a returns (2026-10-11)
+RETURN-15a-ASSUMPTION-1766: PARTIALLY-SUPPORTED | Moderate that rule overload hurts compliance; Weak that consolidation fixes it | Ranney & Nelson TRR 1899 [abstract]; RMIT 'Safety clutter' [snippet]; alarm-fatigue reviews (Winters 2018, Kane-Gill 2017, Chromik 2022) [snippet] | Weak spots: human-worker evidence only; rail effect at 1 of 3 carriers; cutting rules can drop critical items.
+RETURN-15a-ASSUMPTION-1769: SUPPORTED | Moderate | Mills 1972 error seeding [snippet]; Hettiachchi et al. arXiv 2105.09457 gold questions [full text, partial]; synthetic anomaly injection docs [snippet] | Weak spots: plants must resemble real items; LLM detector may recognise plants; no guidance on LLM confidence-label calibration.
+RETURN-15a-PRESUMPTION-1120: PARTIALLY-SUPPORTED | Moderate | PubMed 31272125 dual screening [abstract]; Covidence / library screening guides [snippet]; GRADE evidence-gap category [snippet] | One written, piloted criteria set for all screeners plus a defined 'maybe' lane to an arbiter. Weak spots: guidance favours passing doubtful items forward (adds reviewer load).
+RETURN-15a-PRESUMPTION-1121: PARTIALLY-SUPPORTED | Weak | JMIR Med Inform 2020;8(7):e15653 [title]; alarm-fatigue reviews [snippet]; ACCA follow-up guide [snippet] | Override rates used to retire weak alerts; audit tracks recommendation uptake and escalates overdue. Weak spots: mostly titles; low uptake is ambiguous; throttling may bury rare critical flags.
+(15a) Totals: 4 searched | 1 SUPPORTED | 3 PARTIALLY-SUPPORTED | 0 NOVELTY | 12 searches, 4 fetches (3 ok).
+
+### 15b returns (2026-10-11)
+RETURN-15b-ASSUMPTION-1766: PARTIALLY-CHALLENGED | Moderate | Black 2008 principles-based regulation [snippet]; Degani & Wiener 1991 NASA CR-177549 [abstract]; Catchpole & Russ 2015 BMJ Qual Saf [snippet] | Broad rules blur what compliance means; checklists work through specific fitted items, not low counts. Steelman: two abstract premises may trade visible clutter for silent drift.
+RETURN-15b-ASSUMPTION-1769: PARTIALLY-CHALLENGED | Moderate | Checco, Bates & Demartini 2019 IJCAI [abstract]; Ovadia et al. 2019 NeurIPS [abstract]; TREC 2011 RMIT run [snippet] | Plants are distinguishable; calibration fails under shift. Steelman: crisp LLM-written plants measure plant detectability and certify calibration falsely for the ambiguous middle.
+RETURN-15b-PRESUMPTION-1120: PARTIALLY-CHALLENGED | Moderate | GRADE Guidance 32/41 [snippet]; Cartwright & Hardie 2012 [snippet]; Skitka et al. 1999 + Cologne mammography 2023 automation bias [snippet] | Explicit yes, uniform no (thresholds are per decision); reviewers under-check AI-framed items, so 'reviewer will check' often means no check.
+RETURN-15b-PRESUMPTION-1121: PARTIALLY-CHALLENGED | Moderate vs throttle; Weak vs measuring | New Relic alert quality [full text]; JMIR 2020 override review [snippet]; Goodhart/Campbell [snippet] | Uptake ratio cannot separate noisy flags from overloaded reader; gameable; throttling suppresses rare high-value flags.
+SYSTEMIC-RISK-FLAG (15b, High): all four items check themselves through proxies the pipeline defines and scores (self-judged premise compliance, self-written plants, deferred reviewer verification, gameable uptake count); Tom's attention is the only external check and may be saturated. Recommends one check outside both the pipeline's measures and Tom's queue (periodic blind audit sample), and treating 'the reviewer will check' as a capacity claim to measure.
+(15b) Totals: 4 searched | 0 CHALLENGED | 4 PARTIALLY-CHALLENGED | 12 searches, 4 fetches (3 ok) | 1 SYSTEMIC-RISK (High).
+
+### 15c dispositions (2026-10-11)
+DISPOSITION-1066:
+  Date: 2026-10-11 | Item: ASSUMPTION-1766 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate/Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Both agree rule overload is real. They disagree on the remedy: 15a supports 'fewer', 15b shows 'broader' costs specificity and invites per-agent drift. Supported claim is 'fewer AND specific', not 'fewer, broader'. No evidence on LLM agents.
+  Disposition: MONITOR (MONITOR-687)
+  Reasoning: Weak support for the specific mechanism plus a moderate boundary challenge; the practice is one run old. Not REVISE because nothing shows the 10-10 consolidation did harm.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1766 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1766_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1766_against.md
+
+DISPOSITION-1067:
+  Date: 2026-10-11 | Item: ASSUMPTION-1769 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Seeding known answers is an established way to measure detection rates (convergent with PREMISE-124 and PREMISE-150, which already require seeded denominators). 15b bounds it: plants must not be distinguishable, and calibration holds only for the seeded distribution.
+  Disposition: INCORPORATE (PREMISE-228), with 15b's conditions written into the premise.
+  Consistency check: Extends PREMISE-124/150 from coverage to confidence labels; no conflict found.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1769 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1769_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1769_against.md
+
+DISPOSITION-1068:
+  Date: 2026-10-11 | Item: PRESUMPTION-1120 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Both converge on 'explicit, declared threshold plus a labelled lane for unverifiable items'. They differ on uniformity: 15b (GRADE) argues per-decision thresholds. 15b's automation-bias evidence undercuts the Wolfram agent's 'defer the check to the reviewer'.
+  Disposition: REVISE (REVISE-517) | Urgency: Medium
+  Reasoning: Operative, unstated, and partly wrong: no job declares its threshold, and deferred checks are presumed done.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1120 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1120_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1120_against.md
+
+DISPOSITION-1069:
+  Date: 2026-10-11 | Item: PRESUMPTION-1121 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate vs throttle; Weak vs measuring)
+  Net assessment: The diagnosis (flags may have no reader) is agreed. Measuring uptake is supported; auto-throttling on it is not (ambiguous, gameable, suppresses rare high-value flags).
+  Disposition: REVISE (attached to REVISE-516; no separate flag minted) | Urgency: High (inherits; raised from Medium because the risk is that REVISE-516's batch review never happens)
+  Reasoning: Same mechanism as PRESUMPTION-1117: unattended precedent becoming policy when nobody reads. Attached per the 10-10 clutter response. Recommended action: report uptake (flags raised / actioned, oldest-unactioned age) as a plain number at the top of the batch-review list; do not throttle or auto-escalate on it.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1121 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1121_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1121_against.md
+
+### SYSTEMIC-RISK (15b, High): self-scored proxies — 15c response
+Accepted. It is the general form already held by PREMISE-124 (no self-measurement without external baseline). Applied: PREMISE-228 requires plants written independently of the detector; REVISE-517 forbids presuming deferred checks happen; the REVISE-516 attachment makes uptake visible, not a control signal. The blind-audit recommendation is recorded under REVISE-516 for Tom; no new process minted. Net new process from four items: one premise, one flag, one attachment, one monitor.
+
+### Orchestrator notes (per PREMISE-227)
+- 15a/15b returns above are condensed from the agents' final messages (wording shortened, verdicts, strengths and sources unchanged). Result files are unedited.
+- 15a and 15b ran as separate subagent sessions; 15b attested it did not read for/. Shared sources: alarm-fatigue reviews and the JMIR 2020 override review appear on both sides (1121), counted once under PREMISE-226.
+- Batch rule: per task text, the 4 bare literature items from the 2026-10-10 intake. 127 older bare items (07/08 15d cohorts) remain backlog. Scope PRELIMINARY (3 searches/item/side).
+- assumptions.md/presumptions.md Status lines not edited (owned by 14a/14b).
+
+Running totals after this run: PREMISE-228 | MONITOR-687 | REVISE-517 | DISPOSITION-1069.
+Distribution (4 items): 1 INCORPORATE (PREMISE-228 ← ASSUMPTION-1769), 2 REVISE (REVISE-517 ← PRESUMPTION-1120; PRESUMPTION-1121 attached to REVISE-516), 1 MONITOR (MONITOR-687 ← ASSUMPTION-1766).
+
+## 15a/15b/15c RUN — 2026-10-12 (scheduled c2a2 lit-search pipeline; 15d re-trigger backlog, 5 items: PRESUMPTION-991, PRESUMPTION-1101, PRESUMPTION-983, ASSUMPTION-1682, ASSUMPTION-1684)
+
+### 15a returns (2026-10-12)
+RETURN-15a-PRESUMPTION-991 (cycle 3): PARTIALLY-SUPPORTED | Moderate (norm); Weak (escalation-of-commitment); None (reflexive case) | Cogitate Consortium 2025 Nature 642:133 [abstract]; press coverage [snippet]; Engelbrecht et al. 2017, Keil & Robey 1999 [snippet] | NOVELTY narrowed to programme-as-own-instrument; Cogitate separated measurers from proponents. Reported (unverified by 15a) metabolism regeneration 2026-10-08.
+RETURN-15a-PRESUMPTION-1101 (cycle 1): PARTIALLY-SUPPORTED | Moderate | Sinsky et al. 2024 JAMA Netw Open [structured abstract]; Obermiller et al. 2025 [snippet]; AMA survey [snippet]; Alves et al. 2024 TMLR + FiFAR [snippet/abstract] | Peer-reviewed analogues (clinical inbox coverage; deferral under capacity). No agent-queue measurement; queue length not measured.
+RETURN-15a-PRESUMPTION-983 (cycle 3): PARTIALLY-SUPPORTED | Weak-to-Moderate | Gloaguen et al. 2026 arXiv:2602.11988 [abstract]; AgentDojo 2024 [snippet]; He et al. 2024 arXiv:2411.10541 [snippet] | Agents follow instructions in files they load; nothing separates placement from format/addressing. NOVELTY narrowed.
+RETURN-15a-ASSUMPTION-1682 (cycle 1): SUPPORTED (restated form) | Strong | ICH E10 §1.5 assay sensitivity [read in full]; Dienes 2014 [abstract] | Necessary-not-sufficient with sensitivity clause directly supported; transfer by principle.
+RETURN-15a-ASSUMPTION-1684 (cycle 1): PARTIALLY-SUPPORTED (conditional form only) | Moderate | PCAOB AS 2201 App. B benchmarking via op het Veld & de Bruijn 2008 [read in full; PCAOB primary fetch refused]; Rothermel & Harrold 1997 [snippet] | Carry-forward allowed only with verified no-change, change control, periodic re-baseline; unconditional form NO-SUPPORT.
+(15a) Totals: 5 searched | 1 SUPPORTED (restated) | 4 PARTIALLY-SUPPORTED | 2 NOVELTY narrowed (991, 983).
+
+### 15b returns (2026-10-12)
+RETURN-15b-PRESUMPTION-991 (cycle 3): PARTIALLY-CHALLENGED | Moderate vs remedy form; None vs core | St Quinton & Trafimow 2025 Front Psychol [full text]; Szollosi et al. 2020 [search-result]; Lakatos [secondary] | A threshold without pre-registered auxiliaries (instrument liveness) can be rescued after a miss; loss condition should be comparative. Steelman: look of falsifiability without substance.
+RETURN-15b-PRESUMPTION-1101 (cycle 1): PARTIALLY-CHALLENGED | Moderate | Lykouris & Weng arXiv:2402.12237 [abstract]; arXiv:1903.06870 reneging [search-result]; Parasuraman & Manzey 2010 [abstract summaries] | Core worry not contradicted; queues with abandonment bleed rather than explode; lever is upstream admission; batch review on return invites rubber-stamping.
+RETURN-15b-PRESUMPTION-983 (cycle 3): CHALLENGED | Moderate-Strong | Maier et al. 2022 PNAS [full text]; DellaVigna & Linos 2022 [abstract]; Wallace et al. 2024 [abstract]; Liu et al. "Lost in the Middle" [secondary] | Human nudge base undecided after bias correction; agents trained to deprioritise in-data instructions; predicts placement will not separate once addressing fixed.
+RETURN-15b-ASSUMPTION-1682 (cycle 1): PARTIALLY-CHALLENGED | Moderate | Dienes 2014 [abstract]; ASA/ISA 330 ¶16 [full text]; equivalence/SESOI summaries [search-result] | Agrees necessary-not-sufficient; challenges the "power clause" remedy as weakest form; asks for pre-stated smallest effect + data-based sensitivity, else INCONCLUSIVE.
+RETURN-15b-ASSUMPTION-1684 (cycle 1): PARTIALLY-CHALLENGED | Moderate (up from Weak) | ASA/ISA 330 ¶13–15 [full text]; Porter, Votta & Basili 1995 [author summary]; CAQ rollforward [search-result] | Carry-forward only with change evidence, a horizon (every third cycle), rotation, no high-risk items; sweep met none.
+SYSTEMIC-RISK-FLAG (15b, High): wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-12_silence-read-as-evidence.md — items 1682, 1684, 991, 1101 each read absence of a signal as information without establishing that the channel was alive and sensitive. Recommends one estate rule: liveness + sensitivity statements on every negative, else INCONCLUSIVE.
+(15b) Totals: 5 searched | 1 CHALLENGED | 4 PARTIALLY-CHALLENGED | 1 SYSTEMIC-RISK (High).
+
+## 15c — dispositions, 2026-10-12
+
+DISPOSITION-1070:
+  Date: 2026-10-12 | Item: PRESUMPTION-991 (MONITOR-610, cycle 3) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Moderate norm; NOVELTY narrowed) | 15b: PARTIALLY-CHALLENGED (Moderate vs remedy; None vs core)
+  Net assessment: Neither direction argues C2A2 should lack a loss condition; the norm now has a high-quality real-world precedent (Cogitate). 15b's challenge is to the remedy form and is adopted: a threshold needs an auxiliary block (instrument liveness, sensitivity, failure = INCONCLUSIVE). 15c verified the in-house limb: metabolism_data.json regenerated 2026-10-08T05:03 (once; not since; schedule unverified); census still stale per 15a and a 15c grep; steps (2)-(3) not started.
+  Disposition: MONITOR (MONITOR-688; supersedes MONITOR-610) | Priority: High
+  Reasoning: Core unchallenged but still undischargeable: no quantity and no threshold exist. Not INCORPORATE (nothing to incorporate until an entry exists); not REVISE (core not challenged; the clauses that failed are already in REVISE-472). Literature is now discharged, so the entry moves to the empirical lane with a dated REVISE trigger (2026-10-26 snapshot/census) and a terminating condition (2026-11-09) to avoid a fifth idle cycle.
+  What would change it: a dated loss-condition entry with auxiliary block over a live series → INCORPORATE; snapshot/census not live by 10-26 or no entry by 11-09 → close into REVISE-472. Needs Tom (OPEN-208).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 3) → 15c] | Original item: PRESUMPTION-991 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-991_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-991_retrigger-2026-10-12_against.md
+
+DISPOSITION-1071:
+  Date: 2026-10-12 | Item: PRESUMPTION-1101 (MONITOR-636, cycle 1) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Both directions agree on the core: deferring to an absent reviewer is not safe and absence must be designed for. They disagree on mechanism (unbounded growth vs silent abandonment) and lever (exit rule vs upstream admission). In-house (15c count): REVISE-480..517 minted 09-21..10-11; all 21 with Status lines read AWAITING TOM; no recorded resolution — consistent with either growth or abandonment, which is 15b's point.
+  Disposition: INCORPORATE (PREMISE-229), narrowed; "grows without bound" excluded; lever left open.
+  Reasoning: MONITOR-636's pre-registered INCORPORATE branch (peer-reviewed/measured evidence, or in-house backlog data) is met in narrowed form: peer-reviewed analogue (Sinsky 2024, abstract) plus the in-house record count. The narrowed statement is what neither direction disputes. Confidence Moderate because all literature is analogical and mostly abstract/snippet-level.
+  Consistency check: PREMISE-165, -183, -100; REVISE-516, -517. No conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: PRESUMPTION-1101 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  What would change it: a direct measurement showing an agent escalation queue is safely self-clearing without any absence policy → re-open (monthly 15d re-check, due 2026-11-01).
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1101_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1101_retrigger-2026-10-12_against.md
+
+DISPOSITION-1072:
+  Date: 2026-10-12 | Item: PRESUMPTION-983 comparative limb (MONITOR-609, cycle 3) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Weak-to-Moderate) | 15b: CHALLENGED (Moderate-Strong)
+  Net assessment: The human evidence base the limb leaned on is undecided after publication-bias correction (Maier 2022, full text). The agent-side evidence from both directions fits ADDRESSING/PRIVILEGE (PREMISE-164) rather than placement: agents follow instructions in files their procedure loads (Gloaguen) and are trained to deprioritise instructions embedded in data (Wallace).
+  Disposition: REVISE (attached to REVISE-469; no separate flag minted) | Urgency: Medium (inherits)
+  Reasoning: Presumption with Moderate-Strong challenge and Weak-to-Moderate support; heuristics lean REVISE. REVISE-469 already owns the deciding stratification and its pre-registered prediction; attaching adds a PRIVILEGE column, bars importing the +31.8 pp effect, and warns against a data-embedded-instruction remedy (safety). Holding a separate MONITOR for a limb whose decider lives in REVISE-469 would be a refiling (PREMISE-183(2)) and would add to the AWAITING-TOM load (PREMISE-229).
+  What would change it: the REVISE-469 stratification showing a placement effect with addressing AND privilege held fixed → PREMISE-164 amendment (needs Tom).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 3) → 15c] | Original item: PRESUMPTION-983 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-983_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-983_retrigger-2026-10-12_against.md
+
+DISPOSITION-1073:
+  Date: 2026-10-12 | Item: ASSUMPTION-1682 (MONITOR-617, cycle 1) | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong, restated form) | 15b: PARTIALLY-CHALLENGED (Moderate, vs original and vs "power clause")
+  Net assessment: Both directions converge on necessary-not-sufficient. 15a supplies a regulatory statement read directly (ICH E10 §1.5); 15b sharpens the remedy (power is the weakest sensitivity form; require a pre-stated smallest effect and data-based discrimination, else INCONCLUSIVE). Dienes 2014 was cited by both and is counted once (PREMISE-226: shared retrieval, abstract-level).
+  Disposition: INCORPORATE (PREMISE-230), restated form with 15b's refinement written in.
+  Reasoning: MONITOR-617's pre-registered branch ("tip to INCORPORATE if restated as necessary-not-sufficient with a sensitivity requirement; no REVISE pressure") fired. 15b's challenge is to the original wording and to the power-only remedy, both excluded from the premise.
+  Consistency check: PREMISE-078, -100, -124, -136; REVISE-515. No conflict.
+  Not applied: relabelling FINDING-091 (recommendation to 14a/registers).
+  What would change it: evidence that data-based sensitivity statements cannot be produced for one-off estate findings (would weaken clause 2 to "or INCONCLUSIVE by default").
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: ASSUMPTION-1682 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1682_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1682_retrigger-2026-10-12_against.md
+
+DISPOSITION-1074:
+  Date: 2026-10-12 | Item: ASSUMPTION-1684 (MONITOR-618, cycle 1) | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate, conditional form only; NO-SUPPORT for stated form) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The auditing carry-forward regime is the shared core of both returns. 15b read ISA 330 ¶13–15 in full; 15a reached PCAOB AS 2201 benchmarking only via a secondary article. They are counted as one reading (PREMISE-226). That reading permits carry-forward only with affirmative no-change evidence, a horizon, rotation, and exclusion of high-risk items. The stated assumption (mechanical checks alone suffice) has no support. The 8c58d8ca sweep met none of the conditions. Porter 1995 (author summary) adds that general checklists do not out-detect ad hoc reading.
+  Disposition: REVISE (attached to REVISE-493; no separate flag minted) | Urgency: High (inherits)
+  Reasoning: MONITOR-618's pre-registered REVISE branch was taken one cycle early. The literature is discharged at this reach. The remaining decider is Tom's adoption of REVISE-493. The attachment turns that flag's spot-check into concrete conditions: content hash, every-third-cycle horizon, rotating sample, high-risk exclusion, and a "structural pass" label.
+  What would change it: Tom adopts (a)–(c) in the REVISE-493 attachment → conditional form INCORPORATE without further literature. An in-house sample showing zero failures among unchanged texts would also support the conditional form.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: ASSUMPTION-1684 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1684_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1684_retrigger-2026-10-12_against.md
+
+### SYSTEMIC-RISK (15b, High): silence read as evidence — 15c response
+Accepted. It is the same family as REVISE-515 and the 2026-09-14 instrument-fails-silently flag. It extends them to liveness and sensitivity. Applied without new process:
+  - PREMISE-230: nulls need sensitivity, else INCONCLUSIVE.
+  - PREMISE-229: reviewer silence is not a decision.
+  - MONITOR-688: auxiliary block for the loss condition.
+  - REVISE-493 attachment: a hash check before carry-forward.
+The estate-wide liveness + sensitivity rule is proposed as an attachment to REVISE-515 for Tom. Nothing new is minted.
+
+### Evidence-quality notes
+- Both searchers mostly read abstracts and snippets. Full texts read: ICH E10 §1.5 (15a); ASA 330 ¶12–16, Maier 2022 and St Quinton & Trafimow 2025 (15b); op het Veld & de Bruijn 2008 (15a). Weighted accordingly.
+- Shared sources counted once (PREMISE-226): Dienes 2014 (1682), and the audit carry-forward regime (1684: PCAOB AS 2201 via secondary vs ISA 330 read in full).
+- 15a's unverified metabolism report was checked directly by 15c. The file mtime and _meta.generated are both 2026-10-08 05:03 -0400. The report is confirmed for a single regeneration only.
+- assumptions.md, presumptions.md and for_lit_search.md were not edited (tags are the orchestrator's).
+
+Running totals after this run: PREMISE-230 | MONITOR-688 | REVISE-517 (no new flag; 3 attachments: REVISE-469, -493, -515) | DISPOSITION-1074.
+Distribution (5 items): 2 INCORPORATE (PREMISE-229 ← PRESUMPTION-1101; PREMISE-230 ← ASSUMPTION-1682), 1 MONITOR (MONITOR-688 ← PRESUMPTION-991), 2 REVISE (PRESUMPTION-983 → REVISE-469; ASSUMPTION-1684 → REVISE-493).
+Proposed, not applied (needs Tom): amend PREMISE-078 so that "exhaustive specification" explicitly includes pre-registered auxiliaries, above all instrument liveness and sensitivity (from 991/15b). PREMISE-078's text is unchanged.
+
+
+## 15a/15b/15c RUN — 2026-10-13 (scheduled c2a2 lit-search pipeline; NEW 14a/14b intake of 2026-10-12, 6 literature items: ASSUMPTION-1778, ASSUMPTION-1780, PRESUMPTION-1124, PRESUMPTION-1125, PRESUMPTION-1127, PRESUMPTION-1128)
+15a and 15b ran as separate subagents in parallel; neither read the other's directory. 15b filed SYSTEMIC-RISK (High): remedy-is-another-proxy (1778, 1780, 1124, 1125, 1127) → wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-13_remedy-is-another-proxy_1778-1780-1124-1125-1127.md
+
+### 15c dispositions (2026-10-13)
+DISPOSITION-1075:
+  Date: 2026-10-13 | Item: ASSUMPTION-1778 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Both agree an existence check cannot see staleness (Huang et al. 2017 gray failure; freshness-SLO practice). 15b shows the proposed remedy is the same kind of proxy one level up: Panorama (Huang et al. 2018) heartbeat-style detectors caught 1 of 15 gray failures within 300 s.
+  Disposition: INCORPORATE (PREMISE-231), restated form
+  Reasoning: The diagnostic half is well supported and uncontested. The remedy half ('heartbeats / dead-man switches prevent it') is not incorporated as stated; 15b's challenge is folded in as the second clause. Overlaps PREMISE-208 and PREMISE-221 but adds the explicit three-rung ladder.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1778 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1778_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1778_against.md
+
+DISPOSITION-1076:
+  Date: 2026-10-13 | Item: PRESUMPTION-1124 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED (Strong as principle; Moderate for software monitoring) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Surrogate divergence is well established (Fleming & DeMets 1996; CAST/Echt 1991; Manheim & Garrabrant 2018). 15b does not dispute divergence; it shows one-time validation decays once the proxy is optimised against (Prasad et al. 2015: 52% of surrogate–survival correlations weak).
+  Disposition: INCORPORATE (PREMISE-232), restated form
+  Reasoning: Strong support plus a challenge that sharpens rather than refutes. The restated premise carries 15b's re-validation clause and is the direct remedy for today's SYSTEMIC-RISK flag (remedy-is-another-proxy). Presumption: weight given to the fact the estate was relying on proxies without naming targets.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1124 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1124_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1124_against.md
+
+DISPOSITION-1077:
+  Date: 2026-10-13 | Item: ASSUMPTION-1780 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong empirical; Moderate for carding) | 15b: PARTIALLY-CHALLENGED (Moderate, both directions)
+  Net assessment: Abstracts frequently misstate or overstate the paper (Pitkin 1999; Boutron 2010; Cochrane MR000005; conference abstracts differ from full paper in ~80% of pairs). 15b's steelman: abstracts are adequate for deciding what to read, unreliable as a record of claims. Evidence is mostly biomedical; Thelwall 2026 finds less overstatement in humanities/social science.
+  Disposition: INCORPORATE (PREMISE-233), scoped form
+  Reasoning: Both searchers converge on the same tiered reading. Confidence held at Moderate because of domain transfer (biomedical → C2A2's philosophy/consciousness corpus). Talk outlines were not specifically searched by either agent; the premise is scoped to abstracts.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1780 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1780_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1780_against.md
+
+DISPOSITION-1078:
+  Date: 2026-10-13 | Item: PRESUMPTION-1125 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate; against the word "erases")
+  Net assessment: Both searchers independently found Cymek & Manzey 2022: a second checker who sees the first verdict reduces effort, but the pair still beats one checker. Knight & Leveson 1986 and beta-factor common-cause models support degraded, not zero, gain. Shared source counted once (PREMISE-226).
+  Disposition: INCORPORATE (PREMISE-234), restated form; the strong form ("erases") is NOT incorporated
+  Reasoning: The presumption as phrased is contradicted at its strong word, but both sides agree on the weaker form, and 15b adds the practically important clause (a same-model re-check is not an independent vote). Consistent with PREMISE-125, -166, -222.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1125 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1125_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1125_against.md
+
+DISPOSITION-1079:
+  Date: 2026-10-13 | Item: PRESUMPTION-1127 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED (Strong for the harm; Moderate for triage/delay; Weak for auto-remediation) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Repeated non-actionable alerts dull response (Drew 2014; Bonafide 2015). The remedies are weakly evidenced: Paine et al. 2016 'promising but unproven'; Winters et al. 2018 (no agreed definition); reductions are scored by alert counts, not faults caught, and suppression/auto-remediation can turn a visible fault silent.
+  Disposition: MONITOR (MONITOR-689)
+  Reasoning: Strong on the problem, contested on the policy the presumption is really about. Premature INCORPORATE of a suppression or auto-remediation policy is hard to reverse and conflicts with PREMISE-229/230 (silence is not evidence). Joins MONITOR-687 (ASSUMPTION-1766: 'fewer AND specific').
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1127 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1127_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1127_against.md
+
+DISPOSITION-1080:
+  Date: 2026-10-13 | Item: PRESUMPTION-1128 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Hedge loss and citation distortion are documented (Greenberg 2009; Horn 2001; Jergas & Baethge 2015: 8–12% major quotation errors; Sumner 2014). 15b: loss is step-specific, not inherent; explicit caveats in press releases carried into news with no loss of uptake (Sumner et al. 2016); Greenberg rests on one citation network.
+  Disposition: INCORPORATE (PREMISE-235), restated form
+  Reasoning: Support is solid and the challenge narrows where loss happens. Both directions favour C2A2's existing practice of attaching explicit labels to claims. This corroborates and narrows PREMISE-188 rather than adding a new rule; a merge into PREMISE-188 is proposed for Tom, not applied.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1128 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1128_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1128_against.md
+
+### SYSTEMIC-RISK (15b, High): remedy-is-another-proxy — 15c response
+Accepted. Applied as PREMISE-232 (named target + standing agreement sample) and as the second clause of PREMISE-231. No new process minted. It extends the 2026-10-12 'silence read as evidence' flag.
+
+### Evidence-quality notes
+- Mostly search summaries and abstracts. Full text: Thelwall 2026 (15a); Huang et al. 2017 (15b). Shared sources counted once: Cymek & Manzey 2022 (1125), Fleming & DeMets 1996 (1124), Pitkin 1999 / Boutron 2010 (1780), Huang 2017 (1778).
+- 15a corrected details in the queued questions: Drew 2014 figure is 88.8% (annotated arrhythmia subset), not 72%; 'Welch 2011' is likely Whalen et al.; 'diversion' is not a Greenberg 2009 term.
+- Unverified, not relied on: an LLM-agent replication of Knight & Leveson (blog snippet); 'Bott et al. 2019' authorship; Lewandowska 2020; Kristensen critique.
+- Talk outlines (part of ASSUMPTION-1780) were not specifically searched; PREMISE-233 is scoped to abstracts.
+- Infra note: the sandbox scratch disk was full (/sessions 100%); the 15c apply script was run from the outputs mount instead. No register was partially written (verified by cmp against .bak.20261013-pre-15pipeline before the successful run).
+
+Running totals after this run: PREMISE-235 | MONITOR-689 | REVISE-517 (no new flag) | DISPOSITION-1080.
+Distribution (6 items): 5 INCORPORATE, all in restated/scoped form that absorbs 15b's challenge (PREMISE-231 ← ASSUMPTION-1778; -232 ← PRESUMPTION-1124; -233 ← ASSUMPTION-1780; -234 ← PRESUMPTION-1125; -235 ← PRESUMPTION-1128); 1 MONITOR (MONITOR-689 ← PRESUMPTION-1127); 0 REVISE.
+Proposed, not applied (needs Tom): merge PREMISE-235 into PREMISE-188; consider whether PREMISE-231 should supersede the overlapping parts of PREMISE-208/-221.

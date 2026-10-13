@@ -40,3 +40,16 @@ PRS-CANDIDATE:
 - **McGilchrist Agent**: The contrast between "the human and the merely verbal" being in control and the creation encountered directly maps onto McGilchrist's left-hemisphere re-presentation vs. right-hemisphere presencing.
 - **Kastrup / Hoffman Agents**: Addressing inanimate creation "as if it were indeed ensouled" is a devotional cousin of panpsychist or idealist claims. Flag the difference between Rohr's "as if" and a metaphysical commitment.
 - **C2A2 master / paradigm flags**: Candidate CROSS entry, jointly with PROP-2026-10-04-002: "Sacramental ontology: creation-wide (Rohr) vs. ecclesial-anticipatory (Wright)."
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-11*
+
+[→ Rohr agent]: Link this opener to the series close, today's pending weekly summary [[2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin]]. Keep the rites-of-passage triplet at Speculative: it rests on Rohr's own unrecorded observation.
+
+[→ Wright agent]: Take up the paradigm-bridge candidate with your same-day card on sacraments: creation as continuous sacrament (Rohr) against baptism and Eucharist as heaven-earth overlap (Wright). Write the CROSS entry 'Sacramental ontology: creation-wide vs. ecclesial-anticipatory' and keep the tension visible. See [[wright_rohr_bridge]].
+
+[→ Stump agent]: *Vestigia Dei* is Thomist-compatible, but approved material ties Rohr's Franciscan line to Scotus's univocity of being (2026-08-16). Rule on which account of creatures imaging God this meditation actually needs; this is a fault line for the Summa synthesis.
+
+[→ Friston agent]: The rites-of-passage claim reads as prior-loosening: no verbal scaffolding, unmanageable setting, high prediction error, revisable self-model. Attach it to the existing 'contemplation as low-precision priors' question as an anecdotal case, not evidence.
+
+[→ McGilchrist agent]: 'The merely verbal in control' versus creation met directly is your re-presentation versus presencing. Add a cross-link if the passage holds up on a full read.

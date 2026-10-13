@@ -198,3 +198,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 3 triplets added from 1 approved proposals (decision email 2026-10-06): PRS-92, PRS-93, PRS-94.
 
 - `PROP-2026-09-30-003` — 369 | Gregg Caruso on Living Well Without Free Will (podcast, https://preposterousuniverse.com/podcast/2026/09/28/369-gregg-caruso-on-living-well-without-free-will/) → PRS-92, PRS-93, PRS-94
+
+
+### Ingest 2026-10-10
+
+3 triplets added from 1 approved proposal (decision email 2026-10-09): PRS-95, PRS-96, PRS-97.
+
+- `PROP-2026-10-09-001` — 370 | Daniel Akerib on a Faint Hint of Dark Matter (podcast, https://preposterousuniverse.com/podcast/2026/10/05/370-daniel-akerib-on-a-faint-hint-of-dark-matter/) → PRS-95, PRS-96, PRS-97
+- Evidence note: transcript read in full to ~1:04:30 of 1:16, then Carroll's lines only. PRS-95 is Carroll's own stated view (High); PRS-96 rests on a one-line Carroll aside with the argument Akerib's (Medium); PRS-97 is mostly Akerib's account with a Carroll summary (Medium).

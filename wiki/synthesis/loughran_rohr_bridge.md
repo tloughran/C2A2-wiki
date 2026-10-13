@@ -40,3 +40,18 @@ That is the form every tradition's claims must take to be admissible as evidence
 **Open question the wiki cannot yet answer:** What is the observable of non-hostility in Rung-2 interaction data? "Not against us" is a disposition, and the instrument records behaviour. Uncharitable reading, refusal to state an opponent's position in a form they would accept, and argument aimed at an audience rather than an interlocutor are candidate proxies — but each is also compatible with ordinary vigorous disagreement, which the design is meant to protect. Until the discrimination is specified, the criterion is a good principle and not yet a measurement, and it should be recorded as the former.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_faith-with-doubt-weekly-summary]]
+
+---
+
+## Finitude as the place of union
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md` (0 backlinks).
+
+**Why it sits here:** Finley's weekly summary of Rohr's Thérèse series: the little way, maturity through accepted limitation.
+
+**Synthesis claim.** If union is reached through limitation rather than by overcoming it, then a finite perspective is not a defect to be corrected but the site of participation. That is the Summa 2026 central theme stated from the contemplative side.
+
+**Open question the wiki cannot yet answer:** If finitude is the site of union, what in the C2A2 design keeps each tradition's limited perspective from being averaged away?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-04_rohr_therese-way-of-love-weekly-summary]]

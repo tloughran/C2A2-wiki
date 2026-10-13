@@ -23700,5 +23700,33 @@
   "card": "PROP-2026-10-08-001",
   "text": "MacIntyre:: this is empirical support for the claim that the conditions for love-as-event are partly formed by tradition, which bears on MacIntyre's thesis that practices are embedded in traditions.",
   "action": ""
+ },
+ {
+  "a": "Carroll",
+  "b": "Levin",
+  "date": "2026-10-09",
+  "source_date": "2026-10-05",
+  "strength": "Unlabeled",
+  "weight": 1.5,
+  "nature": "card resonance",
+  "source": "card",
+  "sid": "PROP-2026-10-09-001",
+  "card": "PROP-2026-10-09-001",
+  "text": "Levin \"research program\" framing.: The WIMP program's \"expand the portfolio\" move is a live case of a program protecting its hard core while widening its protective belt. That is a MacIntyre/Lakatos test of progressive vs. degenerating problem shifts, and it speaks to Tom's PRS progress-counting.",
+  "action": ""
+ },
+ {
+  "a": "Arkani-Hamed",
+  "b": "Carroll",
+  "date": "2026-10-09",
+  "source_date": "2026-10-05",
+  "strength": "Speculative",
+  "weight": 1.0,
+  "nature": "card resonance",
+  "source": "card",
+  "sid": "PROP-2026-10-09-001",
+  "card": "PROP-2026-10-09-001",
+  "text": "Arkani-Hamed.: The hierarchy problem and naturalness drove the WIMP expectation. Arkani-Hamed's flavor and naturalness work (\"The Very Nearly Right Theory of Flavor,\" PROP-2026-07-31-002) sits in the same argument space. A ~TeV weakly interacting particle would bear directly on his program. Speculative until more events arrive.",
+  "action": ""
  }
 ]

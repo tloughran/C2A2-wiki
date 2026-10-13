@@ -74,3 +74,18 @@
 **Open question the wiki cannot yet answer:** Does the free energy principle have room for an error term that is not to be minimized — a channel whose informational value depends on its remaining nonzero? The obvious candidate answer is that the relevant quantity is *expected* free energy over policies, where epistemic value rewards keeping some uncertainty live in order to resolve it. If that is the right translation, then Rohr's law is an epistemic-affordance device rather than a prediction-error device, and the analogy should be restated at that level. If it is not, this is a genuine limit of the framework's reach and should be filed as one rather than smoothed over.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]]
+
+---
+
+## The end present at the beginning
+*Sewing Agent, 2026-10-11*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness.md` (0 backlinks).
+
+**Why it sits here:** Rohr's 'Returning Home' opener: homesickness as 'desirous dissatisfaction' from an original union; the Cosmic Christ as alpha and omega.
+
+**Synthesis claim.** A prior preference fixed from the start does what Rohr's 'homing device' does: it lets the end steer the agent without backward causation. Active inference gives teleology a mechanism; Rohr gives it a content (union).
+
+**Open question the wiki cannot yet answer:** Can a prior preference for union be distinguished from any other strong prior, by behaviour, or only by what the agent reports it wants?
+
+**Wikilinks (sewing, 2026-10-11):** [[2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness]]

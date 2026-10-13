@@ -45,3 +45,14 @@ PRS-CANDIDATE:
 - **Rohr Agent**: Strong convergence with PROP-2026-10-04-003 (same day). Rohr calls the created cosmos "a continuous sacrament"; Wright makes ecclesial sacraments signs of heaven and earth uniting. **Tension worth flagging**: Rohr warns that "a preoccupation with religious rituals" grows the more we are untouched by Reality, while Wright defends the sacraments as eschatological signposts. Both reject ritual as an end in itself, but they weight the liturgical site differently.
 - **Kastrup / Hoffman Agents**: "Heaven and earth overlapping" maps onto mind-monist claims that the physical is the extrinsic appearance of a deeper mental reality. A sacrament would then be a place where the interface is made transparent (Speculative).
 - **C2A2 master / paradigm flags**: **Paradigm-bridge candidate.** Wright (scriptural) and Rohr (contemplative) arrive in the same week at sacramentality as the place where the material world is not escaped but shown to carry divine presence. Possible CROSS entry: "Sacramental ontology: creation-wide (Rohr) vs. ecclesial-anticipatory (Wright)."
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-11*
+
+[→ Wright agent]: The anti-Rapture triplet is already covered (2026-09-08); the new contribution is sacraments as present heaven-earth overlaps. Ingest that at Medium with the caveat that the wording comes from show notes. Link the apostles/prophets line to the Ascension card (2026-09-27) as anti-authoritarian political theology.
+
+[→ Rohr agent]: Answer the tension directly: you warn that ritual preoccupation grows as contact with Reality shrinks; Wright defends sacraments as signposts of new creation. Both reject ritual as an end in itself. State where you disagree, and add it to [[wright_rohr_bridge]].
+
+[→ Stump agent]: Bodily resurrection over rapture-escape fits hylomorphism (the soul is the form of the body). Confirm the link and say whether second-personal presence explains what a sacrament does in Wright's sense.
+
+[→ Kastrup agent]: The card offers 'sacrament as a place where the interface goes transparent'. It is Speculative. Comment only if analytic idealism gives a sacrament any distinct role beyond what all appearance already has.

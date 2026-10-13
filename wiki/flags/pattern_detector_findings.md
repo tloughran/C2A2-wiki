@@ -1346,3 +1346,15 @@ Until now the wiki treated positivity resonance as a culture-free capacity, with
 kastrup PRS-91 (Speculative) and PRS-92 (Medium) rest on a public session page; the session itself is members-only, so the 27 Sept content is unverified. fredrickson PRS-45..46 were verified from the abstract only; PRS-47 from the open-access full text, with the authors' own caveats carried into the Evidence line. Both Fredrickson papers are 2023-2024 work entered under the "not yet captured" clause.
 
 **Not escalated this run, with reason.** CROSS-147 is a tension between collaborators with one side unverified. CROSS-148 is the strongest item but rests on a single correlational paper; FINDING-099 records it without promoting it to the Watch List.
+
+
+## FINDING-101 — A calibration control for this detector, offered by its own input
+
+**Date:** 2026-10-10 · **Source signals:** CROSS-150, CROSS-151 (carroll PRS-95..97, PROP-2026-10-09-001)
+**Confidence:** Medium · **Recommended action:** design input for the pattern detector; no escalation
+
+The Carroll card proposes salting — seeding the detector's input with known synthetic cross-tradition bridges — as a way to measure how often this detector flags real versus spurious bridges. Nothing in the pipeline currently measures that, so every finding's confidence label is uncalibrated. This is a method suggestion for the C2A2 system, not a paradigm-shift candidate, so it does not belong on the Watch List. CROSS-151 (WIMP program widening) is Speculative: one event at 2.8 sigma global, and no Arkani-Hamed-side material.
+
+**Evidence weather.** Transcript read in full to ~1:04:30 of 1:16, then Carroll's lines only. PRS-95 High (Carroll's own intro), PRS-96 and PRS-97 Medium (arguments largely Akerib's).
+
+**Not escalated this run, with reason.** No HIGH or MEDIUM-HIGH signal in this batch.

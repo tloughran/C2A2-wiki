@@ -16080,3 +16080,78 @@ REVISE-514:
     - Separate fetch caches or sessions per direction.
     - Per-direction required venue lists when a queue block names a single owed literature.
     - A per-item URL log so that 15c can compute source overlap before counting agreement.
+
+REVISE-515:
+  Date: 2026-10-10 | Source: DISPOSITION-1062 (+ DISPOSITION-1064 attached) (15c) | Items: PRESUMPTION-1115; PRESUMPTION-1118 (PRESUMPTION (unstated))
+  What is at risk: Every negative or all-clear the estate reports (proposal counts, scheduler health, walk-note/walk-chat detection, morning digest 'healthy').
+  Recommended action: One shared output rule. A negative or OK result states its coverage in the same token (units reached / claimed); anything not reached is NOT-INSPECTED (non-alerting) and never counted as a negative. UNKNOWN is kept for checks that ran and failed. No probability modelling. REVISE-504 and REVISE-510 are instances.
+  Urgency: High
+  Status: AWAITING-TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1115 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for|against/PRESUMPTION-1115_*.md ; PRESUMPTION-1118_*.md
+
+REVISE-516:
+  Date: 2026-10-10 | Source: DISPOSITION-1063 (15c) | Item: PRESUMPTION-1117 (PRESUMPTION (unstated))
+  What is at risk: Task-spec authority across scheduled tasks. Rules justified 'per precedent' (lit batch rule, lock convention, move-not-delete, walk-chat fallback, NO_SESSION_TODAY handling). OPEN-264; REVISE-502.
+  Recommended action: A STANDING-PRACTICES register. Runs acting on precedent cite or add an entry, marked UNRATIFIED. Tom ratifies, rejects or folds entries into task text in a periodic batch review. Recurrence never confers authority. No per-run gate (resilience-engineering evidence on clutter).
+  Urgency: Medium
+  Status: AWAITING-TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1117 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1117_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1117_against.md
+
+REVISE-517:
+  Date: 2026-10-11 | Source: DISPOSITION-1068 (15c) | Item: PRESUMPTION-1120 (PRESUMPTION (unstated — surfaced by inference))
+  What is at risk: Intake consistency across proposal-writing jobs (wiki daily run vs Wolfram agent); reviewer load; speculative items approved without the deferred check. OPEN-265; ASSUMPTION-1768.
+  Recommended action: Each proposal-writing job declares its evidential threshold in its task text (thresholds may differ by job, per GRADE). Unverifiable-but-relevant items go to one labelled lane (e.g. UNVERIFIED-LEAD) that is never counted as a proposal. A check deferred to the reviewer is recorded as NOT-DONE until the reviewer marks it done. Which threshold each job uses is Tom's call (ASSUMPTION-1768).
+  Urgency: Medium
+  Status: AWAITING-TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1120 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1120_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1120_against.md
+
+REVISE-516: [ATTACHMENT 2026-10-11, DISPOSITION-1069 ← PRESUMPTION-1121] Put a plain uptake line at the top of the batch-review list (flags raised / actioned since last review; age of oldest unactioned). Do not throttle or auto-escalate on it (15b: ambiguous and gameable). 15b SYSTEMIC-RISK suggests one check outside both the pipeline and Tom's queue (e.g. periodic blind audit sample); recorded for Tom, not minted. Urgency raised to High.
+
+# ==== 2026-10-12 15c — attachments (append-only; entries above not edited; no new REVISE number minted) ====
+
+REVISE-469: [ATTACHMENT 2026-10-12, DISPOSITION-1072 ← PRESUMPTION-983 comparative limb; closes MONITOR-609]
+  Evidence this cycle:
+    - 15b: Maier et al. 2022 PNAS 119(31):e2200300119 [full text incl. Table 1]. After publication-bias correction, "structure" nudges (defaults, effort reduction, the class co-location belongs to) fall from d=0.58 to 0.12, evidence UNDECIDED. Reminders fall to 0.01, evidence AGAINST.
+    - 15b: DellaVigna & Linos 2022 Econometrica [abstract]. Effects at scale are about 1/6 of published ones.
+    - 15b: Wallace et al. 2024 arXiv:2404.13208 [abstract]. Models are trained to deprioritise instructions embedded in data.
+    - 15a: Gloaguen et al. 2026 arXiv:2602.11988 [abstract]. Agents follow instructions in context files they LOAD.
+    - 15a: AgentDojo 2024 and He et al. 2024 [snippets]. Agents act on in-data imperatives at framing-sensitive, model-dependent rates.
+  15c reading: both directions' agent-side evidence fits ADDRESSING/PRIVILEGE (PREMISE-164) better than PLACEMENT. A context file the agent's procedure loads is addressed. A failing status row is not. This is consistent with REVISE-469's pre-registered prediction; it does not test it.
+  Added to the recommended action (for Tom):
+    (1) Add a fifth column to the four-way stratification: PRIVILEGE. Does the executing agent's own task prompt name that artefact as a place to find runnable checks?
+    (2) Do not import Mehta 2022's +31.8 pp as an expected effect size.
+    (3) Do not adopt any remedy that teaches agents to execute instructions found inside data artefacts. It runs against instruction-hierarchy training and is a safety regression.
+  The NOVELTY residue (no study compares a peer agent's in-path instruction with the same instruction in prose, addressing held fixed) is recorded here; it is not held open separately.
+  Urgency: Medium (unchanged). Status: AWAITING TOM (unchanged).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 3) → 15c] | Original item: PRESUMPTION-983 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-983_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-983_retrigger-2026-10-12_against.md
+
+REVISE-493: [ATTACHMENT 2026-10-12, DISPOSITION-1074 ← ASSUMPTION-1684; closes MONITOR-618]
+  Evidence this cycle:
+    - Carry-forward is codified in auditing, but only under conditions. Main source: ASA/ISA 330 ¶13–15 [15b, full text]. Supporting: PCAOB AS 2201 App. B benchmarking [15a, via op het Veld & de Bruijn 2008, Compact 2008/3, read in full; PCAOB primary NOT read]. Both describe the same carry-forward regime; counted as one reading (PREMISE-226).
+    - Rothermel & Harrold 1997 [snippet]: safe regression-test selection depends on knowing what changed.
+    - Porter, Votta & Basili 1995 [author summary]: checklist reviewers were no more effective than ad hoc reviewers.
+  The stated assumption (mechanical checks alone keep pass status) has NO support. The conditional form is supported. The 8c58d8ca sweep met none of the conditions.
+  Added to the recommended action (for Tom), as concrete conditions for any carry-forward of a QC pass:
+    (a) Record a content hash at full review. "Unchanged since full review" is the FIRST mechanical check; any change triggers a full re-read.
+    (b) Set a carry-forward horizon: a full re-read at least every third QC cycle (ISA 330 ¶14).
+    (c) Full re-read a rotating random sample on every sweep. This is the 1-in-10 spot-check already proposed, and it also produces the owed in-house measure (n and failures, stratified changed vs unchanged).
+    (d) No carry-forward for high-risk texts (open escalations, length flags).
+    (e) Label such passes "structural pass (carried from full review YYYY-MM-DD, hash ok)".
+  If Tom adopts (a)–(c), the conditional form becomes an INCORPORATE candidate without further literature.
+  Note on timing: MONITOR-618's exit said "if not adopted within 2 cycles, REVISE". This is cycle 1. The branch was taken early because the literature limb is now discharged at this pipeline's reach, the only remaining decider is Tom's adoption of this flag, and a second MONITOR cycle would be a refiling (PREMISE-183(2)).
+  Urgency: High (inherits). Status: AWAITING TOM (unchanged).
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: ASSUMPTION-1684 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1684_retrigger-2026-10-12_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1684_retrigger-2026-10-12_against.md
+
+REVISE-515: [ATTACHMENT 2026-10-12, 15c response to SYSTEMIC-RISK-FLAG_2026-10-12_silence-read-as-evidence (15b, High); items 1682, 1684, 991, 1101]
+  The flag is the same family as REVISE-515 (coverage on negatives) and the 2026-09-14 instrument-fails-silently flag. It extends them from coverage to LIVENESS and SENSITIVITY.
+  Proposed addition to REVISE-515's single output rule (for Tom): every "nothing found / no change / no response" reading states, in the same token:
+    (a) channel liveness over the window;
+    (b) sensitivity, i.e. the smallest event it would have caught (PREMISE-230).
+  A reading lacking either is INCONCLUSIVE, not NULL/PASS/HOLD.
+  Already applied this run without new process: PREMISE-230 (nulls); PREMISE-229 (reviewer silence is not a decision); MONITOR-688's auxiliary block (991); the REVISE-493 hash check (1684).
+  The flag's suggestion that 13 and 15c check new findings for these two fields is recorded for Tom, not minted.

@@ -25397,3 +25397,969 @@ ITEM: PRESUMPTION-1114 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-10-04 — empirica
 **Backups:** *.bak.20261009-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
 **Backlog remaining (fail loud):** 132 bare literature-lane items before this run; 127 remain (120 from 2026-07, 7 from 2026-08). Not touched.
 **Independence:** separate subagent contexts, same model family (cf. REVISE-488/REVISE-350); neither read the other's 10-09 files. Fetch failures: 15a 3/6, 15b 5/10. Most evidence is search-result level; several cited works (Maier 1998, Neyman-Pearson framing, Choi/Hecht/Tayler bibliographic details) are unverified.
+
+## 2026-10-09 — 14a / 14b end-of-day intake (local; 15 sessions after the 10-08 local pass)
+
+Note to 15a/15b: test the stated question; context is in assumptions.md / presumptions.md. ASSUMPTION-1761 is a recurrence and is not queued. Choice of intake rule: see changelog/2026-10-09 (OPEN-264).
+
+ITEM: ASSUMPTION-1754 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1754
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Is move-not-delete the intended behaviour? If yes, amend the task text; if no, purge the moved pages.
+
+ITEM: ASSUMPTION-1755 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1755
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Record DB size per run. Confirm whether the copy-to-sandbox step, not DB growth alone, is the binding constraint; test 2b instead of predicting its failure.
+
+ITEM: ASSUMPTION-1756 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1756
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Confirm the playlist count and rule on disabling the task.
+
+ITEM: ASSUMPTION-1757 [QUEUED] [SEARCHED-15a: 2026-10-10] [SEARCHED-15b: 2026-10-10] [DISPOSITIONED-15c: 2026-10-10]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1757
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Question for literature: Is discounting correlated evidence to a single reading the right correction when two 'independent' reviewers share retrieval? (Evidence dependence; double counting in evidence synthesis; correlated-source corrections.)
+
+ITEM: ASSUMPTION-1758 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1758
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Downstream readers infer 14a/14b state from file mtimes and the cloud stub. Should 14a/14b write a machine-readable run status (RAN-EXTRACTED / RAN-NO-INTAKE / BLOCKED) that readers use instead?
+
+ITEM: ASSUMPTION-1759 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1759
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Attach the Routines connector to scheduler health, or accept the gap explicitly. Reconcile the cloud-moved list against local sessions that still fire.
+
+ITEM: ASSUMPTION-1760 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1760
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Should the system-health verdict be scoped to what it actually inspected?
+
+ITEM: ASSUMPTION-1762 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1762
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Re-run the Arkani-Hamed check against the arXiv author listing for the window; fix the path in the task text.
+
+ITEM: ASSUMPTION-1763 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1763
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Is posting to the most recent walk-titled chat the intended fallback? Note that the local twin already runs on the Mac with session_info; the gap is the intake rule, not location (see ASSUMPTION-1758).
+
+ITEM: ASSUMPTION-1764 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1764
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Close the Gmail-reconnected watch item if resolved; rule on splitting the watch list.
+
+ITEM: PRESUMPTION-1115 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-10-10] [SEARCHED-15b: 2026-10-10] [DISPOSITIONED-15c: 2026-10-10]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1115
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Do non-detections by partial-coverage instruments warrant 'absent' conclusions, and what minimal coverage statement makes them interpretable?
+
+ITEM: PRESUMPTION-1116 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1116
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Tom to rule on the 14a/14b intake rule (OPEN-264). No literature search owed.
+
+ITEM: PRESUMPTION-1117 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-10-10] [SEARCHED-15b: 2026-10-10] [DISPOSITIONED-15c: 2026-10-10]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1117
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Presumption under test: When do repeated unattended deviations become de facto policy, and what review step prevents silent drift?
+
+ITEM: PRESUMPTION-1118 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-10-10] [SEARCHED-15b: 2026-10-10] [DISPOSITIONED-15c: 2026-10-10]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1118
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Should health verdicts carry explicit scope and an UNKNOWN state for uninspected components?
+
+ITEM: PRESUMPTION-1119 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-10-10] [SEARCHED-15b: 2026-10-10] [DISPOSITIONED-15c: 2026-10-10]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1119
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-09 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Does post-hoc normalisation of independent reviewers' outputs bias the record, and how should it be reported?
+
+<!-- 14a/14b intake 2026-10-10 (local): 12 items: 4 literature (ASSUMPTION-1766, -1769; PRESUMPTION-1120, -1121), 8 [IN-HOUSE]. 1770, 1774 not queued (recurrences). -->
+
+ITEM: ASSUMPTION-1765 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1765
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for in-house test: Should the per-run token budget rise, or the per-run scope shrink (fewer items / fewer searches per side)?
+
+ITEM: ASSUMPTION-1766 [QUEUED] [SEARCHED-15a: 2026-10-11] [SEARCHED-15b: 2026-10-11] [DISPOSITIONED-15c: 2026-10-11]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1766
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for literature: Does consolidating corrective rules (fewer, broader rules) reduce alert/rule fatigue in unattended or lightly-supervised pipelines? (Alarm fatigue; rule proliferation in safety management; checklist bloat.)
+
+ITEM: ASSUMPTION-1767 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1767
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for in-house test: Do separate 15a/15b sessions actually isolate retrieval (fetch cache, search backend), or only the conversation context?
+
+ITEM: ASSUMPTION-1768 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1768
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for in-house test: Which evidential threshold for writing a proposal is house policy: verified content only, or speculative proposals flagged for the reviewer?
+
+ITEM: ASSUMPTION-1769 [QUEUED] [SEARCHED-15a: 2026-10-11] [SEARCHED-15b: 2026-10-11] [DISPOSITIONED-15c: 2026-10-11]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1769
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for literature: Is seeding known-answer items (canaries, planted positives/negatives) a valid way to calibrate an automated pattern detector's confidence labels? (Seeded-fault testing; known-answer QC in annotation; calibration of classifiers.)
+
+ITEM: ASSUMPTION-1771 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1771
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for in-house test: Which fix (host run, partial copy, in-place read, vacuum) removes the sandbox-disk ceiling, and when will DB growth re-hit it?
+
+ITEM: ASSUMPTION-1772 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1772
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for in-house test: Attach the Routines connector to scheduler-health-check, or accept that 44 cloud routines go unwatched?
+
+ITEM: ASSUMPTION-1773 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1773
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Question for in-house test: Should the walk-chat fallback have a stop rule (e.g. after N days, post nowhere and say so)?
+
+ITEM: PRESUMPTION-1120 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-10-11] [SEARCHED-15b: 2026-10-11] [DISPOSITIONED-15c: 2026-10-11]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1120
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Should all proposal-writing agents share one explicit evidential threshold, and where should unverifiable-but-relevant items go?
+
+ITEM: PRESUMPTION-1121 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-10-11] [SEARCHED-15b: 2026-10-11] [DISPOSITIONED-15c: 2026-10-11]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1121
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Should an unattended pipeline measure reviewer uptake (flags actioned / flags raised) and throttle or escalate when uptake drops?
+
+ITEM: PRESUMPTION-1122 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1122
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Is a budget breach acceptable if disclosed, or must runs stop or split at the threshold?
+
+ITEM: PRESUMPTION-1123 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1123
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-10 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Which jobs depend on sandbox resources scaling with host data, and which will hit a limit next?
+<!-- 15a/15b/15c run 2026-10-11: 4 literature items from the 2026-10-10 intake searched and dispositioned (DISPOSITION-1066..1069). -->
+
+
+================================================================================
+## 2026-10-11 — 15d Periodic Monitor re-triggers (weekly cycle only; monthly does not fire on day 11)
+
+*15d re-trigger only; no evidence evaluated. Lanes follow 15c routing notes; nothing skipped.*
+
+### Literature lane (9) — for 15a/15b
+
+[PRESUMPTION] PRESUMPTION-983: (see MONITOR-609 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 3] [SEARCHED-15a: 2026-10-12] [SEARCHED-15b: 2026-10-12] [DISPOSITIONED-15c: 2026-10-12 -> REVISE (attached to REVISE-469; DISPOSITION-1072)]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 2 -> 3; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: unchanged — the four-way stratification named in REVISE-469.
+  Evidence trajectory: Supporting stable; Challenging stable; 09-28 fresh search found nothing on-point. No 15a/15b cycle since.
+
+[PRESUMPTION] PRESUMPTION-991: (see MONITOR-610 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 3] [SEARCHED-15a: 2026-10-12] [SEARCHED-15b: 2026-10-12] [DISPOSITIONED-15c: 2026-10-12 -> MONITOR (MONITOR-688; DISPOSITION-1070)]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 2 -> 3; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: unchanged — restoration of the metabolism snapshot (frozen since
+  Evidence trajectory: Supporting stable; Challenging stable; 09-28 fresh search found nothing on-point. No 15a/15b cycle since.
+
+[ASSUMPTION] ASSUMPTION-1682: (see MONITOR-617 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-12] [SEARCHED-15b: 2026-10-12] [DISPOSITIONED-15c: 2026-10-12 -> INCORPORATE (PREMISE-230; DISPOSITION-1073)]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Supported as a necessary condition; challenged as a sufficient one. Wording should carry a power/sensitivity clause. Would tip to INCORPORATE if restated as necessary-not-sufficient with a sensitivity requirement; no REVISE pressure.
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+[ASSUMPTION] ASSUMPTION-1684: (see MONITOR-618 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-12] [SEARCHED-15b: 2026-10-12] [DISPOSITIONED-15c: 2026-10-12 -> REVISE (attached to REVISE-493; DISPOSITION-1074)]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Neither direction has primary evidence; this is an untested premise, not a refuted one. Would change with a primary source on checklist-vs-holistic re-review efficacy, or an in-house measure: of texts that passed on mechanical checks alone after a full review, how many later failed a full re-review.
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+[ASSUMPTION] ASSUMPTION-1693: (see MONITOR-621 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Low
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Support is good but this run read search snippets and titles, not the papers; the 15c rule prefers MONITOR to a premature INCORPORATE. A grading heuristic of this kind is low stakes and recoverable. Would move to INCORPORATE after the Button 2013 and Nosek 2018 texts are confirmed in a later cycl...
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1099: (see MONITOR-634 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: A source or in-house test showing a shared run record with staleness detection catches failures that per-environment checks missed (INCORPORATE); evidence the record itself becomes the blind spot (REVISE).
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1100: (see MONITOR-635 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: An in-house measurement of a misleading status signal caused by attempt/state conflation (INCORPORATE), or a case showing a single result field suffices at this scale (REVISE/drop).
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1101: (see MONITOR-636 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-12] [SEARCHED-15b: 2026-10-12] [DISPOSITIONED-15c: 2026-10-12 -> INCORPORATE (PREMISE-229; DISPOSITION-1071)]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Peer-reviewed or measured evidence on HITL queue behaviour under reviewer absence; or in-house backlog data showing growth without a policy (INCORPORATE the refined form).
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1102: (see MONITOR-637 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Low
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: An in-house cost/latency measurement comparing adaptive vs fixed polling, or a source on idle-run cost in agent scheduling.
+  Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
+
+### Empirical / in-house lane (44) — no literature search owed; no runner assigned (ESCALATION 2)
+
+[PRESUMPTION] PRESUMPTION-414: (see MONITOR-403 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 5]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: HIGH
+  Cycle: 4 -> 5; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: unchanged from 2026-09-16 — run the named correlation (connectivity
+  Evidence trajectory: Supporting stable; Challenging stable; no new sources since 2026-09-16 (same PROXIMA paper). In-house correlation still not run.
+
+[ASSUMPTION] ASSUMPTION-1690: (see MONITOR-619 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Fact is well supported by today's vendor documentation, but the item's operational conclusion is time-sensitive and depends on in-house state (whether keep-warm/synthetic queries count and ran after 09-24). Not INCORPORATED because ASSUMPTION-434 is already open in the monitor queue and a prior R...
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1692: (see MONITOR-620 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Diversity of retrieved material demonstrably helps and pure redundancy does not, so the claim is plausible for the unshared half and doubtful for the shared half. Cost side is unmeasured. Would tip to REVISE if in-house overlap measurement shows the shared-core items produce no differing conclusi...
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1087: (see MONITOR-624 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Does any daily job report that other daily jobs failed to run? Measure: days between the 09-24 pause and first daily alarm.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1091: (see MONITOR-625 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Enumerate the execution surfaces that write to wiki/architecture/ and whether each output names its surface.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1093: (see MONITOR-626 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: For 09-25 to 09-28, compare local scheduler lastRunAt against dated artifacts per job; count jobs that 'didn't run' per scheduler but did write outputs.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1094: (see MONITOR-627 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Plot open-story.db size against sandbox free space; find the date the DB-dependent feeds stopped fitting.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1691: (see MONITOR-628 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Was the 09-24 pause of ~30 local jobs intentional? Who re-enabled them, and when? (OPEN-258)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1698: (see MONITOR-630 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Does the keep-warm ping keep the broker usable, and who tracks the free-tier exit condition?
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1699: (see MONITOR-631 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Add a run lock/already-running check to the lit pipeline; recover or re-run AGAINST for 1692/1693.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1703: (see MONITOR-632 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Which surface runs each task, and what watches the cloud-side tasks? (OPEN-257)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1707: (see MONITOR-633 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Reauthorize Gmail and sign in a browser for the scrape; add a human-input liveness alarm (OPEN-259).
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1709: (see MONITOR-638 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Add a standing-exception state to the QC flag so a held item is skipped until its files change.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1710: (see MONITOR-639 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Patch the five named prompts; the substitution each run makes is evidence the correct form is known.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1711: (see MONITOR-640 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Count reviewer triggers in the registry; normalise QC-log timestamps to one zone.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1712: (see MONITOR-641 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Separate 'last attempt' from 'feed state' in REFRESH_STATUS.md (append, with timestamp).
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1713: (see MONITOR-642 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Reconcile the cloud and local registries; the openstory.ui respawn count grew ~8,300 in a day.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1714: (see MONITOR-643 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Have the status report cite run timestamps, not presence at report time.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1716: (see MONITOR-644 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: One count source (ls inbox/proposals/pending) referenced by all tasks.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1718: (see MONITOR-645 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Read-before-write in the scrape; OPEN-259 liveness alarm.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1720: (see MONITOR-646 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Check whether the stalled weeklies are among the 32 cloud-migrated tasks.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1105: (see MONITOR-647 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: A log of actual 'significance' exceptions over a few cycles (count, direction, reason); evidence of bias direction → REVISE; a clean audit → INCORPORATE.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1730: (see MONITOR-648 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Low
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Evidence the keep-warm SELECT 1 actually prevents the pause (project not paused after >7 days of keep-warm runs, or Supabase support/docs statement) → INCORPORATE; a pause despite keep-warm → REVISE. Add an alert on paused state.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1721: (see MONITOR-649 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Check other days for concurrent lit-pipeline instances and whether a run lock exists. (Note: this 10-02 run found no lock file in architecture/.)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1722: (see MONITOR-650 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Re-run the four 09-30 items with the presumption stated explicitly (partly done 2026-10-01 in the concurrent-run conflict file).
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1724: (see MONITOR-651 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Resolve commit_check (committed 09:45Z) against run_stall (no transcript since 09-15) for the wiki daily run.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1725: (see MONITOR-652 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Establish the actual Gmail auth state, PROP-2026-09-02-002 status, and pending/ count on disk.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1727: (see MONITOR-653 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Count FINDING- headers in the master wiki and compare with the header's claimed 94.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1729: (see MONITOR-654 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Find what fills the sandbox disk, and why `QC log.md` has reached 8.5 MB.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1733: (see MONITOR-655 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: observed project state over >7 days with the bare SELECT 1 only (in-house), or a Supabase statement on what counts as activity. Priority: Medium | Cadence: Weekly
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1731: (see MONITOR-657 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Find why two lit-pipeline instances start (duplicate registry entry, cloud + local copies, or timeout retry); check whether either instance reads lit_pipeline.lock.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1732: (see MONITOR-658 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: For the 32 cloud-moved tasks, establish from cloud-side evidence whether each fired; update the stale 2026-08-05 'Known state' line.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1735: (see MONITOR-659 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: For each of (a)-(e), establish the true state on disk or in the service, and which writer was wrong.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1737: (see MONITOR-660 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Identify what fills the 9.8 GB sandbox volume and whether it is reclaimable between runs (overlaps MONITOR-654).
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1738: (see MONITOR-661 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Grep every scheduled task file for wiki-root paths; list each that does not resolve, the Wiki/wiki case included.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1741: (see MONITOR-662 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Tabulate subagent token use per run against the 30k budget for the last 14 runs of the lit pipeline and 14a/14b.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1108: (see MONITOR-663 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Check whether date-named files mix UTC (cloud) and US Eastern (local) days; stamp a timezone in dated filenames or headers.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1111: (see MONITOR-664 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: content-scan ~50 title-excluded chats for designer input. Material miss rate → REVISE; near-zero → INCORPORATE as first-pass heuristic only. Priority: High | Cadence: Weekly
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1743: (see MONITOR-665 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Did one or two lit-pipeline instances fire on 10-03? Check the cloud task history for c2a2-lit-search-pipeline against the lock file. (Bound to MONITOR-657.)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1744: (see MONITOR-666 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Which run wrote PROP-2026-10-03-001 at 03:03; is the Wolfram agent registered both locally and in the cloud? (Feeds REVISE-505.)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1745: (see MONITOR-667 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Cause of the run_stall FAIL (cloud migration, broken check, or transcript store frozen after 09-15) and why commit_check is OK for the same run. (Feeds REVISE-507.)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1746: (see MONITOR-668 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Compare OpenStory feed timestamps with the status line at the time morning system health reads it; check whether morning project status reads a stale 'last ran' source. (Feeds REVISE-507.)
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-1114: (see MONITOR-671 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Do cloud-run scheduled tasks appear in local list_sessions? Compare one known cloud run (e.g. the 10-03 cloud 14a/14b entry) with the local session list.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[PRESUMPTION] PRESUMPTION-896: (see MONITOR-682 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-11, cycle 2]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 1 -> 2; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: closure-capacity number (ASSUMPTION-1248) / filed→fixed ratio and age.
+  Evidence trajectory: Supporting/Challenging stable since 10-07 re-search; owed limb is not literature.
+
+### Routed to Agent 19 (1)
+
+[ASSUMPTION] ASSUMPTION-1244: (see MONITOR-683 in monitor_queue.md)
+  Status: [ROUTED-AGENT-19] [RE-TRIGGER by 15d: 2026-10-11, cycle 2]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 1 -> 2; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Agent 19 reading of critical editions (John of the Cross, Teresa, Cloud);
+  Evidence trajectory: Supporting/Challenging stable since 10-07 re-search; owed limb is not literature.
+
+### Awaiting Tom (3) — exit is a human ruling, not a search
+
+[ASSUMPTION] ASSUMPTION-1700: (see MONITOR-629 in monitor_queue.md)
+  Status: [AWAITING-TOM] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: EXIT CONDITION (explicit, per PRESUMPTION-1098): Tom rules on OPEN-187 (does team/programme output count as the thinker's tradition?). A ruling for programme -> INCORPORATE with the endorsement caveat (label team output as programme, not author, voice); a ruling for author-only -> REVISE the Hawk...
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1750: (see MONITOR-669 in monitor_queue.md)
+  Status: [AWAITING-TOM] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Reconcile REVISE-500/501 (in lit_search_returns.md, not in revision_flags.md): retire or re-number. Requires Tom's decision; this run continued to skip them.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+[ASSUMPTION] ASSUMPTION-1752: (see MONITOR-670 in monitor_queue.md)
+  Status: [AWAITING-TOM] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: n/a
+  Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
+  Owed: Is the 10-03 chat "Antique et nova" walk dictation? Tom to confirm; if yes, the OPEN-259 day-count is wrong.
+  Evidence trajectory: None — owed limb is in-house; no consumer has run it since intake.
+
+
+## 2026-10-12 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** No new 14a/14b intake: the 2026-10-11 14a/14b run was NOT RUN (cloud session without session_info; changelog/2026-10-11_changes.md); the 10-10 intake was handled by the 10-11 run. Per the 10-05..10-11 precedent, a backlog batch of 5 from the newest bare cohort (10-11 15d literature re-triggers, 9 items). Selection rule this run: High priority first, then queue order — PRESUMPTION-991, PRESUMPTION-1101 (High); PRESUMPTION-983, ASSUMPTION-1682, ASSUMPTION-1684 (Medium). Orchestrator choice, not in the task spec.
+**Dispositions:** DISPOSITION-1070..1074 — 2 INCORPORATE (1101 → PREMISE-229, Moderate, narrowed; 1682 → PREMISE-230), 1 MONITOR (991 → MONITOR-688, supersedes MONITOR-610; moved to in-house lane), 2 REVISE (983 → attached to REVISE-469, MONITOR-609 closed; 1684 → attached to REVISE-493, MONITOR-618 closed). No new REVISE number minted.
+**SYSTEMIC-RISK (15b):** silence read as evidence (1682, 1684, 991, 1101) — lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-12_silence-read-as-evidence.md; 15c response attached to REVISE-515.
+**Proposed, NOT applied (needs Tom):** PREMISE-078 amendment (auxiliary assumptions incl. instrument liveness/sensitivity); FINDING-091 relabel to cite PREMISE-230 or mark INCONCLUSIVE; estate-wide liveness+sensitivity rule (REVISE-515 attachment).
+**Result files:** lit_search_results/{for,against}/[ID]_retrigger-2026-10-12_{for,against}.md (10 files, PROVENANCE headers present).
+**Backups:** *.bak.20261012-pre-15pipeline for all five registers. Lock LOCKED at start, RELEASED at end.
+**Backlog remaining (fail loud):** 136 bare literature-lane items before this run; 131 remain (120 from 2026-07, 7 from 2026-08, 4 from 2026-10: PRESUMPTION-1099, -1100, -1102, ASSUMPTION-1693). Not touched.
+**Independence:** separate subagent contexts, same model family (cf. REVISE-488/REVISE-350); neither read the other's files; 15b reported no "already fetched" refusals. Shared sources counted once by 15c (Dienes 2014 for 1682; audit carry-forward standards for 1684). Most evidence is abstract/snippet level; PCAOB AS2201 read only via secondary source. Fetch failures: captchas on jamanetwork.com and two PMC pages; one pcaobus.org and one arxiv.org fetch refused.
+**Caveat (1101):** PREMISE-229's in-house support counts recorded rulings in revision_flags.md (REVISE-480..517: 21 with Status, all AWAITING TOM); rulings made outside the registers are not counted.
+
+
+<!-- 14a/14b intake 2026-10-12 (local) -->
+
+ITEM: ASSUMPTION-1775 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1775
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Identify the process re-stamping Summa files (sync?) and switch the re-read flag from mtime to content hash.
+
+ITEM: ASSUMPTION-1776 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1776
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Tom to choose, per task, cloud or local (or deliberate cross-check) and disable the other twin.
+
+ITEM: ASSUMPTION-1777 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1777
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Tom to pick one of the three fixes; third consecutive FAIL.
+
+ITEM: ASSUMPTION-1778 [QUEUED] [SEARCHED-15a: 2026-10-13] [SEARCHED-15b: 2026-10-13] [DISPOSITIONED-15c: 2026-10-13]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1778
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Assumption under test: Do health checks that verify "a record exists" rather than "the record is fresh" systematically miss silent failures, and what liveness/heartbeat designs (dead-man switches, watchdog-of-watchdog) prevent it?
+
+ITEM: ASSUMPTION-1779 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1779
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Clear the stale .git/index.lock (Tom) and confirm the deferred 05:45 commit lands; retire or fix the false-alarm inbox check.
+
+ITEM: ASSUMPTION-1780 [QUEUED] [SEARCHED-15a: 2026-10-13] [SEARCHED-15b: 2026-10-13] [DISPOSITIONED-15c: 2026-10-13]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1780
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Assumption under test: How reliably do abstracts (and talk outlines) represent a paper's/talk's claims, and what does that imply for carding proposals from abstracts alone?
+
+ITEM: ASSUMPTION-1781 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1781
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Reconcile from run history which of the 8 jobs ran on 10-12 and when; decide which report is authoritative (see OPEN-266).
+
+ITEM: ASSUMPTION-1782 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1782
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Calibrate tier costs against actual per-token usage (e.g. lit pipeline ~510k tokens/run) before relying on the $51 figure.
+
+ITEM: ASSUMPTION-1783 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1783
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Tom to either raise the per-session budget for this pipeline or reduce its batch so it fits; second consecutive stated overrun.
+
+ITEM: ASSUMPTION-1784 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1784
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Mount H-Drive and re-run backup; add a mount guard to backup_claude_projects.sh.
+
+ITEM: ASSUMPTION-1785 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1785
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Tom to decide, per task, whether to pre-approve Desktop Commander or rewrite the step to avoid it.
+
+ITEM: ASSUMPTION-1787 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1787
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Tom to confirm Iceland dates and the Open Call submission date; start a fresh walk chat.
+
+ITEM: ASSUMPTION-1788 [QUEUED] [IN-HOUSE]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1788
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-12 transcripts (final 4 messages per session, read via subagents).
+    Current status: UNTESTED
+  Claim to test (in-house): Give FINDING-080..101 a status field (or change the counter); renumber the duplicate FINDING-018.
+
+ITEM: PRESUMPTION-1124 [QUEUED] [SEARCHED-15a: 2026-10-13] [SEARCHED-15b: 2026-10-13] [DISPOSITIONED-15c: 2026-10-13] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1124
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Presumption under test: When do surrogate/proxy indicators (timestamps, heartbeats, record-exists checks) diverge from the target state, and what validation keeps them honest (Goodhart, surrogate-endpoint literature)?
+
+ITEM: PRESUMPTION-1125 [QUEUED] [SEARCHED-15a: 2026-10-13] [SEARCHED-15b: 2026-10-13] [DISPOSITIONED-15c: 2026-10-13] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1125
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Presumption under test: In redundant monitoring, does deferring to a co-located peer (rather than independent re-check) erase the reliability gain of redundancy (common-mode failure, N-version programming, diffusion of responsibility)?
+
+ITEM: PRESUMPTION-1126 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1126
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the 10-12 cowork summary carries Oct 23; decide whether corrections overwrite or supersede.
+
+ITEM: PRESUMPTION-1127 [QUEUED] [SEARCHED-15a: 2026-10-13] [SEARCHED-15b: 2026-10-13] [DISPOSITIONED-15c: 2026-10-13] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1127
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Presumption under test: What does the alarm-fatigue literature (clinical alarms, SRE alerting) say about repeated non-actionable alerts, and which escalation or auto-remediation policies reduce it?
+
+ITEM: PRESUMPTION-1128 [QUEUED] [SEARCHED-15a: 2026-10-13] [SEARCHED-15b: 2026-10-13] [DISPOSITIONED-15c: 2026-10-13] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1128
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Presumption under test: Do hedges and uncertainty labels survive citation and aggregation, or are they lost (citation distortion, e.g. Greenberg 2009; hedging in science communication)?
+
+ITEM: PRESUMPTION-1129 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1129
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Count jobs depending on H-Drive and on the Mac being awake; add a mount/awake precondition that writes an explicit SKIPPED status.
+
+ITEM: PRESUMPTION-1130 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1130
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Require each report to state which steps were skipped for permissions and to use UNKNOWN for them.
+
+ITEM: PRESUMPTION-1131 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1131
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-12 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Define each headline count once (script + schema) and assert schema conformance before counting.
+
+<!-- 14a/14b intake 2026-10-12 (local): 21 items: 6 literature (ASSUMPTION-1778, -1780; PRESUMPTION-1124, -1125, -1127, -1128), 15 [IN-HOUSE]. 1786 not queued (recurrence). -->

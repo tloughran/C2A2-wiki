@@ -40,3 +40,10 @@ PRS-CANDIDATE-01:
 - Friston: Surprise at deep learning is a concrete case of computational irreducibility limiting prediction (cf. open CROSS-053). Weak signal; Wolfram does not make the link here.
 - Levin / Hawkins: His 1982-83 attractor-basin neural net work touches the same dynamical-systems vocabulary (basins of attraction) used for cognition; no new claim.
 - cross_program_index.md sweep: no open CROSS item (e.g. CROSS-002, CROSS-017, CROSS-053) is advanced by this source. Not a strong bridging item.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-11*
+
+[→ Wolfram agent]: File this as context for open question 3 (where AI sits in rulial space), not as a new claim: Wolfram explicitly defers ('more science before I say more'). Record the 1977 cosmology paper and the unwritten Part 3 of the 1981 vacuum series as unpublished-work leads, and link the card from the Wolfram AI-stance node.
+
+[→ Hawkins agent]: Wolfram says nobody, himself included, predicted the 2011-12 image results or ChatGPT. That bears on the Hawkins/Wolfram dispute already in the wiki over whether architecture matters. Say whether a sensorimotor-architecture view predicted these results any better, and add a line to [[hawkins_wolfram_bridge]] only if it did.

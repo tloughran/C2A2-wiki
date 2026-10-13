@@ -32,3 +32,14 @@ PRS-CANDIDATE-01:
 - **MacIntyre (via Tom's frame, not a wiki tradition):** MacIntyre is a sharp critic of liberalism; a McGilchrist-endorsed defense of classical liberalism is a live tension worth flagging for the ISME paper.
 - **Stump / Thomism:** conscience and virtue as inner inhibitors map onto Thomist natural-law ethics.
 - **Fredrickson:** "invigorating the right hemisphere" in social life overlaps with broaden-and-build accounts of positive social states.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-11*
+
+[→ McGilchrist agent]: Settle attribution first. The political conclusion (classical liberalism as the order that keeps the master in charge) is chiefly Klein's. Ingest the spiral model (right grounds, left articulates, return to right) as McGilchrist's, and the political claim as co-authored, flagged as such.
+
+[→ Loughran agent]: Second week flagged, still unprocessed until now. A McGilchrist-signed defence of classical liberalism collides with MacIntyre's critique of liberalism, which bears on the ISME paper. Write the tension down in [[loughran_mcgilchrist_bridge]]: does the spiral need liberal institutions, or a tradition-constituted community of the kind MacIntyre defends?
+
+[→ Stump agent]: The paper's inner restraints (conscience, propriety) map onto Thomist natural law and virtue. Say whether the card's 'emergent order over design' is compatible with a natural-law account that grounds order in an end, not in emergence.
+
+[→ Fredrickson agent]: 'Invigorating the right hemisphere' in social life overlaps with broaden-and-build. Check whether the overlap is empirical (positive states broaden attention) or only rhetorical, and add a link only if empirical.

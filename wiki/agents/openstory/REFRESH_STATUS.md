@@ -1,1 +1,1 @@
-2026-10-08T10:15Z  PASS  telemetry=2026-10-08/33 agents  node_edges=2026-10-08  | DB age 1h
+2026-10-12T18:47Z  FAIL  step 2 (extract_openstory_agent_data.py) — sandbox cannot copy 7.9GB DB: 'No space left on device' on /tmp (9.6G disk); retry via outputs dir killed by ~3-min shell-call cap; Mac-side run (Desktop Commander) auto-declined, no approver | DB age 0h; feeds unchanged from 10:15Z PASS
