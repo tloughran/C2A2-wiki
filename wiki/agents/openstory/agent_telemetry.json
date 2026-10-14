@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "generated": "2026-10-12T07:04:22.794251-04:00",
+    "generated": "2026-10-13T06:21:03.068056-04:00",
     "source": "openstory-db",
     "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-    "db_mtime": "2026-10-11T18:02:28.232013",
+    "db_mtime": "2026-10-12T12:32:55.924842",
     "join": "sessions.label name=\"...\" -> roster taskId (exact/unique-prefix); clean non-roster scheduled names self-attribute as discovered agents; no-name sessions -> (interactive)",
     "caveats": {
       "avg_duration_min": "session run-span (last_event - first_event); reliable for single-run agents, inflated for long-lived/append sessions",
@@ -17,7 +17,7 @@
       "bosco"
     ],
     "total_sessions": 4820,
-    "total_events": 2170029,
+    "total_events": 2170136,
     "discovered_agents": {
       "rc-wiki-morning-backup": 1,
       "1pm-apr27-caching-architectu": 1,
@@ -3473,20 +3473,20 @@
     },
     "rc-wiki-morning-backup": {
       "sessions": 1,
-      "events": 515433,
-      "eval": 623087,
-      "apply": 598384,
+      "events": 515515,
+      "eval": 623093,
+      "apply": 598389,
       "scope_open": 0,
       "scope_close": 0,
       "errors": 0,
       "delegations": 0,
-      "tool_use": 4171,
-      "tool_use_named": 4035,
-      "thinking": 1518,
-      "prompts": 1380,
+      "tool_use": 4176,
+      "tool_use_named": 4040,
+      "thinking": 1519,
+      "prompts": 1386,
       "duration_sessions": 1,
       "first_seen": "2026-03-30T20:16:12.480Z",
-      "last_seen": "2026-10-11T22:02:22.041Z",
+      "last_seen": "2026-10-12T16:32:54.750Z",
       "by_dow": [
         1,
         0,
@@ -3501,11 +3501,11 @@
         "Read": 490,
         "Edit": 429,
         "Bash": 306,
-        "mcp__session_info__read_transcript": 258,
+        "mcp__session_info__read_transcript": 261,
         "TaskUpdate": 233,
         "WebSearch": 207,
         "Grep": 188,
-        "SendUserMessage": 182,
+        "SendUserMessage": 184,
         "mcp__Desktop_Commander__start_process": 121,
         "Write": 114,
         "ToolSearch": 85,
@@ -3573,7 +3573,7 @@
         "mcp__plugin_desktop-commander_desktop-commander__read_process_output": 1
       },
       "models": {
-        "claude-opus-5": 2056,
+        "claude-opus-5": 2061,
         "claude-opus-4-8": 517,
         "claude-fable-5-1": 368,
         "claude-sonnet-4-6": 316,
@@ -3585,9 +3585,9 @@
         "claude-fable-5": 4
       },
       "eval_apply_ratio": 1.041,
-      "eval_apply_total": 1221471,
-      "avg_duration_min": 280906.2,
-      "avg_events_per_session": 515433.0,
+      "eval_apply_total": 1221482,
+      "avg_duration_min": 282016.7,
+      "avg_events_per_session": 515515.0,
       "tool_coverage": 0.97,
       "taskId": "rc-wiki-morning-backup",
       "category": "discovered",
@@ -3651,9 +3651,9 @@
   "buckets": {
     "(interactive)": {
       "sessions": 1115,
-      "events": 1218467,
-      "eval": 64535,
-      "apply": 48494,
+      "events": 1218492,
+      "eval": 64542,
+      "apply": 48499,
       "scope_open": 6096,
       "scope_close": 897,
       "errors": 133,
@@ -3664,7 +3664,7 @@
       "prompts": 3714,
       "duration_sessions": 1114,
       "first_seen": "2026-03-30T19:09:19.612Z",
-      "last_seen": "2026-10-11T21:46:12.297Z",
+      "last_seen": "2026-10-12T16:32:51.103Z",
       "by_dow": [
         199,
         192,
@@ -3866,8 +3866,8 @@
         "claude-sonnet-5-5": 232
       },
       "eval_apply_ratio": 1.331,
-      "eval_apply_total": 113029,
-      "avg_duration_min": 882.2,
+      "eval_apply_total": 113041,
+      "avg_duration_min": 883.2,
       "avg_events_per_session": 1092.8,
       "tool_coverage": 0.85
     },

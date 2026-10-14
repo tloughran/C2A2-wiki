@@ -24708,3 +24708,188 @@ PRESUMPTION-1131:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-12 (local). **8 items (1124–1131)**: epistemic 3 · architectural 1 · methodological 2 · normative 1 · scaling 1. Checked against 14a 1775–1788 and PRESUMPTION-1117/1118/1121/1123; 1127 extends 1121, 1129 extends 1123, 1130 extends 1118.*
+
+
+<!-- 14b intake 2026-10-13 (local) -->
+
+PRESUMPTION-1132:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] The self-awareness pipeline, and the evening sync's "0 interactive Cowork sessions today," presume local session_info lists all C2A2 work done that day. On 10-13 four proposals were written 19:16–19:33 EDT by a session that does not appear in the 40 most recent local sessions. Is local session_info a complete record of design activity?
+  Evidence it was operative: 251e1a0a; inbox/proposals/pending (mtimes 19:16–19:33); list_sessions (limit 40)
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: PRESUMPTION-1114; OPEN-260; OPEN-267
+  Testability: testable in-house
+  Risk if wrong: High: the live design work 14a/14b exist to audit escapes audit, while scheduled-job chatter is fully audited.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1132
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1133:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] Proposal IDs (PROP-YYYY-MM-DD-NNN) presume a single writer per day that knows the existing sequence. On 10-13 two writers each minted -001 and -002. The wiki run moved today to proposal-ID keying (ASSUMPTION-1791), so collisions now matter for ingest and decision mapping.
+  Evidence it was operative: inbox/proposals/pending; c3edffcd
+  Why it was unstated: oversight
+  Type: architectural
+  Related decisions: ASSUMPTION-1791; ASSUMPTION-1806; OPEN-267
+  Testability: testable in-house
+  Risk if wrong: High: a decision email for one card could be applied to its namesake; ingest ledger miscounts.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1133
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1134:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] An agent's final self-report is presumed to describe what landed in the wiki. The Hawkins/Hoffman run reports Hawkins 0 (search incomplete) while a Hawkins card dated 03:11 exists and is credited to "specialist." Either a twin wrote it unseen, or the report is wrong.
+  Evidence it was operative: cd51011c; PROCESSED_LOG 2026-10-13; pending/2026-10-13_hawkins_*
+  Why it was unstated: obvious to participants
+  Type: methodological
+  Related decisions: ASSUMPTION-1794; PRESUMPTION-1125
+  Testability: testable in-house
+  Risk if wrong: Medium: summaries downstream (morning walk, metrics) inherit a count no one checked against files.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1134
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1135:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] Each health report presumes its own vantage suffices; none consumes the others' FAILs. Morning project status certified "no other issues" hours after scheduler health logged 7 FAILs; system health cited yesterday's telemetry failure. With 4+ overlapping monitors, no one owns the aggregate.
+  Evidence it was operative: 39486271; 57daddcb; 143eecae; 25aea1af
+  Why it was unstated: culturally embedded
+  Type: architectural
+  Related decisions: OPEN-266; ASSUMPTION-1801; ASSUMPTION-1802
+  Testability: testable via literature
+  Risk if wrong: Medium-High: a stopped ingest is reported "live" to the human reader.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1135
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1136:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] Model-written lit-search questions are presumed to be accurate framings. The 10-12 queue (written by this pipeline) carried a wrong figure (Drew 2014) and a likely wrong author (Welch vs Whalen); the lit pipeline caught them, but only by chance of reading the source.
+  Evidence it was operative: d4653ba3
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: ASSUMPTION-1798; PRESUMPTION-1128
+  Testability: testable in-house
+  Risk if wrong: Medium: searches are aimed by errors; dispositions may "support" a misstated claim.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1136
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1137:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] Carding presumes the structure of a work is recoverable from its paratext or a summary of it: chapter titles (Hoffman), abstracts (10-12 Friston), and a pipeline's own card text (document-explorer). The Speculative tag records low confidence, but the item still enters the review queue as a PRS candidate.
+  Evidence it was operative: cd51011c; pending/2026-10-13_document-explorer_*; ASSUMPTION-1780
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: OPEN-265; ASSUMPTION-1793
+  Testability: testable via literature
+  Risk if wrong: Medium: PRS records inherit the framing of abstracts and summaries rather than the work.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1137
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1138:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] Carding presumes added proposals have value regardless of review throughput. No review decision since 10-09; pending rose to 13 (6 dated 10-13). Agents keep producing; nothing limits work in progress.
+  Evidence it was operative: 52313fb6; c3edffcd; inbox/proposals/pending
+  Why it was unstated: too foundational to notice
+  Type: scaling
+  Related decisions: ASSUMPTION-1804; OPEN-265
+  Testability: testable via literature
+  Risk if wrong: Medium: queue grows past what one reviewer can decide; review quality or timeliness drops.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1138
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1139:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] Unattended jobs presume "do nothing and report" is the safe default. Telemetry declined the Mac shell (4th FAIL), Summa batch no-op 28 days, evening sync skipped delivery, the deferred-action monitor repeats a recommendation for the 38th time. Each refusal is locally safe; together they leave failures standing with no escalation path.
+  Evidence it was operative: 25aea1af; f21b94c8; 251e1a0a; 5f344d86
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: ASSUMPTION-1799; ASSUMPTION-1795
+  Testability: testable in-house
+  Risk if wrong: Medium-Low: known fixes wait indefinitely on a human who is not reading reports.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1139
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+PRESUMPTION-1140:
+  Date surfaced: 2026-10-13
+  Statement: [inferred] The Loughran marginalia card presumes Tom's margin notes on a 1990 book are evidence for the current Loughran tradition, and that an agent may infer "Tom's implied move" for Problem/Resource/Solution, though Tom is a living participant who can be asked.
+  Evidence it was operative: pending/2026-10-13_loughran_prs-candidates-marks.md
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: ASSUMPTION-1806; OPEN-267
+  Testability: testable in-house (Tom)
+  Risk if wrong: Medium: a participant's tradition is recorded in words he did not write and may not endorse.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1140
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-13 (local). **9 items (1132–1140)**: epistemic 3 · architectural 2 · methodological 2 · normative 1 · scaling 1. Checked against 14a 1789–1806 and PRESUMPTION-1114/1124/1125/1128; 1132 extends 1114, 1134 extends 1125, 1136 extends 1128.*

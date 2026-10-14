@@ -6957,3 +6957,43 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-13.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-14
+
+  Items checked: 0 — no item due (both weekly, next on-cadence 2026-10-20) and no off-cadence trigger fired:
+    - WATCH-003 trigger (new `review/archive/` file): none — still 23 files, latest `2026-10-10_decisions.md`; only `2026-08-27_decisions.md` matches `2026-07-19-001`/`beatitudes-week-two`. Count stays **19**.
+    - WATCH-004 trigger (revised PROP-2026-10-01-001): none — `needs_review/` Fredrickson file unchanged since 2026-10-08 02:38, flagged sentence still at line 38; no PROP-2026-10-01-001 in `pending/`. Count stays **2**.
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003, WATCH-004)
+  Items stale: 1 (WATCH-003; recommendation unchanged: **Escalate to Tom**). WATCH-004 below threshold.
+  New items added: 0 — `needs_review/` holds 2 files, both `[TRACKED-16]`; Channel 2/3 grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |`, excl. `deferred/`, `agents/`) matches only `inbox/proposals/README.md` (template, mtime 2026-08-04).
+  Next scheduled checks: WATCH-003 and WATCH-004, **2026-10-20** (or earlier on either trigger).
+
+**Census (shell):** `pending/` 13 (+6 since 10-13: Hawkins, Hoffman, Loughran, MacIntyre, document-explorer, spreadsheet-explorer — none related), `approved/` 472, `denied/` 1, `needs_review/` 2, `review/archive/` 23.
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); WATCH-004 CT Signals edit (Fredrickson agent or Tom). Watch list ~826 KB — split the run log (**39th** recommendation).
+
+**Agent 16 Status:** Operational. 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-14.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-14
+
+  Items checked: 0 on-cadence (WATCH-003 and WATCH-004 both next due 2026-10-20). Off-cadence trigger scan only — no check counters incremented:
+    - `review/archive/` still **23** files, latest `2026-10-10_decisions.md` (no new decision file). Grep for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md` (re-filing APPROVEs).
+    - `needs_review/` Fredrickson file unchanged (mtime 2026-10-08 06:38); flagged CT Signals sentence still present (2 occurrences: line 38 and Tom's quoted instruction); no PROP-2026-10-01-001 in `pending/`.
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003 stale since 08-25, recommendation unchanged: **Escalate to Tom**; WATCH-004, 2 checks)
+  Items stale: 1 (WATCH-003)
+  New items added: 0 — `needs_review/` holds 2 files, both already `[TRACKED-16]`; Channel 2/3 marker grep matches only `inbox/proposals/README.md` (template).
+  Next scheduled checks: WATCH-003 and WATCH-004, **2026-10-20** (or earlier on a new `review/archive/` file or revised PROP-2026-10-01-001 in `pending/`).
+
+**Census (shell):** `pending/` 13, `approved/` 472, `needs_review/` 2, `review/archive/` 23.
+
+**Agent 16 Status:** Operational. 0 checked (none due), 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-14.*

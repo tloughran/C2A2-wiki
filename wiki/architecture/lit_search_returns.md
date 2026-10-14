@@ -51189,3 +51189,133 @@ Accepted. Applied as PREMISE-232 (named target + standing agreement sample) and 
 Running totals after this run: PREMISE-235 | MONITOR-689 | REVISE-517 (no new flag) | DISPOSITION-1080.
 Distribution (6 items): 5 INCORPORATE, all in restated/scoped form that absorbs 15b's challenge (PREMISE-231 ← ASSUMPTION-1778; -232 ← PRESUMPTION-1124; -233 ← ASSUMPTION-1780; -234 ← PRESUMPTION-1125; -235 ← PRESUMPTION-1128); 1 MONITOR (MONITOR-689 ← PRESUMPTION-1127); 0 REVISE.
 Proposed, not applied (needs Tom): merge PREMISE-235 into PREMISE-188; consider whether PREMISE-231 should supersede the overlapping parts of PREMISE-208/-221.
+
+## 15a/15b/15c RUN — 2026-10-14 (scheduled c2a2 lit-search pipeline; NEW 14a/14b intake of 2026-10-13, 4 literature items: ASSUMPTION-1796, PRESUMPTION-1135, PRESUMPTION-1137, PRESUMPTION-1138)
+Scope: the four literature items in the 2026-10-13 local intake. The 18 [IN-HOUSE] items from that intake were not searched; they are not literature-lane. The cloud 14a/14b run of 2026-10-14 was NOT RUN (changelog/2026-10-14_changes.md), so it produced no new intake. The 131-item bare backlog was not touched.
+15a and 15b ran as separate subagents in parallel, and neither read the other's directory. They were the same model family, so independence is partial (cf. PREMISE-234, REVISE-488). 15b filed a SYSTEMIC-RISK flag (High) covering 1796, 1135, 1137 and 1138: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-14_independence-and-single-reviewer-audit_A1796-P1135-P1137-P1138.md
+Recurrence note: three of the four items re-ask questions dispositioned the day before. 1796 ≈ PREMISE-232 and the 10-13 SYSTEMIC-RISK flag; 1137 ≈ ASSUMPTION-1780 → PREMISE-233; 1135 is adjacent to MONITOR-689 and PREMISE-234. 15c treated these as corroboration or scope tests of the existing premises rather than as new questions.
+
+### 15a returns (FOR)
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1796
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Fleming TR, DeMets DL, 1996. "Surrogate end points in clinical trials: are we being misled?" Ann Intern Med 125:605-613
+  Summary: Surrogate validation work, Goodhart/Campbell (Manheim & Garrabrant 2018) and Bevan & Hood 2006 all show that a proxy never checked against the outcome hides error, and that pressure on a proxy displaces distortion onto whatever is unmeasured. No study tests proxy-for-proxy substitution directly, so "relocates" is an inference.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1796_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1135
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-Strong
+  Key source: Sagan SD, 2004. "The Problem of Redundancy Problem." Risk Analysis 24(4):935-946; Cymek, Jahn & Manzey 2018, "Four Eyes Don't See More Than Two, if Everyone Turns a Blind Eye"
+  Summary: Redundant monitors that lack independence, aggregation or individual ownership often fail to raise detection, and can lower it. In Cymek et al., shared monitoring found 25% fewer failures than solo monitoring, and the gain came back when monitors were individually accountable.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1135_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1137
+  Search direction: FOR (supportive)
+  Result: SUPPORTED (the concern; the presumption that structure is recoverable from paratext/summaries is NOT supported)
+  Strength: Strong for abstracts and LLM summaries; Weak (theory only) for chapter titles/paratext
+  Key source: Li G et al., 2017. "A scoping review of comparisons between abstracts and full reports in primary biomedical research." BMC Med Res Methodol 17:181 [full text]
+  Summary: Across 17 studies, a median of 39% of abstracts were inconsistent with the full report and a median of 19% had major inconsistencies. Boutron 2010 found spin in 58% of abstract conclusions. Peters & Chin-Yee 2025 found LLM summaries overgeneralise about 4.85x more often than human ones. For chapter titles, Genette offers theory only and no accuracy data. A narrow NOVELTY note (low confidence) covers the chapter-title component only.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1137_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1138
+  Search direction: FOR (supportive)
+  Result: SUPPORTED (the concern; the presumption that unlimited intake is harmless is NOT supported)
+  Strength: Strong (theory); Weak (direct evidence on review queues)
+  Key source: Reinertsen DG, 2009. The Principles of Product Development Flow; Little 1961 (L = λW); Hopp & Spearman, Factory Physics
+  Summary: If arrivals persistently exceed decisions, the backlog and each new item's wait grow without bound, and extra proposals add no throughput. Queued items accrue delay cost and go stale. Capping WIP (Kanban/CONWIP) is the standard remedy.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1138_for.md
+
+### 15b returns (AGAINST)
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1796
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Buyse, Molenberghs et al. 2000, "The validation of surrogate endpoints in meta-analyses of randomized experiments," Biostatistics; Reason 2000 BMJ (defence in depth)
+  Summary: The strong form ("swapping proxies always relocates error") is not supported. Validated surrogates (BP, LDL, HIV viral load) and stacked imperfect barriers do reduce error, but only if the new proxy has been checked against outcomes at least once and does not fail at the same times as the old one. Knight & Leveson 1986 shows correlated failure is common, which weakens the challenge.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1796_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1135
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate against the implied remedy; Weak against the observation
+  Key source: Landau 1969, "Redundancy, Rationality, and the Problem of Duplication and Overlap," Public Administration Review; Bendor 1985, Parallel Systems
+  Summary: Overlapping monitors raise detection when their failures are independent, and the 7 FAILs were in fact caught. The defect is a later "all clear" report that did not consume them. A single aggregate owner would itself be a single point of failure and invite alarm floods. Sagan 2004 was reported for balance.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1135_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1137
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: 2017 scoping review, BMC Med Res Methodol doi:10.1186/s12874-017-0459-5 [snippet; fetch failed]; Kim et al. 2024, FABLES (arXiv:2404.01261)
+  Summary: The challenge is only that abstracts and good summaries are adequate for relevance triage: about 81% of abstracts have no major discrepancy, and the best model was about 90% claim-faithful on books. The search found no challenge to the concern that structure and claims cannot be recovered from paratext. All abstract data is biomedical, and nothing was found on humanities monographs.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1137_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1138
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate against the WIP-limit remedy; Weak against the backlog concern
+  Key source: Sjøberg 2018, "An empirical study of WIP in kanban teams," ESEM [abstract]
+  Summary: Little's law assumes a steady state, so for an unstable queue it says only that the backlog grows. Lower WIP went with shorter lead time but also with lower productivity, and no field study fixes an optimal limit. Decay evidence comes from human pull requests that contributors abandon. Thirteen items after a five-day pause in a batch-reviewed system does not show instability; weekly rates should be measured first.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1138_against.md
+
+### 15c dispositions (2026-10-14)
+DISPOSITION-1081:
+  Date: 2026-10-14 | Item: ASSUMPTION-1796 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The two directions converge on a condition rather than a contest. Replacing a proxy reduces error when the replacement has been validated against the target (Buyse/Molenberghs 2000; Fleming & DeMets 1996) AND fails independently of what it replaces (Reason 2000, qualified by Knight & Leveson 1986). Without both conditions, the pressure moves to the unmeasured part (Manheim & Garrabrant 2018; Bevan & Hood 2006). Fleming & DeMets is shared with the 10-13 run (PREMISE-232) and counted once.
+  Disposition: INCORPORATE (PREMISE-236), restated form. The universal form ("each fix only relocates error") is NOT incorporated.
+  Reasoning: Neither side supports the strong claim, and both support the conditional. The condition adds something PREMISE-232 lacks: independence of failure, not just a standing agreement sample. Consistency: compatible with PREMISE-232 (named target and sample) and PREMISE-234 (a same-model re-check counts as one vote). No contradiction found.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1796 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1796_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1796_against.md
+
+DISPOSITION-1082:
+  Date: 2026-10-14 | Item: PRESUMPTION-1135 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate against remedy; Weak against observation)
+  Net assessment: Both agree that overlap helps only if failures are independent and some channel's FAIL reaches a decision. Both found Sagan 2004 (shirking: "someone else has it"), counted once. 15b's useful correction is that the observed defect is a summary report certifying "no other issues" without reading its peers' FAILs. Overlap as such is not the defect, and a single central owner is not an evidenced cure (single point of failure, alarm floods). Cymek et al. 2018 identifies the moderator: individual accountability for each check.
+  Disposition: INCORPORATE (PREMISE-237), restated and scoped. The remedy "one owner aggregates all FAILs" is NOT incorporated.
+  Reasoning: Weight was given because this is a presumption with four in-house instances (39486271; 57daddcb; 143eecae; 25aea1af). The challenge sharpens the rule and does not refute it. The rule is the smallest one that closes the observed gap: an "all clear" must state which peer reports it read. Consistency: aligns with PREMISE-229/230 (silence and absence are not evidence) and with MONITOR-689 (alert policy remains open). No contradiction found.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1135 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1135_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1135_against.md
+
+DISPOSITION-1083:
+  Date: 2026-10-14 | Item: PRESUMPTION-1137 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED-as-concern (Strong abstracts/LLM summaries; Weak paratext) | 15b: PARTIALLY-CHALLENGED (Weak; triage adequacy only)
+  Net assessment: Both searchers found the same 2017 BMC scoping review (Li et al.; 15a read the full text, while 15b's fetch failed), counted once. Together they give the same tiered reading as PREMISE-233: summaries are adequate for triage but not as a record of a work's claims or structure. New this run is model-written summaries: Peters & Chin-Yee 2025 (overgeneralisation) and FABLES 2024 (omission and end-weighting) cover the pipeline's own card text. The chapter-title/ToC component is untested; neither direction found data.
+  Disposition: INCORPORATE as a scope extension ATTACHED TO PREMISE-233 (no new number minted). The presumption itself ("structure is recoverable from paratext") is NOT incorporated.
+  Reasoning: This is a recurrence of ASSUMPTION-1780, and a new premise number would duplicate PREMISE-233. The extension adds model-written summaries and card text to PREMISE-233's scope. Chapter titles and ToCs are recorded as an untested literature gap (15a's low-confidence NOVELTY note), not validated either way. Confidence stays Moderate because of the biomedical-to-humanities transfer.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1137 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (attached to PREMISE-233)
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1137_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1137_against.md
+
+DISPOSITION-1084:
+  Date: 2026-10-14 | Item: PRESUMPTION-1138 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: SUPPORTED-as-concern (Strong theory; Weak direct) | 15b: PARTIALLY-CHALLENGED (Moderate against WIP-cap remedy; Weak against concern)
+  Net assessment: The theory is uncontested: if arrivals persistently exceed decisions, the backlog and wait grow without bound, and more intake adds no throughput. The premise of that theory has not been measured here. Thirteen pending after a five-day pause in a batch-reviewed system is not evidence of a persistent rate gap (15b). The remedy is contested: WIP caps trade lead time against productivity (Sjøberg 2018). Consistent with the 10-12 decision not to incorporate the "grows without bound" clause of MONITOR-636 / PREMISE-229 without a measured rate.
+  Disposition: MONITOR (MONITOR-690), High priority
+  Reasoning: Strong theory plus a contested remedy, applied to an unmeasured local condition, is the case the heuristics send to MONITOR. A WIP cap on carding is hard to reverse and could starve good proposals if the real bottleneck is reviewer availability. The question can be settled in-house within weeks by measuring arrival and decision rates. Linked to REVISE-516 (uptake line) and to today's SYSTEMIC-RISK flag.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1138 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1138_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1138_against.md
+
+### SYSTEMIC-RISK (15b, High): independence and single-reviewer audit — 15c response
+Accepted. Every remedy the literature offers for these four items assumes two things: checks that fail independently, and a reviewer with spare capacity. In C2A2 the checks are mostly one model family reading the same files, and the reviewer has recorded no decision since 10-09. The independence half is already covered by PREMISE-234 and REVISE-488/-350; PREMISE-236 now applies it to proxy replacement. The capacity half joins MONITOR-690 and is attached to REVISE-516 (revision_flags.md). No new process or REVISE number minted.
+
+### Evidence-quality notes
+- Nearly all sources are at abstract or snippet level. Full text: Li et al. 2017 (15a). 15b read only the Sjøberg 2018 abstract page in full.
+- Shared sources counted once: Li et al. 2017 (1137), Sagan 2004 (1135). Fleming & DeMets 1996 overlaps the 10-13 run.
+- Unverified and not relied on alone: "John et al." BBS proxy-failure author list; three of the four Manheim & Garrabrant categories (one confirmed); Cheng 2005 and the 2023 Kanban/CONWIP authors; Landau volume (29 vs 39); arXiv:2110.15447 authors. 15a stated the "grows without bound when λ > μ" result from general queueing knowledge, not a fetched source.
+- Independence leak, logged: 15b's retry of the Li 2017 URL returned an "already fetched" notice with no content. The fetch cache is shared across subagents. No content passed between them, but the existence of 15a's fetch was visible.
+- Budget, fail loud: the search subagents used ~120k and ~113k tokens (34 search+fetch calls total), far over the 4k per-task and 30k per-session budget in Tom's standing rules. This is the fourth consecutive overrun (cf. ASSUMPTION-1797). Per-item search caps (≤5) were respected.
+
+Running totals after this run: PREMISE-237 | MONITOR-690 | REVISE-517 (no new flag; attachment to REVISE-516) | DISPOSITION-1084.
+Distribution (4 items): 3 INCORPORATE, all restated or scoped (PREMISE-236 ← ASSUMPTION-1796; PREMISE-237 ← PRESUMPTION-1135; PREMISE-233 scope extension ← PRESUMPTION-1137); 1 MONITOR (MONITOR-690 ← PRESUMPTION-1138); 0 REVISE.
+Proposed, not applied (needs Tom): (1) PREMISE-236 and PREMISE-232 could merge into one proxy rule (target + sample + independence). (2) Ask 14a/14b to check validated_premises.md before queuing a literature item; three of today's four were recurrences of 10-13 dispositions. (3) The PREMISE-237 header rule needs an owner for the existing monitors (status, health, telemetry reports).

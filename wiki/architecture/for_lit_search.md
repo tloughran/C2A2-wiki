@@ -26363,3 +26363,249 @@ ITEM: PRESUMPTION-1131 [QUEUED] [IN-HOUSE] [PRESUMPTION]
   Claim to test (in-house): Define each headline count once (script + schema) and assert schema conformance before counting.
 
 <!-- 14a/14b intake 2026-10-12 (local): 21 items: 6 literature (ASSUMPTION-1778, -1780; PRESUMPTION-1124, -1125, -1127, -1128), 15 [IN-HOUSE]. 1786 not queued (recurrence). -->
+
+ITEM: ASSUMPTION-1789 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1789
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Run the verification and QC word counters on the same 10 syntheses; report the systematic offset before treating the 198 mismatches as real.
+
+ITEM: ASSUMPTION-1791 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1791
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Make one key (proposal_id) authoritative; retire the filename check or have it emit 0 false positives on the current inbox.
+
+ITEM: ASSUMPTION-1792 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1792
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): State the stale_days threshold at which Phase 5.6 WARNs; check whether 4 days should already trip it.
+
+ITEM: ASSUMPTION-1793 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1793
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): After transcript is available, re-derive the Hoffman triplets and compare with the paratext-only versions.
+
+ITEM: ASSUMPTION-1794 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1794
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Identify which run (local or cloud twin) wrote the Hawkins -002 file; fix the stored path.
+
+ITEM: ASSUMPTION-1796 [QUEUED] [SEARCHED-15a: 2026-10-14] [SEARCHED-15b: 2026-10-14] [DISPOSITIONED-15c: 2026-10-14] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1796
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Assumption under test: Does replacing one monitoring proxy with another (without ground-truth audit) reduce error, or relocate it? (Goodhart/Campbell; surrogate-endpoint validation literature.)
+
+ITEM: ASSUMPTION-1798 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1798
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Audit the last 3 days of 14a/14b lit-queue entries for citations/figures stated in the question text; count errors.
+
+ITEM: ASSUMPTION-1799 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1799
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the prediction holds on 10-14; count consecutive identical FAILs before any change.
+
+ITEM: ASSUMPTION-1800 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1800
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Run the max(timestamp) query; add dependency labels (H-Drive) to metabolism FAIL rows.
+
+ITEM: ASSUMPTION-1801 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1801
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Have morning status read the scheduler-health FAIL list before certifying "no other issues"; compare on 3 days.
+
+ITEM: ASSUMPTION-1802 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1802
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Stamp each health report with the source-file timestamps it read, so staleness is visible.
+
+ITEM: ASSUMPTION-1804 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1804
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Tom: state the Hawkins authorship rule once; detector should stop re-flagging after a ruling.
+
+ITEM: ASSUMPTION-1806 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1806
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-13 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Renumber the colliding IDs before Phase 1 ingests by proposal_id; record which session wrote them.
+
+ITEM: PRESUMPTION-1132 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1132
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Claim to test (in-house): For each wiki file modified today, check whether a listed session wrote it; report unmatched writers.
+
+ITEM: PRESUMPTION-1133 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1133
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Claim to test (in-house): Add a pre-write uniqueness check over pending/approved/archived for proposal_id.
+
+ITEM: PRESUMPTION-1134 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1134
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Claim to test (in-house): Reconcile each agent's reported output count with files written in its window.
+
+ITEM: PRESUMPTION-1135 [QUEUED] [SEARCHED-15a: 2026-10-14] [SEARCHED-15b: 2026-10-14] [DISPOSITIONED-15c: 2026-10-14] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1135
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Presumption under test: Do multiple uncoordinated monitors raise or lower detection of failures (alarm fatigue, diffusion of responsibility, redundancy without aggregation in ops/safety literature)?
+
+ITEM: PRESUMPTION-1136 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1136
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Claim to test (in-house): From now on, queue questions without inline figures/citations unless verified; sample-audit 20 past entries.
+
+ITEM: PRESUMPTION-1137 [QUEUED] [SEARCHED-15a: 2026-10-14] [SEARCHED-15b: 2026-10-14] [DISPOSITIONED-15c: 2026-10-14] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1137
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Presumption under test: How accurately do abstracts/summaries represent the claims of the full text (abstract-vs-full-text discrepancy studies; extraction from abstracts in systematic reviews)?
+
+ITEM: PRESUMPTION-1138 [QUEUED] [SEARCHED-15a: 2026-10-14] [SEARCHED-15b: 2026-10-14] [DISPOSITIONED-15c: 2026-10-14] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1138
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Presumption under test: What do WIP limits and queueing results (Little's law; Kanban) predict for a single-reviewer queue whose arrival rate exceeds decision rate?
+
+ITEM: PRESUMPTION-1139 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1139
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Claim to test (in-house): Count identical consecutive FAIL/no-op reports per job; define an escalation after N repeats.
+
+ITEM: PRESUMPTION-1140 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1140
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-13 transcripts and wiki files.
+    Current status: UNTESTED
+  Claim to test (in-house): Ask Tom to confirm or reword the six LOUGHRAN-MARKS candidates before review.
+
+<!-- 14a/14b intake 2026-10-13 (local): 22 items: 4 literature (ASSUMPTION-1796, PRESUMPTION-1135, PRESUMPTION-1137, PRESUMPTION-1138), 18 [IN-HOUSE]. 1790, 1795, 1797, 1803, 1805 not queued (recurrences). -->
+
+<!-- 15a/15b/15c run 2026-10-14: 4 literature items from the 2026-10-13 intake searched and dispositioned (DISPOSITION-1081..1084): ASSUMPTION-1796 → PREMISE-236; PRESUMPTION-1135 → PREMISE-237; PRESUMPTION-1137 → attached to PREMISE-233; PRESUMPTION-1138 → MONITOR-690. 18 [IN-HOUSE] items of that intake not in literature lane; 131-item bare backlog untouched. -->

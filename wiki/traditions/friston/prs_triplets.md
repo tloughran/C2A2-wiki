@@ -718,7 +718,34 @@ PRS-78:
   Confidence: Speculative
   Evidence: Prediction-level only; drawn from the secondary summary of the results section. Primary full text not read in this pass.
 
-*Total PRS triplets: 78*
+PRS-79:
+  Problem: Predictive coding, active inference, reward learning and generative AI are usually told as separate histories, which hides whether they are one idea or several.
+  Resource: A "reverse history" that begins from the free energy principle: any multidimensional random dynamical system, "from a postsynaptic process ... to a person," can be described as minimizing variational free energy. Predictive coding then follows as a general description of self-organizing open systems.
+  Solution: The developments become special cases of one scheme. Generative models unify the line "from Helmholtz's unconscious inference, through 20th century developments in variational calculus, to the mechanics of predictive coding," and the same models underwrite generative AI.
+  Date Added: 2026-10-14
+  Source: The phantastic organ: predictive processing in the brain (Parr & Friston, Frontiers in Psychology 17, doi 10.3389/fpsyg.2026.1901293, 2026-09-25); PROP-2026-10-12-002
+  Confidence: High (the section text and conclusion were read directly)
+  Evidence: Section 8 ("A reverse history of predictive coding: neurobiology from first principles") and Section 11 (Conclusion). Register note: "can be described as" keeps this inside the "as if" reading of PRS-42.
+
+PRS-80:
+  Problem: Standard predictive-processing models assume a fixed set of variables. They do not explain how a brain discovers which variables exist, or how those variables relate.
+  Resource: A mean-field partition of the unknowns in a generative model: fast-changing states, precision (which sets how far each signal is trusted), and slowly changing parameters, plus a fourth attribute, structure (the model's architecture and functional form). This yields a three-way distinction between inference, learning, and selection.
+  Solution: Structure learning becomes Bayesian model selection: choose the model with the greatest evidence, equivalently the smallest variational free energy. The authors call this the "mathematical image of natural selection at an evolutionary timescale," which places causal discovery in the brain inside the same free-energy scheme.
+  Date Added: 2026-10-14
+  Source: The phantastic organ: predictive processing in the brain; PROP-2026-10-12-002
+  Confidence: Medium (the section's opening argument was read; the later, more technical part of Section 10 was not)
+  Evidence: Section 10 ("Structured predictions: causal discovery in the brain"): "The distinction between model states, parameters and structure leads to a distinction between inference, learning and selection ... one simply selects the model with the greatest evidence (or smallest variational free energy)."
+
+PRS-81:
+  Problem: How do the pieces of the program connect to brain anatomy and physiology closely enough to be tested?
+  Resource: The review's stated aim to "furnish a framework that brings theory and empirical study in close contact, through generating mechanistic (anatomical and physiological) hypotheses about sense-making in the brain," with precision treated as neuromodulatory gain ("representational sharpening").
+  Solution: Consolidates the program's empirical agenda (precision as gain, applied to clinical disorders including hallucinations and apathy) as a single source of hypotheses, continuing the precision-psychiatry line (PROP-2026-05-18-003).
+  Date Added: 2026-10-14
+  Source: The phantastic organ: predictive processing in the brain; PROP-2026-10-12-002
+  Confidence: Medium (a review; its new content is mostly in how it synthesizes the field)
+  Evidence: Abstract; Section 3 ("The importance of being precise: neuromodulation and representational sharpening").
+
+*Total PRS triplets: 81*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

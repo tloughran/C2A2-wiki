@@ -1289,7 +1289,34 @@ PRS-142:
   Confidence: Speculative
   Evidence: Same secondary-summary caveat as PRS-CANDIDATE-01 — the ScienceDirect page itself was not read directly (see Provenance Note); this is a description of a description.
 
-*Total PRS triplets: 142*
+PRS-143:
+  Problem: Neuroscience assumes a fairly tight mapping between particular brain tissue and particular cognitive capacities. A body of clinical data does not fit that assumption, and the field tends to treat it as noise.
+  Resource: A structured review of "unconventional multiscale information flow" cases, sorted into three classes: preserved function despite reduced or absent tissue (hydrocephalus, hemihydranencephaly); cognitive state decoupled from measured brain function (accidental awareness under anaesthesia, terminal lucidity); and capability exceeding apparent skill.
+  Solution: Treat these anomalies as data about how plastic the cognition-to-substrate mapping is, in parallel with the developmental plasticity Levin's lab shows in morphogenesis and in synthetic constructs. Use them to build a research roadmap rather than to argue for a finished theory.
+  Date Added: 2026-10-14
+  Source: "Mind-Body Interface: an experimental and Clinical Perspective" (Levin & Kofman, Society for Mind-Matter Research keynote, 2026-10-10), anchoring Kofman & Levin, "Cases of Unconventional Multiscale Information Flow Across the Mind-Body Interface," Mind and Matter 23(1):13-70, 2025; PROP-2026-10-12-001
+  Confidence: Medium (the paper's abstract was read in full; the 58-page body and the talk audio were not)
+  Evidence: Mind and Matter 23(1) abstract: "Reduced brain mass or absent brain tissue without the expected loss of function ... discrepancies between cognitive state and brain function ... and cases of cognitive abilities exceeding the apparent skill of the individual, all highlight interesting features of the immense plasticity of the mapping between cognition and its living substrate." Caution carried from the proposal: some secondary commentators read the paper as anti-physicalist; the authors present it as anomaly-cataloguing and a roadmap. Cite the paper, not the commentary.
+
+PRS-144:
+  Problem: How can one test a framework against anomalies without the test turning into a fight over interpretation?
+  Resource: A stated method: "highlight data which do not comfortably fit a specific dominant framework" and ask what the framework predicted, not what it can be stretched to accommodate.
+  Solution: Make "did the theory predict this?" the standard for comparing frameworks of embodied mind. This fits the tradition's existing practice of scoring a research program by the new questions and experiments it generates.
+  Date Added: 2026-10-14
+  Source: "Mind-Body Interface: an experimental and Clinical Perspective" (Levin & Kofman keynote, 2026-10-10) / Mind and Matter 23(1):13-70; PROP-2026-10-12-001
+  Confidence: Medium
+  Evidence: Same abstract: "One of the most interesting approaches to any field, which often leads to progress, is to highlight data which do not comfortably fit a specific dominant framework."
+
+PRS-145:
+  Problem: If cognition is only loosely tied to particular tissue, what fixes which competencies a living system shows?
+  Resource: The "Platonic space of competencies" and "categories of Platonic forms" (talk chapters 41:11 and 57:19), together with "patterns and physical embodiment" (61:18).
+  Solution: The talk applies the Platonic-space model (already in the wiki from 2026-03/04 sources; see PRS-16, PRS-34, PRS-79) to the clinical anomalies, so that embodiment works as a filter or interface on patterns rather than as the sole generator of mind.
+  Date Added: 2026-10-14
+  Source: "Mind-Body Interface: an experimental and Clinical Perspective" (Levin & Kofman keynote, 2026-10-10); PROP-2026-10-12-001
+  Confidence: Speculative
+  Evidence: Episode chapter list only (Thoughtforms Life feed, published 2026-10-10); no transcript could be retrieved. The linkage of the Platonic-space chapters to the clinical anomalies is inferred from chapter order, not heard.
+
+*Total PRS triplets: 145*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

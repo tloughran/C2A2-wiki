@@ -230,3 +230,12 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-27-002` — The Myth of Redemptive Violence (blog, https://cac.org/daily-meditations/the-myth-of-redemptive-violence/) → PRS-104
 - `PROP-2026-10-04-003` — God's Resting Place (blog, https://cac.org/daily-meditations/gods-resting-place/) → PRS-105, PRS-106
 - `PROP-2026-10-04-001` — Thérèse of Lisieux: The Way of Love: Weekly Summary (blog, https://cac.org/daily-meditations/therese-of-lisieux-the-way-of-love-weekly-summary/) → PRS-107, PRS-108
+
+### Ingest 2026-10-14
+
+4 triplets added from 2 approved proposals: PRS-109, PRS-110, PRS-111, PRS-112.
+
+- `PROP-2026-10-11-001` — Home Is Where We Begin (blog, https://cac.org/daily-meditations/home-is-where-we-begin/) → PRS-109, PRS-110
+- `PROP-2026-10-11-002` — Francis and the Natural World: Weekly Summary (blog, https://cac.org/daily-meditations/francis-and-the-natural-world-weekly-summary/) → PRS-111, PRS-112
+
+- 2026-10-14 — **Advances:** PRS-109 gives the tradition an explicit teleology, the clearest link yet between the Universal-Christ alpha/omega (PRS-03, PRS-11) and the two-halves-of-life frame: the end operates from the start as an implanted desire, with no backward causation. Opens the CAC "Returning Home" series (revised *Falling Upward*, 2024); later meditations attach here. PRS-112 restates the contemplation-into-action cycle (cf. PRS-38) with Woodley's vulnerability as its fruit. **Opens:** PRS-110 (Speculative) asks whether "original union" is ontological or only experiential, which decides the Kastrup parallel; PRS-111 asks whether Franciscan kinship is shared descent (Boff, weak) or shared agency (Levin, strong); and Stump is asked whether "incarnation everywhere" blurs the hypostatic union or is Thomist participation. PRS-111/112 close the Francis/nature thread opened by PRS-105/106.

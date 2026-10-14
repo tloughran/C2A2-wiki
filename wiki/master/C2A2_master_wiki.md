@@ -1,5 +1,5 @@
 # C2A2 Master Wiki
-*Maintained by the Master C2A2 Agent | Last updated: 2026-10-10 (daily run - 1 decision, 3 triplets ingested, 0 pending)*
+*Maintained by the Master C2A2 Agent | Last updated: 2026-10-14 (daily run - 9 decisions, 19 triplets ingested; CROSS-152..155, FINDING-102..105)*
 *Network initialized: 2026-04-03 — within 24 hours of Karpathy's Wiki-agent methodology proposal*
 
 ---
@@ -8,7 +8,7 @@
 
 The C2A2 tradition-accelerator network consists of **13 agents** maintaining **11 research program Wikis** and **2 integration layers**. The network was initialized on 2026-04-03.
 
-**Current status:** Daily run complete (**2026-10-13, Tuesday** - Hawkins + Hoffman specialist day; Hoffman filed PROP-2026-10-13-001, Hawkins -002). **Phase 0:** no new `[C2A2-review-decision]` email (no decision yet on the 10-11/10-12 pages; the 4 old unread threads 04-08, 04-27 x2, 07-23 are archived). **Phase 1:** ledger approved=472 ingested=441 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, standing); 0 files ingested. **Phase 2:** 0 orchestrator proposals (Hawkins/Hoffman carded by specialist; Levin/Friston carded 10-12, Wolfram 10-10; McGilchrist, Kastrup, Carroll, Arkani-Hamed, Stump, Fredrickson searched, nothing new in window). **Phase 3:** `review/2026-10-13_review.html` (75,112 bytes, 9 proposals), opened. **Phase 4:** digest draft created. **Phase 5:** no review page past the 3-day window. **Phase 5.5:** Review Log 7,094,893 bytes, address-clean. **Phase 5.6:** Level-2 1695 signals (+0), 90 pairs, span to 2026-10-09, stale_days 4. **Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 9.
+**Current status:** Daily run complete (**2026-10-14, Wednesday** - McGilchrist + Kastrup specialist day; Kastrup filed PROP-2026-10-14-001, McGilchrist -002). **Phase 0:** `[C2A2-review-decision] 2026-10-13` (sent 10-13 16:09Z): 9 APPROVE (10-10-001, 10-11-001..004, 10-12-001..002, 10-13-001..002), all moved to approved/ and staged; archive `review/archive/2026-10-13_decisions.md`; 10-13 review page deleted. WARNING: ID collision - PROP-2026-10-13-001/-002 also carried by the evening-of-10-13 MacIntyre and Loughran cards; resolved to Hoffman/Hawkins (email predates those files); renumbering recommended. **Phase 1:** 9 files ingested, 19 triplets, 7 traditions; CROSS-152..155, FINDING-102..105, none escalated. Ledger approved=481 ingested=450 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, standing). **Phase 2:** 0 orchestrator proposals (Carroll, Arkani-Hamed, Stump, Fredrickson searched, nothing new in window; others carded 10-10..10-14). **Phase 3:** `review/2026-10-14_review.html` (37,376 bytes, 6 proposals), opened. **Phase 4:** digest draft created. **Phase 5:** no review page past the 3-day window. **Phase 5.5:** Review Log 7,184,680 bytes, triplets 1025, address-clean. **Phase 5.6:** Level-2 1733 signals (+38), 90 pairs, span to 2026-10-13, stale_days 1, no WARN; qc_trace.csv promoted. **Network: 1025 PRS / 155 CROSS / 105 FINDING.** Pending = 6.
 *Superseded status line (2026-10-11), retained for the run trail:* Daily run complete (**2026-10-11, Sunday** - no orchestrator-schedule specialist; Rohr and Wright cards present). **Phase 0:** no new `[C2A2-review-decision]` email (10-09 thread already processed 10-10; the 4 old unread threads 04-08, 04-27 x2, 07-23 are archived). **Phase 1:** ledger approved=472 ingested=441 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, standing); 0 files ingested. **Phase 2:** 0 orchestrator proposals (Rohr PROP-2026-10-11-001/-002 and Wright -003/-004 already carded; Wolfram carded 10-10; Levin, Friston, Kastrup, McGilchrist, Carroll, Hoffman, Hawkins, Arkani-Hamed, Stump, Fredrickson searched, nothing new in window; Hoffman 10-16 talk is a future event). **Phase 3:** `review/2026-10-11_review.html` (5 proposals), opened. **Phase 4:** digest draft created. **Phase 5:** 10-07 review page retired to `_superseded/`. **Phase 5.5:** Review Log 7,042,856 bytes, address-clean. **Phase 5.6:** Level-2 1695 signals (+0), 90 pairs, span to 2026-10-09, stale_days 2. **Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 5.
 *Superseded status line (2026-10-10), retained for the run trail:* Daily run complete (**2026-10-10, Saturday** - Wolfram specialist day; no Wolfram specialist card in pending/). **Phase 0:** decision email `[C2A2-review-decision] 2026-10-09` processed: **1 APPROVE** (Carroll PROP-2026-10-09-001, Mindscape 370, Akerib on the LZ dark-matter hint). **Phase 1:** 1 file ingested, **3 triplets** (carroll PRS-95..97). CROSS-150 (salting/blinding as a calibration control for the pattern detector) and CROSS-151 (WIMP program widening; Carroll x Arkani-Hamed, Speculative). FINDING-101, not escalated. **Network: 1006 PRS / 151 CROSS / 101 FINDING.** Pending = 0 before Phase 2.
 
@@ -188,29 +188,29 @@ The C2A2 tradition-accelerator network consists of **13 agents** maintaining **1
 
 ## Network Map — 13 Research Programs
 
-*PRS counts remeasured 2026-08-10 as per-file `^PRS-NN:` heading counts — the same method used for the status-line total, so the two agree by construction. The table had been carrying **April 2026** figures until this run.*
+*PRS counts remeasured **2026-10-14** as per-file `^PRS-NN:` heading counts (the parser `scripts/assemble_review_log.py` uses, which is also the Phase 5.5 "triplets" figure the status line carries), so table and status line agree by construction. `Last Updated` is now the newest `Date Added` in each file, not a run date. Previous remeasure 2026-08-10; the table had not been refreshed between the two.*
 
 | # | Agent | Thinker | Core Domain | PRS Count | Open Questions (April baseline — NOT recounted) | Last Updated |
 |---|-------|---------|-------------|-----------|----------------|--------------|
-| 01 | Levin Agent | Michael Levin | Bioelectricity, basal cognition | **82** | 6 | **2026-08-10** |
-| 02 | Friston Agent | Karl Friston | Free energy principle, active inference | **40** | 6 | **2026-08-09** |
-| 03 | Hoffman Agent | Donald Hoffman | Interface theory of perception | **39** | 6 | **2026-08-09** |
-| 04 | Hawkins Agent | Jeff Hawkins | Hierarchical temporal memory | **22** | 6 | **2026-08-09** |
-| 05 | McGilchrist Agent | Iain McGilchrist | Divided brain, meaning-making | **69** | 6 | **2026-08-10** |
-| 06 | Fredrickson Agent | Barbara Fredrickson | Positive psychology, flourishing | **38** | 6 | **2026-08-10** |
-| 07 | Stump Agent | Eleonore Stump | Thomistic philosophy, soul theory | **35** | 6 | **2026-08-10** |
-| 08 | Carroll Agent | Sean Carroll | Physics, cosmology, poetic naturalism | **67** | 6 | **2026-08-10** |
-| 09 | Arkani-Hamed Agent | Nima Arkani-Hamed | Amplituhedron, post-spacetime physics | **28** | 5 | **2026-08-09** |
-| 10 | Wolfram Agent | Stephen Wolfram | Ruliad, hypergraph physics | **54** | 6 | **2026-08-10** |
-| 11 | Kastrup Agent | Bernardo Kastrup | Analytic idealism, consciousness | **63** | 6 | **2026-08-10** |
-| 12 | Rohr Agent | Richard Rohr | Contemplative Christianity, the path of descent | **44** | — | **2026-08-09** |
-| 13 | Wright Agent | N.T. Wright | New Testament history, second-temple Judaism | **41** | — | **2026-08-09** |
+| 01 | Levin Agent | Michael Levin | Bioelectricity, basal cognition | **145** | 6 | **2026-10-14** |
+| 02 | Friston Agent | Karl Friston | Free energy principle, active inference | **81** | 6 | **2026-10-14** |
+| 03 | Hoffman Agent | Donald Hoffman | Interface theory of perception | **52** | 6 | **2026-10-14** |
+| 04 | Hawkins Agent | Jeff Hawkins | Hierarchical temporal memory | **78** | 6 | **2026-10-14** |
+| 05 | McGilchrist Agent | Iain McGilchrist | Divided brain, meaning-making | **85** | 6 | **2026-10-07** |
+| 06 | Fredrickson Agent | Barbara Fredrickson | Positive psychology, flourishing | **47** | 6 | **2026-10-09** |
+| 07 | Stump Agent | Eleonore Stump | Thomistic philosophy, soul theory | **42** | 6 | **2026-09-24** |
+| 08 | Carroll Agent | Sean Carroll | Physics, cosmology, poetic naturalism | **97** | 6 | **2026-10-10** |
+| 09 | Arkani-Hamed Agent | Nima Arkani-Hamed | Amplituhedron, post-spacetime physics | **31** | 5 | **2026-09-02** |
+| 10 | Wolfram Agent | Stephen Wolfram | Ruliad, hypergraph physics | **71** | 6 | **2026-10-14** |
+| 11 | Kastrup Agent | Bernardo Kastrup | Analytic idealism, consciousness | **92** | 6 | **2026-10-09** |
+| 12 | Rohr Agent | Richard Rohr | Contemplative Christianity, the path of descent | **112** | — | **2026-10-14** |
+| 13 | Wright Agent | N.T. Wright | New Testament history, second-temple Judaism | **74** | — | **2026-10-14** |
 
-**Integration-layer tradition files (not agent-maintained research programs):** Loughran **9**, MacIntyre **5**. Grand total **636** PRS triplets across 15 tradition files.
+**Integration-layer tradition files (not agent-maintained research programs):** Loughran **12**, MacIntyre **6**. Grand total **1025** PRS triplets across 15 tradition files (2026-10-14; was 636 at the 2026-08-10 remeasure).
 
 **Three caveats on this table, stated rather than smoothed:**
 1. **The Open Questions column is an April baseline and was NOT recounted on 2026-08-10.** It is retained rather than deleted so nothing is lost, and labelled so nothing is believed. Rohr and Wright carry `—` because they have never had a figure in this column.
-2. **`Last Updated` distinguishes 2026-08-10 from 2026-08-09 on purpose.** The six traditions dated 08-09 filed **zero** triplets today because they were ingested yesterday — not because they were quiet. Five of them nonetheless filed substantive cross-program signals with no triplet attached (Hawkins' architectural challenge, Friston's thalamus disagreement, Hoffman's third restriction instance, Carroll's Trace-adjudication contact, Arkani-Hamed's third verification failure), and a table that reads only the PRS column will miss all five.
+2. *(2026-08-10 note; the column now uses each file's newest `Date Added`, see above.)* **`Last Updated` distinguishes 2026-08-10 from 2026-08-09 on purpose.** The six traditions dated 08-09 filed **zero** triplets today because they were ingested yesterday — not because they were quiet. Five of them nonetheless filed substantive cross-program signals with no triplet attached (Hawkins' architectural challenge, Friston's thalamus disagreement, Hoffman's third restriction instance, Carroll's Trace-adjudication contact, Arkani-Hamed's third verification failure), and a table that reads only the PRS column will miss all five.
 3. **Two files have internal count inconsistencies that predate this run and need a human**: `arkanihamed/prs_triplets.md` carries a duplicate `PRS-10` and two conflicting `*Total PRS triplets: 23*` lines; `stump/prs_triplets.md` has 35 headings but numbers to PRS-38. The table reports heading counts in both cases.
 
 See the [[traditions/_index|Tradition Index]] for direct links to all 15 thinker-tradition wikis.

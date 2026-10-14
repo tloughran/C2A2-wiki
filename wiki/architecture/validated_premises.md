@@ -8271,3 +8271,41 @@ PREMISE-235:
   Consistency: checked against PREMISE-188. No contradiction; corroborates and narrows it. Proposed (not applied): merge into PREMISE-188.
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1128 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1128_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1128_against.md
+
+PREMISE-236:
+  Date validated: 2026-10-14
+  Source item: ASSUMPTION-1796 (DISPOSITION-1081)
+  Statement: A REPLACEMENT PROXY REDUCES ERROR ONLY IF IT IS VALIDATED AND FAILS INDEPENDENTLY. Swapping one indicator for another counts as a fix only when (a) the new indicator has been checked at least once against an observation of the target state, and (b) its failure modes are not shared with the indicator it replaces (same model, same files, same schedule = shared). Otherwise record the change as relocation of error, not reduction.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Fleming & DeMets 1996 Ann Intern Med; Manheim & Garrabrant 2018; Bevan & Hood 2006 [summaries]
+  Challenges noted: Buyse, Molenberghs et al. 2000 Biostatistics (validated surrogates do reduce error); Reason 2000 BMJ (layered imperfect barriers work); qualified by Knight & Leveson 1986 (correlated failure common) [abstracts]
+  Confidence: Moderate
+  Applicable to: health checks, monitors, REVISE remedies that swap one signal for another; PREMISE-231, -232, -234
+  Re-check due: 2026-11-14 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-232 (adds independence; no contradiction) and PREMISE-234 (same-model re-check = one vote; consistent). Proposed (not applied): merge with PREMISE-232.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1796 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1796_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1796_against.md
+
+PREMISE-237:
+  Date validated: 2026-10-14
+  Source item: PRESUMPTION-1135 (DISPOSITION-1082)
+  Statement: AN ALL-CLEAR MUST NAME THE PEER REPORTS IT READ. Overlapping monitors raise detection only if their failures are independent and each FAIL reaches a decision. A summary or status report may say "no other issues" only if it lists the peer monitors covering the same target that it consumed, with their latest FAIL/PASS and timestamp; if it did not read them, it must say so. Overlap is not itself a defect, and a single aggregating owner is not adopted as the remedy.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Sagan 2004 Risk Analysis; Cymek, Jahn & Manzey 2018 (shared monitoring found 25% fewer failures; individual accountability restored the gain) [abstracts]
+  Challenges noted: Landau 1969 PAR; Bendor 1985 (independent redundancy raises detection); central aggregation = single point of failure and alarm-flood risk (engineering/alarm-management practice) [abstracts/secondary]
+  Confidence: Moderate
+  Applicable to: morning project status, scheduler health, system health, telemetry reports; PREMISE-229, -230; MONITOR-689
+  Re-check due: 2026-11-14 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-229/230 (silence is not evidence) and PREMISE-234. No contradiction.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1135 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1135_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1135_against.md
+
+PREMISE-233: [ATTACHMENT 2026-10-14, DISPOSITION-1083 ← PRESUMPTION-1137; scope extension, no new number]
+  Scope extended: the ABSTRACT-TIER rule applies equally to model-written summaries and to a pipeline's own card text. Such text is triage, not record, and a PRS candidate built from it carries the ABSTRACT-TIER label until it is checked against full text.
+  New evidence: Li et al. 2017 BMC Med Res Methodol 17:181 [full text] (median 39% of abstracts inconsistent with the full report, 19% major); Peters & Chin-Yee 2025 (LLM summaries overgeneralise) [abstract]; Kim et al. 2024 FABLES (book-summary omission and end-weighting; best model ~90% claim-faithful) [abstract].
+  Not validated either way: chapter titles and tables of contents as guides to a work's structure (no data found in either direction; 15a NOVELTY note, low confidence). Humanities transfer remains the main caveat.
+  Confidence: Moderate (unchanged).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1137 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (attached to PREMISE-233)
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1137_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1137_against.md

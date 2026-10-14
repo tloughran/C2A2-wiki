@@ -777,3 +777,22 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [BRIDGE, SPECULATIVE] **WIMP program widening under null results** (CROSS-151): Carroll × Arkani-Hamed, Lakatos/MacIntyre progressive-shift test case. Single 2.8-sigma event.
 
 [EVALUATED: 2026-10-10 - FINDING-101; see pattern_detector_findings.md]
+
+
+### Forwarded 2026-10-14 (Master Agent, 9-card ingest, decision email 2026-10-13)
+
+- [SHARED ANOMALY DATA] **Terminal lucidity and low-cortex function as an anomaly catalogue both filter and physicalist accounts must answer** (CROSS-152; levin PRS-143..145). Kastrup/McGilchrist read these as filter data; Hawkins column redundancy and Friston model-rebuilding are the mechanistic rivals. Abstract-level evidence; PRS-145 Speculative. Bears on FLAG-014.
+
+- [EXPLANATORY BRIDGE CANDIDATE] **Structure learning as model selection, from Friston and TBP the same week** (CROSS-153; friston PRS-79..80, hawkins PRS-77..78). Merge-on-agreement ~ Bayesian model reduction; split-on-error ~ structure learning. Hawkins side Speculative and TBP team output.
+
+- [PARADIGM-BRIDGE NOMINATION, SUMMA THEME] **"Loving unity as telos present from the start"** (CROSS-154; rohr PRS-109..110). Card nominates it for the Summa 2026 central theme. Read against CROSS-108 (Scotist univocity vs Thomist analogy) before treating Rohr × Stump agreement as real.
+
+- [TENSION] **Wright covenant faithfulness vs Thomist infused justice** (CROSS-155; wright PRS-71..72). Description-only episode. A second Summa-theme nomination rides on this card (covenant righteousness as "inclusion in the people united with God").
+
+- [CONVERGENCE, EXTENDS CROSS-141] **Wright reads OT violence through the cross** (wright PRS-73) beside Rohr PRS-104. Description-level.
+
+- [PIPELINE, EVIDENCE] **Evidence weather:** of 19 triplets, Speculative = levin PRS-145, hawkins PRS-77..78, hoffman PRS-52, rohr PRS-110, wright PRS-74 (6). Abstract or description only = levin PRS-143..145, wright PRS-71..74, hawkins PRS-77..78 (forum summary), hoffman PRS-52 (chapter title). friston PRS-79 High (read directly).
+
+- [PIPELINE, ID COLLISION] **PROP-2026-10-13-001/-002 are carried by two pairs of files**: the Hoffman and Hawkins cards, and the later-written MacIntyre and Loughran candidate files. Resolved to Hoffman/Hawkins for this decision; the other two remain in pending/ under duplicate ids.
+
+[EVALUATED: 2026-10-14 - FINDING-102..105; see pattern_detector_findings.md]

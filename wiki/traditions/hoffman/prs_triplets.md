@@ -492,5 +492,14 @@ PRS-51:
   Confidence: Speculative
   Evidence: Event title and description as published on the Events page.
 
-*Total PRS triplets: 51*
+PRS-52:
+  Problem: Can a theory that treats spacetime as an interface yield anything engineerable, and not only a reinterpretation of physics?
+  Resource: A proposed "new AI architecture" linked to "zero surprise," named as the closing chapter of the Trace Institute's first podcast episode.
+  Solution: Unknown from available material. The chapter title implies Hoffman ties conscious-agent dynamics to an AI design built around minimizing or eliminating surprise. Extends PRS-49 (construction of working systems, including modular AI under trace logic, as the falsification surface) from a stated principle toward a named architecture.
+  Date Added: 2026-10-14
+  Source: The Trace Podcast, Episode 1: Traces of Consciousness; PROP-2026-10-13-001
+  Confidence: Speculative
+  Evidence: Chapter list on the Trace Institute podcast page (1:20:50, "Zero surprise and a new AI architecture"); the episode was not watched and no transcript was retrieved. The proposing card itself recommends treating this as an acquisition lead (watch 1:20:50 to the end) rather than a triplet; it is recorded as a placeholder on that basis. INGEST NOTE: "zero surprise" is already Hoffman's own trace-logic vocabulary in this file (PRS-07: M ≤ N iff M is the "zero-surprise view" of N), so the phrase may name the trace relation rather than borrow Friston's surprise-minimization; which reading is meant is unverified.
+
+*Total PRS triplets: 52*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

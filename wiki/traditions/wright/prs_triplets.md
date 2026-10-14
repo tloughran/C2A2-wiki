@@ -659,4 +659,40 @@ PRS-70:
   Confidence: Speculative
   Evidence: One line in the show notes only.
 
-*Total PRS triplets: 70*
+PRS-71:
+  Problem: What does Paul mean by "the righteousness of God," and does the usual forensic-only rendering lose content?
+  Resource: Wright's covenant reading, traced via Abraham (Gen 15), Phinehas (Ps 106 / Num 25), Romans and 2 Cor 5:21.
+  Solution: God's righteousness names God's faithfulness to the covenant promise to put the world right through Abraham's family; justification is God's declaration of membership in that family. No one English word carries the range.
+  Date Added: 2026-10-14
+  Source: N.T. Wright on church councils, biblical righteousness and Jesus' Ascension; PROP-2026-10-11-003
+  Confidence: Medium (the position is well established in Wright's books; this episode's details are known only from the episode description)
+  Evidence: Episode description; *Paul and the Faithfulness of God* (2013) and *Justification* (2009) for the full argument. No transcript read.
+
+PRS-72:
+  Problem: How should a tradition weigh conciliar creeds against Scripture when they seem to diverge in emphasis?
+  Resource: Wright's ordering: creeds as authoritative summaries, Scripture as primary authority.
+  Solution: Creeds are kept as guardrails but are read back into the narrative they summarize, not the reverse.
+  Date Added: 2026-10-14
+  Source: N.T. Wright on church councils, biblical righteousness and Jesus' Ascension; PROP-2026-10-11-003
+  Confidence: Medium
+  Evidence: Episode description, question 1. The episode's Ascension item reinforces PRS-67 and PRS-69 and was not entered as a new triplet.
+
+PRS-73:
+  Problem: How can divine commands to violence in the Old Testament be reconciled with the God revealed in Jesus?
+  Resource: Wright's narrative-climax reading: judgment, Israel's failures, and the cross as the story's interpretive climax.
+  Solution: The texts are neither cut out nor read flat; their meaning is fixed by where the whole story arrives, the cross, where God takes violence on himself.
+  Date Added: 2026-10-14
+  Source: Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel; PROP-2026-10-11-004
+  Confidence: Medium (description-level evidence; consistent with *Evil and the Justice of God*, 2006)
+  Evidence: Episode description, question 3. No transcript read.
+
+PRS-74:
+  Problem: What kind of document is Acts, and what drives its plot?
+  Resource: Wright: the gospel message itself as protagonist.
+  Solution: Acts narrates the spread of a message that acts in history, Jerusalem to Rome; human characters serve that movement.
+  Date Added: 2026-10-14
+  Source: Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel; PROP-2026-10-11-004
+  Confidence: Speculative
+  Evidence: Episode description, question 2. The Mark-ending item duplicates an existing Mike Bird card and was not entered.
+
+*Total PRS triplets: 74*

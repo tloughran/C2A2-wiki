@@ -1358,3 +1358,34 @@ The Carroll card proposes salting — seeding the detector's input with known sy
 **Evidence weather.** Transcript read in full to ~1:04:30 of 1:16, then Carroll's lines only. PRS-95 High (Carroll's own intro), PRS-96 and PRS-97 Medium (arguments largely Akerib's).
 
 **Not escalated this run, with reason.** No HIGH or MEDIUM-HIGH signal in this batch.
+
+
+## FINDING-102 — The anomaly cases now arrive from the empirical side, framed as a roadmap rather than an argument
+
+**Date:** 2026-10-14 · **Source signals:** CROSS-152 (levin PRS-143..145, PROP-2026-10-12-001)
+**Confidence:** Medium · **Recommended action:** Levin agent reads the full Kofman & Levin paper (58 pp.); Hawkins and Friston agents each state what their account predicts for terminal lucidity specifically
+
+Terminal lucidity and function with little cortex have long been Kastrup's and McGilchrist's exhibits. What changes here is who catalogues them and how: an empirical biologist sorts them into three classes and proposes "did the theory predict this?" as the comparison standard (PRS-144). That makes the cases a candidate common test rather than one side's evidence. Two limits keep this at Medium. First, the mechanistic rivals (column redundancy, model rebuilding) both address the tissue-loss class and neither addresses terminal lucidity, which is the class that would actually discriminate; until someone states a prediction for it, no account has been tested. Second, only the abstract was read, and the filter reading (PRS-145) is Speculative. Bears on FLAG-014 but does not raise it.
+
+## FINDING-103 — Same-week convergence on structure learning; the separating question is merge versus link
+
+**Date:** 2026-10-14 · **Source signals:** CROSS-153 (friston PRS-79..80, PROP-2026-10-12-002; hawkins PRS-77..78, PROP-2026-10-13-002); extends CROSS-144
+**Confidence:** Medium · **Recommended action:** keep as an explanatory-bridge candidate; ask both agents whether merge-on-agreement and Bayesian model reduction make the same prediction for the TBP cube-and-logo case
+
+Two programs describe model restructuring by evidence in the same week: Friston formally (model selection as the image of natural selection), TBP in a working prototype (merge on agreement, split on error). CROSS-144 already had surprise driving structure; this adds the opposite direction, agreement licensing simplification, which is the core of Bayesian model reduction. The bridge is real at the level of description. It is not yet a result: the Hawkins side is two Speculative triplets from a forum summary, the work is TBP team output (FINDING-092), and TBP itself leaves open whether the cortex merges or links models (PRS-78). That open question is the useful part, because model reduction predicts merging under equal evidence. Not escalated: nobody has yet named an observation that separates the accounts, the same reason CROSS-144 was not escalated (FINDING-098).
+
+## FINDING-104 — Two Summa-theme nominations in one batch, and one needs an audit before it can be counted
+
+**Date:** 2026-10-14 · **Source signals:** CROSS-154 (rohr PRS-109..110), CROSS-155 (wright PRS-71..72), CROSS-141 extension (wright PRS-73)
+**Confidence:** Medium-Low · **Recommended action:** Stump agent rules on (a) whether Rohr's "planted desire" matches Aquinas on natural desire, under the CROSS-108 univocity/analogy audit, and (b) whether covenant faithfulness and infused justice conflict; no Summa-page link until both are answered
+
+Both the Rohr and the Wright card nominate their material as the scriptural or contemplative form of the Summa 2026 central theme (loving unity as telos; salvation as inclusion in the people united with God). Nominations of this theme have recurred in the corpus since July (Wright PROP-2026-07-05-002, Rohr July material). A recurring nomination is not independent confirmation: the same proposing pipeline writes the "C2A2 master / paradigm flags" line on every card, so frequency here partly measures the prompt. The Rohr × Stump agreement carries the CROSS-108 risk that it holds only in English. The Wright side rests on an episode description. The violence convergence (Wright PRS-73 beside Rohr PRS-104) is the most solid item in this cluster and strengthens CROSS-141, but it is a convergence on a position both already held. Not escalated.
+
+## FINDING-105 — Evidence weather for this batch, and a proposal-ID collision
+
+**Date:** 2026-10-14 · **Source signals:** 9 cards, 19 triplets; PROP-2026-10-13-001/-002
+**Confidence:** High · **Recommended action:** re-number the MacIntyre and Loughran candidate files in pending/ before they are reviewed; Hoffman agent replaces PRS-52 once the Trace podcast chapter is heard
+
+Six of 19 triplets are Speculative (levin PRS-145, hawkins PRS-77..78, hoffman PRS-52, rohr PRS-110, wright PRS-74). Abstract-, description- or summary-level only: levin PRS-143..145, wright PRS-71..74, hawkins PRS-77..78, hoffman PRS-52 (whose Solution reads "unknown from available material"; it is a placeholder). friston PRS-79 is High (read directly). Skips, correctly made: Hoffman CANDIDATE-01 (duplicate), the Wright Ascension and Mark-ending items (Ascension already approved 2026-09-27), and Wolfram PRS-71 narrowed to the stated position. **ID collision:** PROP-2026-10-13-001/-002 also label the MacIntyre and Loughran candidate files, written after the decision email; resolved to Hoffman/Hawkins this run. A decision keyed by proposal_id would be ambiguous if those two files are approved under the same ids. The "zero surprise" Hoffman × Friston link was not minted: Hoffman uses the term natively (PRS-07).
+
+**Not escalated this run, with reason.** No HIGH or MEDIUM-HIGH signal. CROSS-152 and CROSS-153 are the strongest items; each lacks a stated discriminating prediction.

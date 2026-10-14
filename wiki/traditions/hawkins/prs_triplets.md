@@ -734,7 +734,25 @@ PRS-76:
   Confidence: Speculative
   Evidence: TBP summary: "new ways to merge object models or split them into reusable parts." Method details not readable.
 
-*Total PRS triplets: 76*
+PRS-77:
+  Problem: PRS-72 and PRS-76 record that Monty can now merge and split object models, but not what decides when to merge, when to split, or where in the hierarchy it happens.
+  Resource: The dedicated hackathon-prototype presentation (Niels Leadholm): a three-level Learning Module hierarchy (LM0 learns 3D child objects, LM1 learns 2D features such as logos, LM2 composes them), with prediction outcomes as the trigger. Models that keep making compatible predictions are merged; features that cause prediction errors are split out as reusable sub-components (e.g. a utensil's shared handle versus its distinct head).
+  Solution: Refines PRS-72/PRS-76 from "merge and split exist" to a specific criterion: prediction agreement licenses merging, prediction error locates the seams for splitting. Demonstrated on a cube with a logo (about 5:26 in the main video). Feature noise, symmetry, and fast versus slow learning systems are named as open issues. No quantitative evaluation reported.
+  Date Added: 2026-10-14
+  Source: 08/2026 - Reference Frame Merging & Splitting (a Hackathon Prototype); PROP-2026-10-13-002
+  Confidence: Speculative
+  Evidence: Forum announcement (forum.thousandbrains.org/t/1220) summarising the LM0/LM1/LM2 hierarchy and the merge/split mechanisms; the videos were not watched. TBP-team work presented by Leadholm, not Hawkins directly.
+
+PRS-78:
+  Problem: Is merging of cortical models biologically plausible, or does the cortex keep linked but separate representations of the same thing?
+  Resource: A reply on the prototype's forum thread (Ariel_Perez, 2026-10-10), using a map-orientation example and attributing a related view on the biological feasibility of merging to Hawkins.
+  Solution: None yet. An open disagreement that sets implementation convenience (one merged model) against biological plausibility (two linked representations). Bears on PRS-77's mechanism and on Active Research Question 8 (re-binding): if the cortex links rather than merges, re-binding is a question about link maintenance, not model revision.
+  Date Added: 2026-10-14
+  Source: 08/2026 - Reference Frame Merging & Splitting (a Hackathon Prototype); PROP-2026-10-13-002
+  Confidence: Speculative
+  Evidence: Thread reply dated 2026-10-10. Community comment; the Hawkins attribution is unverified (the page does not show where Hawkins said it).
+
+*Total PRS triplets: 78*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

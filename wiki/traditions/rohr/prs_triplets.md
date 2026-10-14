@@ -1005,4 +1005,40 @@ PRS-108:
   Confidence: Speculative
   Evidence: Thursday recap only; needs the full meditation text.
 
-*Total PRS triplets: 108*
+PRS-109:
+  Problem: How can a final end act on an agent before it is reached, without positing backward causation?
+  Resource: Rohr's "homing device": one origin-union that both sends and draws (Cosmic Christ as alpha and omega).
+  Solution: The telos is present from the start as an implanted desire, so being "pulled" by the end and "pushed" by the origin are one structure seen from two times.
+  Date Added: 2026-10-14
+  Source: Home Is Where We Begin; PROP-2026-10-11-001
+  Confidence: Medium
+  Evidence: Meditation text, paragraphs 2–3 (alpha/omega; God plants desire for what God wants to give). Adapted from the revised *Falling Upward* (2024), pp. 55–56; opens the CAC "Returning Home" series.
+
+PRS-110:
+  Problem: Why does longing for an ideal "home" persist even in people whose actual origins were bad?
+  Resource: Original union as a foundational seed prior to biographical experience.
+  Solution: The longing indexes a pre-biographical union, not a memory of a good childhood; this explains its persistence across histories.
+  Date Added: 2026-10-14
+  Source: Home Is Where We Begin; PROP-2026-10-11-001
+  Confidence: Speculative
+  Evidence: Paragraph 2 (children with sad or abusive childhoods still long for "home").
+
+PRS-111:
+  Problem: Is the Franciscan claim of kinship with all creatures metaphor or fact?
+  Resource: Boff's appeal to shared genetic code; Delio on the *Canticle* as cosmic kinship.
+  Solution: Kinship is literally grounded in common descent; the contemplative intuition and the biological finding describe one relation at two levels.
+  Date Added: 2026-10-14
+  Source: Francis and the Natural World: Weekly Summary; PROP-2026-10-11-002
+  Confidence: Medium
+  Evidence: Wednesday (Boff) and Tuesday (Delio) excerpts as quoted in the summary. Closes the Francis/nature series opened by PROP-2026-10-04-003 (PRS-105, PRS-106).
+
+PRS-112:
+  Problem: Does contemplation lead away from the world or into it?
+  Resource: Woodley: contemplation issues in vulnerability; Rohr: creation-cathedral drives Francis back to the city.
+  Solution: Contemplation and action form a cycle; withdrawal is justified only as a phase that returns to engagement.
+  Date Added: 2026-10-14
+  Source: Francis and the Natural World: Weekly Summary; PROP-2026-10-11-002
+  Confidence: Medium
+  Evidence: Sunday and Friday excerpts.
+
+*Total PRS triplets: 112*

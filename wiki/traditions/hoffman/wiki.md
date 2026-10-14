@@ -50,6 +50,7 @@ Loughran's synthesis positions Hoffman's CR as providing the metaphysical framew
 21. **OPEN PROVENANCE ITEM (2026-08-28)** — Prentner's *Quantum Interface Theory* is cited on the Trace Institute publications page as *JCS* **33(1–2), 194–210**; this vault records it as "Vol. 33 Issue 1" in PRS-11 and unpaginated in PRS-12. Surfaced by PROP-2026-08-11-002, which explicitly routed it to the master agent as "not worth a proposal, but worth a one-line correction whenever the Prentner triplets are next touched." Not silently corrected here, per the same no-retro-edit practice that left the item-17 date discrepancy standing. Second open provenance item in this tradition; both are citation-metadata only and neither affects a claim.
 22. **Are Levin's metabolic-scarcity argument and Fitness-Beats-Truth the same *result*, despite not being the same argument?** Levin derives coarse-grained agential perception from **metabolic** limits; FBT derives non-veridical perception from **selective** payoffs. Both get a non-veridical but adaptive world-model out of a constraint that is not epistemic. The disanalogy is real and is why this is one exchange rather than a dispatch: if they are the same result, what is the common form? *(added 2026-09-02, dispatched from PROP-2026-08-14-002)*
 23. **Do Levin's interfaces and Hoffman's interfaces do the same work?** Levin's interface *hosts* a pattern that thereby becomes causally present; Hoffman's interface *hides* the agents behind it and makes the restricted view the only accessible one. Levin's interfaces add; Hoffman's subtract. This is the same sign inversion already recorded at Question 19 between trace logic and Arkani-Hamed's correlator result, now appearing on a third pair. **Three instances of one pattern with inconsistent signs is grounds for suspecting the word "interface" is doing different work in each.** Routed to the pattern detector; not recorded as convergence. *(added 2026-09-02, dispatched from PROP-2026-08-14-001; related to FINDING-061)*
+24. **OPEN ACQUISITION ITEM (2026-10-14)** — Watch *The Trace Podcast*, Episode 1, from 1:20:50 ("Zero surprise and a new AI architecture") to the end. PRS-52 is a placeholder: only the chapter title is known. Two things to settle: (a) whether "zero surprise" names the trace relation (PRS-07's "zero-surprise view") or Friston's surprise minimization, which bears on Question 13; (b) whether the architecture is specified enough to serve as the construction-based falsification surface PRS-49 proposes. The episode's "observer windows" / recursive-trace chapters were judged to restate PRS-07, PRS-08, PRS-30 and PRS-46 and were not ingested. *(PROP-2026-10-13-001)*
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -190,3 +191,9 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-22-003` — Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ) (talk, https://traceinstitute.org/events/) → PRS-50, PRS-51
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-14
+
+1 triplet added from 1 approved proposal: PRS-52.
+
+- `PROP-2026-10-13-001` — The Trace Podcast, Episode 1: Traces of Consciousness (podcast, https://www.youtube.com/watch?v=MIwh9_Stmm0) → PRS-52. PRS-CANDIDATE-01 (minimal observer / observer windows / recursive trace logic) skipped as a duplicate of PRS-07, PRS-08, PRS-30, PRS-46. Added Question 24 (acquisition).

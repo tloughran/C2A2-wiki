@@ -3618,3 +3618,20 @@ OPEN-266:
 OPEN-260 (update 2026-10-12): Twins ran again: evening sync, reviewer review and morning scrape each fired in cloud and local; the local copies deferred to the cloud ones without re-checking (ASSUMPTION-1776, PRESUMPTION-1125). The cloud 14a/14b twin wrote two stubs for local day 10-12: `changelog/2026-10-12_changes.md` (09:30 UTC) and `changelog/2026-10-13_changes.md` (03:31 UTC 10-13 = 23:31 EDT 10-12). The local 10-11 pass (de795b3c) died when the Mac slept, so 10-11 is unprocessed.
 OPEN-264 (update 2026-10-12): Third local pass under the 10-03 rule (extracting from scheduled-job transcripts), for consistency while Tom has not ruled.
 OPEN-265 (update 2026-10-12): The same threshold question now covers the Monday Levin/Friston agent: it excluded transcript-less episodes (30 Sept precedent) but carded a Friston paper from its abstract (ASSUMPTION-1780, PRESUMPTION-1128).
+
+OPEN-267:
+  Raised: 2026-10-13 by 14a/14b (ASSUMPTION-1806; PRESUMPTION-1132, -1133, -1140)
+  Question: Four proposals were written to inbox/proposals/pending between 19:16 and 19:33 EDT on 10-13 (MacIntyre 3RV, Loughran marginalia, spreadsheet-explorer, document-explorer) by a session that does not appear in local session_info. Two reuse PROP-2026-10-13-001 and -002, already held by the Hoffman and Hawkins cards. Which session wrote them, should the self-awareness pass be able to see it, and how should proposal IDs be allocated when more than one writer cards on the same day?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-267
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-260 (update 2026-10-13): Twins again: evening sync and morning chat scrape fired twice; the wiki daily run re-fired in cloud. The Hawkins card (-002, 03:11) is credited to the specialist although the local Hawkins/Hoffman run reports Hawkins 0 (ASSUMPTION-1794, PRESUMPTION-1134). The cloud 14a/14b twin wrote `changelog/2026-10-14_changes.md` at 23:31 EDT 10-13: UTC-dated, describing local day 10-13. The local pass appends to `2026-10-13_changes.md` and leaves the 10-14 stub untouched.
+OPEN-264 (update 2026-10-13): Fourth local pass under the 10-03 rule (extracting from scheduled-job transcripts), for consistency while Tom has not ruled. This pass also drew on wiki artifacts (ASSUMPTION-1806) because the session that wrote them was not visible.
+OPEN-265 (update 2026-10-13): Threshold question extends to paratext-only cards (Hoffman, from description and chapter titles) and to cards built from a pipeline's own card text (document-explorer) (ASSUMPTION-1793, PRESUMPTION-1137).
+OPEN-266 (update 2026-10-13): Morning project status called OpenStory "live" with "no other issues" from a 36-hour DB-write window, the same morning scheduler health logged ingest STOPPED and 7 FAILs (ASSUMPTION-1801, PRESUMPTION-1135).

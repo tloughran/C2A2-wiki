@@ -2287,3 +2287,43 @@ content.wolfram.com path, no indexed summary. Content unverifiable, so not propo
 
 ## 2026-10-13 — second C2A2 run (cloud scheduled, re-fire)
 Phase 0: no decision emails. Phase 1: ledger unchanged (0 ingested). Phase 2: skipped, searches already done earlier today. Phase 3/4: review page + draft from earlier run retained, no duplicate. Phase 5.5 OK address-clean; 5.6 OK 1695 signals, stale_days 4. Pending = 9. Network unchanged: 1006 PRS / 151 CROSS / 101 FINDING.
+
+## 2026-10-14 — C2A2 daily run (Wed, McGilchrist + Kastrup specialist day)
+
+**Phase 0: one decision email, 9 APPROVE.** `[C2A2-review-decision] 2026-10-13` (thread 1a13606d264d78fc, sent 10-13 16:09Z). All 9 moved
+to `inbox/proposals/approved/` and staged to `inbox/`. Archive `review/archive/2026-10-13_decisions.md`. Email appended to
+`provenance/decision_emails.json` (20 emails). `review/2026-10-13_review.html` deleted.
+**WARNING, ID collision:** PROP-2026-10-13-001/-002 are also carried by `2026-10-13_macintyre_prs-candidates-3rv.md` and
+`2026-10-13_loughran_prs-candidates-marks.md`, both written after the email. Resolved to the Hoffman/Hawkins cards the page showed.
+Those two, plus `2026-10-13_spreadsheet-explorer_prs-candidates.md` (-003) and `2026-10-13_document-explorer_prs-candidates.md` (-004),
+left in `pending/`. FINDING-105 recommends re-numbering the colliding pair before review.
+
+**Phase 1: 9 files ingested, 19 triplets, 7 traditions.** Ledger after: approved total=481 ingested=450 decided-zero=29 OPEN=1 (Wright PROP-2026-08-14-033, unchanged).
+
+| File | Processed By | Date | Triplets Extracted | Notes |
+|------|-------------|------|-------------------|-------|
+| `2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing.md` | Wolfram Agent + Master Agent + Pattern Detector | 2026-10-14 | 2 (PRS-70..71) | PROP-2026-10-10-001. Math certification/publishing under AI; LLM math as recombination. PRS-71 narrowed to the stated position. Extends CROSS-143. |
+| `2026-10-12_levin_mind-body-interface-kofman-keynote.md` | Levin Agent + Master Agent + Pattern Detector | 2026-10-14 | 3 (PRS-143..145) | PROP-2026-10-12-001. Kofman & Levin, Mind and Matter 23(1); abstract only. PRS-145 Speculative. CROSS-152; FINDING-102. |
+| `2026-10-12_friston_phantastic-organ-predictive-processing.md` | Friston Agent + Master Agent + Pattern Detector | 2026-10-14 | 3 (PRS-79..81) | PROP-2026-10-12-002. Parr & Friston; PRS-79 High. CROSS-153; FINDING-103. |
+| `2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness.md` | Rohr Agent + Master Agent + Pattern Detector | 2026-10-14 | 2 (PRS-109..110) | PROP-2026-10-11-001. PRS-110 Speculative. CROSS-154; FINDING-104. |
+| `2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin.md` | Rohr Agent + Master Agent | 2026-10-14 | 2 (PRS-111..112) | PROP-2026-10-11-002. Rohr x McGilchrist / x Levin signals reviewed, not minted (already recorded / one-sided). |
+| `2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md` | Wright Agent + Master Agent + Pattern Detector | 2026-10-14 | 2 (PRS-71..72) | PROP-2026-10-11-003. Description-only episode. Ascension item skipped (reinforces approved 2026-09-27). CROSS-155. |
+| `2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero.md` | Wright Agent + Master Agent + Pattern Detector | 2026-10-14 | 2 (PRS-73..74) | PROP-2026-10-11-004. Mark-ending item skipped. PRS-74 Speculative. Extends CROSS-141. |
+| `2026-10-13_hoffman_trace-podcast-ep1-traces-of-consciousness.md` | Hoffman Agent + Master Agent + Pattern Detector | 2026-10-14 | 1 (PRS-52) | PROP-2026-10-13-001. Speculative placeholder; CANDIDATE-01 skipped as duplicate. "Zero surprise" x Friston not minted (native Hoffman term, PRS-07). |
+| `2026-10-13_hawkins_reference-frame-merging-splitting.md` | Hawkins Agent + Master Agent + Pattern Detector | 2026-10-14 | 2 (PRS-77..78) | PROP-2026-10-13-002. TBP team output (Leadholm), forum summary; both Speculative. CROSS-153; FINDING-103. |
+
+Totals after: wolfram 71, levin 145, friston 81, rohr 112, wright 74, hoffman 52, hawkins 78. Of 19 triplets, 6 Speculative.
+Master / Pattern Detector: CROSS-152 (terminal lucidity / low-cortex anomaly catalogue), CROSS-153 (structure learning as model
+selection, Friston x TBP), CROSS-154 (desire for union at origin, Rohr x Stump, under the CROSS-108 audit), CROSS-155 (covenant
+faithfulness vs infused justice, Wright x Stump); CROSS-141 and CROSS-143 extended without new ids. 7 signals forwarded;
+FINDING-102..105; none escalated (no HIGH or MEDIUM-HIGH). Network map table in the master wiki remeasured (1025 PRS).
+
+**Phase 2: 0 proposals.** Kastrup (PROP-2026-10-14-001) and McGilchrist (-002) carded by specialist. Searched Carroll, Arkani-Hamed, Stump, Fredrickson: nothing new in window that passes the filter. Levin/Friston carded 10-12, Hawkins/Hoffman 10-13, Wolfram 10-10, Rohr/Wright 10-11.
+**Phase 3.** `review/2026-10-14_review.html` (37,376 bytes, 6 proposals: MacIntyre 10-13-001, Loughran 10-13-002, spreadsheet-explorer 10-13-003, document-explorer 10-13-004, Kastrup 10-14-001, McGilchrist 10-14-002), opened via Desktop Commander `open`.
+**Phase 4.** Gmail draft created (r1038641100452341278), with an ID-collision heads-up.
+**Phase 5.** No review page past the 3-day window (10-11, 10-12, 10-14 present).
+**Phase 5.5.** OK: 7,184,680 bytes; triplets 1025; cards 529, dates 148, responses 20; 22 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1733 signals (+38), 90 pairs, span to 2026-10-13, stale_days 1, no WARN; qc_trace.csv promoted (harvest content changed).
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network: 1025 PRS / 155 CROSS / 105 FINDING.** Pending = 6.

@@ -3352,6 +3352,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-11-004",
+  "tradition": "wright",
+  "source_date": "2026-09-21",
+  "title": "Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mar",
+  "file": "inbox/proposals/approved/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-03-001",
   "tradition": "wolfram",
   "source_date": "2026-09-23",
@@ -3397,6 +3405,14 @@
   "source_date": "2026-09-24",
   "title": "Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversatio",
   "file": "inbox/proposals/approved/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-12-002",
+  "tradition": "friston",
+  "source_date": "2026-09-25",
+  "title": "The phantastic organ: predictive processing in the brain",
+  "file": "inbox/proposals/approved/2026-10-12_friston_phantastic-organ-predictive-processing.md",
   "processed": false
  },
  {
@@ -3456,6 +3472,22 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-13-001",
+  "tradition": "hoffman",
+  "source_date": "2026-09-30",
+  "title": "The Trace Podcast, Episode 1: Traces of Consciousness",
+  "file": "inbox/proposals/approved/2026-10-13_hoffman_trace-podcast-ep1-traces-of-consciousness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-10-001",
+  "tradition": "wolfram",
+  "source_date": "2026-10-02",
+  "title": "Future of Science and Technology Q&A (October 2, 2026)",
+  "file": "inbox/proposals/approved/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-04-001",
   "tradition": "rohr",
   "source_date": "2026-10-03",
@@ -3488,11 +3520,51 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-11-003",
+  "tradition": "wright",
+  "source_date": "2026-10-05",
+  "title": "N.T. Wright on church councils, biblical righteousness and Jesus' Ascension",
+  "file": "inbox/proposals/approved/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-06-002",
   "tradition": "hawkins",
   "source_date": "2026-10-05",
   "title": "08/2026 - Attention in Monty (a Hackathon Prototype)",
   "file": "inbox/proposals/approved/2026-10-06_hawkins_attention-in-monty-hackathon-prototype.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-13-002",
+  "tradition": "hawkins",
+  "source_date": "2026-10-08",
+  "title": "08/2026 - Reference Frame Merging & Splitting (a Hackathon Prototype)",
+  "file": "inbox/proposals/approved/2026-10-13_hawkins_reference-frame-merging-splitting.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-11-002",
+  "tradition": "rohr",
+  "source_date": "2026-10-10",
+  "title": "Francis and the Natural World: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-12-001",
+  "tradition": "levin",
+  "source_date": "2026-10-10",
+  "title": "\\",
+  "file": "inbox/proposals/approved/2026-10-12_levin_mind-body-interface-kofman-keynote.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-11-001",
+  "tradition": "rohr",
+  "source_date": "2026-10-11",
+  "title": "Home Is Where We Begin",
+  "file": "inbox/proposals/approved/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness.md",
   "processed": false
  }
 ]

@@ -155,3 +155,12 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 
 - `PROP-2026-09-27-001` — Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel" (bonus segment: "Making the Ascension Great Again") (podcast, https://michaelfbird.substack.com/p/the-ending-of-marks-gospel-and-the) → PRS-67
 - `PROP-2026-10-04-002` — Is the Rapture really biblical? Apostles, prophets and sacraments (podcast, https://feeds.megaphone.fm/NSR7466770103#06ca2eda-bb13-11f1-9d55-77c7db007db3) → PRS-68, PRS-69, PRS-70
+
+### Ingest 2026-10-14
+
+4 triplets added from 2 approved proposals: PRS-71, PRS-72, PRS-73, PRS-74.
+
+- `PROP-2026-10-11-003` — N.T. Wright on church councils, biblical righteousness and Jesus' Ascension (podcast, https://feeds.megaphone.fm/NSR7466770103#2026-10-05-councils-righteousness-ascension) → PRS-71, PRS-72
+- `PROP-2026-10-11-004` — Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel (podcast, https://feeds.megaphone.fm/NSR7466770103#2026-09-21-ot-violence-acts-mark) → PRS-73, PRS-74
+
+- 2026-10-14 — **Advances:** PRS-71 enters, for the first time, Wright's covenant-faithfulness reading of *dikaiosynē theou*: the scriptural anchor for "salvation = inclusion in the people united with God." PRS-72 states his authority ordering (Scripture over system; creeds as guardrails), a standing objection whenever the network sets Thomist synthesis against the text. PRS-73 applies the narrative-climax hermeneutic to Old Testament violence and pairs with Rohr's PRS-104 (myth of redemptive violence): same endpoint, historical vs. contemplative route. **Opens:** whether Wright's relational righteousness and Aquinas's infused justice conflict or describe one event (Stump); whether the two readings agree on what the violent texts *were*; PRS-74 (Speculative) on the message as Acts' protagonist. Both episodes are description-only, so PRS-71 to PRS-74 hold at Medium/Speculative until someone listens. The Ascension item reinforces PRS-67/PRS-69; the Mark-ending item duplicates the Mike Bird card; neither was entered.

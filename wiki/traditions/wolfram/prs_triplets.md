@@ -633,7 +633,25 @@ PRS-69:
   Confidence: Speculative
   Evidence: Transcript: "Nobody expected what happened with image identification in 2011, 2012. Nobody expected what happened with ChatGPT in 2022"; "a lot that's more marketing than reality"; wants "to do a little bit more science before I say more."
 
-*Total PRS triplets: 69*
+PRS-70:
+  Problem: If AI systems generate growing volumes of mathematical and scientific results, and "the low end of human papers ... definitively overlaps with the high end of AI-written papers," what institution decides which results are recorded, trusted and built upon?
+  Resource: Wolfram's live answer to "what do you think is going to happen in the future of academic publishing?" (segment at 21:03), read against his long-running practice of publishing computational essays outside journals, in which every computer-generated picture links to self-contained Wolfram Language code that regenerates it.
+  Solution: Certification moves from journal gatekeeping toward artifacts and records that carry their own check. Three mechanisms are named: (a) executable, self-contained code inside the publication (and, for lab work, scripted cloud-lab experiments that log every step), so a result can be re-run rather than reverse-engineered; (b) because LLM output is not reproducible from prompts, a recorded or livestreamed log of the whole working process ("here's what the AI said, here's what the human typed"), which shows what the human actually contributed; (c) curated lists as "a more visible proxy for ... peer review," plus a demonstrated human commitment that someone looked at the work and found it interesting, as the reason a reader should spend time on it. Publishers could add value by QA-ing the code in papers.
+  Date Added: 2026-10-14
+  Source: Future of Science and Technology Q&A (October 2, 2026); PROP-2026-10-10-001
+  Confidence: Medium (Wolfram's stated position, read verbatim; he frames it as unsettled: "I don't know what the... appropriate sort of ecosystem is")
+  Evidence: Official transcript PDF (content.wolfram.com), retrieved at ingest 2026-10-14 after the proposal could not fetch it. "Any picture that's in what I've written ... you can click on that picture, and you will get code, Wolfram Language code, that in a self-contained way will regenerate that picture"; "with an LLM ... You feed it the same prompt multiple times, you'll generally get different results ... you can livestream what you did. Or you can at least record what you did"; "There has to be some kind of human commitment that somebody really looked at this and found it interesting"; curation is "a more visible proxy for kind of the peer review mechanism." He also states the incentive obstacle: "the ecosystem of academia does not particularly reward that work." Raised from Speculative per the Sewing Agent's call.
+
+PRS-71:
+  Problem: Where do LLM "breakthroughs" in mathematics (e.g. the claimed Navier-Stokes blow-up construction) actually come from, and what does that imply for which parts of mathematics AI changes?
+  Resource: The "AI, LLMs and the future of mathematics" segment (0:24): LLMs have "ground up and digested" the 3-4 million papers in the mathematical literature.
+  Solution: LLM advances are mainly cross-literature recombination, "a super way to search and fit together existing literature of mathematics" rather than "figuring things out from scratch." Expect a burst of low-hanging fruit from joining results no single human has read together. This leaves untouched the "zeroth problem" of mathematics, choosing the question, which remains human (consistent with PRS-66).
+  Date Added: 2026-10-14
+  Source: Future of Science and Technology Q&A (October 2, 2026); PROP-2026-10-10-001
+  Confidence: Medium (stated position; the Navier-Stokes result itself he says he has "not gone through the details of")
+  Evidence: Transcript: "what LLMs are good at is kind of taking those things ... a result from a paper here, a result from one there ... gluing them together"; "no human has read millions of mathematical papers, so if it's something which has to sort of span many, many pieces, that's a thing for which the AI has a tremendous advantage"; "the zeroth problem in mathematics is to figure out what question you're asking." Kept, narrowed to the literature-recombination claim, because the 2026-09-28 essay's ingested triplets (PRS-66-68) do not make it; the human-sets-direction half duplicates PRS-66 and is not re-recorded.
+
+*Total PRS triplets: 71*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

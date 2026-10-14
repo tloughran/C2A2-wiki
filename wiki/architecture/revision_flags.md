@@ -16155,3 +16155,11 @@ REVISE-515: [ATTACHMENT 2026-10-12, 15c response to SYSTEMIC-RISK-FLAG_2026-10-1
   A reading lacking either is INCONCLUSIVE, not NULL/PASS/HOLD.
   Already applied this run without new process: PREMISE-230 (nulls); PREMISE-229 (reviewer silence is not a decision); MONITOR-688's auxiliary block (991); the REVISE-493 hash check (1684).
   The flag's suggestion that 13 and 15c check new findings for these two fields is recorded for Tom, not minted.
+
+REVISE-516: [ATTACHMENT 2026-10-14, 15c response to SYSTEMIC-RISK-FLAG_2026-10-14_independence-and-single-reviewer-audit (15b, High); items 1796, 1135, 1137, 1138]
+  Every literature-backed remedy for today's four items assumes checks that fail independently and a reviewer with spare capacity. Neither holds by default in C2A2: checks are mostly one model family on the same files, and no review decision has been recorded since 10-09.
+  Already applied this run without new process: PREMISE-236 (a replacement proxy must fail independently), PREMISE-237 (an all-clear names the peer reports it read), MONITOR-690 (measure arrival vs decision rate).
+  Proposed for Tom, not minted: the uptake line proposed for REVISE-516 should also show the weekly arrival count against the decision count for proposals and flags.
+  Urgency: High (inherits). Status: AWAITING TOM (unchanged).
+  PROVENANCE: Origin: 15b (SYSTEMIC-RISK) | Chain: [14a, 14b → 15b → 15c] | Items: ASSUMPTION-1796, PRESUMPTION-1135, PRESUMPTION-1137, PRESUMPTION-1138 | Transform at this step: 15c response to systemic-risk flag | Current status: REVISION-FLAGGED (attachment)
+  Flag file: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-14_independence-and-single-reviewer-audit_A1796-P1135-P1137-P1138.md

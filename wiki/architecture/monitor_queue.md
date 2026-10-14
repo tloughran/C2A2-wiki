@@ -25457,3 +25457,14 @@ MONITOR-689:
   Next 15d check: 2026-10-20
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1127 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1127_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1127_against.md
+
+MONITOR-690:
+  Date: 2026-10-14 | Source item: PRESUMPTION-1138 (DISPOSITION-1084) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: Proposal intake has value only up to review throughput. Settled in theory: a queue whose arrivals persistently exceed decisions grows without bound. Open: whether that rate gap holds here, and whether a WIP cap or some other remedy is right.
+  What would change the disposition: REVISE (recommend an intake cap or pull rule for carding) if the weekly proposal arrival count exceeds the weekly review-decision count for 3 consecutive weeks. INCORPORATE a "no cap needed" premise if decisions keep pace over the same window. Measure from inbox/proposals (pending/decided dates); this is in-house, not literature.
+  Monitoring cadence: Weekly | Priority: High
+  Related: PREMISE-229 (reviewer silence is not a decision); MONITOR-636 (closed 10-12; "grows without bound" clause not incorporated); REVISE-516 (uptake line); SYSTEMIC-RISK 2026-10-14 (independence and single-reviewer audit)
+  Next 15d check: 2026-10-21
+  Routing note for 15d: [QUEUED-EMPIRICAL]: count arrivals and decisions; no re-search needed unless a field study of reviewer-queue WIP appears.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1138 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1138_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1138_against.md
