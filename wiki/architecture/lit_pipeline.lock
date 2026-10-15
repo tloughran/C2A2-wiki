@@ -1,1 +1,1 @@
-RELEASED 2026-10-14T04:41:45Z by c2a2-lit-search-pipeline (scheduled run 2026-10-14, single instance). Applied: DISPOSITION-1081..1084, PREMISE-236..237, PREMISE-233 attachment, MONITOR-690, REVISE-516 attachment. No new REVISE.
+RELEASED 2026-10-15T04:39:45Z by c2a2-lit-search-pipeline instance B (scheduled 2026-10-15). CONFLICT: a concurrent instance committed DISPOSITION-1085..1086 / MONITOR-691 / REVISE-518 at 00:38:13 local despite this lock; this instance applied nothing (see review/2026-10-15_lit-pipeline_concurrent-run_CONFLICT.md).

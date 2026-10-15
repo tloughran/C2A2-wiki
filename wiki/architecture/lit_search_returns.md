@@ -51319,3 +51319,67 @@ Accepted. Every remedy the literature offers for these four items assumes two th
 Running totals after this run: PREMISE-237 | MONITOR-690 | REVISE-517 (no new flag; attachment to REVISE-516) | DISPOSITION-1084.
 Distribution (4 items): 3 INCORPORATE, all restated or scoped (PREMISE-236 ← ASSUMPTION-1796; PREMISE-237 ← PRESUMPTION-1135; PREMISE-233 scope extension ← PRESUMPTION-1137); 1 MONITOR (MONITOR-690 ← PRESUMPTION-1138); 0 REVISE.
 Proposed, not applied (needs Tom): (1) PREMISE-236 and PREMISE-232 could merge into one proxy rule (target + sample + independence). (2) Ask 14a/14b to check validated_premises.md before queuing a literature item; three of today's four were recurrences of 10-13 dispositions. (3) The PREMISE-237 header rule needs an owner for the existing monitors (status, health, telemetry reports).
+
+
+## 15a/15b/15c run 2026-10-15 (scheduled; 2 literature items: PRESUMPTION-1141, PRESUMPTION-1146)
+Scope: the 2 literature-lane items in the 2026-10-14 local intake. The 17 [IN-HOUSE] items from that intake were not searched; they are not literature-lane (same practice as 10-13).
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1141
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Groth, Moreau et al. 2005 (title only)
+  Summary: No source found affirmatively claiming output-only validation suffices. Support is indirect: provenance is an enhancement, and artifact-intrinsic checks (schema, semantic, content, replication) are standard practice. Output-only v
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1141_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1141
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Groth, Moreau et al. 2005 (title only)
+  Specific risk: Plausible-looking errors pass undetected; faults cannot be traced; results cannot be reproduced or audited; the same output may come from different processes.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1141_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1146
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Lewandowski 2008 (title only); Bar-Yossef & Gurevich 2006/2008
+  Summary: The literature supports web search as a pragmatic, incomplete frame for recent, public, well-linked content. It does not support it as complete or unbiased. Known problems: deep/invisible web, ranking bias, index incompleteness, r
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1146_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1146
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong (title-level evidence; unread)
+  Key source: Lewandowski 2008 (title only); Bar-Yossef & Gurevich 2006/2008
+  Specific risk: Recent publications under-represented; popular outputs over-represented; paywalled/PDF/social/non-English venues missed; name ambiguity adds noise; irreproducible across engine/date/locale; the error 
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1146_against.md
+
+### SYSTEMIC-RISK (15b, High): output without lineage or coverage record (items 1141, 1146)
+Flag file: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-15_output-without-lineage-or-coverage_P1141-P1146.md
+
+### 15c dispositions (2026-10-15)
+DISPOSITION-1085:
+  Date: 2026-10-15 | Item: PRESUMPTION-1141 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: 15a Weak partial support (no affirmative source; contrast-case only) vs 15b Moderate partial challenge: lineage aids but does not strictly gate validation. Both searches were title/URL-level and preliminary. Heuristics send mixed or thin evidence to MONITOR; premature INCORPORATE is harder to reverse. The question is cheap to settle in-house by seeded-defect testing.
+  Disposition: MONITOR (MONITOR-691, Medium priority)
+  Consistency: no INCORPORATE issued, so no premise conflict; related to PREMISE-229/230 and REVISE-515.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1141 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1141_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1141_against.md
+
+DISPOSITION-1086:
+  Date: 2026-10-15 | Item: PRESUMPTION-1146 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong (title-level evidence; unread))
+  Net assessment: 15a Weak support vs 15b Strong challenge (coverage, freshness and bias are well established, but both agents saw titles only). Heuristics: weak support plus strong challenge, and a presumption the designers did not know they held, lean REVISE. Urgency set to Medium rather than High because the evidence is unread, the failure is a silent undercount rather than a hard fault, and a cheap recall test exists.
+  Disposition: REVISE (REVISE-518, Medium urgency)
+  Consistency: no INCORPORATE issued, so no premise conflict; related to PREMISE-229/230 and REVISE-515.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1146 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1146_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1146_against.md
+
+### Evidence-quality notes
+- Both search subagents made 2 WebSearch calls and 0 fetches and saw titles/URLs only; no full text or abstracts were read. Several sources are from background knowledge and marked UNVERIFIED. Treat both dispositions as provisional; a 15d re-check with fetched sources is recommended.
+- A 2005 Lewandowski citation (DOI 10.1177/0165551506062326) did not resolve to the intended article and was not relied on.
+- Budget, fail loud: the two search subagents used about 63k and 64k tokens, over the 4k per-task and 30k per-session budget in Tom's standing rules.
+- Cross-check against validated_premises.md: no INCORPORATE issued this run.

@@ -1,1 +1,1 @@
-2026-10-13T10:15Z  PASS  telemetry=2026-10-13/33 agents  node_edges=2026-10-13  | DB age 16h
+2026-10-14T12:26Z  PASS  telemetry=2026-10-14/33 agents  node_edges=2026-10-14 (28 agent_nodes)  | DB age 22h  | note: this run's own extract hit ENOSPC in sandbox /tmp (7.9GB DB); feeds written 10:21Z/10:37Z by an orphaned/concurrent run, re-validated here (node --check OK, dates today)

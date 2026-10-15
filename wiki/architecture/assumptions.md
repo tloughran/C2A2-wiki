@@ -34648,3 +34648,281 @@ ASSUMPTION-1806:
 *Extracted by the 14a run of 2026-10-13 (local). **18 items (1789–1806); 1790, 1795, 1797, 1803, 1805 are recurrences, not queued.***
 
 *Coverage: 14 local sessions after the 10-12 pass (93fdd922), all scheduled; no live Tom turn visible. Final 4 messages each (8 for the walk handoff) read via subagents; tool results and earlier turns not inspected. 1806 is drawn from wiki files whose writing session is not visible in session_info.*
+
+<!-- 14a run 2026-10-14 (local) -->
+
+ASSUMPTION-1807:
+  Date identified: 2026-10-14
+  Statement: [stated] [recurrence] Evening sync: task "fired twice today, which nearly produced a double post"; second copy found the 18:50 post and stopped. "Every session today was a scheduled job, with no interactive Cowork session." "I didn't read the transcripts in detail."
+  Context: 16d0b058
+  Type: architectural
+  Related decisions: OPEN-260; ASSUMPTION-1803
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1807
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1808:
+  Date identified: 2026-10-14
+  Statement: [stated] Morning walk handoff: "The write reported that 2026-10-14_morning_briefing.md was already there ... I didn't read the old version first, so whatever was in it is gone." No walk notes in Gmail; briefing built from wiki state alone.
+  Context: d7e746de
+  Type: architectural
+  Related decisions: OPEN-260; PRESUMPTION-1142
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1808
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1809:
+  Date identified: 2026-10-14
+  Statement: [stated] [recurrence] Morning chat scrape: "Two scheduled runs scraped Chat today"; appended a "Re-scrape check" rather than overwrite a fuller summary; over the 4,000-token per-task limit.
+  Context: b9137000
+  Type: architectural
+  Related decisions: ASSUMPTION-1805; OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1809
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1810:
+  Date identified: 2026-10-14
+  Statement: [stated] [recurrence] Morning project status: "OpenStory looks live: its database was last written yesterday at 8:12 AM ... within the 36-hour window" and "Nothing is broken." Same morning, scheduler health (09:45Z) logged 7 FAIL incl. "H-Drive not mounted ... OpenStory ingest is STOPPED".
+  Context: cd02627b vs 1598f6e9
+  Type: epistemic
+  Related decisions: ASSUMPTION-1801; OPEN-266; PREMISE-237
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1810
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1811:
+  Date identified: 2026-10-14
+  Statement: [stated] Telemetry refresh: "The DB has outgrown the sandbox, so every run from the sandbox will hit this" (7.9 GB vs ~3.5 GB /tmp). Feeds declared PASS by inspecting outputs (timestamp, node --check, JSON parses) although "I'm not fully sure which process wrote the files." Desktop Commander fallback "auto-declined, because nobody was there to approve it."
+  Context: 40d693a1
+  Type: epistemic
+  Related decisions: PRESUMPTION-1141; PRESUMPTION-1144; PRESUMPTION-1145
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1811
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1812:
+  Date identified: 2026-10-14
+  Statement: [stated] Scheduler health: metabolism regen/publish failing since 10-08 "most likely because of" the unmounted H-Drive; "nothing is watching the cloud routines" (routine_health.md last 10-06, 8 days); voice-shell RED two days, same 7 tabs.
+  Context: 1598f6e9
+  Type: empirical
+  Related decisions: OPEN-266; ASSUMPTION-1801
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1812
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1813:
+  Date identified: 2026-10-14
+  Statement: [stated] Morning system health: "The memory and process numbers come from the sandbox the check runs in, not from your Mac." Janitor: community_explorer.html says 156 communities, data file 155; 347 new broken wikilinks, mostly sewing-agent bootstrap logs.
+  Context: fed44227
+  Type: epistemic
+  Related decisions: PRESUMPTION-1147
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1813
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1814:
+  Date identified: 2026-10-14
+  Statement: [stated] Wiki daily run, on the PROP-2026-10-13-001/-002 collision: "A decision on them will still go to the right card, because the run only looks for IDs among waiting cards and Hoffman and Hawkins have already been moved out." Recommends renumbering anyway.
+  Context: 3b862f8c
+  Type: architectural
+  Related decisions: OPEN-267; PRESUMPTION-1133
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1814
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1815:
+  Date identified: 2026-10-14
+  Statement: [stated] Wiki daily run ingested 19 triplets: "6 of the 19 new triplets are rated Speculative. Hoffman's PRS-52 is a placeholder: only the chapter title is known. The Hawkins triplets come from a team member's hackathon demo, not from Hawkins himself. Both Wright cards were written from the episode descriptions."
+  Context: 3b862f8c
+  Type: epistemic
+  Related decisions: OPEN-265; PRESUMPTION-1137; PREMISE-233; PRESUMPTION-1143
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1815
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1816:
+  Date identified: 2026-10-14
+  Statement: [stated] [recurrence] Kastrup agent: PROP-2026-10-14-001 "rests on the host's description of the session, not on Kastrup's own words. The card says so" (members-only recording), as with PROP-2026-10-07-001.
+  Context: d487abb2
+  Type: epistemic
+  Related decisions: OPEN-265; ASSUMPTION-1793
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1816
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1817:
+  Date identified: 2026-10-14
+  Statement: [stated] Kastrup/McGilchrist agent: "My web fetches only work on links that first show up in search results ... Coverage of their own sites depends on what the searches surface." A McGilchrist Substack post (~3 Aug) is unread (JS-only). Task prompt wiki root is missing "Projects/".
+  Context: d487abb2
+  Type: methodological
+  Related decisions: PRESUMPTION-1146
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1817
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1818:
+  Date identified: 2026-10-14
+  Statement: [stated] Deferred action monitor: "pending/ 13 (6 new since yesterday)". Watch list ~826 KB; splitting "recommended ... but I didn't do it because you haven't approved it." Task names the folder ".../Wiki" (capital W). [14a check: ls shows 6 files in pending/ at 23:43 EDT; the wiki daily run also reports 6.]
+  Context: 047deed8
+  Type: empirical
+  Related decisions: PRESUMPTION-1147
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1818
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1819:
+  Date identified: 2026-10-14
+  Statement: [stated] Lit pipeline 15b systemic risk: "Every fix the literature offers assumes checks that fail independently and a reviewer with spare time. Neither is true here by default: the checks are one model family reading the same files, and no review decision has been logged since 10-09." Also: "Three of today's four items re-ask questions settled on 10-13"; proposes that 14a/14b check validated_premises.md before queuing.
+  Context: e119a107
+  Type: epistemic
+  Related decisions: REVISE-516; PREMISE-236; PREMISE-237; MONITOR-690
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1819
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1820:
+  Date identified: 2026-10-14
+  Statement: [stated] Lit pipeline: "The two search agents share a fetch cache. When 15b tried a URL 15a had already fetched, it got an 'already fetched' notice ... 15b could see that 15a had fetched it." Token use ~120k + ~113k (fourth overrun).
+  Context: e119a107
+  Type: methodological
+  Related decisions: PREMISE-236; PRESUMPTION-1148
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1820
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1821:
+  Date identified: 2026-10-14
+  Statement: [stated] Summa nightly: "many syntheses now predate their sources" (Rohr 216, Friston 202, Wright 201, Levin 157); "Re-reading matters most for Rohr, Wright and Friston, which gained new triplets." Self-corrected a count error (95 files, not 95 field instances).
+  Context: 2827d284
+  Type: methodological
+  Related decisions: ASSUMPTION-1790
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1821
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1822:
+  Date identified: 2026-10-14
+  Statement: [stated] [recurrence] Summa daily batch: 29th consecutive no-op since 09-16; "I'd suggest disabling the summa-2026-daily-batch scheduled task."
+  Context: d7142c60
+  Type: architectural
+  Related decisions: PRESUMPTION-1139
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1822
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-14 transcripts (final 1-3 assistant messages per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-14 (local). **16 items (1807-1822); 1807, 1809, 1810, 1816, 1822 are recurrences, not queued.***
+
+*Coverage: 14 local sessions after the 10-13 pass (13c86bbc), all scheduled; no live Tom turn visible. Final 1-3 assistant messages each read directly; tool results, prompts and earlier turns not inspected. Supabase keep-warm yielded nothing.*

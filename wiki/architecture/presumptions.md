@@ -24893,3 +24893,167 @@ PRESUMPTION-1140:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-13 (local). **9 items (1132–1140)**: epistemic 3 · architectural 2 · methodological 2 · normative 1 · scaling 1. Checked against 14a 1789–1806 and PRESUMPTION-1114/1124/1125/1128; 1132 extends 1114, 1134 extends 1125, 1136 extends 1128.*
+
+<!-- 14b run 2026-10-14 (local) -->
+
+PRESUMPTION-1141:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] Several jobs presume a valid-looking artifact is evidence that their own pipeline ran correctly. Telemetry PASS was declared from file timestamps and syntax checks with the writer unknown, and overlapping twins make attribution impossible. Is output validation a substitute for process provenance?
+  Evidence it was operative: 40d693a1 ("not fully sure which process wrote the files"); 16d0b058 and b9137000 deferring to a twin's output
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1811; OPEN-260
+  Testability: testable via literature
+  Risk if wrong: Medium: a broken extractor can stay hidden behind a twin's success or a stale success.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1141
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1142:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] Same-day reruns treat the newest output as authoritative. The walk handoff overwrote an existing briefing unread, while the chat scrape appended to keep a fuller one. Two conflicting conventions are in use, and neither is written down.
+  Evidence it was operative: d7e746de (overwrite, unread); b9137000 (append); cf. earlier escalation-overwrite presumption in presumptions.md
+  Why it was unstated: oversight
+  Type: normative
+  Related decisions: ASSUMPTION-1808; ASSUMPTION-1809; OPEN-260
+  Testability: testable in-house
+  Risk if wrong: Medium: silent loss of an earlier run's content.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1142
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1143:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] The wiki run files a Hawkins-team member's hackathon demo under the Hawkins tradition. This presumes a tradition's boundary includes collaborators and institutions, not just the named thinker. The Loughran card makes the parallel move: agent inferences go into a living participant's tradition.
+  Evidence it was operative: 3b862f8c ("not from Hawkins himself"); PRESUMPTION-1140
+  Why it was unstated: culturally embedded
+  Type: architectural
+  Related decisions: ASSUMPTION-1815; PRESUMPTION-1140
+  Testability: framework commitment (not testable) / Tom
+  Risk if wrong: Medium: tradition profiles drift toward their institutional surround.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1143
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1144:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] Pipelines built when data was small are presumed to keep working as volumes grow. The OpenStory DB is 7.9 GB against ~3.5 GB of sandbox /tmp, the Mac disk is at 67% and rising ~1 GB/day, and the watch list holds ~826 KB of appended logs. No job projects when it will cross its limit.
+  Evidence it was operative: 40d693a1; fed44227; 047deed8
+  Why it was unstated: too foundational to notice
+  Type: scaling
+  Related decisions: ASSUMPTION-1811; ASSUMPTION-1818
+  Testability: testable in-house
+  Risk if wrong: High: failures arrive as hard stops (ENOSPC), not as degradation.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1144
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1145:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] "Autonomous" runs presume approval-gated steps will be granted. When nobody is present, Desktop Commander is auto-declined, the Routines connector is missing and pushes stay manual, so the design quietly depends on a human at the keyboard.
+  Evidence it was operative: 40d693a1 (auto-declined); 1598f6e9 (list_triggers unavailable, cloud routines unwatched 8 days); 047deed8 (split awaits approval)
+  Why it was unstated: obvious to participants
+  Type: architectural
+  Related decisions: ASSUMPTION-1811; ASSUMPTION-1812
+  Testability: testable in-house
+  Risk if wrong: High: each unattended night leaves the same steps undone, and the backlog grows.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1145
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1146:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] Tradition agents presume web search surfaces a thinker's recent output well enough to stand in for it. JavaScript-only pages, members-only material and unindexed sites are invisible, and "nothing new" gets reported as the thinker's silence.
+  Evidence it was operative: d487abb2 (fetches only search-surfaced links; Substack unread; McGilchrist 0 proposals)
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: ASSUMPTION-1817
+  Testability: testable via literature
+  Risk if wrong: Medium: tradition activity is under-sampled, and unevenly across thinkers.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1146
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1147:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] Agents pass counts to each other and report them without reconciling. Pending is 13 per the monitor but 6 per ls and the daily run; communities are 156 vs 155; the Mac health report uses sandbox CPU and memory. Each report presumes its own source is the system state.
+  Evidence it was operative: 047deed8; 3b862f8c; fed44227; 14a ls check
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: ASSUMPTION-1813; ASSUMPTION-1818; PRESUMPTION-1135; PREMISE-237
+  Testability: testable in-house
+  Risk if wrong: Medium: contradictory status reaches Tom with no flag.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1147
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+PRESUMPTION-1148:
+  Date surfaced: 2026-10-14
+  Statement: [inferred] Runs presume that surfacing a Rule 6 budget breach satisfies the rule. The lit pipeline (~233k), the chat scrape and 14a/14b itself all report overruns and finish anyway, and four overruns in a row have not changed the design. Rule 6 says "summarize and start fresh", not "report and continue".
+  Evidence it was operative: e119a107 ("fourth overrun in a row"); b9137000; 2026-10-13 changelog Coverage
+  Why it was unstated: normative
+  Type: normative
+  Related decisions: ASSUMPTION-1820; ASSUMPTION-1809
+  Testability: testable in-house
+  Risk if wrong: Medium: the budget rule turns into a reporting ritual rather than a constraint.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1148
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the cited evidence across 2026-10-14 transcripts and a 14a ls check.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-14 (local). **8 items (1141-1148)**: architectural 3 · epistemic 2 · normative 2 · methodological 1 · scaling 1. Checked against 14a 1807-1822 and PRESUMPTION-1125/1133/1135/1139/1140; 1147 extends 1135, 1143 extends 1140.*

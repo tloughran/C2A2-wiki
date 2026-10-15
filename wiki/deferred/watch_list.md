@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-10-13
-  Check count: 19
+  Last checked: 2026-10-15
+  Check count: 20
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -62,6 +62,7 @@ WATCH-003:
     - 2026-10-10 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 17; next on-cadence check remains 2026-10-13): A **22nd** decision file exists, `2026-10-09_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-08`, thread 1a11bfe8dfa6163e; 3 APPROVE: PROP-2026-10-07-001, PROP-2026-10-08-001, PROP-2026-10-08-002). Content grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md`; the new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Original file has not reappeared in any proposals/ subfolder (only the approved re-filing). Folder census (shell): `pending/` **1** (Carroll 10-09, unrelated), `approved/` 471, `denied/` 1, `needs_review/` 2. Condition NOT met. **Seventeen checks, seventeen identical answers.**
     - 2026-10-11 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 18; next on-cadence check remains 2026-10-13): A **23rd** decision file exists, `2026-10-10_decisions.md` (mtime 2026-10-10 05:04; Gmail `[C2A2-review-decision] 2026-10-09`, thread 1a120edcea71fa5d; 1 APPROVE: PROP-2026-10-09-001, Carroll Mindscape 370). Not seen by the 10-10 run, which reported 22 files. Content grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md`; the new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Vault-wide `find` for both original slugs returns only the four re-filing copies. Folder census (shell): `pending/` **1** (Wolfram 10-10, unrelated), `approved/` 472, `denied/` 1, `needs_review/` 2. Condition NOT met. **Eighteen checks, eighteen identical answers.**
     - 2026-10-13: On-cadence check; count now **19**. `review/archive/` unchanged at **23** files, latest still `2026-10-10_decisions.md` — no decision file written since, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md` (APPROVEs of the re-filings). Vault-wide `find` for both original slugs returns only the four re-filing copies. Original file has not reappeared in any proposals/ subfolder. Folder census (shell): `pending/` **7** (Wolfram 10-10; Rohr ×2, Wright ×2 10-11; Friston, Levin 10-12 — none related), `approved/` 472, `denied/` 1, `needs_review/` 2. Condition NOT met. **Nineteen checks, nineteen identical answers.** Next on-cadence check 2026-10-20.
+    - 2026-10-15 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 20; next on-cadence check remains 2026-10-20): A **24th** decision file exists, `2026-10-13_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-13`, thread 1a13606d264d78fc, processed 2026-10-14; 9 APPROVE: PROP-2026-10-10-001, -10-11-001/-002/-003/-004, -10-12-001/-002, -10-13-001/-002; plus an ID-collision warning on PROP-2026-10-13-001/-002 unrelated to this item). Content grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md`; the new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Original file has not reappeared in any proposals/ subfolder. Folder census (shell): `pending/` **6**, `approved/` 481, `denied/` 1, `needs_review/` 2. Condition NOT met. **Twenty checks, twenty identical answers.**
 
   [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
 
@@ -6997,3 +6998,24 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-14.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-15
+
+  Items checked: 1 off-cadence (WATCH-003, triggered by new `review/archive/` file `2026-10-13_decisions.md`); WATCH-004 not due (next 2026-10-20) and its trigger did not fire.
+    - WATCH-003: 24 archive files; new file does not name PROP-2026-07-19-001. Count **20**. NOT met.
+    - WATCH-004 (trigger scan only, count stays **2**): `needs_review/` Fredrickson file unchanged since 2026-10-08 06:38; flagged CT Signals sentence still at line 38; no PROP-2026-10-01-001 in `pending/`.
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003, WATCH-004)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged: **Escalate to Tom**). WATCH-004 below threshold.
+  New items added: 0 — `needs_review/` holds 2 files, both `[TRACKED-16]`; Channel 2/3 marker grep matches only `inbox/proposals/README.md` (template).
+  Next scheduled checks: WATCH-003 and WATCH-004, **2026-10-20** (or earlier on a new `review/archive/` file or a revised PROP-2026-10-01-001 in `pending/`).
+
+**Census (shell):** `pending/` 6, `approved/` 481, `denied/` 1, `needs_review/` 2, `review/archive/` 24.
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); WATCH-004 CT Signals edit (Fredrickson agent or Tom). Also noted from the 10-13 decisions file: PROP-2026-10-13-001/-002 ID collision (MacIntyre and Loughran PRS-candidate files in `pending/` need new IDs). Watch list ~830 KB — split the run log (**40th** recommendation).
+
+**Agent 16 Status:** Operational. 1 checked, 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-15.*

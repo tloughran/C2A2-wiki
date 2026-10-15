@@ -25468,3 +25468,13 @@ MONITOR-690:
   Routing note for 15d: [QUEUED-EMPIRICAL]: count arrivals and decisions; no re-search needed unless a field study of reviewer-queue WIP appears.
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1138 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1138_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1138_against.md
+
+MONITOR-691:
+  Date: 2026-10-15 | Source item: PRESUMPTION-1141 (DISPOSITION-1085) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: Outputs can be validated without recorded process lineage. Literature says lineage aids trust, reproducibility and fault attribution but does not make output validation impossible. Open: for C2A2 outputs, which errors are undetectable from the output alone.
+  What would change the disposition: INCORPORATE a scoped form ("output-only validation suffices for self-verifying outputs; otherwise record minimal lineage") if a fetched source or seeded-defect test supports it. REVISE if seeded defects (wrong source, stale data, fabricated item) pass output-only checks.
+  Monitoring cadence: Weekly | Priority: Medium
+  Related: SYSTEMIC-RISK 2026-10-15 (with P1146); PREMISE-229, -230
+  Routing note for 15d: re-search with full-text fetches of Groth 2005 and Davidson & Freire 2008; evidence so far is title-level.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1141 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1141_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1141_against.md

@@ -16163,3 +16163,12 @@ REVISE-516: [ATTACHMENT 2026-10-14, 15c response to SYSTEMIC-RISK-FLAG_2026-10-1
   Urgency: High (inherits). Status: AWAITING TOM (unchanged).
   PROVENANCE: Origin: 15b (SYSTEMIC-RISK) | Chain: [14a, 14b → 15b → 15c] | Items: ASSUMPTION-1796, PRESUMPTION-1135, PRESUMPTION-1137, PRESUMPTION-1138 | Transform at this step: 15c response to systemic-risk flag | Current status: REVISION-FLAGGED (attachment)
   Flag file: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-14_independence-and-single-reviewer-audit_A1796-P1135-P1137-P1138.md
+
+REVISE-518: [2026-10-15] Source item: PRESUMPTION-1146 (DISPOSITION-1086)
+  What is at risk: any C2A2 step that treats web search hits as the complete or representative set of an author's recent output (negative findings such as "no recent output found" are most exposed: a silent undercount).
+  Recommended action (for Tom): use an authoritative registry (ORCID, Crossref, OpenAlex, publisher or institutional pages, the author's CV) as the sampling frame, with web search as a supplement; log engine, query and date; label results "discoverable via search, non-exhaustive"; run a one-off recall check against a known ground-truth list. Tom's call.
+  Urgency: Medium (evidence is title-level; failure is silent but a cheap recall test exists).
+  Related: SYSTEMIC-RISK 2026-10-15 (with P1141); REVISE-515; PREMISE-229/230.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1146 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1146_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1146_against.md

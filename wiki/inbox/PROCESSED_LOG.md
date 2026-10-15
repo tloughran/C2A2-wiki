@@ -2327,3 +2327,7 @@ FINDING-102..105; none escalated (no HIGH or MEDIUM-HIGH). Network map table in 
 **Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
 
 **Network: 1025 PRS / 155 CROSS / 105 FINDING.** Pending = 6.
+
+### 2026-10-15 daily run (orchestrator)
+Phase 0: no new decision emails. Phase 1: ledger unchanged (approved=481 ingested=450 decided-zero=29 OPEN=1), 0 ingested. Phase 2: 0 proposals; Stump carded by specialist (PROP-2026-10-15-001); searched Fredrickson, Carroll, Arkani-Hamed - nothing passes; Carroll AMA Oct 2026 (10-12) left for Friday specialist. Phase 3/4: review page (7 pending) + draft. Phase 5: deleted 2026-10-11_review.html. 5.5 OK address-clean (cards 530). 5.6 OK 1733 signals, 90 pairs, stale_days 2. Phase 6: no git.
+**Network: 1025 PRS / 155 CROSS / 105 FINDING.** Pending = 7.
