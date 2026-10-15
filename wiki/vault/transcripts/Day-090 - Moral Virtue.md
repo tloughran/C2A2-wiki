@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (sandbox)
 synthesis: "[[Day-090 - Moral Virtue - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/090, pars/I-II, q/58_59]
-last_qc_at: "2026-09-28T08:27:44"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-10-14T12:17:16"
+last_qc_outcome: "pass"
 ---
 
 # Day 90 — Moral Virtue
