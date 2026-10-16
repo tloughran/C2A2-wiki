@@ -49,3 +49,8 @@ Overlaps not proposed: p.116 and pp.124 to 126 (epistemological crisis and asser
 - **Solution:** [PRINTED] "genealogical solution" (p.211, line 30). [MODEL gloss: the temporary-mask device is the genealogical solution the text describes.]
 - **Marks:** [MARK, UNVERIFIED] underline 211.12 (content "problem whose inescapability was recognized in the second lecture"). The OCR does not show "in the second lecture", so the wording is not verified.
 - **Tier:** not applicable (single-author criteria). **Confidence:** Medium.
+
+
+## Tom's decision (2026-10-15): CHANGE
+
+Flag for sewing agent: texts that overlap with existing PRS triplets should be identified and written to the appropriate PRS triplet file; these are connections we do not want to lose.

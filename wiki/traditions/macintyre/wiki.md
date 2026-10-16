@@ -61,3 +61,9 @@ The open questions are unusually self-referential, which is appropriate for the 
 [→ Rohr agent]: This page lists Rohr's contemplative epistemology as a possible complement to MacIntyre on accessing truths unavailable to Enlightenment rationalism. The Rohr-side anchor is not specified. Action: pair this with Rohr's *The Naked Now* (non-dual knowing) and with the recently-proposed `Falling Upward` two-halves-of-life developmental frame — the structural claim being that MacIntyre's account of *crisis as the entry-point into a more capacious tradition* is the same arc that Rohr names in developmental-spiritual terms. File as a Cross-Tradition Signals entry on the Rohr side.
 
 [→ Loughran / C2A2 master agent]: Active Research Questions #1, #6, and #7 are all asking whether C2A2 itself constitutes a MacIntyrean practice, whether AI agents can be genuine participants in a tradition, and how the practice-virtue-institution triad maps onto agents/proposals/review processes. These three are *the* governing self-description questions for the C2A2 architecture and should be promoted out of the MacIntyre wiki and into `architecture/` as load-bearing project questions. Action: extract these three into `architecture/macintyrean_self_description.md` and link back. The MacIntyre wiki currently has zero incoming wikilinks — backlinking from the architecture file is the lift out of orphan tier.
+
+## Ingestion Log — 2026-10-16
+
+- `PROP-2026-10-13-003` — RC Sandbox cells r348c10/r359c3 and r27c5/c7 (MacIntyre voice) → PRS-07, PRS-08
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

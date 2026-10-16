@@ -26826,3 +26826,185 @@ ITEM: PRESUMPTION-1148 [QUEUED] [IN-HOUSE] [PRESUMPTION]
 
 ## 2026-10-15 — second, concurrent 15a/15b/15c instance: CONFLICT, results NOT applied (fail loud)
 Two instances of `c2a2-lit-search-pipeline` ran on the 10-14 intake (PRESUMPTION-1141, -1146). This instance held the lock from 04:34:38Z. The other instance committed at 00:38:13 local without honouring the lock: P-1141 → MONITOR-691, P-1146 → REVISE-518 (DISPOSITION-1085..1086). This instance's duplicate appends to lit_search_returns.md and revision_flags.md were removed, and the committed run's entries were left untouched. Disagreement: this run reached REVISE on 1141, and filed 1146 as an attachment to REVISE-515, on abstract- and full-text-level evidence; the committed run's evidence was title-level. Data loss: the committed run overwrote this run's four 15a/15b result files. Comparison and withdrawn text: wiki/review/2026-10-15_lit-pipeline_concurrent-run_CONFLICT.md. Backups taken before both writes: *.bak.20261015-pre-15pipeline. Backlog: 131 bare items, untouched.
+
+ITEM: ASSUMPTION-1824 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1824
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Write the conflict rule down: commit order or evidence depth decides, and who arbitrates.
+
+ITEM: ASSUMPTION-1825 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1825
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Prototype a run record per artifact; count artifacts with no matching record over a week.
+
+ITEM: ASSUMPTION-1826 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1826
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the no-title-only rule is applied the same way across all specialists (OPEN-265).
+
+ITEM: ASSUMPTION-1827 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1827
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Have a human spot-check the triplets PROP-2026-10-15-001 claims rest on Stump 1995.
+
+ITEM: ASSUMPTION-1828 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1828
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Route to Agent 13 as a candidate CROSS; define what result would count against it.
+
+ITEM: ASSUMPTION-1829 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1829
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Decide whether popular-level restatements are ever cardable.
+
+ITEM: ASSUMPTION-1830 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1830
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Compare chat-thread dedupe with scheduler-level dedupe on the next twin firing.
+
+ITEM: ASSUMPTION-1831 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1831
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify the monitor's safety check and record which other jobs lack one.
+
+ITEM: ASSUMPTION-1832 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1832
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether other reports still cite sandbox CPU/memory as the Mac's.
+
+ITEM: PRESUMPTION-1149 [QUEUED] [SEARCHED-15a: 2026-10-16] [SEARCHED-15b: 2026-10-16] [DISPOSITIONED-15c: 2026-10-16] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1149
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Presumption under test: What do studies of advisory file locking over network or synced filesystems (NFS lock semantics; fencing tokens, e.g., Kleppmann on distributed locks) imply for a lock-file protocol shared by cloud and local twins of the same job?
+  Result: 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Strong); 15c REVISE (REVISE-519).
+
+ITEM: PRESUMPTION-1150 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1150
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Re-run the 1141/1146 disagreement with evidence depth as tie-breaker and see if dispositions change.
+
+ITEM: PRESUMPTION-1151 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1151
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Inventory dedupe mechanisms per scheduled job; test one scheduler-level guard.
+
+ITEM: PRESUMPTION-1152 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1152
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): For the 5 empty sessions, check whether reports were written on disk and what they said.
+
+ITEM: PRESUMPTION-1153 [QUEUED] [SEARCHED-15a: 2026-10-16] [SEARCHED-15b: 2026-10-16] [DISPOSITIONED-15c: 2026-10-16] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1153
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Presumption under test: What does the bibliometric literature on obliteration by incorporation (Merton; McCain) and on retroactive or inferred citation imply for an agent back-attributing existing claims to a foundational source?
+  Result: 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); 15c MONITOR (MONITOR-692).
+
+ITEM: PRESUMPTION-1154 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1154
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Count Tom-only items open per day for two weeks; define a default for items left waiting during travel.
+
+ITEM: PRESUMPTION-1155 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1155
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Measure per-run read size of each register; propose archive/rollover thresholds.
+
+<!-- 14a/14b intake 2026-10-15 (local): 16 items: 2 literature (PRESUMPTION-1149, -1153), 14 [IN-HOUSE]. 1823, 1833, 1834 not queued (recurrences). validated_premises.md checked by grep for 'lock' and 'obliteration' before queuing; no PREMISE covers either. -->
+
+<!-- 15a/15b/15c run 2026-10-16 (local, lock-held): 2 literature items processed (PRESUMPTION-1149 -> REVISE-519; PRESUMPTION-1153 -> MONITOR-692). [IN-HOUSE] items not searched by design. -->

@@ -51383,3 +51383,66 @@ DISPOSITION-1086:
 - A 2005 Lewandowski citation (DOI 10.1177/0165551506062326) did not resolve to the intended article and was not relied on.
 - Budget, fail loud: the two search subagents used about 63k and 64k tokens, over the 4k per-task and 30k per-session budget in Tom's standing rules.
 - Cross-check against validated_premises.md: no INCORPORATE issued this run.
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1149
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Kleppmann 2016 (secondary only); Jane Street Lock_file docs
+  Summary: mkdir is a sound atomic primitive locally and on NFS. A time-based stale break across a sync folder is not shown safe without fencing. NOVELTY (configuration-level): no literature on cloud/local twins over a consumer sync folder.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1149_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1149
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong (snippet-level)
+  Key source: Kleppmann 2016 (secondary only)
+  Specific risk: A mkdir lock in a synced folder does not exclude a twin on another machine, or one that cannot see the folder; the 6-hour stale break is a lease that can admit a second writer.
+  Summary: Two local views reconciled later; leases without fencing are not mutual exclusion.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1149_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1153
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Lin et al. 2022, Scientometrics 127:2395–2412
+  Summary: OBI grounds recovering uncited sources; machine missing-citation detection exists but is error-prone. Supports suggesting a source, not asserting attribution.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1153_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1153
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: McCain 2012, JASIST 63(11)
+  Specific risk: The agent reads claims back into foundational sources that do not contain them (adumbrationism), and errors spread through links.
+  Summary: A later attribution is an inference, not a record; safe only if passage-anchored and labelled inferred.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1153_against.md
+
+### SYSTEMIC-RISK (15b, High): unverified local view at point of action (items 1149, 1153)
+Flag file: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-16_unverified-local-view-at-point-of-action_P1149-P1153.md
+
+### 15c dispositions (2026-10-16)
+DISPOSITION-1087:
+  Date: 2026-10-16 | Item: PRESUMPTION-1149 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Strong, snippet-level)
+  Net assessment: Both directions agree mkdir is a sound primitive and that it does not make the cloud/local twin setup safe. 15a found no support for the safety claim itself; 15b's challenge (leases without fencing; sync folders are two views) is standard distributed-systems doctrine. In-house evidence agrees: double runs occurred 2026-10-01 and 2026-10-15.
+  Disposition: REVISE (REVISE-519, High urgency)
+  Reasoning: Weak support plus strong challenge on a presumption leans REVISE with High urgency. Urgency stays High despite title/snippet-level sources because the failure is already observed and the lock may give false assurance. The fix (one registration) is cheap and is already Tom's stated intent.
+  Consistency: no INCORPORATE issued, so no premise conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1149 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1149_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1149_against.md
+
+DISPOSITION-1088:
+  Date: 2026-10-16 | Item: PRESUMPTION-1153 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Balanced, and both directions converge on the same scoped form: back-attribution is legitimate as a labelled, passage-anchored suggestion, not as asserted provenance. Evidence is title/abstract-level only.
+  Disposition: MONITOR (MONITOR-692, Medium priority)
+  Reasoning: The convergence is a candidate premise, but neither agent read a full text and the Merton origin is unconfirmed. Premature INCORPORATE is harder to reverse; an in-house adumbration-rate sample would settle it.
+  Consistency: no INCORPORATE issued, so no premise conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1153 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1153_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1153_against.md
+
+### Evidence-quality notes (2026-10-16)
+- 15a and 15b ran as separate subagents with no shared context (structural blocking). Each made 4 WebSearch calls and 0 fetches; evidence is snippet/title-level. Kleppmann 2016 was seen only through secondary summaries. Treat both dispositions as provisional.
+- Budget, fail loud: the two search subagents used about 62k tokens each, over the 4k per-task and 30k per-session budget in Tom's standing rules.
+- Cross-check against validated_premises.md: no INCORPORATE issued this run; grep for 'fencing', 'obliteration', 'lockfile' found no existing premise.

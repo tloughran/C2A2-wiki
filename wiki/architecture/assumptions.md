@@ -34926,3 +34926,211 @@ ASSUMPTION-1822:
 *Extracted by the 14a run of 2026-10-14 (local). **16 items (1807-1822); 1807, 1809, 1810, 1816, 1822 are recurrences, not queued.***
 
 *Coverage: 14 local sessions after the 10-13 pass (13c86bbc), all scheduled; no live Tom turn visible. Final 1-3 assistant messages each read directly; tool results, prompts and earlier turns not inspected. Supabase keep-warm yielded nothing.*
+
+ASSUMPTION-1823:
+  Date identified: 2026-10-15
+  Statement: [stated] [recurrence] Duplicate firings again: the lit pipeline, evening sync and deferred monitor each ran twice. "A duplicate schedule entry is the likely cause, probably the cloud/local twin issue in ASSUMPTION-1776."
+  Context: 4fd38750; f2a095e8; 6a1ab16f
+  Type: architectural
+  Related decisions: ASSUMPTION-1776; ASSUMPTION-1807; OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1823
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1824:
+  Date identified: 2026-10-15
+  Statement: [stated] On a concurrent-run conflict, the run that committed first stands: "Following the 10-01 precedent, I removed my duplicate entries ... rather than blending the two runs." The losing run judged its own evidence stronger.
+  Context: 4fd38750 (lit pipeline)
+  Type: methodological
+  Related decisions: OPEN-268; PRESUMPTION-1150
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1824
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1825:
+  Date identified: 2026-10-15
+  Statement: [stated] Proposed fix for PRESUMPTION-1141: "every artifact gets a run record, and a valid file with no matching record is reported as unattributed, not PASS."
+  Context: 4fd38750 (withdrawn disposition)
+  Type: architectural
+  Related decisions: PRESUMPTION-1141; MONITOR-691
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1825
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1826:
+  Date identified: 2026-10-15
+  Statement: [stated] No card from a title alone: Carroll's 10-12 AMA was not carded because "I'd have been writing triplets from a title."
+  Context: 182e416d (wiki daily run)
+  Type: methodological
+  Related decisions: OPEN-265
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1826
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1827:
+  Date identified: 2026-10-15
+  Statement: [stated] Older work qualifies under the "significant work not yet captured" clause; Stump 1995 was carded because "several hylomorphism triplets already in the wiki rest on its account of form without citing it."
+  Context: 89e7def6 (Stump/Fredrickson)
+  Type: epistemic
+  Related decisions: PRESUMPTION-1153
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1827
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1828:
+  Date identified: 2026-10-15
+  Statement: [stated] Stump's soul as a "configured configurer" "gives a testable version of the Levin bridge question (is a bioelectric prepattern only a configuring form, or also a configured one?)".
+  Context: 89e7def6
+  Type: empirical
+  Related decisions: CROSS (none yet)
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1828
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1829:
+  Date identified: 2026-10-15
+  Statement: [stated] Popular-level restatements add little: the 2024 Fredrickson TED transcript was rejected because its new points are "at a popular level"; offered as low-priority if wanted.
+  Context: 89e7def6
+  Type: methodological
+  Related decisions: OPEN-265
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1829
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1830:
+  Date identified: 2026-10-15
+  Statement: [stated] The evening sync deduplicated by reading the chat thread: it found the earlier post "and stopped there rather than send a duplicate." It also reports "All 15 most recent sessions were scheduled jobs."
+  Context: f2a095e8
+  Type: architectural
+  Related decisions: PRESUMPTION-1151
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1830
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1831:
+  Date identified: 2026-10-15
+  Statement: [stated] A per-task safety check prevents twin overwrites in the deferred monitor: "My own write stopped on a safety check and changed nothing." The run also calls the twin "a race" and repeats the split-the-run-log recommendation "for the 40th time" (830 KB).
+  Context: 6a1ab16f
+  Type: architectural
+  Related decisions: PRESUMPTION-1151; PRESUMPTION-1155
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1831
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1832:
+  Date identified: 2026-10-15
+  Statement: [stated] Sandbox metrics are not the Mac's: "The commands only see the sandbox's own Linux system ... so the report says that instead of treating sandbox numbers as the Mac's." Corrects the Mac-health part of PRESUMPTION-1147.
+  Context: 930e69d2 (system health)
+  Type: epistemic
+  Related decisions: PRESUMPTION-1147
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1832
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1833:
+  Date identified: 2026-10-15
+  Statement: [stated] [recurrence] Metabolism publish failed on 10-11 on a 73h freshness gate; "the step in the sandbox that regenerates the data probably didn't run." Predicts this Sunday's publish fails the same way.
+  Context: 930e69d2
+  Type: empirical
+  Related decisions: metabolism since 10-08
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1833
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1834:
+  Date identified: 2026-10-15
+  Statement: [stated] [recurrence] Rule 6 overrun reported and the run completed: "The main cause was fetching the full Mindscape archive page."
+  Context: 182e416d
+  Type: normative
+  Related decisions: PRESUMPTION-1148
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1834
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-15 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-15 (local). **12 items (1823-1834); 1823, 1833, 1834 are recurrences, not queued.***
+
+*Coverage: 13 local sessions after the 10-14 pass (202989c7), all scheduled; no live Tom turn visible. Final assistant message read for 11; 5 of those returned "(no messages)" (walk handoff, chat scrape, project status, scheduler health, telemetry refresh). Summa ×2 and keep-warm not read.*

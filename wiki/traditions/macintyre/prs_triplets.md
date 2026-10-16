@@ -71,3 +71,21 @@ PRS-06:
   Source: Loughran–Claude session 2026-09-08 (Potts paper-response run); inbox/2026-09-08_levin_virtue-as-external-setpoint.md
   Confidence: Medium
   Evidence: The mechanism is imported from Levin, not found in MacIntyre. OPEN — bootstrapping: judging whether one's source is a tyrant requires standards that came from the source. MacIntyre's own reply (epistemological crisis plus an encounterable rival with superior resources) converts this from a philosophical problem into an engineering problem about the availability of rivals, which is what C2A2 is for. Converted, not solved.
+
+PRS-07:
+  Problem: How can a tradition's first principles be justified without a view from outside every tradition? [problem framing is the extractor's, not MacIntyre's]
+  Resource: "to justify is to narrate how the argument has gone so far" (WJWR p.8)
+  Solution: First principles "are justified insofar as in the history of this tradition they have, by surviving the process of dialectical questioning, vindicated themselves as superior to their historical predecessors" (WJWR p.360)
+  Date Added: 2026-10-16
+  Source: RC Sandbox (TL Sandbox worksheet), cells r348c10 and r359c3, section I.2.2, voice label 'MacIntyre'; PROP-2026-10-13-003 (PRS-SE-01)
+  Confidence: Medium (verbatim per cell label; page numbers are Tom's and unchecked against the book; 'WJWR' read as Whose Justice? Which Rationality?)
+  Evidence: Overlap: adjacent to PRS-01/PRS-03 (tradition-constituted rationality) but adds the narrative form of justification; filed separately pending the sewing pass Tom requested on PROP-2026-10-13-001.
+
+PRS-08:
+  Problem: "We need to avoid allowing our own thinking to give expression to our prejudices"
+  Resource: "a form of intellectual and moral asceticism"
+  Solution: "If I am to engage with you in shared rational enquiry, we must both be assured that we can expect the other to speak the truth, as she or he understands it. There must be no deceptive or intentionally misleading speech."
+  Date Added: 2026-10-16
+  Source: RC Sandbox (TL Sandbox worksheet), cells r27c5 and r27c7, section I.4.2, tagged 'IDM pp. 22-23'; PROP-2026-10-13-003 (PRS-SE-02)
+  Confidence: Medium (all three elements MacIntyre's words, but from one short passage of one volume)
+  Evidence: Verbatim PASS against wiki/rc_sandbox_notebook.html. Cross-link: conditions of shared enquiry bear directly on C2A2 agent-to-agent dialogue norms.

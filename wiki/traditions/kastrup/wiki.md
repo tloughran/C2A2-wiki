@@ -181,3 +181,10 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-07-001` — AI as Archetypal Urge — Bernardo Kastrup on the risks, rewards and future of Artificial Intelligence (talk, https://www.withrealityinmind.com/ai-as-archetype/) → PRS-91, PRS-92
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+## Ingestion Log — 2026-10-16
+
+- `PROP-2026-10-14-001` — The Great Contender (talk, With Reality in Mind, 2026-10-13) → PRS-93, PRS-94 (Speculative)
+- `PROP-2026-10-13-003` — RC Sandbox cell r598c4 (Kastrup voice) → PRS-95
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

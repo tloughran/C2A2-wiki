@@ -3641,3 +3641,20 @@ OPEN-264 (update 2026-10-14): Fifth local pass under the 10-03 rule (extracting 
 OPEN-265 (update 2026-10-14): Six of the 19 triplets ingested on 10-14 are Speculative, including a chapter-title placeholder (Hoffman PRS-52) and Hawkins triplets taken from a team member's demo. The Kastrup card again rests on the host's description (ASSUMPTION-1815, -1816; PRESUMPTION-1143).
 OPEN-266 (update 2026-10-14): Recurred. Morning project status said "Nothing is broken" from the 36-hour DB-write window, while scheduler health logged 7 FAIL (ASSUMPTION-1810). PREMISE-237 (10-14) now requires an "all clear" to name the other monitors' reports it read. Not yet adopted by the status job.
 OPEN-267 (update 2026-10-14): The wiki daily run confirms the collision. It routed the 10-13 approvals to Hoffman and Hawkins and argues that later decisions are safe because the router reads only pending/ (ASSUMPTION-1814). Both colliding cards are still in pending/ under the reused IDs [verified]. The writing session is still unidentified.
+
+OPEN-268:
+  Raised: 2026-10-15 by 14a/14b (ASSUMPTION-1824; PRESUMPTION-1149, -1150)
+  Question: When twin runs of the lit pipeline conflict, should commit order or evidence depth decide the disposition on record, and who arbitrates? Today's title-level run stands over an abstract/full-text run that would have set PRESUMPTION-1141 to REVISE and folded 1146 into REVISE-515. Also: is the lock file visible to both cloud and local instances at all?
+  Needs: **Tom** (lit pipeline decisions 1-3; stray wiki/review/lit_pipeline.lock)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-268
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-260 (update 2026-10-15): Twins again: lit pipeline (lock ignored, four result files overwritten), evening sync, deferred monitor. Each job deduplicated itself differently (PRESUMPTION-1151). The cloud 14a/14b twin wrote `changelog/2026-10-16_changes.md` at 23:31 EDT 10-15 (UTC-dated, local day 10-15). This local pass appends to `2026-10-15_changes.md` and leaves that stub untouched.
+OPEN-264 (update 2026-10-15): Sixth local pass under the 10-03 rule. Five sessions returned no messages, so their findings are not in this pass (PRESUMPTION-1152).
+OPEN-265 (update 2026-10-15): The wiki daily run declined to card from a title (Carroll AMA), while Stump back-filled a 1995 paper and Fredrickson rejected popular-level material (ASSUMPTION-1826, -1827, -1829). Thresholds are being set job by job.
+OPEN-267 (update 2026-10-15): Unchanged. The two 10-13 cards with reused IDs are still in pending/ [verified, 7 files total]; the deferred monitor repeats the request to re-ID them.

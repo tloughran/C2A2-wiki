@@ -3,14 +3,14 @@
   "generated_from": "extract_agent_node_refs.py",
   "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
   "vault": "/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
-  "canonical_nodes": 5699,
+  "canonical_nodes": 5712,
   "roster_size": 33,
   "roster_captured": 27,
   "human_node": true,
   "human_sessions": 1246,
   "unattributed_continuations": 116,
   "sessions_mapped": 4661,
-  "events_scanned": 243794,
+  "events_scanned": 243813,
   "session_resolution": {
    "no_label": 1115,
    "unmatched": 247,
@@ -34,7 +34,7 @@
    "kind": "human",
    "category": "human",
    "sessions": 1244,
-   "events": 91436,
+   "events": 91455,
    "node_refs": 2050
   },
   {

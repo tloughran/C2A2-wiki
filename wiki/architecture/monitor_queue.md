@@ -25478,3 +25478,14 @@ MONITOR-691:
   Routing note for 15d: re-search with full-text fetches of Groth 2005 and Davidson & Freire 2008; evidence so far is title-level.
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1141 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1141_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1141_against.md
+
+MONITOR-692:
+  Date: 2026-10-16 | Source item: PRESUMPTION-1153 (DISPOSITION-1088) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: An agent may back-attribute existing claims to a foundational source. Both searches converge on a scoped form: legitimate only as a labelled "inferred" link anchored to a located passage, never overwriting original provenance.
+  What would change the disposition: INCORPORATE the scoped form if a fetched source (McCain 2012; Lin et al. 2022) or an in-house sample confirms it. REVISE if a sample of 20 existing back-attributions shows an adumbration rate (source does not contain the claim) above ~10%.
+  Monitoring cadence: Weekly | Priority: Medium
+  Related: SYSTEMIC-RISK 2026-10-16 (with P1149); SYSTEMIC-RISK 2026-10-15 (output without lineage); MONITOR-691
+  Next 15d check: 2026-10-23
+  Routing note for 15d: re-search with full-text fetches; the in-house sample is the cheaper test.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1153 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1153_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1153_against.md

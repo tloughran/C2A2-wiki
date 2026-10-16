@@ -16172,3 +16172,12 @@ REVISE-518: [2026-10-15] Source item: PRESUMPTION-1146 (DISPOSITION-1086)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1146 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1146_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1146_against.md
+
+REVISE-519: [2026-10-16] Source item: PRESUMPTION-1149 (DISPOSITION-1087)
+  What is at risk: the lit-pipeline run lock (scripts/lit_pipeline_lock.sh, review/lit_pipeline.lock.d) and any other job registered both locally and as a cloud routine. A mkdir lock in a synced folder cannot exclude a twin that sees the folder late or not at all; the 6-hour stale break is a lease that can admit a second writer.
+  Recommended action (for Tom): remove one of the two registrations of this task so a single scheduler owns it (the lock then guards only against accidental overlap). If both must stay: make writes idempotent or check a run ID at write time; record owner, host and heartbeat in the lock and verify before breaking. Test: fire both twins seconds apart and check whether both acquire. Tom's call.
+  Urgency: High (double runs observed 2026-10-01 and 2026-10-15; sources snippet-level).
+  Related: SYSTEMIC-RISK 2026-10-16 (with P1153); PRESUMPTION-1151 (in-house dedupe inventory).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1149 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1149_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1149_against.md

@@ -57,3 +57,10 @@ The document also tracks the evolution of his thinking about AI — from using C
 *(Recorded inter-voice encounters in which this tradition participates; captured as connectome nodes in their own right)*
 
 - [[traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership|Loughran × Opus 4-7 — On the Narrative Connectome and the Form of Partnership]] (2026-05-20) — the reframe to a narrative connectome; consent vs. approval, responsibility as accountability vs. responsiveness, and "AI alignment" recast as friendship *in via*.
+
+## Ingestion Log — 2026-10-16
+
+- `PROP-2026-10-13-002` — Tom's marginalia in Three Rival Versions (1990) → PRS-13..18
+- `PROP-2026-10-13-003` — RC Sandbox cells r480c4-c8 (Tom's words) → PRS-19
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

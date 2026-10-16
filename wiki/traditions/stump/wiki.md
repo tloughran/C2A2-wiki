@@ -159,3 +159,9 @@ Processed 1 source file(s); minted PRS-39, PRS-40.
 - `PROP-2026-09-17-001` — Natural Law, Metaphysics, and the Creator (paper, https://revistaatlantika.com.br/ra/article/view/42) → PRS-42, PRS-43, PRS-44, PRS-45
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+## Ingestion Log — 2026-10-16
+
+- `PROP-2026-10-15-001` — Non-Cartesian Substance Dualism and Materialism Without Reductionism (paper, Faith and Philosophy 1995) → PRS-46, PRS-47, PRS-48, PRS-49
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

@@ -1,5 +1,21 @@
 [
  {
+  "card": "PROP-2026-10-13-002",
+  "tradition": "loughran",
+  "source_date": "1990",
+  "title": "Three Rival Versions of Moral Enquiry (1990), Tom's marginalia",
+  "file": "inbox/proposals/approved/2026-10-13_loughran_prs-candidates-marks.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-15-001",
+  "tradition": "stump",
+  "source_date": "1995-10-01",
+  "title": "Non-Cartesian Substance Dualism and Materialism Without Reductionism",
+  "file": "inbox/proposals/approved/2026-10-15_stump_non-cartesian-substance-dualism-configured-configurer.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-30-002",
   "tradition": "mcgilchrist",
   "source_date": "2020",
@@ -3565,6 +3581,30 @@
   "source_date": "2026-10-11",
   "title": "Home Is Where We Begin",
   "file": "inbox/proposals/approved/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-13-004",
+  "tradition": "multi",
+  "source_date": "2026-10-13",
+  "title": "RC Document Explorer",
+  "file": "inbox/proposals/approved/2026-10-13_document-explorer_prs-candidates.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-13-003",
+  "tradition": "multi",
+  "source_date": "2026-10-13",
+  "title": "RC Sandbox: the TL Sandbox worksheet (wiki/rc_sandbox_notebook.html; page title 'Quodlibet",
+  "file": "inbox/proposals/approved/2026-10-13_spreadsheet-explorer_prs-candidates.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-14-001",
+  "tradition": "kastrup",
+  "source_date": "2026-10-13",
+  "title": "The Great Contender \u2014 The current state of the metaphysical debate",
+  "file": "inbox/proposals/approved/2026-10-14_kastrup_great-contender-metaphysical-landscape.md",
   "processed": false
  }
 ]

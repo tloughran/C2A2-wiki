@@ -31,3 +31,8 @@ PRS-CANDIDATE-01:
 - The McGilchrist hemispheric divide is the C2A2 model for tradition-vs-tradition dialogue (flag strongly if the episode ties uncertainty to openness toward other traditions). Unverified.
 - Possible links to Stump (apophatic and Thomistic humility about divine knowledge), Fredrickson (openness and broadened attention) and Friston (uncertainty as precision-weighting). All speculative until the content is known.
 - The Faustian-bargain AI talk posted the same day (https://www.youtube.com/watch?v=3nWw91wErsc, 1:14:08) was not proposed. It is very probably the UnHerd Live event already captured in PROP-2026-09-29-002. Confirm before treating it as new.
+
+
+## Tom's decision (2026-10-15): CHANGE
+
+Pull the YouTube transcript, ask for Tom's assistance if needed; reprocess this important dialogue.

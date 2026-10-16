@@ -25057,3 +25057,145 @@ PRESUMPTION-1148:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-14 (local). **8 items (1141-1148)**: architectural 3 · epistemic 2 · normative 2 · methodological 1 · scaling 1. Checked against 14a 1807-1822 and PRESUMPTION-1125/1133/1135/1139/1140; 1147 extends 1135, 1143 extends 1140.*
+
+PRESUMPTION-1149:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] The lock-file protocol presumes every instance sees the same filesystem and checks the lock before writing. Twin cloud/local runs may see different mounts or sync lag, so "ignored the lock" may really be "could not see the lock". A stray copy of lit_pipeline.lock now sits in wiki/review/ [verified by ls].
+  Evidence it was operative: 4fd38750 ("ignored the lock", stray lock); 10-01 and 10-15 conflict reports
+  Why it was unstated: oversight
+  Type: architectural
+  Related decisions: OPEN-260; OPEN-268; ASSUMPTION-1776
+  Testability: testable via literature
+  Risk if wrong: High: concurrent writers lose results silently (four result files lost today).
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1149
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1150:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] First-commit-wins presumes commit order is a neutral tie-breaker. Today the run with abstract- and full-text evidence yielded to the title-level run, so the disposition on record depends on a race, not on evidence.
+  Evidence it was operative: 4fd38750; ASSUMPTION-1824
+  Why it was unstated: too foundational to notice
+  Type: normative
+  Related decisions: DISPOSITION-1085; DISPOSITION-1086; OPEN-268
+  Testability: testable in-house
+  Risk if wrong: Medium: weaker dispositions persist whenever twins race.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1150
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1151:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] Each job presumes it must deduplicate itself. Today there were three different mechanisms (chat-thread check, write safety check, lock file), none at the scheduler where the duplication starts.
+  Evidence it was operative: f2a095e8; 6a1ab16f; 4fd38750
+  Why it was unstated: oversight
+  Type: architectural
+  Related decisions: OPEN-260; ASSUMPTION-1830; ASSUMPTION-1831
+  Testability: testable in-house
+  Risk if wrong: Medium: every new job must re-invent dedupe; ones that don't will race.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1151
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1152:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] This pass presumes session_info's final message is a faithful record of each run. Five of today's sessions returned "(no messages)", including scheduler health and project status, which normally report FAILs. Their findings are invisible here, so an absence of their alarms is not evidence of health.
+  Evidence it was operative: read_transcript results for dd7da859, ddb113ed, c4e651ad, 622f3259, f668e7c2
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: OPEN-264; PRESUMPTION-1141
+  Testability: testable in-house
+  Risk if wrong: Medium: the self-awareness layer under-reports exactly the monitors meant to catch failures.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1152
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1153:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] Back-filling a foundational source presumes the agent can tell which existing triplets "rest on" it. That is retroactive attribution by inference, the reverse of Merton's obliteration by incorporation, and could mis-assign lineage.
+  Evidence it was operative: 89e7def6 (Stump card; ASSUMPTION-1827)
+  Why it was unstated: culturally embedded
+  Type: epistemic
+  Related decisions: OPEN-265
+  Testability: testable via literature
+  Risk if wrong: Medium: provenance chains in the wiki gain links no human or source stated.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1153
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1154:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] Routing to Tom presumes his attention is always available. Today alone: lit pipeline decisions 1-3, stray lock removal, WATCH-003 (20 checks), duplicate IDs, split the run log (40th time), fresh walk chat, before a trip on the 18th. No job defines what happens while those wait.
+  Evidence it was operative: 4fd38750; 6a1ab16f; f2a095e8
+  Why it was unstated: culturally embedded
+  Type: scaling
+  Related decisions: OPEN-267; OPEN-268
+  Testability: testable in-house
+  Risk if wrong: High: the Tom-only queue grows faster than it drains, and stale items look settled.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1154
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1155:
+  Date surfaced: 2026-10-15
+  Statement: [inferred] Append-only registers presume growth is free. The watch list is ~830 KB; assumptions.md, presumptions.md and open_questions.md run to tens of thousands of lines, and agents re-read them every run.
+  Evidence it was operative: 6a1ab16f; wc -l of architecture/ registers
+  Why it was unstated: oversight
+  Type: scaling
+  Related decisions: PRESUMPTION-1144; PRESUMPTION-1148
+  Testability: testable in-house
+  Risk if wrong: Medium: per-run token cost rises steadily, worsening Rule 6 breaches.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1155
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-15 transcripts.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-15 (local). **7 items (1149-1155)**: architectural 2 · normative 1 · methodological 1 · epistemic 1 · scaling 2; risk: High 2 · Medium 5. Checked against 14a 1823-1834 and PRESUMPTION-1141/1144/1147/1148; 1152 extends 1141, 1155 extends 1144.*

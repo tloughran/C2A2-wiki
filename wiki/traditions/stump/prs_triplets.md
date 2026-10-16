@@ -405,4 +405,40 @@ PRS-45:
   Confidence: Medium — "can be a sort of whole" is her wording, and the developmental-psychology sources are 2004–2005 (Hobson, Reddy, Leekam, Franco); the mirror-neuron consensus she reports (Gallese et al. 2004) has since been contested and she does not update it in the 2025 reprint.
   Evidence: Section 5 ("The case of autism"), pp. 11–13; Section 6 closing sentence, p. 14, verbatim above.
 
-*Total PRS triplets: 42*
+PRS-46:
+  Problem: Christianity is widely taken to be committed to Cartesian substance dualism, which is widely taken to be false, so the religion appears saddled with a refuted philosophy of mind.
+  Resource: Aquinas's explicit rejection of the 'soul using a body' view (ST I q.89 a.1; SCG II.57; QDA q.9) and his thesis that the intellective soul is the single substantial form of the body (ST I q.76 a.4)
+  Solution: Cartesian dualism is not essential to Christianity; Aquinas rejects it unconditionally while still affirming survival of death, and "the battle lines between dualism and materialism are misdrawn"
+  Date Added: 2026-10-16
+  Source: Non-Cartesian Substance Dualism and Materialism Without Reductionism, Faith and Philosophy 12.4 (1995) 505-531; PROP-2026-10-15-001
+  Confidence: High
+  Evidence: Abstract, p. 505.
+
+PRS-47:
+  Problem: If the soul is the form of the body, how can it exist and act after death without an incoherent category switch from property-like form to substance?
+  Resource: Forms that configure (an amethyst's form) vs. forms that are configured (God, angels); the C/EBP protein heuristic, configured and also configuring DNA, unchanged in nature when it binds or unbinds
+  Solution: The human soul is a "configured configurer", "the amphibians of this metaphysical world"; at death it stops configuring matter without metaphysical transformation. Stump flags four disanalogies herself (note 43): the protein is heuristic only
+  Date Added: 2026-10-16
+  Source: Non-Cartesian Substance Dualism and Materialism Without Reductionism (1995); PROP-2026-10-15-001
+  Confidence: High as a statement of Stump's reading; Medium as an interpretation of Aquinas (disputed by Swinburne, Toner, Butera)
+  Evidence: pp. 514-515. Root text for the later hylomorphism triplets (PRS-14, PRS-43..45), which presuppose this account of form.
+
+PRS-48:
+  Problem: Does reductionism follow from materialism; is a whole nothing but its parts?
+  Resource: Aquinas's matter-form layering (proton, amino acid, protein subunit, dimer) read with Searle's two senses of emergence; chaperone-assisted folding; prions (same composition, different configuration, health vs. spongiform disease)
+  Solution: What emerges when form is imposed on matter is "not just properties but substances"; configuration "isn't itself a microlevel property", so macro-level causal powers belong to the whole. Reducing a composite to constituents "is to think that the form of the whole is nothing"
+  Date Added: 2026-10-16
+  Source: Non-Cartesian Substance Dualism and Materialism Without Reductionism (1995); PROP-2026-10-15-001
+  Confidence: High
+  Evidence: pp. 510-511, 522; note 16 on the two senses of 'causal interactions'.
+
+PRS-49:
+  Problem: Where does Aquinas sit in the contemporary taxonomy: dualist or physicalist?
+  Resource: Comparison with Richard Boyd's materialism without reductionism (mental states purely configurational, possibly realized nonphysically) and Boyd's reframing as composition vs. correlation
+  Solution: Boyd and Aquinas converge: something purely configurational can exist and function apart from matter. Because composition hybridizes matter and configuration, both materialist and dualist intuitions find support, which explains the debate's persistence; Stump floats 'subsistence dualism' as a genus
+  Date Added: 2026-10-16
+  Source: Non-Cartesian Substance Dualism and Materialism Without Reductionism (1995); PROP-2026-10-15-001
+  Confidence: High
+  Evidence: pp. 522-523. Caveat: Stump concedes Aquinas wrongly ties intellect to no bodily organ (p. 520) and may lack a unity criterion (note 19).
+
+*Total PRS triplets: 46*

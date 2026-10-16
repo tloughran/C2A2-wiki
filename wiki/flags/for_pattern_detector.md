@@ -796,3 +796,14 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [PIPELINE, ID COLLISION] **PROP-2026-10-13-001/-002 are carried by two pairs of files**: the Hoffman and Hawkins cards, and the later-written MacIntyre and Loughran candidate files. Resolved to Hoffman/Hawkins for this decision; the other two remain in pending/ under duplicate ids.
 
 [EVALUATED: 2026-10-14 - FINDING-102..105; see pattern_detector_findings.md]
+
+## 2026-10-16 signals
+
+- [BRIDGE] **Stump configured configurer × Levin bioelectric prepattern** (CROSS-156; stump PRS-47..48). Discriminating question stated: configuring-only vs configured form.
+- [TENSION] **Stump × Kastrup on the materialism/dualism dichotomy** (CROSS-157; stump PRS-49, kastrup PRS-95).
+- [SELF-ASSESSMENT, UNVERIFIED] **Kastrup calls analytic idealism provisional** (kastrup PRS-94). Members-only; host paraphrase.
+- [INFRASTRUCTURE] **Can an AI agent be a configured configurer?** (stump PRS-49 via Boyd). C2A2 agent-membership question.
+- [PIPELINE, SEWING] **Tom's CHANGE on PROP-2026-10-13-001 (MacIntyre 3RV):** overlaps with existing PRS triplets should be identified and written to the right PRS file. Applies also to macintyre PRS-07..08 and loughran PRS-13..19 filed today from the same corpus.
+- [PIPELINE, EVIDENCE] **Evidence weather:** 16 triplets; Speculative = kastrup PRS-93..94 (2). Document-explorer card (PROP-2026-10-13-004) yielded 0 triplets by its own audit (49 MODEL, 2 duplicate, 1 undetermined). Porter (PRS-SE-03) has no tradition file; not filed.
+
+[EVALUATED: 2026-10-16 - FINDING-106..107; see pattern_detector_findings.md]

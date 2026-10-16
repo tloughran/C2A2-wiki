@@ -2331,3 +2331,27 @@ FINDING-102..105; none escalated (no HIGH or MEDIUM-HIGH). Network map table in 
 ### 2026-10-15 daily run (orchestrator)
 Phase 0: no new decision emails. Phase 1: ledger unchanged (approved=481 ingested=450 decided-zero=29 OPEN=1), 0 ingested. Phase 2: 0 proposals; Stump carded by specialist (PROP-2026-10-15-001); searched Fredrickson, Carroll, Arkani-Hamed - nothing passes; Carroll AMA Oct 2026 (10-12) left for Friday specialist. Phase 3/4: review page (7 pending) + draft. Phase 5: deleted 2026-10-11_review.html. 5.5 OK address-clean (cards 530). 5.6 OK 1733 signals, 90 pairs, stale_days 2. Phase 6: no git.
 **Network: 1025 PRS / 155 CROSS / 105 FINDING.** Pending = 7.
+
+## 2026-10-16 — C2A2 daily run (Fri, Carroll + Arkani-Hamed specialist day)
+
+**Phase 0: one decision email, 5 APPROVE / 2 CHANGE.** `[C2A2-review-decision] 2026-10-15` (thread 1a140abeec25b13c, sent 10-15 17:47Z). Lookup by Step 2 (no `prop_id:` lines), unambiguous within `pending/`. Archive `review/archive/2026-10-16_decisions.md`. Email appended to `provenance/decision_emails.json` (21 emails). `review/2026-10-15_review.html` deleted. CHANGE: MacIntyre 3RV (PROP-2026-10-13-001, sewing pass for overlaps) and McGilchrist Wonderstruck (PROP-2026-10-14-002, pull YouTube transcript) moved to `needs_review/` with Tom's notes appended. Older unread decision threads (2026-07-23, 04-27 x2, 04-08) already have archives; left untouched.
+
+| File | Agent(s) | Date | Triplets extracted | Notes |
+|------|-------------|------|-------------------|-------|
+| `2026-10-14_kastrup_great-contender-metaphysical-landscape.md` | Kastrup Agent + Master + Pattern Detector | 2026-10-16 | 2 (PRS-93..94) | PROP-2026-10-14-001. Members-only session; host wording; both Speculative. Provisionality signal held, not minted. |
+| `2026-10-15_stump_non-cartesian-substance-dualism-configured-configurer.md` | Stump Agent + Master + Pattern Detector | 2026-10-16 | 4 (PRS-46..49) | PROP-2026-10-15-001. 1995 paper read in full. CROSS-156 (x Levin), CROSS-157 (x Kastrup); FINDING-106. |
+| `2026-10-13_spreadsheet-explorer_prs-candidates.md` | Kastrup/MacIntyre/Loughran Agents + Master | 2026-10-16 | 4 (kastrup PRS-95; macintyre PRS-07..08; loughran PRS-19) | PROP-2026-10-13-003. PRS-SE-03 (Porter) not filed: no tradition file. |
+| `2026-10-13_loughran_prs-candidates-marks.md` | Loughran Agent + Master | 2026-10-16 | 6 (PRS-13..18) | PROP-2026-10-13-002 (id collides with Hawkins card; ingested regardless). Within-family overlap with macintyre routed to sewing pass. |
+| `2026-10-13_document-explorer_prs-candidates.md` | Master + Pattern Detector | 2026-10-16 | +0 (NO-OP) | PROP-2026-10-13-004. Card's own audit kept 0 (49 MODEL, 2 duplicates, 1 undetermined). Decided-zero. |
+
+Totals after: kastrup 95, stump 46 (max id 49; pre-existing numbering gaps), macintyre 8, loughran 19. 16 triplets, 2 Speculative.
+Master / Pattern Detector: CROSS-156, CROSS-157; 6 signals forwarded; FINDING-106..107; none escalated.
+**Phase 2: 0 proposals.** Carroll carded by specialist (PROP-2026-10-16-001). Searched Arkani-Hamed (CV of 2026-09-10 lists only already-captured papers) and Fredrickson (love-convergence paper already captured 06-25): nothing passes.
+**Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 1.
+
+### 2026-10-16 daily run (orchestrator, Friday - Carroll + Arkani-Hamed specialist day)
+Phase 0: decision email `[C2A2-review-decision] 2026-10-15` (thread 1a140abeec25b13c) already applied by the 04:37 local run (archive `review/archive/2026-10-16_decisions.md`; email stored in decision_emails.json); this firing found nothing further. 5 APPROVE (10-13-002/-003/-004, 10-14-001, 10-15-001), 2 CHANGE (10-13-001, 10-14-002) in needs_review/.
+Phase 1: 5 approved cards, 16 triplets ingested earlier today (loughran, macintyre, kastrup, stump); PROP-2026-10-13-004 (document-explorer) NO-OP +0 triplets by its own audit (49 MODEL, 2 duplicate, 1 undetermined). Pattern Detector evaluated FINDING-106..107.
+Phase 2: Carroll carded by specialist (PROP-2026-10-16-001). Arkani-Hamed search: nothing passing the filter. 0 proposals written by orchestrator.
+Phase 3: review page `review/2026-10-16_review.html` (1 pending) opened. Phase 5.5 OK address-clean (cards 531, triplets 1041). Phase 5.6 OK 1745 signals, 91 pairs, span to 2026-10-15, stale_days 1. Phase 6: no git.
+**Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 1.

@@ -7019,3 +7019,49 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-15.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-16
+
+  Items checked: 0 on-cadence (WATCH-003 and WATCH-004 both next due 2026-10-20). Off-cadence trigger scan only — no check counters incremented:
+    - `review/archive/` still **24** files, latest `2026-10-13_decisions.md` (no new decision file). Grep for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md`. WATCH-003 count stays **20**.
+    - `needs_review/` Fredrickson file mtime unchanged (2026-10-08); flagged inter-tradition sentence still at line 38; no PROP-2026-10-01-001 in `pending/`. WATCH-004 count stays **2**.
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003, WATCH-004)
+  Items stale: 1 (WATCH-003; recommendation unchanged: **Escalate to Tom**). WATCH-004 below threshold.
+  New items added: 0 — `needs_review/` holds 2 files, both `[TRACKED-16]`; Channel 2/3 marker grep matches only `inbox/proposals/README.md` (template).
+  Next scheduled checks: WATCH-003 and WATCH-004, **2026-10-20** (or earlier on a new `review/archive/` file or a revised PROP-2026-10-01-001 in `pending/`).
+
+**Census (shell):** `pending/` 7, `approved/` 481, `denied/` 1, `needs_review/` 2, `review/archive/` 24.
+
+**Open for Tom (unchanged):** INTEGRITY FLAG ruling (closes WATCH-003); WATCH-004 CT Signals edit. Watch list ~830 KB — split the run log (**41st** recommendation).
+
+**Agent 16 Status:** Operational. 0 checked (none due), 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-16.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-16
+
+  Items checked: 0. No item was due (WATCH-003 and WATCH-004 are both weekly, next on 2026-10-20), and neither off-cadence trigger fired, so no check counters went up:
+    - WATCH-003 trigger (a new `review/archive/` file): none. Still **24** files, latest `2026-10-13_decisions.md` (mtime 2026-10-14 04:37). Count stays **20**.
+    - WATCH-004 trigger (a revised PROP-2026-10-01-001): none. The `needs_review/` Fredrickson file has not changed since 2026-10-08 02:38. The flagged CT Signals sentence is still at line 38, and Tom's quoted instruction is at line 46. No copy of PROP-2026-10-01-001 is in `pending/`. Count stays **2**.
+  Items resolved: 0
+  Items still watching: 2 (WATCH-003, WATCH-004)
+  Items stale: 1. WATCH-003 has been flagged since 08-25 and the recommendation is unchanged: **Escalate to Tom**. WATCH-004 is below the threshold.
+  New items added: 0. `needs_review/` holds 2 files, both tagged `[TRACKED-16]`. The Channel 2/3 marker grep (`DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` / `CONDITIONAL |`, excluding `deferred/` and `agents/`) matches only `inbox/proposals/README.md`, which is the template.
+  Next scheduled checks: WATCH-003 and WATCH-004 on **2026-10-20**, or earlier if either trigger fires.
+
+**Census (shell):** `pending/` 7 (+1 since 10-15: Stump 10-15, unrelated), `approved/` 481, `denied/` 1, `needs_review/` 2, `review/archive/` 24.
+
+**Open for Tom (unchanged):**
+- INTEGRITY FLAG ruling, which closes WATCH-003.
+- WATCH-004 CT Signals edit, by the Fredrickson agent or Tom.
+- PROP-2026-10-13-001/-002 ID collision.
+- The watch list is ~831 KB; split the run log (**41st** recommendation). This log now also has two separate `2026-10-14` summary blocks. Agent 16 has not touched them; they are noted for cleanup.
+
+**Agent 16 Status:** Operational. 0 checked (none due), 0 resolved, 0 added, 0 cancelled. Active items: 2.
+
+---
+
+*Run completed 2026-10-16.*

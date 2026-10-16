@@ -124,3 +124,66 @@ PRS-12:
   Date Added: 2026-09-01
   Source: C2A2 formative assessment, wiki/architecture/prs_axis_formative_assessment_2026-09-01.md
   Confidence: High
+
+PRS-13:
+  Problem: Encyclopaedic rationality claims timeless standards; how can standards of craft be justified historically? ("historical justification of stds of craft", 69.2)
+  Resource: Masters who "1. exemplify best available stds 2. know how to go further 3. how to direct others" (70.16)
+  Solution: "Aq's acct. must be seen 1st of all as a product of a craft nested in a tradition of enquiry" (82.13); "Philosophy as craft" (66.12)
+  Date Added: 2026-10-16
+  Source: Tom's marginalia in Three Rival Versions of Moral Enquiry (1990), pp. 66-133; PROP-2026-10-13-002 (LOUGHRAN-MARKS-01)
+  Confidence: Medium (quotes exact against the scan index; handwriting not checked against images; P/R/S framing is the extractor's inference)
+  Evidence: Overlap: none found.
+
+PRS-14:
+  Problem: Recognising incommensurability between rival schemes requires someone inside both (118.6)
+  Resource: "2nd 1st language competency"; "native speaker of both"; "only Aquinas" (119.10-15)
+  Solution: "T2: show how T1 was unable to solve its own problems"; "asym of explanation / T2 can explain T1's sterility" (124.11, 124.19)
+  Date Added: 2026-10-16
+  Source: Tom's marginalia in 3RV, pp. 118-124; PROP-2026-10-13-002 (LOUGHRAN-MARKS-02)
+  Confidence: Medium
+  Evidence: Overlap: PRS-01 and PRS-08 already carry second-first-language; this adds the asymmetry-of-explanation step.
+
+PRS-15:
+  Problem: Intellectual occupation of a rival position may leave one's own standpoint unchanged ("key distinction: imaginative engagement vs. intellectual occupation", 125.5)
+  Resource: "new initiate" generalization vs. a gift of revolutionary insight (125.15-16)
+  Solution: "imaginative occupation of alt[ernative] pos[ition]" with "CONVERSION" as the outcome (125.17, 125.10)
+  Date Added: 2026-10-16
+  Source: Tom's marginalia in 3RV, p. 125; PROP-2026-10-13-002 (LOUGHRAN-MARKS-03)
+  Confidence: Medium
+  Evidence: Overlap: none found.
+
+PRS-16:
+  Problem: The fifth level of persuasion is "the central task of unifying inquiry to arrive at a stable consensus across t-plural exploration" (153.4)
+  Resource: "Exactly Plato's task in the Republic (not enough to have an explanation of blindness; you need a cure" (153.6)
+  Solution: "a craft of confrontation + persuasion on their terms, a rhetoric of dissolution" (220.23)
+  Date Added: 2026-10-16
+  Source: Tom's marginalia in 3RV, pp. 153, 220; PROP-2026-10-13-002 (LOUGHRAN-MARKS-04)
+  Confidence: Medium
+  Evidence: Overlap: partial with PRS-02.
+
+PRS-17:
+  Problem: "no progress in those moral inquiry/enclaves allowed in mod lib univ" (231.4)
+  Resource: a "netwerk of rival universities" (238.2)
+  Solution: "Rival universities w/ a canopy of contestation"; "Learning from Rivals" (238.4, 237.17)
+  Date Added: 2026-10-16
+  Source: Tom's marginalia in 3RV, pp. 231-238; PROP-2026-10-13-002 (LOUGHRAN-MARKS-05)
+  Confidence: Medium
+  Evidence: Overlap: adjacent to PRS-05 (accelerator complex).
+
+PRS-18:
+  Problem: "need new curriculum new texts" (225.14)
+  Resource: "a sustained argument in an anthology"; "long-form podcast?" (225.15, 226.10)
+  Solution: "publish ecommentary on 3RV; Republic: (re)launch a genre" (236.1)
+  Date Added: 2026-10-16
+  Source: Tom's marginalia in 3RV, pp. 225-236; PROP-2026-10-13-002 (LOUGHRAN-MARKS-06)
+  Confidence: Medium
+  Evidence: Overlap: partial with PRS-07. The 226.9 '7P' is unexplained.
+
+PRS-19:
+  Problem: "We're in an information shitstorm, and it's drowning us, polarizing us as we go under."
+  Resource: "We've lost something we once had, a craft of being human, or many crafts, and a way to learn from them all." (attributed by Tom to 'M', read as MacIntyre)
+  Solution: "The RC project will deliver a solution set that addresses all these challenges."
+  Date Added: 2026-10-16
+  Source: RC Sandbox (TL Sandbox worksheet), cells r480c4-c8, section I.1, dated 2020-12-28; PROP-2026-10-13-003 (PRS-SE-05)
+  Confidence: Medium (Tom's own words, verbatim; the Solution names no mechanism)
+  Evidence: Founding diagnosis of the RC project; no duplicate found.

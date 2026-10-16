@@ -841,4 +841,31 @@ PRS-92:
   Confidence: Medium (stated in the prior session; the 27 Sept update is unverified)
   Evidence: Session page summary of the earlier "Robots will be tools, not tyrants" recording.
 
-*Total PRS triplets: 92*
+PRS-93:
+  Problem: With roughly 500 competing theories of consciousness (Kuhn's catalogue), how should anyone choose a metaphysics without being swamped by the options?
+  Resource: A five-family grouping of the theory space (emergence from the physical / dualism / physical-property views / co-emergence from something else / idealism), plus Kastrup's criteria for discarding whole families
+  Solution: Reduce the field to a few live contenders by eliminating entire families (physicalism first, "the worst metaphysical framework on the table"), then compare the survivors
+  Date Added: 2026-10-16
+  Source: The Great Contender: The current state of the metaphysical debate (With Reality in Mind, 2026-10-13); PROP-2026-10-14-001
+  Confidence: Speculative (members-only recording; the grouping is the host's, Kastrup's actual eliminations unverified)
+  Evidence: Session page: Kastrup would review "which ones he confidently discards."
+
+PRS-94:
+  Problem: Is analytic idealism the final word on what reality is, or a stage on the way?
+  Resource: Kastrup's reported self-assessment that analytic idealism is "a step in the right direction", not "a full account of reality"
+  Solution: Treat analytic idealism as a provisional, culturally timely framework inside a still-open research program, and name the directions beyond it
+  Date Added: 2026-10-16
+  Source: The Great Contender: The current state of the metaphysical debate; PROP-2026-10-14-001
+  Confidence: Speculative (host paraphrase, not a direct quote; if confirmed, it revises the wiki's record of analytic idealism as Kastrup's settled position)
+  Evidence: Session page: "He doesn't, however, believe that analytic idealism is a full account of reality, but rather a step in the right direction. One that our culture might actually be ready for."
+
+PRS-95:
+  Problem: Why does a non-mental reality underlying perception seem to be needed at all?
+  Resource: "solidity and concreteness are qualities of our experience"
+  Solution: The matter problem is "merely an artifact of thought, something we conjure up out of thin air because of our theoretical habits and prejudices"; we get lost "in imagining that what we are describing is a non-mental reality underlying our perceptions, as opposed to the perceptions themselves"
+  Date Added: 2026-10-16
+  Source: RC Sandbox (TL Sandbox worksheet), cell r598c4 (dup r598c7), voice label 'Kastrup', source text not named; PROP-2026-10-13-003 (PRS-SE-04)
+  Confidence: Medium (all three elements verbatim Kastrup per cell label; cell undated, original source unidentified)
+  Evidence: Cell opens "from Bernardo Kastrup:"; verbatim PASS against wiki/rc_sandbox_notebook.html.
+
+*Total PRS triplets: 95*

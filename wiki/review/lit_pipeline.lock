@@ -1,1 +1,3 @@
 RELEASED 2026-10-15T04:39:45Z by c2a2-lit-search-pipeline instance B (scheduled 2026-10-15). CONFLICT: a concurrent instance committed DISPOSITION-1085..1086 / MONITOR-691 / REVISE-518 at 00:38:13 local despite this lock; this instance applied nothing (see review/2026-10-15_lit-pipeline_concurrent-run_CONFLICT.md).
+LOCKED 2026-10-16T04:34:07Z by local-cowork-2026-10-16-16a1601a (host physmini02, pid 3895)
+RELEASED 2026-10-16T04:38:56Z by local-cowork-2026-10-16-16a1601a (was [1792125247 2026-10-16T04:34:07Z local-cowork-2026-10-16-16a1601a physmini02 3895]). 2 items (P1149 REVISE-519, P1153 MONITOR-692); 4 result files + systemic-risk flag; registers appended; queue tagged; backups .bak.20261016-pre-15pipeline
