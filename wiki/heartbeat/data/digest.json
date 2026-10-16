@@ -1,200 +1,202 @@
 {
   "seed": false,
-  "generated": "2026-10-15",
-  "generated_at": "2026-10-15T15:22:51Z",
+  "generated": "2026-10-16",
+  "generated_at": "2026-10-16T15:03:04Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 183,
-    "high_relevance": 0,
-    "primary_themes": "Capability Jump + Governance Policy"
+    "items_checked": 207,
+    "high_relevance": 2,
+    "primary_themes": "Capability Jump + Market Platform"
   },
   "signals": [
     {
-      "title": "OpenAI will reportedly ship at least one model this year but its flagship still needs alignment work",
-      "source": "The Decoder",
-      "url": "https://the-decoder.com/openai-will-reportedly-ship-at-least-one-model-this-year-but-its-flagship-still-needs-alignment-work/",
-      "relevance": 1,
-      "tags": [],
-      "summary": "OpenAI is racing to finish its next flagship model, which uses the same looped transformer technique as Astra to boost math and coding performance. The tradeoff is that looping makes safety monitoring harder.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Wed, 14 Oct 2026 16:14:16 +0000",
-      "first_seen_at": "2026-10-15T15:22:44.174241+00:00",
-      "long_summary": "OpenAI is currently in a race to complete its next flagship model, which employs a looped transformer technique similar to that of Astra to enhance its performance in math and coding tasks. However, this looping mechanism presents a challenge, as it complicates safety monitoring processes. This development highlights the ongoing balance between advancing technical capabilities and ensuring the safety of AI systems, which is crucial for the community to understand as they follow the evolving landscape of AI technology.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "PersEvalBench: Can LLM Evaluators Judge Contextually Appropriate Use of Persona Information?",
+      "title": "Wolof-Adapted Industry-Ready Open-Weight Language Models",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2610.19314",
-      "relevance": 1,
+      "url": "https://arxiv.org/abs/2610.20824",
+      "relevance": 2,
       "tags": [
         "governance_policy"
       ],
-      "summary": "Large language model (LLM) evaluators are increasingly used to assess personalized assistants, yet whether they can reliably judge personalization has rarely been tested. We introduce PersEvalBench, a benchmark testing whether an evaluator can recognize appropriate and inappropriate uses of user history.",
-      "implication": "Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.513542+00:00",
-      "long_summary": "PersEvalBench is a newly introduced benchmark that evaluates the ability of large language model (LLM) evaluators to judge the appropriate use of personalization in user interactions with personalized assistants. Despite the rising use of LLM evaluators for these assessments, the reliability of their judgment regarding personalization has not been extensively examined. This benchmark aims to determine whether evaluators can discern between appropriate and inappropriate applications of user history. Understanding the efficacy of LLM evaluators in this context is essential as it has implications for the development and governance of personalized AI systems within communities aiming to utilize AI responsibly.",
+      "summary": "Wolof is spoken by 23M people, mostly in Senegal, but remains weakly supported by open-weight language models, while API models raise cost, governance, and sovereignty constraints for local deployments. In this paper, we present 0.6B-14B open-weight models adapted to Wolof through instruction tuning, preference alignment, and model merging.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.463502+00:00",
+      "long_summary": "The paper discusses the development of open-weight language models adapted to Wolof, a language spoken by approximately 23 million people primarily in Senegal. These models, which range from 0.6 billion to 14 billion parameters, have been specifically tailored for the language through techniques such as instruction tuning, preference alignment, and model merging. The support for Wolof in language modeling is currently limited, and existing API models face challenges related to cost, governance, and local sovereignty. This adaptation aims to improve access and utility for speakers of Wolof. The relevance of this work lies in its potential to enhance representation and resources for Wolof speakers in AI, supporting local initiatives and promoting linguistic diversity in technological advancements.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
+        "generated": "2026-10-16",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Can LLM Agents Efficiently Identify Appliance Faults? Insights From Diagnosing a Simulated Appliance",
+      "title": "StepSafe: Learning Timely Intervention with Context-Aware Safety Reasoning",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2610.20960",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Safety in agentic systems is inherently sequential: whether an action is safe depends on prior actions, tool outputs, information disclosures, and interactions among agents. Recent work has shifted agent safety guardrails from post-hoc trajectory-level assessment toward step-level action diagnosis and proactive risk prediction, yet existing training objectives provide limited supervision for how step evidence accumulates over time and when it becomes sufficient to justify intervention.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:02:59.898635+00:00",
+      "long_summary": "StepSafe addresses the complexities of safety in agentic systems by focusing on the sequential nature of safety, where the safety of an action is contingent on prior actions, tool outputs, information disclosures, and agent interactions. The recent trend in safety research has moved towards real-time action assessment instead of relying solely on after-the-fact evaluations. However, current training methods offer insufficient guidance on how evidence accumulates with each step and when that evidence is strong enough to warrant intervention. This exploration is crucial as it emphasizes the need for more nuanced supervision in the development of intelligent systems, thereby enhancing their overall safety. Understanding these developments is essential for the community to stay informed about advancements in AI safety practices and their implications for effective system design.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "ReviewPilot: A Multi-Agent System for Screening and Data Extraction in Systematic Reviews",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2610.19291",
+      "url": "https://arxiv.org/abs/2610.21042",
       "relevance": 1,
       "tags": [
         "capability_jump"
       ],
-      "summary": "In so-called \"Industry 4.0,\" integrated sensors, analytics tools, and other digital technologies supplement industrial workflows, potentiating enhanced visibility and automation. Prognostics and health management (PHM) and natural language processing (NLP) practitioners alike have explored the application of large language models (LLMs) to industrial asset management, but many prior works' focus on exam-like benchmarks has limited their assessment of LLMs' ability to automate practical operations.",
+      "summary": "Systematic literature reviews follow the PRISMA process of screening scholarly works and extracting evidence from included studies. Deep research tools based on large language models (LLMs) can search and summarize the literature but do not record which studies are excluded or where extracted values come from.",
       "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.509849+00:00",
-      "long_summary": "The abstract discusses the relevance of large language models (LLMs) within the context of Industry 4.0, where integrated sensors and digital technologies enhance industrial processes. It notes that both prognostics and health management (PHM) and natural language processing (NLP) experts have been investigating how LLMs can be applied to manage industrial assets. However, previous studies have primarily relied on exam-like benchmarks, which may not effectively evaluate the LLMs’ potential to automate practical operations. This limited focus raises questions about the true capabilities of LLMs in real-world scenarios such as diagnosing appliance faults. Understanding these dynamics is crucial for communities engaged in AI development and implementation, as it influences how emerging technologies can be leveraged in practical, industry-specific applications.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.489896+00:00",
+      "long_summary": "ReviewPilot is a multi-agent system designed to enhance systematic literature reviews by adhering to the PRISMA process, which involves screening scholarly works and extracting evidence from selected studies. While current deep research tools that utilize large language models (LLMs) can effectively search and summarize literature, they fall short in tracking which studies are excluded from consideration and the origins of extracted values. This development is significant for those in the community aiming to stay informed about AI's role in improving research methodologies, particularly in systematic reviews, where transparency and accuracy are crucial.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
+        "generated": "2026-10-16",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Titan-Llama: Retrofitting Pre-trained LLMs with External Neural Memory Modules",
+      "title": "Learning to Read Out: Unembedding Dynamics in Language Model Pretraining",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2610.19210",
-      "relevance": 1,
-      "tags": [
-        "market_platform"
-      ],
-      "summary": "Transformers are efficient to pre-train at scale because attention permits parallel computation across sequence positions, but long-context inference requires increasingly large KV caches. Efficient recurrent alternatives reduce the asymptotic complexity of inference, but their sequential dependence limits token-wise parallelism during training, making them harder to scale.",
-      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.501729+00:00",
-      "long_summary": "The research presents a discussion on the limitations of using transformers for long-context inference due to the need for large key-value (KV) caches, which grow with context length. While efficient recurrent alternatives can help reduce the asymptotic complexity of inference, they introduce a sequential dependency that hampers token-wise parallelism during training, making scalability a challenge. Addressing these issues is crucial for the advancement of large language models (LLMs) in handling longer contexts without compromising efficiency. Understanding these developments is vital for the community as it highlights ongoing efforts to enhance AI capabilities in processing complex information.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "CAFE: Confining Feature Distillation to Language-Routed Adapters for Compact Multilingual Automatic Speech Recognition",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2610.19134",
-      "relevance": 1,
-      "tags": [
-        "capability_jump"
-      ],
-      "summary": "Feature distillation is usually expected to add to logit distillation. We find that this expectation does not hold for two common feature losses in compact multilingual automatic speech recognition (ASR), and analyze why through their gradients.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.486046+00:00",
-      "long_summary": "The study presented in the arXiv paper examines the limitations of feature distillation in the context of compact multilingual automatic speech recognition (ASR). It reveals that the anticipated benefits of combining feature distillation with logit distillation do not manifest for two commonly used feature loss functions. The authors provide an analysis of this phenomenon by exploring the gradients associated with these feature losses. This research is significant for a community engaged in AI as it highlights the complexities in enhancing ASR systems, paving the way for more effective multilingual communication technologies.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "From Copying to Composition: How Language Models Develop In-Context Learning",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2610.19113",
-      "relevance": 1,
-      "tags": [
-        "market_platform"
-      ],
-      "summary": "In-context learning (ICL) allows language models to adapt their behavior from instructions and demonstrations in a prompt, but accuracy alone does not reveal how contextual information controls their predictions. We study the acquisition and trainability of ICL with a controlled diagnostic that separates copying a nearby demonstration from integrating information across the prompt.",
-      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.482357+00:00",
-      "long_summary": "In-context learning (ICL) enables language models to adjust their responses based on provided instructions and examples within a prompt. However, assessing accuracy does not fully explain how contextual information influences the models' predictions. The study investigates how language models acquire and improve their ICL capabilities, utilizing a diagnostic approach that distinguishes between merely copying a nearby example and effectively integrating information from across the entire prompt. This understanding of ICL's underlying mechanisms is crucial as it highlights the nuances of how language models interpret and utilize context in their predictions. Staying informed about these developments is essential for the community, as it provides insights into the evolving capabilities of AI in understanding and generating human-like text.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Pre-Trained Language Models as Zero-Shot Tools for Social Science Research",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2610.19048",
+      "url": "https://arxiv.org/abs/2610.21025",
       "relevance": 1,
       "tags": [],
-      "summary": "Record linkage and demographic inference from names are routine demands in social science. Most approaches to these problems require labeled training data that are difficult or costly to acquire.",
+      "summary": "When does a language model acquire a capability? Developmental studies usually answer this by tracking when models start producing the correct token.",
       "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.478517+00:00",
-      "long_summary": "Record linkage and demographic inference from names are common tasks in social science research, yet most existing methods depend on labeled training data, which can be challenging or expensive to obtain. This highlights a significant issue in the field, where the availability of quality data can limit research effectiveness. Understanding how pre-trained language models can serve as zero-shot tools may provide new avenues for tackling these issues without the need for extensive labeled datasets. This matters for a community keeping up with AI as it opens potential pathways for more efficient and accessible social science research methodologies.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.486940+00:00",
+      "long_summary": "The abstract discusses an approach to understanding when a language model develops specific capabilities, focusing on the timing of producing correct tokens. It contrasts this with typical developmental studies that predominantly concentrate on the output of the models. By investigating the dynamics of unembedding in language model pretraining, the research aims to provide insights into the capabilities acquisition process rather than just the ability to produce correct tokens. This understanding is crucial for improving language model training and performance. This matters for a community keeping up with AI as it highlights the importance of analyzing the underlying learning processes in models, potentially guiding more effective training strategies.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
+        "generated": "2026-10-16",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "What Information Buys in Active Inference",
-      "source": "arXiv cs.LG",
-      "url": "https://arxiv.org/abs/2610.19046",
+      "title": "Does Morphological Correctness Matter for Tokenization? A Scrambled Control Study in Tagalog",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.20859",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Typology-aware tokenizers are motivated by the claim that segmentation which respects morpheme boundaries preserves information that frequency-driven segmentation destroys. Studies routinely establish that it helps while assuming the boundaries must be linguistically correct.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.471971+00:00",
+      "long_summary": "Typology-aware tokenizers are designed based on the idea that respecting morpheme boundaries in segmentation maintains valuable information that is often lost in frequency-driven approaches. Research typically supports the benefits of this approach, but it usually operates under the assumption that the boundaries identified must be linguistically accurate. This study highlights the importance of considering morphological correctness in tokenization, particularly within the context of Tagalog. Understanding the implications of morphological correctness can enhance the effectiveness of tokenization in language processing. This matters for a community keeping up with AI because grasping the nuances of linguistic structures can improve the development of AI tools and technologies related to language understanding and processing.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "PEDBench: Can Speech Models Detect Phonetic Errors?",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.20830",
       "relevance": 1,
       "tags": [
-        "capability_jump"
+        "capability_jump",
+        "market_platform"
       ],
-      "summary": "Information-theoretic exploration is of primary interest in methodological studies of reinforcement learning (RL) and computational cognitive neuroscience, while the established RL theory builds regret guarantees on confidence sets. This situation leaves open the conditions under which the information-driven exploration found in nature is more advantageous than the exploration of the established RL theory.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.179138+00:00",
-      "long_summary": "The article discusses the role of information-theoretic exploration in the context of reinforcement learning (RL) and computational cognitive neuroscience. It highlights the disparity between this exploration and traditional RL models that rely on regret guarantees based on confidence sets. The authors point out that this raises questions about when natural information-driven exploration may outperform the established methods of exploration used in RL theory. This distinction is crucial for understanding the computational efficiency of different exploration strategies in AI development. Keeping up with this topic is important for the community, as it informs how future AI systems can optimize learning and adaptation through exploration strategies.",
+      "summary": "Phonetic error detection (PED) aims to identify phoneme-level substitutions, deletions, and insertions and is essential for educational and clinical speech assessment and intervention. Despite recent advances in speech models for phoneme recognition, their ability to reliably detect fine-grained phonetic errors remains unclear because of a lack of high-quality evaluation data.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.469134+00:00",
+      "long_summary": "Phonetic error detection (PED) is crucial for identifying specific phoneme-level substitutions, deletions, and insertions, which plays a significant role in educational and clinical speech assessment and intervention. While recent advancements in speech models have improved phoneme recognition, their effectiveness in accurately identifying subtle phonetic errors has not been fully established due to a deficiency of high-quality evaluation data. This highlights the importance of developing robust systems in speech technology that can support effective speech learning and therapy by reliably detecting errors. Understanding these capabilities is essential for those in the community to stay informed about advancements in AI that impact speech and language education.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
+        "generated": "2026-10-16",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Who Should We Listen to More? Welfare-Aware Preference Acquisition for Pluralistic Alignment",
-      "source": "arXiv cs.LG",
-      "url": "https://arxiv.org/abs/2610.19035",
+      "title": "PRISM: Transfer and Limits of Activation Interventions in Tool-Calling Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.20808",
+      "relevance": 1,
+      "tags": [
+        "market_platform"
+      ],
+      "summary": "Recent literature shows that unsafe tool calls can often accompany textual refusals in language models. To investigate this hidden vulnerability, we introduce PRISM, a framework for evaluating the transfer of activation interventions across precision, languages, and scales.",
+      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.460771+00:00",
+      "long_summary": "PRISM is a new framework designed to evaluate how activation interventions transfer across different precision levels, languages, and scales in language models. Recent studies indicate that unsafe tool calls frequently occur with textual refusals in these models, highlighting a hidden vulnerability. By utilizing PRISM, researchers aim to better understand and address these issues, seeking to improve the safety and reliability of language model outputs. This development is significant for communities focused on AI, as it could enhance the effectiveness of interactions with language models by informing safer design practices.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Does Personalization Break Trust? Open-Set Rejection Calibration Under Few-Shot On-Device Intent Adaptation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.20652",
       "relevance": 1,
       "tags": [
         "governance_policy",
         "market_platform"
       ],
-      "summary": "Pluralistic alignment needs to accommodate diverse preferences under limited human feedback. Using AI simulators to label preference comparisons reduces annotation costs, but variation in simulation accuracy across individuals can leave some people's preferences poorly represented in training.",
+      "summary": "Always-on virtual assistants increasingly personalize on-device to new user-specific commands via few-shot fine-tuning (e.g., LoRA), but this adaptation is evaluated almost exclusively on whether it learns the new commands, not on whether the assistant can still recognize an input that matches none of its intents - the out-of-scope (OOS) rejection problem. We show that naive few-shot LoRA personalization degrades OOS-rejection AUROC (area under the ROC curve) on every one of five public intent-classification benchmarks (mean drop $0.055$--$0.258$, five seeds each), while in-scope accuracy is preserved.",
       "implication": "Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.168830+00:00",
-      "long_summary": "Pluralistic alignment in AI aims to address diverse preferences while relying on limited feedback from humans. The use of AI simulators to label preference comparisons helps in reducing the costs associated with annotation. However, a challenge arises due to the varying accuracy of simulations for different individuals, which can result in some people's preferences being inadequately represented in the training process. Understanding these dynamics is crucial as they highlight the importance of considering diverse human inputs in AI training, significantly affecting how well AI systems can align with the needs of a heterogeneous user base. This matters for a community keeping up with AI, as it underscores the importance of ensuring equitable representation in AI development processes.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.448747+00:00",
+      "long_summary": "Always-on virtual assistants are adapting to user-specific commands using few-shot fine-tuning, yet they have primarily been evaluated based on their ability to learn these commands, not on how well they can recognize inputs that do not match any known intents, known as the out-of-scope (OOS) rejection problem. Research indicates that naive personalization techniques, specifically LoRA, can diminish OOS-rejection performance across five public intent-classification benchmarks, with a mean drop in AUROC ranging from 0.055 to 0.258, although the accuracy for recognized commands remains intact. This finding is important as it highlights potential trust issues for users of virtual assistants, suggesting that while adaptations enhance functionality, they can inadvertently make the systems less reliable in appropriately handling unrecognized commands. For a community engaged in AI, understanding these trade-offs is crucial to foster trust and efficacy in AI applications.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
+        "generated": "2026-10-16",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Token Utility for On-Policy Distillation via Local Trust-Region Optimization",
-      "source": "arXiv cs.LG",
-      "url": "https://arxiv.org/abs/2610.18883",
+      "title": "Jev-as-a-Judge for RAG Claim Verification: Confidence-Gated Cascading Between a Non-Generative Verifier and a Frontier LLM",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.20634",
       "relevance": 1,
       "tags": [
         "capability_jump",
-        "governance_policy"
+        "market_platform"
       ],
-      "summary": "Token-selection methods for on-policy distillation (OPD) prioritize student-visited positions using diverse signals, including uncertainty, teacher-student disagreement, and mismatch direction. We instead derive token importance from the distillation objective itself: how much can each position's loss decrease under an equal local KL budget on the student's predictive distribution?",
-      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Thu, 15 Oct 2026 00:00:00 -0400",
-      "first_seen_at": "2026-10-15T15:22:42.156760+00:00",
-      "long_summary": "Token-selection methods for on-policy distillation (OPD) focus on prioritizing positions encountered by students through various signals such as uncertainty and disagreement between teacher and student models. However, this research proposes a different approach by deriving token importance directly from the distillation objective. It assesses how much the loss for each position can decrease when applying a uniform local Kullback-Leibler (KL) budget on the student's predictive distribution. This method emphasizes optimizing token utility in distillation processes, enhancing the effectiveness of training student models based on their performance. Understanding these advancements in token utility is essential for a community engaged in AI, as it highlights innovative strategies for improving model training efficiency and performance.",
+      "summary": "Retrieval-augmented generation asks one question at volume: does this evidence support this claim? The answer is one bit, yet most pipelines obtain it from a text generator and pay generation prices for the prose wrapped around it.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.436464+00:00",
+      "long_summary": "The paper discusses retrieval-augmented generation, focusing on the critical query of whether specific evidence supports a given claim. While the answer to this question is binary, many existing systems rely on text generators to derive it, incurring costs associated with the generation of additional prose. This approach may lead to inefficiencies, as the core determination of claim support could be more directly achieved without extensive text generation. The exploration of alternative methodologies, like using a non-generative verifier alongside advanced language models, underscores the potential for more streamlined and cost-effective solutions in AI-driven verification processes. Understanding these developments is crucial for the community to stay informed about more efficient and effective verification methods in AI applications.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-15",
+        "generated": "2026-10-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "PRISM: PRIvileged Sibling-guided Multi-Agent Topology Design",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.20628",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "misuse_security"
+      ],
+      "summary": "Multi-agent systems (MAS) based on large language models (LLMs) have become a powerful way to address complex problems, and their effectiveness depends critically on the collaboration topology that decides which agents participate and how they communicate. Recent work learns to generate this topology from the task query, fitting the generator to corpora of execution-verified graphs.",
+      "implication": "Reassess role boundaries and human override for community deployments. Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Fri, 16 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-16T15:03:00.403724+00:00",
+      "long_summary": "PRISM refers to a new approach in the field of multi-agent systems (MAS) utilizing large language models (LLMs) to optimize problem-solving. This method emphasizes that the success of these systems hinges on an effective collaboration topology, which dictates the agents involved and the nature of their communication. Notably, recent advancements have explored generating this collaboration topology directly from task queries, training the generator on datasets that comprise execution-validated graphs. This innovative process could enhance collaboration among agents, improving their problem-solving capabilities. Understanding developments like PRISM is crucial for communities aiming to stay informed about AI advancements that could impact the design and efficacy of multi-agent systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-16",
         "kind": "machine-generated"
       }
     }
