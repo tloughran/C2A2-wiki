@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-16",
+  "generated": "2026-10-17",
   "count": 61,
   "snapshots": [
+    {
+      "date": "2026-10-17",
+      "time": "13:59 UTC",
+      "sort_key": "20261017135904",
+      "generated_at": "2026-10-17T13:59:04Z",
+      "file": "digest-20261017-135904.json",
+      "window": "weekly",
+      "signals": 10,
+      "items_checked": 152,
+      "sources_reached": 19,
+      "high_relevance": 0,
+      "primary_themes": "Misuse Security + Governance Policy"
+    },
     {
       "date": "2026-10-16",
       "time": "15:03 UTC",
@@ -765,19 +778,6 @@
       "window": "weekly",
       "signals": 10,
       "items_checked": 230,
-      "sources_reached": 19,
-      "high_relevance": 2,
-      "primary_themes": "Capability Jump + Market Platform"
-    },
-    {
-      "date": "2026-08-16",
-      "time": "11:09 UTC",
-      "sort_key": "20260816110909",
-      "generated_at": "2026-08-16T11:09:09Z",
-      "file": "digest-20260816-110909.json",
-      "window": "weekly",
-      "signals": 10,
-      "items_checked": 135,
       "sources_reached": 19,
       "high_relevance": 2,
       "primary_themes": "Capability Jump + Market Platform"
