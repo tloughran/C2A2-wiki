@@ -54,3 +54,5 @@ Overlaps not proposed: p.116 and pp.124 to 126 (epistemological crisis and asser
 ## Tom's decision (2026-10-15): CHANGE
 
 Flag for sewing agent: texts that overlap with existing PRS triplets should be identified and written to the appropriate PRS triplet file; these are connections we do not want to lose.
+
+[TRACKED-16: 2026-10-17] — WATCH-006 (AWAITING-AGENT: sewing agent)

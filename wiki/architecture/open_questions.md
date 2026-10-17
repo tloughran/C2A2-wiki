@@ -3658,3 +3658,21 @@ OPEN-260 (update 2026-10-15): Twins again: lit pipeline (lock ignored, four resu
 OPEN-264 (update 2026-10-15): Sixth local pass under the 10-03 rule. Five sessions returned no messages, so their findings are not in this pass (PRESUMPTION-1152).
 OPEN-265 (update 2026-10-15): The wiki daily run declined to card from a title (Carroll AMA), while Stump back-filled a 1995 paper and Fredrickson rejected popular-level material (ASSUMPTION-1826, -1827, -1829). Thresholds are being set job by job.
 OPEN-267 (update 2026-10-15): Unchanged. The two 10-13 cards with reused IDs are still in pending/ [verified, 7 files total]; the deferred monitor repeats the request to re-ID them.
+
+OPEN-269:
+  Raised: 2026-10-16 by 14a/14b (ASSUMPTION-1844; PRESUMPTION-1158)
+  Question: Where does material for a thinker outside the tradition roster go? Today a Porter candidate was dropped from a multi-thinker card because no Porter file exists. Should off-roster candidates be held somewhere (and counted), or is dropping them the intended scope rule?
+  Needs: **Tom** (scope decision; see scope_exclusions.md)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-269
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-260 (update 2026-10-16): Twins again: evening sync, morning chat scrape, system health (Mac + sandbox), Carroll/Arkani-Hamed agent (concurrent writer of PROP-2026-10-16-001). Four jobs each deferred to the first writer; only system health checked which output was better (PRESUMPTION-1159). The cloud 14a/14b twin wrote `changelog/2026-10-17_changes.md` at 23:31 EDT 10-16 (UTC-dated, local day 10-16). This local pass appends to `2026-10-16_changes.md` and leaves that stub untouched.
+OPEN-264 (update 2026-10-16): Seventh local pass under the 10-03 rule. All 11 sessions read returned content today.
+OPEN-266 (update 2026-10-16): Recurred, sharper. Project status: "OpenStory looks live … Nothing is broken." Scheduler health, same morning: 5 FAIL, including the OpenStory watchdog (H-Drive unmounted, ingest STOPPED), and no cloud-routine coverage since 10-06 (ASSUMPTION-1839, -1841; PRESUMPTION-1156, -1160). PREMISE-237 still not adopted by the status job.
+OPEN-267 (update 2026-10-16): Partly resolved by the daily run: the two waiting cards with reused IDs were dispositioned (pending/ now holds 1 file [verified]). Referents were inferred from the review page; IDs still need renumbering, and the ledger had marked one card filed because of the clash (ASSUMPTION-1842, -1843; PRESUMPTION-1157).
+OPEN-268 (update 2026-10-16): Lit pipeline ran lock-held today; REVISE-519 (from PRESUMPTION-1149) says the lock probably cannot stop the cloud twin and recommends removing one registration. Tom's call. The 10-15 lock file is still at wiki/review/lit_pipeline.lock, marked RELEASED [verified].

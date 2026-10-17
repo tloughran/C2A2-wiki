@@ -8309,3 +8309,33 @@ PREMISE-233: [ATTACHMENT 2026-10-14, DISPOSITION-1083 ← PRESUMPTION-1137; scop
   Confidence: Moderate (unchanged).
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1137 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (attached to PREMISE-233)
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1137_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1137_against.md
+
+PREMISE-238:
+  Date validated: 2026-10-17
+  Source item: ASSUMPTION-1693 (via 15d re-trigger of MONITOR-621) | DISPOSITION-1089
+  Statement: A small, non-preregistered study is graded Speculative by default. The grade is a ceiling, not a verdict: it must state its precision rationale (sample size relative to the effect claimed, not small n alone) and is revisable upward on replication or a held-out/preregistered test.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Nosek et al. 2018 PNAS "The preregistration revolution" [read in full, author manuscript]; Button et al. 2013 Nat Rev Neurosci "Power failure" [abstract]
+  Challenges noted: 15b (Weak): GRADE treats small n as an input to imprecision, not a grade-setter; Llanos et al. 2020 Cochrane audit finds "small sample" downgrades the most common and least justified. Folded into the wording (ceiling + stated rationale).
+  Confidence: Moderate
+  Applicable to: confidence grading of evidence across tradition wikis and lit-search returns; PREMISE-224 (Speculative grade for title/venue-only sources)
+  Re-check due: 2026-11-17 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-224 — compatible. No contradiction.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: ASSUMPTION-1693 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1693_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1693_retrigger-2026-10-17_against.md
+
+PREMISE-239:
+  Date validated: 2026-10-17
+  Source item: PRESUMPTION-1100 (via 15d re-trigger of MONITOR-635) | DISPOSITION-1091
+  Statement: A status record must keep the outcome of the last attempt separate from the observed state of the system (and mark when that state was last observed). A single field that conflates them produces misleading health signals. Each separate field must have a named consumer, or it goes stale and misleads in turn.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Aïdasso et al. 2025 arXiv:2509.14347 (industrial CI silent failures) [abstract + passages; preprint]; Kubernetes KEP-1623 conditions/observedGeneration [snippet]; Ewaschuk 2016 SRE book ch. 6 [read in full, via 15b]
+  Challenges noted: 15b: none found against the claim (cycle 0 and cycle 1); boundary only — added fields without consumers go stale.
+  Confidence: Moderate
+  Applicable to: run records, health checks, pipeline status files, lock/audit trails; PREMISE-100
+  Re-check due: 2026-11-17 (Monthly); via 15d
+  Status: ACTIVE
+  Consistency: checked against PREMISE-100 (liveness ≠ correctness) — same family, consistent. Proposed (not applied): cross-reference or merge with PREMISE-100.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: PRESUMPTION-1100 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1100_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1100_retrigger-2026-10-17_against.md

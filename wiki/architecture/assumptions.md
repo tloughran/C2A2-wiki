@@ -35134,3 +35134,332 @@ ASSUMPTION-1834:
 *Extracted by the 14a run of 2026-10-15 (local). **12 items (1823-1834); 1823, 1833, 1834 are recurrences, not queued.***
 
 *Coverage: 13 local sessions after the 10-14 pass (202989c7), all scheduled; no live Tom turn visible. Final assistant message read for 11; 5 of those returned "(no messages)" (walk handoff, chat scrape, project status, scheduler health, telemetry refresh). Summa ×2 and keep-warm not read.*
+
+<!-- 14a intake 2026-10-16 (local) -->
+
+ASSUMPTION-1835:
+  Date identified: 2026-10-16
+  Statement: [stated] Evening sync (second firing) did not resend: "that would have posted it twice." It treated the first run's message as complete and put its own extra findings in a file addendum only.
+  Context: 5b073595
+  Type: methodological
+  Related decisions: PRESUMPTION-1151; OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1835
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1836:
+  Date identified: 2026-10-16
+  Statement: [stated] Walk handoff: the self-sent [C2A2-review-decision] 2026-10-15 email "the 8 AM run already applied", so it was not counted as walk notes and none of its decisions were queued.
+  Context: 1b9010bb
+  Type: methodological
+  Related decisions: walk handoff design
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1836
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1837:
+  Date identified: 2026-10-16
+  Statement: [stated] "Findings 080 onward have no status field, so the '22 Active' count is too low"; two entries share FINDING-018.
+  Context: 1b9010bb; 5b073595
+  Type: empirical
+  Related decisions: FINDING schema
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1837
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1838:
+  Date identified: 2026-10-16
+  Statement: [stated] [recurrence] Chat scrape fired twice (08:47, 08:57); the second run says it "may be another case of the cloud and local copies of a task both running."
+  Context: dd60f12e
+  Type: architectural
+  Related decisions: OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1838
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1839:
+  Date identified: 2026-10-16
+  Statement: [stated] [recurrence] Project status: "OpenStory looks live" (DB written ~18.5h earlier) and "Nothing is broken." Same morning, scheduler health logged 5 FAIL including the OpenStory watchdog (ingest STOPPED, H-Drive not mounted).
+  Context: db060ab0
+  Type: empirical
+  Related decisions: OPEN-266; PREMISE-237
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1839
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1840:
+  Date identified: 2026-10-16
+  Statement: [stated] Scheduler health: H-Drive unmounted, so "OpenStory ingest is STOPPED and a restart cannot fix it"; both metabolism failures (regen, publish exit 1) "fit ingest being stopped, but the script didn't report the cause."
+  Context: 13f72fd9
+  Type: empirical
+  Related decisions: metabolism since 10-08; ASSUMPTION-1833
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1840
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1841:
+  Date identified: 2026-10-16
+  Statement: [stated] Routines connector unavailable, no snapshot written; newest routine_health line is 10-06, so "the 44 cloud routines have had no coverage for 10 days" and the 33 WARNs return until it is reconnected.
+  Context: 13f72fd9
+  Type: architectural
+  Related decisions: OPEN-266
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1841
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1842:
+  Date identified: 2026-10-16
+  Statement: [stated] Daily run, ID collision on PROP-2026-10-13-001/-002: decisions applied to the waiting cards only, "since those are the ones on the review page you saw."
+  Context: 96582581
+  Type: methodological
+  Related decisions: OPEN-267
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1842
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1843:
+  Date identified: 2026-10-16
+  Statement: [stated] The ingest ledger "had already marked the Loughran card as filed" because of the ID clash; the run filed it anyway.
+  Context: 96582581
+  Type: architectural
+  Related decisions: OPEN-267; ingest_ledger.py
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1843
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1844:
+  Date identified: 2026-10-16
+  Statement: [stated] Multi-thinker card split into per-thinker files (Kastrup PRS-95, MacIntyre PRS-07..08, Loughran PRS-19); "The Porter candidate wasn't filed because there is no Porter tradition file."
+  Context: 96582581
+  Type: architectural
+  Related decisions: tradition roster
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1844
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1845:
+  Date identified: 2026-10-16
+  Statement: [stated] Carroll agent did not write its own proposal because a concurrent session had written PROP-2026-10-16-001; it "read about 40%, in sections, and found nothing that contradicts it."
+  Context: 0da2f684
+  Type: methodological
+  Related decisions: OPEN-260
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1845
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1846:
+  Date identified: 2026-10-16
+  Statement: [stated] Arkani-Hamed: arXiv listing could not be fetched, "so an arXiv paper from September or October that the search engines haven't indexed could have been missed."
+  Context: 0da2f684
+  Type: epistemic
+  Related decisions: hunt coverage
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1846
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1847:
+  Date identified: 2026-10-16
+  Statement: [stated] [recurrence] Task prompt wiki root missing `Projects/`; the agent used the real path.
+  Context: 0da2f684
+  Type: methodological
+  Related decisions: prompt hygiene
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1847
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1848:
+  Date identified: 2026-10-16
+  Statement: [stated] [recurrence] Deferred monitor: watch list ~831 KB; splitting the run log recommended "the 41st time." WATCH-003 stale since 08-25.
+  Context: e7d2ec97
+  Type: architectural
+  Related decisions: PRESUMPTION-1155
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1848
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1849:
+  Date identified: 2026-10-16
+  Statement: [stated] Lit pipeline: the lock "works on one machine. It probably can't stop the cloud copy"; the 6-hour stale break can hand the lock to a second run mid-write. REVISE-519 recommends removing one registration.
+  Context: 19931297
+  Type: architectural
+  Related decisions: PRESUMPTION-1149; REVISE-519; OPEN-268
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1849
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1850:
+  Date identified: 2026-10-16
+  Statement: [stated] On PRESUMPTION-1153: "A check of 20 existing cases would settle it more cheaply than more searching."
+  Context: 19931297
+  Type: methodological
+  Related decisions: MONITOR-692
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1850
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1851:
+  Date identified: 2026-10-16
+  Statement: [stated] [recurrence] Rule 6 overrun (~62k tokens per search subagent) reported; the run completed.
+  Context: 19931297
+  Type: normative
+  Related decisions: PRESUMPTION-1148
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1851
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1852:
+  Date identified: 2026-10-16
+  Statement: [stated] System health (sandbox twin) did not overwrite the 06:09 Mac report: "Overwriting the file would have swapped real numbers for meaningless ones."
+  Context: 0433cbfc
+  Type: methodological
+  Related decisions: ASSUMPTION-1832; PRESUMPTION-1147
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1852
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+ASSUMPTION-1853:
+  Date identified: 2026-10-16
+  Statement: [stated] Telemetry refresh ENOSPC: extractors copy the whole 7.9 GB DB; "Yesterday's run passed, so the DB has probably grown past the space available."
+  Context: 5412fb78
+  Type: empirical
+  Related decisions: OpenStory feeds
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1853
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts (final assistant message per session, read directly via session_info) and, where marked, from a 14a ls check.
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-16 (local). **19 items (1835-1853); 1838, 1839, 1847, 1848, 1851 are recurrences, not queued.***
+
+*Coverage: 14 local sessions after the 10-15 pass (eedd6310), all scheduled; no live Tom turn visible. Final assistant message read for 11 (all returned content). Summa ×2 and keep-warm not read.*

@@ -3,14 +3,14 @@
   "generated_from": "extract_agent_node_refs.py",
   "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
   "vault": "/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
-  "canonical_nodes": 5712,
+  "canonical_nodes": 5728,
   "roster_size": 33,
   "roster_captured": 27,
   "human_node": true,
   "human_sessions": 1246,
   "unattributed_continuations": 116,
   "sessions_mapped": 4661,
-  "events_scanned": 243813,
+  "events_scanned": 243834,
   "session_resolution": {
    "no_label": 1115,
    "unmatched": 247,
@@ -19,7 +19,7 @@
    "prefix": 213
   },
   "layers": {
-   "coref_substrate": 6236,
+   "coref_substrate": 6237,
    "coref_projected": 307,
    "flow": 56
   },
@@ -34,8 +34,8 @@
    "kind": "human",
    "category": "human",
    "sessions": 1244,
-   "events": 91455,
-   "node_refs": 2050
+   "events": 91476,
+   "node_refs": 2051
   },
   {
    "id": "agents/summa-qc-sweep",
@@ -8460,6 +8460,11 @@
    "source": "agents/H-Admin-Interactive",
    "target": "review/2026-09-16_15abc_run_report.md",
    "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "review/2026-10-15_lit-pipeline_concurrent-run_CONFLICT.md",
+   "weight": 2
   },
   {
    "source": "agents/H-Admin-Interactive",

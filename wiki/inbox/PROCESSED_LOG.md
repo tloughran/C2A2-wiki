@@ -2355,3 +2355,10 @@ Phase 1: 5 approved cards, 16 triplets ingested earlier today (loughran, macinty
 Phase 2: Carroll carded by specialist (PROP-2026-10-16-001). Arkani-Hamed search: nothing passing the filter. 0 proposals written by orchestrator.
 Phase 3: review page `review/2026-10-16_review.html` (1 pending) opened. Phase 5.5 OK address-clean (cards 531, triplets 1041). Phase 5.6 OK 1745 signals, 91 pairs, span to 2026-10-15, stale_days 1. Phase 6: no git.
 **Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 1.
+
+### 2026-10-17 daily run (orchestrator, Saturday - Wolfram specialist day)
+Phase 0: no new `[C2A2-review-decision]` email (2026-10-15 thread 1a140abeec25b13c already applied 10-16; older unread April/July threads were applied in their own runs).
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=486 ingested=454 decided-zero=30 OPEN=1 (Wright PROP-2026-08-14-033, unchanged; card itself says do not ingest the conjectures). **0 files ingested.** for_pattern_detector.md: no unevaluated items.
+Phase 2: no Wolfram card in pending/ today; orchestrator checked writings.stephenwolfram.com - newest post 2026-09-28 (pure math / AI), already captured. 0 proposals.
+Phase 3: review page `review/2026-10-17_review.html` (1 pending: Carroll PROP-2026-10-16-001) opened. Phase 5: 0 old review pages deleted. Phase 5.5 OK address-clean (cards 531, triplets 1041). Phase 5.6 OK 1745 signals, 91 pairs, span to 2026-10-15, stale_days 2. Phase 6: no git.
+**Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 1.

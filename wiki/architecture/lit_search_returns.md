@@ -51446,3 +51446,83 @@ DISPOSITION-1088:
 - 15a and 15b ran as separate subagents with no shared context (structural blocking). Each made 4 WebSearch calls and 0 fetches; evidence is snippet/title-level. Kleppmann 2016 was seen only through secondary summaries. Treat both dispositions as provisional.
 - Budget, fail loud: the two search subagents used about 62k tokens each, over the 4k per-task and 30k per-session budget in Tom's standing rules.
 - Cross-check against validated_premises.md: no INCORPORATE issued this run; grep for 'fencing', 'obliteration', 'lockfile' found no existing premise.
+
+## 15a/15b/15c run 2026-10-17 (scheduled; lock-held run sched-2026-10-17-52db05c7; 15d re-trigger backlog, 5 items: ASSUMPTION-1693, PRESUMPTION-1099, PRESUMPTION-1100, PRESUMPTION-1102, ASSUMPTION-514)
+Scope: the 2026-10-16 14a/14b intake had 21 items, all [IN-HOUSE], 0 literature. Per the 10-05/10-06 precedent the run took a backlog batch: the 4 newest 15d literature re-triggers (2026-10-11 cohort: ASSUMPTION-1693, PRESUMPTION-1099, -1100, -1102) plus ASSUMPTION-514 (last-listed bare literature item of the 2026-08-02 cohort; selection is an orchestrator choice, not in the task spec). [IN-HOUSE] items not searched by design.
+
+### 15a returns (2026-10-17)
+RETURN-15a-ASSUMPTION-1693 (cycle 1): SUPPORTED | Moderate | Button et al. 2013 Nat Rev Neurosci [abstract]; Nosek et al. 2018 PNAS [read in full, author manuscript]; GRADE start-low rule [background — UNVERIFIED] | Both owed texts confirmed. Nosek: preregistration "does not favor prediction over postdiction; its purpose is to make clear which is which"; non-preregistered findings can be promoted by replication. Supports "Speculative = default, not verdict".
+RETURN-15a-PRESUMPTION-1099 (cycle 1): PARTIALLY-SUPPORTED | Moderate | Huang et al. 2017 HotOS "Gray Failure" [via secondary summary; primary not fetched]; Panorama OSDI 2018 [snippet/title]; heartbeat/dead-man's-switch practice [snippet, vendor] | "Differential observability": a component's own detector says healthy while users see failure; caught by combining vantage points. Shared-record-beats-per-environment shown only in practitioner sources.
+RETURN-15a-PRESUMPTION-1100 (cycle 1): PARTIALLY-SUPPORTED | Moderate | Aïdasso et al. 2025 arXiv:2509.14347 [abstract + passages; preprint]; Kubernetes KEP-1623 conditions/observedGeneration [snippet] | 142k industrial CI jobs: "success" exit status often does not mean the work was done (11% of successful jobs rerun). Kubernetes separates observed state (conditions) from events, with a staleness marker.
+RETURN-15a-PRESUMPTION-1102 (cycle 1): PARTIALLY-SUPPORTED | Moderate | Urbansky et al. 2011 ICWSM [abstract]; Bernstein ADR-005 2026 [read in full; self-reported project doc]; ActiveSync adaptive heartbeat [snippet] | Adaptive feed polling cuts traffic while staying near real time; a 12-agent LLM pilot burned tokens polling empty queues. No controlled study of adaptive schedules for LLM-agent jobs.
+RETURN-15a-ASSUMPTION-514 (cycle 1): SUPPORTED | Moderate-Strong | Briand, El Emam, Freimut & Laitenberger 2000 IEEE TSE [abstract + §2.3]; Mills 1972 [background — UNVERIFIED, as cited]; Zobel 1998 SIGIR [snippet; fetch failed] | SE defect estimation and IR evaluation independently converge: completeness is checked only against a known/seeded denominator; internal completeness is biased. Refinement: seeds calibrate only if as hard to find as real items.
+(15a) Totals: 5 searched | 2 SUPPORTED | 3 PARTIALLY-SUPPORTED | 0 NOVELTY. 11 searches, 10 fetch attempts (2 failed, 2 partial).
+
+### 15b returns (2026-10-17)
+RETURN-15b-ASSUMPTION-1693 (cycle 1): PARTIALLY-CHALLENGED | Weak | Llanos et al. 2020 Cochrane Colloquium abstract [read in full]; GRADE imprecision guidance [snippet] | GRADE treats small n as an input to a precision judgement, not a grade-setter; "small sample" is the most common and least justified downgrade reason (10.9% used optimal information size). Steelman: the rule hard-codes a criticised shortcut; "Speculative" should be a ceiling with a stated precision rationale.
+RETURN-15b-PRESUMPTION-1099 (cycle 1): PARTIALLY-CHALLENGED | Moderate (up from Weak) | PromLabs "Meta-Monitoring Architecture" [read in full]; Ewaschuk 2016 SRE book ch. 6 [read in full] | A stalled central writer makes every environment read "last healthy" at once: a correlated false negative. Same sources keep the central record but add TTL, heartbeat-stopped alarm and end-to-end symptom check. Supports amending, not dropping.
+RETURN-15b-PRESUMPTION-1100 (cycle 1): NO-CHALLENGE-FOUND | None (Weak boundary only) | Ewaschuk 2016 SRE ch. 6 [read in full]; Kubernetes Pod Lifecycle docs [snippet] | No case found where a single result field sufficed; REVISE trigger not met. Boundary: each added field needs a named consumer or it goes stale and misleads.
+RETURN-15b-PRESUMPTION-1102 (cycle 1): PARTIALLY-CHALLENGED | Moderate | US7631076 (IBM) background [partial, targeted extraction]; Ewaschuk 2016 [read in full] | Activity-driven backoff is "always lagging": work that restarts during a backoff goes unseen for up to the long interval; a non-resetting counter stays slow silently. Steelman: for cheap polls a fixed interval sized to the detection-latency budget is bounded and stateless.
+RETURN-15b-ASSUMPTION-514 (cycle 1): PARTIALLY-CHALLENGED | Moderate (up from Weak-Moderate) | Knight & Ammann 1985 NTRS 19860020890 [abstract]; Chun 2006 EJOR [snippet]; Thelin et al. 2002 [snippet, title unverified] | Seeded denominators are models: seeded errors not equally detectable and can mask real ones; capture-recapture assumes independent finders, which same-model agents are not (15b inference: overstates completeness). Mitigation: "calibrated under stated assumptions", seeds planted outside the pipeline. Cycle-0 15b sources lacked read-depth marks; treat as UNVERIFIED.
+(15b) Totals: 5 searched | 0 CHALLENGED | 4 PARTIALLY-CHALLENGED | 1 NO-CHALLENGE-FOUND. 8 searches, 5 fetches, 0 failed.
+
+### SYSTEMIC-RISK (15b, High): shared-fate referent (items 1099, 514, 1102; 1100 on the added-state side only)
+Each fix adds a checker that can fail the same way as the thing it checks (run record; seeder and finders; backoff state), so its failure is silent. Recommendation: a stale or unverified checker reads UNKNOWN, never pass; test by stalling each checker one cycle and confirming something outside it alarms. Links to PREMISE-100, PREMISE-237 and the 2026-10-12 silence-read-as-evidence flag.
+Flag file: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-17_shared-fate-referent.md
+
+### 15c dispositions (2026-10-17)
+DISPOSITION-1089:
+  Date: 2026-10-17 | Item: ASSUMPTION-1693 | Item type: ASSUMPTION (stated) | Cycle: 15d re-trigger cycle 1 (MONITOR-621)
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak)
+  Net assessment: MONITOR-621's tip condition is met: Nosek 2018 read in full and Button 2013 confirmed at abstract; both support a default grade that replication can lift. 15b's GRADE challenge refines the wording (ceiling plus stated precision rationale) rather than opposing it.
+  Disposition: INCORPORATE (PREMISE-238, Moderate confidence)
+  Reasoning: Moderate support + weak challenge leans INCORPORATE with caveats; low-stakes, recoverable grading rule; the 15b refinement is folded into the premise wording.
+  Consistency: checked against PREMISE-224 (title/venue-only sources admitted at Speculative with verify flag) — compatible, same grade used for a different evidence deficit. No contradiction.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: ASSUMPTION-1693 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1693_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1693_retrigger-2026-10-17_against.md
+
+DISPOSITION-1090:
+  Date: 2026-10-17 | Item: PRESUMPTION-1099 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 15d re-trigger cycle 1 (MONITOR-634)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate, up from Weak)
+  Net assessment: Balanced, and converging on an amended form: a shared run record is needed, but it is itself a correlated single point of failure unless it carries a TTL, a heartbeat-stopped alarm and an end-to-end symptom check. The REVISE trigger ("record becomes the blind spot") is documented as a failure type but with a known mitigation.
+  Disposition: MONITOR (MONITOR-693, Medium priority)
+  Reasoning: Moderate vs moderate is contested; Huang et al. read only via secondary summary. Premature INCORPORATE is harder to reverse. The in-house stall test (SYSTEMIC-RISK 2026-10-17) would settle it cheaply.
+  Consistency: no INCORPORATE issued; related to PREMISE-100 and PREMISE-237 (central aggregation = single point of failure noted there).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: PRESUMPTION-1099 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1099_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1099_retrigger-2026-10-17_against.md
+
+DISPOSITION-1091:
+  Date: 2026-10-17 | Item: PRESUMPTION-1100 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 15d re-trigger cycle 1 (MONITOR-635)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: NO-CHALLENGE-FOUND (None; Weak boundary only)
+  Net assessment: Support is moderate (industrial CI study, preprint; Kubernetes conditions/events split) and 15b, searching specifically for the REVISE trigger, found none; SRE ch. 6 (read in full by 15b) also points the same way. Only boundary: each separate field needs a named consumer.
+  Disposition: INCORPORATE (PREMISE-239, Moderate confidence)
+  Reasoning: Support with no challenge leans INCORPORATE; across two cycles the challenge side has stayed at none/weak. Confidence held at Moderate because the CI study is a preprint read in part and the Kubernetes material is snippet-level.
+  Consistency: checked against PREMISE-100 (liveness signal is not correctness; conflation produces false-green) — same family, consistent; PREMISE-239 generalises from liveness/correctness to attempt-outcome/system-state. No contradiction. Proposed (not applied): cross-reference or merge with PREMISE-100.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: PRESUMPTION-1100 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1100_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1100_retrigger-2026-10-17_against.md
+
+DISPOSITION-1092:
+  Date: 2026-10-17 | Item: PRESUMPTION-1102 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 15d re-trigger cycle 1 (MONITOR-637)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: Idle polling has real cost (feed-polling study; agent pilot), but naive backoff lags restarts and can stay slow silently. Both sides fit a scoped form: back off only with reset-on-activity and a maximum interval within the detection-latency budget; otherwise a fixed interval.
+  Disposition: MONITOR (MONITOR-694, Low priority)
+  Reasoning: Contested at moderate/moderate; no controlled agent-scheduling evidence; low stakes. The owed in-house cost/latency measurement remains the decisive test.
+  Consistency: no INCORPORATE issued.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: PRESUMPTION-1102 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1102_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1102_retrigger-2026-10-17_against.md
+
+DISPOSITION-1093:
+  Date: 2026-10-17 | Item: ASSUMPTION-514 | Item type: ASSUMPTION (stated) | Cycle: 15d re-trigger cycle 1 (MONITOR-473; subordinate to PREMISE-124)
+  15a: SUPPORTED (Moderate-Strong) | 15b: PARTIALLY-CHALLENGED (Moderate, up from Weak-Moderate)
+  Net assessment: The core rule (no completeness claim without an independent referent) is well grounded in two fields. 15b's challenge targets the remedy, not the rule: a seeded denominator is itself a model (seed representativeness; finder independence), so "calibrated" must be qualified by its assumptions and seeds should be planted outside the pipeline.
+  Disposition: MONITOR (MONITOR-695, High priority; remains subordinate to PREMISE-124)
+  Reasoning: Strong support + moderate challenge sits between INCORPORATE-with-caveats and MONITOR; because the item is subordinate to PREMISE-124 and the challenge is a refinement of PREMISE-124's own remedy, it is routed to the PREMISE-124 re-check rather than minted as a separate premise. Not a REVISE: nothing found says internal checks alone suffice.
+  Consistency: no INCORPORATE issued. Flag for PREMISE-124 re-check: consider adding "calibrated under stated assumptions; seeds planted outside the measured pipeline". PREMISE-124 not edited by this run.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: ASSUMPTION-514 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-514_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-514_retrigger-2026-10-17_against.md
+
+### Evidence-quality notes (2026-10-17)
+- 15a and 15b ran as separate subagents with no shared context; each confirmed it did not open the other direction's directory. This run fetched more than recent runs (15a: 10 attempts, 2 failed; 15b: 5, 0 failed), so several sources are read in full; others remain abstract/snippet-level and are marked so in the result files.
+- Budget, fail loud: the search subagents used about 151k (15a) and 126k (15b) tokens, well over the 4k per-task and 30k per-session budget in Tom's standing rules.
+- Superseded MONITOR entries (621, 634, 635, 637, 473) were not edited; their successors are PREMISE-238, MONITOR-693, PREMISE-239, MONITOR-694, MONITOR-695.
+- Backlog remaining (fail loud): 131 bare literature-lane items before this run; 126 remain.

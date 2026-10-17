@@ -25199,3 +25199,147 @@ PRESUMPTION-1155:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-15 (local). **7 items (1149-1155)**: architectural 2 · normative 1 · methodological 1 · epistemic 1 · scaling 2; risk: High 2 · Medium 5. Checked against 14a 1823-1834 and PRESUMPTION-1141/1144/1147/1148; 1152 extends 1141, 1155 extends 1144.*
+
+<!-- 14b intake 2026-10-16 (local) -->
+
+PRESUMPTION-1156:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] Liveness is presumed from a proxy. Project status called OpenStory live from DB-write recency, and the telemetry freshness guard passed on the same signal, while the watchdog reported ingest stopped. A recent write does not show the pipeline is still writing.
+  Evidence it was operative: db060ab0; 5412fb78 vs 13f72fd9
+  Why it was unstated: too foundational to notice
+  Type: architectural
+  Related decisions: OPEN-266; PREMISE-237; ASSUMPTION-1839
+  Testability: testable in-house
+  Risk if wrong: High: a stopped ingest reads as healthy for up to the freshness window.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1156
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1157:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] When IDs collide, the agent presumes it can reconstruct which card a human decision meant from what the review page showed. The decision's referent is inferred, not recorded.
+  Evidence it was operative: 96582581 (ASSUMPTION-1842)
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: OPEN-267; validated_premises line 506 (collision rename condition b)
+  Testability: testable in-house
+  Risk if wrong: Medium: a decision could be applied to the wrong card with no trace.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1157
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1158:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] The tradition roster is presumed closed to incoming material: an off-roster candidate (Porter) is dropped because no file exists, with no holding place.
+  Evidence it was operative: 96582581 (ASSUMPTION-1844)
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions: tradition roster; scope_exclusions.md
+  Testability: testable in-house
+  Risk if wrong: Medium: material from adjacent thinkers is lost quietly, and the roster never learns it is incomplete.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1158
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1159:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] Twin handling presumes the first writer is the one to keep. Evening sync, system health, chat scrape and the Carroll agent all deferred to whatever was already written. Only system health checked that the first output was the better one. The Carroll agent vouched for a proposal after reading 40% of its source.
+  Evidence it was operative: 5b073595; 0433cbfc; dd60f12e; 0da2f684
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: PRESUMPTION-1150, -1151; OPEN-260
+  Testability: testable in-house
+  Risk if wrong: Medium: a weaker first output becomes the record by timing.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1159
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1160:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] Silence is presumed to be health. Cloud routines have had no monitor coverage for 10 days, yet project status reports every daily task fired on time. This is an application of existing premises (absence-of-signal alerting; PREMISE-237), not new ground.
+  Evidence it was operative: 13f72fd9 (ASSUMPTION-1841); db060ab0
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: PREMISE-237; OPEN-266
+  Testability: testable in-house
+  Risk if wrong: High: a cloud routine can stop for days without anyone noticing.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1160
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1161:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] Whole-file copies presume data stays small: extractors copy a 7.9 GB DB each run, and old corrupt/recovery backups (~9 GB) stay beside it.
+  Evidence it was operative: 5412fb78 (ASSUMPTION-1853)
+  Why it was unstated: oversight
+  Type: scaling
+  Related decisions: PRESUMPTION-1155
+  Testability: testable in-house
+  Risk if wrong: Medium: refresh fails as soon as the DB outgrows the sandbox, as it did today.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1161
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1162:
+  Date surfaced: 2026-10-16
+  Statement: [inferred] Content signals are presumed to reach the reviewer through final summaries. The Carroll agent's two strongest signals and the daily run's four judgment calls exist only in session final messages. Tom is assumed to read them, and no file carries them forward.
+  Evidence it was operative: 0da2f684; 96582581
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: PRESUMPTION-1154
+  Testability: testable in-house
+  Risk if wrong: Medium: signals are lost if Tom does not read every final message.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1162
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-16 (local). **7 items (1156-1162)**: architectural 1 · structural 1 · methodological 1 · epistemic 3 · scaling 1; risk: High 2 · Medium 5. Checked against 14a 1835-1853 and PRESUMPTION-1147..1155; 1159 extends 1150/1151, 1160 applies PREMISE-237, 1161 extends 1155, 1162 extends 1154.*

@@ -25489,3 +25489,33 @@ MONITOR-692:
   Routing note for 15d: re-search with full-text fetches; the in-house sample is the cheaper test.
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1153 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1153_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1153_against.md
+
+MONITOR-693:
+  Date: 2026-10-17 | Source item: PRESUMPTION-1099 (DISPOSITION-1090; succeeds MONITOR-634) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement (amended form): Monitoring a system split across execution environments needs a shared run record, and that record must carry a TTL, an alarm when its heartbeat stops, and an end-to-end symptom check; otherwise a stalled record makes every environment read healthy at once.
+  What would change the disposition: INCORPORATE the amended form if the in-house stall test (stall the run record one cycle; something outside it alarms) passes, or if Huang et al. 2017 is read in primary form. REVISE if the stall goes unnoticed.
+  Monitoring cadence: Weekly | Priority: Medium
+  Related: SYSTEMIC-RISK 2026-10-17 (shared-fate referent); PREMISE-100; PREMISE-237
+  Next 15d check: 2026-10-24
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: PRESUMPTION-1099 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1099_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1099_retrigger-2026-10-17_against.md
+
+MONITOR-694:
+  Date: 2026-10-17 | Source item: PRESUMPTION-1102 (DISPOSITION-1092; succeeds MONITOR-637) | Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement (scoped form): Polling sized for active work may back off when work completes only if the backoff resets on any activity signal and its maximum interval stays within the detection-latency budget; otherwise a fixed interval is preferable.
+  What would change the disposition: the owed in-house cost/latency comparison (adaptive vs fixed) on one scheduled task; or a controlled study of agent-job polling.
+  Monitoring cadence: Weekly | Priority: Low
+  Related: SYSTEMIC-RISK 2026-10-17 (shared-fate referent)
+  Next 15d check: 2026-10-24
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: PRESUMPTION-1102 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1102_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1102_retrigger-2026-10-17_against.md
+
+MONITOR-695:
+  Date: 2026-10-17 | Source item: ASSUMPTION-514 (DISPOSITION-1093; succeeds MONITOR-473) | Item type: ASSUMPTION (stated) | SUBORDINATE to PREMISE-124
+  Statement: Any self-measurement of completeness/accuracy must cite an independent referent (seeded denominator) or be reported UNCALIBRATED. Refinement from 15b cycle 1: a seeded denominator is itself a model — report "calibrated under stated assumptions" (seed representativeness, finder independence) and plant seeds outside the measured pipeline.
+  What would change the disposition: fold the refinement into PREMISE-124 at its next re-check (human/15d decision); REVISE only if evidence shows internal checks alone suffice (none found).
+  Monitoring cadence: Weekly (with PREMISE-124 re-check) | Priority: High
+  Related: SYSTEMIC-RISK 2026-10-17 (shared-fate referent); PREMISE-124
+  Next 15d check: 2026-10-24
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: ASSUMPTION-514 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-514_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-514_retrigger-2026-10-17_against.md

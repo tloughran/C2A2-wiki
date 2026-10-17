@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-10-15
-  Check count: 20
+  Last checked: 2026-10-17
+  Check count: 21
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -65,6 +65,7 @@ WATCH-003:
     - 2026-10-15 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 20; next on-cadence check remains 2026-10-20): A **24th** decision file exists, `2026-10-13_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-13`, thread 1a13606d264d78fc, processed 2026-10-14; 9 APPROVE: PROP-2026-10-10-001, -10-11-001/-002/-003/-004, -10-12-001/-002, -10-13-001/-002; plus an ID-collision warning on PROP-2026-10-13-001/-002 unrelated to this item). Content grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md`; the new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Original file has not reappeared in any proposals/ subfolder. Folder census (shell): `pending/` **6**, `approved/` 481, `denied/` 1, `needs_review/` 2. Condition NOT met. **Twenty checks, twenty identical answers.**
 
   [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
+    - 2026-10-17: Off-cadence (new `review/archive/2026-10-16_decisions.md`): grep for 2026-07-19-001 / beatitudes-week-two: no match. NOT met.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -104,6 +105,59 @@ WATCH-004:
     Origin: review decision (CHANGE, 2026-10-06 email; archived 2026-10-07)
     Original item: PROP-2026-10-01-001, filed 2026-10-01.
     Chain: Fredrickson agent (2026-10-01) → pending/ → CHANGE in review pass → needs_review/ (2026-10-07) → picked up by Agent 16 on 2026-10-08.
+
+WATCH-005:
+  Channel: review-conditional
+  Date added: 2026-10-17
+  Source: PROP-2026-10-14-002 (McGilchrist — "Wisdom of Uncertainty", Wonderstruck Podcast / HDS CSWR, posted 2026-10-08; YouTube xZcB-tmvJaU)
+
+  Condition: A transcript of the Wonderstruck episode (YouTube captions or published text) is available to the wiki, OR Tom supplies it. Tom's CHANGE (2026-10-15): "Pull the YouTube transcript, ask for Tom's assistance if needed; reprocess this important dialogue."
+  Check method: Fetch channelmcgilchrist.com episode page; web search for transcript; test YouTube caption route (https://www.youtube.com/watch?v=xZcB-tmvJaU) and Wonderstruck/Acast show notes.
+  Check cadence: Weekly
+
+  Last checked: 2026-10-17
+  Check count: 1
+  Result history:
+    - 2026-10-17: Intake. Channel McGilchrist page fetched: title, 47:39 runtime and embedded YouTube player only; no body text, no transcript link. Web search "Wisdom of Uncertainty Wonderstruck Elizabeth Rovere transcript": only generic Wonderstruck show pages, no transcript. Agent 16 did not attempt a caption pull (outside targeted condition check). Condition NOT met. Needs Tom: paste the YouTube URL / transcript into a Cowork session, per his own "ask for Tom's assistance" instruction.
+      [ADDENDUM 2026-10-17, second Agent 16 instance — same day, count NOT incremented]: The YouTube watch page itself (https://www.youtube.com/watch?v=xZcB-tmvJaU) was fetched. Its player data lists an auto-generated (ASR) caption track, so a transcript does exist. The track is labelled `lang=ar`, which suggests YouTube misdetected the spoken language; if so, the auto-captions may be garbled. The timedtext URL is not in this agent's fetch provenance set, so the pull was refused. Sharpened ask for Tom: open the video's "Show transcript" panel and paste the text into a session or a vault file. Pasting the watch URL alone may not be enough, because the caption URL is derived from it and is still refused.
+
+  On resolution:
+    Action: re-queue proposal to pending/ with transcript attached; route to 05_mcgilchrist_agent for reprocessing
+    Destination: wiki/inbox/proposals/pending/
+    Context to attach: Tom's CHANGE text; note that PRS-CANDIDATE-01 was Speculative on title only; Faustian-bargain talk (3nWw91wErsc) probably duplicates PROP-2026-09-29-002.
+
+  Status: WATCHING (HUMAN ASSISTANCE REQUESTED)
+
+  PROVENANCE:
+    Origin: review decision (CHANGE, 2026-10-15)
+    Original item: PROP-2026-10-14-002
+    Chain: McGilchrist agent (2026-10-14) -> pending/ -> CHANGE -> needs_review/ -> Agent 16 (2026-10-17)
+
+WATCH-006:
+  Channel: review-conditional
+  Date added: 2026-10-17
+  Source: PROP-2026-10-13-001 (MacIntyre — PRS candidates, Three Rival Versions of Moral Enquiry)
+
+  Condition: The sewing agent (or Tom) has identified texts overlapping existing PRS-01..PRS-06 triplets and written them to the appropriate PRS triplet file(s), per Tom's CHANGE (2026-10-15); a revised proposal appears in pending/.
+  Check method: File check — pending/ for PROP-2026-10-13-001 revised copy; macintyre PRS triplet files for the overlap passages (pp.116, 124-126, 202-205, 229, 233, 134, 33). No sewing-agent definition exists in agents/ (only 01-20), so ownership is unclear.
+  Check cadence: Weekly
+
+  Last checked: 2026-10-17
+  Check count: 1
+  Result history:
+    - 2026-10-17: Intake. Classified as agent action / possibly human. No revised copy in pending/. Condition NOT met. Flag: no "sewing agent" in agents/; Tom to confirm which agent/session owns this. Also PROP-2026-10-13-001/-002 ID collision still open.
+
+  On resolution:
+    Action: re-queue proposal to pending/ with note
+    Destination: wiki/inbox/proposals/pending/
+    Context to attach: Tom's CHANGE text; overlap list from the proposal.
+
+  Status: WATCHING (AWAITING-AGENT / owner unclear)
+
+  PROVENANCE:
+    Origin: review decision (CHANGE, 2026-10-15)
+    Original item: PROP-2026-10-13-001
+    Chain: MacIntyre agent (2026-10-13) -> pending/ -> CHANGE -> needs_review/ -> Agent 16 (2026-10-17)
 
 ---
 
@@ -7065,3 +7119,29 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-10-16.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-17
+
+  Items checked: WATCH-003 off-cadence (new 10-16 decisions file; no mention; count 21); WATCH-005 and WATCH-006 intake checks. WATCH-004 not due (next 2026-10-20); Fredrickson file unchanged, no revised copy in pending/.
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003; Escalate to Tom). WATCH-005/-006 below threshold.
+  New items added: 2 — WATCH-005 (McGilchrist transcript; needs Tom's help), WATCH-006 (MacIntyre overlap sewing; owner unclear). Both needs_review/ files tagged [TRACKED-16: 2026-10-17].
+  Next scheduled checks: WATCH-003/-004 on 2026-10-20; WATCH-005/-006 on 2026-10-24.
+
+**Open for Tom:** supply Wonderstruck YouTube transcript (WATCH-005); name the owner of the "sewing agent" task (WATCH-006); INTEGRITY FLAG ruling (WATCH-003); WATCH-004 edit; PROP-2026-10-13-001/-002 ID collision; split the ~835 KB watch list (42nd recommendation).
+
+**Agent 16 Status:** Operational. 4 active items.
+
+---
+
+*Run completed 2026-10-17.*
+
+## AGENT 16 ADDENDUM — 2026-10-17 (second instance)
+
+A second Agent 16 instance started at ~02:37, while the first was still writing. The first finished at 02:38:14, so this instance found every step already done. It **did not** re-tag, re-number or re-check. WATCH-003 stays at **21**, and WATCH-005/-006 stay at **1**. Only these findings are added:
+- **Duplicate firing.** Two instances ran within about a minute of each other. This is the likely cause of the duplicate `2026-10-14` and `2026-10-16` summary blocks noted earlier. Tom: check `c2a2-deferred-action-monitor` for a double schedule. The two runs raced on the same files. Here a tag-presence guard stopped a double write, but the race is not safe in general.
+- **WATCH-005.** An ASR caption track exists, labelled `ar`. The fetch was refused (see the item addendum). The ask to Tom is narrower: paste the transcript text.
+- **WATCH-006, on ownership.** There is no sewing-agent file in `agents/`. The design is in `agent_architecture_review.md` Part 2. The ingest run already knows about this pass: `traditions/macintyre/prs_triplets.md` PRS-07 says "filed separately pending the sewing pass Tom requested on PROP-2026-10-13-001". The question for Tom stands: which scheduled task runs the sewing pass?
+
+*Addendum completed 2026-10-17.*

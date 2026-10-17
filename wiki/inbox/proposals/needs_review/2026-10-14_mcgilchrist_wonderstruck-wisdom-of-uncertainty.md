@@ -36,3 +36,5 @@ PRS-CANDIDATE-01:
 ## Tom's decision (2026-10-15): CHANGE
 
 Pull the YouTube transcript, ask for Tom's assistance if needed; reprocess this important dialogue.
+
+[TRACKED-16: 2026-10-17] — WATCH-005 (WATCHING: YouTube transcript)

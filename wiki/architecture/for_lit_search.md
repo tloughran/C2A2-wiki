@@ -14840,7 +14840,7 @@ PRESUMPTION-628 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [
   Notes: First 15d weekly re-trigger for MONITOR-472 (cycle 0 -> 1). subordinate to PREMISE-123. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
 
 [ASSUMPTION] ASSUMPTION-514: (see MONITOR-473 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1] [SEARCHED-15a: 2026-10-17] [SEARCHED-15b: 2026-10-17] [DISPOSITIONED-15c: 2026-10-17 -> MONITOR (MONITOR-695; DISPOSITION-1093)]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
   Priority: High
@@ -25739,21 +25739,21 @@ ITEM: PRESUMPTION-1123 [QUEUED] [IN-HOUSE] [PRESUMPTION]
   Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
 
 [ASSUMPTION] ASSUMPTION-1693: (see MONITOR-621 in monitor_queue.md)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-17] [SEARCHED-15b: 2026-10-17] [DISPOSITIONED-15c: 2026-10-17 -> INCORPORATE (PREMISE-238; DISPOSITION-1089)]
   Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Low
   Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
   Owed: Support is good but this run read search snippets and titles, not the papers; the 15c rule prefers MONITOR to a premature INCORPORATE. A grading heuristic of this kind is low stakes and recoverable. Would move to INCORPORATE after the Button 2013 and Nosek 2018 texts are confirmed in a later cycl...
   Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
 
 [PRESUMPTION] PRESUMPTION-1099: (see MONITOR-634 in monitor_queue.md)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-17] [SEARCHED-15b: 2026-10-17] [DISPOSITIONED-15c: 2026-10-17 -> MONITOR (MONITOR-693; DISPOSITION-1090)]
   Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
   Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
   Owed: A source or in-house test showing a shared run record with staleness detection catches failures that per-environment checks missed (INCORPORATE); evidence the record itself becomes the blind spot (REVISE).
   Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
 
 [PRESUMPTION] PRESUMPTION-1100: (see MONITOR-635 in monitor_queue.md)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-17] [SEARCHED-15b: 2026-10-17] [DISPOSITIONED-15c: 2026-10-17 -> INCORPORATE (PREMISE-239; DISPOSITION-1091)]
   Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Medium
   Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
   Owed: An in-house measurement of a misleading status signal caused by attempt/state conflation (INCORPORATE), or a case showing a single result field suffices at this scale (REVISE/drop).
@@ -25767,7 +25767,7 @@ ITEM: PRESUMPTION-1123 [QUEUED] [IN-HOUSE] [PRESUMPTION]
   Evidence trajectory: Baseline (no prior 15d cycle); no search since 15c disposition.
 
 [PRESUMPTION] PRESUMPTION-1102: (see MONITOR-637 in monitor_queue.md)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-11, cycle 1] [SEARCHED-15a: 2026-10-17] [SEARCHED-15b: 2026-10-17] [DISPOSITIONED-15c: 2026-10-17 -> MONITOR (MONITOR-694; DISPOSITION-1092)]
   Provenance: Chain=[14a/14b->15a,15b->15c->15d]; Priority: Low
   Cycle: 0 -> 1; Last checked: 2026-10-11; Next 15d check: 2026-10-18
   Owed: An in-house cost/latency measurement comparing adaptive vs fixed polling, or a source on idle-run cost in agent scheduling.
@@ -27008,3 +27008,240 @@ ITEM: PRESUMPTION-1155 [QUEUED] [IN-HOUSE] [PRESUMPTION]
 <!-- 14a/14b intake 2026-10-15 (local): 16 items: 2 literature (PRESUMPTION-1149, -1153), 14 [IN-HOUSE]. 1823, 1833, 1834 not queued (recurrences). validated_premises.md checked by grep for 'lock' and 'obliteration' before queuing; no PREMISE covers either. -->
 
 <!-- 15a/15b/15c run 2026-10-16 (local, lock-held): 2 literature items processed (PRESUMPTION-1149 -> REVISE-519; PRESUMPTION-1153 -> MONITOR-692). [IN-HOUSE] items not searched by design. -->
+
+
+ITEM: ASSUMPTION-1835 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1835
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Compare the sent 10-16 Chat message with the addendum; list what Tom did not receive.
+
+ITEM: ASSUMPTION-1836 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1836
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether any decision in that email reached the execution queue by another route.
+
+ITEM: ASSUMPTION-1837 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1837
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Count findings by status field; list IDs with none; resolve the FINDING-018 duplicate.
+
+ITEM: ASSUMPTION-1840 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1840
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Remount H-Drive, rerun metabolism regen; confirm whether exit 1 clears.
+
+ITEM: ASSUMPTION-1841 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1841
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Restore list_triggers access; confirm a dated routine_health line appears.
+
+ITEM: ASSUMPTION-1842 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1842
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check the 10-15 review page and decision email: do the decisions name a card unambiguously apart from its ID?
+
+ITEM: ASSUMPTION-1843 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1843
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check ingest_ledger.py keys; confirm whether any other card was skipped as already filed under a reused ID.
+
+ITEM: ASSUMPTION-1844 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1844
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Record where off-roster candidates go; count how many have been dropped.
+
+ITEM: ASSUMPTION-1845 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1845
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check that the two signals it named (philosophy progress; AI speed vs. checkability) are in the proposal.
+
+ITEM: ASSUMPTION-1846 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1846
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check the arXiv author listing by hand once.
+
+ITEM: ASSUMPTION-1849 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1849
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Tom: pick one registration of c2a2-lit-search-pipeline; then watch for twins for a week.
+
+ITEM: ASSUMPTION-1850 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1850
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Sample 20 back-attributed triplets; count those labelled inferred and tied to a passage.
+
+ITEM: ASSUMPTION-1852 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1852
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Confirm the sandbox twin never overwrites a Mac-sourced report.
+
+ITEM: ASSUMPTION-1853 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1853
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Compare DB size to sandbox free space over the next three runs.
+
+ITEM: PRESUMPTION-1156 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1156
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Re-run project status logic against today's watchdog FAIL; does any rule turn it red?
+
+ITEM: PRESUMPTION-1157 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1157
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the decision email carries a card filename or hash as well as the ID; check whether rename mappings (premise condition b) exist for the 10-13 collisions.
+
+ITEM: PRESUMPTION-1158 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1158
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Grep run summaries for 'no .* tradition file'; count dropped candidates since September.
+
+ITEM: PRESUMPTION-1159 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1159
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): For each of today's four twin pairs, record which output was kept and whether it was checked.
+
+ITEM: PRESUMPTION-1160 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1160
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): List cloud routines with no dated success record in 10 days.
+
+ITEM: PRESUMPTION-1161 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1161
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Measure DB growth per day and project the date the Mac copy also fails.
+
+ITEM: PRESUMPTION-1162 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1162
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-16 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the 10-16 review page or the proposal file contains the Carroll signals.
+
+<!-- 14a/14b intake 2026-10-16 (local): 21 items, all [IN-HOUSE]; 0 literature. validated_premises.md checked by grep: absence-of-signal monitoring (line ~2103, PREMISE-237) and ID-collision rename (line ~506) already covered, so 1157 and 1160 queued in-house. Recurrences 1838, 1839, 1847, 1848, 1851 not queued. -->
+
+
+<!-- 15a/15b/15c run 2026-10-17 (local, lock-held sched-2026-10-17-52db05c7): 10-16 intake had 0 literature items, so a 5-item 15d backlog batch was taken: ASSUMPTION-1693 -> PREMISE-238; PRESUMPTION-1099 -> MONITOR-693; PRESUMPTION-1100 -> PREMISE-239; PRESUMPTION-1102 -> MONITOR-694; ASSUMPTION-514 -> MONITOR-695. Backlog 131 -> 126. [IN-HOUSE] items not searched by design. -->
