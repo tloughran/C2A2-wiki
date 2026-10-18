@@ -96,3 +96,18 @@ Standing: routed to the master agent as a paradigm-shift candidate on the indivi
 **Open question the wiki cannot yet answer:** Is Levin's platonic pattern-space the same object as Kastrup's Mind-at-Large? If yes, Mind-at-Large has non-dissociated structure; if no, Kastrup owes the difference. The summary withholds his answer and the recording is paywalled.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-02_kastrup_levin-redefining-rules-of-life]] · [[2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness]]
+
+---
+
+## A coherence criterion for machine minds
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-07_kastrup_ai-as-archetypal-urge.md` (0 backlinks).
+
+**Why it sits here:** Kastrup's claim that AI lacks a dissociated alter's coherence beside Levin's cognition at every scale.
+
+**Synthesis claim.** Both accept that intelligence is not confined to brains. They disagree on whether AI has the coherence that would make it a mind. Levin would ask for a measurable criterion; Kastrup has not given one in public.
+
+**Open question the wiki cannot yet answer:** What measurable coherence would Kastrup accept as evidence that a system is more than a tool?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-07_kastrup_ai-as-archetypal-urge]]

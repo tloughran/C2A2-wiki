@@ -35,3 +35,18 @@
 **Open question the wiki cannot yet answer:** Does inter-rater agreement between GPT-4 and trained coders hold when the same essays are scored under two different tradition-internal rubrics, and does agreement across the rubrics fall as the traditions diverge?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-24_fredrickson_gpt-measures-spirituality-from-text]]
+
+---
+
+## Resonance as a tested design variable
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-08_fredrickson_shared-positivity-meaning-in-life.md`, `inbox/proposals/approved/2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility.md` (0 backlinks).
+
+**Why it sits here:** The two October Fredrickson cards: resonance builds meaning, and resonance varies with relational mobility.
+
+**Synthesis claim.** Together they make resonance a measurable property of a dialogue format, one that should vary by tradition and by strong or weak ties. The C2A2 accelerator can then test whether a format raises participants' meaning, and whether it does so equally across traditions.
+
+**Open question the wiki cannot yet answer:** Does a tradition-dialogue format that raises resonance also raise meaning, and does the effect depend on the participants' relational mobility?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-08_fredrickson_shared-positivity-meaning-in-life]] [[2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility]]

@@ -35463,3 +35463,365 @@ ASSUMPTION-1853:
 *Extracted by the 14a run of 2026-10-16 (local). **19 items (1835-1853); 1838, 1839, 1847, 1848, 1851 are recurrences, not queued.***
 
 *Coverage: 14 local sessions after the 10-15 pass (eedd6310), all scheduled; no live Tom turn visible. Final assistant message read for 11 (all returned content). Summa ×2 and keep-warm not read.*
+
+
+ASSUMPTION-1854:
+  Date identified: 2026-10-17
+  Statement: [stated] Daily run: a plain filename check against `PROCESSED_LOG.md` lists ~300 inbox files as unprocessed, "a known false count"; `ingest_ledger.py`, matching by proposal ID, is treated as the authoritative count.
+  Context: e5ed166a (wiki daily run)
+  Type: methodological
+  Related decisions: PRESUMPTION-1164; PREMISE-239
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1854
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1855:
+  Date identified: 2026-10-17
+  Statement: [stated] Daily run: the Wright card (PROP-2026-08-14-033), open since August, should not be ingested: "nobody heard the source, so its candidate triplets are guesses." Either find the audio or reject the card.
+  Context: e5ed166a
+  Type: epistemic
+  Related decisions: OPEN-265
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1855
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1856:
+  Date identified: 2026-10-17
+  Statement: [stated] Daily run: April and July decision emails still marked unread were left unread because "they were applied in their own runs." Email read-state is not used as the applied marker.
+  Context: e5ed166a
+  Type: methodological
+  Related decisions: PRESUMPTION-1164
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1856
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1857:
+  Date identified: 2026-10-17
+  Statement: [stated] Daily run: the 10-13 ID collisions (PROP-2026-10-13-001, -002) "still need a manual fix."
+  Context: e5ed166a; 3bc85248
+  Type: methodological
+  Related decisions: OPEN-267; ASSUMPTION-1842
+  Testability: testable in-house
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1857
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1858:
+  Date identified: 2026-10-17
+  Statement: [stated] Wolfram agent: Live CEOing episodes 994-1005 (Wolfram Language product design reviews) "fail the 'substantively new for this research program' test" and were skipped.
+  Context: 2bd35f41 (Wolfram agent)
+  Type: epistemic
+  Related decisions: OPEN-265
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1858
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1859:
+  Date identified: 2026-10-17
+  Statement: [stated] Wolfram agent: a search result mentioning Kids Q&A "Episode 169" was treated as unconfirmed because the official page still lists Episode 168 (May 22).
+  Context: 2bd35f41
+  Type: methodological
+  Related decisions: PRESUMPTION-1163
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1859
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1860:
+  Date identified: 2026-10-17
+  Statement: [stated] Wolfram agent: the task prompt omits `Projects/` from the wiki root; the real folder was used and the task file "should be corrected."
+  Context: 2bd35f41
+  Type: methodological
+  Related decisions: ASSUMPTION-1847
+  Testability: testable in-house
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1860
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1861:
+  Date identified: 2026-10-17
+  Statement: [stated] Scheduler health: "nothing is currently watching the cloud routines"; newest `routine_health.md` summary is 11 days old (10-06); the Routines connector is absent from the session.
+  Context: def0ca84 (scheduler health)
+  Type: architectural
+  Related decisions: ASSUMPTION-1841; PRESUMPTION-1160
+  Testability: testable in-house
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1861
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1862:
+  Date identified: 2026-10-17
+  Statement: [stated] Scheduler health / OpenStory watchdog: H-Drive not mounted; ingest STOPPED and "a restart cannot fix it"; "sessions stop being created within about a day of the volume going away."
+  Context: def0ca84
+  Type: empirical
+  Related decisions: OPEN-266
+  Testability: testable empirically
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1862
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1863:
+  Date identified: 2026-10-17
+  Statement: [stated] Morning project status: "OpenStory looks live" (DB written ~22 h ago, inside the 36-hour window) and "Nothing is broken and there are no issues to report."
+  Context: 6f53c6be (project status)
+  Type: epistemic
+  Related decisions: OPEN-266; ASSUMPTION-1839; PRESUMPTION-1156
+  Testability: testable in-house
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1863
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1864:
+  Date identified: 2026-10-17
+  Statement: [stated] Morning system health: "CPU and memory weren't really checked" (bash sees only the Linux sandbox), so "the 'nothing unusual' sections are blank, not a clean result. Only the disk figures come from the real Mac."
+  Context: 710c629d (system health)
+  Type: methodological
+  Related decisions: ASSUMPTION-1852; PREMISE-237
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1864
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1865:
+  Date identified: 2026-10-17
+  Statement: [stated] Morning system health: metabolism publisher failed 10-11; "`metabolism_data.json` was 73 hours old, which usually means the sandbox regen didn't run."
+  Context: 710c629d; def0ca84
+  Type: empirical
+  Related decisions: metabolism-regen exit 3; metabolism-publish exit 1
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1865
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1866:
+  Date identified: 2026-10-17
+  Statement: [stated] Telemetry refresh: ENOSPC again (DB ~7.9 GB, sandbox ~5.7 GB free); "This will happen on every scheduled run until something changes."
+  Context: c85e5a7a (telemetry refresh)
+  Type: empirical
+  Related decisions: ASSUMPTION-1853
+  Testability: testable empirically
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1866
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1867:
+  Date identified: 2026-10-17
+  Statement: [stated] Telemetry refresh: `inject_telemetry.py` exited 0 printing "No change (already current)"; the run inferred that it compared against the old data because the extractor had already failed, so "already current" did not mean current.
+  Context: c85e5a7a
+  Type: methodological
+  Related decisions: PRESUMPTION-1165; PREMISE-239; PREMISE-100
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1867
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1868:
+  Date identified: 2026-10-17
+  Statement: [stated] Deferred action monitor (second firing): "A safety check stopped me from tagging the two new files a second time"; concurrent writes "only went safely this time because of that check."
+  Context: 3bc85248 (deferred monitor)
+  Type: methodological
+  Related decisions: PRESUMPTION-1151; PRESUMPTION-1159
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1868
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1869:
+  Date identified: 2026-10-17
+  Statement: [stated] Deferred action monitor: "There's no sewing-agent file in `agents/`"; the design lives in `agent_architecture_review.md` Part 2; MacIntyre PRS-07 is "pending the sewing pass." Asks which scheduled task should do it.
+  Context: 3bc85248
+  Type: architectural
+  Related decisions: PRESUMPTION-1167; OPEN-271; WATCH-006
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1869
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1870:
+  Date identified: 2026-10-17
+  Statement: [stated] Lit pipeline: with a 0-literature intake, the task rule "would have exited with 'queue empty'"; the run took a 5-item backlog batch instead, "following the 10-05/10-06 precedent." Picking ASSUMPTION-514 "was my choice; the task file doesn't say which item to take."
+  Context: c9504ca0 (lit pipeline)
+  Type: methodological
+  Related decisions: OPEN-264; REVISE-516
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1870
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1871:
+  Date identified: 2026-10-17
+  Statement: [stated] Lit pipeline (15b): "each fix adds a checker that can fail silently in the same way as the thing it checks"; proposed test: "stall each checker for one cycle and confirm something outside it raises an alarm."
+  Context: c9504ca0
+  Type: epistemic
+  Related decisions: MONITOR-693; MONITOR-694; MONITOR-695; PREMISE-237; PRESUMPTION-1168
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1871
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1872:
+  Date identified: 2026-10-17
+  Statement: [stated] Lit pipeline: the two search subagents used ~151k and ~126k tokens, "far over your 4k-per-task and 30k-per-session limits."
+  Context: c9504ca0
+  Type: methodological
+  Related decisions: PRESUMPTION-1148
+  Testability: testable in-house
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1872
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1873:
+  Date identified: 2026-10-17
+  Statement: [stated] Evening sync (duplicate firing): did not resend to Chat "so the walk thread won't get two copies"; appended an addendum to the first run's file.
+  Context: ca1ff2ea (evening sync)
+  Type: methodological
+  Related decisions: PRESUMPTION-1159
+  Testability: testable in-house
+  Status: UNTESTED (recurrence; not queued)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1873
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1874:
+  Date identified: 2026-10-17
+  Statement: [stated] Morning chat scrape: the Tier 0 click-through, commit/push and "the list of scheduled jobs to pause for Iceland" are unfinished "before you leave tomorrow (Oct 18)"; Humanity AI Open Call due Oct 21 while away.
+  Context: de9758e0 (chat scrape)
+  Type: empirical
+  Related decisions: PRESUMPTION-1166; OPEN-270
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1874
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-17 (local). **21 items (1854-1874); 1857, 1860, 1861, 1862, 1863, 1866, 1872, 1873 are recurrences, not queued.***
+
+*Coverage: 13 local sessions after the 10-16 pass (09a9b8a5), all scheduled; no live Tom turn. Final assistant message read for 10; Summa x2 and Supabase keep-warm not read (not C2A2 design work).*

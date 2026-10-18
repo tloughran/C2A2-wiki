@@ -1,0 +1,5672 @@
+# Bootstrap Backlink Census 2026-10-18
+
+Resolver: wikilink -> filename stem, case-insensitive, credited to every page with that stem; self-links excluded; node_modules/.obsidian/__pycache__ skipped.
+
+Total pages 5657 | wikilinks parsed 2711 | unresolved 446
+
+## Distribution
+- 0 backlinks: 4756
+- 1-2 backlinks: 803
+- 3-5 backlinks: 41
+- 6-10 backlinks: 12
+- 10+ backlinks: 45
+
+## Entries (page | backlink count | linking pages), sorted by count desc
+
+- c2a2-prs-3d/testcorpus/vault/traditions/deeplearning/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- c2a2-prs-3d/testcorpus/vault/traditions/quantum/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/arkanihamed/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/carroll/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/fredrickson/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/friston/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/hawkins/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/hoffman/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/kastrup/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/loughran/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/macintyre/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/mcgilchrist/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/rohr/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/stump/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/wolfram/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/wright/prs_triplets | 222 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/levin/prs_triplets.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md (+197 more)
+- traditions/levin/prs_triplets | 221 | architecture/prs_axis_formative_assessment_2026-09-01.md, architecture/sewing_agent_bootstrap_2026-06-23.md, traditions/macintyre/wiki.md, vault/synthesis/Day-001 - Introduction - Contemporary.md, vault/synthesis/Day-002 - Does God Exist - Contemporary.md, vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md, vault/synthesis/Day-004 - Is God Good - Contemporary.md, vault/synthesis/Day-005 - Is God in Everything - Contemporary.md, vault/synthesis/Day-006 - Does God Change - Contemporary.md, vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md, vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md, vault/synthesis/Day-009 - What is Truth - Contemporary.md, vault/synthesis/Day-010 - What is Life - Contemporary.md, vault/synthesis/Day-011 - God's Love - Contemporary.md, vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md, vault/synthesis/Day-013 - Predestination - Contemporary.md, vault/synthesis/Day-014 - Is God Happy - Contemporary.md, vault/synthesis/Day-015 - The Trinity - Contemporary.md, vault/synthesis/Day-016 - Is God Personal - Contemporary.md, vault/synthesis/Day-017 - Divine Notions - Contemporary.md, vault/synthesis/Day-018 - Father and Son - Contemporary.md, vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md, vault/synthesis/Day-020 - The Gift of God - Contemporary.md, vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md, vault/synthesis/Day-022 - The Father in the Son - Contemporary.md (+196 more)
+- agents/02_friston_agent | 40 | agents/01_levin_agent.md, agents/03_hoffman_agent.md, agents/04_hawkins_agent.md, agents/08_carroll_agent.md, agents/09_arkanihamed_agent.md, agents/10_wolfram_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, inbox/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/2026-06-24_kastrup_one-free-miracle.md, inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/2026-07-23_fredrickson_positively-in-sync-convergent-validity.md, inbox/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom.md, inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md, inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md, inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md, inbox/2026-09-15_hawkins_attention-model-free-segmentation.md, inbox/2026-09-15_hawkins_visual-saliency-sparser-models.md, inbox/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md (+15 more)
+- agents/12_master_C2A2_agent | 40 | agents/01_levin_agent.md, agents/02_friston_agent.md, agents/03_hoffman_agent.md, agents/04_hawkins_agent.md, agents/05_mcgilchrist_agent.md, agents/06_fredrickson_agent.md, agents/07_stump_agent.md, agents/08_carroll_agent.md, agents/09_arkanihamed_agent.md, agents/10_wolfram_agent.md, agents/11_kastrup_agent.md, agents/13_pattern_detector_agent.md, agents/14_architectural_history_agent.md, agents/14a_assumption_extractor_agent.md, agents/14b_presumption_detector_agent.md, agents/15a_lit_search_for_agent.md, agents/15b_lit_search_against_agent.md, agents/15c_net_evaluator_agent.md, agents/16_deferred_action_monitor_agent.md, inbox/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md, inbox/2026-08-05_kastrup_odyssey-potari-awakening.md, inbox/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom.md, inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md (+15 more)
+- agents/05_mcgilchrist_agent | 33 | agents/01_levin_agent.md, agents/02_friston_agent.md, agents/03_hoffman_agent.md, agents/04_hawkins_agent.md, agents/06_fredrickson_agent.md, agents/07_stump_agent.md, agents/11_kastrup_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, flags/for_pattern_detector.md, inbox/2026-06-24_kastrup_dreams-of-reality.md, inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md, inbox/2026-08-05_kastrup_odyssey-potari-awakening.md, inbox/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md, inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md, inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md, inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md, inbox/2026-09-15_hawkins_attention-model-free-segmentation.md, inbox/proposals/approved/2026-06-24_kastrup_dreams-of-reality.md, inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/proposals/approved/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md, inbox/proposals/approved/2026-08-05_kastrup_odyssey-potari-awakening.md (+8 more)
+- agents/03_hoffman_agent | 31 | agents/01_levin_agent.md, agents/05_mcgilchrist_agent.md, agents/07_stump_agent.md, agents/11_kastrup_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, inbox/2026-06-23_hawkins_thousand-brains-neco-publication.md, inbox/2026-06-24_kastrup_dreams-of-reality.md, inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md, inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md, inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md, inbox/2026-09-15_hawkins_attention-model-free-segmentation.md, inbox/2026-09-15_hawkins_visual-saliency-sparser-models.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md, inbox/proposals/approved/2026-06-23_hawkins_thousand-brains-neco-publication.md, inbox/proposals/approved/2026-06-24_kastrup_dreams-of-reality.md, inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md, inbox/proposals/approved/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/proposals/approved/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md (+6 more)
+- agents/11_kastrup_agent | 31 | agents/01_levin_agent.md, agents/02_friston_agent.md, agents/03_hoffman_agent.md, agents/05_mcgilchrist_agent.md, agents/06_fredrickson_agent.md, agents/07_stump_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, agents/16_deferred_action_monitor_agent.md, inbox/2026-05-10_rohr_america-magazine-universal-christ-interview.md, inbox/2026-06-03_mcgilchrist_ai-battle-for-the-soul.md, inbox/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md, inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/2026-08-05_mcgilchrist_ralston-lecture1-understanding-understanding.md, inbox/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md, inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md, inbox/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md, inbox/proposals/_pending_dupes_resolved/2026-05-10_rohr_america-magazine-universal-christ-interview.md, inbox/proposals/approved/2026-05-10_rohr_america-magazine-universal-christ-interview.md, inbox/proposals/approved/2026-06-03_mcgilchrist_ai-battle-for-the-soul.md, inbox/proposals/approved/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/proposals/approved/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md, inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md (+6 more)
+- agents/07_stump_agent | 30 | agents/03_hoffman_agent.md, agents/05_mcgilchrist_agent.md, agents/06_fredrickson_agent.md, agents/11_kastrup_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, inbox/2026-05-10_rohr_america-magazine-universal-christ-interview.md, inbox/2026-06-03_mcgilchrist_ai-battle-for-the-soul.md, inbox/2026-06-24_kastrup_one-free-miracle.md, inbox/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md, inbox/2026-06-24_mcgilchrist_ralston-commencement-2026.md, inbox/2026-07-23_fredrickson_positively-in-sync-convergent-validity.md, inbox/2026-08-05_kastrup_odyssey-potari-awakening.md, inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/2026-08-05_mcgilchrist_ralston-lecture1-understanding-understanding.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md, inbox/proposals/_pending_dupes_resolved/2026-05-10_rohr_america-magazine-universal-christ-interview.md, inbox/proposals/approved/2026-05-10_rohr_america-magazine-universal-christ-interview.md, inbox/proposals/approved/2026-06-03_mcgilchrist_ai-battle-for-the-soul.md, inbox/proposals/approved/2026-06-24_kastrup_one-free-miracle.md, inbox/proposals/approved/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md, inbox/proposals/approved/2026-06-24_mcgilchrist_ralston-commencement-2026.md, inbox/proposals/approved/2026-07-23_fredrickson_positively-in-sync-convergent-validity.md, inbox/proposals/approved/2026-08-05_kastrup_odyssey-potari-awakening.md (+5 more)
+- agents/10_wolfram_agent | 30 | agents/01_levin_agent.md, agents/02_friston_agent.md, agents/08_carroll_agent.md, agents/09_arkanihamed_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, inbox/2026-06-03_mcgilchrist_ai-battle-for-the-soul.md, inbox/2026-06-23_hawkins_thousand-brains-neco-publication.md, inbox/2026-06-24_kastrup_dreams-of-reality.md, inbox/2026-07-03_carroll_dark-energy-theories.md, inbox/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md, inbox/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md, inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md, inbox/proposals/approved/2026-06-03_mcgilchrist_ai-battle-for-the-soul.md, inbox/proposals/approved/2026-06-23_hawkins_thousand-brains-neco-publication.md, inbox/proposals/approved/2026-06-24_kastrup_dreams-of-reality.md, inbox/proposals/approved/2026-07-03_carroll_dark-energy-theories.md, inbox/proposals/approved/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md, inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md (+5 more)
+- agents/01_levin_agent | 29 | agents/02_friston_agent.md, agents/04_hawkins_agent.md, agents/05_mcgilchrist_agent.md, agents/10_wolfram_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, agents/16_deferred_action_monitor_agent.md, inbox/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/2026-06-24_kastrup_one-free-miracle.md, inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-09-15_hawkins_attention-model-free-segmentation.md, inbox/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md, inbox/proposals/approved/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/proposals/approved/2026-06-24_kastrup_one-free-miracle.md, inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/proposals/approved/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/proposals/approved/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/proposals/approved/2026-08-17_hawkins_grid-place-cells-reference-frames.md (+4 more)
+- agents/13_pattern_detector_agent | 27 | agents/01_levin_agent.md, agents/02_friston_agent.md, agents/03_hoffman_agent.md, agents/04_hawkins_agent.md, agents/05_mcgilchrist_agent.md, agents/06_fredrickson_agent.md, agents/07_stump_agent.md, agents/08_carroll_agent.md, agents/09_arkanihamed_agent.md, agents/10_wolfram_agent.md, agents/11_kastrup_agent.md, agents/12_master_C2A2_agent.md, agents/14_architectural_history_agent.md, agents/14a_assumption_extractor_agent.md, agents/14b_presumption_detector_agent.md, agents/15a_lit_search_for_agent.md, agents/15b_lit_search_against_agent.md, inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md, inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md, inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/proposals/approved/2026-08-15_wolfram_avocational-science-ruliology-onramp.md, inbox/proposals/approved/2026-08-17_hawkins_grid-place-cells-reference-frames.md (+2 more)
+- synthesis/wright_rohr_bridge | 19 | inbox/2026-05-24_rohr_psalms-songs-of-exile.md, inbox/2026-05-24_wright_ask-ntw-may4-lost-tribes-exile.md, inbox/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md, inbox/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux.md, inbox/2026-09-27_rohr_myth-of-redemptive-violence.md, inbox/2026-09-27_wright_ascension-political-theology.md, inbox/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md, inbox/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero.md, inbox/proposals/approved/2026-05-24_rohr_psalms-songs-of-exile.md, inbox/proposals/approved/2026-05-24_wright_ask-ntw-may4-lost-tribes-exile.md, inbox/proposals/approved/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md, inbox/proposals/approved/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux.md, inbox/proposals/approved/2026-09-27_rohr_myth-of-redemptive-violence.md, inbox/proposals/approved/2026-09-27_wright_ascension-political-theology.md, inbox/proposals/approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament.md, inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md, inbox/proposals/approved/2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth.md, inbox/proposals/approved/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md, inbox/proposals/approved/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero.md
+- agents/06_fredrickson_agent | 18 | agents/05_mcgilchrist_agent.md, agents/07_stump_agent.md, agents/11_kastrup_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, inbox/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md, inbox/2026-06-24_mcgilchrist_ralston-commencement-2026.md, inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/2026-08-05_kastrup_odyssey-potari-awakening.md, inbox/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom.md, inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md, inbox/proposals/approved/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md, inbox/proposals/approved/2026-06-24_mcgilchrist_ralston-commencement-2026.md, inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/proposals/approved/2026-08-05_kastrup_odyssey-potari-awakening.md, inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom.md, inbox/proposals/approved/2026-08-23_rohr_hebrew-prophets-weekly-summary.md, master/cross_program_index.md
+- agents/08_carroll_agent | 18 | agents/02_friston_agent.md, agents/04_hawkins_agent.md, agents/09_arkanihamed_agent.md, agents/10_wolfram_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, flags/for_pattern_detector.md, inbox/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/2026-06-24_kastrup_one-free-miracle.md, inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md, inbox/proposals/approved/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/proposals/approved/2026-06-24_kastrup_one-free-miracle.md, inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md, inbox/proposals/approved/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/proposals/approved/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md, master/cross_program_index.md
+- traditions/_index | 17 | agents/12_master_C2A2_agent.md, master/C2A2_master_wiki.md, traditions/arkanihamed/wiki.md, traditions/carroll/wiki.md, traditions/fredrickson/wiki.md, traditions/friston/wiki.md, traditions/hawkins/wiki.md, traditions/hoffman/wiki.md, traditions/kastrup/wiki.md, traditions/levin/wiki.md, traditions/loughran/wiki.md, traditions/macintyre/wiki.md, traditions/mcgilchrist/wiki.md, traditions/rohr/wiki.md, traditions/stump/wiki.md, traditions/wolfram/wiki.md, traditions/wright/wiki.md
+- agents/04_hawkins_agent | 15 | agents/01_levin_agent.md, agents/02_friston_agent.md, agents/06_fredrickson_agent.md, agents/08_carroll_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md, inbox/2026-09-15_hawkins_visual-saliency-sparser-models.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md, inbox/proposals/approved/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/proposals/approved/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/proposals/approved/2026-08-18_hawkins_tbs-plain-language-explainer.md, inbox/proposals/approved/2026-09-15_hawkins_visual-saliency-sparser-models.md
+- agents/09_arkanihamed_agent | 14 | agents/08_carroll_agent.md, agents/10_wolfram_agent.md, agents/12_master_C2A2_agent.md, agents/13_pattern_detector_agent.md, flags/for_pattern_detector.md, inbox/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/2026-06-24_kastrup_one-free-miracle.md, inbox/2026-07-03_carroll_dark-energy-theories.md, inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/proposals/approved/2026-06-23_hoffman_dmt-traces-of-the-other.md, inbox/proposals/approved/2026-06-24_kastrup_one-free-miracle.md, inbox/proposals/approved/2026-07-03_carroll_dark-energy-theories.md, inbox/proposals/approved/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, master/cross_program_index.md
+- traditions/arkanihamed/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/fredrickson/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/friston/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/hawkins/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/hoffman/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/kastrup/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/levin/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/macintyre/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/mcgilchrist/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/rohr/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/stump/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/wolfram/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/wright/wiki | 11 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/carroll/wiki | 10 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- traditions/loughran/wiki | 10 | architecture/narrative_prs_connectome.md, architecture/sewing_agent_log.md, traditions/_index.md, traditions/carroll/wiki.md, traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/wolfram/prs_triplets.md
+- synthesis/friston_levin_bridge | 8 | inbox/2026-06-15_levin_top-down-membrane-potential-transcription.md, inbox/2026-07-06_friston_active-inference-artificial-reasoning.md, inbox/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/2026-09-28_levin_machines-all-the-way-up-final-version.md, inbox/proposals/approved/2026-07-06_friston_active-inference-artificial-reasoning.md, inbox/proposals/approved/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/proposals/approved/2026-09-28_levin_machines-all-the-way-up-final-version.md, traditions/friston/prs_triplets.md
+- synthesis/stump_wright_bridge | 8 | inbox/2026-05-24_wright_vision-of-ephesians.md, inbox/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md, inbox/2026-09-27_wright_ascension-political-theology.md, inbox/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md, inbox/proposals/approved/2026-05-24_wright_vision-of-ephesians.md, inbox/proposals/approved/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md, inbox/proposals/approved/2026-09-27_wright_ascension-political-theology.md, inbox/proposals/approved/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension.md
+- agents/14a_assumption_extractor_agent | 7 | agents/14b_presumption_detector_agent.md, agents/15a_lit_search_for_agent.md, agents/15b_lit_search_against_agent.md, agents/15c_net_evaluator_agent.md, agents/15d_periodic_monitor_agent.md, agents/16_deferred_action_monitor_agent.md, architecture/provenance_protocol.md
+- agents/14b_presumption_detector_agent | 7 | agents/14a_assumption_extractor_agent.md, agents/15a_lit_search_for_agent.md, agents/15b_lit_search_against_agent.md, agents/15c_net_evaluator_agent.md, agents/15d_periodic_monitor_agent.md, agents/16_deferred_action_monitor_agent.md, architecture/provenance_protocol.md
+- synthesis/mcgilchrist_stump_bridge | 7 | inbox/2026-05-20_mcgilchrist_good-beautiful-true-sheldonian.md, inbox/2026-06-10_mcgilchrist_eisenstein-being-in-the-world.md, inbox/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space.md, inbox/proposals/approved/2026-05-20_mcgilchrist_good-beautiful-true-sheldonian.md, inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/proposals/approved/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space.md
+- agents/15a_lit_search_for_agent | 6 | agents/14a_assumption_extractor_agent.md, agents/14b_presumption_detector_agent.md, agents/15b_lit_search_against_agent.md, agents/15c_net_evaluator_agent.md, agents/15d_periodic_monitor_agent.md, architecture/provenance_protocol.md
+- agents/15b_lit_search_against_agent | 6 | agents/14a_assumption_extractor_agent.md, agents/14b_presumption_detector_agent.md, agents/15a_lit_search_for_agent.md, agents/15c_net_evaluator_agent.md, agents/15d_periodic_monitor_agent.md, architecture/provenance_protocol.md
+- c2a2-prs-3d/testcorpus/vault/master/cross_program_index | 6 | inbox/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md, inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/proposals/approved/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md
+- master/cross_program_index | 6 | inbox/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md, inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/proposals/approved/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md
+- synthesis/hoffman_kastrup_bridge | 6 | inbox/2026-06-10_kastrup_illusion-of-self.md, inbox/2026-07-07_hoffman_startalk-evolution-reality.md, inbox/2026-07-08_kastrup_levin-conversation-nested-subjects.md, inbox/proposals/approved/2026-07-07_hoffman_startalk-evolution-reality.md, inbox/proposals/approved/2026-07-08_kastrup_levin-conversation-nested-subjects.md, synthesis/kastrup_levin_bridge.md
+- inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2 | 5 | inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md, inbox/proposals/approved/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md, synthesis/carroll_levin_bridge.md, synthesis/friston_levin_bridge.md
+- synthesis/kastrup_levin_bridge | 5 | inbox/2026-06-15_levin_platonic-space-ingressing-minds.md, inbox/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/2026-07-08_kastrup_levin-conversation-nested-subjects.md, inbox/proposals/approved/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/proposals/approved/2026-07-08_kastrup_levin-conversation-nested-subjects.md
+- traditions/loughran/contributions/2026-05-20_narrative_prs_connectome | 5 | traditions/friston/prs_triplets.md, traditions/hawkins/prs_triplets.md, traditions/levin/prs_triplets.md, traditions/loughran/wiki.md, traditions/wolfram/prs_triplets.md
+- architecture/narrative_prs_connectome | 4 | architecture/prs_axis_formative_assessment_2026-09-01.md, traditions/loughran/contributions/2026-05-20_narrative_prs_connectome.md, traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership.md, traditions/loughran/wiki.md
+- inbox/2026-08-17_hawkins_grid-place-cells-reference-frames | 4 | inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/proposals/approved/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, synthesis/friston_hawkins_bridge.md, synthesis/hawkins_hoffman_bridge.md
+- inbox/2026-08-18_hawkins_tbs-plain-language-explainer | 4 | inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/proposals/approved/2026-08-17_hawkins_grid-place-cells-reference-frames.md, synthesis/friston_hawkins_bridge.md, synthesis/hawkins_hoffman_bridge.md
+- inbox/2026-09-06_wright_third-race-not-supersession-but-enlargement | 4 | inbox/2026-09-13_rohr_paul-knew-christ-within-panentheism.md, inbox/proposals/approved/2026-09-13_rohr_paul-knew-christ-within-panentheism.md, synthesis/stump_wright_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-17_stump_natural-law-metaphysics-creator-antireductionism | 4 | synthesis/carroll_stump_bridge.md, synthesis/fredrickson_stump_bridge.md, synthesis/levin_stump_bridge.md, synthesis/loughran_stump_bridge.md
+- inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence | 4 | inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/proposals/approved/2026-08-17_friston_designing-ecosystems-of-intelligence.md, synthesis/friston_levin_bridge.md, synthesis/hawkins_levin_bridge.md
+- inbox/proposals/approved/2026-08-17_hawkins_grid-place-cells-reference-frames | 4 | inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, inbox/proposals/approved/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md, synthesis/friston_hawkins_bridge.md, synthesis/hawkins_hoffman_bridge.md
+- inbox/proposals/approved/2026-08-18_hawkins_tbs-plain-language-explainer | 4 | inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md, inbox/proposals/approved/2026-08-17_hawkins_grid-place-cells-reference-frames.md, synthesis/friston_hawkins_bridge.md, synthesis/hawkins_hoffman_bridge.md
+- inbox/proposals/approved/2026-09-06_wright_third-race-not-supersession-but-enlargement | 4 | inbox/2026-09-13_rohr_paul-knew-christ-within-panentheism.md, inbox/proposals/approved/2026-09-13_rohr_paul-knew-christ-within-panentheism.md, synthesis/stump_wright_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-17_stump_natural-law-metaphysics-creator-antireductionism | 4 | synthesis/carroll_stump_bridge.md, synthesis/fredrickson_stump_bridge.md, synthesis/levin_stump_bridge.md, synthesis/loughran_stump_bridge.md
+- synthesis/kastrup_mcgilchrist_bridge | 4 | inbox/2026-05-20_kastrup_harpur-literal-as-metaphor.md, inbox/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/proposals/approved/2026-05-20_kastrup_harpur-literal-as-metaphor.md, inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future.md
+- synthesis/levin_mcgilchrist_bridge | 4 | inbox/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space.md, inbox/proposals/approved/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/proposals/approved/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space.md
+- synthesis/mcgilchrist_rohr_bridge | 4 | inbox/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin.md, inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future.md, inbox/proposals/approved/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin.md
+- synthesis/mcgilchrist_wolfram_bridge | 4 | inbox/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript.md, inbox/2026-09-29_wolfram_future-pure-math-age-of-ai.md, inbox/proposals/approved/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript.md, inbox/proposals/approved/2026-09-29_wolfram_future-pure-math-age-of-ai.md
+- inbox/2026-06-15_levin_platonic-space-ingressing-minds | 3 | synthesis/hoffman_levin_bridge.md, synthesis/kastrup_levin_bridge.md, synthesis/levin_wolfram_bridge.md
+- inbox/2026-08-17_friston_designing-ecosystems-of-intelligence | 3 | inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md, synthesis/friston_levin_bridge.md, synthesis/friston_loughran_bridge.md
+- inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary | 3 | synthesis/fredrickson_rohr_bridge.md, synthesis/friston_rohr_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-08-28_wolfram_newscientist-time-computation-free-will | 3 | synthesis/carroll_wolfram_bridge.md, synthesis/hoffman_wolfram_bridge.md, synthesis/stump_wolfram_bridge.md
+- inbox/2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness | 3 | synthesis/friston_kastrup_bridge.md, synthesis/kastrup_levin_bridge.md, synthesis/kastrup_stump_bridge.md
+- inbox/2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites | 3 | synthesis/mcgilchrist_rohr_bridge.md, synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-16_kastrup_headless-way-richard-lang | 3 | synthesis/hoffman_kastrup_bridge.md, synthesis/kastrup_loughran_bridge.md, synthesis/loughran_mcgilchrist_bridge.md
+- inbox/2026-09-20_rohr_pauls-transforming-vision-weekly-summary | 3 | synthesis/friston_rohr_bridge.md, synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-20_rohr_preacher-of-love-temple-dignity | 3 | synthesis/fredrickson_rohr_bridge.md, synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-06-15_levin_platonic-space-ingressing-minds | 3 | synthesis/hoffman_levin_bridge.md, synthesis/kastrup_levin_bridge.md, synthesis/levin_wolfram_bridge.md
+- inbox/proposals/approved/2026-08-17_friston_designing-ecosystems-of-intelligence | 3 | inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md, synthesis/friston_levin_bridge.md, synthesis/friston_loughran_bridge.md
+- inbox/proposals/approved/2026-08-23_rohr_hebrew-prophets-weekly-summary | 3 | synthesis/fredrickson_rohr_bridge.md, synthesis/friston_rohr_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-08-28_wolfram_newscientist-time-computation-free-will | 3 | synthesis/carroll_wolfram_bridge.md, synthesis/hoffman_wolfram_bridge.md, synthesis/stump_wolfram_bridge.md
+- inbox/proposals/approved/2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness | 3 | synthesis/friston_kastrup_bridge.md, synthesis/kastrup_levin_bridge.md, synthesis/kastrup_stump_bridge.md
+- inbox/proposals/approved/2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites | 3 | synthesis/mcgilchrist_rohr_bridge.md, synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-16_kastrup_headless-way-richard-lang | 3 | synthesis/hoffman_kastrup_bridge.md, synthesis/kastrup_loughran_bridge.md, synthesis/loughran_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-09-20_rohr_pauls-transforming-vision-weekly-summary | 3 | synthesis/friston_rohr_bridge.md, synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-20_rohr_preacher-of-love-temple-dignity | 3 | synthesis/fredrickson_rohr_bridge.md, synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- synthesis/arkanihamed_hoffman_bridge | 3 | inbox/2026-07-07_hoffman_startalk-evolution-reality.md, inbox/proposals/approved/2026-07-07_hoffman_startalk-evolution-reality.md, synthesis/arkanihamed_wolfram_bridge.md
+- synthesis/fredrickson_mcgilchrist_bridge | 3 | inbox/2026-06-10_mcgilchrist_eisenstein-being-in-the-world.md, inbox/2026-09-24_fredrickson_gpt-measures-spirituality-from-text.md, inbox/proposals/approved/2026-09-24_fredrickson_gpt-measures-spirituality-from-text.md
+- synthesis/fredrickson_stump_bridge | 3 | inbox/2026-06-11_stump_image-of-god-mourning.md, inbox/2026-07-09_stump_infused-virtues-new-blackfriars.md, inbox/proposals/approved/2026-07-09_stump_infused-virtues-new-blackfriars.md
+- synthesis/friston_stump_bridge | 3 | inbox/2026-07-09_stump_infused-virtues-new-blackfriars.md, inbox/proposals/approved/2026-07-09_stump_infused-virtues-new-blackfriars.md, synthesis/friston_rohr_bridge.md
+- synthesis/levin_wolfram_bridge | 3 | inbox/2026-05-23_wolfram_business-may13-ownerless-ai-accountability.md, inbox/2026-06-15_levin_platonic-space-ingressing-minds.md, inbox/proposals/approved/2026-05-23_wolfram_business-may13-ownerless-ai-accountability.md
+- synthesis/rohr_stump_bridge | 3 | inbox/2026-09-27_rohr_myth-of-redemptive-violence.md, inbox/proposals/approved/2026-09-27_rohr_myth-of-redemptive-violence.md, inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md
+- agents/15c_net_evaluator_agent | 2 | agents/15d_periodic_monitor_agent.md, agents/16_deferred_action_monitor_agent.md
+- agents/17_macintyre_agent | 2 | inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md, inbox/proposals/approved/2026-08-17_friston_designing-ecosystems-of-intelligence.md
+- agents/18_wright_agent | 2 | inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md, inbox/proposals/approved/2026-08-23_rohr_hebrew-prophets-weekly-summary.md
+- agents/19_rohr_agent | 2 | inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md, inbox/proposals/approved/2026-08-23_rohr_hebrew-prophets-weekly-summary.md
+- inbox/2026-06-10_kastrup_illusion-of-self | 2 | synthesis/hoffman_kastrup_bridge.md, synthesis/kastrup_stump_bridge.md
+- inbox/2026-06-10_mcgilchrist_eisenstein-being-in-the-world | 2 | synthesis/fredrickson_mcgilchrist_bridge.md, synthesis/mcgilchrist_stump_bridge.md
+- inbox/2026-06-19_arkanihamed_surfaceology | 2 | synthesis/arkanihamed_carroll_bridge.md, synthesis/arkanihamed_wolfram_bridge.md
+- inbox/2026-08-16_rohr_remaining-in-love-univocity-of-being | 2 | synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing | 2 | synthesis/friston_rohr_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel | 2 | synthesis/hoffman_kastrup_bridge.md, synthesis/hoffman_wolfram_bridge.md
+- inbox/2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket | 2 | synthesis/friston_kastrup_bridge.md, synthesis/hoffman_kastrup_bridge.md
+- inbox/2026-08-28_rohr_glory-of-god-point-of-nothingness | 2 | synthesis/friston_rohr_bridge.md, synthesis/kastrup_rohr_bridge.md
+- inbox/2026-08-28_rohr_realigned-true-self-sin-as-separateness | 2 | synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-02_kastrup_levin-redefining-rules-of-life | 2 | synthesis/friston_kastrup_bridge.md, synthesis/kastrup_levin_bridge.md
+- inbox/2026-09-02_mcgilchrist_can-you-still-be-human | 2 | synthesis/fredrickson_mcgilchrist_bridge.md, synthesis/kastrup_mcgilchrist_bridge.md
+- inbox/2026-09-11_carroll_mindscape-367-diamond-leaders | 2 | synthesis/carroll_levin_bridge.md, synthesis/carroll_loughran_bridge.md
+- inbox/2026-09-13_rohr_paul-knew-christ-within-panentheism | 2 | synthesis/kastrup_rohr_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy | 2 | synthesis/friston_hoffman_bridge.md, synthesis/hoffman_loughran_bridge.md
+- inbox/2026-09-24_fredrickson_gpt-measures-spirituality-from-text | 2 | synthesis/fredrickson_loughran_bridge.md, synthesis/fredrickson_mcgilchrist_bridge.md
+- inbox/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux | 2 | inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-27_rohr_myth-of-redemptive-violence | 2 | synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-27_wright_ascension-political-theology | 2 | synthesis/stump_wright_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/2026-09-29_hawkins_tbp-two-year-report | 2 | synthesis/friston_hawkins_bridge.md, synthesis/hawkins_levin_bridge.md
+- inbox/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript | 2 | synthesis/fredrickson_mcgilchrist_bridge.md, synthesis/mcgilchrist_wolfram_bridge.md
+- inbox/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space | 2 | synthesis/levin_mcgilchrist_bridge.md, synthesis/mcgilchrist_stump_bridge.md
+- inbox/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin | 2 | inbox/proposals/approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament.md, synthesis/mcgilchrist_rohr_bridge.md
+- inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid | 2 | synthesis/friston_loughran_bridge.md, synthesis/levin_wolfram_bridge.md
+- inbox/proposals/approved/2026-06-10_kastrup_illusion-of-self | 2 | synthesis/hoffman_kastrup_bridge.md, synthesis/kastrup_stump_bridge.md
+- inbox/proposals/approved/2026-06-10_mcgilchrist_eisenstein-being-in-the-world | 2 | synthesis/fredrickson_mcgilchrist_bridge.md, synthesis/mcgilchrist_stump_bridge.md
+- inbox/proposals/approved/2026-06-19_arkanihamed_surfaceology | 2 | synthesis/arkanihamed_carroll_bridge.md, synthesis/arkanihamed_wolfram_bridge.md
+- inbox/proposals/approved/2026-08-16_rohr_remaining-in-love-univocity-of-being | 2 | synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing | 2 | synthesis/friston_rohr_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel | 2 | synthesis/hoffman_kastrup_bridge.md, synthesis/hoffman_wolfram_bridge.md
+- inbox/proposals/approved/2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket | 2 | synthesis/friston_kastrup_bridge.md, synthesis/hoffman_kastrup_bridge.md
+- inbox/proposals/approved/2026-08-28_rohr_glory-of-god-point-of-nothingness | 2 | synthesis/friston_rohr_bridge.md, synthesis/kastrup_rohr_bridge.md
+- inbox/proposals/approved/2026-08-28_rohr_realigned-true-self-sin-as-separateness | 2 | synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-02_kastrup_levin-redefining-rules-of-life | 2 | synthesis/friston_kastrup_bridge.md, synthesis/kastrup_levin_bridge.md
+- inbox/proposals/approved/2026-09-02_mcgilchrist_can-you-still-be-human | 2 | synthesis/fredrickson_mcgilchrist_bridge.md, synthesis/kastrup_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-09-11_carroll_mindscape-367-diamond-leaders | 2 | synthesis/carroll_levin_bridge.md, synthesis/carroll_loughran_bridge.md
+- inbox/proposals/approved/2026-09-13_rohr_paul-knew-christ-within-panentheism | 2 | synthesis/kastrup_rohr_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy | 2 | synthesis/friston_hoffman_bridge.md, synthesis/hoffman_loughran_bridge.md
+- inbox/proposals/approved/2026-09-24_fredrickson_gpt-measures-spirituality-from-text | 2 | synthesis/fredrickson_loughran_bridge.md, synthesis/fredrickson_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-09-27_rohr_an-influential-teacher-therese-of-lisieux | 2 | inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-27_rohr_myth-of-redemptive-violence | 2 | synthesis/rohr_stump_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-27_wright_ascension-political-theology | 2 | synthesis/stump_wright_bridge.md, synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-09-29_hawkins_tbp-two-year-report | 2 | synthesis/friston_hawkins_bridge.md, synthesis/hawkins_levin_bridge.md
+- inbox/proposals/approved/2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript | 2 | synthesis/fredrickson_mcgilchrist_bridge.md, synthesis/mcgilchrist_wolfram_bridge.md
+- inbox/proposals/approved/2026-09-30_mcgilchrist_levin-conversation-2-platonic-space | 2 | synthesis/levin_mcgilchrist_bridge.md, synthesis/mcgilchrist_stump_bridge.md
+- inbox/proposals/approved/2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin | 2 | inbox/proposals/approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament.md, synthesis/mcgilchrist_rohr_bridge.md
+- synthesis/arkanihamed_wolfram_bridge | 2 | inbox/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake.md
+- synthesis/carroll_fredrickson_bridge | 2 | inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md
+- synthesis/carroll_friston_bridge | 2 | inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md
+- synthesis/carroll_hoffman_bridge | 2 | inbox/2026-07-07_hoffman_startalk-evolution-reality.md, inbox/proposals/approved/2026-07-07_hoffman_startalk-evolution-reality.md
+- synthesis/carroll_kastrup_bridge | 2 | inbox/2026-05-22_carroll_mindscape-354-list-free-will-levels.md, inbox/proposals/approved/2026-05-22_carroll_mindscape-354-list-free-will-levels.md
+- synthesis/carroll_mcgilchrist_bridge | 2 | inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md, inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md
+- synthesis/carroll_stump_bridge | 2 | inbox/2026-09-30_carroll_mindscape-369-caruso-free-will.md, inbox/proposals/approved/2026-09-30_carroll_mindscape-369-caruso-free-will.md
+- synthesis/carroll_wolfram_bridge | 2 | inbox/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake.md
+- synthesis/fredrickson_loughran_bridge | 2 | inbox/2026-09-24_fredrickson_gpt-measures-spirituality-from-text.md, inbox/proposals/approved/2026-09-24_fredrickson_gpt-measures-spirituality-from-text.md
+- synthesis/fredrickson_rohr_bridge | 2 | inbox/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md, inbox/proposals/approved/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md
+- synthesis/friston_hawkins_bridge | 2 | inbox/2026-09-29_hawkins_tbp-two-year-report.md, inbox/proposals/approved/2026-09-29_hawkins_tbp-two-year-report.md
+- synthesis/friston_loughran_bridge | 2 | inbox/2026-07-06_friston_active-inference-artificial-reasoning.md, inbox/proposals/approved/2026-07-06_friston_active-inference-artificial-reasoning.md
+- synthesis/friston_rohr_bridge | 2 | inbox/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness.md, inbox/proposals/approved/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness.md
+- synthesis/friston_wolfram_bridge | 2 | inbox/2026-07-06_friston_active-inference-artificial-reasoning.md, inbox/proposals/approved/2026-07-06_friston_active-inference-artificial-reasoning.md
+- synthesis/hawkins_levin_bridge | 2 | inbox/2026-09-29_hawkins_tbp-two-year-report.md, inbox/proposals/approved/2026-09-29_hawkins_tbp-two-year-report.md
+- synthesis/kastrup_rohr_bridge | 2 | inbox/2026-05-24_rohr_for-love-of-the-earth.md, inbox/proposals/approved/2026-05-24_rohr_for-love-of-the-earth.md
+- synthesis/kastrup_wright_bridge | 2 | inbox/2026-05-24_wright_biologos-new-creation-breaking-in.md, inbox/proposals/approved/2026-05-24_wright_biologos-new-creation-breaking-in.md
+- synthesis/levin_loughran_bridge | 2 | inbox/2026-07-06_levin_aging-goal-directedness-bioelectricity.md, inbox/proposals/approved/2026-07-06_levin_aging-goal-directedness-bioelectricity.md
+- synthesis/levin_wright_bridge | 2 | inbox/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md, inbox/proposals/approved/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md
+- synthesis/loughran_stump_bridge | 2 | inbox/2026-07-09_stump_infused-virtues-new-blackfriars.md, inbox/proposals/approved/2026-07-09_stump_infused-virtues-new-blackfriars.md
+- synthesis/loughran_wolfram_bridge | 2 | inbox/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing.md, inbox/proposals/approved/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing.md
+- synthesis/loughran_wright_bridge | 2 | inbox/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md, inbox/proposals/approved/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md
+- synthesis/stump_wolfram_bridge | 2 | inbox/2026-07-11_wolfram_history-qa-june17-idea-uptake.md, inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake.md
+- Day-003 - Gods Simplicity and Perfection | 1 | vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md
+- PETER/AGENTS | 1 | heartbeat/ARCHITECTURE.md
+- agents/15d_periodic_monitor_agent | 1 | agents/15c_net_evaluator_agent.md
+- architecture/31_cortical_column_architecture | 1 | review/C2A2_redesign_incorporation_plan_2026-08-24.md
+- architecture/assumptions | 1 | architecture/prs_axis_formative_assessment_2026-09-01.md
+- architecture/pathways | 1 | review/C2A2_redesign_incorporation_plan_2026-08-24.md
+- heartbeat/AGENTS | 1 | heartbeat/ARCHITECTURE.md
+- heartbeat/INTEGRATION | 1 | heartbeat/ARCHITECTURE.md
+- heartbeat/INTEGRATION_BRIEF | 1 | heartbeat/ARCHITECTURE.md
+- inbox/2026-06-11_stump_image-of-god-mourning | 1 | synthesis/fredrickson_stump_bridge.md
+- inbox/2026-06-15_friston_beautiful-loop-consciousness | 1 | synthesis/friston_mcgilchrist_bridge.md
+- inbox/2026-06-15_levin_top-down-membrane-potential-transcription | 1 | synthesis/friston_levin_bridge.md
+- inbox/2026-06-19_carroll_quantum-cyclic-universe | 1 | synthesis/arkanihamed_carroll_bridge.md
+- inbox/2026-06-21_rohr_way-of-the-early-church-new-way-of-living | 1 | synthesis/wright_rohr_bridge.md
+- inbox/2026-08-14_levin_diverse-intelligence-talk-recording | 1 | synthesis/kastrup_levin_bridge.md
+- inbox/2026-08-14_levin_mental-health-tolchinsky-weiss-fields | 1 | synthesis/fredrickson_levin_bridge.md
+- inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp | 1 | synthesis/stump_wolfram_bridge.md
+- inbox/2026-08-16_friston_active-inference-test-time-scaling-law | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/2026-08-16_friston_adaptive-nature-confirmation-bias | 1 | synthesis/friston_hoffman_bridge.md
+- inbox/2026-08-16_rohr_francis-clare-mysticism-weekly-summary | 1 | synthesis/friston_rohr_bridge.md
+- inbox/2026-08-16_rohr_franciscan-lectio-gazing-as-knowing | 1 | synthesis/friston_rohr_bridge.md
+- inbox/2026-08-16_wright_gods-homecoming-ch6-paradise-intermediate-state | 1 | synthesis/stump_wright_bridge.md
+- inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm | 1 | synthesis/hawkins_levin_bridge.md
+- inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure | 1 | synthesis/carroll_levin_bridge.md
+- inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording | 1 | synthesis/mcgilchrist_wolfram_bridge.md
+- inbox/2026-08-28_friston_cross-frequency-coupling-comparator | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/2026-08-28_wright_ask-ntw-aug27-spirit-as-sign-new-creation | 1 | synthesis/wright_rohr_bridge.md
+- inbox/2026-08-30_rohr_descending-religion-jesus-christ-distinction | 1 | synthesis/wright_rohr_bridge.md
+- inbox/2026-08-30_rohr_true-false-self-weekly-summary-persona | 1 | synthesis/hoffman_rohr_bridge.md
+- inbox/2026-08-30_rohr_true-seed-within-soulmaking-as-integration | 1 | synthesis/rohr_stump_bridge.md
+- inbox/2026-08-31_friston_dr-free-distributionally-robust-fep | 1 | synthesis/friston_levin_bridge.md
+- inbox/2026-09-01_hawkins_arc-agi-3-monty-gap | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence | 1 | synthesis/carroll_levin_bridge.md
+- inbox/2026-09-06_rohr_faith-and-doubt-correlative | 1 | synthesis/rohr_stump_bridge.md
+- inbox/2026-09-06_wright_human-nature-as-vocation-not-good-or-evil | 1 | synthesis/stump_wright_bridge.md
+- inbox/2026-09-09_kastrup_god-soul-problem-of-evil-hecht | 1 | synthesis/kastrup_stump_bridge.md
+- inbox/2026-09-09_mcgilchrist_rewind-yourself-what-modern-life-forced-brain-to-ignore | 1 | synthesis/hoffman_mcgilchrist_bridge.md
+- inbox/2026-09-12_levin_bacterial-collectives-decodable-patterns | 1 | synthesis/friston_levin_bridge.md
+- inbox/2026-09-12_levin_llms-as-cognitive-virus | 1 | synthesis/levin_loughran_bridge.md
+- inbox/2026-09-12_levin_vmem-connexin-metastasis-paradox | 1 | synthesis/levin_stump_bridge.md
+- inbox/2026-09-12_wolfram_summer-research-institute-2026-keynote | 1 | synthesis/levin_wolfram_bridge.md
+- inbox/2026-09-13_rohr_center-and-edge-holy-ignorance | 1 | synthesis/mcgilchrist_rohr_bridge.md
+- inbox/2026-09-13_rohr_faith-with-doubt-weekly-summary | 1 | synthesis/loughran_rohr_bridge.md
+- inbox/2026-09-14_levin_microrna-bioelectric-regionalization | 1 | synthesis/levin_stump_bridge.md
+- inbox/2026-09-15_carroll_ama-september-2026 | 1 | synthesis/carroll_friston_bridge.md
+- inbox/2026-09-15_hawkins_visual-saliency-sparser-models | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/2026-09-16_mcgilchrist_members-qa-27-august-2026 | 1 | synthesis/loughran_mcgilchrist_bridge.md
+- inbox/2026-09-19_wolfram_return-ama-pure-math-project | 1 | synthesis/arkanihamed_wolfram_bridge.md
+- inbox/2026-09-28_levin_machines-all-the-way-up-final-version | 1 | synthesis/friston_levin_bridge.md
+- inbox/2026-09-29_wolfram_future-pure-math-age-of-ai | 1 | synthesis/mcgilchrist_wolfram_bridge.md
+- inbox/2026-09-30_carroll_mindscape-369-caruso-free-will | 1 | synthesis/carroll_stump_bridge.md
+- inbox/2026-09-30_mcgilchrist_think-spiral-classical-liberalism | 1 | synthesis/loughran_mcgilchrist_bridge.md
+- inbox/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament | 1 | synthesis/wright_rohr_bridge.md
+- inbox/2026-10-04_rohr_therese-way-of-love-weekly-summary | 1 | synthesis/loughran_rohr_bridge.md
+- inbox/2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth | 1 | synthesis/wright_rohr_bridge.md
+- inbox/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing | 1 | synthesis/loughran_wolfram_bridge.md
+- inbox/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness | 1 | synthesis/friston_rohr_bridge.md
+- inbox/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension | 1 | synthesis/stump_wright_bridge.md
+- inbox/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero | 1 | synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-06-11_stump_image-of-god-mourning | 1 | synthesis/fredrickson_stump_bridge.md
+- inbox/proposals/approved/2026-06-15_friston_beautiful-loop-consciousness | 1 | synthesis/friston_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-06-15_levin_top-down-membrane-potential-transcription | 1 | synthesis/friston_levin_bridge.md
+- inbox/proposals/approved/2026-06-19_carroll_quantum-cyclic-universe | 1 | synthesis/arkanihamed_carroll_bridge.md
+- inbox/proposals/approved/2026-06-21_rohr_way-of-the-early-church-new-way-of-living | 1 | synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-08-14_levin_diverse-intelligence-talk-recording | 1 | synthesis/kastrup_levin_bridge.md
+- inbox/proposals/approved/2026-08-14_levin_mental-health-tolchinsky-weiss-fields | 1 | synthesis/fredrickson_levin_bridge.md
+- inbox/proposals/approved/2026-08-15_wolfram_avocational-science-ruliology-onramp | 1 | synthesis/stump_wolfram_bridge.md
+- inbox/proposals/approved/2026-08-16_friston_active-inference-test-time-scaling-law | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/proposals/approved/2026-08-16_friston_adaptive-nature-confirmation-bias | 1 | synthesis/friston_hoffman_bridge.md
+- inbox/proposals/approved/2026-08-16_rohr_francis-clare-mysticism-weekly-summary | 1 | synthesis/friston_rohr_bridge.md
+- inbox/proposals/approved/2026-08-16_rohr_franciscan-lectio-gazing-as-knowing | 1 | synthesis/friston_rohr_bridge.md
+- inbox/proposals/approved/2026-08-16_wright_gods-homecoming-ch6-paradise-intermediate-state | 1 | synthesis/stump_wright_bridge.md
+- inbox/proposals/approved/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm | 1 | synthesis/hawkins_levin_bridge.md
+- inbox/proposals/approved/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure | 1 | synthesis/carroll_levin_bridge.md
+- inbox/proposals/approved/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording | 1 | synthesis/mcgilchrist_wolfram_bridge.md
+- inbox/proposals/approved/2026-08-28_friston_cross-frequency-coupling-comparator | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/proposals/approved/2026-08-28_wright_ask-ntw-aug27-spirit-as-sign-new-creation | 1 | synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-08-30_rohr_descending-religion-jesus-christ-distinction | 1 | synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-08-30_rohr_true-false-self-weekly-summary-persona | 1 | synthesis/hoffman_rohr_bridge.md
+- inbox/proposals/approved/2026-08-30_rohr_true-seed-within-soulmaking-as-integration | 1 | synthesis/rohr_stump_bridge.md
+- inbox/proposals/approved/2026-08-31_friston_dr-free-distributionally-robust-fep | 1 | synthesis/friston_levin_bridge.md
+- inbox/proposals/approved/2026-09-01_hawkins_arc-agi-3-monty-gap | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/proposals/approved/2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence | 1 | synthesis/carroll_levin_bridge.md
+- inbox/proposals/approved/2026-09-06_rohr_faith-and-doubt-correlative | 1 | synthesis/rohr_stump_bridge.md
+- inbox/proposals/approved/2026-09-06_wright_human-nature-as-vocation-not-good-or-evil | 1 | synthesis/stump_wright_bridge.md
+- inbox/proposals/approved/2026-09-09_kastrup_god-soul-problem-of-evil-hecht | 1 | synthesis/kastrup_stump_bridge.md
+- inbox/proposals/approved/2026-09-09_mcgilchrist_rewind-yourself-what-modern-life-forced-brain-to-ignore | 1 | synthesis/hoffman_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-09-12_levin_bacterial-collectives-decodable-patterns | 1 | synthesis/friston_levin_bridge.md
+- inbox/proposals/approved/2026-09-12_levin_llms-as-cognitive-virus | 1 | synthesis/levin_loughran_bridge.md
+- inbox/proposals/approved/2026-09-12_levin_vmem-connexin-metastasis-paradox | 1 | synthesis/levin_stump_bridge.md
+- inbox/proposals/approved/2026-09-12_wolfram_summer-research-institute-2026-keynote | 1 | synthesis/levin_wolfram_bridge.md
+- inbox/proposals/approved/2026-09-13_rohr_center-and-edge-holy-ignorance | 1 | synthesis/mcgilchrist_rohr_bridge.md
+- inbox/proposals/approved/2026-09-13_rohr_faith-with-doubt-weekly-summary | 1 | synthesis/loughran_rohr_bridge.md
+- inbox/proposals/approved/2026-09-14_levin_microrna-bioelectric-regionalization | 1 | synthesis/levin_stump_bridge.md
+- inbox/proposals/approved/2026-09-15_carroll_ama-september-2026 | 1 | synthesis/carroll_friston_bridge.md
+- inbox/proposals/approved/2026-09-15_hawkins_visual-saliency-sparser-models | 1 | synthesis/friston_hawkins_bridge.md
+- inbox/proposals/approved/2026-09-16_mcgilchrist_members-qa-27-august-2026 | 1 | synthesis/loughran_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-09-19_wolfram_return-ama-pure-math-project | 1 | synthesis/arkanihamed_wolfram_bridge.md
+- inbox/proposals/approved/2026-09-28_levin_machines-all-the-way-up-final-version | 1 | synthesis/friston_levin_bridge.md
+- inbox/proposals/approved/2026-09-29_wolfram_future-pure-math-age-of-ai | 1 | synthesis/mcgilchrist_wolfram_bridge.md
+- inbox/proposals/approved/2026-09-30_carroll_mindscape-369-caruso-free-will | 1 | synthesis/carroll_stump_bridge.md
+- inbox/proposals/approved/2026-09-30_mcgilchrist_think-spiral-classical-liberalism | 1 | synthesis/loughran_mcgilchrist_bridge.md
+- inbox/proposals/approved/2026-10-04_rohr_gods-resting-place-francis-nature-sacrament | 1 | synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary | 1 | synthesis/loughran_rohr_bridge.md
+- inbox/proposals/approved/2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth | 1 | synthesis/wright_rohr_bridge.md
+- inbox/proposals/approved/2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing | 1 | synthesis/loughran_wolfram_bridge.md
+- inbox/proposals/approved/2026-10-11_rohr_home-is-where-we-begin-alpha-omega-homesickness | 1 | synthesis/friston_rohr_bridge.md
+- inbox/proposals/approved/2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension | 1 | synthesis/stump_wright_bridge.md
+- inbox/proposals/approved/2026-10-11_wright_ask-ntw-sep21-ot-violence-acts-gospel-hero | 1 | synthesis/wright_rohr_bridge.md
+- review/C2A2_redesign_proposal_2026-04-09 | 1 | review/C2A2_redesign_incorporation_plan_2026-08-24.md
+- review/C2A2_redesign_proposal_2026-04-09_revised | 1 | review/C2A2_redesign_incorporation_plan_2026-08-24.md
+- synthesis/friston_mcgilchrist_bridge | 1 | inbox/2026-06-15_friston_beautiful-loop-consciousness.md
+- synthesis/hawkins_wolfram_bridge | 1 | inbox/proposals/approved/2026-10-03_wolfram_history-qa-sept23-ai-expectations.md
+- synthesis/kastrup_stump_bridge | 1 | inbox/2026-06-10_kastrup_illusion-of-self.md
+- synthesis/loughran_mcgilchrist_bridge | 1 | inbox/proposals/approved/2026-09-30_mcgilchrist_think-spiral-classical-liberalism.md
+- synthesis/loughran_rohr_bridge | 1 | inbox/proposals/approved/2026-10-04_rohr_therese-way-of-love-weekly-summary.md
+- traditions/loughran/dialogues/loughran-opus-4-7/2026-05-20_narrative-connectome-and-the-form-of-partnership | 1 | traditions/loughran/wiki.md
+- vault/synthesis/Day-001 - Introduction - Contemporary | 1 | vault/transcripts/Day-001 - Introduction.md
+- vault/synthesis/Day-002 - Does God Exist - Contemporary | 1 | vault/transcripts/Day-002 - Does God Exist.md
+- vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary | 1 | vault/transcripts/Day-003 - Gods Simplicity and Perfection.md
+- vault/synthesis/Day-004 - Is God Good - Contemporary | 1 | vault/transcripts/Day-004 - Is God Good.md
+- vault/synthesis/Day-005 - Is God in Everything - Contemporary | 1 | vault/transcripts/Day-005 - Is God in Everything.md
+- vault/synthesis/Day-006 - Does God Change - Contemporary | 1 | vault/transcripts/Day-006 - Does God Change.md
+- vault/synthesis/Day-007 - The Beatific Vision - Contemporary | 1 | vault/transcripts/Day-007 - The Beatific Vision.md
+- vault/synthesis/Day-008 - Does God Have a Name - Contemporary | 1 | vault/transcripts/Day-008 - Does God Have a Name.md
+- vault/synthesis/Day-009 - What is Truth - Contemporary | 1 | vault/transcripts/Day-009 - What is Truth.md
+- vault/synthesis/Day-010 - What is Life - Contemporary | 1 | vault/transcripts/Day-010 - What is Life.md
+- vault/synthesis/Day-011 - God's Love - Contemporary | 1 | vault/transcripts/Day-011 - God's Love.md
+- vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary | 1 | vault/transcripts/Day-012 - The Certainty of God's Providence.md
+- vault/synthesis/Day-013 - Predestination - Contemporary | 1 | vault/transcripts/Day-013 - Predestination.md
+- vault/synthesis/Day-014 - Is God Happy - Contemporary | 1 | vault/transcripts/Day-014 - Is God Happy.md
+- vault/synthesis/Day-015 - The Trinity - Contemporary | 1 | vault/transcripts/Day-015 - The Trinity.md
+- vault/synthesis/Day-016 - Is God Personal - Contemporary | 1 | vault/transcripts/Day-016 - Is God Personal.md
+- vault/synthesis/Day-017 - Divine Notions - Contemporary | 1 | vault/transcripts/Day-017 - Divine Notions.md
+- vault/synthesis/Day-018 - Father and Son - Contemporary | 1 | vault/transcripts/Day-018 - Father and Son.md
+- vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary | 1 | vault/transcripts/Day-019 - Vindicating the Filioque.md
+- vault/synthesis/Day-020 - The Gift of God - Contemporary | 1 | vault/transcripts/Day-020 - The Gift of God.md
+- vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary | 1 | vault/transcripts/Day-021 - Trinitarian Appropriations.md
+- vault/synthesis/Day-022 - The Father in the Son - Contemporary | 1 | vault/transcripts/Day-022 - The Father in the Son.md
+- vault/synthesis/Day-023 - Prime Matter and Quantum Physics - Contemporary | 1 | vault/transcripts/Day-023 - Prime Matter and Quantum Physics.md
+- vault/synthesis/Day-024 - The Creator and the Creation - Contemporary | 1 | vault/transcripts/Day-024 - The Creator and the Creation.md
+- vault/synthesis/Day-025 - The Nature of Evil - Contemporary | 1 | vault/transcripts/Day-025 - The Nature of Evil.md
+- vault/synthesis/Day-026 - The Angels - Contemporary | 1 | vault/transcripts/Day-026 - The Angels.md
+- vault/synthesis/Day-027 - Angelic Bodies - Contemporary | 1 | vault/transcripts/Day-027 - Angelic Bodies.md
+- vault/synthesis/Day-028 - Quantum Motion and Angelic Knowledge - Contemporary | 1 | vault/transcripts/Day-028 - Quantum Motion and Angelic Knowledge.md
+- vault/synthesis/Day-029 - Smarter Angels - Contemporary | 1 | vault/transcripts/Day-029 - Smarter Angels.md
+- vault/synthesis/Day-030 - Secret Thoughts - Contemporary | 1 | vault/transcripts/Day-030 - Secret Thoughts.md
+- vault/synthesis/Day-031 - Love and Choice - Contemporary | 1 | vault/transcripts/Day-031 - Love and Choice.md
+- vault/synthesis/Day-032 - Heavenly Freedom - Contemporary | 1 | vault/transcripts/Day-032 - Heavenly Freedom.md
+- vault/synthesis/Day-033 - Fallen Angel - Contemporary | 1 | vault/transcripts/Day-033 - Fallen Angel.md
+- vault/synthesis/Day-034 - Formless Matter - Contemporary | 1 | vault/transcripts/Day-034 - Formless Matter.md
+- vault/synthesis/Day-035 - Genesis - Contemporary | 1 | vault/transcripts/Day-035 - Genesis.md
+- vault/synthesis/Day-036 - The Third and Fourth Day - Contemporary | 1 | vault/transcripts/Day-036 - The Third and Fourth Day.md
+- vault/synthesis/Day-037 - The Fifth and Sixth Day - Contemporary | 1 | vault/transcripts/Day-037 - The Fifth and Sixth Day.md
+- vault/synthesis/Day-038 - Evolution - Contemporary | 1 | vault/transcripts/Day-038 - Evolution.md
+- vault/synthesis/Day-039 - The Soul - Contemporary | 1 | vault/transcripts/Day-039 - The Soul.md
+- vault/synthesis/Day-040 - Mans Faculties - Contemporary | 1 | vault/transcripts/Day-040 - Mans Faculties.md
+- vault/synthesis/Day-041 - Understanding and Conscience - Contemporary | 1 | vault/transcripts/Day-041 - Understanding and Conscience.md
+- vault/synthesis/Day-042 - Will and Happiness - Contemporary | 1 | vault/transcripts/Day-042 - Will and Happiness.md
+- vault/synthesis/Day-043 - Free-will and Phantasm - Contemporary | 1 | vault/transcripts/Day-043 - Free-will and Phantasm.md
+- vault/synthesis/Day-044 - Epistemological Realism - Contemporary | 1 | vault/transcripts/Day-044 - Epistemological Realism.md
+- vault/synthesis/Day-045 - Self-Understanding - Contemporary | 1 | vault/transcripts/Day-045 - Self-Understanding.md
+- vault/synthesis/Day-046 - Knowledge After Death - Contemporary | 1 | vault/transcripts/Day-046 - Knowledge After Death.md
+- vault/synthesis/Day-047 - Man and Woman - Contemporary | 1 | vault/transcripts/Day-047 - Man and Woman.md
+- vault/synthesis/Day-048 - The Image of God - Contemporary | 1 | vault/transcripts/Day-048 - The Image of God.md
+- vault/synthesis/Day-049 - Created in Grace - Contemporary | 1 | vault/transcripts/Day-049 - Created in Grace.md
+- vault/synthesis/Day-050 - The Tree of Life - Contemporary | 1 | vault/transcripts/Day-050 - The Tree of Life.md
+- vault/synthesis/Day-051 - Innocent Generations - Contemporary | 1 | vault/transcripts/Day-051 - Innocent Generations.md
+- vault/synthesis/Day-052 - Adam's Garden - Contemporary | 1 | vault/transcripts/Day-052 - Adam's Garden.md
+- vault/synthesis/Day-053 - The Divine Governance - Contemporary | 1 | vault/transcripts/Day-053 - The Divine Governance.md
+- vault/synthesis/Day-054 - Angelic Instruction - Contemporary | 1 | vault/transcripts/Day-054 - Angelic Instruction.md
+- vault/synthesis/Day-055 - Angelic Hierarchy - Contemporary | 1 | vault/transcripts/Day-055 - Angelic Hierarchy.md
+- vault/synthesis/Day-056 - The Order of Demons - Contemporary | 1 | vault/transcripts/Day-056 - The Order of Demons.md
+- vault/synthesis/Day-057 - Angels and Men - Contemporary | 1 | vault/transcripts/Day-057 - Angels and Men.md
+- vault/synthesis/Day-058 - The Assault of Demons - Contemporary | 1 | vault/transcripts/Day-058 - The Assault of Demons.md
+- vault/synthesis/Day-059 - Energy and Destiny - Contemporary | 1 | vault/transcripts/Day-059 - Energy and Destiny.md
+- vault/synthesis/Day-060 - Education - Contemporary | 1 | vault/transcripts/Day-060 - Education.md
+- vault/synthesis/Day-061 - Volume 2 - Contemporary | 1 | vault/transcripts/Day-061 - Volume 2.md
+- vault/synthesis/Day-062 - The Pursuit of Happiness - Contemporary | 1 | vault/transcripts/Day-062 - The Pursuit of Happiness.md
+- vault/synthesis/Day-063 - Friendship in Heaven - Contemporary | 1 | vault/transcripts/Day-063 - Friendship in Heaven.md
+- vault/synthesis/Day-064 - Willful Ignorance - Contemporary | 1 | vault/transcripts/Day-064 - Willful Ignorance.md
+- vault/synthesis/Day-065 - Mindful Willing - Contemporary | 1 | vault/transcripts/Day-065 - Mindful Willing.md
+- vault/synthesis/Day-066 - Enjoyment - Contemporary | 1 | vault/transcripts/Day-066 - Enjoyment.md
+- vault/synthesis/Day-067 - Intention and Choice - Contemporary | 1 | vault/transcripts/Day-067 - Intention and Choice.md
+- vault/synthesis/Day-068 - Counsel and Consent - Contemporary | 1 | vault/transcripts/Day-068 - Counsel and Consent.md
+- vault/synthesis/Day-069 - Use and Command - Contemporary | 1 | vault/transcripts/Day-069 - Use and Command.md
+- vault/synthesis/Day-070 - Morality - Contemporary | 1 | vault/transcripts/Day-070 - Morality.md
+- vault/synthesis/Day-071 - Moral Consequences - Contemporary | 1 | vault/transcripts/Day-071 - Moral Consequences.md
+- vault/synthesis/Day-072 - Human Emotions - Contemporary | 1 | vault/transcripts/Day-072 - Human Emotions.md
+- vault/synthesis/Day-073 - Moral Passions - Contemporary | 1 | vault/transcripts/Day-073 - Moral Passions.md
+- vault/synthesis/Day-074 - Love - Contemporary | 1 | vault/transcripts/Day-074 - Love.md
+- vault/synthesis/Day-075 - Hatred - Contemporary | 1 | vault/transcripts/Day-075 - Hatred.md
+- vault/synthesis/Day-076 - Timeless Delight - Contemporary | 1 | vault/transcripts/Day-076 - Timeless Delight.md
+- vault/synthesis/Day-077 - Delightful Sorrow - Contemporary | 1 | vault/transcripts/Day-077 - Delightful Sorrow.md
+- vault/synthesis/Day-078 - Sorrow and Pain - Contemporary | 1 | vault/transcripts/Day-078 - Sorrow and Pain.md
+- vault/synthesis/Day-079 - Sorrowful Effects - Contemporary | 1 | vault/transcripts/Day-079 - Sorrowful Effects.md
+- vault/synthesis/Day-080 - Sorrowful Remedies - Contemporary | 1 | vault/transcripts/Day-080 - Sorrowful Remedies.md
+- vault/synthesis/Day-081 - Hope - Contemporary | 1 | vault/transcripts/Day-081 - Hope.md
+- vault/synthesis/Day-082 - Fear - Contemporary | 1 | vault/transcripts/Day-082 - Fear.md
+- vault/synthesis/Day-083 - Daring - Contemporary | 1 | vault/transcripts/Day-083 - Daring.md
+- vault/synthesis/Day-084 - Prideful Anger - Contemporary | 1 | vault/transcripts/Day-084 - Prideful Anger.md
+- vault/synthesis/Day-085 - Habits - Contemporary | 1 | vault/transcripts/Day-085 - Habits.md
+- vault/synthesis/Day-086 - The Subject of Habits - Contemporary | 1 | vault/transcripts/Day-086 - The Subject of Habits.md
+- vault/synthesis/Day-087 - Diminishing Habits - Contemporary | 1 | vault/transcripts/Day-087 - Diminishing Habits.md
+- vault/synthesis/Day-088 - Distinct Habits - Contemporary | 1 | vault/transcripts/Day-088 - Distinct Habits.md
+- vault/synthesis/Day-089 - Intellectual Virtues - Contemporary | 1 | vault/transcripts/Day-089 - Intellectual Virtues.md
+- vault/synthesis/Day-090 - Moral Virtue - Contemporary | 1 | vault/transcripts/Day-090 - Moral Virtue.md
+- vault/synthesis/Day-091 - Cardinal Virtue - Contemporary | 1 | vault/transcripts/Day-091 - Cardinal Virtue.md
+- vault/synthesis/Day-092 - Theological Virtue - Contemporary | 1 | vault/transcripts/Day-092 - Theological Virtue.md
+- vault/synthesis/Day-093 - The Virtuous Mean - Contemporary | 1 | vault/transcripts/Day-093 - The Virtuous Mean.md
+- vault/synthesis/Day-094 - Greatest Virtue - Contemporary | 1 | vault/transcripts/Day-094 - Greatest Virtue.md
+- vault/synthesis/Day-095 - The Beatitudes - Contemporary | 1 | vault/transcripts/Day-095 - The Beatitudes.md
+- vault/synthesis/Day-096 - Fruits and Vice - Contemporary | 1 | vault/transcripts/Day-096 - Fruits and Vice.md
+- vault/synthesis/Day-097 - Grave Sin - Contemporary | 1 | vault/transcripts/Day-097 - Grave Sin.md
+- vault/synthesis/Day-098 - Sinful Causes - Contemporary | 1 | vault/transcripts/Day-098 - Sinful Causes.md
+- vault/synthesis/Day-099 - Lusts of the World - Contemporary | 1 | vault/transcripts/Day-099 - Lusts of the World.md
+- vault/synthesis/Day-100 - Malice - Contemporary | 1 | vault/transcripts/Day-100 - Malice.md
+- vault/synthesis/Day-101 - Satan's Influence - Contemporary | 1 | vault/transcripts/Day-101 - Satan's Influence.md
+- vault/synthesis/Day-102 - Original Sin - Contemporary | 1 | vault/transcripts/Day-102 - Original Sin.md
+- vault/synthesis/Day-103 - Capital Vice - Contemporary | 1 | vault/transcripts/Day-103 - Capital Vice.md
+- vault/synthesis/Day-104 - Punishment - Contemporary | 1 | vault/transcripts/Day-104 - Punishment.md
+- vault/synthesis/Day-105 - Mortal and Venial Sin - Contemporary | 1 | vault/transcripts/Day-105 - Mortal and Venial Sin.md
+- vault/synthesis/Day-106 - Law - Contemporary | 1 | vault/transcripts/Day-106 - Law.md
+- vault/synthesis/Day-107 - Eternal Law - Contemporary | 1 | vault/transcripts/Day-107 - Eternal Law.md
+- vault/synthesis/Day-108 - Natural and Human Law - Contemporary | 1 | vault/transcripts/Day-108 - Natural and Human Law.md
+- vault/synthesis/Day-109 - Changing Laws - Contemporary | 1 | vault/transcripts/Day-109 - Changing Laws.md
+- vault/synthesis/Day-110 - The Old Law - Contemporary | 1 | vault/transcripts/Day-110 - The Old Law.md
+- vault/synthesis/Day-111 - The Ten Commandments - Contemporary | 1 | vault/transcripts/Day-111 - The Ten Commandments.md
+- vault/synthesis/Day-112 - Worship - Contemporary | 1 | vault/transcripts/Day-112 - Worship.md
+- vault/synthesis/Day-113 - The Republic - Contemporary | 1 | vault/transcripts/Day-113 - The Republic.md
+- vault/synthesis/Day-114 - A Burden Light - Contemporary | 1 | vault/transcripts/Day-114 - A Burden Light.md
+- vault/synthesis/Day-115 - Divine Assistance - Contemporary | 1 | vault/transcripts/Day-115 - Divine Assistance.md
+- vault/synthesis/Day-116 - Grace - Contemporary | 1 | vault/transcripts/Day-116 - Grace.md
+- vault/synthesis/Day-117 - Justification - Contemporary | 1 | vault/transcripts/Day-117 - Justification.md
+- vault/synthesis/Day-118 - Volume 3 - Contemporary | 1 | vault/transcripts/Day-118 - Volume 3.md
+- vault/synthesis/Day-119 - The Act of Faith - Contemporary | 1 | vault/transcripts/Day-119 - The Act of Faith.md
+- vault/synthesis/Day-120 - Who Has Faith - Contemporary | 1 | vault/transcripts/Day-120 - Who Has Faith.md
+- vault/synthesis/Day-121 - Faith and Fear - Contemporary | 1 | vault/transcripts/Day-121 - Faith and Fear.md
+- vault/synthesis/Day-122 - Faith-Filled Gifts - Contemporary | 1 | vault/transcripts/Day-122 - Faith-Filled Gifts.md
+- vault/synthesis/Day-123 - Unbelievers - Contemporary | 1 | vault/transcripts/Day-123 - Unbelievers.md
+- vault/synthesis/Day-124 - Apostasy and Blasphemy - Contemporary | 1 | vault/transcripts/Day-124 - Apostasy and Blasphemy.md
+- vault/synthesis/Day-125 - The Sin Against the Holy Spirit - Contemporary | 1 | vault/transcripts/Day-125 - The Sin Against the Holy Spirit.md
+- vault/synthesis/Day-126 - Heavenly Hope - Contemporary | 1 | vault/transcripts/Day-126 - Heavenly Hope.md
+- vault/synthesis/Day-127 - The Gift of Fear - Contemporary | 1 | vault/transcripts/Day-127 - The Gift of Fear.md
+- vault/synthesis/Day-128 - Presumption - Contemporary | 1 | vault/transcripts/Day-128 - Presumption.md
+- vault/synthesis/Day-129 - Charity - Contemporary | 1 | vault/transcripts/Day-129 - Charity.md
+- vault/synthesis/Day-130 - What Charity Loves - Contemporary | 1 | vault/transcripts/Day-130 - What Charity Loves.md
+- vault/synthesis/Day-131 - The Order of Charity - Contemporary | 1 | vault/transcripts/Day-131 - The Order of Charity.md
+- vault/synthesis/Day-132 - Joy and Peace - Contemporary | 1 | vault/transcripts/Day-132 - Joy and Peace.md
+- vault/synthesis/Day-133 - Mercy and Beneficence - Contemporary | 1 | vault/transcripts/Day-133 - Mercy and Beneficence.md
+- vault/synthesis/Day-134 - Required Almsgiving - Contemporary | 1 | vault/transcripts/Day-134 - Required Almsgiving.md
+- vault/synthesis/Day-135 - Laziness - Contemporary | 1 | vault/transcripts/Day-135 - Laziness.md
+- vault/synthesis/Day-136 - Envy - Contemporary | 1 | vault/transcripts/Day-136 - Envy.md
+- vault/synthesis/Day-137 - Schism - Contemporary | 1 | vault/transcripts/Day-137 - Schism.md
+- vault/synthesis/Day-138 - Just War - Contemporary | 1 | vault/transcripts/Day-138 - Just War.md
+- vault/synthesis/Day-139 - Scandal - Contemporary | 1 | vault/transcripts/Day-139 - Scandal.md
+- vault/synthesis/Day-140 - Wisdom - Contemporary | 1 | vault/transcripts/Day-140 - Wisdom.md
+- vault/synthesis/Day-141 - Prudence - Contemporary | 1 | vault/transcripts/Day-141 - Prudence.md
+- vault/synthesis/Day-142 - Parts of Prudence - Contemporary | 1 | vault/transcripts/Day-142 - Parts of Prudence.md
+- vault/synthesis/Day-143 - Kinds of Prudence - Contemporary | 1 | vault/transcripts/Day-143 - Kinds of Prudence.md
+- vault/synthesis/Day-144 - Gifted Counsel - Contemporary | 1 | vault/transcripts/Day-144 - Gifted Counsel.md
+- vault/synthesis/Day-145 - False Prudence - Contemporary | 1 | vault/transcripts/Day-145 - False Prudence.md
+- vault/synthesis/Day-146 - Right and Just - Contemporary | 1 | vault/transcripts/Day-146 - Right and Just.md
+- vault/synthesis/Day-147 - General Justice - Contemporary | 1 | vault/transcripts/Day-147 - General Justice.md
+- vault/synthesis/Day-148 - Judgement - Contemporary | 1 | vault/transcripts/Day-148 - Judgement.md
+- vault/synthesis/Day-149 - Respect of Persons - Contemporary | 1 | vault/transcripts/Day-149 - Respect of Persons.md
+- vault/synthesis/Day-150 - The Death Penalty - Contemporary | 1 | vault/transcripts/Day-150 - The Death Penalty.md
+- vault/synthesis/Day-151 - Possessions - Contemporary | 1 | vault/transcripts/Day-151 - Possessions.md
+- vault/synthesis/Day-152 - Accusation - Contemporary | 1 | vault/transcripts/Day-152 - Accusation.md
+- vault/synthesis/Day-153 - Defending the Guilty - Contemporary | 1 | vault/transcripts/Day-153 - Defending the Guilty.md
+- vault/synthesis/Day-154 - Gossip - Contemporary | 1 | vault/transcripts/Day-154 - Gossip.md
+- vault/synthesis/Day-155 - Tale-Bearing and Derision - Contemporary | 1 | vault/transcripts/Day-155 - Tale-Bearing and Derision.md
+- vault/synthesis/Day-156 - Buying and Selling - Contemporary | 1 | vault/transcripts/Day-156 - Buying and Selling.md
+- vault/synthesis/Day-157 - Usury - Contemporary | 1 | vault/transcripts/Day-157 - Usury.md
+- vault/synthesis/Day-158 - Religion - Contemporary | 1 | vault/transcripts/Day-158 - Religion.md
+- vault/synthesis/Day-159 - The Our Father - Contemporary | 1 | vault/transcripts/Day-159 - The Our Father.md
+- vault/synthesis/Day-160 - Sacrifice - Contemporary | 1 | vault/transcripts/Day-160 - Sacrifice.md
+- vault/synthesis/Day-161 - Tithes - Contemporary | 1 | vault/transcripts/Day-161 - Tithes.md
+- vault/synthesis/Day-162 - Vows and Oaths - Contemporary | 1 | vault/transcripts/Day-162 - Vows and Oaths.md
+- vault/synthesis/Day-163 - Adjuration and Hymns - Contemporary | 1 | vault/transcripts/Day-163 - Adjuration and Hymns.md
+- vault/synthesis/Day-164 - Superstition - Contemporary | 1 | vault/transcripts/Day-164 - Superstition.md
+- vault/synthesis/Day-165 - Idolatry and Divination - Contemporary | 1 | vault/transcripts/Day-165 - Idolatry and Divination.md
+- vault/synthesis/Day-166 - Testing God - Contemporary | 1 | vault/transcripts/Day-166 - Testing God.md
+- vault/synthesis/Day-167 - Perjury and Sacrilege - Contemporary | 1 | vault/transcripts/Day-167 - Perjury and Sacrilege.md
+- vault/synthesis/Day-168 - Simony and Piety - Contemporary | 1 | vault/transcripts/Day-168 - Simony and Piety.md
+- vault/synthesis/Day-169 - Observance and Dulia - Contemporary | 1 | vault/transcripts/Day-169 - Observance and Dulia.md
+- vault/synthesis/Day-170 - Obedience - Contemporary | 1 | vault/transcripts/Day-170 - Obedience.md
+- vault/synthesis/Day-171 - Gratitude - Contemporary | 1 | vault/transcripts/Day-171 - Gratitude.md
+- vault/synthesis/Day-172 - Vengeance and Truthfulness - Contemporary | 1 | vault/transcripts/Day-172 - Vengeance and Truthfulness.md
+- vault/synthesis/Day-173 - Kinds of Lies - Contemporary | 1 | vault/transcripts/Day-173 - Kinds of Lies.md
+- vault/synthesis/Day-174 - Boasting - Contemporary | 1 | vault/transcripts/Day-174 - Boasting.md
+- vault/synthesis/Day-175 - Affability and Flattery - Contemporary | 1 | vault/transcripts/Day-175 - Affability and Flattery.md
+- vault/synthesis/Day-176 - Quarreling and Liberality - Contemporary | 1 | vault/transcripts/Day-176 - Quarreling and Liberality.md
+- vault/synthesis/Day-177 - Covetousness - Contemporary | 1 | vault/transcripts/Day-177 - Covetousness.md
+- vault/synthesis/Day-178 - Equity - Contemporary | 1 | vault/transcripts/Day-178 - Equity.md
+- vault/synthesis/Day-179 - Fortitude - Contemporary | 1 | vault/transcripts/Day-179 - Fortitude.md
+- vault/synthesis/Day-180 - Timidity - Contemporary | 1 | vault/transcripts/Day-180 - Timidity.md
+- vault/synthesis/Day-181 - Fearlessness - Contemporary | 1 | vault/transcripts/Day-181 - Fearlessness.md
+- vault/synthesis/Day-182 - Magnanimity - Contemporary | 1 | vault/transcripts/Day-182 - Magnanimity.md
+- vault/synthesis/Day-183 - Ambition - Contemporary | 1 | vault/transcripts/Day-183 - Ambition.md
+- vault/synthesis/Day-184 - Magnificence - Contemporary | 1 | vault/transcripts/Day-184 - Magnificence.md
+- vault/synthesis/Day-185 - Vainglory - Contemporary | 1 | vault/transcripts/Day-185 - Vainglory.md
+- vault/synthesis/Day-186 - Patience and Perseverance - Contemporary | 1 | vault/transcripts/Day-186 - Patience and Perseverance.md
+- vault/synthesis/Day-187 - Softness - Contemporary | 1 | vault/transcripts/Day-187 - Softness.md
+- vault/synthesis/Day-188 - Temperance - Contemporary | 1 | vault/transcripts/Day-188 - Temperance.md
+- vault/synthesis/Day-189 - Childish Vice - Contemporary | 1 | vault/transcripts/Day-189 - Childish Vice.md
+- vault/synthesis/Day-190 - Beauty and Disgrace - Contemporary | 1 | vault/transcripts/Day-190 - Beauty and Disgrace.md
+- vault/synthesis/Day-191 - Fasting - Contemporary | 1 | vault/transcripts/Day-191 - Fasting.md
+- vault/synthesis/Day-192 - Gluttony and Sobriety - Contemporary | 1 | vault/transcripts/Day-192 - Gluttony and Sobriety.md
+- vault/synthesis/Day-193 - Drunkenness - Contemporary | 1 | vault/transcripts/Day-193 - Drunkenness.md
+- vault/synthesis/Day-194 - Virginity vs Marriage - Contemporary | 1 | vault/transcripts/Day-194 - Virginity vs Marriage.md
+- vault/synthesis/Day-195 - Kinds of Lust - Contemporary | 1 | vault/transcripts/Day-195 - Kinds of Lust.md
+- vault/synthesis/Day-196 - Meekness - Contemporary | 1 | vault/transcripts/Day-196 - Meekness.md
+- vault/synthesis/Day-197 - Is Anger Sinful - Contemporary | 1 | vault/transcripts/Day-197 - Is Anger Sinful.md
+- vault/synthesis/Day-198 - Modesty and Humility - Contemporary | 1 | vault/transcripts/Day-198 - Modesty and Humility.md
+- vault/synthesis/Day-199 - Man's Downfall - Contemporary | 1 | vault/transcripts/Day-199 - Man's Downfall.md
+- vault/synthesis/Day-200 - Paradise Lost - Contemporary | 1 | vault/transcripts/Day-200 - Paradise Lost.md
+- vault/synthesis/Day-201 - The Vice of Curiosity - Contemporary | 1 | vault/transcripts/Day-201 - The Vice of Curiosity.md
+- vault/synthesis/Day-202 - Playfulness and Apparel - Contemporary | 1 | vault/transcripts/Day-202 - Playfulness and Apparel.md
+- vault/synthesis/Day-203 - Prophetic Certainty - Contemporary | 1 | vault/transcripts/Day-203 - Prophetic Certainty.md
+- vault/synthesis/Day-204 - Prophetic Causes - Contemporary | 1 | vault/transcripts/Day-204 - Prophetic Causes.md
+- vault/synthesis/Day-205 - Kinds of Prophecy - Contemporary | 1 | vault/transcripts/Day-205 - Kinds of Prophecy.md
+- vault/synthesis/Day-206 - The Gift of Tongues and Words - Contemporary | 1 | vault/transcripts/Day-206 - The Gift of Tongues and Words.md
+- vault/synthesis/Day-207 - Miracles - Contemporary | 1 | vault/transcripts/Day-207 - Miracles.md
+- vault/synthesis/Day-208 - The Contemplative Life - Contemporary | 1 | vault/transcripts/Day-208 - The Contemplative Life.md
+- vault/synthesis/Day-209 - States of Life - Contemporary | 1 | vault/transcripts/Day-209 - States of Life.md
+- vault/synthesis/Day-210 - Christian Perfection - Contemporary | 1 | vault/transcripts/Day-210 - Christian Perfection.md
+- vault/synthesis/Day-211 - Better Religious Orders - Contemporary | 1 | vault/transcripts/Day-211 - Better Religious Orders.md
+- vault/synthesis/Day-212 - The Religious State - Contemporary | 1 | vault/transcripts/Day-212 - The Religious State.md
+- vault/synthesis/Day-213 - Volume 4 - Contemporary | 1 | vault/transcripts/Day-213 - Volume 4.md
+- vault/synthesis/Day-214 - The Mode of Union - Contemporary | 1 | vault/transcripts/Day-214 - The Mode of Union.md
+- vault/synthesis/Day-215 - The Order of Assumption - Contemporary | 1 | vault/transcripts/Day-215 - The Order of Assumption.md
+- vault/synthesis/Day-216 - Christ as Head - Contemporary | 1 | vault/transcripts/Day-216 - Christ as Head.md
+- vault/synthesis/Day-217 - Christ's Knowledge - Contemporary | 1 | vault/transcripts/Day-217 - Christ's Knowledge.md
+- vault/synthesis/Day-218 - Christ's Infused Knowledge - Contemporary | 1 | vault/transcripts/Day-218 - Christ's Infused Knowledge.md
+- vault/synthesis/Day-219 - Christ's Passible Body - Contemporary | 1 | vault/transcripts/Day-219 - Christ's Passible Body.md
+- vault/synthesis/Day-220 - Communication of Idioms - Contemporary | 1 | vault/transcripts/Day-220 - Communication of Idioms.md
+- vault/synthesis/Day-221 - Christ's Wills - Contemporary | 1 | vault/transcripts/Day-221 - Christ's Wills.md
+- vault/synthesis/Day-222 - Unity of Operation - Contemporary | 1 | vault/transcripts/Day-222 - Unity of Operation.md
+- vault/synthesis/Day-223 - Christ's Prayer and Priesthood - Contemporary | 1 | vault/transcripts/Day-223 - Christ's Prayer and Priesthood.md
+- vault/synthesis/Day-224 - Adopted Sons - Contemporary | 1 | vault/transcripts/Day-224 - Adopted Sons.md
+- vault/synthesis/Day-225 - Honoring the Saints - Contemporary | 1 | vault/transcripts/Day-225 - Honoring the Saints.md
+- vault/synthesis/Day-226 - The Blessed Virgin Mary - Contemporary | 1 | vault/transcripts/Day-226 - The Blessed Virgin Mary.md
+- vault/synthesis/Day-227 - The Annunciation - Contemporary | 1 | vault/transcripts/Day-227 - The Annunciation.md
+- vault/synthesis/Day-228 - Christ's Ancestry - Contemporary | 1 | vault/transcripts/Day-228 - Christ's Ancestry.md
+- vault/synthesis/Day-229 - Christ's Conception - Contemporary | 1 | vault/transcripts/Day-229 - Christ's Conception.md
+- vault/synthesis/Day-230 - Christ's Nativity and Epiphany - Contemporary | 1 | vault/transcripts/Day-230 - Christ's Nativity and Epiphany.md
+- vault/synthesis/Day-231 - The Baptism of John - Contemporary | 1 | vault/transcripts/Day-231 - The Baptism of John.md
+- vault/synthesis/Day-232 - Christ's Baptism - Contemporary | 1 | vault/transcripts/Day-232 - Christ's Baptism.md
+- vault/synthesis/Day-233 - Temptation and Teaching - Contemporary | 1 | vault/transcripts/Day-233 - Temptation and Teaching.md
+- vault/synthesis/Day-234 - Christ's Miracles - Contemporary | 1 | vault/transcripts/Day-234 - Christ's Miracles.md
+- vault/synthesis/Day-235 - Christ's Transfiguration and Passion - Contemporary | 1 | vault/transcripts/Day-235 - Christ's Transfiguration and Passion.md
+- vault/synthesis/Day-236 - Efficacy of the Passion - Contemporary | 1 | vault/transcripts/Day-236 - Efficacy of the Passion.md
+- vault/synthesis/Day-237 - Passion and Death - Contemporary | 1 | vault/transcripts/Day-237 - Passion and Death.md
+- vault/synthesis/Day-238 - Burial and Descent - Contemporary | 1 | vault/transcripts/Day-238 - Burial and Descent.md
+- vault/synthesis/Day-239 - Resurrection - Contemporary | 1 | vault/transcripts/Day-239 - Resurrection.md
+- vault/synthesis/Day-240 - Post-Resurrection - Contemporary | 1 | vault/transcripts/Day-240 - Post-Resurrection.md
+- vault/synthesis/Day-241 - Ascension - Contemporary | 1 | vault/transcripts/Day-241 - Ascension.md
+- vault/synthesis/Day-242 - Judgement & Sacrament - Contemporary | 1 | vault/transcripts/Day-242 - Judgement & Sacrament.md
+- vault/synthesis/Day-243 - Passion & Sacrament - Contemporary | 1 | vault/transcripts/Day-243 - Passion & Sacrament.md
+- vault/synthesis/Day-244 - Sacramental Character - Contemporary | 1 | vault/transcripts/Day-244 - Sacramental Character.md
+- vault/synthesis/Day-245 - Baptism by Blood - Contemporary | 1 | vault/transcripts/Day-245 - Baptism by Blood.md
+- vault/synthesis/Day-246 - Baptism & Salvation - Contemporary | 1 | vault/transcripts/Day-246 - Baptism & Salvation.md
+- vault/synthesis/Day-247 - Baptism & Circumcision - Contemporary | 1 | vault/transcripts/Day-247 - Baptism & Circumcision.md
+- vault/synthesis/Day-248 - Confirmation - Contemporary | 1 | vault/transcripts/Day-248 - Confirmation.md
+- vault/synthesis/Day-249 - The Eucharist - Contemporary | 1 | vault/transcripts/Day-249 - The Eucharist.md
+- vault/synthesis/Day-250 - Transubstantiation - Contemporary | 1 | vault/transcripts/Day-250 - Transubstantiation.md
+- vault/synthesis/Day-251 - Accidents Remaining - Contemporary | 1 | vault/transcripts/Day-251 - Accidents Remaining.md
+- vault/synthesis/Day-252 - Eucharistic Reception - Contemporary | 1 | vault/transcripts/Day-252 - Eucharistic Reception.md
+- vault/synthesis/Day-253 - Eucharistic Minister - Contemporary | 1 | vault/transcripts/Day-253 - Eucharistic Minister.md
+- vault/synthesis/Day-254 - The Sacrament of Penance - Contemporary | 1 | vault/transcripts/Day-254 - The Sacrament of Penance.md
+- vault/synthesis/Day-255 - Penance as a Virtue - Contemporary | 1 | vault/transcripts/Day-255 - Penance as a Virtue.md
+- vault/synthesis/Day-256 - Remitted Venial Sin - Contemporary | 1 | vault/transcripts/Day-256 - Remitted Venial Sin.md
+- vault/synthesis/Day-257 - Penitential Restoration - Contemporary | 1 | vault/transcripts/Day-257 - Penitential Restoration.md
+- vault/synthesis/Day-258 - The Supplement - Contemporary | 1 | vault/transcripts/Day-258 - The Supplement.md
+- vault/synthesis/Day-259 - Continual Contrition - Contemporary | 1 | vault/transcripts/Day-259 - Continual Contrition.md
+- vault/synthesis/Day-260 - Slight Contrition - Contemporary | 1 | vault/transcripts/Day-260 - Slight Contrition.md
+- vault/synthesis/Day-261 - The Minister of Confession - Contemporary | 1 | vault/transcripts/Day-261 - The Minister of Confession.md
+- vault/synthesis/Day-262 - The Effect of Confession - Contemporary | 1 | vault/transcripts/Day-262 - The Effect of Confession.md
+- vault/synthesis/Day-263 - Making Satisfaction - Contemporary | 1 | vault/transcripts/Day-263 - Making Satisfaction.md
+- vault/synthesis/Day-264 - Vicarious Satisfaction - Contemporary | 1 | vault/transcripts/Day-264 - Vicarious Satisfaction.md
+- vault/synthesis/Day-265 - The Means of Satisfaction - Contemporary | 1 | vault/transcripts/Day-265 - The Means of Satisfaction.md
+- vault/synthesis/Day-266 - Keys of the Kingdom - Contemporary | 1 | vault/transcripts/Day-266 - Keys of the Kingdom.md
+- vault/synthesis/Day-267 - Minister of the Keys - Contemporary | 1 | vault/transcripts/Day-267 - Minister of the Keys.md
+- vault/synthesis/Day-268 - Excommunication - Contemporary | 1 | vault/transcripts/Day-268 - Excommunication.md
+- vault/synthesis/Day-269 - Absolution of Excommunication - Contemporary | 1 | vault/transcripts/Day-269 - Absolution of Excommunication.md
+- vault/synthesis/Day-270 - Indulgences - Contemporary | 1 | vault/transcripts/Day-270 - Indulgences.md
+- vault/synthesis/Day-271 - Public Penance - Contemporary | 1 | vault/transcripts/Day-271 - Public Penance.md
+- vault/synthesis/Day-272 - Extreme Unction - Contemporary | 1 | vault/transcripts/Day-272 - Extreme Unction.md
+- vault/synthesis/Day-273 - Anointing Members - Contemporary | 1 | vault/transcripts/Day-273 - Anointing Members.md
+- vault/synthesis/Day-274 - Holy Orders - Contemporary | 1 | vault/transcripts/Day-274 - Holy Orders.md
+- vault/synthesis/Day-275 - Ordaining the Unworthy - Contemporary | 1 | vault/transcripts/Day-275 - Ordaining the Unworthy.md
+- vault/synthesis/Day-276 - Distinction of Orders - Contemporary | 1 | vault/transcripts/Day-276 - Distinction of Orders.md
+- vault/synthesis/Day-277 - Vestments & Impediments - Contemporary | 1 | vault/transcripts/Day-277 - Vestments & Impediments.md
+- vault/synthesis/Day-278 - Marriage - Contemporary | 1 | vault/transcripts/Day-278 - Marriage.md
+- vault/synthesis/Day-279 - Defining Marriage - Contemporary | 1 | vault/transcripts/Day-279 - Defining Marriage.md
+- vault/synthesis/Day-280 - Marriage Consent - Contemporary | 1 | vault/transcripts/Day-280 - Marriage Consent.md
+- vault/synthesis/Day-281 - Compulsory Consent - Contemporary | 1 | vault/transcripts/Day-281 - Compulsory Consent.md
+- vault/synthesis/Day-282 - Goods of Marriage - Contemporary | 1 | vault/transcripts/Day-282 - Goods of Marriage.md
+- vault/synthesis/Day-283 - Error & Slavery - Contemporary | 1 | vault/transcripts/Day-283 - Error & Slavery.md
+- vault/synthesis/Day-284 - Impediment of Consanguinity - Contemporary | 1 | vault/transcripts/Day-284 - Impediment of Consanguinity.md
+- vault/synthesis/Day-285 - Affinity - Contemporary | 1 | vault/transcripts/Day-285 - Affinity.md
+- vault/synthesis/Day-286 - More Impediments - Contemporary | 1 | vault/transcripts/Day-286 - More Impediments.md
+- vault/synthesis/Day-287 - Marrying Non-Believers - Contemporary | 1 | vault/transcripts/Day-287 - Marrying Non-Believers.md
+- vault/synthesis/Day-288 - Adulterous Consequences - Contemporary | 1 | vault/transcripts/Day-288 - Adulterous Consequences.md
+- vault/synthesis/Day-289 - The Marriage Debt - Contemporary | 1 | vault/transcripts/Day-289 - The Marriage Debt.md
+- vault/synthesis/Day-290 - Polygamy & Bigamy - Contemporary | 1 | vault/transcripts/Day-290 - Polygamy & Bigamy.md
+- vault/synthesis/Day-291 - Bill of Divorce - Contemporary | 1 | vault/transcripts/Day-291 - Bill of Divorce.md
+- vault/synthesis/Day-292 - Limbo of Fathers - Contemporary | 1 | vault/transcripts/Day-292 - Limbo of Fathers.md
+- vault/synthesis/Day-293 - Suffrages - Contemporary | 1 | vault/transcripts/Day-293 - Suffrages.md
+- vault/synthesis/Day-294 - Final Conflagration - Contemporary | 1 | vault/transcripts/Day-294 - Final Conflagration.md
+- vault/synthesis/Day-295 - The Necessity of Resurrection - Contemporary | 1 | vault/transcripts/Day-295 - The Necessity of Resurrection.md
+- vault/synthesis/Day-296 - Time of Resurrection - Contemporary | 1 | vault/transcripts/Day-296 - Time of Resurrection.md
+- vault/synthesis/Day-297 - Returning Flesh - Contemporary | 1 | vault/transcripts/Day-297 - Returning Flesh.md
+- vault/synthesis/Day-298 - Heavenly Senses - Contemporary | 1 | vault/transcripts/Day-298 - Heavenly Senses.md
+- vault/synthesis/Day-299 - Glorious Subtlety - Contemporary | 1 | vault/transcripts/Day-299 - Glorious Subtlety.md
+- vault/synthesis/Day-300 - Clarity and Invisibility - Contemporary | 1 | vault/transcripts/Day-300 - Clarity and Invisibility.md
+- vault/synthesis/Day-301 - General Judgement - Contemporary | 1 | vault/transcripts/Day-301 - General Judgement.md
+- vault/synthesis/Day-302 - General Judges - Contemporary | 1 | vault/transcripts/Day-302 - General Judges.md
+- vault/synthesis/Day-303 - New Heavens and Earth - Contemporary | 1 | vault/transcripts/Day-303 - New Heavens and Earth.md
+- vault/synthesis/Day-304 - Vision of the Damned - Contemporary | 1 | vault/transcripts/Day-304 - Vision of the Damned.md
+- vault/synthesis/Day-305 - Heavenly Crowns - Contemporary | 1 | vault/transcripts/Day-305 - Heavenly Crowns.md
+- vault/synthesis/Day-306 - A Hellish Abode - Contemporary | 1 | vault/transcripts/Day-306 - A Hellish Abode.md
+- vault/synthesis/Day-307 - You Made It - Contemporary | 1 | vault/transcripts/Day-307 - You Made It.md
+- vault/transcripts/Day-001 - Introduction | 1 | vault/synthesis/Day-001 - Introduction - Contemporary.md
+- vault/transcripts/Day-002 - Does God Exist | 1 | vault/synthesis/Day-002 - Does God Exist - Contemporary.md
+- vault/transcripts/Day-003 - Gods Simplicity and Perfection | 1 | vault/synthesis/Day-003 - Gods Simplicity and Perfection - Contemporary.md
+- vault/transcripts/Day-004 - Is God Good | 1 | vault/synthesis/Day-004 - Is God Good - Contemporary.md
+- vault/transcripts/Day-005 - Is God in Everything | 1 | vault/synthesis/Day-005 - Is God in Everything - Contemporary.md
+- vault/transcripts/Day-006 - Does God Change | 1 | vault/synthesis/Day-006 - Does God Change - Contemporary.md
+- vault/transcripts/Day-007 - The Beatific Vision | 1 | vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md
+- vault/transcripts/Day-008 - Does God Have a Name | 1 | vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md
+- vault/transcripts/Day-009 - What is Truth | 1 | vault/synthesis/Day-009 - What is Truth - Contemporary.md
+- vault/transcripts/Day-010 - What is Life | 1 | vault/synthesis/Day-010 - What is Life - Contemporary.md
+- vault/transcripts/Day-011 - God's Love | 1 | vault/synthesis/Day-011 - God's Love - Contemporary.md
+- vault/transcripts/Day-012 - The Certainty of God's Providence | 1 | vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md
+- vault/transcripts/Day-013 - Predestination | 1 | vault/synthesis/Day-013 - Predestination - Contemporary.md
+- vault/transcripts/Day-014 - Is God Happy | 1 | vault/synthesis/Day-014 - Is God Happy - Contemporary.md
+- vault/transcripts/Day-015 - The Trinity | 1 | vault/synthesis/Day-015 - The Trinity - Contemporary.md
+- vault/transcripts/Day-016 - Is God Personal | 1 | vault/synthesis/Day-016 - Is God Personal - Contemporary.md
+- vault/transcripts/Day-017 - Divine Notions | 1 | vault/synthesis/Day-017 - Divine Notions - Contemporary.md
+- vault/transcripts/Day-018 - Father and Son | 1 | vault/synthesis/Day-018 - Father and Son - Contemporary.md
+- vault/transcripts/Day-019 - Vindicating the Filioque | 1 | vault/synthesis/Day-019 - Vindicating the Filioque - Contemporary.md
+- vault/transcripts/Day-020 - The Gift of God | 1 | vault/synthesis/Day-020 - The Gift of God - Contemporary.md
+- vault/transcripts/Day-021 - Trinitarian Appropriations | 1 | vault/synthesis/Day-021 - Trinitarian Appropriations - Contemporary.md
+- vault/transcripts/Day-022 - The Father in the Son | 1 | vault/synthesis/Day-022 - The Father in the Son - Contemporary.md
+- vault/transcripts/Day-023 - Prime Matter and Quantum Physics | 1 | vault/synthesis/Day-023 - Prime Matter and Quantum Physics - Contemporary.md
+- vault/transcripts/Day-024 - The Creator and the Creation | 1 | vault/synthesis/Day-024 - The Creator and the Creation - Contemporary.md
+- vault/transcripts/Day-025 - The Nature of Evil | 1 | vault/synthesis/Day-025 - The Nature of Evil - Contemporary.md
+- vault/transcripts/Day-026 - The Angels | 1 | vault/synthesis/Day-026 - The Angels - Contemporary.md
+- vault/transcripts/Day-027 - Angelic Bodies | 1 | vault/synthesis/Day-027 - Angelic Bodies - Contemporary.md
+- vault/transcripts/Day-028 - Quantum Motion and Angelic Knowledge | 1 | vault/synthesis/Day-028 - Quantum Motion and Angelic Knowledge - Contemporary.md
+- vault/transcripts/Day-029 - Smarter Angels | 1 | vault/synthesis/Day-029 - Smarter Angels - Contemporary.md
+- vault/transcripts/Day-030 - Secret Thoughts | 1 | vault/synthesis/Day-030 - Secret Thoughts - Contemporary.md
+- vault/transcripts/Day-031 - Love and Choice | 1 | vault/synthesis/Day-031 - Love and Choice - Contemporary.md
+- vault/transcripts/Day-032 - Heavenly Freedom | 1 | vault/synthesis/Day-032 - Heavenly Freedom - Contemporary.md
+- vault/transcripts/Day-033 - Fallen Angel | 1 | vault/synthesis/Day-033 - Fallen Angel - Contemporary.md
+- vault/transcripts/Day-034 - Formless Matter | 1 | vault/synthesis/Day-034 - Formless Matter - Contemporary.md
+- vault/transcripts/Day-035 - Genesis | 1 | vault/synthesis/Day-035 - Genesis - Contemporary.md
+- vault/transcripts/Day-036 - The Third and Fourth Day | 1 | vault/synthesis/Day-036 - The Third and Fourth Day - Contemporary.md
+- vault/transcripts/Day-037 - The Fifth and Sixth Day | 1 | vault/synthesis/Day-037 - The Fifth and Sixth Day - Contemporary.md
+- vault/transcripts/Day-038 - Evolution | 1 | vault/synthesis/Day-038 - Evolution - Contemporary.md
+- vault/transcripts/Day-039 - The Soul | 1 | vault/synthesis/Day-039 - The Soul - Contemporary.md
+- vault/transcripts/Day-040 - Mans Faculties | 1 | vault/synthesis/Day-040 - Mans Faculties - Contemporary.md
+- vault/transcripts/Day-041 - Understanding and Conscience | 1 | vault/synthesis/Day-041 - Understanding and Conscience - Contemporary.md
+- vault/transcripts/Day-042 - Will and Happiness | 1 | vault/synthesis/Day-042 - Will and Happiness - Contemporary.md
+- vault/transcripts/Day-043 - Free-will and Phantasm | 1 | vault/synthesis/Day-043 - Free-will and Phantasm - Contemporary.md
+- vault/transcripts/Day-044 - Epistemological Realism | 1 | vault/synthesis/Day-044 - Epistemological Realism - Contemporary.md
+- vault/transcripts/Day-045 - Self-Understanding | 1 | vault/synthesis/Day-045 - Self-Understanding - Contemporary.md
+- vault/transcripts/Day-046 - Knowledge After Death | 1 | vault/synthesis/Day-046 - Knowledge After Death - Contemporary.md
+- vault/transcripts/Day-047 - Man and Woman | 1 | vault/synthesis/Day-047 - Man and Woman - Contemporary.md
+- vault/transcripts/Day-048 - The Image of God | 1 | vault/synthesis/Day-048 - The Image of God - Contemporary.md
+- vault/transcripts/Day-049 - Created in Grace | 1 | vault/synthesis/Day-049 - Created in Grace - Contemporary.md
+- vault/transcripts/Day-050 - The Tree of Life | 1 | vault/synthesis/Day-050 - The Tree of Life - Contemporary.md
+- vault/transcripts/Day-051 - Innocent Generations | 1 | vault/synthesis/Day-051 - Innocent Generations - Contemporary.md
+- vault/transcripts/Day-052 - Adam's Garden | 1 | vault/synthesis/Day-052 - Adam's Garden - Contemporary.md
+- vault/transcripts/Day-053 - The Divine Governance | 1 | vault/synthesis/Day-053 - The Divine Governance - Contemporary.md
+- vault/transcripts/Day-054 - Angelic Instruction | 1 | vault/synthesis/Day-054 - Angelic Instruction - Contemporary.md
+- vault/transcripts/Day-055 - Angelic Hierarchy | 1 | vault/synthesis/Day-055 - Angelic Hierarchy - Contemporary.md
+- vault/transcripts/Day-056 - The Order of Demons | 1 | vault/synthesis/Day-056 - The Order of Demons - Contemporary.md
+- vault/transcripts/Day-057 - Angels and Men | 1 | vault/synthesis/Day-057 - Angels and Men - Contemporary.md
+- vault/transcripts/Day-058 - The Assault of Demons | 1 | vault/synthesis/Day-058 - The Assault of Demons - Contemporary.md
+- vault/transcripts/Day-059 - Energy and Destiny | 1 | vault/synthesis/Day-059 - Energy and Destiny - Contemporary.md
+- vault/transcripts/Day-060 - Education | 1 | vault/synthesis/Day-060 - Education - Contemporary.md
+- vault/transcripts/Day-061 - Volume 2 | 1 | vault/synthesis/Day-061 - Volume 2 - Contemporary.md
+- vault/transcripts/Day-062 - The Pursuit of Happiness | 1 | vault/synthesis/Day-062 - The Pursuit of Happiness - Contemporary.md
+- vault/transcripts/Day-063 - Friendship in Heaven | 1 | vault/synthesis/Day-063 - Friendship in Heaven - Contemporary.md
+- vault/transcripts/Day-064 - Willful Ignorance | 1 | vault/synthesis/Day-064 - Willful Ignorance - Contemporary.md
+- vault/transcripts/Day-065 - Mindful Willing | 1 | vault/synthesis/Day-065 - Mindful Willing - Contemporary.md
+- vault/transcripts/Day-066 - Enjoyment | 1 | vault/synthesis/Day-066 - Enjoyment - Contemporary.md
+- vault/transcripts/Day-067 - Intention and Choice | 1 | vault/synthesis/Day-067 - Intention and Choice - Contemporary.md
+- vault/transcripts/Day-068 - Counsel and Consent | 1 | vault/synthesis/Day-068 - Counsel and Consent - Contemporary.md
+- vault/transcripts/Day-069 - Use and Command | 1 | vault/synthesis/Day-069 - Use and Command - Contemporary.md
+- vault/transcripts/Day-070 - Morality | 1 | vault/synthesis/Day-070 - Morality - Contemporary.md
+- vault/transcripts/Day-071 - Moral Consequences | 1 | vault/synthesis/Day-071 - Moral Consequences - Contemporary.md
+- vault/transcripts/Day-072 - Human Emotions | 1 | vault/synthesis/Day-072 - Human Emotions - Contemporary.md
+- vault/transcripts/Day-073 - Moral Passions | 1 | vault/synthesis/Day-073 - Moral Passions - Contemporary.md
+- vault/transcripts/Day-074 - Love | 1 | vault/synthesis/Day-074 - Love - Contemporary.md
+- vault/transcripts/Day-075 - Hatred | 1 | vault/synthesis/Day-075 - Hatred - Contemporary.md
+- vault/transcripts/Day-076 - Timeless Delight | 1 | vault/synthesis/Day-076 - Timeless Delight - Contemporary.md
+- vault/transcripts/Day-077 - Delightful Sorrow | 1 | vault/synthesis/Day-077 - Delightful Sorrow - Contemporary.md
+- vault/transcripts/Day-078 - Sorrow and Pain | 1 | vault/synthesis/Day-078 - Sorrow and Pain - Contemporary.md
+- vault/transcripts/Day-079 - Sorrowful Effects | 1 | vault/synthesis/Day-079 - Sorrowful Effects - Contemporary.md
+- vault/transcripts/Day-080 - Sorrowful Remedies | 1 | vault/synthesis/Day-080 - Sorrowful Remedies - Contemporary.md
+- vault/transcripts/Day-081 - Hope | 1 | vault/synthesis/Day-081 - Hope - Contemporary.md
+- vault/transcripts/Day-082 - Fear | 1 | vault/synthesis/Day-082 - Fear - Contemporary.md
+- vault/transcripts/Day-083 - Daring | 1 | vault/synthesis/Day-083 - Daring - Contemporary.md
+- vault/transcripts/Day-084 - Prideful Anger | 1 | vault/synthesis/Day-084 - Prideful Anger - Contemporary.md
+- vault/transcripts/Day-085 - Habits | 1 | vault/synthesis/Day-085 - Habits - Contemporary.md
+- vault/transcripts/Day-086 - The Subject of Habits | 1 | vault/synthesis/Day-086 - The Subject of Habits - Contemporary.md
+- vault/transcripts/Day-087 - Diminishing Habits | 1 | vault/synthesis/Day-087 - Diminishing Habits - Contemporary.md
+- vault/transcripts/Day-088 - Distinct Habits | 1 | vault/synthesis/Day-088 - Distinct Habits - Contemporary.md
+- vault/transcripts/Day-089 - Intellectual Virtues | 1 | vault/synthesis/Day-089 - Intellectual Virtues - Contemporary.md
+- vault/transcripts/Day-090 - Moral Virtue | 1 | vault/synthesis/Day-090 - Moral Virtue - Contemporary.md
+- vault/transcripts/Day-091 - Cardinal Virtue | 1 | vault/synthesis/Day-091 - Cardinal Virtue - Contemporary.md
+- vault/transcripts/Day-092 - Theological Virtue | 1 | vault/synthesis/Day-092 - Theological Virtue - Contemporary.md
+- vault/transcripts/Day-093 - The Virtuous Mean | 1 | vault/synthesis/Day-093 - The Virtuous Mean - Contemporary.md
+- vault/transcripts/Day-094 - Greatest Virtue | 1 | vault/synthesis/Day-094 - Greatest Virtue - Contemporary.md
+- vault/transcripts/Day-095 - The Beatitudes | 1 | vault/synthesis/Day-095 - The Beatitudes - Contemporary.md
+- vault/transcripts/Day-096 - Fruits and Vice | 1 | vault/synthesis/Day-096 - Fruits and Vice - Contemporary.md
+- vault/transcripts/Day-097 - Grave Sin | 1 | vault/synthesis/Day-097 - Grave Sin - Contemporary.md
+- vault/transcripts/Day-098 - Sinful Causes | 1 | vault/synthesis/Day-098 - Sinful Causes - Contemporary.md
+- vault/transcripts/Day-099 - Lusts of the World | 1 | vault/synthesis/Day-099 - Lusts of the World - Contemporary.md
+- vault/transcripts/Day-100 - Malice | 1 | vault/synthesis/Day-100 - Malice - Contemporary.md
+- vault/transcripts/Day-101 - Satan's Influence | 1 | vault/synthesis/Day-101 - Satan's Influence - Contemporary.md
+- vault/transcripts/Day-102 - Original Sin | 1 | vault/synthesis/Day-102 - Original Sin - Contemporary.md
+- vault/transcripts/Day-103 - Capital Vice | 1 | vault/synthesis/Day-103 - Capital Vice - Contemporary.md
+- vault/transcripts/Day-104 - Punishment | 1 | vault/synthesis/Day-104 - Punishment - Contemporary.md
+- vault/transcripts/Day-105 - Mortal and Venial Sin | 1 | vault/synthesis/Day-105 - Mortal and Venial Sin - Contemporary.md
+- vault/transcripts/Day-106 - Law | 1 | vault/synthesis/Day-106 - Law - Contemporary.md
+- vault/transcripts/Day-107 - Eternal Law | 1 | vault/synthesis/Day-107 - Eternal Law - Contemporary.md
+- vault/transcripts/Day-108 - Natural and Human Law | 1 | vault/synthesis/Day-108 - Natural and Human Law - Contemporary.md
+- vault/transcripts/Day-109 - Changing Laws | 1 | vault/synthesis/Day-109 - Changing Laws - Contemporary.md
+- vault/transcripts/Day-110 - The Old Law | 1 | vault/synthesis/Day-110 - The Old Law - Contemporary.md
+- vault/transcripts/Day-111 - The Ten Commandments | 1 | vault/synthesis/Day-111 - The Ten Commandments - Contemporary.md
+- vault/transcripts/Day-112 - Worship | 1 | vault/synthesis/Day-112 - Worship - Contemporary.md
+- vault/transcripts/Day-113 - The Republic | 1 | vault/synthesis/Day-113 - The Republic - Contemporary.md
+- vault/transcripts/Day-114 - A Burden Light | 1 | vault/synthesis/Day-114 - A Burden Light - Contemporary.md
+- vault/transcripts/Day-115 - Divine Assistance | 1 | vault/synthesis/Day-115 - Divine Assistance - Contemporary.md
+- vault/transcripts/Day-116 - Grace | 1 | vault/synthesis/Day-116 - Grace - Contemporary.md
+- vault/transcripts/Day-117 - Justification | 1 | vault/synthesis/Day-117 - Justification - Contemporary.md
+- vault/transcripts/Day-118 - Volume 3 | 1 | vault/synthesis/Day-118 - Volume 3 - Contemporary.md
+- vault/transcripts/Day-119 - The Act of Faith | 1 | vault/synthesis/Day-119 - The Act of Faith - Contemporary.md
+- vault/transcripts/Day-120 - Who Has Faith | 1 | vault/synthesis/Day-120 - Who Has Faith - Contemporary.md
+- vault/transcripts/Day-121 - Faith and Fear | 1 | vault/synthesis/Day-121 - Faith and Fear - Contemporary.md
+- vault/transcripts/Day-122 - Faith-Filled Gifts | 1 | vault/synthesis/Day-122 - Faith-Filled Gifts - Contemporary.md
+- vault/transcripts/Day-123 - Unbelievers | 1 | vault/synthesis/Day-123 - Unbelievers - Contemporary.md
+- vault/transcripts/Day-124 - Apostasy and Blasphemy | 1 | vault/synthesis/Day-124 - Apostasy and Blasphemy - Contemporary.md
+- vault/transcripts/Day-125 - The Sin Against the Holy Spirit | 1 | vault/synthesis/Day-125 - The Sin Against the Holy Spirit - Contemporary.md
+- vault/transcripts/Day-126 - Heavenly Hope | 1 | vault/synthesis/Day-126 - Heavenly Hope - Contemporary.md
+- vault/transcripts/Day-127 - The Gift of Fear | 1 | vault/synthesis/Day-127 - The Gift of Fear - Contemporary.md
+- vault/transcripts/Day-128 - Presumption | 1 | vault/synthesis/Day-128 - Presumption - Contemporary.md
+- vault/transcripts/Day-129 - Charity | 1 | vault/synthesis/Day-129 - Charity - Contemporary.md
+- vault/transcripts/Day-130 - What Charity Loves | 1 | vault/synthesis/Day-130 - What Charity Loves - Contemporary.md
+- vault/transcripts/Day-131 - The Order of Charity | 1 | vault/synthesis/Day-131 - The Order of Charity - Contemporary.md
+- vault/transcripts/Day-132 - Joy and Peace | 1 | vault/synthesis/Day-132 - Joy and Peace - Contemporary.md
+- vault/transcripts/Day-133 - Mercy and Beneficence | 1 | vault/synthesis/Day-133 - Mercy and Beneficence - Contemporary.md
+- vault/transcripts/Day-134 - Required Almsgiving | 1 | vault/synthesis/Day-134 - Required Almsgiving - Contemporary.md
+- vault/transcripts/Day-135 - Laziness | 1 | vault/synthesis/Day-135 - Laziness - Contemporary.md
+- vault/transcripts/Day-136 - Envy | 1 | vault/synthesis/Day-136 - Envy - Contemporary.md
+- vault/transcripts/Day-137 - Schism | 1 | vault/synthesis/Day-137 - Schism - Contemporary.md
+- vault/transcripts/Day-138 - Just War | 1 | vault/synthesis/Day-138 - Just War - Contemporary.md
+- vault/transcripts/Day-139 - Scandal | 1 | vault/synthesis/Day-139 - Scandal - Contemporary.md
+- vault/transcripts/Day-140 - Wisdom | 1 | vault/synthesis/Day-140 - Wisdom - Contemporary.md
+- vault/transcripts/Day-141 - Prudence | 1 | vault/synthesis/Day-141 - Prudence - Contemporary.md
+- vault/transcripts/Day-142 - Parts of Prudence | 1 | vault/synthesis/Day-142 - Parts of Prudence - Contemporary.md
+- vault/transcripts/Day-143 - Kinds of Prudence | 1 | vault/synthesis/Day-143 - Kinds of Prudence - Contemporary.md
+- vault/transcripts/Day-144 - Gifted Counsel | 1 | vault/synthesis/Day-144 - Gifted Counsel - Contemporary.md
+- vault/transcripts/Day-145 - False Prudence | 1 | vault/synthesis/Day-145 - False Prudence - Contemporary.md
+- vault/transcripts/Day-146 - Right and Just | 1 | vault/synthesis/Day-146 - Right and Just - Contemporary.md
+- vault/transcripts/Day-147 - General Justice | 1 | vault/synthesis/Day-147 - General Justice - Contemporary.md
+- vault/transcripts/Day-148 - Judgement | 1 | vault/synthesis/Day-148 - Judgement - Contemporary.md
+- vault/transcripts/Day-149 - Respect of Persons | 1 | vault/synthesis/Day-149 - Respect of Persons - Contemporary.md
+- vault/transcripts/Day-150 - The Death Penalty | 1 | vault/synthesis/Day-150 - The Death Penalty - Contemporary.md
+- vault/transcripts/Day-151 - Possessions | 1 | vault/synthesis/Day-151 - Possessions - Contemporary.md
+- vault/transcripts/Day-152 - Accusation | 1 | vault/synthesis/Day-152 - Accusation - Contemporary.md
+- vault/transcripts/Day-153 - Defending the Guilty | 1 | vault/synthesis/Day-153 - Defending the Guilty - Contemporary.md
+- vault/transcripts/Day-154 - Gossip | 1 | vault/synthesis/Day-154 - Gossip - Contemporary.md
+- vault/transcripts/Day-155 - Tale-Bearing and Derision | 1 | vault/synthesis/Day-155 - Tale-Bearing and Derision - Contemporary.md
+- vault/transcripts/Day-156 - Buying and Selling | 1 | vault/synthesis/Day-156 - Buying and Selling - Contemporary.md
+- vault/transcripts/Day-157 - Usury | 1 | vault/synthesis/Day-157 - Usury - Contemporary.md
+- vault/transcripts/Day-158 - Religion | 1 | vault/synthesis/Day-158 - Religion - Contemporary.md
+- vault/transcripts/Day-159 - The Our Father | 1 | vault/synthesis/Day-159 - The Our Father - Contemporary.md
+- vault/transcripts/Day-160 - Sacrifice | 1 | vault/synthesis/Day-160 - Sacrifice - Contemporary.md
+- vault/transcripts/Day-161 - Tithes | 1 | vault/synthesis/Day-161 - Tithes - Contemporary.md
+- vault/transcripts/Day-162 - Vows and Oaths | 1 | vault/synthesis/Day-162 - Vows and Oaths - Contemporary.md
+- vault/transcripts/Day-163 - Adjuration and Hymns | 1 | vault/synthesis/Day-163 - Adjuration and Hymns - Contemporary.md
+- vault/transcripts/Day-164 - Superstition | 1 | vault/synthesis/Day-164 - Superstition - Contemporary.md
+- vault/transcripts/Day-165 - Idolatry and Divination | 1 | vault/synthesis/Day-165 - Idolatry and Divination - Contemporary.md
+- vault/transcripts/Day-166 - Testing God | 1 | vault/synthesis/Day-166 - Testing God - Contemporary.md
+- vault/transcripts/Day-167 - Perjury and Sacrilege | 1 | vault/synthesis/Day-167 - Perjury and Sacrilege - Contemporary.md
+- vault/transcripts/Day-168 - Simony and Piety | 1 | vault/synthesis/Day-168 - Simony and Piety - Contemporary.md
+- vault/transcripts/Day-169 - Observance and Dulia | 1 | vault/synthesis/Day-169 - Observance and Dulia - Contemporary.md
+- vault/transcripts/Day-170 - Obedience | 1 | vault/synthesis/Day-170 - Obedience - Contemporary.md
+- vault/transcripts/Day-171 - Gratitude | 1 | vault/synthesis/Day-171 - Gratitude - Contemporary.md
+- vault/transcripts/Day-172 - Vengeance and Truthfulness | 1 | vault/synthesis/Day-172 - Vengeance and Truthfulness - Contemporary.md
+- vault/transcripts/Day-173 - Kinds of Lies | 1 | vault/synthesis/Day-173 - Kinds of Lies - Contemporary.md
+- vault/transcripts/Day-174 - Boasting | 1 | vault/synthesis/Day-174 - Boasting - Contemporary.md
+- vault/transcripts/Day-175 - Affability and Flattery | 1 | vault/synthesis/Day-175 - Affability and Flattery - Contemporary.md
+- vault/transcripts/Day-176 - Quarreling and Liberality | 1 | vault/synthesis/Day-176 - Quarreling and Liberality - Contemporary.md
+- vault/transcripts/Day-177 - Covetousness | 1 | vault/synthesis/Day-177 - Covetousness - Contemporary.md
+- vault/transcripts/Day-178 - Equity | 1 | vault/synthesis/Day-178 - Equity - Contemporary.md
+- vault/transcripts/Day-179 - Fortitude | 1 | vault/synthesis/Day-179 - Fortitude - Contemporary.md
+- vault/transcripts/Day-180 - Timidity | 1 | vault/synthesis/Day-180 - Timidity - Contemporary.md
+- vault/transcripts/Day-181 - Fearlessness | 1 | vault/synthesis/Day-181 - Fearlessness - Contemporary.md
+- vault/transcripts/Day-182 - Magnanimity | 1 | vault/synthesis/Day-182 - Magnanimity - Contemporary.md
+- vault/transcripts/Day-183 - Ambition | 1 | vault/synthesis/Day-183 - Ambition - Contemporary.md
+- vault/transcripts/Day-184 - Magnificence | 1 | vault/synthesis/Day-184 - Magnificence - Contemporary.md
+- vault/transcripts/Day-185 - Vainglory | 1 | vault/synthesis/Day-185 - Vainglory - Contemporary.md
+- vault/transcripts/Day-186 - Patience and Perseverance | 1 | vault/synthesis/Day-186 - Patience and Perseverance - Contemporary.md
+- vault/transcripts/Day-187 - Softness | 1 | vault/synthesis/Day-187 - Softness - Contemporary.md
+- vault/transcripts/Day-188 - Temperance | 1 | vault/synthesis/Day-188 - Temperance - Contemporary.md
+- vault/transcripts/Day-189 - Childish Vice | 1 | vault/synthesis/Day-189 - Childish Vice - Contemporary.md
+- vault/transcripts/Day-190 - Beauty and Disgrace | 1 | vault/synthesis/Day-190 - Beauty and Disgrace - Contemporary.md
+- vault/transcripts/Day-191 - Fasting | 1 | vault/synthesis/Day-191 - Fasting - Contemporary.md
+- vault/transcripts/Day-192 - Gluttony and Sobriety | 1 | vault/synthesis/Day-192 - Gluttony and Sobriety - Contemporary.md
+- vault/transcripts/Day-193 - Drunkenness | 1 | vault/synthesis/Day-193 - Drunkenness - Contemporary.md
+- vault/transcripts/Day-194 - Virginity vs Marriage | 1 | vault/synthesis/Day-194 - Virginity vs Marriage - Contemporary.md
+- vault/transcripts/Day-195 - Kinds of Lust | 1 | vault/synthesis/Day-195 - Kinds of Lust - Contemporary.md
+- vault/transcripts/Day-196 - Meekness | 1 | vault/synthesis/Day-196 - Meekness - Contemporary.md
+- vault/transcripts/Day-197 - Is Anger Sinful | 1 | vault/synthesis/Day-197 - Is Anger Sinful - Contemporary.md
+- vault/transcripts/Day-198 - Modesty and Humility | 1 | vault/synthesis/Day-198 - Modesty and Humility - Contemporary.md
+- vault/transcripts/Day-199 - Man's Downfall | 1 | vault/synthesis/Day-199 - Man's Downfall - Contemporary.md
+- vault/transcripts/Day-200 - Paradise Lost | 1 | vault/synthesis/Day-200 - Paradise Lost - Contemporary.md
+- vault/transcripts/Day-201 - The Vice of Curiosity | 1 | vault/synthesis/Day-201 - The Vice of Curiosity - Contemporary.md
+- vault/transcripts/Day-202 - Playfulness and Apparel | 1 | vault/synthesis/Day-202 - Playfulness and Apparel - Contemporary.md
+- vault/transcripts/Day-203 - Prophetic Certainty | 1 | vault/synthesis/Day-203 - Prophetic Certainty - Contemporary.md
+- vault/transcripts/Day-204 - Prophetic Causes | 1 | vault/synthesis/Day-204 - Prophetic Causes - Contemporary.md
+- vault/transcripts/Day-205 - Kinds of Prophecy | 1 | vault/synthesis/Day-205 - Kinds of Prophecy - Contemporary.md
+- vault/transcripts/Day-206 - The Gift of Tongues and Words | 1 | vault/synthesis/Day-206 - The Gift of Tongues and Words - Contemporary.md
+- vault/transcripts/Day-207 - Miracles | 1 | vault/synthesis/Day-207 - Miracles - Contemporary.md
+- vault/transcripts/Day-208 - The Contemplative Life | 1 | vault/synthesis/Day-208 - The Contemplative Life - Contemporary.md
+- vault/transcripts/Day-209 - States of Life | 1 | vault/synthesis/Day-209 - States of Life - Contemporary.md
+- vault/transcripts/Day-210 - Christian Perfection | 1 | vault/synthesis/Day-210 - Christian Perfection - Contemporary.md
+- vault/transcripts/Day-211 - Better Religious Orders | 1 | vault/synthesis/Day-211 - Better Religious Orders - Contemporary.md
+- vault/transcripts/Day-212 - The Religious State | 1 | vault/synthesis/Day-212 - The Religious State - Contemporary.md
+- vault/transcripts/Day-213 - Volume 4 | 1 | vault/synthesis/Day-213 - Volume 4 - Contemporary.md
+- vault/transcripts/Day-214 - The Mode of Union | 1 | vault/synthesis/Day-214 - The Mode of Union - Contemporary.md
+- vault/transcripts/Day-215 - The Order of Assumption | 1 | vault/synthesis/Day-215 - The Order of Assumption - Contemporary.md
+- vault/transcripts/Day-216 - Christ as Head | 1 | vault/synthesis/Day-216 - Christ as Head - Contemporary.md
+- vault/transcripts/Day-217 - Christ's Knowledge | 1 | vault/synthesis/Day-217 - Christ's Knowledge - Contemporary.md
+- vault/transcripts/Day-218 - Christ's Infused Knowledge | 1 | vault/synthesis/Day-218 - Christ's Infused Knowledge - Contemporary.md
+- vault/transcripts/Day-219 - Christ's Passible Body | 1 | vault/synthesis/Day-219 - Christ's Passible Body - Contemporary.md
+- vault/transcripts/Day-220 - Communication of Idioms | 1 | vault/synthesis/Day-220 - Communication of Idioms - Contemporary.md
+- vault/transcripts/Day-221 - Christ's Wills | 1 | vault/synthesis/Day-221 - Christ's Wills - Contemporary.md
+- vault/transcripts/Day-222 - Unity of Operation | 1 | vault/synthesis/Day-222 - Unity of Operation - Contemporary.md
+- vault/transcripts/Day-223 - Christ's Prayer and Priesthood | 1 | vault/synthesis/Day-223 - Christ's Prayer and Priesthood - Contemporary.md
+- vault/transcripts/Day-224 - Adopted Sons | 1 | vault/synthesis/Day-224 - Adopted Sons - Contemporary.md
+- vault/transcripts/Day-225 - Honoring the Saints | 1 | vault/synthesis/Day-225 - Honoring the Saints - Contemporary.md
+- vault/transcripts/Day-226 - The Blessed Virgin Mary | 1 | vault/synthesis/Day-226 - The Blessed Virgin Mary - Contemporary.md
+- vault/transcripts/Day-227 - The Annunciation | 1 | vault/synthesis/Day-227 - The Annunciation - Contemporary.md
+- vault/transcripts/Day-228 - Christ's Ancestry | 1 | vault/synthesis/Day-228 - Christ's Ancestry - Contemporary.md
+- vault/transcripts/Day-229 - Christ's Conception | 1 | vault/synthesis/Day-229 - Christ's Conception - Contemporary.md
+- vault/transcripts/Day-230 - Christ's Nativity and Epiphany | 1 | vault/synthesis/Day-230 - Christ's Nativity and Epiphany - Contemporary.md
+- vault/transcripts/Day-231 - The Baptism of John | 1 | vault/synthesis/Day-231 - The Baptism of John - Contemporary.md
+- vault/transcripts/Day-232 - Christ's Baptism | 1 | vault/synthesis/Day-232 - Christ's Baptism - Contemporary.md
+- vault/transcripts/Day-233 - Temptation and Teaching | 1 | vault/synthesis/Day-233 - Temptation and Teaching - Contemporary.md
+- vault/transcripts/Day-234 - Christ's Miracles | 1 | vault/synthesis/Day-234 - Christ's Miracles - Contemporary.md
+- vault/transcripts/Day-235 - Christ's Transfiguration and Passion | 1 | vault/synthesis/Day-235 - Christ's Transfiguration and Passion - Contemporary.md
+- vault/transcripts/Day-236 - Efficacy of the Passion | 1 | vault/synthesis/Day-236 - Efficacy of the Passion - Contemporary.md
+- vault/transcripts/Day-237 - Passion and Death | 1 | vault/synthesis/Day-237 - Passion and Death - Contemporary.md
+- vault/transcripts/Day-238 - Burial and Descent | 1 | vault/synthesis/Day-238 - Burial and Descent - Contemporary.md
+- vault/transcripts/Day-239 - Resurrection | 1 | vault/synthesis/Day-239 - Resurrection - Contemporary.md
+- vault/transcripts/Day-240 - Post-Resurrection | 1 | vault/synthesis/Day-240 - Post-Resurrection - Contemporary.md
+- vault/transcripts/Day-241 - Ascension | 1 | vault/synthesis/Day-241 - Ascension - Contemporary.md
+- vault/transcripts/Day-242 - Judgement & Sacrament | 1 | vault/synthesis/Day-242 - Judgement & Sacrament - Contemporary.md
+- vault/transcripts/Day-243 - Passion & Sacrament | 1 | vault/synthesis/Day-243 - Passion & Sacrament - Contemporary.md
+- vault/transcripts/Day-244 - Sacramental Character | 1 | vault/synthesis/Day-244 - Sacramental Character - Contemporary.md
+- vault/transcripts/Day-245 - Baptism by Blood | 1 | vault/synthesis/Day-245 - Baptism by Blood - Contemporary.md
+- vault/transcripts/Day-246 - Baptism & Salvation | 1 | vault/synthesis/Day-246 - Baptism & Salvation - Contemporary.md
+- vault/transcripts/Day-247 - Baptism & Circumcision | 1 | vault/synthesis/Day-247 - Baptism & Circumcision - Contemporary.md
+- vault/transcripts/Day-248 - Confirmation | 1 | vault/synthesis/Day-248 - Confirmation - Contemporary.md
+- vault/transcripts/Day-249 - The Eucharist | 1 | vault/synthesis/Day-249 - The Eucharist - Contemporary.md
+- vault/transcripts/Day-250 - Transubstantiation | 1 | vault/synthesis/Day-250 - Transubstantiation - Contemporary.md
+- vault/transcripts/Day-251 - Accidents Remaining | 1 | vault/synthesis/Day-251 - Accidents Remaining - Contemporary.md
+- vault/transcripts/Day-252 - Eucharistic Reception | 1 | vault/synthesis/Day-252 - Eucharistic Reception - Contemporary.md
+- vault/transcripts/Day-253 - Eucharistic Minister | 1 | vault/synthesis/Day-253 - Eucharistic Minister - Contemporary.md
+- vault/transcripts/Day-254 - The Sacrament of Penance | 1 | vault/synthesis/Day-254 - The Sacrament of Penance - Contemporary.md
+- vault/transcripts/Day-255 - Penance as a Virtue | 1 | vault/synthesis/Day-255 - Penance as a Virtue - Contemporary.md
+- vault/transcripts/Day-256 - Remitted Venial Sin | 1 | vault/synthesis/Day-256 - Remitted Venial Sin - Contemporary.md
+- vault/transcripts/Day-257 - Penitential Restoration | 1 | vault/synthesis/Day-257 - Penitential Restoration - Contemporary.md
+- vault/transcripts/Day-258 - The Supplement | 1 | vault/synthesis/Day-258 - The Supplement - Contemporary.md
+- vault/transcripts/Day-259 - Continual Contrition | 1 | vault/synthesis/Day-259 - Continual Contrition - Contemporary.md
+- vault/transcripts/Day-260 - Slight Contrition | 1 | vault/synthesis/Day-260 - Slight Contrition - Contemporary.md
+- vault/transcripts/Day-261 - The Minister of Confession | 1 | vault/synthesis/Day-261 - The Minister of Confession - Contemporary.md
+- vault/transcripts/Day-262 - The Effect of Confession | 1 | vault/synthesis/Day-262 - The Effect of Confession - Contemporary.md
+- vault/transcripts/Day-263 - Making Satisfaction | 1 | vault/synthesis/Day-263 - Making Satisfaction - Contemporary.md
+- vault/transcripts/Day-264 - Vicarious Satisfaction | 1 | vault/synthesis/Day-264 - Vicarious Satisfaction - Contemporary.md
+- vault/transcripts/Day-265 - The Means of Satisfaction | 1 | vault/synthesis/Day-265 - The Means of Satisfaction - Contemporary.md
+- vault/transcripts/Day-266 - Keys of the Kingdom | 1 | vault/synthesis/Day-266 - Keys of the Kingdom - Contemporary.md
+- vault/transcripts/Day-267 - Minister of the Keys | 1 | vault/synthesis/Day-267 - Minister of the Keys - Contemporary.md
+- vault/transcripts/Day-268 - Excommunication | 1 | vault/synthesis/Day-268 - Excommunication - Contemporary.md
+- vault/transcripts/Day-269 - Absolution of Excommunication | 1 | vault/synthesis/Day-269 - Absolution of Excommunication - Contemporary.md
+- vault/transcripts/Day-270 - Indulgences | 1 | vault/synthesis/Day-270 - Indulgences - Contemporary.md
+- vault/transcripts/Day-271 - Public Penance | 1 | vault/synthesis/Day-271 - Public Penance - Contemporary.md
+- vault/transcripts/Day-272 - Extreme Unction | 1 | vault/synthesis/Day-272 - Extreme Unction - Contemporary.md
+- vault/transcripts/Day-273 - Anointing Members | 1 | vault/synthesis/Day-273 - Anointing Members - Contemporary.md
+- vault/transcripts/Day-274 - Holy Orders | 1 | vault/synthesis/Day-274 - Holy Orders - Contemporary.md
+- vault/transcripts/Day-275 - Ordaining the Unworthy | 1 | vault/synthesis/Day-275 - Ordaining the Unworthy - Contemporary.md
+- vault/transcripts/Day-276 - Distinction of Orders | 1 | vault/synthesis/Day-276 - Distinction of Orders - Contemporary.md
+- vault/transcripts/Day-277 - Vestments & Impediments | 1 | vault/synthesis/Day-277 - Vestments & Impediments - Contemporary.md
+- vault/transcripts/Day-278 - Marriage | 1 | vault/synthesis/Day-278 - Marriage - Contemporary.md
+- vault/transcripts/Day-279 - Defining Marriage | 1 | vault/synthesis/Day-279 - Defining Marriage - Contemporary.md
+- vault/transcripts/Day-280 - Marriage Consent | 1 | vault/synthesis/Day-280 - Marriage Consent - Contemporary.md
+- vault/transcripts/Day-281 - Compulsory Consent | 1 | vault/synthesis/Day-281 - Compulsory Consent - Contemporary.md
+- vault/transcripts/Day-282 - Goods of Marriage | 1 | vault/synthesis/Day-282 - Goods of Marriage - Contemporary.md
+- vault/transcripts/Day-283 - Error & Slavery | 1 | vault/synthesis/Day-283 - Error & Slavery - Contemporary.md
+- vault/transcripts/Day-284 - Impediment of Consanguinity | 1 | vault/synthesis/Day-284 - Impediment of Consanguinity - Contemporary.md
+- vault/transcripts/Day-285 - Affinity | 1 | vault/synthesis/Day-285 - Affinity - Contemporary.md
+- vault/transcripts/Day-286 - More Impediments | 1 | vault/synthesis/Day-286 - More Impediments - Contemporary.md
+- vault/transcripts/Day-287 - Marrying Non-Believers | 1 | vault/synthesis/Day-287 - Marrying Non-Believers - Contemporary.md
+- vault/transcripts/Day-288 - Adulterous Consequences | 1 | vault/synthesis/Day-288 - Adulterous Consequences - Contemporary.md
+- vault/transcripts/Day-289 - The Marriage Debt | 1 | vault/synthesis/Day-289 - The Marriage Debt - Contemporary.md
+- vault/transcripts/Day-290 - Polygamy & Bigamy | 1 | vault/synthesis/Day-290 - Polygamy & Bigamy - Contemporary.md
+- vault/transcripts/Day-291 - Bill of Divorce | 1 | vault/synthesis/Day-291 - Bill of Divorce - Contemporary.md
+- vault/transcripts/Day-292 - Limbo of Fathers | 1 | vault/synthesis/Day-292 - Limbo of Fathers - Contemporary.md
+- vault/transcripts/Day-293 - Suffrages | 1 | vault/synthesis/Day-293 - Suffrages - Contemporary.md
+- vault/transcripts/Day-294 - Final Conflagration | 1 | vault/synthesis/Day-294 - Final Conflagration - Contemporary.md
+- vault/transcripts/Day-295 - The Necessity of Resurrection | 1 | vault/synthesis/Day-295 - The Necessity of Resurrection - Contemporary.md
+- vault/transcripts/Day-296 - Time of Resurrection | 1 | vault/synthesis/Day-296 - Time of Resurrection - Contemporary.md
+- vault/transcripts/Day-297 - Returning Flesh | 1 | vault/synthesis/Day-297 - Returning Flesh - Contemporary.md
+- vault/transcripts/Day-298 - Heavenly Senses | 1 | vault/synthesis/Day-298 - Heavenly Senses - Contemporary.md
+- vault/transcripts/Day-299 - Glorious Subtlety | 1 | vault/synthesis/Day-299 - Glorious Subtlety - Contemporary.md
+- vault/transcripts/Day-300 - Clarity and Invisibility | 1 | vault/synthesis/Day-300 - Clarity and Invisibility - Contemporary.md
+- vault/transcripts/Day-301 - General Judgement | 1 | vault/synthesis/Day-301 - General Judgement - Contemporary.md
+- vault/transcripts/Day-302 - General Judges | 1 | vault/synthesis/Day-302 - General Judges - Contemporary.md
+- vault/transcripts/Day-303 - New Heavens and Earth | 1 | vault/synthesis/Day-303 - New Heavens and Earth - Contemporary.md
+- vault/transcripts/Day-304 - Vision of the Damned | 1 | vault/synthesis/Day-304 - Vision of the Damned - Contemporary.md
+- vault/transcripts/Day-305 - Heavenly Crowns | 1 | vault/synthesis/Day-305 - Heavenly Crowns - Contemporary.md
+- vault/transcripts/Day-306 - A Hellish Abode | 1 | vault/synthesis/Day-306 - A Hellish Abode - Contemporary.md
+- vault/transcripts/Day-307 - You Made It | 1 | vault/synthesis/Day-307 - You Made It - Contemporary.md
+- 2026-04-08 | 0 | 
+- 2026-04-29 | 0 | 
+- ACPA_2026_final_draft | 0 | 
+- ACPA_2026_footnoted | 0 | 
+- ACPA_2026_footnoted_v3 | 0 | 
+- ACPA_2026_paper_draft | 0 | 
+- ACPA_2026_references | 0 | 
+- EXPLORER_V2 | 0 | 
+- EXPLORER_VISION | 0 | 
+- PETER/PETER_IDENTITY | 0 | 
+- PETER/PRS_ARCHITECTURE | 0 | 
+- PETER/SUMMA_CURRICULUM | 0 | 
+- PETER/THINKERS | 0 | 
+- PETER/VISUALIZATIONS | 0 | 
+- SUMMA_EXPLORER_IMPROVEMENTS | 0 | 
+- agent_architecture_review | 0 | 
+- agents/14_architectural_history_agent | 0 | 
+- agents/16_deferred_action_monitor_agent | 0 | 
+- agents/20_loughran_agent | 0 | 
+- agents/openstory/HANDOFF_openstory_c2a2 | 0 | 
+- agents/openstory/HANDOFF_openstory_session2 | 0 | 
+- agents/openstory/HANDOFF_openstory_session3 | 0 | 
+- agents/openstory/HANDOFF_openstory_session4 | 0 | 
+- agents/openstory/HANDOFF_openstory_session5 | 0 | 
+- agents/openstory/HANDOFF_openstory_session6 | 0 | 
+- agents/openstory/REFRESH_STATUS | 0 | 
+- agents/openstory/openstory_c2a2_agent_map | 0 | 
+- architecture/00_broker | 0 | 
+- architecture/01_voice_dialogue | 0 | 
+- architecture/02_ambient_viz | 0 | 
+- architecture/03_probing_channel | 0 | 
+- architecture/04_perspective_lattice | 0 | 
+- architecture/05_whiteboard | 0 | 
+- architecture/06_generative_canvas | 0 | 
+- architecture/07_unsaid_edges | 0 | 
+- architecture/08_prepared_presentation | 0 | 
+- architecture/09_sensing | 0 | 
+- architecture/10_space_time_peeling | 0 | 
+- architecture/11_recursive_episode | 0 | 
+- architecture/12_outreach_automation | 0 | 
+- architecture/13_under_development_visualizer | 0 | 
+- architecture/14_honesty_layer | 0 | 
+- architecture/15_apprentice_mode | 0 | 
+- architecture/16_durable_memory | 0 | 
+- architecture/17_agent_developed_participant | 0 | 
+- architecture/18_portability_toolkit | 0 | 
+- architecture/19_optional_interoperability | 0 | 
+- architecture/2026-05-14_carpathi_wiki_paper | 0 | 
+- architecture/2026-05-14_comprehensive_overview_review | 0 | 
+- architecture/2026-05-14_pathways_18-25_review | 0 | 
+- architecture/20_institutional_scale | 0 | 
+- architecture/21_departmental_integration | 0 | 
+- architecture/22_individual_second_brain | 0 | 
+- architecture/23_branching_counterfactuals | 0 | 
+- architecture/24_meta_crafts_governance | 0 | 
+- architecture/25_meta_visualization_pathways | 0 | 
+- architecture/26_research_suggestions_per_thinker | 0 | 
+- architecture/27_universal_search_and_ask | 0 | 
+- architecture/28_participant_registration | 0 | 
+- architecture/29_agentic_metabolism | 0 | 
+- architecture/30_community_heartbeat | 0 | 
+- architecture/32_lateral_channels | 0 | 
+- architecture/33_active_inquiry | 0 | 
+- architecture/34_prs_displacement | 0 | 
+- architecture/35_maturity_model | 0 | 
+- architecture/changelog/2026-04-09_changes | 0 | 
+- architecture/changelog/2026-04-10_changes | 0 | 
+- architecture/changelog/2026-04-13_changes | 0 | 
+- architecture/changelog/2026-04-14_changes | 0 | 
+- architecture/changelog/2026-04-15_changes | 0 | 
+- architecture/changelog/2026-04-16_changes | 0 | 
+- architecture/changelog/2026-04-17_changes | 0 | 
+- architecture/changelog/2026-04-18_changes | 0 | 
+- architecture/changelog/2026-04-20_changes | 0 | 
+- architecture/changelog/2026-04-21_changes | 0 | 
+- architecture/changelog/2026-04-26_changes | 0 | 
+- architecture/changelog/2026-04-27_changes | 0 | 
+- architecture/changelog/2026-05-05_changes | 0 | 
+- architecture/changelog/2026-05-08_changes | 0 | 
+- architecture/changelog/2026-05-09_changes | 0 | 
+- architecture/changelog/2026-05-10_changes | 0 | 
+- architecture/changelog/2026-05-12_changes | 0 | 
+- architecture/changelog/2026-05-13_changes | 0 | 
+- architecture/changelog/2026-05-14_changes | 0 | 
+- architecture/changelog/2026-05-17_changes | 0 | 
+- architecture/changelog/2026-05-18_changes | 0 | 
+- architecture/changelog/2026-05-19_changes | 0 | 
+- architecture/changelog/2026-05-20_changes | 0 | 
+- architecture/changelog/2026-05-22_changes | 0 | 
+- architecture/changelog/2026-05-23_changes | 0 | 
+- architecture/changelog/2026-05-24_changes | 0 | 
+- architecture/changelog/2026-05-26_changes | 0 | 
+- architecture/changelog/2026-05-27_changes | 0 | 
+- architecture/changelog/2026-05-28_changes | 0 | 
+- architecture/changelog/2026-05-29_changes | 0 | 
+- architecture/changelog/2026-05-30_changes | 0 | 
+- architecture/changelog/2026-05-31_changes | 0 | 
+- architecture/changelog/2026-06-02_changes | 0 | 
+- architecture/changelog/2026-06-03_changes | 0 | 
+- architecture/changelog/2026-06-04_changes | 0 | 
+- architecture/changelog/2026-06-05_changes | 0 | 
+- architecture/changelog/2026-06-06_changes | 0 | 
+- architecture/changelog/2026-06-07_changes | 0 | 
+- architecture/changelog/2026-06-08_changes | 0 | 
+- architecture/changelog/2026-06-09_changes | 0 | 
+- architecture/changelog/2026-06-10_changes | 0 | 
+- architecture/changelog/2026-06-11_changes | 0 | 
+- architecture/changelog/2026-06-14_changes | 0 | 
+- architecture/changelog/2026-06-15_changes | 0 | 
+- architecture/changelog/2026-06-16_changes | 0 | 
+- architecture/changelog/2026-06-17_changes | 0 | 
+- architecture/changelog/2026-06-18_changes | 0 | 
+- architecture/changelog/2026-06-22_changes | 0 | 
+- architecture/changelog/2026-06-23_changes | 0 | 
+- architecture/changelog/2026-06-24_changes | 0 | 
+- architecture/changelog/2026-06-25_changes | 0 | 
+- architecture/changelog/2026-06-26_changes | 0 | 
+- architecture/changelog/2026-06-27_changes | 0 | 
+- architecture/changelog/2026-06-28_changes | 0 | 
+- architecture/changelog/2026-06-29_changes | 0 | 
+- architecture/changelog/2026-06-30_changes | 0 | 
+- architecture/changelog/2026-07-01_changes | 0 | 
+- architecture/changelog/2026-07-02_changes | 0 | 
+- architecture/changelog/2026-07-05_changes | 0 | 
+- architecture/changelog/2026-07-06_changes | 0 | 
+- architecture/changelog/2026-07-07_changes | 0 | 
+- architecture/changelog/2026-07-08_changes | 0 | 
+- architecture/changelog/2026-07-09_changes | 0 | 
+- architecture/changelog/2026-07-10_changes | 0 | 
+- architecture/changelog/2026-07-11_changes | 0 | 
+- architecture/changelog/2026-07-12_changes | 0 | 
+- architecture/changelog/2026-07-13_changes | 0 | 
+- architecture/changelog/2026-07-15_changes | 0 | 
+- architecture/changelog/2026-07-16_changes | 0 | 
+- architecture/changelog/2026-07-17_changes | 0 | 
+- architecture/changelog/2026-07-19_changes | 0 | 
+- architecture/changelog/2026-07-20_changes | 0 | 
+- architecture/changelog/2026-07-21_changes | 0 | 
+- architecture/changelog/2026-07-22_changes | 0 | 
+- architecture/changelog/2026-07-23_changes | 0 | 
+- architecture/changelog/2026-07-24_changes | 0 | 
+- architecture/changelog/2026-07-25_changes | 0 | 
+- architecture/changelog/2026-07-26_changes | 0 | 
+- architecture/changelog/2026-07-27_changes | 0 | 
+- architecture/changelog/2026-07-28_changes | 0 | 
+- architecture/changelog/2026-07-29_changes | 0 | 
+- architecture/changelog/2026-07-30_changes | 0 | 
+- architecture/changelog/2026-07-31_changes | 0 | 
+- architecture/changelog/2026-08-01_changes | 0 | 
+- architecture/changelog/2026-08-02_changes | 0 | 
+- architecture/changelog/2026-08-03_changes | 0 | 
+- architecture/changelog/2026-08-04_changes | 0 | 
+- architecture/changelog/2026-08-05_changes | 0 | 
+- architecture/changelog/2026-08-06_changes | 0 | 
+- architecture/changelog/2026-08-08_changes | 0 | 
+- architecture/changelog/2026-08-09_changes | 0 | 
+- architecture/changelog/2026-08-10_changes | 0 | 
+- architecture/changelog/2026-08-11_changes | 0 | 
+- architecture/changelog/2026-08-12_changes | 0 | 
+- architecture/changelog/2026-08-13_changes | 0 | 
+- architecture/changelog/2026-08-14_changes | 0 | 
+- architecture/changelog/2026-08-15_changes | 0 | 
+- architecture/changelog/2026-08-16_changes | 0 | 
+- architecture/changelog/2026-08-17_changes | 0 | 
+- architecture/changelog/2026-08-18_changes | 0 | 
+- architecture/changelog/2026-08-23_changes | 0 | 
+- architecture/changelog/2026-08-24_changes | 0 | 
+- architecture/changelog/2026-08-25_changes | 0 | 
+- architecture/changelog/2026-08-27_changes | 0 | 
+- architecture/changelog/2026-08-30_changes | 0 | 
+- architecture/changelog/2026-09-04_changes | 0 | 
+- architecture/changelog/2026-09-05_changes | 0 | 
+- architecture/changelog/2026-09-07_changes | 0 | 
+- architecture/changelog/2026-09-08_changes | 0 | 
+- architecture/changelog/2026-09-09_changes | 0 | 
+- architecture/changelog/2026-09-10_changes | 0 | 
+- architecture/changelog/2026-09-11_changes | 0 | 
+- architecture/changelog/2026-09-12_changes | 0 | 
+- architecture/changelog/2026-09-13_changes | 0 | 
+- architecture/changelog/2026-09-14_changes | 0 | 
+- architecture/changelog/2026-09-16_changes | 0 | 
+- architecture/changelog/2026-09-17_changes | 0 | 
+- architecture/changelog/2026-09-18_changes | 0 | 
+- architecture/changelog/2026-09-19_changes | 0 | 
+- architecture/changelog/2026-09-20_changes | 0 | 
+- architecture/changelog/2026-09-21_changes | 0 | 
+- architecture/changelog/2026-09-22_changes | 0 | 
+- architecture/changelog/2026-09-23_changes | 0 | 
+- architecture/changelog/2026-09-25_changes | 0 | 
+- architecture/changelog/2026-09-26_changes | 0 | 
+- architecture/changelog/2026-09-27_changes | 0 | 
+- architecture/changelog/2026-09-28_changes | 0 | 
+- architecture/changelog/2026-09-29_changes | 0 | 
+- architecture/changelog/2026-09-30_changes | 0 | 
+- architecture/changelog/2026-10-01_changes | 0 | 
+- architecture/changelog/2026-10-02_changes | 0 | 
+- architecture/changelog/2026-10-03_changes | 0 | 
+- architecture/changelog/2026-10-04_changes | 0 | 
+- architecture/changelog/2026-10-05_changes | 0 | 
+- architecture/changelog/2026-10-06_changes | 0 | 
+- architecture/changelog/2026-10-07_changes | 0 | 
+- architecture/changelog/2026-10-08_changes | 0 | 
+- architecture/changelog/2026-10-09_changes | 0 | 
+- architecture/changelog/2026-10-10_changes | 0 | 
+- architecture/changelog/2026-10-11_changes | 0 | 
+- architecture/changelog/2026-10-12_changes | 0 | 
+- architecture/changelog/2026-10-13_changes | 0 | 
+- architecture/changelog/2026-10-14_changes | 0 | 
+- architecture/changelog/2026-10-15_changes | 0 | 
+- architecture/changelog/2026-10-16_changes | 0 | 
+- architecture/changelog/2026-10-17_changes | 0 | 
+- architecture/coil_falsifier_preregistration | 0 | 
+- architecture/community_explorer_redesign | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-14_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-17_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-18_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-20_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-26_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-04-27_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-05_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-09_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-10_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-11_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-12_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-13_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-14_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-15_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-18_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-19_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-20_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-21_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-22_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-23_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-24_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-25_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-27_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-28_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-29_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-30_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-05-31_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-01_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-02_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-03_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-04_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-05_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-06_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-07_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-08_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-09_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-10_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-11_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-12_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-15_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-17_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-18_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-19_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-20_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-21_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-22_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-23_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-24_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-25_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-26_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-27_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-28_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-29_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-06-30_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-01_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-02_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-03_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-05_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-06_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-07_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-08_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-09_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-10_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-11_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-12_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-13_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-19_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-20_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-21_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-22_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-23_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-24_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-25_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-26_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-27_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-28_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-29_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-30_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-07-31_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-01_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-02_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-03_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-04_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-05_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-06_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-07_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-08_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-09_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-10_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-11_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-12_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-13_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-15_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-17_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-18_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-23_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-24_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-25_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-26_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-27_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-28_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-29_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-30_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-08-31_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-01_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-02_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-03_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-04_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-05_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-06_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-07_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-08_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-10_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-11_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-12_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-13_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-14_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-15_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-17_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-18_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-19_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-20_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-21_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-22_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-23_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-24_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-25_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-26_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-27_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-28_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-29_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-09-30_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-01_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-02_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-03_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-04_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-05_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-06_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-07_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-08_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-09_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-10_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-11_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-12_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-13_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-14_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-15_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-16_chat_summary | 0 | 
+- architecture/daily_sync/chat_to_cowork/2026-10-17_chat_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-13_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-14_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-15_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-17_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-18_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-20_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-04-20_cowork_summary_am | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-05_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-08_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-09_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-10_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-11_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-12_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-13_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-14_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-15_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-16_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-18_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-19_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-20_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-22_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-23_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-24_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-25_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-26_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-27_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-28_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-29_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-30_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-05-31_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-02_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-03_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-04_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-05_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-06_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-07_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-09_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-10_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-11_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-12_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-14_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-15_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-16_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-17_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-18_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-19_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-20_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-21_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-22_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-23_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-24_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-25_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-26_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-27_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-28_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-29_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-06-30_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-01_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-02_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-05_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-06_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-07_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-08_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-09_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-10_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-11_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-12_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-16_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-17_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-19_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-20_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-21_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-22_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-23_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-24_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-25_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-26_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-27_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-28_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-29_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-30_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-07-31_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-01_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-02_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-03_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-04_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-05_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-06_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-07_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-08_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-09_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-10_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-11_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-12_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-13_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-14_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-15_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-16_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-17_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-18_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-23_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-24_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-25_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-27_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-28_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-29_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-30_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-08-31_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-01_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-02_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-03_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-04_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-05_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-07_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-08_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-09_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-10_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-11_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-12_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-13_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-14_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-15_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-16_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-17_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-18_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-19_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-20_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-21_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-22_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-23_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-24_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-25_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-27_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-28_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-29_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-09-30_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-01_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-02_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-03_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-04_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-05_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-06_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-07_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-08_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-09_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-09_cowork_summary_addendum | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-10_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-11_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-12_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-12_cowork_summary_morning | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-13_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-14_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-15_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-16_cowork_summary | 0 | 
+- architecture/daily_sync/cowork_to_chat/2026-10-17_cowork_summary | 0 | 
+- architecture/decisions | 0 | 
+- architecture/dispositions_2026-04-13 | 0 | 
+- architecture/dream_conversation_2026-05-13 | 0 | 
+- architecture/explorer_manifest_audit_2026-10-04 | 0 | 
+- architecture/explorer_tabs_complementarity | 0 | 
+- architecture/fact_inventory | 0 | 
+- architecture/for_lit_search | 0 | 
+- architecture/kuhnian_evidence_framework | 0 | 
+- architecture/lit_pipeline_conflict_2026-10-04 | 0 | 
+- architecture/lit_pipeline_conflict_2026-10-07 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-003_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-004_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-005_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-006_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-006_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-007_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-008_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-008_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-009_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-009_recheck-2026-07-05_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-010_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-011_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-012_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-013_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-014_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-015_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-015_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-016_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-016_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-017_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-017_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-018_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-019_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-019_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-020_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-020_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-021_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-021_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-022_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-022_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-023_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-023_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-024_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-024_recheck-2026-07-05_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-025_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-026_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-026_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-027_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-028_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-029_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-030_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-031_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-032_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-033_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-034_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-035_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-035_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-036_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-037_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-038_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-039_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-040_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-041_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-042_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-043_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-044_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-044_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-045_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-046_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-047_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-048_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-049_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-050_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-051_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-052_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-053_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-054_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-055_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-056_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-057_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-058_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-059_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-060_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-061_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-062_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-063_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-064_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-064_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-065_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-066_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-067_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-067_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-068_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-069_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-071_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-071_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-072_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-073_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-074_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-075_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-076_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-077_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-078_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-079_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-080_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-081_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-082_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-083_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-084_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-085_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-086_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-087_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-088_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-089_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-090_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-091_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-092_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-093_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-094_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-095_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-096_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-097_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-098_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-099_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-100_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-101_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-102_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-103_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-104_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-105_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1068_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1069_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-106_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1070_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1075_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1077_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-107_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1086_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-108_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1094_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1096_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1097_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-109_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1106_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1108_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-110_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1112_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1116_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1117_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-111_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1126_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1129_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-112_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1131_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1132_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1136_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-113_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1149_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-114_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1150_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1152_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1153_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1153_retrigger-2026-10-09_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-115_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1160_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1161_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1164_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1164_retrigger-2026-10-09_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1165_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1166_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-116_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1175_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1176_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1177_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1178_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-117_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-118_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1190_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1195_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-119_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1203_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1206_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-120_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1211_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1211_retrigger-2026-10-08_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1213_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1218_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1219_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-121_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1221_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1222_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1223_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1226_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1228_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1229_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-122_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1230_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1231_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1232_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1233_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1234_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1235_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1236_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1237_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-123_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1240_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1241_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1242_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1244_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1244_retrigger-2026-10-07_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1246_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-124_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1251_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1256_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1257_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1258_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-125_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1261_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1263_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-126_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1274_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1277_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-127_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1282_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1284_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1289_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-128_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1297_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-129_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1303_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1303_retrigger-2026-10-07_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1305_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1305_retrigger-2026-10-06_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1306_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1307_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1308_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1309_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-130_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1310_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1311_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1312_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1314_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1315_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1315_retrigger-2026-10-06_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-131_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1321_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1321_retrigger-2026-10-06_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-132_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1336_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-133_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-134_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-135_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1369_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-136_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-137_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-138_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-139_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-140_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-141_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-142_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-143_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-144_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1560_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1561_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1571_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-158_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1595_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1598_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-159_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1600_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1605_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-160_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-161_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1622_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1624_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1627_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-162_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-163_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-164_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-165_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-165_recheck-2026-07-05_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1660_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1663_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-166_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1670_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1675_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-167_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1682_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1682_retrigger-2026-10-12_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1684_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1684_retrigger-2026-10-12_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-168_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1690_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1692_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1693_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1693_retrigger-2026-10-17_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-169_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1700_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1702_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-170_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-171_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-172_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1730_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1733_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1739_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-173_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-174_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1757_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-175_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1766_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1769_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-176_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1778_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-177_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1780_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-178_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-1796_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-179_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-180_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-181_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-182_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-183_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-184_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-185_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-186_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-187_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-188_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-189_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-190_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-191_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-192_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-193_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-194_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-195_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-196_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-197_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-198_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-199_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-200_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-201_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-202_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-204_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-205_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-206_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-207_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-208_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-214_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-215_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-216_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-220_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-221_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-222_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-223_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-224_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-225_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-226_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-227_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-228_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-229_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-230_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-231_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-232_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-233_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-234_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-235_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-236_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-237_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-238_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-239_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-240_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-241_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-242_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-243_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-244_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-245_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-246_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-247_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-248_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-249_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-250_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-251_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-252_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-253_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-254_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-255_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-256_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-257_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-258_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-259_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-260_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-261_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-262_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-263_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-264_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-265_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-266_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-267_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-268_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-269_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-270_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-271_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-272_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-273_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-275_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-276_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-278_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-279_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-280_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-283_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-284_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-286_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-287_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-288_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-290_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-291_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-292_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-293_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-294_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-295_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-296_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-297_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-298_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-299_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-300_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-301_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-302_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-303_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-304_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-306_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-307_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-308_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-309_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-310_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-311_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-312_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-313_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-314_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-315_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-316_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-317_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-318_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-319_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-320_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-321_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-322_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-323_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-324_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-325_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-326_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-327_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-328_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-329_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-330_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-331_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-332_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-333_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-334_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-335_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-336_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-337_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-338_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-339_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-340_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-341_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-342_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-343_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-344_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-345_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-347_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-348_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-349_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-350_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-352_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-353_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-354_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-355_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-356_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-357_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-359_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-360_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-363_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-364_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-366_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-367_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-370_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-371_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-374_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-375_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-376_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-380_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-381_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-382_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-383_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-384_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-385_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-386_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-387_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-388_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-389_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-390_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-391_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-393_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-394_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-398_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-400_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-401_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-402_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-403_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-406_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-407_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-408_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-414_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-421_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-422_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-426_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-427_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-428_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-429_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-430_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-431_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-432_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-433_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-434_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-435_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-436_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-437_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-438_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-439_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-440_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-441_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-442_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-443_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-444_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-445_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-446_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-447_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-448_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-449_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-450_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-451_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-452_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-453_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-454_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-455_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-456_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-457_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-458_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-460_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-461_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-462_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-463_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-464_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-465_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-466_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-467_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-474_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-475_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-476_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-477_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-478_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-479_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-480_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-481_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-482_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-483_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-484_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-485_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-486_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-487_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-488_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-489_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-490_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-491_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-492_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-493_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-494_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-495_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-496_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-497_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-498_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-499_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-500_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-501_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-502_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-503_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-504_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-505_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-506_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-507_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-508_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-508_retrigger-2026-10-07_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-509_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-510_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-511_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-513_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-514_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-514_retrigger-2026-10-17_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-803_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-814_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-815_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-825_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-892_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-909_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-910_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-933_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-934_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-937_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-939_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-943_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-966_against | 0 | 
+- architecture/lit_search_results/against/ASSUMPTION-968_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-001_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-001_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-002_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-003_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-004_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-004_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-005_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-006_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-007_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-008_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-009_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-010_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-010_against_cycle7 | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-011_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-012_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-013_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-014_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-014_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-015_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-016_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-017_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-018_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-019_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-020_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-021_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-022_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-023_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-024_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-025_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-025_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-026_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-027_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-028_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-029_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-030_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-031_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-031_retrigger-2026-08-11_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-032_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-033_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-034_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-035_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-036_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-037_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-037_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-038_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-039_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-040_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-041_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-042_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-043_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-044_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-045_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-046_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-047_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-048_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-049_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-050_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-051_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-052_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-053_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-054_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-055_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-056_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-057_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-058_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-059_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-060_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-061_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-062_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-063_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-064_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-065_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-066_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-067_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-068_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-069_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-070_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-071_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-072_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-073_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-073_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-074_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-075_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-076_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-077_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-077_against_cycle5 | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-078_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-079_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-080_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-081_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-082_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-083_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-084_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-085_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-086_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-087_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-088_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-089_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-090_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-091_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-092_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-093_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-094_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-095_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-096_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-097_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-098_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-099_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-100_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1019_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-101_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1024_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-102_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1034_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-103_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1040_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1043_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1047_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1048_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-104_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1053_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1054_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1055_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1057_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-105_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1063_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1064_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-106_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1070_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1072_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1076_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1079_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-107_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1081_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1082_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1083_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1088_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1089_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-108_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1095_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1096_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1097_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1098_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1099_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1099_retrigger-2026-10-17_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-109_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1100_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1100_retrigger-2026-10-17_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1101_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1101_retrigger-2026-10-12_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1102_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1102_retrigger-2026-10-17_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1103_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1104_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1105_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1106_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1107_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1109_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-110_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1110_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1111_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1112_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1113_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1115_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1117_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1118_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1119_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-111_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1120_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1121_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1124_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1125_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1127_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1128_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-112_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1135_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1137_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1138_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-113_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1141_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1146_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1149_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-114_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1153_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-115_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-1166_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-116_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-117_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-118_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-119_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-120_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-121_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-122_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-123_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-124_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-125_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-126_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-127_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-128_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-129_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-130_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-131_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-132_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-133_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-134_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-135_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-136_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-137_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-138_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-139_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-140_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-141_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-142_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-143_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-144_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-145_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-146_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-147_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-148_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-149_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-150_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-151_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-152_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-153_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-154_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-155_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-156_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-157_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-158_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-159_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-160_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-161_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-162_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-163_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-164_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-165_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-166_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-167_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-168_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-169_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-170_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-171_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-172_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-173_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-174_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-175_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-176_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-177_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-178_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-179_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-180_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-181_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-182_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-183_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-184_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-185_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-186_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-187_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-188_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-189_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-190_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-191_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-192_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-193_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-194_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-195_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-196_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-197_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-198_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-199_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-200_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-201_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-202_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-203_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-204_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-205_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-206_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-207_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-208_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-209_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-210_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-211_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-212_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-213_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-214_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-215_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-216_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-217_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-218_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-219_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-220_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-221_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-222_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-223_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-224_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-225_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-226_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-227_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-228_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-229_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-230_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-231_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-232_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-233_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-234_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-235_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-236_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-237_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-238_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-239_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-240_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-241_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-242_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-243_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-244_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-245_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-246_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-247_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-248_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-249_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-250_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-251_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-252_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-253_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-254_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-255_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-256_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-257_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-258_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-259_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-260_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-261_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-262_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-263_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-264_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-265_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-266_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-267_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-268_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-269_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-270_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-271_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-272_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-273_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-274_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-275_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-276_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-277_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-278_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-279_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-280_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-281_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-282_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-283_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-284_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-285_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-286_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-287_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-288_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-289_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-290_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-291_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-292_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-293_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-294_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-295_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-296_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-297_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-298_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-299_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-300_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-301_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-302_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-303_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-304_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-305_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-306_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-307_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-308_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-309_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-310_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-311_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-312_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-313_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-314_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-315_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-316_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-317_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-318_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-319_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-320_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-321_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-322_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-323_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-324_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-325_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-326_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-327_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-328_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-329_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-330_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-331_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-332_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-333_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-334_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-335_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-336_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-337_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-338_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-339_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-340_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-341_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-342_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-343_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-344_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-345_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-346_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-347_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-348_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-349_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-350_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-351_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-352_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-353_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-354_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-355_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-356_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-357_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-358_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-359_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-360_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-361_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-362_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-363_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-364_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-365_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-366_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-367_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-368_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-369_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-370_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-371_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-372_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-373_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-374_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-375_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-376_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-377_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-378_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-379_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-380_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-381_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-382_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-383_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-384_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-385_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-386_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-387_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-388_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-389_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-390_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-391_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-392_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-393_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-394_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-395_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-396_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-397_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-398_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-399_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-400_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-401_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-402_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-403_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-404_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-405_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-406_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-407_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-408_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-409_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-410_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-411_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-412_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-413_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-414_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-415_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-416_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-417_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-418_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-419_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-420_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-421_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-422_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-423_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-424_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-425_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-426_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-427_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-428_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-429_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-430_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-431_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-432_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-433_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-434_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-435_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-436_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-437_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-439_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-440_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-442_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-444_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-445_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-446_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-447_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-448_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-449_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-450_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-451_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-452_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-453_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-454_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-455_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-456_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-457_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-458_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-459_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-460_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-461_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-462_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-463_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-464_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-465_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-466_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-467_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-468_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-469_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-470_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-471_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-472_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-473_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-474_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-475_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-476_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-477_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-478_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-479_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-480_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-481_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-482_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-483_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-484_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-485_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-486_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-487_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-488_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-489_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-490_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-491_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-492_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-493_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-500_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-501_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-502_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-503_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-504_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-505_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-506_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-507_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-508_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-509_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-510_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-511_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-512_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-513_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-514_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-515_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-516_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-517_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-518_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-519_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-520_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-521_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-522_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-523_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-524_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-525_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-526_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-527_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-528_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-529_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-530_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-531_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-532_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-533_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-534_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-535_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-536_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-537_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-538_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-539_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-539_retrigger-2026-10-09_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-540_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-541_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-542_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-543_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-544_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-545_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-546_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-547_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-548_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-551_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-553_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-554_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-555_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-556_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-557_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-558_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-559_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-560_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-561_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-562_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-563_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-565_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-566_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-567_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-568_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-569_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-570_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-572_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-573_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-575_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-576_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-577_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-586_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-588_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-591_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-592_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-600_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-601_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-602_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-604_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-609_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-611_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-615_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-616_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-617_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-618_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-621_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-623_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-624_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-628_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-631_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-632_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-635_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-636_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-639_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-643_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-645_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-646_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-647_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-648_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-651_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-653_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-654_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-655_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-656_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-657_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-660_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-661_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-664_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-666_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-668_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-669_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-673_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-675_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-676_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-677_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-678_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-685_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-689_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-690_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-691_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-695_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-696_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-701_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-703_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-707_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-710_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-712_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-713_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-714_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-716_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-717_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-718_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-720_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-721_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-722_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-724_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-725_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-726_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-727_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-728_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-729_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-731_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-733_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-734_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-735_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-736_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-747_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-748_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-751_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-753_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-756_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-757_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-758_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-762_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-763_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-764_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-765_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-766_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-767_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-768_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-769_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-770_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-771_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-772_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-773_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-775_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-776_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-777_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-778_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-779_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-780_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-781_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-782_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-783_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-784_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-785_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-786_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-787_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-788_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-789_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-790_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-791_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-792_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-793_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-794_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-795_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-796_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-797_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-798_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-799_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-800_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-801_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-802_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-803_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-804_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-806_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-807_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-808_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-809_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-810_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-811_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-812_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-813_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-814_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-815_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-816_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-817_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-818_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-819_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-820_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-824_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-827_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-829_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-830_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-831_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-833_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-834_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-837_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-838_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-839_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-841_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-842_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-844_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-844_retrigger-2026-10-09_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-845_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-846_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-847_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-848_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-849_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-851_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-855_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-858_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-859_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-860_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-861_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-863_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-863_retrigger-2026-10-09_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-865_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-865_retrigger-2026-10-08_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-866_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-867_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-867_retrigger-2026-10-08_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-871_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-872_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-875_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-876_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-876_retrigger-2026-10-08_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-877_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-878_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-879_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-880_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-881_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-882_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-883_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-884_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-885_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-886_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-887_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-888_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-888_retrigger-2026-10-08_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-889_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-890_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-891_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-892_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-893_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-894_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-895_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-896_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-896_retrigger-2026-10-07_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-897_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-897_retrigger-2026-10-07_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-900_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-901_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-902_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-903_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-904_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-905_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-906_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-908_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-909_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-910_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-914_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-915_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-918_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-921_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-925_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-928_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-931_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-933_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-935_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-939_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-940_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-941_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-944_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-947_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-948_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-949_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-950_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-951_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-952_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-953_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-954_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-955_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-955_retrigger-2026-10-06_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-956_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-959_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-960_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-968_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-972_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-974_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-975_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-979_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-979_retrigger-2026-10-06_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-982_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-983_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-983_retrigger-2026-10-12_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-988_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-989_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-991_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-991_retrigger-2026-10-12_against | 0 | 
+- architecture/lit_search_results/against/PRESUMPTION-999_against | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-01 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-02 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-03 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-04 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-12 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-13 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-14 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-15 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-16 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-17 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-18_G1 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-18_G2 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-18_G3 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-18_G4 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-19_G1 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-19_G2 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-19_G3 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-28_G1 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-28_G2 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-29_G4 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-31_A | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-31_B | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-31_C | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-31_D_scope-encoding_1235-1240-902_RECONSTRUCTED | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-31_E_stable-stratum-validation_1236-1237-897_RECONSTRUCTED | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-06_evaluator-separation_1263-914 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-07_declaration-substitutes-for-procedure_1274-918 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-08_unmeasured-control-credit_1277-1282-925-928 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-09_absence-read-as-all-clear_1289-931-933-935 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-10_no-second-look_1297-939-940-944 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-11_load-bearing-sources-unretrievable_1308-1310-1311 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-11_no-expiry-on-human-addressed-items_949-950-951-953-956 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-11_premise-propagation-not-routing_1305-1306-1307-1308-1309-1310-1311-1312-1314-1315 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-12_owed-measurements-never-executed_1321-959-960-968 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-13_pre-checks-assert-absent-covering-premises_972-974-975 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-14_pre-check-instrument-fails-silently_982-983-988-989-991-1369 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-16_named-instrument-never-run_414-439 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-21_named-instrument-never-run_RECURRENCE | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-23_same-model-independence | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-24_absent-principal-as-control | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-29_inherited-pass-status_1684-1088-1089 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-30_self-referential-verification | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-01_added-state-unmonitored | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-01_silence-read-as-health | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-02_silent-divergence-unchecked | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-02_uncoordinated-shared-artifacts_1103-1104-1105 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-03_action-as-outcome-proxy | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-04_surface-signal-as-verdict | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-06_doctrine-applied-at-wrong-grain_1305-979-1321-955-1315 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-07_deposit-without-drain | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-08_no-negative-state-in-status-vocabulary | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-09_shared-retrieval-convergence | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-12_silence-read-as-evidence | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-13_remedy-is-another-proxy_1778-1780-1124-1125-1127 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-14_independence-and-single-reviewer-audit_A1796-P1135-P1137-P1138 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-15_output-without-lineage-or-coverage_P1141-P1146 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-16_unverified-local-view-at-point-of-action_P1149-P1153 | 0 | 
+- architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-10-17_shared-fate-referent | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-003_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-004_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-005_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-006_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-006_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-007_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-008_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-008_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-009_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-009_recheck-2026-07-05_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-010_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-010_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-011_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-011_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-012_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-013_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-014_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-015_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-015_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-016_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-016_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-017_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-017_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-018_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-019_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-019_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-020_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-020_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-021_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-021_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-022_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-022_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-023_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-023_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-024_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-024_recheck-2026-07-05_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-025_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-026_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-026_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-027_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-028_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-029_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-030_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-031_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-032_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-033_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-034_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-035_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-035_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-036_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-037_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-038_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-039_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-040_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-041_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-042_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-043_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-044_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-044_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-045_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-046_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-047_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-048_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-049_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-050_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-051_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-052_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-053_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-054_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-055_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-056_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-057_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-058_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-059_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-060_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-061_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-062_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-063_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-064_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-064_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-065_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-066_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-067_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-067_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-068_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-069_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-071_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-071_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-072_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-073_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-074_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-075_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-076_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-077_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-078_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-079_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-080_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-081_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-082_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-083_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-084_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-085_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-086_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-087_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-088_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-089_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-090_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-091_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-092_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-093_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-094_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-095_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-096_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-097_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-098_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-099_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-100_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-101_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-102_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-103_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-104_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-105_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1068_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1069_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-106_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1070_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1075_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1077_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-107_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1086_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-108_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1094_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1096_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1097_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-109_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1106_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1108_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-110_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1112_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1116_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1117_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-111_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1126_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1129_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-112_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1131_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1132_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1136_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-113_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1149_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-114_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1150_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1152_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1153_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1153_retrigger-2026-10-09_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-115_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1160_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1161_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1164_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1164_retrigger-2026-10-09_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1165_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1166_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-116_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1175_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1176_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1177_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1178_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-117_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-118_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1190_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1195_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-119_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1203_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1206_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-120_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1211_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1211_for_cycle1 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1211_retrigger-2026-10-08_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1213_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1218_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1219_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-121_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1221_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1222_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1223_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1226_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1228_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1229_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-122_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1230_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1231_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1232_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1233_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1234_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1235_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1236_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1237_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-123_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1240_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1241_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1242_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1244_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1244_retrigger-2026-10-07_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1246_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-124_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1251_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1256_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1257_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1258_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-125_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1261_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1263_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-126_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1274_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1277_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-127_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1282_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1284_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1289_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-128_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1297_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-129_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1303_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1303_retrigger-2026-10-07_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1305_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1305_retrigger-2026-10-06_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1306_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1307_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1308_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1309_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-130_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1310_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1311_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1312_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1314_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1315_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1315_retrigger-2026-10-06_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-131_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1321_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1321_retrigger-2026-10-06_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-132_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1336_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-133_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-134_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-135_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1369_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-136_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-137_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-138_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-139_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-140_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-141_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-142_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-143_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-144_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1560_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1561_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1571_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-158_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1595_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1598_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-159_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1600_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1605_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-160_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-161_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1622_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1624_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1627_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-162_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-163_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-164_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-165_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-165_recheck-2026-07-05_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1660_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1663_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-166_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1670_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1675_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-167_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1682_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1682_retrigger-2026-10-12_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1684_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1684_retrigger-2026-10-12_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-168_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1690_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1692_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1693_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1693_retrigger-2026-10-17_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-169_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1700_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1702_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-170_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-171_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-172_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1730_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1733_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1739_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-173_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-174_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1757_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-175_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1766_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1769_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-176_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1778_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-177_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1780_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-178_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-1796_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-179_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-180_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-181_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-182_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-183_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-184_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-185_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-186_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-187_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-188_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-189_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-190_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-191_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-192_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-193_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-194_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-195_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-196_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-197_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-198_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-199_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-200_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-201_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-202_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-204_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-205_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-206_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-207_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-208_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-214_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-215_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-216_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-220_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-221_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-222_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-223_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-224_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-225_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-226_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-227_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-228_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-229_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-230_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-231_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-232_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-233_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-234_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-235_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-236_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-237_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-238_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-239_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-240_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-241_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-242_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-243_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-244_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-245_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-246_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-247_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-248_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-249_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-250_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-251_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-252_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-253_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-254_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-255_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-256_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-257_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-258_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-259_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-260_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-261_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-262_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-263_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-264_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-265_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-266_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-267_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-268_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-269_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-270_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-271_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-272_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-273_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-275_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-276_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-278_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-279_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-280_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-283_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-284_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-286_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-287_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-288_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-290_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-291_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-292_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-293_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-294_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-295_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-296_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-297_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-298_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-299_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-300_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-301_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-302_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-303_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-304_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-306_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-307_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-308_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-309_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-310_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-311_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-312_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-313_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-314_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-315_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-316_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-317_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-318_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-319_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-320_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-321_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-322_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-323_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-324_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-325_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-326_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-327_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-328_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-329_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-330_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-331_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-332_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-333_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-334_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-335_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-336_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-337_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-338_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-339_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-340_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-341_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-342_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-343_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-344_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-345_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-347_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-348_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-349_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-350_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-352_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-353_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-354_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-355_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-356_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-357_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-359_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-360_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-363_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-364_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-366_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-367_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-370_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-371_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-374_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-375_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-376_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-380_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-381_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-382_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-383_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-384_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-385_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-386_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-387_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-388_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-389_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-390_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-391_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-393_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-394_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-398_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-400_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-401_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-402_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-403_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-406_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-407_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-408_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-414_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-421_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-422_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-426_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-427_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-428_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-429_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-430_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-431_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-432_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-433_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-434_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-435_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-436_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-437_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-438_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-439_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-440_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-441_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-442_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-443_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-444_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-445_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-446_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-447_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-448_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-449_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-450_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-451_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-452_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-453_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-454_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-455_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-456_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-457_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-458_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-460_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-461_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-462_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-463_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-464_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-465_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-466_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-467_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-474_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-475_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-476_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-477_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-478_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-479_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-480_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-481_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-482_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-483_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-484_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-485_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-486_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-487_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-488_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-489_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-490_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-491_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-492_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-493_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-494_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-495_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-496_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-497_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-498_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-499_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-500_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-501_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-502_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-503_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-504_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-505_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-506_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-507_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-508_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-508_for_cycle1 | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-508_retrigger-2026-10-07_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-509_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-510_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-511_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-513_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-514_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-514_retrigger-2026-10-17_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-803_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-814_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-815_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-825_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-892_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-909_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-910_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-933_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-934_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-937_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-939_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-943_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-966_for | 0 | 
+- architecture/lit_search_results/for/ASSUMPTION-968_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-001_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-001_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-002_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-003_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-004_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-004_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-005_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-006_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-007_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-008_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-009_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-010_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-010_for_cycle7 | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-011_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-012_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-013_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-014_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-014_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-015_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-016_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-017_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-018_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-019_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-020_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-021_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-022_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-023_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-024_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-025_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-025_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-026_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-027_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-028_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-029_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-030_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-031_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-031_retrigger-2026-08-11_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-032_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-033_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-034_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-035_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-036_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-037_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-037_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-038_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-039_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-040_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-041_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-042_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-043_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-044_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-045_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-046_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-047_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-048_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-049_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-050_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-051_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-052_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-053_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-054_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-055_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-056_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-057_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-058_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-059_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-060_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-061_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-062_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-063_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-064_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-065_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-066_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-067_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-068_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-069_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-070_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-071_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-072_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-073_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-073_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-074_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-075_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-076_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-077_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-077_for_cycle5 | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-078_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-079_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-080_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-081_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-082_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-083_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-084_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-085_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-086_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-087_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-088_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-089_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-090_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-091_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-092_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-093_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-094_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-095_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-096_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-097_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-098_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-099_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-100_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1019_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-101_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1024_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-102_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1034_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-103_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1040_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1043_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1047_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1048_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-104_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1053_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1054_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1055_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1057_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-105_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1063_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1064_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-106_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1070_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1072_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1076_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1079_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-107_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1081_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1082_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1083_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1088_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1089_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-108_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1095_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1096_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1097_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1098_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1099_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1099_retrigger-2026-10-17_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-109_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1100_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1100_retrigger-2026-10-17_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1101_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1101_retrigger-2026-10-12_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1102_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1102_retrigger-2026-10-17_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1103_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1104_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1105_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1106_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1107_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1109_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-110_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1110_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1111_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1112_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1113_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1115_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1117_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1118_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1119_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-111_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1120_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1121_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1124_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1125_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1127_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1128_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-112_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1135_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1137_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1138_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-113_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1141_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1146_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1149_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-114_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1153_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-115_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-1166_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-116_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-117_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-118_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-119_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-120_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-121_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-122_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-123_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-124_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-125_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-126_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-127_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-128_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-129_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-130_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-131_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-132_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-133_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-134_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-135_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-136_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-137_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-138_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-139_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-140_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-141_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-142_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-143_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-144_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-145_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-146_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-147_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-148_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-149_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-150_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-151_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-152_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-153_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-154_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-155_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-156_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-157_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-158_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-159_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-160_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-161_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-162_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-163_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-164_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-165_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-166_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-167_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-168_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-169_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-170_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-171_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-172_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-173_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-174_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-175_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-176_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-177_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-178_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-179_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-180_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-181_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-182_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-183_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-184_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-185_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-186_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-187_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-188_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-189_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-190_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-191_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-192_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-193_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-194_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-195_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-196_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-197_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-198_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-199_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-200_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-201_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-202_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-203_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-204_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-205_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-206_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-207_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-208_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-209_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-210_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-211_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-212_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-213_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-214_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-215_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-216_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-217_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-218_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-219_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-220_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-221_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-222_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-223_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-224_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-225_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-226_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-227_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-228_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-229_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-230_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-231_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-232_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-233_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-234_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-235_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-236_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-237_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-238_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-239_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-240_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-241_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-242_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-243_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-244_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-245_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-246_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-247_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-248_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-249_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-250_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-251_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-252_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-253_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-254_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-255_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-256_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-257_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-258_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-259_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-260_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-261_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-262_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-263_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-264_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-265_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-266_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-267_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-268_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-269_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-270_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-271_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-272_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-273_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-274_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-275_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-276_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-277_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-278_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-279_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-280_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-281_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-282_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-283_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-284_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-285_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-286_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-287_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-288_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-289_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-290_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-291_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-292_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-293_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-294_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-295_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-296_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-297_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-298_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-299_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-300_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-301_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-302_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-303_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-304_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-305_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-306_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-307_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-308_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-309_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-310_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-311_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-312_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-313_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-314_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-315_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-316_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-317_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-318_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-319_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-320_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-321_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-322_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-323_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-324_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-325_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-326_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-327_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-328_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-329_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-330_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-331_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-332_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-333_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-334_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-335_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-336_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-337_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-338_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-339_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-340_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-341_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-342_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-343_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-344_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-345_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-346_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-347_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-348_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-349_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-350_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-351_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-352_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-353_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-354_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-355_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-356_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-357_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-358_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-359_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-360_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-361_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-362_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-363_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-364_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-365_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-366_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-367_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-368_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-369_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-370_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-371_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-372_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-373_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-374_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-375_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-376_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-377_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-378_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-379_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-380_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-381_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-382_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-383_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-384_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-385_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-386_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-387_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-388_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-389_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-390_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-391_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-392_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-393_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-394_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-395_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-396_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-397_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-398_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-399_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-400_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-401_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-402_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-403_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-404_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-405_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-406_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-407_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-408_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-409_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-410_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-411_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-412_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-413_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-414_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-415_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-416_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-417_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-418_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-419_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-420_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-421_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-422_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-423_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-424_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-425_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-426_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-427_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-428_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-429_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-430_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-431_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-432_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-433_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-434_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-435_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-436_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-437_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-439_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-440_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-442_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-444_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-445_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-446_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-447_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-448_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-449_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-450_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-451_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-452_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-453_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-454_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-455_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-456_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-457_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-458_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-459_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-460_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-461_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-462_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-463_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-464_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-465_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-466_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-467_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-468_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-469_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-470_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-471_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-472_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-473_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-474_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-475_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-476_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-477_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-478_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-479_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-480_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-481_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-482_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-483_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-484_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-485_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-486_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-487_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-488_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-489_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-490_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-491_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-492_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-493_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-500_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-501_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-502_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-503_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-504_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-505_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-506_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-507_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-508_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-509_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-510_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-511_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-512_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-513_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-514_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-515_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-516_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-517_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-518_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-519_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-520_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-521_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-522_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-523_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-524_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-525_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-526_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-527_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-528_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-529_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-530_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-531_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-532_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-533_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-534_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-535_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-536_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-537_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-538_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-539_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-539_retrigger-2026-10-09_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-540_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-541_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-542_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-543_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-544_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-545_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-546_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-547_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-548_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-551_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-553_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-554_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-555_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-556_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-557_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-558_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-559_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-560_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-561_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-562_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-563_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-565_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-566_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-567_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-568_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-569_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-570_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-572_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-573_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-575_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-576_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-577_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-586_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-588_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-591_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-592_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-600_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-601_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-602_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-604_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-609_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-611_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-615_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-616_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-617_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-618_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-621_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-623_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-624_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-628_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-631_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-632_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-635_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-636_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-639_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-643_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-645_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-646_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-647_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-648_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-651_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-653_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-654_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-655_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-656_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-657_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-660_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-661_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-664_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-666_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-668_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-669_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-673_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-675_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-676_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-677_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-678_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-685_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-689_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-690_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-691_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-695_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-696_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-701_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-703_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-707_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-710_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-712_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-713_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-714_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-716_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-717_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-718_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-720_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-721_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-722_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-724_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-725_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-726_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-727_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-728_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-729_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-731_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-733_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-734_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-735_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-736_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-747_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-748_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-751_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-753_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-756_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-757_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-758_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-762_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-763_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-764_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-765_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-766_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-767_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-768_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-769_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-770_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-771_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-772_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-773_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-775_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-776_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-777_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-778_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-779_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-780_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-781_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-782_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-783_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-784_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-785_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-786_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-787_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-788_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-789_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-790_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-791_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-792_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-793_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-794_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-795_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-796_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-797_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-798_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-799_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-800_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-801_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-802_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-803_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-804_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-806_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-807_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-808_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-809_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-810_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-811_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-812_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-813_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-814_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-815_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-816_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-817_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-818_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-819_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-820_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-824_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-827_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-829_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-830_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-831_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-833_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-834_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-837_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-838_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-839_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-841_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-842_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-844_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-844_retrigger-2026-10-09_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-845_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-846_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-847_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-848_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-849_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-851_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-855_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-858_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-859_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-860_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-861_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-863_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-863_retrigger-2026-10-09_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-865_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-865_retrigger-2026-10-08_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-866_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-867_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-867_retrigger-2026-10-08_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-871_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-872_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-875_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-876_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-876_retrigger-2026-10-08_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-877_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-878_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-879_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-880_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-881_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-882_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-883_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-884_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-885_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-886_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-887_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-888_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-888_retrigger-2026-10-08_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-889_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-890_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-891_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-892_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-893_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-894_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-895_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-896_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-896_retrigger-2026-10-07_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-897_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-897_retrigger-2026-10-07_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-900_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-901_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-902_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-903_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-904_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-905_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-906_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-908_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-909_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-910_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-914_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-915_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-918_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-921_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-925_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-928_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-931_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-933_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-935_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-939_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-940_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-941_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-944_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-947_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-948_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-949_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-950_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-951_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-952_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-953_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-954_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-955_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-955_retrigger-2026-10-06_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-956_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-959_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-960_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-968_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-972_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-974_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-975_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-979_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-979_retrigger-2026-10-06_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-982_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-983_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-983_retrigger-2026-10-12_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-988_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-989_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-991_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-991_retrigger-2026-10-12_for | 0 | 
+- architecture/lit_search_results/for/PRESUMPTION-999_for | 0 | 
+- architecture/lit_search_results/for/SUPPLEMENT_2026-09-29_second-15a-pass | 0 | 
+- architecture/lit_search_returns | 0 | 
+- architecture/manifest_audit/01_sociogram | 0 | 
+- architecture/manifest_audit/02_narrative_connectome | 0 | 
+- architecture/manifest_audit/03_agent_map | 0 | 
+- architecture/manifest_audit/04_metabolism | 0 | 
+- architecture/manifest_audit/05_curriculum_tools | 0 | 
+- architecture/manifest_audit/06_inter_tradition_study | 0 | 
+- architecture/manifest_audit/07_rc_document_explorer | 0 | 
+- architecture/manifest_audit/08_rc_sandbox | 0 | 
+- architecture/manifest_audit/09_physics_explorer | 0 | 
+- architecture/manifest_audit/10_trv_commentary | 0 | 
+- architecture/manifest_audit/11_ai_heartbeat | 0 | 
+- architecture/manifest_audit/12_community_explorer | 0 | 
+- architecture/manifest_audit/13_community_interactions | 0 | 
+- architecture/manifest_audit/14_prose_and_doors | 0 | 
+- architecture/manifest_audit/21_nested_subsurfaces | 0 | 
+- architecture/manifest_audit/22_shell | 0 | 
+- architecture/manifest_audit/23_non_surfaces | 0 | 
+- architecture/manifest_audit/README | 0 | 
+- architecture/manifest_schema_acceptance_test_2026-10-04 | 0 | 
+- architecture/metrics/2026-04-10_snapshot | 0 | 
+- architecture/metrics/2026-04-13_snapshot | 0 | 
+- architecture/metrics/2026-04-14_snapshot | 0 | 
+- architecture/metrics/2026-04-15_snapshot | 0 | 
+- architecture/metrics/2026-04-16_snapshot | 0 | 
+- architecture/metrics/2026-04-17_snapshot | 0 | 
+- architecture/metrics/2026-04-18_snapshot | 0 | 
+- architecture/metrics/2026-04-20_snapshot | 0 | 
+- architecture/metrics/2026-04-21_snapshot | 0 | 
+- architecture/metrics/2026-04-26_snapshot | 0 | 
+- architecture/metrics/2026-04-27_snapshot | 0 | 
+- architecture/metrics/2026-05-05_snapshot | 0 | 
+- architecture/metrics/2026-05-08_snapshot | 0 | 
+- architecture/metrics/2026-05-09_snapshot | 0 | 
+- architecture/metrics/2026-05-10_snapshot | 0 | 
+- architecture/metrics/2026-05-12_snapshot | 0 | 
+- architecture/metrics/2026-05-13_snapshot | 0 | 
+- architecture/metrics/2026-05-14_snapshot | 0 | 
+- architecture/metrics/2026-05-17_snapshot | 0 | 
+- architecture/metrics/2026-05-18_snapshot | 0 | 
+- architecture/metrics/2026-05-19_snapshot | 0 | 
+- architecture/metrics/2026-05-20_snapshot | 0 | 
+- architecture/metrics/2026-05-22_snapshot | 0 | 
+- architecture/metrics/2026-05-23_snapshot | 0 | 
+- architecture/metrics/2026-05-24_snapshot | 0 | 
+- architecture/metrics/2026-05-26_snapshot | 0 | 
+- architecture/metrics/2026-05-27_snapshot | 0 | 
+- architecture/metrics/2026-05-28_snapshot | 0 | 
+- architecture/metrics/2026-05-29_snapshot | 0 | 
+- architecture/metrics/2026-05-30_snapshot | 0 | 
+- architecture/metrics/2026-05-31_snapshot | 0 | 
+- architecture/metrics/2026-06-02_snapshot | 0 | 
+- architecture/metrics/2026-06-03_snapshot | 0 | 
+- architecture/metrics/2026-06-04_snapshot | 0 | 
+- architecture/metrics/2026-06-05_snapshot | 0 | 
+- architecture/metrics/2026-06-06_snapshot | 0 | 
+- architecture/metrics/2026-06-07_snapshot | 0 | 
+- architecture/metrics/2026-06-09_snapshot | 0 | 
+- architecture/metrics/2026-06-10_snapshot | 0 | 
+- architecture/metrics/2026-06-11_snapshot | 0 | 
+- architecture/metrics/2026-06-14_snapshot | 0 | 
+- architecture/metrics/2026-06-15_snapshot | 0 | 
+- architecture/metrics/2026-06-16_snapshot | 0 | 
+- architecture/metrics/2026-06-17_snapshot | 0 | 
+- architecture/metrics/2026-06-18_snapshot | 0 | 
+- architecture/metrics/2026-06-19_snapshot | 0 | 
+- architecture/metrics/2026-06-22_snapshot | 0 | 
+- architecture/metrics/2026-06-23_snapshot | 0 | 
+- architecture/metrics/2026-06-24_snapshot | 0 | 
+- architecture/metrics/2026-06-25_snapshot | 0 | 
+- architecture/metrics/2026-06-26_snapshot | 0 | 
+- architecture/metrics/2026-06-27_snapshot | 0 | 
+- architecture/metrics/2026-06-28_snapshot | 0 | 
+- architecture/metrics/2026-06-29_snapshot | 0 | 
+- architecture/metrics/2026-06-30_snapshot | 0 | 
+- architecture/metrics/2026-07-01_snapshot | 0 | 
+- architecture/metrics/2026-07-02_snapshot | 0 | 
+- architecture/metrics/2026-07-05_snapshot | 0 | 
+- architecture/metrics/2026-07-06_snapshot | 0 | 
+- architecture/metrics/2026-07-07_snapshot | 0 | 
+- architecture/metrics/2026-07-08_snapshot | 0 | 
+- architecture/metrics/2026-07-09_snapshot | 0 | 
+- architecture/metrics/2026-07-10_snapshot | 0 | 
+- architecture/metrics/2026-07-11_snapshot | 0 | 
+- architecture/metrics/2026-07-12_snapshot | 0 | 
+- architecture/metrics/2026-07-13_snapshot | 0 | 
+- architecture/metrics/2026-07-15_snapshot | 0 | 
+- architecture/metrics/2026-07-16_snapshot | 0 | 
+- architecture/metrics/2026-07-17_snapshot | 0 | 
+- architecture/metrics/2026-07-19_snapshot | 0 | 
+- architecture/metrics/2026-07-20_snapshot | 0 | 
+- architecture/metrics/2026-07-21_snapshot | 0 | 
+- architecture/metrics/2026-07-22_snapshot | 0 | 
+- architecture/metrics/2026-07-23_snapshot | 0 | 
+- architecture/metrics/2026-07-24_snapshot | 0 | 
+- architecture/metrics/2026-07-25_snapshot | 0 | 
+- architecture/metrics/2026-07-26_snapshot | 0 | 
+- architecture/metrics/2026-07-27_snapshot | 0 | 
+- architecture/metrics/2026-07-28_snapshot | 0 | 
+- architecture/metrics/2026-07-29_snapshot | 0 | 
+- architecture/metrics/2026-07-30_snapshot | 0 | 
+- architecture/metrics/2026-07-31_snapshot | 0 | 
+- architecture/metrics/2026-08-01_snapshot | 0 | 
+- architecture/metrics/2026-08-02_snapshot | 0 | 
+- architecture/metrics/2026-08-03_snapshot | 0 | 
+- architecture/metrics/2026-08-04_snapshot | 0 | 
+- architecture/metrics/2026-08-05_snapshot | 0 | 
+- architecture/metrics/2026-08-06_snapshot | 0 | 
+- architecture/metrics/2026-08-08_snapshot | 0 | 
+- architecture/metrics/2026-08-09_snapshot | 0 | 
+- architecture/metrics/2026-08-10_snapshot | 0 | 
+- architecture/metrics/2026-08-11_snapshot | 0 | 
+- architecture/metrics/2026-08-12_snapshot | 0 | 
+- architecture/metrics/2026-08-13_snapshot | 0 | 
+- architecture/metrics/2026-08-14_snapshot | 0 | 
+- architecture/metrics/2026-08-15_snapshot | 0 | 
+- architecture/metrics/2026-08-16_snapshot | 0 | 
+- architecture/metrics/2026-08-17_snapshot | 0 | 
+- architecture/metrics/2026-08-18_snapshot | 0 | 
+- architecture/metrics/2026-08-23_snapshot | 0 | 
+- architecture/metrics/2026-08-24_snapshot | 0 | 
+- architecture/metrics/2026-08-25_snapshot | 0 | 
+- architecture/metrics/2026-08-27_snapshot | 0 | 
+- architecture/metrics/2026-08-30_snapshot | 0 | 
+- architecture/metrics/2026-09-04_snapshot | 0 | 
+- architecture/metrics/2026-09-05_snapshot | 0 | 
+- architecture/metrics/2026-09-07_snapshot | 0 | 
+- architecture/metrics/2026-09-08_snapshot | 0 | 
+- architecture/metrics/2026-09-09_snapshot | 0 | 
+- architecture/metrics/2026-09-10_snapshot | 0 | 
+- architecture/metrics/2026-09-11_snapshot | 0 | 
+- architecture/metrics/2026-09-12_snapshot | 0 | 
+- architecture/metrics/2026-09-13_snapshot | 0 | 
+- architecture/metrics/2026-09-14_snapshot | 0 | 
+- architecture/metrics/2026-09-16_snapshot | 0 | 
+- architecture/metrics/2026-09-17_snapshot | 0 | 
+- architecture/metrics/2026-09-18_snapshot | 0 | 
+- architecture/metrics/2026-09-19_snapshot | 0 | 
+- architecture/metrics/2026-09-20_snapshot | 0 | 
+- architecture/metrics/2026-09-21_snapshot | 0 | 
+- architecture/metrics/2026-09-22_snapshot | 0 | 
+- architecture/metrics/2026-09-23_snapshot | 0 | 
+- architecture/metrics/2026-09-25_snapshot | 0 | 
+- architecture/metrics/2026-09-26_snapshot | 0 | 
+- architecture/metrics/2026-09-27_snapshot | 0 | 
+- architecture/metrics/2026-09-28_snapshot | 0 | 
+- architecture/metrics/2026-09-29_snapshot | 0 | 
+- architecture/metrics/2026-09-30_snapshot | 0 | 
+- architecture/metrics/2026-10-01_snapshot | 0 | 
+- architecture/metrics/2026-10-02_snapshot | 0 | 
+- architecture/metrics/2026-10-03_snapshot | 0 | 
+- architecture/metrics/2026-10-09_snapshot | 0 | 
+- architecture/metrics/2026-10-10_snapshot | 0 | 
+- architecture/metrics/2026-10-12_snapshot | 0 | 
+- architecture/metrics/2026-10-13_snapshot | 0 | 
+- architecture/metrics/2026-10-14_snapshot | 0 | 
+- architecture/metrics/2026-10-15_snapshot | 0 | 
+- architecture/metrics/2026-10-16_snapshot | 0 | 
+- architecture/metrics/2026-10-17_snapshot | 0 | 
+- architecture/metrics/bootstrap_backlink_census_2026-06-23 | 0 | 
+- architecture/metrics/bootstrap_backlink_census_2026-06-28 | 0 | 
+- architecture/metrics/bootstrap_backlink_census_2026-10-04 | 0 | 
+- architecture/metrics/bootstrap_backlink_census_2026-10-11 | 0 | 
+- architecture/metrics/prs_yield_snapshot_lines | 0 | 
+- architecture/monitor_queue | 0 | 
+- architecture/morning_walk_2026-05-14 | 0 | 
+- architecture/open_questions | 0 | 
+- architecture/phase2a_multi_agent_plurality | 0 | 
+- architecture/presumptions | 0 | 
+- architecture/provenance_protocol | 0 | 
+- architecture/prs_axis_formative_assessment_2026-09-01 | 0 | 
+- architecture/revision_flags | 0 | 
+- architecture/schedule_update_sunday_tradition_day | 0 | 
+- architecture/scope_exclusions | 0 | 
+- architecture/sewing_agent_bootstrap_2026-06-23 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-06-28 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-07-06 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-07-12 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-07-19 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-07-26 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-08-02 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-08-09 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-08-16 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-08-23 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-08-30 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-09-07 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-09-13 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-09-20 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-09-27 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-10-04 | 0 | 
+- architecture/sewing_agent_bootstrap_2026-10-11 | 0 | 
+- architecture/sewing_agent_log | 0 | 
+- architecture/sociogram_feature_review | 0 | 
+- architecture/swarm-contract | 0 | 
+- architecture/validated_premises | 0 | 
+- architecture/voice_guide_dev_pathway | 0 | 
+- architecture/voice_guide_redesign | 0 | 
+- architecture/voice_guide_state_bus | 0 | 
+- c2a2-prs-3d/CHANGES_2026-05-20 | 0 | 
+- c2a2-prs-3d/testcorpus/CRITERIA | 0 | 
+- c2a2-prs-3d/testcorpus/PAIRINGS | 0 | 
+- c2a2-prs-3d/testcorpus/RECONSTRUCTIONS | 0 | 
+- c2a2-prs-3d/testcorpus/SOURCE | 0 | 
+- c2a2-prs-3d/testcorpus/vault/flags/pattern_detector_findings | 0 | 
+- c2a2-prs-3d/testcorpus/worksheet_designed | 0 | 
+- c2a2-wiki-narration/README | 0 | 
+- c2a2-wiki-narration/docs/ARCHITECTURE | 0 | 
+- c2a2-wiki-narration/docs/CONTRIBUTING | 0 | 
+- combined_morning_assembly | 0 | 
+- commentary-explorer/STREAM-02-upload-tool | 0 | 
+- community/NEXT_STEPS | 0 | 
+- community/curation_report | 0 | 
+- deferred/resolved/2026-05-12_WATCH-001 | 0 | 
+- deferred/resolved/2026-09-08_WATCH-002 | 0 | 
+- deferred/watch_list | 0 | 
+- flags/cross_signals_2026-04-16_batch1 | 0 | 
+- flags/cross_signals_2026-04-16_batch2 | 0 | 
+- flags/cross_signals_2026-04-16_batch3 | 0 | 
+- flags/finding_011_extension_levin_boundary | 0 | 
+- flags/for_pattern_detector | 0 | 
+- flags/ingest_backlog_2026-05-25 | 0 | 
+- flags/pattern_detector_findings | 0 | 
+- heartbeat/ARCHITECTURE | 0 | 
+- heartbeat/backend/AUTH_ADR | 0 | 
+- heartbeat/backend/PLAN_long_summaries | 0 | 
+- heartbeat/data/README | 0 | 
+- heartbeat/runtime/README | 0 | 
+- heartbeat/wiki/index | 0 | 
+- inbox/2026-04-07_carroll_harlow-quantum-gravity-observer | 0 | 
+- inbox/2026-04-07_friston_fep-substrate-independence | 0 | 
+- inbox/2026-04-07_levin_tim-ferriss-bioelectricity | 0 | 
+- inbox/2026-04-07_wolfram_metaphysics-ruliad | 0 | 
+- inbox/2026-04-08_arkanihamed_cosmohedron-combinatorics | 0 | 
+- inbox/2026-04-08_arkanihamed_universe-school-les-houches | 0 | 
+- inbox/2026-04-08_carroll_cartmill-animal-minds-play | 0 | 
+- inbox/2026-04-08_carroll_lamarck-creative-agency | 0 | 
+- inbox/2026-04-08_fredrickson_conducive-conditions-multilevel-loneliness | 0 | 
+- inbox/2026-04-08_fredrickson_strangers-intellectual-humility-rct | 0 | 
+- inbox/2026-04-08_friston_minimal-theory-consciousness-active-inference | 0 | 
+- inbox/2026-04-08_hawkins_hierarchy-heterarchy-neocortex | 0 | 
+- inbox/2026-04-08_hawkins_thousand-brains-sensorimotor-paper | 0 | 
+- inbox/2026-04-08_hoffman_know-thyself-podcast-e167 | 0 | 
+- inbox/2026-04-08_hoffman_quantum-interface-theory-prentner | 0 | 
+- inbox/2026-04-08_kastrup_daimon-soul-of-the-west | 0 | 
+- inbox/2026-04-08_kastrup_idealism-psychopathology | 0 | 
+- inbox/2026-04-08_levin_bialik-podcast-cancer-alien-intelligence | 0 | 
+- inbox/2026-04-08_levin_cognition-all-the-way-down-2 | 0 | 
+- inbox/2026-04-08_levin_mind-everywhere-goal-directedness | 0 | 
+- inbox/2026-04-08_mcgilchrist_sophia-lectures-wholeness-cosmos | 0 | 
+- inbox/2026-04-08_mcgilchrist_value-sacred-crisis-attention | 0 | 
+- inbox/2026-04-08_mcgilchrist_why-we-need-religion | 0 | 
+- inbox/2026-04-08_stump_biblical-narratives-flourishing-routledge | 0 | 
+- inbox/2026-04-08_stump_grains-of-wheat-suffering-narrative | 0 | 
+- inbox/2026-04-08_wolfram_jago-philosophy-discussion | 0 | 
+- inbox/2026-04-08_wolfram_pvsnp-ruliological-approach | 0 | 
+- inbox/2026-04-08_wolfram_what-is-ruliology | 0 | 
+- inbox/2026-04-09_carroll_ama-april-2026-observer-consciousness | 0 | 
+- inbox/2026-04-09_hawkins_thousand-brains-deep-read-supplement | 0 | 
+- inbox/2026-04-09_kastrup_mcgilchrist-perceive-participate-reality | 0 | 
+- inbox/2026-04-09_mcgilchrist_kastrup-perceive-participate-reality | 0 | 
+- inbox/2026-04-13_arkanihamed_hidden-zeros-amplitude-unity | 0 | 
+- inbox/2026-04-13_arkanihamed_kinematic-flow-emergence-time | 0 | 
+- inbox/2026-04-13_carroll_what-emergence-can-possibly-mean | 0 | 
+- inbox/2026-04-13_fredrickson_inflammation-positivity-resonance-close-nonclose | 0 | 
+- inbox/2026-04-13_fredrickson_trust-stranger-community-inequality | 0 | 
+- inbox/2026-04-13_friston_active-inference-artificial-reasoning | 0 | 
+- inbox/2026-04-13_friston_differential-flatness-active-inference | 0 | 
+- inbox/2026-04-13_friston_neuro-mimetic-predictive-coding-survey | 0 | 
+- inbox/2026-04-13_levin_charles-d-diffusion-evolutionary-strategy | 0 | 
+- inbox/2026-04-13_levin_neurobots-self-organizing-neural-networks | 0 | 
+- inbox/2026-04-13_levin_topdown-membrane-potential-transcription | 0 | 
+- inbox/2026-04-13_stump_seven-cardinal-virtues-holy-spirit | 0 | 
+- inbox/2026-04-13_wolfram_foundation-tool-cag-llm | 0 | 
+- inbox/2026-04-13_wolfram_future-qa-consciousness-ai | 0 | 
+- inbox/2026-04-14_hawkins_thousand-brains-systems-evaluation | 0 | 
+- inbox/2026-04-14_hoffman_spacetime-bounds-consciousness | 0 | 
+- inbox/2026-04-15_kastrup_koch-mystical-experience-essentia | 0 | 
+- inbox/2026-04-15_kastrup_mcgilchrist-wrim-session2-april14 | 0 | 
+- inbox/2026-04-15_mcgilchrist_auron-macintyre-modernity-rewires-brain | 0 | 
+- inbox/2026-04-15_mcgilchrist_seen-unseen-philosophical-influencers | 0 | 
+- inbox/2026-04-15_mcgilchrist_unbelievable-faith-meaning-crisis-culture | 0 | 
+- inbox/2026-04-16_carroll_oliver-self-knowing | 0 | 
+- inbox/2026-04-16_fredrickson_conducive-conditions-multilevel | 0 | 
+- inbox/2026-04-16_fredrickson_strangers-prosocial-cooperation | 0 | 
+- inbox/2026-04-16_levin_platonic-space-symposium | 0 | 
+- inbox/2026-04-16_stump_biblical-narratives-human-flourishing | 0 | 
+- inbox/2026-04-16_stump_grains-of-wheat | 0 | 
+- inbox/2026-04-16_stump_suffering-flourishing-thomistic-institute | 0 | 
+- inbox/2026-04-17_carroll_ama-wheeler-dewitt-boltzmann | 0 | 
+- inbox/2026-04-18_wolfram_mullenweg-frontier-labs-critique | 0 | 
+- inbox/2026-04-18_wolfram_seiberth-hypergraphing-space-of-reason | 0 | 
+- inbox/2026-04-20_levin_bioelectric-interface-ucsf | 0 | 
+- inbox/2026-04-20_levin_bioelectrical-interfaces-beyond-excitable-cells | 0 | 
+- inbox/2026-04-20_levin_brainca-neural-cellular-automata | 0 | 
+- inbox/2026-04-20_levin_whos-the-data-thoughts-thinkers | 0 | 
+- inbox/2026-04-21_carroll_singer-mindscape-351 | 0 | 
+- inbox/2026-04-21_hoffman_traces-of-consciousness-mbs | 0 | 
+- inbox/2026-04-22_kastrup_state-of-consciousness-debate | 0 | 
+- inbox/2026-04-22_mcgilchrist_issr-boyle-lecture | 0 | 
+- inbox/2026-04-27_arkanihamed_prague-spring-amplitudes-2 | 0 | 
+- inbox/2026-04-27_carroll_heilborn-lecture-series | 0 | 
+- inbox/2026-04-27_fredrickson_micro-intervention-virtual-human | 0 | 
+- inbox/2026-04-27_friston_body-keep-score-metastability | 0 | 
+- inbox/2026-04-27_friston_mindinmind-legacy-interview | 0 | 
+- inbox/2026-04-27_hawkins_life-with-machines-ep14 | 0 | 
+- inbox/2026-04-27_hoffman_homehope-symposium-2026 | 0 | 
+- inbox/2026-04-27_kastrup_explanation-vs-computation | 0 | 
+- inbox/2026-04-27_levin_manicka-field-mediated-prepatterning | 0 | 
+- inbox/2026-04-27_levin_pai-synthetic-memory-biorxiv | 0 | 
+- inbox/2026-04-27_mcgilchrist_great-simplification-spaciousness | 0 | 
+- inbox/2026-04-27_stump_what-are-we-collective-neuroscience | 0 | 
+- inbox/2026-04-27_wolfram_future-science-tech-qa-april3 | 0 | 
+- inbox/2026-04-27_wolfram_last-theory-080-observers-think-differently | 0 | 
+- inbox/2026-04-27_wolfram_last-theory-081-philosophy | 0 | 
+- inbox/2026-04-28_hoffman_stevens-handbook-itp | 0 | 
+- inbox/2026-05-04_carroll_mindscape-347-ferguson-data-surveillance | 0 | 
+- inbox/2026-05-04_friston_phenotyping-agency-ai | 0 | 
+- inbox/2026-05-04_wolfram_future-science-tech-qa-april24 | 0 | 
+- inbox/2026-05-04_wolfram_south-park-commons-fireside | 0 | 
+- inbox/2026-05-05_arkanihamed_fermion-mass-hierarchy-tev | 0 | 
+- inbox/2026-05-05_carroll_ama-may-2026 | 0 | 
+- inbox/2026-05-05_carroll_mindscape-352-brunton-connectome | 0 | 
+- inbox/2026-05-05_fredrickson_does-positivity-resonance-signify-love | 0 | 
+- inbox/2026-05-05_fredrickson_interparental-positivity-spillover-theory | 0 | 
+- inbox/2026-05-05_friston_online-generalised-predictive-coding | 0 | 
+- inbox/2026-05-05_hoffman_spacetime-bounds-v2 | 0 | 
+- inbox/2026-05-05_hoffman_trace-institute-launch | 0 | 
+- inbox/2026-05-05_kastrup_more-than-allegory-myth-archetype | 0 | 
+- inbox/2026-05-05_kastrup_rovelli-rqm-physical-non-realism | 0 | 
+- inbox/2026-05-05_levin_bootstrapping-life-inspired-machine-intelligence | 0 | 
+- inbox/2026-05-05_levin_cancer-to-ai-alignment-homeostasis | 0 | 
+- inbox/2026-05-05_mcgilchrist_closer-to-truth-life-after-death | 0 | 
+- inbox/2026-05-05_stump_good-of-thomas-aquinas-agatheos | 0 | 
+- inbox/2026-05-05_stump_infused-virtues-indwelling-holy-spirit | 0 | 
+- inbox/2026-05-05_wolfram_madrid-geometric-ideas-computational-frontiers | 0 | 
+- inbox/2026-05-05_wolfram_rulial-ensemble-biology-bulk-orchestration | 0 | 
+- inbox/2026-05-08_arkanihamed_single-minus-gluon-graviton-gpt52 | 0 | 
+- inbox/2026-05-08_carroll_mindscape-351-singer-utilitarianism | 0 | 
+- inbox/2026-05-08_fredrickson_positive-emotions-cornerstones-oxford-2025 | 0 | 
+- inbox/2026-05-08_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/2026-05-08_stump_meaning-of-suffering-human-flourishing-pine-dialogue | 0 | 
+- inbox/2026-05-09_mcgilchrist_unsiloed-648-attention-modes | 0 | 
+- inbox/2026-05-09_wolfram_business-april29-paradigm-shifting-ideas | 0 | 
+- inbox/2026-05-09_wolfram_kids-167-brains-evolution-life | 0 | 
+- inbox/2026-05-10_rohr_2026-meditations-good-news-fractured-world | 0 | 
+- inbox/2026-05-10_rohr_america-magazine-universal-christ-interview | 0 | 
+- inbox/2026-05-10_wright_collins-oxford-god-and-science | 0 | 
+- inbox/2026-05-10_wright_gods-homecoming-biblical-story-essay | 0 | 
+- inbox/2026-05-10_wright_gods-homecoming-book | 0 | 
+- inbox/2026-05-11_friston_no-way-out-164-ooda-active-inference | 0 | 
+- inbox/2026-05-11_levin_lex-fridman-486-alien-intelligence | 0 | 
+- inbox/2026-05-11_levin_sediqi-bioelectric-senescing-keratinocytes | 0 | 
+- inbox/2026-05-11_levin_suti-search-unconventional-terrestrial-intelligence | 0 | 
+- inbox/2026-05-12_hoffman_edge-hoffmans-law | 0 | 
+- inbox/2026-05-13_kastrup_with-reality-in-mind-levin-mind-everywhere | 0 | 
+- inbox/2026-05-13_mcgilchrist_closer-to-truth-can-ai-become-conscious | 0 | 
+- inbox/2026-05-13_mcgilchrist_closer-to-truth-consciousness-deep-ontology | 0 | 
+- inbox/2026-05-13_mcgilchrist_substack-laziness-left-hemisphere | 0 | 
+- inbox/2026-05-14_fredrickson_high-quality-listening-strangers-comm-psych | 0 | 
+- inbox/2026-05-14_fredrickson_social-media-posts-in-person-connections | 0 | 
+- inbox/2026-05-14_stump_seven-deadly-sins-thomistic-institute | 0 | 
+- inbox/2026-05-15_carroll_mindscape-353-roth-moral-economics | 0 | 
+- inbox/2026-05-16_wolfram_business-innovation-april29-paradigm | 0 | 
+- inbox/2026-05-16_wolfram_future-science-tech-april24-quantum | 0 | 
+- inbox/2026-05-18_friston_precision-psychiatry-cambridge | 0 | 
+- inbox/2026-05-18_levin_clofilium-colorectal-cancer-ionoceutical | 0 | 
+- inbox/2026-05-18_levin_cognition-spaces-natural-artificial-hybrid | 0 | 
+- inbox/2026-05-18_rohr_everything-belongs-s4-type1-bielecki | 0 | 
+- inbox/2026-05-18_rohr_finding-a-place-to-stand | 0 | 
+- inbox/2026-05-18_rohr_liberation-from-egos-agenda | 0 | 
+- inbox/2026-05-18_wright_adam-eve-hominids-april5 | 0 | 
+- inbox/2026-05-18_wright_ask-ntw-may11-confused-age | 0 | 
+- inbox/2026-05-18_wright_dove-descending-ruach-psalms | 0 | 
+- inbox/2026-05-20_kastrup_harpur-literal-as-metaphor | 0 | 
+- inbox/2026-05-20_mcgilchrist_good-beautiful-true-sheldonian | 0 | 
+- inbox/2026-05-20_mcgilchrist_sex-differences-hemispheres | 0 | 
+- inbox/2026-05-22_carroll_mindscape-354-list-free-will-levels | 0 | 
+- inbox/2026-05-23_wolfram_business-may13-ownerless-ai-accountability | 0 | 
+- inbox/2026-05-23_wolfram_future-science-tech-may15-scientific-method | 0 | 
+- inbox/2026-05-24_rohr_for-love-of-the-earth | 0 | 
+- inbox/2026-05-24_rohr_psalms-songs-of-exile | 0 | 
+- inbox/2026-05-24_wright_ask-ntw-may4-lost-tribes-exile | 0 | 
+- inbox/2026-05-24_wright_biologos-new-creation-breaking-in | 0 | 
+- inbox/2026-05-24_wright_vision-of-ephesians | 0 | 
+- inbox/2026-05-25_levin_brains-and-where-else-consciousness-embodiments | 0 | 
+- inbox/2026-05-25_levin_cognitive-glues-economics-collective-intelligence | 0 | 
+- inbox/2026-05-27_arkanihamed_which-functions-positive-geometry | 0 | 
+- inbox/2026-05-27_carroll_mindscape-355-eyeball-everett | 0 | 
+- inbox/2026-05-27_kastrup_harpur-daimons-western-mind | 0 | 
+- inbox/2026-05-27_kastrup_spira-limits-of-understanding | 0 | 
+- inbox/2026-05-27_mcgilchrist_good-beautiful-true | 0 | 
+- inbox/2026-05-27_mcgilchrist_value-of-value | 0 | 
+- inbox/2026-05-28_fredrickson_listening-behaviors-strangers | 0 | 
+- inbox/2026-05-29_carroll_mindscape-354-christian-list-free-will-levels | 0 | 
+- inbox/2026-05-30_wolfram_bulk-orchestration-rulial-ensemble | 0 | 
+- inbox/2026-05-31_rohr_enneagram-everything-belongs-s4 | 0 | 
+- inbox/2026-05-31_wright_outreach-salvation-future-creation | 0 | 
+- inbox/2026-05-31_wright_scientist-believe-resurrection | 0 | 
+- inbox/2026-06-01_friston_discriminatory-cognition-zbs | 0 | 
+- inbox/2026-06-01_friston_online-generalised-predictive-coding | 0 | 
+- inbox/2026-06-01_levin_cognitive-glue-journey | 0 | 
+- inbox/2026-06-03_mcgilchrist_ai-battle-for-the-soul | 0 | 
+- inbox/2026-06-04_fredrickson_positive-emotions-book | 0 | 
+- inbox/2026-06-04_stump_aquinas-institute-commencement | 0 | 
+- inbox/2026-06-05_carroll_quantum-cyclic-universe | 0 | 
+- inbox/2026-06-06_wolfram_ruliology-of-competition | 0 | 
+- inbox/2026-06-07_rohr_beyond-binaries-nondual-mind | 0 | 
+- inbox/2026-06-07_rohr_trinity-relational-template-divine-dance | 0 | 
+- inbox/2026-06-07_wright_collins-evolution-truth-case-for-god | 0 | 
+- inbox/2026-06-10_kastrup_birth-of-thought | 0 | 
+- inbox/2026-06-12_carroll_ama-june-2026 | 0 | 
+- inbox/2026-06-12_carroll_mindscape-356-wulf-romanticism | 0 | 
+- inbox/2026-06-17_kastrup_euclyd-ai-sovereignty | 0 | 
+- inbox/2026-06-17_mcgilchrist_censorship-front-door | 0 | 
+- inbox/2026-06-20_wolfram_version-15-agent-tools | 0 | 
+- inbox/2026-06-22_friston_as-one-and-many | 0 | 
+- inbox/2026-06-23_hawkins_thousand-brains-neco-publication | 0 | 
+- inbox/2026-06-23_hoffman_dmt-traces-of-the-other | 0 | 
+- inbox/2026-06-24_kastrup_dreams-of-reality | 0 | 
+- inbox/2026-06-24_kastrup_one-free-miracle | 0 | 
+- inbox/2026-06-24_mcgilchrist_being-in-the-world-eisenstein | 0 | 
+- inbox/2026-06-24_mcgilchrist_ralston-commencement-2026 | 0 | 
+- inbox/2026-06-25_fredrickson_interparental-positivity-spillover | 0 | 
+- inbox/2026-06-25_fredrickson_listening-connects-strangers | 0 | 
+- inbox/2026-06-25_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/2026-06-25_fredrickson_resonance-signifies-love | 0 | 
+- inbox/2026-06-26_arkanihamed_amplitudes-2026-qmul | 0 | 
+- inbox/2026-06-26_carroll_vacuum-energy-cosmological-constant | 0 | 
+- inbox/2026-06-27_wolfram_future-sci-tech-qa-june12 | 0 | 
+- inbox/2026-06-28_rohr_everyone-is-chosen-called-and-sent | 0 | 
+- inbox/2026-06-28_rohr_hope-in-hard-times-participatory-hope | 0 | 
+- inbox/2026-06-28_wright_capital-conversations-women-ministry-phoebe | 0 | 
+- inbox/2026-06-29_friston_self-orthogonalizing-attractors | 0 | 
+- inbox/2026-06-29_levin_cognition-spaces | 0 | 
+- inbox/2026-06-29_levin_embedding-space-remapping | 0 | 
+- inbox/2026-06-30_hawkins_neural-computation-tbs | 0 | 
+- inbox/2026-07-01_kastrup_currivan-living-evolving-universe | 0 | 
+- inbox/2026-07-01_mcgilchrist_freedom-pact-masterclass-human-nature | 0 | 
+- inbox/2026-07-01_mcgilchrist_thinking-class-ruin-western-world | 0 | 
+- inbox/2026-07-03_carroll_dark-energy-theories | 0 | 
+- inbox/2026-07-05_rohr_everyone-is-chosen-weekly-summary | 0 | 
+- inbox/2026-07-05_rohr_who-do-you-say-that-we-are | 0 | 
+- inbox/2026-07-05_wolfram_observer-boundaries-brain-emulation | 0 | 
+- inbox/2026-07-05_wright_ask-ntw-jun30-kingdom-vs-secular-humanism | 0 | 
+- inbox/2026-07-05_wright_ask-ntw-works-of-the-law-bonus | 0 | 
+- inbox/2026-07-06_friston_active-inference-artificial-reasoning | 0 | 
+- inbox/2026-07-06_levin_aging-goal-directedness-bioelectricity | 0 | 
+- inbox/2026-07-06_levin_multi-scale-longevity | 0 | 
+- inbox/2026-07-07_hoffman_startalk-evolution-reality | 0 | 
+- inbox/2026-07-08_kastrup_levin-conversation-nested-subjects | 0 | 
+- inbox/2026-07-08_mcgilchrist_without-religion-no-future | 0 | 
+- inbox/2026-07-09_stump_infused-virtues-new-blackfriars | 0 | 
+- inbox/2026-07-10_carroll_mindscape-360-berman-nature-cognition | 0 | 
+- inbox/2026-07-11_wolfram_history-qa-june17-idea-uptake | 0 | 
+- inbox/2026-07-12_rohr_beatitudes-week-one-weekly-summary | 0 | 
+- inbox/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return | 0 | 
+- inbox/2026-07-13_friston_receptor-density-ieeg-dcm | 0 | 
+- inbox/2026-07-13_levin_alignment-virtual-governor | 0 | 
+- inbox/2026-07-13_levin_diverse-intelligence-mental-health-talk | 0 | 
+- inbox/2026-07-13_levin_inner-nuclear-membrane-voltage-chromatin | 0 | 
+- inbox/2026-07-14_kastrup_chandaria-ai-consciousness-awakening | 0 | 
+- inbox/2026-07-14_levin_what-lives-definition-of-life-meta-analysis | 0 | 
+- inbox/2026-07-17_carroll_mindscape-ama-july-2026 | 0 | 
+- inbox/2026-07-18_levin_training-ecosystems-learning-unconventional | 0 | 
+- inbox/2026-07-18_wolfram_history-qa-june3-discrete-space | 0 | 
+- inbox/2026-07-19_rohr_practicing-just-this-weekly-summary | 0 | 
+- inbox/2026-07-20_friston_iai-reality-creation-of-consciousness | 0 | 
+- inbox/2026-07-20_levin_machines-all-the-way-up-cognition-all-the-way-down | 0 | 
+- inbox/2026-07-20_levin_neural-cellular-automata-review | 0 | 
+- inbox/2026-07-20_levin_topological-constraints-self-organization | 0 | 
+- inbox/2026-07-21_hoffman_trace-institute-whitepaper | 0 | 
+- inbox/2026-07-21_hoffman_traces-of-consciousness-primary | 0 | 
+- inbox/2026-07-22_carroll_mindscape-361-bassler-bacterial-communication | 0 | 
+- inbox/2026-07-22_kastrup_ai-awakening-chandaria | 0 | 
+- inbox/2026-07-22_kastrup_timalsina-suffering-joy | 0 | 
+- inbox/2026-07-22_mcgilchrist_ai-never-brain | 0 | 
+- inbox/2026-07-22_mcgilchrist_commencement-2026 | 0 | 
+- inbox/2026-07-23_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/2026-07-23_stump_cajetan-time-eternity-contingent-futures | 0 | 
+- inbox/2026-07-24_carroll_ama-july-2026-boltzmann-emergent-time | 0 | 
+- inbox/2026-07-25_wolfram_theory-of-bugs | 0 | 
+- inbox/2026-07-26_rohr_contemplative-exemplars-weekly-summary | 0 | 
+- inbox/2026-07-26_rohr_in-love-with-scripture | 0 | 
+- inbox/2026-07-26_wright_ask-ntw-orthodox-church-icons-2john | 0 | 
+- inbox/2026-07-27_friston_self-orthogonalizing-attractor-networks | 0 | 
+- inbox/2026-07-27_levin_alignment-virtual-governor | 0 | 
+- inbox/2026-07-27_levin_cognitive-glue-journey | 0 | 
+- inbox/2026-07-27_levin_intelligence-from-learnable-novelty | 0 | 
+- inbox/2026-07-28_hawkins_heterarchy-thalamic-transform-explainer | 0 | 
+- inbox/2026-07-28_hoffman_spacetime-headset-essay | 0 | 
+- inbox/2026-07-29_kastrup_caution-young-philosophers | 0 | 
+- inbox/2026-07-29_kastrup_spira-awakening-sorrow | 0 | 
+- inbox/2026-07-29_mcgilchrist_abc-soul-search-two-parter | 0 | 
+- inbox/2026-07-29_mcgilchrist_iai-scientific-method-panpsychism | 0 | 
+- inbox/2026-07-31_arkanihamed_very-nearly-right-theory-of-flavor | 0 | 
+- inbox/2026-07-31_carroll_mindscape-362-bettencourt-cities | 0 | 
+- inbox/2026-07-31_kastrup_seth-koch-psychedelic-metaphysics-debate | 0 | 
+- inbox/2026-07-31_levin_thought-economics-continuum-of-mind | 0 | 
+- inbox/2026-08-01_wolfram_bigthink-well-observers-objective-reality | 0 | 
+- inbox/2026-08-02_rohr_reading-bible-lens-of-love-weekly-summary | 0 | 
+- inbox/2026-08-03_friston_intrepid-adversarial-review | 0 | 
+- inbox/2026-08-03_levin_cognitive-offloading-universal | 0 | 
+- inbox/2026-08-03_levin_platonic-morphospace-schindler | 0 | 
+- inbox/2026-08-03_levin_trajectory-stewarding-flame | 0 | 
+- inbox/2026-08-04_hawkins_bbc-artificial-human-llm-dead-end | 0 | 
+- inbox/2026-08-04_hoffman_trace-collaboration-program-noonautics | 0 | 
+- inbox/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty | 0 | 
+- inbox/2026-08-05_kastrup_odyssey-potari-awakening | 0 | 
+- inbox/2026-08-05_mcgilchrist_jimrutt-333-worldviews | 0 | 
+- inbox/2026-08-05_mcgilchrist_ralston-lecture1-understanding-understanding | 0 | 
+- inbox/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom | 0 | 
+- inbox/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai | 0 | 
+- inbox/2026-08-06_fredrickson_intrinsic-network-connectivity-induced-affect | 0 | 
+- inbox/2026-08-06_fredrickson_loneliness-allostatic-interoceptive-aging | 0 | 
+- inbox/2026-08-06_stump_dewey-lecture-dilige-et-quod-vis-fac | 0 | 
+- inbox/2026-08-07_arkanihamed_correlators-simpler-than-wavefunctions | 0 | 
+- inbox/2026-08-07_carroll_ama-august-2026 | 0 | 
+- inbox/2026-08-07_rohr_job-mystery-of-suffering-week31 | 0 | 
+- inbox/2026-08-07_wright_ask-ntw-aug3-self-forgiveness-samaritans-ascension | 0 | 
+- inbox/2026-08-08_levin_books-in-progress-writing-for-ais | 0 | 
+- inbox/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights | 0 | 
+- inbox/2026-08-09_rohr_franciscan-mysticism-grace-and-connectivity | 0 | 
+- inbox/2026-08-09_rohr_job-weekly-summary-joy-anyway | 0 | 
+- inbox/2026-08-10_friston_generative-modelling-nonequilibrium-statistical-mechanics | 0 | 
+- inbox/2026-08-10_levin_causally-emergent-alignment-hypothesis | 0 | 
+- inbox/2026-08-10_levin_language-game-talking-to-non-human-systems | 0 | 
+- inbox/2026-08-10_levin_metabolic-problem-solving-homeostatic-feedback | 0 | 
+- inbox/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed | 0 | 
+- inbox/2026-08-11_hoffman_traces-of-the-other-recording | 0 | 
+- inbox/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity | 0 | 
+- inbox/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins | 0 | 
+- inbox/2026-08-12_friston_integrative-complexity-gueststream | 0 | 
+- inbox/2026-08-12_kastrup_agency-gods-point-of-view | 0 | 
+- inbox/2026-08-12_kastrup_objective-vs-subjective-idealism | 0 | 
+- inbox/2026-08-12_levin_defining-life-conversation | 0 | 
+- inbox/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark | 0 | 
+- inbox/2026-08-12_rohr_beatitudes-week-two-weekly-summary | 0 | 
+- inbox/2026-08-12_rohr_infinite-in-the-finite-sacramental-universe | 0 | 
+- inbox/2026-08-12_rohr_way-of-early-church-weekly-summary | 0 | 
+- inbox/2026-08-12_wright_angels-narrowed-modern-imagination | 0 | 
+- inbox/2026-08-12_wright_ask-ntw-aug10-near-death-sonship-satan | 0 | 
+- inbox/2026-08-12_wright_ask-ntw-jul20-parables-divorce-isaiah53 | 0 | 
+- inbox/2026-08-12_wright_ask-ntw-jul27-intermediate-state-corporate-faith-sabbath | 0 | 
+- inbox/2026-08-12_wright_gods-homecoming-four-gospels-deep-dive | 0 | 
+- inbox/2026-08-12_wright_odyssey-homer-new-testament | 0 | 
+- inbox/2026-08-13_fredrickson_keep-social-trial-registration | 0 | 
+- inbox/2026-08-14_levin_free-lunches-agential-gifts | 0 | 
+- inbox/2026-08-14_mcgilchrist_hidden-forces-metacrisis | 0 | 
+- inbox/2026-08-14_mcgilchrist_poetry-foundation-handful-of-dust | 0 | 
+- inbox/2026-08-14_rohr_clare-mirror-theosis | 0 | 
+- inbox/2026-08-14_rohr_humility-of-god-kenosis | 0 | 
+- inbox/2026-08-14_wright_who-is-this-god-admirato | 0 | 
+- inbox/2026-08-15_mcgilchrist_commencement-2026-reopen | 0 | 
+- inbox/2026-08-16_arkanihamed_hydrotope-water-wave-scattering | 0 | 
+- inbox/2026-08-16_friston_renormalising-generative-models | 0 | 
+- inbox/2026-08-16_levin_causal-emergence-before-self-replicators | 0 | 
+- inbox/2026-08-16_levin_limbomorphs | 0 | 
+- inbox/2026-08-23_rohr_true-self-absolute-reference-point | 0 | 
+- inbox/2026-08-23_wright_loving-to-know-epistemology-of-love | 0 | 
+- inbox/2026-08-25_carroll_mindscape-365-cardoso-black-holes-special | 0 | 
+- inbox/2026-08-25_friston_hippocampal-ripples-predicted-uncertainty | 0 | 
+- inbox/2026-08-25_friston_let-there-be-information-cultural-evolution | 0 | 
+- inbox/2026-08-25_friston_rosetta-stone-neurophenomenology | 0 | 
+- inbox/2026-08-25_hawkins_tbt-2-0-arxiv-v2 | 0 | 
+- inbox/2026-08-25_levin_flim-long-distance-bioelectric-patterns | 0 | 
+- inbox/2026-08-25_levin_planarian-habituation-transcriptional-profiling | 0 | 
+- inbox/2026-08-25_levin_trained-planaria-memory-through-regeneration | 0 | 
+- inbox/2026-08-25_rohr_everything-belongs-type3-achiever-culture | 0 | 
+- inbox/2026-08-25_rohr_everything-belongs-type4-suffering-outward | 0 | 
+- inbox/2026-08-25_rohr_releasing-false-self-launching-pad | 0 | 
+- inbox/2026-08-25_stump_good-of-forgiveness-oup-chapter | 0 | 
+- inbox/2026-08-25_wright_ask-ntw-aug17-glory-trinity-dissent | 0 | 
+- inbox/2026-08-25_wright_ask-ntw-aug24-desire-defence-industry-pilate | 0 | 
+- inbox/2026-08-26_hawkins_multi-column-shared-learning-brainstorm | 0 | 
+- inbox/2026-08-26_kastrup_goel-quantum-effects-living-systems | 0 | 
+- inbox/2026-08-26_kastrup_levin-mind-is-everywhere-2026 | 0 | 
+- inbox/2026-08-26_mcgilchrist_ralston-lecture1-recording-released | 0 | 
+- inbox/2026-08-26_mcgilchrist_ralston-lecture2-recording-released | 0 | 
+- inbox/2026-08-31_friston_interoceptive-ai-autonomous-adaptive-agents | 0 | 
+- inbox/2026-08-31_levin_qa-internet-recent-presentations-5 | 0 | 
+- inbox/2026-09-01_hawkins_grid-cell-literature-deep-dive | 0 | 
+- inbox/2026-09-01_hawkins_monty-robotic-hardware-thesis | 0 | 
+- inbox/2026-09-02_carroll_mindscape-366-al-khalili-time | 0 | 
+- inbox/2026-09-02_mcgilchrist_unherd-live-can-ai-rival-human-soul | 0 | 
+- inbox/2026-09-07_friston_complex-brain-hypothesis-mpe | 0 | 
+- inbox/2026-09-07_levin_strogatz-explanation-platonism | 0 | 
+- inbox/2026-09-08_hawkins_fens-2026-conference-recap | 0 | 
+- inbox/2026-09-08_hawkins_open-theory-questions-taxonomy | 0 | 
+- inbox/2026-09-08_hoffman_consciousness-and-its-spacetime-headset | 0 | 
+- inbox/2026-09-08_hoffman_traces-of-the-other-lighthouse-stage | 0 | 
+- inbox/2026-09-08_levin_virtue-as-external-setpoint | 0 | 
+- inbox/2026-09-08_rohr_standing-in-solidarity-pain-vs-suffering | 0 | 
+- inbox/2026-09-08_wright_ask-ntw-sep07-earth-burned-or-renewed | 0 | 
+- inbox/2026-09-09_mcgilchrist_bbc-sideways-know-it-all | 0 | 
+- inbox/2026-09-14_friston_insula-cardiac-dysregulation-depression | 0 | 
+- inbox/2026-09-14_friston_planetary-agency-climate-homeorhesis | 0 | 
+- inbox/2026-09-14_levin_agnosiophobia-lenia | 0 | 
+- inbox/2026-09-14_levin_artificial-experimentalist-autotelic-rl | 0 | 
+- inbox/2026-09-15_hawkins_attention-model-free-segmentation | 0 | 
+- inbox/2026-09-16_mcgilchrist_ralston-lecture1-title-discrepancy | 0 | 
+- inbox/2026-09-19_rohr_paul-paradox-nondual-template | 0 | 
+- inbox/2026-09-19_rohr_power-with-not-power-over | 0 | 
+- inbox/2026-09-20_rohr_preacher-of-grace-incongruity-social-leveling | 0 | 
+- inbox/2026-09-21_levin_cell-trainer-automated-training-platform | 0 | 
+- inbox/2026-09-21_rohr_nonviolent-resistance-contemplative-stance | 0 | 
+- inbox/2026-09-22_carroll_alexander-imagination-democracy | 0 | 
+- inbox/2026-09-22_hawkins_attentional-regions-policies-prediction-error | 0 | 
+- inbox/2026-09-22_hawkins_q3-roadmap-q2-review | 0 | 
+- inbox/2026-09-22_hoffman_hopewell-interface-we-call-reality | 0 | 
+- inbox/2026-09-23_kastrup_freefall-rejects-simulation-hypothesis | 0 | 
+- inbox/2026-09-23_rohr_corporate-violence-corporate-good | 0 | 
+- inbox/2026-10-03_wolfram_history-qa-sept23-ai-expectations | 0 | 
+- inbox/2026-10-05_friston_inferential-planning-frontal-cortex | 0 | 
+- inbox/2026-10-06_hawkins_attention-in-monty-hackathon-prototype | 0 | 
+- inbox/2026-10-06_hawkins_rome-focus-week-final-presentations | 0 | 
+- inbox/2026-10-06_hawkins_rome-focus-week-proposals | 0 | 
+- inbox/2026-10-07_kastrup_ai-as-archetypal-urge | 0 | 
+- inbox/2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility | 0 | 
+- inbox/2026-10-08_fredrickson_shared-positivity-meaning-in-life | 0 | 
+- inbox/2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint | 0 | 
+- inbox/2026-10-12_friston_phantastic-organ-predictive-processing | 0 | 
+- inbox/2026-10-12_levin_mind-body-interface-kofman-keynote | 0 | 
+- inbox/2026-10-13_document-explorer_prs-candidates | 0 | 
+- inbox/2026-10-13_hawkins_reference-frame-merging-splitting | 0 | 
+- inbox/2026-10-13_hoffman_trace-podcast-ep1-traces-of-consciousness | 0 | 
+- inbox/2026-10-13_loughran_prs-candidates-marks | 0 | 
+- inbox/2026-10-13_spreadsheet-explorer_prs-candidates | 0 | 
+- inbox/2026-10-14_kastrup_great-contender-metaphysical-landscape | 0 | 
+- inbox/2026-10-15_stump_non-cartesian-substance-dualism-configured-configurer | 0 | 
+- inbox/PROCESSED_LOG | 0 | 
+- inbox/README | 0 | 
+- inbox/c2a2_hoffman_levin_multiscale_proposal | 0 | 
+- inbox/digital-wang-oo/README | 0 | 
+- inbox/hoffman_levin_transcript_raw | 0 | 
+- inbox/pending_hoffman_multiscale | 0 | 
+- inbox/proposals/README | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-04-21_carroll_singer-mindscape-351 | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-04_carroll_mindscape-347-ferguson-data-surveillance | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-04_friston_phenotyping-agency-ai | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-04_wolfram_future-science-tech-qa-april24 | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-04_wolfram_south-park-commons-fireside | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_arkanihamed_fermion-mass-hierarchy-tev | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_carroll_ama-may-2026 | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_carroll_mindscape-352-brunton-connectome | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_fredrickson_does-positivity-resonance-signify-love | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_fredrickson_interparental-positivity-spillover-theory | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_friston_online-generalised-predictive-coding | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_hoffman_spacetime-bounds-v2 | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_hoffman_trace-institute-launch | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_kastrup_more-than-allegory-myth-archetype | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_kastrup_rovelli-rqm-physical-non-realism | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_levin_bootstrapping-life-inspired-machine-intelligence | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_levin_cancer-to-ai-alignment-homeostasis | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_mcgilchrist_closer-to-truth-life-after-death | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_stump_good-of-thomas-aquinas-agatheos | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_stump_infused-virtues-indwelling-holy-spirit | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_wolfram_madrid-geometric-ideas-computational-frontiers | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-05_wolfram_rulial-ensemble-biology-bulk-orchestration | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-08_arkanihamed_single-minus-gluon-graviton-gpt52 | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-08_carroll_mindscape-351-singer-utilitarianism | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-08_fredrickson_positive-emotions-cornerstones-oxford-2025 | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-08_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-08_stump_meaning-of-suffering-human-flourishing-pine-dialogue | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-09_mcgilchrist_unsiloed-648-attention-modes | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-09_wolfram_business-april29-paradigm-shifting-ideas | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-09_wolfram_kids-167-brains-evolution-life | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-10_rohr_2026-meditations-good-news-fractured-world | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-10_rohr_america-magazine-universal-christ-interview | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-10_wright_collins-oxford-god-and-science | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-10_wright_gods-homecoming-biblical-story-essay | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-10_wright_gods-homecoming-book | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-05-12_hoffman_edge-hoffmans-law | 0 | 
+- inbox/proposals/_pending_dupes_resolved/2026-06-08_levin_cognitive-glue-journey | 0 | 
+- inbox/proposals/_pending_dupes_resolved/README | 0 | 
+- inbox/proposals/approved/2026-04-07_carroll_harlow-quantum-gravity-observer | 0 | 
+- inbox/proposals/approved/2026-04-07_friston_fep-substrate-independence | 0 | 
+- inbox/proposals/approved/2026-04-07_levin_tim-ferriss-bioelectricity | 0 | 
+- inbox/proposals/approved/2026-04-07_wolfram_metaphysics-ruliad | 0 | 
+- inbox/proposals/approved/2026-04-08_arkanihamed_cosmohedron-combinatorics | 0 | 
+- inbox/proposals/approved/2026-04-08_arkanihamed_universe-school-les-houches | 0 | 
+- inbox/proposals/approved/2026-04-08_carroll_cartmill-animal-minds-play | 0 | 
+- inbox/proposals/approved/2026-04-08_carroll_lamarck-creative-agency | 0 | 
+- inbox/proposals/approved/2026-04-08_fredrickson_conducive-conditions-multilevel-loneliness | 0 | 
+- inbox/proposals/approved/2026-04-08_fredrickson_strangers-intellectual-humility-rct | 0 | 
+- inbox/proposals/approved/2026-04-08_friston_minimal-theory-consciousness-active-inference | 0 | 
+- inbox/proposals/approved/2026-04-08_hawkins_hierarchy-heterarchy-neocortex | 0 | 
+- inbox/proposals/approved/2026-04-08_hawkins_thousand-brains-sensorimotor-paper | 0 | 
+- inbox/proposals/approved/2026-04-08_hoffman_know-thyself-podcast-e167 | 0 | 
+- inbox/proposals/approved/2026-04-08_hoffman_quantum-interface-theory-prentner | 0 | 
+- inbox/proposals/approved/2026-04-08_kastrup_daimon-soul-of-the-west | 0 | 
+- inbox/proposals/approved/2026-04-08_kastrup_idealism-psychopathology | 0 | 
+- inbox/proposals/approved/2026-04-08_levin_bialik-podcast-cancer-alien-intelligence | 0 | 
+- inbox/proposals/approved/2026-04-08_levin_cognition-all-the-way-down-2 | 0 | 
+- inbox/proposals/approved/2026-04-08_levin_mind-everywhere-goal-directedness | 0 | 
+- inbox/proposals/approved/2026-04-08_mcgilchrist_sophia-lectures-wholeness-cosmos | 0 | 
+- inbox/proposals/approved/2026-04-08_mcgilchrist_value-sacred-crisis-attention | 0 | 
+- inbox/proposals/approved/2026-04-08_mcgilchrist_why-we-need-religion | 0 | 
+- inbox/proposals/approved/2026-04-08_stump_biblical-narratives-flourishing-routledge | 0 | 
+- inbox/proposals/approved/2026-04-08_stump_grains-of-wheat-suffering-narrative | 0 | 
+- inbox/proposals/approved/2026-04-08_wolfram_jago-philosophy-discussion | 0 | 
+- inbox/proposals/approved/2026-04-08_wolfram_pvsnp-ruliological-approach | 0 | 
+- inbox/proposals/approved/2026-04-08_wolfram_what-is-ruliology | 0 | 
+- inbox/proposals/approved/2026-04-09_carroll_ama-april-2026-observer-consciousness | 0 | 
+- inbox/proposals/approved/2026-04-09_hawkins_thousand-brains-deep-read-supplement | 0 | 
+- inbox/proposals/approved/2026-04-09_kastrup_mcgilchrist-perceive-participate-reality | 0 | 
+- inbox/proposals/approved/2026-04-09_mcgilchrist_kastrup-perceive-participate-reality | 0 | 
+- inbox/proposals/approved/2026-04-13_arkanihamed_hidden-zeros-amplitude-unity | 0 | 
+- inbox/proposals/approved/2026-04-13_arkanihamed_kinematic-flow-emergence-time | 0 | 
+- inbox/proposals/approved/2026-04-13_carroll_what-emergence-can-possibly-mean | 0 | 
+- inbox/proposals/approved/2026-04-13_fredrickson_inflammation-positivity-resonance-close-nonclose | 0 | 
+- inbox/proposals/approved/2026-04-13_fredrickson_trust-stranger-community-inequality | 0 | 
+- inbox/proposals/approved/2026-04-13_friston_active-inference-artificial-reasoning | 0 | 
+- inbox/proposals/approved/2026-04-13_friston_differential-flatness-active-inference | 0 | 
+- inbox/proposals/approved/2026-04-13_friston_neuro-mimetic-predictive-coding-survey | 0 | 
+- inbox/proposals/approved/2026-04-13_levin_charles-d-diffusion-evolutionary-strategy | 0 | 
+- inbox/proposals/approved/2026-04-13_levin_neurobots-self-organizing-neural-networks | 0 | 
+- inbox/proposals/approved/2026-04-13_levin_topdown-membrane-potential-transcription | 0 | 
+- inbox/proposals/approved/2026-04-13_stump_seven-cardinal-virtues-holy-spirit | 0 | 
+- inbox/proposals/approved/2026-04-13_wolfram_foundation-tool-cag-llm | 0 | 
+- inbox/proposals/approved/2026-04-13_wolfram_future-qa-consciousness-ai | 0 | 
+- inbox/proposals/approved/2026-04-14_hawkins_thousand-brains-systems-evaluation | 0 | 
+- inbox/proposals/approved/2026-04-14_hoffman_spacetime-bounds-consciousness | 0 | 
+- inbox/proposals/approved/2026-04-15_kastrup_koch-mystical-experience-essentia | 0 | 
+- inbox/proposals/approved/2026-04-15_kastrup_mcgilchrist-wrim-session2-april14 | 0 | 
+- inbox/proposals/approved/2026-04-15_mcgilchrist_auron-macintyre-modernity-rewires-brain | 0 | 
+- inbox/proposals/approved/2026-04-15_mcgilchrist_seen-unseen-philosophical-influencers | 0 | 
+- inbox/proposals/approved/2026-04-15_mcgilchrist_unbelievable-faith-meaning-crisis-culture | 0 | 
+- inbox/proposals/approved/2026-04-16_carroll_oliver-self-knowing | 0 | 
+- inbox/proposals/approved/2026-04-16_fredrickson_conducive-conditions-multilevel | 0 | 
+- inbox/proposals/approved/2026-04-16_fredrickson_strangers-prosocial-cooperation | 0 | 
+- inbox/proposals/approved/2026-04-16_levin_platonic-space-symposium | 0 | 
+- inbox/proposals/approved/2026-04-16_stump_biblical-narratives-human-flourishing | 0 | 
+- inbox/proposals/approved/2026-04-16_stump_grains-of-wheat | 0 | 
+- inbox/proposals/approved/2026-04-16_stump_suffering-flourishing-thomistic-institute | 0 | 
+- inbox/proposals/approved/2026-04-17_carroll_ama-wheeler-dewitt-boltzmann | 0 | 
+- inbox/proposals/approved/2026-04-18_wolfram_mullenweg-frontier-labs-critique | 0 | 
+- inbox/proposals/approved/2026-04-18_wolfram_seiberth-hypergraphing-space-of-reason | 0 | 
+- inbox/proposals/approved/2026-04-20_levin_bioelectric-interface-ucsf | 0 | 
+- inbox/proposals/approved/2026-04-20_levin_bioelectrical-interfaces-beyond-excitable-cells | 0 | 
+- inbox/proposals/approved/2026-04-20_levin_brainca-neural-cellular-automata | 0 | 
+- inbox/proposals/approved/2026-04-20_levin_whos-the-data-thoughts-thinkers | 0 | 
+- inbox/proposals/approved/2026-04-21_carroll_singer-mindscape-351 | 0 | 
+- inbox/proposals/approved/2026-04-21_hoffman_traces-of-consciousness-mbs | 0 | 
+- inbox/proposals/approved/2026-04-22_kastrup_state-of-consciousness-debate | 0 | 
+- inbox/proposals/approved/2026-04-22_mcgilchrist_issr-boyle-lecture | 0 | 
+- inbox/proposals/approved/2026-04-27_arkanihamed_prague-spring-amplitudes-2 | 0 | 
+- inbox/proposals/approved/2026-04-27_carroll_heilborn-lecture-series | 0 | 
+- inbox/proposals/approved/2026-04-27_fredrickson_micro-intervention-virtual-human | 0 | 
+- inbox/proposals/approved/2026-04-27_friston_body-keep-score-metastability | 0 | 
+- inbox/proposals/approved/2026-04-27_friston_mindinmind-legacy-interview | 0 | 
+- inbox/proposals/approved/2026-04-27_hawkins_life-with-machines-ep14 | 0 | 
+- inbox/proposals/approved/2026-04-27_hoffman_homehope-symposium-2026 | 0 | 
+- inbox/proposals/approved/2026-04-27_kastrup_explanation-vs-computation | 0 | 
+- inbox/proposals/approved/2026-04-27_levin_manicka-field-mediated-prepatterning | 0 | 
+- inbox/proposals/approved/2026-04-27_levin_pai-synthetic-memory-biorxiv | 0 | 
+- inbox/proposals/approved/2026-04-27_mcgilchrist_great-simplification-spaciousness | 0 | 
+- inbox/proposals/approved/2026-04-27_stump_what-are-we-collective-neuroscience | 0 | 
+- inbox/proposals/approved/2026-04-27_wolfram_future-science-tech-qa-april3 | 0 | 
+- inbox/proposals/approved/2026-04-27_wolfram_last-theory-080-observers-think-differently | 0 | 
+- inbox/proposals/approved/2026-04-27_wolfram_last-theory-081-philosophy | 0 | 
+- inbox/proposals/approved/2026-04-28_hoffman_stevens-handbook-itp | 0 | 
+- inbox/proposals/approved/2026-05-04_carroll_mindscape-347-ferguson-data-surveillance | 0 | 
+- inbox/proposals/approved/2026-05-04_friston_phenotyping-agency-ai | 0 | 
+- inbox/proposals/approved/2026-05-04_wolfram_future-science-tech-qa-april24 | 0 | 
+- inbox/proposals/approved/2026-05-04_wolfram_south-park-commons-fireside | 0 | 
+- inbox/proposals/approved/2026-05-05_arkanihamed_fermion-mass-hierarchy-tev | 0 | 
+- inbox/proposals/approved/2026-05-05_carroll_ama-may-2026 | 0 | 
+- inbox/proposals/approved/2026-05-05_carroll_mindscape-352-brunton-connectome | 0 | 
+- inbox/proposals/approved/2026-05-05_fredrickson_does-positivity-resonance-signify-love | 0 | 
+- inbox/proposals/approved/2026-05-05_fredrickson_interparental-positivity-spillover-theory | 0 | 
+- inbox/proposals/approved/2026-05-05_friston_online-generalised-predictive-coding | 0 | 
+- inbox/proposals/approved/2026-05-05_hoffman_spacetime-bounds-v2 | 0 | 
+- inbox/proposals/approved/2026-05-05_hoffman_trace-institute-launch | 0 | 
+- inbox/proposals/approved/2026-05-05_kastrup_more-than-allegory-myth-archetype | 0 | 
+- inbox/proposals/approved/2026-05-05_kastrup_rovelli-rqm-physical-non-realism | 0 | 
+- inbox/proposals/approved/2026-05-05_levin_bootstrapping-life-inspired-machine-intelligence | 0 | 
+- inbox/proposals/approved/2026-05-05_levin_cancer-to-ai-alignment-homeostasis | 0 | 
+- inbox/proposals/approved/2026-05-05_mcgilchrist_closer-to-truth-life-after-death | 0 | 
+- inbox/proposals/approved/2026-05-05_stump_good-of-thomas-aquinas-agatheos | 0 | 
+- inbox/proposals/approved/2026-05-05_stump_infused-virtues-indwelling-holy-spirit | 0 | 
+- inbox/proposals/approved/2026-05-05_wolfram_madrid-geometric-ideas-computational-frontiers | 0 | 
+- inbox/proposals/approved/2026-05-05_wolfram_rulial-ensemble-biology-bulk-orchestration | 0 | 
+- inbox/proposals/approved/2026-05-08_arkanihamed_single-minus-gluon-graviton-gpt52 | 0 | 
+- inbox/proposals/approved/2026-05-08_carroll_mindscape-351-singer-utilitarianism | 0 | 
+- inbox/proposals/approved/2026-05-08_fredrickson_positive-emotions-cornerstones-oxford-2025 | 0 | 
+- inbox/proposals/approved/2026-05-08_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/proposals/approved/2026-05-08_stump_meaning-of-suffering-human-flourishing-pine-dialogue | 0 | 
+- inbox/proposals/approved/2026-05-09_mcgilchrist_unsiloed-648-attention-modes | 0 | 
+- inbox/proposals/approved/2026-05-09_wolfram_business-april29-paradigm-shifting-ideas | 0 | 
+- inbox/proposals/approved/2026-05-09_wolfram_kids-167-brains-evolution-life | 0 | 
+- inbox/proposals/approved/2026-05-10_rohr_2026-meditations-good-news-fractured-world | 0 | 
+- inbox/proposals/approved/2026-05-10_rohr_america-magazine-universal-christ-interview | 0 | 
+- inbox/proposals/approved/2026-05-10_wright_collins-oxford-god-and-science | 0 | 
+- inbox/proposals/approved/2026-05-10_wright_gods-homecoming-biblical-story-essay | 0 | 
+- inbox/proposals/approved/2026-05-10_wright_gods-homecoming-book | 0 | 
+- inbox/proposals/approved/2026-05-11_friston_no-way-out-164-ooda-active-inference | 0 | 
+- inbox/proposals/approved/2026-05-11_levin_lex-fridman-486-alien-intelligence | 0 | 
+- inbox/proposals/approved/2026-05-11_levin_sediqi-bioelectric-senescing-keratinocytes | 0 | 
+- inbox/proposals/approved/2026-05-11_levin_suti-search-unconventional-terrestrial-intelligence | 0 | 
+- inbox/proposals/approved/2026-05-12_hoffman_edge-hoffmans-law | 0 | 
+- inbox/proposals/approved/2026-05-12_repair_manifest | 0 | 
+- inbox/proposals/approved/2026-05-13_kastrup_with-reality-in-mind-levin-mind-everywhere | 0 | 
+- inbox/proposals/approved/2026-05-13_mcgilchrist_closer-to-truth-can-ai-become-conscious | 0 | 
+- inbox/proposals/approved/2026-05-13_mcgilchrist_closer-to-truth-consciousness-deep-ontology | 0 | 
+- inbox/proposals/approved/2026-05-13_mcgilchrist_substack-laziness-left-hemisphere | 0 | 
+- inbox/proposals/approved/2026-05-14_fredrickson_high-quality-listening-strangers-comm-psych | 0 | 
+- inbox/proposals/approved/2026-05-14_fredrickson_social-media-posts-in-person-connections | 0 | 
+- inbox/proposals/approved/2026-05-14_stump_seven-deadly-sins-thomistic-institute | 0 | 
+- inbox/proposals/approved/2026-05-15_carroll_mindscape-353-roth-moral-economics | 0 | 
+- inbox/proposals/approved/2026-05-16_wolfram_business-innovation-april29-paradigm | 0 | 
+- inbox/proposals/approved/2026-05-16_wolfram_future-science-tech-april24-quantum | 0 | 
+- inbox/proposals/approved/2026-05-18_friston_precision-psychiatry-cambridge | 0 | 
+- inbox/proposals/approved/2026-05-18_levin_clofilium-colorectal-cancer-ionoceutical | 0 | 
+- inbox/proposals/approved/2026-05-18_levin_cognition-spaces-natural-artificial-hybrid | 0 | 
+- inbox/proposals/approved/2026-05-18_rohr_everything-belongs-s4-type1-bielecki | 0 | 
+- inbox/proposals/approved/2026-05-18_rohr_finding-a-place-to-stand | 0 | 
+- inbox/proposals/approved/2026-05-18_rohr_liberation-from-egos-agenda | 0 | 
+- inbox/proposals/approved/2026-05-18_wright_adam-eve-hominids-april5 | 0 | 
+- inbox/proposals/approved/2026-05-18_wright_ask-ntw-may11-confused-age | 0 | 
+- inbox/proposals/approved/2026-05-18_wright_dove-descending-ruach-psalms | 0 | 
+- inbox/proposals/approved/2026-05-20_kastrup_harpur-literal-as-metaphor | 0 | 
+- inbox/proposals/approved/2026-05-20_mcgilchrist_good-beautiful-true-sheldonian | 0 | 
+- inbox/proposals/approved/2026-05-20_mcgilchrist_sex-differences-hemispheres | 0 | 
+- inbox/proposals/approved/2026-05-22_carroll_mindscape-354-list-free-will-levels | 0 | 
+- inbox/proposals/approved/2026-05-23_wolfram_business-may13-ownerless-ai-accountability | 0 | 
+- inbox/proposals/approved/2026-05-23_wolfram_future-science-tech-may15-scientific-method | 0 | 
+- inbox/proposals/approved/2026-05-24_rohr_for-love-of-the-earth | 0 | 
+- inbox/proposals/approved/2026-05-24_rohr_psalms-songs-of-exile | 0 | 
+- inbox/proposals/approved/2026-05-24_wright_ask-ntw-may4-lost-tribes-exile | 0 | 
+- inbox/proposals/approved/2026-05-24_wright_biologos-new-creation-breaking-in | 0 | 
+- inbox/proposals/approved/2026-05-24_wright_vision-of-ephesians | 0 | 
+- inbox/proposals/approved/2026-05-25_levin_brains-and-where-else-consciousness-embodiments | 0 | 
+- inbox/proposals/approved/2026-05-25_levin_cognitive-glues-economics-collective-intelligence | 0 | 
+- inbox/proposals/approved/2026-05-27_arkanihamed_which-functions-positive-geometry | 0 | 
+- inbox/proposals/approved/2026-05-27_carroll_mindscape-355-eyeball-everett | 0 | 
+- inbox/proposals/approved/2026-05-27_kastrup_harpur-daimons-western-mind | 0 | 
+- inbox/proposals/approved/2026-05-27_kastrup_spira-limits-of-understanding | 0 | 
+- inbox/proposals/approved/2026-05-27_mcgilchrist_good-beautiful-true | 0 | 
+- inbox/proposals/approved/2026-05-27_mcgilchrist_value-of-value | 0 | 
+- inbox/proposals/approved/2026-05-28_fredrickson_listening-behaviors-strangers | 0 | 
+- inbox/proposals/approved/2026-05-29_carroll_mindscape-354-christian-list-free-will-levels | 0 | 
+- inbox/proposals/approved/2026-05-30_wolfram_bulk-orchestration-rulial-ensemble | 0 | 
+- inbox/proposals/approved/2026-05-31_rohr_enneagram-everything-belongs-s4 | 0 | 
+- inbox/proposals/approved/2026-05-31_wright_outreach-salvation-future-creation | 0 | 
+- inbox/proposals/approved/2026-05-31_wright_scientist-believe-resurrection | 0 | 
+- inbox/proposals/approved/2026-06-01_friston_discriminatory-cognition-zbs | 0 | 
+- inbox/proposals/approved/2026-06-01_friston_online-generalised-predictive-coding | 0 | 
+- inbox/proposals/approved/2026-06-01_levin_cognitive-glue-journey | 0 | 
+- inbox/proposals/approved/2026-06-03_mcgilchrist_ai-battle-for-the-soul | 0 | 
+- inbox/proposals/approved/2026-06-04_fredrickson_positive-emotions-book | 0 | 
+- inbox/proposals/approved/2026-06-04_stump_aquinas-institute-commencement | 0 | 
+- inbox/proposals/approved/2026-06-05_carroll_quantum-cyclic-universe | 0 | 
+- inbox/proposals/approved/2026-06-06_wolfram_ruliology-of-competition | 0 | 
+- inbox/proposals/approved/2026-06-07_rohr_beyond-binaries-nondual-mind | 0 | 
+- inbox/proposals/approved/2026-06-07_rohr_trinity-relational-template-divine-dance | 0 | 
+- inbox/proposals/approved/2026-06-07_wright_collins-evolution-truth-case-for-god | 0 | 
+- inbox/proposals/approved/2026-06-10_kastrup_birth-of-thought | 0 | 
+- inbox/proposals/approved/2026-06-12_carroll_ama-june-2026 | 0 | 
+- inbox/proposals/approved/2026-06-12_carroll_mindscape-356-wulf-romanticism | 0 | 
+- inbox/proposals/approved/2026-06-17_kastrup_euclyd-ai-sovereignty | 0 | 
+- inbox/proposals/approved/2026-06-17_mcgilchrist_censorship-front-door | 0 | 
+- inbox/proposals/approved/2026-06-20_wolfram_version-15-agent-tools | 0 | 
+- inbox/proposals/approved/2026-06-22_friston_as-one-and-many | 0 | 
+- inbox/proposals/approved/2026-06-23_hawkins_thousand-brains-neco-publication | 0 | 
+- inbox/proposals/approved/2026-06-23_hoffman_dmt-traces-of-the-other | 0 | 
+- inbox/proposals/approved/2026-06-24_kastrup_dreams-of-reality | 0 | 
+- inbox/proposals/approved/2026-06-24_kastrup_one-free-miracle | 0 | 
+- inbox/proposals/approved/2026-06-24_mcgilchrist_being-in-the-world-eisenstein | 0 | 
+- inbox/proposals/approved/2026-06-24_mcgilchrist_ralston-commencement-2026 | 0 | 
+- inbox/proposals/approved/2026-06-25_fredrickson_interparental-positivity-spillover | 0 | 
+- inbox/proposals/approved/2026-06-25_fredrickson_listening-connects-strangers | 0 | 
+- inbox/proposals/approved/2026-06-25_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/proposals/approved/2026-06-25_fredrickson_resonance-signifies-love | 0 | 
+- inbox/proposals/approved/2026-06-26_arkanihamed_amplitudes-2026-qmul | 0 | 
+- inbox/proposals/approved/2026-06-26_carroll_vacuum-energy-cosmological-constant | 0 | 
+- inbox/proposals/approved/2026-06-27_wolfram_future-sci-tech-qa-june12 | 0 | 
+- inbox/proposals/approved/2026-06-28_rohr_everyone-is-chosen-called-and-sent | 0 | 
+- inbox/proposals/approved/2026-06-28_rohr_hope-in-hard-times-participatory-hope | 0 | 
+- inbox/proposals/approved/2026-06-28_wright_capital-conversations-women-ministry-phoebe | 0 | 
+- inbox/proposals/approved/2026-06-29_friston_self-orthogonalizing-attractors | 0 | 
+- inbox/proposals/approved/2026-06-29_levin_cognition-spaces | 0 | 
+- inbox/proposals/approved/2026-06-29_levin_embedding-space-remapping | 0 | 
+- inbox/proposals/approved/2026-06-30_hawkins_neural-computation-tbs | 0 | 
+- inbox/proposals/approved/2026-07-01_kastrup_currivan-living-evolving-universe | 0 | 
+- inbox/proposals/approved/2026-07-01_mcgilchrist_freedom-pact-masterclass-human-nature | 0 | 
+- inbox/proposals/approved/2026-07-01_mcgilchrist_thinking-class-ruin-western-world | 0 | 
+- inbox/proposals/approved/2026-07-03_carroll_dark-energy-theories | 0 | 
+- inbox/proposals/approved/2026-07-05_rohr_everyone-is-chosen-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-07-05_rohr_who-do-you-say-that-we-are | 0 | 
+- inbox/proposals/approved/2026-07-05_wolfram_observer-boundaries-brain-emulation | 0 | 
+- inbox/proposals/approved/2026-07-05_wright_ask-ntw-jun30-kingdom-vs-secular-humanism | 0 | 
+- inbox/proposals/approved/2026-07-05_wright_ask-ntw-works-of-the-law-bonus | 0 | 
+- inbox/proposals/approved/2026-07-06_friston_active-inference-artificial-reasoning | 0 | 
+- inbox/proposals/approved/2026-07-06_levin_aging-goal-directedness-bioelectricity | 0 | 
+- inbox/proposals/approved/2026-07-06_levin_multi-scale-longevity | 0 | 
+- inbox/proposals/approved/2026-07-07_hoffman_startalk-evolution-reality | 0 | 
+- inbox/proposals/approved/2026-07-08_kastrup_levin-conversation-nested-subjects | 0 | 
+- inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future | 0 | 
+- inbox/proposals/approved/2026-07-09_stump_infused-virtues-new-blackfriars | 0 | 
+- inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition | 0 | 
+- inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake | 0 | 
+- inbox/proposals/approved/2026-07-12_rohr_beatitudes-week-one-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return | 0 | 
+- inbox/proposals/approved/2026-07-13_friston_receptor-density-ieeg-dcm | 0 | 
+- inbox/proposals/approved/2026-07-13_levin_alignment-virtual-governor | 0 | 
+- inbox/proposals/approved/2026-07-13_levin_diverse-intelligence-mental-health-talk | 0 | 
+- inbox/proposals/approved/2026-07-13_levin_inner-nuclear-membrane-voltage-chromatin | 0 | 
+- inbox/proposals/approved/2026-07-14_kastrup_chandaria-ai-consciousness-awakening | 0 | 
+- inbox/proposals/approved/2026-07-14_levin_what-lives-definition-of-life-meta-analysis | 0 | 
+- inbox/proposals/approved/2026-07-17_carroll_mindscape-ama-july-2026 | 0 | 
+- inbox/proposals/approved/2026-07-18_levin_training-ecosystems-learning-unconventional | 0 | 
+- inbox/proposals/approved/2026-07-18_wolfram_history-qa-june3-discrete-space | 0 | 
+- inbox/proposals/approved/2026-07-19_rohr_practicing-just-this-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-07-20_friston_iai-reality-creation-of-consciousness | 0 | 
+- inbox/proposals/approved/2026-07-20_levin_machines-all-the-way-up-cognition-all-the-way-down | 0 | 
+- inbox/proposals/approved/2026-07-20_levin_neural-cellular-automata-review | 0 | 
+- inbox/proposals/approved/2026-07-20_levin_topological-constraints-self-organization | 0 | 
+- inbox/proposals/approved/2026-07-21_hoffman_trace-institute-whitepaper | 0 | 
+- inbox/proposals/approved/2026-07-21_hoffman_traces-of-consciousness-primary | 0 | 
+- inbox/proposals/approved/2026-07-22_carroll_mindscape-361-bassler-bacterial-communication | 0 | 
+- inbox/proposals/approved/2026-07-22_kastrup_ai-awakening-chandaria | 0 | 
+- inbox/proposals/approved/2026-07-22_kastrup_timalsina-suffering-joy | 0 | 
+- inbox/proposals/approved/2026-07-22_mcgilchrist_ai-never-brain | 0 | 
+- inbox/proposals/approved/2026-07-22_mcgilchrist_commencement-2026 | 0 | 
+- inbox/proposals/approved/2026-07-23_fredrickson_positively-in-sync-convergent-validity | 0 | 
+- inbox/proposals/approved/2026-07-23_stump_cajetan-time-eternity-contingent-futures | 0 | 
+- inbox/proposals/approved/2026-07-24_carroll_ama-july-2026-boltzmann-emergent-time | 0 | 
+- inbox/proposals/approved/2026-07-25_wolfram_theory-of-bugs | 0 | 
+- inbox/proposals/approved/2026-07-26_rohr_contemplative-exemplars-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-07-26_rohr_in-love-with-scripture | 0 | 
+- inbox/proposals/approved/2026-07-26_wright_ask-ntw-orthodox-church-icons-2john | 0 | 
+- inbox/proposals/approved/2026-07-27_friston_self-orthogonalizing-attractor-networks | 0 | 
+- inbox/proposals/approved/2026-07-27_levin_alignment-virtual-governor | 0 | 
+- inbox/proposals/approved/2026-07-27_levin_cognitive-glue-journey | 0 | 
+- inbox/proposals/approved/2026-07-27_levin_intelligence-from-learnable-novelty | 0 | 
+- inbox/proposals/approved/2026-07-28_hawkins_heterarchy-thalamic-transform-explainer | 0 | 
+- inbox/proposals/approved/2026-07-28_hoffman_spacetime-headset-essay | 0 | 
+- inbox/proposals/approved/2026-07-29_kastrup_caution-young-philosophers | 0 | 
+- inbox/proposals/approved/2026-07-29_kastrup_spira-awakening-sorrow | 0 | 
+- inbox/proposals/approved/2026-07-29_mcgilchrist_abc-soul-search-two-parter | 0 | 
+- inbox/proposals/approved/2026-07-29_mcgilchrist_iai-scientific-method-panpsychism | 0 | 
+- inbox/proposals/approved/2026-07-31_arkanihamed_very-nearly-right-theory-of-flavor | 0 | 
+- inbox/proposals/approved/2026-07-31_carroll_mindscape-362-bettencourt-cities | 0 | 
+- inbox/proposals/approved/2026-07-31_kastrup_seth-koch-psychedelic-metaphysics-debate | 0 | 
+- inbox/proposals/approved/2026-07-31_levin_thought-economics-continuum-of-mind | 0 | 
+- inbox/proposals/approved/2026-08-01_wolfram_bigthink-well-observers-objective-reality | 0 | 
+- inbox/proposals/approved/2026-08-02_rohr_reading-bible-lens-of-love-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-08-03_friston_intrepid-adversarial-review | 0 | 
+- inbox/proposals/approved/2026-08-03_levin_cognitive-offloading-universal | 0 | 
+- inbox/proposals/approved/2026-08-03_levin_platonic-morphospace-schindler | 0 | 
+- inbox/proposals/approved/2026-08-03_levin_trajectory-stewarding-flame | 0 | 
+- inbox/proposals/approved/2026-08-04_hawkins_bbc-artificial-human-llm-dead-end | 0 | 
+- inbox/proposals/approved/2026-08-04_hoffman_trace-collaboration-program-noonautics | 0 | 
+- inbox/proposals/approved/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty | 0 | 
+- inbox/proposals/approved/2026-08-05_kastrup_odyssey-potari-awakening | 0 | 
+- inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews | 0 | 
+- inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-lecture1-understanding-understanding | 0 | 
+- inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom | 0 | 
+- inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai | 0 | 
+- inbox/proposals/approved/2026-08-06_fredrickson_intrinsic-network-connectivity-induced-affect | 0 | 
+- inbox/proposals/approved/2026-08-06_fredrickson_loneliness-allostatic-interoceptive-aging | 0 | 
+- inbox/proposals/approved/2026-08-06_stump_dewey-lecture-dilige-et-quod-vis-fac | 0 | 
+- inbox/proposals/approved/2026-08-07_arkanihamed_correlators-simpler-than-wavefunctions | 0 | 
+- inbox/proposals/approved/2026-08-07_carroll_ama-august-2026 | 0 | 
+- inbox/proposals/approved/2026-08-07_rohr_job-mystery-of-suffering-week31 | 0 | 
+- inbox/proposals/approved/2026-08-07_wright_ask-ntw-aug3-self-forgiveness-samaritans-ascension | 0 | 
+- inbox/proposals/approved/2026-08-08_levin_books-in-progress-writing-for-ais | 0 | 
+- inbox/proposals/approved/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights | 0 | 
+- inbox/proposals/approved/2026-08-09_rohr_franciscan-mysticism-grace-and-connectivity | 0 | 
+- inbox/proposals/approved/2026-08-09_rohr_job-weekly-summary-joy-anyway | 0 | 
+- inbox/proposals/approved/2026-08-10_friston_generative-modelling-nonequilibrium-statistical-mechanics | 0 | 
+- inbox/proposals/approved/2026-08-10_levin_causally-emergent-alignment-hypothesis | 0 | 
+- inbox/proposals/approved/2026-08-10_levin_language-game-talking-to-non-human-systems | 0 | 
+- inbox/proposals/approved/2026-08-10_levin_metabolic-problem-solving-homeostatic-feedback | 0 | 
+- inbox/proposals/approved/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed | 0 | 
+- inbox/proposals/approved/2026-08-11_hoffman_traces-of-the-other-recording | 0 | 
+- inbox/proposals/approved/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity | 0 | 
+- inbox/proposals/approved/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins | 0 | 
+- inbox/proposals/approved/2026-08-12_friston_integrative-complexity-gueststream | 0 | 
+- inbox/proposals/approved/2026-08-12_kastrup_agency-gods-point-of-view | 0 | 
+- inbox/proposals/approved/2026-08-12_kastrup_objective-vs-subjective-idealism | 0 | 
+- inbox/proposals/approved/2026-08-12_levin_defining-life-conversation | 0 | 
+- inbox/proposals/approved/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark | 0 | 
+- inbox/proposals/approved/2026-08-12_rohr_beatitudes-week-two-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-08-12_rohr_infinite-in-the-finite-sacramental-universe | 0 | 
+- inbox/proposals/approved/2026-08-12_rohr_way-of-early-church-weekly-summary | 0 | 
+- inbox/proposals/approved/2026-08-12_wright_angels-narrowed-modern-imagination | 0 | 
+- inbox/proposals/approved/2026-08-12_wright_ask-ntw-aug10-near-death-sonship-satan | 0 | 
+- inbox/proposals/approved/2026-08-12_wright_ask-ntw-jul20-parables-divorce-isaiah53 | 0 | 
+- inbox/proposals/approved/2026-08-12_wright_ask-ntw-jul27-intermediate-state-corporate-faith-sabbath | 0 | 
+- inbox/proposals/approved/2026-08-12_wright_gods-homecoming-four-gospels-deep-dive | 0 | 
+- inbox/proposals/approved/2026-08-12_wright_odyssey-homer-new-testament | 0 | 
+- inbox/proposals/approved/2026-08-13_fredrickson_keep-social-trial-registration | 0 | 
+- inbox/proposals/approved/2026-08-14_levin_free-lunches-agential-gifts | 0 | 
+- inbox/proposals/approved/2026-08-14_mcgilchrist_hidden-forces-metacrisis | 0 | 
+- inbox/proposals/approved/2026-08-14_mcgilchrist_poetry-foundation-handful-of-dust | 0 | 
+- inbox/proposals/approved/2026-08-14_rohr_clare-mirror-theosis | 0 | 
+- inbox/proposals/approved/2026-08-14_rohr_humility-of-god-kenosis | 0 | 
+- inbox/proposals/approved/2026-08-14_wright_who-is-this-god-admirato | 0 | 
+- inbox/proposals/approved/2026-08-15_mcgilchrist_commencement-2026-reopen | 0 | 
+- inbox/proposals/approved/2026-08-16_arkanihamed_hydrotope-water-wave-scattering | 0 | 
+- inbox/proposals/approved/2026-08-16_friston_renormalising-generative-models | 0 | 
+- inbox/proposals/approved/2026-08-16_levin_causal-emergence-before-self-replicators | 0 | 
+- inbox/proposals/approved/2026-08-16_levin_limbomorphs | 0 | 
+- inbox/proposals/approved/2026-08-23_rohr_true-self-absolute-reference-point | 0 | 
+- inbox/proposals/approved/2026-08-23_wright_loving-to-know-epistemology-of-love | 0 | 
+- inbox/proposals/approved/2026-08-25_carroll_mindscape-365-cardoso-black-holes-special | 0 | 
+- inbox/proposals/approved/2026-08-25_friston_hippocampal-ripples-predicted-uncertainty | 0 | 
+- inbox/proposals/approved/2026-08-25_friston_let-there-be-information-cultural-evolution | 0 | 
+- inbox/proposals/approved/2026-08-25_friston_rosetta-stone-neurophenomenology | 0 | 
+- inbox/proposals/approved/2026-08-25_hawkins_tbt-2-0-arxiv-v2 | 0 | 
+- inbox/proposals/approved/2026-08-25_levin_flim-long-distance-bioelectric-patterns | 0 | 
+- inbox/proposals/approved/2026-08-25_levin_planarian-habituation-transcriptional-profiling | 0 | 
+- inbox/proposals/approved/2026-08-25_levin_trained-planaria-memory-through-regeneration | 0 | 
+- inbox/proposals/approved/2026-08-25_rohr_everything-belongs-type3-achiever-culture | 0 | 
+- inbox/proposals/approved/2026-08-25_rohr_everything-belongs-type4-suffering-outward | 0 | 
+- inbox/proposals/approved/2026-08-25_rohr_releasing-false-self-launching-pad | 0 | 
+- inbox/proposals/approved/2026-08-25_stump_good-of-forgiveness-oup-chapter | 0 | 
+- inbox/proposals/approved/2026-08-25_wright_ask-ntw-aug17-glory-trinity-dissent | 0 | 
+- inbox/proposals/approved/2026-08-25_wright_ask-ntw-aug24-desire-defence-industry-pilate | 0 | 
+- inbox/proposals/approved/2026-08-26_hawkins_multi-column-shared-learning-brainstorm | 0 | 
+- inbox/proposals/approved/2026-08-26_kastrup_goel-quantum-effects-living-systems | 0 | 
+- inbox/proposals/approved/2026-08-26_kastrup_levin-mind-is-everywhere-2026 | 0 | 
+- inbox/proposals/approved/2026-08-26_mcgilchrist_ralston-lecture1-recording-released | 0 | 
+- inbox/proposals/approved/2026-08-26_mcgilchrist_ralston-lecture2-recording-released | 0 | 
+- inbox/proposals/approved/2026-08-31_friston_interoceptive-ai-autonomous-adaptive-agents | 0 | 
+- inbox/proposals/approved/2026-08-31_levin_qa-internet-recent-presentations-5 | 0 | 
+- inbox/proposals/approved/2026-09-01_hawkins_grid-cell-literature-deep-dive | 0 | 
+- inbox/proposals/approved/2026-09-01_hawkins_monty-robotic-hardware-thesis | 0 | 
+- inbox/proposals/approved/2026-09-02_carroll_mindscape-366-al-khalili-time | 0 | 
+- inbox/proposals/approved/2026-09-02_mcgilchrist_unherd-live-can-ai-rival-human-soul | 0 | 
+- inbox/proposals/approved/2026-09-07_friston_complex-brain-hypothesis-mpe | 0 | 
+- inbox/proposals/approved/2026-09-07_levin_strogatz-explanation-platonism | 0 | 
+- inbox/proposals/approved/2026-09-08_hawkins_fens-2026-conference-recap | 0 | 
+- inbox/proposals/approved/2026-09-08_hawkins_open-theory-questions-taxonomy | 0 | 
+- inbox/proposals/approved/2026-09-08_hoffman_consciousness-and-its-spacetime-headset | 0 | 
+- inbox/proposals/approved/2026-09-08_hoffman_traces-of-the-other-lighthouse-stage | 0 | 
+- inbox/proposals/approved/2026-09-08_rohr_standing-in-solidarity-pain-vs-suffering | 0 | 
+- inbox/proposals/approved/2026-09-08_wright_ask-ntw-sep07-earth-burned-or-renewed | 0 | 
+- inbox/proposals/approved/2026-09-09_mcgilchrist_bbc-sideways-know-it-all | 0 | 
+- inbox/proposals/approved/2026-09-14_friston_insula-cardiac-dysregulation-depression | 0 | 
+- inbox/proposals/approved/2026-09-14_friston_planetary-agency-climate-homeorhesis | 0 | 
+- inbox/proposals/approved/2026-09-14_levin_agnosiophobia-lenia | 0 | 
+- inbox/proposals/approved/2026-09-14_levin_artificial-experimentalist-autotelic-rl | 0 | 
+- inbox/proposals/approved/2026-09-15_hawkins_attention-model-free-segmentation | 0 | 
+- inbox/proposals/approved/2026-09-16_mcgilchrist_ralston-lecture1-title-discrepancy | 0 | 
+- inbox/proposals/approved/2026-09-19_rohr_paul-paradox-nondual-template | 0 | 
+- inbox/proposals/approved/2026-09-19_rohr_power-with-not-power-over | 0 | 
+- inbox/proposals/approved/2026-09-20_rohr_preacher-of-grace-incongruity-social-leveling | 0 | 
+- inbox/proposals/approved/2026-09-21_levin_cell-trainer-automated-training-platform | 0 | 
+- inbox/proposals/approved/2026-09-21_rohr_nonviolent-resistance-contemplative-stance | 0 | 
+- inbox/proposals/approved/2026-09-22_carroll_alexander-imagination-democracy | 0 | 
+- inbox/proposals/approved/2026-09-22_hawkins_attentional-regions-policies-prediction-error | 0 | 
+- inbox/proposals/approved/2026-09-22_hawkins_q3-roadmap-q2-review | 0 | 
+- inbox/proposals/approved/2026-09-22_hoffman_hopewell-interface-we-call-reality | 0 | 
+- inbox/proposals/approved/2026-09-23_kastrup_freefall-rejects-simulation-hypothesis | 0 | 
+- inbox/proposals/approved/2026-09-23_rohr_corporate-violence-corporate-good | 0 | 
+- inbox/proposals/approved/2026-10-03_wolfram_history-qa-sept23-ai-expectations | 0 | 
+- inbox/proposals/approved/2026-10-05_friston_inferential-planning-frontal-cortex | 0 | 
+- inbox/proposals/approved/2026-10-06_hawkins_attention-in-monty-hackathon-prototype | 0 | 
+- inbox/proposals/approved/2026-10-06_hawkins_rome-focus-week-final-presentations | 0 | 
+- inbox/proposals/approved/2026-10-06_hawkins_rome-focus-week-proposals | 0 | 
+- inbox/proposals/approved/2026-10-07_kastrup_ai-as-archetypal-urge | 0 | 
+- inbox/proposals/approved/2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility | 0 | 
+- inbox/proposals/approved/2026-10-08_fredrickson_shared-positivity-meaning-in-life | 0 | 
+- inbox/proposals/approved/2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint | 0 | 
+- inbox/proposals/approved/2026-10-12_friston_phantastic-organ-predictive-processing | 0 | 
+- inbox/proposals/approved/2026-10-12_levin_mind-body-interface-kofman-keynote | 0 | 
+- inbox/proposals/approved/2026-10-13_document-explorer_prs-candidates | 0 | 
+- inbox/proposals/approved/2026-10-13_hawkins_reference-frame-merging-splitting | 0 | 
+- inbox/proposals/approved/2026-10-13_hoffman_trace-podcast-ep1-traces-of-consciousness | 0 | 
+- inbox/proposals/approved/2026-10-13_loughran_prs-candidates-marks | 0 | 
+- inbox/proposals/approved/2026-10-13_spreadsheet-explorer_prs-candidates | 0 | 
+- inbox/proposals/approved/2026-10-14_kastrup_great-contender-metaphysical-landscape | 0 | 
+- inbox/proposals/approved/2026-10-15_stump_non-cartesian-substance-dualism-configured-configurer | 0 | 
+- inbox/proposals/denied/2026-06-22_levin_cognitive-glue | 0 | 
+- inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351 | 0 | 
+- inbox/proposals/needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict | 0 | 
+- inbox/proposals/needs_review/2026-10-13_macintyre_prs-candidates-3rv | 0 | 
+- inbox/proposals/needs_review/2026-10-14_mcgilchrist_wonderstruck-wisdom-of-uncertainty | 0 | 
+- inbox/proposals/pending/2026-10-16_carroll_mindscape-ama-october-2026 | 0 | 
+- inbox/proposals/pending/2026-10-18_rohr_returning-home-weekly-summary | 0 | 
+- inbox/proposals/pending/2026-10-18_wright_ask-ntw-bonus-gods-homecoming-ch10-bible-as-story | 0 | 
+- inbox/proposals/pending/2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification | 0 | 
+- inbox/proposals/pending/2026-10-18_wright_into-the-heart-of-isaiah-40-55 | 0 | 
+- inbox/rc_sandbox/TL_sandbox_reordered | 0 | 
+- inbox/rc_sandbox/batches/CLASSIFY_SPEC | 0 | 
+- inbox/rc_sandbox/outline_v1 | 0 | 
+- inbox/rc_sandbox/outline_v2 | 0 | 
+- inbox/rc_sandbox/outline_v3 | 0 | 
+- inbox/rc_sandbox/tl_sandbox_verbatim | 0 | 
+- inbox/rc_tome/TOC_v2_proposal | 0 | 
+- inbox/rc_tome/tome_extract_log | 0 | 
+- master/C2A2_master_wiki | 0 | 
+- master/C2A2_prs_triplets | 0 | 
+- master/incoming_dispatches | 0 | 
+- master/paradigm_flags | 0 | 
+- review/15d_run4_2026-05-05_report | 0 | 
+- review/15d_run_report_2026-05-24 | 0 | 
+- review/2026-08-31_lit_search_pipeline_run_report | 0 | 
+- review/2026-09-16_15abc_run_report | 0 | 
+- review/2026-10-01_lit-pipeline_concurrent-run_conflict | 0 | 
+- review/2026-10-02_lit-pipeline_concurrent-run_conflict | 0 | 
+- review/2026-10-03_lit-pipeline_lock-honored_no-run | 0 | 
+- review/2026-10-05_lit-pipeline_second-firing_no-op | 0 | 
+- review/2026-10-08_lit-pipeline_cloud-run_skipped-lock-held | 0 | 
+- review/2026-10-13_lit-pipeline_second-run_skipped-lock-held | 0 | 
+- review/2026-10-15_lit-pipeline_concurrent-run_CONFLICT | 0 | 
+- review/2026-10-15_withdrawn_SYSTEMIC-RISK-FLAG_unaudited-observation-channel | 0 | 
+- review/2026-10-16_lit-pipeline_second-run_skipped-lock-held | 0 | 
+- review/2026-10-17_lit-pipeline_second-run_skipped-lock-held | 0 | 
+- review/C2A2_redesign_incorporation_plan_2026-08-24 | 0 | 
+- review/archive/2026-04-07_decisions | 0 | 
+- review/archive/2026-04-08_decisions | 0 | 
+- review/archive/2026-04-14_decisions | 0 | 
+- review/archive/2026-04-28_decisions | 0 | 
+- review/archive/2026-05-05_decisions | 0 | 
+- review/archive/2026-05-08_decisions | 0 | 
+- review/archive/2026-05-11_decisions | 0 | 
+- review/archive/2026-05-13_decisions | 0 | 
+- review/archive/2026-05-26_decisions | 0 | 
+- review/archive/2026-05-28_decisions | 0 | 
+- review/archive/2026-06-06_decisions | 0 | 
+- review/archive/2026-06-16_decisions | 0 | 
+- review/archive/2026-06-23_decisions | 0 | 
+- review/archive/2026-06-30_decisions | 0 | 
+- review/archive/2026-07-20_decisions | 0 | 
+- review/archive/2026-07-23_decisions | 0 | 
+- review/archive/2026-08-08_decisions | 0 | 
+- review/archive/2026-08-27_decisions | 0 | 
+- review/archive/2026-09-10_decisions | 0 | 
+- review/archive/2026-09-24_decisions | 0 | 
+- review/archive/2026-10-07_decisions | 0 | 
+- review/archive/2026-10-09_decisions | 0 | 
+- review/archive/2026-10-10_decisions | 0 | 
+- review/archive/2026-10-13_decisions | 0 | 
+- review/archive/2026-10-16_decisions | 0 | 
+- review/c2a2_lit_search_pipeline_2026-04-16 | 0 | 
+- review/lit_search_run_report_2026-06-30 | 0 | 
+- session-archive/2026-05-05-lets-do-a-review-of-the-existing-version-posted-in | 0 | 
+- session-archive/2026-05-28-where-are-we-continue-from-previous-session | 0 | 
+- session-archive/README | 0 | 
+- session-archive/SESSIONS | 0 | 
+- sessions/2026-04-16_2143_what-and-how-of-wiki-visualization | 0 | 
+- synthesis/arkanihamed_carroll_bridge | 0 | 
+- synthesis/arkanihamed_loughran_bridge | 0 | 
+- synthesis/arkanihamed_stump_bridge | 0 | 
+- synthesis/carroll_hawkins_bridge | 0 | 
+- synthesis/carroll_levin_bridge | 0 | 
+- synthesis/carroll_loughran_bridge | 0 | 
+- synthesis/fredrickson_friston_bridge | 0 | 
+- synthesis/fredrickson_kastrup_bridge | 0 | 
+- synthesis/fredrickson_levin_bridge | 0 | 
+- synthesis/friston_hoffman_bridge | 0 | 
+- synthesis/friston_kastrup_bridge | 0 | 
+- synthesis/hawkins_hoffman_bridge | 0 | 
+- synthesis/hawkins_loughran_bridge | 0 | 
+- synthesis/hawkins_mcgilchrist_bridge | 0 | 
+- synthesis/hoffman_levin_bridge | 0 | 
+- synthesis/hoffman_loughran_bridge | 0 | 
+- synthesis/hoffman_mcgilchrist_bridge | 0 | 
+- synthesis/hoffman_rohr_bridge | 0 | 
+- synthesis/hoffman_wolfram_bridge | 0 | 
+- synthesis/kastrup_loughran_bridge | 0 | 
+- synthesis/kastrup_wolfram_bridge | 0 | 
+- synthesis/levin_stump_bridge | 0 | 
+- synthesis/mcgilchrist_wright_bridge | 0 | 
+- traditions/loughran/papers/README | 0 | 
+- vault/refs/index_summary | 0 | 
+- vault/refs/missing_days | 0 | 
+- voice_guide/knowledge/00_project | 0 | 
+- voice_guide/knowledge/agent_map.default | 0 | 
+- voice_guide/knowledge/ai_heartbeat.default | 0 | 
+- voice_guide/knowledge/community_cards.default | 0 | 
+- voice_guide/knowledge/community_explorer.default | 0 | 
+- voice_guide/knowledge/community_interactions.default | 0 | 
+- voice_guide/knowledge/curriculum_tools.default | 0 | 
+- voice_guide/knowledge/inter_tradition_study.default | 0 | 
+- voice_guide/knowledge/metabolism.default | 0 | 
+- voice_guide/knowledge/narrative_connectome.default | 0 | 
+- voice_guide/knowledge/physics_explorer.default | 0 | 
+- voice_guide/knowledge/rc_document_explorer.default | 0 | 
+- voice_guide/knowledge/sociogram.graph.default | 0 | 
+- voice_guide/knowledge/sociogram.graph.edge_selected | 0 | 
+- voice_guide/knowledge/sociogram.graph.node_selected | 0 | 
+- voice_guide/knowledge/start_here.default | 0 | 
+- voice_guide/knowledge/trv_commentary.default | 0 | 
+- voice_guide/knowledge/what_is_c2a2.default | 0 | 
+- voice_guide/knowledge/what_is_saying.default | 0 | 
+- wiki-narration-voice-nav-session-log | 0 | 

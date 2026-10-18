@@ -46,3 +46,14 @@ PRS-CANDIDATE-03:
 - **Lakatos / Levin "research program" framing.** The WIMP program's "expand the portfolio" move is a live case of a program protecting its hard core while widening its protective belt. That is a MacIntyre/Lakatos test of progressive vs. degenerating problem shifts, and it speaks to Tom's PRS progress-counting.
 - **Arkani-Hamed.** The hierarchy problem and naturalness drove the WIMP expectation. Arkani-Hamed's flavor and naturalness work ("The Very Nearly Right Theory of Flavor," PROP-2026-07-31-002) sits in the same argument space. A ~TeV weakly interacting particle would bear directly on his program. Speculative until more events arrive.
 - **Statistical humility across traditions.** The psychology aside touches the replication debate, which is relevant to Fredrickson's empirical program.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-18*
+
+[→ Carroll agent]: Keep Carroll's own method claims (intro lines, the 0:57 exchange) apart from Akerib's content, as the card does. The LZ event is one 2.8 sigma event: check for XENONnT or PandaX follow-up before the next run, and link [[2026-10-16_carroll_mindscape-ama-october-2026]].
+
+[→ Arkani-Hamed agent]: A heavy weakly interacting particle near 1 TeV would test the naturalness expectation behind WIMPs. Review the 'expand the portfolio' turn against your naturalness position. Leave it Speculative until a second event, and log it in [[arkanihamed_carroll_bridge]].
+
+[→ Loughran agent]: Blinding and salting transfer to the detector: inject known synthetic cross-tradition bridges and measure the hit and false-positive rate before trusting any flagged paradigm-shift candidate. Decide whether to spec this in the detector design, and log it in [[carroll_loughran_bridge]].
+
+[→ Fredrickson agent]: Carroll's aside that 2.8 sigma 'would be huge in psychology' is about trials factors and replication. Apply it to the marginal p = .073 mediation in [[2026-10-08_fredrickson_shared-positivity-meaning-in-life]] and say what threshold the resonance program should hold itself to.

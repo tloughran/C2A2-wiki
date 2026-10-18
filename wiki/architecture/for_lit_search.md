@@ -27245,3 +27245,330 @@ ITEM: PRESUMPTION-1162 [QUEUED] [IN-HOUSE] [PRESUMPTION]
 
 
 <!-- 15a/15b/15c run 2026-10-17 (local, lock-held sched-2026-10-17-52db05c7): 10-16 intake had 0 literature items, so a 5-item 15d backlog batch was taken: ASSUMPTION-1693 -> PREMISE-238; PRESUMPTION-1099 -> MONITOR-693; PRESUMPTION-1100 -> PREMISE-239; PRESUMPTION-1102 -> MONITOR-694; ASSUMPTION-514 -> MONITOR-695. Backlog 131 -> 126. [IN-HOUSE] items not searched by design. -->
+
+ITEM: ASSUMPTION-1854 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1854
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether any file names ingest_ledger.py as canonical over PROCESSED_LOG.md, and reconcile the ~300 mismatches.
+
+ITEM: ASSUMPTION-1855 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1855
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Confirm the Wright card is excluded from triplet counts and check its age against any stale-card rule.
+
+ITEM: ASSUMPTION-1856 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1856
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check that Phase 0 keys on a log of applied emails, not on unread flags.
+
+ITEM: ASSUMPTION-1858 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1858
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the "substantively new" test is written anywhere the other specialist agents read, or set per agent.
+
+ITEM: ASSUMPTION-1859 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1859
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Re-check the official Kids Q&A index on the next Saturday run; record whether 169 appears.
+
+ITEM: ASSUMPTION-1864 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1864
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the system-health report template marks unchecked sections as NOT CHECKED rather than leaving them looking clean.
+
+ITEM: ASSUMPTION-1865 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1865
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Read the metabolism-regen log for 10-08..10-11 and confirm the regen failure precedes the publish failure.
+
+ITEM: ASSUMPTION-1867 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1867
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Make the injector run once with a missing/failed extractor output and check whether it exits non-zero.
+
+ITEM: ASSUMPTION-1868 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1868
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Locate the check the monitor relied on and confirm it is in the task spec, not only in the run.
+
+ITEM: ASSUMPTION-1869 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1869
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Compare scheduler registry entries named sewing-agent against agents/*.md and list which agents exist in only one registry.
+
+ITEM: ASSUMPTION-1870 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1870
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether the backlog-batch precedent is written into the lit-pipeline task file or only carried run to run.
+
+ITEM: ASSUMPTION-1871 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1871
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Run the 15b stall test on one checker (e.g. scheduler health) and record whether anything outside it alarms.
+
+ITEM: ASSUMPTION-1874 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1874
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether a pause list for the Iceland trip exists in the wiki or scheduler files.
+
+ITEM: PRESUMPTION-1163 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1163
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Over 4 Saturdays, compare official-index dates with first-seen dates in search results.
+
+ITEM: PRESUMPTION-1164 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1164
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Grep task files and tools/ for which marker each job reads; flag any job reading PROCESSED_LOG.md filenames.
+
+ITEM: PRESUMPTION-1165 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1165
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Same as ASSUMPTION-1867: run the injector against a failed extractor and confirm a non-zero exit.
+
+ITEM: PRESUMPTION-1166 [QUEUED] [SEARCHED-15a: 2026-10-18] [SEARCHED-15b: 2026-10-18] [DISPOSITIONED-15c: 2026-10-18] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1166
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (literature): Supervisory-control and out-of-the-loop automation literature (e.g. Bainbridge 1983 "Ironies of Automation"; Endsley & Kiris 1995 on out-of-the-loop performance): what happens to an automated monitoring system when the human supervisor is absent, and which handover practices reduce the damage?
+
+ITEM: PRESUMPTION-1167 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1167
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): List every agent in the scheduler registry and in agents/; report the set difference.
+
+ITEM: PRESUMPTION-1168 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1168
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check whether scheduler health or project status reads the 14a/14b changelog status line; if not, nothing watches this monitor.
+
+ITEM: PRESUMPTION-1169 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1169
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Check against the validated premise at validated_premises.md ~2782 (a warning is not a control; habituation); count repeated advisories over 10-10..10-17.
+
+<!-- 14a/14b intake 2026-10-17 (local): 20 items; 1 literature (PRESUMPTION-1166), 19 [IN-HOUSE]. validated_premises.md grepped: no hit for supervisory control / operator absence / Bainbridge, so 1166 goes to literature; habituation of warnings covered (~line 2782), so 1169 queued in-house against it. Recurrences 1857, 1860-1863, 1866, 1872, 1873 not queued. -->
+
+## 2026-10-18 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+**Scope.** New intake only: PRESUMPTION-1166 (10-17 intake; the only literature item). The 10-17 intake's 19 [IN-HOUSE] items are not owed a search. No backlog batch this run: an orchestrator choice made because of the stated per-session budget overruns (ASSUMPTION-1783; 10-17 notes).
+**Disposition:** DISPOSITION-1094: PRESUMPTION-1166 → REVISE-520 (Medium). 15a PARTIALLY-SUPPORTED (Moderate on mitigations); 15b PARTIALLY-CHALLENGED (Moderate-to-Strong). Related REVISE-050/515/519. No PREMISE or MONITOR minted.
+**SYSTEMIC-RISK:** candidate only (15b, High): safety depends on an absent supervisor catching silent failures later. Noted in the against file; no flag file written.
+**Result files:** lit_search_results/{for,against}/PRESUMPTION-1166_{for,against}.md (PROVENANCE headers present). Note: ASSUMPTION-1166_{for,against}.md also exist (a different item, from 08-xx); not touched.
+**Backups:** *.bak.20261018-pre-15pipeline for all five registers. Lock ACQUIRED at start (run local-6a3310ea-2026-10-18), released at end.
+**Backlog remaining (fail loud):** 126 bare literature-lane items, untouched.
+**Budget (fail loud):** search subagents about 111k + 92k tokens, over Tom's 30k per-session rule.
+
+
+## 2026-10-18 — 15d Periodic Monitor re-triggers (weekly cycle only; monthly does not fire on day 18)
+
+*15d re-trigger only; no evidence evaluated. Lanes follow 15c routing notes where given; where none was given, the lane is 15d's reading of the entry's "would change" clause, stated per block.*
+
+### Literature lane (7) — for 15a/15b
+
+[PRESUMPTION] PRESUMPTION-1019: (see MONITOR-672 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: a source testing legal/diplomatic record-authority criteria (FRE 803(6), UETA §14) on internal machine-generated provenance, or a direct disanalogy result. Extends REVISE-476.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition 2026-10-05.
+
+[PRESUMPTION] PRESUMPTION-1024: (see MONITOR-673 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: a source on self-correction allowances scoped to an agent's own artefacts (create/modify asymmetry). Policy limb is with Tom (OPEN-233); a search cannot discharge that limb.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition 2026-10-05.
+
+[PRESUMPTION] PRESUMPTION-1034: (see MONITOR-674 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: peer-reviewed or primary-source evidence on verdict/execution conflation and last-known-good attribution (cycle-0 sources were vendor docs / bug trackers only).
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition 2026-10-05.
+
+[PRESUMPTION] PRESUMPTION-1040: (see MONITOR-675 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: the completed supervisor-tree / dead-man's-switch search, and a source on absence-alarm false-positive cost.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition 2026-10-05.
+
+[PRESUMPTION] PRESUMPTION-1047: (see MONITOR-676 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: a source on written policy vs situated judgement for living-subject biographical material, or the Rohr/Armas byline literature.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition 2026-10-05.
+
+[PRESUMPTION] PRESUMPTION-1048: (see MONITOR-677 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: a primary source on null-report indistinguishability (literature limb). The paired in-house limb (source persistence per tradition: expiring vs persistent-indexed) has no runner; noted, not queued separately.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition 2026-10-05.
+
+[PRESUMPTION] PRESUMPTION-955: (see MONITOR-681 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-18, cycle 2]
+  Provenance: Chain=[14b->15a,15b->15c->15d->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 1 -> 2; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: (a) ISA-18.2 / IEC 62682 text — paywalled; may be beyond this pipeline's reach, in which case 15a/15b should say so rather than re-file; (b) in-house consumer audit of every reader of the status field (empirical, no runner). Cross-ref REVISE-457.
+  Evidence trajectory: Stable since 15c disposition 2026-10-06 (OPC UA Part 8 verified both sides); no search since.
+
+### Empirical / in-house lane (5) — no literature search owed; no runner assigned (ESCALATION 2)
+
+[ASSUMPTION] ASSUMPTION-1305: (see MONITOR-678 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-18, cycle 2]
+  Provenance: Chain=[14a->15a,15b->15c->15d->15a,15b->15c->15d]; Priority: Low
+  Cycle: 1 -> 2; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: 30-day pending/ depth-and-age series; count of skip days on which review was idle; any perishable-source loss on a skip day. Literature lane CLOSED by 15c (second Goldratt-primary null).
+  Evidence trajectory: None since 2026-10-06 — no consumer has run the in-house series.
+
+[PRESUMPTION] PRESUMPTION-979: (see MONITOR-679 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-18, cycle 2]
+  Provenance: Chain=[14b->15a,15b->15c->15d->15a,15b->15c->15d]; Priority: High
+  Cycle: 1 -> 2; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: MONITOR-608 limbs (a)/(b) — REVISE-466 actions 2 and 3, with denominators. If both near zero, 15c's stated exit is close-as-mis-specified and route to PRESUMPTION-962.
+  Evidence trajectory: None since 2026-10-06.
+
+[ASSUMPTION] ASSUMPTION-1321: (see MONITOR-680 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-18, cycle 2]
+  Provenance: Chain=[14a->15a,15b->15c->15d->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 1 -> 2; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: PREMISE-108 base-rate measurement. Literature limb (c) discharged 2026-10-06 (Kawamoto 2005 full text).
+  Evidence trajectory: None since 2026-10-06.
+
+[ASSUMPTION] ASSUMPTION-1211: (see MONITOR-684 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-18, cycle 2]
+  Provenance: Chain=[14a->15a,15b->15c->15d->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 1 -> 2; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: in-house three-account discriminator (adjacency vs similarity vs propagation) across the five-member series. Per 15c routing note: do not re-queue for 15a/15b unless new mechanistic literature appears.
+  Evidence trajectory: None since 2026-10-08.
+
+[PRESUMPTION] PRESUMPTION-539: (see MONITOR-686 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-18, cycle 2]
+  Provenance: Chain=[14b->15a,15b->15c->15d->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 1 -> 2; Last checked: 2026-10-18; Next 15d check: 2026-10-25
+  Owed: two-level test — (i) per-finding actuation share within 60 days; (ii) count of system changes citing 2+ self-diagnostic findings jointly. 15d checks only whether either has run: neither has. Terminating condition 2026-12-09 (closes into REVISE-245).
+  Evidence trajectory: None since 2026-10-09.
+
+### Standing 15d blocks of 2026-10-11 NOT duplicated (48)
+44 [QUEUED-EMPIRICAL] + 1 [ROUTED-AGENT-19] (MONITOR-683) + 3 [AWAITING-TOM] (MONITOR-629, -669, -670) from the 2026-10-11 section remain unconsumed (no SEARCHED/DISPOSITIONED tags). Not re-filed, per precedent 09-20..10-11 and PREMISE-183(2) (no byte-identical refiling). All 9 literature blocks of 10-11 were consumed by 15a/15b/15c on 10-12 and 10-17.

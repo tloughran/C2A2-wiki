@@ -2362,3 +2362,7 @@ Phase 0: no new `[C2A2-review-decision]` email (2026-10-15 thread 1a140abeec25b1
 Phase 2: no Wolfram card in pending/ today; orchestrator checked writings.stephenwolfram.com - newest post 2026-09-28 (pure math / AI), already captured. 0 proposals.
 Phase 3: review page `review/2026-10-17_review.html` (1 pending: Carroll PROP-2026-10-16-001) opened. Phase 5: 0 old review pages deleted. Phase 5.5 OK address-clean (cards 531, triplets 1041). Phase 5.6 OK 1745 signals, 91 pairs, span to 2026-10-15, stale_days 2. Phase 6: no git.
 **Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 1.
+
+### 2026-10-18 daily run (orchestrator, Sunday - no core specialist day)
+Primary run completed ~04:36 (master wiki status line, `review/2026-10-18_review.html`, 5 pending). This second firing (04:37) verified and found nothing further: Phase 0 no new `[C2A2-review-decision]` email (only old April/July threads, already applied in their own runs; archives 2026-04-28 / 2026-07-23 exist). Phase 1 `scripts/ingest_ledger.py wiki`: OPEN=1 (Wright PROP-2026-08-14-033, unchanged) - **0 files ingested.** Phase 2: Rohr + Wright cards already filed today; no duplicate search. Phase 3/4 not repeated (page + draft already made). Phase 5.5/5.6 not re-run (primary run: OK address-clean; 1745 signals, 91 pairs, span to 2026-10-15). Phase 6: no git.
+**Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 5.

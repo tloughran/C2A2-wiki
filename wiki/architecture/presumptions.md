@@ -25343,3 +25343,146 @@ PRESUMPTION-1162:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-16 (local). **7 items (1156-1162)**: architectural 1 · structural 1 · methodological 1 · epistemic 3 · scaling 1; risk: High 2 · Medium 5. Checked against 14a 1835-1853 and PRESUMPTION-1147..1155; 1159 extends 1150/1151, 1160 applies PREMISE-237, 1161 extends 1155, 1162 extends 1154.*
+
+
+PRESUMPTION-1163:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] A specialist's 0-proposal run is presumed to mean no new material. The Wolfram agent checks official index pages and treats them as current (Episode 169 "unconfirmed" because the official page lists 168), and the daily run reads "the specialist wrote no card" as nothing to hunt. Lag in official indexes is not modelled.
+  Evidence it was operative: 2bd35f41; e5ed166a
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1859
+  Testability: testable empirically
+  Risk if wrong: Medium: material published before its index updates is missed until a later run happens to catch it.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1163
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1164:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] Several markers of "already handled" are presumed able to disagree indefinitely as long as each run knows which one to trust: `PROCESSED_LOG.md` filenames (~300 false unprocessed), `ingest_ledger.py` proposal IDs, and email unread flags. No file records which marker is canonical; the knowledge lives in run notes.
+  Evidence it was operative: e5ed166a
+  Why it was unstated: obvious to participants
+  Type: methodological
+  Related decisions: ASSUMPTION-1854; ASSUMPTION-1856; PREMISE-239; PRESUMPTION-1099
+  Testability: testable in-house
+  Risk if wrong: Medium: a future run, or a different job, that trusts the wrong marker re-ingests or skips cards.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1164
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1165:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] A downstream stage that exits 0 with "no change" is presumed to be reporting real state. The telemetry injector printed "already current" while its input was stale because the extractor had failed; only the run's reading of a missing "Injected N agents" line caught it.
+  Evidence it was operative: c85e5a7a
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1867; PREMISE-239; PREMISE-100
+  Testability: testable in-house
+  Risk if wrong: High: stale feeds are published as current whenever an upstream stage fails quietly.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1165
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1166:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] The monitoring regime is presumed to hold while Tom is away (Iceland, from Oct 18). Every job today ends with items only Tom can act on (H-Drive, re-IDs, WATCH-003, PREMISE-124, Routines connector, Wright card, sewing owner), and no job routes them to a place that escalates or persists during his absence. The pause list is unfinished.
+  Evidence it was operative: def0ca84; 3bc85248; c9504ca0; e5ed166a; de9758e0
+  Why it was unstated: obvious to participants
+  Type: normative
+  Related decisions: ASSUMPTION-1874; OPEN-270; PRESUMPTION-1162
+  Testability: testable via literature
+  Risk if wrong: High: failures accumulate unattended (OpenStory ingest already stopped) and jobs keep firing against a stopped pipeline.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1166
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1167:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] `agents/*.md` is presumed to be the registry of which agents exist. The deferred monitor concluded there is no sewing agent because no file is in `agents/`, yet the scheduler lists `c2a2-sewing-agent-weekly` and the bootstrap audit, and `sewing_agent_log.md` shows a run on 10-11 [verified]. Two registries are in use with no rule saying which one wins.
+  Evidence it was operative: 3bc85248; def0ca84; 14b ls/grep check
+  Why it was unstated: culturally embedded
+  Type: architectural
+  Related decisions: ASSUMPTION-1869; OPEN-271
+  Testability: testable in-house
+  Risk if wrong: Medium: jobs route work to an agent another registry says does not exist (MacIntyre PRS-07 waits on it).
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1167
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1168:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] The self-awareness pipeline presumes its own failures will be noticed. The cloud 14a/14b twin has written "NOT RUN (blocked)" stubs seven days running, and the record of that lives only in its own changelog. This is 15b's silent-checker risk (ASSUMPTION-1871) applied to 14a/14b itself.
+  Evidence it was operative: changelog/2026-10-11..17 stubs; c9504ca0
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: ASSUMPTION-1871; OPEN-260; PREMISE-237
+  Testability: testable in-house
+  Risk if wrong: High: if the local twin also stops (as on 10-11), nothing outside the pipeline alarms.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1168
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1169:
+  Date surfaced: 2026-10-17
+  Statement: [inferred] Advisories repeated in run output are presumed eventually to be acted on. The deferred monitor's split-the-watch-list advice is on its 42nd repetition (file ~840 KB); the re-ID request and the H-Drive alert also repeat daily. No job counts repetitions toward an escalation threshold.
+  Evidence it was operative: 3bc85248; e5ed166a; def0ca84
+  Why it was unstated: obvious to participants
+  Type: methodological
+  Related decisions: PRESUMPTION-1162; validated_premises.md ~line 2782 (warning is not a control; habituation)
+  Testability: testable in-house
+  Risk if wrong: Medium: repeated advice habituates and becomes noise.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1169
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-17 transcripts.
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-17 (local). **7 items (1163-1169)**: architectural 1 · structural 1 · methodological 2 · epistemic 2 · normative 1; risk: High 3 · Medium 4. Checked against 14a 1854-1874 and PRESUMPTION-1156..1162. Recurrences not re-surfaced: DB-write recency as liveness (1156, OPEN-266), first-writer deferral (1159), budget overrun (1148). 1164 extends 1099; 1165 applies PREMISE-239; 1168 applies ASSUMPTION-1871 to 14a/14b; 1169 extends 1162.*

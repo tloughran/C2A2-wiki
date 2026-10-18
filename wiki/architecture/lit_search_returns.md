@@ -51526,3 +51526,49 @@ DISPOSITION-1093:
 - Budget, fail loud: the search subagents used about 151k (15a) and 126k (15b) tokens, well over the 4k per-task and 30k per-session budget in Tom's standing rules.
 - Superseded MONITOR entries (621, 634, 635, 637, 473) were not edited; their successors are PREMISE-238, MONITOR-693, PREMISE-239, MONITOR-694, MONITOR-695.
 - Backlog remaining (fail loud): 131 bare literature-lane items before this run; 126 remain.
+
+
+## 2026-10-18 — c2a2-lit-search-pipeline (local run local-6a3310ea-2026-10-18): PRESUMPTION-1166
+
+### 15a returns (2026-10-18)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1166
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (handover/escalation practices contain damage); Weak (unattended operation with periodic review is safe per se)
+  Key source: Bainbridge, L., 1983. "Ironies of Automation." Automatica 19(6):775-779 (with Parasuraman, Mouloua & Molloy 1996, Human Factors 38(4):665-679)
+  Summary: The literature does not treat supervisor absence as benign, but it does support specific mitigations: automatic alarms and shutdown where stopping is cheap, failures made obvious, periodic hand-back of control to the human, and structured handoff. C2A2's slow batch pipelines, which are cheap to stop, are Bainbridge's easy case, but only if those properties actually hold.
+  NOVELTY-FLAG (configuration level only): nothing found on unattended LLM-agent pipelines with a human absent for days and agentic monitors.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1166_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Original item: PRESUMPTION-1166 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search FOR | Current status: SEARCHED-15a
+
+### 15b returns (2026-10-18)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1166
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate-to-Strong
+  Key source: Bainbridge, L., 1983. "Ironies of Automation." Automatica 19(6):775-779
+  Specific risk: Unattended pipelines can produce plausible-but-wrong output (bad citations, wrong status tags, duplicate runs) that periodic review approves. An out-of-the-loop supervisor reliably misses rare failures, and frequent flags get skimmed.
+  Summary: Passive supervision degrades as automation improves (Endsley & Kiris 1995; Parasuraman & Manzey 2010; Onnasch et al. meta-analysis), and training does not remove it. Handover and alerting fail when the state record is incomplete or alerts are too frequent (Piper Alpha / Cullen 1990; alarm-fatigue literature). Steelman: C2A2's failures are slow and reversible.
+  CANDIDATE SYSTEMIC-RISK (High; noted in result file, no separate flag file): safety depends on an absent supervisor later catching silent failures; likely shared by every scheduled unattended pipeline, incl. this 14→15 chain and PRESUMPTION-1149.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1166_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Original item: PRESUMPTION-1166 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search AGAINST | Current status: SEARCHED-15b
+
+### 15c dispositions (2026-10-18)
+DISPOSITION-1094:
+  Date: 2026-10-18 | Item: PRESUMPTION-1166 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 0 (10-17 intake)
+  15a: PARTIALLY-SUPPORTED (Moderate on mitigations; Weak on "unattended is safe per se") | 15b: PARTIALLY-CHALLENGED (Moderate-to-Strong)
+  Net assessment: Both directions agree on the core finding: supervisor absence is not benign, and the damage is limited only by specific design properties (failures made obvious, cheap stopping, a complete handover record, alerts kept rare, periodic hand-back to the human). 15a's support is for those mitigations, not for the presumption itself. 15b's challenge hits the presumption's central claim, that periodic later review catches silent failures.
+  Disposition: REVISE (REVISE-520, Medium urgency)
+  Reasoning: A PRESUMPTION challenged at moderate-to-strong on its central claim leans REVISE. In-house record supports the challenge in-domain: double runs that overwrote files (10-01, 10-15) were caught by luck of observation, not by design, and REVISE-050 (the review gate presumes an available supervisor) has been AWAITING since 2026-05-24. Urgency is Medium, not High: the evidence is mostly abstract-level and from other domains (aviation, process plant, driving, healthcare); C2A2 failures are slow and reversible (15b's steelman); and adding another High flag to an unanswered queue would repeat the alert-fatigue failure 15b describes.
+  Consistency: no INCORPORATE issued. Consistent with PREMISE-073 (unattended high-impact actions = report, not mutate), the PREMISE at validated_premises.md ~l.2155 (human-on-the-loop as steady state), and PREMISE-237 (an all-clear names its sources). Related to REVISE-050, REVISE-515 and REVISE-519.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1166 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1166_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1166_against.md
+
+### Evidence-quality notes (2026-10-18)
+- 15a and 15b ran as separate subagents with no shared context; each reported it did not open the other direction's directory. Shared key source (Bainbridge 1983) counted once by 15c. 15a read Bainbridge 1983 and Patterson et al. 2004 in full; 15b read no primary paper in full (Bainbridge only via a quoted secondary summary). Endsley & Kiris 1995 and Parasuraman et al. 1996 were read at abstract level by both. No fetch failures reported.
+- 15b states that the Onnasch et al. volume/issue were taken from memory, not from a source, and that the year differs between records (2013/2014). Treat that citation's details as UNVERIFIED.
+- Neither side searched SRE/on-call practice, alarm-management standards (EEMUA 191, ISA-18.2) or Sheridan's supervisory-control books; both rate the search as preliminary.
+- Scope, fail loud: this run processed only the new 10-17 literature intake (1 item). The backlog was not touched: 126 bare literature-lane items before and after this run. This was an orchestrator choice, made because of the per-session budget overruns stated in ASSUMPTION-1783 and the 10-17 notes.
+- Budget, fail loud: the search subagents used about 111k (15a) and 92k (15b) tokens, well over the 4k per-task and 30k per-session budgets in Tom's standing rules.

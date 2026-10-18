@@ -78,3 +78,18 @@ The sewing agent has asked twice for a paired Carroll × Arkani-Hamed epistemolo
 **Synthesis claim.** These are not straightforwardly contradictory, and the entry should be written as a question rather than a verdict — Arkani-Hamed's claim is about analytic and computational structure, Carroll's is ontological. But the question is real and Carroll is the right person to state its standard: does structural simplicity carry any evidential weight about what is fundamental? Physics has repeatedly rewarded the assumption that it does, and Carroll's own Bayesian methodology gives him the apparatus to say whether that track record is a licensed prior or a habit. He has argued simplicity into physics-side disputes before; here the simplicity points away from his ontology.
 
 **Open question the wiki cannot yet answer.** What Bayesian standard would settle it? If simplicity-of-representation is admitted as evidence about fundamentality, the correlator result counts against wavefunction realism. If it is not, Carroll owes an account of why the same intuition is admissible when it favours Everett — the argument that Everett is simpler because it postulates only the wave function. The wiki cannot decide this and should not try; what it can do is refuse to let the two uses of simplicity pass unexamined in the same tradition.
+
+---
+
+## A weak signal against naturalness
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint.md` (0 backlinks).
+
+**Why it sits here:** Carroll's Mindscape 370 (one 2.8 sigma LZ event) beside Arkani-Hamed's naturalness program.
+
+**Synthesis claim.** A heavy weakly interacting particle would be a data point in the hierarchy-problem debate, and the 'expand the portfolio' turn is how a naturalness-driven program responds to null results. Both are provisional until a second experiment sees the event.
+
+**Open question the wiki cannot yet answer:** If the LZ event is confirmed at about 1 TeV, which of Arkani-Hamed's naturalness-adjacent proposals predicted it, and which are hurt?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint]]

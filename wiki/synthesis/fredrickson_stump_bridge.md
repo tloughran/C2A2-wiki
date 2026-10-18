@@ -36,3 +36,18 @@ The untested premise, and it is load-bearing: **are they talking about the same 
 **Note on sources:** Stump's developmental-psychology citations are 2004-2005, and the mirror-neuron consensus she reports (Gallese et al. 2004) has been substantially contested since. The 2025 reprint does not update them. That weakens the empirical scaffolding, not the metaphysical argument, which does not depend on it.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-17_stump_natural-law-metaphysics-creator-antireductionism]]
+
+---
+
+## Meaning through shared presence
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-08_fredrickson_shared-positivity-meaning-in-life.md` (0 backlinks).
+
+**Why it sits here:** Prinzing, Le Nguyen and Fredrickson on resonance and meaning beside Stump's second-person account of flourishing.
+
+**Synthesis claim.** Resonance predicts later meaning, with social resources mediating, which matches a view where meaning follows from personal relation. The empirical link is modest (Study 4 mediation p = .073), so the bridge is suggestive.
+
+**Open question the wiki cannot yet answer:** Does Stump's account predict that meaning from resonance requires a second person, and could the daily data distinguish a partner from a group?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-08_fredrickson_shared-positivity-meaning-in-life]]

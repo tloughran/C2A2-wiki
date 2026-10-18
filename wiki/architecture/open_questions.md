@@ -3676,3 +3676,32 @@ OPEN-264 (update 2026-10-16): Seventh local pass under the 10-03 rule. All 11 se
 OPEN-266 (update 2026-10-16): Recurred, sharper. Project status: "OpenStory looks live … Nothing is broken." Scheduler health, same morning: 5 FAIL, including the OpenStory watchdog (H-Drive unmounted, ingest STOPPED), and no cloud-routine coverage since 10-06 (ASSUMPTION-1839, -1841; PRESUMPTION-1156, -1160). PREMISE-237 still not adopted by the status job.
 OPEN-267 (update 2026-10-16): Partly resolved by the daily run: the two waiting cards with reused IDs were dispositioned (pending/ now holds 1 file [verified]). Referents were inferred from the review page; IDs still need renumbering, and the ledger had marked one card filed because of the clash (ASSUMPTION-1842, -1843; PRESUMPTION-1157).
 OPEN-268 (update 2026-10-16): Lit pipeline ran lock-held today; REVISE-519 (from PRESUMPTION-1149) says the lock probably cannot stop the cloud twin and recommends removing one registration. Tom's call. The 10-15 lock file is still at wiki/review/lit_pipeline.lock, marked RELEASED [verified].
+
+OPEN-270:
+  Raised: 2026-10-17 by 14a/14b (ASSUMPTION-1874; PRESUMPTION-1166)
+  Question: What should the scheduled jobs do while Tom is away (Iceland, from 2026-10-18)? Which jobs pause, and where do "needs Tom" items go so they are not lost: H-Drive, 10-13 re-IDs, WATCH-003, PREMISE-124, Routines connector, Wright card, sewing owner? The chat scrape reports the pause list is unfinished.
+  Needs: **Tom** (before departure)
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-270
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-271:
+  Raised: 2026-10-17 by 14a/14b (ASSUMPTION-1869; PRESUMPTION-1167)
+  Question: Who owns the sewing pass (WATCH-006; MacIntyre PRS-07 "pending the sewing pass")? The scheduler lists c2a2-sewing-agent-weekly and the bootstrap audit, and sewing_agent_log.md shows a 10-11 run [verified], but there is no agents/*.md definition. Which registry is canonical for "this agent exists"?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-271
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-260 (update 2026-10-17): Twins again: deferred action monitor (two runs about a minute apart; a run-time check prevented double-tagging), evening sync, and morning chat scrape (an earlier run had written the summary). The cloud 14a/14b twin wrote `changelog/2026-10-17_changes.md` at 23:31 EDT 10-16, its seventh consecutive "NOT RUN" stub (PRESUMPTION-1168). This local pass for local day 10-17 appends to that same file, because today's date matches it. The stub's own text, which describes local day 10-16, is left unchanged.
+OPEN-264 (update 2026-10-17): Eighth local pass under the 10-03 rule. 10 sessions read, all with content.
+OPEN-266 (update 2026-10-17): Recurred unchanged for the fourth time. Project status: "Nothing is broken". The same morning, scheduler health logged 5 FAIL, including the OpenStory watchdog: H-Drive unmounted, ingest STOPPED (ASSUMPTION-1863, -1862). PREMISE-237 has still not been adopted by the status job.
+OPEN-267 (update 2026-10-17): IDs still not renumbered; the daily run and the deferred monitor both repeat the request (ASSUMPTION-1857). Pending/ holds 1 file (Carroll PROP-2026-10-16-001) [verified by ls].

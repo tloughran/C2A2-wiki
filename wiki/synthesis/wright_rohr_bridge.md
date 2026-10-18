@@ -271,3 +271,48 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Open question the wiki cannot yet answer:** If creation is already a continuous sacrament, what does an ecclesial sacrament add, in Rohr's terms, that Wright could accept?
 
 **Wikilinks (sewing, 2026-10-11):** [[2026-10-04_rohr_gods-resting-place-francis-nature-sacrament]] [[2026-10-04_wright_ask-ntw-sep28-rapture-sacraments-heaven-earth]]
+
+---
+
+## Homing: God's return to Zion or the soul's return home
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-18_wright_into-the-heart-of-isaiah-40-55.md`, `inbox/proposals/pending/2026-10-18_rohr_returning-home-weekly-summary.md` (0 backlinks).
+
+**Why it sits here:** Wright's Isaiah 40-55 (exile ends through God's own return) and Rohr's 'Returning Home' week (homesickness as echo of God's longing) were filed the same day.
+
+**Synthesis claim.** Both make homecoming the shape of salvation and both put God's initiative first. Wright locates it in a people's history; Rohr locates it in the individual's longing. The overlap suggests the contemplative reading is the personal enactment of the covenant one. The Isaiah card rests on the publisher page, so this is provisional.
+
+**Open question the wiki cannot yet answer:** Does Rohr's 'true self' have any counterpart to Isaiah's corporate Servant, and does Wright's homecoming leave room for a homesickness felt before the return?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_into-the-heart-of-isaiah-40-55]] [[2026-10-18_rohr_returning-home-weekly-summary]]
+
+---
+
+## Interpretive key: love or covenant story
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-18_wright_ask-ntw-bonus-gods-homecoming-ch10-bible-as-story.md` (0 backlinks).
+
+**Why it sits here:** Wright's God's Homecoming ch. 10 (read Scripture as one story, tested against the plot) beside Rohr's 'lens of love' reading.
+
+**Synthesis claim.** Both reject proof-texting and both name a single key. Wright's key is narrative (creation, Israel, Jesus, new creation); Rohr's is love as non-dual union. They agree on method and differ on what counts as a misreading, so the same verse can pass one test and fail the other.
+
+**Open question the wiki cannot yet answer:** Is there a passage where the covenant-story key and the love key give different verdicts, and would either oracle accept the other's verdict?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_ask-ntw-bonus-gods-homecoming-ch10-bible-as-story]]
+
+---
+
+## Forensic acquittal versus inclusion
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification.md` (0 backlinks).
+
+**Why it sits here:** Wright's reply to Piper on justification beside Rohr's 'everyone is chosen' framing.
+
+**Synthesis claim.** Both reject a purely forensic reading of salvation. Wright keeps a boundary (the covenant people, held with individual faith); Rohr removes it. The shared critique hides a real difference on who is in.
+
+**Open question the wiki cannot yet answer:** Can covenant-membership language be made universal without losing what Wright means by it, and would he say so?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification]]

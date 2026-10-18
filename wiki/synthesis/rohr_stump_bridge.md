@@ -151,3 +151,18 @@ The second card sharpens this into a decidable question. Rohr grounds human dign
 **Open question the wiki cannot yet answer:** Does the Thomistic account of corporate substance entail that exclusion-defined groups are not genuine unities, and if so what does it say about the identity of a group that defines itself over against an enemy?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-27_rohr_myth-of-redemptive-violence]]
+
+---
+
+## Longing as God's own
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-18_rohr_returning-home-weekly-summary.md` (0 backlinks).
+
+**Why it sits here:** Rohr's 'Returning Home' week (our longing echoes God's longing for us) beside Stump on love as union.
+
+**Synthesis claim.** Fulfilment as two longings meeting is a mutual-desire model of union. Stump's Aquinas can supply the metaphysics of why divine desire is not need; Rohr supplies the experience. The pairing says the experience is evidence for the metaphysics only if God's desire is not deficiency.
+
+**Open question the wiki cannot yet answer:** What would a Thomist mean by God 'longing' for us without implying lack, and does Rohr need that clarification?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-18_rohr_returning-home-weekly-summary]]

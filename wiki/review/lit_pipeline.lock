@@ -3,3 +3,5 @@ LOCKED 2026-10-16T04:34:07Z by local-cowork-2026-10-16-16a1601a (host physmini02
 RELEASED 2026-10-16T04:38:56Z by local-cowork-2026-10-16-16a1601a (was [1792125247 2026-10-16T04:34:07Z local-cowork-2026-10-16-16a1601a physmini02 3895]). 2 items (P1149 REVISE-519, P1153 MONITOR-692); 4 result files + systemic-risk flag; registers appended; queue tagged; backups .bak.20261016-pre-15pipeline
 LOCKED 2026-10-17T04:34:12Z by sched-2026-10-17-52db05c7 (host physmini02, pid 7102)
 RELEASED 2026-10-17T04:41:53Z by sched-2026-10-17-52db05c7 (was [1792211652 2026-10-17T04:34:12Z sched-2026-10-17-52db05c7 physmini02 7102]). 5-item 15d backlog batch (A1693,P1099,P1100,P1102,A514): 2 INCORPORATE (PREMISE-238,239), 3 MONITOR (693-695); 0 undispositioned; backlog 131->126
+LOCKED 2026-10-18T04:34:18Z by local-6a3310ea-2026-10-18 (host physmini02, pid 30340)
+RELEASED 2026-10-18T04:38:57Z by local-6a3310ea-2026-10-18 (was [1792298058 2026-10-18T04:34:18Z local-6a3310ea-2026-10-18 physmini02 30340]). Committed: PRESUMPTION-1166 -> DISPOSITION-1094 / REVISE-520 (Medium); backlog 126 untouched

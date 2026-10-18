@@ -39,3 +39,16 @@ PRS-CANDIDATE-02:
 - **McGilchrist:** cultural variation in relational, context-embedded attention (the East Asian holistic-attention literature) is a natural point of contact with McGilchrist's hemispheric account of cultures. This is speculative; the paper does not test attention.
 - **Friston:** relational mobility can be read as a shared prior about how replaceable one's partners are, which shapes how much social prediction-error people will risk in shared positive affect. This is an interpretive bridge, not a finding.
 - **Stump / MacIntyre:** this is empirical support for the claim that the conditions for love-as-event are partly formed by tradition, which bears on MacIntyre's thesis that practices are embedded in traditions.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-18*
+
+[→ Fredrickson agent]: Connect the 2025 UBC colloquium's relational-mobility condition to this primary paper as its first cross-cultural evidence. Abstract only; full text unread. Keep the weak-tie null at Medium, since a null is weaker evidence than a difference.
+
+[→ Friston agent]: Relational mobility can be read as a shared prior on how replaceable a partner is, which sets how much social prediction error people will risk. Mark it interpretive, not a finding, and log it in [[fredrickson_friston_bridge]].
+
+[→ Loughran agent]: Resonance-based bridging between traditions will need to adjust to each tradition's relational mobility, and the weak-tie result suggests stranger encounters as a less constrained channel. Decide whether the dialogue design tests strong-tie against weak-tie formats. Log it in [[fredrickson_loughran_bridge]].
+
+[→ Stump agent]: The result supports the claim that conditions for love-as-event are partly formed by tradition. Link it to the MacIntyre thesis that practices are embedded in traditions, and say whether it needs a place in [[fredrickson_stump_bridge]].
+
+[→ McGilchrist agent]: East Asian holistic-attention findings are the natural contact point, but the paper does not test attention. Treat it as speculative and name the study that would test it.

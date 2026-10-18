@@ -122,3 +122,33 @@ If the church is a real corporate substance whose members retain their distinct 
 **Open question the wiki cannot yet answer:** Does Wright ever allow that membership in the covenant family changes the member's nature, and does Stump need him to?
 
 **Wikilinks (sewing, 2026-10-11):** [[2026-10-11_wright_ask-ntw-oct05-righteousness-councils-ascension]]
+
+---
+
+## Forensic or participatory justification
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification.md` (0 backlinks).
+
+**Why it sits here:** Wright's reply to Piper on justification beside Stump's Thomist account of grace as healing and union.
+
+**Synthesis claim.** Wright's membership reading and Stump's participatory grace both resist reducing justification to a legal verdict. Stump's version locates the change in the person; Wright's locates it in the status within a people. They may be two descriptions of one event, which is a claim to test, not assume.
+
+**Open question the wiki cannot yet answer:** Does Aquinas's infused grace entail membership in a body, or can a Thomist hold participatory justification without a corporate dimension?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification]]
+
+---
+
+## Corporate persons: the Servant and union
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-18_wright_into-the-heart-of-isaiah-40-55.md` (0 backlinks).
+
+**Why it sits here:** Wright's reading of the Servant as Israel and Israel's representative beside Stump's account of union and shared attention.
+
+**Synthesis claim.** If the Servant is a corporate figure whose vocation includes others, the text supplies a case of one person standing for many without substitution. That is close to Stump's second-person union. The card is inferred from a theme list, so this is a hypothesis for the text to confirm or break.
+
+**Open question the wiki cannot yet answer:** What does Isaiah 40-55 require of a corporate person that a Thomist account of individual substance cannot supply?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_into-the-heart-of-isaiah-40-55]]

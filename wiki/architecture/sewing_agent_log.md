@@ -1635,3 +1635,72 @@ Each of the 10 pages was asserted after writing: original content is a prefix of
 Trigger trig_017Sh44YWEf69ay8WeTWhUfp fired again (scheduled 08:09, delivered 13:42). The 2026-10-11 census, CSV row and bootstrap report already existed from earlier today, so this firing re-ran nothing and modified no vault page. Recommendation from sewing_agent_bootstrap_2026-10-11.md stands: disable this one-time task (it duplicates the weekly sewing agent).
 
 *Logged by Sewing Agent, 2026-10-11 13:4x UTC.*
+
+
+---
+
+## Bootstrap audit firing (cloud, 2026-10-18)
+
+Census-only run 18: 4,756 / 803 / 98 / 5,657. CSV row, census and report written; no vault pages modified. See sewing_agent_bootstrap_2026-10-18.md. Recommendation stands: disable the one-time bootstrap task.
+
+*Logged by Sewing Agent, 2026-10-18.*
+
+---
+
+## Run: 2026-10-18 (Sunday, scheduled, ~08:45 UTC)
+
+**Resolver:** same as recent runs (stem, case-insensitive, credited to every file sharing the stem, self-links excluded, node_modules skipped).
+
+### Connectivity snapshot
+
+Pre-run census this firing: orphan 4,854, sparse 803, connected 98, total 5,755. Post-run: 4,834 / 803 / 118. **No new CSV row written:** `connectivity_log.csv` already holds a `2026-10-18` row (4,756 / 803 / 98 / 5,657) from the bootstrap audit this morning, and a second same-date row would break the series. The 98-page gap between the two same-day censuses is new cards filed since the bootstrap run (all new orphans).
+
+### Pages processed (backlinks before to after)
+
+| Page (under `inbox/proposals/`) | Before | After | Calls to |
+|---|---|---|---|
+| `pending/2026-10-18_rohr_returning-home-weekly-summary` | 0 | 3 | Rohr, Stump, Friston, Wright, Loughran |
+| `pending/2026-10-18_wright_ask-ntw-bonus-gods-homecoming-ch10-bible-as-story` | 0 | 2 | Wright, Rohr, McGilchrist, Loughran |
+| `pending/2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification` | 0 | 4 | Wright, Stump, Rohr, Loughran |
+| `pending/2026-10-18_wright_into-the-heart-of-isaiah-40-55` | 0 | 4 | Wright, Stump, Rohr, Loughran |
+| `pending/2026-10-16_carroll_mindscape-ama-october-2026` | 0 | 3 | Carroll, Friston, Hoffman, Wolfram, Arkani-Hamed, Loughran |
+| `approved/2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint` | 0 | 3 | Carroll, Arkani-Hamed, Loughran, Fredrickson |
+| `approved/2026-10-08_fredrickson_shared-positivity-meaning-in-life` | 0 | 3 | Fredrickson, Stump, McGilchrist, Loughran |
+| `approved/2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility` | 0 | 3 | Fredrickson, Friston, Loughran, Stump, McGilchrist |
+| `approved/2026-10-07_kastrup_ai-as-archetypal-urge` | 0 | 2 | Kastrup, McGilchrist, Levin, Wolfram, Loughran |
+| `approved/2026-10-05_friston_inferential-planning-frontal-cortex` | 0 | 2 | Friston, Hawkins, Levin |
+
+Selection: all 5 pending cards that had no calls (the 4 filed today plus the Carroll AMA), then the 5 approved cards carried over from the 10-11 backlog note. Left alone: `needs_review/` cards (macintyre PRS candidates, mcgilchrist wonderstruck, fredrickson BIPR), which await review; the Wolfram AI-expectations card (already has calls, still 0 backlinks); and the newer approved cards of 10-12 to 10-15 (Stump, Kastrup contender, Hawkins reference frames, Hoffman TRACE, Levin Kofman, three PRS-candidate explorer cards), which roll to next week along with Hawkins x3 (10-06) and the 09-23 to 09-24 batch.
+
+**Agentic calls injected: 44.** Loughran 9, Stump 5, Rohr 4, Wright 4, Friston 4, McGilchrist 4, Fredrickson 3, Carroll 2, Levin 2, Wolfram 2, Arkani-Hamed 2, Hoffman 1, Hawkins 1, Kastrup 1. Every addressee scored above 0.4; scores are my judgment, not computed.
+
+### Bridge notes (18 sections appended to 14 existing files; none created)
+
+`wright_rohr` (3 sections: homing, interpretive key, forensic vs inclusion), `stump_wright` (2), `carroll_loughran` (2), `fredrickson_loughran`, `rohr_stump`, `mcgilchrist_wright` (**file was zero bytes; seeded with a one-line title and this section**), `carroll_friston`, `arkanihamed_carroll`, `fredrickson_stump`, `fredrickson_friston`, `kastrup_mcgilchrist`, `kastrup_levin`, `friston_hawkins`, `friston_levin`. Capped at two bridges per page, so some pairs scoring above 0.5 got a call but no bridge (for example Carroll with Hoffman, Rohr with Friston, Kastrup with Loughran). Each carries a `**Wikilinks (sewing, 2026-10-18):**` line.
+
+### Worth Tom's attention
+
+1. **Two jobs still census the same graph on the same morning.** The bootstrap audit wrote the 10-18 CSV row first; this run therefore wrote none. The bootstrap task has now fired 18 times and its own report recommends disabling it. I did not disable it.
+2. **Three of today's four Wright/Rohr cards rest on publisher or episode descriptions.** The Isaiah card is the SPCK page; the Piper and ch. 10 cards are subscriber-episode blurbs. The calls tell Wright to hold confidence at Medium or Speculative until text or transcript is read. The ch. 10 card rates itself High on a blurb.
+3. **Carroll AMA transcript is incomplete** (about 27k of 127k characters unread, including AI-risk answers). The call asks for a re-fetch.
+4. **Detector-design idea worth your eye:** the Mindscape 370 card proposes salting (injecting known synthetic cross-tradition bridges) to measure the pattern-detector's false-positive rate. The Loughran call and `carroll_loughran_bridge` ask whether anyone has measured it.
+5. **Attribution correction queued:** the Friston inferential-planning card is Pezzulo-led; Friston is a middle co-author.
+6. **Backlog rolling over:** about 20 approved cards with 0 backlinks, plus 451 inbox/proposals/traditions orphans in total.
+7. **Standing:** orphan count is still dominated by `architecture/` and `inbox/`. Rule 6 token budget exceeded again.
+
+### Verification (fail-loud)
+
+Before writing: every page asserted to have no existing Agentic Calls section, every addressee scored above 0.4, every wikilink resolved to an existing stem, every bridge file present. After writing: each page's original content is a prefix of the new file with exactly one `## Agentic Calls` heading and one `Sewing Agent on 2026-10-18` stamp; each bridge file's prior content is a prefix of the new one. Post-run, 24 files are newer than the pre-run census, exactly the 10 pages and 14 bridge files. Nothing deleted or overwritten; no HTML, JS or CSS touched; nothing committed.
+
+*Logged by Sewing Agent on 2026-10-18.*
+
+
+---
+
+## Duplicate firing (2026-10-18, 08:43 UTC): no-op
+
+A full sewing run for 2026-10-18 is already logged above (10 pages, 44 calls, 18 bridge sections), and `connectivity_log.csv` already holds a 2026-10-18 row. No `.md` file in the vault is newer than this log, so nothing has changed since that run. Running again would re-process the same backlog and add a second same-date CSV row, so this firing wrote nothing except this note. Pages processed: 0. Calls: 0. Bridges: 0.
+
+**Worth Tom's attention:** this is the third census-type firing on 10-18 (bootstrap audit, the full run, this one). Either the weekly task is registered twice or two schedules overlap. Check the scheduler entries for `c2a2-sewing-agent-weekly`. I did not change any schedule.
+
+*Logged by Sewing Agent on 2026-10-18.*

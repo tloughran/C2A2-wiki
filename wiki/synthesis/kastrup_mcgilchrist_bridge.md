@@ -107,3 +107,18 @@ Harpur's objection to the cockpit metaphor is, in effect, an objection to the **
 **Open question the wiki cannot yet answer:** Does McGilchrist's political case depend on his cognitive case at all? If the essay's exhibits stand without the hemispheric frame, then open question 20 resolves toward "institutions" and the tradition's metaphysics becomes optional for its diagnosis, which the tradition may not want.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-02_mcgilchrist_can-you-still-be-human]]
+
+---
+
+## Two diagnoses of the AI drive
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-07_kastrup_ai-as-archetypal-urge.md` (0 backlinks).
+
+**Why it sits here:** Kastrup's 'AI as archetypal urge' session beside McGilchrist's UnHerd talk on AI and the human soul.
+
+**Synthesis claim.** McGilchrist reads AI as left-hemisphere processing without right-hemisphere ground; Kastrup reads the building of it as an archetypal urge. Both place the problem in the human mind, not in the machine, and both are unverified on Kastrup's side until a transcript exists.
+
+**Open question the wiki cannot yet answer:** Does an archetypal urge predict the pace of AI development better than a left-hemisphere bias, and what observation would separate them?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-07_kastrup_ai-as-archetypal-urge]]

@@ -121,3 +121,18 @@ The disanalogy is equally specific and should be recorded with it. VOCUS2 salien
 **Open question the wiki cannot yet answer:** Is Monty's burst trigger expressible as a free-energy or expected-free-energy threshold, and does the compositional hierarchy have a counterpart in hierarchical generative models that predicts its convergence advantage?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-29_hawkins_tbp-two-year-report]]
+
+---
+
+## Parallel inferred slots or sequence memory
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-05_friston_inferential-planning-frontal-cortex.md` (0 backlinks).
+
+**Why it sits here:** Donnarumma, Parr, Friston, Whittington and Pezzulo's planning model beside Hawkins's Thousand Brains sequence memory.
+
+**Synthesis claim.** The model holds every plan step at once in near-orthogonal subspaces and reuses them for forward and backward recall. Sequence memory in Thousand Brains stores order differently. They can be compared on the rank-subspace structure, which is an empirical question.
+
+**Open question the wiki cannot yet answer:** Do the two accounts make different predictions about backward recall and subspace reuse, and has Monty been run on a variable-direction sequence task?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-05_friston_inferential-planning-frontal-cortex]]

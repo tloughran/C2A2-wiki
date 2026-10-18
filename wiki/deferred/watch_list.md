@@ -7145,3 +7145,18 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 - **WATCH-006, on ownership.** There is no sewing-agent file in `agents/`. The design is in `agent_architecture_review.md` Part 2. The ingest run already knows about this pass: `traditions/macintyre/prs_triplets.md` PRS-07 says "filed separately pending the sewing pass Tom requested on PROP-2026-10-13-001". The question for Tom stands: which scheduled task runs the sewing pass?
 
 *Addendum completed 2026-10-17.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-18
+
+  Intake: all 4 `needs_review/` files already carry [TRACKED-16] (Carroll→WATCH-001 resolved; Fredrickson→004; MacIntyre→006; McGilchrist→005). No new items.
+  Event-trigger sweep (no on-cadence checks due): `review/archive/` still 25 files, latest `2026-10-16_decisions.md`, so there is no new decision file and no off-cadence trigger for WATCH-003. No file in `review/archive/`, `inbox/proposals/` or `deferred/` is newer than the 10-17 watch-list write. `pending/` holds 1 card (Carroll AMA 10-16, unrelated). No revised copy of PROP-2026-10-01-001, -10-13-001 or -10-14-002 is in `pending/`. Fredrickson file unchanged since 10-08, and the flagged sentence is still at line 38. `traditions/macintyre/prs_triplets.md` unchanged since 10-16, so the sewing pass has not run.
+  Items checked: 0 on-cadence (no counters incremented); the event sweep above is recorded but not counted as a check.
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003, 21 checks; recommendation unchanged: Escalate to Tom)
+  New items added: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-10-20; WATCH-005/-006 on 2026-10-24.
+
+**Open for Tom (unchanged):** paste the Wonderstruck transcript (WATCH-005); name the owner of the sewing pass (WATCH-006); a one-line ruling on the INTEGRITY FLAG (WATCH-003); the Fredrickson CT-Signals edit (WATCH-004); the PROP-2026-10-13-001/-002 ID collision; a possible double schedule; splitting the ~840 KB watch list.
+
+*Run completed 2026-10-18 (single instance; no concurrent writer observed).*

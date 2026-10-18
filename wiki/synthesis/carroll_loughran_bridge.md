@@ -31,3 +31,33 @@
 **Open question the wiki cannot yet answer:** Diamond's comparative frame spans four institution types — states, corporations, religions, sports teams — chosen so that structural constraints differ sharply. Which of those is a *tradition* in MacIntyre's sense, and does the leadership effect vary with that? If individual effects are largest where the structural constraints are weakest, and traditions are the most heavily constrained of the four, the project's premise is being tested in the least favourable case. The wiki has no view on this and should have one before the transcript is read, so the reading is not motivated.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-11_carroll_mindscape-367-diamond-leaders]]
+
+---
+
+## Philosophy as advocacy
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-16_carroll_mindscape-ama-october-2026.md` (0 backlinks).
+
+**Why it sits here:** Carroll's October AMA claim that philosophy should advocate answers beside Loughran's tradition-maturity thread.
+
+**Synthesis claim.** If a tradition matures by defending answers and not by mapping options, the wiki's neutral cataloguing may be a stage and not an end. Carroll's point that a work's history matters beyond its content supports giving agents a record, not just a position.
+
+**Open question the wiki cannot yet answer:** What would count as a tradition in this wiki having defended an answer, as opposed to having documented one?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-16_carroll_mindscape-ama-october-2026]]
+
+---
+
+## Salting the detector
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint.md` (0 backlinks).
+
+**Why it sits here:** LZ's blinding and salting as described in Mindscape 370, beside the C2A2 pattern-detector.
+
+**Synthesis claim.** Injecting known synthetic cross-tradition bridges would give the detector a measured hit rate and false-positive rate before any flagged paradigm-shift candidate is trusted. This is the same control LZ used to make a weak event credible.
+
+**Open question the wiki cannot yet answer:** What is the false-positive rate of the detector on a set of salted bridges, and has anyone measured it?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint]]

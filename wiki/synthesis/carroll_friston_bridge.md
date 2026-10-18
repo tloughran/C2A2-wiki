@@ -55,3 +55,18 @@ So the honest version of the bridge is uncomfortable for the Friston side: Carro
 **Open question the wiki cannot yet answer:** Are the two criteria the same criterion? Both pick out partitions that support *stable, quasi-autonomous, approximately-closed* subsystems, and decoherence is the mechanism cited on the physics side while conditional independence is the mechanism cited on the inference side. Whether those are two descriptions of one thing — the conditions under which a subsystem's internal dynamics can be written without reference to the rest — is a technical question nobody in the network has posed, and it is posable. If the answer is yes, the anthropic and active-inference literatures have been solving one problem twice.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-15_carroll_ama-september-2026]]
+
+---
+
+## Cognitive instability and the coupled world model
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-16_carroll_mindscape-ama-october-2026.md` (0 backlinks).
+
+**Why it sits here:** Carroll's Boltzmann-brain 'cognitive instability' answer in the October AMA beside Friston's requirement of a coupled generative model.
+
+**Synthesis claim.** A fluctuation brain has memories with no causal link to a real past, so its inferences have no grounds. Active inference already says reliable inference needs a model coupled to the world through a blanket. Carroll's criterion and Friston's requirement are one argument from two sides. Only the first 100k characters of the transcript were read.
+
+**Open question the wiki cannot yet answer:** Can the Boltzmann-brain objection be stated as a precise condition on a Markov blanket, and do any Friston models violate it?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-16_carroll_mindscape-ama-october-2026]]

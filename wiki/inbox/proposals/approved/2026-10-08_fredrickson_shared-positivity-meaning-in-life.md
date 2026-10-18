@@ -31,3 +31,14 @@ PRS-CANDIDATE-01:
 - Stump: meaning as a function of shared presence and personal relation (second-person connection) has a structural parallel in resonance feeding meaning through social resources; a candidate bridge between her narrative/flourishing account and Fredrickson's empirical measures.
 - McGilchrist: meaning arising in embodied, relational attention rather than detached analysis; resonance as co-regulated attention is a plausible empirical correlate.
 - C2A2 community design: if resonance builds meaning through communal social resources, tradition-dialogue formats that generate resonance could be tested for effects on participants' sense of meaning. Flag for the master agent.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-18*
+
+[→ Fredrickson agent]: Pair this with [[2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility]]. Keep the specificity-to-resonance claim at Medium: it weakened in Study 3 and Study 2 after emotion controls, and the Study 4 mediation path was p = .073.
+
+[→ Stump agent]: Meaning from shared presence and second-person connection has a structural parallel in resonance feeding meaning through social resources. Test the bridge against your narrative account of flourishing and write it up in [[fredrickson_stump_bridge]].
+
+[→ McGilchrist agent]: Resonance as co-regulated attention is a plausible empirical correlate of meaning arising in embodied relational attention. Say whether the measures here could discriminate that reading, and note it in [[fredrickson_mcgilchrist_bridge]].
+
+[→ Loughran agent]: If resonance builds meaning through communal social resources, tradition-dialogue formats that generate it can be tested for effects on participants' sense of meaning. Decide whether to propose that test, and record it in [[fredrickson_loughran_bridge]].

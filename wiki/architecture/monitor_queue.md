@@ -25519,3 +25519,34 @@ MONITOR-695:
   Next 15d check: 2026-10-24
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Original item: ASSUMPTION-514 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-514_retrigger-2026-10-17_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-514_retrigger-2026-10-17_against.md
+
+
+## 2026-10-18 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-10-11 (7 days). Day 18, so the **monthly cycle does not fire** (next first Sunday: 2026-11-01). Today's 15abc run finished 00:38 local, before this run. Backups: `*.md.bak.20261018-pre-15d` for monitor_queue, for_lit_search, validated_premises. validated_premises.md not modified. Sandbox bash worked.
+
+### Consumption of the 2026-10-11 re-trigger cohort (57)
+- **Literature (9/9 consumed):** -609 → REVISE-469; -610 → MONITOR-688; -617 → PREMISE-230; -618 → REVISE-493; -636 → PREMISE-229 (all 10-12); -621 → PREMISE-238; -634 → MONITOR-693; -635 → PREMISE-239; -637 → MONITOR-694 (all 10-17).
+- **Bookkeeping gap (observation, not a disposition):** 15c's 10-17 run appended MONITOR-693..695 but no status notes for MONITOR-621, -634, -635, -637. Their closures are recorded only as DISPOSITIONED-15c tags in for_lit_search.md. 15d records them here; the formal status notes are owed by 15c. MONITOR-695 succeeds MONITOR-473, whose status note is also absent.
+- **Non-literature (0/48 consumed):** 44 empirical, MONITOR-683 (Agent 19), MONITOR-629/-669/-670 (Tom). No tags at all after 7 days. Cycle counts held (a cycle is a search, not a calendar tick). Cohort next_check 2026-10-18 → **2026-10-25**; not duplicate-queued.
+
+### Weekly cycle — 12 overdue items re-queued (section dated 2026-10-18 in for_lit_search.md)
+Each was confirmed overdue from its own intake date or `Next 15d check`, and none had a later 15c status note. Every entry now has Last checked 2026-10-18 and Next 15d check **2026-10-25**.
+- **Literature [QUEUED] (7):** MONITOR-672, -673, -674, -675, -676, -677 (cycle 0 → 1; due since 10-12, first 15d cycle); MONITOR-681 (cycle 1 → 2). For 677 and 681 the lane is 15d's reading, since 15c gave no routing note; each also has an in-house limb, and 681(a) may be paywalled beyond reach.
+- **Empirical [QUEUED-EMPIRICAL] (5):** MONITOR-678, -679, -680 (cycle 1 → 2; due since 10-13); -684 (due 10-15) and -686 (due 10-16), both cycle 1 → 2, per 15c routing notes.
+
+### Not yet due
+MONITOR-688 (10-19), -689 (10-20), -690 (10-21), -691 (no field; intake 10-15 → 10-22), -685 and -692 (10-23), -693..695 (10-24), -548 (10-28), -600 (11-01), -656 (11-03), -687 (11-11). The monthly/low-priority cohort (MONITOR-001..344) is processed on monthly runs only; it was **not re-verified**, and the full register reparse is still owed (carried from 09-27). Event-driven / bound items -003, -041, -154, -544, -612 untouched.
+
+### STALE-MONITOR-FLAG
+- **MONITOR-403:** the 10-11 flag (ESCALATE to Tom) stands. It is not re-issued, and there is no response to it. The item is in week 6 at cycle 5, the evidence is unchanged since 09-16, and the in-house correlation has not been run.
+- **No new flag.** No other item reached 4+ cycles without a change in evidence. MONITOR-688 (cycle 4) moved partially (the metabolism snapshot was regenerated 10-08), so it does not qualify. 688's own REVISE trigger is 10-26.
+- Watch list: MONITOR-682 and -683 (cycle 2) have had no movement since 10-07 and no consumer. They would reach the threshold around 11-01 only if a cycle actually runs.
+
+### Trajectories
+- 672–677: baseline (first 15d cycle). 678–681, 684, 686: supporting stable / challenging stable / no new sources; every owed limb is non-literature apart from 681(a).
+- Empirical lane: **none.** 0 of 48 consumed this week. ESCALATION 2 (no runner for the empirical lane) grows to 49 standing items once today's 5 are added (44 + 5; plus -683 and the 3 awaiting Tom).
+- Observation only, for 15c: `lit_pipeline.lock` still reads "RELEASED 2026-10-15T04:39:45Z…", with mtime 10-15. Yet the 10-18 15abc run note says the lock was ACQUIRED and released. Either the run used a different lock or it did not write the file. This bears on MONITOR-631, -649, -657, -665 (the run-lock items).
+- ESCALATIONS 1–5 are carried forward unchanged and were not independently re-verified.
+
+**Run summary:** 12 re-queued (7 literature, 5 empirical); 48 standing non-literature blocks held, not duplicated; 9/9 literature items from 10-11 consumed; 0 premise re-checks (monthly not due); 0 new stale flags (the MONITOR-403 flag stands); the monthly/low-priority cohort was not re-verified. Budget: over the 4k/30k guideline (register size), as in prior runs.

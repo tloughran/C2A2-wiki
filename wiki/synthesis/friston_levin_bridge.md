@@ -171,3 +171,18 @@ The Thought Economics interview restates bioelectric "cognitive glue" in Levin's
 **Open question the wiki cannot yet answer:** Does a blanket drawn at the sub-cellular level partition the system in a way an intervention can confirm, and if the section turns out to restate the preprint, which other source supplies the test?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-28_levin_machines-all-the-way-up-final-version]]
+
+---
+
+## Whole-trajectory inference and target morphology
+*Sewing Agent, 2026-10-18*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-10-05_friston_inferential-planning-frontal-cortex.md` (0 backlinks).
+
+**Why it sits here:** The planning-as-inference paper (Pezzulo corresponding author) beside Levin's target-morphology framing.
+
+**Synthesis claim.** Inferring a whole path toward a goal state at once has the same form as a morphogenetic target. It is a shared formalism, not shared evidence, and the card marks it Speculative.
+
+**Open question the wiki cannot yet answer:** Could a bioelectric pattern-memory be modelled as parallel slots over future states, and what would falsify it?
+
+**Wikilinks (sewing, 2026-10-18):** [[2026-10-05_friston_inferential-planning-frontal-cortex]]
