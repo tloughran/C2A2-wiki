@@ -460,16 +460,17 @@
   </div>
 
   <!-- ROW 2-EDU: education tools within Community AI Education.
-       Five tools live: RC Document Explorer, RC Sandbox, Physics Explorer,
-       TRV Commentary, and AI Heartbeat. -->
+       Six tools live: RC Document Explorer, RC Sandbox, Physics Explorer,
+       TRV Commentary, Magnifica Humanitas, and AI Heartbeat. -->
   <div id="row2-edu" style="display: none;">
     <span class="row2-label">Education&nbsp;Tools</span>
     <button class="tab-btn active" data-src="rc_document_explorer.html">RC Document Explorer</button>
     <button class="tab-btn" data-src="rc_sandbox_notebook.html">RC Sandbox</button>
     <button class="tab-btn" data-src="physics_explorer.html">Physics Explorer</button>
     <button class="tab-btn" data-src="commentary-explorer/commentary_explorer.html">TRV Commentary</button>
+    <button class="tab-btn" data-src="mh_commentary.html">Magnifica Humanitas Explorer and Commentary</button>
     <button class="tab-btn" data-src="heartbeat/index.html">AI Heartbeat</button>
-    <button class="btn-help-row" onclick="showHelp()" title="About this view, and the five tools">?</button>
+    <button class="btn-help-row" onclick="showHelp()" title="About this view, and the six tools">?</button>
   </div>
 
 </div>
@@ -1026,8 +1027,8 @@ function showHelp() {
   }
   var descriptions = {
     '__section:education': {
-      title: 'Community Education \u2014 what these five tools are',
-      body: 'Five tools, one claim: that a community\'s own material \u2014 in whatever form it already exists \u2014 can be turned into something a newcomer can climb into, and that the same apparatus does it in every case. Each tool takes a different kind of source. A long text document (RC Document Explorer \u2014 the 471-page pilot tome). A spreadsheet (RC Sandbox \u2014 the TL Sandbox worksheet, 2,191 cells). A curriculum (Physics Explorer \u2014 an undergraduate physics sequence). Hand-written notes, including marginalia written over printed pages (TRV Commentary \u2014 annotations on MacIntyre\'s Three Rival Versions). And news, which never stops arriving (AI Heartbeat \u2014 fast-moving AI developments, compiled). The five examples here are all v.1: they are the Resurrecting Civility community\'s own documents, and they are here because this is the RC instance of the C2A2 Explorer. They are examples, not the point. What travels to another community is the capability set \u2014 the five source types and what each tool does with them. A different community swaps in its own: its founding documents, its working spreadsheets, its teaching sequence, the marginalia of whoever has read most closely, and whatever it must keep up with. It then gets these same five tools over its own material. That substitution is the test. If the tools only work on these documents, they are a private reading apparatus; if they work on yours, they are what C2A2 claims \u2014 a way for a community to become legible to itself, and then to a rival.'
+      title: 'Community Education \u2014 what these six tools are',
+      body: 'Six tools, one claim: that a community\'s own material \u2014 in whatever form it already exists \u2014 can be turned into something a newcomer can climb into, and that the same apparatus does it in every case. Each tool takes a different kind of source. A long text document (RC Document Explorer \u2014 the 471-page pilot tome). A spreadsheet (RC Sandbox \u2014 the TL Sandbox worksheet, 2,191 cells). A curriculum (Physics Explorer \u2014 an undergraduate physics sequence). Hand-written notes, including marginalia written over printed pages (TRV Commentary \u2014 annotations on MacIntyre\'s Three Rival Versions). A papal encyclical, read paragraph by paragraph, with the questions drafted against it attached to the paragraphs they concern (Magnifica Humanitas \u2014 the text quoted in place, with a link to the Vatican edition). And news, which never stops arriving (AI Heartbeat \u2014 fast-moving AI developments, compiled). The six examples here are all v.1: they are the Resurrecting Civility community\'s own documents, and they are here because this is the RC instance of the C2A2 Explorer. They are examples, not the point. What travels to another community is the capability set \u2014 the six source types and what each tool does with them. A different community swaps in its own: its founding documents, its working spreadsheets, its teaching sequence, the marginalia of whoever has read most closely, and whatever it must keep up with. It then gets these same five tools over its own material. That substitution is the test. If the tools only work on these documents, they are a private reading apparatus; if they work on yours, they are what C2A2 claims \u2014 a way for a community to become legible to itself, and then to a rival.'
     },
     'community_interactions.html': {
       title: 'Community Interactions',
@@ -1069,6 +1070,10 @@ function showHelp() {
       title: 'TRV Commentary',
       body: 'An annotated-reading explorer for Alasdair MacIntyre\'s Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom Loughran\'s marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright. Annotation covers every page from pp. 5-240, all ten chapters, with 3,400 marks read from the scans. The page scans themselves are a local-only sidecar \u2014 the book is in copyright, so the tool shows a placeholder where a scan would be.'
     },
+    'mh_commentary.html': {
+      title: 'Magnifica Humanitas Explorer and Commentary',
+      body: 'The text of Pope Leo XIV\'s encyclical Magnifica Humanitas, quoted paragraph by paragraph beside the commentary questions drafted against it. Reader first: choose a section, read its paragraphs, then its questions, each with the questions it links to. Graph second: the sections and questions as a network, where clicking a node opens it in the reader. References to the Summa commentary and the papers are off by default; switch them on to see what each question draws on. Each paragraph links to the Vatican edition.'
+    },
     'heartbeat/index.html': {
       title: 'AI Heartbeat',
       body: 'A compiled wiki over fast-moving AI developments, reframed for community AI education. Raw sources stay immutable; scheduled runs summarize, tag and score them into the compiled view. The separation is the design: the record of what was said is never rewritten by the process that interprets it.'
@@ -1091,7 +1096,7 @@ function showHelp() {
      lost every per-tool description. */
   var eduChap = document.getElementById('chap-education');
   if (eduChap && eduChap.classList.contains('active') && descriptions['__section:education']) {
-    helpBody = info.body + '\n\n\u2500\u2500\u2500\n\nABOUT THESE FIVE TOOLS\n\n'
+    helpBody = info.body + '\n\n\u2500\u2500\u2500\n\nABOUT THESE SIX TOOLS\n\n'
              + descriptions['__section:education'].body;
   }
   document.getElementById('help-title').textContent = info.title;
@@ -1937,6 +1942,7 @@ var VoiceGuide = (function() {
     { key: 'rc_sandbox',           kind: 'edu',     src: 'rc_sandbox_notebook.html', words: 'rc sandbox, quodlibet notebook, tl sandbox, sandbox' },
     { key: 'physics_explorer',     kind: 'edu',     src: 'physics_explorer.html',    words: 'physics explorer, physics' },
     { key: 'trv_commentary',       kind: 'edu',     src: 'commentary-explorer/commentary_explorer.html', words: 'trv commentary, three rival versions, macintyre' },
+    { key: 'mh_commentary',        kind: 'edu',     src: 'mh_commentary.html',       words: 'magnifica humanitas, mh commentary, encyclical, leo xiv' },
     { key: 'ai_heartbeat',         kind: 'edu',     src: 'heartbeat/index.html',     words: 'ai heartbeat, heartbeat, pulse' }
   ];
 
