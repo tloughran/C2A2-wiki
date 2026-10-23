@@ -91,6 +91,45 @@ async function poll(fn, timeoutMs, intervalMs, what) {
   throw new Error('timed out waiting for ' + what + (last ? ' (last: ' + JSON.stringify(last) + ')' : ''));
 }
 
+// Default per-call CDP deadline. Generous, because the Sociogram's first paint is
+// a 45MB parse plus a 4k-node force sim.
+const CDP_TIMEOUT_MS = 180000;
+
+// Per-call deadline used INSIDE a poll loop. It must be a fraction of the poll
+// window, not equal to it.
+//
+// This is the 2026-10-18 exit-2 bug. tabReady() polls for 180s and every probe it
+// issued also timed out at 180s, so the first slow Runtime.evaluate consumed the
+// entire poll budget and `poll` got exactly ONE attempt -- its retry loop could
+// never run a second time. The harness then died with
+//
+//   timed out waiting for sociogram tab ready (last: "CDP timeout: Runtime.evaluate")
+//
+// which reads like the page never became ready, when what actually happened is
+// that one evaluate was slow and nothing retried. Same failure on 2026-10-12 at
+// the bare Runtime.evaluate (that run took 36 minutes). Both are exit 2 -- "the
+// check could not run" -- so they were never a verdict about the shell, and they
+// sat in the log next to five days of ordinary RED without being distinguishable
+// from it.
+//
+// The defect was SYSTEMIC, not local to tabReady. All four poll sites issued evals
+// on the 180s default, and three of them have windows SHORTER than that, so a
+// single slow eval overran the whole window before one retry could happen:
+//
+//   tabReady               180s window  -- exactly one attempt
+//   cclReady                60s window  -- call deadline 3x the window
+//   nested cards grid       60s window  -- call deadline 3x the window
+//   connectome tab ready   120s window  -- call deadline 1.5x the window
+//
+// Demonstrated 2026-10-23 while verifying the tabReady fix: that run died at the
+// nested-cards poll, one of the three still unfixed, with the same exit 2 and the
+// same no-summary-line shape as 10-18. Fixing one site just moved the failure.
+//
+// 20s gives every site at least 3 attempts and tabReady 9. A tab that is merely
+// slow now gets retried; a tab that is genuinely wedged still fails, at the window,
+// with the same message -- but now that message means what it says.
+const CDP_POLL_CALL_TIMEOUT_MS = 20000;
+
 class CDP {
   constructor(ws) {
     this.ws = ws;
@@ -119,7 +158,10 @@ class CDP {
     return new CDP(ws);
   }
   on(fn) { this.listeners.push(fn); }
-  send(method, params, sessionId) {
+  // timeoutMs is optional and defaults to CDP_TIMEOUT_MS. It exists because a
+  // per-call timeout EQUAL TO an enclosing poll window silently destroys the
+  // poll's retry: see the comment on CDP_TIMEOUT_MS and tabReady().
+  send(method, params, sessionId, timeoutMs) {
     const id = ++this.id;
     const self = this;
     const payload = { id: id, method: method, params: params || {} };
@@ -129,7 +171,7 @@ class CDP {
       self.ws.send(JSON.stringify(payload));
       setTimeout(function () {
         if (self.pending.has(id)) { self.pending.delete(id); reject(new Error('CDP timeout: ' + method)); }
-      }, 180000);
+      }, timeoutMs || CDP_TIMEOUT_MS);
     });
   }
 }
@@ -176,6 +218,19 @@ async function startChrome() {
     '--user-data-dir=' + userDir,
     '--no-first-run', '--no-default-browser-check', '--disable-extensions',
     '--disable-background-networking', '--disable-sync', '--mute-audio',
+    // Belt and braces with --mute-audio: --mute-audio silences the output stream,
+    // --disable-audio-output stops Chrome opening an output device at all, so a
+    // 05:35 unattended run cannot grab the Mac's audio hardware.
+    //
+    // Checked against Phase W before adding, because the two interact: W arms the
+    // output meter from a synthetic tone and asserts the meter reads a REAL number
+    // (W2), reaches the top of the scale (W4c) and keeps moving (W3b). If this flag
+    // stopped the Web Audio graph rendering, those rows would read silence and fail
+    // for the wrong reason -- the exact trap --autoplay-policy below exists to avoid.
+    // Measured 2026-10-23, same machine, same commit: 16 W rows pass without the
+    // flag and 16 W rows pass with it. The render graph is unaffected; only the
+    // output device is.
+    '--disable-audio-output',
     '--window-size=1600,1000', '--hide-scrollbars',
     // The Sociogram is a 45MB single file with a 4k-node force sim.
     '--js-flags=--max-old-space-size=4096',
@@ -242,11 +297,13 @@ class Page {
     await cdp.send('Page.navigate', { url: url }, sid);
     await done;
   }
-  async eval(expr) {
+  // timeoutMs is optional; callers inside a poll loop pass
+  // CDP_POLL_CALL_TIMEOUT_MS so the poll can actually retry.
+  async eval(expr, timeoutMs) {
     const r = await this.cdp.send('Runtime.evaluate', {
       expression: '(function(){ ' + expr + ' })()',
       returnByValue: true, awaitPromise: true
-    }, this.sid);
+    }, this.sid, timeoutMs);
     if (r.exceptionDetails) {
       const d = r.exceptionDetails;
       throw new Error('eval threw: ' + ((d.exception && d.exception.description) || d.text));
@@ -284,13 +341,17 @@ function tabReady(page, kind) {
     ? "return !!(d && d.querySelector('#view') && d.querySelector('#metric') && d.querySelector('#logy'));"
     : "return !!(w && w.groupVisibility && typeof w.rebuildGraph==='function' && d && d.getElementById('search-input'));";
   return poll(function () {
-    return page.eval(IFRAME_DOC + "if(!d||d.readyState!=='complete'){return false;} " + probe);
+    // Short per-call deadline so this poll gets ~9 attempts in its 180s window.
+    // With the default 180s it got one, which is the 2026-10-18 exit-2 bug.
+    return page.eval(IFRAME_DOC + "if(!d||d.readyState!=='complete'){return false;} " + probe,
+                     CDP_POLL_CALL_TIMEOUT_MS);
   }, 180000, 500, kind + ' tab ready');
 }
 
 function cclReady(page) {
   return poll(function () {
-    return page.eval("var el=document.getElementById('ccl-result'); return !!(el && /^CCL ready \\(/.test(el.textContent));");
+    return page.eval("var el=document.getElementById('ccl-result'); return !!(el && /^CCL ready \\(/.test(el.textContent));",
+                     CDP_POLL_CALL_TIMEOUT_MS);
   }, 60000, 250, 'CCL bar loaded');
 }
 
@@ -1068,7 +1129,8 @@ async function main() {
     return page.eval(
       "var f=document.getElementById('content-frame'); var d=f&&f.contentDocument;" +
       "var fr=d&&d.querySelector('#cardsview iframe'); var id=fr&&fr.contentDocument;" +
-      "return !!(id && id.querySelector('#cc-card-grid > button.cc-card'));");
+      "return !!(id && id.querySelector('#cc-card-grid > button.cc-card'));",
+      CDP_POLL_CALL_TIMEOUT_MS);
   }, 60000, 500, 'nested cards grid rendered');
   await row(page, 'F5 what -> counts the cards HONESTLY: drawn, and how many there really are', 'what',
     { ok: true, spoken: /cards view\s+\|\s+\d+ of \d+ communities here/ });
@@ -1770,7 +1832,8 @@ async function main() {
   await poll(function () {
     return page.eval(IFRAME_DOC +
       "if (!d || d.readyState !== 'complete') { return false; }" +
-      "return !!(w && w.meshes && w.meshes.length && typeof w.prsSearchClickResult === 'function');");
+      "return !!(w && w.meshes && w.meshes.length && typeof w.prsSearchClickResult === 'function');",
+      CDP_POLL_CALL_TIMEOUT_MS);
   }, 120000, 500, 'connectome tab ready');
   await sleep(1500);
   await assertManifest(page, 'prs_3d', 'prs_3d.html');
