@@ -35825,3 +35825,350 @@ ASSUMPTION-1874:
 *Extracted by the 14a run of 2026-10-17 (local). **21 items (1854-1874); 1857, 1860, 1861, 1862, 1863, 1866, 1872, 1873 are recurrences, not queued.***
 
 *Coverage: 13 local sessions after the 10-16 pass (09a9b8a5), all scheduled; no live Tom turn. Final assistant message read for 10; Summa x2 and Supabase keep-warm not read (not C2A2 design work).*
+
+
+## 2026-10-23 — 14a end-of-day intake (local; first pass since 10-17; host offline 10-18..10-22)
+
+ASSUMPTION-1875:
+  Date identified: 2026-10-23
+  Statement: [stated] Health: "every scheduled job on your Mac stopped writing status after Sunday, Oct 18 ... Nothing has been watching the daily wiki run for five days. The Mac was probably asleep or off, or its scheduled jobs (launchd) stopped firing."
+  Context: fc183fd6 (morning system health)
+  Type: empirical
+  Related decisions: OPEN-270; PRESUMPTION-1166, -1170
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1875
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1876:
+  Date identified: 2026-10-23
+  Statement: [stated] Project status: OpenStory DB "last written on October 17th"; "of thirty-one enabled tasks, nearly all the daily ones last ran on October 17th or 18th"; "The Supabase keep-warm ping hasn't run since the 17th ... the C2A2 project may hit its free-tier pause in the next day or so."
+  Context: e29c7a77 (morning project status)
+  Type: empirical
+  Related decisions: OPEN-266, -270; PRESUMPTION-1170
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1876
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1877:
+  Date identified: 2026-10-23
+  Statement: [stated] Daily run: "PROCESSED_LOG.md has no daily-run entries for 10-19 through 10-22. Today's run also started late, around 11:10." 0 ingested, 0 hunted; 5 pending cards "have sat 5-7 days, and no decision email has arrived since 10-15."
+  Context: 7cde0fbb (wiki daily run)
+  Type: empirical
+  Related decisions: PRESUMPTION-1171; OPEN-270
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1877
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1878:
+  Date identified: 2026-10-23
+  Statement: [stated] Catch-up firing: the Monday (Levin/Friston), Wednesday (McGilchrist/Kastrup) and Thursday (Stump/Fredrickson) agent sessions each headed their output "C2A2 MONDAY/WEDNESDAY/THURSDAY AGENTS - 2026-10-23" on a Friday; Friday (Carroll/Arkani-Hamed) and Hawkins/Hoffman were still running at 11:18 EDT.
+  Context: 0825caa0; 966e4b33; 8755a862; list_sessions
+  Type: empirical
+  Related decisions: PRESUMPTION-1171
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1878
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1879:
+  Date identified: 2026-10-23
+  Statement: [stated] Proposal-ID collision: Friston card holds PROP-2026-10-23-001 and the Kastrup run also wrote PROP-2026-10-23-001 and -002 [verified by grep of pending/]; the Stump run stated "the next proposal number today would be 002". Hawkins/Hoffman used 003-006. (RECURRENCE — not queued)
+  Context: 0825caa0; 966e4b33; 8755a862; pending/ grep
+  Type: empirical
+  Related decisions: OPEN-267; PRESUMPTION-1132, -1133
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1879
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1880:
+  Date identified: 2026-10-23
+  Statement: [stated] Path error: three tradition-agent prompts give the wiki root without "Projects/"; each run "used the actual folder" and asked for the prompt to be corrected. Levin/Friston run adds: "Its SKILL.md lives in the session's temporary uploads folder, which looks fragile." (RECURRENCE — not queued)
+  Context: 0825caa0; 966e4b33; 8755a862
+  Type: architectural
+  Related decisions: ASSUMPTION-1847, -1860
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1880
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1881:
+  Date identified: 2026-10-23
+  Statement: [stated] Friston run: a 59-day-old paper was carded under "the 'significant work not yet captured' clause because nothing in the wiki mentions it"; "I read only the abstract and introduction, so the proposal doesn't claim how much the investor model beat the baselines."
+  Context: 0825caa0
+  Type: methodological
+  Related decisions: PRESUMPTION-1173
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1881
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1882:
+  Date identified: 2026-10-23
+  Statement: [stated] Friston run: "Meta-Representational Predictive Coding" (2025, ML-focused) is new to the wiki but was skipped "as a judgment call. Say if you want it proposed."
+  Context: 0825caa0
+  Type: methodological
+  Related decisions: PRESUMPTION-1173
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1882
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1883:
+  Date identified: 2026-10-23
+  Statement: [stated] Kastrup run: the Loeb UAP dialogue card rests on "the summary, chapter list and a 4.5-minute preview ... Both triplets are therefore marked low-confidence. Approve it only if you can get a transcript."
+  Context: 966e4b33
+  Type: methodological
+  Related decisions: PRESUMPTION-1173
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1883
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1884:
+  Date identified: 2026-10-23
+  Statement: [stated] Kastrup run: Kastrup's published dialogue with Claude on AI consciousness is "flagged strongly as direct C2A2 relevance"; in it "Claude ... objects to his link between life (metabolism) and having a private mind."
+  Context: 966e4b33
+  Type: epistemic
+  Related decisions: PRESUMPTION-1174
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1884
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1885:
+  Date identified: 2026-10-23
+  Statement: [stated] McGilchrist run: the UnHerd "Faustian bargain of AI" video was skipped because "its description matches" the event already carded 09-02 and 09-29.
+  Context: 966e4b33
+  Type: methodological
+  Related decisions: PRESUMPTION-1173
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1885
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1886:
+  Date identified: 2026-10-23
+  Statement: [stated] McGilchrist/Kastrup run: "I didn't read the two agent identity files or the two tradition wiki.md files. To avoid duplicates, I checked each candidate against the source URLs in both prs_triplets.md files and against every past proposal."
+  Context: 966e4b33
+  Type: methodological
+  Related decisions: PRESUMPTION-1173
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1886
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1887:
+  Date identified: 2026-10-23
+  Statement: [stated] Morning walk: "only findings 013-035 have a Status: field ... Findings 080-107 use a newer format with no status field, so the 'Active' filter can't see them. One Active entry ... has no FINDING number."
+  Context: 41284d5a
+  Type: architectural
+  Related decisions: PRESUMPTION-1172
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1887
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1888:
+  Date identified: 2026-10-23
+  Statement: [stated] Morning walk: network counts (1041/157/107) "are five days old"; ND ECG DELTA fellowship due Monday 10-26 (Kristian Olsen email still open); Humanity AI Open Call (10-21) "has passed and its queue item is still open."
+  Context: 41284d5a
+  Type: empirical
+  Related decisions: OPEN-270; ASSUMPTION-1874
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1888
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1889:
+  Date identified: 2026-10-23
+  Statement: [stated] Cost tracker: 30 scheduled agents "should cost about $51 a month"; tier placement of project status and Agent 16 is a judgment call (+~$1.50/mo each if heavier); "If they really aren't running, you're spending less than $51, but the work isn't getting done either."
+  Context: af4e4c5a
+  Type: empirical
+  Related decisions: PRESUMPTION-1170
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1889
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1890:
+  Date identified: 2026-10-23
+  Statement: [stated] Health janitor (dated 10-18): Summa index missing Day-001 and Day-035; 7 reference files not copied to vault/refs/ "because sync_vault.sh only syncs transcripts and synthesis"; explorer says 156 communities, data has 155; "347 new broken wikilinks."
+  Context: fc183fd6
+  Type: empirical
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1890
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1891:
+  Date identified: 2026-10-23
+  Statement: [stated] Daily run L2 signals: "Newest signal is 8 days old, so no staleness warning." The staleness threshold is not stated in the output.
+  Context: 7cde0fbb
+  Type: methodological
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1891
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1892:
+  Date identified: 2026-10-23
+  Statement: [stated] Daily run: old review pages "moved, not deleted ... rather than deleting them as the task asks. Earlier runs did the same." (RECURRENCE — not queued)
+  Context: 7cde0fbb
+  Type: methodological
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1892
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1893:
+  Date identified: 2026-10-23
+  Statement: [stated] Health: CPU and memory "come from the sandbox I run in, not your Mac." (RECURRENCE — not queued)
+  Context: fc183fd6
+  Type: methodological
+  Related decisions: ASSUMPTION-1863 era
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1893
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1894:
+  Date identified: 2026-10-23
+  Statement: [stated] Health: Mac drive "67% full (305G of 461G)" (~156 GB free) vs the 10-17 snapshot "71% (135 GB free)". Either ~21 GB was freed while the Mac was idle, or the two runs measure differently.
+  Context: fc183fd6; metrics/2026-10-17_snapshot.md
+  Type: empirical
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1894
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Extracted by the 14a run of 2026-10-23 (local). **20 items (1875-1894); 1879, 1880, 1892, 1893 are recurrences, not queued.***
+
+*Coverage: 8 C2A2-related sessions dated 10-23 read (final assistant message): 41284d5a, 7cde0fbb, fc183fd6, e29c7a77, af4e4c5a, 0825caa0, 966e4b33, 8755a862. Not read: d83a6ca1 (Carroll/Arkani-Hamed) and e33548f6 (Hawkins/Hoffman), still running; Summa, sewing, lit pipeline and other sessions not dated today. Days 10-18..10-22 had no host activity per fc183fd6/e29c7a77; no transcripts to process for them [reported, not independently verified].*

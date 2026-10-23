@@ -27572,3 +27572,249 @@ ITEM: PRESUMPTION-1169 [QUEUED] [IN-HOUSE] [PRESUMPTION]
 
 ### Standing 15d blocks of 2026-10-11 NOT duplicated (48)
 44 [QUEUED-EMPIRICAL] + 1 [ROUTED-AGENT-19] (MONITOR-683) + 3 [AWAITING-TOM] (MONITOR-629, -669, -670) from the 2026-10-11 section remain unconsumed (no SEARCHED/DISPOSITIONED tags). Not re-filed, per precedent 09-20..10-11 and PREMISE-183(2) (no byte-identical refiling). All 9 literature blocks of 10-11 were consumed by 15a/15b/15c on 10-12 and 10-17.
+
+
+## 2026-10-23 — 14a / 14b intake queue (local end-of-day; 14a 1875-1894, 14b 1170-1174)
+
+ITEM: ASSUMPTION-1875 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1875
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in fc183fd6 (morning system health).
+
+ITEM: ASSUMPTION-1876 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1876
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in e29c7a77 (morning project status).
+
+ITEM: ASSUMPTION-1877 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1877
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 7cde0fbb (wiki daily run).
+
+ITEM: ASSUMPTION-1878 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1878
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 0825caa0; 966e4b33; 8755a862; list_sessions.
+
+ITEM: ASSUMPTION-1881 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1881
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 0825caa0.
+
+ITEM: ASSUMPTION-1882 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1882
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 0825caa0.
+
+ITEM: ASSUMPTION-1883 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1883
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 966e4b33.
+
+ITEM: ASSUMPTION-1884 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1884
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 966e4b33.
+
+ITEM: ASSUMPTION-1885 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1885
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 966e4b33.
+
+ITEM: ASSUMPTION-1886 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1886
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 966e4b33.
+
+ITEM: ASSUMPTION-1887 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1887
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 41284d5a.
+
+ITEM: ASSUMPTION-1888 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1888
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 41284d5a.
+
+ITEM: ASSUMPTION-1889 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1889
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in af4e4c5a.
+
+ITEM: ASSUMPTION-1890 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1890
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in fc183fd6.
+
+ITEM: ASSUMPTION-1891 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1891
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in 7cde0fbb.
+
+ITEM: ASSUMPTION-1894 [QUEUED] [IN-HOUSE] [ASSUMPTION]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1894
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Verify against the source files/logs named in fc183fd6; metrics/2026-10-17_snapshot.md.
+
+ITEM: PRESUMPTION-1170 [QUEUED] [SEARCHED-15a: 2026-10-23] [SEARCHED-15b: 2026-10-23] [DISPOSITIONED-15c: 2026-10-23] [PRESUMPTION]
+  Result: SUPPORTED/Strong (15a); PARTIALLY-CHALLENGED/Weak-Mod (15b) -> REVISE-521 (DISPOSITION-1095)
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1170
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (literature): SRE / distributed-systems monitoring on watchdog independence: dead-man's-switch / heartbeat monitoring from outside the failure domain (e.g. Beyer et al. 2016, Site Reliability Engineering, ch. 6 "Monitoring Distributed Systems"; black-box vs white-box monitoring). Does co-locating the monitor with the monitored host predictably hide whole-host outages, and what minimal off-host check is recommended?
+
+ITEM: PRESUMPTION-1171 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1171
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): List all scheduled tasks with cadence and last-run; for 10-18..10-22, classify each expected run as fired / coalesced / dropped; confirm whether any ledger records this.
+
+ITEM: PRESUMPTION-1172 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1172
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): Count findings with and without a Status field; recompute "Active" with the new format included; report the difference from 24.
+
+ITEM: PRESUMPTION-1173 [QUEUED] [IN-HOUSE] [PRESUMPTION]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1173
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (in-house): For one week, have each tradition agent log every gate exception (window override, judgment skip, description-match dedup, skipped reads); compare rates across agents.
+
+ITEM: PRESUMPTION-1174 [QUEUED] [SEARCHED-15a: 2026-10-23] [SEARCHED-15b: 2026-10-23] [DISPOSITIONED-15c: 2026-10-23] [PRESUMPTION]
+  Result: PARTIALLY-SUPPORTED/Mod (15a); PARTIALLY-CHALLENGED/Mod (15b) -> MONITOR-696 (DISPOSITION-1096)
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1174
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts.
+    Current status: UNTESTED
+  Claim to test (literature): self-consuming generative loops and model collapse (Shumailov et al. 2024, Nature, "AI models collapse when trained on recursively generated data"; Alemohammad et al. 2023 "Self-Consuming Generative Models Go MAD"), plus source-attribution practice in corpus linguistics/digital humanities: what happens to an evidence base when model-generated text is admitted under a human author's attribution, and what provenance marking is recommended?
+
+
+## 2026-10-23 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+**Scope.** New intake only: PRESUMPTION-1170 and -1174 (10-23 intake; the only literature items). The 10-23 intake's 16 [IN-HOUSE] 14a items and PRESUMPTION-1171..1173 [IN-HOUSE] are not owed a search. No backlog batch, per the 10-18 precedent (budget).
+**Dispositions:** DISPOSITION-1095: PRESUMPTION-1170 → REVISE-521 (Medium; routes to discharging REVISE-147). DISPOSITION-1096: PRESUMPTION-1174 → MONITOR-696 (Medium). No PREMISE minted.
+**SYSTEMIC-RISK:** candidate only (15b): checker shares failure domain/identity with what it checks (1170 + 1174). Recorded in the 1174 against file and in returns; no flag file.
+**Result files:** lit_search_results/{for,against}/PRESUMPTION-117{0,4}_{for,against}.md (PROVENANCE headers present; STEELMAN present in both against files).
+**Backups:** *.bak.20261023-pre-15pipeline for all five registers. Lock ACQUIRED (run local-cowork-2026-10-23-856ab00d), released at end. Note: 14a/14b wrote this file at 11:20:08 local, 56 s after this run's lock was acquired at 11:19:12; this run waited until the file was stable before reading intake. 14a/14b do not take this lock.
+**Backlog remaining (fail loud):** untouched — the 126 bare literature-lane items plus the 7 literature re-triggers from 15d 2026-10-18 (PRESUMPTION-1019, -1024, -1034, -1040, -1047, -1048, -955) remain [QUEUED] without SEARCHED tags. The success criterion "all queued items searched" is therefore NOT met for the backlog.
+**Budget (fail loud):** search subagents about 119k (15a) + 107k (15b) tokens, well over Tom's 4k per-task / 30k per-session rule.

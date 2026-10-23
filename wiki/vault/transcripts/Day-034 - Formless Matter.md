@@ -38,7 +38,7 @@ tags: [summa, day/034, pars/I]
 
 [00:00:53] material Universe before moving on to that uniquely immaterial slm material thing found within it that high or in between we could say between angels and rational animals which is us the spiritual animal the rational animals defined by Aristotle Humanity but beginning with this question here in
 
-[00:01:12] 
+[00:01:12]
 ### Q.65 — The work of creation of corporeal creatures
 
 **Article 1 — Whether corporeal creatures are from God**
@@ -71,7 +71,7 @@ article three whether Corporal creatures were produced by God through the medium
 
 [00:05:33] Bridge the infinite difference or distance between nothing and anything at all see episode 24 for more on that
 
-[00:05:42] 
+[00:05:42]
 **Article 4 — Whether the forms of bodies are from the angels**
 
 article 4 whether the forms of bodies are from the Angels now irrespective of whatever name we choose to give that most fundamental not even actually existing only potentially existing principle within all material things there will still need to be some other cause to explain how it comes out of that potential existence into actual existence which even Heisenberg admitted as we've quoted him in previous episodes here are his words again from his book
@@ -102,14 +102,14 @@ article one whether formlessness of created matter preceded in time its formatio
 
 [00:10:41] perfect wherefore it is said of him in Deuteronomy The Works of God are perfect therefore the work of his creation was at no time formless and so when it comes to interpreting Genesis he continues but what the other holy writers understand by formlessness is not the cusion of all form but the absence of that beauty and comeliness which are now apparent in the corporeal creation accordingly they say that the formlessness of corporeal matter preceded its form in duration
 
-[00:11:14] 
+[00:11:14]
 **Article 2 — Whether the formless matter of all corporeal things is the same**
 
 Article 2 whether the formless matter of all corporeal things is the same is the matter that sheer potential which makes up the rock the same kind of stuff that also makes up the Sun and those distant galaxies now Aquinas says no but again his cosmology is a little dated on this point his notion of the planets and stars is inherited from the ancient Greeks and because the prevailing thought was at that time that there were kinds of things in space that were Incorruptible Aquinas was led to think
 
 [00:11:45] that they must be made up of different matter and so follows his conclusion in this article but I think if Aquinas was writing today the answer to this question would be yes the formless matter of all corporeal things is the same that's my opinion personally and I would would be surprised if a Catholic philosopher in 2024 thought differently
 
-[00:12:03] 
+[00:12:03]
 **Article 3 — Whether the empyrean heaven was created at the same time as formless matter**
 
 article 3 whether the imperian heaven was created at the same time as formless matter this is another notion from an outdated cosmology as we've said in a previous episode the imperian heaven is defined by Aquinas as the highest Corporal place whether it be styled the imperian heaven or whatever else it be called this came from the Greek idea that there was a top highest distinct place in the universe which would not be how we understand the universe today so we can probably answer this article with the same answer given

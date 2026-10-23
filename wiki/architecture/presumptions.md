@@ -25486,3 +25486,108 @@ PRESUMPTION-1169:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-17 (local). **7 items (1163-1169)**: architectural 1 · structural 1 · methodological 2 · epistemic 2 · normative 1; risk: High 3 · Medium 4. Checked against 14a 1854-1874 and PRESUMPTION-1156..1162. Recurrences not re-surfaced: DB-write recency as liveness (1156, OPEN-266), first-writer deferral (1159), budget overrun (1148). 1164 extends 1099; 1165 applies PREMISE-239; 1168 applies ASSUMPTION-1871 to 14a/14b; 1169 extends 1162.*
+
+
+## 2026-10-23 — 14b end-of-day intake (local; after 14a, against ASSUMPTION-1875–1894)
+
+PRESUMPTION-1170:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] The schedule presumes its host is awake, and every watcher that would notice otherwise (scheduler health, system health, project status, keep-warm) runs on that same host. A five-day host outage (10-18..10-22) was therefore detectable only retrospectively, by the first jobs to fire after wake; nothing off-host raised an alarm while it was happening, including the Supabase free-tier keep-warm.
+  Evidence it was operative: fc183fd6; e29c7a77; af4e4c5a
+  Why it was unstated: obvious to participants
+  Type: structural
+  Related decisions: PRESUMPTION-1166, -1168; OPEN-270
+  Testability: testable via literature
+  Risk if wrong: High: silent multi-day outages; possible Supabase pause; work lost without notice.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1170
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1171:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] Catch-up firing presumes that a missed run executed later is equivalent to the run that was missed. In practice, four missed days of daily jobs were coalesced into one run (PROCESSED_LOG has no 10-19..10-22 entries), and weekday agents ran together on Friday under their weekday labels. Date-keyed outputs (changelog, metrics, PROCESSED_LOG) silently have no entry for missed days, and no ledger records which missed runs fired, which were coalesced, and which were dropped.
+  Evidence it was operative: 7cde0fbb; 0825caa0; 966e4b33; 8755a862
+  Why it was unstated: embedded in tooling/practice
+  Type: methodological
+  Related decisions: ASSUMPTION-1877, -1878; OPEN-260
+  Testability: testable in-house
+  Risk if wrong: High: gaps in the date-indexed record read as "nothing happened" rather than "did not run".
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1171
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1172:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] A filter that returns a plausible number is presumed complete. The findings schema changed (080-107 lack a Status field), and the "Active" count (24) silently covers only the older format. The count looks reasonable, so nothing flags that most findings are invisible to it.
+  Evidence it was operative: 41284d5a
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: ASSUMPTION-1887
+  Testability: testable in-house
+  Risk if wrong: Medium: briefings undercount live findings; prioritization skewed toward older findings.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1172
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1173:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] Tradition agents presume their novelty and recency gates can be applied by discretion without a record. Today one run invoked a clause to admit a 59-day-old paper, another skipped a new-to-wiki item "as a judgment call", one deduplicated by description match, and one skipped the identity/wiki.md reads and deduplicated by source URL only. None of these exceptions are counted, so the effective filter is unknown and may differ by agent.
+  Evidence it was operative: 0825caa0; 966e4b33; 8755a862
+  Why it was unstated: embedded in tooling/practice
+  Type: methodological
+  Related decisions: ASSUMPTION-1881, -1882, -1885, -1886
+  Testability: testable in-house
+  Risk if wrong: Medium: inconsistent intake across traditions; PRS coverage differences that reflect agent discretion, not the traditions.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1173
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1174:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] Material in a thinker's corpus is presumed to be the thinker's voice. Kastrup's dialogue with Claude puts a Claude-generated argument (against his life/private-mind link) inside the Kastrup corpus. A Claude-run tradition agent is carding it, and Claude-run reviewers will weigh it. The system's own model can thus enter the evidence base attributed to a tradition, which closes a loop that the provenance chain does not mark.
+  Evidence it was operative: 966e4b33
+  Why it was unstated: embedded in tooling/practice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1884; provenance_protocol.md
+  Testability: testable via literature
+  Risk if wrong: Medium: self-reinforcing model views presented as cross-tradition evidence; contaminates tradition-attribution.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1174
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 transcripts (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Surfaced by the 14b run of 2026-10-23 (local). **5 items (1170-1174)**: structural 1 · methodological 2 · epistemic 2; risk: High 2 · Medium 3. Checked against 14a 1875-1894 and PRESUMPTION-1163..1169. Recurrences not re-surfaced: same-day proposal-ID allocation (1132/1133, OPEN-267; today's collision logged as ASSUMPTION-1879), prompt path drift (1847/1860). 1170 extends 1166/1168 from absence-of-supervisor to absence-of-host.*

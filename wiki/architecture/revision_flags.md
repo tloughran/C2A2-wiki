@@ -16190,3 +16190,13 @@ REVISE-520: [2026-10-18] Source item: PRESUMPTION-1166 (DISPOSITION-1094)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1166 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1166_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1166_against.md
+
+
+REVISE-521: [2026-10-23] Source item: PRESUMPTION-1170 (DISPOSITION-1095)
+  What is at risk: the presumption that the schedule's host is awake and that on-host watchers (scheduler health, system health, project status, keep-warm) would notice if it were not. Realized 10-18..10-22: a five-day host outage was detectable only retrospectively. Both 15a (SRE ch. 6; PromLabs Watchdog) and 15b agree co-located monitors cannot see whole-host failure.
+  Recommended action (for Tom): discharge REVISE-147's off-host limb rather than open new work. (1) First establish what 10-18..10-22 was: sleep, power-off, or awake-but-hung (15b) — the remedy differs. (2) One off-host dead-man's-switch (e.g. a hosted heartbeat pinged by one daily job) with a grace window longer than routine sleep, so it alarms on multi-day silence, not overnight. (3) Note that Supabase already sends an off-host pause warning and pauses only at 7 days; treat it as a second, independent signal, not the keep-warm's monitor. (4) Accept that the heartbeat service can itself fail (15b: Healthchecks.io 2020) — low stakes justify one external check, not a monitor-of-monitor chain.
+  Urgency: Medium (mechanism confirmed; severity bounded for this setup by 15b; REVISE-147 already High and unanswered).
+  Related: REVISE-147 (external heartbeat, open since 2026-06-26); PREMISE-086 (monitor independence condition); REVISE-520 (supervisor absence); MONITOR-675 (PRESUMPTION-1040); OPEN-270; PRESUMPTION-1166, -1168, -1171.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1170 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1170_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1170_against.md

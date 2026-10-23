@@ -38,7 +38,7 @@ tags: [summa, day/048, pars/I]
 
 [00:00:37] state and condition of the first man as regards his intellect the translation that I always use in these podcasts is the one generously provided to me by a Maria press the five volumes set translated by the fathers of the English Dominican province which you can now get at a discounted price from a Maria press a site by typing in the code Summa 10 and
 
-[00:00:57] so here we go 
+[00:00:57] so here we go
 
 **Article 1 — Whether the image of God is in man**
 
@@ -50,7 +50,7 @@ article one whether the image of God is in man an image differs from a mere like
 
 [00:02:01] that which all beings must pre-exist yet in a more simple more preeminent way and
 
-[00:02:08] we move on to 
+[00:02:08] we move on to
 
 **Article 2 — Whether the image of God is to be found in irrational creatures**
 
@@ -58,13 +58,13 @@ article two whether the image of God is to be found in irrational creatures is t
 
 [00:02:40] these last as Augustine says approach so near to God in likeness that among all creatures nothing comes nearer to him it is clear therefore that intellectual creatures alone properly speaking are made to God's image so we call a thing made in God's image if it is akin to him in being intellectual and among material
 
-[00:03:02] creatures that's only us 
+[00:03:02] creatures that's only us
 
 **Article 3 — Whether the angels are more to the image of God than man is**
 
 article three whether the angels are more to the image of God than man is St Gregory says the angel is called a seal of resemblance because in him the resemblance of the Divine image is rought with greater expression for the fact they are more intellectual and the capacity for intelligence is what we have said as cause for calling one thing an image of God and another thing only a trace or a vesage of God yet since since a human can beget a son and the Divine person of
 
-[00:03:34] the father begets the Divine person of the son in this aspect man is actually more like God than the angels and for how procession works in the Trinity between the father and the son I would check out episodes 22 and 18 so in one way angels are more like God than man intellectually speaking and in another way man is more like God than the Angels according to God's Triune nature 
+[00:03:34] the father begets the Divine person of the son in this aspect man is actually more like God than the angels and for how procession works in the Trinity between the father and the son I would check out episodes 22 and 18 so in one way angels are more like God than man intellectually speaking and in another way man is more like God than the Angels according to God's Triune nature
 
 **Article 4 — Whether the image of God is found in every man**
 
@@ -78,7 +78,7 @@ article for whether the image of God is found in every man we can probably predi
 
 [00:05:39] likeness the first is found in all men the second only in the just and the
 
-[00:05:43] third only in the Blessed 
+[00:05:43] third only in the Blessed
 
 **Article 5 — Whether the image of God is in man according to the Trinity of persons**
 
@@ -86,7 +86,7 @@ Article 5 whether the image of God is in man according to the Trinity of persons
 
 [00:06:04] article 3 he writes we must therefore say that in man there exists the image of God both as regards the divine nature and as regards the Trinity of persons
 
-[00:06:17] 
+[00:06:17]
 
 **Article 6 — Whether the image of God is in man as regards the mind only**
 
@@ -96,7 +96,7 @@ article six whether the image of God is in man as regards the mind only St Thoma
 
 [00:07:21] coin God's intellectual nature is imaged on our very own or in our very own
 
-[00:07:27] intellectual nature 
+[00:07:27] intellectual nature
 
 **Article 7 — Whether the image of God is to be found in the acts of the soul**
 
@@ -110,7 +110,7 @@ article 7 whether the image of God is to be found in the acts of the Soul an act
 
 [00:09:30] image of the Divine Trinity more in actual understanding and will than in these as existing in the habitual
 
-[00:09:38] retention of the memory 
+[00:09:38] retention of the memory
 
 **Article 8 — Whether the image of the Divine Trinity is in the soul only by comparison with God as its object**
 
@@ -120,7 +120,7 @@ article 8 whether the image of the Divine Trinity is in the soul only by compari
 
 [00:10:39] called an image of the trinity in St Thomas's words thus the image of God is found in the soul according as the soul turns to God or possesses a nature that enables it to turn to God so Augustine says the Mind remembers itself understands itself and loves itself if we perceive this we perceive a trinity not indeed God but nevertheless rightly
 
-[00:11:02] called the image of God 
+[00:11:02] called the image of God
 
 **Article 9 — Whether likeness is properly distinguished from image**
 
@@ -130,13 +130,13 @@ article 9 whether likeness is properly distinguished from image St Thomas respon
 
 [00:12:06] will be but a less perfect likeness than the Saints in heaven but someday God willing we will join them and be like
 
-[00:12:13] them in that likess 
+[00:12:13] them in that likess
 
 ### Q.94 — The State and Condition of the First Man as Regards His Intellect
 
 and on to question 94 of the state and condition of the first man as regards his intellect what was man's mind like before the fall in the next episode we'll get into some broader consideration such as whether Man was created in a super Natural State being raised to it by the gift of God but here in question 94 we have some very specific question about man's mind
 
-[00:12:37] preall such as 
+[00:12:37] preall such as
 
 **Article 1 — Whether the first man saw God through his essence**
 
@@ -148,7 +148,7 @@ article one whether the first man saw God through his Essence St Thomas responds
 
 [00:14:10] of which the angels are capable in the participation of the Divine Essence
 
-[00:14:16] 
+[00:14:16]
 
 **Article 2 — Whether Adam in the state of innocence saw the angels through their essence**
 
@@ -156,7 +156,7 @@ Article 2 whether Adam and the state of Innocence saw the Angels through their E
 
 [00:14:46] we cannot sense or conjure up a fantasm of angels we cannot abstract their Essence from that image or know them as they are in themselves however according to Aquinas man before the fall would have had better knowledge of angels and having a better Reign on his body without any disordered passions or affections to distract him from whatever knowledge he could have had of immaterial spirits there in the
 
-[00:15:11] beginning 
+[00:15:11] beginning
 
 **Article 3 — Whether the first man knew all things**
 
@@ -168,7 +168,7 @@ article three whether the first man knew all things Aquinas responds man named t
 
 [00:16:45] and some individual facts as for instance the number of pebbles in a
 
-[00:16:50] stream and the like 
+[00:16:50] stream and the like
 
 **Article 4 — Whether man in his first state could be deceived**
 

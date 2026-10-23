@@ -25550,3 +25550,15 @@ MONITOR-688 (10-19), -689 (10-20), -690 (10-21), -691 (no field; intake 10-15 �
 - ESCALATIONS 1–5 are carried forward unchanged and were not independently re-verified.
 
 **Run summary:** 12 re-queued (7 literature, 5 empirical); 48 standing non-literature blocks held, not duplicated; 9/9 literature items from 10-11 consumed; 0 premise re-checks (monthly not due); 0 new stale flags (the MONITOR-403 flag stands); the monthly/low-priority cohort was not re-verified. Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+
+MONITOR-696:
+  Date: 2026-10-23
+  Source item: PRESUMPTION-1174 (DISPOSITION-1096)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Priority: Medium
+  Disposition basis: Model-collapse framing fails to transfer (Gerstgrasser et al. 2024: accumulation bounds collapse; C2A2 retrains nothing); support for provenance marking is by analogy (Kane et al. 2025; W3C PROV SoftwareAgent; disclosure norms). Narrowed claim: tradition corpora lack a structured speaker/origin field for model-authored spans, and same-model reviewers may weigh such spans non-independently (cf. PREMISE-004).
+  What would change the disposition: (-> REVISE) a verified primary source on LLM self-preference/self-recognition bias in evaluation, or an in-house count showing model-authored spans carded under tradition keys without a structured origin field beyond this one case; (-> INCORPORATE a narrowed premise "model-authored spans in a tradition corpus carry a structured speaker/origin field") primary W3C PROV / TEI @who text plus a DH practice source.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1174 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1174_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1174_against.md

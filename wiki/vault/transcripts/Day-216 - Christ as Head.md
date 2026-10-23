@@ -43,7 +43,7 @@ Context: Day 216 covers III Q.7 (the grace of Christ as an individual man — Hi
 
 [00:50] the fathers of the English Dominican province, which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And
 
-[01:00] so here we go. And we have about 21 articles ahead of us. So I will try and move quite quickly. 
+[01:00] so here we go. And we have about 21 articles ahead of us. So I will try and move quite quickly.
 
 **Article 1 — Whether in the soul of Christ there was any habitual grace**
 
@@ -51,7 +51,7 @@ Article one, whether in the soul of Christ there was any
 
 [01:09] habitual grace, there was as prophesied by Isaiah, and the spirit of the Lord shall rest upon him, the spirit of wisdom and understanding, the spirit of
 
-[01:17] counsel and might, the spirit of knowledge, and the fear of the Lord and his delight shall be in the fear of the Lord. 
+[01:17] counsel and might, the spirit of knowledge, and the fear of the Lord and his delight shall be in the fear of the Lord.
 
 **Article 2 — Whether in Christ there were virtues**
 
@@ -59,7 +59,7 @@ Article two, whether in Christ
 
 [01:24] there were virtues, and a word from St. Thomas, since the grace of Christ was most perfect, there flowed from it in consequence the virtues which perfect
 
-[01:32] the several powers of the soul for all the souls acts and thus Christ had all the virtues. 
+[01:32] the several powers of the soul for all the souls acts and thus Christ had all the virtues.
 
 **Article 3 — Whether in Christ there was faith**
 
@@ -67,7 +67,7 @@ Article three, whether in Christ there was faith. No, because
 
 [01:43] faith is about those things which are unseen. However, because of the hypothatic union from the moment of Christ's conception, his intellect
 
-[01:50] beheld his divine essence. Therefore, vision removed the possibility of faith. 
+[01:50] beheld his divine essence. Therefore, vision removed the possibility of faith.
 
 **Article 4 — Whether in Christ there was hope**
 
@@ -75,7 +75,7 @@ Article four, whether in Christ there was hope. For who hopes for what he
 
 [01:59] sees? As it is written in Romans chapter 8, and since again Christ saw his essence in the intellect from the moment of conception, then he did not have hope
 
-[02:07] either. 
+[02:07] either.
 
 **Article 5 — Whether in Christ there were the gifts**
 
@@ -83,7 +83,7 @@ Article five, whether in Christ there were the gifts. St. Thomas says the gifts 
 
 [02:16] much as these have a natural aptitude to be moved by the Holy Spirit according to Luke chapter 4. And Jesus being full of the Holy Spirit returned from the Jordan
 
-[02:24] and was led by the spirit into the desert. Hence it is manifested in Christ. The gifts were in a preeminent degree. 
+[02:24] and was led by the spirit into the desert. Hence it is manifested in Christ. The gifts were in a preeminent degree.
 
 **Article 6 — Whether in Christ there was the gift of fear**
 
@@ -95,7 +95,7 @@ Article six. Whether in Christ
 
 [02:52] power of the cause which could bring about such effects. And in this way only could there be said to be fear in Christ because his human body and soul clearly
 
-[03:02] recognized the unsurpassing power and greatness of his divinity. 
+[03:02] recognized the unsurpassing power and greatness of his divinity.
 
 **Article 7 — Whether the gratuitous graces were in Christ**
 
@@ -105,7 +105,7 @@ Article 7. Whether the gratuitous graces were in Christ. The gratuitous graces g
 
 [03:20] specifically for the manifestation of faith and spiritual doctrine as St. Thomas says and since Christ is the preeminent teacher of the faith it was
 
-[03:29] fitting that he should possess such grace. 
+[03:29] fitting that he should possess such grace.
 
 **Article 8 — Whether in Christ there was the gift of prophecy**
 
@@ -113,7 +113,7 @@ Article 8 whether in Christ there was the gift of prophecy and a word from Aquin
 
 [03:39] teller or seer of far off things and as much as he knows and announces what things are far from men's senses. It was prophetical in Christ to know and
 
-[03:48] announce what was beyond the knowledge of other wayfarers and for this reason he is called a prophet. 
+[03:48] announce what was beyond the knowledge of other wayfarers and for this reason he is called a prophet.
 
 **Article 9 — Whether in Christ there was the fullness of grace**
 
@@ -127,7 +127,7 @@ Article nine whether in Christ there was the fullness
 
 [04:27] fullness have we all received grace upon grace. The last consideration when it comes to Christ's fullness of grace St. Thomas describes in saying the second
 
-[04:37] fullness of grace is seen in Christ in as much as his grace extends to all the effects of grace which are the virtues gifts and the like. 
+[04:37] fullness of grace is seen in Christ in as much as his grace extends to all the effects of grace which are the virtues gifts and the like.
 
 **Article 10 — Whether the fullness of grace is proper to Christ**
 
@@ -147,13 +147,13 @@ Article 10. Whether
 
 [05:40] be a fit minister and witness of God, to which office he had been called. And the same must be said of others. Of these fullnesses, one is greater than another,
 
-[05:49] according as one is divinely pre-ordained to a higher or lower state. 
+[05:49] according as one is divinely pre-ordained to a higher or lower state.
 
 **Article 11 — Whether the grace of Christ is infinite**
 
 Article 11, whether the grace of Christ is infinite. In a sentence from this
 
-[05:59] article, grace is something created in the soul, but every created thing is finite. Therefore, the grace of Christ is not infinite. 
+[05:59] article, grace is something created in the soul, but every created thing is finite. Therefore, the grace of Christ is not infinite.
 
 **Article 12 — Whether the grace of Christ could increase**
 
@@ -163,7 +163,7 @@ Article 12, whether the
 
 [06:18] at the moment of his conception. So there could be no increase of grace in him. Neither is there an increase of grace in the blessed who have attained
 
-[06:26] their final end and reward, but grace can increase in us here traveling and able to merit an increase of grace through the virtue of charity. 
+[06:26] their final end and reward, but grace can increase in us here traveling and able to merit an increase of grace through the virtue of charity.
 
 **Article 13 — Whether the habitual grace of Christ followed after the union**
 
@@ -181,13 +181,13 @@ Article
 
 [07:26] grace since it is ordained to acting rightly and action belongs to the suppososetum and the individual. Hence action and in consequence grace
 
-[07:36] ordaining there to presuppose the hypothesis which operates. 
+[07:36] ordaining there to presuppose the hypothesis which operates.
 
 ### Q.8 — The Grace of Christ, as He Is the Head of the Church
 
 And so we move on to question eight which is of the grace of Christ as he is the head of
 
-[07:45] the church. 
+[07:45] the church.
 
 **Article 1 — Whether Christ is the head of the church**
 
@@ -199,7 +199,7 @@ Article one whether Christ is the head of the church. Scripture says Christ is t
 
 [08:11] aspect of man, Christ is the firstborn of many brethren, of whom scripture said again, is full of grace and truth. Lastly, in power, as St. Thomas says he
 
-[08:21] has the power of bestowing grace on all the members of the church according to John 1:16 of his fullness we have all received 
+[08:21] has the power of bestowing grace on all the members of the church according to John 1:16 of his fullness we have all received
 
 **Article 2 — Whether Christ is the head of men as to their bodies or only as to their souls**
 
@@ -209,7 +209,7 @@ article two whether Christ is
 
 [08:41] overflowing affects the body and most especially in the next life when after the resurrection by God's grace our bodies will be rendered ed in a
 
-[08:50] glorified state. 
+[08:50] glorified state.
 
 **Article 3 — Whether Christ is the head of all men**
 
@@ -223,7 +223,7 @@ Article three, whether Christ is the head of all men. And one could say yes, but
 
 [09:26] because they too are potential members of grace of Christ and Christ died for all men. According to these differing ways, we can say that Christ is the head
 
-[09:35] of all men. 
+[09:35] of all men.
 
 **Article 4 — Whether Christ is the head of the angels**
 
@@ -233,7 +233,7 @@ Article four, whether Christ is the head of the angels. St. Thomas responds to t
 
 [09:53] is the head since he is nearer to God and shares his gifts more fully not only than men but even than angels and of his influence not only of men but even
 
-[10:04] angels partake. 
+[10:04] angels partake.
 
 **Article 5 — Whether the grace of Christ as head of the church is the same as his habitual grace inasmuch as he is man**
 
@@ -243,7 +243,7 @@ Article five. whether the grace of Christ as head of the church is the same as h
 
 [10:24] supernaturalizes us. However, just like the one same fire is both hot itself and heats, so to the grace of the humanity of Christ is the same grace by which his
 
-[10:35] humanity is sanctified as well as being the cause of his headship of the entire church through which we are then sanctified. 
+[10:35] humanity is sanctified as well as being the cause of his headship of the entire church through which we are then sanctified.
 
 **Article 6 — Whether it is proper to Christ to be the head of the church**
 
@@ -253,7 +253,7 @@ Article six, whether it is
 
 [10:54] the church. but is being able to recruit others in his government and leadership of this church. We can say for example the bishops and popes share a kind of
 
-[11:02] participation in this headship this leadership of Christ in his mystical body on earth. 
+[11:02] participation in this headship this leadership of Christ in his mystical body on earth.
 
 **Article 7 — Whether the devil is the head of all the wicked**
 
@@ -271,7 +271,7 @@ Article 7 whether the devil is the head of all the wicked just
 
 [12:01] your bonds, and you said, "I will not serve." Hence, in as much as some are brought to this end by sinning, they fall under the rule and government of
 
-[12:10] the devil, and therefore he is called their head. 
+[12:10] the devil, and therefore he is called their head.
 
 **Article 8 — Whether antichrist may be called the head of all the wicked**
 

@@ -51353,7 +51353,7 @@ RETURN-TO-14b:
   Search direction: AGAINST (disconfirmatory)
   Result: CHALLENGED | Strength: Strong (title-level evidence; unread)
   Key source: Lewandowski 2008 (title only); Bar-Yossef & Gurevich 2006/2008
-  Specific risk: Recent publications under-represented; popular outputs over-represented; paywalled/PDF/social/non-English venues missed; name ambiguity adds noise; irreproducible across engine/date/locale; the error 
+  Specific risk: Recent publications under-represented; popular outputs over-represented; paywalled/PDF/social/non-English venues missed; name ambiguity adds noise; irreproducible across engine/date/locale; the error
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1146_against.md
 
 ### SYSTEMIC-RISK (15b, High): output without lineage or coverage record (items 1141, 1146)
@@ -51572,3 +51572,79 @@ DISPOSITION-1094:
 - Neither side searched SRE/on-call practice, alarm-management standards (EEMUA 191, ISA-18.2) or Sheridan's supervisory-control books; both rate the search as preliminary.
 - Scope, fail loud: this run processed only the new 10-17 literature intake (1 item). The backlog was not touched: 126 bare literature-lane items before and after this run. This was an orchestrator choice, made because of the per-session budget overruns stated in ASSUMPTION-1783 and the 10-17 notes.
 - Budget, fail loud: the search subagents used about 111k (15a) and 92k (15b) tokens, well over the 4k per-task and 30k per-session budgets in Tom's standing rules.
+
+
+## 2026-10-23 — 15a / 15b / 15c returns (scheduled task `c2a2-lit-search-pipeline`; run local-cowork-2026-10-23-856ab00d)
+
+### 15a returns (2026-10-23)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1170
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Strong (as a principle); Moderate (peer-reviewed grounding)
+  Key source: PromLabs, "End-to-End Watchdog Alerts" (always-firing Watchdog alert routed to an external dead-man's-switch; kube-prometheus default), with Beyer et al. 2016, Site Reliability Engineering ch. 6 (black-box vs white-box)
+  Summary: Documented SRE/Prometheus practice agrees that a monitor in the same failure domain cannot report that domain dying; the standard minimal remedy is an off-host heartbeat that alarms when pings stop.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1170_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Original item: PRESUMPTION-1170 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search FOR | Current status: SEARCHED-15a
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1174
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (by analogy)
+  Key source: Kane, Correia, Healy & Jackson 2025, "Generative AI - Signal to Noise," Digital Society 4:51, with Shumailov et al. 2024, Nature (model collapse; abstract only)
+  Summary: Corpus/culturomics, model-collapse and MAD work support the contamination risk; W3C PROV (Person vs SoftwareAgent), COPE/ICMJE disclosure and DH span-level provenance give precedent for marking model-authored spans. All support is by analogy.
+  NOVELTY-FLAG (configuration level only): no literature on one model family being interlocutor inside a named thinker's corpus, the carding agent, and the reviewer, all under that thinker's name.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1174_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Original item: PRESUMPTION-1174 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search FOR | Current status: SEARCHED-15a
+
+### 15b returns (2026-10-23)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1170
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-to-Moderate (Weak vs mechanism; Moderate vs the "High" rating and implied remedy)
+  Key source: Supabase "Project Pausing" docs (7-day inactivity threshold; warning email ~1 week before pause; restore window), with Ewaschuk/Beyer et al. 2016 SRE ch. 6 on alert cost
+  Specific risk: An off-host heartbeat on a laptop host is itself a dependency that can fail silently (Healthchecks.io ~7 h alert outage, 2020) and fires on every routine sleep (alert fatigue). Uncovered case: host awake but hung, or power-off > 7 days.
+  Summary: Nothing contradicts the mechanism; but the 5-day gap was under Supabase's 7-day threshold, Supabase sends its own off-host warning, and launchd runs missed jobs on wake, so "High" overstates risk for this setup.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1170_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Original item: PRESUMPTION-1170 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search AGAINST | Current status: SEARCHED-15b
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1174
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (Strong vs model-collapse framing; Moderate vs "provenance does not mark"; Weak vs core circularity)
+  Key source: Gerstgrasser et al. 2024, "Is Model Collapse Inevitable?" arXiv:2404.01413 (ICML 2024; abstract)
+  Specific risk: Narrower than stated: Claude-run reviewers may favour a Claude-made objection, and "Claude's objection" may be lost once grouped under tradition_key=kastrup. Treating it as model collapse could wrongly drop a primary source Kastrup himself published.
+  Summary: Model collapse needs retraining on own output replacing real data and stays bounded under accumulation; C2A2 retrains nothing. Kastrup published and answered the dialogue, and the card (PROP-2026-10-23-001) credits the objection to Claude in free text; what is missing is a structured speaker/origin field.
+  CANDIDATE SYSTEMIC-RISK (15b; structural High, demonstrated exposure Moderate; written in the 1174 against file, no separate flag file): in both 1170 and 1174 the checker shares a failure domain or identity with what it checks (watchers on the monitored host; same model writes, cards and reviews).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1174_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Original item: PRESUMPTION-1174 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search AGAINST | Current status: SEARCHED-15b
+
+### 15c dispositions (2026-10-23)
+DISPOSITION-1095:
+  Date: 2026-10-23 | Item: PRESUMPTION-1170 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 0 (10-23 intake)
+  15a: SUPPORTED (Strong as principle; Moderate peer-reviewed) | 15b: PARTIALLY-CHALLENGED (Weak-to-Moderate; vs severity, not mechanism)
+  Net assessment: Both directions agree on the mechanism: on-host watchers cannot report a whole-host outage, and the minimal remedy is an off-host heartbeat with a grace window. 15b's challenge lowers severity for this setup (5 days < Supabase's 7-day pause; Supabase emails its own warning; launchd catch-up) and warns that a naive heartbeat on a sleeping laptop would alarm on routine sleep.
+  Disposition: REVISE (REVISE-521, Medium urgency)
+  Reasoning: The presumption describes a design gap whose correctness both sides confirm, so it is not a premise to INCORPORATE; it is a realized instance of the condition PREMISE-086 already names (monitor must have independent liveness) and of the action REVISE-147 already recommends (external heartbeat; High, open since 2026-06-26). Per the 2026-08 precedent, no new premise is minted; the flag routes to discharging REVISE-147's off-host limb. Medium, not High, on 15b's bounding evidence and to avoid duplicating an unanswered High.
+  Consistency: consistent with PREMISE-086 and PREMISE-073; extends REVISE-147 and REVISE-520 (supervisor absence -> host absence). Partially bears on MONITOR-675 (PRESUMPTION-1040; owed dead-man's-switch search, re-triggered 10-18, still queued) — not consumed here; 15d to note.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1170 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1170_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1170_against.md
+
+DISPOSITION-1096:
+  Date: 2026-10-23 | Item: PRESUMPTION-1174 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 0 (10-23 intake)
+  15a: PARTIALLY-SUPPORTED (Moderate, by analogy) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: The model-collapse framing does not transfer (no retraining; accumulation not replacement), and the loop is marked in free text on the card. What survives on both sides is narrower: a missing structured speaker/origin field on carded spans, and possible same-model reviewer bias, which neither side verified in the literature.
+  Disposition: MONITOR (MONITOR-696, Medium)
+  Reasoning: Mixed, analogy-level evidence on a Medium-risk PRESUMPTION; the narrowed claim is plausible but its key limb (reviewer self-preference) is unverified, so MONITOR rather than REVISE. In-house, PREMISE-004 (same-model-family convergence is not independent evidence) already covers the reviewer limb in principle; this item is a concrete corpus-side instance of it.
+  Consistency: no INCORPORATE issued; consistent with PREMISE-004 and the same-model-validation cluster (PRESUMPTION-060). 15b's SYSTEMIC-RISK candidate (checker shares failure domain/identity with checked) recorded; not filed as a flag.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1174 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1174_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1174_against.md
+
+### Evidence-quality notes (2026-10-23)
+- 15a and 15b ran as separate subagents with no shared context; each reported it did not open the other direction's directory or this file. Both wrote only their two result files; the orchestrator (this run) wrote all register appends and queue tags.
+- Read in full: 15a — SRE ch. 6 (sre.google), PromLabs watchdog page, Supabase pausing doc, Kane et al. 2025. 15b — SRE ch. 6 (O'Reilly excerpt), Supabase pausing doc, local card wiki/inbox/proposals/pending/2026-10-23_kastrup_claude-dialogue-ai-consciousness.md. Shumailov 2024 abstract-only (nature.com blocked); Alemohammad 2023 snippet/unverified; W3C PROV spec not fetched (secondary only); Gerstgrasser 2024 abstract. Kastrup–Claude blog post not located by 15b (unverified).
+- Shared source Supabase pausing doc counted once. 1170 support is mostly grey literature (vendor/practitioner); failure-detector theory not searched.
+- Both sides rate the search preliminary.

@@ -43,7 +43,7 @@ Context: Day 212 covers II-II Q.186 (those things in which the religious state p
 
 [01:04] Summa 10. And so here we go. We have no less than 20 distinct articles to cover in this episode. So my summaries will have to be incredibly brief just to get us through the episode in regular time.
 
-[01:16] 
+[01:16]
 
 **Article 1 — Whether the religious state is perfect**
 
@@ -55,7 +55,7 @@ Article one, whether the religious state is perfect. Why do we call those who ha
 
 [01:52] God. St. Thomas says here, to offer something to the worship of God is necessary for salvation, but to offer oneself holy and one's possessions to the worship of God belongs to
 
-[02:03] perfection. 
+[02:03] perfection.
 
 **Article 2 — Whether every religious is bound to keep all the councils**
 
@@ -65,7 +65,7 @@ Article two, whether every religious is bound to keep all the councils. As far a
 
 [02:28] these may vary from one religious order to the other. And so St. Thomas says, "He is not bound to observe all the practices whereby perfection may be attained, but only those which are
 
-[02:40] definitively described to him by the rule which he has professed." 
+[02:40] definitively described to him by the rule which he has professed."
 
 **Article 3 — Whether poverty is required for religious perfection**
 
@@ -81,7 +81,7 @@ Article three, whether poverty is required for religious perfection. As Aquinas 
 
 [03:45] foundation is voluntary poverty, whereby a man lives without property of his own, according to the words of our Lord in Matthew 19. If thou wil be perfect, go sell all that thou has and give to the
 
-[03:59] poor and come follow me. 
+[03:59] poor and come follow me.
 
 **Article 4 — Whether perpetual continence is required for religious perfection**
 
@@ -91,7 +91,7 @@ Article four, whether perpetual continence is required for religious perfection.
 
 [04:24] joys and spiritual considerations. But also as St. Paul taught, the married man is anxious about worldly affairs. How to please his wife and his interests are divided. So Aquinas then teaches
 
-[04:37] perpetual continence as well as voluntary poverty is requisite for religious perfection. 
+[04:37] perpetual continence as well as voluntary poverty is requisite for religious perfection.
 
 **Article 5 — Whether obedience belongs to religious perfection**
 
@@ -103,7 +103,7 @@ Article 5, whether obedience belongs to religious perfection. Now we have heard 
 
 [05:13] follow Christ by obedience and imitation as Jesus Christ himself was obedient even unto death as scripture says. Therefore, obedience not only to God's commandments but also one's religious
 
-[05:27] rule, one's superior, these all belong to the religious perfection. 
+[05:27] rule, one's superior, these all belong to the religious perfection.
 
 **Article 6 — Whether it is requisite for religious perfection that poverty, continence, and obedience should come under a vow**
 
@@ -111,7 +111,7 @@ Article six, whether it is requisite for religious perfection that poverty, cont
 
 [05:37] under a vow. We call religious religious because of that total burnt offering sacrifice to God they make of their lives. And without a perpetual vow this sacrifice would lose that total
 
-[05:54] irrevocable gift aspect. As St. Gregory said when a man vows to God all his possessions, all his life, all his knowledge, it is a holocaust or a total offering. 
+[05:54] irrevocable gift aspect. As St. Gregory said when a man vows to God all his possessions, all his life, all his knowledge, it is a holocaust or a total offering.
 
 **Article 7 — Whether it is right to say that religious perfection consists in these three vows**
 
@@ -127,7 +127,7 @@ Article 7. And whether it is
 
 [06:55] what to do, as well as by this vow, one makes of himself a slave for righteousness sake for God by offering up his own will. So again from the perspective of removing obstacles as
 
-[07:08] well as providing freedom for thought and affection placed on God along with making a man a complete sacrifice to God. The religious perfection does consist in these three vows. 
+[07:08] well as providing freedom for thought and affection placed on God along with making a man a complete sacrifice to God. The religious perfection does consist in these three vows.
 
 **Article 8 — Whether the vow of obedience is the chief of the religious vows**
 
@@ -135,7 +135,7 @@ Article 8,
 
 [07:19] whether the vow of obedience is the chief of the religious vows and it is. And in brief for time's sake here because by poverty and perfect continence a man dedicates to God what
 
-[07:29] he has but by obedience he dedicates to God his entire life himself his will his own capacity to choose. Therefore obedience is the chief one of the three religious vows. 
+[07:29] he has but by obedience he dedicates to God his entire life himself his will his own capacity to choose. Therefore obedience is the chief one of the three religious vows.
 
 **Article 9 — Whether a religious sins mortally whenever he transgresses the things contained in his rule**
 
@@ -153,7 +153,7 @@ Article nine. Whether a
 
 [08:38] vows to live according to the rule, or by reason of a precept, whether given orally by a superior or expressed in the rule, since this would be to act contrary to the vow of obedience.
 
-[08:49] 
+[08:49]
 
 **Article 10 — Whether a religious sins more grievously than a secular by the same kind of sin**
 
@@ -167,13 +167,13 @@ Article 10. whether a religious sins more grieviously than a secular by the same
 
 [09:37] his vows, his rule, and his community help him make satisfaction for it by good works and quickly be rehabilitated into his previous state. As St. Thomas says, his sin's light is absorbed, as it
 
-[09:51] were, by his many good works. And if it be mortal, he more easily recovers from it. 
+[09:51] were, by his many good works. And if it be mortal, he more easily recovers from it.
 
 ### Q.189 — The Entrance into Religious Life
 
 Moving then on to question 187 of the entrance into religious life and this is one of my personal favorites in
 
-[10:03] the suma question 187 which I hope the listener will enjoy as well. 
+[10:03] the suma question 187 which I hope the listener will enjoy as well.
 
 **Article 1 — Whether those who are not practicing keeping the commandments should enter religion**
 
@@ -181,7 +181,7 @@ Article one whether those who are not practicing keeping the commandments should
 
 [10:15] perfection and therefore both beginners and those experienced in virtue have a place within it. As Aquinas says, it is right that not only those who are practiced in the observance of the
 
-[10:24] commandment should enter religion in order to attain yet greater perfection, but also those who are not practiced in order the more easily to avoid sin and to attain perfection. 
+[10:24] commandment should enter religion in order to attain yet greater perfection, but also those who are not practiced in order the more easily to avoid sin and to attain perfection.
 
 **Article 2 — Whether one ought to be bound by vow to enter religion**
 
@@ -193,7 +193,7 @@ Article two,
 
 [10:59] ye and pay to the Lord your God. And a gloss of Augustine says that some vows concern the individual, such as vows of chastity, virginity, and the like. Consequently, holy scripture invites us
 
-[11:09] to vow these things, but holy scripture invites us only to that which is better. Therefore, it is better to bind oneself by vow to enter religion. 
+[11:09] to vow these things, but holy scripture invites us only to that which is better. Therefore, it is better to bind oneself by vow to enter religion.
 
 **Article 3 — Whether one who is bound by a vow to enter religion is under an obligation of entering religion**
 
@@ -203,7 +203,7 @@ Article three, whether one who is bound by a vow to
 
 [11:32] religious, provided there be no new circumstance or impediment that would no longer make the fulfillment of this promise possible, then if one bound themsself to enter religion, they ought
 
-[11:42] to fulfill that vow. 
+[11:42] to fulfill that vow.
 
 **Article 4 — Whether he who has vowed to enter religion is bound to remain in religion in perpetuity**
 
@@ -211,7 +211,7 @@ Article four, whether he who has vowed to enter religion is bound to remain in r
 
 [11:54] i.e solemn vows for the reason that it binds a man to remain in religion forever more has to be preceded by a year of probation whereas this is not required before the simple vow whereby a
 
-[12:06] man binds himself to enter religion. Therefore it seems that he who vows to enter religion is not for that reason bound to remain there in perpetuity. 
+[12:06] man binds himself to enter religion. Therefore it seems that he who vows to enter religion is not for that reason bound to remain there in perpetuity.
 
 **Article 5 — Whether children should be received in religion**
 
@@ -221,7 +221,7 @@ Article five whether children should be
 
 [12:30] Yet a child can be received into religious life in order to be educated there. Aquinas says here something like attending a boarding school, I would imagine. St. Gregory the Great wrote,
 
-[12:40] "The Roman nobles began to give their sons to the blessed St. Benedict to be nurtured for Almighty God." 
+[12:40] "The Roman nobles began to give their sons to the blessed St. Benedict to be nurtured for Almighty God."
 
 **Article 6 — Whether one ought to be withdrawn from entering religion through deference to one's parents**
 
@@ -233,7 +233,7 @@ Article six, whether one ought to be withdrawn from entering religion through de
 
 [13:19] point or at this age a man cannot be kept from religious life by his or her parents. justice. However, piety specifically might require him or her to remain with their parents if there is
 
-[13:30] great need and if there is absolutely no other way for his or her parents to be cared for besides the aspiring religious remaining at home to take care of them. 
+[13:30] great need and if there is absolutely no other way for his or her parents to be cared for besides the aspiring religious remaining at home to take care of them.
 
 **Article 7 — Whether parish priests may lawfully enter religion**
 
@@ -245,7 +245,7 @@ Article 7, whether parish priests may
 
 [14:08] bishop withstand him, we authorize him to go freely." And this is again because the parish priest is not under a solemn vow and cannot be prevented from undertaking that which is objectively
 
-[14:21] beneficial to his salvation. 
+[14:21] beneficial to his salvation.
 
 **Article 8 — Whether it is lawful to pass from one religious order to another**
 
@@ -263,7 +263,7 @@ Article 8, whether it is lawful to pass from one religious order to another. And
 
 [15:30] leaning upon the conversation and endorsement of my own superior, the head of the monastery I was in. As St. Thomas says here, if there be a probable doubt about this, one should ask one's
 
-[15:42] superior to decide. 
+[15:42] superior to decide.
 
 **Article 9 — Whether one ought to induce others to enter religion**
 
@@ -275,7 +275,7 @@ Article nine, whether one ought to induce others to enter religion, ought one to
 
 [16:20] shall be as stars for all eternity. Which sounds like to me St. Thomas is saying based on the scripture that he has quoted that if one induces another into religious life, he will save his
 
-[16:33] own soul. Meaning such an act is of such great merit that it will cover as St. James says a multitude of his own sins. 
+[16:33] own soul. Meaning such an act is of such great merit that it will cover as St. James says a multitude of his own sins.
 
 **Article 10 — Whether it is praiseworthy to enter religion without taking counsel of many and previously deliberating for a long time**
 

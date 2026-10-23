@@ -3705,3 +3705,20 @@ OPEN-260 (update 2026-10-17): Twins again: deferred action monitor (two runs abo
 OPEN-264 (update 2026-10-17): Eighth local pass under the 10-03 rule. 10 sessions read, all with content.
 OPEN-266 (update 2026-10-17): Recurred unchanged for the fourth time. Project status: "Nothing is broken". The same morning, scheduler health logged 5 FAIL, including the OpenStory watchdog: H-Drive unmounted, ingest STOPPED (ASSUMPTION-1863, -1862). PREMISE-237 has still not been adopted by the status job.
 OPEN-267 (update 2026-10-17): IDs still not renumbered; the daily run and the deferred monitor both repeat the request (ASSUMPTION-1857). Pending/ holds 1 file (Carroll PROP-2026-10-16-001) [verified by ls].
+
+OPEN-272:
+  Raised: 2026-10-23 by 14a/14b (ASSUMPTION-1875, -1876, -1877; PRESUMPTION-1170, -1171)
+  Question: The host was silent 10-18..10-22, and nothing noticed until it woke. Should there be one off-host heartbeat check (e.g. a cloud routine that alerts if no local status file has been written in 24 h)? And when daily jobs catch up after an outage, should missed dates be backfilled, coalesced with an explicit "not run" marker, or left empty? Immediate risk: the Supabase keep-warm last ran 10-17, so a free-tier pause may be imminent (e29c7a77).
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-272
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-267 (update 2026-10-23): Recurred under catch-up concurrency. Friston and Kastrup both hold PROP-2026-10-23-001 [verified by grep of pending/] (ASSUMPTION-1879). The IDs are still not renumbered. Pending/ now holds 7 files dated 10-23, plus 5 older ones reported by the daily run.
+OPEN-270 (update 2026-10-23): The absence happened without a pause list. The host itself appears to have been off or asleep 10-18..10-22, so the question of which jobs to pause was moot, and the "needs Tom" items simply waited. Humanity AI (10-21) has passed and its queue item is still open. ND ECG DELTA is due 10-26 (ASSUMPTION-1888). See OPEN-272.
+OPEN-264 (update 2026-10-23): Ninth local pass. 8 sessions read, all with content. 2 were still running and not read.
+OPEN-260 (update 2026-10-23): There was no 14a/14b output for 10-18..10-22, and no cloud stub is visible for those dates in changelog/ [verified by ls: newest before today is 2026-10-17]. This pass writes a new 2026-10-23 file.

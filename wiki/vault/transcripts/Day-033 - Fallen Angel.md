@@ -38,7 +38,7 @@ tags: [summa, day/033, pars/I]
 
 [00:01:09] interpreted by the magisterium here is job where it is written even in his servants he puts no trust and his angels he charges with error and according to the fourth latter in Council the devil and other demons were created by God naturally good but they became Evil by their own doing and with that we begin
 
-[00:01:28] 
+[00:01:28]
 ### Q.63 — The malice of the angels with regard to sin
 
 **Article 1 — Whether the evil of fault can be in the angels**
@@ -49,7 +49,7 @@ article one whether the evil of fault can be in the Angels is sin even possible 
 
 [00:02:30] their own will instead of following God's will the first kind of these sins an angel cannot have because they do not have bodies they are not enticed by animal appetites and even the second kind of sin not wanting what God wants would be impossible for an angel in most cases short of the actual case or scenario the Angels found themselves in in the very beginning which we will articulate in the ensuing articles
 
-[00:02:56] 
+[00:02:56]
 **Article 2 — Whether only the sin of pride and envy can exist in an angel**
 
 article two whether only the sin of Pride and envy can exist exist in an angel Augustine says the devil's not a fornicator nor a drunkard nor anything of the like sort yet he is proud and envious in one way demons can be said to be the cause of all sins through their influencing men to commit those sins but in themselves entirely Spiritual Beings the only sins that can exist in them are those which have no bodily admixture or sensual desire which immediately drops
@@ -62,7 +62,7 @@ article two whether only the sin of Pride and envy can exist exist in an angel A
 
 [00:04:59] every IM moderate greed of possessing any created good be termed avarice in this way avarice is contained under the pride which is in the demons and in regard to Pride he writes such is precisely the sin of Pride not to be subject to a superior when subjection is due consequently the first sin of the angel can be none other than Pride
 
-[00:05:22] 
+[00:05:22]
 **Article 3 — Whether the devil desired to be as God**
 
 article 3 whether the devil desired to be as God as it is written in the book of Isaiah and traditionally understood to refer to Satan how you are fallen from Heaven oh Day star son of dawn how you are cut down to the ground you who laid the Nations low you said in your heart I will Ascend to Heaven above the stars of God I will set my Throne on high I will sit on the Mount of assembly in the far north I will Ascend above the heights of the clouds I will make myself
@@ -99,7 +99,7 @@ Article 5 whether the devil was wicked by the fault of his own will in the first
 
 [00:11:01] person then the demon will begin to weep through that person in Remembering this first and last moment in which it dwelt in Intimate friendship with its creator
 
-[00:11:13] 
+[00:11:13]
 **Article 6 — Whether there was any interval between the creation and the fall of the angel**
 
 article 6 whether there was any interval between the creation and the fall of the Angel Aquinas tells us that there is a difference of opinion on this question but says that according to the writings of the Saints before him the more probable opinion is the following that the devil sinned at once after the first instance of his creation this must be maintained if it be held that he elicited an act of Free Will in the first instance of his creation and that he was created in Grace as we have said in the first instance of the devil's
@@ -154,7 +154,7 @@ article two whether the will of demons is obstinate in evil can the demons come 
 
 [00:17:10] can say I have already considered everything it is because an angel sees all the logical conclusions in the first premise in the beginning that is why their choice is final from the beginning
 
-[00:17:25] 
+[00:17:25]
 **Article 3 — Whether there is sorrow in the demons**
 
 article three whether there is sorrow in the demon St Thomas says fear sorrow joy and the like so far as they are passions cannot exist in the demons for thus they are proper to a Corporal organ accordingly however as they denote simple acts of the will they can be in the demons and it must be said that there is sorrow in them because sorrow as denoting a simple Act of the will is nothing else than the resistance of the will to what is or to what is not now it is evident that the
