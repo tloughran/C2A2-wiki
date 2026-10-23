@@ -1,1 +1,1 @@
-2026-10-18T10:15Z  PASS  telemetry=2026-10-18/33 agents  node_edges=2026-10-18  | DB age 20h
+2026-10-23T17:00Z  FAIL  step2a extract_openstory_agent_data.py (connect_ro local copy) — OSError: [Errno 28] No space left on device: open-story.db (7.9GB) -> sandbox tmp (~3.5GB free) | DB age 4h (fresh); feeds NOT refreshed, last PASS 2026-10-18
