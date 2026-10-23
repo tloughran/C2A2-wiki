@@ -53,8 +53,10 @@ import json
 import os
 import plistlib
 import re
+import sqlite3
 import subprocess
 import sys
+import urllib.parse
 from datetime import datetime, timedelta, timezone
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -108,7 +110,13 @@ ARTIFACTS = [
         # Nothing here could see that, because nothing here read the data.
         "owner": "openstory-ingest (data inside metabolism_data.json)",
         "path": "wiki/metabolism/metabolism_data.json",
-        "field": "_meta.t_max_event",
+        # 2026-10-23: was `_meta.t_max_event`, changed to `_meta.t_max`.
+        # t_max_event is an ANY-event frontier, so the two-session trickle that
+        # survived the 10-11 collapse (37-166 events/day, zero new sessions) kept
+        # it advancing and kept this row green through a total outage. t_max is the
+        # LANE frontier and it stopped at 2026-10-11T04:35:12Z -- the collapse, to
+        # the second. The trickle cannot move it.
+        "field": "_meta.t_max",
         "max_age_hours": 48,
         "failure_means": (
             "the newest OpenStory EVENT IN THE SNAPSHOT is that old. That has TWO "
@@ -167,6 +175,58 @@ ARTIFACTS = [
             "the push (a foreign commit ahead of origin, a path outside the allowlist, "
             "broken inline JS, a merge conflict). If the file itself is old, the push "
             "step did not run -- the commit step refused first; see commit_check.md."
+        ),
+    },
+]
+
+# Live-DB assertions. These query open-story.db DIRECTLY rather than the
+# metabolism snapshot, and that is the whole point of them: every other ingest
+# signal in this repo reads the snapshot, so when the snapshot froze on 2026-10-18
+# all of them went stale together and not one could still say whether ingest itself
+# was alive. A question about the source has to be asked of the source.
+#
+# Both ask "is the EXPECTED VOLUME arriving?", not "did anything arrive?". The
+# 10-11..10-17 collapse was survived by a trickle from exactly two session IDs,
+# which answered yes to every did-anything-arrive check in this repo at once.
+OPENSTORY_DB = os.path.expanduser(
+    "~/Documents/Non-Claude Projects/OpenStory/data/open-story.db"
+)
+
+DB_ASSERTIONS = [
+    {
+        "owner": "openstory-ingest (new sessions, live db)",
+        "question": "hours since the newest session was created",
+        "sql": "SELECT (julianday('now') - julianday(MAX(first_event))) * 24.0 "
+               "FROM sessions WHERE first_event <> '';",
+        "unit": "h",
+        # From 4,379 measured inter-session gaps since 2026-05-07: p50 0.46h,
+        # p95 2.12h, p99 5.42h, p99.9 21.8h, max 111.4h. Only four gaps exceeded
+        # 24h, and the three largest (55.1, 73.1, 111.4h) were all real outages.
+        # 36h sits above p99.9 and below the smallest true outage, so a quiet night
+        # cannot trip it and a real stoppage cannot hide under it.
+        "threshold": 36.0,
+        "failure_means": (
+            "NO NEW SESSION has been created for that long. This is the signal the "
+            "2026-10-11 collapse defeated: events kept trickling from two existing "
+            "session IDs for six days while zero new sessions were created, so every "
+            "any-event check stayed green. New sessions stop appearing when the "
+            "watcher has stopped picking up transcripts."
+        ),
+    },
+    {
+        "owner": "openstory-ingest (daily volume, live db)",
+        "question": "events ingested in the last 24h",
+        "sql": "SELECT COUNT(*) FROM events "
+               "WHERE timestamp >= datetime('now', '-24 hours');",
+        "unit": " events",
+        # From 151 pre-collapse days: min 51, p01 223, p05 2,541, p50 8,829. The
+        # post-collapse ceiling was 166 events/day. 1,000 is ~6x that ceiling and
+        # below p05, so it separates a thin real day from a dead pipeline.
+        "floor": 1000,
+        "failure_means": (
+            "ingest volume has collapsed to a trickle. This is a FLOOR, not a zero "
+            "check: the 10-11 outage never reached zero (37-166 events/day), which "
+            "is exactly why asking 'did anything arrive' saw nothing wrong."
         ),
     },
 ]
@@ -561,6 +621,30 @@ def verdict_task(task, now_local, cloud_watched=False):
     # line called all 31 "OK: disabled", so none was watched. Moved is not off:
     # say so, and say where the truth now lives.
     mig = task.get("migratedToRemote")
+
+    # Checked BEFORE the two `mig` branches below, which both return without ever
+    # reading `enabled`. That ordering is why this condition was invisible to every
+    # run of this script: a migrated task was reported as migrated and nothing more.
+    #
+    # The 09-24 sweep was supposed to leave each moved task a DISABLED local entry.
+    # Nine did not get disabled, so both registrations are live and the task can be
+    # dispatched twice -- which is how four lit-search result files were overwritten
+    # by a concurrent pass on 2026-10-15.
+    #
+    # Deliberately does NOT advise disabling the local side on its own: the local
+    # entry is the only one this script can see fire, so disabling it blind would
+    # silence any task whose cloud twin is not actually running. Confirm the twin
+    # first, in the Routines surface or by a second same-day pass in the output.
+    if mig and task.get("enabled", False):
+        return FAIL, (
+            f"{tid}: DOUBLE-REGISTERED -- moved to cloud routine "
+            f"{mig.get('triggerId', '?')} ({task.get('migratedToRemoteAt', '?')[:10]}) "
+            f"but the local entry is STILL ENABLED on "
+            f"{task.get('cronExpression') or 'no cron'}. Both sides can dispatch it, "
+            f"and two concurrent passes overwrite each other's output. Confirm the "
+            f"cloud trigger fires before disabling the local entry"
+        )
+
     if mig and cloud_watched:
         return OK, (f"{tid}: runs as cloud routine {mig.get('triggerId', '?')}; judged from "
                     f"its run record in {ROUTINE_HEALTH_FILE}")
@@ -807,6 +891,48 @@ def verdict_artifact(spec, now_utc, repo=REPO):
                 f"({age_hours:.0f}h ago)")
 
 
+def verdict_db_assertion(spec, db_path=OPENSTORY_DB):
+    """Ask the live OpenStory db a volume question, not a did-anything question.
+
+    Split from main() so it can be driven in a test against a hand-built db with
+    a known shape -- which is the only way to prove a threshold still separates a
+    trickle from a healthy day.
+    """
+    owner = spec["owner"]
+    if not os.path.exists(db_path):
+        return FAIL, (f"{owner}: live db not found at {db_path} -- ingest cannot be "
+                      f"measured at all, which is worse than a red row, not better")
+    # Read-only, and a short timeout: this db has a live writer, and a health check
+    # must never be the thing that blocks ingest it is supposed to be watching.
+    uri = "file:" + urllib.parse.quote(db_path) + "?mode=ro"
+    try:
+        conn = sqlite3.connect(uri, uri=True, timeout=5)
+        try:
+            value = conn.execute(spec["sql"]).fetchone()[0]
+        finally:
+            conn.close()
+    except sqlite3.Error as exc:
+        return FAIL, f"{owner}: live db query failed -- {exc}"
+
+    if value is None:
+        return FAIL, (f"{owner}: {spec['question']} -- query returned no rows. "
+                      f"{spec['failure_means']}")
+
+    if "threshold" in spec:
+        breached = value > spec["threshold"]
+        shown = f"{value:.1f}{spec['unit']}"
+        bound = f"limit {spec['threshold']:.0f}{spec['unit']}"
+    else:
+        breached = value < spec["floor"]
+        shown = f"{value:,}{spec['unit']}"
+        bound = f"floor {spec['floor']:,}{spec['unit']}"
+
+    if breached:
+        return FAIL, (f"{owner}: {spec['question']} = {shown}, past {bound} -- "
+                      f"{spec['failure_means']}")
+    return OK, f"{owner}: {spec['question']} = {shown}, within {bound}"
+
+
 def verdict_artifact_lag(spec, now_utc, repo=REPO):
     """Is the artifact BEHIND ITS INPUTS? (Not: is the artifact old?)
 
@@ -1002,6 +1128,12 @@ def main():
     for spec in ARTIFACTS:
         results.append(verdict_artifact(spec, now_utc))
 
+    # Asked of the live db, deliberately after the snapshot rows above: when the
+    # snapshot is stale those rows go red and cannot say why, and these two are
+    # what tell the reader whether the source or the snapshot stopped.
+    for spec in DB_ASSERTIONS:
+        results.append(verdict_db_assertion(spec))
+
     for spec in LAG_ARTIFACTS:
         results.append(verdict_artifact_lag(spec, now_utc))
 
@@ -1022,6 +1154,7 @@ def main():
     summary = (
         f"{len(tasks)} registry task(s) across {len(registry_paths)} file(s), "
         f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s), "
+        f"{len(DB_ASSERTIONS)} live-db assertion(s), "
         f"{len(LAG_ARTIFACTS)} lag assertion(s), "
         f"{len(UNATTENDED_PERMISSION_TASKS)} permission-mode check(s), "
         f"1 git-debris check, {len(FAILURE_MARKERS)} failure marker(s): "

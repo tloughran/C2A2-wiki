@@ -26,6 +26,7 @@ turn every task into a pass.
 
 import json
 import os
+import sqlite3
 import sys
 import tempfile
 from datetime import datetime, timedelta, timezone
@@ -73,6 +74,139 @@ def artifact_file(tmp, payload):
     path.write_text(json.dumps(payload))
     return {"owner": "owner", "path": str(path), "field": "_meta.generated",
             "max_age_hours": 25}
+
+
+def openstory_db(tmp, name, sessions_ago_hours, events):
+    """Build a minimal open-story.db with a known session/event shape.
+
+    Only the two columns the assertions actually read are modelled: sessions
+    .first_event and events.timestamp. A fuller schema would make the fixture
+    look authoritative about things it is not.
+
+    `events` is a list of (hours_ago, count) so a test can state a day's volume
+    and a frontier independently -- which is the whole distinction the 10-11
+    collapse turned on.
+    """
+    # Deliberately the REAL clock, not this file's frozen NOW_UTC: both queries
+    # ask SQLite for 'now', so a fixture pinned to 2026-08-04 would read as
+    # months stale and every row would be red for the wrong reason.
+    now = datetime.now(timezone.utc)
+    path = Path(tmp) / name
+    conn = sqlite3.connect(path)
+    conn.execute("CREATE TABLE sessions (session_id TEXT, first_event TEXT)")
+    conn.execute("CREATE TABLE events (session_id TEXT, timestamp TEXT)")
+    for i, ago in enumerate(sessions_ago_hours):
+        stamp = (now - timedelta(hours=ago)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        conn.execute("INSERT INTO sessions VALUES (?, ?)", (f"s{i}", stamp))
+    for ago, count in events:
+        stamp = (now - timedelta(hours=ago)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        conn.executemany("INSERT INTO events VALUES (?, ?)",
+                         [("s0", stamp)] * count)
+    conn.commit()
+    conn.close()
+    return str(path)
+
+
+def spec_named(fragment):
+    for spec in mod.DB_ASSERTIONS:
+        if fragment in spec["owner"]:
+            return spec
+    raise AssertionError(f"no DB_ASSERTIONS entry matching {fragment!r} -- the "
+                         f"assertion this test exists to protect has been removed")
+
+
+def db_assertion_cases(tmp):
+    """The trickle cases. These are the point of the two live-db assertions.
+
+    Why this matters, and what regression it catches
+    ------------------------------------------------
+    From 2026-10-11 to 10-17 OpenStory ingest was totally dead -- zero new
+    sessions for six days -- while 37-166 events/day kept arriving from two
+    already-open session IDs. Every ingest signal in this repo asked "did any
+    event arrive?", and the trickle answered yes to all of them simultaneously.
+    The outage went unnoticed for twelve days.
+
+    So the trickle fixture below is not an edge case, it is the exact shape of
+    the failure. A test that only checked the SQL parses would have passed
+    throughout the outage and is worthless. These assert that:
+
+      - both new rows go RED on the trickle, and
+      - the old any-event question is still GREEN on that same database.
+
+    That second assertion is the one with teeth. It is what fails if anyone
+    moves these back to an any-event frontier (which is what `_meta.t_max_event`
+    was, and why that row stayed green through the collapse). If the trickle db
+    ever stops being green by the old measure, this fixture no longer reproduces
+    the failure and the thresholds are being validated against nothing.
+    """
+    stale = spec_named("new sessions")
+    floor = spec_named("daily volume")
+
+    # The collapse, to scale: newest session 144h old, 166 events in the last day
+    # spread over the window, all from one surviving session.
+    trickle = openstory_db(tmp, "trickle.db",
+                           sessions_ago_hours=[144, 150],
+                           events=[(0.5, 80), (6, 50), (18, 36)])
+
+    print("the 2026-10-11 trickle (a total outage that every old signal called "
+          "healthy):")
+    expect("trickle: new-session staleness is RED",
+           mod.verdict_db_assertion(stale, trickle)[0], mod.FAIL)
+    expect("trickle: daily volume floor is RED",
+           mod.verdict_db_assertion(floor, trickle)[0], mod.FAIL)
+
+    # The teeth. Same db, the question the old signals asked.
+    conn = sqlite3.connect(trickle)
+    newest_event, event_count = conn.execute(
+        "SELECT MAX(timestamp), COUNT(*) FROM events").fetchone()
+    conn.close()
+    age_h = (datetime.now(timezone.utc) - datetime.strptime(
+        newest_event, "%Y-%m-%dT%H:%M:%S.000Z").replace(tzinfo=timezone.utc)
+    ).total_seconds() / 3600
+    expect("trickle: the OLD any-event question still reads healthy on this same "
+           "db (if this breaks, the fixture no longer reproduces the outage)",
+           age_h < 25 and event_count > 0, True)
+
+    print("\na healthy day must not be called red (a row that cries wolf stops "
+          "being read):")
+    healthy = openstory_db(tmp, "healthy.db",
+                           sessions_ago_hours=[0.5, 3, 11, 20],
+                           events=[(1, 4000), (9, 3000), (20, 1829)])
+    expect("healthy: new-session staleness is OK",
+           mod.verdict_db_assertion(stale, healthy)[0], mod.OK)
+    expect("healthy: daily volume floor is OK",
+           mod.verdict_db_assertion(floor, healthy)[0], mod.OK)
+
+    print("\nthe 36h threshold is calibrated, not arbitrary (p99.9 of 4,379 "
+          "measured gaps is 21.8h; the smallest real outage was 55.1h):")
+    # A long quiet night plus a late start is normal here and must stay green --
+    # that is why the limit is not 24h.
+    quiet = openstory_db(tmp, "quiet.db", sessions_ago_hours=[30],
+                         events=[(1, 5000)])
+    expect("a 30h quiet gap is still OK", mod.verdict_db_assertion(stale, quiet)[0],
+           mod.OK)
+    # Past p99.9 by a wide margin. Anything this old has never been normal.
+    gap = openstory_db(tmp, "gap.db", sessions_ago_hours=[40],
+                       events=[(1, 5000)])
+    expect("a 40h gap is RED", mod.verdict_db_assertion(stale, gap)[0], mod.FAIL)
+
+    print("\nan unmeasurable source must not read as a healthy one:")
+    # The failure that started all of this was silence being read as health. A
+    # missing db is less information than a red row, not more.
+    expect("a missing db is RED, not OK",
+           mod.verdict_db_assertion(stale, str(Path(tmp) / "nope.db"))[0], mod.FAIL)
+    # An unreadable/garbage db must fail loud rather than throw or pass.
+    junk = Path(tmp) / "junk.db"
+    junk.write_text("this is not a database")
+    expect("a corrupt db is RED, not a traceback",
+           mod.verdict_db_assertion(stale, str(junk))[0], mod.FAIL)
+
+    print("\nthe snapshot frontier must be the LANE frontier, not any-event:")
+    # _meta.t_max_event advanced all through the collapse; _meta.t_max stopped at
+    # it. If this reverts, the snapshot row goes trickle-blind again.
+    fields = [s["field"] for s in mod.ARTIFACTS
+              if s["owner"].startswith("openstory-ingest")]
+    expect("the snapshot ingest row reads _meta.t_max", fields, ["_meta.t_max"])
 
 
 def main():
@@ -616,6 +750,10 @@ def main():
         expect(f"LIVE: {spec['id']} still carries a permission mode",
                mod.verdict_unattended_permissions(spec, live_tasks)[0],
                mod.OK)
+
+    print()
+    with tempfile.TemporaryDirectory() as tmp:
+        db_assertion_cases(tmp)
 
     print("\nthe live roster must be reachable (a check that sees nothing passes "
           "everything):")
