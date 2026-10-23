@@ -1,186 +1,207 @@
 {
   "seed": false,
-  "generated": "2026-10-17",
-  "generated_at": "2026-10-17T13:59:04Z",
+  "generated": "2026-10-23",
+  "generated_at": "2026-10-23T15:30:03Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 152,
-    "high_relevance": 0,
-    "primary_themes": "Misuse Security + Governance Policy"
+    "items_checked": 181,
+    "high_relevance": 1,
+    "primary_themes": "Capability Jump + Governance Policy"
   },
   "signals": [
     {
-      "title": "Proactive cyber defense for governments and enterprises",
-      "source": "Google AI Blog",
-      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2610.28987",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Persistent memory is a largely undefended surface for injection and poisoning, and the same risk limits memory sharing among agents. We present PerMIT, a memory architecture with provable integrity guarantees under an explicit trust assumption: only user-typed inputs and values confirmed at a gate are trusted.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.620056+00:00",
+      "long_summary": "PerMIT is a novel memory architecture designed to secure persistent memory against injection and poisoning attacks, addressing a vulnerability that hinders memory sharing among agents. The key feature of PerMIT is its incorporation of provable integrity guarantees, which are based on a clear trust assumption: it only trusts user-typed inputs and values that are verified at a gate. This approach aims to enhance the security framework around persistent memory, making it safer for use in various applications. Understanding the developments in memory security, particularly those that influence the integrity of large language model (LLM) agents, is essential for our community as we adapt to the evolving landscape of AI technologies and their implications for trust and safety.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
       "relevance": 1,
       "tags": [
-        "misuse_security"
+        "capability_jump",
+        "governance_policy"
       ],
-      "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools.",
-      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
-      "published_at": "Wed, 02 Sep 2026 15:40:00 +0000",
-      "first_seen_at": "2026-10-17T13:58:51.030396+00:00",
-      "long_summary": "The Fairwind Program is a restricted initiative designed for governments and trusted partners to utilize Google’s cyber defense tools. This program emphasizes collaboration to enhance cybersecurity measures for entities that may be vulnerable to cyber threats. By providing specialized access to advanced defense technology, the Fairwind Program aims to bolster security frameworks in critical sectors. This matters for a community keeping up with AI as proactive measures in cyber defense are essential in the face of increasingly sophisticated threats, highlighting the importance of robust security in technology.",
+      "summary": "With Agent Compute Engine, Google is introducing a runtime environment designed specifically for AI agents, while also expanding the governance capabilities that enable companies to manage agents in cloud, hybrid, and on-premises environments. The article Google's Agent Compute Engine gives every Gemini agent its own hardware-isolated micro virtual machine appeared first on The Decoder .",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Thu, 22 Oct 2026 17:50:09 +0000",
+      "first_seen_at": "2026-10-23T15:29:59.160049+00:00",
+      "long_summary": "Google's Agent Compute Engine introduces a specialized runtime environment for AI agents, ensuring that each Gemini agent operates within its own hardware-isolated micro virtual machine. This development also enhances governance capabilities, allowing companies greater control over managing agents across diverse environments, including cloud, hybrid, and on-premises setups. This advancement is significant for communities focused on AI, as it highlights the importance of governance and security in deploying AI solutions effectively.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
+        "generated": "2026-10-23",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-      "source": "Hugging Face Blog",
-      "url": "https://huggingface.co/blog/omlx",
+      "title": "What the Specification Did Not Say: Specification-Oracle Gaps in Test-Graded Coding-Agent Benchmarks",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30635",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Coding-agent benchmarks often describe a task in natural language but grade it with tests taken from the upstream project. Passing those tests can require information the description never states: a constant's name, a module path, an exact message.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.844108+00:00",
+      "long_summary": "Coding-agent benchmarks frequently present tasks in natural language, yet the grading of these tasks relies on tests derived from the underlying project. A notable concern raised is that these tests may necessitate information that is not explicitly included in the task description, such as the name of a constant, a specific module path, or exact messaging. This discrepancy creates a gap between the specification provided and the requirements for passing tests, potentially impacting the assessment of coding agents. Understanding these gaps is crucial for refining benchmarks and ensuring a fair evaluation process. This matters for a community keeping up with AI as it highlights the need for clarity in task specifications to accurately assess and guide the development of coding agents.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "IFC-MCQ: Automatically Generating Multiple-Choice Benchmarks for Evaluating LLM Agents on IFC Data Retrieval",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30533",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Industry Foundation Classes (IFC), the standard for building information exchange in architecture, engineering, and construction (AEC), is increasingly queried through large language models (LLMs) using natural language. Evaluating these systems at scale is difficult because free-text answers require costly human or LLM-based review.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.841873+00:00",
+      "long_summary": "The Industry Foundation Classes (IFC) standard is becoming a common reference for building information exchange in architecture, engineering, and construction (AEC). As large language models (LLMs) increasingly utilize natural language to query IFC data, evaluating their effectiveness poses challenges. Specifically, assessing their performance often relies on free-text answers, which necessitates expensive human evaluations or reviews from other LLMs. This highlights the need for more efficient evaluation systems to ensure accurate performance metrics for LLMs interacting with complex IFC data. Understanding these developments is crucial for a community focused on AI, as it informs how to better assess AI capabilities in handling specialized knowledge domains.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Behind Aggregate Scores: What Systematically Varying Arena-Hard's LLM Judge Reveals",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30512",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "LLM judges are used to determine which of two answers is better. Trusting these verdicts requires knowing how repeatable they are and how much they depend on the judge's instructions.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.837943+00:00",
+      "long_summary": "Large Language Model (LLM) judges are implemented to evaluate and discern which of two provided answers is superior. Understanding the trustworthiness of these judgments mandates an analysis of their repeatability and the extent to which the outcomes are influenced by the specific instructions given to the judges. This investigation into the reliability and consistency of LLM judges is crucial for ensuring fair and accurate assessments in AI applications. As the community continues to develop and apply AI technologies, comprehending the strengths and limitations of LLM evaluations is essential for fostering responsible and effective use of these tools.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Rethinking the Evaluation of LLM Fact-Checkers",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30504",
       "relevance": 1,
       "tags": [],
-      "summary": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "summary": "Large language models (LLMs) are widely used to answer factual questions, but their answers can contain errors and must be fact-checked claim by claim. Yet the resulting score depends on three design decisions: which questions the claims answer, under what conditions each claim is judged, and which sources count as evidence.",
       "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Tue, 22 Sep 2026 00:00:00 GMT",
-      "first_seen_at": "2026-10-17T13:58:50.704607+00:00",
-      "long_summary": "Jun Kim, the creator and maintainer of oMLX, has joined Hugging Face to support the MLX community. This development indicates a strengthening of resources and expertise available for those involved in MLX, potentially enhancing collaboration and innovation within this area of machine learning. The addition of Jun Kim to Hugging Face may lead to more robust tools and support for developers and researchers utilizing the oMLX framework. Keeping up with such collaborations is essential for the AI community as it highlights the dynamic nature of support structures that can empower collective advancements in machine learning projects.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.835953+00:00",
+      "long_summary": "Large language models (LLMs) are commonly employed to provide answers to factual inquiries; however, these models frequently yield erroneous responses that necessitate meticulous fact-checking, claim by claim. The effectiveness of this evaluation hinges on three critical design choices: the specific questions that the claims address, the conditions under which each claim is assessed, and the sources considered as valid evidence for verification. Understanding these factors is vital for improving the accuracy and reliability of LLM outputs. This matters for a community keeping up with AI as it highlights the complexities involved in ensuring the integrity of information generated by advanced models.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
+        "generated": "2026-10-23",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/itau-generative-ai",
+      "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30435",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.834070+00:00",
+      "long_summary": "Recent advances in search agents have allowed large language models to effectively manage complex tasks by retrieving and synthesizing external information. However, these agents often struggle with a critical aspect known as search-state awareness, which is their ability to understand what information has already been obtained and what is still missing. This lack of awareness can result in issues such as hallucinated reasoning and premature termination of the search process, potentially undermining the effectiveness of the models. The exploration of self-assessment reinforcement learning could address these challenges by enhancing the capability of search agents to maintain an accurate understanding of their search state. This matters for a community keeping up with AI because the development of such awareness can significantly improve the reliability and efficiency of AI interactions with external information.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "SIM-UT: A User Simulation based Evaluation Framework for Medical Triage Chatbots",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30412",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "LLM-based chat agents are increasingly used for complex, multi-turn, multilingual medical triage in low- and middle-income countries (LMICs), yet evaluation methods focus on single-turn, English-only benchmarks that primarily test the chatbots' knowledge. In practice, users are often confused, overwhelmed, or emotionally vulnerable, giving unclear, misspelled single-word answers or long messages in regional dialects, and the context of a conversation can shift rapidly.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.832103+00:00",
+      "long_summary": "The use of LLM-based chat agents for medical triage in low- and middle-income countries (LMICs) is on the rise; however, existing evaluation methods are inadequate as they focus on simple, single-turn interactions in English. This fails to account for the complexities of real-life scenarios where users may be confused, overwhelmed, or emotionally vulnerable, leading to unclear or dialect-specific responses. As conversations can shift rapidly, there is a need for more effective evaluation frameworks that accommodate these dynamics. This matters for our community as it highlights the importance of developing robust evaluation mechanisms that can better assess the capabilities of AI in sensitive and real-world medical applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Climbing the Ladder: Automating Data Pipelines and Reproducing Baselines in Low-Resource Settings",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30374",
       "relevance": 1,
       "tags": [
         "governance_policy"
       ],
-      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+      "summary": "The massively multilingual translation systems that now include Sicilian learned it from noisy, non-standardised web text. To obtain better translation quality, we redevelop the small neural machine translation (NMT) system that Wdowiak customized for Sicilian.",
       "implication": "Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Fri, 16 Oct 2026 19:00:00 GMT",
-      "first_seen_at": "2026-10-17T13:58:50.471392+00:00",
-      "long_summary": "Itaú is implementing its AI First strategy through the development of ia.i, a conversational interface, and the IARA governance platform. This initiative targets both customers and employees within one of Brazil's most regulated sectors, highlighting the bank's focus on integrating generative AI into its operations. This matters for our community as it exemplifies how institutions can responsibly harness AI technology while navigating regulatory challenges.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.828466+00:00",
+      "long_summary": "The paper discusses how multilingual translation systems, including Sicilian, learn from noisy and non-standardized web text, which can affect translation quality. To address this issue, the authors focus on redeveloping a small neural machine translation (NMT) system that was specifically customized for Sicilian by Wdowiak. This work aims to improve the overall quality of translations by refining the data and techniques used in training these systems. Understanding the development of such specialized translation models is essential for communities engaging with AI, as it highlights the importance of quality data in creating effective linguistic tools for various languages and dialects.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
+        "generated": "2026-10-23",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxoixwi7is43",
-      "relevance": 0,
-      "tags": [],
-      "summary": "\"part\" not \"past\" (I blame jetlag, but then I make typos even when not jetlagged) [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "12 Oct 2026 12:21 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.818239+00:00",
-      "long_summary": "The source material consists of a brief note reflecting on the author's tendency to make typos, attributing one specific error (\"part\" instead of \"past\") to jetlag, while acknowledging that such mistakes occur even without the influence of fatigue. This content highlights the human aspect of error-making, reminding us that everyone makes mistakes from time to time. Understanding the nuances of human cognition and communication, especially in the context of writing, is relevant for a community keeping up with AI as it underscores the importance of accuracy and clarity in both human and machine-generated text.",
+      "title": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.30161",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 23 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-23T15:29:57.816088+00:00",
+      "long_summary": "The study highlights the limitations of existing customer service methods in Indian banks, which often rely on FAQ pages and scripted chatbots. It discusses the potential for conversational agents powered by language models to enhance customer service by providing quicker responses and executing specific tasks, such as blocking a card. However, the effectiveness of these AI-based assistants hinges on their ability to deliver accurate information and adhere to the operational rules of the banks. This exploration is significant for communities interested in AI, as it underscores the importance of integrating reliable AI tools into customer service to improve user experience and operational efficiency.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxqoxu7ml22q",
-      "relevance": 0,
-      "tags": [],
-      "summary": "So I've got a couple of trolls muted, and would be blissfully unaware of their replies to my posts except then other people push back on those replies. At a certain point, I guess blocking is the better option, though I hesitate to give the trolls the satisfaction.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "13 Oct 2026 09:13 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.816291+00:00",
-      "long_summary": "The author discusses their experience with trolls on a social media platform, noting that they have muted a couple of them to remain unaware of their responses to their posts. However, the situation becomes complicated when other users engage with the trolls' replies, making it difficult to ignore them entirely. The author expresses reluctance to block the trolls, fearing it may provide them with a sense of satisfaction. This situation highlights the complexities of managing online interactions and the challenges posed by negative engagements. Understanding these dynamics can help the community navigate the often difficult landscape of social media, especially regarding AI's role in shaping digital communication.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxqkttu4gktl",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Did an event last night that was a discussion format with a moderator + one other panelist, with whom I had some points of agreement and some of disagreement. Turns out, the disagreement was useful: >>",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "13 Oct 2026 08:00 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.814721+00:00",
-      "long_summary": "An event took place that involved a discussion format featuring a moderator and a panelist, where some points of agreement were found, alongside areas of disagreement. The disagreement between the participants proved to be beneficial. This highlights the importance of differing perspectives in discussions about AI, as such dialogues can lead to deeper insights and understanding within the community.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxr6chfx3kcf",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Yes, because it is really important to smoke, try heroin, download CSAM (!!!), or burn plastic, etc etc to be able to discuss the dangers and harms of those activities. [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "13 Oct 2026 13:48 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.813249+00:00",
-      "long_summary": "The provided source text sarcastically suggests that engaging in dangerous or harmful activities, such as smoking, trying heroin, downloading CSAM, or burning plastic, is essential for discussing their potential dangers and harms. This comment may serve to critique the flawed logic behind assuming firsthand experience is necessary for understanding or addressing issues related to risk behaviors. It emphasizes the absurdity of such reasoning in discussions surrounding harmful practices. This matters for a community keeping up with AI because it highlights the importance of critical thinking and informed conversations about technology and its ethical implications rather than relying solely on personal experience.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxr6z2igq2cf",
-      "relevance": 0,
-      "tags": [],
-      "summary": "I don't actually follow Stancil, but I do follow the phrase \"stochastic parrots\" and that seems to be a pretty reliable way to get notified when he's on here flaunting his ignorance (about \"AI\" specifically). >>",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "13 Oct 2026 14:00 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.811772+00:00",
-      "long_summary": "The statement expresses that the author does not follow Stancil directly but keeps track of the term \"stochastic parrots,\" which alerts them to Stancil's commentary on AI. The phrase seems to serve as a signal for the author to recognize when Stancil is discussing topics they believe he is misinformed about. This highlights a critical engagement with discourse surrounding AI and emphasizes the importance of being aware of differing viewpoints within the community. For those keeping up with AI, understanding the varied interpretations and critiques of the technology is essential for informed discourse.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxrucac3x2cf",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Almost amused to see how many people are misinterpreting this as me saying that any use of any tech sold as \"AI\" is the moral equivalent of CSAM. (NB: Some use of \"AI\" is literally for producing CSAM, which is tragic.) >> [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "13 Oct 2026 20:21 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.810239+00:00",
-      "long_summary": "Emily M. Bender addresses a misinterpretation regarding a previous statement, clarifying that she is not equating all technology marketed as \"AI\" with the moral implications of child sexual abuse material (CSAM). She points out that while some applications of \"AI\" are indeed used to produce CSAM, which is a tragic reality, it is incorrect to generalize the moral standing of all AI technologies based on this fact. This distinction is important for understanding the various ethical implications surrounding AI use, and it invites the community to consider the complexity of AI applications in a more nuanced manner. This matters for a community keeping up with AI as it highlights the need for careful discourse and understanding when discussing the ethical ramifications of emerging technologies.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxqmum5ze22p",
-      "relevance": 0,
-      "tags": [],
-      "summary": "One of the key messages I carry is that we don't have to accept any of this. Sometimes I see opposition in the form of \"Get in loser, you'll be left behind\" and other times it's in the form of \"It's all over the place, what do you mean you think you can opt out?\" >>",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "13 Oct 2026 08:36 +0000",
-      "first_seen_at": "2026-10-17T13:59:03.808633+00:00",
-      "long_summary": "The key message conveyed is the importance of agency in the face of technological developments. The speaker observes differing attitudes toward technology: one is a dismissive pressure to conform with a \"Get in loser, you'll be left behind\" mentality, while the other reflects confusion and skepticism about the possibility of opting out of these advancements. This perspective emphasizes that individuals are not obligated to embrace every trend and can choose their own stance regarding technology, including the option to disengage. This message matters for the community as it encourages critical thinking about the adoption of AI technologies and empowers individuals to make informed choices rather than feeling coerced.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-17",
+        "generated": "2026-10-23",
         "kind": "machine-generated"
       }
     }
