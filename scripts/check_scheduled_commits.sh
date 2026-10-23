@@ -1,5 +1,5 @@
 #!/bin/bash
-# launchd wrapper for the daily scheduler work: one action, then three assertions.
+# launchd wrapper for the daily scheduler work: one action, then four assertions.
 #
 #   commit_daily_run.sh         -- commit what the sandboxed run could not. Never pushes.
 #   push_daily_run.sh           -- publish those commits to GitHub behind a gate
@@ -9,6 +9,12 @@
 #   check_scheduled_commits.py  -- did the run's output get committed?  (the aftermath)
 #   check_daily_run_stall.py    -- did the run finish at all, and if not, which tool
 #                                  was it left waiting on?  (39 of 110 runs did not)
+#   check_silent_runs.py        -- did the run SAY ANYTHING? A dispatched run can die
+#                                  in ~1s with a one-line transcript: no stall, no
+#                                  error, lastRunAt advanced. 24 runs did (14 on
+#                                  2026-08-27, 5 on 2026-10-15). It belongs here
+#                                  rather than in the 07:00 task because
+#                                  scheduler-health-check is in both those clusters.
 #   check_scheduler_health.py   -- did every OTHER job fire at all, survive, and leave
 #                                  a dated artifact?  The two above watch one task;
 #                                  this one watches all 70 registry tasks and all 11
@@ -82,6 +88,21 @@ python3 scripts/check_daily_run_stall.py --status-file scheduler/run_stall.md
 RC_STALL=$?
 echo "$(date '+%F %T') check_daily_run_stall exit=$RC_STALL"
 
+# The stall check above asks "did the run finish"; this one asks the question that
+# was never asked: "did it say ANYTHING". A run can be handed a session and die in
+# about a second with a one-line transcript -- no stall to name, no error, and
+# `lastRunAt` advanced, so it looks exactly like a task whose turn has not come.
+# 24 runs have ended that way, 14 of them on 2026-08-27 and 5 on 2026-10-15.
+#
+# It has to live HERE, under launchd, and not in the 07:00 scheduler-health-check
+# task, for the reason the data gives: `scheduler-health-check` is itself in BOTH
+# silent clusters. A watchdog that is one of the casualties cannot report the
+# casualty list. launchd's own `runs` counter and exit code stay observable even
+# when the job it supervises is dead.
+python3 scripts/check_silent_runs.py --status-file scheduler/silent_runs.md
+RC_SILENT=$?
+echo "$(date '+%F %T') check_silent_runs exit=$RC_SILENT"
+
 # --quiet, because this one sweeps 70 tasks and 11 agents; the OK lines would bury
 # the two above in the shared log. The status file gets the same non-OK lines plus a
 # counted summary, and the 07:00 scheduler-health-check task reads that.
@@ -97,4 +118,5 @@ echo "$(date '+%F %T') check_scheduler_health exit=$RC_HEALTH"
 [ "$RC_PUSH" -ne 0 ] && exit "$RC_PUSH"
 [ "$RC_COMMIT" -ne 0 ] && exit "$RC_COMMIT"
 [ "$RC_STALL" -ne 0 ] && exit "$RC_STALL"
+[ "$RC_SILENT" -ne 0 ] && exit "$RC_SILENT"
 exit "$RC_HEALTH"
