@@ -139,6 +139,69 @@ ok "$(grep -c 'if \[ "\$SERVING" = "1" \]; then LEASH=\$MAX_STORE_VETOES; else L
 ok "$(grep -c 'no longer a long transaction' "$W")" "1" "long leash still ends in a restart"
 
 echo
+echo "CASE 8 — the marker's subject is OPENSTORY, not the volume"
+# Why this case exists. From 2026-10-14 to 10-23 openstory_precondition.FAILED was
+# rewritten every run and could never clear: marker_clear was gated on
+# `[ -d "$ARCHIVE" ]`, and the drive was the thing that was missing. So the alarm
+# repeated for nine days with no path to resolution, and check_scheduler_health
+# reported it as a fresh FAIL each morning until it stopped meaning anything.
+#
+# The same run also proved the two facts are independent in the other direction:
+# on 10-23 the drive dropped at 11:16 while the backend stayed up and ingested
+# 2,746 events, and the marker still asserted "ingest is STOPPED".
+#
+# A test that only checked the marker gets written would have passed throughout.
+# These two assert the clear path exists with the drive absent, and that the text
+# no longer claims something the script cannot observe.
+W8="$T/watchdog_case8.sh"
+mkdir -p "$T/repo"
+sed -e 's|^REPO=.*|REPO="'"$T"'/repo"|' "$W" > "$W8"
+chmod +x "$W8"
+bash -n "$W8" || { echo "  FAIL CASE 8 harness syntax"; FAIL=$((FAIL+1)); }
+M8="$T/repo/openstory_precondition.FAILED"
+
+# A healthy, ingesting backend with the drive STILL ABSENT must clear the marker.
+cat > "$FAKE/curl" <<'EOF'
+#!/bin/bash
+echo "200"
+EOF
+cat > "$FAKE/python3" <<'EOF'
+#!/bin/bash
+echo "ingest lag OK (fake)"
+exit 0
+EOF
+chmod +x "$FAKE/curl" "$FAKE/python3"
+reset
+rm -rf "$T/archive"                 # drive absent, exactly as it is today
+printf '[2026-10-14 05:18:51] stale alarm from nine days ago\n' > "$M8"
+FAKE_PID=4242 FAKE_ETIME="99:99:99" FAKE_CPU=" 41:12.30" bash "$W8" >/dev/null 2>&1
+ok "$([ -f "$M8" ] && echo present || echo cleared)" "cleared" \
+   "healthy backend clears a stale marker even with the drive absent"
+
+# And the inverse, so the clear is not simply unconditional: an unhealthy backend
+# with the drive absent must still RAISE the marker.
+cat > "$FAKE/curl" <<'EOF'
+#!/bin/bash
+echo "000"
+EOF
+chmod +x "$FAKE/curl"
+reset
+rm -rf "$T/archive"
+rm -f "$M8"
+FAKE_PID="" FAKE_ETIME="" FAKE_CPU="" bash "$W8" >/dev/null 2>&1
+ok "$([ -f "$M8" ] && echo present || echo cleared)" "present" \
+   "unhealthy backend with the drive absent still raises the marker"
+# The text must not assert a thing this script cannot see. It has no view of
+# whether ingest is flowing -- on 10-23 it was, while this said it was not.
+ok "$(grep -c 'ingest is STOPPED' "$M8" 2>/dev/null)" "0" \
+   "marker no longer claims 'ingest is STOPPED' (it cannot observe that)"
+ok "$(grep -c 'unsupervised' "$M8" 2>/dev/null)" "1" \
+   "marker reports the supervision gap, which is what it CAN observe"
+# last_frontier is the one genuinely useful measurement here; it must survive.
+ok "$(grep -c 'frontier' "$M8" 2>/dev/null)" "1" \
+   "marker still carries the frontier measurement"
+
+echo
 echo "=== $PASS passed, $FAIL failed ==="
 rm -rf "$T"
 [ "$FAIL" -eq 0 ]

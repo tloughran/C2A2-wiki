@@ -74,9 +74,14 @@ notify() { osascript -e "display notification \"$1\" with title \"OpenStory watc
 marker_write() {
   printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$1" > "$PRECOND_MARKER"
 }
-# Cleared on the precondition being SATISFIED, not on the backend being healthy.
-# The marker's subject is the missing volume, so the volume coming back is what
-# makes it false -- a backend that is still booting afterwards is a separate fact.
+# Cleared when EITHER resolution happens: the volume comes back, or the backend is
+# healthy. See the call site for why.
+#
+# This comment used to read "cleared on the precondition being SATISFIED, not on
+# the backend being healthy ... the marker's subject is the missing volume". That
+# reasoning is what produced a nine-day unclearable alarm: with the drive gone the
+# clear condition could never be met, so the marker could only ever be rewritten.
+# The subject is OpenStory, and the volume is one of two things that can settle it.
 marker_clear() {
   rm -f "$PRECOND_MARKER"
 }
@@ -222,12 +227,6 @@ lag_ok() {
 # ── Healthy = answering AND ingesting ───────────────────────────────────────
 # Order matters: a backend that is not answering cannot be judged on lag, and the
 # ping is the cheaper question. Only one reason is reported, the first that fires.
-# Independent of anything below: if the volume is there, the marker is false.
-# This has to run on EVERY path, not just the failure path -- when the backend is
-# healthy the precondition gate is never reached, and a marker nobody clears
-# becomes a permanent false alarm, which is its own way of going unread.
-[ -d "$ARCHIVE" ] && marker_clear
-
 REASON=""
 SERVING=0        # did the port answer this run? decides the veto leash below
 if ! ping_ok; then
@@ -235,6 +234,24 @@ if ! ping_ok; then
 else
   SERVING=1
   lag_ok || REASON="INGEST STALLED — $LAG_LINE"
+fi
+
+# ── Clear the marker when ITS SUBJECT resolves ──────────────────────────────
+# Was `[ -d "$ARCHIVE" ] && marker_clear`, which tied the clear to the VOLUME
+# while the marker's subject is OPENSTORY. With the drive gone the clear could
+# never run, so one marker repeated the same alarm for nine days with no path to
+# clearing itself, and check_scheduler_health reported it as a fresh FAIL daily.
+#
+# 2026-10-23 proved the two are independent in the other direction too: the drive
+# dropped out at 11:16 while the backend stayed up and ingested 2,746 events that
+# day, and the marker still asserted "ingest is STOPPED" at 11:23.
+#
+# So clear on either resolution: the backend is healthy (the subject is fine,
+# whatever the drive is doing), or the drive is back (the unsupervised window has
+# ended). This still runs on every path -- when the backend is healthy the
+# precondition gate below is never reached.
+if [ -z "$REASON" ] || [ -d "$ARCHIVE" ]; then
+  marker_clear
 fi
 
 if [ -z "$REASON" ]; then
@@ -263,8 +280,23 @@ log "$REASON"
 # symlink just crash-loops; say the real reason instead.
 if [ ! -d "$ARCHIVE" ]; then
   log "PRECONDITION MISSING: $ARCHIVE absent (H-Drive unmounted). NOT restarting."
-  notify "H-Drive not mounted — OpenStory cannot start. Plug the drive in."
-  marker_write "H-Drive not mounted: $ARCHIVE absent. OpenStory ingest is STOPPED and a restart cannot fix it — the drive must be plugged in. Sessions stop being created within about a day of the volume going away."
+  notify "H-Drive not mounted — OpenStory is unsupervised and will not be auto-restarted. Plug the drive in."
+  # Says only what this script can observe. The old text asserted "OpenStory
+  # ingest is STOPPED and a restart cannot fix it", which it cannot see: on
+  # 2026-10-23 it wrote exactly that at 11:23 while ingest was running at 2,746
+  # events/day with the drive absent. A marker that overstates gets discounted,
+  # and this one was then discounted for twelve days. What is true and
+  # load-bearing is the supervision gap, so that is what it now reports --
+  # including the frontier, which is the one measurement here that says whether
+  # data is actually moving.
+  #
+  # Prefer a frontier read NOW over the stored baseline: the stored one is only
+  # refreshed on healthy runs, so on a long failure it would quote a days-old
+  # number as if it were current. Fall back to the baseline, then to "unknown" --
+  # never to silence.
+  FRONTIER_NOW_LINE="$(frontier_now 2>/dev/null)"
+  LAST_FRONTIER_SEEN="${FRONTIER_NOW_LINE:-$(cat "$FRONTIER_STATE" 2>/dev/null)}"
+  marker_write "H-Drive not mounted: $ARCHIVE absent. This watchdog will NOT auto-restart OpenStory while the archive volume is missing (a restart into dangling symlinks crash-loops), so OpenStory is running unsupervised until the drive returns — if it stops now, nothing will bring it back. Whether ingest is currently flowing is NOT asserted here: read last_frontier below, or ask the live db. Last observed frontier: ${LAST_FRONTIER_SEEN:-unknown}. Failure reason this run: $REASON"
   exit 1
 fi
 
