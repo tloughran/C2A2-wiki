@@ -88,9 +88,21 @@ import check_scheduled_commits as commits  # noqa: E402  (registry loading, shar
 
 REPO = commits.REPO
 
+# 2026-10-23: widened from `local_*/audit.jsonl` to `*/audit.jsonl`.
+#
+# The desktop app writes run directories two ways and changed over around
+# 2026-09-15: the older scheme is `local_<uuid>/`, the current one is a short 8-hex
+# name. Measured 2026-10-23: 4,033 runs under the old scheme, 719 under the new one.
+# The `local_*` glob matched none of the 719, so this check had been unable to see
+# ANY run since the changeover -- it reported on a roster that stopped growing and
+# nothing said so, which is the exact failure shape this file exists to catch.
+#
+# `*/audit.jsonl` matches both. It also matches interactive (non-scheduled) sessions,
+# which is harmless: attribution() rejects anything whose first line is not a
+# `<scheduled-task ...>` dispatch, and that rejection reads one line.
 SESSIONS_GLOB = os.path.expanduser(
     "~/Library/Application Support/Claude/local-agent-mode-sessions"
-    "/*/*/local_*/audit.jsonl"
+    "/*/*/*/audit.jsonl"
 )
 
 # grace_minutes must exceed the task's real runtime with room to spare. The longest
