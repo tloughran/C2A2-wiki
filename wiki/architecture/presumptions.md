@@ -25591,3 +25591,88 @@ PRESUMPTION-1174:
     Current status: UNTESTED
 
 *Surfaced by the 14b run of 2026-10-23 (local). **5 items (1170-1174)**: structural 1 · methodological 2 · epistemic 2; risk: High 2 · Medium 3. Checked against 14a 1875-1894 and PRESUMPTION-1163..1169. Recurrences not re-surfaced: same-day proposal-ID allocation (1132/1133, OPEN-267; today's collision logged as ASSUMPTION-1879), prompt path drift (1847/1860). 1170 extends 1166/1168 from absence-of-supervisor to absence-of-host.*
+
+
+## 2026-10-23 evening delta (14b, local run 23:44 EDT)
+
+PRESUMPTION-1175:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] Each scheduled task is presumed to fire at most once per calendar day and to own that day's date-keyed files. On 10-23 this task fired three times and the evening sync twice; runs key their files by different clocks (local EDT vs UTC), so one evening's work landed in a '2026-10-24' changelog. Date keys therefore neither identify a run nor a day reliably, and later runs must detect and append to earlier same-day output by hand.
+  Evidence it was operative: 1907; changelog/2026-10-24_changes.md; 9e1c975d; beacfdf4 (10-17 double-fire)
+  Why it was unstated: embedded in tooling/practice
+  Type: structural
+  Related decisions: ASSUMPTION-1907; PRESUMPTION-1171; OPEN-273
+  Testability: testable in-house
+  Risk if wrong: Medium: overwritten or split daily records; metrics computed twice or not at all.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1175
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1176:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] Admission precedent is presumed to license relaxing a source filter. 'From Hawkins' became 'from Hawkins's team' because team meetings were approved before; an authorless, undated working paper enters Hoffman's stream under a catch-all clause. Each relaxation is disclosed in free text but not recorded as a criterion change, so a tradition's corpus can drift from the thinker's own voice without anyone deciding it should.
+  Evidence it was operative: e33548f6 (1900, 1901)
+  Why it was unstated: assumed too obvious to state
+  Type: epistemic
+  Related decisions: ASSUMPTION-1900, -1901; PRESUMPTION-1174
+  Testability: testable via literature
+  Risk if wrong: Medium: tradition-attribution diluted; cross-tradition comparisons weigh adjacent material as the thinker's.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1176
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1177:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] Absence of evidence in the logs a run can read is presumed to be evidence of absence. The morning pass recorded 'keep-warm last ran 10-17' and made it the day's most urgent item; the job had run at 11:29 and only a later run with readable logs caught it. Reported negatives flow into snapshots and changelogs with no 'could not see' marker distinct from 'did not happen'.
+  Evidence it was operative: 9e1c975d vs 10-23 morning snapshot/changelog
+  Why it was unstated: embedded in tooling/practice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1895
+  Testability: testable in-house
+  Risk if wrong: Medium: false alarms and, worse, false all-clears recorded as fact.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1177
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1178:
+  Date surfaced: 2026-10-23
+  Statement: [inferred] A check is presumed to be running if its task fires. Scheduler health fires daily but, lacking the Routines connector, has not checked 44 cloud routines since 10-06; it reports this honestly each time, but nothing escalates a check that has degraded to 'no data' for 17 days. Extends PRESUMPTION-1170 (same host) to same-session tool availability as a shared failure domain.
+  Evidence it was operative: 66c57ff2
+  Why it was unstated: embedded in tooling/practice
+  Type: structural
+  Related decisions: PRESUMPTION-1170; ASSUMPTION-1896; REVISE-147
+  Testability: testable in-house
+  Risk if wrong: High: silent loss of observability over the cloud half of the system.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1178
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Surfaced by the 14b evening delta of 2026-10-23. **4 items (1175-1178)**: structural 2 · epistemic 2; risk High 1 · Medium 3. Checked against 14a 1895-1908 and PRESUMPTION-1170..1174; proposal-ID collision and path drift not re-surfaced (recurrences).*

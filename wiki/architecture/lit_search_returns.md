@@ -51648,3 +51648,48 @@ DISPOSITION-1096:
 - Read in full: 15a — SRE ch. 6 (sre.google), PromLabs watchdog page, Supabase pausing doc, Kane et al. 2025. 15b — SRE ch. 6 (O'Reilly excerpt), Supabase pausing doc, local card wiki/inbox/proposals/pending/2026-10-23_kastrup_claude-dialogue-ai-consciousness.md. Shumailov 2024 abstract-only (nature.com blocked); Alemohammad 2023 snippet/unverified; W3C PROV spec not fetched (secondary only); Gerstgrasser 2024 abstract. Kastrup–Claude blog post not located by 15b (unverified).
 - Shared source Supabase pausing doc counted once. 1170 support is mostly grey literature (vendor/practitioner); failure-detector theory not searched.
 - Both sides rate the search preliminary.
+
+
+## 2026-10-24 — 15a / 15b / 15c (scheduled task `c2a2-lit-search-pipeline`; run cowork-local-2026-10-24-353fddf0)
+
+### 15a returns (2026-10-24)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1176
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Hu K.Y. et al. 2019, "Inconsistencies are common between non-Cochrane systematic reviews and their protocols registered in PROSPERO" (Cochrane Colloquium abstract, read in full): 43/43 reviews deviated from protocol; recommends a structured change appendix. Also Cochrane Methodology protocol MR000053 (read in full: "inclusion criteria bias", "selector bias").
+  Summary: Normalization of deviance (Vaughan 1996) and drift into failure (Dekker 2011) describe the named mechanism (secondary summaries only). Field practice (PRISMA 2020 item 24c, versioned codebooks, archival exception logs with annual review) records changes against a fixed, versioned criteria document. No direct evidence that free-text disclosure accelerates drift; PRISMA 24c itself accepts prose amendments.
+  NOVELTY-FLAG (configuration level only): nothing found on drift in who counts as the source for a single thinker's corpus (thinker → team → unattributed), or comparing free-text exception notes vs recorded criterion changes as drift controls.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1176_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Original item: PRESUMPTION-1176 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search FOR | Current status: SEARCHED-15a
+
+### 15b returns (2026-10-24)
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1176
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (vs "without anyone deciding" and vs treating team material as drift); Weak (vs the core point that free-text disclosure never records a criterion change)
+  Key source: ARLIS/NA & VRA, "Attribution Qualifiers for Artists' Names" (read in full): "Workshop of / Office of / School of" are established categories; a known workshop is recorded as its own creator, with role, in a structured field. Also PROSPERO amendment study PMC7431973 (fetched).
+  Specific risk: low stakes means no visible failure ever forces a review; without scheduled criteria review, card-by-card approvals can add up to a scope nobody ratified. Archives pair documented decisions with periodic policy review; C2A2 has only the first.
+  Summary: Widening a filter by disclosed precedent is accepted practice in cataloguing, systematic reviews and law (Sunstein, snippet), and Vaughan's mechanism relies on diffuse decisions, whereas Tom approves each card. But each field legitimizes the widening through a structured or versioned record, which is exactly what the item says C2A2 lacks.
+  CANDIDATE SYSTEMIC-RISK (15b; with PRESUMPTION-1174): attribution is honest on the card but held only in free text, with no structured field; once cards are grouped by tradition_key it can be lost and everything reads as the thinker's own voice. Recorded here and in the against file; no separate flag file (10-23 precedent).
+  STEELMAN: present in against file.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1176_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Original item: PRESUMPTION-1176 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Literature search AGAINST | Current status: SEARCHED-15b
+
+### 15c dispositions (2026-10-24)
+DISPOSITION-1097:
+  Date: 2026-10-24 | Item: PRESUMPTION-1176 | Item type: PRESUMPTION (unstated — surfaced by inference) | Cycle: 0 (10-23 evening intake)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate vs diagnosis; Weak vs core gap)
+  Net assessment: The "normalization of deviance / unchosen drift" diagnosis is weakened: Tom approves each card, and "from X's team" is a legitimate, long-standing attribution category. But both directions converge on the same remedy: every field cited legitimizes a widened filter only through a structured qualifier and a dated, versioned criteria record with periodic review. C2A2 has free-text disclosure only (ASSUMPTION-1900/1901).
+  Disposition: REVISE (REVISE-522, Medium urgency)
+  Reasoning: Neither side establishes that drift is occurring; what both confirm is a concrete, cheap design gap, so this is not a premise to INCORPORATE and not merely mixed evidence to MONITOR. Same treatment as PRESUMPTION-1170 (gap confirmed from both sides → REVISE). The narrowed claim, not the original drift claim, is what is flagged.
+  Consistency: no INCORPORATE issued, so no premise conflict. Shares the structured-attribution remedy with MONITOR-696 (PRESUMPTION-1174); 15b's SYSTEMIC-RISK candidate now spans two items (1174, 1176). Not filed as a flag file — left for Tom/15d.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1176 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1176_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1176_against.md
+
+### Evidence-quality notes (2026-10-24)
+- 15a and 15b ran as separate subagents; each reported it did not open the other direction's directory or this file. Each wrote only its result file; the orchestrator wrote all register appends and queue tags.
+- Read in full: 15a — Hu et al. 2019 abstract, Cochrane MR000053. 15b — PMC7431973, ARLIS/NA–VRA attribution qualifiers. Vaughan, Dekker, Sunstein, PRISMA 2020 text and archival policies were snippet/secondary only on both sides.
+- Both sides rate the search preliminary (6 searches each; 2 fetches each).

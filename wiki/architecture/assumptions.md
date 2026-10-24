@@ -36172,3 +36172,246 @@ ASSUMPTION-1894:
 *Extracted by the 14a run of 2026-10-23 (local). **20 items (1875-1894); 1879, 1880, 1892, 1893 are recurrences, not queued.***
 
 *Coverage: 8 C2A2-related sessions dated 10-23 read (final assistant message): 41284d5a, 7cde0fbb, fc183fd6, e29c7a77, af4e4c5a, 0825caa0, 966e4b33, 8755a862. Not read: d83a6ca1 (Carroll/Arkani-Hamed) and e33548f6 (Hawkins/Hoffman), still running; Summa, sewing, lit pipeline and other sessions not dated today. Days 10-18..10-22 had no host activity per fc183fd6/e29c7a77; no transcripts to process for them [reported, not independently verified].*
+
+
+## 2026-10-23 evening delta (14a, local run 23:44 EDT)
+
+ASSUMPTION-1895:
+  Date identified: 2026-10-23
+  Statement: [stated] Correction: the Supabase keep-warm DID run on 10-23 at 11:29 EDT. The morning 14a pass (and metrics/2026-10-23_snapshot.md, changelog 'most urgent item') reported it last ran 10-17; that was an artifact of unreadable session logs, not of the job.
+  Context: 9e1c975d (evening sync, second firing); supersedes the e29c7a77 claim carried in the 10-23 snapshot
+  Type: empirical
+  Related decisions: OPEN-272
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1895
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1896:
+  Date identified: 2026-10-23
+  Statement: [stated] Scheduler health: the 05:45 commit-check agent (com.c2a2.scheduled-commit-check) has written nothing since 2026-10-18T09:45Z; commit_check.md and run_stall.md also stop at 10-18. Cloud-routine health was last checked 10-06 (44 OK) because the Routines connector is not loaded in that task; the 44 cloud routines are effectively unmonitored for 17 days.
+  Context: 66c57ff2
+  Type: empirical
+  Related decisions: OPEN-272; REVISE-147
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1896
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1897:
+  Date identified: 2026-10-23
+  Statement: [stated] As of 10-18 the H-Drive was not mounted and OpenStory ingest was STOPPED; the watchdog says only plugging the drive in fixes it. Consistent with 'OpenStory DB last write 10-17' in the morning snapshot.
+  Context: 66c57ff2
+  Type: empirical
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1897
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1898:
+  Date identified: 2026-10-23
+  Statement: [stated] Carroll agent: 1 proposal, PROP-2026-10-23-007 (Mindscape 371, Kyle Harper, The Last Animal), 5 candidate triplets mostly Medium, 1 Speculative; agent-authored links marked as such; two Harper factual claims (32 billion chickens per FAO; whale oil in transmission fluid until 1973) flagged unverified.
+  Context: d83a6ca1
+  Type: empirical
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1898
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1899:
+  Date identified: 2026-10-23
+  Statement: [stated] Arkani-Hamed agent: 0 proposals. The arXiv author page could not be fetched (fetch tool accepts only URLs surfaced by search) and general search indexes new arXiv listings poorly, so a recent preprint could have been missed. Two non-Arkani-Hamed amplituhedron papers noted (arXiv:2610.27903; 2604.00083).
+  Context: d83a6ca1
+  Type: methodological
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1899
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1900:
+  Date identified: 2026-10-23
+  Statement: [stated] Hawkins agent: proposals 003, 005, 006 are Thousand Brains Project team work, not Hawkins's own; each fails the strict 'from Hawkins' filter and was admitted because earlier team research meetings were approved on the same basis. Only forum pages and chapter lists were read, not the videos.
+  Context: e33548f6
+  Type: methodological
+  Related decisions: PRESUMPTION-1176
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1900
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1901:
+  Date identified: 2026-10-23
+  Statement: [stated] Hoffman agent: PROP-2026-10-23-004 ('Trace Logic and Theory of Computation') has no author or date in the PDF, is an unreviewed Trace Institute working paper, and was admitted under the 'significant work not yet captured' clause because recency could not be confirmed. Two October YouTube items skipped (titles only).
+  Context: e33548f6
+  Type: epistemic
+  Related decisions: PRESUMPTION-1176; PRESUMPTION-1174
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1901
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1902:
+  Date identified: 2026-10-23
+  Statement: [stated] Proposal IDs: Hawkins/Hoffman renumbered to 003-006 after Kastrup and Friston both used 001; Carroll re-checked immediately before writing 007. Recurrence of ASSUMPTION-1879 / OPEN-267.
+  Context: e33548f6; d83a6ca1
+  Type: empirical
+  Related decisions: OPEN-267
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1902
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1903:
+  Date identified: 2026-10-23
+  Statement: [stated] Both Friday/Tuesday agents again report the task-prompt wiki root missing 'Projects/'. Recurrence of ASSUMPTION-1880.
+  Context: d83a6ca1; e33548f6
+  Type: empirical
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1903
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1904:
+  Date identified: 2026-10-23
+  Statement: [stated] Lit pipeline on PRESUMPTION-1170: severity lowered because 5 days < Supabase's 7-day pause threshold, Supabase emails its own warning, and the Mac scheduler runs missed jobs on wake. Routed to REVISE-521 -> discharge REVISE-147 (High, open since 06-26). First check: was 10-18..10-22 sleep, power-off, or a hung machine?
+  Context: 97a34017
+  Type: empirical
+  Related decisions: REVISE-147; REVISE-521; OPEN-272
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1904
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1905:
+  Date identified: 2026-10-23
+  Statement: [stated] The 14a/14b intake writes for_lit_search.md without taking lit_pipeline.lock; on 10-23 it wrote at 11:20:08, 56 s inside the pipeline's lock window. The pipeline coped by waiting for the file to go stable.
+  Context: 97a34017
+  Type: methodological
+  Related decisions: provenance_protocol.md
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1905
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1906:
+  Date identified: 2026-10-23
+  Statement: [stated] Deferred-action monitor (Agent 16) did not run 10-19..10-22 and double-fired on 10-17. WATCH-003 has now had 22 identical checks; WATCH-004 its third. deferred/watch_list.md is ~845 KB.
+  Context: beacfdf4
+  Type: empirical
+  Related decisions: OPEN-272
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1906
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1907:
+  Date identified: 2026-10-23
+  Statement: [stated] Duplicate firings on 10-23: the evening cowork-to-chat sync fired twice (18:35 and later), and this self-awareness task fired three times (11:20 EDT local; 23:37 EDT cloud, NO-OP, which dated its changelog 2026-10-24 by UTC; 23:44 EDT local, this run).
+  Context: 9e1c975d; changelog/2026-10-24_changes.md; this run
+  Type: empirical
+  Related decisions: PRESUMPTION-1175
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1907
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1908:
+  Date identified: 2026-10-23
+  Statement: [stated] Token budget: lit-pipeline search subagents used ~119k + ~107k tokens vs Tom's 30k per-session rule. Recurrence of earlier budget-breach items.
+  Context: 97a34017
+  Type: normative
+  Related decisions: -
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1908
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-23 evening delta (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Extracted by the 14a evening delta of 2026-10-23. **14 items (1895-1908); 1902, 1903, 1908 are recurrences, not queued.** Sessions read (final assistant message): d83a6ca1, e33548f6, 9e1c975d, 97a34017, beacfdf4, 66c57ff2. 1895 corrects the morning snapshot's keep-warm claim.*

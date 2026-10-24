@@ -1,7 +1,8 @@
 # Cowork Progress Summary — 2026-10-23
-*Generated at 11:22 EDT for daily walk Chat context*
-*DELIVERY: SKIPPED. Tom, read this file directly. Claude in Chrome was not connected. In any case, the morning scrape found no walk conversation today; recent chats are Iceland travel, and I did not post into them.*
-*Note: this "evening" sync fired late morning as part of the post-outage catch-up. Any work after 11:22 is not included.*
+*Generated at 11:22 EDT; refreshed 18:35 EDT for daily walk Chat context*
+*DELIVERY: SKIPPED at 11:22 and again at 18:35 EDT: no walk conversation exists today. Read this file directly.*
+*Update 18:35 EDT: evening sync re-ran. Additions since 11:22 are in the Evening Update section below. The session_info tools were unavailable, so this uses wiki files only.*
+*Update 18:42 EDT: duplicate firing of this task. No wiki files changed after 18:31. session_info was available this time and showed one correction: **Supabase keep-warm DID run today at 11:29 EDT** (ping returned 1 row), so the pause-risk items below are resolved. Delivery skipped again: the 18:35 run checked claude.ai 7 minutes earlier and found no walk conversation, so I did not re-check.*
 
 ## What Was Accomplished Today
 There was no interactive Tom session today. Every C2A2 session dated 10-23 was a scheduled agent. The host Mac was silent from 10-18 to 10-22, and nothing wrote status in those five days. When it woke this morning, the backlog fired together:
@@ -11,6 +12,13 @@ There was no interactive Tom session today. Every C2A2 session dated 10-23 was a
 - **Agent 16 (deferred monitor):** checked WATCH-003 and WATCH-004. Neither condition is met, and no items were resolved.
 - **Still running at write time:** the lit search pipeline (15x) and the weekly ecosystem report.
 - **Main structural insight:** every watcher runs on the host it watches (PRESUMPTION-1170), and catch-up silently merges the missed days into one (PRESUMPTION-1171).
+
+## Evening Update (after 11:22 EDT)
+- **Lit search pipeline finished for the two literature items.** PRESUMPTION-1174 (self-consuming loops) went to MONITOR-696 (Medium): the model-collapse framing does not transfer, but a missing structured speaker/origin field and possible same-model reviewer bias survive. PRESUMPTION-1170 (off-host watchdogs) got SUPPORTED/Strong from 15a and PARTIALLY-CHALLENGED/Weak-Mod from 15b, disposition REVISE-521 (DISPOSITION-1095). Both searches are marked preliminary; 1170 support is mostly grey literature.
+- **Second orchestrator firing (cloud, 15:25 UTC):** no decision emails, review page regenerated with 13 pending, a draft was created.
+- **Lit queue:** 0 plain QUEUED lines remain on the tail; 2,196 DISPOSITIONED-15c tags file-wide. This supersedes the earlier "33 QUEUED" count.
+- **Chat-side sync:** today's chat_to_cowork file says the Chat sync failed (Chrome was not connected at 12:45 UTC), so no Chat context reached Cowork today.
+- No new decisions (still DECISION-083). Network unchanged: 1041 PRS / 157 CROSS / 107 FINDING.
 
 ## Key Decisions Made
 - None. The highest is still DECISION-083, and no decisions have been applied since 10-15.
@@ -35,7 +43,7 @@ There was no interactive Tom session today. Every C2A2 session dated 10-23 was a
 - Network (reported, not re-counted): 1041 PRS triplets, 157 cross-connections, 107 findings. None of these changed since 10-17.
 
 ## What's Next
-- **Supabase keep-warm:** last ran 10-17, so the C2A2 free-tier project may pause soon. Check this first.
+- ~~**Supabase keep-warm:** last ran 10-17~~ Resolved: it ran 10-23 at 11:29 EDT.
 - **Renumber the duplicate PROP-2026-10-23-001** before the next review pass.
 - **Review the 13 pending proposals.**
 - **ND ECG DELTA is due 10-26.**
@@ -44,7 +52,7 @@ There was no interactive Tom session today. Every C2A2 session dated 10-23 was a
 
 ## For Morning Discussion
 1. **Off-host heartbeat (OPEN-272).** Five days of silence went unnoticed. Do you want one cloud-side check that alerts you, and how should catch-up treat missed days?
-2. **Supabase pause risk.** Do you want to run the keep-warm by hand now, or accept the pause?
+2. ~~**Supabase pause risk.**~~ Resolved: the keep-warm ran today at 11:29 EDT.
 3. **Proposal ID collisions keep recurring (OPEN-267).** Should IDs be assigned under a lock, or include the tradition in the ID (e.g. PROP-2026-10-23-KAS-001)?
 4. **Self-reference (PRESUMPTION-1174).** A Claude-run agent carded Kastrup's dialogue with Claude as Kastrup-tradition material. Should AI-mediated sources be tagged or excluded?
 5. **Items stale on the watch list:** the INTEGRITY FLAG ruling (WATCH-003, 22 checks), the Fredrickson CT-Signals edit (WATCH-004), the Wonderstruck transcript (WATCH-005) and the owner of the sewing pass (WATCH-006).
@@ -52,4 +60,4 @@ There was no interactive Tom session today. Every C2A2 session dated 10-23 was a
 7. **Travel context:** Chat shows you in Iceland. Should any jobs be paused while you're away?
 
 ---
-DELIVERY STATUS: SKIPPED. Chrome extension not connected (11:22 EDT), and there was no walk conversation to deliver to.
+DELIVERY STATUS: SKIPPED (18:35 EDT re-run). Chrome connected, but claude.ai Recents shows no daily walk conversation for today (latest: Aurora photo comparison, Iceland travel chats). I did not post into unrelated chats. Read this file directly.

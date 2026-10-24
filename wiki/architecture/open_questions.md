@@ -3722,3 +3722,17 @@ OPEN-267 (update 2026-10-23): Recurred under catch-up concurrency. Friston and K
 OPEN-270 (update 2026-10-23): The absence happened without a pause list. The host itself appears to have been off or asleep 10-18..10-22, so the question of which jobs to pause was moot, and the "needs Tom" items simply waited. Humanity AI (10-21) has passed and its queue item is still open. ND ECG DELTA is due 10-26 (ASSUMPTION-1888). See OPEN-272.
 OPEN-264 (update 2026-10-23): Ninth local pass. 8 sessions read, all with content. 2 were still running and not read.
 OPEN-260 (update 2026-10-23): There was no 14a/14b output for 10-18..10-22, and no cloud stub is visible for those dates in changelog/ [verified by ls: newest before today is 2026-10-17]. This pass writes a new 2026-10-23 file.
+
+OPEN-272 (update 2026-10-23 evening): The "immediate risk" is withdrawn. The Supabase keep-warm ran 10-23 at 11:29 EDT (ASSUMPTION-1895, 9e1c975d). The question itself stands and is sharper. The commit-check agent has written nothing since 10-18 (ASSUMPTION-1896). The 44 cloud routines have been unchecked since 10-06 because the Routines connector is absent (PRESUMPTION-1178). OpenStory ingest stopped on 10-18 when the H-Drive was unmounted (ASSUMPTION-1897). The lit pipeline routes this to REVISE-521 and then REVISE-147 (ASSUMPTION-1904).
+
+OPEN-273:
+  Raised: 2026-10-23 by 14a/14b (ASSUMPTION-1907; PRESUMPTION-1175)
+  Question: Scheduled tasks are firing more than once a day. This task fired 3 times on 10-23, the evening sync 2 times, and the deferred monitor 2 times on 10-17. The runs also date their files by different clocks, local EDT versus UTC. Should each daily task (a) take a per-day run marker and exit or append if one exists, and (b) key its files by one agreed clock (local date)? Who owns the clean-up of the stray `changelog/2026-10-24_changes.md`, which records 10-23 evening work?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-273
+    Item type: OPEN QUESTION
+    Current status: OPEN

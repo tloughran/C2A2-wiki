@@ -27818,3 +27818,92 @@ ITEM: PRESUMPTION-1174 [QUEUED] [SEARCHED-15a: 2026-10-23] [SEARCHED-15b: 2026-1
 **Backups:** *.bak.20261023-pre-15pipeline for all five registers. Lock ACQUIRED (run local-cowork-2026-10-23-856ab00d), released at end. Note: 14a/14b wrote this file at 11:20:08 local, 56 s after this run's lock was acquired at 11:19:12; this run waited until the file was stable before reading intake. 14a/14b do not take this lock.
 **Backlog remaining (fail loud):** untouched — the 126 bare literature-lane items plus the 7 literature re-triggers from 15d 2026-10-18 (PRESUMPTION-1019, -1024, -1034, -1040, -1047, -1048, -955) remain [QUEUED] without SEARCHED tags. The success criterion "all queued items searched" is therefore NOT met for the backlog.
 **Budget (fail loud):** search subagents about 119k (15a) + 107k (15b) tokens, well over Tom's 4k per-task / 30k per-session rule.
+
+
+## 2026-10-23 evening delta — intake from 14a/14b (local run 23:44 EDT; lit_pipeline.lock was RELEASED, not taken: 14a/14b do not use it, see ASSUMPTION-1905)
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1895
+  Statement: [stated] Correction: the Supabase keep-warm DID run on 10-23 at 11:29 EDT. The morning 14a pass (and metrics/2026-10-23_snapshot.md, changelog 'most urgent item') reported it last ran 10-17; that was an artifact of unreadable session logs, not of the job.
+  Test (in-house): verify against 9e1c975d (evening sync, second firing); supersedes the e29c7a77 claim carried in the 10-23 snapshot and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1896
+  Statement: [stated] Scheduler health: the 05:45 commit-check agent (com.c2a2.scheduled-commit-check) has written nothing since 2026-10-18T09:45Z; commit_check.md and run_stall.md also stop at 10-18. Cloud-routine health was last checked 10-06 (44 OK) because the Routines connector is not loaded in that task; the 44 cloud routines are effectively unmonitored for 17 days.
+  Test (in-house): verify against 66c57ff2 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1897
+  Statement: [stated] As of 10-18 the H-Drive was not mounted and OpenStory ingest was STOPPED; the watchdog says only plugging the drive in fixes it. Consistent with 'OpenStory DB last write 10-17' in the morning snapshot.
+  Test (in-house): verify against 66c57ff2 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1898
+  Statement: [stated] Carroll agent: 1 proposal, PROP-2026-10-23-007 (Mindscape 371, Kyle Harper, The Last Animal), 5 candidate triplets mostly Medium, 1 Speculative; agent-authored links marked as such; two Harper factual claims (32 billion chickens per FAO; whale oil in transmission fluid until 1973) flagged unverified.
+  Test (in-house): verify against d83a6ca1 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1899
+  Statement: [stated] Arkani-Hamed agent: 0 proposals. The arXiv author page could not be fetched (fetch tool accepts only URLs surfaced by search) and general search indexes new arXiv listings poorly, so a recent preprint could have been missed. Two non-Arkani-Hamed amplituhedron papers noted (arXiv:2610.27903; 2604.00083).
+  Test (in-house): verify against d83a6ca1 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1900
+  Statement: [stated] Hawkins agent: proposals 003, 005, 006 are Thousand Brains Project team work, not Hawkins's own; each fails the strict 'from Hawkins' filter and was admitted because earlier team research meetings were approved on the same basis. Only forum pages and chapter lists were read, not the videos.
+  Test (in-house): verify against e33548f6 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1901
+  Statement: [stated] Hoffman agent: PROP-2026-10-23-004 ('Trace Logic and Theory of Computation') has no author or date in the PDF, is an unreviewed Trace Institute working paper, and was admitted under the 'significant work not yet captured' clause because recency could not be confirmed. Two October YouTube items skipped (titles only).
+  Test (in-house): verify against e33548f6 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1904
+  Statement: [stated] Lit pipeline on PRESUMPTION-1170: severity lowered because 5 days < Supabase's 7-day pause threshold, Supabase emails its own warning, and the Mac scheduler runs missed jobs on wake. Routed to REVISE-521 -> discharge REVISE-147 (High, open since 06-26). First check: was 10-18..10-22 sleep, power-off, or a hung machine?
+  Test (in-house): verify against 97a34017 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1905
+  Statement: [stated] The 14a/14b intake writes for_lit_search.md without taking lit_pipeline.lock; on 10-23 it wrote at 11:20:08, 56 s inside the pipeline's lock window. The pipeline coped by waiting for the file to go stable.
+  Test (in-house): verify against 97a34017 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1906
+  Statement: [stated] Deferred-action monitor (Agent 16) did not run 10-19..10-22 and double-fired on 10-17. WATCH-003 has now had 22 identical checks; WATCH-004 its third. deferred/watch_list.md is ~845 KB.
+  Test (in-house): verify against beacfdf4 and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1907
+  Statement: [stated] Duplicate firings on 10-23: the evening cowork-to-chat sync fired twice (18:35 and later), and this self-awareness task fired three times (11:20 EDT local; 23:37 EDT cloud, NO-OP, which dated its changelog 2026-10-24 by UTC; 23:44 EDT local, this run).
+  Test (in-house): verify against 9e1c975d; changelog/2026-10-24_changes.md; this run and the wiki files named.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1175
+  Statement: [inferred] Each scheduled task is presumed to fire at most once per calendar day and to own that day's date-keyed files. On 10-23 this task fired three times and the evening sync twice; runs key their files by different clocks (local EDT vs UTC), so one evening's work landed in a '2026-10-24' changelog. Date keys therefore neither identify a run nor a day reliably, and later runs must detect and append to earlier same-day output by hand.
+  Claim to test (in-house): check 1907; changelog/2026-10-24_changes.md; 9e1c975d; beacfdf4 (10-17 double-fire) against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-24] [SEARCHED-15b: 2026-10-24] [DISPOSITIONED-15c: 2026-10-24] PRESUMPTION-1176
+  Result: PARTIALLY-SUPPORTED/Mod (15a); PARTIALLY-CHALLENGED/Mod (15b) -> REVISE-522 (DISPOSITION-1097)
+  Statement: [inferred] Admission precedent is presumed to license relaxing a source filter. 'From Hawkins' became 'from Hawkins's team' because team meetings were approved before; an authorless, undated working paper enters Hoffman's stream under a catch-all clause. Each relaxation is disclosed in free text but not recorded as a criterion change, so a tradition's corpus can drift from the thinker's own voice without anyone deciding it should.
+  Claim to test (literature): normalization of deviance and precedent-driven criteria drift in curation/review (Vaughan 1996, The Challenger Launch Decision; inclusion-criteria drift in systematic reviews, PRISMA protocol-deviation reporting). Does disclosing each exception in free text, without recording a criterion change, prevent or accelerate drift?
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1177
+  Statement: [inferred] Absence of evidence in the logs a run can read is presumed to be evidence of absence. The morning pass recorded 'keep-warm last ran 10-17' and made it the day's most urgent item; the job had run at 11:29 and only a later run with readable logs caught it. Reported negatives flow into snapshots and changelogs with no 'could not see' marker distinct from 'did not happen'.
+  Claim to test (in-house): check 9e1c975d vs 10-23 morning snapshot/changelog against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1178
+  Statement: [inferred] A check is presumed to be running if its task fires. Scheduler health fires daily but, lacking the Routines connector, has not checked 44 cloud routines since 10-06; it reports this honestly each time, but nothing escalates a check that has degraded to 'no data' for 17 days. Extends PRESUMPTION-1170 (same host) to same-session tool availability as a shared failure domain.
+  Claim to test (in-house): check 66c57ff2 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+
+## 2026-10-24 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+**Scope.** New intake only: PRESUMPTION-1176 (the only literature-lane item in the 10-23 evening delta). ASSUMPTION-1895..1907 and PRESUMPTION-1175/1177/1178 are [IN-HOUSE] and not owed a search. No 10-24 intake section present at run time. No backlog batch, per the 10-18 / 10-23 precedent (budget).
+**Dispositions:** DISPOSITION-1097: PRESUMPTION-1176 → REVISE-522 (Medium). No PREMISE minted; no MONITOR entry.
+**SYSTEMIC-RISK:** candidate only (15b): attribution held only in free text, no structured field — now spans PRESUMPTION-1174 and -1176. Recorded in returns, the against file and REVISE-522; no flag file.
+**Result files:** lit_search_results/{for,against}/PRESUMPTION-1176_{for,against}.md (PROVENANCE headers present; STEELMAN in against file).
+**Backups:** *.bak.20261024-pre-15pipeline for all five registers. Lock ACQUIRED (run cowork-local-2026-10-24-353fddf0), released at end.
+**Backlog remaining (fail loud):** untouched (count carried from the 10-23 note, not recounted this run) — the 126 bare literature-lane items plus the 7 literature re-triggers from 15d 2026-10-18 (PRESUMPTION-1019, -1024, -1034, -1040, -1047, -1048, -955) remain [QUEUED] without SEARCHED tags. Success criterion "all queued items searched" NOT met for the backlog.
+**Budget (fail loud):** search subagents about 90k (15a) + 91k (15b) tokens, well over Tom's 4k per-task / 30k per-session rule, despite a 6-search cap each.

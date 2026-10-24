@@ -16200,3 +16200,13 @@ REVISE-521: [2026-10-23] Source item: PRESUMPTION-1170 (DISPOSITION-1095)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1170 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1170_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1170_against.md
+
+
+REVISE-522: [2026-10-24] Source item: PRESUMPTION-1176 (DISPOSITION-1097)
+  What is at risk: tradition-attribution of admitted sources. Relaxations ('from Hawkins' → 'from Hawkins's team'; authorless, undated Trace Institute paper under Hoffman's catch-all clause) are disclosed only in card free text, so cross-tradition comparisons can weigh adjacent material as the thinker's own voice.
+  Recommended action (for Tom): (1) add a structured attribution qualifier to proposal cards (e.g. thinker / thinker's team-workshop / interlocutor-model / unattributed), modelled on ARLIS/VRA "Workshop of" qualifiers — one field also covers MONITOR-696 (PRESUMPTION-1174, Claude-authored text in Kastrup's corpus); (2) keep a dated amendment log of each tradition agent's admission criteria (PRISMA/PROSPERO practice); (3) review those criteria on a fixed cadence, since low stakes means no failure will force a review. Decide whether 'team' material is in scope; the literature treats that as a legitimate choice, as long as it is made explicitly.
+  Urgency: Medium (gap confirmed by both 15a and 15b; drift itself not demonstrated).
+  Related: ASSUMPTION-1900, ASSUMPTION-1901; MONITOR-696 / PRESUMPTION-1174 (shared structured-attribution remedy; 15b SYSTEMIC-RISK candidate across both).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1176 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1176_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1176_against.md
