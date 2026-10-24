@@ -192,8 +192,29 @@ OPENSTORY_DB = os.path.expanduser(
     "~/Documents/Non-Claude Projects/OpenStory/data/open-story.db"
 )
 
+#
+# Both carry `always_report`, which is a deliberate exception to this file's rule
+# that only non-OK lines reach the status file and --quiet hides OK rows.
+#
+# 2026-10-24, found in production: the morning-project-status run reported "its two
+# live-database checks ran and weren't flagged as warnings or failures, but OK rows
+# aren't written out", so it had no ingest verdict and no volume number to give.
+# Today's 09:45Z block held 42 lines and not one OK. The consumer could therefore
+# only ever report bad news or nothing, and GREEN was indistinguishable from THE
+# CHECK DID NOT RUN.
+#
+# That is the same shape as the bug these two assertions were written to kill -- a
+# signal whose healthy state is silence -- reintroduced in the replacement. The
+# other ~70 rows are pass/fail and their silence is genuinely fine; these two exist
+# to report a MEASUREMENT ("2,797 events in the last day, newest session 1.6h ago"),
+# and a measurement withheld when it is good is not a measurement. So these two
+# always print and always append, with their value, whatever the verdict.
+#
+# Scoped to these two on purpose: making every OK row always-write would bury the
+# findings under 70 lines, which is why --quiet exists.
 DB_ASSERTIONS = [
     {
+        "always_report": True,
         "owner": "openstory-ingest (new sessions, live db)",
         "question": "hours since the newest session was created",
         "sql": "SELECT (julianday('now') - julianday(MAX(first_event))) * 24.0 "
@@ -214,6 +235,7 @@ DB_ASSERTIONS = [
         ),
     },
     {
+        "always_report": True,
         "owner": "openstory-ingest (daily volume, live db)",
         "question": "events ingested in the last 24h",
         "sql": "SELECT COUNT(*) FROM events "
@@ -1131,8 +1153,14 @@ def main():
     # Asked of the live db, deliberately after the snapshot rows above: when the
     # snapshot is stale those rows go red and cannot say why, and these two are
     # what tell the reader whether the source or the snapshot stopped.
+    # always_lines are the rows that must survive --quiet AND reach the status file
+    # even when OK, because their value is the information. Identified by position
+    # rather than by re-matching the text, so a reworded verdict cannot drop out.
+    always_idx = set()
     for spec in DB_ASSERTIONS:
         results.append(verdict_db_assertion(spec))
+        if spec.get("always_report"):
+            always_idx.add(len(results) - 1)
 
     for spec in LAG_ARTIFACTS:
         results.append(verdict_artifact_lag(spec, now_utc))
@@ -1146,9 +1174,9 @@ def main():
         results.append(verdict_failure_marker(spec))
 
     counts = {OK: 0, WARN: 0, FAIL: 0}
-    for level, line in results:
+    for i, (level, line) in enumerate(results):
         counts[level] += 1
-        if level != OK or not args.quiet:
+        if level != OK or not args.quiet or i in always_idx:
             print(f"{level:<5} {line}")
 
     summary = (
@@ -1170,8 +1198,11 @@ def main():
         stamp = now_utc.strftime("%Y-%m-%dT%H:%MZ")
         with open(path, "a") as fh:
             fh.write(f"{stamp}  {summary}\n")
-            for level, line in results:
-                if level != OK:
+            for i, (level, line) in enumerate(results):
+                # always_idx rows are written even when OK: a consumer that can only
+                # see failures cannot tell green from "the check never ran", and
+                # these two rows exist to hand it a NUMBER. See DB_ASSERTIONS.
+                if level != OK or i in always_idx:
                     fh.write(f"{stamp}  {level:<5} {line}\n")
 
     return 1 if counts[FAIL] else 0

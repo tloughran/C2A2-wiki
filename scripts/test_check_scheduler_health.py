@@ -201,6 +201,34 @@ def db_assertion_cases(tmp):
     expect("a corrupt db is RED, not a traceback",
            mod.verdict_db_assertion(stale, str(junk))[0], mod.FAIL)
 
+    print("\na healthy measurement must still be REPORTED (found in production "
+          "2026-10-24):")
+    # morning-project-status ran and had to say: "its two live-database checks ran
+    # and weren't flagged as warnings or failures, but OK rows aren't written out",
+    # so it had no verdict and no volume to give. The status file writes only non-OK
+    # lines, so these two were invisible exactly when they were working -- which
+    # makes GREEN indistinguishable from THE CHECK DID NOT RUN, the same shape as
+    # the bug they were written to kill.
+    #
+    # These assert the CONTRACT the consumer depends on, not the mechanism: both
+    # rows must be marked always_report, and the OK line must still carry its
+    # number. Dropping the flag, or shortening the OK line to a bare "OK", fails
+    # here.
+    for frag in ("new sessions", "daily volume"):
+        spec = spec_named(frag)
+        expect(f"{frag}: marked always_report", spec.get("always_report"), True)
+    healthy2 = openstory_db(tmp, "healthy_report.db",
+                            sessions_ago_hours=[1.0],
+                            events=[(2, 8829)])
+    lvl, line = mod.verdict_db_assertion(spec_named("daily volume"), healthy2)
+    expect("a healthy volume row is OK", lvl, mod.OK)
+    # The whole point: the number survives into the OK line.
+    expect("the OK line carries the measured value", "8,829 events" in line, True)
+    expect("the OK line names its bound", "floor 1,000" in line, True)
+    lvl, line = mod.verdict_db_assertion(spec_named("new sessions"), healthy2)
+    expect("a healthy staleness row is OK", lvl, mod.OK)
+    expect("the OK line carries the measured hours", "= 1.0h" in line, True)
+
     print("\nthe snapshot frontier must be the LANE frontier, not any-event:")
     # _meta.t_max_event advanced all through the collapse; _meta.t_max stopped at
     # it. If this reverts, the snapshot row goes trickle-blind again.
@@ -754,6 +782,43 @@ def main():
     print()
     with tempfile.TemporaryDirectory() as tmp:
         db_assertion_cases(tmp)
+
+    print("\nEND TO END: what the consumer actually finds in the status file")
+    # The unit rows above prove the OK line carries its number. They do NOT prove
+    # the WRITER emits it -- and that gap is exactly the production defect: the
+    # verdict was computed correctly and then filtered out on the way to disk.
+    # This runs the real main() with --quiet (as the 05:45 agent does) and reads the
+    # file back the way morning-project-status reads it.
+    with tempfile.TemporaryDirectory() as tmp2:
+        sf = os.path.join(tmp2, "scheduler_health.md")
+        # main() reads sys.argv directly (this file's convention), so drive it the
+        # way launchd does rather than changing the production signature for a test.
+        saved_argv = sys.argv
+        try:
+            sys.argv = ["check_scheduler_health.py", "--quiet", "--status-file", sf]
+            mod.main()
+        finally:
+            sys.argv = saved_argv
+        written = open(sf).read().splitlines()
+        stamp = written[0].split()[0]
+        block = [l for l in written if l.startswith(stamp)]
+        db_rows = [l for l in block if "live db" in l]
+        expect("both live-db rows reach the status file", len(db_rows), 2)
+        # The production symptom, asserted directly: an OK row must be present.
+        # Under the old filter this list was empty and the consumer had nothing.
+        ok_db_rows = [l for l in db_rows if " OK " in l]
+        expect("live-db rows appear even when OK", len(ok_db_rows) > 0, True)
+        # And they must still carry a number, or the consumer can report a verdict
+        # but not a volume -- which was half the complaint.
+        import re as _re
+        expect("every live-db row written carries a digit",
+               all(_re.search(r"\d", l) for l in db_rows), True)
+        # --quiet must still suppress the other ~70 OK rows, or the findings drown.
+        other_ok = [l for l in block if " OK " in l and "live db" not in l]
+        expect("--quiet still hides OTHER OK rows", other_ok, [])
+        # The summary line must still be first, since both consumers quote it.
+        expect("summary line is still the first line of the block",
+               "OK," in written[0] and "FAIL" in written[0], True)
 
     print("\nthe live roster must be reachable (a check that sees nothing passes "
           "everything):")
