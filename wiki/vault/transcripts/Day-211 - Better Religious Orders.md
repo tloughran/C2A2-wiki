@@ -39,7 +39,7 @@ Context: Day 211 covers II-II Q.187 (things competent to religious — teaching 
 
 [00:38] religious and of the different kinds of religious life. The translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press. The five volume set translated by
 
-[00:49] the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go.
+[00:49] the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. 
 
 **Article 1 — Whether it is lawful for religious to teach, preach and the like**
 
@@ -51,7 +51,7 @@ Article one. Whether it
 
 [01:21] not only is it lawful, it is beneficial to allow religious to teach and preach because they ought to be holier than their secular counterparts due to their rule of life. And holiness, as we would
 
-[01:32] probably all agree, helps a man be effective as a teacher and a preacher.
+[01:32] probably all agree, helps a man be effective as a teacher and a preacher. 
 
 **Article 2 — Whether it is lawful for religious to occupy themselves with secular business**
 
@@ -59,7 +59,7 @@ Article two, whether it is lawful for religious to occupy themselves with secula
 
 [01:43] selling land, let's say, and provided this is not done for the sake of avarice, for the sake of assisting the poor, for the church, or the dissemination of the gospel, then it is
 
-[01:52] lawful.
+[01:52] lawful. 
 
 **Article 3 — Whether religious are bound to manual labor**
 
@@ -67,7 +67,7 @@ Article three, whether religious are bound to manual labor. And although there i
 
 [02:05] if we consider it in the broadest sense is just labor or any kind of occupation which could include teaching. Yet a religious is only bound to labor physically when it is necessary for him
 
-[02:16] to do so in order to eat or procure whatever he needs for the body or as to keep him from dishonest and sinful ways of being able to provide for himself.
+[02:16] to do so in order to eat or procure whatever he needs for the body or as to keep him from dishonest and sinful ways of being able to provide for himself. 
 
 **Article 4 — Whether it is lawful for religious to live on alms**
 
@@ -83,7 +83,7 @@ Article four, whether it is lawful for
 
 [03:14] commanded that those who proclaim the gospel should get their living by the gospel. However, if a religious seemed to be simply mooching off other people's assistance without actually doing God's
 
-[03:25] work when he or she is able, then the order ought to remedy this scenario in a manner likened to the words of St. Paul who wrote, "If anyone will not work, let him not eat."
+[03:25] work when he or she is able, then the order ought to remedy this scenario in a manner likened to the words of St. Paul who wrote, "If anyone will not work, let him not eat." 
 
 **Article 5 — Whether it is lawful for religious to beg**
 
@@ -93,7 +93,7 @@ Article five, whether it
 
 [03:47] means of livelihood, say begging, and it is a motive of usefulness if he wishes to accomplish something useful and is unable to do so without the alms of the faithful. In these cases, it is lawful
 
-[03:58] for religious to beg."
+[03:58] for religious to beg." 
 
 **Article 6 — Whether it is lawful for religious to wear coarser clothes than others**
 
@@ -103,11 +103,11 @@ Article six, whether it is lawful for religious to wear coarser clothes than oth
 
 [04:20] to indulge vain glory by appearing holy or to indulge avarice by not spending the appropriate amount of money on his attire then if this be the intention wearing poor clothing for this
 
-[04:33] particular religious will be interiorly sinful.
+[04:33] particular religious will be interiorly sinful. 
 
 ### Q.188 — The Different Kinds of Religious Life
 
-We move then on to question 188 of the different kinds of religious life
+We move then on to question 188 of the different kinds of religious life 
 
 **Article 1 — Whether there is only one religious order**
 
@@ -119,7 +119,7 @@ article one whether there is only one religious order beginning with a
 
 [05:08] specific ways in which we can serve God and neighbor, we have various religious orders. The Dominicans love God and neighbor through preaching and teaching. the Carthusians through lurggical
 
-[05:17] service and purity of heart.
+[05:17] service and purity of heart. 
 
 **Article 2 — Whether a religious order should be established for the works of the active life**
 
@@ -129,7 +129,7 @@ Article two, whether a religious order should be established for the works of th
 
 [05:38] the least of my brethren, you did it to me." Then loving our neighbor is loving God through neighbor. And since the religious state is for the sake of growing in love of God, it is not
 
-[05:48] unfitting that a religious order be established for the sake of active works.
+[05:48] unfitting that a religious order be established for the sake of active works. 
 
 **Article 3 — Whether a religious order can be directed towards soldiering**
 
@@ -137,7 +137,7 @@ Article three, whether a religious order can be directed towards soldiering. In 
 
 [05:58] Thomas, "A religious order may be fittingly established for soldiering, not indeed for any worldly purpose, but for the defense of divine worship and public safety, or also of the poor and
 
-[06:10] oppressed, as it is written in Psalm 81, rescue the poor and deliver the needy out of the hand of the sinner."
+[06:10] oppressed, as it is written in Psalm 81, rescue the poor and deliver the needy out of the hand of the sinner." 
 
 **Article 4 — Whether a religious order can be established for preaching or hearing confessions**
 
@@ -147,7 +147,7 @@ Article four, whether a religious order can be established for preaching or hear
 
 [06:32] of the devil than to protect the faithful by means of bodily weapons. Therefore, it is most fitting for a religious order to be established for preaching and similar works pertaining
 
-[06:42] to the salvation of souls."
+[06:42] to the salvation of souls." 
 
 **Article 5 — Whether a religious order should be established for the purpose of study**
 
@@ -157,7 +157,7 @@ Article five, whether a religious order should be established for the purpose of
 
 [07:05] lust of the eyes and the pride of life by first occupying the mind and afflicting the flesh. This helps against lust. By helping a man discover greater treasure in wisdom and piety than in
 
-[07:16] riches, quelling avarice, and by teaching a man to become a slave of righteousness, thereby quelling pride.
+[07:16] riches, quelling avarice, and by teaching a man to become a slave of righteousness, thereby quelling pride. 
 
 **Article 6 — Whether a religious order that is devoted to the contemplative life is more excellent than one that is given to the active life**
 
@@ -179,7 +179,7 @@ Article six. Whether a religious order that is devoted to the contemplative
 
 [08:47] preaching, which moreover are nearest to the episcopal perfection. The second place belongs to those which are directed to contemplation and the third to those which are occupied with
 
-[08:58] external actions.
+[08:58] external actions. 
 
 **Article 7 — Whether religious perfection is diminished by possessing something in common**
 
@@ -197,7 +197,7 @@ Article seven, whether religious perfection is diminished by possessing somethin
 
 [10:07] concludes then here in response to our article from this it is evident that to keep money by or any other common property for the support of religious of the same order or of any other poor is
 
-[10:18] in accordance with the perfection which Christ taught by his example.
+[10:18] in accordance with the perfection which Christ taught by his example. 
 
 **Article 8 — Whether the religious life of those who live in community is more perfect than that of those who lead a solitary life**
 

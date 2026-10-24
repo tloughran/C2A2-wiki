@@ -15,7 +15,7 @@ fetched_at: 2026-05-01
 fetch_path: youtube-transcript-api (egress allowlist now permits youtube.com)
 synthesis: "[[Day-005 - Is God in Everything - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-10-12T09:11:58"
+last_qc_at: "2026-10-23T11:29:48"
 last_qc_outcome: "pass"
 tags: [summa, day/005, pars/I, q/7, q/8, theme/infinity, theme/divine-immanence, theme/divine-omnipresence]
 ---

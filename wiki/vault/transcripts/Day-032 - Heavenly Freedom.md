@@ -46,7 +46,7 @@ article one whether the angels have a Cause of their existence absolutely anythi
 
 [00:01:26] other additional Grace from my goodness
 
-[00:01:28]
+[00:01:28] 
 **Article 2 — Whether the angels were produced by God from eternity**
 
 article two whether the angel was produced by God from eternity St Thomas writes God Alone Father Son and Holy Spirit is from eternity the Catholic faith holds this without doubt and everything to the contrary must be rejected as heretical for God so produced creatures that he made them from nothing that is after they had not been setting aside lengthly definitions and discussions about time as we did in episod 6 and 24 Aus responds to this question simply on the basis of
@@ -125,7 +125,7 @@ Article 5 whether the angel obtained beatitude immediately after one act of Meri
 
 [00:11:36] instance beatified eternally here is St Thomas now it is proper to the Angelic nature to receive its natural Perfection not by passing from one stage to another but to have it at once naturally but as the angel is of his nature disposed to Natural Perfection so is he by Merit disposed to Glory hence instantly after Merit the angel Ang secured beatitude
 
-[00:12:01]
+[00:12:01] 
 **Article 6 — Whether the angels receive grace and glory according to the degree of their natural gifts**
 
 article six whether the Angels receive Grace and Glory according to the degree of their natural gifts do angels retain the hierarchy they have a nature in heaven since each one of them is their own species distinguished from one another by Simplicity and Perfection do they retain this kind of being better than one another not only in nature but also in the order of Grace and Glory Aquinas thinks they do and he argues from the standpoint of fittingness it's fitting that since God is all wise
@@ -142,7 +142,7 @@ article 7 whether natural knowledge and love remain in the be beatified Angels o
 
 [00:13:56] says in few words so long as a nature end doers its operations remain but beatitude does not destroy nature since it is its Perfection therefore it does not take away natural knowledge and love
 
-[00:14:09]
+[00:14:09] 
 **Article 8 — Whether a beatified angel can sin**
 
 article 8 whether a beatified angel can sin the question relates to Free Will and it allows us to further specify what in fact true Freedom looks like in the words of St John Paul II in a homy he gave in Baltimore 1995 he said every generation of Americans needs to know that Freedom consists not in doing what we like but in having the right to do what we ought since we have a divinely appointed goal from our creator a goal
@@ -155,7 +155,7 @@ article 8 whether a beatified angel can sin the question relates to Free Will an
 
 [00:16:16] cannot sin we want things precisely because we think they are good and so in heaven staring at boundless goodness the angels will want that too and in a way that eclipses wanting anything else
 
-[00:16:32]
+[00:16:32] 
 **Article 9 — Whether the beatified angels advance in beatitude**
 
 article 9 whether the beatified Angels advance in beatitude do angels progressively increase in happiness while in heaven St Thomas replies in the negative and for three reasons first the cause of the Angel's happiness is entirely changeless namely God via the beatific Vision second the degree in which they enjoy that object is based on Grace and Merit which does not change in heaven since the time for merit the time of the journey the time of spiritual
