@@ -51,3 +51,35 @@ The Big Think "The Well" interview is Wolfram's most integrative public statemen
 **Open question the wiki cannot yet answer:** Does levels-of-description compatibilism actually need the irreducibility barrier, or is the barrier surplus? If poetic naturalism is untroubled by a hypothetical Laplacean predictor, then the two positions are compatible but independent, and the network should stop treating computational irreducibility as support for emergence-based free will. If it is troubled, Carroll's account has a dependency it has not declared.
 
 **Wikilinks (sewing, 2026-08-30):** [[2026-08-28_wolfram_newscientist-time-computation-free-will]]
+
+
+---
+
+## Frozen irreducibility
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-24_wolfram_ruliobiology-endless-forms.md` (0 backlinks).
+
+**Why it sits here:** Biological form as 'frozen pieces of computational irreducibility' beside Carroll's emergence.
+
+**Synthesis claim.** Both say the macroscopic description is real and not derivable from the micro one in practice. Wolfram explains why by irreducibility; Carroll by coarse-graining.
+
+**Open question the wiki cannot yet answer:** Is coarse-graining the same thing as irreducibility, or do they predict different limits?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_ruliobiology-endless-forms]]
+
+
+---
+
+## Energy, information and history
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-23_carroll_mindscape-371-harper-last-animal.md` (0 backlinks).
+
+**Why it sits here:** Harper's homogenisation, with Carroll's physics-centric view of history, beside Wolfram's computational view.
+
+**Synthesis claim.** History as storage and transfer of energy and information is a computational picture. Homogenisation then reduces the variety of computation the biosphere can carry.
+
+**Open question the wiki cannot yet answer:** Can biosphere simplification be measured as loss of computational capacity?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-23_carroll_mindscape-371-harper-last-animal]]

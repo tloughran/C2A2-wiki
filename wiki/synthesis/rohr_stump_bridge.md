@@ -166,3 +166,19 @@ The second card sharpens this into a decidable question. Rohr grounds human dign
 **Open question the wiki cannot yet answer:** What would a Thomist mean by God 'longing' for us without implying lack, and does Rohr need that clarification?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-18_rohr_returning-home-weekly-summary]]
+
+
+---
+
+## Healing versus atonement
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_rohr_universal-healing-woodley-salvation-as-healing.md` (0 backlinks).
+
+**Why it sits here:** Salvation as present, communal healing beside Stump's Thomist atonement.
+
+**Synthesis claim.** Both can be read as restoration of right relation. Stump keeps a real wrong to be answered; the healing model keeps only imbalance.
+
+**Open question the wiki cannot yet answer:** Is healing an alternative to satisfaction or the way satisfaction is accomplished?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_universal-healing-woodley-salvation-as-healing]]

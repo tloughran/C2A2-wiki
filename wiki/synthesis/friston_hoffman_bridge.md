@@ -40,3 +40,19 @@ There is a second claim worth isolating because it is the stronger one and is ea
 **Provenance caution:** the audio was not heard; claims above rest on the publisher's chapter list and timestamps and on AI-generated insight cards from a third-party share page. The spacetime-derivation material (candidate 04) is the weakest link and should be checked against the preprint before anything is built on it.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy]]
+
+
+---
+
+## Traces and blankets
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-23_hoffman_trace-logic-theory-of-computation.md` (0 backlinks).
+
+**Why it sits here:** First-return traces beside Markov blankets.
+
+**Synthesis claim.** Both compress hidden dynamics into what a boundary exposes. If they match, trace order is a logic of blanket states.
+
+**Open question the wiki cannot yet answer:** Is a first-return trace the same object as the dynamics of a Markov blanket?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-23_hoffman_trace-logic-theory-of-computation]]

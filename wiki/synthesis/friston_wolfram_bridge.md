@@ -35,3 +35,19 @@
 **Synthesis claim.** CROSS-049 has been joined by our inference since it was opened. If either speaker engaged the other's framing from the stage, this is the first source in which the two programs are in direct rather than inferred contact — and that changes the entry's status from a wiki-constructed bridge to a documented one. The proposal names this as the highest-value thing to check when the recordings are watched, and that judgement is correct: the value is in the provenance, not in the content, because a bridge the traditions built themselves is worth more to the network than a bridge we built for them.
 
 **Open question the wiki cannot yet answer.** Nothing here can be resolved until someone watches the recordings, and the wiki has *neither* talk. The Friston agent has been instructed to retrieve and propose his own MC0001 talk, which is absent from the vault; the Wolfram talk's content is entirely unverified. Open item, not a finding. **Do not promote any claim from this entry.**
+
+
+---
+
+## Alignment as monitoring
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-24_wolfram_jon-hernandez-ai-future-interview.md` (0 backlinks).
+
+**Why it sits here:** Wolfram's claim that alignment cannot be fully solved because behaviour is irreducible beside active inference.
+
+**Synthesis claim.** If no proof of future behaviour is possible, the remaining option is continuous correction. That is also how an active-inference agent stays viable.
+
+**Open question the wiki cannot yet answer:** What is the minimum monitoring bandwidth a thick tradition needs to catch an AI participant drifting?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_jon-hernandez-ai-future-interview]]

@@ -7202,3 +7202,24 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Run completed 2026-10-24 (single instance).*
 
 *Addendum 2026-10-24 06:39 UTC — duplicate firing: a second Agent 16 run started ~2 minutes after the run above (possible double schedule). Re-verified: all 4 `needs_review/` files tagged [TRACKED-16]; `review/archive/` still ends at `2026-10-16_decisions.md`; `pending/` has no revised copies of PROP-2026-10-01-001 / -10-13-001 / -10-14-002 / -07-19-001; `prs_triplets.md` unchanged since 10-16. No checks re-counted; no state change. Nothing resolved.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-25
+
+  Intake: all 4 `needs_review/` files already carry [TRACKED-16] (Carroll→WATCH-001 resolved; Fredrickson→004; MacIntyre→006; McGilchrist→005). No new items.
+  Items checked: 0 on-cadence (none due). Event sweep only, to catch early triggers:
+    - `review/archive/` still 25 files, latest `2026-10-16_decisions.md` → no off-cadence trigger for WATCH-003.
+    - `pending/` 16 (+3 since 10-24: Wolfram ×3, dated 10-24, unrelated). No revised copies of PROP-2026-07-19-001 / -10-01-001 / -10-13-001 / -10-14-002.
+    - Fredrickson needs_review file unchanged since 10-08 (WATCH-004). `traditions/macintyre/prs_triplets.md` unchanged since 10-16. `sewing_agent_log.md` unchanged since 10-18: the 10-25 Sewing Agent run had not fired as of 02:37 EDT, so the WATCH-006 event trigger is still pending (WATCH-006).
+    - Vault grep for `xZcB-tmvJaU` / "Wisdom of Uncertainty" outside deferred/: only the needs_review card. No transcript (WATCH-005).
+    - 10-24 sync/changelog/open_questions files: no Tom ruling on any watch item.
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003, 22 checks; Escalate to Tom). No new stale flags.
+  New items added: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-10-30; WATCH-005/-006 on 2026-10-31. Event to check next run: today's Sewing Agent output (WATCH-006). Its 10-18 selection rule skipped needs_review/, so it will probably skip this card again.
+
+**Open for Tom (unchanged from 10-24):** Wonderstruck transcript (WATCH-005); Sewing Agent permission for the MacIntyre card (WATCH-006); INTEGRITY FLAG ruling (WATCH-003); Fredrickson CT-Signals edit (WATCH-004); ID collisions; split the ~850 KB watch list.
+
+*Run completed 2026-10-25 (single instance).*
+
+*Addendum 2026-10-25 06:40 UTC — second Agent 16 firing today (duplicate schedule, as on 10-24). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16] (none modified since 10-17); `review/archive/` still ends at `2026-10-16_decisions.md`; `pending/` 16, no revised copies of PROP-2026-07-19-001 / -10-01-001 / -10-13-001 / -10-14-002; `prs_triplets.md` unchanged since 10-16; `sewing_agent_log.md` unchanged since 10-18 (10-25 Sewing run not yet fired). Nothing due (WATCH-003/-004 on 10-30; WATCH-005/-006 on 10-31). Nothing resolved. WATCH-003 stale flag (22 checks, Escalate to Tom) stands.*

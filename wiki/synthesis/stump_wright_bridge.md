@@ -152,3 +152,35 @@ If the church is a real corporate substance whose members retain their distinct 
 **Open question the wiki cannot yet answer:** What does Isaiah 40-55 require of a corporate person that a Thomist account of individual substance cannot supply?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_into-the-heart-of-isaiah-40-55]]
+
+
+---
+
+## Corporate unity as witness
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity.md` (0 backlinks).
+
+**Why it sits here:** Wright's church unity (Romans 14-15, 'a team sport') beside Stump's account of united 'somethings-or-others'.
+
+**Synthesis claim.** If unity is constitutive of the church's witness, then the church needs a corporate subject. Wright supplies the scriptural demand and Stump the metaphysical candidate, but neither says whether a shared aim is enough.
+
+**Open question the wiki cannot yet answer:** Is the church's unity a single corporate substance or a coordination of persons, and would either thinker accept the other's answer?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity]]
+
+
+---
+
+## Temple and marriage as union
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage.md` (0 backlinks).
+
+**Why it sits here:** Wright's temple and marriage images of heaven-and-earth union beside Stump's metaphysics of union with God.
+
+**Synthesis claim.** Both images are covenantal union. If they also name a real union, as Stump would require, new creation is consummated participation, not replacement.
+
+**Open question the wiki cannot yet answer:** Do temple and marriage describe a metaphysical union or a covenantal one, and does Wright say?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage]]

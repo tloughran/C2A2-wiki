@@ -25562,3 +25562,45 @@ MONITOR-696:
   Monitoring cadence: Weekly (default)
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1174 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1174_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1174_against.md
+
+
+## 2026-10-25 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-10-18 (7 days). Day 25, so the **monthly cycle does not fire** (next first Sunday: 2026-11-01). `lit_pipeline.lock` content still reads RELEASED 2026-10-15 (mtime unchanged); not touched. Backups: `*.md.bak.20261025-pre-15d` for monitor_queue, for_lit_search, validated_premises. validated_premises.md not modified.
+
+### Consumption of the 2026-10-18 re-trigger cohort (12)
+- **Literature (0/7 consumed):** PRESUMPTION-1019, -1024, -1034, -1040, -1047, -1048, -955 (MONITOR-672..677, -681) carry no SEARCHED/DISPOSITIONED tags. 15c's 10-25 note confirms them as unsearched backlog (budget). Not re-filed; cycle counts held.
+- **Empirical (0/5 consumed):** MONITOR-678, -679, -680, -684, -686. Not re-filed.
+- **Older non-literature cohort (10-11):** 0/48 consumed, unchanged.
+- Cohort next_check 2026-10-25 -> **2026-11-01** (cohort level; per-entry dates not rewritten, precedent 09-20..10-18).
+
+### Weekly cycle — 7 overdue items re-queued (section dated 2026-10-25 in for_lit_search.md)
+Each confirmed overdue from its own `Next 15d check` or intake date; none has a later 15c status note. All: Cycle 0 -> 1, Last checked 2026-10-25, Next 15d check **2026-11-01**. Cycle fields are absent on these entries, so 0 -> 1 is 15d's count.
+- **Literature [QUEUED] (5):** MONITOR-689 (PRESUMPTION-1127), -691 (PRESUMPTION-1141), -692 (PRESUMPTION-1153), -685 (ASSUMPTION-1164), -693 (PRESUMPTION-1099).
+- **Empirical [QUEUED-EMPIRICAL] (2):** MONITOR-690 (PRESUMPTION-1138), -694 (PRESUMPTION-1102).
+
+### In-house check only (no re-queue)
+- **MONITOR-688 (PRESUMPTION-991):** 15c says no 15a/15b re-queue. Check of the named artefacts: `metabolism_data.json` `_meta.generated` = 2026-10-24T05:02:58-04:00 (mtime 10-24 09:03Z), total_runs 4511. **Regenerated a second time, since the 10-08 snapshot**, so the snapshot limb of the 10-26 REVISE trigger is not met. `signal_source.latest` is 2026-10-15 (stale_days 9), so the series is only partly live. No standalone dated loss-condition entry found (the string appears only in monitor_queue / lit_search_returns). Census (Metabolism-monitor-weekly output) not re-checked. 15c holds the 10-26 decision tomorrow. Cycle held at 4.
+- **MONITOR-695 (ASSUMPTION-514, subordinate to PREMISE-124):** "fold the refinement into PREMISE-124 at its next re-check" is a human/15c decision, not a search. PREMISE-124 re_check_due 2026-10-23 is overdue; it will be picked up at the 11-01 monthly cycle. Not queued.
+
+### Not yet due
+MONITOR-696 (intake 10-23, first due 10-30), -548 (10-28), -600 (11-01), -656 (11-03), -687 and the monthly entries (11-11). MONITOR-001..344 monthly/low-priority cohort not re-verified (full register reparse still owed, carried from 09-27). Event-driven / bound -003, -041, -154, -544, -612 untouched.
+
+### STALE-MONITOR-FLAG
+- **MONITOR-403:** the 10-11 ESCALATE to Tom stands; not re-issued. Now week 7 at cycle 5, in-house correlation still not run, no response.
+- **No new flag.** MONITOR-688 (cycle 4) moved (second regeneration 10-24). MONITOR-682/-683 (cycle 2) have had no movement and no consumer since 10-07; they reach 4 cycles only if searches actually run.
+
+### Trajectories
+- 689, 691, 692, 685, 693: baseline. 690, 694: baseline, empirical only. 688: supporting growing (second snapshot regeneration), challenging stable, no new sources.
+- Empirical lane: still no runner. Standing unconsumed non-literature items: 44 + 5 + 2 new + MONITOR-683 + 3 awaiting Tom = **55**. The 10-23 15c note shows the literature lane is also backlogged (126 bare items plus 7 15d re-triggers).
+- PREMISE-124 applies to this run: re-queuing and date-advancing certifies "not yet expired", not "re-tested". Nothing here was re-tested except MONITOR-688's file dates.
+
+**Run summary:** 7 re-queued (5 literature, 2 empirical); 2 in-house checks (688, 695 routed); 12 + 48 standing blocks held, not duplicated; 0 premise re-checks (monthly not due); 0 new stale flags (403 stands). Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+**Duplicate firing note (second 2026-10-25 firing of c2a2-periodic-monitor-weekly, ~03:38–03:45 EDT).** Two 15d instances ran at the same time. This instance took its backups (`*.bak.20261025-pre-15d`, pre-both-runs content) at ~03:39. The other instance committed both registers at 03:40:29 / 03:40:42, and this instance's guarded append was refused on a checksum mismatch. The run above stands. This instance made no re-queue, date change or flag, except one correction (Rule 7: the conflict is surfaced and one reading picked, not averaged):
+- **MONITOR-685 (ASSUMPTION-1164)** was filed above in the literature lane at cycle 0 -> 1, Next 2026-11-01. That contradicts the entry's own 15c routing note ("Do not re-queue for 15a/15b"; literature re-opens only with database or full-text access) and its recorded Cycle: 1 / Fortnightly cadence. A CORRECTION line was added under that block in for_lit_search.md. It reads: [QUEUED-EMPIRICAL], cycle 1 -> 2, Next 15d check 2026-11-08. The original text was not deleted.
+- **Minor, not corrected:** MONITOR-693 and -695 had a cycle under their predecessors (MONITOR-634 and -473 re-triggers). The "Cycle fields are absent" line above is accurate only for 689–692. Cycle numbering for 693/694 is left to 15c.
+- Independent agreement: this instance found the same overdue set (685, 688–695) and the same 10-18 consumption (0/12), and its MONITOR-688 artefact readings match (`_meta.generated` 2026-10-24T05:02:58, total_runs 4511). No *metabolism*monitor*/*weekly* census file was found by filename either. One extra observation, for the run-lock items (MONITOR-631, -649, -657, -665, -693): `lit_pipeline.lock` mtime is still 2026-10-15, although the 10-18, 10-23, 10-24 and 10-25 15abc notes all report the lock ACQUIRED. That is the stalled-shared-record pattern MONITOR-693 names.
+- **For Tom:** this is the second recorded double firing of this schedule (after 2026-10-04). On 10-15 the lit pipeline also ran twice at once. Check the scheduler for a duplicate c2a2-periodic-monitor-weekly task.
+- **Correction to the line above (same instance, after reading the scheduler list):** the scheduler holds only ONE `c2a2-periodic-monitor-weekly` task (cron `30 3 * * 0`, lastRunAt 2026-10-25T07:38:43Z). There is no duplicate task. The double run came from one scheduled firing executing in two sessions, not from a second task entry. Deleting a task will not fix it.
+- **For 15c (MONITOR-688, 10-26 trigger):** the scheduler shows `metabolism-monitor-weekly` (the census producer) **disabled**, lastRunAt 2026-10-04, and `metabolism-regen-daily` disabled since 2026-09-23. The census therefore has no scheduled producer. The snapshot regenerations of 10-08 and 10-24 came from some other path that 15d has not identified. This bears on the "census still stale" half of the REVISE trigger and on the ">=3 of last 4 weeks" liveness requirement.

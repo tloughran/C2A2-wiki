@@ -2383,3 +2383,11 @@ Phase 0: no decision emails. Phase 1: ledger OPEN=1 unchanged, 0 ingested. Phase
 ### 2026-10-24 second orchestrator firing (04:37 local)
 Verification only. Phase 0: no new decision email (only old April/July unread threads, already applied). Phase 1: ingest_ledger OPEN=1 (Wright PROP-2026-08-14-033, unchanged), 0 ingested. Phase 2: skipped (3 Wolfram specialist cards today). Phase 3/4 not repeated (page + draft made by primary run). 5.5/5.6 not re-run. Phase 6: no git.
 **Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 16.
+
+### 2026-10-25 orchestrator (cloud)
+Phase 0: no decision emails. Phase 1: ledger OPEN=1 unchanged (Wright PROP-2026-08-14-033), 0 ingested. Phase 2: skipped (Sunday specialists wrote 4 cards today; 16 earlier pending). Phase 3: review page 20 pending, opened. Phase 4: draft. 5.5 clean; 5.6 OK 1745 signals, 91 pairs, stale_days 10. Phase 6: no git.
+**Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 20.
+
+### 2026-10-25 second orchestrator firing (verification only)
+Phase 0: no new decision email (only old April/July unread threads; 07-23 and 04-08 archives exist, already applied). Phase 1: 0 ingested. Phase 2: skipped (4 Sunday specialist cards today). Phase 3/4 not repeated (page 2026-10-25_review.html + draft made by primary run). 5.5/5.6 not re-run. Phase 6: no git.
+**Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 20.

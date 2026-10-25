@@ -41,3 +41,35 @@
 **Open question the wiki cannot yet answer:** Which grounding is prior? If computational boundedness is necessary for any embedded observer, then fitness selects only *among* interfaces already constrained by it, and Wolfram's limit is the deeper one. If interfaces can be reshaped by selection into forms with different computational profiles, the priority runs the other way. Neither node has taken a position and both pages presuppose one.
 
 **Wikilinks (sewing, 2026-08-30):** [[2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel]] · [[2026-08-28_wolfram_newscientist-time-computation-free-will]]
+
+
+---
+
+## No absolute mathematics
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-24_wolfram_future-of-pure-math-in-age-of-ai.md` (0 backlinks).
+
+**Why it sits here:** Finite observers sampling the ruliad beside trace logic's observer windows.
+
+**Synthesis claim.** Both say what an observer can know is fixed by what it can sample. Neither claims access to an observer-free mathematics.
+
+**Open question the wiki cannot yet answer:** Are the ruliad sampling and first-return traces the same construction in different languages?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_future-of-pure-math-in-age-of-ai]]
+
+
+---
+
+## Observer windows
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-23_hoffman_trace-logic-theory-of-computation.md` (0 backlinks).
+
+**Why it sits here:** Trace transducers beside observer theory.
+
+**Synthesis claim.** Both define an observer by what it samples. The paper adds composition laws and a complexity theory.
+
+**Open question the wiki cannot yet answer:** Does the visible/hidden resource split give a new complexity class for observers in the ruliad?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-23_hoffman_trace-logic-theory-of-computation]]

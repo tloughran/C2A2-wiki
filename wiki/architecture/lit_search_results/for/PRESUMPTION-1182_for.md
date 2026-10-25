@@ -1,0 +1,44 @@
+SEARCH-FOR-PRESUMPTION-1182:
+  Date searched: 2026-10-25
+  Original item: PRESUMPTION-1182
+  Original statement: "[inferred] A verdict computed from a stale source is presumed current. run_stall reports OK for the daily run from an 18-day-old routine_health.md; the morning check reports live-DB checks as fine because OK rows are not written. Extends PRESUMPTION-1177 (absence read as absence) to staleness read as health: the output carries no freshness stamp on its inputs."
+
+  Reading used for the FOR direction: support means literature confirming three things. (a) Monitoring practice treats input staleness as a failure mode in its own right: a verdict built on old data can look healthy while being wrong. (b) Accepted practice measures and alerts on input age or on missing signals (freshness SLOs/checks, heartbeat or dead-man's-switch alerts, absence-of-signal rules) and does not infer health from silence. (c) Practice requires or recommends that outputs carry the age of their inputs. Sub-question (c) is the item's specific claim. 15a does not judge whether routine_health.md is actually stale or whether the live-DB checks are actually failing.
+
+  Search scope: PRELIMINARY. 4 web searches, 0 usable page fetches. A fetch of Beyer et al. 2016 ch. 6 ("Monitoring Distributed Systems") was attempted and charged to the shared fetch budget. It returned a de-duplication notice with no content and, per budget rules, was not retried. Searched: SRE Book/Workbook on staleness, freshness and absence-of-signal; dead-man's-switch / cron heartbeat / Prometheus absent(); SRE Workbook data-pipeline freshness SLOs; dashboard "last updated" / data-age stamping. Not reached: SRE Book ch. 6 text itself, Prometheus documentation on staleness handling, academic data-quality literature (e.g. timeliness/currency dimensions in Wang & Strong 1996 or Batini et al.). A broader search is recommended.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: 14b → 15a
+    Original item: PRESUMPTION-1182
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred at the 2026-10-24 intake. run_stall reports OK for the daily run from an 18-day-old routine_health.md. The morning check reports live-DB checks as fine because OK rows are never written. Framed as an extension of PRESUMPTION-1177 (absence read as absence), here staleness read as health.
+      15a: Searched for supporting literature (preliminary; 4 searches, 0 usable fetches)
+    Current status: SEARCHED-15a — SUPPORTED
+
+  Supporting evidence found: Yes for (a) and (b). Moderate for (c), from practitioner and vendor sources. No canonical SRE text was read on (c).
+
+  Sources:
+    1. Google SRE Workbook (Beyer, Murphy, Rensin, Kawahara and Thorne, eds., 2018), Appendix A "Example SLO Document." [snippet only]. Freshness is an SLI in its own right: the share of reads using recently written data, e.g. "90% of reads use data written within the previous 1 minute." Relevance: this is canonical support for (b). Google SRE treats input age as a measured, targeted property, not an assumption.
+    2. Google Cloud blog, "Applying SRE principles to your MLOps pipelines" (summarising the SRE Workbook data-pipeline chapter). [snippet only]. Recommends SLOs on pipeline health, "especially data freshness," and notes that stale data "may lead to lower-quality inferences." Relevance: this supports (a). Staleness degrades the downstream verdict even when the pipeline itself appears healthy.
+    3. Google SRE Workbook, ch. 4 "Monitoring." [snippet only]. Lists speed as a property of a good monitoring system and asks "how 'fresh' do you need your data to be?" Relevance: weak support. Freshness is a design requirement of the monitoring system itself, but no rule requiring verdicts to carry input age was seen.
+    4. Dead-man's-switch / heartbeat monitoring sources: Irin Observability (DEV Community) "A dead man's switch for your monitoring stack"; G-Research PromMSD (pkg.go.dev); Healthchecks-style cron monitoring guides (OnlineOrNot; Crontap; DEV "Your cron job did not fail, it never ran"). [snippet only, practitioner]. Common points: an always-firing Watchdog alert goes to an external receiver, which alerts when the signal stops. "The system responsible for detecting that your monitoring is down must not depend on the monitoring stack itself." Daily jobs are expected to ping within a window (e.g. 25h), and a missing ping pages. Relevance: this is strong practitioner support for (b) and for the parent PRESUMPTION-1177. Healthy is something you are told positively within a time window. It is not inferred from no error rows. The morning check's "OK rows are not written, so fine" is the anti-pattern these tools exist to prevent.
+    5. MotherDuck glossary, "Data freshness"; Basedash, "Data freshness: how current your dashboard data really is"; Tray.ai, "Data quality monitoring." [snippet only, vendor]. A dashboard fed by a failing upstream "still renders cleanly while showing outdated numbers." A pipeline can report full uptime while loading no new rows, so a green "last run succeeded" does not prove the data moved. Freshness is measured as now minus the newest timestamp, with warn/error thresholds (dbt source freshness). Relevance: direct support for (a), staleness read as health, in almost the item's own terms.
+    6. CloudNativeNow, "Your Service Is Healthy, but Its Data Isn't: Rethinking Cloud-Native Health Checks." [snippet only, contributed article]. Recommends that producers expose timestamps or sequence information, that processing layers report their last successful activity, and that APIs state how current their data is. Short delays degrade status, and the service is marked stale after several missed cycles. Relevance: the most direct support found for (c). Outputs should carry how current their inputs are, with a graded stale/degraded verdict and not a binary OK.
+    7. dbt Cloud documentation, "Dashboard status tiles"; OneUptime Calico/Grafana metrics guide. [snippet only]. dbt status tiles show whether a dashboard's upstream data is stale or degraded. The Grafana guide alerts when metrics have not updated for more than 10 minutes and treats metric freshness as a health signal separate from availability. Relevance: shipped-tool examples of (c). The input-age verdict is attached to the consuming output.
+
+  Strength of support: Moderate-to-Strong. Strong for (a) and (b); moderate for (c).
+
+  Summary: The literature supports the item. Monitoring and data-quality practice treat staleness as a distinct failure mode that hides behind a healthy-looking output: a dashboard renders cleanly, a job reports success, and the data has not moved (MotherDuck, Basedash, Tray.ai). The standard defences are a measured freshness SLI or check with thresholds (SRE Workbook Appendix A; dbt source freshness) and heartbeat or dead-man's-switch alerting. That alerting requires a positive signal within a window and pages on its absence, using a receiver independent of the monitored stack (Watchdog/PromMSD, Healthchecks-style cron monitors). Both cases in the item match named anti-patterns. run_stall's OK from an 18-day-old file is staleness read as health. The morning check's "fine because no OK rows" is absence read as health, the problem dead-man's switches exist to solve. On the specific claim that each verdict should carry the age of its input, the sources found recommend it (CloudNativeNow; dbt status tiles; timestamp-based freshness alerts), but these are practitioner and vendor sources. No canonical SRE text was read that requires it as a rule.
+
+  Caveats:
+    - No primary source was read in full. The SRE Book ch. 6 fetch returned no content, so the item's suggested anchor (Beyer et al. 2016, ch. 6) is unconfirmed on this point. SRE Workbook material was seen only as snippets.
+    - Most evidence for (c) is vendor or practitioner material, not peer-reviewed.
+    - The sources prescribe freshness checks somewhere in the system. They do not all require the stamp on every verdict. Some designs put freshness in a separate alert. "Each verdict carries the age of its input" is one valid implementation of a well-supported requirement, not the only accepted one.
+    - Practitioner sources stress that the heartbeat receiver must be independent of the monitored system. In C2A2, a freshness stamp computed by the same scheduler whose staleness is in question may share the failure mode. This links to PRESUMPTION-1179.
+    - Data-quality literature on timeliness/currency (e.g. Wang & Strong 1996) was not searched. That is a likely source of academic grounding.
+
+  Recommendation: SUPPORTED
+
+  (No NOVELTY-FLAG: freshness checks, absence-of-signal alerting and data-age stamping are established practice. The item applies them to a specific case and does not extend them.)

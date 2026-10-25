@@ -27907,3 +27907,149 @@ ITEM: PRESUMPTION-1174 [QUEUED] [SEARCHED-15a: 2026-10-23] [SEARCHED-15b: 2026-1
 **Backups:** *.bak.20261024-pre-15pipeline for all five registers. Lock ACQUIRED (run cowork-local-2026-10-24-353fddf0), released at end.
 **Backlog remaining (fail loud):** untouched (count carried from the 10-23 note, not recounted this run) — the 126 bare literature-lane items plus the 7 literature re-triggers from 15d 2026-10-18 (PRESUMPTION-1019, -1024, -1034, -1040, -1047, -1048, -955) remain [QUEUED] without SEARCHED tags. Success criterion "all queued items searched" NOT met for the backlog.
 **Budget (fail loud):** search subagents about 90k (15a) + 91k (15b) tokens, well over Tom's 4k per-task / 30k per-session rule, despite a 6-search cap each.
+
+
+## 2026-10-24 — 14a/14b intake (local pass, 23:43 EDT)
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1909
+  Statement: [stated] Scheduler health names the cause of the multi-firing: 29 tasks moved to cloud routines (most on 09-24) are 'STILL ENABLED' locally and flagged DOUBLE-REGISTERED FAIL. The prescribed fix is conditional: 'Confirm the cloud trigger fires before disabling the local entry.' This task (c2a2-self-awareness-daily, trig_01JnXEc2FRJy4gozaMoVxDuk, local `30 23 * * *`) is on the list.
+  Claim to test (in-house): check 5a1af009; e9bf6be9 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1911
+  Statement: [stated] OpenStory feeds failed 2026-10-23 17:00Z with 'No space left on device': the 7.9 GB open-story.db 'no longer fits in the sandbox's ~3.5 GB of temp space, so this will keep failing until the extractor reads the database in place or gets a bigger scratch location.' Rationale drift: the 10-23 evening pass recorded the cause as the H-Drive being unmounted (ASSUMPTION-1897).
+  Claim to test (in-house): check a3a225f8; 5a1af009 (telemetry 6.0 days stale) against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1912
+  Statement: [stated] Wolfram PROP-2026-10-24-003 rests 'only on the video's title, description and chapter timestamps' (YouTube blocked; no transcript). All three candidate triplets are marked Speculative and the agent recommends holding until someone checks the audio.
+  Claim to test (in-house): check 4c05d7bb against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1913
+  Statement: [stated] Wolfram PROP-2026-10-24-002 'covers the same Sept 28 essay that's already in the wiki as PRS-66 to PRS-68 (from PROP-2026-09-29-003), so it's probably a duplicate.' Detected only because a later run read the pending folder.
+  Claim to test (in-house): check 4c05d7bb against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1914
+  Statement: [stated] Ingest ledger counts went down with no visible ingest or deletion: 486 -> 484 total, 454 -> 453 ingested, 30 -> 29 decided-zero (10-17 vs 10-24). 'Something moved or was reclassified.'
+  Claim to test (in-house): check d737f2ac against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1915
+  Statement: [stated] Two files have no proposal ID, so the ledger cannot tell whether they were ingested: inbox/proposals/approved/2026-05-12_repair_manifest.md and inbox/2026-09-08_levin_virtue-as-external-setpoint.md.
+  Claim to test (in-house): check d737f2ac against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1916
+  Statement: [stated] The 05:45 health check 'no longer prints the two OpenStory ingest rows', and 'OK rows aren't written out', so there is no ingest verdict or volume number. Live-DB checks are inferred OK only because they were not flagged.
+  Claim to test (in-house): check e9bf6be9 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1917
+  Statement: [stated] voice-shell suite RED: 396 rows, 389 passed, 7 failed (exit 1) on main@dc0da084, 2026-10-24 05:38:52. com.tomloughran.openstory.ui is not loaded in launchd.
+  Claim to test (in-house): check 5a1af009; e9bf6be9 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1922
+  Statement: [stated] Deferred monitor: the Sewing Agent exists (local_57fed042, Sundays) but 'its 10-18 run deliberately skipped cards in needs_review/, so tomorrow's run will probably skip this one too' (WATCH-006). WATCH-003 stale at 22 checks; recommendation is still to escalate to Tom. Six asks now wait on Tom; the watch list is about 846 KB.
+  Claim to test (in-house): check bd9d35be against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-25] [SEARCHED-15b: 2026-10-25] [DISPOSITIONED-15c: 2026-10-25] PRESUMPTION-1179
+  Statement: [inferred] A migration is presumed complete once the destination is created. Tasks were moved to cloud routines on 09-24 but the local entries stayed enabled for a month. The prescribed fix ('confirm the cloud trigger fires before disabling the local entry') requires observing the cloud side, which no monitor can currently do (no Routines connector since 10-06). The precondition for the cutover is therefore unsatisfiable by the system's own instruments — is a cutover without an independent verification path warranted?
+  Claim to test (literature): Migration cutover and dual-running practice (parallel run / strangler-fig migration; SRE guidance on verifying the new path before decommissioning the old; Google SRE Book ch. on change management). Is cutover verification normally done by an observer independent of both paths?
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1180
+  Statement: [inferred] Duplicate firings are presumed harmless because the later run will notice the earlier one and defer. Today several did (wiki daily, evening sync, chat scrape), but deferral depends on each LLM run choosing to check, and duplicates still alter downstream decisions: the wiki daily run skipped its Hunt phase because 'the Wolfram specialist already wrote 3 proposals today', a count inflated by the double firing. Idempotence is behavioral, not enforced.
+  Claim to test (in-house): check d737f2ac; 4c05d7bb; 727c4130; 22dd1628 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1181
+  Statement: [inferred] The first plausible cause a run finds is presumed to be the cause. On 10-23 OpenStory's stall was attributed to an unmounted H-Drive; on 10-24 a different run attributes the same stall to sandbox temp space being smaller than the 7.9 GB database. Neither record marks its cause as a hypothesis. Separately, sandbox resources are presumed adequate for data the system keeps growing (scale blindness).
+  Claim to test (in-house): check a3a225f8 vs ASSUMPTION-1897 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-25] [SEARCHED-15b: 2026-10-25] [DISPOSITIONED-15c: 2026-10-25] PRESUMPTION-1182
+  Statement: [inferred] A verdict computed from a stale source is presumed current. run_stall reports OK for the daily run from an 18-day-old routine_health.md; the morning check reports live-DB checks as fine because OK rows are not written. Extends PRESUMPTION-1177 (absence read as absence) to staleness read as health: the output carries no freshness stamp on its inputs.
+  Claim to test (literature): Data freshness in monitoring and alerting (staleness SLOs, 'absence of signal' alerts, dead-man's-switch / heartbeat monitoring; Beyer et al., Site Reliability Engineering, 2016, ch. 6). Do monitoring practices require each verdict to carry the age of its input?
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1183
+  Statement: [inferred] Writing a proposal is presumed to be the agent's successful output even when the source could not be read. Wolfram's run produced PROP-003 from title and chapter metadata alone and then recommended holding it; 'no readable source' has no outcome of its own short of a speculative card. 'Proposals written' as the headline count smuggles in more-is-better.
+  Claim to test (in-house): check 4c05d7bb ('1 proposal written'; triplets guessed from chapter titles) against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+
+
+## 2026-10-25 — 15a/15b/15c run note (run cowork-308fd879-2026-10-25)
+**Scope.** New intake only: PRESUMPTION-1179 and -1182 (the only literature-lane items in the 10-24 intake). ASSUMPTION-1909..1922 and PRESUMPTION-1180/1181/1183 are [IN-HOUSE] and not owed a search. No backlog batch, per the 10-18 / 10-23 / 10-24 precedent (budget).
+**Results:** 15a — 1179 PARTIALLY-SUPPORTED (Moderate, NOVELTY-FLAG config-level); 1182 SUPPORTED (Moderate-Strong). 15b — 1179 PARTIALLY-CHALLENGED (Moderate); 1182 PARTIALLY-CHALLENGED (Moderate, remedy only).
+**Dispositions:** DISPOSITION-1098: PRESUMPTION-1179 → REVISE-523 (Medium). DISPOSITION-1099: PRESUMPTION-1182 → REVISE-524 (Medium; breach of ACTIVE PREMISE-086). No PREMISE minted; no MONITOR entry.
+**SYSTEMIC-RISK:** candidate only (15b): health inferred from no-bad-signal rather than a positive timestamped heartbeat — spans PRESUMPTION-1177, -1179, -1182. Recorded in the against file, returns and REVISE-524; no flag file.
+**Result files:** lit_search_results/{for,against}/PRESUMPTION-{1179,1182}_{for,against}.md (PROVENANCE headers present; STEELMAN in both against files).
+**Backups:** *.bak.20261025-pre-15pipeline for all five registers. Lock ACQUIRED (run cowork-308fd879-2026-10-25), released at end.
+**Backlog remaining (fail loud):** untouched, count carried forward not recounted — 126 bare literature-lane items plus 7 15d re-triggers (PRESUMPTION-1019, -1024, -1034, -1040, -1047, -1048, -955) remain [QUEUED] without SEARCHED tags. Success criterion "all queued items searched" NOT met for the backlog.
+**Budget (fail loud):** search subagents about 88k (15a) + 97k (15b) tokens, far over Tom's 4k per-task / 30k per-session rule, despite a 4-search-per-item cap.
+
+
+## 2026-10-25 — 15d Periodic Monitor re-triggers (weekly cycle only; monthly does not fire on day 25)
+
+*15d re-trigger only; no evidence evaluated. Lanes follow 15c routing notes where given; otherwise they are 15d's reading of the entry's 'would change' clause.*
+
+### Literature lane (5) — for 15a/15b
+
+[PRESUMPTION] PRESUMPTION-1127: (see MONITOR-689 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed: a source or in-house test scoring an alert policy (escalation, delay/triage, suppression, auto-remediation) on faults caught, not alert count. In-house limb also open.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1141: (see MONITOR-691 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed (15c routing note): full-text fetches of Groth 2005 and Davidson & Freire 2008; evidence so far is title-level. Seeded-defect test is the in-house alternative.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1153: (see MONITOR-692 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed (15c routing note): full-text fetches of McCain 2012 and Lin et al. 2022. The in-house 20-sample adumbration test is the cheaper route.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+
+[ASSUMPTION] ASSUMPTION-1164: (see MONITOR-685 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed: re-search of the empirical limb with the access that failed last time (WoS/Scopus/Dimensions, Boguslav full text). Result stays 'preliminary, UNCALIBRATED (PREMISE-124)' until then. Interim constraint stands: do not rely on the 'externally corroborated' label.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+  [CORRECTION by 15d second firing 2026-10-25: 15a/15b should NOT search this block. MONITOR-685's 15c routing note says "in-house and design-decision limbs only. Do not re-queue for 15a/15b"; literature re-opens only if the pipeline gains WoS/Scopus/Dimensions or full-text access, which it has not (PREMISE-183(2)). Read as [QUEUED-EMPIRICAL]. The entry also already records Cycle: 1 and Fortnightly cadence, so this is cycle 1 -> 2, Next 15d check 2026-11-08. Original text left as written; see 2026-10-25 duplicate-firing note in monitor_queue.md.]
+
+[PRESUMPTION] PRESUMPTION-1099: (see MONITOR-693 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed: Huang et al. 2017 in primary form. Alternative is the in-house stall test (stall the run record one cycle; does something outside it alarm?). Successor to MONITOR-634.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+
+### Empirical lane (2) — in-house measurement, not a literature search
+
+[PRESUMPTION] PRESUMPTION-1138: (see MONITOR-690 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed (15c routing note): count weekly proposal arrivals vs review decisions from inbox/proposals; REVISE if arrivals exceed decisions 3 weeks running. No search unless a reviewer-queue WIP field study appears.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+
+[PRESUMPTION] PRESUMPTION-1102: (see MONITOR-694 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-10-25, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Low
+  Cycle: 0 -> 1; Last checked: 2026-10-25; Next 15d check: 2026-11-01
+  Owed: in-house cost/latency comparison, adaptive vs fixed polling, on one scheduled task. No literature owed.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
+
+Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 5 empirical) and the 2026-10-11 non-literature cohort (44 empirical, 1 Agent-19, 3 awaiting Tom) carry no SEARCHED/DISPOSITIONED tags. Not duplicated; cycle counts held.

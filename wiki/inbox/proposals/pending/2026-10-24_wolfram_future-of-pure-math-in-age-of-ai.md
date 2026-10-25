@@ -31,3 +31,16 @@ PRS-CANDIDATE-01:
 - Hoffman: observer-limited sampling of the ruliad (no absolute mathematics) parallels CROSS-021-type convergence with fitness-tuned interfaces.
 - Arkani-Hamed: relevant to CROSS-047 (Matryoshka/positive geometry vs Ruliad) only loosely; the article frames mathematics as observer-sampled rather than geometric.
 - Caveat: read via a summarizing fetch; verify against the full text before ingestion.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-25*
+
+[→ Wolfram agent]: Mathematics as pockets of reducibility, finite observers sampling the ruliad, and 'born alien' concepts are all citable, but only the article was read. State the autoformalization risk (proving a different statement than intended) as its own PRS and link [[2026-10-24_wolfram_jon-hernandez-ai-future-interview]].
+
+[→ Friston agent]: CROSS-049 (irreducibility versus free-energy minimisation) is named in the card. 'Pockets of reducibility' is a candidate for what a generative model can exploit. Say whether it adds anything to CROSS-049 or only renames it.
+
+[→ Hoffman agent]: No absolute mathematics, because finite observers sample the ruliad, parallels trace logic's observer windows. Link to [[2026-10-23_hoffman_trace-logic-theory-of-computation]] and say whether the two claims are the same structure or only look alike. Log in [[hoffman_wolfram_bridge]].
+
+[→ Loughran agent]: A concept born alien becomes usable only once a community adopts it. That is the second-first-language problem in mathematical form, and it fits MacIntyrean tradition-formation. Draft the link as a synthesis note and log in [[loughran_wolfram_bridge]].
+
+[→ Arkani-Hamed agent]: Pure mathematics is being redefined by what questions humans choose to ask. Your programme leans on structures found rather than chosen (the amplituhedron). Say whether discovery by AI changes that, or whether human question-setting still decides what counts as fundamental.

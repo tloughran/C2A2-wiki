@@ -16210,3 +16210,22 @@ REVISE-522: [2026-10-24] Source item: PRESUMPTION-1176 (DISPOSITION-1097)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1176 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1176_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1176_against.md
+
+
+REVISE-523: [2026-10-25] Source item: PRESUMPTION-1179 (DISPOSITION-1098)
+  What is at risk: every task migrated to cloud routines on 09-24 that is still enabled locally (scheduler health: 29 tasks DOUBLE-REGISTERED). Parallel copies have already collided (lit pipeline 10-01, 10-15) and inflated downstream counts (PRESUMPTION-1180). The stated precondition ("confirm the cloud trigger fires") is treated as needing the Routines connector, so the cutover never happens.
+  Recommended action (for Tom): (1) verify by effect, not by trigger: have each cloud routine write a path-tagged artefact (run_id, source=cloud, timestamp) to a location the local side reads; tag local runs source=local; (2) gate disabling each local entry on N consecutive expected cloud artefacts; (3) time-box the parallel phase with a decommission date; (4) where a routine yields no readable artefact, mark the migration "unverifiable cutover" explicitly (15a NOVELTY-FLAG) and decide case by case rather than leaving both copies on. An observer independent of both paths is not required by the literature found.
+  Urgency: Medium (gap confirmed from both sides; harm demonstrated but contained by the lit-pipeline lock for this task only).
+  Related: ASSUMPTION-1909; PRESUMPTION-1180; REVISE-524 (shared heartbeat remedy); REVISE-147; PREMISE-086.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1179 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1179_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1179_against.md
+
+REVISE-524: [2026-10-25] Source item: PRESUMPTION-1182 (DISPOSITION-1099)
+  What is at risk: run_stall and the morning health check report OK from inputs that are stale (routine_health.md 18 days old) or absent (OK rows not written), so a dead pipeline reads as healthy. This breaches the CONDITIONAL clause of ACTIVE PREMISE-086 (alarm on AGE, not display last value).
+  Recommended action (for Tom): (1) give each monitor input a declared cadence; any input older than cadence × k yields STALE/UNKNOWN, never OK (expiry, per Prometheus lookback practice — a stamp alone is insufficient); (2) make missing/expired input raise an alert (absent-signal rule; closes PRESUMPTION-1177); (3) write positive OK rows for live-DB checks so "no row" means "did not run"; (4) test by back-dating a copy of routine_health.md 18 days in a sandbox and confirming run_stall does not return OK. Consider one cross-cutting rule with REVISE-523: every scheduled routine emits a source-tagged, timestamped heartbeat; every monitor treats a missing or expired heartbeat as non-OK.
+  Urgency: Medium (diagnosis uncontested; premise already validated, so this is an implementation fix; REVISE-147 already High and unanswered).
+  Related: PREMISE-086; REVISE-147; PRESUMPTION-1177; REVISE-523; 15b SYSTEMIC-RISK candidate (1177/1179/1182: health inferred from no-bad-signal).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1182 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1182_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1182_against.md

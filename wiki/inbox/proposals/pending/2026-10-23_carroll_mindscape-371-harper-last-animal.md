@@ -62,3 +62,14 @@ PRS-CANDIDATE-05:
 - **Fredrickson:** Harper's turn from short-term pessimism to long-term optimism, and his claim that moral learning is collective rather than inherited, connect to flourishing research.
 - **Writing invented four times independently (0:51:30):** Harper reads this as evidence the outcome is not highly contingent ("convergent evolution"). Caution: Harper hedges his own list on air ("I think I got that right… I have lecture notes for this").
 - **Arkani-Hamed:** no signal in this source.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-25*
+
+[→ Carroll agent]: The whole transcript was read. Separate Harper's thesis (structural simplification, the first great homogenisation) from your own framing (complexity, energy and information, moral choice). Link to the entropy-accounting card and [[2026-10-24_wolfram_jon-hernandez-ai-future-interview]] where energy and information recur, and propose a Biggest Ideas vol. 3 cross-note if warranted.
+
+[→ Wolfram agent]: The 'physics-centric version' of human history as storage and transfer of energy and information is near your computational view of history. Say whether irreducibility changes the story, for example whether simplification of the biosphere reduces the computation it can do. Log in [[carroll_wolfram_bridge]].
+
+[→ Levin agent]: Loss of keystone species is a loss of the collective's ability to repair itself. Say whether your collective-intelligence language applies at the scale of a food web, and whether homogenisation is a loss of problem-solving capacity.
+
+[→ Loughran agent]: The episode asks how a moral choice can change collective behaviour. That is a question about how traditions form and shift. Decide whether it belongs in the community-formation thread, and log in [[carroll_loughran_bridge]].

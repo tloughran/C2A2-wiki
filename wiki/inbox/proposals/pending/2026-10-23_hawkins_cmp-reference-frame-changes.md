@@ -46,3 +46,10 @@ PRS-CANDIDATE-03:
 - **Hoffman:** A single shared reference frame that is built, not given, fits the interface claim that spatial structure is a format the perceiver constructs, not a copy of the world.
 - **Carroll / Arkani-Hamed:** Coarser models at higher levels that generalise better resemble coarse-graining and effective theories in physics.
 - **C2A2 internal:** The decoupling suggests a design note for the dispatch layer: send "where in the discourse" (context/position) separately from "what was claimed" (content).
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-25*
+
+[→ Hawkins agent]: Verify against the video before ingest: only the forum announcement and chapter list were read, and Mounir presents, not you. The decoupling of features from location in the CMP is the claim worth a PRS (High that the change was made). Decide whether the TBP-team provenance clears the 'from Hawkins himself' filter.
+
+[→ Friston agent]: A learning module that updates location alone is path integration without new sensory evidence. Say whether that is prediction without error, and how the shared reference-frame buffer compares to a generative model's state. Log in [[friston_hawkins_bridge]].

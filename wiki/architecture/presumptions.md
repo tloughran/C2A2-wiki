@@ -25676,3 +25676,108 @@ PRESUMPTION-1178:
     Current status: UNTESTED
 
 *Surfaced by the 14b evening delta of 2026-10-23. **4 items (1175-1178)**: structural 2 · epistemic 2; risk High 1 · Medium 3. Checked against 14a 1895-1908 and PRESUMPTION-1170..1174; proposal-ID collision and path drift not re-surfaced (recurrences).*
+
+
+## 2026-10-24 — 14b local pass (23:43 EDT)
+
+PRESUMPTION-1179:
+  Date surfaced: 2026-10-24
+  Statement: [inferred] A migration is presumed complete once the destination is created. Tasks were moved to cloud routines on 09-24 but the local entries stayed enabled for a month. The prescribed fix ('confirm the cloud trigger fires before disabling the local entry') requires observing the cloud side, which no monitor can currently do (no Routines connector since 10-06). The precondition for the cutover is therefore unsatisfiable by the system's own instruments — is a cutover without an independent verification path warranted?
+  Evidence it was operative: 5a1af009 (29 DOUBLE-REGISTERED; cloud routines unchecked); ASSUMPTION-1909, -1918
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: OPEN-273; OPEN-274; PRESUMPTION-1178
+  Testability: testable via literature
+  Risk if wrong: High: indefinite double-dispatch, or disabling local copies of routines that do not actually fire in the cloud.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1179
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-24 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1180:
+  Date surfaced: 2026-10-24
+  Statement: [inferred] Duplicate firings are presumed harmless because the later run will notice the earlier one and defer. Today several did (wiki daily, evening sync, chat scrape), but deferral depends on each LLM run choosing to check, and duplicates still alter downstream decisions: the wiki daily run skipped its Hunt phase because 'the Wolfram specialist already wrote 3 proposals today', a count inflated by the double firing. Idempotence is behavioral, not enforced.
+  Evidence it was operative: d737f2ac; 4c05d7bb; 727c4130; 22dd1628
+  Why it was unstated: embedded in tooling/practice
+  Type: methodological
+  Related decisions: OPEN-273; PRESUMPTION-1175
+  Testability: testable in-house
+  Risk if wrong: Medium: silent double output or skipped work on days a run fails to check.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1180
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-24 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1181:
+  Date surfaced: 2026-10-24
+  Statement: [inferred] The first plausible cause a run finds is presumed to be the cause. On 10-23 OpenStory's stall was attributed to an unmounted H-Drive; on 10-24 a different run attributes the same stall to sandbox temp space being smaller than the 7.9 GB database. Neither record marks its cause as a hypothesis. Separately, sandbox resources are presumed adequate for data the system keeps growing (scale blindness).
+  Evidence it was operative: a3a225f8 vs ASSUMPTION-1897
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1911; OPEN-272
+  Testability: testable in-house
+  Risk if wrong: Medium: fixing the wrong cause; a recurring failure as the DB grows.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1181
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-24 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1182:
+  Date surfaced: 2026-10-24
+  Statement: [inferred] A verdict computed from a stale source is presumed current. run_stall reports OK for the daily run from an 18-day-old routine_health.md; the morning check reports live-DB checks as fine because OK rows are not written. Extends PRESUMPTION-1177 (absence read as absence) to staleness read as health: the output carries no freshness stamp on its inputs.
+  Evidence it was operative: 5a1af009; e9bf6be9
+  Why it was unstated: embedded in tooling/practice
+  Type: epistemic
+  Related decisions: PRESUMPTION-1177; PRESUMPTION-1178; ASSUMPTION-1916, -1918
+  Testability: testable via literature
+  Risk if wrong: High: false all-clears on exactly the components no one is watching.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1182
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-24 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1183:
+  Date surfaced: 2026-10-24
+  Statement: [inferred] Writing a proposal is presumed to be the agent's successful output even when the source could not be read. Wolfram's run produced PROP-003 from title and chapter metadata alone and then recommended holding it; 'no readable source' has no outcome of its own short of a speculative card. 'Proposals written' as the headline count smuggles in more-is-better.
+  Evidence it was operative: 4c05d7bb ('1 proposal written'; triplets guessed from chapter titles)
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: ASSUMPTION-1912; PRESUMPTION-1176
+  Testability: testable in-house
+  Risk if wrong: Low: Tom's review catches it, but the review queue (16 pending) grows with cards marked not-to-ingest.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1183
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-24 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Surfaced by the 14b local pass of 2026-10-24. **5 items (1179-1183)**: structural 1 · epistemic 2 · methodological 1 · normative 1; risk High 2 · Medium 2 · Low 1. Checked against 14a 1909-1924 and PRESUMPTION-1170..1178. Not re-surfaced (recurrences): proposal-ID collision, path drift, UTC date keys (1175), Tom-away handling (OPEN-270).*

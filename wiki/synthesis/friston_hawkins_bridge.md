@@ -136,3 +136,19 @@ The disanalogy is equally specific and should be recorded with it. VOCUS2 salien
 **Open question the wiki cannot yet answer:** Do the two accounts make different predictions about backward recall and subspace reuse, and has Monty been run on a variable-direction sequence task?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-05_friston_inferential-planning-frontal-cortex]]
+
+
+---
+
+## Location without evidence
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-23_hawkins_cmp-reference-frame-changes.md` (0 backlinks).
+
+**Why it sits here:** Decoupled location messages beside predictive coding.
+
+**Synthesis claim.** Updating location from movement alone is a prediction made before any sensory feature arrives. That is the generative-model half of the Thousand Brains story.
+
+**Open question the wiki cannot yet answer:** Does Monty's location-only update behave like an unprecedented prediction, and can it be tested?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-23_hawkins_cmp-reference-frame-changes]]

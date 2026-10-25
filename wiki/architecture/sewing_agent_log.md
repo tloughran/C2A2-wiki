@@ -1704,3 +1704,71 @@ A full sewing run for 2026-10-18 is already logged above (10 pages, 44 calls, 18
 **Worth Tom's attention:** this is the third census-type firing on 10-18 (bootstrap audit, the full run, this one). Either the weekly task is registered twice or two schedules overlap. Check the scheduler entries for `c2a2-sewing-agent-weekly`. I did not change any schedule.
 
 *Logged by Sewing Agent on 2026-10-18.*
+
+
+---
+
+## Bootstrap audit census (2026-10-25)
+
+Census only (Phases 3–4 not run, as on prior bootstrap firings). 5,693 pages: 4,772 orphan, 803 sparse, 118 connected (3+). CSV row appended. Report: sewing_agent_bootstrap_2026-10-25.md. Pages processed with calls: 0.
+
+*Logged by Sewing Agent on 2026-10-25.*
+
+
+---
+
+## Run: 2026-10-25 (Sunday, scheduled, ~08:35 UTC)
+
+**Resolver:** same as recent runs (stem, case-insensitive, credited to every file sharing the stem, self-links excluded, node_modules skipped).
+
+### Connectivity snapshot
+
+Pre-run census: orphan 4,774, sparse 803, connected 118, total 5,695. Post-run: 4,762 / 804 / 129. **No new CSV row written:** `connectivity_log.csv` already holds a `2026-10-25` row (4,772 / 803 / 118 / 5,693) from the bootstrap audit earlier today, and a second same-date row would break the series. The two-page gap between the censuses is new cards filed since.
+
+### Pages processed (backlinks before to after), all under `inbox/proposals/pending/`
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity` | 0 | 3 | Wright, Stump, Rohr, Fredrickson, Loughran |
+| `2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage` | 0 | 3 | Wright, Stump, Rohr, Loughran |
+| `2026-10-25_rohr_universal-healing-woodley-salvation-as-healing` | 0 | 3 | Rohr, Stump, Wright, Levin, Loughran |
+| `2026-10-25_rohr_empire-and-christianity-weekly-summary` | 0 | 3 | Rohr, Wright, McGilchrist, Stump, Friston, Loughran |
+| `2026-10-24_wolfram_jon-hernandez-ai-future-interview` | 0 | 4 | Wolfram, Friston, Loughran |
+| `2026-10-24_wolfram_future-of-pure-math-in-age-of-ai` | 0 | 4 | Wolfram, Friston, Hoffman, Loughran, Arkani-Hamed |
+| `2026-10-24_wolfram_ruliobiology-endless-forms` | 0 | 3 | Wolfram, Levin, Carroll, Friston |
+| `2026-10-23_carroll_mindscape-371-harper-last-animal` | 0 | 2 | Carroll, Wolfram, Levin, Loughran |
+| `2026-10-23_hoffman_trace-logic-theory-of-computation` | 0 | 3 | Hoffman, Wolfram, Friston, Arkani-Hamed |
+| `2026-10-23_hawkins_cmp-reference-frame-changes` | 0 | 1 | Hawkins, Friston |
+
+### Agentic calls injected: 42
+
+Wright 4, Rohr 4, Stump 4, Loughran 7, Friston 6, Wolfram 5, Levin 3, Hoffman 2, McGilchrist 1, Fredrickson 1, Carroll 2, Arkani-Hamed 2, Hawkins 1. One call per qualifying thinker per page; none duplicated.
+
+### Bridge notes written (19 sections appended to 12 existing files; none created)
+
+`stump_wright` (2), `wright_rohr` (4), `rohr_stump`, `mcgilchrist_rohr`, `friston_wolfram`, `loughran_wolfram` (2), `hoffman_wolfram` (2), `levin_wolfram`, `carroll_wolfram` (2), `carroll_loughran`, `friston_hoffman`, `friston_hawkins`. Capped at two bridges per page. Each carries a `**Wikilinks (sewing, 2026-10-25):**` line.
+
+### Worth Tom's attention
+
+1. **Evidence caveats ride along.** Both Wright cards and the Hawkins CMP card rest on episode descriptions or forum text, not transcripts or video; the calls tell the thinker agents to verify before promotion. The Hoffman trace-logic paper has no named author or date, so Hoffman's authorship is unconfirmed.
+2. **"Wright" ambiguity.** The task brief's Wright vocabulary (evolutionary psychology, zero-sum) is Robert Wright's; the vault's `wright` tradition is N.T. Wright, and I scored against the vault's tradition, as prior runs did. Consider fixing the brief.
+3. **Duplicate census jobs persist.** The bootstrap audit again wrote today's CSV row before this run; I did not change any schedule.
+4. **Backlog:** 693 inbox/traditions orphans carry no sewing stamp; this run covered the 10 newest. Four 10-23 pending cards (Hawkins roadmap and compositional-objects, Kastrup x2, Friston free markets) remain unprocessed.
+5. **Standing:** orphan count remains dominated by `architecture/` and `inbox/`. Rule 6 token budget exceeded again.
+
+### Verification (fail-loud)
+
+Before writing: each page asserted to have no prior sewing stamp, every wikilink resolved to an existing stem, every bridge file present. After writing: each page has exactly one `## Agentic Calls` heading and one 2026-10-25 stamp; call counts match the table. Content only appended; nothing deleted or overwritten; no HTML, JS or CSS touched; nothing committed.
+
+*Logged by Sewing Agent on 2026-10-25.*
+
+
+---
+
+## Duplicate firing (2026-10-25, ~08:42 UTC): no-op
+
+A full sewing run for 2026-10-25 is already logged above (10 pages, 42 calls, 19 bridge sections), finished about seven minutes before this firing, and `connectivity_log.csv` already holds a 2026-10-25 row. Since that run, only two `.md` files changed: `inbox/PROCESSED_LOG.md` and `master/C2A2_master_wiki.md`. Both are system or index pages, not new orphan cards. Running again would re-process the same backlog and add a second same-date CSV row, so this firing wrote nothing except this note. Pages processed: 0. Calls: 0. Bridges: 0.
+
+**Worth Tom's attention:** this is the third sewing-type firing on 10-25 (bootstrap audit, full run, this one), the same pattern as 10-18. The `c2a2-sewing-agent-weekly` task looks registered more than once, or overlaps another schedule. I did not change any schedule.
+
+*Logged by Sewing Agent on 2026-10-25.*

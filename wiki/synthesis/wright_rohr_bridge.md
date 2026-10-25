@@ -316,3 +316,67 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Open question the wiki cannot yet answer:** Can covenant-membership language be made universal without losing what Wright means by it, and would he say so?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification]]
+
+
+---
+
+## Unity: boundary or dance
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity.md` (0 backlinks).
+
+**Why it sits here:** Wright's unity as a non-optional witness beside Rohr's relational Trinity as the template for communion.
+
+**Synthesis claim.** Both place communion at the centre. Wright says unity is demanded by the story; Rohr says it is the nature of reality. They differ on whether disputes in Romans 14-15 are to be settled or held.
+
+**Open question the wiki cannot yet answer:** Does non-dual union tolerate the practical limits on membership that Wright accepts?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity]]
+
+
+---
+
+## Heaven and earth joined
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage.md` (0 backlinks).
+
+**Why it sits here:** Wright's new creation as heaven and earth joined beside Rohr's sacramental universe.
+
+**Synthesis claim.** The two agree against an escape model of salvation. Wright locates God's presence in a temple-shaped place; Rohr finds it in everything.
+
+**Open question the wiki cannot yet answer:** Where does Wright's temple stop and Rohr's whole creation begin?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage]]
+
+
+---
+
+## Original sin: control or condition
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_rohr_universal-healing-woodley-salvation-as-healing.md` (0 backlinks).
+
+**Why it sits here:** Woodley's critique of original sin as a lever of control, presented by Rohr, beside Wright's inclusion model.
+
+**Synthesis claim.** They agree that salvation is not escape or reward. They part on whether original sin names something real about humans or a tool of power.
+
+**Open question the wiki cannot yet answer:** Can salvation as healing be stated without original sin, and would Wright or Woodley accept that?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_universal-healing-woodley-salvation-as-healing]]
+
+
+---
+
+## Empire and the cross
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_rohr_empire-and-christianity-weekly-summary.md` (0 backlinks).
+
+**Why it sits here:** Rohr's 'I win, therefore I am' beside Wright's Caesar versus Christ.
+
+**Synthesis claim.** Both read the gospel as the inversion of imperial ranking. Wright's account is historical and political; Rohr's is psychological and contemplative, with shadow-ownership as the practice.
+
+**Open question the wiki cannot yet answer:** Is projection onto out-groups the mechanism of imperial religion, or only one symptom of it?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_empire-and-christianity-weekly-summary]]

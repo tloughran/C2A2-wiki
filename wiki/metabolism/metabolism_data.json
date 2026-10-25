@@ -1,21 +1,21 @@
 {
   "_meta": {
-    "generated": "2026-10-24T05:02:58.128924-04:00",
+    "generated": "2026-10-25T05:02:46.852649-04:00",
     "source": "openstory-db",
     "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-    "db_mtime": "2026-10-24T04:58:33.397958",
+    "db_mtime": "2026-10-25T04:52:54.776231",
     "lanes": 33,
-    "total_runs": 4511,
+    "total_runs": 4528,
     "t_min": "2026-03-30T19:09:19.612Z",
-    "t_max": "2026-10-24T08:36:16.074Z",
-    "t_max_event": "2026-10-24T08:37:17.872Z",
+    "t_max": "2026-10-25T08:42:03.835Z",
+    "t_max_event": "2026-10-25T08:42:35.301Z",
     "note": "Prototype. Token data summed from event payloads in open-story.db (both pre/post 2026-04-07 token_usage paths). Thinking: the PRIMARY metric is 'thinking steps (count)' = number of message.assistant.thinking blocks, captured CONTINUOUSLY (every lane from its first run). Two other thinking figures appear in the tooltip but are NOT good headline metrics: 'chars retained' = plaintext length, which is STRIPPED (signature-only, empty) for the majority of agent runs, so it measures text-retention not reasoning; 'audit-tok' = system.thinking_tokens estimated_tokens_delta, audit-emitted and present only on a few June days. All bucketed by session start like every other metric. Yield = wikilinks/files added per day PLUS PRS-triplet yield (first-seen and articulated series) from wiki/ git history and the WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'. Cross-tradition signals/day (yield_signals) are counted from the dated Interactions Level-2 signal stream.",
     "signal_source": {
       "status": "ok",
       "records": 1745,
       "dated": 1745,
       "latest": "2026-10-15",
-      "stale_days": 9
+      "stale_days": 10
     }
   },
   "lanes": [
@@ -25,9 +25,9 @@
       "category": "interactive",
       "thinkers": [],
       "schedule": null,
-      "runs": 1065,
-      "out_total": 47829873,
-      "all_total": 9180622445,
+      "runs": 1067,
+      "out_total": 47894198,
+      "all_total": 9183324122,
       "median_gap_h": 0.1,
       "rows": [
         {
@@ -12410,7 +12410,7 @@
           "sid": "3702ebe3-fab6-4887-9a52-976efe281b59",
           "t": "2026-09-01T16:13:41.941Z",
           "dur_min": 49457.5,
-          "events": 2151,
+          "events": 2301,
           "in": 554,
           "out": 341845,
           "cache_read": 62083954,
@@ -12563,14 +12563,14 @@
         {
           "sid": "97e09d55-22cd-45be-9e36-d1059ffa1149",
           "t": "2026-09-04T15:30:16.635Z",
-          "dur_min": 70598.5,
-          "events": 62055,
+          "dur_min": 71800.3,
+          "events": 64827,
           "in": 46,
           "out": 7620,
           "cache_read": 8062858,
           "cache_creation": 929269,
           "total": 8999793,
-          "thinking_tokens": 46549,
+          "thinking_tokens": 47550,
           "thinking_chars": 0,
           "thinking_blocks": 4
         },
@@ -14901,14 +14901,14 @@
         {
           "sid": "9f0aa768-8384-45e8-8448-b821c0bb1b34",
           "t": "2026-10-23T16:06:59.396Z",
-          "dur_min": 116.9,
-          "events": 875,
+          "dur_min": 1210.8,
+          "events": 1175,
           "in": 524,
           "out": 197905,
           "cache_read": 52890875,
           "cache_creation": 904596,
           "total": 53993900,
-          "thinking_tokens": 51931,
+          "thinking_tokens": 60347,
           "thinking_chars": 0,
           "thinking_blocks": 78
         },
@@ -14939,6 +14939,34 @@
           "thinking_tokens": 0,
           "thinking_chars": 0,
           "thinking_blocks": 6
+        },
+        {
+          "sid": "agent-a9eee839827270a60",
+          "t": "2026-10-25T04:34:24.600Z",
+          "dur_min": 2.3,
+          "events": 38,
+          "in": 44,
+          "out": 28373,
+          "cache_read": 1279680,
+          "cache_creation": 211139,
+          "total": 1519236,
+          "thinking_tokens": 0,
+          "thinking_chars": 0,
+          "thinking_blocks": 6
+        },
+        {
+          "sid": "agent-a3381ab9e7e072cb2",
+          "t": "2026-10-25T04:34:35.125Z",
+          "dur_min": 2.2,
+          "events": 29,
+          "in": 32,
+          "out": 35952,
+          "cache_read": 920416,
+          "cache_creation": 226041,
+          "total": 1182441,
+          "thinking_tokens": 0,
+          "thinking_chars": 0,
+          "thinking_blocks": 3
         }
       ]
     },
@@ -34672,9 +34700,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 23:30",
-      "runs": 141,
-      "out_total": 12182882,
-      "all_total": 897540123,
+      "runs": 142,
+      "out_total": 12223468,
+      "all_total": 901664679,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -36627,7 +36655,7 @@
           "sid": "d4d35131-5041-4d90-bbdd-b7177dd68eea",
           "t": "2026-10-23T15:17:51.859Z",
           "dur_min": 3.0,
-          "events": 82,
+          "events": 102,
           "in": 68,
           "out": 40818,
           "cache_read": 4339144,
@@ -36641,7 +36669,7 @@
           "sid": "ec2e7614-f9f4-4cc5-ab44-d15e82fd2a08",
           "t": "2026-10-24T03:43:43.092Z",
           "dur_min": 2.6,
-          "events": 57,
+          "events": 77,
           "in": 60,
           "out": 33651,
           "cache_read": 3328615,
@@ -36650,6 +36678,20 @@
           "thinking_tokens": 4832,
           "thinking_chars": 0,
           "thinking_blocks": 11
+        },
+        {
+          "sid": "8b6262c8-efc8-4a4a-b57c-d99b4418a7c9",
+          "t": "2026-10-25T03:42:44.013Z",
+          "dur_min": 2.9,
+          "events": 61,
+          "in": 64,
+          "out": 40586,
+          "cache_read": 3696442,
+          "cache_creation": 387464,
+          "total": 4124556,
+          "thinking_tokens": 4217,
+          "thinking_chars": 0,
+          "thinking_blocks": 9
         }
       ]
     },
@@ -36659,9 +36701,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 00:30",
-      "runs": 138,
-      "out_total": 11778174,
-      "all_total": 1018220477,
+      "runs": 139,
+      "out_total": 11820564,
+      "all_total": 1023395412,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -38572,7 +38614,7 @@
           "sid": "856ab00d-dd0e-4ec9-8cf6-5c1675c3187a",
           "t": "2026-10-23T15:18:50.612Z",
           "dur_min": 9.8,
-          "events": 91,
+          "events": 111,
           "in": 66,
           "out": 24495,
           "cache_read": 4050527,
@@ -38586,7 +38628,7 @@
           "sid": "31b81f0f-fe7f-416c-a02f-9e678b85621d",
           "t": "2026-10-24T04:34:13.157Z",
           "dur_min": 4.4,
-          "events": 64,
+          "events": 84,
           "in": 76,
           "out": 38081,
           "cache_read": 4793448,
@@ -38595,6 +38637,20 @@
           "thinking_tokens": 3949,
           "thinking_chars": 503,
           "thinking_blocks": 12
+        },
+        {
+          "sid": "308fd879-0e46-4785-a082-5c1e7c3f9570",
+          "t": "2026-10-25T04:33:14.344Z",
+          "dur_min": 5.1,
+          "events": 65,
+          "in": 76,
+          "out": 42390,
+          "cache_read": 4858059,
+          "cache_creation": 274410,
+          "total": 5174935,
+          "thinking_tokens": 3568,
+          "thinking_chars": 0,
+          "thinking_blocks": 14
         }
       ]
     },
@@ -38604,9 +38660,9 @@
       "category": "project",
       "thinkers": [],
       "schedule": "daily 23:00",
-      "runs": 131,
-      "out_total": 8201006,
-      "all_total": 626370762,
+      "runs": 132,
+      "out_total": 8210931,
+      "all_total": 628931628,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -40419,7 +40475,7 @@
           "sid": "2244d43c-ba45-4e15-bc35-6d125b0310d6",
           "t": "2026-10-23T15:24:50.697Z",
           "dur_min": 1.6,
-          "events": 54,
+          "events": 74,
           "in": 49,
           "out": 8878,
           "cache_read": 2112913,
@@ -40433,7 +40489,7 @@
           "sid": "3b3a2118-ede2-4164-9dcf-2348e46fa27c",
           "t": "2026-10-24T03:04:42.532Z",
           "dur_min": 0.8,
-          "events": 32,
+          "events": 50,
           "in": 37,
           "out": 8481,
           "cache_read": 1597896,
@@ -40442,6 +40498,20 @@
           "thinking_tokens": 1354,
           "thinking_chars": 0,
           "thinking_blocks": 6
+        },
+        {
+          "sid": "4e1788de-13c3-4b41-8dfb-cc92a11f2f9e",
+          "t": "2026-10-25T03:03:43.394Z",
+          "dur_min": 1.3,
+          "events": 40,
+          "in": 52,
+          "out": 9925,
+          "cache_read": 2325874,
+          "cache_creation": 225015,
+          "total": 2560866,
+          "thinking_tokens": 1039,
+          "thinking_chars": 0,
+          "thinking_blocks": 7
         }
       ]
     },
@@ -40451,9 +40521,9 @@
       "category": "project",
       "thinkers": [],
       "schedule": "daily 05:00",
-      "runs": 125,
-      "out_total": 7574229,
-      "all_total": 360497153,
+      "runs": 126,
+      "out_total": 7575328,
+      "all_total": 361042717,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -42196,7 +42266,7 @@
           "sid": "747de513-abaf-448d-8251-0b92fae983de",
           "t": "2026-10-23T15:26:52.529Z",
           "dur_min": 0.6,
-          "events": 38,
+          "events": 56,
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -42205,6 +42275,20 @@
           "thinking_tokens": 399,
           "thinking_chars": 0,
           "thinking_blocks": 0
+        },
+        {
+          "sid": "1871b45f-a6ff-403d-8755-3b608e7ae631",
+          "t": "2026-10-24T09:06:01.425Z",
+          "dur_min": 0.2,
+          "events": 27,
+          "in": 10,
+          "out": 1099,
+          "cache_read": 345938,
+          "cache_creation": 198517,
+          "total": 545564,
+          "thinking_tokens": 201,
+          "thinking_chars": 0,
+          "thinking_blocks": 1
         }
       ]
     },
@@ -42214,9 +42298,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 04:30",
-      "runs": 133,
-      "out_total": 5634546,
-      "all_total": 930271348,
+      "runs": 134,
+      "out_total": 5639670,
+      "all_total": 931982675,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -44057,7 +44141,7 @@
           "sid": "9dd8f8bc-db47-4e60-af6e-6c47b97c5faa",
           "t": "2026-10-23T15:09:55.375Z",
           "dur_min": 3.6,
-          "events": 78,
+          "events": 98,
           "in": 60,
           "out": 24898,
           "cache_read": 5445141,
@@ -44071,7 +44155,7 @@
           "sid": "58722c5f-f051-4769-bbb9-4287a6e39342",
           "t": "2026-10-24T08:36:16.074Z",
           "dur_min": 1.0,
-          "events": 26,
+          "events": 46,
           "in": 28,
           "out": 6768,
           "cache_read": 2060214,
@@ -44080,6 +44164,20 @@
           "thinking_tokens": 1120,
           "thinking_chars": 0,
           "thinking_blocks": 5
+        },
+        {
+          "sid": "82b1e735-a569-4a8a-a409-c593a35fcfde",
+          "t": "2026-10-25T08:36:18.808Z",
+          "dur_min": 0.7,
+          "events": 20,
+          "in": 20,
+          "out": 5124,
+          "cache_read": 1404672,
+          "cache_creation": 301511,
+          "total": 1711327,
+          "thinking_tokens": 1162,
+          "thinking_chars": 224,
+          "thinking_blocks": 4
         }
       ]
     },
@@ -44089,9 +44187,9 @@
       "category": "bridge",
       "thinkers": [],
       "schedule": "daily 18:30",
-      "runs": 129,
-      "out_total": 3700219,
-      "all_total": 405885932,
+      "runs": 130,
+      "out_total": 3704619,
+      "all_total": 407353337,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -45876,7 +45974,7 @@
           "sid": "37623ea1-2699-4219-9013-dc014a5944cf",
           "t": "2026-10-23T15:21:51.445Z",
           "dur_min": 2.0,
-          "events": 59,
+          "events": 79,
           "in": 38,
           "out": 12993,
           "cache_read": 2019461,
@@ -45890,7 +45988,7 @@
           "sid": "73502c24-d60d-4dcf-b872-4e1b1e48172b",
           "t": "2026-10-23T22:41:02.537Z",
           "dur_min": 0.6,
-          "events": 44,
+          "events": 64,
           "in": 34,
           "out": 7046,
           "cache_read": 1851466,
@@ -45899,6 +45997,20 @@
           "thinking_tokens": 1047,
           "thinking_chars": 0,
           "thinking_blocks": 6
+        },
+        {
+          "sid": "e71e68e1-f084-4cfe-8c51-e8c592ea9033",
+          "t": "2026-10-24T22:40:02.832Z",
+          "dur_min": 0.5,
+          "events": 35,
+          "in": 24,
+          "out": 4400,
+          "cache_read": 1179527,
+          "cache_creation": 283454,
+          "total": 1467405,
+          "thinking_tokens": 808,
+          "thinking_chars": 0,
+          "thinking_blocks": 4
         }
       ]
     },
@@ -45908,9 +46020,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "daily 02:30",
-      "runs": 135,
-      "out_total": 2030084,
-      "all_total": 262883277,
+      "runs": 136,
+      "out_total": 2037734,
+      "all_total": 264989869,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -47779,7 +47891,7 @@
           "sid": "97222e33-b870-45a0-85c0-93853df38b74",
           "t": "2026-10-23T15:19:50.120Z",
           "dur_min": 0.6,
-          "events": 46,
+          "events": 66,
           "in": 26,
           "out": 6249,
           "cache_read": 1329672,
@@ -47793,7 +47905,7 @@
           "sid": "49ba89e0-3bed-4c97-a3a6-36ac2d4dd9cd",
           "t": "2026-10-24T06:36:40.317Z",
           "dur_min": 1.2,
-          "events": 44,
+          "events": 64,
           "in": 48,
           "out": 13143,
           "cache_read": 2723682,
@@ -47802,6 +47914,20 @@
           "thinking_tokens": 1497,
           "thinking_chars": 0,
           "thinking_blocks": 8
+        },
+        {
+          "sid": "1b2dcec2-1f37-4c0d-b7e6-241b921a680b",
+          "t": "2026-10-25T06:36:41.404Z",
+          "dur_min": 0.9,
+          "events": 34,
+          "in": 34,
+          "out": 7650,
+          "cache_read": 1890409,
+          "cache_creation": 208499,
+          "total": 2106592,
+          "thinking_tokens": 1280,
+          "thinking_chars": 0,
+          "thinking_blocks": 6
         }
       ]
     },
@@ -49276,7 +49402,7 @@
           "sid": "2d77a60f-aefe-4fe1-84b5-6fe06f96f986",
           "t": "2026-10-23T15:10:53.167Z",
           "dur_min": 1.8,
-          "events": 60,
+          "events": 80,
           "in": 40,
           "out": 17208,
           "cache_read": 2040096,
@@ -49613,7 +49739,7 @@
           "sid": "2c2ca973-1079-4020-b828-e978d9afd713",
           "t": "2026-10-24T07:03:20.842Z",
           "dur_min": 2.6,
-          "events": 70,
+          "events": 90,
           "in": 78,
           "out": 16386,
           "cache_read": 6118735,
@@ -49631,9 +49757,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "Sun 03:30",
-      "runs": 22,
-      "out_total": 1118449,
-      "all_total": 110891618,
+      "runs": 23,
+      "out_total": 1145425,
+      "all_total": 116782073,
       "median_gap_h": 168.0,
       "rows": [
         {
@@ -49943,6 +50069,20 @@
           "thinking_tokens": 1250,
           "thinking_chars": 0,
           "thinking_blocks": 3
+        },
+        {
+          "sid": "ecb06179-5507-406c-98fd-db3d70130781",
+          "t": "2026-10-25T07:38:45.560Z",
+          "dur_min": 3.5,
+          "events": 67,
+          "in": 82,
+          "out": 26976,
+          "cache_read": 5584018,
+          "cache_creation": 279379,
+          "total": 5890455,
+          "thinking_tokens": 5767,
+          "thinking_chars": 0,
+          "thinking_blocks": 17
         }
       ]
     },
@@ -49952,9 +50092,9 @@
       "category": "c2a2-pipeline",
       "thinkers": [],
       "schedule": "Sun 04:30",
-      "runs": 19,
-      "out_total": 1114281,
-      "all_total": 67865523,
+      "runs": 20,
+      "out_total": 1117929,
+      "all_total": 69266895,
       "median_gap_h": 168.0,
       "rows": [
         {
@@ -50222,6 +50362,20 @@
           "thinking_tokens": 564,
           "thinking_chars": 0,
           "thinking_blocks": 5
+        },
+        {
+          "sid": "ec45982c-6756-4f95-bb06-b2dade98b066",
+          "t": "2026-10-25T08:42:03.835Z",
+          "dur_min": 0.5,
+          "events": 19,
+          "in": 22,
+          "out": 3648,
+          "cache_read": 1205594,
+          "cache_creation": 192108,
+          "total": 1401372,
+          "thinking_tokens": 572,
+          "thinking_chars": 0,
+          "thinking_blocks": 4
         }
       ]
     },
@@ -50537,7 +50691,7 @@
           "sid": "753d3df3-8828-4dae-9d70-f1b2e36ed222",
           "t": "2026-10-23T15:10:54.500Z",
           "dur_min": 3.4,
-          "events": 88,
+          "events": 108,
           "in": 72,
           "out": 16963,
           "cache_read": 5284410,
@@ -50861,7 +51015,7 @@
           "sid": "068bbada-455e-4a27-8931-a62adb445abc",
           "t": "2026-10-23T15:13:51.499Z",
           "dur_min": 1.7,
-          "events": 85,
+          "events": 105,
           "in": 66,
           "out": 20945,
           "cache_read": 4700704,
@@ -50879,9 +51033,9 @@
       "category": "bridge",
       "thinkers": [],
       "schedule": "daily 08:45",
-      "runs": 136,
-      "out_total": 688762,
-      "all_total": 166560804,
+      "runs": 137,
+      "out_total": 694114,
+      "all_total": 169159488,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -52778,7 +52932,7 @@
           "sid": "17e87706-c1a4-49eb-9121-e86176d9dcd2",
           "t": "2026-10-23T15:20:50.032Z",
           "dur_min": 0.5,
-          "events": 53,
+          "events": 73,
           "in": 30,
           "out": 3659,
           "cache_read": 1422149,
@@ -52787,6 +52941,20 @@
           "thinking_tokens": 795,
           "thinking_chars": 0,
           "thinking_blocks": 5
+        },
+        {
+          "sid": "344ed23b-5ba8-41b3-95b9-fe096d0b9f6d",
+          "t": "2026-10-24T12:55:46.528Z",
+          "dur_min": 0.6,
+          "events": 55,
+          "in": 46,
+          "out": 5352,
+          "cache_read": 2340801,
+          "cache_creation": 252485,
+          "total": 2598684,
+          "thinking_tokens": 1521,
+          "thinking_chars": 221,
+          "thinking_blocks": 6
         }
       ]
     },
@@ -53144,7 +53312,7 @@
           "sid": "ad8cda19-3f78-4e35-8a6e-49bac18ea5e7",
           "t": "2026-10-23T15:16:00.118Z",
           "dur_min": 3.3,
-          "events": 83,
+          "events": 103,
           "in": 68,
           "out": 15161,
           "cache_read": 5318360,
@@ -53162,9 +53330,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 06:00",
-      "runs": 140,
-      "out_total": 618153,
-      "all_total": 92090820,
+      "runs": 141,
+      "out_total": 625760,
+      "all_total": 93617503,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -55117,7 +55285,7 @@
           "sid": "3d557271-31a5-495b-a690-68a2646b4147",
           "t": "2026-10-23T15:08:08.560Z",
           "dur_min": 1.8,
-          "events": 40,
+          "events": 60,
           "in": 16,
           "out": 6884,
           "cache_read": 701950,
@@ -55126,6 +55294,20 @@
           "thinking_tokens": 513,
           "thinking_chars": 0,
           "thinking_blocks": 3
+        },
+        {
+          "sid": "7a91906c-417e-41e8-a33d-177485bcb24e",
+          "t": "2026-10-24T10:09:19.760Z",
+          "dur_min": 0.7,
+          "events": 40,
+          "in": 26,
+          "out": 7607,
+          "cache_read": 1344305,
+          "cache_creation": 174745,
+          "total": 1526683,
+          "thinking_tokens": 932,
+          "thinking_chars": 0,
+          "thinking_blocks": 6
         }
       ]
     },
@@ -55427,7 +55609,7 @@
           "sid": "973c1744-4e0d-412e-a4e5-9ce5bee3f052",
           "t": "2026-10-23T15:13:05.174Z",
           "dur_min": 5.6,
-          "events": 134,
+          "events": 154,
           "in": 124,
           "out": 48467,
           "cache_read": 11866319,
@@ -55445,9 +55627,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 08:00",
-      "runs": 135,
-      "out_total": 581795,
-      "all_total": 108048871,
+      "runs": 136,
+      "out_total": 585732,
+      "all_total": 109399731,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -57330,7 +57512,7 @@
           "sid": "fc785a86-d928-4c2e-87a1-eb21c60a4192",
           "t": "2026-10-23T15:07:59.700Z",
           "dur_min": 1.6,
-          "events": 37,
+          "events": 59,
           "in": 12,
           "out": 2291,
           "cache_read": 384216,
@@ -57339,6 +57521,20 @@
           "thinking_tokens": 500,
           "thinking_chars": 0,
           "thinking_blocks": 2
+        },
+        {
+          "sid": "77d75931-5352-4ea1-9cb1-09edecc654d2",
+          "t": "2026-10-24T12:08:49.466Z",
+          "dur_min": 1.0,
+          "events": 36,
+          "in": 24,
+          "out": 3937,
+          "cache_read": 1109131,
+          "cache_creation": 237768,
+          "total": 1350860,
+          "thinking_tokens": 828,
+          "thinking_chars": 0,
+          "thinking_blocks": 4
         }
       ]
     },
@@ -57348,9 +57544,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 07:00",
-      "runs": 129,
-      "out_total": 563704,
-      "all_total": 63574803,
+      "runs": 130,
+      "out_total": 573367,
+      "all_total": 64770414,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -59149,7 +59345,7 @@
           "sid": "3c0c048b-97c3-4e10-9d42-573502f07f0d",
           "t": "2026-10-23T15:27:51.466Z",
           "dur_min": 0.5,
-          "events": 42,
+          "events": 62,
           "in": 24,
           "out": 5890,
           "cache_read": 1288704,
@@ -59158,6 +59354,20 @@
           "thinking_tokens": 591,
           "thinking_chars": 0,
           "thinking_blocks": 4
+        },
+        {
+          "sid": "e285f71a-7d21-44b8-bfec-987739bd6cc3",
+          "t": "2026-10-24T11:04:48.639Z",
+          "dur_min": 0.9,
+          "events": 30,
+          "in": 18,
+          "out": 9663,
+          "cache_read": 883076,
+          "cache_creation": 302854,
+          "total": 1195611,
+          "thinking_tokens": 657,
+          "thinking_chars": 0,
+          "thinking_blocks": 3
         }
       ]
     },
@@ -59428,7 +59638,7 @@
           "sid": "05d29d21-bb94-4928-a587-44b8c8cd9fed",
           "t": "2026-10-23T15:31:50.684Z",
           "dur_min": 69.3,
-          "events": 36,
+          "events": 56,
           "in": 10,
           "out": 975,
           "cache_read": 497250,
@@ -59449,9 +59659,9 @@
         "Rohr"
       ],
       "schedule": "Sun 03:04",
-      "runs": 20,
-      "out_total": 537050,
-      "all_total": 77413339,
+      "runs": 21,
+      "out_total": 542554,
+      "all_total": 79388698,
       "median_gap_h": 168.0,
       "rows": [
         {
@@ -59733,6 +59943,20 @@
           "thinking_tokens": 1822,
           "thinking_chars": 0,
           "thinking_blocks": 10
+        },
+        {
+          "sid": "d3c45a49-6c6f-479b-94d8-5982c731a6b4",
+          "t": "2026-10-25T07:14:38.117Z",
+          "dur_min": 1.3,
+          "events": 27,
+          "in": 37,
+          "out": 5504,
+          "cache_read": 1649096,
+          "cache_creation": 320722,
+          "total": 1975359,
+          "thinking_tokens": 1215,
+          "thinking_chars": 0,
+          "thinking_blocks": 5
         }
       ]
     },
@@ -60076,7 +60300,7 @@
           "sid": "e26b52a4-27c0-4947-a1ac-053bf6ae921a",
           "t": "2026-10-23T15:14:51.353Z",
           "dur_min": 2.4,
-          "events": 73,
+          "events": 93,
           "in": 54,
           "out": 10217,
           "cache_read": 4121165,
@@ -60355,7 +60579,7 @@
           "sid": "e9c79ead-6428-463d-9ef5-baeab8002439",
           "t": "2026-10-23T15:29:52.318Z",
           "dur_min": 1.8,
-          "events": 52,
+          "events": 72,
           "in": 34,
           "out": 15089,
           "cache_read": 2409519,
@@ -60690,7 +60914,7 @@
           "sid": "7f62c82a-9d7a-43b9-bd02-ebd90f7b316c",
           "t": "2026-10-23T15:08:04.005Z",
           "dur_min": 1.8,
-          "events": 41,
+          "events": 59,
           "in": 16,
           "out": 8886,
           "cache_read": 765982,
@@ -61011,7 +61235,7 @@
           "sid": "bbadc9a1-3e3f-40e6-b4d0-c2b74b8cc101",
           "t": "2026-10-23T15:21:51.457Z",
           "dur_min": 79.3,
-          "events": 41,
+          "events": 61,
           "in": 10,
           "out": 4775,
           "cache_read": 445142,
@@ -61290,7 +61514,7 @@
           "sid": "fe74a5be-9b2d-417e-a5db-3fb7fc9e9b0d",
           "t": "2026-10-23T16:58:23.992Z",
           "dur_min": 7.0,
-          "events": 56,
+          "events": 76,
           "in": 42,
           "out": 5840,
           "cache_read": 2187638,
@@ -61541,7 +61765,7 @@
           "sid": "4f23cb9f-6da1-4808-8b1b-7a29a786ab71",
           "t": "2026-10-23T15:28:52.914Z",
           "dur_min": 72.3,
-          "events": 39,
+          "events": 59,
           "in": 14,
           "out": 2833,
           "cache_read": 780980,
@@ -61698,9 +61922,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 06:30",
-      "runs": 123,
-      "out_total": 53674,
-      "all_total": 42276856,
+      "runs": 124,
+      "out_total": 54270,
+      "all_total": 42987541,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -63415,7 +63639,7 @@
           "sid": "dc6ebc28-f04d-4415-ab60-f873db657d11",
           "t": "2026-10-23T15:28:52.870Z",
           "dur_min": 0.2,
-          "events": 32,
+          "events": 52,
           "in": 8,
           "out": 382,
           "cache_read": 454884,
@@ -63424,6 +63648,20 @@
           "thinking_tokens": 0,
           "thinking_chars": 0,
           "thinking_blocks": 0
+        },
+        {
+          "sid": "42ddecf0-0ed1-42d6-af20-4faeb912e7f6",
+          "t": "2026-10-24T10:36:41.957Z",
+          "dur_min": 0.3,
+          "events": 27,
+          "in": 10,
+          "out": 596,
+          "cache_read": 603767,
+          "cache_creation": 106312,
+          "total": 710685,
+          "thinking_tokens": 199,
+          "thinking_chars": 0,
+          "thinking_blocks": 1
         }
       ]
     },
@@ -66242,6 +66480,18 @@
     },
     {
       "date": "2026-10-24",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 6,
+      "commits": 5,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
+    },
+    {
+      "date": "2026-10-25",
       "links_added": 0,
       "links_removed": 0,
       "files_added": 0,

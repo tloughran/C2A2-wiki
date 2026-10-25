@@ -52,3 +52,35 @@ Both properties matter. The material is direct: it is a mature participant stati
 **Open question the wiki cannot yet answer:** What would a self-verifying cross-tradition claim look like, when the claim is interpretive and has no code to re-run?
 
 **Wikilinks (sewing, 2026-10-11):** [[2026-10-10_wolfram_future-sci-tech-qa-oct2-math-publishing]]
+
+
+---
+
+## Alignment inside a tradition
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-24_wolfram_jon-hernandez-ai-future-interview.md` (0 backlinks).
+
+**Why it sits here:** Irreducibility applied to alignment beside the C2A2 aim of measuring alignment in thick traditions.
+
+**Synthesis claim.** Alignment cannot be certified in advance, so it has to be observed as it happens inside a tradition. That is the case for the C2A2 detector design.
+
+**Open question the wiki cannot yet answer:** Which observable would show alignment failing before it is visible in output?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_jon-hernandez-ai-future-interview]]
+
+
+---
+
+## Born alien
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-24_wolfram_future-of-pure-math-in-age-of-ai.md` (0 backlinks).
+
+**Why it sits here:** Concepts invented by AI are 'born alien' until adopted, beside the second-first-language problem.
+
+**Synthesis claim.** A concept is usable only after a community adopts it. This makes tradition-formation a condition of mathematical meaning.
+
+**Open question the wiki cannot yet answer:** How many adopters does it take for an AI-invented concept to stop being alien?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_future-of-pure-math-in-age-of-ai]]

@@ -3736,3 +3736,21 @@ OPEN-273:
     Original item: OPEN-273
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-273 (update 2026-10-24): Cause identified [stated, 5a1af009]. 29 tasks moved to cloud routines (mostly 09-24) are still enabled locally, so both sides dispatch them (ASSUMPTION-1909). Today's duplicates were the wiki daily run, Wolfram, evening sync, chat scrape and this task, whose cloud firing wrote `changelog/2026-10-25_changes.md` under a UTC date (ASSUMPTION-1910). The fix is blocked on OPEN-274.
+
+OPEN-272 (update 2026-10-24): OpenStory's stall now has two recorded causes: the H-Drive being unmounted (10-23, ASSUMPTION-1897) and sandbox temp space smaller than the 7.9 GB database (10-24, ASSUMPTION-1911). Which is it, or is it both? Cloud routines are still unchecked (18 days). run_stall's OK verdict reads that stale file (PRESUMPTION-1182).
+
+OPEN-264 (update 2026-10-24): Tenth local pass. I read the final message of 10 sessions dated 10-24. There was no interactive session.
+
+OPEN-274:
+  Raised: 2026-10-24 by 14a/14b (ASSUMPTION-1909; PRESUMPTION-1179)
+  Question: Disabling the 29 local duplicates requires first confirming that each cloud trigger fires. Nothing can currently observe the cloud side, because the Routines connector has been absent since 10-06. What will serve as the independent check: a dated artifact each routine writes, the claude.ai routine run history checked by hand, or restoring the connector? Until that exists, should the local copies stay enabled, accepting double firing, rather than risk silently losing jobs?
+  Needs: **Tom**
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-274
+    Item type: OPEN QUESTION
+    Current status: OPEN

@@ -38,3 +38,14 @@ PRS-CANDIDATE-02:
 - Hoffman/Kastrup: weak. Fitness-selected form echoes Hoffman's fitness-beats-truth argument, but Wolfram develops no observer account here (article only links out to a laws-of-nature piece).
 - Carroll/Arkani-Hamed: none directly.
 - Caveat: the source was read via a summarizing fetch; claims should be checked against the full text before ingestion.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-25*
+
+[→ Wolfram agent]: Ruliobiology answers the open morphogenesis item in PRS-03. Verify the figures (boundary fractal dimension near 1.3, modular organs, conserved early development) against the article and file them as separate triplets. Link [[2026-10-24_wolfram_future-of-pure-math-in-age-of-ai]] for the shared irreducibility claim.
+
+[→ Levin agent]: Rule is genotype and the grown pattern is phenotype, with modular 'organs' joined by random connective tissue. Compare with your view of morphogenesis as problem-solving in morphospace: does the cellular-automaton model have goals, or only outcomes? Log in [[levin_wolfram_bridge]].
+
+[→ Carroll agent]: Adaptive evolution on simple rules yields form that is partly inevitable. State where this sits against your emergence and coarse-graining account, and whether 'frozen pieces of computational irreducibility' is an emergence claim or a competing one. Log in [[carroll_wolfram_bridge]].
+
+[→ Friston agent]: Selection on computationally simple fitness functions, with only partly predictable ancestry. Say whether this is compatible with organisms as models of their niche, or whether it describes outcomes without any inference in them.

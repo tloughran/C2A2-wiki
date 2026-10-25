@@ -61,3 +61,19 @@
 **Open question the wiki cannot yet answer:** What is the false-positive rate of the detector on a set of salted bridges, and has anyone measured it?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint]]
+
+
+---
+
+## Moral choice and collective behaviour
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-23_carroll_mindscape-371-harper-last-animal.md` (0 backlinks).
+
+**Why it sits here:** Carroll's question about moral choice changing collective behaviour beside tradition-formation.
+
+**Synthesis claim.** A moral choice changes a collective only if a tradition carries it. That links the episode to how communities form and shift.
+
+**Open question the wiki cannot yet answer:** What evidence would show a tradition changing collective behaviour, not just describing it?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-23_carroll_mindscape-371-harper-last-animal]]

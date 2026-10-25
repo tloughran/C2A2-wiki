@@ -85,3 +85,19 @@ Levin's own use of the meta-analysis is defensive — it converts "you are wrong
 **Open question the wiki cannot yet answer:** What counts as an instance of the ratchet, formally enough to be counted? Levin's ratchet is stated in terms of goal-directedness, competence and light-cone size, none of which has an operational definition over abstract network rules. Without one, a sampling study measures whatever the operationalization smuggled in, and the result will be attributed to the world rather than to the definition. **Specifying the observable is the load-bearing work here, not running the sample**, and neither tradition's register has done it.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-12_wolfram_summer-research-institute-2026-keynote]]
+
+
+---
+
+## Rule, pattern and goal
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-24_wolfram_ruliobiology-endless-forms.md` (0 backlinks).
+
+**Why it sits here:** Ruliobiology's genotype/phenotype split beside Levin's morphogenesis as problem-solving.
+
+**Synthesis claim.** Both explain form without a blueprint. Ruliobiology gets form from selection on simple rules; Levin gets it from a collective that has a target.
+
+**Open question the wiki cannot yet answer:** Do rulioorganisms ever show goal-directed repair, or only fixed outcomes?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_ruliobiology-endless-forms]]

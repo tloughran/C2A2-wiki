@@ -51693,3 +51693,75 @@ DISPOSITION-1097:
 - 15a and 15b ran as separate subagents; each reported it did not open the other direction's directory or this file. Each wrote only its result file; the orchestrator wrote all register appends and queue tags.
 - Read in full: 15a — Hu et al. 2019 abstract, Cochrane MR000053. 15b — PMC7431973, ARLIS/NA–VRA attribution qualifiers. Vaughan, Dekker, Sunstein, PRISMA 2020 text and archival policies were snippet/secondary only on both sides.
 - Both sides rate the search preliminary (6 searches each; 2 fetches each).
+
+
+## 2026-10-25 — 15a/15b returns and 15c dispositions (run cowork-308fd879-2026-10-25)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1179
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Zalando Engineering, "Parallel Run Pattern" (2021; read in full), quoting Newman, Monolith to Microservices
+  Summary: Verify-before-decommission is standard: the old path stays authoritative until a measured check trusts the new one. Little support for requiring a verifier independent of both paths (only a regulator-imposed third-party monitor in the FairPoint/Verizon cutover). NOVELTY-FLAG (configuration-level): no source on cutover after the destination's verification instrument is lost mid-migration.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1179_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1179
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (against "unsatisfiable" and the independent-observer bar); Weak (against the core no-verification worry)
+  Key source: Beyer et al. 2016, Site Reliability Engineering, ch. 6 (read in full): black-box monitoring = "testing externally visible behavior as a user would see it"
+  Specific risk: both paths stay on indefinitely ("permanence") writing the same outputs; without a path tag an output check cannot tell which fired.
+  Summary: Losing the Routines connector removes white-box observation, not verification; effect-based checks on cloud-routine outputs remain possible. Shadow-testing practice (Diffy; snippet) verifies with migration tooling, not an independent observer.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1179_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1182
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate-to-Strong (strong that staleness/absent signal is a recognised failure mode; moderate that each verdict should carry its input's age)
+  Key source: SRE Workbook Appendix A freshness SLI (snippet); heartbeat / dead-man's-switch practice; dbt source freshness (snippet)
+  Summary: Staleness hiding behind a healthy-looking output is a named failure; defences are measured freshness and absence alerts. Beyer ch. 6 fetch returned nothing, so the item's anchor is unconfirmed by 15a. No NOVELTY-FLAG.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1182_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1182
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (against the remedy/wording "each verdict carries input age"); None (against the diagnosis)
+  Key source: Beyer et al. 2016, SRE ch. 6 (no freshness stamps; keep monitoring simple); Prometheus staleness/lookback + absent_over_time (snippets)
+  Specific risk: an "OK, 18 days old" stamp can still be read as OK; expiring stale inputs converts them to missing data, so the fix depends on PRESUMPTION-1177 (absence must alarm).
+  Summary: Nothing found licensing an OK verdict from an 18-day-old input. Mainstream practice blocks stale-input verdicts by expiry plus a separate heartbeat alert rather than stamping each verdict. SYSTEMIC-RISK candidate (in the against file, no flag file): 1177, 1179, 1182 all infer health from no-bad-signal rather than a positive, timestamped heartbeat.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1182_against.md
+
+DISPOSITION-1098:
+  Date: 2026-10-25
+  Item: PRESUMPTION-1179
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED   15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (weak against the core gap)
+  Net assessment: Both sides agree a migration is not done when the destination exists and that the old path must stay until the new one is verified. 15b defeats the item's strongest step: verification is not "unsatisfiable" — effect-based (black-box) checks on cloud-routine outputs need no Routines connector. Neither side supports requiring an observer independent of both paths.
+  Disposition: REVISE (REVISE-523, Medium)
+  Reasoning: The narrowed claim — cutovers here have no gating check and no end date, so local and cloud copies have run in parallel for a month — is confirmed from both sides, and harm is already on record (10-01 and 10-15 concurrent lit-pipeline runs overwrote results). That is a design gap, not mixed evidence, matching the 10-23/10-24 treatment (gap confirmed both ways → REVISE). 15a's configuration-level NOVELTY-FLAG ("unverifiable cutover" state) is recorded in REVISE-523's action rather than as a separate MONITOR, since the remedy (output-based verification) closes it.
+  Consistency: no INCORPORATE issued. Consistent with PREMISE-086 (staleness/absence is the signal). Shares the heartbeat remedy with REVISE-524.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1179 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1179_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1179_against.md
+
+DISPOSITION-1099:
+  Date: 2026-10-25
+  Item: PRESUMPTION-1182
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED             15a strength: Moderate-to-Strong
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (against remedy only; none against diagnosis)
+  Net assessment: Both sides agree that an OK verdict computed from an 18-day-old input is a failure. They differ only on the remedy: 15a favours freshness stamping; 15b shows mainstream practice expires stale inputs to STALE/UNKNOWN and pairs that with an absent-signal alarm, and warns a stamp alone can still be read as OK.
+  Disposition: REVISE (REVISE-524, Medium)
+  Reasoning: This is non-conformance with an ACTIVE premise, not an open question: PREMISE-086 (2026-06-27) already requires alarming on AGE, explicitly not merely displaying the last value. run_stall reading routine_health.md at 18 days and returning OK violates that condition. 15b's challenge sharpens the remedy (expire, don't just stamp) and agrees with PREMISE-086's CONDITIONAL clause, so no premise conflict. Not INCORPORATE — the premise already exists; the gap is in implementation.
+  Consistency: checked against PREMISE-086 — consistent; PREMISE-086 stays ACTIVE, this item records a breach of it. Related to REVISE-147 (external heartbeat, High, open since 06-26) and PRESUMPTION-1177.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1182 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1182_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1182_against.md
+
+### Evidence-quality notes (2026-10-25)
+- 15a and 15b ran as separate subagents; each reported it did not open the other direction's directory or this file. Each wrote only its two result files; the orchestrator wrote all register appends and queue tags.
+- Read in full: 15a — Zalando "Parallel Run Pattern". 15b — SRE Book ch. 6. 15a's fetch of SRE ch. 6 returned no content (asymmetry noted). Newman, SRE Workbook, Prometheus, dbt, Diffy: snippet/secondary only.
+- Both sides rate the search preliminary (15a 8 searches/2 fetch attempts; 15b 6 searches/1 fetch).

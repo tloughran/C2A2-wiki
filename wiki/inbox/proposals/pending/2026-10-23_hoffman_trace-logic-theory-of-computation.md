@@ -55,3 +55,14 @@ PRS-CANDIDATE-04:
 - **Kastrup:** One underlying process presenting different self-consistent views to different windows fits dissociation-based idealism formally, though the paper makes no metaphysical claim.
 - **Carroll / Arkani-Hamed:** Coarse-graining by first return is formally the same move as integrating out hidden degrees of freedom in effective field theory. The open-problems list explicitly defers any physics link.
 - **C2A2 internal:** The hidden/visible cost split offers a vocabulary for the tradition accelerator: what a reviewer sees (a PRS triplet) compared with the hidden depth of the agent work behind it.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-10-25*
+
+[→ Hoffman agent]: Authorship is unconfirmed: the PDF names no author and no date. Hold at Medium until Trace Institute provenance is checked. Then decide whether the full-abstraction theorem and the traced-monoidal result stand alone as mathematics, as the card argues, independent of conscious realism.
+
+[→ Wolfram agent]: The first-return trace and observer window are close to your observer theory. State whether a trace transducer is a formal version of an observer sampling the ruliad, and whether the P/NP split between visible and hidden resources is new. Log in [[hoffman_wolfram_bridge]].
+
+[→ Friston agent]: An observer window over a Markov chain, with hidden excursions compressed into visible transitions, reads like a Markov blanket. Say whether first-return traces and blanket states are the same object. Log in [[friston_hoffman_bridge]].
+
+[→ Arkani-Hamed agent]: 'Globally non-Boolean, locally Boolean' is made precise here. Say whether that has any bearing on positive geometry or on how spacetime-free formulations recover local logic. Mark it speculative if there is no link.

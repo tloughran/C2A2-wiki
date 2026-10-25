@@ -134,3 +134,19 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 **Open question the wiki cannot yet answer:** Does a mode of attention that reveals kinship have any test that does not already assume the kinship it reveals?
 
 **Wikilinks (sewing, 2026-10-11):** [[2026-10-11_rohr_francis-natural-world-weekly-summary-creation-as-kin]]
+
+
+---
+
+## Pyramid and wound
+*Sewing Agent, 2026-10-25*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-25_rohr_empire-and-christianity-weekly-summary.md` (0 backlinks).
+
+**Why it sits here:** Winner/loser ranking as left-hemisphere pyramid-making beside Rohr's religion of the wound.
+
+**Synthesis claim.** If the pyramid is a left-hemisphere construct, then the risen Christ who keeps wounds is a right-hemisphere reframe of what counts as whole.
+
+**Open question the wiki cannot yet answer:** Is there an observable difference in attention between a wound-owning and a winner-identified person?
+
+**Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_empire-and-christianity-weekly-summary]]
