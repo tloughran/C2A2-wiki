@@ -430,6 +430,7 @@ function rebuild() {
     .map(e => ({ source: idOf(e.source), target: idOf(e.target), weight: e.weight }));
   document.getElementById('stats').textContent = visNodes.length + ' communities · ' + visEdges.length + ' edges';
   render();
+  reapplyLens();
 }
 
 function idOf(x) { return (typeof x === 'object') ? x.id : x; }
@@ -440,6 +441,7 @@ function render() {
   const links = gLinks.selectAll('line').data(visEdges, e => idOf(e.source) + '|' + idOf(e.target));
   links.exit().remove();
   const linksEnter = links.enter().append('line')
+    .attr('class', 'link-line')
     .attr('stroke', '#3a3a52')
     .attr('stroke-opacity', e => Math.min(0.85, 0.25 + e.weight * 2.2))
     .attr('stroke-width', e => 0.6 + e.weight * 5)
@@ -450,6 +452,7 @@ function render() {
   const nodes = gNodes.selectAll('circle').data(visNodes, n => n.id);
   nodes.exit().remove();
   const nodesEnter = nodes.enter().append('circle')
+    .attr('class', 'node-circle')
     .attr('r', n => 4 + Math.sqrt(degree[n.id] || 0) * 1.6)
     .attr('fill', n => TYPE_COLORS[n.type] || '#888')
     .attr('stroke', n => n.prs_quality >= 3 ? '#e8d9a0' : '#0a0a0f')
@@ -581,8 +584,26 @@ document.getElementById('btn-fit').addEventListener('click', () => {
 // "focus:" is a deterministic relational command over the 8 community types,
 // "Ask AI" routes through the shared C2A2 broker pipeline (c2a2-search.js,
 // inlined above). The lens only touches opacity on already-rendered nodes;
-// it never changes activeTypes / q3Only and silently resets on rebuild().
+// it never changes activeTypes / q3Only. A filter change (rebuild) RE-APPLIES
+// the standing lens to the new visible set rather than leaving it half-applied
+// (search-and-dialogue review, tab 2, 2026-10-25).
 const searchInput = document.getElementById('search-input');
+
+// What the lens is showing, as data -- the find contract reads this instead of
+// scraping opacities. `var`, not `let`: rebuild() runs before this line at load.
+var LENS_SET = {};      // ids the last applyLens highlighted
+var SEARCH_CUT = null;  // { query, ids } from the box / the shell's find; null = nothing cut
+var AI_LENS = null;     // ids an Ask AI answer highlighted -- NOT a contract cut (Phase 3 `ask`)
+function noteCut(query) {
+  const ids = Object.keys(LENS_SET);
+  SEARCH_CUT = ids.length ? { query: String(query || ''), ids: ids } : null;
+  AI_LENS = null;
+}
+function clearCut() { SEARCH_CUT = null; AI_LENS = null; }
+function reapplyLens() {
+  if (SEARCH_CUT) { runSearchLocal(SEARCH_CUT.query); return; }
+  if (AI_LENS) { const picked = AI_LENS; applyLens(n => picked[n.id]); }
+}
 const statusEl = document.getElementById('search-status');
 
 function setStatus(msg) {
@@ -600,6 +621,7 @@ function lensReset() {
 function applyLens(matchFn) {
   const inSet = {};
   visNodes.forEach(n => { if (matchFn(n)) inSet[n.id] = true; });
+  LENS_SET = inSet;
   gNodes.selectAll('circle').interrupt().attr('opacity', n => inSet[n.id] ? 1 : 0.08);
   gLinks.selectAll('line').interrupt().attr('opacity', e => (inSet[idOf(e.source)] && inSet[idOf(e.target)]) ? 1 : 0.05);
   return Object.keys(inSet).length;
@@ -628,17 +650,17 @@ function runFocus(afterPrefix) {
     const one = resolveTypeSide(sides[0]);
     if (!one.size) {
       setStatus('Focus syntax: focus: <type> ~ <type> (e.g. "focus: civic ~ scientific") or focus: <type> to isolate one. Types: ' + TYPE_LIST.join(', ') + '.');
-      return;
+      return false;
     }
     const count = applyLens(n => one.has(n.type));
     setStatus('Focus "' + [...one].join(', ') + '": highlighted ' + count + ' communities. Clear to restore.');
-    return;
+    return true;
   }
   const A = resolveTypeSide(sides[0]);
   const B = resolveTypeSide(sides[1]);
   if (!A.size || !B.size) {
     setStatus('Focus: could not resolve a community type on each side of "~". Types: ' + TYPE_LIST.join(', ') + '.');
-    return;
+    return false;
   }
   const cross = {};
   visEdges.forEach(e => {
@@ -649,6 +671,7 @@ function runFocus(afterPrefix) {
   const count = applyLens(n => cross[n.id]);
   if (!count) setStatus('Focus "' + lbl + '": no cross-type links among visible communities. Check the type filters at left.');
   else setStatus('Focus "' + lbl + '": isolated ' + count + ' communities linked across the two type sets. Clear to restore.');
+  return true;
 }
 
 const C2A2_CE_SYSTEM_DATASET = 'You are a retrieval assistant for the C2A2 Community Explorer. Each candidate line is a community: id | name | type | excerpt. Pick the most relevant ids and write a brief grounded answer using ONLY the candidates. Reply with ONE JSON object and nothing else: {"ids":["<id>", ... up to 12 most relevant], "answer":"2-3 sentence summary grounded in the candidates"}.';
@@ -702,6 +725,8 @@ function runSearchAI(rawQuery) {
     const pickedSet = {};
     pickedIds.forEach(id => pickedSet[id] = true);
     applyLens(n => pickedSet[n.id]);
+    clearCut();
+    AI_LENS = pickedSet;
 
     const modeLabel = res.mode === 'database-plus-web-cited' ? ' [web + database]'
       : res.mode === 'database-only-after-cap' ? ' [database -- web cap reached]'
@@ -721,21 +746,66 @@ function runSearchAI(rawQuery) {
   });
 }
 
+// Inside the explorer shell (which defines CCLRun) the box hands its text to
+// the shell. Standalone, or nested anywhere else, it searches here.
+function inShell() {
+  try { return window.parent !== window && typeof window.parent.CCLRun === 'function'; } catch (e) { return false; }
+}
+
+// THE SEARCH BOX IS AN ALIAS OF THE SHELL'S `find` (same shape as the
+// Sociogram, tab 1). Embedded, the box posts its text to the shell, which runs
+// the journaled, undoable `find` a typed or spoken command would and calls back
+// into c2a2Find below. Standalone it searches here, unjournaled. "Ask AI" keeps
+// its own road until the `ask` verb exists (Phase 3). One search per tab, ever.
 function runSearch() {
   const raw = searchInput.value.trim();
-  if (!raw) { lensReset(); setStatus(''); return; }
   // Deterministic relational focus command; explicit prefix never collides
   // with substring search, and overrides AI mode (same rule as Sociogram).
-  if (raw.toLowerCase().indexOf('focus:') === 0) {
-    runFocus(raw.slice(raw.indexOf(':') + 1));
+  const aiBox = document.getElementById('search-ai-mode');
+  const wantAI = !!(aiBox && aiBox.checked) && raw && raw.toLowerCase().indexOf('focus:') !== 0;
+  if (!wantAI && inShell()) {
+    window.parent.postMessage({ source: 'c2a2-tab', type: raw ? 'find' : 'clear', text: raw }, '*');
     return;
   }
-  const aiBox = document.getElementById('search-ai-mode');
-  if (aiBox && aiBox.checked) { runSearchAI(raw); return; }
+  if (wantAI) { runSearchAI(raw); return; }
+  runSearchLocal(raw);
+}
+
+// The deterministic core: no network, no checkbox. Reset, focus:, substring
+// search -- and the road the shell's `find` takes through c2a2Find.
+function runSearchLocal(raw) {
+  raw = String(raw || '').trim();
+  if (!raw) { clearCut(); lensReset(); setStatus(''); return; }
+  if (raw.toLowerCase().indexOf('focus:') === 0) {
+    if (runFocus(raw.slice(raw.indexOf(':') + 1))) { noteCut(raw); }
+    return;
+  }
   const q = raw.toLowerCase();
   const count = applyLens(n => nodeHaystack(n).indexOf(q) !== -1);
+  noteCut(raw);
   setStatus('Search "' + raw + '": ' + count + ' of ' + visNodes.length + ' visible communities. Clear to restore.');
 }
+
+// ── THE FIND CONTRACT (three functions the explorer shell calls) ──
+// c2a2Find(text)  -> { query, ids, count, label }   deterministic; this page's own search
+// c2a2Clear()     -> void                            restore; idempotent
+// c2a2ReadCut()   -> { query, ids } | null           what is cut right now, as data
+// Graph sub-view only: on the Cards sub-view these still answer for the graph
+// (tab 3 adds the dispatch to the active sub-view).
+window.c2a2Find = function (text) {
+  const q = String(text || '').trim();
+  searchInput.value = q;
+  runSearchLocal(q);
+  const c = SEARCH_CUT;
+  return { query: q, ids: c ? c.ids.slice() : [], count: c ? c.ids.length : 0, label: 'communities shown' };
+};
+window.c2a2Clear = function () {
+  searchInput.value = '';
+  runSearchLocal('');
+};
+window.c2a2ReadCut = function () {
+  return SEARCH_CUT ? { query: SEARCH_CUT.query, ids: SEARCH_CUT.ids.slice() } : null;
+};
 
 // ── Tabs help modal ("?" beside the Graph|Cards toggle) ───────────────────
 // Text mirrors wiki/architecture/explorer_tabs_complementarity.md (the source

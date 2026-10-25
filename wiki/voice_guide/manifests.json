@@ -874,9 +874,11 @@
         "undo",
         "redo",
         "reset",
-        "restore"
+        "restore",
+        "find",
+        "clear"
       ],
-      "_caps_note": "Increment 1 reached and walked the cards. Increment 2 adds the GRAPH sub-view's own dimensions: the eight type filters (show/hide/only/all/none and the journal verbs that ride on them), the Q3 gate as a knob, Fit All, and a roster of the graph's nodes with open/close. Still absent and still deferred below with their real blockers: find (the tab's search HIGHLIGHTS rather than filters, so the Sociogram's opacity-derived read would call a dimmed node gone), and zoom/pan (d3's behaviour is a lexical const here, so the only road is synthetic wheel/mouse events on #graph).\nCaps are per TAB and the rosters here are per SUB-VIEW, so `open` and `fit` are advertised on the cards view too and refuse there by name. That refusal is the honest one, not a leak of the Sociogram's function names -- see the `when` gates on `filters` and `camera`.",
+      "_caps_note": "Increment 1 reached and walked the cards. Increment 2 adds the GRAPH sub-view's own dimensions: the eight type filters (show/hide/only/all/none and the journal verbs that ride on them), the Q3 gate as a knob, Fit All, and a roster of the graph's nodes with open/close. find/clear arrived with the tab contract (search-and-dialogue tab 2, 2026-10-25): the shell takes the id set from c2a2Find's return value, never from opacities, so a dimmed node is no longer read as gone. Still absent and still deferred below with its real blocker: zoom/pan (d3's behaviour is a lexical const here, so the only road is synthetic wheel/mouse events on #graph).\nCaps are per TAB and the rosters here are per SUB-VIEW, so `open` and `fit` are advertised on the cards view too and refuse there by name. That refusal is the honest one, not a leak of the Sociogram's function names -- see the `when` gates on `filters` and `camera`.",
       "knobs": [
         {
           "id": "exemplary",
@@ -1047,6 +1049,11 @@
           "dim": "selection",
           "match": "#rp-close",
           "note": "close -- the right panel. Named by the graph items spec, so the audit counts it there. (A span, so not actually swept; listed for the reader.)"
+        },
+        {
+          "dim": "highlight",
+          "match": "#search-input, #btn-search, #btn-clear",
+          "note": "find / clear -- the box is an alias of the shell's find, answered through the c2a2Find contract (tab 2, 2026-10-25)"
         }
       ],
       "controls_deferred": [
@@ -1054,11 +1061,6 @@
           "match": "#tab-graph, #tab-cards",
           "reason": "reachable BY NAME via `go graph` / `go cards`, but the sweep matches elements not verbs, so they are listed here to stay visible in the count",
           "next": "n/a -- covered by the views declaration above"
-        },
-        {
-          "match": "#search-input, #btn-search, #btn-clear",
-          "reason": "find/clear on the tab's graph. NOT the same shape as the Sociogram's: search here HIGHLIGHTS and never filters (applyLens dims non-matches to 0.08 and rebuild() silently resets it -- 2026-05-29 lock), so the shell's `find`, whose class stamp is read off SVG opacities, would call every dimmed node gone. The cut dimension has to learn 'highlighted, not hidden' before this is honest.",
-          "next": "voice guide: a highlight-that-is-not-a-cut, alongside the Sociogram's find generalisation"
         },
         {
           "match": "#btn-hold, #btn-names",
