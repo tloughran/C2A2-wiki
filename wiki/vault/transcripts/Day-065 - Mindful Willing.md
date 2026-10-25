@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-065 - Mindful Willing - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-10-12T16:17:40"
+last_qc_at: "2026-10-24T04:17:50"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/065, pars/I-II, q/8, q/9]

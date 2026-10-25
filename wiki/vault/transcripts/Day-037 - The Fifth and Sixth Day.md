@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-037 - The Fifth and Sixth Day - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-10-16T00:17:42"
+last_qc_at: "2026-10-24T04:17:49"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/037, pars/I, q/71, q/72, theme/genesis, theme/creation, theme/image-of-god]

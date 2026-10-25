@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-101 - Satan's Influence - Contemporary]]"
 tags: [summa, day/101, pars/I-II, q/80-81]
 fidelity_checked: true
-last_qc_at: "2026-10-14T16:17:13"
+last_qc_at: "2026-10-24T20:16:57"
 last_qc_outcome: "pass"
 ---
 # Day 101 — Satan's Influence

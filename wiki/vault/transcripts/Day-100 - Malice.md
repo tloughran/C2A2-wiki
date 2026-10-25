@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-100 - Malice - Contemporary]]"
 tags: [summa, day/100, pars/I-II, q/78, q/79]
 fidelity_checked: true
-last_qc_at: "2026-10-06T14:27:02"
+last_qc_at: "2026-10-24T20:16:56"
 last_qc_outcome: "pass"
 ---
 

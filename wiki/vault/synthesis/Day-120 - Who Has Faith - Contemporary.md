@@ -20,8 +20,8 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-10-14T18:17:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-10-24T18:18:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 120 — Who Has Faith (Contemporary Parallel)
@@ -77,9 +77,9 @@ The lifeless/living distinction is precisely where the project's central claim i
 ## Bridges
 
 - *Stump CROSS-005 + PRS-11 (Tom Loughran's PRS-form record of Stump's relational reading of charity-as-second-person-knowing)* — charity as the relational structure that makes faith function as knowing-another rather than information-holding. (Philosophical; high.)
-- *Fredrickson positivity resonance / Love 2.0* — biological substrate of charity; what makes faith alive has measurable correlates. (Empirical; high.)
+- *PRS-02 in the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`, love as measurable positivity resonance, Confidence High), with Love 2.0* — biological substrate of charity; what makes faith alive has measurable correlates. (Empirical; high.)
 - *PRS-01 + PRS-03 in the Levin-tradition wiki (`traditions/levin/prs_triplets.md`); CROSS-008 restated downward 2026-08-10* — empirical re-grounding of "form" as real, located, causally efficacious (PRS-01, Confidence High), with the morphological attractor formalism supplying the formal treatment of the goal-seeking (PRS-03, Confidence High). (Empirical at the biological scale.) The extension to the strong hylomorphic reading of "charity as form of faith" is this commentary's own, not a bridge the index certifies: CROSS-008's stronger claim — that Thomistic final causality frames Levin's teleology — was withdrawn, and what remains is a shared rejection of the isolated unit of explanation.
-- *Hoffman interface theory* — *fides informis* read as cognitive presence with low precision-weighting; explains the lifeless-but-real asymmetry. (Formal.)
+- *PRS-03 in the Hoffman-tradition wiki (`traditions/hoffman/prs_triplets.md`, perception as fitness-tracking — the interface theory, Confidence High)* — *fides informis* read as cognitive presence with low precision-weighting; explains the lifeless-but-real asymmetry. (Formal.)
 - *PRS-13 in the Wright-tradition wiki (`traditions/wright/prs_triplets.md`, Confidence High); Wright, Paul and the Faithfulness of God* — pistis as covenant-fidelity, with salvation as inclusion in the covenanted people and its working-out as participation in that people; the loss-of-charity-while-faith-remains corresponds to slack fidelity within ongoing covenant membership. (Historical-theological; high.)
 
 ## Where this leaves us
