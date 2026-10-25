@@ -28,7 +28,11 @@
   #row1 {
     height: 48px;
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    /* Tabs first: the chapter strip grows to its full width before the tools
+       column gets anything beyond its minimum; the search box flexes inside
+       that column. Before 2026-10-25 the strip was the 1fr column and the
+       fixed-width search box squeezed the last chapter tab out of view. */
+    grid-template-columns: auto minmax(0, max-content) minmax(min-content, 1fr) auto;
     align-items: center;
     column-gap: 10px;
     padding: 0 16px;
@@ -49,6 +53,24 @@
     background: #0d0d15;
     border-bottom: 1px solid #2a2a3a;
     flex-shrink: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  #row2::-webkit-scrollbar, #row2-edu::-webkit-scrollbar { display: none; }
+  /* Overflow cue: a tab row with hidden tabs fades at the side they are on.
+     The classes are set by the tab-visibility script at the end of the body. */
+  #chap-tabs.more-right, #row2.more-right, #row2-edu.more-right {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent);
+            mask-image: linear-gradient(to right, #000 calc(100% - 36px), transparent);
+  }
+  #chap-tabs.more-left, #row2.more-left, #row2-edu.more-left {
+    -webkit-mask-image: linear-gradient(to left, #000 calc(100% - 36px), transparent);
+            mask-image: linear-gradient(to left, #000 calc(100% - 36px), transparent);
+  }
+  #chap-tabs.more-left.more-right, #row2.more-left.more-right, #row2-edu.more-left.more-right {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 36px, #000 calc(100% - 36px), transparent);
+            mask-image: linear-gradient(to right, transparent, #000 36px, #000 calc(100% - 36px), transparent);
   }
 
   /* BRAND — stacked: C2A2 popped above the descriptor so the wordmark's
@@ -177,6 +199,7 @@
     letter-spacing: 0.4px;
     transition: color 0.15s, border-color 0.15s;
     white-space: nowrap;
+    flex-shrink: 0;
   }
   .tab-btn:hover { color: #aaa; }
   .tab-btn.active { color: #C9A84C; border-bottom-color: #C9A84C; }
@@ -6096,11 +6119,11 @@ var VoiceGuide = (function() {
    The Sociogram-style box, lifted into row 1 so it is the same on every page.
    Enter = light matches on this page (CCL `find`, journaled/undoable) AND ask
    the guide (broker) for a grounded answer, shown in #ask-drawer. */
-#row1-tools { display: flex; align-items: center; gap: 6px; min-width: 0; }
+#row1-tools { display: flex; align-items: center; justify-content: flex-end; gap: 6px; min-width: 0; }
 #row1-tools .nav-btn { margin-right: 0; }
-#ask-wrap { display: flex; align-items: center; gap: 4px; }
+#ask-wrap { display: flex; align-items: center; gap: 4px; flex: 1 1 auto; min-width: 0; justify-content: flex-end; }
 #ask-input {
-  width: 300px; background: #14141f; border: 1px solid #3a3a4a; color: #e6e6ee;
+  width: 0; flex: 1 1 300px; min-width: 120px; max-width: 300px; background: #14141f; border: 1px solid #3a3a4a; color: #e6e6ee;
   padding: 6px 10px; border-radius: 16px; font-size: 13px; font-family: -apple-system, sans-serif;
 }
 #ask-input:focus { outline: none; border-color: #C9A84C; }
@@ -6128,20 +6151,24 @@ var VoiceGuide = (function() {
 #ask-body.pending { color: #8a8a98; font-style: italic; }
 #ask-meta { margin-top: 8px; font-size: 11px; color: #7a7a8a; }
 #ask-meta .ask-find { color: #4E8A5E; }
-/* Narrow screens: the box collapses to a magnifier that opens it. */
+/* Narrow screens: at 1180px and below the box collapses to a magnifier that
+   opens it, and at 980px and below back/forward and the read-aloud "?" go,
+   so all five chapter tabs fit from 900px up (cutoffs measured on Mac Chrome
+   2026-10-25). Narrower than that, the tab rows scroll with an edge fade. */
 @media (max-width: 1180px) {
-  #ask-input { width: 200px; }
   #vg-launch #vg-label { display: none; }
 }
-@media (max-width: 900px) {
+@media (max-width: 980px) {
+  #row1-tools .nav-btn, #row1-tools #ccl-readhelp { display: none; }
+}
+@media (max-width: 1180px) {
   #ask-open { display: inline-block; }
   #ask-input, #ask-go, #ask-clear { display: none; }
   #ask-wrap.open { position: fixed; top: 52px; left: 8px; right: 8px; z-index: 99991;
     background: #0e0e16; border: 1px solid #3a3a4a; border-radius: 10px; padding: 6px; }
-  #ask-wrap.open #ask-input { display: block; flex: 1; width: auto; }
+  #ask-wrap.open #ask-input { display: block; flex: 1; width: auto; max-width: none; }
   #ask-wrap.open #ask-go, #ask-wrap.open #ask-clear { display: inline-block; }
   #ask-wrap.open #ask-open { display: none; }
-  #row1-tools .nav-btn, #row1-tools #ccl-readhelp { display: none; }
 }
 </style>
 <script src="lib/c2a2-search.js?v=5447353e16"></script>
@@ -6388,6 +6415,55 @@ var VoiceGuide = (function() {
   document.getElementById('ask-open').addEventListener('click', function () { wrap.classList.add('open'); input.focus(); });
   // A tab's own box (Sociogram standalone road) and the guide both reach this one box.
   window.C2A2AskBox = { ask: function (q) { input.value = q; ask(); }, clear: clearAll };
+})();
+</script>
+<script>
+/* Tab visibility (2026-10-25). Any tab row narrower than its tabs scrolls
+   with a hidden scrollbar, so without this a tab can be off-screen with no
+   sign it exists -- which is how Community Interactions went missing at
+   most laptop widths. Two jobs: scroll the active tab into view whenever
+   the active tab, the visible row, or the window size changes; and mark
+   the row's sides that hide tabs (.more-left / .more-right) for the fade. */
+(function () {
+  'use strict';
+  var ids = ['chap-tabs', 'row2', 'row2-edu'];
+  var rows = ids.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+  function cue(el) {
+    var max = el.scrollWidth - el.clientWidth;
+    el.classList.toggle('more-left', max > 1 && el.scrollLeft > 1);
+    el.classList.toggle('more-right', max > 1 && el.scrollLeft < max - 1);
+  }
+  function showActive(el) {
+    var a = el.querySelector('.active');
+    if (a && el.clientWidth) {
+      var e = a.getBoundingClientRect(), r = el.getBoundingClientRect();
+      if (e.left < r.left || e.right > r.right) {
+        el.scrollLeft += (e.left - r.left) - (r.width - e.width) / 2;
+      }
+    }
+    cue(el);
+  }
+  var queued = false;
+  function refresh() {
+    if (queued) { return; }
+    queued = true;
+    requestAnimationFrame(function () { queued = false; rows.forEach(showActive); });
+  }
+  rows.forEach(function (el) {
+    el.addEventListener('scroll', function () { cue(el); }, { passive: true });
+  });
+  var bar = document.getElementById('tab-bar');
+  if (bar) {
+    new MutationObserver(function (recs) {
+      /* ignore this script's own cue classes on the rows themselves */
+      for (var i = 0; i < recs.length; i++) {
+        if (!(rows.indexOf(recs[i].target) >= 0 && recs[i].attributeName === 'class')) { refresh(); return; }
+      }
+    }).observe(bar, { subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
+  }
+  window.addEventListener('resize', refresh);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(refresh); }
+  refresh();
 })();
 </script>
 </body>
