@@ -759,7 +759,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       <button id="btn-edge-help" onclick="toggleEdgeHelp(event)" style="width:18px;height:18px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:11px;font-weight:600;cursor:pointer;padding:0;line-height:16px;text-align:center;" title="How adaptive edge density works">?</button>
       <div class="brightness-control">
         <label>Brightness</label>
-        <input type="range" id="brightness-slider" min="0.1" max="2" step="0.05" value="1" oninput="setBrightness(this.value)">
+        <input type="range" id="brightness-slider" min="0.1" max="2" step="0.05" value="2" oninput="setBrightness(this.value)">
       </div>
       <!-- Date threshold slider (Pass G). Show only files added on or after the
            selected date. Default leftmost = no threshold (all files). -->
@@ -1016,7 +1016,8 @@ var linkSel = null;
 // from outside the tick closure (by the voice wave), so it needs both handles.
 var nodeSel = null;
 var playSpeed = 1;
-var brightness = 1;
+// Starts at the slider's maximum (2): anything less navigates less smoothly (Tom, 2026-10-25).
+var brightness = 2;
 var IDLE_NARRATION = '';
 // THE CUT, AS DATA. Every path that lights a subset of the graph -- text search,
 // focus:, isolate, link -- records what it lit here, so the shell reads the
