@@ -60,7 +60,7 @@ HTML_HEAD = """<!DOCTYPE html>
     padding: 8px 14px; background: #11111a; border-bottom: 1px solid #22222e;
     flex: 0 0 auto;
   }
-  #header h1 { font-size: 14px; font-weight: 600; color: #e8e8f0; white-space: nowrap; }
+  #header h1 { font-size: 14px; font-weight: 700; color: #C9A84C; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; white-space: nowrap; }
   .subtab {
     padding: 4px 14px; border: 1px solid #33334a; border-radius: 5px;
     background: #16161f; color: #9a9ab0; font-size: 12px; cursor: pointer;
@@ -133,12 +133,15 @@ HTML_HEAD = """<!DOCTYPE html>
   /* ── Search footer ── */
   #footer { flex: 0 0 auto; background: #11111a; border-top: 1px solid #22222e; padding: 6px 14px; }
   #search-status { font-size: 12px; color: #9a9ab0; line-height: 1.5; padding: 0 0 6px; display: none; }
-  #search-row { display: flex; gap: 8px; align-items: center; }
+  #search-row { display: flex; flex-wrap: wrap; row-gap: 6px; gap: 8px; align-items: center; }
   #search-row input[type="text"] {
     flex: 1; min-width: 160px; background: #16161f; border: 1px solid #33334a;
     color: #e8e8f0; padding: 4px 10px; border-radius: 5px; font-size: 12.5px;
   }
   .chk { display: flex; align-items: center; gap: 5px; font-size: 11.5px; color: #9a9ab0; cursor: pointer; white-space: nowrap; }
+#search-input { flex: 1 1 auto; min-width: 0; }
+.search-opts { display: flex; flex-basis: 100%; align-items: center; gap: 16px; padding-left: 0; margin-left: 0; padding-top: 6px; border-top: 1px solid #22222e; }
+.search-opts .opts-label { font-size: 11px; color: #6a6a80; white-space: nowrap; }
   /* ── Tabs help modal ── */
   #help-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
   #help-modal.open { display: flex; }
@@ -191,8 +194,11 @@ HTML_HEAD = """<!DOCTYPE html>
       placeholder='Search communities &mdash; or "focus: civic ~ scientific" to isolate cross-type links'>
     <button class="ctrl" id="btn-search">Search</button>
     <button class="ctrl" id="btn-clear">Clear</button>
-    <label class="chk"><input type="checkbox" id="search-ai-mode"> Ask AI</label>
-    <label class="chk"><input type="checkbox" id="search-external"> Allow wider search</label>
+    <div class="search-opts">
+      <span class="opts-label">Search options:</span>
+      <label class="chk"><input type="checkbox" id="search-ai-mode"> Ask AI</label>
+      <label class="chk"><input type="checkbox" id="search-external"> Allow wider search</label>
+    </div>
   </div>
 </div>
 <div id="help-modal">
@@ -660,6 +666,15 @@ rebuild();
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser(
+        description="Build wiki/community_explorer.html from wiki/community/community_graph.json "
+                    "and wiki/lib/c2a2-search.js. This script is the ONLY source of that page: "
+                    "edit here, then regenerate. The daily run never regenerates or commits it.")
+    ap.add_argument("--out", type=Path, default=OUTPUT_PATH, help="output path (default: %(default)s)")
+    ap.add_argument("--check", action="store_true",
+                    help="build in memory, write nothing; exit 1 if the shipped page differs from a fresh build")
+    args = ap.parse_args()
     with open(INPUT_PATH, encoding="utf-8") as f:
         graph = json.load(f)
 
@@ -670,10 +685,14 @@ def main():
     html = (HTML_HEAD + graph_json + HTML_TAIL + colors_json
             + HTML_AFTER_COLORS + searchlib_js + HTML_BODY)
 
-    OUTPUT_PATH.write_text(html, encoding="utf-8")
-    kb = OUTPUT_PATH.stat().st_size / 1024
+    if args.check:
+        same = args.out.exists() and args.out.read_text(encoding="utf-8") == html
+        print("community_explorer.html", "matches a fresh build" if same else "DIFFERS from a fresh build (regenerate)")
+        raise SystemExit(0 if same else 1)
+    args.out.write_text(html, encoding="utf-8")
+    kb = args.out.stat().st_size / 1024
     print("Nodes:", graph["meta"]["node_count"], "Edges:", graph["meta"]["edge_count"])
-    print("Written", OUTPUT_PATH, "(", round(kb, 1), "KB ) on", date.today())
+    print("Written", args.out, "(", round(kb, 1), "KB ) on", date.today())
 
 
 if __name__ == "__main__":
