@@ -92,6 +92,8 @@ VERDICT_EXITS = {
     "com.c2a2.scheduled-commit-check": {"1"},
     # 3 = the CCL shell suite is RED (a verdict about the shell, not about the job).
     "com.c2a2.voice-shell-check": {"3"},
+    # 3 = the PUBLIC site is not what main holds (a verdict about Pages, not the job).
+    "com.c2a2.pages-live-check": {"3"},
 }
 
 ARTIFACTS = [
@@ -143,6 +145,20 @@ ARTIFACTS = [
             "It is a launchd agent (needs real Chrome), so look at "
             "~/Library/Logs/c2a2-voice-shell-check.log, then `launchctl print "
             "gui/$(id -u)/com.c2a2.voice-shell-check`."
+        ),
+    },
+    {
+        # Liveness only, like voice_shell.json: `checked_at` is stamped on every
+        # fire that could look. Whether the site is wrong is pages_live.FAILED below.
+        "owner": "com.c2a2.pages-live-check",
+        "path": "scheduler/pages_live.json",
+        "field": "checked_at",
+        "max_age_hours": 26,
+        "failure_means": (
+            "nothing has compared the public site with main for that long. Pages ran "
+            "19 days stale (2026-10-06..10-25) while every other check was green. Look at "
+            "~/Library/Logs/c2a2-pages-live-check.log (exit 2 = GitHub unreachable), then "
+            "`launchctl print gui/$(id -u)/com.c2a2.pages-live-check`."
         ),
     },
     {
@@ -460,6 +476,13 @@ FAILURE_MARKERS = [
         "note": "written by check_voice_shell.sh when test_voice_shell.cjs ends RED (or dies "
                 "without a summary); removed on the next GREEN run. The suite was red and "
                 "unread 2026-08-12..09-17 because nothing scheduled ran it.",
+    },
+    {
+        "owner": "com.c2a2.pages-live-check",
+        "path": "pages_live.FAILED",
+        "note": "written by check_pages_live.py while a Pages deploy is stuck or failed, or "
+                "the live explorer.html differs from main past a 2h grace; removed on the next "
+                "OK/WARN. Every deploy 2026-10-06..10-25 queued behind one stuck run, unseen.",
     },
     {
         "owner": "com.tloughran.summa-vault-sync",

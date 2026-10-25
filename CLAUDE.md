@@ -490,6 +490,24 @@ CHROME=/path/to/chrome node scripts/test_voice_shell.cjs
 
 ---
 
+## Pages Live Check (is the public site what main holds?)
+
+**Script:** `scripts/check_pages_live.py` (+ `scripts/test_check_pages_live.py`, 10 cases)
+**Job:** launchd `com.c2a2.pages-live-check`, daily **05:40**, via `scripts/check_pages_live.sh`; plist in `scripts/launchd/`
+**Writes (gitignored):** `scheduler/pages_live.json` (`checked_at` every fire), `scheduler/pages_live.md` (one line per fire), repo-root `pages_live.FAILED` while the verdict is FAIL
+**Read by:** `check_scheduler_health.py` -- a freshness row on `checked_at` and a marker row on `pages_live.FAILED`. Exit 3 = FAIL (a verdict, excused in `VERDICT_EXITS`); 2 = GitHub unreachable; 1 = script error.
+
+**FAIL when:** a Pages deploy run has been unfinished for over 2h (asked for **by status**, never from a recent-runs window); the newest finished deploy failed; or the live `wiki/explorer.html` differs from main more than 2h after main last changed it. Inside that 2h it is WARN -- a deploy in flight. "cancelled" is normal supersession.
+
+**Why:** every Pages deploy 2026-10-06..10-25 queued behind one run "waiting for github-pages deployment approval" that no setting required any more (reviewers and wait timer both off). Nineteen days of pushes never went live, and every check stayed green because all of them read origin, none read Pages. Found only because the Community Interactions tab was visibly missing. Fix was cancelling that run (#107). If deploys stick again with those settings off, the fault is GitHub-side.
+
+```bash
+python3 scripts/test_check_pages_live.py
+python3 scripts/check_pages_live.py --dry-run
+```
+
+---
+
 ## Level-2 Cross-Tradition Signal Stream
 
 **Never hand-build `wiki/level2_signal_stream.html`. Always regenerate it:**

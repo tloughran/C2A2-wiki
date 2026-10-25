@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.c2a2.pages-live-check</string>
+
+  <!--
+    Is the PUBLIC site what is on GitHub? (scripts/check_pages_live.py)
+    Every Pages deploy 2026-10-06 to 2026-10-25 sat pending behind one run
+    waiting on an approval no setting required any more; nothing here read
+    Pages, so nineteen days of pushes never went live and every check was green.
+    Pure script, no model: Tier 1 under the three-tier rule.
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/check_pages_live.sh</string>
+  </array>
+
+  <!--
+    05:40 local: after the voice-shell suite (05:35, network-free, so no
+    contention) and before the 05:45 commit-check agent, whose
+    check_scheduler_health.py reads this verdict, so the 06:00 morning report
+    carries today's answer. Also before the 05:45 daily push, so the comparison
+    is against yesterday's pushes, long since deployed, not one in flight.
+  -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>5</integer>
+    <key>Minute</key>
+    <integer>40</integer>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-pages-live-check.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-pages-live-check.log</string>
+</dict>
+</plist>
