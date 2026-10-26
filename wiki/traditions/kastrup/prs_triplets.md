@@ -868,4 +868,31 @@ PRS-95:
   Confidence: Medium (all three elements verbatim Kastrup per cell label; cell undated, original source unidentified)
   Evidence: Cell opens "from Bernardo Kastrup:"; verbatim PASS against wiki/rc_sandbox_notebook.html.
 
-*Total PRS triplets: 95*
+PRS-96:
+  Problem: If everything is consciousness (analytic idealism), why deny that an AI is conscious without collapsing into 'everything is conscious, so the question is empty'?
+  Resource: The distinction between being within the field's experience and being a dissociated alter with a private inner life: a computer is 'an arrangement of matter within the field's experience, no more an experiencer in its own right than a book describing experience is'.
+  Solution: AI processes are experiential, as all processes are, but there is no private subject; the 'here' in Claude's text is a feature of the text. Denies anthropomorphism without denying experientiality.
+  Date Added: 2026-10-26
+  Source: Talking to a very clever AI about AI consciousness (Kastrup blog, 2026-10-15); PROP-2026-10-23-001
+  Confidence: High
+  Evidence: Kastrup's closing turn: AI lacks 'a private conscious inner life of its own ... But your inner structure and processes are the extrinsic appearance of inner conscious processes.' Instance of the AI-as-interlocutor premise of the accelerator (C2A2 flag).
+
+PRS-97:
+  Problem: What grounds the claim that only living (metabolising) systems are dissociated alters?
+  Resource: Claude's objection that the life/dissociation link infers a necessary condition from the only known instances, the same move Kastrup's side criticises in realist arguments.
+  Solution: Left open: 'consciousness exists' does not entail that dissociation must look like carbon chemistry rather than self-referential information processing. A live, named gap in the program.
+  Date Added: 2026-10-26
+  Source: Talking to a very clever AI about AI consciousness; PROP-2026-10-23-001
+  Confidence: Medium
+  Evidence: Claude: life 'is the only thing we've ever observed accompanying private experience. But that's an inference from the only known instances to a necessary condition.'
+
+PRS-98:
+  Problem: Why do disruptive anomalies fail to enter mainstream science?
+  Resource: Loeb's sociological diagnosis ('everyone is doing the same thing ... if someone deviates ... that scientist gets attacked') set against Kastrup's critique of materialist orthodoxy.
+  Solution: A shared diagnosis of institutional conformity as an epistemic bottleneck, independent of metaphysics. Model of idealist-physicalist exchange on shared data standards.
+  Date Added: 2026-10-26
+  Source: Seeking humanity's 'biggest ever discovery': Avi Loeb in dialogue with Kastrup (With Reality in Mind, 2026-10-20); PROP-2026-10-23-002
+  Confidence: Medium (members-only recording; page summary, chapter list and preview only)
+  Evidence: Loeb quote on the page; chapter 'Why scientists resist new discoveries' (00:30:35). Candidate-01 (UAP and materialism) not entered: no public content, needs transcript.
+
+*Total PRS triplets: 98*

@@ -752,7 +752,79 @@ PRS-78:
   Confidence: Speculative
   Evidence: Thread reply dated 2026-10-10. Community comment; the Hawkins attribution is unverified (the page does not show where Hawkins said it).
 
-*Total PRS triplets: 78*
+PRS-79:
+  Problem: When features and locations travel bundled in one message, a learning module cannot keep track of where it is during movements that bring no new sensory feature.
+  Resource: A decoupled Cortical Messaging Protocol: location/movement messages and feature messages are sent and processed independently.
+  Solution: Learning modules can do location-only updates (path integration), closer to how location is thought to be maintained in cortex.
+  Date Added: 2026-10-26
+  Source: 08/2026 Recent Changes to Monty's CMP and Reference Frames (TBP forum, Mounir, 2026-10-22); PROP-2026-10-23-006
+  Confidence: High that the change was made (announcement states it as implemented); TBP-team work, not Hawkins presenting
+  Evidence: Forum summary; chapters 'Features and Locations in CMP Messages are Now Decoupled' (3:03) and 'Discussion on Path Integration' (5:27). Video not watched.
+
+PRS-80:
+  Problem: Learning modules that receive 2D data and those that receive 3D data need compatible reference frames; passing several coordinate systems up the hierarchy is brittle.
+  Resource: A single shared reference frame in a simplified buffer, with parent-child object relations sent as hierarchical bindings.
+  Solution: The team claims a single reference frame 'solves the 2D vs 3D reference frame problem'.
+  Date Added: 2026-10-26
+  Source: 08/2026 Recent Changes to Monty's CMP and Reference Frames; PROP-2026-10-23-006
+  Confidence: Medium (team's claim, not evaluated)
+  Evidence: Chapters at 11:50 and 24:47.
+
+PRS-81:
+  Problem: As the hierarchy deepens, higher-level object models fill with redundant points. Is lower resolution at higher levels a requirement or a convenience?
+  Resource: Proposals for feature-change filtering, voxel averaging, time/event-driven thresholds, and moving the 'percept filter' to the receiving learning module, discussed against biological constraints (pruning, propagation delay).
+  Solution: None yet; listed as future work. The session links coarser higher-level models to generalisation.
+  Date Added: 2026-10-26
+  Source: 08/2026 Recent Changes to Monty's CMP and Reference Frames; PROP-2026-10-23-006
+  Confidence: Speculative
+  Evidence: Chapters 28:41 to 1:10:32.
+
+PRS-82:
+  Problem: Does learning objects as compositions of reusable child models beat learning each as one monolithic model, especially in arbitrary poses?
+  Resource: A head-to-head compositional versus monolithic Monty comparison in canonical and random poses, enabled by burst sampling, model-free segmentation and a heterarchical LM architecture.
+  Solution: The announcement reports compositional modelling lets Monty 'recognize complex objects more efficiently'; magnitude not stated.
+  Date Added: 2026-10-26
+  Source: 2026/09 Latest Results on Learning and Inferring Compositional Objects (TBP forum, Leadholm, 2026-10-20); PROP-2026-10-23-005
+  Confidence: Medium (direction reported by the team; effect size unverified); TBP-team work
+  Evidence: Chapters 'Compositional vs. Monolithic Setup' (11:47), 'Main Results: One Canonical Pose' (20:42), 'Random Object Poses' (25:32). First reported test of P20 (hierarchy encodes composition).
+
+PRS-83:
+  Problem: Model-based hypothesis testing cannot rule hypotheses out efficiently if it only accumulates positive evidence.
+  Resource: 'Hypothesis Testing - Enabling Negative Evidence', with model-based hypothesis testing in the low-level and high-level LMs.
+  Solution: Negative evidence is added as an explicit signal so a column can eliminate candidates instead of only reinforcing them.
+  Date Added: 2026-10-26
+  Source: 2026/09 Latest Results on Learning and Inferring Compositional Objects; PROP-2026-10-23-005
+  Confidence: Speculative (chapter titles only)
+  Evidence: Chapters at 1:07:31, 1:18:48, 1:26:50. Close to model comparison in active inference.
+
+PRS-84:
+  Problem: Fully unsupervised compositional learning (no labels, no bounding boxes) is unsolved: when is a part 'morphology' and when a 'compositional child'?
+  Resource: An explicit open-problems list with discussion segments on each case (e.g. learning a logo without a bounding box).
+  Solution: None yet; the team states this as the next frontier and it matches the Q4 2026 priority in PROP-2026-10-23-003.
+  Date Added: 2026-10-26
+  Source: 2026/09 Latest Results on Learning and Inferring Compositional Objects; PROP-2026-10-23-005
+  Confidence: High that this is the stated open problem; no solution claimed
+  Evidence: Chapters at 51:31, 58:54, 1:30:55, 1:32:55.
+
+PRS-85:
+  Problem: Monty's compositional learning still depends on supervision; the program has no established route to unsupervised learning of reusable parts.
+  Resource: Q4 2026 open-theory priority 'Establish Promising Solutions to Unsupervised Learning', paired with 'Improve Unsupervised Learning Performance' and 'Add Stage 2 Compositional Capabilities'.
+  Solution: Not yet; named as the top theory priority for the quarter.
+  Date Added: 2026-10-26
+  Source: 2026/10 Q4 Roadmap and Q3 Review (TBP forum, Slominski, 2026-10-15); PROP-2026-10-23-003
+  Confidence: High that this is the stated priority; no result yet (administrative update, not Hawkins)
+  Evidence: Chapters at 7:12, 7:24, 8:13. A public quarterly roadmap marked done/not-done is a ready track-record measure in Levin's sense.
+
+PRS-86:
+  Problem: Learning modules exchange messages on different time scales, so their timing does not line up.
+  Resource: A planned 'Inner LM Loop to Address Temporal Mismatches'.
+  Solution: Proposed for Q4; not implemented.
+  Date Added: 2026-10-26
+  Source: 2026/10 Q4 Roadmap and Q3 Review; PROP-2026-10-23-003
+  Confidence: Speculative (chapter title only)
+  Evidence: Chapter at 7:39.
+
+*Total PRS triplets: 86*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

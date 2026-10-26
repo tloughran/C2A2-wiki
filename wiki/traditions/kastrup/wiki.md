@@ -188,3 +188,12 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-13-003` — RC Sandbox cell r598c4 (Kastrup voice) → PRS-95
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-10-26
+
+3 triplets added from 2 approved proposals (decision email 2026-10-25): PRS-96..98.
+
+- `PROP-2026-10-23-001` - Talking to a very clever AI about AI consciousness (Kastrup blog, 2026-10-15) -> PRS-96, PRS-97. Note: this proposal id is shared with the Friston FEP-and-markets card; see run notes.
+- `PROP-2026-10-23-002` - Avi Loeb in dialogue with Kastrup (With Reality in Mind, 2026-10-20) -> PRS-98. Members-only; candidate-01 (UAP and materialism) not entered.
+
+Named gap: is metabolism necessary for dissociation, or any self-maintaining boundary (PRS-97)?

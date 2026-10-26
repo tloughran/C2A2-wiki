@@ -16229,3 +16229,22 @@ REVISE-524: [2026-10-25] Source item: PRESUMPTION-1182 (DISPOSITION-1099)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1182 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1182_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1182_against.md
+
+
+REVISE-525: [2026-10-26] Source item: PRESUMPTION-1184 (DISPOSITION-1100)
+  What is at risk: every double-registered task whose later firing stands down on finding same-day output (15d, telemetry, lit pipeline). The first copy's output is ratified unchecked; on 10-25 it was wrong (MONITOR-685 misroute) and telemetry wrote PASS for a partial run credited to an unidentified overlapping run.
+  Recommended action (for Tom): (1) a firing stands down only on a run-id-tagged done-marker written atomically at the end of the other run's work, not on any prior output; a partial output without the marker is not grounds to stand down; (2) PASS lines must name the run-id that did the work; (3) treat correctness review separately from deduplication — a complete-but-wrong output needs a check against the item's routing note, not a completeness check; (4) the root fix remains removing the duplicate registrations (REVISE-523).
+  Urgency: Medium.
+  Related: PRESUMPTION-1180; REVISE-523; REVISE-524; ASSUMPTION-1932; 15b SYSTEMIC-RISK candidate 'artefact-as-proof'.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1184 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1184_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1184_against.md
+
+REVISE-526: [2026-10-26] Source item: PRESUMPTION-1186 (DISPOSITION-1102)
+  What is at risk: Tom's ability to see and act on the one fix that matters. On 10-25 at least 8 runs each filed a separate 'needs you' note about double firing; asks are spread across scheduler health, morning status, sewing, bootstrap, janitor, Wright/Rohr and deferred-monitor reports with no consolidation, priority or escalation.
+  Recommended action (for Tom): (1) a single incident key per fault (e.g. OPEN-274) that runs append to rather than re-report; (2) one consolidated 'needs Tom' list, ranked, read by the morning brief (cf. OPEN-270); (3) keep schedule changes gated to Tom — both 15a and 15b support gated remediation — but consider a pre-approved runbook for a narrow, reversible action such as disabling one named duplicate registration; (4) escalate (e.g. one email) if a High item stays open more than N days.
+  Urgency: Medium.
+  Related: OPEN-270; OPEN-274; REVISE-523; REVISE-147.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1186 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1186_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1186_against.md

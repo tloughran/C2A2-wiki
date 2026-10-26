@@ -167,3 +167,13 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 2 triplets added from 1 approved proposal: PRS-77, PRS-78.
 
 - `PROP-2026-10-13-002` — 08/2026 - Reference Frame Merging & Splitting (a Hackathon Prototype) (talk, https://forum.thousandbrains.org/t/08-2026-reference-frame-merging-splitting-a-hackathon-prototype/1220) → PRS-77 (refines PRS-72/PRS-76 with the prediction-based merge/split criterion), PRS-78 (biological-plausibility disagreement). Question 8 annotated.
+
+### Ingest 2026-10-26
+
+8 triplets added from 3 approved proposals (decision email 2026-10-25): PRS-79..86. **All three are Thousand Brains Project team work (Mounir, Leadholm, Slominski), not Hawkins presenting; forum announcements and chapter lists only, no video watched.**
+
+- `PROP-2026-10-23-006` - Recent Changes to Monty's CMP and Reference Frames -> PRS-79, PRS-80, PRS-81.
+- `PROP-2026-10-23-005` - Latest Results on Learning and Inferring Compositional Objects -> PRS-82, PRS-83, PRS-84.
+- `PROP-2026-10-23-003` - Q4 Roadmap and Q3 Review -> PRS-85, PRS-86. Administrative update; the card itself called denial reasonable.
+
+Q4 frontier recorded: unsupervised compositional learning, top-down connections, inner-LM loop for timing mismatches.

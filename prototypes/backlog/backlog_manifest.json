@@ -496,6 +496,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-23-004",
+  "tradition": "hoffman",
+  "source_date": "2026",
+  "title": "Trace Logic and Theory of Computation",
+  "file": "inbox/proposals/approved/2026-10-23_hoffman_trace-logic-theory-of-computation.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-20-002",
   "tradition": "levin",
   "source_date": "2026",
@@ -3000,6 +3008,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-23-001",
+  "tradition": "friston",
+  "source_date": "2026-08-25",
+  "title": "The Free Energy Principle and Free Markets",
+  "file": "inbox/proposals/approved/2026-10-23_friston_fep-and-free-markets.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-25-051",
   "tradition": "rohr",
   "source_date": "2026-08-25",
@@ -3464,6 +3480,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-24-002",
+  "tradition": "wolfram",
+  "source_date": "2026-09-28",
+  "title": "What's the Future for Pure Math Research in the Age of AI?",
+  "file": "inbox/proposals/approved/2026-10-24_wolfram_future-of-pure-math-in-age-of-ai.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-30-003",
   "tradition": "carroll",
   "source_date": "2026-09-28",
@@ -3552,11 +3576,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-18-002",
+  "tradition": "wright",
+  "source_date": "2026-10-07",
+  "title": "N.T. Wright responds to John Piper: Who got Paul wrong?",
+  "file": "inbox/proposals/approved/2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-13-002",
   "tradition": "hawkins",
   "source_date": "2026-10-08",
   "title": "08/2026 - Reference Frame Merging & Splitting (a Hackathon Prototype)",
   "file": "inbox/proposals/approved/2026-10-13_hawkins_reference-frame-merging-splitting.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-24-003",
+  "tradition": "wolfram",
+  "source_date": "2026-10-08",
+  "title": "The future with AI will be very different from what we're being sold - Stephen Wolfram",
+  "file": "inbox/proposals/approved/2026-10-24_wolfram_jon-hernandez-ai-future-interview.md",
   "processed": false
  },
  {
@@ -3584,6 +3624,22 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-16-001",
+  "tradition": "carroll",
+  "source_date": "2026-10-12",
+  "title": "AMA | October 2026 (Sean Carroll's Mindscape)",
+  "file": "inbox/proposals/approved/2026-10-16_carroll_mindscape-ama-october-2026.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-25-004",
+  "tradition": "wright",
+  "source_date": "2026-10-12",
+  "title": "Is Christianity making a comeback? The 'quiet revival', Ananias & Sapphira and church unit",
+  "file": "inbox/proposals/approved/2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-13-004",
   "tradition": "multi",
   "source_date": "2026-10-13",
@@ -3605,6 +3661,110 @@
   "source_date": "2026-10-13",
   "title": "The Great Contender \u2014 The current state of the metaphysical debate",
   "file": "inbox/proposals/approved/2026-10-14_kastrup_great-contender-metaphysical-landscape.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-18-003",
+  "tradition": "wright",
+  "source_date": "2026-10-15",
+  "title": "Are Christians reading the Bible wrong? Tom Wright challenges our assumptions",
+  "file": "inbox/proposals/approved/2026-10-18_wright_ask-ntw-bonus-gods-homecoming-ch10-bible-as-story.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-18-001",
+  "tradition": "wright",
+  "source_date": "2026-10-15",
+  "title": "Into the Heart of Isaiah: The Multi-layered Message of Isaiah 40-55",
+  "file": "inbox/proposals/approved/2026-10-18_wright_into-the-heart-of-isaiah-40-55.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-23-001",
+  "tradition": "kastrup",
+  "source_date": "2026-10-15",
+  "title": "Talking to a very clever AI about AI consciousness",
+  "file": "inbox/proposals/approved/2026-10-23_kastrup_claude-dialogue-ai-consciousness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-23-003",
+  "tradition": "hawkins",
+  "source_date": "2026-10-15",
+  "title": "2026/10 - Q4 Roadmap and Q3 Review",
+  "file": "inbox/proposals/approved/2026-10-23_hawkins_q4-roadmap-q3-review.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-18-004",
+  "tradition": "rohr",
+  "source_date": "2026-10-17",
+  "title": "Returning Home: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-10-18_rohr_returning-home-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-25-003",
+  "tradition": "wright",
+  "source_date": "2026-10-18",
+  "title": "Can Christians serve in the military? Was the Church of England founded on a scandal?",
+  "file": "inbox/proposals/approved/2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-23-007",
+  "tradition": "carroll",
+  "source_date": "2026-10-19",
+  "title": "371 | Kyle Harper on How Humans Have Shaped Life on Earth",
+  "file": "inbox/proposals/approved/2026-10-23_carroll_mindscape-371-harper-last-animal.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-23-002",
+  "tradition": "kastrup",
+  "source_date": "2026-10-20",
+  "title": "Seeking humanity's \\",
+  "file": "inbox/proposals/approved/2026-10-23_kastrup_loeb-uap-biggest-discovery.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-25-002",
+  "tradition": "rohr",
+  "source_date": "2026-10-20",
+  "title": "Universal Healing (CAC Daily Meditation, with Randy Woodley)",
+  "file": "inbox/proposals/approved/2026-10-25_rohr_universal-healing-woodley-salvation-as-healing.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-23-005",
+  "tradition": "hawkins",
+  "source_date": "2026-10-20",
+  "title": "2026/09 - Latest Results on Learning and Inferring Compositional Objects",
+  "file": "inbox/proposals/approved/2026-10-23_hawkins_compositional-objects-latest-results.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-23-006",
+  "tradition": "hawkins",
+  "source_date": "2026-10-22",
+  "title": "08/2026 - Recent Changes to Monty's Cortical Message Protocol and Reference Frames",
+  "file": "inbox/proposals/approved/2026-10-23_hawkins_cmp-reference-frame-changes.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-24-001",
+  "tradition": "wolfram",
+  "source_date": "2026-10-23",
+  "title": "Endless Forms Most Beautiful and Most Wonderful: Ruliobiology and the Theoretical Foundati",
+  "file": "inbox/proposals/approved/2026-10-24_wolfram_ruliobiology-endless-forms.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-25-001",
+  "tradition": "rohr",
+  "source_date": "2026-10-24",
+  "title": "Empire and Christianity: Weekly Summary (CAC Daily Meditations, Week 42)",
+  "file": "inbox/proposals/approved/2026-10-25_rohr_empire-and-christianity-weekly-summary.md",
   "processed": false
  }
 ]

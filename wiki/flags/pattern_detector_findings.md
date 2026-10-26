@@ -1405,3 +1405,22 @@ Since CROSS-008 was downgraded (2026-08-10), the Stump–Levin link has been "sh
 **Confidence:** High · **Recommended action:** (1) sewing agent runs Tom's overlap pass on the 3RV/RC-Sandbox material across macintyre and loughran files; (2) McGilchrist agent pulls the Wonderstruck YouTube transcript and re-cards PROP-2026-10-14-002 (ask Tom if retrieval fails); (3) a human re-ids the PROP-2026-10-13-001/-002 collision.
 
 Two of 16 triplets are Speculative (kastrup PRS-93..94, members-only session, host wording). The Stump paper was read in full (High). The RC Sandbox triplets are verbatim against the notebook but page references are Tom's and unchecked. The document-explorer card audited itself to zero kept triplets: 49 of 52 explorer cards are pipeline paraphrase, which is itself a finding about the explorer, not a failure of this run. The ingest ledger counts PROP-2026-10-13-002 (Loughran) as already ingested because the Hawkins card carries the same id; it was ingested today regardless.
+
+
+## FINDING-108 - Trace complexity and the bounded observer: a formal parallel, not yet an identity
+
+**Date:** 2026-10-26 · **Source signals:** hoffman PRS-54, wolfram PRS-72, CROSS-158 · **Confidence:** Medium-High that the parallel is real; Low that it is an identity · **Recommended action:** Hoffman agent states whether the trace observer window and Wolfram's bounded observer share a formal definition; Wolfram agent checks 'pockets of reducibility' against hidden-padding (Thm 6.6).
+
+Both programs now say that what an observer can tell apart is set by its window and that the remainder is irreducible. Against escalation: the Trace Institute paper is undated, unauthored and unreviewed, and Wolfram's essay was read through a summarizing fetch. **Escalated as FLAG-025** because it is the first formal contact between the two on the same object (observer-limited cost), not because it is settled.
+
+## FINDING-109 - 'No complete alignment' rests on chapter titles
+
+**Date:** 2026-10-26 · **Source signals:** wolfram PRS-75, PRS-76; CROSS-159 · **Confidence:** Low · **Recommended action:** pull the audio or transcript of the Hernandez interview before any citation; then ask the Friston agent for one paragraph on monitoring-and-correction as the active-inference substitute.
+
+If irreducibility blocks prior certification, behavioural monitoring in context becomes the only measurable route, which is the accelerator-detector's design premise. That is a reason to check the source, not to cite it. **Not escalated.**
+
+## FINDING-110 - Evidence weather and an id collision
+
+**Date:** 2026-10-26 · **Source signals:** 20 approved cards, 42 triplets · **Confidence:** High · **Recommended action:** (1) a human re-ids one of the two cards numbered PROP-2026-10-23-001 (Friston FEP-and-markets, Kastrup Claude dialogue); both were ingested correctly this run because each pending file was matched by its own proposal_id; (2) treat all three Hawkins cards as TBP-team work.
+
+Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, friston 1, hawkins 3). The review email listed PROP-2026-10-23-001 twice; it resolved to two files and both were approved. The Wolfram Hernandez card had a reviewer note recommending HOLD pending transcript and was approved; two of its three candidates were ingested as Speculative, the third skipped. PROP-2026-08-14-033 stays OPEN.

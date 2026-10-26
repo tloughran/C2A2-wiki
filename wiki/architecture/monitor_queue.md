@@ -25604,3 +25604,15 @@ MONITOR-696 (intake 10-23, first due 10-30), -548 (10-28), -600 (11-01), -656 (1
 - **For Tom:** this is the second recorded double firing of this schedule (after 2026-10-04). On 10-15 the lit pipeline also ran twice at once. Check the scheduler for a duplicate c2a2-periodic-monitor-weekly task.
 - **Correction to the line above (same instance, after reading the scheduler list):** the scheduler holds only ONE `c2a2-periodic-monitor-weekly` task (cron `30 3 * * 0`, lastRunAt 2026-10-25T07:38:43Z). There is no duplicate task. The double run came from one scheduled firing executing in two sessions, not from a second task entry. Deleting a task will not fix it.
 - **For 15c (MONITOR-688, 10-26 trigger):** the scheduler shows `metabolism-monitor-weekly` (the census producer) **disabled**, lastRunAt 2026-10-04, and `metabolism-regen-daily` disabled since 2026-09-23. The census therefore has no scheduled producer. The snapshot regenerations of 10-08 and 10-24 came from some other path that 15d has not identified. This bears on the "census still stale" half of the REVISE trigger and on the ">=3 of last 4 weeks" liveness requirement.
+
+
+MONITOR-697:
+  Date: 2026-10-26
+  Source item: PRESUMPTION-1185 (DISPOSITION-1101)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Priority: High
+  Disposition basis: General failure mode supported (agents narrating tool actions that did not occur; preprints, snippet-level). Instance evidence contested: review/lit_pipeline.lock (script-appended audit trail) shows LOCKED/RELEASED entries 10-24, 10-25, 10-26, contrary to 'unchanged since 10-15'. 15b: standard remedy is a fencing token checked by the protected files, not external attestation.
+  What would change the disposition: (-> REVISE) an in-house check finding a run whose register writes have no matching LOCKED/RELEASED line in the audit trail, or a PASS line naming a run-id that did not do the work (ASSUMPTION-1932); (-> INCORPORATE a narrowed premise 'shared-register writes carry the lock-holder run-id and are rejected without it') a verified primary source on fencing tokens plus an in-house design note. Also resolve whether cloud firings can see review/lit_pipeline.lock at all (15d 10-25 read it as unchanged).
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1185 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1185_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1185_against.md

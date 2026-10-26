@@ -501,5 +501,41 @@ PRS-52:
   Confidence: Speculative
   Evidence: Chapter list on the Trace Institute podcast page (1:20:50, "Zero surprise and a new AI architecture"); the episode was not watched and no transcript was retrieved. The proposing card itself recommends treating this as an acquisition lead (watch 1:20:50 to the end) rather than a triplet; it is recorded as a placeholder on that basis. INGEST NOTE: "zero surprise" is already Hoffman's own trace-logic vocabulary in this file (PRS-07: M ≤ N iff M is the "zero-surprise view" of N), so the phrase may name the trace relation rather than borrow Friston's surprise-minimization; which reading is meant is unverified.
 
-*Total PRS triplets: 52*
+PRS-53:
+  Problem: Trace order was introduced as a 'logic of observation', but it was unclear how it relates to standard refinement notions (bisimulation, stuttering refinement, abstract interpretation).
+  Resource: Full-abstraction theorem: P <=t Q iff every finite visible experiment on P is reproduced exactly by Q; Proposition 4.9: trace order is exact first-return hidden-step simulation (not weak bisimulation, strictly stronger than qualitative stuttering refinement, only locally an abstract interpretation).
+  Solution: Trace order is identified with the preorder induced by finite-window observation: 'what an observer can tell apart' and 'what is a trace of what' are the same relation.
+  Date Added: 2026-10-26
+  Source: Trace Logic and Theory of Computation (Trace Institute working paper, undated, 2026); PROP-2026-10-23-004
+  Confidence: High as a formal result if the proofs survive review (sketches only in places); unpublished, authorship unconfirmed, program output per PRS-19
+  Evidence: Theorem 4.6, Corollary 4.7, Proposition 4.9.
+
+PRS-54:
+  Problem: Standard complexity theory counts total cost and cannot express what an observer at a given resolution sees versus what is spent out of view.
+  Resource: Trace complexity: visible time T_W, hidden depth D_W, raw time <= T_W*D_W; visible costs invariant under trace equivalence (Thm 6.4); hidden cost can be padded arbitrarily (Thm 6.6).
+  Solution: A 'trace-theoretic uncertainty principle': coarser observation shortens visible time but deepens hidden implementation; classical classes recovered when nothing is hidden (Thm 6.9). An earlier conjecture (entropy rate monotone under trace order) is refuted by Ex. 6.7. Strong bridge to Wolfram's bounded observer (flag).
+  Date Added: 2026-10-26
+  Source: Trace Logic and Theory of Computation; PROP-2026-10-23-004
+  Confidence: High for the stated theorems; the 'uncertainty principle' label is interpretive
+  Evidence: Proposition 6.5, Theorems 6.4, 6.6, 6.9, Example 6.7.
+
+PRS-55:
+  Problem: The slogan 'globally non-Boolean, locally Boolean' had no precise proof-theoretic meaning.
+  Resource: For a fixed ambient computation M, the observer windows below M form a Boolean algebra B(M), and the principal ideal below M is order-isomorphic to it (Thm 7.5); an external refinement calculus is sound and complete (Thm 7.9).
+  Solution: Trace logic is an indexed Boolean logic over a non-Boolean base of computations; refinement is decidable for the finite rational fragment and undecidable in general (Thms 7.10, 7.11).
+  Date Added: 2026-10-26
+  Source: Trace Logic and Theory of Computation; PROP-2026-10-23-004
+  Confidence: High as formal results
+  Evidence: Theorems 7.5 and 7.9 to 7.11, Figure 1.
+
+PRS-56:
+  Problem: Does trace logic say anything HMMs, labelled MDPs or probabilistic automata cannot already say?
+  Resource: Separation theorem (Thm 7.12) and Remark 7.13.
+  Solution: Under their standard single-observation-map semantics those frameworks cannot jointly express many observer-relative views of one ambient computation, exact quantitative refinement, the local Boolean fiber and an external refinement preorder; they can encode particular instances but lack the internal logic.
+  Date Added: 2026-10-26
+  Source: Trace Logic and Theory of Computation; PROP-2026-10-23-004
+  Confidence: Medium (narrow and carefully stated, but specialists will contest it)
+  Evidence: Theorem 7.12, Remark 7.13.
+
+*Total PRS triplets: 56*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

@@ -197,3 +197,13 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 2 triplets added from 1 approved proposal: PRS-70, PRS-71.
 
 - `PROP-2026-10-10-001` — Future of Science and Technology Q&A (October 2, 2026) (talk, https://www.youtube.com/watch?v=gvZ65zb94YA) → PRS-70, PRS-71. The proposal was built from segment titles only; the official transcript PDF was retrieved at ingest, as the Sewing Agent's call required, and both triplets were rewritten from it. PRS-70 raised Speculative → Medium; PRS-71 narrowed to the literature-recombination claim (the human-sets-direction half duplicates PRS-66). Active Research Question 17 added.
+
+### Ingest 2026-10-26
+
+5 triplets added from 3 approved proposals (decision email 2026-10-25): PRS-72..76.
+
+- `PROP-2026-10-24-002` - What's the Future for Pure Math Research in the Age of AI? (blog, 2026-09-28) -> PRS-72. Same article as PROP-2026-09-29-003 (PRS-66..68); this card adds the autoformalization and 'born alien' risks and the C2A2 adoption point. Read via summarizing fetch.
+- `PROP-2026-10-24-001` - Endless Forms Most Beautiful and Most Wonderful: Ruliobiology (blog, 2026-10-23) -> PRS-73, PRS-74. Answers the open morphogenesis item in PRS-03 with a concrete model. Summarizing fetch; figures unverified.
+- `PROP-2026-10-24-003` - The future with AI will be very different from what we're being sold (Jon Hernandez interview, 2026-10-08) -> PRS-75, PRS-76. **Inferred from chapter titles; no transcript.** First alignment/explainability PRS in the wolfram set; both Speculative. Candidate-03 (AI originality) not entered: likely duplicates PRS-66/PRS-71.
+
+Open question gained: does irreducibility make complete alignment impossible in principle (PRS-75, unverified)? Audio check needed before it is cited.

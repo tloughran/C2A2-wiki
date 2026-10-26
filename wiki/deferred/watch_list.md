@@ -7223,3 +7223,25 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Run completed 2026-10-25 (single instance).*
 
 *Addendum 2026-10-25 06:40 UTC — second Agent 16 firing today (duplicate schedule, as on 10-24). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16] (none modified since 10-17); `review/archive/` still ends at `2026-10-16_decisions.md`; `pending/` 16, no revised copies of PROP-2026-07-19-001 / -10-01-001 / -10-13-001 / -10-14-002; `prs_triplets.md` unchanged since 10-16; `sewing_agent_log.md` unchanged since 10-18 (10-25 Sewing run not yet fired). Nothing due (WATCH-003/-004 on 10-30; WATCH-005/-006 on 10-31). Nothing resolved. WATCH-003 stale flag (22 checks, Escalate to Tom) stands.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-26
+
+  Intake: all 4 `needs_review/` files already carry [TRACKED-16] (none modified since 10-17; folder mtime 10-16). No new items.
+  Items checked: 0 on-cadence (none due). Event sweep only:
+    - `review/archive/` still 25 files, latest `2026-10-16_decisions.md` → no off-cadence trigger for WATCH-003.
+    - `pending/` 20 (+4 since 10-25: Rohr ×2, Wright ×2, dated 10-25, unrelated). No revised copies of PROP-2026-07-19-001 / -10-01-001 / -10-13-001 / -10-14-002.
+    - WATCH-004: Fredrickson needs_review file unchanged since 10-08.
+    - WATCH-005: vault grep for `xZcB-tmvJaU` / "Wisdom of Uncertainty" outside deferred/ → only the needs_review card. No transcript.
+    - WATCH-006 event trigger (10-25 Sewing Agent run): **fired and did not take the card, as predicted.** `architecture/sewing_agent_log.md` "Run: 2026-10-25" processed 10 pages, all under `inbox/proposals/pending/`; it did not touch `needs_review/`. `traditions/macintyre/prs_triplets.md` is still unchanged since 10-16. Recorded as an event, not a counted check (count stays 2). The next Sewing run (11-01) will skip the card again unless Tom changes its selection rule or runs the overlap pass by hand.
+    - Files changed since the 10-25 write that mention watch items (PROCESSED_LOG, 10-25 cowork summary, open_questions): no Tom ruling on any item. `open_questions.md` notes that Tom has been away (Iceland) since 2026-10-18, which explains why the human-dependent items are not moving.
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003, 22 checks; Escalate to Tom). No new stale flags.
+  New items added: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-10-30; WATCH-005/-006 on 2026-10-31.
+
+**Open for Tom (unchanged):** Wonderstruck transcript (WATCH-005); Sewing Agent selection rule or a manual pass for the MacIntyre card (WATCH-006); INTEGRITY FLAG ruling (WATCH-003); Fredrickson CT-Signals edit (WATCH-004); ID collisions; split the ~851 KB watch list.
+
+*Run completed 2026-10-26 02:37 EDT (single instance at time of writing).*
+
+*Addendum 2026-10-26 06:41 UTC — second Agent 16 firing today (duplicate schedule, as on 10-24 and 10-25). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16]; `review/archive/` still 25 files ending at `2026-10-16_decisions.md`; nothing in `needs_review/`, `review/archive/` or `pending/` is newer than the 06:37 write; `prs_triplets.md` and `sewing_agent_log.md` unchanged. Nothing due (WATCH-003/-004 on 10-30; WATCH-005/-006 on 10-31). Nothing resolved. WATCH-003 stale flag (22 checks, Escalate to Tom) stands.*

@@ -3754,3 +3754,23 @@ OPEN-274:
     Original item: OPEN-274
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-273 (update 2026-10-25): Duplicates again on 10-25 (ASSUMPTION-1925): at least 8 tasks, sewing weekly three times. 15d says its double run is 'one firing running in two sessions', not a duplicate registration, which conflicts with scheduler health listing it as DOUBLE-REGISTERED (ASSUMPTION-1926). This task's cloud firing wrote `changelog/2026-10-26_changes.md` (NO-OP) under a UTC date; this local pass appends to `2026-10-25_changes.md`.
+
+OPEN-274 (update 2026-10-25): The lit pipeline (REVISE-523) offers a concrete answer: each cloud routine writes a tagged, timestamped heartbeat file that the Mac side reads, and monitors treat missing or expired heartbeats as failures (ASSUMPTION-1929). Still needs Tom to adopt it.
+
+OPEN-272 (update 2026-10-25): Today's telemetry failure was again temp space (7.9 GB DB vs 4.3 GB free), consistent with 10-24, not the 10-23 H-Drive account (ASSUMPTION-1932).
+
+OPEN-264 (update 2026-10-25): Eleventh local pass. Read the final message of 15 sessions dated 10-25. No interactive session; the chat scrape found no walk conversation (latest chat was casual, no C2A2 content).
+
+OPEN-275:
+  Raised: 2026-10-25 by 14a/14b (ASSUMPTION-1928; PRESUMPTION-1185)
+  Question: Is `lit_pipeline.lock` actually in use? It has not changed since 2026-10-15 while at least four pipeline runs report acquiring and releasing it. Either the runs use a different lock path, or they narrate a step they skip. Which, and should a monitor check the lock's mtime after each pipeline run?
+  Needs: in-house check (any agent with read access to the pipeline SKILL and lock path); Tom if the lock path is to change
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-275
+    Item type: OPEN QUESTION
+    Current status: OPEN

@@ -884,4 +884,76 @@ PRS-97:
   Confidence: Medium
   Evidence: Transcript, 0:11:35-0:17:43 and 0:43:13-0:46:32.
 
-*Total PRS triplets: 97*
+PRS-98:
+  Problem: Why are cosmological models that predict Boltzmann brains unacceptable if they are not strictly inconsistent?
+  Resource: 'Cognitive instability' criterion: a fluctuation brain has no reason to trust memories not causally linked to a real past.
+  Solution: Reject such models because they undermine the evidence used to support them (epistemic self-undermining); probabilities are fundamentally about knowledge.
+  Date Added: 2026-10-26
+  Source: Mindscape AMA | October 2026; PROP-2026-10-16-001
+  Confidence: High (Carroll's stated view)
+  Evidence: AMA answer on Boltzmann brains and self-locating uncertainty. Only ~100k of ~127k transcript characters were read.
+
+PRS-99:
+  Problem: What is 'measurement' in quantum mechanics, given that textbooks rarely define it?
+  Resource: Distinction between Dirac's description of what measurement does and a physical definition of it (Hermitian operators/eigenstates are not a definition).
+  Solution: Treat the lack of a definition as a genuine gap in standard pedagogy, motivating Everettian/many-worlds treatments.
+  Date Added: 2026-10-26
+  Source: Mindscape AMA | October 2026; PROP-2026-10-16-001
+  Confidence: Medium
+  Evidence: AMA answer on Dirac's measurement description and whether the Schrodinger time parameter is fundamental (second part only partly read).
+
+PRS-100:
+  Problem: Does progress in AI-generated, Lean-verified proofs (e.g. a claimed Navier-Stokes blow-up) tell us anything about physical fluids or about 'understanding'?
+  Resource: Separation of mathematical result from physical-model validity (singularities mark failure of the fluid approximation).
+  Solution: Treat such proofs as mathematical results with limited physical import; the provenance and history of a work matter beyond its content.
+  Date Added: 2026-10-26
+  Source: Mindscape AMA | October 2026; PROP-2026-10-16-001
+  Confidence: Medium
+  Evidence: AMA answers on Navier-Stokes, Lean, and AI-generated Mindscape. Bears on AI agents as community members (C2A2).
+
+PRS-101:
+  Problem: What is the right macroscopic measure of human impact on the biosphere? Counting species lost undercounts some losses and overcounts others.
+  Resource: The functional role of keystone megafauna (bison, whales, elephants moving nutrients and seeds); 'shifting baseline syndrome'.
+  Solution: Measure impact by structural simplification of food webs, not species count. Harper: megafaunal loss is 'a rounding error in terms of the number of animal species' but of 'huge significance because of the roles that these organisms play'. Carroll endorses the framing without adding an argument. Guest's thesis.
+  Date Added: 2026-10-26
+  Source: Mindscape 371 | Kyle Harper on How Humans Have Shaped Life on Earth; PROP-2026-10-23-007
+  Confidence: Medium
+  Evidence: Transcript 0:23:48-0:27:21.
+
+PRS-102:
+  Problem: When one species becomes globally dominant, how does the complexity of the whole system change?
+  Resource: Harper's 'first great homogenization': domesticated and commensal species dominate (about 32 billion chickens, per FAO estimates Harper himself calls hard to verify); a 'new Pangea' of moved species.
+  Solution: Treat the human era as a drop in ecological complexity: fitness for most species comes to depend mainly on how well they interact with one dominant species. Carroll states this himself (0:42:33).
+  Date Added: 2026-10-26
+  Source: Mindscape 371 | Kyle Harper; PROP-2026-10-23-007
+  Confidence: Medium (chicken figure unverified)
+  Evidence: Transcript 0:42:33-0:46:39.
+
+PRS-103:
+  Problem: Does the growth of social and cultural complexity require using up natural complexity?
+  Resource: Carroll's irony (0:56:43): new modes of social complexity damage the complexity of the natural world; Harper: cultural complexity is 'in some ways fueled by literally metabolizing natural systems', though 'it doesn't necessarily have to be that way'.
+  Solution: Open question, posed not solved. Candidate bridge (this agent's, not Carroll's): entropy and free-energy accounting at civilizational scale, scaling up the ep. 366 sunlight-photon accounting.
+  Date Added: 2026-10-26
+  Source: Mindscape 371 | Kyle Harper; PROP-2026-10-23-007
+  Confidence: Speculative
+  Evidence: Transcript 0:56:43-0:57:18. Harper explicitly denies the link is deterministic.
+
+PRS-104:
+  Problem: Is 'invasive species' a coherent concept when ecosystems are dynamic and ranges always change?
+  Resource: Carroll's challenge (0:57:18) that the notion may be 'antiquated'; Harper's reply that humans as transporting agent is 'a different cause'; the dodo's loss came from humanity's 'retinue' (rats, pigs, macaques, cats, goats).
+  Solution: Replace the norm of 'belonging' with a cause-and-consequence criterion: judge by consequences. A higher-level category kept because it is useful, not fundamental, which is structurally the poetic-naturalist prescription for emergent vocabularies (agent's reading, not Carroll's claim).
+  Date Added: 2026-10-26
+  Source: Mindscape 371 | Kyle Harper; PROP-2026-10-23-007
+  Confidence: Medium
+  Evidence: Transcript 0:57:18-1:04:51.
+
+PRS-105:
+  Problem: If technological substitution does not reduce exploitation, what does?
+  Resource: Harper's whaling case: kerosene and electric light made whale oil obsolete for lighting, yet whaling intensified until the 1973 Endangered Species Act and international conventions.
+  Solution: Collective valuation, a moral choice, is the effective cause, not efficiency: 'The only reason we stop killing whales is because we decide to.' Carroll ties this to how a different moral system can change how people live; Harper points to Christianization widening who was recognized as human.
+  Date Added: 2026-10-26
+  Source: Mindscape 371 | Kyle Harper; PROP-2026-10-23-007
+  Confidence: Medium (historical details are Harper's, unchecked)
+  Evidence: Transcript 1:17:22-1:24:41. Carroll's question about Christianity as moral reorientation is an opening toward the Stump/Wright/Rohr traditions.
+
+*Total PRS triplets: 105*

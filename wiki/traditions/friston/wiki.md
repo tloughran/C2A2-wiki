@@ -228,3 +228,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 3 triplets added from 1 approved proposal: PRS-79, PRS-80, PRS-81.
 
 - `PROP-2026-10-12-002` — The phantastic organ: predictive processing in the brain (paper, https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1901293/full) → PRS-79, PRS-80, PRS-81. Active Research Question 22 added.
+
+### Ingest 2026-10-26
+
+3 triplets added from 1 approved proposal (decision email 2026-10-25): PRS-82..84.
+
+- `PROP-2026-10-23-001` - The Free Energy Principle and Free Markets (Entropy 28(9):956, 2026-08-25) -> PRS-82, PRS-83, PRS-84. Abstract and Introduction read only; results sections unread. First application of the FEP to an institution.
+
+Open: whether the market's attracting set is analogous to a tradition's characteristic questions (a market's attractor is not a telos).

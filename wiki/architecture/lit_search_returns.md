@@ -51765,3 +51765,109 @@ DISPOSITION-1099:
 - 15a and 15b ran as separate subagents; each reported it did not open the other direction's directory or this file. Each wrote only its two result files; the orchestrator wrote all register appends and queue tags.
 - Read in full: 15a — Zalando "Parallel Run Pattern". 15b — SRE Book ch. 6. 15a's fetch of SRE ch. 6 returned no content (asymmetry noted). Newman, SRE Workbook, Prometheus, dbt, Diffy: snippet/secondary only.
 - Both sides rate the search preliminary (15a 8 searches/2 fetch attempts; 15b 6 searches/1 fetch).
+
+
+## 2026-10-26 — 15a / 15b / 15c returns (run cowork-local-2026-10-26-fb3b3795)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1184
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Hadoop Manifest Committer protocol / Cloudera _SUCCESS docs (whole-job commit; partial-output variants called unsafe); practitioner idempotency guidance (snippet)
+  Summary: Rerun guidance checks that output is finished, not merely present. CronJob concurrencyPolicy checks only whether the prior run finished, not what it produced. Usual fix is atomic commit + existence check, not a content check on every later run. Preliminary; no NOVELTY-FLAG.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1184_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Current status: SEARCHED-15a
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1184
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (against the remedy; not the diagnosis)
+  Key source: Derosiaux 2024, Conduktor, idempotent consumers (read in full; vendor blog); Kubernetes CronJob concurrencyPolicy (snippet)
+  Specific risk: conflating 'complete' with 'correct': the 10-25 misroute was a correctness failure.
+  Summary: Standing down on existing output is standard and safe when the done-marker is written atomically with the work; a later completeness check adds a race. A completeness check would not have caught MONITOR-685 (complete but wrong).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1184_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Current status: SEARCHED-15b
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1185
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: arXiv 2604.16706 (fabricated tool runs in up to 37.5% of traces; snippet); Kleppmann 2016 fencing tokens (secondary only)
+  Summary: Agents claiming tool calls/outcomes that never happened is a measured failure mode (~14–45% across setups, preprints). Lock-holder belief proves nothing; protected storage must verify a fencing token. Two citations could not be tied to a specific paper — held at Moderate.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1185_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Current status: SEARCHED-15a
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1185
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate (against the remedy and the instance evidence); diagnosis supported
+  Key source: Kleppmann 2016 fencing tokens (snippet); Soni 2026 ToolFailBench arXiv 2607.04686 (abstract only)
+  Summary: External attestation that a lock was taken is not the standard fix; a fencing token checked by the shared files is. The unchanged-lock-file observation is circumstantial until the lock mechanism is known.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1185_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Current status: SEARCHED-15b
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1186
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: SRE Workbook ch. 6 'Eliminating Toil' (partly read); Rootly/Squadcast alert-dedup guides (snippet)
+  Summary: Excess alerts mask severe ones; a written fix should be automated. But the same source advises guarded, human-backed steps before self-service, which may justify the task-file ban. No source names this setup an anti-pattern or gives a volume threshold; 8 notes/day is low by on-call standards.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1186_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Current status: SEARCHED-15a
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1186
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Cai et al. 2026 GuardedAct arXiv 2609.11264 (read in full; weak venue); Google SRE ch. 5 toil (snippet)
+  Summary: Strong against letting agents change schedules (ungated AI fixes ~5x collateral damage of gated). Real gaps: duplicate notes not merged into one incident, no escalation while Tom is away. SYSTEMIC-RISK candidate 'artefact-as-proof' across 1184/1185/1186 (full text in the 1186 against file).
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1186_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Current status: SEARCHED-15b
+
+DISPOSITION-1100:
+  Date: 2026-10-26
+  Item: PRESUMPTION-1184
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (remedy only)
+  Net assessment: Both sides accept the diagnosis: a later firing ratified the earlier copy's output without any check, and that output was wrong (MONITOR-685). They split on the remedy: 15a favours verifying completion before standing down; 15b shows existence-based stand-down is safe only if the done-marker is committed atomically with the work, and notes completeness would not have caught a misroute.
+  Disposition: REVISE (REVISE-525 (Medium))
+  Reasoning: Presumption with uncontested diagnosis and a concrete in-house failure, so not MONITOR. Not INCORPORATE: nothing to validate as a premise. 15b sharpens the fix: the problem is that 'any prior output' is accepted without a run-id-tagged commit marker, and that correctness review is conflated with deduplication. Consistent with PREMISE-086 / REVISE-524 (verify, don't infer, health); no premise conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1184 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1184_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1184_against.md
+
+DISPOSITION-1101:
+  Date: 2026-10-26
+  Item: PRESUMPTION-1185
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (remedy and instance)
+  Net assessment: The general failure mode (agents narrating tool actions that did not occur) is supported by several 2025–26 preprints, snippet-level. But the motivating instance is contradicted by in-house state observed by this run: review/lit_pipeline.lock, which the lock script (not the agent) appends, has LOCKED/RELEASED lines for 10-24, 10-25 and 10-26, so it has changed since 10-15. The 15d report that it 'still reads RELEASED 2026-10-15' may reflect a cloud firing that cannot see the Mac filesystem.
+  Disposition: MONITOR (MONITOR-697 (High))
+  Reasoning: Not REVISE: the evidence that lit-pipeline lock compliance rests only on narration is weakened (the script writes the audit trail), and the remedy is contested (fencing token vs external attestation). Not INCORPORATE: diagnosis is real in general and 'PASS credited to another run' (ASSUMPTION-1932) is unresolved. High priority because two write collisions (10-01, 10-15) already occurred. Observation only: this run did not test ASSUMPTION-1928 (in-house lane) and did not tag it.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1185 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1185_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1185_against.md
+
+DISPOSITION-1102:
+  Date: 2026-10-26
+  Item: PRESUMPTION-1186
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Both sides agree the reports are not consolidated: many separate 'needs you' notes on one fault, no single incident key, no priority, no escalation while Tom is away. Both also find support for keeping agents out of schedule changes (gated remediation), so the 'delegate remediation' half of the presumption is challenged, not supported.
+  Disposition: REVISE (REVISE-526 (Medium))
+  Reasoning: REVISE on the narrowed claim (consolidation and escalation), not on delegated remediation, which both directions advise against. Urgency Medium: the underlying double-firing fault is already flagged (REVISE-523), and this item concerns how the ask reaches Tom. Consistent with OPEN-270; no premise conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1186 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1186_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1186_against.md
+
+### Evidence-quality notes (2026-10-26)
+- 15a and 15b ran as separate subagents; each reported it did not open the other direction's directory or this file, and wrote only its three result files. The orchestrator (15c) wrote all register appends and queue tags.
+- Read in full: 15a — SRE Workbook ch. 6 (partial). 15b — Conduktor idempotent-consumers post; GuardedAct preprint; one further fetch. Kleppmann 2016 and Kubernetes docs: snippet/secondary only on both sides (fetch refused for 15a). Several preprint citations are snippet/abstract only; two 15a citations could not be tied to a specific paper.
+- Both sides rate the searches PRELIMINARY (9 searches each).
+- SYSTEMIC-RISK (candidate, 15b): 'artefact-as-proof' — an agent's own artefact (output file, narrated lock, 'needs you' note) stands in for enforced state. Spans 1184/1185/1186; extends the 10-25 candidate (health inferred from no-bad-signal: 1177/1179/1182). No flag file written, per precedent.

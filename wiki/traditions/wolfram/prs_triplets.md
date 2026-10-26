@@ -651,7 +651,52 @@ PRS-71:
   Confidence: Medium (stated position; the Navier-Stokes result itself he says he has "not gone through the details of")
   Evidence: Transcript: "what LLMs are good at is kind of taking those things ... a result from a paper here, a result from one there ... gluing them together"; "no human has read millions of mathematical papers, so if it's something which has to sort of span many, many pieces, that's a thing for which the AI has a tremendous advantage"; "the zeroth problem in mathematics is to figure out what question you're asking." Kept, narrowed to the literature-recombination claim, because the 2026-09-28 essay's ingested triplets (PRS-66-68) do not make it; the human-sets-direction half duplicates PRS-66 and is not re-recorded.
 
-*Total PRS triplets: 71*
+PRS-72:
+  Problem: If AI can prove theorems and invent concepts, what remains for human-driven mathematical inquiry, and how can AI-generated mathematics be trusted?
+  Resource: Computational irreducibility with 'pockets of reducibility'; ruliad-sampling by finite observers (no 'absolute mathematics'); Wolfram Language as a human- and machine-readable formalization target; computational spot-checks.
+  Solution: AI accelerates literature synthesis and verification-by-computation while humans supply goals and the social adoption of concepts; concepts invented automatically are 'born alien' until a community adopts them; mathematics is never finished because irreducibility guarantees endless new structure. Named risks: unreliable long proofs and autoformalization proving a different statement than intended.
+  Date Added: 2026-10-26
+  Source: What's the Future for Pure Math Research in the Age of AI? (Wolfram blog, 2026-09-28); PROP-2026-10-24-002
+  Confidence: Medium (read via summarizing fetch; verify against full text)
+  Evidence: Claims that 'great math is ... defined by the questions it asks' and that auto-invented concepts are 'born alien' without social adoption, per the article. Strong C2A2 fit: 'born alien' is the second-first-language problem in mathematical form.
+
+PRS-73:
+  Problem: Why does biology display such diverse, modular, apparently designed form, and can it be explained without mechanism-by-mechanism accounts?
+  Resource: Ruliobiology: rulioorganisms (symmetric 5-color cellular automata; rule = genotype, grown pattern = phenotype) under adaptive evolution; the 'rulial ensemble' reachable under computationally simple fitness functions; 'polyplexy' (novelty at every scale).
+  Solution: Adaptive evolution plus computational irreducibility makes much biological form partly inevitable and general across fitness functions; observed forms are 'frozen pieces of computational irreducibility' that happen to work; Darwin's 'laws' are computational, history-dependent principles, not physics-style formulas. Answers the open morphogenesis item in PRS-03 with a concrete model.
+  Date Added: 2026-10-26
+  Source: Endless Forms Most Beautiful and Most Wonderful: Ruliobiology (Wolfram blog, 2026-10-23); PROP-2026-10-24-001
+  Confidence: Medium (summarizing fetch)
+  Evidence: Reported modular organs joined by random connective tissue, conserved early development, convergent forms by different routes, boundary fractal dimension near 1.3 (per the article, unverified here).
+
+PRS-74:
+  Problem: How predictable are evolutionary ancestry and trait co-variation?
+  Resource: Simulated lineages of rulioorganisms; 'bulk orchestration' (parts behave differently in isolation than in the whole).
+  Solution: Ancestry is only partly predictable; coarse features give no simple 'law of motion'; traits can correlate positively without Pareto tradeoffs, so some outliers 'win on all counts'.
+  Date Added: 2026-10-26
+  Source: Endless Forms Most Beautiful and Most Wonderful (Wolfram blog, 2026-10-23); PROP-2026-10-24-001
+  Confidence: Medium (summarizing fetch)
+  Evidence: Selecting for lifetime produces extreme side-effect traits (e.g. width) more than selecting for width directly (per the article).
+
+PRS-75:
+  Problem: Can the alignment problem be solved completely, i.e. can an AI's future behavior be guaranteed in advance?
+  Resource: Computational irreducibility: for a computationally rich system there is in general no shortcut that predicts behavior without running it.
+  Solution: (Inferred, not heard) Complete alignment is impossible in principle for any AI capable enough to be useful; what remains is constraints plus monitoring of behavior as it happens. First alignment PRS in the wolfram set.
+  Date Added: 2026-10-26
+  Source: The future with AI will be very different from what we're being sold (Jon Hernandez interview, 2026-10-08); PROP-2026-10-24-003
+  Confidence: Speculative (chapter titles only; transcript not read; wording in the interview unverified)
+  Evidence: Chapter 'Is It Impossible to Fully Solve the Alignment Problem?' (00:53:34) beside 'Computational Irreducibility: AI's Fundamental Limit' (00:20:22). Bears on CROSS-049 and CROSS-126; supports measuring behavior in context (the accelerator-detector) as the route left if alignment cannot be proved.
+
+PRS-76:
+  Problem: Why do larger, more capable AI models become harder to explain?
+  Resource: Irreducibility applied to trained networks: capability comes from drawing on irreducible computation, which cannot be compressed into a human-readable story.
+  Solution: (Inferred, not heard) Explainability and power trade off structurally, not only because interpretability tools are immature.
+  Date Added: 2026-10-26
+  Source: The future with AI will be very different from what we're being sold (Jon Hernandez interview, 2026-10-08); PROP-2026-10-24-003
+  Confidence: Speculative (chapter titles only)
+  Evidence: Chapters 'AI's Black Box' (00:49:26) and 'The Cost of More Powerful AI: Losing Explainability' (00:52:13). Candidate-03 of the card (AI originality) was not entered: likely a restatement of PRS-66/PRS-71.
+
+*Total PRS triplets: 76*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

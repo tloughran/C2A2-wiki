@@ -239,3 +239,13 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-11-002` — Francis and the Natural World: Weekly Summary (blog, https://cac.org/daily-meditations/francis-and-the-natural-world-weekly-summary/) → PRS-111, PRS-112
 
 - 2026-10-14 — **Advances:** PRS-109 gives the tradition an explicit teleology, the clearest link yet between the Universal-Christ alpha/omega (PRS-03, PRS-11) and the two-halves-of-life frame: the end operates from the start as an implanted desire, with no backward causation. Opens the CAC "Returning Home" series (revised *Falling Upward*, 2024); later meditations attach here. PRS-112 restates the contemplation-into-action cycle (cf. PRS-38) with Woodley's vulnerability as its fruit. **Opens:** PRS-110 (Speculative) asks whether "original union" is ontological or only experiential, which decides the Kastrup parallel; PRS-111 asks whether Franciscan kinship is shared descent (Boff, weak) or shared agency (Levin, strong); and Stump is asked whether "incarnation everywhere" blurs the hypostatic union or is Thomist participation. PRS-111/112 close the Francis/nature thread opened by PRS-105/106.
+
+### Ingest 2026-10-26
+
+5 triplets added from 3 approved proposals (decision email 2026-10-25): PRS-113..117.
+
+- `PROP-2026-10-18-004` - Returning Home: Weekly Summary (CAC Week 41) -> PRS-113.
+- `PROP-2026-10-25-001` - Empire and Christianity: Weekly Summary (CAC Week 42) -> PRS-114, PRS-115.
+- `PROP-2026-10-25-002` - Universal Healing (CAC with Randy Woodley) -> PRS-116, PRS-117. The author is Woodley; Rohr is curator. PRS-117 (original sin as control) is Speculative and recorded as contested, not averaged.
+
+Standing tension recorded for Wright/Stump adjudication: original sin as metaphysical fact versus social control (Woodley, platformed by Rohr).

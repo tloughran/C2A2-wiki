@@ -807,3 +807,14 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [PIPELINE, EVIDENCE] **Evidence weather:** 16 triplets; Speculative = kastrup PRS-93..94 (2). Document-explorer card (PROP-2026-10-13-004) yielded 0 triplets by its own audit (49 MODEL, 2 duplicate, 1 undetermined). Porter (PRS-SE-03) has no tradition file; not filed.
 
 [EVALUATED: 2026-10-16 - FINDING-106..107; see pattern_detector_findings.md]
+
+## 2026-10-26 signals
+
+- [BRIDGE] **Hoffman trace complexity x Wolfram bounded observer** (CROSS-158; hoffman PRS-54, wolfram PRS-72). Paper flagged this itself. Same structure or only alike?
+- [INFRASTRUCTURE] **Irreducibility implies no complete alignment? and 'born alien' concepts** (CROSS-159; wolfram PRS-72, PRS-75). PRS-75 is inferred from chapter titles.
+- [INFRASTRUCTURE] **A tradition's founder using an AI interlocutor to sharpen his position** (CROSS-160; kastrup PRS-96). C2A2 AI-membership premise.
+- [BRIDGE, CAVEAT] **FEP applied to an institution** (CROSS-161; friston PRS-82, PRS-84). Attractor is not telos.
+- [TENSION] **Original sin: metaphysical or control mechanism** (CROSS-162; rohr PRS-117). Woodley's claim, Rohr platforming.
+- [PIPELINE, EVIDENCE] **Evidence weather:** 42 triplets; 11 Speculative; Hawkins x3 cards are TBP-team work read from forum chapter lists; Wolfram interview and 4 Rohr/Wright items rest on descriptions or chapter titles. Duplicate id PROP-2026-10-23-001 on the Friston and Kastrup cards.
+
+[EVALUATED: 2026-10-26 - FINDING-108..110; see pattern_detector_findings.md]

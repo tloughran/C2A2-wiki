@@ -36692,3 +36692,260 @@ ASSUMPTION-1924:
     Current status: UNTESTED
 
 *Extracted by the 14a local pass of 2026-10-24. **16 items (1909-1924); 1910, 1918, 1919, 1920, 1923, 1924 are recurrences or status returns and are not queued; 1921 is context, not queued.** Sessions read (final assistant message): 5a1af009, e9bf6be9, a3a225f8, 1e1d00aa, d737f2ac, 4c05d7bb, bd9d35be, 4effc93e, 22dd1628, 727c4130. 1911 records rationale drift against 1897.*
+
+ASSUMPTION-1925:
+  Date identified: 2026-10-25
+  Statement: [stated] Duplicate firings continued on 10-25. At least 8 tasks ran a later firing that found an earlier same-day run and stood down: wiki daily run, Wright/Rohr, sewing weekly (three firings: census-only, full run, skip), bootstrap audit (two firings 3 min apart), connector health, evening cowork-to-chat, 15d periodic monitor, and this task (cloud NO-OP at 23:37 EDT, then this local run). Stated rationale for standing down, e.g. sewing: 'Running again would have ... added a second row for today to the connectivity log, which would break the weekly series.' Recurrence of ASSUMPTION-1909/1910.
+  Context: 25d26e43; 5044ac9a; df762154; 04552753; dc203972; cd07638e; a4cf1983; changelog/2026-10-26_changes.md
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-274; PRESUMPTION-1180
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1925
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1926:
+  Date identified: 2026-10-25
+  Statement: [stated] 15d: 'There's only one c2a2-periodic-monitor-weekly task in the scheduler, so deleting a duplicate won't fix it. The problem looks like one firing running in two sessions.' Contradiction: scheduler health (ed653aa1) lists c2a2-periodic-monitor-weekly among the 29 DOUBLE-REGISTERED tasks (local entry plus cloud routine). The two diagnoses cannot both be the whole story.
+  Context: a4cf1983; ed653aa1
+  Type: architectural
+  Related decisions: OPEN-273; ASSUMPTION-1909
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1926
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1927:
+  Date identified: 2026-10-25
+  Statement: [stated] 15d: the two simultaneous 15d copies were kept from double-queuing by a checksum guard: 'My own append was blocked by the checksum guard, so nothing was queued twice.' The losing copy then appended a correction (MONITOR-685) that the winning copy had got wrong.
+  Context: a4cf1983
+  Type: architectural
+  Related decisions: PRESUMPTION-1184
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1927
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1928:
+  Date identified: 2026-10-25
+  Statement: [stated] Lock contradiction. 15d: '`lit_pipeline.lock` hasn't changed since 10-15, even though four later pipeline runs say they acquired it.' Today's lit pipeline: 'I got the run lock at the start and released it cleanly at the end.' Verified by this run: the file's mtime is 2026-10-15 00:39 and its content reads 'RELEASED 2026-10-15T04:39:45Z ... instance B'.
+  Context: a4cf1983; dc6ebbd8; lit_pipeline.lock (ls/cat this run)
+  Type: architectural
+  Related decisions: PRESUMPTION-1099; MONITOR-693; PRESUMPTION-1185
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1928
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1929:
+  Date identified: 2026-10-25
+  Statement: [stated] Lit pipeline status returns: PRESUMPTION-1179 -> REVISE-523 (Medium); PRESUMPTION-1182 -> REVISE-524 (Medium). Proposed shared fix: 'Every scheduled routine writes a tagged, timestamped heartbeat, and every monitor treats a missing or expired heartbeat as a failure.' 15b on 1179: a tagged output file each cloud routine writes and the Mac reads would satisfy cutover verification without the Routines connector. 1182 restates validated PREMISE-086. presumptions.md entries for 1179/1182 not edited by this run.
+  Context: dc6ebbd8
+  Type: methodological
+  Related decisions: REVISE-523; REVISE-524; PREMISE-086; OPEN-274
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1929
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1930:
+  Date identified: 2026-10-25
+  Statement: [stated] Budget overruns: the two lit search agents used ~88k and ~97k tokens against the 4k/30k limits despite a 4-search cap; 15d was over budget 'because of how large the registers are'. Measured this run: assumptions.md 2.64 MB, presumptions.md 2.53 MB, for_lit_search.md 2.48 MB, lit_search_returns.md 4.77 MB, monitor_queue.md 1.72 MB (PRESUMPTION-498 recorded 749 KB / 1.14 MB / 1.20 MB for the first three). Recurrence of PRESUMPTION-498 with roughly 2-3.5x growth.
+  Context: dc6ebbd8; a4cf1983; wc -c this run
+  Type: methodological
+  Related decisions: PRESUMPTION-498; Rule 6
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1930
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1931:
+  Date identified: 2026-10-25
+  Statement: [stated] Bootstrap audit: Phase 3 skipped again because it 'would write unreviewed model-written text into about 1,700 files with nobody present'. Census 10-25: 5,693 pages; 4,772 with no inbound links (+16 since 10-18); 803 with one or two; 118 with three or more (+20, largest weekly gain); about 84% orphans. The task is labelled one-time but has fired 19 times (twice today); the agent recommends disabling it and did not, 'because the task file doesn't allow that'.
+  Context: 04552753
+  Type: normative
+  Related decisions: OPEN-273
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1931
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1932:
+  Date identified: 2026-10-25
+  Statement: [stated] OpenStory telemetry wrote PASS although 'this run only partly produced' the feeds. The 7.9 GB database again exceeded sandbox temp (4.3 GB free); the workaround redirected the copy to the outputs folder; node-edges and an earlier PASS line were written at 06:33 'by something other than me, most likely an overlapping scheduled run'. Today's cause matches 10-24 (temp space), not 10-23 (H-Drive).
+  Context: f39519e3
+  Type: empirical
+  Related decisions: OPEN-272; ASSUMPTION-1911; PRESUMPTION-1184
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1932
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1933:
+  Date identified: 2026-10-25
+  Statement: [stated] Unattended Mac-shell access failed again: Desktop Commander was 'declined automatically because nobody was there' for the janitor (which therefore did not run) and the telemetry refresh. The janitor did not fall back to device_bash 'since the three-tier rule rules that out'. The Mac launchd janitor's last recorded run is still 10-18 (#37). Recurrence of the 10-18+ permission finding.
+  Context: 8b825a6c; f39519e3
+  Type: architectural
+  Related decisions: OPEN-270
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1933
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1934:
+  Date identified: 2026-10-25
+  Statement: [stated] OK verdicts from stale or unread inputs recur: scheduler health's run_stall is OK 'judged from routine_health.md. That file is 19 days stale, so this OK covers nothing at the moment'; system health marked 'did the run finish' OK while noting the real verdict is in routine_health.md, which it does not read; its janitor findings are from 10-18. Recurrence of PRESUMPTION-1182 (now REVISE-524).
+  Context: ed653aa1; 0ebe8adc
+  Type: epistemic
+  Related decisions: PRESUMPTION-1182; REVISE-524; PREMISE-086
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1934
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1935:
+  Date identified: 2026-10-25
+  Statement: [stated] Connector health treated an empty read as a failed observation, not a fact: the connector list returned 0 against 16 that morning, 'a failed read, not 16 uninstalls', so it did not overwrite the state file, to avoid a false alarm next week. A working instance of the rule REVISE-524 asks for.
+  Context: dc203972
+  Type: methodological
+  Related decisions: REVISE-524; ASSUMPTION-1934
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1935
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1936:
+  Date identified: 2026-10-25
+  Statement: [stated] Session-transcript access differs by firing. Evening cowork-to-chat: 'Session access worked this time ... Access may be intermittent rather than gone.' This task's cloud firing (23:37 EDT) wrote a NO-OP (changelog/2026-10-26_changes.md: session_info absent); this local firing six minutes later had list_sessions and read_transcript. [inferred] The NO-OP runs are the cloud copies.
+  Context: cd07638e; changelog/2026-10-26_changes.md; this run
+  Type: architectural
+  Related decisions: OPEN-264; OPEN-273
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1936
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1937:
+  Date identified: 2026-10-25
+  Statement: [stated] Review backlog: 20 proposals pending; last review decision on disk 2026-10-16 (nine days). Sunday agents added PROP-2026-10-25-001..004. WATCH-003 is at 22 checks awaiting a ruling; the watch list is about 850 KB. Covered by MONITOR-690 (PRESUMPTION-1138).
+  Context: 25d26e43; 5044ac9a; cbb7c554
+  Type: empirical
+  Related decisions: MONITOR-690; PRESUMPTION-1138; WATCH-003
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1937
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1938:
+  Date identified: 2026-10-25
+  Statement: [stated] 15d on MONITOR-688: the metabolism census producer `metabolism-monitor-weekly` 'has been disabled since 10-04', and `metabolism-regen-daily` since 09-23, so 'the census is still stale and nothing is scheduled to refresh it'. Scheduler health instead lists both as moved to the cloud (WARN: 'the Mac cannot tell whether they fire'). Disabled vs. running unseen in the cloud is unresolved.
+  Context: a4cf1983; ed653aa1
+  Type: architectural
+  Related decisions: MONITOR-688; OPEN-274
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1938
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1939:
+  Date identified: 2026-10-25
+  Statement: [stated] Wright/Rohr second firing wrote no proposals: two fresh searches found nothing new for October, and 'a thin result like that didn't justify adding a fifth or sixth proposal'. It singles out PROP-2026-10-25-002 (Rohr, *Universal Healing*, salvation as healing) as tying to the Summa theme. A counter-instance to PRESUMPTION-1183.
+  Context: 5044ac9a
+  Type: methodological
+  Related decisions: PRESUMPTION-1183
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1939
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Extracted by the 14a local pass of 2026-10-25. **15 items (1925-1939)**; queued [IN-HOUSE]: 1926, 1927, 1928, 1930, 1932, 1935, 1936, 1938. Not queued: 1925, 1933, 1934, 1937 (recurrences), 1929 (status return), 1931, 1939 (framework/context). No interactive Tom session; all sources were scheduled runs.*

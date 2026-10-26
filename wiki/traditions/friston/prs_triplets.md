@@ -745,7 +745,34 @@ PRS-81:
   Confidence: Medium (a review; its new content is mostly in how it synthesizes the field)
   Evidence: Abstract; Section 3 ("The importance of being precise: neuromodulation and representational sharpening").
 
-*Total PRS triplets: 81*
+PRS-82:
+  Problem: Equilibrium macroeconomic models (DGE) assume time-reversible steady states and cannot represent the itinerant dynamics (cycles, oscillations, chaotic orbits) of real markets.
+  Resource: Treat the Market as a nonequilibrium steady state with a pullback attractor; Helmholtz-Hodge normal form whose solenoidal (divergence-free) flow carries business cycles.
+  Solution: A generalization of DGE to nonequilibrium dynamics: a state-space generative model of asset and indicator fluctuations, identifiable from historical data by variational Laplace.
+  Date Added: 2026-10-26
+  Source: The Free Energy Principle and Free Markets (Friston, Medrano, Verbelen; Entropy 28(9):956, 2026-08-25); PROP-2026-10-23-001
+  Confidence: Medium
+  Evidence: Abstract and Introduction read; results sections not read, so the size of any reported improvement and the answer to 'is the Market chaotic?' are not recorded.
+
+PRS-83:
+  Problem: How should an agent make Bayes-optimal decisions inside a stochastic-chaotic system it can only forecast probabilistically?
+  Resource: Posterior predictive densities over future market paths plus expected free energy (EFE) as the policy objective; investor preferences encode high return under drawdown constraints.
+  Solution: Investing as active inference: with no ambiguity, minimizing EFE reduces to risk-sensitive (path-integral) control, reported to improve on baseline policies.
+  Date Added: 2026-10-26
+  Source: The Free Energy Principle and Free Markets (Entropy 28(9):956); PROP-2026-10-23-001
+  Confidence: Medium (improvement claim from the abstract; magnitude not verified)
+  Evidence: Abstract: 'active inference reduces to risk-sensitive control ... we quantify the improvement in portfolio management'.
+
+PRS-84:
+  Problem: Does the FEP's Markov-blanket individuation extend from particles and persons to institutions?
+  Resource: Bayesian mechanics, which pertains to how the internal states of a 'particle, person or institution' stand in relation to external states.
+  Solution: If any institution, including a free market, exists (keeps characteristic states), its flow has the Helmholtz-Hodge form; the FEP describes persistence for any self-organizing system with attracting states.
+  Date Added: 2026-10-26
+  Source: The Free Energy Principle and Free Markets (Entropy 28(9):956); PROP-2026-10-23-001
+  Confidence: Speculative (a framing claim, not an empirical result)
+  Evidence: Section 2 opening paragraph. C2A2 flag: candidate formal vocabulary for how a tradition holds together; a market's attractor is not a tradition's telos (MacIntyre would press this).
+
+*Total PRS triplets: 84*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

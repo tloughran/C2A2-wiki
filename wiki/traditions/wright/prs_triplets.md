@@ -695,4 +695,58 @@ PRS-74:
   Confidence: Speculative
   Evidence: Episode description, question 2. The Mark-ending item duplicates an existing Mike Bird card and was not entered.
 
-*Total PRS triplets: 74*
+PRS-75:
+  Problem: Does justification primarily name individual forensic status or membership in God's single family?
+  Resource: New-perspective reading of Paul; 'righteousness of God' as covenant faithfulness.
+  Solution: Justification declares who belongs to the people of God; individual and corporate are held together.
+  Date Added: 2026-10-26
+  Source: N.T. Wright responds to John Piper: Who got Paul wrong? (Ask NTW bonus, 2026-10-07); PROP-2026-10-18-002
+  Confidence: High (long-standing position; this episode is a restatement)
+  Evidence: Episode description only; consistent with prior wiki anchors. Scriptural anchor for the Summa 2026 salvation-as-inclusion theme.
+
+PRS-76:
+  Problem: What does it mean for Scripture to be authoritative without being a rulebook or proof-text mine?
+  Resource: Narrative reading: the authority of Scripture is the authority of God exercised through Jesus.
+  Solution: Read within the whole story (creation, Israel, Jesus, new creation) so that claims are tested against the plot.
+  Date Added: 2026-10-26
+  Source: Are Christians reading the Bible wrong? (Ask NTW bonus; God's Homecoming ch. 10); PROP-2026-10-18-003
+  Confidence: High (as Wright's stated rule; description-level evidence)
+  Evidence: Episode description; transcript not read. Method-level constraint for the Summa 2026 synthesis.
+
+PRS-77:
+  Problem: How should prophetic texts be read so that they constrain, rather than decorate, theological claims about salvation?
+  Resource: Reading Isaiah 40-55 as one unfolding narrative: exile, divine return to Zion, Servant, covenant renewal, new creation.
+  Solution: Salvation is Israel's exile ending through God's own return and the Servant's vocation, fulfilled in Jesus and extended to a new-creation people.
+  Date Added: 2026-10-26
+  Source: Into the Heart of Isaiah: The Multi-layered Message of Isaiah 40-55 (SPCK, 2026-10-15); PROP-2026-10-18-001
+  Confidence: Medium (publisher summary only)
+  Evidence: SPCK description and ntwrightpage announcement; chapter-level content not read.
+
+PRS-78:
+  Problem: How can a single figure's suffering be representative of a people (corporate personality)?
+  Resource: The Servant as Israel and Israel's representative.
+  Solution: Vocation, not mere substitution, is the mechanism of inclusion.
+  Date Added: 2026-10-26
+  Source: Into the Heart of Isaiah (SPCK, 2026-10-15); PROP-2026-10-18-001
+  Confidence: Speculative (inferred from the 'vocation of the suffering Servant' theme)
+  Evidence: SPCK theme list.
+
+PRS-79:
+  Problem: What biblical imagery grounds new creation as union rather than replacement?
+  Resource: Temple and marriage as paired images of heaven-and-earth joining.
+  Solution: New creation as consummated covenantal union, not escape or destruction.
+  Date Added: 2026-10-26
+  Source: Can Christians serve in the military? (Ask NTW, 2026-10-18); PROP-2026-10-25-003
+  Confidence: Medium (pending transcript)
+  Evidence: Episode description; Wright's prior Ascension/heaven-earth statements. The war-and-vocation item (Romans 13, just war) was not entered: positions not determinable from the description.
+
+PRS-80:
+  Problem: Is ecclesial unity essential to, or merely supportive of, salvation's public meaning?
+  Resource: John 17-style unity and Romans 14-15 ('a team sport') as the church's witness.
+  Solution: Unity as constitutive of mission and of the corporate 'people of God' reality.
+  Date Added: 2026-10-26
+  Source: Is Christianity making a comeback? The 'quiet revival' ... and church unity (Ask NTW, 2026-10-12); PROP-2026-10-25-004
+  Confidence: Speculative (pending transcript)
+  Evidence: Episode description.
+
+*Total PRS triplets: 80*

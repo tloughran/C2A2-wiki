@@ -197,3 +197,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 1 triplet added from 1 approved proposal: PRS-52.
 
 - `PROP-2026-10-13-001` — The Trace Podcast, Episode 1: Traces of Consciousness (podcast, https://www.youtube.com/watch?v=MIwh9_Stmm0) → PRS-52. PRS-CANDIDATE-01 (minimal observer / observer windows / recursive trace logic) skipped as a duplicate of PRS-07, PRS-08, PRS-30, PRS-46. Added Question 24 (acquisition).
+
+### Ingest 2026-10-26
+
+4 triplets added from 1 approved proposal (decision email 2026-10-25): PRS-53..56.
+
+- `PROP-2026-10-23-004` - Trace Logic and Theory of Computation (Trace Institute working paper) -> PRS-53..56. **Undated, no named author, unpublished.** Counted as program output under PRS-19; Hoffman's own authorship is unconfirmed. Formal results (Thms 4.6, 6.4-6.9, 7.5-7.13) are the paper's own and unreviewed.
+
+First rigorous computation-theory treatment of trace order. The two real totals: the file also carries a documented stale mid-file total line of 16; only the closing total was changed.

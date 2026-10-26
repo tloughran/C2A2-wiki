@@ -1041,4 +1041,49 @@ PRS-112:
   Confidence: Medium
   Evidence: Sunday and Friday excerpts.
 
-*Total PRS triplets: 112*
+PRS-113:
+  Problem: Why does the gospel get absorbed into dominating structures despite a founder who inverts them?
+  Resource: 'I win, therefore I am' as the empire-era false self; 'religion of the wound' (the risen Christ keeps his wounds).
+  Solution: Recover a Christ who heals rather than conquers; identity grounded in woundedness and shadow-ownership, dissolving the winner/loser ranking.
+  Date Added: 2026-10-26
+  Source: Empire and Christianity: Weekly Summary (CAC Week 42); PROP-2026-10-25-001
+  Confidence: Medium
+  Evidence: Weekly summary, Sunday/Monday/Saturday practice (adapted from a 2018 Conspire talk). Convergent with Wright's Caesar-vs-Christ political theology.
+
+PRS-114:
+  Problem: How does false-self psychology scale to institutions?
+  Resource: Projection of the unowned shadow onto out-groups as the mechanism of imperial religion.
+  Solution: Shadow-integration as the social as well as the personal form of conversion.
+  Date Added: 2026-10-26
+  Source: Empire and Christianity: Weekly Summary (CAC Week 42); PROP-2026-10-25-001
+  Confidence: Speculative
+  Evidence: Saturday practice on owning the shadow versus projecting fear.
+
+PRS-115:
+  Problem: What is salvation if not escape or reward?
+  Resource: Sin as imbalance or broken harmony; salvation as present, communal healing (shalom, including the land). Randy Woodley's argument, presented by Rohr.
+  Solution: Reframe soteriology as restoration of right relation across creation.
+  Date Added: 2026-10-26
+  Source: Universal Healing (CAC Daily Meditation with Randy Woodley); PROP-2026-10-25-002
+  Confidence: Medium (author is Woodley; Rohr is curator)
+  Evidence: Woodley excerpt: 'Salvation is about one thing: healing.' Paradigm-bridge candidate (salvation as relational restoration ~ loving unity as telos).
+
+PRS-116:
+  Problem: Does the doctrine of original sin do metaphysical or merely social work?
+  Resource: Woodley's critique of original sin as a control mechanism.
+  Solution: Treat as contested; flag for Wright/Stump adjudication rather than averaging.
+  Date Added: 2026-10-26
+  Source: Universal Healing (CAC Daily Meditation with Randy Woodley); PROP-2026-10-25-002
+  Confidence: Speculative (Woodley's claim; Rohr only platforms it)
+  Evidence: Same meditation. Live tension with Wright and Stump on original sin.
+
+PRS-117:
+  Problem: Why does finite consciousness experience persistent dissatisfaction that no object resolves?
+  Resource: Homesickness as echo of original union and of God's longing for us (Rohr, citing James Finley; Brown, Jennings and Butler Bass on homing).
+  Solution: Dissatisfaction is the pull of the telos; resolution is mutual longing meeting, not acquisition. Death is read as 'finally going home'.
+  Date Added: 2026-10-26
+  Source: Returning Home: Weekly Summary (CAC Week 41); PROP-2026-10-18-004
+  Confidence: Medium
+  Evidence: Week 41 summary and practice. Contemplative counterpart to Wright's exile-and-homecoming (see wright PRS from PROP-2026-10-18-001).
+
+*Total PRS triplets: 117*

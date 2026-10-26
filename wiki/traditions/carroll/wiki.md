@@ -206,3 +206,12 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 
 - `PROP-2026-10-09-001` — 370 | Daniel Akerib on a Faint Hint of Dark Matter (podcast, https://preposterousuniverse.com/podcast/2026/10/05/370-daniel-akerib-on-a-faint-hint-of-dark-matter/) → PRS-95, PRS-96, PRS-97
 - Evidence note: transcript read in full to ~1:04:30 of 1:16, then Carroll's lines only. PRS-95 is Carroll's own stated view (High); PRS-96 rests on a one-line Carroll aside with the argument Akerib's (Medium); PRS-97 is mostly Akerib's account with a Carroll summary (Medium).
+
+### Ingest 2026-10-26
+
+8 triplets added from 2 approved proposals (decision email 2026-10-25): PRS-98..105.
+
+- `PROP-2026-10-16-001` - AMA | October 2026 (podcast, 2026-10-12) -> PRS-98, PRS-99, PRS-100. Only ~100k of ~127k transcript characters were read; the tail (AI-risk answers) is unread.
+- `PROP-2026-10-23-007` - 371 | Kyle Harper on How Humans Have Shaped Life on Earth (podcast, 2026-10-19) -> PRS-101..105. Transcript read in full (0:00-1:24:54). The guest supplies most content; PRS-101 and PRS-105 are Harper's theses that Carroll endorses or frames. PRS-103 is Speculative (entropy-accounting bridge is the agent's).
+
+New open thread: whether values (biodiversity 'valuable for its own sake') are decided or discovered, a live test of poetic naturalism (PRS-105 context).

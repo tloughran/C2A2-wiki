@@ -2391,3 +2391,37 @@ Phase 0: no decision emails. Phase 1: ledger OPEN=1 unchanged (Wright PROP-2026-
 ### 2026-10-25 second orchestrator firing (verification only)
 Phase 0: no new decision email (only old April/July unread threads; 07-23 and 04-08 archives exist, already applied). Phase 1: 0 ingested. Phase 2: skipped (4 Sunday specialist cards today). Phase 3/4 not repeated (page 2026-10-25_review.html + draft made by primary run). 5.5/5.6 not re-run. Phase 6: no git.
 **Network: 1041 PRS / 157 CROSS / 107 FINDING.** Pending = 20.
+
+## 2026-10-26 - C2A2 daily run (Mon, Levin + Friston specialist day, cloud orchestrator)
+
+**Phase 0: one decision email, 20 APPROVE.** `[C2A2-review-decision] 2026-10-25` (thread 1a174781029673f3, sent 10-25 19:09Z). Pending files carry `proposal_id`, not `prop_id`; matched on `proposal_id`. PROP-2026-10-23-001 is listed twice and is shared by two cards (Friston, Kastrup); both approved. Archive `review/archive/2026-10-26_decisions.md`. Email appended to `provenance/decision_emails.json` (22 emails). `review/2026-10-25_review.html` deleted. Pending 23 -> 3 (the three 2026-10-26 specialist cards, undecided).
+
+| File | Agent | Date | Triplets | Notes |
+|---|---|---|---|---|
+| `2026-10-24_wolfram_future-of-pure-math-in-age-of-ai.md` | Wolfram + Master | 2026-10-26 | 1 (PRS-72) | PROP-2026-10-24-002 |
+| `2026-10-24_wolfram_ruliobiology-endless-forms.md` | Wolfram + Master | 2026-10-26 | 2 (PRS-73..74) | PROP-2026-10-24-001 |
+| `2026-10-24_wolfram_jon-hernandez-ai-future-interview.md` | Wolfram + Master | 2026-10-26 | 2 (PRS-75..76) | PROP-2026-10-24-003; chapter titles only; Speculative |
+| `2026-10-16_carroll_mindscape-ama-october-2026.md` | Carroll + Master | 2026-10-26 | 3 (PRS-98..100) | PROP-2026-10-16-001 |
+| `2026-10-23_carroll_mindscape-371-harper-last-animal.md` | Carroll + Master | 2026-10-26 | 5 (PRS-101..105) | PROP-2026-10-23-007 |
+| `2026-10-18_rohr_returning-home-weekly-summary.md` | Rohr + Master | 2026-10-26 | 1 (PRS-113) | PROP-2026-10-18-004 |
+| `2026-10-25_rohr_empire-and-christianity-weekly-summary.md` | Rohr + Master | 2026-10-26 | 2 (PRS-114..115) | PROP-2026-10-25-001 |
+| `2026-10-25_rohr_universal-healing-woodley-salvation-as-healing.md` | Rohr + Master | 2026-10-26 | 2 (PRS-116..117) | PROP-2026-10-25-002 |
+| `2026-10-18_wright_ask-ntw-bonus-responds-to-piper-justification.md` | Wright + Master | 2026-10-26 | 1 (PRS-75) | PROP-2026-10-18-002 |
+| `2026-10-18_wright_ask-ntw-bonus-gods-homecoming-ch10-bible-as-story.md` | Wright + Master | 2026-10-26 | 1 (PRS-76) | PROP-2026-10-18-003 |
+| `2026-10-18_wright_into-the-heart-of-isaiah-40-55.md` | Wright + Master | 2026-10-26 | 2 (PRS-77..78) | PROP-2026-10-18-001 |
+| `2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage.md` | Wright + Master | 2026-10-26 | 1 (PRS-79) | PROP-2026-10-25-003; war item not entered |
+| `2026-10-25_wright_ask-ntw-oct12-quiet-revival-church-unity.md` | Wright + Master | 2026-10-26 | 1 (PRS-80) | PROP-2026-10-25-004 |
+| `2026-10-23_friston_fep-and-free-markets.md` | Friston + Master | 2026-10-26 | 3 (PRS-82..84) | PROP-2026-10-23-001 |
+| `2026-10-23_hawkins_cmp-reference-frame-changes.md` | Hawkins + Master | 2026-10-26 | 3 (PRS-79..81) | PROP-2026-10-23-006; TBP team |
+| `2026-10-23_hawkins_compositional-objects-latest-results.md` | Hawkins + Master | 2026-10-26 | 3 (PRS-82..84) | PROP-2026-10-23-005; TBP team |
+| `2026-10-23_hawkins_q4-roadmap-q3-review.md` | Hawkins + Master | 2026-10-26 | 2 (PRS-85..86) | PROP-2026-10-23-003; TBP admin update |
+| `2026-10-23_hoffman_trace-logic-theory-of-computation.md` | Hoffman + Master | 2026-10-26 | 4 (PRS-53..56) | PROP-2026-10-23-004; unauthored working paper |
+| `2026-10-23_kastrup_claude-dialogue-ai-consciousness.md` | Kastrup + Master | 2026-10-26 | 2 (PRS-96..97) | PROP-2026-10-23-001 (shared id) |
+| `2026-10-23_kastrup_loeb-uap-biggest-discovery.md` | Kastrup + Master | 2026-10-26 | 1 (PRS-98) | PROP-2026-10-23-002; members-only |
+
+Ledger after ingest: approved total=506 ingested=474 decided-zero=30 OPEN=1 (Wright PROP-2026-08-14-033, unchanged). 42 triplets; 6 CROSS (158..163); FINDING-108..110; FLAG-025.
+**Network: 1083 PRS / 163 CROSS / 110 FINDING.** Pending = 3.
+
+### 2026-10-26 second orchestrator firing (04:36 local, verification only)
+Started while the primary run was mid-ingest (decisions archive written 04:36, prs_triplets.md files changing 04:37-04:39), so this firing changed nothing until the primary finished at ~04:40. Phase 0: the only in-window email (2026-10-25, 20 APPROVE) had already been applied by the primary run; the older April/July unread threads are already in provenance and archived. Phase 1: verified, ledger OPEN=1 (Wright PROP-2026-08-14-033, unchanged). Phase 2: skipped (3 Monday specialist cards today). Phases 3/4 not repeated (2026-10-26_review.html and draft r211482704169668589 already exist). Verified the review_log scrub is clean. 5.5/5.6 not re-run. Phase 6: no git.
+**Network: 1083 PRS / 163 CROSS / 110 FINDING.** Pending = 3.

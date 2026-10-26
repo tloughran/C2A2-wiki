@@ -164,3 +164,15 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-11-004` — Why would God tell Israel to kill its enemies? The Book of Acts and the missing end of Mark's Gospel (podcast, https://feeds.megaphone.fm/NSR7466770103#2026-09-21-ot-violence-acts-mark) → PRS-73, PRS-74
 
 - 2026-10-14 — **Advances:** PRS-71 enters, for the first time, Wright's covenant-faithfulness reading of *dikaiosynē theou*: the scriptural anchor for "salvation = inclusion in the people united with God." PRS-72 states his authority ordering (Scripture over system; creeds as guardrails), a standing objection whenever the network sets Thomist synthesis against the text. PRS-73 applies the narrative-climax hermeneutic to Old Testament violence and pairs with Rohr's PRS-104 (myth of redemptive violence): same endpoint, historical vs. contemplative route. **Opens:** whether Wright's relational righteousness and Aquinas's infused justice conflict or describe one event (Stump); whether the two readings agree on what the violent texts *were*; PRS-74 (Speculative) on the message as Acts' protagonist. Both episodes are description-only, so PRS-71 to PRS-74 hold at Medium/Speculative until someone listens. The Ascension item reinforces PRS-67/PRS-69; the Mark-ending item duplicates the Mike Bird card; neither was entered.
+
+### Ingest 2026-10-26
+
+6 triplets added from 5 approved proposals (decision email 2026-10-25): PRS-75..80. PROP-2026-08-14-033 remains OPEN (retrieval-blocked, 0 triplets, not ingested).
+
+- `PROP-2026-10-18-002` - N.T. Wright responds to John Piper (Ask NTW bonus) -> PRS-75.
+- `PROP-2026-10-18-003` - Are Christians reading the Bible wrong? (God's Homecoming ch. 10) -> PRS-76.
+- `PROP-2026-10-18-001` - Into the Heart of Isaiah (SPCK, 2026-10-15) -> PRS-77, PRS-78. Publisher summary only.
+- `PROP-2026-10-25-003` - Can Christians serve in the military? (Ask NTW) -> PRS-79. The war/vocation item was not entered (positions not determinable from the description).
+- `PROP-2026-10-25-004` - Is Christianity making a comeback? (Ask NTW) -> PRS-80. Description only.
+
+All six rest on episode descriptions or a publisher page; none was heard or read in full. PRS-78 and PRS-80 are Speculative.

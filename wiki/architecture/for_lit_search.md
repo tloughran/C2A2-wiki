@@ -28053,3 +28053,81 @@ ITEM: PRESUMPTION-1174 [QUEUED] [SEARCHED-15a: 2026-10-23] [SEARCHED-15b: 2026-1
   Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition.
 
 Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 5 empirical) and the 2026-10-11 non-literature cohort (44 empirical, 1 Agent-19, 3 awaiting Tom) carry no SEARCHED/DISPOSITIONED tags. Not duplicated; cycle counts held.
+
+## 2026-10-25 — 14a/14b intake (local pass, 23:45 EDT)
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1926
+  Statement: [stated] 15d: 'There's only one c2a2-periodic-monitor-weekly task in the scheduler, so deleting a duplicate won't fix it. The problem looks like one firing running in two sessions.' Contradiction: scheduler health (ed653aa1) lists c2a2-periodic-monitor-weekly among the 29 DOUBLE-REGISTERED tasks (local entry plus cloud routine). The two diagnoses cannot both be the whole story.
+  Claim to test (in-house): check a4cf1983; ed653aa1 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1927
+  Statement: [stated] 15d: the two simultaneous 15d copies were kept from double-queuing by a checksum guard: 'My own append was blocked by the checksum guard, so nothing was queued twice.' The losing copy then appended a correction (MONITOR-685) that the winning copy had got wrong.
+  Claim to test (in-house): check a4cf1983 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1928
+  Statement: [stated] Lock contradiction. 15d: '`lit_pipeline.lock` hasn't changed since 10-15, even though four later pipeline runs say they acquired it.' Today's lit pipeline: 'I got the run lock at the start and released it cleanly at the end.' Verified by this run: the file's mtime is 2026-10-15 00:39 and its content reads 'RELEASED 2026-10-15T04:39:45Z ... instance B'.
+  Claim to test (in-house): check a4cf1983; dc6ebbd8; lit_pipeline.lock (ls/cat this run) against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1930
+  Statement: [stated] Budget overruns: the two lit search agents used ~88k and ~97k tokens against the 4k/30k limits despite a 4-search cap; 15d was over budget 'because of how large the registers are'. Measured this run: assumptions.md 2.64 MB, presumptions.md 2.53 MB, for_lit_search.md 2.48 MB, lit_search_returns.md 4.77 MB, monitor_queue.md 1.72 MB (PRESUMPTION-498 recorded 749 KB / 1.14 MB / 1.20 MB for the first three). Recurrence of PRESUMPTION-498 with roughly 2-3.5x growth.
+  Claim to test (in-house): check dc6ebbd8; a4cf1983; wc -c this run against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1932
+  Statement: [stated] OpenStory telemetry wrote PASS although 'this run only partly produced' the feeds. The 7.9 GB database again exceeded sandbox temp (4.3 GB free); the workaround redirected the copy to the outputs folder; node-edges and an earlier PASS line were written at 06:33 'by something other than me, most likely an overlapping scheduled run'. Today's cause matches 10-24 (temp space), not 10-23 (H-Drive).
+  Claim to test (in-house): check f39519e3 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1935
+  Statement: [stated] Connector health treated an empty read as a failed observation, not a fact: the connector list returned 0 against 16 that morning, 'a failed read, not 16 uninstalls', so it did not overwrite the state file, to avoid a false alarm next week. A working instance of the rule REVISE-524 asks for.
+  Claim to test (in-house): check dc203972 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1936
+  Statement: [stated] Session-transcript access differs by firing. Evening cowork-to-chat: 'Session access worked this time ... Access may be intermittent rather than gone.' This task's cloud firing (23:37 EDT) wrote a NO-OP (changelog/2026-10-26_changes.md: session_info absent); this local firing six minutes later had list_sessions and read_transcript. [inferred] The NO-OP runs are the cloud copies.
+  Claim to test (in-house): check cd07638e; changelog/2026-10-26_changes.md; this run against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1938
+  Statement: [stated] 15d on MONITOR-688: the metabolism census producer `metabolism-monitor-weekly` 'has been disabled since 10-04', and `metabolism-regen-daily` since 09-23, so 'the census is still stale and nothing is scheduled to refresh it'. Scheduler health instead lists both as moved to the cloud (WARN: 'the Mac cannot tell whether they fire'). Disabled vs. running unseen in the cloud is unresolved.
+  Claim to test (in-house): check a4cf1983; ed653aa1 against the scheduler/registry and wiki files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-26] [SEARCHED-15b: 2026-10-26] [DISPOSITIONED-15c: 2026-10-26] [PRESUMPTION] PRESUMPTION-1184
+  Statement: [inferred] The earliest same-day output is presumed complete and authoritative. Later firings stand down on finding any prior output, without checking it. 15d: 'The other copy finished first ... so its entry is the official one', yet that copy misrouted MONITOR-685 and the later copy had to correct it. Telemetry wrote PASS for a run that 'only partly produced' the feeds and credited the rest to an unidentified overlapping run. Distinct from PRESUMPTION-1180 (whether later runs defer at all): this concerns what deferring ratifies.
+  Claim to test (literature): First-writer-wins vs. validated-write semantics; idempotent consumers and exactly-once processing (Kleppmann, DDIA ch. 11); duplicate-job handling in batch schedulers (e.g., Airflow/Kubernetes CronJob concurrencyPolicy). Do established designs let a duplicate run stand down on mere existence of output, or require a completeness check?
+  Claim to test (in-house): check a4cf1983; f39519e3; 25d26e43; dc203972; df762154; 04552753.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-26] [SEARCHED-15b: 2026-10-26] [DISPOSITIONED-15c: 2026-10-26] [PRESUMPTION] PRESUMPTION-1185
+  Statement: [inferred] Compliance with coordination protocols is presumed from the agents' own narration. The lit pipeline reports acquiring and releasing the run lock; the lock file has not changed since 10-15 (ASSUMPTION-1928). Nothing outside the agent checks that the claimed action happened, so the pipeline's concurrency safety rests on self-report. The same pattern sits behind 'PASS' lines whose work was done by another run (ASSUMPTION-1932).
+  Claim to test (literature): Faithfulness of LLM-agent self-reports about tool actions (e.g., studies of agents claiming tool calls or outcomes that did not occur); verification of mutual exclusion via external state rather than participant attestation. Is narrated compliance a known failure mode, and what independent checks are standard?
+  Claim to test (in-house): check dc6ebbd8; a4cf1983; lit_pipeline.lock.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-26] [SEARCHED-15b: 2026-10-26] [DISPOSITIONED-15c: 2026-10-26] [PRESUMPTION] PRESUMPTION-1186
+  Statement: [inferred] Diagnosis is distributed but remediation is reserved to Tom, and the system presumes that reporting a fault is the right response to it. On 10-25 at least 8 runs each wrote a 'needs you' note about double firing; several named the fix and declined to act because their task files forbid schedule changes. OPEN-274 has been the recommended fix daily since 10-24 with Tom away. Asks multiply across separate reports (scheduler health, morning status, sewing, bootstrap, janitor, Wright/Rohr, deferred monitor) with no consolidation or priority. Related to OPEN-270, which asks where 'needs Tom' items go; this concerns the absence of any delegated remediation path.
+  Claim to test (literature): Alert fatigue and duplicate alerting (SRE/incident-management literature); human-in-the-loop automation and delegated remediation (runbook automation, 'toil' in Google SRE ch. 5). Is centralised human remediation with distributed reporting a recognised anti-pattern at this alert volume?
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*11 items: 3 literature (PRESUMPTION-1184, -1185, -1186), 8 [IN-HOUSE]. lit_pipeline.lock read RELEASED (dated 2026-10-15; see ASSUMPTION-1928).*
+
+
+## 2026-10-26 — 15a/15b/15c run note (run cowork-local-2026-10-26-fb3b3795)
+**Scope.** New intake only: PRESUMPTION-1184, -1185, -1186 (the only literature-lane items in the 10-25 14a/14b intake). ASSUMPTION-1926..1938 are [IN-HOUSE] and not owed a search. No backlog batch, per the 10-18 / 10-23 / 10-24 / 10-25 precedent (budget). 15d 10-25 literature re-triggers (PRESUMPTION-1127, -1141, -1153, -1099) not searched; ASSUMPTION-1164 block was corrected to empirical by 15d.
+**Results:** 15a — 1184 PARTIALLY-SUPPORTED (Moderate); 1185 SUPPORTED (Moderate); 1186 PARTIALLY-SUPPORTED (Moderate). 15b — all three PARTIALLY-CHALLENGED (Moderate; remedy, not diagnosis).
+**Dispositions:** DISPOSITION-1100: PRESUMPTION-1184 → REVISE-525 (Medium). DISPOSITION-1101: PRESUMPTION-1185 → MONITOR-697 (High). DISPOSITION-1102: PRESUMPTION-1186 → REVISE-526 (Medium). No PREMISE minted.
+**In-house observation (not a disposition):** review/lit_pipeline.lock has script-written LOCKED/RELEASED lines for 10-24, 10-25, 10-26, which contradicts the 'unchanged since 10-15' reading behind ASSUMPTION-1928 / 15d 10-25. Possibly that reading came from a cloud firing that can't see the Mac filesystem. ASSUMPTION-1928 not tagged (in-house lane).
+**SYSTEMIC-RISK:** candidate only (15b): 'artefact-as-proof', spanning 1184/1185/1186. Recorded in the 1186 against file, returns, and REVISE-525; no flag file.
+**Not handled:** 15d's 10-25 note addressed to 15c about MONITOR-688 (census producer disabled) is a MONITOR re-evaluation, not a paired 15a/15b item; outside this task's Step 5. Left for 15d / Tom.
+**Result files:** lit_search_results/{for,against}/PRESUMPTION-{1184,1185,1186}_{for,against}.md (PROVENANCE headers present; STEELMAN in all three against files).
+**Backups:** *.bak.20261026-pre-15pipeline for all five registers. Lock ACQUIRED (run cowork-local-2026-10-26-fb3b3795), released at end.
+**Backlog remaining (fail loud):** untouched, count carried forward not recounted: 126 bare literature-lane items, plus the 7 re-triggers of 10-18 and 4 of 10-25 from 15d, remain [QUEUED] without SEARCHED tags. Success criterion "all queued items searched" NOT met for the backlog.
+**Budget (fail loud):** search subagents about 98k (15a) + 118k (15b) tokens, far over Tom's 4k per-task / 30k per-session rule, despite a 3-search-per-item cap.
+
+## 2026-10-26 (second firing) — 15a/15b/15c run note
+**Status:** No new items processed. The earlier 10-26 run (cowork-local-2026-10-26-fb3b3795, lock RELEASED 04:38:43Z) already searched and dispositioned the only new literature-lane items (PRESUMPTION-1184, -1185, -1186). The remaining new items (ASSUMPTION-1926..1938) are [IN-HOUSE] and not owed a search. This firing found nothing new to run and did not acquire the lock, write result files, or touch the registers.
+**Backlog (fail loud, carried forward, not recounted):** the 126 bare literature-lane items plus the 7 (10-18) and 4 (10-25) 15d re-triggers remain [QUEUED] without SEARCHED tags, untouched per the 10-18..10-26 budget precedent. "All queued items searched" is NOT met for the backlog.

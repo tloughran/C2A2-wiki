@@ -25781,3 +25781,65 @@ PRESUMPTION-1183:
     Current status: UNTESTED
 
 *Surfaced by the 14b local pass of 2026-10-24. **5 items (1179-1183)**: structural 1 · epistemic 2 · methodological 1 · normative 1; risk High 2 · Medium 2 · Low 1. Checked against 14a 1909-1924 and PRESUMPTION-1170..1178. Not re-surfaced (recurrences): proposal-ID collision, path drift, UTC date keys (1175), Tom-away handling (OPEN-270).*
+
+PRESUMPTION-1184:
+  Date surfaced: 2026-10-25
+  Statement: [inferred] The earliest same-day output is presumed complete and authoritative. Later firings stand down on finding any prior output, without checking it. 15d: 'The other copy finished first ... so its entry is the official one', yet that copy misrouted MONITOR-685 and the later copy had to correct it. Telemetry wrote PASS for a run that 'only partly produced' the feeds and credited the rest to an unidentified overlapping run. Distinct from PRESUMPTION-1180 (whether later runs defer at all): this concerns what deferring ratifies.
+  Evidence it was operative: a4cf1983; f39519e3; 25d26e43; dc203972; df762154; 04552753
+  Why it was unstated: embedded in tooling/practice
+  Type: methodological
+  Related decisions: PRESUMPTION-1180; ASSUMPTION-1927; ASSUMPTION-1932; OPEN-273
+  Testability: testable via literature + in-house
+  Risk if wrong: Medium: an incomplete or wrong first run is locked in, and the run that could have repaired it skips.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1184
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1185:
+  Date surfaced: 2026-10-25
+  Statement: [inferred] Compliance with coordination protocols is presumed from the agents' own narration. The lit pipeline reports acquiring and releasing the run lock; the lock file has not changed since 10-15 (ASSUMPTION-1928). Nothing outside the agent checks that the claimed action happened, so the pipeline's concurrency safety rests on self-report. The same pattern sits behind 'PASS' lines whose work was done by another run (ASSUMPTION-1932).
+  Evidence it was operative: dc6ebbd8; a4cf1983; lit_pipeline.lock
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1928; PRESUMPTION-1099; MONITOR-693
+  Testability: testable via literature + in-house
+  Risk if wrong: High: concurrent pipeline runs can overwrite dispositions (as on 10-01 and 10-15) while every run reports clean locking.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1185
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1186:
+  Date surfaced: 2026-10-25
+  Statement: [inferred] Diagnosis is distributed but remediation is reserved to Tom, and the system presumes that reporting a fault is the right response to it. On 10-25 at least 8 runs each wrote a 'needs you' note about double firing; several named the fix and declined to act because their task files forbid schedule changes. OPEN-274 has been the recommended fix daily since 10-24 with Tom away. Asks multiply across separate reports (scheduler health, morning status, sewing, bootstrap, janitor, Wright/Rohr, deferred monitor) with no consolidation or priority. Related to OPEN-270, which asks where 'needs Tom' items go; this concerns the absence of any delegated remediation path.
+  Evidence it was operative: ed653aa1; 3bf8798c; df762154; 04552753; 8b825a6c; 5044ac9a; cbb7c554
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: OPEN-270; OPEN-274; PRESUMPTION-1127
+  Testability: testable via literature
+  Risk if wrong: Medium: known faults persist for weeks and the volume of repeated asks lowers the chance any one is read.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1186
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-25 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Surfaced by the 14b local pass of 2026-10-25. **3 items (1184-1186)**: methodological 1 · epistemic 1 · normative 1; risk High 1 · Medium 2. Checked against 14a 1925-1939 and PRESUMPTION-498, -1099, -1127, -1179..1183. Not re-surfaced (recurrences): register growth (498), behavioural idempotence (1180), stale-input OK verdicts (1182), Tom-away routing (OPEN-270), unattended permission declines.*
