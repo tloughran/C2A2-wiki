@@ -17,12 +17,40 @@
         <string>--regen-only</string>
     </array>
 
-    <!-- Daily 05:00 local: before voice-shell-check (05:20) and the 05:45 health check,
-         and well before Sunday 06:30 metabolism-publish. Touches no git. -->
+    <!-- Daily 06:00 local. Touches no git.
+
+         WAS 05:00, moved 2026-10-26 to close the PRS triplet ordering race.
+         The race, measured: new triplet .md files are written to disk by the
+         sandboxed agent run (which cannot write .git), and the commit that
+         publishes them is made by scheduled-commit-check at 05:45. prs_yield.py
+         derives its series from a GIT HISTORY WALK and treats "on disk but not
+         in history" as a hard Rule-12 failure ("the walk undercounted"). At
+         05:00 that was true of every triplet produced since the previous day's
+         commit, so the regen read a tree whose artifacts were half-published:
+         2026-10-26 it exited 1 naming 42 such triplets (carroll/PRS-98..105,
+         friston/PRS-82..84, hawkins/PRS-79..86, ...). The same script, same
+         disk, re-run after the 05:45 commit landed exits 0 and dates all 42 to
+         2026-10-26 - so the walk had not undercounted; history had not caught up.
+
+         Of the two available orderings, this is the one that cannot create a
+         half-written state. Committing EARLIER (before 05:00) would move the
+         commit boundary toward the agent run that is still writing triplets,
+         so a genuinely half-written triplet set could be committed and then
+         believed by the yield series forever. Reading LATER only ever reads
+         across a completed commit boundary; the worst case is staleness, not a
+         corrupt history. 06:00 sits 15 min after scheduled-commit-check (which
+         took 22s on 2026-10-26) and 30 min before Sunday 06:30
+         metabolism-publish, whose freshness gate allows 36h.
+
+         KNOWN CONSEQUENCE, not fixed here: the 05:45 health check now reports
+         the PREVIOUS day's regen exit code, so a regen failure surfaces ~24h
+         late. Fixing that means moving the health check after 06:00, or giving
+         prs_yield.py a way to say "uncommitted in the working tree" instead of
+         "absent from history" - both are Tom's call. -->
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>5</integer>
+        <integer>6</integer>
         <key>Minute</key>
         <integer>0</integer>
     </dict>
