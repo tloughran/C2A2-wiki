@@ -15,7 +15,7 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-161 - Tithes - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-26T16:26:40"
+last_qc_at: "2026-10-25T20:17:37"
 last_qc_outcome: "pass"
 tags: [summa, day/161, pars/II-II, q/86–87]
 ---
