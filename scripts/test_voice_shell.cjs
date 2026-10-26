@@ -326,9 +326,16 @@ class Page {
 
 const IFRAME_DOC = "var f=document.getElementById('content-frame'); var d=f&&f.contentDocument; var w=f&&f.contentWindow;";
 
+// 2026-10-26: the selector was '.tab-btn[data-src]' only, which silently could
+// not reach a tab whose button is a CHAPTER button. community_explorer.html is
+// the one such entry (`.chap-btn#chap-community`), so every caller asking for it
+// got 'no such tab button' and then probed whatever frame was already loaded.
+// In Phase X that turned into a false `pending` row: the tab was reported as not
+// exposing c2a2Find while the frame under test was a different tab entirely.
+// Falling back to .chap-btn makes the navigation match the page's real surface.
 function activateTab(page, src) {
   return page.eval(
-    "var bs=[].slice.call(document.querySelectorAll('.tab-btn[data-src]'));" +
+    "var bs=[].slice.call(document.querySelectorAll('.tab-btn[data-src], .chap-btn[data-src]'));" +
     "var b=bs.filter(function(x){return x.getAttribute('data-src')===" + JSON.stringify(src) + ";})[0];" +
     "if(!b){return 'no such tab button: ' + " + JSON.stringify(src) + ";}" +
     "if(b.classList.contains('active')){return 'already-active';}" +
@@ -1178,7 +1185,17 @@ async function main() {
   const shotFc = await page.screenshot(path.join(SHOTS, 'F-cards.png'));
   // The gate that makes the declaration honest: 21 controls in the tab, 2294 in
   // the nested app, and every one of them covered, excluded or deferred by name.
-  await auditTab(page, 'community_explorer', 7, 2);
+  // 2026-10-26: 7 -> 4. Not a widened expectation -- a NARROWED one. Commit
+  // 1e5a7cfa ("the find contract, tab 2 step b") implemented find/clear on this
+  // tab and moved `#search-input, #btn-search, #btn-clear` out of
+  // controls_deferred into controls, which is three swept elements leaving the
+  // deferred set (the count is elements, not manifest entries). Verified on the
+  // live tab before changing this number: window.c2a2Find/c2a2Clear/c2a2ReadCut
+  // are all functions, c2a2Find('civic') returns 28 ids, and the shell's
+  // `find civic` speaks "28 nodes shown" with `what` naming the cut. The four
+  // that remain are the honest ones: #tab-graph/#tab-cards (verb-reachable only)
+  // and #btn-hold/#btn-names (no bind kind fits a lone .on button).
+  await auditTab(page, 'community_explorer', 4, 2);
   // THE DIMENSIONS ARE THE GRAPH'S, NOT THE TAB'S. Everything increment 2 added
   // is declared `when: #tab-graph`, and the cards view is where a spec that
   // forgot to say so would look identical -- the checkboxes are still in the
