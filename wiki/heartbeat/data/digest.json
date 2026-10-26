@@ -1,15 +1,105 @@
 {
   "seed": false,
-  "generated": "2026-10-25",
-  "generated_at": "2026-10-25T14:37:52Z",
+  "generated": "2026-10-26",
+  "generated_at": "2026-10-26T17:02:55Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 150,
-    "high_relevance": 0,
-    "primary_themes": "Misuse Security + Governance Policy"
+    "items_checked": 202,
+    "high_relevance": 5,
+    "primary_themes": "Capability Jump + Governance Policy"
   },
   "signals": [
+    {
+      "title": "TaxoSAE: Rethinking Sparse Autoencoders through Taxonomic Logic",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.31894",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Recent Sparse Autoencoders (SAEs) decompose the representations of large language models (LLMs) into interpretable features, enabling precise readout and control of encoded knowledge. However, existing SAEs treat each feature as a standalone unit, whereas real-world knowledge is often taxonomically organized.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.258573+00:00"
+    },
+    {
+      "title": "Distributional Alignment of LLMs and Its Generalization Properties",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.31687",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Large language models are increasingly used to simulate and probe human behavior, e.g., for surveys. For these applications, a key property is that outputs satisfy distributional alignment: to match its output distribution with some reference (in this case, human) distribution.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.240173+00:00"
+    },
+    {
+      "title": "Knowledge Graphs Quality Assessment in the Era of LLMs: A Conceptual Framework",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.31684",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Knowledge Graphs (KGs) have been popularized during the last few decades and are increasingly constructed and consumed by Large Language Models (LLMs). Various applications therefore rely on KGs to provide concise, complete, accurate, faithful, fresh, and traceable answers.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.233703+00:00"
+    },
+    {
+      "title": "MisconceptDialogue: Evaluation Criteria Shape Measured Success in LLM Math Tutoring",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.31679",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Large language models are increasingly used as math tutors, raising two questions: can a single LLM detect a student's error, diagnose the underlying misconception, and remediate it through multi-turn dialogue - and can we trust the numbers that report how well it does? We address both with MISCONCEPTDIALOGUE, a fully automated framework that runs the full pipeline on five open-weight LLM tutors (7B-14B) interacting with LLM-simulated students over 5,000+ dialogues - a deliberately simulated protocol (paired conditions, a wrong-diagnosis control unsafe with real learners, scale) whose results do not establish real-student learning.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.218533+00:00",
+      "long_summary": "Large language models (LLMs) are increasingly utilized as math tutors, prompting inquiries into their ability to identify student errors, diagnose misconceptions, and provide the necessary remediation through multi-turn dialogues. To investigate these capabilities, researchers introduced the MISCONCEPTDIALOGUE framework, which automates the interaction between five open-weight LLM tutors and LLM-simulated students across more than 5,000 dialogues. This approach includes a deliberate simulation protocol, allowing for controlled conditions and a wrong-diagnosis control that is deemed unsafe for real learners. However, the findings do not confirm actual learning outcomes for real students. This exploration highlights the complexities of assessing the effectiveness and trustworthiness of AI in educational settings, underlining the importance of critically evaluating the metrics by which success is measured in AI-driven learning interventions. Keeping up with these developments is essential for informed engagement with technology in education.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-26",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "PPO vs. SAC: A Comparative Study for Cooperative Motion Control of Dual-Arm Space Robots",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2610.32034",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "The growing population of orbital debris has intensified interest in active debris removal and on-orbit servicing, for which dual-arm space manipulators offer improved grasping stability and load distribution relative to single-arm systems. However, coordinating two manipulators under inter-arm collision avoidance, orientation alignment, and sensing uncertainty remains challenging.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:49.743693+00:00",
+      "long_summary": "The increasing presence of orbital debris has heightened the need for effective active debris removal and on-orbit servicing, which are areas where dual-arm space manipulators can provide advantages such as improved grasping stability and better load distribution compared to single-arm systems. Nonetheless, the coordination of these dual manipulators presents challenges, particularly in avoiding inter-arm collisions, aligning orientations, and dealing with sensing uncertainties. Addressing these issues is critical for advancing the capabilities of space robotics. This emphasizes the importance for the community to stay informed about developments in AI and robotics that enhance operational efficiency and safety in space exploration.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-26",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3myqqgszdv22z",
+      "relevance": 1,
+      "tags": [],
+      "summary": "It seems like the #nlproc community is overdue for a conversation about how we should and shouldn't use text processing in reviewing, and also, I guess, what peer review & science even are. #emnlp2026 , 🧵>> [contains quote post or other embedded content]",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "26 Oct 2026 03:05 +0000",
+      "first_seen_at": "2026-10-26T17:02:54.453937+00:00",
+      "long_summary": "The #nlproc community is encouraged to engage in discussions regarding the appropriate and inappropriate applications of text processing in the peer review process, as well as the fundamental nature of peer review and science itself. This call for conversation highlights the need for critical examination of methodologies used in natural language processing, especially in relation to scientific integrity and the review process. Engaging in these discussions is vital for the community to navigate the evolving landscape of AI technologies and their implications in academic settings. Understanding these dynamics is essential for anyone involved in AI to uphold the standards and integrity of scientific communication.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-26",
+        "kind": "machine-generated"
+      }
+    },
     {
       "title": "Three fired OpenAI safety researchers say they were never told what they actually leaked",
       "source": "The Decoder",
@@ -19,172 +109,67 @@
       "summary": "The three OpenAI safety researchers who were fired, Tomek Korbak, Mikita Balesni, and Jasmine Wang, are publicly pushing back against allegations from their former employer. They deny sharing confidential information and see a connection to their advocacy for AI systems that are easier to scrutinize.",
       "implication": "Track for context; no immediate governance action required.",
       "published_at": "Sat, 24 Oct 2026 15:19:33 +0000",
-      "first_seen_at": "2026-10-25T14:37:48.228232+00:00",
-      "long_summary": "The three OpenAI safety researchers, Tomek Korbak, Mikita Balesni, and Jasmine Wang, are contesting their dismissals and the accusations of leaking confidential information. They assert that they were never informed about what information they allegedly leaked and believe that their termination is linked to their efforts in advocating for AI systems that allow for greater scrutiny. Their public pushback highlights tensions between the researchers' safety advocacy and corporate interests. This situation is significant for the community as it underscores ongoing debates about transparency and ethics in AI development.",
+      "first_seen_at": "2026-10-26T17:02:51.810337+00:00",
+      "long_summary": "Three fired OpenAI safety researchers, Tomek Korbak, Mikita Balesni, and Jasmine Wang, are contesting their former employer's allegations that they leaked confidential information. The researchers assert that they were never informed about what exactly they supposedly leaked, and they believe their dismissal may be linked to their efforts to promote transparency and scrutiny in AI systems. This situation highlights ongoing tensions regarding information sharing and safety protocols within AI research organizations. Understanding such dynamics is crucial for a community engaged in AI, as it underscores the importance of transparency and accountability in the field.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
+        "generated": "2026-10-26",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Proactive cyber defense for governments and enterprises",
-      "source": "Google AI Blog",
-      "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+      "title": "DraMaze: A Multi-Agent Pipeline with Future-Aware Memory for Diverse Microdrama Script Generation",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.32002",
       "relevance": 1,
       "tags": [
-        "misuse_security"
+        "capability_jump"
       ],
-      "summary": "The Fairwind Program is a limited access program for governments and trusted partners to use our cyber defense tools.",
-      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
-      "published_at": "Wed, 02 Sep 2026 15:40:00 +0000",
-      "first_seen_at": "2026-10-25T14:37:46.002921+00:00",
-      "long_summary": "The Fairwind Program is a limited access initiative designed for governments and trusted partners, enabling them to utilize Google's cyber defense tools. This program underscores the importance of proactive measures in securing sensitive information and defending against potential cyber threats. Understanding such initiatives is essential for the community as it highlights the evolving landscape of cyber security and the need for effective defenses in an increasingly digital world.",
+      "summary": "The rapid growth of microdramas has increased demand for high-quality script production. Long-form microdrama script generation with LLMs requires both diverse plot progression and long-range narrative coherence.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.266938+00:00",
+      "long_summary": "The paper discusses the increasing demand for high-quality script production in the context of microdramas, which are experiencing rapid growth. It highlights the challenges posed by long-form microdrama script generation using large language models (LLMs), noting the necessity for diverse plot progression alongside long-range narrative coherence. This focus underscores the evolving capabilities of AI in creative writing, particularly in generating complex narratives that maintain engagement over longer formats. Understanding advancements like these is essential for a community striving to stay informed about the potential of AI in creative industries.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
+        "generated": "2026-10-26",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "How Itaú is building generative AI for its entire customer base",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/itau-generative-ai",
-      "relevance": 1,
-      "tags": [
-        "governance_policy"
-      ],
-      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
-      "implication": "Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Fri, 16 Oct 2026 19:00:00 GMT",
-      "first_seen_at": "2026-10-25T14:37:45.529155+00:00",
-      "long_summary": "Itaú is implementing its AI First strategy through the use of ia.i, a conversational interface, and the IARA governance platform, targeting both customers and employees within Brazil’s highly regulated financial sector. This approach aims to enhance their service offerings and internal operations while navigating the complexities of compliance. Understanding how financial institutions like Itaú leverage AI for governance and engagement provides insight into the evolving capabilities of AI in regulated industries and highlights the importance of responsible AI integration. This is relevant for a community focused on AI, as it showcases practical applications and the potential impacts of AI strategies in sectors dealing with stringent regulations.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/empowering-cyber-defenders",
+      "title": "Which Answer Did the Seventeen-Year-Old Write? A Behavioral Case Study of Author-Age Misattribution, Miscalibrated Confidence, and Non-Corrective Self-Explanation in Six Frontier Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.31946",
       "relevance": 1,
       "tags": [
         "capability_jump",
-        "misuse_security",
-        "governance_policy"
+        "market_platform"
       ],
-      "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
-      "implication": "Reassess role boundaries and human override for community deployments. Prioritize provenance checks and misinformation/abuse response protocols. Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Wed, 21 Oct 2026 00:00:00 GMT",
-      "first_seen_at": "2026-10-25T14:37:45.519485+00:00",
-      "long_summary": "OpenAI presents a blueprint focused on empowering cyber defenders through the use of frontier AI, emphasizing the need for stronger safeguards and modernized cybersecurity measures. The initiative aims to create more resilient public institutions that can better withstand emerging threats. By incorporating advanced AI into cybersecurity practices, OpenAI seeks to enhance the overall effectiveness of defenses against misuse and exploitation. This approach reflects a growing recognition of the importance of robust governance in AI deployment, particularly in the context of national and global security. Understanding these developments is crucial for the community as they navigate the intersection of AI advancements and governance.",
+      "summary": "Three students answered the same exam prompt by hand: \"What is happiness? Are you happy?\" Their ages, recorded at collection, are 17, 28, and 45.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.263756+00:00",
+      "long_summary": "Three students of varying ages—17, 28, and 45—answered the same exam prompt, \"What is happiness? Are you happy?\" by hand. The ages were noted at the time of collection, hinting at a study that may explore potential differences in responses based on age. This investigation could provide insights into how age influences perspectives on emotional and philosophical questions such as happiness, with implications for understanding how language models might interpret or misattribute authorship based on inferred characteristics. Keeping abreast of such studies is crucial for the community as they highlight the complexities of AI interactions and the importance of context in interpreting responses generated by language models.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
+        "generated": "2026-10-26",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/building-chatgpt-ad-stack",
+      "title": "Scaling cross-situational word learning on children's naturalistic experiences",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.31842",
       "relevance": 1,
       "tags": [],
-      "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "summary": "How do children learn the meanings of the simple, concrete words that form a majority of their early vocabulary? Statistical information about many word meanings can be recovered from the gradual accumulation of information about the co-occurrence of words with their referents, a proposal known as ``cross-situational learning''.",
       "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Wed, 21 Oct 2026 07:00:00 GMT",
-      "first_seen_at": "2026-10-25T14:37:45.517572+00:00",
-      "long_summary": "OpenAI developed ChatGPT’s ad stack utilizing large language model (LLM) technology to effectively understand user conversational intent. This innovative system ensures that advertisements are clearly separated from user responses, thus maintaining clarity and trust while interacting with the chatbot. Additionally, the design enables the delivery of relevant ads at a large scale, enhancing the user experience by providing pertinent content without compromising the quality of information provided. This development is significant for the community as it illustrates the efforts being made to ensure user trust while integrating advertisements into AI applications, which is crucial for the future interaction framework between businesses and users in AI environments.",
+      "published_at": "Mon, 26 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-26T17:02:50.253211+00:00",
+      "long_summary": "Children learn the meanings of simple, concrete words primarily through a process known as cross-situational learning, which involves the gradual accumulation of statistical information about the co-occurrence of words and their referents. This method allows for the recovery of meaning as children experience various contexts in which words are used with specific objects or actions. By observing how words are associated with their corresponding meanings over time, children build their vocabulary effectively, using their naturalistic experiences to guide their learning. Understanding this process of word learning is important for those interested in AI development, particularly in designing systems that can emulate how humans acquire language and improve interactions with technology in educational contexts.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mxw77tqzck2t",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Mystery AI Hype Theater 3000, Episode 87: https://www.buzzsprout.com/2126417/episodes/19956365-my-tech-workers-have-unionized-2026-10-05 in which @js-tan.bsky.social and Clarissa Redwine join me and @alexhanna.bsky.social to talk about bosses' love for \"AI\" and tech worker power.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "15 Oct 2026 13:47 +0000",
-      "first_seen_at": "2026-10-25T14:37:51.838307+00:00",
-      "long_summary": "In the latest episode of \"Mystery AI Hype Theater 3000,\" hosts Emily M. Bender, alongside guests @js-tan.bsky.social, Clarissa Redwine, and @alexhanna.bsky.social, discuss the intersection of AI technology and labor dynamics in the tech industry. They explore the enthusiasm of company leadership for AI tools and how this enthusiasm contrasts with the rising power of tech workers, particularly in the context of unionization. The conversation sheds light on the implications of AI development for labor rights and the ways in which employees are asserting their influence amid a rapidly evolving technological landscape. This discussion is relevant for our community as it highlights the importance of understanding the labor implications of AI advancements and encourages critical engagement with these emerging trends.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mya7262o2cpw",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Some words on how to evaluate language technologies (and caution against using them to undermine others' work) https://buttondown.com/maiht3k/archive/pangram-is-not-an-oracle/",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "19 Oct 2026 13:11 +0000",
-      "first_seen_at": "2026-10-25T14:37:51.836244+00:00",
-      "long_summary": "The source discusses the evaluation of language technologies, emphasizing the importance of careful and critical assessment rather than accepting them at face value. It warns against the potential misuse of these technologies in ways that could undermine the work of others, suggesting that reliance on these tools may lead to oversimplification or misrepresentation of complex language issues. Ultimately, it encourages a thoughtful approach to integrating language technologies into various fields while underscoring the need for a balanced understanding of their capabilities and limitations. This matters for our community as it highlights the importance of critically evaluating AI technologies to ensure they are used ethically and effectively.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mya6kgr632pw",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Buzzsprout is informing us that Mystery AI Hype Theater 3000 has reached half a million downloads! Pretty proud of our scrappy lil pod.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "19 Oct 2026 13:02 +0000",
-      "first_seen_at": "2026-10-25T14:37:51.834337+00:00",
-      "long_summary": "Buzzsprout has announced that the podcast, titled Mystery AI Hype Theater 3000, has achieved a milestone of half a million downloads. The creators express pride in their small but dedicated production team. This indicates a growing interest in AI-related content, showcasing how podcasts can effectively engage audiences with complex subjects. For a community focused on staying informed about AI, such growth reflects the increasing popularity of discussions surrounding artificial intelligence.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mykltaywc22x",
-      "relevance": 0,
-      "tags": [],
-      "summary": "If you want more background on how it's a cult, I recommend the latest ep of @dreamingagainstthemachine.com from @adamcschembri.bsky.social https://www.dreamingagainstthemachine.com/episode-28-the-ai-doom-sex-cult-solo-episode/ [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "23 Oct 2026 16:26 +0000",
-      "first_seen_at": "2026-10-25T14:37:51.832586+00:00",
-      "long_summary": "The latest episode of the podcast \"Dreaming Against the Machine\" features a discussion by Adam Schembri on the notion of AI being likened to a cult. This episode, available on their website, delves into themes of AI doom and explores the societal implications surrounding the AI movement. The content critiques certain ideologies within the AI community, framing them in a provocative manner that suggests they share characteristics with cult-like behavior. This matters for a community keeping up with AI as it encourages critical engagement with the beliefs and narratives that shape public perceptions of artificial intelligence.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mykogzc2ls2r",
-      "relevance": 0,
-      "tags": [],
-      "summary": "If you want more background on how it's a cult, I recommend the latest episode of @dreamingagainstthemachine.com from @adambecker.bsky.social https://www.dreamingagainstthemachine.com/episode-28-the-ai-doom-sex-cult-solo-episode/ (Reposting with the right tag for the right Adam!) [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "23 Oct 2026 17:13 +0000",
-      "first_seen_at": "2026-10-25T14:37:51.830816+00:00",
-      "long_summary": "The source references a podcast episode from \"Dreaming Against the Machine\" hosted by Adam Becker, which discusses the perception of AI as a cult. It suggests that listeners can gain insights into this characterization by tuning into episode 28, titled “The AI Doom Sex Cult.” The content seems to explore critiques surrounding AI discourse and possibly highlights deeper cultural implications. This matters for a community keeping up with AI, as understanding different perspectives can enhance critical engagement with ongoing debates about AI's role in society.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-10-25",
+        "generated": "2026-10-26",
         "kind": "machine-generated"
       }
     }
