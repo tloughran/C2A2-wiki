@@ -24,7 +24,12 @@ Targets (--target)
 `explorer`  -- explorer.html's shared CCL engine include. The shell is a normal
     cacheable document loading a SEPARATE lib file, so it has the same
     stale-asset exposure as an iframe tab and the same fix applies.
-`all`       -- both. Use before a human-reviewed push.
+`community` -- community/index.html, the Cards app nested inside the Community
+    Explorer's iframe: nine separate local includes, bare until 2026-10-25 (the
+    06-26 review that called heartbeat the only multi-file tab missed it, one
+    document down). Whoever regenerates community/data.js must re-stamp.
+`all`       -- every target. Use before a human-reviewed push; the CCL suite runs
+    `--target all --check` as its last row.
 
 Run standalone after editing any asset, or let refresh_snapshot.sh run it.
 `--check` stamps nothing and exits non-zero if any include is stale -- for use
@@ -43,6 +48,9 @@ from pathlib import Path
 TARGETS = {
     "heartbeat": ("heartbeat/index.html", ("styles.css", "heartbeat-config.js", "app.js", "auth.js")),
     "explorer": ("explorer.html", ("lib/c2a2-commandline.js", "lib/c2a2-search.js", "lib/c2a2-plots.js")),
+    "community": ("community/index.html", ("styles.css", "data.js", "search-core.js", "ai-query-core.js",
+                                           "../lib/c2a2-search.js", "app.js", "country_coordinates.js",
+                                           "community-views.js", "community-cards.js")),
 }
 
 
@@ -98,7 +106,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--target",
-        choices=("heartbeat", "explorer", "all"),
+        choices=("heartbeat", "explorer", "community", "all"),
         default="heartbeat",
         help="which page(s) to stamp; default is heartbeat only (see module docstring)",
     )

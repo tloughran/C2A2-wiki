@@ -64,8 +64,12 @@
     }
     if (!mapInited) {
       map = L.map(host, { worldCopyJump: true, minZoom: 1, scrollWheelZoom: true }).setView([20, 5], 2);
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap &copy; CARTO',
+      // CARTO basemaps need a key since their 2026-09-29 terms; without one every
+      // tile is watermarked "API KEY REQUIRED". This key is a free, non-commercial
+      // basemap key, restricted in CARTO's dashboard to the sites that may use it,
+      // so it is public by design (it can only fetch map tiles, and spends nothing).
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_4umn_2_12529835f30cf8626f245213', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd', maxZoom: 19
       }).addTo(map);
       markerLayer = L.layerGroup().addTo(map);
