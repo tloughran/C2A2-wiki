@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-05, Confidence Medium: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift. Grades on these four lines and on Friston PRS-04 were added 2026-09-17 from the register; the records were cited ungraded)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-10-13T08:17:50"
+last_qc_at: "2026-10-26T04:24:03"
 last_qc_outcome: "pass"
 ---
 

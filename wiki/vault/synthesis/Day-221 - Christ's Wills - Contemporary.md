@@ -16,7 +16,7 @@ evidence_strength_summary: "Two wills in one person with no contrariety = theolo
 mind_first_reframe: "The conformed-but-free human will is read as a sub-agent freely aligning its own generative model to a superordinate one (active inference, Friston), not a will overridden — alignment that honors rather than erases the limited perspective."
 central_theme_thread: "A limited will that freely brings itself into accord with the One who sees the whole — 'not as I will, but as thou wilt' running into 'work out your salvation, for it is God who works in you' (Phil 2:12-13) — the project's banner stated as Christology."
 tags: [synthesis, day/221, theme/conformed-but-free-will]
-last_qc_at: "2026-10-13T14:17:09"
+last_qc_at: "2026-10-26T18:17:55"
 last_qc_outcome: "pass"
 ---
 

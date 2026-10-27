@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-216 - Christ as Head - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/216, pars/III, q/7 q/8]
-last_qc_at: "2026-10-13T12:18:11"
+last_qc_at: "2026-10-26T16:45:56"
 last_qc_outcome: "pass"
 ---
 

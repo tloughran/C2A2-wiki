@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-182 - Magnanimity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/182, pars/II-II, q/128-129]
-last_qc_at: "2026-10-13T08:17:50"
+last_qc_at: "2026-10-26T04:24:03"
 last_qc_outcome: "pass"
 ---
 

@@ -16,7 +16,7 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-172 - Vengeance and Truthfulness - Contemporary]]"
 tags: [summa, day/172, pars/II-II, q/108-109]
-last_qc_at: "2026-10-15T00:17:02"
+last_qc_at: "2026-10-26T00:17:34"
 last_qc_outcome: "pass"
 ---
 

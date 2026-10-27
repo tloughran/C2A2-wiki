@@ -16,7 +16,7 @@ evidence_strength_summary: "Two operations concurring in one work (instrumental 
 mind_first_reframe: "Christ as Head whose act reaches the members is read as a higher-order unified agent into which the limited perspectives are really integrated (CROSS-013, McGilchrist's split-brain leg), bound by measurable resonance-coupling (collective active inference), not mere association."
 central_theme_thread: "The one who aligns to the whole draws the many limited perspectives into one mystical person — the loving-unity telos as incorporation, the kenotic Head descending into the servant-form so the members can be raised."
 tags: [synthesis, day/222, theme/incorporation-into-one-mystical-person]
-last_qc_at: "2026-10-15T16:17:39"
+last_qc_at: "2026-10-26T18:17:55"
 last_qc_outcome: "pass"
 ---
 
