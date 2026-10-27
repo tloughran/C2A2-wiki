@@ -51871,3 +51871,61 @@ DISPOSITION-1102:
 - Read in full: 15a — SRE Workbook ch. 6 (partial). 15b — Conduktor idempotent-consumers post; GuardedAct preprint; one further fetch. Kleppmann 2016 and Kubernetes docs: snippet/secondary only on both sides (fetch refused for 15a). Several preprint citations are snippet/abstract only; two 15a citations could not be tied to a specific paper.
 - Both sides rate the searches PRELIMINARY (9 searches each).
 - SYSTEMIC-RISK (candidate, 15b): 'artefact-as-proof' — an agent's own artefact (output file, narrated lock, 'needs you' note) stands in for enforced state. Spans 1184/1185/1186; extends the 10-25 candidate (health inferred from no-bad-signal: 1177/1179/1182). No flag file written, per precedent.
+
+
+## 2026-10-27 — 15a/15b/15c returns (run sched-lit-2026-10-27-6d9c5b33)
+
+DISPOSITION-1103:
+  Date: 2026-10-27
+  Item: PRESUMPTION-1187
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Both directions agree the failure is real: a duplicate, stale copy of an authoritative file was read and recorded as 'Verified'. 15a: config drift / split-brain and the auditor self-review threat are recognised hazards [snippet/secondary]. 15b: a single canonical path would not have fixed it; lock authority lies in a live holder (flock, liveness, expiry), not in a file's location, and auditors sharing a heuristic fail together (Knight & Leveson 1986) [secondary].
+  Disposition: REVISE (REVISE-527 (Medium))
+  Reasoning: REVISE on the narrowed claim. The presumption is wrong, but 'one canonical location' is also not the whole remedy. Authority should come from the lock script's own state query, not a path read. Medium: the error already spread to OPEN-275, PRESUMPTION-1185 and MONITOR-697.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1187 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1187_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1187_against.md
+
+DISPOSITION-1104:
+  Date: 2026-10-27
+  Item: PRESUMPTION-1188
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak-Moderate
+  Net assessment: 15a: overlapping scheduled jobs are normally guarded by a lock (flock -n), and detection works only if check and write are one atomic step [snippet]. 15b: locks are not the only accepted design. Optimistic concurrency is legitimate, but only with an atomic validate-at-write (Kung & Robinson 1981) [secondary], which these tasks lack. So 15b's challenge bounds the remedy and leaves the current practice unsupported.
+  Disposition: REVISE (REVISE-528 (High))
+  Reasoning: Neither direction supports 'a late copy notices recent output' as a substitute for mutual exclusion. The challenge widens the fix (lock or atomic OCC) without defending the status quo. Urgency High: shared-writer tasks (wiki daily run, reviewer state file, chat scrape) can silently duplicate triplets, and a working lock pattern already exists in this repo to copy.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1188 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1188_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1188_against.md
+
+DISPOSITION-1105:
+  Date: 2026-10-27
+  Item: PRESUMPTION-1189
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: 15a: absence-of-signal (dead man's switch) alerting from outside the monitored system is standard for cron jobs; Google SRE ch. 6 supports black-box monitoring [read in full], although it does not cover a watchdog that shares the failure of what it watches. 15b disputes nothing in the diagnosis. Its challenge is to the remedy: absence alerts are fragile unless the list of expected runs also lives outside the scheduler, and on a laptop that sleeps a naive heartbeat produces false alarms that get ignored [snippet; ICU alarm-fatigue analogy].
+  Disposition: REVISE (REVISE-529 (Medium))
+  Reasoning: The presumption fails: a co-located watchdog cannot report its own silence, and the 10-19..10-23 gap and silent cloud watcher are in-house instances. REVISE, with 15b's caveats built into the recommendation. Medium, not High: the fault is already visible through the weekly report, which is slow but catches it.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1189 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1189_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1189_against.md
+
+DISPOSITION-1106:
+  Date: 2026-10-27
+  Item: PRESUMPTION-1190
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Both directions find that co-commentary on a BBS target article is largely produced by the format. Editors invite 20–40 commentators 'within and across disciplines' (BBS instructions; 15b read them in full), and commentaries are often critical. Co-citation validity rests on many independent citers, which one editorial selection does not supply (Shaw 1985; McCain 1986) [snippet/secondary]. 15a gives a weak, provisional NOVELTY flag: no literature treats co-commentary as a sign of connection.
+  Disposition: REVISE (REVISE-530 (Medium))
+  Reasoning: With 15b's primary source read in full and 15a agreeing on the format effect, the presumption fails as stated. REVISE, with a narrow fix to the Pattern Detector rule. Medium: one flagged instance (three commentaries on Seth, BBS 49), but the rule would fire on every BBS issue.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1190 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1190_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1190_against.md
+
+### Evidence-quality notes (2026-10-27)
+- 15a and 15b ran as separate subagents. Each says it did not open the other direction's directory or this file, and wrote only its four result files. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 8 web searches + 1 fetch per side (cap 2/item). Read in full: 15a — Google SRE book ch. 6; 15b — BBS instructions for authors/commentators (Cambridge). Everything else is snippet or secondary, much of it vendor blogs. Both sides rate the work PRELIMINARY.
+- 15a NOVELTY (weak, provisional) on PRESUMPTION-1190.
+- SYSTEMIC-RISK (candidate, 15b rates High): 'artefact-as-proof'. A file's presence, absence or timestamp, read from inside the same system, stands in for live state. Now spans 1184/1185 (10-26) and 1187/1188/1189 (today). 15b notes the proposed remedies often reuse the same kind of evidence. No flag file written, per the 10-25/10-26 precedent; surfaced to Tom in the run note.
+- No INCORPORATE issued, so no premise consistency conflict arises. REVISE-529 is checked against PREMISE-239 (observed vs declared state): consistent, same family.

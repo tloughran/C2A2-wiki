@@ -772,7 +772,16 @@ PRS-84:
   Confidence: Speculative (a framing claim, not an empirical result)
   Evidence: Section 2 opening paragraph. C2A2 flag: candidate formal vocabulary for how a tradition holds together; a market's attractor is not a tradition's telos (MacIntyre would press this).
 
-*Total PRS triplets: 84*
+PRS-85:
+  Problem: Could a non-living artefact running immortal, substrate-independent software be conscious, or is 'artificial consciousness' self-contradictory?
+  Resource: Thermodynamics of mortal computation: information geometry and thermodynamic length applied to systems that must minimize free energy to keep existing.
+  Solution: Consciousness is bound to the thermodynamic costs a mortal, self-maintaining system pays; artefacts without that mortality may not qualify, so 'artificial consciousness' may be an oxymoron unless the artefact is itself mortal.
+  Date Added: 2026-10-27
+  Source: Friston, To be or not to be? A question of mortality (BBS 49, e336); PROP-2026-10-26-003
+  Confidence: Medium (direction stated in abstract; detailed argument not read)
+  Evidence: BBS abstract: 'I take this opportunity to unpack the thermodynamic issues that attend mortal computation and their implications for conscious artefacts.'
+
+*Total PRS triplets: 85*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

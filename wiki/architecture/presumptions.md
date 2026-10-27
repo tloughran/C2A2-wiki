@@ -25843,3 +25843,85 @@ PRESUMPTION-1186:
     Current status: UNTESTED
 
 *Surfaced by the 14b local pass of 2026-10-25. **3 items (1184-1186)**: methodological 1 · epistemic 1 · normative 1; risk High 1 · Medium 2. Checked against 14a 1925-1939 and PRESUMPTION-498, -1099, -1127, -1179..1183. Not re-surfaced (recurrences): register growth (498), behavioural idempotence (1180), stale-input OK verdicts (1182), Tom-away routing (OPEN-270), unattended permission declines.*
+
+PRESUMPTION-1187:
+  Date surfaced: 2026-10-26
+  Statement: [inferred] A named coordination artefact is presumed to have one canonical location, so that checking 'the file' settles a question. Two `lit_pipeline.lock` files exist (architecture/ stale since 10-15; review/ live). The 10-25 14a pass read the stale one, recorded the result as 'Verified', and the error propagated into OPEN-275, PRESUMPTION-1185 and a High-priority MONITOR-697. The self-audit layer is subject to the same artefact-as-proof failure (15b, 10-26) it reports in other agents.
+  Evidence it was operative: ASSUMPTION-1928 ('Verified by this run'); ASSUMPTION-1940; 545304f9
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: OPEN-275; PRESUMPTION-1185; MONITOR-697
+  Testability: testable via literature
+  Risk if wrong: High: self-verification yields false contradictions that drive High-priority monitors and open questions.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1187
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1188:
+  Date surfaced: 2026-10-26
+  Statement: [inferred] Concurrency safety for shared-writer tasks is presumed to come from later copies noticing in-flight writes, not from mutual exclusion. Only the lit pipeline holds a lock. The wiki daily run (both firings ~04:36), reviewer-review state file and chat scrape rely on a late copy seeing recent output. Distinct from PRESUMPTION-1184 (what a stand-down ratifies): this is the race window before any output exists.
+  Evidence it was operative: 93147d1c; 85199ed3; b3c35973
+  Why it was unstated: oversight
+  Type: architectural
+  Related decisions: OPEN-274; PRESUMPTION-1180; PRESUMPTION-1184
+  Testability: testable via literature
+  Risk if wrong: High: simultaneous ingests duplicate PRS triplets in the main register.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1188
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1189:
+  Date surfaced: 2026-10-26
+  Statement: [inferred] The watchdog is presumed able to report the absence of what it watches. Scheduler health runs from the same scheduler it monitors. An apparent 10-19..10-23 outage surfaced only through a weekly report reading last-run timestamps, and the cloud-routine watcher has been silent since 10-06 without raising an alarm. Morning status reads 'everything due overnight fired on time' as health.
+  Evidence it was operative: 7e15c62b; 82b087f7; 644362f4
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: OPEN-274; PRESUMPTION-1182; ASSUMPTION-1944; ASSUMPTION-1945; ASSUMPTION-1946
+  Testability: testable via literature
+  Risk if wrong: High: whole-system outages go unreported, and the OPEN-274 remedy assumes cloud firings are being observed.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1189
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+PRESUMPTION-1190:
+  Date surfaced: 2026-10-26
+  Statement: [inferred] Co-commentary on a shared target article is presumed to be a cross-tradition signal. Three commentaries on Seth (BBS 49) are flagged for the Pattern Detector. In BBS's open peer commentary format the editors invite prominent figures to respond to one target article, so co-occurrence may come from the format rather than from convergence between traditions. Is the shared target evidence of connection, or of invitation?
+  Evidence it was operative: 11f94c24
+  Why it was unstated: culturally embedded
+  Type: methodological
+  Related decisions: CROSS-158..163 (13 Pattern Detector); ASSUMPTION-1947
+  Testability: testable via literature
+  Risk if wrong: Medium: inflates cross-connection counts with format-driven co-occurrence.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1190
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Surfaced by the 14b local pass of 2026-10-26. **4 items (1187-1190)**: epistemic 2 · architectural 1 · methodological 1; risk High 3 · Medium 1. Checked against 14a 1940-1950 and PRESUMPTION-1180, -1182, -1184..1186. Not re-surfaced (recurrences): distributed reporting/central remediation (1186, again shown by 1948), stand-down semantics (1184).*

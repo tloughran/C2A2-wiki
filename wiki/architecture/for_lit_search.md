@@ -28131,3 +28131,73 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
 ## 2026-10-26 (second firing) — 15a/15b/15c run note
 **Status:** No new items processed. The earlier 10-26 run (cowork-local-2026-10-26-fb3b3795, lock RELEASED 04:38:43Z) already searched and dispositioned the only new literature-lane items (PRESUMPTION-1184, -1185, -1186). The remaining new items (ASSUMPTION-1926..1938) are [IN-HOUSE] and not owed a search. This firing found nothing new to run and did not acquire the lock, write result files, or touch the registers.
 **Backlog (fail loud, carried forward, not recounted):** the 126 bare literature-lane items plus the 7 (10-18) and 4 (10-25) 15d re-triggers remain [QUEUED] without SEARCHED tags, untouched per the 10-18..10-26 budget precedent. "All queued items searched" is NOT met for the backlog.
+
+
+## 2026-10-26 — 14a/14b local pass (queued)
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1941
+  Statement: [stated] Wiki daily run has no mutual exclusion. Second firing: 'Both firings started at about 04:36. Nothing locks the daily run the way `review/lit_pipeline.lock` locks the literature pipeline, so only timing kept them from colliding. This firing waited because it noticed files changing. If two firings both start ingesting, triplets get duplicated.'
+  Claim to test (in-house): check 93147d1c; scripts for c282 daily run (lock presence).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1942
+  Statement: [stated] Reviewer-review stood down because rerunning 'would have overwritten `reviewer-review-state.json` with the same day's data. Every week-over-week count (resolved, new, persistent) would then have dropped to zero.' Design rationale: the state file is not idempotent under same-day reruns.
+  Claim to test (in-house): check 85199ed3; reviewer-review-state.json keying.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1944
+  Statement: [stated] Contradictory health framing on the same morning. Morning project status: 'Thirty-one scheduled tasks are enabled, and everything due overnight fired on time.' Scheduler health (same data source, 07:05): '36 OK, 7 WARN, 32 FAIL', and 'Right now nothing is watching the cloud routines.'
+  Claim to test (in-house): check 644362f4 vs 82b087f7 data source.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1945
+  Statement: [stated] Weekly ecosystem report (10-25, finished after last night's pass): 'Every weekly and weekday agent last ran on Friday, October 23, between about 3:07 and 4:58 PM, all at once ... It looks like the scheduler wasn't running for most of October 19-23 and then caught up in one burst on Friday.' It asks whether scheduler health caught this: 'If it didn't, the watchdog has a blind spot for cases where the app itself isn't running.' [inferred] This would also explain the unprocessed 14a backlog of 10-18..10-22.
+  Claim to test (in-house): check 7e15c62b; scheduler registry last-run times; scheduler health logs 10-19..10-23.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1946
+  Statement: [stated] Scheduler health: the cloud-routine watcher has not run since 10-06 ('The newest `routine_health.md` line is from 2026-10-06T11:21Z, so it is 20 days stale'). Its own remedy for the 29 DOUBLE-REGISTERED tasks is 'confirm each cloud trigger fires, then disable its local entry', which needs that watcher. The OPEN-274 fix depends on an instrument that is down.
+  Claim to test (in-house): check 82b087f7; scheduler/routine_health.md.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1948
+  Statement: [stated] Same defect reported by three agents, fixed by none. Duplicate ID `PROP-2026-10-23-001` (walk handoff FINDING-110; Levin/Friston: 'I didn't change either one'; deferred monitor 'Sort out the duplicate proposal IDs'). Walk handoff also: queue item cites 'FINDING-030 KL-divergence' but KL-divergence is FINDING-031. 'Earlier findings caught the same kind of clash before.' [inferred] Proposal IDs are minted without a uniqueness check.
+  Claim to test (in-house): check pending/ PROP ID minting; FINDING-030/031 queue item (4f0ae15e).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-27] [SEARCHED-15b: 2026-10-27] [DISPOSITIONED-15c: 2026-10-27] [PRESUMPTION] PRESUMPTION-1187
+  Statement: [inferred] A named coordination artefact is presumed to have one canonical location, so that checking 'the file' settles a question. Two `lit_pipeline.lock` files exist (architecture/ stale since 10-15; review/ live). The 10-25 14a pass read the stale one, recorded the result as 'Verified', and the error propagated into OPEN-275, PRESUMPTION-1185 and a High-priority MONITOR-697. The self-audit layer is subject to the same artefact-as-proof failure (15b, 10-26) it reports in other agents.
+  Claim to test (literature): Single source of truth and configuration drift; verification against stale replicas; audit reliability when auditors share the audited system's artefacts (e.g., 'who audits the auditor', reproducibility of internal audits). Is unverified-path self-checking a recognised failure mode, and what makes a check authoritative?
+  Claim to test (in-house): check ASSUMPTION-1928 ('Verified by this run'); ASSUMPTION-1940; 545304f9.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-27] [SEARCHED-15b: 2026-10-27] [DISPOSITIONED-15c: 2026-10-27] [PRESUMPTION] PRESUMPTION-1188
+  Statement: [inferred] Concurrency safety for shared-writer tasks is presumed to come from later copies noticing in-flight writes, not from mutual exclusion. Only the lit pipeline holds a lock. The wiki daily run (both firings ~04:36), reviewer-review state file and chat scrape rely on a late copy seeing recent output. Distinct from PRESUMPTION-1184 (what a stand-down ratifies): this is the race window before any output exists.
+  Claim to test (literature): Overlap prevention for scheduled jobs (flock/lockfiles, Kubernetes CronJob concurrencyPolicy: Forbid, Airflow max_active_runs); optimistic detection vs. pessimistic locking for batch writers. Is detect-in-flight-writes an accepted substitute for mutual exclusion?
+  Claim to test (in-house): check 93147d1c; 85199ed3; b3c35973.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-27] [SEARCHED-15b: 2026-10-27] [DISPOSITIONED-15c: 2026-10-27] [PRESUMPTION] PRESUMPTION-1189
+  Statement: [inferred] The watchdog is presumed able to report the absence of what it watches. Scheduler health runs from the same scheduler it monitors. An apparent 10-19..10-23 outage surfaced only through a weekly report reading last-run timestamps, and the cloud-routine watcher has been silent since 10-06 without raising an alarm. Morning status reads 'everything due overnight fired on time' as health.
+  Claim to test (literature): Dead man's switch / heartbeat monitoring external to the monitored system (Google SRE 'black-box monitoring'; Healthchecks-style cron monitors); shared-fate failure of watchdogs. Is a co-located watchdog a known blind spot, and is absence-of-signal alerting standard?
+  Claim to test (in-house): check 7e15c62b; 82b087f7; 644362f4.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-27] [SEARCHED-15b: 2026-10-27] [DISPOSITIONED-15c: 2026-10-27] [PRESUMPTION] PRESUMPTION-1190
+  Statement: [inferred] Co-commentary on a shared target article is presumed to be a cross-tradition signal. Three commentaries on Seth (BBS 49) are flagged for the Pattern Detector. In BBS's open peer commentary format the editors invite prominent figures to respond to one target article, so co-occurrence may come from the format rather than from convergence between traditions. Is the shared target evidence of connection, or of invitation?
+  Claim to test (literature): BBS open peer commentary format and invitation practices; co-citation / co-commentary as a signal of intellectual connection vs. venue artefact (bibliometrics: co-citation analysis validity). Does shared-target commentary indicate substantive convergence?
+  Claim to test (in-house): check 11f94c24.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*10 items: 4 literature (PRESUMPTION-1187..1190), 6 [IN-HOUSE]. Live lock is review/lit_pipeline.lock: last line RELEASED 2026-10-26T04:38:43Z (read this run); not held, so append is safe.*
+
+
+## 2026-10-27 — 15a/15b/15c run note (run sched-lit-2026-10-27-6d9c5b33)
+**Lock:** acquired via lit_pipeline_lock.sh (exit 0) before any read or write; released at end.
+**Scope:** new intake only: PRESUMPTION-1187, -1188, -1189, -1190, the only literature-lane items in the 10-26 14a/14b pass. ASSUMPTION-1941..1948 are [IN-HOUSE] and not owed a search. No backlog batch, following the 10-18..10-26 budget precedent.
+**Results:** 15a: 1187 PARTIALLY-SUPPORTED (Moderate); 1188 SUPPORTED (Moderate); 1189 SUPPORTED (Moderate); 1190 PARTIALLY-SUPPORTED (Moderate; weak NOVELTY). 15b: 1187 PARTIALLY-CHALLENGED (Moderate); 1188 PARTIALLY-CHALLENGED (Weak-Moderate); 1189 PARTIALLY-CHALLENGED (Weak); 1190 CHALLENGED (Moderate).
+**Dispositions:** DISPOSITION-1103: 1187 → REVISE-527 (Medium). DISPOSITION-1104: 1188 → REVISE-528 (High). DISPOSITION-1105: 1189 → REVISE-529 (Medium). DISPOSITION-1106: 1190 → REVISE-530 (Medium). No PREMISE or MONITOR minted.
+**SYSTEMIC-RISK:** 15b candidate (High), 'artefact-as-proof', now spanning 1184/1185/1187/1188/1189. Recorded in the 1187 against file and in returns; no flag file.
+**Backups:** *.bak.20261027-pre-15pipeline for all five registers.
+**Backlog remaining (fail loud):** carried forward, not recounted: 126 bare literature-lane items plus the 7 (10-18) and 4 (10-25) 15d re-triggers remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
+**Budget (fail loud):** search subagents used about 98k (15a) + 91k (15b) tokens, far over the 4k per-task / 30k per-session rule, even with a 2-search-per-item cap.

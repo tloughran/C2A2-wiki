@@ -36949,3 +36949,192 @@ ASSUMPTION-1939:
     Current status: UNTESTED
 
 *Extracted by the 14a local pass of 2026-10-25. **15 items (1925-1939)**; queued [IN-HOUSE]: 1926, 1927, 1928, 1930, 1932, 1935, 1936, 1938. Not queued: 1925, 1933, 1934, 1937 (recurrences), 1929 (status return), 1931, 1939 (framework/context). No interactive Tom session; all sources were scheduled runs.*
+
+ASSUMPTION-1940:
+  Date identified: 2026-10-26
+  Statement: [stated] Correction to ASSUMPTION-1928. Lit pipeline 10-26: 'The lock script itself, not the agent, writes the log in `review/lit_pipeline.lock`. That log shows lock-and-release entries on 10-24, 10-25 and today.' Verified by this run: two lock files exist. `review/lit_pipeline.lock` (mtime 2026-10-26 00:38 EDT) holds LOCKED/RELEASED lines for 10-23, 10-24, 10-25, 10-26. `architecture/lit_pipeline.lock` (mtime 2026-10-15 00:39) is a stale copy. The 10-25 14a 'verification' behind 1928 read the stale architecture/ copy. The lock is in use; the contradiction in 1928 was produced by this agent.
+  Context: 545304f9; ls/tail of both lock files this run
+  Type: architectural
+  Related decisions: ASSUMPTION-1928; OPEN-275; PRESUMPTION-1185; MONITOR-697
+  Testability: testable in-house (done this run)
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1940
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: GROUNDED
+
+ASSUMPTION-1941:
+  Date identified: 2026-10-26
+  Statement: [stated] Wiki daily run has no mutual exclusion. Second firing: 'Both firings started at about 04:36. Nothing locks the daily run the way `review/lit_pipeline.lock` locks the literature pipeline, so only timing kept them from colliding. This firing waited because it noticed files changing. If two firings both start ingesting, triplets get duplicated.'
+  Context: 93147d1c
+  Type: architectural
+  Related decisions: OPEN-274; PRESUMPTION-1180; PRESUMPTION-1184
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1941
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1942:
+  Date identified: 2026-10-26
+  Statement: [stated] Reviewer-review stood down because rerunning 'would have overwritten `reviewer-review-state.json` with the same day's data. Every week-over-week count (resolved, new, persistent) would then have dropped to zero.' Design rationale: the state file is not idempotent under same-day reruns.
+  Context: 85199ed3
+  Type: methodological
+  Related decisions: PRESUMPTION-1180; OPEN-274
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1942
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1943:
+  Date identified: 2026-10-26
+  Statement: [stated] Recurrence and confirmation of ASSUMPTION-1936. Evening cowork-to-chat (second copy): 'The tools that read Cowork session transcripts were available here, even though today's summary and changelog both say they weren't. Whether they're available seems to depend on which copy of a task fires.' The cloud 14a firing at 23:37 EDT wrote another NO-OP (changelog/2026-10-27_changes.md); this local firing has session_info.
+  Context: ca2e1f3d; changelog/2026-10-27_changes.md; this run
+  Type: empirical
+  Related decisions: ASSUMPTION-1936; OPEN-273; OPEN-274
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1943
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1944:
+  Date identified: 2026-10-26
+  Statement: [stated] Contradictory health framing on the same morning. Morning project status: 'Thirty-one scheduled tasks are enabled, and everything due overnight fired on time.' Scheduler health (same data source, 07:05): '36 OK, 7 WARN, 32 FAIL', and 'Right now nothing is watching the cloud routines.'
+  Context: 644362f4; 82b087f7
+  Type: epistemic
+  Related decisions: PRESUMPTION-1182; PRESUMPTION-1189
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1944
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1945:
+  Date identified: 2026-10-26
+  Statement: [stated] Weekly ecosystem report (10-25, finished after last night's pass): 'Every weekly and weekday agent last ran on Friday, October 23, between about 3:07 and 4:58 PM, all at once ... It looks like the scheduler wasn't running for most of October 19-23 and then caught up in one burst on Friday.' It asks whether scheduler health caught this: 'If it didn't, the watchdog has a blind spot for cases where the app itself isn't running.' [inferred] This would also explain the unprocessed 14a backlog of 10-18..10-22.
+  Context: 7e15c62b
+  Type: empirical
+  Related decisions: OPEN-274; PRESUMPTION-1189
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1945
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1946:
+  Date identified: 2026-10-26
+  Statement: [stated] Scheduler health: the cloud-routine watcher has not run since 10-06 ('The newest `routine_health.md` line is from 2026-10-06T11:21Z, so it is 20 days stale'). Its own remedy for the 29 DOUBLE-REGISTERED tasks is 'confirm each cloud trigger fires, then disable its local entry', which needs that watcher. The OPEN-274 fix depends on an instrument that is down.
+  Context: 82b087f7
+  Type: architectural
+  Related decisions: OPEN-274; ASSUMPTION-1938
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1946
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1947:
+  Date identified: 2026-10-26
+  Statement: [stated] Levin/Friston agent: two BBS commentaries (39 days old) included under 'the significant work not yet captured clause'; Friston proposal 'based on the abstract only', Medium confidence. Cross-tradition signal: 'Levin, Friston and McGilchrist each wrote a peer-reviewed commentary on the same article' (Seth, BBS 49). Task file wiki path omits `Projects/` (recurrence of ASSUMPTION-1924).
+  Context: 11f94c24
+  Type: methodological
+  Related decisions: ASSUMPTION-1924; PRESUMPTION-1190
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1947
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1948:
+  Date identified: 2026-10-26
+  Statement: [stated] Same defect reported by three agents, fixed by none. Duplicate ID `PROP-2026-10-23-001` (walk handoff FINDING-110; Levin/Friston: 'I didn't change either one'; deferred monitor 'Sort out the duplicate proposal IDs'). Walk handoff also: queue item cites 'FINDING-030 KL-divergence' but KL-divergence is FINDING-031. 'Earlier findings caught the same kind of clash before.' [inferred] Proposal IDs are minted without a uniqueness check.
+  Context: 4f0ae15e; 11f94c24; 732c661e
+  Type: architectural
+  Related decisions: PRESUMPTION-1186; OPEN-270
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1948
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1949:
+  Date identified: 2026-10-26
+  Statement: [stated] Lit pipeline budget and backlog (recurrence). 'The two search agents used about 98k and 118k tokens, far over your 4k-per-task and 30k-per-session limits, even with each agent limited to 3 searches per item.' Backlog '126 unsearched literature items, plus 7 recheck requests ... and 4 more' skipped 'as in the last four runs'. 15d's note on MONITOR-688 'still unhandled'.
+  Context: 545304f9
+  Type: methodological
+  Related decisions: ASSUMPTION-1925; MONITOR-688
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1949
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+ASSUMPTION-1950:
+  Date identified: 2026-10-26
+  Statement: [stated] Wiki network after the 10-26 main run: '20 cards -> 42 triplets across 8 traditions; CROSS-158..163; FINDING-108..110; FLAG-025'; 'Network: 1083 triplets · 163 connections · 110 findings · Pending 3'. Main run's master-wiki summary has 'two "Phase 2" entries that contradict each other'. Janitor (via system health): 347 new broken wikilinks; 7 files missing from vault/refs.
+  Context: 93147d1c; 504f918a
+  Type: empirical
+  Related decisions: none
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1950
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-26 local pass (final assistant message per session, read directly via session_info).
+    Current status: UNTESTED
+
+*Extracted by the 14a local pass of 2026-10-26. **11 items (1940-1950)**; queued [IN-HOUSE]: 1941, 1942, 1944, 1945, 1946, 1948. Not queued: 1940 (verified this run, GROUNDED), 1943, 1949 (recurrences of 1936, 1925), 1947, 1950 (framework/context). ASSUMPTION-1928 is corrected by 1940; its 'Verified' claim was wrong. No interactive Tom session; all sources were scheduled runs.*

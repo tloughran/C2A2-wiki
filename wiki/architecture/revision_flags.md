@@ -16248,3 +16248,35 @@ REVISE-526: [2026-10-26] Source item: PRESUMPTION-1186 (DISPOSITION-1102)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1186 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1186_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1186_against.md
+
+REVISE-527: [2026-10-27] Source item: PRESUMPTION-1187 (DISPOSITION-1103)
+  What is at risk: Self-audit checks (14a/14b, 15d) that read coordination artefacts; ASSUMPTION-1928 ('Verified'); MONITOR-697 basis; OPEN-275.
+  Recommended action (for Tom): (1) Retire or rename the stale architecture/lit_pipeline.lock (for example to *.STALE-20261015) so no agent can read it as live. (2) Agents check lock state only through lit_pipeline_lock.sh (a status/query verb if one exists), never by reading a file. (3) Any 'Verified' claim in a register names the exact path and command used. (4) Re-examine MONITOR-697 and ASSUMPTION-1928 in light of this; the 10-26 run note already observed the contradiction.
+  Urgency: Medium.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1187 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1187_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1187_against.md
+
+REVISE-528: [2026-10-27] Source item: PRESUMPTION-1188 (DISPOSITION-1104)
+  What is at risk: Wiki daily run (ASSUMPTION-1941), reviewer-review state file, chat scrape, any task appending to shared registers; REVISE-523 (double registration) and REVISE-525.
+  Recommended action (for Tom): (1) Generalise lit_pipeline_lock.sh (mkdir-based, run-id, stale-break, audit trail) into a per-task lock and wrap each shared-writer task with acquire/release, exit 3 → stand down. (2) Where a lock is impractical, use an atomic write (temp file + rename, or a run-id-tagged done-marker written last), not a look-for-recent-changes heuristic. (3) Root fix remains removing duplicate registrations (REVISE-523).
+  Urgency: High.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1188 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1188_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1188_against.md
+
+REVISE-529: [2026-10-27] Source item: PRESUMPTION-1189 (DISPOSITION-1105)
+  What is at risk: Scheduler health task, morning status ('everything due fired on time'), cloud-routine watcher, REVISE-524 (empty read ≠ fact), PREMISE-239 (observed vs declared state).
+  Recommended action (for Tom): (1) An external heartbeat. Each critical task pings an outside check-in service, or writes to a location that something not on this Mac or scheduler reads, which alerts when a ping is missing. (2) Keep the list of expected runs outside the scheduler, for example a checked-in manifest. (3) Allow for sleep: grace windows and 'host asleep' suppression, so alerts don't train Tom to ignore them. (4) Morning status reports 'N expected / M observed' rather than 'all fired'.
+  Urgency: Medium.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1189 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1189_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1189_against.md
+
+REVISE-530: [2026-10-27] Source item: PRESUMPTION-1190 (DISPOSITION-1106)
+  What is at risk: Pattern Detector co-occurrence rules; cross-tradition signal counting; the Seth BBS 49 flag.
+  Recommended action (for Tom): (1) Don't count 'commented on the same target article' as cross-tradition convergence in invited-commentary venues (BBS, open peer commentary). (2) Count it only if the commentaries converge in content: a shared claim or criticism, coded on both sides. (3) Re-check the three Seth BBS 49 flags under that rule. (4) Note 15a's weak NOVELTY: content-level convergence detection could be a small methodological contribution.
+  Urgency: Medium.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1190 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1190_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1190_against.md

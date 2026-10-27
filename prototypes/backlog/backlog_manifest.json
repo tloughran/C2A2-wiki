@@ -3344,6 +3344,22 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-26-003",
+  "tradition": "friston",
+  "source_date": "2026-09-17",
+  "title": "To be or not to be? A question of mortality",
+  "file": "inbox/proposals/approved/2026-10-26_friston_bbs-question-of-mortality-seth.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-26-002",
+  "tradition": "levin",
+  "source_date": "2026-09-17",
+  "title": "Diverse intelligence: An essential field for questions of AI and consciousness",
+  "file": "inbox/proposals/approved/2026-10-26_levin_bbs-diverse-intelligence-commentary-seth.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-20-002",
   "tradition": "rohr",
   "source_date": "2026-09-18",
@@ -3517,6 +3533,14 @@
   "source_date": "2026-09-30",
   "title": "The Trace Podcast, Episode 1: Traces of Consciousness",
   "file": "inbox/proposals/approved/2026-10-13_hoffman_trace-podcast-ep1-traces-of-consciousness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-26-001",
+  "tradition": "levin",
+  "source_date": "2026-10-02",
+  "title": "Causal Organization Prior to and Promoting Self-Replication in a Catalytic Model of the Or",
+  "file": "inbox/proposals/approved/2026-10-26_levin_causal-organization-before-self-replication.md",
   "processed": false
  },
  {

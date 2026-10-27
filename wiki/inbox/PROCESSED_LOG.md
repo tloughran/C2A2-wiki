@@ -2425,3 +2425,11 @@ Ledger after ingest: approved total=506 ingested=474 decided-zero=30 OPEN=1 (Wri
 ### 2026-10-26 second orchestrator firing (04:36 local, verification only)
 Started while the primary run was mid-ingest (decisions archive written 04:36, prs_triplets.md files changing 04:37-04:39), so this firing changed nothing until the primary finished at ~04:40. Phase 0: the only in-window email (2026-10-25, 20 APPROVE) had already been applied by the primary run; the older April/July unread threads are already in provenance and archived. Phase 1: verified, ledger OPEN=1 (Wright PROP-2026-08-14-033, unchanged). Phase 2: skipped (3 Monday specialist cards today). Phases 3/4 not repeated (2026-10-26_review.html and draft r211482704169668589 already exist). Verified the review_log scrub is clean. 5.5/5.6 not re-run. Phase 6: no git.
 **Network: 1083 PRS / 163 CROSS / 110 FINDING.** Pending = 3.
+
+### 2026-10-27 orchestrator (cloud)
+Phase 0: decision email 2026-10-26 (3 APPROVE: PROP-2026-10-26-001..003) applied; moved to approved/, copied to inbox/. Phase 1: ingested 3 cards / 4 triplets: levin_causal-organization-before-self-replication (PRS-146,147), levin_bbs-diverse-intelligence-commentary-seth (PRS-148), friston_bbs-question-of-mortality-seth (PRS-85). CROSS-164, FINDING-111. Evidence is abstract-level for the two BBS commentaries.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.**
+
+### 2026-10-27 second orchestrator firing (04:37 local, verification only)
+Started while the primary cloud run was mid-ingest (decisions archive 04:36, traditions files changing 04:37-04:39); changed nothing it had done. Verified: Phase 0 email 2026-10-26 (3 APPROVE) applied, email stored once in provenance, no UNREAD label; Phase 1 ledger entry present; Phase 3 review page 2026-10-27_review.html exists; Phase 4 draft r7204053308839821321 exists; review_log scrub clean; 5.6 ran. Phase 2 not repeated. One gap filled: Phase 5 cleanup had left review/2026-10-23_review.html (4 days old); moved to review/_trash/. Phase 6: no git.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 3.

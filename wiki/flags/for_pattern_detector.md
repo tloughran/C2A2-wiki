@@ -818,3 +818,6 @@ has not already recorded, plus the two that are about the pipeline rather than a
 - [PIPELINE, EVIDENCE] **Evidence weather:** 42 triplets; 11 Speculative; Hawkins x3 cards are TBP-team work read from forum chapter lists; Wolfram interview and 4 Rohr/Wright items rest on descriptions or chapter titles. Duplicate id PROP-2026-10-23-001 on the Friston and Kastrup cards.
 
 [EVALUATED: 2026-10-26 - FINDING-108..110; see pattern_detector_findings.md]
+
+- **CROSS-164 (Levin x Friston x McGilchrist): BBS commentaries on Seth's conscious-AI target article.** Levin e345 (substrate-liberal) vs Friston e336 (mortality-constrained). McGilchrist's 'Consciousness as an ontological primitive' is in the same issue but not yet captured. Ready-made Level-2 comparison; relevant to whether AI agents can be mature tradition members or only functional ones. Evidence is abstract-level for both.
+[EVALUATED: 2026-10-27 - FINDING-111; see pattern_detector_findings.md]

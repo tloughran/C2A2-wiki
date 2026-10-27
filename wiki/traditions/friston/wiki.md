@@ -236,3 +236,6 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-23-001` - The Free Energy Principle and Free Markets (Entropy 28(9):956, 2026-08-25) -> PRS-82, PRS-83, PRS-84. Abstract and Introduction read only; results sections unread. First application of the FEP to an institution.
 
 Open: whether the market's attracting set is analogous to a tradition's characteristic questions (a market's attractor is not a telos).
+
+### Ingest 2026-10-27
+PRS-85 (BBS e336 commentary on Seth): consciousness tied to the thermodynamics of mortal computation; 'artificial consciousness' may be an oxymoron. Medium confidence, abstract only. Open: the full information-geometric argument is unread. Same-issue contrast with Levin e345 recorded as CROSS-164.

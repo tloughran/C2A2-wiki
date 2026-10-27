@@ -1316,7 +1316,34 @@ PRS-145:
   Confidence: Speculative
   Evidence: Episode chapter list only (Thoughtforms Life feed, published 2026-10-10); no transcript could be retrieved. The linkage of the Platonic-space chapters to the clinical anomalies is inferred from chapter order, not heard.
 
-*Total PRS triplets: 145*
+PRS-146:
+  Problem: Agents with causal power are usually explained as products of selection among replicators. Can organized causal structure come before replication and shape it?
+  Resource: Causal emergence (integrated, irreducible predictive information) measured over time in the GARD catalytic-assembly model.
+  Solution: Causal emergence shows punctuated rises tied to self-replication; its early level predicts later self-replication better than established molecular-dynamics measures.
+  Date Added: 2026-10-27
+  Source: Pigozzi & Levin, Causal Organization Prior to and Promoting Self-Replication in a Catalytic Model of the Origin of Life (arXiv 2607.28250 v2); PROP-2026-10-26-001
+  Confidence: Medium (single model system, simulation only)
+  Evidence: Abstract: 'Early causal emergence predicts subsequent self-replication more accurately than established measures of molecular dynamics.'
+
+PRS-147:
+  Problem: Is causal emergence only a correlate of pre-biotic organization, or does it play a causal role?
+  Resource: Interventions on molecular assemblies that raise or lower causal emergence.
+  Solution: Raising causal emergence increases replicator persistence and abundance; lowering it does the reverse, making integrated causality a functional control knob before evolution begins.
+  Date Added: 2026-10-27
+  Source: Pigozzi & Levin (arXiv 2607.28250 v2); PROP-2026-10-26-001
+  Confidence: Medium
+  Evidence: Abstract: 'manipulating molecular assemblies to increase causal emergence raises the persistence and abundance of self-replication, whereas the opposite is true for interventions that decrease causal emergence.'
+
+PRS-148:
+  Problem: Can biology mark a principled boundary for which substrates can host consciousness, as Seth's biological naturalism proposes?
+  Resource: Diverse Intelligence evidence: unconventional embodiments (morphospace and physiological-space navigation), evolved/engineered hybrids, unexpected competencies in minimal systems.
+  Solution: No convincing substrate limit can currently be drawn; substrate-restrictive positions should be held provisionally, since they risk underestimating both machines and ourselves.
+  Date Added: 2026-10-27
+  Source: Levin, Diverse intelligence: An essential field for questions of AI and consciousness (BBS 49, e345); PROP-2026-10-26-002
+  Confidence: High as a statement of Levin's position; Speculative as a settled claim about consciousness
+  Evidence: BBS abstract only (full text not read by the card's author).
+
+*Total PRS triplets: 148*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

@@ -230,3 +230,6 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 3 triplets added from 1 approved proposal: PRS-143, PRS-144, PRS-145.
 
 - `PROP-2026-10-12-001` — "Mind-Body Interface: an experimental and Clinical Perspective" (Levin & Kofman, SMMR keynote; anchors Mind and Matter 23(1):13-70, 2025) (talk, https://share.transistor.fm/s/3933f101) → PRS-143, PRS-144, PRS-145. Active Research Question 26 added.
+
+### Ingest 2026-10-27
+Three approved 2026-10-26 cards. PRS-146/147 (Pigozzi & Levin, GARD): causal emergence precedes and promotes self-replication; raising it lengthens replicator persistence. Extends the causal-emergence line (alignment hypothesis) into origin of life. PRS-148 (BBS e345 commentary on Seth): no convincing substrate limit on consciousness can currently be drawn. Open: does causal emergence carry over from the GARD simulation to wet chemistry; does the e345 argument meet Friston's mortality constraint (see CROSS-164).

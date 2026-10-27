@@ -3774,3 +3774,31 @@ OPEN-275:
     Original item: OPEN-275
     Item type: OPEN QUESTION
     Current status: OPEN
+
+## 2026-10-26 — raised/updated by the 14a/14b local pass
+
+OPEN-275 UPDATE (2026-10-26, 14a): Partly answered. The lock is in use at `review/lit_pipeline.lock` (LOCKED/RELEASED lines 10-23..10-26, written by the lock script). `architecture/lit_pipeline.lock` is a stale copy last written 10-15; the 10-25 14a pass read it in error (ASSUMPTION-1940). Remaining: should the stale architecture/ copy be removed or marked, and should MONITOR-697 (PRESUMPTION-1185) be re-evaluated in light of this? Status: PARTLY-ANSWERED.
+
+OPEN-276:
+  Raised: 2026-10-26 by 14a/14b (ASSUMPTION-1941, -1942; PRESUMPTION-1188)
+  Question: Which shared-writer tasks besides the lit pipeline need a run lock? The wiki daily run had two firings start at ~04:36 with nothing but timing to keep them apart; reviewer-review's state file is not safe to rerun the same day. Should the daily run adopt the lit pipeline's lock script?
+  Needs: Tom (task-file change); in-house check of which tasks write shared registers
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-276
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-277:
+  Raised: 2026-10-26 by 14a/14b (ASSUMPTION-1945, -1946; PRESUMPTION-1189)
+  Question: What detects that the scheduler itself is not running? The weekly report infers a 10-19..10-23 outage from last-run timestamps; the cloud-routine watcher has been silent since 10-06. Does any check live outside the scheduler it watches (cf. the heartbeat proposal toward OPEN-274)?
+  Needs: Tom; in-house check of scheduler-health logs for 10-19..10-23
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-277
+    Item type: OPEN QUESTION
+    Current status: OPEN
