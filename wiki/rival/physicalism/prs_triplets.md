@@ -315,10 +315,10 @@ PHYS-PRS-32:
   Label: Carroll — Cognitive instability as a theory-killer
   Problem: Some theories predict that observers like us are mostly deluded, for example cosmologies dominated by Boltzmann brains. Data cannot easily refute them, because the deluded observers would see the same data.
   Resource: The criterion of cognitive stability. A theory that cannot simultaneously be true and justifiably believed should be rejected whatever the data.
-  Solution: A principled, non-empirical constraint on theory choice. The tradition extends it, as its own application, to Hoffman's fitness-beats-truth: if evolution hides the truth from cognition, the evidence for that very claim is undermined. (The extension to Hoffman is the tradition's argument, not something Carroll's 2017 paper states.)
-  Date Added: 2026-10-27
-  Source: Sean M. Carroll, "Why Boltzmann Brains Are Bad," arXiv:1702.00850 (2017)
-  Confidence: High (for Carroll's criterion); Medium (for the extension to Hoffman)
+  Solution: A principled, non-empirical constraint on theory choice. The tradition first applied it to the earlier stage of the Hoffman-Prakash program, fitness-beats-truth (*The Case Against Reality*, 2019): if evolution hides the truth from cognition, the evidence for that very claim is undermined. The current program no longer rests on evolutionary premises. It rests on the trace (Hoffman PRS-34), and the Hoffman wiki records that the trace gives "an independent route" to the interface conclusion (Hoffman PRS-37). Against that, the criterion bites in a different way. By PRS-37, an observer confined to a trace loses information about unobserved states irreversibly, and infinitely many larger kernels are compatible with any trace. On the program's own terms, then, no observer can have evidence that the hidden states are conscious agents rather than physical states. The theory is not self-undermining, but its positive ontology is underdetermined by its own lights. That is the tradition's present use of the criterion; the full argument is in wiki §6.2. (Neither extension appears in Carroll's 2017 paper. Both are the tradition's arguments.)
+  Date Added: 2026-10-27 (revised 2026-10-27 to address the trace program)
+  Source: Sean M. Carroll, "Why Boltzmann Brains Are Bad," arXiv:1702.00850 (2017); for the target: Hoffman, Prakash & Chattopadhyay, *Traces of Consciousness* (2024 or 2025; date discrepancy recorded at Hoffman wiki Question 17), as recorded in Hoffman PRS-34 and PRS-37
+  Confidence: High (for Carroll's criterion); Medium (for the application to the trace program)
 
 PHYS-PRS-33:
   Label: Carroll — Something rather than nothing
@@ -347,5 +347,25 @@ PHYS-PRS-35:
   Source: Michael Levin & Daniel C. Dennett, "Cognition All the Way Down," *Aeon* (2020); Dennett, *The Intentional Stance* (MIT Press, 1987)
   Confidence: Medium
 
+### F. Answering the trace program (Hoffman-Prakash)
+
+PHYS-PRS-36:
+  Label: Seth (with Friston), as deployed by the tradition — Who restricts? Blankets as physical boundaries
+  Problem: The Hoffman-Prakash program claims that trace blankets strictly generalise Markov blankets and that the free-energy principle is a special case of trace logic (Hoffman PRS-10). If that holds, the predictive-processing science the tradition relies on for its account of the self appears to be absorbed into a consciousness-first framework.
+  Resource: The tradition's reading of Friston's Markov blanket as a physical boundary, picked out by conditional independence in a physical system. Alongside it is Seth and Friston's active interoceptive inference, which the tradition reads as a physical theory of how a body regulates itself (members/seth.md). The 2016 paper works inside the active-inference framework but does not itself use the term "Markov blanket," so the link is the shared framework, not that paper's wording. Set beside this is the trace operation as recorded in the Hoffman wiki: for a subset A of a kernel's states there is a unique trace kernel Q_A (Hoffman PRS-34). In trace logic, A is by definition the observer's accessible states (Hoffman wiki, Question 19).
+  Solution: Restriction to a subset is the same formal move whether A is read as an observer's access or as a subsystem's boundary, and the trace order's results (uniqueness, irreversible loss, incomparability) hold under both readings. So the disagreement is not about the mathematics. It is about who restricts, and the formalism, which is complete before either reading is added, cannot settle that. If FEP is a special case of trace logic, it is a special case of a piece of mathematics, not of consciousness. Neither Seth nor Friston has written on trace logic; this is the tradition's deployment of their work.
+  Date Added: 2026-10-27
+  Source: Anil K. Seth & Karl J. Friston, "Active Interoceptive Inference and the Emotional Brain," *Phil. Trans. R. Soc. B* 371(1708): 20160007 (2016); for the target: Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Levin, host), April 2026 (Hoffman PRS-10); Hoffman, Prakash & Chattopadhyay, *Traces of Consciousness* (Hoffman PRS-34)
+  Confidence: Medium (as a statement of the tradition's position; Hoffman-side claims are as the vault records them)
+
+PHYS-PRS-37:
+  Label: Carroll (emergence as coarse-graining), as deployed by the tradition — Taking up the trace blanket
+  Problem: Physicalist boundary concepts were developed largely for acyclic dependency structures, while organisms and most physical systems are cyclic. If trace blankets strictly generalise Markov blankets from acyclic to cyclic systems (Hoffman PRS-10), the tradition lacks the general tool, and its rival owns it.
+  Resource: The tradition's account of emergence (wiki O3): a higher-level description is real when its variables evolve, to a useful approximation, without the microscopic details (the tradition's working gloss on Carroll & Parola 2024). Beside it is the Trace Chain Theorem as recorded in the vault: the trace of Q onto A is a unique Markov kernel on A (Hoffman PRS-34), so the restricted dynamics is autonomous on A by construction. Note that the time between visits to A is excised from that dynamics.
+  Solution: Treat the trace kernel as an ontology-neutral, exact candidate for a higher-level dynamics in cyclic systems. Take up the trace blanket if the strict-generalisation claim is proved. That is a concession of a genuine formal gain, not of the ontology. Two conditions travel with it. First, the vault holds the generalisation claim from a talk, not from a written proof. Second, whether Friston's own random-dynamical-systems blankets are already defined for cyclic coupling is unchecked [UNVERIFIED]. If both are cleared, the tradition gains a boundary concept for organisms, and the disagreement narrows to who restricts (PHYS-PRS-36).
+  Date Added: 2026-10-27
+  Source: Sean M. Carroll & Achyuth Parola, "What Emergence Can Possibly Mean," arXiv:2410.15468 (2024); for the target: Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Levin, host), April 2026 (Hoffman PRS-10); Hoffman, Prakash & Chattopadhyay, *Traces of Consciousness* (Hoffman PRS-34)
+  Confidence: Speculative (the adoption is conditional on a proof the vault does not hold)
+
 ---
-*35 triplets. Created 2026-10-27 for the ACPA 2026 demonstration. Items marked [UNVERIFIED] need checking against the primary text before citation.*
+*37 triplets. Created 2026-10-27 for the ACPA 2026 demonstration. Items marked [UNVERIFIED] need checking against the primary text before citation.*

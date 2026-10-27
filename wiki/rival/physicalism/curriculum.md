@@ -121,7 +121,7 @@ This is the longest stage. It is where the tradition is weakest by its rivals' l
 - What does Carroll say about "why is there something rather than nothing"? Why is "the universe may simply be" an answer and not a refusal? Where does that leave the tradition with respect to classical theism?
 - Where does Tegmark differ from Carroll about mathematics, and why does that matter for answering Levin?
 
-**Self-test.** Apply the Bayesian standard symmetrically. Write one paragraph assessing Many-Worlds by it, and one paragraph assessing Hoffman's Trace program by it, with the same rigour.
+**Self-test.** Apply the Bayesian standard symmetrically. Write one paragraph assessing Many-Worlds by it, and one paragraph assessing the Hoffman-Prakash trace program by it, with the same rigour. The second paragraph should treat the whitepaper's eight Conjectures (Hoffman wiki, PRS-28) as the program's stated test.
 
 ## Stage 6 — Engaging the rivals in their own words (6–8 weeks)
 
@@ -129,7 +129,12 @@ A member who has read the rivals only through the tradition's summaries has not 
 
 **Readings: the rivals**
 1. ★ Bernardo Kastrup, *Why Materialism Is Baloney* (Iff Books, 2014), and *The Idea of the World* (Iff Books, 2019).
-2. ★ Donald Hoffman, *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes* (W. W. Norton, 2019).
+2. ★ The Hoffman-Prakash program, read in order:
+   - Donald Hoffman, *The Case Against Reality: Why Evolution Hid the Truth from Our Eyes* (W. W. Norton, 2019). This is the earlier, fitness-beats-truth stage.
+   - Donald D. Hoffman, Chetan Prakash & Robert Prentner, "Fusions of Consciousness," *Entropy* 25(1): 129 (2023). The conscious-agent formalism, with its conjectured link to spacetime physics.
+   - ★ Donald D. Hoffman, Chetan Prakash & Chattopadhyay, *Traces of Consciousness* (preprint, doi:10.20944/preprints202410.1305.v1). This is the Trace Chain Theorem paper. The vault records its date as unresolved: 2024 in the Trace Institute whitepaper's bibliography (preprint deposited October 2024), 2025 on the Trace Institute publications page (Hoffman wiki, Question 17). Cite both until the master agent rules.
+   - Hoffman & Prakash, "A Multiscale Logic of Collective Intelligence," Thoughtforms Life (Michael Levin, host), April 2026 (talk). This is the source for the trace-blanket claim (Hoffman wiki, PRS-10).
+   - The vault's record of the above: [[traditions/hoffman/prs_triplets|Hoffman PRS Triplets]], especially PRS-07 to PRS-10 and PRS-34 to PRS-37.
 3. ★ Michael Levin & Daniel Dennett, "Cognition All the Way Down" (*Aeon*, 2020).
 4. ★ Michael Levin, "Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds" (*Frontiers in Systems Neuroscience*, 2022).
 5. Philip Goff, *Galileo's Error: Foundations for a New Science of Consciousness* (Pantheon, 2019).
@@ -137,12 +142,13 @@ A member who has read the rivals only through the tradition's summaries has not 
 
 **Readings: the tradition's replies**
 7. ★ Sean Carroll, "Consciousness and the Laws of Physics" (preprint, PhilSci-Archive, 2021; written for a *Journal of Consciousness Studies* symposium on *Galileo's Error*).
-8. ★ Sean Carroll, "Why Boltzmann Brains Are Bad" (2017), re-read with Hoffman in mind.
+8. ★ Sean Carroll, "Why Boltzmann Brains Are Bad" (2017), re-read with Hoffman's earlier, fitness-beats-truth stage in mind. Then re-read Carroll & Parola (2024, Stage 2) beside the Trace Chain Theorem, and the wiki's §6.2 reply to the trace program.
 9. Christian List, *Why Free Will Is Real* (2019), re-read with Levin in mind: agency without settling the question of consciousness.
 
 **Questions to answer**
 - State Kastrup's argument against materialism in the strongest form he would accept. Then answer it: the decombination problem, the absence of a distinguishing prediction, and the priors.
-- State "fitness beats truth" precisely as a theorem about evolutionary game models. Identify the auxiliary premise that carries it from the models to human perception, and press the cognitive-instability objection.
+- State "fitness beats truth" precisely as a theorem about evolutionary game models. Identify the auxiliary premise that carries it from the models to human perception, and press the cognitive-instability objection. Then explain why this is no longer the main event.
+- State the trace-blanket argument as Hoffman and Prakash would: the trace of a Markov chain onto a subset A, the trace order, and the claim that trace blankets strictly generalise Markov blankets from acyclic to cyclic systems, with FEP as a special case. Then answer it. Show that the mathematics is ontology-neutral (tracing is a form of marginalisation), locate the dispute in *who restricts*, say what the tradition must concede if the generalisation is proved, and say what it still disputes.
 - What in Levin's program should a physicalist *welcome*? What specific inference should the physicalist resist? Distinguish *mathematical constraint* from *non-physical cause*.
 - Give Carroll's dilemma for panpsychism and the panpsychist's best reply.
 
@@ -156,9 +162,9 @@ A mature member of the naturalist-physicalist tradition can do six things.
 2. **Hold the levels.** Use supervenience, multiple realisability and difference-making fluently. Give the List–Menzies reply to Kim and say where it is still under pressure.
 3. **Map the internal quarrels.** Locate any physicalist position on the axes of eliminativism, non-reductivism, illusionism, phenomenal-concept physicalism, and non-dogmatic "real problem" materialism. Do the same for compatibilism versus hard incompatibilism. Say where Carroll sits and why.
 4. **Admit the remainder.** State the explanatory gap, the open exclusion problem, unsettled quantum foundations, the unexplained laws, and the open question of moral progress in terms a rival would accept. Report Kim's late ambivalence honestly.
-5. **Argue the case on the tradition's own terms against Kastrup, Hoffman and Levin.** Use the tradition's own resources: Bayesian abduction, cognitive stability, Core Theory completeness, and the theory of levels. Do it with enough precision that a mature member of each rival tradition would say "that is the real objection." Specifically:
+5. **Argue the case on the tradition's own terms against Kastrup, Hoffman-Prakash and Levin.** Use the tradition's own resources: Bayesian abduction, cognitive stability, Core Theory completeness, and the theory of levels. Do it with enough precision that a mature member of each rival tradition would say "that is the real objection." Specifically:
    - *against Kastrup:* the decombination problem; the lack of a distinguishing prediction; why, if the two views are formally dual, research fertility should decide between them;
-   - *against Hoffman:* cognitive instability; the gap between the FBT theorem and its application to human perception; the requirement that the Trace program produce a distinguishing prediction, not just recover known results;
+   - *against Hoffman and Prakash:* **can state and answer the trace-blanket argument.** State it: the trace of a Markov chain onto the observer's accessible states, the trace order, and trace blankets as a claimed strict generalisation of Markov blankets to cyclic systems. Answer it: the formalism is ontology-neutral, so the dispute is who restricts (observer by definition, or physical boundary by conditional independence). Concede the formal gain if the generalisation is proved. Dispute the step from formalism to consciousness-first ontology. Hold the program to its own conjectures and require a distinguishing prediction, not just recovered physics. Know the earlier stage too: cognitive instability against FBT, and the gap between the FBT theorem and human perception;
    - *against Levin:* acceptance of goal-directed vocabulary where it earns its keep; refusal of the step from constraint to non-physical cause; acceptance of manipulable causal emergence as a fair test of the tradition's own criterion.
 6. **Name the defeaters.** Say what evidence would lower the tradition's credence in physicalism. A member who cannot do this has learned a creed, not a research tradition.
 
