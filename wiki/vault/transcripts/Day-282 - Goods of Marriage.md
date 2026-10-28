@@ -16,7 +16,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-282 - Goods of Marriage - Contemporary]]"
 tags: [summa, day/282, pars/suppl, q/49-50]
-last_qc_at: "2026-10-08T20:17:57"
+last_qc_at: "2026-10-27T20:17:25"
 last_qc_outcome: "pass"
 ---
 
