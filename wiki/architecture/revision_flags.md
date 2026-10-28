@@ -16280,3 +16280,27 @@ REVISE-530: [2026-10-27] Source item: PRESUMPTION-1190 (DISPOSITION-1106)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1190 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1190_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1190_against.md
+
+REVISE-531: [2026-10-28] Source item: PRESUMPTION-1191 (DISPOSITION-1108)
+  What is at risk: DECISION-084 certification gate; ASSUMPTION-1952 (MONITOR-698); the 77 physicalist-dialogue candidates; any milestone counted as 'certified'; WATCH-003 human-ruling queue.
+  Recommended action (for Tom): (1) Name at least one certifier per tradition (or a small panel) before minting more candidates, and record who certified what. (2) Set a capacity budget: candidates minted per week must not exceed certifications the named panel can process; otherwise mint into a backlog that is reported, not counted. (3) Define a discharge path for unreviewed candidates (expiry, or downgrade to 'uncertified observation') so the ledger settles. (4) State independence: a certifier must not have authored the output. Cf. REVISE-097 (certifications provisional).
+  Urgency: High.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1191 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1191_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1191_against.md
+
+REVISE-532: [2026-10-28] Source item: PRESUMPTION-1193 (DISPOSITION-1110)
+  What is at risk: Print edition build; ACPA 'auditable record' claim and claim-trace view; citation of a moving corpus (all 307 days changed since 09-03).
+  Recommended action (for Tom): (1) Stamp the print with a commit hash that resolves to an archived snapshot (tag + Zenodo/Software Heritage deposit, or equivalent), not just a hash. (2) Give each printed claim a stable ID that resolves to its trace (Related-records, QC notes, sources) in that snapshot; strip in print, keep reachable. (3) Print a 'this edition is frozen at <date>; current version at <link>' notice plus a change log. (4) Do not describe the print as the auditable record until (1)–(2) are in place.
+  Urgency: Medium.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1193 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1193_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1193_against.md
+
+REVISE-533: [2026-10-28] Source item: PRESUMPTION-1194 (DISPOSITION-1111)
+  What is at risk: 14a/14b self-awareness layer; list_sessions(limit 40) sampling; evening sync; any audit claim of 'no interactive session today'. Extends 'artefact-as-proof' (15b).
+  Recommended action (for Tom): (1) Sample designer (interactive) sessions separately from scheduled-agent sessions, or filter scheduled runs out before applying the limit, so 40 recent automated runs cannot push out the day's interactive work. (2) Enumerate by date window, not fixed count, and report 'N sessions seen in window / sources checked'. (3) Never assert 'no interactive session' from an empty or truncated list; say 'none found in sample of N'. (4) Treat a hand-written addendum as a coverage-failure signal and log it.
+  Urgency: High.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1194 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1194_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1194_against.md

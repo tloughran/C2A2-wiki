@@ -25925,3 +25925,108 @@ PRESUMPTION-1190:
     Current status: UNTESTED
 
 *Surfaced by the 14b local pass of 2026-10-26. **4 items (1187-1190)**: epistemic 2 · architectural 1 · methodological 1; risk High 3 · Medium 1. Checked against 14a 1940-1950 and PRESUMPTION-1180, -1182, -1184..1186. Not re-surfaced (recurrences): distributed reporting/central remediation (1186, again shown by 1948), stand-down semantics (1184).*
+
+
+## 2026-10-27 — 14b local pass
+
+PRESUMPTION-1191:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] The candidate-certification rule (DECISION-084) presumes that 'mature members' of each tradition are identifiable, reachable, and independent of the outputs they certify. Today 77 physicalist-dialogue candidates were minted with no named certifier on either side; the system's existing human-ruling queue already stalls (WATCH-003 at 23 checks). Without a discharge path, a candidate ledger may grow without ever settling anything. Is the gate passable as designed?
+  Evidence it was operative: Addendum: '77 candidates in all, every one pending certification by mature members of both traditions'; d14c163a (WATCH-003 stale)
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: DECISION-084; OPEN-279
+  Testability: testable via literature
+  Risk if wrong: High: the dialogue output becomes an unbounded pending queue; nothing counts.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1191
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1192:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] A rival physicalist tradition built by the same system and designer that built the 14 non-physicalist traditions is presumed to be a genuine rival rather than a constructed foil. The Carroll build (37 PHYS-PRS, 14 members, dialogues vs Kastrup, Hoffman-Prakash, Levin) was authored on a branch in one day; nothing in the record tests whether physicalists would recognise it as their position.
+  Evidence it was operative: Addendum: Carroll stages 1-3 done; ACPA #5 answer 'full Carroll tradition + 3 dialogues'
+  Why it was unstated: culturally embedded
+  Type: epistemic
+  Related decisions: DECISION-085; OPEN-279
+  Testability: testable via literature
+  Risk if wrong: High: dialogue 'features' may reflect the builder's picture of physicalism, and an ACPA proof of concept would then show self-dialogue.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1192
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1193:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] The print edition presumes that stripping internal material (Related-records lines, QC notes, sources) keeps the record auditable, while the ACPA pitch centres on an 'auditable record' and a claim-trace view. The same day found the July citation harvest covered 65 of 307 days and High ratings resting on an unheard recording: the stripped apparatus is where those defects show. Is a frozen print of a moving corpus (all 307 days changed since 09-03) a citable edition, and what links a printed claim back to its trace?
+  Evidence it was operative: Addendum (print build; vault inconsistencies); chat scrape 3f270954 (auditable record #6, claim-trace)
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: DECISION-085; OPEN-280
+  Testability: testable via literature
+  Risk if wrong: Medium: printed volumes cannot be traced back to evidence at the poster that advertises traceability.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1193
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1194:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] The self-awareness layer presumes that the session list it samples contains the designer's work. Today's most consequential session (binding rulings, new branch, print build; 09:13-16:32) does not appear in the 40 most recent sessions returned to this run, and the 18:33 evening sync declared no interactive session. The decisions reached 14a only through a hand-written addendum. The audit layer sees scheduled agents reliably and designer speech least reliably: the inverse of what it exists to watch.
+  Evidence it was operative: list_sessions(limit 40) this run; d6f6bb0f; addendum header 'The 18:33 sync ran without session transcripts and so missed a long interactive ACPA session'
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-278; ASSUMPTION-1958
+  Testability: testable via literature
+  Risk if wrong: High: assumptions and decisions from interactive work are recorded second-hand or not at all; registers over-represent automation.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1194
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1195:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] Admissibility for Speculative proposals is presumed to be settled by precedent (Hopewell, PROP-2026-09-22-003) rather than by a ruling. DECISION-081 retired one unratified agent-local heuristic and OPEN-172 asks whether others gate the pipeline; 'event page alone' is another such rule, here loosening rather than tightening.
+  Evidence it was operative: 0a5e7596
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: DECISION-081; OPEN-172
+  Testability: testable in-house
+  Risk if wrong: Medium: evidential floor drifts by accumulated precedent.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1195
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+*2026-10-27 14b: PRESUMPTION-1191..1195 (methodological 2, epistemic 2, normative 1; risk High 3, Medium 2). Checked against 14a 1951-1964 and PRESUMPTION-1187..1190. Not re-surfaced: artefact-as-proof (1187; recurs in 1958), detect-instead-of-lock (1188; recurs in 1961).*

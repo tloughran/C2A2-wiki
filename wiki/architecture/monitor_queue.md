@@ -25616,3 +25616,27 @@ MONITOR-697:
   Monitoring cadence: Weekly (default)
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1185 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1185_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1185_against.md
+
+
+MONITOR-698:
+  Date: 2026-10-28
+  Source item: ASSUMPTION-1952 (DISPOSITION-1107)
+  Item type: ASSUMPTION (stated)
+  Priority: High
+  Disposition basis: Adversarial collaboration shows rival parties can agree criteria and co-sign results (Kahneman–Mellers; Clark & Tetlock) [snippet], but only in facilitated, project-bounded studies, not as a standing gate on every output. 15b: adversarial collaborations often end unresolved (Kahneman–Treisman), remain rare, and cross-field review has low reliability and leans on deference (Jirschitzka 2017; Mallard, Lamont & Guetzkow) [snippet]. 15a weak NOVELTY: nothing found on item-by-item dual-tradition certification as a standing gate.
+  What would change the disposition: (-> INCORPORATE a narrowed premise) evidence of a standing cross-paradigm sign-off gate that settles outputs at volume, or an in-house record of the first candidates certified by named members of both traditions; (-> REVISE) the candidate ledger keeps growing with zero certifications after REVISE-531 is answered, or a primary source showing dual sign-off gates stall by design. Also: a direct MacIntyre search (not reached by 15b; 15a's secondary snippet says rival recognition is not required for a tradition's rational defeat, which cuts against making it a gate).
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1952 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1952_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1952_against.md
+
+
+MONITOR-699:
+  Date: 2026-10-28
+  Source item: PRESUMPTION-1192 (DISPOSITION-1109)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: the ideological Turing test makes recognition by adherents the criterion (Caplan); red-team doctrine requires independence from the authors; role-played dissent is weaker than authentic dissent (Nemeth, secondhand) [snippet]. 15b: Brand et al. 2025 report 54–71% pass rates for voicing the other side, which cuts against the concern; but constructed opponents drift toward caricature (Dawes et al. 1972) and the Collins–Evans imitation game needs an insider judge, which the Carroll build lacks [snippet].
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'the Carroll tradition is recognised by physicalists') an ideological-Turing-test style review in which one or more self-identified physicalists judge the 37 PHYS-PRS and 3 dialogues as fair statements of their position; (-> REVISE) such reviewers reject it as a foil, or no insider review is arranged within 4 weekly cycles. Also run the MacIntyre 'no neutral ground' search 15b did not reach.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1192 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1192_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1192_against.md

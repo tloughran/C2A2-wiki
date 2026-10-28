@@ -3802,3 +3802,42 @@ OPEN-277:
     Original item: OPEN-277
     Item type: OPEN QUESTION
     Current status: OPEN
+
+
+OPEN-278:
+  Raised: 2026-10-27 by 14a/14b (ASSUMPTION-1958; PRESUMPTION-1194)
+  Question: Why is the 09:13-16:32 interactive ACPA session absent from list_sessions (top 40) and from the evening sync? Where is its handoff `handoffs/acpa-2026.md` (not under the wiki mount)? What channel should carry interactive-session decisions to 14a besides a hand-written addendum?
+  Needs: Tom; in-house check of session storage
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-278
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-279:
+  Raised: 2026-10-27 by 14a/14b (ASSUMPTION-1952; PRESUMPTION-1191, -1192)
+  Question: Who are the 'mature members' who certify CAND-* items for each tradition (physicalist side included), how are they recruited, and what happens to candidates never certified (expiry, shown as pending, excluded from ACPA)? Does the candidate ledger become the claim-trace view's spine?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-279
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-280:
+  Raised: 2026-10-27 by 14a/14b (ASSUMPTION-1954, -1956, -1957; PRESUMPTION-1193)
+  Question: The print edition strips Related-records lines and QC notes; the ACPA poster advertises an auditable record. How does a reader get from a printed claim (stamp `#71cbed5`) to its trace? Which of the two FLAG-003 records does the commentary cite?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-280
+    Item type: OPEN QUESTION
+    Current status: OPEN

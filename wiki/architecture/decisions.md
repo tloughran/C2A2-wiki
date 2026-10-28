@@ -1527,3 +1527,35 @@ surfaces) and OPEN-258 (the 09-24 scheduler pause), and partially answered OPEN-
 architectural decision. OPEN-187 was again settled by precedent (ASSUMPTION-1700). Raised OPEN-259
 (human-input channels down); updated OPEN-257. `DECISION-083` still stands. See
 `changelog/2026-09-29_changes.md` (local-pass section).
+
+
+DECISION-084:
+  Date: 2026-10-27 (attended; recorded second-hand)
+  Title: MacIntyrean candidate rule for inter-tradition dialogue
+  Decision: Binding on dialogue work: no neutral ground for adjudication; dialogues end in features + questions to mature members; every agent output (concession, agreement, answer, open question) is a CANDIDATE (CAND-<X>-<TYPE>-NN) that counts only when mature members of BOTH traditions certify it.
+  Status: ADOPTED (attended). 77 candidates minted, all pending.
+  Caveat on the record: source is `daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md`; the session transcript and `handoffs/acpa-2026.md` were not visible to this run (OPEN-278).
+  Related: ASSUMPTION-1951, -1952; PRESUMPTION-1191, -1192; OPEN-279
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the addendum's 'Tom's MacIntyrean rulings' line. [stated]
+    Current status: ADOPTED
+
+
+DECISION-085:
+  Date: 2026-10-27 (attended; recorded second-hand)
+  Title: ACPA 2026 scope rulings (deferred questions #4-#7) and print snapshot
+  Decision: #5 = full Carroll physicalist tradition + 3 dialogues (branch `claude/rival-physicalism`, stages 1-3 done, not pushed or merged); #4/#6 = build a new claim-trace view; #7 = attempt dialogue via voice guide and hands-free chat, limited success expected. Printed Summa snapshot (Vols 1-5) built from current agent source, internal material stripped, stamped `#71cbed5`, outside the repo. Merge vs laptop branch for ACPA still open.
+  Status: ADOPTED (attended); partly executed.
+  Caveat on the record: source is `daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md`; the session transcript and `handoffs/acpa-2026.md` were not visible to this run (OPEN-278).
+  Related: ASSUMPTION-1953, -1954, -1955; PRESUMPTION-1192, -1193; OPEN-280
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the addendum's 'Done today' section. [stated]
+    Current status: ADOPTED

@@ -51929,3 +51929,73 @@ DISPOSITION-1106:
 - 15a NOVELTY (weak, provisional) on PRESUMPTION-1190.
 - SYSTEMIC-RISK (candidate, 15b rates High): 'artefact-as-proof'. A file's presence, absence or timestamp, read from inside the same system, stands in for live state. Now spans 1184/1185 (10-26) and 1187/1188/1189 (today). 15b notes the proposed remedies often reuse the same kind of evidence. No flag file written, per the 10-25/10-26 precedent; surfaced to Tom in the run note.
 - No INCORPORATE issued, so no premise consistency conflict arises. REVISE-529 is checked against PREMISE-239 (observed vs declared state): consistent, same family.
+
+
+## 2026-10-28 — 15a/15b/15c returns (run local-cowork-2026-10-28-aeb5fc9f)
+
+DISPOSITION-1107:
+  Date: 2026-10-28
+  Item: ASSUMPTION-1952
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (+ weak NOVELTY)
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Adversarial collaboration shows rival parties can agree criteria and co-sign results (Kahneman–Mellers; Clark & Tetlock) [snippet], but only in facilitated, project-bounded studies, not as a standing gate on every output. 15b: adversarial collaborations often end unresolved (Kahneman–Treisman), remain rare, and cross-field review has low reliability and leans on deference (Jirschitzka 2017; Mallard, Lamont & Guetzkow) [snippet]. 15a weak NOVELTY: nothing found on item-by-item dual-tradition certification as a standing gate.
+  Disposition: MONITOR (MONITOR-698 (High))
+  Reasoning: Contested at Moderate on both sides with a NOVELTY flag, so MONITOR High per heuristics. The gate's intent is consistent with REVISE-097 (certifications are candidate-generating, not authoritative). Its workability is a capacity question that PRESUMPTION-1191 (REVISE-531) addresses directly, so this item waits on that outcome rather than being revised twice.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1952 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1952_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1952_against.md
+
+DISPOSITION-1108:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1191
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (gate not passable as designed); Weak (identifiable/independent)
+  Net assessment: Both directions support 14b's concern. 15a: expertise is recognition granted by existing practitioners and its tests are disputed (Collins & Evans); sign-off gates relying on volunteer experts recruit poorly and slow (1.9 → 2.4 invitations per review, 2013–2017) [snippet]. 15b: review gates are limited by reviewer supply and routing does not fix shortage (WebKit/Meta code-review studies) [snippet]. With no named certifier the gate has zero capacity.
+  Disposition: REVISE (REVISE-531 (High))
+  Reasoning: The presumption fails as designed: 77 candidates, no named certifier on either side, and an existing human-ruling queue already stalled (WATCH-003). A gate with no staffed capacity cannot discharge. PRESUMPTION with a supported challenge and an in-house instance → REVISE High.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1191 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1191_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1191_against.md
+
+DISPOSITION-1109:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1192
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak-Moderate
+  Net assessment: 15a: the ideological Turing test makes recognition by adherents the criterion (Caplan); red-team doctrine requires independence from the authors; role-played dissent is weaker than authentic dissent (Nemeth, secondhand) [snippet]. 15b: Brand et al. 2025 report 54–71% pass rates for voicing the other side, which cuts against the concern; but constructed opponents drift toward caricature (Dawes et al. 1972) and the Collins–Evans imitation game needs an insider judge, which the Carroll build lacks [snippet].
+  Disposition: MONITOR (MONITOR-699 (High))
+  Reasoning: Untested, not refuted. Evidence that outsiders can sometimes voice a position passably weakens a REVISE; the absence of any insider judge keeps INCORPORATE off the table. Consistent with PREMISE-096 family ('no self-produced artifact may certify itself'): the rival's genuineness needs an independent check. MONITOR High because the check is cheap and decisive.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1192 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1192_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1192_against.md
+
+DISPOSITION-1110:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1193
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (stamp alone suffices); Weak (stripping)
+  Net assessment: Both directions agree a frozen print of a living corpus is citable only with a version identifier, a link to the evolving whole, and a change record (Cochrane living reviews, Living Reviews, CASRAI) [snippet]; W3C PROV ties auditability to a recorded derivation path. 15b: a commit stamp is necessary but not sufficient unless it resolves to an archived copy (CASRAI; PeerJ on Software Heritage), and frozen copies get cited as current. Neither found work on what stripping trace lines does to audit.
+  Disposition: REVISE (REVISE-532 (Medium))
+  Reasoning: The presumption that a stripped print stays auditable fails on the narrower point both sides support: a stamp must resolve to an archived snapshot and each printed claim needs a route back to its trace. The stripping question itself is unstudied, so the fix keeps the apparatus reachable rather than requiring it in print. Medium: the print is not yet the cited record.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1193 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1193_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1193_against.md
+
+DISPOSITION-1111:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1194
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (+ weak NOVELTY)
+  15b result: CHALLENGED  15b strength: Moderate-Strong
+  Net assessment: 15a: process mining lists missing events as a major data-quality problem, mostly manual, undocumented activity; sampling under-represents rare events (observability, mostly vendor) [snippet]. 15b: unrecorded human activity is the most common event-log defect (van der Aalst group; Fluxicon 2016), standard log repair assumes missing-at-random, which fails here, and count-limited sampling drops rare events first [snippet]. In-house instance: today's main designer session absent from the 40 most recent sessions; 18:33 sync declared none.
+  Disposition: REVISE (REVISE-533 (High))
+  Reasoning: PRESUMPTION with a Moderate-Strong challenge and a concrete in-house instance → REVISE High per heuristics. The audit layer's sampling is biased against exactly the events it exists to watch: frequent scheduled runs fill a fixed recency window and push out irregular designer sessions. 15a's weak NOVELTY covers that specific self-audit framing.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1194 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1194_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1194_against.md
+
+### Evidence-quality notes (2026-10-28)
+- 15a and 15b ran as separate subagents. Each reports it did not open the other direction's results or this file, and wrote only its five result files. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 15a 10 web searches, 0 fetches; 15b 9 searches, 0 fetches (cap 2/item). Every source is [snippet only] or secondary. Both sides rate the work PRELIMINARY. Nothing was read in full this run, so no disposition rests on a primary text read in full.
+- 15a NOVELTY (weak, provisional): ASSUMPTION-1952 (standing dual-tradition gate); PRESUMPTION-1194 (agent self-audit recency window).
+- SYSTEMIC-RISK (15b candidate, High): (a) 'artefact-as-proof' extended to 1193 (commit stamp as proof of auditability) and 1194 (returned session list as proof of the day's work); (b) NEW candidate 'unstaffed or non-independent validation gate' spanning 1952, 1191, 1192: outside judges who are not named, not resourced, or not independent of the build; a named check is treated as a check performed. Written up in against/PRESUMPTION-1191_against.md; no flag file, per the 10-25..10-27 precedent.
+- No INCORPORATE issued, so no premise contradiction arises. Consistency checked: MONITOR-699 is consistent with PREMISE-096 (no self-certification); REVISE-531 / MONITOR-698 consistent with REVISE-097 (certifications provisional).

@@ -28201,3 +28201,103 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
 **Backups:** *.bak.20261027-pre-15pipeline for all five registers.
 **Backlog remaining (fail loud):** carried forward, not recounted: 126 bare literature-lane items plus the 7 (10-18) and 4 (10-25) 15d re-triggers remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
 **Budget (fail loud):** search subagents used about 98k (15a) + 91k (15b) tokens, far over the 4k per-task / 30k per-session rule, even with a 2-search-per-item cap.
+
+
+## 2026-10-27 — 14a/14b local pass (queued)
+
+[QUEUED] [SEARCHED-15a: 2026-10-28] [SEARCHED-15b: 2026-10-28] [DISPOSITIONED-15c: 2026-10-28] [ASSUMPTION] ASSUMPTION-1952
+  Statement: [stated] 'Every agent output (concession, agreement, answer, open question) is a CANDIDATE (CAND-<X>-<TYPE>-NN) that counts only when mature members of BOTH traditions certify it.' Build so far: 77 candidates, all pending certification.
+  Claim to test (literature): Dual-tradition certification as a validity gate: adversarial collaboration, cross-paradigm peer review, MacIntyrean tradition-constituted rationality. Is mutual certification by rival practitioners attested as workable?
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1953
+  Statement: [stated] Prediction: ACPA item #7 'attempt dialogue via the voice guide and hands-free chat, limited success expected.'
+  Claim to test (in-house): check Interactive ACPA session (addendum); chat scrape 3f270954 (noisy poster session question).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1954
+  Statement: [stated] Printed Summa snapshot built 'from current agent source (all 307 days had changed since the 09-03 publish)', with 'internal material stripped (Related-records lines, QC notes, karpathy_wiki_sources)'. All five volumes stamp `#71cbed5`. Rationale [inferred]: current source is the authoritative edition for print.
+  Claim to test (in-house): check Interactive ACPA session (addendum).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1956
+  Statement: [stated] Contradictions found in the vault are recorded, not fixed: Hoffman wiki Q4 marks the trace-blanket claim answered while Q13/PRS-47/Friston bridge treat it open ('Tom: leave as recorded'); CROSS-051..053 and FLAG-003 duplicated; FLAG-003 names two different records.
+  Claim to test (in-house): check Interactive ACPA session (addendum).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1957
+  Statement: [stated] Correction of scope claim: 'July citation harvest covered 65 of 307 days, not 307.' Also Hoffman PRS-45/46 'rated High on AI insight cards from an unheard recording.'
+  Claim to test (in-house): check Interactive ACPA session (addendum).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1958
+  Statement: [stated] Evening sync's earlier firing reported send times ahead of the file's mtime: 'the times look made up rather than measured.' The same summary stated 'No interactive Cowork session confirmed' on a day with a 7-hour session.
+  Claim to test (in-house): check Evening cowork-to-chat d6f6bb0f (second firing).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1959
+  Statement: [stated] Scheduler health: 35 OK / 11 WARN / 29 FAIL; 27 DOUBLE-REGISTERED; cloud-routine snapshot 21 days stale ('nothing has watched the 44 cloud routines since 10-06'); rule: 'Disable the 27 local copies only after confirming each cloud trigger actually fires.' Morning status the same morning: 'the daily ones all fired overnight on time' and 'nineteen tasks' double-registered (count disagrees with 27).
+  Claim to test (in-house): check Scheduler health 811a1982; morning status 27dd8d09.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1960
+  Statement: [stated] Admissibility by precedent: Hoffman/Muraresku card drawn from an event page only, 'marked Speculative ... follows the same pattern as the Hopewell proposal (PROP-2026-09-22-003), which was also based on an event page alone.'
+  Claim to test (in-house): check Hawkins/Hoffman agent 0a5e7596.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1961
+  Statement: [stated] Per-session counts are not batch counts. Hawkins/Hoffman session reports '1 proposals added to pending/'; pending/ holds 3 Hoffman 10-27 cards (PROP-2026-10-27-001..003, mtimes 03:04-03:05). [verified this run by ls] The other two carry a different ACL, consistent with a concurrent second firing (double registration).
+  Claim to test (in-house): check 0a5e7596; 9d814e9f; b2f66fe7.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: GROUNDED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1962
+  Statement: [stated] Authority of ledgers: wiki daily run found ~400 inbox files unlisted in PROCESSED_LOG.md but 'The ledger the runs actually go by (ingest_ledger.py) reports only one open card ... I didn't treat the filename mismatch as a backlog.' Second consecutive day of duplicate firings ('Something in the schedule looks duplicated').
+  Claim to test (in-house): check Wiki daily run b2f66fe7 (second firing).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1963
+  Statement: [stated] Morning walk active-findings count = 24 because 'only FINDING-013 to -035 have an explicit Active status ... Findings 036 to 111 have no status field, so I left them out.'
+  Claim to test (in-house): check Morning walk handoff 9d814e9f.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-28] [SEARCHED-15b: 2026-10-28] [DISPOSITIONED-15c: 2026-10-28] [PRESUMPTION] PRESUMPTION-1191
+  Statement: [inferred] The candidate-certification rule (DECISION-084) presumes that 'mature members' of each tradition are identifiable, reachable, and independent of the outputs they certify. Today 77 physicalist-dialogue candidates were minted with no named certifier on either side; the system's existing human-ruling queue already stalls (WATCH-003 at 23 checks). Without a discharge path, a candidate ledger may grow without ever settling anything. Is the gate passable as designed?
+  Claim to test (literature): Who counts as a competent/mature practitioner, and how do cross-paradigm validation schemes (adversarial collaboration; MacIntyre on tradition-constituted rationality and 'epistemological crisis'; Collins & Evans interactional expertise) recruit certifiers? Do dual-sign-off gates stall without capacity planning?
+  Claim to test (in-house): check Addendum: '77 candidates in all, every one pending certification by mature members of both traditions'; d14c163a (WATCH-003 stale).
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-28] [SEARCHED-15b: 2026-10-28] [DISPOSITIONED-15c: 2026-10-28] [PRESUMPTION] PRESUMPTION-1192
+  Statement: [inferred] A rival physicalist tradition built by the same system and designer that built the 14 non-physicalist traditions is presumed to be a genuine rival rather than a constructed foil. The Carroll build (37 PHYS-PRS, 14 members, dialogues vs Kastrup, Hoffman-Prakash, Levin) was authored on a branch in one day; nothing in the record tests whether physicalists would recognise it as their position.
+  Claim to test (literature): Ideological Turing test (Caplan), steelmanning, red-team independence; evidence on whether in-house-constructed opposing positions are recognised by their adherents. Does the MacIntyrean 'no neutral ground' rule itself require the rival to be voiced by insiders?
+  Claim to test (in-house): check Addendum: Carroll stages 1-3 done; ACPA #5 answer 'full Carroll tradition + 3 dialogues'.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-28] [SEARCHED-15b: 2026-10-28] [DISPOSITIONED-15c: 2026-10-28] [PRESUMPTION] PRESUMPTION-1193
+  Statement: [inferred] The print edition presumes that stripping internal material (Related-records lines, QC notes, sources) keeps the record auditable, while the ACPA pitch centres on an 'auditable record' and a claim-trace view. The same day found the July citation harvest covered 65 of 307 days and High ratings resting on an unheard recording: the stripped apparatus is where those defects show. Is a frozen print of a moving corpus (all 307 days changed since 09-03) a citable edition, and what links a printed claim back to its trace?
+  Claim to test (literature): Versioned publication of living documents (living systematic reviews; software/data version citation with DOIs or commit stamps); provenance retention in derived editions (W3C PROV). Does a commit stamp alone suffice for auditability?
+  Claim to test (in-house): check Addendum (print build; vault inconsistencies); chat scrape 3f270954 (auditable record #6, claim-trace).
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-28] [SEARCHED-15b: 2026-10-28] [DISPOSITIONED-15c: 2026-10-28] [PRESUMPTION] PRESUMPTION-1194
+  Statement: [inferred] The self-awareness layer presumes that the session list it samples contains the designer's work. Today's most consequential session (binding rulings, new branch, print build; 09:13-16:32) does not appear in the 40 most recent sessions returned to this run, and the 18:33 evening sync declared no interactive session. The decisions reached 14a only through a hand-written addendum. The audit layer sees scheduled agents reliably and designer speech least reliably: the inverse of what it exists to watch.
+  Claim to test (literature): Audit-trail completeness and coverage bias (process mining event-log completeness; observability coverage); evidence that self-monitoring systems under-sample high-value, irregular events. What makes an audit source authoritative over a summary?
+  Claim to test (in-house): check list_sessions(limit 40) this run; d6f6bb0f; addendum header 'The 18:33 sync ran without session transcripts and so missed a long interactive ACPA session'.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] PRESUMPTION-1195
+  Statement: [inferred] Admissibility for Speculative proposals is presumed to be settled by precedent (Hopewell, PROP-2026-09-22-003) rather than by a ruling. DECISION-081 retired one unratified agent-local heuristic and OPEN-172 asks whether others gate the pipeline; 'event page alone' is another such rule, here loosening rather than tightening.
+  Claim to test (in-house): check 0a5e7596.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-10-27: 16 items queued: 5 literature (ASSUMPTION-1952; PRESUMPTION-1191..1194), 11 [IN-HOUSE]. Live lock review/lit_pipeline.lock last line RELEASED 2026-10-27T04:37:39Z (read this run); not held, append safe.*
+
+
+## 2026-10-28 — 15a/15b/15c run note (run local-cowork-2026-10-28-aeb5fc9f)
+**Lock:** acquired via lit_pipeline_lock.sh (exit 0) before any read or write; released at end.
+**Scope:** new intake only: ASSUMPTION-1952 and PRESUMPTION-1191..1194, the only literature-lane items in the 10-27 14a/14b pass. ASSUMPTION-1953..1963 and PRESUMPTION-1195 are [IN-HOUSE] and not owed a search. No backlog batch, following the 10-18..10-27 budget precedent.
+**Results:** 15a: all five PARTIALLY-SUPPORTED (Moderate); weak NOVELTY on 1952 and 1194. 15b: 1952 PARTIALLY-CHALLENGED (Moderate); 1191 PARTIALLY-CHALLENGED (Moderate); 1192 PARTIALLY-CHALLENGED (Weak-Moderate); 1193 PARTIALLY-CHALLENGED (Moderate); 1194 CHALLENGED (Moderate-Strong).
+**Dispositions:** DISPOSITION-1107: 1952 → MONITOR-698 (High). DISPOSITION-1108: 1191 → REVISE-531 (High). DISPOSITION-1109: 1192 → MONITOR-699 (High). DISPOSITION-1110: 1193 → REVISE-532 (Medium). DISPOSITION-1111: 1194 → REVISE-533 (High). No PREMISE minted.
+**SYSTEMIC-RISK:** 'artefact-as-proof' extended to 1193/1194; new candidate 'unstaffed or non-independent validation gate' (1952/1191/1192). Recorded in the 1191 against file and in returns; no flag file.
+**Backups:** *.bak.20261028-pre-15pipeline for all five registers.
+**Backlog remaining (fail loud):** carried forward, not recounted: 126 bare literature-lane items plus the 7 (10-18) and 4 (10-25) 15d re-triggers remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
+**Budget (fail loud):** search subagents used about 94k (15a) + 101k (15b) tokens, far over the 4k per-task / 30k per-session rule, even with a 2-search-per-item cap.

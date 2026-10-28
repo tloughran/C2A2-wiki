@@ -2433,3 +2433,11 @@ Phase 0: decision email 2026-10-26 (3 APPROVE: PROP-2026-10-26-001..003) applied
 ### 2026-10-27 second orchestrator firing (04:37 local, verification only)
 Started while the primary cloud run was mid-ingest (decisions archive 04:36, traditions files changing 04:37-04:39); changed nothing it had done. Verified: Phase 0 email 2026-10-26 (3 APPROVE) applied, email stored once in provenance, no UNREAD label; Phase 1 ledger entry present; Phase 3 review page 2026-10-27_review.html exists; Phase 4 draft r7204053308839821321 exists; review_log scrub clean; 5.6 ran. Phase 2 not repeated. One gap filled: Phase 5 cleanup had left review/2026-10-23_review.html (4 days old); moved to review/_trash/. Phase 6: no git.
 **Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 3.
+
+### 2026-10-28 orchestrator (cloud)
+Phase 0: no new decision email (10-25 and 10-26 already applied). Phase 1: ledger unchanged, 0 ingested. Phase 2: skipped (Wednesday specialists filed Kastrup x2 + McGilchrist x1). Phase 3/4: review page (6 pending) opened + draft. 5.5 OK address-clean; 5.6 OK 1828 signals, 91 pairs, span to 2026-10-26, stale_days 2. Phase 6: no git.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 6.
+
+### 2026-10-28 second orchestrator firing (04:37 local, verification only)
+Started as the primary cloud run finished (review page, review_log, level2 stream all stamped 04:36; master status line + this ledger entry written ~04:37). Changed nothing it had done. Verified: Phase 0 no new decision email (10-26 email already applied 10-27, archive 2026-10-27_decisions.md present); Phase 1 nothing new to ingest; Phase 2 Wednesday specialists filed Kastrup x2 + McGilchrist x1 (not repeated); Phase 3 2026-10-28_review.html exists; Phase 4 draft r-1469949844095458026 exists; Phase 5 no _review.html older than 3 days; 5.5 review_log scrub clean (0 address matches); 5.6 ran. Phase 6: no git.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 6.

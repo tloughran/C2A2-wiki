@@ -37138,3 +37138,246 @@ ASSUMPTION-1950:
     Current status: UNTESTED
 
 *Extracted by the 14a local pass of 2026-10-26. **11 items (1940-1950)**; queued [IN-HOUSE]: 1941, 1942, 1944, 1945, 1946, 1948. Not queued: 1940 (verified this run, GROUNDED), 1943, 1949 (recurrences of 1936, 1925), 1947, 1950 (framework/context). ASSUMPTION-1928 is corrected by 1940; its 'Verified' claim was wrong. No interactive Tom session; all sources were scheduled runs.*
+
+
+## 2026-10-27 — 14a local pass
+
+ASSUMPTION-1951:
+  Date identified: 2026-10-27
+  Statement: [stated] Tom's MacIntyrean ruling, binding on dialogue work: 'no neutral ground for adjudication; dialogues end in features + questions to mature members.'
+  Context: Interactive ACPA session 09:13-16:32 (addendum); Carroll physicalist build
+  Type: epistemic
+  Related decisions: DECISION-084
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1951
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1952:
+  Date identified: 2026-10-27
+  Statement: [stated] 'Every agent output (concession, agreement, answer, open question) is a CANDIDATE (CAND-<X>-<TYPE>-NN) that counts only when mature members of BOTH traditions certify it.' Build so far: 77 candidates, all pending certification.
+  Context: Interactive ACPA session (addendum)
+  Type: methodological
+  Related decisions: DECISION-084; OPEN-279
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1952
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1953:
+  Date identified: 2026-10-27
+  Statement: [stated] Prediction: ACPA item #7 'attempt dialogue via the voice guide and hands-free chat, limited success expected.'
+  Context: Interactive ACPA session (addendum); chat scrape 3f270954 (noisy poster session question)
+  Type: empirical
+  Related decisions: DECISION-085
+  Testability: testable empirically
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1953
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1954:
+  Date identified: 2026-10-27
+  Statement: [stated] Printed Summa snapshot built 'from current agent source (all 307 days had changed since the 09-03 publish)', with 'internal material stripped (Related-records lines, QC notes, karpathy_wiki_sources)'. All five volumes stamp `#71cbed5`. Rationale [inferred]: current source is the authoritative edition for print.
+  Context: Interactive ACPA session (addendum)
+  Type: methodological
+  Related decisions: DECISION-085; OPEN-280
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1954
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1955:
+  Date identified: 2026-10-27
+  Statement: [stated] Conditional: ACPA is 'Nov 12-15 in DC, about two weeks away rather than three and a half. Because of that, the realistic route is binding locally and freezing the snapshot this week.'
+  Context: Chat scrape 3f270954
+  Type: architectural
+  Related decisions: DECISION-085
+  Testability: framework commitment (not testable)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1955
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1956:
+  Date identified: 2026-10-27
+  Statement: [stated] Contradictions found in the vault are recorded, not fixed: Hoffman wiki Q4 marks the trace-blanket claim answered while Q13/PRS-47/Friston bridge treat it open ('Tom: leave as recorded'); CROSS-051..053 and FLAG-003 duplicated; FLAG-003 names two different records.
+  Context: Interactive ACPA session (addendum)
+  Type: epistemic
+  Related decisions: OPEN-280
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1956
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1957:
+  Date identified: 2026-10-27
+  Statement: [stated] Correction of scope claim: 'July citation harvest covered 65 of 307 days, not 307.' Also Hoffman PRS-45/46 'rated High on AI insight cards from an unheard recording.'
+  Context: Interactive ACPA session (addendum)
+  Type: empirical
+  Related decisions: PRESUMPTION-1193
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1957
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1958:
+  Date identified: 2026-10-27
+  Statement: [stated] Evening sync's earlier firing reported send times ahead of the file's mtime: 'the times look made up rather than measured.' The same summary stated 'No interactive Cowork session confirmed' on a day with a 7-hour session.
+  Context: Evening cowork-to-chat d6f6bb0f (second firing)
+  Type: epistemic
+  Related decisions: PRESUMPTION-1187; PRESUMPTION-1194; OPEN-278
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1958
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1959:
+  Date identified: 2026-10-27
+  Statement: [stated] Scheduler health: 35 OK / 11 WARN / 29 FAIL; 27 DOUBLE-REGISTERED; cloud-routine snapshot 21 days stale ('nothing has watched the 44 cloud routines since 10-06'); rule: 'Disable the 27 local copies only after confirming each cloud trigger actually fires.' Morning status the same morning: 'the daily ones all fired overnight on time' and 'nineteen tasks' double-registered (count disagrees with 27).
+  Context: Scheduler health 811a1982; morning status 27dd8d09
+  Type: architectural
+  Related decisions: OPEN-274; OPEN-277; PRESUMPTION-1189
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1959
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1960:
+  Date identified: 2026-10-27
+  Statement: [stated] Admissibility by precedent: Hoffman/Muraresku card drawn from an event page only, 'marked Speculative ... follows the same pattern as the Hopewell proposal (PROP-2026-09-22-003), which was also based on an event page alone.'
+  Context: Hawkins/Hoffman agent 0a5e7596
+  Type: methodological
+  Related decisions: DECISION-081; OPEN-172; PRESUMPTION-1195
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1960
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1961:
+  Date identified: 2026-10-27
+  Statement: [stated] Per-session counts are not batch counts. Hawkins/Hoffman session reports '1 proposals added to pending/'; pending/ holds 3 Hoffman 10-27 cards (PROP-2026-10-27-001..003, mtimes 03:04-03:05). [verified this run by ls] The other two carry a different ACL, consistent with a concurrent second firing (double registration).
+  Context: 0a5e7596; 9d814e9f; b2f66fe7
+  Type: architectural
+  Related decisions: OPEN-274; OPEN-276; PRESUMPTION-1188
+  Testability: testable in-house
+  Status: GROUNDED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1961
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: GROUNDED
+
+ASSUMPTION-1962:
+  Date identified: 2026-10-27
+  Statement: [stated] Authority of ledgers: wiki daily run found ~400 inbox files unlisted in PROCESSED_LOG.md but 'The ledger the runs actually go by (ingest_ledger.py) reports only one open card ... I didn't treat the filename mismatch as a backlog.' Second consecutive day of duplicate firings ('Something in the schedule looks duplicated').
+  Context: Wiki daily run b2f66fe7 (second firing)
+  Type: methodological
+  Related decisions: OPEN-276
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1962
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1963:
+  Date identified: 2026-10-27
+  Statement: [stated] Morning walk active-findings count = 24 because 'only FINDING-013 to -035 have an explicit Active status ... Findings 036 to 111 have no status field, so I left them out.'
+  Context: Morning walk handoff 9d814e9f
+  Type: methodological
+  Related decisions: 
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1963
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+ASSUMPTION-1964:
+  Date identified: 2026-10-27
+  Statement: [stated] Recurrence of ASSUMPTION-1943/1936: cloud 14a/14b firing (written to changelog/2026-10-27 and 2026-10-28) again NO-OP without session_info; evening sync first copy also blind; chat scrape first copy covered only the end of a 91-message chat.
+  Context: Cloud 14a NO-OP; d6f6bb0f; 3f270954
+  Type: architectural
+  Related decisions: OPEN-273
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1964
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+*2026-10-27 14a: ASSUMPTION-1951..1964 (14). 1961 GROUNDED (pending/ checked by ls). Not queued: 1951, 1955 (framework/context), 1964 (recurrence). 1952 literature; rest [IN-HOUSE]. Interactive-session items (1951-1957) are second-hand via the addendum; transcript not visible.*

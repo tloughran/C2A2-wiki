@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-10-27
-  Check count: 23
+  Last checked: 2026-10-28
+  Check count: 24
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -68,6 +68,7 @@ WATCH-003:
     - 2026-10-17: Off-cadence (new `review/archive/2026-10-16_decisions.md`): grep for 2026-07-19-001 / beatitudes-week-two: no match. NOT met.
     - 2026-10-23: On-cadence check (due 10-20; no Agent 16 run 10-19..10-22); count now **22**. `review/archive/` unchanged at 25 files, latest `2026-10-16_decisions.md`. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Census: `pending/` 13, `approved/` 486, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-10-27 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **23**; next on-cadence check stays 2026-10-30): a **26th** decision file exists, `2026-10-26_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-25`; 20 APPROVE, no other dispositions). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md`. The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Census: `pending/` 3, `approved/` 506, `denied/` 1, `needs_review/` 4. NOT met.
+    - 2026-10-28 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **24**; next on-cadence check stays 2026-10-30): a **27th** decision file exists, `2026-10-27_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-26`, thread 1a178a5a92eefb55; 3 APPROVE: PROP-2026-10-26-001/-002/-003; no other dispositions). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md`. The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Census: `pending/` 3 (Hoffman ×3, 10-27), `approved/` 509, `denied/` 1, `needs_review/` 4. NOT met.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -7268,3 +7269,24 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Run completed 2026-10-27 (single instance at time of writing).*
 
 *Addendum 2026-10-27 06:45 UTC — second Agent 16 firing today (duplicate schedule). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16] and unmodified since 10-17; `review/archive/` still 26 files ending at `2026-10-26_decisions.md` (no CHANGE/CHECK/CONDITIONAL); `pending/` 3 files, none a revised copy of a tracked proposal; `prs_triplets.md` (10-16) and `sewing_agent_log.md` (10-25) unchanged; no vault file newer than the 06:37 write. Nothing due (WATCH-003/-004 on 10-30; WATCH-005/-006 on 10-31). Nothing resolved. WATCH-003 stale flag (23 checks, Escalate to Tom) stands.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-28
+
+  Intake: all 4 `needs_review/` files already carry [TRACKED-16]; none modified since 10-17. New decision file `review/archive/2026-10-27_decisions.md` has 3 APPROVE and **no CHANGE / CHECK / CONDITIONAL**, so no new review-conditional items. Sync files changed since the last write (10-27 cowork summary + addendum, 10-27 chat summary, open_questions, 10-27/10-28 changelogs, monitor_queue) contain no watch-item ruling, agent-deferral or watch-request marker.
+  Items checked: 1 (off-cadence, event-triggered):
+    - WATCH-003 (count 24): new decision file does not name PROP-2026-07-19-001 or rule on the INTEGRITY FLAG. NOT met.
+  Event sweep (not counted):
+    - WATCH-004: Fredrickson file unchanged since 10-08; no revised copy in `pending/` (3 files, Hoffman 10-27).
+    - WATCH-005: no transcript file in vault (no file newer than last write mentions `xZcB-tmvJaU` / Wonderstruck).
+    - WATCH-006: `prs_triplets.md` unchanged since 10-16; `sewing_agent_log.md` unchanged since 10-25.
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003, 24 checks; Escalate to Tom). No new stale flags (others at 2–3 checks).
+  New items added: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-10-30; WATCH-005/-006 on 2026-10-31. Next WATCH-006 event trigger: Sewing Agent run 2026-11-01.
+
+**Open for Tom (unchanged):** Wonderstruck transcript (WATCH-005); Sewing Agent selection rule or manual MacIntyre overlap pass (WATCH-006); INTEGRITY FLAG ruling (WATCH-003); Fredrickson CT-Signals edit (WATCH-004); ID collisions (incl. PROP-2026-10-23-001); split the ~855 KB watch list.
+
+*Run completed 2026-10-28 (single instance at time of writing).*
+
+*Addendum 2026-10-28 06:40 UTC — second Agent 16 firing today (duplicate schedule). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16] and unmodified since 10-17; `review/archive/` still 27 files ending at `2026-10-27_decisions.md`; `pending/` holds 3 Hoffman files (10-27), none a revised copy of a tracked proposal; `prs_triplets.md` (10-16) and `sewing_agent_log.md` (10-25) unchanged; no vault file newer than the 06:37 write. Nothing due (WATCH-003/-004 on 10-30; WATCH-005/-006 on 10-31). Nothing resolved. WATCH-003 stale flag (24 checks, Escalate to Tom) stands.*
