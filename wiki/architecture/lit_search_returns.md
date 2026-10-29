@@ -51999,3 +51999,31 @@ DISPOSITION-1111:
 - 15a NOVELTY (weak, provisional): ASSUMPTION-1952 (standing dual-tradition gate); PRESUMPTION-1194 (agent self-audit recency window).
 - SYSTEMIC-RISK (15b candidate, High): (a) 'artefact-as-proof' extended to 1193 (commit stamp as proof of auditability) and 1194 (returned session list as proof of the day's work); (b) NEW candidate 'unstaffed or non-independent validation gate' spanning 1952, 1191, 1192: outside judges who are not named, not resourced, or not independent of the build; a named check is treated as a check performed. Written up in against/PRESUMPTION-1191_against.md; no flag file, per the 10-25..10-27 precedent.
 - No INCORPORATE issued, so no premise contradiction arises. Consistency checked: MONITOR-699 is consistent with PREMISE-096 (no self-certification); REVISE-531 / MONITOR-698 consistent with REVISE-097 (certifications provisional).
+
+
+## 2026-10-29 — 15a / 15b / 15c returns (run cowork-sched-2026-10-29-ddd22cd5)
+
+RETURN-15a PRESUMPTION-1196 [2026-10-29]: SUPPORTED (Moderate; weak NOVELTY). Read FOR = liveness is insufficient as a cutover test. Practitioner sources agree that the old path stays on until outputs or behaviour are shown to match: GitHub Scientist (github.blog 2015), plus Gravitee, Digiqt and a DEV Community payments-migration post ("it looks fine" is not an exit criterion) [snippet]. NOVELTY (weak): nothing found on agent tasks whose two copies both fire but have different tool sets. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15a — SUPPORTED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md
+
+RETURN-15b PRESUMPTION-1196 [2026-10-29]: CHALLENGED (Strong on the logic; Moderate sources). Every source treats liveness as necessary but not sufficient, and cutover practice compares outputs before turning the old path off: DEV Community "Liveness Without Health Is Theater"; Gravitee and Origami parallel-run and parity guides; OSDI '25 T2C on silent failures; arXiv 2608.02786 [snippet]. Other side: runbooks do use synthetic and liveness gates, and parallel runs are costly and sometimes skipped. No source says "it fired" is enough on its own. STEELMAN included. SYSTEMIC-RISK: an instance of 'a named check treated as a check performed', and it extends 'artefact-as-proof'. 15b recommends promoting these to a formal flag. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15b — CHALLENGED
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md
+
+DISPOSITION-1112:
+  Date: 2026-10-29
+  Item: PRESUMPTION-1196
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate (+ weak NOVELTY)
+  15b result: CHALLENGED  15b strength: Strong (logic) / Moderate (sources)
+  Net assessment: Both directions agree that "it fires" is a liveness signal, not a parity test. Cutover practice (Scientist-style shadow runs, parallel runs, parity guides) keeps the old path until outputs or capabilities are shown to match [snippet, practitioner]. The only counter-evidence is about cost, not sufficiency. The in-house instance as 14b records it: the cloud 14a/14b copy fires but lacks session_info and has NO-OP'd since 10-24. Not verified this run.
+  Disposition: REVISE (REVISE-534 (High))
+  Reasoning: This is a PRESUMPTION with a strong challenge and no source defending liveness as sufficient, so the heuristics give REVISE, High. The stakes are asymmetric. Following the rule as written would disable the only 14a/14b path that reads transcripts, while every check reports OK. This sharpens REVISE-523 ("verify by effect, not by trigger"): effect checks must also cover capability, because a NO-OP run can still write an artefact.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1196 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md
+
+### Evidence-quality notes (2026-10-29)
+- 15a and 15b ran as separate subagents. Each was told not to open the other direction's results or this file, and each wrote only its own result file. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 15a 2, 15b 2, 0 fetches. Every source is [snippet only]; most are practitioner or vendor material, and two are preprints. Both directions rate the work PRELIMINARY. No disposition rests on a primary text read in full.
+- 15a NOVELTY (weak, provisional): PRESUMPTION-1196 (agent tasks whose copies fire but differ in tool access).
+- SYSTEMIC-RISK (15b, High): 1196 is a clear instance of 'a named check treated as a check performed' (10-28 candidate) and of 'artefact-as-proof' (1184..1194). 15b recommends a formal SYSTEMIC-RISK-FLAG. Following the 10-25..10-28 precedent, no flag file was written; this is noted for Tom.
+- No INCORPORATE was issued. Consistency checked: REVISE-534 agrees with PREMISE-053 (scheduling is necessary, not sufficient; the execution context must be verified capable; dev/prod parity) and PREMISE-086 (alarm on staleness or absence), and it extends REVISE-523.

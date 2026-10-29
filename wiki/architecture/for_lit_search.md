@@ -28301,3 +28301,65 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
 **Backups:** *.bak.20261028-pre-15pipeline for all five registers.
 **Backlog remaining (fail loud):** carried forward, not recounted: 126 bare literature-lane items plus the 7 (10-18) and 4 (10-25) 15d re-triggers remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
 **Budget (fail loud):** search subagents used about 94k (15a) + 101k (15b) tokens, far over the 4k per-task / 30k per-session rule, even with a 2-search-per-item cap.
+
+
+## 2026-10-28 — 14a/14b intake (local pass)
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1967
+  Statement: [stated] Stated cause for the cloud-routine blind spot: 'this run came from the local scheduler-health-check entry, which has no Routines connector'; last routine check 2026-10-06 (22 days).
+  Claim to test (in-house): check Scheduler health 86404fd4.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1968
+  Statement: [stated] Late morning batch explained causally: 'ran late, around noon instead of eight to nine, which suggests the Mac was asleep'; same report says all 29 enabled tasks 'have fired recently'.
+  Claim to test (in-house): check Morning project status 16cc9820.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1969
+  Statement: [stated] voice-shell suite RED 'the second morning running': 6 failed of 400 rows on main@09f66c11 (10-27: 8 of 396).
+  Claim to test (in-house): check Scheduler health 86404fd4; morning status 16cc9820.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1970
+  Statement: [stated] Duplicate firing of the wiki daily run judged safe: 'The second firing caused no harm because it waited for the main run and then only checked its work.'
+  Claim to test (in-house): check C282 wiki daily run 71696b0c.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1971
+  Statement: [stated] Inbox check discarded as noise: it 'matched exact file names against PROCESSED_LOG.md. That log isn't keyed by exact file name'; ledger shows 1 open card (Wright PROP-2026-08-14-033).
+  Claim to test (in-house): check C282 wiki daily run 71696b0c.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1973
+  Statement: [stated] WATCH-003 at check 24, still stale with 'the recommendation to escalate'; watch_list.md ~855 KB should be split (repeated advisory).
+  Claim to test (in-house): check Deferred action monitor 6866164f.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1974
+  Statement: [stated] ID collisions now stated in two series: two cards share PROP-2026-10-23-001 (FINDING-110) and FINDING-018 is 'used twice'; active-findings count still limited to 013-035 (recurrence of ASSUMPTION-1963).
+  Claim to test (in-house): check Morning walk handoff f13bb2d2; evening sync 02cea945.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-29] [SEARCHED-15b: 2026-10-29] [DISPOSITIONED-15c: 2026-10-29] [PRESUMPTION] PRESUMPTION-1196
+  Statement: [inferred] The double-registration fix ('confirm the cloud trigger fires before disabling the local entry') presumes the cloud and local copies of a task are equivalent once both fire. They are not: the cloud 14a/14b copy fires nightly but 
+  Claim to test (literature): Migration cutover verification beyond liveness: capability/feature-parity checks, shadow-run comparison of outputs (dark launching, parallel run). Does 'trigger fired' suffice as a cutover criterion?
+  Claim to test (in-house): For each of the 27 tasks, list tools the task prompt needs vs tools present in its cloud session; compare cloud vs local outputs for 14a/14b on the same date.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1197
+  Statement: [inferred] Reports that the voice-shell suite is RED 'the second morning running' and that failures fell 8 -> 6 presume the same test set on both days. The denominator changed (396 -> 400 rows) and the commit changed; the comparison is not 
+  Claim to test (in-house): Diff the failing row IDs in /tmp/voice_shell_last.log for 10-27 vs 10-28.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-10-28: 9 items queued: 1 literature (PRESUMPTION-1196), 8 [IN-HOUSE]. Live lock review/lit_pipeline.lock last line RELEASED 2026-10-28T04:39:11Z (read this run); not held, append safe.*
+
+
+## 2026-10-29 — 15a/15b/15c run note (run cowork-sched-2026-10-29-ddd22cd5)
+**Lock:** acquired via lit_pipeline_lock.sh (exit 0) before any read or write; released at end.
+**Scope:** new intake only. PRESUMPTION-1196 was the only literature-lane item in the 10-28 14a/14b pass. ASSUMPTION-1967..1974 and PRESUMPTION-1197 are [IN-HOUSE] and are not owed a search. No backlog batch was run, following the 10-18..10-28 budget precedent.
+**Results:** 15a: 1196 SUPPORTED (Moderate; weak NOVELTY). 15b: 1196 CHALLENGED (Strong logic / Moderate sources).
+**Dispositions:** DISPOSITION-1112: 1196 → REVISE-534 (High). No PREMISE or MONITOR was minted.
+**SYSTEMIC-RISK:** 1196 instances both 'a named check treated as a check performed' and 'artefact-as-proof'. 15b recommends a formal flag. This is recorded in the 1196 against file and in the returns; no flag file was written.
+**Backups:** *.bak.20261029-pre-15pipeline for all five registers.
+**Backlog remaining (fail loud):** carried forward, not recounted. 126 bare literature-lane items, plus the 7 (10-18) and 4 (10-25) 15d re-triggers, remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
+**Budget (fail loud):** search subagents used about 69k (15a) + 71k (15b) tokens for one item. This is far over the 4k per-task / 30k per-session rule, even with a 2-search cap.

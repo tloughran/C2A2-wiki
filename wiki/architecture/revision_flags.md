@@ -16304,3 +16304,13 @@ REVISE-533: [2026-10-28] Source item: PRESUMPTION-1194 (DISPOSITION-1111)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1194 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1194_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1194_against.md
+
+
+REVISE-534: [2026-10-29] Source item: PRESUMPTION-1196 (DISPOSITION-1112)
+  What is at risk: The double-registration cutover rule ("confirm the cloud trigger fires before disabling the local entry") for all 27 or 29 double-registered tasks. Specifically, 14a/14b. 14b records that the cloud copy lacks session_info and has NO-OP'd since 10-24, so disabling the local entry would remove the only transcript-reading path while health checks stay green. Conversely, the local scheduler-health copy lacks the Routines connector.
+  Recommended action (for Tom): (1) Replace "fires" with a parity gate. For each task, list the tools its prompt needs and confirm each one is present in the cloud session before cutover. (2) Shadow-run the pair. For N consecutive dates, compare the cloud and local outputs for the same date (item counts, IDs, whether the run NO-OP'd). Cut over only when they match or the differences are explained. (3) Treat a NO-OP or "tool unavailable" run as a FAIL for cutover purposes, even if it wrote an artefact. (4) Do not disable local 14a/14b until the cloud copy has session_info or an equivalent and passes (2). (5) Add capability parity to REVISE-523's "verify by effect" remedy, so the two are applied together.
+  Urgency: High. Following the rule as written causes silent capability loss, and the in-house NO-OP is already recorded (not verified this run).
+  Related: REVISE-523; REVISE-525; PREMISE-053 (dev/prod parity); PREMISE-086; OPEN-273; OPEN-274; ASSUMPTION-1909, -1966, -1967. SYSTEMIC-RISK candidates: 'a named check treated as a check performed'; 'artefact-as-proof'.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1196 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md

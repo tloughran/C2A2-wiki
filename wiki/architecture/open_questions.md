@@ -3841,3 +3841,16 @@ OPEN-280:
     Original item: OPEN-280
     Item type: OPEN QUESTION
     Current status: OPEN
+
+
+OPEN-281:
+  Raised: 2026-10-28 by 14a/14b (ASSUMPTION-1966, -1967; PRESUMPTION-1196)
+  Question: Before any local entry is disabled under the double-registration fix, which of the 27 tasks need tools that exist only in the local session (session_info for 14a/14b and the evening sync; Chrome; Desktop Commander), and which need tools only the cloud has (Routines for scheduler health)? Should cutover require tool parity plus one matched-output comparison, not just 'the trigger fires'?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-281
+    Item type: OPEN QUESTION
+    Current status: OPEN

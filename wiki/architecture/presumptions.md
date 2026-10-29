@@ -26030,3 +26030,45 @@ PRESUMPTION-1195:
     Current status: UNTESTED
 
 *2026-10-27 14b: PRESUMPTION-1191..1195 (methodological 2, epistemic 2, normative 1; risk High 3, Medium 2). Checked against 14a 1951-1964 and PRESUMPTION-1187..1190. Not re-surfaced: artefact-as-proof (1187; recurs in 1958), detect-instead-of-lock (1188; recurs in 1961).*
+
+PRESUMPTION-1196:
+  Date surfaced: 2026-10-28
+  Statement: [inferred] The double-registration fix ('confirm the cloud trigger fires before disabling the local entry') presumes the cloud and local copies of a task are equivalent once both fire. They are not: the cloud 14a/14b copy fires nightly but lacks session_info and has NO-OP'd since 10-24, while the local scheduler-health copy lacks the Routines connector that the cloud side has. 'Fires' is the only parity test named; tool parity is not. Following the rule as written would disable the only 14a/14b path that reads transcripts.
+  Evidence it was operative: Scheduler health 86404fd4 action #1; changelog/2026-10-29 cloud NO-OP; this run (local) has session_info
+  Why it was unstated: too foundational to notice
+  Type: architectural
+  Related decisions: OPEN-274, OPEN-273; ASSUMPTION-1909, -1966, -1967
+  Testability: testable via literature + in-house
+  Risk if wrong: High: the migration removes working capability while every check reports OK.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1196
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-28 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1197:
+  Date surfaced: 2026-10-28
+  Statement: [inferred] Reports that the voice-shell suite is RED 'the second morning running' and that failures fell 8 -> 6 presume the same test set on both days. The denominator changed (396 -> 400 rows) and the commit changed; the comparison is not like-for-like and no row identities are given.
+  Evidence it was operative: Scheduler health 86404fd4; morning status 16cc9820; METRICS-2026-10-27 note
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: ASSUMPTION-1969
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: a trend read off unlike counts can mask new failures behind fixed old ones.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1197
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-28 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-28 14b: PRESUMPTION-1196..1197 (architectural 1, methodological 1; risk High 1, Low-Medium 1). Checked against 14a 1965-1975. Not re-surfaced (already registered): fires-means-checks (~L25660), repeated advisories presumed acted on (~L25470), local twin as no-op not independent check (~L24572), ID-collision scaling (PREMISE-013 line ~1696), Rule 6 breaches disclosed not enforced (~L12370), Tom-as-bottleneck while away (~L25410).*

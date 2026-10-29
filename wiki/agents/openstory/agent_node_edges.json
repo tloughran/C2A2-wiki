@@ -3,23 +3,23 @@
   "generated_from": "extract_agent_node_refs.py",
   "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
   "vault": "/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
-  "canonical_nodes": 5844,
+  "canonical_nodes": 5862,
   "roster_size": 33,
   "roster_captured": 27,
   "human_node": true,
-  "human_sessions": 1265,
+  "human_sessions": 1268,
   "unattributed_continuations": 116,
-  "sessions_mapped": 4759,
-  "events_scanned": 246705,
+  "sessions_mapped": 4776,
+  "events_scanned": 247199,
   "session_resolution": {
-   "no_label": 1127,
+   "no_label": 1130,
    "unmatched": 254,
    "excluded": 43,
-   "exact": 3270,
-   "prefix": 224
+   "exact": 3282,
+   "prefix": 226
   },
   "layers": {
-   "coref_substrate": 6346,
+   "coref_substrate": 6374,
    "coref_projected": 308,
    "flow": 56
   },
@@ -33,9 +33,9 @@
    "group": "agents",
    "kind": "human",
    "category": "human",
-   "sessions": 1263,
-   "events": 92763,
-   "node_refs": 2080
+   "sessions": 1266,
+   "events": 92939,
+   "node_refs": 2090
   },
   {
    "id": "agents/summa-qc-sweep",
@@ -66,9 +66,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 141,
-   "events": 9923,
-   "node_refs": 921
+   "sessions": 142,
+   "events": 9958,
+   "node_refs": 926
   },
   {
    "id": "agents/c2a2-self-awareness-daily",
@@ -77,9 +77,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 144,
-   "events": 8595,
-   "node_refs": 461
+   "sessions": 145,
+   "events": 8645,
+   "node_refs": 466
   },
   {
    "id": "agents/c282-wiki-agent-daily-run",
@@ -88,8 +88,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 136,
-   "events": 7909,
+   "sessions": 137,
+   "events": 7930,
    "node_refs": 210
   },
   {
@@ -99,8 +99,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 134,
-   "events": 6440,
+   "sessions": 135,
+   "events": 6456,
    "node_refs": 113
   },
   {
@@ -110,9 +110,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 130,
-   "events": 4962,
-   "node_refs": 416
+   "sessions": 131,
+   "events": 4989,
+   "node_refs": 417
   },
   {
    "id": "agents/summa-2026-daily-batch",
@@ -121,8 +121,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 128,
-   "events": 4385,
+   "sessions": 129,
+   "events": 4391,
    "node_refs": 64
   },
   {
@@ -132,9 +132,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 138,
-   "events": 3536,
-   "node_refs": 190
+   "sessions": 139,
+   "events": 3553,
+   "node_refs": 193
   },
   {
    "id": "agents/morning-walk-cowork-handoff",
@@ -143,8 +143,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 106,
-   "events": 3259,
+   "sessions": 107,
+   "events": 3280,
    "node_refs": 23
   },
   {
@@ -154,9 +154,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 139,
-   "events": 2743,
-   "node_refs": 119
+   "sessions": 140,
+   "events": 2797,
+   "node_refs": 120
   },
   {
    "id": "agents/morning-project-status",
@@ -165,8 +165,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "infrastructure",
-   "sessions": 138,
-   "events": 1777,
+   "sessions": 139,
+   "events": 1784,
    "node_refs": 1
   },
   {
@@ -176,8 +176,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "infrastructure",
-   "sessions": 143,
-   "events": 1608,
+   "sessions": 144,
+   "events": 1614,
    "node_refs": 17
   },
   {
@@ -203,6 +203,17 @@
    "node_refs": 57
   },
   {
+   "id": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "taskId": "c2a2-agent-mcgilchrist-kastrup",
+   "label": "c2a2-agent-mcgilchrist-kastrup",
+   "group": "agents",
+   "kind": "scheduled",
+   "category": "c2a2-thinker",
+   "sessions": 23,
+   "events": 1277,
+   "node_refs": 62
+  },
+  {
    "id": "agents/c2a2-periodic-monitor-weekly",
    "taskId": "c2a2-periodic-monitor-weekly",
    "label": "c2a2-periodic-monitor-weekly",
@@ -212,17 +223,6 @@
    "sessions": 23,
    "events": 1251,
    "node_refs": 7
-  },
-  {
-   "id": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "taskId": "c2a2-agent-mcgilchrist-kastrup",
-   "label": "c2a2-agent-mcgilchrist-kastrup",
-   "group": "agents",
-   "kind": "scheduled",
-   "category": "c2a2-thinker",
-   "sessions": 22,
-   "events": 1230,
-   "node_refs": 59
   },
   {
    "id": "agents/c2a2-agent-hawkins-hoffman",
@@ -247,6 +247,17 @@
    "node_refs": 26
   },
   {
+   "id": "agents/scheduler-health-check",
+   "taskId": "scheduler-health-check",
+   "label": "scheduler-health-check",
+   "group": "agents",
+   "kind": "scheduled",
+   "category": "infrastructure",
+   "sessions": 133,
+   "events": 1101,
+   "node_refs": 6
+  },
+  {
    "id": "agents/c2a2-agent-stump-fredrickson",
    "taskId": "c2a2-agent-stump-fredrickson",
    "label": "c2a2-agent-stump-fredrickson",
@@ -256,17 +267,6 @@
    "sessions": 24,
    "events": 1096,
    "node_refs": 22
-  },
-  {
-   "id": "agents/scheduler-health-check",
-   "taskId": "scheduler-health-check",
-   "label": "scheduler-health-check",
-   "group": "agents",
-   "kind": "scheduled",
-   "category": "infrastructure",
-   "sessions": 132,
-   "events": 1094,
-   "node_refs": 6
   },
   {
    "id": "agents/c2a2-agent-wright-rohr",
@@ -499,12 +499,12 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/15a_lit_search_for_agent.md",
-   "weight": 321
+   "weight": 326
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/15b_lit_search_against_agent.md",
-   "weight": 326
+   "weight": 330
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -554,7 +554,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 885
+   "weight": 893
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -1149,7 +1149,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/for_lit_search.md",
-   "weight": 884
+   "weight": 893
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -1918,6 +1918,11 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-1952_against.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/against/ASSUMPTION-414_against.md",
    "weight": 3
   },
@@ -2444,7 +2449,27 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/against/PRESUMPTION-1190_against.md",
-   "weight": 3
+   "weight": 7
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-1191_against.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-1192_against.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-1193_against.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-1194_against.md",
+   "weight": 2
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4828,6 +4853,11 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-1952_for.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/for/ASSUMPTION-414_for.md",
    "weight": 3
   },
@@ -5349,7 +5379,27 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/for/PRESUMPTION-1190_for.md",
-   "weight": 2
+   "weight": 5
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-1191_for.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-1192_for.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-1193_for.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-1194_for.md",
+   "weight": 4
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6769,7 +6819,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_returns.md",
-   "weight": 794
+   "weight": 796
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7009,7 +7059,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/provenance_protocol.md",
-   "weight": 248
+   "weight": 256
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -8579,7 +8629,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 372
+   "weight": 374
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -8589,7 +8639,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/cross_program_index.md",
-   "weight": 541
+   "weight": 544
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -8599,7 +8649,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/paradigm_flags.md",
-   "weight": 173
+   "weight": 174
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -10769,7 +10819,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "flags/for_pattern_detector.md",
-   "weight": 663
+   "weight": 669
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -10779,7 +10829,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 464
+   "weight": 468
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -11444,7 +11494,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/PROCESSED_LOG.md",
-   "weight": 897
+   "weight": 911
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -11499,7 +11549,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 799
+   "weight": 808
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -11509,7 +11559,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "master/cross_program_index.md",
-   "weight": 485
+   "weight": 489
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -11624,7 +11674,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "review/archive/2026-10-27_decisions.md",
-   "weight": 2
+   "weight": 3
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -11774,12 +11824,12 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 451
+   "weight": 453
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/wright/wiki.md",
-   "weight": 261
+   "weight": 263
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -12494,12 +12544,12 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "agents/05_mcgilchrist_agent.md",
-   "weight": 66
+   "weight": 70
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "agents/11_kastrup_agent.md",
-   "weight": 64
+   "weight": 68
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -12743,6 +12793,21 @@
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-10-28_kastrup_lucille-lab-of-life.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-10-28_kastrup_sheldrake-criticisms-response.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-10-28_mcgilchrist_kcl-war-studies-trust-legitimacy.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "synthesis/levin_mcgilchrist_bridge.md",
    "weight": 1
   },
@@ -12779,12 +12844,12 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 88
+   "weight": 94
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "traditions/wright/wiki.md",
-   "weight": 84
+   "weight": 92
   },
   {
    "source": "agents/c2a2-agent-stump-fredrickson",
@@ -13299,7 +13364,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/16_deferred_action_monitor_agent.md",
-   "weight": 471
+   "weight": 474
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -13388,6 +13453,11 @@
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-10-27_chat_summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
    "target": "architecture/daily_sync/cowork_to_chat/2026-08-23_cowork_summary.md",
    "weight": 3
   },
@@ -13418,13 +13488,18 @@
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
+   "target": "architecture/monitor_queue.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
    "target": "architecture/open_questions.md",
-   "weight": 6
+   "weight": 7
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "architecture/sewing_agent_log.md",
-   "weight": 17
+   "weight": 19
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -13444,7 +13519,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "deferred/watch_list.md",
-   "weight": 1557
+   "weight": 1570
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -14054,7 +14129,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/PROCESSED_LOG.md",
-   "weight": 211
+   "weight": 213
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -14184,7 +14259,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "review/archive/2026-08-27_decisions.md",
-   "weight": 50
+   "weight": 51
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -14218,6 +14293,11 @@
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
+   "target": "review/archive/2026-10-27_decisions.md",
+   "weight": 5
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
    "target": "traditions/carroll/prs_triplets.md",
    "weight": 1
   },
@@ -14239,7 +14319,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 8
+   "weight": 10
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -15523,8 +15603,13 @@
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/daily_sync/cowork_to_chat/2026-10-27_cowork_summary.md",
+   "weight": 5
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/decisions.md",
-   "weight": 369
+   "weight": 371
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -15539,7 +15624,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/for_lit_search.md",
-   "weight": 591
+   "weight": 593
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -15839,7 +15924,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/open_questions.md",
-   "weight": 371
+   "weight": 373
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -15959,7 +16044,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "deferred/watch_list.md",
-   "weight": 457
+   "weight": 459
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -16339,17 +16424,17 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15a_lit_search_for_agent.md",
-   "weight": 476
+   "weight": 479
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15b_lit_search_against_agent.md",
-   "weight": 480
+   "weight": 483
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15c_net_evaluator_agent.md",
-   "weight": 452
+   "weight": 455
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -16419,7 +16504,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/for_lit_search.md",
-   "weight": 2449
+   "weight": 2463
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -16845,6 +16930,11 @@
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/against/ASSUMPTION-1730_against.md",
    "weight": 2
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-1952_against.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -17330,6 +17420,16 @@
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/against/PRESUMPTION-1187_against.md",
    "weight": 2
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-1190_against.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-1191_against.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -19148,6 +19248,11 @@
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-1952_for.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/for/ASSUMPTION-216_for.md",
    "weight": 2
   },
@@ -19679,6 +19784,11 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/for/PRESUMPTION-1187_for.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-1190_for.md",
    "weight": 2
   },
   {
@@ -20824,7 +20934,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_returns.md",
-   "weight": 1182
+   "weight": 1192
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -20839,7 +20949,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/monitor_queue.md",
-   "weight": 918
+   "weight": 927
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -20854,17 +20964,17 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/provenance_protocol.md",
-   "weight": 443
+   "weight": 448
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/revision_flags.md",
-   "weight": 823
+   "weight": 835
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/validated_premises.md",
-   "weight": 903
+   "weight": 909
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -21518,6 +21628,11 @@
   },
   {
    "source": "agents/c2a2-morning-chat-scrape",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-10-27_chat_summary.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-morning-chat-scrape",
    "target": "synthesis/wright_rohr_bridge.md",
    "weight": 1
   },
@@ -21569,12 +21684,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/14a_assumption_extractor_agent.md",
-   "weight": 428
+   "weight": 431
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/14b_presumption_detector_agent.md",
-   "weight": 459
+   "weight": 462
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -21604,7 +21719,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/assumptions.md",
-   "weight": 1316
+   "weight": 1331
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -22174,12 +22289,17 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/changelog/2026-10-26_changes.md",
-   "weight": 14
+   "weight": 15
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/changelog/2026-10-27_changes.md",
-   "weight": 7
+   "weight": 17
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
+   "target": "architecture/changelog/2026-10-28_changes.md",
+   "weight": 5
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -22420,6 +22540,11 @@
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/daily_sync/chat_to_cowork/2026-10-06_chat_summary.md",
    "weight": 2
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-10-27_chat_summary.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -22768,8 +22893,18 @@
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
+   "target": "architecture/daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
+   "target": "architecture/daily_sync/cowork_to_chat/2026-10-27_cowork_summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/decisions.md",
-   "weight": 830
+   "weight": 842
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -22789,7 +22924,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/for_lit_search.md",
-   "weight": 1244
+   "weight": 1257
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -23484,7 +23619,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/metrics/2026-10-26_snapshot.md",
-   "weight": 4
+   "weight": 5
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
+   "target": "architecture/metrics/2026-10-27_snapshot.md",
+   "weight": 5
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -23504,7 +23644,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/open_questions.md",
-   "weight": 1006
+   "weight": 1019
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -23514,12 +23654,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/presumptions.md",
-   "weight": 1316
+   "weight": 1330
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/provenance_protocol.md",
-   "weight": 354
+   "weight": 356
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -23734,7 +23874,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 54
+   "weight": 55
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -25094,7 +25234,7 @@
   {
    "source": "agents/morning-system-health",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 444
+   "weight": 449
   },
   {
    "source": "agents/morning-system-health",
@@ -25184,7 +25324,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 646
+   "weight": 653
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -25254,7 +25394,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 614
+   "weight": 619
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -25269,7 +25409,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "master/incoming_dispatches.md",
-   "weight": 389
+   "weight": 395
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -25589,22 +25729,22 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 364
+   "weight": 368
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/cross_program_index.md",
-   "weight": 377
+   "weight": 381
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/incoming_dispatches.md",
-   "weight": 182
+   "weight": 184
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/paradigm_flags.md",
-   "weight": 183
+   "weight": 185
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -25664,17 +25804,17 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 588
+   "weight": 594
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "traditions/wright/wiki.md",
-   "weight": 372
+   "weight": 376
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "vault/refs/index_summary.md",
-   "weight": 182
+   "weight": 184
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -25984,7 +26124,7 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 976
+   "weight": 980
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -25994,12 +26134,12 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/cross_program_index.md",
-   "weight": 1024
+   "weight": 1028
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/paradigm_flags.md",
-   "weight": 844
+   "weight": 848
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -26119,12 +26259,12 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 1122
+   "weight": 1126
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/wright/wiki.md",
-   "weight": 836
+   "weight": 842
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -32111,7 +32251,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-deferred-action-monitor",
-   "weight": 120
+   "weight": 121
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -32121,7 +32261,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-lit-search-pipeline",
-   "weight": 554
+   "weight": 559
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -32241,7 +32381,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-deferred-action-monitor",
-   "weight": 85
+   "weight": 86
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -32956,22 +33096,22 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/c2a2-evening-cowork-to-chat",
-   "weight": 61
+   "weight": 62
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/c2a2-lit-search-pipeline",
-   "weight": 8
+   "weight": 9
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/c2a2-morning-chat-scrape",
-   "weight": 16
+   "weight": 17
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/c2a2-periodic-monitor-weekly",
-   "weight": 1
+   "weight": 2
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -32981,7 +33121,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/c2a2-self-awareness-daily",
-   "weight": 42
+   "weight": 44
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -32996,7 +33136,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/morning-system-health",
-   "weight": 5
+   "weight": 6
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -33006,7 +33146,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/reviewer-review-weekly",
-   "weight": 10
+   "weight": 11
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -33056,7 +33196,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/c2a2-self-awareness-daily",
-   "weight": 237
+   "weight": 238
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -33191,7 +33331,7 @@
   {
    "source": "agents/c2a2-morning-chat-scrape",
    "target": "agents/c2a2-self-awareness-daily",
-   "weight": 40
+   "weight": 41
   },
   {
    "source": "agents/c2a2-morning-chat-scrape",
@@ -33778,7 +33918,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/H-Admin-Interactive",
-   "weight": 104
+   "weight": 105
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -33808,7 +33948,7 @@
   {
    "source": "agents/c2a2-periodic-monitor-weekly",
    "target": "agents/H-Admin-Interactive",
-   "weight": 50
+   "weight": 51
   },
   {
    "source": "agents/c2a2-periodic-monitor-weekly",
@@ -33828,7 +33968,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/H-Admin-Interactive",
-   "weight": 38
+   "weight": 39
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
