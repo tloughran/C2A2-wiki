@@ -87,10 +87,12 @@ def verdict_routine(trigger, now_utc):
     fired = parse_iso(last_run.get("fired_at") or trigger.get("last_fired_at"))
 
     # A run that ended badly is the loudest thing we can say, whatever the clock.
-    if status == "FAILED":
+    # ABANDONED counts: 2026-10-26 the Demo Lab weekly sweep fired on time, was
+    # abandoned, sent nothing -- and this check called it "on schedule, OK".
+    if status in ("FAILED", "ABANDONED"):
         reason = (last_run.get("failure_reason") or "").replace("ROUTINE_RUN_FAILURE_REASON_", "")
-        return FAIL, f"{name}: last run FAILED ({reason or 'no reason given'}) at {fired:%Y-%m-%d %H:%MZ}" if fired \
-            else f"{name}: last run FAILED"
+        return FAIL, f"{name}: last run {status} ({reason or 'no reason given'}) at {fired:%Y-%m-%d %H:%MZ}" if fired \
+            else f"{name}: last run {status}"
 
     if status in ("PENDING", "RUNNING") and fired:
         hours = (now_utc - fired).total_seconds() / 3600

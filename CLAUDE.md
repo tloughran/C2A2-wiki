@@ -389,13 +389,29 @@ the real path** — a Terminal shell has its own TCC grant and proves nothing.
 
 ~32 tasks moved to cloud Routines 09-16..09-28, and nothing on the Mac can see a cloud
 run. The Routines service can: each routine's record holds its schedule and last run
-(status, fired_at). The 07:00 `scheduler-health-check` routine fetches that listing
-with its Routines connector, copies the saved result to `scheduler/routines_snapshot.json`
-(never retyped), runs `scripts/check_routine_health.py` on it, and reports
-`scheduler/routine_health.md`. FAIL: last run FAILED, never fired, or two scheduled fires
-missed. WARN: a run PENDING/RUNNING over 2h (the dashboard waiting six hours on an
-approval, 10-05). `America/Indianapolis` is a legacy zone alias; the script maps it, since
-some tz databases omit it.
+(status, fired_at). The 07:00 `scheduler-health-check` routine pages through that listing
+with its Routines connector, writes a **compact** snapshot (one trimmed record per routine:
+id, name, enabled, cron, created_at, last_fired_at, ended_reason, last_run status/fired_at/
+failure_reason, values copied verbatim) to `scheduler/routines_snapshot.json` via Desktop
+Commander, checks its entry count against the listing in code, then runs the **repo's own**
+`scripts/check_routine_health.py` on the Mac, which appends to `scheduler/routine_health.md`.
+FAIL: last run FAILED or ABANDONED, never fired, or two scheduled fires missed. WARN: a run
+PENDING/RUNNING over 2h (the dashboard waiting six hours on an approval, 10-05).
+`America/Indianapolis` is a legacy zone alias; the script maps it, since some tz databases
+omit it.
+
+**Why compact, and why on the Mac (rewritten 2026-10-28).** `routine_health.md` froze
+10-06..10-27 with nobody told. The listing arrives inline in 9-13 pages (~300 KB), and the
+old prompt said to save it verbatim, which cannot be done faithfully; the old prompt also
+downloaded the judge from GitHub into the sandbox with curl, which auto-mode refuses. Both
+failures took a "NOT CHECKED" exit that went only to Dispatch. A failed check now also
+appends a line beginning `NOT-CHECKED <stamp> -- <step> -- <error>` to `routine_health.md`.
+**It must start with a word, not a timestamp:** `routine_health_fresh()` reads the first
+token of the last line as the time of the last good check, so a stamp-first failure line
+would make an unchecked day count as watched. Because the judge now runs from the Mac's
+working tree, an edit to it is live at the next 07:00 run, committed or not.
+**ABANDONED** joined FAILED the same day: the Demo Lab sweep fired on time 10-26, was
+abandoned, sent nothing, and the judge had called it "on schedule, OK".
 
 Two Mac-side checks now defer to it: `check_daily_run_stall.py` no longer fails a task that
 runs in the cloud (its transcript is not on the Mac -- that FAIL fired every day 09-20..10-05),
