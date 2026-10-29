@@ -37,6 +37,10 @@
 
 **EXCEPTION — daily-run output, auto-pushed behind a gate (added 2026-10-05, Tom's decision).** `scripts/push_daily_run.sh` (run by the 05:45 `com.c2a2.scheduled-commit-check` agent, right after `commit_daily_run.sh`) MAY push to `main` without human sign-off, but ONLY when every gate passes: (a) **every** commit ahead of origin carries the `C2A2 daily run` subject — anything else ahead (Tom's own work, a vault-sync commit that failed to push) refuses the whole push; (b) the outgoing diff stays inside `commit_daily_run.sh`'s path allowlist; (c) the personal address is absent from the outgoing diff; (d) every changed `.html` file's inline `<script>` blocks pass `node --check` and every changed `.json` parses. It levels with GitHub by **merge, never rebase**, and never force-pushes. Rationale: on 2026-09-30/10-01 two days of committed output sat unpushed, the nightly vault sync failed rebasing across the gap, and no watchdog noticed; Tom chose auto-push behind a check over an overdue alert. Gate (d) is aimed at this rule's original failure — an unreviewed page that no longer renders. **This covers daily-run output only.** Code, CSS, templates, and every other HTML change still require the full human local review above. Tests: `bash scripts/test_push_daily_run.sh` (28 assertions; each refusal asserts the fake origin did not move).
 
+**Pull before push (added 2026-10-29, Tom's decision).** The `heartbeat-refresh` cron pushes to `main` daily (~11:00 UTC), so a push from the Mac is often rejected (fetch first). Level by merge, matching the daily-run rule: `git pull --no-rebase --autostash origin main`, then push. Never rebase or force-push to get past it.
+
+**Publishing scope (added 2026-10-29, Tom's decision).** `pages.yml` publishes the whole repo except working scripts: a step deletes every `.py`, `.sh`, `.plist` and `.command` file before upload (nothing on the site loads them; launchd plists carry local paths). Everything else, including the decision record (`wiki/architecture/decisions.md`) and `wiki/inbox/`, is public by intent.
+
 ---
 
 ## CONSTITUTIONAL RULE: Iframe-Loaded Tabs Must Not Ship Bare Asset Includes
@@ -573,3 +577,9 @@ The `c282-wiki-agent-daily-run` task does it: Phase 0 appends each processed dec
 
 ### Known caveat
 Only 1 page-snapshot (2026-06-16) was lost before archiving; its 13 cards survive as proposal files. Provenance: 282 triples = A179 backref + B17 fuzzy + C74 seed + D12 (early seeds of later-added traditions; not failures). Reverse gap 168 approved candidates not visualized (101 are secondary -02/-03 candidates).
+
+---
+
+## Curriculum Interface (just-in-time prerequisite curriculum)
+
+**Lives at `curriculum/` (repo root), deliberately not in `wiki/`:** the daily-run commit auto-stages and pushes `wiki/`, and Obsidian indexes it. Untracked until Tom decides to commit; commit by named path only. Start from `curriculum/README.md`; resume from `handoffs/curriculum-interface.md`. Each pilot folder carries a `PREREG.md` whose thresholds were fixed before tagging and are mirrored in `curriculum/scripts/score_pilot.py` -- change them in PREREG first, with a reason. `sample_key.json` holds the thinker attribution and must never be given to a tagger.
