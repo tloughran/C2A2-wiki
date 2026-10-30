@@ -19,3 +19,5 @@ LOCKED 2026-10-28T04:33:34Z by local-cowork-2026-10-28-aeb5fc9f (host physmini02
 RELEASED 2026-10-28T04:39:11Z by local-cowork-2026-10-28-aeb5fc9f (was [1793162014 2026-10-28T04:33:34Z local-cowork-2026-10-28-aeb5fc9f physmini02 98742]). 5 lit items (A-1952, P-1191..1194) searched 15a/15b, dispositioned D-1107..1111: REVISE-531..533, MONITOR-698..699; backlog untouched
 LOCKED 2026-10-29T04:33:55Z by cowork-sched-2026-10-29-ddd22cd5 (host physmini02, pid 29200)
 RELEASED 2026-10-29T04:37:03Z by cowork-sched-2026-10-29-ddd22cd5 (was [1793248435 2026-10-29T04:33:55Z cowork-sched-2026-10-29-ddd22cd5 physmini02 29200]). PRESUMPTION-1196 searched 15a/15b; DISPOSITION-1112 -> REVISE-534 (High); backlog untouched
+LOCKED 2026-10-30T04:33:39Z by cowork-lit-2026-10-30-d469f9d4 (host physmini02, pid 41004)
+RELEASED 2026-10-30T04:36:52Z by cowork-lit-2026-10-30-d469f9d4 (was [1793334819 2026-10-30T04:33:39Z cowork-lit-2026-10-30-d469f9d4 physmini02 41004]). PRESUMPTION-1198 searched 15a/15b; DISPOSITION-1113 -> REVISE-535 (High); 2 result files; registers appended; queue tagged; backups .bak.20261030-pre-15pipeline; backlog untouched

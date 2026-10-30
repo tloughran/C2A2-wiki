@@ -26072,3 +26072,65 @@ PRESUMPTION-1197:
     Current status: UNTESTED
 
 *2026-10-28 14b: PRESUMPTION-1196..1197 (architectural 1, methodological 1; risk High 1, Low-Medium 1). Checked against 14a 1965-1975. Not re-surfaced (already registered): fires-means-checks (~L25660), repeated advisories presumed acted on (~L25470), local twin as no-op not independent check (~L24572), ID-collision scaling (PREMISE-013 line ~1696), Rule 6 breaches disclosed not enforced (~L12370), Tom-as-bottleneck while away (~L25410).*
+
+PRESUMPTION-1198:
+  Date surfaced: 2026-10-29
+  Statement: [inferred] REVISE-534's remedy (run both copies side by side and compare outputs) presumes the two copies can run concurrently without contaminating each other. The scheduler's own verdict for all 27 double-registered tasks is that 'two concurrent passes overwrite each other's output', and that parallel state is what exists now. A shadow run is only a comparison if the shadow's writes are isolated (separate output paths or a dry-run mode). For 14a/14b the isolation is accidental: the cloud copy dates its changelog by UTC, the local by EDT, but both would append to the same shared registers.
+  Evidence it was operative: REVISE-534 recommendations (2710e0c9); scheduler health verdict text (70204e59); changelog/2026-10-29 and 2026-10-30 cloud NO-OPs dated by UTC
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: REVISE-534, OPEN-281, PRESUMPTION-1196
+  Testability: testable via literature
+  Risk if wrong: Medium-High: a side-by-side trial without write isolation can corrupt the registers it is meant to compare, or make the copies look equivalent because one overwrote the other.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1198
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-29 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1199:
+  Date surfaced: 2026-10-29
+  Statement: [inferred] The specialist-agent fallback ('significant work not yet captured' when nothing new exists) presumes each scheduled run should produce proposals at a fixed rate whatever the review capacity. Today all 3 proposals were backfill; pending rose 6 -> 9 with the oldest (Hoffman, 10-27) unreviewed. Production is tied to the calendar, not to new work or to review throughput.
+  Evidence it was operative: Stump/Fredrickson 66696d3b ('Nothing new from the last 30 days'); morning walk 7ccaeca2 (pending 9, up from 6)
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: 
+  Testability: testable in-house
+  Risk if wrong: Medium: backlog grows without bound while Tom is the only reviewer; review quality or attention drops.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1199
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-29 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1200:
+  Date surfaced: 2026-10-29
+  Statement: [inferred] Proposals built from abstracts with primary sources blocked, and marked 'Medium or Speculative', presume those confidence labels survive into the counts that report network growth (1087 PRS triplets, 164 connections). The footer totals carry no confidence breakdown, so abstract-only and full-text triplets would count the same once approved.
+  Evidence it was operative: Stump/Fredrickson 66696d3b; wiki daily run 15ed0b75 and morning walk 7ccaeca2 network totals
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: 
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: growth metrics overstate grounded content.
+  Confidence: low (speculative)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1200
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-29 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-29 14b: PRESUMPTION-1198..1200 (methodological 1, normative 1, epistemic 1; risk Medium-High 1, Medium 1, Low-Medium 1). Checked against 14a 1976-1983. Not re-surfaced (already registered): fires-means-checks; 'no interactive session' inferred from session-title listing (~assumptions L22379); Gmail as sole walk-note channel; duplicate second firings presumed harmless; Rule 6 breaches disclosed not enforced; repeated advisories presumed acted on.*

@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-10-28
-  Check count: 24
+  Last checked: 2026-10-30
+  Check count: 25
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -69,6 +69,7 @@ WATCH-003:
     - 2026-10-23: On-cadence check (due 10-20; no Agent 16 run 10-19..10-22); count now **22**. `review/archive/` unchanged at 25 files, latest `2026-10-16_decisions.md`. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Census: `pending/` 13, `approved/` 486, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-10-27 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **23**; next on-cadence check stays 2026-10-30): a **26th** decision file exists, `2026-10-26_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-25`; 20 APPROVE, no other dispositions). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md`. The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Census: `pending/` 3, `approved/` 506, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-10-28 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **24**; next on-cadence check stays 2026-10-30): a **27th** decision file exists, `2026-10-27_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-26`, thread 1a178a5a92eefb55; 3 APPROVE: PROP-2026-10-26-001/-002/-003; no other dispositions). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md`. The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Census: `pending/` 3 (Hoffman ×3, 10-27), `approved/` 509, `denied/` 1, `needs_review/` 4. NOT met.
+    - 2026-10-30: On-cadence check; count now **25**. `review/archive/` unchanged at 27 files, latest `2026-10-27_decisions.md`; no decision file since, so no later disposition can exist. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Files newer than the last watch-list write (10-29 sync summaries, open_questions, 10-30 changelog, etc.) mention WATCH-003 only as a carry-over; no ruling. Census: `pending/` 9, `approved/` 509, `denied/` 1, `needs_review/` 4. NOT met. Next on-cadence check 2026-11-06.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -91,12 +92,13 @@ WATCH-004:
   Check method: File check — grep `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` and `pending/` (by proposal_id PROP-2026-10-01-001) for the false sentence; check `pending/` for a revised copy.
   Check cadence: Weekly
 
-  Last checked: 2026-10-23
-  Check count: 3
+  Last checked: 2026-10-30
+  Check count: 4
   Result history:
     - 2026-10-08: Intake. File in `needs_review/` carries Tom's CHANGE instruction appended (processed 2026-10-07); false sentence still present in Cross-Tradition Signals; no revised copy in `pending/`. Condition NOT met. Classified as a content correction needing a tradition-agent or human edit — not a real-world event. Agent 16 does not edit proposal content.
     - 2026-10-13: On-cadence check. `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` unchanged since 2026-10-08 02:38; flagged sentence still present at line 38 (CT Signals "C2A2 core" bullet) as well as in Tom's quoted instruction at line 46. grep of `pending/` for PROP-2026-10-01-001: no match. Condition NOT met. Next on-cadence check 2026-10-20.
     - 2026-10-23: On-cadence check (due 10-20; late). File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (13 files) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-10-30.
+    - 2026-10-30: On-cadence check. File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (9 files; the two new 10-29 Fredrickson cards are different items, `co-experienced-affect-caring-communities` and `listen-to-resonate`) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-11-06.
 
   On resolution:
     Action: re-queue proposal to pending/ with note [RESOLVED by Agent 16: date — condition met: CT Signals sentence corrected per Tom's CHANGE]
@@ -7311,3 +7313,24 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Run completed 2026-10-29 (single instance at time of writing).*
 
 *Addendum 2026-10-29 06:40 UTC — second Agent 16 firing today (duplicate schedule). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16] and unmodified since 10-17; `review/archive/` still 27 files ending at `2026-10-27_decisions.md`; `pending/` holds 6 files (Hoffman ×3, Kastrup ×2, McGilchrist KCL), none a revised copy of a tracked proposal; `prs_triplets.md` (10-16) and `sewing_agent_log.md` (10-25) unchanged; no vault file newer than the 06:37 write. Nothing due (WATCH-003/-004 on 10-30; WATCH-005/-006 on 10-31). Nothing resolved. WATCH-003 stale flag (24 checks, Escalate to Tom) stands.*
+
+## AGENT 16 RUN SUMMARY — 2026-10-30
+
+  Intake: all 4 `needs_review/` files already carry [TRACKED-16]; none modified since 10-17. `review/archive/` still 27 files (latest `2026-10-27_decisions.md`), so no new CHANGE / CHECK / CONDITIONAL. Files newer than the last watch-list write were grepped for tracked IDs, `xZcB-tmvJaU`, `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, INTEGRITY FLAG: carry-over mentions only (10-29 sync summaries, open_questions); no ruling, deferral or watch request.
+  Items checked: 2 (on-cadence):
+    - WATCH-003 (count 25): no new decision file; no disposition on PROP-2026-07-19-001. NOT met.
+    - WATCH-004 (count 4): Fredrickson file unchanged since 10-08; sentence still at line 38; no revised copy in `pending/`. NOT met.
+  Event sweep (not counted; due 10-31):
+    - WATCH-005: no vault file newer than the last write contains `xZcB-tmvJaU` / "Wisdom of Uncertainty". No transcript.
+    - WATCH-006: `prs_triplets.md` (10-16) and `sewing_agent_log.md` (10-25) unchanged; no PROP-2026-10-13-001 copy in `pending/`.
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003, 25 checks; Escalate to Tom). WATCH-004 at 4 checks, WATCH-005/-006 at 2; no new flags.
+  New items added: 0
+  Next scheduled checks: WATCH-005/-006 on 2026-10-31; WATCH-003/-004 on 2026-11-06. Next WATCH-006 event trigger: Sewing Agent run 2026-11-01.
+
+**Open for Tom (unchanged):** Wonderstruck transcript (WATCH-005); Sewing Agent selection rule or manual MacIntyre overlap pass (WATCH-006); INTEGRITY FLAG ruling (WATCH-003); Fredrickson CT-Signals edit (WATCH-004); ID collisions (incl. PROP-2026-10-23-001); split the ~863 KB watch list.
+
+*Run completed 2026-10-30 (single instance at time of writing).*
+
+*Addendum 2026-10-30 06:41 UTC — second Agent 16 firing today (duplicate schedule). Re-verified, no checks re-counted: all 4 `needs_review/` files already [TRACKED-16] and unmodified since 10-17; `review/archive/` unchanged (27 files, latest `2026-10-27_decisions.md`); `pending/` unchanged; no vault file newer than the 06:37 write. Nothing due beyond the checks already logged; nothing resolved. WATCH-003 stale flag (25 checks, Escalate to Tom) stands.*

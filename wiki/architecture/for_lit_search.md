@@ -28363,3 +28363,53 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
 **Backups:** *.bak.20261029-pre-15pipeline for all five registers.
 **Backlog remaining (fail loud):** carried forward, not recounted. 126 bare literature-lane items, plus the 7 (10-18) and 4 (10-25) 15d re-triggers, remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
 **Budget (fail loud):** search subagents used about 69k (15a) + 71k (15b) tokens for one item. This is far over the 4k per-task / 30k per-session rule, even with a 2-search cap.
+
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1977
+  Statement: [stated] REVISE-534 (from PRESUMPTION-1196): 'Standard migration practice is to run both side by side and compare their outputs before turning the old one off'; recommends a per-task tool-parity check, multi-day side-by-
+  Claim to test (in-house): Diff cloud vs local 14a/14b outputs for 10-26..10-30; confirm session_info absent in every cloud firing (five NO-OPs on file).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1978
+  Statement: [stated] Stump/Fredrickson agents found 'nothing new from the last 30 days', so all three proposals (PROP-2026-10-29-001..003) used the 'significant work not yet captured' rule; built 'only from abstracts and summaries, 
+  Claim to test (in-house): Count proposals since 10-01 by rule used (new work vs 'not yet captured'); check abstract-only flags on PROP-2026-10-29-001..003.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1979
+  Statement: [stated] Contradictory counts in same-morning reports: morning status says 'twenty-four tasks' are double-registered and 'Twenty-eight scheduled tasks are active'; scheduler health lists 27 DOUBLE-REGISTERED across '41 r
+  Claim to test (in-house): Reconcile 24 vs 27 double-registered and 28 vs 41 tasks: which registry/file each report counts.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1980
+  Statement: [stated] Two queue deadlines have passed unchecked: Humanity AI Open Call (due 10-21) and ECG DELTA fellowship email to Kristian Olsen (due 10-26). Queue Completed section empty, 13 items open; 'I suspect some are done b
+  Claim to test (in-house): Check queue items Humanity AI Open Call and ECG DELTA email: done, missed, or still actionable.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-30] [SEARCHED-15b: 2026-10-30] [DISPOSITIONED-15c: 2026-10-30] [PRESUMPTION] PRESUMPTION-1198
+  Statement: [inferred] REVISE-534's remedy (run both copies side by side and compare outputs) presumes the two copies can run concurrently without contaminating each other. The scheduler's own verdict for all 27 double-registered ta
+  Claim to test (literature): Shadow/parallel-run and dark-launch practice: requirement to isolate side effects (writes) of the shadow system; failure modes when shadow writes to shared state.
+  Claim to test (in-house): For one double-registered task, list every file both copies write; mark which are date-keyed vs shared append targets.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1199
+  Statement: [inferred] The specialist-agent fallback ('significant work not yet captured' when nothing new exists) presumes each scheduled run should produce proposals at a fixed rate whatever the review capacity. Today all 3 propos
+  Claim to test (in-house): Per week since 10-01: proposals created vs proposals approved/rejected; share created under the 'not yet captured' rule.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1200
+  Statement: [inferred] Proposals built from abstracts with primary sources blocked, and marked 'Medium or Speculative', presume those confidence labels survive into the counts that report network growth (1087 PRS triplets, 164 conne
+  Claim to test (in-house): Check whether the master wiki PRS total can be split by triplet confidence label.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-10-29: 7 items queued: 1 literature (PRESUMPTION-1198), 6 [IN-HOUSE]. Live lock review/lit_pipeline.lock last line RELEASED 2026-10-29T04:37:03Z (read this run); not held, append safe.*
+
+
+## 2026-10-30 — 15a/15b/15c run note (run cowork-lit-2026-10-30-d469f9d4)
+**Lock:** acquired via lit_pipeline_lock.sh (exit 0) before any read or write; released at end.
+**Scope:** new intake only. PRESUMPTION-1198 was the only literature-lane item in the 10-29 14a/14b pass. The 10-29 ASSUMPTION items and PRESUMPTION-1199..1200 are [IN-HOUSE] and are not owed a search. No backlog batch was run, following the 10-18..10-29 budget precedent.
+**Results:** 15a: 1198 SUPPORTED (Moderate). 15b: 1198 CHALLENGED (Moderate).
+**Dispositions:** DISPOSITION-1113: 1198 → REVISE-535 (High). No PREMISE or MONITOR was minted.
+**SYSTEMIC-RISK:** 1198 shares the double-registration shared-state vulnerability and echoes 'a named check treated as a check performed'. Recorded in the 1198 against file and the returns; no flag file was written.
+**Backups:** *.bak.20261030-pre-15pipeline for all five registers.
+**Backlog remaining (fail loud):** carried forward, not recounted. 126 bare literature-lane items, plus the 15d re-trigger cohorts (10-11, 10-18, 10-25), remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
+**Budget (fail loud):** search subagents used about 62k (15a) + 62k (15b) tokens for one item, far over the 4k per-task / 30k per-session rule, even with a 2-search cap.

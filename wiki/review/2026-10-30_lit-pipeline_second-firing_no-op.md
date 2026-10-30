@@ -1,0 +1,3 @@
+# 15a/15b/15c second firing — no-op (2026-10-30)
+Cloud firing at 2026-10-30T04:40Z. Lock log shows cowork-lit-2026-10-30-d469f9d4 already ran and released at 04:36:52Z (PRESUMPTION-1198 searched 15a/15b; DISPOSITION-1113 -> REVISE-535). No new intake since (last 14a/14b items queued 2026-10-29; assumptions.md/presumptions.md untouched after 03:44Z). No search, disposition, or register write performed by this firing.
+Backlog (fail loud): ~126 bare literature-lane items plus 15d re-trigger cohorts remain QUEUED without SEARCHED tags; "all queued items searched" is NOT met for the backlog. Unchanged by this firing.

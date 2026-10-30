@@ -52027,3 +52027,31 @@ DISPOSITION-1112:
 - 15a NOVELTY (weak, provisional): PRESUMPTION-1196 (agent tasks whose copies fire but differ in tool access).
 - SYSTEMIC-RISK (15b, High): 1196 is a clear instance of 'a named check treated as a check performed' (10-28 candidate) and of 'artefact-as-proof' (1184..1194). 15b recommends a formal SYSTEMIC-RISK-FLAG. Following the 10-25..10-28 precedent, no flag file was written; this is noted for Tom.
 - No INCORPORATE was issued. Consistency checked: REVISE-534 agrees with PREMISE-053 (scheduling is necessary, not sufficient; the execution context must be verified capable; dev/prod parity) and PREMISE-086 (alarm on staleness or absence), and it extends REVISE-523.
+
+
+## 2026-10-30 — 15a / 15b / 15c returns (run cowork-lit-2026-10-30-d469f9d4)
+
+RETURN-15a PRESUMPTION-1198 [2026-10-30]: SUPPORTED (Moderate). Read FOR = the item's concern holds: shadow and parallel-run practice requires the shadow's writes to be isolated, and un-isolated shadows duplicate writes or spoil the comparison. GitHub Scientist author (Jesse Toth, quoted in InfoWorld) says Scientist "is not meant to be used for any code that has side effects", e.g. a candidate that writes to the same database as the control; the Python port Laboratory warns side-effecting code "will lead to duplicated writes"; shadow-traffic guides treat write isolation as a precondition [snippet]. No NOVELTY flag. The UTC-vs-EDT accidental-isolation point was not searched. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15a — SUPPORTED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md
+
+RETURN-15b PRESUMPTION-1198 [2026-10-30]: CHALLENGED (Moderate). The presumption (two copies can run side by side without explicit write isolation and still yield a valid comparison) fails against consistent practitioner guidance: Scientist JS-port README (candidate must never permanently change outside state), InfoWorld/Toth, DesignGurus and DZone shadow-traffic guidance (read-only routing, shadow DB, writes disabled) [snippet]. Balance: a read-only shadow, or dual writes where only the old copy is read, are tolerated; neither holds for 14a/14b. Specific risk: each copy reads the other's appends, entries duplicate or are lost, and the comparison measures a contaminated pair. STEELMAN included. SYSTEMIC-RISK: shares the 'concurrent double-registered tasks overwrite output' vulnerability and echoes 'a named check treated as a check performed'. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15b — CHALLENGED
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md
+
+DISPOSITION-1113:
+  Date: 2026-10-30
+  Item: PRESUMPTION-1198
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Both directions converge. The item's concern is supported and the presumption it names is challenged: shadow and parallel-run practice (Scientist and its ports; shadow-traffic guides) makes write isolation a precondition of a valid comparison, and names duplicated writes and contaminated comparisons as the failure [snippet, practitioner]. The only softening is that read-only shadows, or dual writes where only the old copy is read, are tolerated; neither is in place for 14a/14b. No source addresses file-based registers or scheduled agents directly.
+  Disposition: REVISE (REVISE-535 (High))
+  Reasoning: PRESUMPTION with a consistent Moderate challenge and no counter-evidence. It is a precondition on REVISE-534 action (2), which is itself High: if Tom runs the side-by-side trial as written, the shared registers are both the thing being compared and the thing being written, so the trial can corrupt them or make the copies look equivalent. Urgency set High to travel with REVISE-534 rather than Medium on source strength alone.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1198 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md
+
+### Evidence-quality notes (2026-10-30)
+- 15a and 15b ran as separate subagents. Each was told not to open the other direction's results or this file, and each wrote only its own result file. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 15a 2, 15b 2, 0 fetches. Every source is [snippet only]: READMEs, practitioner blogs, one trade-press interview. Both directions rate the work PRELIMINARY. No disposition rests on a primary text read in full.
+- Not reached by either side: lost-update / concurrent-append literature, outbox / dual-write literature, append-only or idempotent stores (which could weaken the worry), lock-based mutual exclusion for scheduled jobs.
+- SYSTEMIC-RISK (15b): 1198 joins 1196 as an instance of 'a named check treated as a check performed' (10-28 candidate) and adds the double-registration shared-state problem. Following the 10-25..10-29 precedent, no flag file was written; noted for Tom.
+- No INCORPORATE was issued. Consistency checked: REVISE-535 agrees with the verify-the-side-effect premise (validated_premises.md L1534) and refines REVISE-534; no premise contradicts it.

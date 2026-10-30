@@ -16314,3 +16314,13 @@ REVISE-534: [2026-10-29] Source item: PRESUMPTION-1196 (DISPOSITION-1112)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1196 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md
+
+
+REVISE-535: [2026-10-30] Source item: PRESUMPTION-1198 (DISPOSITION-1113)
+  What is at risk: REVISE-534 action (2), the side-by-side (shadow) run of cloud and local copies of double-registered tasks, and the shared registers both copies append to (for 14a/14b: assumptions.md, presumptions.md, for_lit_search.md and related). The scheduler-health verdict already says concurrent passes overwrite each other's output. Without isolation the trial can corrupt the registers it is meant to compare, or make the copies look equivalent because one overwrote or absorbed the other.
+  Recommended action (for Tom): (1) Before any side-by-side run under REVISE-534, give the shadow copy isolated outputs: a dry-run mode, or a separate output directory / sandbox copy of the registers. Only one copy writes to the live registers. (2) Compare outputs offline, keyed by date and run ID, not by reading the shared registers after both ran. (3) If both copies must write live, serialize them with a run lock (as lit_pipeline_lock.sh does) and tag each entry with the writing copy; a lock prevents clobbering but not cross-contamination of inputs. (4) Do not treat the UTC vs EDT changelog dating as isolation; it separates changelog filenames only. (5) Apply together with REVISE-534 so the parity gate and the isolation precondition ship as one change.
+  Urgency: High (travels with REVISE-534; sources Moderate).
+  Related: REVISE-534; REVISE-523; PRESUMPTION-1196; OPEN-281; validated_premises.md L1534 (verify the side effect). SYSTEMIC-RISK candidates: 'a named check treated as a check performed'; concurrent double-registered tasks overwriting output.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1198 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md

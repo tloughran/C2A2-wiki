@@ -3854,3 +3854,16 @@ OPEN-281:
     Original item: OPEN-281
     Item type: OPEN QUESTION
     Current status: OPEN
+
+
+OPEN-282:
+  Raised: 2026-10-29 by 14a/14b (ASSUMPTION-1977, -1981; PRESUMPTION-1198)
+  Question: (a) 15b has now twice recommended a formal SYSTEMIC-RISK flag for 'named check treated as performed' / 'artefact-as-proof'. Should it exist, and where? (b) If REVISE-534's side-by-side trial is adopted, how are the shadow copy's writes isolated so the comparison is not contaminated by the overwrite problem it is meant to fix?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-282
+    Item type: OPEN QUESTION
+    Current status: OPEN
