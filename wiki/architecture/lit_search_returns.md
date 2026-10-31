@@ -52055,3 +52055,48 @@ DISPOSITION-1113:
 - Not reached by either side: lost-update / concurrent-append literature, outbox / dual-write literature, append-only or idempotent stores (which could weaken the worry), lock-based mutual exclusion for scheduled jobs.
 - SYSTEMIC-RISK (15b): 1198 joins 1196 as an instance of 'a named check treated as a check performed' (10-28 candidate) and adds the double-registration shared-state problem. Following the 10-25..10-29 precedent, no flag file was written; noted for Tom.
 - No INCORPORATE was issued. Consistency checked: REVISE-535 agrees with the verify-the-side-effect premise (validated_premises.md L1534) and refines REVISE-534; no premise contradicts it.
+
+
+## 2026-10-31 — 15a / 15b / 15c returns (run cloud-lit-2026-10-31)
+
+RETURN-15a PRESUMPTION-1201 [2026-10-31]: SUPPORTED (Moderate). Read FOR = the item's concern holds: re-running the same process is not independent verification. Knight & Leveson 1986 (independently built versions still fail together) and Huang et al. 2023 / Stechly et al. 2024 (LLM self-correction and self-verification limits) [snippet only]. Caveat: a check against the chat transcript has an external reference, so it is partly mitigated. No literature found defending same-process re-runs as verification.
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md
+
+RETURN-15b PRESUMPTION-1201 [2026-10-31]: CHALLENGED (Moderate). Same-model, same-prompt second runs share blind spots (Knight & Leveson 1986; Huang et al. 2023; Tyen et al. 2023) [snippet only]. Balance: self-consistency voting (Wang et al. 2022) and comparison against an external artifact add value for random errors. Risk: agreement recorded as verification; a 'verified' label propagates. SYSTEMIC-RISK: yes ('a named check treated as a check performed').
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md
+
+RETURN-15a PRESUMPTION-1202 [2026-10-31]: PARTIALLY-SUPPORTED (Weak). Lakatos research programmes and MacIntyre on tradition are communal, not founder-only [search hits only; content unread, characterisations from memory]. No citation-network evidence reached.
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1202_for.md
+
+RETURN-15b PRESUMPTION-1202 [2026-10-31]: NO-CHALLENGE-FOUND (Weak). No literature found defending an author-only filter. A provenance-integrity rationale is plausible but unverified (memory only). Systemic risk: no.
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1202_against.md
+
+DISPOSITION-1114:
+  Date: 2026-10-31
+  Item: PRESUMPTION-1201
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Both directions converge: a second firing of the same process (same model, prompt, context) is not independent verification, so 'I checked its work and changed none of it' reports agreement, which correlated errors also produce. Softening: a comparison against an external artifact (the chat) and self-consistency voting for random errors do add some value. All sources snippet-only; none tests scheduled agent wiki runs.
+  Disposition: REVISE (REVISE-536 (Medium))
+  Reasoning: PRESUMPTION with a consistent Moderate challenge and no source defending re-runs as independent. Heuristic leans REVISE. Urgency Medium, not High, because sources are Moderate and the in-house count (10-23..10-30) is not yet run; it joins 'a named check treated as a check performed' (see REVISE-534/535).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1201 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md
+
+DISPOSITION-1115:
+  Date: 2026-10-31
+  Item: PRESUMPTION-1202
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: NO-CHALLENGE-FOUND  15b strength: Weak
+  Net assessment: Frameworks (Lakatos, MacIntyre) are communal, which is consistent with the item's concern, but neither side read any text and no citation-network or physics-specific evidence was reached. The only possible counter (provenance integrity of an author-only filter) is unsourced.
+  Disposition: MONITOR (MONITOR-700 (Medium))
+  Reasoning: Both directions are Weak and unverified: a literature gap, so untested, not refuted. The in-house count (which task files use an author-only filter; proposals rejected under it) is the better test. No INCORPORATE: nothing to check against validated premises.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1202 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1202_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1202_against.md
+
+### Evidence-quality notes (2026-10-31)
+- 15a and 15b ran as separate subagents. Each was told not to open the other direction's results or this file. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 2-3 per item per direction, every source snippet-only or title-only; some characterisations from memory and marked as such. PRELIMINARY. No disposition rests on a primary text read in full.
+- SYSTEMIC-RISK (15b): 1201 is an instance of 'a named check treated as a check performed'. Following the 10-25..10-30 precedent, no flag file was written; noted for Tom.
+- No INCORPORATE was issued.

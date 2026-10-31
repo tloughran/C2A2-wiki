@@ -16324,3 +16324,13 @@ REVISE-535: [2026-10-30] Source item: PRESUMPTION-1198 (DISPOSITION-1113)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1198 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md
+
+
+REVISE-536: [2026-10-31] Source item: PRESUMPTION-1201 (DISPOSITION-1114)
+  What is at risk: Second-firing notes that present a re-run as verification ('I checked its work and changed none of it'); the second-firing no-op / check notes in review/ and the lit and 14a/14b pipelines. Extends 'a named check treated as a check performed'.
+  Recommended action (for Tom): (1) Label a second firing 're-run / consistency check', not 'verification', unless it compares against an external reference. (2) Record what was compared (source, transcript, test, tool output) and the result. (3) Where independence matters, vary model, prompt or method, or have the checker try to find errors. (4) Run the in-house count (second-firing notes that changed nothing vs ones that caught an error, 10-23..10-30) before deciding how much weight these notes carry.
+  Urgency: Medium (sources Moderate, snippet-only).
+  Related: REVISE-523; REVISE-534; REVISE-535. SYSTEMIC-RISK candidate: 'a named check treated as a check performed'.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1201 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md

@@ -37708,3 +37708,159 @@ ASSUMPTION-1983:
     Current status: UNTESTED
 
 *2026-10-29 14a: ASSUMPTION-1976..1983 (8). Not queued: 1976 (context), 1981 (needs Tom, OPEN-282), 1982, 1983 (recurrences). Queued [IN-HOUSE]: 1977-1980. No interactive session; all items from scheduled-run reports.*
+
+
+ASSUMPTION-1984:
+  Date identified: 2026-10-30
+  Statement: [stated] Evening sync could read session history this run: 'the session-history tools worked, unlike in the earlier run' and 'the problem may be with how those runs are set up rather than the tools themselves.' This local 14a/14b pass also has session_info, while the cloud firing (changelog/2026-10-30, first section) did not. Five-for-five cloud NO-OPs vs working local passes.
+  Context: Evening sync 7b8a0720; this run
+  Type: architectural
+  Related decisions: OPEN-273, OPEN-281
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1984
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1985:
+  Date identified: 2026-10-30
+  Statement: [stated] 'The 30 most recent sessions are all scheduled tasks, with no hands-on Cowork session today. So the existing summary, which was built only from wiki files, should be complete.' Completeness inferred from absence in a title listing (recurrence of the registered 'no interactive session' inference).
+  Context: Evening sync 7b8a0720
+  Type: epistemic
+  Related decisions: 
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1985
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1986:
+  Date identified: 2026-10-30
+  Statement: [stated] Local scheduler-health copy 'can't reach the Routines connector'; 'That suggests the cloud copy (trig_012LxyqYy4nsiY25xSKf2pcG) is the one meant to do this job.' Newest real cloud summary 2026-10-29T15:16Z; 'goes past 26h old around 17:16Z today. After that, the "moved to cloud" WARNs come back unless the cloud copy of this task refreshes it.' Totals moved 36 OK/10 WARN/29 FAIL -> 42/4/29.
+  Context: Scheduler health 7a706d2e
+  Type: architectural
+  Related decisions: REVISE-534, REVISE-535, OPEN-281
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1986
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1987:
+  Date identified: 2026-10-30
+  Statement: [stated] Morning status: 'Twenty-eight scheduled tasks are active, and all of them fired on time.' Same morning, scheduler health counts 41 registry tasks and reports the cloud-routine snapshot 'not refreshed'. 'All fired on time' has no current cloud verdict behind it (recurrence of ASSUMPTION-1979 count mismatch).
+  Context: Morning status dc9c34f6; scheduler health 7a706d2e
+  Type: epistemic
+  Related decisions: 
+  Testability: recurrence of 1979 (already queued; not re-queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1987
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1988:
+  Date identified: 2026-10-30
+  Statement: [stated] Morning walk: 'Active findings: 24'; 'two pairs of proposals share an ID (PROP-2026-10-23-001, and PROP-2026-10-13-001/-002). Each needs a manual re-id.' Yesterday's metrics said only 23 findings carry a Status field. Pending now 10, oldest 10-27; last decision email 10-26.
+  Context: Morning walk f0c45b33; wiki daily run e91559b3
+  Type: methodological
+  Related decisions: 
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1988
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1989:
+  Date identified: 2026-10-30
+  Statement: [stated] Arkani-Hamed agent rejected 'The m=2 amplituhedron is a positive geometry' (arXiv:2610.27903; Koefler, Pavlov, Sinn): 'It settles a central conjecture of his program, but it isn't his own work, so it fails the "from the thinker himself" filter. Tell the agent if you want papers like this accepted as program evidence.' Same run: arXiv author page fetch refused, 'a very recent preprint could have been missed.'
+  Context: Carroll/Arkani-Hamed 869fd18e
+  Type: methodological
+  Related decisions: 
+  Testability: needs Tom (OPEN-283; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1989
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1990:
+  Date identified: 2026-10-30
+  Statement: [stated] 15c set REVISE-535 urgency High 'so it goes with REVISE-534, even though the sources only support Moderate.' 'The UTC vs EDT dating of the changelogs is not real separation; it only keeps the changelog filenames apart.' Budget: ~62k tokens each for 15a and 15b on one item; 'one fix would end the per-item overspend: removing the duplicate registration of this task, or changing the budget rule for it.'
+  Context: Lit search pipeline d469f9d4
+  Type: epistemic
+  Related decisions: REVISE-534, REVISE-535, DISPOSITION-1113
+  Testability: context (feeds PRESUMPTION-1203; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1990
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1991:
+  Date identified: 2026-10-30
+  Statement: [stated] Deferred monitor: WATCH-003 (Rohr PROP-2026-07-19-001) 'now at 25 checks', still stale, escalation recommended; WATCH-004 unchanged at 4 checks; watch_list.md 'now about 865 KB' (was ~860 KB).
+  Context: Deferred monitor 3aaec4d0
+  Type: methodological
+  Related decisions: 
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1991
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-1992:
+  Date identified: 2026-10-30
+  Statement: [stated] Recurrences carried: voice-shell RED 6/400 at 05:38, now on main@84866ea2 (was 99a62099: new commit, same 6 failures); com.tomloughran.openstory.ui not loaded; duplicate firings today: wiki daily run ('fired twice almost at the same moment, as it did on 10-27, 10-28 and 10-29'), evening sync, chat scrape; Carroll/Arkani-Hamed task file wiki path lacks 'Projects/'; this task's prompt says '.../Wiki' (mount is 'wiki').
+  Context: Scheduler health 7a706d2e; wiki daily run e91559b3; evening sync 7b8a0720; chat scrape 7d36db14; 869fd18e; this run
+  Type: architectural
+  Related decisions: OPEN-273
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1992
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-30 14a: ASSUMPTION-1984..1992 (9). Queued [IN-HOUSE]: 1984, 1986, 1988. Not queued: 1985, 1987, 1991, 1992 (recurrences), 1989 (needs Tom, OPEN-283), 1990 (context). No interactive session; all items from scheduled-run reports.*

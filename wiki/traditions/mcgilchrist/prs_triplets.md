@@ -798,7 +798,16 @@ PRS-85:
   Confidence: Medium (peer-reviewed and co-authored; the political conclusion's attribution to McGilchrist vs. Klein is uncertain)
   Evidence: Abstract/summary: the paper "elaborate[s] why McGilchrist's concerns might lead us to look to classical liberalism as the best way to avoid the traps of the left hemisphere, to invigorate the health of the right hemisphere, and to cope with modernity"
 
-*Total PRS triplets: 85*
+PRS-86:
+  Problem: Why do institutions in fragile and conflict-affected settings lose legitimacy and trust, even when they are procedurally sound?
+  Resource: Hemisphere theory: the left hemisphere's narrow, rule-and-procedure attention versus the right hemisphere's attention to context, relationship and the living whole; McGilchrist's historical reading of civilisational cycles as swings in hemispheric dominance.
+  Solution: Trust and legitimacy are right-hemisphere goods, built through relationship and context. Institutions that rely on left-hemisphere procedure alone erode them. Mediators and governments should attend to the relational ground, not only the formal mechanism.
+  Date Added: 2026-10-31
+  Source: The Divided Brain — KCL Department of War Studies podcast (XCEPT), Dr Nafees Hamid with Dr Iain McGilchrist; PROP-2026-10-28-001
+  Confidence: Speculative (inferred from the episode description; the recording has not been reviewed)
+  Evidence: Episode description: "how shifts in hemispheric dominance have shaped trust, institutions and the rise and fall of civilisations throughout history, and what this means for how governments, mediators and practitioners build, and lose, legitimacy in fragile and conflict-affected settings today."
+
+*Total PRS triplets: 86*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

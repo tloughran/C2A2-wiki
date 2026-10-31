@@ -26134,3 +26134,66 @@ PRESUMPTION-1200:
     Current status: UNTESTED
 
 *2026-10-29 14b: PRESUMPTION-1198..1200 (methodological 1, normative 1, epistemic 1; risk Medium-High 1, Medium 1, Low-Medium 1). Checked against 14a 1976-1983. Not re-surfaced (already registered): fires-means-checks; 'no interactive session' inferred from session-title listing (~assumptions L22379); Gmail as sole walk-note channel; duplicate second firings presumed harmless; Rule 6 breaches disclosed not enforced; repeated advisories presumed acted on.*
+
+
+PRESUMPTION-1201:
+  Date surfaced: 2026-10-30
+  Statement: [inferred] Second firings now present themselves as verification ('I checked its work and changed none of it'; 'I checked it against the chat, found it accurate'). This presumes a second run of the same prompt and model on the same inputs minutes later is an independent check. Its errors are correlated with the first run's, so agreement is weak evidence. And the 'verification only' notes are still writes appended to shared files (master wiki, chat summary, cowork summary), so the double-registration still writes twice, in a quieter form.
+  Evidence it was operative: Wiki daily run e91559b3; chat scrape 7d36db14; evening sync 7b8a0720
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: OPEN-273, REVISE-534, REVISE-535
+  Testability: testable via literature
+  Risk if wrong: Medium: duplicate firings get counted as quality assurance, which weakens the case for removing them; appended notes keep growing shared files.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1201
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1202:
+  Date surfaced: 2026-10-30
+  Statement: [inferred] The Arkani-Hamed agent's 'from the thinker himself' filter presumes a tradition is the person's own output, not the research program the person leads. Today it left out a result that 'settles a central conjecture of his program' because others wrote it. The project's own framing of tradition (MacIntyre: a historically extended, socially embodied argument) and Lakatos's research programmes both count work by others inside the program.
+  Evidence it was operative: Carroll/Arkani-Hamed 869fd18e
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions: 
+  Testability: testable via literature
+  Risk if wrong: Medium: tradition records follow the named thinker's output and miss how the program is actually progressing; this is worst for program-founders whose followers do most of the confirming work.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1202
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1203:
+  Date surfaced: 2026-10-30
+  Statement: [inferred] 15c's urgency label is now set for scheduling ('so it goes with REVISE-534') and not by evidence strength ('sources only support Moderate'). This presumes readers of revision_flags.md will read 'High' as 'review alongside 534' rather than 'strongly evidenced'. The register has no field that keeps those two meanings apart.
+  Evidence it was operative: Lit search pipeline d469f9d4
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: REVISE-534, REVISE-535
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: triage by urgency would rank weakly evidenced items as strongly evidenced.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1203
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-30 14b: PRESUMPTION-1201..1203 (methodological 1, structural 1, epistemic 1; risk Medium 2, Low-Medium 1). Checked against 14a 1984-1992. Not re-surfaced (already registered): 'no interactive session' inferred from title listing; double-registration overwrite and shadow-write isolation (P-1196, P-1198, OPEN-281/282); repeated advisories presumed acted on (backlog 10 pending); Rule 6 breaches disclosed not enforced; fixed-rate specialist proposals (P-1199).*

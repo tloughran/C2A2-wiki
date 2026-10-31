@@ -821,3 +821,57 @@ has not already recorded, plus the two that are about the pipeline rather than a
 
 - **CROSS-164 (Levin x Friston x McGilchrist): BBS commentaries on Seth's conscious-AI target article.** Levin e345 (substrate-liberal) vs Friston e336 (mortality-constrained). McGilchrist's 'Consciousness as an ontological primitive' is in the same issue but not yet captured. Ready-made Level-2 comparison; relevant to whether AI agents can be mature tradition members or only functional ones. Evidence is abstract-level for both.
 [EVALUATED: 2026-10-27 - FINDING-111; see pattern_detector_findings.md]
+
+### PROP-2026-10-27-001 — hoffman (Consciousness, Mystery & Reality (Brian Muraresku and Donald Hoffman in conversation), ingested 2026-10-31)
+- **Stump:** an ancient sacramental/initiatory tradition read as reaching toward a reality behind appearances touches Stump's Thomistic account of how the transcendent is known; worth checking whether Hoffman distinguishes "mystery" from revelation if a recording appears.
+- **Kastrup:** both treat consciousness as fundamental; Kastrup's idealism has a more developed engagement with mystical experience than Hoffman's formalism. Flag as a possible point of contact, not a demonstrated one.
+- **Carroll / Arkani-Hamed:** only indirectly, via the event's restatement that space and time emerge.
+
+### PROP-2026-10-27-002 — hoffman (What's outside the simulation with Donald Hoffman?" (Impact Theory with Tom Bilyeu), ingested 2026-10-31)
+Spacetime not fundamental: Carroll and Arkani-Hamed (positive geometries). Interface and simulation language: compare Kastrup's rejection of the simulation framing, which Hoffman's wording may invite; flag for the Kastrup agent. No new Levin or Hawkins link identified.
+
+### PROP-2026-10-27-003 — hoffman (Conscious Agents, Decorated Permutations, and the Construction of Spacetime, ingested 2026-10-31)
+Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on fundamentality of spacetime. Levin: if evolution is a projection of agent dynamics, compare goal-directedness across scales. Kastrup: idealist convergence on consciousness as fundamental, divergence on agent plurality (flag).
+
+### PROP-2026-10-28-001 — mcgilchrist (The Divided Brain — KCL Department of War Studies podcast (XCEPT), Dr Nafees Hamid with Dr Iain McGilchrist, ingested 2026-10-31)
+- **STRONG C2A2 SIGNAL.** This is McGilchrist's left/right divide brought to bear on conflict mediation between communities, the closest any captured source has come to the C2A2 question of how rival traditions can talk in good faith. The suggestion: a dialogue fails when each side sees the other only through left-hemisphere categories, and it recovers when the context-rich, relational mode is restored. This bears directly on the design of tradition-vs-tradition dialogue.
+- **Fredrickson:** trust built through relationship lines up with her positivity-resonance account of social bonds.
+- **MacIntyre / Stump:** legitimacy grounded in shared practice and relationship, not procedure alone, echoes MacIntyre's critique of liberal proceduralism.
+
+### PROP-2026-10-28-002 — kastrup (Francis Lucille: Test your theory in the lab of life — On lasting happiness, enlightenment & meditation: dialogue with Bernardo Kastrup (With Reality in Mind), ingested 2026-10-31)
+- **C2A2 signal:** "Do we need a tradition or a teacher?" is the C2A2 question in miniature: whether maturity in a tradition needs apprenticeship (MacIntyre) or can be reached by direct inquiry. Also "Are we trying to communicate one reality?" and "Disagreement, perspective and honesty with ourselves."
+- **Fredrickson:** the claim that understanding deepens happiness, and the question of whether empathy and happiness can coexist, are testable against broaden-and-build and positivity research.
+- **McGilchrist:** meditation as open, undisciplined attention ("more Italian") fits right-hemisphere attention, as against the left hemisphere's goal-directed grasping.
+- **Stump / Rohr:** the contemplative "lab of life" overlaps with Rohr's contemplative practice and with Thomistic accounts of wisdom as connatural knowledge.
+
+### PROP-2026-10-28-003 — kastrup (Response to Rupert Sheldrake's criticisms of Analytic Idealism" (with Sheldrake's published rejoinder, 6 Dec 2024), ingested 2026-10-31)
+- **C2A2 signal (dialogue under strain):** two close allies in the non-materialist camp misread each other in public, and the exchange is then repaired by a published rejoinder. It is a worked case of the kind of inter-tradition friction C2A2 aims to make more richly informed. Kastrup himself names the emotional cost.
+- **Stump / Wright:** Kastrup states that his naturalism contradicts only "some form of Abrahamic theism, literally interpreted." This draws the boundary with the Thomistic and Christian traditions in the network.
+- **Hoffman:** the "dashboard" metaphor sits very close to Hoffman's interface theory; worth cross-linking.
+- **Levin:** Sheldrake's morphic-field program and Levin's morphogenetic fields are a known neighbouring pair. Note this if Sheldrake ever enters the network.
+
+### PROP-2026-10-29-001 — stump (Theology and the Knowledge of Persons, ingested 2026-10-31)
+- **C2A2 core (flag strongly):** second-person knowledge is a candidate name for what "second-first-language competence" requires. Knowing a rival tradition from inside may be knowledge of persons, not a stock of propositions about them. This bears on whether AI agents can attain it.
+- **McGilchrist:** person-knowledge vs propositional knowledge maps onto his right-hemisphere (relational, particular) vs left-hemisphere (abstract, categorical) attention.
+- **Fredrickson:** positivity resonance is a measurable episode of second-person engagement; possible empirical handle on Stump's category.
+- **MacIntyre:** narrative knowledge as a form of understanding is shared ground (relevant to Tom's ISMI paper).
+- Stump cites developmental person-perception research (Moore, Hobson & Lee 1997, autism), a bridge into cognitive science.
+
+### PROP-2026-10-29-002 — fredrickson (Listen to resonate: Better listening as a gateway to interpersonal positivity resonance through enhanced sensory connection and perceived safety, ingested 2026-10-31)
+- **C2A2 core (flag strongly):** a concrete, measurable intervention for cross-tradition dialogue. If listening generates resonance via safety, dialogue protocols between traditions could be designed and scored on it. Related independent finding (not Fredrickson's): a listening-and-depolarization study found high-quality listening produced more positivity resonance during disagreements.
+- **Friston:** "perceived safety" reads as lowered expected surprise between agents; sensory connection as mutual prediction. Shared attention as mutual inference.
+- **McGilchrist:** listening as attention that receives rather than grasps (right-hemisphere mode).
+- **Stump:** listening as the behavioral doorway to second-person presence (see PROP-2026-10-29-001).
+- Vagal/biological synchrony keeps the Hawkins/Friston neurological bridge open.
+
+### PROP-2026-10-29-003 — fredrickson (Characteristics and consequences of co-experienced positive affect: understanding the origins of social skills, social bonds, and caring, healthy communities, ingested 2026-10-31)
+- **C2A2 core (flag strongly):** positivity resonance in communities. Gives a candidate mechanism for how a tradition's community holds together, and a measurable variable for whether cross-tradition encounters build bonds or not.
+- **Levin:** collective-level affect as an emergent property of the group, parallel to his cross-scale collective intelligence.
+- **Stump:** shared affect as the experiential side of union between persons; compare her account of love as desire for the good of, and union with, the beloved.
+- **Wright / Rohr:** community formation as the vehicle of flourishing.
+
+### PROP-2026-10-30-001 — carroll (372 | Erik Winfree on DNA Robots and Computers, ingested 2026-10-31)
+- **Wolfram (strong):** Wang tiles that simulate cellular automata and Turing machines, realized in DNA, give a lab test of Wolfram's computational equivalence. Simple local rules produce universal computation in physical matter.
+- **Levin:** Matter programmed with local rules that self-assembles into patterned, task-performing structures echoes the Levin program's "goal-directed collectives built from simple parts". Winfree's contrast between purpose-built and multipurpose emergent hierarchies is a direct prompt for Levin's multiscale competency architecture.
+- **Friston:** Error-correction through cooperative binding rather than energy expenditure invites a comparison with free-energy accounts of how living systems maintain their states at low cost.
+- **Carroll internal:** This pairs with Mindscape 361 (Bassler, bacterial communication) and *Biggest Ideas* Vol. 3 (complexity and emergence) as part of a run on information-bearing matter.

@@ -25640,3 +25640,15 @@ MONITOR-699:
   Monitoring cadence: Weekly (default)
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1192 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1192_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1192_against.md
+
+
+MONITOR-700:
+  Date: 2026-10-31
+  Source item: PRESUMPTION-1202 (DISPOSITION-1115)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Lakatos research programmes and MacIntyre on tradition are communal, not founder-only (Weak; search hits only, unread). 15b: no literature found defending an author-only filter (Weak); a provenance-integrity rationale is unsourced.
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a tradition includes its program members, not only the founder') a read-through of Lakatos/MacIntyre plus citation-network evidence on follower contributions; (-> REVISE) the in-house count showing proposals rejected under author-only filters that members' work would have settled.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1202 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1202_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1202_against.md

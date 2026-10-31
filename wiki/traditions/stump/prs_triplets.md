@@ -441,4 +441,22 @@ PRS-49:
   Confidence: High
   Evidence: pp. 522-523. Caveat: Stump concedes Aquinas wrongly ties intellect to no bodily organ (p. 520) and may lack a unity criterion (note 19).
 
-*Total PRS triplets: 46*
+PRS-50:
+  Problem: What distinguishes theology from philosophy, if both use the same analytic tools?
+  Resource: The difference between knowing a person (second-person knowledge) and knowing that something is true
+  Solution: Theology's object is personal, so its knowledge is second-personal at root; philosophy seeks impersonal wisdom
+  Date Added: 2026-10-31
+  Source: Theology and the Knowledge of Persons; PROP-2026-10-29-001
+  Confidence: High
+  Evidence: Abstract: "A philosopher is looking after impersonal wisdom, a theologian searches for a personal God. This differentiation is fundamental because knowledge of persons differs from knowledge that."
+
+PRS-51:
+  Problem: The hiddenness argument says a loving God would make his existence evident to anyone open to relationship
+  Resource: Second-person knowledge as the kind of knowledge at stake in relationship
+  Solution: If knowledge of God is second-personal, the argument's demand for propositional evidence mislocates the question; the hiddenness problem must be reframed
+  Date Added: 2026-10-31
+  Source: Theology and the Knowledge of Persons; PROP-2026-10-29-001
+  Confidence: Medium (abstract-level; full text not read this run)
+  Evidence: Abstract: taking account that theology rests on second-person knowledge "changes the way one should approach the hiddenness argument."
+
+*Total PRS triplets: 51*

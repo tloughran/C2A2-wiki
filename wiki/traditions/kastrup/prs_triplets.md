@@ -895,4 +895,40 @@ PRS-98:
   Confidence: Medium (members-only recording; page summary, chapter list and preview only)
   Evidence: Loeb quote on the page; chapter 'Why scientists resist new discoveries' (00:30:35). Candidate-01 (UAP and materialism) not entered: no public content, needs transcript.
 
-*Total PRS triplets: 98*
+PRS-99:
+  Problem: Can a metaphysics such as idealism or non-duality be tested at all, given that it makes no new predictions in physics?
+  Resource: Lucille's first-person "lab of life" method: from time to time, live as though the ordinary consciousness hearing these words is the cosmic consciousness, and observe what changes in thought, perception, relationships and reactions to events.
+  Solution: Proposes an empirical but non-objective test. The view is validated, or not, by its observed effects on lived experience rather than by third-person measurement.
+  Date Added: 2026-10-31
+  Source: Francis Lucille: Test your theory in the lab of life — On lasting happiness, enlightenment & meditation: dialogue with Bernardo Kastrup (With Reality in Mind); PROP-2026-10-28-002
+  Confidence: Medium
+  Evidence: Lucille, quoted on the page: "Okay, you have your theory. Take it to the lab of life. Check it out." He adds that it "changes the way we think... perceive the world... interact with others... react to events."
+
+PRS-100:
+  Problem: Does a person need a tradition or a guru to reach the insight, and do Advaita and Kashmir Shaivism really differ?
+  Resource: Chapters 1:09:44 ("Advaita and Kashmir Shaivism: a real difference?") and 1:22:45 ("Do we need a tradition or a teacher?").
+  Solution: Unknown. The recording has not been reviewed; flag for extraction if the full recording is accessed.
+  Date Added: 2026-10-31
+  Source: Francis Lucille: Test your theory in the lab of life — On lasting happiness, enlightenment & meditation: dialogue with Bernardo Kastrup (With Reality in Mind); PROP-2026-10-28-002
+  Confidence: Speculative
+  Evidence: Chapter titles only.
+
+PRS-101:
+  Problem: If analytic idealism agrees with every result of science, does it differ from physicalism in anything but name?
+  Resource: The "dashboard" account: physicality is how we cognitively represent, when we measure, a common ontological ground that is real and observer-independent but mental. Kastrup also cites first-person physics (arXiv:1712.01826) as indirect support for a shared, non-physical common ground.
+  Solution: The two views share only the acceptance of an external world. They differ on what that world is. Agreeing with science is a requirement any viable metaphysics must meet, not evidence of equivalence.
+  Date Added: 2026-10-31
+  Source: Response to Rupert Sheldrake's criticisms of Analytic Idealism" (with Sheldrake's published rejoinder, 6 Dec 2024); PROP-2026-10-28-003
+  Confidence: High
+  Evidence: "physicality is a dashboard representation, upon measurement, of the real and mental world that is measured. But this mental world measured is really real."
+
+PRS-102:
+  Problem: Does analytic idealism open any new avenues for scientific investigation?
+  Resource: The dissociation model: individual minds are dissociated from the wider cognitive space of nature.
+  Solution: Factors that weaken dissociation could in principle produce telepathy- or clairvoyance-like phenomena. Kastrup states this possibility but declines to develop it, saying he has no expertise in parapsychology.
+  Date Added: 2026-10-31
+  Source: Response to Rupert Sheldrake's criticisms of Analytic Idealism" (with Sheldrake's published rejoinder, 6 Dec 2024); PROP-2026-10-28-003
+  Confidence: Medium
+  Evidence: "it is entirely conceivable that factors that weaken the dissociation could lead to phenomena such as forms of telepathy and clairvoyance."
+
+*Total PRS triplets: 102*

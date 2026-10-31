@@ -28413,3 +28413,54 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
 **Backups:** *.bak.20261030-pre-15pipeline for all five registers.
 **Backlog remaining (fail loud):** carried forward, not recounted. 126 bare literature-lane items, plus the 15d re-trigger cohorts (10-11, 10-18, 10-25), remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
 **Budget (fail loud):** search subagents used about 62k (15a) + 62k (15b) tokens for one item, far over the 4k per-task / 30k per-session rule, even with a 2-search cap.
+
+
+## 2026-10-30 — 14a/14b local pass intake
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1984
+  Statement: [stated] Evening sync could read session history this run: 'the session-history tools worked, unlike in the earlier run' and 'the problem may be with how those runs are set up rather than the tools th
+  Claim to test (in-house): Compare tool sets of cloud vs local firing of c2a2-self-awareness-daily (10-26..10-30): confirm session_info is absent only on the cloud side.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1986
+  Statement: [stated] Local scheduler-health copy 'can't reach the Routines connector'; 'That suggests the cloud copy (trig_012LxyqYy4nsiY25xSKf2pcG) is the one meant to do this job.' Newest real cloud summary 202
+  Claim to test (in-house): Read routine_health.md after 2026-10-30T17:16Z: did the cloud scheduler-health copy write a fresh summary, or did the moved-to-cloud WARNs return?
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] ASSUMPTION-1988
+  Statement: [stated] Morning walk: 'Active findings: 24'; 'two pairs of proposals share an ID (PROP-2026-10-23-001, and PROP-2026-10-13-001/-002). Each needs a manual re-id.' Yesterday's metrics said only 23 find
+  Claim to test (in-house): List pending/ for duplicate PROP IDs (10-23-001; 10-13-001/-002) and reconcile findings 'Active' count (24) vs Status-field count (23).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-31] [SEARCHED-15b: 2026-10-31] [DISPOSITIONED-15c: 2026-10-31] [PRESUMPTION] PRESUMPTION-1201
+  15a: SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate) | Disposition: REVISE-536 (Medium)
+  Statement: [inferred] Second firings now present themselves as verification ('I checked its work and changed none of it'; 'I checked it against the chat, found it accurate'). This presumes a second run of the sa
+  Claim to test (literature): N-version programming and independent-verifier literature (e.g., Knight & Leveson 1986 on correlated failures); whether re-running the same process counts as independent verification; LLM self-consistency vs self-verification limits.
+  Claim to test (in-house): Count today's second-firing notes that changed nothing vs ones that caught an error, across 10-23..10-30.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-10-31] [SEARCHED-15b: 2026-10-31] [DISPOSITIONED-15c: 2026-10-31] [PRESUMPTION] PRESUMPTION-1202
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: NO-CHALLENGE-FOUND (Weak) | Disposition: MONITOR-700 (Medium)
+  Statement: [inferred] The Arkani-Hamed agent's 'from the thinker himself' filter presumes a tradition is the person's own output, not the research program the person leads. Today it left out a result that 'settl
+  Claim to test (literature): Lakatos research programmes (progress made by program members, not only the founder); MacIntyre on tradition as socially embodied argument; citation-network studies of founder vs. follower contributions to program confirmation.
+  Claim to test (in-house): Across all 14 specialist task files, list which use an author-only filter and how many proposals have been rejected under it.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1203
+  Statement: [inferred] 15c's urgency label is now set for scheduling ('so it goes with REVISE-534') and not by evidence strength ('sources only support Moderate'). This presumes readers of revision_flags.md will 
+  Claim to test (in-house): In revision_flags.md since 10-01, count REVISE entries whose urgency is higher than the evidence strength stated by 15a/15b.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-10-30: 6 items queued: 2 literature (PRESUMPTION-1201, -1202), 4 [IN-HOUSE]. Live lock review/lit_pipeline.lock last line RELEASED 2026-10-30T04:36:52Z (read this run); not held, append safe.*
+
+
+## 2026-10-31 — 15a/15b/15c run note (run cloud-lit-2026-10-31)
+**Lock:** acquired by appending a LOCKED line to review/lit_pipeline.lock (lit_pipeline_lock.sh not reachable from this cloud session); released at end.
+**Scope:** new intake only. PRESUMPTION-1201 and -1202 were the literature-lane items in the 10-30 14a/14b pass. The [IN-HOUSE] items are not owed a search. No backlog batch was run, following the 10-18..10-30 budget precedent.
+**Results:** 15a: 1201 SUPPORTED (Moderate); 1202 PARTIALLY-SUPPORTED (Weak). 15b: 1201 CHALLENGED (Moderate); 1202 NO-CHALLENGE-FOUND (Weak).
+**Dispositions:** DISPOSITION-1114: 1201 -> REVISE-536 (Medium). DISPOSITION-1115: 1202 -> MONITOR-700 (Medium). No PREMISE minted.
+**SYSTEMIC-RISK:** 1201 instances 'a named check treated as a check performed'; recorded in the against file and returns; no flag file written.
+**Backups:** *.bak.20261031-pre-15pipeline for the five registers (validated_premises.md unchanged).
+**Backlog remaining (fail loud):** carried forward, not recounted. 126 bare literature-lane items plus the 15d re-trigger cohorts remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
+**Budget (fail loud):** search subagents used about 62k (15a) + 64k (15b) tokens for two items, far over the 4k per-task / 30k per-session rule.
+**Evidence quality:** all sources snippet-only or title-only; 1202 rests on search hits and memory.

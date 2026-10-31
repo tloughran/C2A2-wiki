@@ -3867,3 +3867,16 @@ OPEN-282:
     Original item: OPEN-282
     Item type: OPEN QUESTION
     Current status: OPEN
+
+
+OPEN-283:
+  Raised: 2026-10-30 by 14a/14b (ASSUMPTION-1989; PRESUMPTION-1202)
+  Question: Should specialist agents accept work by others that advances a thinker's research program (e.g., arXiv:2610.27903, which settles a central amplituhedron conjecture) as program evidence, or keep the "from the thinker himself" filter? If accepted, how is it labelled so a tradition record keeps the founder's own output apart from the program's?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-283
+    Item type: OPEN QUESTION
+    Current status: OPEN
