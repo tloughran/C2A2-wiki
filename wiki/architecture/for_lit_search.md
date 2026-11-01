@@ -28464,3 +28464,416 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
 **Backlog remaining (fail loud):** carried forward, not recounted. 126 bare literature-lane items plus the 15d re-trigger cohorts remain [QUEUED] without SEARCHED tags. "All queued items searched" is NOT met for the backlog.
 **Budget (fail loud):** search subagents used about 62k (15a) + 64k (15b) tokens for two items, far over the 4k per-task / 30k per-session rule.
 **Evidence quality:** all sources snippet-only or title-only; 1202 rests on search hits and memory.
+
+
+## 2026-10-31 — 14a/14b intake (local pass)
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-1994
+  Statement: [stated] Lit pipeline local firing stopped at Step 0: the lock must be taken by running scripts/lit_pipeline_lock.sh via Desktop Commander, the approval 'was declined automatically', and 'the task's r
+  Claim to test (in-house): In review/lit_pipeline.lock (and the second lock file), classify every LOCKED line since 10-01 as script-written or hand-appended, and check whether any two LOCKED intervals overlap.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-1995
+  Statement: [stated] Wiki daily run second firing: about 340 inbox files (April-October) do not appear by filename in PROCESSED_LOG.md, while the primary run reports the ledger clear (one open item, Wright PROP-2
+  Claim to test (in-house): Sample 20 of the ~340 inbox files missing by filename from PROCESSED_LOG.md and check whether each is recorded under its proposal ID.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-1997
+  Statement: [stated] Scheduler health (local copy, fired after the cloud copy): did not append its own NOT-CHECKED line to routine_health.md because 'adding a failure line after it would make the file's last line
+  Claim to test (in-house): List every reader of scheduler/routine_health.md (scripts and task prompts) and record whether it reads only the last line or the latest line per routine.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-1998
+  Statement: [stated] Counts disagree across same-morning reports: morning status says 'Twenty-six of them are tasks registered twice' and 'Twenty-eight scheduled tasks are active, and every one fired on its last 
+  Claim to test (in-house): Reconcile the double-registration count (26 vs 27) and the active-task count (28 vs 41 registry tasks) against the registry files; name which definition each report uses.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-1999
+  Statement: [stated] Morning system health: Mac drive '67% full (307G of 461G) ... much more used space than earlier reports showed (about 84G)'; CPU and memory 'commands only see my sandbox, not your Mac'; finis
+  Claim to test (in-house): For system-health reports since 09-01, determine whether each disk reading came from the Mac or the sandbox, and whether the 84G -> 307G change is a measurement change.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2001
+  Statement: [stated] Chat scrape print-QC findings: register misattributions (Gillingham-not-Wright PRS-16/17/18; Bennett-not-Hoffman PRS-13; unconfirmable Levin-Kastrup 12 May dialogue), 'many dates are discover
+  Claim to test (in-house): Count CROSS and FINDING entries that cite PRS-13 (Hoffman, Stump), PRS-16/17/18 (Wright), Kastrup PRS-10 and the Levin-Kastrup 12 May dialogue.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1204
+  Statement: [inferred] The lit pipeline's lock rule is presumed to mean the same thing on both sides. It does not. Locally, 'lock could not be created' is read as fail-closed: stop. In the cloud, the same conditi
+  Claim to test (in-house): Read the lit-pipeline task prompts (local and cloud) and list what each instructs when the lock script is unreachable; compare with what each run did since 10-01.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1205
+  Statement: [inferred] The 27 Oct freeze guard is presumed to protect the print edition's correctness. It protects its stability. The same QC that it guards found misattributions in the frozen sources, and the on
+  Claim to test (in-house): List corrections made after the 27 Oct freeze and mark each as print-annotation only, live-register only, or both.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-10-31: 8 items queued, all [IN-HOUSE]; 0 literature-lane. Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-10-31T04:42:13Z by cloud-lit-2026-10-31-2. PRE...; not held, append safe.*
+
+
+================================================================================
+## 2026-11-01 — 15d Periodic Monitor: MONTHLY INCORPORATED-premise re-check cohort + weekly re-triggers (first Sunday; day 1)
+
+*86 ACTIVE premises whose `Re-check due` had passed (oldest due 2026-10-08), queued oldest-due first. 15d re-trigger only; no evidence evaluated. A date-only re-stamp certifies "not yet expired", not "re-tested" (PREMISE-124/126 apply). Volume and caveats are stated in monitor_queue.md run log.*
+
+[PREMISE] PREMISE-199: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1277 (14a) — DISPOSITION-913; Cadence: Monthly; was due 2026-10-08; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-200: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-925 (14b) — DISPOSITION-914; Cadence: Monthly; was due 2026-10-08; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-202: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-941 (DISPOSITION-926); Cadence: Monthly; was due 2026-10-10; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-203: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-944 (DISPOSITION-927); Cadence: Monthly; was due 2026-10-10; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-205: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item raised by 15c from the aggregate of the 2026-09-14 cycle (DISPOSITION-963); not routed by; Cadence: Monthly; was due 2026-10-14; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-096: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-452; Cadence: Quarterly; was due 2026-10-16; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-097: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-457; Cadence: Quarterly; was due 2026-10-16; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-098: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-490; Cadence: Quarterly; was due 2026-10-18; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-099: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-469; Cadence: Quarterly; was due 2026-10-19; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-100: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-472; Cadence: Quarterly; was due 2026-10-19; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-101: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-494; Cadence: Quarterly; was due 2026-10-19; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-103: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-497; Cadence: Quarterly; was due 2026-10-19; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-105: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-474; Cadence: Quarterly; was due 2026-10-20; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-107: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-479; Cadence: Quarterly; was due 2026-10-20; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-109: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-503; Cadence: Quarterly; was due 2026-10-20; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-110: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-505; Cadence: Quarterly; was due 2026-10-20; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-122: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-523; Cadence: Quarterly; was due 2026-10-22; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-124: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-533 (general form of the 2026-07-23 SYSTEMIC-RISK flag; instances: PRESUMPTION; Cadence: Quarterly; was due 2026-10-23; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-216: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-1072; Cadence: Monthly; was due 2026-10-23; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-183: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-861 (14b); Cadence: Quarterly; was due 2026-10-24; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-125: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-541; Cadence: Quarterly; was due 2026-10-25; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-126: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-542; Cadence: Quarterly; was due 2026-10-25; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-127: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-545; Cadence: Quarterly; was due 2026-10-26; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-128: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-546; Cadence: Quarterly; was due 2026-10-26; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-129: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-555; Cadence: Quarterly; was due 2026-10-27; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-130: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-557; Cadence: Quarterly; was due 2026-10-28; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-131: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-558; Cadence: Quarterly; was due 2026-10-28; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-132: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-559; Cadence: Quarterly; was due 2026-10-28; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-133: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-560; Cadence: Quarterly; was due 2026-10-28; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-134: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-562; Cadence: Quarterly; was due 2026-10-28; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-135: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-566; Cadence: Quarterly; was due 2026-10-29; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-001: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-005; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-002: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-009; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-003: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-012; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-004: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-024; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-005: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-040; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-006: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-047; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-007: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-051; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-008: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-056; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-009: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-059; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-010: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-061; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-011: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-062; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-012: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-068; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-013: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-069; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-014: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-076; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-025: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-165; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-070: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-337; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-071: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-340; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-072: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-341; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-089: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-390; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-095: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-429; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-102: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-495; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-104: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-498; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-106: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-478; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-108: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-502; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-138: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-616; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-139: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-621; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-140: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-624; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-141: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-664; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-142: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-666; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-143: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-668; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-144: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-678; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-145: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-685; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-146: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-689; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-147: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-691; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-148: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-695; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-150: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-729; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-151: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-731; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-152: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-814; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-153: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-776 (clause P1 only; clause P2 NOT incorporated — see below); Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-154: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-779; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-155: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-780; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-157: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-784; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-158: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-786; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-159: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-787; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-162: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-792; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-179: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1149; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-180: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1150; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-181: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1152; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-187: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1226 (14a); Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-193: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-515; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-195: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-895 (DISPOSITION-874 — REVISE for the design limb, INCORPORATE for this limb); Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-196: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1240 (DISPOSITION-878); Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-198: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-071 (MONITOR-070, monthly re-check cycle 5) - DISPOSITION-895; Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+[PREMISE] PREMISE-223: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item ASSUMPTION-1315 (limb A only; via 15d re-trigger of MONITOR-602) | DISPOSITION-1045; Cadence: Quarterly; was due 2026-11-01; new re_check_due 2027-02-07
+
+[PREMISE] PREMISE-229: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-11-01]
+  Provenance: source item PRESUMPTION-1101 (DISPOSITION-1071; supersedes MONITOR-636); Cadence: Monthly; was due 2026-11-01; new re_check_due 2026-12-06
+
+### Weekly re-triggers (2026-11-01)
+
+[PRESUMPTION] PRESUMPTION-1174: (see MONITOR-696 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-01, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-01; Next 15d check: 2026-11-08
+  Owed (15c): a verified primary source on LLM self-preference/self-recognition bias in evaluation; primary W3C PROV / TEI @who text plus a DH practice source. In-house alternative: count model-authored spans carded under tradition keys without a structured origin field.
+  Evidence trajectory: Baseline (first 15d cycle under this MONITOR number); no search since the 15c disposition (10-23).
+
+[ASSUMPTION] ASSUMPTION-1178: (see MONITOR-548 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-01, cycle 3]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: High
+  Cycle: 2 -> 3; Last checked: 2026-11-01; Next 15d check: 2026-12-06 (monthly until the count exists)
+  Owed (15c, unchanged since 2026-08-25): the vault entry count of Hawkins x Hoffman tagged pairs (in-house grep, not literature). Citations already verified 09-28.
+  Evidence trajectory: Stable; supporting/challenging split unchanged; no new sources; count still unproduced.
+
+Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -691, -692, -693 literature; -690, -694, -685 empirical) carries no SEARCHED/DISPOSITIONED tags; the 2026-10-18 and 2026-10-11 cohorts likewise. Not duplicated; cycle counts held (precedent 09-20..10-25).

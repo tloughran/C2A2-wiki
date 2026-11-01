@@ -184,3 +184,17 @@ If the church is a real corporate substance whose members retain their distinct 
 **Open question the wiki cannot yet answer:** Do temple and marriage describe a metaphysical union or a covenantal one, and does Wright say?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-25_wright_ask-ntw-oct18-military-new-creation-temple-marriage]]
+
+
+## Can the blessed fall?
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance.md` (0 backlinks).
+
+**Why it sits here:** Wright's no-serpent claim and Stump's Thomist treatment of beatitude both address whether freedom persists once evil is no longer a live option.
+
+**Synthesis claim.** Irreversibility of the eschaton is compatible with freedom if the will's object is fully present, so stability comes from union, not constraint.
+
+**Open question the wiki cannot yet answer:** Is there a non-theological model of a stable attractor that preserves agency, and does it fit the wiki's PRS machinery?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance]]

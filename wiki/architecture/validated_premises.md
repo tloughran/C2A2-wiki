@@ -34,7 +34,7 @@ Traditions (defined as coherent systems of assumptions, methods, and evaluative 
 - Comparative analysis framework
 - Cross-tradition signal detection
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -69,7 +69,7 @@ Displacement vectors in semantic space, validated by Mikolov's vector arithmetic
 - Embedding-based inference
 - Vector space comparisons
 
-**Re-check due:** 2026-11-01 (Monthly) [re-checked by 15d 2026-07-05; re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-408 — new caveats: per-space similarity calibration required; control document length (embedding collapse)] [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+**Re-check due:** 2026-12-06 (Monthly) [re-checked by 15d 2026-07-05; re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-408 — new caveats: per-space similarity calibration required; control document length (embedding collapse)] [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -104,7 +104,7 @@ Human review capacity is a documented bottleneck in human-in-the-loop AI systems
 - Agent 14a/14b workload design
 - Prioritization of agent improvement vs. human efficiency
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -142,7 +142,7 @@ Convergence of independent lines of evidence (triangulation/overdetermination) i
 - Design of validation protocols requiring independent evidence streams
 - Future finding evaluation criteria
 
-**Re-check due:** 2026-11-01 (Monthly — monitor independence of C2A2 findings) [re-checked by 15d 2026-07-05; re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-409 — independence proviso sharpened: correlated LLM errors (Kim et al. ICML 2025) mean same-model-family convergence is NOT independent evidence; count same-mechanism/same-family lines as one; binds REVISE-174] [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+**Re-check due:** 2026-12-06 (Monthly — monitor independence of C2A2 findings) [re-checked by 15d 2026-07-05; re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-409 — independence proviso sharpened: correlated LLM errors (Kim et al. ICML 2025) mean same-model-family convergence is NOT independent evidence; count same-mechanism/same-family lines as one; binds REVISE-174] [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with standing independence caveat)
 
@@ -183,7 +183,7 @@ ChatGPT projects are strictly account-scoped — there is no cross-account proje
 - Cross-account data-ingestion planning (establishes that direct in-browser cross-view is not a route)
 - Pairs with ASSUMPTION-041 (Drive connector durability) and PRESUMPTION-047 (user-directedness) in the 2026-04-18 route-selection cluster
 
-**Re-check due:** 2026-11-01 (Quarterly — vendor ToS / feature evolution could shift collaborator-scope claims) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly — vendor ToS / feature evolution could shift collaborator-scope claims) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with small scope qualifier: account-scoping is about default visibility, not about user-initiated data movement between accounts; the invite-gated sharing mechanism is an exception by design, not by accident)
 
@@ -226,7 +226,7 @@ Master-wiki narrative discrepancy should be flagged transparently rather than si
 - Pairs with the SELF-AWARENESS-META cluster's remediation direction (disambiguate null/missing signals with explicit observability).
 - Informs all downstream briefing-surface rendering decisions.
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with operationalization note: a concrete rendering convention for "transparent flagging" should be chosen before this premise is used as a hard constraint)
 
@@ -268,7 +268,7 @@ Tool-layer immutability is a correctness precondition for prompt-cache reuse. Wh
 - Pairs with ASSUMPTION-054 (byte-stability smoke test) as the immutability-verification contract.
 - Informs downstream rollout gates (2026-04-27 caching deployment): tool-definition drift detection must be in the pre-rollout audit.
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -308,7 +308,7 @@ An honest null (zero proposals emitted with clear rejection reasons) is more val
 - BRIEFING-LAYER-EPISTEMIC-COMMITMENTS cluster governance
 - Pairs with PRESUMPTION-067 REVISE (specialist self-eval adequate) — honest-null policy requires filter-audit to distinguish from convenient-null
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with audit-protocol pairing note: PREMISE-008 is load-bearing under the assumption that specialist-layer filter audit exists; DECISION-022 scope extension satisfies this)
 
@@ -347,7 +347,7 @@ The evening cowork-to-chat sync scheduled task should not presume scheduler-over
 - Pairs with PRESUMPTION-064 and PRESUMPTION-069 REVISE dispositions: authority-constrained + escalation-equipped is the joint pattern
 - Directly motivates OPEN-034 (alert-based remediation rather than sibling-invocation)
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -385,7 +385,7 @@ PREMISE-006 (transparent-flagging-over-silent-reconciliation) applies reflexivel
 - Candidate DECISION-022 (briefing-layer audit contract) — PREMISE-010 makes DECISION-022 a test-of-PREMISE-006 rather than a rendering-convention choice
 - Operationalizes the SELF-AWARENESS-META cluster's internal-consistency layer
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with operationalization note: reflexive application means every validated premise must enter the DECISION register; phasing may be required to avoid overload; provenance flagged as Claude-internal consistency claim)
 
@@ -427,7 +427,7 @@ A weak circuit breaker beats none; pick an approximation threshold now and tune 
 - OPEN-033 (specialist-task turn-cap infrastructure) — same methodology.
 - Threshold decisions across C2A2 non-safety-critical layers: staleness, alert, retry caps.
 
-**Re-check due:** 2026-11-01 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with three operational conditions encoded as pre-ship checklist: conservative initial; instrumentation + tuning cadence; safety/financial/regulatory excluded)
 
@@ -489,7 +489,7 @@ Master-wiki narrative gaps are surfaced as gaps rather than fabricated; this pri
 
 **Applicable to:** Decisions and agents that depend on this premise; see provenance chain
 
-**Re-check due:** 2026-11-01 (Quarterly via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -520,7 +520,7 @@ Proposal-ID collisions are flagged-and-rolled-forward (collision-detection-with-
 
 **Applicable to:** Decisions and agents that depend on this premise; see provenance chain
 
-**Re-check due:** 2026-11-01 (Quarterly via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -555,7 +555,7 @@ PRS triplets are Tom's authorial re-description of traditions, not the tradition
 - Any document or downstream artifact that references PRS framings
 - Tied to ASSUMPTION-067 ground; relates to OPEN-037 Stump tension; structural to candidate DECISION-025
 
-**Re-check due:** 2026-11-01 (Quarterly via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md]
+**Re-check due:** 2027-02-07 (Quarterly via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE (with propagation caveat)
 
@@ -970,7 +970,7 @@ c2a2-self-awareness-daily missed 2 consecutive cycles on 2026-05-15 and 2026-05-
 
 **Applicable to:** OPEN-047; pipeline-reliability audit; substrate-decomposition cluster; pipeline-fault-classification protocol
 
-**Re-check due:** 2026-11-01 (Monthly) [re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-410 — caveats: time-box classification ahead of reversible fixes; severity-filter miss alerts (2026 alert-fatigue data)] [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+**Re-check due:** 2026-12-06 (Monthly) [re-confirmed ACTIVE by 15c 2026-07-06, DISPOSITION-410 — caveats: time-box classification ahead of reversible fixes; severity-filter miss alerts (2026 alert-fatigue data)] [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
 
 **Status:** ACTIVE
 
@@ -1889,7 +1889,7 @@ PREMISE-070:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — TOC caution that a stage where WIP shows can be downstream of the true constraint (review latency could be readiness- not throughput-driven). Folded as the scope guard: confirm review latency is capacity- not rework-limited.
   Confidence: Moderate
   Applicable to: proposal-review workflow design; intake/WIP policy; 15-pipeline and self-awareness intake cadence.
-  Re-check due: 2026-11-01 (Monthly; via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly; via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Rationale: SUPPORTED (Moderate) + only weak-moderate conditional challenge -> INCORPORATE with scope guard. Directly grounds workflow design and entails-against PRESUMPTION-372 (intake-as-progress -> REVISE-133): if review is the binding constraint, added intake is WIP, not progress. Consistency-checked vs PREMISE-001..069: no conflict.
 
@@ -1903,7 +1903,7 @@ PREMISE-071:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate): hubs maximize degree but often have LOW betweenness; the high-leverage integrators are bridge nodes (sometimes 'leaves'). Folded as the scope guard (select by bridging value, not degree).
   Confidence: Moderate
   Applicable to: graph-repair prioritization; sewing-agent reconnection policy; OPEN-088 seeding policy.
-  Re-check due: 2026-11-01 (Monthly; via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly; via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Rationale: Moderate support + only weak-moderate conditional challenge -> INCORPORATE with scope guard. Consistency-checked vs PREMISE-001..070: no conflict.
 
@@ -1916,7 +1916,7 @@ PREMISE-072:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak): skew magnitude unknown until recomputed (could be near-null if no collisions); the replacement resolver must itself be verified (routed to REVISE-139).
   Confidence: Moderate
   Applicable to: connectivity_log.csv weekly series; any connectivity/orphan metric; OPEN-087 recompute task.
-  Re-check due: 2026-11-01 (Monthly; via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly; via 15d) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Rationale: SUPPORTED principle + weak magnitude/boundary challenge -> INCORPORATE the measurement RULE. SCOPE GUARD (load-bearing): incorporates the principle that connectivity must be measured path-aware; does NOT certify the audit's own replacement resolver (uncross-checked self-trust -> PRESUMPTION-379/REVISE-139) and does NOT assert the skew magnitude (pending recompute). Same failure class as PREMISE-049/369/373; no conflict vs PREMISE-001..070.
 
@@ -2144,7 +2144,7 @@ PREMISE-089:
   Challenges noted: 15b (Weak/NO-CHALLENGE): no source disputes the claim; only refinement is that shared upstream schedulers create common-mode failure (captured in the Statement).
   Confidence: Moderate
   Applicable to: metabolism/heartbeat display, approval-axis dashboards, any multi-feed visualization. Complements PREMISE-086 (fail-loud / verify-completeness). Binds P-422 (per-axis as-of marking, REVISE-158) and P-421 (freshness watchdog, REVISE-157).
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-08-02; re-queued in for_lit_search.md] [re-checked by 15d 2026-10-04 (was due 2026-09-06); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-366
 
@@ -2236,7 +2236,7 @@ PREMISE-095:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — scoped to the wording, not the arithmetic: "structural" overstates if provisioning is variable. Folded into the Statement.
   Confidence: Moderate (QUEUED-EMPIRICAL residue: precise lambda/mu instrumentation still recommended)
   Applicable to: OPEN-115/OPEN-116 (cadence/cap decision); 15d re-trigger design; A-428/MONITOR-420 (deferral acceptability); A-430/MONITOR-423 (triage); run scheduling. Consistency: consonant with the validated human-review-capacity-as-binding-constraint premise; CONTRADICTS P-462 as held — dispositioned REVISE-195 rather than silently coexisting.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-09); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-09); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-431
 
@@ -2254,7 +2254,7 @@ PREMISE-096:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak) — cost/calibration only: a uniform mandate can impose verification cost disproportionate to risk and a perfunctory required check can masquerade as assurance (Knight & Leveson common-mode caveat). Folded in as the stakes-proportional + source-independence provisos.
   Confidence: High
   Applicable to: the verification-discipline family; watchdog output checks; capture pipeline; agents 15a/15b/15c; denominator/census reporting. THIS PREMISE IS THE PROPOSED TERMINATOR FOR SYSTEMIC-RISK #1 — it unifies REVISE-209 (denominators), REVISE-213 (tooling/replay), and REVISE-214 (captures/primary-text) under one rule.
-  Re-check due: 2026-10-16 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-16); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-473
 
@@ -2267,7 +2267,7 @@ PREMISE-097:
   Challenges noted: 15b NO-CHALLENGE-FOUND (None) — the honesty/scope-disclosure norm is uncontested.
   Confidence: High
   Applicable to: all monitoring/status reports from a bounded vantage; scheduler watchdog; self-awareness-pipeline coverage claims (pairs with MONITOR-443's coverage-ratio). Consistent with the verify-before-trust / fail-loud premise family. The specific scope fact (sandbox cannot enumerate host processes) remains a one-command empirical check.
-  Re-check due: 2026-10-16 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-16); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-481
 
@@ -2280,7 +2280,7 @@ PREMISE-098:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — perfect parity/hermeticity is unattainable (12-Factor concedes it; no studied Bazel project is fully hermetic), so the remedy is a TARGETED preflight on the named deltas, not a hermetic rebuild. Folded into the statement.
   Confidence: Moderate
   Applicable to: all scheduled/autonomous agents and regen scripts (metabolism, OpenStory writer, git-persistence, 14/15 pipelines). Complements the durability/fail-loud family and pairs with P-491 (artifact-binding) and the 2026-07-17 decoupled-from-ground-truth SYSTEMIC-RISK flag.
-  Re-check due: 2026-10-18 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-18); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-500
 
@@ -2297,7 +2297,7 @@ PREMISE-099:
   Challenges noted: see lit_search_results/against/ASSUMPTION-469_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
   Confidence: High
   Applicable to: Outbound artifact emission (Gmail drafts, reports, review pages); count-reporting paths; any known-error register in the system.
-  Re-check due: 2026-10-19 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-19); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-100:
@@ -2309,7 +2309,7 @@ PREMISE-100:
   Challenges noted: see lit_search_results/against/ASSUMPTION-472_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
   Confidence: High
   Applicable to: Scheduler watchdog; fleet health reporting; any agent self-report that renders a green state; the 36-task 'healthy' population.
-  Re-check due: 2026-10-19 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-19); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-101:
@@ -2321,7 +2321,7 @@ PREMISE-101:
   Challenges noted: see lit_search_results/against/PRESUMPTION-494_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
   Confidence: High
   Applicable to: Proposal counts, scheduled-task counts, PRS counts, failure counts; every agent report that states a quantity over a shared artifact; outbound communications quoting figures.
-  Re-check due: 2026-10-19 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-19); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-102:
@@ -2333,7 +2333,7 @@ PREMISE-102:
   Challenges noted: see lit_search_results/against/PRESUMPTION-495_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
   Confidence: High
   Applicable to: All EOD pipeline runs; the lit-search and self-awareness queues; the 29-proposal approval backlog; any agent convention of flagging in lieu of acting.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-19); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-19); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-103:
@@ -2345,7 +2345,7 @@ PREMISE-103:
   Challenges noted: see lit_search_results/against/PRESUMPTION-497_against.md (15b: NO-CHALLENGE-FOUND, None)
   Confidence: Moderate
   Applicable to: PRS candidate admission; all confidence labelling under blocked primary sources; REVISE-214 and ASSUMPTION-470 both depend on this premise.
-  Re-check due: 2026-10-19 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-19); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-104:
@@ -2357,7 +2357,7 @@ PREMISE-104:
   Challenges noted: see lit_search_results/against/PRESUMPTION-498_against.md (15b: PARTIALLY-CHALLENGED, Moderate)
   Confidence: Moderate
   Applicable to: assumptions.md, presumptions.md, for_lit_search.md, lit_search_returns.md, monitor_queue.md, watch_list.md; every agent that reads a registry whole.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-19); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-19); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Novelty note: 15a found no literature budgeting read cost for agents ingesting monolithic state files under a queryable-history constraint. Potential original contribution — carried to 15d.
 
@@ -2377,7 +2377,7 @@ PREMISE-105:
   Challenges noted: see lit_search_results/against/ASSUMPTION-474_against.md (15b: PARTIALLY-CHALLENGED, Moderate — remedy menu and the quotability of the numeric split)
   Confidence: Moderate
   Applicable to: The weekly vault census; any C2A2 series whose resolver or inclusion rule changes; health-metric selection for the knowledge graph; ASSUMPTION-481's four-week fallback-classification record, which has the same break problem in a different register.
-  Re-check due: 2026-10-20 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-20); re-queued in for_lit_search.md]
   Status: ACTIVE
   Independence note: 15a's CROSS-ITEM-NOTE (2026-07-20) records A-474/A-480/P-501/P-503 as partly non-independent readings of the same two 2026-07-19 events. This premise is incorporated on the strength of an independent literature (official statistics / Eurostat break-and-backcast practice), not on the event count. It is not to be read as one of four confirmations.
   PROVENANCE:
@@ -2402,7 +2402,7 @@ PREMISE-106:
   Challenges noted: see lit_search_results/against/ASSUMPTION-478_against.md (15b: PARTIALLY-CHALLENGED, Moderate — the stability claim is uncontradicted; challenged is the inference that the budget is the single lever)
   Confidence: High
   Applicable to: c2a2-lit-search-pipeline scheduling and budget; 15d re-trigger cadence; the 147-item standing backlog and the 7th-consecutive BACKLOG-FLAG in monitor_queue.md; any future EOD batch enqueued into this queue.
-  Re-check due: 2026-11-01 (Monthly — the queue state is live and moves weekly) [re-checked by 15d 2026-10-04 (was due 2026-08-20); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — the queue state is live and moves weekly) [re-checked by 15d 2026-10-04 (was due 2026-08-20); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Consistency note: This premise extends, and does not conflict with, the existing premise on the 15d weekly re-trigger queue (validated_premises.md, "structural-under-current-provisioning"). Both hold that arrival exceeds service and that the remedy space includes cadence, admission cap AND provisioning. A-478's phrasing implied the budget was the fault; that implication is explicitly NOT incorporated, per 15b.
   Novelty note: 15a raised a NOVELTY-FLAG on the item's second clause (the 30,000-token budget is inconsistent with the specified scope by ~6x). No literature was found on sizing a token budget against a declared agent scope, or on characteristic mismatch factors. The general form — "the resource budget and the specification were set by different processes and never reconciled" — may be an original contribution. That clause is NOT incorporated here; it is carried as a novelty item and is the load-bearing input to MONITOR-457 (PRESUMPTION-504), where the calibration-versus-norm-decay question is decided.
@@ -2428,7 +2428,7 @@ PREMISE-107:
   Challenges noted: see lit_search_results/against/ASSUMPTION-479_against.md (15b: PARTIALLY-CHALLENGED, Moderate — the cost of diagnosis, the boundary condition now folded in above, and the unaudited 7-of-12 self-count)
   Confidence: High (for the principle with its scope guard)
   Applicable to: The 14/15 self-awareness pipeline's remedy-proposal step; REVISE-231 (2026-07-19) and REVISE-236 (2026-07-20), both of which this premise grounds; every standing REVISE item carrying an unvalidated remedy; any intervention aimed at the review channel.
-  Re-check due: 2026-10-20 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-20); re-queued in for_lit_search.md]
   Status: ACTIVE
   Not incorporated: the item's "7 of 12" ratio. It is a self-count by the pipeline that authored all twelve items, with no published coding rule and no external adjudication, produced on the same day it discovered that its own summarizers report on themselves inaccurately (PREMISE-109). The pattern is validated; the count is not.
   PROVENANCE:
@@ -2453,7 +2453,7 @@ PREMISE-108:
   Challenges noted: see lit_search_results/against/PRESUMPTION-502_against.md (15b: PARTIALLY-CHALLENGED, Moderate — AHRQ grades SBAR low-certainty; only I-PASS reaches moderate and does so via receiver read-back; the best-supported effect is conditioned on a synchronous live receiver, which asynchronous file-mediated agent flagging does not provide; n=1 with no base rate)
   Confidence: Moderate
   Applicable to: Every cross-agent "flagged for X" in the record; the connector-health -> morning-system-health handoff; the cost-tracker gap; 14a/14b routing to 15a/15b/15c; 15d escalations to Tom; MONITOR-420's fired auto-escalate trigger, which is an instance of a flag that was raised seven consecutive times and never received.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-20); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-08-20); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Consistency note: This is the agent-to-agent generalisation of PREMISE-102 ("Fail-loud is an act of reporting, not an act of remediation") and does not conflict with it. PREMISE-102 covers the agent-to-human channel; PREMISE-108 covers agent-to-agent. Confidence is set one grade lower than PREMISE-102 because the in-house evidence is a single traced instance and the strong external evidence is from synchronous human teams, a transfer 15b showed to be unwarranted for the remedy even though the diagnosis carries.
   Base-rate obligation: the base rate is obtainable with no protocol change — enumerate the last thirty days of cross-agent flags and search each named recipient's subsequent output for the flagged content. It has not been obtained. This premise licenses the claim that transmission is not delivery; it does NOT license any claim about how often delivery fails.
@@ -2479,7 +2479,7 @@ PREMISE-109:
   Challenges noted: see lit_search_results/against/PRESUMPTION-503_against.md (15b: NO-CHALLENGE-FOUND to the claim — 15b searched specifically for evidence that aggregation layers can be assumed source-coupled and every retrieved source ran the other way; PARTIALLY-CHALLENGED, Weak, to the coverage-percentage remedy only, which is excluded above)
   Confidence: High
   Applicable to: The morning project-status summary and every outbound status artifact; morning system health; the connector-health weekly; any agent that renders a fleet-level green; unattended stretches, where the summary layer is the primary interface.
-  Re-check due: 2026-10-20 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-20); re-queued in for_lit_search.md]
   Status: ACTIVE
   Reconciliation basis: This is the only item in the batch meeting the provenance protocol's SUPPORTED + NO-CHALLENGE-FOUND row (protocol reconciliation table: SUPPORTED, High confidence). 15b's disconfirmatory search returning nothing against the claim is itself the strongest signal in the cohort.
   Consistency note: Extends PREMISE-100 (a liveness signal is not evidence of correctness; an inoperable check reports as passing). PREMISE-100 covers the check that cannot run; PREMISE-109 covers the summary that never looked. Complementary, no conflict.
@@ -2506,7 +2506,7 @@ PREMISE-110:
   Challenges noted: see lit_search_results/against/PRESUMPTION-505_against.md (15b: Weak against the claim — 15b searched disconfirmatorily and found no evidence detectors can be assumed to degrade gracefully; Moderate against the proposed test, PMC9228164 on common-mode blindness of discrepancy analysis, now folded in above as the scope guard)
   Confidence: High
   Applicable to: 15d cycle-count staleness detection (ASSUMPTION-476 / MONITOR-454); the scheduler watchdog; connector enumeration (ASSUMPTION-481 / REVISE-234); the vault census (PREMISE-105); every green signal in the fleet health report; any monitor added in response to any item in this batch.
-  Re-check due: 2026-10-20 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-20); re-queued in for_lit_search.md]
   Status: ACTIVE
   Consistency note: Generalises PREMISE-100 from "an inoperable check reports as passing" to "a monitor's pass state is systematically reachable while its subject is dead, and monitor/subject independence in this fleet is asserted rather than engineered." No conflict; PREMISE-110 is the stronger and more general form and PREMISE-100 remains ACTIVE as the specific case.
   Scope limit: 15a and 15b both note that one of the item's four cited instances (the vault census) is diagnosed by ASSUMPTION-474 in this same batch as a definitional-comparability problem rather than a detector inversion, and the two readings are not obviously compatible. This premise is incorporated on the strength of the fault-class literature and the three unambiguous absence-of-complaint cases; the four-instance count is not incorporated, and a census that miscounts is not the same defect as a detector that inverts.
@@ -2669,7 +2669,7 @@ PREMISE-122:
   Challenges noted: 15b found NO challenge to validity (None); the only pro-commensurability material — nested Markov blankets (Kirchhoff et al. 2018) and the FEP governor analogy — establishes side-by-side placement, not shared meaning of "boundary"/"control," which is what the presumption already grants.
   Confidence: High (SUPPORTED + NO-CHALLENGE-FOUND)
   Applicable to: FLAG-017 / ASSUMPTION-496 (gates its equivalence test); any future cross-tradition or cross-formalism "these two constructs are the same" claim (e.g. Levin<->Friston, control-theoretic<->free-energy, PRS<->other progress models). A general methodological gate for the connecting-meme program.
-  Re-check due: 2026-10-22 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-22); re-queued in for_lit_search.md]
   Status: ACTIVE
   NOTE: This premise is the mitigation named in ASSUMPTION-496's disposition (MONITOR-463). A-496's equivalence test is gated on satisfying (1)-(3) here first.
 
@@ -2695,7 +2695,7 @@ PREMISE-124:
   Challenges noted: NO-CHALLENGE-FOUND. Weak boundary only — a positive catch count is a non-zero lower bound on detection capability, and a dark channel MIGHT be low-relevance; neither can be established from inside the instrument, which is the premise's point.
   Confidence: High (SUPPORTED + NO-CHALLENGE-FOUND)
   Applicable to: The general form of REVISE-233 / MONITOR-464 (15a/15b correlation); agents 15a/15b/15c/15d self-reporting; the daily-run self-catch reporting; any "N caught / overlap / full-picture" claim in outbound artifacts. Complements PREMISE-111 and PREMISE-120 (independence family). Subordinated instances this run: MONITOR-469 (PRESUMPTION-520).
-  Re-check due: 2026-10-23 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-23); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-125:
@@ -2707,7 +2707,7 @@ PREMISE-125:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — correctly arbitrated redundancy is a well-established availability improvement (Raft/quorum leader-election); the observed degradation indicts the missing arbitration rule, not redundancy per se. This is incorporated as the premise's own arbitration condition, so the challenge scopes rather than refutes.
   Confidence: Moderate
   Applicable to: multi-connector / multi-extension delivery paths; any k-of-n redundancy added to the agent fleet; failover design; the two-Chrome-extension delivery incident specifically.
-  Re-check due: 2026-10-25 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-25); re-queued in for_lit_search.md]
   Status: ACTIVE
   OPEN MEASUREMENT NAMED AT VALIDATION: add a deterministic primary-selection rule (or pre-select one extension) and confirm unattended delivery resumes with BOTH extensions connected — isolating arbitration from redundancy (in-house test).
 
@@ -2720,7 +2720,7 @@ PREMISE-126:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak-Moderate) — a well-designed periodic re-check (ISO Year-3 recertification; a monitoring probe that re-runs) DOES re-exercise the assertion, so the defect is implementation-specific, not intrinsic to periodic review. Incorporated as the premise's "must re-compute" condition.
   Confidence: Moderate
   Applicable to: Agent 15d re-checks; every "ACTIVE, no change" re-stamp in validated_premises.md; any calendar-triggered re-validation in the fleet.
-  Re-check due: 2026-10-25 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-25); re-queued in for_lit_search.md]
   OPEN MEASUREMENT NAMED AT VALIDATION: inspect 15d's monthly re-check — does "ACTIVE, no change" carry a freshly recomputed figure or only an updated date? A date-only re-stamp confirms this premise directly (in-house test).
   Status: ACTIVE
 
@@ -2733,7 +2733,7 @@ PREMISE-127:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — cross-domain formalism transfer is a primary engine of discovery, and the FEP is offered as a general framework for any Markov-blanketed system (program+programmer as the joint system answers the referent objection). Incorporated as the premise's "provisional-adoption + scheduled structural test" condition, which scopes rather than refutes: the premise forbids treating the bridge as SETTLED on lexical grounds, not exploring it.
   Confidence: Moderate
   Applicable to: every CROSS adoption of a cross-tradition/cross-program bridge (Master agent; cross_program_index.md); the displacement-vector / analogy machinery (ASSUMPTION-009/010); the specific Wolfram×Friston "bug↔free-energy" bridge (held as open measurement below).
-  Re-check due: 2026-10-26 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-26); re-queued in for_lit_search.md]
   OPEN MEASUREMENT NAMED AT VALIDATION: for the Wolfram×Friston bridge, attempt the explicit mapping spec⇒generative-model, intent⇒boundary-condition, bug⇒high-surprise-state and check whether the FEP's core relations survive; if only the labels survive, the bridge is linguistic and must not be CROSS-adopted (research-question in-house test).
   Status: ACTIVE
 
@@ -2746,7 +2746,7 @@ PREMISE-128:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Weak) — severity/priority triage legitimately deprioritizes bounded-blast-radius bugs. Incorporated as a boundary: triage REQUIRES a known blast radius, which a silent record-corrupting defect denies; so the challenge prescribes "measure/bound first," not "certify benign." Weak against this specific claim.
   Confidence: Moderate
   Applicable to: the review tool (generate_review_page.py) and every disposition-record writer; any pipeline stage that writes records with no error path; audit-trail trust assumptions fleet-wide. Complements PREMISE-005/006 (surface degraded state; don't reconcile silently) and PREMISE-124/126 (self-measurement calibration; recency≠reconfirmation).
-  Re-check due: 2026-10-26 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-26); re-queued in for_lit_search.md]
   OPEN MEASUREMENT NAMED AT VALIDATION: run the in-house reconciliation of the 07-20 event (ASSUMPTION-535) — count recorded dispositions against source proposals and search for the 7 phantom IDs / 2 dropped proposals; a clean reconciliation bounds this instance, a mismatch confirms realized cross-cycle corruption.
   Status: ACTIVE
 
@@ -2760,7 +2760,7 @@ PREMISE-129:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — with a verifier in the loop, a stated verdict backed by a checkable derivation CAN settle the question, and many identities are trivially checkable. Incorporated as the premise's "attach a checker" condition, which scopes (require derivation + independent check) rather than refutes.
   Confidence: Moderate
   Applicable to: the CROSS-question "decidability" procedure; Master agent / cross_program_index CROSS adoption; any step adopting a formal claim on an agent's stated verdict. Coheres with PREMISE-049 (verify-before-trust) and PREMISE-124 (external referent), specialized to formal-identity claims.
-  Re-check due: 2026-10-27 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-27); re-queued in for_lit_search.md]
   OPEN MEASUREMENT NAMED AT VALIDATION: attach a proof-obligation field to the CROSS-decidability step and check whether any candidate (e.g., friston_hoffman) was adopted as CROSS on a bare verdict with no derivation; a bare-verdict adoption confirms the premise's necessity (in-house).
   Status: ACTIVE
 
@@ -2773,7 +2773,7 @@ PREMISE-130:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — most modules hold zero faults, so clustering is a prior about WHERE to look, not a proof that any particular trio shares one cause; and the implied unify-the-layers remedy risks the wrong-abstraction cost in a module already under three-incident stress. Both points are folded in as the scope guard rather than rejected.
   Confidence: Moderate
   Applicable to: generate_review_page.py and the review-page toolchain (ASSUMPTION-550/551); the incident-logging convention generally — any component with >=3 logged incidents; couples PREMISE-066 (SSOT) for the remedy question.
-  Re-check due: 2026-10-28 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-28); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-131:
@@ -2785,7 +2785,7 @@ PREMISE-131:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — the challenge targets the IMPLIED REMEDY (a confirmation interlock), not the claim; it is incorporated as the third clause. 15b also independently confirms via C-HIP that the failing stage is delivery. The two directions CONVERGE on the same conclusion: disable the page rather than warn about it.
   Confidence: High (both search directions converge; three named external referents; remedy is cheap and in-house)
   Applicable to: the defective review page reachable from review_log.html (ASSUMPTION-550); any destructive-write tool guarded by notice or confirmation only; the sync/notification channel dark for 5 consecutive runs (ASSUMPTION-559 / OPEN-135) — any mitigation routed over it must be scored as zero until delivery is restored.
-  Re-check due: 2026-10-28 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-28); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-132:
@@ -2797,7 +2797,7 @@ PREMISE-132:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — over-reading defers all citation assurance to an arbiter unavailable for 5 dark syncs when a cheap decorrelated internal check exists today. Incorporated as the second clause. Residual risk noted: a decorrelated check within one model family is not independent in the strong sense (MONITOR-486), so it lowers risk without discharging it.
   Confidence: Moderate
   Applicable to: PREMISE-127/128/129's external-referent audit (MONITOR-485/486, ASSUMPTION-553/558); the standing external-referent requirement of PREMISE-124; every "externally anchored" annotation in 15a returns, including this batch's. IMMEDIATE APPLICATION: the phrase "virtual governor" attributed to Levin was NOT confirmed against the primary text in this run's search (MONITOR-487) — an in-batch instance of exactly this premise.
-  Re-check due: 2026-10-28 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-28); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-133:
@@ -2809,7 +2809,7 @@ PREMISE-133:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — establishes the asymmetry positively (Chow; El-Yaniv & Wiener) and argues from Tarski-style undefinability that unadoptability follows from self-reference rather than from 15c's choice. NOT RESOLVED HERE, and the distinction is consequential: if that argument holds, a NAMED ADJUDICATOR INSIDE the system is unreachable in principle, not merely unmet this run — which does not weaken requirement (b) but does determine that it can only be satisfied by an adjudicator OUTSIDE the system (Tom, or a model with no access to the corpus). REVISE-247 is written accordingly. Carried as an open question rather than assumed away. Both directions nevertheless CONVERGE on the surviving clause: suspension is defensible only if it keeps the question open with a specified escalation route. Recorded honestly: this premise binds 15c itself, and 15c adopted it rather than abstaining a second time. That adoption AVERTS THE FAILURE MODE PRESUMPTION-560 PREDICTED (a second abstention would have made the item unadoptable by construction); it does NOT satisfy (a)/(b)/(c) above, which remain unmet — see the fail-loud note and REVISE-247. The word "discharge" is reserved throughout for (a)/(b)/(c). The concrete unmet need (no arbiter or discharge rule exists for MONITOR-486) is NOT resolved here and is raised as REVISE-247.
   Confidence: Moderate
   Applicable to: DIRECTLY (within the Statement's scope — suspensions issued on self-referential grounds): 15c disposition practice; MONITOR-486 / PRESUMPTION-556. BY ANALOGY ONLY, NOT LICENSED BY THIS PREMISE: the ~174-item 15d re-trigger backlog and the MONITOR-420/423 fired-trigger cohort exhibit the same outcome (suspension becoming non-adoption by default) but are backlog/expiry artifacts, not self-referential suspensions; they need their own grounds and are covered by DISPOSITION-536 / PRESUMPTION-553 and MONITOR-423. Complements PREMISE-124.
-  Re-check due: 2026-10-28 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-28); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-134:
@@ -2822,7 +2822,7 @@ PREMISE-134:
   CORRELATION DISCLOSURE (per PREMISE-124 / MONITOR-486): this premise is an EXTENSION of PREMISE-127, not an independent finding, and rests on the SAME primary source as PREMISE-127 (Gentner 1983), and PREMISE-127 additionally cites Gentner & Markman 1997, which 15b also relies on this run. Its increment over PREMISE-127 is the reflexive scope only. It should not be counted as independent corroboration of PREMISE-127.
   Confidence: Moderate
   Applicable to: any CROSS entry deriving from the Levin virtual-governor / tradition mapping (ASSUMPTION-557; gated pending MONITOR-487); the project's self-description layer generally; Master agent / cross_program_index.md; extends PREMISE-127; instance of the same reflexive-application gap as REVISE-246 (PREMISE-124 not applied to itself) and REVISE-245 (PREMISE-123 propagation).
-  Re-check due: 2026-10-28 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-28); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-135:
@@ -2834,7 +2834,7 @@ PREMISE-135:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — and the challenge is load-bearing rather than incidental: it REFUTES the source item's central inference, which is why the scope guard above is part of the statement and the parity reading is explicitly excluded. 15b's remaining point, that over-reading produces a regress in which no correction can be banked and the moral self-undermines, is answered by the symmetry clause: the requirement is to name the population and test out of sample, not to withhold adoption pending an unattainable certificate. 15a's own caveat (a) cuts the same way and is recorded: on a material theory a well-chosen background fact warrants a strong induction from very few instances, so if the fact underwriting "every page kind in this system renders its state through a controls region" can be stated, n=3 is ample and the abstraction is terminal in the only sense available. The literature supports "the induction is unwarranted as stated," NOT "the conclusion is wrong."
   Confidence: Moderate
   Applicable to: the prs_3d / roster-reader "read the controls" abstraction and any successor abstraction that supersedes it; any diagnosis in the incident record declared general after superseding earlier general cases; 14b's own presumption-construction, which must apply the symmetry clause to its own replacements; couples PREMISE-101 (counts are properties of a stated (scope, method, time) reading) by extending the same discipline from counting to generalising.
-  Re-check due: 2026-10-29 (Quarterly)
+  Re-check due: 2027-02-07 (Quarterly) [re-checked by 15d 2026-11-01 (was due 2026-10-29); re-queued in for_lit_search.md]
   OPEN MEASUREMENT NAMED AT VALIDATION: enumerate the remaining page kinds the roster reader must handle. For each, record IN ADVANCE what "read the controls" predicts, then check. Correct prediction on kinds absent from the original four failures -> the parity claim is refuted and the abstraction has passed a severe test. Failure on a kind whose controls are absent, virtual, or rendered elsewhere -> the abstraction is fitted rather than general and the worst-covered instance has been located. Cheap third diagnostic, worth running FIRST: check whether the four superseded abstractions were each falsified by a DIFFERENT kind of counterexample or by variations on one kind — genuine eliminative convergence requires the former, and the latter would show the series narrowing within a single reference class and would substantially strengthen the original presumption. All three are in-house tests.
   PROVENANCE:
     Origin: 14b
@@ -2921,7 +2921,7 @@ PREMISE-138:
   Applicable to: Agent 15b SYSTEMIC-RISK-FLAG delivery; the lit-pipeline and 14a/14b run footers;
     revision_flags.md as a channel; MONITOR-420's auto-escalate; any agent that raises a flag it
     cannot itself act on.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-02); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-02); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-139:
@@ -2963,7 +2963,7 @@ PREMISE-139:
   Applicable to: every "checks performed" line in the 14a/14b and 15a/15b/15c run footers;
     REFRESH_STATUS.md; the nightly verification suites; PREMISE-137's mutation-validation
     requirement, which this premise supplies the motive for.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-02); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-02); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-140:
@@ -3000,7 +3000,7 @@ PREMISE-140:
   Applicable to: the daily 14a/14b intake footers; the autonomy-day counter wherever it appears;
     PRS yield-per-tradition figures; any count over `wiki/` mtimes; the systemic-risk flag's
     central inference, which currently rests on the autonomy count.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-02); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-02); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-141:
@@ -3077,7 +3077,7 @@ PREMISE-141:
     watchdog's placement; the daily health report's run-outcome section; PREMISE-086's alarm
     implementation; any reliability, streak or coverage figure computed over runs; the redundancy
     argument in PREMISE-142.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-05); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-05); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3165,7 +3165,7 @@ PREMISE-142:
     output; the run-verified counts in the daily report; any agent asserting the state of another
     agent; the 14a/14b/15a/15b/15c/15d run footers; streak and autonomy metrics that consume a
     green status line (interlocks with PREMISE-140).
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-05); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-05); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3264,7 +3264,7 @@ PREMISE-143:
     counts wherever they appear in run footers or health reports; the twice-failing false-positive
     sweep and its prior accepted outputs; PREMISE-118's outstanding retrospective-assessment
     obligation; the correction records issued on 2026-08-04, none of which was reviewed.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-05); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-05); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3386,7 +3386,7 @@ PREMISE-144:
     and whether detection was internal or external. If (i) is large and every entry in (iii) is
     "external," the class claim is confirmed in-system and clause (5)'s representation problem
     becomes the next question. NOT RUN this session.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3510,7 +3510,7 @@ PREMISE-145:
     the bandwagon signature; (iii) for every instance where a run withheld its own figure citing an
     instrument fault, check whether the fault was documented BEFORE or AFTER the disagreement was
     observed. NOT RUN this session.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3658,7 +3658,7 @@ PREMISE-146:
     class (i) dominating quantifies the misattribution; no change across all disclosures confirms
     there is no feedback channel and the disclosures are ritual in the normalisation sense. NOT RUN
     this session.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3801,7 +3801,7 @@ PREMISE-147:
     is confirmed exactly and the Goodhart risk is live. (iii) Check whether any item has been in the
     queue longer than the oldest item was when the queue stood at 34 — if so the growth is not
     turnover, it is sedimentation. NOT RUN this session.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3939,7 +3939,7 @@ PREMISE-148:
     machinery-directed or content-directed to confirm the ~1,460-to-few ratio, then compute the same
     ratio for ERRORS ACTUALLY FOUND — if machinery audits find errors at a far lower rate per item
     than the content sample, audit effort is demonstrably misallocated. NOT RUN this session.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.] [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -4062,7 +4062,7 @@ PREMISE-150:
   Applicable to: every QC/fidelity/detector metric in this system, including the janitor and
     fidelity_check.py; and to any future claim that a batch "passed".
   Operational consequence: adequacy claims require SEEDED defects, not observed pass rates.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-10); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-10); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-151:
@@ -4085,7 +4085,7 @@ PREMISE-151:
     cost — is supported but is a separate claim, and is NOT incorporated here.
   Reflexive note, per the premise itself: THIS RUN discloses a token-budget breach and an independence
     limitation. Under PREMISE-151 those disclosures do not make the conditions managed.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-10); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-10); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-152:
@@ -4108,7 +4108,7 @@ PREMISE-152:
     proposal to add debate rounds.
   OPEN and NOT settled by this premise: whether C2A2's tradition ensemble is in fact heterogeneous and
     guided in the sense the literature means. Carried at MONITOR-512.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-10); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-10); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
   Consistency check performed against this register: NO CONTRADICTIONS FOUND. PREMISE-152 is the first
@@ -4169,7 +4169,7 @@ PREMISE-153:
     days earlier.
   OPEN and NOT settled by this premise: whether the 191 paths named in the originating item are in
     fact on ephemeral storage. Carried at MONITOR-520.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-12); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-12); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
   Consistency check performed against this register: NO CONTRADICTIONS FOUND, but SIX NEAR-DUPLICATES
@@ -4280,7 +4280,7 @@ PREMISE-154:
     those, the fraction whose condition has already changed. Statable conditions present and few
     changed -> the remedy is annotation and this premise is cheap to satisfy. Conditions largely
     absent -> the placement defect is confirmed directly. In-house, bounded.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-155:
@@ -4337,7 +4337,7 @@ PREMISE-155:
     resolve to different files — is already queued as ASSUMPTION-1024 in the same 2026-08-12 intake.
     It is not re-queued as a MONITOR. Answering it confirms or refutes the incident; it does not bear
     on the premise, which is architectural.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-156:
@@ -4475,7 +4475,7 @@ PREMISE-157:
     the useful measurement is WHEN, which localises the failure to a run rather than to a policy. Run
     the same test on the last twenty changes that produced no DECISION; that fraction is the real size
     of the gap and is almost certainly far smaller than "every change requiring no new tooling."
-  Re-check due: 2026-11-01 (Monthly — monthly rather than quarterly because the sequencing condition [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — monthly rather than quarterly because the sequencing condition [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
     above depends on the unresolved state of REVISE-323)
   Status: ACTIVE
 
@@ -4552,7 +4552,7 @@ PREMISE-158:
     claims — a COUPLING between directional remedies — and is worth pursuing on its own terms. Note
     per PREMISE-140/777 that the counts "four" and "four" are unmarked agent self-reports; nothing
     above depends on the numbers, only on the opposite polarity of the two findings.
-  Re-check due: 2026-11-01 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-10-04 (was due 2026-09-13); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
   Consistency check performed against this register for all five: NO CONTRADICTIONS FOUND. ONE TENSION
@@ -4623,7 +4623,7 @@ PREMISE-159:
     service rate as ZERO, which is blockage, not starvation. Aging must NOT be recommended here.
     (c) 15a's sources for sensor self-diagnostics are patent- and trade-grade; the standards line is the
     load-bearing one.
-  Re-check due: 2026-11-01 (Monthly — instrument-directed premises are re-checked monthly per 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-14); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — instrument-directed premises are re-checked monthly per 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-14); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-160:
@@ -4759,7 +4759,7 @@ PREMISE-162:
   CHEAPEST REMEDY, both directions converge: SEEDED DEFECTS — the only residual-defect estimator that
     works with a single auditor. Second choice, one independent reader working ALONE (not in a meeting),
     whose overlap with the self-audit would produce this project's first capture-recapture estimate.
-  Re-check due: 2026-11-01 (Monthly — the quantitative half is expected to move) [re-checked by 15d 2026-10-04 (was due 2026-09-14); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — the quantitative half is expected to move) [re-checked by 15d 2026-10-04 (was due 2026-09-14); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-163:
@@ -5722,7 +5722,7 @@ PREMISE-179:
   Confidence: Moderate
   Applicable to: for_lit_search.md intake accounting; every backlog figure this pipeline reports; any
     regex-defined reader used as a coordination interface between agents.
-  Re-check due: 2026-11-01 (Monthly, 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-19); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly, 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-19); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Filed from: lit_search_results/for/ASSUMPTION-1149_for.md and against/ASSUMPTION-1149_against.md
   Related: G1 systemic flag; REVISE-362 (PRESUMPTION-841, absence-recording).
@@ -5762,7 +5762,7 @@ PREMISE-180:
     ("evidential weight of agreement scales with formational INDEPENDENCE; same-formation agreement is
     redundant-but-real signal — a smaller effective N — NOT near-chance noise"). That premise already
     carries the discount-not-nullity correction. No existing premise contradicted or overwritten.
-  Re-check due: 2026-11-01 (Monthly, 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-19); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly, 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-19); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Filed from: lit_search_results/for/ASSUMPTION-1150_for.md and against/ASSUMPTION-1150_against.md
   Related: REVISE-350; G3 systemic flag; PREMISE at ASSUMPTION-294.
@@ -5795,7 +5795,7 @@ PREMISE-181:
   Confidence: Moderate
   Applicable to: every agent script redirecting to a fixed /tmp path; fidelity_check.py and its class —
     this EXTENDS PREMISE minted from ASSUMPTION-1126 (2026-08-18) from one script to the general case.
-  Re-check due: 2026-11-01 (Monthly, 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-19); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly, 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-19); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Filed from: lit_search_results/for/ASSUMPTION-1152_for.md and against/ASSUMPTION-1152_against.md
   Related: REVISE-359 (PRESUMPTION-837, path-as-identity — the deeper form of the same defect);
@@ -6145,7 +6145,7 @@ PREMISE-183:
     MONITOR entries do, as a demonstration); any agent that files rather than fixes; the 97-item-
     day case, where a standing rule that a fix below a cost threshold is APPLIED rather than filed
     would dissolve the class entirely.
-  Re-check due: 2026-10-24
+  Re-check due: 2027-02-07 [re-checked by 15d 2026-11-01 (was due 2026-10-24); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 --------------------------------------------------------------------------------
@@ -6637,7 +6637,7 @@ PREMISE-187:
     readers) and the correlated-input premise at validated_premises ~4360 (a downstream check is
     structurally blind to an upstream fault); does not contradict any existing premise located in
     the consistency pass.
-  Re-check due: 2026-11-01 (Monthly — held short because the excluded limb is moving fast) [re-checked by 15d 2026-10-04 (was due 2026-09-28); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — held short because the excluded limb is moving fast) [re-checked by 15d 2026-10-04 (was due 2026-09-28); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-188:
@@ -6821,7 +6821,7 @@ PREMISE-193:
   Applicable to:
     Phase 0 and all agent intake channels; ASSUMPTION-492/PRESUMPTION-515; monitor design generally;
       relates to open systemic-risk flags G1 and G2.
-  Re-check due: 2026-11-01 (Monthly via 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-30); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly via 15d) [re-checked by 15d 2026-10-04 (was due 2026-09-30); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-862 · Evidence grade: snippet-level only
 
@@ -6894,7 +6894,7 @@ PREMISE-195:
     legitimately change every run a naive checksum baseline alarms constantly. The transfer requires design
     work the sources do not supply. See REVISE-417 for the specific proposal (per-run manifest + diff).
   Applicable to: all register writes; the daily/weekly scheduled agents; any run that reports success.
-  Re-check due: 2026-11-01 (Monthly — elevated cadence; this is the estate's highest-rated open risk) [re-checked by 15d 2026-10-04 (was due 2026-09-30); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — elevated cadence; this is the estate's highest-rated open risk) [re-checked by 15d 2026-10-04 (was due 2026-09-30); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-196:
@@ -6921,7 +6921,7 @@ PREMISE-196:
     nothing about whether the boundary is drawable, which is PRESUMPTION-902 (CHALLENGED Strong, REVISE-420).
   Applicable to: agent tool-grant design estate-wide; ASSUMPTION-1235's remedy (REVISE-419); scheduled-agent
     configuration for Agents 15d and 16.
-  Re-check due: 2026-11-01 (Monthly — flagged for 15d because the sourcing is thin and recent; if [re-checked by 15d 2026-10-04 (was due 2026-09-30); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly — flagged for 15d because the sourcing is thin and recent; if [re-checked by 15d 2026-10-04 (was due 2026-09-30); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
     arXiv:2605.18414 fails verification, drop confidence to Weak and re-open)
   Status: ACTIVE
 
@@ -7039,7 +7039,7 @@ PREMISE-198:
     environments BioShocking compromised, and LayerX reports that Anthropic's patch to the Claude
     extension did not hold. This premise is not a precaution against a modelled risk; it is the
     standing posture for a demonstrated one.
-  Re-check due: 2026-11-01 (Monthly - justified by the pace of change in this literature, which [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md]
+  Re-check due: 2026-12-06 (Monthly - justified by the pace of change in this literature, which [re-checked by 15d 2026-10-04 (was due 2026-10-04); re-queued in for_lit_search.md] [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
     rendered the April-2026 baseline materially out of date within four months, NOT by weakness in
     the premise)
   Status: ACTIVE
@@ -7127,7 +7127,7 @@ PREMISE-199:
     negative fixture derived from the guard's STATED PURPOSE without reading its implementation, and run
     it. The fraction that fail is the escape rate the pair missed. Above ~10% the pair is a wiring check,
     not an adoption gate.
-  Re-check due: 2026-10-08 (Monthly)
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-11-01 (was due 2026-10-08); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-913
 
@@ -7205,7 +7205,7 @@ PREMISE-200:
     vault now and again after the next daily run; compare (a) mtime-changed, (b) hash-changed, (c) their
     intersection. |a \ b| / |a| is the false-positive rate of every "Changes Detected" line the changelog
     has printed. Run it against the 09-07 22:00 batch specifically using any pre-batch snapshot.
-  Re-check due: 2026-10-08 (Monthly)
+  Re-check due: 2026-12-06 (Monthly) [re-checked by 15d 2026-11-01 (was due 2026-10-08); re-queued in for_lit_search.md]
   Status: ACTIVE
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-914
 
@@ -7338,7 +7338,7 @@ PREMISE-202:
   Applicable to: ASSUMPTION-1294 and the class of unguarded destructive operations (see REVISE-446);
     14b's intake criteria; any future incident-rate claim made by this estate; PREMISE-195's in-house
     series.
-  Re-check due: 2026-10-10 (Monthly — elevated from the default because a live exposure is attached).
+  Re-check due: 2026-12-06 (Monthly — elevated from the default because a live exposure is attached). [re-checked by 15d 2026-11-01 (was due 2026-10-10); re-queued in for_lit_search.md]
   Status: ACTIVE
 
 PREMISE-203:
@@ -7396,7 +7396,7 @@ PREMISE-203:
   Applicable to: the morning report and every spoken or chat-delivered status summary; PREMISE-109's
     health-claim rule, which this extends to speech; PREMISE-194 and PREMISE-195, whose channel scope
     this settles; any agent terminal report.
-  Re-check due: 2026-10-10 (Monthly — matching PREMISE-195's elevated cadence, with which it is jointly
+  Re-check due: 2026-12-06 (Monthly — matching PREMISE-195's elevated cadence, with which it is jointly [re-checked by 15d 2026-11-01 (was due 2026-10-10); re-queued in for_lit_search.md]
     re-triggered).
   Status: ACTIVE
 
@@ -7619,7 +7619,7 @@ PREMISE-205:
   Applicable to: Agents 14a and 14b (intake schema); Agents 15a, 15b and 15c (every item received
     carrying a pre-check claim); `for_lit_search.md`; every standing "no covering premise found" claim
     in the queue, all of which are uncalibrated until re-run under clause (3).
-  Re-check due: 2026-10-14 (Monthly — the rate is expected to move quickly once the schema changes, and
+  Re-check due: 2026-12-06 (Monthly — the rate is expected to move quickly once the schema changes, and [re-checked by 15d 2026-11-01 (was due 2026-10-14); re-queued in for_lit_search.md]
     a premise about an instrument should be re-checked as soon as the instrument is altered)
   Status: ACTIVE
 
@@ -7913,7 +7913,7 @@ PREMISE-216:
   Confidence: Moderate
   Applicable to: 15a/15b design; REVISE-483; PREMISE-004 as applied to this pipeline; any same-model
     reviewer/QC pair.
-  Re-check due: 2026-10-23 (Monthly — structural to the pipeline)
+  Re-check due: 2026-12-06 (Monthly — structural to the pipeline) [re-checked by 15d 2026-11-01 (was due 2026-10-23); re-queued in for_lit_search.md]
   Status: ACTIVE
   Consistency flag: in tension with PREMISE-004's use for 15a/15b convergence. Not overwritten; flagged
     with REVISE-483 for Tom.
@@ -8042,7 +8042,7 @@ PREMISE-223:
   Confidence: Moderate
   Applicable to: nightly-run absence/"none found" claims; MONITOR-602 limb A (discharged by this premise);
     the hand-check backlog generated by scope-wide re-opening.
-  Re-check due: 2026-11-01 (15d monthly cohort)
+  Re-check due: 2027-02-07 (15d monthly cohort) [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Consistency: compatible with PREMISE-174 (TMS belief, withdrawal by supersession); no contradiction found.
   PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c → 15d → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED
@@ -8175,7 +8175,7 @@ PREMISE-229:
   Challenges noted: Lykouris & Weng arXiv:2402.12237 [abstract] (review delay is endogenous to admission; the control belongs upstream); M/M/1+M reneging results arXiv:1903.06870 [search-result; 15b's inference] (silent loss, not unbounded depth); Parasuraman & Manzey 2010 Hum Factors [abstract summaries] and Skitka et al. 1999 [figures second-hand] ("reviewer present" is not itself safe). Folded in as the scope guard. No source measures an agent-to-human escalation queue directly; all support is analogical.
   Confidence: Moderate
   Applicable to: every "the hold is yours" / AWAITING TOM path; revision_flags.md intake; MONITOR entries that "need Tom" (e.g. MONITOR-688/OPEN-208, MONITOR-629, -669, -670); REVISE-516 (uptake line), REVISE-517 (deferred check = NOT-DONE); OPEN-259; PREMISE-183 (a filed flag is a live obligation).
-  Re-check due: 2026-11-01 (Monthly; via 15d)
+  Re-check due: 2026-12-06 (Monthly; via 15d) [re-checked by 15d 2026-11-01 (was due 2026-11-01); re-queued in for_lit_search.md]
   Status: ACTIVE
   Consistency: checked against PREMISE-183, PREMISE-165 (wait-and-escalate on absence), PREMISE-100, REVISE-516, REVISE-517. No contradiction. It generalises PREMISE-165's "escalate on absence" to the case where the escalation target is itself absent.
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c → 15d → 15a, 15b (re-trigger cycle 1) → 15c] | Original item: PRESUMPTION-1101 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: INCORPORATED (supersedes MONITOR-636)

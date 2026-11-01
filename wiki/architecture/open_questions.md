@@ -3880,3 +3880,16 @@ OPEN-283:
     Original item: OPEN-283
     Item type: OPEN QUESTION
     Current status: OPEN
+
+
+OPEN-284:
+  Raised: 2026-10-31 by 14a/14b (ASSUMPTION-2001; PRESUMPTION-1205)
+  Question: For the print-QC findings (Gillingham-not-Wright PRS-16/17/18, Bennett-not-Hoffman PRS-13, the unconfirmable Levin-Kastrup 12 May dialogue, merged-episode records, discovery dates used as event dates): are the live vault registers corrected, and when (before or after ACPA)? Where is the record of which corrections exist in print annotations only, in the live registers only, or both, and who re-checks the CROSS/FINDING entries that cite the affected PRS records?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-284
+    Item type: OPEN QUESTION
+    Current status: OPEN

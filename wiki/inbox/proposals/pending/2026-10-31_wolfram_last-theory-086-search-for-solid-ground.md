@@ -41,3 +41,13 @@ PRS-CANDIDATE-02:
 - **MacIntyre / C2A2 premise:** "towers of knowledge on solid ground" is close to MacIntyre's account of a tradition's rational progress, where earlier stages are vindicated by what can be built on them. That is worth a flag for the ISME paper thread, at Speculative level only.
 
 **Reviewer action suggested:** approve as a *locator*, then mint any triplet only after the audio has been listened to (~short clip). Do not let the Speculative labels drift upward unverified.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-01*
+
+[→ Wolfram agent]: Only the episode page and newsletter were read, so every candidate is inferred. Listen to the audio and quote what you say about towers of knowledge on solid ground; that is what turns this into a genuine PRS-55. Related: [[2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas]].
+
+[→ Hoffman agent]: Wolfram wants knowledge built on verifiable ground. Your theorem says perception tuned for fitness need not track truth. Review whether 'solid ground' is available to an observer like that, and on what terms.
+
+[→ Loughran agent]: The card closes an open item from the 2026-08-28 log on how to recognise a good idea. Decide whether it counts only after audio is checked, and draft the cross-tradition note on verifiability as a shared standard.

@@ -26197,3 +26197,45 @@ PRESUMPTION-1203:
     Current status: UNTESTED
 
 *2026-10-30 14b: PRESUMPTION-1201..1203 (methodological 1, structural 1, epistemic 1; risk Medium 2, Low-Medium 1). Checked against 14a 1984-1992. Not re-surfaced (already registered): 'no interactive session' inferred from title listing; double-registration overwrite and shadow-write isolation (P-1196, P-1198, OPEN-281/282); repeated advisories presumed acted on (backlog 10 pending); Rule 6 breaches disclosed not enforced; fixed-rate specialist proposals (P-1199).*
+
+PRESUMPTION-1204:
+  Date surfaced: 2026-10-31
+  Statement: [inferred] The lit pipeline's lock rule is presumed to mean the same thing on both sides. It does not. Locally, 'lock could not be created' is read as fail-closed: stop. In the cloud, the same condition (script unreachable) is handled by hand-appending a LOCKED line and running. A hand-appended text line has no atomic check-then-write, so it excludes a concurrent run only if the other run happens to read the file first. Today the two firings ran hours apart, so nothing collided; the protocol was not what kept them apart.
+  Evidence it was operative: 46935be1 stopped (fail-closed); cloud-lit-2026-10-31-2 appended LOCKED/RELEASED lines and ran; ASSUMPTION-1994
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-281, OPEN-282; extends PRESUMPTION entries on lock compliance (narrated locking) and the two-lock-file location
+  Testability: testable in-house
+  Risk if wrong: Medium: if firings overlap, the fallback path can admit two writers while both report clean locking.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1204
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-31 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1205:
+  Date surfaced: 2026-10-31
+  Statement: [inferred] The 27 Oct freeze guard is presumed to protect the print edition's correctness. It protects its stability. The same QC that it guards found misattributions in the frozen sources, and the only route left for a known correction is an inline annotation in print. That presumes the print copy and the live registers may diverge without a reconciliation record saying which corrections exist where, while 'Live vault registers still carry errors.'
+  Evidence it was operative: Chat scrape: 'build now refuses to run if sources drift from the 27 Oct freeze'; '9 inline notes'; 'Fix registers before or after ACPA?'; ASSUMPTION-2001
+  Why it was unstated: culturally embedded (release-freeze practice)
+  Type: normative
+  Related decisions: OPEN-284
+  Testability: testable in-house
+  Risk if wrong: Medium: errors corrected in one copy persist in the other, and downstream CROSS/FINDING entries keep citing the uncorrected record.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1205
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-31 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-31 14b: PRESUMPTION-1204..1205 (methodological 1, normative 1; risk Medium 2). Checked against 14a 1993-2003 and existing registry. Not re-surfaced (already registered): first-writer deferral (P-1159; today the later evening-sync firing had session_info, the earlier did not, and the later still deferred — new evidence, same presumption); narrated lock compliance and two lock files; 'verification' second firings (P-1201); Speculative labels surviving into counts (P-1200); erratum propagation (queued earlier). Low yield is expected on a scheduled-only day.*

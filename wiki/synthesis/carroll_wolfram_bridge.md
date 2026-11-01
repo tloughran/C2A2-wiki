@@ -83,3 +83,17 @@ The Big Think "The Well" interview is Wolfram's most integrative public statemen
 **Open question the wiki cannot yet answer:** Can biosphere simplification be measured as loss of computational capacity?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-23_carroll_mindscape-371-harper-last-animal]]
+
+
+## Computation hosted by matter
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/2026-10-30_carroll_mindscape-372-winfree-dna-computing.md` (0 backlinks).
+
+**Why it sits here:** Carroll's levels-of-description view and Wolfram's computational universe meet in Winfree's DNA tile systems.
+
+**Synthesis claim.** Computation is substrate-general and real at its own level, and DNA tiling is an engineered existence proof.
+
+**Open question the wiki cannot yet answer:** Is there a physical limit that separates designed from evolved computation in matter?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-30_carroll_mindscape-372-winfree-dna-computing]]

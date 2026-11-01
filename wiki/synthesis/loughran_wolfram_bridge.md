@@ -84,3 +84,31 @@ Both properties matter. The material is direct: it is a mature participant stati
 **Open question the wiki cannot yet answer:** How many adopters does it take for an AI-invented concept to stop being alien?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_future-of-pure-math-in-age-of-ai]]
+
+
+## How to have big ideas on purpose
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas.md` (0 backlinks).
+
+**Why it sits here:** Loughran's integration work needs a method for recognising paradigm-level ideas, and Wolfram's practices are a first candidate.
+
+**Synthesis claim.** Generating big ideas is a repeatable loop (imagine, experiment, explain) and the experiment step cannot be skipped because of irreducibility.
+
+**Open question the wiki cannot yet answer:** Can the wiki detect 'ready to take flight' ideas from its own proposals?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas]]
+
+
+## Recognising a good idea
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-31_wolfram_last-theory-086-search-for-solid-ground.md` (0 backlinks).
+
+**Why it sits here:** The card answers an open item on recognising good ideas that the integration project has carried since August.
+
+**Synthesis claim.** A good idea is one that survives experiment, which turns recognition into testing rather than intuition.
+
+**Open question the wiki cannot yet answer:** Which of the wiki's current PRS entries would pass that test?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_last-theory-086-search-for-solid-ground]]

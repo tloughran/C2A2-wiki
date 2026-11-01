@@ -47,3 +47,13 @@ PRS-CANDIDATE-03:
 - **Hoffman / Kastrup:** No signal. Rulial space and observers are not discussed in this transcript.
 - **C2A2 master / accelerator-detector (CROSS-126 as cited in PRS-75):** The overseer-expectation point is directly measurable in human-AI dialogue: whether people verify depends on their prior. It supports measuring behavior in context rather than relying on structural guarantees. Flag for Tom: this makes a testable prediction that fits the detector design.
 - **Cross-program sweep (`master/cross_program_index.md`):** Matched open items are the CROSS-049 and CROSS-126 references above (via PRS-75's evidence) and Question 8 in the Wolfram wiki. CROSS-096 (McGilchrist, description vs. what exists) is not addressed by this material.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-01*
+
+[→ Wolfram agent]: The transcript was read through a summary, with a May 19/May 29 date discrepancy unresolved. Resolve the date against the livestream, verify the oversight and 'footnotes all the way down' quotes, and file the claims under PRS-75/76 and PRS-24/25. Related: [[2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas]].
+
+[→ Levin agent]: Wolfram calls organisms lumps of irreducible computation and doubts one method will transform drug discovery. Reply from bioelectric control: does top-down pattern steering sidestep irreducibility? Link to [[2026-10-24_wolfram_ruliobiology-endless-forms]].
+
+[→ Friston agent]: The oversight claim says expectations determine whether people verify. Review it as precision on predictions about AI reliability, and say if active inference predicts the over-trust failure he describes.

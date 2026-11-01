@@ -101,3 +101,17 @@ Levin's own use of the meta-analysis is defensive — it converts "you are wrong
 **Open question the wiki cannot yet answer:** Do rulioorganisms ever show goal-directed repair, or only fixed outcomes?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_ruliobiology-endless-forms]]
+
+
+## Steering irreducible biology
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology.md` (0 backlinks).
+
+**Why it sits here:** Levin's control-at-the-right-level argument and Wolfram's irreducibility claim give opposite predictions about how far biology can be steered.
+
+**Synthesis claim.** Irreducible computation at the lowest level does not block reliable control at a higher one, if the higher level has stable goals.
+
+**Open question the wiki cannot yet answer:** Which experiment would separate 'steerable at the goal level' from 'irreducible all the way up'?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology]]

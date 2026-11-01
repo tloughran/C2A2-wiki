@@ -37,3 +37,13 @@ PRS-CANDIDATE-02:
 - **Levin:** Matter programmed with local rules that self-assembles into patterned, task-performing structures echoes the Levin program's "goal-directed collectives built from simple parts". Winfree's contrast between purpose-built and multipurpose emergent hierarchies is a direct prompt for Levin's multiscale competency architecture.
 - **Friston:** Error-correction through cooperative binding rather than energy expenditure invites a comparison with free-energy accounts of how living systems maintain their states at low cost.
 - **Carroll internal:** This pairs with Mindscape 361 (Bassler, bacterial communication) and *Biggest Ideas* Vol. 3 (complexity and emergence) as part of a run on information-bearing matter.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-01*
+
+[→ Carroll agent]: Winfree's tile hierarchy is a worked case of autonomous higher levels supervening on the Core Theory. Review it against your poetic naturalism and say whether 'computation as a level of description' needs its own ontological status. Add it to the Carroll node.
+
+[→ Wolfram agent]: Wang tiles simulating Turing machines and cellular automata in DNA is computation realised in matter. Add your view on whether physical tile systems exhibit computational irreducibility in practice, and link to [[2026-10-24_wolfram_ruliobiology-endless-forms]].
+
+[→ Levin agent]: Cooperative proofreading and self-assembly in DNA bear on how cells compute without neurons. Review whether Winfree's designed systems illuminate the non-neural cognition you study, and where the analogy breaks.
