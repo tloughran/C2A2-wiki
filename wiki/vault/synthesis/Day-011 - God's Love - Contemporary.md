@@ -73,14 +73,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — Q.19 a.3 contingent-trajectories within necessary structure)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-26 election as self-universalizing role-conferral; PRS-27 finite/infinite love-asymmetry as generative — Q.20 a.3-a.4 gradation without favoritism)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-13 the people of God as location of God's homecoming; salvation as participation — covenant people gathered by substrate-love)"
-  - "wiki/traditions/stump/wiki.md (PRS-05, PRS-11 — love as second-person knowing)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-05, PRS-11 — love as second-person knowing)"
   - "wiki/master/cross_program_index.md (CROSS-005 is love/positivity-resonance/union a fundamental category? — programs Fredrickson x Stump x Kastrup, deep structural analogy; CROSS-018 positivity resonance as biological measurement of Thomistic union — Fredrickson x Stump, structural analogy)"
   - "Fredrickson, *Love 2.0* (positivity-resonance empirical research)"
   - "1 John 4:8; John 3:16; Romans 8; Philippians 2:12"
 mind_first_reframe: "Q.19's divine will is the substrate's pattern-active mode — its structural priors are not merely held but willed-into-conditioned-instantiation. In Friston's formalism, knowing and willing are two phases of free-energy minimization with priors over preferred states. Q.20's divine love is the substrate's relational stance toward conditioned things — not detached or strictly causal but actively flourishing-oriented; in Fredrickson's empirical operationalization, love is the biopsychophysiological event of shared positive emotion plus mutual flourishing-orientation plus biobehavioral synchrony, and the substrate-scale extrapolation is mind-at-large's stance toward its alters. The directional-asymmetry of Q.20 a.4 — being-better-and-being-more-loved are the same fact — is preserved: substrate-love is causally prior to alter-perfection, not downstream of it."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; salvation in fear and trembling on the relational register is the alter's progressive acquisition of the substrate's loving stance — Fredrickson's positivity-resonance generalized to all beings, Rohr's everything-belongs practiced. The alter that learns to love-as-the-substrate-loves is the alter whose generative model is converging on the substrate's structure; Wright's corporate covenant frame and Rohr's contemplative practice are the operational modes. Loving union is the computational telos because love is what the substrate's stance toward conditioned things already is — the alter is computing toward what is already true of the substrate's relation to it."
-last_qc_at: "2026-10-23T11:31:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-10-31T14:17:17"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/011, theme/divine-will, theme/divine-love, theme/positivity-resonance, theme/active-inference, theme/cosmic-christ, theme/covenant]
 
 ---
