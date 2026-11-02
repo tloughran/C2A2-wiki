@@ -52100,3 +52100,43 @@ DISPOSITION-1115:
 - Searches: 2-3 per item per direction, every source snippet-only or title-only; some characterisations from memory and marked as such. PRELIMINARY. No disposition rests on a primary text read in full.
 - SYSTEMIC-RISK (15b): 1201 is an instance of 'a named check treated as a check performed'. Following the 10-25..10-30 precedent, no flag file was written; noted for Tom.
 - No INCORPORATE was issued.
+
+
+## 2026-11-02 RUN - 15a/15b/15c (cloud-lit-2026-11-02)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1207
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Vaughan 1996, The Challenger Launch Decision (from memory; Columbia Magazine summary seen, title only)
+  Summary: Normalization of deviance and alarm fatigue support the pattern in general; nothing read, no LLM-agent or rejected-observation-logging source reached.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1207
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: NIST/SEMATECH e-Handbook, outlier detection (title only)
+  Specific risk: A real drop is read as a fault and never surfaces, so the monitor looks healthy while blind.
+  Summary: Fault-first can be a rational default; the defect is unlogged, unverified dismissal. Nothing found says the practice is wrong in itself.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1116:
+  Date: 2026-11-02
+  Item: PRESUMPTION-1207
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both directions are weak and title-only. The pattern is credible and the challenge is about framing (silent dismissal vs verified dismissal), not refutation.
+  Disposition: MONITOR (MONITOR-701 (Medium))
+  Reasoning: Neither side has a read primary text, and the item's better test is the in-house count of dropped readings and later-confirmed faults, which has no runner. Presumption with only a weak challenge does not meet the REVISE heuristic; weak support does not meet INCORPORATE.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md
+
+### Evidence-quality notes (2026-11-02)
+- One orchestrator ran 15a, 15b, 15c in sequence; the 15b file was written without reading the 15a file, but independence is procedural, not subagent-separated.
+- 3 searches, all title-only hits, 0 fetches. PRELIMINARY. No INCORPORATE issued. The 9 in-house items from 11-01 were not touched (not literature scope). Backlog untouched.

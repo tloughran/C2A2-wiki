@@ -26099,7 +26099,7 @@ PRESUMPTION-1199:
   Evidence it was operative: Stump/Fredrickson 66696d3b ('Nothing new from the last 30 days'); morning walk 7ccaeca2 (pending 9, up from 6)
   Why it was unstated: culturally embedded
   Type: normative
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Risk if wrong: Medium: backlog grows without bound while Tom is the only reviewer; review quality or attention drops.
   Confidence: medium
@@ -26119,7 +26119,7 @@ PRESUMPTION-1200:
   Evidence it was operative: Stump/Fredrickson 66696d3b; wiki daily run 15ed0b75 and morning walk 7ccaeca2 network totals
   Why it was unstated: oversight
   Type: epistemic
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Risk if wrong: Low-Medium: growth metrics overstate grounded content.
   Confidence: low (speculative)
@@ -26162,7 +26162,7 @@ PRESUMPTION-1202:
   Evidence it was operative: Carroll/Arkani-Hamed 869fd18e
   Why it was unstated: culturally embedded
   Type: structural
-  Related decisions: 
+  Related decisions:
   Testability: testable via literature
   Risk if wrong: Medium: tradition records follow the named thinker's output and miss how the program is actually progressing; this is worst for program-founders whose followers do most of the confirming work.
   Confidence: medium
@@ -26239,3 +26239,45 @@ PRESUMPTION-1205:
     Current status: UNTESTED
 
 *2026-10-31 14b: PRESUMPTION-1204..1205 (methodological 1, normative 1; risk Medium 2). Checked against 14a 1993-2003 and existing registry. Not re-surfaced (already registered): first-writer deferral (P-1159; today the later evening-sync firing had session_info, the earlier did not, and the later still deferred — new evidence, same presumption); narrated lock compliance and two lock files; 'verification' second firings (P-1201); Speculative labels surviving into counts (P-1200); erratum propagation (queued earlier). Low yield is expected on a scheduled-only day.*
+
+PRESUMPTION-1206:
+  Date surfaced: 2026-11-01
+  Statement: [inferred] A task prompt is presumed to fix what the task writes. It does not. Two firings of the periodic monitor read the same prompt and reached different policies: one re-queued 53 premises that already had an unsearched block; the other would have skipped them. Which policy reached the register was settled by which firing started a few seconds earlier. With duplicate firings, the prompt's ambiguities become a race, and the register records the winner's reading as if it were the rule.
+  Evidence it was operative: Periodic monitor 0b3377e7 ('The other session followed the task text literally. I would have skipped them'); ASSUMPTION-2004
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-285; PRESUMPTION-1159 (first-writer deferral; distinct: here the later firing judged the earlier one wrong and still deferred)
+  Testability: testable in-house
+  Risk if wrong: Medium: register contents depend on firing order; 53 duplicate re-check blocks already entered and recur monthly unless a rule is fixed.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1206
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1207:
+  Date surfaced: 2026-11-01
+  Statement: [inferred] A reading that departs sharply from the previous one is presumed to be a measurement fault, and is then explained away or dropped. Connector health dropped a 0-connector reading as 'a failed lookup' (third time); the janitor called 347 new broken links 'more likely' a changed check; the sewing census was declared incomparable with the CSV. Each call may be right, but the same rule would also filter a real sudden change, and the dropped readings are never logged as faults, so the environment problem behind them (why the duplicate copy sees no connectors) is never investigated.
+  Evidence it was operative: Connector health ded68f30; janitor 79a48799; sewing agent 010b81b8; ASSUMPTION-2006, -2009, -2011
+  Why it was unstated: culturally embedded (alarm-fatigue practice: treat outliers as glitches)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2006, -2009; earlier connector empty-read assumptions
+  Testability: testable via literature and in-house
+  Risk if wrong: Medium: trend files can show only gradual change; a real mass uninstall or mass link breakage would be filtered the same way, and recurring environment faults stay unrepaired.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1207
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-01 14b: PRESUMPTION-1206..1207 (methodological 1, epistemic 1; risk Medium 2). Checked against 14a 2004-2015 and the registry. Not re-surfaced (already registered; new evidence today): concurrency safety from later copies noticing in-flight writes (deferred-monitor write conflict); tool parity between cloud and local copies (P-1196 / REVISE-534; scheduler health repeated 'retire 27' unchanged); autonomous runs presume approvals (lit pipeline did not run at all on 11-01); proposals from unread sources (Wright notes-only); orphan-metric validity; UTC day keys (DST shift today); second firings framed as verification (P-1201).*

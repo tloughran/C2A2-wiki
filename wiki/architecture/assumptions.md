@@ -37351,7 +37351,7 @@ ASSUMPTION-1963:
   Statement: [stated] Morning walk active-findings count = 24 because 'only FINDING-013 to -035 have an explicit Active status ... Findings 036 to 111 have no status field, so I left them out.'
   Context: Morning walk handoff 9d814e9f
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37387,7 +37387,7 @@ ASSUMPTION-1965:
   Statement: [stated] No interactive Cowork session on 10-28: 'today was all scheduled agents, with no interactive Cowork session' (evening sync second run, which could read transcripts).
   Context: Evening cowork-to-chat 02cea945
   Type: empirical
-  Related decisions: 
+  Related decisions:
   Testability: context (not queued)
   Status: UNTESTED
   Provenance:
@@ -37438,7 +37438,7 @@ ASSUMPTION-1968:
   Statement: [stated] Late morning batch explained causally: 'ran late, around noon instead of eight to nine, which suggests the Mac was asleep'; same report says all 29 enabled tasks 'have fired recently'.
   Context: Morning project status 16cc9820
   Type: empirical
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37455,7 +37455,7 @@ ASSUMPTION-1969:
   Statement: [stated] voice-shell suite RED 'the second morning running': 6 failed of 400 rows on main@09f66c11 (10-27: 8 of 396).
   Context: Scheduler health 86404fd4; morning status 16cc9820
   Type: empirical
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37472,7 +37472,7 @@ ASSUMPTION-1970:
   Statement: [stated] Duplicate firing of the wiki daily run judged safe: 'The second firing caused no harm because it waited for the main run and then only checked its work.'
   Context: C282 wiki daily run 71696b0c
   Type: architectural
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37489,7 +37489,7 @@ ASSUMPTION-1971:
   Statement: [stated] Inbox check discarded as noise: it 'matched exact file names against PROCESSED_LOG.md. That log isn't keyed by exact file name'; ledger shows 1 open card (Wright PROP-2026-08-14-033).
   Context: C282 wiki daily run 71696b0c
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37506,7 +37506,7 @@ ASSUMPTION-1972:
   Statement: [stated] Lit pipeline scope rule: 'I followed the earlier runs' precedent and handled only the new intake'; backlog ~126 + 11 untouched; ~195k tokens used vs 4k/30k rule (disclosed, not enforced).
   Context: Lit search pipeline 8a7e5027
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: recurrence (not queued)
   Status: UNTESTED
   Provenance:
@@ -37523,7 +37523,7 @@ ASSUMPTION-1973:
   Statement: [stated] WATCH-003 at check 24, still stale with 'the recommendation to escalate'; watch_list.md ~855 KB should be split (repeated advisory).
   Context: Deferred action monitor 6866164f
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37576,7 +37576,7 @@ ASSUMPTION-1976:
   Statement: [stated] No interactive designer session on 10-29: 'The 15 most recent sessions were all scheduled runs, so there was no interactive Cowork work today.' All items below come from scheduled-run reports.
   Context: Evening sync 9beeb6a3 (second copy; first copy fired 7 min earlier)
   Type: epistemic
-  Related decisions: 
+  Related decisions:
   Testability: context (not queued)
   Status: UNTESTED
   Provenance:
@@ -37610,7 +37610,7 @@ ASSUMPTION-1978:
   Statement: [stated] Stump/Fredrickson agents found 'nothing new from the last 30 days', so all three proposals (PROP-2026-10-29-001..003) used the 'significant work not yet captured' rule; built 'only from abstracts and summaries, not full texts'; PubMed and DOI pages blocked; 2021 date approximate. Pending proposals now 9 (6 on 10-28).
   Context: C2a2 agent stump fredrickson 66696d3b; morning walk 7ccaeca2
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37644,7 +37644,7 @@ ASSUMPTION-1980:
   Statement: [stated] Two queue deadlines have passed unchecked: Humanity AI Open Call (due 10-21) and ECG DELTA fellowship email to Kristian Olsen (due 10-26). Queue Completed section empty, 13 items open; 'I suspect some are done but were never checked off.'
   Context: Morning walk handoff 7ccaeca2
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37678,7 +37678,7 @@ ASSUMPTION-1982:
   Statement: [stated] Recurrence of stale task paths: Stump/Fredrickson task file gives wiki root without 'Projects/' ('The stored task prompt should be corrected'); this task's prompt says '.../Wiki' while the mount is 'wiki'.
   Context: Stump/Fredrickson 66696d3b; this run
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: recurrence (not queued)
   Status: UNTESTED
   Provenance:
@@ -37732,7 +37732,7 @@ ASSUMPTION-1985:
   Statement: [stated] 'The 30 most recent sessions are all scheduled tasks, with no hands-on Cowork session today. So the existing summary, which was built only from wiki files, should be complete.' Completeness inferred from absence in a title listing (recurrence of the registered 'no interactive session' inference).
   Context: Evening sync 7b8a0720
   Type: epistemic
-  Related decisions: 
+  Related decisions:
   Testability: recurrence (not queued)
   Status: UNTESTED
   Provenance:
@@ -37766,7 +37766,7 @@ ASSUMPTION-1987:
   Statement: [stated] Morning status: 'Twenty-eight scheduled tasks are active, and all of them fired on time.' Same morning, scheduler health counts 41 registry tasks and reports the cloud-routine snapshot 'not refreshed'. 'All fired on time' has no current cloud verdict behind it (recurrence of ASSUMPTION-1979 count mismatch).
   Context: Morning status dc9c34f6; scheduler health 7a706d2e
   Type: epistemic
-  Related decisions: 
+  Related decisions:
   Testability: recurrence of 1979 (already queued; not re-queued)
   Status: UNTESTED
   Provenance:
@@ -37783,7 +37783,7 @@ ASSUMPTION-1988:
   Statement: [stated] Morning walk: 'Active findings: 24'; 'two pairs of proposals share an ID (PROP-2026-10-23-001, and PROP-2026-10-13-001/-002). Each needs a manual re-id.' Yesterday's metrics said only 23 findings carry a Status field. Pending now 10, oldest 10-27; last decision email 10-26.
   Context: Morning walk f0c45b33; wiki daily run e91559b3
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37800,7 +37800,7 @@ ASSUMPTION-1989:
   Statement: [stated] Arkani-Hamed agent rejected 'The m=2 amplituhedron is a positive geometry' (arXiv:2610.27903; Koefler, Pavlov, Sinn): 'It settles a central conjecture of his program, but it isn't his own work, so it fails the "from the thinker himself" filter. Tell the agent if you want papers like this accepted as program evidence.' Same run: arXiv author page fetch refused, 'a very recent preprint could have been missed.'
   Context: Carroll/Arkani-Hamed 869fd18e
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: needs Tom (OPEN-283; not queued)
   Status: UNTESTED
   Provenance:
@@ -37834,7 +37834,7 @@ ASSUMPTION-1991:
   Statement: [stated] Deferred monitor: WATCH-003 (Rohr PROP-2026-07-19-001) 'now at 25 checks', still stale, escalation recommended; WATCH-004 unchanged at 4 checks; watch_list.md 'now about 865 KB' (was ~860 KB).
   Context: Deferred monitor 3aaec4d0
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: recurrence (not queued)
   Status: UNTESTED
   Provenance:
@@ -37904,7 +37904,7 @@ ASSUMPTION-1995:
   Statement: [stated] Wiki daily run second firing: about 340 inbox files (April-October) do not appear by filename in PROCESSED_LOG.md, while the primary run reports the ledger clear (one open item, Wright PROP-2026-08-14-033). 'The log probably records files under proposal IDs rather than filenames, which would make my check a false alarm. I didn't confirm that.'
   Context: Wiki daily run 892d85fb
   Type: empirical
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house
   Status: UNTESTED
   Provenance:
@@ -37921,7 +37921,7 @@ ASSUMPTION-1996:
   Statement: [stated] Wolfram Saturday agent: two copies ran at once (PROP-2026-10-31-001 'written by what looks like a second instance of this task'); this copy 'numbered mine after it and checked that the three IDs don't collide.' Both of its proposals have no transcript: 'Every candidate triplet is inferred from the episode description or the host's summary, and is marked Speculative or locator-grade.' #083 was proposed outside the 30-day window under the 'significant work not yet captured' clause.
   Context: Wolfram agent 0f96cb31
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: settled by one listening session (not queued; label survival already registered as PRESUMPTION-1200)
   Status: UNTESTED
   Provenance:
@@ -37972,7 +37972,7 @@ ASSUMPTION-1999:
   Statement: [stated] Morning system health: Mac drive '67% full (307G of 461G) ... much more used space than earlier reports showed (about 84G)'; CPU and memory 'commands only see my sandbox, not your Mac'; finish check not confirmed ('I didn't read that file'). cell_dates.json held back 5 days; janitor reports 347 new broken wikilinks and community count 156 vs 155.
   Context: Morning system health 9d44f242
   Type: empirical
-  Related decisions: 
+  Related decisions:
   Testability: testable in-house (which earlier readings measured the sandbox)
   Status: UNTESTED
   Provenance:
@@ -37989,7 +37989,7 @@ ASSUMPTION-2000:
   Statement: [stated] Network state reported by wiki daily run: 1102 triplets, 164 connections, 111 findings, 3 pending; the 2026-10-30 decision email (10 APPROVE) applied; 10 cards produced 15 triplets; L2 signals 1856, 91 pairs, newest 2026-10-30.
   Context: Wiki daily run 892d85fb
   Type: empirical
-  Related decisions: 
+  Related decisions:
   Testability: context (not queued)
   Status: UNTESTED
   Provenance:
@@ -38023,7 +38023,7 @@ ASSUMPTION-2002:
   Statement: [stated] Deferred monitor: no item resolved; WATCH-003 still stale at 25 checks; WATCH-005/006 at check 3. A search summary suggesting the Wonderstruck episode 'might not exist' was rejected 'because the episode page and the YouTube page were both confirmed on 10-17.' The Sewing Agent 'will probably skip this card again, because its current rule leaves needs_review/ alone.'
   Context: Deferred monitor a356081e
   Type: methodological
-  Related decisions: 
+  Related decisions:
   Testability: recurrence (not queued)
   Status: UNTESTED
   Provenance:
@@ -38053,3 +38053,209 @@ ASSUMPTION-2003:
     Current status: UNTESTED
 
 *2026-10-31 14a: ASSUMPTION-1993..2003 (11). Queued [IN-HOUSE]: 1994, 1995, 1997, 1998, 1999, 2001. Not queued: 1993, 2002, 2003 (recurrences), 1996 (settled by listening), 2000 (context). No interactive session; all items from scheduled-run reports.*
+
+ASSUMPTION-2004:
+  Date identified: 2026-11-01
+  Statement: [stated] Periodic monitor (second firing): 'No re-check block has been marked searched since August. 53 of today's 86 premises already had an earlier unsearched block, so the queue now holds duplicates.' The first firing 'followed the task text literally'; this firing 'would have skipped them, as the weekly cycle does', logged the disagreement and left the other version in place. Asks Tom to decide before the 12-06 run.
+  Context: Periodic monitor 0b3377e7
+  Type: methodological
+  Related decisions: OPEN-285; PRESUMPTION-1206
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2004
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2005:
+  Date identified: 2026-11-01
+  Statement: [stated] Deferred monitor: 'The duplicate schedule caused a real write conflict this time. A second Agent 16 instance wrote today's summary while I was working. My edit stopped before changing anything because the text it expected had already moved, so the file wasn't damaged.' No check counted twice. The watch-list file is about 870 KB.
+  Context: Deferred monitor c4181a73
+  Type: methodological
+  Related decisions: OPEN-273; extends the registered 'concurrency safety from later copies noticing' presumption
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2005
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2006:
+  Date identified: 2026-11-01
+  Statement: [stated] Janitor (cloud re-reader of Mac run #39): 347 new broken wikilinks, mostly bare names like [[Levin]] or [[Stump Agent]] in inbox, proposal and sewing-log files. 'A jump that size more likely means the check or its link matching changed than that 347 links broke this week, but that's a guess and needs checking.'
+  Context: Wiki janitor weekly 79a48799
+  Type: empirical
+  Related decisions: PRESUMPTION-1207
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2006
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2007:
+  Date identified: 2026-11-01
+  Statement: [stated] Janitor: 7 src_pub_refs_drift findings. wiki/vault/refs/ lacks 7 files from the Summa source vault (incl. 'Summa map.md', playlist.json, build_index.py) 'because sync_vault.sh only copies the transcripts/ and synthesis/ folders.' Summa index lacks Day-001 and Day-035 (under the 5-day alert threshold). Community explorer says 156 curated communities; data file has 155.
+  Context: Wiki janitor 79a48799; morning system health 08ca5402
+  Type: architectural
+  Related decisions: 
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2007
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2008:
+  Date identified: 2026-11-01
+  Statement: [stated] Counts disagree again across same-morning reports: morning status says 'nine jobs ... are still enabled locally as well as on their cloud routines' and 'Twenty-nine scheduled tasks are enabled, and every one that was due has run on time'; scheduler health (10:45Z) lists 27 DOUBLE-REGISTERED and 29 FAIL. Yesterday the morning-status figure was 26.
+  Context: Morning status 4b3b3b1c; scheduler health b11902a7
+  Type: empirical
+  Related decisions: ASSUMPTION-1998 (queued 10-31; new evidence, not re-queued)
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2008
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2009:
+  Date identified: 2026-11-01
+  Statement: [stated] Connector health second firing saw 0 connectors and 8 plugins against 26 installed at 06:16 and did not record it: 'it's a failed lookup, not 18 uninstalls' (same on the 10-25 duplicate). It could not re-check which tools scheduled agents use: the sandbox cannot read Scheduled/ and Desktop Commander start_process 'was turned down automatically'.
+  Context: Connector health weekly ded68f30
+  Type: methodological
+  Related decisions: PRESUMPTION-1207; earlier connector empty-read assumptions
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2009
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2010:
+  Date identified: 2026-11-01
+  Statement: [stated] Unattended approval gate stopped work in three tasks today: scheduler health, connector health and the lit pipeline all had Desktop Commander start_process auto-declined. The lit pipeline 'stopped at Step 0 without doing any literature search' and left everything alone. This run checked review/lit_pipeline.lock: its last line is still 'RELEASED 2026-10-31T04:42:13Z by cloud-lit-2026-10-31-2', so no firing on either side took the lock on 11-01. Chat (per scrape) thinks one pass through scheduled-task permissions could fix both the dashboard refresh (stuck since 10-28) and the lit pipeline block.
+  Context: Lit pipeline 20435acf; scheduler health b11902a7; connector health ded68f30; chat scrape ef38cdcc; lock file read this run
+  Type: architectural
+  Related decisions: OPEN-281; registered presumption that autonomous runs presume approvals will be granted
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2010
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2011:
+  Date identified: 2026-11-01
+  Statement: [stated] Sewing agent (third firing on the second Sunday running, 10-25 and 11-01): quick census 4,399 orphans / 733 sparse / 87 connected over 5,219 page names; 'This can't be compared with the CSV, which counts files (5,818 today).' The CSV row written earlier by the census-only firing reads 4,868 / 802 / 146 / 5,816 (5,816, not 5,818).
+  Context: Sewing agent weekly 010b81b8; metrics/connectivity_log.csv read this run
+  Type: empirical
+  Related decisions: existing orphan-metric definition items
+  Testability: recurrence of metric-definition issue (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2011
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2012:
+  Date identified: 2026-11-01
+  Statement: [stated] Wright/Rohr agent: three proposals (PROP-2026-11-01-002..004). 'The Wright summaries rest on Premier's episode notes only. I didn't transcribe the audio, and the Oct 31 page sits behind a free-membership wall. Confidence ratings are set to match.' The Rohr piece 'is a 2026 republication of material from Essential Teachings on Love (2018).' A Wright-Stump-Friston paradigm-bridge candidate (stable end state / attractor) was flagged from the notes-based summary.
+  Context: Agent Wright/Rohr 29b32242
+  Type: epistemic
+  Related decisions: registered presumption on proposals written from unread sources
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2012
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2013:
+  Date identified: 2026-11-01
+  Statement: [stated] Janitor: 'The Mac job ran an hour earlier than documented. CLAUDE.md says it runs at 06:45, but today's run was 05:45 EST. Clocks went back today, so that may be the cause.' US daylight saving time ended 2026-11-01; the UTC offset for date-keyed files moved from 4 to 5 hours (the cloud 14a/14b NO-OP for local 11-01 is filed as changelog/2026-11-02_changes.md).
+  Context: Wiki janitor 79a48799; changelog listing read this run
+  Type: methodological
+  Related decisions: registered presumption that each task owns its date-keyed files
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2013
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2014:
+  Date identified: 2026-11-01
+  Statement: [stated] Chat scrape (second firing, deferred to the 08:46 file): ''ACPA poster and abstract' from yesterday and 'C2A2 Curriculum exploration and launch' from 3 days ago weren't read, so any C2A2 discussion in them is missing from the summary.' Items carried: ACPA poster to printer ~Nov 5; Voices edition decision due now; exhibit-contact draft unsent; print-QC rulings open; live dashboard refresh stuck since Oct 28.
+  Context: Chat scrape ef38cdcc
+  Type: epistemic
+  Related decisions: OPEN-284
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2014
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2015:
+  Date identified: 2026-11-01
+  Statement: [stated] Recurrences: voice-shell RED 6/400 now on main@85be1cba (fourth commit with the same 6 failures); com.tomloughran.openstory.ui not loaded; duplicate firings today: evening sync, chat scrape, wiki daily run, sewing (x3), janitor, periodic monitor, deferred monitor, connector health; scheduler health again recommends retiring the 27 local entries while REVISE-534 (parity gate) is AWAITING TOM; inbox 343 files not in PROCESSED_LOG.md by filename; WATCH-003 at check 26; MONITOR-403 escalation unanswered; MONITOR-688 expires 2026-11-09; cloud 14a/14b NO-OP for the eighth time; this task's prompt still says '.../Wiki' (mount is 'wiki').
+  Context: All sessions above
+  Type: architectural
+  Related decisions: REVISE-534; OPEN-273
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2015
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-01 14a: ASSUMPTION-2004..2015 (12). Queued [IN-HOUSE]: 2004, 2005, 2006, 2007, 2010, 2012, 2013, 2014. Not queued: 2008, 2009, 2011, 2015 (recurrences or covered by queued items). No interactive session; all items from scheduled-run reports.*

@@ -3893,3 +3893,15 @@ OPEN-284:
     Original item: OPEN-284
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-285:
+  Raised: 2026-11-01 by 14a/14b (ASSUMPTION-2004; PRESUMPTION-1206)
+  Question: Should the 15d monthly re-check skip a premise that already has an unsearched re-check block in for_lit_search.md (as the weekly cycle does), or re-file it each month as the task text says? 53 of the 86 blocks filed on 11-01 are duplicates of earlier unsearched blocks; no re-check block has been marked searched since August. Decide before the 2026-12-06 run, and say whether the 53 duplicates should be removed.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-285
+    Item type: OPEN QUESTION
+    Current status: OPEN

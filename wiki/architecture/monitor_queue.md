@@ -25682,3 +25682,15 @@ MONITOR-700:
 - **Two readings conflicted; the committed one stands (Rule 7).** 53 of the 86 premises already had an earlier RE-CHECK block with no consumption tag (29 from 10-04 only, 7 from 08-02+10-04, 5 from 09-13+10-04, and 12 from 08-02 only). The committed run filed a fresh block for all 86, which follows the task spec literally and the 10-04 full-catch-up precedent. This instance would have filed 33 new blocks and listed the 53 as carried, following the weekly no-duplicate rule. That disagreement is surfaced here, not fixed. **For Tom/15c:** the RE-CHECK lane has 0 consumption tags on any block since 08-02. Before the 12-06 cycle, decide whether RE-CHECK blocks should be deduplicated, as weekly blocks are.
 - Monthly/low-priority cohort MONITOR-001..344: a parse this instance tried finds 275 entries. In 213 of them the status cannot be read from the definition block, and every per-entry next_check date is 2026-04..06, because later state lives in free-form run notes. A reliable reparse needs a cross-reference of those notes. It was not attempted.
 - **For Tom:** this is the third double firing (10-04, 10-25, 11-01), and each time two sessions started at about 03:38–03:39 from the single `30 3 * * 0` task. The guard that worked today was the start-of-run "no 11-01 tags" check followed by a re-check just before writing. The second instance re-checked and found the commit.
+
+
+MONITOR-701:
+  Date: 2026-11-02
+  Source item: PRESUMPTION-1207 (DISPOSITION-1116)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: normalization of deviance / alarm fatigue support the pattern (Weak; title-only). 15b: fault-first can be rational; defect is unlogged dismissal (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'dismissing a sharp reading as a fault needs verification or a logged reason') a read of Vaughan 1996 plus a source on logging rejected observations; (-> REVISE) the in-house count of readings dropped since 09-01 showing a material share later confirmed as real.
+  Monitoring cadence: Weekly (default); first check due 2026-11-09
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md

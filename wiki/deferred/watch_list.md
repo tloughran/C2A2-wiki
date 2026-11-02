@@ -152,13 +152,14 @@ WATCH-006:
   Check method: File check — pending/ for PROP-2026-10-13-001 revised copy; macintyre PRS triplet files for the overlap passages (pp.116, 124-126, 202-205, 229, 233, 134, 33). No sewing-agent definition exists in agents/ (only 01-20), so ownership is unclear.
   Check cadence: Weekly
 
-  Last checked: 2026-10-31
-  Check count: 3
+  Last checked: 2026-11-02
+  Check count: 4
   Result history:
     - 2026-10-17: Intake. Classified as agent action / possibly human. No revised copy in pending/. Condition NOT met. Flag: no "sewing agent" in agents/; Tom to confirm which agent/session owns this. Also PROP-2026-10-13-001/-002 ID collision still open.
 
     - 2026-10-24: Weekly check. No revised PROP-2026-10-13-001 in pending/ (13 files, none MacIntyre). `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39. Condition NOT met. **New on ownership:** a production Sewing Agent does exist. It is a weekly Sunday scheduled task (`local_57fed042`, per open_questions.md OPEN-052/053) that writes to `architecture/sewing_agent_log.md`. Its 2026-10-18 run *explicitly skipped* `needs_review/` cards ("Left alone: needs_review/ cards (macintyre PRS candidates, mcgilchrist wonderstruck, fredrickson BIPR), which await review"). So the owner is probably that task, but its selection rule excludes this card. As things stand, the next run (2026-10-25) will skip it again. Narrower ask for Tom: either tell the Sewing Agent to take PROP-2026-10-13-001 from needs_review/, or run the overlap pass by hand. Agent 16 has not edited the sewing task.
     - 2026-10-31: Weekly check. `pending/` holds 10 files (Hoffman ×3, Kastrup ×2, McGilchrist KCL, Fredrickson ×2, Stump, Carroll 372), and none is a MacIntyre item or a copy of PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` has not changed since 2026-10-16 04:39. `architecture/sewing_agent_log.md` has not changed since 2026-10-25 04:42, so the 10-25 Sewing run did not touch this card. Condition NOT met. The next event trigger is the Sewing Agent run on 2026-11-01, which is expected to skip `needs_review/` again unless Tom changes its rule. Next on-cadence check 2026-11-07.
+    - 2026-11-02 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **4**; next on-cadence check stays 2026-11-07): the Sewing Agent's 2026-11-01 run is logged in `architecture/sewing_agent_log.md` (written 11-01 04:42; full run ~09:40 UTC plus a report-only duplicate firing). It processed 10 pages: 7 `pending/` cards (Rohr ×1, Wright ×3, Wolfram ×3) and 3 `inbox/` items (Carroll 372, Stump, Fredrickson). It injected 38 calls and appended 16 bridge sections. The log does not mention `needs_review/`, MacIntyre, or PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` has not changed since 2026-10-16 04:39. `pending/` holds 7 files and none is MacIntyre. Condition NOT met. As predicted on 10-24, the Sewing Agent's selection rule does not reach this card, and that will not change unless Tom acts. The next Sewing run is 2026-11-08.
 
   On resolution:
     Action: re-queue proposal to pending/ with note
@@ -7375,3 +7376,29 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Run completed 2026-11-01 (single instance at time of writing).*
 
 *Addendum 2026-11-01 ~07:40 UTC — second Agent 16 firing today (duplicate schedule). Independently reached the same result; no check re-counted. Confirmed: `2026-10-31_decisions.md` is 10 APPROVE only; WATCH-003 count 26 stands; `needs_review/` (4, all [TRACKED-16]) and `pending/` (Wolfram ×3) unchanged; `sewing_agent_log.md` still 10-25. Nothing resolved. The two instances collided mid-write this time (this instance's edit aborted cleanly on a changed anchor), which makes the duplicate schedule a concrete data-integrity risk, not just noise.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-02
+
+  Intake: all 4 `needs_review/` files already carry [TRACKED-16], and none has changed since 10-17. `review/archive/` still holds 28 files (latest `2026-10-31_decisions.md`), so there is no new CHANGE / CHECK / CONDITIONAL. I grepped every vault file newer than the last watch-list write (11-01 chat summary, open_questions, PROCESSED_LOG, master wiki, sewing log, lit-search/assumptions backups, 7 `pending/` cards) for tracked IDs, `xZcB-tmvJaU`, "Wisdom of Uncertainty", `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |` and INTEGRITY FLAG. The hits are carry-over mentions only (the 11-01 chat summary lists WATCH-003/005/006 as pending rulings); there is no ruling, deferral or watch request.
+  Items checked: 1 (off-cadence, event-triggered):
+    - WATCH-006 (count 4): the Sewing Agent's 11-01 run processed 10 pages, none of them the MacIntyre `needs_review/` card. `prs_triplets.md` is unchanged and there is no revised PROP-2026-10-13-001 in `pending/`. NOT met.
+  Event sweep (not counted; due 11-06 / 11-07):
+    - WATCH-003: no new decision file since `2026-10-31_decisions.md`.
+    - WATCH-004: the Fredrickson file has not changed since 10-08; no PROP-2026-10-01-001 copy in `pending/`.
+    - WATCH-005: no vault transcript (outside deferred/ and needs_review/) for `xZcB-tmvJaU` / "Wisdom of Uncertainty".
+  Items resolved: 0
+  Items still watching: 4 (WATCH-003, -004, -005, -006)
+  Items stale: 1 (WATCH-003, 26 checks; Escalate to Tom). WATCH-004 and WATCH-006 are at 4 checks and WATCH-005 at 3; no new flags.
+  New items added: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-06, WATCH-005/-006 on 2026-11-07. The next WATCH-006 event trigger is the Sewing Agent run on 2026-11-08, which is expected to skip the card again.
+
+**Open for Tom (unchanged):** Wonderstruck transcript (WATCH-005); Sewing Agent selection rule or a manual MacIntyre overlap pass (WATCH-006, now confirmed skipped on two consecutive Sundays); INTEGRITY FLAG ruling (WATCH-003); Fredrickson CT-Signals edit (WATCH-004); ID collisions; split the ~869 KB watch list; duplicate scheduled firings (the Sewing log reports three sewing-type firings on both 10-25 and 11-01).
+
+*Run completed 2026-11-02 (single instance at time of writing).*
+
+## AGENT 16 RUN SUMMARY — 2026-11-02 (second firing, 07:40 UTC; no-change confirmation)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 2026-10-17). `review/archive/` latest still `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL.
+  Items checked: 0 on-cadence (none due: WATCH-003/-004 due 11-06, WATCH-005/-006 due 11-07; WATCH-006 already checked earlier today). Spot-verification: Fredrickson flagged sentence still present (2 occurrences, unchanged); `pending/` holds 7 cards, none is PROP-2026-10-01-001, PROP-2026-10-13-001 or a MacIntyre/Wonderstruck item.
+  Items resolved: 0 · Still watching: 4 · Stale: 1 (WATCH-003, Escalate to Tom — unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07.

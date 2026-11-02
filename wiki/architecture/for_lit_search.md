@@ -28341,13 +28341,13 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [SEARCHED-15a: 2026-10-29] [SEARCHED-15b: 2026-10-29] [DISPOSITIONED-15c: 2026-10-29] [PRESUMPTION] PRESUMPTION-1196
-  Statement: [inferred] The double-registration fix ('confirm the cloud trigger fires before disabling the local entry') presumes the cloud and local copies of a task are equivalent once both fire. They are not: the cloud 14a/14b copy fires nightly but 
+  Statement: [inferred] The double-registration fix ('confirm the cloud trigger fires before disabling the local entry') presumes the cloud and local copies of a task are equivalent once both fire. They are not: the cloud 14a/14b copy fires nightly but
   Claim to test (literature): Migration cutover verification beyond liveness: capability/feature-parity checks, shadow-run comparison of outputs (dark launching, parallel run). Does 'trigger fired' suffice as a cutover criterion?
   Claim to test (in-house): For each of the 27 tasks, list tools the task prompt needs vs tools present in its cloud session; compare cloud vs local outputs for 14a/14b on the same date.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1197
-  Statement: [inferred] Reports that the voice-shell suite is RED 'the second morning running' and that failures fell 8 -> 6 presume the same test set on both days. The denominator changed (396 -> 400 rows) and the commit changed; the comparison is not 
+  Statement: [inferred] Reports that the voice-shell suite is RED 'the second morning running' and that failures fell 8 -> 6 presume the same test set on both days. The denominator changed (396 -> 400 rows) and the commit changed; the comparison is not
   Claim to test (in-house): Diff the failing row IDs in /tmp/voice_shell_last.log for 10-27 vs 10-28.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
@@ -28371,7 +28371,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] ASSUMPTION-1978
-  Statement: [stated] Stump/Fredrickson agents found 'nothing new from the last 30 days', so all three proposals (PROP-2026-10-29-001..003) used the 'significant work not yet captured' rule; built 'only from abstracts and summaries, 
+  Statement: [stated] Stump/Fredrickson agents found 'nothing new from the last 30 days', so all three proposals (PROP-2026-10-29-001..003) used the 'significant work not yet captured' rule; built 'only from abstracts and summaries,
   Claim to test (in-house): Count proposals since 10-01 by rule used (new work vs 'not yet captured'); check abstract-only flags on PROP-2026-10-29-001..003.
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
@@ -28447,7 +28447,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1203
-  Statement: [inferred] 15c's urgency label is now set for scheduling ('so it goes with REVISE-534') and not by evidence strength ('sources only support Moderate'). This presumes readers of revision_flags.md will 
+  Statement: [inferred] 15c's urgency label is now set for scheduling ('so it goes with REVISE-534') and not by evidence strength ('sources only support Moderate'). This presumes readers of revision_flags.md will
   Claim to test (in-house): In revision_flags.md since 10-01, count REVISE entries whose urgency is higher than the evidence strength stated by 15a/15b.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
@@ -28484,7 +28484,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-1998
-  Statement: [stated] Counts disagree across same-morning reports: morning status says 'Twenty-six of them are tasks registered twice' and 'Twenty-eight scheduled tasks are active, and every one fired on its last 
+  Statement: [stated] Counts disagree across same-morning reports: morning status says 'Twenty-six of them are tasks registered twice' and 'Twenty-eight scheduled tasks are active, and every one fired on its last
   Claim to test (in-house): Reconcile the double-registration count (26 vs 27) and the active-task count (28 vs 41 registry tasks) against the registry files; name which definition each report uses.
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
@@ -28877,3 +28877,58 @@ Not re-filed (standing unconsumed blocks): the 2026-10-18 cohort (7 literature, 
   Evidence trajectory: Stable; supporting/challenging split unchanged; no new sources; count still unproduced.
 
 Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -691, -692, -693 literature; -690, -694, -685 empirical) carries no SEARCHED/DISPOSITIONED tags; the 2026-10-18 and 2026-10-11 cohorts likewise. Not duplicated; cycle counts held (precedent 09-20..10-25).
+
+## 2026-11-01 — 14a/14b intake (local pass)
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2004
+  Statement: [stated] Periodic monitor (second firing): 'No re-check block has been marked searched since August. 53 of today's 86 premises already had an earlier unsearched block, so the queue now holds duplicate
+  Claim to test (in-house): Count the re-check blocks filed on 2026-11-01 whose premise already has an earlier block with no SEARCHED/DISPOSITIONED tag; confirm 53 of 86.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2005
+  Statement: [stated] Deferred monitor: 'The duplicate schedule caused a real write conflict this time. A second Agent 16 instance wrote today's summary while I was working. My edit stopped before changing anythin
+  Claim to test (in-house): Diff the deferred-monitor watch-list file against its pre-11-01 state: check for two 11-01 summaries, interleaved text, or any WATCH check counted twice.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2006
+  Statement: [stated] Janitor (cloud re-reader of Mac run #39): 347 new broken wikilinks, mostly bare names like [[Levin]] or [[Stump Agent]] in inbox, proposal and sewing-log files. 'A jump that size more likely 
+  Claim to test (in-house): Compare the janitor's link-matching code and settings between run #38 (10-25) and run #39 (11-01); re-run the old matcher on today's vault and count broken links.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2007
+  Statement: [stated] Janitor: 7 src_pub_refs_drift findings. wiki/vault/refs/ lacks 7 files from the Summa source vault (incl. 'Summa map.md', playlist.json, build_index.py) 'because sync_vault.sh only copies the
+  Claim to test (in-house): List the 7 refs/ files missing from wiki/vault/refs/ and find every published page that links to any of them; record whether refs/ is meant to be published.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2010
+  Statement: [stated] Unattended approval gate stopped work in three tasks today: scheduler health, connector health and the lit pipeline all had Desktop Commander start_process auto-declined. The lit pipeline 'st
+  Claim to test (in-house): List every scheduled task whose prompt needs Desktop Commander start_process (or another approval-gated tool) and its current approval setting; for each, record the last date it completed the gated step.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2012
+  Statement: [stated] Wright/Rohr agent: three proposals (PROP-2026-11-01-002..004). 'The Wright summaries rest on Premier's episode notes only. I didn't transcribe the audio, and the Oct 31 page sits behind a fre
+  Claim to test (in-house): Count proposals since 09-01 whose source basis is notes, abstracts or metadata only (not a read transcript or text), and compare their approval rate with fully-read proposals.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2013
+  Statement: [stated] Janitor: 'The Mac job ran an hour earlier than documented. CLAUDE.md says it runs at 06:45, but today's run was 05:45 EST. Clocks went back today, so that may be the cause.' US daylight savin
+  Claim to test (in-house): Read the janitor launchd plist (StartCalendarInterval) and its run log for 10-25 and 11-01; state whether 05:45 EST is the DST shift or a schedule change, and update the documented time.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2014
+  Statement: [stated] Chat scrape (second firing, deferred to the 08:46 file): ''ACPA poster and abstract' from yesterday and 'C2A2 Curriculum exploration and launch' from 3 days ago weren't read, so any C2A2 disc
+  Claim to test (in-house): Read the chat-scrape task prompt and list how it selects conversations; check the two unread conversations for C2A2 items missing from the 11-01 summary.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1206
+  Statement: A task prompt is presumed to fix what the task writes. It does not. Two firings of the periodic monitor read the same prompt and reached different policies: one re-queued 53 premises that already had 
+  Claim to test (in-house): Read the 15d task prompt and list each instruction a literal reading and a cycle-consistent reading would apply differently; for the three double firings (10-04, 10-25, 11-01) record which reading reached the register.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-02] [SEARCHED-15b: 2026-11-02] [DISPOSITIONED-15c: 2026-11-02] [PRESUMPTION] PRESUMPTION-1207
+  Statement: A reading that departs sharply from the previous one is presumed to be a measurement fault, and is then explained away or dropped. Connector health dropped a 0-connector reading as 'a failed lookup' (
+  Claim to test: Literature lane: find primary sources on dismissal of anomalous readings in operational monitoring (normalization of deviance; alarm fatigue) and on logging rejected observations. In-house: count since 09-01 the readings agents dropped or explained away as measurement faults, and how many were later confirmed as faults.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-01: 10 items queued, 9 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1207). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-10-31T04:42:13Z by cloud-lit-2026-10-31-2; not held, append safe. No lit pipeline took the lock on 11-01.*
+  Result 2026-11-02: 15a PARTIALLY-SUPPORTED (Weak); 15b PARTIALLY-CHALLENGED (Weak); DISPOSITION-1116 -> MONITOR-701 (Medium). Literature-lane item only; the 9 [IN-HOUSE] items untouched.
