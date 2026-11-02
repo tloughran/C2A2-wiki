@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-070 - Morality - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/070, pars/I-II, q/18, q/19]
-last_qc_at: "2026-10-15T04:17:04"
+last_qc_at: "2026-11-01T16:16:55"
 last_qc_outcome: "pass"
 ---
 # Day 70 — Morality
