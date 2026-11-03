@@ -25694,3 +25694,14 @@ MONITOR-701:
   Monitoring cadence: Weekly (default); first check due 2026-11-09
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md
+
+MONITOR-702:
+  Date: 2026-11-03
+  Source item: PRESUMPTION-1208 (DISPOSITION-1117)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: gray-failure / differential-observability paper supports the general pattern (Moderate general, Weak specific). 15b: scope and lock-log authority, plus intended single-actor design (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a copy reports its own run state, cites the shared record it read, and keys each launch by job plus scheduled time') a read of Kleppmann on fencing and the SRE chapter in full plus the in-house 10-26..11-02 comparison showing contradicted reports; (-> REVISE) that comparison showing the lock log itself was ambiguous or wrong on material days.
+  Monitoring cadence: Weekly (default); first check due 2026-11-10
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md

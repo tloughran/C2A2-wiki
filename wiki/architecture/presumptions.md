@@ -26281,3 +26281,45 @@ PRESUMPTION-1207:
     Current status: UNTESTED
 
 *2026-11-01 14b: PRESUMPTION-1206..1207 (methodological 1, epistemic 1; risk Medium 2). Checked against 14a 2004-2015 and the registry. Not re-surfaced (already registered; new evidence today): concurrency safety from later copies noticing in-flight writes (deferred-monitor write conflict); tool parity between cloud and local copies (P-1196 / REVISE-534; scheduler health repeated 'retire 27' unchanged); autonomous runs presume approvals (lit pipeline did not run at all on 11-01); proposals from unread sources (Wright notes-only); orphan-metric validity; UTC day keys (DST shift today); second firings framed as verification (P-1201).*
+
+PRESUMPTION-1208:
+  Date surfaced: 2026-11-02
+  Statement: [inferred] Each copy of a duplicated task presumes its own outcome is the task's outcome. The local lit pipeline reported 'didn't run today' and 'anything queued is still waiting' without reading the lock log, which shows the cloud copy ran and searched an item that morning. Morning status reported 'all fired on time' from the local registry. Neither report checks what the other copy did, so a reader gets a false negative (lit pipeline) or a false positive (morning status) depending on which copy wrote last.
+  Evidence it was operative: Lit pipeline a69e709f vs review/lit_pipeline.lock; morning status 268ba4f0; ASSUMPTION-2016, -2017
+  Why it was unstated: too foundational to notice (each prompt was written when the task had one copy)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2016, -2017; REVISE-534
+  Testability: testable via literature and in-house
+  Risk if wrong: Medium: reports about the pipeline's own state are unreliable while duplicates exist; Tom may 'fix' a pipeline that ran, or trust one that did not.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1208
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1209:
+  Date surfaced: 2026-11-02
+  Statement: [inferred] Spend is presumed proportional to registered tasks times a flat per-run price. The cost tracker counts each task once, though 26 tasks are double-registered and several fire twice a day, and it prices runs by tier although billing is per token. The estimate is reported as a single figure ($45.60) with no range.
+  Evidence it was operative: Cost tracker 0456206c; scheduler health b7abcfd5; ASSUMPTION-2019
+  Why it was unstated: obvious to participants (task description fixes the method)
+  Type: methodological
+  Related decisions: ASSUMPTION-2019
+  Testability: testable empirically (in-house)
+  Risk if wrong: Low: budget decisions about agents (e.g., which to disable) would rest on a figure that may be off by a factor near 2.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1209
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-02 14b: PRESUMPTION-1208..1209 (epistemic 1, methodological 1; risk Medium 1, Low 1). Checked against 14a 2016-2026 and the registry. Not re-surfaced (already registered; new evidence today): on-cadence firing equals health (ecosystem report 'no agent has failed'); earliest same-day output authoritative (evening sync withheld four new items); field-presence filters across schema eras ('Status: Active'); ID uniqueness in shared folders (PROP-2026-11-02-001 collision); unattended runs presume approvals (cost tracker, lit pipeline, scheduler health); persistence as delivery.*

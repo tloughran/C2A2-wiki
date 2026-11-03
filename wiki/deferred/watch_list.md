@@ -7402,3 +7402,23 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Items checked: 0 on-cadence (none due: WATCH-003/-004 due 11-06, WATCH-005/-006 due 11-07; WATCH-006 already checked earlier today). Spot-verification: Fredrickson flagged sentence still present (2 occurrences, unchanged); `pending/` holds 7 cards, none is PROP-2026-10-01-001, PROP-2026-10-13-001 or a MacIntyre/Wonderstruck item.
   Items resolved: 0 · Still watching: 4 · Stale: 1 (WATCH-003, Escalate to Tom — unchanged) · New: 0
   Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07.
+
+## AGENT 16 RUN SUMMARY — 2026-11-03
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 2026-10-17). `review/archive/` still 28 files, latest `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL.
+  Items checked: 0 on-cadence (none due: WATCH-003/-004 due 11-06, WATCH-005/-006 due 11-07). Event sweep (not counted): Fredrickson file unchanged since 10-08; `prs_triplets.md` unchanged since 10-16; `sewing_agent_log.md` unchanged since 11-01 (next Sewing run 11-08); no vault transcript for `xZcB-tmvJaU`; `pending/` (10 cards) holds no copy of PROP-2026-10-01-001 or PROP-2026-10-13-001; no DEFERRED-HYPOTHESIS / WATCH-REQUEST markers outside the agent definition.
+  Items resolved: 0 · Still watching: 4 (WATCH-003, -004, -005, -006) · Stale: 1 (WATCH-003, 26 checks; Escalate to Tom, unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07.
+
+*Run completed 2026-11-03.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-03 (second firing, 07:40 UTC; concurrent duplicate, same result)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). `review/archive/` latest still `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL. Vault `.md` files newer than the last watch-list write (11-02 chat/cowork summaries, 11-02/11-03 changelogs, open_questions, monitor_queue, master wiki, lit-search files, 3 new `pending/` cards: Friston ×1, Levin ×2, plus `vault/transcripts/Day-146 - Right and Just.md`) were grepped for tracked IDs, `xZcB-tmvJaU`, "Wisdom of Uncertainty", `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, INTEGRITY FLAG and WATCH-003..006. Only hit: the 11-02 chat summary lists WATCH-003/005/006 as pending rulings (carry-over). No ruling, deferral or watch request.
+  Items checked: 0 on-cadence (WATCH-003/-004 due 11-06; WATCH-005/-006 due 11-07). Event sweep (not counted): no new decision file (WATCH-003); Fredrickson file unchanged since 10-08, no PROP-2026-10-01-001 in `pending/` (WATCH-004); no Wonderstruck transcript in the vault (WATCH-005); no revised PROP-2026-10-13-001 in `pending/` (WATCH-006).
+  Items resolved: 0 · Still watching: 4 · Stale: 1 (WATCH-003, 26 checks; Escalate to Tom — unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07; WATCH-006 event trigger Sewing Agent 2026-11-08.
+
+**Open for Tom (unchanged):** WATCH-003 INTEGRITY FLAG ruling; WATCH-004 Fredrickson CT-Signals edit; WATCH-005 Wonderstruck transcript; WATCH-006 Sewing selection rule / manual MacIntyre pass; ID collisions; split the ~876 KB watch list; duplicate scheduled firings.
+
+*Run completed 2026-11-03 07:40 UTC. A first instance appended its 11-03 summary between this instance's read and write. Neither write was lost, and both reached the same result. This is a third consecutive day of duplicate firings.*

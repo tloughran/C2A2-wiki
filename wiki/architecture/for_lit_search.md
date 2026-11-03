@@ -28932,3 +28932,63 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
 
 *2026-11-01: 10 items queued, 9 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1207). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-10-31T04:42:13Z by cloud-lit-2026-10-31-2; not held, append safe. No lit pipeline took the lock on 11-01.*
   Result 2026-11-02: 15a PARTIALLY-SUPPORTED (Weak); 15b PARTIALLY-CHALLENGED (Weak); DISPOSITION-1116 -> MONITOR-701 (Medium). Literature-lane item only; the 9 [IN-HOUSE] items untouched.
+
+## 2026-11-02 — 14a/14b intake (local pass)
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2016
+  Statement: [stated] Lit pipeline (local copy a69e709f): 'The pipeline didn't run today ... third skip like this in a row (Oct 31, Nov 1, Nov 2) ... Anything queued in for_lit_search.md is still waiting for the n
+  Claim to test (in-house): For 10-31, 11-01 and 11-02, list which copy (local or cloud) took the lock and what it searched; state whether any day had no pipeline run at all.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2017
+  Statement: [stated] Task counts disagree across today's reports. Scheduler health: '26 x DOUBLE-REGISTERED' (27 on 11-01). Morning status: 'twenty-four tasks flagged as double-registered' and 'all of them fired 
+  Claim to test (in-house): From one registry read, count registered, active and double-registered tasks; record which source each report used and why the figures differ.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2018
+  Statement: [stated] Levin/Friston agent: 'another run filed a Levin card two seconds before mine and took PROP-2026-11-02-001 ... I renumbered my two cards to 002 and 003 ... Two agents writing to the same pendi
+  Claim to test (in-house): Identify which task wrote PROP-2026-11-02-001 and at what time; check pending/ for other same-day ID collisions since 09-24 (the cloud move).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2019
+  Statement: [stated] Cost tracker: 'Estimated spend is about $45.60 a month' from flat per-task tiers (Heavy $0.25, Medium $0.10, Light $0.05); 'These are estimates only; actual billing is per token, not per task
+  Claim to test (in-house): Compare the $45.60 estimate with actual October usage or billing; count firings per task in October (including duplicate firings) and recompute.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2020
+  Statement: [stated] Ecosystem report: metabolism-monitor-weekly is 'disabled since about Oct 4, with no note'; 'morning-system-health reads the "New since last week" section of its findings file ... your daily h
+  Claim to test (in-house): Read the morning-system-health prompt: does it read the metabolism findings file? Record that file's mtime and whether either metabolism task fires anywhere (local or cloud).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2021
+  Statement: [stated] Ecosystem report: 'No agent has failed to run. Every active scheduled agent has a recent last-run time that matches its schedule.' and 'the system is in good shape.' The same period's reports
+  Claim to test (in-house): For each active task, compare last-run time with the last date its main output file was written; count tasks that fired but produced no output in the last 7 days.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2022
+  Statement: [stated] Evening sync (duplicate firing 4ee90ab4): found four items the first pass missed (ECI letter of intent due Nov 16; Humanity AI and DELTA deadlines passed; nd-sociogram security check blocked 
+  Claim to test (in-house): Since 10-01, list duplicate-firing addenda that contain items absent from the first delivered message; record whether each item later reached Tom by any channel.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2023
+  Statement: [stated] Reviewer review: 'the janitor says it trimmed trailing whitespace in 21 files, but 19 of them still have it'; three reviewers (ecosystem, deferred-action, periodic-monitor) have produced no r
+  Claim to test (in-house): Check the 21 files named in the janitor's 11-01 report for trailing whitespace; determine whether the fix was written to a copy that never reached the vault.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2024
+  Statement: [stated] Chat scrape: 'the latest page count (5,816 pages, 4,868 with no links) doesn't match the poster's figure of about 4,000 files and 100,000 links. Decide which number the poster quotes before i
+  Claim to test (in-house): Recount files and wikilinks in the vault with one stated definition (which folders count, whether broken links count) and reconcile with the poster's 4,000 / 100,000.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-03] [SEARCHED-15b: 2026-11-03] [DISPOSITIONED-15c: 2026-11-03] [PRESUMPTION] PRESUMPTION-1208
+  Statement: Each copy of a duplicated task presumes its own outcome is the task's outcome. The local lit pipeline reported 'didn't run today' and 'anything queued is still waiting' without reading the lock log, w
+  Claim to test: Literature lane: find primary sources on replica-local versus global status reporting in redundant schedulers (split-brain observability; health checks that report only the local node). In-house: for 10-26..11-02, list each pair of copies' reports on the same day and mark where one copy's 'did not run' or 'ran' was contradicted by the other copy's record.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1209
+  Statement: Spend is presumed proportional to registered tasks times a flat per-run price. The cost tracker counts each task once, though 26 tasks are double-registered and several fire twice a day, and it prices
+  Claim to test: In-house: count October firings per task from session history, including duplicates, and compare (a) tracker method, (b) firings x tier, (c) actual billed usage if available.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-02: 11 items queued, 10 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1208). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-02T05:41:15Z by cloud-lit-2026-11-02; not held, append safe.*
+  Result 2026-11-03: 15a PARTIALLY-SUPPORTED (Moderate general / Weak scheduler-specific); 15b PARTIALLY-CHALLENGED (Weak); DISPOSITION-1117 -> MONITOR-702 (Medium). Literature-lane item only; the 10 [IN-HOUSE] items untouched.

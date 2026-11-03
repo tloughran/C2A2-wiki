@@ -38259,3 +38259,192 @@ ASSUMPTION-2015:
     Current status: UNTESTED
 
 *2026-11-01 14a: ASSUMPTION-2004..2015 (12). Queued [IN-HOUSE]: 2004, 2005, 2006, 2007, 2010, 2012, 2013, 2014. Not queued: 2008, 2009, 2011, 2015 (recurrences or covered by queued items). No interactive session; all items from scheduled-run reports.*
+
+ASSUMPTION-2016:
+  Date identified: 2026-11-02
+  Statement: [stated] Lit pipeline (local copy a69e709f): 'The pipeline didn't run today ... third skip like this in a row (Oct 31, Nov 1, Nov 2) ... Anything queued in for_lit_search.md is still waiting for the next run.' The lock file's last line reads 'RELEASED 2026-11-02T05:41:15Z by cloud-lit-2026-11-02. PRESUMPTION-1207 searched 15a/15b; DISPOSITION-1116 -> MONITOR-701', so the cloud copy did run today.
+  Context: Lit pipeline a69e709f; review/lit_pipeline.lock read this run
+  Type: methodological
+  Related decisions: ASSUMPTION-2010; REVISE-534
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2016
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2017:
+  Date identified: 2026-11-02
+  Statement: [stated] Task counts disagree across today's reports. Scheduler health: '26 x DOUBLE-REGISTERED' (27 on 11-01). Morning status: 'twenty-four tasks flagged as double-registered' and 'all of them fired on time overnight'. Reviewer review: 'scheduler-health readings show 27'. Cost tracker: 40 scheduled tasks, 29 recurring. Ecosystem report (11-01 night): 39 registered, 28 active.
+  Context: Scheduler health b7abcfd5; morning status 268ba4f0; reviewer review b1096772; cost tracker 0456206c; ecosystem report 74c77c74
+  Type: methodological
+  Related decisions: ASSUMPTION-2008
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2017
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2018:
+  Date identified: 2026-11-02
+  Statement: [stated] Levin/Friston agent: 'another run filed a Levin card two seconds before mine and took PROP-2026-11-02-001 ... I renumbered my two cards to 002 and 003 ... Two agents writing to the same pending folder at once is worth looking into.' The wiki daily run's second firing lists PROP-2026-11-02-001..003 as 'Monday's Levin/Friston specialist cards'.
+  Context: Levin/Friston agent 08cf2168; wiki daily run b5d54a7c
+  Type: architectural
+  Related decisions: registered presumption on ID uniqueness (presumptions.md line ~1701)
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2018
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2019:
+  Date identified: 2026-11-02
+  Statement: [stated] Cost tracker: 'Estimated spend is about $45.60 a month' from flat per-task tiers (Heavy $0.25, Medium $0.10, Light $0.05); 'These are estimates only; actual billing is per token, not per task.' The report file was not saved: Desktop Commander create_directory and write_file were auto-declined, and 'the task file says not to use the workspace file tools for this write, so I made no fallback copy.'
+  Context: Cost tracker 0456206c
+  Type: empirical
+  Related decisions: ASSUMPTION-2010
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2019
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2020:
+  Date identified: 2026-11-02
+  Statement: [stated] Ecosystem report: metabolism-monitor-weekly is 'disabled since about Oct 4, with no note'; 'morning-system-health reads the "New since last week" section of its findings file ... your daily health check has probably been reading a month-old file. I haven't confirmed this.' An earlier 15d note (assumptions.md, MONITOR-688 entry) says both metabolism tasks are disabled; scheduler health has listed them as moved to the cloud.
+  Context: Ecosystem report 74c77c74
+  Type: architectural
+  Related decisions: MONITOR-688
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2020
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2021:
+  Date identified: 2026-11-02
+  Statement: [stated] Ecosystem report: 'No agent has failed to run. Every active scheduled agent has a recent last-run time that matches its schedule.' and 'the system is in good shape.' The same period's reports show tasks that fired and did not complete their main step (local lit pipeline stopped at Step 0 three days running; cost tracker wrote nothing; scheduler health 29 FAIL).
+  Context: Ecosystem report 74c77c74; lit pipeline a69e709f; cost tracker 0456206c; scheduler health b7abcfd5
+  Type: epistemic
+  Related decisions: registered presumption 'on-cadence firing equals a healthy pipeline'
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2021
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2022:
+  Date identified: 2026-11-02
+  Statement: [stated] Evening sync (duplicate firing 4ee90ab4): found four items the first pass missed (ECI letter of intent due Nov 16; Humanity AI and DELTA deadlines passed; nd-sociogram security check blocked two weeks) and wrote them to an addendum, but 'did not send a second Chat message ... These four items aren't in your walk Chat yet.'
+  Context: Evening sync 4ee90ab4
+  Type: methodological
+  Related decisions: registered presumption 'earliest same-day output is authoritative'
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2022
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2023:
+  Date identified: 2026-11-02
+  Statement: [stated] Reviewer review: 'the janitor says it trimmed trailing whitespace in 21 files, but 19 of them still have it'; three reviewers (ecosystem, deferred-action, periodic-monitor) have produced no report for the 19th week running.
+  Context: Reviewer review b1096772
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2023
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2024:
+  Date identified: 2026-11-02
+  Statement: [stated] Chat scrape: 'the latest page count (5,816 pages, 4,868 with no links) doesn't match the poster's figure of about 4,000 files and 100,000 links. Decide which number the poster quotes before it goes to print' (printer around Nov 5).
+  Context: Chat scrape a91ed538; connectivity_log.csv (11-01 snapshot)
+  Type: empirical
+  Related decisions: OPEN-286
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2024
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2025:
+  Date identified: 2026-11-02
+  Statement: [stated] Morning system health: 'The process and memory checks run inside a sandbox that can't see your Mac's apps. So uptime, CPU, RAM and "nothing unusual" only describe the sandbox ... It's been that way on every run.' Also: summa_index.json lacks the Day-001 and Day-035 syntheses; wiki/inbox/rc_sandbox/cell_dates.json held uncommitted since at least Oct 29.
+  Context: Morning system health a9a5d141
+  Type: methodological
+  Related decisions: none
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2025
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2026:
+  Date identified: 2026-11-02
+  Statement: [stated] Recurrences: voice-shell RED 6/400 now on main@2816ca96 (fifth commit with the same 6 failures); com.tomloughran.openstory.ui not loaded; 6 stranded git tmp_obj files; scheduler health again advises disabling local entries while REVISE-534 awaits Tom; duplicate firings today: evening sync, wiki daily run (third morning running), reviewer review, scheduler health; wiki daily run reports the sandbox disk 97% full (332 MB free), 'how the device_bash failures of 2026-10-04 started'; Levin/Friston prompt path lacks 'Projects/'; morning-walk handoff filters findings on 'Status: Active', which FINDING-080..111 lack; WATCH-006 skipped by the Sewing Agent the second Sunday running; WATCH-003 at 26 checks; watch list 869 KB; cloud 14a/14b NO-OP again (filed as changelog/2026-11-03_changes.md, UTC date); this task's prompt still says '.../Wiki'.
+  Context: All sessions above
+  Type: architectural
+  Related decisions: REVISE-534; OPEN-273
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2026
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-02 14a: ASSUMPTION-2016..2026 (11). Queued [IN-HOUSE]: 2016-2024. Not queued: 2025, 2026 (stated limitation / recurrences). No interactive session; all items from scheduled-run reports.*

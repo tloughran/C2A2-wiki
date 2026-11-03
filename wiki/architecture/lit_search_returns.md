@@ -52140,3 +52140,42 @@ DISPOSITION-1116:
 ### Evidence-quality notes (2026-11-02)
 - One orchestrator ran 15a, 15b, 15c in sequence; the 15b file was written without reading the 15a file, but independence is procedural, not subagent-separated.
 - 3 searches, all title-only hits, 0 fetches. PRELIMINARY. No INCORPORATE issued. The 9 in-house items from 11-01 were not touched (not literature scope). Backlog untouched.
+
+## 15a/15b/15c run 2026-11-03
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1208
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (general pattern) / Weak (scheduler-specific)
+  Key source: Huang et al., 2017, "Gray Failure: The Achilles' Heel of Cloud-Scale Systems," HotOS XVI (differential observability; read via fetch summary)
+  Summary: An observer with a partial view can report healthy while the system is not, and some failures are detectable only across components; the analogy to a copy reporting its own outcome as the task's is direct but no LLM-agent or replicated-cron source was read.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1208
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Beyer et al. (eds.), 2016, Site Reliability Engineering, ch. 24 "Distributed Periodic Scheduling with Cron" (fetched; summary read)
+  Specific risk: Reading the lock log may replace one unchecked claim with another if the log is not authoritative (fencing literature, title-only); and where one copy is meant to act, another copy's "did not run" is the intended state.
+  Summary: Nothing found says whole-task claims from a local view are acceptable; the challenge is about scope and about what counts as the authoritative record.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1117:
+  Date: 2026-11-03
+  Item: PRESUMPTION-1208
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (general) / Weak (specific)
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: The general pattern has one read primary source behind it; the challenge is about scoping the claim and the authority of the lock log, not refutation. The scheduler-specific and LLM-agent claims have no read source on either side.
+  Disposition: MONITOR (MONITOR-702 (Medium))
+  Reasoning: Support is moderate only for the general pattern and the rest is title-only, so INCORPORATE would overreach. A weak challenge on a presumption does not meet the REVISE heuristic. The in-house comparison for 10-26..11-02 is the better test and has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md
+
+### Evidence-quality notes (2026-11-03)
+- One orchestrator ran 15a, 15b, 15c in sequence; the 15b searches were run after the 15a file was written and did not use its content, but independence is procedural, not subagent-separated.
+- 15a: 3 searches, 1 fetch; 15b: 3 searches, 1 fetch. Most sources title-only. PRELIMINARY. No INCORPORATE issued. No validated-premise consistency check was needed. The 10 in-house items from 11-02 were not touched (not literature scope). Backlog untouched (unchanged from prior runs; "all queued items searched" is NOT met for the backlog).

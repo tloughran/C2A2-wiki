@@ -3905,3 +3905,15 @@ OPEN-285:
     Original item: OPEN-285
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-286:
+  Raised: 2026-11-02 by 14a (ASSUMPTION-2024)
+  Question: Which figures does the ACPA poster quote for the wiki's size: the 11-01 connectivity count (5,816 pages, 4,868 orphans) or the poster's ~4,000 files / ~100,000 links? State the counting definition used. Decide before the poster goes to the printer (~2026-11-05).
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-286
+    Item type: OPEN QUESTION
+    Current status: OPEN
