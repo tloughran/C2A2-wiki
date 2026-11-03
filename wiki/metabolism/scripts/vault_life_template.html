@@ -163,6 +163,9 @@ function render(now,perSec){
  ctx.fillStyle='#ffffff';ctx.font='600 46px Inter, Helvetica, Arial, sans-serif';ctx.textAlign='left';ctx.textBaseline='alphabetic';
  ctx.fillText(fmt(now),60,96);
  ctx.font='400 18px Inter, Helvetica, Arial, sans-serif';ctx.fillStyle='rgba(255,255,255,0.5)';ctx.fillText('C2A2 — the vault, day by day',60,128);
+ ctx.font='400 14px Inter, Helvetica, Arial, sans-serif';ctx.fillStyle='rgba(255,255,255,0.32)';
+ ctx.fillText('Data: agent runs from OpenStory telemetry; files and wikilinks from git history;',60,152);
+ ctx.fillText('signals, triplets, Summa and Heartbeat from the vault itself',60,171);
  const runs=nr,files=nf,sigs=ns,prs=np;
  const rows=[[files,'files in the vault'],[runs,'agent runs'],[prs,'PRS triplets'],[sigs,'cross-tradition signals']];
  ctx.textAlign='right';let yy=80;
@@ -170,7 +173,7 @@ function render(now,perSec){
   ctx.fillStyle='rgba(255,255,255,0.55)';ctx.font='400 18px Inter, Helvetica, Arial, sans-serif';ctx.textAlign='left';ctx.fillText(l,1714,yy);ctx.textAlign='right';yy+=48;}
  const nl=lowerBound(LINKS,now);const links=nl>0?LINKS[nl-1].cum:0;const nhb=lowerBound(HB,now);
  const left=[[links,'wikilinks written'],[nhb,'AI Heartbeat items captured']];
- let ly=200;ctx.textAlign='left';
+ let ly=232;ctx.textAlign='left';
  for(const [n,l] of left){ctx.fillStyle='#ffffff';ctx.font='600 36px Inter, Helvetica, Arial, sans-serif';ctx.fillText(n.toLocaleString(),60,ly);
   ctx.fillStyle='rgba(255,255,255,0.55)';ctx.font='400 18px Inter, Helvetica, Arial, sans-serif';ctx.fillText(l,60,ly+26);ly+=76;}
  ctx.textAlign='center';ctx.fillStyle='rgba(255,255,255,0.28)';ctx.font='500 14px Inter, Helvetica, Arial, sans-serif';
