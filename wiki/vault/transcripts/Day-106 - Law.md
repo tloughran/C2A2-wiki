@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-106 - Law - Contemporary]]"
 tags: [summa, day/106, pars/I-II, q/90, q/91]
 fidelity_checked: true
-last_qc_at: "2026-10-06T14:27:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-02T04:21:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 106 — Law (Q.90-91)
@@ -54,6 +54,6 @@ Thus the formal definition closing Q.90: **law is an ordinance of reason, for th
 
 - The structure of the whole treatise on law is set here: essence (Q.90) and kinds (Q.91), with each subsequent question (Q.92-108) elaborating one effect or kind.
 - The five-fold typology is now in place: eternal, natural, human, divine (Old + New), fomes.
-- The "imprint of the Divine Light" image (Q.91 a.2) is the participation/illumination theme that links Aquinas to the broader Platonic-Augustinian tradition; it pairs naturally with Levin's "morphogenetic field" and Hoffman's "interface" — different vocabularies for "form/pattern that is more fundamental than the medium and gives rise to lawful behavior."
+- The "imprint of the Divine Light" image (Q.91 a.2) is the participation/illumination theme that links Aquinas to the broader Platonic-Augustinian tradition.
 - The host's contemporary examples (sexual ethics, drug legalization in Denver) carry tradition-specific value judgments. The synthesis should keep them flagged as illustrations rather than as natural-law conclusions per se.
-- Article 6 sets up the central problem that grace will eventually answer: a creature whose nature was perspicuously oriented by reason, but whose perspective is now darkened, divided against itself. The "fomes" articulation is the medieval anticipation of what active-inference frameworks call resource-bounded prediction-error under conflicting priors.
+- Article 6 sets up the central problem that grace will eventually answer: a creature whose nature was perspicuously oriented by reason, but whose perspective is now darkened, divided against itself.
