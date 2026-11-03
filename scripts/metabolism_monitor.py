@@ -600,6 +600,18 @@ def regen(db_path):
             json.dump(d, fh, indent=2)
     except (OSError, ValueError, KeyError):
         pass
+    # Vault Life page (Metabolism > Vault Life subtab). Reads the file just
+    # written plus git history, so it runs here, after the builder. A failure
+    # is a loud WARN, never a failed regen: the charts still publish.
+    vault_life = PROJECT_ROOT / "scripts" / "video" / "build_vault_timeline.py"
+    if vault_life.exists():
+        r = subprocess.run([sys.executable, str(vault_life)], capture_output=True,
+                           text=True, cwd=str(PROJECT_ROOT))
+        if r.returncode != 0:
+            sys.stderr.write("WARN: vault_life page NOT rebuilt (build_vault_timeline.py exit %d)\n%s\n"
+                             % (r.returncode, r.stderr[-2000:]))
+        else:
+            print("[regen] vault_life page rebuilt")
 
 
 def main():
