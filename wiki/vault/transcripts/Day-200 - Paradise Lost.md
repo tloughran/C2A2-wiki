@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-200 - Paradise Lost - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/200, pars/II, q/164, q/165]
-last_qc_at: "2026-10-07T04:17:27"
+last_qc_at: "2026-11-03T16:17:22"
 last_qc_outcome: "pass"
 ---
 
