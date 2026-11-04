@@ -52179,3 +52179,42 @@ DISPOSITION-1117:
 ### Evidence-quality notes (2026-11-03)
 - One orchestrator ran 15a, 15b, 15c in sequence; the 15b searches were run after the 15a file was written and did not use its content, but independence is procedural, not subagent-separated.
 - 15a: 3 searches, 1 fetch; 15b: 3 searches, 1 fetch. Most sources title-only. PRELIMINARY. No INCORPORATE issued. No validated-premise consistency check was needed. The 10 in-house items from 11-02 were not touched (not literature scope). Backlog untouched (unchanged from prior runs; "all queued items searched" is NOT met for the backlog).
+
+## 15a/15b/15c run 2026-11-04
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1210
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (general pattern) / Weak (LLM-agent or file-lock schedulers)
+  Key source: Beyer et al., 2016, Site Reliability Engineering, ch. 24 "Distributed Periodic Scheduling with Cron" (fetched; summary read); Hochstein 2025 on leases and fencing (fetched; summary read)
+  Summary: The literature builds quorum-recorded, schedule-keyed launches so a successor never has to infer that the first copy finished; leases show an apparent holder may still act. Wait-and-check is not treated as a guarantee. No LLM-agent source found.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1210
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Beyer et al., 2016, ch. 24 (some jobs idempotent, skipping favored over double launch); Hochstein 2025 (fencing tokens do not fully prevent overlap)
+  Specific risk: If writes are idempotent or keyed by launch, separability is unnecessary; heavier lease/fencing remedies are themselves fallible and heavy for a single-machine wiki.
+  Summary: Nothing found defends wait-and-check as a guarantee; the challenge is that safety can come from idempotent keyed writes instead.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1118:
+  Date: 2026-11-04
+  Item: PRESUMPTION-1210
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (general) / Weak (specific)
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both directions rest on the same two read summaries. Support says wait-and-check is not a guarantee; challenge says idempotent keyed writes make the guarantee unnecessary. They agree the presumption is unsafe as stated and differ on the remedy.
+  Disposition: MONITOR (MONITOR-703 (Medium))
+  Reasoning: Support is moderate for the general pattern only and nothing concerns LLM-agent schedulers, so INCORPORATE would overreach. The challenge is weak and does not refute the presumption, so REVISE is not met. The decisive test is the in-house 10-26..11-03 overlap comparison, which has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md
+
+### Evidence-quality notes (2026-11-04)
+- One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared between the two passes, so independence is procedural only.
+- 4 searches, 2 fetches (summaries). PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The 11 other in-house items queued 11-03 were not touched (not literature scope). Backlog untouched ("all queued items searched" is NOT met for the backlog).

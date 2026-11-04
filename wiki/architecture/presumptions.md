@@ -26323,3 +26323,65 @@ PRESUMPTION-1209:
     Current status: UNTESTED
 
 *2026-11-02 14b: PRESUMPTION-1208..1209 (epistemic 1, methodological 1; risk Medium 1, Low 1). Checked against 14a 2016-2026 and the registry. Not re-surfaced (already registered; new evidence today): on-cadence firing equals health (ecosystem report 'no agent has failed'); earliest same-day output authoritative (evening sync withheld four new items); field-presence filters across schema eras ('Status: Active'); ID uniqueness in shared folders (PROP-2026-11-02-001 collision); unattended runs presume approvals (cost tracker, lit pipeline, scheduler health); persistence as delivery.*
+
+PRESUMPTION-1210:
+  Date surfaced: 2026-11-03
+  Statement: [inferred] Duplicate copies of a task are presumed temporally separable: the second copy is called harmless because it 'waits and only checks', which holds only if it can tell when the first copy has finished. The wiki daily run waited about two minutes for a run 'still finishing'; the deferred monitor's two copies wrote to watch_list.md at the same moment. Is 'waits, then verifies' a guarantee, or a timing habit that has so far worked?
+  Evidence it was operative: Wiki daily run 6f51ed65 ('I waited about two minutes for it to complete'); deferred monitor 11a7e73e (simultaneous writes; Nov 1 mid-write collision); ASSUMPTION-2031
+  Why it was unstated: obvious to participants (each copy sees itself as the careful one)
+  Type: methodological
+  Related decisions: ASSUMPTION-2031; ASSUMPTION-2018; REVISE-534
+  Testability: testable via literature + in-house
+  Risk if wrong: Medium: if the wait is only a habit, a slow first copy and a 'verification' second copy can interleave writes to shared files (watch_list.md, PROCESSED_LOG.md).
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1210
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-03 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1211:
+  Date surfaced: 2026-11-03
+  Statement: [inferred] A proposal is presumed to carry its evidence tier with it. The Hoffman specialist states plainly that one card rests on an abstract and another on an episode description and chapter titles, but the card then enters pending/ alongside cards built from full sources, and one supersedes an earlier card. Does anything downstream (review page, approval, triplet count) see or weigh the tier?
+  Evidence it was operative: Hawkins/Hoffman agent eedd95b5; ASSUMPTION-2030 ('the triplets rest only on the episode description and its 21 chapter titles')
+  Why it was unstated: culturally embedded (disclosure in prose feels like disclosure in data)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2030
+  Testability: testable empirically (in-house)
+  Risk if wrong: Medium: description-tier triplets could be counted in the 1102 total and in cross-connections as if first-hand, inflating apparent coverage of a thinker's actual claims.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1211
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-03 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1212:
+  Date surfaced: 2026-11-03
+  Statement: [inferred] Morning summaries presume their reader will reconcile them with the detailed reports. Morning project status told Tom 'every one that was due has fired on time' and 'eight tasks' double-registered, an hour after scheduler health listed 29 FAILs and 27 double registrations; the summary names no source for its figures. Is the one-paragraph morning message treated as a faithful digest of the day's health checks?
+  Evidence it was operative: Morning project status f0c9fbcb vs scheduler health 3bdbc789; ASSUMPTION-2027
+  Why it was unstated: oversight (a short greeting reads as reassurance, not as a measurement)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2027; ASSUMPTION-2017
+  Testability: testable empirically (in-house)
+  Risk if wrong: Low-Medium: Tom may act on the softer figure (8 vs 27) when deciding the REVISE-534 cleanup.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1212
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-03 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-03 14b: PRESUMPTION-1210..1212 (methodological 1, epistemic 2; risk Medium 2, Low-Medium 1). Checked against 14a 2027-2034 and the registry. Not re-surfaced (already registered; new evidence today): each copy's outcome taken as the task's (PRESUMPTION-1208: local lit skip vs cloud run, fourth day); field-presence filters across schema eras ('Status:' on FINDING-005..035 only); unattended runs presume approvals (Desktop Commander auto-declined for lit pipeline and scheduler health; browser selection for evening sync); persistence as delivery (evening sync wrote but did not deliver).*

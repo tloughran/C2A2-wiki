@@ -25705,3 +25705,14 @@ MONITOR-702:
   Monitoring cadence: Weekly (default); first check due 2026-11-10
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md
+
+MONITOR-703:
+  Date: 2026-11-04
+  Source item: PRESUMPTION-1210 (DISPOSITION-1118)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: SRE ch. 24 and lease/fencing literature show wait-and-check is not a guarantee (Moderate general, Weak specific). 15b: idempotent keyed writes and skip-favoring designs make separability unnecessary; fencing is itself fallible (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a second copy is harmless only if register writes are idempotent by item and date or it exits without writing, and it reads a lock line with holder identity') a read of Kleppmann in full plus the in-house 10-26..11-03 overlap comparison showing no lost or duplicated entries; (-> REVISE) that comparison showing overlapping copies lost or duplicated register entries.
+  Monitoring cadence: Weekly (default); first check due 2026-11-11
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md

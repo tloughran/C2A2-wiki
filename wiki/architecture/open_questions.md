@@ -3917,3 +3917,15 @@ OPEN-286:
     Original item: OPEN-286
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-287:
+  Raised: 2026-11-03 by 14a (ASSUMPTION-2028)
+  Question: Which connected Chrome browser ("Browser 1" or "Browser 2") should scheduled runs use for delivery to the walk Chat? The evening sync reports it cannot choose unattended, so summaries are written but not delivered. Does a selection made once in an attended session persist for scheduled runs?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-287
+    Item type: OPEN QUESTION
+    Current status: OPEN

@@ -28992,3 +28992,51 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
 
 *2026-11-02: 11 items queued, 10 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1208). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-02T05:41:15Z by cloud-lit-2026-11-02; not held, append safe.*
   Result 2026-11-03: 15a PARTIALLY-SUPPORTED (Moderate general / Weak scheduler-specific); 15b PARTIALLY-CHALLENGED (Weak); DISPOSITION-1117 -> MONITOR-702 (Medium). Literature-lane item only; the 10 [IN-HOUSE] items untouched.
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2027
+  Statement: [stated] Morning project status f0c9fbcb: 'every one that was due has fired on time' and 'It still flags eight tasks, this one included, as set up both locally and in the cloud.' Scheduler health 3bdbc789, sam
+  Claim to test (in-house): Define 'double-registered' once (registry entry enabled AND cloud trigger present) and count it from the registry files; reconcile with 8 (morning status) and 27 (scheduler health).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2028
+  Statement: [stated] Evening sync 538ad48a: 'two Chrome browsers are connected ("Browser 1" and "Browser 2"), and none is selected for scheduled runs. Choosing one needs you, so I didn't. If you pick one once in a session
+  Claim to test (in-house): Since 10-20, list evening-sync runs whose summary was written but not delivered to the walk Chat, with the stated cause; check whether one browser selection persists across scheduled runs.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2029
+  Statement: [stated] Morning walk handoff 5567f082: 'only FINDING-005 through 035 have a Status: line. FINDING-036 through 110 use a newer format without one, so the active count above leaves them out.' And: 'the master w
+  Claim to test (in-house): Count FINDING headers and Status lines in flags/pattern_detector_findings.md; reconcile with the master wiki's 111; state which findings are live.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2030
+  Statement: [stated] Hoffman specialist eedd95b5: PROP-2026-11-03-001 rests on 'the published abstract only; I found no recording'; PROP-2026-11-03-002 'The YouTube page was blocked this run, so the episode was not watche
+  Claim to test (in-house): For proposals since 10-01, tag the evidence tier (full source / transcript / abstract or description only) and compare approval rates by tier.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2031
+  Statement: [stated] Wiki daily run 6f51ed65 (second firing): 'It does no harm, because the second copy waits and only checks.' Deferred-action monitor 11a7e73e, same day: 'another copy of this task ran at the same moment
+  Claim to test (in-house): For each duplicate-fired task 10-26..11-03, record whether both copies wrote to the same file and whether any write was lost or interleaved.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2032
+  Statement: [stated] Morning system health b329aeaf: 'The janitor found 347 new broken wikilinks. Most are bare names like [[Levin]] or placeholders like [[Agent Name]].' And: 'community_explorer.html says 156 curated com
+  Claim to test (in-house): Count communities in the explorer data file vs the HTML label; sample the 347 broken links and classify (bare name / placeholder / real target missing).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-04] [SEARCHED-15b: 2026-11-04] [DISPOSITIONED-15c: 2026-11-04] [PRESUMPTION] PRESUMPTION-1210
+  Statement: Duplicate copies of a task are presumed temporally separable: the second copy is called harmless because it 'waits and only checks', which holds only if it can tell when the first copy has finished. T
+  Claim to test: Literature lane: primary sources on at-most-once execution for cron/scheduler duplicates (leases, fencing tokens, idempotent writes) versus wait-and-check heuristics. In-house: list second-copy start times against first-copy completion times, 10-26..11-03.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1211
+  Statement: A proposal is presumed to carry its evidence tier with it. The Hoffman specialist states plainly that one card rests on an abstract and another on an episode description and chapter titles, but the ca
+  Claim to test: In-house: check whether the proposal schema or review page has an evidence-tier field; count description/abstract-only triplets among approved PRS since 10-01.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1212
+  Statement: Morning summaries presume their reader will reconcile them with the detailed reports. Morning project status told Tom 'every one that was due has fired on time' and 'eight tasks' double-registered, an
+  Claim to test: In-house: for 10-27..11-03, compare each morning-status figure with the same-day scheduler-health figure and note which source each cites.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-03: 9 items queued, 8 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1210). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-03T05:41:39Z by cloud-lit-2026-11-03; not held, append safe.*
+*2026-11-04: 1 literature-lane item (PRESUMPTION-1210) searched and dispositioned MONITOR-703; 11 [IN-HOUSE] items untouched. Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-03T05:41:39Z by cloud-lit-2026-11-03; not held, append safe.*
