@@ -116,7 +116,7 @@
 <header class="topbar">
   <span class="mark">C2A2</span>
   <span class="ttl">Inter-Tradition Dialogue Study</span>
-  <span class="doctabs" id="doctabs"><button data-doc="study" class="active">Study</button><button data-doc="replication">Replication N=38</button></span>
+  <span class="doctabs" id="doctabs"><button data-doc="study" class="active">Study</button><button data-doc="replication">Replication N=38</button><button data-doc="physicalism" data-frame="rival/physicalism/index.html">Physicalism</button></span>
   <span class="spacer"></span>
   <button onclick="document.getElementById('help').classList.add('on')">? &nbsp;What is this</button>
 </header>
@@ -124,6 +124,12 @@
 <div class="layout">
   <nav class="toc" id="toc"><h4>Contents</h4></nav>
   <main class="article" id="article"><p style="color:var(--muted)">Rendering&hellip;</p></main>
+</div>
+<!-- DOC: PHYSICALISM -- the simulated rival-tradition dialogue (wiki/rival/physicalism/, rendered by
+     its own index.html, which fetches the vault markdown). Lazy: the frame loads on first open. -->
+<div id="doc-frame-wrap" hidden>
+  <iframe id="doc-frame" title="Physicalism: a simulated rival-tradition dialogue"
+          style="width:100%;height:calc(100vh - 56px);border:0;display:block;background:var(--bg)"></iframe>
 </div>
 
 <div class="overlay" id="help" onclick="if(event.target===this)this.classList.remove('on')">
@@ -1435,7 +1441,23 @@ store; the specific figures reported here are of course tied to this one.
   }
   marked.setOptions({ gfm:true, breaks:false, headerIds:true, mangle:false });
 
+  var layout = document.querySelector('.layout');
+  var frameWrap = document.getElementById('doc-frame-wrap');
+  var frame = document.getElementById('doc-frame');
+
   function render(key){
+    // A doc button with data-frame shows a separate page in a lazy iframe instead of an inline document.
+    var btn = tabs.filter(function(b){ return b.getAttribute('data-doc') === key; })[0];
+    var framed = btn && btn.getAttribute('data-frame');
+    if (framed) {
+      if (obs) { obs.disconnect(); obs = null; }
+      if (!frame.src) frame.src = framed + '?v=' + Date.now();
+      layout.style.display = 'none'; frameWrap.hidden = false;   // .layout is display:grid in CSS, so [hidden] alone would not hide it
+      tabs.forEach(function(b){ b.classList.toggle('active', b === btn); });
+      window.scrollTo(0, 0);
+      return;
+    }
+    layout.style.display = ''; frameWrap.hidden = true;
     var src = document.getElementById('doc-' + key);
     if (!src) return;
     if (obs) { obs.disconnect(); obs = null; }
@@ -1492,7 +1514,7 @@ store; the specific figures reported here are of course tied to this one.
 
   // deep link: #doc=<key> selects a tab; anything else is a heading anchor in the first doc
   var want = (location.hash.match(/^#doc=([a-z0-9_-]+)$/i) || [])[1];
-  render(want && document.getElementById('doc-' + want) ? want : tabs[0].getAttribute('data-doc'));
+  render(want && tabs.some(function(b){ return b.getAttribute('data-doc') === want; }) ? want : tabs[0].getAttribute('data-doc'));
 
   // esc closes help
   document.addEventListener('keydown', function(e){

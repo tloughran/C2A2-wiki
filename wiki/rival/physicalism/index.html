@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Physicalism: a simulated rival-tradition dialogue — C2A2</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+<style>
+  :root{ --bg:#0a0a0f; --panel:#12121a; --ink:#d9d9e2; --muted:#9a9aa8;
+         --gold:#C9A84C; --rule:#26263a; --accent:#5B7FA5; --carroll:#4E8A5E; --link:#8c8; }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);}
+  body{font:16px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif;-webkit-font-smoothing:antialiased;}
+  a{color:var(--accent);text-decoration:none;} a:hover{text-decoration:underline;}
+  .layout{display:grid;grid-template-columns:250px minmax(0,1fr);}
+  nav.side{position:sticky;top:0;height:100vh;overflow:auto;padding:16px 14px 40px;border-right:1px solid var(--rule);
+           font:13px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;}
+  nav.side h4{margin:14px 0 4px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:11px;}
+  nav.side h4:first-child{margin-top:0;}
+  nav.side a{display:block;padding:3px 6px;border-radius:4px;color:var(--ink);}
+  nav.side a:hover{background:var(--panel);text-decoration:none;}
+  nav.side a.active{color:var(--gold);background:var(--panel);}
+  nav.side .tag{color:var(--muted);font-size:11px;margin-left:4px;}
+  main.article{padding:26px 46px 120px;min-width:0;max-width:960px;}
+  .status{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--carroll);border-radius:8px;
+          padding:12px 16px;margin:0 0 22px;font:14px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--muted);}
+  .status b{color:var(--ink);} .status .n{color:var(--gold);font-weight:600;}
+  .meta{font:12px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--muted);margin:0 0 14px;}
+  h1,h2,h3{color:var(--gold);line-height:1.25;} h1{font-size:28px;} h2{font-size:21px;margin-top:34px;} h3{font-size:17px;}
+  blockquote{border-left:3px solid var(--rule);margin:0;padding-left:14px;color:var(--muted);}
+  code{background:var(--panel);padding:0 4px;border-radius:3px;font-size:14px;}
+  pre{background:var(--panel);padding:12px;border-radius:6px;overflow:auto;font-size:13px;}
+  table{border-collapse:collapse;font-size:14px;} td,th{border:1px solid var(--rule);padding:4px 8px;vertical-align:top;}
+  .wl{color:var(--link);} .wl:before{content:"[[";color:var(--muted);} .wl:after{content:"]]";color:var(--muted);}
+  .err{color:#c88;}
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;}
+    nav.side{position:static;height:auto;border-right:none;border-bottom:1px solid var(--rule);
+             display:flex;flex-wrap:wrap;gap:2px 8px;align-items:center;}
+    nav.side h4{width:100%;margin:8px 0 2px;}
+    main.article{padding:20px 18px 100px;}
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="side" id="nav"></nav>
+  <main class="article">
+    <div class="status" id="status">Loading the candidate ledger&hellip;</div>
+    <div class="meta" id="meta"></div>
+    <div id="out"><p style="color:var(--muted)">Rendering&hellip;</p></div>
+  </main>
+</div>
+<script>
+(function(){
+  // Every file here is fetched from this folder: wiki/rival/physicalism/. The vault copy is the source;
+  // nothing is inlined, so a regenerated or edited file shows on the next load.
+  var FILES = {
+    'Tradition': [
+      ['wiki.md','Core wiki'],
+      ['curriculum.md','Curriculum'],
+      ['prs_triplets.md','PRS triplets'],
+      ['responses.md','Responses to objections']
+    ],
+    'Dialogues': [
+      ['dialogues/kastrup.md','vs Kastrup'],
+      ['dialogues/hoffman.md','vs Hoffman-Prakash'],
+      ['dialogues/levin.md','vs Levin']
+    ],
+    'Members': [
+      ['members/carroll.md','Carroll','centre'],
+      ['members/dennett.md','Dennett'],
+      ['members/paul-churchland.md','Paul Churchland'],
+      ['members/patricia-churchland.md','Patricia Churchland'],
+      ['members/weinberg.md','Weinberg'],
+      ['members/papineau.md','Papineau'],
+      ['members/frankish.md','Frankish'],
+      ['members/graziano.md','Graziano'],
+      ['members/seth.md','Seth'],
+      ['members/ismael.md','Ismael'],
+      ['members/sapolsky.md','Sapolsky'],
+      ['members/kim.md','Kim','argument only'],
+      ['members/tegmark.md','Tegmark','boundary'],
+      ['members/list.md','List','agency only']
+    ]
+  };
+  var LEDGER = ['responses.md','dialogues/kastrup.md','dialogues/hoffman.md','dialogues/levin.md'];
+  var CAND = /CAND-[A-Z]+-(CONC|AGR|ANS|OPEN)-\d+/g;
+
+  var nav = document.getElementById('nav'), out = document.getElementById('out'),
+      meta = document.getElementById('meta'), status = document.getElementById('status');
+
+  Object.keys(FILES).forEach(function(g){
+    var h = document.createElement('h4'); h.textContent = g; nav.appendChild(h);
+    FILES[g].forEach(function(f){
+      var a = document.createElement('a'); a.href = '#' + f[0]; a.textContent = f[1];
+      if (f[2]) { var s = document.createElement('span'); s.className='tag'; s.textContent = f[2]; a.appendChild(s); }
+      nav.appendChild(a);
+    });
+  });
+
+  if (typeof marked === 'undefined') {
+    out.innerHTML = '<p class="err">Renderer failed to load (marked.js CDN unreachable). The files are plain markdown in this folder.</p>';
+    return;
+  }
+  marked.setOptions({ gfm:true, breaks:false, headerIds:false, mangle:false });
+
+  function bust(){ return '?v=' + Date.now(); }
+  function fetchText(f){ return fetch(f + bust()).then(function(r){ if(!r.ok) throw new Error(r.status + ' ' + f); return r.text(); }); }
+  function splitFront(t){ var m = t.match(/^---\n([\s\S]*?)\n---\n/); return m ? {fm:m[1], body:t.slice(m[0].length)} : {fm:'', body:t}; }
+  function uniq(arr){ var s={}; (arr||[]).forEach(function(x){ s[x]=1; }); return Object.keys(s); }
+
+  // Ledger: computed from the files, never hand-typed. Counts distinct candidate ids and how many
+  // certification lines read "pending" vs "certified".
+  Promise.all(LEDGER.map(fetchText)).then(function(texts){
+    var ids = [], pend = 0, cert = 0, byType = {CONC:0,AGR:0,ANS:0,OPEN:0};
+    texts.forEach(function(t){
+      uniq(t.match(CAND)).forEach(function(id){ ids.push(id); byType[id.split('-')[2]]++; });
+      pend += (t.match(/Certification:[^\n]*pending/gi)||[]).length;
+      cert += (t.match(/Certification:[^\n]*certified/gi)||[]).length;
+    });
+    var n = uniq(ids).length;
+    status.innerHTML =
+      '<b>A simulated dialogue.</b> The speakers are two traditions, not two people: a Carroll-centred physicalism written from the inside '
+      + 'by an agent, meeting the vault’s records of three conscious-realist programs. Everything it produced is a <b>candidate</b> '
+      + '(for concession, agreement, answer, or open question). On MacIntyre’s account there is no neutral ground from which to judge '
+      + 'between traditions, so nothing here is a verdict; a candidate counts only once mature members of <i>both</i> traditions certify it. '
+      + '<br>Ledger, read from the files now: <span class="n">' + n + '</span> candidates '
+      + '(' + byType.CONC + ' concession, ' + byType.AGR + ' agreement, ' + byType.ANS + ' answer, ' + byType.OPEN + ' open) · '
+      + 'certification lines: <span class="n">' + cert + '</span> certified, <span class="n">' + pend + '</span> pending.';
+  }).catch(function(e){ status.innerHTML = '<span class="err">Ledger could not be read: ' + e.message + '</span>'; });
+
+  function load(){
+    var f = location.hash.slice(1) || 'wiki.md';
+    var known = Object.keys(FILES).some(function(g){ return FILES[g].some(function(x){ return x[0] === f; }); });
+    if (!known) f = 'wiki.md';
+    Array.prototype.forEach.call(nav.querySelectorAll('a'), function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + f); });
+    fetchText(f).then(function(t){
+      var p = splitFront(t), body = p.body;
+      // [[vault links]] point into the main vault, which this folder does not route to; shown, not linked.
+      body = body.replace(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g, function(_, tgt, label){
+        return '<span class="wl" title="' + tgt.replace(/"/g,'&quot;') + '">' + (label || tgt) + '</span>';
+      });
+      var words = body.split(/\s+/).filter(Boolean).length;
+      var unv = (body.match(/\[UNVERIFIED\]/g)||[]).length;
+      var cands = uniq(body.match(CAND)).length;
+      meta.textContent = f + ' · ' + words.toLocaleString() + ' words'
+        + (unv ? ' · ' + unv + ' [UNVERIFIED]' : '')
+        + (cands ? ' · ' + cands + ' candidates' : '')
+        + (p.fm ? ' · ' + p.fm.replace(/\n/g,' ; ').slice(0,140) : '');
+      out.innerHTML = marked.parse(body);
+      window.scrollTo(0,0);
+    }).catch(function(e){ out.innerHTML = '<p class="err">Could not load ' + f + ': ' + e.message + '</p>'; });
+  }
+  window.addEventListener('hashchange', load);
+  load();
+})();
+</script>
+</body>
+</html>
