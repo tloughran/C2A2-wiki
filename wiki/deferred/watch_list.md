@@ -7442,3 +7442,24 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07.
 
 *Duplicate firing appended after the ~07:38 instance. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-05
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). `review/archive/` still 28 files, latest `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL. Vault `.md` files newer than the last watch-list write (PROCESSED_LOG, 11-04 cowork/chat summaries, open_questions, monitor_queue, 11-04/11-05 changelogs, master wiki, assumptions/presumptions, lit-search files, 5 new 11-04 `pending/` cards, ~20 `vault/transcripts/Day-*` Aquinas files) were grepped for tracked IDs, `xZcB-tmvJaU`, "Wisdom of Uncertainty", `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, WATCH-003..006. Hits are carry-over only (status lists, ID-collision notes); no ruling, deferral or watch request.
+  Items checked: 0 on-cadence (WATCH-003/-004 due 11-06; WATCH-005/-006 due 11-07). Event sweep (not counted): no new decision file (WATCH-003); Fredrickson file unchanged since 10-08, no PROP-2026-10-01-001 in `pending/` (17 cards) (WATCH-004); no Wonderstruck transcript in vault (WATCH-005); `prs_triplets.md` unchanged since 10-16, `sewing_agent_log.md` unchanged since 11-01, no revised PROP-2026-10-13-001 in `pending/` (WATCH-006).
+  Collateral note for WATCH-005's context-to-attach (not a condition change): the "Faustian bargain of AI" talk (YouTube 3nWw91wErsc) is now carded separately as PROP-2026-11-04-001 (`pending/2026-11-04_mcgilchrist_faustian-bargain-of-ai.md`). WATCH-005 recorded that talk as "probably duplicates PROP-2026-09-29-002". That ID resolves to two approved files (Wolfram future-pure-math and McGilchrist UnHerd live AI-vs-soul), and neither contains `3nWw91wErsc`, so the duplicate presumption is unconfirmed and that ID is itself a collision. Reviewer should judge overlap on the 11-04 card; Agent 16 does not evaluate content.
+  Items resolved: 0 · Still watching: 4 (WATCH-003, -004, -005, -006) · Stale: 1 (WATCH-003, 26 checks; Escalate to Tom, unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07; WATCH-006 event trigger Sewing Agent 2026-11-08.
+
+**Open for Tom (unchanged):** WATCH-003 INTEGRITY FLAG ruling; WATCH-004 Fredrickson CT-Signals edit; WATCH-005 Wonderstruck transcript; WATCH-006 Sewing selection rule / manual MacIntyre pass; ID collisions (add PROP-2026-09-29-002); split the ~882 KB watch list; duplicate scheduled firings.
+
+*Run completed 2026-11-05 ~07:40 UTC.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-05 (second firing, ~07:40 UTC; duplicate, no-change confirmation)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). `review/archive/` latest still `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL.
+  Items checked: 0 on-cadence (WATCH-003/-004 due 11-06; WATCH-005/-006 due 11-07). Spot-verification: no PROP-2026-10-01-001, PROP-2026-10-13-001 or Wonderstruck card in `pending/`.
+  Items resolved: 0 · Still watching: 4 · Stale: 1 (WATCH-003, Escalate to Tom — unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07.
+
+*Duplicate firing appended after the earlier 11-05 instance. No notification sent: nothing resolved or newly stale.*

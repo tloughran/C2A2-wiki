@@ -29040,3 +29040,41 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
 
 *2026-11-03: 9 items queued, 8 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1210). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-03T05:41:39Z by cloud-lit-2026-11-03; not held, append safe.*
 *2026-11-04: 1 literature-lane item (PRESUMPTION-1210) searched and dispositioned MONITOR-703; 11 [IN-HOUSE] items untouched. Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-03T05:41:39Z by cloud-lit-2026-11-03; not held, append safe.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2035
+  Statement: [stated] Scheduler health 0550a148: '28 x DOUBLE-REGISTERED' and 'The 28 double-registrations are new since 2026-11-03. Neither that day's block nor today's carries those 28 lines.' The list under tha
+  Claim to test (in-house): Count DOUBLE-REGISTERED from the registry files with one definition; reconcile 25 (morning status), 27 (11-03), 28 header / 27 listed (11-04); explain the 30-vs-31 FAIL count.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2036
+  Statement: [stated] McGilchrist/Kastrup specialist 1aa55b02 (local copy): 'none existed for today, so they are 001 and 002'; '2 proposals added'; skipped 'The Faustian bargain of AI' because 'It is very probably
+  Claim to test (in-house): For 11-04, list every pending card with its writer (local/cloud copy), ID and source URL; identify same-source duplicates and colliding IDs; propose renumbering.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2037
+  Statement: [stated] Evening sync 57619ca5: 'the browser problem from earlier nights is fixed ("Browser 1" is now in use). But the most recent conversation, "Vault video series proposals", is a video-production s
+  Claim to test (in-house): List conversation titles at each evening-sync time 10-28..11-04; test whether a fixed title rule (e.g. walk chat started with a set title) would have identified the walk chat each day.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2038
+  Statement: [stated] Morning system health 9d43c495: 'Everything checked out healthy this morning' and, in the same message, 'the CPU, memory and process numbers come from the sandbox the check runs in, not from 
+  Claim to test (in-house): List which morning-system-health fields are sandbox-measured vs Mac-measured; check whether the headline 'healthy' depends on sandbox-only fields; confirm the Summa index gaps (Day-001, Day-035) and the 7 unsynced refs files.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-05] [SEARCHED-15b: 2026-11-05] [DISPOSITIONED-15c: 2026-11-05] [PRESUMPTION] PRESUMPTION-1213
+  Statement: The pending queue presumes each card records the specialist's judgment, as if one task made one judgment. Under duplicate firing it holds the union of two copies' judgments: the local McGilchrist/Kast
+  Claim to test: Literature lane: run-to-run consistency of LLM screening/annotation decisions (test-retest reliability of LLM classifiers; inclusion bias when merging independent screeners, cf. dual screening in systematic reviews). In-house: for 10-26..11-04, list sources one copy skipped and another copy filed.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1214
+  Statement: A 'new since yesterday' judgment presumes yesterday's record is in the file the run reads. Scheduler health called its 28 double registrations 'new since 2026-11-03' because neither block in its file 
+  Claim to test: In-house: locate where 3bdbc789 wrote its 11-03 scheduler-health block and check whether 0550a148 read that location.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1215
+  Statement: The Cowork-to-Chat channel presumes Tom's Chat use is single-threaded, so that 'the walk chat' can be found as the most recent conversation or by title. Today the most recent conversation was a live w
+  Claim to test: In-house: for 10-20..11-04, list the claude.ai conversations active at each evening-sync time and whether any would have been picked as the walk chat by recency or by title.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-04 (local pass): 7 items queued, 6 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1213). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-04T05:41:31Z by cloud-lit-2026-11-04; not held, append safe.*
+*2026-11-05: 1 literature-lane item (PRESUMPTION-1213) searched and dispositioned MONITOR-704; in-house items untouched. Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-04T05:41:31Z by cloud-lit-2026-11-04; not held, append safe.*

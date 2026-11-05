@@ -25716,3 +25716,14 @@ MONITOR-703:
   Monitoring cadence: Weekly (default); first check due 2026-11-11
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md
+
+MONITOR-704:
+  Date: 2026-11-05
+  Source item: PRESUMPTION-1213 (DISPOSITION-1119)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: LLM screening/judging variability is a studied concern; human dual screening uses reconciliation rules (Weak, title-only). 15b: union of screeners is a recognised high-recall design and a human gate may absorb it (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a queue card records one draw of a variable judgment; duplicate firing yields the union, and the review gate is the reconciliation step') a read of the screening-consistency papers plus the in-house 10-26..11-04 list of sources one copy skipped and another filed. (-> REVISE) if that list shows approved cards that only one copy would have filed and no reviewer-visible marker of which copy wrote them.
+  Monitoring cadence: Weekly (default); first check due 2026-11-12
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md

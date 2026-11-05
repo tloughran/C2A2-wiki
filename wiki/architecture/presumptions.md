@@ -26385,3 +26385,65 @@ PRESUMPTION-1212:
     Current status: UNTESTED
 
 *2026-11-03 14b: PRESUMPTION-1210..1212 (methodological 1, epistemic 2; risk Medium 2, Low-Medium 1). Checked against 14a 2027-2034 and the registry. Not re-surfaced (already registered; new evidence today): each copy's outcome taken as the task's (PRESUMPTION-1208: local lit skip vs cloud run, fourth day); field-presence filters across schema eras ('Status:' on FINDING-005..035 only); unattended runs presume approvals (Desktop Commander auto-declined for lit pipeline and scheduler health; browser selection for evening sync); persistence as delivery (evening sync wrote but did not deliver).*
+
+PRESUMPTION-1213:
+  Date surfaced: 2026-11-04
+  Statement: [inferred] The pending queue presumes each card records the specialist's judgment, as if one task made one judgment. Under duplicate firing it holds the union of two copies' judgments: the local McGilchrist/Kastrup copy skipped 'The Faustian bargain of AI' as a probable duplicate, yet a 'faustian-bargain-of-ai' card is in pending/. A skip by one copy is overruled by any copy that files. Is a skip that leaves no trace, and that a sibling run can undo, still a filter?
+  Evidence it was operative: 1aa55b02 ('very probably the video of the UnHerd Live event, which is already captured') vs cowork summary listing 2026-11-04_mcgilchrist_faustian-bargain-of-ai.md; ASSUMPTION-2036
+  Why it was unstated: too foundational to notice (one task name reads as one agent)
+  Type: methodological
+  Related decisions: ASSUMPTION-2036; PRESUMPTION-1210; PRESUMPTION-859
+  Testability: testable via literature + in-house
+  Risk if wrong: Medium: duplicate firing biases the queue toward inclusion (filing wins over skipping), inflating pending load and the chance that an already-captured source is counted again as new triplets.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1213
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1214:
+  Date surfaced: 2026-11-04
+  Statement: [inferred] A 'new since yesterday' judgment presumes yesterday's record is in the file the run reads. Scheduler health called its 28 double registrations 'new since 2026-11-03' because neither block in its file carried them, yet the 11-03 local pass recorded 27 from scheduler health 3bdbc789. With two copies of the check possibly writing to different places, absence from one file is not absence from yesterday. Was the novelty claim checked against yesterday's actual output?
+  Evidence it was operative: 0550a148 ('Neither that day's block nor today's carries those 28 lines') vs ASSUMPTION-2027 (27 DOUBLE-REGISTERED on 11-03)
+  Why it was unstated: oversight (a run's own log is taken as the log)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2035; ASSUMPTION-2027; PRESUMPTION-1212
+  Testability: testable empirically (in-house)
+  Risk if wrong: Low-Medium: false 'new' flags raise urgency on a known condition; the converse (a real change recorded only in the other copy's file) would be missed.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1214
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1215:
+  Date surfaced: 2026-11-04
+  Statement: [inferred] The Cowork-to-Chat channel presumes Tom's Chat use is single-threaded, so that 'the walk chat' can be found as the most recent conversation or by title. Today the most recent conversation was a live work session with desktop control and a second chat (ACPA poster) was open; the sync could not identify a walk chat at all. With the browser blocker cleared, the next blocker is the channel's addressing model.
+  Evidence it was operative: 57619ca5 ('I couldn't tell which other conversation was the walk chat, so I held off'); ASSUMPTION-2037
+  Why it was unstated: obvious to participants (the walk chat was once the only chat)
+  Type: structural
+  Related decisions: ASSUMPTION-2037; ASSUMPTION-2028; OPEN-287; OPEN-288
+  Testability: testable empirically (in-house)
+  Risk if wrong: Medium: the summary stays undelivered every night even with the browser fixed; or, if recency is used, it is posted into an active work thread with computer control.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1215
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-04 14b: PRESUMPTION-1213..1215 (methodological 1, epistemic 1, structural 1; risk Medium 2, Low-Medium 1). Checked against 14a 2035-2041 and the registry. Not re-surfaced (already registered; new evidence today): single-writer proposal IDs (PROP-2026-11-04-001/002 collision; see the 10-13 presumption on PROP-YYYY-MM-DD-NNN); PROCESSED_LOG filename markers (~300 unlogged by filename); sandbox metrics reported as host health; evidence tier not carried with cards (PRESUMPTION-1211); each copy's outcome taken as the task's (PRESUMPTION-1208, fifth local lit skip).*

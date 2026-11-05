@@ -3929,3 +3929,15 @@ OPEN-287:
     Original item: OPEN-287
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-288:
+  Raised: 2026-11-04 by 14a (ASSUMPTION-2037; PRESUMPTION-1215)
+  Question: Which claude.ai conversation is the walk chat that the evening Cowork-to-Chat sync should post to? The evening sync reports the browser selection is now resolved ("Browser 1"), which answers the browser half of OPEN-287, but it could not identify the walk chat: the most recent conversation was a work session with computer control. Options it named: name the walk chat in the task prompt, or start each walk chat with a fixed title.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-288
+    Item type: OPEN QUESTION
+    Current status: OPEN

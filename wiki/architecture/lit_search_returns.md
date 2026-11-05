@@ -52218,3 +52218,42 @@ DISPOSITION-1118:
 ### Evidence-quality notes (2026-11-04)
 - One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared between the two passes, so independence is procedural only.
 - 4 searches, 2 fetches (summaries). PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The 11 other in-house items queued 11-03 were not touched (not literature scope). Backlog untouched ("all queued items searched" is NOT met for the backlog).
+
+## 15a/15b/15c run 2026-11-05
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1213
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: titles only (unread): run-to-run consistency of LLM screening (arXiv 2608.26885); LLM variability in SLR screening; "Same Input, Different Scores" (arXiv 2603.04417)
+  Summary: Variability of LLM screening/judging is a studied concern and human dual screening uses explicit reconciliation rules. No magnitude read; duplicate-firing union case unaddressed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1213
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: titles only (unread): self-consistency/reasoning-effort scoring (arXiv 2604.26954); determinism measurement (arXiv 2502.20747); recall-workload trade-off in screening
+  Specific risk: A union of two screeners is a recognised high-recall design; with a human approval gate the merge may be a feature. Transfer from citation screening to source-skipping is uncertain.
+  STEELMAN: The presumption describes a feature, not a flaw, if cards are proposals that Tom reviews.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1119:
+  Date: 2026-11-05
+  Item: PRESUMPTION-1213
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both sides are title-only and weak. Support says LLM judgments vary between runs; challenge says a union of noisy screeners behind a human gate is an accepted design. They do not conflict on the facts; they differ on whether the union matters.
+  Disposition: MONITOR (MONITOR-704 (Medium))
+  Reasoning: Nothing was read, so INCORPORATE would overreach, and the challenge does not refute the presumption, so REVISE is not met. The deciding evidence is in-house (sources one copy skipped and another filed, 10-26..11-04) and whether Tom's review gate absorbs the difference; that has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md
+
+### Evidence-quality notes (2026-11-05)
+- One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared, so independence is procedural only.
+- 4 searches, 0 fetches; every source is title-only and unread. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The 6 other in-house items queued 11-04 were not touched (not literature scope). Backlog (138 bare literature-lane items) untouched; "all queued items searched" is NOT met for the backlog.

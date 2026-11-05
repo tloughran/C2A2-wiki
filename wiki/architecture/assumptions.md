@@ -38586,3 +38586,124 @@ ASSUMPTION-2034:
     Current status: UNTESTED
 
 *2026-11-03 14a: ASSUMPTION-2027..2034 (8). Queued [IN-HOUSE]: 2027-2032. Not queued: 2033, 2034 (recurrences). No interactive session; all items from scheduled-run reports.*
+
+ASSUMPTION-2035:
+  Date identified: 2026-11-04
+  Statement: [stated] Scheduler health 0550a148: '28 x DOUBLE-REGISTERED' and 'The 28 double-registrations are new since 2026-11-03. Neither that day's block nor today's carries those 28 lines.' The list under that header names 27 tasks; the report also notes its own 30-vs-31 FAIL mismatch ('I have not worked out why the script counts 30'). The 11-03 local pass recorded 27 DOUBLE-REGISTERED from scheduler health 3bdbc789 (ASSUMPTION-2027). Morning project status e25f88c2, same morning: 'about 25 tasks are still enabled locally as well as in the cloud' and 'all of those have fired on time', while scheduler health lists the cloud Morning brief as 'ABANDONED' on 11-03.
+  Context: Scheduler health 0550a148; morning project status e25f88c2; ASSUMPTION-2027
+  Type: empirical
+  Related decisions: ASSUMPTION-2027; PRESUMPTION-1212; REVISE-534
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2035
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2036:
+  Date identified: 2026-11-04
+  Statement: [stated] McGilchrist/Kastrup specialist 1aa55b02 (local copy): 'none existed for today, so they are 001 and 002'; '2 proposals added'; skipped 'The Faustian bargain of AI' because 'It is very probably the video of the UnHerd Live event, which is already captured'. Cowork summary (evening sync 57619ca5): 5 new pending cards today, including 2026-11-04_mcgilchrist_faustian-bargain-of-ai.md and two British Academy brain-asymmetry cards. Walk handoff 3e479dcc: 'PROP-2026-11-04-001 is on two McGilchrist cards, and -002 is on one McGilchrist and one Kastrup card. The two McGilchrist British Academy cards also look like the same lecture.' Two copies of one task reached opposite verdicts on the same source and minted the same IDs.
+  Context: McGilchrist/Kastrup agent 1aa55b02; walk handoff 3e479dcc; wiki daily run 0d6f18f4; evening sync 57619ca5
+  Type: architectural
+  Related decisions: ASSUMPTION-2031; PRESUMPTION-1210; REVISE-534
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2036
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2037:
+  Date identified: 2026-11-04
+  Statement: [stated] Evening sync 57619ca5: 'the browser problem from earlier nights is fixed ("Browser 1" is now in use). But the most recent conversation, "Vault video series proposals", is a video-production session with computer control of your Mac connected, not a walk chat. ... I couldn't tell which other conversation was the walk chat, so I held off. To fix this, name the walk chat in the task prompt.' Morning chat scrape f625a9f4, same day: 'none is selected for this session' (two browsers).
+  Context: Evening sync 57619ca5; chat scrape f625a9f4; OPEN-287
+  Type: methodological
+  Related decisions: ASSUMPTION-2028; OPEN-287; OPEN-288
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2037
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2038:
+  Date identified: 2026-11-04
+  Statement: [stated] Morning system health 9d43c495: 'Everything checked out healthy this morning' and, in the same message, 'the CPU, memory and process numbers come from the sandbox the check runs in, not from macOS, so they don't describe your Mac. Only the disk numbers are the real Mac.' Also: 'the janitor found it's missing the Day-035 and Day-001 syntheses. It also found 7 refs files that never made it to the published wiki, because the sync script only copies transcripts and syntheses.' Disk 70% (320G used, 142G free); cell_dates.json held 5 days.
+  Context: Morning system health 9d43c495
+  Type: empirical
+  Related decisions: ASSUMPTION-2032
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2038
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2039:
+  Date identified: 2026-11-04
+  Statement: [stated] McGilchrist/Kastrup specialist 1aa55b02: 'The McGilchrist one is weak: I found only the event announcement'; the one candidate triplet is 'marked Speculative'; the Kastrup triplets 'come from the host's write-up only. The members' recording page couldn't be fetched'; Durham event excluded because it 'fails the "from the thinker himself" filter'. New instances of the evidence-tier pattern in ASSUMPTION-2030 / PRESUMPTION-1211.
+  Context: McGilchrist/Kastrup agent 1aa55b02
+  Type: epistemic
+  Related decisions: ASSUMPTION-2030; PRESUMPTION-1211
+  Testability: recurrence (not queued; ASSUMPTION-2030 already queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2039
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2040:
+  Date identified: 2026-11-04
+  Statement: [stated] Walk handoff 3e479dcc: 'findings 080-110 have no Status: field ... The 24 active findings are all from 013-035.' The 11-03 handoff 5567f082 (ASSUMPTION-2029) said 'FINDING-036 through 110 use a newer format without one'. Same file, unchanged since 10-27, two different reported ranges (rationale drift). Also 'the master wiki reports 111 findings, but the findings file ends at FINDING-110'; 'no decision email has come in since 10-30'.
+  Context: Walk handoff 3e479dcc; ASSUMPTION-2029
+  Type: empirical
+  Related decisions: ASSUMPTION-2029
+  Testability: recurrence (not queued; ASSUMPTION-2029 already queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2040
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2041:
+  Date identified: 2026-11-04
+  Statement: [stated] Recurrences: lit pipeline local copy 742537e2 skipped at Step 0, 'the fifth skipped run in a row since Oct 31' (cloud copy ran: lock RELEASED 2026-11-04T05:41:31Z, PRESUMPTION-1210 -> MONITOR-703); Desktop Commander start_process auto-declined (lit pipeline, scheduler health); voice-shell check new failure mode 'harness exit 2, no summary line' (11-03 was RED 6/400); com.tomloughran.openstory.ui not loaded; 6 stranded git tmp_obj files; no Routines connector; wiki daily run second firing: ~300 inbox files 'don't appear in the log by filename' (already registered as a PROCESSED_LOG marker presumption); specialist prompt path lacks 'Projects/'; withrealityinmind.com unfetchable; WATCH-003 stale at 26 checks; watch list ~880 KB; overdue queue items (Humanity AI 10-21, DELTA 10-26); cloud 14a/14b NO-OP again (filed changelog/2026-11-05_changes.md, UTC date); this task's prompt still says '.../Wiki'.
+  Context: All sessions above
+  Type: architectural
+  Related decisions: REVISE-534; OPEN-273
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2041
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-04 14a: ASSUMPTION-2035..2041 (7). Queued [IN-HOUSE]: 2035-2038. Not queued: 2039, 2040, 2041 (recurrences). No interactive session; all items from scheduled-run reports.*
