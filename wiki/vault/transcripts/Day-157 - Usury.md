@@ -16,7 +16,7 @@ length_tier: medium
 fidelity_checked: true
 synthesis: "[[Day-157 - Usury - Contemporary]]"
 tags: [summa, day/157, pars/2, q/78]
-last_qc_at: "2026-10-13T00:17:51"
+last_qc_at: "2026-11-03T00:16:39"
 last_qc_outcome: "pass"
 ---
 

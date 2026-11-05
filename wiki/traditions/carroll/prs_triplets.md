@@ -956,4 +956,22 @@ PRS-105:
   Confidence: Medium (historical details are Harper's, unchecked)
   Evidence: Transcript 1:17:22-1:24:41. Carroll's question about Christianity as moral reorientation is an opening toward the Stump/Wright/Rohr traditions.
 
-*Total PRS triplets: 105*
+PRS-106:
+  Problem: Is "computation" a level of description that matter can host generally, or something tied to the particular electronic substrate we happen to use?
+  Resource: Carroll's framing of computation as information manipulation instantiated in matter; Winfree's algorithmic tile self-assembly, where colored-edge tiling rules (after Hao Wang) simulate Turing machines and cellular automata and are built physically from DNA.
+  Solution: Computation is substrate-general. Matter can be programmed to self-organize into a computation through local binding rules alone, which counts as a poetic-naturalist "level" that is engineered rather than only discovered.
+  Date Added: 2026-10-31
+  Source: 372 | Erik Winfree on DNA Robots and Computers; PROP-2026-10-30-001
+  Confidence: Medium
+  Evidence: Winfree in the episode: "algorithmic self-assembly, following the ideas of mathematical tilings, [is] physically possible as a way that matter self-organizes."
+
+PRS-107:
+  Problem: How do physical self-organizing systems get low error rates without an external controller?
+  Resource: Self-assembly proofreading based on cooperative interactions, contrasted with Hopfield's kinetic proofreading, which spends energy.
+  Solution: Reliable molecular information-processing can come from the structure of cooperative binding itself. This has a bearing on how prebiotic chemistry could become accurate enough to carry information.
+  Date Added: 2026-10-31
+  Source: 372 | Erik Winfree on DNA Robots and Computers; PROP-2026-10-30-001
+  Confidence: Speculative (the origin-of-life link is Carroll's question; Winfree answers only "we're learning")
+  Evidence: Winfree: the lowest error rates came from "a form of self-assembly proofreading that's based on cooperative interactions", "not like John Hopfield's kinetic proofreading that sort of burns energy."
+
+*Total PRS triplets: 107*

@@ -38,3 +38,17 @@
 **Open question the wiki cannot yet answer:** If explicit religious and spiritual vocabulary is stripped from the essays, do GPT-4 spirituality scores keep their incremental validity for meaning in life and depression, and if they do, what is being read?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-24_fredrickson_gpt-measures-spirituality-from-text]] [[2026-09-29_mcgilchrist_unherd-live-ai-versus-human-soul-transcript]]
+
+
+## Listening as attention
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/2026-10-29_fredrickson_listen-to-resonate.md` (0 backlinks).
+
+**Why it sits here:** Fredrickson's listening pathways and McGilchrist's modes of attention both locate connection in how one attends.
+
+**Synthesis claim.** Good listening is attention that lets the other stay whole, which is the condition for resonance.
+
+**Open question the wiki cannot yet answer:** Does perceived safety shift attention between the two modes in measurable ways?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-29_fredrickson_listen-to-resonate]]

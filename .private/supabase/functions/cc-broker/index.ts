@@ -59,7 +59,19 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
 // ----------------------------------------------------------------------------
 const DEFAULT_MODEL          = "openai/gpt-4o-mini";  // cheap, fast, capable enough for ranking
 const ANSWER_MODEL           = "anthropic/claude-sonnet-5"; // grounded answers + CCL planning (v16)
-const MAX_OUTPUT_TOKENS      = 1500;                  // per-call output bound; ~1.5c at ANSWER_MODEL out-rate
+const MAX_OUTPUT_TOKENS      = 1500;                  // per-call output bound for every model except ANSWER_MODEL
+// v18 (2026-09-29, F1): the planner (model "answer") came back EMPTY or cut off
+// mid-JSON on 4 of 12 complex asks; any hidden reasoning tokens count against
+// max_tokens, and finish_reason was never read. The answer model now gets 4000
+// (<= 4c out at 1000 c/1M; with the 64 KB input cap a call stays under ~8c,
+// still metered per call against GLOBAL_DAILY_CENTS_CAP), and every reply
+// carries finish_reason + truncated so the client can retry or say so.
+const ANSWER_MAX_OUTPUT_TOKENS = 4000;
+// Measured before this change (adv.cjs phase D, 4 planner calls): all 4 empty or
+// cut off after ~20 s with <= ~700 visible characters, i.e. hidden reasoning
+// filled the 1500 cap. Bounding reasoning at 1500 keeps today's thinking depth
+// and leaves >= 2500 tokens for the visible reply. OpenRouter: reasoning.max_tokens.
+const ANSWER_REASONING_TOKENS  = 1500;
 
 // Allowlist AND price table in one place: a model is callable only if we know
 // what it costs. Cents per 1M tokens [input, output], OpenRouter list prices
@@ -231,7 +243,7 @@ async function callOpenRouter(opts: {
   system: string;
   user: string;
   model: string;   // already resolved against the allowlist
-}): Promise<{ text: string; model: string; usage: Usage | null; error?: string }> {
+}): Promise<{ text: string; model: string; usage: Usage | null; finish: string | null; truncated: boolean; reasoningTokens: number | null; error?: string }> {
   const model = opts.model;
   const resp = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
@@ -248,23 +260,28 @@ async function callOpenRouter(opts: {
         { role: "system", content: opts.system },
         { role: "user",   content: opts.user },
       ],
-      max_tokens: MAX_OUTPUT_TOKENS,
+      max_tokens: model === ANSWER_MODEL ? ANSWER_MAX_OUTPUT_TOKENS : MAX_OUTPUT_TOKENS,
       usage: { include: true },   // ask OpenRouter to report its actual charge
+      ...(model === ANSWER_MODEL ? { reasoning: { max_tokens: ANSWER_REASONING_TOKENS } } : {}),
     }),
   });
 
   if (!resp.ok) {
     const errText = await resp.text();
     // Don't leak the full provider response — could contain key fragments in unusual error paths
-    return { text: "", model, usage: null, error: `provider_error_${resp.status}` };
+    return { text: "", model, usage: null, finish: null, truncated: false, reasoningTokens: null, error: `provider_error_${resp.status}` };
   }
 
   const data = await resp.json();
   const text  = data?.choices?.[0]?.message?.content ?? "";
   const usage = data?.usage ?? null;
+  const finish = typeof data?.choices?.[0]?.finish_reason === "string" ? data.choices[0].finish_reason : null;
+  const rt = data?.usage?.completion_tokens_details?.reasoning_tokens;
   // Report the model that actually served (OpenRouter may name a dated variant);
   // pricing still uses the requested, allowlisted id.
-  return { text, model: typeof data?.model === "string" ? data.model : model, usage };
+  return { text, model: typeof data?.model === "string" ? data.model : model, usage,
+           finish, truncated: finish === "length" || text.trim() === "",
+           reasoningTokens: typeof rt === "number" ? rt : null };
 }
 
 // ----------------------------------------------------------------------------
@@ -503,6 +520,10 @@ Deno.serve(async (req) => {
       source,
       model: result.model,
       freeRemaining,
+      finish_reason: result.finish,
+      truncated: result.truncated,
+      out_tokens: result.usage?.completion_tokens ?? null,
+      reasoning_tokens: result.reasoningTokens,
     }, origin);
   }
 

@@ -16,7 +16,7 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-155 - Tale-Bearing and Derision - Contemporary]]"
 tags: [summa, day/155, pars/2, q/74]
-last_qc_at: "2026-10-13T00:17:51"
+last_qc_at: "2026-11-03T00:16:38"
 last_qc_outcome: "pass"
 ---
 

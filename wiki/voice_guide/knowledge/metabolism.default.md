@@ -29,12 +29,36 @@ the vault's git history rather than from the agents' own reports. That distincti
 point: yield is read from what landed, not from what a run claimed.
 
 ## Affordances (what the user can do here)
-- **Switch between the three views.**
+- **Switch between the three chart views, and between the Charts and Vault Life sub-views.**
 - **Choose the amplitude** the raster encodes.
 - **Stack the waveform by category, or put it on a log axis.**
 
+## The Vault Life sub-view (added 2026-11-03)
+The tab has two sub-views, **Charts** (everything above) and **Vault Life**, reached with
+`go charts` and `go vault life`. Vault Life is the vault as a time-lapse: the fifteen
+traditions as hubs around a core, every file in the vault appearing as a dot on the day git
+first saw it, agent runs as sparks (from OpenStory telemetry), cross-tradition signals as
+flashes between hubs, PRS triplets as rings at a hub, and the Summa commentary as a gold rail
+along the bottom. A clock runs from April 6, 2026 to the newest file; it is **paused until the
+user presses Play**, and the page carries its own Play/Pause, a scrubber, and a speed control in
+vault-days per real second. A caption strip under the canvas tells the story in seven chapters
+(Thinkers arrive; Assessment; Research; Ways in; Fruits; Today), each keyed to a vault date,
+with every tally in them filled by code at the morning regen from the same timeline the
+canvas draws. The page's data sources are printed on the canvas: agent runs from OpenStory
+telemetry; files and wikilinks from git history; signals, triplets, Summa and Heartbeat from
+the vault itself.
+
+What the guide can do there in this increment: switch to it and back, and describe it. The
+transport (play, pause, seek to a date) is not yet reachable by voice; tell the user the
+controls are on the page.
+
+What the guide must not do there: quote any count from memory. The captions and the HUD
+tallies change with the regen and with the clock position; read figures only from the page
+as it stands, or say that the page shows them.
+
 ## Pathways out
 - **switch_tab** to any other tab.
+- `go vault life` / `go charts` between this tab's two sub-views.
 
 ## Answerable questions
 - What is this tab measuring, and where does the data come from?

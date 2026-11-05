@@ -27,6 +27,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Drop .git from the publish tree
         run: rm -rf .git
+      - name: Drop working scripts from the publish tree
+        run: find . -type f \( -name '*.sh' -o -name '*.py' -o -name '*.plist' -o -name '*.command' \) -print -delete
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -609,7 +609,29 @@
         }
       ],
       "controls_excluded": [],
-      "_controls_note": "The 4 knobs above are the tab's ENTIRE interactive surface, confirmed 2026-07-25 by the live runtime sweep (window.CCLAudit: total 4, covered 4, uncovered 0) -- this replaces the earlier static read of metabolism_view.html, which was the static-HTML gate redesign section 14.8 forbids.",
+      "views": [
+        {
+          "name": "charts",
+          "aka": ["the charts", "chart view", "pulse charts", "raster view"],
+          "enter": ".subtab-btn[data-view=\"charts\"]",
+          "active": ".subtab-btn[data-view=\"charts\"]"
+        },
+        {
+          "name": "vault",
+          "aka": ["vault life", "the vault", "vault view", "time-lapse", "timelapse", "time lapse", "the time-lapse"],
+          "enter": ".subtab-btn[data-view=\"vault\"]",
+          "active": ".subtab-btn[data-view=\"vault\"]"
+        }
+      ],
+      "_views_note": "Two sub-views since 2026-11-03: `go charts` | `go vault life`. Standing on this tab the tab's own view wins (the Agent Map rule), so `vault` cannot be thrown to a Sociogram node of that name. Entering vault life fetches a ~1 MB self-contained page on first entry and starts nothing: the clock is paused until Play.",
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": ".subtab-btn[data-view]",
+          "note": "The two sub-view buttons, reached by name with `go charts|vault life`. The sweep matches ELEMENTS and the coverage is a VERB, so they are declared here rather than left to look uncovered."
+        }
+      ],
+      "_controls_note": "The 4 knobs above plus the two sub-view buttons (Charts | Vault Life, added 2026-11-03) are the tab's entire interactive surface. The 2026-07-25 live sweep read total 4 / covered 4 / uncovered 0; the two buttons are covered by `go` via dim_coverage, as on the Agent Map. The Vault Life sub-view is a LAZY iframe (#vault-frame -> vault_life.html, loaded on first entry) and, like the Agent Map's sociogram frame, is not swept: its four controls (#play, #scrub, #speed, #film) are a playback transport over a canvas timeline, reachable in code through window.vaultLife {play, pause, seek, state}, and are deferred to vault life increment 2 along with a `frames` declaration.",
       "gestures": [
         {
           "id": "hover",

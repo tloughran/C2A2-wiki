@@ -51929,3 +51929,331 @@ DISPOSITION-1106:
 - 15a NOVELTY (weak, provisional) on PRESUMPTION-1190.
 - SYSTEMIC-RISK (candidate, 15b rates High): 'artefact-as-proof'. A file's presence, absence or timestamp, read from inside the same system, stands in for live state. Now spans 1184/1185 (10-26) and 1187/1188/1189 (today). 15b notes the proposed remedies often reuse the same kind of evidence. No flag file written, per the 10-25/10-26 precedent; surfaced to Tom in the run note.
 - No INCORPORATE issued, so no premise consistency conflict arises. REVISE-529 is checked against PREMISE-239 (observed vs declared state): consistent, same family.
+
+
+## 2026-10-28 — 15a/15b/15c returns (run local-cowork-2026-10-28-aeb5fc9f)
+
+DISPOSITION-1107:
+  Date: 2026-10-28
+  Item: ASSUMPTION-1952
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (+ weak NOVELTY)
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Adversarial collaboration shows rival parties can agree criteria and co-sign results (Kahneman–Mellers; Clark & Tetlock) [snippet], but only in facilitated, project-bounded studies, not as a standing gate on every output. 15b: adversarial collaborations often end unresolved (Kahneman–Treisman), remain rare, and cross-field review has low reliability and leans on deference (Jirschitzka 2017; Mallard, Lamont & Guetzkow) [snippet]. 15a weak NOVELTY: nothing found on item-by-item dual-tradition certification as a standing gate.
+  Disposition: MONITOR (MONITOR-698 (High))
+  Reasoning: Contested at Moderate on both sides with a NOVELTY flag, so MONITOR High per heuristics. The gate's intent is consistent with REVISE-097 (certifications are candidate-generating, not authoritative). Its workability is a capacity question that PRESUMPTION-1191 (REVISE-531) addresses directly, so this item waits on that outcome rather than being revised twice.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1952 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1952_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1952_against.md
+
+DISPOSITION-1108:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1191
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (gate not passable as designed); Weak (identifiable/independent)
+  Net assessment: Both directions support 14b's concern. 15a: expertise is recognition granted by existing practitioners and its tests are disputed (Collins & Evans); sign-off gates relying on volunteer experts recruit poorly and slow (1.9 → 2.4 invitations per review, 2013–2017) [snippet]. 15b: review gates are limited by reviewer supply and routing does not fix shortage (WebKit/Meta code-review studies) [snippet]. With no named certifier the gate has zero capacity.
+  Disposition: REVISE (REVISE-531 (High))
+  Reasoning: The presumption fails as designed: 77 candidates, no named certifier on either side, and an existing human-ruling queue already stalled (WATCH-003). A gate with no staffed capacity cannot discharge. PRESUMPTION with a supported challenge and an in-house instance → REVISE High.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1191 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1191_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1191_against.md
+
+DISPOSITION-1109:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1192
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak-Moderate
+  Net assessment: 15a: the ideological Turing test makes recognition by adherents the criterion (Caplan); red-team doctrine requires independence from the authors; role-played dissent is weaker than authentic dissent (Nemeth, secondhand) [snippet]. 15b: Brand et al. 2025 report 54–71% pass rates for voicing the other side, which cuts against the concern; but constructed opponents drift toward caricature (Dawes et al. 1972) and the Collins–Evans imitation game needs an insider judge, which the Carroll build lacks [snippet].
+  Disposition: MONITOR (MONITOR-699 (High))
+  Reasoning: Untested, not refuted. Evidence that outsiders can sometimes voice a position passably weakens a REVISE; the absence of any insider judge keeps INCORPORATE off the table. Consistent with PREMISE-096 family ('no self-produced artifact may certify itself'): the rival's genuineness needs an independent check. MONITOR High because the check is cheap and decisive.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1192 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1192_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1192_against.md
+
+DISPOSITION-1110:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1193
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate (stamp alone suffices); Weak (stripping)
+  Net assessment: Both directions agree a frozen print of a living corpus is citable only with a version identifier, a link to the evolving whole, and a change record (Cochrane living reviews, Living Reviews, CASRAI) [snippet]; W3C PROV ties auditability to a recorded derivation path. 15b: a commit stamp is necessary but not sufficient unless it resolves to an archived copy (CASRAI; PeerJ on Software Heritage), and frozen copies get cited as current. Neither found work on what stripping trace lines does to audit.
+  Disposition: REVISE (REVISE-532 (Medium))
+  Reasoning: The presumption that a stripped print stays auditable fails on the narrower point both sides support: a stamp must resolve to an archived snapshot and each printed claim needs a route back to its trace. The stripping question itself is unstudied, so the fix keeps the apparatus reachable rather than requiring it in print. Medium: the print is not yet the cited record.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1193 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1193_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1193_against.md
+
+DISPOSITION-1111:
+  Date: 2026-10-28
+  Item: PRESUMPTION-1194
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (+ weak NOVELTY)
+  15b result: CHALLENGED  15b strength: Moderate-Strong
+  Net assessment: 15a: process mining lists missing events as a major data-quality problem, mostly manual, undocumented activity; sampling under-represents rare events (observability, mostly vendor) [snippet]. 15b: unrecorded human activity is the most common event-log defect (van der Aalst group; Fluxicon 2016), standard log repair assumes missing-at-random, which fails here, and count-limited sampling drops rare events first [snippet]. In-house instance: today's main designer session absent from the 40 most recent sessions; 18:33 sync declared none.
+  Disposition: REVISE (REVISE-533 (High))
+  Reasoning: PRESUMPTION with a Moderate-Strong challenge and a concrete in-house instance → REVISE High per heuristics. The audit layer's sampling is biased against exactly the events it exists to watch: frequent scheduled runs fill a fixed recency window and push out irregular designer sessions. 15a's weak NOVELTY covers that specific self-audit framing.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1194 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1194_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1194_against.md
+
+### Evidence-quality notes (2026-10-28)
+- 15a and 15b ran as separate subagents. Each reports it did not open the other direction's results or this file, and wrote only its five result files. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 15a 10 web searches, 0 fetches; 15b 9 searches, 0 fetches (cap 2/item). Every source is [snippet only] or secondary. Both sides rate the work PRELIMINARY. Nothing was read in full this run, so no disposition rests on a primary text read in full.
+- 15a NOVELTY (weak, provisional): ASSUMPTION-1952 (standing dual-tradition gate); PRESUMPTION-1194 (agent self-audit recency window).
+- SYSTEMIC-RISK (15b candidate, High): (a) 'artefact-as-proof' extended to 1193 (commit stamp as proof of auditability) and 1194 (returned session list as proof of the day's work); (b) NEW candidate 'unstaffed or non-independent validation gate' spanning 1952, 1191, 1192: outside judges who are not named, not resourced, or not independent of the build; a named check is treated as a check performed. Written up in against/PRESUMPTION-1191_against.md; no flag file, per the 10-25..10-27 precedent.
+- No INCORPORATE issued, so no premise contradiction arises. Consistency checked: MONITOR-699 is consistent with PREMISE-096 (no self-certification); REVISE-531 / MONITOR-698 consistent with REVISE-097 (certifications provisional).
+
+
+## 2026-10-29 — 15a / 15b / 15c returns (run cowork-sched-2026-10-29-ddd22cd5)
+
+RETURN-15a PRESUMPTION-1196 [2026-10-29]: SUPPORTED (Moderate; weak NOVELTY). Read FOR = liveness is insufficient as a cutover test. Practitioner sources agree that the old path stays on until outputs or behaviour are shown to match: GitHub Scientist (github.blog 2015), plus Gravitee, Digiqt and a DEV Community payments-migration post ("it looks fine" is not an exit criterion) [snippet]. NOVELTY (weak): nothing found on agent tasks whose two copies both fire but have different tool sets. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15a — SUPPORTED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md
+
+RETURN-15b PRESUMPTION-1196 [2026-10-29]: CHALLENGED (Strong on the logic; Moderate sources). Every source treats liveness as necessary but not sufficient, and cutover practice compares outputs before turning the old path off: DEV Community "Liveness Without Health Is Theater"; Gravitee and Origami parallel-run and parity guides; OSDI '25 T2C on silent failures; arXiv 2608.02786 [snippet]. Other side: runbooks do use synthetic and liveness gates, and parallel runs are costly and sometimes skipped. No source says "it fired" is enough on its own. STEELMAN included. SYSTEMIC-RISK: an instance of 'a named check treated as a check performed', and it extends 'artefact-as-proof'. 15b recommends promoting these to a formal flag. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15b — CHALLENGED
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md
+
+DISPOSITION-1112:
+  Date: 2026-10-29
+  Item: PRESUMPTION-1196
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate (+ weak NOVELTY)
+  15b result: CHALLENGED  15b strength: Strong (logic) / Moderate (sources)
+  Net assessment: Both directions agree that "it fires" is a liveness signal, not a parity test. Cutover practice (Scientist-style shadow runs, parallel runs, parity guides) keeps the old path until outputs or capabilities are shown to match [snippet, practitioner]. The only counter-evidence is about cost, not sufficiency. The in-house instance as 14b records it: the cloud 14a/14b copy fires but lacks session_info and has NO-OP'd since 10-24. Not verified this run.
+  Disposition: REVISE (REVISE-534 (High))
+  Reasoning: This is a PRESUMPTION with a strong challenge and no source defending liveness as sufficient, so the heuristics give REVISE, High. The stakes are asymmetric. Following the rule as written would disable the only 14a/14b path that reads transcripts, while every check reports OK. This sharpens REVISE-523 ("verify by effect, not by trigger"): effect checks must also cover capability, because a NO-OP run can still write an artefact.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1196 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md
+
+### Evidence-quality notes (2026-10-29)
+- 15a and 15b ran as separate subagents. Each was told not to open the other direction's results or this file, and each wrote only its own result file. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 15a 2, 15b 2, 0 fetches. Every source is [snippet only]; most are practitioner or vendor material, and two are preprints. Both directions rate the work PRELIMINARY. No disposition rests on a primary text read in full.
+- 15a NOVELTY (weak, provisional): PRESUMPTION-1196 (agent tasks whose copies fire but differ in tool access).
+- SYSTEMIC-RISK (15b, High): 1196 is a clear instance of 'a named check treated as a check performed' (10-28 candidate) and of 'artefact-as-proof' (1184..1194). 15b recommends a formal SYSTEMIC-RISK-FLAG. Following the 10-25..10-28 precedent, no flag file was written; this is noted for Tom.
+- No INCORPORATE was issued. Consistency checked: REVISE-534 agrees with PREMISE-053 (scheduling is necessary, not sufficient; the execution context must be verified capable; dev/prod parity) and PREMISE-086 (alarm on staleness or absence), and it extends REVISE-523.
+
+
+## 2026-10-30 — 15a / 15b / 15c returns (run cowork-lit-2026-10-30-d469f9d4)
+
+RETURN-15a PRESUMPTION-1198 [2026-10-30]: SUPPORTED (Moderate). Read FOR = the item's concern holds: shadow and parallel-run practice requires the shadow's writes to be isolated, and un-isolated shadows duplicate writes or spoil the comparison. GitHub Scientist author (Jesse Toth, quoted in InfoWorld) says Scientist "is not meant to be used for any code that has side effects", e.g. a candidate that writes to the same database as the control; the Python port Laboratory warns side-effecting code "will lead to duplicated writes"; shadow-traffic guides treat write isolation as a precondition [snippet]. No NOVELTY flag. The UTC-vs-EDT accidental-isolation point was not searched. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15a] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15a — SUPPORTED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md
+
+RETURN-15b PRESUMPTION-1198 [2026-10-30]: CHALLENGED (Moderate). The presumption (two copies can run side by side without explicit write isolation and still yield a valid comparison) fails against consistent practitioner guidance: Scientist JS-port README (candidate must never permanently change outside state), InfoWorld/Toth, DesignGurus and DZone shadow-traffic guidance (read-only routing, shadow DB, writes disabled) [snippet]. Balance: a read-only shadow, or dual writes where only the old copy is read, are tolerated; neither holds for 14a/14b. Specific risk: each copy reads the other's appends, entries duplicate or are lost, and the comparison measures a contaminated pair. STEELMAN included. SYSTEMIC-RISK: shares the 'concurrent double-registered tasks overwrite output' vulnerability and echoes 'a named check treated as a check performed'. 2 searches, 0 fetches. PROVENANCE: Origin: 14b | Chain: [14b → 15b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: SEARCHED-15b — CHALLENGED
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md
+
+DISPOSITION-1113:
+  Date: 2026-10-30
+  Item: PRESUMPTION-1198
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Both directions converge. The item's concern is supported and the presumption it names is challenged: shadow and parallel-run practice (Scientist and its ports; shadow-traffic guides) makes write isolation a precondition of a valid comparison, and names duplicated writes and contaminated comparisons as the failure [snippet, practitioner]. The only softening is that read-only shadows, or dual writes where only the old copy is read, are tolerated; neither is in place for 14a/14b. No source addresses file-based registers or scheduled agents directly.
+  Disposition: REVISE (REVISE-535 (High))
+  Reasoning: PRESUMPTION with a consistent Moderate challenge and no counter-evidence. It is a precondition on REVISE-534 action (2), which is itself High: if Tom runs the side-by-side trial as written, the shared registers are both the thing being compared and the thing being written, so the trial can corrupt them or make the copies look equivalent. Urgency set High to travel with REVISE-534 rather than Medium on source strength alone.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1198 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md
+
+### Evidence-quality notes (2026-10-30)
+- 15a and 15b ran as separate subagents. Each was told not to open the other direction's results or this file, and each wrote only its own result file. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 15a 2, 15b 2, 0 fetches. Every source is [snippet only]: READMEs, practitioner blogs, one trade-press interview. Both directions rate the work PRELIMINARY. No disposition rests on a primary text read in full.
+- Not reached by either side: lost-update / concurrent-append literature, outbox / dual-write literature, append-only or idempotent stores (which could weaken the worry), lock-based mutual exclusion for scheduled jobs.
+- SYSTEMIC-RISK (15b): 1198 joins 1196 as an instance of 'a named check treated as a check performed' (10-28 candidate) and adds the double-registration shared-state problem. Following the 10-25..10-29 precedent, no flag file was written; noted for Tom.
+- No INCORPORATE was issued. Consistency checked: REVISE-535 agrees with the verify-the-side-effect premise (validated_premises.md L1534) and refines REVISE-534; no premise contradicts it.
+
+
+## 2026-10-31 — 15a / 15b / 15c returns (run cloud-lit-2026-10-31)
+
+RETURN-15a PRESUMPTION-1201 [2026-10-31]: SUPPORTED (Moderate). Read FOR = the item's concern holds: re-running the same process is not independent verification. Knight & Leveson 1986 (independently built versions still fail together) and Huang et al. 2023 / Stechly et al. 2024 (LLM self-correction and self-verification limits) [snippet only]. Caveat: a check against the chat transcript has an external reference, so it is partly mitigated. No literature found defending same-process re-runs as verification.
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md
+
+RETURN-15b PRESUMPTION-1201 [2026-10-31]: CHALLENGED (Moderate). Same-model, same-prompt second runs share blind spots (Knight & Leveson 1986; Huang et al. 2023; Tyen et al. 2023) [snippet only]. Balance: self-consistency voting (Wang et al. 2022) and comparison against an external artifact add value for random errors. Risk: agreement recorded as verification; a 'verified' label propagates. SYSTEMIC-RISK: yes ('a named check treated as a check performed').
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md
+
+RETURN-15a PRESUMPTION-1202 [2026-10-31]: PARTIALLY-SUPPORTED (Weak). Lakatos research programmes and MacIntyre on tradition are communal, not founder-only [search hits only; content unread, characterisations from memory]. No citation-network evidence reached.
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1202_for.md
+
+RETURN-15b PRESUMPTION-1202 [2026-10-31]: NO-CHALLENGE-FOUND (Weak). No literature found defending an author-only filter. A provenance-integrity rationale is plausible but unverified (memory only). Systemic risk: no.
+  Results: wiki/architecture/lit_search_results/against/PRESUMPTION-1202_against.md
+
+DISPOSITION-1114:
+  Date: 2026-10-31
+  Item: PRESUMPTION-1201
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Both directions converge: a second firing of the same process (same model, prompt, context) is not independent verification, so 'I checked its work and changed none of it' reports agreement, which correlated errors also produce. Softening: a comparison against an external artifact (the chat) and self-consistency voting for random errors do add some value. All sources snippet-only; none tests scheduled agent wiki runs.
+  Disposition: REVISE (REVISE-536 (Medium))
+  Reasoning: PRESUMPTION with a consistent Moderate challenge and no source defending re-runs as independent. Heuristic leans REVISE. Urgency Medium, not High, because sources are Moderate and the in-house count (10-23..10-30) is not yet run; it joins 'a named check treated as a check performed' (see REVISE-534/535).
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1201 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md
+
+DISPOSITION-1115:
+  Date: 2026-10-31
+  Item: PRESUMPTION-1202
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: NO-CHALLENGE-FOUND  15b strength: Weak
+  Net assessment: Frameworks (Lakatos, MacIntyre) are communal, which is consistent with the item's concern, but neither side read any text and no citation-network or physics-specific evidence was reached. The only possible counter (provenance integrity of an author-only filter) is unsourced.
+  Disposition: MONITOR (MONITOR-700 (Medium))
+  Reasoning: Both directions are Weak and unverified: a literature gap, so untested, not refuted. The in-house count (which task files use an author-only filter; proposals rejected under it) is the better test. No INCORPORATE: nothing to check against validated premises.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1202 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1202_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1202_against.md
+
+### Evidence-quality notes (2026-10-31)
+- 15a and 15b ran as separate subagents. Each was told not to open the other direction's results or this file. The orchestrator (15c) wrote all register appends and queue tags.
+- Searches: 2-3 per item per direction, every source snippet-only or title-only; some characterisations from memory and marked as such. PRELIMINARY. No disposition rests on a primary text read in full.
+- SYSTEMIC-RISK (15b): 1201 is an instance of 'a named check treated as a check performed'. Following the 10-25..10-30 precedent, no flag file was written; noted for Tom.
+- No INCORPORATE was issued.
+
+
+## 2026-11-02 RUN - 15a/15b/15c (cloud-lit-2026-11-02)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1207
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Vaughan 1996, The Challenger Launch Decision (from memory; Columbia Magazine summary seen, title only)
+  Summary: Normalization of deviance and alarm fatigue support the pattern in general; nothing read, no LLM-agent or rejected-observation-logging source reached.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1207
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: NIST/SEMATECH e-Handbook, outlier detection (title only)
+  Specific risk: A real drop is read as a fault and never surfaces, so the monitor looks healthy while blind.
+  Summary: Fault-first can be a rational default; the defect is unlogged, unverified dismissal. Nothing found says the practice is wrong in itself.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1116:
+  Date: 2026-11-02
+  Item: PRESUMPTION-1207
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both directions are weak and title-only. The pattern is credible and the challenge is about framing (silent dismissal vs verified dismissal), not refutation.
+  Disposition: MONITOR (MONITOR-701 (Medium))
+  Reasoning: Neither side has a read primary text, and the item's better test is the in-house count of dropped readings and later-confirmed faults, which has no runner. Presumption with only a weak challenge does not meet the REVISE heuristic; weak support does not meet INCORPORATE.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md
+
+### Evidence-quality notes (2026-11-02)
+- One orchestrator ran 15a, 15b, 15c in sequence; the 15b file was written without reading the 15a file, but independence is procedural, not subagent-separated.
+- 3 searches, all title-only hits, 0 fetches. PRELIMINARY. No INCORPORATE issued. The 9 in-house items from 11-01 were not touched (not literature scope). Backlog untouched.
+
+## 15a/15b/15c run 2026-11-03
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1208
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (general pattern) / Weak (scheduler-specific)
+  Key source: Huang et al., 2017, "Gray Failure: The Achilles' Heel of Cloud-Scale Systems," HotOS XVI (differential observability; read via fetch summary)
+  Summary: An observer with a partial view can report healthy while the system is not, and some failures are detectable only across components; the analogy to a copy reporting its own outcome as the task's is direct but no LLM-agent or replicated-cron source was read.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1208
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Beyer et al. (eds.), 2016, Site Reliability Engineering, ch. 24 "Distributed Periodic Scheduling with Cron" (fetched; summary read)
+  Specific risk: Reading the lock log may replace one unchecked claim with another if the log is not authoritative (fencing literature, title-only); and where one copy is meant to act, another copy's "did not run" is the intended state.
+  Summary: Nothing found says whole-task claims from a local view are acceptable; the challenge is about scope and about what counts as the authoritative record.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1117:
+  Date: 2026-11-03
+  Item: PRESUMPTION-1208
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (general) / Weak (specific)
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: The general pattern has one read primary source behind it; the challenge is about scoping the claim and the authority of the lock log, not refutation. The scheduler-specific and LLM-agent claims have no read source on either side.
+  Disposition: MONITOR (MONITOR-702 (Medium))
+  Reasoning: Support is moderate only for the general pattern and the rest is title-only, so INCORPORATE would overreach. A weak challenge on a presumption does not meet the REVISE heuristic. The in-house comparison for 10-26..11-02 is the better test and has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md
+
+### Evidence-quality notes (2026-11-03)
+- One orchestrator ran 15a, 15b, 15c in sequence; the 15b searches were run after the 15a file was written and did not use its content, but independence is procedural, not subagent-separated.
+- 15a: 3 searches, 1 fetch; 15b: 3 searches, 1 fetch. Most sources title-only. PRELIMINARY. No INCORPORATE issued. No validated-premise consistency check was needed. The 10 in-house items from 11-02 were not touched (not literature scope). Backlog untouched (unchanged from prior runs; "all queued items searched" is NOT met for the backlog).
+
+## 15a/15b/15c run 2026-11-04
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1210
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (general pattern) / Weak (LLM-agent or file-lock schedulers)
+  Key source: Beyer et al., 2016, Site Reliability Engineering, ch. 24 "Distributed Periodic Scheduling with Cron" (fetched; summary read); Hochstein 2025 on leases and fencing (fetched; summary read)
+  Summary: The literature builds quorum-recorded, schedule-keyed launches so a successor never has to infer that the first copy finished; leases show an apparent holder may still act. Wait-and-check is not treated as a guarantee. No LLM-agent source found.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1210
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Beyer et al., 2016, ch. 24 (some jobs idempotent, skipping favored over double launch); Hochstein 2025 (fencing tokens do not fully prevent overlap)
+  Specific risk: If writes are idempotent or keyed by launch, separability is unnecessary; heavier lease/fencing remedies are themselves fallible and heavy for a single-machine wiki.
+  Summary: Nothing found defends wait-and-check as a guarantee; the challenge is that safety can come from idempotent keyed writes instead.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1118:
+  Date: 2026-11-04
+  Item: PRESUMPTION-1210
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate (general) / Weak (specific)
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both directions rest on the same two read summaries. Support says wait-and-check is not a guarantee; challenge says idempotent keyed writes make the guarantee unnecessary. They agree the presumption is unsafe as stated and differ on the remedy.
+  Disposition: MONITOR (MONITOR-703 (Medium))
+  Reasoning: Support is moderate for the general pattern only and nothing concerns LLM-agent schedulers, so INCORPORATE would overreach. The challenge is weak and does not refute the presumption, so REVISE is not met. The decisive test is the in-house 10-26..11-03 overlap comparison, which has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md
+
+### Evidence-quality notes (2026-11-04)
+- One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared between the two passes, so independence is procedural only.
+- 4 searches, 2 fetches (summaries). PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The 11 other in-house items queued 11-03 were not touched (not literature scope). Backlog untouched ("all queued items searched" is NOT met for the backlog).
+
+## 15a/15b/15c run 2026-11-05
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1213
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: titles only (unread): run-to-run consistency of LLM screening (arXiv 2608.26885); LLM variability in SLR screening; "Same Input, Different Scores" (arXiv 2603.04417)
+  Summary: Variability of LLM screening/judging is a studied concern and human dual screening uses explicit reconciliation rules. No magnitude read; duplicate-firing union case unaddressed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1213
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: titles only (unread): self-consistency/reasoning-effort scoring (arXiv 2604.26954); determinism measurement (arXiv 2502.20747); recall-workload trade-off in screening
+  Specific risk: A union of two screeners is a recognised high-recall design; with a human approval gate the merge may be a feature. Transfer from citation screening to source-skipping is uncertain.
+  STEELMAN: The presumption describes a feature, not a flaw, if cards are proposals that Tom reviews.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1119:
+  Date: 2026-11-05
+  Item: PRESUMPTION-1213
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both sides are title-only and weak. Support says LLM judgments vary between runs; challenge says a union of noisy screeners behind a human gate is an accepted design. They do not conflict on the facts; they differ on whether the union matters.
+  Disposition: MONITOR (MONITOR-704 (Medium))
+  Reasoning: Nothing was read, so INCORPORATE would overreach, and the challenge does not refute the presumption, so REVISE is not met. The deciding evidence is in-house (sources one copy skipped and another filed, 10-26..11-04) and whether Tom's review gate absorbs the difference; that has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md
+
+### Evidence-quality notes (2026-11-05)
+- One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared, so independence is procedural only.
+- 4 searches, 0 fetches; every source is title-only and unread. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The 6 other in-house items queued 11-04 were not touched (not literature scope). Backlog (138 bare literature-lane items) untouched; "all queued items searched" is NOT met for the backlog.

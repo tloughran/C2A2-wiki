@@ -1,0 +1,207 @@
+{
+  "seed": false,
+  "generated": "2026-10-27",
+  "generated_at": "2026-10-27T16:05:49Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 227,
+    "high_relevance": 4,
+    "primary_themes": "Governance Policy + Capability Jump"
+  },
+  "signals": [
+    {
+      "title": "From Writing Advice to Manuscript Governance: A Constrained-Transformation Framework for Academic Revision",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.33001",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Academic revision presents a governance problem when legitimate writing objectives conflict. Writing-process and social-science research show that revision is recursive and that wording carries epistemic and disciplinary commitments.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.494891+00:00",
+      "long_summary": "Academic revision involves complexities surrounding governance when legitimate writing objectives clash. Research in writing processes and social sciences highlights that revision is not linear but recursive, meaning that the act of revising often loops back on itself. Additionally, the choice of wording in academic writing reflects deeper epistemic and disciplinary commitments, which can further complicate the revision process. Understanding these challenges is essential for guiding academics through effective revisions while maintaining the integrity and alignment of their work with disciplinary standards. This is relevant for our community as it underscores the importance of navigating the intricate relationship between writing practices and governance in academic settings.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "ConMem: Counterfactual Multi-Scenario Probing for Resolving LLM Memory Misalignment",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2610.33432",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Long-term memory is critical for autonomous Large Language Model (LLM) agents executing multi-session, long-horizon tasks. However, existing memories often inappropriately store, retain, or retrieve over-generalized, misattributed, or privacy-sensitive information, a problem we term memory misalignment.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.009569+00:00",
+      "long_summary": "Long-term memory is essential for autonomous Large Language Model (LLM) agents that handle multi-session, long-horizon tasks. Nonetheless, current memory systems frequently struggle with properly storing, retaining, or retrieving information, which can lead to issues such as over-generalization, misattribution, or the exposure of privacy-sensitive details. This phenomenon is identified as memory misalignment. Addressing these issues is crucial for improving the reliability and effectiveness of LLMs in various applications. Understanding the challenges of memory management in AI is important for the community as it highlights the ongoing need for refining AI systems and enhancing their capabilities in real-world scenarios.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "NewsBench: Expert-Grounded Evaluation of Epistemic Quality in AI News Reporting",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2610.33240",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "As frontier AI systems increasingly serve as sources of political and current-events information, evaluating the epistemic quality of their responses is now especially consequential. Existing evaluations often focus narrowly on ideological alignment, rely on measures not validated for this setting, or depend on reference labels derived from public opinion or non-expert annotation, potentially producing misleading or miscalibrated results.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:31.988005+00:00",
+      "long_summary": "As AI systems become significant sources of political and news-related information, assessing the quality of their responses has become crucial. Current evaluation methods tend to concentrate on ideological alignment and utilize validation measures that may not be suitable for this context. Additionally, some approaches rely on public opinion or non-expert annotations for reference labels, which can lead to inaccurate or misaligned outcomes. The need for a more robust evaluation framework highlights the importance of ensuring that the information generated by AI systems is not just aligned with popular beliefs but is also grounded in expert knowledge. Understanding the mechanisms that underpin the quality of AI-generated news is essential for a community engaged in navigating the complexities of AI's role in information dissemination.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Distilling Expert Judgment at Scale",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2610.33233",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Frontier AI models are increasingly deployed on topics where the stakes are high and expert judgment is required, including healthcare, defense, finance, governance, and politics. We present a general methodology for distilling expert human judgment into automated evaluation systems that operate at scale.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:31.940723+00:00",
+      "long_summary": "Frontier AI models are being utilized in high-stakes areas such as healthcare, defense, finance, governance, and politics, where expert judgment is crucial. A new methodology is proposed for translating expert human judgment into automated evaluation systems that can function at scale. This approach aims to enhance the decision-making capabilities of AI in critical domains, reflecting a significant advancement in AI governance and policy. Understanding these developments is essential for communities to grasp how AI can influence major societal decisions and reflect the need for responsible implementation.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3myqqgszdv22z",
+      "relevance": 1,
+      "tags": [],
+      "summary": "It seems like the #nlproc community is overdue for a conversation about how we should and shouldn't use text processing in reviewing, and also, I guess, what peer review & science even are. #emnlp2026 , 🧵>> [contains quote post or other embedded content]",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "26 Oct 2026 03:05 +0000",
+      "first_seen_at": "2026-10-27T16:05:48.335121+00:00",
+      "long_summary": "The #nlproc community is poised for a necessary discussion regarding the appropriate uses of text processing in the context of reviewing, as well as broader reflections on the nature of peer review and science itself. This conversation is prompted by the upcoming #emnlp2026 event, indicating a timely opportunity for critical evaluation within the field. Engaging in such discussions can help ensure that practices in text processing align well with the values of scientific integrity and peer review standards. This matters for a community keeping up with AI as it underscores the importance of ongoing dialogue about ethical practices in technology developments.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Parametric Session States Recover Retrieval Intent without Replaying History",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.33047",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Long-running assistants often interpret follow-up requests whose referents, constraints, and active goals were established many turns earlier. The central challenge is therefore not only context length, but retrieval intent: a current query such as ``use the previous configuration'' may omit the project, entity, and version terms needed to locate relevant evidence.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.551414+00:00",
+      "long_summary": "Long-running assistants face challenges in interpreting follow-up requests that reference details established much earlier in a conversation. The main issue is not just the context length, but also the retrieval intent, which refers to the ability to locate relevant evidence based on current queries that may not explicitly mention crucial terms such as project, entity, and version. For example, a request like \"use the previous configuration\" can lack the necessary context to effectively retrieve the required information. This highlights the complexity of maintaining effective communication in extended interactions. Understanding these challenges is crucial for the community, as it underlines the importance of improving AI's contextual comprehension and retrieval capabilities to enhance user experience in long-term engagements.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "SLICE-Mem: Salience-Gated Lightweight Information Curation for Efficient LLM Agent Memory",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.33015",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Long-term memory enables large language model (LLM) agents to maintain personalized and temporally coherent interactions, but repeated LLM inference for memory admission, extraction, and organization introduces substantial cost and latency. We present SLICE-Mem, a lightweight memory framework that combines salience-guided admission and predicate-centered information extraction.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.536687+00:00",
+      "long_summary": "SLICE-Mem is a new lightweight memory framework designed to enhance the long-term memory capabilities of large language model (LLM) agents, enabling them to perform personalized and coherent interactions over time. Traditional methods for managing memory involve considerable costs and delays due to the repetitive inference required for memory admission, extraction, and organization. SLICE-Mem addresses these challenges by integrating salience-guided admission to prioritize important information and predicate-centered information extraction to streamline the process. This innovation aims to improve the efficiency of memory management without compromising the quality of interactions. Understanding advancements like SLICE-Mem is crucial for the community, as it influences the development of more effective and responsive AI systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "The Social World Model Evaluation Gap",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.33014",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "A negotiation assistant can reach a good deal without accurately predicting the other person's response. We ask whether evaluations of social world models test that prediction directly.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.534753+00:00",
+      "long_summary": "A negotiation assistant is capable of achieving favorable outcomes without the need to precisely predict the other party's reactions. The research raises a critical question regarding whether the assessment of social world models directly tests this aspect of prediction. This inquiry is important for understanding the effectiveness of AI systems in negotiation contexts and could influence how we develop and evaluate these models. Keeping up with such developments is crucial for the community, as it sheds light on the capabilities and limitations of AI in social interactions.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "OpenESM: Energy-Steered Models Are Scalable Foundation Learners",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.33005",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "market_platform"
+      ],
+      "summary": "Energy-based models have shown promising properties for domain-specific tasks but remain challenging in modeling general-purpose scenarios. To bridge this gap, we design energy-steered models (ESMs) for foundational language modeling.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.525191+00:00",
+      "long_summary": "Energy-based models have demonstrated their utility in specialized tasks but face limitations in their application to general-purpose scenarios. To address this challenge, energy-steered models (ESMs) are introduced as a new approach for foundational language modeling. This development is significant for the community as it highlights ongoing advancements in AI that aim to enhance the versatility and effectiveness of language models.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Entity-Aware Evaluation of OCR Systems for Historical Document Transcription",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2610.33004",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Optical Character Recognition (OCR) is essential for digitizing historical archives, yet standard evaluation metrics such as Character Error Rate (CER) do not necessarily reflect whether meaningful information, such as names, dates, and identifiers, is preserved. In this work, we investigate entitylevel analysis of OCR errors as a complementary perspective for evaluating OCR quality in historical documents.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Tue, 27 Oct 2026 00:00:00 -0400",
+      "first_seen_at": "2026-10-27T16:05:32.523062+00:00",
+      "long_summary": "This work explores the limitations of traditional evaluation metrics like Character Error Rate (CER) in assessing Optical Character Recognition (OCR) systems used for digitizing historical archives. Since CER may not adequately measure the retention of significant information such as names, dates, and identifiers, the authors propose an entity-level analysis to better evaluate OCR accuracy. This complementary approach aims to highlight the importance of preserving meaningful content during the digitization process, which is crucial for historical documentation. This shift in evaluation methodology matters for communities engaged in AI and digital archiving, as it emphasizes the need for more nuanced metrics that can ensure the integrity and accessibility of historical data in a digital format.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-10-27",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}

@@ -16,7 +16,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-283 - Error & Slavery - Contemporary]]"
 tags: [summa, day/283, pars/suppl, q/51-52]
-last_qc_at: "2026-10-16T16:17:27"
+last_qc_at: "2026-10-27T20:17:26"
 last_qc_outcome: "pass"
 ---
 

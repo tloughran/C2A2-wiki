@@ -932,6 +932,15 @@ async function main() {
   await assertManifest(page, 'metabolism', METABOLISM_SRC);
   await auditTab(page, 'metabolism', 0, 0);
 
+  // Sub-views (2026-11-03): Charts | Vault Life. The alias is two words; the
+  // view's NAME is one. `what` must say which sub-view is standing.
+  await row(page, 'B0a go vault life -> the Vault Life sub-view (alias resolves to name)', 'go vault life',
+    { ok: true, spoken: /^go vault$/ });
+  await sleep(1500);
+  await row(page, 'B0b what -> names the vault sub-view', 'what', { ok: true, spoken: /vault view/ });
+  await row(page, 'B0c go charts -> back to the charts', 'go charts', { ok: true, spoken: /^go charts$/ });
+  await sleep(500);
+
   await row(page, 'B1 set view waveform -> alias resolves to DOM value wave', 'set view waveform',
     { ok: true, spoken: /^set view wave$/, dom: { '#view': { value: 'wave' } } });
   await row(page, 'B2 set metric output -> out', 'set metric output',

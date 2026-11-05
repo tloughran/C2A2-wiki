@@ -2433,3 +2433,64 @@ Phase 0: decision email 2026-10-26 (3 APPROVE: PROP-2026-10-26-001..003) applied
 ### 2026-10-27 second orchestrator firing (04:37 local, verification only)
 Started while the primary cloud run was mid-ingest (decisions archive 04:36, traditions files changing 04:37-04:39); changed nothing it had done. Verified: Phase 0 email 2026-10-26 (3 APPROVE) applied, email stored once in provenance, no UNREAD label; Phase 1 ledger entry present; Phase 3 review page 2026-10-27_review.html exists; Phase 4 draft r7204053308839821321 exists; review_log scrub clean; 5.6 ran. Phase 2 not repeated. One gap filled: Phase 5 cleanup had left review/2026-10-23_review.html (4 days old); moved to review/_trash/. Phase 6: no git.
 **Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 3.
+
+### 2026-10-28 orchestrator (cloud)
+Phase 0: no new decision email (10-25 and 10-26 already applied). Phase 1: ledger unchanged, 0 ingested. Phase 2: skipped (Wednesday specialists filed Kastrup x2 + McGilchrist x1). Phase 3/4: review page (6 pending) opened + draft. 5.5 OK address-clean; 5.6 OK 1828 signals, 91 pairs, span to 2026-10-26, stale_days 2. Phase 6: no git.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 6.
+
+### 2026-10-28 second orchestrator firing (04:37 local, verification only)
+Started as the primary cloud run finished (review page, review_log, level2 stream all stamped 04:36; master status line + this ledger entry written ~04:37). Changed nothing it had done. Verified: Phase 0 no new decision email (10-26 email already applied 10-27, archive 2026-10-27_decisions.md present); Phase 1 nothing new to ingest; Phase 2 Wednesday specialists filed Kastrup x2 + McGilchrist x1 (not repeated); Phase 3 2026-10-28_review.html exists; Phase 4 draft r-1469949844095458026 exists; Phase 5 no _review.html older than 3 days; 5.5 review_log scrub clean (0 address matches); 5.6 ran. Phase 6: no git.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 6.
+
+### 2026-10-29 second orchestrator firing (verification only)
+Primary run completed 04:36 (review page, review_log, level2 stream stamped 04:36; master narrative written). Changed nothing it had done. Verified: Phase 0 no new decision email (unread matches are old 04-08/04-27/07-23 emails, all archived); Phase 1 nothing new; Phase 2 Thursday specialists filed Stump x1 + Fredrickson x2 (not repeated); Phase 3 2026-10-29_review.html exists; Phase 4 draft r-7379130192179934148 exists; Phase 5 no _review.html older than 3 days; 5.5 scrub clean; 5.6 not re-run. Phase 6: no git.
+**Network: 1087 PRS / 164 CROSS / 111 FINDING.** Pending = 9.
+
+## 2026-10-31 - C2A2 daily run (Sat, cloud orchestrator)
+Phase 0: decision email 2026-10-30 (10 APPROVE: PROP-2026-10-27-001..003, 28-001..003, 29-001..003, 30-001) applied; moved to approved/, copied to inbox/. Phase 1 ingested:
+- PROP-2026-10-27-001 hoffman 2026-10-27_hoffman_muraresku-consciousness-mystery-reality.md PRS-57 (1 triplets)
+- PROP-2026-10-27-002 hoffman 2026-10-27_hoffman_impact-theory-bilyeu-simulation.md PRS-58 (1 triplets)
+- PROP-2026-10-27-003 hoffman 2026-10-27_hoffman_oxford-decorated-permutations-talk.md PRS-59 (1 triplets)
+- PROP-2026-10-28-001 mcgilchrist 2026-10-28_mcgilchrist_kcl-war-studies-trust-legitimacy.md PRS-86 (1 triplets)
+- PROP-2026-10-28-002 kastrup 2026-10-28_kastrup_lucille-lab-of-life.md PRS-99,100 (2 triplets)
+- PROP-2026-10-28-003 kastrup 2026-10-28_kastrup_sheldrake-criticisms-response.md PRS-101,102 (2 triplets)
+- PROP-2026-10-29-001 stump 2026-10-29_stump_theology-knowledge-of-persons.md PRS-50,51 (2 triplets)
+- PROP-2026-10-29-002 fredrickson 2026-10-29_fredrickson_listen-to-resonate.md PRS-48 (1 triplets)
+- PROP-2026-10-29-003 fredrickson 2026-10-29_fredrickson_co-experienced-affect-caring-communities.md PRS-49,50 (2 triplets)
+- PROP-2026-10-30-001 carroll 2026-10-30_carroll_mindscape-372-winfree-dna-computing.md PRS-106,107 (2 triplets)
+
+### 2026-10-31 second orchestrator firing (04:36 local, verification only)
+Started while the primary cloud run was mid-flight (decisions archive 04:35, review page 04:36); waited ~5 min for it to finish, changed nothing it had done. Verified: Phase 0 decision email 2026-10-30 (10 APPROVE) applied, archive 2026-10-31_decisions.md present, no unread decision email left; Phase 1 ledger entry present (10 cards, 15 triplets); Phase 2 Saturday Wolfram specialist filed 3 cards (not repeated); Phase 3 2026-10-31_review.html exists; Phase 4 draft r2621684710377611026 exists; Phase 5 no _review.html older than 3 days; 5.5 review_log rebuilt 04:36, scrub clean (0 address matches); 5.6 rebuilt 04:36, 1856 signals, 91 pairs, span to 2026-10-30, stale_days 1. Phase 6: no git.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 3.
+
+### 2026-11-01 second orchestrator firing (04:37 local, verification only)
+Primary run had completed at 04:36 (review page 2026-11-01_review.html, review_log.html, level2_signal_stream.html and master narrative all stamped 04:36). Changed nothing it had done. Verified: Phase 0 only decision email in 3 days is 2026-10-30, already applied 10-31; Phase 1 nothing new to ingest; Phase 2 Sunday Rohr/Wright cards (PROP-2026-11-01-001..004) plus 3 Wolfram 10-31 cards pending; no duplicate searches, review page, or draft created. Phase 6: no git run.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 7.
+
+### 2026-11-02 second orchestrator firing (04:37 local, verification only)
+Primary run had completed at 04:36 (2026-11-02_review.html, review_log.html, level2_signal_stream.html and master narrative all stamped 04:36; Gmail draft r532689288151019652 created 09:36Z). Changed nothing it had done. Verified: Phase 0 no new decision email (4 unread decision threads matched the search, all from April/July and all already stored in provenance/decision_emails.json; left as-is); Phase 1 nothing new by ledger; Phase 2 Monday Levin/Friston specialist cards PROP-2026-11-02-001..003 pending, no duplicate searches; Phase 5 no _review.html older than 3 days; 5.5 scrub clean (0 address matches). Phase 6: no git run.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 10.
+
+## 2026-11-03 - C2A2 daily run (Tue, Hawkins + Hoffman specialist day, cloud orchestrator)
+Phase 0: no new decision email (4 unread decision threads all April/July, already stored; left as-is). Phase 1: nothing new by ledger; 0 ingested. Phase 2: Hawkins searched, nothing verifiably new; Hoffman cards PROP-2026-11-03-001..002 pending. Phase 3/4: review page 2026-11-03_review.html opened + Gmail draft. Phase 5: 2026-10-30_review.html removed; 5.5 clean; 5.6 OK 1856 signals/91 pairs/stale_days 4. Phase 6: no git.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 12.
+
+### 2026-11-03 second orchestrator firing (04:37 local, verification only)
+Started while the primary cloud run was mid-flight (review page 04:36, review_log/level2 04:36, master + ledger 04:37); waited ~2 min for it to finish, changed nothing it had done. Verified: Phase 0 no new decision email (same 4 April/July threads, already stored; left as-is); Phase 1 nothing new by ledger; Phase 2 Tuesday Hoffman cards PROP-2026-11-03-001..002 pending, no duplicate searches; Phase 3/4 not repeated (page exists, draft by primary); Phase 5 no _review.html older than 3 days remaining; 5.5 scrub clean (0 address matches). Phase 6: no git run.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 12.
+
+## 2026-11-04 - C2A2 daily run (Wed, McGilchrist + Kastrup specialist day, cloud orchestrator)
+Phase 0: no decision emails. Phase 1: 0 ingested. Phase 2: skipped (specialists filed 5). Review page opened, Gmail draft created, review log + L2 rebuilt. Note: PROP-2026-11-04-001/002 IDs duplicated across McGilchrist and Kastrup files (look up by file).
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 17.
+
+### 2026-11-04 second orchestrator firing (04:37 local, verification only)
+Primary run had completed at 04:36 (2026-11-04_review.html, review_log.html, level2_signal_stream.html, master narrative and this ledger all stamped 04:36; Gmail draft r-240820212521858279 created 09:36Z). Changed nothing it had done. Verified: Phase 0 no decision email in the last 3 days; Phase 1 nothing new by ledger; Phase 2 Wednesday McGilchrist (3) + Kastrup (2) specialist cards pending, no duplicate searches; Phase 3/4 not repeated; Phase 5 no _review.html older than 3 days (11-01 is the oldest, inside the window); 5.5 scrub clean (0 address matches). Phase 6: no git run.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 17.
+
+## 2026-11-05 - C2A2 daily run (Thu, Stump + Fredrickson specialist day, cloud orchestrator)
+Phase 0: no decision emails. Phase 1: 0 ingested. Phase 2: no specialist cards present at run time; searched Stump, Fredrickson, Levin, Wolfram, Carroll, Arkani-Hamed, nothing verifiably new (60-day filter), 0 proposals written. Review page opened, Gmail draft created, 2026-11-01_review.html removed, review log + L2 rebuilt (newest signal 2026-10-30, 6 days).
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 17.
+
+### 2026-11-05 second orchestrator firing (04:37 local, verification only)
+Primary run had completed at 04:36-04:37 (2026-11-05_review.html, review_log.html, level2_signal_stream.html stamped 04:36; master narrative and this ledger 04:37; Gmail draft r-511843712515396568 created 09:36Z). Changed nothing it had done. Verified: Phase 0 no new decision email (same 4 unread April/July threads, all already in provenance/decision_emails.json and review/archive; left as-is); Phase 1 nothing new by ledger; Phase 2 not repeated (primary searched 6 traditions, 0 new); Phase 6 no git run.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 17.

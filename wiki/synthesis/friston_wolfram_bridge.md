@@ -51,3 +51,17 @@
 **Open question the wiki cannot yet answer:** What is the minimum monitoring bandwidth a thick tradition needs to catch an AI participant drifting?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-24_wolfram_jon-hernandez-ai-future-interview]]
+
+
+## Expectation-dependent oversight
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology.md` (0 backlinks).
+
+**Why it sits here:** Wolfram's behavioural oversight claim and Friston's precision-weighting describe the same phenomenon in different vocabulary.
+
+**Synthesis claim.** Over-trust is a precision-weighting error: a high prior on correctness lowers the gain on checking.
+
+**Open question the wiki cannot yet answer:** Can oversight be formalised so that checking effort tracks surprise rather than habit?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology]]

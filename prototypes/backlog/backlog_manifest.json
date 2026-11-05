@@ -24,6 +24,22 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-29-003",
+  "tradition": "fredrickson",
+  "source_date": "2021-06-01",
+  "title": "Characteristics and consequences of co-experienced positive affect: understanding the orig",
+  "file": "inbox/proposals/approved/2026-10-29_fredrickson_co-experienced-affect-caring-communities.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-29-001",
+  "tradition": "stump",
+  "source_date": "2021-09-24",
+  "title": "Theology and the Knowledge of Persons",
+  "file": "inbox/proposals/approved/2026-10-29_stump_theology-knowledge-of-persons.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-11-001",
   "tradition": "stump",
   "source_date": "2022",
@@ -37,6 +53,14 @@
   "source_date": "2023",
   "title": "Does Shared Positivity Make Life More Meaningful? Perceived Positivity Resonance is Unique",
   "file": "inbox/proposals/approved/2026-10-08_fredrickson_shared-positivity-meaning-in-life.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-29-002",
+  "tradition": "fredrickson",
+  "source_date": "2023-10-01",
+  "title": "Listen to resonate: Better listening as a gateway to interpersonal positivity resonance th",
+  "file": "inbox/proposals/approved/2026-10-29_fredrickson_listen-to-resonate.md",
   "processed": false
  },
  {
@@ -109,6 +133,14 @@
   "source_date": "2024-10-20",
   "title": "What Emergence Can Possibly Mean",
   "file": "inbox/proposals/approved/2026-04-13_carroll_what-emergence-can-possibly-mean.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-28-003",
+  "tradition": "kastrup",
+  "source_date": "2024-11-22",
+  "title": "Response to Rupert Sheldrake's criticisms of Analytic Idealism",
+  "file": "inbox/proposals/approved/2026-10-28_kastrup_sheldrake-criticisms-response.md",
   "processed": false
  },
  {
@@ -1584,6 +1616,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-27-002",
+  "tradition": "hoffman",
+  "source_date": "2026-05-14",
+  "title": "What's outside the simulation with Donald Hoffman?",
+  "file": "inbox/proposals/approved/2026-10-27_hoffman_impact-theory-bilyeu-simulation.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-25-001",
   "tradition": "levin",
   "source_date": "2026-05-14",
@@ -2944,6 +2984,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-28-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-08-18",
+  "title": "The Divided Brain \u2014 KCL Department of War Studies podcast (XCEPT), Dr Nafees Hamid with Dr",
+  "file": "inbox/proposals/approved/2026-10-28_mcgilchrist_kcl-war-studies-trust-legitimacy.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-01-002",
   "tradition": "hawkins",
   "source_date": "2026-08-19",
@@ -3576,6 +3624,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-27-001",
+  "tradition": "hoffman",
+  "source_date": "2026-10-05",
+  "title": "Consciousness, Mystery & Reality (Brian Muraresku and Donald Hoffman in conversation)",
+  "file": "inbox/proposals/approved/2026-10-27_hoffman_muraresku-consciousness-mystery-reality.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-09-001",
   "tradition": "carroll",
   "source_date": "2026-10-05",
@@ -3597,6 +3653,14 @@
   "source_date": "2026-10-05",
   "title": "08/2026 - Attention in Monty (a Hackathon Prototype)",
   "file": "inbox/proposals/approved/2026-10-06_hawkins_attention-in-monty-hackathon-prototype.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-28-002",
+  "tradition": "kastrup",
+  "source_date": "2026-10-06",
+  "title": "Francis Lucille: Test your theory in the lab of life \u2014 On lasting happiness, enlightenment",
+  "file": "inbox/proposals/approved/2026-10-28_kastrup_lucille-lab-of-life.md",
   "processed": false
  },
  {
@@ -3789,6 +3853,22 @@
   "source_date": "2026-10-24",
   "title": "Empire and Christianity: Weekly Summary (CAC Daily Meditations, Week 42)",
   "file": "inbox/proposals/approved/2026-10-25_rohr_empire-and-christianity-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-30-001",
+  "tradition": "carroll",
+  "source_date": "2026-10-26",
+  "title": "372 | Erik Winfree on DNA Robots and Computers",
+  "file": "inbox/proposals/approved/2026-10-30_carroll_mindscape-372-winfree-dna-computing.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-27-003",
+  "tradition": "hoffman",
+  "source_date": "2026-10-27",
+  "title": "Conscious Agents, Decorated Permutations, and the Construction of Spacetime",
+  "file": "inbox/proposals/approved/2026-10-27_hoffman_oxford-decorated-permutations-talk.md",
   "processed": false
  }
 ]

@@ -73,3 +73,17 @@
 **Open question the wiki cannot yet answer:** Does the visible/hidden resource split give a new complexity class for observers in the ruliad?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-23_hoffman_trace-logic-theory-of-computation]]
+
+
+## Solid ground for an interface-bound observer
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-10-31_wolfram_last-theory-086-search-for-solid-ground.md` (0 backlinks).
+
+**Why it sits here:** Wolfram asks for knowledge towers on verified ground; Hoffman asks what ground an evolved interface can offer.
+
+**Synthesis claim.** Verifiability can be real within an interface even if the interface does not mirror reality, so 'solid' means robust under test, not true to the thing in itself.
+
+**Open question the wiki cannot yet answer:** What counts as solid ground when the observer is part of the computation?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_last-theory-086-search-for-solid-ground]]

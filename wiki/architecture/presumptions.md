@@ -25925,3 +25925,525 @@ PRESUMPTION-1190:
     Current status: UNTESTED
 
 *Surfaced by the 14b local pass of 2026-10-26. **4 items (1187-1190)**: epistemic 2 · architectural 1 · methodological 1; risk High 3 · Medium 1. Checked against 14a 1940-1950 and PRESUMPTION-1180, -1182, -1184..1186. Not re-surfaced (recurrences): distributed reporting/central remediation (1186, again shown by 1948), stand-down semantics (1184).*
+
+
+## 2026-10-27 — 14b local pass
+
+PRESUMPTION-1191:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] The candidate-certification rule (DECISION-084) presumes that 'mature members' of each tradition are identifiable, reachable, and independent of the outputs they certify. Today 77 physicalist-dialogue candidates were minted with no named certifier on either side; the system's existing human-ruling queue already stalls (WATCH-003 at 23 checks). Without a discharge path, a candidate ledger may grow without ever settling anything. Is the gate passable as designed?
+  Evidence it was operative: Addendum: '77 candidates in all, every one pending certification by mature members of both traditions'; d14c163a (WATCH-003 stale)
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: DECISION-084; OPEN-279
+  Testability: testable via literature
+  Risk if wrong: High: the dialogue output becomes an unbounded pending queue; nothing counts.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1191
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1192:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] A rival physicalist tradition built by the same system and designer that built the 14 non-physicalist traditions is presumed to be a genuine rival rather than a constructed foil. The Carroll build (37 PHYS-PRS, 14 members, dialogues vs Kastrup, Hoffman-Prakash, Levin) was authored on a branch in one day; nothing in the record tests whether physicalists would recognise it as their position.
+  Evidence it was operative: Addendum: Carroll stages 1-3 done; ACPA #5 answer 'full Carroll tradition + 3 dialogues'
+  Why it was unstated: culturally embedded
+  Type: epistemic
+  Related decisions: DECISION-085; OPEN-279
+  Testability: testable via literature
+  Risk if wrong: High: dialogue 'features' may reflect the builder's picture of physicalism, and an ACPA proof of concept would then show self-dialogue.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1192
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1193:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] The print edition presumes that stripping internal material (Related-records lines, QC notes, sources) keeps the record auditable, while the ACPA pitch centres on an 'auditable record' and a claim-trace view. The same day found the July citation harvest covered 65 of 307 days and High ratings resting on an unheard recording: the stripped apparatus is where those defects show. Is a frozen print of a moving corpus (all 307 days changed since 09-03) a citable edition, and what links a printed claim back to its trace?
+  Evidence it was operative: Addendum (print build; vault inconsistencies); chat scrape 3f270954 (auditable record #6, claim-trace)
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: DECISION-085; OPEN-280
+  Testability: testable via literature
+  Risk if wrong: Medium: printed volumes cannot be traced back to evidence at the poster that advertises traceability.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1193
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1194:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] The self-awareness layer presumes that the session list it samples contains the designer's work. Today's most consequential session (binding rulings, new branch, print build; 09:13-16:32) does not appear in the 40 most recent sessions returned to this run, and the 18:33 evening sync declared no interactive session. The decisions reached 14a only through a hand-written addendum. The audit layer sees scheduled agents reliably and designer speech least reliably: the inverse of what it exists to watch.
+  Evidence it was operative: list_sessions(limit 40) this run; d6f6bb0f; addendum header 'The 18:33 sync ran without session transcripts and so missed a long interactive ACPA session'
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-278; ASSUMPTION-1958
+  Testability: testable via literature
+  Risk if wrong: High: assumptions and decisions from interactive work are recorded second-hand or not at all; registers over-represent automation.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1194
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+PRESUMPTION-1195:
+  Date surfaced: 2026-10-27
+  Statement: [inferred] Admissibility for Speculative proposals is presumed to be settled by precedent (Hopewell, PROP-2026-09-22-003) rather than by a ruling. DECISION-081 retired one unratified agent-local heuristic and OPEN-172 asks whether others gate the pipeline; 'event page alone' is another such rule, here loosening rather than tightening.
+  Evidence it was operative: 0a5e7596
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions: DECISION-081; OPEN-172
+  Testability: testable in-house
+  Risk if wrong: Medium: evidential floor drifts by accumulated precedent.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1195
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-27 local pass (final assistant message per session via session_info; interactive ACPA session known only via daily_sync/cowork_to_chat/2026-10-27_cowork_session_addendum.md).
+    Current status: UNTESTED
+
+*2026-10-27 14b: PRESUMPTION-1191..1195 (methodological 2, epistemic 2, normative 1; risk High 3, Medium 2). Checked against 14a 1951-1964 and PRESUMPTION-1187..1190. Not re-surfaced: artefact-as-proof (1187; recurs in 1958), detect-instead-of-lock (1188; recurs in 1961).*
+
+PRESUMPTION-1196:
+  Date surfaced: 2026-10-28
+  Statement: [inferred] The double-registration fix ('confirm the cloud trigger fires before disabling the local entry') presumes the cloud and local copies of a task are equivalent once both fire. They are not: the cloud 14a/14b copy fires nightly but lacks session_info and has NO-OP'd since 10-24, while the local scheduler-health copy lacks the Routines connector that the cloud side has. 'Fires' is the only parity test named; tool parity is not. Following the rule as written would disable the only 14a/14b path that reads transcripts.
+  Evidence it was operative: Scheduler health 86404fd4 action #1; changelog/2026-10-29 cloud NO-OP; this run (local) has session_info
+  Why it was unstated: too foundational to notice
+  Type: architectural
+  Related decisions: OPEN-274, OPEN-273; ASSUMPTION-1909, -1966, -1967
+  Testability: testable via literature + in-house
+  Risk if wrong: High: the migration removes working capability while every check reports OK.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1196
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-28 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1197:
+  Date surfaced: 2026-10-28
+  Statement: [inferred] Reports that the voice-shell suite is RED 'the second morning running' and that failures fell 8 -> 6 presume the same test set on both days. The denominator changed (396 -> 400 rows) and the commit changed; the comparison is not like-for-like and no row identities are given.
+  Evidence it was operative: Scheduler health 86404fd4; morning status 16cc9820; METRICS-2026-10-27 note
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: ASSUMPTION-1969
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: a trend read off unlike counts can mask new failures behind fixed old ones.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1197
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-28 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-28 14b: PRESUMPTION-1196..1197 (architectural 1, methodological 1; risk High 1, Low-Medium 1). Checked against 14a 1965-1975. Not re-surfaced (already registered): fires-means-checks (~L25660), repeated advisories presumed acted on (~L25470), local twin as no-op not independent check (~L24572), ID-collision scaling (PREMISE-013 line ~1696), Rule 6 breaches disclosed not enforced (~L12370), Tom-as-bottleneck while away (~L25410).*
+
+PRESUMPTION-1198:
+  Date surfaced: 2026-10-29
+  Statement: [inferred] REVISE-534's remedy (run both copies side by side and compare outputs) presumes the two copies can run concurrently without contaminating each other. The scheduler's own verdict for all 27 double-registered tasks is that 'two concurrent passes overwrite each other's output', and that parallel state is what exists now. A shadow run is only a comparison if the shadow's writes are isolated (separate output paths or a dry-run mode). For 14a/14b the isolation is accidental: the cloud copy dates its changelog by UTC, the local by EDT, but both would append to the same shared registers.
+  Evidence it was operative: REVISE-534 recommendations (2710e0c9); scheduler health verdict text (70204e59); changelog/2026-10-29 and 2026-10-30 cloud NO-OPs dated by UTC
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: REVISE-534, OPEN-281, PRESUMPTION-1196
+  Testability: testable via literature
+  Risk if wrong: Medium-High: a side-by-side trial without write isolation can corrupt the registers it is meant to compare, or make the copies look equivalent because one overwrote the other.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1198
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-29 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1199:
+  Date surfaced: 2026-10-29
+  Statement: [inferred] The specialist-agent fallback ('significant work not yet captured' when nothing new exists) presumes each scheduled run should produce proposals at a fixed rate whatever the review capacity. Today all 3 proposals were backfill; pending rose 6 -> 9 with the oldest (Hoffman, 10-27) unreviewed. Production is tied to the calendar, not to new work or to review throughput.
+  Evidence it was operative: Stump/Fredrickson 66696d3b ('Nothing new from the last 30 days'); morning walk 7ccaeca2 (pending 9, up from 6)
+  Why it was unstated: culturally embedded
+  Type: normative
+  Related decisions:
+  Testability: testable in-house
+  Risk if wrong: Medium: backlog grows without bound while Tom is the only reviewer; review quality or attention drops.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1199
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-29 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1200:
+  Date surfaced: 2026-10-29
+  Statement: [inferred] Proposals built from abstracts with primary sources blocked, and marked 'Medium or Speculative', presume those confidence labels survive into the counts that report network growth (1087 PRS triplets, 164 connections). The footer totals carry no confidence breakdown, so abstract-only and full-text triplets would count the same once approved.
+  Evidence it was operative: Stump/Fredrickson 66696d3b; wiki daily run 15ed0b75 and morning walk 7ccaeca2 network totals
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions:
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: growth metrics overstate grounded content.
+  Confidence: low (speculative)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1200
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-29 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-29 14b: PRESUMPTION-1198..1200 (methodological 1, normative 1, epistemic 1; risk Medium-High 1, Medium 1, Low-Medium 1). Checked against 14a 1976-1983. Not re-surfaced (already registered): fires-means-checks; 'no interactive session' inferred from session-title listing (~assumptions L22379); Gmail as sole walk-note channel; duplicate second firings presumed harmless; Rule 6 breaches disclosed not enforced; repeated advisories presumed acted on.*
+
+
+PRESUMPTION-1201:
+  Date surfaced: 2026-10-30
+  Statement: [inferred] Second firings now present themselves as verification ('I checked its work and changed none of it'; 'I checked it against the chat, found it accurate'). This presumes a second run of the same prompt and model on the same inputs minutes later is an independent check. Its errors are correlated with the first run's, so agreement is weak evidence. And the 'verification only' notes are still writes appended to shared files (master wiki, chat summary, cowork summary), so the double-registration still writes twice, in a quieter form.
+  Evidence it was operative: Wiki daily run e91559b3; chat scrape 7d36db14; evening sync 7b8a0720
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: OPEN-273, REVISE-534, REVISE-535
+  Testability: testable via literature
+  Risk if wrong: Medium: duplicate firings get counted as quality assurance, which weakens the case for removing them; appended notes keep growing shared files.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1201
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1202:
+  Date surfaced: 2026-10-30
+  Statement: [inferred] The Arkani-Hamed agent's 'from the thinker himself' filter presumes a tradition is the person's own output, not the research program the person leads. Today it left out a result that 'settles a central conjecture of his program' because others wrote it. The project's own framing of tradition (MacIntyre: a historically extended, socially embodied argument) and Lakatos's research programmes both count work by others inside the program.
+  Evidence it was operative: Carroll/Arkani-Hamed 869fd18e
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions:
+  Testability: testable via literature
+  Risk if wrong: Medium: tradition records follow the named thinker's output and miss how the program is actually progressing; this is worst for program-founders whose followers do most of the confirming work.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1202
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1203:
+  Date surfaced: 2026-10-30
+  Statement: [inferred] 15c's urgency label is now set for scheduling ('so it goes with REVISE-534') and not by evidence strength ('sources only support Moderate'). This presumes readers of revision_flags.md will read 'High' as 'review alongside 534' rather than 'strongly evidenced'. The register has no field that keeps those two meanings apart.
+  Evidence it was operative: Lit search pipeline d469f9d4
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: REVISE-534, REVISE-535
+  Testability: testable in-house
+  Risk if wrong: Low-Medium: triage by urgency would rank weakly evidenced items as strongly evidenced.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1203
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-30 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-30 14b: PRESUMPTION-1201..1203 (methodological 1, structural 1, epistemic 1; risk Medium 2, Low-Medium 1). Checked against 14a 1984-1992. Not re-surfaced (already registered): 'no interactive session' inferred from title listing; double-registration overwrite and shadow-write isolation (P-1196, P-1198, OPEN-281/282); repeated advisories presumed acted on (backlog 10 pending); Rule 6 breaches disclosed not enforced; fixed-rate specialist proposals (P-1199).*
+
+PRESUMPTION-1204:
+  Date surfaced: 2026-10-31
+  Statement: [inferred] The lit pipeline's lock rule is presumed to mean the same thing on both sides. It does not. Locally, 'lock could not be created' is read as fail-closed: stop. In the cloud, the same condition (script unreachable) is handled by hand-appending a LOCKED line and running. A hand-appended text line has no atomic check-then-write, so it excludes a concurrent run only if the other run happens to read the file first. Today the two firings ran hours apart, so nothing collided; the protocol was not what kept them apart.
+  Evidence it was operative: 46935be1 stopped (fail-closed); cloud-lit-2026-10-31-2 appended LOCKED/RELEASED lines and ran; ASSUMPTION-1994
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-281, OPEN-282; extends PRESUMPTION entries on lock compliance (narrated locking) and the two-lock-file location
+  Testability: testable in-house
+  Risk if wrong: Medium: if firings overlap, the fallback path can admit two writers while both report clean locking.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1204
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-31 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1205:
+  Date surfaced: 2026-10-31
+  Statement: [inferred] The 27 Oct freeze guard is presumed to protect the print edition's correctness. It protects its stability. The same QC that it guards found misattributions in the frozen sources, and the only route left for a known correction is an inline annotation in print. That presumes the print copy and the live registers may diverge without a reconciliation record saying which corrections exist where, while 'Live vault registers still carry errors.'
+  Evidence it was operative: Chat scrape: 'build now refuses to run if sources drift from the 27 Oct freeze'; '9 inline notes'; 'Fix registers before or after ACPA?'; ASSUMPTION-2001
+  Why it was unstated: culturally embedded (release-freeze practice)
+  Type: normative
+  Related decisions: OPEN-284
+  Testability: testable in-house
+  Risk if wrong: Medium: errors corrected in one copy persist in the other, and downstream CROSS/FINDING entries keep citing the uncorrected record.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1205
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-10-31 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-10-31 14b: PRESUMPTION-1204..1205 (methodological 1, normative 1; risk Medium 2). Checked against 14a 1993-2003 and existing registry. Not re-surfaced (already registered): first-writer deferral (P-1159; today the later evening-sync firing had session_info, the earlier did not, and the later still deferred — new evidence, same presumption); narrated lock compliance and two lock files; 'verification' second firings (P-1201); Speculative labels surviving into counts (P-1200); erratum propagation (queued earlier). Low yield is expected on a scheduled-only day.*
+
+PRESUMPTION-1206:
+  Date surfaced: 2026-11-01
+  Statement: [inferred] A task prompt is presumed to fix what the task writes. It does not. Two firings of the periodic monitor read the same prompt and reached different policies: one re-queued 53 premises that already had an unsearched block; the other would have skipped them. Which policy reached the register was settled by which firing started a few seconds earlier. With duplicate firings, the prompt's ambiguities become a race, and the register records the winner's reading as if it were the rule.
+  Evidence it was operative: Periodic monitor 0b3377e7 ('The other session followed the task text literally. I would have skipped them'); ASSUMPTION-2004
+  Why it was unstated: oversight
+  Type: methodological
+  Related decisions: OPEN-285; PRESUMPTION-1159 (first-writer deferral; distinct: here the later firing judged the earlier one wrong and still deferred)
+  Testability: testable in-house
+  Risk if wrong: Medium: register contents depend on firing order; 53 duplicate re-check blocks already entered and recur monthly unless a rule is fixed.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1206
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1207:
+  Date surfaced: 2026-11-01
+  Statement: [inferred] A reading that departs sharply from the previous one is presumed to be a measurement fault, and is then explained away or dropped. Connector health dropped a 0-connector reading as 'a failed lookup' (third time); the janitor called 347 new broken links 'more likely' a changed check; the sewing census was declared incomparable with the CSV. Each call may be right, but the same rule would also filter a real sudden change, and the dropped readings are never logged as faults, so the environment problem behind them (why the duplicate copy sees no connectors) is never investigated.
+  Evidence it was operative: Connector health ded68f30; janitor 79a48799; sewing agent 010b81b8; ASSUMPTION-2006, -2009, -2011
+  Why it was unstated: culturally embedded (alarm-fatigue practice: treat outliers as glitches)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2006, -2009; earlier connector empty-read assumptions
+  Testability: testable via literature and in-house
+  Risk if wrong: Medium: trend files can show only gradual change; a real mass uninstall or mass link breakage would be filtered the same way, and recurring environment faults stay unrepaired.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1207
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-01 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-01 14b: PRESUMPTION-1206..1207 (methodological 1, epistemic 1; risk Medium 2). Checked against 14a 2004-2015 and the registry. Not re-surfaced (already registered; new evidence today): concurrency safety from later copies noticing in-flight writes (deferred-monitor write conflict); tool parity between cloud and local copies (P-1196 / REVISE-534; scheduler health repeated 'retire 27' unchanged); autonomous runs presume approvals (lit pipeline did not run at all on 11-01); proposals from unread sources (Wright notes-only); orphan-metric validity; UTC day keys (DST shift today); second firings framed as verification (P-1201).*
+
+PRESUMPTION-1208:
+  Date surfaced: 2026-11-02
+  Statement: [inferred] Each copy of a duplicated task presumes its own outcome is the task's outcome. The local lit pipeline reported 'didn't run today' and 'anything queued is still waiting' without reading the lock log, which shows the cloud copy ran and searched an item that morning. Morning status reported 'all fired on time' from the local registry. Neither report checks what the other copy did, so a reader gets a false negative (lit pipeline) or a false positive (morning status) depending on which copy wrote last.
+  Evidence it was operative: Lit pipeline a69e709f vs review/lit_pipeline.lock; morning status 268ba4f0; ASSUMPTION-2016, -2017
+  Why it was unstated: too foundational to notice (each prompt was written when the task had one copy)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2016, -2017; REVISE-534
+  Testability: testable via literature and in-house
+  Risk if wrong: Medium: reports about the pipeline's own state are unreliable while duplicates exist; Tom may 'fix' a pipeline that ran, or trust one that did not.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1208
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1209:
+  Date surfaced: 2026-11-02
+  Statement: [inferred] Spend is presumed proportional to registered tasks times a flat per-run price. The cost tracker counts each task once, though 26 tasks are double-registered and several fire twice a day, and it prices runs by tier although billing is per token. The estimate is reported as a single figure ($45.60) with no range.
+  Evidence it was operative: Cost tracker 0456206c; scheduler health b7abcfd5; ASSUMPTION-2019
+  Why it was unstated: obvious to participants (task description fixes the method)
+  Type: methodological
+  Related decisions: ASSUMPTION-2019
+  Testability: testable empirically (in-house)
+  Risk if wrong: Low: budget decisions about agents (e.g., which to disable) would rest on a figure that may be off by a factor near 2.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1209
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-02 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-02 14b: PRESUMPTION-1208..1209 (epistemic 1, methodological 1; risk Medium 1, Low 1). Checked against 14a 2016-2026 and the registry. Not re-surfaced (already registered; new evidence today): on-cadence firing equals health (ecosystem report 'no agent has failed'); earliest same-day output authoritative (evening sync withheld four new items); field-presence filters across schema eras ('Status: Active'); ID uniqueness in shared folders (PROP-2026-11-02-001 collision); unattended runs presume approvals (cost tracker, lit pipeline, scheduler health); persistence as delivery.*
+
+PRESUMPTION-1210:
+  Date surfaced: 2026-11-03
+  Statement: [inferred] Duplicate copies of a task are presumed temporally separable: the second copy is called harmless because it 'waits and only checks', which holds only if it can tell when the first copy has finished. The wiki daily run waited about two minutes for a run 'still finishing'; the deferred monitor's two copies wrote to watch_list.md at the same moment. Is 'waits, then verifies' a guarantee, or a timing habit that has so far worked?
+  Evidence it was operative: Wiki daily run 6f51ed65 ('I waited about two minutes for it to complete'); deferred monitor 11a7e73e (simultaneous writes; Nov 1 mid-write collision); ASSUMPTION-2031
+  Why it was unstated: obvious to participants (each copy sees itself as the careful one)
+  Type: methodological
+  Related decisions: ASSUMPTION-2031; ASSUMPTION-2018; REVISE-534
+  Testability: testable via literature + in-house
+  Risk if wrong: Medium: if the wait is only a habit, a slow first copy and a 'verification' second copy can interleave writes to shared files (watch_list.md, PROCESSED_LOG.md).
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1210
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-03 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1211:
+  Date surfaced: 2026-11-03
+  Statement: [inferred] A proposal is presumed to carry its evidence tier with it. The Hoffman specialist states plainly that one card rests on an abstract and another on an episode description and chapter titles, but the card then enters pending/ alongside cards built from full sources, and one supersedes an earlier card. Does anything downstream (review page, approval, triplet count) see or weigh the tier?
+  Evidence it was operative: Hawkins/Hoffman agent eedd95b5; ASSUMPTION-2030 ('the triplets rest only on the episode description and its 21 chapter titles')
+  Why it was unstated: culturally embedded (disclosure in prose feels like disclosure in data)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2030
+  Testability: testable empirically (in-house)
+  Risk if wrong: Medium: description-tier triplets could be counted in the 1102 total and in cross-connections as if first-hand, inflating apparent coverage of a thinker's actual claims.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1211
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-03 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1212:
+  Date surfaced: 2026-11-03
+  Statement: [inferred] Morning summaries presume their reader will reconcile them with the detailed reports. Morning project status told Tom 'every one that was due has fired on time' and 'eight tasks' double-registered, an hour after scheduler health listed 29 FAILs and 27 double registrations; the summary names no source for its figures. Is the one-paragraph morning message treated as a faithful digest of the day's health checks?
+  Evidence it was operative: Morning project status f0c9fbcb vs scheduler health 3bdbc789; ASSUMPTION-2027
+  Why it was unstated: oversight (a short greeting reads as reassurance, not as a measurement)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2027; ASSUMPTION-2017
+  Testability: testable empirically (in-house)
+  Risk if wrong: Low-Medium: Tom may act on the softer figure (8 vs 27) when deciding the REVISE-534 cleanup.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1212
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-03 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-03 14b: PRESUMPTION-1210..1212 (methodological 1, epistemic 2; risk Medium 2, Low-Medium 1). Checked against 14a 2027-2034 and the registry. Not re-surfaced (already registered; new evidence today): each copy's outcome taken as the task's (PRESUMPTION-1208: local lit skip vs cloud run, fourth day); field-presence filters across schema eras ('Status:' on FINDING-005..035 only); unattended runs presume approvals (Desktop Commander auto-declined for lit pipeline and scheduler health; browser selection for evening sync); persistence as delivery (evening sync wrote but did not deliver).*
+
+PRESUMPTION-1213:
+  Date surfaced: 2026-11-04
+  Statement: [inferred] The pending queue presumes each card records the specialist's judgment, as if one task made one judgment. Under duplicate firing it holds the union of two copies' judgments: the local McGilchrist/Kastrup copy skipped 'The Faustian bargain of AI' as a probable duplicate, yet a 'faustian-bargain-of-ai' card is in pending/. A skip by one copy is overruled by any copy that files. Is a skip that leaves no trace, and that a sibling run can undo, still a filter?
+  Evidence it was operative: 1aa55b02 ('very probably the video of the UnHerd Live event, which is already captured') vs cowork summary listing 2026-11-04_mcgilchrist_faustian-bargain-of-ai.md; ASSUMPTION-2036
+  Why it was unstated: too foundational to notice (one task name reads as one agent)
+  Type: methodological
+  Related decisions: ASSUMPTION-2036; PRESUMPTION-1210; PRESUMPTION-859
+  Testability: testable via literature + in-house
+  Risk if wrong: Medium: duplicate firing biases the queue toward inclusion (filing wins over skipping), inflating pending load and the chance that an already-captured source is counted again as new triplets.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1213
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1214:
+  Date surfaced: 2026-11-04
+  Statement: [inferred] A 'new since yesterday' judgment presumes yesterday's record is in the file the run reads. Scheduler health called its 28 double registrations 'new since 2026-11-03' because neither block in its file carried them, yet the 11-03 local pass recorded 27 from scheduler health 3bdbc789. With two copies of the check possibly writing to different places, absence from one file is not absence from yesterday. Was the novelty claim checked against yesterday's actual output?
+  Evidence it was operative: 0550a148 ('Neither that day's block nor today's carries those 28 lines') vs ASSUMPTION-2027 (27 DOUBLE-REGISTERED on 11-03)
+  Why it was unstated: oversight (a run's own log is taken as the log)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2035; ASSUMPTION-2027; PRESUMPTION-1212
+  Testability: testable empirically (in-house)
+  Risk if wrong: Low-Medium: false 'new' flags raise urgency on a known condition; the converse (a real change recorded only in the other copy's file) would be missed.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1214
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1215:
+  Date surfaced: 2026-11-04
+  Statement: [inferred] The Cowork-to-Chat channel presumes Tom's Chat use is single-threaded, so that 'the walk chat' can be found as the most recent conversation or by title. Today the most recent conversation was a live work session with desktop control and a second chat (ACPA poster) was open; the sync could not identify a walk chat at all. With the browser blocker cleared, the next blocker is the channel's addressing model.
+  Evidence it was operative: 57619ca5 ('I couldn't tell which other conversation was the walk chat, so I held off'); ASSUMPTION-2037
+  Why it was unstated: obvious to participants (the walk chat was once the only chat)
+  Type: structural
+  Related decisions: ASSUMPTION-2037; ASSUMPTION-2028; OPEN-287; OPEN-288
+  Testability: testable empirically (in-house)
+  Risk if wrong: Medium: the summary stays undelivered every night even with the browser fixed; or, if recency is used, it is posted into an active work thread with computer control.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1215
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-04 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-04 14b: PRESUMPTION-1213..1215 (methodological 1, epistemic 1, structural 1; risk Medium 2, Low-Medium 1). Checked against 14a 2035-2041 and the registry. Not re-surfaced (already registered; new evidence today): single-writer proposal IDs (PROP-2026-11-04-001/002 collision; see the 10-13 presumption on PROP-YYYY-MM-DD-NNN); PROCESSED_LOG filename markers (~300 unlogged by filename); sandbox metrics reported as host health; evidence tier not carried with cards (PRESUMPTION-1211); each copy's outcome taken as the task's (PRESUMPTION-1208, fifth local lit skip).*

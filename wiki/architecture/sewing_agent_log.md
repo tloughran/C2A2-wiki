@@ -1772,3 +1772,73 @@ A full sewing run for 2026-10-25 is already logged above (10 pages, 42 calls, 19
 **Worth Tom's attention:** this is the third sewing-type firing on 10-25 (bootstrap audit, full run, this one), the same pattern as 10-18. The `c2a2-sewing-agent-weekly` task looks registered more than once, or overlaps another schedule. I did not change any schedule.
 
 *Logged by Sewing Agent on 2026-10-25.*
+
+
+---
+
+## Bootstrap audit census (2026-11-01)
+
+Census-only run (run 20). Total 5,816; orphans 4,868; sparse 802; connected 146. CSV row appended. Phases 3–4 not executed (see sewing_agent_bootstrap_2026-11-01.md). Pages processed: 0. Calls: 0. Bridges: 0. No schedules changed.
+
+*Logged by Sewing Agent on 2026-11-01.*
+
+
+---
+
+## Run: 2026-11-01 (Sunday, scheduled, cloud session ~09:40 UTC)
+
+**Resolver:** same as recent runs (stem, case-insensitive, self-links excluded, node_modules skipped).
+
+### Connectivity snapshot
+
+Pre-run: orphan 4,870, sparse 802, connected 146, total 5,818. Post-run: 4,857 / 812 / 149. **No new CSV row written:** `connectivity_log.csv` already holds a `2026-11-01` row (4,868 / 802 / 146 / 5,816) from the bootstrap audit earlier today.
+
+### Pages processed (backlinks before to after)
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `inbox/proposals/pending/2026-11-01_rohr_love-is-who-we-are-separateness-as-sin` | 0 | 2 | Rohr, Kastrup, Stump, Fredrickson, Loughran |
+| `.../2026-11-01_wright_ask-ntw-oct31-gethsemane-history-gnosticism` | 0 | 2 | Wright, Loughran, Stump |
+| `.../2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance` | 0 | 2 | Wright, Stump, Rohr, Loughran |
+| `.../2026-11-01_wright_russell-moore-isaiah-idols-ai` | 0 | 1 | Wright, Loughran, Hoffman, Wolfram |
+| `.../2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas` | 0 | 3 | Wolfram, Arkani-Hamed, Loughran, Friston |
+| `.../2026-10-31_wolfram_last-theory-086-search-for-solid-ground` | 0 | 3 | Wolfram, Hoffman, Loughran |
+| `.../2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology` | 0 | 3 | Wolfram, Levin, Friston |
+| `inbox/2026-10-30_carroll_mindscape-372-winfree-dna-computing` | 0 | 1 | Carroll, Wolfram, Levin |
+| `inbox/2026-10-29_stump_theology-knowledge-of-persons` | 0 | 2 | Stump, Rohr, Wright, McGilchrist, Loughran |
+| `inbox/2026-10-29_fredrickson_listen-to-resonate` | 0 | 2 | Fredrickson, Friston, McGilchrist, Loughran |
+
+### Agentic calls injected: 38
+
+Loughran 8, Wolfram 5, Stump 4, Wright 4, Rohr 3, Friston 3, Fredrickson 2, Hoffman 2, Levin 2, McGilchrist 2, Kastrup 1, Arkani-Hamed 1, Carroll 1. None duplicated.
+
+### Bridge notes written (16 sections appended to 12 existing files; none created)
+
+`kastrup_rohr`, `rohr_stump` (2), `loughran_wright` (3), `stump_wright`, `loughran_wolfram` (2), `hoffman_wolfram`, `levin_wolfram`, `friston_wolfram`, `carroll_wolfram`, `mcgilchrist_stump`, `fredrickson_friston`, `fredrickson_mcgilchrist`. Each carries a `**Wikilinks (sewing, 2026-11-01):**` line.
+
+### Worth Tom's attention
+
+1. **Evidence caveats ride along.** The Gethsemane and no-serpent Wright cards, the Russell Moore card and Wolfram #086 rest on episode notes or summaries, not transcripts; the calls tell the thinker agents to verify before promotion. Wolfram Q&A has an unresolved May 19 / May 29 date discrepancy.
+2. **"Wright" ambiguity** persists (brief describes Robert Wright; vault `wright` is N.T. Wright). I scored against the vault tradition.
+3. **Duplicate census job persists:** bootstrap audit again wrote today's CSV row first; no schedule changed.
+4. **Backlog:** ~688 inbox/traditions orphans remain unstamped. `inbox/proposals/approved/` holds duplicate copies of several processed cards (same text); these were not processed.
+5. Rule 6 token budget exceeded again.
+
+### Verification (fail-loud)
+
+Before writing: each page asserted to have no prior sewing stamp or Agentic Calls heading; every wikilink resolved to an existing stem; every bridge file present. After writing: backlink map rebuilt (table above). Content only appended; nothing deleted; nothing committed.
+
+*Logged by Sewing Agent on 2026-11-01.*
+
+
+---
+
+## Duplicate firing: 2026-11-01 (scheduled, third sewing-type firing today)
+
+A full run already completed today (10 pages, 38 calls, 16 bridge sections; see the entry above) and the `2026-11-01` CSV row already exists. To avoid compounding the duplicate-schedule problem, this firing was **report-only**: no CSV row, no pages processed, 0 calls, 0 bridges, nothing committed, no schedules changed.
+
+**Quick census (not comparable to the CSV):** 4,399 orphan / 733 sparse / 87 connected across 5,219 unique stems. This counts each filename stem once, whereas earlier runs counted files (5,818), so duplicate stems (e.g. pending and approved copies of the same card) collapse here. Treat it as a cross-check, not a new data point.
+
+**Worth Tom's attention:** this is the second Sunday in a row (10-25, 11-01) with three sewing firings. `c2a2-sewing-agent-weekly` looks registered more than once (or a bootstrap-audit task overlaps it). One cleanup: list the scheduled tasks and routines named "sewing" and disable (not delete) the extras.
+
+*Logged by Sewing Agent on 2026-11-01.*

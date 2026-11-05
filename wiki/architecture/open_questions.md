@@ -3802,3 +3802,142 @@ OPEN-277:
     Original item: OPEN-277
     Item type: OPEN QUESTION
     Current status: OPEN
+
+
+OPEN-278:
+  Raised: 2026-10-27 by 14a/14b (ASSUMPTION-1958; PRESUMPTION-1194)
+  Question: Why is the 09:13-16:32 interactive ACPA session absent from list_sessions (top 40) and from the evening sync? Where is its handoff `handoffs/acpa-2026.md` (not under the wiki mount)? What channel should carry interactive-session decisions to 14a besides a hand-written addendum?
+  Needs: Tom; in-house check of session storage
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-278
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-279:
+  Raised: 2026-10-27 by 14a/14b (ASSUMPTION-1952; PRESUMPTION-1191, -1192)
+  Question: Who are the 'mature members' who certify CAND-* items for each tradition (physicalist side included), how are they recruited, and what happens to candidates never certified (expiry, shown as pending, excluded from ACPA)? Does the candidate ledger become the claim-trace view's spine?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-279
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-280:
+  Raised: 2026-10-27 by 14a/14b (ASSUMPTION-1954, -1956, -1957; PRESUMPTION-1193)
+  Question: The print edition strips Related-records lines and QC notes; the ACPA poster advertises an auditable record. How does a reader get from a printed claim (stamp `#71cbed5`) to its trace? Which of the two FLAG-003 records does the commentary cite?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-280
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-281:
+  Raised: 2026-10-28 by 14a/14b (ASSUMPTION-1966, -1967; PRESUMPTION-1196)
+  Question: Before any local entry is disabled under the double-registration fix, which of the 27 tasks need tools that exist only in the local session (session_info for 14a/14b and the evening sync; Chrome; Desktop Commander), and which need tools only the cloud has (Routines for scheduler health)? Should cutover require tool parity plus one matched-output comparison, not just 'the trigger fires'?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-281
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-282:
+  Raised: 2026-10-29 by 14a/14b (ASSUMPTION-1977, -1981; PRESUMPTION-1198)
+  Question: (a) 15b has now twice recommended a formal SYSTEMIC-RISK flag for 'named check treated as performed' / 'artefact-as-proof'. Should it exist, and where? (b) If REVISE-534's side-by-side trial is adopted, how are the shadow copy's writes isolated so the comparison is not contaminated by the overwrite problem it is meant to fix?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-282
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-283:
+  Raised: 2026-10-30 by 14a/14b (ASSUMPTION-1989; PRESUMPTION-1202)
+  Question: Should specialist agents accept work by others that advances a thinker's research program (e.g., arXiv:2610.27903, which settles a central amplituhedron conjecture) as program evidence, or keep the "from the thinker himself" filter? If accepted, how is it labelled so a tradition record keeps the founder's own output apart from the program's?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-283
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+
+OPEN-284:
+  Raised: 2026-10-31 by 14a/14b (ASSUMPTION-2001; PRESUMPTION-1205)
+  Question: For the print-QC findings (Gillingham-not-Wright PRS-16/17/18, Bennett-not-Hoffman PRS-13, the unconfirmable Levin-Kastrup 12 May dialogue, merged-episode records, discovery dates used as event dates): are the live vault registers corrected, and when (before or after ACPA)? Where is the record of which corrections exist in print annotations only, in the live registers only, or both, and who re-checks the CROSS/FINDING entries that cite the affected PRS records?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-284
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-285:
+  Raised: 2026-11-01 by 14a/14b (ASSUMPTION-2004; PRESUMPTION-1206)
+  Question: Should the 15d monthly re-check skip a premise that already has an unsearched re-check block in for_lit_search.md (as the weekly cycle does), or re-file it each month as the task text says? 53 of the 86 blocks filed on 11-01 are duplicates of earlier unsearched blocks; no re-check block has been marked searched since August. Decide before the 2026-12-06 run, and say whether the 53 duplicates should be removed.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-285
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-286:
+  Raised: 2026-11-02 by 14a (ASSUMPTION-2024)
+  Question: Which figures does the ACPA poster quote for the wiki's size: the 11-01 connectivity count (5,816 pages, 4,868 orphans) or the poster's ~4,000 files / ~100,000 links? State the counting definition used. Decide before the poster goes to the printer (~2026-11-05).
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-286
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-287:
+  Raised: 2026-11-03 by 14a (ASSUMPTION-2028)
+  Question: Which connected Chrome browser ("Browser 1" or "Browser 2") should scheduled runs use for delivery to the walk Chat? The evening sync reports it cannot choose unattended, so summaries are written but not delivered. Does a selection made once in an attended session persist for scheduled runs?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-287
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-288:
+  Raised: 2026-11-04 by 14a (ASSUMPTION-2037; PRESUMPTION-1215)
+  Question: Which claude.ai conversation is the walk chat that the evening Cowork-to-Chat sync should post to? The evening sync reports the browser selection is now resolved ("Browser 1"), which answers the browser half of OPEN-287, but it could not identify the walk chat: the most recent conversation was a work session with computer control. Options it named: name the walk chat in the task prompt, or start each walk chat with a fixed title.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-288
+    Item type: OPEN QUESTION
+    Current status: OPEN

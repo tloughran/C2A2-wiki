@@ -37,6 +37,10 @@
 
 **EXCEPTION — daily-run output, auto-pushed behind a gate (added 2026-10-05, Tom's decision).** `scripts/push_daily_run.sh` (run by the 05:45 `com.c2a2.scheduled-commit-check` agent, right after `commit_daily_run.sh`) MAY push to `main` without human sign-off, but ONLY when every gate passes: (a) **every** commit ahead of origin carries the `C2A2 daily run` subject — anything else ahead (Tom's own work, a vault-sync commit that failed to push) refuses the whole push; (b) the outgoing diff stays inside `commit_daily_run.sh`'s path allowlist; (c) the personal address is absent from the outgoing diff; (d) every changed `.html` file's inline `<script>` blocks pass `node --check` and every changed `.json` parses. It levels with GitHub by **merge, never rebase**, and never force-pushes. Rationale: on 2026-09-30/10-01 two days of committed output sat unpushed, the nightly vault sync failed rebasing across the gap, and no watchdog noticed; Tom chose auto-push behind a check over an overdue alert. Gate (d) is aimed at this rule's original failure — an unreviewed page that no longer renders. **This covers daily-run output only.** Code, CSS, templates, and every other HTML change still require the full human local review above. Tests: `bash scripts/test_push_daily_run.sh` (28 assertions; each refusal asserts the fake origin did not move).
 
+**Pull before push (added 2026-10-29, Tom's decision).** The `heartbeat-refresh` cron pushes to `main` daily (~11:00 UTC), so a push from the Mac is often rejected (fetch first). Level by merge, matching the daily-run rule: `git pull --no-rebase --autostash origin main`, then push. Never rebase or force-push to get past it.
+
+**Publishing scope (added 2026-10-29, Tom's decision).** `pages.yml` publishes the whole repo except working scripts: a step deletes every `.py`, `.sh`, `.plist` and `.command` file before upload (nothing on the site loads them; launchd plists carry local paths). Everything else, including the decision record (`wiki/architecture/decisions.md`) and `wiki/inbox/`, is public by intent.
+
 ---
 
 ## CONSTITUTIONAL RULE: Iframe-Loaded Tabs Must Not Ship Bare Asset Includes
@@ -389,13 +393,29 @@ the real path** — a Terminal shell has its own TCC grant and proves nothing.
 
 ~32 tasks moved to cloud Routines 09-16..09-28, and nothing on the Mac can see a cloud
 run. The Routines service can: each routine's record holds its schedule and last run
-(status, fired_at). The 07:00 `scheduler-health-check` routine fetches that listing
-with its Routines connector, copies the saved result to `scheduler/routines_snapshot.json`
-(never retyped), runs `scripts/check_routine_health.py` on it, and reports
-`scheduler/routine_health.md`. FAIL: last run FAILED, never fired, or two scheduled fires
-missed. WARN: a run PENDING/RUNNING over 2h (the dashboard waiting six hours on an
-approval, 10-05). `America/Indianapolis` is a legacy zone alias; the script maps it, since
-some tz databases omit it.
+(status, fired_at). The 07:00 `scheduler-health-check` routine pages through that listing
+with its Routines connector, writes a **compact** snapshot (one trimmed record per routine:
+id, name, enabled, cron, created_at, last_fired_at, ended_reason, last_run status/fired_at/
+failure_reason, values copied verbatim) to `scheduler/routines_snapshot.json` via Desktop
+Commander, checks its entry count against the listing in code, then runs the **repo's own**
+`scripts/check_routine_health.py` on the Mac, which appends to `scheduler/routine_health.md`.
+FAIL: last run FAILED or ABANDONED, never fired, or two scheduled fires missed. WARN: a run
+PENDING/RUNNING over 2h (the dashboard waiting six hours on an approval, 10-05).
+`America/Indianapolis` is a legacy zone alias; the script maps it, since some tz databases
+omit it.
+
+**Why compact, and why on the Mac (rewritten 2026-10-28).** `routine_health.md` froze
+10-06..10-27 with nobody told. The listing arrives inline in 9-13 pages (~300 KB), and the
+old prompt said to save it verbatim, which cannot be done faithfully; the old prompt also
+downloaded the judge from GitHub into the sandbox with curl, which auto-mode refuses. Both
+failures took a "NOT CHECKED" exit that went only to Dispatch. A failed check now also
+appends a line beginning `NOT-CHECKED <stamp> -- <step> -- <error>` to `routine_health.md`.
+**It must start with a word, not a timestamp:** `routine_health_fresh()` reads the first
+token of the last line as the time of the last good check, so a stamp-first failure line
+would make an unchecked day count as watched. Because the judge now runs from the Mac's
+working tree, an edit to it is live at the next 07:00 run, committed or not.
+**ABANDONED** joined FAILED the same day: the Demo Lab sweep fired on time 10-26, was
+abandoned, sent nothing, and the judge had called it "on schedule, OK".
 
 Two Mac-side checks now defer to it: `check_daily_run_stall.py` no longer fails a task that
 runs in the cloud (its transcript is not on the Mac -- that FAIL fired every day 09-20..10-05),
@@ -557,3 +577,9 @@ The `c282-wiki-agent-daily-run` task does it: Phase 0 appends each processed dec
 
 ### Known caveat
 Only 1 page-snapshot (2026-06-16) was lost before archiving; its 13 cards survive as proposal files. Provenance: 282 triples = A179 backref + B17 fuzzy + C74 seed + D12 (early seeds of later-added traditions; not failures). Reverse gap 168 approved candidates not visualized (101 are secondary -02/-03 candidates).
+
+---
+
+## Curriculum Interface (just-in-time prerequisite curriculum)
+
+**Lives at `curriculum/` (repo root), deliberately not in `wiki/`:** the daily-run commit auto-stages and pushes `wiki/`, and Obsidian indexes it. Untracked until Tom decides to commit; commit by named path only. Start from `curriculum/README.md`; resume from `handoffs/curriculum-interface.md`. Each pilot folder carries a `PREREG.md` whose thresholds were fixed before tagging and are mirrored in `curriculum/scripts/score_pilot.py` -- change them in PREREG first, with a reason. `sample_key.json` holds the thinker attribution and must never be given to a tagger.

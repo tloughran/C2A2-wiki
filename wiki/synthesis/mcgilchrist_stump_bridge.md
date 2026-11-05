@@ -79,3 +79,17 @@ If the transcendentals are real-in-being (Stump) but disclosed-only-through-righ
 **Open question the wiki cannot yet answer:** Is McGilchrist's priority of the whole a Platonic claim about a space of forms or a hylomorphic claim about wholes that exist only in their parts, and can the recording settle it?
 
 **Wikilinks (sewing, 2026-10-04):** [[2026-09-30_mcgilchrist_levin-conversation-2-platonic-space]]
+
+
+## Two modes of knowing
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/2026-10-29_stump_theology-knowledge-of-persons.md` (0 backlinks).
+
+**Why it sits here:** McGilchrist's hemispheric attention and Stump's knowledge of persons draw the same line between grasping and encountering.
+
+**Synthesis claim.** Propositional knowledge is a product of a narrow mode of attention that needs a relational mode to be about anything personal.
+
+**Open question the wiki cannot yet answer:** Can second-person knowledge be studied empirically through attention measures?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-29_stump_theology-knowledge-of-persons]]

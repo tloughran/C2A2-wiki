@@ -50,6 +50,10 @@ def level(t):
 print("must FAIL:")
 # A run that errored is red regardless of the clock.
 expect("last run FAILED", level(routine(TZ + "30 4 * * *", NOW - timedelta(hours=10), "FAILED")), mod.FAIL)
+# 2026-10-26: the Demo Lab sweep fired on time and was ABANDONED; nothing was
+# sent, and the old check called it "on schedule". On time is not done.
+expect("last run ABANDONED, though on schedule",
+       level(routine("0 18 * * 1", NOW - timedelta(hours=1), "ABANDONED")), mod.FAIL)
 # Daily 04:30 local; last fired three days ago -> two scheduled fires missed.
 expect("daily routine missed two fires",
        level(routine(TZ + "30 4 * * *", NOW - timedelta(days=3))), mod.FAIL)
@@ -93,6 +97,10 @@ with tempfile.TemporaryDirectory() as tmp:
     expect("raw list_triggers result", len(mod.load_snapshot(p)), 1)
     p = os.path.join(tmp, "pages.json"); json.dump([one, one], open(p, "w"))
     expect("several saved pages are flattened", len(mod.load_snapshot(p)), 2)
+    # Since 2026-10-28 the 07:00 routine writes a bare compact list (one trimmed
+    # object per trigger), because the raw ~300 KB listing cannot be saved faithfully.
+    p = os.path.join(tmp, "compact.json"); json.dump(one["data"] * 3, open(p, "w"))
+    expect("compact bare list loads every entry", len(mod.load_snapshot(p)), 3)
     p = os.path.join(tmp, "empty.json"); json.dump({"data": []}, open(p, "w"))
     expect("empty snapshot exits 2, not a quiet pass", mod.main(["--snapshot", p]), 2)
 

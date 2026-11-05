@@ -25616,3 +25616,114 @@ MONITOR-697:
   Monitoring cadence: Weekly (default)
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1185 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1185_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1185_against.md
+
+
+MONITOR-698:
+  Date: 2026-10-28
+  Source item: ASSUMPTION-1952 (DISPOSITION-1107)
+  Item type: ASSUMPTION (stated)
+  Priority: High
+  Disposition basis: Adversarial collaboration shows rival parties can agree criteria and co-sign results (Kahneman–Mellers; Clark & Tetlock) [snippet], but only in facilitated, project-bounded studies, not as a standing gate on every output. 15b: adversarial collaborations often end unresolved (Kahneman–Treisman), remain rare, and cross-field review has low reliability and leans on deference (Jirschitzka 2017; Mallard, Lamont & Guetzkow) [snippet]. 15a weak NOVELTY: nothing found on item-by-item dual-tradition certification as a standing gate.
+  What would change the disposition: (-> INCORPORATE a narrowed premise) evidence of a standing cross-paradigm sign-off gate that settles outputs at volume, or an in-house record of the first candidates certified by named members of both traditions; (-> REVISE) the candidate ledger keeps growing with zero certifications after REVISE-531 is answered, or a primary source showing dual sign-off gates stall by design. Also: a direct MacIntyre search (not reached by 15b; 15a's secondary snippet says rival recognition is not required for a tradition's rational defeat, which cuts against making it a gate).
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Original item: ASSUMPTION-1952 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-1952_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-1952_against.md
+
+
+MONITOR-699:
+  Date: 2026-10-28
+  Source item: PRESUMPTION-1192 (DISPOSITION-1109)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: the ideological Turing test makes recognition by adherents the criterion (Caplan); red-team doctrine requires independence from the authors; role-played dissent is weaker than authentic dissent (Nemeth, secondhand) [snippet]. 15b: Brand et al. 2025 report 54–71% pass rates for voicing the other side, which cuts against the concern; but constructed opponents drift toward caricature (Dawes et al. 1972) and the Collins–Evans imitation game needs an insider judge, which the Carroll build lacks [snippet].
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'the Carroll tradition is recognised by physicalists') an ideological-Turing-test style review in which one or more self-identified physicalists judge the 37 PHYS-PRS and 3 dialogues as fair statements of their position; (-> REVISE) such reviewers reject it as a foil, or no insider review is arranged within 4 weekly cycles. Also run the MacIntyre 'no neutral ground' search 15b did not reach.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1192 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1192_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1192_against.md
+
+
+MONITOR-700:
+  Date: 2026-10-31
+  Source item: PRESUMPTION-1202 (DISPOSITION-1115)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Lakatos research programmes and MacIntyre on tradition are communal, not founder-only (Weak; search hits only, unread). 15b: no literature found defending an author-only filter (Weak); a provenance-integrity rationale is unsourced.
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a tradition includes its program members, not only the founder') a read-through of Lakatos/MacIntyre plus citation-network evidence on follower contributions; (-> REVISE) the in-house count showing proposals rejected under author-only filters that members' work would have settled.
+  Monitoring cadence: Weekly (default)
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1202 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1202_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1202_against.md
+
+
+## 2026-11-01 RUN — 15d Periodic Monitor (weekly + MONTHLY cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-10-25 (7 days). Day 1 of the month, a Sunday: the **monthly cycle FIRES**. `lit_pipeline.lock` last line RELEASED 2026-10-31T04:42:13Z (not held; append safe). Registers unchanged from my read to my write (sizes/mtimes checked). Backups: `*.md.bak.20261101-pre-15d` for monitor_queue, for_lit_search, validated_premises. No duplicate firing found at start (no prior 2026-11-01 15d tags). 15d does not evaluate evidence.
+
+### Monthly cycle - INCORPORATED premise re-checks
+- **86 ACTIVE premises** past `Re-check due` re-queued in `for_lit_search.md` (section dated 2026-11-01) with `[RE-CHECK by 15d: 2026-11-01]`, oldest-due first (oldest due 2026-10-08, 24 days late). `Re-check due` advanced in `validated_premises.md`: Monthly (48) -> 2026-12-06 (next first Sunday); Quarterly (38) -> 2027-02-07. Each date line carries a `[re-checked by 15d 2026-11-01 (was due ...)]` tag. No other line in the file changed (diff against backup confirmed). PREMISE-135 has no `Status:` line but reads INCORPORATED/ACTIVE in provenance; included. Premises not yet due (2026-11-14, -20, -21, 2027-01-03) untouched.
+- **Caveat to read (PREMISE-124/126, ESCALATION 5, 5th raising):** this is a date re-stamp and a queue entry, not a re-test. The literature lane still holds the unsearched 10-04 cohort (133) plus weekly carry-over; these 86 will not be searched within their cycle at current throughput. Tom still needs to give the monthly lane a catch-up rule or state the true cadence.
+
+### Weekly cycle
+- **Re-triggered: MONITOR-696** (PRESUMPTION-1174), cycle 0 -> 1, [QUEUED] literature, first 15d check (due 10-30), next 2026-11-08.
+- **Re-triggered: MONITOR-548** (ASSUMPTION-1178), cycle 2 -> 3, [QUEUED-EMPIRICAL] (owed item is the in-house Hawkins x Hoffman vault count, not literature), was due 10-28, next 2026-12-06 (monthly).
+- **Not re-queued, MONITOR-600:** superseded; ASSUMPTION-1305 searched and carried as MONITOR-678 (10-05/06 intake). No separate check owed.
+- **Held, standing unconsumed blocks (not duplicated):** 2026-10-25 cohort - MONITOR-689, -691, -692, -693 (literature), -690, -694, -685 (empirical; -685 read as empirical per the 10-25 correction) - 0 SEARCHED/DISPOSITIONED tags. Older 10-18 (12) and 10-11 (48) cohorts also unconsumed. Cycle counts held; cohort next_check 2026-11-01 -> **2026-11-08** (cohort level, per-entry dates not rewritten).
+- **Not yet due:** MONITOR-697 (intake 10-26), -698, -699 (10-28), -700 (10-31) first due 11-02..11-07; -656 (11-03); -687 (11-11).
+- **In-house check, MONITOR-688 (PRESUMPTION-991):** `metabolism_data.json` `_meta.generated` = 2026-10-31T06:02:51-04:00, total_runs 4630 (was 4511 on 10-24): **regenerated again after the 10-26 REVISE trigger date**, so the snapshot limb is met. Census producer status unchanged from the 10-25 note (not re-verified here). Decision is 15c's.
+- **Not re-verified:** monthly/low-priority cohort MONITOR-001..344 (reparse still owed). Event-driven/bound -003, -041, -154, -544, -612 untouched.
+
+### Stale sweep and trajectories
+- **No new STALE-MONITOR-FLAG.** MONITOR-403's ESCALATE to Tom (10-11) stands, not re-issued; in-house correlation still unrun. MONITOR-548 (cycle 3) evidence stable, but its owed item is in-house and flagged as empirical, not stale-downgraded.
+- Trajectories: 696 baseline; 548 stable (no new sources); 688 supporting growing (third regeneration), challenging stable. Empirical lane still has no runner.
+
+**Run summary:** 86 premise re-checks queued + dates advanced; 2 weekly re-triggers (696 lit, 548 empirical); 7+60 standing blocks held; 0 new stale flags (403 stands); monthly/low-priority cohort not re-verified. Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+**Duplicate firing note (second 2026-11-01 firing of c2a2-periodic-monitor-weekly, ~03:39–03:43 EST).** A second 15d instance started at 03:39, found no 11-01 tags, and parsed the registers independently. The run above committed at 03:41, before this instance wrote anything. This instance made **no re-queue, date change or flag**. It verified the commit instead:
+- for_lit_search.md carries 86 `RE-CHECK by 15d: 2026-11-01` and 2 `RE-TRIGGER by 15d: 2026-11-01` tags. validated_premises.md has 86 added lines against its backup, and a re-parse finds 0 premises still due on or before 11-01. The independent parse got the same 86 (48 Monthly, 36 Quarterly, 2 with no cadence word: PREMISE-183 and -223). PREMISE-166, -167, -168 and -182 have no `Re-check due` field and were not touched by either instance. The MONITOR-688 reading also matches: `_meta.generated` 2026-10-31T06:02:51, total_runs 4630. The MONITOR-688 terminating condition expires **2026-11-09**, before the next 15d run, so 15c needs to act on it this week.
+- **Two readings conflicted; the committed one stands (Rule 7).** 53 of the 86 premises already had an earlier RE-CHECK block with no consumption tag (29 from 10-04 only, 7 from 08-02+10-04, 5 from 09-13+10-04, and 12 from 08-02 only). The committed run filed a fresh block for all 86, which follows the task spec literally and the 10-04 full-catch-up precedent. This instance would have filed 33 new blocks and listed the 53 as carried, following the weekly no-duplicate rule. That disagreement is surfaced here, not fixed. **For Tom/15c:** the RE-CHECK lane has 0 consumption tags on any block since 08-02. Before the 12-06 cycle, decide whether RE-CHECK blocks should be deduplicated, as weekly blocks are.
+- Monthly/low-priority cohort MONITOR-001..344: a parse this instance tried finds 275 entries. In 213 of them the status cannot be read from the definition block, and every per-entry next_check date is 2026-04..06, because later state lives in free-form run notes. A reliable reparse needs a cross-reference of those notes. It was not attempted.
+- **For Tom:** this is the third double firing (10-04, 10-25, 11-01), and each time two sessions started at about 03:38–03:39 from the single `30 3 * * 0` task. The guard that worked today was the start-of-run "no 11-01 tags" check followed by a re-check just before writing. The second instance re-checked and found the commit.
+
+
+MONITOR-701:
+  Date: 2026-11-02
+  Source item: PRESUMPTION-1207 (DISPOSITION-1116)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: normalization of deviance / alarm fatigue support the pattern (Weak; title-only). 15b: fault-first can be rational; defect is unlogged dismissal (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'dismissing a sharp reading as a fault needs verification or a logged reason') a read of Vaughan 1996 plus a source on logging rejected observations; (-> REVISE) the in-house count of readings dropped since 09-01 showing a material share later confirmed as real.
+  Monitoring cadence: Weekly (default); first check due 2026-11-09
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1207 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1207_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1207_against.md
+
+MONITOR-702:
+  Date: 2026-11-03
+  Source item: PRESUMPTION-1208 (DISPOSITION-1117)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: gray-failure / differential-observability paper supports the general pattern (Moderate general, Weak specific). 15b: scope and lock-log authority, plus intended single-actor design (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a copy reports its own run state, cites the shared record it read, and keys each launch by job plus scheduled time') a read of Kleppmann on fencing and the SRE chapter in full plus the in-house 10-26..11-02 comparison showing contradicted reports; (-> REVISE) that comparison showing the lock log itself was ambiguous or wrong on material days.
+  Monitoring cadence: Weekly (default); first check due 2026-11-10
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1208 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1208_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1208_against.md
+
+MONITOR-703:
+  Date: 2026-11-04
+  Source item: PRESUMPTION-1210 (DISPOSITION-1118)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: SRE ch. 24 and lease/fencing literature show wait-and-check is not a guarantee (Moderate general, Weak specific). 15b: idempotent keyed writes and skip-favoring designs make separability unnecessary; fencing is itself fallible (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a second copy is harmless only if register writes are idempotent by item and date or it exits without writing, and it reads a lock line with holder identity') a read of Kleppmann in full plus the in-house 10-26..11-03 overlap comparison showing no lost or duplicated entries; (-> REVISE) that comparison showing overlapping copies lost or duplicated register entries.
+  Monitoring cadence: Weekly (default); first check due 2026-11-11
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1210 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1210_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1210_against.md
+
+MONITOR-704:
+  Date: 2026-11-05
+  Source item: PRESUMPTION-1213 (DISPOSITION-1119)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: LLM screening/judging variability is a studied concern; human dual screening uses reconciliation rules (Weak, title-only). 15b: union of screeners is a recognised high-recall design and a human gate may absorb it (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a queue card records one draw of a variable judgment; duplicate firing yields the union, and the review gate is the reconciliation step') a read of the screening-consistency papers plus the in-house 10-26..11-04 list of sources one copy skipped and another filed. (-> REVISE) if that list shows approved cards that only one copy would have filed and no reviewer-visible marker of which copy wrote them.
+  Monitoring cadence: Weekly (default); first check due 2026-11-12
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md

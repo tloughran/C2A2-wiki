@@ -537,5 +537,32 @@ PRS-56:
   Confidence: Medium (narrow and carefully stated, but specialists will contest it)
   Evidence: Theorem 7.12, Remark 7.13.
 
-*Total PRS triplets: 56*
+PRS-57:
+  Problem: How does a mathematical science of conscious agents relate to pre-scientific traditions that also claimed ordinary reality conceals something deeper?
+  Resource: The Institute's stated thesis of continuity, "From Eleusis to Trace," staged as a Hoffman-Muraresku conversation.
+  Solution: Positions the trace program as a rigorous restatement of an old human question, not a break from it (an institutional framing claim, not a theoretical result).
+  Date Added: 2026-10-31
+  Source: Consciousness, Mystery & Reality (Brian Muraresku and Donald Hoffman in conversation); PROP-2026-10-27-001
+  Confidence: Speculative
+  Evidence: Event page text: "The Trace Institute brings that same human quest into the language of modern science ... asking whether space, time and the physical world emerge from it."
+
+PRS-58:
+  Problem: Can the interface and spacetime-is-not-fundamental argument chain be made accessible to a general audience without loss of the formal claims?
+  Resource: Hoffman's "headset" framing of perception, paired with positive geometries (UCI summary of the interview)
+  Solution: Public popularisation of ITP plus spacetime-doomed as one argument chain
+  Date Added: 2026-10-31
+  Source: What's outside the simulation with Donald Hoffman?" (Impact Theory with Tom Bilyeu); PROP-2026-10-27-002
+  Confidence: Speculative
+  Evidence: UCI news item (2026-05-14) summarising the interview. Content beyond that summary is unverified. Likely overlaps existing PRS items on the HOMeHOPe and StarTalk framings. Treat as an acquisition item (transcript needed) rather than new PRS unless the transcript adds a claim.
+
+PRS-59:
+  Problem: Can natural selection and evolutionary dynamics be derived from, rather than presupposed alongside, the dynamics of conscious agents beyond spacetime?
+  Resource: Decorated-permutation projection of conscious agent dynamics onto amplituhedra (Oxford talk abstract)
+  Solution: Proposed (as a question explored in the talk): evolutionary dynamics as a projection of agent dynamics
+  Date Added: 2026-10-31
+  Source: Conscious Agents, Decorated Permutations, and the Construction of Spacetime; PROP-2026-10-27-003
+  Confidence: Speculative
+  Evidence: One sentence in the abstract. Date unknown; check for overlap with existing decorated-permutation PRS items before ingesting. Possibly already superseded by the trace-logic formalism.
+
+*Total PRS triplets: 59*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

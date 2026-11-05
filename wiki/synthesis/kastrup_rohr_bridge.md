@@ -72,3 +72,17 @@ Kastrup's idealism is *dissociative* — the many alters are real boundaries wit
 **Open question the wiki cannot yet answer:** Is there any work the transcendence term does that the wiki could observe? If panentheism and analytic idealism make identical predictions about every case the network can examine, then the difference is real to both authors and inert to the instrument, and that is worth saying plainly rather than leaving the distinction to carry weight it cannot bear. If the difference does bite somewhere — the status of suffering, the possibility of address, whether the ground can be *spoken to* — name the case.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_paul-knew-christ-within-panentheism]]
+
+
+## Separateness as sin, dissociation as structure
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-01_rohr_love-is-who-we-are-separateness-as-sin.md` (0 backlinks).
+
+**Why it sits here:** Both traditions treat apparent separation as the root problem. Kastrup gives it a metaphysical mechanism (dissociation within one mind); Rohr gives it a moral-existential name (sin as illusion of apartness).
+
+**Synthesis claim.** Healing separateness is a change of identification, not an addition of being: the self was never outside what it rejoins.
+
+**Open question the wiki cannot yet answer:** Does reunion require the dissociative boundary to dissolve, or only to be recognized as transparent?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-11-01_rohr_love-is-who-we-are-separateness-as-sin]]

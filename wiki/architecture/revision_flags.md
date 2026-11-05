@@ -16280,3 +16280,57 @@ REVISE-530: [2026-10-27] Source item: PRESUMPTION-1190 (DISPOSITION-1106)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1190 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1190_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1190_against.md
+
+REVISE-531: [2026-10-28] Source item: PRESUMPTION-1191 (DISPOSITION-1108)
+  What is at risk: DECISION-084 certification gate; ASSUMPTION-1952 (MONITOR-698); the 77 physicalist-dialogue candidates; any milestone counted as 'certified'; WATCH-003 human-ruling queue.
+  Recommended action (for Tom): (1) Name at least one certifier per tradition (or a small panel) before minting more candidates, and record who certified what. (2) Set a capacity budget: candidates minted per week must not exceed certifications the named panel can process; otherwise mint into a backlog that is reported, not counted. (3) Define a discharge path for unreviewed candidates (expiry, or downgrade to 'uncertified observation') so the ledger settles. (4) State independence: a certifier must not have authored the output. Cf. REVISE-097 (certifications provisional).
+  Urgency: High.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1191 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1191_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1191_against.md
+
+REVISE-532: [2026-10-28] Source item: PRESUMPTION-1193 (DISPOSITION-1110)
+  What is at risk: Print edition build; ACPA 'auditable record' claim and claim-trace view; citation of a moving corpus (all 307 days changed since 09-03).
+  Recommended action (for Tom): (1) Stamp the print with a commit hash that resolves to an archived snapshot (tag + Zenodo/Software Heritage deposit, or equivalent), not just a hash. (2) Give each printed claim a stable ID that resolves to its trace (Related-records, QC notes, sources) in that snapshot; strip in print, keep reachable. (3) Print a 'this edition is frozen at <date>; current version at <link>' notice plus a change log. (4) Do not describe the print as the auditable record until (1)–(2) are in place.
+  Urgency: Medium.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1193 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1193_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1193_against.md
+
+REVISE-533: [2026-10-28] Source item: PRESUMPTION-1194 (DISPOSITION-1111)
+  What is at risk: 14a/14b self-awareness layer; list_sessions(limit 40) sampling; evening sync; any audit claim of 'no interactive session today'. Extends 'artefact-as-proof' (15b).
+  Recommended action (for Tom): (1) Sample designer (interactive) sessions separately from scheduled-agent sessions, or filter scheduled runs out before applying the limit, so 40 recent automated runs cannot push out the day's interactive work. (2) Enumerate by date window, not fixed count, and report 'N sessions seen in window / sources checked'. (3) Never assert 'no interactive session' from an empty or truncated list; say 'none found in sample of N'. (4) Treat a hand-written addendum as a coverage-failure signal and log it.
+  Urgency: High.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1194 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1194_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1194_against.md
+
+
+REVISE-534: [2026-10-29] Source item: PRESUMPTION-1196 (DISPOSITION-1112)
+  What is at risk: The double-registration cutover rule ("confirm the cloud trigger fires before disabling the local entry") for all 27 or 29 double-registered tasks. Specifically, 14a/14b. 14b records that the cloud copy lacks session_info and has NO-OP'd since 10-24, so disabling the local entry would remove the only transcript-reading path while health checks stay green. Conversely, the local scheduler-health copy lacks the Routines connector.
+  Recommended action (for Tom): (1) Replace "fires" with a parity gate. For each task, list the tools its prompt needs and confirm each one is present in the cloud session before cutover. (2) Shadow-run the pair. For N consecutive dates, compare the cloud and local outputs for the same date (item counts, IDs, whether the run NO-OP'd). Cut over only when they match or the differences are explained. (3) Treat a NO-OP or "tool unavailable" run as a FAIL for cutover purposes, even if it wrote an artefact. (4) Do not disable local 14a/14b until the cloud copy has session_info or an equivalent and passes (2). (5) Add capability parity to REVISE-523's "verify by effect" remedy, so the two are applied together.
+  Urgency: High. Following the rule as written causes silent capability loss, and the in-house NO-OP is already recorded (not verified this run).
+  Related: REVISE-523; REVISE-525; PREMISE-053 (dev/prod parity); PREMISE-086; OPEN-273; OPEN-274; ASSUMPTION-1909, -1966, -1967. SYSTEMIC-RISK candidates: 'a named check treated as a check performed'; 'artefact-as-proof'.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1196 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1196_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1196_against.md
+
+
+REVISE-535: [2026-10-30] Source item: PRESUMPTION-1198 (DISPOSITION-1113)
+  What is at risk: REVISE-534 action (2), the side-by-side (shadow) run of cloud and local copies of double-registered tasks, and the shared registers both copies append to (for 14a/14b: assumptions.md, presumptions.md, for_lit_search.md and related). The scheduler-health verdict already says concurrent passes overwrite each other's output. Without isolation the trial can corrupt the registers it is meant to compare, or make the copies look equivalent because one overwrote or absorbed the other.
+  Recommended action (for Tom): (1) Before any side-by-side run under REVISE-534, give the shadow copy isolated outputs: a dry-run mode, or a separate output directory / sandbox copy of the registers. Only one copy writes to the live registers. (2) Compare outputs offline, keyed by date and run ID, not by reading the shared registers after both ran. (3) If both copies must write live, serialize them with a run lock (as lit_pipeline_lock.sh does) and tag each entry with the writing copy; a lock prevents clobbering but not cross-contamination of inputs. (4) Do not treat the UTC vs EDT changelog dating as isolation; it separates changelog filenames only. (5) Apply together with REVISE-534 so the parity gate and the isolation precondition ship as one change.
+  Urgency: High (travels with REVISE-534; sources Moderate).
+  Related: REVISE-534; REVISE-523; PRESUMPTION-1196; OPEN-281; validated_premises.md L1534 (verify the side effect). SYSTEMIC-RISK candidates: 'a named check treated as a check performed'; concurrent double-registered tasks overwriting output.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1198 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1198_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1198_against.md
+
+
+REVISE-536: [2026-10-31] Source item: PRESUMPTION-1201 (DISPOSITION-1114)
+  What is at risk: Second-firing notes that present a re-run as verification ('I checked its work and changed none of it'); the second-firing no-op / check notes in review/ and the lit and 14a/14b pipelines. Extends 'a named check treated as a check performed'.
+  Recommended action (for Tom): (1) Label a second firing 're-run / consistency check', not 'verification', unless it compares against an external reference. (2) Record what was compared (source, transcript, test, tool output) and the result. (3) Where independence matters, vary model, prompt or method, or have the checker try to find errors. (4) Run the in-house count (second-firing notes that changed nothing vs ones that caught an error, 10-23..10-30) before deciding how much weight these notes carry.
+  Urgency: Medium (sources Moderate, snippet-only).
+  Related: REVISE-523; REVISE-534; REVISE-535. SYSTEMIC-RISK candidate: 'a named check treated as a check performed'.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1201 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md

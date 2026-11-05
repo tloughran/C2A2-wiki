@@ -1,0 +1,3 @@
+# 15a/15b/15c run — no-op (2026-11-01)
+Firing at 2026-11-01T04:40Z. Queue read (architecture/for_lit_search.md, last modified 03:45Z). Items queued since the 2026-10-31 run (1994-2001 range, PRESUMPTION-1203..1205) are all tagged [IN-HOUSE]; 0 new literature-lane items. In-house items are not 15a/15b scope, so no search, disposition, register write, queue tag or lock was taken. Last lock line unchanged (RELEASED 2026-10-31T04:42:13Z by cloud-lit-2026-10-31-2).
+Backlog (fail loud): bare literature-lane items and 15d RE-CHECK/RE-TRIGGER cohorts remain QUEUED without SEARCHED tags (324 status lines match QUEUED without DISPOSITIONED, including IN-HOUSE items); "all queued items searched" is NOT met for the backlog. Unchanged by this firing, consistent with prior runs.

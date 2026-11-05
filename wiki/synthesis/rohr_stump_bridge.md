@@ -182,3 +182,31 @@ The second card sharpens this into a decidable question. Rohr grounds human dign
 **Open question the wiki cannot yet answer:** Is healing an alternative to satisfaction or the way satisfaction is accomplished?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_universal-healing-woodley-salvation-as-healing]]
+
+
+## Outside of being: privation and union
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-01_rohr_love-is-who-we-are-separateness-as-sin.md` (0 backlinks).
+
+**Why it sits here:** Rohr's 'outside of being' lines up with Aquinas's evil as privation, and Stump's second-personal union is the positive end the privation lacks.
+
+**Synthesis claim.** Sin-as-separateness and evil-as-privation are one claim stated at two registers, and both are repaired by personal presence, not by information.
+
+**Open question the wiki cannot yet answer:** Can privation be measured in the PRS framework, and what would count as evidence of a deficit of being?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-11-01_rohr_love-is-who-we-are-separateness-as-sin]]
+
+
+## Knowing a person versus knowing that
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/2026-10-29_stump_theology-knowledge-of-persons.md` (0 backlinks).
+
+**Why it sits here:** Rohr's contemplative knowing and Stump's second-person knowledge both deny that the deepest knowledge is propositional.
+
+**Synthesis claim.** Knowledge of persons is irreducible to propositions, so contemplation and narrative are two routes into the same kind of knowing.
+
+**Open question the wiki cannot yet answer:** Does non-dual union count as second-person knowledge, or does it dissolve the second person?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-29_stump_theology-knowledge-of-persons]]

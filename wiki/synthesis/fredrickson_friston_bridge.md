@@ -35,3 +35,17 @@
 **Open question the wiki cannot yet answer:** Can relational mobility be measured as a precision on partner-continuity beliefs, and does it predict the strong-tie gap better than culture labels?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility]]
+
+
+## Resonance as shared prediction
+*Sewing Agent, 2026-11-01*
+
+**Orphaned page at the intersection:** `inbox/2026-10-29_fredrickson_listen-to-resonate.md` (0 backlinks).
+
+**Why it sits here:** Fredrickson's synchrony and safety mechanism meet Friston's account of two agents aligning their models.
+
+**Synthesis claim.** Positivity resonance is what mutual prediction-error reduction feels like when the other is safe.
+
+**Open question the wiki cannot yet answer:** Can biological synchrony be used as a measurable proxy for shared generative models?
+
+**Wikilinks (sewing, 2026-11-01):** [[2026-10-29_fredrickson_listen-to-resonate]]

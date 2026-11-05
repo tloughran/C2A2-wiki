@@ -499,10 +499,18 @@
 
 <iframe id="content-frame"
         name="content-frame"
-        src="wiki_narration.html"
         allow="autoplay; microphone; camera"
         sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-downloads">
 </iframe>
+<script>
+  /* 2026-11-02: phones open on Start Here, not the Sociogram. The Sociogram
+     page is ~63 MB and needs ~250 MB of memory, enough for iPhone Safari to
+     kill the tab on a first visit. Same 640px breakpoint as the mobile block
+     above. On load, syncShellToFrame lights the Start here chapter to match.
+     Desktop is unchanged: it still opens on the Sociogram. */
+  document.getElementById('content-frame').src =
+    window.matchMedia('(max-width: 640px)').matches ? 'start_here.html' : 'wiki_narration.html';
+</script>
 
 <!-- CCL command bar: type a command (e.g. "only levin friston"); press "/" to focus. -->
 <div id="ccl-bar">

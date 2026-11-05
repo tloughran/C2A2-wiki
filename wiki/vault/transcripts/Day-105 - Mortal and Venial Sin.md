@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-105 - Mortal and Venial Sin - Contemporary]]"
 tags: [summa, day/105, pars/I-II, q/88-89]
 fidelity_checked: true
-last_qc_at: "2026-10-25T00:17:18"
+last_qc_at: "2026-11-02T04:21:48"
 last_qc_outcome: "pass"
 ---
 # Day 105 — Mortal and Venial Sin
