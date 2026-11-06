@@ -41,6 +41,15 @@ DOCS = [
         "label": "Replication N=38",
         "src": "openstory-legibility/replication_rung1_N38.md",
     },
+    # A framed doc is a separate page the shell opens in its lazy iframe, not markdown
+    # pasted into this page. It has no `src`: nothing of it is embedded here, so there
+    # is no second copy to drift. Added 2026-11-06 to put the shell edit that shipped
+    # in 886dfd64 back under the builder, which is what owns wiki/interT_study.html.
+    {
+        "key": "physicalism",
+        "label": "Physicalism",
+        "frame": "rival/physicalism/index.html",
+    },
 ]
 
 
@@ -49,13 +58,18 @@ def build() -> str:
 
     buttons, blocks = [], []
     for i, d in enumerate(DOCS):
+        cls = ' class="active"' if i == 0 else ""
+        if d.get("frame"):
+            buttons.append(
+                f'<button data-doc="{d["key"]}"{cls} data-frame="{d["frame"]}">{d["label"]}</button>'
+            )
+            continue
         md = (ROOT / d["src"]).read_text()
         # A literal </script> in the markdown would close the block early and
         # silently truncate the document in the browser. Refuse rather than ship it.
         if "</script>" in md.lower():
             sys.exit(f"ERROR: {d['src']} contains a literal </script>; "
                      "it cannot be embedded in a text/markdown block.")
-        cls = ' class="active"' if i == 0 else ""
         buttons.append(f'<button data-doc="{d["key"]}"{cls}>{d["label"]}</button>')
         blocks.append(
             f'<script type="text/markdown" id="doc-{d["key"]}">\n{md.rstrip()}\n</script>'
@@ -85,13 +99,14 @@ def main() -> int:
             print(f"STALE: {OUT.relative_to(ROOT)} differs from what its markdown "
                   f"sources build to. Run: python3 scripts/build_study.py", file=sys.stderr)
             return 1
-        print(f"OK: {OUT.relative_to(ROOT)} matches its {len(DOCS)} markdown sources")
+        n_md = sum(1 for d in DOCS if not d.get("frame"))
+        print(f"OK: {OUT.relative_to(ROOT)} matches its {n_md} markdown sources")
         return 0
 
     OUT.write_text(html)
     print(f"wrote {OUT.relative_to(ROOT)}  ({len(html):,} bytes, {len(DOCS)} documents)")
     for d in DOCS:
-        print(f"  {d['key']:12s} {d['src']}")
+        print(f"  {d['key']:12s} {d.get('src') or 'frame: ' + d['frame']}")
     return 0
 
 
