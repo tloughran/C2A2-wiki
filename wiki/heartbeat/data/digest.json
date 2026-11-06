@@ -1,49 +1,29 @@
 {
   "seed": false,
-  "generated": "2026-11-05",
-  "generated_at": "2026-11-05T18:21:33Z",
+  "generated": "2026-11-06",
+  "generated_at": "2026-11-06T17:43:32Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 206,
-    "high_relevance": 2,
-    "primary_themes": "Capability Jump + Governance Policy"
+    "items_checked": 205,
+    "high_relevance": 1,
+    "primary_themes": "Governance Policy + Misuse Security"
   },
   "signals": [
     {
-      "title": "DS@GT ARC at CheckThat! 2026: A Verdict-Anchored Pipeline for Generating Fact-Checking Articles",
+      "title": "What Patients Say They Can't Access: Mining Cancer Screening Barriers from Online Communities",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05382",
+      "url": "https://arxiv.org/abs/2611.07113",
       "relevance": 2,
       "tags": [],
-      "summary": "Misinformation spreads faster than professional fact-checkers can manually verify it and write articles explaining their verdicts. This creates a need to automate the production of fact-checking articles.",
+      "summary": "Cancer screening disparities persist across the U.S., yet the patient-reported barriers driving low uptake remain poorly characterized at scale. While clinical surveys capture structured responses, they miss the organic, unsolicited discourse where patients candidly describe real-world obstacles.",
       "implication": "High relevance to C2A2 operations; include in next leadership brief.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.645342+00:00",
-      "long_summary": "Misinformation is proliferating at a pace that exceeds the ability of professional fact-checkers to manually verify claims and produce explanatory articles. This highlights a pressing need for automation in the creation of fact-checking content. The item discusses the development of a method aimed at addressing this gap by generating fact-checking articles more efficiently. It emphasizes the importance of facilitating timely responses to misinformation through automated systems. This matters for a community keeping up with AI, as understanding advancements in automated fact-checking can enhance media literacy and help combat the spread of false information.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.447081+00:00",
+      "long_summary": "Cancer screening disparities in the U.S. continue, but the barriers patients face are not well understood on a large scale. Traditional clinical surveys provide structured responses but overlook the natural, unsolicited discussions where patients express their real-world challenges. This understanding of patient-reported barriers is crucial for addressing the low uptake of cancer screenings. This research matters for the community seeking to stay informed about AI, as it highlights the importance of mining conversational data to uncover insights that structured data may miss, ultimately leading to improved healthcare outcomes.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
-      "source": "arXiv cs.AI",
-      "url": "https://arxiv.org/abs/2611.05391",
-      "relevance": 2,
-      "tags": [
-        "capability_jump",
-        "governance_policy"
-      ],
-      "summary": "Tool descriptions tell an agent what an action can do, but they do not necessarily reveal whether that action is healthy or suitable at the moment of use. Execution harnesses often possess this information through monitors, traces, and recent failures while the model choosing the next action does not.",
-      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:28.964523+00:00",
-      "long_summary": "Tool descriptions provide agents with information on what actions can be performed but often lack insight into whether those actions are appropriate or safe at the time of execution. Execution harnesses are equipped with monitors, traces, and data on recent failures, which can inform the decision-making process of agents. This difference indicates a gap between available capabilities and the operational intelligence that can guide agents toward healthier choices. Understanding this distinction is vital for enhancing the operational control of tool-using agents. This matters for the community keeping up with AI as it highlights the need for improved governance and policy development around agent capabilities and their safe application in real-time scenarios.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
+        "generated": "2026-11-06",
         "kind": "machine-generated"
       }
     },
@@ -56,142 +36,156 @@
       "summary": "Just another indication that Anthropic & all the rest never have \"humanity's best interest\" at heart. They could have been watermarking their output (facilitating cleaning the slop out of our information ecosystem) all along.",
       "implication": "Track for context; no immediate governance action required.",
       "published_at": "03 Nov 2026 18:49 +0000",
-      "first_seen_at": "2026-11-05T18:21:33.383519+00:00",
-      "long_summary": "The source text expresses skepticism about the intentions of Anthropic and other AI developers, suggesting that they do not genuinely prioritize \"humanity's best interest.\" It points out that these companies could have implemented watermarking in their outputs to help improve the quality of information in the ecosystem but have not done so. This criticism implies a perceived neglect of responsibility in the AI development community regarding how AI outputs affect society. Understanding these dynamics is vital for the community as it highlights the importance of accountability and ethical considerations in the advancement of AI technologies.",
+      "first_seen_at": "2026-11-06T17:43:31.582051+00:00",
+      "long_summary": "The text expresses skepticism regarding the intentions of Anthropic and other AI developers, suggesting that they do not prioritize \"humanity's best interest.\" It raises the point that these organizations have had the capability to watermark their output, a measure that could help improve the quality of information available, yet they have chosen not to do so. This commentary highlights a broader concern about accountability and the ethical responsibilities of AI companies. Understanding such critiques is essential for a community staying informed about AI, as it encourages critical thinking about the motivations and actions of AI developers in shaping the information landscape.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
+        "generated": "2026-11-06",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Information-Matched Auditing of Conversational Emotion-Shift Forecasting: A Leakage-Safe Evaluation Protocol",
+      "title": "Latency-Aware Adaptive Best-of-$N$",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05895",
+      "url": "https://arxiv.org/abs/2611.07453",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Test-time compute (TTC) improves language model responses by spending additional computation at inference time, and the right amount of compute depends on the prompt. Adaptive TTC methods allocate compute based on signals of response quality such as observed rewards, often by stopping once the signal exceeds a fixed threshold, and generally measure cost by the number of generations or tokens.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.490325+00:00",
+      "long_summary": "Test-time compute (TTC) enhances language model responses by allowing for additional computation during inference, with the required amount varying depending on the input prompt. Adaptive TTC methods distribute computational resources based on indicators of response quality, such as observed rewards, and typically cease computation when the quality signal surpasses a predetermined threshold. These methods usually assess cost in terms of the number of generations or tokens produced. Understanding the development of adaptive TTC techniques can be significant for a community engaged in AI, as it highlights the ongoing efforts to improve response quality in language models while optimizing resource use.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-06",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Source-balanced Capped Fisher: Bounded Evidence Aggregation for User Inference in Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.07228",
       "relevance": 1,
       "tags": [
         "governance_policy"
       ],
-      "summary": "Comparisons in conversational emotion-shift forecasting are easily distorted when a learned model receives rich features but its transition baseline is given a noisy or unavailable current-emotion label, when hyperparameter budgets differ, or when target-turn information enters the representation. We present an information-matched, leakage-safe auditing protocol that closes these gaps with an explicit commitment point, executable causality tests, equal four-configuration validation searches, and seed-dialogue-aware inference.",
+      "summary": "User inference asks whether a source contributed documents to a language-model update, even when the auditor observes only fresh documents from that source. Document-level scores can provide evidence of participation, but combining this evidence is challenging: documents differ in baseline predictability and in how strongly they reflect information learned from other documents of the same source.",
       "implication": "Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.692963+00:00",
-      "long_summary": "The paper discusses issues in evaluating conversational emotion-shift forecasting models, particularly how their performance can be skewed by variables such as the quality of current-emotion labels, differing hyperparameter budgets, and the influence of target-turn information on model representations. To address these challenges, the authors propose an information-matched, leakage-safe auditing protocol. This protocol aims to enhance evaluation accuracy by implementing several strategies, including establishing a clear commitment point, conducting executable causality tests, and performing uniform validation searches across four configurations, along with seed-dialogue-aware inference. This development is significant for the AI community as it contributes to more reliable assessments of emotion forecasting models, which can impact user interactions and emotional engagement in conversational AI systems.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.471850+00:00",
+      "long_summary": "User inference investigates whether a particular source has contributed to the documents used in a language model's update, despite the auditor only seeing new documents from that source. The challenge lies in aggregating document-level scores that indicate participation, as these documents vary in baseline predictability and the extent to which they represent information learned from other documents from the same source. This highlights the complexities involved in accurately determining the influence of different sources on language model updates. Understanding these dynamics is important for our community as it emphasizes the need for reliable methods in tracing source contributions, which is crucial for maintaining accountability and transparency in AI developments.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
+        "generated": "2026-11-06",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration",
+      "title": "Matriarchy Classics: A Computational Approach to Swap Only Gendered Words in Classic Novels",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05827",
-      "relevance": 1,
-      "tags": [
-        "capability_jump"
-      ],
-      "summary": "Decision models choose among predefined options in tasks such as routing and action selection. In multi-agent collaboration, a decision determines how members divide work, exchange resources, and act in parallel.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.685239+00:00",
-      "long_summary": "Decision models are essential for selecting among predefined options in various tasks, including routing and action selection. In the context of multi-agent collaboration, these models play a critical role in how agents partition tasks, share resources, and coordinate their actions simultaneously. This research underscores the importance of decision-making frameworks in enhancing the efficiency and effectiveness of collaborative efforts among multiple agents. Understanding these dynamics is crucial for the AI community, as it highlights how advancements in decision models can improve collaboration in complex AI systems.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Learning When Human Decisions Matter: Executor-Relative Consultation Value for LLM Agents",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05814",
-      "relevance": 1,
-      "tags": [
-        "capability_jump"
-      ],
-      "summary": "Large language models increasingly automate complex tasks, but human decision capacity does not scale with their capabilities. In many applications, humans remain essential for providing private context, authority, or judgments unavailable to the agent.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.682781+00:00",
-      "long_summary": "Large language models are advancing in their ability to automate complex tasks, yet the need for human input remains critical as their capability does not coincide with human decision-making capacity. In several applications, humans play an indispensable role by providing private context, authority, or judgments that the models are unable to access or replicate. This emphasizes the ongoing importance of human oversight and input in AI systems, highlighting that technology cannot fully replace the nuanced decision-making that humans provide. Understanding this dynamic is essential for a community engaged with AI, as it underscores the need for continued collaboration between human intelligence and machine capabilities.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Phonological Knowledge of Chinese Characters in Language Models",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05803",
-      "relevance": 1,
-      "tags": [
-        "capability_jump"
-      ],
-      "summary": "How much phonological knowledge do language models (LMs) possess about Chinese characters, and how is this knowledge represented and used? We introduce PinyinBench, a controlled benchmark covering homophones, phonological features (initials, finals, and tones), and polyphonic characters.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.677767+00:00",
-      "long_summary": "This research introduces PinyinBench, a benchmark designed to assess the phonological knowledge of language models in relation to Chinese characters. It focuses on various aspects such as homophones, phonological features including initials, finals, and tones, as well as polyphonic characters. The study aims to understand how language models represent and utilize this phonological knowledge. Given the growing importance of language models in processing diverse languages, including Chinese, this development is significant for communities aiming to enhance their understanding of how AI interprets phonological elements in language.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Prospective Memory for Proactive LLM Agents",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05731",
-      "relevance": 1,
-      "tags": [
-        "capability_jump"
-      ],
-      "summary": "Most memory systems for LLM agents are retrospective, preserving and retrieving past information to inform current decisions. Proactive agents, however, also require prospective memory: retaining future-directed intentions and realizing them when appropriate opportunities arise, even without explicit requests.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.672839+00:00",
-      "long_summary": "Most memory systems for language model (LLM) agents focus on retrospective memory, which involves preserving and retrieving past information to guide current decisions. However, proactive agents require a different approach known as prospective memory. This type of memory allows agents to retain intentions about future actions and to act upon them when suitable opportunities present themselves, even without explicit prompts to do so. This development highlights the importance of designing LLMs that can plan and execute future-oriented tasks effectively, expanding their capabilities beyond merely reacting to past interactions. Understanding these distinctions is crucial for a community that seeks to keep up with evolving AI technologies and their potential applications in various domains.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "SRRM: A Retrieval-Reconstruction Benchmark for Evaluating Long-Context Memory in Small Language Models",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05386",
+      "url": "https://arxiv.org/abs/2611.07134",
       "relevance": 1,
       "tags": [],
-      "summary": "Small Language Models (SLMs) are increasingly deployed on consumer-grade hardware, yet their ability to preserve information across progressively longer contexts remains insufficiently understood. Existing benchmarks primarily evaluate retrieval-oriented tasks, providing limited insight into whether successful retrieval reflects comprehensive long-context memory preservation.",
+      "summary": "This paper proposes a trustworthy computational method to gender-swap public domain novels, with programmatic guarantees that only gendered words are inverted and all other words are left unchanged. This may seem like a simple task, but both large language models and naive rule-based methods fail to complete it.",
       "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.655503+00:00",
-      "long_summary": "The abstract discusses the limitations of existing benchmarks for Small Language Models (SLMs), particularly regarding their performance in retaining information across longer contexts. While SLMs are used more frequently on consumer hardware, there is a lack of understanding about how effectively they manage long-context memory. Current benchmarks tend to focus mainly on retrieval tasks, which do not adequately represent the broader challenge of maintaining memory over extended contexts. This is significant for the community as it highlights the need for improved evaluation methods that better reflect the capabilities of SLMs in real-world applications where context retention is crucial.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.452638+00:00",
+      "long_summary": "This paper introduces a reliable computational technique designed to swap only gendered words in public domain novels while ensuring that all other words remain unchanged. The authors assert that, although the task may appear straightforward, existing large language models and basic rule-based approaches are inadequate to achieve this goal effectively. The development of this method highlights the intricacies involved in manipulating linguistic structures while preserving the original text's integrity. This matters for a community keeping up with AI as it emphasizes the ongoing challenges in natural language processing and the importance of precision in AI applications.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
+        "generated": "2026-11-06",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Human-like cross-language generalisation in deep neural speaker embeddings and its acoustic foundations",
+      "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.05384",
+      "url": "https://arxiv.org/abs/2611.06976",
       "relevance": 1,
       "tags": [
-        "capability_jump"
+        "misuse_security"
       ],
-      "summary": "Generalisability is a central question for deep neural networks, including the cross-language generalisation of speaker embeddings. This study examined whether deep neural speaker embeddings generalise across languages and how such generalisation relates to human perception and acoustic structure.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 05 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-05T18:21:29.650660+00:00",
-      "long_summary": "This study investigates the ability of deep neural speaker embeddings to generalize across different languages and explores how this generalization aligns with human perception and the acoustic characteristics of speech. The focus is on the generalizability aspect of neural networks, particularly in the context of speaker recognition across various linguistic contexts. Understanding these dynamics is crucial for improving AI's performance in multilingual representations and applications. This development is relevant for the community as it highlights advancements in language processing and AI's ability to bridge linguistic barriers.",
+      "summary": "Prefill-to-Autoregressive Cross-model Transfer (PACT), a form of latent communication between language models, combines a larger model's prompt representations with a smaller model's efficient generation, offering a promising way to balance capability and inference cost. However, existing systems provide limited support for independently evaluating large-small model collaboration, and improved task performance alone does not establish whether the receiver benefits from the sender's information.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.436681+00:00",
+      "long_summary": "Prefill-to-Autoregressive Cross-model Transfer (PACT) is a method that facilitates communication between language models by integrating prompt representations from larger models with the efficient generation capabilities of smaller models. This approach aims to strike a balance between enhanced performance and reduced computational costs. However, current systems face challenges in evaluating collaborations between large and small models independently. Additionally, simply improving task performance does not ensure that the smaller model benefits from the information provided by the larger model. Understanding PACT is essential as it highlights both potential advancements and inherent limitations in AI model collaboration, which are crucial for the community to navigate the evolving landscape of AI capabilities and implications.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-05",
+        "generated": "2026-11-06",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "TrustMix: Graceful Degradation for Pretrained Models under Distribution Shift",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.07206",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Predicting beyond the training domain necessarily requires assumptions about how the ground truth extrapolates, yet in most neural networks these assumptions are made only implicit through the architecture. We propose TrustMix, a lightweight post-hoc method that makes a pretrained model's extrapolative behaviour explicit and controllable.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.180738+00:00",
+      "long_summary": "TrustMix is a new method designed to enhance pretrained models' ability to predict beyond their training domains. The approach addresses the challenge of how models handle distribution shifts by making the assumptions regarding their extrapolative behavior explicit and manageable. Rather than relying solely on implicit architectural features, TrustMix provides a framework that allows for better control over how the models operate when presented with data that diverges from what they have previously encountered. This development is crucial for a community that needs to keep pace with AI, as it highlights the importance of understanding and managing model behavior in real-world applications where data can vary significantly from training conditions.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-06",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Backbone-Informed Adaptation after EEG Pretraining: A Capacity-Controlled Study",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.07192",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Electroencephalography (EEG) foundation models learn representations that combine information across channels and time. This structure motivates adapters that model the same relationships during downstream learning.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.178660+00:00",
+      "long_summary": "Electroencephalography (EEG) foundation models are designed to learn representations that integrate information across different channels and time. This inherent structure in EEG models supports the development of adapters that aim to replicate these relationships during subsequent learning tasks. The study suggests that by utilizing such adapters, the efficiency of downstream learning can be enhanced. Understanding how EEG data can inform model adaptation is relevant for the community as it emphasizes the importance of effective representation learning in improving AI models’ capabilities and performance.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-06",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Structural Conditional Independence Test via Neural Quantile Resolution",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.07165",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Conditional independence testing is difficult when dependence is weak, localized, or expressed through distributional changes rather than a global mean shift. Existing tests usually return a scalar statistic or p-value, which summarizes evidence against independence but does not describe where the conditional law changes.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.175118+00:00",
+      "long_summary": "Conditional independence testing poses challenges, particularly when the dependence is weak, localized, or manifests through distributional changes instead of a global mean shift. Current testing methods typically yield a scalar statistic or p-value, which indicates evidence against independence but fails to pinpoint where the conditional law is altered. This has implications for the effectiveness of AI systems that rely on accurate modeling of independence among variables. Understanding these nuances in independence testing is crucial for community members, as it enhances their grasp of the limitations and advancements in AI methodologies.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-06",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Depth or Description? When a One-Step Latent Score Replaces Lookahead in Proactive Information Acquisition",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.07155",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "market_platform"
+      ],
+      "summary": "A proactive agent must decide what to ask before it acts. Exact lookahead values combinations of questions but is expensive and leans on a fitted model; a one-step score is cheap but can miss them.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 06 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-06T17:43:27.171454+00:00",
+      "long_summary": "A proactive agent is faced with the challenge of determining what questions to ask before taking action. The traditional method of using exact lookahead values allows for combinations of questions but can be costly and relies heavily on a pre-fitted model. Alternatively, a simpler approach utilizing a one-step score is less expensive but may overlook critical combinations of inquiries. This comparison highlights the trade-offs between depth and efficiency in information acquisition. Understanding these dynamics is important for our community as it illustrates the complexities involved in optimizing decision-making processes within AI systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-06",
         "kind": "machine-generated"
       }
     }
