@@ -153,7 +153,11 @@ if [ -z "$summary" ]; then
   # The harness died before its summary line: that is not a verdict, it is a
   # broken check. Say so with the tail of its log, never a silent 0.
   log "ERROR harness produced no summary line (exit $rc); tail of $SUITE_LOG:"
-  tail -5 "$SUITE_LOG"
+  # 24, not 5: the harness now prints a PARTIAL block (rows that ran, last row
+  # reached, page exceptions) ahead of its stack, and at 5 the launchd log saw
+  # only the stack -- which is what made 2026-11-04 look like a run that never
+  # started rather than one that died 130 rows in.
+  tail -24 "$SUITE_LOG"
   write_state 1 0 0 0 "$rc" "harness produced no summary (exit $rc)"
   line "ERROR harness died (exit $rc, no summary)"
   printf '[%s] voice-shell check could not complete: harness exit %s, no summary line; see %s\n' "$(stamp)" "$rc" "$SUITE_LOG" > "$MARKER"

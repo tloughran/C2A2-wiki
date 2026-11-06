@@ -88,7 +88,13 @@ async function poll(fn, timeoutMs, intervalMs, what) {
     } catch (e) { last = e.message; }
     await sleep(intervalMs || 200);
   }
-  throw new Error('timed out waiting for ' + what + (last ? ' (last: ' + JSON.stringify(last) + ')' : ''));
+  // `last` is almost always `false` (the probe ran and said "not yet"), and the
+  // old `if (last)` threw that away as falsy -- so a probe that was answering
+  // cleanly looked identical to a probe that never ran. That is the difference
+  // between "the page is slow" and "CDP is wedged", and it is exactly the
+  // distinction the 2026-11-04 Phase F timeout could not be read for.
+  const detail = last === null ? 'probe never returned' : JSON.stringify(last);
+  throw new Error('timed out waiting for ' + what + ' after ' + timeoutMs + 'ms (last: ' + detail + ')');
 }
 
 // Default per-call CDP deadline. Generous, because the Sociogram's first paint is
@@ -567,6 +573,11 @@ async function auditTab(page, tabName, expectDeferred, expectGestureDeferred) {
 // Each row: what we send, what the bar must say, and what the tab's DOM must be.
 // `dom` is checked AFTER the command, so a spoken claim with no DOM change fails.
 const results = [];
+// Held at module scope so the HARNESS ERROR path can report the rows that DID
+// run and the exceptions the page DID collect. Both used to die with main()'s
+// locals: a harness throw printed a bare stack and the run looked like zero
+// coverage, when in fact 130+ rows had passed (2026-11-04, Phase F poll).
+let livePage = null;
 function record(name, ok, detail) {
   results.push({ name: name, ok: ok, detail: detail });
   process.stdout.write((ok ? '  PASS  ' : '  FAIL  ') + name + (detail ? '   -- ' + detail : '') + '\n');
@@ -685,6 +696,7 @@ async function main() {
   const chrome = await startChrome();
   const cdp = await CDP.connect(chrome.wsUrl);
   const page = await Page.open(cdp);
+  livePage = page;
 
   await page.navigate('http://127.0.0.1:' + PORT + '/explorer.html');
   await cclReady(page);
@@ -2879,6 +2891,31 @@ module.exports = {
 
 if (require.main === module) {
   main().catch(function (e) {
+    // A harness throw is NOT a verdict, so this deliberately does not print a
+    // "rows:" line -- the wrapper greps for that to decide RED vs GREEN, and a
+    // partial count must never be mistaken for a complete one. But dying mute
+    // made a 130-row run indistinguishable from a run that never started, which
+    // is what sent the 2026-11-04 diagnosis after a missing Chrome that was
+    // present all along. Report the partial run under its own label.
+    //
+    // Printed BEFORE the stack on purpose: check_voice_shell.sh tails this log
+    // into the launchd log, so the stack has to stay the last thing written.
+    process.stdout.write('\n');
+    const failedSoFar = results.filter(function (r) { return !r.ok; });
+    process.stdout.write('PARTIAL (no verdict): ran ' + results.length + ' rows, ' +
+      (results.length - failedSoFar.length) + ' passed, ' + failedSoFar.length + ' failed before the throw\n');
+    if (results.length) {
+      process.stdout.write('last row reached: ' + results[results.length - 1].name + '\n');
+    }
+    failedSoFar.forEach(function (r) { process.stdout.write('  FAILED-BEFORE-THROW  ' + r.name + '\n'); });
+    if (livePage) {
+      process.stdout.write('page exceptions so far: ' + livePage.exceptions.length +
+        '   console errors so far: ' + livePage.consoleErrors.length + '\n');
+      livePage.exceptions.forEach(function (x) { process.stdout.write('  EXCEPTION  ' + x + '\n'); });
+      livePage.consoleErrors.forEach(function (x) { process.stdout.write('  CONSOLE    ' + x.slice(0, 200) + '\n'); });
+    } else {
+      process.stdout.write('page exceptions so far: (no page was ever opened -- failed during server/Chrome startup)\n');
+    }
     process.stdout.write('\nHARNESS ERROR: ' + (e && e.stack || e) + '\n');
     cleanup();
     process.exit(2);
