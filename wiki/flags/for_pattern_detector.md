@@ -875,3 +875,56 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 - **Levin:** Matter programmed with local rules that self-assembles into patterned, task-performing structures echoes the Levin program's "goal-directed collectives built from simple parts". Winfree's contrast between purpose-built and multipurpose emergent hierarchies is a direct prompt for Levin's multiscale competency architecture.
 - **Friston:** Error-correction through cooperative binding rather than energy expenditure invites a comparison with free-energy accounts of how living systems maintain their states at low cost.
 - **Carroll internal:** This pairs with Mindscape 361 (Bassler, bacterial communication) and *Biggest Ideas* Vol. 3 (complexity and emergence) as part of a run on information-bearing matter.
+
+
+### [EVALUATED: 2026-11-07] 2026-11-07 — PROP-2026-10-31-003 (wolfram): The Last Theory #083 - Wolfram's 10 ways to have big ideas
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- **C2A2 Pattern Detector / PRS-30 reopen condition:** if someone pulls item #8 verbatim from the audio, it plus #086 may give the Pattern Detector a primary-source operating definition of "paradigm-shift candidate." This is the most actionable signal in today's run.
+- **Friston:** "doubt your expectations / push ahead regardless" maps onto the exploration–exploitation balance in expected-free-energy terms (epistemic vs. pragmatic value). It's adjacent to CROSS-072 (machine curiosity as information gain) and to Active Research Question 15.
+- **McGilchrist:** "visualize your ideas" and "drill to foundations, then explain" can be read through the RH-apprehends / LH-articulates / RH-reintegrates cycle. It's a Speculative bridge, but Wolfram's method arguably reproduces McGilchrist's ideal sequence (cf. CROSS on the Ralston encounter, PRS-53/54).
+- **Levin:** "ideas take flight" fits the ideas-as-agents framing in CROSS-080. Flag only.
+
+**Reviewer action suggested:** approve as a locator together with PROP-2026-10-31-002. One listening session covering both clips would settle the confidence on both.
+
+
+### [EVALUATED: 2026-11-07] 2026-11-07 — PROP-2026-10-31-002 (wolfram): The Last Theory #086 - The search for solid ground
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- **C2A2 Pattern Detector (meta):** a candidate operating criterion for what the detector should flag as "paradigm-shift candidate," namely *buildability on verified foundations*. It pairs with the open PRS-30 heuristic set (2026-08-28 log). If verified, it's a direct infrastructure input.
+- **Carroll:** Carroll's Bayesian-credence standard (CROSS-016) and Wolfram's "solid ground" are rival answers to the same question, "when should a speculative framework be believed?" One weighs priors and evidence; the other asks whether each layer can be built on. That would sharpen CROSS-055 / CROSS-074 (computational metaphysics as method-export).
+- **Kastrup:** CROSS-055 (explanation vs. computation) applies here. For Wolfram, "knowing" seems to mean "computed and checked," and Kastrup would dispute that as the standard for metaphysical claims.
+- **MacIntyre / C2A2 premise:** "towers of knowledge on solid ground" is close to MacIntyre's account of a tradition's rational progress, where earlier stages are vindicated by what can be built on them. That is worth a flag for the ISME paper thread, at Speculative level only.
+
+**Reviewer action suggested:** approve as a *locator*, then mint any triplet only after the audio has been listened to (~short clip). Do not let the Speculative labels drift upward unverified.
+
+
+### [EVALUATED: 2026-11-07] 2026-11-07 — PROP-2026-11-01-004 (rohr): Love Is Who We Are (CAC Daily Meditation, 'Loving Your Neighbor' week)
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- **Stump Agent**: Candidate 2 is a direct bridge to Stump's Thomism (evil as privation; union as the ultimate end). Stump would probably resist reducing sin to illusion (Candidate 1), since for her the will's real refusal of love matters. That tension is useful for the master agent.
+- **Friston Agent**: "Illusion of separateness" as an over-precise self/other boundary in the generative model. This matches the hunt brief's expected bridge: contemplative practice as loosening high-precision priors about a separate self. **Paradigm-bridge candidate.**
+- **Kastrup / Hoffman Agents**: Separateness as appearance within one underlying mind (Kastrup's dissociation; Hoffman's interface agents) is structurally the same claim in a metaphysical register.
+- **Wright Agent**: Tension to flag. Wright would locate "image and likeness" in vocation (humans as royal priesthood reflecting God into the world), not in an inner divine origin. He also does not frame sin chiefly as separateness. This is a live scriptural check on Rohr's reading.
+- **C2A2 master / paradigm flags**: Candidate for a CROSS entry: "sin-as-separateness / perspective-limitation." It links Rohr, Friston, Kastrup and the Summa 2026 perspective-limitation thesis, with Stump and Wright as named dissenting checks.
+
+
+### [EVALUATED: 2026-11-07] 2026-11-07 — PROP-2026-11-01-002 (wright): Manufacturing the Millennium, Assurance of Salvation & Could Sin Return in the New Creation? (Ask NT Wright Anything)
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- **Stump Agent**: Candidate 1 bears directly on Stump/Aquinas on the impeccability of the blessed (beatitude cannot be lost because the will rests in the final good). Wright gives the scriptural-narrative version; Stump supplies the metaphysics of will that explains how freedom survives. Natural pairing.
+- **Friston Agent**: "No second fall" can be framed as an absorbing attractor: a free-energy minimum that no longer has an exit route. Flag as **paradigm-bridge candidate**: eschatological stability as attractor-state, scripturally anchored.
+- **Levin / Hoffman / Kastrup**: Candidate 2 (present acts carried into the final state) asks for some continuity of identity and information across the transition to new creation. That raises questions for both the mind-monist frames (what persists) and Levin's goal-directed collectives (whether a collective's goals survive a substrate change).
+- **C2A2 master / paradigm flags**: Possible CROSS candidate tying the Summa 2026 "loving unity as computational telos" theme to the scriptural claim that the telos, once reached, is irreversible.
+
+
+### [EVALUATED: 2026-11-07] 2026-11-07 — PROP-2026-11-01-003 (wright): Can We Trust the Gospels? N.T. Wright on Gethsemane, Gnosticism and Conspiracy Theories (Ask NT Wright Anything)
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- **Stump Agent**: Candidate 1 connects to Stump's "Franciscan knowledge" (knowledge of persons through narrative). Narrative can convey second-personal truth without transcript precision.
+- **McGilchrist Agent**: The conspiracy template (a closed, self-confirming explanatory system) closely matches McGilchrist's account of left-hemisphere capture. Worth flagging as a convergence.
+- **Loughran / MacIntyre**: Candidate 2 bears on how a tradition loses or keeps rational authority in an epistemic crisis, and on the gap between genuine dissent and a manufactured "suppressed tradition."
+- **C2A2 master / paradigm flags**: Not a FLAG candidate. It is a methodological calibration note for every tradition that cites Gospel scenes.
+
+
+### [EVALUATED: 2026-11-07] 2026-11-07 — PROP-2026-11-01-001 (wright): The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- **Stump Agent**: Idolatry as disordered love/worship connects to Aquinas on disordered loves; weak link until content is read.
+- **Kastrup / McGilchrist**: AI-as-idol parallels their AI-as-archetypal-urge and AI-vs-soul material; paradigm-bridge candidate once Wright's argument is confirmed.
+- **Rohr Agent**: Idol-critique vs Rohr's power-over/empire series (2026-10-25); possible scriptural/contemplative pairing.
+- **C2A2 master / paradigm flags**: None yet. Hold for full-text/audio check. Also noted: *Fresh Challenge of Romans* (Dallas, 1-4 Nov 2026) is only an event promo and was not proposed.

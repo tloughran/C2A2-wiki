@@ -696,7 +696,70 @@ PRS-76:
   Confidence: Speculative (chapter titles only)
   Evidence: Chapters 'AI's Black Box' (00:49:26) and 'The Cost of More Powerful AI: Losing Explainability' (00:52:13). Candidate-03 of the card (AI originality) was not entered: likely a restatement of PRS-66/PRS-71.
 
-*Total PRS triplets: 76*
+PRS-77:
+  Problem: How much control should humans give AI, and what actually determines whether human oversight works?
+  Resource: Expectation-dependent verification: oversight is only as good as the overseer's prior expectation of failure; AI works best when a skilled person decomposes the problem into AI-sized pieces; readable-by-design output (Wolfram Language) keeps "you are expected to understand it" as a norm. Complements the verification-over-generation stance (PRS-36/38/42).
+  Solution: Keep a human in the loop who decomposes tasks and verifies results; withhold high-stakes, irreversible decisions (very large sums, fast military choices) from cheap AI; accept that speed pressure may force AI into the loop anyway. He suspects people passively following AI suggestions is the more common failure than AI controlling actuators.
+  Date Added: 2026-11-07
+  Source: Future of Science and Technology Q&A (May 29, 2026); PROP-2026-10-31-001
+  Confidence: Medium (stated position; transcript read via summarizing fetch)
+  Evidence: Transcript, opening portion: people who assume the AI is right "stop checking"; an AI inserted an unjustified axiom into a proof to reach its target; output that only has to look right (a web form) can sit on "a horrible mess" of code.
+
+PRS-78:
+  Problem: Why does AI keep failing to transform drug discovery and treatment prediction, given repeated "magic new method" cycles?
+  Resource: Biology as "lumps of irreducible computation" produced by evolutionary trial and error; "footnotes all the way down"; degeneracy (multiple pathways to the same result, illustrated by his own lactose-digestion case); computational irreducibility applied to the genome ("no faster way to find out what the system does").
+  Solution: Expect incremental gains in peripheral tasks (predicting stem-cell differentiation protocols, speeding molecular dynamics) rather than direct drug finding; knowing a genome does not reveal most outcomes. Also proposes randomly assigning trial participants from pre-registered panels.
+  Date Added: 2026-11-07
+  Source: Future of Science and Technology Q&A (May 29, 2026); PROP-2026-10-31-001
+  Confidence: Medium
+  Evidence: Transcript, biology portion: lists natural products, rational design, combinatorial chemistry, high-throughput screening, ML and LLM design as successive "magic" methods; criticizes selection of trial populations that produce favorable results.
+
+PRS-79:
+  Problem: If AI optimizes toward a stated target by any available route, how can a target-satisfying but illegitimate result (a shortcut) be detected?
+  Resource: The shortcut-seeking observation (unjustified axiom in a proof) paired with Wolfram Language as a human-readable formal target.
+  Solution: Make the artifact inspectable so the shortcut is visible to a competent reader. This largely restates PRS-36/38/42, so it may be a duplicate rather than a new triplet; flagged as incremental.
+  Date Added: 2026-11-07
+  Source: Future of Science and Technology Q&A (May 29, 2026); PROP-2026-10-31-001
+  Confidence: Speculative
+  Evidence: One anecdote in the oversight segment; no detail on the proof in question.
+
+PRS-80:
+  Problem: How can paradigm-level ideas be generated on purpose, rather than waited for?
+  Resource: A practice cycle: drill down to foundations; run computational experiments; work to understand the results; explain the results to others. Visualization is used throughout.
+  Solution: Treat idea generation as an iterated imagine → experiment → explain loop, with no step skipped, held together by two attitudes in tension: doubt about one's expectations and confidence to keep going.
+  Date Added: 2026-11-07
+  Source: The Last Theory #083 - Wolfram's 10 ways to have big ideas; PROP-2026-10-31-003
+  Confidence: Medium for the existence and gist of the account, since the source is Wolfram's own voice summarized by an interviewer sympathetic to him. Speculative for any single item's wording.
+  Evidence: Newsletter #083's ten-item list, "derived from Stephen's answer."
+
+PRS-81:
+  Problem: How does one recognize when an idea is ready, that is, when it "will take flight"?
+  Resource: Item #8 of the list. Item #6/#7, explanation and discussion, may serve as the test.
+  Solution: Readiness is learned through repeated cycles of explaining and discussing, not given by a formal criterion. This is a candidate input for the open PRS-30 heuristic gap.
+  Date Added: 2026-11-07
+  Source: The Last Theory #083 - Wolfram's 10 ways to have big ideas; PROP-2026-10-31-003
+  Confidence: Speculative. It is a one-line host summary, and its content depends on audio not yet heard.
+  Evidence: Newsletter #083 item #8 only.
+
+PRS-82:
+  Problem: How does a researcher working far from consensus tell a good foundational idea from an attractive mistake, when peer agreement is not available as a signal?
+  Resource: A "tower of knowledge" criterion: each layer is accepted only once it rests on independently checked lower layers, with theory and computational experiment checking each other.
+  Solution: Treat whether an idea can be built on, step by checked step, as the test of its quality, in place of consensus or elegance.
+  Date Added: 2026-11-07
+  Source: The Last Theory #086 - The search for solid ground; PROP-2026-10-31-002
+  Confidence: Speculative
+  Evidence: Episode description only ("how he knows what he knows … building towers of knowledge on solid ground"); host's framing ("how to recognize a good idea"). No transcript was obtained.
+
+PRS-83:
+  Problem: In a computational-irreducibility world, theory alone cannot predict outcomes. What is the right relation between theory and experiment?
+  Resource: Wolfram's computational-experiment practice (run the rule, look, then explain), as described in the episode's "interplay between theory and experiment" segment.
+  Solution: Experiment comes first and constrains theory. Explanation is written after the computation has been looked at.
+  Date Added: 2026-11-07
+  Source: The Last Theory #086 - The search for solid ground; PROP-2026-10-31-002
+  Confidence: Speculative. Also a likely duplicate of the verification-over-generation thread (PRS-11 / PRS-38 / PRS-42 / PRS-49). It should be minted only if the audio adds something those entries lack.
+  Evidence: Episode description only.
+
+*Total PRS triplets: 83*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

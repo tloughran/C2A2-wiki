@@ -207,3 +207,15 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-24-003` - The future with AI will be very different from what we're being sold (Jon Hernandez interview, 2026-10-08) -> PRS-75, PRS-76. **Inferred from chapter titles; no transcript.** First alignment/explainability PRS in the wolfram set; both Speculative. Candidate-03 (AI originality) not entered: likely duplicates PRS-66/PRS-71.
 
 Open question gained: does irreducibility make complete alignment impossible in principle (PRS-75, unverified)? Audio check needed before it is cited.
+
+
+### Update 2026-11-07 — Future of Science and Technology Q&A (May 29, 2026) (PROP-2026-10-31-001)
+Ingested 3 triplet(s): PRS-77, PRS-78, PRS-79. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — The Last Theory #083 - Wolfram's 10 ways to have big ideas (PROP-2026-10-31-003)
+Ingested 2 triplet(s): PRS-80, PRS-81. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — The Last Theory #086 - The search for solid ground (PROP-2026-10-31-002)
+Ingested 2 triplet(s): PRS-82, PRS-83. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

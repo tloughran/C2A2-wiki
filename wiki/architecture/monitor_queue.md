@@ -25727,3 +25727,14 @@ MONITOR-704:
   Monitoring cadence: Weekly (default); first check due 2026-11-12
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1213 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1213_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1213_against.md
+
+MONITOR-705:
+  Date: 2026-11-06
+  Source item: PRESUMPTION-1218 (DISPOSITION-1120)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: event-sourcing and ISA-18.2 literature treat the log as truth and suppression as a controlled act (Weak, title-only). 15b: suppression and last-writer-wins are accepted designs when the act is recorded (Weak).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a writer may withhold a true observation from the status line only if the withheld observation is logged elsewhere') a read of the ISA-18.2 suppression requirements plus a source on append-only logs with derived views, and the in-house count of days where the last line of routine_health.md came from a different copy than an earlier same-day line; (-> REVISE) that count showing a material share of days where a true earlier observation was overridden with no trace.
+  Monitoring cadence: Weekly (default); first check due 2026-11-13
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1218 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1218_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1218_against.md

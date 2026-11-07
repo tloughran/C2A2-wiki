@@ -504,6 +504,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-06-002",
+  "tradition": "arkanihamed",
+  "source_date": "2025-12-31",
+  "title": "Configuration Spaces of Finite Representation Type Algebras",
+  "file": "inbox/proposals/approved/2026-11-06_arkanihamed_configuration-spaces-finite-rep-type.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-29-003",
   "tradition": "friston",
   "source_date": "2026",
@@ -1320,6 +1328,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-02-001",
+  "tradition": "levin",
+  "source_date": "2026-04-27",
+  "title": "A Platonic Space background for questions in consciousness",
+  "file": "inbox/proposals/approved/2026-11-02_levin_platonic-space-background-consciousness.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-11-004",
   "tradition": "friston",
   "source_date": "2026-04-28",
@@ -1752,6 +1768,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-10-31-003",
+  "tradition": "wolfram",
+  "source_date": "2026-05-28",
+  "title": "The Last Theory #083 - Wolfram's 10 ways to have big ideas",
+  "file": "inbox/proposals/approved/2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-07-001",
   "tradition": "wright",
   "source_date": "2026-05-29",
@@ -1765,6 +1789,14 @@
   "source_date": "2026-05-29",
   "title": "Agnosiophobia in a virtual agent: behavioral and dynamical architecture in Lenia",
   "file": "inbox/proposals/approved/2026-09-14_levin_agnosiophobia-lenia.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-31-001",
+  "tradition": "wolfram",
+  "source_date": "2026-05-29",
+  "title": "Future of Science and Technology Q&A (May 29, 2026)",
+  "file": "inbox/proposals/approved/2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology.md",
   "processed": false
  },
  {
@@ -3680,11 +3712,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-04-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-10-08",
+  "title": "Dr. Iain McGilchrist: The Faustian bargain of AI",
+  "file": "inbox/proposals/approved/2026-11-04_mcgilchrist_faustian-bargain-of-ai.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-24-003",
   "tradition": "wolfram",
   "source_date": "2026-10-08",
   "title": "The future with AI will be very different from what we're being sold - Stephen Wolfram",
   "file": "inbox/proposals/approved/2026-10-24_wolfram_jon-hernandez-ai-future-interview.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-10-31-002",
+  "tradition": "wolfram",
+  "source_date": "2026-10-09",
+  "title": "The Last Theory #086 - The search for solid ground",
+  "file": "inbox/proposals/approved/2026-10-31_wolfram_last-theory-086-search-for-solid-ground.md",
   "processed": false
  },
  {
@@ -3760,6 +3808,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-03-001",
+  "tradition": "hoffman",
+  "source_date": "2026-10-15",
+  "title": "The Recursive Trace Logic of Observers and Agents",
+  "file": "inbox/proposals/approved/2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-18-001",
   "tradition": "wright",
   "source_date": "2026-10-15",
@@ -3792,6 +3848,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-02-002",
+  "tradition": "levin",
+  "source_date": "2026-10-17",
+  "title": "New Bodies, Unconventional Minds: a perspective on a continuum of cognition (& consciousne",
+  "file": "inbox/proposals/approved/2026-11-02_levin_new-bodies-unconventional-minds-consciousness.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-25-003",
   "tradition": "wright",
   "source_date": "2026-10-18",
@@ -3805,6 +3869,14 @@
   "source_date": "2026-10-19",
   "title": "371 | Kyle Harper on How Humans Have Shaped Life on Earth",
   "file": "inbox/proposals/approved/2026-10-23_carroll_mindscape-371-harper-last-animal.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-02-003",
+  "tradition": "friston",
+  "source_date": "2026-10-19",
+  "title": "The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will",
+  "file": "inbox/proposals/approved/2026-11-02_friston_thought-economics-brain-in-the-dark.md",
   "processed": false
  },
  {
@@ -3832,6 +3904,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-04-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-10-22",
+  "title": "The British Academy Series: Brain asymmetry: the facts and why they matter (Public Lecture",
+  "file": "inbox/proposals/approved/2026-11-04_mcgilchrist_british-academy-brain-asymmetry-lecture.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-23-006",
   "tradition": "hawkins",
   "source_date": "2026-10-22",
@@ -3856,6 +3936,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-01-002",
+  "tradition": "wright",
+  "source_date": "2026-10-25",
+  "title": "Manufacturing the Millennium, Assurance of Salvation & Could Sin Return in the New Creatio",
+  "file": "inbox/proposals/approved/2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-30-001",
   "tradition": "carroll",
   "source_date": "2026-10-26",
@@ -3869,6 +3957,54 @@
   "source_date": "2026-10-27",
   "title": "Conscious Agents, Decorated Permutations, and the Construction of Spacetime",
   "file": "inbox/proposals/approved/2026-10-27_hoffman_oxford-decorated-permutations-talk.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-03-002",
+  "tradition": "hoffman",
+  "source_date": "2026-10-28",
+  "title": "The Trace Podcast, Episode 2: Why Neuroscience Has Explained Zero Conscious Experiences",
+  "file": "inbox/proposals/approved/2026-11-03_hoffman_trace-podcast-ep2-zero-conscious-experiences.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-01-001",
+  "tradition": "wright",
+  "source_date": "2026-10-28",
+  "title": "The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World",
+  "file": "inbox/proposals/approved/2026-11-01_wright_russell-moore-isaiah-idols-ai.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-01-004",
+  "tradition": "rohr",
+  "source_date": "2026-10-30",
+  "title": "Love Is Who We Are (CAC Daily Meditation, 'Loving Your Neighbor' week)",
+  "file": "inbox/proposals/approved/2026-11-01_rohr_love-is-who-we-are-separateness-as-sin.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-01-003",
+  "tradition": "wright",
+  "source_date": "2026-10-31",
+  "title": "Can We Trust the Gospels? N.T. Wright on Gethsemane, Gnosticism and Conspiracy Theories (A",
+  "file": "inbox/proposals/approved/2026-11-01_wright_ask-ntw-oct31-gethsemane-history-gnosticism.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-06-001",
+  "tradition": "carroll",
+  "source_date": "2026-11-02",
+  "title": "373 | Colin Camerer on the Neuroscience of Economic Thinking",
+  "file": "inbox/proposals/approved/2026-11-06_carroll_mindscape-373-camerer-neuroeconomics.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-04-003",
+  "tradition": "kastrup",
+  "source_date": "2026-11-08",
+  "title": "Are you one mind or many? Dr Thomas Pollak (With Reality in Mind session)",
+  "file": "inbox/proposals/approved/2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation.md",
   "processed": false
  }
 ]

@@ -233,3 +233,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 
 ### Ingest 2026-10-27
 Three approved 2026-10-26 cards. PRS-146/147 (Pigozzi & Levin, GARD): causal emergence precedes and promotes self-replication; raising it lengthens replicator persistence. Extends the causal-emergence line (alignment hypothesis) into origin of life. PRS-148 (BBS e345 commentary on Seth): no convincing substrate limit on consciousness can currently be drawn. Open: does causal emergence carry over from the GARD simulation to wet chemistry; does the e345 argument meet Friston's mortality constraint (see CROSS-164).
+
+
+### Update 2026-11-07 — New Bodies, Unconventional Minds: a perspective on a continuum of cognition (& consciousness) (PROP-2026-11-02-002)
+Ingested 2 triplet(s): PRS-149, PRS-150. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — A Platonic Space background for questions in consciousness (PROP-2026-11-02-001)
+Ingested 3 triplet(s): PRS-151, PRS-152, PRS-153. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

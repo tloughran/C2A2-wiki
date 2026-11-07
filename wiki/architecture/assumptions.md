@@ -38707,3 +38707,279 @@ ASSUMPTION-2041:
     Current status: UNTESTED
 
 *2026-11-04 14a: ASSUMPTION-2035..2041 (7). Queued [IN-HOUSE]: 2035-2038. Not queued: 2039, 2040, 2041 (recurrences). No interactive session; all items from scheduled-run reports.*
+
+ASSUMPTION-2042:
+  Date identified: 2026-11-05
+  Statement: [stated] Double-registration count drifts across same-day reports. Scheduler health c038b091 header: '26 DOUBLE-REGISTERED' while naming 27 tasks; morning status 45b2d87d: 'Twenty-four tasks were moved to the cloud in September' and 'All 28 active scheduled tasks fired on time'; evening sync a9ca02d4: 'about 27 tasks are registered twice'. Yesterday: header 28, list 27 (ASSUMPTION-2035).
+  Context: Scheduler health c038b091; morning status 45b2d87d; evening sync a9ca02d4
+  Type: empirical
+  Related decisions: ASSUMPTION-2035; OPEN-273
+  Testability: recurrence (not queued; ASSUMPTION-2035 already queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2042
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2043:
+  Date identified: 2026-11-05
+  Statement: [stated] Scheduler health c038b091: 'The 26 local entries can be disabled, since all 46 cloud routines checked OK today.' And: 'I also deliberately did not add a NOT-CHECKED line to routine_health.md ... a NOT-CHECKED line as the last entry would make today count as unwatched, which would bring the 33 WARNs back for no reason.' Two premises: (a) one day of cloud OK is sufficient grounds to disable local copies; (b) routine_health.md is read last-line-wins, so a copy should withhold its own true NOT-CHECKED observation.
+  Context: Scheduler health c038b091 action #2 and 'What I could not do'
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-274; PRESUMPTION-1196
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2043
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2044:
+  Date identified: 2026-11-05
+  Statement: [stated] Morning chat scrape 1c0a460e: 'the poster session left the Heartbeat count open (689 or 441). The video session then rebuilt the film using 689. I've marked this as probably settled at 689, but it needs your confirmation.' Decision inferred from a later session's use of the number.
+  Context: Morning chat scrape 1c0a460e; daily_sync/chat_to_cowork/2026-11-05_chat_summary.md
+  Type: epistemic
+  Related decisions: OPEN-286; OPEN-289
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2044
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2045:
+  Date identified: 2026-11-05
+  Statement: [stated] Walk handoff 6eff1320: 'Active findings: 23 ... findings 013-035, the ones marked "Active." Findings 080-111 have no status field.' Yesterday (3e479dcc): 24 active, 080-110 without status (ASSUMPTION-2040). Count fell by one and the range end moved 110->111 with no recorded status change. Same message: PROP-2026-11-04-001/-002 each used for two cards; two McGilchrist cards 'British Academy: Brain asymmetry' look like the same lecture; Humanity AI (10-21) and Kristian Olsen email (10-26) overdue.
+  Context: Walk handoff 6eff1320; ASSUMPTION-2040
+  Type: empirical
+  Related decisions: ASSUMPTION-2029; ASSUMPTION-2040
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2045
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2046:
+  Date identified: 2026-11-05
+  Statement: [stated] Deferred monitor 89e42f02: 'WATCH-005 had assumed it duplicated PROP-2026-09-29-002. Neither approved file under that ID contains the talk's video ID (3nWw91wErsc), so the duplicate isn't confirmed. Two different approved proposals also share that ID.' The ID-collision problem now reaches approved records, not only pending.
+  Context: Deferred monitor 89e42f02; WATCH-005
+  Type: empirical
+  Related decisions: ASSUMPTION-2036; PRESUMPTION-1213
+  Testability: testable empirically (in-house)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2046
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2047:
+  Date identified: 2026-11-05
+  Statement: [stated] Conflicting fixes for the auto-declined shell. Lit pipeline d1801e60 (sixth local skip at Step 0): 'either pre-approve Desktop Commander start_process for this scheduled task, or mount the project root.' Scheduler health c038b091: 'You don't need to approve shell access for future runs. Disabling this local entry is the better fix.' Cloud lit copy did run (lock RELEASED 2026-11-05T05:40:44Z; DISPOSITION-1119 -> MONITOR-704).
+  Context: Lit pipeline d1801e60; scheduler health c038b091; review/lit_pipeline.lock
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-290
+  Testability: framework/design choice (not queued; routed to OPEN-290)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2047
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2048:
+  Date identified: 2026-11-05
+  Statement: [stated] Recurrences: voice-shell suite RED 6/403 (397 passed; 11-04 'could not complete'); com.tomloughran.openstory.ui not loaded; 6 stranded git tmp_obj files; execution-assistant enabled, never run; list_triggers unavailable locally; wiki daily run second firing: ~330 inbox files not in PROCESSED_LOG by full filename (yesterday ~300), 'most likely a mismatch in my check'; Stump/Fredrickson prompt path lacks 'Projects/'; summa_index.json missing Day-001 and Day-035; 7 refs files unsynced; community explorer 156 vs 155; 347 new broken wikilinks; cell_dates.json held back ~39 days; morning system health process sections 'only show the check's own commands' (sandbox); watch list ~882 KB; WATCH-003 stale at 26 checks; evening sync duplicate firing, no walk chat found again; cloud 14a/14b NO-OP again (changelog/2026-11-06_changes.md, UTC date); this task's prompt still says '.../Wiki'.
+  Context: All sessions above
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-288
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2048
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-05 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-05 14a: ASSUMPTION-2042..2048 (7). Queued [IN-HOUSE]: 2043-2046. Not queued: 2042, 2048 (recurrences), 2047 (design choice; OPEN-290). No interactive session; all items from scheduled-run reports.*
+
+ASSUMPTION-2049:
+  Date identified: 2026-11-06
+  Statement: [stated] Evening sync 26f9f316, relaying its earlier 18:32 EST run (summary posted to Chat): 'The 14a/14b self-awareness run did nothing again today. It hasn't produced anything since 10-26.' Registry contradicts this: local passes added ASSUMPTION-2042..2048 and PRESUMPTION-1216..1218 on 11-05 and appended them under changelog/2026-11-05_changes.md.
+  Context: Evening sync 26f9f316; daily_sync/cowork_to_chat/2026-11-06_cowork_summary.md; changelog/2026-11-0[5-7]_changes.md
+  Type: architectural
+  Related decisions: OPEN-290; OPEN-292; PRESUMPTION-1219
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2049
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2050:
+  Date identified: 2026-11-06
+  Statement: [stated] Morning system health dad45423: 'Today's daily run may not have fired', because commit_check's OK line cites 11-05 09:35Z. Wiki daily run 6b8c9652 did run 11-06 (review page, Gmail draft r-7116418150837662097). Scheduler health 757d6914: 'Today's 11-06 run had not landed by 10:45Z.'
+  Context: Morning system health dad45423; scheduler health 757d6914; wiki daily run 6b8c9652
+  Type: empirical
+  Related decisions: OPEN-273
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2050
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2051:
+  Date identified: 2026-11-06
+  Statement: [stated] Wiki daily run 6b8c9652, Phase 2: searched Hawkins, Levin, Friston, Fredrickson only; skipped Stump, Wolfram, Hoffman, Kastrup, McGilchrist 'without searching them: Stump was searched yesterday, and the rest already have cards pending from the last week.'
+  Context: Wiki daily run 6b8c9652
+  Type: methodological
+  Related decisions: PRESUMPTION-1221
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2051
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2052:
+  Date identified: 2026-11-06
+  Statement: [stated] Carroll/Arkani-Hamed f8ff7155: (a) PROP-2026-11-06-002 (arXiv:2512.24870, submitted 2025-12-31) included outside the 30-day window 'under the "significant work not yet captured" clause' because it is on his IAS CV and uncited in the wiki; (b) PROP-2026-11-06-001 (Mindscape 373) written from 'only the episode blurb and guest bio'; show notes blocked; both triplets Speculative.
+  Context: Carroll/Arkani-Hamed agent f8ff7155
+  Type: methodological
+  Related decisions: —
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2052
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2053:
+  Date identified: 2026-11-06
+  Statement: [stated] Lit pipeline local copy e13ce4fe (seventh local skip): 'Another copy of the pipeline was not running. When I checked, the lock directory review/lit_pipeline.lock.d didn't exist.' The live lock the cloud copy writes is the file review/lit_pipeline.lock (last line: RELEASED 2026-11-06T05:41:03Z by cloud-lit-2026-11-06). Skip note filed as '..._second-run_skipped-lock-held.md' although the lock was not held ('the "lock-held" in the filename is inaccurate').
+  Context: Lit pipeline e13ce4fe; review/lit_pipeline.lock; review/2026-11-06_lit-pipeline_second-run_skipped-lock-held.md
+  Type: architectural
+  Related decisions: OPEN-290; PRESUMPTION-1220
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2053
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2054:
+  Date identified: 2026-11-06
+  Statement: [stated] Count disagreements, same day: morning status 4ac68c0c 'Twenty-nine scheduled tasks are enabled, and every one that was due has fired on time' and 'about twenty tasks' double-registered; scheduler health 757d6914 '26 x DOUBLE-REGISTERED' header with 27 names listed, 42 OK / 3 WARN / 30 FAIL. Morning status calls the connectome publish failure 'new today'; scheduler health shows runs = 9, last exit 1.
+  Context: Morning status 4ac68c0c; scheduler health 757d6914
+  Type: empirical
+  Related decisions: PRESUMPTION-1216
+  Testability: recurrence (not queued; covered by PRESUMPTION-1216)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2054
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2055:
+  Date identified: 2026-11-06
+  Statement: [stated] Walk handoff 947a8398: PROP-2026-11-04-001 and -002 each used twice in pending/; 'the two McGilchrist British Academy cards may be the same lecture filed twice'; 19 pending; 24 active findings (11-05: 23; 11-04: 24); overdue queue items Humanity AI Open Call (10-21) and DELTA fellowship email (10-26).
+  Context: Walk handoff 947a8398
+  Type: empirical
+  Related decisions: ASSUMPTION-2046
+  Testability: recurrence (not queued; ASSUMPTION-2046 enumeration covers it)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2055
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2056:
+  Date identified: 2026-11-06
+  Statement: [stated] Chat scrape 22e91d7f (yesterday's claude.ai chats): the word 'pulse' clashes between the Metabolism and AI Heartbeat tabs, 'blocking a build step'; voice-guide follow-up edits 'exist only on the sandbox that made them'; new idea recorded: show a thinker such as Carroll how the vault represents him, which he 'could then certify or reject'.
+  Context: Chat scrape 22e91d7f
+  Type: architectural
+  Related decisions: OPEN-291; PRESUMPTION-1222
+  Testability: design choice (not queued; routed to OPEN-291; idea's premise surfaced as PRESUMPTION-1222)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2056
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2057:
+  Date identified: 2026-11-06
+  Statement: [stated] Recurrences: voice-shell suite RED 7/403 (11-05: 6); com.c2a2.prs-connectome-publish exit 1; com.tomloughran.openstory.ui not loaded; 6 stranded git tmp_obj files; execution-assistant enabled, never run; list_triggers unavailable locally (scheduler health appended a NOT-CHECKED line today, where on 11-05 it withheld one: see PRESUMPTION-1218); cloud-routine snapshot stale after ~14:12Z; Carroll/Arkani-Hamed prompt path lacks 'Projects/' (as Stump/Fredrickson); 347 new broken wikilinks; communities 156 vs 155; cell_dates.json held back 'at least five days' (11-05 report: ~39 days); system-health CPU/memory sections see only the sandbox; watch list ~885 KB; WATCH-003 at 27 checks, WATCH-004 at 5 (stale at 6, 11-13); no decision email since 10-30; evening sync fired twice; cloud 14a/14b NO-OP again (changelog/2026-11-07_changes.md, UTC date); this task's prompt still says '.../Wiki'.
+  Context: All sessions above
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-288
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2057
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-06 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-06 14a: ASSUMPTION-2049..2057 (9). Queued [IN-HOUSE]: 2049-2053. Not queued: 2054, 2055, 2057 (recurrences), 2056 (design choice; OPEN-291). No interactive session; all items from scheduled-run reports.*

@@ -2494,3 +2494,36 @@ Phase 0: no decision emails. Phase 1: 0 ingested. Phase 2: no specialist cards p
 ### 2026-11-05 second orchestrator firing (04:37 local, verification only)
 Primary run had completed at 04:36-04:37 (2026-11-05_review.html, review_log.html, level2_signal_stream.html stamped 04:36; master narrative and this ledger 04:37; Gmail draft r-511843712515396568 created 09:36Z). Changed nothing it had done. Verified: Phase 0 no new decision email (same 4 unread April/July threads, all already in provenance/decision_emails.json and review/archive; left as-is); Phase 1 nothing new by ledger; Phase 2 not repeated (primary searched 6 traditions, 0 new); Phase 6 no git run.
 **Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 17.
+
+## 2026-11-06 - C2A2 daily run (Fri, Carroll + Arkani-Hamed specialist day, cloud orchestrator)
+Phase 0: no new decision emails (same 4 unread April/July threads, already stored; left as-is). Phase 1: 0 ingested (ledger approved OPEN=1, PROP-2026-08-14-033 standing). Phase 2: specialists filed Carroll + Arkani-Hamed (1 each); orchestrator searched Hawkins, Levin, Friston, Fredrickson, nothing verifiably new; 0 proposals. Review page opened, Gmail draft r-7116418150837662097 created, 2026-11-02_review.html removed, review log + L2 rebuilt (newest signal 2026-10-30, 7 days).
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 19.
+
+### 2026-11-06 second orchestrator firing (10:20 local, verification only)
+Primary run had completed at ~04:37 local (Gmail draft r-7116418150837662097 created 09:37Z). Changed nothing it had done. Verified: Phase 0 no decision email in last 3 days; Phase 1 nothing new (inbox filename-vs-ledger mismatch is the known convention, ledger OPEN=1 standing); Phase 2 skipped, specialists already ran; review_log.html address-clean. No git run.
+**Network: 1102 PRS / 164 CROSS / 111 FINDING.** Pending = 19.
+
+## 2026-11-07 - C2A2 daily run (Sat, cloud orchestrator)
+Phase 0: decision email 2026-11-06 (19 lines / 17 unique cards, all APPROVE) applied; moved to approved/, copied to inbox/. Phase 1 ingested:
+- PROP-2026-10-31-001 wolfram 2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology.md PRS-77, PRS-78, PRS-79 (3 triplets)
+- PROP-2026-10-31-003 wolfram 2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas.md PRS-80, PRS-81 (2 triplets)
+- PROP-2026-10-31-002 wolfram 2026-10-31_wolfram_last-theory-086-search-for-solid-ground.md PRS-82, PRS-83 (2 triplets)
+- PROP-2026-11-01-004 rohr 2026-11-01_rohr_love-is-who-we-are-separateness-as-sin.md PRS-118, PRS-119 (2 triplets)
+- PROP-2026-11-01-002 wright 2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance.md PRS-81, PRS-82 (2 triplets)
+- PROP-2026-11-01-003 wright 2026-11-01_wright_ask-ntw-oct31-gethsemane-history-gnosticism.md PRS-83, PRS-84 (2 triplets)
+- PROP-2026-11-01-001 wright 2026-11-01_wright_russell-moore-isaiah-idols-ai.md PRS-85, PRS-86 (2 triplets)
+- PROP-2026-11-02-003 friston 2026-11-02_friston_thought-economics-brain-in-the-dark.md PRS-86, PRS-87, PRS-88 (3 triplets)
+- PROP-2026-11-02-002 levin 2026-11-02_levin_new-bodies-unconventional-minds-consciousness.md PRS-149, PRS-150 (2 triplets)
+- PROP-2026-11-02-001 levin 2026-11-02_levin_platonic-space-background-consciousness.md PRS-151, PRS-152, PRS-153 (3 triplets)
+- PROP-2026-11-03-002 hoffman 2026-11-03_hoffman_trace-podcast-ep2-zero-conscious-experiences.md PRS-60, PRS-61, PRS-62 (3 triplets)
+- PROP-2026-11-03-001 hoffman 2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary.md PRS-63, PRS-64, PRS-65 (3 triplets)
+- PROP-2026-11-04-002 mcgilchrist 2026-11-04_mcgilchrist_british-academy-brain-asymmetry-lecture.md PRS-87 (1 triplets)
+- PROP-2026-11-04-003 kastrup 2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation.md PRS-103 (1 triplets)
+- PROP-2026-11-04-001 mcgilchrist 2026-11-04_mcgilchrist_faustian-bargain-of-ai.md PRS-88, PRS-89 (2 triplets)
+- PROP-2026-11-06-002 arkanihamed 2026-11-06_arkanihamed_configuration-spaces-finite-rep-type.md PRS-31, PRS-32, PRS-33 (3 triplets)
+- PROP-2026-11-06-001 carroll 2026-11-06_carroll_mindscape-373-camerer-neuroeconomics.md PRS-108, PRS-109 (2 triplets)
+Total new triplets: 38. Flagged to pattern detector: 6 card(s). Note: PROP-2026-11-04-001/002 duplicate IDs across McGilchrist/Kastrup; email lines applied to McGilchrist 001/002 + Kastrup 003 only; kastrup_death-imagination-reality and mcgilchrist_british-academy-brain-asymmetry-glasgow remain pending (ID ambiguity, not guessed).
+
+### 2026-11-07 second orchestrator firing (04:37 local, verification only)
+Started while the primary cloud run was mid-flight (decisions archive 04:36, ledger 04:37, review page/review_log/level2/master 04:38); waited ~4 min for it to finish, changed nothing it had done. Verified: Phase 0 the 2026-11-06 decision email (thread 1a1b2c1b6388efa5) is already read, stored once in provenance/decision_emails.json, archived in review/archive/2026-11-07_decisions.md; Phase 1 the 17 approved cards ingested (38 triplets), no duplicate ingest; Phase 2 Saturday Wolfram specialist card PROP-2026-11-07-001 pending, no duplicate searches; Phase 3/4 not repeated (page exists, draft by primary); 5.5 scrub clean (0 address matches). Pending = 3 (two PROP-2026-11-04 ID-collision leftovers need a manual decision). Phase 6: no git run.
+**Network: 1140 PRS / 164 CROSS / 112 FINDING.** Pending = 3.

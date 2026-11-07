@@ -564,5 +564,59 @@ PRS-59:
   Confidence: Speculative
   Evidence: One sentence in the abstract. Date unknown; check for overlap with existing decorated-permutation PRS items before ingesting. Possibly already superseded by the trace-logic formalism.
 
-*Total PRS triplets: 59*
+PRS-60:
+  Problem: Why has physicalist neuroscience not explained any specific conscious experience?
+  Resource: A historical diagnosis: Newton's physics removed the observer from science; "trillions of experiences, zero explained."
+  Solution: Restore the observer as the starting point of science (the Trace program), rather than expecting experience to fall out of brain physics.
+  Date Added: 2026-11-07
+  Source: The Trace Podcast, Episode 2: Why Neuroscience Has Explained Zero Conscious Experiences; PROP-2026-11-03-002
+  Confidence: Medium (Hoffman's stated position, consistent with prior sources; argument content not verified from the recording)
+  Evidence: Chapters 8 "How Newton wrote the observer out of physics" (11:19), 11 "Trillions of experiences, zero explained" (18:15), 13 "Why did we remove mind from science?" (26:02).
+
+PRS-61:
+  Problem: Is the Trace program a new idea or a formalization of an old one?
+  Resource: Self-placement in a lineage: Plato's cave, Plotinus as having "described the headset 1,700 years ago," and the question "Is Trace Leibniz 2.0?"
+  Solution: Frames trace logic as a mathematical restatement of a Platonist/Leibnizian picture (consistent with the "pre-established harmony" language in the TSC 2026 abstract, PROP-2026-11-03-001).
+  Date Added: 2026-11-07
+  Source: The Trace Podcast, Episode 2: Why Neuroscience Has Explained Zero Conscious Experiences; PROP-2026-11-03-002
+  Confidence: Speculative (lineage claim from chapter titles; answer to the Leibniz question not known)
+  Evidence: Chapters 3 (2:51), 9 "Is Trace Leibniz 2.0?" (14:29), 18 "Plotinus described the headset 1,700 years ago" (48:05).
+
+PRS-62:
+  Problem: If truth lies beyond any interface, does inquiry ever finish?
+  Resource: The claim that science has "infinite job security" and that truth is "infinitely far."
+  Solution: Recasts science as an unending ascent through better interfaces rather than convergence on a final theory.
+  Date Added: 2026-11-07
+  Source: The Trace Podcast, Episode 2: Why Neuroscience Has Explained Zero Conscious Experiences; PROP-2026-11-03-002
+  Confidence: Speculative (chapter titles only)
+  Evidence: Chapters 15 "Can we ever know the truth?" (32:52), 16 "Why science has infinite job security" (36:09), 17 "Why keep going if truth is infinitely far?" (44:32).
+
+PRS-63:
+  Problem: How do agents compose into higher-order agents without leaving the formalism used for observers?
+  Resource: Recursive trace logic: a simple agent is a Markov matrix on the set of observers; a second-order agent is a Markov matrix on simple agents; each set again carries a trace (Schur-complement) logic.
+  Solution: One construction, applied repeatedly, yields an unbounded hierarchy of agents, described as a Leibnizian "pre-established harmony" among observers and agents.
+  Date Added: 2026-11-07
+  Source: The Recursive Trace Logic of Observers and Agents; PROP-2026-11-03-001
+  Confidence: Medium (a definition stated in the abstract; its properties at higher levels are asserted, not shown there)
+  Evidence: "A 'second-order agent' is a Markov matrix on simple agents, and the set of all such agents again has a trace logic. This recursion proceeds indefinitely."
+
+PRS-64:
+  Problem: Where do the specific features of special relativity come from, if spacetime is not fundamental?
+  Resource: Three properties of Markov traces: (a) a step counter on a trace increments more slowly than on the original matrix; (b) diffusion times between states are shorter in the trace; (c) expected hitting time between uniformly chosen states is minimized by a cyclic transition path.
+  Solution: Proposed sources of (a) time dilation, (b) length contraction, and (c) a maximum speed (the speed of light).
+  Date Added: 2026-11-07
+  Source: The Recursive Trace Logic of Observers and Agents; PROP-2026-11-03-001
+  Confidence: Speculative (proposals, stated as "We propose"; no derivation of the Lorentz factor or of invariance of c is given in the abstract)
+  Evidence: Abstract, final four sentences.
+
+PRS-65:
+  Problem: Can a theory of consciousness double as an AI architecture?
+  Resource: The trace logic as a "logic of zero surprise" in two senses: the trace gives exactly the observed transition probabilities among visible states, and its stationary measure is the normalized restriction of the original.
+  Solution: Hoffman proposes the recursive trace logic as "a promising architecture for artificial intelligence," since minimizing surprise is an aspect of intelligence.
+  Date Added: 2026-11-07
+  Source: The Recursive Trace Logic of Observers and Agents; PROP-2026-11-03-001
+  Confidence: Speculative (a proposal; no implementation or benchmark named)
+  Evidence: "The recursive trace logic is the logic of zero surprise, in two ways... So the recursive trace logic is a promising architecture for artificial intelligence." Resolves the open question recorded at PRS ~line 497-502: here "zero surprise" names the trace relation itself, and Hoffman then links it to surprise-minimization in intelligence explicitly.
+
+*Total PRS triplets: 65*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

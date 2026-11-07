@@ -52257,3 +52257,40 @@ DISPOSITION-1119:
 ### Evidence-quality notes (2026-11-05)
 - One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared, so independence is procedural only.
 - 4 searches, 0 fetches; every source is title-only and unread. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The 6 other in-house items queued 11-04 were not touched (not literature scope). Backlog (138 bare literature-lane items) untouched; "all queued items searched" is NOT met for the backlog.
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1218
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: titles only (unread): event-sourcing append-only log as source of truth (Microsoft Azure pattern page); ISA-18.2 alarm rationalization/suppression; selective-reporting bias reviews
+  Summary: The field treats the log as truth and the status as derived, and treats suppression as a controlled act. No page read; the duplicate-copy last-line case is unaddressed.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1218_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1218 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1218
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: titles only (unread): proper alarm suppression reduces nuisance alarms (esmagazine/achrnews); AIChE 2022 rationalization and suppression; OPC UA Part 9 shelving states
+  Specific risk: Suppression and last-writer-wins are accepted designs; the defect is unlogged withholding, not the ability to withhold. Plant-scale practice may not transfer to a one-owner ledger.
+  STEELMAN: The presumption describes ordinary practice if a withheld observation is recorded elsewhere; the aggregate stays correct and the record whole.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1218_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1218 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1120:
+  Date: 2026-11-06
+  Item: PRESUMPTION-1218
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Both sides are title-only and weak. Support says the record should not be filtered by the status derived from it; challenge says suppression and last-writer-wins are accepted when the act is recorded. They agree that unlogged withholding is the hazard.
+  Disposition: MONITOR (MONITOR-705 (Medium))
+  Reasoning: Nothing was read, so INCORPORATE would overreach, and the challenge narrows rather than refutes the presumption, so REVISE is not met. The deciding evidence is in-house (days on which the last line of routine_health.md came from a different copy than an earlier same-day line), which has no runner.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1218 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1218_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1218_against.md
+
+### Evidence-quality notes (2026-11-06)
+- One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared, so independence is procedural only.
+- 4 searches, 0 fetches; every source is title-only and unread. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The in-house items queued (ASSUMPTION/PRESUMPTION tagged [IN-HOUSE]) were not touched (not literature scope). Backlog of bare literature-lane items untouched; "all queued items searched" is NOT met for the backlog.

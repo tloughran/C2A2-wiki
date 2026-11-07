@@ -1343,7 +1343,52 @@ PRS-148:
   Confidence: High as a statement of Levin's position; Speculative as a settled claim about consciousness
   Evidence: BBS abstract only (full text not read by the card's author).
 
-*Total PRS triplets: 148*
+PRS-149:
+  Problem: Theories of consciousness are hard to test, and none tells you what success would look like operationally.
+  Resource: A proposed adequacy criterion: a good theory of consciousness should output a protocol that places the knower, in first person, in the same cognitive/conscious state as another system.
+  Solution: Reframe consciousness research partly as building communication and "mind-sharing" interfaces with unconventional systems — making the theory's payoff a technology of perspective-taking rather than a third-person metric.
+  Date Added: 2026-11-07
+  Source: New Bodies, Unconventional Minds: a perspective on a continuum of cognition (& consciousness); PROP-2026-11-02-002
+  Confidence: Medium
+  Evidence: Closing segment (from 33:28): "I think a good theory of consciousness would output a protocol that puts you in first person in the same state... so then you really find out what it's like. And that means... devices for communication and some kind of mind sharing with other unconventional systems."
+
+PRS-150:
+  Problem: The default null hypothesis treats most of the universe as unconscious and asks for arguments before attributing experience; the criteria we use for other humans are applied inconsistently to other substrates.
+  Resource: Levin's account of why we attribute consciousness to other humans (behaviour that rewards a first-person stance, evolutionary kinship, and further criteria), plus three claims: the focus on neurons is too narrow; anatomical, physiological and gene-expression patterns belong in cognition; the same reasons should push us to take consciousness in other body structures seriously.
+  Solution: Reverse the burden: Levin states that consciousness "isn't made," is not a late evolutionary product, and that "unconscious process" may not even be coherent — while explicitly disclaiming a new theory or supporting data.
+  Date Added: 2026-11-07
+  Source: New Bodies, Unconventional Minds: a perspective on a continuum of cognition (& consciousness); PROP-2026-11-02-002
+  Confidence: Speculative (by Levin's own framing; one key sentence is garbled in transcription)
+  Evidence: "I don't claim to have data supporting one theory of consciousness, but I will make three claims"; "I think that consciousness isn't made. I don't think it's a late product of evolution"; "I'm skeptical that it's even coherent to say that there's such a thing as an unconscious process. We have no evidence for such a thing."
+
+PRS-151:
+  Problem: Why attribute consciousness to other people but not to other multiscale parts of a body (e.g. organs), given the same behavioural evidence standard?
+  Resource: Levin's continuum view of intelligence/consciousness (a question of how much and what kind, not whether), plus his behavioural-science methods applied to non-brain systems (slime molds, cells, tissues).
+  Solution: Apply the "other minds" inference consistently: take seriously some degree of consciousness in subsystems such as the liver; treat bodies as multiscale collectives of goal-pursuing parts.
+  Date Added: 2026-11-07
+  Source: A Platonic Space background for questions in consciousness; PROP-2026-11-02-001
+  Confidence: Medium
+  Evidence: Post states that by the same reasoning used to attribute minds to other people, "some degree of consciousness in other body parts, such as the liver" should be taken seriously (as summarised from the page; exact wording unverified).
+
+PRS-152:
+  Problem: How can consciousness be causally efficacious without being reducible to, or merely an epiphenomenon of, physical mechanism?
+  Resource: Platonic space of mathematical/behavioural patterns, some active in the physical world, with mind relating to body as mathematics relates to physics; two operational notions of causation (explanatory insight; Pearl-style counterfactual dependence).
+  Solution: Consciousness is "the view from the Platonic space into the physical world"; we facilitate it by building embodiments/interfaces rather than creating it. The research agenda becomes measuring what Platonic space offers evolution and engineers and how interfaces determine which minds can enter.
+  Date Added: 2026-11-07
+  Source: A Platonic Space background for questions in consciousness; PROP-2026-11-02-001
+  Confidence: Speculative
+  Evidence: Levin explicitly labels these as speculative philosophical positions motivating his empirical work, not established results.
+
+PRS-153:
+  Problem: The binding problem: how do many sub-experiences combine into one unified mind?
+  Resource: Ecosystem-of-minds picture of the body, in contrast to a single mind assembled from subunits.
+  Solution: Reframe the problem: bodies may contain many minds at once arranged like an ecosystem, so binding may be misframed rather than needing a mechanism.
+  Date Added: 2026-11-07
+  Source: A Platonic Space background for questions in consciousness; PROP-2026-11-02-001
+  Confidence: Medium
+  Evidence: Stated as one of four implications in the post; no experimental claim made.
+
+*Total PRS triplets: 153*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

@@ -781,7 +781,34 @@ PRS-85:
   Confidence: Medium (direction stated in abstract; detailed argument not read)
   Evidence: BBS abstract: 'I take this opportunity to unpack the thermodynamic issues that attend mortal computation and their implications for conscious artefacts.'
 
-*Total PRS triplets: 85*
+PRS-86:
+  Problem: Large language models produce human-like output; what, if anything, separates them from agents that infer?
+  Resource: The active-inference requirement that beliefs carry an explicit, physically represented precision (credence / inverse uncertainty), so that expected information gain can be computed.
+  Solution: Draw the line at uncertainty quantification: a system that only maps inputs to outputs via a value function of states cannot know what it does not know, so it cannot be curious or select uncertainty-resolving actions; agency requires optimising a functional of beliefs (variational free energy, the ELBO). Installing curiosity — systems that ask *you* questions — is the prerequisite for anything near AGI.
+  Date Added: 2026-11-07
+  Source: The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will and Whether Machines Can Be Conscious; PROP-2026-11-02-003
+  Confidence: High (as a statement of Friston's position; the empirical claim about LLMs is contestable)
+  Evidence: "If you do not have that, and large language models do not have that, then you do not know what you do not know. You cannot do belief updating. All you can do is produce outputs for any given input. So there is no true agency underneath."
+
+PRS-87:
+  Problem: What extra structure turns unconscious inference into something deserving the name consciousness or selfhood?
+  Resource: Deep (hierarchical) generative models in which the agent models itself as the cause of its own sensations, plus a metacognitive layer that recognises that "this thing performing planning as inference is me," in context.
+  Solution: Treat self-authorship of sensation as a prerequisite for consciousness and metacognitive depth as the source of minimal selfhood; read psychopathology as false inference (type I errors → hallucination/delusion; type II → neglect, dissociation).
+  Date Added: 2026-11-07
+  Source: The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will and Whether Machines Can Be Conscious; PROP-2026-11-02-003
+  Confidence: Medium
+  Evidence: "You are authoring your own sensations. To know that, to model it and to have it as part of your generative model is, I think, a prerequisite for consciousness." Type I/II mapping stated explicitly.
+
+PRS-88:
+  Problem: How does an agent come to carve the world into things, selves and other agents at all?
+  Resource: Structure learning and causal discovery under the FEP; Markov blankets as the formal device for separating inside from outside "at many, many different scales"; developmental example (the infant learning that mother moves by herself, then hypothesising "perhaps I am a thing").
+  Solution: Selfhood is an inferred, fragile hypothesis (depersonalisation and psychedelics show it can dissolve), and objecthood/selfhood/otherhood are coarse-grainings we learn — "our attempt to tell stories of a simple sort about how we best explain our universe."
+  Date Added: 2026-11-07
+  Source: The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will and Whether Machines Can Be Conscious; PROP-2026-11-02-003
+  Confidence: Medium
+  Evidence: "That conviction is quite a unique gift and quite a fragile gift, and it can go away... you don't know anything. It's all inference, including that you are you and that you exist." "How do we actually carve nature at its joints into things?... a real frontier problem, certainly in my world."
+
+*Total PRS triplets: 88*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

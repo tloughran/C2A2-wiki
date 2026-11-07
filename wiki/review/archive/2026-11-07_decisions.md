@@ -1,0 +1,21 @@
+# Decisions — 2026-11-07
+(source: [C2A2-review-decision] 2026-11-06 email)
+- PROP-2026-10-31-001: APPROVE -> 2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology.md
+- PROP-2026-10-31-003: APPROVE -> 2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas.md
+- PROP-2026-10-31-002: APPROVE -> 2026-10-31_wolfram_last-theory-086-search-for-solid-ground.md
+- PROP-2026-11-01-004: APPROVE -> 2026-11-01_rohr_love-is-who-we-are-separateness-as-sin.md
+- PROP-2026-11-01-002: APPROVE -> 2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance.md
+- PROP-2026-11-01-003: APPROVE -> 2026-11-01_wright_ask-ntw-oct31-gethsemane-history-gnosticism.md
+- PROP-2026-11-01-001: APPROVE -> 2026-11-01_wright_russell-moore-isaiah-idols-ai.md
+- PROP-2026-11-02-003: APPROVE -> 2026-11-02_friston_thought-economics-brain-in-the-dark.md
+- PROP-2026-11-02-002: APPROVE -> 2026-11-02_levin_new-bodies-unconventional-minds-consciousness.md
+- PROP-2026-11-02-001: APPROVE -> 2026-11-02_levin_platonic-space-background-consciousness.md
+- PROP-2026-11-03-002: APPROVE -> 2026-11-03_hoffman_trace-podcast-ep2-zero-conscious-experiences.md
+- PROP-2026-11-03-001: APPROVE -> 2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary.md
+- PROP-2026-11-04-002: APPROVE -> 2026-11-04_mcgilchrist_british-academy-brain-asymmetry-lecture.md
+- PROP-2026-11-04-003: APPROVE -> 2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation.md
+- PROP-2026-11-04-001: APPROVE -> 2026-11-04_mcgilchrist_faustian-bargain-of-ai.md
+- PROP-2026-11-04-002: duplicate line in email, ignored
+- PROP-2026-11-04-001: duplicate line in email, ignored
+- PROP-2026-11-06-002: APPROVE -> 2026-11-06_arkanihamed_configuration-spaces-finite-rep-type.md
+- PROP-2026-11-06-001: APPROVE -> 2026-11-06_carroll_mindscape-373-camerer-neuroeconomics.md

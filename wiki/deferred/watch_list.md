@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-11-01
-  Check count: 26
+  Last checked: 2026-11-06
+  Check count: 27
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -71,6 +71,7 @@ WATCH-003:
     - 2026-10-28 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **24**; next on-cadence check stays 2026-10-30): a **27th** decision file exists, `2026-10-27_decisions.md` (Gmail `[C2A2-review-decision] 2026-10-26`, thread 1a178a5a92eefb55; 3 APPROVE: PROP-2026-10-26-001/-002/-003; no other dispositions). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md`. The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. Census: `pending/` 3 (Hoffman ×3, 10-27), `approved/` 509, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-10-30: On-cadence check; count now **25**. `review/archive/` unchanged at 27 files, latest `2026-10-27_decisions.md`; no decision file since, so no later disposition can exist. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Files newer than the last watch-list write (10-29 sync summaries, open_questions, 10-30 changelog, etc.) mention WATCH-003 only as a carry-over; no ruling. Census: `pending/` 9, `approved/` 509, `denied/` 1, `needs_review/` 4. NOT met. Next on-cadence check 2026-11-06.
     - 2026-11-01 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **26**; next on-cadence check stays 2026-11-06): a **28th** decision file exists, `review/archive/2026-10-31_decisions.md` (10 APPROVE: PROP-2026-10-27-001/-002/-003, -10-28-001/-002/-003, -10-29-001/-002/-003, -10-30-001; no CHANGE/CHECK/CONDITIONAL). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. NOT met.
+    - 2026-11-06: On-cadence check; count now **27**. `review/archive/` unchanged at 28 files, latest `2026-10-31_decisions.md`; no decision file since, so no later disposition can exist. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Vault files newer than the last watch-list write mention WATCH-003 / INTEGRITY FLAG only as carry-over (open_questions, PROCESSED_LOG, master wiki history); no ruling. Census: `pending/` 17, `approved/` 519, `denied/` 1, `needs_review/` 4. NOT met. Next on-cadence check 2026-11-13.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -93,13 +94,14 @@ WATCH-004:
   Check method: File check — grep `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` and `pending/` (by proposal_id PROP-2026-10-01-001) for the false sentence; check `pending/` for a revised copy.
   Check cadence: Weekly
 
-  Last checked: 2026-10-30
-  Check count: 4
+  Last checked: 2026-11-06
+  Check count: 5
   Result history:
     - 2026-10-08: Intake. File in `needs_review/` carries Tom's CHANGE instruction appended (processed 2026-10-07); false sentence still present in Cross-Tradition Signals; no revised copy in `pending/`. Condition NOT met. Classified as a content correction needing a tradition-agent or human edit — not a real-world event. Agent 16 does not edit proposal content.
     - 2026-10-13: On-cadence check. `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` unchanged since 2026-10-08 02:38; flagged sentence still present at line 38 (CT Signals "C2A2 core" bullet) as well as in Tom's quoted instruction at line 46. grep of `pending/` for PROP-2026-10-01-001: no match. Condition NOT met. Next on-cadence check 2026-10-20.
     - 2026-10-23: On-cadence check (due 10-20; late). File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (13 files) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-10-30.
     - 2026-10-30: On-cadence check. File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (9 files; the two new 10-29 Fredrickson cards are different items, `co-experienced-affect-caring-communities` and `listen-to-resonate`) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-11-06.
+    - 2026-11-06: On-cadence check. File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (17 files) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-11-13. One more unmoved check reaches the 6-check stale threshold.
 
   On resolution:
     Action: re-queue proposal to pending/ with note [RESOLVED by Agent 16: date — condition met: CT Signals sentence corrected per Tom's CHANGE]
@@ -122,14 +124,15 @@ WATCH-005:
   Check method: Fetch channelmcgilchrist.com episode page; web search for transcript; test YouTube caption route (https://www.youtube.com/watch?v=xZcB-tmvJaU) and Wonderstruck/Acast show notes.
   Check cadence: Weekly
 
-  Last checked: 2026-10-31
-  Check count: 3
+  Last checked: 2026-11-07
+  Check count: 4
   Result history:
     - 2026-10-17: Intake. Channel McGilchrist page fetched: title, 47:39 runtime and embedded YouTube player only; no body text, no transcript link. Web search "Wisdom of Uncertainty Wonderstruck Elizabeth Rovere transcript": only generic Wonderstruck show pages, no transcript. Agent 16 did not attempt a caption pull (outside targeted condition check). Condition NOT met. Needs Tom: paste the YouTube URL / transcript into a Cowork session, per his own "ask for Tom's assistance" instruction.
       [ADDENDUM 2026-10-17, second Agent 16 instance — same day, count NOT incremented]: The YouTube watch page itself (https://www.youtube.com/watch?v=xZcB-tmvJaU) was fetched. Its player data lists an auto-generated (ASR) caption track, so a transcript does exist. The track is labelled `lang=ar`, which suggests YouTube misdetected the spoken language; if so, the auto-captions may be garbled. The timedtext URL is not in this agent's fetch provenance set, so the pull was refused. Sharpened ask for Tom: open the video's "Show transcript" panel and paste the text into a session or a vault file. Pasting the watch URL alone may not be enough, because the caption URL is derived from it and is still refused.
 
     - 2026-10-24: Weekly check. Web search `McGilchrist "Wisdom of Uncertainty" Wonderstruck transcript` returned no transcript. The only Wonderstruck/McGilchrist hit is the older John Cleese episode (podcastrex show notes, not a transcript). Vault grep for `xZcB-tmvJaU` / "Wisdom of Uncertainty" / "Wonderstruck" outside deferred/ found no transcript file. The caption pull was not retried, because it was refused on 10-17 and nothing has changed. Condition NOT met. The ask to Tom is unchanged: paste the "Show transcript" text into a session or vault file.
     - 2026-10-31: Weekly check. Web search `McGilchrist "Wisdom of Uncertainty" Wonderstruck Rovere transcript`: no transcript. Hits were generic Wonderstruck show pages (podnews, Acast, Castbox, TuneIn), the older Cleese episode, and unrelated "wisdom of uncertainty" items (Maggie Jackson's book, the Ellis book). The search engine's summary suggested the episode "may not exist". Agent 16 rejects that: the Channel McGilchrist episode page and the YouTube watch page were both fetched on 10-17. Vault grep for `xZcB-tmvJaU` / "Wisdom of Uncertainty" outside deferred/ found only the needs_review card itself. The caption pull was not retried. Condition NOT met. Next check 2026-11-07. The ask to Tom is unchanged.
+    - 2026-11-07: Weekly check. Web search `McGilchrist "Wisdom of Uncertainty" Wonderstruck transcript` returned no transcript. Hits were other McGilchrist interviews with transcripts (TGS 85 PDF, rosetta.to pages, Metacast), the Ellis book and unrelated items; nothing names Wonderstruck or this episode. Vault grep for `xZcB-tmvJaU` / "Wisdom of Uncertainty" outside deferred/ found only the needs_review card itself. The caption pull was not retried (refused 10-17; nothing has changed). Condition NOT met. Next check 2026-11-14. The ask to Tom is unchanged: paste the YouTube "Show transcript" text into a session or vault file. Two more unmoved checks reach the 6-check stale threshold.
 
   On resolution:
     Action: re-queue proposal to pending/ with transcript attached; route to 05_mcgilchrist_agent for reprocessing
@@ -152,14 +155,15 @@ WATCH-006:
   Check method: File check — pending/ for PROP-2026-10-13-001 revised copy; macintyre PRS triplet files for the overlap passages (pp.116, 124-126, 202-205, 229, 233, 134, 33). No sewing-agent definition exists in agents/ (only 01-20), so ownership is unclear.
   Check cadence: Weekly
 
-  Last checked: 2026-11-02
-  Check count: 4
+  Last checked: 2026-11-07
+  Check count: 5
   Result history:
     - 2026-10-17: Intake. Classified as agent action / possibly human. No revised copy in pending/. Condition NOT met. Flag: no "sewing agent" in agents/; Tom to confirm which agent/session owns this. Also PROP-2026-10-13-001/-002 ID collision still open.
 
     - 2026-10-24: Weekly check. No revised PROP-2026-10-13-001 in pending/ (13 files, none MacIntyre). `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39. Condition NOT met. **New on ownership:** a production Sewing Agent does exist. It is a weekly Sunday scheduled task (`local_57fed042`, per open_questions.md OPEN-052/053) that writes to `architecture/sewing_agent_log.md`. Its 2026-10-18 run *explicitly skipped* `needs_review/` cards ("Left alone: needs_review/ cards (macintyre PRS candidates, mcgilchrist wonderstruck, fredrickson BIPR), which await review"). So the owner is probably that task, but its selection rule excludes this card. As things stand, the next run (2026-10-25) will skip it again. Narrower ask for Tom: either tell the Sewing Agent to take PROP-2026-10-13-001 from needs_review/, or run the overlap pass by hand. Agent 16 has not edited the sewing task.
     - 2026-10-31: Weekly check. `pending/` holds 10 files (Hoffman ×3, Kastrup ×2, McGilchrist KCL, Fredrickson ×2, Stump, Carroll 372), and none is a MacIntyre item or a copy of PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` has not changed since 2026-10-16 04:39. `architecture/sewing_agent_log.md` has not changed since 2026-10-25 04:42, so the 10-25 Sewing run did not touch this card. Condition NOT met. The next event trigger is the Sewing Agent run on 2026-11-01, which is expected to skip `needs_review/` again unless Tom changes its rule. Next on-cadence check 2026-11-07.
     - 2026-11-02 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **4**; next on-cadence check stays 2026-11-07): the Sewing Agent's 2026-11-01 run is logged in `architecture/sewing_agent_log.md` (written 11-01 04:42; full run ~09:40 UTC plus a report-only duplicate firing). It processed 10 pages: 7 `pending/` cards (Rohr ×1, Wright ×3, Wolfram ×3) and 3 `inbox/` items (Carroll 372, Stump, Fredrickson). It injected 38 calls and appended 16 bridge sections. The log does not mention `needs_review/`, MacIntyre, or PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` has not changed since 2026-10-16 04:39. `pending/` holds 7 files and none is MacIntyre. Condition NOT met. As predicted on 10-24, the Sewing Agent's selection rule does not reach this card, and that will not change unless Tom acts. The next Sewing run is 2026-11-08.
+    - 2026-11-07: On-cadence check; count now **5**. `pending/` holds 19 files; none is MacIntyre and none carries PROP-2026-10-13-001 (the three McGilchrist items are 11-04 cards, unrelated). `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39. `architecture/sewing_agent_log.md` unchanged since 2026-11-01 04:42. needs_review card mtime unchanged (10-17). Condition NOT met. Event trigger: Sewing Agent run 2026-11-08, expected to skip `needs_review/` again. Next on-cadence check 2026-11-14; one more unmoved check reaches the 6-check stale threshold.
 
   On resolution:
     Action: re-queue proposal to pending/ with note
@@ -7463,3 +7467,47 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: WATCH-003/-004 on 2026-11-06; WATCH-005/-006 on 2026-11-07.
 
 *Duplicate firing appended after the earlier 11-05 instance. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-06
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). `review/archive/` still 28 files, latest `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL. Vault `.md` files newer than the last watch-list write (PROCESSED_LOG, 11-05 cowork/chat summaries, open_questions, monitor_queue, 11-05/11-06 changelogs, master wiki, assumptions/presumptions, lit-search files, rival/physicalism files, ~40 `vault/transcripts|synthesis/Day-*` Aquinas files) were grepped for tracked IDs, `xZcB-tmvJaU`, "Wisdom of Uncertainty", `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, INTEGRITY FLAG, WATCH-003..006. Hits are carry-over/historical only; no ruling, deferral or watch request.
+  Items checked: 2 (on-cadence):
+    - WATCH-003 (count 27): no new decision file; no disposition on PROP-2026-07-19-001. NOT met.
+    - WATCH-004 (count 5): Fredrickson file unchanged since 10-08; sentence still at line 38; no PROP-2026-10-01-001 in `pending/` (17 cards). NOT met.
+  Event sweep (not counted; due 11-07): WATCH-005, no Wonderstruck transcript in vault. WATCH-006, `sewing_agent_log.md` unchanged since 11-01; no revised PROP-2026-10-13-001 in `pending/`.
+  Items resolved: 0 · Still watching: 4 (WATCH-003, -004, -005, -006) · Stale: 1 (WATCH-003, 27 checks; Escalate to Tom, unchanged). WATCH-004 at 5 checks: will hit the stale threshold on 11-13 if unmoved. · New: 0
+  Next scheduled checks: WATCH-005/-006 on 2026-11-07; WATCH-003/-004 on 2026-11-13; WATCH-006 event trigger Sewing Agent 2026-11-08.
+
+**Open for Tom (unchanged):** WATCH-003 INTEGRITY FLAG ruling; WATCH-004 Fredrickson CT-Signals edit (one check from stale); WATCH-005 Wonderstruck transcript; WATCH-006 Sewing selection rule / manual MacIntyre pass; ID collisions; split the ~885 KB watch list; duplicate scheduled firings.
+
+*Run completed 2026-11-06 ~07:40 UTC.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-06 (second firing, ~07:45 UTC; duplicate, no-change confirmation)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged. No new decision file in `review/archive/`.
+  Items checked: 0 (WATCH-003/-004 already checked earlier today; WATCH-005/-006 due 11-07). Resolved: 0 · Watching: 4 · Stale: 1 (WATCH-003, unchanged) · New: 0
+  Next scheduled checks: WATCH-005/-006 on 2026-11-07; WATCH-003/-004 on 2026-11-13.
+
+*Duplicate firing. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-07
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). `review/archive/` still 28 files, latest `2026-10-31_decisions.md`; no new CHANGE / CHECK / CONDITIONAL. Vault `.md` files newer than the last watch-list write (PROCESSED_LOG, open_questions, for_lit_search, assumptions/presumptions, master wiki, 11-06 metrics, 11-06/11-07 changelogs, two 11-07 lit-pipeline skip notes) were grepped for tracked IDs, `xZcB`, Wonderstruck, `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, INTEGRITY FLAG, WATCH-003..006. Hits are carry-over/historical only; no ruling, deferral or watch request.
+  Items checked: 2 (on-cadence):
+    - WATCH-005 (count 4): web search found no Wonderstruck "Wisdom of Uncertainty" transcript; none in vault. NOT met.
+    - WATCH-006 (count 5): no revised PROP-2026-10-13-001 in `pending/` (19 cards); `prs_triplets.md` unchanged since 10-16; `sewing_agent_log.md` unchanged since 11-01. NOT met.
+  Event sweep (not counted; due 11-13): WATCH-003, no new decision file. WATCH-004, Fredrickson file unchanged since 10-08; no PROP-2026-10-01-001 in `pending/`.
+  Items resolved: 0 · Still watching: 4 (WATCH-003, -004, -005, -006) · Stale: 1 (WATCH-003, 27 checks; Escalate to Tom, unchanged). Approaching threshold: WATCH-004 (5), WATCH-006 (5), WATCH-005 (4). · New: 0
+  Next scheduled checks: WATCH-006 event trigger Sewing Agent 2026-11-08; WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14.
+
+**Open for Tom (unchanged):** WATCH-003 INTEGRITY FLAG ruling; WATCH-004 Fredrickson CT-Signals edit; WATCH-005 Wonderstruck transcript; WATCH-006 Sewing selection rule / manual MacIntyre pass; ID collisions; split the ~890 KB watch list; duplicate scheduled firings.
+
+*Run completed 2026-11-07 ~07:40 UTC.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-07 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged. No new decision file in `review/archive/`.
+  Items checked: 0 (WATCH-005/-006 already checked earlier today; WATCH-003/-004 due 11-13). Resolved: 0 · Watching: 4 · Stale: 1 (WATCH-003, unchanged) · New: 0
+  Next scheduled checks: WATCH-006 event trigger Sewing Agent 2026-11-08; WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14.
+
+*Duplicate firing. No notification sent: nothing resolved or newly stale.*

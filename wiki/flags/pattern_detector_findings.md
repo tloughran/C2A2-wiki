@@ -1426,3 +1426,13 @@ If irreducibility blocks prior certification, behavioural monitoring in context 
 Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, friston 1, hawkins 3). The review email listed PROP-2026-10-23-001 twice; it resolved to two files and both were approved. The Wolfram Hernandez card had a reviewer note recommending HOLD pending transcript and was approved; two of its three candidates were ingested as Speculative, the third skipped. PROP-2026-08-14-033 stays OPEN.
 
 - **FINDING-111 (Medium):** Levin (substrate-liberal) and Friston (mortal computation) disagree on conscious AI yet share a premise, that the relevant systems are self-maintaining and goal-directed. The live question is whether mortality is a substrate restriction or a description of what any agent is. Not escalated to the Watch List: both positions rest on abstracts, and McGilchrist's contribution is uncaptured. Recommend capturing McGilchrist's commentary and reading both full texts before any bridge claim.
+
+
+## FINDING-112 - Ingest of 17 approved cards: locator-heavy batch, three bridge candidates
+
+**Date:** 2026-11-07 · **Source signals:** 6 forwarded cards (wolfram 083/086, rohr separateness, wright no-serpent / gethsemane / idols), 38 triplets · **Confidence:** Medium-Low · **Recommended action:** verify audio/transcripts before any upgrade; the Wolfram 083/086 primary-source check is highest value because it can close PRS-30.
+
+- Wolfram 'tower of knowledge' (PRS-82) and the ten-practice loop (PRS-80/81) are candidate operating criteria for 'paradigm-shift candidate' (buildability on verified foundations); all Speculative until the audio is heard. **Not escalated.**
+- Rohr 'sin as separateness' (PRS-118) with Friston over-precise self/other boundary, Kastrup dissociation, and Stump/Wright as dissenting checks: a coherent bridge candidate for a CROSS entry. **MEDIUM; flag for Watch List pending Stump/Wright check.**
+- Wright 'no serpent' (PRS-81) read as an absorbing attractor (Friston) with Stump on beatitude: paradigm-bridge candidate, Speculative framing. **Not escalated.**
+- Housekeeping: 11-04-001/002 IDs collide across McGilchrist/Kastrup; two cards left pending rather than guess.

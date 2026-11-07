@@ -215,3 +215,7 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-23-007` - 371 | Kyle Harper on How Humans Have Shaped Life on Earth (podcast, 2026-10-19) -> PRS-101..105. Transcript read in full (0:00-1:24:54). The guest supplies most content; PRS-101 and PRS-105 are Harper's theses that Carroll endorses or frames. PRS-103 is Speculative (entropy-accounting bridge is the agent's).
 
 New open thread: whether values (biodiversity 'valuable for its own sake') are decided or discovered, a live test of poetic naturalism (PRS-105 context).
+
+
+### Update 2026-11-07 — 373 | Colin Camerer on the Neuroscience of Economic Thinking (PROP-2026-11-06-001)
+Ingested 2 triplet(s): PRS-108, PRS-109. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

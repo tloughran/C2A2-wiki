@@ -176,3 +176,15 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-25-004` - Is Christianity making a comeback? (Ask NTW) -> PRS-80. Description only.
 
 All six rest on episode descriptions or a publisher page; none was heard or read in full. PRS-78 and PRS-80 are Speculative.
+
+
+### Update 2026-11-07 — Manufacturing the Millennium, Assurance of Salvation & Could Sin Return in the New Creation? (Ask NT Wright Anything) (PROP-2026-11-01-002)
+Ingested 2 triplet(s): PRS-81, PRS-82. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — Can We Trust the Gospels? N.T. Wright on Gethsemane, Gnosticism and Conspiracy Theories (Ask NT Wright Anything) (PROP-2026-11-01-003)
+Ingested 2 triplet(s): PRS-83, PRS-84. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World (PROP-2026-11-01-001)
+Ingested 2 triplet(s): PRS-85, PRS-86. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

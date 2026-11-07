@@ -749,4 +749,58 @@ PRS-80:
   Confidence: Speculative (pending transcript)
   Evidence: Episode description.
 
-*Total PRS triplets: 80*
+PRS-81:
+  Problem: If created freedom made the first fall possible, why could the new creation not fall again, which would leave creation-fall-redemption as an endless cycle?
+  Resource: Revelation 21-22, read as the final defeat of evil instead of a restored but still vulnerable Eden.
+  Solution: New creation is not Eden restored to its starting conditions. It is a state in which evil has been removed from the possibility space, so redeemed freedom is stable and does not risk a second fall.
+  Date Added: 2026-11-07
+  Source: Manufacturing the Millennium, Assurance of Salvation & Could Sin Return in the New Creation? (Ask NT Wright Anything); PROP-2026-11-01-002
+  Confidence: Medium (the episode notes state the conclusion; the argument for *why* freedom stays intact is not visible in the notes)
+  Evidence: Episode notes: Tom turns to Revelation 21-22 and the promise that evil will finally be defeated, with no serpent in the new garden.
+
+PRS-82:
+  Problem: If God alone brings the kingdom, does present human work matter, and if humans build it, why is the world not improving?
+  Resource: Wright's long-standing "build for the kingdom" formula (cf. *Surprised by Hope*), restated against both optimism and despair.
+  Solution: Present faithful acts are not wasted and not self-sufficient. They are materials that God takes up into the final new creation.
+  Date Added: 2026-11-07
+  Source: Manufacturing the Millennium, Assurance of Salvation & Could Sin Return in the New Creation? (Ask NT Wright Anything); PROP-2026-11-01-002
+  Confidence: High (consistent with Wright's published corpus; reaffirmed here)
+  Evidence: Episode notes, third segment.
+
+PRS-83:
+  Problem: Gospel passages that report events with no plausible witness (Gethsemane) seem to force a choice: read the text as an exact recording or treat it as invention.
+  Resource: Wright's critical-realist historiography: history as disciplined reconstruction from tradition, testimony and coherence, not as transcript.
+  Solution: Reject the binary. A report can be historically grounded (Jesus' known stance and prayer practice, later testimony, and the community's memory) without being a verbatim record. Trust attaches to the reconstruction, not to recording-level precision.
+  Date Added: 2026-11-07
+  Source: Can We Trust the Gospels? N.T. Wright on Gethsemane, Gnosticism and Conspiracy Theories (Ask NT Wright Anything); PROP-2026-11-01-003
+  Confidence: Medium (method well documented in Wright's corpus; the specific argument for this case is known only from the episode notes)
+  Evidence: Episode notes: "history is more complicated than we often assume – and why that needn't undermine faith."
+
+PRS-84:
+  Problem: Why do narratives of a suppressed "real" Christianity remain popular despite weak historical support?
+  Resource: A structural parallel between ancient Gnostic claims to secret knowledge and modern conspiracy theories.
+  Solution: Both answer distrust of authority with a story of hidden truth suppressed by the powerful. Recognizing the template lets the historian test the evidence apart from the story's appeal.
+  Date Added: 2026-11-07
+  Source: Can We Trust the Gospels? N.T. Wright on Gethsemane, Gnosticism and Conspiracy Theories (Ask NT Wright Anything); PROP-2026-11-01-003
+  Confidence: Speculative as stated here (Wright made a similar argument in his 2006 *Judas and the Gospel of Jesus*; the 2026 version is known only from the notes)
+  Evidence: Episode notes, second segment.
+
+PRS-85:
+  Problem: What theological category names the human tendency to invest ultimate trust in self-made systems (state, money, AI)?
+  Resource: Isaiah's idol polemic (Isa 40-48) read as critique of worshipping what one has made
+  Solution: Idolatry = reflecting the image of what one worships; an AI-idol would be a case of human-made systems shaping their makers
+  Date Added: 2026-11-07
+  Source: The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World; PROP-2026-11-01-001
+  Confidence: Speculative (inferred from episode topics, not Wright's words)
+  Evidence: Episode summary lists idols, money, military, AI
+
+PRS-86:
+  Problem: How should one read God's use of non-covenant agents (Cyrus) without sanctifying contemporary political figures?
+  Resource: Isaiah 44-45 Cyrus as "anointed" instrument
+  Solution: Unknown; Wright's answer not captured
+  Date Added: 2026-11-07
+  Source: The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World; PROP-2026-11-01-001
+  Confidence: Speculative
+  Evidence: Episode summary question only
+
+*Total PRS triplets: 86*

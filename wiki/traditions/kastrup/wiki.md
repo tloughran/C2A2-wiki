@@ -197,3 +197,7 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-23-002` - Avi Loeb in dialogue with Kastrup (With Reality in Mind, 2026-10-20) -> PRS-98. Members-only; candidate-01 (UAP and materialism) not entered.
 
 Named gap: is metabolism necessary for dissociation, or any self-maintaining boundary (PRS-97)?
+
+
+### Update 2026-11-07 — Are you one mind or many? Dr Thomas Pollak (With Reality in Mind session) (PROP-2026-11-04-003)
+Ingested 1 triplet(s): PRS-103. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

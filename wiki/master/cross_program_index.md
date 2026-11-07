@@ -1899,3 +1899,150 @@ Triplets: kastrup PRS-70..79 (this run), levin PRS-117..123 (this run). Sources:
 **Signals reviewed and not minted, with reason.** Hawkins decoupled where/what x Friston precision-weighting (hawkins PRS-79): the card's own parallel, but a TBP-team engineering change, no Hawkins statement. Hawkins compositional reuse x Levin modular morphogenesis (hawkins PRS-82): analogy only. Wolfram ruliobiology x Levin (wolfram PRS-73): the article does not cite Levin; the connection is ours, so it stays with the earlier Levin-related cluster (CROSS-006/007/012). Wolfram irreducibility x Friston (CROSS-049): wolfram PRS-72 and PRS-75 are candidate evidence lines, appended to CROSS-049's evidence only; no new id. Carroll Boltzmann-brain cognitive instability x Friston/Hoffman: resonance only.
 
 - [TENSION/CONVERGENCE] **Three traditions answer one target article** (CROSS-164; levin PRS-148, friston PRS-85; McGilchrist commentary not yet captured). Seth's biological naturalism, BBS 49. Levin: no principled substrate limit. Friston: mortal computation constrains conscious artefacts. Both stress self-maintaining goal-directed matter, so the gap may be narrower than it looks. Bears on C2A2 AI-membership.
+
+
+### Signals from wolfram PROP-2026-10-31-001 (2026-11-07)
+Source: Future of Science and Technology Q&A (May 29, 2026)
+- **Levin (wiki Question 8, PRS-25):** Open question 8 asks where biological robustness comes from if reliability requires confinement to reducible regions. Degeneracy (multiple pathways to one result) is a candidate mechanism: a feature of the rule-ensemble, not of any single pathway. The transcript does not mention Levin or bioelectric setpoints, so the link is the wiki's inference, not Wolfram's.
+- **Friston (CROSS-049 as cited in PRS-75):** The oversight claim is behavioral and expectation-dependent, which resembles precision-weighting of prior expectations in active inference. This is a homology to test, not a finding; Wolfram does not mention Friston.
+- **Hoffman / Kastrup:** No signal. Rulial space and observers are not discussed in this transcript.
+- **C2A2 master / accelerator-detector (CROSS-126 as cited in PRS-75):** The overseer-expectation point is directly measurable in human-AI dialogue: whether people verify depends on their prior. It supports measuring behavior in context rather than relying on structural guarantees. Flag for Tom: this makes a testable prediction that fits the detector design.
+- **Cross-program sweep (`master/cross_program_index.md`):** Matched open items are the CROSS-049 and CROSS-126 references above (via PRS-75's evidence) and Question 8 in the Wolfram wiki. CROSS-096 (McGilchrist, description vs. what exists) is not addressed by this material.
+
+
+### Signals from wolfram PROP-2026-10-31-003 (2026-11-07)
+Source: The Last Theory #083 - Wolfram's 10 ways to have big ideas
+- **C2A2 Pattern Detector / PRS-30 reopen condition:** if someone pulls item #8 verbatim from the audio, it plus #086 may give the Pattern Detector a primary-source operating definition of "paradigm-shift candidate." This is the most actionable signal in today's run.
+- **Friston:** "doubt your expectations / push ahead regardless" maps onto the exploration–exploitation balance in expected-free-energy terms (epistemic vs. pragmatic value). It's adjacent to CROSS-072 (machine curiosity as information gain) and to Active Research Question 15.
+- **McGilchrist:** "visualize your ideas" and "drill to foundations, then explain" can be read through the RH-apprehends / LH-articulates / RH-reintegrates cycle. It's a Speculative bridge, but Wolfram's method arguably reproduces McGilchrist's ideal sequence (cf. CROSS on the Ralston encounter, PRS-53/54).
+- **Levin:** "ideas take flight" fits the ideas-as-agents framing in CROSS-080. Flag only.
+
+**Reviewer action suggested:** approve as a locator together with PROP-2026-10-31-002. One listening session covering both clips would settle the confidence on both.
+
+
+### Signals from wolfram PROP-2026-10-31-002 (2026-11-07)
+Source: The Last Theory #086 - The search for solid ground
+- **C2A2 Pattern Detector (meta):** a candidate operating criterion for what the detector should flag as "paradigm-shift candidate," namely *buildability on verified foundations*. It pairs with the open PRS-30 heuristic set (2026-08-28 log). If verified, it's a direct infrastructure input.
+- **Carroll:** Carroll's Bayesian-credence standard (CROSS-016) and Wolfram's "solid ground" are rival answers to the same question, "when should a speculative framework be believed?" One weighs priors and evidence; the other asks whether each layer can be built on. That would sharpen CROSS-055 / CROSS-074 (computational metaphysics as method-export).
+- **Kastrup:** CROSS-055 (explanation vs. computation) applies here. For Wolfram, "knowing" seems to mean "computed and checked," and Kastrup would dispute that as the standard for metaphysical claims.
+- **MacIntyre / C2A2 premise:** "towers of knowledge on solid ground" is close to MacIntyre's account of a tradition's rational progress, where earlier stages are vindicated by what can be built on them. That is worth a flag for the ISME paper thread, at Speculative level only.
+
+**Reviewer action suggested:** approve as a *locator*, then mint any triplet only after the audio has been listened to (~short clip). Do not let the Speculative labels drift upward unverified.
+
+
+### Signals from rohr PROP-2026-11-01-004 (2026-11-07)
+Source: Love Is Who We Are (CAC Daily Meditation, 'Loving Your Neighbor' week)
+- **Stump Agent**: Candidate 2 is a direct bridge to Stump's Thomism (evil as privation; union as the ultimate end). Stump would probably resist reducing sin to illusion (Candidate 1), since for her the will's real refusal of love matters. That tension is useful for the master agent.
+- **Friston Agent**: "Illusion of separateness" as an over-precise self/other boundary in the generative model. This matches the hunt brief's expected bridge: contemplative practice as loosening high-precision priors about a separate self. **Paradigm-bridge candidate.**
+- **Kastrup / Hoffman Agents**: Separateness as appearance within one underlying mind (Kastrup's dissociation; Hoffman's interface agents) is structurally the same claim in a metaphysical register.
+- **Wright Agent**: Tension to flag. Wright would locate "image and likeness" in vocation (humans as royal priesthood reflecting God into the world), not in an inner divine origin. He also does not frame sin chiefly as separateness. This is a live scriptural check on Rohr's reading.
+- **C2A2 master / paradigm flags**: Candidate for a CROSS entry: "sin-as-separateness / perspective-limitation." It links Rohr, Friston, Kastrup and the Summa 2026 perspective-limitation thesis, with Stump and Wright as named dissenting checks.
+
+
+### Signals from wright PROP-2026-11-01-002 (2026-11-07)
+Source: Manufacturing the Millennium, Assurance of Salvation & Could Sin Return in the New Creation? (Ask NT Wright Anything)
+- **Stump Agent**: Candidate 1 bears directly on Stump/Aquinas on the impeccability of the blessed (beatitude cannot be lost because the will rests in the final good). Wright gives the scriptural-narrative version; Stump supplies the metaphysics of will that explains how freedom survives. Natural pairing.
+- **Friston Agent**: "No second fall" can be framed as an absorbing attractor: a free-energy minimum that no longer has an exit route. Flag as **paradigm-bridge candidate**: eschatological stability as attractor-state, scripturally anchored.
+- **Levin / Hoffman / Kastrup**: Candidate 2 (present acts carried into the final state) asks for some continuity of identity and information across the transition to new creation. That raises questions for both the mind-monist frames (what persists) and Levin's goal-directed collectives (whether a collective's goals survive a substrate change).
+- **C2A2 master / paradigm flags**: Possible CROSS candidate tying the Summa 2026 "loving unity as computational telos" theme to the scriptural claim that the telos, once reached, is irreversible.
+
+
+### Signals from wright PROP-2026-11-01-003 (2026-11-07)
+Source: Can We Trust the Gospels? N.T. Wright on Gethsemane, Gnosticism and Conspiracy Theories (Ask NT Wright Anything)
+- **Stump Agent**: Candidate 1 connects to Stump's "Franciscan knowledge" (knowledge of persons through narrative). Narrative can convey second-personal truth without transcript precision.
+- **McGilchrist Agent**: The conspiracy template (a closed, self-confirming explanatory system) closely matches McGilchrist's account of left-hemisphere capture. Worth flagging as a convergence.
+- **Loughran / MacIntyre**: Candidate 2 bears on how a tradition loses or keeps rational authority in an epistemic crisis, and on the gap between genuine dissent and a manufactured "suppressed tradition."
+- **C2A2 master / paradigm flags**: Not a FLAG candidate. It is a methodological calibration note for every tradition that cites Gospel scenes.
+
+
+### Signals from wright PROP-2026-11-01-001 (2026-11-07)
+Source: The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World
+- **Stump Agent**: Idolatry as disordered love/worship connects to Aquinas on disordered loves; weak link until content is read.
+- **Kastrup / McGilchrist**: AI-as-idol parallels their AI-as-archetypal-urge and AI-vs-soul material; paradigm-bridge candidate once Wright's argument is confirmed.
+- **Rohr Agent**: Idol-critique vs Rohr's power-over/empire series (2026-10-25); possible scriptural/contemplative pairing.
+- **C2A2 master / paradigm flags**: None yet. Hold for full-text/audio check. Also noted: *Fresh Challenge of Romans* (Dallas, 1-4 Nov 2026) is only an event promo and was not proposed.
+
+
+### Signals from friston PROP-2026-11-02-003 (2026-11-07)
+Source: The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will and Whether Machines Can Be Conscious
+- **Levin (explicit):** Friston names "the federated, intersubjective aspect of self-organisation" — systems in a world "which contains other things like them" — as key to intelligence and consciousness, citing ongoing Zoom work with Levin on the origin of life. Not a non-neural-substrate result, but it marks the Levin–Friston collaboration as his stated frontier. Also a clean disagreement with Levin's 2026-10-17 talk: Levin wants a protocol that puts you in another system's first-person state; Friston says of other minds, "we will never know," only infer with more or less confidence.
+- **Social systems / C2A2:** federated, intersubjective self-organisation is the FEP framing closest to C2A2's interacting traditions; and "curiosity = expected information gain" is a candidate formal criterion for what C2A2 agents should do when meeting another tradition.
+- **Physics (Carroll / Arkani-Hamed):** weak. Path of least action and thermodynamic efficiency (the von Neumann memory wall) are invoked, but no new formal FEP–physics link.
+- **Hoffman / Kastrup:** "perception from the inside out," a "Platonic" view of perception, and "the universe is everything... no way of knowing" bear on Hoffman's interface theory and Kastrup's idealism, though Friston also insists a self/non-self distinction must be "metaphysically present."
+- **Wolfram:** natural selection as "Bayesian model selection at a very slow timescale," and scale-invariant nesting of inference/learning/selection timescales, connect to multi-scale computational views.
+- **Hawkins:** the proposed "12-second" test of whether an LLM has a metric sense of time touches Hawkins' emphasis on temporal sequence in cortical models.
+
+
+### Signals from levin PROP-2026-11-02-002 (2026-11-07)
+Source: New Bodies, Unconventional Minds: a perspective on a continuum of cognition (& consciousness)
+- **Kastrup:** "consciousness isn't made" and doubt that unconscious processes exist sit close to analytic idealism, but Levin reaches them from a pattern-space (Platonic) ontology and an interface model, not from idealist metaphysics. Worth a bridge note on where the two differ (Levin: patterns ingress through interfaces; Kastrup: dissociated alters of one mind).
+- **Friston:** the attribution criteria (behaviour, kinship) are the same inference-to-other-minds problem Friston describes in his 2026-10-19 Thought Economics interview ("we will never know... it is all a question of the evidence at hand"). Levin wants a protocol to close that gap; Friston treats it as permanently inferential. A clean point of disagreement.
+- **Hoffman:** Levin's "front end / thin client" phrasing (companion talk) is close to Hoffman's interface theory of perception.
+- **McGilchrist:** a first-person, participatory criterion for a theory of consciousness echoes McGilchrist's case against purely third-person (left-hemisphere) knowing.
+- **C2A2 itself:** a "protocol that puts you in first person in the same state" as another system is a strong statement of the "second first language" goal — maturity inside another tradition's perspective — applied to non-human minds.
+
+
+### Signals from levin PROP-2026-11-02-001 (2026-11-07)
+Source: A Platonic Space background for questions in consciousness
+- Kastrup: the many-minds-in-one-body claim sits close to the PRS-30/31 disagreement over nested cognition versus discrete dissociated alters; this post is a fresh Levin-side statement for that open boundary-individuation question and the pending AI-membership flag.
+- Hoffman: "interface" language (embodiments determine which minds can enter) parallels interface theory, but with a Platonic-realist rather than conscious-agent ontology. Worth a direct comparison.
+- McGilchrist: the Platonic space as a source of patterns "in-forming" physics relates to his priority-of-the-whole claims; a comparison could be flagged.
+- Friston: no formal link in the post. The causation definitions (counterfactual dependence) may meet FEP/Markov-blanket accounts of agency; speculative.
+- Loughran / C2A2 (Aquinas): "mind relates to body as mathematics relates to physics" invites a comparison with form/matter and final causality; consistent with the existing Thomistic backbone noted in the wiki.
+
+
+### Signals from hoffman PROP-2026-11-03-002 (2026-11-07)
+Source: The Trace Podcast, Episode 2: Why Neuroscience Has Explained Zero Conscious Experiences
+- **Stump / MacIntyre-style inquiry (C2A2 core):** "infinite job security" is a claim about the shape of a tradition of inquiry that never closes. That bears directly on the C2A2 framing of traditions as ongoing research programs, and on Stump's Thomist account of knowledge of what exceeds us.
+- **Kastrup:** shared Platonist/idealist lineage and the "is matter itself the headset?" question (ch. 20, 56:07). Kastrup argues the same historical point about the founders of science; flag as likely agreement.
+- **McGilchrist:** the story that modern science removed the observer and mind parallels McGilchrist's account of left-hemisphere dominance in the scientific revolution; flag only.
+- **Carroll / Arkani-Hamed:** "Spacetime is doomed, and physicists know it" (ch. 14, 28:37) cites Arkani-Hamed's own phrase; Carroll would contest the inference from Planck-scale breakdown to consciousness-first.
+
+
+### Signals from hoffman PROP-2026-11-03-001 (2026-11-07)
+Source: The Recursive Trace Logic of Observers and Agents
+- **Friston (strong, explicit):** Hoffman now ties "zero surprise" directly to surprise-minimization as an aspect of intelligence. That is Friston's vocabulary. The two notions differ: Friston's agent minimizes expected surprise over time by acting; Hoffman's trace has zero surprise *by construction* relative to its parent matrix. Worth a bridge note.
+- **Carroll / Arkani-Hamed:** specific claimed mechanisms for time dilation, length contraction and a maximum speed are now on record. These are checkable claims a physicist can evaluate (does any of them give the Lorentz transformation, or only qualitative analogues?).
+- **Levin:** agents built recursively from agents parallels Levin's multiscale competency architecture; the same recursion was the subject of the April 2026 Thoughtforms Life talk.
+- **Hawkins:** the AI-architecture claim invites comparison with Thousand Brains learning modules (also many models voting under one protocol); flag only.
+- **Kastrup:** a hierarchy of conscious agents with no physical base is close to Kastrup's dissociated-alters picture; flag only.
+
+
+### Signals from mcgilchrist PROP-2026-11-04-002 (2026-11-07)
+Source: The British Academy Series: Brain asymmetry: the facts and why they matter (Public Lecture)
+- **Hawkins:** comparative architecture question: do asymmetric cortices in other species run parallel reference-frame systems?
+- **Levin:** asymmetry as a developmental/bioelectric outcome (left-right patterning) is Levin territory; a possible bridge if the lecture touches mechanism.
+- **Friston:** attention-as-precision link depends on lecture content, not established.
+- No tradition-dialogue content indicated.
+
+
+### Signals from kastrup PROP-2026-11-04-003 (2026-11-07)
+Source: Are you one mind or many? Dr Thomas Pollak (With Reality in Mind session)
+- **AI consciousness (strong flag):** "AI mediates ego inflation rather than ego dissolution" is a claim about AI's effect on the self-boundary; compare with McGilchrist's AI-as-left-hemisphere-simulacrum (PROP-2026-11-04-001) and Kastrup's own archetypal-urge material.
+- **Fredrickson/community:** "porous boundaries between minds" touches individual-vs-collective mind.
+- **Levin:** multi-self / nested-subject question (open questions 11, 18).
+- **Friston:** Markov-blanket porosity (open question 16).
+
+
+### Signals from mcgilchrist PROP-2026-11-04-001 (2026-11-07)
+Source: Dr. Iain McGilchrist: The Faustian bargain of AI
+- **Kastrup:** both hold consciousness primitive and doubt machine consciousness; McGilchrist adds a "conduit for disembodied forces" worry that Kastrup's archetypal-urge framing (see captured "AI as archetypal urge") may parallel. Worth a dispatch if confirmed from the video.
+- **Wolfram:** direct test of open question 17 ("reality exceeds computation"): does "AI doesn't truly understand" say more than "computation is a description"?
+- **Friston/Hoffman:** unchanged from existing wiki links.
+- **C2A2 hemisphere-as-tradition model:** no explicit tradition-dialogue content in the summary; no strong flag.
+
+
+### Signals from arkanihamed PROP-2026-11-06-002 (2026-11-07)
+Source: Configuration Spaces of Finite Representation Type Algebras
+- **Wolfram (Ruliad / multiway systems):** physics read off from an abstract combinatorial or algebraic object, with the familiar geometric carrier (here the worldsheet; in Wolfram, space) demoted to a special case. Candidate convergence on "geometry is derived."
+- **Carroll:** he argues that spacetime emerges from the quantum state. This paper pushes the same "derived, not fundamental" status onto the worldsheet, from the opposite (amplitudes-first) direction. Worth flagging as a convergence on what counts as fundamental, not on method.
+- **Hoffman / Kastrup (mathematics vs. physical reality):** representation theory, a field built without physics in mind, turns out to control physical factorization. This is useful evidence for the "is the math the territory?" thread. Interpretation only; the paper makes no such claim.
+- **Related, not proposed (fails the "from Arkani-Hamed" filter):** Koefler, Pavlov, and Sinn, "The m=2 amplituhedron is a positive geometry," arXiv:2610.27903 (2026-10-20). It settles a central positive-geometry conjecture using a Hodge-theoretic criterion that links Brown–Dupont to Arkani-Hamed–Bai–Lam. It is a strong candidate for the master wiki or a Wolfram/positive-geometry note as third-party validation of the program.
+
+
+### Signals from carroll PROP-2026-11-06-001 (2026-11-07)
+Source: 373 | Colin Camerer on the Neuroscience of Economic Thinking
+- **Friston (FEP / active inference):** brain-level models of choice are where free-energy accounts of decision-making compete with standard neuroeconomic value models. Candidate bridge: Carroll episode → Friston on the decision side.
+- **Fredrickson (positive emotion, prosociality):** altruistic choice under economic pressure touches her broaden-and-build account.
+- **C2A2 detector design (weak signal):** behavioral game theory is a ready-made experimental toolkit for "how people behave under richly informed circumstances." It may be worth a methods note, separate from the Carroll wiki.
+- Not a physics episode. No Arkani-Hamed, Wolfram, or Hoffman signal.

@@ -3941,3 +3941,51 @@ OPEN-288:
     Original item: OPEN-288
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-289:
+  Raised: 2026-11-05 by 14a (ASSUMPTION-2044; PRESUMPTION-1217)
+  Question: Which Heartbeat count is correct for the ACPA poster and the vault video: 689 or 441? The poster session left it open; the video session rebuilt the film with 689; the chat scrape marked it 'probably settled at 689' pending your confirmation.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-289
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-290:
+  Raised: 2026-11-05 by 14a (ASSUMPTION-2047; ASSUMPTION-2043)
+  Question: Two scheduled tasks recommend opposite fixes for the auto-declined Desktop Commander shell. Lit pipeline: pre-approve start_process for the local task (or mount scripts/). Scheduler health: don't approve shell; disable the local entry. Disabling is only safe per task if the cloud copy actually does the work (true for the lit pipeline; false for 14a/14b, whose cloud copy lacks session_info). Which fix, per task?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-290
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-291:
+  Raised: 2026-11-06 by 14a (ASSUMPTION-2056)
+  Question: Which tab keeps the word "pulse": Metabolism or AI Heartbeat? The chat scrape reports the clash is blocking a build step.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-291
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-292:
+  Raised: 2026-11-06 by 14a (ASSUMPTION-2049; PRESUMPTION-1219)
+  Question: Where should readers find 14a/14b output? Cloud NO-OPs go to the UTC-dated changelog; local passes are appended to the local-dated file. The evening sync read the UTC file and told Chat 14a/14b has produced nothing since 10-26. Options: (a) local pass also writes a one-line pointer into the UTC-dated file; (b) readers check both files; (c) disable the cloud 14a/14b copy (it cannot read transcripts), the reverse of the general "disable local" advice. Bears on OPEN-290.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-292
+    Item type: OPEN QUESTION
+    Current status: OPEN

@@ -239,3 +239,7 @@ Open: whether the market's attracting set is analogous to a tradition's characte
 
 ### Ingest 2026-10-27
 PRS-85 (BBS e336 commentary on Seth): consciousness tied to the thermodynamics of mortal computation; 'artificial consciousness' may be an oxymoron. Medium confidence, abstract only. Open: the full information-geometric argument is unread. Same-issue contrast with Levin e345 recorded as CROSS-164.
+
+
+### Update 2026-11-07 — The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will and Whether Machines Can Be Conscious (PROP-2026-11-02-003)
+Ingested 3 triplet(s): PRS-86, PRS-87, PRS-88. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

@@ -317,7 +317,34 @@ PRS-30:
   Confidence: Medium
   Evidence: Abstract, verbatim: "The general formula was discovered by Claude Opus 4.6 working under our guidance, beginning with our earlier discovery of a one-term expression valid in the 'simplest' kinematic chamber." Confidence is Medium rather than High only because the division of labor between the human framing and the model's contribution is described in one sentence of the abstract and is not verifiable from the material read here; the body of the paper and the GitHub repository may qualify it.
 
-*Total PRS triplets: 31*
+PRS-31:
+  Problem: String amplitudes are normally derived from integrals over the moduli space of a worldsheet. Is the worldsheet fundamental, or one instance of a more general structure?
+  Resource: Affine "u-variable" varieties attached to any finite-representation-type algebra, generalizing Koba–Nielsen / Brown dihedral coordinates (previously defined only for finite-type hereditary algebras).
+  Solution: Generalized open-string integrals defined on the non-negative parts of these varieties, which factorize and split in ways that "do not come from a worldsheet picture." The worldsheet is then a special case.
+  Date Added: 2026-11-07
+  Source: Configuration Spaces of Finite Representation Type Algebras; PROP-2026-11-06-002
+  Confidence: High (for the mathematical claims); Speculative (for any physical reading)
+  Evidence: Abstract: "These non-negative parts naturally define a generalization of open string integrals in physics, exhibiting factorization and splitting properties that do not come from a worldsheet picture."
+
+PRS-32:
+  Problem: What controls the boundary structure (the singularities, or "where factorization happens") of these positive regions?
+  Resource: Jasso reduction from representation theory, plus functoriality: algebra quotients map to monomial maps between the varieties.
+  Solution: The boundary strata of the non-negative part are governed by Jasso reduction. Representation theory therefore supplies the combinatorics of physical factorization.
+  Date Added: 2026-11-07
+  Source: Configuration Spaces of Finite Representation Type Algebras; PROP-2026-11-06-002
+  Confidence: High
+  Evidence: Abstract: "The non-negative real part of each variety has boundary strata that are controlled by Jasso reduction"; "algebra quotients correspond to monomial maps among the varieties."
+
+PRS-33:
+  Problem: Hidden algebraic identities among the functions these geometries produce.
+  Resource: Rogers dilogarithm identities.
+  Solution: A family of Rogers dilogarithm identities that extends Chapoton's results beyond the Dynkin case.
+  Date Added: 2026-11-07
+  Source: Configuration Spaces of Finite Representation Type Algebras; PROP-2026-11-06-002
+  Confidence: High
+  Evidence: Abstract, final sentence.
+
+*Total PRS triplets: 33*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-10*

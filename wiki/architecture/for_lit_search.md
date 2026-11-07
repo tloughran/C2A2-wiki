@@ -29078,3 +29078,90 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
 
 *2026-11-04 (local pass): 7 items queued, 6 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1213). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-04T05:41:31Z by cloud-lit-2026-11-04; not held, append safe.*
 *2026-11-05: 1 literature-lane item (PRESUMPTION-1213) searched and dispositioned MONITOR-704; in-house items untouched. Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-04T05:41:31Z by cloud-lit-2026-11-04; not held, append safe.*
+
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2043
+  Statement: [stated] Scheduler health c038b091: 'The 26 local entries can be disabled, since all 46 cloud routines checked OK today' and withheld its NOT-CHECKED line because routine_health.md is last-line-wins.
+  Claim to test (in-house): for each of the 27 double-registered tasks, check whether the cloud copy produced the task's outputs (not just fired OK) on 10-29..11-05; known counter-case: cloud 14a/14b OK but NO-OP nightly. Confirm the routine_health.md reader's last-line semantics.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2044
+  Statement: [stated] Chat scrape 1c0a460e: Heartbeat count 'probably settled at 689' because the video session rebuilt the film with 689; the poster session left 689 vs 441 open.
+  Claim to test (in-house): trace both figures to their source counts in the vault and record which definition each uses; route the choice to Tom (OPEN-289).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2045
+  Statement: [stated] Walk handoff 6eff1320: 23 active findings (013-035); 080-111 lack status. Yesterday 24 active; 080-110.
+  Claim to test (in-house): diff findings statuses between the 11-04 and 11-05 briefings; establish the actual last FINDING ID and how many lack a Status field.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2046
+  Statement: [stated] Deferred monitor 89e42f02: PROP-2026-09-29-002 is shared by two approved proposals; the WATCH-005 duplicate claim for 'Faustian bargain of AI' is unconfirmed.
+  Claim to test (in-house): enumerate all PROP IDs used by more than one file across pending/, approved/ and needs_review/.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1216
+  Statement: [inferred] Count comparisons across run reports presume shared operational definitions (double-registered 24/26/27/28; active findings 24->23; unlogged files 300->330).
+  Claim to test: In-house: for each recurring count, list the reports that compute it and their method; recompute once from source and compare.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1217
+  Statement: [inferred] Session order presumed to be decision order (689 'settled' because the later video session used it).
+  Claim to test: In-house: check the video session for any explicit choice of 689 vs a default pick; check the poster file's current value.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-06] [SEARCHED-15b: 2026-11-06] [DISPOSITIONED-15c: 2026-11-06] [PRESUMPTION] PRESUMPTION-1218
+  Statement: [inferred] Health ledger presumed to allow a writer to withhold a true observation to keep the last-line-wins aggregate correct.
+  Claim to test: Literature lane: append-only audit logs vs. derived status views; alarm-fatigue suppression and its effect on monitoring validity (SRE / safety-critical alarm management, e.g. ISA-18.2 alarm rationalization). In-house: count days on which routine_health.md's last line came from a different copy than an earlier same-day line.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-05 (local pass): 7 items queued, 6 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1218). Live lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-05T05:40:44Z by cloud-lit-2026-11-05; not held, append safe.*
+
+*2026-11-06 (cloud pass): PRESUMPTION-1218 searched 15a/15b and dispositioned (DISPOSITION-1120 -> MONITOR-705). 6 IN-HOUSE items untouched.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2049
+  Statement: [stated] Evening sync 26f9f316: 14a/14b "hasn't produced anything since 10-26".
+  Claim to test (in-house): for 10-26..11-06, list per local date the 14a/14b items added (max IDs before/after) and which changelog file holds them; compare with what the evening sync reported each night.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2050
+  Statement: [stated] Morning system health dad45423: today's daily run "may not have fired" (commit_check OK line cites 11-05 09:35Z).
+  Claim to test (in-house): compare commit_check's 10:45Z time with the daily run's actual 11-06 start/commit times; decide whether an OK citing the prior day's run should read OK or PENDING.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2051
+  Statement: [stated] Wiki daily run 6b8c9652 skipped five traditions because they "already have cards pending from the last week".
+  Claim to test (in-house): for the five skipped traditions, run the 60-day search once and count verifiably new items not covered by the pending cards.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2052
+  Statement: [stated] Carroll/Arkani-Hamed f8ff7155 used the "significant work not yet captured" clause for an out-of-window paper; Carroll card written from blurb and bio only.
+  Claim to test (in-house): count proposals since 09-01 that invoked the clause or were written without primary-source text; compare their approval/rejection rates with the rest.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2053
+  Statement: [stated] Local lit copy e13ce4fe read the absence of review/lit_pipeline.lock.d as "another copy was not running"; cloud copy locks via the file review/lit_pipeline.lock.
+  Claim to test (in-house): read scripts/ lock script and the cloud task's lock step; confirm whether they test the same path and primitive.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1219
+  Statement: [inferred] Changelog file named D presumed to hold D's 14a/14b output; cloud writes UTC date, local writes local date.
+  Claim to test: In-house: list every reader of architecture/changelog/ (evening sync, morning status, scheduler health) and which date each opens.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1220
+  Statement: [inferred] Lit-pipeline mutual exclusion presumes both copies use one lock primitive (file lines vs lock.d directory).
+  Claim to test: In-house: same as ASSUMPTION-2053, plus a dry run in which each copy's lock check is run while the other's lock is held.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1221
+  Statement: [inferred] A pending card for a tradition presumed to mean its recent output is captured.
+  Claim to test: In-house: as ASSUMPTION-2051; also count days since each skipped tradition was last actually searched.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [PRESUMPTION] PRESUMPTION-1222
+  Statement: [inferred] Thinker certification presumes the represented thinker's endorsement is the criterion of representational fidelity.
+  Claim to test: Literature lane: member checking / respondent validation in qualitative research (e.g. Lincoln & Guba 1985; Torrance 2012; Birt et al. 2016, "Member checking: a tool to enhance trustworthiness or merely a nod to validation?"); author-endorsement studies in history of ideas and intellectual biography. In-house: none until a thinker is approached.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-06 (local pass): 9 items queued, 8 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1222). Live lock review/lit_pipeline.lock last line read this run (04:45Z 11-07): RELEASED 2026-11-06T05:41:03Z by cloud-lit-2026-11-06; not held, append safe.*

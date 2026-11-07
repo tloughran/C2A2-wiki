@@ -1086,4 +1086,22 @@ PRS-117:
   Confidence: Medium
   Evidence: Week 41 summary and practice. Contemplative counterpart to Wright's exile-and-homecoming (see wright PRS from PROP-2026-10-18-001).
 
-*Total PRS triplets: 117*
+PRS-118:
+  Problem: How can "sin" be stated so that it engages a non-dual or mind-monist metaphysics instead of only a juridical, rule-breaking model?
+  Resource: Rohr's definition of sin as the state of separateness, with religion's task as reconnecting people to their original identity "hidden with Christ in God" (Col 3:3).
+  Solution: Sin is primarily an epistemic-relational distortion: a false self-model of isolation. Salvation is the correction of that model into conscious union. Moral failures are downstream symptoms.
+  Date Added: 2026-11-07
+  Source: Love Is Who We Are (CAC Daily Meditation, 'Loving Your Neighbor' week); PROP-2026-11-01-004
+  Confidence: Medium (clear statement by Rohr; whether it can stand in for the full doctrine is contested)
+  Evidence: Meditation, paragraph on overcoming "the illusion of separateness."
+
+PRS-119:
+  Problem: Is there a contemplative counterpart to the classical claim that evil is a lack of being rather than a positive substance?
+  Resource: Rohr: "When we don't live according to love, we are outside of being."
+  Solution: Loving is acting in accord with one's being; not loving is a falling short of being. This matches Aquinas's *malum est privatio boni* and gives a bridge text between the contemplative and scholastic idioms.
+  Date Added: 2026-11-07
+  Source: Love Is Who We Are (CAC Daily Meditation, 'Loving Your Neighbor' week); PROP-2026-11-01-004
+  Confidence: Speculative (Rohr does not cite Aquinas here; the convergence is the agent's reading)
+  Evidence: Closing paragraph, citing *Essential Teachings*, p. v.
+
+*Total PRS triplets: 119*

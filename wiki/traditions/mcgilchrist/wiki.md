@@ -225,3 +225,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-09-29-002` — Iain McGilchrist: AI versus the human soul (UnHerd Live, edited transcript, in conversation with Freddie Sayers) (talk, https://unherd.com/2026/09/iain-mcgilchrist-ai-versus-the-human-soul/) → PRS-81, PRS-82, PRS-83
 - `PROP-2026-09-30-001` — Conversation of Michael Levin with Iain McGilchrist #2 (talk, https://www.youtube.com/watch?v=MLsB0d1SfVY) → PRS-84
 - `PROP-2026-09-30-002` — Think Spiral: The Divided Brain and Classical Liberalism (paper, https://link.springer.com/article/10.1007/s12115-020-00550-y) → PRS-85
+
+
+### Update 2026-11-07 — The British Academy Series: Brain asymmetry: the facts and why they matter (Public Lecture) (PROP-2026-11-04-002)
+Ingested 1 triplet(s): PRS-87. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — Dr. Iain McGilchrist: The Faustian bargain of AI (PROP-2026-11-04-001)
+Ingested 2 triplet(s): PRS-88, PRS-89. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

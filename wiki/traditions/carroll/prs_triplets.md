@@ -974,4 +974,22 @@ PRS-107:
   Confidence: Speculative (the origin-of-life link is Carroll's question; Winfree answers only "we're learning")
   Evidence: Winfree: the lowest error rates came from "a form of self-assembly proofreading that's based on cooperative interactions", "not like John Hopfield's kinetic proofreading that sort of burns energy."
 
-*Total PRS triplets: 107*
+PRS-108:
+  Problem: The rational-agent model of economics is useful but predictably wrong. How should a higher-level descriptive vocabulary relate to the lower-level account that explains its failures?
+  Resource: Neuroeconomics: modeling economic choice together with the brain processes that produce it (Camerer; *Behavioral Game Theory*).
+  Solution: Keep the rational-agent model as an effective theory with a known domain of validity, and use the neural level to explain its deviations. This matches Carroll's poetic-naturalist account of emergent descriptions.
+  Date Added: 2026-11-07
+  Source: 373 | Colin Camerer on the Neuroscience of Economic Thinking; PROP-2026-11-06-001
+  Confidence: Speculative
+  Evidence: Blurb: "Economics often starts with an assumption that people are rational maximizers of their own self-interest ... Colin Camerer is a pioneer of 'neuroeconomics' — not only understanding how people make economic choices, but relating it to processes in the brain." The effective-theory framing is the agent's inference; the episode was not heard.
+
+PRS-109:
+  Problem: Altruism and randomness in real economic choices do not fit a self-interest model. Is "irrational" a failure of the agent, or a failure of the model?
+  Resource: Behavioral game theory: experiments on strategic interaction that measure how people actually play.
+  Solution: Treat the departures as data that constrain a better model of the agent, not as noise.
+  Date Added: 2026-11-07
+  Source: 373 | Colin Camerer on the Neuroscience of Economic Thinking; PROP-2026-11-06-001
+  Confidence: Speculative
+  Evidence: Blurb: "Economists do understand that sometimes people are irrational, altruistic, or just random. So how can we understand how people actually do behave in economic circumstances?"
+
+*Total PRS triplets: 109*

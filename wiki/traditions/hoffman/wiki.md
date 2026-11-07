@@ -205,3 +205,11 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-23-004` - Trace Logic and Theory of Computation (Trace Institute working paper) -> PRS-53..56. **Undated, no named author, unpublished.** Counted as program output under PRS-19; Hoffman's own authorship is unconfirmed. Formal results (Thms 4.6, 6.4-6.9, 7.5-7.13) are the paper's own and unreviewed.
 
 First rigorous computation-theory treatment of trace order. The two real totals: the file also carries a documented stale mid-file total line of 16; only the closing total was changed.
+
+
+### Update 2026-11-07 — The Trace Podcast, Episode 2: Why Neuroscience Has Explained Zero Conscious Experiences (PROP-2026-11-03-002)
+Ingested 3 triplet(s): PRS-60, PRS-61, PRS-62. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-07 — The Recursive Trace Logic of Observers and Agents (PROP-2026-11-03-001)
+Ingested 3 triplet(s): PRS-63, PRS-64, PRS-65. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

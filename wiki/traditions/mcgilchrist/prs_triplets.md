@@ -807,7 +807,34 @@ PRS-86:
   Confidence: Speculative (inferred from the episode description; the recording has not been reviewed)
   Evidence: Episode description: "how shifts in hemispheric dominance have shaped trust, institutions and the rise and fall of civilisations throughout history, and what this means for how governments, mediators and practitioners build, and lose, legitimacy in fragile and conflict-affected settings today."
 
-*Total PRS triplets: 86*
+PRS-87:
+  Problem: Does comparative evidence (asymmetry across non-human animals) support the claim that hemispheric asymmetry reflects two distinct modes of attention rather than human-specific functions?
+  Resource: Cross-species brain asymmetry as the rule, not the exception (event description)
+  Solution: Grounding the divided-brain thesis in an evolutionary, cross-species account
+  Date Added: 2026-11-07
+  Source: The British Academy Series: Brain asymmetry: the facts and why they matter (Public Lecture); PROP-2026-11-04-002
+  Confidence: Speculative
+  Evidence: One sentence on the event page; the lecture content is unseen.
+
+PRS-88:
+  Problem: Does AI deployment shift culture further toward left-hemisphere dominance, and by what mechanism?
+  Resource: AI as left-hemisphere "simulacrum" substituting calculable representation for embodied relationship; removal of friction as erosion of meaning-building struggle
+  Solution: Conscious rebalancing toward right-hemisphere modes (the sacred, higher values) as the response, not technical governance alone
+  Date Added: 2026-11-07
+  Source: Dr. Iain McGilchrist: The Faustian bargain of AI; PROP-2026-11-04-001
+  Confidence: Speculative
+  Evidence: Third-party summary only; claims not verified against the talk. Likely duplicates existing AI-battle-for-the-soul triplets.
+
+PRS-89:
+  Problem: Why is AI governance failing to keep pace with capability?
+  Resource: Prisoner's-dilemma framing of AI development
+  Solution: None proposed beyond value renewal, per summary
+  Date Added: 2026-11-07
+  Source: Dr. Iain McGilchrist: The Faustian bargain of AI; PROP-2026-11-04-001
+  Confidence: Speculative
+  Evidence: Single line in the secondhand summary; low priority.
+
+*Total PRS triplets: 89*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

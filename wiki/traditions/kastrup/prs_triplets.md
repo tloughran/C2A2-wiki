@@ -931,4 +931,13 @@ PRS-102:
   Confidence: Medium
   Evidence: "it is entirely conceivable that factors that weaken the dissociation could lead to phenomena such as forms of telepathy and clairvoyance."
 
-*Total PRS triplets: 102*
+PRS-103:
+  Problem: Can idealism's dissociation model distinguish spiritual insight from psychosis in a clinically usable way?
+  Resource: Psychiatrist-idealist dialogue; boundary-porosity framing (immunological, psychological, bodily selves)
+  Solution: Not yet stated
+  Date Added: 2026-11-07
+  Source: Are you one mind or many? Dr Thomas Pollak (With Reality in Mind session); PROP-2026-11-04-003
+  Confidence: Speculative
+  Evidence: Topic list on session page only.
+
+*Total PRS triplets: 103*
