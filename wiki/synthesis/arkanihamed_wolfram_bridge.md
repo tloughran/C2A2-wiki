@@ -57,3 +57,17 @@
 **Open question the wiki cannot yet answer:** If the Pure Math Project treats pure-mathematical results as ruliological objects — enumerating axiom systems and entailment structures empirically, as the January 2026 *P vs. NP* essay treated complexity — does that produce anything an amplitudes theorist would recognize as a result about positive geometry, or two vocabularies pointed at the same word? Enumeration and classification are different activities, and positive geometry is a classification programme. The answer decides whether CROSS-024 becomes tractable or becomes clearly intractable, and either outcome is progress on an entry that has been Open with no movement.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-19_wolfram_return-ama-pure-math-project]]
+
+
+## Structure without a worldsheet
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-06_arkanihamed_configuration-spaces-finite-rep-type.md` (0 backlinks).
+
+**Why it sits here:** Amplitudes are recovered from an algebraic object with no worldsheet, which is the ruliad's claim that structure comes from rule-space.
+
+**Synthesis claim.** Where physical factorisation follows from combinatorics alone, 'which structure is fundamental' becomes a mathematical question, not an interpretive one.
+
+**Open question the wiki cannot yet answer:** Is Jasso reduction a rule in the Wolfram-model sense, or only an analogue of one?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-06_arkanihamed_configuration-spaces-finite-rep-type]]

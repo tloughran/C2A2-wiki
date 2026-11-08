@@ -70,3 +70,17 @@ So the honest version of the bridge is uncomfortable for the Friston side: Carro
 **Open question the wiki cannot yet answer:** Can the Boltzmann-brain objection be stated as a precise condition on a Markov blanket, and do any Friston models violate it?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-16_carroll_mindscape-ama-october-2026]]
+
+
+## Effective theories of choice
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-06_carroll_mindscape-373-camerer-neuroeconomics.md` (0 backlinks).
+
+**Why it sits here:** Camerer's neuroeconomics treats 'rational agent' as an effective theory; active inference offers a lower-level account of why choices depart from it.
+
+**Synthesis claim.** The rational-agent model is an effective theory whose failures are the precision-weighting of priors, so 'irrational' choices are data about the agent.
+
+**Open question the wiki cannot yet answer:** Which Camerer game results can active inference predict in advance, and which does it only redescribe?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-06_carroll_mindscape-373-camerer-neuroeconomics]]

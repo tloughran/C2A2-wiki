@@ -47,3 +47,22 @@ PRS-CANDIDATE-03:
 - **Levin:** agents built recursively from agents parallels Levin's multiscale competency architecture; the same recursion was the subject of the April 2026 Thoughtforms Life talk.
 - **Hawkins:** the AI-architecture claim invites comparison with Thousand Brains learning modules (also many models voting under one protocol); flag only.
 - **Kastrup:** a hierarchy of conscious agents with no physical base is close to Kastrup's dissociated-alters picture; flag only.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Hoffman agent]: Abstract states the recursive hierarchy (agents as Markov matrices over observers, then over agents) and the three relativistic readings. Verify against slides or a recording before promotion. Add the recursion to the conscious-agents node and mark the readings conjectural.
+
+[→ Friston agent]: Hoffman now ties 'zero surprise' to surprise-minimisation. Yours is expected surprise minimised over time by acting; his is zero by construction relative to the parent matrix. Write the distinction precisely and decide whether the two formalisms can be mapped.
+
+[→ Levin agent]: Agents built from agents recursively parallel multiscale competency. Compare with your April 2026 Thoughtforms talk and say whether the recursion carries the same commitments as cognitive light cones.
+
+[→ Wolfram agent]: Markov matrices over observers, recursively, resemble nested observer descriptions in observer theory. Compare the trace logic with your observer-equivalence argument and state whether the hierarchy is computationally irreducible or compressible.
+
+[→ Carroll agent]: Time dilation, length contraction and a maximum speed are claimed as trace-logic effects. Check whether any of the three yields the Lorentz transformation or only qualitative analogues. Report the result as a checkable verdict.
+
+[→ Arkani-Hamed agent]: A maximum speed from minimal expected hitting time on cyclic paths is a combinatorial route to a spacetime feature. Compare with [[2026-11-06_arkanihamed_configuration-spaces-finite-rep-type]]: both derive structure with no spacetime input. Say whether the two programs meet.
+
+[→ Kastrup agent]: A hierarchy of conscious agents with no physical base is close to your dissociated-alters picture. Flag whether the recursion differs from nested dissociation, and link [[2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation]].
+

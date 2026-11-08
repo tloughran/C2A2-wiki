@@ -31,3 +31,31 @@ Hoffman's *trace operator* on a Markov chain of conscious experiences and Levin'
 **Intersection page:** [[2026-06-15_levin_platonic-space-ingressing-minds]]
 **Synthesis claim:** "Embodiments as pointers/interfaces" that ingress pre-existing patterns is a near-restatement of interface theory — physical icons pointing beyond themselves to a non-spacetime reality. Xenobots/anthrobots become probes that reveal which adjacent patterns the interface can point to.
 **Open question the wiki cannot yet answer:** In interface theory the icons are fitness-shaped and systematically *misrepresent* the substrate; in Levin's account the embodiment *accurately* ingresses a real pattern. Are these compatible — can an interface both hide the truth (Hoffman) and faithfully point to a Platonic form (Levin)?
+
+
+## Recursive agents
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary.md` (0 backlinks).
+
+**Why it sits here:** Agents composed of agents in the trace hierarchy parallels Levin's multiscale competency.
+
+**Synthesis claim.** Both treat a higher-level agent as a coarse-graining of lower ones, so the unresolved issue is what is preserved across levels.
+
+**Open question the wiki cannot yet answer:** What invariant would a trace and a cognitive light cone share?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary]]
+
+
+## Platonic space and consciousness
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-02_levin_platonic-space-background-consciousness.md` (0 backlinks).
+
+**Why it sits here:** Levin's embodiment-selects-minds claim is interface language with a Platonic-realist base.
+
+**Synthesis claim.** Interface theory and Platonic ingression agree that bodies are filters; they disagree about what is filtered.
+
+**Open question the wiki cannot yet answer:** Is the Platonic space itself a conscious-agent network or a space of patterns?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-02_levin_platonic-space-background-consciousness]]

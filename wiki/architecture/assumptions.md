@@ -38983,3 +38983,141 @@ ASSUMPTION-2057:
     Current status: UNTESTED
 
 *2026-11-06 14a: ASSUMPTION-2049..2057 (9). Queued [IN-HOUSE]: 2049-2053. Not queued: 2054, 2055, 2057 (recurrences), 2056 (design choice; OPEN-291). No interactive session; all items from scheduled-run reports.*
+
+ASSUMPTION-2058:
+  Date identified: 2026-11-07
+  Statement: [stated] Evening sync e9f9f262 (second firing) told Tom the self-awareness agent has been "silent since 10-26", and explained the first firing's failure to see session histories as: "which tools a run gets seems to vary from one firing to the next".
+  Context: Evening sync e9f9f262
+  Type: architectural
+  Related decisions: ASSUMPTION-2049; PRESUMPTION-1219; PRESUMPTION-1223; OPEN-292
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2058
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2059:
+  Date identified: 2026-11-07
+  Statement: [stated] Wiki daily run 425ccb0b (second firing, verifying the 04:36 main run): the 11-06 decision email (19 lines, 17 unique cards, all APPROVE) was applied; 17 cards ingested, 38 new triplets (1102 -> 1140), FINDING-112; pending 19 -> 3. Two 11-04 cards share proposal IDs with other cards; "the 11-06 email's decision lines for those IDs went to the other McGilchrist and Kastrup cards that carried the same numbers"; the two remaining cards (kastrup death-imagination-reality; mcgilchrist british-academy-brain-asymmetry-glasgow) need decisions by filename.
+  Context: Wiki daily run 425ccb0b
+  Type: architectural
+  Related decisions: PRESUMPTION-086 (PREMISE-013, id collisions roll forward without downstream incidents: today is such an incident); PRESUMPTION-1226; OPEN-294
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2059
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2060:
+  Date identified: 2026-11-07
+  Statement: [stated] Deferred action monitor 926b38a6: "no new review decisions have come in since 10-31". Same day, the daily run applied the 11-06 decision email (ASSUMPTION-2059). The two agents appear to mean different decision stores (needs_review/ vs pending/), but neither says which.
+  Context: Deferred action monitor 926b38a6; wiki daily run 425ccb0b
+  Type: architectural
+  Related decisions: PRESUMPTION-1216 (count comparisons share definitions)
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2060
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2061:
+  Date identified: 2026-11-07
+  Statement: [stated] Chat scrape aff88ad9 (addendum on Tom's "Greeting to Claude" chat): "MacIntyre on Kuhn: fruitfulness after the fact counts as new evidence, so judgments are provisional but well grounded, the way science is." This is a stated epistemic rule C2A2 relies on when it scores traditions by later fruitfulness.
+  Context: Chat scrape aff88ad9 (summary of a claude.ai chat; one middle stretch did not load, including a point Claude pushed back on)
+  Type: epistemic
+  Related decisions: kuhnian_evidence_framework.md
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2061
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2062:
+  Date identified: 2026-11-07
+  Statement: [stated] Chat scrape aff88ad9: (a) C2A2 is "a proposal for how traditions can engage each other rationally, about what's true and what's good at once"; (b) dialectical engagement as a "queen of the sciences", a master science (Aristotle's politics through Aquinas's theology); (c) "a knower beyond our horizon", tied to Levin's cognitive light cone, the Markov blanket idea, and "the community as a person"; (d) ACPA poster answer to "where is wisdom found?": "a C2A2 accelerator-detector running on a revealing tradition".
+  Context: Chat scrape aff88ad9 (summary; middle stretch with Claude's pushback not loaded)
+  Type: philosophical / architectural
+  Related decisions: PRESUMPTION-1224 (from c); PRESUMPTION-1225 (from d); PRESUMPTION-371; PRESUMPTION-376; OPEN-293
+  Testability: conceptual (not queued directly; premises surfaced as PRESUMPTION-1224, -1225)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2062
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2063:
+  Date identified: 2026-11-07
+  Statement: [stated] Wolfram agent 325982d8 wrote PROP-2026-11-07-001 (Rule 30 Prizes reopened to AI-produced solutions; every submission needs a named, verified human; for mostly-machine proofs the committee may ask for a human-readable account, a formal check, or both). The fetch tool refused the transcript PDF and the prize's "Instructions for Agents" page, so the card rests on the prize rules page, the 2019 post's update link and an X post. The agent flagged a C2A2 meta-signal: entry rules for AI contributors.
+  Context: Wolfram agent 325982d8
+  Type: architectural
+  Related decisions: ASSUMPTION-2052 (cards from secondary text only); PRESUMPTION-1226
+  Testability: recurrence of ASSUMPTION-2052 pattern (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2063
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2064:
+  Date identified: 2026-11-07
+  Statement: [stated] Both local lit-pipeline firings skipped (7a54b3ed: lock not acquired, scripts/ unmounted, shell approval auto-declined; second firing: lock unavailable). 7a54b3ed: "If the cloud copy of this task ran today, nothing here affected it." Checked this run (04:4xZ 11-08): the last line of review/lit_pipeline.lock is still RELEASED 2026-11-06T05:41:03Z, so there is no record of a cloud lit run on 11-07. On this evidence no copy of the pipeline ran today; the 1 literature item (PRESUMPTION-1222) waits.
+  Context: Lit pipeline 7a54b3ed; review/2026-11-07_lit-pipeline_*.md; review/lit_pipeline.lock
+  Type: architectural
+  Related decisions: PRESUMPTION-1196; PRESUMPTION-1208; ASSUMPTION-2053
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2064
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2065:
+  Date identified: 2026-11-07
+  Statement: [stated] Recurrences: morning status 0818cb34 says 28 scheduled tasks "all fired on time" and 26 are set up twice, against scheduler health 25330748 at 43 OK / 3 WARN / 29 FAIL with 27 DOUBLE-REGISTERED; both again advise disabling local copies, and scheduler health's list includes c2a2-self-awareness-daily and c2a2-evening-cowork-to-chat (the two tasks today's evidence shows need a local firing to read sessions; PRESUMPTION-1219); voice-shell suite RED 6/403 (11-06: 7); openstory.ui not loaded; 6 stranded git tmp_obj files; scheduler health appended NOT-CHECKED again (second day); cloud-routine check passes its 26h limit ~17:21Z 11-07; Summa index missing Day-035 and Day-001 entries; 7 refs missing because sync_vault.sh copies only transcripts and synthesis; 347 new broken wikilinks; communities 156 vs 155; cell_dates.json held "about 39 days" (11-06 report: "at least five days"; 11-05: ~39); system health says Nov 6 "has no entry", though a morning system health session ran 11-06 (dad45423); disk 71% (323G); watch list ~890 KB; WATCH-003 at 27 checks; WATCH-006: sewing agent skips needs_review/; duplicate firings: evening sync, chat scrape, wiki daily run, lit pipeline; cloud 14a/14b NO-OP twice (changelog/2026-11-07 and 2026-11-08, UTC dates); Wolfram task prompt path lacks 'Projects/'; this task's prompt still says '.../Wiki'.
+  Context: All sessions above
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-288; OPEN-292
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2065
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-07 14a: ASSUMPTION-2058..2065 (8). Queued: [IN-HOUSE] 2058, 2059, 2060, 2064; literature 2061. Not queued: 2062 (conceptual; routed to PRESUMPTION-1224/-1225, OPEN-293), 2063, 2065 (recurrences). No interactive Cowork session; 2061-2062 come from the chat-scrape summary of a claude.ai chat.*

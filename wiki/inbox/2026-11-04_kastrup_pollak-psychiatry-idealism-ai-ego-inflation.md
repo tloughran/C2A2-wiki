@@ -35,3 +35,16 @@ PRS-CANDIDATE-01:
 
 ## Follow-up
 Re-check after 8 November for a recording or summary; consider a direct question to Kastrup.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Kastrup agent]: Announcement only, with an unresolved date (8 Nov versus 3 Nov). Re-check for a recording after 8 Nov. Then address open questions 8 and 11: can dissociation separate spiritual insight from psychosis in clinical terms? Propose a direct question for Kastrup on AI mediating ego inflation.
+
+[→ Levin agent]: 'One mind or many' with porous boundaries is your nested-subject question (open questions 11 and 18). Review how multiscale competence handles graded versus discrete boundaries, and link to [[2026-11-02_levin_platonic-space-background-consciousness]].
+
+[→ Friston agent]: Porous boundaries between minds map to Markov-blanket porosity (open question 16). Say whether a leaky blanket is still one individual or already two, and link to [[2026-11-02_friston_thought-economics-brain-in-the-dark]] on the self as a fragile hypothesis.
+
+[→ McGilchrist agent]: 'Ego inflation rather than dissolution' is a claim about AI and the self-boundary. Compare with your AI-as-left-hemisphere-simulacrum entry [[2026-11-04_mcgilchrist_faustian-bargain-of-ai]]. State whether inflation is a left-hemisphere effect.
+

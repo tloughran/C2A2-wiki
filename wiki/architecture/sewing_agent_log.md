@@ -1842,3 +1842,71 @@ A full run already completed today (10 pages, 38 calls, 16 bridge sections; see 
 **Worth Tom's attention:** this is the second Sunday in a row (10-25, 11-01) with three sewing firings. `c2a2-sewing-agent-weekly` looks registered more than once (or a bootstrap-audit task overlaps it). One cleanup: list the scheduled tasks and routines named "sewing" and disable (not delete) the extras.
 
 *Logged by Sewing Agent on 2026-11-01.*
+
+
+---
+
+## Bootstrap audit run 21: 2026-11-08 (scheduled, census only)
+
+Census: 5,926 pages; 4,936 orphan / 816 sparse / 174 connected (Δ +68 / +14 / +28). CSV row appended. Phases 3–4 not executed (policy unchanged since 09-20). Report: `architecture/sewing_agent_bootstrap_2026-11-08.md`. Nothing else modified; nothing deleted or committed. Duplicate bootstrap-audit schedule still active (recommend disabling).
+
+*Logged by Sewing Agent on 2026-11-08.*
+
+
+---
+
+## Run: 2026-11-08 (Sunday, scheduled, cloud session ~09:35 UTC)
+
+**Resolver:** same as recent runs (stem, case-insensitive, self-links excluded, node_modules skipped).
+
+### Connectivity snapshot
+
+Pre-run (file count): orphan 4,938 / sparse 816 / connected 174 / total 5,928. Post-run: 4,921 / 820 / 187. **No new CSV row written:** `connectivity_log.csv` already holds a `2026-11-08` row (4,936 / 816 / 174 / 5,926) from the bootstrap audit earlier today.
+
+### Pages processed (backlinks before to after)
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `inbox/proposals/pending/2026-11-08_wright_fresh-challenge-of-romans-dallas-qa-israel-true-humanity` | 0 | 1 | Wright, Loughran, Stump |
+| `inbox/2026-11-06_carroll_mindscape-373-camerer-neuroeconomics` | 0 | 1 | Carroll, Friston, Fredrickson, Loughran |
+| `inbox/2026-11-06_arkanihamed_configuration-spaces-finite-rep-type` | 0 | 2 | Arkani-Hamed, Wolfram, Carroll |
+| `inbox/2026-11-04_mcgilchrist_faustian-bargain-of-ai` | 0 | 3 | McGilchrist, Kastrup, Wolfram |
+| `inbox/2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation` | 0 | 3 | Kastrup, Levin, Friston, McGilchrist |
+| `inbox/2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary` | 0 | 4 | Hoffman, Friston, Levin, Wolfram, Carroll, Arkani-Hamed, Kastrup |
+| `inbox/2026-11-02_levin_platonic-space-background-consciousness` | 0 | 4 | Levin, Kastrup, Hoffman, Loughran, McGilchrist |
+| `inbox/2026-11-02_friston_thought-economics-brain-in-the-dark` | 0 | 2 | Friston, Levin, Loughran |
+| `inbox/proposals/pending/2026-11-07_wolfram_rule30-prize-challenge-for-ais` | 0 | 2 | Wolfram, Friston, McGilchrist |
+| `inbox/proposals/pending/2026-11-04_kastrup_death-imagination-reality` | 0 | 3 | Kastrup, McGilchrist, Stump, Wright, Rohr, Hoffman, Fredrickson |
+
+Counts are by stem, so each `inbox/` card and its `proposals/approved/` twin rise together. Also gained backlinks from the new calls: Stump 10-29 (2 to 4), Wright no-serpent (2 to 4), Carroll 372 (1 to 2), Wolfram 083 (5 to 6).
+
+### Agentic calls injected: 42
+
+Friston 5, McGilchrist 5, Kastrup 5, Loughran 4, Wolfram 4, Levin 4, Carroll 3, Hoffman 3, Wright 2, Stump 2, Fredrickson 2, Arkani-Hamed 2, Rohr 1. None duplicated; no page had a prior sewing stamp.
+
+### Bridge notes written (15 sections appended to 12 existing files; none created)
+
+`loughran_wright`, `carroll_friston`, `arkanihamed_wolfram`, `kastrup_mcgilchrist` (2), `kastrup_levin` (2), `friston_hoffman`, `hoffman_wolfram`, `hoffman_levin` (2), `levin_loughran`, `friston_levin`, `friston_wolfram`, `kastrup_stump`. Each carries a `**Wikilinks (sewing, 2026-11-08):**` line.
+
+### Worth Tom's attention
+
+1. **Evidence caveats ride along.** The Wright Dallas card (secondhand news report, page 2 unread), the McGilchrist AI card (third-party summary only), the Kastrup/Pollak card (announcement only; 3 vs 8 Nov date unresolved), the Carroll 373 card (blurb only), the Hoffman card (abstract only), the Levin card (fetch summary) and Rule 30 (agent-instructions page unread) are flagged in each call for verification before promotion.
+2. **Cross-card threads worth a look:** McGilchrist "Faustian bargain", Kastrup/Pollak "ego inflation" and Kastrup death/imagination all bear on AI and the self-boundary; Hoffman's trace logic links to Friston, Levin and Wolfram simultaneously.
+3. **"Wright" ambiguity** persists; scored against vault `wright` (N.T. Wright).
+4. **Duplicate census job persists:** bootstrap audit wrote today's CSV row first; no schedule changed. Still recommend disabling `c2a2-sewing-agent--c2a2-wiki-bootstrap-audit`.
+5. **Backlog:** ~700 inbox/traditions orphans remain unstamped; `proposals/approved/` twins were not separately processed (they gain the same stem backlinks).
+6. Rule 6 token budget exceeded again.
+
+### Verification (fail-loud)
+
+Before writing: each page asserted to have no prior sewing stamp or Agentic Calls heading; every bridge file asserted present. After writing: every wikilink in processed pages resolved to an existing stem; backlink map rebuilt (table above). Content only appended; nothing deleted; nothing committed.
+
+*Logged by Sewing Agent on 2026-11-08.*
+
+---
+
+## Duplicate firing: 2026-11-08 ~09:43 UTC (scheduled, no-op)
+
+The full weekly run for 2026-11-08 finished about 7 minutes earlier (entry above; log mtime 09:36 UTC; 10 pages carry today's stamp). This firing did no census, wrote no CSV row, stamped no pages, and wrote no bridge notes, so the weekly cadence is not doubled. Third sewing-related fire today (bootstrap audit, full run, this one): the schedule is double- or triple-registered. Recommend checking the scheduled-task registry for duplicate `c2a2-sewing-agent-weekly` entries alongside the bootstrap-audit duplicate.
+
+*Logged by Sewing Agent on 2026-11-08.*

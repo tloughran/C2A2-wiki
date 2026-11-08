@@ -3989,3 +3989,28 @@ OPEN-292:
     Original item: OPEN-292
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-293:
+  Raised: 2026-11-07 by 14a (ASSUMPTION-2062; PRESUMPTION-1225)
+  Question: What does "running on a revealing tradition" commit C2A2 to? Which parts does the host tradition set (scoring criteria, agent prompts, approval), and which must stay tradition-neutral? Should the ACPA poster (due before Nov 12) state the host role?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-293
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-294:
+  Raised: 2026-11-07 by 14a (ASSUMPTION-2059; PRESUMPTION-086)
+  Question: Should decision lines be keyed by filename (or a content hash) rather than proposal ID? Today two ID collisions sent decision lines to cards other than the two still pending. Also: do the cards that received those lines need re-confirming?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-294
+    Item type: OPEN QUESTION
+    Current status: OPEN
+

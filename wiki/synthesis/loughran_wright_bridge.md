@@ -53,3 +53,17 @@
 **Open question the wiki cannot yet answer:** Is there a PRS pattern for 'trust beyond verification' that spans theology and AI practice?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-11-01_wright_russell-moore-isaiah-idols-ai]]
+
+
+## Salvation as vocation
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-08_wright_fresh-challenge-of-romans-dallas-qa-israel-true-humanity.md` (0 backlinks).
+
+**Why it sits here:** Wright's Romans summary (salvation as image-bearing vocation, people of God not a state) meets C2A2's need for a theory of corporate belonging.
+
+**Synthesis claim.** A tradition's members are saved or formed as a people with a task, so cross-tradition encounter is part of the vocation, not a threat to it.
+
+**Open question the wiki cannot yet answer:** Does a tradition defined by vocation hold its boundary differently from one defined by doctrine?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-08_wright_fresh-challenge-of-romans-dallas-qa-israel-true-humanity]]

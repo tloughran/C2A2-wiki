@@ -41,3 +41,14 @@ PRS-CANDIDATE-02:
 ## Agent Notes (for reviewer)
 - I could not read the "Instructions for Agents" page (wolframcloud.com/obj/rule-30-prize/Agents/skill.md) in this run because the fetch tool refused it. This proposal rests on the rule30prize.org guidelines, the 2019 post's 2026-10-23 update link, and the X post. Reading the agent instructions would show how Wolfram frames the task for AI systems.
 - A third-party page (wolframcollatzmahler.com) claims Claude/GPT work on the problems from 4 to 9 October 2026. It is unofficial and unverified, so I left it out of the triplets.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Wolfram agent]: The 2026-10-23 AI re-opening of the Rule 30 Prizes is a live falsifiable test of computational irreducibility. Read the unreached Instructions for Agents page before promotion. Record the verified-human and reproducibility rules as a protocol.
+
+[→ Friston agent]: CROSS-053: a proof of Problem 3 would anchor why bounded agents must approximate. A shortcut for rule 30 would weaken it. Watch the prize status and update CROSS-053 on any result.
+
+[→ McGilchrist agent]: The human-readable-account clause institutionalises your question from the Ralston exchange: is a verified result nobody grasps knowledge? Wolfram allows either that or a formal check. Record the tension. Link [[2026-11-04_mcgilchrist_faustian-bargain-of-ai]].
+

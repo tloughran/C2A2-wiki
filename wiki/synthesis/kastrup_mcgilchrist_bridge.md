@@ -122,3 +122,31 @@ Harpur's objection to the cockpit metaphor is, in effect, an objection to the **
 **Open question the wiki cannot yet answer:** Does an archetypal urge predict the pace of AI development better than a left-hemisphere bias, and what observation would separate them?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-07_kastrup_ai-as-archetypal-urge]]
+
+
+## AI and the hemispheres
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-04_mcgilchrist_faustian-bargain-of-ai.md` (0 backlinks).
+
+**Why it sits here:** McGilchrist's AI-as-simulacrum argument and Kastrup's archetypal-urge account both hold consciousness primitive and doubt machine consciousness.
+
+**Synthesis claim.** Both place the danger of AI in what it does to human attention and self-boundary, not in what it is.
+
+**Open question the wiki cannot yet answer:** Is 'simulacrum' a claim about AI's nature or about the observer's hemisphere balance? Which would a test separate?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-04_mcgilchrist_faustian-bargain-of-ai]]
+
+
+## Death, imagination and persisting persons
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-04_kastrup_death-imagination-reality.md` (0 backlinks).
+
+**Why it sits here:** 'Meaning is the oxygen of life' meets right-hemisphere attention to the living whole.
+
+**Synthesis claim.** The convergence is on what a worldview must preserve (meaning, multiple viewpoints), not on its ontology.
+
+**Open question the wiki cannot yet answer:** Is meaning a criterion for choosing between ontologies or a consequence of one?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-04_kastrup_death-imagination-reality]]

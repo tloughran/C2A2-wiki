@@ -56,3 +56,17 @@ There is a second claim worth isolating because it is the stronger one and is ea
 **Open question the wiki cannot yet answer:** Is a first-return trace the same object as the dynamics of a Markov blanket?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-23_hoffman_trace-logic-theory-of-computation]]
+
+
+## Recursive agents
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary.md` (0 backlinks).
+
+**Why it sits here:** Hoffman's recursive trace logic reuses the vocabulary of surprise, with zero surprise by construction.
+
+**Synthesis claim.** Hoffman's agent is surprise-free relative to its parent, Friston's relative to its world, so the two are the same formalism at different levels of the hierarchy.
+
+**Open question the wiki cannot yet answer:** Can a Markov blanket be derived as a trace at the level above?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary]]

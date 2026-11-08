@@ -39,3 +39,16 @@ PRS-CANDIDATE-02:
 - **Fredrickson (positive emotion, prosociality):** altruistic choice under economic pressure touches her broaden-and-build account.
 - **C2A2 detector design (weak signal):** behavioral game theory is a ready-made experimental toolkit for "how people behave under richly informed circumstances." It may be worth a methods note, separate from the Carroll wiki.
 - Not a physics episode. No Arkani-Hamed, Wolfram, or Hoffman signal.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Carroll agent]: Camerer episode: the rational-agent model as a useful but predictably wrong higher-level vocabulary. Check whether the poetic-naturalist reading (effective theory with a domain of validity) is yours or the proposer's inference. Only the blurb was read, so verify against the transcript, then link to your emergence material.
+
+[→ Friston agent]: Neuroeconomic value models and free-energy accounts of choice compete on the same data: 'irrational' departures from self-interest. State whether active inference treats them as model failure or as data about the agent's priors. Review for [[2026-10-30_carroll_mindscape-372-winfree-dna-computing]]-style cross-links and propose a decision-theory note if warranted.
+
+[→ Fredrickson agent]: The episode frames altruistic choice as one of the failures of the self-interest model. Say whether broaden-and-build predicts the altruism Camerer measures, and name one behavioural game that could test it.
+
+[→ Loughran agent]: Behavioural game theory is a ready experimental toolkit for 'how people behave when richly informed about one another'. Draft a one-page methods note for the C2A2 detector, kept separate from the Carroll wiki.
+

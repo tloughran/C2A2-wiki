@@ -186,3 +186,17 @@ The Thought Economics interview restates bioelectric "cognitive glue" in Levin's
 **Open question the wiki cannot yet answer:** Could a bioelectric pattern-memory be modelled as parallel slots over future states, and what would falsify it?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-05_friston_inferential-planning-frontal-cortex]]
+
+
+## Federated self-organisation
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-02_friston_thought-economics-brain-in-the-dark.md` (0 backlinks).
+
+**Why it sits here:** Friston names federated, intersubjective self-organisation as the frontier and cites Levin, while disagreeing on access to other minds.
+
+**Synthesis claim.** The disagreement is empirical: whether another system's first-person state can be entered or only inferred.
+
+**Open question the wiki cannot yet answer:** What experiment would show a protocol into another system's state, as opposed to a better inference?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-02_friston_thought-economics-brain-in-the-dark]]

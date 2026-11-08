@@ -29159,9 +29159,100 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   Claim to test: In-house: as ASSUMPTION-2051; also count days since each skipped tradition was last actually searched.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
-[QUEUED] [PRESUMPTION] PRESUMPTION-1222
+[QUEUED] [SEARCHED-15a: 2026-11-08] [SEARCHED-15b: 2026-11-08] [DISPOSITIONED-15c: 2026-11-08] 
   Statement: [inferred] Thinker certification presumes the represented thinker's endorsement is the criterion of representational fidelity.
   Claim to test: Literature lane: member checking / respondent validation in qualitative research (e.g. Lincoln & Guba 1985; Torrance 2012; Birt et al. 2016, "Member checking: a tool to enhance trustworthiness or merely a nod to validation?"); author-endorsement studies in history of ideas and intellectual biography. In-house: none until a thinker is approached.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
 *2026-11-06 (local pass): 9 items queued, 8 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1222). Live lock review/lit_pipeline.lock last line read this run (04:45Z 11-07): RELEASED 2026-11-06T05:41:03Z by cloud-lit-2026-11-06; not held, append safe.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2058
+  Statement: [stated] Evening sync: 14a/14b "silent since 10-26"; tool availability "varies from one firing to the next".
+  Claim to test: In-house: for each 14a/14b and evening-sync firing since 10-26, record host (cloud/local) and whether session_info was present.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2059
+  Statement: [stated] 11-06 decision email: 17 cards all APPROVE; duplicate-ID lines applied to the other cards bearing those IDs.
+  Claim to test: In-house: list the four cards sharing PROP-2026-11-04-001/-002 and which one each decision line was applied to; compare with the email text.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2060
+  Statement: [stated] Deferred monitor: no new review decisions since 10-31, on the day the 11-06 email was applied.
+  Claim to test: In-house: identify the file or folder each agent reads as 'decisions'.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-08] [SEARCHED-15b: 2026-11-08] [DISPOSITIONED-15c: 2026-11-08] 
+  Statement: [stated] After-the-fact fruitfulness counts as new evidence (MacIntyre on Kuhn).
+  Claim to test: Literature lane: prediction vs accommodation (Hitchcock & Sober 2004; Worrall on use-novelty; Lakatos on progressive research programmes); MacIntyre 1977 'Epistemological crises, dramatic narrative and the philosophy of science'.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2064
+  Statement: [stated] No cloud lit run recorded 11-07 (lock last line RELEASED 11-06T05:41:03Z); both local firings skipped.
+  Claim to test: In-house: read scheduler/routine_health.md (or list_triggers) for the cloud lit routine's 11-07 run.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1223
+  Statement: [inferred] Tool availability presumed random per firing; evidence fits host (cloud vs local).
+  Claim to test: In-house: same as ASSUMPTION-2058; a match between host and session_info presence on every firing would settle it.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-08] [SEARCHED-15b: 2026-11-08] [DISPOSITIONED-15c: 2026-11-08] 
+  Statement: [inferred] Markov-blanket partition of a group presumed to license a group knower/person.
+  Claim to test: Literature lane: Bruineberg et al. 2022 'The Emperor's New Markov Blankets' (BBS) and replies; Raja et al. 2021 'The Markov blanket trick'; List & Pettit 2011 Group Agency.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-08] [SEARCHED-15b: 2026-11-08] [DISPOSITIONED-15c: 2026-11-08] 
+  Statement: [inferred] A host ('revealing') tradition presumed able to run the detector without biasing cross-tradition results.
+  Claim to test: Literature lane: MacIntyre 1988 Whose Justice? Which Rationality? (rationality of traditions); critiques of tradition-constituted rationality and relativism. In-house: check design docs for the host's role.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1226
+  Statement: [inferred] APPROVE lines presumed to be per-card reviews; 17/17 after an 8-day backlog.
+  Claim to test: In-house: approval rate and cards per email, batched vs single-card emails since 09-01.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-07 (local pass): 9 items queued, 6 [IN-HOUSE], 3 literature-lane (ASSUMPTION-2061, PRESUMPTION-1224, -1225). Lock review/lit_pipeline.lock last line read this run (~04:45Z 11-08): RELEASED 2026-11-06T05:41:03Z; not held, append safe.*
+
+*2026-11-08 (cloud pass): ASSUMPTION-2061, PRESUMPTION-1222, -1224, -1225 searched 15a/15b and dispositioned (DISPOSITION-1121..1124 -> MONITOR-706..709). IN-HOUSE items (130 unsearched) and the older backlog untouched.*
+
+
+## 2026-11-08 — 15d Periodic Monitor: weekly re-triggers (weekly cycle only; day 8, monthly not due)
+
+*15d re-trigger only; no evidence evaluated. Each entry confirmed overdue from its own first-check date; none carries a later 15c status note.*
+
+[PRESUMPTION] PRESUMPTION-1185: (see MONITOR-697 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-08, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-08; Next 15d check: 2026-11-15
+  Owed (15c): a verified primary source on fencing tokens (literature limb). In-house limb: a run whose register writes lack a matching LOCKED/RELEASED line, or a PASS line naming a run-id that did not do the work; and whether cloud firings can see review/lit_pipeline.lock. 15d observation: the lock audit trail now carries LOCKED/RELEASED lines through 2026-11-08T05:42Z (cloud-lit-2026-11-08), so the lock is visible to cloud runs and was written this week.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (10-26).
+
+[ASSUMPTION] ASSUMPTION-1952: (see MONITOR-698 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-08, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-08; Next 15d check: 2026-11-15
+  Owed (15c): a direct MacIntyre search (not reached by 15b); evidence of a standing cross-paradigm sign-off gate. In-house limb: first candidates certified by named members of both traditions (REVISE-531 answer pending).
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (10-28).
+
+[PRESUMPTION] PRESUMPTION-1192: (see MONITOR-699 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-08, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-08; Next 15d check: 2026-11-15
+  Owed (15c): the MacIntyre 'no neutral ground' search 15b did not reach (literature limb). In-house limb: ideological-Turing-test style insider review by self-identified physicalists; REVISE if none arranged within 4 weekly cycles.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (10-28).
+
+[PRESUMPTION] PRESUMPTION-1202: (see MONITOR-700 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-08, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-08; Next 15d check: 2026-11-15
+  Owed (15c): a read-through of Lakatos/MacIntyre plus citation-network evidence on follower contributions. In-house limb: count of proposals rejected under author-only filters that members' work would have settled.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (10-31).
+
+[ASSUMPTION] ASSUMPTION-1739: (see MONITOR-656 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-08, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Low
+  Cycle: 0 -> 1; Last checked: 2026-11-08; Next 15d check: 2026-12-06 (monthly)
+  Owed (15c, unchanged since 2026-10-03): in-house measurement of arXiv listing date vs first web-search hit for a sample of tradition-author postings. Not literature.
+  Evidence trajectory: Stable; no new sources; measurement not produced. Due since 11-03.
+
+Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEARCHED/DISPOSITIONED tag); the 2026-10-25 cohort (MONITOR-689, -691, -692, -693 literature; -690, -694, -685 empirical); the 2026-10-18 and 2026-10-11 cohorts. Not duplicated; cycle counts held (precedent 09-20..11-01).

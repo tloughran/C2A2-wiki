@@ -87,3 +87,17 @@
 **Open question the wiki cannot yet answer:** What counts as solid ground when the observer is part of the computation?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_last-theory-086-search-for-solid-ground]]
+
+
+## Recursive agents
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary.md` (0 backlinks).
+
+**Why it sits here:** Markov matrices on observers, recursively, resemble nested observer descriptions in observer theory.
+
+**Synthesis claim.** If the trace hierarchy is computationally irreducible, observers cannot shortcut their own parent level, which is Wolfram's bounded-observer constraint.
+
+**Open question the wiki cannot yet answer:** Does the recursion terminate in a ruliad-like limit or stay open?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary]]

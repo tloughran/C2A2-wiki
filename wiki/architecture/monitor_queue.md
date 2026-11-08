@@ -25738,3 +25738,87 @@ MONITOR-705:
   Monitoring cadence: Weekly (default); first check due 2026-11-13
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1218 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1218_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1218_against.md
+
+MONITOR-706:
+  Date: 2026-11-08
+  Source item: ASSUMPTION-2061 (DISPOSITION-1121)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a: The philosophy-of-science neighbourhood treats accommodation as evidentially weaker than prediction only under particular conditions (overfitting, double-counting). (Moderate, preliminary). 15b: Standard novelty accounts deny that evidence a theory was fitted to is confirming, and overfitting makes after-the-fact fruitfulness unreliable unless the post-hoc content is independently tested. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'after-the-fact fruitfulness counts as evidence when it was not used in constructing the claim') a read of Hitchcock & Sober 2004 and MacIntyre 1977; (-> REVISE) if C2A2 practice counts use-dependent fruitfulness as confirmation.
+  Monitoring cadence: Weekly (default); first check due 2026-11-15
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2061 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2061_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2061_against.md
+
+MONITOR-707:
+  Date: 2026-11-08
+  Source item: PRESUMPTION-1222 (DISPOSITION-1122)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Respondent validation is a long-standing credibility technique in qualitative research, so using the thinker's endorsement as one test of fidelity has precedent. (Moderate, preliminary). 15b: The qualitative-methods literature does not treat participant endorsement as the criterion of fidelity; it is contested as a validity test, and participants may endorse accounts they cannot assess or that flatter them.. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'thinker endorsement is one check on representational fidelity alongside a text-based check') a read of Birt et al. 2016 and Morse 2015; (-> REVISE) if C2A2 certification rules make endorsement alone sufficient.
+  Monitoring cadence: Weekly (default); first check due 2026-11-15
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1222 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1222_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1222_against.md
+
+MONITOR-708:
+  Date: 2026-11-08
+  Source item: PRESUMPTION-1224 (DISPOSITION-1123)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: Group agency has serious philosophical support, so a group knower is not itself implausible. (Weak, preliminary). 15b: The central critique in the cited literature is that a statistical partition does not by itself establish an agent or knower boundary. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a blanket partition licenses a group knower only when functional group-agency conditions hold') a read of Bruineberg et al. 2022 and List & Pettit 2011; (-> REVISE) if the design documents rely on the blanket alone for the group knower.
+  Monitoring cadence: Weekly (default); first check due 2026-11-15
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1224 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1224_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1224_against.md
+
+MONITOR-709:
+  Date: 2026-11-08
+  Source item: PRESUMPTION-1225 (DISPOSITION-1124)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: MacIntyre holds that tradition-bound inquirers can rationally assess rivals, which makes a host tradition's evaluation possible in principle. (Weak, preliminary). 15b: The literature that criticises tradition-constituted rationality concerns neutrality of any tradition-bound evaluator. (Weak, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'a host tradition biases detector results unless host-rotation shows invariance') a read of MacIntyre 1988 plus a host-rotation comparison and the in-house design-document check; (-> REVISE) if a rotation shows host-dependent results.
+  Monitoring cadence: Weekly (default); first check due 2026-11-15
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1225 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1225_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1225_against.md
+
+
+## 2026-11-08 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-11-01 (7 days). Day 8, so the **monthly cycle does not fire** (next first Sunday: 2026-12-06). `lit_pipeline.lock` last line RELEASED 2026-11-08T05:42:12Z (not held; append safe). Backups: `*.md.bak.20261108-pre-15d` for monitor_queue, for_lit_search, validated_premises. validated_premises.md not modified. No prior 2026-11-08 15d tags at start. 15d does not evaluate evidence.
+
+### Consumption of the 2026-11-01 re-trigger cohort
+- **MONITOR-696 (literature):** 0/1 consumed (no SEARCHED/DISPOSITIONED tag). Not re-filed; cycle held at 1; next_check -> 2026-11-15.
+- **MONITOR-548:** monthly, next 2026-12-06; untouched.
+- **RE-CHECK lane (86 blocks of 11-01):** 0 consumed; nothing to do this week.
+- **Older cohorts:** 10-25 (689, 691, 692, 693 lit; 690, 694, 685 empirical), 10-18 (12), 10-11 (48): still 0 consumed. Held, not duplicated. Cohort next_check -> **2026-11-15** (cohort level, per-entry dates not rewritten).
+
+### Weekly cycle — 5 overdue items re-queued (section dated 2026-11-08 in for_lit_search.md)
+- **Literature [QUEUED] (4):** MONITOR-697 (PRESUMPTION-1185, due 11-02), -698 (ASSUMPTION-1952, due 11-04), -699 (PRESUMPTION-1192, due 11-05), -700 (PRESUMPTION-1202, due 11-07); cycle 0 -> 1, next 2026-11-15. Each also has an in-house limb; the lane is 15d's reading, as 15c gave no routing note.
+- **Empirical [QUEUED-EMPIRICAL] (1):** MONITOR-656 (ASSUMPTION-1739, due 11-03, monthly cadence); cycle 0 -> 1, next 2026-12-06.
+
+### Not yet due
+MONITOR-701 (11-09), -702 (11-10), -703 (11-11), -704 (11-12), -705 (11-13), -706..709 (11-15), -687 (11-11). Monthly/low-priority cohort MONITOR-001..344 not re-verified (reparse still owed). Event-driven/bound -003, -041, -154, -544, -612 untouched.
+
+### In-house check, MONITOR-688 (PRESUMPTION-991) — TIME-SENSITIVE
+- `metabolism_data.json` `_meta.generated` = 2026-11-07T06:02:54-05:00, total_runs 4742 (4630 on 10-31): regenerated again, so the snapshot limb is met and the series is live.
+- Census: only `architecture/metrics/bootstrap_backlink_census_*` files (latest 11-01) found by filename; no Metabolism-monitor-weekly census newer than 07-28. Producer status as in the 10-25 note (not re-verified). No standalone dated loss-condition entry found outside monitor_queue / lit_search_returns / for_lit_search.
+- **TERMINATING CONDITION expires 2026-11-09 (tomorrow), before the next 15d run.** If no loss-condition entry exists, the entry is not re-filed and closes into REVISE-472. That decision belongs to 15c/Tom, not 15d. Cycle held at 4+.
+
+### STALE-MONITOR-FLAG
+- **MONITOR-403:** the 10-11 ESCALATE to Tom stands; not re-issued. Week 9, cycle 5, evidence unchanged, in-house correlation unrun, no response.
+- **No new flag.** MONITOR-682/-683 (cycle 2) have had no movement and no consumer since 10-07; they reach 4 cycles only if searches actually run.
+
+### Trajectories
+- 697-700: baseline (first 15d cycle). 656: stable, no new sources, measurement unproduced. 688: supporting growing (fourth regeneration), challenging stable, no new sources. 696: unchanged since 11-01.
+- Lanes: literature lane backlogged (15abc this week only took new intake: PRESUMPTION-1207..1224, ASSUMPTION-2061); empirical lane still has no runner.
+- PREMISE-124/126 apply: re-queuing certifies "not yet expired", not "re-tested".
+
+**Run summary:** 5 re-queued (4 literature, 1 empirical); 696 + 3 older cohorts held, not duplicated; 0 premise re-checks (monthly not due); 0 new stale flags (403 stands); 688 expires 11-09. Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+**Duplicate firing note (second 2026-11-08 firing of c2a2-periodic-monitor-weekly, ~03:38–03:45 EST).** A second 15d instance parsed the registers on its own. It found no 11-08 tags at start, and found none again just before its first backup. The run above committed at 03:41:08. This instance's pre-write size check then failed, so it **wrote no re-queue, date change or flag**. It is verifying the commit instead:
+- Its independent parse picked the same 5 items, lanes and cycles: 697-700 [QUEUED] 0 -> 1, next 11-15; 656 [QUEUED-EMPIRICAL] 0 -> 1, next 12-06. It also held the same blocks: 696 and the 10-25, 10-18 and 10-11 cohorts. The two runs do not conflict, so nothing needs to be reconciled. queue_scan.py after the commit: 0 searched-not-dispositioned; 142 bare literature-lane items. validated_premises.md is byte-identical to its backup.
+- **Backup collision:** both instances wrote `*.md.bak.20261108-pre-15d`. This instance's copy (cp -p, taken before 03:41:08; sizes 2603323 / 1748638 / 784388) holds the pre-run state, so the backups are still a valid rollback point.
+- **One point the committed note leaves implicit:** no 15d re-trigger block filed after 10-11 has been consumed, and the 10-11 non-literature cohort has now been held for 4 weekly runs. For Tom: either the 15abc pipeline takes re-trigger blocks, or those cohorts drop to monthly (LOW-PRIORITY-MONITOR) cadence. MONITOR-699's 15c REVISE trigger (no insider review within 4 weekly cycles) falls on about 2026-11-29.
+- **For Tom:** this is the **fourth** double firing (10-04, 10-25, 11-01, 11-08). Each time, two sessions started at about 03:38 from the single `30 3 * * 0` task. The check that worked was a size/tag guard right before the write.

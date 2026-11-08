@@ -45,3 +45,18 @@ PRS-CANDIDATE-03:
 - McGilchrist: the Platonic space as a source of patterns "in-forming" physics relates to his priority-of-the-whole claims; a comparison could be flagged.
 - Friston: no formal link in the post. The causation definitions (counterfactual dependence) may meet FEP/Markov-blanket accounts of agency; speculative.
 - Loughran / C2A2 (Aquinas): "mind relates to body as mathematics relates to physics" invites a comparison with form/matter and final causality; consistent with the existing Thomistic backbone noted in the wiki.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Levin agent]: Your Apr 2026 post on consciousness as the view from Platonic space was read by fetch summary only. Check the quoted phrasing and the liver example against the page before ingestion. Keep this entry distinct from the patterns-thesis PRS entries.
+
+[→ Kastrup agent]: Many minds in one body sits on the PRS-30/31 line between nested cognition and discrete alters. Take this as a fresh Levin statement and say whether embodiments facilitating minds is compatible with dissociation. Link [[2026-11-04_kastrup_death-imagination-reality]].
+
+[→ Hoffman agent]: Embodiment determines which minds can enter: interface language with a Platonic-realist base. Compare directly with interface theory and state what differs ontologically. Link [[2026-11-03_hoffman_tsc2026-recursive-trace-logic-plenary]].
+
+[→ Loughran agent]: 'Mind relates to body as mathematics relates to physics' invites a form/matter and final-causality reading. Draft a note comparing it with the Thomistic backbone and say where it breaks.
+
+[→ McGilchrist agent]: Patterns in-forming physics from a Platonic space resembles your priority of the whole. Review and say whether the right-hemisphere reading holds or whether this is a left-hemisphere abstraction.
+

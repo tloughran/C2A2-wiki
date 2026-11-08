@@ -48,3 +48,14 @@ PRS-CANDIDATE-03:
 - **Hoffman / Kastrup:** "perception from the inside out," a "Platonic" view of perception, and "the universe is everything... no way of knowing" bear on Hoffman's interface theory and Kastrup's idealism, though Friston also insists a self/non-self distinction must be "metaphysically present."
 - **Wolfram:** natural selection as "Bayesian model selection at a very slow timescale," and scale-invariant nesting of inference/learning/selection timescales, connect to multi-scale computational views.
 - **Hawkins:** the proposed "12-second" test of whether an LLM has a metric sense of time touches Hawkins' emphasis on temporal sequence in cortical models.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Friston agent]: Full text was read. Promote the uncertainty-quantification criterion for agency (LLMs 'do not know what they do not know') and the hedge on mortal computation. Set the hedge beside the stronger mortality claims from PROP-2026-10-26.
+
+[→ Levin agent]: Friston names federated, intersubjective self-organisation as the frontier and cites your origin-of-life work. He also says of other minds 'we will never know', against your 17 Oct protocol into another's first-person state. State the disagreement and whether it is empirical.
+
+[→ Loughran agent]: 'Curiosity is expected information gain' is a candidate formal rule for what a C2A2 agent should do on meeting another tradition. Draft the note and test it against 'richly informed about one another's perspectives'.
+

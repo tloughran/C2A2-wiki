@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-11-06
-  Check count: 27
+  Last checked: 2026-11-08
+  Check count: 28
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -72,6 +72,7 @@ WATCH-003:
     - 2026-10-30: On-cadence check; count now **25**. `review/archive/` unchanged at 27 files, latest `2026-10-27_decisions.md`; no decision file since, so no later disposition can exist. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Files newer than the last watch-list write (10-29 sync summaries, open_questions, 10-30 changelog, etc.) mention WATCH-003 only as a carry-over; no ruling. Census: `pending/` 9, `approved/` 509, `denied/` 1, `needs_review/` 4. NOT met. Next on-cadence check 2026-11-06.
     - 2026-11-01 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **26**; next on-cadence check stays 2026-11-06): a **28th** decision file exists, `review/archive/2026-10-31_decisions.md` (10 APPROVE: PROP-2026-10-27-001/-002/-003, -10-28-001/-002/-003, -10-29-001/-002/-003, -10-30-001; no CHANGE/CHECK/CONDITIONAL). grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). The new file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. NOT met.
     - 2026-11-06: On-cadence check; count now **27**. `review/archive/` unchanged at 28 files, latest `2026-10-31_decisions.md`; no decision file since, so no later disposition can exist. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Vault files newer than the last watch-list write mention WATCH-003 / INTEGRITY FLAG only as carry-over (open_questions, PROCESSED_LOG, master wiki history); no ruling. Census: `pending/` 17, `approved/` 519, `denied/` 1, `needs_review/` 4. NOT met. Next on-cadence check 2026-11-13.
+    - 2026-11-08 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **28**; next on-cadence check stays 2026-11-13): a **29th** decision file exists, `review/archive/2026-11-07_decisions.md` (mtime 11-07 04:36; source `[C2A2-review-decision] 2026-11-06` email; 17 APPROVE, 2 duplicate email lines ignored; no DENY/CHANGE/CHECK/CONDITIONAL). grep of the new file for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: zero matches. Census: `pending/` 3, `approved/` 536, `denied/` 1, `needs_review/` 4. NOT met.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -7511,3 +7512,23 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: WATCH-006 event trigger Sewing Agent 2026-11-08; WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14.
 
 *Duplicate firing. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-08
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). New decision file `review/archive/2026-11-07_decisions.md` (17 APPROVE; no CHANGE / CHECK / CONDITIONAL), so no new needs_review items. Vault `.md` files newer than the last watch-list write were grepped for tracked IDs, `xZcB-tmvJaU`, "Wisdom of Uncertainty", `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, INTEGRITY FLAG. Hits are carry-over/historical, plus the known PROP-2026-10-13-001 ID collision (Hoffman wiki/prs_triplets, cross_program_index, pattern-detector flags). No ruling, deferral or watch request.
+  Items checked: 1 (off-cadence, event-triggered):
+    - WATCH-003 (count 28): new decision file names neither PROP-2026-07-19-001 nor the INTEGRITY FLAG. NOT met.
+  Event sweep (not counted): WATCH-006, Sewing Agent run due today has not yet logged (`sewing_agent_log.md` mtime still 11-01 04:42; this run at ~07:37 UTC precedes it); `prs_triplets.md` unchanged since 10-16; no revised PROP-2026-10-13-001 in `pending/` (3 cards: Kastrup 11-04, McGilchrist 11-04 Glasgow, Wolfram 11-07). WATCH-004, Fredrickson file unchanged since 10-08; not in `pending/`. WATCH-005, no transcript in vault.
+  Items resolved: 0 · Still watching: 4 (WATCH-003, -004, -005, -006) · Stale: 1 (WATCH-003, 28 checks; Escalate to Tom, unchanged). Approaching threshold: WATCH-004 (5), WATCH-006 (5), WATCH-005 (4). · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14. Next run should read today's Sewing log entry for WATCH-006.
+
+**Open for Tom (unchanged):** WATCH-003 INTEGRITY FLAG ruling (the 11-07 pass again did not address it); WATCH-004 Fredrickson CT-Signals edit; WATCH-005 Wonderstruck transcript; WATCH-006 Sewing selection rule / manual MacIntyre pass; ID collisions; split the ~892 KB watch list; duplicate scheduled firings.
+
+*Run completed 2026-11-08 ~07:40 UTC.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-08 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; no new decision file since `2026-11-07_decisions.md`. `sewing_agent_log.md` mtime still 11-01 (Sewing run not yet logged). Items checked: 0 · Resolved: 0 · Watching: 4 · Stale: 1 (WATCH-003, unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14. Next run should read today's Sewing log entry for WATCH-006.
+
+*Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*

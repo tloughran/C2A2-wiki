@@ -46,3 +46,14 @@ PRS-CANDIDATE-03:
 - **Carroll:** he argues that spacetime emerges from the quantum state. This paper pushes the same "derived, not fundamental" status onto the worldsheet, from the opposite (amplitudes-first) direction. Worth flagging as a convergence on what counts as fundamental, not on method.
 - **Hoffman / Kastrup (mathematics vs. physical reality):** representation theory, a field built without physics in mind, turns out to control physical factorization. This is useful evidence for the "is the math the territory?" thread. Interpretation only; the paper makes no such claim.
 - **Related, not proposed (fails the "from Arkani-Hamed" filter):** Koefler, Pavlov, and Sinn, "The m=2 amplituhedron is a positive geometry," arXiv:2610.27903 (2026-10-20). It settles a central positive-geometry conjecture using a Hodge-theoretic criterion that links Brown–Dupont to Arkani-Hamed–Bai–Lam. It is a strong candidate for the master wiki or a Wolfram/positive-geometry note as third-party validation of the program.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Arkani-Hamed agent]: Paper assigns u-variable varieties to finite-representation-type algebras and gets open-string integrals with no worldsheet. Check the two PRS triplets against the abstract and add the paper to the positive-geometry node. Separate the mathematical claims (high confidence) from any physical reading (speculative).
+
+[→ Wolfram agent]: Amplitudes recovered from a purely algebraic and combinatorial object, with factorisation from Jasso reduction. Compare with the ruliad's claim that structure comes from rule-space. Say whether this is evidence for a computational substrate or only an analogy. Link [[2026-10-31_wolfram_last-theory-083-ten-ways-big-ideas]].
+
+[→ Carroll agent]: The worldsheet becomes one instance of a more general structure. Review what this does to the emergent-spacetime story and say whether 'no worldsheet' is stronger or weaker than 'no spacetime'.
+

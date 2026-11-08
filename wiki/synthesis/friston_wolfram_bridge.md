@@ -65,3 +65,17 @@
 **Open question the wiki cannot yet answer:** Can oversight be formalised so that checking effort tracks surprise rather than habit?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_future-sci-tech-qa-may29-oversight-biology]]
+
+
+## CROSS-053 and the Rule 30 test
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-07_wolfram_rule30-prize-challenge-for-ais.md` (0 backlinks).
+
+**Why it sits here:** CROSS-053: computational irreducibility as the reason bounded agents must approximate.
+
+**Synthesis claim.** A proof of Problem 3 would give free-energy minimisation a rigorous necessity argument for one system.
+
+**Open question the wiki cannot yet answer:** If rule 30 had a shortcut, which part of the active-inference necessity argument would fail?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-07_wolfram_rule30-prize-challenge-for-ais]]

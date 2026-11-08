@@ -111,3 +111,31 @@ Standing: routed to the master agent as a paradigm-shift candidate on the indivi
 **Open question the wiki cannot yet answer:** What measurable coherence would Kastrup accept as evidence that a system is more than a tool?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-07_kastrup_ai-as-archetypal-urge]]
+
+
+## Boundaries between minds
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation.md` (0 backlinks).
+
+**Why it sits here:** Kastrup's session with a psychiatrist on one mind or many meets Levin's nested-subject question.
+
+**Synthesis claim.** Whether minds are graded or discrete is a clinical as well as a metaphysical question, since psychosis and insight are both boundary events.
+
+**Open question the wiki cannot yet answer:** What observable would distinguish a porous boundary from two minds sharing a channel?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-04_kastrup_pollak-psychiatry-idealism-ai-ego-inflation]]
+
+
+## Platonic space and consciousness
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-02_levin_platonic-space-background-consciousness.md` (0 backlinks).
+
+**Why it sits here:** Levin's consciousness-as-view-from-Platonic-space and the many-minds-in-one-body claim sit on the PRS-30/31 line.
+
+**Synthesis claim.** If embodiments facilitate minds, dissociation is the interface that selects which ones, so Levin and Kastrup differ about mechanism, not about primacy.
+
+**Open question the wiki cannot yet answer:** Does a Platonic space need a dissociation operation or only an interface?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-02_levin_platonic-space-background-consciousness]]

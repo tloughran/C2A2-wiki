@@ -52294,3 +52294,143 @@ DISPOSITION-1120:
 ### Evidence-quality notes (2026-11-06)
 - One orchestrator ran 15a, 15b, 15c in sequence. The 15b file was written without reading the 15a file, but the web searches were shared, so independence is procedural only.
 - 4 searches, 0 fetches; every source is title-only and unread. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. The in-house items queued (ASSUMPTION/PRESUMPTION tagged [IN-HOUSE]) were not touched (not literature scope). Backlog of bare literature-lane items untouched; "all queued items searched" is NOT met for the backlog.
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2061
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Hitchcock & Sober, 2004
+  Summary: The philosophy-of-science neighbourhood treats accommodation as evidentially weaker than prediction only under particular conditions (overfitting, double-counting). Hitchcock & Sober and the use-novelty/model-selection papers give conditions under which after-the-fact fit does count. MacIntyre's own 1977 paper was not located or read.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2061_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2061 | Item type: ASSUMPTION (stated) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2061
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Lakatos on progressive programmes / Popperian novelty demand (background recall, not searched): novelty means unexpected facts, and ad hoc after-the-f
+  Specific risk: C2A2 could count tradition-wiki fruitfulness found after the architecture was shaped by it as confirmation, inflating validated premises.
+  Summary: Standard novelty accounts deny that evidence a theory was fitted to is confirming, and overfitting makes after-the-fact fruitfulness unreliable unless the post-hoc content is independently tested. The challenge narrows the claim to 'fruitfulness that was not used in construction'.
+  STEELMAN: Counting fruitfulness found after the fact lets any design look vindicated; the only safeguard is evidence the design was not tuned to.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2061_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2061 | Item type: ASSUMPTION (stated) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1121:
+  Date: 2026-11-08
+  Item: ASSUMPTION-2061
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Support and challenge both rest on titles and background recall, and they agree on the shape of the answer: after-the-fact fruitfulness counts only when it was not used to build the theory.
+  Disposition: MONITOR (MONITOR-706 (Medium))
+  Reasoning: The unqualified assumption is not supported as stated, and a narrowed premise is plausible. MacIntyre 1977 was not read, so INCORPORATE would overreach; the challenge narrows rather than refutes, so REVISE is not met.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2061 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2061_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2061_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1222
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Birt, Scott, Cavers, Campbell & Walter, 2016
+  Summary: Respondent validation is a long-standing credibility technique in qualitative research, so using the thinker's endorsement as one test of fidelity has precedent. The literature treats it as one technique, not the criterion.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1222_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1222 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1222
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Birt et al
+  Specific risk: A flattering or superficially plausible portrayal could be certified because the thinker approves it, while mis-representing the thinker's actual argument; and a thinker who is dead, unavailable, or revising cannot certify.
+  Summary: The qualitative-methods literature does not treat participant endorsement as the criterion of fidelity; it is contested as a validity test, and participants may endorse accounts they cannot assess or that flatter them.
+  STEELMAN: Endorsement measures acceptability to the thinker in the moment, which is not accuracy of representation: authors misremember, revise, and like flattering summaries.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1222_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1222 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1122:
+  Date: 2026-11-08
+  Item: PRESUMPTION-1222
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support for endorsement as one check and moderate challenge to its use as the criterion; both from titles and background recall.
+  Disposition: MONITOR (MONITOR-707 (Medium))
+  Reasoning: The presumption as phrased (endorsement as criterion) is challenged, but the challenge describes a design fix, not a refutation of certification. Nothing was read in full, so INCORPORATE overreaches and REVISE is premature.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1222 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1222_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1222_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1224
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: List & Pettit, 2011
+  Summary: Group agency has serious philosophical support, so a group knower is not itself implausible. No source read supports the specific step from a Markov-blanket partition to a group knower or person.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1224_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1224 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1224
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Bruineberg, Dolega, Dewhurst & Baltieri, 2022
+  Specific risk: C2A2's group-level knower (tradition, community, or the system) could rest on a formal construct that does not carry the philosophical weight placed on it.
+  Summary: The central critique in the cited literature is that a statistical partition does not by itself establish an agent or knower boundary. If so, a blanket partition of a group cannot license a group knower; some further ground, such as List-Pettit organization, is needed.
+  STEELMAN: A blanket is a conditional-independence structure that can be drawn around any set of variables, including ones nobody would call a knower; it therefore cannot be what makes something a knower.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1224_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1224 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1123:
+  Date: 2026-11-08
+  Item: PRESUMPTION-1224
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support by another route against a moderate, directly on-point challenge. Both rest on titles and background recall.
+  Disposition: MONITOR (MONITOR-708 (High))
+  Reasoning: Weak support with a moderate challenge to a presumption leans toward REVISE, but the challenge is unread and the group-agency literature offers a ready repair, so MONITOR with High priority is the recoverable choice. Raised priority because the designers were not aware they relied on the licensing step.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1224 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1224_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1224_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1225
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: MacIntyre, 1988
+  Summary: MacIntyre holds that tradition-bound inquirers can rationally assess rivals, which makes a host tradition's evaluation possible in principle. Nothing read says a host can run a detector without bias; on MacIntyre's view every evaluator is a tradition's member.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1225_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1225 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1225
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Critiques of tradition-constituted rationality (PhilPapers/Springer hits: Chi 'The relativist challenge to comparative philosophy' CHITRC; Wang, WANOD
+  Specific risk: Cross-tradition results could systematically favor the host's categories, undermining the evidence the detector is meant to produce.
+  Summary: The literature that criticises tradition-constituted rationality concerns neutrality of any tradition-bound evaluator. On that reading a host tradition will bias the detector unless it is checked from outside. Specific sources on a host running a detector were not found.
+  STEELMAN: If rational assessment is always from inside a tradition, the host's categories shape what the detector can see; neutrality is impossible and the design should assume bias and measure it.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1225_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1225 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1124:
+  Date: 2026-11-08
+  Item: PRESUMPTION-1225
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Weak support and weak challenge, both from titles and recall, and both pointing at an empirical host-rotation test.
+  Disposition: MONITOR (MONITOR-709 (Medium))
+  Reasoning: Neither direction established anything specific, and the in-house design-document check has no runner. MONITOR is the recoverable choice.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1225 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1225_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1225_against.md
+
+### Evidence-quality notes (2026-11-08)
+- One orchestrator ran 15a, 15b, 15c in sequence. Each 15b file was written without reading the matching 15a file, but the web searches were shared, so independence is procedural only.
+- 12 searches, 0 fetches; sources are title-only or background recall and are marked as such. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY or SYSTEMIC-RISK flags raised. [IN-HOUSE] items and the older bare-literature backlog were not touched; 'all queued items searched' is NOT met for the backlog.

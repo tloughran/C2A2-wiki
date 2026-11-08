@@ -54,3 +54,17 @@ This is a testable claim about the instrument, not a philosophical preference, a
 **Open question the wiki cannot yet answer:** What would count as the dependence reading winning, stated now, before any data exists to be read either way? This is the whole value of the pair and the wiki does not have it. Candidates: revision events rising in frequency while declining in the quality of the position revised *to*; participants reproducing an AI-supplied framing they cannot defend under questioning; a drop in unprompted objection rate. Each needs a threshold and a control, and **a criterion chosen after the data is in is not a criterion.** The project should commit to one while it still has nothing to lose by doing so.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-12_levin_llms-as-cognitive-virus]]
+
+
+## Platonic space and consciousness
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/2026-11-02_levin_platonic-space-background-consciousness.md` (0 backlinks).
+
+**Why it sits here:** 'Mind relates to body as mathematics relates to physics' invites a form/matter reading.
+
+**Synthesis claim.** Levin's ingressing patterns are close to Thomistic forms, with the body as matter that receives them.
+
+**Open question the wiki cannot yet answer:** Does Levin's account preserve final causality or only formal causality?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-02_levin_platonic-space-background-consciousness]]

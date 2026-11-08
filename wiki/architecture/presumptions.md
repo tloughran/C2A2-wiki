@@ -26591,3 +26591,85 @@ PRESUMPTION-1222:
     Current status: UNTESTED
 
 *2026-11-06 14b: PRESUMPTION-1219..1222 (structural 2, methodological 1, epistemic 1; risk High 1, High-conditional 1, Medium 2). Checked against 14a 2049-2057 and the registry. Not re-surfaced (already registered; new evidence today): cloud/local copies equivalent (PRESUMPTION-1196; still High; now compounded by PRESUMPTION-1219); count comparisons share definitions (PRESUMPTION-1216; ASSUMPTION-2054); withholding NOT-CHECKED (PRESUMPTION-1218; today scheduler health appended NOT-CHECKED instead, i.e. the opposite practice on consecutive days); each copy's outcome taken as the task's (PRESUMPTION-1208; seventh local lit skip).*
+
+PRESUMPTION-1223:
+  Date surfaced: 2026-11-07
+  Statement: [inferred] The evening sync presumes the tool set a run receives is random per firing. The evidence fits a fixed cause: cloud firings lack session_info, local firings have it (14a/14b cloud NO-OPs vs local passes since 10-26; evening sync first firing blind, second firing sighted). Calling a host-determined difference "variance" points the fix at retries instead of at which copy is kept.
+  Evidence it was operative: Evening sync e9f9f262 (ASSUMPTION-2058); changelog/2026-11-07 and 2026-11-08 cloud NO-OPs
+  Why it was unstated: explanation offered as a hint, not as a claim
+  Type: epistemic
+  Related decisions: ASSUMPTION-2058; PRESUMPTION-1196; PRESUMPTION-1219; OPEN-292
+  Testability: testable in-house
+  Risk if wrong: High: combined with "disable local copies" (ASSUMPTION-2065), the blind copies of 14a/14b and the evening sync are the ones kept.
+  Confidence: medium-high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1223
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1224:
+  Date surfaced: 2026-11-07
+  Statement: [inferred] "The community as a person" and "a knower beyond our horizon", tied to the Markov blanket idea, presume that a Markov-blanket partition of a group licenses ascribing a knower (or person) to the group. That step is ontological, not formal: whether a statistical boundary in a model marks a real agent is disputed (Pearl blankets vs Friston blankets). Distinct from PRESUMPTION-371 (Levin/Friston commensurability) and -376 (transfer of formal results): this is the move from partition to personhood.
+  Evidence it was operative: Chat scrape aff88ad9 (ASSUMPTION-2062c)
+  Why it was unstated: culturally embedded in the FEP literature C2A2 draws on
+  Type: epistemic
+  Related decisions: ASSUMPTION-2062; PRESUMPTION-371; PRESUMPTION-376
+  Testability: testable via literature
+  Risk if wrong: Medium: group-level "knowing" claims in C2A2 outputs would rest on a modelling convention, and the Levin and Friston traditions would be read as agreeing on more than they do.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1224
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1225:
+  Date surfaced: 2026-11-07
+  Statement: [inferred] "A C2A2 accelerator-detector running on a revealing tradition" presumes that one host tradition can run the instrument without its own standards setting what the detector counts as wisdom or success, so the cross-tradition comparison stays fair to the other traditions. MacIntyre denies a tradition-independent standpoint, which supports naming the host openly. It does not show that hosting leaves the other traditions' results unaffected.
+  Evidence it was operative: Chat scrape aff88ad9 (ASSUMPTION-2062d; ACPA poster answer)
+  Why it was unstated: the host's role is implicit in "running on"
+  Type: normative
+  Related decisions: ASSUMPTION-2062; OPEN-293
+  Testability: testable via literature; in-house: check whether design docs say what "running on" means (scoring, agent prompts, approval)
+  Risk if wrong: High: the ACPA poster and future outreach could present a hosted instrument as neutral, and other traditions' participants could reasonably dispute the results.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1225
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1226:
+  Date surfaced: 2026-11-07
+  Statement: [inferred] The daily run treats each APPROVE line as a per-card judgment. The 11-06 email cleared an 8-day backlog of 17 cards, all APPROVE, two of them keyed to colliding IDs. Today's Wolfram card describes a prize that asks for a named human and a human-readable account behind AI work; C2A2's equivalent is Tom's approval line, which is presumed to carry that review.
+  Evidence it was operative: Wiki daily run 425ccb0b (ASSUMPTION-2059); Wolfram agent 325982d8 (ASSUMPTION-2063)
+  Why it was unstated: approval-as-review is built into the pipeline
+  Type: epistemic
+  Related decisions: ASSUMPTION-2059; ASSUMPTION-2063; PRESUMPTION-086
+  Testability: testable in-house
+  Risk if wrong: Medium: approval rate stops measuring card quality, and the 1140 triplets inherit an unreviewed share.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1226
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-07 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-07 14b: PRESUMPTION-1223..1226 (epistemic 3, normative 1; risk High 2, Medium 2). Checked against 14a 2058-2065 and the registry. Not re-surfaced (already registered; new evidence today): id collisions roll forward without incident (PRESUMPTION-086; today's misapplied decision lines are such an incident); cloud/local copies equivalent (PRESUMPTION-1196); count comparisons share definitions (PRESUMPTION-1216; ASSUMPTION-2060, 2065); local passes not found by readers (PRESUMPTION-1219; ASSUMPTION-2058); each copy's outcome taken as the task's (PRESUMPTION-1208; ASSUMPTION-2064).*

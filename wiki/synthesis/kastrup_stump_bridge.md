@@ -63,3 +63,17 @@
 **Open question the wiki cannot yet answer:** Can an alter be individuated at all without a body to have been dissociated *around*? Kastrup's dissociation is, in the standard exposition, dissociation of universal consciousness into a living organism's boundary. Remove the organism and it is unclear what sustains the boundary, or what makes this alter that one. Aquinas has an answer to the parallel question and it is hylomorphic. Hecht needs one and the announcement does not supply it. **That gap, not the theism, is where the real Kastrup–Stump argument is**, and it is available before the recording exists.
 
 **Wikilinks (sewing, 2026-09-13):** [[2026-09-09_kastrup_god-soul-problem-of-evil-hecht]]
+
+
+## Death, imagination and persisting persons
+*Sewing Agent, 2026-11-08*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-04_kastrup_death-imagination-reality.md` (0 backlinks).
+
+**Why it sits here:** Kastrup's death-as-homecoming and Stump's account of knowing persons both ask what persists of a person.
+
+**Synthesis claim.** Whatever persists across death must be second-personal, so both accounts need persons and not only consciousness.
+
+**Open question the wiki cannot yet answer:** Can analytic idealism supply a persisting person, or only persisting mind?
+
+**Wikilinks (sewing, 2026-11-08):** [[2026-11-04_kastrup_death-imagination-reality]]

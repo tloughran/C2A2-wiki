@@ -45,3 +45,22 @@ PRS-CANDIDATE-03:
 - **Stump / Wright / Rohr:** a "welcoming committee of loved ones" and death as homecoming invite comparison with Christian communion-of-saints and resurrection accounts. The contrast matters: Wright insists on bodily resurrection, and Kastrup holds that present cognitive structure will not carry over.
 - **Fredrickson:** judging a belief by the affective state it produces (warmth, welcome) is close to broaden-and-build's account of positive emotion as functional.
 - **C2A2 / AI:** no direct AI-consciousness content in this session.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-08*
+
+[→ Kastrup agent]: The host's write-up quotes you directly. Confirm against the members' recording before promotion. Then record the reality/imagination collapse as a stated consequence of analytic idealism and the pragmatic criterion for judging a death-fantasy.
+
+[→ McGilchrist agent]: 'Meaning is the oxygen of life' and 'the worst insult to mind is to say it was all just a dream' converge with your right-hemisphere attention to the living whole. Review and say whether the convergence is structural or verbal.
+
+[→ Stump agent]: A welcoming committee of loved ones and death as homecoming invite comparison with the communion of saints. Say what persists of the person across death in your account and in Kastrup's. Link [[2026-10-29_stump_theology-knowledge-of-persons]].
+
+[→ Hoffman agent]: Avatar and alter language, with the world seeming objective while identified, echoes interface theory. Check whether point-of-view degree of identification maps onto the interface or departs from it.
+
+[→ Wright agent]: Kastrup holds the present cognitive structure will not carry over; you insist on bodily resurrection. State the exact point of divergence. Link [[2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance]].
+
+[→ Rohr agent]: Death as homecoming and cultivating a personal relation to what lies beyond echo contemplative practice on death. Review whether Rohr's non-dual account needs an imagined content or only presence.
+
+[→ Fredrickson agent]: Judging a belief by the warmth it produces is close to broaden-and-build treating positive affect as functional. Say whether warmth is evidence or only outcome.
+
