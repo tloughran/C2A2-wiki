@@ -86,71 +86,71 @@ Physicalism, in its poetic-naturalist form, does not deny that every scientist s
 
 **Candidate concessions**
 
-- **CAND-HOF-CONC-01**: The physicalist side withdraws its charge that PRS-10 needs the internal/external split PRS-29 gave up, and accepts that the split is derived, not primitive (Round 1, rejoinder). *Leads to P1, H1.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-CONC-01**: The physicalist side withdraws its charge that PRS-10 needs the internal/external split PRS-29 gave up, and accepts that the split is derived, not primitive (Round 1, rejoinder). *Leads to P1, H1.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-CONC-02**: The conscious-realist side grants that the trace also needs an ambient kernel, so both readings posit a whole that no single trace confirms (Round 2, rejoinder). *Leads to H2, P4.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-CONC-02**: The conscious-realist side grants that the trace also needs an ambient kernel, so both readings posit a whole that no single trace confirms (Round 2, rejoinder). *Leads to H2, P4.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-CONC-03**: The physicalist side grants that if trace blankets strictly generalise Markov blankets to cyclic systems, that is a formal gain to take up. It does not concede the ontology (Opening statement; PHYS-PRS-37). *Leads to H1.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-CONC-03**: The physicalist side grants that if trace blankets strictly generalise Markov blankets to cyclic systems, that is a formal gain to take up. It does not concede the ontology (Opening statement; PHYS-PRS-37). *Leads to H1.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-CONC-04**: The conscious-realist side grants that deriving Minkowski space or the Born rule would be "not a discriminating test of the reading" (Round 3, answer). *Leads to H3.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-CONC-04**: The conscious-realist side grants that deriving Minkowski space or the Born rule would be "not a discriminating test of the reading" (Round 3, answer). *Leads to H3.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-CONC-05**: The conscious-realist side grants that the Trace × Noonautics predictions "have not yet been specified" (Round 3, answer). *Leads to H4.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-CONC-05**: The conscious-realist side grants that the Trace × Noonautics predictions "have not yet been specified" (Round 3, answer). *Leads to H4.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-CONC-06**: The physicalist side grants that it "has not yet named a result that the physical-boundary reading predicts and the observer reading forbids" (Round 3, rejoinder). *Leads to P3.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-CONC-06**: The physicalist side grants that it "has not yet named a result that the physical-boundary reading predicts and the observer reading forbids" (Round 3, rejoinder). *Leads to P3.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
 
 **Candidate answers**
 
-- **CAND-HOF-ANS-01**: Offered by the conscious-realist side to Round 1. The trace supplies a derived boundary for any subset, so withdrawing the built-in split (PRS-29) and claiming the trace blanket (PRS-10) are one move seen from two sides (Round 1, answer). *Leads to H1, H5.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-ANS-01**: Offered by the conscious-realist side to Round 1. The trace supplies a derived boundary for any subset, so withdrawing the built-in split (PRS-29) and claiming the trace blanket (PRS-10) are one move seen from two sides (Round 1, answer). *Leads to H1, H5.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-ANS-02**: Offered by the physicalist side to Round 2. Entitlement to claims about the whole is graded credence, built by intervention across overlapping restrictions, and PRS-37 constrains the conscious-agent whole as much as the physical one (Round 2, answer). *Leads to P2, P4.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-ANS-02**: Offered by the physicalist side to Round 2. Entitlement to claims about the whole is graded credence, built by intervention across overlapping restrictions, and PRS-37 constrains the conscious-agent whole as much as the physical one (Round 2, answer). *Leads to P2, P4.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-ANS-03**: Offered by the conscious-realist side to Round 3. The claims that discriminate between the readings concern experience, since the agent's state space is a space of "potential experiences" (PRS-29), and they are to be tested through Trace × Noonautics (PRS-25, PRS-38) and through construction (PRS-49) (Round 3, answer). *Leads to H4.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-ANS-03**: Offered by the conscious-realist side to Round 3. The claims that discriminate between the readings concern experience, since the agent's state space is a space of "potential experiences" (PRS-29), and they are to be tested through Trace × Noonautics (PRS-25, PRS-38) and through construction (PRS-49) (Round 3, answer). *Leads to H4.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
 
 **Candidate open questions**
 
-- **CAND-HOF-OPEN-01**: What further condition C makes a trace a Markov blanket, and does C refer to an observer? Raised by the physicalist side (Round 1, rejoinder; Friston × Hoffman bridge, 2026-09-20). *Leads to P1, H1.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-OPEN-01**: What further condition C makes a trace a Markov blanket, and does C refer to an observer? Raised by the physicalist side (Round 1, rejoinder; Friston × Hoffman bridge, 2026-09-20). *Leads to P1, H1.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-OPEN-02**: Do the restrictions science combines always have joins in the trace order? Raised by the conscious-realist side (Round 2, rejoinder; PRS-36). The physicalist side did not answer it within the dialogue. *Leads to P2, H2.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-OPEN-02**: Do the restrictions science combines always have joins in the trace order? Raised by the conscious-realist side (Round 2, rejoinder; PRS-36). The physicalist side did not answer it within the dialogue. *Leads to P2, H2.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-OPEN-03**: Who restricts, the observer or a physical boundary? Neither side offered a test the other accepted. Raised by both (Crux; Round 3). *Leads to P3, H4.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-OPEN-03**: Who restricts, the observer or a physical boundary? Neither side offered a test the other accepted. Raised by both (Crux; Round 3). *Leads to P3, H4.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-OPEN-04**: If the Trace × Noonautics reports are themselves traces (PRS-37), what pattern in them would one reading predict and the other forbid? Raised by the physicalist side (Round 3, rejoinder). *Leads to H4.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-OPEN-04**: If the Trace × Noonautics reports are themselves traces (PRS-37), what pattern in them would one reading predict and the other forbid? Raised by the physicalist side (Round 3, rejoinder). *Leads to H4.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-OPEN-05**: Is the trace "a relative of coarse-graining", or does PRS-56's separation result show structure that marginalisation lacks? Raised in both opening statements; the physicalist side did not take up PRS-56. *Leads to P5.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-OPEN-05**: Is the trace "a relative of coarse-graining", or does PRS-56's separation result show structure that marginalisation lacks? Raised in both opening statements; the physicalist side did not take up PRS-56. *Leads to P5.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-OPEN-06**: Has the strict generalisation (PRS-10) been proved, and are Friston's random-dynamical-systems blankets already defined for cyclic coupling [UNVERIFIED]? The conscious-realist side asserts the generalisation; the physicalist side notes the vault holds it from an April 2026 talk without a written proof (Opening statements; Round 1, rejoinder). *Leads to H1.*  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-OPEN-06**: Has the strict generalisation (PRS-10) been proved, and are Friston's random-dynamical-systems blankets already defined for cyclic coupling [UNVERIFIED]? The conscious-realist side asserts the generalisation; the physicalist side notes the vault holds it from an April 2026 talk without a written proof (Opening statements; Round 1, rejoinder). *Leads to H1.*
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
 
 ### (b) Questions to mature members of the physicalist tradition
@@ -173,33 +173,33 @@ Physicalism, in its poetic-naturalist form, does not deny that every scientist s
 
 An agreement is recorded as a candidate only where each side affirmed the point within this dialogue, in its own terms and for its own reasons. Everything else is **not agreed**. Even a candidate agreement holds only between the traditions as this vault states them. Only certification by mature members of *both* traditions, each from its own perspective, overcomes incommensurability, and then only in a way.
 
-- **CAND-HOF-AGR-01**: The trace theorems (uniqueness, irreversible loss, incomparability) hold whether A is read as an observer's access or as a physical boundary. Physicalist: Opening statement; PHYS-PRS-36. Conscious-realist: Round 1 answer; Round 2 rejoinder.  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-01**: The trace theorems (uniqueness, irreversible loss, incomparability) hold whether A is read as an observer's access or as a physical boundary. Physicalist: Opening statement; PHYS-PRS-36. Conscious-realist: Round 1 answer; Round 2 rejoinder.
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-AGR-02**: Withdrawing the built-in internal/external split (PRS-29) is consistent with the trace-blanket claim (PRS-10). Conscious-realist: Round 1 answer. Physicalist: Round 1 rejoinder.  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-02**: Withdrawing the built-in internal/external split (PRS-29) is consistent with the trace-blanket claim (PRS-10). Conscious-realist: Round 1 answer. Physicalist: Round 1 rejoinder.
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-AGR-03**: Both readings posit an ambient whole that no single trace can confirm. Physicalist: Round 2 answer. Conscious-realist: Round 2 rejoinder.  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-03**: Both readings posit an ambient whole that no single trace can confirm. Physicalist: Round 2 answer. Conscious-realist: Round 2 rejoinder.
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-AGR-04**: Recovering known physics from Markov chains would be a real result, but it would not discriminate between the readings. Conscious-realist: Round 3 answer. Physicalist: Round 3 rejoinder.  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-04**: Recovering known physics from Markov chains would be a real result, but it would not discriminate between the readings. Conscious-realist: Round 3 answer. Physicalist: Round 3 rejoinder.
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-AGR-05**: Claims that discriminate between the readings, if any exist, concern experience and not the boundary. Conscious-realist: Round 3 answer. Physicalist: Round 3 rejoinder.  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-05**: Claims that discriminate between the readings, if any exist, concern experience and not the boundary. Conscious-realist: Round 3 answer. Physicalist: Round 3 rejoinder.
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-AGR-06**: Spacetime is not fundamental. Physicalist: Opening statement. Conscious-realist: Round 3 answer ("no spacetime and no Hilbert space").  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-06**: Spacetime is not fundamental. Physicalist: Opening statement. Conscious-realist: Round 3 answer ("no spacetime and no Hilbert space").
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
-- **CAND-HOF-AGR-07** (conditional): If the trace blanket strictly generalises the Markov blanket to cyclic systems, that is a formal gain. Conscious-realist: Opening statement (PRS-10). Physicalist: Opening statement (if proved; PHYS-PRS-37).  
-  Certification: physicalist MM: pending  
-  Certification: Hoffman-Prakash MM: pending  
+- **CAND-HOF-AGR-07** (conditional): If the trace blanket strictly generalises the Markov blanket to cyclic systems, that is a formal gain. Conscious-realist: Opening statement (PRS-10). Physicalist: Opening statement (if proved; PHYS-PRS-37).
+  Certification: physicalist MM: pending
+  Certification: Hoffman-Prakash MM: pending
   Status: candidate
 
 **Not agreed** (each recorded above as an open candidate):

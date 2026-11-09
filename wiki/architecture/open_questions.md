@@ -4014,3 +4014,28 @@ OPEN-294:
     Item type: OPEN QUESTION
     Current status: OPEN
 
+
+
+OPEN-295:
+  Raised: 2026-11-08 by 14a (ASSUMPTION-2066; PRESUMPTION-1227)
+  Question: Is the "queen of the sciences" / master-science framing meant for the ACPA poster (Nov 12) or Video 2? If so, does C2A2's engagement process count as a tradition itself, and how does that answer sit with OPEN-293 (host tradition)?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-295
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-296:
+  Raised: 2026-11-08 by 14a (ASSUMPTION-2071)
+  Question: Re-queued monitor items have not been searched since 10-11; the lit pipeline takes only new items. Should the pipeline take re-queued items, or should held cohorts move to monthly checks? Who closes MONITOR-688, which expires 11-09?
+  Needs: Tom / 15c
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-296
+    Item type: OPEN QUESTION
+    Current status: OPEN

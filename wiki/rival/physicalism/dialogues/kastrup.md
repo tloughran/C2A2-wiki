@@ -100,79 +100,79 @@ Naturalist physicalism holds that there is one world, and that within the domain
 
 **Candidate concessions**
 
-- **CAND-KAS-CONC-01**: The physicalist side grants that it has no worked account of the terminal-lucidity class of cases, and names what would lower its own credence there (Round 1, rejoinder; responses.md, Objection 2). *Leads to P1, K1.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-01**: The physicalist side grants that it has no worked account of the terminal-lucidity class of cases, and names what would lower its own credence there (Round 1, rejoinder; responses.md, Objection 2). *Leads to P1, K1.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-CONC-02**: The physicalist side grants that no member can derive from a physical description what an experience is like, and records Kim's declared remainder (Opening statement; Round 1, rejoinder; PHYS-PRS-11). *Leads to P2.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-02**: The physicalist side grants that no member can derive from a physical description what an experience is like, and records Kim's declared remainder (Opening statement; Round 1, rejoinder; PHYS-PRS-11). *Leads to P2.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-CONC-03**: The idealist side grants that, for observations in physics' own domain, the two pictures assign the same probabilities, and that its realism is ontic, not empirical-predictive (Round 1, answer; PRS-30). *Leads to K2.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-03**: The idealist side grants that, for observations in physics' own domain, the two pictures assign the same probabilities, and that its realism is ontic, not empirical-predictive (Round 1, answer; PRS-30). *Leads to K2.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-CONC-04**: The idealist side grants that its mechanism of dissociation has no rigorous account yet, and that why metabolism should mark an alter is a named gap (Opening statement; Round 3, answer; Kastrup wiki, Question 4; PRS-97). *Leads to K3, K4.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-04**: The idealist side grants that its mechanism of dissociation has no rigorous account yet, and that why metabolism should mark an alter is a named gap (Opening statement; Round 3, answer; Kastrup wiki, Question 4; PRS-97). *Leads to K3, K4.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-CONC-05**: The physicalist side grants that it has no agreed criterion for which physical systems are conscious; its functionalist members and Seth disagree, and Tegmark's proposal is held at Speculative (Round 3, rejoinder; PHYS-PRS-25, PHYS-PRS-28). *Leads to P4.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-05**: The physicalist side grants that it has no agreed criterion for which physical systems are conscious; its functionalist members and Seth disagree, and Tegmark's proposal is held at Speculative (Round 3, rejoinder; PHYS-PRS-25, PHYS-PRS-28). *Leads to P4.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-CONC-06**: The idealist side grants that its objection to Dennett (PRS-53) does not touch the Papineau wing of physicalism, which keeps experience fully real (Round 2, rejoinder). *Leads to K5, P2.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-06**: The idealist side grants that its objection to Dennett (PRS-53) does not touch the Papineau wing of physicalism, which keeps experience fully real (Round 2, rejoinder). *Leads to K5, P2.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-CONC-07**: The physicalist tradition's own responses page grants that illusionists "have not shown that the seeming is not itself a felt state". The idealist side cited it (Round 2, rejoinder), and the physicalist side did not contest it within the dialogue. *Leads to P3.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-CONC-07**: The physicalist tradition's own responses page grants that illusionists "have not shown that the seeming is not itself a felt state". The idealist side cited it (Round 2, rejoinder), and the physicalist side did not contest it within the dialogue. *Leads to P3.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
 
 **Candidate answers**
 
-- **CAND-KAS-ANS-01**: Offered by the idealist side to Round 1. The existence of experience is itself a datum, and physicalism assigns it no derived likelihood. Where mind meets brain, idealism expects loose correlates and mind–brain decoupling (Round 1, answer; PRS-13, PRS-71, CROSS-152). *Leads to K1, K2.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-ANS-01**: Offered by the idealist side to Round 1. The existence of experience is itself a datum, and physicalism assigns it no derived likelihood. Where mind meets brain, idealism expects loose correlates and mind–brain decoupling (Round 1, answer; PRS-13, PRS-71, CROSS-152). *Leads to K1, K2.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-ANS-02**: Offered by the physicalist side in its Round 1 rejoinder. On the phenomenal-concept strategy, experience is predicted wherever the right physical organisation is. What is missing is an a priori entailment, and a posteriori identities never come with one (PHYS-PRS-23). *Leads to K5, P2.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-ANS-02**: Offered by the physicalist side in its Round 1 rejoinder. On the phenomenal-concept strategy, experience is predicted wherever the right physical organisation is. What is missing is an a priori entailment, and a posteriori identities never come with one (PHYS-PRS-23). *Leads to K5, P2.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-ANS-03**: Offered by the physicalist side to Round 2. The relatum is the universal quantum state. The demand to say what it is "in itself" is declined as a principle, not a datum (Round 2, answer; PHYS-PRS-04, PHYS-PRS-33). *Leads to P5.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-ANS-03**: Offered by the physicalist side to Round 2. The relatum is the universal quantum state. The demand to say what it is "in itself" is declined as a principle, not a datum (Round 2, answer; PHYS-PRS-04, PHYS-PRS-33). *Leads to P5.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-ANS-04**: Offered by the idealist side to Round 3. The biological marks of an alter are the extrinsic appearance of dissociation, not its cause. Dissociation distributes one agency and does not divide it. AI has functional capacities but no private subject (Round 3, answer; PRS-58, PRS-67, PRS-96). *Leads to K3, K4.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-ANS-04**: Offered by the idealist side to Round 3. The biological marks of an alter are the extrinsic appearance of dissociation, not its cause. Dissociation distributes one agency and does not divide it. AI has functional capacities but no private subject (Round 3, answer; PRS-58, PRS-67, PRS-96). *Leads to K3, K4.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
 
 **Candidate open questions**
 
-- **CAND-KAS-OPEN-01**: Is there any observation whose probability the two grounds set differently? Raised by the physicalist side (Crux; Round 1, question). Neither side offered a test that the other accepted as already run. *Leads to P1, K2.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-OPEN-01**: Is there any observation whose probability the two grounds set differently? Raised by the physicalist side (Crux; Round 1, question). Neither side offered a test that the other accepted as already run. *Leads to P1, K2.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-OPEN-02**: What does each tradition predict about the timing of terminal lucidity relative to measured brain function, stated before the data are in? Raised by the physicalist side (Round 1, rejoinder). The idealist side has not yet stated a prediction. *Leads to P1, K1.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-OPEN-02**: What does each tradition predict about the timing of terminal lucidity relative to measured brain function, stated before the data are in? Raised by the physicalist side (Round 1, rejoinder). The idealist side has not yet stated a prediction. *Leads to P1, K1.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-OPEN-03**: What marks a dissociation other than its biological appearance? Does dissociation admit a reversal from outside the alter, of which Levin's bioelectric decoupling would be an instance (Kastrup wiki, Question 18; Levin PRS-96)? Raised by the physicalist side (Round 3, rejoinder), and not answered within the dialogue. *Leads to K3, K4.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-OPEN-03**: What marks a dissociation other than its biological appearance? Does dissociation admit a reversal from outside the alter, of which Levin's bioelectric decoupling would be an instance (Kastrup wiki, Question 18; Levin PRS-96)? Raised by the physicalist side (Round 3, rejoinder), and not answered within the dialogue. *Leads to K3, K4.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-OPEN-04**: Is the physicalist's refusal to name the intrinsic nature of the quantum state a finding or a choice? Is anything in the physical structure incompatible with its being the structure of mental activity? Raised by the idealist side (Round 2, rejoinder). *Leads to P5.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-OPEN-04**: Is the physicalist's refusal to name the intrinsic nature of the quantum state a finding or a choice? Is anything in the physical structure incompatible with its being the structure of mental activity? Raised by the idealist side (Round 2, rejoinder). *Leads to P5.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-OPEN-05**: On what ground does analytic idealism rule out an a posteriori identity of phenomenal and physical properties? Raised by the physicalist side (Round 1, rejoinder; responses.md, Objection 1), and not answered within the dialogue. *Leads to K5.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-OPEN-05**: On what ground does analytic idealism rule out an a posteriori identity of phenomenal and physical properties? Raised by the physicalist side (Round 1, rejoinder; responses.md, Objection 1), and not answered within the dialogue. *Leads to K5.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-OPEN-06**: Does "an illusion is already an experience" (PRS-53) defeat illusionism, or can the seeming be a non-phenomenal misrepresentation (PHYS-PRS-21, PHYS-PRS-22)? Raised by both sides (Round 2). *Leads to P3.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-OPEN-06**: Does "an illusion is already an experience" (PRS-53) defeat illusionism, or can the seeming be a non-phenomenal misrepresentation (PHYS-PRS-21, PHYS-PRS-22)? Raised by both sides (Round 2). *Leads to P3.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
 
 ### (b) Questions to mature members of the physicalist tradition
@@ -195,33 +195,33 @@ Naturalist physicalism holds that there is one world, and that within the domain
 
 An agreement is recorded as a candidate only where each side affirmed the point within this dialogue, in its own terms and for its own reasons. Everything else is **not agreed**. Even a candidate agreement holds only between the traditions as this vault states them. Only certification by mature members of *both* traditions, each from its own perspective, overcomes incommensurability, and then only in a way.
 
-- **CAND-KAS-AGR-01**: The manifest image is real. Persons, agency and value are not illusions. Physicalist: Opening statement (PHYS-PRS-08). Idealist: Opening statement (PRS-65); Round 3, answer (PRS-67).  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-01**: The manifest image is real. Persons, agency and value are not illusions. Physicalist: Opening statement (PHYS-PRS-08). Idealist: Opening statement (PRS-65); Round 3, answer (PRS-67).
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-AGR-02**: For observations in physics' own domain, the two pictures assign the same probabilities. Physicalist: Round 1, question. Idealist: Round 1, answer.  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-02**: For observations in physics' own domain, the two pictures assign the same probabilities. Physicalist: Round 1, question. Idealist: Round 1, answer.
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-AGR-03**: Looseness of neural correlates does not by itself discriminate between the grounds. Physicalist: Round 1, rejoinder (Churchland, Seth). Idealist: it rests its discriminating case on the decoupling cases and on experience as datum, not on looseness alone (Round 1, answer, second and third points). *This candidate is weaker than the others. The idealist side presented looseness as expected by its reading (PRS-71) and did not withdraw that, so certification may be declined.*  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-03**: Looseness of neural correlates does not by itself discriminate between the grounds. Physicalist: Round 1, rejoinder (Churchland, Seth). Idealist: it rests its discriminating case on the decoupling cases and on experience as datum, not on looseness alone (Round 1, answer, second and third points). *This candidate is weaker than the others. The idealist side presented looseness as expected by its reading (PRS-71) and did not withdraw that, so certification may be declined.*
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-AGR-04**: The cases where cognitive state comes apart from measured brain function, terminal lucidity among them, are where a discriminating test could exist. Physicalist: Round 1, rejoinder. Idealist: Round 1, answer (CROSS-152).  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-04**: The cases where cognitive state comes apart from measured brain function, terminal lucidity among them, are where a discriminating test could exist. Physicalist: Round 1, rejoinder. Idealist: Round 1, answer (CROSS-152).
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-AGR-05**: AI systems can have real functional agency, and that agency does not by itself show a private subject. Physicalist: Round 3, question and rejoinder (PHYS-PRS-15). Idealist: Round 3, answer (PRS-36, PRS-58, PRS-96).  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-05**: AI systems can have real functional agency, and that agency does not by itself show a private subject. Physicalist: Round 3, question and rejoinder (PHYS-PRS-15). Idealist: Round 3, answer (PRS-36, PRS-58, PRS-96).
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-AGR-06**: Neither tradition can yet say, from principle, which systems are subjects. Physicalist: Round 3, rejoinder. Idealist: Round 3, answer (PRS-97, PRS-78).  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-06**: Neither tradition can yet say, from principle, which systems are subjects. Physicalist: Round 3, rejoinder. Idealist: Round 3, answer (PRS-97, PRS-78).
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
-- **CAND-KAS-AGR-07**: Each side grants one unexplained primitive and stops explanation there. Physicalist: Opening statement (PHYS-PRS-33); Round 2, answer. Idealist: Opening statement (PRS-39).  
-  Certification: physicalist MM: pending  
-  Certification: Kastrup tradition MM: pending  
+- **CAND-KAS-AGR-07**: Each side grants one unexplained primitive and stops explanation there. Physicalist: Opening statement (PHYS-PRS-33); Round 2, answer. Idealist: Opening statement (PRS-39).
+  Certification: physicalist MM: pending
+  Certification: Kastrup tradition MM: pending
   Status: candidate
 
 **Not agreed** (each recorded above as an open candidate):

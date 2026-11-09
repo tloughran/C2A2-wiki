@@ -28891,7 +28891,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2006
-  Statement: [stated] Janitor (cloud re-reader of Mac run #39): 347 new broken wikilinks, mostly bare names like [[Levin]] or [[Stump Agent]] in inbox, proposal and sewing-log files. 'A jump that size more likely 
+  Statement: [stated] Janitor (cloud re-reader of Mac run #39): 347 new broken wikilinks, mostly bare names like [[Levin]] or [[Stump Agent]] in inbox, proposal and sewing-log files. 'A jump that size more likely
   Claim to test (in-house): Compare the janitor's link-matching code and settings between run #38 (10-25) and run #39 (11-01); re-run the old matcher on today's vault and count broken links.
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
@@ -28921,7 +28921,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1206
-  Statement: A task prompt is presumed to fix what the task writes. It does not. Two firings of the periodic monitor read the same prompt and reached different policies: one re-queued 53 premises that already had 
+  Statement: A task prompt is presumed to fix what the task writes. It does not. Two firings of the periodic monitor read the same prompt and reached different policies: one re-queued 53 premises that already had
   Claim to test (in-house): Read the 15d task prompt and list each instruction a literal reading and a cycle-consistent reading would apply differently; for the three double firings (10-04, 10-25, 11-01) record which reading reached the register.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
@@ -28941,7 +28941,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2017
-  Statement: [stated] Task counts disagree across today's reports. Scheduler health: '26 x DOUBLE-REGISTERED' (27 on 11-01). Morning status: 'twenty-four tasks flagged as double-registered' and 'all of them fired 
+  Statement: [stated] Task counts disagree across today's reports. Scheduler health: '26 x DOUBLE-REGISTERED' (27 on 11-01). Morning status: 'twenty-four tasks flagged as double-registered' and 'all of them fired
   Claim to test (in-house): From one registry read, count registered, active and double-registered tasks; record which source each report used and why the figures differ.
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
@@ -28966,7 +28966,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2022
-  Statement: [stated] Evening sync (duplicate firing 4ee90ab4): found four items the first pass missed (ECI letter of intent due Nov 16; Humanity AI and DELTA deadlines passed; nd-sociogram security check blocked 
+  Statement: [stated] Evening sync (duplicate firing 4ee90ab4): found four items the first pass missed (ECI letter of intent due Nov 16; Humanity AI and DELTA deadlines passed; nd-sociogram security check blocked
   Claim to test (in-house): Since 10-01, list duplicate-firing addenda that contain items absent from the first delivered message; record whether each item later reached Tom by any channel.
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
@@ -29057,7 +29057,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2038
-  Statement: [stated] Morning system health 9d43c495: 'Everything checked out healthy this morning' and, in the same message, 'the CPU, memory and process numbers come from the sandbox the check runs in, not from 
+  Statement: [stated] Morning system health 9d43c495: 'Everything checked out healthy this morning' and, in the same message, 'the CPU, memory and process numbers come from the sandbox the check runs in, not from
   Claim to test (in-house): List which morning-system-health fields are sandbox-measured vs Mac-measured; check whether the headline 'healthy' depends on sandbox-only fields; confirm the Summa index gaps (Day-001, Day-035) and the 7 unsynced refs files.
   PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
 
@@ -29067,7 +29067,7 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
 [QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1214
-  Statement: A 'new since yesterday' judgment presumes yesterday's record is in the file the run reads. Scheduler health called its 28 double registrations 'new since 2026-11-03' because neither block in its file 
+  Statement: A 'new since yesterday' judgment presumes yesterday's record is in the file the run reads. Scheduler health called its 28 double registrations 'new since 2026-11-03' because neither block in its file
   Claim to test: In-house: locate where 3bdbc789 wrote its 11-03 scheduler-health block and check whether 0550a148 read that location.
   PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
 
@@ -29256,3 +29256,43 @@ Not re-filed (standing unconsumed blocks): the 2026-10-25 cohort (MONITOR-689, -
   Evidence trajectory: Stable; no new sources; measurement not produced. Due since 11-03.
 
 Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEARCHED/DISPOSITIONED tag); the 2026-10-25 cohort (MONITOR-689, -691, -692, -693 literature; -690, -694, -685 empirical); the 2026-10-18 and 2026-10-11 cohorts. Not duplicated; cycle counts held (precedent 09-20..11-01).
+
+
+[QUEUED] [SEARCHED-15a: 2026-11-09] [SEARCHED-15b: 2026-11-09] [DISPOSITIONED-15c: 2026-11-09] [ASSUMPTION] ASSUMPTION-2067
+  Statement: [stated] Grace as part-whole: organ-building bioelectric pattern "outside the cells"; nesting controllable as technology.
+  Claim to test: Literature lane: Levin 2021 'Bioelectric signaling: reprogrammable circuits underlying embryogenesis, regeneration, and cancer' (Cell); Pai et al. on gap junctions and eye induction; Levin 2019 'The computational boundary of a self' (cognitive light cone). Claim: what the evidence shows about where the pattern resides and how far it is controllable.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2068
+  Statement: [stated] ~400 inbox files failing exact-name match against PROCESSED_LOG.md treated as processed on 4 spot checks.
+  Claim to test: In-house: match all inbox cards to PROCESSED_LOG by proposal ID; report any with no entry.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2069
+  Statement: [stated] Duplicate firings handled by per-task guards (check-before-write, existing-file checks).
+  Claim to test: In-house: for each of the 27 double-registered tasks, record its guard (stop / append / edit / none) and whether both copies wrote on 11-08.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2071
+  Statement: [stated] Re-queued monitor items unsearched since 10-11; pipeline takes only new items.
+  Claim to test: In-house: count MONITOR re-queue blocks since 10-11 carrying no SEARCHED tag; check the lit pipeline's item-selection rule.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-09] [SEARCHED-15b: 2026-11-09] [DISPOSITIONED-15c: 2026-11-09] [PRESUMPTION] PRESUMPTION-1227
+  Statement: [inferred] A 'master science' of dialectical engagement presumed not itself a tradition.
+  Claim to test: Literature lane: MacIntyre 1990 Three Rival Versions of Moral Enquiry; MacIntyre 1988 Whose Justice? Which Rationality? ch. 18-20; Aquinas ST I q.1 a.5 (sacra doctrina as noblest science); Aristotle NE I.2 (politics as architectonic).
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-09] [SEARCHED-15b: 2026-11-09] [DISPOSITIONED-15c: 2026-11-09] [PRESUMPTION] PRESUMPTION-1228
+  Statement: [inferred] 'Outside the cells' (bioelectric pattern) presumed the same relation as 'outside our light cone' (revealing knower).
+  Claim to test: Literature lane: Levin 2019 'The computational boundary of a self' (Front. Psychol.); Fields & Levin on multiscale competency; Kirchhoff et al. 2018 'The Markov blankets of life' (nested blankets).
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1229
+  Statement: [inferred] Duplicate-firing safety presumed handled by each task's own guard; final output order-dependent.
+  Claim to test: In-house: same table as ASSUMPTION-2069, plus for 'edit' guards whether the earlier output had already been read (e.g. system health 06:04 report).
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-08 (local pass): 7 items queued, 4 [IN-HOUSE], 3 literature-lane (ASSUMPTION-2067, PRESUMPTION-1227, -1228). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-08T05:42:12Z by cloud-lit-2026-11-08; not held, append safe.*
+
+*2026-11-09 (cloud pass): ASSUMPTION-2067, PRESUMPTION-1227, -1228 searched 15a/15b and dispositioned (DISPOSITION-1125..1127 -> MONITOR-710..712). IN-HOUSE items untouched.*

@@ -38110,7 +38110,7 @@ ASSUMPTION-2007:
   Statement: [stated] Janitor: 7 src_pub_refs_drift findings. wiki/vault/refs/ lacks 7 files from the Summa source vault (incl. 'Summa map.md', playlist.json, build_index.py) 'because sync_vault.sh only copies the transcripts/ and synthesis/ folders.' Summa index lacks Day-001 and Day-035 (under the 5-day alert threshold). Community explorer says 156 curated communities; data file has 155.
   Context: Wiki janitor 79a48799; morning system health 08ca5402
   Type: architectural
-  Related decisions: 
+  Related decisions:
   Testability: testable empirically (in-house)
   Status: UNTESTED
   Provenance:
@@ -39121,3 +39121,125 @@ ASSUMPTION-2065:
     Current status: UNTESTED
 
 *2026-11-07 14a: ASSUMPTION-2058..2065 (8). Queued: [IN-HOUSE] 2058, 2059, 2060, 2064; literature 2061. Not queued: 2062 (conceptual; routed to PRESUMPTION-1224/-1225, OPEN-293), 2063, 2065 (recurrences). No interactive Cowork session; 2061-2062 come from the chat-scrape summary of a claude.ai chat.*
+
+
+ASSUMPTION-2066:
+  Date identified: 2026-11-08
+  Statement: [stated] Chat scrape 5c1298a0 addendum (earlier walk, ~Nov 6): Tom framed C2A2's dialectical engagement as "a new behavioral science that serves as a master science" ("queen of the sciences"), parallel to Aristotle's politics and Aquinas's theology; theology adds "a knower outside the system who is willing to speak" ("the dad who just knows": trust first, then find it confirmed). Revelation would be "one more tradition's record entering the same process."
+  Context: Chat scrape 5c1298a0 (addendum to 2026-11-08_chat_summary.md; summary of a claude.ai walk chat)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2061; ASSUMPTION-2062; PRESUMPTION-1225; OPEN-293
+  Testability: framework commitment (not testable); routed to PRESUMPTION-1227, OPEN-295
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2066
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2067:
+  Date identified: 2026-11-08
+  Statement: [stated] Same addendum: grace as an ordinary part-whole relation. Kidney/eye cells build organs from "a bioelectric pattern that sits outside the cells" (Levin's gap-junction interventions make them "all for one"); "We even know how to control this nesting as a technology." Community-as-person / Christ as body named as the theological whole. ACPA test word: love; following it beyond what one can see is grace.
+  Context: Chat scrape 5c1298a0 (addendum)
+  Type: empirical
+  Related decisions: ASSUMPTION-2062; PRESUMPTION-1224; PRESUMPTION-1228
+  Testability: testable via literature (queued: what Levin's work shows about the location and controllability of organ-level bioelectric patterns)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2067
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2068:
+  Date identified: 2026-11-08
+  Statement: [stated] Wiki daily run 9bfaea26: (a) two duplicate-ID cards (PROP-2026-11-04-001/-002) left pending "rather than guess"; (b) a McGilchrist lead (No Small Endeavor eps 551, 553, 554) not carded because "a card needs evidence from the source"; (c) ~400 inbox files that fail an exact-name match against PROCESSED_LOG.md treated as processed: "a mismatch in how the log names files, not a real backlog", on four spot checks (May-Oct). Network unchanged: 1140 triplets, 164 connections, 112 findings; 0 proposals from 11 searches.
+  Context: Wiki daily run 9bfaea26
+  Type: methodological
+  Related decisions: OPEN-294; PRESUMPTION-086
+  Testability: testable in-house (queued: (c))
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2068
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2069:
+  Date identified: 2026-11-08
+  Statement: [stated] Duplicate firings now guarded task by task. Periodic monitor b0e9d80f: fourth double start (10-04, 10-25, 11-01, 11-08, each ~03:38); "the guard that saved today's run is a check just before writing"; both copies wrote backups under one name. Sewing agent ef261a7d: third sewing job today, stopped as duplicate. Janitor ab5cee7f, evening sync f01a572e, chat scrape 5c1298a0, morning system health c24859f0: each found an earlier copy's output and added to it. Scheduler health f4226910: "Confirm the cloud trigger fires before disabling the local entry."
+  Context: Sessions named above
+  Type: architectural
+  Related decisions: PRESUMPTION-1196; PRESUMPTION-1208; OPEN-292
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2069
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2070:
+  Date identified: 2026-11-08
+  Statement: [stated] Wright/Rohr agent 91c35ccb wrote PROP-2026-11-08-001 (Wright, "The Fresh Challenge of Romans", Dallas Q&A 2 Nov) from a news report, page 1 of 2, flagged "not to be promoted until a recording of the lectures is checked". Rohr skipped a second week (cac.org pages empty when fetched).
+  Context: Wright/Rohr agent 91c35ccb
+  Type: architectural
+  Related decisions: ASSUMPTION-2052; ASSUMPTION-2063
+  Testability: recurrence of ASSUMPTION-2052 pattern, now with an explicit promotion hold (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2070
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2071:
+  Date identified: 2026-11-08
+  Statement: [stated] Periodic monitor b0e9d80f: "Nothing re-queued since 10-11 has been searched. The search pipeline has only taken new items since 10-17, so re-queuing now just moves dates forward." MONITOR-688 expires 11-09, before the next weekly run; MONITOR-699 flips to REVISE ~11-29 absent a physicalist reviewer. The 11-08 cloud lit run (lock RELEASED 05:42:12Z) again searched only new items (ASSUMPTION-2061, PRESUMPTION-1222/-1224/-1225).
+  Context: Periodic monitor b0e9d80f; review/lit_pipeline.lock
+  Type: architectural
+  Related decisions: OPEN-296; MONITOR-688; MONITOR-699
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2071
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2072:
+  Date identified: 2026-11-08
+  Statement: [stated] Recurrences: evening sync f01a572e again says 14a/14b "produced nothing since 10-26" (local passes wrote 11-06 and 11-07 entries; ASSUMPTION-2058); cloud 14a/14b NO-OP three times (changelog/2026-11-07, -08, -09; the -09 file is UTC-dated ahead of local time); scheduler health 42 OK / 3 WARN / 30 FAIL, 27 DOUBLE-REGISTERED, NOT-CHECKED third day; morning status "every one fired on schedule" alongside 30 failures; new: pages-live-check exit 2 (GitHub unreachable), no pages_live 11-08 entry; voice-shell RED 6/403; openstory.ui not loaded; 6 tmp_obj; Summa index missing Day-035/Day-001; 7 refs unsynced (sync_vault.sh scope); janitor 294 broken wikilinks / 392 findings since baseline (11-07 report: 347 broken wikilinks; counts not on one definition); swap 94% (21.2/22.5 GB); disk 67% (11-07: 71%; different source); morning system health's first copy read 80 lines of the janitor file and missed staleness items; cell_dates.json held since Nov 3; WATCH-003 check 28; WATCH-004/-006 one check from stale; local lit pipeline failed 10-31 and 11-02..11-08 (start_process auto-declined, scripts/ unmounted).
+  Context: All sessions above
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-288; OPEN-292; PRESUMPTION-1216; PRESUMPTION-1219
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2072
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-08 14a: ASSUMPTION-2066..2072 (7). Queued: literature 2067; [IN-HOUSE] 2068, 2069, 2071. Not queued: 2066 (framework commitment; routed to PRESUMPTION-1227, OPEN-295), 2070, 2072 (recurrences). No interactive Cowork session; 2066-2067 come from the chat-scrape addendum summarizing a claude.ai chat.*

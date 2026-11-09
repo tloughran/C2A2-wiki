@@ -52434,3 +52434,111 @@ DISPOSITION-1124:
 ### Evidence-quality notes (2026-11-08)
 - One orchestrator ran 15a, 15b, 15c in sequence. Each 15b file was written without reading the matching 15a file, but the web searches were shared, so independence is procedural only.
 - 12 searches, 0 fetches; sources are title-only or background recall and are marked as such. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY or SYSTEMIC-RISK flags raised. [IN-HOUSE] items and the older bare-literature backlog were not touched; 'all queued items searched' is NOT met for the backlog.
+
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2067
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Levin, 2021 (Cell)
+  Summary: The literature supports that tissue-level bioelectric states carry patterning information and can be experimentally rewritten, so some control of organ-scale pattern is documented. It does not say the pattern lies 'outside' the cells, and 'nesting controllable as technology' is a programme claim, not a result.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2067_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2067 | Item type: ASSUMPTION (stated) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2067
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Levin, 2021 (Cell)
+  Specific risk: Theology built on a pattern 'outside the cells' could rest on a reading the biology does not support, and technology claims could outrun the evidence.
+  Summary: The challenge is to the gloss, not to the experiments: the pattern is a collective cell state, so 'outside the cells' risks reading a Platonic locus into a supervenient one, and 'controllable as technology' extends results from model organisms to organ-building. The strongest sources are unread.
+  STEELMAN: If the pattern is literally a state of cells, there is no 'outside', and the 'part-whole' reading then needs a different warrant (the pattern is a whole whose parts are the cells, not a separate thing). What would need to be true: a bioelectric pattern persists or instructs independent of the cells that carry it. How to test: read Levin 2021 for whether any result separates pattern from cell state.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2067_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2067 | Item type: ASSUMPTION (stated) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1125:
+  Date: 2026-11-09
+  Item: ASSUMPTION-2067
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support for control of tissue pattern against a moderate, conceptual challenge to the 'outside the cells' gloss; both rest on titles and recall.
+  Disposition: MONITOR (MONITOR-710 (Medium))
+  Reasoning: Neither side is read. The experimental core is supported but the 'outside' and 'technology' limbs are not, so INCORPORATE of the whole claim is not warranted, and REVISE is premature while the challenge is a reading point. MONITOR is recoverable.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2067 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2067_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2067_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1227
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: MacIntyre, 1988/1990
+  Summary: Aristotle and Aquinas both give an architectonic science that orders others, so a master science is a respectable idea. Neither says such a science stands outside tradition; MacIntyre's Thomism is itself a tradition.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1227_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1227 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1227
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: MacIntyre, 1988/1990
+  Specific risk: A design that treats the master science as neutral can import the host tradition's standards while claiming not to, and its adjudications will then read as tradition-specific.
+  Summary: On MacIntyre's own account, a master science of dialectical engagement would have to be a tradition or tradition-constituted, since he denies a neutral vantage. If the presumption is that the master science is not itself a tradition, the source the design draws on says otherwise. Not read; recall only.
+  STEELMAN: The strongest form of the objection is MacIntyre's: every rational enquirer works within a tradition, so a master science of engagement is a tradition among traditions and its claim to adjudicate must be earned in its own terms. What would need to be true: a vantage from which rival traditions can be compared that is not itself a tradition. How to test: ask whether the master science's criteria can be stated without drawing on any one tradition's concepts.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1227_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1227 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1126:
+  Date: 2026-11-09
+  Item: PRESUMPTION-1227
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support for an architectonic science against a moderate, on-point challenge from the same author the design leans on; both unread.
+  Disposition: MONITOR (MONITOR-711 (High))
+  Reasoning: Weak support with a moderate challenge to a presumption leans toward REVISE, but the challenge is recall, not reading, and a repair (name it as a tradition) is available. MONITOR with High priority because the designers did not know they relied on this and it shares a vulnerability with PRESUMPTION-1225 (see SYSTEMIC-RISK).
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1227 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1227_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1227_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1228
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Kirchhoff et al., 2018; Veit & Browning, 2022
+  Summary: Both Levin and Kirchhoff et al. give nested boundaries at several scales, so a common 'outside a boundary' structure across scales has a formal home. Neither equates a bioelectric pattern outside cells with a knower outside a light cone.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1228_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1228 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1228
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Kirchhoff et al., 2018; Veit & Browning, 2022
+  Specific risk: A theological or epistemic argument that moves between 'outside the cells' and 'outside our light cone' could trade on an equivocation on 'outside'.
+  Summary: The literature on blankets cautions against reading them as literal boundaries, and the two 'outsides' differ in kind: causal inaccessibility, goal scale, and supervenience. The presumption that they are one relation is not supported by what was found. Mostly titles and recall.
+  STEELMAN: If the analogy is only verbal, any conclusion drawn about the revealing knower from the bioelectric case is unsupported. What would need to be true: the same formal relation (a boundary that is informationally closed from one side) holds in both cases. How to test: write both in blanket terms and see whether the conditional independence structure matches.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1228_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1228 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1127:
+  Date: 2026-11-09
+  Item: PRESUMPTION-1228
+  Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support for nested boundaries against a moderate challenge that the two 'outsides' are different relations; both rest on titles and recall.
+  Disposition: MONITOR (MONITOR-712 (Medium))
+  Reasoning: The challenge is conceptual and largely unread, and the analogy may survive in a narrowed form. MONITOR is the recoverable choice; REVISE if the equivocation proves to carry the argument.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1228 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1228_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1228_against.md
+
+### Evidence-quality notes (2026-11-09)
+- One orchestrator ran 15a, 15b, 15c in sequence. Each 15b file was written without reading the matching 15a file, but the web searches were shared, so independence is procedural only.
+- 5 searches, 0 fetches; sources are title-only or background recall and are marked as such. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY flag. SYSTEMIC-RISK flagged: PRESUMPTION-1227 with PRESUMPTION-1225/-1224 (a vantage outside the traditions it assesses; MacIntyre's no-neutral-standpoint thesis), and PRESUMPTION-1228 with ASSUMPTION-2067 and PRESUMPTION-1224 (the 'outside' gloss and blanket-as-knower). Those earlier items were not re-dispositioned.
+- [IN-HOUSE] items (ASSUMPTION-2068, -2069, -2071, PRESUMPTION-1229, plus the older backlog) were not touched; 'all queued items searched' is NOT met for them.

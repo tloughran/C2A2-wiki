@@ -2530,3 +2530,9 @@ Started while the primary cloud run was mid-flight (decisions archive 04:36, led
 
 ## 2026-11-08 - C2A2 daily run (Sun, orchestrator)
 Phase 0: no new decision email. Phase 1: inbox clear, 0 files ingested, 0 triplets. Network unchanged: 1140 PRS / 164 CROSS / 112 FINDING. Pending = 4.
+
+## 2026-11-09 - C2A2 daily run (Mon, orchestrator)
+Phase 0: no new decision email (11-06 already applied). Phase 1: 0 ingested. Network unchanged: 1140 PRS / 164 CROSS / 112 FINDING. Pending = 6.
+
+### 2026-11-09 second orchestrator firing (04:37 local, verification only)
+Started one minute after the primary run finished (master wiki, review_log, level2 stream all 04:36; review page 2026-11-09_review.html 04:36; Gmail draft 09:36Z). Changed nothing. Verified: no new decision email (the 4 unread [C2A2-review-decision] threads are 2026-04-08, 04-27 x2, 07-23, all with archive entries); review_log.html address-clean (0 matches); pending = 6. Network 1140 PRS / 164 CROSS / 112 FINDING.

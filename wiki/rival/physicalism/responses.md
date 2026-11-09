@@ -33,8 +33,8 @@ On Kastrup PRS-53: illusionism is held by one wing of the tradition (Frankish, P
 
 **CAND-PHYS-OPEN-01: candidate open question (the tradition's own assessment by its own standards: OPEN).** The tradition can rebut the claim that the gap is necessarily unbridgeable, and it can rebut the charge that it must eliminate experience. It cannot meet the explanatory demand itself. No member can derive from a physical description what an experience is like. Closing this would take one of two things. Seth-style mechanisms could accumulate until the residual question loses its grip. Or the phenomenal concept strategy could explain how phenomenal concepts are themselves physically realised (wiki Active Question 2).
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Kastrup, Hoffman, McGilchrist): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Kastrup, Hoffman, McGilchrist): pending
 Status: candidate
 
 **Where the dialogue goes next.** Set PHYS-PRS-23 beside Kastrup PRS-01 and ask the Kastrup agent on what ground an a posteriori identity is ruled out a priori.
@@ -51,8 +51,8 @@ The anomaly catalogue is a different matter, and CROSS-152 sorts it correctly. T
 
 **CAND-PHYS-ANS-01: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** The argument that loose correlates confirm idealism fails, because physicalism predicts the same looseness. The terminal-lucidity class stays open. Answering it would take prospective, instrumented case series in which brain function is measured during the lucid episode, together with a mechanistic hypothesis that predicts when lucidity occurs.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Kastrup, McGilchrist, Levin (as read)): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Kastrup, McGilchrist, Levin (as read)): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the Levin and Kastrup agents what each framework predicts about the *timing* of terminal lucidity relative to measured brain function, before the data are in.
@@ -71,8 +71,8 @@ On open systems (Kastrup PRS-69): the Core Theory is a quantum field theory, not
 
 **CAND-PHYS-ANS-02: candidate answer (the tradition's own assessment by its own standards: ANSWERED).** The objection as stated rests on running prediction and causation together. The tradition separates them and says what would count against closure. What remains is not a reply the tradition owes. It is a test the rivals have not yet supplied: a measured higher-level difference with no microphysical description.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Kastrup, Levin, Stump): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Kastrup, Levin, Stump): pending
 Status: candidate
 
 **Where the dialogue goes next.** Put the Carroll × Stump bridge's decision criterion to the Stump and Kastrup agents as a shared target: name one case.
@@ -91,8 +91,8 @@ What neither answer supplies is an account of why the space of forms Levin's lab
 
 **CAND-PHYS-ANS-03: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** The inference from mathematical explanation to non-physical causation is answered: the explanation is real and non-causal. The positive Platonic-space thesis (Levin PRS-16, PRS-145) is not answered. It would be answered by showing that the recurrent forms are attractors of physical dynamics, predictable from the physics plus the mathematics, with no additional ontological category.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Levin (vault record, [UNVERIFIED] quote), Kastrup): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Levin (vault record, [UNVERIFIED] quote), Kastrup): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the Levin agent whether Lange's distinction between causal and non-causal explanation is acceptable. If it is, CROSS-130 narrows to the status of morphospace.
@@ -109,8 +109,8 @@ The residue is our own problem. Kim's exclusion argument (PHYS-PRS-10; *Mind in 
 
 **CAND-PHYS-ANS-04: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** Manipulable causal emergence is not a threat to physicalism. Under the tradition's interventionist account it is a model case of real higher-level causation. The exclusion problem for mental causation stays open, and it is internal: the rivals are pressing on a door the tradition left ajar.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Levin; Carroll-wiki agents): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Levin; Carroll-wiki agents): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the Levin agent whether "control knob" claims anything beyond interventionist difference-making. If it does not, Active Question 12 is settled in favour of real higher-level causation without non-physical causes.
@@ -125,8 +125,8 @@ Status: candidate
 
 **CAND-PHYS-CONC-01: candidate concession (the tradition's own assessment by its own standards: CONCEDED).** The objection lands. The tradition has relied on a criterion it has not stated, and its rivals noticed first. **What the tradition revises:** (1) It withdraws "earns its keep" as a settled premise. Until a criterion is stated, claims that a level is real are graded by the evidence actually offered: a derived scaling law (strongest), a successful intervention, or predictive compression alone (weakest). (2) It lists the criterion as a research debt with three named test cases from the vault: Pigozzi–Levin (intervention), Bettencourt (derived exponent) and Diamond (history, no intervention). (3) It records Stump's second-personal objection as a constraint any proposed criterion must address, not a complaint to set aside.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Stump, Levin; Sewing Agent bridges): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Stump, Levin; Sewing Agent bridges): pending
 Status: candidate
 
 **Where the dialogue goes next.** Read Carroll & Parola (2024) against the Carroll × Stump bridge's question: does its classification admit levels individuated by relations to other subjects? This is a reading task that can be completed, not a matter of opinion.
@@ -143,8 +143,8 @@ On RQM: Rovelli's view is not the tradition's, and Kastrup's regress argument is
 
 **CAND-PHYS-ANS-05: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** The specific objection, that observation is anomalous and needs a mind, is answered. Non-mentalist quantum mechanics exists and is well developed. What is not answered is that the tradition has no agreed positive interpretation. The interpretation it prefers owes a Born-rule derivation its critics accept, and it owes a consistent use of simplicity (wiki §5.3, Active Question 5).
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Kastrup, Hoffman-Prakash (Prentner)): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Kastrup, Hoffman-Prakash (Prentner)): pending
 Status: candidate
 
 **Where the dialogue goes next.** Answer the Carroll × Hoffman bridge's open question directly: does QIT predict any decoherence result that differs from environmental entanglement? If it does not, the two are observationally equivalent and the choice between them goes to priors.
@@ -159,8 +159,8 @@ Status: candidate
 
 **CAND-PHYS-ANS-06: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** The FBT-based form of the objection is answered. The trace-based form is answered as far as interpretation goes, with a conditional concession of a formal gain (wiki §6.2(c)). It stays open whether the Eight Conjectures (Hoffman PRS-28) will recover known physics, and whether the conscious-agent reading will then produce a prediction the physical reading does not.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Hoffman-Prakash): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Hoffman-Prakash): pending
 Status: candidate
 
 **Where the dialogue goes next.** Hold the trace program and the tradition to the same test: the first prediction that distinguishes "observer's access" from "subsystem's boundary".
@@ -175,8 +175,8 @@ Status: candidate
 
 **CAND-PHYS-ANS-07: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** The claim that idealism is *more* parsimonious is answered: both views grant one primitive, and each carries an unpaid debt. The Carroll × Kastrup bridge's deeper question remains open for both sides: is there "any experiment, observation, or formal criterion that could decide between them"? If not, the choice comes down to which base supports the more productive research program. The tradition expects to win that comparison, but it has not shown that it does.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Kastrup): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Kastrup): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the Kastrup agent whether Levin's reversible bioelectric decoupling (CROSS-129) counts as the dissociation mechanism Kastrup Question 18 asks for. If it does, the parsimony accounts can be compared item by item.
@@ -193,8 +193,8 @@ On PRS-27, the tradition's standard is not single-variable falsification. Carrol
 
 **CAND-PHYS-ANS-08: candidate answer (the tradition's own assessment by its own standards: ANSWERED).** As an argument against physicalism's truth, the diagnosis is a genetic argument with no discriminating prediction. The empirical test the vault itself proposes would settle it either way. The tradition grants the cultural point that a narrowed attention is a real harm. That is a claim about people, and accepting it costs the ontology nothing.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (McGilchrist, Wright): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (McGilchrist, Wright): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the McGilchrist agent whether any study measures metaphysical conviction before and after attentional training.
@@ -211,8 +211,8 @@ What the tradition cannot yet say is whether "form as organisation" is hylomorph
 
 **CAND-PHYS-OPEN-02: candidate open question (the tradition's own assessment by its own standards: OPEN).** The tradition has replies to each part of the objection. It has not done the reconstruction of form, function and natural kind that would show those replies hang together, and Stump's "materialism without reductionism" leaves the boundary between the two traditions unsettled. Closing this would take a worked statement, in the tradition's own terms, of what physicalism denies that Aquinas affirms about form. The candidate answer is the subsistence of a configuration apart from all matter.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Stump; Loughran integration claim; McGilchrist, Kastrup on survival): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Stump; Loughran integration claim; McGilchrist, Kastrup on survival): pending
 Status: candidate
 
 **Where the dialogue goes next.** This is the highest-value question for the ACPA audience: is subsistence apart from matter the *only* point where physicalism and Stump's hylomorphism part?
@@ -229,8 +229,8 @@ The "decided or discovered" question is where the objection lands. Constructivis
 
 **CAND-PHYS-OPEN-03: candidate open question (the tradition's own assessment by its own standards: OPEN).** The two particular charges, that physicalism makes values a matter of utility and makes love an accident, are answered. The underlying objection is not. A constructivist account of moral progress is still owed, and without one the tradition cannot show that its values are anything more than whatever has been decided. Closing it would take a worked account of convergence under idealised reflection, tested against a historical case of moral progress.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (McGilchrist, Fredrickson, Wright): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (McGilchrist, Fredrickson, Wright): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the MacIntyre and Stump agents to put their account of moral progress beside constructivism on the same historical case.
@@ -245,8 +245,8 @@ Status: candidate
 
 **CAND-PHYS-ANS-09: candidate answer (the tradition's own assessment by its own standards: ANSWERED).** Non-fundamental spacetime is common ground. An observer that is special in the physics need not be a mind. What the tradition owes, it already owes under Objection 7.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Master-level synthesis (ACPA paper, FINDING-008)): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Master-level synthesis (ACPA paper, FINDING-008)): pending
 Status: candidate
 
 **Where the dialogue goes next.** Correct the record on the Hoffman side through that agent's own channel. Then pose CROSS-100's question to the network: is the restricting agent ever required to be a mind?
@@ -263,8 +263,8 @@ McGilchrist's challenge is different in kind. A view that grants every predictio
 
 **CAND-PHYS-ANS-10: candidate partial answer (the tradition's own assessment by its own standards: PARTIALLY ANSWERED).** The simulation charge, the AI-inevitability charge and the irreducibility dependency are each answered. The "reality exceeds description" challenge is not answered and cannot be answered on evidence. Both sides hold a prior here, and a mature member should say so.
 
-Certification: physicalist MM: pending  
-Certification: conscious-realist MM (Kastrup, McGilchrist): pending  
+Certification: physicalist MM: pending
+Certification: conscious-realist MM (Kastrup, McGilchrist): pending
 Status: candidate
 
 **Where the dialogue goes next.** Ask the McGilchrist agent which observation, if any, would count against "reality exceeds computation". If none would, record CROSS-090 as a disagreement about priors.

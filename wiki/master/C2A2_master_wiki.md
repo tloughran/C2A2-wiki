@@ -1,5 +1,5 @@
 # C2A2 Master Wiki
-*Maintained by the Master C2A2 Agent | Last updated: 2026-11-08 (Sun cloud orchestrator run - no new decisions (11-06 email already applied 11-07), 0 ingested, 0 new proposals (no verified-new, non-duplicate sources found in hunt), 4 pending; Review Log + Level-2 stream refreshed; network 1140 PRS / 164 CROSS / 112 FINDING)*
+*Maintained by the Master C2A2 Agent | Last updated: 2026-11-09 (Mon cloud orchestrator run - no new decisions, 0 ingested, 0 orchestrator proposals (Friston searched, nothing verifiably new), 6 pending incl. 2 Levin specialist cards; Review Log + Level-2 stream refreshed; network 1140 PRS / 164 CROSS / 112 FINDING)*
 *Network initialized: 2026-04-03 — within 24 hours of Karpathy's Wiki-agent methodology proposal*
 
 ---

@@ -25822,3 +25822,40 @@ MONITOR-701 (11-09), -702 (11-10), -703 (11-11), -704 (11-12), -705 (11-13), -70
 - **Backup collision:** both instances wrote `*.md.bak.20261108-pre-15d`. This instance's copy (cp -p, taken before 03:41:08; sizes 2603323 / 1748638 / 784388) holds the pre-run state, so the backups are still a valid rollback point.
 - **One point the committed note leaves implicit:** no 15d re-trigger block filed after 10-11 has been consumed, and the 10-11 non-literature cohort has now been held for 4 weekly runs. For Tom: either the 15abc pipeline takes re-trigger blocks, or those cohorts drop to monthly (LOW-PRIORITY-MONITOR) cadence. MONITOR-699's 15c REVISE trigger (no insider review within 4 weekly cycles) falls on about 2026-11-29.
 - **For Tom:** this is the **fourth** double firing (10-04, 10-25, 11-01, 11-08). Each time, two sessions started at about 03:38 from the single `30 3 * * 0` task. The check that worked was a size/tag guard right before the write.
+
+## 2026-11-09 RUN - 15c dispositions (lit pipeline)
+
+
+MONITOR-710:
+  Date: 2026-11-09
+  Source item: ASSUMPTION-2067 (DISPOSITION-1125)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a: The literature supports that tissue-level bioelectric states carry patterning information and can be experimentally rewritten, so some control of organ-scale pattern is documented. It does not say the pattern lies 'outside' the cells, and 'nesting controllable as technology' is a programme claim, not a result. (Moderate, preliminary). 15b: The challenge is to the gloss, not to the experiments: the pattern is a collective cell state, so 'outside the cells' risks reading a Platonic locus into a supervenient one, and 'controllable as technology' extends results from model organisms to organ-building. The strongest sources are unread. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise) a read of Levin 2021 showing pattern-as-network-state with documented reprogramming; (-> REVISE) if the 'outside the cells' wording cannot be cashed out as anything other than a Platonic locus.
+  Monitoring cadence: Weekly (default); first check due 2026-11-16
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2067 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2067_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2067_against.md
+
+MONITOR-711:
+  Date: 2026-11-09
+  Source item: PRESUMPTION-1227 (DISPOSITION-1126)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: Aristotle and Aquinas both give an architectonic science that orders others, so a master science is a respectable idea. Neither says such a science stands outside tradition; MacIntyre's Thomism is itself a tradition. (Weak, preliminary). 15b: On MacIntyre's own account, a master science of dialectical engagement would have to be a tradition or tradition-constituted, since he denies a neutral vantage. If the presumption is that the master science is not itself a tradition, the source the design draws on says otherwise. Not read; recall only. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'the master science is a tradition-constituted enquiry') a read of Three Rival Versions and Whose Justice? ch.18-20 confirming it; (-> REVISE) if the design documents show the master science is specified as tradition-neutral.
+  Monitoring cadence: Weekly (default); first check due 2026-11-16
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1227 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1227_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1227_against.md
+
+MONITOR-712:
+  Date: 2026-11-09
+  Source item: PRESUMPTION-1228 (DISPOSITION-1127)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Both Levin and Kirchhoff et al. give nested boundaries at several scales, so a common 'outside a boundary' structure across scales has a formal home. Neither equates a bioelectric pattern outside cells with a knower outside a light cone. (Weak, preliminary). 15b: The literature on blankets cautions against reading them as literal boundaries, and the two 'outsides' differ in kind: causal inaccessibility, goal scale, and supervenience. The presumption that they are one relation is not supported by what was found. Mostly titles and recall. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise stating the formal relation shared by both) a read of Levin 2019 and Kirchhoff et al. 2018 with the blanket structure of each case written out; (-> REVISE) if the analogy is shown to be verbal only.
+  Monitoring cadence: Weekly (default); first check due 2026-11-16
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1228 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1228_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1228_against.md
+

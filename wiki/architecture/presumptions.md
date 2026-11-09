@@ -26673,3 +26673,66 @@ PRESUMPTION-1226:
     Current status: UNTESTED
 
 *2026-11-07 14b: PRESUMPTION-1223..1226 (epistemic 3, normative 1; risk High 2, Medium 2). Checked against 14a 2058-2065 and the registry. Not re-surfaced (already registered; new evidence today): id collisions roll forward without incident (PRESUMPTION-086; today's misapplied decision lines are such an incident); cloud/local copies equivalent (PRESUMPTION-1196); count comparisons share definitions (PRESUMPTION-1216; ASSUMPTION-2060, 2065); local passes not found by readers (PRESUMPTION-1219; ASSUMPTION-2058); each copy's outcome taken as the task's (PRESUMPTION-1208; ASSUMPTION-2064).*
+
+
+PRESUMPTION-1227:
+  Date surfaced: 2026-11-08
+  Statement: [inferred] Calling C2A2's dialectical engagement a "master science" presumes the engagement process is itself not one more tradition: that it can adjudicate among traditions, revelation included as "one more tradition's record", from a standpoint the traditions can all accept. MacIntyre (Three Rival Versions) treats encyclopaedia, genealogy and tradition as rival accounts of inquiry itself, so the process would need to say which of these it is. The host-tradition point (PRESUMPTION-1225) is the same question one level down.
+  Evidence it was operative: Chat scrape 5c1298a0 addendum (ASSUMPTION-2066)
+  Why it was unstated: the master-science role is carried by analogy (Aristotle's politics, Aquinas's theology), not argued
+  Type: normative
+  Related decisions: ASSUMPTION-2066; PRESUMPTION-1225; OPEN-293; OPEN-295
+  Testability: testable via literature
+  Risk if wrong: High: if the process is a tradition, ACPA and outreach framing that presents it as neutral adjudicator invites the objection the project is built to answer.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1227
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1228:
+  Date surfaced: 2026-11-08
+  Statement: [inferred] The grace analogy presumes the bioelectric pattern is "outside the cells" in the same sense that a knower would be outside our cognitive light cone / Markov blanket. In Levin's work the pattern is a tissue-level state carried by the cells' own voltages and gap junctions: outside any one cell, inside the collective. A revealing knower is meant to be outside the collective. The analogy works for part-whole nesting; carrying it to an outside knower changes what "outside" means.
+  Evidence it was operative: Chat scrape 5c1298a0 addendum (ASSUMPTION-2067)
+  Why it was unstated: "outside" is used once for both relations
+  Type: epistemic
+  Related decisions: ASSUMPTION-2067; PRESUMPTION-1224
+  Testability: testable via literature
+  Risk if wrong: Medium: a biologist at the poster or in Video 2 could reject the bridge on this point while accepting the biology.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1228
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1229:
+  Date surfaced: 2026-11-08
+  Statement: [inferred] Duplicate-firing safety is presumed to be handled where each task notices an earlier copy. The guards differ: stop (sewing, periodic monitor, janitor), append (chat scrape, evening sync), or edit the earlier output (morning system health, which corrected a first copy that read 80 lines). Which copy's output is final then depends on firing order and on each task's guard, and tasks with no guard (14a/14b, lit pipeline locally) rely on failing. The scheduler health advice keeps both copies enabled until each cloud trigger is confirmed.
+  Evidence it was operative: ASSUMPTION-2069; ASSUMPTION-2072
+  Why it was unstated: each session treats its guard as a local fix; no session lists guards across tasks
+  Type: structural
+  Related decisions: ASSUMPTION-2069; PRESUMPTION-1196; PRESUMPTION-1208; OPEN-292
+  Testability: testable in-house
+  Risk if wrong: Medium: outputs are order-dependent; a task whose second copy edits the first can silently change a report already read (as with system health today).
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1229
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-08 local pass (final assistant message per session via session_info; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-08 14b: PRESUMPTION-1227..1229 (normative 1, epistemic 1, structural 1; risk High 1, Medium 2). Checked against 14a 2066-2072 and the registry. Not re-surfaced (already registered; new evidence today): cloud/local copies equivalent (PRESUMPTION-1196); each copy's outcome taken as the task's (PRESUMPTION-1208); count comparisons share definitions (PRESUMPTION-1216; janitor 294 vs 347, disk 67% vs 71%); local passes not found by readers (PRESUMPTION-1219; evening sync again); approval as per-card review (PRESUMPTION-1226; no decision email today); cards from secondary text (ASSUMPTION-2052; Wright card now held from promotion).*
