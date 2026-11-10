@@ -1436,3 +1436,15 @@ Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, f
 - Rohr 'sin as separateness' (PRS-118) with Friston over-precise self/other boundary, Kastrup dissociation, and Stump/Wright as dissenting checks: a coherent bridge candidate for a CROSS entry. **MEDIUM; flag for Watch List pending Stump/Wright check.**
 - Wright 'no serpent' (PRS-81) read as an absorbing attractor (Friston) with Stump on beatitude: paradigm-bridge candidate, Speculative framing. **Not escalated.**
 - Housekeeping: 11-04-001/002 IDs collide across McGilchrist/Kastrup; two cards left pending rather than guess.
+
+
+## FINDING-113 - Ingest of 6 approved cards: two Friston-formalism contacts from Levin, one AI-proof protocol
+
+**Date:** 2026-11-10 · **Source signals:** 5 forwarded cards (kastrup death-imagination, wolfram rule 30, wright Romans, levin robot-science + IAI), 11 triplets; 1 McGilchrist card was a duplicate of PRS-87 · **Confidence:** Medium-Low · **Recommended action:** read primary sources before any upgrade (Kastrup members' recording; Wright Dallas recording; Wolfram Instructions for Agents page).
+
+- **Levin x Friston (CROSS-166), MEDIUM:** Levin twice borrows active inference: experiment design as inference over hypotheses (Speculative, summary-level), and target anatomy as stored pattern-memory (High, his own words). The second is a sharp, testable reading: bioelectric set-points as priors. This extends FLAG-017 (virtual governor = group Markov blanket) rather than opening a new vector. **Not escalated separately; noted under FLAG-017.**
+- **Wolfram Rule 30 x Friston CROSS-053, MEDIUM:** the first external, prize-backed test that could confirm or defeat the irreducibility premise CROSS-053 has treated as given. Watch-only until a result exists. **Not escalated.**
+- **Kastrup x Hoffman (CROSS-165), MEDIUM-LOW:** both demote the objective world to a perspective-relative presentation. Rests on a host write-up. **Not escalated.**
+- **Wright Romans, LOW until checked:** Summa 2026 bridge candidate; secondhand news report only.
+- **C2A2 meta (AI membership), note:** the Rule 30 guidelines are a live example of a tradition writing entry rules for non-human contributors (verified human + runnable check). Useful comparison case for C2A2's own AI-membership criterion; no flag.
+- Housekeeping: PROP-2026-11-04-001 (Glasgow) duplicated PRS-87's source; the PROP-2026-11-04 ID collision is now fully resolved (all four cards approved; no pending leftovers). Levin PROP-2026-11-09-001 source is dated 2025-10-09 (outside the 60-day filter) but was approved.

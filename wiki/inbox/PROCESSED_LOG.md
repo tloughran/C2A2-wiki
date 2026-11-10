@@ -2536,3 +2536,13 @@ Phase 0: no new decision email (11-06 already applied). Phase 1: 0 ingested. Net
 
 ### 2026-11-09 second orchestrator firing (04:37 local, verification only)
 Started one minute after the primary run finished (master wiki, review_log, level2 stream all 04:36; review page 2026-11-09_review.html 04:36; Gmail draft 09:36Z). Changed nothing. Verified: no new decision email (the 4 unread [C2A2-review-decision] threads are 2026-04-08, 04-27 x2, 07-23, all with archive entries); review_log.html address-clean (0 matches); pending = 6. Network 1140 PRS / 164 CROSS / 112 FINDING.
+
+## 2026-11-10 - C2A2 daily run (Tue, orchestrator)
+Phase 0: decision email 2026-11-09 (6 APPROVE) applied; moved to approved/, copied to inbox/. Phase 1 ingested:
+- PROP-2026-11-04-002 kastrup 2026-11-04_kastrup_death-imagination-reality.md PRS-104, PRS-105, PRS-106 (3 triplets)
+- PROP-2026-11-04-001 mcgilchrist 2026-11-04_mcgilchrist_british-academy-brain-asymmetry-glasgow.md 0 triplets (duplicate of PRS-87, same event URL)
+- PROP-2026-11-07-001 wolfram 2026-11-07_wolfram_rule30-prize-challenge-for-ais.md PRS-84, PRS-85 (2 triplets)
+- PROP-2026-11-08-001 wright 2026-11-08_wright_fresh-challenge-of-romans-dallas-qa-israel-true-humanity.md PRS-87, PRS-88 (2 triplets)
+- PROP-2026-11-09-001 levin 2026-11-09_levin_alife-keynote-robot-science-translation.md PRS-154, PRS-155 (2 triplets)
+- PROP-2026-11-09-002 levin 2026-11-09_levin_iai-memory-intelligence-without-brain.md PRS-156, PRS-157 (2 triplets)
+Total new triplets: 11. CROSS-165, CROSS-166. FINDING-113. The PROP-2026-11-04 ID-collision leftovers are now resolved.

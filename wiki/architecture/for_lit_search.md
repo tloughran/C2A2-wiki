@@ -29296,3 +29296,52 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
 *2026-11-08 (local pass): 7 items queued, 4 [IN-HOUSE], 3 literature-lane (ASSUMPTION-2067, PRESUMPTION-1227, -1228). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-08T05:42:12Z by cloud-lit-2026-11-08; not held, append safe.*
 
 *2026-11-09 (cloud pass): ASSUMPTION-2067, PRESUMPTION-1227, -1228 searched 15a/15b and dispositioned (DISPOSITION-1125..1127 -> MONITOR-710..712). IN-HOUSE items untouched.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2073
+  Statement: [stated] PRS activity recoverable by a grep census of PRS ids per source.
+  Claim to test: In-house: run the census (counts per source) and, for a 20-hit sample per source, label each hit as substantive use vs index/log/template mention.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-10] [SEARCHED-15b: 2026-11-10] [DISPOSITIONED-15c: 2026-11-10] [ASSUMPTION] ASSUMPTION-2075
+  Statement: [stated] Never-cited ('dead') triplets are a vault-quality signal.
+  Claim to test: Literature lane: uncitedness as a quality indicator and its limits: Garfield 1998 'I had a dream ... about uncitedness' (The Scientist); Van Noorden 2017 'The science that's never been cited' (Nature 552); Hamilton 1990-91 Science uncitedness reports and their critique.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2076
+  Statement: [stated] Active-findings count covers only 005..035; FINDING-018 and PROP-2026-11-04-001/-002 duplicated.
+  Claim to test: In-house: list findings by format generation (with/without status); list all duplicated FINDING and PROP ids.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2077
+  Statement: [stated] Inbox 'unprocessed' check (file name vs PROCESSED_LOG) unreliable; 316 flagged.
+  Claim to test: In-house: re-match the 316 against PROCESSED_LOG by file name OR proposal ID; report the residue.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2078
+  Statement: [stated] Cloud lit copy appends lock lines manually; lock directory never created.
+  Claim to test: In-house: check whether lit_pipeline.lock.d exists and whether any LOCKED line since 10-15 was taken by the script; list days both copies wrote.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-10] [SEARCHED-15b: 2026-11-10] [DISPOSITIONED-15c: 2026-11-10] [ASSUMPTION] ASSUMPTION-2079
+  Statement: [stated] Levin pattern-memory ~ active-inference prior; mind blindness ~ reading a rival tradition.
+  Claim to test: Literature lane: Friston, Levin, Sengupta & Pezzulo 2015 'Knowing one's place: a free-energy approach to pattern regulation' (J R Soc Interface); Pezzulo & Levin 2015 'Re-membering the body'; Levin 2022 'Technological Approach to Mind Everywhere' (Front Syst Neurosci); MacIntyre 1988 Whose Justice? Which Rationality? ch. 19 'Tradition and Translation'.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-10] [SEARCHED-15b: 2026-11-10] [DISPOSITIONED-15c: 2026-11-10] [PRESUMPTION] PRESUMPTION-1230
+  Statement: [inferred] A PRS id in a file presumed to be an activity involving that triplet; dead = no id trace.
+  Claim to test: Literature lane: citation function/classification: Moravcsik & Murugesan 1975 'Some results on the function and quality of citations' (Soc Stud Sci); Teufel, Siddharthan & Tidhar 2006 'Automatic classification of citation function' (EMNLP); MacRoberts & MacRoberts 1989 'Problems of citation analysis'. In-house: same sample as ASSUMPTION-2073.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1231
+  Statement: [inferred] Counts presume uniform record format; format drift unsignaled.
+  Claim to test: In-house: for each count in the morning briefing and metrics snapshot, record which record formats it matches and the share of records it misses.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-10] [SEARCHED-15b: 2026-11-10] [DISPOSITIONED-15c: 2026-11-10] [PRESUMPTION] PRESUMPTION-1232
+  Statement: [inferred] Single-agent resemblances presumed to be cross-tradition connections; signals unclassified.
+  Claim to test: Literature lane: Gentner 1983 'Structure-mapping' (Cogn Sci) on surface vs relational similarity; MacIntyre 1988 ch. 19; Levin 2022 TAME. In-house: classify recent agent 'cross-tradition signals' by the metric's four classes.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-09 (local pass): 9 items queued, 5 [IN-HOUSE], 4 literature-lane (ASSUMPTION-2075, -2079, PRESUMPTION-1230, -1232). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-09T05:42:19Z by cloud-lit-2026-11-09; not held, append safe.*
+
+*2026-11-10 (cloud pass): ASSUMPTION-2075, -2079, PRESUMPTION-1230, -1232 searched 15a/15b and dispositioned (DISPOSITION-1128..1131 -> MONITOR-713..716). IN-HOUSE items untouched.*

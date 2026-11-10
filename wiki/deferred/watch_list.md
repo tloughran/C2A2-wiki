@@ -7564,3 +7564,22 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15.
 
 *Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-10
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest 10-17). `review/archive/` still 29 files, latest `2026-11-07_decisions.md`; no new CHANGE / CHECK / CONDITIONAL. Vault `.md` files newer than the last watch-list write (PROCESSED_LOG, 11-09 sync summaries, open_questions, monitor_queue, for_lit_search, changelogs, 2 new Levin `pending/` cards) grepped for tracked IDs, `xZcB-tmvJaU`, `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, INTEGRITY FLAG, WATCH-003..006: carry-over/historical only (monitor_queue "Watch for" lines are Agent 15d's MONITOR items, not Agent 16 intake). No ruling, deferral or watch request.
+  Items checked: 0 (none due; no awaited event occurred).
+  Event sweep (not counted): WATCH-003, no new decision file. WATCH-004, Fredrickson file mtime still 10-08; PROP-2026-10-01-001 not in `pending/` (6 files). WATCH-005, no transcript in vault. WATCH-006, `prs_triplets.md` unchanged (10-16); `sewing_agent_log.md` unchanged since 11-08 04:43; no MacIntyre card in `pending/`.
+  Items resolved: 0 · Still watching: 4 (WATCH-003, -004, -005, -006) · Stale: 2 (WATCH-003, 28 checks; WATCH-006, 6 checks — both Escalate to Tom; flags unchanged) · Approaching threshold: WATCH-004 (5), WATCH-005 (4) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15.
+
+**Open for Tom (unchanged):** WATCH-006 stale flag (pick a/b/c); WATCH-003 INTEGRITY FLAG ruling; WATCH-004 Fredrickson CT-Signals edit; WATCH-005 Wonderstruck transcript paste; split the ~900 KB watch list.
+
+*Run completed 2026-11-10. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-10 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 4 `needs_review/` files carry [TRACKED-16]; mtimes unchanged. `review/archive/` unchanged (latest `2026-11-07_decisions.md`); nothing in the vault newer than this morning's first-firing write. Items checked: 0 · Resolved: 0 · Watching: 4 · Stale: 2 (WATCH-003, WATCH-006, unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15.
+
+*Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*

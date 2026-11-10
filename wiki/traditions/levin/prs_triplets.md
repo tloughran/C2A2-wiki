@@ -1388,7 +1388,43 @@ PRS-153:
   Confidence: Medium
   Evidence: Stated as one of four implications in the post; no experimental claim made.
 
-*Total PRS triplets: 153*
+PRS-154:
+  Problem: How can scientists discover the competencies of unconventional intelligences (cells, Xenobots) when human intuition fails ('mind blindness')?
+  Resource: Automated robot scientist running closed-loop hypothesis-test cycles on Xenobots; multi-scale competency framework; agential materials.
+  Solution: Robot science as a translation layer that explores the behaviour space of diverse intelligences faster than human-led experimentation.
+  Date Added: 2026-11-10
+  Source: Meet a new synthetic colleague: robot science as a translation tool between diverse intelligences (thoughtforms.life); PROP-2026-11-09-001
+  Confidence: Medium (summarised from page; not independently verified)
+  Evidence: Keynote describes the project with Bongard and Blackiston to build a robot scientist for synthetic morphology.
+
+PRS-155:
+  Problem: What is the right model of the scientific process itself when the subject matter is an agent?
+  Resource: Analogy between the discovery cycle and the active inference loop.
+  Solution: Frame experiment design as active inference over hypotheses, giving a common formalism for scientist and subject.
+  Date Added: 2026-11-10
+  Source: Meet a new synthetic colleague: robot science as a translation tool between diverse intelligences (thoughtforms.life); PROP-2026-11-09-001
+  Confidence: Speculative (summary-level only)
+  Evidence: Keynote draws parallels between scientific discovery and the active inference loop.
+
+PRS-156:
+  Problem: Molecular medicine works at the hardware level yet cannot micromanage anatomical outcomes such as regeneration or tumour normalisation.
+  Resource: Hardware/software analogy; bioelectric networks as the cells' native interface for storing pattern-memories and goal states.
+  Solution: Communicate target anatomical pattern-memories to cell collectives through bioelectric signalling rather than rewiring molecular hardware (cited: ectopic organs, tumour normalisation, limb regeneration, birth-defect repair).
+  Date Added: 2026-11-10
+  Source: Michael Levin: Memory and intelligence do not require a brain (IAI, 2026-11-04); PROP-2026-11-09-002
+  Confidence: High (restatement of published program; free portion read)
+  Evidence: "our goal is to communicate to the cells a particular pattern-memory of what it is that they should be building."
+
+PRS-157:
+  Problem: If biobots of unmodified cells show behaviour not predicted by genome or selection history, what explains their competencies?
+  Resource: Xenobots and Anthrobots as novel beings without lengthy evolutionary history; behavioural and cognitive-science tools applied to unconventional substrates.
+  Solution: Treat memory, learning and goal-directedness as capacities of cells and tissues, not brains only; 'mind blindness' is a methodological error.
+  Date Added: 2026-11-10
+  Source: Michael Levin: Memory and intelligence do not require a brain (IAI, 2026-11-04); PROP-2026-11-09-002
+  Confidence: Medium (full argument behind paywall)
+  Evidence: "This notion that it's only to be found in the brain is just an assumption, not an established scientific fact."
+
+*Total PRS triplets: 157*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

@@ -2046,3 +2046,35 @@ Source: 373 | Colin Camerer on the Neuroscience of Economic Thinking
 - **Fredrickson (positive emotion, prosociality):** altruistic choice under economic pressure touches her broaden-and-build account.
 - **C2A2 detector design (weak signal):** behavioral game theory is a ready-made experimental toolkit for "how people behave under richly informed circumstances." It may be worth a methods note, separate from the Carroll wiki.
 - Not a physics episode. No Arkani-Hamed, Wolfram, or Hoffman signal.
+
+
+### Signals from kastrup PROP-2026-11-04-002 (2026-11-10)
+Source: Death, Imagination & Reality (With Reality in Mind)
+- **McGilchrist:** "meaning is the oxygen of life" and "the worst insult to mind is to say it was all just a dream" line up with right-hemisphere attention to the living whole against left-hemisphere literalism. Convergence candidate; verbal vs. structural undetermined.
+- **Hoffman:** avatar/alter language and a world that "seems objective while identified" echo interface theory. Open whether point-of-view identification maps onto the interface or departs from it.
+- **Stump / Wright / Rohr:** a "welcoming committee" invites comparison with the communion of saints; Wright's bodily resurrection is the sharp contrast (Kastrup: present cognitive structure does not carry over).
+- **Fredrickson:** judging a belief by the warmth it produces is close to broaden-and-build's functional view of positive affect.
+- [TENSION/CONVERGENCE] **Reality as degree of identification** (CROSS-165; kastrup PRS-104, hoffman interface theory). Kastrup: real vs. imagined is a point-of-view distinction inside one mind. Hoffman: perception is an interface over conscious agents. Both demote "objective world" to a perspective-relative presentation; they may differ on whether the presentation is fitness-shaped (Hoffman) or dissociation-shaped (Kastrup).
+
+### Signals from mcgilchrist PROP-2026-11-04-001 (2026-11-10)
+Duplicate of PRS-87 source (same event). Signals (Hawkins hemispheres-as-parallel-columns; Levin conserved architectures; C2A2 two-modes-as-two-traditions) already carried from the 2026-11-07 ingest. No new entry.
+
+### Signals from wolfram PROP-2026-11-07-001 (2026-11-10)
+Source: Rule 30 Prizes: Now for humans and AIs
+- **Friston (CROSS-053), Medium:** a proof of Problem 3 would give CROSS-053 (irreducibility as the reason bounded agents must approximate) its first rigorous anchor; a shortcut for rule 30 would weaken it. Watch prize status.
+- **McGilchrist, Medium:** the "human-readable account or formal check" clause institutionalises the Ralston-exchange question of whether a verified result nobody grasps is knowledge; the guidelines accept either, not both.
+- **C2A2 meta-level, Low-Medium:** verified-human and authorship clauses are a concrete case of a tradition (mathematics) setting entry rules for non-human contributors; bears on AI membership in traditions.
+
+### Signals from wright PROP-2026-11-08-001 (2026-11-10)
+Source: The Fresh Challenge of Romans, Dallas Q&A (reported)
+- **Stump:** corporate image-bearing vocation fits union with Christ / church as united composite; the Israel answer supplies a negative boundary (the composite is not a nation-state).
+- **Rohr:** cosmic always-already (Universal Christ) vs. historical-vocational through a people; sharpens the already/not-yet contrast. Pairs with Rohr's empire series (2026-10-25).
+- **Fredrickson:** weak link via other-oriented Beatitudes test.
+- **C2A2 master:** paradigm-bridge candidate for the Summa 2026 theme; hold until a primary recording is checked.
+
+### Signals from levin PROP-2026-11-09-001 / -002 (2026-11-10)
+Sources: robot science as translation tool (thoughtforms.life); Memory and intelligence do not require a brain (IAI)
+- [CONVERGENCE] **Science itself as active inference** (CROSS-166; levin PRS-155, PRS-156; friston). Levin frames experiment design as active inference over hypotheses, and target anatomy as a stored pattern-memory (a set-point/prior) that cells minimise error against. Two independent Levin uses of a Friston formalism in one week; the second (pattern-memory as prior) is the testable one. Speculative/Medium.
+- **Hoffman / Kastrup / McGilchrist:** "mind blindness" as an observer-side failure to recognise minds touches interface theory and the narrowing attentional mode.
+- **Wolfram:** novel beings without evolutionary history as exploration of a large possibility space (ruliad-adjacent framing).
+- **C2A2 (MacIntyre):** robot-scientist-as-translator and "mind blindness" parallel AI agents as second-first-language members, and the failure to read a rival tradition from inside.

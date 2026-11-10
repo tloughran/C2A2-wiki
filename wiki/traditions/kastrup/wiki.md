@@ -201,3 +201,7 @@ Named gap: is metabolism necessary for dissociation, or any self-maintaining bou
 
 ### Update 2026-11-07 — Are you one mind or many? Dr Thomas Pollak (With Reality in Mind session) (PROP-2026-11-04-003)
 Ingested 1 triplet(s): PRS-103. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-10 — Death, Imagination & Reality (With Reality in Mind) (PROP-2026-11-04-002)
+Ingested 3 triplet(s): PRS-104, PRS-105, PRS-106. Reality vs. imagination recast as a difference of point of view (degree of identification with the alter), stated by Kastrup as a logical consequence of analytic idealism; a pragmatic, non-truth criterion for holding a death-fantasy; memory as belonging to mind rather than brain. Open: the memory-not-in-brain claim is asserted without argument in the host write-up; confirm against the members' recording. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

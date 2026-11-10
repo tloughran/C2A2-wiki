@@ -219,3 +219,7 @@ Ingested 2 triplet(s): PRS-80, PRS-81. See prs_triplets.md. Confidence labels pr
 
 ### Update 2026-11-07 — The Last Theory #086 - The search for solid ground (PROP-2026-10-31-002)
 Ingested 2 triplet(s): PRS-82, PRS-83. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-10 — Rule 30 Prizes: Now for humans and AIs (PROP-2026-11-07-001)
+Ingested 2 triplet(s): PRS-84, PRS-85. PRS-84 records the 2026 prize protocol for machine-generated proofs (verified human submitter, reproducible computation, human-readable account and/or runnable formal verification). PRS-85 registers Problem 3 (O(n) irreducibility of the rule 30 center column) as an open, AI-directed test of computational irreducibility. Open: the Instructions for Agents page was not read; no award yet. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

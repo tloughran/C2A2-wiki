@@ -26736,3 +26736,65 @@ PRESUMPTION-1229:
     Current status: UNTESTED
 
 *2026-11-08 14b: PRESUMPTION-1227..1229 (normative 1, epistemic 1, structural 1; risk High 1, Medium 2). Checked against 14a 2066-2072 and the registry. Not re-surfaced (already registered; new evidence today): cloud/local copies equivalent (PRESUMPTION-1196); each copy's outcome taken as the task's (PRESUMPTION-1208); count comparisons share definitions (PRESUMPTION-1216; janitor 294 vs 347, disk 67% vs 71%); local passes not found by readers (PRESUMPTION-1219; evening sync again); approval as per-card review (PRESUMPTION-1226; no decision email today); cards from secondary text (ASSUMPTION-2052; Wright card now held from promotion).*
+
+PRESUMPTION-1230:
+  Date surfaced: 2026-11-09
+  Statement: [inferred] The Connectome Activity Layer presumes that a PRS id appearing in a file is an activity involving that triplet. A grep census counts every mention alike: auto-built indexes, backlink censuses, bootstrap logs and review logs sit beside a signal hit or a dialogue citing the problem. "Dead" triplets (ASSUMPTION-2075) further presume that every engagement leaves an id trace; a triplet discussed by name or paraphrase would count as dead.
+  Evidence it was operative: ASSUMPTION-2073; ASSUMPTION-2075; janitor's 294 broken wikilinks are mostly template tokens, not links anyone followed
+  Why it was unstated: the plan treats citation kinds as something the census will discover, not as something the counting rule already decides
+  Type: epistemic
+  Related decisions: ASSUMPTION-2073; ASSUMPTION-2075; OPEN-297
+  Testability: testable via literature + in-house
+  Risk if wrong: Medium: the animation and the dead-triplet signal would show where ids are printed, not where triplets are used.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1230
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-09 local pass (final assistant message per session via session_info, plus chat summary; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1231:
+  Date surfaced: 2026-11-09
+  Statement: [inferred] Count-based reports presume every record in the counted set carries the counted field in the same form. Today four counts failed this way: findings status exists only in 005..035; inbox processing is logged by file name for some items and by proposal ID for others; curated_communities no longer matches explorer.html; community_explorer says 156 against 155 in data. Nothing signals when a record format changes, so the count silently covers a shrinking subset.
+  Evidence it was operative: ASSUMPTION-2076; ASSUMPTION-2077; ASSUMPTION-2080
+  Why it was unstated: each count was written against the format current at the time; no session lists format generations
+  Type: structural
+  Related decisions: PRESUMPTION-1216 (different definitions across reports; this is format drift within one count); OPEN-298
+  Testability: testable in-house
+  Risk if wrong: Medium: briefings and metrics report stable totals (26 active findings, 316 unprocessed) that measure the format, not the vault.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1231
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-09 local pass (final assistant message per session via session_info, plus chat summary; no interactive session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1232:
+  Date surfaced: 2026-11-09
+  Statement: [inferred] The Levin/Friston agent's cross-tradition signals presume that a resemblance found by one agent in one article is a cross-tradition connection. "Pattern-memory works like a prior" is already a published Levin-Friston collaboration (so it is a shared research line, not a bridge found by C2A2). "Mind blindness" (failing to see minds in unfamiliar substrates) is equated with MacIntyre's problem of reading a rival tradition from inside, though MacIntyre's problem concerns untranslatable standards of rational justification, not detection of agency. The signals are reported without the metric's own classes (surface analogy / structural homology / explanatory bridge).
+  Evidence it was operative: ASSUMPTION-2079
+  Why it was unstated: agent reports list signals as noted, not classified
+  Type: epistemic
+  Related decisions: ASSUMPTION-2079; ASSUMPTION-2052
+  Testability: testable via literature
+  Risk if wrong: Medium: cross-connection counts could grow with surface analogies that the Stage-3 survival metric later has to discard.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1232
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-09 local pass (final assistant message per session via session_info, plus chat summary; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-09 14b: PRESUMPTION-1230..1232 (epistemic 2, structural 1; risk Medium 3). Checked against 14a 2073-2080 and the registry. Not re-surfaced (already registered; new evidence today): cloud/local copies equivalent (PRESUMPTION-1196; lock not taken by cloud copy, ASSUMPTION-2078); per-task duplicate guards (PRESUMPTION-1229; four duplicates today); count comparisons share definitions (PRESUMPTION-1216; 27 vs 9 double-registered, disk 67% vs 71%); local passes not found by readers (PRESUMPTION-1219; evening sync again); cards from secondary text (ASSUMPTION-2052; paywalled Levin article).*

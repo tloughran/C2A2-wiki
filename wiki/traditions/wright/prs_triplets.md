@@ -803,4 +803,22 @@ PRS-86:
   Confidence: Speculative
   Evidence: Episode summary question only
 
-*Total PRS triplets: 86*
+PRS-87:
+  Problem: Is salvation in Romans chiefly an individual status, or a restored function in the world?
+  Resource: Wright's three-tense summary of Romans (rescued / rescuing / will rescue) through a renewed humanity reflecting God's image.
+  Solution: Salvation is restoration to the human vocation of imaging God outward into creation; the saved community is the instrument of the world's rescue, not its exit.
+  Date Added: 2026-11-10
+  Source: The Fresh Challenge of Romans (Dallas, 1-4 Nov 2026), Q&A of 2 Nov, as reported by ChurchLeaders; PROP-2026-11-08-001
+  Confidence: Medium (secondhand report of quoted summary; consistent with Paul and the Faithfulness of God)
+  Evidence: Article quotes Wright's summary from his lecture-series preview.
+
+PRS-88:
+  Problem: What identifies 'Israel' as a covenant people after the Messiah, and can a modern state inherit prophetic promises?
+  Resource: Wright's Romans 9-11 reading; Q&A rejection of modern Israel as prophetic fulfilment.
+  Solution: Covenant identity is redrawn around the Messiah; no present political entity bears prophecy, so prophetic politics of that kind is a category error with real-world harms.
+  Date Added: 2026-11-10
+  Source: The Fresh Challenge of Romans (Dallas, 1-4 Nov 2026), Q&A of 2 Nov, as reported by ChurchLeaders; PROP-2026-11-08-001
+  Confidence: Medium (reported answer; argument itself not heard)
+  Evidence: Q&A remarks reported 2 Nov 2026.
+
+*Total PRS triplets: 88*

@@ -39243,3 +39243,141 @@ ASSUMPTION-2072:
     Current status: UNTESTED
 
 *2026-11-08 14a: ASSUMPTION-2066..2072 (7). Queued: literature 2067; [IN-HOUSE] 2068, 2069, 2071. Not queued: 2066 (framework commitment; routed to PRESUMPTION-1227, OPEN-295), 2070, 2072 (recurrences). No interactive Cowork session; 2066-2067 come from the chat-scrape addendum summarizing a claude.ai chat.*
+
+ASSUMPTION-2073:
+  Date identified: 2026-11-09
+  Statement: [stated] PRS-triplet activity can be recovered by a census: grep the vault and telemetry for every PRS id and count per source. "Code work, not model work." The census result decides whether to build a citation extractor or first make agents log triplet references explicitly.
+  Context: Chat summary 11-09 (claude.ai "Visualization concept", voice walk): Connectome Activity Layer
+  Type: methodological
+  Related decisions: OPEN-297; PRESUMPTION-1230
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2073
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2074:
+  Date identified: 2026-11-09
+  Statement: [stated] The live mode will be "real time" by polling a small JSON that the daily run and agents append to, since nothing pushes on Pages.
+  Context: Chat summary 11-09: Connectome Activity Layer
+  Type: architectural
+  Related decisions: OPEN-297
+  Testability: design choice (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2074
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2075:
+  Date identified: 2026-11-09
+  Statement: [stated] "Dead" triplets, never cited since creation, are a vault-quality signal.
+  Context: Chat summary 11-09: candidate plots
+  Type: empirical
+  Related decisions: PRESUMPTION-1230; OPEN-297
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2075
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2076:
+  Date identified: 2026-11-09
+  Statement: [stated] The "26 active findings" count covers only FINDING-005..035, the only findings with a status field; 036..112 use a format with no status and are not counted. FINDING-018 is used for two findings; PROP-2026-11-04-001/-002 are each claimed by a McGilchrist and a Kastrup card.
+  Context: Morning walk handoff 4d713d86 (no walk notes found)
+  Type: methodological
+  Related decisions: PRESUMPTION-1231; OPEN-298
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2076
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2077:
+  Date identified: 2026-11-09
+  Statement: [stated] The daily run's "unprocessed inbox files" check, which matches file names against PROCESSED_LOG.md, flags 316 files but is unreliable: some are logged under proposal IDs (e.g. carroll_singer-mindscape-351 as PROP-2026-04-21-002).
+  Context: Wiki daily run 7fbf9710 (second firing, check only)
+  Type: methodological
+  Related decisions: PRESUMPTION-1231
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2077
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2078:
+  Date identified: 2026-11-09
+  Statement: [stated] The cloud lit pipeline "isn't really taking the lock": its 11-08 and 11-09 lines say "manual append; script unavailable" and lit_pipeline.lock.d was never created, so nothing stops two copies overwriting each other as on 10-01 and 10-15.
+  Context: Lit pipeline ae281aeb (local copy, stopped at Step 0)
+  Type: architectural
+  Related decisions: PRESUMPTION-1196; PRESUMPTION-1229; OPEN-292
+  Testability: testable in-house (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2078
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2079:
+  Date identified: 2026-11-09
+  Statement: [stated] Levin's "pattern-memory" of target anatomy works like an active-inference prior (Friston); Levin's "mind blindness" parallels failing to read a rival tradition from inside (MacIntyre).
+  Context: Levin/Friston Monday agents ee722ae1, cross-tradition signals; PROP-2026-11-09-002 built from the free ~800 words of a paywalled IAI article
+  Type: epistemic
+  Related decisions: PRESUMPTION-1232; ASSUMPTION-2052
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2079
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2080:
+  Date identified: 2026-11-09
+  Statement: [stated] Recurrences: duplicate firings of evening sync, wiki daily run, reviewer review and Levin/Friston (earlier copy wrote PROP-2026-11-09-001 at 03:12); evening sync again says 14a/14b "have done nothing for four days" (local passes wrote 11-06..11-08; PRESUMPTION-1219); scheduler health 43 OK / 3 WARN / 29 FAIL with 27 DOUBLE-REGISTERED, while morning status says "all of this morning's jobs fired on time" and "nine tasks still running both locally and as cloud routines" (27 vs 9); voice-shell RED 6/403 on main@965500ec; openstory.ui not loaded; disk 71% (11-08 snapshot: 67%); janitor 294 broken wikilinks, mostly template placeholders; community_explorer 156 vs 155; system health "no source-ref drift" vs janitor 7 (reviewer review); janitor whitespace fixes not on disk for 17 of 23 files; WATCH-006 stale (6th check); watch_list.md ~895 KB; cost tracker and scheduler health shell/file writes auto-declined; local lit pipeline skipped again; Levin task prompt path missing Projects/; cost estimate 28 agents ~$46.10/month (per-run averages, not billing).
+  Context: All sessions above
+  Type: architectural
+  Related decisions: OPEN-273; OPEN-288; OPEN-292; PRESUMPTION-1216; PRESUMPTION-1219
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2080
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-09 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-09_chat_summary.md; no interactive session today).
+    Current status: UNTESTED
+
+*2026-11-09 14a: ASSUMPTION-2073..2080 (8). Queued: literature 2075, 2079; [IN-HOUSE] 2073, 2076, 2077, 2078. Not queued: 2074 (design choice), 2080 (recurrences). No interactive Cowork session; 2073-2075 come from the chat-scrape summary of a claude.ai walk chat.*

@@ -940,4 +940,31 @@ PRS-103:
   Confidence: Speculative
   Evidence: Topic list on session page only.
 
-*Total PRS triplets: 103*
+PRS-104:
+  Problem: If everything is mind, what grounds the ordinary distinction between what is real and what is imagined?
+  Resource: The dissociation model: inside the dissociative boundary we identify with the alter and the world seems objective; beyond it, mind manifests itself to itself.
+  Solution: Reality vs. imagination is a distinction of point of view (degree of identification), not of ontological category; Kastrup states this follows necessarily from analytic idealism.
+  Date Added: 2026-11-10
+  Source: Death, Imagination & Reality (With Reality in Mind, host write-up 2026-10-26); PROP-2026-11-04-002
+  Confidence: High (direct quotation in host write-up; members' recording not checked)
+  Evidence: "reality and imagination are not different ontological categories" - stated as an inevitable logical consequence of analytic idealism.
+
+PRS-105:
+  Problem: How should someone hold beliefs about what follows death, when no present cognitive structure is guaranteed to carry over?
+  Resource: Analogy with science's convenient fictions, judged by predictive usefulness rather than literal truth.
+  Solution: Hold a consciously chosen fantasy (a welcoming committee of loved ones) and judge it pragmatically by how well it disposes one toward the transition; meant less metaphorically because imagination is not unreal.
+  Date Added: 2026-11-10
+  Source: Death, Imagination & Reality (With Reality in Mind, host write-up 2026-10-26); PROP-2026-11-04-002
+  Confidence: Medium (host paraphrase with partial quotation)
+  Evidence: Host: Kastrup expects 'something like being greeted by a welcoming committee' and stresses it is a conscious fantasy.
+
+PRS-106:
+  Problem: What actually ends at death on an idealist account, and is anything lost?
+  Resource: Claim that memory belongs to mind rather than brain; Ram Dass tight-shoe image of birth and death.
+  Solution: What dies is the fantasy that the outer world is literally real rather than symbolic; memories persist because they were never in the brain.
+  Date Added: 2026-11-10
+  Source: Death, Imagination & Reality (With Reality in Mind, host write-up 2026-10-26); PROP-2026-11-04-002
+  Confidence: Medium (host paraphrase; strong empirical-adjacent memory claim given without argument)
+  Evidence: "In death, nothing is lost. All the memories remain - they were never in the brain."
+
+*Total PRS triplets: 106*

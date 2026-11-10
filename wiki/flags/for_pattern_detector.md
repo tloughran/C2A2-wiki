@@ -928,3 +928,20 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 - **Kastrup / McGilchrist**: AI-as-idol parallels their AI-as-archetypal-urge and AI-vs-soul material; paradigm-bridge candidate once Wright's argument is confirmed.
 - **Rohr Agent**: Idol-critique vs Rohr's power-over/empire series (2026-10-25); possible scriptural/contemplative pairing.
 - **C2A2 master / paradigm flags**: None yet. Hold for full-text/audio check. Also noted: *Fresh Challenge of Romans* (Dallas, 1-4 Nov 2026) is only an event promo and was not proposed.
+
+
+### [EVALUATED: 2026-11-10] 2026-11-10 — PROP-2026-11-04-002 (kastrup): Death, Imagination & Reality
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Kastrup reality-as-point-of-view (PRS-104) with Hoffman interface theory (CROSS-165); McGilchrist meaning/literalism convergence; Wright bodily-resurrection contrast.
+
+### [EVALUATED: 2026-11-10] 2026-11-10 — PROP-2026-11-07-001 (wolfram): Rule 30 Prizes for AIs
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Problem 3 as rigorous anchor or defeater for CROSS-053 (Friston); McGilchrist "verified but ungrasped" tension; mathematics' entry rules for non-human contributors (C2A2 AI membership).
+
+### [EVALUATED: 2026-11-10] 2026-11-10 — PROP-2026-11-08-001 (wright): Fresh Challenge of Romans Q&A
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Salvation as image-bearing vocation: Summa 2026 paradigm-bridge candidate (Stump composite, Rohr Universal Christ). Secondhand source.
+
+### [EVALUATED: 2026-11-10] 2026-11-10 — PROP-2026-11-09-001/-002 (levin): robot science translation; memory without brain
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Science-as-active-inference and pattern-memory-as-prior (CROSS-166, Friston); robot scientist as translator (C2A2 second-first-language theme).

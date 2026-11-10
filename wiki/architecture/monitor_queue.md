@@ -25859,3 +25859,50 @@ MONITOR-712:
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1228 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1228_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1228_against.md
 
+
+## 2026-11-10 RUN - 15c dispositions (lit pipeline)
+
+MONITOR-713:
+  Date: 2026-11-10
+  Source item: ASSUMPTION-2075 (DISPOSITION-1128)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a: Bibliometrics treats uncitedness as a real, measurable property and a crude low-impact indicator at population level. None of the sources found says uncitedness marks low quality for an individual item. (Weak, preliminary). 15b: The uncitedness literature itself warns the signal is confounded by field, age, document type and visibility, and that late recognition is common. A 'dead triplet' may be new, infrastructural or simply unindexed rather than poor. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'uncitedness is a weak triage signal needing age/type controls') a read of Van Noorden 2017 and Garfield 1998 plus the in-house dead-triplet sample; (-> REVISE) if the sample shows most dead triplets are recent or infrastructural.
+  Monitoring cadence: Weekly (default); first check due 2026-11-17
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2075 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2075_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2075_against.md
+
+MONITOR-714:
+  Date: 2026-11-10
+  Source item: ASSUMPTION-2079 (DISPOSITION-1129)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a: The first half of the claim has a published formal home: a pattern-memory acting as a generative-model prior in free-energy terms. The second half (mind blindness ~ reading a rival tradition) is an analogy the sources do not draw. (Moderate, preliminary). 15b: Nothing found licenses the second analogy; MacIntyre's account of translation makes the failure one of language and standards, not of unrecognised agency. The prior reading of pattern memory is formal and contested as a literal claim. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE the narrowed first half) a read of Friston et al. 2015 confirming the prior mapping; (-> REVISE the second half) if the design leans on the mind-blindness analogy to explain cross-tradition misreading.
+  Monitoring cadence: Weekly (default); first check due 2026-11-17
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2079 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2079_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2079_against.md
+
+MONITOR-715:
+  Date: 2026-11-10
+  Source item: PRESUMPTION-1230 (DISPOSITION-1130)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: Citation-function work supports the idea that a reference is informative about use, but its main finding is that function varies and must be classified. It does not support treating any mention as an activity. (Weak, preliminary). 15b: The citation literature's central caution is that mentions are heterogeneous, with a large perfunctory share. Reading a PRS id as an activity, and its absence as death, conflates index/log/template mentions with use and misses unlabelled use. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'id mention counts are valid only after function labelling') the in-house ASSUMPTION-2073 sample showing a high substantive share; (-> REVISE) if the sample shows most hits are index/log/template.
+  Monitoring cadence: Weekly (default); first check due 2026-11-17
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1230 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1230_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1230_against.md
+
+MONITOR-716:
+  Date: 2026-11-10
+  Source item: PRESUMPTION-1232 (DISPOSITION-1131)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Structure-mapping gives a vocabulary for separating real relational connections from surface resemblance, which supports classifying signals. It does not support treating unclassified single-agent resemblances as connections. (Weak, preliminary). 15b: Analogy research shows surface resemblances are cheap and misleading, and MacIntyre's account says cross-tradition connection needs translation. Unclassified single-agent resemblances are therefore likely to over-report connections. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE a narrowed premise 'signals are candidate connections until classified') in-house classification of recent signals; (-> REVISE) if most prove surface-only and counts are reported as connections.
+  Monitoring cadence: Weekly (default); first check due 2026-11-17
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1232 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1232_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1232_against.md
+

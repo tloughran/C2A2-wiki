@@ -759,7 +759,25 @@ PRS-83:
   Confidence: Speculative. Also a likely duplicate of the verification-over-generation thread (PRS-11 / PRS-38 / PRS-42 / PRS-49). It should be minted only if the audio adds something those entries lack.
   Evidence: Episode description only.
 
-*Total PRS triplets: 83*
+PRS-84:
+  Problem: When an AI system produces a proof, how should a scientific community decide that it is valid and that a human stands behind it?
+  Resource: Rewritten 2026 Rule 30 Prize Guidelines: verified human submitter; tool output counts as the operator's; reproducible computation; for largely machine-generated proofs a human-readable account, a runnable formal verification, or both; logs on request.
+  Solution: An institutional protocol where human accountability plus machine verification replace the 'human wrote and checked it' standard; validity rests on a check the Committee can run.
+  Date Added: 2026-11-10
+  Source: Rule 30 Prizes: Now for humans and AIs (rule30prize.org, 2026-10-23); PROP-2026-11-07-001
+  Confidence: High (protocol stated verbatim; untested, no prize awarded)
+  Evidence: rule30prize.org Prize Guidelines: 'Who may participate', 'Form of proof', 'Judging'.
+
+PRS-85:
+  Problem: Computational irreducibility is central to the program but unproven for any specific simple rule: theorem or heuristic?
+  Resource: Rule 30 Prize Problem 3 (does the nth center cell require at least O(n) effort?), now posed explicitly to AI agents.
+  Solution: Proposed, not achieved: AI's mathematical reach used as a stress test; either irreducibility is established/refuted for rule 30, or failure becomes evidence of how hard such claims are to prove.
+  Date Added: 2026-11-10
+  Source: Rule 30 Prizes: Now for humans and AIs (rule30prize.org, 2026-10-23); PROP-2026-11-07-001
+  Confidence: Speculative (outcome open)
+  Evidence: Wolfram X post 2026-10-22; all three problems listed open.
+
+*Total PRS triplets: 85*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

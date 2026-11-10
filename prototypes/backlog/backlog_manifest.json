@@ -392,6 +392,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-09-001",
+  "tradition": "levin",
+  "source_date": "2025-10-09",
+  "title": "Meet a new synthetic colleague: robot science as a translation tool between diverse intell",
+  "file": "inbox/proposals/approved/2026-11-09_levin_alife-keynote-robot-science-translation.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-14-002",
   "tradition": "fredrickson",
   "source_date": "2025-11",
@@ -3912,6 +3920,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-04-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-10-22",
+  "title": "The British Academy Series: Brain asymmetry: the facts and why they matter (public lecture",
+  "file": "inbox/proposals/approved/2026-11-04_mcgilchrist_british-academy-brain-asymmetry-glasgow.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-23-006",
   "tradition": "hawkins",
   "source_date": "2026-10-22",
@@ -3925,6 +3941,14 @@
   "source_date": "2026-10-23",
   "title": "Endless Forms Most Beautiful and Most Wonderful: Ruliobiology and the Theoretical Foundati",
   "file": "inbox/proposals/approved/2026-10-24_wolfram_ruliobiology-endless-forms.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-07-001",
+  "tradition": "wolfram",
+  "source_date": "2026-10-23",
+  "title": "Rule 30 Prizes: Now for humans and AIs (2026: Challenge for AIs: Instructions for Agents)",
+  "file": "inbox/proposals/approved/2026-11-07_wolfram_rule30-prize-challenge-for-ais.md",
   "processed": false
  },
  {
@@ -3949,6 +3973,14 @@
   "source_date": "2026-10-26",
   "title": "372 | Erik Winfree on DNA Robots and Computers",
   "file": "inbox/proposals/approved/2026-10-30_carroll_mindscape-372-winfree-dna-computing.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-04-002",
+  "tradition": "kastrup",
+  "source_date": "2026-10-26",
+  "title": "Death, Imagination & Reality \u2014 Bernardo Kastrup on what could be beyond, and reasons to cu",
+  "file": "inbox/proposals/approved/2026-11-04_kastrup_death-imagination-reality.md",
   "processed": false
  },
  {
@@ -3992,11 +4024,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-08-001",
+  "tradition": "wright",
+  "source_date": "2026-11-02",
+  "title": "The Fresh Challenge of Romans (Park Cities Baptist Church, Dallas, 1-4 Nov 2026), Q&A of 2",
+  "file": "inbox/proposals/approved/2026-11-08_wright_fresh-challenge-of-romans-dallas-qa-israel-true-humanity.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-11-06-001",
   "tradition": "carroll",
   "source_date": "2026-11-02",
   "title": "373 | Colin Camerer on the Neuroscience of Economic Thinking",
   "file": "inbox/proposals/approved/2026-11-06_carroll_mindscape-373-camerer-neuroeconomics.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-09-002",
+  "tradition": "levin",
+  "source_date": "2026-11-04",
+  "title": "Michael Levin: Memory and intelligence do not require a brain",
+  "file": "inbox/proposals/approved/2026-11-09_levin_iai-memory-intelligence-without-brain.md",
   "processed": false
  },
  {

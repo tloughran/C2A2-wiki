@@ -241,3 +241,11 @@ Ingested 2 triplet(s): PRS-149, PRS-150. See prs_triplets.md. Confidence labels 
 
 ### Update 2026-11-07 — A Platonic Space background for questions in consciousness (PROP-2026-11-02-001)
 Ingested 3 triplet(s): PRS-151, PRS-152, PRS-153. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-10 — Meet a new synthetic colleague: robot science as a translation tool (PROP-2026-11-09-001)
+Ingested 2 triplet(s): PRS-154, PRS-155. Robot scientist as a translation layer for diverse intelligences; experiment design framed as active inference over hypotheses. Note: source dated 2025-10-09, older than the 60-day window, approved by Tom. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-10 — Memory and intelligence do not require a brain (IAI) (PROP-2026-11-09-002)
+Ingested 2 triplet(s): PRS-156, PRS-157. Bioelectric pattern-memories as the software-level interface for anatomical control; memory, learning and goal-directedness as capacities of cells and tissues ("mind blindness" as methodological error). Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

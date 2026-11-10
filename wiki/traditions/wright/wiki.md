@@ -188,3 +188,7 @@ Ingested 2 triplet(s): PRS-83, PRS-84. See prs_triplets.md. Confidence labels pr
 
 ### Update 2026-11-07 — The Russell Moore Show: N.T. Wright on How an Ancient Prophet Explains Our Crazy World (PROP-2026-11-01-001)
 Ingested 2 triplet(s): PRS-85, PRS-86. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-10 — The Fresh Challenge of Romans, Dallas Q&A (PROP-2026-11-08-001)
+Ingested 2 triplet(s): PRS-87, PRS-88. Salvation as restored image-bearing vocation (three-tense reading of Romans); covenant identity redrawn around the Messiah, with modern Israel rejected as bearer of prophecy. Both rest on a secondhand news report; hold any bridge promotion until a primary recording is checked. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

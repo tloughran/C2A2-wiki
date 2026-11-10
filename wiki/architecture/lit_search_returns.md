@@ -52542,3 +52542,139 @@ DISPOSITION-1127:
 - One orchestrator ran 15a, 15b, 15c in sequence. Each 15b file was written without reading the matching 15a file, but the web searches were shared, so independence is procedural only.
 - 5 searches, 0 fetches; sources are title-only or background recall and are marked as such. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY flag. SYSTEMIC-RISK flagged: PRESUMPTION-1227 with PRESUMPTION-1225/-1224 (a vantage outside the traditions it assesses; MacIntyre's no-neutral-standpoint thesis), and PRESUMPTION-1228 with ASSUMPTION-2067 and PRESUMPTION-1224 (the 'outside' gloss and blanket-as-knower). Those earlier items were not re-dispositioned.
 - [IN-HOUSE] items (ASSUMPTION-2068, -2069, -2071, PRESUMPTION-1229, plus the older backlog) were not touched; 'all queued items searched' is NOT met for them.
+
+## 2026-11-10 RUN (cloud, lit pipeline)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2075
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Pendlebury, 1991; Garfield, 1998
+  Summary: Bibliometrics treats uncitedness as a real, measurable property and a crude low-impact indicator at population level. None of the sources found says uncitedness marks low quality for an individual item.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2075_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2075 | Item type: ASSUMPTION (stated) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2075
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Pendlebury, 1991; Garfield, 1998
+  Summary: The uncitedness literature itself warns the signal is confounded by field, age, document type and visibility, and that late recognition is common. A 'dead triplet' may be new, infrastructural or simply unindexed rather than poor.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2075_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2075 | Item type: ASSUMPTION (stated) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1128:
+  Date: 2026-11-10
+  Item: ASSUMPTION-2075
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak population-level support against a moderate, on-point challenge that the signal is confounded; sources largely titles and recall.
+  Disposition: MONITOR (MONITOR-713 (Medium))
+  Reasoning: Support is only population-level and the challenge is directly about confounding, but both are unread and a narrowing repair is available. MONITOR is recoverable; premature INCORPORATE of a quality signal would be hard to reverse.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2075 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2075_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2075_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2079
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Friston et al., 2015; MacIntyre, 1988 ch. 19
+  Summary: The first half of the claim has a published formal home: a pattern-memory acting as a generative-model prior in free-energy terms. The second half (mind blindness ~ reading a rival tradition) is an analogy the sources do not draw.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2079_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2079 | Item type: ASSUMPTION (stated) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2079
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Friston et al., 2015; MacIntyre, 1988 ch. 19
+  Summary: Nothing found licenses the second analogy; MacIntyre's account of translation makes the failure one of language and standards, not of unrecognised agency. The prior reading of pattern memory is formal and contested as a literal claim.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2079_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2079 | Item type: ASSUMPTION (stated) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1129:
+  Date: 2026-11-10
+  Item: ASSUMPTION-2079
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support for the first half (pattern memory as prior), no support and a moderate conceptual challenge for the second (mind blindness ~ reading a tradition).
+  Disposition: MONITOR (MONITOR-714 (Medium))
+  Reasoning: Split verdict: the claim should probably be divided. Evidence is unread, so MONITOR rather than a partial INCORPORATE.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2079 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2079_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2079_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1230
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Moravcsik & Murugesan, 1975
+  Summary: Citation-function work supports the idea that a reference is informative about use, but its main finding is that function varies and must be classified. It does not support treating any mention as an activity.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1230_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1230 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1230
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Moravcsik & Murugesan, 1975
+  Summary: The citation literature's central caution is that mentions are heterogeneous, with a large perfunctory share. Reading a PRS id as an activity, and its absence as death, conflates index/log/template mentions with use and misses unlabelled use.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1230_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1230 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1130:
+  Date: 2026-11-10
+  Item: PRESUMPTION-1230
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support for classification-based inference against a moderate challenge that mentions are heterogeneous; unread. Presumption with a moderate, on-point challenge.
+  Disposition: MONITOR (MONITOR-715 (High))
+  Reasoning: Presumption with a moderate challenge leans toward REVISE, but the decisive evidence is in-house and pending, and the sources are unread. MONITOR with High priority because designers did not know they relied on this and it shares the proxy problem with ASSUMPTION-2075.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1230 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1230_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1230_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1232
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Gentner, 1983; MacIntyre, 1988 ch. 19
+  Summary: Structure-mapping gives a vocabulary for separating real relational connections from surface resemblance, which supports classifying signals. It does not support treating unclassified single-agent resemblances as connections.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1232_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1232 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1232
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Gentner, 1983; MacIntyre, 1988 ch. 19
+  Summary: Analogy research shows surface resemblances are cheap and misleading, and MacIntyre's account says cross-tradition connection needs translation. Unclassified single-agent resemblances are therefore likely to over-report connections.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1232_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1232 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1131:
+  Date: 2026-11-10
+  Item: PRESUMPTION-1232
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support for the vocabulary of classification against a moderate challenge that unclassified resemblances over-report connections; unread.
+  Disposition: MONITOR (MONITOR-716 (Medium))
+  Reasoning: Challenge is conceptual and unread; in-house classification pending. MONITOR is recoverable.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1232 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1232_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1232_against.md
+
+### Evidence-quality notes (2026-11-10)
+- One orchestrator ran 15a, 15b, 15c in sequence; 15b files written without reading the 15a files, but web searches were shared, so independence is procedural only.
+- 3 searches, 0 fetches; sources are title-only or background recall and marked so. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY flag.
+- SYSTEMIC-RISK (noted, no separate flag file): ASSUMPTION-2075 and PRESUMPTION-1230 (and ASSUMPTION-2073, in-house) share a proxy vulnerability: citation/id-mention counts used as vault quality or activity signals without function labelling. PRESUMPTION-1232 and ASSUMPTION-2079 share reliance on analogy across traditions that MacIntyre's translation account says needs more than resemblance.
+- [IN-HOUSE] items (ASSUMPTION-2069, -2071, -2073, -2076, -2077, -2078, PRESUMPTION-1229, -1231) and the older bare-literature backlog were not touched; 'all queued items searched' is NOT met for them.

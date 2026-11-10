@@ -4039,3 +4039,27 @@ OPEN-296:
     Original item: OPEN-296
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-297:
+  Raised: 2026-11-09 by 14a (ASSUMPTION-2073, PRESUMPTION-1230)
+  Question: For the Connectome Activity Layer, what counts as a citation event? Should the census classify hits (substantive use vs index, log, template or backlink mention) before any animation or "dead triplet" plot, and should agents log triplet use explicitly rather than rely on id mentions?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-297
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-298:
+  Raised: 2026-11-09 by 14a (ASSUMPTION-2076, PRESUMPTION-1231)
+  Question: Findings 036..112 have no status field, so "active findings" counts only 005..035. Add status to the newer format, or change the counter? Who renumbers FINDING-018 (two findings) and PROP-2026-11-04-001/-002 (McGilchrist vs Kastrup)?
+  Needs: Tom / daily run
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-298
+    Item type: OPEN QUESTION
+    Current status: OPEN

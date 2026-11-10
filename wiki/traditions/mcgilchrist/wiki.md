@@ -233,3 +233,7 @@ Ingested 1 triplet(s): PRS-87. See prs_triplets.md. Confidence labels preserved 
 
 ### Update 2026-11-07 — Dr. Iain McGilchrist: The Faustian bargain of AI (PROP-2026-11-04-001)
 Ingested 2 triplet(s): PRS-88, PRS-89. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-10 — British Academy lecture, Glasgow (PROP-2026-11-04-001) — no new triplet
+Approved card is the same event (same source URL) already ingested 2026-11-07 as PRS-87 from the colliding-ID card 2026-11-04_mcgilchrist_british-academy-brain-asymmetry-lecture.md. Its single candidate restates PRS-87, so no triplet was added (duplicate, not skipped silently). Still open: no recording or transcript located.
