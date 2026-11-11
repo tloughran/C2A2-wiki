@@ -2546,3 +2546,9 @@ Phase 0: decision email 2026-11-09 (6 APPROVE) applied; moved to approved/, copi
 - PROP-2026-11-09-001 levin 2026-11-09_levin_alife-keynote-robot-science-translation.md PRS-154, PRS-155 (2 triplets)
 - PROP-2026-11-09-002 levin 2026-11-09_levin_iai-memory-intelligence-without-brain.md PRS-156, PRS-157 (2 triplets)
 Total new triplets: 11. CROSS-165, CROSS-166. FINDING-113. The PROP-2026-11-04 ID-collision leftovers are now resolved.
+
+## 2026-11-11 - C2A2 daily run (Wed, orchestrator)
+Phase 0: decision email 2026-11-10 applied: PROP-2026-11-10-001 CHECK -> needs_review/ (2026-11-10_hawkins_averaging-pose-vectors-in-a-voxel.md). Phase 1: 0 ingested (nothing approved). Phase 2: +1 orchestrator card PROP-2026-11-11-004 (levin topoiesis bioRxiv; secondary-sourced, verify). Network unchanged: 1151 PRS / 166 CROSS / 113 FINDING. Pending = 4.
+
+### 2026-11-11 second orchestrator firing (04:37 local, verification only)
+Started while the primary cloud run was mid-flight (decisions archive 04:36, review page 04:37, ledger/master/review_log/level2 04:38); waited ~5 min for it to finish, changed nothing it had done. Verified: Phase 0 the 2026-11-10 decision email (thread 1a1c6e2463fce9a4, PROP-2026-11-10-001 CHECK) applied, card in needs_review/, email stored in provenance/decision_emails.json (27 emails), archive 2026-11-11_decisions.md present; Phase 1 nothing approved, 0 ingested; Phase 2 Wednesday specialists filed Kastrup x2 + McGilchrist x1, primary added Levin PROP-2026-11-11-004, no duplicate searches run; Phase 3 review page 2026-11-11_review.html exists (pending = 4); Phase 4 Gmail draft r-8099952552640471727 created 09:38Z; 5.5 review_log.html address-clean; 5.6 level2 meta 1944 signals / 92 pairs / span to 2026-11-09 / stale_days 2. No git run.

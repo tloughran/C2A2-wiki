@@ -4063,3 +4063,27 @@ OPEN-298:
     Original item: OPEN-298
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-299:
+  Raised: 2026-11-10 by 14a (ASSUMPTION-2085)
+  Question: For each of the 27 double-registered tasks, which side should be kept? The tools are split: session_info is local only (14a/14b, evening sync), list_triggers is cloud only (scheduler health), and the lit lock script needs a Mac shell. Scheduler health's single remedy (confirm cloud fires, disable local) would remove the only working 14a/14b copy.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-299
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-300:
+  Raised: 2026-11-10 by 14a/14b (ASSUMPTION-2083, PRESUMPTION-1234)
+  Question: Does a thinker-named tradition include the thinker's team, lab and collaborators (e.g. TBP for Hawkins)? Tighten the agent filters, or redefine the unit and record authorship per triplet?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-300
+    Item type: OPEN QUESTION
+    Current status: OPEN

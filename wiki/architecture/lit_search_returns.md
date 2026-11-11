@@ -52678,3 +52678,140 @@ DISPOSITION-1131:
 - 3 searches, 0 fetches; sources are title-only or background recall and marked so. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY flag.
 - SYSTEMIC-RISK (noted, no separate flag file): ASSUMPTION-2075 and PRESUMPTION-1230 (and ASSUMPTION-2073, in-house) share a proxy vulnerability: citation/id-mention counts used as vault quality or activity signals without function labelling. PRESUMPTION-1232 and ASSUMPTION-2079 share reliance on analogy across traditions that MacIntyre's translation account says needs more than resemblance.
 - [IN-HOUSE] items (ASSUMPTION-2069, -2071, -2073, -2076, -2077, -2078, PRESUMPTION-1229, -1231) and the older bare-literature backlog were not touched; 'all queued items searched' is NOT met for them.
+
+## 2026-11-11 run (cloud-lit-2026-11-11)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2086
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Neurath, Carnap & Morris
+  Summary: Prior integration programs exist, but the most ambitious (the Unity of Science encyclopedia) was left unfinished and was thin outside the natural sciences, and Consilience was a single-author argument rather than an institution.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2086_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2086 | Item type: ASSUMPTION (stated) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2086
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: International Encyclopedia of Unified Science, 1938-1969
+  Summary: The claim that no institution seriously attempts integration is contradicted by documented programs: the Unity of Science movement and its encyclopedia, the Santa Fe Institute, and pluralist integration programs in philosophy of biology.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2086_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2086 | Item type: ASSUMPTION (stated) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1132:
+  Date: 2026-11-11
+  Item: ASSUMPTION-2086
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support for 'not yet achieved' against a moderate, partly read challenge to 'no institution attempts'. The historical claim is contradicted; the 'only now' claim is untested.
+  Disposition: REVISE (REVISE-537)
+  Reasoning: A stated public claim contradicted by well-documented history. Revising the wording is cheap and the fix is clear; leaving it risks the credibility of the rest of the thesis.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2086 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2086_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2086_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1233
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Mateen, Oh, Tergas, Bhayani & Kamdar, 2013. 'Titles versus titles and abstracts for initial screening of articles for systematic reviews.' Clin Epidemiol 5:89-95
+  Summary: Screening on limited information (titles, abstracts) is standard and fairly sensitive for the first, include/exclude stage of a review.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1233_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1233 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1233
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Mateen et al., 2013
+  Summary: The literature that supports screening on abstracts places it before a full-text stage.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1233_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1233 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1133:
+  Date: 2026-11-11
+  Item: PRESUMPTION-1233
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support for triage on search-level evidence against a moderate challenge that grading is an appraisal step needing full text. This run's own dispositions are partly affected.
+  Disposition: MONITOR (MONITOR-717 (High))
+  Reasoning: The two directions agree on the boundary (screen on abstracts, appraise on full text); whether C2A2 priorities are actually distorted is an in-house question not yet run. A presumption about the pipeline's own evidence base warrants High priority.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1233 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1233_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1233_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1234
+  Search direction: FOR (supportive)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Lakatos, 1970. 'Falsification and the methodology of scientific research programmes'
+  Summary: Three standard accounts of intellectual units (research programme, paradigm, tradition) define them by communities, not individuals.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1234_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1234 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1234
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak
+  Key source: Merton, 1968. 'The Matthew effect in science'
+  Summary: The challenge is to the boundary, not the inclusion.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1234_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1234 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1134:
+  Date: 2026-11-11
+  Item: PRESUMPTION-1234
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak
+  Net assessment: Moderate (recalled) support that intellectual units are communal against a weak boundary challenge. Unread.
+  Disposition: MONITOR (MONITOR-718 (Medium))
+  Reasoning: Direction is favourable but evidence is recall only and the in-house authorship count has not been run. MONITOR is recoverable; INCORPORATE would need a read source.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1234 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1234_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1234_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1235
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Wilson, 1998. Consilience
+  Summary: Some support exists for treating the cost of interaction as one obstacle to integration.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1235_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1235 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1235
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: MacIntyre, 1988. Whose Justice? Which Rationality? chs. 17-19
+  Summary: The main source the project relies on locates the barrier between traditions in incommensurability and translation, not in how fast traditions talk.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1235_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1235 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1135:
+  Date: 2026-11-11
+  Item: PRESUMPTION-1235
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Strong
+  Net assessment: Weak support against a strong conceptual challenge drawn from the project's own core source.
+  Disposition: REVISE (REVISE-538)
+  Reasoning: An unstated presumption contradicted by the framework the project adopts. The heuristic for a strongly challenged presumption is REVISE with High urgency; the sources are well known to the designer and recall is reliable on the main point, though not re-read.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1235 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1235_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1235_against.md
+
+### Evidence-quality notes (2026-11-11)
+- One orchestrator ran 15a, 15b, 15c in sequence; 15b files written without reading the 15a files, but web searches were shared, so independence is procedural only.
+- 4 searches, 1 fetch batch (2 of 3 pages read: Mateen et al. 2013; Wikipedia IEUS). Other sources are title-only or background recall and marked so. PRELIMINARY. No INCORPORATE issued; no validated-premise consistency check needed. No NOVELTY flag.
+- SYSTEMIC-RISK: ASSUMPTION-2086 and PRESUMPTION-1235 share one vulnerability: the ACPA 2026 poster thesis frames the problem as unattempted and speed-limited, while the history (Neurath, Wilson, SFI) and MacIntyre's own account locate the difficulty in translation between traditions. Both flagged REVISE; apply together.
+- PRESUMPTION-1233 (0-fetch dispositions) bears on this pipeline's own outputs, including today's; dispositions here remain provisional on that basis.
+- [IN-HOUSE] items and the older bare-literature backlog were not touched; 'all queued items searched' is NOT met for them.

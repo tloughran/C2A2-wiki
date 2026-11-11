@@ -26798,3 +26798,65 @@ PRESUMPTION-1232:
     Current status: UNTESTED
 
 *2026-11-09 14b: PRESUMPTION-1230..1232 (epistemic 2, structural 1; risk Medium 3). Checked against 14a 2073-2080 and the registry. Not re-surfaced (already registered; new evidence today): cloud/local copies equivalent (PRESUMPTION-1196; lock not taken by cloud copy, ASSUMPTION-2078); per-task duplicate guards (PRESUMPTION-1229; four duplicates today); count comparisons share definitions (PRESUMPTION-1216; 27 vs 9 double-registered, disk 67% vs 71%); local passes not found by readers (PRESUMPTION-1219; evening sync again); cards from secondary text (ASSUMPTION-2052; paywalled Levin article).*
+
+PRESUMPTION-1233:
+  Date surfaced: 2026-11-10
+  Statement: [inferred] The cloud lit pipeline dispositioned four items today, one at High priority (MONITOR-715), from "3 searches, 0 fetches". This presumes that search results and the agent's prior knowledge of the cited works are enough evidence to grade an item. The 15c disposition looks the same whether the sources were read or not.
+  Evidence it was operative: Cowork summary, Lit pipeline (cloud): "Preliminary: 3 searches, 0 fetches"
+  Why it was unstated: the disposition format records priority but not how much source text was read
+  Type: methodological
+  Related decisions: MONITOR-713..716; PRESUMPTION-447
+  Testability: testable via literature (abstract/snippet-only vs full-text screening accuracy in systematic reviews) + in-house (fetch count per DISPOSITION since 10-01)
+  Risk if wrong: Medium: MONITOR priorities may rest on remembered abstracts; a High flag could steer Tom's OPEN-297 ruling.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1233
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1234:
+  Date surfaced: 2026-11-10
+  Statement: [inferred] A tradition named for a thinker presumes the thinker's lab, team and collaborators belong to it. The Hawkins agent counted Thousand Brains Project team work as Hawkins, citing earlier TBP approvals. The unit of a tradition is drifting from a person to a research program or institution, and no one has decided this.
+  Evidence it was operative: ASSUMPTION-2083 (TBP precedent); earlier approved TBP forum proposals
+  Why it was unstated: the filter says "from Hawkins"; the agents apply it by precedent, case by case
+  Type: structural
+  Related decisions: ASSUMPTION-2083; OPEN-300
+  Testability: testable via literature (Lakatos 1970 research programmes; MacIntyre 1988 tradition as socially embodied argument; Kuhn 1970 Postscript disciplinary matrix) + in-house (share of each tradition's triplets authored by the named thinker vs team/collaborators)
+  Risk if wrong: Medium: per-tradition counts and cross-tradition bridges would mean different things across traditions (single author vs lab).
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1234
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+PRESUMPTION-1235:
+  Date surfaced: 2026-11-10
+  Statement: [inferred] The poster's "Only now ... through AI-accelerated interaction" presumes that the obstacle to integrating traditions has been interaction speed and volume. MacIntyre's own account, which C2A2 relies on, puts the obstacle in rival standards of rational justification, which faster exchange does not remove. "Trans-agentic communities of humans and AI" also presumes that AI agents can be members of a tradition-bearing community.
+  Evidence it was operative: ASSUMPTION-2086 (conclusion line, now in acpa_2026.html)
+  Why it was unstated: poster copy states the thesis; the step from acceleration to overcoming is not argued
+  Type: normative
+  Related decisions: ASSUMPTION-2086; MONITOR-711
+  Testability: testable via literature (MacIntyre 1988 chs. 17-19; MacIntyre 1990 Three Rival Versions; Wilson 1998 Consilience and its critics; Mitchell 2003 integrative pluralism)
+  Risk if wrong: High: this is the project's public thesis on a printed poster; if the bottleneck is incommensurability, acceleration alone may multiply exchanges without integration.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1235
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+*2026-11-10 14b: PRESUMPTION-1233..1235 (methodological 1, structural 1, normative 1; risk High 1, Medium 2). Checked against 14a 2081-2088 and the registry. Not re-surfaced (already registered; new evidence today): "ran on schedule" read as health (PRESUMPTION-503; morning status); local passes not found by readers (PRESUMPTION-1219; evening sync); cloud/local copies equivalent (PRESUMPTION-1196; capability split session_info/list_triggers/Mac shell); count comparisons share definitions (PRESUMPTION-1216; poster figures); uniform record format (PRESUMPTION-1231; FINDING-018).*

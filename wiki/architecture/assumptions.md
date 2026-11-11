@@ -39381,3 +39381,141 @@ ASSUMPTION-2080:
     Current status: UNTESTED
 
 *2026-11-09 14a: ASSUMPTION-2073..2080 (8). Queued: literature 2075, 2079; [IN-HOUSE] 2073, 2076, 2077, 2078. Not queued: 2074 (design choice), 2080 (recurrences). No interactive Cowork session; 2073-2075 come from the chat-scrape summary of a claude.ai walk chat.*
+
+ASSUMPTION-2081:
+  Date identified: 2026-11-10
+  Statement: [stated] PRS-id census (chat, branch claude/prs-activity): 23,183 resolved, 10,205 unresolved, 434 point to nonexistent triplets ("~3% mis-assignment on long lines"), 3,014 PRS-CANDIDATE ids. Proposals, inbox cards and signals "are dated but mostly unresolved and need a per-source resolution rule."
+  Context: Chat summary addendum (PRS activity visualization chat, census commit e892cbfa, unpushed)
+  Type: methodological
+  Related decisions: OPEN-297; ASSUMPTION-2073; PRESUMPTION-1230; MONITOR-715
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2081
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2082:
+  Date identified: 2026-11-10
+  Statement: [stated] Chat's proposed activity kinds: Summa commentary, proposal, inbox card, signal, bridge essay, cross-program index, rival dialogue, triplet-to-triplet; tradition wiki pages "doubtful"; open whether candidate ids light anything and whether "the daily refresh is enough for 'live'".
+  Context: Chat summary addendum, decisions pending Tom 1-2
+  Type: architectural
+  Related decisions: OPEN-297; ASSUMPTION-2074
+  Testability: design choice pending Tom (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2082
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2083:
+  Date identified: 2026-11-10
+  Statement: [stated] Selection filters are overridden by precedent or approval: the Hawkins card is TBP team work ("fails the task's strict 'from Hawkins' filter. Earlier approved TBP forum proposals set the precedent I followed"), is outside the 30-day window ("significant work not yet in the wiki"), and was built from PR #1174 without the video; the daily run ingested a Levin card dated 2025-10-09, outside the 60-day window, because "You approved it anyway."
+  Context: Hawkins/Hoffman Tuesday agents 217b8777 (PROP-2026-11-10-001); wiki daily run a83dd24d
+  Type: methodological
+  Related decisions: PRESUMPTION-1234; PRESUMPTION-447
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2083
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2084:
+  Date identified: 2026-11-10
+  Statement: [stated] Dedup rule: same source URL = same event. "McGilchrist added 0: the Glasgow card covers the same event (same URL) as PRS-87."
+  Context: Wiki daily run a83dd24d, Phase 1
+  Type: methodological
+  Related decisions: none
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2084
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2085:
+  Date identified: 2026-11-10
+  Statement: [stated] For 14a/14b and the evening sync, the local registration is the working one: "the local firing with session_info produced 8 assumptions ... the cloud firings have produced nothing for 5 days. Retire the cloud registration and keep only the local one?" Scheduler health's remedy for all 27 double-registrations runs the other way: "Confirm the cloud trigger fires before disabling the local entry." Scheduler health itself says the opposite for its own task: the cloud copy "appears to be the one that can" fetch routines.
+  Context: Cowork summary, For Morning Discussion 1-2; scheduler health ee88a429; evening sync 9b288d74; lit pipeline 71703fde
+  Type: architectural
+  Related decisions: OPEN-299; PRESUMPTION-1196; ASSUMPTION-2078
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2085
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2086:
+  Date identified: 2026-11-10
+  Statement: [stated] ACPA poster thesis: "Only now can the fragmentation of wisdom be overcome: through AI-accelerated interaction among trans-agentic communities of humans and AI"; P3's requisite conditions, suggested wording: "no institution seriously attempts integration at this scale."
+  Context: Chat summary (ACPA poster review); cowork summary confirms the conclusion line landed in acpa_2026.html
+  Type: empirical
+  Related decisions: PRESUMPTION-1235; MONITOR-711
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2086
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2087:
+  Date identified: 2026-11-10
+  Statement: [stated] Poster figures disagree: triplets 1,079 (bar panel, Vault Life frame) vs 1,108 (connectome caption), network now 1,151 [reported]; heartbeat 689 (poster) vs 441 (film). Chat: "Date one or harmonize." Cowork summary: a single figure (1,079) now on the poster; heartbeat fix not verified.
+  Context: Chat summary; cowork summary
+  Type: empirical
+  Related decisions: PRESUMPTION-1216; PRESUMPTION-1231
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2087
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+ASSUMPTION-2088:
+  Date identified: 2026-11-10
+  Statement: [stated] Recurrences: scheduler health 43 OK / 3 WARN / 29 FAIL, same 27 DOUBLE-REGISTERED; morning status now also says 27 (resolves the 11-09 27-vs-9 contradiction) yet says "all of them last ran on schedule" (PRESUMPTION-503); voice-shell RED 6/403 on main@ce604102; openstory.ui not loaded; local scheduler watchdog could not fetch routines (4th of 5 days); local lit copy skipped at lock (4th day); cloud lit lock line again "manual append; script unavailable" and review/lit_pipeline.lock.d absent (checked this run; ASSUMPTION-2078); cloud 14a/14b NO-OP (4th); duplicate firings of evening sync (6 min apart), chat scrape and deferred monitor; evening sync first run said 11-09 was "the first productive self-awareness pass since late October" though local passes wrote 11-06..11-08 (PRESUMPTION-1219); GitHub Pages deploy failed on main 03:11Z; Summa index missing Day-035 and Day-001; cell_dates.json held since Nov 5; disk 71%; janitor 294 broken wikilinks, 58 case-only; community_explorer 156 vs 155; Phase 2 hunt searched 2 of 10 traditions (token budget); WATCH-003 28 checks; watch_list.md ~900 KB; Hawkins task path missing Projects/; FINDING-018 still duplicated (PROP collision resolved).
+  Context: All sessions read
+  Type: architectural
+  Related decisions: OPEN-288; OPEN-292; OPEN-298; PRESUMPTION-503; PRESUMPTION-1196; PRESUMPTION-1219
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2088
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
+    Current status: UNTESTED
+
+*2026-11-10 14a: ASSUMPTION-2081..2088 (8). Queued: literature 2086; [IN-HOUSE] 2081, 2083, 2084, 2085, 2087. Not queued: 2082 (design choice pending Tom), 2088 (recurrences). No interactive Cowork session; 2081-2082 and 2086-2087 come from chat-scrape summaries of claude.ai chats.*

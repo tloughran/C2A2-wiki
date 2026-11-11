@@ -25906,3 +25906,25 @@ MONITOR-716:
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1232 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1232_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1232_against.md
 
+
+MONITOR-717:
+  Date: 2026-11-11
+  Source item: PRESUMPTION-1233 (DISPOSITION-1133)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: Screening on limited information (titles, abstracts) is standard and fairly sensitive for the first, include/exclude stage of a review. (Moderate, preliminary). 15b: The literature that supports screening on abstracts places it before a full-text stage. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE narrowed premise 'search-level evidence suffices for triage, not grading') if the in-house comparison shows grades stable after fetching; (-> REVISE) if fetched items' grades differ often.
+  Monitoring cadence: Weekly (default); first check due 2026-11-18
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1233 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1233_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1233_against.md
+
+MONITOR-718:
+  Date: 2026-11-11
+  Source item: PRESUMPTION-1234 (DISPOSITION-1134)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Three standard accounts of intellectual units (research programme, paradigm, tradition) define them by communities, not individuals. (Moderate, preliminary). 15b: The challenge is to the boundary, not the inclusion. (Weak, preliminary).
+  What would change the disposition: (-> INCORPORATE 'thinker-named traditions include the thinker's research community, with divergences marked') after a read source and the authorship count; (-> REVISE) if co-author positions often diverge from the voiced thinker.
+  Monitoring cadence: Weekly (default); first check due 2026-11-18
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1234 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1234_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1234_against.md

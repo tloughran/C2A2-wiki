@@ -16334,3 +16334,21 @@ REVISE-536: [2026-10-31] Source item: PRESUMPTION-1201 (DISPOSITION-1114)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Original item: PRESUMPTION-1201 | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1201_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1201_against.md
+
+REVISE-537: [2026-11-11] Source item: ASSUMPTION-2086 (DISPOSITION-1132)
+  What is at risk: ACPA 2026 poster and paper drafts (thesis statement); what_is_c2a2.html framing.
+  Recommended action (for Tom): (1) Replace 'no institution seriously attempts' with a sentence naming Neurath's encyclopedia, Wilson's Consilience, and the Santa Fe Institute. (2) State what differs: AI-mediated, continuous, tradition-preserving (MacIntyre 1990) rather than reductive (Wilson). (3) Define 'scale' numerically or drop it. (4) Keep 'only now' only if tied to a specific capability.
+  Urgency: Medium (sources partly read; wording change only).
+  Related: ASSUMPTION-2086 and PRESUMPTION-1235 (paired; poster thesis). SYSTEMIC-RISK: see 2026-11-11 evidence-quality notes in lit_search_returns.md.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2086 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2086_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2086_against.md
+
+REVISE-538: [2026-11-11] Source item: PRESUMPTION-1235 (DISPOSITION-1135)
+  What is at risk: ACPA 2026 poster/paper thesis; the role of tradition agents (members vs representations); any metric that treats interaction rate as progress.
+  Recommended action (for Tom): (1) Restate the bottleneck as translation (MacIntyre 1988 ch. 19), with speed as the cost AI lowers. (2) Describe agents as representations accountable to human tradition members, or argue explicitly for membership. (3) Cite the Consilience critiques and say why C2A2 is not Wilson's reductive unity. (4) Apply together with the REVISE for ASSUMPTION-2086.
+  Urgency: High (presumption; strong conceptual challenge, recall-based).
+  Related: ASSUMPTION-2086 and PRESUMPTION-1235 (paired; poster thesis). SYSTEMIC-RISK: see 2026-11-11 evidence-quality notes in lit_search_returns.md.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1235 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1235_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1235_against.md

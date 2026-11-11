@@ -29345,3 +29345,56 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
 *2026-11-09 (local pass): 9 items queued, 5 [IN-HOUSE], 4 literature-lane (ASSUMPTION-2075, -2079, PRESUMPTION-1230, -1232). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-09T05:42:19Z by cloud-lit-2026-11-09; not held, append safe.*
 
 *2026-11-10 (cloud pass): ASSUMPTION-2075, -2079, PRESUMPTION-1230, -1232 searched 15a/15b and dispositioned (DISPOSITION-1128..1131 -> MONITOR-713..716). IN-HOUSE items untouched.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2081
+  Statement: [stated] PRS census: ~3% mis-assignment on long lines; 10,205 unresolved; per-source resolution rule needed.
+  Claim to test: In-house: hand-check a random 100 long-line hits for mis-assignment; break unresolved hits down by source kind.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2083
+  Statement: [stated] Author/date filters overridden by precedent or approval (TBP for Hawkins; Levin card outside 60 days).
+  Claim to test: In-house: list approved cards from the last 90 days that breach the author or date filter; count by tradition.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2084
+  Statement: [stated] Dedup rule: same URL = same event.
+  Claim to test: In-house: find triplet sources where one URL carries two distinct events, and events recorded under two URLs.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2085
+  Statement: [stated] Local registration is the working one for 14a/14b and evening sync; scheduler remedy says disable local.
+  Claim to test: In-house: for each of the 27 tasks, list the tools it needs and which side has them (session_info, list_triggers, Mac shell); recommend a side per task.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-11] [SEARCHED-15b: 2026-11-11] [DISPOSITIONED-15c: 2026-11-11] [ASSUMPTION] ASSUMPTION-2086
+  Result (2026-11-11): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1132 -> REVISE-537
+  Statement: [stated] Poster thesis: only now can fragmentation of wisdom be overcome via AI-accelerated trans-agentic communities; no institution seriously attempts integration at this scale.
+  Claim to test: Literature lane: prior integration programs: Neurath et al. International Encyclopedia of Unified Science (1938-); Wilson 1998 Consilience; Mitchell 2003 Biological Complexity and Integrative Pluralism; Santa Fe Institute; MacIntyre 1990 Three Rival Versions (university of constrained disagreement).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2087
+  Statement: [stated] Poster figures disagree (1,079 vs 1,108 triplets; 689 vs 441 heartbeats).
+  Claim to test: In-house: compute each figure with its as-of date from git history; confirm the printed poster's figures and dates.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-11] [SEARCHED-15b: 2026-11-11] [DISPOSITIONED-15c: 2026-11-11] [PRESUMPTION] PRESUMPTION-1233
+  Result (2026-11-11): 15a PARTIALLY-SUPPORTED (Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1133 -> MONITOR-717
+  Statement: [inferred] Dispositions with 0 fetches presume search-level evidence suffices to grade priority.
+  Claim to test: Literature lane: abstract-only vs full-text screening accuracy (e.g. Cochrane methods literature on title/abstract screening). In-house: fetch count per DISPOSITION since 10-01; compare priority distribution with and without fetches.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-11] [SEARCHED-15b: 2026-11-11] [DISPOSITIONED-15c: 2026-11-11] [PRESUMPTION] PRESUMPTION-1234
+  Result (2026-11-11): 15a SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak); DISPOSITION-1134 -> MONITOR-718
+  Statement: [inferred] Thinker-named traditions presumed to include the thinker's team/lab.
+  Claim to test: Literature lane: Lakatos 1970 'Falsification and the methodology of scientific research programmes'; MacIntyre 1988 Whose Justice? Which Rationality? ch. 18; Kuhn 1970 Postscript. In-house: authorship share per tradition.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-11] [SEARCHED-15b: 2026-11-11] [DISPOSITIONED-15c: 2026-11-11] [PRESUMPTION] PRESUMPTION-1235
+  Result (2026-11-11): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Strong); DISPOSITION-1135 -> REVISE-538
+  Statement: [inferred] Poster presumes integration bottleneck is interaction speed, and that AI agents can be tradition-community members.
+  Claim to test: Literature lane: MacIntyre 1988 chs. 17-19 (rationality of traditions; tradition and translation); MacIntyre 1990 Three Rival Versions; critiques of Wilson's Consilience (e.g. Rorty 1998 review; Dupré).
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-10 (local pass): 9 items queued, 5 [IN-HOUSE], 4 literature-lane (ASSUMPTION-2086, PRESUMPTION-1233, -1234, -1235). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-10T05:50:00Z by cloud-lit-2026-11-10; not held, append safe.*
+
+*2026-11-11 (cloud pass): ASSUMPTION-2086, PRESUMPTION-1233, -1234, -1235 searched 15a/15b and dispositioned (DISPOSITION-1132..1135 -> 2 MONITOR, 2 REVISE). IN-HOUSE items untouched.*
