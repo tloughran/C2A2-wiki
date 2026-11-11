@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-126 - Heavenly Hope - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/126, pars/2, q/16-17]
-last_qc_at: "2026-10-14T20:17:52"
+last_qc_at: "2026-11-10T16:18:04"
 last_qc_outcome: "pass"
 ---
 

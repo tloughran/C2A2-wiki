@@ -17,8 +17,8 @@ evidence_strength_summary: "Despair as collapse of the goal-prior into a rigid l
 mind_first_reframe: "Despair and presumption are the two failure modes of a single control system. Despair is the collapse of the goal-prior: the agent stops treating the preferred state as reachable and ceases to seek it (Friston PRS-03/PRS-14 — a rigid, self-trapping low-hope attractor that resists update because updating costs short-term free energy). Presumption is the pathological down-weighting of the divergence signal: false certainty that the target is already secured, muting the very correction fear supplies (Friston PRS-16, the preference-vs-prediction divergence that the register's risk term names; the precision-weighting language is the synthesis's gloss). Under- and over-confidence in the reachable good, symmetric about rightly-ordered hope."
 central_theme_thread: "Both vices end the computation toward loving unity from the inside: despair abandons the target as unreachable; presumption pretends it is already held and so stops computing. Each is a refusal of the central theme's posture — a reachable-but-not-yet whole, sought under acknowledged limitation with dependence on what perceives more."
 tags: [synthesis, day/128, theme/despair-and-presumption]
-last_qc_at: "2026-11-02T14:17:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-10T18:20:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 128 — Contemporary Parallel: The Two Failures of the Goal-Prior
@@ -62,7 +62,7 @@ Both vices end the computation toward loving unity from the inside, and in oppos
 - *PRS-14 in the Friston-tradition wiki (Tom's PRS-form record of Friston's symptom-formation work)* — both vices as Bayesian self-trapping: locally-optimal, globally-suboptimal states immune to update because updating raises short-term free energy. (Formal/clinical; high as model.)
 - *PRS-03 + PRS-13 + PRS-16 in the Friston-tradition wiki* — despair as collapse of the goal-prior and as a loss of metastability (the capacity to move between coherent attractor states at all); presumption as pathological down-weighting of the divergence signal; under- vs over-confidence in the reachable good. (Formal; all three carried at High in the register. The caveat is scope rather than grade: PRS-03's home is morphogenesis at cell and tissue scale, so its use here for a personal agent's hope is an extrapolation; and PRS-16's content is risk-as-divergence under expected free energy, so "precision" is the synthesis's term, not the record's.)
 - *PRS-03 in the Wright-tradition wiki* — despair denies the already, presumption denies the not-yet; both reject inaugurated eschatology's live tension. (Historical-theological; high in field.)
-- *PRS-02 in the Rohr-tradition wiki* — despair refuses to believe in the reorder, presumption skips the disorder; both step out of the in-progress passage into a frozen verdict. (Contemplative; medium.)
+- *PRS-02 in the Rohr-tradition wiki* — despair refuses to believe in the reorder, presumption skips the disorder; both step out of the in-progress passage into a frozen verdict. (Contemplative; **the register grades PRS-02 High** — the medium belongs to this commentary's mapping of the two vices onto the passage, not to the record.)
 - *PRS-01 in the Fredrickson-tradition wiki + PRS-01 in the McGilchrist-tradition wiki* — despair's etiology in sloth/lust as affective-appetitive gating that down-weights the attainable good. (Both records are High in the register; the badge here is *medium* for the theological application, not for the underlying findings.)
 
 ## Where this leaves us

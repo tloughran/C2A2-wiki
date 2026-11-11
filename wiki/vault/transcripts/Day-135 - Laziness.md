@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-135 - Laziness - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/135, pars/2, q/34-35]
-last_qc_at: "2026-11-02T16:17:24"
+last_qc_at: "2026-11-10T20:21:02"
 last_qc_outcome: "pass"
 ---
 
