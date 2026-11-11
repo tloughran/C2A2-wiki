@@ -26,8 +26,14 @@
 #   ~/Library/Logs/c2a2-voice-shell-check.log via the plist; the suite's own
 #   output goes to /tmp/voice_shell_last.log (346 rows; not for the launchd log).
 #
+# VERDICT: GREEN/RED is decided against a DECLARED BASELINE (see PENDING_BASELINE
+#       below), not against `failed == 0`. The suite reports some failures by
+#       design; this wrapper interprets them. It never changes what the suite
+#       reports, and a partial run (no `rows:` line) is never scored at all.
+#
 # EXIT: 0 green or no-op | 3 RED (a VERDICT, excused in check_scheduler_health.py's
 #       VERDICT_EXITS) | 2 cannot run (no Chrome, no node, no harness) | 1 script error
+#       (including: the harness died before its summary -- a broken check, not a verdict)
 #
 # Usage:  bash scripts/check_voice_shell.sh [--dry-run] [--force]
 #   --dry-run  evaluate the gate, write nothing
@@ -48,6 +54,39 @@ LOCKDIR="${VOICE_SHELL_LOCK:-/tmp/check_voice_shell.lock}"
 PORT=8087
 QUIET_MIN=20
 CHROME_BIN="${CHROME:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
+
+# --- THE DECLARED BASELINE ---------------------------------------------------
+# READ THIS BEFORE "TIDYING" ANY OF IT TO ZERO.
+#
+# The suite reports a set of failures BY DESIGN, and it is right to. Each one is
+# a live record of a capability the system has not finished spreading. Rule 12:
+# "completed" would be a lie if a skipped tab were silently omitted, so the
+# harness records them as FAIL rather than hiding them. This wrapper is the one
+# place that knows which of those failures are expected -- it changes how the
+# result is INTERPRETED, never what the suite reports.
+#
+# PENDING_BASELINE -- how many FAIL rows carrying PENDING_MARK are expected at
+#   the known-good state. It is a CAPABILITY ROSTER, NOT A DEFECT COUNT. The six
+#   are tabs in the harness's FIND_TABS table that are required to implement the
+#   c2a2Find / c2a2Clear / c2a2ReadCut contract and have not yet. The number must
+#   FALL as tabs land the contract: lower it (never raise it) when one does.
+#   Setting it to 0 today does not make the check stricter -- it only restores
+#   the daily false alarm that this block exists to end.
+#
+# KNOWN_EXCEPTION -- the one page exception present at the known-good state,
+#   matched BY TEXT rather than counted, so a DIFFERENT exception appearing is
+#   RED even though the count did not move. Delete the line when it is fixed.
+#   Set to the empty string to require a clean page.
+#
+# Why a declared baseline at all: from 2026-10 the wrapper scored RED whenever
+# `failed` was non-zero, so it cried RED every morning at a state Tom had
+# declared good. On 2026-11-06 a genuine seventh failure appeared
+# ("interT_study.html built from its markdown", carrying no `pending`) and
+# arrived looking identical to a week of false alarm. A daily false alarm is how
+# a signal becomes background noise.
+PENDING_MARK='pending'
+PENDING_BASELINE=6
+KNOWN_EXCEPTION="TypeError: Cannot read properties of undefined (reading 'toFixed')"
 
 DRY=0; FORCE=0
 for a in "$@"; do
@@ -99,12 +138,17 @@ age_min=$(( (now - newest_t) / 60 ))
 branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "?")
 head=$(git rev-parse --short HEAD 2>/dev/null || echo "?")
 
-write_state() {  # $1 = ran (0/1)  $2 rows $3 passed $4 failed $5 exit $6 note
+# $1 ran (0/1)  $2 rows $3 passed $4 failed $5 exit $6 note $7 verdict $8 extra-json
+# The verdict is PASSED IN, not inferred here from `failed == 0`. That inference
+# was the bug: it could not tell a declared pending row from a regression.
+write_state() {
   [ "$DRY" = 1 ] && return 0
+  local ws_verdict="${7:-}" ws_extra="${8:-}"
+  [ -n "$ws_extra" ] || ws_extra='{}'
   mkdir -p "$(dirname "$STATE")"
-  python3 - "$STATE" "$1" "$2" "$3" "$4" "$5" "$6" "$branch" "$head" "$newest_f" "$now" <<'PY'
+  python3 - "$STATE" "$1" "$2" "$3" "$4" "$5" "$6" "$ws_verdict" "$ws_extra" "$branch" "$head" "$newest_f" "$now" <<'PY'
 import json, sys, os, datetime
-p, ran, rows, passed, failed, code, note, branch, head, newest, now = sys.argv[1:]
+p, ran, rows, passed, failed, code, note, verdict, extra, branch, head, newest, now = sys.argv[1:]
 old = {}
 if os.path.exists(p):
     try: old = json.load(open(p))
@@ -116,7 +160,9 @@ d["branch"] = branch; d["head"] = head; d["newest_source"] = newest; d["note"] =
 if ran == "1":
     d["ran_at"] = iso; d["ran_at_epoch"] = int(now)
     d["rows"] = int(rows); d["passed"] = int(passed); d["failed"] = int(failed); d["exit"] = int(code)
-    d["verdict"] = "GREEN" if int(failed) == 0 and int(code) == 0 else "RED"
+    d["verdict"] = verdict
+    try: d.update(json.loads(extra or "{}"))
+    except Exception: pass
 json.dump(d, open(p, "w"), indent=2); open(p, "a").write("\n")
 PY
 }
@@ -158,23 +204,73 @@ if [ -z "$summary" ]; then
   # only the stack -- which is what made 2026-11-04 look like a run that never
   # started rather than one that died 130 rows in.
   tail -24 "$SUITE_LOG"
-  write_state 1 0 0 0 "$rc" "harness produced no summary (exit $rc)"
+  # Scored against NOTHING: a partial run is not a result. It never reaches the
+  # baseline comparison below, which is why the harness deliberately does not
+  # print a `rows:` line on this path.
+  write_state 1 0 0 0 "$rc" "harness produced no summary (exit $rc)" "DIED"
   line "ERROR harness died (exit $rc, no summary)"
   printf '[%s] voice-shell check could not complete: harness exit %s, no summary line; see %s\n' "$(stamp)" "$rc" "$SUITE_LOG" > "$MARKER"
   exit 1
 fi
-write_state 1 "$rows" "$passed" "$failed" "$rc" "$summary"
-fails=$(grep -E '^  FAIL ' "$SUITE_LOG" | sed -E 's/^  FAIL +//; s/ +-- .*$//' | head -12 | paste -sd ';' -)
-if [ "$failed" = 0 ] && [ "$rc" = 0 ]; then
+
+# --- verdict: the baseline, not a bare count --------------------------------
+# Two independent questions, and the SECOND matters more than the first:
+#   1. is the pending roster still at or under PENDING_BASELINE?
+#   2. is EVERY failure one of the declared pending ones?
+# A single failure without PENDING_MARK is a regression at ANY count -- six
+# failures where one is unmarked is RED, because the roster shrank by one and a
+# new defect took its slot. Reducing this to "failed <= 6" would pass that.
+#
+# Row names are split off their detail on the THREE-space ' -- ' that record()
+# writes, not the first ' -- ': the pending rows carry a single-spaced ' -- '
+# inside their own name ("X prs_3d -- pending: ...").
+fail_names=$(grep -E '^  FAIL  ' "$SUITE_LOG" | sed -E 's/^  FAIL  //; s/   -- .*$//')
+unmarked=$(printf '%s\n' "$fail_names" | grep -vF -- "$PENDING_MARK" | grep -c . | tr -d ' ')
+pending_n=$(printf '%s\n' "$fail_names" | grep -cF -- "$PENDING_MARK" | tr -d ' ')
+unmarked_list=$(printf '%s\n' "$fail_names" | grep -vF -- "$PENDING_MARK" | head -12 | paste -sd ';' -)
+
+# Page exceptions and console errors are failures the suite reports OUTSIDE the
+# row count (they are why the harness can exit 1 at `failed: 0`). They were
+# folded into the old verdict only through $rc; now that $rc is no longer the
+# gate they are asked for by name, and matched by TEXT so a swapped exception
+# cannot hide behind an unchanged count.
+all_exc=$(grep -E '^  EXCEPTION  ' "$SUITE_LOG" | sed -E 's/^  EXCEPTION  //')
+if [ -n "$KNOWN_EXCEPTION" ]; then
+  undeclared_exc=$(printf '%s\n' "$all_exc" | grep . | grep -vF -- "$KNOWN_EXCEPTION" | head -4 | paste -sd ';' -)
+else
+  undeclared_exc=$(printf '%s\n' "$all_exc" | grep . | head -4 | paste -sd ';' -)
+fi
+undeclared_cerr=$(grep -E '^  CONSOLE    ' "$SUITE_LOG" | sed -E 's/^  CONSOLE    //' | head -4 | paste -sd ';' -)
+
+reasons=""
+[ "$failed" -gt "$PENDING_BASELINE" ] && reasons="${reasons}failed $failed exceeds declared pending baseline $PENDING_BASELINE; "
+[ "$unmarked" -gt 0 ] && reasons="${reasons}$unmarked failure(s) not marked '$PENDING_MARK' [$unmarked_list]; "
+[ -n "$undeclared_exc" ] && reasons="${reasons}undeclared page exception [$undeclared_exc]; "
+[ -n "$undeclared_cerr" ] && reasons="${reasons}console error(s) [$undeclared_cerr]; "
+
+fails=$(printf '%s\n' "$fail_names" | grep . | sed -E 's/ +-- .*$//' | head -12 | paste -sd ';' -)
+roster="pending $pending_n/$PENDING_BASELINE, unmarked $unmarked"
+extra=$(printf '{"pending_failed": %s, "unmarked_failed": %s, "pending_baseline": %s}' \
+         "$pending_n" "$unmarked" "$PENDING_BASELINE")
+
+if [ -z "$reasons" ]; then
+  write_state 1 "$rows" "$passed" "$failed" "$rc" "$summary ($roster)" "GREEN" "$extra"
   rm -f "$MARKER"
-  log "GREEN: $summary"
-  line "GREEN $summary ($branch@$head)"
+  # Say the roster out loud even when green: the six are still outstanding work,
+  # and a GREEN that hides them is the other half of Rule 12.
+  log "GREEN at declared baseline: $summary -- $roster${fails:+ -- $fails}"
+  line "GREEN $summary ($branch@$head) -- $roster${fails:+ -- $fails}"
   exit 0
 fi
-log "RED: $summary (exit $rc) -- $fails"
-line "RED $summary ($branch@$head) -- $fails"
+
+write_state 1 "$rows" "$passed" "$failed" "$rc" "$summary ($roster)" "RED" "$extra"
+log "RED: $summary (exit $rc) -- ${reasons%; } -- $fails"
+line "RED $summary ($branch@$head) -- ${reasons%; } -- $fails"
 {
   printf '[%s] voice-shell suite RED: %s (exit %s) on %s@%s\n' "$(stamp)" "$summary" "$rc" "$branch" "$head"
+  printf 'why RED: %s\n' "${reasons%; }"
+  printf 'declared baseline: %s pending rows marked %s%s\n' "$PENDING_BASELINE" "$PENDING_MARK" \
+         "${KNOWN_EXCEPTION:+, plus the known exception: $KNOWN_EXCEPTION}"
   printf 'failed rows: %s\n' "$fails"
   printf 'full output: %s\n' "$SUITE_LOG"
 } > "$MARKER"
