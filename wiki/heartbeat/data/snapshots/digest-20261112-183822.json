@@ -1,0 +1,191 @@
+{
+  "seed": false,
+  "generated": "2026-11-12",
+  "generated_at": "2026-11-12T18:38:22Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 128,
+    "high_relevance": 0,
+    "primary_themes": "Governance Policy + Capability Jump"
+  },
+  "signals": [
+    {
+      "title": "Setting a new standard for responsible AI infrastructure",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+      "relevance": 1,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Thu, 05 Nov 2026 02:00:00 GMT",
+      "first_seen_at": "2026-11-12T18:38:16.236659+00:00",
+      "long_summary": "OpenAI has introduced the National Community Compact and Compute Campus Policy Blueprint, which aims to protect local resources, create jobs, and ensure the responsible development of AI infrastructure. This initiative reflects a commitment to ethical practices in AI deployment, emphasizing the importance of community involvement and the careful management of technological advancements. By addressing local concerns and promoting job creation, the blueprint sets a framework for sustainable AI growth that prioritizes community welfare. This matters for our community keeping up with AI as it highlights the ongoing efforts to balance technological progress with ethical responsibilities and local impact.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Mon, 09 Nov 2026 08:00:00 GMT",
+      "first_seen_at": "2026-11-12T18:38:16.220849+00:00",
+      "long_summary": "CodeRabbit employs OpenAI models to manage and ensure the reliability of AI-generated code, allowing the same engineering team to produce 20 times more software. This advancement illustrates the potential of integrating AI into software development processes, significantly enhancing productivity and efficiency in projects. Understanding such capabilities is crucial for the community as it highlights the transformative impact AI can have on development workflows and resource management in technology.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Closing the AI guidance gap in education",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+      "relevance": 1,
+      "tags": [
+        "market_platform"
+      ],
+      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Tue, 10 Nov 2026 09:00:00 GMT",
+      "first_seen_at": "2026-11-12T18:38:16.208495+00:00",
+      "long_summary": "New research from ThinkYoung and insights from OpenAI’s education partnerships in the EMEA region highlight the importance of supporting teachers and promoting AI literacy among students. The focus is on equipping educators with the necessary resources and knowledge to foster independent learning in an increasingly AI-driven educational landscape. This underscores a growing recognition of the need to close the guidance gap in education related to artificial intelligence. Keeping up with these developments is critical for community members who wish to understand how AI can be effectively integrated into learning environments.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Introducing Businesses in ChatGPT",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Tue, 10 Nov 2026 10:00:00 GMT",
+      "first_seen_at": "2026-11-12T18:38:16.206570+00:00",
+      "long_summary": "Businesses can now manage their information in ChatGPT, allowing them to gain insights about their visibility and how they appear within the platform. This feature enables businesses to turn user interest into actionable steps, enhancing their engagement with potential customers. This matters for our community by highlighting the evolving role of AI tools in business management and customer interaction, which is crucial for staying competitive in today’s digital landscape.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mzqqgdm2x22p",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Thinking about hedges, what they hold space for, and who is expected to use them in discourse about \"AI\". (This thread inspired by conversations with @lmesseri.bsky.social + editing a piece based on an interview I did, where the interviewer/author keeps adding hedges in their paraphrases of me.) >>",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "07 Nov 2026 20:30 +0000",
+      "first_seen_at": "2026-11-12T18:38:22.301707+00:00",
+      "long_summary": "The discussion revolves around the use of hedges in conversations about AI, examining what these hedges signify and who is typically expected to utilize them in discourse. The thread reflects on Emily M. Bender's experiences while editing a piece that was based on an interview, where the interviewer frequently included hedges in their paraphrasing. This raises questions about the implications and nuances of language in the context of AI discussions. Understanding the role of hedging can provide insight into the complexities of communication in AI-related dialogues, which is essential for a community that seeks to engage effectively with evolving AI topics.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mzqd3taowk2p",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Had the pleasure of meeting @lmesseri.bsky.social in person this past week, and participating in discussions she provoked with a thought experiment of the form: \"Imagine we had a perfect way to automate __, what would we lose by using that automation?\" ... and I'm reminded again of this: [contains quote post or other embedded content]",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "07 Nov 2026 16:31 +0000",
+      "first_seen_at": "2026-11-12T18:38:22.299813+00:00",
+      "long_summary": "Emily M. Bender recently met with @lmesseri.bsky.social and engaged in discussions inspired by a thought experiment that asked participants to consider what might be lost by perfect automation in various contexts. This reflects a growing awareness and concern in AI discussions about the implications of replacing human efforts with automated systems. The ongoing dialogue about the balance between efficiency and the potential loss of human qualities is significant as the community navigates the rapidly advancing field of AI technologies. Understanding these nuances can help individuals and organizations make informed decisions regarding automation's role in society.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mzvrjcx6zc2c",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Here's a thing that folks engaged in paranormal relationships seem to often forget: The other person has no idea who you are, what you stand for, nor how your sense of humor works. >>",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "09 Nov 2026 20:33 +0000",
+      "first_seen_at": "2026-11-12T18:38:22.297664+00:00",
+      "long_summary": "Folks engaged in paranormal relationships often overlook that the other person lacks knowledge about their identity, values, and sense of humor. This aspect can lead to misunderstandings and miscommunications, as the inherent characteristics and nuances of one person may not be recognized or appreciated by the other. Recognizing this lack of mutual understanding is crucial for fostering healthy interactions, especially in contexts where individuals may be relying on assumptions or personal projections rather than shared experiences. Awareness of these dynamics is important for any community interested in AI, as it parallels the challenges of human-AI interactions where understanding and empathy are crucial for effective communication and relationship building.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mzv4uynkckce",
+      "relevance": 0,
+      "tags": [],
+      "summary": "@mjcrockett.bsky.social is focused on Cognitive Science in particular here, but their remarks apply very broadly to all scholarship. Required watching for anyone doing science!",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "09 Nov 2026 14:23 +0000",
+      "first_seen_at": "2026-11-12T18:38:22.295840+00:00",
+      "long_summary": "@mjcrockett.bsky.social emphasizes the importance of cognitive science, suggesting that their insights extend to all areas of scholarship. They advocate for a deeper understanding of how cognitive processes influence scientific inquiry, making it essential viewing for anyone engaged in the field of science. This perspective encourages scholars to consider the cognitive aspects of their work, which can enhance research quality and comprehension. Understanding the cognitive dimensions of scholarship is crucial for developing better methodologies and fostering innovative thinking. For a community keeping up with AI, recognizing the interplay between cognitive science and various academic disciplines can help improve overall research practices and knowledge dissemination in AI development.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3n24miuqjqkle",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Our University established an Office of the Provost in Having an Affair with Jensen Huang, who then convened a advisory committee on Having an Affair with Jensen Huang, and distributed seed grants for creative ways of teaching through Having an Affair with Jensen Huang. [contains quote post or other embedded content]",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "12 Nov 2026 13:52 +0000",
+      "first_seen_at": "2026-11-12T18:38:22.293443+00:00",
+      "long_summary": "The University has created an Office of the Provost focused on innovative teaching methods through a project involving Jensen Huang. An advisory committee has been assembled to guide this initiative, and seed grants are being offered to support creative teaching approaches inspired by the project. This initiative reflects an effort to enhance educational practices while engaging with contemporary technologies. Understanding such developments is important for a community that aims to stay informed about the evolving intersection of education and technology like AI.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Untitled",
+      "source": "Emily M. Bender (Bluesky)",
+      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3n22xbl27r22m",
+      "relevance": 0,
+      "tags": [],
+      "summary": "Mystery AI Hype Theater 3000 ep 88: Sports Are About Bodies, Not Bots https://www.buzzsprout.com/2126417/episodes/20099406-sports-are-about-bodies-not-bots-2026-11-02 @alexhanna.bsky.social & I were joined by @shireenahmed.bsky.social to cheer on the people in sport (athletes, fans, coaches, journalists) and jeer those who would try to automate any of that.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "11 Nov 2026 21:59 +0000",
+      "first_seen_at": "2026-11-12T18:38:22.291468+00:00",
+      "long_summary": "In episode 88 of \"Mystery AI Hype Theater 3000,\" titled \"Sports Are About Bodies, Not Bots,\" hosts Emily M. Bender and Alex Hanna, along with guest Shireen Ahmed, express their support for individuals involved in sports — including athletes, fans, coaches, and journalists. They criticize efforts to automate aspects of the sports industry, emphasizing the irreplaceable human element in sports that cannot be substituted by technology. This discussion highlights the ongoing tension between technological advancement and the intrinsic value of personal experiences and interactions in sports. Understanding this debate is essential for the community as it reflects broader conversations about the role AI should play in human-centric fields.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-12",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}
