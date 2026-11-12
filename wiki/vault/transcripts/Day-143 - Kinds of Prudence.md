@@ -16,7 +16,7 @@ fetch_path: bash youtube-transcript-api (direct)
 synthesis: "[[Day-143 - Kinds of Prudence - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/143, pars/2, q/50-51]
-last_qc_at: "2026-11-02T20:17:01"
+last_qc_at: "2026-11-11T00:18:49"
 last_qc_outcome: "pass"
 ---
 

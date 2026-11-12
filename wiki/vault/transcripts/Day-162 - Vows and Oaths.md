@@ -15,7 +15,7 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-162 - Vows and Oaths - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-10-25T20:17:38"
+last_qc_at: "2026-11-11T08:22:19"
 last_qc_outcome: "pass"
 tags: [summa, day/162, pars/II-II, q/88–89]
 ---
