@@ -16352,3 +16352,12 @@ REVISE-538: [2026-11-11] Source item: PRESUMPTION-1235 (DISPOSITION-1135)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1235 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1235_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1235_against.md
+
+REVISE-539: [2026-11-12] Source item: PRESUMPTION-1240 (DISPOSITION-1138)
+  What is at risk: FPD-009 reopening logic; how cross-tradition signal lines are read.
+  Recommended action (for Tom): (1) Do not reopen FPD-009 on Kastrup's self-description alone. (2) Add a rule: reopening a retired comparison must cite the retirement reason and show structural correspondence. (3) Tag cross-tradition formalism citations in signal lines as vocabulary-borrowing by default.
+  Urgency: Low (presumption; moderate challenge, partly read; low risk because signal-only).
+  Related: ASSUMPTION-2098; FPD-009.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1240 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1240_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1240_against.md

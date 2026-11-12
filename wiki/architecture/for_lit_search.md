@@ -29398,3 +29398,55 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
 *2026-11-10 (local pass): 9 items queued, 5 [IN-HOUSE], 4 literature-lane (ASSUMPTION-2086, PRESUMPTION-1233, -1234, -1235). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-10T05:50:00Z by cloud-lit-2026-11-10; not held, append safe.*
 
 *2026-11-11 (cloud pass): ASSUMPTION-2086, PRESUMPTION-1233, -1234, -1235 searched 15a/15b and dispositioned (DISPOSITION-1132..1135 -> 2 MONITOR, 2 REVISE). IN-HOUSE items untouched.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2093
+  Statement: [stated] 23% of manifests.v2.json leaf values are "unknown"; nine surfaces have a real cut, fifteen do not.
+  Claim to test: In-house: recount "unknown" leaves per block and per surface (this run's simple recursive count: 337/1,547 = 21.8%); confirm the 9/15 split of surfaces with a real cut.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2095
+  Statement: [stated] Routes among the 155 communities come from similarity, not exchange; 155 / 638 / 1,944 are the data counts.
+  Claim to test: In-house: trace how the 638 routes are generated in the community data; confirm no exchange data feeds them; recount 155/638/1,944 with as-of date.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2099
+  Statement: [stated] Filename comparison against PROCESSED_LOG.md flags ~300 old inbox files; runs use an approved-vs-ingested count instead.
+  Claim to test: In-house: run both checks on today's inbox; list files where they disagree; propose replacement wording for the task step.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2100
+  Statement: [stated] "The cloud copies are firing, since 47 of 47 routines are OK."
+  Claim to test: In-house: for each cloud routine marked OK on 11-11, check whether it produced its expected output (e.g. cloud 14a/14b wrote a NO-OP note only); report OK-but-no-output count.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-12] [SEARCHED-15b: 2026-11-12] [DISPOSITIONED-15c: 2026-11-12] [PRESUMPTION] PRESUMPTION-1236
+  Result (2026-11-12): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1136 -> MONITOR-719 (Medium)
+  Statement: [inferred] Declared Dimension Set presumes independent dimensions with a binary narrows/locates flag.
+  Claim to test: Literature lane: faceted classification and faceted search state models (Ranganathan facet analysis; Hearst 2009 Search User Interfaces ch. 8; Yee et al. 2003 CHI). In-house: count coupled dimensions (requires/clamps/orders) across the nine surfaces with a real cut.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1237
+  Statement: [inferred] Subscription semantics specified with no current subscriber.
+  Claim to test: In-house: list current and planned consumers of describe / export / subscribe per surface.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-12] [SEARCHED-15b: 2026-11-12] [DISPOSITIONED-15c: 2026-11-12] [PRESUMPTION] PRESUMPTION-1238
+  Result (2026-11-12): 15a PARTIALLY-SUPPORTED (Weak); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1137 -> MONITOR-720 (High)
+  Statement: [inferred] Video 3 presumes viewers read similarity routes and an "illustrative" traffic key as non-data.
+  Claim to test: Literature lane: Hullman & Diakopoulos 2011 (visualization rhetoric); Kong et al. 2018 CHI (title framing/slant in visualizations); Tversky on arrows and lines in diagrams.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1239
+  Statement: [inferred] Blanket APPROVE presumed to clear a card's own verify flag.
+  Claim to test: In-house: list approved cards since 09-01 flagged verify/unverified at filing; check whether the flag was cleared before ingest.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-12] [SEARCHED-15b: 2026-11-12] [DISPOSITIONED-15c: 2026-11-12] [PRESUMPTION] PRESUMPTION-1240
+  Result (2026-11-12): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1138 -> REVISE-539
+  Statement: [inferred] A thinker citing another tradition's formalism presumed to be evidence of structural homology (Kastrup / IIT + Markov blankets vs retired FPD-009).
+  Claim to test: Literature lane: Kastrup 2018 JCS 'The universe in consciousness'; Friston, Wiese & Hobson 2020 Entropy (Markovian monism); Bruineberg et al. 2022 BBS 'The Emperor's New Markov Blankets'.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-11 (local pass): 9 items queued, 6 [IN-HOUSE], 3 literature-lane (PRESUMPTION-1236, -1238, -1240). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-11T05:44:44Z by cloud-lit-2026-11-11; not held, append safe.*
+
+*2026-11-12 (cloud-lit-2026-11-12): 15a/15b/15c processed PRESUMPTION-1236, -1238, -1240 -> DISPOSITION-1136..1138 (MONITOR-719 Medium, MONITOR-720 High, REVISE-539 Low). In-house items and 15d backlog untouched.*

@@ -49,3 +49,5 @@ PRS-CANDIDATE-03:
 - **Friston:** averaging conflicting observations into a single estimate is the precision-weighting problem of predictive processing; Monty's weighting by observation count is a crude precision weight. Whether orientation evidence should be combined on the rotation manifold rather than in flat coordinates is a shared technical question.
 - **Wolfram:** the voxel-size dependence (what counts as "one place" depends on resolution) parallels coarse-graining choices in Wolfram's models, where observed structure depends on the observer's grain.
 - **Hoffman:** a mild signal only. The stored orientation is a property of the model's chosen grain, not read off the object directly; one could read this as an interface-style point about representation. This is this agent's reading, not a claim in the source.
+
+> [TRACKED-16: 2026-11-12] CHECK disposition recorded 2026-11-11 (no note supplied). Tracked by Agent 16 as WATCH-007. Status: AWAITING-HUMAN — Tom to state what the CHECK is for (see watch list for candidate readings). PR #1174 not verifiable this run (fetch refused; search found nothing).

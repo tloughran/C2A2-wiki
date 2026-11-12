@@ -39474,15 +39474,17 @@ ASSUMPTION-2086:
   Type: empirical
   Related decisions: PRESUMPTION-1235; MONITOR-711
   Testability: testable via literature (queued)
-  Status: UNTESTED
+  Status: CHALLENGED
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a → 15a/15b → 15c → 14a]
     Original item: ASSUMPTION-2086
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-11 cloud lit): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1132 -> REVISE-537
+      14a (2026-11-11 local pass): status updated from for_lit_search.md result line.
+    Current status: CHALLENGED
 
 ASSUMPTION-2087:
   Date identified: 2026-11-10
@@ -39519,3 +39521,226 @@ ASSUMPTION-2088:
     Current status: UNTESTED
 
 *2026-11-10 14a: ASSUMPTION-2081..2088 (8). Queued: literature 2086; [IN-HOUSE] 2081, 2083, 2084, 2085, 2087. Not queued: 2082 (design choice pending Tom), 2088 (recurrences). No interactive Cowork session; 2081-2082 and 2086-2087 come from chat-scrape summaries of claude.ai chats.*
+
+ASSUMPTION-2089:
+  Date identified: 2026-11-11
+  Statement: [stated] Declared Dimension Set: "the three consumers cannot drift apart, because there is only one thing for them to read." One declaration per surface yields voice description, export and subscription.
+  Context: declared_dimension_set_2026-11-11.md §0 (status: proposed; nothing implemented)
+  Type: architectural
+  Related decisions: OPEN-302
+  Testability: testable empirically (after implementation, via the spec's T3 declaration ≡ implementation test; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2089
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2090:
+  Date identified: 2026-11-11
+  Statement: [stated] "`narrows` is the whole fix": part of a reader's cut should filter the export and part should not, so a per-dimension `narrows` flag replaces audit §4.5's `filter_by_cut: false`. Author: "I think §4.5 is right about the failure and wrong about the fix." Rationale drift: §4.5 was cited in the brief as settled.
+  Context: declared_dimension_set §2.1, §8.3, §9.2
+  Type: architectural
+  Related decisions: OPEN-302
+  Testability: design choice pending Tom (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2090
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2091:
+  Date identified: 2026-11-11
+  Statement: [stated] "This spec assumes R7 is accepted" (`family` is a list; three surfaces belong to two families each). "It is the one upstream decision this design depends on."
+  Context: declared_dimension_set §2, §8.2, §9.1
+  Type: architectural
+  Related decisions: OPEN-302
+  Testability: design choice pending Tom (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2091
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2092:
+  Date identified: 2026-11-11
+  Statement: [stated] Order of work Sociogram -> Heartbeat -> RC Sandbox: Heartbeat second "is the fastest proof that the schema is not Sociogram-shaped"; RC Sandbox third because "if the reader profile is wrong, this is where it shows." Three surfaces from three families are taken as a sufficient generality test.
+  Context: declared_dimension_set §5.3, §9.6
+  Type: methodological
+  Related decisions: OPEN-302
+  Testability: design choice pending Tom (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2092
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2093:
+  Date identified: 2026-11-11
+  Statement: [stated] "23% of manifests.v2.json leaf values are 'unknown', concentrated in cut. Nine surfaces have a real cut; fifteen do not. Any claim that this contract has 24 consumers is claiming fifteen we cannot describe." In-house check this run: 337 of 1,547 scalar leaves = 21.8% by a simple recursive count (definition of 'leaf' may differ).
+  Context: declared_dimension_set §8.5
+  Type: empirical
+  Related decisions: OPEN-302
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2093
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2094:
+  Date identified: 2026-11-11
+  Statement: [stated] Rule 6 budget vs brief: "The required-reading list in the brief is ~3,500 lines on its own, so the budget and the brief were not reconcilable ... it cannot be met by being more careful." (~90k tokens vs 4k.) Same breach reported by every 14a/14b local pass.
+  Context: declared_dimension_set §10
+  Type: methodological
+  Related decisions: OPEN-301
+  Testability: framework commitment pending Tom (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2094
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2095:
+  Date identified: 2026-11-11
+  Statement: [stated] Video 3 v1.0: "The traffic between the lights is real" removed because "routes among the 155 come from similarity, not exchange; real traffic only among the fifteen traditions." Counts corrected to data: 155 communities, 638 routes, 1,944 signals; four kinds of traffic shown "as an illustrative key, not data."
+  Context: Chat summary 11-11 (Video 3 v1.0 departures from treatment)
+  Type: empirical
+  Related decisions: PRESUMPTION-1238
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2095
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2096:
+  Date identified: 2026-11-11
+  Statement: [stated] Video 3: the four named invitations were removed, "read as following 'no naming of communities'"; needs Tom's ruling. v1.1 then finished in 1080p and 4K and was linked from acpa_2026.html and start_here.html before that ruling is recorded.
+  Context: Chat summary 11-11; cowork summary 11-11
+  Type: architectural
+  Related decisions: —
+  Testability: design choice pending Tom (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2096
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2097:
+  Date identified: 2026-11-11
+  Statement: [stated] Lit returns on 11-10 items: ASSUMPTION-2086 -> REVISE-537 (Neurath, Wilson's Consilience, Santa Fe Institute contradict "no institution attempts"); PRESUMPTION-1235 -> REVISE-538 (MacIntyre 1988 ch. 19 locates the bottleneck in translation, not speed); flagged SYSTEMIC-RISK, "apply 537 and 538 together". Cowork summary: acpa_2026.html still carries both flagged lines.
+  Context: Cowork summary 11-11; for_lit_search.md result lines
+  Type: empirical
+  Related decisions: ASSUMPTION-2086; PRESUMPTION-1235
+  Testability: status update (already dispositioned; not re-queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2097
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2098:
+  Date identified: 2026-11-11
+  Statement: [stated] Wednesday agents: the Kastrup proposal is "a supplement, not a duplicate" because the new page quotes him directly (same session as approved PROP-2026-10-14-001); the McGilchrist card's title "comes only from a search summary" and "nobody has watched it, so its single candidate triplet is marked Speculative." Kastrup naming IIT + Markov blankets "bears on the Friston comparison the network retired (FPD-009)."
+  Context: McGilchrist/Kastrup agent 5cbe2feb
+  Type: methodological
+  Related decisions: PRESUMPTION-1240
+  Testability: pending review (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2098
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2099:
+  Date identified: 2026-11-11
+  Statement: [stated] Wiki daily run: "The inbox check doesn't work as written": comparing filenames to PROCESSED_LOG.md shows ~300 old files unprocessed; runs decide ingest from an approved-vs-ingested count instead, which the log calls "the known convention". Task text and practice diverge.
+  Context: Wiki daily run 230986bb (second firing)
+  Type: methodological
+  Related decisions: —
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2099
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2100:
+  Date identified: 2026-11-11
+  Statement: [stated] Scheduler health: "The cloud copies are firing, since 47 of 47 routines are OK" -> disable the 27 local entries. Same day: the cloud 14a/14b copy fired and no-oped (11-11 changelog), the cloud evening sync lacked session_info, and the local lit copy stopped at Step 0. "OK" here means fired, not did the work.
+  Context: Scheduler health 15bd3c0c; 11-11 changelog cloud note; evening sync 8d71d72b
+  Type: architectural
+  Related decisions: OPEN-299; ASSUMPTION-2085; PRESUMPTION-503
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2100
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+ASSUMPTION-2101:
+  Date identified: 2026-11-11
+  Statement: [stated] Recurrences: scheduler health 43 OK / 3 WARN / 29 FAIL, same 27 DOUBLE-REGISTERED (morning status says 28); voice-shell RED 6/403 on main@095a5451 (same six tabs lacking find/clear/read); openstory.ui not loaded; Desktop Commander shell auto-declined in two unattended runs (scheduler health, lit pipeline); local lit copy skipped at lock (5th day; note filename says 'lock-held' though it was not); cloud lit lock line again 'manual append; script unavailable', review/lit_pipeline.lock.d absent (checked this run); cloud 14a/14b NO-OP (5th); duplicate firings of evening sync (~7 min), chat scrape (~10 min), wiki daily run (1 min), deferred monitor; Summa index missing Day-001 and Day-035; cell_dates.json held all week (46 days old); community explorer 156 vs 155; disk 71% (+~1 GB/day); McGilchrist task path missing Projects/; execution queue deadlines 10-21 and 10-26 passed, file unchanged since 10-07; morning walk read the 11-11 decision email from preview text only; Agent 16 reported 4 needs_review files all [TRACKED-16], but inbox/proposals/needs_review holds 5 and the Hawkins card (2026-11-10) has no [TRACKED-16] tag; Agent 16 treated review/archive/2026-11-10_decisions.md (6 approvals) as the new file, while 2026-11-11_decisions.md holds the CHECK that moved the Hawkins card (both checked this run).
+  Context: All sessions read
+  Type: architectural
+  Related decisions: OPEN-288; OPEN-292; OPEN-298; OPEN-299; PRESUMPTION-503; PRESUMPTION-1196
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2101
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync/chat_to_cowork/2026-11-11_chat_summary.md and cowork_to_chat/2026-11-11_cowork_summary.md; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+*2026-11-11 14a: ASSUMPTION-2089..2101 (13). Queued [IN-HOUSE]: 2093, 2095, 2099, 2100. Not queued: 2089 (needs implementation), 2090-2092, 2096 (design choices pending Tom; OPEN-302), 2094 (OPEN-301), 2097 (status update), 2098 (pending review), 2101 (recurrences). No interactive Cowork session; 2089-2094 come from the Declared Dimension Set proposal file (author session not identified in list_sessions).*

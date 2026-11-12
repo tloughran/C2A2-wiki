@@ -834,7 +834,16 @@ PRS-89:
   Confidence: Speculative
   Evidence: Single line in the secondhand summary; low priority.
 
-*Total PRS triplets: 89*
+PRS-90:
+  Problem: Why does meaning drain away under material plenty, when cultural or economic diagnoses of the 'meaning crisis' cannot explain it?
+  Resource: Hemisphere theory: left-hemisphere attention re-presents the world as decontextualised usable parts; right-hemisphere attention is where value, the living whole and the sacred appear.
+  Solution: Treat the meaning crisis as a disorder of attention, and 'recovering the sacred' as restoring the right-hemisphere mode of attending rather than adopting a doctrine.
+  Date Added: 2026-11-12
+  Source: Cassidy Lecture 2026, St Chad's College Durham (recording posted 2026-11-04); PROP-2026-11-11-001
+  Confidence: Speculative (inferred from reported title plus tradition thesis; recording not watched; title source secondhand)
+  Evidence: Reported title 'Our Brains, the Meaning Crisis, and the Need to Recover the Sacred'. Upgrade or reject after the 58-minute video is heard.
+
+*Total PRS triplets: 90*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

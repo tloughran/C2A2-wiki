@@ -25928,3 +25928,25 @@ MONITOR-718:
   Monitoring cadence: Weekly (default); first check due 2026-11-18
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1234 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1234_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1234_against.md
+
+MONITOR-719:
+  Date: 2026-11-12
+  Source item: PRESUMPTION-1236 (DISPOSITION-1136)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: Medium
+  Disposition basis: 15a: Independent (orthogonal) facets combined by conjunction are the established design ideal for faceted state, so a schema of independently readable dimensions follows a well-tested model. (Moderate, preliminary). 15b: The faceted literature treats independence as an ideal and itself documents hierarchical, conditional facets. The spec's own gaps (requires/clamps, orders, grain vs entities[]) are of this kind; a binary narrows/locates flag does not express them. (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE with caveat) if the in-house count finds coupling rare; (-> REVISE) if coupled dimensions are common or break the 'cannot drift apart' guarantee (ASSUMPTION-2089).
+  Monitoring cadence: Weekly (default); first check due 2026-11-19
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1236 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1236_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1236_against.md
+
+MONITOR-720:
+  Date: 2026-11-12
+  Source item: PRESUMPTION-1238 (DISPOSITION-1137)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Priority: High
+  Disposition basis: 15a: Text framing can steer viewers' reading of a visual, which supports the idea that a verbal label can override the picture, but only for prominent text such as titles, not a small key label. (Weak, preliminary). 15b: A picture of routes with a traffic key is a strong visual framing of exchange. Prominent text can partly override it, but a minority of viewers follow the visual, and a small 'illustrative' key label is weaker than a title. (Moderate, preliminary).
+  What would change the disposition: (-> REVISE) if a viewer check shows most viewers read the routes/key as exchange data; (-> INCORPORATE) if a title-strength caveat is added and a viewer check passes.
+  Monitoring cadence: Weekly (default); first check due 2026-11-19
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1238 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1238_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1238_against.md

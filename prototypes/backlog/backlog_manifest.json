@@ -3784,6 +3784,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-11-002",
+  "tradition": "kastrup",
+  "source_date": "2026-10-13",
+  "title": "Bernardo's surprising thoughts on what comes after Analytic Idealism \u2014 and why it's only j",
+  "file": "inbox/proposals/approved/2026-11-11_kastrup_beyond-analytic-idealism-recording.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-10-13-004",
   "tradition": "multi",
   "source_date": "2026-10-13",
@@ -4040,11 +4048,35 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-11-004",
+  "tradition": "levin",
+  "source_date": "2026-11-03",
+  "title": "A topoietic model of collective morphogenesis and compartmentalization",
+  "file": "inbox/proposals/approved/2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-11-09-002",
   "tradition": "levin",
   "source_date": "2026-11-04",
   "title": "Michael Levin: Memory and intelligence do not require a brain",
   "file": "inbox/proposals/approved/2026-11-09_levin_iai-memory-intelligence-without-brain.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-11-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-11-04",
+  "title": "Cassidy Lecture 2026 \u2013 Dr Iain McGilchrist",
+  "file": "inbox/proposals/approved/2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-11-003",
+  "tradition": "kastrup",
+  "source_date": "2026-11-08",
+  "title": "'Mind-Body' might not be enough \u2014 Bernardo Kastrup in dialogue with Dr Thomas Pollak (With",
+  "file": "inbox/proposals/approved/2026-11-11_kastrup_pollak-mind-body-not-enough-recording.md",
   "processed": false
  },
  {

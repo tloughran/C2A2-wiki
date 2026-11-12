@@ -2552,3 +2552,14 @@ Phase 0: decision email 2026-11-10 applied: PROP-2026-11-10-001 CHECK -> needs_r
 
 ### 2026-11-11 second orchestrator firing (04:37 local, verification only)
 Started while the primary cloud run was mid-flight (decisions archive 04:36, review page 04:37, ledger/master/review_log/level2 04:38); waited ~5 min for it to finish, changed nothing it had done. Verified: Phase 0 the 2026-11-10 decision email (thread 1a1c6e2463fce9a4, PROP-2026-11-10-001 CHECK) applied, card in needs_review/, email stored in provenance/decision_emails.json (27 emails), archive 2026-11-11_decisions.md present; Phase 1 nothing approved, 0 ingested; Phase 2 Wednesday specialists filed Kastrup x2 + McGilchrist x1, primary added Levin PROP-2026-11-11-004, no duplicate searches run; Phase 3 review page 2026-11-11_review.html exists (pending = 4); Phase 4 Gmail draft r-8099952552640471727 created 09:38Z; 5.5 review_log.html address-clean; 5.6 level2 meta 1944 signals / 92 pairs / span to 2026-11-09 / stale_days 2. No git run.
+
+## 2026-11-12 - C2A2 daily run (Thu, orchestrator)
+Phase 0: decision email 2026-11-11 (4 APPROVE) applied; moved to approved/, copied to inbox/. Phase 1 ingested:
+- PROP-2026-11-11-001 mcgilchrist 2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred.md PRS-90 (1 triplet, Speculative)
+- PROP-2026-11-11-002 kastrup 2026-11-11_kastrup_beyond-analytic-idealism-recording.md PRS-107, PRS-108, PRS-109 (3 triplets; CANDIDATE-03 not minted, corroborates PROP-2026-08-28-020 triplet)
+- PROP-2026-11-11-003 kastrup 2026-11-11_kastrup_pollak-mind-body-not-enough-recording.md PRS-110, PRS-111 (2 triplets)
+- PROP-2026-11-11-004 levin 2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv.md PRS-158, PRS-159 (2 triplets)
+Total new triplets: 8. CROSS-167, CROSS-168. FINDING-114.
+
+### 2026-11-12 second orchestrator firing (04:37 local, verification only)
+Started while the primary cloud run was mid-flight (decisions archive and approvals 04:36; master/review page/review_log/level2 04:39). Waited, changed nothing. Verified: Phase 0 email thread 1a1caf371f1fd396 (4 APPROVE) applied and stored in provenance/decision_emails.json; Phase 1 8 triplets (PRS ledger 1159); Phase 2 Thu specialists filed Fredrickson x2 + Stump x1, primary added 1 Friston card, pending = 4, no duplicate searches run; Phase 3 review/2026-11-12_review.html exists; Phase 4 Gmail draft r4331932245375922861 created 09:39Z; 5.5 review_log.html address-clean; 5.6 level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 1. No git run.

@@ -1424,7 +1424,25 @@ PRS-157:
   Confidence: Medium (full argument behind paywall)
   Evidence: "This notion that it's only to be found in the brain is just an assumption, not an established scientific fact."
 
-*Total PRS triplets: 157*
+PRS-158:
+  Problem: How can a group of separate embryos collectively buffer teratogenic stress without a central organizer?
+  Resource: Topoietic model: diffusing stress cue plus an absorbing collective boundary; control parameter L/lambda (group radius over decay length).
+  Solution: Above a critical L/lambda each embryo's bioelectric lattice is driven into a homeostatic state; reported survival rises from 0% (N=1) to 92% (N=306) in Xenopus collectives (CEMA).
+  Date Added: 2026-11-12
+  Source: Manicka & Levin, A topoietic model of collective morphogenesis and compartmentalization (bioRxiv 2026-11-03); PROP-2026-11-11-004
+  Confidence: Medium (preprint; figures from a secondary summary, not checked against the preprint)
+  Evidence: Reported CEMA rescue curve; secondary source theconsciousness.ai 2026-11-07.
+
+PRS-159:
+  Problem: When does a collection of agents become a higher-level agent with its own homeostatic set-point?
+  Resource: Geometric phase-threshold framing (critical L/lambda) from collective morphogenesis.
+  Solution: A measurable, physics-style criterion for scaling the 'cognitive light cone' across embryo boundaries.
+  Date Added: 2026-11-12
+  Source: Manicka & Levin, A topoietic model of collective morphogenesis and compartmentalization (bioRxiv 2026-11-03); PROP-2026-11-11-004
+  Confidence: Speculative (proposer's interpretive extension)
+  Evidence: Extension of the threshold result to the multiscale-agency framework; not a claim in the summary.
+
+*Total PRS triplets: 159*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

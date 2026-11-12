@@ -26809,15 +26809,17 @@ PRESUMPTION-1233:
   Testability: testable via literature (abstract/snippet-only vs full-text screening accuracy in systematic reviews) + in-house (fetch count per DISPOSITION since 10-01)
   Risk if wrong: Medium: MONITOR priorities may rest on remembered abstracts; a High flag could steer Tom's OPEN-297 ruling.
   Confidence: medium
-  Status: UNTESTED
+  Status: CHALLENGED
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b → 15a/15b → 15c → 14b]
     Original item: PRESUMPTION-1233
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-11 cloud lit): 15a PARTIALLY-SUPPORTED (Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1133 -> MONITOR-717
+      14b (2026-11-11 local pass): status updated from for_lit_search.md result line.
+    Current status: CHALLENGED
 
 PRESUMPTION-1234:
   Date surfaced: 2026-11-10
@@ -26829,15 +26831,17 @@ PRESUMPTION-1234:
   Testability: testable via literature (Lakatos 1970 research programmes; MacIntyre 1988 tradition as socially embodied argument; Kuhn 1970 Postscript disciplinary matrix) + in-house (share of each tradition's triplets authored by the named thinker vs team/collaborators)
   Risk if wrong: Medium: per-tradition counts and cross-tradition bridges would mean different things across traditions (single author vs lab).
   Confidence: medium
-  Status: UNTESTED
+  Status: SUPPORTED
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b → 15a/15b → 15c → 14b]
     Original item: PRESUMPTION-1234
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-11 cloud lit): 15a SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak); DISPOSITION-1134 -> MONITOR-718
+      14b (2026-11-11 local pass): status updated from for_lit_search.md result line.
+    Current status: SUPPORTED
 
 PRESUMPTION-1235:
   Date surfaced: 2026-11-10
@@ -26849,14 +26853,118 @@ PRESUMPTION-1235:
   Testability: testable via literature (MacIntyre 1988 chs. 17-19; MacIntyre 1990 Three Rival Versions; Wilson 1998 Consilience and its critics; Mitchell 2003 integrative pluralism)
   Risk if wrong: High: this is the project's public thesis on a printed poster; if the bottleneck is incommensurability, acceleration alone may multiply exchanges without integration.
   Confidence: medium
-  Status: UNTESTED
+  Status: CHALLENGED
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b → 15a/15b → 15c → 14b]
     Original item: PRESUMPTION-1235
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from 2026-11-10 local pass (final assistant message per session via session_info, plus daily_sync/chat_to_cowork/2026-11-10_chat_summary.md and cowork_to_chat/2026-11-10_cowork_summary.md; no interactive Cowork session today).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-11 cloud lit): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Strong); DISPOSITION-1135 -> REVISE-538
+      14b (2026-11-11 local pass): status updated from for_lit_search.md result line.
+    Current status: CHALLENGED
 
 *2026-11-10 14b: PRESUMPTION-1233..1235 (methodological 1, structural 1, normative 1; risk High 1, Medium 2). Checked against 14a 2081-2088 and the registry. Not re-surfaced (already registered; new evidence today): "ran on schedule" read as health (PRESUMPTION-503; morning status); local passes not found by readers (PRESUMPTION-1219; evening sync); cloud/local copies equivalent (PRESUMPTION-1196; capability split session_info/list_triggers/Mac shell); count comparisons share definitions (PRESUMPTION-1216; poster figures); uniform record format (PRESUMPTION-1231; FINDING-018).*
+
+PRESUMPTION-1236:
+  Date surfaced: 2026-11-11
+  Statement: [inferred] The Declared Dimension Set presumes a surface's state decomposes into named, independently readable and writable dimensions, each cleanly either narrowing or locating. The spec's own gaps point the other way: `requires`/`clamps` couple dimensions (Metabolism `metric` under `view`), `orders` may be a third flag (§9.3), and `grain` duplicates `entities[]` (§8.6). Is a binary, independent-dimension model warranted, or is cut state better modelled as a query with dependencies?
+  Evidence it was operative: §1, §2 (one schema, one discriminator); §8.6-8.7; §9.3
+  Why it was unstated: the spec states its dependency on R7 but not on dimensional independence; it lists the counterexamples as open gaps rather than as a challenge to the model
+  Type: structural
+  Related decisions: OPEN-302; ASSUMPTION-2090
+  Testability: testable via literature (faceted classification and faceted search: Ranganathan's facet analysis; Hearst 2009 Search User Interfaces ch. 8; Yee et al. 2003 'Faceted metadata for image search and browsing') and in-house (count coupled dims across the nine surfaces with a real cut)
+  Risk if wrong: Medium: if dimensions are coupled, `narrows` alone will not give a faithful export or subscription predicate, and the 'cannot drift apart' guarantee (ASSUMPTION-2089) weakens.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1236
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+PRESUMPTION-1237:
+  Date surfaced: 2026-11-11
+  Statement: [inferred] The proposal specifies subscription semantics (saved predicate + change stamp, `subscribable` gate) although "nothing subscribes to anything yet" (§6.8). It presumes the subscription consumer will exist and will want this shape. Under Tom's Rule 2 (no speculative features), is the subscription third of the contract warranted now?
+  Evidence it was operative: §3.3; §6.8 (T-sub deferred 'stated rather than faked'); audit §6
+  Why it was unstated: designing all three consumers together is the proposal's thesis, so building for an absent consumer did not read as a choice
+  Type: normative
+  Related decisions: OPEN-302
+  Testability: testable empirically (in-house: list current and planned consumers of describe/export/subscribe per surface)
+  Risk if wrong: Low: the cost is design surface, and the spec already defers the subscription test.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1237
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+PRESUMPTION-1238:
+  Date surfaced: 2026-11-11
+  Statement: [inferred] Video 3 keeps a picture of 155 lit communities joined by 638 routes and a four-kind traffic key labelled 'illustrative, not data', after removing the sentence that the traffic is real. This presumes viewers will read similarity routes as similarity and an illustrative key as illustration. Visual encodings of flow usually read as exchange whatever the narration says.
+  Evidence it was operative: ASSUMPTION-2095 (sentence removed, picture kept); v1.1 now linked from the ACPA page and Start Here
+  Why it was unstated: the fix was made in the narration; the picture was treated as neutral
+  Type: epistemic
+  Related decisions: ASSUMPTION-2095; REVISE-538
+  Testability: testable via literature (Hullman & Diakopoulos 2011 'Visualization rhetoric: framing effects in narrative visualization'; Kong et al. 2018/2019 on title and slant framing in charts; Tversky on arrows and lines in diagrams)
+  Risk if wrong: Medium: a public C2A2 film could imply measured inter-community exchange, the claim the narration edit was meant to remove.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1238
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+PRESUMPTION-1239:
+  Date surfaced: 2026-11-11
+  Statement: [inferred] The 11-11 decision email approved PROP-2026-11-11-004 (Levin topoiesis), which its filing agent flagged 'secondary-sourced, verify'. The morning walk read the decision from the email preview only, and the daily run will ingest it tomorrow. The pipeline presumes a blanket APPROVE covers the card's own verification flag, i.e. that approval is verification.
+  Evidence it was operative: Morning walk 6cd6313c ('Check the Levin proposal before 8 AM'); wiki daily run 230986bb
+  Why it was unstated: approval is the only gate; no step asks whether a flagged condition was cleared
+  Type: methodological
+  Related decisions: —
+  Testability: testable empirically (in-house: list approved cards since 09-01 that carried a verify/unverified flag at filing; check whether the flag was cleared before ingest)
+  Risk if wrong: Medium: unverified secondary claims can enter the PRS network as approved triplets.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1239
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+PRESUMPTION-1240:
+  Date surfaced: 2026-11-11
+  Statement: [inferred] The Kastrup agent treats Kastrup's own naming of IIT + Markov blankets for his 'dissociative boundaries' as bearing on the retired Friston comparison (FPD-009). This presumes that a thinker citing another tradition's formalism is evidence of structural homology, rather than borrowing a vocabulary. Should a retired comparison be reopened on a self-description?
+  Evidence it was operative: McGilchrist/Kastrup agent 5cbe2feb, cross-tradition signal line
+  Why it was unstated: signal lines are free-text notes, not claims that go through review
+  Type: epistemic
+  Related decisions: ASSUMPTION-2098; FPD-009
+  Testability: testable via literature (Kastrup 2018 'The universe in consciousness', JCS; Friston, Wiese & Hobson 2020 on Markov blankets and consciousness; Bruineberg et al. 2022 'The Emperor's New Markov Blankets', BBS)
+  Risk if wrong: Low: it is a signal, not a triplet; risk is that the reopening happens without the reason it was retired.
+  Confidence: low
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1240
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
+    Current status: UNTESTED
+
+*2026-11-11 14b: PRESUMPTION-1236..1240 (structural 1, normative 1, epistemic 2, methodological 1; risk Medium 3, Low 2). Checked against 14a 2089-2101 and the registry. Not re-surfaced (already registered; new evidence today): 'OK'/'ran on schedule' read as did-the-work (PRESUMPTION-503; scheduler health 47/47 OK while cloud 14a/14b no-oped); cloud/local copies equivalent (PRESUMPTION-1196; first-writer-wins on duplicate firings presumes the first copy is at least as capable, e.g. evening sync's first firing lacked session_info); local passes not found by readers (PRESUMPTION-1219; morning status counts 28 vs 27).*

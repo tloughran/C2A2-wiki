@@ -945,3 +945,15 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 ### [EVALUATED: 2026-11-10] 2026-11-10 — PROP-2026-11-09-001/-002 (levin): robot science translation; memory without brain
 [forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
 - Science-as-active-inference and pattern-memory-as-prior (CROSS-166, Friston); robot scientist as translator (C2A2 second-first-language theme).
+
+### [EVALUATED: 2026-11-12] 2026-11-12 — PROP-2026-11-11-002/-003 (kastrup): beyond analytic idealism; Pollak mind-body
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Immune/affect dual-aspect (CROSS-167, Fredrickson); self-stated defeaters and empirical logic (CROSS-168, McGilchrist); IIT + Markov blanket remark re-checked against FPD-009.
+
+### [EVALUATED: 2026-11-12] 2026-11-12 — PROP-2026-11-11-004 (levin): topoietic collective morphogenesis
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Critical L/lambda as a quantitative condition for a group-level Markov blanket (FLAG-017); collective-to-agent threshold as a model for community-to-tradition (C2A2 meta).
+
+### [EVALUATED: 2026-11-12] 2026-11-12 — PROP-2026-11-11-001 (mcgilchrist): Cassidy Lecture
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
+- Meaning crisis as attentional disorder; sacred as mode of attention (Stump, Rohr). Speculative, title-only.

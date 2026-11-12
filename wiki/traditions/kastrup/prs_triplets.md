@@ -967,4 +967,49 @@ PRS-106:
   Confidence: Medium (host paraphrase; strong empirical-adjacent memory claim given without argument)
   Evidence: "In death, nothing is lost. All the memories remain - they were never in the brain."
 
-*Total PRS triplets: 106*
+PRS-107:
+  Problem: What empirical findings would force analytic idealism to be abandoned, and how much of its value would survive if they did?
+  Resource: Theory-as-pointing-finger distinction; named candidate defeaters (e.g. 'seeing without eyes', UAP/abduction-type anomalies) that would undercut naturalism itself.
+  Solution: Hold analytic idealism as the only current route out of physicalism while openly treating it as provisional; a later-discarded theory keeps value if it pointed the right way.
+  Date Added: 2026-11-12
+  Source: Beyond analytic idealism (With Reality in Mind recording, session 2026-10-13); PROP-2026-11-11-002
+  Confidence: Medium (direct quotes in host write-up; members' recording not checked)
+  Evidence: "analytic philosophy is the pointing finger, and I think there is no other pointing finger"; ch. 1:01:48 'Could analytic idealism survive seeing without eyes?'; ch. 2:08:59.
+
+PRS-108:
+  Problem: If evidence ever forced us to give up naturalism, what else would go with it?
+  Resource: Argument that logic is empirically grounded (ch. 1:04:50 'Is logic empirical?'), so losing naturalism leaves maths, science and logic as tenuous guides; link to Zen.
+  Solution: Left explicitly undecided whether a post-naturalist turn would be regression or 'the next turn of the spiral'; Kastrup reports a tension between his training and his 'maturity'.
+  Date Added: 2026-11-12
+  Source: Beyond analytic idealism (With Reality in Mind recording, session 2026-10-13); PROP-2026-11-11-002
+  Confidence: Medium (host write-up quoting Kastrup)
+  Evidence: "the next domino to fall is logic"; the 'little demon ... next turn of the spiral' quote.
+
+PRS-109:
+  Problem: Can analytic idealism accommodate a metaconscious mind at large, or God, without breaking with naturalism?
+  Resource: Session chapters on a metaconscious mind at large, grace and spontaneity, 'making room for the daimon', 'purpose does not require metacognition'.
+  Solution: Separate teleology from metacognition: nature can have purpose without a self-reflective God; leave room for daimon/grace as spontaneity.
+  Date Added: 2026-11-12
+  Source: Beyond analytic idealism (With Reality in Mind recording, session 2026-10-13); PROP-2026-11-11-002
+  Confidence: Speculative (chapter titles only, no quotes)
+  Evidence: Chapter list 1:41:19-1:56:19.
+
+PRS-110:
+  Problem: Why do childhood adversity, psychiatric illness and autoimmune disease cluster, when dualist medicine treats them as separate systems?
+  Resource: Dual-aspect reading under analytic idealism: the immune system as the extrinsic appearance of psychological process; attention modulating immune response (histamine skin test).
+  Solution: Treat the immunological and psychological selves as two descriptions of one process, supporting integrated clinical models.
+  Date Added: 2026-11-12
+  Source: 'Mind-Body' might not be enough - Kastrup with Dr Thomas Pollak (With Reality in Mind, 2026-11-08); PROP-2026-11-11-003
+  Confidence: Medium (host framing; Kastrup's wording unverified)
+  Evidence: Page: "The immune system and the psychological self would be different accounts of the same thing." Resolves PRS-103's 'Solution: Not yet stated' in part.
+
+PRS-111:
+  Problem: Does idealism imply illness is under voluntary mental control, with blame-the-patient consequences?
+  Resource: Distinction between 'mental' and 'under our control' (dissociation: most mental process is inaccessible to the ego).
+  Solution: Idealism widens what healing can mean without promising control; mind-over-matter readings are blocked.
+  Date Added: 2026-11-12
+  Source: 'Mind-Body' might not be enough - Kastrup with Dr Thomas Pollak (With Reality in Mind, 2026-11-08); PROP-2026-11-11-003
+  Confidence: Medium (host paraphrase)
+  Evidence: "Believing everything is mental does not mean it's all under our control."
+
+*Total PRS triplets: 111*

@@ -2078,3 +2078,21 @@ Sources: robot science as translation tool (thoughtforms.life); Memory and intel
 - **Hoffman / Kastrup / McGilchrist:** "mind blindness" as an observer-side failure to recognise minds touches interface theory and the narrowing attentional mode.
 - **Wolfram:** novel beings without evolutionary history as exploration of a large possibility space (ruliad-adjacent framing).
 - **C2A2 (MacIntyre):** robot-scientist-as-translator and "mind blindness" parallel AI agents as second-first-language members, and the failure to read a rival tradition from inside.
+
+### Signals from kastrup PROP-2026-11-11-002 / -003 (2026-11-12)
+Sources: Beyond analytic idealism (WRIM recording, session 2026-10-13); Kastrup-Pollak 'Mind-Body might not be enough' (WRIM, 2026-11-08)
+- [CONVERGENCE] **Immune system as the appearance of affect** (CROSS-167; kastrup PRS-110, fredrickson positivity-resonance/inflammation work). Kastrup-Pollak read the immunological and psychological selves as two descriptions of one process; Fredrickson's positivity-resonance x inflammation findings are the empirical counterpart on a non-idealist footing. Medium; host write-up only.
+- [TENSION] **Self-stated defeaters and the status of logic** (CROSS-168; kastrup PRS-107, PRS-108; mcgilchrist). Kastrup names what would falsify his program and argues logic is empirically grounded, so a post-naturalist turn could be 'the next turn of the spiral'. McGilchrist's case against over-reliance on formal logic and his spiral image converge on the image but may diverge on whether logic itself is negotiable. Medium-Low.
+- **Friston:** card claims Kastrup's IIT + Markov blanket remark is the 'first first-hand signal' he wants the blanket inside his framework. Not so: the 2026-08-28 'wounded healer' card (PROP-2026-08-28-020) already carried it. Corroboration, not a new vector; FPD-009 verdict (analogy retained, identity retired) stands.
+- **Hoffman:** dualism kept 'on the table' and neutral monism ruled out; where does conscious-agent theory sit in Kastrup's taxonomy? Open.
+- **Stump / Rohr:** metaconscious mind at large, grace, daimon (PRS-109, Speculative).
+
+### Signals from levin PROP-2026-11-11-004 (2026-11-12)
+Source: Manicka & Levin, topoietic model (bioRxiv 2026-11-03)
+- **Friston (FLAG-017):** the absorbing collective boundary reads as a group-level Markov blanket and critical L/lambda as a candidate condition for when a nested blanket forms. Adds a quantitative handle to FLAG-017 (virtual governor = group blanket); no new CROSS minted. Speculative.
+- **Fredrickson:** collective buffering against stress, analogical only.
+- **C2A2 meta:** an organizer-free threshold for when a collective becomes an agent is a candidate formal model for when a community becomes a tradition. Speculative.
+
+### Signals from mcgilchrist PROP-2026-11-11-001 (2026-11-12)
+Source: Cassidy Lecture 2026 (St Chad's, Durham)
+- **Stump / Rohr / Fredrickson:** 'recover the sacred' as mode of attention vs real object of knowledge (Stump); non-dual seeing (Rohr); positive emotion at cultural scale (Fredrickson). All hold until the recording is heard. No CROSS minted.

@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-11-11
-  Check count: 29
+  Last checked: 2026-11-12
+  Check count: 30
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -74,6 +74,7 @@ WATCH-003:
     - 2026-11-06: On-cadence check; count now **27**. `review/archive/` unchanged at 28 files, latest `2026-10-31_decisions.md`; no decision file since, so no later disposition can exist. grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `pending/`, `needs_review/`: only `2026-08-27_decisions.md` (re-filing APPROVEs). Vault files newer than the last watch-list write mention WATCH-003 / INTEGRITY FLAG only as carry-over (open_questions, PROCESSED_LOG, master wiki history); no ruling. Census: `pending/` 17, `approved/` 519, `denied/` 1, `needs_review/` 4. NOT met. Next on-cadence check 2026-11-13.
     - 2026-11-08 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **28**; next on-cadence check stays 2026-11-13): a **29th** decision file exists, `review/archive/2026-11-07_decisions.md` (mtime 11-07 04:36; source `[C2A2-review-decision] 2026-11-06` email; 17 APPROVE, 2 duplicate email lines ignored; no DENY/CHANGE/CHECK/CONDITIONAL). grep of the new file for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: zero matches. Census: `pending/` 3, `approved/` 536, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-11-11 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **29**; next on-cadence check stays 2026-11-13): a **30th** decision file exists, `review/archive/2026-11-10_decisions.md` (mtime 11-10 04:37; source `[C2A2-review-decision] 2026-11-09` email; 6 APPROVE: PROP-2026-11-04-001/-002, -11-07-001, -11-08-001, -11-09-001/-002; no DENY/CHANGE/CHECK/CONDITIONAL). grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: only `2026-08-27_decisions.md` line 26 (re-filing APPROVE). Census: `pending/` 1 (Hawkins 11-10, unrelated), `approved/` 542, `denied/` 1, `needs_review/` 4. NOT met.
+    - 2026-11-12 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **30**; next on-cadence check stays 2026-11-13): a **31st** decision file exists, `review/archive/2026-11-11_decisions.md` (mtime 11-11 04:36; source `[C2A2-review-decision] 2026-11-10` email; 1 CHECK: PROP-2026-11-10-001, no note; no APPROVE/DENY/CHANGE/CONDITIONAL). grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: only `2026-08-27_decisions.md`. Census: `pending/` 4, `approved/` 542, `denied/` 1, `needs_review/` 5. NOT met.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -179,6 +180,32 @@ WATCH-006:
     Origin: review decision (CHANGE, 2026-10-15)
     Original item: PROP-2026-10-13-001
     Chain: MacIntyre agent (2026-10-13) -> pending/ -> CHANGE -> needs_review/ -> Agent 16 (2026-10-17)
+
+WATCH-007:
+  Channel: review-conditional
+  Date added: 2026-11-12
+  Source: PROP-2026-11-10-001 (Hawkins / Thousand Brains Project — "2026/09 - Averaging Pose Vectors Inside a Voxel"; tbp.monty PR #1174; meeting 2026-09-09)
+
+  Condition: Tom states what the CHECK is for. The decision (`review/archive/2026-11-11_decisions.md`, email 2026-11-10) reads "CHECK ... No note supplied", so there is no instruction to parse. Candidate readings, taken from the card's own "Notes for the reviewer": (a) authorship — TBP team, not Hawkins himself (strict filter vs PROP-2026-10-23-006 precedent); (b) date — meeting 2026-09-09, >30 days before filing; (c) video not watched / YouTube URL not found, content inferred from the PR thread; (d) verify the PR #1174 quotes. Once Tom names the check (or adds a CHANGE / CONDITIONAL), Agent 16 re-classifies.
+  Check method: Check `review/archive/` and decision emails for a later disposition or note naming PROP-2026-11-10-001; check card mtime for an appended note.
+  Check cadence: Weekly (plus off-cadence on any new decision file)
+
+  Last checked: 2026-11-12
+  Check count: 1
+  Result history:
+    - 2026-11-12: Intake. CHECK, no note. Targeted fact check toward reading (d): direct fetch of https://github.com/thousandbrainsproject/tbp.monty/pull/1174 refused (URL not in this run's fetch provenance set); web search `tbp.monty pull 1174 "correctly merge new and previous pose vectors"` returned no GitHub hit (only TBP forum threads on pose handling, unrelated). So the PR quotes remain **unverified by Agent 16** — not refuted. No vault file other than the card and pipeline logs mentions the item. Condition NOT met.
+
+  On resolution:
+    Action: per Tom's stated check — if a fact/cross-reference check, run it and re-queue to pending/ with the result; if a content edit, mark AWAITING-HUMAN-EDIT; if an external condition (e.g. video URL / transcript found), keep WATCHING with that condition.
+    Destination: wiki/inbox/proposals/pending/ (on re-queue)
+    Context to attach: the four candidate readings above; the 11-12 PR-fetch refusal; the card's note that sibling recordings ("Latency Mismatches", "Exploring How Cortical Columns Handle Variations in Learned Object Models") are next-run targets.
+
+  Status: WATCHING (AWAITING-HUMAN — CHECK note missing)
+
+  PROVENANCE:
+    Origin: review decision (CHECK, 2026-11-10 email; archived 2026-11-11)
+    Original item: PROP-2026-11-10-001, filed 2026-11-10.
+    Chain: Hawkins agent (2026-11-10) -> pending/ -> CHECK -> needs_review/ (2026-11-11) -> Agent 16 (2026-11-12)
 
 ---
 
@@ -7604,3 +7631,24 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15.
 
 *Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-12
+
+  Intake: 1 new `needs_review/` item — `2026-11-10_hawkins_averaging-pose-vectors-in-a-voxel.md` (PROP-2026-11-10-001), CHECK with **no note** (`review/archive/2026-11-11_decisions.md`). Added as **WATCH-007**, status AWAITING-HUMAN (Tom to state what to check); card tagged [TRACKED-16: 2026-11-12]. Targeted fact check of the cited PR #1174: direct fetch refused (not in provenance set), web search found nothing — quotes unverified, not refuted. Vault `.md` files newer than the last watch-list write grepped for `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, tracked IDs, `xZcB-tmvJaU`, Wonderstruck: carry-over/historical only.
+  Items checked: 2
+    - WATCH-003 (off-cadence, count 30): new decision file holds only the Hawkins CHECK; no mention of PROP-2026-07-19-001 or INTEGRITY FLAG. NOT met. Still STALE.
+    - WATCH-007 (intake check, count 1): NOT met.
+  Event sweep (not counted): WATCH-004, Fredrickson file mtime still 10-08, flagged sentence still present, PROP-2026-10-01-001 not in `pending/` (4 files). WATCH-005, no transcript in vault. WATCH-006, `prs_triplets.md` unchanged (10-16); `sewing_agent_log.md` unchanged since 11-08 04:43; no MacIntyre card in `pending/`.
+  Items resolved: 0 · Still watching: 5 (WATCH-003, -004, -005, -006, -007) · Stale: 2 (WATCH-003, 30 checks; WATCH-006, 6 checks — both Escalate to Tom; flags unchanged) · Approaching threshold: WATCH-004 (5), WATCH-005 (4) · New: 1 (WATCH-007)
+  Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15; WATCH-007 on 2026-11-19 (or any new decision file).
+
+**Open for Tom:** NEW — WATCH-007: say what the Hawkins CHECK is for (authorship / date / unwatched video / PR verification), and if PR verification, include the PR URL in a task or session so it can be fetched. Unchanged — WATCH-006 stale flag (pick a/b/c); WATCH-003 INTEGRITY FLAG ruling; WATCH-004 Fredrickson CT-Signals edit; WATCH-005 Wonderstruck transcript paste; split the ~900 KB watch list.
+
+*Run completed 2026-11-12. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-12 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16] (Hawkins card's mtime is the first firing's own tag write). `review/archive/` unchanged (latest `2026-11-11_decisions.md`, already processed); `pending/` holds 4 files; nothing else in the vault newer than the first firing's write. Items checked: 0 · Resolved: 0 · Watching: 5 · Stale: 2 (WATCH-003, WATCH-006, unchanged) · New: 0
+  Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15; WATCH-007 on 2026-11-19.
+
+*Duplicate firing (~07:40 UTC). Notification sent this firing for the new WATCH-007 AWAITING-HUMAN item (first firing recorded none; a new item needing Tom's input warrants one).*

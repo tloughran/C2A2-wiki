@@ -237,3 +237,6 @@ Ingested 2 triplet(s): PRS-88, PRS-89. See prs_triplets.md. Confidence labels pr
 
 ### Update 2026-11-10 — British Academy lecture, Glasgow (PROP-2026-11-04-001) — no new triplet
 Approved card is the same event (same source URL) already ingested 2026-11-07 as PRS-87 from the colliding-ID card 2026-11-04_mcgilchrist_british-academy-brain-asymmetry-lecture.md. Its single candidate restates PRS-87, so no triplet was added (duplicate, not skipped silently). Still open: no recording or transcript located.
+
+### Update 2026-11-12 — Cassidy Lecture 2026, St Chad's Durham (PROP-2026-11-11-001)
+Ingested 1 triplet(s): PRS-90 (Speculative). The meaning crisis as a disorder of attention; recovering the sacred as a mode of attending. Open: the lecture title is secondhand and one summary conflated it with 'The Faustian bargain of AI' (PRS-88/89); watch the 58-minute recording before upgrading.

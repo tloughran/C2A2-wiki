@@ -4087,3 +4087,27 @@ OPEN-300:
     Original item: OPEN-300
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-301:
+  Raised: 2026-11-11 by 14a (ASSUMPTION-2094)
+  Question: Rule 6's 4,000-token per-task budget is breached by every spec-shaped task and every 14a/14b pass (Declared Dimension Set author: "the budget and the brief were not reconcilable ... it cannot be met by being more careful"). Raise the budget for spec and audit tasks, narrow their reading lists, or keep the budget as a surfacing trigger rather than a limit?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-301
+    Item type: OPEN QUESTION
+    Current status: OPEN
+
+OPEN-302:
+  Raised: 2026-11-11 by 14a/14b (ASSUMPTION-2089..2093; PRESUMPTION-1236, -1237)
+  Question: The six calls in declared_dimension_set_2026-11-11.md §9: (1) R7 `family` as a list vs splitting dual-family surfaces; (2) `narrows` vs audit §4.5 `filter_by_cut` (if `narrows`, record the supersession in decisions.md); (3) `orders` as a third flag vs export `order_by`; (4) delete `getCurrentViewState()` in the first Sociogram regen; (5) where intent lives (manifest `plan` block vs tests); (6) order of work Sociogram -> Heartbeat -> RC Sandbox.
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-302
+    Item type: OPEN QUESTION
+    Current status: OPEN

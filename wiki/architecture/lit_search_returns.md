@@ -52815,3 +52815,106 @@ DISPOSITION-1135:
 - SYSTEMIC-RISK: ASSUMPTION-2086 and PRESUMPTION-1235 share one vulnerability: the ACPA 2026 poster thesis frames the problem as unattempted and speed-limited, while the history (Neurath, Wilson, SFI) and MacIntyre's own account locate the difficulty in translation between traditions. Both flagged REVISE; apply together.
 - PRESUMPTION-1233 (0-fetch dispositions) bears on this pipeline's own outputs, including today's; dispositions here remain provisional on that basis.
 - [IN-HOUSE] items and the older bare-literature backlog were not touched; 'all queued items searched' is NOT met for them.
+
+## 2026-11-12 run (cloud-lit-2026-11-12)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1236
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Hearst 2009, Search User Interfaces ch. 8
+  Summary: Independent (orthogonal) facets combined by conjunction are the established design ideal for faceted state, so a schema of independently readable dimensions follows a well-tested model.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1236_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1236 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1236
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Hearst 2009, SUI ch. 8 (hierarchical facets)
+  Summary: The faceted literature treats independence as an ideal and itself documents hierarchical, conditional facets. The spec's own gaps (requires/clamps, orders, grain vs entities[]) are of this kind; a binary narrows/locates flag does not express them.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1236_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1236 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1136:
+  Date: 2026-11-12
+  Item: PRESUMPTION-1236
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support for orthogonal facets as the ideal against a moderate challenge that the same literature documents hierarchical/conditional facets. The directions agree: independence is a design goal, coupling exists in practice. How often coupling occurs here is the open, in-house question.
+  Disposition: MONITOR (MONITOR-719 (Medium))
+  Reasoning: Not wrong enough to revise on literature alone; the decider is the in-house coupling count already named in the queue item. MONITOR is recoverable.
+  Consistency check: no validated premise (PREMISE-001..239) found asserting the contrary; not an INCORPORATE, so no premise added.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1236 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1236_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1236_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1238
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Kong, Liu & Karahalios, CHI 2019 (title-visualization misalignment)
+  Summary: Text framing can steer viewers' reading of a visual, which supports the idea that a verbal label can override the picture, but only for prominent text such as titles, not a small key label.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1238_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1238 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1238
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Hullman & Diakopoulos 2011, IEEE TVCG 17(12) 'Visualization rhetoric'
+  Summary: A picture of routes with a traffic key is a strong visual framing of exchange. Prominent text can partly override it, but a minority of viewers follow the visual, and a small 'illustrative' key label is weaker than a title.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1238_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1238 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1137:
+  Date: 2026-11-12
+  Item: PRESUMPTION-1238
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support (text can steer reading, but evidence is about titles) against a moderate challenge (visual framing persists; a minority follow the visual even against contradictory text). Evidence is mixed and indirect for this specific film.
+  Disposition: MONITOR (MONITOR-720 (High))
+  Reasoning: Mixed, indirect evidence favours MONITOR over REVISE, but priority is High because the film is public and the risk is the exact claim already retracted. The cheap mitigation (title-strength caveat) is noted for Tom.
+  Consistency check: no validated premise (PREMISE-001..239) found asserting the contrary; not an INCORPORATE, so no premise added.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1238 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1238_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1238_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1240
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Friston, Wiese & Hobson 2020, Entropy 22(5):516 'Sentience and the origins of consciousness: from Cartesian duality to Markovian monism'
+  Summary: There is a real literature linking Markov blankets to monism, so a thinker invoking them is not arbitrary; but this does not by itself show structural homology with Friston's account.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1240_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1240 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15a searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1240
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Bruineberg, Dolega, Dewhurst & Baltieri 2022, Behavioral and Brain Sciences 45:e183 'The Emperor's New Markov Blankets'
+  Summary: Citing a formalism is not evidence of homology. The main critical literature argues Markov blankets used as metaphysical boundaries (exactly Kastrup's use for dissociative boundaries) go beyond what the formalism licenses. A self-description should not reopen a retired comparison without addressing why it was retired.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1240_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1240 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: 15b searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1138:
+  Date: 2026-11-12
+  Item: PRESUMPTION-1240
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Weak support (an MB-monism literature exists) against a moderate, partly read challenge (instrumental vs ontological blankets; citation is not homology). The challenge targets the inference itself.
+  Disposition: REVISE (REVISE-539)
+  Reasoning: Heuristic: weak support + substantive challenge to a presumption leans REVISE. The fix is a cheap process rule, and risk is Low (signal line, not a triplet), hence Low urgency.
+  Consistency check: no validated premise (PREMISE-001..239) found asserting the contrary; not an INCORPORATE, so no premise added.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1240 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1240_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1240_against.md
+
+EVIDENCE-QUALITY NOTE (2026-11-12): all six searches are PRELIMINARY (5 shared web searches, one fetch batch; Bruineberg et al. read only via a commentary; Kastrup abstract only; several sources from background recall). SYSTEMIC-RISK (carried from 2026-11-11): one orchestrator runs 15a and 15b on shared searches, so independence is procedural only. QUEUE-SCANNER GAP: queue_scan.py v2 does not recognise the header form '[QUEUED] [PRESUMPTION] PRESUMPTION-NNN' used by 14a/14b since ~2026-11; today's three items were found by grep, not by the scanner.

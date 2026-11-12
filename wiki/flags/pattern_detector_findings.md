@@ -1448,3 +1448,14 @@ Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, f
 - **Wright Romans, LOW until checked:** Summa 2026 bridge candidate; secondhand news report only.
 - **C2A2 meta (AI membership), note:** the Rule 30 guidelines are a live example of a tradition writing entry rules for non-human contributors (verified human + runnable check). Useful comparison case for C2A2's own AI-membership criterion; no flag.
 - Housekeeping: PROP-2026-11-04-001 (Glasgow) duplicated PRS-87's source; the PROP-2026-11-04 ID collision is now fully resolved (all four cards approved; no pending leftovers). Levin PROP-2026-11-09-001 source is dated 2025-10-09 (outside the 60-day filter) but was approved.
+
+
+## FINDING-114 - Ingest of 4 approved cards: Levin gives FLAG-017 a number; one false 'first signal' caught
+
+**Date:** 2026-11-12 · **Source signals:** 4 forwarded cards (kastrup x2, levin topoiesis, mcgilchrist Cassidy), 8 triplets · **Confidence:** Medium-Low · **Recommended action:** read the Manicka & Levin preprint to confirm the 0%->92% curve and the L/lambda threshold; hear the Cassidy Lecture before upgrading McGilchrist PRS-90.
+
+- **Levin x Friston (FLAG-017), MEDIUM:** the topoietic model supplies the first quantitative, organizer-free threshold (critical L/lambda) for when a collective acquires its own homeostatic state. If the absorbing boundary is a group-level Markov blanket, this is a measurable condition for FLAG-017's 'virtual governor = group blanket' equivalence. Rests on a secondary summary of a preprint. **Noted under FLAG-017; not escalated separately.**
+- **Kastrup x Friston, correction:** card PROP-2026-11-11-002 calls Kastrup's IIT + Markov blanket remark the first first-hand signal; the vault already held it (PROP-2026-08-28-020). Not minted as a new triplet. FPD-009 verdict unchanged. Lesson for proposers: check the tradition file before claiming a first.
+- **Kastrup x Fredrickson (CROSS-167), MEDIUM:** immune system as appearance of affect meets positivity-resonance/inflammation data. Host write-up only. **Not escalated.**
+- **Kastrup x McGilchrist (CROSS-168), MEDIUM-LOW:** a thinker naming his own defeaters is a clean case of the 'research program judged by its questions' framing C2A2 uses; the logic-is-empirical move is a live point of contrast with McGilchrist. **Not escalated.**
+- **McGilchrist Cassidy, LOW:** title-only, secondhand; possible conflation with PRS-88/89 source.

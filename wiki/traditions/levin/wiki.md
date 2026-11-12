@@ -249,3 +249,6 @@ Ingested 2 triplet(s): PRS-154, PRS-155. Robot scientist as a translation layer 
 
 ### Update 2026-11-10 — Memory and intelligence do not require a brain (IAI) (PROP-2026-11-09-002)
 Ingested 2 triplet(s): PRS-156, PRS-157. Bioelectric pattern-memories as the software-level interface for anatomical control; memory, learning and goal-directedness as capacities of cells and tissues ("mind blindness" as methodological error). Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+### Update 2026-11-12 — Manicka & Levin, topoietic model of collective morphogenesis (PROP-2026-11-11-004)
+Ingested 2 triplet(s): PRS-158, PRS-159. Organizer-free collective rescue of Xenopus embryos under teratogenic stress, governed by a geometric threshold (critical L/lambda). Open question added: does the critical L/lambda define when a group of agents acquires its own set-point (PRS-159, Speculative)? Figures come from a secondary summary; verify against the preprint.
