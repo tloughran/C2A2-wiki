@@ -17,15 +17,15 @@ evidence_strength_summary: "Precision-weighting as the mechanism of regulated cu
 mind_first_reframe: "Knowledge is never neutral intake; it is precision allocated across a bounded inference system whose every query spends a finite resource. Studiousness is well-calibrated precision-control — pursuing the truth that matters, at the right intensity, in the right direction; curiosity is misallocated precision — attention spent for fitness-payoff, vanity, or salience rather than toward the truth that orders the whole. The 'sovereign truth' is the limit where all perspective-limitation is removed and the simple whole is seen."
 central_theme_thread: "If each agent is individuated by the limits of its perspective and the goal is loving union with the whole, then how an agent spends its scarce attention is already a moral act: curiosity is the perspective curving its knowing back on itself or on the merely salient, studiousness is the perspective directing its knowing toward the truth that contains all the others. Knowing rightly is a step in the computation toward unity."
 tags: [synthesis, day/201, theme/ordered-attention]
-last_qc_at: "2026-11-03T18:17:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-12T10:19:20"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 201 — The Vice of Curiosity (Contemporary Parallel)
 
 ## Frame
 
-Aquinas asks two questions about the appetite for knowledge. Q.166 establishes the virtue: *studiousness*, the "keen application of the mind" that both restrains an immoderate desire to know and spurs the body's sloth toward the knowing it avoids — a part of temperance, because knowing, like eating, is a natural appetite that must be moderated by reason. Q.167 names the opposed vice: *curiosity*, the desire for knowledge "not directed in due manner to the knowledge of the sovereign truth." Crucially, Aquinas does not condemn knowledge; he condemns its *misdirection* — knowing for vain glory, knowing lesser things while neglecting greater, reaching for what is futile or beyond one's reach, or knowing through illicit means. The contemporary version of his question: in a cognitive system that can only attend to a little at a time, what makes the *allocation* of attention virtuous or vicious — and toward what is well-ordered knowing finally aimed?
+Aquinas asks two questions about the appetite for knowledge. Q.166 establishes the virtue: *studiousness*, the "keen application of the mind" that both restrains an immoderate desire to know and spurs the body's sloth toward the knowing it avoids — a part of temperance (a.2), because knowing, like eating, is a natural appetite that must be moderated by reason. Q.167 names the opposed vice: *curiosity*, the desire for knowledge "not directed in due manner to the knowledge of the sovereign truth" (a.1). Crucially, Aquinas does not condemn knowledge; he condemns its *misdirection* — knowing for vain glory, knowing lesser things while neglecting greater, reaching for what is futile or beyond one's reach, or knowing through illicit means. The contemporary version of his question: in a cognitive system that can only attend to a little at a time, what makes the *allocation* of attention virtuous or vicious — and toward what is well-ordered knowing finally aimed?
 
 ## Problem
 
