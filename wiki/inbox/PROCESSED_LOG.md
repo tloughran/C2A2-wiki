@@ -2563,3 +2563,9 @@ Total new triplets: 8. CROSS-167, CROSS-168. FINDING-114.
 
 ### 2026-11-12 second orchestrator firing (04:37 local, verification only)
 Started while the primary cloud run was mid-flight (decisions archive and approvals 04:36; master/review page/review_log/level2 04:39). Waited, changed nothing. Verified: Phase 0 email thread 1a1caf371f1fd396 (4 APPROVE) applied and stored in provenance/decision_emails.json; Phase 1 8 triplets (PRS ledger 1159); Phase 2 Thu specialists filed Fredrickson x2 + Stump x1, primary added 1 Friston card, pending = 4, no duplicate searches run; Phase 3 review/2026-11-12_review.html exists; Phase 4 Gmail draft r4331932245375922861 created 09:39Z; 5.5 review_log.html address-clean; 5.6 level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 1. No git run.
+
+### 2026-11-13 orchestrator run
+No new approved cards in inbox; 0 files processed, 0 triplets. Note: a plain filename/slug grep shows 101 older inbox files (2026-04 to 2026-10) not named in this log; earlier runs treated these as already processed (logged by proposal ID). Carried as a reconciliation flag, not re-ingested.
+
+### 2026-11-13 second orchestrator firing (04:37 local, verification only)
+Started while the primary cloud run was mid-flight (review page, master, review_log, level2, this log all stamped 04:37). Waited ~6 min, changed nothing it had done. Verified: Phase 0 no new decision email (only the 11-10 and 11-11 threads in the last 3 days, both already applied); Phase 1 0 ingested; Phase 2 Fri Carroll specialist card PROP-2026-11-13-001 present, pending = 5, no duplicate searches run; Phase 3 review/2026-11-13_review.html exists; Phase 4 draft reported by primary (not independently checkable - Gmail search excludes drafts); 5.5 review_log.html address-clean; 5.6 level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 2. No git run.

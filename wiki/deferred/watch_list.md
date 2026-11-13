@@ -75,6 +75,7 @@ WATCH-003:
     - 2026-11-08 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **28**; next on-cadence check stays 2026-11-13): a **29th** decision file exists, `review/archive/2026-11-07_decisions.md` (mtime 11-07 04:36; source `[C2A2-review-decision] 2026-11-06` email; 17 APPROVE, 2 duplicate email lines ignored; no DENY/CHANGE/CHECK/CONDITIONAL). grep of the new file for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: zero matches. Census: `pending/` 3, `approved/` 536, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-11-11 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **29**; next on-cadence check stays 2026-11-13): a **30th** decision file exists, `review/archive/2026-11-10_decisions.md` (mtime 11-10 04:37; source `[C2A2-review-decision] 2026-11-09` email; 6 APPROVE: PROP-2026-11-04-001/-002, -11-07-001, -11-08-001, -11-09-001/-002; no DENY/CHANGE/CHECK/CONDITIONAL). grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: only `2026-08-27_decisions.md` line 26 (re-filing APPROVE). Census: `pending/` 1 (Hawkins 11-10, unrelated), `approved/` 542, `denied/` 1, `needs_review/` 4. NOT met.
     - 2026-11-12 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **30**; next on-cadence check stays 2026-11-13): a **31st** decision file exists, `review/archive/2026-11-11_decisions.md` (mtime 11-11 04:36; source `[C2A2-review-decision] 2026-11-10` email; 1 CHECK: PROP-2026-11-10-001, no note; no APPROVE/DENY/CHANGE/CONDITIONAL). grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: only `2026-08-27_decisions.md`. Census: `pending/` 4, `approved/` 542, `denied/` 1, `needs_review/` 5. NOT met.
+    - 2026-11-13: On-cadence check; count now **31**. `review/archive/` now **32** files; the new one is `2026-11-12_decisions.md` (Gmail thread 1a1caf371f1fd396, `[C2A2-review-decision] 2026-11-11`; 4 APPROVE: PROP-2026-11-11-001..-004; no DENY/CHANGE/CHECK/CONDITIONAL). grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: only `2026-08-27_decisions.md`. `find inbox/proposals` for both slugs: only the approved re-filing and the unrelated 07-19 "practicing-just-this" file. Census: `pending/` 4 (all 11-12 cards, unrelated), `approved/` 546, `denied/` 1, `needs_review/` 5. NOT met. Next on-cadence check 2026-11-20.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -97,14 +98,15 @@ WATCH-004:
   Check method: File check — grep `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` and `pending/` (by proposal_id PROP-2026-10-01-001) for the false sentence; check `pending/` for a revised copy.
   Check cadence: Weekly
 
-  Last checked: 2026-11-06
-  Check count: 5
+  Last checked: 2026-11-13
+  Check count: 6
   Result history:
     - 2026-10-08: Intake. File in `needs_review/` carries Tom's CHANGE instruction appended (processed 2026-10-07); false sentence still present in Cross-Tradition Signals; no revised copy in `pending/`. Condition NOT met. Classified as a content correction needing a tradition-agent or human edit — not a real-world event. Agent 16 does not edit proposal content.
     - 2026-10-13: On-cadence check. `needs_review/2026-10-01_fredrickson_bipr-dementia-caregivers-conflict.md` unchanged since 2026-10-08 02:38; flagged sentence still present at line 38 (CT Signals "C2A2 core" bullet) as well as in Tom's quoted instruction at line 46. grep of `pending/` for PROP-2026-10-01-001: no match. Condition NOT met. Next on-cadence check 2026-10-20.
     - 2026-10-23: On-cadence check (due 10-20; late). File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (13 files) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-10-30.
     - 2026-10-30: On-cadence check. File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (9 files; the two new 10-29 Fredrickson cards are different items, `co-experienced-affect-caring-communities` and `listen-to-resonate`) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-11-06.
     - 2026-11-06: On-cadence check. File mtime still 2026-10-08 02:38; flagged sentence still at line 38. grep of `pending/` (17 files) for PROP-2026-10-01-001: no match. Condition NOT met. Next check 2026-11-13. One more unmoved check reaches the 6-check stale threshold.
+    - 2026-11-13: On-cadence check; count now **6**. File mtime still 2026-10-08 02:38; flagged sentence ("Inter-tradition dialogue is structurally a conflict conversation between unequal-capacity partners…") still in the CT Signals bullet at line 38 (and quoted in Tom's instruction at line 46). grep of `pending/` (4 files; the two 11-12 Fredrickson cards are different items, `no-peace-for-the-wicked` and `positivity-resonance-couples`) for PROP-2026-10-01-001: no match. New `review/archive/2026-11-12_decisions.md` does not name the item. Condition NOT met. **6-check stale threshold reached; see STALE FLAGS.** Next check 2026-11-20.
 
   On resolution:
     Action: re-queue proposal to pending/ with note [RESOLVED by Agent 16: date — condition met: CT Signals sentence corrected per Tom's CHANGE]
@@ -190,10 +192,11 @@ WATCH-007:
   Check method: Check `review/archive/` and decision emails for a later disposition or note naming PROP-2026-11-10-001; check card mtime for an appended note.
   Check cadence: Weekly (plus off-cadence on any new decision file)
 
-  Last checked: 2026-11-12
-  Check count: 1
+  Last checked: 2026-11-13
+  Check count: 2
   Result history:
     - 2026-11-12: Intake. CHECK, no note. Targeted fact check toward reading (d): direct fetch of https://github.com/thousandbrainsproject/tbp.monty/pull/1174 refused (URL not in this run's fetch provenance set); web search `tbp.monty pull 1174 "correctly merge new and previous pose vectors"` returned no GitHub hit (only TBP forum threads on pose handling, unrelated). So the PR quotes remain **unverified by Agent 16** — not refuted. No vault file other than the card and pipeline logs mentions the item. Condition NOT met.
+    - 2026-11-13 (CHECK RUN OFF-CADENCE: new decision file; count now **2**; next on-cadence check stays 2026-11-19): `review/archive/2026-11-12_decisions.md` holds 4 APPROVE (PROP-2026-11-11-001..-004) and does not name PROP-2026-11-10-001. Card mtime unchanged since this agent's own tag write (11-12 02:38); no note appended. Vault `.md` files newer than the last watch-list write: no mention of the item beyond the 11-12 cowork summary (carry-over). Condition NOT met.
 
   On resolution:
     Action: per Tom's stated check — if a fact/cross-reference check, run it and re-queue to pending/ with the result; if a content edit, mark AWAITING-HUMAN-EDIT; if an external condition (e.g. video URL / transcript found), keep WATCHING with that condition.
@@ -541,6 +544,16 @@ STALE-WATCH-FLAG:
   Condition: the sewing agent (or Tom) writes the overlap passages into the MacIntyre PRS triplet file(s) per Tom's 2026-10-15 CHANGE, and a revised proposal appears in `pending/`.
   Assessment: **Unlikely to be met as things stand.** The presumed owner, the weekly Sewing Agent, has now run three times (10-25, 11-01, 11-08) since its selection rule was found to exclude `needs_review/`; none touched this card, and nothing in its configuration has changed. The condition depends on a human choice, not on time.
   Recommendation: **Escalate to Tom** — one of: (a) instruct the Sewing Agent to take PROP-2026-10-13-001 from `needs_review/` on its next run (11-15); (b) run the overlap pass by hand in a Cowork session; or (c) reassign to the MacIntyre tradition agent. Secondary (Tom's call): extend cadence to event-only (Sewing runs) until one of these is chosen. Not recommended: Cancel — Tom's CHANGE is substantive and unexecuted.
+
+**[STALE-WATCH-FLAG raised 2026-11-13]**
+
+STALE-WATCH-FLAG:
+  Item: WATCH-004 (Fredrickson — BIPR dementia caregivers, PROP-2026-10-01-001)
+  Checks completed: 6
+  Watching since: 2026-10-08
+  Condition: the CT Signals "C2A2 core" sentence framing inter-tradition dialogue as novice-vs-mature conflict is removed or corrected per Tom's 2026-10-06 CHANGE, and a revised proposal appears in `pending/`.
+  Assessment: **Unlikely to be met as things stand.** The file has not been touched since 2026-10-08. No agent's selection rule reaches `needs_review/` (same pattern as WATCH-006: the Fredrickson agent files new cards to `pending/` — two on 11-12 — but does not revisit CHANGE items). The edit is one sentence; the condition depends on someone being assigned, not on time.
+  Recommendation: **Escalate to Tom** — one of: (a) make the one-sentence edit yourself (the replacement wording is already in your CHANGE note at line 46); (b) instruct the Fredrickson agent (06) to revise CHANGE items in `needs_review/` on its next run; or (c) authorize Agent 16 to apply this specific edit (outside its brief, which bars content changes — needs your explicit instruction). Secondary: extend cadence to biweekly until assigned. Not recommended: Cancel — the CHANGE encodes a method rule (mature-to-mature exchange is what carries evidence) that the card currently contradicts.
 
 ## RESOLVED INDEX
 
@@ -7652,3 +7665,25 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: WATCH-003/-004 on 2026-11-13; WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15; WATCH-007 on 2026-11-19.
 
 *Duplicate firing (~07:40 UTC). Notification sent this firing for the new WATCH-007 AWAITING-HUMAN item (first firing recorded none; a new item needing Tom's input warrants one).*
+
+## AGENT 16 RUN SUMMARY — 2026-11-13
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; no new items. New `review/archive/2026-11-12_decisions.md` holds 4 APPROVE (PROP-2026-11-11-001..-004) and no CHANGE / CHECK / CONDITIONAL. Vault `.md` files newer than the last watch-list write grepped for `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, tracked IDs, INTEGRITY FLAG, `xZcB-tmvJaU`: carry-over/historical only.
+  Items checked: 3
+    - WATCH-003 (on-cadence, count 31): new decision file does not name PROP-2026-07-19-001 or the INTEGRITY FLAG. NOT met. Still STALE.
+    - WATCH-004 (on-cadence, count 6): Fredrickson file unchanged since 10-08; flagged sentence still at line 38; not in `pending/`. NOT met. **Newly STALE — flag raised.**
+    - WATCH-007 (off-cadence on new decision file, count 2): not named in new decision file; no note on card. NOT met.
+  Event sweep (not counted): WATCH-005, no transcript in vault. WATCH-006, no MacIntyre card in `pending/`; Sewing Agent next runs 11-15.
+  Items resolved: 0 · Still watching: 5 (WATCH-003..-007) · Stale: 3 (WATCH-003, 31 checks; WATCH-006, 6; WATCH-004, 6 — all Escalate to Tom) · Approaching threshold: WATCH-005 (4) · New: 0
+  Next scheduled checks: WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15; WATCH-007 on 2026-11-19; WATCH-003/-004 on 2026-11-20.
+
+**Open for Tom:** NEW — WATCH-004 stale flag: make the one-sentence Fredrickson edit, assign it to agent 06, or authorize Agent 16 to apply it. Unchanged — WATCH-007: say what the Hawkins CHECK is for; WATCH-006 stale flag (pick a/b/c before the 11-15 Sewing run); WATCH-003 INTEGRITY FLAG ruling; WATCH-005 Wonderstruck transcript paste; split the ~900 KB watch list.
+
+*Run completed 2026-11-13. No notification sent; no items resolved. The new stale flag is recorded here and in STALE FLAGS.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-13 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest is the Hawkins card, 11-12, from this agent's own tag write). `review/archive/` unchanged (latest `2026-11-12_decisions.md`, already processed by the first firing); `pending/` holds 4 files; `find -newer watch_list.md` across the vault (excluding deferred/) returns nothing. Items checked: 0 · Resolved: 0 · Watching: 5 · Stale: 3 (WATCH-003, -004, -006, unchanged) · New: 0
+  Next scheduled checks: WATCH-005/-006 on 2026-11-14; WATCH-006 event trigger Sewing Agent 2026-11-15; WATCH-007 on 2026-11-19; WATCH-003/-004 on 2026-11-20.
+
+*Duplicate firing (~07:40 UTC). Notification sent this firing for the newly STALE WATCH-004, following the 11-12 precedent: the first firing recorded none, and a new escalation that needs Tom's decision warrants one.*

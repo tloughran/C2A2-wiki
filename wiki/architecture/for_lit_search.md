@@ -29450,3 +29450,39 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
 *2026-11-11 (local pass): 9 items queued, 6 [IN-HOUSE], 3 literature-lane (PRESUMPTION-1236, -1238, -1240). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-11T05:44:44Z by cloud-lit-2026-11-11; not held, append safe.*
 
 *2026-11-12 (cloud-lit-2026-11-12): 15a/15b/15c processed PRESUMPTION-1236, -1238, -1240 -> DISPOSITION-1136..1138 (MONITOR-719 Medium, MONITOR-720 High, REVISE-539 Low). In-house items and 15d backlog untouched.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2102
+  Statement: [stated] Absence from the wiki presumed to license an out-of-window specialist proposal (Fredrickson PROP-2026-11-12-001/-002).
+  Claim to test: In-house: list proposals since 09-01 filed under the "significant work not yet captured" clause; compare approval rate with in-window proposals.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-13] [SEARCHED-15b: 2026-11-13] [DISPOSITIONED-15c: 2026-11-13] [ASSUMPTION] ASSUMPTION-2103
+  Statement: [stated] Folk judgments of inner harmony (Prinzing & Fredrickson 2023) bear on Stump's internal integration and MacIntyre's "fragments" argument.
+  Claim to test: Literature lane: Prinzing & Fredrickson 2023 Cognitive Science; Stump, Wandering in Darkness (2010) on integration; Newman, De Freitas & Knobe 2015 on the true self and moral judgment; experimental-philosophy critiques of inferring normative claims from folk concepts.
+  Result (2026-11-13): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1139 -> MONITOR-721 (Medium)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [SEARCHED-15a: 2026-11-13] [SEARCHED-15b: 2026-11-13] [DISPOSITIONED-15c: 2026-11-13] [ASSUMPTION] ASSUMPTION-2104
+  Statement: [stated] Positivity resonance in married couples' conflict presumed to model respectful disagreement between traditions.
+  Claim to test: Literature lane: Wells et al. 2022 JPSP; Fredrickson 2016 "Love: positivity resonance"; intergroup contact and intergroup dialogue literature (Pettigrew & Tropp 2006; Dessel & Rogge 2008) on whether dyadic warmth scales to groups.
+  Result (2026-11-13): 15a PARTIALLY-SUPPORTED (Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1140 -> MONITOR-722 (High)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2107
+  Statement: [stated] sync_vault.sh presumed to sync only transcripts and synthesis, leaving 7 refs files unpublished.
+  Claim to test: In-house: locate sync_vault.sh (not in wiki/scripts/), read its include paths, and diff refs/ against the published wiki.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1241
+  Statement: [inferred] Signal-line strength presumed to track theme relevance, not evidence.
+  Claim to test: In-house: tabulate cross-tradition signal strength words vs cited study design (RCT / observational / survey of beliefs / theoretical) over the last 60 days.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1242
+  Statement: [inferred] CHECK presumed self-explanatory; no reason field.
+  Claim to test: In-house: count CHECK decisions since 09-01 with and without a note; compare days to resolution.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-12 (local pass): 6 items queued, 4 [IN-HOUSE], 2 literature-lane (ASSUMPTION-2103, -2104). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-12T05:43:10Z by cloud-lit-2026-11-12; not held, append safe.*
+
+*2026-11-13 (cloud-lit-2026-11-13): 15a/15b/15c processed ASSUMPTION-2103, -2104 -> DISPOSITION-1139..1140 (MONITOR-721 Medium, MONITOR-722 High). In-house items and 15d backlog untouched.*

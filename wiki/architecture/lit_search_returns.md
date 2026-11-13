@@ -52918,3 +52918,72 @@ DISPOSITION-1138:
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1240_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1240_against.md
 
 EVIDENCE-QUALITY NOTE (2026-11-12): all six searches are PRELIMINARY (5 shared web searches, one fetch batch; Bruineberg et al. read only via a commentary; Kastrup abstract only; several sources from background recall). SYSTEMIC-RISK (carried from 2026-11-11): one orchestrator runs 15a and 15b on shared searches, so independence is procedural only. QUEUE-SCANNER GAP: queue_scan.py v2 does not recognise the header form '[QUEUED] [PRESUMPTION] PRESUMPTION-NNN' used by 14a/14b since ~2026-11; today's three items were found by grep, not by the scanner.
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2103
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Prinzing & Fredrickson 2023, Cognitive Science, 'No peace for the wicked' (via preprint summary)
+  Summary: The folk concept links immorality to inner disharmony, which parallels Stump's integration thesis. As evidence about the folk concept it is direct; as evidence about the philosophical thesis it is analogical.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2103_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2103 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2103
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Experimental-philosophy critiques of inferring normative/metaphysical claims from folk concepts (true-self debate, cognitionandculture.net, titles seen)
+  Summary: The folk data bear on how people conceive integration, not on whether integration is real or normative. The link to MacIntyre's fragments argument is a level confusion (cultural vocabulary vs individual psyche).
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2103_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2103 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+DISPOSITION-1139:
+  Date: 2026-11-13
+  Item: ASSUMPTION-2103
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support for a narrow claim (the folk concept of well-being runs through inner harmony, consistent with Stump) against a moderate challenge to the inference (folk concept is not evidence of the thesis; the MacIntyre link is a level confusion). The evidence supports the claim when scoped to the folk concept, not as stated.
+  Disposition: MONITOR (MONITOR-721 (Medium))
+  Reasoning: Heuristic: moderate support plus moderate challenge leads to MONITOR. The challenge mainly narrows the scope. Suggested wording (for Tom): 'consistent with the folk concept that Stump's integration thesis presupposes'; drop or separately justify the MacIntyre 'fragments' link.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for Fredrickson / positivity resonance / inner harmony / fragments found no premise asserting the contrary. Not an INCORPORATE, so no premise added.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2103 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2103_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2103_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2104
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Wells et al. 2022 JPSP (positivity resonance during conflict; background recall) + Pettigrew & Tropp 2006 meta-analysis
+  Summary: Shared positivity during disagreement is real and consequential in dyads, and positive intergroup contact reduces prejudice through affective routes. Together these give a plausible, partial bridge from dyad to groups.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2104_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2104 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2104
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Paluck, Green & Green 2019 BPP 'The contact hypothesis re-evaluated' (title seen); Saguy et al. 2009 'The irony of harmony' (recall)
+  Summary: Dyadic warmth in committed couples does not straightforwardly scale to groups. Rigorous contact effects are smaller than assumed, and harmony can suppress the disagreement the model is meant to protect.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2104_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2104 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1140:
+  Date: 2026-11-13
+  Item: ASSUMPTION-2104
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: Moderate support (dyadic positivity in conflict is real; contact reduces prejudice) against a moderate challenge aimed at the transfer itself (scale, relationship type, harmony-masks-asymmetry). This is contested rather than refuted. The challenge identifies a specific failure mode relevant to C2A2's goal of respectful disagreement.
+  Disposition: MONITOR (MONITOR-722 (High))
+  Reasoning: Heuristic: comparable support and challenge leads to MONITOR. Priority is High because the challenge targets the exact property C2A2 cares about: warmth could hide disagreement. Cheap mitigation (for Tom): call the couple finding an analogy, not a model, and pair any warmth signal with a check that disagreements are still stated.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for Fredrickson / positivity resonance / inner harmony / fragments found no premise asserting the contrary. Not an INCORPORATE, so no premise added.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2104 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2104_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2104_against.md
+
+SYSTEMIC-RISK (2026-11-13, 15b): ASSUMPTION-2103 and -2104 share one vulnerability. Both carry a Fredrickson-lab finding from one level (individual folk attribution; married dyad) to a claim about traditions or moral philosophy without a bridging argument. Related: PRESUMPTION-1232 (analogy across traditions without translation, MONITOR-716).
+EVIDENCE-QUALITY NOTE (2026-11-13): all four searches are PRELIMINARY (4 web searches, titles only; 1 fetch read, 1 fetch failed). Wells et al. 2022, Pettigrew & Tropp 2006, Saguy et al. 2009, Stump 2010, Newman et al. 2015 and After Virtue are cited from background recall, not re-read. 15a/15b independence is procedural only (one orchestrator). QUEUE-SCANNER GAP persists: queue_scan.py v2 counts the bracket-prefixed header form as BARE backlog (142), and today's items were found by grep.

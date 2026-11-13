@@ -39744,3 +39744,124 @@ ASSUMPTION-2101:
     Current status: UNTESTED
 
 *2026-11-11 14a: ASSUMPTION-2089..2101 (13). Queued [IN-HOUSE]: 2093, 2095, 2099, 2100. Not queued: 2089 (needs implementation), 2090-2092, 2096 (design choices pending Tom; OPEN-302), 2094 (OPEN-301), 2097 (status update), 2098 (pending review), 2101 (recurrences). No interactive Cowork session; 2089-2094 come from the Declared Dimension Set proposal file (author session not identified in list_sessions).*
+
+ASSUMPTION-2102:
+  Date identified: 2026-11-12
+  Statement: [stated] Fredrickson agent: the lab's 2026 list held only papers already in the wiki, "So I used the task's 'significant work not yet captured' clause instead" and filed two older papers (Wells et al. 2022 JPSP; Prinzing & Fredrickson 2023 Cognitive Science) as PROP-2026-11-12-001/-002. Assumes absence from traditions/fredrickson/ and inbox/proposals/ is enough to make an out-of-window paper a valid proposal.
+  Context: Stump/Fredrickson agent 46d6fb4f
+  Type: methodological
+  Related decisions: PRESUMPTION-087; PRESUMPTION-149; PRESUMPTION-197
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2102
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+ASSUMPTION-2103:
+  Date identified: 2026-11-12
+  Statement: [stated] Fredrickson agent: Prinzing & Fredrickson 2023 ("No Peace for the Wicked?") "bears directly on Stump's idea of internal integration and on MacIntyre's 'fragments' argument, which matters for the ISMI paper." Same message caveats: "The study measures what people believe about happiness, not actual wellbeing."
+  Context: Stump/Fredrickson agent 46d6fb4f, PROP-2026-11-12-002 and cross-tradition signal line
+  Type: empirical
+  Related decisions: PROP-2026-11-12-002
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2103
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+ASSUMPTION-2104:
+  Date identified: 2026-11-12
+  Statement: [stated] Fredrickson agent signal: "positivity resonance during conflict as a dyad-scale model of respectful disagreement (C2A2 core, flagged strongly)". Assumes a finding about long-married couples (Wells et al. 2022, observational, n=154) transfers to disagreement between traditions or communities.
+  Context: Stump/Fredrickson agent 46d6fb4f, PROP-2026-11-12-001
+  Type: empirical
+  Related decisions: PROP-2026-11-12-001
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2104
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+ASSUMPTION-2105:
+  Date identified: 2026-11-12
+  Statement: [stated] Deferred monitor: Tom marked the Hawkins card (PROP-2026-11-10-001) CHECK with no note, "so there's no condition I can watch for." The agent opened WATCH-007 and listed four candidate conditions "all taken from the card's own reviewer notes" (authorship, filing date >30 days, video not watched, PR #1174 quotes unverified). Assumes the card's reviewer notes bound what a bare CHECK can mean.
+  Context: Deferred monitor 9b8624f8
+  Type: methodological
+  Related decisions: WATCH-007; OPEN-303; PRESUMPTION-1242
+  Testability: design choice pending Tom (not queued; OPEN-303)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2105
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+ASSUMPTION-2106:
+  Date identified: 2026-11-12
+  Statement: [stated] Chat scrape: "No URL available for active tab" in two tabs; an earlier run at 13:48 UTC "found Chrome signed out of claude.ai, which is probably the cause both times." Evening sync hit the same blank tab and draws the same inference.
+  Context: Chat scrape 18d86d35; evening sync e4d5dd93
+  Type: empirical
+  Related decisions: OPEN-299
+  Testability: testable empirically (Tom signs in and re-runs; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2106
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+ASSUMPTION-2107:
+  Date identified: 2026-11-12
+  Statement: [stated] Morning system health: 7 refs files "never reached the published wiki, because sync_vault.sh only syncs transcripts and synthesis." Also: the Summa index is missing Day-035 and Day-001 and needs a rebuild. sync_vault.sh is not at wiki/scripts/ (checked this run), so the causal claim was not verified here.
+  Context: System health 5e6d847c
+  Type: architectural
+  Related decisions: -
+  Testability: testable empirically (in-house, queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2107
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+ASSUMPTION-2108:
+  Date identified: 2026-11-12
+  Statement: [stated] Recurrences and counts: scheduler health 45 OK / 2 WARN / 28 FAIL, 27 DOUBLE-REGISTERED (morning status says 26; yesterday 27 vs 28). Scheduler health again says 47/47 cloud OK "meets the checker's condition" to disable the 27 local entries (ASSUMPTION-2100), while the cloud 14a/14b copy no-oped 11-12 and 11-13 (fourth consecutive). Wiki daily run: second firing again; filename-vs-PROCESSED_LOG check shows ~380 false "unprocessed" because the log keys by proposal ID (ASSUMPTION-2099). Morning walk: findings 080+ have no Status field (OPEN-298). Local lit pipeline skipped (lock script needs Mac shell; Desktop Commander auto-declined). Watch list ~910 KB, split pending. Stump/Fredrickson task prompt path lacks "Projects/". Resolved: voice-shell suite no longer failing (was RED 6/403).
+  Context: All sessions read
+  Type: architectural
+  Related decisions: OPEN-288; OPEN-298; OPEN-299; ASSUMPTION-2099; ASSUMPTION-2100; ASSUMPTION-2101
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2108
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+*2026-11-12 14a: ASSUMPTION-2102..2108 (7). Queued literature: 2103, 2104. Queued [IN-HOUSE]: 2102, 2107. Not queued: 2105 (OPEN-303), 2106 (Tom action), 2108 (recurrences).*

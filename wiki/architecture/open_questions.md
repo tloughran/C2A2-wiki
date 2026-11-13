@@ -4111,3 +4111,17 @@ OPEN-302:
     Original item: OPEN-302
     Item type: OPEN QUESTION
     Current status: OPEN
+
+OPEN-303:
+  Raised: 2026-11-12 by 14a/14b (ASSUMPTION-2105; PRESUMPTION-1242)
+  Question: Should a CHECK decision carry a required reason (what to check, and what would clear it)? Immediate case: what is the Hawkins CHECK on PROP-2026-11-10-001 for? If it is the PR #1174 quotes, the PR URL must be supplied so Agent 16 can fetch it (WATCH-007, next check 11-19).
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-303
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: OPEN

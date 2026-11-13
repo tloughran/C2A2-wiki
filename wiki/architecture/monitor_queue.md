@@ -25950,3 +25950,25 @@ MONITOR-720:
   Monitoring cadence: Weekly (default); first check due 2026-11-19
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1238 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1238_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1238_against.md
+
+MONITOR-721:
+  Date: 2026-11-13
+  Source item: ASSUMPTION-2103 (DISPOSITION-1139)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a: The folk concept links immorality to inner disharmony, which parallels Stump's integration thesis. As evidence about the folk concept it is direct; as evidence about the philosophical thesis it is analogical. (Moderate, preliminary). 15b: The folk data bear on how people conceive integration, not on whether integration is real or normative. The link to MacIntyre's fragments argument is a level confusion (cultural vocabulary vs individual psyche). (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE with caveat) if restated as a folk-concept claim and the MacIntyre link is dropped or argued separately; (-> REVISE) if the wiki uses the folk data as evidence that integration is real or normative.
+  Monitoring cadence: Weekly (default); first check due 2026-11-20
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2103 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2103_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2103_against.md
+
+MONITOR-722:
+  Date: 2026-11-13
+  Source item: ASSUMPTION-2104 (DISPOSITION-1140)
+  Item type: ASSUMPTION (stated)
+  Priority: High
+  Disposition basis: 15a: Shared positivity during disagreement is real and consequential in dyads, and positive intergroup contact reduces prejudice through affective routes. Together these give a plausible, partial bridge from dyad to groups. (Moderate, preliminary). 15b: Dyadic warmth in committed couples does not straightforwardly scale to groups. Rigorous contact effects are smaller than assumed, and harmony can suppress the disagreement the model is meant to protect. (Moderate, preliminary).
+  What would change the disposition: (-> REVISE) if the wiki uses positivity-resonance metrics as a direct indicator of good inter-tradition disagreement; (-> INCORPORATE with caveat) if framed as an analogy and paired with a disagreement-preservation check.
+  Monitoring cadence: Weekly (default); first check due 2026-11-20
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2104 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2104_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2104_against.md

@@ -26877,15 +26877,17 @@ PRESUMPTION-1236:
   Testability: testable via literature (faceted classification and faceted search: Ranganathan's facet analysis; Hearst 2009 Search User Interfaces ch. 8; Yee et al. 2003 'Faceted metadata for image search and browsing') and in-house (count coupled dims across the nine surfaces with a real cut)
   Risk if wrong: Medium: if dimensions are coupled, `narrows` alone will not give a faithful export or subscription predicate, and the 'cannot drift apart' guarantee (ASSUMPTION-2089) weakens.
   Confidence: medium
-  Status: UNTESTED
+  Status: PARTIALLY-CHALLENGED
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b → 15a/15b → 15c → 14b]
     Original item: PRESUMPTION-1236
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-12 cloud lit): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1136 -> MONITOR-719 (Medium)
+      14b: status updated 2026-11-12 local pass
+    Current status: PARTIALLY-CHALLENGED
 
 PRESUMPTION-1237:
   Date surfaced: 2026-11-11
@@ -26917,15 +26919,17 @@ PRESUMPTION-1238:
   Testability: testable via literature (Hullman & Diakopoulos 2011 'Visualization rhetoric: framing effects in narrative visualization'; Kong et al. 2018/2019 on title and slant framing in charts; Tversky on arrows and lines in diagrams)
   Risk if wrong: Medium: a public C2A2 film could imply measured inter-community exchange, the claim the narration edit was meant to remove.
   Confidence: medium
-  Status: UNTESTED
+  Status: PARTIALLY-CHALLENGED
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b → 15a/15b → 15c → 14b]
     Original item: PRESUMPTION-1238
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-12 cloud lit): 15a PARTIALLY-SUPPORTED (Weak); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1137 -> MONITOR-720 (High)
+      14b: status updated 2026-11-12 local pass
+    Current status: PARTIALLY-CHALLENGED
 
 PRESUMPTION-1239:
   Date surfaced: 2026-11-11
@@ -26957,14 +26961,58 @@ PRESUMPTION-1240:
   Testability: testable via literature (Kastrup 2018 'The universe in consciousness', JCS; Friston, Wiese & Hobson 2020 on Markov blankets and consciousness; Bruineberg et al. 2022 'The Emperor's New Markov Blankets', BBS)
   Risk if wrong: Low: it is a signal, not a triplet; risk is that the reopening happens without the reason it was retired.
   Confidence: low
-  Status: UNTESTED
+  Status: CHALLENGED
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b → 15a/15b → 15c → 14b]
     Original item: PRESUMPTION-1240
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from 2026-11-11 local pass (final assistant message per session via session_info; daily_sync chat/cowork summaries for 11-11; selected sections of architecture/declared_dimension_set_2026-11-11.md; no interactive Cowork session in list_sessions).
-    Current status: UNTESTED
+      15a/15b/15c (2026-11-12 cloud lit): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1138 -> REVISE-539 (Low)
+      14b: status updated 2026-11-12 local pass
+    Current status: CHALLENGED
 
 *2026-11-11 14b: PRESUMPTION-1236..1240 (structural 1, normative 1, epistemic 2, methodological 1; risk Medium 3, Low 2). Checked against 14a 2089-2101 and the registry. Not re-surfaced (already registered; new evidence today): 'OK'/'ran on schedule' read as did-the-work (PRESUMPTION-503; scheduler health 47/47 OK while cloud 14a/14b no-oped); cloud/local copies equivalent (PRESUMPTION-1196; first-writer-wins on duplicate firings presumes the first copy is at least as capable, e.g. evening sync's first firing lacked session_info); local passes not found by readers (PRESUMPTION-1219; morning status counts 28 vs 27).*
+
+PRESUMPTION-1241:
+  Date surfaced: 2026-11-12
+  Statement: [inferred] Cross-tradition signal strength ("flagged strongly") is set by how close a theme is to C2A2's core, not by the strength of the evidence. Both of today's strong flags rest on studies the same agent caveats: an observational couples study ("associations, not proof of cause") and a study of folk beliefs ("not actual wellbeing").
+  Evidence it was operative: Stump/Fredrickson agent 46d6fb4f signal block vs its own per-paper caveats
+  Why it was unstated: the signal line has one strength word and no field for study design; the caveats sit in a different paragraph
+  Type: epistemic
+  Related decisions: ASSUMPTION-2103; ASSUMPTION-2104; PRESUMPTION-096; PRESUMPTION-097; PRESUMPTION-149
+  Testability: testable empirically (in-house: tabulate signal-line strength words against the cited study design over the last 60 days)
+  Risk if wrong: Medium: strong flags steer which bridges get built; if they track theme rather than evidence, weak bridges are promoted.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1241
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+PRESUMPTION-1242:
+  Date surfaced: 2026-11-12
+  Statement: [inferred] The review vocabulary treats CHECK as self-explanatory. No reason is required with it, so downstream agents have to reconstruct what Tom wanted checked; today Agent 16 could only list candidates and wait (WATCH-007, next check 11-19).
+  Evidence it was operative: Deferred monitor 9b8624f8; review/archive/2026-11-11_decisions.md held only the bare CHECK
+  Why it was unstated: the decision email format has worked for APPROVE/REJECT, where no condition is needed
+  Type: structural
+  Related decisions: ASSUMPTION-2105; OPEN-303; WATCH-007
+  Testability: testable empirically (in-house: count CHECK decisions since 09-01 with no note, and their days-to-resolution vs CHECKs with a note)
+  Risk if wrong: Low-Medium: a bare CHECK can park a card indefinitely.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1242
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
+    Current status: UNTESTED
+
+*2026-11-12 14b: PRESUMPTION-1241..1242 (epistemic 1, structural 1; risk Medium 1, Low-Medium 1). Checked against 14a 2102-2108 and the registry. Not re-surfaced (already registered): out-of-window backfill override (PRESUMPTION-087/149/197); repeated unactioned fix requests in run reports (alarm-fatigue line, PRESUMPTION-240/493/825/832/866/979); duplicate registration (PRESUMPTION-503).*
