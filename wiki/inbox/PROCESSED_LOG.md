@@ -2569,3 +2569,9 @@ No new approved cards in inbox; 0 files processed, 0 triplets. Note: a plain fil
 
 ### 2026-11-13 second orchestrator firing (04:37 local, verification only)
 Started while the primary cloud run was mid-flight (review page, master, review_log, level2, this log all stamped 04:37). Waited ~6 min, changed nothing it had done. Verified: Phase 0 no new decision email (only the 11-10 and 11-11 threads in the last 3 days, both already applied); Phase 1 0 ingested; Phase 2 Fri Carroll specialist card PROP-2026-11-13-001 present, pending = 5, no duplicate searches run; Phase 3 review/2026-11-13_review.html exists; Phase 4 draft reported by primary (not independently checkable - Gmail search excludes drafts); 5.5 review_log.html address-clean; 5.6 level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 2. No git run.
+
+### 2026-11-14 orchestrator run
+No new decision email; no newly approved cards; 0 files processed, 0 triplets. Wolfram duplicate cards: second renumbered PROP-2026-11-14-002 (flagged for Tom).
+
+### 2026-11-14 second orchestrator firing (04:37 local, verification only)
+Started as the primary cloud run finished (review page 04:36, review_log/level2 04:36, master and this log 04:36:57). Waited ~2 min, no further writes; changed nothing it had done. Verified: Phase 0 the only [C2A2-review-decision] threads matching unread/last-2-days are four old unread ones (2026-04-08, two 2026-04-27, 2026-07-23), all already stored in provenance/decision_emails.json with archive entries - no-op, left unread; Phase 1 0 ingested; Phase 2 Sat Wolfram cards PROP-2026-11-14-001/-002 present (duplicate source, flagged by primary), pending = 7, no duplicate searches run; Phase 3 review/2026-11-14_review.html exists; Phase 4 draft reported by primary (not independently checkable); 5.5 review_log.html address-clean; 5.6 level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 3. No git run.

@@ -16361,3 +16361,12 @@ REVISE-539: [2026-11-12] Source item: PRESUMPTION-1240 (DISPOSITION-1138)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1240 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1240_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1240_against.md
+
+REVISE-540: [2026-11-14] Source item: PRESUMPTION-1244 (DISPOSITION-1142)
+  What is at risk: Cross-thinker signal lines and synthesis that pair Carroll ('new understanding = new data') with Arkani-Hamed ('inevitability') as one criterion.
+  Recommended action (for Tom): (1) Label the pairing as family resemblance under non-empirical assessment, not a shared criterion. (2) When citing either, name the argument type: consistency/viability (pursuit) vs uniqueness/rigidity (NAA-like). (3) Do not let the electroweak uptake history count as evidence for inevitability.
+  Urgency: Low (presumption; moderate challenge from titles and recall; signal-level only).
+  Related: ASSUMPTION-2109 / MONITOR-723; REVISE-539 (same cross-level pattern).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1244 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1244_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1244_against.md

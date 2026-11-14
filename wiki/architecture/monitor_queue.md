@@ -25972,3 +25972,14 @@ MONITOR-722:
   Monitoring cadence: Weekly (default); first check due 2026-11-20
   PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2104 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2104_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2104_against.md
+
+MONITOR-723:
+  Date: 2026-11-14
+  Source item: ASSUMPTION-2109 (DISPOSITION-1141)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a: Dawid's non-empirical assessment (formal NAA proof) plus electroweak uptake after 't Hooft 1971 support credence gain without data (Moderate, preliminary). 15b: the strong wording 'should count as new data' is contested (Ellis & Silk 2014; arXiv:1609.01966) and exceeds Dawid's position; electroweak case mixes pursuit with acceptance (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE with caveat) if restated as 'non-empirical results can rationally raise credence and pursuitworthiness' and the electroweak citation history is checked; (-> REVISE) if the wiki treats non-empirical results as equal in weight to empirical data.
+  Monitoring cadence: Weekly (default); first check due 2026-11-21
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2109 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2109_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2109_against.md

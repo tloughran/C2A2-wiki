@@ -29486,3 +29486,29 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
 *2026-11-12 (local pass): 6 items queued, 4 [IN-HOUSE], 2 literature-lane (ASSUMPTION-2103, -2104). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-12T05:43:10Z by cloud-lit-2026-11-12; not held, append safe.*
 
 *2026-11-13 (cloud-lit-2026-11-13): 15a/15b/15c processed ASSUMPTION-2103, -2104 -> DISPOSITION-1139..1140 (MONITOR-721 Medium, MONITOR-722 High). In-house items and 15d backlog untouched.*
+
+[QUEUED] [SEARCHED-15a: 2026-11-14] [SEARCHED-15b: 2026-11-14] [DISPOSITIONED-15c: 2026-11-14] [ASSUMPTION] ASSUMPTION-2109
+  Statement: [stated] Carroll: theory credence can rise with no new data; "new understanding should count as new data" (Weinberg electroweak, 1967 -> 1972 uptake).
+  Claim to test: Is there a worked-out account of credence gain from non-empirical results (consistency proofs, renormalizability)? Search: Dawid 2013 non-empirical theory assessment; critiques (e.g. Ellis & Silk 2014; Rovelli); historical studies of electroweak uptake after 't Hooft 1971.
+  Result (2026-11-14): 15a SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1141 -> MONITOR-723 (Medium)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2111
+  Statement: [stated] Nothing in the pipeline edits cards in needs_review/.
+  Claim to test: In-house: grep wiki/agents/*.md and wiki/scripts/ for writes into needs_review/; list any agent permitted to revise a card there.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1243
+  Statement: [inferred] Specialist agents presumed to need no memory of their own earlier flags.
+  Claim to test: In-house: count re-flagged signals in specialist run reports since 09-01 and whether the later report cites the earlier flag or open question.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [SEARCHED-15a: 2026-11-14] [SEARCHED-15b: 2026-11-14] [DISPOSITIONED-15c: 2026-11-14] [PRESUMPTION] PRESUMPTION-1244
+  Statement: [inferred] Carroll "new understanding = new data" presumed to share a criterion with Arkani-Hamed "inevitability".
+  Claim to test: Does the literature on non-empirical confirmation distinguish workability/consistency support from uniqueness/rigidity support (Dawid's NAA vs UEA vs MIA)? If so, classify the pairing as surface analogy, not structural homology.
+  Result (2026-11-14): 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1142 -> REVISE-540 (Low)
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: REVISION-FLAGGED
+
+*2026-11-13 (local pass): 4 items queued, 2 [IN-HOUSE], 2 literature-lane (ASSUMPTION-2109, PRESUMPTION-1244). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-13T05:42:51Z by cloud-lit-2026-11-13; not held, append safe.*
+
+*2026-11-14 (cloud-lit-2026-11-14): 15a/15b/15c processed ASSUMPTION-2109, PRESUMPTION-1244 -> DISPOSITION-1141..1142 (MONITOR-723 Medium, REVISE-540 Low). In-house items and 15d backlog untouched.*

@@ -27016,3 +27016,45 @@ PRESUMPTION-1242:
     Current status: UNTESTED
 
 *2026-11-12 14b: PRESUMPTION-1241..1242 (epistemic 1, structural 1; risk Medium 1, Low-Medium 1). Checked against 14a 2102-2108 and the registry. Not re-surfaced (already registered): out-of-window backfill override (PRESUMPTION-087/149/197); repeated unactioned fix requests in run reports (alarm-fatigue line, PRESUMPTION-240/493/825/832/866/979); duplicate registration (PRESUMPTION-503).*
+
+PRESUMPTION-1243:
+  Date surfaced: 2026-11-13
+  Statement: [inferred] Specialist agents are presumed to need no memory of their own earlier flags. Each run re-judges what it finds as if new, so a signal already escalated to Tom can be re-escalated as fresh. Today the Arkani-Hamed agent flagged arXiv:2610.27903 as "worth flagging as a signal" 14 days after the same paper produced ASSUMPTION-1989 and OPEN-283, with no reference to either.
+  Evidence it was operative: Carroll/Arkani-Hamed b225acbd vs ASSUMPTION-1989 (2026-10-30, 869fd18e); OPEN-283 still OPEN
+  Why it was unstated: each specialist run is scoped to "what is new since last week"; prior run reports and open questions are not in its read list
+  Type: methodological
+  Related decisions: ASSUMPTION-2110; OPEN-283; PRESUMPTION-1202
+  Testability: testable empirically (in-house: across specialist run reports since 09-01, count signals re-flagged after an earlier flag or open question, and whether the later report cites the earlier one)
+  Risk if wrong: Low-Medium: repeated flags look like new evidence and add to Tom's queue without adding information.
+  Confidence: medium (one clear case today; base rate unknown)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1243
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: UNTESTED
+
+PRESUMPTION-1244:
+  Date surfaced: 2026-11-13
+  Statement: [inferred] The Carroll agent's cross-tradition signal presumes that two thinkers who both value non-empirical theory virtues share one criterion. Carroll's case (Weinberg electroweak) is credence rising once a theory is shown workable (a consistency/renormalizability result); Arkani-Hamed's "inevitability" is about uniqueness or rigidity of a structure. These may be distinct kinds of non-empirical support, so "lines up with" may be a surface analogy rather than a structural homology. Is the link warranted at the stronger level?
+  Evidence it was operative: Carroll/Arkani-Hamed b225acbd: "this lines up with Arkani-Hamed's use of 'inevitability' to judge theories", with no statement of which feature is shared
+  Why it was unstated: thematic overlap reads as agreement when both are summarized in a sentence
+  Type: epistemic
+  Related decisions: ASSUMPTION-2109; PRESUMPTION-1241
+  Testability: testable via literature (queued: philosophy of non-empirical theory assessment, e.g. Dawid 2013 String Theory and the Scientific Method, distinguishing no-alternatives, unexpected explanatory coherence and meta-inductive arguments; history of 't Hooft 1971 and electroweak uptake)
+  Risk if wrong: Medium: a surface analogy logged as a structural cross-connection inflates connection counts and the Carroll–Arkani-Hamed pairing.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1244
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: UNTESTED
+
+*2026-11-13 14b: PRESUMPTION-1243..1244 (methodological 1, epistemic 1; risk Low-Medium 1, Medium 1). Checked against 14a 2109-2114 and the registry. Not re-surfaced (already registered): 'from the thinker himself' authorship filter (PRESUMPTION-1202); search-failure reported as a real zero (cf. ASSUMPTION at line ~20583 and PRESUMPTION around line 16771); repeated unactioned 'Needs you' lists (alarm-fatigue line, PRESUMPTION-240/493/825/832/866/979); duplicate registration (PRESUMPTION-503).*

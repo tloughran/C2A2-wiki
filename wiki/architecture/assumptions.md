@@ -39865,3 +39865,107 @@ ASSUMPTION-2108:
     Current status: UNTESTED
 
 *2026-11-12 14a: ASSUMPTION-2102..2108 (7). Queued literature: 2103, 2104. Queued [IN-HOUSE]: 2102, 2107. Not queued: 2105 (OPEN-303), 2106 (Tom action), 2108 (recurrences).*
+
+ASSUMPTION-2109:
+  Date identified: 2026-11-13
+  Statement: [stated] Carroll (Mindscape AMA, 2026-11-09, via PROP-2026-11-13-001): a theory can gain credence with no new data; "new understanding of a theory should count as new data" (example: Weinberg's electroweak theory, ignored until 1972, taken up once shown workable). Carroll admits he has no formal account. The Carroll agent links this to Arkani-Hamed's use of "inevitability" to judge theories and flags it as a cross-tradition signal.
+  Context: Carroll/Arkani-Hamed b225acbd (Friday specialists)
+  Type: epistemic
+  Related decisions: PRESUMPTION-1244
+  Testability: testable via literature (queued)
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2109
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: SENT-TO-15a
+
+ASSUMPTION-2110:
+  Date identified: 2026-11-13
+  Statement: [stated] Arkani-Hamed agent again flagged arXiv:2610.27903 (Koefler, Pavlov, Sinn; m=2 amplituhedron is a positive geometry) as "a strong related paper by other authors ... worth flagging as a signal", not proposed "because it is not his work". This is the same paper and the same filter call recorded 2026-10-30 (ASSUMPTION-1989; PRESUMPTION-1202; OPEN-283, still OPEN). The run report does not mention the earlier flag or OPEN-283.
+  Context: Carroll/Arkani-Hamed b225acbd
+  Type: methodological
+  Related decisions: ASSUMPTION-1989; PRESUMPTION-1202; OPEN-283; PRESUMPTION-1243
+  Testability: needs Tom (OPEN-283; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2110
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: UNTESTED
+
+ASSUMPTION-2111:
+  Date identified: 2026-11-13
+  Statement: [stated] Agent 16: "Nothing in the pipeline goes back to edit cards in needs_review/, so it won't move on its own." WATCH-004 (Fredrickson card; Tom's replacement wording sits at line 46) flagged stale on that basis; Agent 16's own instructions forbid content edits.
+  Context: Deferred monitor bbbfacee
+  Type: architectural
+  Related decisions: WATCH-004; WATCH-003; WATCH-006
+  Testability: testable empirically (in-house, queued: grep agent definitions and scripts for writes into needs_review/)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2111
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: UNTESTED
+
+ASSUMPTION-2112:
+  Date identified: 2026-11-13
+  Statement: [stated] Local lit pipeline (skipped, lock not acquired): "Unless the cloud copy is doing the work, the queue in architecture/for_lit_search.md has gone about two weeks without being searched."
+  Context: Lit pipeline 2596f708
+  Type: architectural
+  Related decisions: OPEN-299; ASSUMPTION-2100
+  Testability: checked in-house this run (not queued)
+  Status: CHALLENGED (in-house). review/lit_pipeline.lock shows LOCKED 2026-11-13T05:40:35Z / RELEASED 05:42:51Z by cloud-lit-2026-11-13, and the for_lit_search.md footer records DISPOSITION-1139..1140 for ASSUMPTION-2103/-2104 (also cloud-lit 11-12, DISPOSITION-1136..1138). The cloud copy is searching the literature lane. Not checked: whether [IN-HOUSE] items and the 15d backlog are being worked (the 11-13 footer says "untouched").
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2112
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: CHALLENGED (in-house)
+
+ASSUMPTION-2113:
+  Date identified: 2026-11-13
+  Statement: [stated] Evening sync: "The 15 most recent were all scheduled tasks, so there was no hands-on Cowork session today." This run's list_sessions (20 most recent) agrees: all 20 are scheduled tasks.
+  Context: Evening sync 3c80683f
+  Type: empirical
+  Related decisions: -
+  Testability: checked in-house this run (not queued)
+  Status: SUPPORTED (in-house, 20 sessions)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2113
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-2114:
+  Date identified: 2026-11-13
+  Statement: [stated] Recurrences: scheduler health 45 OK / 2 WARN / 28 FAIL (27 double-registered + openstory.ui not loaded), "matches yesterday's block"; it again advises disabling the 27 local entries, while the cloud 14a/14b copy has no-oped five nights running (11-10..11-14; ASSUMPTION-2100, -2108). claude.ai sync failed in both directions all day; today the symptom is "No URL available for active tab" (11-12: signed out). Morning walk Gmail self-sent search failed 3x; subject-word search clean, so walk notes "NO". Wiki daily run second firing (third day running), verification only. Carroll task prompt path lacks "Projects/"; preposterousuniverse.com/podcast/ and arxiv.org/a/arkanihamed_n_1 blocked. Duplicate PROP-2026-10-23-001 (FINDING-110). Stale queue items past deadline (Humanity AI 10-21, DELTA 10-26). Watch list ~910 KB, split pending. WATCH-004 newly stale (stale now 3: 003, 004, 006). Network 1159 / 168 / 114 (no change; 0 ingested). Pending proposals 5.
+  Context: All sessions read
+  Type: architectural
+  Related decisions: OPEN-288; OPEN-299; ASSUMPTION-2099; ASSUMPTION-2100; ASSUMPTION-2108
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2114
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-13 local pass (final assistant message per session via session_info: evening sync 3c80683f, morning walk 0017a54a, wiki daily run 24a583d6, Carroll/Arkani-Hamed b225acbd, scheduler health eb0f9f90, morning status 05c289ef, deferred monitor bbbfacee, lit pipeline 2596f708)
+    Current status: UNTESTED
+
+*2026-11-13 14a: ASSUMPTION-2109..2114 (6). Queued literature: 2109. Queued [IN-HOUSE]: 2111. Not queued: 2110 (OPEN-283), 2112 (checked: CHALLENGED), 2113 (checked: SUPPORTED), 2114 (recurrences).*

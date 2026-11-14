@@ -52987,3 +52987,74 @@ DISPOSITION-1140:
 
 SYSTEMIC-RISK (2026-11-13, 15b): ASSUMPTION-2103 and -2104 share one vulnerability. Both carry a Fredrickson-lab finding from one level (individual folk attribution; married dyad) to a claim about traditions or moral philosophy without a bridging argument. Related: PRESUMPTION-1232 (analogy across traditions without translation, MONITOR-716).
 EVIDENCE-QUALITY NOTE (2026-11-13): all four searches are PRELIMINARY (4 web searches, titles only; 1 fetch read, 1 fetch failed). Wells et al. 2022, Pettigrew & Tropp 2006, Saguy et al. 2009, Stump 2010, Newman et al. 2015 and After Virtue are cited from background recall, not re-read. 15a/15b independence is procedural only (one orchestrator). QUEUE-SCANNER GAP persists: queue_scan.py v2 counts the bracket-prefixed header form as BARE backlog (142), and today's items were found by grep.
+
+## 2026-11-14 — 15a / 15b / 15c returns (cloud-lit-2026-11-14)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2109
+  Search direction: FOR (confirmatory)
+  Result: SUPPORTED
+  Strength: Moderate
+  Key source: Dawid 2013 String Theory and the Scientific Method; Dawid, Hartmann & Sprenger 2015 BJPS (recall); electroweak uptake after 't Hooft 1971 (titles seen: CERN Higgs10; arXiv:hep-ph/0401010)
+  Summary: A worked-out account exists (Dawid's non-empirical assessment with a formal NAA proof), and electroweak uptake after the 1971 renormalizability proof is the standard historical instance.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2109_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2109 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2109
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Ellis & Silk 2014 Nature 'Defend the integrity of physics' (title seen); 'The dangers of non-empirical confirmation' arXiv:1609.01966 (title seen); Pickering 1984 (recall)
+  Summary: The weak claim survives. The strong wording ('should count as new data') is contested and exceeds Dawid's own position; the electroweak case mixes pursuit with acceptance.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2109_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2109 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1244
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Key source: Dawid 2017 arXiv:1702.01133 (title seen); Arkani-Hamed 'The Inevitability of Physical Laws' IAS lecture (title seen)
+  Summary: Under Dawid's umbrella criterion (limited alternatives), both treat consistency constraints as evidence. Family resemblance, not identity of argument type.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1244_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1244 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1244
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Dawid 2013 / Dawid, Hartmann & Sprenger 2015 (NAA vs UEA vs MIA distinct; recall); pursuit-vs-acceptance literature (Laudan 1977; Whitt 1992; recall); arXiv:1705.09858 (title seen)
+  Summary: The hosting framework separates them: Carroll's case is consistency/viability (pursuit-raising); inevitability is uniqueness/rigidity (NAA-like). Shared family, not shared criterion.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1244_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1244 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1141:
+  Date: 2026-11-14
+  Item: ASSUMPTION-2109
+  Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: The weak reading (credence can rationally rise on a mathematical result, with no new data) is supported by a defended framework and a clear historical case. The strong reading ('should count as new data') is a live, contested methodological position, and the flagship case is confounded by pursuit vs acceptance.
+  Disposition: MONITOR (MONITOR-723 (Medium))
+  Reasoning: Support and challenge are comparable and aim at different strengths of the claim. INCORPORATE is premature because all sources are titles or recall, and the debate (Dawid vs Ellis/Silk, Rovelli) is unresolved. The item is a specialist's stated view, not a C2A2 design premise, so stakes are moderate.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for Dawid / non-empirical / inevitability / Carroll found no related premise. Not an INCORPORATE, so no premise added.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2109 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2109_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2109_against.md
+
+DISPOSITION-1142:
+  Date: 2026-11-14
+  Item: PRESUMPTION-1244
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The pairing holds only at the umbrella level (non-empirical assessment; limited alternatives). At the level the claim-to-test asks about, the literature distinguishes consistency/viability support from uniqueness/rigidity support. By the item's own test, the pairing is surface analogy, not structural homology.
+  Disposition: REVISE (REVISE-540)
+  Reasoning: Weaker support against a moderate challenge, on a presumption, leans REVISE. Urgency is Low, matching REVISE-539: the pairing appears in signal and synthesis material, not in pipeline logic, and the challenge rests on titles and recall.
+  Consistency check: no validated premise touches this pairing (grep as above).
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1244 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1244_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1244_against.md
+
+SYSTEMIC-RISK (2026-11-14, 15b): ASSUMPTION-2109 and PRESUMPTION-1244 share one vulnerability: evidence that raises a theory's pursuitworthiness is read as raising its credence. Same family as the 11-12/11-13 cross-level transfer pattern (PRESUMPTION-1240 / REVISE-539; ASSUMPTION-2103/-2104).
+EVIDENCE-QUALITY NOTE (2026-11-14): all four searches PRELIMINARY (5 web searches total, titles only, no fetches). Dawid 2013, Dawid/Hartmann/Sprenger 2015, Pickering 1984, Laudan 1977, Whitt 1992 and the SUSY-naturalness counter-case are background recall, not re-read. Attribution of arXiv:1609.01966 to Rovelli is from recall. 15a/15b independence is procedural only (one orchestrator; FOR files were written before AGAINST searches ran).
