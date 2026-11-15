@@ -3,10 +3,10 @@ day: 172
 title: Vengeance & Truthfulness (Contemporary)
 pairs_with: "[[Day-172 - Vengeance and Truthfulness]]"
 length_target_words: 1500
-length_actual_words: 1532
+length_actual_words: 1565
 length_tier: short
-length_ratio_to_target: 1.021
-length_note: "Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution. CORRECTED 2026-08-30 QC: the stored count of 1148 was stale by ~300 words and the declared 0.77 was never true after the 08-19 unbundling pass. A body recount reads 1452 before this pass and 1532 after — ratio 1.021, comfortably in band. The 'deliberately compact' framing above was written for the original draft and no longer describes the file; it is retained because the reason it gives is still the right one, but the number it was defending was wrong. This pass added ~80 words scoping McGilchrist PRS-01."
+length_ratio_to_target: 1.043
+length_note: "QC 2026-11-15: +33 words from the supersession-limb label (QC policy - supersession limb); new total 1565, ratio 1.043. Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution. CORRECTED 2026-08-30 QC: the stored count of 1148 was stale by ~300 words and the declared 0.77 was never true after the 08-19 unbundling pass. A body recount reads 1452 before this pass and 1532 after — ratio 1.021, comfortably in band. The 'deliberately compact' framing above was written for the original draft and no longer describes the file; it is retained because the reason it gives is still the right one, but the number it was defending was wrong. This pass added ~80 words scoping McGilchrist PRS-01."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; honest signaling; cooperation maintenance)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry and cultural impoverishment; the grasping-vs-relational reading of the corrector's disposition is this commentary's extension, not the record's scope)"
@@ -19,8 +19,8 @@ evidence_strength_summary: "Altruistic punishment and cooperation maintenance ar
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-11-03T06:17:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-14T20:21:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 172 — Vengeance & Truthfulness (Contemporary)
@@ -49,7 +49,7 @@ A cooperative system of agents requires two things that are easy to get wrong. F
 
 The contemporary-parallel response treats vengeance and truthfulness as the two guardians of a cooperative model among limited agents. Correction of defection is real and necessary, but it is licit only as bounded delegation ordered to restoration — reserved to legitimate authority, aimed at the defection rather than the person, and (theologically) with ultimate vengeance left to the whole/God who absorbs rather than escalates. Truthfulness is the honest self-disclosure that keeps mutual models calibrated; deception is not merely a private fault but a corruption of the shared world.
 
-What it shares with Aquinas: the location of both in justice; the right-intention condition on vengeance; the account of truthfulness as a debt of self-manifestation. What it reframes: vengeance's licitness is grounded in cooperation-maintenance dynamics (empirical game theory + active inference) and bounded by the delegation structure, rather than in a free-standing penal order; truthfulness is grounded in signal-integrity for mutual modeling. Evidence: altruistic-punishment and honest-signaling results are empirical; the active-inference framing is formal; the absorb-don't-retaliate and True-Self readings are theological.
+What it shares with Aquinas: the location of both in justice; the right-intention condition on vengeance; the account of truthfulness as a debt of self-manifestation. What it reframes: vengeance's licitness is grounded in cooperation-maintenance dynamics (empirical game theory + active inference) and bounded by the delegation structure, rather than in a free-standing penal order; truthfulness is grounded in signal-integrity for mutual modeling. Stated plainly: Aquinas's conditions on licit vengeance (legitimate authority, corrective end, right intention) survive intact; the grounding of its licitness in a free-standing penal order is superseded by the cooperation-maintenance grounding. Evidence: altruistic-punishment and honest-signaling results are empirical; the active-inference framing is formal; the absorb-don't-retaliate and True-Self readings are theological.
 
 ## Central-theme thread
 
