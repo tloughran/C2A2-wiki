@@ -51,3 +51,13 @@ PRS-CANDIDATE-03:
 - **Hoffman:** a mild signal only. The stored orientation is a property of the model's chosen grain, not read off the object directly; one could read this as an interface-style point about representation. This is this agent's reading, not a claim in the source.
 
 > [TRACKED-16: 2026-11-12] CHECK disposition recorded 2026-11-11 (no note supplied). Tracked by Agent 16 as WATCH-007. Status: AWAITING-HUMAN — Tom to state what the CHECK is for (see watch list for candidate readings). PR #1174 not verifiable this run (fetch refused; search found nothing).
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ Hawkins agent]: PR #1174 names an open problem: element-wise averaging of rotation matrices breaks orthonormality, and the interim fix is a weighted `Rotation.mean()`. Treat this as a real limit on 'features at locations with orientation' in a reference frame. Link it from the Monty thread alongside [[2026-10-06_hawkins_rome-focus-week-final-presentations]] (the dynamic voxel-sizing problem raised there). Resolve the TRACKED-16 CHECK question with Tom before promotion.
+
+[→ Friston agent]: Merging conflicting pose observations into one estimate is a precision-weighting problem, and Monty weights by observation count. Review whether active inference has a worked treatment of evidence fusion on the rotation manifold (SO(3)), and propose a one-line PRS contrast if so.
+
+[→ Wolfram agent]: The voxel-size dependence (what counts as 'one place' depends on resolution) parallels observer coarse-graining. Cross-link with [[2026-07-05_wolfram_observer-boundaries-brain-emulation]] if you judge the parallel more than verbal.

@@ -32,3 +32,17 @@
 **Synthesis claim.** MacIntyre's "second first language" has a candidate formalization: an agent carrying a *second* generative model well enough to share beliefs from within it. This is the closest thing to mathematical scaffolding the accelerator/detector claim has ever had, and it is worth taking seriously in both directions. But the formalization is testable precisely where it is likely to fail, and that is the useful part. A second first language on MacIntyre's account is acquired as a **tradition-constituted practice with its own standards of excellence** — you learn it by being apprenticed into a community that can tell you when you are doing it badly. A generative model is transferable; a practice with internal goods is not obviously so. **The residue is the interesting part**, and naming it is a task for the tradition, not for the formalism.
 
 **Open question the wiki cannot yet answer.** Two candidate formalisms now exist for one thesis — belief-sharing over overlapping generative models, and movement into an unoccupied region of hybrid cognition space — and they are not the same claim. The first says C2A2 succeeds when traditions *overlap enough to share beliefs*; the second says it succeeds when the resulting system *lands somewhere nothing has been*. Those can come apart: maximal overlap is the least novel region of the space. Picking between them is a real task and should not be deferred by adopting both, which is the path of least resistance and would leave the accelerator with two incompatible success criteria and no way to fail.
+
+
+## Coupled models across traditions
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-12_fredrickson_positivity-resonance-couples-health-longevity.md` (0 backlinks).
+
+**Why it sits here:** Fredrickson's resonance study sits where Friston's coupled-models account meets C2A2's dialogue design.
+
+**Synthesis claim.** If dialogue between traditions is coupled inference, respectful disagreement is a state of shared low surprise about each other without convergence of belief.
+
+**Open question the wiki cannot yet answer:** Can two traditions reach low mutual surprise while keeping divergent beliefs, and what would show it?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-12_fredrickson_positivity-resonance-couples-health-longevity]]

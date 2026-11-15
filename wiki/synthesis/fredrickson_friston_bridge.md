@@ -49,3 +49,31 @@
 **Open question the wiki cannot yet answer:** Can biological synchrony be used as a measurable proxy for shared generative models?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-10-29_fredrickson_listen-to-resonate]]
+
+
+## Embodied DCM and resonance
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-12_friston_embodied-dcm-brain-cardiac-connectivity.md` (0 backlinks).
+
+**Why it sits here:** Embodied DCM estimates brain–heart coupling from EEG/ECG; Fredrickson's resonance work posits physiological linkage between people.
+
+**Synthesis claim.** Positivity resonance is testable as coupling between two embodied generative models, which a dyadic embodied DCM could in principle estimate.
+
+**Open question the wiki cannot yet answer:** Has anyone inverted a two-person brain–heart model, and would resonance appear as higher joint model evidence?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-12_friston_embodied-dcm-brain-cardiac-connectivity]]
+
+
+## Resonance as low-surprise coupling
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-12_fredrickson_positivity-resonance-couples-health-longevity.md` (0 backlinks).
+
+**Why it sits here:** The same outcome study, read through active inference.
+
+**Synthesis claim.** Resonance is two generative models settling into a shared low-surprise regime, and the health payoff matches reduced allostatic load.
+
+**Open question the wiki cannot yet answer:** Does resonance predict reduced prediction-error markers in each partner, not just synchrony?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-12_fredrickson_positivity-resonance-couples-health-longevity]]

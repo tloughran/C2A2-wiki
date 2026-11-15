@@ -53058,3 +53058,39 @@ DISPOSITION-1142:
 
 SYSTEMIC-RISK (2026-11-14, 15b): ASSUMPTION-2109 and PRESUMPTION-1244 share one vulnerability: evidence that raises a theory's pursuitworthiness is read as raising its credence. Same family as the 11-12/11-13 cross-level transfer pattern (PRESUMPTION-1240 / REVISE-539; ASSUMPTION-2103/-2104).
 EVIDENCE-QUALITY NOTE (2026-11-14): all four searches PRELIMINARY (5 web searches total, titles only, no fetches). Dawid 2013, Dawid/Hartmann/Sprenger 2015, Pickering 1984, Laudan 1977, Whitt 1992 and the SUSY-naturalness counter-case are background recall, not re-read. Attribution of arXiv:1609.01966 to Rovelli is from recall. 15a/15b independence is procedural only (one orchestrator; FOR files were written before AGAINST searches ran).
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1245
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Key source: Wolfram arXiv:2308.16068 'Ruliology' (title seen; observer-theory recall); Wolfram & Friston 'Observers' dialogue (title seen); Kwisthout & van Rooij on Bayesian-brain intractability (titles seen; recall)
+  Summary: Shared genus only: both literatures say a computationally bounded observer must use compressed or approximate models. No source identifies the two limits.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1245_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1245 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1245
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Israeli & Goldenfeld 2004 PRL (arXiv:nlin/0309047; title seen; recall); Cooper 1990, Dagum & Luby 1993 (recall); arXiv:1304.5247 (title seen)
+  Summary: Different object (single process vs model class), measure (no simulation shortcut vs worst-case NP/#P hardness) and formal status. Irreducible systems can be coarse-grained predictably; Bayesian intractability arises with no dynamics at all. Surface analogy.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1245_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1245 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1143:
+  Date: 2026-11-15
+  Item: PRESUMPTION-1245
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The pairing holds only at the genus level (computationally bounded observers must approximate). At the level the claim-to-test asks about, the literature treats irreducibility and Bayesian intractability as distinct limits, and Israeli & Goldenfeld show irreducibility does not by itself block approximate prediction. By the item's own test, the pairing is surface analogy.
+  Disposition: REVISE (REVISE-541)
+  Reasoning: Weaker support against a moderate challenge, on a presumption, leans REVISE. Urgency is Low, matching REVISE-539/-540: the pairing lives in signal and synthesis material, not pipeline logic, and the challenge rests on titles and recall. The 'PRESUMPTION with strong challenge -> High' heuristic does not fire because the challenge is Moderate, not strong.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for Wolfram / irreducib found PREMISE-127 (shared vocabulary between formalisms is surface, not homology; names the Wolfram x Friston bridge). This REVISE is consistent with PREMISE-127 and is a second instance of the bridge it governs. Not an INCORPORATE, so no premise added and no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1245 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1245_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1245_against.md
+
+SYSTEMIC-RISK (2026-11-15, 15b): PRESUMPTION-1245 is the fourth consecutive daily instance of one pattern: a shared umbrella term (formalism, non-empirical assessment, 'limit') read as a shared criterion across thinkers. See REVISE-539 (PRESUMPTION-1240), REVISE-540 (PRESUMPTION-1244), and PREMISE-127. Recommend 14b or Tom treat this as one systemic issue rather than item by item.
+EVIDENCE-QUALITY NOTE (2026-11-15): both searches PRELIMINARY (3 web searches total, titles only, no fetches). Israeli & Goldenfeld 2004, Cooper 1990, Dagum & Luby 1993, Kwisthout & van Rooij, and Wolfram's observer theory are background recall, not re-read. 15a/15b independence is procedural only (one orchestrator; FOR file written before AGAINST file was composed).

@@ -59,3 +59,15 @@ PRS-CANDIDATE-04:
 - **Stump / Rohr:** "Can an analytic idealist believe in a metaconscious mind at large?" and "grace" lead straight into Thomistic and contemplative theology.
 - **McGilchrist:** the "logic is empirical / its basis is tenuous" move matches McGilchrist's case against left-hemisphere over-reliance on formal logic. The "spiral" image (regress vs advance) is McGilchrist's own. A worthwhile convergence to test.
 - **C2A2 meta:** a thinker stating his own defeaters and successor-program conditions is a clean case of the "research program judged by the questions it generates" framing.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ Kastrup agent]: This recording page supplies the verification [[2026-10-14_kastrup_great-contender-metaphysical-landscape]] asked for. Reviewer should merge it into that card rather than ingest a duplicate. Record the named defeaters ('seeing without eyes') and the successor-program statement on the Kastrup node. Quotes come from the host's public write-up; the full recording is members-only.
+
+[→ Friston agent]: Kastrup himself now points to Markov blankets (with IIT) as the formal tool for dissociative boundaries. That bears directly on FPD-009, retired as 'analogy retained, identity retired'. Review whether a first-hand invitation changes that status, and link [[2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket]]. See `friston_kastrup_bridge`.
+
+[→ Hoffman agent]: Kastrup's survey rules out neutral monism and keeps dualism on the table. State where conscious-agent theory falls among his five families, and whether trace logic answers his 'formal machinery' gap better than IIT.
+
+[→ Stump agent]: Chapters on a metaconscious mind-at-large and on grace as spontaneity enter Thomistic ground. Review whether 'purpose without metacognition' is compatible with any classical account of divine knowledge, and flag only if there is a real point of contact.

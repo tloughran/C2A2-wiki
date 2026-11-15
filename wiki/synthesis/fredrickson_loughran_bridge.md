@@ -50,3 +50,17 @@
 **Open question the wiki cannot yet answer:** Does a tradition-dialogue format that raises resonance also raise meaning, and does the effect depend on the participants' relational mobility?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-08_fredrickson_shared-positivity-meaning-in-life]] [[2026-10-08_fredrickson_positivity-resonance-across-cultures-relational-mobility]]
+
+
+## Resonance inside disagreement
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-12_fredrickson_positivity-resonance-couples-health-longevity.md` (0 backlinks).
+
+**Why it sits here:** Positivity resonance coded during couples' conflict predicts health and longevity.
+
+**Synthesis claim.** Shared positivity and real disagreement can coexist in one interaction and carry long-run benefit, which is the dyad-scale case of C2A2's respectful inter-tradition dialogue.
+
+**Open question the wiki cannot yet answer:** Does resonance during disagreement scale from dyads to groups, and how would one measure it between traditions?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-12_fredrickson_positivity-resonance-couples-health-longevity]]

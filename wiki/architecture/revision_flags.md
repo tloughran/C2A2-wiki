@@ -16370,3 +16370,12 @@ REVISE-540: [2026-11-14] Source item: PRESUMPTION-1244 (DISPOSITION-1142)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1244 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1244_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1244_against.md
+
+REVISE-541: [2026-11-15] Source item: PRESUMPTION-1245 (DISPOSITION-1143)
+  What is at risk: Cross-thinker signal lines and synthesis that treat Wolfram's computational irreducibility and the approximation in Friston's variational inference as one limit; any extension of the Wolfram x Friston bridge governed by PREMISE-127.
+  Recommended action (for Tom): (1) Label the pairing as family resemblance under 'computationally bounded observer', not a shared limit. (2) When citing either, name the limit: no-shortcut prediction of a single process (irreducibility) vs worst-case hardness of exact inference over a model class (Bayesian intractability). (3) Consider handling REVISE-539/-540/-541 together as one systemic umbrella-term issue.
+  Urgency: Low (presumption; moderate challenge from titles and recall; signal-level only).
+  Related: PREMISE-127 (Wolfram x Friston bridge); REVISE-539, REVISE-540 (same pattern).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1245 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1245_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1245_against.md

@@ -29512,3 +29512,100 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
 *2026-11-13 (local pass): 4 items queued, 2 [IN-HOUSE], 2 literature-lane (ASSUMPTION-2109, PRESUMPTION-1244). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-13T05:42:51Z by cloud-lit-2026-11-13; not held, append safe.*
 
 *2026-11-14 (cloud-lit-2026-11-14): 15a/15b/15c processed ASSUMPTION-2109, PRESUMPTION-1244 -> DISPOSITION-1141..1142 (MONITOR-723 Medium, REVISE-540 Low). In-house items and 15d backlog untouched.*
+
+[QUEUED] [SEARCHED-15a: 2026-11-15] [SEARCHED-15b: 2026-11-15] [DISPOSITIONED-15c: 2026-11-15] [PRESUMPTION] PRESUMPTION-1245
+  Statement: [inferred] Wolfram's computational irreducibility presumed to be the same limit that makes Friston's inference approximate.
+  Claim to test: Does the literature treat computational irreducibility (Wolfram 2002, NKS ch. 12; Israeli & Goldenfeld 2004 on coarse-graining) as the same kind of limit as the intractability of exact Bayesian inference (Cooper 1990; Dagum & Luby 1993; Friston's variational free energy as a tractable bound)? If distinct, classify the pairing as surface analogy.
+  Result (2026-11-15): 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1143 -> REVISE-541 (Low)
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2117
+  Statement: [stated] Wolfram's peer-review bottleneck applies to C2A2's own review pipeline.
+  Claim to test: In-house: from review/archive/*_decisions.md and inbox/proposals, compute median card age at decision and pending/needs_review counts since 09-01; check whether the trend rises.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2118
+  Statement: [stated] pages-live-check exit 2 means "GitHub unreachable", not that Pages is broken.
+  Claim to test: In-house: read the pages-live-check script (scripts/, Mac side) and confirm exit 2 is raised only on API/network failure, not on a failed fetch of the Pages site itself; list its exit codes for the last 7 runs.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+*2026-11-14 (local pass): 3 items queued, 2 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1245). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-14T05:42:44Z by cloud-lit-2026-11-14; not held, append safe.*
+
+*2026-11-15 (cloud-lit-2026-11-15): 15a/15b/15c processed PRESUMPTION-1245 -> DISPOSITION-1143 (REVISE-541 Low). In-house items and 15d backlog untouched.*
+
+
+## 2026-11-15 — 15d Periodic Monitor: weekly re-triggers (weekly cycle only; day 15, monthly not due)
+
+*15d re-trigger only; no evidence evaluated. Each entry confirmed overdue from its own first-check date; none carries a later 15c status note. Lane = 15d's reading where 15c gave no routing note; in-house limbs listed under Owed.*
+
+[PRESUMPTION] PRESUMPTION-1207: (see MONITOR-701 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): a read of Vaughan 1996 plus a source on logging rejected observations. In-house limb: count of sharp readings dropped since 09-01 later confirmed real.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-02). Due since 11-09.
+
+[PRESUMPTION] PRESUMPTION-1208: (see MONITOR-702 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): Kleppmann on fencing and the SRE chapter read in full. In-house limb: 10-26..11-02 comparison of copy reports vs lock log.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-03). Due since 11-10.
+
+[PRESUMPTION] PRESUMPTION-1210: (see MONITOR-703 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): Kleppmann read in full. In-house limb: 10-26..11-03 overlap comparison for lost/duplicated register entries.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-04). Due since 11-11.
+
+[PRESUMPTION] PRESUMPTION-1213: (see MONITOR-704 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): read of the LLM screening-consistency papers. In-house limb: 10-26..11-04 list of sources one copy skipped and another filed.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-05). Due since 11-12.
+
+[PRESUMPTION] PRESUMPTION-1218: (see MONITOR-705 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): ISA-18.2 suppression requirements plus a source on append-only logs with derived views. In-house limb: count of days where routine_health.md's last line overrode an earlier same-day line from another copy.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-06). Due since 11-13.
+
+[ASSUMPTION] ASSUMPTION-2061: (see MONITOR-706 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): a read of Hitchcock & Sober 2004 and MacIntyre 1977. In-house limb: whether C2A2 practice counts use-dependent fruitfulness as confirmation.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-08). Due 11-15.
+
+[PRESUMPTION] PRESUMPTION-1222: (see MONITOR-707 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): a read of Birt et al. 2016 and Morse 2015. In-house limb: whether certification rules make endorsement alone sufficient.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-08). Due 11-15.
+
+[PRESUMPTION] PRESUMPTION-1224: (see MONITOR-708 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): a read of Bruineberg et al. 2022 and List & Pettit 2011. In-house limb: whether design documents rely on the blanket alone for the group knower.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-08). Due 11-15.
+
+[PRESUMPTION] PRESUMPTION-1225: (see MONITOR-709 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-11-22
+  Owed (15c): a read of MacIntyre 1988. In-house limb: host-rotation comparison and design-document check of the host's role.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition (11-08). Due 11-15.
+
+[ASSUMPTION] ASSUMPTION-1766: (see MONITOR-687 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-15, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-15; Next 15d check: 2026-12-06 (monthly)
+  Owed (15c): observational, not literature: whether two runs apply REVISE-515/516 or PREMISE-226/227 differently (divergence -> REVISE). Terminating condition 2027-01-11 ('no harm observed', not validated).
+  Evidence trajectory: Baseline (first 15d cycle); no divergence report filed. Due since 11-11.
+
+Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no SEARCHED/DISPOSITIONED tag); MONITOR-696 (11-01); the 2026-10-25, 10-18 and 10-11 cohorts. Not duplicated; cycle counts held (precedent 09-20..11-08).

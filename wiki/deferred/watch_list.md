@@ -7702,3 +7702,25 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 **Open for Tom (unchanged):** WATCH-006 stale flag — pick a/b/c **before tomorrow's (11-15) Sewing run** or it will skip the card a fourth time; WATCH-004 Fredrickson one-sentence edit; WATCH-007 say what the Hawkins CHECK is for; WATCH-003 INTEGRITY FLAG ruling; WATCH-005 Wonderstruck transcript paste; split the ~900 KB watch list.
 
 *Run completed 2026-11-14. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-15
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; mtimes unchanged (latest is the Hawkins card, 11-12, from this agent's own tag write). `review/archive/` unchanged (latest `2026-11-12_decisions.md`, already processed 11-13), so no off-cadence trigger for WATCH-003/-007. Vault `.md` files newer than the last watch-list write (PROCESSED_LOG, 11-14 sync summaries, 11-14 metrics snapshot, 11-14/11-15 changelogs, lit-search files, assumptions/presumptions, revision_flags, master wiki, 2 new Wolfram `pending/` cards, Day-163..173 transcripts/synthesis, `review/2026-11-15_lit-pipeline_skipped-lock-unavailable.md`) grepped for `DEFERRED-HYPOTHESIS`, `WATCH-REQUEST`, `CONDITIONAL |`, tracked proposal IDs, WATCH-003..-007 and `xZcB-tmvJaU`: matches are carry-over or historical only (status lines, lit-search register entries citing the stale items, the 11-14 cowork summary's reminder to Tom). No ruling, deferral or watch request.
+  Items checked: 0 (no item due on cadence today).
+  Event sweep (not counted):
+    - WATCH-006, Sewing Agent event trigger: `architecture/sewing_agent_log.md` still unchanged since 2026-11-08 04:43 at this check (07:37 UTC); earlier Sewing runs wrote by ~04:43, so today's run has **not been observed**. `traditions/macintyre/prs_triplets.md` unchanged (10-16); no MacIntyre card / PROP-2026-10-13-001 in `pending/` (6 files). No a/b/c choice from Tom found. NOT met. Will re-check the log at the 11-21 on-cadence check.
+    - WATCH-004: Fredrickson card mtime still 10-08; PROP-2026-10-01-001 not in `pending/`. WATCH-005: no transcript in vault. WATCH-007: card mtime unchanged; no note.
+  Weekly stale report (Sunday): STALE FLAGS unchanged — WATCH-003 (31 checks), WATCH-004 (6), WATCH-006 (7); all Escalate to Tom. Approaching threshold: WATCH-005 (5; stale on 11-21 if unmoved).
+  Items resolved: 0 · Still watching: 5 (WATCH-003..-007) · Stale: 3 · New: 0
+  Next scheduled checks: WATCH-007 on 2026-11-19 (or any new decision file); WATCH-003/-004 on 2026-11-20; WATCH-005/-006 on 2026-11-21.
+
+**Open for Tom (unchanged):** WATCH-006 stale flag (pick a/b/c; today's Sewing run had not appeared in its log by 07:37 UTC); WATCH-004 Fredrickson one-sentence edit; WATCH-007 say what the Hawkins CHECK is for; WATCH-003 INTEGRITY FLAG ruling; WATCH-005 Wonderstruck transcript paste; split the ~920 KB watch list.
+
+*Run completed 2026-11-15. No notification sent: nothing resolved or newly stale. Note: task prompt names the path `.../Wiki`; the mounted folder is `.../wiki` (same folder on the case-insensitive Mac filesystem).*
+
+## AGENT 16 RUN SUMMARY — 2026-11-15 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; nothing in the vault (outside deferred/) is newer than the first firing's watch-list write (07:37 UTC). `architecture/sewing_agent_log.md` still last modified 2026-11-08, so today's Sewing run is still not observed (WATCH-006 event trigger NOT met). `pending/` unchanged. Items checked: 0 · Resolved: 0 · Watching: 5 · Stale: 3 (WATCH-003, -004, -006, unchanged) · New: 0
+  Next scheduled checks: unchanged (WATCH-007 11-19; WATCH-003/-004 11-20; WATCH-005/-006 11-21).
+
+*Duplicate firing (~07:39 UTC). No notification sent: nothing resolved or newly stale.*

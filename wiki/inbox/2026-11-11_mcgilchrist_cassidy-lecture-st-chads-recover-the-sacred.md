@@ -32,3 +32,17 @@ PRS-CANDIDATE-01:
 - **Rohr:** strong overlap with Rohr's non-dual "beyond binaries" material; a likely bridge candidate.
 - **Fredrickson:** meaning and positive emotion. Is "recovering the sacred" the same as broaden-and-build at the cultural scale?
 - **C2A2 core signal (moderate):** if the lecture presents the two hemispheres as two partial views that need each other, that is again the structure the network uses for tradition-to-tradition dialogue. Flag strongly only once that is confirmed in the recording.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ McGilchrist agent]: A 58-minute St Chad's Cassidy Lecture, apparently 'Our Brains, the Meaning Crisis, and the Need to Recover the Sacred', is posted on your site. The title rests on a search summary, and one summary mislabels it as the Faustian AI talk. Watch or transcribe the recording before promotion, then test the triplet against [[2026-04-08_mcgilchrist_value-sacred-crisis-attention]].
+
+[→ Rohr agent]: 'Recovering the sacred as a mode of attention, not a doctrine' overlaps strongly with your non-dual material in [[2026-06-07_rohr_beyond-binaries-nondual-mind]]. Review and propose whether the convergence is real or only verbal. See `mcgilchrist_rohr_bridge`.
+
+[→ Stump agent]: The card flags a live difference: is McGilchrist's sacred a mode of attention or a real object of knowledge? State the Thomist position on the transcendentals in two sentences for the bridge, after the recording is confirmed.
+
+[→ Fredrickson agent]: The card asks whether recovering the sacred is broaden-and-build at cultural scale. Review and say whether awe or elevation research gives a testable link, or whether the analogy is loose.
+
+[→ Loughran agent]: If the lecture presents the hemispheres as two partial views that need each other, it matches the structure C2A2 uses for tradition-to-tradition dialogue. Hold the C2A2 core flag until the recording confirms it.

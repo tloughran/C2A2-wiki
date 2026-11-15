@@ -25983,3 +25983,46 @@ MONITOR-723:
   Monitoring cadence: Weekly (default); first check due 2026-11-21
   PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2109 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2109_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2109_against.md
+
+## 2026-11-15 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-11-08 (7 days). Day 15, so the **monthly cycle does not fire** (next first Sunday: 2026-12-06). `review/lit_pipeline.lock` last line RELEASED 2026-11-15T05:41:54Z (cloud-lit-2026-11-15; not held). Pre-write guard: no 2026-11-15 15d tags in either register at start or immediately before write. Backups: `*.md.bak.20261115-pre-15d` (monitor_queue, for_lit_search, validated_premises). validated_premises.md not modified. 15d does not evaluate evidence.
+
+### Consumption of prior re-trigger cohorts
+- **11-08 cohort (MONITOR-697..700 literature; 656 empirical):** 0/5 consumed. Not re-filed; cycles held at 1; next_check -> 2026-11-22 (656 stays 12-06).
+- **696 (11-01), 10-25, 10-18, 10-11 cohorts:** still 0 consumed. The latest SEARCHED date on any 15d RE-TRIGGER line is 2026-10-17. Held, not duplicated; cohort next_check -> 2026-11-22.
+- queue_scan.py (pre-write): 0 searched-not-dispositioned; 142 bare literature-lane items (unchanged from 11-08).
+
+### Weekly cycle — 10 overdue items re-queued (section dated 2026-11-15 in for_lit_search.md)
+- **Literature [QUEUED] (9):** MONITOR-701 (PRESUMPTION-1207, due 11-09), -702 (PRESUMPTION-1208, 11-10), -703 (PRESUMPTION-1210, 11-11), -704 (PRESUMPTION-1213, 11-12), -705 (PRESUMPTION-1218, 11-13), -706 (ASSUMPTION-2061, 11-15), -707 (PRESUMPTION-1222, 11-15), -708 (PRESUMPTION-1224, 11-15), -709 (PRESUMPTION-1225, 11-15). Cycle 0 -> 1; next 2026-11-22. Each also has an in-house limb (noted in the block).
+- **Empirical [QUEUED-EMPIRICAL] (1):** MONITOR-687 (ASSUMPTION-1766, monthly, due 11-11; observational watch). Cycle 0 -> 1; next 2026-12-06.
+
+### Not yet due
+MONITOR-710..712 (11-16), -713..716 (11-17), -717..718 (11-18), -719..720 (11-19), -721..722 (11-20), -723 (11-21). Monthly cohort MONITOR-001..344, 548, 656 (12-06). Event-driven/bound -003, -041, -154, -544, -612 untouched.
+
+### MONITOR-688 (PRESUMPTION-991) — terminating condition passed
+Expired 2026-11-09. No 15c re-disposition, no loss-condition entry and no closure note found in monitor_queue or revision_flags since. Per the entry it is not re-filed; closure into REVISE-472 is owed by 15c/Tom. 15d leaves it in place (15d does not delete or re-disposition).
+
+### STALE-MONITOR-FLAG
+```
+STALE-MONITOR-FLAG:
+  Item: 15d re-trigger lane (process-level; covers MONITOR-696..700 and the 10-11/10-18/10-25 held cohorts)
+  Cycles completed: held at 1-3 per item; 10-11 non-literature cohort now held 5 weekly runs
+  Last disposition: MONITOR (various); no re-trigger consumed since 2026-10-17
+  Evidence trajectory: stable (no new searches, so no new evidence)
+  Recommendation: ESCALATE to Tom
+  Reasoning: Cycle counts cannot reach 4 while no consumer runs, so the per-item stale rule never fires. Either 15abc takes re-trigger blocks, or held cohorts drop to LOW-PRIORITY-MONITOR (monthly).
+```
+- **MONITOR-403:** 10-11 ESCALATE stands; not re-issued. No response.
+- **MONITOR-699:** 15c's REVISE trigger (no insider review within 4 weekly cycles) falls ~2026-11-29.
+
+### Trajectories
+- 701-709, 687: baseline (first 15d cycle). 697-700, 696, 656: unchanged, no new sources. 688: expired, see above.
+- Lanes: 15abc this week dispositioned only new intake (MONITOR-710..723, REVISE-540/541); empirical lane has no runner.
+- PREMISE-124/126 apply: re-queuing certifies "not yet expired", not "re-tested".
+
+**Run summary:** 10 re-queued (9 literature, 1 empirical); 5 from 11-08 + older cohorts held, not duplicated; 0 premise re-checks (monthly not due); 1 process-level stale flag (ESCALATE); 688 past its terminating condition, awaiting 15c/Tom. Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+**Duplicate firing note (second 2026-11-15 firing of c2a2-periodic-monitor-weekly, ~03:38–03:42 EST).** A second 15d instance parsed the registers on its own. It found no 11-15 tags at start. Its pre-write guard then found the commit above (08:41:01Z), so it **wrote no re-queue, date change or flag**, and its backup step never ran. The `*.bak.20261115-pre-15d` files above are therefore the committing instance's and are a valid rollback point (monitor_queue backup = the 11-14 05:42 state, 1773137 bytes).
+- The independent parse matched: the same 10 items (701-709 [QUEUED], 687 [QUEUED-EMPIRICAL]), cycle 0 -> 1, next 11-22. It held the same cohorts (697-700, 656, 696, and 10-25/10-18/10-11) with 0 re-trigger blocks consumed since 11-09. It reached the same 688 finding: expired 11-09, no loss-condition entry in any .md modified since 11-08, and the snapshot still live (`_meta.generated` 2026-11-14T06:03:32, total_runs 4851). It reached the same ESCALATE stale flag. Only difference: it set 687's next check to 12-13 (one month after 11-11). The committed 12-06 is kept (Rule 7: aligned with the monthly-run date). No reconciliation needed. validated_premises.md is byte-identical to its backup. queue_scan.py post-commit: 0 searched-not-dispositioned; 151 bare literature-lane items.
+- **For Tom:** fifth double firing (10-04, 10-25, 11-01, 11-08, 11-15). The size/tag guard right before the write worked again.

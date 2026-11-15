@@ -200,3 +200,17 @@ The Thought Economics interview restates bioelectric "cognitive glue" in Levin's
 **Open question the wiki cannot yet answer:** What experiment would show a protocol into another system's state, as opposed to a better inference?
 
 **Wikilinks (sewing, 2026-11-08):** [[2026-11-02_friston_thought-economics-brain-in-the-dark]]
+
+
+## Topoiesis and nested blankets
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv.md` (0 backlinks).
+
+**Why it sits here:** Levin's organizer-free embryo collectives cross a critical L/λ threshold; Friston's account of nested Markov blankets asks when a higher-level boundary forms.
+
+**Synthesis claim.** The L/λ threshold is a candidate empirical marker for when a nested Markov blanket forms around a collective.
+
+**Open question the wiki cannot yet answer:** Can the critical L/λ be derived from free-energy terms, or is the correspondence only analogical?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv]]

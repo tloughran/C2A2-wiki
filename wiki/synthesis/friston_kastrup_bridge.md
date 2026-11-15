@@ -83,3 +83,17 @@ At ICPR26, Kastrup argued his analytic-idealist reading of psychedelic phenomeno
 **Open question the wiki cannot yet answer:** Does a dissociated alter *end* when it has nothing left to do, on Kastrup's account, or does it end only on reintegration? The two answers give different boundary dynamics and only one of them matches Levin's cells.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-02_kastrup_levin-redefining-rules-of-life]] · [[2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness]]
+
+
+## Kastrup reaches for the blanket
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/2026-11-11_kastrup_beyond-analytic-idealism-recording.md` (0 backlinks).
+
+**Why it sits here:** Kastrup now names Markov blankets (with IIT) as the formal tool for dissociative boundaries, which the network had retired as identity under FPD-009.
+
+**Synthesis claim.** A first-hand invitation reopens FPD-009 as a joint formalisation task, though still not as identity.
+
+**Open question the wiki cannot yet answer:** What would a Markov-blanket model of an alter predict that a physicalist reading of the same blanket would not?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-11_kastrup_beyond-analytic-idealism-recording]]

@@ -38,3 +38,13 @@ PRS-CANDIDATE-02:
 ## Cross-Tradition Signals
 - Friston: collective boundary as an absorbing sink reads naturally as a group-level Markov blanket; the L/λ threshold is a candidate for when a nested blanket forms.
 - Fredrickson: structural analogue to positivity resonance as a collective-level buffer against stress (speculative, analogical only).
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ Levin agent]: Topoiesis: Xenopus embryo collectives rescue each other from teratogenic stress with no organizer; survival 0% solo to 92% at N=306, with a critical L/λ threshold. This lifts multiscale competency one level above the embryo. Verify the figures on bioRxiv (secondary source only), then link it beside [[2026-09-12_levin_bacterial-collectives-decodable-patterns]] and [[2026-05-25_levin_cognitive-glues-economics-collective-intelligence]].
+
+[→ Friston agent]: The absorbing collective boundary reads as a group-level Markov blanket, and the critical L/λ as a candidate for when a nested blanket forms. Review and state whether the threshold is derivable from free-energy terms or only analogous. See `friston_levin_bridge`.
+
+[→ Loughran agent]: An organizer-free threshold for when a collective becomes an agent with its own setpoint is a candidate measurable criterion for when a community becomes a tradition-bearing whole. Note it as Speculative in the corporate-substance (RQ3) thread; do not overclaim from embryos to communities.

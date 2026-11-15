@@ -27058,3 +27058,25 @@ PRESUMPTION-1244:
     Current status: UNTESTED
 
 *2026-11-13 14b: PRESUMPTION-1243..1244 (methodological 1, epistemic 1; risk Low-Medium 1, Medium 1). Checked against 14a 2109-2114 and the registry. Not re-surfaced (already registered): 'from the thinker himself' authorship filter (PRESUMPTION-1202); search-failure reported as a real zero (cf. ASSUMPTION at line ~20583 and PRESUMPTION around line 16771); repeated unactioned 'Needs you' lists (alarm-fatigue line, PRESUMPTION-240/493/825/832/866/979); duplicate registration (PRESUMPTION-503).*
+
+PRESUMPTION-1245:
+  Date surfaced: 2026-11-14
+  Statement: [inferred] The Wolfram agent's link presumes Wolfram's computational irreducibility and the intractability that makes Friston's inference approximate are the same limit. Irreducibility says a system's evolution has no shortcut: you must run it step by step. Exact Bayesian inference is intractable because marginalising over hidden states is combinatorially hard (NP-hard in general belief networks). The first is about predicting a process; the second about inverting a model. If they are distinct, "connects to" is a surface analogy, the same pattern registered yesterday for Carroll/Arkani-Hamed (PRESUMPTION-1244, REVISE-540).
+  Evidence it was operative: Wolfram agent dc7fb139: "connects to the Friston line that irreducibility is why approximate inference is needed", with no statement of which feature is shared; triplets written from chapter titles only
+  Why it was unstated: one word ("irreducibility") is used in both summaries, so the shared word reads as a shared concept
+  Type: epistemic
+  Related decisions: ASSUMPTION-2116; PRESUMPTION-1244
+  Testability: testable via literature (queued)
+  Risk if wrong: Medium: a word-level match logged as a structural cross-connection inflates the Wolfram–Friston pairing and connection counts.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1245
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-14 local pass (final assistant message per session via session_info: evening sync 2e240b64, Wolfram agent dc7fb139, wiki daily run 7d901a5b, scheduler health 055ce1f9, morning status 00ed6348, deferred monitor 91f37cb4, lit pipeline e6aaa947)
+    Current status: UNTESTED
+
+*2026-11-14 14b: PRESUMPTION-1245 (epistemic 1; risk Medium 1). Checked against 14a 2115-2119 and the registry. Not re-surfaced (already registered; new evidence today): duplicate firing makes the pending queue a union of copies (PRESUMPTION near line 26391; today two Wolfram cards, one source); carding from chapter titles (line ~24817, PRESUMPTION near 26349); a check that cannot run read as no news (search-failure-as-zero line; pages-live-check exit 2); 'fired'/'OK' read as did-the-work (PRESUMPTION-503).*

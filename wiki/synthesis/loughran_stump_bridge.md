@@ -31,3 +31,17 @@ It is also a live ISME example of the right kind: an analytic Thomist running a 
 **Open question the wiki cannot yet answer:** How many independent results does the accelerator have that no participating tradition produced? If the answer is few, the scoring rule is elegant and idle, and the project's first task under it is to find or commission such results rather than to apply it. Nobody has counted.
 
 **Wikilinks (sewing, 2026-09-20):** [[2026-09-17_stump_natural-law-metaphysics-creator-antireductionism]]
+
+
+## Stay and witness
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-12_stump_evil-that-now-dominates-mourning-without-despair.md` (0 backlinks).
+
+**Why it sits here:** Stump's mourning-without-despair reflection answers what a member owes a corrupted community.
+
+**Synthesis claim.** Against the Benedict Option ending of *After Virtue*, Stump's Thomist response is to remain and witness, with grief itself as a testimony to the good.
+
+**Open question the wiki cannot yet answer:** When is withdrawal, rather than witness, the faithful response, and what criterion would decide it?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-12_stump_evil-that-now-dominates-mourning-without-despair]]

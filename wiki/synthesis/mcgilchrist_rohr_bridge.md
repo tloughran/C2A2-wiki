@@ -150,3 +150,17 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 **Open question the wiki cannot yet answer:** Is there an observable difference in attention between a wound-owning and a winner-identified person?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_empire-and-christianity-weekly-summary]]
+
+
+## Sacred as a mode of attention
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred.md` (0 backlinks).
+
+**Why it sits here:** McGilchrist's reported Cassidy lecture treats the meaning crisis as a disorder of attention; Rohr's non-dual material treats the sacred as a way of seeing.
+
+**Synthesis claim.** Both locate the sacred in how one attends rather than in a doctrine adopted; that is the convergence to test against the recording.
+
+**Open question the wiki cannot yet answer:** Is the sacred, for either, only a mode of attention, or also something real that attention discloses?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred]]

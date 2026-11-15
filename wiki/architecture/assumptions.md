@@ -39969,3 +39969,90 @@ ASSUMPTION-2114:
     Current status: UNTESTED
 
 *2026-11-13 14a: ASSUMPTION-2109..2114 (6). Queued literature: 2109. Queued [IN-HOUSE]: 2111. Not queued: 2110 (OPEN-283), 2112 (checked: CHALLENGED), 2113 (checked: SUPPORTED), 2114 (recurrences).*
+
+ASSUMPTION-2115:
+  Date identified: 2026-11-14
+  Statement: [stated] Wolfram agent: "There were no proposals from today, so numbering started at 001." The scan was true when it ran, but a second Wolfram firing (03:04 and 03:05 per wiki daily run 7d901a5b) filed a card for the same source, and the primary wiki run renumbered it PROP-2026-11-14-002. Checked this run: inbox/proposals/pending holds two 2026-11-14_wolfram_future-sci-tech-qa-oct21-* cards (03:04 and 04:35). Numbering by "scan, then write" is not safe under duplicate firing.
+  Context: Wolfram agent dc7fb139; wiki daily run 7d901a5b
+  Type: architectural
+  Related decisions: OPEN-299; PRESUMPTION-503; PRESUMPTION near line 26391 (pending queue holds the union of duplicate copies)
+  Testability: checked in-house this run (not queued)
+  Status: CHALLENGED (in-house: two cards, one source)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2115
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-14 local pass (final assistant message per session via session_info: evening sync 2e240b64, Wolfram agent dc7fb139, wiki daily run 7d901a5b, scheduler health 055ce1f9, morning status 00ed6348, deferred monitor 91f37cb4, lit pipeline e6aaa947)
+    Current status: CHALLENGED (in-house)
+
+ASSUMPTION-2116:
+  Date identified: 2026-11-14
+  Statement: [stated] Wolfram agent cross-tradition signal: the irreducibility-and-trust question "connects to the Friston line that irreducibility is why approximate inference is needed", and AI and humans as "differently limited observers of the same mathematics" bear on the Hoffman/Arkani-Hamed/Wolfram "restriction" thread.
+  Context: Wolfram agent dc7fb139, PROP-2026-11-14-001 (triplets from chapter titles only, all Speculative)
+  Type: theoretical
+  Related decisions: PRESUMPTION-1245; PRESUMPTION-1244
+  Testability: covered by PRESUMPTION-1245 (queued there, not duplicated)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2116
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-14 local pass (final assistant message per session via session_info: evening sync 2e240b64, Wolfram agent dc7fb139, wiki daily run 7d901a5b, scheduler health 055ce1f9, morning status 00ed6348, deferred monitor 91f37cb4, lit pipeline e6aaa947)
+    Current status: UNTESTED
+
+ASSUMPTION-2117:
+  Date identified: 2026-11-14
+  Statement: [stated] Wolfram agent: Wolfram's peer-review bottleneck "applies to C2A2's own review pipeline."
+  Context: Wolfram agent dc7fb139. Same day: 7 cards pending, 5 in needs_review, 3 stale WATCH items escalated to Tom (deferred monitor 91f37cb4), WATCH-006 at check 7.
+  Type: architectural
+  Related decisions: OPEN-283; ASSUMPTION-2111
+  Testability: testable in-house (queued [IN-HOUSE]: card age at decision, pending/needs_review counts over time)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2117
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-14 local pass (final assistant message per session via session_info: evening sync 2e240b64, Wolfram agent dc7fb139, wiki daily run 7d901a5b, scheduler health 055ce1f9, morning status 00ed6348, deferred monitor 91f37cb4, lit pipeline e6aaa947)
+    Current status: UNTESTED
+
+ASSUMPTION-2118:
+  Date identified: 2026-11-14
+  Statement: [stated] Scheduler health: com.c2a2.pages-live-check last exit 2; "In that script, exit 2 means 'GitHub unreachable.' So today's check of the public site didn't run. It is not a finding that Pages is broken." Morning status adds that it also failed 11-08.
+  Context: Scheduler health 055ce1f9; morning status 00ed6348
+  Type: empirical
+  Related decisions: -
+  Testability: testable in-house (queued [IN-HOUSE]; scripts/ is not mounted in this session, so not checked here)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2118
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-14 local pass (final assistant message per session via session_info: evening sync 2e240b64, Wolfram agent dc7fb139, wiki daily run 7d901a5b, scheduler health 055ce1f9, morning status 00ed6348, deferred monitor 91f37cb4, lit pipeline e6aaa947)
+    Current status: UNTESTED
+
+ASSUMPTION-2119:
+  Date identified: 2026-11-14
+  Statement: [stated] Recurrences: no interactive Cowork session (evening sync: 15 most recent all scheduled; this run's list agrees). Scheduler health 44 OK / 2 WARN / 29 FAIL (27 DOUBLE-REGISTERED, openstory.ui not loaded, pages-live-check new); again "cloud triggers are firing (47/47 OK)" as the condition to disable local entries (ASSUMPTION-2100), while the cloud 14a/14b copy no-oped a sixth night (changelog/2026-11-14). Morning status: "Twenty-nine scheduled tasks are active, and all of them fired on time" on the same morning scheduler health reported 29 FAIL (PRESUMPTION-503). Local lit pipeline skipped at lock (Desktop Commander auto-declined; third day) and says "I don't know whether the cloud copy has been doing it"; review/lit_pipeline.lock shows cloud-lit-2026-11-14 RELEASED 05:42:44Z after DISPOSITION-1141..1142 (ASSUMPTION-2112). claude.ai sync failed (blank tab; third day). Wiki daily run second firing (fourth day), verification only; four old decision emails unread. Wolfram task prompt path lacks "Projects/"; YouTube fetch blocked; WTC keynote not carded (title only). WATCH-006 check 7, decision needed before Sewing Agent 11-15; WATCH-005 stale at 11-21 if unchanged; watch list ~900 KB. Network 1159 / 168 / 114; pending 7 (+2 Wolfram).
+  Context: All sessions read
+  Type: architectural
+  Related decisions: OPEN-288; OPEN-299; ASSUMPTION-2100; ASSUMPTION-2112; ASSUMPTION-2114
+  Testability: recurrence (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2119
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-14 local pass (final assistant message per session via session_info: evening sync 2e240b64, Wolfram agent dc7fb139, wiki daily run 7d901a5b, scheduler health 055ce1f9, morning status 00ed6348, deferred monitor 91f37cb4, lit pipeline e6aaa947)
+    Current status: UNTESTED
+
+*2026-11-14 14a: ASSUMPTION-2115..2119 (5). Queued [IN-HOUSE]: 2117, 2118. Not queued: 2115 (checked: CHALLENGED), 2116 (covered by PRESUMPTION-1245), 2119 (recurrences).*

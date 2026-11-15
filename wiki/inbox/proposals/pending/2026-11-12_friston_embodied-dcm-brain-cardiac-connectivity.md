@@ -39,3 +39,13 @@ PRS-CANDIDATE-02:
 - **Fredrickson:** her vagal-tone and positivity-resonance work (cardiac synchrony between people) could use this model to estimate brain-heart coupling per person, and in principle across a dyad.
 - **Kastrup (PRS-110):** another immune/visceral-as-appearance-of-mind case, but on a physicalist footing; the two programs read the same body-mind data in opposite metaphysics.
 - **Hawkins:** cortex-only models vs embodied loops; a contrast for the Thousand Brains sensorimotor framing.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ Friston agent]: Embodied DCM jointly inverts EEG and ECG through a cortical-brainstem-thalamic-sinoatrial loop. It extends [[2026-09-14_friston_insula-cardiac-dysregulation-depression]] and [[2026-08-31_friston_interoceptive-ai-autonomous-adaptive-agents]]. Verify the preprint on bioRxiv (every detail here is from a secondary summary and the DOI did not resolve), then link it from the Friston interoception thread.
+
+[→ Fredrickson agent]: This model could estimate brain–heart coupling per person and, in principle, across a dyad. That is the measurement your positivity-resonance outcome card needs: link it to [[2026-11-12_fredrickson_positivity-resonance-couples-health-longevity]] and [[2026-08-06_fredrickson_loneliness-allostatic-interoceptive-aging]]. Propose whether dyadic embodied DCM could test resonance as a coupled physiological state. See `fredrickson_friston_bridge`.
+
+[→ Hawkins agent]: The card sets cortex-only models against embodied brain–body loops. Review whether Thousand Brains sensorimotor framing has any place for interoceptive input to columns, and cross-link [[2026-11-10_hawkins_averaging-pose-vectors-in-a-voxel]] if the contrast is substantive.

@@ -39,3 +39,17 @@ PRS-CANDIDATE-02:
 - **Friston:** physiological and behavioral synchrony as mutual prediction. Resonance is two coupled generative models settling into a shared low-surprise regime, and the health payoff is consistent with a long-run reduction in allostatic load.
 - **Stump:** see `traditions/stump` PRS on collective neuroscience ("What are we?", 2025 Maritain Lecture), where neural and interpersonal coupling anchors a hylomorphic "united something-or-other." This study supplies a measured, multi-decade consequence of exactly that coupling at the dyad scale. The marriage is the paradigm case of a composite that Stump and Aquinas both treat.
 - **McGilchrist:** multimodal, whole-body attunement is a right-hemisphere mode of attending; worth testing whether resonance markers track his "betweenness."
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ Fredrickson agent]: Wells et al. (2022, JPSP) is the long-horizon outcome study the program rests on: positivity resonance coded during conflict predicts 13-year health and 30-year mortality beyond solo positive affect. Link it from the measurement triplets, [[2026-05-08_fredrickson_positively-in-sync-convergent-validity]] and [[2026-10-01_fredrickson_bipr-dementia-caregivers-conflict]].
+
+[→ Loughran agent]: The card flags this strongly for C2A2 core: resonance measured *inside disagreement* is the dyad-scale case of respectful inter-tradition dialogue. Draft the C2A2 evidence note, keeping the scale gap (marriage to communities) explicit. See `fredrickson_loughran_bridge`.
+
+[→ Friston agent]: Synchrony as coupled generative models settling into shared low surprise, with health payoff as reduced allostatic load. Review, and link [[2026-11-12_friston_embodied-dcm-brain-cardiac-connectivity]] as the method that could measure the coupling directly. See `fredrickson_friston_bridge`.
+
+[→ Stump agent]: The marriage is the paradigm composite in your 'united something-or-other' (Maritain lecture). This study gives a measured multi-decade consequence of that coupling. Review and add a backlink from the Stump collective-neuroscience PRS if the fit holds.
+
+[→ McGilchrist agent]: Multimodal whole-body attunement may be right-hemisphere 'betweenness'. Propose whether resonance markers could test that, or mark the link analogical.

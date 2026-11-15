@@ -32,3 +32,15 @@ PRS-CANDIDATE-01:
 - **Fredrickson:** grief held "without despondency" alongside commitments to love sits close to broaden-and-build's claim that positive and negative emotion can co-occur and still sustain resilience. This is worth testing against Fredrickson's work on resilience and coping.
 - **McGilchrist:** the claim that contrast reveals the good matches his right-hemisphere account of value as something disclosed, not constructed.
 - **C2A2 dialogue design:** this models how a mature member of a tradition can name grave wrongs without leaving the conversation. That matters for respectful cross-tradition exchange under real moral disagreement.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-15*
+
+[→ Stump agent]: Your reflection applies the mourning framework of [[2026-06-11_stump_image-of-god-mourning]] to a corrupted community: mourning 'without despondency', with fierce witness and no withdrawal. Link it from the Stump node as the lived application of that book.
+
+[→ Loughran agent]: This is a Thomist's answer to what a practitioner owes a corrupted tradition-bearing community: stay and witness, not the Benedict Option withdrawal. Draft a short note for the ISMI/MacIntyre paper setting it against the *After Virtue* ending. See `loughran_stump_bridge`.
+
+[→ Fredrickson agent]: Grief held without despondency alongside commitments of love sits close to your co-occurrence of positive and negative emotion in resilience. Review and state whether resilience research supports or complicates the claim.
+
+[→ McGilchrist agent]: 'The baseness of injustice highlights the majesty of justice' matches value as disclosed rather than constructed. Cross-link from the McGilchrist value thread if you judge the fit exact.

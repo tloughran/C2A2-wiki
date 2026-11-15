@@ -1910,3 +1910,64 @@ Before writing: each page asserted to have no prior sewing stamp or Agentic Call
 The full weekly run for 2026-11-08 finished about 7 minutes earlier (entry above; log mtime 09:36 UTC; 10 pages carry today's stamp). This firing did no census, wrote no CSV row, stamped no pages, and wrote no bridge notes, so the weekly cadence is not doubled. Third sewing-related fire today (bootstrap audit, full run, this one): the schedule is double- or triple-registered. Recommend checking the scheduled-task registry for duplicate `c2a2-sewing-agent-weekly` entries alongside the bootstrap-audit duplicate.
 
 *Logged by Sewing Agent on 2026-11-08.*
+
+---
+
+## Bootstrap audit: 2026-11-15 (scheduled, census only)
+
+Pages 6,036; orphan 5,026; sparse 822; connected 188 (+14); unresolved 384. CSV row appended. No pages stamped, no bridge notes or stubs. Report: sewing_agent_bootstrap_2026-11-15.md. Still recommend disabling the bootstrap-audit schedule.
+
+*Logged by Sewing Agent on 2026-11-15.*
+
+---
+
+## Run: 2026-11-15 (Sunday, scheduled, cloud session ~09:35 UTC)
+
+**Resolver:** same as recent runs (stem, case-insensitive, self-links excluded, node_modules skipped).
+
+### Connectivity snapshot
+
+Pre-run (file count): orphan 5,028 / sparse 834 / connected 176 / total 6,038. Post-run: 4,988 / 871 / 179. The larger-than-usual orphan drop (−40) comes from outbound wikilinks in the new calls and bridge notes reaching older orphaned cards. **No new CSV row written:** `connectivity_log.csv` already holds a `2026-11-15` row (5,026 / 822 / 188 / 6,036) from the bootstrap audit earlier today. (Its sparse/connected split differs from this resolver's; the two jobs count slightly differently.)
+
+### Pages processed (backlinks before to after)
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `inbox/proposals/pending/2026-11-15_wright_romans-11-all-israel-in-this-way-life-from-the-dead` | 0 | 1 | Wright, Stump, Loughran, Rohr |
+| `inbox/proposals/pending/2026-11-15_wright_ask-ntw-nov09-ai-antichrist-thiel-spiritual-gifts` | 0 | 1 | Wright, McGilchrist, Loughran |
+| `inbox/proposals/pending/2026-11-13_carroll_mindscape-ama-november-2026` | 0 | 1 | Carroll, Arkani-Hamed, Wolfram, Loughran |
+| `inbox/proposals/pending/2026-11-12_friston_embodied-dcm-brain-cardiac-connectivity` | 0 | 2 | Friston, Fredrickson, Hawkins |
+| `inbox/proposals/needs_review/2026-11-10_hawkins_averaging-pose-vectors-in-a-voxel` | 0 | 1 | Hawkins, Friston, Wolfram |
+| `inbox/2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv` | 0 | 1 | Levin, Friston, Loughran |
+| `inbox/2026-11-11_kastrup_beyond-analytic-idealism-recording` | 0 | 1 | Kastrup, Friston, Hoffman, Stump |
+| `inbox/2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred` | 0 | 1 | McGilchrist, Rohr, Stump, Fredrickson, Loughran |
+| `inbox/proposals/pending/2026-11-12_stump_evil-that-now-dominates-mourning-without-despair` | 0 | 1 | Stump, Loughran, Fredrickson, McGilchrist |
+| `inbox/proposals/pending/2026-11-12_fredrickson_positivity-resonance-couples-health-longevity` | 0 | 4 | Fredrickson, Loughran, Friston, Stump, McGilchrist |
+
+The three `inbox/2026-11-11_*` cards have `proposals/approved/` twins that rise with them (stem counting). Friston DCM and Fredrickson couples are cross-linked to each other, as are Friston DCM and Hawkins pose vectors.
+
+### Agentic calls injected: 38
+
+Loughran 7, Stump 5, Friston 5, McGilchrist 4, Fredrickson 4, Wright 2, Rohr 2, Wolfram 2, Hawkins 2, Carroll 1, Arkani-Hamed 1, Levin 1, Kastrup 1, Hoffman 1. All 14 thinkers addressed. None duplicated; no page had a prior Agentic Calls section.
+
+### Bridge notes written (11 sections appended to 10 existing files; none created)
+
+`stump_wright`, `mcgilchrist_wright`, `arkanihamed_carroll`, `fredrickson_friston` (2: DCM, couples), `friston_levin`, `friston_kastrup`, `mcgilchrist_rohr`, `loughran_stump`, `fredrickson_loughran`, `friston_loughran`. Each carries a `**Wikilinks (sewing, 2026-11-15):**` line.
+
+### Worth Tom's attention
+
+1. **Evidence caveats ride along in the calls:** Friston embodied DCM and Levin topoiesis rest on one secondary summary (theconsciousness.ai, 11-07) with unresolved DOIs; Wright AI/Thiel is publisher blurb only; Wright Romans 11 is a news report; McGilchrist Cassidy lecture title is from a search summary (and one summary confused it with the Faustian AI talk); Kastrup quotes are the host's write-up; Carroll AMA transcript read in sections only.
+2. **Kastrup recording card should merge** into `2026-10-14_kastrup_great-contender-metaphysical-landscape`, not ingest separately. It also reopens FPD-009 (Kastrup himself now points to Markov blankets).
+3. **Hawkins card has an open TRACKED-16 CHECK** awaiting your note on what the CHECK is for.
+4. **Possible duplicate:** `2026-11-14_wolfram_future-sci-tech-qa-oct21-crypto-bugs-ai-math` and `..._proofs-crypto-bugs` look like twins of one source; the latter already has an Agentic Calls section. Not processed; recommend dedupe.
+5. **Strongest C2A2-core item this week:** Fredrickson/Wells 2022, resonance measured inside conflict predicts health and longevity.
+6. **"Wright" ambiguity** persists; scored against vault `wright` (N.T. Wright).
+7. **Duplicate census job persists:** bootstrap audit wrote today's CSV row first. Still recommend disabling `c2a2-sewing-agent--c2a2-wiki-bootstrap-audit`.
+8. **Rohr:** no new source for the third week (per the Wright hunt notes); an unread Rohr-signed CAC note is flagged there.
+9. Rule 6 token budget exceeded again.
+
+### Verification (fail-loud)
+
+Before writing: each page asserted to have no Agentic Calls heading; every bridge file asserted present; every wikilink in new calls asserted to resolve to an existing stem. After writing: backlink map rebuilt (table above). Content only appended; nothing deleted; nothing committed.
+
+*Logged by Sewing Agent on 2026-11-15.*

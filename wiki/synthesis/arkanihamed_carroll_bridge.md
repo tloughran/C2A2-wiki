@@ -93,3 +93,17 @@ The sewing agent has asked twice for a paired Carroll × Arkani-Hamed epistemolo
 **Open question the wiki cannot yet answer:** If the LZ event is confirmed at about 1 TeV, which of Arkani-Hamed's naturalness-adjacent proposals predicted it, and which are hurt?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-09_carroll_mindscape-370-akerib-dark-matter-hint]]
+
+
+## Conceptual data
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-13_carroll_mindscape-ama-november-2026.md` (0 backlinks).
+
+**Why it sits here:** Carroll's Weinberg 1967 example of credence moving with no new data sits beside Arkani-Hamed's 'inevitability' as a guide to theory choice.
+
+**Synthesis claim.** Structural understanding moves rational credence. Inevitability is a candidate for the 'conceptual data' Carroll says he cannot formalise.
+
+**Open question the wiki cannot yet answer:** What formalism lets a Bayesian count a new proof, with no new observations, as evidence?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-13_carroll_mindscape-ama-november-2026]]

@@ -198,3 +198,17 @@ If the church is a real corporate substance whose members retain their distinct 
 **Open question the wiki cannot yet answer:** Is there a non-theological model of a stable attractor that preserves agency, and does it fit the wiki's PRS machinery?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-11-01_wright_ask-ntw-oct25-no-serpent-new-creation-assurance]]
+
+
+## One people through grafting
+*Sewing Agent, 2026-11-15*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-15_wright_romans-11-all-israel-in-this-way-life-from-the-dead.md` (0 backlinks).
+
+**Why it sits here:** Wright's reading of Romans 11 makes 'all Israel' one people of Judeans and Gentiles, with Stump's composite-unity question applied to it.
+
+**Synthesis claim.** The olive tree is a case of composite unity that survives loss and addition of members because it is constituted by relation to one root, not by fixed membership.
+
+**Open question the wiki cannot yet answer:** What makes a corporate subject the same subject through ingrafting, and does Stump's hylomorphic account apply to a people as well as to a person?
+
+**Wikilinks (sewing, 2026-11-15):** [[2026-11-15_wright_romans-11-all-israel-in-this-way-life-from-the-dead]]
