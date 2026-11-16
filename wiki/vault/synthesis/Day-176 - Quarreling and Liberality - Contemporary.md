@@ -3,8 +3,8 @@ day: 176
 title: Quarreling and Liberality (Contemporary)
 pairs_with: "[[Day-176 - Quarreling and Liberality]]"
 length_target_words: 1500
-length_actual_words: 1862
-length_ratio_to_target: 1.241
+length_actual_words: 1896
+length_ratio_to_target: 1.264
 length_tier: short
 length_note: "RECOUNTED 2026-09-10 (layout-aware, body only: top frontmatter and the Related-records footer excluded, regex [A-Za-z']+). The pre-edit body measured 1614, EXACTLY the stored figure — this file is clear of the systemic length_actual_words understatement, as is every file in the 2026-09-10 cohort. The +204 is citation apparatus installed this pass: the Stump anchor, which had been carried with no PRS id anywhere in the file, resolved to PRS-29 (Medium) with PRS-11 (High) supplying the second-personal category, plus the register-gap disclosure and a Bridges bullet. No claim was added, removed or reweighted; no prose trimmed or padded. 1818 = 1.212 of the 1500 short-tier target, outside +/-10pct and inside +/-25pct, and the overrun is verification apparatus rather than substance. Tier verified correct: paired transcript word_count 1444, short. RECOUNT 2026-09-17 (same boundary): 1818 pre-edit, exactly the stored figure, to 1862 after this pass; the +44 is the Wright declination re-dated at 66 entries (PRS-60 and PRS-61 hit gift in the ecclesial sense; declination holds). 1862 = 1.241 of the short target, inside +/-25pct; apparatus, not substance."
 mind_first_reframe: "Under mind/conscious-realist monism the question becomes one about the size of the self: quarreling and liberality both answer how far an agent's circle of care extends and whether its conduct widens that circle or starves it."
@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9) — no numbered Wright triplet covers this; anchor declined on a tested radius, see Bridges"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-11-03T08:18:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-14T22:18:14"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 176 — Quarreling and Liberality (Contemporary)
@@ -51,7 +51,7 @@ The leading move comes from **Levin's** program. In Tom's PRS-form record of Lev
 
 The contemporary-parallel response: liberality is the disposition by which an agent enlarges the effective boundary of its self to include others' good, so that releasing goods is the self operating at its proper scale; quarreling is the opposite local contraction, a stance that abrades the bonds the larger self depends on. This keeps Aquinas's core insight intact — that liberality is measured by interior affection toward wealth, not by quantity — and even sharpens it: the "right affection" just is the wider care-boundary, and the amount given is downstream of it.
 
-What it shares with Aquinas: the mean is internal; generosity is loved because it serves others; contention is a real fault against the common life. Where it reframes: the grounding shifts from a debt within the order of social justice to the *scale of agency* — how large a self the agent is willing to be. Evidence strength: the self-boundary account is formal-plus-empirical (Levin's diverse-intelligence program), the bond dynamics empirical (Fredrickson), the ontology of value formal (Carroll), and the giving-as-grace reading theological (Wright, Rohr).
+What it shares with Aquinas: the mean is internal; generosity is loved because it serves others; contention is a real fault against the common life. Where it reframes: the grounding shifts from a debt within the order of social justice to the *scale of agency* — how large a self the agent is willing to be. What is superseded is the order of social justice as liberality's *ground*; what survives intact is the internal mean, giving as liberality's chief act, and contention as a real fault against the common life. Evidence strength: the self-boundary account is formal-plus-empirical (Levin's diverse-intelligence program), the bond dynamics empirical (Fredrickson), the ontology of value formal (Carroll), and the giving-as-grace reading theological (Wright, Rohr).
 
 ## Central-theme thread
 

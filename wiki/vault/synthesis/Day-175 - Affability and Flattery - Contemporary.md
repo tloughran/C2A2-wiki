@@ -3,9 +3,9 @@ day: 175
 title: Affability & Flattery (Contemporary)
 pairs_with: "[[Day-175 - Affability and Flattery]]"
 length_target_words: 1500
-length_actual_words: 1475
+length_actual_words: 1509
 length_tier: short
-length_ratio_to_target: 0.983
+length_ratio_to_target: 1.006
 length_note: "2026-09-17 QC pass: the Wright declination, last re-tested 2026-09-02 at 59 entries, was re-tested at 66 (seven added 2026-09-10) and still holds; the re-test is recorded in the bullet. Counted layout-aware (top-frontmatter split, auto-linked Related-records footer excluded, regex letters-and-apostrophes): 1475/0.983, inside ±10%. No claim added, removed or reweighted."
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-01 micro-moments of warmth cultivated into upward spirals; PRS-02 positivity resonance as measurable vagal tone, oxytocin, neural phase-locking)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Positivity resonance as a bond-building mechanism is
 mind_first_reframe: "Affability names the empirically real micro-mechanism (positivity resonance) by which honest warmth builds the bonds a cooperative community runs on; flattery is its counterfeit — warmth decoupled from regard to manipulate another's self-model."
 central_theme_thread: "Loving unity is not only computed but lived among perspective-limited agents, and the texture of that life is warmth; affability is its small daily form, while flattery counterfeits the meeting and isolates the flatterer behind a performance."
 tags: [synthesis, day/175, theme/positivity-resonance, theme/honest-warmth, q/114, q/115]
-last_qc_at: "2026-11-03T08:18:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-14T22:18:14"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 175 — Affability & Flattery (Contemporary)
@@ -48,7 +48,7 @@ A community of limited agents is not held together only by justice in the strict
 
 The contemporary-parallel response: affability is the disposition to generate honest warmth — positivity resonance — in ordinary interaction, building the bonds a cooperative community depends on; flattery is the corruption of that warmth into a manipulative signal. This preserves Aquinas's account of affability as a real social debt and flattery as its excess. It reframes the pair by identifying affability's empirical substrate (positivity resonance) and locating flattery's wrong in honest-signaling terms — the corruption of the very signal that builds connection. Evidence: positivity resonance is empirical; the honest-signaling account of flattery is formal; sincere-love-in-community is theological.
 
-What it shares with Aquinas: affability as owed, fitting, real warmth; flattery as pleasing-beyond-truth for gain. What it reframes: the grounding shifts from a debt within the order of social justice to the bond-building dynamics of warmth among agents — which gives the virtue an empirical mechanism and the vice a precise diagnosis as warmth-signal corruption.
+What it shares with Aquinas: affability as owed, fitting, real warmth; flattery as pleasing-beyond-truth for gain. What it reframes: the grounding shifts from a debt within the order of social justice to the bond-building dynamics of warmth among agents — which gives the virtue an empirical mechanism and the vice a precise diagnosis as warmth-signal corruption. What is superseded, then, is the order of social justice as the *ground* of the debt; what survives intact is the debt itself (affability as owed, fitting warmth) and flattery as pleasing beyond truth.
 
 ## Central-theme thread
 

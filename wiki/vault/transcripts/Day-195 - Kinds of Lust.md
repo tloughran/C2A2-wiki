@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-195 - Kinds of Lust - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/195, pars/II, q/154]
-last_qc_at: "2026-10-26T08:26:09"
+last_qc_at: "2026-11-15T04:18:24"
 last_qc_outcome: "pass"
 ---
 

@@ -3,8 +3,8 @@ day: 231
 title: The Baptism of John (Contemporary)
 pairs_with: "[[Day-231 - The Baptism of John]]"
 length_target_words: 2200
-length_actual_words: 1401
-length_ratio_to_target: 0.637
+length_actual_words: 1442
+length_ratio_to_target: 0.655
 length_note: "RECOUNT 2026-09-18: 1401 / 0.637 after this pass (+52 words, all apparatus: register grades stated on the five Bridges bullets, which had carried kind words only). Counting boundary is the regex over letters and apostrophes applied to the body after the frontmatter block, with the auto-linked Related-records footer and bare horizontal-rule separator lines dropped. Still 0.934 against the short target; the 2026-09-11 tier-boundary escalation stands and is not re-raised. Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated. VERIFIER ANSWER, 2026-09-11: read fresh and CONFIRMED complete, not truncated — Frame/Problem/Resource/Solution/central-theme/Bridges/closer all present, survives-reframes-evidence all explicit, every id verified at the register. Layout-aware recount 1366 against the declared 1349 (+17, heading-convention scale), so the note is NOT self-certifying from an understated count. No repair made; no words added. BUT the ratio is 0.621, outside +-25%, which is a Step-4 escalation trigger reading 'tier may be wrong'. Tier tested and it is NOT wrong: the paired transcript is 2082 cleaned words, which is medium (2000-3500) by the letter of the policy. It sits 82 words — 4.1 percent — above the short/medium boundary, and crossing that boundary raises the target from 1500 to 2200, a 46.7 percent step. Measured against the short target this file reads 0.911, comfortably in band. The tier function is a step, and this file is a boundary case; the gate is firing on the step, not on a defect. ESCALATED to Tom in the QC log as a gate-design question, not as a fault in this file."
 length_tier: medium
 karpathy_wiki_sources:
@@ -16,8 +16,8 @@ evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updati
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-11-04T04:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T16:19:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 231 — Contemporary Parallel: The Forerunner and the Formation of Readiness
@@ -48,7 +48,7 @@ And beneath all three, CROSS-004 (the Stump/McGilchrist/Fredrickson convergence 
 
 The contemporary-parallel response. **(a) Shared with Aquinas:** preparation is real causation. The old observances and John's water did something — not by their own force but "through the efficacy of faith at all times" — and the new thing, when it came, did not abolish the preparation but presupposed it. Grace perfects a readied nature. **(b) Reframed:** where Aquinas distributes the work between the rite's institution and faith's efficacy, the monist reframe locates the work in the agent's model: a perspective limited by its priors cannot receive what exceeds them, so the economy of salvation includes — must include — a pedagogy of priors. Circumcision, the presentation, the desert baptism: a curriculum for perception. The forerunner is the office of curriculum. **(c) Evidence strength:** the active-inference mapping is formal-speculative; the historical reconstruction of John is empirically grounded scholarship; the claim that faith made the old rites effective is theological, carried within the tradition; the claim that reality itself is the kind of thing in which readiness-formation is ontologically basic (mind-first) is the paradigm's wager, not a finding.
 
-What this differs from in Aquinas: he asks *whether it was fitting*; the reframe asks *what readiness is* — and answers that fittingness-arguments are, under the hood, claims about what limited perspectives can compute their way toward receiving.
+What this differs from in Aquinas: he asks *whether it was fitting*; the reframe asks *what readiness is* — and answers that fittingness-arguments are, under the hood, claims about what limited perspectives can compute their way toward receiving. Placed plainly: nothing in Aquinas's answers to Q.37–38 is superseded. His conclusions survive intact; what is relocated is their grounding, and the fittingness arguments are kept and re-read in terms of the agent's model, not replaced by a different mechanism.
 
 ## The central-theme thread
 

@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-245 - Baptism by Blood - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/245, pars/3, q/66]
-last_qc_at: "2026-10-27T04:20:54"
+last_qc_at: "2026-11-15T20:18:17"
 last_qc_outcome: "pass"
 ---
 

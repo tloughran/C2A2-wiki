@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-230 - Christ's Nativity and Epiphany - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/230, pars/III, q/35 q/36]
-last_qc_at: "2026-11-04T04:17:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T16:19:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 230 — Christ's Nativity and Epiphany
@@ -233,9 +233,11 @@ Article 5, whether Christ's birth should have been manifested by means of the an
 
 [11:55] case of Simeon and Anna. And as an aside, there is some interesting speculation in this article about how the magi knew to keep their eyes peeled
 
-[12:02] for a star to announce the coming of Christ, but I will leave the listener to check out the text if they're interested in learning more about that. Article
+[12:02] for a star to announce the coming of Christ, but I will leave the listener to check out the text if they're interested in learning more about that.
 
-[12:10] six, whether Christ's birth was made known in a becoming order. According to the text, the shepherds received news of the birth of Christ on the very day of
+**Article 6 — Whether Christ's birth was made known in a becoming order**
+
+[12:10] Article six, whether Christ's birth was made known in a becoming order. According to the text, the shepherds received news of the birth of Christ on the very day of
 
 [12:19] that birth. Next in order was the appearance of the Magi. They came 13 days later, which is not in the text, but since the customary feast of the
 

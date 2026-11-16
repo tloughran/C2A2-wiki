@@ -3,9 +3,9 @@ day: 227
 title: The Annunciation (Contemporary)
 pairs_with: "[[Day-227 - The Annunciation]]"
 length_target_words: 1500
-length_actual_words: 1682
-length_ratio_to_target: 1.121
-length_note: "Pre-edit body recounted to 1622, EXACTLY the stored field. The 2026-09-10 QC pass added +60 words of apparatus only — register Confidence grades stated on the Friston, Fredrickson, Wright and Rohr PRS-01 bullets, with the speculative weight on the Fredrickson bullet relocated from the record (High) to the application. No claim or citation target altered. At 1.121 this sits outside ±10% and inside ±25%; informational, not a tier error."
+length_actual_words: 1685
+length_ratio_to_target: 1.123
+length_note: "Pre-edit body recounted to 1622, EXACTLY the stored field. The 2026-09-10 QC pass added +60 words of apparatus only — register Confidence grades stated on the Friston, Fredrickson, Wright and Rohr PRS-01 bullets, with the speculative weight on the Fredrickson bullet relocated from the record (High) to the application. No claim or citation target altered. At 1.121 this sits outside ±10% and inside ±25%; informational, not a tier error. UPDATED 2026-11-15 (reviewer): +3 tokens of Frame article anchors (Q.29 a.1, a.2; Q.30 a.1) taken from the paired transcript's article headers; no claim changed."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation, Confidence High; PRS-02 faithful improvisation, Confidence High) — Mary's fiat as a covenantal-representative act on the community's behalf"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Mary's free act of faith ('more blessed in receiving
 mind_first_reframe: "Mary's fiat is read as the limit case of an agent freely committing its generative model to a more-seeing authority under uncertainty (active inference), elicited by a resonant encounter (Fredrickson), and given representatively for the community."
 central_theme_thread: "The free yes of one limited perspective to the One who sees the whole, given 'on behalf of humankind' — a covenant-act opening the incorporation of the many; the individual complement to Day 226's tradition-level development."
 tags: [synthesis, day/227, theme/free-consent-on-behalf-of-the-community]
-last_qc_at: "2026-11-04T02:18:21"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T14:19:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 227 — Contemporary Parallel: The Free Fiat, on Behalf of the Many
 
 ## Frame
 
-Q.29 asks why Christ should be born of an *espoused* virgin, and whether Mary and Joseph were truly married. Aquinas affirms a true marriage in its "first perfection" — "a certain inseparable union of souls by which husband and wife are pledged by a bond of mutual affection" — even unconsummated, "because being comes before action." Q.30 takes up the *Annunciation*: why it was necessary to announce to Mary "that which was to be done in her." Aquinas's answer is the project's keystone for free agency. Though Mary "did indeed believe explicitly in the future incarnation," she "required instruction," and the announcement is made so that she "might make an act of faith, believing that which is unseen on the authority of God conveyed by the angel" — for, quoting Augustine, "Mary is more blessed in receiving the faith of Christ than in conceiving the flesh of Christ." She receives the message "in her role as mother of God and also... in a sense on behalf of humankind" — "receiving the God-man on our behalf." The angel's words elicit her free assent, and she answers: "Behold, I am the handmaid of the Lord; let it be to me according to thy word" (Luke 1:38). The contemporary version: *what is the free consent of a limited perspective to the One who sees the whole — and what does it mean that such a consent can be given representatively, for a whole community?*
+Q.29 asks why Christ should be born of an *espoused* virgin (a.1), and whether Mary and Joseph were truly married (a.2). Aquinas affirms a true marriage in its "first perfection" — "a certain inseparable union of souls by which husband and wife are pledged by a bond of mutual affection" — even unconsummated, "because being comes before action." Q.30 a.1 takes up the *Annunciation*: why it was necessary to announce to Mary "that which was to be done in her." Aquinas's answer is the project's keystone for free agency. Though Mary "did indeed believe explicitly in the future incarnation," she "required instruction," and the announcement is made so that she "might make an act of faith, believing that which is unseen on the authority of God conveyed by the angel" — for, quoting Augustine, "Mary is more blessed in receiving the faith of Christ than in conceiving the flesh of Christ." She receives the message "in her role as mother of God and also... in a sense on behalf of humankind" — "receiving the God-man on our behalf." The angel's words elicit her free assent, and she answers: "Behold, I am the handmaid of the Lord; let it be to me according to thy word" (Luke 1:38). The contemporary version: *what is the free consent of a limited perspective to the One who sees the whole — and what does it mean that such a consent can be given representatively, for a whole community?*
 
 ## Problem
 

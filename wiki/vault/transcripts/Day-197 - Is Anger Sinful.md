@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-197 - Is Anger Sinful - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/197, pars/II, q/158, q/159]
-last_qc_at: "2026-11-03T16:17:22"
+last_qc_at: "2026-11-15T06:19:17"
 last_qc_outcome: "pass"
 ---
 

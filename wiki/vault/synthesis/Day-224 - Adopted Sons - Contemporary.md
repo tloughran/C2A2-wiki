@@ -3,9 +3,9 @@ day: 224
 title: Adopted Sons (Contemporary)
 pairs_with: "[[Day-224 - Adopted Sons]]"
 length_target_words: 1500
-length_actual_words: 1701
-length_ratio_to_target: 1.134
-length_note: "Pre-edit body recounted to 1603, EXACTLY the stored field. The 2026-09-10 QC pass added +84 words of apparatus only — register Confidence grades stated on the Levin, Kastrup, Stump and Wright bullets, and the speculative weight relocated from those records onto the analogical transfers where it belongs. No claim, citation target or prose argument was altered. UPDATED 2026-09-17: pre-edit body recounted to 1687, exactly the stored field (boundary: everything below the frontmatter including the auto-linked related-records line, regex word tokens); the Rohr Universal-Christ anchor was repointed PRS-03 to PRS-21 in the Resource paragraph (+14 words of record name and gloss, same Medium grade). At 1.134 this sits outside ±10% and inside ±25%; informational per the flexible length policy, not a tier error."
+length_actual_words: 1705
+length_ratio_to_target: 1.137
+length_note: "Pre-edit body recounted to 1603, EXACTLY the stored field. The 2026-09-10 QC pass added +84 words of apparatus only — register Confidence grades stated on the Levin, Kastrup, Stump and Wright bullets, and the speculative weight relocated from those records onto the analogical transfers where it belongs. No claim, citation target or prose argument was altered. UPDATED 2026-09-17: pre-edit body recounted to 1687, exactly the stored field (boundary: everything below the frontmatter including the auto-linked related-records line, regex word tokens); the Rohr Universal-Christ anchor was repointed PRS-03 to PRS-21 in the Resource paragraph (+14 words of record name and gloss, same Medium grade). At 1.134 this sits outside ±10% and inside ±25%; informational per the flexible length policy, not a tier error. UPDATED 2026-11-15 (reviewer): +4 tokens of Frame article anchors (Q.23 a.1; Q.24 a.1-2, a.3, a.4) taken from the paired transcript's article headers; no claim changed."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control, Confidence High; PRS-03 morphological attractor formalism, Confidence High) — being drawn toward a form/telos not yet realized"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Grace divinizing the rational creature into an heir 
 mind_first_reframe: "Adoption is read as the limited perspective drawn toward a beatitude not yet possessed (morphogenetic attraction to an unrealized form, Levin) and sharing the whole's life without losing individuation (dissociated alter, Kastrup); Christ the exemplar-and-cause."
 central_theme_thread: "The limited contained-in-the-whole named as inheritance: elevated by grace to share the whole's own vision, drawn toward the goal-state held exemplarily by the one who sees the whole."
 tags: [synthesis, day/224, theme/adoption-as-divinization]
-last_qc_at: "2026-11-04T02:18:20"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T14:19:24"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 224 — Contemporary Parallel: Adoption as Divinization, the Exemplar of the Limited
 
 ## Frame
 
-Q.23 asks whether it is fitting that God should *adopt* sons, and what adoption is. Aquinas's working definition: "A man adopts someone as his son inasmuch as out of goodness he admits him as heir to his estate" — and grace does this supernaturally, so that "by God's gift we begin to share in a supernatural knowledge of God through faith, a supernatural love of God through charity," and as adopted heirs we are "due to be heirs if we persevere in grace." The inheritance is staggering: "heaven for us... will be knowing God and knowing his essence... insofar as the creature is able by God's grace" — the limited creature elevated to share, by participation, in the very beatitude that *is* God's own happiness. Why fitting? "God is infinitely good... and the good is self-diffusive," so the whole Trinity adopts. But a.4 marks the asymmetry: Christ is *not* adopted — he is the *natural* Son, because the person is the eternal Word ("adoption is of persons, not natures"). Q.24 then attributes *predestination* to Christ "in respect of his human nature," and makes him the *exemplar* of ours ("like Christ, our human nature is elevated by sanctifying grace... our beatitude consists in the vision of God's essence") and, "as to its term," the *cause*: "God so decreed our salvation that it should be achieved through Jesus Christ." The contemporary version: *how can a limited, finite perspective come to share in the whole's own vision — and what grounds the limited's destiny toward that sharing?*
+Q.23 a.1 asks whether it is fitting that God should *adopt* sons, and what adoption is. Aquinas's working definition: "A man adopts someone as his son inasmuch as out of goodness he admits him as heir to his estate" — and grace does this supernaturally, so that "by God's gift we begin to share in a supernatural knowledge of God through faith, a supernatural love of God through charity," and as adopted heirs we are "due to be heirs if we persevere in grace." The inheritance is staggering: "heaven for us... will be knowing God and knowing his essence... insofar as the creature is able by God's grace" — the limited creature elevated to share, by participation, in the very beatitude that *is* God's own happiness. Why fitting? "God is infinitely good... and the good is self-diffusive," so the whole Trinity adopts. But a.4 marks the asymmetry: Christ is *not* adopted — he is the *natural* Son, because the person is the eternal Word ("adoption is of persons, not natures"). Q.24 a.1-2 then attribute *predestination* to Christ "in respect of his human nature," and a.3 makes him the *exemplar* of ours ("like Christ, our human nature is elevated by sanctifying grace... our beatitude consists in the vision of God's essence") and a.4, "as to its term," the *cause*: "God so decreed our salvation that it should be achieved through Jesus Christ." The contemporary version: *how can a limited, finite perspective come to share in the whole's own vision — and what grounds the limited's destiny toward that sharing?*
 
 ## Problem
 

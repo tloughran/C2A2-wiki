@@ -3,8 +3,8 @@ day: 232
 title: Christ's Baptism (Contemporary)
 pairs_with: "[[Day-232 - Christ's Baptism]]"
 length_target_words: 2200
-length_actual_words: 1485
-length_ratio_to_target: 0.675
+length_actual_words: 1526
+length_ratio_to_target: 0.694
 length_note: "OUTSIDE the -25% floor (0.675), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's own cleaned count (2252 words = medium), so 'length out of bounds, tier may be wrong' would be false here. The file is a complete PRS synthesis — Frame, Problem, three named Resources, Solution with the shared/reframed/evidence split, central-theme thread, five bridges, closer — and is short because Q.39-40 is a fittingness question that resolves into one idea (exemplarity as coupling) rather than several; it is under-written, not truncated. Reviewer pass 2026-08-31 added ~86 words dissolving two evidence badges. Flagged to Tom as part of the 223-235 boilerplate-note band, where a single template sentence has been certifying a systematic 0.60-0.73 under-length. THIRD REPAIR (reviewer pass 2026-09-15): the Friston PRS-06 bridge bullet carried no record grade, and PRS-06 is this day's leading resource — the register marks it (Implicit) / Confidence Medium because it extends free-energy minimization from the individual organism to multi-agent systems, which is the register's own extension. Selling the day's load-bearing record as mature is the exact shape recorded in summa_friston_prs04_sold_as_mature. Extension-mark added; citation apparatus only, no argument added, removed or reweighted. Recount 1485 / 0.675 (counting rule re-verified this run against all six cohort files, delta 0 on each before editing)."
 length_tier: medium
 karpathy_wiki_sources:
@@ -17,8 +17,8 @@ evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learni
 mind_first_reframe: "The baptism of the sinless one is read as the fullest perspective entering the practice-space built for limited perspectives — because limited agents learn by coupling with an exemplar present in their own medium, not by receiving propositions from outside it."
 central_theme_thread: "The descent into the Jordan inverts Day 231's ascent: where John (the limited perspective) reached toward the fuller one, here the fullest perspective submits to the pedagogy of the limited — and the voice from heaven names what the coupling produces: adopted sons, perspectives grafted into the unity without being erased."
 tags: [synthesis, day/232, theme/exemplarity-as-coupling]
-last_qc_at: "2026-11-04T04:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T16:19:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 232 — Contemporary Parallel: The Exemplar in the Water
@@ -47,7 +47,7 @@ The inquiry-problem beneath both frames: **propositional transmission cannot, by
 
 **(a) Shared with Aquinas:** the baptism of the sinless one is solidarity, not need — he "did not despise the remedies given to the fallen race," and his submission sanctifies the practice for those who follow. Exemplarity is real causation, and the Trinity manifest at the Jordan shows that what baptism effects is relation to all three persons. **(b) Reframed:** where Aquinas grounds exemplarity in fittingness and the divine pedagogy, the monist reframe grounds it in what limited perspectives can actually do: they cannot leap to a goal-state they cannot represent, but they can couple with an agent who performs the goal-state in their shared medium. The incarnate life — water, table, poverty, law — is the goal-state translated into every register a limited human perspective occupies. The descent into the Jordan is then not condescension in the pejorative sense but interface-design: the fullest perspective rendering itself modelable. **(c) Evidence strength:** the coupling mechanism is formal-speculative (Friston) with one genuinely empirical anchor (Fredrickson's resonance research); the historical baptism of Jesus by John is among the most secure facts in historical-Jesus scholarship; the claim that this coupling *unites with God* is theological; the mind-first wager — that exemplar-coupling is basic to how reality re-forms perspectives, all the way down — is the paradigm's speculation.
 
-Difference from Aquinas made explicit: he asks whether each circumstance was *becoming*; the reframe asks what the circumstances *do* — and proposes that fittingness is effectiveness seen from inside the tradition: each detail is fitting precisely because it is what coupling with limited perspectives requires.
+Difference from Aquinas made explicit: he asks whether each circumstance was *becoming*; the reframe asks what the circumstances *do* — and proposes that fittingness is effectiveness seen from inside the tradition: each detail is fitting precisely because it is what coupling with limited perspectives requires. Placed plainly: nothing in Aquinas's answers to Q.39–40 is superseded. His conclusions survive intact; what is relocated is the grounding of exemplarity, and fittingness and the divine pedagogy are kept and re-read as coupling, not replaced by a different mechanism.
 
 ## The central-theme thread
 
