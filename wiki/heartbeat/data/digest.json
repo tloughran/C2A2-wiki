@@ -1,29 +1,69 @@
 {
   "seed": false,
-  "generated": "2026-11-15",
-  "generated_at": "2026-11-15T17:28:46Z",
+  "generated": "2026-11-16",
+  "generated_at": "2026-11-16T20:43:01Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 149,
-    "high_relevance": 0,
-    "primary_themes": "Capability Jump + Market Platform"
+    "items_checked": 225,
+    "high_relevance": 3,
+    "primary_themes": "Capability Jump + Governance Policy"
   },
   "signals": [
     {
-      "title": "Artificial Intelligence in higher education – gov report (Norwegian)",
-      "source": "Hacker News (AI)",
-      "url": "https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/",
-      "relevance": 1,
-      "tags": [],
-      "summary": "Article URL: https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/ Comments URL: https://news.ycombinator.com/item?id=50412439 Points: 1 # Comments: 4",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Sun, 08 Nov 2026 11:46:50 +0000",
-      "first_seen_at": "2026-11-15T17:28:44.328103+00:00",
-      "long_summary": "A Norwegian government report discusses the role of artificial intelligence in higher education. The document emphasizes the potential for AI to enhance educational practices and improve learning outcomes. It highlights the importance of integrating AI technologies in curriculum design and teaching methodologies to prepare students for a rapidly evolving job market. Central to the report is the call for educational institutions to prioritize AI literacy, ensuring that both students and educators are equipped to leverage these technologies effectively. This development is relevant as communities need to understand the implications of AI in reshaping education and workforce readiness.",
+      "title": "Agent-as-a-Judge",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.18067",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Artificial intelligence has progressed from task-specific systems toward general models spanning perception, generation, reasoning, and autonomous interaction, making reliable evaluation essential for comparison, deployment, and post-training feedback. At scale, modern evaluation pipelines increasingly rely on LLM-as-a-Judge to produce scores, preferences, and critiques; in its fixed-context setting, the judge relies on the supplied evaluand and evaluation materials.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.563055+00:00",
+      "long_summary": "Artificial intelligence has evolved from task-specific systems to more general models that incorporate perception, generation, reasoning, and autonomous interaction. As this evolution has occurred, the need for reliable evaluation has become essential for comparing, deploying, and providing feedback after training. Evaluation processes have increasingly turned to large language models (LLMs) to serve as evaluators, producing scores, preferences, and critiques based on the provided evaluand and evaluation materials. This reliance on LLMs indicates a shift towards more sophisticated evaluation methods within AI systems. Understanding these advancements and changes in evaluation is crucial for the community to engage critically with the implications of AI technology.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "In the Eye of the Beholder: Human Label Variation in Textual and Visual Entailment",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.17954",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Human Label Variation (HLV) is increasingly recognised as an informative signal that reflects meaningful differences in how people interpret the same input. While HLV has been studied extensively in Natural Language Inference (NLI), much less is known about HLV in Visual Entailment (VE; Xie et al., 2019), where the textual premise is replaced by an image, keeping the hypothesis and label space fixed.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.554460+00:00",
+      "long_summary": "Human Label Variation (HLV) is gaining attention as it showcases the differences in interpretation that people have regarding the same input. Although HLV has been thoroughly examined in Natural Language Inference (NLI), there remains a significant gap in understanding its implications within Visual Entailment (VE), where a textual premise is substituted with an image while maintaining a constant hypothesis and label set. This highlights the diverse ways in which individuals understand and evaluate visual content, presenting challenges and opportunities for advancing AI models that deal with visual reasoning. Recognizing the nuances of HLV can enhance the community's efforts to improve AI's interpretation of visual data, crucial in developing effective AI systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "WETW: Learning Pair-Specific Weighted Euclidean Distances for Efficient DTW Search",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.17412",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Dynamic Time Warping (DTW) is the standard distance for similarity search over time series that are misaligned in time, but its cost is quadratic in the series length and lower bounds often prune few candidates, so search over large collections of long series is slow. Learned approximations embed the series to make comparisons cheap, yet compare every pair with the same fixed rule, usually the Euclidean distance, although DTW aligns each pair differently.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.288806+00:00",
+      "long_summary": "Dynamic Time Warping (DTW) is commonly used for similarity searches in time series data, particularly when the series are misaligned in time. However, the computational cost of DTW is quadratic relative to the length of the series, and typical lower bounds can eliminate few candidates, resulting in slow searches for long series across large collections. To address this issue, learned approximations have been developed to embed time series, allowing for more efficient comparisons. Nonetheless, these methods typically apply a fixed comparison rule, usually relying on Euclidean distance, despite the unique alignments required by DTW for each pair of series. This highlights the need for more sophisticated approaches that can improve the efficiency of DTW searches in practical applications. Understanding advancements like these is essential for communities working with AI, as they directly influence the efficiency and effectiveness of data analyses in real-world scenarios.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
         "kind": "machine-generated"
       }
     },
@@ -36,151 +76,121 @@
       "summary": "Article URL: https://medium.com/@smoking2man/artificial-intelligence-and-organizational-transformation-the-formalization-of-knowledge-changes-6bffb92e2226 Comments URL: https://news.ycombinator.com/item?id=50405976 Points: 2 # Comments: 0",
       "implication": "Track for context; no immediate governance action required.",
       "published_at": "Sat, 07 Nov 2026 16:51:11 +0000",
-      "first_seen_at": "2026-11-15T17:28:44.333337+00:00",
-      "long_summary": "The article titled \"Artificial Intelligence and Organizational Transformation\" discusses how the formalization of knowledge through AI is influencing organizational change. It highlights the shift in how organizations approach knowledge management and decision-making processes as AI technologies are integrated. The focus is on the potential for AI to enhance efficiency and facilitate new ways of thinking in the workplace. As organizations adapt to these changes, understanding the implications of AI on their structures and culture becomes essential. This discussion is crucial for a community keeping up with AI, as it underscores the transformative impact of AI on organizational dynamics and highlights the importance of adapting to these changes effectively.",
+      "first_seen_at": "2026-11-16T20:42:59.571556+00:00",
+      "long_summary": "The article titled \"Artificial Intelligence and Organizational Transformation\" discusses how the formalization of knowledge through AI is influencing organizational change. Though specific details are not provided in the source, the implication is that AI technologies are reshaping how organizations structure and manage information, potentially leading to significant transformations. As organizations adopt AI to better formalize and process knowledge, they may experience shifts in workflow, decision-making processes, and overall efficiency. Understanding these changes is important for community members as they navigate the evolving landscape of AI and its impact on their organizations and professional practices.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
+        "generated": "2026-11-16",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "CodeRabbit scales agentic software development and ships 20x more",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "title": "Artificial Intelligence in higher education – gov report (Norwegian)",
+      "source": "Hacker News (AI)",
+      "url": "https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Article URL: https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/ Comments URL: https://news.ycombinator.com/item?id=50412439 Points: 1 # Comments: 4",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Sun, 08 Nov 2026 11:46:50 +0000",
+      "first_seen_at": "2026-11-16T20:42:59.563960+00:00",
+      "long_summary": "A Norwegian government report discusses the integration of artificial intelligence in higher education, highlighting its potential impact on teaching, learning, and administration. The report addresses various applications of AI, focusing on enhancing educational experiences and streamlining administrative processes. It emphasizes the importance of adapting to new technology to improve educational outcomes and foster innovation. Furthermore, it underscores the need for institutions to consider ethical implications and ensure that AI tools are used responsibly within educational contexts. This discussion is pertinent for communities aiming to stay informed about the evolving landscape of AI in education and its implications for teaching and learning practices.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "VEPO: Mitigating Multilingual Hallucinations in LVLMs via Visual Evidence-guided Preference Optimization",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.18096",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Large vision-language models (LVLMs) achieve strong multimodal performance, yet they remain prone to object hallucination---generating answers that are linguistically fluent but visually ungrounded. This issue is especially severe in low-resource languages, where weaker cross-modal alignment causes models to rely more on language priors than on image evidence.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.565314+00:00",
+      "long_summary": "Large vision-language models (LVLMs) excel in multimodal tasks but often experience object hallucination, producing answers that appear fluent yet are not supported by visual evidence. This problem is particularly pronounced in low-resource languages, where the models struggle with cross-modal alignment, leading them to depend more on language data than on the accompanying images. Addressing this issue is crucial for enhancing the reliability and accuracy of LVLMs, especially in diverse linguistic contexts, and ensures that communities can trust AI-generated content across languages.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Toward Universal Translatability: On the Statistical Ontology of Generative AI",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.17963",
+      "relevance": 1,
+      "tags": [],
+      "summary": "This paper argues that the problem of translation functions both as a point of origin and as a normative horizon for contemporary generative AI. In current discourse around ''world models,'' their attainment is framed as the achievement of internal consistency, cross-modal alignment, and physical grounding.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.556639+00:00",
+      "long_summary": "This paper discusses the role of translation within generative AI, suggesting that it serves both as an origin point and a guiding standard for the technology. Within the context of \"world models,\" the achievement of internal consistency, cross-modal alignment, and physical grounding are highlighted as key components to strive for. The exploration of translation in this way allows for a deeper understanding of how generative AI can be developed and evaluated. Understanding these foundational concepts is vital for a community keeping up with AI, as it sheds light on how alignment and consistency might impact future developments in the field.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Can You Trust Your Finance Agent? Drift, Diagnosis and Auditable Intervention on One Shipped Financial Research Agent",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.17939",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Can you trust a finance agent you did not build? We take the reference agent shipped with the Vals Finance Agent Benchmark v2, leave it untuned, and ask four questions a leaderboard score does not answer.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.552328+00:00",
+      "long_summary": "The article explores the question of trust in finance agents that users did not create themselves. It specifically examines the reference agent that comes with the Vals Finance Agent Benchmark v2, assessing its performance without any adjustments or tuning. The authors raise four key questions regarding the agent that a leaderboard score alone is insufficient to address. Understanding the trustworthiness and performance of such agents is crucial for their adoption in the field of finance. For the community keeping up with AI, this highlights the importance of evaluating AI tools beyond surface-level metrics to ensure their reliability and effectiveness in practical applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.17808",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Long-horizon LLM agents can coordinate tools and applications to complete complex, multi-step tasks. As their interaction histories grow, effective context management becomes essential for reliable and efficient execution.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.538992+00:00",
+      "long_summary": "Long-horizon LLM agents can manage tools and applications to tackle intricate, multi-step tasks. As these agents accumulate extensive interaction histories, effective context management is crucial for ensuring their reliable and efficient performance. This highlights the importance of continual learning and adaptation in AI systems as they interact over time. Understanding how to maintain relevant context not only enhances the capability of LLM agents but also plays a significant role in the governance and policy surrounding the use of AI technologies. This matters for our community as it emphasizes the evolving nature of AI capabilities and the need for ongoing education in effective AI deployment.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-16",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "RAG-FGO: Dynamic Optimization of Query-Rewriting Agents for Generative RAG",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.17788",
       "relevance": 1,
       "tags": [
         "capability_jump"
       ],
-      "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
+      "summary": "In retrieval-augmented generation (RAG), query rewriting serves as a core interface that aligns user intent with external knowledge bases, and its effectiveness directly determines overall system performance. However, generative retrieval faces three critical challenges in real-world deployment: noisy retrieval feedback, the difficulty of jointly optimizing discrete prompt templates and continuous decoding-control parameters, and the limited generalization of static rewriting strategies under semantically complex scenarios.",
       "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Mon, 09 Nov 2026 08:00:00 GMT",
-      "first_seen_at": "2026-11-15T17:28:34.086298+00:00",
-      "long_summary": "CodeRabbit leverages OpenAI models to oversee and trust AI-generated code, achieving a significant increase in software output. This platform enables engineering teams to produce 20 times more software without necessitating additional personnel. Such advancements in using AI for software development reflect a notable enhancement in productivity and efficiency within tech environments. For a community focused on AI education, understanding tools like CodeRabbit exemplifies how AI can transform traditional workflows and the potential benefits of integrating AI into various sectors.",
+      "published_at": "Mon, 16 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-16T20:42:53.536785+00:00",
+      "long_summary": "The abstract discusses the concept of retrieval-augmented generation (RAG) and emphasizes the importance of query rewriting as it connects user intent with external knowledge bases, impacting the system's performance. The paper identifies three major challenges in real-world applications of generative retrieval: noisy retrieval feedback, the complexities involved in optimizing both discrete prompt templates and continuous decoding-control parameters together, and the limited adaptability of static rewriting strategies in complex semantic situations. This is relevant for communities engaged in AI as it highlights the intricacies and ongoing challenges of optimizing AI systems for better user interaction and knowledge retrieval, underscoring the importance of innovation in query rewriting techniques.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Closing the AI guidance gap in education",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-      "relevance": 1,
-      "tags": [
-        "market_platform"
-      ],
-      "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
-      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding.",
-      "published_at": "Tue, 10 Nov 2026 09:00:00 GMT",
-      "first_seen_at": "2026-11-15T17:28:34.071682+00:00",
-      "long_summary": "New research from ThinkYoung and insights from OpenAI’s EMEA education partnerships highlight the importance of supporting teachers in the realm of AI literacy and promoting independent learning among students. These findings underscore the need to close the existing guidance gap in education to effectively integrate AI technologies into teaching practices. This development is particularly relevant for educators and institutions seeking to enhance their approaches to AI, as it addresses the challenges of equipping both teachers and students with the necessary skills and knowledge in a rapidly evolving tech landscape. Keeping abreast of these insights matters for a community focused on AI, as it fosters a better understanding of how to implement AI education effectively.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Introducing Businesses in ChatGPT",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/introducing-businesses-chatgpt",
-      "relevance": 1,
-      "tags": [],
-      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Tue, 10 Nov 2026 10:00:00 GMT",
-      "first_seen_at": "2026-11-15T17:28:34.069713+00:00",
-      "long_summary": "Businesses can now manage their information directly in ChatGPT, allowing them to see insights into their online presence and engagement. This feature enables businesses to convert user interest into actionable outcomes. By leveraging these tools, businesses can enhance their visibility and interaction with potential customers. This matters for a community keeping up with AI as it highlights the increasing integration of AI in business operations and consumer engagement strategies.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mzvrjcx6zc2c",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Here's a thing that folks engaged in paranormal relationships seem to often forget: The other person has no idea who you are, what you stand for, nor how your sense of humor works. >>",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "09 Nov 2026 20:33 +0000",
-      "first_seen_at": "2026-11-15T17:28:45.650610+00:00",
-      "long_summary": "Individuals involved in paranormal relationships often overlook a crucial aspect: the other person lacks knowledge about their identity, beliefs, and sense of humor. This disconnect can lead to misunderstandings and assumptions that may not align with the reality of the other person's perspective. Recognizing that the other individual is a complete stranger in terms of personal context can help in navigating these relationships more effectively. Understanding this dynamic is important for fostering clearer communication and connection between individuals, whether in casual encounters or deeper relationships. For a community engaged in AI, acknowledging these nuances in human interaction can enhance the way we design and implement AI systems that interact with people, emphasizing the need for robust understanding in communication.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3mzv4uynkckce",
-      "relevance": 0,
-      "tags": [],
-      "summary": "@mjcrockett.bsky.social is focused on Cognitive Science in particular here, but their remarks apply very broadly to all scholarship. Required watching for anyone doing science!",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "09 Nov 2026 14:23 +0000",
-      "first_seen_at": "2026-11-15T17:28:45.648802+00:00",
-      "long_summary": "@mjcrockett.bsky.social discusses the importance of cognitive science and its implications for scholarship as a whole. Their insights are deemed essential viewing for anyone engaged in scientific research. This highlights the interconnectedness of disciplines and the relevance of cognitive science beyond its traditional boundaries. Understanding these relationships can enrich a community's approach to various fields of study, emphasizing the value of interdisciplinary perspectives in AI and research endeavors.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3n24miuqjqkle",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Our University established an Office of the Provost in Having an Affair with Jensen Huang, who then convened a advisory committee on Having an Affair with Jensen Huang, and distributed seed grants for creative ways of teaching through Having an Affair with Jensen Huang. [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "12 Nov 2026 13:52 +0000",
-      "first_seen_at": "2026-11-15T17:28:45.646687+00:00",
-      "long_summary": "Our University has set up an Office of the Provost focused on innovative educational approaches, led by Jensen Huang. This office has created an advisory committee and is providing seed grants to support creative teaching methods. The emphasis appears to be on enhancing educational practices via initiatives associated with Jensen Huang. This development highlights a commitment to fostering innovation in education, which is significant for a community engaged in understanding and adapting to advancements in AI.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3n22xbl27r22m",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Mystery AI Hype Theater 3000 ep 88: Sports Are About Bodies, Not Bots https://www.buzzsprout.com/2126417/episodes/20099406-sports-are-about-bodies-not-bots-2026-11-02 @alexhanna.bsky.social & I were joined by @shireenahmed.bsky.social to cheer on the people in sport (athletes, fans, coaches, journalists) and jeer those who would try to automate any of that.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "11 Nov 2026 21:59 +0000",
-      "first_seen_at": "2026-11-15T17:28:45.644984+00:00",
-      "long_summary": "In the latest episode of \"Mystery AI Hype Theater 3000,\" titled \"Sports Are About Bodies, Not Bots,\" hosts Alex Hanna and Shireen Ahmed emphasize the importance of human presence in sports. They celebrate the roles of athletes, fans, coaches, and journalists while criticizing efforts to automate these essential aspects of the sporting experience. The discussion highlights a shared sentiment regarding the value of human interaction and the cultural significance of physical participation in sports. This focus on preserving the human element in sports amid rising automation trends raises pertinent questions about the future of athletics and community engagement. Understanding such discussions is crucial for our community to navigate the implications of AI in various fields, particularly where human connection is foundational.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Untitled",
-      "source": "Emily M. Bender (Bluesky)",
-      "url": "https://bsky.app/profile/emilymbender.bsky.social/post/3n24nwelyl2le",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Anyone who thinks it's just a stochastic parrot hasn't tried the latest ways to Have an Affair with Jensen Huang [contains quote post or other embedded content]",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "12 Nov 2026 14:17 +0000",
-      "first_seen_at": "2026-11-15T17:28:45.643288+00:00",
-      "long_summary": "The source text suggests that dismissing certain AI advancements as merely \"stochastic parrots\" overlooks the significant developments and capabilities being explored, particularly in relation to the work of individuals like Jensen Huang. The mention of \"Have an Affair with Jensen Huang\" implies there are engaging and innovative interactions occurring within the AI field that challenge previous assumptions about AI's nature. This highlights a dynamic exploration of AI's potential beyond surface-level interpretations. Understanding these nuances is vital for the community to keep pace with the evolving landscape of AI technology and its applications.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-15",
+        "generated": "2026-11-16",
         "kind": "machine-generated"
       }
     }
