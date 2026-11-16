@@ -40056,3 +40056,158 @@ ASSUMPTION-2119:
     Current status: UNTESTED
 
 *2026-11-14 14a: ASSUMPTION-2115..2119 (5). Queued [IN-HOUSE]: 2117, 2118. Not queued: 2115 (checked: CHALLENGED), 2116 (covered by PRESUMPTION-1245), 2119 (recurrences).*
+
+ASSUMPTION-2120:
+  Date identified: 2026-11-15
+  Statement: [stated] Wright agent: PROP-2026-11-15-003 (Romans 11) "bears directly on the Summa definition of salvation as inclusion in God's covenant people"; flagged to the master agent as a paradigm-bridge candidate; "pairs with Stump's question of what makes a people one" and "records a real disagreement with Rohr: unity that is already given to everything, versus a covenant people you are brought into."
+  Context: Wright+Rohr agent 31763d5f; card in inbox/proposals/pending (checked: 3 Wright cards dated 11-15, 10 pending total)
+  Type: theoretical
+  Related decisions: PRESUMPTION-1246; REVISE-539/540/541 (umbrella-term pattern)
+  Testability: testable via literature (covered by PRESUMPTION-1246; not queued separately)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2120
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2121:
+  Date identified: 2026-11-15
+  Statement: [stated] Wright agent: "The source is a reporter's account with direct quotes, not a transcript, so the card says that." The assumption is that disclosing the source grade on the card is sufficient handling for a secondhand source carrying a paradigm-bridge flag.
+  Context: Wright+Rohr agent 31763d5f, PROP-2026-11-15-003
+  Type: epistemic
+  Related decisions: PRESUMPTION-1246
+  Testability: framework commitment (disclosure practice; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2121
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2122:
+  Date identified: 2026-11-15
+  Statement: [stated] Wright+Rohr agent on Rohr: "I didn't write any proposals without reading the actual texts, because the quality filter couldn't be checked." Contrast: 11-14 Wolfram agent carded triplets from chapter titles only (ASSUMPTION-2116). Two specialists applied opposite thresholds on consecutive days.
+  Context: Wright+Rohr agent 31763d5f
+  Type: methodological
+  Related decisions: PRESUMPTION-1247; ASSUMPTION-2116
+  Testability: framework commitment (specialist quality rule; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2122
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2123:
+  Date identified: 2026-11-15
+  Statement: [stated] Duplicate-firing skips: sewing weekly "I skipped this run on purpose, because the full sewing run for today had already finished"; janitor "A second run would have repeated the fixes and could have thrown off the week-over-week comparison"; wiki daily run "waited about a minute, saw no further writes, and only checked its work." Each assumes seeing a prior run's output is enough to judge the prior run complete.
+  Context: sewing b8e6b486; janitor a4448f30; wiki daily run a869c319
+  Type: architectural
+  Related decisions: OPEN-299; PRESUMPTION-503
+  Testability: recurrence (not queued; see PRESUMPTION-503 and the duplicate-firing entries)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2123
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2124:
+  Date identified: 2026-11-15
+  Statement: [stated] Scheduler health: "this local copy has no list_triggers, while the cloud copy appears to fill in routine_health.md on the other days." Also: the general advice (scheduler, sewing, janitor, lit) is to disable the local copies of all 27 double-registered tasks. For c2a2-self-awareness-daily the cloud copy has no-oped seven nights (11-10..11-16) while the local copy ran.
+  Context: scheduler health c9588d7c; this task's 11-15/11-16 cloud changelogs
+  Type: architectural
+  Related decisions: OPEN-299
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2124
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2125:
+  Date identified: 2026-11-15
+  Statement: [stated] 15d monitor: "The rule only flags an item after 4 cycles, and no item can get there while nothing picks up its re-queue"; "No 15d re-queue has been searched since 10-17." Escalated to Tom as a lane-level stale flag.
+  Context: 15d periodic monitor e827cadf
+  Type: methodological
+  Related decisions: MONITOR-403; MONITOR-688; MONITOR-697..709
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2125
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2126:
+  Date identified: 2026-11-15
+  Statement: [stated] Lit pipeline: lock not acquired because the Desktop Commander shell "was declined automatically because no one was there to approve it"; fix proposed: "allow Desktop Commander to start a shell for this scheduled task, so the lock step can run unattended." Sewing weekly reports the same auto-decline. Assumes per-task pre-approval is available and would persist across firings.
+  Context: lit pipeline 3e276e73; sewing b8e6b486
+  Type: empirical
+  Related decisions: lit pipeline lock entries in for_lit_search.md
+  Testability: testable empirically (Tom action; not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2126
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2127:
+  Date identified: 2026-11-15
+  Statement: [stated] Evening sync: "Three nights running, a shared word between two thinkers was read as a shared concept"; proposes making the umbrella-term rule (REVISE-539/540/541) a standing decision.
+  Context: evening sync bf4309c8; revision_flags.md REVISE-541 (line ~16374)
+  Type: epistemic
+  Related decisions: REVISE-539..541; PRESUMPTION-1244; PRESUMPTION-1245; PRESUMPTION-1246
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2127
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+ASSUMPTION-2128:
+  Date identified: 2026-11-15
+  Statement: [stated] Janitor: wiki/vault/refs/ lacks 7 Summa files "because sync_vault.sh only copies transcripts/ and synthesis/." Dispatch alert not sent (no tool); the report is the only record.
+  Context: janitor weekly a4448f30
+  Type: architectural
+  Related decisions: —
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2128
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+*2026-11-15 14a (local pass): ASSUMPTION-2120–2128 (9). Queued [IN-HOUSE]: 2124, 2125, 2127, 2128. Not queued: 2120 (covered by PRESUMPTION-1246), 2121/2122 (framework), 2123 (recurrence), 2126 (Tom action).*

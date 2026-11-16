@@ -3,7 +3,7 @@ SEARCH-FOR-PRESUMPTION-1227:
   Original item: PRESUMPTION-1227
   Original statement: A 'master science' of dialectical engagement presumed not itself a tradition.
   Claim tested (literature lane): see queue entry for PRESUMPTION-1227.
-  Search scope: PRELIMINARY. Web searches run for this item, 0 page fetches. Source entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read. 
+  Search scope: PRELIMINARY. Web searches run for this item, 0 page fetches. Source entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read.
   PROVENANCE:
     Origin: 14b
     Chain: 14b -> 15a

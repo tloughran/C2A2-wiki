@@ -2,7 +2,7 @@ SEARCH-FOR-ASSUMPTION-2079:
   Date searched: 2026-11-10
   Original item: ASSUMPTION-2079
   Original statement: Levin pattern-memory ~ active-inference prior; mind blindness ~ reading a rival tradition.
-  Search scope: PRELIMINARY. 1 combined web search per item group, 0 page fetches. Entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read. 
+  Search scope: PRELIMINARY. 1 combined web search per item group, 0 page fetches. Entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read.
   PROVENANCE:
     Origin: 14a
     Chain: 14a -> 15a

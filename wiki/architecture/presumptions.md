@@ -27080,3 +27080,65 @@ PRESUMPTION-1245:
     Current status: UNTESTED
 
 *2026-11-14 14b: PRESUMPTION-1245 (epistemic 1; risk Medium 1). Checked against 14a 2115-2119 and the registry. Not re-surfaced (already registered; new evidence today): duplicate firing makes the pending queue a union of copies (PRESUMPTION near line 26391; today two Wolfram cards, one source); carding from chapter titles (line ~24817, PRESUMPTION near 26349); a check that cannot run read as no news (search-failure-as-zero line; pages-live-check exit 2); 'fired'/'OK' read as did-the-work (PRESUMPTION-503).*
+
+PRESUMPTION-1246:
+  Date surfaced: 2026-11-15
+  Statement: [inferred] The Wright card's paradigm-bridge flag presumes that Stump's question "what makes a people one" and Paul's covenant membership in Romans 11 are the same question, and that a reporter's account is an adequate basis for the highest connection tier. Stump's work on unity is, as far as I know, framed through Thomistic union and love between persons; Wright's Romans reading is about who belongs to Israel and how. Shared words: "people", "one", "unity". The Rohr contrast ("unity already given to everything") uses "unity" in a third sense. Is the bridge structural or lexical?
+  Evidence it was operative: Wright+Rohr 31763d5f: "bears directly on the Summa definition", "flagged it to the master agent as a paradigm-bridge candidate", "pairs with Stump's question"; source disclosed as a reporter's account (ASSUMPTION-2121)
+  Why it was unstated: the umbrella-term rule is still a REVISE, not a standing decision, so the specialist had nothing to check against; the shared vocabulary reads as a shared problem
+  Type: epistemic
+  Related decisions: ASSUMPTION-2120; ASSUMPTION-2121; ASSUMPTION-2127; PRESUMPTION-1244; PRESUMPTION-1245
+  Testability: testable via literature (queued)
+  Risk if wrong: Medium: a secondhand, word-level pairing flagged at the top connection tier would inflate paradigm-shift-candidate counts, a fourth instance of the pattern REVISE-539..541 address.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1246
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+PRESUMPTION-1247:
+  Date surfaced: 2026-11-15
+  Statement: [inferred] The pipeline presumes one quality filter applies across specialists. In practice the threshold is set inside each run: Rohr's run refused to card from search summaries (ASSUMPTION-2122); Wolfram's 11-14 run carded from chapter titles (ASSUMPTION-2116). Neither card records which threshold it met.
+  Evidence it was operative: Wright+Rohr 31763d5f vs Wolfram dc7fb139 (11-14); review page lists both kinds without a source-grade field
+  Why it was unstated: each specialist states its own rule as if it were the system's rule; the difference only shows across days
+  Type: methodological
+  Related decisions: ASSUMPTION-2116; ASSUMPTION-2122; carding-from-chapter-titles entries (PRESUMPTION near line 26349)
+  Testability: testable in-house (queued [IN-HOUSE])
+  Risk if wrong: Medium: cards from different specialists carry different evidentiary weight with no field saying so; approval and connection counts treat them alike.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1247
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+PRESUMPTION-1248:
+  Date surfaced: 2026-11-15
+  Statement: [inferred] Marking four old decision emails as read presumes Gmail's unread flag is only a work-queue marker for the daily run, not a signal Tom or another run relies on. An earlier run deliberately left old April UNREAD threads alone "to avoid false no-ops" (presumptions.md line ~5846). Today's run reversed that practice on the task file's wording, without recording why the earlier practice existed.
+  Evidence it was operative: wiki daily run a869c319: "I marked four old decision emails as read in Gmail (dated 2026-04-08, 04-27 twice, and 07-23)... earlier runs had left them unread"
+  Why it was unstated: the task file says to mark them; the earlier rationale lived only in an old changelog
+  Type: normative
+  Related decisions: PRESUMPTION near line 5846 (skipped old UNREAD April threads)
+  Testability: testable empirically (ask Tom; not queued)
+  Risk if wrong: Low: four threads drop out of a search Tom may use; decisions were already captured in provenance/decision_emails.json.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1248
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-15 local pass (final assistant message per session via session_info: evening sync bf4309c8, Wright+Rohr 31763d5f, sewing weekly b8e6b486, wiki daily run a869c319, janitor weekly a4448f30, 15d periodic monitor e827cadf, scheduler health c9588d7c, lit pipeline 3e276e73)
+    Current status: UNTESTED
+
+*2026-11-15 14b: PRESUMPTION-1246 (epistemic, Medium), 1247 (methodological, Medium), 1248 (normative, Low). Checked against 14a 2120–2128 and the registry. Not re-surfaced (already registered; new evidence today): unattended runs auto-declining Desktop Commander (16 registry hits); duplicate copies treated as interchangeable (PRESUMPTION-503; today four tasks recommend disabling local copies while this task's cloud copy no-ops); skip-on-prior-output as completeness check (duplicate-firing entries).*

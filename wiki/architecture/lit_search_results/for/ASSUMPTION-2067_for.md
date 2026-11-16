@@ -3,7 +3,7 @@ SEARCH-FOR-ASSUMPTION-2067:
   Original item: ASSUMPTION-2067
   Original statement: Grace as part-whole: organ-building bioelectric pattern "outside the cells"; nesting controllable as technology.
   Claim tested (literature lane): see queue entry for ASSUMPTION-2067.
-  Search scope: PRELIMINARY. Web searches run for this item, 0 page fetches. Source entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read. 
+  Search scope: PRELIMINARY. Web searches run for this item, 0 page fetches. Source entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read.
   PROVENANCE:
     Origin: 14a
     Chain: 14a -> 15a

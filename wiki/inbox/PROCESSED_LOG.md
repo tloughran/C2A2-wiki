@@ -2581,3 +2581,9 @@ No new decision email; no newly approved cards (ingest_ledger: OPEN=1 standing, 
 
 ### 2026-11-15 second orchestrator firing (04:38 local, verification only)
 Started as the primary cloud run finished (review page 04:36, review_log/level2 04:37, master and this log 04:37:40); waited ~1 min, no further writes. Changed none of the primary's outputs. Verified: Phase 1 ingest_ledger OPEN=1 (standing PROP-2026-08-14-033), 0 to ingest; Phase 2 pending = 10 (Wright 11-15 x3 present), no duplicate searches run; Phase 3 review/2026-11-15_review.html exists; Phase 4 draft reported by primary (not independently checked); 5.5 review_log.html address-clean (0 matches); 5.6 level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 4. DIVERGENCE: this firing marked the four old unread [C2A2-review-decision] threads (2026-04-08, 04-27 x2, 07-23) as READ in Gmail, per the Phase 0 spec; prior runs had left them unread. All four were already archived and stored in provenance/decision_emails.json, so no decision was lost; they will no longer match the unread search. No git run.
+
+### 2026-11-16 orchestrator run
+No new decision email; no newly approved cards (ingest_ledger OPEN=1 standing, PROP-2026-08-14-033); 0 files processed, 0 triplets. Phase 2: 10 traditions searched, 0 proposals; Levin specialist filed 1. Pending = 11.
+
+### 2026-11-16 second orchestrator firing (04:38 local, verification only)
+Started as the primary run finished (review page/review_log/level2 04:36, master and this log 04:37); waited ~1 min, no further writes. Changed none of the primary outputs; no searches, no second Gmail draft. Verified: Gmail [C2A2-review-decision] (unread or newer_than:2d) = 0; pending = 11; 2026-11-16_review.html present; review_log.html address-clean. Phase 6: no git.

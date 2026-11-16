@@ -2,7 +2,7 @@ SEARCH-FOR-ASSUMPTION-2075:
   Date searched: 2026-11-10
   Original item: ASSUMPTION-2075
   Original statement: Never-cited ('dead') triplets are a vault-quality signal.
-  Search scope: PRELIMINARY. 1 combined web search per item group, 0 page fetches. Entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read. 
+  Search scope: PRELIMINARY. 1 combined web search per item group, 0 page fetches. Entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read.
   PROVENANCE:
     Origin: 14a
     Chain: 14a -> 15a

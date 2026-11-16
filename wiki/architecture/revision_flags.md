@@ -16379,3 +16379,12 @@ REVISE-541: [2026-11-15] Source item: PRESUMPTION-1245 (DISPOSITION-1143)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1245 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1245_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1245_against.md
+
+REVISE-542: [2026-11-16] Source item: PRESUMPTION-1246 (DISPOSITION-1144)
+  What is at risk: Any paradigm-bridge flag or synthesis line equating Wright's Romans 11 covenant-membership question with Stump's account of union; signal lines built on a reporter's account rather than either author's text.
+  Recommended action (for Tom): (1) Do not raise a paradigm-bridge flag; record the pair as adjacent questions. (2) If kept, name the one structural link (oneness of the people via union with Christ: incorporation in Wright, mutual indwelling in Stump) and source it to PFG ch. 11 and Atonement (2018) directly. (3) Consider handling REVISE-539..542 together as one systemic umbrella-term issue.
+  Urgency: Low (presumption; moderate challenge from titles and recall; signal-level only).
+  Related: PREMISE-127; REVISE-539, REVISE-540, REVISE-541 (same pattern); ASSUMPTION-2127 (in-house).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1246 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1246_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1246_against.md

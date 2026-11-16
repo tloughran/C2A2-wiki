@@ -2,7 +2,7 @@ SEARCH-FOR-PRESUMPTION-1230:
   Date searched: 2026-11-10
   Original item: PRESUMPTION-1230
   Original statement: A PRS id in a file presumed to be an activity involving that triplet; dead = no id trace.
-  Search scope: PRELIMINARY. 1 combined web search per item group, 0 page fetches. Entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read. 
+  Search scope: PRELIMINARY. 1 combined web search per item group, 0 page fetches. Entries marked 'title seen' were not opened; 'background recall' entries come from the searcher's prior knowledge and were not re-read.
   PROVENANCE:
     Origin: 14b
     Chain: 14b -> 15a

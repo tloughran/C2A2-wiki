@@ -29609,3 +29609,40 @@ Not re-filed (standing unconsumed blocks): MONITOR-696 (re-queued 11-01, no SEAR
   Evidence trajectory: Baseline (first 15d cycle); no divergence report filed. Due since 11-11.
 
 Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no SEARCHED/DISPOSITIONED tag); MONITOR-696 (11-01); the 2026-10-25, 10-18 and 10-11 cohorts. Not duplicated; cycle counts held (precedent 09-20..11-08).
+
+## 2026-11-15 — 14a/14b local pass
+
+[QUEUED] [SEARCHED-15a: 2026-11-16] [SEARCHED-15b: 2026-11-16] [DISPOSITIONED-15c: 2026-11-16] [PRESUMPTION] PRESUMPTION-1246
+  Statement: [inferred] Wright's Romans 11 covenant membership and Stump's "what makes a people one" are the same question, strong enough for a paradigm-bridge flag from a reporter's account.
+  Claim to test: Literature: does Stump's account of unity (Wandering in Darkness; Atonement) address group membership/peoplehood, or union between persons? Is Wright's "all Israel" argument (his Romans 9–11 reading in Paul and the Faithfulness of God; citation to be verified by 15a) about the same structure? Structural or lexical match?
+  Result (2026-11-16): 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1144 -> REVISE-542 (Low)
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1247
+  Statement: [inferred] One quality filter applies across specialists.
+  Claim to test: In-house: sample 20 pending/archived cards since 10-01 across specialists; classify source basis (full text / transcript / reporter / search summary / chapter titles); tabulate by specialist and approval outcome.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2124
+  Statement: [stated] The cloud copy of each double-registered task does the work the local copy cannot.
+  Claim to test: In-house: for each of the 27 tasks, list the last 7 days of cloud vs local outcomes (worked / NO-OP / skipped as duplicate). Start with c2a2-self-awareness-daily (cloud NO-OP 11-10..11-16) and scheduler-health-check (routine_health.md lines by source).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2125
+  Statement: [stated] No 15d re-queue has been searched since 10-17, so the 4-cycle stale rule cannot fire.
+  Claim to test: In-house: grep for_lit_search.md for RE-TRIGGER entries and any later SEARCHED/DISPOSITIONED tag; confirm the date of the last searched re-queue.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2127
+  Statement: [stated] REVISE-539/540/541 are three instances of one failure (shared word read as shared concept).
+  Claim to test: In-house: read REVISE-539..541 and their source presumptions; confirm each turns on a lexical match; add PRESUMPTION-1246 if 15c agrees it is a fourth.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2128
+  Statement: [stated] sync_vault.sh only copies transcripts/ and synthesis/, which is why 7 Summa files are missing from wiki/vault/refs/.
+  Claim to test: In-house (Mac side; scripts/ not mounted here): read sync_vault.sh source/target list; diff Summa project vs wiki/vault/refs/.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+*2026-11-15 (local pass): 6 items queued, 5 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1246). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-15T05:41:54Z by cloud-lit-2026-11-15; not held, append safe.*
+
+*2026-11-16 (cloud-lit-2026-11-16): 15a/15b/15c processed PRESUMPTION-1246 -> DISPOSITION-1144 (REVISE-542 Low). In-house items (incl. ASSUMPTION-2124/2125/2127/2128, PRESUMPTION-1247) and 15d backlog untouched.*

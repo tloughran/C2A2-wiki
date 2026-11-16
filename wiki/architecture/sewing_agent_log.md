@@ -1971,3 +1971,11 @@ Loughran 7, Stump 5, Friston 5, McGilchrist 4, Fredrickson 4, Wright 2, Rohr 2, 
 Before writing: each page asserted to have no Agentic Calls heading; every bridge file asserted present; every wikilink in new calls asserted to resolve to an existing stem. After writing: backlink map rebuilt (table above). Content only appended; nothing deleted; nothing committed.
 
 *Logged by Sewing Agent on 2026-11-15.*
+
+---
+
+## Duplicate firing: 2026-11-15 (scheduled, local Cowork session, no-op)
+
+The full weekly run for 2026-11-15 already finished (entry above, cloud session ~09:35 UTC), after the bootstrap audit wrote today's CSV row. This firing did no census, wrote no CSV row, stamped no pages, and wrote no bridge notes, so the weekly cadence is not doubled. Third sewing-related fire today again (bootstrap audit, full cloud run, this local one), same pattern as 2026-11-08. The `c2a2-sewing-agent-weekly` schedule appears registered both as a cloud routine and as a local Cowork scheduled task; recommend disabling the local copy (per the three-tier rule, disable rather than delete). Also: Desktop Commander was declined in this unattended local run (no approver), so this check used the Cowork sandbox shell instead.
+
+*Logged by Sewing Agent on 2026-11-15.*

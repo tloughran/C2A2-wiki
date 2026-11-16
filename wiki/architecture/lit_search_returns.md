@@ -53094,3 +53094,40 @@ DISPOSITION-1143:
 
 SYSTEMIC-RISK (2026-11-15, 15b): PRESUMPTION-1245 is the fourth consecutive daily instance of one pattern: a shared umbrella term (formalism, non-empirical assessment, 'limit') read as a shared criterion across thinkers. See REVISE-539 (PRESUMPTION-1240), REVISE-540 (PRESUMPTION-1244), and PREMISE-127. Recommend 14b or Tom treat this as one systemic issue rather than item by item.
 EVIDENCE-QUALITY NOTE (2026-11-15): both searches PRELIMINARY (3 web searches total, titles only, no fetches). Israeli & Goldenfeld 2004, Cooper 1990, Dagum & Luby 1993, Kwisthout & van Rooij, and Wolfram's observer theory are background recall, not re-read. 15a/15b independence is procedural only (one orchestrator; FOR file written before AGAINST file was composed).
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1246
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Key source: Wright PFG ch. 11 / incorporative Messiahship (reviews seen as titles; recall); Stump Atonement 2018 (NDPR title seen; recall); Worsley 'Atonement as Reunion' (title seen)
+  Summary: Structural touch point: both route oneness through union with Christ (incorporation in Wright, mutual indwelling in Stump). No source treats them as the same question.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1246_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1246 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1246
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Stump WiD 2010 / Atonement 2018 (recall); Kaminsky & Reasoner vs Bird on Wright (HTR, titles seen; recall)
+  Summary: Stump's union is a dyadic second-personal relation; Wright's question is a collective's membership criterion. Adjacent, not the same; basis is a reporter's account.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1246_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1246 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1144:
+  Date: 2026-11-16
+  Item: PRESUMPTION-1246
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The questions are adjacent, not the same. Wright asks who belongs to the one people (a membership criterion for a collective); Stump asks what union between persons is (a dyadic relation). There is one structural, non-lexical link worth keeping: both make oneness depend on union with Christ. That supports a 'related, possibly bridgeable' note, not a paradigm-bridge flag, and not from a reporter's account.
+  Disposition: REVISE (REVISE-542)
+  Reasoning: Weaker support against a moderate challenge, on a presumption, leans REVISE. Urgency Low, matching REVISE-539/-540/-541: signal-level material, challenge from titles and recall. 'PRESUMPTION with strong challenge -> High' does not fire (challenge Moderate).
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for Stump / Wright: no premise on Wright; Stump premises concern her causal category (needs a source in her own voice) and the PRS-09 repoint. Consistent with PREMISE-127 (shared vocabulary is surface, not homology). Not an INCORPORATE; no premise added, no conflict.
+  On ASSUMPTION-2127 (in-house, not processed here): 15c agrees PRESUMPTION-1246 is a further instance of the shared-word-read-as-shared-concept pattern, with the caveat that unlike 1240/1244/1245 it has one real structural touch point.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1246 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1246_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1246_against.md
+
+SYSTEMIC-RISK (2026-11-16, 15b): PRESUMPTION-1246 is the fifth consecutive daily literature-lane item (after PRESUMPTION-1240, -1244, -1245 and the 11-13 cross-level pair) in which an umbrella term ('one', 'union', 'people') is read as a shared question across thinkers. Recommend 14b require each cross-thinker bridge presumption to name the specific question each author asks, in their own voice, before queueing.
+EVIDENCE-QUALITY NOTE (2026-11-16): both searches PRELIMINARY (3 web searches total, titles only, no fetches). Wright PFG ch. 11, incorporative Messiahship, Stump WiD/Atonement content and the HTR exchange are background recall, not re-read. 15a/15b independence is procedural only (one orchestrator; FOR file written before AGAINST file was composed).

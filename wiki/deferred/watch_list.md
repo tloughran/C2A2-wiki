@@ -161,8 +161,8 @@ WATCH-006:
   Check method: File check — pending/ for PROP-2026-10-13-001 revised copy; macintyre PRS triplet files for the overlap passages (pp.116, 124-126, 202-205, 229, 233, 134, 33). No sewing-agent definition exists in agents/ (only 01-20), so ownership is unclear.
   Check cadence: Weekly
 
-  Last checked: 2026-11-14
-  Check count: 7
+  Last checked: 2026-11-16
+  Check count: 8
   Result history:
     - 2026-10-17: Intake. Classified as agent action / possibly human. No revised copy in pending/. Condition NOT met. Flag: no "sewing agent" in agents/; Tom to confirm which agent/session owns this. Also PROP-2026-10-13-001/-002 ID collision still open.
 
@@ -172,6 +172,7 @@ WATCH-006:
     - 2026-11-07: On-cadence check; count now **5**. `pending/` holds 19 files; none is MacIntyre and none carries PROP-2026-10-13-001 (the three McGilchrist items are 11-04 cards, unrelated). `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39. `architecture/sewing_agent_log.md` unchanged since 2026-11-01 04:42. needs_review card mtime unchanged (10-17). Condition NOT met. Event trigger: Sewing Agent run 2026-11-08, expected to skip `needs_review/` again. Next on-cadence check 2026-11-14; one more unmoved check reaches the 6-check stale threshold.
     - 2026-11-09 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **6**; next on-cadence check stays 2026-11-14): the Sewing Agent's 2026-11-08 run is logged in `architecture/sewing_agent_log.md` (`## Run: 2026-11-08`, ~09:35 UTC, plus a no-op duplicate ~09:43). It processed 10 pages (3 `pending/` cards: Wright 11-08, Wolfram 11-07, Kastrup 11-04; 7 `inbox/` items), injected 42 calls and appended 15 bridge sections. grep of the log from the 11-08 entries onward for `needs_review`, `macintyre`, `2026-10-13-001`: zero matches. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39; needs_review card mtime unchanged (10-17); `pending/` holds 4 files, none MacIntyre or PROP-2026-10-13-001. Condition NOT met. Third consecutive Sewing run to bypass this card, as predicted 10-24. **6-check stale threshold reached; see STALE FLAGS.**
     - 2026-11-14: On-cadence check; count now **7**. `pending/` holds 5 files (Fredrickson ×2, Friston, Stump, Carroll AMA 11-13); none is MacIntyre or PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39; `architecture/sewing_agent_log.md` unchanged since 2026-11-08 04:43; needs_review card mtime unchanged (10-17). No Tom ruling found in vault files newer than the last watch-list write. Condition NOT met. Still STALE. Event trigger: Sewing Agent run 2026-11-15, expected to skip `needs_review/` again unless Tom picks option (a). Next on-cadence check 2026-11-21.
+    - 2026-11-16 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **8**; next on-cadence check stays 2026-11-21): the Sewing Agent's 2026-11-15 run is now logged in `architecture/sewing_agent_log.md` (`## Run: 2026-11-15`, cloud ~09:35 UTC, plus a no-op local duplicate; file synced 11-15 22:00, after both 11-15 Agent 16 firings, which is why they did not see it). It processed 10 pages (6 `pending/` cards, the Hawkins `needs_review/` card, 3 `inbox/` items). It did **not** process the MacIntyre card: grep of the 11-15 entry for MacIntyre / 10-13-001 / 3RV finds nothing, and the card's mtime is still 10-17. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39. `pending/` (10 files) holds no MacIntyre item and no copy of PROP-2026-10-13-001. Condition NOT met. Still STALE. Note: the Sewing Agent *did* take one `needs_review/` card this week (Hawkins), so its rule is not a blanket skip of `needs_review/`; it picked unlinked cards up to its batch cap of 10 and the MacIntyre card was not chosen. Option (a) of the stale flag (Tom tells the Sewing Agent to take this card) still stands.
 
   On resolution:
     Action: re-queue proposal to pending/ with note
@@ -199,6 +200,7 @@ WATCH-007:
   Result history:
     - 2026-11-12: Intake. CHECK, no note. Targeted fact check toward reading (d): direct fetch of https://github.com/thousandbrainsproject/tbp.monty/pull/1174 refused (URL not in this run's fetch provenance set); web search `tbp.monty pull 1174 "correctly merge new and previous pose vectors"` returned no GitHub hit (only TBP forum threads on pose handling, unrelated). So the PR quotes remain **unverified by Agent 16** — not refuted. No vault file other than the card and pipeline logs mentions the item. Condition NOT met.
     - 2026-11-13 (CHECK RUN OFF-CADENCE: new decision file; count now **2**; next on-cadence check stays 2026-11-19): `review/archive/2026-11-12_decisions.md` holds 4 APPROVE (PROP-2026-11-11-001..-004) and does not name PROP-2026-11-10-001. Card mtime unchanged since this agent's own tag write (11-12 02:38); no note appended. Vault `.md` files newer than the last watch-list write: no mention of the item beyond the 11-12 cowork summary (carry-over). Condition NOT met.
+    - 2026-11-16 (OBSERVATION, not a check; count stays **2**; next on-cadence check stays 2026-11-19): card mtime changed to 2026-11-15 04:36. Cause: the Sewing Agent's 2026-11-15 run appended an `## Agentic Calls` section (calls to Hawkins, Friston, Wolfram). The Hawkins call itself says "Resolve the TRACKED-16 CHECK question with Tom before promotion", and sewing log item 3 flags the open CHECK for Tom. No note from Tom was appended. `review/archive/` still 32 files, latest `2026-11-12_decisions.md`; no new decision file, so the off-cadence trigger did not fire. Condition NOT met.
 
   On resolution:
     Action: per Tom's stated check — if a fact/cross-reference check, run it and re-queue to pending/ with the result; if a content edit, mark AWAITING-HUMAN-EDIT; if an external condition (e.g. video URL / transcript found), keep WATCHING with that condition.
@@ -7724,3 +7726,22 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: unchanged (WATCH-007 11-19; WATCH-003/-004 11-20; WATCH-005/-006 11-21).
 
 *Duplicate firing (~07:39 UTC). No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-16
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]. New items added: 0. `review/archive/` unchanged at 32 files (latest `2026-11-12_decisions.md`), so no new CHANGE/CHECK/CONDITIONAL to intake.
+  Items checked: 1. WATCH-006 off-cadence (count 8): the Sewing Agent's 2026-11-15 run appeared in the log after both 11-15 Agent 16 firings. It did not process the MacIntyre card. NOT met.
+  Observation (not a check): WATCH-007. The Hawkins card was changed 11-15 by the Sewing Agent's Agentic Calls section, not by a note from Tom. NOT met.
+  Items resolved: 0 · Items still watching: 5 (WATCH-003..007) · Items stale: 3 (WATCH-003 at 31 checks, WATCH-004 at 6, WATCH-006 at 8; existing flags stand, no new STALE-WATCH-FLAG written) · WATCH-005 at 5 checks, becomes stale if its 11-21 check finds nothing.
+  Not due today: WATCH-003 (11-20), WATCH-004 (11-20), WATCH-005 (11-21), WATCH-006 (11-21), WATCH-007 (11-19). No web checks run.
+  Next scheduled checks: WATCH-007 11-19 · WATCH-003/-004 11-20 · WATCH-005/-006 11-21 · any new `review/archive/` file triggers WATCH-003/-007 off-cadence.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-16 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; nothing in the vault (outside deferred/) is newer than the first firing's watch-list write (07:38 UTC). `review/archive/` unchanged at 32 files. Items checked: 0 · Resolved: 0 · Watching: 5 · Stale: 3 (WATCH-003, -004, -006, unchanged) · New: 0
+  Next scheduled checks: unchanged (WATCH-007 11-19; WATCH-003/-004 11-20; WATCH-005/-006 11-21).
+
+*Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*
