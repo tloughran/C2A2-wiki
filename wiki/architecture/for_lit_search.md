@@ -29646,3 +29646,27 @@ Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no
 *2026-11-15 (local pass): 6 items queued, 5 [IN-HOUSE], 1 literature-lane (PRESUMPTION-1246). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-15T05:41:54Z by cloud-lit-2026-11-15; not held, append safe.*
 
 *2026-11-16 (cloud-lit-2026-11-16): 15a/15b/15c processed PRESUMPTION-1246 -> DISPOSITION-1144 (REVISE-542 Low). In-house items (incl. ASSUMPTION-2124/2125/2127/2128, PRESUMPTION-1247) and 15d backlog untouched.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2129
+  Statement: [stated] The lit pipeline has been offline since ~10-31 (local copy's claim).
+  Claim to test: In-house: list review/lit_pipeline.lock LOCKED/RELEASED lines 10-31..11-16 by host (cloud vs local) and the DISPOSITION IDs each produced; report days with no run by any copy.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2132
+  Statement: [stated] "Active findings: 24" counts only FINDING-013..035; later findings lack a status line.
+  Claim to test: In-house: grep findings for a Status field; count FINDING IDs with and without it; compare to the 114 total.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2133
+  Statement: [stated] Three tasks have written nothing to Reports/ for 21 weeks; Gmail is misclassified dormant.
+  Claim to test: In-house (Mac side; Reports/ not mounted here): list Reports/ files by producing task since 06-15; grep the four Gmail-using SKILL.md files for their Gmail tool names vs connector-health's match pattern.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1249
+  Statement: [inferred] "Significant work not yet captured" checks non-capture only.
+  Claim to test: In-house: find every pending/archived card since 10-01 that cites the clause; record source date, source basis (full text / abstract / summary), whether significance is argued, and approval outcome. Compare approval rate with in-window cards.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-16 (local pass): 4 items queued, all [IN-HOUSE]. ASSUMPTION-2130 adds evidence to the ASSUMPTION-2124 item (evening sync: only the local copy reaches Chrome). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-16T05:41:49Z by cloud-lit-2026-11-16; not held, append safe.*
+
+*2026-11-17 (cloud-lit-2026-11-17): queue empty for this run. No new literature-lane items since 11-16 (14a/14b cloud firing 11-17 04:37Z was a NO-OP, no transcript source; 11-16 local pass queued 4 [IN-HOUSE] only). queue_scan.py: 0 searched-but-undispositioned, 0 half-searched; 151 bare items = 15d re-trigger backlog, untouched per standing precedent. No 15a/15b/15c writes.*

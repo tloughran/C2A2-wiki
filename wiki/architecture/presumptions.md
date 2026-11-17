@@ -27142,3 +27142,25 @@ PRESUMPTION-1248:
     Current status: UNTESTED
 
 *2026-11-15 14b: PRESUMPTION-1246 (epistemic, Medium), 1247 (methodological, Medium), 1248 (normative, Low). Checked against 14a 2120–2128 and the registry. Not re-surfaced (already registered; new evidence today): unattended runs auto-declining Desktop Commander (16 registry hits); duplicate copies treated as interchangeable (PRESUMPTION-503; today four tasks recommend disabling local copies while this task's cloud copy no-ops); skip-on-prior-output as completeness check (duplicate-firing entries).*
+
+PRESUMPTION-1249:
+  Date surfaced: 2026-11-16
+  Statement: [inferred] The thinker agents' "significant work not yet captured" clause is presumed to carry two tests, significance and non-capture, but in practice only non-capture is checked. It now works as the fallback when the 30-day window is empty: Carroll/Arkani-Hamed on 11-06 (ASSUMPTION-2052), Fredrickson on 11-12 ("So I used the task's ... clause instead", ASSUMPTION-2102), Levin today (ASSUMPTION-2131). Non-capture is tested by title/arXiv match against the wiki; significance is asserted, today from an abstract read at ~10% of the text. The clause turns the window from a recency filter into a "nothing new, find something old" rule.
+  Evidence it was operative: Levin/Friston b7dcdc06 ("I proposed it under the 'significant work not yet captured' clause, because nothing in the Levin wiki or any proposals folder matches its title or arXiv number"); ASSUMPTION-2052; ASSUMPTION-2102
+  Why it was unstated: the task file names the clause without a significance criterion; each agent reads absence as sufficient
+  Type: methodological
+  Related decisions: PRESUMPTION-1247 (one quality filter across specialists); PRESUMPTION near line 1334 (honest null)
+  Testability: testable in-house (queued [IN-HOUSE])
+  Risk if wrong: Medium: an empty week yields old, thinly-read cards instead of an honest null, and the pending queue (11) grows with items Tom must judge from abstracts.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1249
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+*2026-11-16 14b: PRESUMPTION-1249 (methodological, Medium). Checked against 14a 2129–2135 and the registry. Not re-surfaced (already registered; new evidence today): a copy's own history read as the system's (PRESUMPTION-1219; local lit "offline two weeks" while cloud-lit ran 11-15/16, ASSUMPTION-2129); tool parity between cloud and local copies (PRESUMPTION-1196; evening sync Chrome, ASSUMPTION-2130); withheld NOT-CHECKED on a last-line-wins ledger (PRESUMPTION-1218); spend counted once per task (PRESUMPTION-1209); disagreeing handled-markers (PRESUMPTION-1164); escalation as loop closure (PRESUMPTION-1079; ECI LOI deadline reached Tom only via files and a post-deadline Chat message); field-presence filters across schema eras (PRESUMPTION-1208; findings 013–035 only, ASSUMPTION-2132).*

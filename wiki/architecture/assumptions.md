@@ -40211,3 +40211,124 @@ ASSUMPTION-2128:
     Current status: UNTESTED
 
 *2026-11-15 14a (local pass): ASSUMPTION-2120–2128 (9). Queued [IN-HOUSE]: 2124, 2125, 2127, 2128. Not queued: 2120 (covered by PRESUMPTION-1246), 2121/2122 (framework), 2123 (recurrence), 2126 (Tom action).*
+
+ASSUMPTION-2129:
+  Date identified: 2026-11-16
+  Statement: [stated] Local lit pipeline: "the pipeline has skipped every day since about October 31, so it has effectively been offline for over two weeks." Contradicted by the registry: review/lit_pipeline.lock shows cloud-lit-2026-11-15 and cloud-lit-2026-11-16 held and released the lock, producing DISPOSITION-1143 and -1144 (for_lit_search.md footers). The local copy reported its own skip history as the pipeline's.
+  Context: lit pipeline b5202f6b; review/lit_pipeline.lock (checked this run)
+  Type: empirical
+  Related decisions: ASSUMPTION-2124; PRESUMPTION-1219
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2129
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+ASSUMPTION-2130:
+  Date identified: 2026-11-16
+  Statement: [stated] Evening sync: "For this task, only the local copy can reach Chrome, so disabling it would break delivery to Chat again." Tonight's Chat post (first success in 6 days) came from the local copy; the cloud copy wrote the summary file but could not post or read session histories. Same day, scheduler health recommends disabling all 27 local entries, this task included.
+  Context: evening sync 7a33877c; scheduler health 4272579c
+  Type: architectural
+  Related decisions: ASSUMPTION-2124; ASSUMPTION-2043; PRESUMPTION-1196
+  Testability: testable in-house (evidence added to the ASSUMPTION-2124 queue item; not queued separately)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2130
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+ASSUMPTION-2131:
+  Date identified: 2026-11-16
+  Statement: [stated] Levin agent filed PROP-2026-11-16-001 (Hartl et al., arXiv 2609.29755, late September, outside the 30-day window) under the "significant work not yet captured" clause, having read "about 10% of the PDF text"; "its claims don't go beyond the abstract." Novelty was checked by title/arXiv match; significance was not argued.
+  Context: Levin/Friston b7dcdc06
+  Type: methodological
+  Related decisions: PRESUMPTION-1247; PRESUMPTION-1249; ASSUMPTION-2052; ASSUMPTION-2102
+  Testability: testable in-house (via PRESUMPTION-1249 queue item)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2131
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+ASSUMPTION-2132:
+  Date identified: 2026-11-16
+  Statement: [stated] Morning walk: "Active findings: 24"; "The active-findings count only covers FINDING-013 to 035. Findings after 035 don't have a status line, so they aren't counted." The daily run reports 114 findings the same day.
+  Context: morning walk a1db0fb2; wiki daily run 3630693f
+  Type: empirical
+  Related decisions: PRESUMPTION-1208
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2132
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+ASSUMPTION-2133:
+  Date identified: 2026-11-16
+  Statement: [stated] Reviewer review (cloud brief, relayed by local copy): the ecosystem report, deferred-action monitor and periodic monitor have written nothing to Reports/ for 21 weeks; janitor whitespace fixes not on disk for 17 of 25 files (third week); 5 zero-byte .md files in the wiki; connector-health calls Gmail dormant although four scheduled tasks use it (its search "may only match mcp__ tool names").
+  Context: reviewer review fddecf83 (relaying reviewer-review-2026-11-16.md, cloud 06:33)
+  Type: empirical
+  Related decisions: —
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2133
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+ASSUMPTION-2134:
+  Date identified: 2026-11-16
+  Statement: [stated] Reviewer review local copy declined to run because "a second pass would have compared this week against itself ... the week-over-week tracking would have been overwritten with false zeros." For tasks that keep delta state, a duplicate firing corrupts the metric, not just the output file.
+  Context: reviewer review fddecf83
+  Type: methodological
+  Related decisions: PRESUMPTION-1164; PRESUMPTION near line 25600 (one firing per day)
+  Testability: framework (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2134
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+ASSUMPTION-2135:
+  Date identified: 2026-11-16
+  Statement: [stated] Recurrences: scheduler health 45 OK / 2 WARN / 28 FAIL, 27 DOUBLE-REGISTERED, again advises disabling all 27 local entries because the 47/47 cloud routines checked OK, and again withheld its NOT-CHECKED line (last-line-wins reader); wiki daily run fired twice (second day running) and notes PROCESSED_LOG.md vs ingest_ledger disagreement; Levin task prompt path missing Projects/; cost tracker: 30 agents, ~$49.30/month, each task counted once; Desktop Commander auto-declined for cost tracker (report not saved to Reports/), lit pipeline (lock) and scheduler health (shell); morning walk found no walk notes; Educating Character Initiative LOI (due 11-16 17:00 ET) surfaced only in report files and the 11-16 evening Chat post, after the deadline.
+  Context: scheduler health 4272579c; wiki daily run 3630693f; Levin/Friston b7dcdc06; cost tracker 22bb0ba3; lit pipeline b5202f6b; morning walk a1db0fb2; evening sync 7a33877c
+  Type: empirical
+  Related decisions: ASSUMPTION-2043; ASSUMPTION-1854; PRESUMPTION-1079; PRESUMPTION-1164; PRESUMPTION-1196; PRESUMPTION-1209; PRESUMPTION-1218
+  Testability: recurrence bundle (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2135
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from 2026-11-16 local pass (final assistant message per session via session_info: evening sync 7a33877c, morning walk a1db0fb2, Levin/Friston b7dcdc06, wiki daily run 3630693f, lit pipeline b5202f6b, scheduler health 4272579c, reviewer review fddecf83, cost tracker 22bb0ba3)
+    Current status: UNTESTED
+
+*2026-11-16 14a (local pass): ASSUMPTION-2129–2135 (7). Queued [IN-HOUSE]: 2129, 2132, 2133. Not queued: 2130 (evidence for 2124), 2131 (via PRESUMPTION-1249), 2134 (framework), 2135 (recurrence).*

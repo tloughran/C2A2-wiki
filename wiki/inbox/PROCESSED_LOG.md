@@ -2587,3 +2587,9 @@ No new decision email; no newly approved cards (ingest_ledger OPEN=1 standing, P
 
 ### 2026-11-16 second orchestrator firing (04:38 local, verification only)
 Started as the primary run finished (review page/review_log/level2 04:36, master and this log 04:37); waited ~1 min, no further writes. Changed none of the primary outputs; no searches, no second Gmail draft. Verified: Gmail [C2A2-review-decision] (unread or newer_than:2d) = 0; pending = 11; 2026-11-16_review.html present; review_log.html address-clean. Phase 6: no git.
+
+### 2026-11-17 orchestrator run
+No new decision email; no newly approved cards (ingest_ledger OPEN=1 standing, PROP-2026-08-14-033); 0 files processed, 0 triplets. Phase 2: 10 traditions searched, 1 proposal (PROP-2026-11-17-005 Levin, secondary-sourced); Hawkins specialist filed 4. Pending = 16.
+
+### 2026-11-17 second orchestrator firing (04:37 local, verification only)
+Started while the primary run was mid-flight (Levin card 04:37:46; review_log/level2 04:38:03; master and this log 04:38:31). Waited ~1 min past the last write, no further writes. Changed none of the primary outputs; no searches, no second Gmail draft. Verified: Gmail [C2A2-review-decision] (unread or newer_than:2d) = 0; pending = 16 (Hawkins 11-17 x4 + Levin PROP-2026-11-17-005); 2026-11-17_review.html present; review pages kept 11-14..11-17; review_log.html address-clean (0 matches); level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 6 (under the 21-day WARN). Phase 6: no git.

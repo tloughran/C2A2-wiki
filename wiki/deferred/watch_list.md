@@ -7745,3 +7745,20 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: unchanged (WATCH-007 11-19; WATCH-003/-004 11-20; WATCH-005/-006 11-21).
 
 *Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-17
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-16 run. `review/archive/` unchanged at 32 files (latest `2026-11-12_decisions.md`), so no new CHANGE/CHECK/CONDITIONAL. New items added: 0.
+  Off-cadence triggers checked: no new archive file (WATCH-003/-007); `PROCESSED_LOG.md` (last write 11-16 04:38 local) shows no Sewing Agent processing of the MacIntyre card (WATCH-006) and no reference to the Fredrickson, McGilchrist or Hawkins cards; 11-16/11-17 changelogs and daily-sync files do not name any watched card. One new `pending/` file (2026-11-16 Levin LoRA-NCA), unrelated to any watch item.
+  Items checked: 0 (none due) · Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 3 (WATCH-003, -004, -006; existing flags stand, no new STALE-WATCH-FLAG) · WATCH-005 at 5 checks, goes stale if its 11-21 check finds nothing.
+  Next scheduled checks: WATCH-007 11-19 · WATCH-003/-004 11-20 · WATCH-005/-006 11-21.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-17 (second firing; duplicate, no-change confirmation)
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; nothing in the vault (outside deferred/) is newer than the first firing's watch-list write (07:37 UTC). `review/archive/` unchanged at 32 files (latest `2026-11-12_decisions.md`). Items checked: 0 · Resolved: 0 · Watching: 5 · Stale: 3 (WATCH-003, -004, -006, unchanged) · New: 0
+  Next scheduled checks: unchanged (WATCH-007 11-19; WATCH-003/-004 11-20; WATCH-005/-006 11-21).
+
+*Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*
