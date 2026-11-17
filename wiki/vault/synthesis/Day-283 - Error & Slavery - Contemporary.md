@@ -3,21 +3,21 @@ day: 283
 title: Error & Slavery (Contemporary)
 pairs_with: "[[Day-283 - Error & Slavery]]"
 length_target_words: 1500
-length_actual_words: 1037
+length_actual_words: 1066
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-22 BEFORE editing: 943 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's per-record grading of the Hoffman, Kastrup and Friston bridge bullets then added 94 words of citation apparatus. New total 1037, ratio 0.691. No argument altered."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-22 BEFORE editing: 943 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's per-record grading of the Hoffman, Kastrup and Friston bridge bullets then added 94 words of citation apparatus. New total 1037, ratio 0.691. No argument altered. QC 2026-11-16: added the one-sentence supersession label required by _index/QC policy - supersession limb.md rule 3 (substance/accident grounding superseded; person/quality distinction and verdict survive); recount 1066, ratio 0.711. No argument altered."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 perception as fitness-tracking interface, PRS-10 trace blankets subsume Markov blankets)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, PRS-24 the indexical problem)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales)"
 evidence_strength_summary: "Hoffman interface formal/speculative; Kastrup identity metaphysical; the error-of-person-voids-consent claim is conceptual; the servile-condition material is treated historically, not endorsed."
-length_ratio_to_target: 0.691
+length_ratio_to_target: 0.711
 mind_first_reframe: "Error voids marital consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — while mis-valued attributes of the right referent are tolerable error."
 central_theme_thread: "Marriage is undertaken across an irreducible epistemic gap — we consent to icons, never to the person seen whole — which is the central theme's 'fear and trembling' at the scale of the marrying pair."
 tags: [synthesis, day/283, theme/identity-tracking-and-consent]
-last_qc_at: "2026-11-05T02:17:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T12:17:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 283 — Error & Slavery (Contemporary Parallel)
@@ -36,7 +36,7 @@ The Hoffman-tradition program supplies the leading move. Tom's PRS-form record o
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **error voids consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — and tolerable error is mis-valued attributes of the right referent.** What it *shares* with Aquinas: the person/quality distinction and the verdict that error-of-person voids. Where it *reframes*: Aquinas locates the line in the *substance* of the person versus accidents; the monist/interface reframe locates it in *reference* — does the model point at the intended agent-boundary? — which has the virtue of explaining marginal cases (an error about a quality so central it changes *who* the person is) as referent-determining attributes rather than as a fuzzy exception. Where evidence is *firm*: that agents transact only through interfaces, never through direct access, is a load-bearing formal claim of interface theory. Where *speculative*: the metaphysics of personal identity as a dissociative boundary is interpretive, and the legal calculus of which errors void is normative, not derivable from the model.
+The contemporary-parallel response: **error voids consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — and tolerable error is mis-valued attributes of the right referent.** What it *shares* with Aquinas: the person/quality distinction and the verdict that error-of-person voids. Where it *reframes*: Aquinas locates the line in the *substance* of the person versus accidents; the monist/interface reframe locates it in *reference* — does the model point at the intended agent-boundary? — which has the virtue of explaining marginal cases (an error about a quality so central it changes *who* the person is) as referent-determining attributes rather than as a fuzzy exception. What is *superseded*, then, is the substance/accident grounding of the line; what survives intact is the person/quality distinction itself and the verdict that error of person voids. Where evidence is *firm*: that agents transact only through interfaces, never through direct access, is a load-bearing formal claim of interface theory. Where *speculative*: the metaphysics of personal identity as a dissociative boundary is interpretive, and the legal calculus of which errors void is normative, not derivable from the model.
 
 ## The central-theme thread
 

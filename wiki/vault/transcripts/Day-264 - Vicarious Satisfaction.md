@@ -15,7 +15,7 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-264 - Vicarious Satisfaction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-11-04T16:16:46"
+last_qc_at: "2026-11-16T04:18:07"
 last_qc_outcome: "pass"
 tags: [summa, day/264, pars/supplement, q/penance]
 ---

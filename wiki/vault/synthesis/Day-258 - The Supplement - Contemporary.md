@@ -3,10 +3,10 @@ day: 258
 title: The Supplement (Contemporary)
 pairs_with: "[[Day-258 - The Supplement]]"
 length_target_words: 2200
-length_actual_words: 1052
+length_actual_words: 1077
 length_tier: medium
-length_ratio_to_target: 0.478
-length_note: "Compact by design: Suppl. Q.1 is a structural seam (distributed authorship completing an unfinished whole), not a doctrinal locus, so the parallel develops the single finitude-of-authorship motif rather than mirroring articles; substance complete per the five-question review. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the stored 937 recounted EXACT on 2026-09-08 and the 65 added then were citation apparatus, being the bundled Hawkins PRS-03 and PRS-04 badge split into two bullets at their own register grades; the resulting 1002 recounted EXACT again on 2026-09-15 pre-edit, and the 50 added that day are likewise apparatus only, stating the Friston PRS-06 register grade in the bullet where it carries the argument rather than only in the evidence summary. New total 1052, ratio 0.478."
+length_ratio_to_target: 0.49
+length_note: "Compact by design: Suppl. Q.1 is a structural seam (distributed authorship completing an unfinished whole), not a doctrinal locus, so the parallel develops the single finitude-of-authorship motif rather than mirroring articles; substance complete per the five-question review. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the stored 937 recounted EXACT on 2026-09-08 and the 65 added then were citation apparatus, being the bundled Hawkins PRS-03 and PRS-04 badge split into two bullets at their own register grades; the resulting 1002 recounted EXACT again on 2026-09-15 pre-edit, and the 50 added that day are likewise apparatus only, stating the Friston PRS-06 register grade in the bullet where it carries the argument rather than only in the evidence summary. New total 1052, ratio 0.478. Recount 2026-11-16 (reviewer): stored 1052 reproduced EXACTLY pre-edit under the same boundary; +25 is Frame article anchors only (Q(a)), new total 1077, ratio 0.49."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 individual agents forming coherent higher-order wholes without losing autonomy)"
   - "traditions/hawkins/prs_triplets.md (PRS-03 knowledge fragile in single minds; preservation/extension across agents; PRS-04 shared reference frames)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Distributed authorship completing an unfinished whol
 mind_first_reframe: "The Summa's completion after Aquinas's death by other hands reframes the work's incompleteness as an instance of the central claim — no single perspective completes the whole; wholes are completed by collaborating limited agents cohering around a shared model (Friston PRS-06), the seams of differing authorship marking that coherence is approximated, not guaranteed."
 central_theme_thread: "Finitude is the condition of all minds, even the greatest; loving unity is therefore inherently collaborative — limited perspectives, aware of their need for one another, compose into a larger agent that sees more than any one, the Summa confessing its own thesis."
 tags: [synthesis, day/258, theme/distributed-authorship-under-finitude]
-last_qc_at: "2026-11-04T12:16:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T02:21:56"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 258 — The Supplement (Contemporary Parallel)
 
 ## Frame
 
-Day 258 marks a seam in the Summa itself. Aquinas died in 1274 having broken off in the Tertia Pars, mid-treatise on Penance; the *Supplement* (Suppl. Q.1 and onward) was assembled after his death by other hands — chiefly from his earlier *Scriptum* on the Sentences — to complete the unfinished plan through penance, last things, and the resurrection. The locus (Suppl. Q.1) resumes the parts of Penance, but the day's deepest datum is *the finitude of the work's own authorship*: the greatest medieval synthesis is itself incomplete, finished by a community. The contemporary version under mind / conscious-realist monism: what does it mean that no single perspective completes the whole — and that wholes are completed by collaborating limited agents?
+Day 258 marks a seam in the Summa itself. Aquinas died in 1274 having broken off in the Tertia Pars, mid-treatise on Penance; the *Supplement* (Suppl. Q.1 and onward) was assembled after his death by other hands — chiefly from his earlier *Scriptum* on the Sentences — to complete the unfinished plan through penance, last things, and the resurrection. The locus (Suppl. Q.1, on contrition: a.1 whether contrition is a sorrow for sins assumed with the purpose of confessing and making satisfaction; a.3 whether attrition can become contrition) resumes the parts of Penance, but the day's deepest datum is *the finitude of the work's own authorship*: the greatest medieval synthesis is itself incomplete, finished by a community. The contemporary version under mind / conscious-realist monism: what does it mean that no single perspective completes the whole — and that wholes are completed by collaborating limited agents?
 
 ## Problem
 

@@ -3,7 +3,7 @@ day: 248
 title: Confirmation (Contemporary)
 pairs_with: "[[Day-248 - Confirmation]]"
 length_target_words: 2200
-length_actual_words: 1107
+length_actual_words: 1134
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in anatomical morphospace; PRS-10 continuity of human and unicellular goal-directedness — cognition as graded rather than binary)"
@@ -12,20 +12,20 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-37 descent as the transition mechanism between the two halves of life)"
   - "traditions/wright/prs_triplets.md (PRS-18 a focused Wright pneumatology sized for the Tertia Pars sacramental questions, confirmation named; PRS-16 cosmic and personal-indwelling registers of Spirit integrated without a metaphysical seam)"
 evidence_strength_summary: "Developmental strengthening empirical-analogy (Levin); precision-weighting that licenses costly action formal in kind, but the record carrying it (Friston PRS-04) is Confidence Medium and marked Implicit, and precision-weighting is an extension off it rather than its stated content; maturation-of-consciousness theological/psychological (Rohr/McGilchrist); central-theme moderately engaged."
-length_ratio_to_target: 0.503
+length_ratio_to_target: 0.515
 length_note: "Compact-by-design: III Q.72 (confirmation as maturation) rendered in tight, complete PRS form; substance whole and all five reviewer questions pass — consistent with the accepted Days 241-265 compact frontier band (Tom-owned standing escalation, not re-opened). Recounted 2026-09-08: the pre-edit body measured 849, exactly the stored figure; the reviewer pass added 53 words correcting the Wright PRS-18 confidence badge from 'high within method' to the register's Medium, which is citation apparatus rather than new argument. Recounted again 2026-09-15 under the same boundary: the pre-edit body measured 902, exactly the stored figure. This pass added 205 words — the largest single apparatus addition on this file, and the size is itself worth noting — carrying two separate disclosures on Friston PRS-04, the day's decisive formal record: (i) it is Confidence Medium and marked Implicit, so the badge now reports the record rather than the maturity of the active-inference literature it summarizes, and (ii) precision-weighting, the specific mechanism this day leans on, appears nowhere in PRS-04's Resource or Solution lines (the register states precision at PRS-28), so the precision reading is marked as this commentary's extension off the record. No argument was added, removed or reweighted; the Spirit-given-boldness claim stands exactly as written. Tier re-verified correct: the paired transcript's cleaned word_count is 2356, medium."
 mind_first_reframe: "Confirmation is reframed as the developmental strengthening of an already-constituted agent — a competency-scaling (Levin) and precision-raising (Friston) on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one."
 central_theme_thread: "Confirmation raises the limited agent's capacity to compute toward loving unity under cost — the 'fear and trembling' register — enabling it to act toward the whole even when acting is risky, actively extending the unity it belongs to into a resistant world."
 tags: [synthesis, day/248, theme/maturation-of-agency]
-last_qc_at: "2026-11-04T10:16:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T22:19:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 248 — Confirmation (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.72) presents confirmation as the sacrament of spiritual *growth* — strengthening the baptized for mature witness, giving the Spirit's boldness to confess the faith publicly. The medieval question is maturation: a second sacrament not for entry but for the deepening of an agency already begun. The contemporary version under mind / conscious-realist monism: what is the developmental strengthening of an agent — the move from established identity to robust, costly, world-facing action?
+Aquinas (III Q.72) presents confirmation as the sacrament of spiritual *growth* — strengthening the baptized for mature witness, giving the Spirit's boldness to confess the faith publicly. The articles in play are Q.72 a.1 (whether confirmation is a sacrament), a.5 (whether it imprints a character), and a.7 (whether sanctifying grace is bestowed in it). The medieval question is maturation: a second sacrament not for entry but for the deepening of an agency already begun. The contemporary version under mind / conscious-realist monism: what is the developmental strengthening of an agent — the move from established identity to robust, costly, world-facing action?
 
 ## Problem
 

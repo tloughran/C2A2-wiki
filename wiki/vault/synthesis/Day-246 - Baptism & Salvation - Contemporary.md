@@ -3,7 +3,7 @@ day: 246
 title: Baptism & Salvation (Contemporary)
 pairs_with: "[[Day-246 - Baptism & Salvation]]"
 length_target_words: 2200
-length_actual_words: 1073
+length_actual_words: 1117
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking / Interface Theory — interface rules vs. underlying reality; PRS-04 observer-dependent spacetime)"
@@ -12,20 +12,20 @@ karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-34 justification as declaration of covenant membership, badge practices individuating not constituting; PRS-13 salvation as inclusion in the covenanted people)"
   - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation — creation as the first incarnation; PRS-26 election as role-conferral whose telos is its own universalization)"
 evidence_strength_summary: "Interface-rules vs. underlying-freedom formal (Hoffman); resource-bounded moral computation formal (Friston); necessity-of-baptism and its exceptions theological (Wright/Rohr); central-theme claim strongly aligned."
-length_ratio_to_target: 0.488
+length_ratio_to_target: 0.508
 length_note: "Concise by design — a single-focus III Q.68-69 (necessity of baptism and its exceptions) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "Necessity-of-baptism is reframed as interface-rules vs. underlying reality: the ordinary rule binds limited agents at the interface, while the underlying freedom of grace can reach the genuinely-disposed where the rule's resources are unavailable."
 central_theme_thread: "Salvation is the perspective-limited agent's inclusion in loving unity computed with the resources it perceives; the exceptions to baptism's necessity are where grace meets the agent whose resources cannot reach the rite."
 tags: [synthesis, day/246, theme/necessity-and-the-limited-perspective]
-last_qc_at: "2026-11-04T10:16:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T22:19:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 246 — Baptism & Salvation (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.68-69) treats the necessity of baptism for salvation and its effects, including the hard cases — infants, the unevangelized, the invincibly ignorant. The medieval tension: baptism is genuinely necessary as the ordinary means, yet God is not *bound* by the means he institutes. The contemporary version under mind / conscious-realist monism: how can a rule of the *interface* (the ordinary, instituted means by which limited agents access grace) be really binding on those agents while not binding what *underlies* the interface?
+Aquinas (III Q.68-69) treats the necessity of baptism for salvation and its effects, including the hard cases — infants, the unevangelized, the invincibly ignorant. The articles carrying the weight are Q.68 a.2 (whether a man can be saved without baptism), a.7-8 (whether intention and faith are required in the one baptized), and a.9-12 (children, children of unbelievers, children in the womb, and those without the use of reason). The medieval tension: baptism is genuinely necessary as the ordinary means, yet God is not *bound* by the means he institutes. The contemporary version under mind / conscious-realist monism: how can a rule of the *interface* (the ordinary, instituted means by which limited agents access grace) be really binding on those agents while not binding what *underlies* the interface?
 
 ## Problem
 

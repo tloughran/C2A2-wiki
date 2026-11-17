@@ -3,7 +3,7 @@ day: 250
 title: Transubstantiation (Contemporary)
 pairs_with: "[[Day-250 - Transubstantiation]]"
 length_target_words: 2200
-length_actual_words: 1166
+length_actual_words: 1188
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01 hard-problem transformation; PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
@@ -12,20 +12,20 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, 'creation as the first incarnation', Confidence Medium — repointed from PRS-03 on 2026-09-15; PRS-03 carries the Universal-Christ label but its Problem and Solution are a warrant for multi-tradition inquiry, so it cannot carry a claim about what the converted reality is)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
 evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal, and graded per record rather than bundled — Hoffman PRS-01/PRS-03 are High and PRS-03 is his core argued evolutionary result (FBT), while PRS-04 is Medium and marked (Implicit), so the evolutionary basis belongs to PRS-03 and does not transfer; identity-through-turnover empirical (Levin); central-theme strongly engaged."
-length_ratio_to_target: 0.530
+length_ratio_to_target: 0.540
 length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass. Recount 2026-09-08: 1027 words, not the stored 946 — understated by 81, so the real ratio is 0.467 rather than 0.430. That sits just ABOVE the accepted Days 247-265 compact frontier band (0.31-0.41), so this file is less compact than the band it was filed under; the band escalation remains Tom-owned and is not re-opened here. Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1027 reproduced EXACTLY pre-edit; the +61 to 1088 (ratio 0.495) is this run's Rohr PRS-03 to PRS-21 repoint, citation apparatus only, no argument added or reweighted. Recount 2026-09-21 under the same boundary (counter calibrated exact on Day 027=3152 and Day 164=2464 both before and after use): the stored 1088 reproduced EXACTLY pre-edit, delta 0; the +78 to 1166 (ratio 0.530) dissolves a single badge that had spanned Hoffman PRS-01, PRS-03 and PRS-04 — the first two are Confidence High, PRS-04 is Medium and marked (Implicit), so the one badge 'formal with an argued evolutionary basis' had levelled a Medium reconstruction up into PRS-03's FBT result. Day 249, reviewed in the same 2026-09-15 16:24 run, had already received exactly this split; it did not reach this file or Day 251. Citation apparatus only, no argument added or reweighted."
 mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
 central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
-last_qc_at: "2026-11-04T12:16:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T22:19:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 250 — Transubstantiation (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.75) gives the doctrine its technical form: the whole substance of bread is converted into the substance of Christ's body, the whole substance of wine into his blood, while the *accidents* (appearance, taste, dimension) of bread and wine remain. The medieval claim is a conversion at the level of reality with no change at the level of appearance. The contemporary version under mind / conscious-realist monism: what is it for the *reality* of a thing to be wholly converted while its *appearance* is wholly conserved — and is that even coherent once appearance and reality are properly distinguished?
+Aquinas (III Q.75) gives the doctrine its technical form: the whole substance of bread is converted into the substance of Christ's body, the whole substance of wine into his blood, while the *accidents* (appearance, taste, dimension) of bread and wine remain (Q.75 a.2-4 on the substance converted rather than remaining or annihilated; a.5 on the accidents remaining; a.7 on the change as instantaneous). The medieval claim is a conversion at the level of reality with no change at the level of appearance. The contemporary version under mind / conscious-realist monism: what is it for the *reality* of a thing to be wholly converted while its *appearance* is wholly conserved — and is that even coherent once appearance and reality are properly distinguished?
 
 ## Problem
 

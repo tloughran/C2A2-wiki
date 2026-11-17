@@ -15,8 +15,8 @@ fetched_at: 2026-05-01
 fetch_path: youtube-transcript-api (egress allowlist now permits youtube.com)
 synthesis: "[[Day-005 - Is God in Everything - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-10-31T12:17:18"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T16:19:12"
+last_qc_outcome: "rewrote"
 tags: [summa, day/005, pars/I, q/7, q/8, theme/infinity, theme/divine-immanence, theme/divine-omnipresence]
 ---
 
@@ -26,7 +26,7 @@ tags: [summa, day/005, pars/I, q/7, q/8, theme/infinity, theme/divine-immanence,
 > Series: *Summa in a Year* by Austin Habash. Day 5 of 308.
 > Summa reference: *Prima Pars, Q.7 (the infinity of God — 4 articles) + Q.8 (the existence of God in things — 4 articles).*
 
-> Auto-generated captions, light typo cleanup. *Suma → Summa; habish → Habash; aquinus / aquanus / ainus / aquantis / aanus / a quantis → Aquinas; theologia → Theologiae; Warner Heisenberg → Werner Heisenberg; "T mytic" → thematic; FAL → fundamental; "absolutely Ely" → absolutely; "the second way" reference is to Day 2 (Five Ways); Augustine quote (Confessions X.27): two ASR garbles restored — "thou wer within me" → "thou wert within me", "thou D touch me" → "thou didst touch me". The surrounding wording, including "and I outside", is Habash's as read and is present verbatim in the ASR; the episode does not name a translation, so no further conforming was done*. Punctuation and paragraph breaks added editorially. QC 2026-08-12: paragraph citation added under the *Catechism* blockquote at [00:12:43] — the two sentences Habash reads continuously are CCC 258 and CCC 316, not one paragraph; wording verified canonical and left unchanged.
+> Auto-generated captions, light typo cleanup. *Suma → Summa; habish → Habash; aquinus / aquanus / ainus / aquantis / aanus / a quantis → Aquinas; theologia → Theologiae; Warner Heisenberg → Werner Heisenberg; "T mytic" → thematic; FAL → fundamental; "absolutely Ely" → absolutely; "the second way" reference is to Day 2 (Five Ways); Augustine quote (Confessions X.27): two ASR garbles restored — "thou wer within me" → "thou wert within me", "thou D touch me" → "thou didst touch me". The surrounding wording, including "and I outside", is Habash's as read and is present verbatim in the ASR; the episode does not name a translation, so no further conforming was done*. Punctuation and paragraph breaks added editorially. QC 2026-08-12: paragraph citation added under the *Catechism* blockquote at [00:12:43] — the two sentences Habash reads continuously are CCC 258 and CCC 316, not one paragraph; wording verified canonical and left unchanged. QC 2026-11-16: the 08-12 attribution corrected against vatican.va (ENG0015/__P17.HTM) — both sentences are CCC 258 (the second quoting the Council of Florence, DS 1331); CCC 316 is a different sentence ("the one, indivisible principle of creation"). Habash's spoken wording ("so too it has", canonical "so too does it have") kept as read.
 
 ## Transcript
 
@@ -94,7 +94,7 @@ tags: [summa, day/005, pars/I, q/7, q/8, theme/infinity, theme/divine-immanence,
 
 > For as the Trinity has only one and the same nature, so too it has only one and the same operation. The Father, the Son, and the Holy Spirit are not three principles of creation but one principle.
 >
-> — *Catechism of the Catholic Church* 258 (first sentence, quoting the Council of Constantinople II tradition) and 316 (second sentence); Habash reads the two paragraphs continuously.
+> — *Catechism of the Catholic Church* 258 (both sentences; the second quotes the Council of Florence, 1442: DS 1331, cf. Council of Constantinople II, 553: DS 421).
 
 [00:13:15] The noteworthy objections and responses within this article include the discussion of *matter* and *universals*. It would seem matter is everywhere, because matter is what all material things are made up of. Aquinas will respond that matter in itself — being the most fundamental bottom of all material things — *doesn't actually exist*; it's just potential, sheer potency for existing things. This would be very different than as we say of God *to be everywhere absolutely*. The same would apply with universals or natures, like *Humanity*: the essence or form of which is pinned down to not being everywhere by the particular matter (in our case) in which it informs. That is a sense of everywhere or not-limited-to-a-place that is *not* what Aquinas will consider absolutely being everywhere — because actually existing outside of the mind of God, this nature is limited and is joined to some material. You're not going to run into *Humanity itself*; you're always going to run into particular humans, particular instances of that overarching universal form, essence, or nature.
 

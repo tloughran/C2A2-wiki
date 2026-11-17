@@ -3,10 +3,10 @@ day: 256
 title: Remitted Venial Sin (Contemporary)
 pairs_with: "[[Day-256 - Remitted Venial Sin]]"
 length_target_words: 1500
-length_actual_words: 793
+length_actual_words: 834
 length_tier: short
-length_ratio_to_target: 0.529
-length_note: "Runs well under the short tier: held to the PRS argument for a single narrow question (III Q.87) rather than padded. Central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered and flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom, and this file sits inside the Tom-owned 241-265 compact frontier band. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the stored 736 recounted EXACT on 2026-09-15 pre-edit; the 57 added that day are citation apparatus only, being the Rohr PRS-27 register grade and the dated search boundary on the Stump venial-remission absence claim. New total 793, ratio 0.529."
+length_ratio_to_target: 0.556
+length_note: "Runs well under the short tier: held to the PRS argument for a single narrow question (III Q.87) rather than padded. Central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered and flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom, and this file sits inside the Tom-owned 241-265 compact frontier band. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the stored 736 recounted EXACT on 2026-09-15 pre-edit; the 57 added that day are citation apparatus only, being the Rohr PRS-27 register grade and the dated search boundary on the Stump venial-remission absence claim. New total 793, ratio 0.529. Recount 2026-11-16 (reviewer): stored 793 reproduced EXACTLY pre-edit under the same boundary; +41 is Frame article anchors only (Q(a)), new total 834, ratio 0.556."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 the Free Energy Principle; free energy as a minimized magnitude, not an on/off flag)"
   - "traditions/hawkins/prs_triplets.md (PRS-06 hierarchical/heterarchical predictive memory; corrections propagate across levels)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Graded-rather-than-binary repair is formal (Friston 
 mind_first_reframe: "Remission of venial sin is graded because corrective repair is continuous free-energy reduction (Friston) with disorder unwound level by level across a layered predictive memory (Hawkins), not a binary switch."
 central_theme_thread: "A finite perspective reduces its divergence from the whole by degrees with the resources it perceives, lesser disorders dissolving continuously as the larger reordering toward loving unity proceeds."
 tags: [synthesis, day/256, theme/graded-repair]
-last_qc_at: "2026-11-04T14:58:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T02:21:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 256 — Remitted Venial Sin (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.87) asks whether and how penance remits *venial* sin — the lesser disorder that wounds but does not sever the relation to God. His answer is graded: venial sins are remitted not all-or-nothing but through acts informed by charity (and through sacramental and devotional means), with the disposition's intensity bearing on the degree of remission. The contemporary version under mind / conscious-realist monism: is the repair of a strayed agent a binary switch or a continuous, graded reduction of disorder?
+Aquinas (III Q.87) asks whether and how penance remits *venial* sin — the lesser disorder that wounds but does not sever the relation to God — across a.1 (whether venial sin can be forgiven without penance), a.2 (whether a fresh infusion of grace is required), a.3 (whether sacramentals such as holy water remove it) and a.4 (whether venial sin can be taken away while mortal sin remains). His answer is graded: venial sins are remitted not all-or-nothing but through acts informed by charity (and through sacramental and devotional means), with the disposition's intensity bearing on the degree of remission. The contemporary version under mind / conscious-realist monism: is the repair of a strayed agent a binary switch or a continuous, graded reduction of disorder?
 
 ## Problem
 

@@ -3,10 +3,10 @@ day: 257
 title: Penitential Restoration (Contemporary)
 pairs_with: "[[Day-257 - Penitential Restoration]]"
 length_target_words: 1500
-length_actual_words: 875
+length_actual_words: 885
 length_tier: short
-length_ratio_to_target: 0.583
-length_note: "Runs well under the short tier: held to the PRS argument for a single question (III Q.89) rather than padded. Central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered and flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom, and this file sits inside the Tom-owned 241-265 compact frontier band. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the field read 727 before the 2026-09-08 pass and was 38 words low on that pass's recount; the stored 846 then recounted EXACT on 2026-09-15 pre-edit; the 29 added that day are citation apparatus only, being the Friston PRS-04 register grade and scope disclosure in the Bridges bullet. New total 875, ratio 0.583."
+length_ratio_to_target: 0.59
+length_note: "Runs well under the short tier: held to the PRS argument for a single question (III Q.89) rather than padded. Central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered and flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom, and this file sits inside the Tom-owned 241-265 compact frontier band. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the field read 727 before the 2026-09-08 pass and was 38 words low on that pass's recount; the stored 846 then recounted EXACT on 2026-09-15 pre-edit; the 29 added that day are citation apparatus only, being the Friston PRS-04 register grade and scope disclosure in the Bridges bullet. New total 875, ratio 0.583. Recount 2026-11-16 (reviewer): stored 875 reproduced EXACTLY pre-edit under the same boundary; +10 is Frame article anchors only (Q(a)), new total 885, ratio 0.59."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 the morphological-attractor formalism — a formal language for target morphology; PRS-82 target morphology as pattern memory held in the cell collective rather than the hardware, which is where the empirical regeneration claim actually sits)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; goal-directedness. The path-dependence of the recovered prior is a general FEP point, not PRS-04's own content.)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-do
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-11-04T14:58:28"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T02:21:56"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 257 — Penitential Restoration (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.89) asks whether the virtues and grace *lost* through mortal sin are *restored* by penance, and whether they return in the same measure as before. His answer: grace and the infused virtues are restored, sometimes more abundantly (the fervent penitent may rise higher than before), sometimes less, depending on the intensity of the penitential movement — so restoration is real but not mechanically identical. The contemporary version under mind / conscious-realist monism: how does an agent that has lost a prior configuration recover it, and need the recovered state equal the one lost?
+Aquinas (III Q.89) asks whether the virtues and grace *lost* through mortal sin are *restored* by penance (a.1), and whether they return in the same measure as before (a.2), with a.3 asking whether former dignity is recovered. His answer: grace and the infused virtues are restored, sometimes more abundantly (the fervent penitent may rise higher than before), sometimes less, depending on the intensity of the penitential movement — so restoration is real but not mechanically identical. The contemporary version under mind / conscious-realist monism: how does an agent that has lost a prior configuration recover it, and need the recovered state equal the one lost?
 
 ## Problem
 

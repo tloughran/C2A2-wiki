@@ -3,10 +3,10 @@ day: 267
 title: Minister of the Keys (Contemporary)
 pairs_with: "[[Day-267 - Minister of the Keys]]"
 length_target_words: 1500
-length_actual_words: 1190
+length_actual_words: 1233
 length_tier: short
-length_ratio_to_target: 0.793
-length_note: "Compact by design: Suppl. Q.19-20 (minister and subjects of the keys) develops the order/jurisdiction distinction and the membership-bounded reach of authority completely; brief because the articles are short — padding would violate the no-padding rule. Substance complete per the five-question review. RECOUNTED 2026-09-16 PRE-EDIT AT EXACTLY 1137, reproducing the stored figure to the word, so nothing here is attributable to arithmetic staleness. This run then added 53 words of citation apparatus repointing the Rohr anchor from PRS-03 to PRS-21: 1137 to 1190, ratio 0.758 to 0.793. No argument added, removed or reweighted. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
+length_ratio_to_target: 0.822
+length_note: "Compact by design: Suppl. Q.19-20 (minister and subjects of the keys) develops the order/jurisdiction distinction and the membership-bounded reach of authority completely; brief because the articles are short — padding would violate the no-padding rule. Substance complete per the five-question review. RECOUNTED 2026-09-16 PRE-EDIT AT EXACTLY 1137, reproducing the stored figure to the word, so nothing here is attributable to arithmetic staleness. This run then added 53 words of citation apparatus repointing the Rohr anchor from PRS-03 to PRS-21: 1137 to 1190, ratio 0.758 to 0.793. No argument added, removed or reweighted. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. RECOUNTED 2026-11-16 PRE-EDIT AT EXACTLY 1190, zero residual, same boundary. Reviewer pass then added 43 words anchoring the Frame to specific articles announced in the transcript (Q(a)): 1190 to 1233, ratio 0.822. No argument added, removed or reweighted."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-22 the group-level Markov blanket as the collective's own inside/outside boundary; PRS-23 the degree-of-unity criterion; PRS-06 the coupled collective)"
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; bioelectric coherence as restoration of cells to the body's collective morphogenetic field)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "The scope of corrective authority tracking the bound
 mind_first_reframe: "Who can wield the keys, and over whom, is reframed as a fact about coupling: a collective agent's corrective power reaches exactly the members inside its own group-level Markov blanket (Friston PRS-22) — the morphogenetic field commands its own coupled cells and no others (Levin PRS-02) — so jurisdiction = the boundary of the perspective-sharing whole."
 central_theme_thread: "The reach of authority traces the reach of shared perspective: a member can be guided toward the whole only insofar as he is coupled into it; the keys bind the living subject, not the stranger or the dead."
 tags: [synthesis, day/267, theme/jurisdiction-as-the-boundary-of-the-coupled-whole]
-last_qc_at: "2026-11-04T18:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T06:19:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 267 — Minister of the Keys (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (Suppl. Q.19-20) moves from the *power* of the keys to its *minister* and its *subjects*. The power of order, conferred in ordination, makes one able to wield the keys; jurisdiction is required to wield them lawfully and validly over a given person. And the power reaches only so far: it is exercised over the baptized, over one's own subjects, over the living — not over non-members, not over those outside one's jurisdiction, not over the dead. The contemporary version under mind / conscious-realist monism: what fixes the *scope* of a collective agent's corrective authority — over whom can the whole act, and why does the reach stop exactly where it does?
+Aquinas (Suppl. Q.19-20) moves from the *power* of the keys to its *minister* and its *subjects*. The power of order, conferred in ordination, makes one able to wield the keys; jurisdiction is required to wield them lawfully and validly over a given person. And the power reaches only so far: it is exercised over the baptized, over one's own subjects, over the living — not over non-members, not over those outside one's jurisdiction, not over the dead. The load-bearing articles are Q.19 a.3 (whether priests alone have the keys), Q.19 a.5-6 (whether wicked, schismatic, excommunicate or suspended priests have the use of the keys) and Q.20 a.1 (whether a priest can use the key he has on any man). The contemporary version under mind / conscious-realist monism: what fixes the *scope* of a collective agent's corrective authority — over whom can the whole act, and why does the reach stop exactly where it does?
 
 ## Problem
 

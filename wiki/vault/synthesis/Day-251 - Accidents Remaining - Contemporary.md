@@ -3,9 +3,9 @@ day: 251
 title: Accidents Remaining (Contemporary)
 pairs_with: "[[Day-251 - Accidents Remaining]]"
 length_target_words: 2200
-length_actual_words: 1213
+length_actual_words: 1228
 length_tier: medium
-length_ratio_to_target: 0.551
+length_ratio_to_target: 0.558
 length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened). Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1053 reproduced EXACTLY pre-edit; the +109 to 1162 (ratio 0.528) decomposes as the Rohr PRS-03 to PRS-21 repoint plus the dating of the Stump absence claim at 38 records, both citation apparatus only. Recount 2026-09-21 under the same boundary (counter calibrated exact on Day 027=3152 and Day 164=2464 both before and after use): the stored 1162 reproduced EXACTLY pre-edit, delta 0; the +51 to 1213 (ratio 0.551) dissolves a single badge that had spanned Hoffman PRS-03 (High) and PRS-04 (Medium, marked Implicit), which had transferred PRS-03's argued evolutionary basis onto a Medium reconstruction. Day 249, reviewed in the same 2026-09-15 16:24 run, had already received exactly this split; it did not reach this file or Day 250. Citation apparatus only, no argument added or reweighted."
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; substance-as-mental-reality)"
@@ -18,15 +18,15 @@ evidence_strength_summary: "Accidents-without-substrate is metaphysical/conteste
 mind_first_reframe: "The Eucharistic accidents remain without a subject because appearances were never grounded in matter — they are perceptual states in mind, so the material 'subject' the Aristotelian sought was a redundant posit that did no real work."
 central_theme_thread: "The persistence of the accidents is the persistence of the perceiver's finitude; the whole offers itself fully within, and not despite, the limited perspective that can see only the icon."
 tags: [synthesis, day/251, theme/appearance-without-substrate]
-last_qc_at: "2026-11-04T12:16:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T22:19:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 251 — Accidents Remaining (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.77) takes up the hardest Aristotelian residue of the Eucharistic doctrine: after transubstantiation, the *accidents* — the appearance, taste, dimension, weight of bread and wine — remain, but they remain *without a subject*, since the substance they once inhered in has been wholly converted. For an Aristotelian this is nearly a contradiction in terms: accidents are by definition what exists *in* a substance. Aquinas's solution is technical — quantity (dimensive extension) is sustained directly by divine power and itself serves as the quasi-subject for the other accidents. The contemporary version of the question under mind / conscious-realist monism: what is it for sensible appearances to persist when there is no underlying material thing for them to be appearances *of*?
+Aquinas (III Q.77) takes up the hardest Aristotelian residue of the Eucharistic doctrine: after transubstantiation, the *accidents* — the appearance, taste, dimension, weight of bread and wine — remain, but they remain *without a subject*, since the substance they once inhered in has been wholly converted. For an Aristotelian this is nearly a contradiction in terms: accidents are by definition what exists *in* a substance. Aquinas's solution is technical — quantity (dimensive extension) is sustained directly by divine power and itself serves as the quasi-subject for the other accidents (Q.77 a.1 on accidents without a subject; a.2 on dimensive quantity as their quasi-subject). The contemporary version of the question under mind / conscious-realist monism: what is it for sensible appearances to persist when there is no underlying material thing for them to be appearances *of*?
 
 ## Problem
 

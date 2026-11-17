@@ -3,10 +3,10 @@ day: 266
 title: Keys of the Kingdom (Contemporary)
 pairs_with: "[[Day-266 - Keys of the Kingdom]]"
 length_target_words: 1500
-length_actual_words: 1282
+length_actual_words: 1328
 length_tier: short
-length_ratio_to_target: 0.855
-length_note: "Compact by design: Suppl. Q.17-18 develops the power-of-the-keys (jurisdiction, not order) and its grace-bearing effect completely; the nested-collective-agency reading is stated without padding, consistent with the surrounding satisfaction-treatise pairs (Days 264-265). Substance complete per the five-question review. RECOUNTED 2026-09-16 PRE-EDIT AT EXACTLY 1203, reproducing the stored figure to the word, so nothing here is attributable to arithmetic staleness. This run then added 79 words of citation apparatus repointing the Rohr anchor from PRS-03 to PRS-21: 1203 to 1282, ratio 0.802 to 0.855 — the closest to target in this cohort. No argument added, removed or reweighted. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
+length_ratio_to_target: 0.885
+length_note: "Compact by design: Suppl. Q.17-18 develops the power-of-the-keys (jurisdiction, not order) and its grace-bearing effect completely; the nested-collective-agency reading is stated without padding, consistent with the surrounding satisfaction-treatise pairs (Days 264-265). Substance complete per the five-question review. RECOUNTED 2026-09-16 PRE-EDIT AT EXACTLY 1203, reproducing the stored figure to the word, so nothing here is attributable to arithmetic staleness. This run then added 79 words of citation apparatus repointing the Rohr anchor from PRS-03 to PRS-21: 1203 to 1282, ratio 0.802 to 0.855 — the closest to target in this cohort. No argument added, removed or reweighted. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. RECOUNTED 2026-11-16 PRE-EDIT AT EXACTLY 1282, zero residual, same boundary. Reviewer pass then added 46 words anchoring the Frame to specific articles announced in the transcript (Q(a)): 1282 to 1328, ratio 0.885. No argument added, removed or reweighted."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-07 FEP/Markov-blanket substrate-independence; PRS-22 the group-level Markov blanket)"
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents; cell collectives as problem-solving agents open to top-down control)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Church-as-collective-agent and the keys-as-delegated
 mind_first_reframe: "The power of the keys is reframed as the real top-down causal authority a higher-order collective agent (the Church) holds over the members coupled into it — a delegated, ministerial power that opens or closes a member's standing in the whole, modeled formally as a collective sustaining its own group-level Markov blanket (Friston PRS-22, on the coupling of PRS-06) and biologically as the morphogenetic whole's command over its cells (Levin PRS-08)."
 central_theme_thread: "A perspective-limited agent wields a power that is not its own: the minister opens the kingdom by an authority that descends from a whole perceiving more than he does — nested agency in the key of jurisdiction."
 tags: [synthesis, day/266, theme/the-keys-as-delegated-collective-agency]
-last_qc_at: "2026-11-04T18:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T06:19:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 266 — Keys of the Kingdom (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (Suppl. Q.17-18) opens the treatment of the *power of the keys*: the spiritual authority, given to the Church on the words of Matthew 16 and 18, to bind and to loose — to open or close the way to the kingdom — together with the *effect* of that power, the remission of sin. The keys are a power of jurisdiction in the forum of conscience; the minister does not create grace but ministers it, the principal cause being Christ. The contemporary version under mind / conscious-realist monism: what is it for a community to hold a *real* authority over the standing of its members — a power exercised by limited individuals but belonging to the whole — and what does it mean for such a power to *effect* a change in a member rather than merely register one?
+Aquinas (Suppl. Q.17-18) opens the treatment of the *power of the keys*: the spiritual authority, given to the Church on the words of Matthew 16 and 18, to bind and to loose — to open or close the way to the kingdom — together with the *effect* of that power, the remission of sin. The keys are a power of jurisdiction in the forum of conscience; the minister does not create grace but ministers it, the principal cause being Christ. The load-bearing articles are Q.17 a.2 (whether the key is the power of binding and loosing), Q.18 a.1 (whether the power of the keys extends to the remission of guilt) and Q.18 a.4 (whether the priest can bind and loose according to his own judgment). The contemporary version under mind / conscious-realist monism: what is it for a community to hold a *real* authority over the standing of its members — a power exercised by limited individuals but belonging to the whole — and what does it mean for such a power to *effect* a change in a member rather than merely register one?
 
 ## Problem
 

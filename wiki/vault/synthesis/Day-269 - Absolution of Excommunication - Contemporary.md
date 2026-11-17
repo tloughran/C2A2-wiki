@@ -3,10 +3,10 @@ day: 269
 title: Absolution of Excommunication (Contemporary)
 pairs_with: "[[Day-269 - Absolution of Excommunication]]"
 length_target_words: 1500
-length_actual_words: 1078
+length_actual_words: 1117
 length_tier: short
-length_ratio_to_target: 0.719
-length_note: "Compact by design: the source episode is short (~5.5 min, 988 transcript words — that figure is the TRANSCRIPT count, not this commentary's, and must not be read as a body count) and develops the contact-limit and binding/loosing-symmetry motifs completely without padding. RECOUNTED at QC 2026-09-22: 970 exactly as stored pre-edit (boundary: body bounded at the frontmatter block parsed for `day`, auto-linker trailer cut, bare horizontal-rule separators dropped, tokens [A-Za-z']+; counter calibrated first on Day 027=3152 footer and Day 164=2464 top). This run then disclosed Friston PRS-06 as Label (Implicit)/Confidence Medium and ungrouped it from PRS-22's High in body, bullet and evidence summary: apparatus only, no claim added or altered. New total 1078, ratio 0.647 -> 0.719."
+length_ratio_to_target: 0.745
+length_note: "Compact by design: the source episode is short (~5.5 min, 988 transcript words — that figure is the TRANSCRIPT count, not this commentary's, and must not be read as a body count) and develops the contact-limit and binding/loosing-symmetry motifs completely without padding. RECOUNTED at QC 2026-09-22: 970 exactly as stored pre-edit (boundary: body bounded at the frontmatter block parsed for `day`, auto-linker trailer cut, bare horizontal-rule separators dropped, tokens [A-Za-z']+; counter calibrated first on Day 027=3152 footer and Day 164=2464 top). This run then disclosed Friston PRS-06 as Label (Implicit)/Confidence Medium and ungrouped it from PRS-22's High in body, bullet and evidence summary: apparatus only, no claim added or altered. New total 1078, ratio 0.647 -> 0.719. RECOUNTED 2026-11-16 PRE-EDIT AT EXACTLY 1078, zero residual, same boundary. Reviewer pass then added 39 words anchoring the Frame to specific articles announced in the transcript (Q(a)): 1078 to 1117, ratio 0.745. No argument added, removed or reweighted."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-07 bioelectric reprogramming — restoring a defected cell to the collective field)"
   - "traditions/friston/prs_triplets.md (PRS-22 the group-level Markov blanket maintained by the collective as a whole; PRS-06 multi-agent coherence via mutual modeling — agents couple by reducing prediction error in each other's behavior)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "The binding/loosing symmetry is formal on Friston PR
 mind_first_reframe: "Absolution is reframed as re-coupling: the same jurisdictional power that drew the boundary now dissolves it, restoring the member to the collective field (Levin PRS-07) — the Markov blanket re-incorporates what it had excluded (Friston) — so the body's boundary is permeable by design, ordered to reintegration."
 central_theme_thread: "Re-inclusion is the telos the cut was for: the same power that bound looses, returning the perspective-limited member to the whole — disorder resolved into a deeper reorder."
 tags: [synthesis, day/269, theme/absolution-as-re-coupling]
-last_qc_at: "2026-11-04T18:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T06:19:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 269 — Absolution of Excommunication (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (Suppl. Q.23-24) treats the *limits of contact* with the excommunicated — the faithful withhold ordinary fellowship to mark the separation and prompt amendment, with allowances for necessity and prior duty — and *absolution from excommunication*: the same authority that bound can loose, restoring the member to the communion. The contemporary version under mind / conscious-realist monism: what is it for a collective agent to *re-incorporate* a member it had excluded, and why is the boundary it drew reversible by the same power that drew it?
+Aquinas (Suppl. Q.23-24) treats the *limits of contact* with the excommunicated — the faithful withhold ordinary fellowship to mark the separation and prompt amendment, with allowances for necessity and prior duty — and *absolution from excommunication*: the same authority that bound can loose, restoring the member to the communion. The load-bearing articles are Q.23 a.1 (whether it is lawful in matters purely corporeal to communicate with an excommunicated person) and Q.24 a.1-2 (whether any priest can absolve his subject; whether anyone can be absolved against his will). The contemporary version under mind / conscious-realist monism: what is it for a collective agent to *re-incorporate* a member it had excluded, and why is the boundary it drew reversible by the same power that drew it?
 
 ## Problem
 

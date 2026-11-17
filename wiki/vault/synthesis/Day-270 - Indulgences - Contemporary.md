@@ -3,10 +3,10 @@ day: 270
 title: Indulgences (Contemporary)
 pairs_with: "[[Day-270 - Indulgences]]"
 length_target_words: 2200
-length_actual_words: 1711
+length_actual_words: 1755
 length_tier: medium
-length_ratio_to_target: 0.778
-length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review. RECOUNTED 2026-09-16 BEFORE editing: 1602 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's Rohr PRS-03 to PRS-21 repoint then added 66 words of citation apparatus: 1602 to 1668, ratio 0.728 to 0.758. No argument altered. RECOUNTED 2026-09-22 BEFORE editing: 1668 exactly as stored, same boundary. This run's disclosure that Friston PRS-06 is marked (Implicit) then added 43 words of citation apparatus. New total 1711, ratio 0.778. No argument altered."
+length_ratio_to_target: 1.170
+length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review. RECOUNTED 2026-09-16 BEFORE editing: 1602 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's Rohr PRS-03 to PRS-21 repoint then added 66 words of citation apparatus: 1602 to 1668, ratio 0.728 to 0.758. No argument altered. RECOUNTED 2026-09-22 BEFORE editing: 1668 exactly as stored, same boundary. This run's disclosure that Friston PRS-06 is marked (Implicit) then added 43 words of citation apparatus. New total 1711, ratio 0.778. No argument altered. RECOUNTED 2026-11-16 PRE-EDIT AT EXACTLY 1711, zero residual, same boundary. Reviewer pass then added 44 words anchoring the Frame to specific articles announced in the transcript (Q(a)): 1711 to 1755, ratio 1.170. No argument added, removed or reweighted."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory as cognitive glue — the target pattern held by the collective, not the cell; PRS-07 bioelectric reprogramming as the mechanism of application)"
   - "traditions/friston/prs_triplets.md (PRS-06 the collective agent; mutual modeling pools resources across members)"
@@ -17,15 +17,15 @@ evidence_strength_summary: "The treasury-as-shared-field and one-resource-meetin
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-11-04T18:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T06:19:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 270 — Indulgences (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (Suppl. Q.25-26) closes this run with *indulgences*: a remission of the temporal punishment due to sin, drawn from the *treasury* of the superabundant merits of Christ and the saints and applied to a member by the Church's authority, together with the question of *who can grant* them (those holding jurisdiction — chiefly the pope, and bishops within limits). The treasury (the *thesaurus meritorum*) is a common, more-than-sufficient store; the Church, holding the keys, dispenses from it to individuals; the indulgence truly avails before God to the measure of the granting authority and the receiving devotion. The contemporary version under mind / conscious-realist monism: what is it for a whole to hold a *shared store* on which its members may draw — a surplus accumulated by some and applied to the need of others — and what kind of structure is a resource that meets many members' deficits at once?
+Aquinas (Suppl. Q.25-26) closes this run with *indulgences*: a remission of the temporal punishment due to sin, drawn from the *treasury* of the superabundant merits of Christ and the saints and applied to a member by the Church's authority, together with the question of *who can grant* them (those holding jurisdiction — chiefly the pope, and bishops within limits). The treasury (the *thesaurus meritorum*) is a common, more-than-sufficient store; the Church, holding the keys, dispenses from it to individuals; the indulgence truly avails before God to the measure of the granting authority and the receiving devotion. The load-bearing articles are Q.25 a.1 (whether an indulgence can remit any part of the punishment due), Q.25 a.2 (whether indulgences are as effective as they claim to be) and Q.26 a.3-4 (whether a bishop, or one in mortal sin, can grant indulgences). The contemporary version under mind / conscious-realist monism: what is it for a whole to hold a *shared store* on which its members may draw — a surplus accumulated by some and applied to the need of others — and what kind of structure is a resource that meets many members' deficits at once?
 
 ## Problem
 

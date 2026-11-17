@@ -3,10 +3,10 @@ day: 268
 title: Excommunication (Contemporary)
 pairs_with: "[[Day-268 - Excommunication]]"
 length_target_words: 1500
-length_actual_words: 1252
+length_actual_words: 1288
 length_tier: short
-length_ratio_to_target: 0.835
-length_note: "Compact by design: Suppl. Q.21-22 (excommunication) develops the medicinal-decoupling and bounded-reversible-repulsion motifs completely; concision is faithful to the short Supplement articles, not an omission. Substance complete per the five-question review. RECOUNTED 2026-09-08 BEFORE editing: 1141 exactly as stored. This run's repair of the orphaned Wright PRS-34 citation then added 63 words of citation apparatus: 1141 → 1204, ratio 0.76 → 0.803. No argument altered. RECOUNTED 2026-09-16 BEFORE editing: 1204 exactly as stored. This run's Rohr PRS-03 to PRS-21 repoint then added 48 words of citation apparatus: 1204 → 1252, ratio 0.803 → 0.835. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
+length_ratio_to_target: 0.859
+length_note: "Compact by design: Suppl. Q.21-22 (excommunication) develops the medicinal-decoupling and bounded-reversible-repulsion motifs completely; concision is faithful to the short Supplement articles, not an omission. Substance complete per the five-question review. RECOUNTED 2026-09-08 BEFORE editing: 1141 exactly as stored. This run's repair of the orphaned Wright PRS-34 citation then added 63 words of citation apparatus: 1141 → 1204, ratio 0.76 → 0.803. No argument altered. RECOUNTED 2026-09-16 BEFORE editing: 1204 exactly as stored. This run's Rohr PRS-03 to PRS-21 repoint then added 48 words of citation apparatus: 1204 → 1252, ratio 0.803 → 0.835. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. RECOUNTED 2026-11-16 PRE-EDIT AT EXACTLY 1252, zero residual, same boundary. Reviewer pass then added 36 words anchoring the Frame to specific articles announced in the transcript (Q(a)): 1252 to 1288, ratio 0.859. No argument added, removed or reweighted."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-11 cancer as dissociative identity disorder of the body)"
   - "traditions/friston/prs_triplets.md (PRS-18 ZBS band-width — exclusion vs. assimilation; PRS-22 the group-level Markov blanket — a statistical boundary maintained by the collective as a whole, distinct from its members')"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Excommunication-as-response-to-defection is empirica
 mind_first_reframe: "Excommunication is reframed as a collective agent's response to a member that has decoupled from the whole's shared goals — the body's recognition and ratification of a defection (Levin PRS-02) or dissociation (PRS-11) — drawn, when medicinal, so that the cut prompts re-coupling rather than loss."
 central_theme_thread: "Perspective-limitation can harden into defection: a part pursuing its own goal against the whole. Excommunication is the whole's painful boundary-drawing around that part, ordered — when rightly done — to its return to loving unity, not its destruction."
 tags: [synthesis, day/268, theme/excommunication-as-medicinal-decoupling]
-last_qc_at: "2026-11-04T18:17:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T06:19:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 268 — Excommunication (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (Suppl. Q.21-22) defines *excommunication* as separation from the communion of the Church — chiefly from the sacraments and the general suffrages of the faithful — defends its *congruity* as medicinal rather than merely punitive, names its *cause* (grave, contumacious sin), and asks *who* can impose it (those holding jurisdiction, by the power of the keys). The major excommunication cuts the offending member from the visible body so that shame may bring amendment; the model text is Paul's in 1 Corinthians 5, "deliver this man to Satan… that his spirit may be saved." The contemporary version under mind / conscious-realist monism: what is it for a collective agent to *cut off* one of its own members, and how can severance be ordered to the member's restoration rather than his ruin?
+Aquinas (Suppl. Q.21-22) defines *excommunication* as separation from the communion of the Church — chiefly from the sacraments and the general suffrages of the faithful — defends its *congruity* as medicinal rather than merely punitive, names its *cause* (grave, contumacious sin), and asks *who* can impose it (those holding jurisdiction, by the power of the keys). The major excommunication cuts the offending member from the visible body so that shame may bring amendment; the model text is Paul's in 1 Corinthians 5, "deliver this man to Satan… that his spirit may be saved." The load-bearing articles are Q.21 a.1 (whether excommunication is suitably defined as separation from the communion of the Church), Q.21 a.2 (whether the Church can excommunicate anyone) and Q.22 a.1 (whether every priest can excommunicate). The contemporary version under mind / conscious-realist monism: what is it for a collective agent to *cut off* one of its own members, and how can severance be ordered to the member's restoration rather than his ruin?
 
 ## Problem
 

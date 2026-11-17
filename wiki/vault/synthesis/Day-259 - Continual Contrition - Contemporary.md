@@ -3,10 +3,10 @@ day: 259
 title: Continual Contrition (Contemporary)
 pairs_with: "[[Day-259 - Continual Contrition]]"
 length_target_words: 1500
-length_actual_words: 1015
+length_actual_words: 1063
 length_tier: short
-length_ratio_to_target: 0.677
-length_note: "Compact by design: Suppl. Q.2–3 turns on the single motif of contrition-as-persistent-corrective-signal; the one-to-one parallel is complete without padding. The stored 1007 recounted EXACT on 2026-09-08; the +8 since is citation apparatus only — the Stump register re-count and re-test date in the absence declination."
+length_ratio_to_target: 0.709
+length_note: "Compact by design: Suppl. Q.3–4 (corrected 2026-11-16 from Q.2–3 against the transcript's article announcements) turns on the single motif of contrition-as-persistent-corrective-signal; the one-to-one parallel is complete without padding. The stored 1007 recounted EXACT on 2026-09-08; the +8 since is citation apparatus only — the Stump register re-count and re-test date in the absence declination. Recount 2026-11-16 (reviewer): stored 1015 reproduced EXACTLY pre-edit under the same boundary; +48 is Frame article anchors only (Q(a)), new total 1063, ratio 0.709."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 the Free Energy Principle, High — where the continuous-correction claim's formal weight sits; PRS-04 the organism as active modeler, (Implicit)/Medium — the goal-directed framing)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, *Falling Upward* — the falling-and-rising rhythm; PRS-05 the wounded pattern redemptively re-read — what happens to the self within it)"
@@ -16,15 +16,15 @@ evidence_strength_summary: "Continual contrition as persistent error signal is f
 mind_first_reframe: "Continual contrition is reframed as an agent's persistent corrective signal — sustained model revision toward the good (Friston) taking the contemplative shape of ongoing falling-and-rising (Rohr) rather than one-time remorse."
 central_theme_thread: "'Working out salvation in fear and trembling' (Phil 2:12) is continual contrition: the perspective-limited agent, unable to see the whole, keeps a standing corrective orientation toward loving unity, the ongoing sorrow the felt form of a finite agent computing its way under guidance toward a unity it does not yet possess."
 tags: [synthesis, day/259, theme/continual-contrition-as-sustained-revision]
-last_qc_at: "2026-11-04T12:16:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T02:21:56"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 259 — Continual Contrition (Contemporary Parallel)
 
 ## Frame
 
-Aquinas, in the Penance material the Supplement resumes (Suppl. Q.2–3), treats contrition — sorrow for sin with the purpose of amendment — and the question of its duration and renewal. Contrition is not exhausted in a single moment of remorse; the penitential disposition is *ongoing*, a sorrow to be renewed and sustained rather than spent once. The contemporary version under mind / conscious-realist monism: what is it for an agent to hold a *continual* corrective orientation — not a one-time error correction but a persistent, course-keeping signal?
+Aquinas, in the Penance material the Supplement resumes (Suppl. Q.3–4), treats contrition — sorrow for sin with the purpose of amendment — first its degree (Q.3 a.1–2: whether its sorrow is the greatest, whether it can be too great) and then the question of its duration and renewal (Q.4 a.1, whether the whole of this life is the time for contrition; a.2, whether one ought to grieve for sin continually; a.3, whether souls are contrite after this life). Contrition is not exhausted in a single moment of remorse; the penitential disposition is *ongoing*, a sorrow to be renewed and sustained rather than spent once. The contemporary version under mind / conscious-realist monism: what is it for an agent to hold a *continual* corrective orientation — not a one-time error correction but a persistent, course-keeping signal?
 
 ## Problem
 

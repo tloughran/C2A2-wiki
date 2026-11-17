@@ -3,7 +3,7 @@ day: 247
 title: Baptism & Circumcision (Contemporary)
 pairs_with: "[[Day-247 - Baptism & Circumcision]]"
 length_target_words: 2200
-length_actual_words: 1097
+length_actual_words: 1134
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler; PRS-10 active inference as framework for reasoning — selection among competing world models)"
@@ -11,20 +11,20 @@ karpathy_wiki_sources:
   - "traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry; PRS-09 Synergistic Coils — the PRS lineage: Kuhn + MacIntyre + Levin via James)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder — the disorder necessary for growth)"
 evidence_strength_summary: "Covenant continuity-with-revision theological (Wright, high); generative-model revision formal (Friston); tradition-as-rational-progress is Tom's PRS lineage (Kuhn/MacIntyre), not a thinker's self-description; central-theme moderately engaged."
-length_ratio_to_target: 0.499
+length_ratio_to_target: 0.515
 length_note: "Compact-by-design: III Q.70 (baptism/circumcision continuity) rendered in tight, complete PRS form; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened). RECOUNTED 2026-09-19 PRE-EDIT AT EXACTLY 867, reproducing the stored field to the word, so nothing here is attributable to arithmetic staleness; the boundary was calibrated first against Day 027 (3152, reproducing its recorded +4 residual) and Day 164 (2464, exact) before being trusted. This run then added 230 words of citation apparatus to the two Friston bridge bullets — carrying PRS-04's (Implicit)/Medium grade, carrying PRS-10's High/paper-backed grade with its artificial-reasoning domain named as this commentary's extension, and naming PRS-22 as the collective-scale record the section's community-level claim actually wants: 867 to 1097, ratio 0.394 to 0.499. No argument was added, removed or reweighted, and no anchor was repointed. Boundary used: YAML frontmatter block stripped wherever it sits, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. Still far below the -25% floor and still inside the standing band; note also that this day is the sharpest instance of the 241-257 dropped-question escalation (Habash announces Q.69 and Q.70; summa_ref records Q.70; the commentary treats circumcision only), so part of the shortfall is that missing question, not compression."
 mind_first_reframe: "Baptism-replacing-circumcision is reframed as a faithful structural revision of a covenant community's generative model — the deep prior (membership through faith in Christ) is conserved while the tracking sign is reconfigured — so the earlier sign is fulfilled, not falsified."
 central_theme_thread: "A tradition that revises its signs while conserving its telos is the social-temporal form of perspective-limited guidance: no generation perceives the whole, so the community computes toward loving unity across acts of an unfinished drama, each revision a better-resourced approximation."
 tags: [synthesis, day/247, theme/sign-revision-across-covenants]
-last_qc_at: "2026-11-04T10:16:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-15T22:19:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 247 — Baptism & Circumcision (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.70) compares baptism with circumcision: both are signs of faith in Christ (one prospective, one accomplished), both confer covenant membership, yet baptism supersedes and exceeds circumcision in efficacy. The medieval question is continuity-with-revision: how a later sign can fulfill and replace an earlier one without the earlier being a mistake. The contemporary version under mind / conscious-realist monism: how does a community *revise its own generative model* — the very signs by which it tracks reality — while remaining the same tradition faithfully extended rather than a different one?
+Aquinas (III Q.70) compares baptism with circumcision: both are signs of faith in Christ (one prospective, one accomplished), both confer covenant membership, yet baptism supersedes and exceeds circumcision in efficacy. The anchors are Q.70 a.1 (circumcision as preparation for and figure of baptism) and a.4 (circumcision bestowing grace as a seal of faith in the future Passion, where baptism acts by the power of the Passion accomplished). The medieval question is continuity-with-revision: how a later sign can fulfill and replace an earlier one without the earlier being a mistake. The contemporary version under mind / conscious-realist monism: how does a community *revise its own generative model* — the very signs by which it tracks reality — while remaining the same tradition faithfully extended rather than a different one?
 
 ## Problem
 

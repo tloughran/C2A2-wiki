@@ -3,21 +3,21 @@ day: 290
 title: Polygamy & Bigamy (Contemporary)
 pairs_with: "[[Day-290 - Polygamy & Bigamy]]"
 length_target_words: 2200
-length_actual_words: 1308
+length_actual_words: 1327
 length_tier: medium
-length_note: "Recounted 2026-09-15 (this file had not been touched by the 2026-09-08 recount pass and still carried the generic boilerplate note). Boundary used, stated so the next pass can reproduce or refute it: top frontmatter stripped, no auto-linker trailer present on this file, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Pre-edit body measured 1242 against a stored 1235 — a 7-word overstatement, small enough that it does not move the tier or the verdict but recorded rather than left silent. Tier re-verified correct: the paired transcript's cleaned word_count is 2135, which the Summa.md table puts in medium (2000-3500), and this file is set to medium. Runs under tier target by design — III Q.65-66 developed to substantive completeness rather than to a word count, per the tiered+flexible length policy; not padded, not a silent breach. This run added 66 words stating the Confidence grades on the Friston PRS-06 / PRS-23 pairing that carries the day's structural argument, which is citation apparatus rather than new argument."
+length_note: "Recounted 2026-09-15 (this file had not been touched by the 2026-09-08 recount pass and still carried the generic boilerplate note). Boundary used, stated so the next pass can reproduce or refute it: top frontmatter stripped, no auto-linker trailer present on this file, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Pre-edit body measured 1242 against a stored 1235 — a 7-word overstatement, small enough that it does not move the tier or the verdict but recorded rather than left silent. Tier re-verified correct: the paired transcript's cleaned word_count is 2135, which the Summa.md table puts in medium (2000-3500), and this file is set to medium. Runs under tier target by design — III Q.65-66 developed to substantive completeness rather than to a word count, per the tiered+flexible length policy; not padded, not a silent breach. This run added 66 words stating the Confidence grades on the Friston PRS-06 / PRS-23 pairing that carries the day's structural argument, which is citation apparatus rather than new argument. Reviewer 2026-11-16: recount under the same boundary reproduced 1308 exactly pre-edit; the Levin PRS-32 bridge badge was corrected from 'empirical at biological scale' to the register's programmatic-thesis reading (matching the sibling Day 289 correction), +19 words, new total 1327, ratio 0.603. Citation apparatus only."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — Confidence Medium, marked Implicit; PRS-23 nested individual/group-level generative models — Confidence Medium)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-02 faithful improvisation, PRS-03 inaugurated eschatology; canonical: trajectory of biblical sexual ethics)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior, PRS-04 embodied love)"
 evidence_strength_summary: "Friston dyadic-symmetry formal in kind, but both carrying records are Confidence Medium (PRS-06 additionally Implicit) and are the softer legs of the day; the 'why two' argument is conceptual/structural; Wright on the biblical trajectory scriptural-scholarly; Aquinas's tolerated-under-old-dispensation point is historical-theological."
-length_ratio_to_target: 0.595
+length_ratio_to_target: 0.603
 mind_first_reframe: "The dyad is the unit of complete, symmetric mutual union because total equal self-gift cannot be divided among several without ceasing to be total or equal — polygamy yields a real but lower-symmetry union, not full one-flesh mutuality."
 central_theme_thread: "Self-gift must be not only symmetric but paired; the dyad is the elementary cell of the project's vision of unity, and the wider communion is built by interlinking complete dyadic unions rather than diluting self-gift across many."
 tags: [synthesis, day/290, theme/why-the-dyad-is-the-unit-of-complete-union]
-last_qc_at: "2026-11-05T04:17:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-16T14:18:38"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 290 — Polygamy & Bigamy (Contemporary Parallel)
@@ -46,7 +46,7 @@ The project's loving unity is the union of perspectives in which each gives itse
 
 - **Friston PRS-06 / PRS-23 (formal in kind; the load-bearing pairing, and both records are Confidence **Medium** — PRS-06 additionally marked **(Implicit)**, since it extends the free-energy principle from the individual organism to multi-agent systems rather than restating an established multi-agent result):** complete symmetric self-gift saturates a dyad and must be divided among more, while PRS-23's group-level-blanket criterion shows larger configurations still cohere as collectives — the structural reading of "polygamy compromises *fides* and equal self-gift" without denying that plural households are real unions. The grades are stated because this pairing carries the day's whole structural argument; the two Wright records (PRS-02, PRS-03, both High) are the firmer legs and carry the scriptural-trajectory half.
 - **Wright PRS-02 / PRS-03 (scriptural/theological):** the biblical handling of polygamy as a trajectory toward the dyadic ideal — "tolerated, not ideal," read developmentally.
-- **Levin PRS-32 (empirical at biological scale):** higher individuals have determinate integration-forms; not every grouping yields the same kind of whole.
+- **Levin PRS-32 (Confidence High, but a unifying programmatic thesis rather than a measurement — not empirical at biological scale; the measured work beneath it is PRS-17):** higher individuals have determinate integration-forms; not every grouping yields the same kind of whole.
 - **Rohr PRS-7 / PRS-04 (theological):** the issue is the wholeness of self-gift, not arithmetic; relationship is constitutive.
 
 ## Where this leaves us
