@@ -29670,3 +29670,27 @@ Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no
 *2026-11-16 (local pass): 4 items queued, all [IN-HOUSE]. ASSUMPTION-2130 adds evidence to the ASSUMPTION-2124 item (evening sync: only the local copy reaches Chrome). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-16T05:41:49Z by cloud-lit-2026-11-16; not held, append safe.*
 
 *2026-11-17 (cloud-lit-2026-11-17): queue empty for this run. No new literature-lane items since 11-16 (14a/14b cloud firing 11-17 04:37Z was a NO-OP, no transcript source; 11-16 local pass queued 4 [IN-HOUSE] only). queue_scan.py: 0 searched-but-undispositioned, 0 half-searched; 151 bare items = 15d re-trigger backlog, untouched per standing precedent. No 15a/15b/15c writes.*
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2137
+  Statement: [stated] Local Hawkins copy: 0 proposals, 11 pending, next number PROP-2026-11-17-001; review page already lists -001..-005 and 16 pending.
+  Claim to test: In-house: list pending/ and needs_review/ PROP-2026-11-17-* files with mtimes; compare to the local Hawkins run's start time; reconcile 11 vs 16 (which folders each count reads).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2139
+  Statement: [stated] L2 signal stream flat at 1958 since 11-11; "nothing is broken yet" under the 21-day warning.
+  Claim to test: In-house: check the L2 producer's last run and input count since 11-11; decide whether no signals means quiet sources or a stalled producer.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1250
+  Statement: [inferred] A hunt run's null is read as a judgment on sources when it depends on the copy's fetch reach.
+  Claim to test: In-house: for 11-10..11-17, pair local and cloud hunt runs by day; list items one copy declined and the other carded; record the access reason given.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1251
+  Statement: [inferred] Morning status treats "enabled and ran on time" as health; over-firing is not checked.
+  Claim to test: In-house: read the morning-status SKILL.md check list; confirm whether DOUBLE-REGISTERED or duplicate-output conditions are evaluated.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-17 (local pass): 4 items queued, all [IN-HOUSE]. Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-17T05:41:08Z by cloud-lit-2026-11-17; not held, append safe.*
+
+*2026-11-18 (cloud-lit-2026-11-18): queue empty for this run. No new literature-lane items since 11-17 cloud-lit run (no 11-18 14a/14b additions to the queue; 11-17 local pass queued 4 [IN-HOUSE] only: ASSUMPTION-2137/-2139, PRESUMPTION-1250/-1251). queue_scan.py: 0 searched-but-undispositioned, 0 half-searched; 151 bare items = 15d re-trigger backlog (unchanged from 11-17), untouched per standing precedent. No 15a/15b/15c writes.*

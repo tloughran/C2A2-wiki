@@ -7762,3 +7762,24 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Next scheduled checks: unchanged (WATCH-007 11-19; WATCH-003/-004 11-20; WATCH-005/-006 11-21).
 
 *Duplicate firing (~07:40 UTC). No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-18
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-17 run (latest mtime is the Hawkins card, 11-15). `review/archive/` unchanged at 32 files (latest `2026-11-12_decisions.md`), so no new CHANGE/CHECK/CONDITIONAL and no off-cadence trigger for WATCH-003/-007. New items added: 0.
+  Event sweep (not counted): `architecture/sewing_agent_log.md` last written 11-16 03:00 UTC (no Sewing run observed since; WATCH-006 NOT met); `traditions/macintyre/prs_triplets.md` unchanged (10-16). Five new `pending/` cards (11-17: four Hawkins, one Levin) do not carry any watched proposal ID. Grep of PROCESSED_LOG, 11-17/11-18 changelogs, 11-17 daily-sync files, master wiki and the 11-18 lit-pipeline skip note for the five watched IDs/slugs: only pre-existing references. No Wonderstruck transcript in the vault (WATCH-005 NOT met).
+  Items checked: 0 (none due on cadence) · Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 3 (WATCH-003, -004, -006; existing flags stand, no new STALE-WATCH-FLAG) · WATCH-005 at 5 checks, goes stale if its 11-21 check finds nothing.
+  Next scheduled checks: WATCH-007 11-19 · WATCH-003/-004 11-20 · WATCH-005/-006 11-21 · any new `review/archive/` file triggers WATCH-003/-007 off-cadence.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-18
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-17 run (latest mtime: Hawkins card 11-15 04:36). `review/archive/` unchanged at 32 files (latest `2026-11-12_decisions.md`), so no new CHANGE/CHECK/CONDITIONAL. New items added: 0.
+  Off-cadence triggers checked: no new archive file (WATCH-003/-007); `architecture/sewing_agent_log.md` unchanged since 11-15 22:00 and `traditions/macintyre/prs_triplets.md` unchanged since 10-16 (WATCH-006). The 16 vault `.md` files newer than the 11-17 watch-list write (5 new `pending/` cards, PROCESSED_LOG, master wiki, 11-17/11-18 changelogs, daily-sync, metrics, for_lit_search, assumptions, presumptions, `review/2026-11-18_lit-pipeline_skipped-lock-unavailable.md`) contain only historical references to watched IDs. None of them is a disposition or edit.
+  Context note for WATCH-007 (not a condition): `pending/` now holds the Hawkins sibling recordings named in this item's context, `2026-11-17_hawkins_latency-mismatches.md` and `2026-11-17_hawkins_variations-in-learned-object-models.md`, plus two other 11-17 Hawkins cards. If Tom's eventual CHECK note concerns TBP-team authorship or the recording dates, the same question applies to these four cards.
+  Items checked: 0 (none due) · Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 3 (WATCH-003, -004, -006; existing flags stand, no new STALE-WATCH-FLAG) · WATCH-005 at 5 checks, goes stale if its 11-21 check finds nothing.
+  Next scheduled checks: WATCH-007 11-19 · WATCH-003/-004 11-20 · WATCH-005/-006 11-21.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run. No notification sent: nothing resolved or newly stale.*

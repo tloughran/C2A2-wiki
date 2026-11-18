@@ -40332,3 +40332,90 @@ ASSUMPTION-2135:
     Current status: UNTESTED
 
 *2026-11-16 14a (local pass): ASSUMPTION-2129–2135 (7). Queued [IN-HOUSE]: 2129, 2132, 2133. Not queued: 2130 (evidence for 2124), 2131 (via PRESUMPTION-1249), 2134 (framework), 2135 (recurrence).*
+
+ASSUMPTION-2136:
+  Date identified: 2026-11-17
+  Statement: [stated] Evening sync (local copy): "The cloud copy had already run at about 18:35 and sent a short version of today's summary to your walk chat ... I opened that chat in Chrome and checked: the message is there and Chat has already replied to it. I didn't send a second one." Rationale drift: on 11-16 the local copy said it was the only copy that reaches Chrome (ASSUMPTION-2130); on 11-17 the cloud copy delivered.
+  Context: evening sync ddd39667
+  Type: empirical
+  Related decisions: ASSUMPTION-2124; ASSUMPTION-2130; OPEN-299; PRESUMPTION-1196
+  Testability: evidence for ASSUMPTION-2124/2130 (not queued separately)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2136
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2137:
+  Date identified: 2026-11-17
+  Statement: [stated] Hawkins/Hoffman (local copy): "I wrote no proposals today ... there were 11 pending files before the run and there are 11 after. Today's numbering starts at PROP-2026-11-17-001." It declined the TBP videos "Exploring How Cortical Columns Handle Variations in Learned Object Models" and "Latency Mismatches": "Search didn't turn up their video pages ... I didn't write a proposal from the title alone," and it could not fetch the TBP forum. [verified this run] review/2026-11-17_review.html (mtime 2026-11-17 04:37 EST) already lists PROP-2026-11-17-001..005, including both of those talks carded from forum.thousandbrains.org thread URLs (/t/2026-09-latency-mismatches/1240 etc.), plus a Levin card (-005). The page header says 16 proposals; the local copy counted 11 pending. Wiki daily run (second firing): "Hawkins specialist filed 4."
+  Context: Hawkins/Hoffman 4dd01c78; wiki daily run 0f78799e; morning walk a4ce1ef0; review page
+  Type: empirical
+  Related decisions: PRESUMPTION-1247; PRESUMPTION-1196; PRESUMPTION-1219; ASSUMPTION-2122; ASSUMPTION-2116
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2137
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2138:
+  Date identified: 2026-11-17
+  Statement: [stated] Morning walk: "Check PROP-2026-11-17-005 (Levin) against the original before approving. It was written from a secondary blog because the OSF page couldn't be read." Card date reads "2026-09-22 (approx; per secondary source)". A September paper carded on a Tuesday (Hawkins/Hoffman day) by the primary run.
+  Context: morning walk a4ce1ef0; review page; wiki daily run 0f78799e ("primary filed 1 Levin card (secondary-sourced)")
+  Type: methodological
+  Related decisions: PRESUMPTION-1247; PRESUMPTION-1249
+  Testability: evidence for PRESUMPTION-1247/1249 (not queued separately)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2138
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2139:
+  Date identified: 2026-11-17
+  Statement: [stated] Wiki daily run: "The Level-2 signal stream hasn't moved since 2026-11-11. It has been stuck at 1958 signals for about a week. That is still under the 21-day staleness warning, so nothing is broken yet, but no new cross-tradition signals have arrived." Also: "No Hoffman card on Hoffman's day," while the Hoffman agent reports "nothing new in the last 30 days."
+  Context: wiki daily run 0f78799e; Hawkins/Hoffman 4dd01c78
+  Type: empirical
+  Related decisions: PRESUMPTION-077; OPEN-038
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2139
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2140:
+  Date identified: 2026-11-17
+  Statement: [stated] Recurrences: scheduler health 45 OK / 2 WARN / 28 FAIL, 27 DOUBLE-REGISTERED, again advises disabling all 27 local entries (47/47 cloud routines OK, 12:10Z cloud copy), NOT-CHECKED line again withheld; openstory.ui not in launchd; 6 git tmp_obj files. Morning status: "All 28 of your scheduled tasks with a set time are enabled. Each one last ran when it should have." Lit pipeline local copy stopped at Step 0 (lock script unreachable; Desktop Commander auto-declined); its note is filed under the "lock held" filename though "the lock wasn't known to be held". Chat scrape: duplicate firing wrote 2026-11-17_chat_summary.md nine minutes earlier; "both runs wrote to the same file"; the summary says the first third of Monday's walk chat was not loaded. Wiki daily run fired twice (third day). Morning walk: no walk notes; Humanity AI (10-21) and DELTA (10-26) deadlines past but open; duplicate Wolfram pair PROP-2026-11-14-001/-002 still undecided; findings counted across two schema eras (11 flagged / ~24 "Active"). Hawkins task prompt wiki root missing Projects/. Evening sync: "TCNL reading pass introduction" chat seen in Recents, not opened. OpenStory 15,806 events/24h.
+  Context: scheduler health 383f632e; morning status 43be84bf; lit pipeline 57c82cbc; chat scrape 8e7a354e; wiki daily run 0f78799e; morning walk a4ce1ef0; Hawkins/Hoffman 4dd01c78; evening sync ddd39667
+  Type: empirical
+  Related decisions: ASSUMPTION-2135; ASSUMPTION-2132; PRESUMPTION-1164; PRESUMPTION-1196; PRESUMPTION-1208; PRESUMPTION-1218; OPEN-299
+  Testability: recurrence bundle (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2140
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+*2026-11-17 14a (local pass): ASSUMPTION-2136–2140 (5). Queued [IN-HOUSE]: 2137, 2139. Not queued: 2136 (evidence for 2124/2130), 2138 (evidence for 1247/1249), 2140 (recurrence).*

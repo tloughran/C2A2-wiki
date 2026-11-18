@@ -27164,3 +27164,45 @@ PRESUMPTION-1249:
     Current status: UNTESTED
 
 *2026-11-16 14b: PRESUMPTION-1249 (methodological, Medium). Checked against 14a 2129–2135 and the registry. Not re-surfaced (already registered; new evidence today): a copy's own history read as the system's (PRESUMPTION-1219; local lit "offline two weeks" while cloud-lit ran 11-15/16, ASSUMPTION-2129); tool parity between cloud and local copies (PRESUMPTION-1196; evening sync Chrome, ASSUMPTION-2130); withheld NOT-CHECKED on a last-line-wins ledger (PRESUMPTION-1218); spend counted once per task (PRESUMPTION-1209); disagreeing handled-markers (PRESUMPTION-1164); escalation as loop closure (PRESUMPTION-1079; ECI LOI deadline reached Tom only via files and a post-deadline Chat message); field-presence filters across schema eras (PRESUMPTION-1208; findings 013–035 only, ASSUMPTION-2132).*
+
+PRESUMPTION-1250:
+  Date surfaced: 2026-11-17
+  Statement: [inferred] Hunt runs presume that a run's null ("nothing passed the quality filters") is a judgment about the sources. On 11-17 it was a judgment about fetch reach: the local Hawkins copy could not reach the TBP forum or video pages and declined two talks "from the title alone"; the primary run reached the forum threads and carded both. Is a null that depends on which tools a copy holds evidence about the world? Neither verdict references the other, and the review page shows only the cards, so a sibling run's "insufficient source" finding never reaches Tom.
+  Evidence it was operative: Hawkins/Hoffman 4dd01c78 vs review/2026-11-17_review.html PROP-2026-11-17-002/-003 (forum.thousandbrains.org thread URLs); ASSUMPTION-2137
+  Why it was unstated: each run reports as if it were the only run; source access is not recorded on the card or in the null report
+  Type: methodological
+  Related decisions: PRESUMPTION-1247 (one quality filter); PRESUMPTION-1196 (tool parity); PRESUMPTION-1219 (a copy's view read as the system's)
+  Testability: testable in-house (queued [IN-HOUSE])
+  Risk if wrong: Medium: duplicate copies give Tom contradictory reports (0 proposals vs 16 pending), and the grounds for a card or a null cannot be audited.
+  Confidence: high (verified against the review page)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1250
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+PRESUMPTION-1251:
+  Date surfaced: 2026-11-17
+  Statement: [inferred] The morning status check presumes that "enabled and last ran when it should" is health. The current failure is the opposite: 27 tasks fire too often (both copies). A check that only asks "did it run" reports green on the exact condition the 05:45 health check marks FAIL. Should over-firing count as a failure in the status summary?
+  Evidence it was operative: morning status 43be84bf ("All 28 of your scheduled tasks ... are enabled. Each one last ran when it should have") next to scheduler health 383f632e (28 FAIL, 27 DOUBLE-REGISTERED); chat scrape 8e7a354e (two firings, same file)
+  Why it was unstated: "missed run" is the usual scheduler failure; over-firing is not in the check's vocabulary
+  Type: methodological
+  Related decisions: PRESUMPTION-1196; PRESUMPTION-1218; OPEN-299
+  Testability: testable in-house (queued [IN-HOUSE])
+  Risk if wrong: Low-Medium: the headline Tom reads first says all is well; duplicate writes (chat summary, daily run) continue.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1251
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-17 (final assistant message per session via session_info: evening sync ddd39667, morning walk a4ce1ef0, scheduler health 383f632e, wiki daily run 0f78799e, Hawkins/Hoffman 4dd01c78, lit pipeline 57c82cbc, chat scrape 8e7a354e, morning status 43be84bf; plus review/2026-11-17_review.html read directly)
+    Current status: UNTESTED
+
+*2026-11-17 14b: PRESUMPTION-1250 (methodological, Medium), 1251 (methodological, Low-Medium). Checked against 14a 2136–2140 and the registry. Not re-surfaced (already registered; new evidence today): tool parity between copies (PRESUMPTION-1196; cloud evening sync delivered to Chat, ASSUMPTION-2136, against 2130); one quality filter (PRESUMPTION-1247; secondary-blog Levin card accepted while title-only talks refused, ASSUMPTION-2137/2138); "significant work not yet captured" clause (PRESUMPTION-1249; September Levin paper carded on a Tuesday); staleness threshold without a basis (PRESUMPTION-077 / OPEN-038; L2 stream flat six days, judged against a 21-day warning, ASSUMPTION-2139); withheld NOT-CHECKED line (PRESUMPTION-1218); disagreeing markers across schema eras (PRESUMPTION-1208).*
