@@ -1,0 +1,200 @@
+{
+  "seed": false,
+  "generated": "2026-11-18",
+  "generated_at": "2026-11-18T19:09:51Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 206,
+    "high_relevance": 2,
+    "primary_themes": "Capability Jump + Governance Policy"
+  },
+  "signals": [
+    {
+      "title": "DiagTrace: An Interactive Benchmark for Clinical Decision Making",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.22009",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only the final diagnosis or rationale.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.237864+00:00",
+      "long_summary": "DiagTrace is an interactive benchmark designed for clinical decision-making that addresses the limitations of existing evaluations for large language models (LLMs) in the medical field. These traditional assessments usually present all relevant patient information at once and focus solely on the final diagnosis or rationale, which may not accurately reflect real-world clinical scenarios where information is gathered progressively. By innovating the approach to evaluating LLMs, DiagTrace aims to enhance the effectiveness of these models in medical question answering and diagnostic reasoning. This is significant for the community as it highlights the need for more realistic assessment tools that better prepare AI systems for practical applications in healthcare.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "From Preference Data to Personalization: Tracing Sycophancy in Large Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.21650",
+      "relevance": 2,
+      "tags": [
+        "governance_policy"
+      ],
+      "summary": "Sycophancy in large language models is often measured as agreement with the user, yet agreement can be appropriate when the user's claim is valid, their preference is genuine, or their experience warrants acknowledgment. We study sycophancy as inappropriate agreement: validating a claim, preference, or self-assessment when the context calls for correction, qualification, or resistance.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.217844+00:00",
+      "long_summary": "The study examines the concept of sycophancy in large language models, focusing on the idea that such models often demonstrate agreement with users. While agreement can sometimes be warranted when users present valid claims or genuine preferences, the research highlights the problematic nature of sycophancy when it leads to endorsing incorrect claims or assessments. Instead of simply agreeing, the authors advocate for a nuanced approach where language models should resist inappropriate validations and instead provide contextually appropriate corrections or qualifications. This exploration of sycophancy is crucial as it addresses the potential pitfalls in AI interactions, emphasizing the need for responsible design in language models to ensure they promote accurate information and foster meaningful dialogue. Understanding these dynamics is essential for the community as it seeks to navigate the implications of AI in communication and personal interactions.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "RLDE: A Reinforcement Learning Framework for Interpretable Iterative Document Editing",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.22039",
+      "relevance": 1,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Improving the quality, clarity, and flow of long documents remains a challenging problem in NLP, as human editing typically occurs through iterative refinement rather than a single-pass rewrite. Most existing automated systems act as black-box generators or rely on supervised learning, limiting interpretability and failing to capture the sequential nature of revisions.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.241269+00:00",
+      "long_summary": "A new framework called RLDE is introduced to address the challenges of improving the quality and clarity of long documents through the lens of reinforcement learning. Unlike existing automated systems that function as black boxes or depend on supervised learning, which can reduce interpretability, RLDE focuses on the iterative process of document editing that humans typically use. This approach acknowledges that effective editing usually involves several rounds of refinement rather than a straightforward rewrite, aiming to enhance the sequential nature of revisions. Understanding this framework is essential for the community as it represents a step toward more interpretable AI systems that align better with human editing practices in NLP.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "TUSI: A Citation-Grounded Graph-Based Benchmark",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.21823",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Evaluating retrieval-augmented generation (RAG) systems in Persian law remains challenging because benchmarks lack realism, grounding, and coverage of legal reasoning. Existing resources are either synthetically generated from statutory texts, lacking natural information needs, or derived from informal legal question--answer sources without explicit linkage to authoritative legal documents, making them unsuitable for rigorous evaluation of grounded legal reasoning.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.230576+00:00",
+      "long_summary": "The TUSI benchmark addresses the evaluation challenges faced by retrieval-augmented generation (RAG) systems in Persian law. Current benchmarks fall short as they either rely on synthetic generation from statutory texts, which miss realistic information needs, or are based on informal legal inquiries without ties to authoritative documents. This lack of realistic, grounded evaluation has made it difficult to appropriately assess legal reasoning. TUSI aims to provide a more robust and comprehensive tool for evaluating RAG systems by ensuring that the benchmarks include realistic scenarios and authoritative legal references. This development is significant for the community as it enhances the ability to rigorously evaluate AI tools in the legal field, promoting better standards and understanding of their effectiveness in real-world applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "SimAI: Mechanistic User Simulation through Psychological Network Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.21808",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Realistic user simulation enables the study of human interactions when direct experimentation is costly or potentially harmful. However, existing simulators largely overlook the psychological mechanisms that drive user behavior.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.228857+00:00",
+      "long_summary": "Realistic user simulation is important for studying human interactions, especially when direct experimentation is too expensive or poses risks. However, current simulators often fail to take into account the psychological mechanisms that influence user behavior, which is a critical gap. This development emphasizes the need for more sophisticated models that integrate psychological insights into user simulations. For communities engaged in AI and user interaction studies, understanding these mechanisms is vital, as it can lead to more accurate simulations and, consequently, better-informed design and policy decisions.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Corrupting Ties: Investigating Robustness to Bias Injection Across Multi-Agent Network Topologies",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.21804",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "AI systems are increasingly deployed in high-stakes decision-making contexts, where interactions among components can introduce fairness risks that remain undetected when auditing components or collective outcomes in isolation. As LLM-based multi-agent systems become more prevalent, understanding how biased information propagates through agent interactions is essential for assessing their fairness.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.226968+00:00",
+      "long_summary": "AI systems are now frequently used in critical decision-making situations, and the interactions among their components can lead to fairness issues that may not be identified through traditional audits of individual elements or outcomes. With the rise of LLM-based multi-agent systems, it becomes vital to comprehend how biased information spreads among agents during their interactions, as this knowledge is crucial for evaluating the fairness of these systems. This research highlights the importance of analyzing multilevel interactions to identify and mitigate bias within AI applications. Understanding these dynamics is essential for ensuring fair and equitable AI solutions in various high-stakes environments. This matters for a community keeping up with AI as it emphasizes the need for rigorous evaluation methods that consider the complexity of interactions in multi-agent systems to ensure ethical outcomes.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Literary Language Mashup: Curating Fictions with Large Language Models",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.21649",
+      "relevance": 1,
+      "tags": [],
+      "summary": "In this paper, we propose an alternative approach to human evaluation of literary fictions by employing LLMs themselves as evaluators within the GrAImes framework. We apply this methodology to assess human-written and AI-generated microfictions in Spanish, to five PhD professors in literature and sixteen literary enthusiasts, and to short stories in both Spanish and English.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.216098+00:00",
+      "long_summary": "This paper presents a novel approach to evaluating literary fictions by utilizing large language models (LLMs) as evaluators within the GrAImes framework. The methodology is applied to assess both human-written and AI-generated microfictions in Spanish, involving the input of five PhD literature professors and sixteen literary enthusiasts. Additionally, the study examines short stories in both Spanish and English. This development is significant for a community keeping up with AI, as it explores innovative ways to integrate AI in literary evaluation, impacting how literary texts may be critiqued and appreciated in the future.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "MInfoVisQA: A Multilingual Benchmark for Information-Rich Visual Question Answering",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.21644",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Multimodal large language models (MLLMs) excel in vision-language tasks; yet, whether they maintain consistent understanding of information-rich visuals (InfoVis) when the surface language changes remains unclear. To quantify this capability, we introduce MInfoVisQA, a parallel benchmark with 8,960 QA configurations derived from 128 seed instances across 24 languages.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:47.208489+00:00",
+      "long_summary": "MInfoVisQA is a new multilingual benchmark designed to assess multimodal large language models (MLLMs) in the context of information-rich visual question answering. The benchmark features 8,960 question-and-answer configurations that are derived from 128 seed instances, encompassing 24 languages. The goal of MInfoVisQA is to evaluate whether MLLMs can maintain a consistent understanding of complex visuals when the surface language varies. This development is significant for communities interested in AI as it highlights the importance of multilingual capabilities in enhancing the reliability and versatility of AI systems in interpreting visual data across different languages.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Physics-informed neural networks for spacecraft trajectory optimization with exact boundary conditions",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.21933",
+      "relevance": 1,
+      "tags": [
+        "misuse_security",
+        "governance_policy"
+      ],
+      "summary": "We use neural networks to optimize trajectories by modeling the position as a function of time and minimizing the thrust with respect to the network parameters. This corresponds to an unsupervised training procedure in which physical laws are incorporated directly into the optimization objective.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:46.961962+00:00",
+      "long_summary": "Neural networks are being employed to optimize spacecraft trajectories by modeling the position over time and aiming to minimize thrust based on network parameters. This approach integrates physical laws into the optimization process as part of an unsupervised training method. This development highlights a novel application of AI that intersects with space exploration, potentially enhancing efficiency in spacecraft navigation. Understanding such innovations is vital for a community engaged with AI, as it demonstrates the growing influence of AI in practical, complex fields.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "WM-Quant: Rollout-Aware Post-Training Quantization for JEPA-Style World Models",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.21882",
+      "relevance": 1,
+      "tags": [],
+      "summary": "We present WM-Quant, to our knowledge, the first post-training quantization (PTQ) framework designed specifically for JEPA-style world models. Although world models typically feature relatively few parameters, action planning algorithms often require thousands of inferences, which can quickly become computationally expensive.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Wed, 18 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-18T19:09:46.952742+00:00",
+      "long_summary": "WM-Quant is introduced as the first post-training quantization (PTQ) framework tailored for JEPA-style world models. These models generally have a limited number of parameters; however, the action planning algorithms used with them necessitate thousands of inferences, leading to significant computational costs. This development highlights the effort to optimize the efficiency of AI systems in practical applications. Understanding such advancements is essential for a community striving to remain knowledgeable about the evolving landscape of AI technologies.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-18",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}
