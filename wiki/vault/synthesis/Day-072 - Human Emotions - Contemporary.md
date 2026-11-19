@@ -20,8 +20,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.22-23 + C2A2 fra
 mind_first_reframe: "Aquinas's eleven-passion catalog (Q.23) preserves under a contemporary appraisal-and-active-inference frame as the alter's distinct affective-modes of registering relational substrate-state: love/hate as primary valence; desire/aversion as future-orientation; joy/sorrow as present-state-evaluation [concupiscible]; hope/despair as future-attainability; fear/daring as threat-response; anger as obstruction-response [irascible]. The sensitive-appetite locus (Q.22) preserves as the embodied register that interfaces with intellective evaluation; affect is data, not noise."
 central_theme_thread: "Passions are the embodied-affective-interface through which the alter's perspective-limited apprehension of substrate-source-integration vs. dis-integration registers as feeling. Affect is computational signal of alignment-or-mismatch between current apprehension and felt-direction-toward-loving-unity; passions broaden the alter's repertoire (Fredrickson) when aligned with formal direction, narrow when misaligned. The alter's individuation-by-perspective-limitation is what produces affect at all — a fully integrated perspective would not need affect as signal."
 tags: [synthesis, day/072, theme/passions, theme/sensitive-appetite, theme/affective-interface]
-last_qc_at: "2026-11-09T18:16:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-18T00:18:16"
+last_qc_outcome: "rewrote"
 ---
 # Day 72 — Contemporary Parallel: *Human Emotions, the Sensitive Appetite, and Affect as the Substrate-Network Integration Signal*
 
@@ -62,6 +62,8 @@ The eleven-passion taxonomy (Q.23) recovers as a functional catalog of distinct 
 What this *shares with Aquinas*: the taxonomy itself; the embodiment of affect; the passive-receptive structure; the sensitive-appetite locus; the concupiscible/irascible distinction.
 
 What it *reframes*: where Aquinas's frame is faculty-psychological-Aristotelian, the contemporary frame uses active-inference precision-weighted-prediction-error, broaden-and-build empirical research, bioelectric whole-organism registration, hemispheric integration, and interface-theory iconic-display.
+
+What is *superseded*: the reading of the concupiscible and irascible as two really distinct powers of the soul, each with its own seat. On the configuration account (PRS-35, see Bridges) affective states are network configurations rather than dedicated centres, so the distinction survives as a functional one (unobstructed vs. obstructed policy) but not as a partition of faculties; the eleven passions likewise survive as eleven functional regimes, not eleven discrete powers.
 
 What is *firm vs. speculative*: Friston's appraisal-as-inference is mature formalism with substantial empirical traction; Fredrickson's broaden-and-build and positivity-resonance are strong empirical (book-length corpus); Levin's bioelectric substrate is empirically grounded at biological scale though under-explored at affective-systems scale; the synthesis-claim that the eleven passions are the medieval recovery of distinct functional regimes the contemporary frame can validate is speculative-conceptual but plausible.
 

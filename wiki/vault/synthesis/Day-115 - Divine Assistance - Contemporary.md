@@ -22,8 +22,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Grace is the operation of mind-at-large in the agent — imported prior-update, value-interface recalibration, master-hemisphere integration, morphogenetic field-restoration — by which a perspective-limited agent's resources are proportioned to a supernatural target it could not generate from within."
 central_theme_thread: "The loving-unity computational task exceeds the proportion of any limited perspective's resources; grace is the structural answer to how perspective-limited agents nevertheless reach a target their own resources cannot reach, through cooperative receptivity rather than self-generation."
 evidence_strength_summary: "Empirical: developmental psychology, self-determination theory, active inference under bounded resources, McGilchrist's hemispheric work, Fredrickson's broaden-and-build, Levin's morphogenetic dynamics. Formal: active inference, generative-model bootstrapping problems. Theological: Pauline soteriology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Catholic grace-theology."
-last_qc_at: "2026-11-10T12:18:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-18T20:17:28"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/115, theme/grace-necessity, theme/perspective-limitation, theme/loving-unity-as-telos]
 ---
 
@@ -79,7 +79,7 @@ The agent's role is the *receptive cooperation*: turning toward the source whose
 ### Where this reframes
 
 - **Grace is not an *addition* to a complete nature; it is the *operation* of mind-at-large in the agent.** On the mind-monist reading, the strict nature/grace separation is softened. There is one mind, operating at multiple levels; the conscious-explicit operation in the agent (grace) is the same mind that is the deepest structure of the natural agent (nature). This is closer to Rohr's *Universal Christ* than to a strict two-tiered Thomism.
-- **The proportion-argument is now empirically supported.** The bootstrapping problem in learning theory is the structural analog. The agent cannot reach a target prior with sufficient distance from its current prior except by importing structured information from outside.
+- **The proportion-argument now has a formal analog.** The bootstrapping problem in learning theory is the structural analog (formal/interpretive, not an empirical confirmation; see "The bootstrapping limit" above). The agent cannot reach a target prior with sufficient distance from its current prior except by importing structured information from outside.
 - **The agent's "free will" is not violated by grace; the agent's will is *enabled* by grace.** This is Aquinas's careful position (Q.109 a.6 last sentence: "free will can only be turned to God when God turns it"). On the active-inference reading: the agent's actions are downstream of its priors; updating the priors is what enables the agent to act differently. The updated prior is the agent's, not an external constraint.
 
 ### Where this is firm vs. speculative

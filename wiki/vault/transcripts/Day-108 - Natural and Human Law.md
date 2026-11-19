@@ -16,7 +16,7 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-108 - Natural and Human Law - Contemporary]]"
 tags: [summa, day/108, pars/I-II, q/94, q/95]
-last_qc_at: "2026-10-25T00:17:19"
+last_qc_at: "2026-11-18T16:18:41"
 last_qc_outcome: "pass"
 ---
 
