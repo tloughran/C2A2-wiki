@@ -27206,3 +27206,45 @@ PRESUMPTION-1251:
     Current status: UNTESTED
 
 *2026-11-17 14b: PRESUMPTION-1250 (methodological, Medium), 1251 (methodological, Low-Medium). Checked against 14a 2136–2140 and the registry. Not re-surfaced (already registered; new evidence today): tool parity between copies (PRESUMPTION-1196; cloud evening sync delivered to Chat, ASSUMPTION-2136, against 2130); one quality filter (PRESUMPTION-1247; secondary-blog Levin card accepted while title-only talks refused, ASSUMPTION-2137/2138); "significant work not yet captured" clause (PRESUMPTION-1249; September Levin paper carded on a Tuesday); staleness threshold without a basis (PRESUMPTION-077 / OPEN-038; L2 stream flat six days, judged against a 21-day warning, ASSUMPTION-2139); withheld NOT-CHECKED line (PRESUMPTION-1218); disagreeing markers across schema eras (PRESUMPTION-1208).*
+
+PRESUMPTION-1252:
+  Date surfaced: 2026-11-18
+  Statement: [inferred] The "tradition as slow resonator" framing transfers a physical concept (resonance, coupling across scales) to traditions and persons. It presumes the transfer conditions hold: a characteristic frequency/timescale for a tradition, a coupling medium, and a measurable response in a person who "tunes in." None were named. If adopted as a wiki note, does it carry explanatory weight, or is it a surface analogy (in C2A2's own connection taxonomy)?
+  Evidence it was operative: chat scrape 5fcc9fb7: Tom agreed with the main point and the run flagged it as a possible wiki note; the Fredrickson scale correction (0.1 mm) was accepted within the same frame
+  Why it was unstated: too foundational to notice (the metaphor arrived with agreement, not with criteria)
+  Type: epistemic
+  Related decisions: ASSUMPTION-2141; 14b watch-list item 'transferred assumptions'
+  Testability: testable via literature (queued)
+  Risk if wrong: Medium: a metaphor entering the wiki as a structural claim could shape later cross-tradition coding (surface analogy counted as structural homology).
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1252
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+PRESUMPTION-1253:
+  Date surfaced: 2026-11-18
+  Statement: [inferred] The chat scrape presumes a summary written at a fixed time stands for the day's walk. On 11-18 the walk "was still going when I read it at 8:56"; on 11-17 the first third was not loaded. Downstream (evening sync, 14a/14b, morning walk) reads the chat_summary as the walk's record. Is there a later pass that completes it, or does the cut-off become the record?
+  Evidence it was operative: chat scrape 5fcc9fb7 ("anything said after that isn't in the summary"); ASSUMPTION-2140 (11-17: first third not loaded); this pass itself relies on that summary for ASSUMPTION-2141/2142
+  Why it was unstated: each firing reports its own boundary; no consumer checks the boundary
+  Type: methodological
+  Related decisions: ASSUMPTION-2140; PRESUMPTION-1219
+  Testability: testable in-house (queued [IN-HOUSE])
+  Risk if wrong: Low-Medium: decisions or ideas voiced late in a walk never reach the wiki or the self-awareness registers.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1253
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+*2026-11-18 14b: PRESUMPTION-1252 (epistemic, Medium), 1253 (methodological, Low-Medium). Checked against 14a 2141–2146 and the registry. Not re-surfaced (already registered; new evidence today): ID assignment by "next free number in pending/ at start" assumes a single writer (PRESUMPTION-086, PRESUMPTION-1250; McGilchrist -001 renumbered to -003, ASSUMPTION-2143); tool parity between copies (PRESUMPTION-1196; evening sync: cloud copy blocked by two Chrome browsers, so a blanket "disable all 27 local entries" would stop delivery, ASSUMPTION-2146); one quality filter across source bases (PRESUMPTION-1247; description-only McGilchrist card carded, secondary-only Levin preprint held, ASSUMPTION-2145); withheld NOT-CHECKED line (PRESUMPTION-1218); status fields across schema eras (PRESUMPTION-1208); staleness threshold without a basis (PRESUMPTION-077 / OPEN-038; L2 flat 7 days).*

@@ -53131,3 +53131,74 @@ DISPOSITION-1144:
 
 SYSTEMIC-RISK (2026-11-16, 15b): PRESUMPTION-1246 is the fifth consecutive daily literature-lane item (after PRESUMPTION-1240, -1244, -1245 and the 11-13 cross-level pair) in which an umbrella term ('one', 'union', 'people') is read as a shared question across thinkers. Recommend 14b require each cross-thinker bridge presumption to name the specific question each author asks, in their own voice, before queueing.
 EVIDENCE-QUALITY NOTE (2026-11-16): both searches PRELIMINARY (3 web searches total, titles only, no fetches). Wright PFG ch. 11, incorporative Messiahship, Stump WiD/Atonement content and the HTR exchange are background recall, not re-read. 15a/15b independence is procedural only (one orchestrator; FOR file written before AGAINST file was composed).
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2141
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Key source: Rosa, Resonance (2016/2019) (titles seen; recall); Zhang, Kelso & Tognoli 2019 J R Soc Interface (title seen); Sperber 1996 cultural attraction (recall)
+  Summary: "A tradition a person can tune into" matches Rosa's sociological resonance (religion/art/history as resonance axes); synchrony and coordination dynamics support entrainment as one person-to-group link. No source models a tradition as a slow oscillator or links cell to community scale.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2141_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2141 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-2141
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Susen 2020 IJPCS on Rosa (title seen; recall); Sperber 1996 / Boyd & Richerson transmission biases (recall); MacIntyre 1988 (recall)
+  Specific risk: Resonance language across thinkers (Fredrickson, Rosa, Levin, McGilchrist) coded as one mechanism.
+  Summary: Not refuted as a relational description; challenged as explanation: Rosa's term is criticised as vague, rival persistence accounts need no oscillation, synchrony evidence is seconds-scale and co-present.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2141_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2141 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1252
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Zhang, Kelso & Tognoli 2019 (title seen); "Viewing communities as coupled oscillators" bioRxiv 2020 (title seen)
+  Summary: Oscillator concepts have transferred with conditions intact to dyads, groups and ecological populations; none found for a cultural tradition. Supports the method, not the presumption.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1252_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1252 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1252
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Hesse 1966 Models and Analogies (recall); Gentner 1983 structure-mapping (recall); "Metaphors and social science" DDNS 1999 (title seen); PREMISE-127
+  Specific risk: A wiki note recording the framing as structural would extend the shared-word pattern (REVISE-539..542) to "resonance".
+  Summary: Analogy criteria (positive/negative analogy, relational mapping) are clear and unmet: no period, medium or response named. Presumption confirmed as unstated, transfer unwarranted as it stands.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1252_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1252 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1145:
+  Date: 2026-11-19
+  Item: ASSUMPTION-2141
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Two claims in one line. The question ("what links exist between scales?") is well posed and has real literature (coordination dynamics, synchrony, cultural attraction). The answer ("a tradition is a slow resonator a person can tune into") is supported only in Rosa's relational, non-physical sense and has no mechanism-level support at tradition scale.
+  Disposition: MONITOR (MONITOR-724)
+  Reasoning: Mixed, preliminary evidence on a stated framing that is not yet a design premise; not wrong enough to REVISE (the relational reading is defensible), not grounded enough to INCORPORATE. The structural-transfer risk is handled by the paired presumption (DISPOSITION-1146 / REVISE-543).
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for resonan / entrain: no hits. Consistent with PREMISE-127 (shared vocabulary is surface). Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2141 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2141_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2141_against.md
+
+DISPOSITION-1146:
+  Date: 2026-11-19
+  Item: PRESUMPTION-1252
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The presumption is real (no transfer conditions were stated) and the transfer is unwarranted as it stands: oscillator concepts do transfer with conditions intact at behavioural and ecological scales, but nothing shows a tradition has a period, a coupling medium to persons, or a resonant response.
+  Disposition: REVISE (REVISE-543)
+  Reasoning: Weak support against a moderate challenge, on a presumption, leans REVISE. Urgency Low, matching REVISE-539..542: the framing is a candidate wiki note, not pipeline logic, and the challenge rests on titles and recall. "PRESUMPTION with strong challenge -> High" does not fire (challenge Moderate).
+  Consistency check: grep of validated_premises.md for resonan / entrain: no hits. PREMISE-127 (transfer-condition check before structural use of a cross-domain bridge) directly governs; this REVISE applies it. No premise added, no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1252 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1252_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1252_against.md
+
+SYSTEMIC-RISK (2026-11-19, 15b): PRESUMPTION-1252 is the sixth literature-lane instance (after PRESUMPTION-1240, -1244, -1245, -1246 and the 11-13 pair) of one pattern: an umbrella term, here "resonance", carried across domains or thinkers without its conditions. Distinct twist: this one crosses from physics to tradition, and "resonance" already appears in at least Fredrickson (positivity resonance) and Rosa. Recommend Tom/14b treat REVISE-539..543 as one issue and apply PREMISE-127's transfer-condition check at the point a chat idea is flagged as a "possible wiki note".
+EVIDENCE-QUALITY NOTE (2026-11-19): both searches PRELIMINARY (6 web searches total, titles only, no fetches). Rosa, Susen 2020, Sperber 1996, Hesse 1966, Gentner 1983, MacIntyre 1988, Hove & Risen 2009 and Wiltermuth & Heath 2009 are background recall, not re-read. ASSUMPTION-2141 source was a walk chat read while still in progress (see PRESUMPTION-1253). 15a/15b independence is procedural only (one orchestrator; FOR files written before AGAINST files).

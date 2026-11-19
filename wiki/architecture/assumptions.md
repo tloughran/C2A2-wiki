@@ -40419,3 +40419,107 @@ ASSUMPTION-2140:
     Current status: UNTESTED
 
 *2026-11-17 14a (local pass): ASSUMPTION-2136–2140 (5). Queued [IN-HOUSE]: 2137, 2139. Not queued: 2136 (evidence for 2124/2130), 2138 (evidence for 1247/1249), 2140 (recurrence).*
+
+ASSUMPTION-2141:
+  Date identified: 2026-11-18
+  Statement: [stated] Chat scrape, walk with Chat: Fredrickson resonance scale midpoint corrected to ~0.1 mm (cell scale, not human scale); Tom agreed with Chat's main point: "the real question is what links exist between scales, and a tradition works as a slow resonator a person can tune into." Flagged as a possible wiki note.
+  Context: morning chat scrape 5fcc9fb7 (walk read at 8:56 while still in progress)
+  Type: epistemic
+  Related decisions: PRESUMPTION-1252
+  Testability: testable via literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2141
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+ASSUMPTION-2142:
+  Date identified: 2026-11-18
+  Statement: [stated] Chat scrape: Duet installed; proposed split "recurring agent-fleet work to Duet, thinking-out-loud work stays in Chat" is "a hypothesis, not a decision"; moving agents to Duet may become part of the scheduler redesign.
+  Context: morning chat scrape 5fcc9fb7
+  Type: architectural
+  Related decisions: OPEN-299; OPEN-304
+  Testability: framework/operational choice (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2142
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+ASSUMPTION-2143:
+  Date identified: 2026-11-18
+  Statement: [stated] ID collision again: McGilchrist local copy numbered its Ralston card PROP-2026-11-18-001 "because there were no proposals from today in pending"; the other daily-run copy renumbered it to -003 (morning walk: "another one happened today"). Review page lists -001..-003 [verified by grep].
+  Context: McGilchrist/Kastrup b6491267; morning walk 58e98d91; wiki daily run fcee66e5
+  Type: empirical
+  Related decisions: ASSUMPTION-2137; PRESUMPTION-086; PRESUMPTION-1250; OPEN-294
+  Testability: evidence for 2137/1250 (not queued separately)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2143
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+ASSUMPTION-2144:
+  Date identified: 2026-11-18
+  Statement: [stated] New: voice-shell suite RED at 05:39, "rows: 403 passed: 396 failed: 7 (exit 1) on main@27172aa9" (scheduler health; morning status; evening sync). Count drift: morning status says 26 double-registered, scheduler health lists 27.
+  Context: scheduler health 8cf1ae5f; morning status 8d401668; evening sync 534a2f0b
+  Type: empirical
+  Related decisions: OPEN-299
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2144
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+ASSUMPTION-2145:
+  Date identified: 2026-11-18
+  Statement: [stated] Single-source carding: McGilchrist card "based ... only on the publisher's episode description ... I did not hear the recording and found no transcript" (rated Medium). Wiki daily run logged Manicka & Levin bioRxiv 2026.11.03.763900 from "one secondary website", "couldn't find it on bioRxiv", not carded; passed to the next Levin run. Kastrup blog unfetchable ("only opens links already surfaced by a search"); WRiM recordings JS-rendered.
+  Context: McGilchrist/Kastrup b6491267; wiki daily run fcee66e5
+  Type: methodological
+  Related decisions: PRESUMPTION-1247; PRESUMPTION-1250; ASSUMPTION-2138
+  Testability: evidence for 1247/1250 (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2145
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+ASSUMPTION-2146:
+  Date identified: 2026-11-18
+  Statement: [stated] Recurrences: scheduler 43 OK / 3 WARN / 29 FAIL, 27 DOUBLE-REGISTERED, 48/48 cloud OK; NOT-CHECKED line again withheld; Desktop Commander auto-declined (scheduler, lit). Evening sync reverses 11-17 again: local copy delivered; cloud copy "can't pick between your two connected Chrome browsers"; advises keeping local evening sync while disabling the other duplicates. Lit local skipped at Step 0 (lock script unreachable) and tailed lit_pipeline.lock contrary to task rules (disclosed). Wiki daily run double-fired (fourth day), second copy verification-only. L2 flat at 1958 for 7 days. 19 pending, no ingest since 11-12, PROP-2026-08-14-033 still uningested; Wolfram pair -11-14-001/-002 undecided; findings 036–114 have no status field ("25" undercounts). Task prompt wiki root missing Projects/ (McGilchrist). OpenStory 17,317 events/24h. No interactive Cowork session.
+  Context: scheduler health 8cf1ae5f; evening sync 534a2f0b; lit pipeline 801ef584; wiki daily run fcee66e5; morning walk 58e98d91; McGilchrist/Kastrup b6491267; morning status 8d401668
+  Type: empirical
+  Related decisions: ASSUMPTION-2140; ASSUMPTION-2136; ASSUMPTION-2130; PRESUMPTION-1196; PRESUMPTION-1208; PRESUMPTION-1218; OPEN-299
+  Testability: recurrence bundle (not queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2146
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: UNTESTED
+
+*2026-11-18 14a (local pass): ASSUMPTION-2141–2146 (6). Queued: 2141 (literature), 2144 [IN-HOUSE]. Not queued: 2142 (operational choice; OPEN-304), 2143 and 2145 (evidence for existing items), 2146 (recurrence).*

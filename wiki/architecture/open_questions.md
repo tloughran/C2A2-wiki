@@ -4125,3 +4125,17 @@ OPEN-303:
     Transform at each step:
       14a: Raised from 2026-11-12 local pass (final assistant message per session via session_info: evening sync e4d5dd93, morning walk 16e381e0, chat scrape 18d86d35, morning status 130b54ce, scheduler health a8cb2404, system health 5e6d847c, wiki daily run 7cb9e7d4, Stump/Fredrickson 46d6fb4f, deferred monitor 9b8624f8, lit pipeline 046050d0)
     Current status: OPEN
+
+OPEN-304:
+  Raised: 2026-11-18 by 14a (ASSUMPTION-2142)
+  Question: Which work moves to Duet and which stays in Chat/Cowork? Chat's proposal (recurring agent-fleet work to Duet; thinking-out-loud stays in Chat) is a hypothesis, not a decision. If the fleet moves, does that replace the cloud/local duplicate cleanup (OPEN-299), and which copy's tools (Chrome, Desktop Commander, session_info) does Duet hold?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-304
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
+    Current status: OPEN

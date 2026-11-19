@@ -16388,3 +16388,12 @@ REVISE-542: [2026-11-16] Source item: PRESUMPTION-1246 (DISPOSITION-1144)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1246 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1246_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1246_against.md
+
+REVISE-543: [2026-11-19] Source item: PRESUMPTION-1252 (DISPOSITION-1146)
+  What is at risk: Any wiki note or synthesis line recording "a tradition works as a slow resonator a person can tune into" as a structural claim; later cross-tradition coding that treats "resonance" in Fredrickson, Rosa, Levin or McGilchrist as one mechanism.
+  Recommended action (for Tom): (1) If the note is written, label it "analogy (unmapped)" in the connection taxonomy and list the three open transfer conditions: a tradition-scale period, a coupling medium to persons, a measurable resonant response. (2) For the relational sense, cite Rosa, Resonance (2016/2019); for persistence, cultural attraction theory (Sperber 1996). (3) Keep "what links exist between scales?" as an open question rather than answered by the image.
+  Urgency: Low (presumption; moderate challenge from titles and recall; candidate note only).
+  Related: PREMISE-127; REVISE-539, REVISE-540, REVISE-541, REVISE-542 (same pattern); MONITOR-724 (ASSUMPTION-2141).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1252 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1252_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1252_against.md

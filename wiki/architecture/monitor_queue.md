@@ -26026,3 +26026,14 @@ STALE-MONITOR-FLAG:
 **Duplicate firing note (second 2026-11-15 firing of c2a2-periodic-monitor-weekly, ~03:38–03:42 EST).** A second 15d instance parsed the registers on its own. It found no 11-15 tags at start. Its pre-write guard then found the commit above (08:41:01Z), so it **wrote no re-queue, date change or flag**, and its backup step never ran. The `*.bak.20261115-pre-15d` files above are therefore the committing instance's and are a valid rollback point (monitor_queue backup = the 11-14 05:42 state, 1773137 bytes).
 - The independent parse matched: the same 10 items (701-709 [QUEUED], 687 [QUEUED-EMPIRICAL]), cycle 0 -> 1, next 11-22. It held the same cohorts (697-700, 656, 696, and 10-25/10-18/10-11) with 0 re-trigger blocks consumed since 11-09. It reached the same 688 finding: expired 11-09, no loss-condition entry in any .md modified since 11-08, and the snapshot still live (`_meta.generated` 2026-11-14T06:03:32, total_runs 4851). It reached the same ESCALATE stale flag. Only difference: it set 687's next check to 12-13 (one month after 11-11). The committed 12-06 is kept (Rule 7: aligned with the monthly-run date). No reconciliation needed. validated_premises.md is byte-identical to its backup. queue_scan.py post-commit: 0 searched-not-dispositioned; 151 bare literature-lane items.
 - **For Tom:** fifth double firing (10-04, 10-25, 11-01, 11-08, 11-15). The size/tag guard right before the write worked again.
+
+MONITOR-724:
+  Date: 2026-11-19
+  Source item: ASSUMPTION-2141 (DISPOSITION-1145)
+  Item type: ASSUMPTION (stated)
+  Priority: Low
+  Disposition basis: 15a: Rosa's sociological resonance (religion/art/history as resonance axes), interpersonal synchrony and cross-scale coordination dynamics support the question and a relational reading (Weak-to-Moderate, preliminary). 15b: Rosa's concept criticised as vague (Susen 2020); cultural attraction / transmission-bias accounts explain persistence without oscillation; synchrony is seconds-scale and co-present (Moderate, preliminary).
+  What would change the disposition: (-> INCORPORATE, relational form only) if restated as "a tradition can be a resonance axis in Rosa's sense" with Rosa read in full; (-> REVISE) if the wiki or signal stream uses "slow resonator" as a mechanism or links cell-scale and community-scale resonance as one process (see REVISE-543).
+  Monitoring cadence: Weekly (default); first check due 2026-11-26
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2141 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2141_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2141_against.md

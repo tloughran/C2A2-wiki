@@ -29694,3 +29694,29 @@ Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no
 *2026-11-17 (local pass): 4 items queued, all [IN-HOUSE]. Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-17T05:41:08Z by cloud-lit-2026-11-17; not held, append safe.*
 
 *2026-11-18 (cloud-lit-2026-11-18): queue empty for this run. No new literature-lane items since 11-17 cloud-lit run (no 11-18 14a/14b additions to the queue; 11-17 local pass queued 4 [IN-HOUSE] only: ASSUMPTION-2137/-2139, PRESUMPTION-1250/-1251). queue_scan.py: 0 searched-but-undispositioned, 0 half-searched; 151 bare items = 15d re-trigger backlog (unchanged from 11-17), untouched per standing precedent. No 15a/15b/15c writes.*
+
+[QUEUED] [SEARCHED-15a: 2026-11-19] [SEARCHED-15b: 2026-11-19] [DISPOSITIONED-15c: 2026-11-19] [ASSUMPTION] ASSUMPTION-2141
+  Statement: [stated] "A tradition works as a slow resonator a person can tune into"; the real question is what links exist between scales.
+  Claim to test: Literature: is there theoretical or empirical support for modelling traditions/cultural transmission as resonance or entrainment (e.g., sociological resonance theory, cultural attractor theory, interpersonal neural/physiological synchrony as a transmission mechanism)? What does that work say about linking scales (cell, person, community)?
+  Result (2026-11-19): 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1145 -> MONITOR-724 (Low)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [SEARCHED-15a: 2026-11-19] [SEARCHED-15b: 2026-11-19] [DISPOSITIONED-15c: 2026-11-19] [PRESUMPTION] PRESUMPTION-1252
+  Statement: [inferred] The resonator framing presumes physical resonance conditions (characteristic timescale, coupling medium, measurable response) transfer to traditions and persons.
+  Claim to test: Literature (15b lane especially): critiques of resonance/oscillator metaphors in social science; criteria separating explanatory from merely analogical use of physical concepts in cultural evolution.
+  Result (2026-11-19): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1146 -> REVISE-543 (Low)
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2144
+  Statement: [stated] Voice-shell suite red, 7/403 failed on main@27172aa9; morning status says 26 double-registered vs scheduler 27.
+  Claim to test: In-house: read the voice-shell status file for the 7 failing rows and the commit that introduced them; reconcile the 26 vs 27 count (which list each check reads).
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [PRESUMPTION] PRESUMPTION-1253
+  Statement: [inferred] A chat summary written mid-walk is treated as the day's walk record.
+  Claim to test: In-house: for 11-10..11-18, compare each chat_summary's read time with the walk chat's last message time; count days where the summary was cut off and whether any later pass completed it.
+  PROVENANCE: Origin: 14b | Chain: [14b] | Item type: PRESUMPTION (unstated — surfaced by inference) | Current status: UNTESTED
+
+*2026-11-18 (local pass): 4 items queued: 2 literature-lane (ASSUMPTION-2141, PRESUMPTION-1252), 2 [IN-HOUSE] (ASSUMPTION-2144, PRESUMPTION-1253). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-18T05:40:21Z by cloud-lit-2026-11-18; not held, append safe. The next cloud lit run (~05:40Z 11-19) will find 2 literature-lane items.*
+
+*2026-11-19 (cloud-lit-2026-11-19): 15a/15b/15c processed ASSUMPTION-2141 -> DISPOSITION-1145 (MONITOR-724 Low) and PRESUMPTION-1252 -> DISPOSITION-1146 (REVISE-543 Low). SYSTEMIC-RISK: sixth instance of the umbrella-term pattern ('resonance'). Both searches PRELIMINARY (6 web searches, titles only). In-house items (ASSUMPTION-2144, PRESUMPTION-1253 and earlier) and 15d backlog untouched.*

@@ -195,12 +195,13 @@ WATCH-007:
   Check method: Check `review/archive/` and decision emails for a later disposition or note naming PROP-2026-11-10-001; check card mtime for an appended note.
   Check cadence: Weekly (plus off-cadence on any new decision file)
 
-  Last checked: 2026-11-13
-  Check count: 2
+  Last checked: 2026-11-19
+  Check count: 3
   Result history:
     - 2026-11-12: Intake. CHECK, no note. Targeted fact check toward reading (d): direct fetch of https://github.com/thousandbrainsproject/tbp.monty/pull/1174 refused (URL not in this run's fetch provenance set); web search `tbp.monty pull 1174 "correctly merge new and previous pose vectors"` returned no GitHub hit (only TBP forum threads on pose handling, unrelated). So the PR quotes remain **unverified by Agent 16** — not refuted. No vault file other than the card and pipeline logs mentions the item. Condition NOT met.
     - 2026-11-13 (CHECK RUN OFF-CADENCE: new decision file; count now **2**; next on-cadence check stays 2026-11-19): `review/archive/2026-11-12_decisions.md` holds 4 APPROVE (PROP-2026-11-11-001..-004) and does not name PROP-2026-11-10-001. Card mtime unchanged since this agent's own tag write (11-12 02:38); no note appended. Vault `.md` files newer than the last watch-list write: no mention of the item beyond the 11-12 cowork summary (carry-over). Condition NOT met.
     - 2026-11-16 (OBSERVATION, not a check; count stays **2**; next on-cadence check stays 2026-11-19): card mtime changed to 2026-11-15 04:36. Cause: the Sewing Agent's 2026-11-15 run appended an `## Agentic Calls` section (calls to Hawkins, Friston, Wolfram). The Hawkins call itself says "Resolve the TRACKED-16 CHECK question with Tom before promotion", and sewing log item 3 flags the open CHECK for Tom. No note from Tom was appended. `review/archive/` still 32 files, latest `2026-11-12_decisions.md`; no new decision file, so the off-cadence trigger did not fire. Condition NOT met.
+    - 2026-11-19 (ON-CADENCE CHECK; count now **3**; next on-cadence check 2026-11-26): `review/archive/` still 32 files, latest `2026-11-12_decisions.md` (4 APPROVE, PROP-2026-11-11-001..-004; does not name PROP-2026-11-10-001). Gmail search `subject:C2A2-review-decision after:2026/11/11`: one thread only, `[C2A2-review-decision] 2026-11-11` (thread 1a1caf371f1fd396, the 4 APPROVEs already archived) — no later decision email, so no note on this card. Card mtime still 2026-11-15 04:36 (Sewing Agent append); no note from Tom. Vault `.md` files newer than the 11-18 watch-list write mention the item only in carry-over schedule lines (11-18 cowork/chat summaries). Condition NOT met.
 
   On resolution:
     Action: per Tom's stated check — if a fact/cross-reference check, run it and re-queue to pending/ with the result; if a content edit, mark AWAITING-HUMAN-EDIT; if an external condition (e.g. video URL / transcript found), keep WATCHING with that condition.
@@ -7783,3 +7784,16 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
   Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
 
 *Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run. No notification sent: nothing resolved or newly stale.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-19
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-18 run (latest mtime Hawkins card 11-15 04:36). `review/archive/` unchanged at 32 files (latest `2026-11-12_decisions.md`); no decision email after 11-11 in Gmail. New items added: 0.
+  Items checked: 1 — WATCH-007 (on cadence, check 3): NOT met; Tom has not said what the CHECK is for. Next WATCH-007 check 11-26.
+  Off-cadence sweep (not counted): `architecture/sewing_agent_log.md` unchanged since 11-15 22:00 and `traditions/macintyre/prs_triplets.md` unchanged since 10-16 (WATCH-006 NOT met). Three new `pending/` cards (11-18: two McGilchrist, one Kastrup) carry no watched ID; no Wonderstruck transcript in the vault (WATCH-005 NOT met).
+  Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 3 (WATCH-003, -004, -006; existing flags stand, no new STALE-WATCH-FLAG) · WATCH-007 at 3 checks, WATCH-005 at 5 (goes stale if its 11-21 check finds nothing).
+  Next scheduled checks: WATCH-003/-004 11-20 · WATCH-005/-006 11-21 · WATCH-007 11-26 · any new `review/archive/` file triggers WATCH-003/-007 off-cadence.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run (none due). No notification sent: nothing resolved or newly stale.*
+
+*Duplicate firing (~07:39 UTC, one minute after the 11-19 run above). Re-checked: no `needs_review/`, `review/archive/` (still 32), Sewing log, `prs_triplets.md`, `pending/` or Wonderstruck-transcript changes since that write. No items due; nothing routed; no notification sent.*
