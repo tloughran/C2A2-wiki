@@ -16,8 +16,8 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-114 - A Burden Light - Contemporary]]"
 tags: [summa, day/114, pars/I-II, q/106, q/107]
-last_qc_at: "2026-11-02T08:47:49"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-19T20:18:07"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 114 — A Burden Light (Q.106-107)
@@ -44,7 +44,7 @@ After 16 questions on the Old Law (Q.98-105), Aquinas turns to the New Law. Q.10
 
 [00:11] **Article 3 — Whether the new law is contained in the old.** Aquinas: "Whatever is set down in the New Testament explicitly and openly as a point of faith is contained in the Old Testament as a matter of belief, but implicitly, under a figure. And accordingly, even as to those things which we are bound to believe, the new law is contained in the old." (The host recommends Scott Hahn and Brant Pitre on the typological connections.)
 
-[00:13] **Article 4 — Whether the new law is more burdensome than the old.** Aquinas: in some respect *less* burdensome — fewer ceremonial-ritual rules. In another respect *more* exacting — the heart must be monitored, not just the deed. Yet *ultimately* the new law is "a yoke that is easy, a burden that is light" because it gives the infused gifts and virtues and the indwelling of the Holy Spirit. 1 John 5:3 cited via Augustine: "his commandments are not heavy" — "not heavy to the man that loves; a burden to him that loves not." Love is charity, received with the Holy Spirit (Rom 5 again).
+[00:13] **Article 4 — Whether the new law is more burdensome than the old.** Aquinas: in some respect *less* burdensome — fewer ceremonial-ritual rules. Yet from the aspect of monitoring the heart, in the new law it is *more* difficult. Yet *ultimately* the new law is "a yoke that is easy, a burden that is light" because it gives the infused gifts and virtues and the indwelling of the Holy Spirit. 1 John 5:3 cited via Augustine: "his commandments are not heavy" — "not heavy to the man that loves; a burden to him that loves not." Love is charity, received with the Holy Spirit (Rom 5 again).
 
 ## Notes
 

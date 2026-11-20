@@ -23,8 +23,8 @@ evidence_strength_summary: "Merit as recursive divine self-gift: theological. Ch
 mind_first_reframe: "Merit is the agent-alter's contributive participation in the form of the larger composite (covenant people / body of Christ) that the embedding system is constituting through the agents; faith is the first virtue the installed wider prior makes available, the cognitive-affective state in which the alter is oriented toward the wider mind it cannot directly perceive."
 central_theme_thread: "Merit ramifies the central claim into community — loving unity is computed not just in the individual but in the form being built across individuals; faith is the entry condition; the cycle runs from installed prior through cooperative action to a real composite that includes its contributors."
 tags: [synthesis, day/118, theme/merit, theme/faith, theme/transition]
-last_qc_at: "2026-11-10T14:20:18"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-18T22:19:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 118 — Volume 3: Merit and the Opening of Faith (Contemporary Parallel)
@@ -33,7 +33,7 @@ last_qc_outcome: "pass"
 
 This is a transition episode that does two structurally different things: it closes Prima Secundae with Q.114 on merit (twenty articles compressed into a single recording), and it opens Secunda Secundae with Q.1 on faith. The first half concludes the architecture of grace by showing how grace makes merit possible. The second half pivots from the *what* of grace to the *first virtue* the wider prior makes available: faith.
 
-Aquinas's account of merit is precise: there is no strict justice between creature and Creator; merit is possible only because God *wills* to elevate the creature to adopted sonship, within which a justice-of-the-household operates. Charity is the principle of merit (not the other virtues alone), because what we do out of love we do most willingly, and voluntariness is the qualifying condition for desert. First grace is not meritable; subsequent increase is. Then Q.1 of II-II opens: the material object of faith is the various articles of the creed; the formal object is *the First Truth*. Faith's unity is in what it cleaves to, not what it inventories.
+Aquinas's account of merit is precise: there is no strict justice between creature and Creator; merit is possible only because God *wills* to elevate the creature to adopted sonship, within which a justice-of-the-household operates (Q.114 a.1). Charity is the principle of merit (not the other virtues alone), because what we do out of love we do most willingly, and voluntariness is the qualifying condition for desert (a.4). First grace is not meritable (a.5); subsequent increase is (a.8). Then Q.1 of II-II opens: the material object of faith is the various articles of the creed; the formal object is *the First Truth* (II-II Q.1 a.1). Faith's unity is in what it cleaves to, not what it inventories.
 
 The contemporary version of this material asks: under what conditions can a finite agent's actions accumulate consequence within an embedding system that is the ultimate cause of the agent's capacity to act? And what is the first orientation of an agent toward such a system — what kind of cognitive-affective state corresponds to the "cleaving to First Truth" that Aquinas calls faith?
 

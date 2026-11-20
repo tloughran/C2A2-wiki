@@ -3,12 +3,12 @@ day: 120
 title: Who Has Faith (Contemporary)
 pairs_with: "[[Day-120 - Who Has Faith]]"
 length_target_words: 2200
-length_actual_words: 1917
-length_ratio_to_target: 0.871
+length_actual_words: 2082
+length_ratio_to_target: 0.946
 length_tier: medium
-length_note: "Focused treatment of Q.4-5 around the lifeless/living asymmetry and the strong hylomorphic 'charity as form of faith' claim; Levin's empirical re-grounding of form carries the strong reading (CROSS-008's stronger final-causality framing was restated downward 2026-08-10 and is no longer relied on), and the load-bearing move develops compactly without sentimental gloss — substantively complete in focused form. Recounted 2026-08-30: pre-edit true count 1838 including headings (1817 excluding), against a stored 1810 — essentially honest either way. The 2026-08-30 QC pass added 107 words anchoring a previously id-less Levin grade claim to PRS-01 and PRS-03, carrying the file from 0.82 to 0.871; still under target, still inside +/-25%, and no prose argument was added or expanded."
+length_note: "Focused treatment of Q.4-5 around the lifeless/living asymmetry and the strong hylomorphic 'charity as form of faith' claim; Levin's empirical re-grounding of form carries the strong reading (CROSS-008's stronger final-causality framing was restated downward 2026-08-10 and is no longer relied on), and the load-bearing move develops compactly without sentimental gloss — substantively complete in focused form. Recounted 2026-08-30: pre-edit true count 1838 including headings (1817 excluding), against a stored 1810 — essentially honest either way. The 2026-08-30 QC pass added 107 words anchoring a previously id-less Levin grade claim to PRS-01 and PRS-03, carrying the file from 0.82 to 0.871; still under target, still inside +/-25%, and no prose argument was added or expanded. RECOUNTED 2026-11-19 (reviewer): pre-edit body 2018 against the stored 1917 (a 101-word understatement, the standing arithmetic-staleness pattern). Boundary: top frontmatter stripped, Related-tradition-records auto-linker trailer excluded, bare separator lines dropped, regex [A-Za-z']+. This pass rewrote the closing paragraph (92 to 156 words, +64) to fix a wrong forward pointer (it named the articles of faith/creed; Day 121 is Q.6-7) and to mark the undeveloped Q.5 a.1-2 cases, giving 2082, ratio 0.946, inside the medium band."
 karpathy_wiki_sources:
-  - "traditions/stump/prs_triplets.md (PRS-05 union as final cause / highest intrinsic good; PRS-11 non-propositional second-person knowing) — both ids verified at the body in prs_triplets.md, which is the file they belong to; stump/wiki.md is a separate id system and does not carry these numbers"
+  - "traditions/stump/prs_triplets.md (PRS-11 Grains of Wheat — Resource: Franciscan non-propositional, second-person knowledge, Confidence High) — PRS-05 dropped from this line 2026-11-19: its register label is 'Suffering and divine permission', not 'union as final cause', and the body already repointed away from it on 2026-09-14; stump/wiki.md is a separate id system and does not carry these numbers"
   - "traditions/fredrickson/wiki.md (positivity resonance; Love 2.0)"
   - "traditions/levin/prs_triplets.md (PRS-01 bioelectric circuits encode anatomical target states — form as real, located, causally efficacious, Confidence High; PRS-03 morphological attractor formalism, Confidence High) — CROSS-008's stronger Thomistic-grounding claim restated downward 2026-08-10 and not relied on"
   - "traditions/hoffman/wiki.md (interface theory)"
@@ -20,8 +20,8 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-11-11T08:22:18"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-19T10:20:44"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 120 — Who Has Faith (Contemporary Parallel)
@@ -84,7 +84,7 @@ The lifeless/living distinction is precisely where the project's central claim i
 
 ## Where this leaves us
 
-The structure of the virtue is in place: faith in the intellect, charity as form. Tomorrow extends into the articles of faith (objects of belief) and the specific structure of the creed. The contemporary parallel will need to handle the move from faith's *formal* object (First Truth) to its *material* objects (the various articles), which is where Aquinas's analysis of how one orientation grounds many specific beliefs becomes load-bearing. The interface-theory reading already in place — single orientation toward what the interface presupposes, many specific representations within the interface — extends naturally.
+The structure of the virtue is in place: faith in the intellect, charity as form. Today's Q.5 cases — faith in angels and in humans in their original state (a.1), and the demons' belief of James 2:19, compelled by the evidence of signs and so no gift of grace (a.2) — were not developed here; the demons' case is the limiting instance of the lifeless faith treated above, cognitive content held with no charity at all. Tomorrow (Q.6–7) asks where faith comes from and what it does: whether faith is infused by God (Q.6 a.1), whether even lifeless faith is a gift (Q.6 a.2), and whether fear and purity of heart are its effects (Q.7 a.1–2). The contemporary parallel must carry forward the precision-weighting reading of *fides informis* built here: whether a prior installed from beyond the agent remains a gift while dialed down to inert, and what fear does to that precision once the prior is live.
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]
