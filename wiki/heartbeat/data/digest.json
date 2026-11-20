@@ -1,196 +1,197 @@
 {
   "seed": false,
-  "generated": "2026-11-19",
-  "generated_at": "2026-11-19T19:13:27Z",
+  "generated": "2026-11-20",
+  "generated_at": "2026-11-20T18:53:40Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 224,
-    "high_relevance": 2,
+    "items_checked": 201,
+    "high_relevance": 1,
     "primary_themes": "Capability Jump + Governance Policy"
   },
   "signals": [
     {
-      "title": "From Preference Data to Personalization: Tracing Sycophancy in Large Language Models",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.21650",
-      "relevance": 2,
-      "tags": [
-        "governance_policy"
-      ],
-      "summary": "Sycophancy in large language models is often measured as agreement with the user, yet agreement can be appropriate when the user's claim is valid, their preference is genuine, or their experience warrants acknowledgment. We study sycophancy as inappropriate agreement: validating a claim, preference, or self-assessment when the context calls for correction, qualification, or resistance.",
-      "implication": "Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.864715+00:00",
-      "long_summary": "The study of sycophancy in large language models focuses on inappropriate agreement, which occurs when a model validates a user's claim, preference, or self-assessment in contexts where it should instead offer correction, qualification, or resistance. While measuring sycophancy typically considers instances of agreement with users, the authors argue that such agreement is acceptable when the user's assertion is valid or deserving of acknowledgment. This nuanced examination seeks to delineate when it is appropriate for language models to align with users and when they should challenge them. Understanding the boundaries of sycophancy is important for developing more refined interaction models that better serve users’ needs without compromising the integrity of the responses. This is crucial for the community, as it highlights the need for responsible AI that balances user engagement with accurate and constructive feedback.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "DiagTrace: An Interactive Benchmark for Clinical Decision Making",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.22009",
+      "title": "VeriMath: Human-in-the-Loop Generation and Verification of Curriculum-Aligned Mathematics Assessment Items",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2611.23456",
       "relevance": 2,
       "tags": [
         "capability_jump"
       ],
-      "summary": "Large language models (LLMs) have shown strong performance on medical question answering and diagnostic reasoning benchmarks. However, existing evaluations typically provide all patient information upfront and assess only the final diagnosis or rationale.",
+      "summary": "Automatic generation of mathematics assessment items is a growing area in educational artificial intelligence, yet classroom deployment remains challenging. Generated questions must satisfy multiple constraints: mathematical correctness, curriculum alignment, appropriate cognitive difficulty, and educator reviewability.",
       "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.899005+00:00",
-      "long_summary": "DiagTrace introduces an interactive benchmark designed to enhance the evaluation of clinical decision-making by large language models (LLMs). Unlike traditional assessments that supply complete patient information at the beginning and primarily focus on the final diagnosis or rationale, DiagTrace emphasizes the iterative process involved in clinical evaluation. This new approach seeks to more accurately reflect real-world clinical scenarios where information is gathered progressively. It highlights the need for a more dynamic assessment of LLMs in the medical domain, thus pushing forward the capabilities of AI in health-related fields. Keeping updated on such advancements is essential for a community that aims to understand the transformative role of AI in healthcare and decision-making processes.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:34.875356+00:00",
+      "long_summary": "VeriMath addresses the challenges of automatically generating mathematics assessment items for classroom use, a rapidly-growing field in educational AI. The effective deployment of such generated questions encounters several constraints, including ensuring mathematical correctness, aligning with educational curricula, providing an appropriate level of cognitive difficulty, and allowing for educator review. This highlights the complexities involved in developing AI systems that can create assessments while meeting the diverse needs of educators and students. Staying informed about advancements like VeriMath is crucial for communities focused on AI, as it underscores the importance of aligning AI developments with practical educational requirements.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
+        "generated": "2026-11-20",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Artificial Intelligence and Organizational Transformation",
-      "source": "Hacker News (AI)",
-      "url": "https://medium.com/@smoking2man/artificial-intelligence-and-organizational-transformation-the-formalization-of-knowledge-changes-6bffb92e2226",
-      "relevance": 1,
-      "tags": [],
-      "summary": "Article URL: https://medium.com/@smoking2man/artificial-intelligence-and-organizational-transformation-the-formalization-of-knowledge-changes-6bffb92e2226 Comments URL: https://news.ycombinator.com/item?id=50405976 Points: 2 # Comments: 0",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Sat, 07 Nov 2026 16:51:11 +0000",
-      "first_seen_at": "2026-11-19T19:13:25.313392+00:00",
-      "long_summary": "The article discusses the impact of artificial intelligence on organizational transformation, particularly emphasizing how the formalization of knowledge within organizations evolves due to AI integration. As AI systems are increasingly adopted, they change not only workflow dynamics but also the ways in which knowledge is documented and shared across various levels of an organization. This transformation could lead to more efficient processes and improve decision-making capabilities, enhancing overall organizational effectiveness. Understanding these shifts is crucial as companies navigate the evolving landscape shaped by AI technologies. For a community invested in AI, recognizing these transformations can foster better adaptability and strategic decision-making in organizational contexts.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Artificial Intelligence in higher education – gov report (Norwegian)",
-      "source": "Hacker News (AI)",
-      "url": "https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/",
-      "relevance": 1,
-      "tags": [],
-      "summary": "Article URL: https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/ Comments URL: https://news.ycombinator.com/item?id=50412439 Points: 1 # Comments: 4",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Sun, 08 Nov 2026 11:46:50 +0000",
-      "first_seen_at": "2026-11-19T19:13:25.304863+00:00",
-      "long_summary": "A Norwegian government report discusses the role of artificial intelligence in higher education, though specific details of the findings were not provided in the source. The article link leads to the full report, which may contain insights into how AI is being integrated into educational environments, potential impacts on learning and teaching, and challenges that institutions may face. The community should keep track of such developments to better understand AI's influence on education, which is crucial for staying informed about the evolving landscape of learning technologies.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Google Deepmind's Project Genie update brings Genie 4, chainable worlds, and a community gallery for remixing",
+      "title": "Nvidia bets at least $500 million on Inception's diffusion models to strengthen its open-source Nemotron lineup",
       "source": "The Decoder",
-      "url": "https://the-decoder.com/google-deepminds-project-genie-update-brings-genie-4-chainable-worlds-and-a-community-gallery-for-remixing/",
+      "url": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Nvidia is close to acquiring AI startup Inception for at least $500 million, according to The Information. The company is just two years old and builds language models based on diffusion processes, an alternative approach to the token-by-token generation used by models like ChatGPT.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 20 Nov 2026 14:53:50 +0000",
+      "first_seen_at": "2026-11-20T18:53:36.868172+00:00",
+      "long_summary": "Nvidia is reportedly nearing a $500 million acquisition of the AI startup Inception, which is only two years old. Inception specializes in developing language models that utilize diffusion processes, offering an alternative to the token-by-token generation method employed by existing models like ChatGPT. This move is designed to enhance Nvidia's open-source Nemotron lineup. Understanding Nvidia's strategic investments in AI innovations, such as Inception's technology, highlights significant trends in the industry's evolution, which is essential for the community to stay informed about advancements in AI methodologies.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Retrieving Patristic References and Modelling Topics in Bullinger's Reformation Correspondence",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.25247",
+      "relevance": 1,
+      "tags": [],
+      "summary": "The correspondence of Heinrich Bullinger (1504-1575), Swiss Reformer and Antistes of Zurich, documents the political and religious debates of the Reformation, including extensive appeals to the Church Fathers as authoritative sources. Detecting such references computationally remains largely unexplored.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.378100+00:00",
+      "long_summary": "The correspondence of Heinrich Bullinger, a prominent Swiss Reformer, captures the political and religious discussions of the Reformation era, highlighting significant references to the Church Fathers as key authoritative sources. However, the task of computationally detecting these references remains largely unexamined. This focus on computational methods to analyze historical texts is important for the community because it opens up new avenues for understanding the connections between historical figures and their influences, enhancing our grasp of theological and political shifts during a pivotal period in history.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "LLMs Are Already Confidence-Aware Zero-Shot Classifiers",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.25289",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Zero-shot large language models (LLMs) are increasingly used as text classifiers, but their labels are only useful when we know to what extent we can trust them. We compare black-box methods (verbalised confidence and sampling) with white-box methods that read token probabilities (P(True), and multiple logit-scoring methods using constrained generation).",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.343773+00:00",
+      "long_summary": "Zero-shot large language models (LLMs) are becoming popular as text classifiers, but understanding the trustworthiness of their labels is crucial. The study explores both black-box methods, such as verbalized confidence and sampling, and white-box methods that analyze token probabilities, including P(True) and various logit-scoring techniques through constrained generation. This comparison highlights the need for awareness regarding the confidence levels of LLM outputs when utilized for classification tasks. For a community keeping up with AI, this development is significant as it underscores the importance of assessing the reliability of AI-generated decisions in real-world applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Forget Freely, Grep Later: Lossless, Index-Free Memory for Long-Horizon LLM Agents",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.25123",
       "relevance": 1,
       "tags": [
+        "capability_jump"
+      ],
+      "summary": "Long-horizon LLM agents often exceed their context windows, forcing them to discard information that may be needed later. Existing context management strategies rely on summarization, masking, or structured memory, requiring decisions about what to preserve or how to retrieve it before future needs are known.",
+      "implication": "Reassess role boundaries and human override for community deployments.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.338609+00:00",
+      "long_summary": "Long-horizon LLM agents frequently face challenges due to limitations in their context windows, which leads to the necessity of discarding potentially valuable information. Current strategies for managing this context typically involve summarization, masking, or the use of structured memory systems. However, these methods often require prior decisions regarding what information to keep or how to retrieve it, which can hinder adaptability since future requirements may not be known at the time of processing. This development highlights a significant issue in effectively managing information for long-term use in AI systems. Understanding these limitations and evolving strategies is crucial for our community as we strive to improve the capabilities and efficiency of AI-driven applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "No-Harm-Jury A Jury-Based Multi-Dimensional Harm Evaluation Framework for Medical AI Responses",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.24972",
+      "relevance": 1,
+      "tags": [],
+      "summary": "We present No-Harm-Jury, a jury-based automated evaluation framework that scores AI-generated medical responses across seven conceptually distinct harm dimensions using a panel of five diverse language models as independent jurors. Responses generated by Ministral-14B on 3,000 questions drawn from PubMedQA, MedQA, and MedMCQA are scored by five jurors across dimensions of informational, social, psychological, autonomy, economic, privacy, and epistemic harm; the 151 empty responses (98 MedQA, 53 MedM- CQA) are excluded, leaving 2,849 valid samples.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.329617+00:00",
+      "long_summary": "No-Harm-Jury is an automated evaluation framework designed to assess AI-generated medical responses by scoring them on seven distinct dimensions of harm. It utilizes a panel of five diverse language models to serve as independent jurors. The framework evaluates responses produced by the Ministral-14B model, which were derived from a dataset of 3,000 questions sourced from PubMedQA, MedQA, and MedMCQA. After excluding 151 empty responses, the evaluation focuses on 2,849 valid samples, scoring them across dimensions that include informational, social, psychological, autonomy, economic, privacy, and epistemic harm. This evaluation framework is significant as it highlights the importance of assessing the multifaceted impacts of AI in healthcare, a crucial consideration for a community staying informed about developments in AI applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "HireWatch: Evaluating LLM Compliance with U.S. Employment Law Under Contextual Pressure",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.24970",
+      "relevance": 1,
+      "tags": [
+        "governance_policy",
         "market_platform"
       ],
-      "summary": "With Genie 4, Google DeepMind is launching its most realistic world model to date for Google AI Ultra subscribers. It generates interactive 3D worlds that can be modified in real time via text input and, for the first time, includes native sound.",
-      "implication": "Monitor adoption pressure and revise formation cadence for tool onboarding.",
-      "published_at": "Wed, 18 Nov 2026 19:26:25 +0000",
-      "first_seen_at": "2026-11-19T19:13:14.863542+00:00",
-      "long_summary": "With Genie 4, Google DeepMind introduces its most realistic world model yet for Google AI Ultra subscribers, enabling the generation of interactive 3D worlds that can be modified in real time with text input. Notably, this version incorporates native sound, enhancing the immersive experience. This advancement reflects ongoing efforts to create more engaging and adaptable AI environments. Understanding these developments is crucial for a community keeping up with AI as they illustrate the latest in interactive AI technology and its potential applications.",
+      "summary": "The deployment of large language models (LLMs) in hiring pipelines is growing, yet existing evaluations generally overlook their compliance with legal rules. To fill this gap, we introduce HireWatch, an evaluation that assesses whether LLMs comply with U.S.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.325798+00:00",
+      "long_summary": "The deployment of large language models (LLMs) in hiring pipelines is increasing, but current evaluations often neglect to consider their adherence to legal regulations. To address this oversight, researchers have introduced HireWatch, an evaluation tool designed to assess the compliance of LLMs with U.S. employment law. This initiative aims to ensure that the models used in hiring processes align with the established legal framework, thereby promoting fair practices in the recruitment industry. Understanding developments like HireWatch is crucial for the community to engage with the ethical implications of AI in hiring and to advocate for regulatory compliance in AI technologies used for employment.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
+        "generated": "2026-11-20",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "RLDE: A Reinforcement Learning Framework for Interpretable Iterative Document Editing",
+      "title": "Physics of Language Models: Part 4.2, Canon Layers at Scale where Synthetic Pretraining Resonates in Reality",
       "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.22039",
+      "url": "https://arxiv.org/abs/2611.24963",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Do standard benchmarks see the architectural differences that matter? We study it with 64 from-scratch pretraining runs of Transformers and three linear-model families at 1.3-8B parameters on 1-2T Nemotron-CC tokens, at a cost of roughly 100k USD per 8B run.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.322427+00:00",
+      "long_summary": "The study investigates whether standard benchmarks can adequately capture the significant architectural differences in language models. It focuses on 64 pretraining runs of Transformers and three linear-model families, which vary in size from 1.3 to 8 billion parameters and are trained on 1 to 2 trillion Nemotron-CC tokens, costing around 100,000 USD per 8 billion parameter run. This research sheds light on the effectiveness of benchmarks in reflecting the performance of different architectures, which is crucial for understanding and advancing AI capabilities. Keeping informed on such studies helps the community assess the evolving landscape of AI and its implications for future model development.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-20",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "TETHER: Training-Free, Elastic, ToC-Anchored Hierarchy Extraction and Recovery in Design-Driven Long Documents",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.24960",
       "relevance": 1,
       "tags": [
         "capability_jump"
       ],
-      "summary": "Improving the quality, clarity, and flow of long documents remains a challenging problem in NLP, as human editing typically occurs through iterative refinement rather than a single-pass rewrite. Most existing automated systems act as black-box generators or rely on supervised learning, limiting interpretability and failing to capture the sequential nature of revisions.",
+      "summary": "Converting complex documents into structured knowledge constitutes the critical infrastructure urgently required for deploying Large Language Models (LLMs) in downstream research. However, blind to the Table of Contents (ToC) as a macro-structure, existing bottom-up paradigms rely on localized visual cues, inducing heuristic fragility in high-entropy layouts where visual prominence decouples from logical depth; meanwhile, direct LLM extraction lacks spatial grounding, triggering hallucinations in long contexts.",
       "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.924560+00:00",
-      "long_summary": "The paper introduces RLDE, a reinforcement learning framework designed for intuitive and interpretable iterative document editing. It addresses the complexity of enhancing the quality, clarity, and flow of lengthy documents, an area where human editors usually engage in multiple rounds of refinement rather than a simple one-time rewrite. Current automated systems often function as black boxes or depend on supervised learning methods, which reduces their transparency and does not effectively account for the process of sequential editing. This framework potentially shifts how document editing is approached, offering a clearer understanding of the editing process while improving document quality. This development is significant for a community interested in AI as it highlights a movement towards systems that prioritize interpretability and engagement, which is crucial for advancing natural language processing technologies.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.320623+00:00",
+      "long_summary": "The paper presents TETHER, a method aimed at addressing the challenge of converting complex documents into structured knowledge necessary for effectively using Large Language Models (LLMs) in research applications. Current approaches often overlook the Table of Contents (ToC) as a macro-structure, focusing instead on bottom-up strategies that use localized visual cues. This can lead to unreliable outcomes, especially in documents with complex layouts where visual prominence does not align with logical structure. Additionally, existing LLM extraction methods struggle with the coherence of long contexts due to a lack of spatial grounding, resulting in potential inaccuracies or hallucinations. This advancement is significant for those in the community who are eager to understand and utilize AI tools for processing large and multifaceted texts, as it highlights the importance of structured approaches in maximizing the effectiveness of LLMs.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
+        "generated": "2026-11-20",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "TUSI: A Citation-Grounded Graph-Based Benchmark",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.21823",
+      "title": "Scone: Symmetry-aware Neural Combinatorial Optimization for Graph Coloring",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2611.25273",
       "relevance": 1,
       "tags": [
-        "capability_jump",
+        "misuse_security",
         "governance_policy"
       ],
-      "summary": "Evaluating retrieval-augmented generation (RAG) systems in Persian law remains challenging because benchmarks lack realism, grounding, and coverage of legal reasoning. Existing resources are either synthetically generated from statutory texts, lacking natural information needs, or derived from informal legal question--answer sources without explicit linkage to authoritative legal documents, making them unsuitable for rigorous evaluation of grounded legal reasoning.",
-      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.885425+00:00",
-      "long_summary": "Evaluating retrieval-augmented generation (RAG) systems in Persian law is difficult due to the lack of realistic, grounded, and comprehensive benchmarks for legal reasoning. Current resources either use synthetic materials from statutory texts, which fail to represent authentic information needs, or are based on informal question-and-answer legal sources that do not connect explicitly with authoritative legal documents. This deficiency renders them inadequate for thorough assessments of grounded legal reasoning. For a community focused on keeping up with AI, understanding the challenges and developments in creating effective benchmarks for legal AI applications is crucial for ensuring their reliability and validity.",
+      "summary": "Graph coloring, which entails assigning colors to nodes such that no adjacent nodes have the same color, is a fundamental combinatorial optimization problem. In general, however, finding a node coloring with no monochromatic edges given a fixed palette is NP-hard.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Fri, 20 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-20T18:53:35.127380+00:00",
+      "long_summary": "Graph coloring involves assigning colors to nodes of a graph in such a way that no two adjacent nodes share the same color. It is a classic problem in combinatorial optimization. However, discovering a valid coloring that avoids monochromatic edges with a fixed set of available colors is NP-hard. This highlights the complexity of the problem and suggests the challenges involved in developing efficient algorithms for graph coloring tasks. Understanding these complexities and advancements in graph coloring techniques is crucial for communities engaged in AI, as it informs optimizations in various applications where graph structures play a significant role.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "SimAI: Mechanistic User Simulation through Psychological Network Models",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.21808",
-      "relevance": 1,
-      "tags": [],
-      "summary": "Realistic user simulation enables the study of human interactions when direct experimentation is costly or potentially harmful. However, existing simulators largely overlook the psychological mechanisms that drive user behavior.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.882592+00:00",
-      "long_summary": "Realistic user simulation is essential for studying human interactions, particularly when direct experimentation may be costly or harmful. Despite its importance, current simulators tend to neglect the psychological mechanisms underlying user behavior. The development of SimAI seeks to address this gap by employing psychological network models to create simulations that better reflect how users think and act. This advancement in user simulation can enhance understanding of interactions and improve the design of systems and interfaces. As the community seeks to keep pace with AI developments, recognizing the significance of integrating psychological insights into user simulation is crucial for fostering more effective and realistic AI applications.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Corrupting Ties: Investigating Robustness to Bias Injection Across Multi-Agent Network Topologies",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.21804",
-      "relevance": 1,
-      "tags": [
-        "capability_jump",
-        "governance_policy"
-      ],
-      "summary": "AI systems are increasingly deployed in high-stakes decision-making contexts, where interactions among components can introduce fairness risks that remain undetected when auditing components or collective outcomes in isolation. As LLM-based multi-agent systems become more prevalent, understanding how biased information propagates through agent interactions is essential for assessing their fairness.",
-      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.879515+00:00",
-      "long_summary": "As AI systems are used more frequently in critical decision-making scenarios, the interactions among their components can pose fairness risks that are often overlooked when auditing either individual components or collective outcomes separately. With the growing use of LLM-based multi-agent systems, it is vital to understand how biased information can spread through the interactions between agents. This understanding is crucial for evaluating the fairness of these systems and addressing the potential issues that arise from bias propagation. Keeping up with these developments is essential for the community as it contributes to ensuring more equitable AI applications in high-stakes environments.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Literary Language Mashup: Curating Fictions with Large Language Models",
-      "source": "arXiv cs.CL",
-      "url": "https://arxiv.org/abs/2611.21649",
-      "relevance": 1,
-      "tags": [],
-      "summary": "In this paper, we propose an alternative approach to human evaluation of literary fictions by employing LLMs themselves as evaluators within the GrAImes framework. We apply this methodology to assess human-written and AI-generated microfictions in Spanish, to five PhD professors in literature and sixteen literary enthusiasts, and to short stories in both Spanish and English.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Thu, 19 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-19T19:13:12.861950+00:00",
-      "long_summary": "This paper introduces a novel method for evaluating literary fictions, utilizing Large Language Models (LLMs) as evaluators within the GrAImes framework. The authors apply this approach to compare human-written and AI-generated microfictions in Spanish, engaging both a group of five PhD professors in literature and sixteen literary enthusiasts. Additionally, the methodology extends to assess short stories written in both Spanish and English, indicating a comprehensive evaluation across different languages. This exploration highlights the potential of LLMs not only as creators but also as tools for artistic critique. Understanding such developments is crucial for a community keeping up with AI, as it showcases innovative ways AI can influence and enhance literary evaluation.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-19",
+        "generated": "2026-11-20",
         "kind": "machine-generated"
       }
     }
