@@ -16397,3 +16397,21 @@ REVISE-543: [2026-11-19] Source item: PRESUMPTION-1252 (DISPOSITION-1146)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1252 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1252_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1252_against.md
+
+REVISE-544: [2026-11-20] Source item: PRESUMPTION-1254 (DISPOSITION-1149)
+  What is at risk: Any future C2A2 group-coherence or "relational resonance" metric built on observer data (turn timing, lexical alignment) and validated by appeal to participants' felt coherence; cross-thinker coding that treats Fredrickson's felt positivity resonance and measured synchrony as one variable.
+  Recommended action (for Tom): (1) Record felt coherence and observed coordination as two named variables. (2) Before either is used as a proxy, report their agreement on the same sessions. (3) Cite Palumbo et al. 2017 for the inconsistency and the shared-stimulus confound.
+  Urgency: Low
+  Related: PREMISE-127; PREMISE-062; REVISE-539..543 (umbrella-term pattern); MONITOR-724.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1254 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1254_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1254_against.md
+
+REVISE-545: [2026-11-20] Source item: PRESUMPTION-1255 (DISPOSITION-1150)
+  What is at risk: Dyad protocol sycophancy countermeasures (PREMISE-062 dual-reasons rule; REVISE-106); 15a/15b independence; any agent definition that relies on "be candid" instructions as the damping mechanism.
+  Recommended action (for Tom): (1) Restate damping as structural: isolated first judgments, model or prompt heterogeneity, human or ground-truth gate. (2) Run a FlipFlop-style capitulation test on the dyad agents with and without a candor instruction. (3) Note in the 15a/15b definitions that same-orchestrator runs do not count as structural independence.
+  Urgency: Medium
+  Related: PREMISE-127; PREMISE-062; REVISE-539..543 (umbrella-term pattern); MONITOR-724.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1255 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1255_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1255_against.md

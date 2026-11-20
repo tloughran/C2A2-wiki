@@ -223,3 +223,11 @@ Ingested 2 triplet(s): PRS-82, PRS-83. See prs_triplets.md. Confidence labels pr
 
 ### Update 2026-11-10 — Rule 30 Prizes: Now for humans and AIs (PROP-2026-11-07-001)
 Ingested 2 triplet(s): PRS-84, PRS-85. PRS-84 records the 2026 prize protocol for machine-generated proofs (verified human submitter, reproducible computation, human-readable account and/or runnable formal verification). PRS-85 registers Problem 3 (O(n) irreducibility of the rule 30 center column) as an open, AI-directed test of computational irreducibility. Open: the Instructions for Agents page was not read; no award yet. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — Future of Science and Technology Q&A (October 21, 2026) (PROP-2026-11-14-002)
+Ingested 3 triplet(s): PRS-86, PRS-87, PRS-88. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — Future of Science and Technology Q&A (October 21, 2026) (PROP-2026-11-14-001)
+Ingested 3 triplet(s): PRS-89, PRS-90, PRS-91. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

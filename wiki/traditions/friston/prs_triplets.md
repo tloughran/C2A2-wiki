@@ -808,7 +808,25 @@ PRS-88:
   Confidence: Medium
   Evidence: "That conviction is quite a unique gift and quite a fragile gift, and it can go away... you don't know anything. It's all inference, including that you are you and that you exist." "How do we actually carve nature at its joints into things?... a real frontier problem, certainly in my world."
 
-*Total PRS triplets: 88*
+PRS-89:
+  Problem: Interoceptive active-inference accounts posit brain-heart loops, but standard effective-connectivity methods model the brain alone, so those loops cannot be estimated from data.
+  Resource: Embodied DCM: a closed-loop cortical-brainstem-thalamic-sinoatrial generative model jointly inverted on EEG and ECG.
+  Solution: Joint inversion yields higher model evidence and more precise parameter estimates than either signal alone, letting brain-heart coupling be estimated and compared across hypotheses.
+  Date Added: 2026-11-20
+  Source: Embodied Dynamic Causal Modelling: Brain and Cardiac Effective Connectivity; PROP-2026-11-12-004
+  Confidence: Medium (secondary report; preprint unread)
+  Evidence: Reported validation on an auditory Go/No-Go EEG/ECG dataset with variational Bayesian model comparison.
+
+PRS-90:
+  Problem: Competing cytoarchitectural accounts of visceral cortex (agranular visceromotor prediction vs granular sensory relay) have been argued anatomically rather than tested on physiological data.
+  Resource: Bayesian model comparison inside the embodied DCM.
+  Solution: The two hypotheses become comparable model structures whose evidence can be scored on EEG/ECG.
+  Date Added: 2026-11-20
+  Source: Embodied Dynamic Causal Modelling: Brain and Cardiac Effective Connectivity; PROP-2026-11-12-004
+  Confidence: Speculative (direction of the result not stated in the summary)
+  Evidence: Summary says comparison "distinguished" the hypotheses without reporting which won.
+
+*Total PRS triplets: 90*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

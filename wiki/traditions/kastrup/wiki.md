@@ -208,3 +208,7 @@ Ingested 3 triplet(s): PRS-104, PRS-105, PRS-106. Reality vs. imagination recast
 
 ### Update 2026-11-12 — Beyond analytic idealism recording (PROP-2026-11-11-002) and Pollak 'Mind-Body might not be enough' recording (PROP-2026-11-11-003)
 Ingested 5 triplet(s): PRS-107..PRS-111. Kastrup names his own defeaters ('seeing without eyes') and treats analytic idealism as a provisional pointing finger; if naturalism falls, logic is 'the next domino'; teleology separated from metacognition (Speculative). Pollak session: immune and psychological selves as two descriptions of one process; 'mental' is not 'under control'. Card -002 CANDIDATE-03 (IIT + Markov blankets) NOT minted: it corroborates the existing triplet sourced from PROP-2026-08-28-020 rather than adding new content. PRS-103 (Pollak announcement, 'Solution: Not yet stated') is now partly answered by PRS-110. Open: all quotes are from the host's public write-ups; members' recordings unheard.
+
+
+### Update 2026-11-20 — Everything is determined & that gives life meaning (PROP-2026-11-18-002)
+Ingested 2 triplet(s): PRS-112, PRS-113. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

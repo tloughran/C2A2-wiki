@@ -252,3 +252,11 @@ Ingested 2 triplet(s): PRS-156, PRS-157. Bioelectric pattern-memories as the sof
 
 ### Update 2026-11-12 — Manicka & Levin, topoietic model of collective morphogenesis (PROP-2026-11-11-004)
 Ingested 2 triplet(s): PRS-158, PRS-159. Organizer-free collective rescue of Xenopus embryos under teratogenic stress, governed by a geometric threshold (critical L/lambda). Open question added: does the critical L/lambda define when a group of agents acquires its own set-point (PRS-159, Speculative)? Figures come from a secondary summary; verify against the preprint.
+
+
+### Update 2026-11-20 — On Growth and Form, and Function: Reusable Regulatory Handles Control Phenotypic Variation (PROP-2026-11-16-001)
+Ingested 3 triplet(s): PRS-160, PRS-161, PRS-162. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — Scale-free Niche Construction: expanding agent-microenvironment co-development to unconventional substrates (PROP-2026-11-17-005)
+Ingested 2 triplet(s): PRS-163, PRS-164. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

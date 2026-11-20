@@ -165,3 +165,7 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-15-001` — Non-Cartesian Substance Dualism and Materialism Without Reductionism (paper, Faith and Philosophy 1995) → PRS-46, PRS-47, PRS-48, PRS-49
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+
+### Update 2026-11-20 — The evil that now dominates (short reflection by Eleonore Stump, reproduced by Aaron Belz) (PROP-2026-11-12-003)
+Ingested 1 triplet(s): PRS-52. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

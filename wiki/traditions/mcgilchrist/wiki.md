@@ -240,3 +240,11 @@ Approved card is the same event (same source URL) already ingested 2026-11-07 as
 
 ### Update 2026-11-12 — Cassidy Lecture 2026, St Chad's Durham (PROP-2026-11-11-001)
 Ingested 1 triplet(s): PRS-90 (Speculative). The meaning crisis as a disorder of attention; recovering the sacred as a mode of attending. Open: the lecture title is secondhand and one summary conflated it with 'The Faustian bargain of AI' (PRS-88/89); watch the 58-minute recording before upgrading.
+
+
+### Update 2026-11-20 — Lighting the Fire of the Mind with Dr Iain McGilchrist (PROP-2026-11-18-003)
+Ingested 1 triplet(s): PRS-91. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — To experience beauty, we need the right hemisphere of the brain — Vrucht Bare Aarde V3 2026 Is.17 (English Translation) (PROP-2026-11-18-001)
+Ingested 2 triplet(s): PRS-92, PRS-93. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

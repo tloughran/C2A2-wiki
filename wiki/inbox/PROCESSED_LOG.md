@@ -2605,3 +2605,29 @@ No new decision email; no newly approved cards (ingest_ledger OPEN=1 standing, P
 
 ### 2026-11-19 second orchestrator firing (04:36 local, verification only)
 Started alongside the primary run (primary wrote review_log 04:38:33, level2 04:38:34, master and this log 04:38:44). Overlap was detected only after this firing had run generate_review_page.py once (2026-11-19_review.html, 04:37:50, same pending set of 19, so same content as the primary's). No other writes; waited ~2.5 min past the primary's last write. No second Gmail draft, no cards filed, no master or review_log or level2 changes. Verified: Gmail [C2A2-review-decision] (unread or newer_than:2d) = 0; ingest_ledger OPEN=1 (standing PROP-2026-08-14-033), 0 to ingest; pending = 19, none dated 11-19; review pages kept 11-16..11-19; review_log.html address-clean (0 matches); level2 meta 1958 signals / 92 pairs / span to 2026-11-11 / stale_days 8 (under the 21-day WARN). Searches this firing (11 traditions) found nothing new: the Manicka-Levin topoietic preprint is already in inbox (2026-11-11 card); no Mindscape 374, Wolfram, Stump, Fredrickson, Friston, Hoffman, Hawkins, McGilchrist, Kastrup or Arkani-Hamed item from November surfaced. Phase 6: no git.
+
+## 2026-11-20 - C2A2 daily run (Fri, cloud orchestrator)
+Phase 0: decision email 2026-11-19 (19 APPROVE) applied; moved to approved/, copied to inbox/. Phase 1 ingested:
+- PROP-2026-11-12-002 fredrickson 2026-11-12_fredrickson_no-peace-for-the-wicked-intrapersonal-harmony.md PRS-51, PRS-52 (2 triplets)
+- PROP-2026-11-12-001 fredrickson 2026-11-12_fredrickson_positivity-resonance-couples-health-longevity.md PRS-53, PRS-54 (2 triplets)
+- PROP-2026-11-12-004 friston 2026-11-12_friston_embodied-dcm-brain-cardiac-connectivity.md PRS-89, PRS-90 (2 triplets)
+- PROP-2026-11-12-003 stump 2026-11-12_stump_evil-that-now-dominates-mourning-without-despair.md PRS-52 (1 triplets)
+- PROP-2026-11-13-001 carroll 2026-11-13_carroll_mindscape-ama-november-2026.md PRS-110, PRS-111, PRS-112 (3 triplets)
+- PROP-2026-11-14-002 wolfram 2026-11-14_wolfram_future-sci-tech-qa-oct21-crypto-bugs-ai-math.md PRS-86, PRS-87, PRS-88 (3 triplets)
+- PROP-2026-11-14-001 wolfram 2026-11-14_wolfram_future-sci-tech-qa-oct21-proofs-crypto-bugs.md PRS-89, PRS-90, PRS-91 (3 triplets)
+- PROP-2026-11-15-002 wright 2026-11-15_wright_ask-ntw-nov09-ai-antichrist-thiel-spiritual-gifts.md PRS-89 (1 triplets)
+- PROP-2026-11-15-001 wright 2026-11-15_wright_fujimura-interview-art-making-gods-homecoming.md PRS-90, PRS-91, PRS-92 (3 triplets)
+- PROP-2026-11-15-003 wright 2026-11-15_wright_romans-11-all-israel-in-this-way-life-from-the-dead.md PRS-93, PRS-94 (2 triplets)
+- PROP-2026-11-16-001 levin 2026-11-16_levin_lora-nca-regulatory-handles-growth-form.md PRS-160, PRS-161, PRS-162 (3 triplets)
+- PROP-2026-11-17-002 hawkins 2026-11-17_hawkins_latency-mismatches.md PRS-87 (1 triplets)
+- PROP-2026-11-17-004 hawkins 2026-11-17_hawkins_q4-research-roadmap.md PRS-88, PRS-89 (2 triplets)
+- PROP-2026-11-17-001 hawkins 2026-11-17_hawkins_scale-invariance-jeffs-deformation-challenge.md PRS-90, PRS-91 (2 triplets)
+- PROP-2026-11-17-003 hawkins 2026-11-17_hawkins_variations-in-learned-object-models.md PRS-92, PRS-93 (2 triplets)
+- PROP-2026-11-17-005 levin 2026-11-17_levin_scale-free-niche-construction-osf.md PRS-163, PRS-164 (2 triplets)
+- PROP-2026-11-18-002 kastrup 2026-11-18_kastrup_everything-determined-gives-life-meaning.md PRS-112, PRS-113 (2 triplets)
+- PROP-2026-11-18-003 mcgilchrist 2026-11-18_mcgilchrist_ralston-lighting-the-fire-of-the-mind.md PRS-91 (1 triplets)
+- PROP-2026-11-18-001 mcgilchrist 2026-11-18_mcgilchrist_vrucht-bare-aarde-beauty-right-hemisphere.md PRS-92, PRS-93 (2 triplets)
+Total new triplets: 39. Flagged to pattern detector: 3 card(s). Note: PROP-2026-11-14-001/-002 are two cards on the same Wolfram Oct-21 Q&A (flagged duplicate on 11-14); both approved and ingested as approved.
+
+### 2026-11-20 second orchestrator firing (04:36 local, verification only)
+Started alongside the primary run; the primary had already written the decisions archive (04:36) and was writing review pages when this firing checked, so this firing made no pipeline writes: no Phase 0 moves, no ingest, no searches, no review page, no Gmail draft, no review_log or level2 rebuild. Waited until the tree had been quiet for 3 min (primary's last write 04:40:05). Verified: decision email 1a1f4ccf081e1f89 is read (no UNREAD label) and stored in provenance/decision_emails.json; 19 APPROVE moved and ingested (39 triplets, per entry above); pending = 2 (both Carroll specialist cards dated 11-20); review pages kept 11-17, 11-18, 11-20 (11-19 page absent); Gmail draft r8980614978022681439 created 09:39Z; review_log.html address-clean (0 matches); level2 meta 2017 signals / 92 pairs / span 2026-04-03 to 2026-11-18 / stale_days 2 (no WARN). Phase 6: no git.

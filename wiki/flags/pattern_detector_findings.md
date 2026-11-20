@@ -1459,3 +1459,16 @@ Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, f
 - **Kastrup x Fredrickson (CROSS-167), MEDIUM:** immune system as appearance of affect meets positivity-resonance/inflammation data. Host write-up only. **Not escalated.**
 - **Kastrup x McGilchrist (CROSS-168), MEDIUM-LOW:** a thinker naming his own defeaters is a clean case of the 'research program judged by its questions' framing C2A2 uses; the logic-is-empirical move is a live point of contrast with McGilchrist. **Not escalated.**
 - **McGilchrist Cassidy, LOW:** title-only, secondhand; possible conflation with PRS-88/89 source.
+
+
+## FINDING-115 - Ingest of 19 approved cards: harmony within, resonance between, and two 'small community' signals for the ISMI paper
+
+**Date:** 2026-11-20 · **Source signals:** 3 forwarded cards (wright Ask-NTW AI/Antichrist, Fujimura interview, Romans 11 report) plus cross signals from the other 16 cards, 39 triplets · **Confidence:** Medium-Low · **Recommended action:** hear the Wright Romans lectures and the McGilchrist Vrucht/Ralston items before any upgrade; read the Fredrickson couples paper's methods
+
+- **Fredrickson x Stump (no CROSS minted), MEDIUM:** the intrapersonal-harmony paper (PRS-51/52) and Stump's internal integration name the same structure; the folk concept keeps harmony without virtue, the Thomistic one requires it. The couples-longevity paper (PRS-53/54) supplies a measured, decades-long consequence of interpersonal coupling. Together: harmony within and resonance between as two conditions of flourishing. Card-level. **Not escalated.**
+- **C2A2 core / MacIntyre, MEDIUM:** three independent cards (Stump 'evil that now dominates', McGilchrist Vrucht 'small committed communities', McGilchrist Ralston formation-of-the-intellect) converge on what a member owes a tradition under corruption and how one climbs into it. Directly usable for the ISMI paper's After Virtue framing. Secondhand for both McGilchrist items. **Not escalated.**
+- **Kastrup x Wolfram (CROSS-169), MEDIUM:** determined-but-unpredictable = irreducibility; Stump is the stated dissent on responsibility.
+- **Wright x Rohr x Stump (CROSS-170), MEDIUM-LOW:** given vs incorporated unity; a standing disagreement to state plainly. Wright's 'God loves time' (Fujimura) vs block-universe readings is noted, Speculative, no CROSS.
+- **Hawkins internal, note:** two separate sessions (PROP-2026-11-17-001, -003) name deformation as the hard open case; chain scale -> variation -> deformation. Levin's identity-under-perturbation is the biological instance. Watch only.
+- **Wright AI/Antichrist, LOW:** not a flag candidate until the audio confirms what Wright says about AI as mind or agent.
+- Housekeeping: PROP-2026-11-14-001/-002 are two cards on one Wolfram Q&A, both approved and ingested (wolfram PRS-86..91); a later dedup pass may merge overlapping triplets.

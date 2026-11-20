@@ -176,3 +176,11 @@ Processed 1 source file(s); minted PRS-40 - PRS-42.
 - `PROP-2026-10-08-002` — Does Shared Positivity Make Life More Meaningful? Perceived Positivity Resonance is Uniquely Associated with Perceived Meaning in Life (paper, https://pmc.ncbi.nlm.nih.gov/articles/PMC10329988/) → PRS-47
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+
+### Update 2026-11-20 — No Peace for the Wicked? Immorality Is (Thought to Be) Disruptive of Intrapersonal Harmony, Impeding Positive Psychological States and Happiness (PROP-2026-11-12-002)
+Ingested 2 triplet(s): PRS-51, PRS-52. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — Positivity resonance in long-term married couples: Multimodal characteristics and consequences for health and longevity (PROP-2026-11-12-001)
+Ingested 2 triplet(s): PRS-53, PRS-54. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

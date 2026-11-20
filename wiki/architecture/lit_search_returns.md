@@ -53202,3 +53202,150 @@ DISPOSITION-1146:
 
 SYSTEMIC-RISK (2026-11-19, 15b): PRESUMPTION-1252 is the sixth literature-lane instance (after PRESUMPTION-1240, -1244, -1245, -1246 and the 11-13 pair) of one pattern: an umbrella term, here "resonance", carried across domains or thinkers without its conditions. Distinct twist: this one crosses from physics to tradition, and "resonance" already appears in at least Fredrickson (positivity resonance) and Rosa. Recommend Tom/14b treat REVISE-539..543 as one issue and apply PREMISE-127's transfer-condition check at the point a chat idea is flagged as a "possible wiki note".
 EVIDENCE-QUALITY NOTE (2026-11-19): both searches PRELIMINARY (6 web searches total, titles only, no fetches). Rosa, Susen 2020, Sperber 1996, Hesse 1966, Gentner 1983, MacIntyre 1988, Hove & Risen 2009 and Wiltermuth & Heath 2009 are background recall, not re-read. ASSUMPTION-2141 source was a walk chat read while still in progress (see PRESUMPTION-1253). 15a/15b independence is procedural only (one orchestrator; FOR files written before AGAINST files).
+
+RETURN-TO-14a:
+  Date: 2026-11-20
+  Original item: ASSUMPTION-2147
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Reinero, Dikker & Van Bavel, 2021. "Inter-brain synchrony in teams predicts collective performance." Social Cognitive and Affective Neuroscience
+  Summary: There is a real empirical literature on group-level coherence markers (team flow, inter-brain and behavioural synchrony) and some of it ties those markers to joint performance, which supports the first half of the claim.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2147_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2147 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Date: 2026-11-20
+  Original item: ASSUMPTION-2149
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: "Effectiveness of peer teaching in health professions education: a systematic review and meta-analysis"
+  Summary: The observation is consistent with a well-developed literature: near-peer teaching is generally non-inferior to expert teaching, and cognitive and social congruence (plus shared language) explain why participants often engage more with near-peers.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2149_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2149 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Date: 2026-11-20
+  Original item: PRESUMPTION-1254
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: "Group-based flow: the influence of cardiovascular synchronization..."
+  Summary: Some studies find a correspondence between self-reported group flow or cohesion and physiological or neural synchrony, which is the condition the presumption needs.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1254_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1254 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Date: 2026-11-20
+  Original item: PRESUMPTION-1255
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Wei et al., 2023. "Simple synthetic data reduces sycophancy in large language models." arXiv:2308.03958
+  Summary: Disposition-level interventions are not empty: training on targeted data measurably reduces sycophancy on benchmarks.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1255_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1255 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Date: 2026-11-20
+  Original item: ASSUMPTION-2147
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Wallot, Mitkidis, McGraw & Roepstorff, 2016. "Beyond synchrony: joint action in a complex production task reveals beneficial effects of decreased interpersonal 
+  Specific risk: If C2A2 uses "friction falling" as a health signal for dyads or tradition dialogues, it would reward convergence that the literature associates with lost novelty.
+  Summary: The claim joins two markers (novel joint output; falling friction) under one word.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2147_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2147 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Date: 2026-11-20
+  Original item: ASSUMPTION-2149
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Weak-to-Moderate
+  Key source: Same peer-teaching meta-analysis
+  Specific risk: Generalizing to a staffing or outreach rule (prefer near-peers to experts) on one observation could remove the expert content that near-peer sessions depend on..
+  Summary: The literature supports near-peers as equally effective, and liked more, but not as better on measured learning.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2149_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2149 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Date: 2026-11-20
+  Original item: PRESUMPTION-1254
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Palumbo et al., 2017. "Interpersonal autonomic physiology: a systematic review of the literature." Personality and Social Psychology Review
+  Specific risk: A C2A2 metric for group coherence built on observer data (turn-taking, lexical alignment, timing) would be validated against nothing, or against felt reports it does not track; the "resonance" vocabulary would then name two different quantities..
+  Summary: The literature most directly on point finds the link between physiological synchrony and self-reported connection inconsistent, and identifies confounds (shared stimuli, task structure) that make observer metrics fire without the felt state.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1254_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1254 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+RETURN-TO-14b:
+  Date: 2026-11-20
+  Original item: PRESUMPTION-1255
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Sharma et al., 2023. "Towards understanding sycophancy in language models"
+  Specific risk: C2A2 already runs pipelines where one orchestrator plays both reviewers (15a/15b) and dyads where agents of one model family check each other; neither disposition nor that structure would damp sycophancy reliably..
+  Summary: Two challenges at once.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1255_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1255 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1147:
+  Date: 2026-11-20
+  Item: ASSUMPTION-2147
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Real literature supports group coherence markers predicting joint performance, but the two named markers can dissociate: synchrony and falling friction rise while complex or creative output falls. The damping clause is the best-supported part.
+  Disposition: MONITOR (MONITOR-725)
+  Reasoning: Moderate support against a moderate challenge, on a stated framing that is not yet a design metric: MONITOR. Not REVISE because the claim already includes damping; not INCORPORATE because the marker pair is contested and the evidence is titles and recall.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for resonan / coheren / synchron / sycophan / near-peer: no premise on these claims; PREMISE-127 (shared vocabulary is surface) and PREMISE-062 (dual-reasons rule, sycophancy countermeasures) consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2147 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2147_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2147_against.md
+
+DISPOSITION-1148:
+  Date: 2026-11-20
+  Item: ASSUMPTION-2149
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Weak-to-Moderate
+  Net assessment: The observation is plausible and has a mechanism in the literature (cognitive, social and language congruence) but the literature shows near-peers equal to experts on learning, not better; one workshop cannot separate language from near-peer status.
+  Disposition: MONITOR (MONITOR-726)
+  Reasoning: Moderate support against a weak-to-moderate challenge on a single first-hand observation: MONITOR. Not INCORPORATE: a premise from one event would overreach, and the outcome is engagement, not learning.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for resonan / coheren / synchron / sycophan / near-peer: no premise on these claims; PREMISE-127 (shared vocabulary is surface) and PREMISE-062 (dual-reasons rule, sycophancy countermeasures) consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2149 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2149_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2149_against.md
+
+DISPOSITION-1149:
+  Date: 2026-11-20
+  Item: PRESUMPTION-1254
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The presumption is real and the identity it assumes is not supported: physiological/observer synchrony links to felt connection inconsistently and is confounded by shared task input.
+  Disposition: REVISE (REVISE-544)
+  Reasoning: Weak support against a moderate challenge, on a presumption: lean REVISE. Urgency Low: no coherence metric exists yet in the pipeline; this is a guard for when one is built. The "PRESUMPTION with strong challenge -> High" heuristic does not fire.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for resonan / coheren / synchron / sycophan / near-peer: no premise on these claims; PREMISE-127 (shared vocabulary is surface) and PREMISE-062 (dual-reasons rule, sycophancy countermeasures) consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1254 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1254_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1254_against.md
+
+DISPOSITION-1150:
+  Date: 2026-11-20
+  Item: PRESUMPTION-1255
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The presumption is real. Disposition-level damping (instruction) lacks durable evidence; training helps partly; structure helps only with real independence (heterogeneity, isolation, external gate) and homogeneous debate spreads sycophancy.
+  Disposition: REVISE (REVISE-545)
+  Reasoning: Weak support against a moderate challenge, on a presumption: REVISE. Urgency Medium, above the Low of REVISE-539..543, because this one bears on running pipeline logic: dyad agents and this very 15a/15b pair (one orchestrator, independence procedural only) rely on agent candor.
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for resonan / coheren / synchron / sycophan / near-peer: no premise on these claims; PREMISE-127 (shared vocabulary is surface) and PREMISE-062 (dual-reasons rule, sycophancy countermeasures) consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1255 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1255_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1255_against.md
+
+SYSTEMIC-RISK (2026-11-20, 15b): ASSUMPTION-2147 and PRESUMPTION-1254 extend the "resonance" umbrella-term pattern (seventh instance after REVISE-539..543): "coherence" here names at least three quantities (felt cohesion, observed synchrony, novel joint output) that the literature shows can dissociate or run opposite. Separately, PRESUMPTION-1255 is a self-referential risk: this pipeline's own 15a/15b independence is procedural only (one orchestrator), which the sycophancy-in-debate literature says is not structural damping. Recommend Tom treat REVISE-544 and REVISE-545 with REVISE-539..543 and REVISE-106.
+EVIDENCE-QUALITY NOTE (2026-11-20): all searches PRELIMINARY (8 web searches, titles only, no fetches). Fredrickson, Janis, Ten Cate & Durning, Garcia & Li Wei, Burgess et al., Palumbo et al., Nisbett & Wilson, Sharma et al. and the content of Wallot et al. are background recall, not re-read. 15a/15b independence procedural only (FOR files composed before AGAINST files). No NOVELTY flags: literature found for all four.

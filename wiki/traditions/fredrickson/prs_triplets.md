@@ -472,4 +472,40 @@ PRS-50:
   Confidence: Speculative (review-level synthesis; causal direction not established)
   Evidence: Title claim ("origins of ... caring, healthy communities") and the stated call for social-unit-level research
 
-*Total PRS triplets: 50*
+PRS-51:
+  Problem: Why do ordinary people's judgments of "happiness" depend on whether a person is moral, even when that person's feelings are held fixed?
+  Resource: Three vignette experiments manipulating morality while holding described mental states constant; mediation by perceived intrapersonal harmony; a boundary condition where harmony is stipulated
+  Solution: The folk concept of happiness includes inner harmony, and immorality is presumed to break it. When harmony is stipulated, the morality effect vanishes, so harmony, not morality as such, does the explanatory work.
+  Date Added: 2026-11-20
+  Source: No Peace for the Wicked? Immorality Is (Thought to Be) Disruptive of Intrapersonal Harmony, Impeding Positive Psychological States and Happiness; PROP-2026-11-12-002
+  Confidence: High for the attribution finding; Speculative for any inference about actual wellbeing
+  Evidence: Full mediation of morality to happiness judgments by inner-harmony judgments; null morality effect in the "at peace with themselves" conditions (Cognitive Science Society summary; preprint excerpt).
+
+PRS-52:
+  Problem: Is virtue necessary for inner harmony (Plato, Aquinas), or only typically associated with it?
+  Resource: The paper's own contrast with Plato: contemporary participants accept a harmonious wicked agent as happy
+  Solution: An empirical marker separating folk eudaimonism from classical eudaimonism. People share the classical *structure* (happiness requires harmony) but drop the classical *necessity claim* (harmony requires virtue). That turns a long philosophical dispute into a question that can be tested.
+  Date Added: 2026-11-20
+  Source: No Peace for the Wicked? Immorality Is (Thought to Be) Disruptive of Intrapersonal Harmony, Impeding Positive Psychological States and Happiness; PROP-2026-11-12-002
+  Confidence: Medium
+  Evidence: Authors' discussion: like Plato, people see happiness as requiring inner harmony, but they do not seem to think moral virtue is necessary for it.
+
+PRS-53:
+  Problem: Is positivity resonance more than a pleasant moment, and does a *shared* state carry health consequences beyond each partner's own positive affect?
+  Resource: Multimodal latent measure of positivity resonance (shared positive emotion + behavioral synchrony + physiological linkage) coded from conflict conversations; 13-year health and 30-year mortality follow-up (N = 154 couples)
+  Solution: Higher positivity resonance predicts better health trajectories and longer life, robust to individually experienced positive affect and baseline health. That places the active ingredient at the level of the dyad.
+  Date Added: 2026-11-20
+  Source: Positivity resonance in long-term married couples: Multimodal characteristics and consequences for health and longevity; PROP-2026-11-12-001
+  Confidence: Medium (single longitudinal sample, observational; robustness checks reported)
+  Evidence: Abstract and results: "higher rates of positivity resonance predicted better future health outcomes and longer lives"; the effect holds when solo positive affect is controlled, and when BIPR replaces the latent measure.
+
+PRS-54:
+  Problem: Can resonance occur, and matter, *during disagreement*, or only in easy moments?
+  Resource: Conflict-discussion paradigm (Levenson marital-interaction lab) as the setting where resonance was measured
+  Solution: Micro-moments of shared positivity *inside conflict* are what predicted health and longevity, so resonance and disagreement can share one interaction.
+  Date Added: 2026-11-20
+  Source: Positivity resonance in long-term married couples: Multimodal characteristics and consequences for health and longevity; PROP-2026-11-12-001
+  Confidence: Speculative as a generalization beyond marriage; Medium for the study's own setting
+  Evidence: Positivity resonance was coded from the couples' conflict conversations, not from neutral or pleasant ones.
+
+*Total PRS triplets: 54*

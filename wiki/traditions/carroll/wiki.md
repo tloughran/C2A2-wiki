@@ -219,3 +219,7 @@ New open thread: whether values (biodiversity 'valuable for its own sake') are d
 
 ### Update 2026-11-07 — 373 | Colin Camerer on the Neuroscience of Economic Thinking (PROP-2026-11-06-001)
 Ingested 2 triplet(s): PRS-108, PRS-109. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — Mindscape Ask Me Anything, Sean Carroll | November 2026 (PROP-2026-11-13-001)
+Ingested 3 triplet(s): PRS-110, PRS-111, PRS-112. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

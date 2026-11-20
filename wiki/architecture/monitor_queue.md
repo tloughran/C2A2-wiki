@@ -26037,3 +26037,25 @@ MONITOR-724:
   Monitoring cadence: Weekly (default); first check due 2026-11-26
   PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2141 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2141_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2141_against.md
+
+MONITOR-725:
+  Date: 2026-11-20
+  Source item: ASSUMPTION-2147 (DISPOSITION-1147)
+  Item type: ASSUMPTION (stated)
+  Priority: Low
+  Disposition basis: 15a PARTIALLY-SUPPORTED (Moderate, preliminary); 15b PARTIALLY-CHALLENGED (Moderate, preliminary). Real literature supports group coherence markers predicting joint performance, but the two named markers can dissociate: synchrony and falling friction rise while complex or creative output falls. The damping clause is the best-supported part.
+  What would change the disposition: (-> INCORPORATE, narrowed) restated as "novel joint output, judged independently, is the coherence marker; falling friction counts only alongside it"; (-> REVISE) if a C2A2 health metric scores falling friction or agreement rate as success.
+  Monitoring cadence: Weekly (default); first check due 2026-11-27
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2147 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2147_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2147_against.md
+
+MONITOR-726:
+  Date: 2026-11-20
+  Source item: ASSUMPTION-2149 (DISPOSITION-1148)
+  Item type: ASSUMPTION (stated)
+  Priority: Low
+  Disposition basis: 15a PARTIALLY-SUPPORTED (Moderate, preliminary); 15b PARTIALLY-CHALLENGED (Weak-to-Moderate, preliminary). The observation is plausible and has a mechanism in the literature (cognitive, social and language congruence) but the literature shows near-peers equal to experts on learning, not better; one workshop cannot separate language from near-peer status.
+  What would change the disposition: (-> INCORPORATE) restated as "language-congruent near-peers raise engagement relative to an expert, at no loss of learning" with a matched comparison from a later workshop; (-> REVISE) if used to replace expert sessions rather than pair with them.
+  Monitoring cadence: Weekly (default); first check due 2026-11-27
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2149 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2149_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2149_against.md

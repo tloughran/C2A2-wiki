@@ -243,3 +243,7 @@ PRS-85 (BBS e336 commentary on Seth): consciousness tied to the thermodynamics o
 
 ### Update 2026-11-07 — The Brain in the Dark: A Conversation with Professor Karl Friston on Perception, Free Will and Whether Machines Can Be Conscious (PROP-2026-11-02-003)
 Ingested 3 triplet(s): PRS-86, PRS-87, PRS-88. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — Embodied Dynamic Causal Modelling: Brain and Cardiac Effective Connectivity (PROP-2026-11-12-004)
+Ingested 2 triplet(s): PRS-89, PRS-90. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

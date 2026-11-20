@@ -27248,3 +27248,65 @@ PRESUMPTION-1253:
     Current status: UNTESTED
 
 *2026-11-18 14b: PRESUMPTION-1252 (epistemic, Medium), 1253 (methodological, Low-Medium). Checked against 14a 2141–2146 and the registry. Not re-surfaced (already registered; new evidence today): ID assignment by "next free number in pending/ at start" assumes a single writer (PRESUMPTION-086, PRESUMPTION-1250; McGilchrist -001 renumbered to -003, ASSUMPTION-2143); tool parity between copies (PRESUMPTION-1196; evening sync: cloud copy blocked by two Chrome browsers, so a blanket "disable all 27 local entries" would stop delivery, ASSUMPTION-2146); one quality filter across source bases (PRESUMPTION-1247; description-only McGilchrist card carded, secondary-only Levin preprint held, ASSUMPTION-2145); withheld NOT-CHECKED line (PRESUMPTION-1218); status fields across schema eras (PRESUMPTION-1208); staleness threshold without a basis (PRESUMPTION-077 / OPEN-038; L2 flat 7 days).*
+
+PRESUMPTION-1254:
+  Date surfaced: 2026-11-19
+  Statement: [inferred] Moving "relational resonance" from felt experience to "candidate metric" presumes that the coherence a participant feels is the same thing an outside observer (or a C2A2 measure) would detect. Every example offered is first-person recollection ("words don't quite cut it, but the experience marks its memory"); the recognition criteria (novel joint output, falling friction) are third-person. Nothing yet links the two.
+  Evidence it was operative: chat summary: examples all remembered experiences; "possibly a candidate metric"; Claude's two observer-side criteria
+  Why it was unstated: the step from concept to metric was made in one sentence of the summary, not argued
+  Type: epistemic
+  Related decisions: ASSUMPTION-2147; PRESUMPTION-1252 (different object: traditions as resonators vs. measurability of group coherence); REVISE-543
+  Testability: testable in literature (queued)
+  Risk if wrong: Medium: a metric built on observer markers could score groups high that members did not experience as coherent, or miss ones they did; the umbrella-term pattern (15c SYSTEMIC-RISK, sixth instance 11-19) recurs.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1254
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+PRESUMPTION-1255:
+  Date surfaced: 2026-11-19
+  Statement: [inferred] "Correct as well as amplify" presumes damping is supplied by each agent's disposition (willing the other's good) rather than by structure. It also presumes an AI agent's corrective output is evidence of benevolence rather than of training or prompt. The C2A2 design already has structural damping (14b, 15b adversarial lane, Tom's approval gate); the walk did not mention it.
+  Evidence it was operative: chat summary ("Health needs damping"; "Love, after Aquinas"; "bears on how C2A2's agents should behave"); Claude's reply recorded "Updated memory: Relational Resonance"
+  Why it was unstated: the walk framed damping as a virtue; the architecture question did not come up
+  Type: normative
+  Related decisions: ASSUMPTION-2148; agent 15b definition; PRESUMPTION-1196
+  Testability: testable in literature (queued): LLM sycophancy, whether instructed or trained "candor" reduces it vs. structural checks
+  Risk if wrong: Medium: if correction is dispositional only, sycophancy returns whenever a prompt or model changes; if structural, the Aquinas framing is description, not mechanism.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1255
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+PRESUMPTION-1256:
+  Date surfaced: 2026-11-19
+  Statement: [inferred] Each copy of a duplicated task reads only its own artifacts as the system's state. The local lit copy inferred "three weeks" of unworked queue from its own skip notes while the cloud copy's lock lines (same review folder) show nightly processing.
+  Evidence it was operative: lit pipeline a00b9a06 vs review/lit_pipeline.lock (cloud-lit 11-17/11-18/11-19 LOCKED/RELEASED lines); also scheduler and morning status reporting different double-registration counts (ASSUMPTION-2152)
+  Why it was unstated: each copy reports from inside its own run; no consumer reconciles copy against copy
+  Type: structural
+  Related decisions: ASSUMPTION-2150; PRESUMPTION-1196; PRESUMPTION-1250; OPEN-299
+  Testability: in-house evidence carried by ASSUMPTION-2150 (not queued separately)
+  Risk if wrong: Medium: false alarms reach Tom (and evening sync to Chat) as system state; real stalls could be dismissed as copy noise.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1256
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+*2026-11-19 14b: PRESUMPTION-1254 (epistemic, Medium), 1255 (normative, Medium), 1256 (structural, Medium). Checked against 14a 2147–2152 and the registry. Not re-surfaced (already registered; new evidence today): tool parity between copies (PRESUMPTION-1196; evening sync cloud wrote but could not deliver); withheld NOT-CHECKED line (PRESUMPTION-1218); status fields across schema eras (PRESUMPTION-1208; findings 036–114 again excluded from "24 active"); staleness threshold without basis (PRESUMPTION-077 / OPEN-038; L2 flat 8 days); mid-walk summary as record (PRESUMPTION-1253; 11-19 captured to 08:56 of a 08:44–09:41 chat).*

@@ -821,4 +821,58 @@ PRS-88:
   Confidence: Medium (reported answer; argument itself not heard)
   Evidence: Q&A remarks reported 2 Nov 2026.
 
-*Total PRS triplets: 88*
+PRS-89:
+  Problem: Should Christians read AI through apocalyptic categories (Antichrist, end times)?
+  Resource: Wright's inaugurated new-creation eschatology applied to technology; his engagement with Peter Thiel
+  Solution: AI is a question of human vocation and stewardship of the future, not a sign to be decoded; apocalyptic framing evades responsibility
+  Date Added: 2026-11-20
+  Source: Is AI the Antichrist? N.T. Wright on Peter Thiel, AI & the End Times (Ask NT Wright Anything); PROP-2026-11-15-002
+  Confidence: Speculative (publisher blurb only; consistent with Wright's known rejection of rapture-style eschatology)
+  Evidence: Episode description, Premier 2026-11-09
+
+PRS-90:
+  Problem: How can a sacrament be "real presence" without depending on Aristotelian substance/accident metaphysics?
+  Resource: Wright's account: bread and wine arrive from God's future as new creation, and they are products of human labour and culture, not raw nature
+  Solution: Sacramental realism is grounded eschatologically (the future breaking in) and anthropologically (human making is the matter God takes up), rather than in transubstantiation
+  Date Added: 2026-11-20
+  Source: Interview with N.T. Wright, Part 2: Art and God's Homecoming (Makoto Fujimura); PROP-2026-11-15-001
+  Confidence: Medium (direct transcript statement; brief and not argued at length)
+  Evidence: Sacraments passage; quote "bread and wine demand human activity, and in a sense, human culture."
+
+PRS-91:
+  Problem: Is the Christian end state timeless "eternity", or renewed space-time-matter?
+  Resource: Wright's critique of Reformation/Puritan aesthetic austerity as Platonizing; "God loves time. God came to live in time"
+  Solution: New creation keeps time and matter; worship, art and craft are signposts of that renewal, not distractions from a spiritual beyond
+  Date Added: 2026-11-20
+  Source: Interview with N.T. Wright, Part 2: Art and God's Homecoming (Makoto Fujimura); PROP-2026-11-15-001
+  Confidence: Medium
+  Evidence: Transcript passages on whitewashed walls, "eternity", and the tabernacle
+
+PRS-92:
+  Problem: If God keeps the initiative in grace, in what sense are human choices real?
+  Resource: Wright's vocation / "subvocational" distinction: God gives "enough to work with" and leaves the rest to human judgment with the Spirit
+  Solution: Divine initiative aims at renewing genuine agents, so it underdetermines many choices by design
+  Date Added: 2026-11-20
+  Source: Interview with N.T. Wright, Part 2: Art and God's Homecoming (Makoto Fujimura); PROP-2026-11-15-001
+  Confidence: Medium
+  Evidence: Opening exchange; quote "God retains the initiative, but precisely because the point is to renew genuine human beings"
+
+PRS-93:
+  Problem: Does Romans 11:26 promise a future mass salvation of ethnic Israel, or describe how God is now constituting "Israel"?
+  Resource: Wright's reading of *kai houtōs* as "in this way" (updated NRSV), plus the cumulative redefinition of Israel in Rom 2, 4, 9-11
+  Solution: "All Israel" names the single Messiah-people of Judeans and Gentiles, being saved by the present pattern of hardening and ingrafting. No eschatological ethnic event is in view.
+  Date Added: 2026-11-20
+  Source: NT Wright warns of 'modern-day fantasy' interpretation of 'All Israel will be saved' (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, Nov 1-4 2026); PROP-2026-11-15-003
+  Confidence: Medium (quoted lecture via news report; consistent with *Paul and the Faithfulness of God*, ch. 11)
+  Evidence: Direct quotations: "this is how God is saving all Israel"; "no sign ... of a large-scale, last-minute salvation of all ethnic Judeans"
+
+PRS-94:
+  Problem: How does Wright connect Israel's story (exile and return) with resurrection and new creation?
+  Resource: Rom 11:15 "life from the dead," read as "the real return from exile"
+  Solution: In Paul, return from exile and resurrection are one event seen from two sides. Re-inclusion in the covenant people is a form of resurrection, not a political re-gathering.
+  Date Added: 2026-11-20
+  Source: NT Wright warns of 'modern-day fantasy' interpretation of 'All Israel will be saved' (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, Nov 1-4 2026); PROP-2026-11-15-003
+  Confidence: Medium
+  Evidence: "this will be not just a creation out of nothing, but like life from the dead ... the real return from exile"
+
+*Total PRS triplets: 94*

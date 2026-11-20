@@ -1,0 +1,22 @@
+# Decisions — 2026-11-20
+Source email: [C2A2-review-decision] 2026-11-19
+
+- PROP-2026-11-12-002: APPROVE (2026-11-12_fredrickson_no-peace-for-the-wicked-intrapersonal-harmony.md; matched by date-fallback)
+- PROP-2026-11-12-001: APPROVE (2026-11-12_fredrickson_positivity-resonance-couples-health-longevity.md; matched by date-fallback)
+- PROP-2026-11-12-004: APPROVE (2026-11-12_friston_embodied-dcm-brain-cardiac-connectivity.md; matched by prop_id)
+- PROP-2026-11-12-003: APPROVE (2026-11-12_stump_evil-that-now-dominates-mourning-without-despair.md; matched by date-fallback)
+- PROP-2026-11-13-001: APPROVE (2026-11-13_carroll_mindscape-ama-november-2026.md; matched by date-fallback)
+- PROP-2026-11-14-002: APPROVE (2026-11-14_wolfram_future-sci-tech-qa-oct21-crypto-bugs-ai-math.md; matched by date-fallback)
+- PROP-2026-11-14-001: APPROVE (2026-11-14_wolfram_future-sci-tech-qa-oct21-proofs-crypto-bugs.md; matched by date-fallback)
+- PROP-2026-11-15-002: APPROVE (2026-11-15_wright_ask-ntw-nov09-ai-antichrist-thiel-spiritual-gifts.md; matched by date-fallback)
+- PROP-2026-11-15-001: APPROVE (2026-11-15_wright_fujimura-interview-art-making-gods-homecoming.md; matched by date-fallback)
+- PROP-2026-11-15-003: APPROVE (2026-11-15_wright_romans-11-all-israel-in-this-way-life-from-the-dead.md; matched by date-fallback)
+- PROP-2026-11-16-001: APPROVE (2026-11-16_levin_lora-nca-regulatory-handles-growth-form.md; matched by date-fallback)
+- PROP-2026-11-17-002: APPROVE (2026-11-17_hawkins_latency-mismatches.md; matched by date-fallback)
+- PROP-2026-11-17-004: APPROVE (2026-11-17_hawkins_q4-research-roadmap.md; matched by date-fallback)
+- PROP-2026-11-17-001: APPROVE (2026-11-17_hawkins_scale-invariance-jeffs-deformation-challenge.md; matched by date-fallback)
+- PROP-2026-11-17-003: APPROVE (2026-11-17_hawkins_variations-in-learned-object-models.md; matched by date-fallback)
+- PROP-2026-11-17-005: APPROVE (2026-11-17_levin_scale-free-niche-construction-osf.md; matched by prop_id)
+- PROP-2026-11-18-002: APPROVE (2026-11-18_kastrup_everything-determined-gives-life-meaning.md; matched by date-fallback)
+- PROP-2026-11-18-003: APPROVE (2026-11-18_mcgilchrist_ralston-lighting-the-fire-of-the-mind.md; matched by date-fallback)
+- PROP-2026-11-18-001: APPROVE (2026-11-18_mcgilchrist_vrucht-bare-aarde-beauty-right-hemisphere.md; matched by date-fallback)

@@ -992,4 +992,31 @@ PRS-109:
   Confidence: Speculative
   Evidence: Blurb: "Economists do understand that sometimes people are irrational, altruistic, or just random. So how can we understand how people actually do behave in economic circumstances?"
 
-*Total PRS triplets: 109*
+PRS-110:
+  Problem: Standard Bayesian updating moves credence only when new data arrive, yet whole scientific communities shift their credence in a theory with no new observations. How should "understanding the theory better" count?
+  Resource: Weinberg's 1967 electroweak paper ("A Theory of Leptons") was ignored for about five years because it seemed non-renormalizable. It became dominant around 1972, after 't Hooft and Veltman showed that spontaneously broken gauge theories are renormalizable. No new experimental data appeared in between.
+  Solution: Carroll proposes that new ideas and arguments should count as new data for a Bayesian. He openly says he does not know the right formalism for this and is not up on the literature. The answer frames an open problem rather than solving it.
+  Date Added: 2026-11-20
+  Source: Mindscape Ask Me Anything, Sean Carroll | November 2026; PROP-2026-11-13-001
+  Confidence: Medium
+  Evidence: Transcript 0:24:01–0:26:55. Quote: "new ideas or new thoughts should count as new data. But ... how do we count them as new data? This is an excellent question that I don't know the answer to."
+
+PRS-111:
+  Problem: Can objective moral facts be derived from the fact that natural selection shaped us to survive and flourish?
+  Resource: Carroll's own change of view, reached by reflection and reading rather than new evidence. Evolution supplies preferences, intuitions and inclinations, and these differ in kind from the moral principles we ought to hold.
+  Solution: He no longer holds moral realism. He now treats evolved moral instincts as inputs to a constructed ethics, not as objective moral facts.
+  Date Added: 2026-11-20
+  Source: Mindscape Ask Me Anything, Sean Carroll | November 2026; PROP-2026-11-13-001
+  Confidence: High (first-person statement)
+  Evidence: Transcript 0:24:01–0:24:55. Quote: "So now I'm not a moral realist anymore."
+
+PRS-112:
+  Problem: The free-will debate between compatibilists and skeptics such as Caruso looks substantive. Is it, especially for practical questions such as justice-system reform?
+  Resource: A separation of two questions. One is the descriptive vocabulary for physical agents who deliberate and choose. The other is the normative question of desert and punishment.
+  Solution: Once desert is set aside, compatibilism and skepticism recommend the same justice policy: rehabilitation and deterrence, not retribution. The remaining disagreement is about terminology. Carroll also rejects "something resembling libertarian free will" as unclear.
+  Date Added: 2026-11-20
+  Source: Mindscape Ask Me Anything, Sean Carroll | November 2026; PROP-2026-11-13-001
+  Confidence: High
+  Evidence: Transcript 0:28:39–0:30:56 and 1:11:18–1:12:02. Quote: "They're separate questions. One is ... how we analyze and talk about human behavior. The other is how we organize the justice system."
+
+*Total PRS triplets: 112*

@@ -29720,3 +29720,41 @@ Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no
 *2026-11-18 (local pass): 4 items queued: 2 literature-lane (ASSUMPTION-2141, PRESUMPTION-1252), 2 [IN-HOUSE] (ASSUMPTION-2144, PRESUMPTION-1253). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-18T05:40:21Z by cloud-lit-2026-11-18; not held, append safe. The next cloud lit run (~05:40Z 11-19) will find 2 literature-lane items.*
 
 *2026-11-19 (cloud-lit-2026-11-19): 15a/15b/15c processed ASSUMPTION-2141 -> DISPOSITION-1145 (MONITOR-724 Low) and PRESUMPTION-1252 -> DISPOSITION-1146 (REVISE-543 Low). SYSTEMIC-RISK: sixth instance of the umbrella-term pattern ('resonance'). Both searches PRELIMINARY (6 web searches, titles only). In-house items (ASSUMPTION-2144, PRESUMPTION-1253 and earlier) and 15d backlog untouched.*
+
+[QUEUED] [SEARCHED-15a: 2026-11-20] [SEARCHED-15b: 2026-11-20] [DISPOSITIONED-15c: 2026-11-20] [ASSUMPTION] ASSUMPTION-2147
+  Statement: [stated] "Relational resonance": group coherence recognizable by joint output neither side would produce alone and friction falling over time; needs damping.
+  Claim to test: Literature: empirical markers of group flow / collective coherence (team flow, interpersonal physiological or neural synchrony, Fredrickson's positivity resonance); do they predict joint performance, and is there evidence that unchecked synchrony degrades groups (groupthink, over-coordination)?
+  Result (2026-11-20): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1147 -> MONITOR-725
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [SEARCHED-15a: 2026-11-20] [SEARCHED-15b: 2026-11-20] [DISPOSITIONED-15c: 2026-11-20] [ASSUMPTION] ASSUMPTION-2149
+  Statement: [stated] Fluent bilingual near-peers "coupled" a teacher workshop better than the expert did.
+  Claim to test: Literature: near-peer teaching and bilingual peer instruction in STEM/teacher PD; effect on engagement and learning versus expert-led instruction.
+  Result (2026-11-20): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak-to-Moderate); DISPOSITION-1148 -> MONITOR-726
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [SEARCHED-15a: 2026-11-20] [SEARCHED-15b: 2026-11-20] [DISPOSITIONED-15c: 2026-11-20] [PRESUMPTION] PRESUMPTION-1254
+  Statement: [inferred] Felt group coherence (first-person) is presumed to be what an observer metric would detect.
+  Claim to test: Literature: agreement between self-reported group flow/cohesion and observer or physiological measures; known dissociations.
+  Result (2026-11-20): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1149 -> REVISE-544
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated - surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [SEARCHED-15a: 2026-11-20] [SEARCHED-15b: 2026-11-20] [DISPOSITIONED-15c: 2026-11-20] [PRESUMPTION] PRESUMPTION-1255
+  Statement: [inferred] Damping against sycophancy is presumed to come from agent disposition rather than structure.
+  Claim to test: Literature (15b lane especially): LLM sycophancy studies; does instructing or training for candor reduce it durably, compared with structural checks (adversarial reviewers, debate, human gates)?
+  Result (2026-11-20): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1150 -> REVISE-545
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated - surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2150
+  Statement: [stated] Local lit copy says the queue has not been worked for ~3 weeks; lock file shows nightly cloud processing.
+  Claim to test: In-house: for 10-31..11-19, pair each review/*lit-pipeline_skipped* note with the same night's LOCKED/RELEASED lines in review/lit_pipeline.lock and DISPOSITION IDs; count nights with zero processing by any copy.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2151
+  Statement: [stated] Stump/Fredrickson 30-day window "may be too tight."
+  Claim to test: In-house: per thinker, count proposals and "dropped: >30 days" candidates over the last 12 weekly runs; estimate yield under 60- and 90-day windows from the dropped list.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+*2026-11-19 (local pass): 6 items queued: 4 literature-lane (ASSUMPTION-2147, -2149, PRESUMPTION-1254, -1255), 2 [IN-HOUSE] (ASSUMPTION-2150, -2151). Lock review/lit_pipeline.lock last line read this run: RELEASED 2026-11-19T05:43:11Z by cloud-lit-2026-11-19; not held, append safe. Next cloud lit run (~05:40Z 11-20) will find 4 literature-lane items. Note for 15c: all four touch the "resonance" umbrella term flagged SYSTEMIC-RISK on 11-19.*
+
+*2026-11-20 (cloud-lit-2026-11-20): 15a/15b/15c processed ASSUMPTION-2147 -> DISPOSITION-1147 (MONITOR-725 Low), ASSUMPTION-2149 -> DISPOSITION-1148 (MONITOR-726 Low), PRESUMPTION-1254 -> DISPOSITION-1149 (REVISE-544 Low), PRESUMPTION-1255 -> DISPOSITION-1150 (REVISE-545 Medium). SYSTEMIC-RISK: seventh umbrella-term instance ("coherence"); self-referential note on 15a/15b independence. All searches PRELIMINARY (8 web searches, titles only). In-house items (incl. ASSUMPTION-2150/-2151) and 15d backlog untouched.*

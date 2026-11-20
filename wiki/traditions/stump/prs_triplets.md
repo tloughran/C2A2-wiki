@@ -459,4 +459,13 @@ PRS-51:
   Confidence: Medium (abstract-level; full text not read this run)
   Evidence: Abstract: taking account that theology rests on second-person knowledge "changes the way one should approach the hiddenness argument."
 
-*Total PRS triplets: 51*
+PRS-52:
+  Problem: How can a member of communities pervaded by injustice grieve rightly, without despair and without withdrawing from those communities?
+  Resource: Stump's problem-of-mourning framework, plus the Thomistic claim that evil is a privation that cannot destroy the good it corrupts. Contrast reveals the good: "the baseness of injustice highlights the majesty of justice."
+  Solution: Mourning "without despondency," where grief is itself a witness to the good, joined to a personal commitment that holds even if the community defects (*etsi omnes, ego non*), that is, "fierce witness without despair."
+  Date Added: 2026-11-20
+  Source: The evil that now dominates (short reflection by Eleonore Stump, reproduced by Aaron Belz); PROP-2026-11-12-003
+  Confidence: Medium (short reflective text, not an argued paper)
+  Evidence: The quoted lines above, from the full text as reproduced.
+
+*Total PRS triplets: 52*

@@ -4139,3 +4139,17 @@ OPEN-304:
     Transform at each step:
       14a: Raised from local pass 2026-11-18 (final assistant message per session via session_info: evening sync 534a2f0b, morning walk 58e98d91, scheduler health 8cf1ae5f, wiki daily run fcee66e5, McGilchrist/Kastrup b6491267, lit pipeline 801ef584, chat scrape 5fcc9fb7, morning status 8d401668; plus PROP IDs grepped from review/2026-11-18_review.html)
     Current status: OPEN
+
+OPEN-305:
+  Raised: 2026-11-19 by 14a (ASSUMPTION-2147, PRESUMPTION-1254)
+  Question: Does "relational resonance" become a C2A2 concept page (linking Fredrickson and McGilchrist nodes) and/or a metric? If a metric, what is measured: participant report, observer markers (novel joint output, falling friction), or both, and how is damping (correction vs. amplification) scored?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-305
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: OPEN

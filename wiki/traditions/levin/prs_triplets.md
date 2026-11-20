@@ -1442,7 +1442,52 @@ PRS-159:
   Confidence: Speculative (proposer's interpretive extension)
   Evidence: Extension of the threshold result to the multiscale-agency framework; not a claim in the summary.
 
-*Total PRS triplets: 159*
+PRS-160:
+  Problem: D'Arcy Thompson's century-old inverse problem: if two anatomies differ by a simple grid deformation, what change in the developmental dynamics produces that deformation?
+  Resource: LoRA-NCA, low-rank adaptation applied to the shared regulatory weights of a pretrained neural cellular automaton.
+  Solution: Horizontal and vertical scaling of a fully grown phenotype each come from a rank-one change to the cells' regulatory weights. Linear combinations of these changes give continuous size control and extrapolate beyond the training range.
+  Date Added: 2026-11-20
+  Source: On Growth and Form, and Function: Reusable Regulatory Handles Control Phenotypic Variation; PROP-2026-11-16-001
+  Confidence: High (in silico; demonstrated in the paper)
+  Evidence: Abstract: "horizontal and vertical scaling transformations ... can each be implemented by rank-one adaptations of the NCA's regulatory weights."
+
+PRS-161:
+  Problem: Are morphological transformations tied to one specific form, or do they act as general control knobs for a whole developmental system?
+  Resource: Zero-shot transfer tests, plus a dataset of about 25,000 phenotype-specific adapters on one shared scaffold.
+  Solution: Adapters learned on one shape transfer to structurally and semantically different shapes while keeping their internal features. Latent low-dimensional "hyper-directions" (scale, style, symmetrical fission) can be found empirically in regulatory weight space. This supports a semantic geometry of top-down control handles.
+  Date Added: 2026-11-20
+  Source: On Growth and Form, and Function: Reusable Regulatory Handles Control Phenotypic Variation; PROP-2026-11-16-001
+  Confidence: Medium (strong in silico result; whether biological regulatory networks have the same handles is proposed, not shown)
+  Evidence: Abstract: "adaptations learned for a single phenotype transfer zero-shot across structurally and semantically diverse phenotypes"; highlights cite Pattee (1973) as having anticipated such latent regulatory handles.
+
+PRS-162:
+  Problem: How can evolution find large, coherent changes in body shape without a combinatorial search over many cell-level parameters?
+  Resource: Low-rank regulatory handles viewed as an account of evolvability.
+  Solution: If real cellular regulatory networks have similar low-dimensional handles, then selection or a bioelectric intervention only needs to move along a few directions to reshape anatomy as a whole. The authors frame this as having strong implications for evolvability and plasticity.
+  Date Added: 2026-11-20
+  Source: On Growth and Form, and Function: Reusable Regulatory Handles Control Phenotypic Variation; PROP-2026-11-16-001
+  Confidence: Speculative
+  Evidence: Highlights: LoRA decomposition "provides a principled way to identify such low-rank regulatory handles for top-down control of cybernetic tissue, which has strong implications for evolvability."
+
+PRS-163:
+  Problem: Is niche construction a special feature of ecological/genetic systems, or a scale-free property of agency?
+  Resource: Scale-free niche construction: the niche as an externally written-and-read computational scratchpad
+  Solution: Treat agent-microenvironment co-development as a general pattern applicable to unconventional substrates (cells, tissues, possibly artificial agents)
+  Date Added: 2026-11-20
+  Source: Scale-free Niche Construction: expanding agent-microenvironment co-development to unconventional substrates; PROP-2026-11-17-005
+  Confidence: Medium (framing; the secondary source calls the cross-domain mapping a mapping, not a shown equivalence)
+  Evidence: Paper's central thesis as reported by the secondary source
+
+PRS-164:
+  Problem: How do cells coordinate when signals must persist beyond the presence of the signalling cell?
+  Resource: Active bioelectric stigmergy (persistent, bioelectrically active traces left in the microenvironment)
+  Solution: Wet-lab observation that cell-left traces continue to influence neighbours after the producing cell has moved on
+  Date Added: 2026-11-20
+  Source: Scale-free Niche Construction: expanding agent-microenvironment co-development to unconventional substrates; PROP-2026-11-17-005
+  Confidence: Speculative (one experimental system; not verified against the primary text)
+  Evidence: Wet-lab "active stigmergy" result as reported by the secondary source
+
+*Total PRS triplets: 164*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

@@ -843,7 +843,34 @@ PRS-90:
   Confidence: Speculative (inferred from reported title plus tradition thesis; recording not watched; title source secondhand)
   Evidence: Reported title 'Our Brains, the Meaning Crisis, and the Need to Recover the Sacred'. Upgrade or reject after the 58-minute video is heard.
 
-*Total PRS triplets: 90*
+PRS-91:
+  Problem: If understanding is not information and cannot be reached by following a procedure (the Zen argument already in the wiki), how is a human being formed so that they can think for themselves at all?
+  Resource: Plato's Seventh Letter (understanding kindled "like a spark" after long shared attention, not transmitted as doctrine), combined with Damasio's account of embodied, feeling-grounded cognition. Attention to a work "for its own sake" is set against standardized outcomes and instrumental ends.
+  Solution: Education as formation of the faculties, not transfer of content. Rules are learned in order to be surpassed. The aim is the capacity to reach past what is known for certain, which the hemisphere hypothesis assigns to right-hemisphere attention, with the left supplying the rules.
+  Date Added: 2026-11-20
+  Source: Lighting the Fire of the Mind with Dr Iain McGilchrist; PROP-2026-11-18-003
+  Confidence: Medium (taken from the publisher's episode description; recording not yet heard)
+  Evidence: Ralston episode notes: "The role of education, Dr McGilchrist argues, does not stop at the accumulation of information or the learning of rules, but extends into our capacity to go beyond the rules and reach past what is known for certain."
+
+PRS-92:
+  Problem: If LH dominance is a cultural pathology, what is the unit of remedy — policy, institution, or person?
+  Resource: Margaret Mead's "small group of committed citizens"; McGilchrist's insistence that the fix is "a complete transformation of heart and mind," not a policy list
+  Solution: Remedy runs through inner reorientation sustained by small committed communities; a few percent of a population suffices to start a cultural turn
+  Date Added: 2026-11-20
+  Source: To experience beauty, we need the right hemisphere of the brain — Vrucht Bare Aarde V3 2026 Is.17 (English Translation); PROP-2026-11-18-001
+  Confidence: Medium (secondhand compilation of his quoted statements)
+  Evidence: Closing section of the VA article on hope, community, and prayer/meditation
+
+PRS-93:
+  Problem: Why does making value explicit seem to destroy it?
+  Resource: RH/LH asymmetry — implicit, contextual RH apprehension vs LH explicit re-presentation; examples from art (Tallis, Tarkovsky, Claude Lorrain vs late modern art)
+  Solution: Beauty, truth and goodness are discovered realities apprehended by RH attention; explicit LH rendering abstracts them out of context and loses them
+  Date Added: 2026-11-20
+  Source: To experience beauty, we need the right hemisphere of the brain — Vrucht Bare Aarde V3 2026 Is.17 (English Translation); PROP-2026-11-18-001
+  Confidence: Medium (restatement of a known thesis; already partly captured in TMWT-derived triplets — check for overlap before ingest)
+  Evidence: Article's section on meaning and beauty being "discovered, not invented"
+
+*Total PRS triplets: 93*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

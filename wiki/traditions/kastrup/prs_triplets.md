@@ -1012,4 +1012,22 @@ PRS-111:
   Confidence: Medium (host paraphrase)
   Evidence: "Believing everything is mental does not mean it's all under our control."
 
-*Total PRS triplets: 111*
+PRS-112:
+  Problem: If mind at large is the only reality and everything is determined, does individual choice lose meaning?
+  Resource: Computational irreducibility-style argument — outcomes determined but unpredictable short of a universe-sized computer; choices as expressions of "what you are"
+  Solution: Determinism is the condition of meaning: unpredictable determined choices are the universe's self-discovery; randomness would reveal nothing about what we are
+  Date Added: 2026-11-20
+  Source: Everything is determined & that gives life meaning; PROP-2026-11-18-002
+  Confidence: Medium (from summary/chapters, not recording)
+  Evidence: Post intro and chapters "libertarian free will is incoherent," "are there random events"
+
+PRS-113:
+  Problem: What happens to moral responsibility and justice if blame presupposes incoherent libertarian freedom?
+  Resource: Determinism plus the value of shame as insight into the motives behind evil; comparative justice systems (Netherlands vs US)
+  Solution: Replace retributive blame with pragmatic, compassionate justice — less revenge and regret, but not apathy
+  Date Added: 2026-11-20
+  Source: Everything is determined & that gives life meaning; PROP-2026-11-18-002
+  Confidence: Medium
+  Evidence: Subtitle "Why blame is naive, shame should be cherished"; justice-system chapter
+
+*Total PRS triplets: 113*

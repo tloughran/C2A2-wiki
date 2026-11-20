@@ -777,7 +777,61 @@ PRS-85:
   Confidence: Speculative (outcome open)
   Evidence: Wolfram X post 2026-10-22; all three problems listed open.
 
-*Total PRS triplets: 85*
+PRS-86:
+  Problem: If AI systems produce mathematical proofs (including security proofs for cryptographic schemes) that are beyond human understanding, on what basis can humans trust systems built on them?
+  Resource: Computational irreducibility plus the bounded-observer thesis. A proof is an irreducible computation, and "understanding" means compressing it into a form a bounded observer can follow.
+  Solution: Trust has to move from understanding the proof to checking it mechanically and formally (computational verification). Human comprehension becomes optional, but human choice of what is worth proving does not.
+  Date Added: 2026-11-20
+  Source: Future of Science and Technology Q&A (October 21, 2026); PROP-2026-11-14-002
+  Confidence: Speculative (based on chapter titles; answer content not verified)
+  Evidence: Chapter "If AI can generate mathematical proofs beyond human understanding, how could we trust encryption based on those proofs?" (1:01:39); cryptography & security & AI segment (16:49-47:04).
+
+PRS-87:
+  Problem: Peer review assumes reviewers can understand and check what they review. If AI finds results no human currently understands, peer review becomes the bottleneck.
+  Resource: The distinction between computationally reducible "pockets" that humans can absorb and the irreducible bulk of what is computationally possible, combined with his Sept 2026 view that math is the human-chosen path through the ruliad.
+  Solution: The bottleneck is a sign that scientific institutions are built for human-scale (reducible) knowledge. Absorbing AI discoveries means building new conceptual bridges (new "pockets of reducibility"), not just reviewing faster.
+  Date Added: 2026-11-20
+  Source: Future of Science and Technology Q&A (October 21, 2026); PROP-2026-11-14-002
+  Confidence: Speculative
+  Evidence: Chapter "Aren't peer reviewers the bottleneck if AI actually does find some amazing stuff that we can't understand yet?" (1:16:27).
+
+PRS-88:
+  Problem: Will mathematics and software merge, so that every mathematical idea exists as an executable program? And how does this relate to type-theoretic foundations such as homotopy type theory (HoTT)?
+  Resource: Wolfram Language as a computational representation of mathematics, compared with formal type-theoretic foundations.
+  Solution: Expected to argue that computational language is the natural meeting point of math and software, and that a foundation is a choice of rules rather than the unique bedrock (consistent with metamathematics-in-the-ruliad).
+  Date Added: 2026-11-20
+  Source: Future of Science and Technology Q&A (October 21, 2026); PROP-2026-11-14-002
+  Confidence: Speculative
+  Evidence: Chapters at 56:43 and 58:59.
+
+PRS-89:
+  Problem: Once AI produces proofs, how do we trust a result whose internal steps no human reads, and what remains as the point of failure?
+  Resource: Proof-assistant checking plus a precise computational language spanning all of pure mathematics (work Wolfram says is underway).
+  Solution: Shift trust from reading the proof to checking it formally; relocate the risk to the statement-level translation ("the weakest link") — knowing "what it is that you thought you were proving."
+  Date Added: 2026-11-20
+  Source: Future of Science and Technology Q&A (October 21, 2026); PROP-2026-11-14-001
+  Confidence: Medium (verbatim in transcript first half; partial overlap with PRS-72)
+  Evidence: "in the case of proofs, people have cared how it works inside... I think that's about to change"; "it's really important to know what it is that you thought you were proving."
+
+PRS-90:
+  Problem: Will AI make software and systems more or less secure, and is computational irreducibility the root of vulnerabilities?
+  Resource: Layered security stack (human factors → systems → cryptography); distinction between irreducibility and mere human-code complexity.
+  Solution: Most vulnerabilities arise from complicated human-written code, not irreducibility; expect an AI "cat and mouse game" of finding vs patching, where deployment, not patching, is the bottleneck. "There can and will be bugs in programs."
+  Date Added: 2026-11-20
+  Source: Future of Science and Technology Q&A (October 21, 2026); PROP-2026-11-14-001
+  Confidence: Medium (verbatim, first half)
+  Evidence: Transcript section beginning ~16:49 ("Cryptography, computer security and AI").
+
+PRS-91:
+  Problem: Could AI find shortcuts that break workhorse ciphers (AES) or public-key cryptography?
+  Resource: Computational irreducibility as a bound on shortcutting; Wolfram's 1984 Rule 30 stream cipher; key-space arithmetic (256 → 254.5 bits trivial vs ~100 bits serious); P vs NP link to public-key crypto.
+  Solution: AI may surface weaknesses via "existing math" in the literature, but Wolfram guesses irreducibility will cap such reductions — a falsifiable prediction connecting irreducibility to a security outcome. He reports never finding a CA-based public-key scheme.
+  Date Added: 2026-11-20
+  Source: Future of Science and Technology Q&A (October 21, 2026); PROP-2026-11-14-001
+  Confidence: Speculative (his explicit guess; verbatim in transcript first half)
+  Evidence: Transcript discussion of AES, key-space reduction and Rule 30 cipher; ties to PRS-85 (Rule 30 center-column irreducibility prize).
+
+*Total PRS triplets: 91*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

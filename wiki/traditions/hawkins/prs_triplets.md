@@ -824,7 +824,70 @@ PRS-86:
   Confidence: Speculative (chapter title only)
   Evidence: Chapter at 7:39.
 
-*Total PRS triplets: 86*
+PRS-87:
+  Problem: In a hierarchy of learning modules, higher-level information arrives after the sensor has moved, so features are bound to the wrong locations.
+  Resource: Three candidate mechanisms — inter-module delays, an inner exchange loop before the next observation, and efference copies of motor commands
+  Solution: Problem identified and characterised; mechanisms proposed but not yet chosen
+  Date Added: 2026-11-20
+  Source: 2026/09 - Latency Mismatches; PROP-2026-11-17-002
+  Confidence: Medium (problem); Speculative (which fix)
+  Evidence: Page summary lists all three fixes and names prioritisation as open.
+
+PRS-88:
+  Problem: How does a sensorimotor system learn genuinely new objects without disrupting models it already has?
+  Resource: Separate cortex-like and hippocampus-like learning systems for novel versus existing objects
+  Solution: Placed on the Q4 research agenda; not yet built or tested
+  Date Added: 2026-11-20
+  Source: 2026/09 - Q4 Research Roadmap; PROP-2026-11-17-004
+  Confidence: Speculative
+  Evidence: Agenda item on separate cortical and hippocampal systems.
+
+PRS-89:
+  Problem: How does a system recover once it has misrecognised an object?
+  Resource: Error-recovery as an explicit research item, alongside the earlier negative-evidence hypothesis testing (PROP-2026-10-23-005)
+  Solution: Open
+  Date Added: 2026-11-20
+  Source: 2026/09 - Q4 Research Roadmap; PROP-2026-11-17-004
+  Confidence: Speculative
+  Evidence: Agenda item "recovering from recognition errors."
+
+PRS-90:
+  Problem: How can a column recognise a scaled copy of a learned object without relearning it, and when is a scaled copy the same object versus a new instance?
+  Resource: Scale estimated from geometry and sensory observation within the column's reference frame
+  Solution: Proposed direction only; identity criterion explicitly left open
+  Date Added: 2026-11-20
+  Source: 2026/09 - Ideas Around Implementing Scale Invariance in Monty; PROP-2026-11-17-001
+  Confidence: Speculative
+  Evidence: Page summary says the same-object-versus-instance question "remains an open question."
+
+PRS-91:
+  Problem: Is uniform scaling the right case to solve first, or a special case of deformation (bending, stretching), which bears more directly on object identity?
+  Resource: "Jeff's Challenge: Deformations & Object Identity" segment
+  Solution: None yet; reframes the problem space
+  Date Added: 2026-11-20
+  Source: 2026/09 - Ideas Around Implementing Scale Invariance in Monty; PROP-2026-11-17-001
+  Confidence: Speculative (chapter title only — verify against video before ingesting)
+  Evidence: Video chapter list, 14:54.
+
+PRS-92:
+  Problem: Which properties should a column's object model hold invariant, and which variations (pose, scale, state, deformation) belong elsewhere?
+  Resource: Allocentric reference frames plus a proposed "3-Model Solution" that represents variability outside the core object model
+  Solution: Proposed architecture separating identity from variation; deformation explicitly unsolved
+  Date Added: 2026-11-20
+  Source: 2026/09 - Exploring How Cortical Columns Handle Variations in Learned Object Models; PROP-2026-11-17-003
+  Confidence: Speculative (architecture named, internals not verified)
+  Evidence: Page summary: "3-Model Solution"; deformations "would require handcrafted solutions."
+
+PRS-93:
+  Problem: How do learned object models connect to what can be done with an object?
+  Resource: Affordances discussed as part of the object-variation question
+  Solution: Raised, not resolved
+  Date Added: 2026-11-20
+  Source: 2026/09 - Exploring How Cortical Columns Handle Variations in Learned Object Models; PROP-2026-11-17-003
+  Confidence: Speculative
+  Evidence: Affordances listed among session topics.
+
+*Total PRS triplets: 93*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

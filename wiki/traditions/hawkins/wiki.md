@@ -177,3 +177,19 @@ Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCE
 - `PROP-2026-10-23-003` - Q4 Roadmap and Q3 Review -> PRS-85, PRS-86. Administrative update; the card itself called denial reasonable.
 
 Q4 frontier recorded: unsupervised compositional learning, top-down connections, inner-LM loop for timing mismatches.
+
+
+### Update 2026-11-20 — 2026/09 - Latency Mismatches (PROP-2026-11-17-002)
+Ingested 1 triplet(s): PRS-87. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — 2026/09 - Q4 Research Roadmap (PROP-2026-11-17-004)
+Ingested 2 triplet(s): PRS-88, PRS-89. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — 2026/09 - Ideas Around Implementing Scale Invariance in Monty (PROP-2026-11-17-001)
+Ingested 2 triplet(s): PRS-90, PRS-91. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-20 — 2026/09 - Exploring How Cortical Columns Handle Variations in Learned Object Models (PROP-2026-11-17-003)
+Ingested 2 triplet(s): PRS-92, PRS-93. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

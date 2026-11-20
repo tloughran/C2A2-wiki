@@ -40523,3 +40523,107 @@ ASSUMPTION-2146:
     Current status: UNTESTED
 
 *2026-11-18 14a (local pass): ASSUMPTION-2141–2146 (6). Queued: 2141 (literature), 2144 [IN-HOUSE]. Not queued: 2142 (operational choice; OPEN-304), 2143 and 2145 (evidence for existing items), 2146 (recurrence).*
+
+ASSUMPTION-2147:
+  Date identified: 2026-11-19
+  Statement: [stated] Tom coined "relational resonance" for group coherence (a band that "takes off", athletic flow, shared worship). Claude's working criteria: the exchange "produces what neither side would alone" and "friction falls over time"; health needs damping, since runaway resonance is "feedback squeal, the mob, or a sycophantic loop." The chat summary proposes it as a candidate C2A2 concept "and possibly a candidate metric."
+  Context: chat scrape 5fd73b98; 2026-11-19_chat_summary.md (walk "Morning greeting", captured to 08:56 EST only)
+  Type: conceptual
+  Related decisions: ASSUMPTION-2141; PRESUMPTION-1252; REVISE-543 (umbrella-term "resonance"); Fredrickson positivity resonance; OPEN-305
+  Testability: testable in literature (queued)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2147
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2148:
+  Date identified: 2026-11-19
+  Statement: [stated] Love, after Aquinas, as "willing the other's good ... not his approval" is what "separates resonance from flattery"; therefore C2A2 agents should "correct as well as amplify."
+  Context: chat scrape 5fd73b98; chat summary "C2A2-Specific Items"
+  Type: normative
+  Related decisions: PRESUMPTION-1255; agents 15b (adversarial lane) as structural damping
+  Testability: normative design commitment (not queued; see PRESUMPTION-1255)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2148
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2149:
+  Date identified: 2026-11-19
+  Statement: [stated] Puerto Rico teaching: bilingual grad students fluent in the physics took over while Tom stood aside, and the room went from patient translation to humming "like a resonant circuit"; Claude names the grad students "the coupling element." Implied generalization: fluent near-peers couple better than the expert.
+  Context: chat summary (Tom's example; single recollection)
+  Type: empirical
+  Related decisions: ASSUMPTION-2147
+  Testability: testable in literature (queued): near-peer / bilingual peer instruction
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2149
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2150:
+  Date identified: 2026-11-19
+  Statement: [stated] Lit pipeline local copy: skip notes "every day since 2026-10-31", so "the queue has probably not been worked through in about three weeks." Contradicted by review/lit_pipeline.lock, which shows cloud-lit-2026-11-19 LOCKED 05:40:22Z / RELEASED 05:43:11Z after dispositioning ASSUMPTION-2141 and PRESUMPTION-1252 (DISPOSITION-1145/1146).
+  Context: lit pipeline a00b9a06; lock file read this pass
+  Type: empirical
+  Related decisions: PRESUMPTION-1256; PRESUMPTION-1196; OPEN-299
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2150
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2151:
+  Date identified: 2026-11-19
+  Statement: [stated] Stump and Fredrickson "have now come up empty or nearly empty for several weeks. The 30-day window may be too tight for how often they publish." 0 proposals each on 11-19. Same run caught an inconsistent statistic in a candidate (Adams & Mikels, F(1, 468) = 1.38 reported p < .05; agent computes p ~ .24; 14a check: t = sqrt(1.38) = 1.17, two-sided p ~ .24, consistent with the agent) and dropped it as not by Fredrickson.
+  Context: Stump/Fredrickson ba68e834
+  Type: methodological
+  Related decisions: PRESUMPTION-077; PRESUMPTION-1247
+  Testability: testable in-house (queued [IN-HOUSE])
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2151
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+ASSUMPTION-2152:
+  Date identified: 2026-11-19
+  Statement: [stated] Recurrences: scheduler 45 OK / 2 WARN / 28 FAIL (27 DOUBLE-REGISTERED + openstory.ui), cloud 48/48 OK (12:10Z); NOT-CHECKED line deliberately withheld again; Desktop Commander auto-declined (scheduler, lit). Morning status now says "ten tasks ... double-registered" and "twenty-nine enabled" (11-18: 26; scheduler: 27), a third count. Wiki daily run double-fired (fifth day), second copy verification-only; did not check the other copy's email draft. Evening sync: local copy delivered after the cloud copy wrote but could not deliver (cloud/local split as 11-18). No walk notes in Gmail; 19 pending, oldest 11-12; no decision email since 11-11; PROP-2026-08-14-033 still uningested; possible duplicate PROP-2026-11-14-001/-002; two queue items past deadline (Humanity AI 10-21, ND ECG DELTA 10-26); summa_index.json missing Day-001 and Day-035. L2 1958 / 92 pairs, newest 11-11 (8 days). OpenStory 15,598 events/24h. Task prompt wiki root missing Projects/ (Stump/Fredrickson). No interactive Cowork session.
+  Context: scheduler health 14863b14; morning status 1cf7dd7b; wiki daily run 8be97c1c; evening sync 124e9cc5; morning walk 22680fcf; lit pipeline a00b9a06; Stump/Fredrickson ba68e834
+  Type: empirical
+  Related decisions: ASSUMPTION-2144; ASSUMPTION-2146; PRESUMPTION-1196; PRESUMPTION-1208; PRESUMPTION-1218; OPEN-299
+  Testability: recurrence bundle (not queued; 26/27/10 count drift is evidence for queued ASSUMPTION-2144)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2152
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
+    Current status: UNTESTED
+
+*2026-11-19 14a (local pass): ASSUMPTION-2147–2152 (6). Queued: 2147, 2149 (literature); 2150, 2151 [IN-HOUSE]. Not queued: 2148 (normative; carried by PRESUMPTION-1255), 2152 (recurrence).*

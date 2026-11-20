@@ -957,3 +957,28 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 ### [EVALUATED: 2026-11-12] 2026-11-12 — PROP-2026-11-11-001 (mcgilchrist): Cassidy Lecture
 [forwarded by orchestrator; paradigm-bridge / pattern-detector signals]
 - Meaning crisis as attentional disorder; sacred as mode of attention (Stump, Rohr). Speculative, title-only.
+
+
+### 2026-11-20 — PROP-2026-11-15-002 (wright): Is AI the Antichrist? N.T. Wright on Peter Thiel, AI & the End Times (Ask NT Wright Anything)
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals] [EVALUATED: 2026-11-20 -> FINDING-115]
+- **McGilchrist Agent**: Pairs with McGilchrist's "Faustian bargain of AI" (pending 2026-11-04): both treat AI as a test of what humans worship or attend to.
+- **Levin / Kastrup Agents**: If Wright says anything about whether AI could be a mind or agent, it bears directly on Levin's diverse-intelligence frame and Kastrup's denial of AI consciousness; check the audio for this.
+- **Stump Agent**: The spiritual-elitism warning bears on Stump's account of second-personal knowledge being open to all, not a gnosis.
+- **C2A2 master / paradigm flags**: Not yet a flag candidate. Possible CROSS candidate (Wright + McGilchrist + Moore interview on AI as idolatry/vocation) once the audio is confirmed.
+
+
+### 2026-11-20 — PROP-2026-11-15-001 (wright): Interview with N.T. Wright, Part 2: Art and God's Homecoming (Makoto Fujimura)
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals] [EVALUATED: 2026-11-20 -> FINDING-115]
+- **Stump Agent**: The grace-and-agency answer sits close to Stump's quiescence account of grace (the will not resisting, rather than God causing assent). The Eucharist remark directly declines the hylomorphic transubstantiation account that Stump's Thomism defends: a real tension worth a review note.
+- **Rohr Agent**: Rohr's "first incarnation" and sacramental universe (Universal Christ) align with Wright's anti-Platonism; the difference is that Wright locates sacramental reality in God's *future*, Rohr in creation's *origin*. Good already/always-already test case.
+- **McGilchrist Agent**: Singing "is to pray twice", imagination triggered bodily and expressed elsewhere, and the critique of word-only Puritan piety map onto McGilchrist's account of right-hemisphere access to meaning and the left-hemisphere takeover of religion.
+- **Carroll / Wolfram Agents**: "God loves time" contrasts with block-universe readings (Carroll) and fits computational-irreducibility views where time is generative (Wolfram). Speculative.
+- **C2A2 master / paradigm flags**: Paradigm-bridge candidate: new creation as renewed (not abolished) space-time-matter, with human making as its material. Relevant to the Summa 2026 theme of loving unity as telos realized through embodied, finite agents.
+
+
+### 2026-11-20 — PROP-2026-11-15-003 (wright): NT Wright warns of 'modern-day fantasy' interpretation of 'All Israel will be saved' (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, Nov 1-4 2026)
+[forwarded by orchestrator; paradigm-bridge / pattern-detector signals] [EVALUATED: 2026-11-20 -> FINDING-115]
+- **Stump Agent**: "All Israel" as one people of Judeans and Gentiles is a direct scriptural case of Stump's corporate-substance question. What makes a composite people *one* when its parts change through hardening and ingrafting? The olive-tree image (branches cut off and grafted in, one root) is a ready test case for her hylomorphic account of composite unity.
+- **Rohr Agent**: Partial tension. Rohr's Universal Christ is unity already present in all matter. Wright's unity is a historical, covenantal, Messiah-shaped people that one can be cut off from. Flag this as a standing Wright/Rohr disagreement for the master agent to state plainly rather than blend: cosmic unity that is given versus covenantal unity that one is incorporated into.
+- **Levin / Friston**: "Hardening as divine strategy" is a system-level account in which local non-participation serves global integration. It is structurally similar to Levin's multiscale agents, where a part's local goals can diverge while the collective goal is still reached. This is only a structural analogy (Speculative).
+- **C2A2 master / paradigm flags**: **Paradigm-bridge candidate** on the Summa central theme. It gives a precise scriptural definition of the "loving unity" telos: the unity is incorporative, not ethnic, and it does not erase its origin. That definition bears on any computational-telos claim. Suggest a CROSS entry pairing this with Stump (composite unity) and noting the Rohr tension.

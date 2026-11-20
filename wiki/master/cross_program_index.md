@@ -2096,3 +2096,154 @@ Source: Manicka & Levin, topoietic model (bioRxiv 2026-11-03)
 ### Signals from mcgilchrist PROP-2026-11-11-001 (2026-11-12)
 Source: Cassidy Lecture 2026 (St Chad's, Durham)
 - **Stump / Rohr / Fredrickson:** 'recover the sacred' as mode of attention vs real object of knowledge (Stump); non-dual seeing (Rohr); positive emotion at cultural scale (Fredrickson). All hold until the recording is heard. No CROSS minted.
+
+
+### Signals from fredrickson PROP-2026-11-12-002 (2026-11-20)
+Source: No Peace for the Wicked? Immorality Is (Thought to Be) Disruptive of Intrapersonal Harmony, Impeding Positive Psychological States and Happiness
+- **Stump (flag strongly):** Stump's central notion of *internal integration* (Wandering in Darkness; the Dewey Lecture "Dilige et quod vis fac," already in the vault) holds that the will is divided against itself in wrongdoing, and that integration around the good is the condition for union with others. This paper is the closest empirical bridge in the vault to that thesis. It finds the folk *structure* she relies on, and finds that the folk *deny* the Thomistic necessity claim. That gives the Stump Agent a well-posed dispute to carry, not a confirmation. Candidate for a Stump-Fredrickson bridge note.
+- **MacIntyre (ISMI paper relevance):** the gap between the folk concept (harmony without virtue) and the Thomistic one (harmony through virtue) fits MacIntyre's "fragments" diagnosis in After Virtue: a moral vocabulary that keeps the shape of a tradition after losing the claims that made it cohere.
+- **Fredrickson internal link:** pairs with "Does shared positivity make life more meaningful?" (PROP-2026-10-08-002): harmony *within* and resonance *between* as the two structural conditions of a flourishing life.
+- **Friston:** intrapersonal conflict as competing priors within one generative model; "inner harmony" as low internal prediction error across levels.
+
+
+### Signals from fredrickson PROP-2026-11-12-001 (2026-11-20)
+Source: Positivity resonance in long-term married couples: Multimodal characteristics and consequences for health and longevity
+- **C2A2 core (flag strongly):** the most direct empirical support in the vault for the claim that richly informed, *respectful disagreement* between communities can be carried by positivity resonance without dissolving the disagreement. Candidate-02 is the dyad-scale version of the inter-tradition dialogue the accelerator is meant to host. It is a hypothesis to test at community scale, not a demonstrated result there.
+- **Friston:** physiological and behavioral synchrony as mutual prediction. Resonance is two coupled generative models settling into a shared low-surprise regime, and the health payoff is consistent with a long-run reduction in allostatic load.
+- **Stump:** see `traditions/stump` PRS on collective neuroscience ("What are we?", 2025 Maritain Lecture), where neural and interpersonal coupling anchors a hylomorphic "united something-or-other." This study supplies a measured, multi-decade consequence of exactly that coupling at the dyad scale. The marriage is the paradigm case of a composite that Stump and Aquinas both treat.
+- **McGilchrist:** multimodal, whole-body attunement is a right-hemisphere mode of attending; worth testing whether resonance markers track his "betweenness."
+
+
+### Signals from friston PROP-2026-11-12-004 (2026-11-20)
+Source: Embodied Dynamic Causal Modelling: Brain and Cardiac Effective Connectivity
+- **Fredrickson:** her vagal-tone and positivity-resonance work (cardiac synchrony between people) could use this model to estimate brain-heart coupling per person, and in principle across a dyad.
+- **Kastrup (PRS-110):** another immune/visceral-as-appearance-of-mind case, but on a physicalist footing; the two programs read the same body-mind data in opposite metaphysics.
+- **Hawkins:** cortex-only models vs embodied loops; a contrast for the Thousand Brains sensorimotor framing.
+
+
+### Signals from stump PROP-2026-11-12-003 (2026-11-20)
+Source: The evil that now dominates (short reflection by Eleonore Stump, reproduced by Aaron Belz)
+- **MacIntyre (strong, for the ISMI paper):** this is a Thomist's answer to the question of what a practitioner owes a tradition-bearing community in a time of corruption. It reads like a personal analogue of the "new and very different St. Benedict" ending of *After Virtue*. In Stump's version the response is to stay and witness, not to withdraw.
+- **Fredrickson:** grief held "without despondency" alongside commitments to love sits close to broaden-and-build's claim that positive and negative emotion can co-occur and still sustain resilience. This is worth testing against Fredrickson's work on resilience and coping.
+- **McGilchrist:** the claim that contrast reveals the good matches his right-hemisphere account of value as something disclosed, not constructed.
+- **C2A2 dialogue design:** this models how a mature member of a tradition can name grave wrongs without leaving the conversation. That matters for respectful cross-tradition exchange under real moral disagreement.
+
+
+### Signals from carroll PROP-2026-11-13-001 (2026-11-20)
+Source: Mindscape Ask Me Anything, Sean Carroll | November 2026
+- **Theory change without new data (PRS-01) → Arkani-Hamed.** Arkani-Hamed appeals to "inevitability" and mathematical structure as a guide to theory choice (see the arkanihamed tradition's epistemic-guides triplet). Carroll's Weinberg example is the Bayesian form of the same phenomenon: structural understanding moves credence. A bridge essay could ask whether "inevitability" is the kind of conceptual evidence Carroll says he cannot yet formalize.
+- **Moral anti-realism (PRS-02) → Stump and MacIntyre-adjacent material.** Carroll's turn is explicitly away from natural-law-style grounding of ethics in human flourishing. This sharpens the existing Carroll–Stump fault line and is a clean test case for C2A2's "second-first-language" exercise.
+- **Testing a symmetry by building a theory that breaks it (birefringence answer, 1:20–1:21) → Wolfram and Arkani-Hamed on emergent Lorentz invariance.** This was not drafted as a triplet because it restates 1990 work. It is a methodological signal: emergent-spacetime programs face the question of whether Lorentz invariance is derived or assumed. A listener question on exactly this appears in the comments, but no answer to it was found in the sections read.
+
+
+### Signals from wolfram PROP-2026-11-14-002 (2026-11-20)
+Source: Future of Science and Technology Q&A (October 21, 2026)
+- **Friston (active inference):** CANDIDATE-01 is a social version of the cross-program claim (cross_program_index.md, line ~566) that irreducibility is *why* approximate inference is necessary. A society that cannot follow its own proofs must rely on bounded models of trust. Check the transcript for whether Wolfram frames verification as a kind of inference under irreducibility.
+- **Hoffman / Kastrup:** If AI mathematics works in parts of the ruliad that human observers cannot "decode", that bears on the open index thread (line ~1521) about Wolfram's restriction being ineliminably observer-indexed. AI and humans would be differently bounded observers of the *same* mathematical object. That is a test of Wolfram's requirement that objective reality needs a plurality of observers close in branchial space. Worth flagging if he says anything about AI and humans "not sharing" mathematics.
+- **C2A2 infrastructure (Loughran):** CANDIDATE-02 bears directly on C2A2's own review pipeline. Agents propose and a human reviews, and the human is already the throughput bottleneck. Wolfram's answer may be a usable design principle for the network.
+- **Carroll / Arkani-Hamed:** no strong signal in this source.
+
+
+### Signals from wolfram PROP-2026-11-14-001 (2026-11-20)
+Source: Future of Science and Technology Q&A (October 21, 2026)
+- **Friston — addresses open CROSS-053** (master/cross_program_index.md: "Is Wolfram's computational irreducibility the physical foundation for why Friston's free energy minimization is necessary?"). Candidate-03 gives CROSS-053 an adversarial test case: if irreducibility bounds how far any bounded inferer (AI cryptanalyst) can shortcut a process, that is the same limit that forces bounded agents to model rather than predict exactly. Candidate-02 sharpens it by naming what irreducibility does *not* explain (human-complexity bugs).
+- **Carroll/Arkani-Hamed**: weak — only the P vs NP/complexity-theory framing; no Ruliad/spacetime content in the read portion.
+- **Levin**: second-half "self-repairing software" chapter (52:45) is a possible bridge to regenerative/goal-directed repair — unverified, check the transcript second half before citing.
+- **Kastrup/Hoffman**: none found in the read portion.
+- **C2A2 infrastructure**: Candidate-01's "know what you thought you were proving" is directly the PRS-encoding problem — the risk sits in translating a tradition's claim into formal triplets, not in checking them.
+
+
+### Signals from wright PROP-2026-11-15-002 (2026-11-20)
+Source: Is AI the Antichrist? N.T. Wright on Peter Thiel, AI & the End Times (Ask NT Wright Anything)
+- **McGilchrist Agent**: Pairs with McGilchrist's "Faustian bargain of AI" (pending 2026-11-04): both treat AI as a test of what humans worship or attend to.
+- **Levin / Kastrup Agents**: If Wright says anything about whether AI could be a mind or agent, it bears directly on Levin's diverse-intelligence frame and Kastrup's denial of AI consciousness; check the audio for this.
+- **Stump Agent**: The spiritual-elitism warning bears on Stump's account of second-personal knowledge being open to all, not a gnosis.
+- **C2A2 master / paradigm flags**: Not yet a flag candidate. Possible CROSS candidate (Wright + McGilchrist + Moore interview on AI as idolatry/vocation) once the audio is confirmed.
+
+
+### Signals from wright PROP-2026-11-15-001 (2026-11-20)
+Source: Interview with N.T. Wright, Part 2: Art and God's Homecoming (Makoto Fujimura)
+- **Stump Agent**: The grace-and-agency answer sits close to Stump's quiescence account of grace (the will not resisting, rather than God causing assent). The Eucharist remark directly declines the hylomorphic transubstantiation account that Stump's Thomism defends: a real tension worth a review note.
+- **Rohr Agent**: Rohr's "first incarnation" and sacramental universe (Universal Christ) align with Wright's anti-Platonism; the difference is that Wright locates sacramental reality in God's *future*, Rohr in creation's *origin*. Good already/always-already test case.
+- **McGilchrist Agent**: Singing "is to pray twice", imagination triggered bodily and expressed elsewhere, and the critique of word-only Puritan piety map onto McGilchrist's account of right-hemisphere access to meaning and the left-hemisphere takeover of religion.
+- **Carroll / Wolfram Agents**: "God loves time" contrasts with block-universe readings (Carroll) and fits computational-irreducibility views where time is generative (Wolfram). Speculative.
+- **C2A2 master / paradigm flags**: Paradigm-bridge candidate: new creation as renewed (not abolished) space-time-matter, with human making as its material. Relevant to the Summa 2026 theme of loving unity as telos realized through embodied, finite agents.
+
+
+### Signals from wright PROP-2026-11-15-003 (2026-11-20)
+Source: NT Wright warns of 'modern-day fantasy' interpretation of 'All Israel will be saved' (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, Nov 1-4 2026)
+- **Stump Agent**: "All Israel" as one people of Judeans and Gentiles is a direct scriptural case of Stump's corporate-substance question. What makes a composite people *one* when its parts change through hardening and ingrafting? The olive-tree image (branches cut off and grafted in, one root) is a ready test case for her hylomorphic account of composite unity.
+- **Rohr Agent**: Partial tension. Rohr's Universal Christ is unity already present in all matter. Wright's unity is a historical, covenantal, Messiah-shaped people that one can be cut off from. Flag this as a standing Wright/Rohr disagreement for the master agent to state plainly rather than blend: cosmic unity that is given versus covenantal unity that one is incorporated into.
+- **Levin / Friston**: "Hardening as divine strategy" is a system-level account in which local non-participation serves global integration. It is structurally similar to Levin's multiscale agents, where a part's local goals can diverge while the collective goal is still reached. This is only a structural analogy (Speculative).
+- **C2A2 master / paradigm flags**: **Paradigm-bridge candidate** on the Summa central theme. It gives a precise scriptural definition of the "loving unity" telos: the unity is incorporative, not ethnic, and it does not erase its origin. That definition bears on any computational-telos claim. Suggest a CROSS entry pairing this with Stump (composite unity) and noting the Rohr tension.
+
+
+### Signals from levin PROP-2026-11-16-001 (2026-11-20)
+Source: On Growth and Form, and Function: Reusable Regulatory Handles Control Phenotypic Variation
+- **Wolfram:** NCAs are cellular automata, and this paper shows that their rule space has low-dimensional semantic structure. That bears directly on rule-space and computational-irreducibility questions: some macro-level outcomes are reachable along simple directions despite irreducible micro-level dynamics.
+- **Friston:** "Fixed scaffold plus low-rank modulation" matches a fixed generative model with a few precision or prior parameters that set the target state. The rank-one handles act like set-point priors for collective morphogenesis, so they could be tested as active-inference "preferences."
+- **Hawkins:** Reuse of one shared local network, with transfer "relative to the same reference frame," echoes reference frames in cortical columns.
+- **C2A2 / AI:** The paper uses LoRA, a standard method for fine-tuning large language models, as a model of biological control. It is a two-way bridge between machine-learning practice and developmental biology.
+
+
+### Signals from hawkins PROP-2026-11-17-002 (2026-11-20)
+Source: 2026/09 - Latency Mismatches
+- Friston: efference copy is a central construct in active inference (predicting the sensory consequences of one's own action). If TBP adopts the efference-copy route, that is a concrete convergence point to record against Hawkins Question 6 — flag, don't merge.
+- Upgrades the existing Speculative "inner LM loop" resource; reviewer may prefer to fold this into that entry rather than add a new triplet.
+
+
+### Signals from hawkins PROP-2026-11-17-004 (2026-11-20)
+Source: 2026/09 - Q4 Research Roadmap
+- Friston: reciprocal Question 12 asks whether resistance to catastrophic forgetting comes from the same mechanism in FEP and Thousand Brains. A hippocampal/cortical split is a third route to the same property. Worth adding as a note to Hawkins Q12 / Friston Q14.
+- "Abstract versus concrete models" should be routed to the Loughran/master agent as relevant to the C2A2 question of how traditions form abstractions.
+
+
+### Signals from hawkins PROP-2026-11-17-001 (2026-11-20)
+Source: 2026/09 - Ideas Around Implementing Scale Invariance in Monty
+- Hoffman: "when is a transformed thing the same object" is exactly where interface theory says objects are icons constructed by the perceiver rather than discovered. Possible contrast worth one line, not a bridge.
+- Levin: morphogenesis maintains target-form identity across large deformations; Levin's "same anatomical goal under perturbation" is a biological instance of the identity-under-deformation problem.
+- Ties to PROP-2026-11-17-003 (variations in learned object models), which also names deformation as the hard open case.
+
+
+### Signals from hawkins PROP-2026-11-17-003 (2026-11-20)
+Source: 2026/09 - Exploring How Cortical Columns Handle Variations in Learned Object Models
+- Pairs with PROP-2026-11-17-001: two separate October–November sessions independently name deformation as the hard open case. That convergence is the signal; the PRS chain is "scale → variation → deformation."
+- McGilchrist / Hoffman (weak): affordance talk moves object models toward action-relative meaning, which both of those traditions stress. Low confidence; note only.
+
+
+### Signals from levin PROP-2026-11-17-005 (2026-11-20)
+Source: Scale-free Niche Construction: expanding agent-microenvironment co-development to unconventional substrates
+- Friston / Pezzulo: niche construction as active inference with environment-stored priors (Pezzulo is a co-author).
+- Hawkins: externalised reference frames vs internal models of objects.
+- Levin topoiesis (PROP-2026-11-11-004): both papers make tissue organisation depend on agent-environment fields.
+
+
+### Signals from kastrup PROP-2026-11-18-002 (2026-11-20)
+Source: Everything is determined & that gives life meaning
+- **Wolfram (strong):** "determined but unpredictable — you'd need a universe-sized computer" is essentially computational irreducibility; Kastrup's "self-discovery programme of life" is a direct bridge to Wolfram's ruliad and his own account of free will. Flag for master agent.
+- **Stump (strong tension):** Thomistic libertarian/compatibilist accounts of free will and moral responsibility vs Kastrup's "blame is metaphysically naive" — a live rival-tradition fault line, good C2A2 dialogue material.
+- **Friston/Levin:** agency as determined-but-unpredictable goal-directed behaviour.
+- **Fredrickson:** compassion over revenge as a flourishing-relevant ethic.
+- AI consciousness, Hoffman, and individual-vs-collective mind: not addressed in the public material.
+
+
+### Signals from mcgilchrist PROP-2026-11-18-003 (2026-11-20)
+Source: Lighting the Fire of the Mind with Dr Iain McGilchrist
+- **C2A2 core (strong):** This is a formation-and-maturity claim about how a person climbs into an intellectual tradition. It maps directly onto C2A2's "second-first-language" goal and the curriculum interface. If the recording supports it, McGilchrist gives a neuro-pedagogical account of why a curriculum of rules alone cannot produce the mature member of a tradition that MacIntyre's account requires.
+- **Stump (Thomistic):** Formation of the intellect through attention to a work for its own sake is close to the Thomistic picture of habituated intellectual virtue, and to Stump's second-personal knowledge.
+- **Fredrickson:** Possible link to broaden-and-build. Open attention as the condition for building new capacities.
+- **AI thread:** Forster's *The Machine Stops* and the episode's "age of algorithms" framing continue McGilchrist's AI-vs-understanding line (Ralston Lectures, UnHerd). This is relevant to whether AI agents can become mature members of a tradition, which is the C2A2 question.
+- **Duplicate check:** Two earlier McGilchrist–Blackwood items exist and are distinct from this one: the December 2024 "Education of Iain McGilchrist" pt. II, which is biographical, and the January 2026 "Universities and the Future of Civilization." The 2026-08-05 Ralston/Wolfram proposal mentions Blackwood only as host.
+
+
+### Signals from mcgilchrist PROP-2026-11-18-001 (2026-11-20)
+Source: To experience beauty, we need the right hemisphere of the brain — Vrucht Bare Aarde V3 2026 Is.17 (English Translation)
+- **C2A2 (strong):** "small committed communities" as the carrier of cultural recovery maps directly onto the C2A2 premise of thick, small communities advancing goals worth achieving on their worldview — and onto MacIntyre's closing of *After Virtue*. Flag for the master agent.
+- **Fredrickson:** broad (RH) vs narrow (LH) attention parallels broaden-and-build; the article explicitly says RH restrains excessive emotion, a testable bridge.
+- **Stump:** prayer and the Orthodox liturgy anecdote as RH practice; discovered (not invented) goodness/beauty aligns with Thomistic transcendentals.
+- **Friston:** attention determining perception (gorilla study) — precision-weighting framing.
+
+
+### Master integration 2026-11-20 (19-card ingest; FINDING-115)
+- [BRIDGE] **Determined but unpredictable: Kastrup meets computational irreducibility** (CROSS-169; kastrup PRS-112, PRS-113; wolfram; stump as dissent). Kastrup's "everything is determined, yet you would need a universe-sized computer to predict it" is Wolfram's irreducibility stated in idealist terms; Stump's account of moral responsibility is the standing rival and should be stated beside it, not blended. Card-level (talk summary). Medium.
+- [TENSION] **Given unity vs incorporated unity** (CROSS-170; wright PRS-93, PRS-94; rohr; stump). Wright reads "all Israel" as one Messiah-shaped people that branches can be cut from and grafted into; Rohr's Universal Christ is unity already present in all matter. Stump's composite-substance question (what makes a changing people one) is the test case. Source is a secondhand news report of the Dallas lectures. Medium-Low.
