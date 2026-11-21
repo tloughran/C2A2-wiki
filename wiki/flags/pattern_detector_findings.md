@@ -1472,3 +1472,8 @@ Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, f
 - **Hawkins internal, note:** two separate sessions (PROP-2026-11-17-001, -003) name deformation as the hard open case; chain scale -> variation -> deformation. Levin's identity-under-perturbation is the biological instance. Watch only.
 - **Wright AI/Antichrist, LOW:** not a flag candidate until the audio confirms what Wright says about AI as mind or agent.
 - Housekeeping: PROP-2026-11-14-001/-002 are two cards on one Wolfram Q&A, both approved and ingested (wolfram PRS-86..91); a later dedup pass may merge overlapping triplets.
+
+
+### Pattern Detector — 2026-11-21
+- **FINDING-116 — Carroll x Wolfram x Kastrup x Hoffman x Friston (CROSS-171), MEDIUM-LOW, not escalated.** A peer-reviewed pluralism about information is a real counterweight to the network's three information-monist programs and a pointed question for FEP's fusion of statistical and thermodynamic information. It stays below the Watch List threshold because only the abstract has been read and Carroll is one of eight authors. Upgrade condition: read the body for how the ontological face is treated (dismissed, bounded, or left open) and whether it names any of these programs.
+- **Carroll Mindscape 374, note:** three Speculative triplets; the McGilchrist/Friston readings of Bell's method are the proposer's. Watch only.

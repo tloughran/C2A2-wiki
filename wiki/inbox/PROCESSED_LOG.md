@@ -2631,3 +2631,12 @@ Total new triplets: 39. Flagged to pattern detector: 3 card(s). Note: PROP-2026-
 
 ### 2026-11-20 second orchestrator firing (04:36 local, verification only)
 Started alongside the primary run; the primary had already written the decisions archive (04:36) and was writing review pages when this firing checked, so this firing made no pipeline writes: no Phase 0 moves, no ingest, no searches, no review page, no Gmail draft, no review_log or level2 rebuild. Waited until the tree had been quiet for 3 min (primary's last write 04:40:05). Verified: decision email 1a1f4ccf081e1f89 is read (no UNREAD label) and stored in provenance/decision_emails.json; 19 APPROVE moved and ingested (39 triplets, per entry above); pending = 2 (both Carroll specialist cards dated 11-20); review pages kept 11-17, 11-18, 11-20 (11-19 page absent); Gmail draft r8980614978022681439 created 09:39Z; review_log.html address-clean (0 matches); level2 meta 2017 signals / 92 pairs / span 2026-04-03 to 2026-11-18 / stale_days 2 (no WARN). Phase 6: no git.
+
+### 2026-11-21 orchestrator run (Saturday)
+Approved via [C2A2-review-decision] 2026-11-20 (thread 1a1f9dea1e9c7196).
+- PROP-2026-11-20-001 carroll 2026-11-20_carroll_mindscape-374-fitzharris-sleuth-hound.md PRS-113, PRS-114, PRS-115 (3 triplets, all Speculative)
+- PROP-2026-11-20-002 carroll 2026-11-20_carroll_four-faces-of-information-natrevphys.md PRS-116, PRS-117 (2 triplets; abstract only)
+Total new triplets: 5. CROSS-171. Flagged to pattern detector: 1 card -> FINDING-116 (MEDIUM-LOW, not escalated).
+
+### 2026-11-21 second orchestrator firing (04:36 local, verification only)
+Started while the primary run was writing (decisions archive and inbox copies stamped 04:36), so this firing made no pipeline writes: no Phase 0 moves, no ingest, no searches, no review page, no Gmail draft, no review_log or level2 rebuild. Waited until the tree had been quiet for over 10 min (primary's last write about 04:40). Verified: decision email 1a1f9dea1e9c7196 is read (no UNREAD label) and stored in provenance/decision_emails.json; 2 APPROVE moved and ingested (5 triplets, per entry above); pending = 1 (Wolfram specialist card dated 11-21); review pages kept 11-18, 11-21; review_log.html address-clean (0 matches); level2 meta 2027 signals / 92 pairs / span 2026-04-03 to 2026-11-20 / stale_days 1 (no WARN). Separately noted: GitHub Pages deploy for main 9441a0f failed at 03:01Z (notification unread). Phase 6: no git.

@@ -3224,6 +3224,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-20-002",
+  "tradition": "carroll",
+  "source_date": "2026-08-28",
+  "title": "Four faces of information in natural systems",
+  "file": "inbox/proposals/approved/2026-11-20_carroll_four-faces-of-information-natrevphys.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-28-061",
   "tradition": "rohr",
   "source_date": "2026-08-28",
@@ -4237,6 +4245,14 @@
   "source_date": "2026-11-16",
   "title": "To experience beauty, we need the right hemisphere of the brain \u2014 Vrucht Bare Aarde V3 202",
   "file": "inbox/proposals/approved/2026-11-18_mcgilchrist_vrucht-bare-aarde-beauty-right-hemisphere.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-20-001",
+  "tradition": "carroll",
+  "source_date": "2026-11-16",
+  "title": "Mindscape 374 | Lindsey Fitzharris on Forensic Pathology, Reconstructive Surgery, and Sher",
+  "file": "inbox/proposals/approved/2026-11-20_carroll_mindscape-374-fitzharris-sleuth-hound.md",
   "processed": false
  }
 ]

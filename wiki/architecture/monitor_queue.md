@@ -26059,3 +26059,27 @@ MONITOR-726:
   Monitoring cadence: Weekly (default); first check due 2026-11-27
   PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2149 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2149_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2149_against.md
+
+MONITOR-727:
+  Date: 2026-11-21
+  Source item: ASSUMPTION-2153 (DISPOSITION-1151)
+  Item type: ASSUMPTION (stated)
+  Priority: Medium
+  Disposition basis: 15a PARTIALLY-SUPPORTED (Moderate, preliminary); 15b PARTIALLY-CHALLENGED (Moderate, preliminary). Representational convergence is real, but all converging systems share human-made training data, so it cannot yet separate "what intelligence encounters" from the corpus.
+  What would change the disposition: (-> INCORPORATE, narrowed) published convergence across models trained on disjoint data (different-language corpora, non-human sensor data); (-> REVISE) evidence that convergence disappears off the shared distribution, or C2A2 design text using model convergence as proof of shared ground.
+  Monitoring cadence: Weekly (default); first check due 2026-11-28
+  Related: SYSTEMIC-RISK 2026-11-21; PREMISE-004; PREMISE-058; REVISE-546
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2153 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2153_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2153_against.md
+
+MONITOR-728:
+  Date: 2026-11-21
+  Source item: ASSUMPTION-2157 (DISPOSITION-1152)
+  Item type: ASSUMPTION (stated)
+  Priority: Low
+  Disposition basis: 15a PARTIALLY-SUPPORTED (Weak-to-Moderate, preliminary); 15b PARTIALLY-CHALLENGED (Moderate, preliminary). Bloom's conformity/diversity balance has peer-reviewed analogs; his own model is untested and rests on contested group selection.
+  What would change the disposition: (-> INCORPORATE, as "candidate inspiration") the mechanism is restated with peer-reviewed grounding (e.g., Lazer & Friedman 2007) and Bloom cited as pointer only; (-> REVISE) Bloom adopted as a grounding reference, or tournament/resource-shifting mechanisms enter design text.
+  Monitoring cadence: Weekly (default); first check due 2026-11-28
+  Related: REVISE-545 (structural damping); REVISE-539..545 (umbrella-term pattern)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2157 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2157_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2157_against.md

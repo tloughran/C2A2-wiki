@@ -53349,3 +53349,121 @@ DISPOSITION-1150:
 
 SYSTEMIC-RISK (2026-11-20, 15b): ASSUMPTION-2147 and PRESUMPTION-1254 extend the "resonance" umbrella-term pattern (seventh instance after REVISE-539..543): "coherence" here names at least three quantities (felt cohesion, observed synchrony, novel joint output) that the literature shows can dissociate or run opposite. Separately, PRESUMPTION-1255 is a self-referential risk: this pipeline's own 15a/15b independence is procedural only (one orchestrator), which the sycophancy-in-debate literature says is not structural damping. Recommend Tom treat REVISE-544 and REVISE-545 with REVISE-539..543 and REVISE-106.
 EVIDENCE-QUALITY NOTE (2026-11-20): all searches PRELIMINARY (8 web searches, titles only, no fetches). Fredrickson, Janis, Ten Cate & Durning, Garcia & Li Wei, Burgess et al., Palumbo et al., Nisbett & Wilson, Sharma et al. and the content of Wallot et al. are background recall, not re-read. 15a/15b independence procedural only (FOR files composed before AGAINST files). No NOVELTY flags: literature found for all four.
+
+## 2026-11-21 (cloud-lit-2026-11-21): ASSUMPTION-2153, ASSUMPTION-2157, PRESUMPTION-1257
+
+RETURN-TO-14a:
+  Date: 2026-11-21
+  Original item: ASSUMPTION-2153
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Huh, Cheung, Wang & Isola, 2024. "Position: The Platonic Representation Hypothesis." ICML 2024
+  Summary: Independently trained models converge in representation, and a named hypothesis says the target is the structure of the world; support is for learned structure, not mathematics specifically.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2153_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2153 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Date: 2026-11-21
+  Original item: ASSUMPTION-2157
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Key source: Bloom, H., 2000. "Global Brain." Wiley; mechanism analog Lazer & Friedman 2007
+  Summary: Bloom supplies a structural damping mechanism (conformity enforcers vs. diversity generators); the balance has peer-reviewed support from other authors, Bloom's model itself is untested.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2157_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2157 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Date: 2026-11-21
+  Original item: PRESUMPTION-1257
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Key source: Izard, Pica, Spelke & Dehaene, 2011. "Flexible intuitions of Euclidean geometry in an Amazonian indigene group." PNAS
+  Summary: Core number and geometry intuitions look widely shared, including in unschooled groups; support covers intuitions, not mathematical practice.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1257_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1257 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Date: 2026-11-21
+  Original item: ASSUMPTION-2153
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: "Convergence without understanding" arXiv:2605.23315; Huh et al. 2024 (shared-data confound acknowledged)
+  Specific risk: Model convergence may read the shared (largely Western, English-language) corpus back as reality.
+  Summary: All converging models share human-made training data, so convergence cannot separate "what intelligence encounters" from the corpus; convergence is also partial and weaker off-distribution.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2153_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2153 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Date: 2026-11-21
+  Original item: ASSUMPTION-2157
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Pinker 2012, "The false allure of group selection" (recall); search footprint (no peer-reviewed uptake found)
+  Specific risk: Grounds relational resonance in another broad metaphor; Bloom's damping works by competition between subgroups.
+  Summary: Popular synthesis with little visible research uptake, resting on contested group selection; damping mechanism is real but competitive.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2157_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2157 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Date: 2026-11-21
+  Original item: PRESUMPTION-1257
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Moderate
+  Key source: Dehaene, Izard, Spelke & Pica, 2008. "Log or linear? Distinct intuitions of the number scale in Western and Amazonian indigene cultures." Science
+  Specific risk: Formal mathematics treated as neutral arbiter privileges the tradition that built it.
+  Summary: Core intuitions are widely shared; mathematical practice (linear number line, exact arithmetic, proof standards) is culturally acquired and has been used to rank cultures.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1257_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1257 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1151:
+  Date: 2026-11-21
+  Item: ASSUMPTION-2153
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Representational convergence is real and replicated, but every converging system shares human-made training data, so the evidence cannot yet distinguish "what intelligence encounters" from "the corpus." The claim is open, not refuted.
+  Disposition: MONITOR (MONITOR-727)
+  Reasoning: Moderate support against a moderate challenge: MONITOR. Not INCORPORATE: the decisive test (convergence across disjoint data) has not been run, and the claim is second-hand. Priority Medium rather than Low: it bears on what C2A2 treats as shared ground, and it shares a vulnerability with PRESUMPTION-1257 (SYSTEMIC-RISK below).
+  Consistency check: grep of validated_premises.md (PREMISE-001..239) for mathemat / platonic / convergen / bloom / neutral / conformity: PREMISE-004 (triangulation; convergence from evidence sharing a common bias such as one LLM backbone may be spurious), PREMISE-058 (agreement weight scales with formational independence) and PREMISE-042 (cross-tradition convergence is mostly structural) are consistent with this MONITOR and in fact sharpen the challenge. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2153 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2153_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2153_against.md
+
+DISPOSITION-1152:
+  Date: 2026-11-21
+  Item: ASSUMPTION-2157
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Bloom points at a mechanism with real support (a brake on conformity from diversity), which answers REVISE-545's call for structural damping, but the support comes from other authors; Bloom's own model is untested and rests on contested group selection.
+  Disposition: MONITOR (MONITOR-728)
+  Reasoning: Weak-to-moderate support against a moderate challenge on a "candidate reference" claim: MONITOR. "Candidate" is modest and survives; making Bloom a grounding reference would not. Priority Low: no design decision yet depends on it.
+  Consistency check: same grep as DISPOSITION-1151; no premise on Bloom or conformity/diversity damping; PREMISE-062 (dual-reasons rule, sycophancy countermeasures) consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2157 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2157_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2157_against.md
+
+DISPOSITION-1153:
+  Date: 2026-11-21
+  Item: PRESUMPTION-1257
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: CHALLENGED  15b strength: Moderate
+  Net assessment: The presumption is real and too broad. Core intuitions of number and space look widely shared; mathematics as practice (linear number line, exact arithmetic, proof standards) is tradition-acquired and has been used to rank traditions.
+  Disposition: REVISE (REVISE-546)
+  Reasoning: Weak-to-moderate support against a moderate challenge, on a presumption: lean REVISE. The fix is a narrowing, not a reversal: keep shared intuitions, drop "neutral" for formal practice. Urgency Medium: it touches C2A2's core cross-tradition aim and the MacIntyrean frame the project works within; it is not yet encoded in running pipeline logic, so not High.
+  Consistency check: same grep as DISPOSITION-1151; PREMISE-042 (convergence is structural; "some convergence is literal (shared formal results)") is compatible with the narrowed form (shared results may still be affirmed by each tradition on its own terms). Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1257 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1257_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1257_against.md
+
+SYSTEMIC-RISK-FLAG (2026-11-21, 15b):
+  Affected items: ASSUMPTION-2153, PRESUMPTION-1257 (related: PREMISE-004, PREMISE-058)
+  Common vulnerability: Both treat convergence as evidence of tradition-independent ground, while the converging parties share a lineage: models share a human-made corpus; schooled humans share formal Western mathematics. Convergence from a shared source is the correlated-evidence case PREMISE-004 and PREMISE-058 already discount.
+  Literature basis: Huh et al. 2024 (shared-data confound acknowledged); Dehaene et al. 2008; Bishop 1990 (recall).
+  Risk level: High
+  Recommendation: Before mathematics (or model convergence) is used as "the shared space," require evidence of convergence from independent lineages (disjoint-data models; traditions affirming results on their own terms). Read with REVISE-545 (procedural vs. structural independence).
+EVIDENCE-QUALITY NOTE (2026-11-21): all searches PRELIMINARY (8 web searches, titles only, no fetches). Olah et al., Lazer & Friedman, Hong & Page, Thompson, Pinker, Wilson & Wilson, Pica et al., Dehaene et al. 2006, Rowlands & Carson, D'Ambrosio, Bishop, Ferreirós, Gillies and MacIntyre are background recall, not re-read. 15a/15b independence procedural only (FOR files composed before AGAINST files). No NOVELTY flags: literature found for all three.

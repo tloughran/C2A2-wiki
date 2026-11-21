@@ -4153,3 +4153,17 @@ OPEN-305:
     Transform at each step:
       14a: Raised from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
     Current status: OPEN
+
+OPEN-306:
+  Raised: 2026-11-20 by 14a (ASSUMPTION-2153, 2154; PRESUMPTION-1257, 1259)
+  Question: If the shared space is "what intelligence encounters (mathematics)", whose account of mathematics does the surfaces map use? Should the dated observational spreadsheet record each tradition's stance on what mathematics is, rather than presuming one?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-306
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from local pass 2026-11-20 (2026-11-20 chat summary, second-hand recap of 11-19 walk second half)
+    Current status: OPEN

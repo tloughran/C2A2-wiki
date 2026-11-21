@@ -27310,3 +27310,65 @@ PRESUMPTION-1256:
     Current status: UNTESTED
 
 *2026-11-19 14b: PRESUMPTION-1254 (epistemic, Medium), 1255 (normative, Medium), 1256 (structural, Medium). Checked against 14a 2147–2152 and the registry. Not re-surfaced (already registered; new evidence today): tool parity between copies (PRESUMPTION-1196; evening sync cloud wrote but could not deliver); withheld NOT-CHECKED line (PRESUMPTION-1218); status fields across schema eras (PRESUMPTION-1208; findings 036–114 again excluded from "24 active"); staleness threshold without basis (PRESUMPTION-077 / OPEN-038; L2 flat 8 days); mid-walk summary as record (PRESUMPTION-1253; 11-19 captured to 08:56 of a 08:44–09:41 chat).*
+
+PRESUMPTION-1257:
+  Date surfaced: 2026-11-20
+  Statement: [inferred] Moving the shared space from "the corpus" to "what intelligence encounters (mathematics)" presumes mathematics is tradition-neutral ground that every intelligence meets the same way. C2A2's own traditions disagree about what mathematics is (Wolfram's ruliad, Hoffman's interface, Kastrup's idealism, Carroll's realism), and the MacIntyrean frame the project rests on holds that rationality is tradition-constituted. The correction may relocate the disagreement rather than escape it.
+  Evidence it was operative: ASSUMPTION-2153 (chat summary: "the shared space is what intelligence encounters (mathematics), not the corpus")
+  Why it was unstated: stated as a correction of scope, not as a philosophical commitment
+  Type: epistemic
+  Related decisions: ASSUMPTION-2153; OPEN-306
+  Testability: testable in literature (queued): philosophy-of-mathematics pluralism; ethnomathematics; MacIntyre on tradition-constituted rationality applied to mathematics
+  Risk if wrong: High: if mathematics is not neutral, a "shared space" built on it privileges the traditions whose metaphysics treats mathematics as discovered.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1257
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md and review/lit_pipeline.lock read directly). SECOND-HAND for 11-19 walk content
+    Current status: UNTESTED
+
+PRESUMPTION-1258:
+  Date surfaced: 2026-11-20
+  Statement: [inferred] Chat is presumed to be a reliable reporter of what the uningested half of its own conversation contained. The 11-19 second half reaches the wiki only as the walk partner's recap of itself, scraped; the verbatim T001-T070 file that could check it sits in Chat outputs, not the vault. Distinct from PRESUMPTION-1253 (cut-off summary as record): here the recap is by a participant about its own turns.
+  Evidence it was operative: 2026-11-20 chat summary ("Per Chat, the missing half covered: ..."); ASSUMPTION-2155; this pass registers 2153-2157 from that recap (ASSUMPTION-2158)
+  Why it was unstated: the recap arrived as content; no consumer asked who authored it
+  Type: structural
+  Related decisions: PRESUMPTION-1253; ASSUMPTION-2155; ASSUMPTION-2158
+  Testability: in-house evidence carried by ASSUMPTION-2155 (compare recap with T001-T070 once ingested; not queued separately)
+  Risk if wrong: Medium: items registered from a self-recap may be reframed or smoothed; downstream 15a/15b would then test the recap, not what was said.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1258
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md and review/lit_pipeline.lock read directly). SECOND-HAND for 11-19 walk content
+    Current status: UNTESTED
+
+PRESUMPTION-1259:
+  Date surfaced: 2026-11-20
+  Statement: [inferred] A "dated, observational spreadsheet" presumes that dating entries and recording only observations makes the surfaces map neutral. Which surfaces get observed, and under what headings, is still a theory-laden choice; the dating records when, not why.
+  Evidence it was operative: ASSUMPTION-2154
+  Why it was unstated: the spreadsheet is framed as a corrective to an interpretive map; its own selection criteria were not discussed (as far as the recap shows)
+  Type: methodological
+  Related decisions: ASSUMPTION-2154; PRESUMPTION-1257
+  Testability: not queued: framework presumption; becomes checkable once the spreadsheet has column definitions
+  Risk if wrong: Low-Medium: an observational format may lend the map an authority its selection criteria have not earned.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1259
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md and review/lit_pipeline.lock read directly). SECOND-HAND for 11-19 walk content
+    Current status: UNTESTED
+
+*2026-11-20 14b: PRESUMPTION-1257 (epistemic, High), 1258 (structural, Medium), 1259 (methodological, Low-Medium). Checked against 14a 2153-2160 and the registry. Not re-surfaced (already registered; new evidence today): unattended run halted by a permission prompt (PRESUMPTION-942; evening sync left the claude.ai acknowledge click for Tom); copies reading only their own artifacts (PRESUMPTION-1256; morning status ~15 vs scheduler 27); mid-walk summary as record (PRESUMPTION-1253; 11-20 scrape fired before any walk); tool parity between copies (PRESUMPTION-1196; cloud 14ab twelfth no-transcript firing).*

@@ -16415,3 +16415,12 @@ REVISE-545: [2026-11-20] Source item: PRESUMPTION-1255 (DISPOSITION-1150)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1255 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1255_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1255_against.md
+
+REVISE-546: [2026-11-21] Source item: PRESUMPTION-1257 (DISPOSITION-1153)
+  What is at risk: Any design text that offers mathematics as the tradition-neutral shared space for cross-tradition dialogue (the 11-20 "shared space is mathematics" framing, ASSUMPTION-2153); the perspective lattice and convergence detection if formal mathematical standards serve as the arbiter.
+  Recommended action (for Tom): (1) Split "mathematics" into core intuitions (approximate number, basic geometry; widely shared per Izard et al. 2011) and formal practice (linear number line, exact arithmetic, proof standards; tradition-acquired per Dehaene et al. 2008, Pica et al. 2004). (2) Treat shared mathematics as candidate common ground that each tradition affirms on its own terms, not a starting presumption. (3) In-house: check the tradition wikis for how each treats number, proof and certainty.
+  Urgency: Medium
+  Related: MONITOR-727; SYSTEMIC-RISK 2026-11-21; PREMISE-004; PREMISE-042; PREMISE-058; REVISE-539..545 (umbrella-term pattern).
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1257 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1257_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1257_against.md

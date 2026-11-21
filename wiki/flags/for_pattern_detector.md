@@ -982,3 +982,10 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 - **Rohr Agent**: Partial tension. Rohr's Universal Christ is unity already present in all matter. Wright's unity is a historical, covenantal, Messiah-shaped people that one can be cut off from. Flag this as a standing Wright/Rohr disagreement for the master agent to state plainly rather than blend: cosmic unity that is given versus covenantal unity that one is incorporated into.
 - **Levin / Friston**: "Hardening as divine strategy" is a system-level account in which local non-participation serves global integration. It is structurally similar to Levin's multiscale agents, where a part's local goals can diverge while the collective goal is still reached. This is only a structural analogy (Speculative).
 - **C2A2 master / paradigm flags**: **Paradigm-bridge candidate** on the Summa central theme. It gives a precise scriptural definition of the "loving unity" telos: the unity is incorporative, not ethnic, and it does not erase its origin. That definition bears on any computational-telos claim. Suggest a CROSS entry pairing this with Stump (composite unity) and noting the Rohr tension.
+
+
+### 2026-11-21 — PROP-2026-11-20-002 (carroll): 'Four faces of information in natural systems' (Nature Reviews Physics)
+[forwarded by orchestrator; explanatory-bridge / tension signal] [EVALUATED: 2026-11-21 -> FINDING-116]
+- **Wolfram / Kastrup / Hoffman**: the paper treats the ontological face of information as one of four. These three programs each make it fundamental. Contrast candidate for the master wiki.
+- **Friston**: the FEP fuses the statistical and thermodynamic faces the paper asks to keep distinct. A direct challenge for FEP to answer.
+- **Levin**: the taxonomy could sharpen what "information processing" means in bioelectric claims.

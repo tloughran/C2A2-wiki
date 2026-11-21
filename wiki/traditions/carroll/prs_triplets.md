@@ -1019,4 +1019,49 @@ PRS-112:
   Confidence: High
   Evidence: Transcript 0:28:39–0:30:56 and 1:11:18–1:12:02. Quote: "They're separate questions. One is ... how we analyze and talk about human behavior. The other is how we organize the justice system."
 
-*Total PRS triplets: 112*
+PRS-113:
+  Problem: Is inference from small clues (Bell's "method," Holmes's deductions) a repeatable epistemic skill, or a literary trick that only works when the author plants the clues?
+  Resource: Bell's documented clinical cases as told by Fitzharris (the deserter identified by a "D" tattoo; the pipe smoker identified by a burn and lip sore). Bell: recognize a disease "as you would recognize your best friend in a group of men."
+  Solution: Open. Carroll asks it directly ("how literary conceit the method is, how repeatable it is"); Fitzharris answers that Bell could do it but she knows no one today with the full skill. The question about abductive inference is stated, not settled.
+  Date Added: 2026-11-21
+  Source: Mindscape 374 | Lindsey Fitzharris on Forensic Pathology, Reconstructive Surgery, and Sherlock Holmes; PROP-2026-11-20-001
+  Confidence: Speculative
+  Evidence: Transcript 0:24:45-0:28:38 (question at 0:27:04).
+
+PRS-114:
+  Problem: Reductionist clinical practice isolates the presenting symptom and can miss causal information carried at higher levels of description (occupation, habits, dress, testimony).
+  Resource: Bell's holistic diagnostic method; Carroll at 0:33:50 calls it "thinking a little less reductionistically."
+  Solution: A practical case for poetic naturalism's claim that higher-level descriptions are real and useful. The mapping onto Carroll's framework is the proposer's; Carroll does not draw it explicitly.
+  Date Added: 2026-11-21
+  Source: Mindscape 374 | Lindsey Fitzharris on Forensic Pathology, Reconstructive Surgery, and Sherlock Holmes; PROP-2026-11-20-001
+  Confidence: Speculative
+  Evidence: Transcript 0:33:50-0:35:09.
+
+PRS-115:
+  Problem: Medicine repeatedly attaches moral judgment to treatment decisions (pain as necessary, cosmetic surgery as vanity, opioid limits for the dying), often out of step with what patients value.
+  Resource: Carroll's remarks on the "underlying current... of moralizing" (0:56:42) and that "we're not supposed to care about our looks" (1:06:59); Fitzharris on Gillies's view that people "had a right to control their identity."
+  Solution: Carroll implicitly sides with patient-centred values over imposed moral norms, consistent with his stated move away from moral realism (PRS-111). Offered as a remark, not an argument.
+  Date Added: 2026-11-21
+  Source: Mindscape 374 | Lindsey Fitzharris on Forensic Pathology, Reconstructive Surgery, and Sherlock Holmes; PROP-2026-11-20-001
+  Confidence: Speculative
+  Evidence: Transcript 0:56:42-0:57:14; 1:06:59.
+
+PRS-116:
+  Problem: "Information" is used so widely across physics and natural science that it is unclear whether one coherent concept underlies the uses; conflating its senses leads to misinterpretation.
+  Resource: A taxonomy of four technical senses: engineering (Shannon), statistical (inference), thermodynamic (entropy/work), ontological (information as constitutive of reality).
+  Solution: A pluralist stance: disambiguate which face is in use and its scope, rather than seek one monolithic definition.
+  Date Added: 2026-11-21
+  Source: Luppi, Rosas, Mediano, Boyd, Berta, Jensen, Gastpar & Carroll, 'Four faces of information in natural systems', Nature Reviews Physics (2026); PROP-2026-11-20-002
+  Confidence: High (stated in the abstract)
+  Evidence: Abstract: "put[s] forward a pluralistic approach towards information, wherein multiple technical interpretations coexist." Abstract only; body unread. Carroll is last of eight co-authors.
+
+PRS-117:
+  Problem: How can a physicalist still treat information-talk in biology and cognition as real rather than metaphorical?
+  Resource: The "complementarity of distinct, yet equally valid applications of an information lens for natural systems" (abstract).
+  Solution: Treat the faces of information as level- and purpose-relative vocabularies, the poetic-naturalist template. This mapping is the proposer's reading; the abstract does not mention poetic naturalism.
+  Date Added: 2026-11-21
+  Source: Luppi, Rosas, Mediano, Boyd, Berta, Jensen, Gastpar & Carroll, 'Four faces of information in natural systems', Nature Reviews Physics (2026); PROP-2026-11-20-002
+  Confidence: Speculative
+  Evidence: Abstract only; body needs checking.
+
+*Total PRS triplets: 117*

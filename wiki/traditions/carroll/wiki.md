@@ -223,3 +223,9 @@ Ingested 2 triplet(s): PRS-108, PRS-109. See prs_triplets.md. Confidence labels 
 
 ### Update 2026-11-20 — Mindscape Ask Me Anything, Sean Carroll | November 2026 (PROP-2026-11-13-001)
 Ingested 3 triplet(s): PRS-110, PRS-111, PRS-112. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-21 — Mindscape 374 (Fitzharris) and 'Four faces of information' (PROP-2026-11-20-001, -002)
+Ingested 5 triplet(s): PRS-113, PRS-114, PRS-115 (Mindscape 374; all Speculative, guest-heavy episode, Carroll contributes framing and questions) and PRS-116, PRS-117 (Nature Reviews Physics perspective; abstract only, Carroll last of eight co-authors). See prs_triplets.md.
+
+Open questions added: (1) Is abductive inference from small clues a repeatable skill (PRS-113)? (2) Does the four-faces pluralism about information hold up in the paper body, and does it amount to poetic naturalism applied to information (PRS-117, needs body read)?
