@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-198 - Modesty and Humility - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/198, pars/II, q/160, q/161]
-last_qc_at: "2026-11-03T16:17:22"
+last_qc_at: "2026-11-20T08:21:54"
 last_qc_outcome: "pass"
 ---
 

@@ -18,8 +18,8 @@ evidence_strength_summary: "Differentiated-reward-by-contribution read as formed
 mind_first_reframe: "The dowries and aureoles describe a community whose shared end (union with the whole) is reached through irreducibly differentiated contributions, with the highest — the doctor's crown — going to the agent who makes the truth modelable to other minds and so raises the coherence of the whole."
 central_theme_thread: "Individuation is not overcome in glory but crowned: each limited perspective is rewarded as the one it is, and the doctor's crown names the cooperative mechanism — informing one another — by which limited perspectives help each other toward the loving unity that is the telos."
 tags: [synthesis, day/305, theme/crown-for-informing-others]
-last_qc_at: "2026-11-05T10:18:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-20T02:18:18"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 305 — Heavenly Crowns (Contemporary Parallel)
@@ -67,4 +67,4 @@ And the doctor's crown names the mechanism by which limited perspectives help on
 
 ## Where this leaves us
 
-The treatise on the blessed closes; the differentiated crowns confirm that the end of the central theme is the *fulfilment* of individuation, not its erasure, and that informing one another is its crowning act. Tomorrow (Q.97-99) turns to the punishment of the damned and the will of God toward them — the dark counter-image, where the divergence registered on Day 304 will have to be carried through with care. Open thread flagged: the "doctor's crown ↔ C2A2 telos" identification is strong enough to warrant promotion into a master-level note linking the Loughran methodology triplets to the eschatology of teaching.
+The treatise on the blessed closes; the differentiated crowns confirm that the end of the central theme is the *fulfilment* of individuation, not its erasure, and that informing one another is its crowning act. Tomorrow (Q.97-98) turns to the punishment of the damned and the will that remains to them — the dark counter-image, where the divergence registered on Day 304 will have to be carried through with care. Open thread flagged: the "doctor's crown ↔ C2A2 telos" identification is strong enough to warrant promotion into a master-level note linking the Loughran methodology triplets to the eschatology of teaching.

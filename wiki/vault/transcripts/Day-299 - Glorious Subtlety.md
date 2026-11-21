@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-299 - Glorious Subtlety - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/299, pars/suppl, q/83-84]
-last_qc_at: "2026-11-05T08:18:49"
+last_qc_at: "2026-11-20T00:18:16"
 last_qc_outcome: "pass"
 ---
 

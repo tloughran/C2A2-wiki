@@ -11,7 +11,7 @@ mind_first_reframe: "Under mind-monism, obedience is bounded delegation in a hie
 central_theme_thread: "Each agent at each scale of perspective contributes what only it can see to the cooperative computation of loving unity; obedience-within-commission lets the multi-scale inference proceed honestly, while indiscreet obedience and pure autonomy both refuse the embedded cooperative structure within which salvation in fear and trembling is patiently worked out."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling; PRS-07 substrate-independent FEP)"
-  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; PRS-03 team/game distinction; PRS-07 division-union as creative synthesis)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; PRS-03 cross-tradition dialogue and hemispheric modes, (Implicit) Medium — gloss corrected 2026-11-20 from 'team/game distinction', which is not the record's label and not the use the Bridges make of it; PRS-07 division-union as creative synthesis)"
   - "traditions/stump/prs_triplets.md (PRS-06 MacIntyre criterion)"
   - "traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry)"
   - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents)"
@@ -20,7 +20,7 @@ karpathy_wiki_sources:
   - "NOTE 2026-08-11 (QC): a CROSS-019 citation was removed here. It was glossed as 'right-hemisphere mode in cross-tradition engagement'; read at the wiki body, CROSS-019 is Stump x Levin — whether Thomistic final causality grounds Levin's morphogenetic teleology. The right-hemisphere/cross-tradition-engagement claim is McGilchrist PRS-03, already cited above, so nothing in the argument depended on the wrong id."
 evidence_strength_summary: "Hierarchical Bayesian inference (Friston) and split-brain hemispheric data (McGilchrist) are empirical. The bounded-delegation account of obedience as preserving lower-level inference under higher-level constraint is mathematically formal. The reading of disobedience-as-contempt vs. legitimate refusal is interpretive but converges with bounded-rationality results on principal-agent problems."
 tags: [synthesis, day/170, theme/bounded-delegation, theme/legitimate-authority, q/104, q/105]
-last_qc_at: "2026-11-11T14:18:14"
+last_qc_at: "2026-11-19T22:18:53"
 last_qc_outcome: "rewrote"
 ---
 
