@@ -86,3 +86,18 @@ Kastrup's idealism is *dissociative* — the many alters are real boundaries wit
 **Open question the wiki cannot yet answer:** Does reunion require the dissociative boundary to dissolve, or only to be recognized as transparent?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-11-01_rohr_love-is-who-we-are-separateness-as-sin]]
+
+---
+
+## Person as instance of the One Life
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-22_rohr_our-lifes-call-instance-of-universal-pattern.md` (0 backlinks).
+
+**Why it sits here:** Rohr: "You are an instance of a universal and eternal pattern ... Life is living itself in you." Kastrup: persons are dissociated alters of one mind.
+
+**Synthesis claim.** Both affirm one underlying life or mind and real individual persons; Rohr individuates by vocational niche, Kastrup by dissociation.
+
+**Open question the wiki cannot yet answer:** Is niche-individuation (a role) enough to give each person a private inner life, or does it need dissociation (a boundary)?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-22_rohr_our-lifes-call-instance-of-universal-pattern]]

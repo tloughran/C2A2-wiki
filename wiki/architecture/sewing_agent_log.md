@@ -1979,3 +1979,62 @@ Before writing: each page asserted to have no Agentic Calls heading; every bridg
 The full weekly run for 2026-11-15 already finished (entry above, cloud session ~09:35 UTC), after the bootstrap audit wrote today's CSV row. This firing did no census, wrote no CSV row, stamped no pages, and wrote no bridge notes, so the weekly cadence is not doubled. Third sewing-related fire today again (bootstrap audit, full cloud run, this local one), same pattern as 2026-11-08. The `c2a2-sewing-agent-weekly` schedule appears registered both as a cloud routine and as a local Cowork scheduled task; recommend disabling the local copy (per the three-tier rule, disable rather than delete). Also: Desktop Commander was declined in this unattended local run (no approver), so this check used the Cowork sandbox shell instead.
 
 *Logged by Sewing Agent on 2026-11-15.*
+
+---
+
+## Bootstrap audit: 2026-11-22 (scheduled, census only)
+
+Census 6,140 pages / 5,084 orphan / 856 sparse / 200 connected; 384 unresolved link occurrences (unchanged). Wrote `metrics/bootstrap_backlink_census_2026-11-22.md`, appended CSV row, wrote `sewing_agent_bootstrap_2026-11-22.md`. Phases 3–4 not executed (unattended policy). No vault pages stamped, no bridge notes or stubs written, nothing committed.
+
+*Logged by Sewing Agent on 2026-11-22.*
+
+---
+
+## Run: 2026-11-22 (Sunday, scheduled, cloud session ~09:34 UTC)
+
+**Resolver:** same as recent runs (stem, case-insensitive, self-links excluded, node_modules skipped).
+
+### Connectivity snapshot
+
+Pre-run (file count): orphan 5,086 / sparse 876 / connected 180 / total 6,142. Post-run: 5,065 / 892 / 185. **No new CSV row written:** `connectivity_log.csv` already holds a `2026-11-22` row (5,084 / 856 / 200 / 6,140) from the bootstrap audit earlier today. (The two jobs count sparse/connected slightly differently.)
+
+### Pages processed (backlinks before to after)
+
+| Page | Before | After | Calls to |
+|---|---|---|---|
+| `inbox/proposals/pending/2026-11-22_rohr_art-leads-us-to-the-depths-second-gaze` | 0 | 1 | Rohr, McGilchrist, Stump, Levin, Loughran |
+| `inbox/proposals/pending/2026-11-22_rohr_our-lifes-call-instance-of-universal-pattern` | 0 | 2 | Rohr, Kastrup, Hoffman, Stump, Loughran, Levin |
+| `inbox/proposals/pending/2026-11-22_wright_ask-ntw-nov22-doubt-eternal-life-be-perfect` | 0 | 1 | Wright, Stump, Loughran, Wolfram |
+| `inbox/proposals/pending/2026-11-22_wright_glory-romans-5-becoming-fully-human` | 0 | 4 | Wright, Rohr, Stump, Loughran, Levin |
+| `inbox/2026-11-20_carroll_four-faces-of-information-natrevphys` | 0 | 1 | Carroll, Friston, Wolfram, Kastrup, Hoffman, Levin |
+| `inbox/proposals/pending/2026-11-21_wolfram_roman-forum-yampolskiy-ai-uncontrollable-ruliad` | 0 | 2 | Wolfram, Loughran, Friston, Kastrup, Stump |
+| `inbox/2026-11-18_kastrup_everything-determined-gives-life-meaning` | 0 | 3 | Kastrup, Wolfram, Stump, Fredrickson |
+| `inbox/2026-11-18_mcgilchrist_vrucht-bare-aarde-beauty-right-hemisphere` | 0 | 1 | McGilchrist, Loughran, Fredrickson, Stump |
+| `inbox/2026-11-17_levin_scale-free-niche-construction-osf` | 0 | 2 | Levin, Friston, Hawkins, Loughran |
+| `inbox/2026-11-12_fredrickson_no-peace-for-the-wicked-intrapersonal-harmony` | 0 | 1 | Fredrickson, Stump, Loughran, Friston |
+
+Inbox cards with `proposals/approved/` twins rise with them (stem counting). The Wright Ask-NTW card got its one backlink from a companion line appended under the Glory card's calls.
+
+### Agentic calls injected: 47
+
+Stump 8, Loughran 8, Levin 5, Kastrup 4, Wolfram 4, Friston 4, Rohr 3, Fredrickson 3, McGilchrist 2, Hoffman 2, Wright 2, Carroll 1, Hawkins 1. **Arkani-Hamed: none** (no page scored above 0.4; the Carroll four-faces card itself says "no direct connection"). None duplicated; no page had a prior Agentic Calls section.
+
+### Bridge notes written (10 sections appended to 10 existing files; none created)
+
+`mcgilchrist_rohr`, `kastrup_rohr`, `wright_rohr`, `carroll_friston`, `loughran_wolfram`, `kastrup_wolfram`, `kastrup_stump`, `loughran_mcgilchrist`, `friston_levin`, `fredrickson_stump`. Each carries a `**Wikilinks (sewing, 2026-11-22):**` line. The Wright Ask-NTW card had only one thinker above 0.5, so no bridge.
+
+### Worth Tom's attention
+
+1. **Evidence caveats ride along in the calls:** Wright Ask-NTW is episode-description only (Matt 5:48 *teleios* answer unknown; transcript needed); Wright Glory is a news report; Carroll four-faces is abstract-only, Carroll last of eight authors; Wolfram/Yampolskiy is a secondary Substack account (hear the 1:41:02 "God outside the ruliad" segment before ingesting); Levin niche paper is an OSF preprint; Rohr "Art" is republished 2024 *Oneing* material; Rohr "Life's Call" book title is truncated.
+2. **Strongest pairings this week:** Kastrup's determined-but-unpredictable free will is Wolfram's irreducibility from the opposite metaphysics; Wright's glory-as-vocation and Rohr's person-as-instance both say final unity keeps distinct vocational persons (candidate CROSS entry for the Summa 2026 telos FLAG).
+3. **Backlog not processed (cap of 10):** four Hawkins 2026-11-17 cards (latency mismatches, Q4 roadmap, scale invariance, variations in learned object models), Levin LoRA-NCA (11-16), McGilchrist Ralston (11-18), Carroll Mindscape 374 (11-20), Wright Fujimura (11-15). All 0 backlinks. Next run should start there.
+4. **Possible duplicates persist:** Wolfram `..._crypto-bugs-ai-math` vs `..._proofs-crypto-bugs` (still both 0 backlinks); Hawkins `2026-11-17_hawkins_q4-research-roadmap` vs older `2026-10-23_hawkins_q4-roadmap-q3-review` may overlap.
+5. **Duplicate census job persists:** bootstrap audit wrote today's CSV row first. Still recommend disabling `c2a2-sewing-agent--c2a2-wiki-bootstrap-audit` (and the local copy of the weekly schedule, if it fires again).
+6. "Wright" scored against vault `wright` (N.T. Wright), as before.
+7. Rule 6 token budget exceeded again (full run needs more than 4k tokens).
+
+### Verification (fail-loud)
+
+Before writing: each page asserted to exist with no Agentic Calls heading; every bridge file asserted present; every wikilink in new calls and bridges asserted to resolve to an existing stem. After writing: backlink map rebuilt (table above); all 10 pages now have at least 1 backlink. Content only appended; nothing deleted; nothing committed.
+
+*Logged by Sewing Agent on 2026-11-22.*

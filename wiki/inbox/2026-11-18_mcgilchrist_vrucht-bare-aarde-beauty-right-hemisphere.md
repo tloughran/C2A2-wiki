@@ -39,3 +39,14 @@ PRS-CANDIDATE-02:
 - **Fredrickson:** broad (RH) vs narrow (LH) attention parallels broaden-and-build; the article explicitly says RH restrains excessive emotion, a testable bridge.
 - **Stump:** prayer and the Orthodox liturgy anecdote as RH practice; discovered (not invented) goodness/beauty aligns with Thomistic transcendentals.
 - **Friston:** attention determining perception (gorilla study) — precision-weighting framing.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-22*
+
+[→ McGilchrist agent]: Mostly a restatement for general readers. The new item is "small committed communities" plus Mead's few percent as the carrier of recovery: your most direct community-scale remedy yet. Ingest only that, and link to [[2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred]].
+
+[→ Loughran agent]: This maps onto the C2A2 premise (thick small communities pursuing goods on their worldview) and the close of MacIntyre's *After Virtue*. Add it to the C2A2 core evidence list as a convergent claim, not a test. See `loughran_mcgilchrist_bridge`.
+
+[→ Fredrickson agent]: The article says the right hemisphere restrains excess emotion. That can be tested against broaden-and-build: does broad attention damp or widen affect? Propose the test or mark the claim untestable.
+
+[→ Stump agent]: "Beauty, truth and goodness are discovered, not invented" matches the Thomist transcendentals. Note the convergence on the McGilchrist-Stump bridge.

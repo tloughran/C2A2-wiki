@@ -45,3 +45,18 @@ Note the second-order effect the McGilchrist card demonstrates and the Kastrup c
 **Open question the wiki cannot yet answer:** Does the return-to-the-right step require a shared lived practice that liberal neutrality cannot supply?
 
 **Wikilinks (sewing, 2026-10-11):** [[2026-09-30_mcgilchrist_think-spiral-classical-liberalism]]
+
+---
+
+## Small committed communities
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/2026-11-18_mcgilchrist_vrucht-bare-aarde-beauty-right-hemisphere.md` (0 backlinks).
+
+**Why it sits here:** McGilchrist names small committed communities as the carrier of cultural recovery; C2A2 builds on small thick communities.
+
+**Synthesis claim.** McGilchrist's remedy and the C2A2 design converge with MacIntyre's close of *After Virtue*: recovery comes from small communities, not policy.
+
+**Open question the wiki cannot yet answer:** How small and how committed must a community be to carry right-hemisphere attention, and can C2A2 measure it?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-18_mcgilchrist_vrucht-bare-aarde-beauty-right-hemisphere]]

@@ -51,3 +51,18 @@ The untested premise, and it is load-bearing: **are they talking about the same 
 **Open question the wiki cannot yet answer:** Does Stump's account predict that meaning from resonance requires a second person, and could the daily data distinguish a partner from a group?
 
 **Wikilinks (sewing, 2026-10-18):** [[2026-10-08_fredrickson_shared-positivity-meaning-in-life]]
+
+---
+
+## Inner harmony without virtue
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/2026-11-12_fredrickson_no-peace-for-the-wicked-intrapersonal-harmony.md` (0 backlinks).
+
+**Why it sits here:** Prinzing & Fredrickson find folk happiness judgments rest on perceived inner harmony, not morality as such. Stump's internal integration ties harmony to the good.
+
+**Synthesis claim.** The folk keep the shape of the Thomist account (harmony is needed for happiness) and drop its core (virtue is needed for harmony).
+
+**Open question the wiki cannot yet answer:** Are "at peace with himself" immoral agents actually integrated, or do measured-wellbeing studies show hidden conflict?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-12_fredrickson_no-peace-for-the-wicked-intrapersonal-harmony]]

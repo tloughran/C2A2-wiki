@@ -22,3 +22,18 @@ Wolfram's new observer criterion individuates without appealing to substrate and
 **Why the split matters.** Wolfram says objectivity requires plurality: one observer alone would have no notion of an objective world. Kastrup's mind-at-large is one, and dissociation is what produces the many. So the two accounts run in opposite directions through the same relation between unity and multiplicity — Wolfram derives shared world from many, Kastrup derives many from one. Whether these can both be true depends on whether "objective world" and "experienced world" are the same object, which neither program states.
 
 **Open question the wiki cannot yet answer.** Is rulial alignment a candidate *mechanism* for dissociation — could two alters be understood as two locations in rulial space, with the dissociative barrier just being distance? That would be a genuine import, and it would make Kastrup's boundary quantitative for the first time. It would also cost him the intrinsic reading. The wiki has no material on whether the analytic-idealist framework can survive an extrinsic account of the alter.
+
+---
+
+## Determined but unpredictable
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/2026-11-18_kastrup_everything-determined-gives-life-meaning.md` (0 backlinks).
+
+**Why it sits here:** Kastrup: choices are determined but unpredictable without a universe-sized computer. That is Wolfram's computational irreducibility.
+
+**Synthesis claim.** Kastrup and Wolfram share a free-will account (determined, irreducible, felt as free) from opposite metaphysics: mind-first and computation-first.
+
+**Open question the wiki cannot yet answer:** Does the shared account depend on the metaphysics at all, or is irreducibility neutral between idealism and computationalism?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-18_kastrup_everything-determined-gives-life-meaning]]

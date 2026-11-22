@@ -214,3 +214,18 @@ The Thought Economics interview restates bioelectric "cognitive glue" in Levin's
 **Open question the wiki cannot yet answer:** Can the critical L/λ be derived from free-energy terms, or is the correspondence only analogical?
 
 **Wikilinks (sewing, 2026-11-15):** [[2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv]]
+
+---
+
+## Scale-free niche construction
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/2026-11-17_levin_scale-free-niche-construction-osf.md` (0 backlinks).
+
+**Why it sits here:** Pio-Lopez, McMillen, Pezzulo and Levin treat the niche as a scratchpad agents write and read, with bioelectric "active stigmergy" as evidence.
+
+**Synthesis claim.** Environment-stored priors make the agent-niche loop, not the agent, the unit of inference at every scale.
+
+**Open question the wiki cannot yet answer:** Where does the Markov blanket sit when an agent's priors are stored in traces other agents also read?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-17_levin_scale-free-niche-construction-osf]]

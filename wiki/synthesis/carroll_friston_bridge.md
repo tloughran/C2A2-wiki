@@ -84,3 +84,18 @@ So the honest version of the bridge is uncomfortable for the Friston side: Carro
 **Open question the wiki cannot yet answer:** Which Camerer game results can active inference predict in advance, and which does it only redescribe?
 
 **Wikilinks (sewing, 2026-11-08):** [[2026-11-06_carroll_mindscape-373-camerer-neuroeconomics]]
+
+---
+
+## Four faces of information and the FEP
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/2026-11-20_carroll_four-faces-of-information-natrevphys.md` (0 backlinks).
+
+**Why it sits here:** Luppi et al. (with Carroll) ask that statistical and thermodynamic information be kept apart; the free energy principle identifies them.
+
+**Synthesis claim.** The FEP's central move is exactly the one a pluralist taxonomy of information warns against, so the FEP owes an argument for the identification.
+
+**Open question the wiki cannot yet answer:** Is the statistical-thermodynamic identity in the FEP a derivation, a modelling choice, or a stipulation?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-20_carroll_four-faces-of-information-natrevphys]]

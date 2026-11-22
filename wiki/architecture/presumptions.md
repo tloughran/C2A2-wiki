@@ -27259,15 +27259,15 @@ PRESUMPTION-1254:
   Testability: testable in literature (queued)
   Risk if wrong: Medium: a metric built on observer markers could score groups high that members did not experience as coherent, or miss ones they did; the umbrella-term pattern (15c SYSTEMIC-RISK, sixth instance 11-19) recurs.
   Confidence: medium
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1149 -> REVISE-544 (cloud-lit 2026-11-20)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c -> 14b]
     Original item: PRESUMPTION-1254
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 PRESUMPTION-1255:
   Date surfaced: 2026-11-19
@@ -27279,15 +27279,15 @@ PRESUMPTION-1255:
   Testability: testable in literature (queued): LLM sycophancy, whether instructed or trained "candor" reduces it vs. structural checks
   Risk if wrong: Medium: if correction is dispositional only, sycophancy returns whenever a prompt or model changes; if structural, the Aquinas framing is description, not mechanism.
   Confidence: medium
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate); DISPOSITION-1150 -> REVISE-545 (cloud-lit 2026-11-20)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c -> 14b]
     Original item: PRESUMPTION-1255
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 PRESUMPTION-1256:
   Date surfaced: 2026-11-19
@@ -27321,15 +27321,15 @@ PRESUMPTION-1257:
   Testability: testable in literature (queued): philosophy-of-mathematics pluralism; ethnomathematics; MacIntyre on tradition-constituted rationality applied to mathematics
   Risk if wrong: High: if mathematics is not neutral, a "shared space" built on it privileges the traditions whose metaphysics treats mathematics as discovered.
   Confidence: medium
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b CHALLENGED (Moderate); DISPOSITION-1153 -> REVISE-546 Medium, AWAITING TOM (cloud-lit 2026-11-21)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c -> 14b]
     Original item: PRESUMPTION-1257
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md and review/lit_pipeline.lock read directly). SECOND-HAND for 11-19 walk content
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 PRESUMPTION-1258:
   Date surfaced: 2026-11-20
@@ -27372,3 +27372,85 @@ PRESUMPTION-1259:
     Current status: UNTESTED
 
 *2026-11-20 14b: PRESUMPTION-1257 (epistemic, High), 1258 (structural, Medium), 1259 (methodological, Low-Medium). Checked against 14a 2153-2160 and the registry. Not re-surfaced (already registered; new evidence today): unattended run halted by a permission prompt (PRESUMPTION-942; evening sync left the claude.ai acknowledge click for Tom); copies reading only their own artifacts (PRESUMPTION-1256; morning status ~15 vs scheduler 27); mid-walk summary as record (PRESUMPTION-1253; 11-20 scrape fired before any walk); tool parity between copies (PRESUMPTION-1196; cloud 14ab twelfth no-transcript firing).*
+
+PRESUMPTION-1260:
+  Date surfaced: 2026-11-21
+  Statement: [inferred] The film presumes that consent plus a disclosure line suffices to let a cloned "pseudo-Tom" voice speak first-person lines in later films. Is that warranted? Viewers may hear the clone as Tom's testimony; consent licenses the voice, but it does not settle whether Tom authored or endorsed each sentence the clone speaks. In a project whose honesty layer separates what a person said from what was generated, a cloned voice joins the two.
+  Evidence it was operative: ASSUMPTION-2161, -2162 ("synthesized from his own recordings, with consent"; clone reference for "later films")
+  Why it was unstated: the disclosure line was framed as the whole ethical answer; authorship of line content was not discussed (as far as the recap shows)
+  Type: normative
+  Related decisions: ASSUMPTION-2161; ASSUMPTION-2162; 14_honesty_layer
+  Testability: testable via literature (perceived authenticity and attribution with disclosed synthetic voices)
+  Risk if wrong: Medium-High: audiences may attribute to Tom claims he never voiced; this is the provenance failure the honesty layer exists to prevent.
+  Confidence: high
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1260
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+PRESUMPTION-1261:
+  Date surfaced: 2026-11-21
+  Statement: [inferred] Licence status is presumed to be the gate for plate selection (CC BY in; NC-ND and SA out; public domain in), with ethics entering only when someone happens to raise it. The HeLa case shows that a legal licence and ethical permission can diverge, and the licence filter passed it cleanly.
+  Evidence it was operative: ASSUMPTION-2163 (all licence calls approved as a set; the consent question arose afterwards and is unanswered)
+  Why it was unstated: licence checking is the routine, codified step; ethical provenance has no equivalent step
+  Type: normative
+  Related decisions: ASSUMPTION-2163; ASSUMPTION-2161
+  Testability: not queued separately: literature lane covered by ASSUMPTION-2163; becomes checkable if a plate checklist gains an ethics column
+  Risk if wrong: Medium: other plates (human subjects, indigenous data, sacred images) could pass a licence check and still be unfit.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1261
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+PRESUMPTION-1262:
+  Date surfaced: 2026-11-21
+  Statement: [inferred] Under deadline, Claude's recommendations are presumed to stand in for Tom's judgment on aesthetic and ethical calls for a film carrying Tom's name and voice ("make and take recommendations"; "yes to all recommendations"), with review deferred. Output is produced faster than it is reviewed: v0.1 exists, nobody has listened to it, and two re-voiced renders are reported but unverified.
+  Evidence it was operative: ASSUMPTION-2163, -2164; chat summary ("not verified in-thread")
+  Why it was unstated: the deadline framed delegation as a working convenience rather than a design choice
+  Type: methodological
+  Related decisions: ASSUMPTION-2164; PRESUMPTION-1260; PRESUMPTION-1261
+  Testability: testable via literature (automation bias and blanket approval of AI recommendations)
+  Risk if wrong: Medium: delegated calls may set defaults (voice, plates, captions) that later films inherit without review.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1262
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+PRESUMPTION-1263:
+  Date surfaced: 2026-11-21
+  Statement: [inferred] A one-sided record (Tom's voice only, machine-transcribed, uncorrected) is presumed usable as the record of a walk whose substance was a dialogue. Claude's side cannot be found. C2A2 studies how perspectives interact, so a monologue record keeps the positions but loses the exchange. Distinct from PRESUMPTION-1253 (cut-off summary) and 1258 (self-recap): here one party's turns are missing entirely.
+  Evidence it was operative: cowork_to_chat local addendum ("his side only"; walk chat with Claude's side not found); film plan uses the recording for chat video 1
+  Why it was unstated: the recording arrived as the walk, and the missing half surfaced only as an aside
+  Type: epistemic
+  Related decisions: PRESUMPTION-1253; PRESUMPTION-1258; ASSUMPTION-2165; OPEN-307
+  Testability: in-house (not queued): resolves if the walk chat is found and the two sides can be compared
+  Risk if wrong: Medium: anything later extracted from the recording alone will over-represent Tom's framing and miss Claude's challenges or errors.
+  Confidence: medium
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1263
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+*2026-11-21 14b: PRESUMPTION-1260 (normative, Medium-High), 1261 (normative, Medium), 1262 (methodological, Medium), 1263 (epistemic, Medium). Checked against 14a 2161-2166 and the registry (no prior entries on cloned/synthesized voice, HeLa or blanket approval). Not re-surfaced (already registered; new evidence today): permission prompt halts unattended run (PRESUMPTION-942; evening sync blocked again); copies reading only their own artifacts (PRESUMPTION-1256; morning status 23 vs scheduler 27); tool parity between copies (PRESUMPTION-1196; cloud 14ab thirteenth no-transcript firing). Scaling: none new today.*

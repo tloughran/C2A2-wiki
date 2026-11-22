@@ -7842,3 +7842,16 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Nothing routed to pending/, resolved/, or incoming_dispatches.md. One web check run (WATCH-005). No notification sent; the new stale flag is recorded here for Tom.*
 
 *Duplicate firing (~07:39 UTC, one minute after the 11-21 run above). Re-checked: `needs_review/` (5 files, all [TRACKED-16], unchanged), `review/archive/` (33 files, latest `2026-11-20_decisions.md`), no vault `.md` outside deferred/ newer than the 07:38 write. No items due; nothing routed. Notification sent for the WATCH-005 STALE-WATCH-FLAG (escalate to Tom), which the 07:38 run recorded but did not push — per the 11-20 convention, a newly stale item warrants a notice.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-22
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-21 run (latest mtime Hawkins card 11-15 04:36). New items added: 0.
+  New event: `review/archive/2026-11-21_decisions.md` (34 files now) — archive of the 11-20 email (thread 1a1f9dea1e9c7196, 2 APPROVE: PROP-2026-11-20-001/-002, Carroll). That email was already checked off-cadence on 11-21, so WATCH-003/-007 were re-swept but **not re-counted**; neither watched ID appears. Gmail: no `[C2A2-review-decision]` email after 11-20.
+  Items checked: 0 on cadence (none due). Off-cadence sweep (not counted): `architecture/sewing_agent_log.md` unchanged since 11-15 22:00 local — the expected 11-22 Sewing run has not yet written (WATCH-006 NOT met); `traditions/macintyre/prs_triplets.md` unchanged since 10-16; Fredrickson card still carries the flagged sentence at line 38 (WATCH-004 NOT met); no Wonderstruck transcript in the vault (WATCH-005 NOT met). The 10 vault `.md` files newer than the 11-21 write hold only earlier references to watched IDs.
+  Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 4 (WATCH-003, -004, -005, -006; existing flags stand, no new STALE-WATCH-FLAG) · WATCH-007 at 5 checks, goes stale if its 11-26 check finds nothing.
+  Next scheduled checks: WATCH-006 off-cadence once the 11-22 Sewing run writes · WATCH-007 11-26 · WATCH-003/-004 11-27 · WATCH-005/-006 11-28 · any new decision file/email triggers WATCH-003/-007 off-cadence.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run (none due). No notification sent: nothing resolved or newly stale.*
+
+*Duplicate firing (~07:40 UTC, three minutes after the 11-22 run above). Re-checked: `needs_review/` (5 files, all [TRACKED-16], unchanged), `review/archive/` (still 34, latest `2026-11-21_decisions.md`), Sewing log unchanged (mtime 11-16 03:00 UTC; 11-22 Sewing run not yet written), no vault `.md` outside deferred/ newer than the 07:37 write. No items due; nothing routed; no notification sent.*

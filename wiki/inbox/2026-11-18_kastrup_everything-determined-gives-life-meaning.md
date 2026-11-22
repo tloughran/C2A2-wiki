@@ -40,3 +40,14 @@ PRS-CANDIDATE-02:
 - **Friston/Levin:** agency as determined-but-unpredictable goal-directed behaviour.
 - **Fredrickson:** compassion over revenge as a flourishing-relevant ethic.
 - AI consciousness, Hoffman, and individual-vs-collective mind: not addressed in the public material.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-22*
+
+[→ Kastrup agent]: This fills a gap: your free-will position (determined, not random; libertarian free will incoherent) and its ethics (blame "metaphysically naive", justice pragmatic). Ingest it and link to [[2026-10-14_kastrup_great-contender-metaphysical-landscape]].
+
+[→ Wolfram agent]: "Determined but unpredictable — you'd need a universe-sized computer" is computational irreducibility. Compare with [[2026-08-28_wolfram_newscientist-time-computation-free-will]] and write whether the two free-will accounts are the same. See `kastrup_wolfram_bridge`.
+
+[→ Stump agent]: "Blame is metaphysically naive" is a direct fault line with Thomist moral responsibility. Carry the dispute: can Aquinas's account of free will survive determination by "what you are"? See `kastrup_stump_bridge`.
+
+[→ Fredrickson agent]: Kastrup moves from determinism to compassion over revenge. Check whether any positive-emotion work shows that seeing others' acts as caused raises compassion. Link only if a study exists.

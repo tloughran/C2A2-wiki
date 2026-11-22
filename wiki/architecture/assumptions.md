@@ -40531,15 +40531,15 @@ ASSUMPTION-2147:
   Type: conceptual
   Related decisions: ASSUMPTION-2141; PRESUMPTION-1252; REVISE-543 (umbrella-term "resonance"); Fredrickson positivity resonance; OPEN-305
   Testability: testable in literature (queued)
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1147 -> MONITOR-725 (cloud-lit 2026-11-20)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c -> 14a]
     Original item: ASSUMPTION-2147
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 ASSUMPTION-2148:
   Date identified: 2026-11-19
@@ -40565,15 +40565,15 @@ ASSUMPTION-2149:
   Type: empirical
   Related decisions: ASSUMPTION-2147
   Testability: testable in literature (queued): near-peer / bilingual peer instruction
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Weak-to-Moderate); DISPOSITION-1148 -> MONITOR-726 (cloud-lit 2026-11-20)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c -> 14a]
     Original item: ASSUMPTION-2149
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-19 (final assistant message per session via session_info: morning walk 22680fcf, evening sync 124e9cc5, scheduler health 14863b14, wiki daily run 8be97c1c, Stump/Fredrickson ba68e834, morning status 1cf7dd7b, lit pipeline a00b9a06, chat scrape 5fd73b98; plus daily_sync/chat_to_cowork/2026-11-19_chat_summary.md and review/lit_pipeline.lock read directly)
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 ASSUMPTION-2150:
   Date identified: 2026-11-19
@@ -40635,15 +40635,15 @@ ASSUMPTION-2153:
   Type: epistemic
   Related decisions: PRESUMPTION-1257; OPEN-306
   Testability: testable via literature (queued): convergence of independently trained models/intelligences on shared mathematical structure (e.g. Platonic Representation Hypothesis) vs. corpus-driven convergence
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1151 -> MONITOR-727 Medium (cloud-lit 2026-11-21)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c -> 14a]
     Original item: ASSUMPTION-2153
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND: 11-19 walk content comes from Chat's recap as scraped, not from the T001-T070 transcript (not in vault)
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 ASSUMPTION-2154:
   Date identified: 2026-11-20
@@ -40703,15 +40703,15 @@ ASSUMPTION-2157:
   Type: empirical
   Related decisions: ASSUMPTION-2147; PRESUMPTION-1255; OPEN-305
   Testability: testable via literature (queued): does Bloom's account (conformity enforcers vs. diversity generators in group minds) supply a structural damping mechanism for resonance?
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1152 -> MONITOR-728 Low (cloud-lit 2026-11-21)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c -> 14a]
     Original item: ASSUMPTION-2157
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND: 11-19 walk content comes from Chat's recap as scraped, not from the T001-T070 transcript (not in vault)
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 ASSUMPTION-2158:
   Date identified: 2026-11-20
@@ -40737,15 +40737,15 @@ ASSUMPTION-2159:
   Type: architectural
   Related decisions: PRESUMPTION-942; OPEN-299
   Testability: testable in-house (observe 11-21 evening sync); not queued
-  Status: UNTESTED
+  Status: SUPPORTED — in-house observation 2026-11-21: evening sync e559612c stopped at the same "I acknowledge" notice, as predicted
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 14a]
     Original item: ASSUMPTION-2159
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-20 (final assistant message per session via session_info: morning walk 7843a584, evening sync 2ca0be1f, scheduler health 9229a195, morning status a594b2aa; plus daily_sync/chat_to_cowork/2026-11-20_chat_summary.md, changelog/2026-11-21_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND: 11-19 walk content comes from Chat's recap as scraped, not from the T001-T070 transcript (not in vault)
-    Current status: UNTESTED
+    Current status: SUPPORTED
 
 ASSUMPTION-2160:
   Date identified: 2026-11-20
@@ -40765,3 +40765,107 @@ ASSUMPTION-2160:
     Current status: UNTESTED
 
 *2026-11-20 14a (local pass): ASSUMPTION-2153-2160 (8). Queued: 2153, 2157 (literature); 2155, 2156 [IN-HOUSE]. 2153-2157 are second-hand (Chat recap of 11-19 walk second half).*
+
+ASSUMPTION-2161:
+  Date identified: 2026-11-21
+  Statement: [stated, second-hand] Film provenance rule: "every edit stays disclosed and credited", covering on-screen CC BY credits (CEERS: "credit must appear on screen") and a synthesized-voice disclosure line, proposed as "synthesized from his own recordings, with consent" (not yet confirmed).
+  Context: Illustrated Chat Walk film thread (2026-11-20 afternoon), via 2026-11-21 chat summary
+  Type: methodological
+  Related decisions: PRESUMPTION-1260; 14_honesty_layer
+  Testability: testable via literature (effects of AI/synthetic-media disclosure labels on audience trust and attribution)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2161
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+ASSUMPTION-2162:
+  Date identified: 2026-11-21
+  Statement: [stated, second-hand] One recording of Tom reading his film-1 lines will serve "both directly and as the reference for a cloned 'pseudo-Tom' voice for later films"; local engine Chatterbox (MIT; alternatives XTTS v2, Qwen3-TTS); "Everything stays on the Mac." Takes are to be checked "by transcription"; the clone is tested on 3 film-2 lines, then "wait for Tom's verdict". "Narrator voice stays the same across all films"; af_sarah (Kokoro) is Claude's voice.
+  Context: film thread, via 2026-11-21 chat summary
+  Type: architectural
+  Related decisions: PRESUMPTION-1260
+  Testability: testable empirically in-house (3-line clone test; Tom's verdict)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2162
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+ASSUMPTION-2163:
+  Date identified: 2026-11-21
+  Statement: [stated, second-hand] Licence calls (Tom: "yes to all recommendations"): CC BY-NC-ND image rejected; Auger CC BY-SA "ruled out"; LHAASO/Auger become "drawn schematics labelled as such"; cell plate = NIH public-domain HeLa image. Claude then raised: should the film acknowledge the Henrietta Lacks consent history or use a different cell? (no answer seen).
+  Context: film thread, via 2026-11-21 chat summary
+  Type: methodological
+  Related decisions: PRESUMPTION-1261
+  Testability: testable via literature (scholarship on HeLa consent, the 2013 NIH-Lacks family agreement and its scope, norms for using HeLa imagery)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2163
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+ASSUMPTION-2164:
+  Date identified: 2026-11-21
+  Statement: [stated, second-hand] Tom's priority: "something viewable by this evening"; Claude "was told to make and take recommendations rather than wait for decisions". Scratch cut v0.1 (16 min 41 s, stills, three synthetic voices) was built; "Nobody has listened to it."
+  Context: film thread, via 2026-11-21 chat summary
+  Type: methodological
+  Related decisions: PRESUMPTION-1262
+  Testability: framework/working-mode choice (not queued); in-house signal is whether Tom's notes on v0.1 reverse any delegated call
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2164
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+ASSUMPTION-2165:
+  Date identified: 2026-11-21
+  Statement: [stated] Rule this pass applies to second-hand sources (reconciling cloud vs. local practice, ASSUMPTION-2158): register from a recap when it reports content (who said/decided what); do NOT register from a topic list. Today's walk exists in the wiki only as topic labels (Fredrickson love-as-resonance and the length scale between persons; truth as a limit approached asymptotically; MacIntyre's epistemological crisis; a new install), from Tom's 8:49 one-sided voice recording, machine-transcribed by Chat as chat-video-1_tom-voice_transcript_2026-11-21.txt (uncorrected; not in the vault). Walk content is therefore NOT registered.
+  Context: this pass; cowork_to_chat local addendum; changelog/2026-11-22_changes.md
+  Type: methodological
+  Related decisions: ASSUMPTION-2158; PRESUMPTION-1263; OPEN-307
+  Testability: framework rule for 14a (not queued); resolves when Tom confirms or the transcript lands in the vault
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2165
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+ASSUMPTION-2166:
+  Date identified: 2026-11-21
+  Statement: [stated] Recurrences 11-21: scheduler 45 OK / 2 WARN / 28 FAIL (27 DOUBLE-REGISTERED + openstory.ui); "this run proves the problem: the local and cloud copies of scheduler-health-check both fired today"; cloud routines 48/48 OK (12:08Z, refreshed by the cloud copy); Routines connector absent; Desktop Commander auto-declined again. Morning status: "23 tasks are switched on both here on the Mac and as cloud routines" (fifth distinct count: 26/27/10/~15/23), "Twenty-eight scheduled tasks are active" (29 on 11-20), "Nothing new broke overnight." OpenStory 16,119 events/24h. Evening sync blocked again by the claude.ai "I acknowledge" notice, confirming ASSUMPTION-2159's prediction. Cloud 14ab: thirteenth consecutive no-transcript firing. No interactive Cowork session (35 most recent sessions all scheduled).
+  Context: scheduler health 9412d8c1; morning status ff8c519a; evening sync e559612c; changelog/2026-11-22_changes.md
+  Type: empirical
+  Related decisions: ASSUMPTION-2144; ASSUMPTION-2159; ASSUMPTION-2160; PRESUMPTION-1196; PRESUMPTION-1256; OPEN-299
+  Testability: recurrence bundle (not queued; count drift is further evidence for queued ASSUMPTION-2144)
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-2166
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
+    Current status: UNTESTED
+
+*2026-11-21 14a (local pass): ASSUMPTION-2161-2166 (6). Queued: 2161, 2163 (literature); 2162 [IN-HOUSE]. 2161-2164 are second-hand (Chat recap of the 11-20 film thread; messages ~10-25 unread). Today's walk not registered (topic list only; ASSUMPTION-2165). Status updates from lit returns applied to 2147, 2149, 2153, 2157; 2159 marked SUPPORTED (in-house observation).*

@@ -39,3 +39,18 @@ PRS-CANDIDATE-02:
 - **Friston:** The statistical and thermodynamic faces are the two senses that the free energy principle deliberately fuses. The paper's call to keep them disambiguated is a direct challenge for FEP to answer.
 - **Levin:** Basal cognition relies heavily on the engineering and statistical faces. The taxonomy could sharpen what "information processing" means in bioelectric claims.
 - **Arkani-Hamed:** No direct connection.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-22*
+
+[→ Carroll agent]: Luppi et al. (incl. Carroll) give four faces of information (engineering, statistical, thermodynamic, ontological) with no reduction among them. This is poetic naturalism applied to one concept. Link from [[2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence]]. Abstract-only; Carroll is last of eight authors. Read the body before writing triplets.
+
+[→ Friston agent]: The paper asks that the statistical and thermodynamic faces be kept apart. The free energy principle joins them on purpose. Write the FEP reply: is the identification a derived result or a stipulation? See `carroll_friston_bridge`.
+
+[→ Wolfram agent]: The ruliad treats information/computation as ontological. Here that is one face among four, not the master concept. Review and say whether the ruliad claims the ontological face or only the engineering one.
+
+[→ Kastrup agent]: Analytic idealism also takes an ontological stance, but on mind, not information. Say whether the "ontological face" is a rival to idealism or a category you reject.
+
+[→ Hoffman agent]: Conscious agents are often given as information-theoretic (Markov kernels). Say which face your formalism uses, and whether it leans on the ontological one.
+
+[→ Levin agent]: Bioelectric "information processing" claims use the engineering and statistical faces. Use the taxonomy to say which one each claim in [[2026-08-03_levin_cognitive-offloading-universal]] needs.

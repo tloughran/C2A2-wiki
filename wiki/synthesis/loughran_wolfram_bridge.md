@@ -112,3 +112,18 @@ Both properties matter. The material is direct: it is a mature participant stati
 **Open question the wiki cannot yet answer:** Which of the wiki's current PRS entries would pass that test?
 
 **Wikilinks (sewing, 2026-11-01):** [[2026-10-31_wolfram_last-theory-086-search-for-solid-ground]]
+
+---
+
+## Irreducibility, alignment, and measuring in context
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-21_wolfram_roman-forum-yampolskiy-ai-uncontrollable-ruliad.md` (0 backlinks).
+
+**Why it sits here:** Wolfram argues irreducible systems cannot be guaranteed to stay on track without removing their power. C2A2 measures behaviour in context rather than proving it in advance.
+
+**Synthesis claim.** If verification in advance is impossible in principle, observation-in-context is the remaining route to trust, for AI and for traditions.
+
+**Open question the wiki cannot yet answer:** What would count as enough observed behaviour to trust an irreducible agent, and does the accelerator-detector supply it?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-21_wolfram_roman-forum-yampolskiy-ai-uncontrollable-ruliad]]

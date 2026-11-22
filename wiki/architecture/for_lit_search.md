@@ -29790,3 +29790,140 @@ Not re-filed (standing unconsumed blocks): MONITOR-697..700 (re-queued 11-08, no
 *2026-11-20 (local pass): 5 items queued: 3 literature-lane (ASSUMPTION-2153, -2157, PRESUMPTION-1257), 2 [IN-HOUSE] (ASSUMPTION-2155, -2156). Lock last line read this run: RELEASED 2026-11-20T05:43:46Z by cloud-lit-2026-11-20; not held, append safe (04:4xZ 11-21).*
 
 *2026-11-21 (cloud-lit-2026-11-21): 15a/15b/15c processed ASSUMPTION-2153 -> DISPOSITION-1151 (MONITOR-727 Medium), ASSUMPTION-2157 -> DISPOSITION-1152 (MONITOR-728 Low), PRESUMPTION-1257 -> DISPOSITION-1153 (REVISE-546 Medium). SYSTEMIC-RISK (High): convergence-from-shared-lineage read as tradition-neutral ground (ASSUMPTION-2153, PRESUMPTION-1257; cf. PREMISE-004/-058). All searches PRELIMINARY (8 web searches, titles only). In-house items (incl. ASSUMPTION-2155/-2156) and 15d backlog untouched.*
+
+[QUEUED] [SEARCHED-15a: 2026-11-22] [SEARCHED-15b: 2026-11-22] [DISPOSITIONED-15c: 2026-11-22] [ASSUMPTION] ASSUMPTION-2161
+  Statement: [stated, second-hand] Film rule: every edit disclosed and credited, incl. a synthesized-voice disclosure line.
+  Claim to test: Literature: do disclosure labels on AI-generated or synthetic-voice media preserve audience trust and correct attribution, or do they lower credibility / get ignored (AI-labelling and deepfake-disclosure studies)?
+  Result (2026-11-22): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1154 -> MONITOR-729 (Low)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: MONITORING
+
+[QUEUED] [SEARCHED-15a: 2026-11-22] [SEARCHED-15b: 2026-11-22] [DISPOSITIONED-15c: 2026-11-22] [ASSUMPTION] ASSUMPTION-2163
+  Statement: [stated, second-hand] NIH public-domain HeLa image chosen as cell plate; Lacks consent question raised, unanswered.
+  Claim to test: Literature: scholarship on HeLa consent and the 2013 NIH-Lacks family agreement (scope: genomic data vs. images); norms in science communication for acknowledging HeLa provenance.
+  Result (2026-11-22): 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1155 -> REVISE-547 (Medium)
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Item type: ASSUMPTION (stated) | Current status: REVISION-FLAGGED
+
+[QUEUED] [SEARCHED-15a: 2026-11-22] [SEARCHED-15b: 2026-11-22] [DISPOSITIONED-15c: 2026-11-22] [PRESUMPTION] PRESUMPTION-1260
+  Statement: [inferred] Consent plus a disclosure line presumed sufficient for a cloned voice to speak first-person lines.
+  Claim to test: Literature (15b lane especially): attribution and perceived authenticity with disclosed synthetic voices of real people; ethics of voice cloning in documentary.
+  Result (2026-11-22): 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1156 -> REVISE-548 (Medium)
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated - surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [SEARCHED-15a: 2026-11-22] [SEARCHED-15b: 2026-11-22] [DISPOSITIONED-15c: 2026-11-22] [PRESUMPTION] PRESUMPTION-1262
+  Statement: [inferred] Claude's recommendations presumed to stand in for Tom's judgment under deadline; review deferred.
+  Claim to test: Literature: automation bias and blanket acceptance of AI recommendations in creative/editorial work; does deferred review catch errors in delegated defaults?
+  Result (2026-11-22): 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate-to-Strong); DISPOSITION-1157 -> REVISE-549 (High)
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Item type: PRESUMPTION (unstated - surfaced by inference) | Current status: REVISION-FLAGGED
+
+[QUEUED] [IN-HOUSE] [ASSUMPTION] ASSUMPTION-2162
+  Statement: [stated, second-hand] One recording serves as Tom's real voice and as the clone reference; takes checked by transcription.
+  Claim to test: In-house: after the 3-line film-2 clone test, record Tom's verdict and the transcription-check error rate per take; note whether one recording sufficed.
+  PROVENANCE: Origin: 14a | Chain: [14a] | Item type: ASSUMPTION (stated) | Current status: UNTESTED
+
+*2026-11-21 (local pass): 5 items queued: 4 literature-lane (ASSUMPTION-2161, -2163, PRESUMPTION-1260, -1262), 1 [IN-HOUSE] (ASSUMPTION-2162). Lock last line read this run: RELEASED 2026-11-21T05:43:36Z by cloud-lit-2026-11-21; not held, append safe (~04:45Z 11-22). Note for 15c: 2161 and 1260 share the disclosure question and may be searched together.*
+
+*2026-11-22 (cloud-lit-2026-11-22): 15a/15b/15c processed ASSUMPTION-2161 -> DISPOSITION-1154 (MONITOR-729 Low), ASSUMPTION-2163 -> DISPOSITION-1155 (REVISE-547 Medium), PRESUMPTION-1260 -> DISPOSITION-1156 (REVISE-548 Medium), PRESUMPTION-1262 -> DISPOSITION-1157 (REVISE-549 High). SYSTEMIC-RISK (Medium): single-notice safeguards (2161, 1260, 1262; cf. REVISE-545). All searches PRELIMINARY (6 web searches, titles only). In-house item ASSUMPTION-2162 and 15d backlog untouched.*
+
+## 2026-11-22 — 15d Periodic Monitor: weekly re-triggers (weekly cycle only; day 22, monthly not due)
+
+*15d re-trigger only; no evidence evaluated. Each entry confirmed overdue from its own first-check date; none carries a later 15c status note. Lane = 15d's reading where 15c gave no routing note (EMPIRICAL where the only route named is an in-house count, sample or viewer check); in-house limbs listed under Owed.*
+
+[ASSUMPTION] ASSUMPTION-2067: (see MONITOR-710 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): a read of Levin 2021 (pattern as network state, documented reprogramming); REVISE if 'outside the cells' reduces to a Platonic locus.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-16.
+
+[PRESUMPTION] PRESUMPTION-1227: (see MONITOR-711 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): a read of Three Rival Versions and Whose Justice? ch.18-20. In-house limb: whether design documents specify the master science as tradition-neutral.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-16.
+
+[PRESUMPTION] PRESUMPTION-1228: (see MONITOR-712 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): a read of Levin 2019 and Kirchhoff et al. 2018 with each case's blanket structure written out.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-16.
+
+[ASSUMPTION] ASSUMPTION-2075: (see MONITOR-713 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): a read of Van Noorden 2017 and Garfield 1998. In-house limb: dead-triplet sample (recent/infrastructural share).
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-17.
+
+[ASSUMPTION] ASSUMPTION-2079: (see MONITOR-714 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): a read of Friston et al. 2015 (prior mapping). In-house limb: whether design leans on the mind-blindness analogy.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-17.
+
+[PRESUMPTION] PRESUMPTION-1230: (see MONITOR-715 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): in-house only: the ASSUMPTION-2073 sample of PRS id mentions labelled by function (substantive vs index/log/template).
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-17.
+
+[PRESUMPTION] PRESUMPTION-1232: (see MONITOR-716 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): in-house only: classification of recent signals (relational vs surface-only), and whether counts are reported as connections.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-17.
+
+[PRESUMPTION] PRESUMPTION-1233: (see MONITOR-717 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): in-house only: comparison of search-level vs post-fetch grades.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-18.
+
+[PRESUMPTION] PRESUMPTION-1234: (see MONITOR-718 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): a read source on thinker-named traditions. In-house limb: authorship count (co-author divergence from voiced thinker).
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-18.
+
+[PRESUMPTION] PRESUMPTION-1236: (see MONITOR-719 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): in-house only: count of coupled dimensions in the schema and whether they break the ASSUMPTION-2089 guarantee.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-19.
+
+[PRESUMPTION] PRESUMPTION-1238: (see MONITOR-720 in monitor_queue.md)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14b->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): viewer check only: do most viewers read the routes/key as exchange data; plus a title-strength caveat.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-19.
+
+[ASSUMPTION] ASSUMPTION-2103: (see MONITOR-721 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): restatement as a folk-concept claim; MacIntyre link dropped or argued separately. Wiki-use check: folk data used as evidence integration is real/normative -> REVISE.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-20.
+
+[ASSUMPTION] ASSUMPTION-2104: (see MONITOR-722 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: High
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): framing as analogy paired with a disagreement-preservation check. Wiki-use check: positivity-resonance used as direct indicator -> REVISE.
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-20.
+
+[ASSUMPTION] ASSUMPTION-2109: (see MONITOR-723 in monitor_queue.md)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-11-22, cycle 1]
+  Provenance: Chain=[14a->15a,15b->15c->15d]; Priority: Medium
+  Cycle: 0 -> 1; Last checked: 2026-11-22; Next 15d check: 2026-11-29
+  Owed (15c): restatement ('can rationally raise credence and pursuitworthiness') and a check of the electroweak citation history (Related: REVISE-539).
+  Evidence trajectory: Baseline (first 15d cycle); no search since 15c disposition. Due since 2026-11-21.
+
+Not re-filed (standing unconsumed blocks): MONITOR-701..709, 687 (11-15); 697..700, 656 (11-08); 696 (11-01); the 2026-10-25, 10-18 and 10-11 cohorts. Not duplicated; cycle counts held (precedent 09-20..11-15).

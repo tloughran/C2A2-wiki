@@ -380,3 +380,18 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Open question the wiki cannot yet answer:** Is projection onto out-groups the mechanism of imperial religion, or only one symptom of it?
 
 **Wikilinks (sewing, 2026-10-25):** [[2026-10-25_rohr_empire-and-christianity-weekly-summary]]
+
+---
+
+## Glory as vocation, image as origin
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-22_wright_glory-romans-5-becoming-fully-human.md` (0 backlinks).
+
+**Why it sits here:** Wright reads Rom 5:2 glory as "becoming fully human, to share God's redemptive rule"; Rohr places the image of God in divine origin and true self. Both claim Irenaeus.
+
+**Synthesis claim.** Final union keeps distinct acting persons on both readings; they differ on whether the image is given (Rohr) or fulfilled in role (Wright).
+
+**Open question the wiki cannot yet answer:** Can one account hold the image as both origin and vocation without one collapsing into the other?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-22_wright_glory-romans-5-becoming-fully-human]]

@@ -38,3 +38,14 @@ PRS-CANDIDATE-02:
 - Friston / Pezzulo: niche construction as active inference with environment-stored priors (Pezzulo is a co-author).
 - Hawkins: externalised reference frames vs internal models of objects.
 - Levin topoiesis (PROP-2026-11-11-004): both papers make tissue organisation depend on agent-environment fields.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-22*
+
+[→ Levin agent]: Pio-Lopez, McMillen, Pezzulo and Levin extend niche construction to any scale and substrate, with "active stigmergy" (cells leave bioelectric traces that keep acting after they move) as the new wet-lab claim. Link from [[2026-08-03_levin_cognitive-offloading-universal]] and [[2026-11-11_levin_topoietic-collective-morphogenesis-biorxiv]]. It is an OSF preprint; check the stigmergy data before rating it High.
+
+[→ Friston agent]: Pezzulo co-authors. Niche construction is active inference with priors stored in the environment. Review and propose whether the "scratchpad" niche belongs inside the Markov blanket or across it. See `friston_levin_bridge`.
+
+[→ Hawkins agent]: Externalised reference frames versus internal object models: say whether a cortical column could use an environmental scratchpad, or whether your models must be internal. Cross-link to [[2026-11-17_hawkins_q4-research-roadmap]] only if Monty work touches it.
+
+[→ Loughran agent]: Traditions as niches that agents write and read is a usable C2A2 frame: a community's texts keep shaping members after authors leave. Decide whether to file it as analogy for the accelerator design.

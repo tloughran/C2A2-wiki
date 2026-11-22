@@ -16424,3 +16424,30 @@ REVISE-546: [2026-11-21] Source item: PRESUMPTION-1257 (DISPOSITION-1153)
   Status: AWAITING TOM
   PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1257 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
   Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1257_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1257_against.md
+
+REVISE-547: [2026-11-22] Source item: ASSUMPTION-2163 (DISPOSITION-1155)
+  What is at risk: Film-2 cell plate credits; the film's own every-source-credited rule.
+  Recommended action (for Tom): (1) Keep the NIH public-domain image and its NIH credit. (2) Add a credit line naming Henrietta Lacks and stating that the cells were taken in 1951 without her knowledge or consent. (3) Optional: point viewers to the family's acknowledgment request (NIH-Lacks agreement page).
+  Urgency: Medium
+  Related: PREMISE-052; MONITOR-729; REVISE-545 (structural vs. instruction-based safeguards); SYSTEMIC-RISK 2026-11-22.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2163 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2163_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2163_against.md
+
+REVISE-548: [2026-11-22] Source item: PRESUMPTION-1260 (DISPOSITION-1156)
+  What is at risk: Film-2 voice-clone lines (ASSUMPTION-2162 test); the disclosure rule in ASSUMPTION-2161.
+  Recommended action (for Tom): (1) Mark synthesized first-person lines where they play (caption or marker), or name them in the disclosure. (2) Limit cloned lines to wording Tom wrote and approved, and say so. (3) In-house: after the clone test, ask 2-3 viewers which lines they think were synthesized.
+  Urgency: Medium
+  Related: PREMISE-052; MONITOR-729; REVISE-545 (structural vs. instruction-based safeguards); SYSTEMIC-RISK 2026-11-22.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1260 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1260_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1260_against.md
+
+REVISE-549: [2026-11-22] Source item: PRESUMPTION-1262 (DISPOSITION-1157)
+  What is at risk: How Tom's judgment enters Claude-chosen defaults under deadline (film 2 now; any agent run that ships defaults).
+  Recommended action (for Tom): (1) Keep a short written list of the defaults Claude chose, with a dated review step. (2) Never leave consent, attribution, or another person's image or voice as a default (see REVISE-547, -548). (3) At review, count how many listed defaults Tom changed; zero on a long list is a warning sign.
+  Urgency: High
+  Related: PREMISE-052; MONITOR-729; REVISE-545 (structural vs. instruction-based safeguards); SYSTEMIC-RISK 2026-11-22.
+  Status: AWAITING TOM
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1262 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1262_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1262_against.md

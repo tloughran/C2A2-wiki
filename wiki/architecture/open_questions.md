@@ -4167,3 +4167,17 @@ OPEN-306:
     Transform at each step:
       14a: Raised from local pass 2026-11-20 (2026-11-20 chat summary, second-hand recap of 11-19 walk second half)
     Current status: OPEN
+
+OPEN-307:
+  Raised: 2026-11-21 by 14a (ASSUMPTION-2165; PRESUMPTION-1263)
+  Question: Where is today's walk chat with Claude's side? Should 14a ingest the walk from Tom's one-sided recording (once the transcript is in the vault), wait for both sides, or treat walk recordings for films as outside 14a's scope?
+  Needs: Tom
+  Status: OPEN
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-307
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from local pass 2026-11-21 (cowork_to_chat local addendum; changelog/2026-11-22_changes.md)
+    Current status: OPEN

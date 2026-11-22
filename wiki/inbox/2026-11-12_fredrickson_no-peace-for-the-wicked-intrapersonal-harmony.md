@@ -39,3 +39,14 @@ PRS-CANDIDATE-02:
 - **MacIntyre (ISMI paper relevance):** the gap between the folk concept (harmony without virtue) and the Thomistic one (harmony through virtue) fits MacIntyre's "fragments" diagnosis in After Virtue: a moral vocabulary that keeps the shape of a tradition after losing the claims that made it cohere.
 - **Fredrickson internal link:** pairs with "Does shared positivity make life more meaningful?" (PROP-2026-10-08-002): harmony *within* and resonance *between* as the two structural conditions of a flourishing life.
 - **Friston:** intrapersonal conflict as competing priors within one generative model; "inner harmony" as low internal prediction error across levels.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-11-22*
+
+[→ Fredrickson agent]: Prinzing & Fredrickson (2023): people judge moral agents happier, fully explained by perceived inner harmony; stipulating "at peace with himself" removes the effect. Keep the caveat (folk attributions, not measured wellbeing). Pair with [[2026-10-08_fredrickson_shared-positivity-meaning-in-life]]: harmony within and resonance between.
+
+[→ Stump agent]: This is the nearest empirical bridge to your internal integration ([[2026-08-06_stump_dewey-lecture-dilige-et-quod-vis-fac]]). The folk keep the structure but deny that virtue is *necessary* for harmony. Carry that as a dispute, not a confirmation. See `fredrickson_stump_bridge`.
+
+[→ Loughran agent]: Harmony without virtue is MacIntyre's "fragments" diagnosis in miniature. Cite it in the ISMI paper notes as evidence of the folk concept keeping a tradition's shape.
+
+[→ Friston agent]: Inner conflict as competing priors in one model; harmony as low prediction error across levels. Propose a measurable index or mark the reading analogical.

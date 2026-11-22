@@ -53467,3 +53467,149 @@ SYSTEMIC-RISK-FLAG (2026-11-21, 15b):
   Risk level: High
   Recommendation: Before mathematics (or model convergence) is used as "the shared space," require evidence of convergence from independent lineages (disjoint-data models; traditions affirming results on their own terms). Read with REVISE-545 (procedural vs. structural independence).
 EVIDENCE-QUALITY NOTE (2026-11-21): all searches PRELIMINARY (8 web searches, titles only, no fetches). Olah et al., Lazer & Friedman, Hong & Page, Thompson, Pinker, Wilson & Wilson, Pica et al., Dehaene et al. 2006, Rowlands & Carson, D'Ambrosio, Bishop, Ferreirós, Gillies and MacIntyre are background recall, not re-read. 15a/15b independence procedural only (FOR files composed before AGAINST files). No NOVELTY flags: literature found for all three.
+
+## 2026-11-22 (cloud-lit-2026-11-22): ASSUMPTION-2161, ASSUMPTION-2163, PRESUMPTION-1260, PRESUMPTION-1262
+
+RETURN-TO-14a:
+  Date: 2026-11-22
+  Original item: ASSUMPTION-2161
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Summary: Disclosure labels do what the rule needs for attribution: viewers learn which parts are synthetic and who made what. Disclosure is also the accepted minimum duty in journalism ethics and in C2A2's own PREMISE-052.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2161_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2161 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Date: 2026-11-22
+  Original item: ASSUMPTION-2163
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Summary: Using an NIH public-domain HeLa micrograph is legally clear, and the family has an agreed, public route (the 2013 agreement) through which it asked for acknowledgment. The family's stated wish is for recognition, not for a ban on use.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-2163_for.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a] | Original item: ASSUMPTION-2163 | Item type: ASSUMPTION (stated) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Date: 2026-11-22
+  Original item: PRESUMPTION-1260
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak-to-Moderate
+  Summary: Where critics and frameworks named what was missing in the best-known documentary case, they named consent and disclosure. With a living, consenting speaker cloning his own voice, the plan meets both.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1260_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1260 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14b:
+  Date: 2026-11-22
+  Original item: PRESUMPTION-1262
+  Search direction: FOR (confirmatory)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Summary: Delegating defaults to a reliable assistant under deadline is a defensible trade if review really follows. That supports a narrow version: delegation with a scheduled, specific review.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-1262_for.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a] | Original item: PRESUMPTION-1262 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for supporting literature | Current status: PARTIALLY-SUPPORTED
+
+RETURN-TO-14a:
+  Date: 2026-11-22
+  Original item: ASSUMPTION-2161
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Summary: Disclosure helps attribution but tends to cost credibility, and the cost falls on true and human-made content too, because audiences assume more automation than there was. Labels are also often missed.
+  Steelman: The disclosure rule protects attribution, not trust. The best evidence says labels make audiences discount even true, human-made material, because they assume full automation. A rule justified by trust may fail on its own terms.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2161_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2161 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14a:
+  Date: 2026-11-22
+  Original item: ASSUMPTION-2163
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Summary: Legal clearance does not answer the consent question raised. The agreement does not cover images, and the family's 2023 settlement shows they still object to unconsented use. The accepted practice in science communication is to name Henrietta Lacks and state how the cells were obtained.
+  Steelman: Public domain answers copyright, not consent. The one agreement with the family is silent on images, and the family is still pressing claims over unconsented use. A film that credits every edit but does not name the woman the cells came from is inconsistent with its own rule.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2163_against.md
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15b] | Original item: ASSUMPTION-2163 | Item type: ASSUMPTION (stated) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Date: 2026-11-22
+  Original item: PRESUMPTION-1260
+  Search direction: AGAINST (challenging)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Summary: When listeners cannot hear the difference, one disclosure line at the start or end does not tell them which first-person lines were synthesized, so attribution of particular words stays wrong. Consent covers the right to use the voice, not the viewer's understanding of what was said by whom.
+  Steelman: Consent and a disclosure line are necessary but not enough when the clone is indistinguishable. Viewers cannot tell which lines were spoken, so a blanket notice leaves per-line attribution wrong, which is the thing the film rule is meant to protect.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1260_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1260 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: PARTIALLY-CHALLENGED
+
+RETURN-TO-14b:
+  Date: 2026-11-22
+  Original item: PRESUMPTION-1262
+  Search direction: AGAINST (challenging)
+  Result: CHALLENGED
+  Strength: Moderate-to-Strong
+  Summary: Automation bias is one of the best-established findings in human-automation work. Deadline pressure is a known amplifier, and deferred review is the step most likely to be dropped. Treating Claude's recommendations as standing in for Tom's judgment is the condition under which errors pass unnoticed.
+  Steelman: Accepting AI recommendations under deadline with review deferred is the textbook setup for automation bias. Unless the deferred review is scheduled and specific, it will probably not happen, and errors will pass.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-1262_against.md
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15b] | Original item: PRESUMPTION-1262 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform: Searched for challenging literature | Current status: CHALLENGED
+
+DISPOSITION-1154:
+  Date: 2026-11-22
+  Item: ASSUMPTION-2161
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Disclosure gives correct attribution and meets the honesty duty (PREMISE-052), but the best evidence says labels lower credibility even for true, human-made content. The assumption is right about attribution and wrong if it expects trust to be preserved.
+  Disposition: MONITOR (MONITOR-729)
+  Reasoning: Moderate support against a moderate challenge on a stated assumption: MONITOR. Nothing in the film rule needs to change; what changes is the reason given for it (honesty, not trust). Low priority: the trust cost is a known, accepted trade.
+  Consistency check: grep of validated_premises.md for disclosure / automation bias / HeLa / voice cloning; PREMISE-052 (disclosure is the minimum duty, not the whole duty) is consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2161 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2161_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2161_against.md
+
+DISPOSITION-1155:
+  Date: 2026-11-22
+  Item: ASSUMPTION-2163
+  Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Using the NIH image is legally clear (public domain) and the family has asked for acknowledgment, not non-use. But the 2013 agreement covers genomic data only and the family still contests unconsented use (2023 Thermo Fisher settlement), so the consent question is not answered by public-domain status.
+  Disposition: REVISE (REVISE-547)
+  Reasoning: Moderate support and moderate challenge, but the challenge points at a concrete, cheap fix and the item concerns a real person and her family: lean REVISE. The fix is an addition, not a reversal: keep the image, add the acknowledgment. Medium: film 2 is in production and the credit is easy to miss.
+  Consistency check: grep of validated_premises.md for disclosure / automation bias / HeLa / voice cloning; PREMISE-052 (disclosure is the minimum duty, not the whole duty) is consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2163 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2163_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2163_against.md
+
+DISPOSITION-1156:
+  Date: 2026-11-22
+  Item: PRESUMPTION-1260
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak-to-Moderate
+  15b result: PARTIALLY-CHALLENGED  15b strength: Moderate
+  Net assessment: Consent and disclosure are the two remedies named in the Bourdain/Roadrunner controversy, and here consent is first-party. But listeners often cannot tell a clone from the real voice, so one disclosure line does not tell them which first-person lines were synthesized.
+  Disposition: REVISE (REVISE-548)
+  Reasoning: Weak-to-moderate support against a moderate challenge, on a presumption (extra weight): lean REVISE. Narrowing, not reversal: consent plus disclosure stay; add per-line marking. Medium: affects attribution in a public film; not encoded in pipeline logic.
+  Consistency check: grep of validated_premises.md for disclosure / automation bias / HeLa / voice cloning; PREMISE-052 (disclosure is the minimum duty, not the whole duty) is consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1260 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1260_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1260_against.md
+
+DISPOSITION-1157:
+  Date: 2026-11-22
+  Item: PRESUMPTION-1262
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  15a result: PARTIALLY-SUPPORTED  15a strength: Weak
+  15b result: CHALLENGED  15b strength: Moderate-to-Strong
+  Net assessment: Support is weak (delegation can be rational if review happens). Challenge is moderate-to-strong: automation bias is well established, time pressure is a studied amplifier, and no source shows deferred review catches delegated-default errors.
+  Disposition: REVISE (REVISE-549)
+  Reasoning: Weak support against a moderate-to-strong challenge on a presumption: heuristic 'PRESUMPTION with strong challenge -> REVISE, High'. High: it governs how Tom's judgment enters every Claude-made default, including the consent and attribution items above (REVISE-547, -548).
+  Consistency check: grep of validated_premises.md for disclosure / automation bias / HeLa / voice cloning; PREMISE-052 (disclosure is the minimum duty, not the whole duty) is consistent. Not an INCORPORATE; no premise added, no conflict.
+  PROVENANCE: Origin: 14b | Chain: [14b -> 15a, 15b -> 15c] | Original item: PRESUMPTION-1262 | Item type: PRESUMPTION (unstated - surfaced by inference) | Transform at this step: Net evaluation and disposition | Current status: REVISION-FLAGGED
+  Results: wiki/architecture/lit_search_results/for/PRESUMPTION-1262_for.md ; wiki/architecture/lit_search_results/against/PRESUMPTION-1262_against.md
+
+SYSTEMIC-RISK-FLAG (2026-11-22, 15b):
+  Affected items: ASSUMPTION-2161, PRESUMPTION-1260, PRESUMPTION-1262 (related: REVISE-545, PREMISE-052)
+  Common vulnerability: Each treats a single notice or intention as the safeguard: one disclosure line for synthetic media, one consent plus disclosure for a cloned voice, one "review later" for delegated defaults. The literature says each such single point is often missed or skipped (labels unnoticed or over-read; clones indistinguishable; deferred review dropped under deadline).
+  Literature basis: Altay & Gilardi 2024 (PNAS Nexus); voice-clone realism studies 2025; Parasuraman & Manzey 2010; Goddard et al. 2012 (recall).
+  Risk level: Medium
+  Recommendation: Make the safeguard structural and local: mark synthetic content where it appears, list Claude-chosen defaults with a dated review. Read with REVISE-545.
+EVIDENCE-QUALITY NOTE (2026-11-22): all searches PRELIMINARY (6 web searches, titles only, no fetches). Parasuraman & Riley, Lee & See, Parasuraman & Manzey, Goddard et al., Pennycook et al., Skloot, PAI synthetic-media framework, 17 U.S.C. 105 are background recall, not re-read. Altay & Gilardi title supplied from recall (result link showed no title). 15a/15b independence procedural only. No NOVELTY flags.

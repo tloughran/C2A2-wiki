@@ -26083,3 +26083,53 @@ MONITOR-728:
   Related: REVISE-545 (structural damping); REVISE-539..545 (umbrella-term pattern)
   PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2157 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
   Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2157_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2157_against.md
+
+MONITOR-729:
+  Date: 2026-11-22
+  Source item: ASSUMPTION-2161 (DISPOSITION-1154)
+  Item type: ASSUMPTION (stated)
+  Priority: Low
+  Disposition basis: 15a PARTIALLY-SUPPORTED (Moderate, preliminary); 15b PARTIALLY-CHALLENGED (Moderate, preliminary). Disclosure gives correct attribution and meets the honesty duty (PREMISE-052), but the best evidence says labels lower credibility even for true, human-made content. The assumption is right about attribution and wrong if it expects trust to be preserved.
+  What would change the disposition: (-> INCORPORATE, narrowed to 'disclosure secures attribution') viewer check on film 2 shows viewers correctly identify what was synthesized; (-> REVISE) design text starts justifying disclosure by trust preservation, or viewers misread the disclosure as 'AI-made film'.
+  Monitoring cadence: Weekly (default); first check due 2026-11-29
+  Related: PREMISE-052; REVISE-548; SYSTEMIC-RISK 2026-11-22
+  PROVENANCE: Origin: 14a | Chain: [14a -> 15a, 15b -> 15c] | Original item: ASSUMPTION-2161 | Item type: ASSUMPTION (stated) | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Results: wiki/architecture/lit_search_results/for/ASSUMPTION-2161_for.md ; wiki/architecture/lit_search_results/against/ASSUMPTION-2161_against.md
+
+## 2026-11-22 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context.** 15d last ran 2026-11-15 (7 days). Day 22, so the **monthly cycle does not fire** (next first Sunday: 2026-12-06). `review/lit_pipeline.lock` last line RELEASED 2026-11-22T05:43:18Z (cloud-lit-2026-11-22; not held). Pre-write guard: no 2026-11-22 15d tags in either register and no `*.bak.20261122-pre-15d` at write time. Backups: `*.md.bak.20261122-pre-15d` (monitor_queue, for_lit_search, validated_premises). validated_premises.md not modified.
+
+### Consumption of prior re-trigger cohorts
+- **11-15 cohort (MONITOR-701..709 literature; 687 empirical):** 0/10 consumed. Not re-filed; cycles held at 1; next_check -> 2026-11-29 (687 stays 12-06).
+- **11-08 (697..700, 656), 11-01 (696), 10-25, 10-18, 10-11 cohorts:** still 0 consumed. Latest SEARCHED date on any 15d RE-TRIGGER line is still 2026-10-17. Held, not duplicated; cohort next_check -> 2026-11-29 (cohort level).
+- queue_scan.py (pre-write): 0 searched-not-dispositioned; **151** bare literature-lane items (142 on 11-15).
+
+### Weekly cycle — 14 overdue items re-queued (section dated 2026-11-22 in for_lit_search.md)
+- **Literature [QUEUED] (9):** MONITOR-710 (ASSUMPTION-2067, due 11-16), -711 (PRESUMPTION-1227, 11-16), -712 (PRESUMPTION-1228, 11-16), -713 (ASSUMPTION-2075, 11-17), -714 (ASSUMPTION-2079, 11-17), -718 (PRESUMPTION-1234, 11-18), -721 (ASSUMPTION-2103, 11-20), -722 (ASSUMPTION-2104, 11-20), -723 (ASSUMPTION-2109, 11-21). Cycle 0 -> 1; next 2026-11-29.
+- **Empirical [QUEUED-EMPIRICAL] (5):** MONITOR-715 (PRESUMPTION-1230, 11-17), -716 (PRESUMPTION-1232, 11-17), -717 (PRESUMPTION-1233, 11-18), -719 (PRESUMPTION-1236, 11-19), -720 (PRESUMPTION-1238, 11-19). 15c named only an in-house sample/count/viewer check as the route, so this is 15d's lane reading. Cycle 0 -> 1; next 2026-11-29 (weekly default kept).
+
+### Not yet due
+MONITOR-724 (11-26), -725..726 (11-27), -727..728 (11-28), -729 (11-29). Monthly cohort MONITOR-001..344, 548, 656, 687 (12-06). Event-driven/bound -003, -041, -154, -544, -612 untouched.
+
+### MONITOR-688 (PRESUMPTION-991)
+Terminating condition passed 2026-11-09. Still no 15c re-disposition, loss-condition entry or closure note in monitor_queue or revision_flags (revision_flags mentions 688 only in a 'without new process' line). Closure into REVISE-472 remains owed by 15c/Tom; 15d leaves it in place.
+
+### STALE-MONITOR-FLAG
+- The 11-15 process-level ESCALATE (re-trigger lane has no consumer) **stands; not re-issued.** It has grown: 6 cohorts (11-15 back to 10-11), 35+ re-trigger blocks, unconsumed; 10-11 non-literature cohort now held 6 weekly runs.
+- **MONITOR-403:** 10-11 ESCALATE stands. No response.
+- **MONITOR-699:** 15c's REVISE trigger (no insider review within 4 weekly cycles) falls ~2026-11-29, before the next 15d run.
+- No new per-item flag: no item reaches 4 cycles while re-triggers are not consumed.
+
+### Trajectories
+- 710-723: baseline (first 15d cycle). 701-709, 697-700, 696, 656, 687: unchanged, no new sources. 688: expired, unclosed.
+- Lanes: 15abc this week took only new intake (MONITOR-724..729; REVISE-543..549) and the bare literature backlog grew 142 -> 151; empirical lane still has no runner (now 5 more items).
+- PREMISE-124/126 apply: re-queuing certifies "not yet expired", not "re-tested".
+
+**Run summary:** 14 re-queued (9 literature, 5 empirical); 11-15 and older cohorts held, not duplicated; 0 premise re-checks (monthly not due); 0 new stale flags (process-level ESCALATE of 11-15 and MONITOR-403 stand); 688 still unclosed; 699 trigger due ~11-29. Budget: over the 4k/30k guideline (register size), as in prior runs.
+
+**Duplicate firing note (second 2026-11-22 firing of c2a2-periodic-monitor-weekly).** A second 15d instance parsed the registers on its own. It found no 11-22 tags at start (~08:39Z). Its pre-write guard then found the commit above (15 matching tag/header lines), so it **wrote no re-queue, date change or flag**, and its backup step never ran. The `*.bak.20261122-pre-15d` files above are the committing instance's and are a valid rollback point (monitor_queue backup 1785890 bytes = pre-run state; validated_premises byte-identical to its backup).
+- The independent parse matched on items, cycles and dates: the same 14 due items (710-723), cycle 0 -> 1, next 11-29; the same held cohorts (701-709, 687, 697-700, 656, 696, 10-25/10-18/10-11), 0 re-trigger blocks consumed since 10-17; the same 688 and 699 findings; no new stale flag.
+- **One lane difference:** this instance routed MONITOR-721/-722 to [QUEUED-EMPIRICAL] (every condition 15c named is a wiki-wording check, no read). The committed [QUEUED] is kept (Rule 7: first commit, and 15c may re-route either way). Flagged for 15c.
+- **Backlog count correction:** queue_scan.py after the commit reads **160** bare literature-lane items (151 before; '2026-11' bucket 14 -> 23). The +9 equals the 9 literature re-trigger blocks just filed, and 142 -> 151 equals the 9 filed on 11-15. So the scan counts 15d re-trigger blocks as bare backlog; the "backlog grew" line above reflects 15d's own re-queues, not new unsearched intake. Earlier "unchanged at 142" readings (11-08, 11-15) are not reconciled with this.
+- **For Tom:** sixth double firing (10-04, 10-25, 11-01, 11-08, 11-15, 11-22). The size/tag guard right before the write worked again.

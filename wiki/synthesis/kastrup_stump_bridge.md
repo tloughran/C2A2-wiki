@@ -77,3 +77,18 @@
 **Open question the wiki cannot yet answer:** Can analytic idealism supply a persisting person, or only persisting mind?
 
 **Wikilinks (sewing, 2026-11-08):** [[2026-11-04_kastrup_death-imagination-reality]]
+
+---
+
+## Blame and determination
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/2026-11-18_kastrup_everything-determined-gives-life-meaning.md` (0 backlinks).
+
+**Why it sits here:** Kastrup calls blame "metaphysically naive" under determinism; Thomist moral responsibility needs a will that is the source of its acts.
+
+**Synthesis claim.** The dispute turns on whether acting from "what you are" counts as self-determination (Stump) or as being determined (Kastrup).
+
+**Open question the wiki cannot yet answer:** Is there a case where Kastrup and Stump would assign different responsibility to the same act, and what decides it?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-18_kastrup_everything-determined-gives-life-meaning]]

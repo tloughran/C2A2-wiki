@@ -164,3 +164,18 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 **Open question the wiki cannot yet answer:** Is the sacred, for either, only a mode of attention, or also something real that attention discloses?
 
 **Wikilinks (sewing, 2026-11-15):** [[2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred]]
+
+---
+
+## The second gaze as right-hemisphere attention
+*Sewing Agent, 2026-11-22*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-11-22_rohr_art-leads-us-to-the-depths-second-gaze.md` (0 backlinks).
+
+**Why it sits here:** Rohr defines contemplation as seeing a thing in its particularity and its larger frame at once. McGilchrist's right hemisphere attends to the particular in context.
+
+**Synthesis claim.** Contemplative "second gaze" and right-hemisphere attention name one mode of seeing from two sides: one practised, one described neurologically.
+
+**Open question the wiki cannot yet answer:** Does contemplative training measurably shift attention toward the right-hemisphere mode, and is "joy" a reliable marker of it?
+
+**Wikilinks (sewing, 2026-11-22):** [[2026-11-22_rohr_art-leads-us-to-the-depths-second-gaze]]
