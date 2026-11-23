@@ -1,188 +1,193 @@
 {
   "seed": false,
-  "generated": "2026-11-22",
-  "generated_at": "2026-11-22T18:07:25Z",
+  "generated": "2026-11-23",
+  "generated_at": "2026-11-23T22:17:06Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 144,
-    "high_relevance": 0,
-    "primary_themes": "Capability Jump + Misuse Security"
+    "items_checked": 221,
+    "high_relevance": 1,
+    "primary_themes": "Capability Jump + Governance Policy"
   },
   "signals": [
     {
-      "title": "Artificial Intelligence and Organizational Transformation",
-      "source": "Hacker News (AI)",
-      "url": "https://medium.com/@smoking2man/artificial-intelligence-and-organizational-transformation-the-formalization-of-knowledge-changes-6bffb92e2226",
+      "title": "Cross-Platform Production Signatures of State-Linked Information Operations",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.27137",
+      "relevance": 2,
+      "tags": [],
+      "summary": "An information operation active on several platforms presents different names, personas, and topics on each. Its working routine is harder to change.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.365219+00:00",
+      "long_summary": "An information operation that is active across multiple platforms uses various names, personas, and topics specific to each platform, making it more challenging to alter its operational tactics. This complexity can complicate efforts to identify and counteract these operations due to the discrepancies in presentation across platforms. Understanding these cross-platform production signatures is crucial as it highlights the adaptive nature of information operations and the strategic considerations involved in addressing them. This insight is relevant for a community keeping up with AI, as it sheds light on the evolving tactics of information dissemination and manipulation in the digital landscape.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
+      "source": "Import AI (Jack Clark)",
+      "url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
       "relevance": 1,
       "tags": [],
-      "summary": "Article URL: https://medium.com/@smoking2man/artificial-intelligence-and-organizational-transformation-the-formalization-of-knowledge-changes-6bffb92e2226 Comments URL: https://news.ycombinator.com/item?id=50405976 Points: 2 # Comments: 0",
+      "summary": "Which galaxy will you choose?",
       "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Sat, 07 Nov 2026 16:51:11 +0000",
-      "first_seen_at": "2026-11-22T18:07:22.419835+00:00",
-      "long_summary": "The article titled \"Artificial Intelligence and Organizational Transformation\" discusses the impact of AI on organizations, specifically how the formalization of knowledge through AI technologies transforms operations and decision-making processes within companies. Although the details of the discussion are not provided, it suggests that implementing AI can lead to significant changes in how organizations manage and utilize information. The importance of this transformation revolves around enhancing efficiency and effectiveness in organizational practices. Understanding these dynamics is crucial for the community to stay abreast of the evolving landscape of AI and its implications for business strategies and workflows.",
+      "published_at": "Mon, 10 Aug 2026 12:32:20 GMT",
+      "first_seen_at": "2026-11-23T22:16:58.880566+00:00",
+      "long_summary": "The source text offers no substantive information regarding AI developments or related topics. It consists solely of the question, \"Which galaxy will you choose?\" This brief text limits the ability to draw any meaningful conclusions or implications relevant to AI and the community. However, the phrasing suggests a thematic exploration of choices or possibilities, which may resonate with discussions around decision-making in AI contexts. Understanding how choices shape outcomes in AI can be crucial for a community engaged in AI education and development.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
+        "generated": "2026-11-23",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Artificial Intelligence in higher education – gov report (Norwegian)",
-      "source": "Hacker News (AI)",
-      "url": "https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/",
+      "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
+      "source": "Import AI (Jack Clark)",
+      "url": "https://importai.substack.com/p/import-ai-478-math-for-alignment",
       "relevance": 1,
       "tags": [],
-      "summary": "Article URL: https://www.regjeringen.no/no/dokumenter/nou-2026-14/id3191187/ Comments URL: https://news.ycombinator.com/item?id=50412439 Points: 1 # Comments: 4",
+      "summary": "What is “night” to a machine?",
       "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Sun, 08 Nov 2026 11:46:50 +0000",
-      "first_seen_at": "2026-11-22T18:07:22.413387+00:00",
-      "long_summary": "A Norwegian government report discusses the impact of artificial intelligence on higher education. The report explores various aspects of AI's integration into educational institutions, addressing potential benefits and challenges. Key areas highlighted include the enhancement of teaching, learning processes, and administrative efficiencies, alongside ethical considerations and implications for academic integrity. The discussions within the report aim to inform policy-making and guide the adoption of AI tools in academia. This matters for a community keeping up with AI as it emphasizes the importance of understanding how AI is reshaping educational landscapes and the necessity of responsible implementation.",
+      "published_at": "Mon, 26 Oct 2026 12:31:52 GMT",
+      "first_seen_at": "2026-11-23T22:16:58.870337+00:00",
+      "long_summary": "The source text poses the question of what \"night\" means for a machine, indicating an exploration of the challenges AI may face in understanding human concepts related to time and context. This matter reflects the broader complexities in AI training and alignment with human values and understanding. As AI development progresses, it becomes increasingly important for communities to consider how machines interpret and process human experiences, ensuring alignment with human expectations and needs.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
+        "generated": "2026-11-23",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
-      "source": "The Decoder",
-      "url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
-      "relevance": 1,
-      "tags": [],
-      "summary": "The Lean and Mathlib community has officially confirmed Levent Alpöge's proof of the Riemann hypothesis as correct. Dozens of independent verifiers checked the 17 million lines of computer code.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Sun, 22 Nov 2026 11:08:31 +0000",
-      "first_seen_at": "2026-11-22T18:07:14.531425+00:00",
-      "long_summary": "The Lean and Mathlib community has confirmed that Levent Alpöge's proof of the Riemann hypothesis is correct after it underwent rigorous verification. This involved dozens of independent verifiers who meticulously reviewed 17 million lines of computer code associated with the proof. The confirmation of such a significant mathematical result highlights the effective use of formal verification methods in mathematics and computer science. This matters for a community keeping up with AI as it exemplifies how AI tools can facilitate groundbreaking discoveries and enhance confidence in complex proofs.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Strengthening NATO and allied cyber defenses with AI",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
-      "relevance": 1,
-      "tags": [
-        "misuse_security"
-      ],
-      "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
-      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
-      "published_at": "Tue, 17 Nov 2026 00:00:00 GMT",
-      "first_seen_at": "2026-11-22T18:07:11.770987+00:00",
-      "long_summary": "OpenAI is collaborating with NATO and allied cyber agencies to enhance cybersecurity through the use of AI. The initiative focuses on assisting trusted defenders in identifying vulnerabilities, testing remedies, and safeguarding critical systems. This partnership aims to bolster defenses against potential cyber threats, ensuring that essential infrastructure remains secure. Understanding these developments is essential for a community looking to keep pace with advancements in AI's role in enhancing cybersecurity measures.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Managing frontier AI risk: From training to deployment",
-      "source": "OpenAI Blog",
-      "url": "https://openai.com/index/managing-frontier-ai-risk",
+      "title": "When Do LLM-Elicited Priors Help? A Controlled Audit of Language Models as Priors for Small-Sample Bayesian Regression",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.27075",
       "relevance": 1,
       "tags": [
-        "capability_jump"
+        "capability_jump",
+        "governance_policy"
       ],
-      "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.",
-      "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Wed, 18 Nov 2026 06:00:00 GMT",
-      "first_seen_at": "2026-11-22T18:07:11.761825+00:00",
-      "long_summary": "OpenAI discusses its approach to managing frontier AI risks throughout the process from training to deployment. Key strategies include model alignment, which aims to ensure that AI systems behave in ways that are consistent with human values. They also use sandboxing techniques to isolate AI models during testing, implementing blocking safeguards to prevent undesirable behaviors, and conducting ongoing monitoring to identify and mitigate potential risks. These measures are designed to help make AI more reliable and safe as it becomes more capable. Understanding these risk management strategies is crucial for the community as it navigates the evolving landscape of AI technologies.",
+      "summary": "Large language models (LLMs) are increasingly asked where to center the coefficients of a small-sample Bayesian regression, but the evidence is unclear: benchmarks are often built to match the prior and models may remember them. We audit this practice with one frontier and one flash-tier model, using hidden feature names, post-cutoff housing data and a pre-specified test that gives features the wrong descriptions.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.361841+00:00",
+      "long_summary": "The study presents an audit of using large language models (LLMs) to determine the coefficients for small-sample Bayesian regression. It highlights a key concern: benchmarks may align too closely with the prior, potentially leading models to retain this information. The research evaluates the effectiveness of this practice through experiments with both a frontier and a flash-tier model. By employing hidden feature names alongside post-cutoff housing data, the audit introduces a controlled testing framework that challenges the models with deliberately incorrect feature descriptions. This scrutiny aims to clarify under what circumstances LLM-elicited priors are beneficial. Understanding these dynamics is essential for the community to properly assess how LLMs can be integrated into statistical methodologies, ensuring that the tools we use in AI are reliable and robust.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
+        "generated": "2026-11-23",
         "kind": "machine-generated"
       }
     },
     {
-      "title": "Gemini 3.8 text-to-speech says hello",
-      "source": "Google DeepMind Blog",
-      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Gemini 3.8 text-to-speech says hello",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Wed, 23 Sep 2026 15:25:14 +0000",
-      "first_seen_at": "2026-11-22T18:07:24.896358+00:00",
-      "long_summary": "Gemini 3.8, a new text-to-speech system developed by Google DeepMind, has been announced with the capability to produce high-quality speech synthesis. This advancement highlights ongoing efforts in making AI-generated voice technology more natural and expressive. Understanding the implications of such technology is crucial for a community focused on AI, as it represents a significant step in enhancing human-computer interaction.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Advancing Private AI Compute with secure, server-side memory",
-      "source": "Google DeepMind Blog",
-      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Wed, 23 Sep 2026 16:00:57 +0000",
-      "first_seen_at": "2026-11-22T18:07:24.893851+00:00",
-      "long_summary": "Google DeepMind has introduced private, server-side memory to its Private AI Compute platform, aiming to enhance personal AI applications. This advancement focuses on improving privacy and security for AI tasks conducted on servers, rather than relying on local devices. By integrating this type of memory, the company hopes to bolster user protection while still enabling sophisticated AI capabilities. This development is significant for the community as it highlights ongoing efforts to ensure that AI technologies prioritize user privacy alongside performance and functionality.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Introducing Gemini 3.8 Live with Live Avatar",
-      "source": "Google DeepMind Blog",
-      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Introducing Gemini 3.8 Live with Live Avatar",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Thu, 24 Sep 2026 16:20:39 +0000",
-      "first_seen_at": "2026-11-22T18:07:24.891730+00:00",
-      "long_summary": "Gemini 3.8 Live has been introduced, featuring a Live Avatar. This development reflects ongoing advancements in AI technology. Staying informed about updates like Gemini 3.8 is essential for the community to understand the evolving landscape of artificial intelligence and its potential applications.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Introducing SynthID Bio",
-      "source": "Google DeepMind Blog",
-      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-      "relevance": 0,
-      "tags": [],
-      "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Wed, 30 Sep 2026 15:03:07 +0000",
-      "first_seen_at": "2026-11-22T18:07:24.889782+00:00",
-      "long_summary": "Google DeepMind has introduced a proof of concept for SynthID Bio, which focuses on watermarking AI-generated proteins without compromising their biological function. This innovation aims to create a method of identifying and tracking synthesized proteins, ensuring their integrity while maintaining their utility in biological applications. This development is significant as it highlights the intersection of AI and biotechnology, addressing concerns around the traceability of engineered biological materials. Understanding these advancements is crucial for a community committed to staying informed about the implications of AI in various fields, including life sciences.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Gemini 4 Argon: our next era of frontier intelligence",
-      "source": "Google DeepMind Blog",
-      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
-      "relevance": 0,
+      "title": "Beyond Prompt Heuristics: Assessing Child Safety Alignment in LLMs",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.26965",
+      "relevance": 1,
       "tags": [
         "capability_jump"
       ],
-      "summary": "Gemini 4 Argon: our next era of frontier intelligence",
+      "summary": "Child-safety taxonomies typically characterize safety risks through a predefined set of harm categories, and existing evaluations largely operationalize these categories using prompts that explicitly invoke them. However, child-safety considerations can also arise in seemingly benign requests that lack recognizable harm-category cues.",
       "implication": "Reassess role boundaries and human override for community deployments.",
-      "published_at": "Wed, 30 Sep 2026 20:01:45 +0000",
-      "first_seen_at": "2026-11-22T18:07:24.887442+00:00",
-      "long_summary": "Gemini 4 Argon represents a significant advancement in the field of artificial intelligence, signifying the start of a new era of frontier intelligence. This development indicates a notable improvement in AI capabilities that could lead to more sophisticated applications and solutions across various sectors. As AI continues to evolve, understanding this shift is crucial for anyone engaged in the AI community, as it highlights the direction and potential of future innovations and developments within the field. Staying informed about such advancements is essential for adapting to and leveraging these changes effectively.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.358153+00:00",
+      "long_summary": "The paper discusses the limitations of current child-safety evaluations in large language models (LLMs), which often rely on predefined harm categories signaled by specific prompts. It suggests that safety risks to children can emerge even from benign requests that do not use obvious indicators of harm. The authors propose moving beyond simple prompt heuristics to better assess potential risks in a broader range of contexts. This shift is important for understanding the nuanced ways LLMs may pose safety concerns, thereby helping communities to ensure that AI systems are aligned with child safety standards and better equipped to address hidden risks.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-22",
+        "generated": "2026-11-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Partially canonical axes in large language model representations",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.26920",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Large language models (LLMs) develop rich internal representations of language, but whether their individual coordinate axes carry meaning, or whether meaning is encoded only in directions in representation space, is still an open question. A common assumption is that individual axes in LLMs are arbitrary.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.356713+00:00",
+      "long_summary": "Large language models (LLMs) create complex internal representations of language, but there is ongoing debate regarding the significance of individual coordinate axes in these models. It remains unclear whether such axes convey specific meanings or if meaning is solely captured through the directions in the representation space. A prevailing assumption in the field is that the individual axes in LLMs are arbitrary. This discussion is important for understanding how LLMs function and could influence future developments in AI language processing and representation. Keeping abreast of these nuances is essential for a community engaged in AI to better grasp the underpinnings of LLM technologies and their implications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "How Long Will My Language Model Run? A Benchmark for Pre-Execution Runtime Prediction",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.26875",
+      "relevance": 1,
+      "tags": [
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Researchers submitting deep learning jobs to shared GPU clusters need runtime estimates to request time limits, choose hardware, and budget compute. Large language models (LLMs) offer a tempting shortcut: describe the job and ask.",
+      "implication": "Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.352238+00:00",
+      "long_summary": "Researchers working with deep learning jobs on shared GPU clusters require runtime estimates for effective time management, hardware selection, and budget planning. Large language models (LLMs) provide an appealing solution by allowing users to simply describe their job and request an estimate. This development highlights an innovative approach to managing computational resources, making the planning process more efficient for users. Understanding these advancements in AI technologies is crucial for the community to stay informed about how resource management can be optimized in deep learning environments.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "How Language Models Compress and Compare: Understanding Selection with Token Covariance Maps",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.26874",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Many language-model tasks reduce to selecting among structured alternatives, yet we still lack a simple picture of how a decoder-only transformer organizes an entire selection prompt across depth. We introduce token covariance maps, a prompt-level geometric view that tracks how token positions co-vary in hidden-state space at each layer.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.351118+00:00",
+      "long_summary": "The paper introduces the concept of token covariance maps to provide insight into how decoder-only transformers manage selection tasks involving structured alternatives. This approach offers a geometric perspective that visualizes the relationships between token positions within the hidden-state space across each layer of the model. By utilizing these maps, the authors aim to enhance understanding of the organizational structure of selection prompts in language models, an area that currently lacks clarity. This work is significant for the AI community as it sheds light on the mechanisms behind language model operations, which is crucial for developing more effective models and applications.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Cross-Linguistic Distinctive-Feature Constraints on Segmental Triphones: Evidence for Contrastive Dispersion",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.26837",
+      "relevance": 1,
+      "tags": [],
+      "summary": "Natural speech reflects articulatory and perceptual constraints, yet how these pressures shape consecutive segment transitions across languages remains underexplored. We analyze adjacent distinctive-feature distances in token-weighted segmental triphones across 17 Universal Dependencies corpora spanning nine language families, transcribed into IPA and mapped to 24 PanPhon features using Hamming and cosine metrics.",
+      "implication": "Track for context; no immediate governance action required.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.347447+00:00",
+      "long_summary": "The study examines how articulatory and perceptual constraints influence the transitions between consecutive speech segments across various languages. By analyzing distinctive-feature distances within token-weighted segmental triphones, the research utilizes data from 17 Universal Dependencies corpora across nine different language families. The segments are transcribed in the International Phonetic Alphabet (IPA) and mapped to 24 PanPhon features, employing Hamming and cosine metrics for analysis. This exploration into cross-linguistic segment transitions can provide insights into how different languages may utilize sound features, which is critical for understanding language processing and development in AI systems. Keeping up with these findings is essential for a community engaged in AI, as they illuminate the complexities of natural language understanding and can influence future AI language models.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-23",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "SkillPrivus: Uncovering PRIVacy of USe Harms in Agentic Skills",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2611.26747",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Agent skills extend AI assistants through installable instructions and code that can access users' files, accounts, and data. Even when performing their advertised tasks, skills may infer sensitive attributes, retain unnecessary information, or disclose data to unexpected recipients.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
+      "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
+      "first_seen_at": "2026-11-23T22:16:58.336486+00:00",
+      "long_summary": "Agent skills enhance AI assistants by allowing them to utilize installable instructions and code, which can gain access to users' files, accounts, and data. However, even when these skills perform their intended functions, they may still infer sensitive attributes, retain extraneous information, or reveal data to unintended recipients. This raises significant privacy concerns regarding the management of personal information in the context of AI capabilities. Understanding these issues is crucial for the community as it highlights the need for careful governance and policy frameworks to protect user privacy in an increasingly interconnected digital landscape.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-23",
         "kind": "machine-generated"
       }
     }
