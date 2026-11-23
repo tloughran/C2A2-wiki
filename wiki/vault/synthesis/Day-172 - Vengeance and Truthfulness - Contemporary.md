@@ -3,10 +3,10 @@ day: 172
 title: Vengeance & Truthfulness (Contemporary)
 pairs_with: "[[Day-172 - Vengeance and Truthfulness]]"
 length_target_words: 1500
-length_actual_words: 1565
+length_actual_words: 1645
 length_tier: short
-length_ratio_to_target: 1.043
-length_note: "QC 2026-11-15: +33 words from the supersession-limb label (QC policy - supersession limb); new total 1565, ratio 1.043. Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution. CORRECTED 2026-08-30 QC: the stored count of 1148 was stale by ~300 words and the declared 0.77 was never true after the 08-19 unbundling pass. A body recount reads 1452 before this pass and 1532 after — ratio 1.021, comfortably in band. The 'deliberately compact' framing above was written for the original draft and no longer describes the file; it is retained because the reason it gives is still the right one, but the number it was defending was wrong. This pass added ~80 words scoping McGilchrist PRS-01."
+length_ratio_to_target: 1.097
+length_note: "QC 2026-11-22: +80 words anchoring the Rohr bridge to PRS-104/PRS-73 and stating the Wright declination radius; new total 1645 (body from H1 to footer, letters and apostrophes), ratio 1.097, in band. QC 2026-11-15: +33 words from the supersession-limb label (QC policy - supersession limb); new total 1565, ratio 1.043. Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution. CORRECTED 2026-08-30 QC: the stored count of 1148 was stale by ~300 words and the declared 0.77 was never true after the 08-19 unbundling pass. A body recount reads 1452 before this pass and 1532 after — ratio 1.021, comfortably in band. The 'deliberately compact' framing above was written for the original draft and no longer describes the file; it is retained because the reason it gives is still the right one, but the number it was defending was wrong. This pass added ~80 words scoping McGilchrist PRS-01."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; honest signaling; cooperation maintenance)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry and cultural impoverishment; the grasping-vs-relational reading of the corrector's disposition is this commentary's extension, not the record's scope)"
@@ -14,12 +14,12 @@ karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan / non-propositional second-person knowledge)"
   - "Stump canonical: medicinal punishment in the Thomistic tradition — no PRS-form record of this in the wiki; cited to the work, not to an id"
   - "Wright canonical: Rom 12:19 ('vengeance is mine, says the Lord'); the cross as God absorbing rather than retaliating; truth as covenant faithfulness"
-  - "Rohr canonical: breaking the retributive cycle; True Self vs False Self"
+  - "traditions/rohr/prs_triplets.md (PRS-104 exclusion as the foundation of violence, overcoming evil without becoming evil, Medium; PRS-73 false self as scope/substitution failure, High). Anchored 2026-11-22, replacing 'Rohr canonical: breaking the retributive cycle; True Self vs False Self'"
 evidence_strength_summary: "Altruistic punishment and cooperation maintenance are empirical, from the experimental game-theory literature. The active-inference framing rests on Friston PRS-06, which the wiki marks (Implicit) at Medium — a reconstruction of the multi-agent extension, so a well-posed framing rather than a derived result; it should not be read as sharing the game-theory findings' support. Levin PRS-17/18 are High and in-domain; Stump PRS-11 is High. Medicinal punishment is cited to the work, with no PRS-form record in the wiki and no id asserted. The absorb-rather-than-retaliate reading and True-Self truthfulness are theological (Wright/Rohr)."
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-11-14T20:21:47"
+last_qc_at: "2026-11-22T02:20:09"
 last_qc_outcome: "rewrote"
 ---
 
@@ -62,8 +62,8 @@ Loving unity is computed by perspective-limited agents who must both correct def
 - **PRS-17 + PRS-18 in the Levin-tradition wiki** (bioelectricity as the cognitive glue constituting a collective knower above the level of the single cell; cancer reframed as a *decision problem* for that collective rather than a purely genetic failure) — the biological instance of the day's structure: a member whose goal-state has come apart from the collective's, and a correction aimed at restoring the shared target rather than at destroying the member. *Empirical.*
 - **PRS-11 in the Stump-tradition wiki** (Franciscan knowledge — non-propositional, second-person) — truthfulness as self-giving-to-be-known rather than as accurate report. *Philosophical.*
 - **Stump on medicinal punishment (cited to the work, not to an id)** — punishment ordered to the good of the one corrected. The C2A2 Stump wiki has no PRS-form record of this; PRS-05 is suffering-and-divine-permission, which is an adjacent but distinct claim, so no id is asserted here. *Philosophical.*
-- **Wright (Rom 12:19; the cross)** — ultimate vengeance reserved to God who absorbs rather than retaliates; truth as covenant faithfulness. *Theological / scriptural.*
-- **Rohr (breaking the retributive cycle; True/False Self)** — gospel as the end of escalation; truthfulness as living from the True Self. *Theological / contemplative.*
+- **Wright (Rom 12:19; the cross)** — ultimate vengeance reserved to God who absorbs rather than retaliates; truth as covenant faithfulness. Carried canonically: DECLINATION (QC 2026-11-22), the Wright register searched for *vengeance / Romans 12 / retribution / punish / absorb* returns no record on this claim. *Theological / scriptural.*
+- **PRS-104 in the Rohr-tradition wiki** (exclusion as violence's foundation; Jesus resolves rather than merely opposes violence by building an inclusive pattern, "overcoming evil without becoming evil"; **Medium**, a theological/phenomenological claim with no external data per the record) — gospel as the end of escalation. **With PRS-73** (the false self as a scope and substitution failure, a partial self "posing as the real thing"; **High**) — truthfulness as living from the True Self rather than performing the False Self. *Theological / contemplative.* (Anchored 2026-11-22; previously canonical-only.)
 
 ## Where this leaves us
 

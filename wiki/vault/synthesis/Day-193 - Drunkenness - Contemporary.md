@@ -17,7 +17,7 @@ evidence_strength_summary: "Voluntary loss of reason as self-disabling of the co
 mind_first_reframe: "Drunkenness is an agent deliberately disabling the self-model that minimizes its own long-run error; its culpability is the culpability of dismantling one's own controller, and what redeems the structurally identical anesthesia case is that the loss of reason is itself ordered by reason."
 central_theme_thread: "A perspective works out its salvation only while it can reason; to voluntarily extinguish reason is to abandon the computation toward loving unity midstream — the gravest move available short of corrupting the end itself."
 tags: [synthesis, day/193, theme/self-regulation]
-last_qc_at: "2026-11-15T04:18:24"
+last_qc_at: "2026-11-22T14:17:55"
 last_qc_outcome: "pass"
 ---
 
