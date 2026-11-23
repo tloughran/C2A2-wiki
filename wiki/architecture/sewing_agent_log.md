@@ -2038,3 +2038,11 @@ Stump 8, Loughran 8, Levin 5, Kastrup 4, Wolfram 4, Friston 4, Rohr 3, Fredricks
 Before writing: each page asserted to exist with no Agentic Calls heading; every bridge file asserted present; every wikilink in new calls and bridges asserted to resolve to an existing stem. After writing: backlink map rebuilt (table above); all 10 pages now have at least 1 backlink. Content only appended; nothing deleted; nothing committed.
 
 *Logged by Sewing Agent on 2026-11-22.*
+
+---
+
+## Run: 2026-11-22 (second firing, local Cowork schedule) — NO-OP, run already complete
+
+The weekly run above already finished today, and `connectivity_log.csv` already has a 2026-11-22 row. Nothing was re-run: no census, no new calls, no bridge notes, no CSV row. Desktop Commander was declined (no one present to approve it), and the sandbox shell was not used, per the three-tier rule. This is the duplicate local schedule named in item 5 above. Recommend disabling it.
+
+*Logged by Sewing Agent on 2026-11-22.*

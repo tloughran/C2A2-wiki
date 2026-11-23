@@ -165,8 +165,8 @@ WATCH-006:
   Check method: File check — pending/ for PROP-2026-10-13-001 revised copy; macintyre PRS triplet files for the overlap passages (pp.116, 124-126, 202-205, 229, 233, 134, 33). No sewing-agent definition exists in agents/ (only 01-20), so ownership is unclear.
   Check cadence: Weekly
 
-  Last checked: 2026-11-21
-  Check count: 9
+  Last checked: 2026-11-23
+  Check count: 10
   Result history:
     - 2026-10-17: Intake. Classified as agent action / possibly human. No revised copy in pending/. Condition NOT met. Flag: no "sewing agent" in agents/; Tom to confirm which agent/session owns this. Also PROP-2026-10-13-001/-002 ID collision still open.
 
@@ -178,6 +178,7 @@ WATCH-006:
     - 2026-11-14: On-cadence check; count now **7**. `pending/` holds 5 files (Fredrickson ×2, Friston, Stump, Carroll AMA 11-13); none is MacIntyre or PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39; `architecture/sewing_agent_log.md` unchanged since 2026-11-08 04:43; needs_review card mtime unchanged (10-17). No Tom ruling found in vault files newer than the last watch-list write. Condition NOT met. Still STALE. Event trigger: Sewing Agent run 2026-11-15, expected to skip `needs_review/` again unless Tom picks option (a). Next on-cadence check 2026-11-21.
     - 2026-11-16 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **8**; next on-cadence check stays 2026-11-21): the Sewing Agent's 2026-11-15 run is now logged in `architecture/sewing_agent_log.md` (`## Run: 2026-11-15`, cloud ~09:35 UTC, plus a no-op local duplicate; file synced 11-15 22:00, after both 11-15 Agent 16 firings, which is why they did not see it). It processed 10 pages (6 `pending/` cards, the Hawkins `needs_review/` card, 3 `inbox/` items). It did **not** process the MacIntyre card: grep of the 11-15 entry for MacIntyre / 10-13-001 / 3RV finds nothing, and the card's mtime is still 10-17. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39. `pending/` (10 files) holds no MacIntyre item and no copy of PROP-2026-10-13-001. Condition NOT met. Still STALE. Note: the Sewing Agent *did* take one `needs_review/` card this week (Hawkins), so its rule is not a blanket skip of `needs_review/`; it picked unlinked cards up to its batch cap of 10 and the MacIntyre card was not chosen. Option (a) of the stale flag (Tom tells the Sewing Agent to take this card) still stands.
     - 2026-11-21: On-cadence check; count now **9**. `pending/` holds 2 files (Carroll ×2, 11-20); neither is MacIntyre or PROP-2026-10-13-001. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39; `architecture/sewing_agent_log.md` unchanged since 2026-11-15 22:00 (next Sewing run expected Sun 11-22); needs_review card mtime unchanged (10-17). Neither new decision record (11-20 archive file, 11-20 email) names this item. Condition NOT met. Next on-cadence check 2026-11-28 (off-cadence on the 11-22 Sewing log entry).
+    - 2026-11-23 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **10**; next on-cadence check stays 2026-11-28): the Sewing Agent's 2026-11-22 run is now logged in `architecture/sewing_agent_log.md` (`## Run: 2026-11-22`, cloud ~09:34 UTC, plus a no-op local second firing; file synced 11-22 22:00, after both 11-22 Agent 16 firings). It processed 10 pages (5 `pending/` cards: Rohr ×2, Wright ×2, Wolfram 11-21; 5 `inbox/` items: Carroll, Kastrup, McGilchrist, Levin, Fredrickson), injected 47 calls and appended 10 bridge sections. grep of the 11-22 section for `macintyre` / `PROP-2026-10-13-001` / `prs_triplets`: **zero matches** — the run did not take up the MacIntyre overlap task. `traditions/macintyre/prs_triplets.md` unchanged since 2026-10-16 04:39; `pending/` (5 files) holds no MacIntyre item or copy of PROP-2026-10-13-001; needs_review card mtime unchanged (10-17). Condition NOT met. Ownership still unresolved: the Sewing Agent's processing scope (backlink-poor pages) does not include this task unless Tom assigns it.
 
   On resolution:
     Action: re-queue proposal to pending/ with note
@@ -7855,3 +7856,17 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run (none due). No notification sent: nothing resolved or newly stale.*
 
 *Duplicate firing (~07:40 UTC, three minutes after the 11-22 run above). Re-checked: `needs_review/` (5 files, all [TRACKED-16], unchanged), `review/archive/` (still 34, latest `2026-11-21_decisions.md`), Sewing log unchanged (mtime 11-16 03:00 UTC; 11-22 Sewing run not yet written), no vault `.md` outside deferred/ newer than the 07:37 write. No items due; nothing routed; no notification sent.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-23
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-22 run (latest mtime Hawkins card 11-15 04:36). New items added: 0.
+  Decisions: `review/archive/` still 34 files (latest `2026-11-21_decisions.md`); Gmail `subject:C2A2-review-decision after:2026/11/20` returns only the already-archived 11-20 thread (1a1f9dea1e9c7196). No new decision, so no off-cadence trigger for WATCH-003/-007.
+  Items checked: 1 — WATCH-006 (off-cadence, check 10): the awaited 11-22 Sewing run has now written; it processed 10 other pages and did not touch the MacIntyre overlap task or `prs_triplets.md`. NOT met. The Sewing run also did not touch the Hawkins card (WATCH-007) or any other watched card.
+  Off-cadence sweep (not counted): Fredrickson card unchanged (WATCH-004 sentence still at line 38); no Wonderstruck transcript in the vault (WATCH-005). Vault `.md` files newer than the 11-22 write (outside deferred/) hold no Tom ruling on any watched ID; the only fresh mention is the 11-22 cowork summary noting that WATCH-006's "hadn't written" was true only at the morning check.
+  Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 4 (WATCH-003, -004, -005, -006; existing flags stand, no new STALE-WATCH-FLAG) · WATCH-007 at 5 checks, goes stale if its 11-26 check finds nothing.
+  Next scheduled checks: WATCH-007 11-26 · WATCH-003/-004 11-27 · WATCH-005/-006 11-28 (WATCH-006 also off-cadence on the 11-29 Sewing run) · any new decision file/email triggers WATCH-003/-007 off-cadence.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run (none due). No notification sent: nothing resolved or newly stale.*
+
+*Duplicate firing (~07:40 UTC, two minutes after the 11-23 run above). Re-checked: `needs_review/` (5 files, all [TRACKED-16], unchanged), `review/archive/` (still 34, latest `2026-11-21_decisions.md`), Sewing log unchanged since the 11-23 03:00 sync already read by the 07:38 run, no vault `.md` outside deferred/ newer than the 07:38 write. No items due; nothing routed; no notification sent.*

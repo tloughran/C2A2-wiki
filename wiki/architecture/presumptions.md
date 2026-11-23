@@ -27383,15 +27383,15 @@ PRESUMPTION-1260:
   Testability: testable via literature (perceived authenticity and attribution with disclosed synthetic voices)
   Risk if wrong: Medium-High: audiences may attribute to Tom claims he never voiced; this is the provenance failure the honesty layer exists to prevent.
   Confidence: high
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Weak-to-Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1156 -> REVISE-548 (cloud-lit 2026-11-22)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c -> 14b]
     Original item: PRESUMPTION-1260
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 PRESUMPTION-1261:
   Date surfaced: 2026-11-21
@@ -27423,15 +27423,15 @@ PRESUMPTION-1262:
   Testability: testable via literature (automation bias and blanket approval of AI recommendations)
   Risk if wrong: Medium: delegated calls may set defaults (voice, plates, captions) that later films inherit without review.
   Confidence: medium
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Weak); 15b CHALLENGED (Moderate-to-Strong); DISPOSITION-1157 -> REVISE-549 (cloud-lit 2026-11-22)
   Provenance:
     Origin: 14b
-    Chain: [14b]
+    Chain: [14b -> 15a, 15b -> 15c -> 14b]
     Original item: PRESUMPTION-1262
     Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
       14b: Inferred from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 PRESUMPTION-1263:
   Date surfaced: 2026-11-21
@@ -27454,3 +27454,5 @@ PRESUMPTION-1263:
     Current status: UNTESTED
 
 *2026-11-21 14b: PRESUMPTION-1260 (normative, Medium-High), 1261 (normative, Medium), 1262 (methodological, Medium), 1263 (epistemic, Medium). Checked against 14a 2161-2166 and the registry (no prior entries on cloned/synthesized voice, HeLa or blanket approval). Not re-surfaced (already registered; new evidence today): permission prompt halts unattended run (PRESUMPTION-942; evening sync blocked again); copies reading only their own artifacts (PRESUMPTION-1256; morning status 23 vs scheduler 27); tool parity between copies (PRESUMPTION-1196; cloud 14ab thirteenth no-transcript firing). Scaling: none new today.*
+
+*2026-11-22 14b (local pass): no new presumptions (no primary source). Status updates from lit returns applied to 1260 (REVISE-548) and 1262 (REVISE-549). Not re-surfaced (already registered; new evidence today): the evening sync withheld delivery because the only active chats were in-use film threads (cf. PRESUMPTION-942 family on unattended delivery); the scheduler's "disable the 27 local copies" advice would include the local 14a/14b, the only copy with transcript access (PRESUMPTION-1196, tool parity between copies). Max PRESUMPTION-1263.*

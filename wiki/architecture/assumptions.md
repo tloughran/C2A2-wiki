@@ -40773,15 +40773,15 @@ ASSUMPTION-2161:
   Type: methodological
   Related decisions: PRESUMPTION-1260; 14_honesty_layer
   Testability: testable via literature (effects of AI/synthetic-media disclosure labels on audience trust and attribution)
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1154 -> MONITOR-729 (cloud-lit 2026-11-22)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c -> 14a]
     Original item: ASSUMPTION-2161
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 ASSUMPTION-2162:
   Date identified: 2026-11-21
@@ -40807,15 +40807,15 @@ ASSUMPTION-2163:
   Type: methodological
   Related decisions: PRESUMPTION-1261
   Testability: testable via literature (scholarship on HeLa consent, the 2013 NIH-Lacks family agreement and its scope, norms for using HeLa imagery)
-  Status: UNTESTED
+  Status: SEARCHED — 15a PARTIALLY-SUPPORTED (Moderate); 15b PARTIALLY-CHALLENGED (Moderate); DISPOSITION-1155 -> REVISE-547 (cloud-lit 2026-11-22)
   Provenance:
     Origin: 14a
-    Chain: [14a]
+    Chain: [14a -> 15a, 15b -> 15c -> 14a]
     Original item: ASSUMPTION-2163
     Item type: ASSUMPTION (stated)
     Transform at each step:
       14a: Extracted from local pass 2026-11-21 (final assistant message via session_info: evening sync e559612c, scheduler health 9412d8c1, morning status ff8c519a; plus daily_sync/chat_to_cowork/2026-11-21_chat_summary.md, daily_sync/cowork_to_chat/2026-11-21_cowork_summary.md (incl. local addendum), changelog/2026-11-22_changes.md (cloud 14ab note) and review/lit_pipeline.lock read directly). SECOND-HAND for film-thread content: Chat recap as scraped 08:56 EST, messages ~10-25 unread
-    Current status: UNTESTED
+    Current status: SEARCHED
 
 ASSUMPTION-2164:
   Date identified: 2026-11-21
@@ -40869,3 +40869,5 @@ ASSUMPTION-2166:
     Current status: UNTESTED
 
 *2026-11-21 14a (local pass): ASSUMPTION-2161-2166 (6). Queued: 2161, 2163 (literature); 2162 [IN-HOUSE]. 2161-2164 are second-hand (Chat recap of the 11-20 film thread; messages ~10-25 unread). Today's walk not registered (topic list only; ASSUMPTION-2165). Status updates from lit returns applied to 2147, 2149, 2153, 2157; 2159 marked SUPPORTED (in-house observation).*
+
+*2026-11-22 14a (local pass): no new assumptions. No interactive Cowork session and no walk chat today; the only C2A2 content is a topic-list recap of Saturday's walk (not registrable per ASSUMPTION-2165) and unscraped film/audio Chat threads. Status updates from lit returns applied to 2161 (MONITOR-729) and 2163 (REVISE-547). Max ASSUMPTION-2166.*

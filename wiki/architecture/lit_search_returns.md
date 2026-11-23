@@ -53253,7 +53253,7 @@ RETURN-TO-14a:
   Search direction: AGAINST (disconfirmatory)
   Result: PARTIALLY-CHALLENGED
   Strength: Moderate
-  Key source: Wallot, Mitkidis, McGraw & Roepstorff, 2016. "Beyond synchrony: joint action in a complex production task reveals beneficial effects of decreased interpersonal 
+  Key source: Wallot, Mitkidis, McGraw & Roepstorff, 2016. "Beyond synchrony: joint action in a complex production task reveals beneficial effects of decreased interpersonal
   Specific risk: If C2A2 uses "friction falling" as a health signal for dyads or tradition dialogues, it would reward convergence that the literature associates with lost novelty.
   Summary: The claim joins two markers (novel joint output; falling friction) under one word.
   Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-2147_against.md
