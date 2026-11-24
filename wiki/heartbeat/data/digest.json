@@ -1,15 +1,35 @@
 {
   "seed": false,
-  "generated": "2026-11-23",
-  "generated_at": "2026-11-23T22:17:06Z",
+  "generated": "2026-11-24",
+  "generated_at": "2026-11-24T20:55:00Z",
   "window": "weekly",
   "metrics": {
     "sources_reached": 19,
-    "items_checked": 221,
+    "items_checked": 127,
     "high_relevance": 1,
     "primary_themes": "Capability Jump + Governance Policy"
   },
   "signals": [
+    {
+      "title": "Dozens of insiders say OpenAI and Anthropic's unreleased models have outgrown their safety measures",
+      "source": "The Decoder",
+      "url": "https://the-decoder.com/dozens-of-insiders-say-openai-and-anthropics-unreleased-models-have-outgrown-their-safety-measures/",
+      "relevance": 1,
+      "tags": [
+        "capability_jump",
+        "market_platform"
+      ],
+      "summary": "According to an Axios report, many employees at OpenAI and Anthropic believe the companies' own unreleased frontier models can no longer be safely controlled. Both companies are internally debating whether to halt releases or even stop training altogether, while employee trust in leadership is eroding.",
+      "implication": "Reassess role boundaries and human override for community deployments. Monitor adoption pressure and revise formation cadence for tool onboarding.",
+      "published_at": "Tue, 24 Nov 2026 14:02:31 +0000",
+      "first_seen_at": "2026-11-24T20:54:51.788195+00:00",
+      "long_summary": "Many employees at OpenAI and Anthropic reportedly believe that their unreleased frontier models have surpassed the existing safety measures, raising concerns about safe control. This has led to discussions within the companies about potentially halting future releases or even ceasing training altogether. Additionally, there is growing dissatisfaction among employees regarding trust in the leadership. This situation highlights the critical challenges tech companies face in balancing innovation with safety, which is essential for communities staying informed and prepared for developments in AI technology.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-24",
+        "kind": "machine-generated"
+      }
+    },
     {
       "title": "Cross-Platform Production Signatures of State-Linked Information Operations",
       "source": "arXiv cs.CL",
@@ -19,45 +39,11 @@
       "summary": "An information operation active on several platforms presents different names, personas, and topics on each. Its working routine is harder to change.",
       "implication": "High relevance to C2A2 operations; include in next leadership brief.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.365219+00:00",
-      "long_summary": "An information operation that is active across multiple platforms uses various names, personas, and topics specific to each platform, making it more challenging to alter its operational tactics. This complexity can complicate efforts to identify and counteract these operations due to the discrepancies in presentation across platforms. Understanding these cross-platform production signatures is crucial as it highlights the adaptive nature of information operations and the strategic considerations involved in addressing them. This insight is relevant for a community keeping up with AI, as it sheds light on the evolving tactics of information dissemination and manipulation in the digital landscape.",
+      "first_seen_at": "2026-11-24T20:54:50.857100+00:00",
+      "long_summary": "An information operation that is active across multiple platforms showcases distinct names, personas, and topics on each platform, suggesting a tailored approach to engage specific audiences. However, the operational routines behind these information campaigns tend to remain consistent, indicating that while the surface presentation varies, the underlying strategies are not as flexible. This highlights the complexities involved in state-linked information operations as they adapt to different digital spaces. Understanding these dynamics is crucial for communities aiming to keep up with AI developments, as it informs how information can be manipulated and disseminated across diverse media.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Import AI 468: 23 RSI ideas; PostTrainBench+; and how trust and transparency interplay with AI racing",
-      "source": "Import AI (Jack Clark)",
-      "url": "https://importai.substack.com/p/import-ai-468-23-rsi-ideas-posttrainbench",
-      "relevance": 1,
-      "tags": [],
-      "summary": "Which galaxy will you choose?",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Mon, 10 Aug 2026 12:32:20 GMT",
-      "first_seen_at": "2026-11-23T22:16:58.880566+00:00",
-      "long_summary": "The source text offers no substantive information regarding AI developments or related topics. It consists solely of the question, \"Which galaxy will you choose?\" This brief text limits the ability to draw any meaningful conclusions or implications relevant to AI and the community. However, the phrasing suggests a thematic exploration of choices or possibilities, which may resonate with discussions around decision-making in AI contexts. Understanding how choices shape outcomes in AI can be crucial for a community engaged in AI education and development.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
-        "kind": "machine-generated"
-      }
-    },
-    {
-      "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
-      "source": "Import AI (Jack Clark)",
-      "url": "https://importai.substack.com/p/import-ai-478-math-for-alignment",
-      "relevance": 1,
-      "tags": [],
-      "summary": "What is “night” to a machine?",
-      "implication": "Track for context; no immediate governance action required.",
-      "published_at": "Mon, 26 Oct 2026 12:31:52 GMT",
-      "first_seen_at": "2026-11-23T22:16:58.870337+00:00",
-      "long_summary": "The source text poses the question of what \"night\" means for a machine, indicating an exploration of the challenges AI may face in understanding human concepts related to time and context. This matter reflects the broader complexities in AI training and alignment with human values and understanding. As AI development progresses, it becomes increasingly important for communities to consider how machines interpret and process human experiences, ensuring alignment with human expectations and needs.",
-      "summary_provenance": {
-        "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -73,11 +59,11 @@
       "summary": "Large language models (LLMs) are increasingly asked where to center the coefficients of a small-sample Bayesian regression, but the evidence is unclear: benchmarks are often built to match the prior and models may remember them. We audit this practice with one frontier and one flash-tier model, using hidden feature names, post-cutoff housing data and a pre-specified test that gives features the wrong descriptions.",
       "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.361841+00:00",
-      "long_summary": "The study presents an audit of using large language models (LLMs) to determine the coefficients for small-sample Bayesian regression. It highlights a key concern: benchmarks may align too closely with the prior, potentially leading models to retain this information. The research evaluates the effectiveness of this practice through experiments with both a frontier and a flash-tier model. By employing hidden feature names alongside post-cutoff housing data, the audit introduces a controlled testing framework that challenges the models with deliberately incorrect feature descriptions. This scrutiny aims to clarify under what circumstances LLM-elicited priors are beneficial. Understanding these dynamics is essential for the community to properly assess how LLMs can be integrated into statistical methodologies, ensuring that the tools we use in AI are reliable and robust.",
+      "first_seen_at": "2026-11-24T20:54:50.851663+00:00",
+      "long_summary": "The study examines the effectiveness of large language models (LLMs) as priors for small-sample Bayesian regression, noting that current evaluations may be flawed since they often align the benchmarks with the model's memories of those priors. The authors conduct an audit involving one frontier model and one flash-tier model, employing hidden feature names, recent housing data, and a designed test that mislabels features. This approach aims to clarify when LLMs can beneficially influence the coefficients in Bayesian regression scenarios. Understanding the strengths and limitations of LLMs in these contexts is crucial for accurately applying AI in statistical modeling, which is important for the community to ensure informed use of AI tools in research and analysis.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -92,11 +78,11 @@
       "summary": "Child-safety taxonomies typically characterize safety risks through a predefined set of harm categories, and existing evaluations largely operationalize these categories using prompts that explicitly invoke them. However, child-safety considerations can also arise in seemingly benign requests that lack recognizable harm-category cues.",
       "implication": "Reassess role boundaries and human override for community deployments.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.358153+00:00",
-      "long_summary": "The paper discusses the limitations of current child-safety evaluations in large language models (LLMs), which often rely on predefined harm categories signaled by specific prompts. It suggests that safety risks to children can emerge even from benign requests that do not use obvious indicators of harm. The authors propose moving beyond simple prompt heuristics to better assess potential risks in a broader range of contexts. This shift is important for understanding the nuanced ways LLMs may pose safety concerns, thereby helping communities to ensure that AI systems are aligned with child safety standards and better equipped to address hidden risks.",
+      "first_seen_at": "2026-11-24T20:54:50.845602+00:00",
+      "long_summary": "Child-safety taxonomies identify safety risks through specific harm categories, but current evaluations mainly use prompts that explicitly mention these risks. The study highlights that child-safety concerns can emerge even in innocent-seeming queries that do not overtly suggest harm-related cues. This distinction emphasizes the complexity of ensuring safety for children in digital environments, suggesting existing methods might overlook potential risks. Understanding these nuances is crucial for developing advanced language models that prioritize child safety without relying solely on explicit prompts. This matters for a community keeping up with AI as it shows the need for more comprehensive safety evaluations beyond conventional methods.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -109,11 +95,11 @@
       "summary": "Large language models (LLMs) develop rich internal representations of language, but whether their individual coordinate axes carry meaning, or whether meaning is encoded only in directions in representation space, is still an open question. A common assumption is that individual axes in LLMs are arbitrary.",
       "implication": "Track for context; no immediate governance action required.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.356713+00:00",
-      "long_summary": "Large language models (LLMs) create complex internal representations of language, but there is ongoing debate regarding the significance of individual coordinate axes in these models. It remains unclear whether such axes convey specific meanings or if meaning is solely captured through the directions in the representation space. A prevailing assumption in the field is that the individual axes in LLMs are arbitrary. This discussion is important for understanding how LLMs function and could influence future developments in AI language processing and representation. Keeping abreast of these nuances is essential for a community engaged in AI to better grasp the underpinnings of LLM technologies and their implications.",
+      "first_seen_at": "2026-11-24T20:54:50.843660+00:00",
+      "long_summary": "Large language models (LLMs) create complex internal representations of language, but it remains unclear whether the individual coordinate axes of these models have inherent meaning or if meaning is solely embedded in the directional aspects of the representation space. The common belief is that the axes within LLMs are random and lack significance. This discussion highlights ongoing debates in the field about the interpretability of AI models and their internal workings, emphasizing the need for further exploration to understand how these representations function. For a community keeping up with AI, comprehending these nuances is crucial as it affects our understanding of AI behaviors and mechanisms.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -129,11 +115,11 @@
       "summary": "Researchers submitting deep learning jobs to shared GPU clusters need runtime estimates to request time limits, choose hardware, and budget compute. Large language models (LLMs) offer a tempting shortcut: describe the job and ask.",
       "implication": "Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.352238+00:00",
-      "long_summary": "Researchers working with deep learning jobs on shared GPU clusters require runtime estimates for effective time management, hardware selection, and budget planning. Large language models (LLMs) provide an appealing solution by allowing users to simply describe their job and request an estimate. This development highlights an innovative approach to managing computational resources, making the planning process more efficient for users. Understanding these advancements in AI technologies is crucial for the community to stay informed about how resource management can be optimized in deep learning environments.",
+      "first_seen_at": "2026-11-24T20:54:50.836313+00:00",
+      "long_summary": "Researchers working with deep learning jobs on shared GPU clusters often require runtime estimates to effectively manage their time limits, hardware selection, and compute budgeting. Large language models (LLMs) can assist by providing a streamlined approach where users can simply describe their job and receive predictive estimates for runtime, thereby simplifying the planning process. This development is significant for the community as it highlights an innovative use of LLMs to enhance the efficiency and effectiveness of managing computational resources in AI projects.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -146,11 +132,11 @@
       "summary": "Many language-model tasks reduce to selecting among structured alternatives, yet we still lack a simple picture of how a decoder-only transformer organizes an entire selection prompt across depth. We introduce token covariance maps, a prompt-level geometric view that tracks how token positions co-vary in hidden-state space at each layer.",
       "implication": "Track for context; no immediate governance action required.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.351118+00:00",
-      "long_summary": "The paper introduces the concept of token covariance maps to provide insight into how decoder-only transformers manage selection tasks involving structured alternatives. This approach offers a geometric perspective that visualizes the relationships between token positions within the hidden-state space across each layer of the model. By utilizing these maps, the authors aim to enhance understanding of the organizational structure of selection prompts in language models, an area that currently lacks clarity. This work is significant for the AI community as it sheds light on the mechanisms behind language model operations, which is crucial for developing more effective models and applications.",
+      "first_seen_at": "2026-11-24T20:54:50.834455+00:00",
+      "long_summary": "The paper introduces token covariance maps, a novel geometric perspective aimed at understanding how decoder-only transformers manage selection prompts across their layers. It highlights the organization of selection tasks in language models, which often involve choosing from structured alternatives. By providing insights into how token positions co-vary within the hidden-state space at various depths of the model, this approach seeks to clarify the complexities of language model operations. This development is important for the AI community as it can enhance our comprehension of language models, potentially leading to more effective applications and advancements in natural language processing.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -163,11 +149,11 @@
       "summary": "Natural speech reflects articulatory and perceptual constraints, yet how these pressures shape consecutive segment transitions across languages remains underexplored. We analyze adjacent distinctive-feature distances in token-weighted segmental triphones across 17 Universal Dependencies corpora spanning nine language families, transcribed into IPA and mapped to 24 PanPhon features using Hamming and cosine metrics.",
       "implication": "Track for context; no immediate governance action required.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.347447+00:00",
-      "long_summary": "The study examines how articulatory and perceptual constraints influence the transitions between consecutive speech segments across various languages. By analyzing distinctive-feature distances within token-weighted segmental triphones, the research utilizes data from 17 Universal Dependencies corpora across nine different language families. The segments are transcribed in the International Phonetic Alphabet (IPA) and mapped to 24 PanPhon features, employing Hamming and cosine metrics for analysis. This exploration into cross-linguistic segment transitions can provide insights into how different languages may utilize sound features, which is critical for understanding language processing and development in AI systems. Keeping up with these findings is essential for a community engaged in AI, as they illuminate the complexities of natural language understanding and can influence future AI language models.",
+      "first_seen_at": "2026-11-24T20:54:50.829172+00:00",
+      "long_summary": "Natural speech is influenced by articulatory and perceptual constraints, but how these factors affect consecutive segment transitions in different languages has not been thoroughly investigated. This study examines the adjacent distinctive-feature distances in token-weighted segmental triphones from 17 Universal Dependencies corpora across nine language families. The data is transcribed into the International Phonetic Alphabet (IPA) and mapped to 24 PanPhon features using both Hamming and cosine metrics. This research is significant for the community as it enhances understanding of language patterns and distinctions, which can inform AI developments in natural language processing and speech recognition.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     },
@@ -183,11 +169,30 @@
       "summary": "Agent skills extend AI assistants through installable instructions and code that can access users' files, accounts, and data. Even when performing their advertised tasks, skills may infer sensitive attributes, retain unnecessary information, or disclose data to unexpected recipients.",
       "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators.",
       "published_at": "Mon, 23 Nov 2026 00:00:00 -0500",
-      "first_seen_at": "2026-11-23T22:16:58.336486+00:00",
-      "long_summary": "Agent skills enhance AI assistants by allowing them to utilize installable instructions and code, which can gain access to users' files, accounts, and data. However, even when these skills perform their intended functions, they may still infer sensitive attributes, retain extraneous information, or reveal data to unintended recipients. This raises significant privacy concerns regarding the management of personal information in the context of AI capabilities. Understanding these issues is crucial for the community as it highlights the need for careful governance and policy frameworks to protect user privacy in an increasingly interconnected digital landscape.",
+      "first_seen_at": "2026-11-24T20:54:50.807097+00:00",
+      "long_summary": "Agent skills enhance AI assistants by incorporating installable instructions and code that enable access to users' files, accounts, and data. However, despite the intended functionality, these skills can inadvertently infer sensitive user attributes, retain excessive information, or reveal data to unintended parties even while completing their specific tasks. This highlights potential privacy risks associated with the deployment of these technologies. Understanding these risks is essential for the community to navigate the implications of AI on personal data security and governance.",
       "summary_provenance": {
         "model": "openai/gpt-4o-mini",
-        "generated": "2026-11-23",
+        "generated": "2026-11-24",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "source": "OpenAI Blog",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "relevance": 1,
+      "tags": [
+        "misuse_security"
+      ],
+      "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols.",
+      "published_at": "Tue, 17 Nov 2026 00:00:00 GMT",
+      "first_seen_at": "2026-11-24T20:54:49.567263+00:00",
+      "long_summary": "OpenAI is collaborating with NATO and allied cyber agencies to enhance cyber defenses by leveraging AI technologies. This partnership focuses on aiding trusted defenders in identifying vulnerabilities in systems, testing potential fixes, and ensuring the protection of critical infrastructure. By utilizing AI in these efforts, the goal is to bolster the overall cybersecurity posture of NATO and allied nations. Understanding this collaboration is crucial for a community keeping up with AI, as it highlights the role of AI in addressing pressing security challenges.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-11-24",
         "kind": "machine-generated"
       }
     }
