@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-194 - Virginity vs Marriage - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/194, pars/II, q/152]
-last_qc_at: "2026-11-15T04:18:24"
+last_qc_at: "2026-11-23T06:18:05"
 last_qc_outcome: "pass"
 ---
 

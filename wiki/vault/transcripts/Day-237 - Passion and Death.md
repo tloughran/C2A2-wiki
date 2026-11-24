@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-237 - Passion and Death - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/237, pars/III, q/49 q/50]
-last_qc_at: "2026-09-29T00:16:52"
+last_qc_at: "2026-11-23T20:17:53"
 last_qc_outcome: "pass"
 ---
 

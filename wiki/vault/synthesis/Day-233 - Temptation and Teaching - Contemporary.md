@@ -17,8 +17,8 @@ evidence_strength_summary: "The third temptation as defection-from-the-whole ~ L
 mind_first_reframe: "Temptation is read as the adversarial probe inviting a perspective to defect from the whole it belongs to; teaching is read as its constructive inverse — the calibrated disclosure of the whole to perspectives that can only receive it in doses."
 central_theme_thread: "Both questions are the central claim under stress-test: the devil's third offer is the refusal of perspective-limitation (seize the whole now, on the self's terms), while parables, Jews-first ordering, and the living page are limitation honored — the whole transmitted at the rate limited perspectives can compute."
 tags: [synthesis, day/233, theme/defection-and-calibrated-disclosure]
-last_qc_at: "2026-11-15T16:19:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-23T18:20:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 233 — Contemporary Parallel: Defection and the Dosed Whole
@@ -47,7 +47,7 @@ The shared inquiry-problem: **any system of limited agents oriented toward a com
 
 **(a) Shared with Aquinas:** temptation is real combat and its order is intelligible; teaching must be fitted to the hearer; the mission's order (Jews first, Gentiles through the apostles) is wisdom ordering all things sweetly, not favoritism. **(b) Reframed:** where Aquinas grounds both in the divine pedagogy, the monist reframe grounds both in the structure of limited perspectives as such. Temptation is the standing possibility of any individuated agent: to re-scale its goals to itself — defection, in Levin's exact sense. Teaching is the standing obligation of any fuller perspective toward narrower ones: disclosure at the receivable rate — interfaces, in Hoffman's exact sense. The Christ of Q.41-42 is then the dual master-case: the perspective that will not defect under escalating offers, and the teacher who doses the whole without ever despising the dose. **(c) Evidence strength:** Levin's defection data and Fredrickson-adjacent transmission claims are empirical in their home domains; Hoffman's interface results are formal-theoretic; the McGilchrist/Stump transmission claims are interpretive neuropsychology and philosophy; every bridge from these to Christology is speculative and offered as exploration; the historical frame (Israel's election-for-the-nations, the desert tradition) rests on strong scholarship.
 
-Difference from Aquinas made explicit: for Aquinas the devil is a personal agent probing an incarnate divine person; the reframe neither asserts nor deletes that, but relocates the analysis — temptation's *form* (recruited defection from the whole) and teaching's *form* (calibrated disclosure to parts) are general features of a reality made of nested limited perspectives, which is why the Gospel scenes read as paradigm cases rather than anomalies.
+Difference from Aquinas made explicit: for Aquinas the devil is a personal agent probing an incarnate divine person; the reframe neither asserts nor deletes that, but relocates the analysis — temptation's *form* (recruited defection from the whole) and teaching's *form* (calibrated disclosure to parts) are general features of a reality made of nested limited perspectives, which is why the Gospel scenes read as paradigm cases rather than anomalies. Placed plainly: nothing in Aquinas's answers to Q.41–42 is superseded. His conclusions survive intact; what is relocated is their grounding, and the divine pedagogy is kept and re-read as the structure of limited perspectives, not replaced by a different mechanism.
 
 ## The central-theme thread
 
