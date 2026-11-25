@@ -3,7 +3,7 @@ day: 245
 title: Baptism by Blood (Contemporary)
 pairs_with: "[[Day-245 - Baptism by Blood]]"
 length_target_words: 2200
-length_actual_words: 1003
+length_actual_words: 1004
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 attractor formalism; outcome equifinality)"
@@ -12,19 +12,19 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation — creation as the first incarnation; repointed from PRS-03 2026-09-15, see Bridges note)"
 evidence_strength_summary: "Equifinality empirical-in-domain (Levin PRS-03, Confidence High); disposition-as-operative-reality metaphysical (Kastrup PRS-02, High); covenant-membership framing theological (Wright PRS-34, High) and the heaven-earth-union framing theological (Wright PRS-36, Medium — graded separately, not bundled); baptism of blood/desire theological (Rohr PRS-21, Medium); central-theme claim well-aligned, transfer to a salvific terminus analogical and speculative."
 length_ratio_to_target: 0.456
-length_note: "Concise by design — a single-focus III Q.66 (baptism of blood/desire) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16). Recounted 2026-09-15 under the stated boundary (top frontmatter stripped, no auto-linker trailer on this file, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the pre-edit body measured 915, exactly the stored figure. The reviewer pass then added 88 words repointing the Rohr citation from PRS-03 to PRS-21 and naming the label trap that made PRS-03 look right — citation apparatus, not new argument; no theological claim on this day was added, removed or reweighted, and both records are Confidence Medium. Tier re-verified correct: the paired transcript's cleaned word_count is 2815, which the Summa.md table puts in medium."
+length_note: "Concise by design — a single-focus III Q.66 (baptism of blood/desire) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16). Recounted 2026-09-15 under the stated boundary (top frontmatter stripped, no auto-linker trailer on this file, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the pre-edit body measured 915, exactly the stored figure. The reviewer pass then added 88 words repointing the Rohr citation from PRS-03 to PRS-21 and naming the label trap that made PRS-03 look right — citation apparatus, not new argument; no theological claim on this day was added, removed or reweighted, and both records are Confidence Medium. Tier re-verified correct: the paired transcript's cleaned word_count is 2815, which the Summa.md table puts in medium. RECOUNT 2026-11-23 (reviewer): +1 words of Summa article anchors added to the Frame paragraph (criterion a), verified against the paired transcript's article headers; stored 1003 reproduced exactly before the edit, now 1004, ratio 0.456. No argument added."
 mind_first_reframe: "The operative reality of baptism is the dispositional form, which can reach its saving terminus by multiple equifinal routes because what governs the outcome is the attractor/disposition, not the particular material path."
 central_theme_thread: "Baptism of desire is the limit case where the resources are unavailable yet the agent's genuine orientation toward the whole suffices — grace meeting the perspective at the limit of its resources."
 tags: [synthesis, day/245, theme/form-without-matter]
-last_qc_at: "2026-11-15T20:18:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-23T22:18:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 245 — Baptism by Blood (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.66) distinguishes baptism of water, of blood (martyrdom), and of desire — holding that blood and desire can supply the effect of baptism where water is impossible. The medieval claim is that the *disposition* (faith, charity, willingness to die) can reach the same saving terminus as the material rite. The contemporary version under mind / conscious-realist monism: when many routes can reach one target state, what is the operative reality — the particular material path, or the disposition/form that the paths share?
+Aquinas (III Q.66 a.11) distinguishes baptism of water, of blood (martyrdom), and of desire — holding that blood and desire can supply the effect of baptism where water is impossible. The medieval claim is that the *disposition* (faith, charity, willingness to die) can reach the same saving terminus as the material rite. The contemporary version under mind / conscious-realist monism: when many routes can reach one target state, what is the operative reality — the particular material path, or the disposition/form that the paths share?
 
 ## Problem
 

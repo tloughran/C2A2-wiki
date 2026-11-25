@@ -16,8 +16,8 @@ length_ratio_to_target: 0.711
 mind_first_reframe: "Error voids marital consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — while mis-valued attributes of the right referent are tolerable error."
 central_theme_thread: "Marriage is undertaken across an irreducible epistemic gap — we consent to icons, never to the person seen whole — which is the central theme's 'fear and trembling' at the scale of the marrying pair."
 tags: [synthesis, day/283, theme/identity-tracking-and-consent]
-last_qc_at: "2026-11-16T12:17:48"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-11-24T14:17:04"
+last_qc_outcome: "pass"
 ---
 
 # Day 283 — Error & Slavery (Contemporary Parallel)

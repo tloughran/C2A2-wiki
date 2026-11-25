@@ -3,7 +3,7 @@ day: 242
 title: Judgement & Sacrament (Contemporary)
 pairs_with: "[[Day-242 - Judgement & Sacrament]]"
 length_target_words: 2200
-length_actual_words: 1246
+length_actual_words: 1250
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence)"
@@ -13,20 +13,20 @@ karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-04 formal and final causality)"
   - "SCOPE NOTE on the judgement half: all 41 Wright records read (2026-08-31); re-tested at the full 66-record register 2026-09-18 with the shape's vocabulary (judgement, rectification, setting right, vindication) and the absence holds. The register holds NO judgement-as-rectification / setting-right triplet — the nearest are PRS-05, PRS-11 and PRS-30, which establish the new-creation frame the setting-right reading presupposes but do not state it. The judgement claim is therefore carried by that frame plus Wright's published work, and the gap is named rather than papered over with a near-miss id."
 evidence_strength_summary: "Judgement-as-restoration theological (Wright); sign-that-effects read formal (Friston active inference); efficient causality across signs metaphysical; central-theme claim speculative."
-length_ratio_to_target: 0.566
-length_note: "Recounted 2026-09-18 on a stated boundary: every word between the metadata block and the auto-link line (title, all sections including Bridges and the closing paragraph), bare horizontal-rule separator lines dropped, regex letters-and-apostrophes; this count is 1246 words, ratio 0.566 against the 2200 target, outside the minus 25 percent band, informational per the length policy. The change since the stored figure is reviewer apparatus (grade disclosures, anchoring notes), not argument. Recounted 2026-08-31: true post-repair count 1199, ratio 0.545, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2879 words, medium band), so this is not a mistiering. The largest single repair in this queue sits here: three Bridges bullets (Wright, Rohr, Stump) carried NO PRS/CROSS/FLAG id at all and cited the Wright and Rohr wiki nodes rather than their PRS registers, the stale canonical-works fallback — both registers now exist (41 and 44 records). Anchoring them, and stating the one genuine absence found (no judgement-as-setting-right triplet in the Wright register), is what moved the count. The replaced note was a template also appearing on Days 241 and 243-246."
+length_ratio_to_target: 0.568
+length_note: "Recounted 2026-09-18 on a stated boundary: every word between the metadata block and the auto-link line (title, all sections including Bridges and the closing paragraph), bare horizontal-rule separator lines dropped, regex letters-and-apostrophes; this count is 1246 words, ratio 0.566 against the 2200 target, outside the minus 25 percent band, informational per the length policy. The change since the stored figure is reviewer apparatus (grade disclosures, anchoring notes), not argument. Recounted 2026-08-31: true post-repair count 1199, ratio 0.545, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2879 words, medium band), so this is not a mistiering. The largest single repair in this queue sits here: three Bridges bullets (Wright, Rohr, Stump) carried NO PRS/CROSS/FLAG id at all and cited the Wright and Rohr wiki nodes rather than their PRS registers, the stale canonical-works fallback — both registers now exist (41 and 44 records). Anchoring them, and stating the one genuine absence found (no judgement-as-setting-right triplet in the Wright register), is what moved the count. The replaced note was a template also appearing on Days 241 and 243-246. RECOUNT 2026-11-23 (reviewer): +4 words of Summa article anchors added to the Frame paragraph (criterion a), verified against the paired transcript's article headers; stored 1246 reproduced exactly before the edit, now 1250, ratio 0.568. No argument added."
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-11-15T20:18:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-23T22:18:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 242 — Judgement & Sacrament (Contemporary Parallel)
 
 ## Frame
 
-Two movements meet here: the close of the treatise on Christ (his judiciary power, III Q.59) and the opening of the treatise on the sacraments in general (III Q.60). Aquinas asks whether judiciary power belongs to Christ as man, and then begins to define a sacrament as a sign of a sacred thing that *sanctifies* — a sign that does not merely point but effects. The contemporary question is the relation between *evaluation of a whole* (judgement) and *signs that bring about what they signify* (sacraments). Under mind / conscious-realist monism: what kind of process is a sign that, by being enacted, produces the state it indicates?
+Two movements meet here: the close of the treatise on Christ (his judiciary power, III Q.59) and the opening of the treatise on the sacraments in general (III Q.60). Aquinas asks whether judiciary power belongs to Christ as man (Q.59 a.2), and then begins to define a sacrament as a sign of a sacred thing that *sanctifies* (Q.60 a.1-2) — a sign that does not merely point but effects. The contemporary question is the relation between *evaluation of a whole* (judgement) and *signs that bring about what they signify* (sacraments). Under mind / conscious-realist monism: what kind of process is a sign that, by being enacted, produces the state it indicates?
 
 ## Problem
 

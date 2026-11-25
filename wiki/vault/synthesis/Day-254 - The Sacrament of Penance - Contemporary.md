@@ -3,10 +3,10 @@ day: 254
 title: The Sacrament of Penance (Contemporary)
 pairs_with: "[[Day-254 - The Sacrament of Penance]]"
 length_target_words: 2200
-length_actual_words: 1234
+length_actual_words: 1246
 length_tier: medium
-length_ratio_to_target: 0.561
-length_note: "Runs ~44% under the medium tier (1234 vs 2200, ratio 0.561). Figure history: the stored 1202 recounted EXACT on 2026-09-08 and the +8 that run added (the Stump register re-test date and count) took it to 1210; the 2026-08-31 repair before it had added ~236 words of evidence-strength qualification; the 2026-09-15 repair recorded below took it to 1234. The headline was left reading '~45% under (1210 vs 2200)' after the stored field had already moved to 1234, so the note contradicted its own decomposition; corrected 2026-09-21 against an independent recount that reproduced the stored 1234 with delta 0. Held to the PRS argument for a single question (III Q.84) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom. Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1210 reproduced EXACTLY pre-edit; the +24 to 1234 (ratio 0.561) is this run's re-dating of the Stump penitential absence claim from 37 records to 38, citation apparatus only."
+length_ratio_to_target: 0.566
+length_note: "Runs ~44% under the medium tier (1234 vs 2200, ratio 0.561). Figure history: the stored 1202 recounted EXACT on 2026-09-08 and the +8 that run added (the Stump register re-test date and count) took it to 1210; the 2026-08-31 repair before it had added ~236 words of evidence-strength qualification; the 2026-09-15 repair recorded below took it to 1234. The headline was left reading '~45% under (1210 vs 2200)' after the stored field had already moved to 1234, so the note contradicted its own decomposition; corrected 2026-09-21 against an independent recount that reproduced the stored 1234 with delta 0. Held to the PRS argument for a single question (III Q.84) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom. Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1210 reproduced EXACTLY pre-edit; the +24 to 1234 (ratio 0.561) is this run's re-dating of the Stump penitential absence claim from 37 records to 38, citation apparatus only. Reviewer 2026-11-24: +12 words are Frame article anchors only (Q(a)), taken from articles Habash names in the paired transcript; new total 1246, ratio 0.566."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 the Free Energy Principle, High — active inference as error-correction to preferred states; PRS-14 symptom-formation as Bayesian self-trapping, High — why misaligned priors resist direct correction; PRS-04 the organism as active modeler, (Implicit)/Medium — the goal-directed framing)"
   - "traditions/rohr/prs_triplets.md (PRS-05 false-self to true-self mechanism of contemplative transformation)"
@@ -17,15 +17,15 @@ evidence_strength_summary: "Penance-as-error-correction-loop is formal (Friston 
 mind_first_reframe: "Penance is a goal-directed agent's error-correcting return to its preferred state — contrition the registered error signal, confession the explicit error-representation, satisfaction the corrective action that reduces the divergence."
 central_theme_thread: "The threefold loop is the resource-bounded computation by which a strayed perspective turns back toward loving unity under guidance it cannot itself supply — 'working out salvation' run as ongoing labor."
 tags: [synthesis, day/254, theme/repair-loop-toward-unity]
-last_qc_at: "2026-11-16T00:17:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-24T02:18:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 254 — The Sacrament of Penance (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.84) opens the treatise on Penance, which is at once a *sacrament* and a *virtue*. As sacrament it has matter and form; as the act of the penitent it has three integral parts — contrition (sorrow with purpose of amendment), confession (truthful disclosure), and satisfaction (the repairing act) — ordered to the remission of sins committed after baptism. The deep description is *the restoration of a disturbed order*: sin disorders the relation between agent and God, and penance returns it. The contemporary version under mind / conscious-realist monism: what is it for an agent that has strayed from its proper order to detect, disclose, and repair the deviation — and what kind of process is the three-part penitential structure?
+Aquinas (III Q.84) opens the treatise on Penance, which is at once a *sacrament* and a *virtue*. As sacrament (a.1, whether penance is a sacrament) it has matter (a.2, sins as its proper matter) and form; as the act of the penitent it has three integral parts — contrition (sorrow with purpose of amendment), confession (truthful disclosure), and satisfaction (the repairing act) — ordered to the remission of sins committed after baptism. The deep description is *the restoration of a disturbed order*: sin disorders the relation between agent and God, and penance returns it. The contemporary version under mind / conscious-realist monism: what is it for an agent that has strayed from its proper order to detect, disclose, and repair the deviation — and what kind of process is the three-part penitential structure?
 
 ## Problem
 

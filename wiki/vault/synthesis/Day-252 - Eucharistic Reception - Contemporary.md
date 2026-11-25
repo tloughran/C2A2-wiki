@@ -3,11 +3,11 @@ day: 252
 title: Eucharistic Reception (Contemporary)
 pairs_with: "[[Day-252 - Eucharistic Reception]]"
 length_target_words: 3000
-length_actual_words: 1749
+length_actual_words: 1759
 length_tier: long
-length_ratio_to_target: 0.583
+length_ratio_to_target: 0.586
 length_tier_dispute: "UNRESOLVED, escalated, not changed here. This file is set to tier `long` (target 3000), but its paired transcript `Day-252 - Eucharistic Reception.md` carries `length_tier: medium` and a cleaned `word_count` of 3308, which the Summa.md tier table (medium = 2000-3500 cleaned words) puts squarely in medium. The two paired files therefore disagree, and the arithmetic favours medium. The effect of the disagreement is not neutral: at the medium target of 2200 the current ratio is 0.795, versus 0.583 at 3000, so the `long` setting makes this file look considerably shorter of its target than it is. Day 252 is already on the recorded genuine-tier-error list (with 061, 071, 072, 074) awaiting Tom's decision, so the field is left as found rather than silently corrected."
-length_note: "1749 words after the 2026-09-15 pass; the pre-edit body recounted to 1671, exactly the figure stored since the 2026-08-31 repair (which had corrected a 1074 that understated by 597). This pass added 78 words repointing the Rohr citation from PRS-03 to PRS-21 in the Resource paragraph and the Bridges bullet and naming the label trap that made PRS-03 look right — citation apparatus, not new argument; both records are Confidence Medium, so nothing this day rests on changed weight. Against the medium target the paired transcript's word_count implies (2200), 1749 is 0.795 — inside the compact-frontier band rather than far below it; against the `long` target currently set here (3000) it reads 0.583. See `length_tier_dispute` above: which of those two numbers is the real one turns on an unresolved tier question, so no compactness claim is made until Tom settles it. Substance whole and the five reviewer criteria pass; III Q.79-80 rendered in complete PRS form with Friston's disposition-as-prior the sharpest resource."
+length_note: "1749 words after the 2026-09-15 pass; the pre-edit body recounted to 1671, exactly the figure stored since the 2026-08-31 repair (which had corrected a 1074 that understated by 597). This pass added 78 words repointing the Rohr citation from PRS-03 to PRS-21 in the Resource paragraph and the Bridges bullet and naming the label trap that made PRS-03 look right — citation apparatus, not new argument; both records are Confidence Medium, so nothing this day rests on changed weight. Against the medium target the paired transcript's word_count implies (2200), 1749 is 0.795 — inside the compact-frontier band rather than far below it; against the `long` target currently set here (3000) it reads 0.583. See `length_tier_dispute` above: which of those two numbers is the real one turns on an unresolved tier question, so no compactness claim is made until Tom settles it. Substance whole and the five reviewer criteria pass; III Q.79-80 rendered in complete PRS form with Friston's disposition-as-prior the sharpest resource. Reviewer 2026-11-24: +10 words are Frame article anchors only (Q(a)), taken from articles Habash names in the paired transcript; new total 1759, ratio 0.586."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — goal-directedness within naturalism, Confidence Medium and marked Implicit; PRS-14 symptom-formation as Bayesian self-trapping, Confidence High, applied here beyond its clinical scope)"
   - "traditions/kastrup/prs_triplets.md (PRS-09 representation versus participatory encounter — records McGilchrist's counter-proposal at Confidence Medium; cited as a proposed refinement, not as settled Kastrup program content)"
@@ -18,15 +18,15 @@ evidence_strength_summary: "Same-signal-different-update is formal in kind, but 
 mind_first_reframe: "The one offered whole produces divergent effects because reception is governed by the receiver's disposition — its generative prior (Friston) and participatory uptake (Kastrup) — not by any variation in the offering."
 central_theme_thread: "The same whole is offered entire to every perspective yet assimilated only to the measure of each finite disposition, so growing in charity is the lifelong revision of the prior toward the loving-unity attractor."
 tags: [synthesis, day/252, theme/one-whole-received-by-readiness]
-last_qc_at: "2026-11-16T00:17:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-24T02:18:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 252 — Eucharistic Reception (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.79–80) turns from what the sacrament *is* to what it *does* in the one who receives it, and to the difference between receivers. The same consecrated species is offered to all, yet its effect varies: the well-disposed receive grace, the indisposed receive to their condemnation; there is sacramental eating (taking the species) and spiritual eating (receiving the reality with faith and charity), and reception "by desire" can obtain the res without the sacramentum. The contemporary version under mind / conscious-realist monism: how can one and the same offered reality produce opposite effects in differently disposed agents — and what is the disposition that does the sorting?
+Aquinas (III Q.79–80) turns from what the sacrament *is* to what it *does* in the one who receives it, and to the difference between receivers. The same consecrated species is offered to all, yet its effect varies: the well-disposed receive grace, the indisposed receive to their condemnation (Q.80 a.4, whether the sinner sins in receiving); there is sacramental eating (taking the species) and spiritual eating (receiving the reality with faith and charity) (Q.80 a.1), and reception "by desire" can obtain the res without the sacramentum. The contemporary version under mind / conscious-realist monism: how can one and the same offered reality produce opposite effects in differently disposed agents — and what is the disposition that does the sorting?
 
 ## Problem
 

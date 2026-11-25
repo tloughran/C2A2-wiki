@@ -3,7 +3,7 @@ day: 243
 title: Passion & Sacrament (Contemporary)
 pairs_with: "[[Day-243 - Passion & Sacrament]]"
 length_target_words: 1500
-length_actual_words: 955
+length_actual_words: 959
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-08 cells as cognitive agents in morphospace)"
@@ -12,20 +12,20 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, creation as the first incarnation; PRS-04 incarnational theology, the spiritual always embodied)"
   - "traditions/wright/prs_triplets.md (PRS-33 hope warranted by a past event rather than a trend line)"
 evidence_strength_summary: "Instrumental causality from the Passion theological/metaphysical; information-carried-by-form an empirical-analogy (Levin); interface necessity of sensible signs formal (Hoffman); central-theme speculative."
-length_ratio_to_target: 0.637
-length_note: "Recounted 2026-08-31: stored 645 understated the pre-repair body by roughly 130 words; true post-repair count 904, ratio 0.603, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 1879 words, under the 2000 short/medium line). Repair was badge-only: Friston PRS-07 and Hoffman PRS-03 are both Confidence High and were badged as though provisional, while Wright PRS-33 was badged 'high within method' on a Medium record — the one over-badge found in this queue, against five under-badges. Replaced note was a template shared with Days 241-242 and 244-246. STALENESS REPAIRED 2026-09-18: the note above asserted 904 / 0.603 while the fields already read 955 / 0.637, because the 2026-09-15 Rohr PRS-21 repoint added roughly 51 words of bracketed apparatus to the Bridges section and updated the count fields without amending this note. Recounted this run at exactly 955, ratio 0.637, reproducing the stored fields to the word (boundary: top frontmatter stripped, bare horizontal-rule separator lines dropped, regex letters-and-apostrophe). No new argument added this run. Same pattern repaired on Days 241 and 244 in the same sweep — it is a property of the 09-15 repoint pass, not of this file. Tier remains verified CORRECT and the file stays below the -25% floor by design: Q.60-62 is treated in complete PRS form and the gap to 1350 would have to be closed by recapitulation."
+length_ratio_to_target: 0.639
+length_note: "Recounted 2026-08-31: stored 645 understated the pre-repair body by roughly 130 words; true post-repair count 904, ratio 0.603, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 1879 words, under the 2000 short/medium line). Repair was badge-only: Friston PRS-07 and Hoffman PRS-03 are both Confidence High and were badged as though provisional, while Wright PRS-33 was badged 'high within method' on a Medium record — the one over-badge found in this queue, against five under-badges. Replaced note was a template shared with Days 241-242 and 244-246. STALENESS REPAIRED 2026-09-18: the note above asserted 904 / 0.603 while the fields already read 955 / 0.637, because the 2026-09-15 Rohr PRS-21 repoint added roughly 51 words of bracketed apparatus to the Bridges section and updated the count fields without amending this note. Recounted this run at exactly 955, ratio 0.637, reproducing the stored fields to the word (boundary: top frontmatter stripped, bare horizontal-rule separator lines dropped, regex letters-and-apostrophe). No new argument added this run. Same pattern repaired on Days 241 and 244 in the same sweep — it is a property of the 09-15 repoint pass, not of this file. Tier remains verified CORRECT and the file stays below the -25% floor by design: Q.60-62 is treated in complete PRS form and the gap to 1350 would have to be closed by recapitulation. RECOUNT 2026-11-23 (reviewer): +4 words of Summa article anchors added to the Frame paragraph (criterion a), verified against the paired transcript's article headers; stored 955 reproduced exactly before the edit, now 959, ratio 0.639. No argument added."
 mind_first_reframe: "The Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is their only access."
 central_theme_thread: "Sacraments meet perspective-limited agents at the limit of their perception, giving a sensible foothold for the resource-bounded computation toward loving unity."
 tags: [synthesis, day/243, theme/causality-across-time]
-last_qc_at: "2026-11-15T20:18:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-23T22:18:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 243 — Passion & Sacrament (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.60-62) holds that the sacraments derive their power from Christ's Passion: the historical event works through later sensible signs as through instruments. The medieval puzzle is causation across time and through matter — how a past event empowers present rituals, and why God uses sensible things at all. The contemporary version under mind / conscious-realist monism: how does a determinate *form* (the pattern of a once-occurred event) propagate its causal efficacy across substrate and time, and why must the channel be sensible?
+Aquinas (III Q.61-62) holds that the sacraments derive their power from Christ's Passion (Q.62 a.5): the historical event works through later sensible signs as through instruments. The medieval puzzle is causation across time and through matter — how a past event empowers present rituals, and why God uses sensible things at all (Q.61 a.1). The contemporary version under mind / conscious-realist monism: how does a determinate *form* (the pattern of a once-occurred event) propagate its causal efficacy across substrate and time, and why must the channel be sensible?
 
 ## Problem
 

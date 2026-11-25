@@ -3,10 +3,10 @@ day: 255
 title: Penance as a Virtue (Contemporary)
 pairs_with: "[[Day-255 - Penance as a Virtue]]"
 length_target_words: 2200
-length_actual_words: 1020
+length_actual_words: 1026
 length_tier: medium
-length_ratio_to_target: 0.464
-length_note: "Runs ~54% under the medium tier (1020 vs 2200; the stored 975 UNDERSTATED the body, which recounted to 994 before this run's edits, and the +26 since is the Friston PRS-04 register-standing marking added as citation apparatus): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.466
+length_note: "Runs ~54% under the medium tier (1020 vs 2200; the stored 975 UNDERSTATED the body, which recounted to 994 before this run's edits, and the +26 since is the Friston PRS-04 register-standing marking added as citation apparatus): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom. Reviewer 2026-11-24: +6 words are Frame article anchors only (Q(a)), taken from articles Habash names in the paired transcript; new total 1026, ratio 0.466."
 karpathy_wiki_sources:
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; PRS-06 embodied/tacit habituation)"
   - "traditions/levin/prs_triplets.md (PRS-03 stabilized target attractor)"
@@ -17,15 +17,15 @@ evidence_strength_summary: "Virtue-as-stable-attractor / deepened-prior is forma
 mind_first_reframe: "The virtue of penance is a habituated mode of attention (McGilchrist) and a deepened generative prior — a stabilized attractor (Friston, Levin) — that reconfigures the agent's default engagement toward detecting and repairing deviation from the good."
 central_theme_thread: "Through habit a limited perspective becomes the kind of agent for which return to the whole is connatural, widening its attractor toward loving unity so that fewer perturbations dislodge it."
 tags: [synthesis, day/255, theme/habit-as-stabilized-attractor]
-last_qc_at: "2026-11-16T00:17:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-11-24T02:18:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 255 — Penance as a Virtue (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (III Q.85) considers penance not as a discrete sacramental act but as a *virtue* — a stable, acquired-and-infused disposition (a special species of justice) inclining the agent to detest and repair sin as an enduring habit. The act of penance flows from this habit; the habit is what makes the act reliable, prompt, and connatural rather than occasional and strained. The contemporary version under mind / conscious-realist monism: what is a stable disposition, such that a one-time corrective act can deepen into a settled tendency that reshapes how the agent perceives and engages the world?
+Aquinas (III Q.85) considers penance not as a discrete sacramental act but as a *virtue* (a.1) — a stable, acquired-and-infused disposition (a special virtue, a.2, and a species of justice, a.3) inclining the agent to detest and repair sin as an enduring habit. The act of penance flows from this habit; the habit is what makes the act reliable, prompt, and connatural rather than occasional and strained. The contemporary version under mind / conscious-realist monism: what is a stable disposition, such that a one-time corrective act can deepen into a settled tendency that reshapes how the agent perceives and engages the world?
 
 ## Problem
 
