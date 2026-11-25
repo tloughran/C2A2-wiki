@@ -1487,7 +1487,97 @@ PRS-164:
   Confidence: Speculative (one experimental system; not verified against the primary text)
   Evidence: Wet-lab "active stigmergy" result as reported by the secondary source
 
-*Total PRS triplets: 164*
+PRS-165:
+  Problem: Levin's operational framework (TAME: intelligence as flexible goal pursuit across arbitrary spaces) and his metaphysical Platonic-space / "ingressing minds" proposal are often read as one package. Critics can use the speculative half to discount the experimental half.
+  Resource: The atlas's explicit epistemic-status separation. It says the Platonic-space proposal "is a distinct hypothesis, with a proposed research program. Unexpected behavior alone cannot establish it, and the operational study of goals does not require accepting it." It also says "TAME by itself makes no predictions about consciousness."
+  Solution: The tradition's author separates the experimentally grounded core from the metaphysical extension himself, so each can be judged on its own track record. This matches Levin's Levin/Lakatos framing of hard core versus protective belt.
+  Date Added: 2026-11-25
+  Source: Interactive MindMap is online" (presenting "Mind, life & agency — Concept atlas"); PROP-2026-11-23-001
+  Confidence: High
+  Evidence: Quoted from Question 02 and Question 01 text on the atlas page (fetched 2026-11-23).
+
+PRS-166:
+  Problem: How local concerns of competent parts combine into a new collective goal, the program's central open "scaling of selves" problem.
+  Resource: Named candidate mechanisms: shared stress (one component's error becomes relevant to its neighbours' regulation), physiological/bioelectric coupling as "cognitive glue", and memory anonymization (traces exchanged without ownership labels become collective history). Plus a stated constraint: "selective sharing… greater connectivity alone does not guarantee a more capable Self."
+  Solution: This is not solved. The atlas explicitly calls it "a major open problem" and says "assembling competent parts does not yet let us predict every goal of the resulting whole." What it adds is an author-sanctioned open-problem statement and the constraint that connectivity must be selective, not maximal.
+  Date Added: 2026-11-25
+  Source: Interactive MindMap is online" (presenting "Mind, life & agency — Concept atlas"); PROP-2026-11-23-001
+  Confidence: High (as a statement of the program's open problem); Speculative (for the mechanisms)
+  Evidence: Question 02 and Question 03 text.
+
+PRS-167:
+  Problem: What ethical obligations follow once novel biological, artificial and hybrid agents are created?
+  Resource: Five named concepts from the ethics branch: responsibility toward created beings (including "mental health care and psychoanalysis… for novel minds"), the opportunity cost of inaction, morphological freedom, synthbiosis (biological, artificial and hybrid beings flourishing in interdependence), and "freedom as long-term self-transformation… sustained practices that change future capacities, preferences and likely thoughts toward the kind of being one hopes to become."
+  Solution: The tradition's normative layer gets a first consolidated, author-edited form. It moves from scattered talk remarks to a structured branch of the program.
+  Date Added: 2026-11-25
+  Source: Interactive MindMap is online" (presenting "Mind, life & agency — Concept atlas"); PROP-2026-11-23-001
+  Confidence: Medium (programmatic and not argued in depth on the page)
+  Evidence: Question 07 text.
+
+PRS-168:
+  Problem: The space of physical and chemical interventions that can steer cells, tissues and synthetic organisms (Xenobots, organoids) is combinatorially vast and mostly unexplored. Human-designed experiments sample it sparsely and with an anthropocentric bias.
+  Resource: MOMbot, a robot scientist with four intervention modalities on one platform (chemical, electrical, vibrational, thermal), paired with imaging and an online active-learning loop.
+  Solution: Autonomous closed-loop experimentation that generates, runs and refines its own interventions. It was validated on embryos, mucociliary organoids and dissociated ectodermal cells.
+  Date Added: 2026-11-25
+  Source: A Closed-Loop Robot Scientist for Autonomous Biological Discovery; PROP-2026-11-23-002
+  Confidence: Medium (preprint; not yet peer reviewed)
+  Evidence: Abstract: "a robot scientist that integrates four physical intervention modalities ... paired with high-resolution imaging and an online active learning algorithm that autonomously generates, executes, and refines interventions."
+
+PRS-169:
+  Problem: How can someone efficiently learn the input–response map of a biological collective whose competencies are unknown in advance?
+  Resource: Uncertainty-directed active learning, which concentrates trials near the regions where the outcome is most uncertain.
+  Solution: A sample-efficient map of how motile organoids respond to different durations of electrical stimulation, a first concrete case of "communicating with tissues" by automated querying.
+  Date Added: 2026-11-25
+  Source: A Closed-Loop Robot Scientist for Autonomous Biological Discovery; PROP-2026-11-23-002
+  Confidence: Medium
+  Evidence: Abstract: "concentrates interventions near regions of maximal outcome uncertainty, yielding sample-efficient discovery of an electrical duration–response relationship for motile organoids."
+
+PRS-170:
+  Problem: Can physical signals alone, with no genetic modification, drive loose cells to self-assemble into functional bodies?
+  Resource: Vibrational (mechanical) modulation delivered by the robot.
+  Solution: Vibration-driven assembly of functional mucociliary organoids from loose cells, which adds mechanics to bioelectric and chemical inputs as a non-genetic steering channel.
+  Date Added: 2026-11-25
+  Source: A Closed-Loop Robot Scientist for Autonomous Biological Discovery; PROP-2026-11-23-002
+  Confidence: Medium
+  Evidence: Abstract lists "vibrational assembly of functional mucociliary organoids from loose cells" among the demonstrated capabilities.
+
+PRS-171:
+  Problem: Novel beings (xenobots, anthrobots) show capabilities that the three standard explanations (engineered, selected, trained) do not account for, and "it was emergent" explains nothing.
+  Resource: Model systems built from wild-type cells (a few hundred differentially expressed genes in xenobots, about 9,000 in anthrobots); an effort ledger that totals what design, selection and learning put in and compares it with measured competence.
+  Solution: The free lunch is defined minimally as the ledger residual. Levin hypothesises a structured space upstream from which such properties are drawn and asks for a predictive science of which properties appear under which conditions. He keeps the claim narrow (a handful of biological and computational cases) while granting that a "fourth option" invites re-reading the standard cases.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-004
+  Confidence: High (as a statement of the position)
+  Evidence: 4:13–6:43 (three explanations, xenobots, structured space); 32:23–33:40 (ledger definition); 47:38–49:15 (scope of the claim, Chris Fields's parallel email).
+
+PRS-172:
+  Problem: Biological intelligence lacks a measure that is not tied to one scale or substrate.
+  Resource: William James's criterion (same goal by different means), Newell and Simon's problem spaces, and a search-efficiency metric: the log ratio of blind-search cost to agential-search cost (Chis-Ciure and Levin, 2025 paper).
+  Solution: Reported two to three orders of magnitude over a random-walk baseline for amoeba movement toward nutrient, and about twenty-one orders for planarian regeneration under barium, on conservative estimates. Chis-Ciure now calls the random-walk baseline problematic, and the paper did not separate how much efficiency comes from selection, training or design.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-004
+  Confidence: High (the figures are reported by a co-author); Medium (for the baseline)
+  Evidence: 28:04–30:24; 1:00:36–1:02:55.
+
+PRS-173:
+  Problem: Is the unexplained remainder static order (Kauffman's "order for free") or something agent-like?
+  Resource: Embodiment experiments: take a pattern (even the digits of a mathematical constant), give it a body, and ask as a behavioural scientist what it is good for.
+  Solution: Levin reports that some patterns encode problem-solving policies somewhere on the cybernetic spectrum. The space of such patterns then becomes a taxonomy of kinds of minds, and whether something counts as pattern or agent depends on the observer's scale (the dense beings from the Earth's core who see humans as eddies in a gas).
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-004
+  Confidence: Medium (asserted from the lab's experiments; no data given in the episode)
+  Evidence: 34:07–37:29.
+
+PRS-174:
+  Problem: Evolution is supposed to tie a creature's properties tightly to the environment that produced them. Xenobots have measurable properties but no evolutionary history as xenobots, so what environment are those properties fitted to, and what is that environment's status?
+  Resource: A pipeline Levin says he built that rolls backwards from the transcriptome (a few hundred differentially expressed genes) and from tolerances (salt, pH, pressure) to the selection pressures that would have yielded them: a reconstructed "xenobot home world".
+  Solution: The reconstructed world differs significantly from this one, yet it is constrained by specific measurable properties, so it is not an arbitrary story. Levin first treats it as a counterfactual history, then proposes it may be prospective: some bias or prior has the cells preparing to live in a particular world. He adds an engineering question (can experience prepare them for a different world) and says plainly that these are early days and he is making no real claims.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-006
+  Confidence: Speculative
+  Evidence: 18:12–21:23. No data, figures or publication are cited in the episode.
+
+*Total PRS triplets: 174*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

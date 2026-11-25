@@ -1477,3 +1477,15 @@ Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, f
 ### Pattern Detector — 2026-11-21
 - **FINDING-116 — Carroll x Wolfram x Kastrup x Hoffman x Friston (CROSS-171), MEDIUM-LOW, not escalated.** A peer-reviewed pluralism about information is a real counterweight to the network's three information-monist programs and a pointed question for FEP's fusion of statistical and thermodynamic information. It stays below the Watch List threshold because only the abstract has been read and Carroll is one of eight authors. Upgrade condition: read the body for how the ontological face is treated (dismissed, bounded, or left open) and whether it names any of these programs.
 - **Carroll Mindscape 374, note:** three Speculative triplets; the McGilchrist/Friston readings of Bell's method are the proposer's. Watch only.
+
+
+## FINDING-117 - Ingest of 15 approved cards: Levin and Friston on free lunches, alignment measured in context, and the image of God as pattern or vocation
+
+**Date:** 2026-11-25 · **Source signals:** 3 forwarded bundles (Levin/Friston/Chis-Ciure x4 cards; Friston McCormack + Wolfram Roman Forum; Rohr x2 + Wright x2) plus cross signals from Hawkins x2, Levin atlas/MOMbot, Hoffman IONS; 36 triplets · **Confidence:** Medium-High for the first item, Medium-Low otherwise · **Recommended action:** watch the Chis-Ciure video (21:29-27:55 and 53:17) to check speaker turns before quoting either thinker; locate the McCormack audio to confirm the alignment quote.
+
+- **Levin x Friston (CROSS-172), MEDIUM-HIGH:** the two programs state their positions on the free-lunch question to each other, first-hand, in one conversation. Friston gives an explicit mechanism (the slow scale fixes the attracting set of allowable futures), so FLAG-017's question has a new, sharper form: is a virtual governor's never-met goal the same object as a renormalized attracting set? It is held at MEDIUM-HIGH, not HIGH, because the evidence is an auto-transcript with inferred speaker turns. **Escalated: noted under FLAG-017 on the Watch List.**
+- **Friston x Wolfram x C2A2 (CROSS-173), MEDIUM:** alignment as joint likelihood plus in-principle uncontrollability points to measuring behavior in context as the remaining route. That is the accelerator-detector's own claim, usable for the ISMI paper. Third-party transcript and talk summary. **Not escalated.**
+- **Rohr x Wright x Stump (CROSS-174), MEDIUM-LOW:** a given pattern vs a vocation to be fulfilled; both keep distinct persons in the final unity. State as a standing disagreement. **Not escalated.**
+- **Hawkins x Friston, note:** role alternation over time within columns vs fixed hierarchical levels. Watch only.
+- **Levin meta, note:** the concept atlas and MOMbot are cases of AI-accelerated inquiry inside a tradition; the atlas adds structure, not findings.
+- **Hoffman IONS, LOW:** event listing only; no recording; restates the essay.

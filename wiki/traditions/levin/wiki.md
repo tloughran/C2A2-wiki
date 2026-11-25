@@ -260,3 +260,19 @@ Ingested 3 triplet(s): PRS-160, PRS-161, PRS-162. See prs_triplets.md. Confidenc
 
 ### Update 2026-11-20 — Scale-free Niche Construction: expanding agent-microenvironment co-development to unconventional substrates (PROP-2026-11-17-005)
 Ingested 2 triplet(s): PRS-163, PRS-164. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Interactive MindMap is online" (presenting "Mind, life & agency — Concept atlas") (PROP-2026-11-23-001)
+Ingested 3 triplet(s): PRS-165, PRS-166, PRS-167. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — A Closed-Loop Robot Scientist for Autonomous Biological Discovery (PROP-2026-11-23-002)
+Ingested 3 triplet(s): PRS-168, PRS-169, PRS-170. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure (PROP-2026-11-23-004)
+Ingested 3 triplet(s): PRS-171, PRS-172, PRS-173. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure (PROP-2026-11-23-006)
+Ingested 1 triplet(s): PRS-174. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

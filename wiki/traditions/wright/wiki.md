@@ -204,3 +204,11 @@ Ingested 3 triplet(s): PRS-90, PRS-91, PRS-92. See prs_triplets.md. Confidence l
 
 ### Update 2026-11-20 — NT Wright warns of 'modern-day fantasy' interpretation of 'All Israel will be saved' (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, Nov 1-4 2026) (PROP-2026-11-15-003)
 Ingested 2 triplet(s): PRS-93, PRS-94. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Can you be a Christian and still doubt eternal life? N.T. Wright Responds (Ask NT Wright Anything) (PROP-2026-11-22-002)
+Ingested 2 triplet(s): PRS-95, PRS-96. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — 'Glory doesn't mean going to Heaven' but rather 'becoming fully human,' says NT Wright (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, 2 Nov 2026) (PROP-2026-11-22-001)
+Ingested 2 triplet(s): PRS-97, PRS-98. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-11-21
-  Check count: 33
+  Last checked: 2026-11-25
+  Check count: 34
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -78,6 +78,7 @@ WATCH-003:
     - 2026-11-13: On-cadence check; count now **31**. `review/archive/` now **32** files; the new one is `2026-11-12_decisions.md` (Gmail thread 1a1caf371f1fd396, `[C2A2-review-decision] 2026-11-11`; 4 APPROVE: PROP-2026-11-11-001..-004; no DENY/CHANGE/CHECK/CONDITIONAL). grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two` / INTEGRITY: only `2026-08-27_decisions.md`. `find inbox/proposals` for both slugs: only the approved re-filing and the unrelated 07-19 "practicing-just-this" file. Census: `pending/` 4 (all 11-12 cards, unrelated), `approved/` 546, `denied/` 1, `needs_review/` 5. NOT met. Next on-cadence check 2026-11-20.
     - 2026-11-20: On-cadence check; count now **32** (header previously read 30 — out of step with this log since the 11-11/11-12 off-cadence entries; corrected to follow the log). `review/archive/` still **32** files, latest `2026-11-12_decisions.md`. Gmail `subject:C2A2-review-decision after:2026/11/11` now returns a **new** decision email not yet archived: `[C2A2-review-decision] 2026-11-19` (thread 1a1f4ccf081e1f89, sent 2026-11-19 17:13 UTC; 19 APPROVE: PROP-2026-11-12-001..-004, -11-13-001, -11-14-001/-002, -11-15-001..-003, -11-16-001, -11-17-001..-005, -11-18-001..-003; no DENY/CHANGE/CHECK/CONDITIONAL). It does not name PROP-2026-07-19-001. grep across `review/archive/` for `2026-07-19-001` / `beatitudes-week-two`: only `2026-08-27_decisions.md`; `find inbox/proposals` for the slug: only the approved re-filing. Census: `pending/` 19 (the 19 just-approved cards, awaiting archival/ingestion), `approved/` 546, `denied/` 1, `needs_review/` 5. NOT met. Next on-cadence check 2026-11-27.
     - 2026-11-21 (CHECK RUN OFF-CADENCE: awaited event occurred; count now **33**; next on-cadence check stays 2026-11-27): `review/archive/` now **33** files; the new one is `2026-11-20_decisions.md` (archive of the 11-19 email: 19 APPROVE, PROP-2026-11-12-001..-004, -11-13-001, -11-14-001/-002, -11-15-001..-003, -11-16-001, -11-17-001..-005, -11-18-001..-003). Gmail also holds a newer, not-yet-archived `[C2A2-review-decision] 2026-11-20` (thread 1a1f9dea1e9c7196; 2 APPROVE: PROP-2026-11-20-001/-002, the two Carroll cards). Neither names PROP-2026-07-19-001 / beatitudes-week-two or addresses the INTEGRITY FLAG. Condition NOT met.
+    - 2026-11-25 (CHECK RUN OFF-CADENCE: new decision email; count now **34**; next on-cadence check stays 2026-11-27): Gmail `[C2A2-review-decision] 2026-11-24` (thread 1a20ee3924ab1d05; 15 APPROVE: PROP-2026-11-21-001, -11-22-001..-004, -11-23-001..-007, -11-24-001..-003; no DENY/CHANGE/CHECK/CONDITIONAL), not yet written to `review/archive/` (still 34 files, latest `2026-11-21_decisions.md`). It does not name PROP-2026-07-19-001 or beatitudes-week-two and carries no INTEGRITY ruling. Condition NOT met.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -201,8 +202,8 @@ WATCH-007:
   Check method: Check `review/archive/` and decision emails for a later disposition or note naming PROP-2026-11-10-001; check card mtime for an appended note.
   Check cadence: Weekly (plus off-cadence on any new decision file)
 
-  Last checked: 2026-11-21
-  Check count: 5
+  Last checked: 2026-11-25
+  Check count: 6
   Result history:
     - 2026-11-12: Intake. CHECK, no note. Targeted fact check toward reading (d): direct fetch of https://github.com/thousandbrainsproject/tbp.monty/pull/1174 refused (URL not in this run's fetch provenance set); web search `tbp.monty pull 1174 "correctly merge new and previous pose vectors"` returned no GitHub hit (only TBP forum threads on pose handling, unrelated). So the PR quotes remain **unverified by Agent 16** — not refuted. No vault file other than the card and pipeline logs mentions the item. Condition NOT met.
     - 2026-11-13 (CHECK RUN OFF-CADENCE: new decision file; count now **2**; next on-cadence check stays 2026-11-19): `review/archive/2026-11-12_decisions.md` holds 4 APPROVE (PROP-2026-11-11-001..-004) and does not name PROP-2026-11-10-001. Card mtime unchanged since this agent's own tag write (11-12 02:38); no note appended. Vault `.md` files newer than the last watch-list write: no mention of the item beyond the 11-12 cowork summary (carry-over). Condition NOT met.
@@ -210,6 +211,7 @@ WATCH-007:
     - 2026-11-19 (ON-CADENCE CHECK; count now **3**; next on-cadence check 2026-11-26): `review/archive/` still 32 files, latest `2026-11-12_decisions.md` (4 APPROVE, PROP-2026-11-11-001..-004; does not name PROP-2026-11-10-001). Gmail search `subject:C2A2-review-decision after:2026/11/11`: one thread only, `[C2A2-review-decision] 2026-11-11` (thread 1a1caf371f1fd396, the 4 APPROVEs already archived) — no later decision email, so no note on this card. Card mtime still 2026-11-15 04:36 (Sewing Agent append); no note from Tom. Vault `.md` files newer than the 11-18 watch-list write mention the item only in carry-over schedule lines (11-18 cowork/chat summaries). Condition NOT met.
     - 2026-11-20 (CHECK RUN OFF-CADENCE: new decision email; count now **4**; next on-cadence check stays 2026-11-26): Gmail shows `[C2A2-review-decision] 2026-11-19` (thread 1a1f4ccf081e1f89; 19 APPROVE, not yet written to `review/archive/`, which is still 32 files). It does not name PROP-2026-11-10-001 and carries no note. Its APPROVEs include PROP-2026-11-17-001..-004 — the four 11-17 Hawkins/TBP cards (incl. `latency-mismatches` and `variations-in-learned-object-models`) flagged in the 11-18 context note as raising the same authorship/date question. **Inference (not a ruling):** approving those four without a CHECK suggests readings (a) TBP-team authorship and (b) recording date are less likely to be what this CHECK is for, leaving (c) unwatched video / (d) PR #1174 quote verification as the likelier readings. Card mtime still 2026-11-15 04:36; no note from Tom. Condition NOT met.
     - 2026-11-21 (CHECK RUN OFF-CADENCE: new decision file + new decision email; count now **5**; next on-cadence check stays 2026-11-26): `review/archive/2026-11-20_decisions.md` (the 11-19 email, now archived; 19 APPROVE incl. PROP-2026-11-17-001..-004 Hawkins/TBP) and Gmail `[C2A2-review-decision] 2026-11-20` (2 APPROVE, Carroll) — neither names PROP-2026-11-10-001 or carries a CHECK note. Card mtime unchanged (11-15 04:36). Condition NOT met. One more unmoved check reaches the 6-check stale threshold.
+    - 2026-11-25 (CHECK RUN OFF-CADENCE: new decision email; count now **6** — stale threshold reached, see STALE-WATCH-FLAG raised 2026-11-25; next on-cadence check stays 2026-11-26): Gmail `[C2A2-review-decision] 2026-11-24` (thread 1a20ee3924ab1d05; 15 APPROVE, incl. PROP-2026-11-24-001/-002 Hawkins/TBP cards now in `pending/`) does not name PROP-2026-11-10-001 and carries no note. Card mtime unchanged since 11-15 04:36 (Sewing append); no note from Tom appended. Condition NOT met.
 
   On resolution:
     Action: per Tom's stated check — if a fact/cross-reference check, run it and re-queue to pending/ with the result; if a content edit, mark AWAITING-HUMAN-EDIT; if an external condition (e.g. video URL / transcript found), keep WATCHING with that condition.
@@ -577,6 +579,16 @@ STALE-WATCH-FLAG:
   Condition: a transcript of the episode (YouTube xZcB-tmvJaU captions or published text) is available to the wiki, or Tom supplies it.
   Assessment: Unlikely to be met by web search alone. Six weekly searches found no published transcript; the Channel McGilchrist page carries only the embedded player. A transcript does exist as a YouTube auto-caption track (seen 2026-10-17, labelled `lang=ar`, possibly mis-detected), but pulling it is outside a targeted condition check and Tom's CHANGE itself says "ask for Tom's assistance if needed".
   Recommendation: **Escalate to Tom** — one of: (a) paste the YouTube transcript (or the video URL in a Cowork session for a caption pull) so the item can resolve; (b) authorise extending the cadence to monthly; or (c) close the watch if the episode is no longer wanted. Not recommended: continue weekly searching unchanged.
+
+**[STALE-WATCH-FLAG raised 2026-11-25]**
+
+STALE-WATCH-FLAG:
+  Item: WATCH-007 (Hawkins / TBP — "Averaging Pose Vectors Inside a Voxel", PROP-2026-11-10-001)
+  Checks completed: 6
+  Watching since: 2026-11-12
+  Condition: Tom states what his 2026-11-10 CHECK (recorded with no note) is for.
+  Assessment: **Will not be met by waiting.** Six decision events (11-12, 11-19, 11-20, 11-21 archive, 11-24) have passed without a note on this card. Meanwhile Tom has approved sibling Hawkins/TBP cards en bloc (PROP-2026-11-17-001..-004 on 11-19; PROP-2026-11-24-001/-002 on 11-24), which weakens reading (a) authorship-filter as the reason for the CHECK but does not settle it.
+  Recommendation: **Escalate to Tom** — one line in the next decision email: either (a) restate the disposition (APPROVE / DENY), or (b) give the CHECK note (authorship, date, PR-quote verification, or other). Secondary: move to event-only checking (decision emails) instead of weekly. Not recommended: Cancel without a ruling.
 
 ## RESOLVED INDEX
 
@@ -7883,3 +7895,17 @@ A second Agent 16 instance started at ~02:37, while the first was still writing.
 *Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run (none due). No notification sent: nothing resolved or newly stale. Standing advisory: watch_list.md is now ~950 KB / 7,880 lines, mostly run-log; splitting the RUN LOG into its own file remains a recommendation for Tom, not executed.*
 
 *Duplicate firing (~07:57 UTC, nineteen minutes after the 11-24 run above). Re-checked: `needs_review/` (5 files, all [TRACKED-16], unchanged), `review/archive/` (still 34, latest `2026-11-21_decisions.md`), no vault `.md` outside deferred/ newer than the 07:38 write. No items due; nothing routed; no notification sent.*
+
+## AGENT 16 RUN SUMMARY — 2026-11-25
+
+  Intake: all 5 `needs_review/` files carry [TRACKED-16]; none modified since the 11-24 run (latest mtime Hawkins card 11-15 04:36). New items added: 0.
+  New event: Gmail `[C2A2-review-decision] 2026-11-24` (thread 1a20ee3924ab1d05; 15 APPROVE, no DENY/CHANGE/CHECK/CONDITIONAL, so no new intake). Not yet archived: `review/archive/` still 34 files (latest `2026-11-21_decisions.md`). Fired the off-cadence trigger for WATCH-003/-007.
+  Items checked: 2 — WATCH-003 (off-cadence, check 34): NOT met · WATCH-007 (off-cadence, check 6): NOT met.
+  Off-cadence sweep (not counted): Fredrickson card mtime still 10-08, flagged sentence still present (WATCH-004); `prs_triplets.md` unchanged since 10-16, Sewing log unchanged since the 11-22 22:00 sync (WATCH-006); no Wonderstruck transcript in the vault (WATCH-005). Vault `.md` files outside deferred/ newer than the 11-24 write mention watched IDs only in earlier entries; none holds a Tom ruling.
+  Resolved: 0 · Watching: 5 (WATCH-003..007) · Stale: 5 (WATCH-003, -004, -005, -006 existing; **WATCH-007 newly flagged** — STALE-WATCH-FLAG raised 2026-11-25, recommendation: escalate to Tom).
+  Next scheduled checks: WATCH-007 11-26 (on cadence) · WATCH-003/-004 11-27 · WATCH-005/-006 11-28 (WATCH-006 also off-cadence on the 11-29 Sewing run) · any new decision file/email triggers WATCH-003/-007 off-cadence.
+  Waiting on Tom (unchanged): WATCH-003 INTEGRITY ruling · WATCH-004 Fredrickson CT-Signals edit · WATCH-005 YouTube transcript (xZcB-tmvJaU) · WATCH-006 owner / option (a) · WATCH-007 what the CHECK is for.
+
+*Nothing routed to pending/, resolved/, or incoming_dispatches.md. No web checks run (none due). No push notification sent for the new WATCH-007 stale flag: no notification tool was available in this run; the flag is recorded here and in STALE FLAGS for Tom. Side observation (not Agent 16's item): the 11-25 lit pipeline run skipped for lack of a lock (`review/2026-11-25_lit-pipeline_skipped-lock-not-acquired.md`). Standing advisory: watch_list.md ~955 KB; splitting RUN LOG into its own file remains a recommendation for Tom.*
+
+*Duplicate firing (~07:41 UTC, three minutes after the 11-25 run above). Re-checked: `needs_review/` (5 files, all [TRACKED-16], unchanged), `review/archive/` (still 34), no vault `.md` outside deferred/ newer than the 07:38 write. No items due; nothing routed. This firing had the notification tool, so it sent the push for the WATCH-007 stale flag that the 07:38 run could not send.*

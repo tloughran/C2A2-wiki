@@ -2658,3 +2658,23 @@ No new decision email; no new approvals; 0 files ingested, 0 triplets. ingest_le
 
 ### 2026-11-24 second orchestrator firing (04:37 local, verification only)
 Started ~04:37 while the primary (run stamp 09:35:45Z) was mid-write (review page 04:36, review_log/level2 04:37:18, master + log 04:37:44), so this firing made no pipeline writes: no Phase 0 moves, no ingest, no searches, no review page, no Gmail draft, no review_log or level2 rebuild, no git. Waited until the tree was quiet 3.5 min (to 04:41), then verified: Gmail [C2A2-review-decision] (unread or newer_than:2d) = none; review/2026-11-24_review.html present (15 pending); review pages kept 11-21..11-24; review_log.html address-clean (0 matches); level2 meta 2027 signals / 92 pairs / span_last 2026-11-20 / stale_days 4 (no WARN); master 11-24 narrative present (1203 PRS / 171 CROSS / 116 FINDING). Phase 6: no git.
+
+
+### 2026-11-25 orchestrator run (Wednesday)
+Approved via [C2A2-review-decision] 2026-11-24 (thread 1a20ee3924ab1d05).
+- PROP-2026-11-21-001 wolfram 2026-11-21_wolfram_roman-forum-yampolskiy-ai-uncontrollable-ruliad.md PRS-92, PRS-93, PRS-94 (3 triplets)
+- PROP-2026-11-22-003 rohr 2026-11-22_rohr_art-leads-us-to-the-depths-second-gaze.md PRS-120, PRS-121 (2 triplets)
+- PROP-2026-11-22-004 rohr 2026-11-22_rohr_our-lifes-call-instance-of-universal-pattern.md PRS-122, PRS-123 (2 triplets)
+- PROP-2026-11-22-002 wright 2026-11-22_wright_ask-ntw-nov22-doubt-eternal-life-be-perfect.md PRS-95, PRS-96 (2 triplets)
+- PROP-2026-11-22-001 wright 2026-11-22_wright_glory-romans-5-becoming-fully-human.md PRS-97, PRS-98 (2 triplets)
+- PROP-2026-11-23-003 friston 2026-11-23_friston_mccormack-paused-human-development.md PRS-91, PRS-92, PRS-93, PRS-94 (4 triplets)
+- PROP-2026-11-23-005 friston 2026-11-23_friston_wandering-thoughts-agency-intelligence-across-scales.md PRS-95, PRS-96, PRS-97 (3 triplets)
+- PROP-2026-11-23-007 friston 2026-11-23_friston_wandering-thoughts-free-lunch-emergence.md PRS-98, PRS-99 (2 triplets)
+- PROP-2026-11-23-001 levin 2026-11-23_levin_concept-atlas-mind-life-agency.md PRS-165, PRS-166, PRS-167 (3 triplets)
+- PROP-2026-11-23-002 levin 2026-11-23_levin_mombot-closed-loop-robot-scientist.md PRS-168, PRS-169, PRS-170 (3 triplets)
+- PROP-2026-11-23-004 levin 2026-11-23_levin_wandering-thoughts-agency-intelligence-across-scales.md PRS-171, PRS-172, PRS-173 (3 triplets)
+- PROP-2026-11-23-006 levin 2026-11-23_levin_wandering-thoughts-reverse-ecology.md PRS-174 (1 triplets)
+- PROP-2026-11-24-002 hawkins 2026-11-24_hawkins_coco-consistent-orientation-child-objects.md PRS-94, PRS-95 (2 triplets)
+- PROP-2026-11-24-001 hawkins 2026-11-24_hawkins_shared-simultaneous-learning-oscillating-columns.md PRS-96, PRS-97, PRS-98 (3 triplets)
+- PROP-2026-11-24-003 hoffman 2026-11-24_hoffman_ions-spacetime-headset-webinar.md PRS-66 (1 triplets)
+Total new triplets: 36. CROSS-172..174. Flagged to pattern detector: 3 bundles -> FINDING-117 (CROSS-172 MEDIUM-HIGH, noted under FLAG-017). Note: Phase 0 script aborted once after moving PROP-2026-11-21-001 (stale file list); re-run completed the remaining 14 moves, no file lost or duplicated. The raw transcript inbox/levin-friston-chis-ciure-pondering-thoughts-transcript.md is source material behind the four Chis-Ciure cards, not a card; not ingested separately.

@@ -231,3 +231,7 @@ Ingested 3 triplet(s): PRS-86, PRS-87, PRS-88. See prs_triplets.md. Confidence l
 
 ### Update 2026-11-20 — Future of Science and Technology Q&A (October 21, 2026) (PROP-2026-11-14-001)
 Ingested 3 triplet(s): PRS-89, PRS-90, PRS-91. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Stephen Wolfram Just Revealed That AI Might Have "FEELINGS", and Could Experience Pain (The Roman Forum, with Roman Yampolskiy) (PROP-2026-11-21-001)
+Ingested 3 triplet(s): PRS-92, PRS-93, PRS-94. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

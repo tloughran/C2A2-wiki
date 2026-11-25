@@ -1,11 +1,11 @@
 {
- "signals": 2027,
+ "signals": 2100,
  "pairs": 92,
  "span_first": "2026-04-03",
- "span_last": "2026-11-20",
- "stale_days": 4,
+ "span_last": "2026-11-24",
+ "stale_days": 1,
  "by_source": {
-  "card": 1786,
+  "card": 1859,
   "finding": 147,
   "index": 94
  }

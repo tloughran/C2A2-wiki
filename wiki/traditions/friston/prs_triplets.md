@@ -826,7 +826,88 @@ PRS-90:
   Confidence: Speculative (direction of the result not stated in the summary)
   Evidence: Summary says comparison "distinguished" the hypotheses without reporting which won.
 
-*Total PRS triplets: 90*
+PRS-91:
+  Problem: "Alignment" is undefined or subjective. Humans are not aligned with each other, so what would it mean to align AI with them?
+  Resource: An FEP definition of alignment as the joint likelihood (mutual predictability) of agents exchanging with one another and with their non-agent environment.
+  Solution: Treat alignment like adaptive fitness: a statistical property of a coupled system of agents and niche, not an objective imposed from outside. Alignment then extends to air, food and ecosystems, not only robot–human likeness.
+  Date Added: 2026-11-25
+  Source: Karl Friston: We Have Paused Human Development" (interview with Peter McCormack; transcript); PROP-2026-11-23-003
+  Confidence: Medium (interview statement, not a formal paper)
+  Evidence: Transcript 00:50:53–00:52:34: "alignment in my world is simply the joint likelihood of us all exchanging, given the kinds of things that we are, with each other and other things that are not us."
+
+PRS-92:
+  Problem: Where does a sense of self come from, and what does an AI need in order to align with its users?
+  Resource: The hypothesis that self-models depend on first inferring others as agents (mother, community), together with a shared world, culture and language that make agents mutually predictable.
+  Solution: Selfhood is intersubjective. True alignment may require giving AI a minimal consciousness and theory of mind, so that it models its users the way people model each other. Friston credits a version of this thesis to Joscha Bach.
+  Date Added: 2026-11-25
+  Source: Karl Friston: We Have Paused Human Development" (interview with Peter McCormack; transcript); PROP-2026-11-23-003
+  Confidence: Speculative
+  Evidence: Transcript, section "Why AI and Human Intelligence Share the Same Language": "if a sense of self depends upon a sense of other ... it rests upon being part of a community of others"; "equipping artificial artifacts with a minimal kind of consciousness that allows them to have a theory of mind."
+
+PRS-93:
+  Problem: Does generative AI help or harm human learning and curiosity?
+  Resource: Epistemic foraging, the learned skill of knowing where to sample in order to resolve uncertainty, framed as self-evidencing and information gain.
+  Solution: Systems that hand over synthesized answers remove the selective pressure to develop epistemic skill. That undercuts neurodevelopment, and it can cause loss of epistemic trust and "disintegration". The remedy is cultures and contexts in which children practise curiosity.
+  Date Added: 2026-11-25
+  Source: Karl Friston: We Have Paused Human Development" (interview with Peter McCormack; transcript); PROP-2026-11-23-003
+  Confidence: Medium (theoretically grounded; the empirical claim about development is untested)
+  Evidence: Transcript 01:09:35–01:10:49: "The large language model sees everything. You only see a small fraction ... but you know exactly where to look ... If you don't have those skills ... you just don't develop those skills."
+
+PRS-94:
+  Problem: Is "agentic AI" actually agentic?
+  Resource: The distinction between a generative model of the consequences of one's own actions and next-token prediction.
+  Solution: Current chatbots offer "a facsimile of agency" and cannot be curious, because they never ask questions in order to resolve their *own* uncertainty. Friston illustrates this with a recent podcast in which a Claude-based avatar interviewed him about the FEP.
+  Date Added: 2026-11-25
+  Source: Karl Friston: We Have Paused Human Development" (interview with Peter McCormack; transcript); PROP-2026-11-23-003
+  Confidence: Medium
+  Evidence: Transcript 01:20:57–01:23:04: "There is no agency in agentic AI ... crucially cannot be curious. Therefore, it can never ask a question that actually resolves its uncertainty."
+
+PRS-95:
+  Problem: What is it for a thing to exist, distinct from its environment, over non-trivial time, without importing teleology?
+  Resource: Markov blanket; non-equilibrium steady state and pullback attractor; conservation of probability; the Helmholtz–Hodge decomposition into a gradient flow and a solenoidal flow.
+  Solution: Anything that persists will look as if it gathers itself against dissipation and circulates through its characteristic states. That yields oscillation at every scale from electrochemistry to life cycles, broken detailed balance and time-irreversibility. The description is scale-invariant: asked whether the universe has a Markov blanket, Friston says yes, and that there is always a higher scale.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-005
+  Confidence: High
+  Evidence: 8:08–14:24; 15:16–16:24.
+
+PRS-96:
+  Problem: How can a system be fitted to environments and futures it has never encountered (Levin's xenobot "home world")?
+  Resource: The renormalization group; the adiabatic approximation; Haken's control parameters; the good regulator theorem.
+  Solution: The slower scale above (for example the genome) fixes the attracting set the lower scale may explore, and changes so slowly that from below the context is the same in past and future. Fitness for counterfactual futures is therefore expected. To persist in a world is to have its cause-effect structure installed in one's anatomy, with world symmetries appearing as factorization and modularity; Friston offers this as his reading of ingression.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-005
+  Confidence: Medium (an argument sketched verbally, with no formal derivation given)
+  Evidence: 21:29–27:55; 38:46–42:28; 53:24–55:15.
+
+PRS-97:
+  Problem: Autonomy, agency, sentience and consciousness are run together, including in talk about AI.
+  Resource: Sequestration of internal states from blanket states at larger scale; control as inference versus planning as inference; precision control and mental action (Metzinger, Solms).
+  Solution: Autonomy (thermostats, viruses) needs only control as inference. Agency is selecting among futures by inferring the consequences of one's own actions. Feeling presupposes a further step, control over one's own inferential processing. Friston places large language models at control as inference, saying they lack a generative model of the future consequences of their actions. Chis-Ciure adds that "inference" here is statistical and as-if, not symbolic.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-005
+  Confidence: Medium (Friston's stated taxonomy; the claim about language models is asserted, not argued)
+  Evidence: 1:06:05–1:13:21; 1:13:58–1:16:45.
+
+PRS-98:
+  Problem: Levin's "free lunch" (competence not paid for by design, selection or training) is presented as a special residue. Is it a residue, or the general case?
+  Resource: The physicist's reading: there is a cause-effect structure, a probabilistic specification of the dynamics at a scale, and things embedded in it. It looks as if they optimize something, and disciplines that keep spotting the same objective function (value, utility, efficiency) give it semantics and treat it as an explanation. Friston also notes the free lunch could be scored as a path of least action, by the path integral of free energy.
+  Solution: Candidate position: everything is a free lunch, and the part usually called selection or optimization has been ascribed a causal role it does not have. Levin does not accept the expansive claim, saying he has shown only a handful of cases, but grants that once a fourth option exists one starts re-reading the conventional cases, and reports that Chris Fields wrote to him with the same point.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-007
+  Confidence: Speculative (put by Friston as a question to Levin, not as a result)
+  Evidence: 43:53–47:27 (Friston); 47:38–49:15 (Levin's reply); 49:30–52:16 (Chis-Ciure: then every observed structure is a successful ingression).
+
+PRS-99:
+  Problem: "Emergence" is used as if naming it explained something, including for consciousness.
+  Resource: Chis-Ciure cites attempts to quantify it (Lionel Barnett and Anil Seth, dynamical independence). Friston offers the renormalization group, Haken's synergetics and slaving principle, and centre-manifold theory, and gives the operator in plain terms: group things, then reduce (the average speed of cars on the A24).
+  Solution: Quantify the term or drop it. Cross-scale relations are described by the same kind of dynamics at each level, each scale inheriting from and contextualising the one below, with no teleology. Friston says he has never really used the word and excepts only George Ellis's work on top-down causation.
+  Date Added: 2026-11-25
+  Source: Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure; PROP-2026-11-23-007
+  Confidence: High (as a statement of both speakers' positions)
+  Evidence: 1:18:14–1:20:57 (Chis-Ciure); 1:21:18–1:22:37 and 1:23:14–1:24:46 (Friston).
+
+*Total PRS triplets: 99*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

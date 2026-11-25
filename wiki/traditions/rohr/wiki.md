@@ -253,3 +253,11 @@ Standing tension recorded for Wright/Stump adjudication: original sin as metaphy
 
 ### Update 2026-11-07 — Love Is Who We Are (CAC Daily Meditation, 'Loving Your Neighbor' week) (PROP-2026-11-01-004)
 Ingested 2 triplet(s): PRS-118, PRS-119. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Art Leads Us to the Depths (CAC Daily Meditation, 'Contemplation and Art' week) (PROP-2026-11-22-003)
+Ingested 2 triplet(s): PRS-120, PRS-121. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Our Life's Call (CAC Daily Meditation, 'What Is Mine to Do?' week) (PROP-2026-11-22-004)
+Ingested 2 triplet(s): PRS-122, PRS-123. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

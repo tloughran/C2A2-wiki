@@ -875,4 +875,40 @@ PRS-94:
   Confidence: Medium
   Evidence: "this will be not just a creation out of nothing, but like life from the dead ... the real return from exile"
 
-*Total PRS triplets: 94*
+PRS-95:
+  Problem: Can a person whose imagination cannot picture resurrection still be inside the covenant people?
+  Resource: Wright's pastoral answer: the ground is Jesus's resurrection, not one's imaginative grasp; liturgy, prayer and service carry belief through doubt.
+  Solution: Belonging is sustained by embodied participation, not by having a vivid picture of the end — consistent with Wright's "salvation in fear and trembling" reading of Phil 2:12.
+  Date Added: 2026-11-25
+  Source: Can you be a Christian and still doubt eternal life? N.T. Wright Responds (Ask NT Wright Anything); PROP-2026-11-22-002
+  Confidence: Medium (description-level evidence)
+  Evidence: Episode description, first question.
+
+PRS-96:
+  Problem: If Christ has won, why isn't the world visibly improving, and what is human work for?
+  Resource: *Surprised by Hope* frame, restated in this episode: work for justice, mercy and beauty is "building for" the kingdom, not bringing it in.
+  Solution: Human agency contributes real material to new creation while the consummation remains God's act — a constraint on progressivist readings of the telos.
+  Date Added: 2026-11-25
+  Source: Can you be a Christian and still doubt eternal life? N.T. Wright Responds (Ask NT Wright Anything); PROP-2026-11-22-002
+  Confidence: Medium
+  Evidence: Episode description, third question.
+
+PRS-97:
+  Problem: What is the scriptural content of "glory" as the final end of human beings — beatific contemplation, heavenly location, or something else?
+  Resource: Wright's reading of Rom 5:2 with Psalm 8, Rom 5:17 and Irenaeus: glory = becoming fully human and sharing God's redemptive rule.
+  Solution: The telos is an *active* condition — human agents restored to their delegated role within creation — so any model of final union must preserve real, distinct, acting persons.
+  Date Added: 2026-11-25
+  Source: 'Glory doesn't mean going to Heaven' but rather 'becoming fully human,' says NT Wright (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, 2 Nov 2026); PROP-2026-11-22-001
+  Confidence: High (explicit, repeated Wright position; quoted in report)
+  Evidence: Quoted phrase "becoming fully human, to share God's redemptive rule"; Psalm 8 / Rom 5:17 argument.
+
+PRS-98:
+  Problem: Is eschatological hope oriented to humans going to God, or God coming to humans?
+  Resource: Wright's linking of Rom 5:2 to Isaiah 40:5 and Yahweh's return to Zion (cf. his 2026 "God's Homecoming" material).
+  Solution: Hope is primarily God's return to dwell with his people and renew creation; "heaven" language is subordinate to that.
+  Date Added: 2026-11-25
+  Source: 'Glory doesn't mean going to Heaven' but rather 'becoming fully human,' says NT Wright (report on 'The Fresh Challenge of Romans', Park Cities Baptist Church, Dallas, 2 Nov 2026); PROP-2026-11-22-001
+  Confidence: High
+  Evidence: Isaiah 40:5 citation and the "Yahweh returning ... taking his throne" reading in the report.
+
+*Total PRS triplets: 98*

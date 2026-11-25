@@ -887,7 +887,52 @@ PRS-93:
   Confidence: Speculative
   Evidence: Affordances listed among session topics.
 
-*Total PRS triplets: 93*
+PRS-94:
+  Problem: Monty can declare an object recognized while many pose hypotheses remain, largely because of object symmetry ("Terminal Conditions: Why Do We Have So Many Hypotheses Left?", "Symmetry: The Core Issue").
+  Resource: Top-down connections from a parent learning module carrying the larger object's context ("Approach: Top-Down Connections", "Q&A: Top-Down Message Content").
+  Solution: Proposed: lower-level modules select the child pose that is consistent with the parent object, rather than resolving pose bottom-up alone.
+  Date Added: 2026-11-25
+  Source: 2026/10 - Consistent Orientation of Child Objects (COCO); PROP-2026-11-24-002
+  Confidence: Medium (problem); Speculative (mechanism, from post summary and chapter titles)
+  Evidence: Forum description: "Monty can finish recognizing an object with many possible poses still under consideration... top-down feedback from a parent learning module could help lower-level modules select poses consistent with the larger object."
+
+PRS-95:
+  Problem: Top-down pose feedback creates a dependency loop: the parent needs child poses to recognize itself, and the children need the parent to settle their poses.
+  Resource: Segments "Chicken & Egg Problem Between Learning Modules Discussion" and "Temporal Continuity & Hysteresis."
+  Solution: Open; temporal continuity and hysteresis named as candidate stabilizers. Scope initially limited to 2D orientation.
+  Date Added: 2026-11-25
+  Source: 2026/10 - Consistent Orientation of Child Objects (COCO); PROP-2026-11-24-002
+  Confidence: Speculative (chapter titles only)
+  Evidence: Chapter list, 40:13-50:30 and 1:02:08.
+
+PRS-96:
+  Problem: Compositional learning works for a two-region parent/child pair, but it is unclear how it scales to many regions, or what columns without direct sensory input learn.
+  Resource: Hawkins's proposal that all learning modules switch back and forth between inferring parent objects and inferring child objects, learning feedforward and feedback connections in alternation (chapters "Proposed Solution: All Learning Modules Switch Between Inferring Parent and Child Objects," "Learning Feedback & Feedforward Connections," "No Dividing Line Needed").
+  Solution: A role-alternation mechanism that removes the need for a fixed parent/child dividing line and needs no specific prewired connectivity ("Flexibility & No Specific Connectivity Required"), with shared learning itself compositional.
+  Date Added: 2026-11-25
+  Source: 2026/10 - Shared Simultaneous Learning Across Multiple Learning Modules; PROP-2026-11-24-001
+  Confidence: Medium (Hawkins's stated proposal, per the post); Speculative on mechanism detail, which was not verified from the recording
+  Evidence: Forum description: "@jhawkins presents a possible solution where cortical columns oscillate between inferring parent objects and child objects."
+
+PRS-97:
+  Problem: The oscillation proposal needs an empirical anchor and a timing coordinator: when do the columns learn, and what keeps the cycles in step?
+  Resource: Leadholm's suggestion that hippocampal memory consolidation during sleep coordinates the cycles; chapters "Where is the Evidence for this Idea? Perhaps in Sleep Memory Consolidation!" and "Fast vs Slow Learning: Hippocampus & Cortex."
+  Solution: A candidate testable link: if the theory is right, sleep-consolidation dynamics should show alternating parent/child-style replay between hippocampus and cortex.
+  Date Added: 2026-11-25
+  Source: 2026/10 - Shared Simultaneous Learning Across Multiple Learning Modules; PROP-2026-11-24-001
+  Confidence: Speculative (raised as an idea in discussion, chapter titles only)
+  Evidence: Forum description credits @nleadholm with the sleep-consolidation idea.
+
+PRS-98:
+  Problem: How can representations be learned across different sensory modalities if each column models only its own input?
+  Resource: Segment "Feature Sharing Across Sensory Modalities."
+  Solution: Open question surfaced; no resolution stated in the post.
+  Date Added: 2026-11-25
+  Source: 2026/10 - Shared Simultaneous Learning Across Multiple Learning Modules; PROP-2026-11-24-001
+  Confidence: Speculative (chapter title only)
+  Evidence: Forum description lists cross-modal learning as one of the questions explored.
+
+*Total PRS triplets: 98*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

@@ -213,3 +213,7 @@ Ingested 3 triplet(s): PRS-60, PRS-61, PRS-62. See prs_triplets.md. Confidence l
 
 ### Update 2026-11-07 — The Recursive Trace Logic of Observers and Agents (PROP-2026-11-03-001)
 Ingested 3 triplet(s): PRS-63, PRS-64, PRS-65. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Consciousness and Its Spacetime Headset (IONS ConnectIONS Live webinar) (PROP-2026-11-24-003)
+Ingested 1 triplet(s): PRS-66. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

@@ -831,7 +831,34 @@ PRS-91:
   Confidence: Speculative (his explicit guess; verbatim in transcript first half)
   Evidence: Transcript discussion of AES, key-space reduction and Rule 30 cipher; ties to PRS-85 (Rule 30 center-column irreducibility prize).
 
-*Total PRS triplets: 91*
+PRS-92:
+  Problem: Can a capable AI be guaranteed in advance never to "go off track"?
+  Resource: Computational irreducibility, framed as a tradeoff between predictable, reducible ("industrial-era cog") systems and irreducible ("horse-like") systems that can surprise you.
+  Solution: You cannot both keep a system's computational power and certify its future behavior. Safety by advance proof is unavailable for useful AI; what is left is choosing where on the reducible/irreducible tradeoff to sit, then monitoring behavior.
+  Date Added: 2026-11-25
+  Source: Stephen Wolfram Just Revealed That AI Might Have "FEELINGS", and Could Experience Pain (The Roman Forum, with Roman Yampolskiy); PROP-2026-11-21-001
+  Confidence: Speculative (secondary AI summary plus chapter title; would corroborate PRS-75 if confirmed)
+  Evidence: Chapter "Why AI May Be Fundamentally Uncontrollable" (46:53); Substack summary: "if a system is computationally irreducible, you cannot jump ahead to guarantee it will never go off track without choking off its computational power entirely."
+
+PRS-93:
+  Problem: Do advanced AIs have goals or drives of their own, such as power-seeking or self-preservation?
+  Resource: The distinction between general computation (found everywhere: weather, cellular automata) and the narrow human-like slice of it; "having an objective" as a description an observer applies, not a property of the rules.
+  Solution: Power-seeking is not a generic consequence of intelligence. Scaling compute pushes a system toward non-human general computation, not toward more human-like ambition. Attributing drives is anthropomorphic projection.
+  Date Added: 2026-11-25
+  Source: Stephen Wolfram Just Revealed That AI Might Have "FEELINGS", and Could Experience Pain (The Roman Forum, with Roman Yampolskiy); PROP-2026-11-21-001
+  Confidence: Speculative
+  Evidence: Chapters "Do All Intelligent Agents Seek Power?" (1:07:48) and "Is There Anything Only Humans Can Do?" (29:43); Substack summary paraphrase.
+
+PRS-94:
+  Problem: Can AI systems feel pain, and how would we know?
+  Resource: PRS-50's structural criterion for observers (vast input crushed slowly to a single thread of next-action), applied to the question of suffering; attribution of pain to others as extrapolation from shared appearance.
+  Solution: Pain-attribution is an extrapolation we make by similarity, so it does not transfer cleanly to systems unlike us. Consciousness is a mundane evolved feature (a single thread needed for action choice), not a special ingredient.
+  Date Added: 2026-11-25
+  Source: Stephen Wolfram Just Revealed That AI Might Have "FEELINGS", and Could Experience Pain (The Roman Forum, with Roman Yampolskiy); PROP-2026-11-21-001
+  Confidence: Speculative
+  Evidence: Chapters "Are AI Systems Already Conscious?" (34:21) and "Can Machines Actually Feel Pain?" (37:51); Substack summary. Note the episode title ("AI might have FEELINGS") is clickbait by the channel and may overstate whatever Wolfram conceded. Not entered as a candidate: "Is There a God Outside the Ruliad?" (1:41:02) and "Can We Travel Through the Ruliad?" (2:00:37). The secondary source says nothing usable about Wolfram's actual answer. Flagged below as a must-listen segment instead.
+
+*Total PRS triplets: 94*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

@@ -193,3 +193,11 @@ Ingested 2 triplet(s): PRS-90, PRS-91. See prs_triplets.md. Confidence labels pr
 
 ### Update 2026-11-20 — 2026/09 - Exploring How Cortical Columns Handle Variations in Learned Object Models (PROP-2026-11-17-003)
 Ingested 2 triplet(s): PRS-92, PRS-93. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — 2026/10 - Consistent Orientation of Child Objects (COCO) (PROP-2026-11-24-002)
+Ingested 2 triplet(s): PRS-94, PRS-95. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — 2026/10 - Shared Simultaneous Learning Across Multiple Learning Modules (PROP-2026-11-24-001)
+Ingested 3 triplet(s): PRS-96, PRS-97, PRS-98. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

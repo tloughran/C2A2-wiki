@@ -989,3 +989,17 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 - **Wolfram / Kastrup / Hoffman**: the paper treats the ontological face of information as one of four. These three programs each make it fundamental. Contrast candidate for the master wiki.
 - **Friston**: the FEP fuses the statistical and thermodynamic faces the paper asks to keep distinct. A direct challenge for FEP to answer.
 - **Levin**: the taxonomy could sharpen what "information processing" means in bioelectric claims.
+
+
+### 2026-11-25 — PROP-2026-11-23-004/-005/-006/-007 (levin, friston): 'Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure'
+[forwarded by orchestrator; explanatory-bridge signal, two programs in one conversation] [EVALUATED: 2026-11-25 -> FINDING-117]
+- **Levin x Friston**: free lunch vs as-if optimization; fitness for a never-met future read as an attracting set fixed by the slow scale (renormalization). Bears directly on FLAG-017 (virtual governor = group blanket).
+- **Carroll / Stump / Wolfram**: emergence as a word Friston will not use; attracting set as nature-with-ends or constraint; untaken multiway branches.
+
+### 2026-11-25 — PROP-2026-11-23-003 (friston) + PROP-2026-11-21-001 (wolfram): alignment as joint likelihood; AI uncontrollable from irreducibility
+[forwarded by orchestrator; convergence signal on C2A2 alignment measurement] [EVALUATED: 2026-11-25 -> FINDING-117]
+- **Friston x Wolfram x Levin x C2A2**: alignment as a statistical property of agents plus niche; verification in advance impossible; measurement in context inside a community as what remains.
+
+### 2026-11-25 — PROP-2026-11-22-001..004 (wright, rohr): glory as becoming fully human; second gaze; one's call as instance of a universal pattern
+[forwarded by orchestrator; tension signal] [EVALUATED: 2026-11-25 -> FINDING-117]
+- **Rohr x Wright x Stump**: image of God as given pattern vs vocation; imago vs vestigium; continues CROSS-170.

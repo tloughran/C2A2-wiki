@@ -247,3 +247,15 @@ Ingested 3 triplet(s): PRS-86, PRS-87, PRS-88. See prs_triplets.md. Confidence l
 
 ### Update 2026-11-20 — Embodied Dynamic Causal Modelling: Brain and Cardiac Effective Connectivity (PROP-2026-11-12-004)
 Ingested 2 triplet(s): PRS-89, PRS-90. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Karl Friston: We Have Paused Human Development" (interview with Peter McCormack; transcript) (PROP-2026-11-23-003)
+Ingested 4 triplet(s): PRS-91, PRS-92, PRS-93, PRS-94. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure (PROP-2026-11-23-005)
+Ingested 3 triplet(s): PRS-95, PRS-96, PRS-97. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-25 — Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure (PROP-2026-11-23-007)
+Ingested 2 triplet(s): PRS-98, PRS-99. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.

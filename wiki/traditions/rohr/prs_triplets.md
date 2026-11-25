@@ -1104,4 +1104,40 @@ PRS-119:
   Confidence: Speculative (Rohr does not cite Aquinas here; the convergence is the agent's reading)
   Evidence: Closing paragraph, citing *Essential Teachings*, p. v.
 
-*Total PRS triplets: 119*
+PRS-120:
+  Problem: What, operationally, is contemplative seeing as distinct from ordinary perception?
+  Resource: Rohr's "second gaze": seeing a thing in its particularity and simultaneously in a much larger frame; "we know it by the joy it gives."
+  Solution: Contemplation = holding the local model and the global context in attention at once, rather than collapsing to either; joy is its phenomenal marker.
+  Date Added: 2026-11-25
+  Source: Art Leads Us to the Depths (CAC Daily Meditation, 'Contemplation and Art' week); PROP-2026-11-22-003
+  Confidence: Medium (clear definition; the operationalization is the agent's)
+  Evidence: Second paragraph of the meditation.
+
+PRS-121:
+  Problem: Is the image of God a uniquely human property, or a pattern present by degrees in all creation?
+  Resource: Rohr: we cannot see the imago Dei in humans unless we first see it "in rudimentary form" in stones, plants and animals.
+  Solution: The image is a graded, cosmic pattern whose human instance is recognized only within the wider series — the Universal-Christ frame applied to anthropology.
+  Date Added: 2026-11-25
+  Source: Art Leads Us to the Depths (CAC Daily Meditation, 'Contemplation and Art' week); PROP-2026-11-22-003
+  Confidence: Speculative (pastoral-contemplative claim; contested by Thomist and Wright readings)
+  Evidence: Penultimate paragraph.
+
+PRS-122:
+  Problem: In a non-dual frame, what individuates a person without reintroducing the illusion of separateness?
+  Resource: Rohr: "You are an instance of a universal and eternal pattern ... To find our unique niche in that Always Larger Life is what we mean by 'vocation.'"
+  Solution: Individuation is by *niche* (a unique place/role within the one pattern), not by separate substance; vocation is the lived discovery of that niche.
+  Date Added: 2026-11-25
+  Source: Our Life's Call (CAC Daily Meditation, 'What Is Mine to Do?' week); PROP-2026-11-22-004
+  Confidence: Medium (explicit text; the individuation reading is the agent's)
+  Evidence: Closing paragraph.
+
+PRS-123:
+  Problem: How does a self-model distinguish the "true self" from a security-driven false self in practical decision-making?
+  Resource: Rohr + Palmer: "Before you tell your life what you intend to do with it, listen for what it intends to do with you."
+  Solution: The true self is discovered by attending to what one's life already expresses (inside-out) rather than imposing ideals (outside-in); over-control is the false-self signature.
+  Date Added: 2026-11-25
+  Source: Our Life's Call (CAC Daily Meditation, 'What Is Mine to Do?' week); PROP-2026-11-22-004
+  Confidence: Medium
+  Evidence: Opening paragraph and the Palmer quotation.
+
+*Total PRS triplets: 123*

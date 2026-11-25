@@ -3488,6 +3488,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-23-002",
+  "tradition": "levin",
+  "source_date": "2026-09-18",
+  "title": "A Closed-Loop Robot Scientist for Autonomous Biological Discovery",
+  "file": "inbox/proposals/approved/2026-11-23_levin_mombot-closed-loop-robot-scientist.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-20-002",
   "tradition": "rohr",
   "source_date": "2026-09-18",
@@ -4136,6 +4144,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-23-003",
+  "tradition": "friston",
+  "source_date": "2026-11-03",
+  "title": "Karl Friston: We Have Paused Human Development",
+  "file": "inbox/proposals/approved/2026-11-23_friston_mccormack-paused-human-development.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-11-17-002",
   "tradition": "hawkins",
   "source_date": "2026-11-03",
@@ -4173,6 +4189,22 @@
   "source_date": "2026-11-04",
   "title": "Cassidy Lecture 2026 \u2013 Dr Iain McGilchrist",
   "file": "inbox/proposals/approved/2026-11-11_mcgilchrist_cassidy-lecture-st-chads-recover-the-sacred.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-23-001",
+  "tradition": "levin",
+  "source_date": "2026-11-04",
+  "title": "Interactive MindMap is online",
+  "file": "inbox/proposals/approved/2026-11-23_levin_concept-atlas-mind-life-agency.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-22-001",
+  "tradition": "wright",
+  "source_date": "2026-11-04",
+  "title": "'Glory doesn't mean going to Heaven' but rather 'becoming fully human,' says NT Wright (re",
+  "file": "inbox/proposals/approved/2026-11-22_wright_glory-romans-5-becoming-fully-human.md",
   "processed": false
  },
  {
@@ -4240,6 +4272,38 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-24-003",
+  "tradition": "hoffman",
+  "source_date": "2026-11-13",
+  "title": "Consciousness and Its Spacetime Headset (IONS ConnectIONS Live webinar)",
+  "file": "inbox/proposals/approved/2026-11-24_hoffman_ions-spacetime-headset-webinar.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-22-004",
+  "tradition": "rohr",
+  "source_date": "2026-11-13",
+  "title": "Our Life's Call (CAC Daily Meditation, 'What Is Mine to Do?' week)",
+  "file": "inbox/proposals/approved/2026-11-22_rohr_our-lifes-call-instance-of-universal-pattern.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-21-001",
+  "tradition": "wolfram",
+  "source_date": "2026-11-13",
+  "title": "Stephen Wolfram Just Revealed That AI Might Have \\",
+  "file": "inbox/proposals/approved/2026-11-21_wolfram_roman-forum-yampolskiy-ai-uncontrollable-ruliad.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-22-003",
+  "tradition": "rohr",
+  "source_date": "2026-11-15",
+  "title": "Art Leads Us to the Depths (CAC Daily Meditation, 'Contemplation and Art' week)",
+  "file": "inbox/proposals/approved/2026-11-22_rohr_art-leads-us-to-the-depths-second-gaze.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-11-18-001",
   "tradition": "mcgilchrist",
   "source_date": "2026-11-16",
@@ -4253,6 +4317,62 @@
   "source_date": "2026-11-16",
   "title": "Mindscape 374 | Lindsey Fitzharris on Forensic Pathology, Reconstructive Surgery, and Sher",
   "file": "inbox/proposals/approved/2026-11-20_carroll_mindscape-374-fitzharris-sleuth-hound.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-24-002",
+  "tradition": "hawkins",
+  "source_date": "2026-11-17",
+  "title": "2026/10 - Consistent Orientation of Child Objects (COCO)",
+  "file": "inbox/proposals/approved/2026-11-24_hawkins_coco-consistent-orientation-child-objects.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-23-005",
+  "tradition": "friston",
+  "source_date": "2026-11-18",
+  "title": "Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure",
+  "file": "inbox/proposals/approved/2026-11-23_friston_wandering-thoughts-agency-intelligence-across-scales.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-23-007",
+  "tradition": "friston",
+  "source_date": "2026-11-18",
+  "title": "Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure",
+  "file": "inbox/proposals/approved/2026-11-23_friston_wandering-thoughts-free-lunch-emergence.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-23-004",
+  "tradition": "levin",
+  "source_date": "2026-11-18",
+  "title": "Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure",
+  "file": "inbox/proposals/approved/2026-11-23_levin_wandering-thoughts-agency-intelligence-across-scales.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-23-006",
+  "tradition": "levin",
+  "source_date": "2026-11-18",
+  "title": "Agency & Intelligence Across Scales | Levin, Friston & Chis-Ciure",
+  "file": "inbox/proposals/approved/2026-11-23_levin_wandering-thoughts-reverse-ecology.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-24-001",
+  "tradition": "hawkins",
+  "source_date": "2026-11-19",
+  "title": "2026/10 - Shared Simultaneous Learning Across Multiple Learning Modules",
+  "file": "inbox/proposals/approved/2026-11-24_hawkins_shared-simultaneous-learning-oscillating-columns.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-22-002",
+  "tradition": "wright",
+  "source_date": "2026-11-22",
+  "title": "Can you be a Christian and still doubt eternal life? N.T. Wright Responds (Ask NT Wright A",
+  "file": "inbox/proposals/approved/2026-11-22_wright_ask-ntw-nov22-doubt-eternal-life-be-perfect.md",
   "processed": false
  }
 ]
