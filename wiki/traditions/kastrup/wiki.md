@@ -212,3 +212,8 @@ Ingested 5 triplet(s): PRS-107..PRS-111. Kastrup names his own defeaters ('seein
 
 ### Update 2026-11-20 — Everything is determined & that gives life meaning (PROP-2026-11-18-002)
 Ingested 2 triplet(s): PRS-112, PRS-113. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-26 — Meditation & Enlightenment: resonance (PROP-2026-11-25-006), Mystical & shadow experiences (PROP-2026-11-25-007), AI panel (PROP-2026-11-25-003)
+Ingested 5 triplet(s): PRS-114..PRS-118. New to the wiki: the oscillating-membrane / resonance model of how a dissociated alter changes itself (ego 'freely won't' restructure; meditation as cumulative resonance; 'no things, only doings'), and the practice side (shadow preparation; a strong ego aids integration; logic useful but not fundamental). PRS-118 is Speculative (chapter titles only).
+Open question (no triplet minted, PROP-2026-11-25-003, approved): did Kastrup's 22 Nov 2026 AI-consciousness panel hold, refine or soften the 'no dissociative boundary in silicon' position after his Oct 2026 Claude dialogue? The card's Solution was 'to be extracted' and its date conflicts with the 22 Nov shadow-experiences recording; check the WRiM schedule and any recording before minting.

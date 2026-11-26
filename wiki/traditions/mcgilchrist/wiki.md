@@ -248,3 +248,10 @@ Ingested 1 triplet(s): PRS-91. See prs_triplets.md. Confidence labels preserved 
 
 ### Update 2026-11-20 — To experience beauty, we need the right hemisphere of the brain — Vrucht Bare Aarde V3 2026 Is.17 (English Translation) (PROP-2026-11-18-001)
 Ingested 2 triplet(s): PRS-92, PRS-93. See prs_triplets.md. Confidence labels preserved from the card; Speculative/locator items await primary-source verification per the card's Agentic Calls.
+
+
+### Update 2026-11-26 — Big Think 'The Well' full interview (PROP-2026-11-25-004), BAPT 'Jung and the Brain' recording (PROP-2026-11-25-005), No Small Endeavor parts 1-2 (PROP-2026-11-25-001)
+Ingested 4 triplet(s): PRS-94..PRS-97, from the published Big Think transcript: matter as a phase of consciousness; final causes as lures; intuition under the superintendence of imagination; three flourishing factors. Card -004 carried a duplicate notice against PROP-2026-11-25-002 (a concurrent run's unverified card for the same interview); -002 was not in the decision email.
+Open questions (no triplet minted; both approved cards had Solution 'to be extracted'):
+- Jung and the Brain (PROP-2026-11-25-005): what is McGilchrist's specific mapping of Jung's four functions and introversion/extraversion onto the hemispheres? Needs the 1:56 recording (YouTube EVUbfxyqyJ4). First Jung material in this tradition wiki.
+- No Small Endeavor (PROP-2026-11-25-001): content and original air date unverified (titles and runtimes only). Pull the transcript and confirm it is not a repost before minting.

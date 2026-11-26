@@ -1489,3 +1489,13 @@ Eleven of 42 triplets are Speculative (wolfram 2, carroll 1, rohr 2, wright 2, f
 - **Hawkins x Friston, note:** role alternation over time within columns vs fixed hierarchical levels. Watch only.
 - **Levin meta, note:** the concept atlas and MOMbot are cases of AI-accelerated inquiry inside a tradition; the atlas adds structure, not findings.
 - **Hoffman IONS, LOW:** event listing only; no recording; restates the essay.
+
+
+## FINDING-118 - Ingest of 6 approved Kastrup and McGilchrist cards: process ontology from two directions, resonance as the mechanism of change
+
+**Date:** 2026-11-26 · **Source signals:** 1 forwarded bundle (McGilchrist Big Think + Kastrup WRiM x2); 9 triplets (kastrup PRS-114..118, mcgilchrist PRS-94..97); 3 approved cards with no extractable content held as open questions · **Confidence:** Medium for the first item, Medium-Low otherwise · **Recommended action:** before the 21 March 2027 dialogue, set the phase vs extrinsic-appearance difference side by side as a question for both; pull the 'Jung and the Brain' recording (EVUbfxyqyJ4) for the Jung mapping.
+
+- **Kastrup x McGilchrist (CROSS-175), MEDIUM:** the two programs now use near-identical images for one process metaphysics, and both demote discursive thought to a servant role. This is convergence of image more than of argument, and the stated difference (phase vs appearance) is real. Kastrup evidence is from members' recordings known only by public summaries. These two have converged before (CROSS-168 and earlier dialogues), so this is a strengthening, not a new connection. **Not escalated.**
+- **Kastrup x Fredrickson x McGilchrist (CROSS-176), MEDIUM-LOW:** cumulative resonance as a shared mechanism of change. Fredrickson's program is the only one of the three with measured outcomes, so it is the natural test bed. The links are proposer-drawn. **Not escalated.**
+- **C2A2 dialogue design, note:** McGilchrist's 'they can't both be right' diagnosis supports the network's state-don't-blend rule. Usable for the ISMI paper.
+- **Housekeeping, note:** PROP-2026-11-25-004 superseded the concurrent unverified card PROP-2026-11-25-002 (now in proposals/_pending_dupes_resolved/). Three approved cards (-001, -003, -005) carried 'Solution: to be extracted' and were held as open questions in the tradition wikis, not minted as triplets.

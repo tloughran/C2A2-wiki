@@ -870,7 +870,44 @@ PRS-93:
   Confidence: Medium (restatement of a known thesis; already partly captured in TMWT-derived triplets — check for overlap before ingest)
   Evidence: Article's section on meaning and beauty being "discovered, not invented"
 
-*Total PRS triplets: 93*
+PRS-94:
+  Problem: If consciousness is primary, why would it manifest as matter at all?
+  Resource: Phase analogy (water as liquid, ice, vapour); Karman vortex street; Schelling's whirlpool-in-a-stream image of the individual soul within a world soul
+  Solution: Matter is a phase of consciousness (not a later stage) supplying the resistance and persistence creativity needs; individual consciousnesses are local, temporary forms of a continuous field
+  Date Added: 2026-11-26
+  Source: How to navigate the world with two halves of one brain (Big Think, The Well: Full Interview, 2026-11); PROP-2026-11-25-004
+  Confidence: High
+  Evidence: "matter is a phase of consciousness... in the way that physicists talk about water having phases"; "For creation, two things are required. One is resistance and the other is persistence."
+
+PRS-95:
+  Problem: How can biology explain costly evolutionary steps (e.g. sexual reproduction) whose benefits arrive only much later?
+  Resource: Final causes read as attractors ('lures') rather than predetermined goals; edge-of-chaos flow
+  Solution: Life is drawn by lures toward the beautiful, good and true: purpose without determinism, the outcome unknown even to the universe until it happens
+  Date Added: 2026-11-26
+  Source: Big Think, The Well: Full Interview (2026-11); PROP-2026-11-25-004
+  Confidence: Medium
+  Evidence: "there's no way you can really make sense of biology except in terms of there being purposes, what Aristotle called final causes... an attractor that is drawing you." (The eight-collision billiard-ball figure is secondhand physics; check before reuse.)
+
+PRS-96:
+  Problem: How should intuition be weighted against reason and science as paths to truth?
+  Resource: Checkerboard optical-illusion argument: specialist illusions do not lead anyone to give up their eyes
+  Solution: Intuition is a good but fallible guide, tempered by reason and science, with all of them working 'under the superintendence of imagination' (distinct from fantasy)
+  Date Added: 2026-11-26
+  Source: Big Think, The Well: Full Interview (2026-11); PROP-2026-11-25-004
+  Confidence: High
+  Evidence: "If you really want to be a dunce, then do away with your intuition... But above all, they all need to work under the superintendence of imagination."
+
+PRS-97:
+  Problem: What, empirically, makes a human life flourish?
+  Resource: The psychology literature as McGilchrist summarises it; Frankl, 'Yes to Life in Spite of Everything'
+  Solution: Three factors: belonging to a small community of trust and shared values, closeness to nature, a sense of belonging to a sacred cosmos; suffering, never to be sought, can confer understanding, humility and compassion
+  Date Added: 2026-11-26
+  Source: Big Think, The Well: Full Interview (2026-11); PROP-2026-11-25-004
+  Confidence: Medium (McGilchrist's summary, not cited studies)
+  Evidence: Chapter 7, 'How can human life flourish?'
+
+
+*Total PRS triplets: 97*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

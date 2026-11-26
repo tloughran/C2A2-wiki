@@ -1030,4 +1030,50 @@ PRS-113:
   Confidence: Medium
   Evidence: Subtitle "Why blame is naive, shame should be cherished"; justice-system chapter
 
-*Total PRS triplets: 113*
+PRS-114:
+  Problem: If free will is evenly distributed through mind, why can't the ego simply restructure itself at will (enlightenment on demand)?
+  Resource: The ego as a closed-loop structure inside larger boundary constraints (the body as image of the personal unconscious; the laws of nature as a broader region of mind); structural change too large maps onto physical death
+  Solution: The ego is its structure, so radical restructuring means its death and it freely declines; it can still choose which of its existing modes to vibrate in, which is the opening resonance exploits
+  Date Added: 2026-11-26
+  Source: Meditation & Enlightenment: the transformational power of resonance (With Reality in Mind, 2026-11-17) + companion post; PROP-2026-11-25-006
+  Confidence: High
+  Evidence: "the ego is the structure... changing the structure too much means dying... Precisely because it has freewill, it freely won't."
+
+PRS-115:
+  Problem: How can thoughts and feelings change brain anatomy (self-directed neuroplasticity, e.g. Schwartz's OCD studies) without a contrived physicalist story?
+  Resource: The oscillating-membrane / resonance metaphor (Why Materialism Is Baloney ch. 6): a vibration matched to a natural mode builds cumulatively until it reconfigures its host; Schwartz & Begley (2004); Schwartz, Stapp & Beauregard (2005)
+  Solution: Focusing mental energy on one resonant mode (meditation) rather than dispersing it across interfering modes builds vibration until the psychic structure, and its image the brain, reconfigures; natural under idealism, 'promissory' under materialism
+  Date Added: 2026-11-26
+  Source: Meditation & Enlightenment (WRiM, 2026-11-17); PROP-2026-11-25-006
+  Confidence: Medium (empirical claims drawn from contested literature; mechanism is a metaphor)
+  Evidence: "When one focuses one's thoughts and feelings this way, there is no cancelation, but a cumulative build-up of vibration... the ego will have transformed into something else."
+
+PRS-116:
+  Problem: What ontology does field theory imply that physics practice often misses?
+  Resource: History of the field concept from Faraday through QED (particles as excitations of fields); Kashmir Shaivism's spanda (vibration)
+  Solution: 'There are no things, only doings': ultimately one field vibrating; the field idea called 'the most powerful idea ever had in science and philosophy'
+  Date Added: 2026-11-26
+  Source: Meditation & Enlightenment (WRiM, 2026-11-17); PROP-2026-11-25-006
+  Confidence: Medium
+  Evidence: Session chapter 0:53:21 'No things, only doings'; recording page summary
+
+PRS-117:
+  Problem: How should someone navigate disturbing 'shadow' material surfacing in deep meditation or psychedelic states?
+  Resource: Jung's shadow concept; Kastrup's own psychedelic preparation; the resonance/membrane model of the ego
+  Solution: Name one's greatest fears in advance; treat experience and integration as distinct tasks; a strong, stable ego is an asset for integrating mystical experience, not an obstacle
+  Date Added: 2026-11-26
+  Source: Mystical & shadow experiences (With Reality in Mind recording, 2026-11-22); PROP-2026-11-25-007
+  Confidence: Medium (public summary and chapter list; members' recording unheard)
+  Evidence: Recording summary: 'a strong ego can actually help integrate the deepest mystical experiences'; chapters 32:55, 37:05, 1:20:03
+
+PRS-118:
+  Problem: Does analytic idealism's case against reductionism depend on classical logic?
+  Resource: Comparison of classical and intuitionistic logic; logic as a useful tool rather than a fundamental feature of reality
+  Solution: Logic is not ontologically fundamental, yet the argument at issue goes through even under intuitionistic logic, so its force does not depend on excluded-middle reasoning
+  Date Added: 2026-11-26
+  Source: Mystical & shadow experiences (WRiM, 2026-11-22); PROP-2026-11-25-007
+  Confidence: Speculative (chapter titles only; exact claim to confirm against recording)
+  Evidence: Chapters 1:05:19 'Logic isn't fundamental (but it is useful)' and 1:10:28 'Why reductionism holds even under intuitionistic logic'
+
+
+*Total PRS triplets: 118*

@@ -1003,3 +1003,10 @@ Arkani-Hamed (amplituhedron, positive geometry): direct. Carroll: opposition on 
 ### 2026-11-25 — PROP-2026-11-22-001..004 (wright, rohr): glory as becoming fully human; second gaze; one's call as instance of a universal pattern
 [forwarded by orchestrator; tension signal] [EVALUATED: 2026-11-25 -> FINDING-117]
 - **Rohr x Wright x Stump**: image of God as given pattern vs vocation; imago vs vestigium; continues CROSS-170.
+
+
+### 2026-11-26 — PROP-2026-11-25-004/-006/-007 (mcgilchrist, kastrup): matter as a phase of consciousness; 'no things, only doings'; thinking as servant
+[forwarded by orchestrator; convergence signal ahead of the March 2027 Kastrup x McGilchrist dialogue] [EVALUATED: 2026-11-26 -> FINDING-118]
+- **Kastrup x McGilchrist**: process ontology stated in matching images (vibrating field / phases and whirlpools); servant thinking vs master/emissary. Remaining difference: phase of consciousness vs extrinsic appearance.
+- **Kastrup x Fredrickson x McGilchrist**: cumulative resonance as the mechanism of change; flourishing factors.
+- **C2A2 dialogue design**: McGilchrist's 'they can't both be right' as a left-hemisphere failure mode of formal debate.

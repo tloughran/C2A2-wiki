@@ -840,6 +840,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-25-005",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-02-17",
+  "title": "Jung and the Brain \u2013 Conversation and Q&A with Iain McGilchrist \u2013 The British Association ",
+  "file": "inbox/proposals/approved/2026-11-25_mcgilchrist_bapt-jung-and-the-brain-recording.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-10-001",
   "tradition": "wright",
   "source_date": "2026-02-17",
@@ -4120,6 +4128,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-25-004",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-11",
+  "title": "How to navigate the world with two halves of one brain (Big Think, The Well: Full Intervie",
+  "file": "inbox/proposals/approved/2026-11-25_mcgilchrist_big-think-well-two-halves-one-brain.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-11-18-002",
   "tradition": "kastrup",
   "source_date": "2026-11-01",
@@ -4328,6 +4344,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-11-25-006",
+  "tradition": "kastrup",
+  "source_date": "2026-11-17",
+  "title": "Meditation & Enlightenment \u2014 The transformational power of resonance (With Reality in Mind",
+  "file": "inbox/proposals/approved/2026-11-25_kastrup_membrane-of-mind-meditation-resonance.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-11-23-005",
   "tradition": "friston",
   "source_date": "2026-11-18",
@@ -4373,6 +4397,30 @@
   "source_date": "2026-11-22",
   "title": "Can you be a Christian and still doubt eternal life? N.T. Wright Responds (Ask NT Wright A",
   "file": "inbox/proposals/approved/2026-11-22_wright_ask-ntw-nov22-doubt-eternal-life-be-perfect.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-25-003",
+  "tradition": "kastrup",
+  "source_date": "2026-11-22",
+  "title": "AI, consciousness & the future of humanity \u2014 On the risks, rewards and future of Artificia",
+  "file": "inbox/proposals/approved/2026-11-25_kastrup_ai-consciousness-future-of-humanity-panel.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-25-007",
+  "tradition": "kastrup",
+  "source_date": "2026-11-22",
+  "title": "Mystical & shadow experiences \u2014 List your fears, make thinking your servant, discover your",
+  "file": "inbox/proposals/approved/2026-11-25_kastrup_mystical-shadow-experiences-recording.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-11-25-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-11-23",
+  "title": "Iain McGilchrist Part 1 - No Small Endeavor (Full Video)",
+  "file": "inbox/proposals/approved/2026-11-25_mcgilchrist_no-small-endeavor-parts-1-2.md",
   "processed": false
  }
 ]

@@ -2678,3 +2678,17 @@ Approved via [C2A2-review-decision] 2026-11-24 (thread 1a20ee3924ab1d05).
 - PROP-2026-11-24-001 hawkins 2026-11-24_hawkins_shared-simultaneous-learning-oscillating-columns.md PRS-96, PRS-97, PRS-98 (3 triplets)
 - PROP-2026-11-24-003 hoffman 2026-11-24_hoffman_ions-spacetime-headset-webinar.md PRS-66 (1 triplets)
 Total new triplets: 36. CROSS-172..174. Flagged to pattern detector: 3 bundles -> FINDING-117 (CROSS-172 MEDIUM-HIGH, noted under FLAG-017). Note: Phase 0 script aborted once after moving PROP-2026-11-21-001 (stale file list); re-run completed the remaining 14 moves, no file lost or duplicated. The raw transcript inbox/levin-friston-chis-ciure-pondering-thoughts-transcript.md is source material behind the four Chis-Ciure cards, not a card; not ingested separately.
+
+
+### 2026-11-26 orchestrator run (Thursday)
+Approved via [C2A2-review-decision] 2026-11-25 (thread 1a213fede72f0816). Lookup: proposal_id (no prop_id field) -> Step 2 date+sequence fallback matched all six.
+- PROP-2026-11-25-006 kastrup 2026-11-25_kastrup_membrane-of-mind-meditation-resonance.md PRS-114, PRS-115, PRS-116 (3 triplets)
+- PROP-2026-11-25-007 kastrup 2026-11-25_kastrup_mystical-shadow-experiences-recording.md PRS-117, PRS-118 (2 triplets)
+- PROP-2026-11-25-003 kastrup 2026-11-25_kastrup_ai-consciousness-future-of-humanity-panel.md (0 triplets; Solution 'to be extracted', held as open question in kastrup wiki)
+- PROP-2026-11-25-004 mcgilchrist 2026-11-25_mcgilchrist_big-think-well-two-halves-one-brain.md PRS-94, PRS-95, PRS-96, PRS-97 (4 triplets)
+- PROP-2026-11-25-005 mcgilchrist 2026-11-25_mcgilchrist_bapt-jung-and-the-brain-recording.md (0 triplets; held as open question)
+- PROP-2026-11-25-001 mcgilchrist 2026-11-25_mcgilchrist_no-small-endeavor-parts-1-2.md (0 triplets; content unverified, held as open question)
+Total new triplets: 9. CROSS-175..176. Flagged to pattern detector: 1 bundle -> FINDING-118 (none escalated).
+
+### 2026-11-26 second orchestrator firing (04:37 local, verification only)
+Started ~04:37 while the primary was mid-write (decisions 04:36, ingest/master/level2/review_log 04:40-04:41), so this firing made no pipeline writes: no Phase 0 moves, no ingest, no searches, no review page, no Gmail draft, no review_log or level2 rebuild, no git. Waited until the tree was quiet (04:42), then verified: Gmail [C2A2-review-decision] (unread or newer_than:2d) = 2 threads, both already processed (1a20ee3924ab1d05 on 11-25, 1a213fede72f0816 today); review/2026-11-26_review.html present (1 pending); review pages kept 11-23, 11-26; review_log.html address-clean (0 matches); level2 meta 2117 signals / 92 pairs / span_last 2026-11-25 / stale_days 1 (no WARN); master 11-26 narrative present (1248 PRS / 176 CROSS / 118 FINDING). Phase 6: no git.
