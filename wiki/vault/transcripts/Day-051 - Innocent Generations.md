@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-051 - Innocent Generations - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-11-01T00:17:00"
+last_qc_at: "2026-11-25T16:18:21"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/051, pars/I]
