@@ -14,7 +14,7 @@ language: en
 fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
 fidelity_checked: true
-last_qc_at: "2026-11-09T20:17:50"
+last_qc_at: "2026-11-26T04:17:14"
 last_qc_outcome: "pass"
 synthesis: "[[Day-078 - Sorrow and Pain - Contemporary]]"
 tags: [summa, day/078, pars/I-II, q/34, q/35]
