@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-119 - The Act of Faith - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/119, pars/2, q/2-3]
-last_qc_at: "2026-10-16T20:17:04"
+last_qc_at: "2026-11-27T00:17:23"
 last_qc_outcome: "pass"
 ---
 
